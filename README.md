@@ -1,5 +1,6 @@
 # BootstrapVue
 
+#### 介绍
 这是一款深度融合了 Bootstrap 的 CSS 样式体系 与 Vue.js 响应式能力的前端 UI 框架。它旨在让你既能直接用 Bootstrap 成熟的栅格和组件样式，又能通过 Vue 组件化的方式高效开发交互逻辑。
 
 #### 软件架构
