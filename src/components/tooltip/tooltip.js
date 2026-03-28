@@ -1,10 +1,10 @@
-import Tooltip from 'bootstrap/js/dist/tooltip'
+import Tooltip from 'bootstrap/js/dist/tooltip';
 
 export default {
   mounted(el) {
-    new Tooltip(el)
+    new Tooltip(el);
   },
   unmounted(el) {
-    Tooltip.getInstance(el).dispose()
+    Tooltip.getInstance(el).dispose();
   }
-}
+};

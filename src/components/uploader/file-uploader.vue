@@ -15,8 +15,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-const emit = defineEmits(['file-change', 'file-remove'])
+import { ref, onMounted } from 'vue';
+const emit = defineEmits(['file-change', 'file-remove']);
 
 const props = defineProps({
   fileList: {
@@ -27,23 +27,23 @@ const props = defineProps({
     type: Boolean,
     default: false
   }
-})
+});
 
-const elementRef = ref(null)
-const fileElRef = ref(null)
+const elementRef = ref(null);
+const fileElRef = ref(null);
 
 onMounted(() => {
   elementRef.value.children[0].addEventListener('click', function () {
-    fileElRef.value.click()
-  })
-})
+    fileElRef.value.click();
+  });
+});
 
 function handleChange(event) {
-  emit('file-change', event.target)
+  emit('file-change', event.target);
 }
 
 function handleRemove(index) {
-  emit('file-remove', index)
+  emit('file-remove', index);
 }
 
 /**
@@ -53,15 +53,15 @@ function handleRemove(index) {
  * @returns {string} 格式化后的文件大小
  */
 function formatFileSize(bytes, decimals = 2) {
-  if (bytes === 0) return '0 Bytes'
+  if (bytes === 0) return '0 Bytes';
 
-  const k = 1024
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
-  const i = Math.floor(Math.log(bytes) / Math.log(k))
+  const k = 1024;
+  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
 
   // 保留指定小数位数
-  const size = parseFloat((bytes / Math.pow(k, i)).toFixed(decimals))
+  const size = parseFloat((bytes / Math.pow(k, i)).toFixed(decimals));
 
-  return `${size} ${sizes[i]}`
+  return `${size} ${sizes[i]}`;
 }
 </script>

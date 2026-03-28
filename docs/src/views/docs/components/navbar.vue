@@ -21,11 +21,14 @@
   <div v-scrollspy data-bs-target="#docs-nav-navbar" class="docs-content">
     <h1>Navbar 导航栏</h1>
     <p class="fs-4 fw-light">
-      有关 Bootstrap 强大且响应式的导航栏的文档和示例。其中包括品牌标识、导航功能等内容的支持，还包括我们 Collapse 折叠组件的支持。了解更多请阅读
+      有关 Bootstrap 强大且响应式的导航栏的文档和示例。其中包括品牌标识、导航功能等内容的支持，还包括我们 Collapse
+      折叠组件的支持。了解更多请阅读
       <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Boostrap Navbar</a>
     </p>
 
-    <h2 id="navbar-example">基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#navbar-example"> </a></h2>
+    <h2 id="navbar-example">
+      基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#navbar-example"> </a>
+    </h2>
     <p>导航栏内置支持多种子组件的功能。根据需要从以下选项中进行选择：</p>
     <ul class="docs-content-list">
       <li><code>.navbar-brand</code> 用于您的公司、产品或项目名称。</li>
@@ -33,14 +36,20 @@
         <code>.navbar-nav</code>
         用于实现全屏且轻量级的导航（包括支持下拉菜单的功能）。
       </li>
-      <li><code>.navbar-toggler</code> 用于与我们的折叠组件以及其他 <a href="#navbar-responsive">导航切换行为</a> 一起使用。</li>
+      <li>
+        <code>.navbar-toggler</code> 用于与我们的折叠组件以及其他
+        <a href="#navbar-responsive">导航切换行为</a> 一起使用。
+      </li>
       <li>flex 和 spacing 工具用于任何表单控件和操作。</li>
       <li><code>.navbar-text</code> 用于添加垂直居中的字符串文本。</li>
       <li>
         <code>.collapse.navbar-collapse</code>
         用于通过父断点对导航内容进行分组和隐藏。
       </li>
-      <li>可选的 <code>.navbar-nav-scroll</code> 可用于设置 <code>max-height</code> 并 <a href="#navbar-scroll">滚动显示导航内容</a>。</li>
+      <li>
+        可选的 <code>.navbar-nav-scroll</code> 可用于设置 <code>max-height</code> 并
+        <a href="#navbar-scroll">滚动显示导航内容</a>。
+      </li>
     </ul>
     <p>
       以下是一个示例，展示了响应式浅色主题导航栏中包含的所有子组件。该导航栏会在
@@ -71,7 +80,9 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false"> Dropdown </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                    Dropdown
+                  </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
@@ -100,7 +111,9 @@
       <code-highlight type="vue" :code="exampleCode" label="vue" />
     </div>
 
-    <h2 id="navbar-brand">品牌标识<a class="anchor-link" aria-label="Link to this section: 品牌标识" href="#navbar-brand"> </a></h2>
+    <h2 id="navbar-brand">
+      品牌标识<a class="anchor-link" aria-label="Link to this section: 品牌标识" href="#navbar-brand"> </a>
+    </h2>
     <p>
       可以将
       <code>.navbar-brand</code>
@@ -132,7 +145,12 @@
         <nav class="navbar bg-body-tertiary">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24" />
+              <img
+                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+                alt="Bootstrap"
+                width="30"
+                height="24"
+              />
             </a>
           </div>
         </nav>
@@ -164,7 +182,9 @@
       <code-highlight type="html" :code="brand3Code" label="html" />
     </div>
 
-    <h2 id="navbar-nav">导航区域<a class="anchor-link" aria-label="Link to this section: 导航区域" href="#navbar-nav"> </a></h2>
+    <h2 id="navbar-nav">
+      导航区域<a class="anchor-link" aria-label="Link to this section: 导航区域" href="#navbar-nav"> </a>
+    </h2>
     <p>
       导航栏中的导航链接基于我们的
       <code>.nav</code> 选项，并带有自身的修饰类，同时需要使用 <a href="#toggler">切换类</a> 以实现适当的响应式样式。
@@ -234,7 +254,9 @@
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false"> Dropdown link </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                    Dropdown link
+                  </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
@@ -253,7 +275,9 @@
       <code-highlight type="vue" :code="nav2Code" label="vue" />
     </div>
 
-    <h2 id="navbar-form">表单控件区<a class="anchor-link" aria-label="Link to this section: 表单控件区" href="#navbar-form"> </a></h2>
+    <h2 id="navbar-form">
+      表单控件区<a class="anchor-link" aria-label="Link to this section: 表单控件区" href="#navbar-form"> </a>
+    </h2>
     <p>
       在导航栏中放置各种表单控件和组件。<code>.navbar</code>
       元素的直接子元素采用弹性布局，并默认会设置为
@@ -276,7 +300,9 @@
       <code-highlight type="html" :code="formCode" label="html" />
     </div>
 
-    <h2 id="navbar-text">文本区<a class="anchor-link" aria-label="Link to this section: 文本区" href="#navbar-text"> </a></h2>
+    <h2 id="navbar-text">
+      文本区<a class="anchor-link" aria-label="Link to this section: 文本区" href="#navbar-text"> </a>
+    </h2>
     <p>
       导航栏可以借助
       <code>.navbar-text</code>
@@ -318,7 +344,9 @@
       <code-highlight type="html" :code="textCode" label="html" />
     </div>
 
-    <h2 id="navbar-color">配色方案<a class="anchor-link" aria-label="Link to this section: 配色方案" href="#navbar-color"> </a></h2>
+    <h2 id="navbar-color">
+      配色方案<a class="anchor-link" aria-label="Link to this section: 配色方案" href="#navbar-color"> </a>
+    </h2>
     <p>
       得益于 Bootstrap 将 Sass 和 CSS
       变量相结合的特性，导航栏主题的设置比以往任何时候都更加简便。默认情况下，我们提供了“浅色导航栏”供搭配浅色背景使用，但您也可以通过在
@@ -442,7 +470,9 @@
       <code-highlight type="vue" :code="colorCode" label="vue" />
     </div>
 
-    <h2 id="navbar-container">容器<a class="anchor-link" aria-label="Link to this section: 容器" href="#navbar-container"> </a></h2>
+    <h2 id="navbar-container">
+      容器<a class="anchor-link" aria-label="Link to this section: 容器" href="#navbar-container"> </a>
+    </h2>
     <p>
       虽然这不是强制要求的，但您可以将导航栏包裹在
       <code>.container</code>
@@ -469,30 +499,36 @@
       <code-highlight type="html" :code="containerCode" label="html" />
     </div>
 
-    <h2 id="navbar-placement">位置<a class="anchor-link" aria-label="Link to this section: 位置" href="#navbar-placement"> </a></h2>
+    <h2 id="navbar-placement">
+      位置<a class="anchor-link" aria-label="Link to this section: 位置" href="#navbar-placement"> </a>
+    </h2>
     <p>
       使用我们的
       <a href="https://getbootstrap.com/docs/5.3/utilities/position" target="_blank">位置工具</a>
       来将导航栏放置在非静态的位置上。
     </p>
     <p>
-      固定导航栏使用 <code>position: fixed</code> 属性，这意味着它们脱离了 DOM 的正常流程，可能需要自定义 CSS（例如，在 <code>&lt;body&gt;</code> 元素上设置
-      <code>padding-top</code> 属性）以避免与其他元素发生重叠。
+      固定导航栏使用 <code>position: fixed</code> 属性，这意味着它们脱离了 DOM 的正常流程，可能需要自定义 CSS（例如，在
+      <code>&lt;body&gt;</code> 元素上设置 <code>padding-top</code> 属性）以避免与其他元素发生重叠。
     </p>
     <div class="docs-example">
       <code-highlight type="html" :code="placementCode" label="html" />
     </div>
 
-    <h2 id="navbar-scroll">导航区滚动<a class="anchor-link" aria-label="Link to this section: 导航区滚动" href="#navbar-scroll"> </a></h2>
+    <h2 id="navbar-scroll">
+      导航区滚动<a class="anchor-link" aria-label="Link to this section: 导航区滚动" href="#navbar-scroll"> </a>
+    </h2>
     <p>
       将 <code>.navbar-nav-scroll</code> 添加到
-      <code>.navbar-nav</code>（或其他导航栏子组件）中，即可在折叠式导航栏的可折叠内容内实现垂直滚动。默认情况下，滚动功能会在 <code>75vh</code>（即视口高度的
-      75%）时启动，但您可以通过本地 CSS 自定义属性
+      <code>.navbar-nav</code
+      >（或其他导航栏子组件）中，即可在折叠式导航栏的可折叠内容内实现垂直滚动。默认情况下，滚动功能会在
+      <code>75vh</code>（即视口高度的 75%）时启动，但您可以通过本地 CSS 自定义属性
       <code>--bs-navbar-height</code>
       或自定义样式来更改这一设置。在较大的视口下，当导航栏展开时，内容将与默认导航栏中的内容相同地显示出来。
     </p>
     <p>
-      请注意，这种行为有一个潜在的缺点，<code>overflow</code> —当设置 <code>overflow-y: auto</code>（需要在这里滚动内容）时，<code>overflow-x</code> 相当于
+      请注意，这种行为有一个潜在的缺点，<code>overflow</code> —当设置
+      <code>overflow-y: auto</code>（需要在这里滚动内容）时，<code>overflow-x</code> 相当于
       <code>auto</code>，这会裁剪一些水平的内容。
     </p>
     <p>
@@ -554,7 +590,9 @@
       <code-highlight type="vue" :code="scrollCode" label="vue" />
     </div>
 
-    <h2 id="navbar-responsive">响应式行为<a class="anchor-link" aria-label="Link to this section: 响应式行为" href="#navbar-responsive"> </a></h2>
+    <h2 id="navbar-responsive">
+      响应式行为<a class="anchor-link" aria-label="Link to this section: 响应式行为" href="#navbar-responsive"> </a>
+    </h2>
     <p>
       导航栏可以使用 <code>.navbar-toggler</code>、<code>.navbar-collapse</code>
       和
@@ -568,7 +606,9 @@
       <code>.navbar-expand</code> 类。
     </p>
 
-    <h2 id="navbar-toggler">切换器<a class="anchor-link" aria-label="Link to this section: 切换器" href="#navbar-toggler"> </a></h2>
+    <h2 id="navbar-toggler">
+      切换器<a class="anchor-link" aria-label="Link to this section: 切换器" href="#navbar-toggler"> </a>
+    </h2>
     <p>
       导航栏切换按钮默认是左对齐的，但如果它们与诸如
       <code>.navbar-brand</code>
@@ -692,10 +732,13 @@
       <code-highlight type="vue" :code="toggler3Code" label="vue" />
     </div>
 
-    <h2 id="navbar-external">外部内容<a class="anchor-link" aria-label="Link to this section: 外部内容" href="#navbar-toggler"> </a></h2>
+    <h2 id="navbar-external">
+      外部内容<a class="anchor-link" aria-label="Link to this section: 外部内容" href="#navbar-toggler"> </a>
+    </h2>
     <p>
       有时您可能希望使用“折叠”来激活一个容器元素，以显示位于
-      <code>.navbar</code> 之外的结构性内容。由于我们的插件是基于 <code>id</code> 和 <code>data-bs-target</code> 的匹配机制工作的，所以这很容易实现！
+      <code>.navbar</code> 之外的结构性内容。由于我们的插件是基于 <code>id</code> 和
+      <code>data-bs-target</code> 的匹配机制工作的，所以这很容易实现！
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -731,18 +774,30 @@
       。理论上，这能让辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持相当不完善。
     </p>
 
-    <h2 id="navbar-offcanvas">侧边栏导航<a class="anchor-link" aria-label="Link to this section: 侧边栏导航" href="#navbar-offcanvas"> </a></h2>
+    <h2 id="navbar-offcanvas">
+      侧边栏导航<a class="anchor-link" aria-label="Link to this section: 侧边栏导航" href="#navbar-offcanvas"> </a>
+    </h2>
     <p>
-      使用 <a href="/docs/components/offcanvas">offcanvas 组件</a> 可将您不断扩展和收缩的导航栏转换为侧边抽屉形式。我们扩展了 offcanvas 的默认样式，并使用我们的
-      <code>.navbar-expand-*</code> 类来创建一个动态且灵活的导航侧栏。
+      使用
+      <a href="/docs/components/offcanvas">offcanvas 组件</a> 可将您不断扩展和收缩的导航栏转换为侧边抽屉形式。我们扩展了
+      offcanvas 的默认样式，并使用我们的 <code>.navbar-expand-*</code> 类来创建一个动态且灵活的导航侧栏。
     </p>
-    <p>在下面的示例中，若要创建一个在所有视口大小下始终保持折叠状态的侧边栏导航栏，请完全省略 <code>.navbar-expand-*</code> 类。</p>
+    <p>
+      在下面的示例中，若要创建一个在所有视口大小下始终保持折叠状态的侧边栏导航栏，请完全省略
+      <code>.navbar-expand-*</code> 类。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Offcanvas navbar</a>
-            <button class="navbar-toggler" type="button" @click="offcanvasRef.toggle()" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler"
+              type="button"
+              @click="offcanvasRef.toggle()"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <bv-offcanvas ref="offcanvasRef" title="Offcanvas" position="end">
@@ -754,7 +809,9 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false"> Dropdown </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                    Dropdown
+                  </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -776,19 +833,22 @@
       <code-highlight type="vue" :code="offcanvasCode" label="vue" />
     </div>
 
-    <h2 id="navbar-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#navbar-css"> </a></h2>
+    <h2 id="navbar-css">
+      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#navbar-css"> </a>
+    </h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，按钮现在在
-      <code>.navbar</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.navbar</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
+      设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_navbar.scss" />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const offcanvasRef = ref(null)
+const offcanvasRef = ref(null);
 
 const exampleCode = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -833,7 +893,7 @@ const exampleCode = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const brand1Code = `<!-- As a link -->
 <nav class="navbar bg-body-tertiary">
@@ -847,7 +907,7 @@ const brand1Code = `<!-- As a link -->
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">Navbar</span>
   </div>
-</nav>`
+</nav>`;
 
 const brand2Code = `<nav class="navbar bg-body-tertiary">
   <div class="container">
@@ -856,7 +916,7 @@ const brand2Code = `<nav class="navbar bg-body-tertiary">
         alt="Bootstrap" width="30" height="24">
     </a>
   </div>
-</nav>`
+</nav>`;
 
 const brand3Code = `<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -866,7 +926,7 @@ const brand3Code = `<nav class="navbar bg-body-tertiary">
       Bootstrap
     </a>
   </div>
-</nav>`
+</nav>`;
 
 const nav1Code = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -887,7 +947,7 @@ const nav1Code = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const nav2Code = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -924,7 +984,7 @@ const nav2Code = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const formCode = `<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -934,7 +994,7 @@ const formCode = `<nav class="navbar bg-body-tertiary">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
-</nav>`
+</nav>`;
 
 const textCode = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -963,7 +1023,7 @@ const textCode = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const colorCode = `<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <!-- Navbar content -->
@@ -975,7 +1035,7 @@ const colorCode = `<nav class="navbar bg-dark border-bottom border-body" data-bs
 
 <nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light">
   <!-- Navbar content -->
-</nav>`
+</nav>`;
 
 const containerCode = `<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -989,7 +1049,7 @@ const containerCode = `<div class="container">
   <div class="container-md">
     <a class="navbar-brand" href="#">Navbar</a>
   </div>
-</nav>`
+</nav>`;
 
 const placementCode = `<!--Default-->
 <nav class="navbar bg-body-tertiary">
@@ -1017,7 +1077,7 @@ const placementCode = `<!--Default-->
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sticky top</a>
   </div>
-</nav>`
+</nav>`;
 
 const scrollCode = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -1061,7 +1121,7 @@ const scrollCode = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const toggler1Code = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -1092,7 +1152,7 @@ const toggler1Code = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const toggler2Code = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -1123,7 +1183,7 @@ const toggler2Code = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const toggler3Code = `<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -1154,7 +1214,7 @@ const toggler3Code = `<template>
       </div>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const externalCode = `<template>
   <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
@@ -1172,7 +1232,7 @@ const externalCode = `<template>
       </button>
     </div>
   </nav>
-</template>`
+</template>`;
 
 const offcanvasCode = `<template>
   <nav class="navbar bg-body-tertiary">
@@ -1218,7 +1278,7 @@ const offcanvasCode = `<template>
 <script setup>
 import { ref } from 'vue'
 const offcanvasRef = ref(null)
-<\/script>`
+<\/script>`;
 
 const css1Code = `--#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
 --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
@@ -1239,5 +1299,5 @@ const css1Code = `--#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 
 --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
 --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
 --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
---#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};`
+--#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};`;
 </script>

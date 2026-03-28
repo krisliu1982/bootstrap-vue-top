@@ -37,10 +37,10 @@
 </template>
 
 <script setup>
-import { useId, onMounted, onUnmounted } from 'vue'
-import Carousel from 'bootstrap/js/dist/carousel'
+import { useId, onMounted, onUnmounted } from 'vue';
+import Carousel from 'bootstrap/js/dist/carousel';
 
-const id = useId()
+const id = useId();
 const props = defineProps({
   items: {
     type: Array,
@@ -82,9 +82,9 @@ const props = defineProps({
     type: Boolean,
     default: true
   }
-})
+});
 
-let carousel = null
+let carousel = null;
 onMounted(() => {
   if (carousel === null) {
     carousel = new Carousel(`#${id}`, {
@@ -94,14 +94,14 @@ onMounted(() => {
       ride: props.ride,
       touch: props.touch,
       wrap: props.wrap
-    })
+    });
   }
-})
+});
 
 onUnmounted(() => {
   if (carousel !== null) {
-    carousel.dispose()
-    carousel = null
+    carousel.dispose();
+    carousel = null;
   }
-})
+});
 </script>

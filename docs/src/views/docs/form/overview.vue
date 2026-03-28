@@ -71,14 +71,18 @@
       </div>
     </div>
 
-    <h2 id="form-overview">概述<a class="anchor-link" aria-label="Link to this section: 概述" href="#form-overview"> </a></h2>
+    <h2 id="form-overview">
+      概述<a class="anchor-link" aria-label="Link to this section: 概述" href="#form-overview"> </a>
+    </h2>
     <p>
       Bootstrap 的表单控件基于
       <a href="https://getbootstrap.com/docs/5.3/content/reboot#forms" target="_blank">our Rebooted form styles</a>
       并通过类进行扩展。使用这些类可以选择启用其自定义显示，以便在浏览器和设备之间实现更一致的呈现效果。
     </p>
     <p>
-      请务必在所有输入框上使用适当的 <code>type</code> 属性（例如，<code>email</code> 用于电子邮件地址，<code>number</code>
+      请务必在所有输入框上使用适当的 <code>type</code> 属性（例如，<code>email</code> 用于电子邮件地址，<code
+        >number</code
+      >
       用于数字信息），以利用电子邮件验证、数字选择等新型输入控件。
     </p>
     <p>这里有一个简单的示例，用于演示 Bootstrap 的表单样式。继续阅读，了解有关必需类、表单布局等内容的文档。</p>
@@ -104,7 +108,9 @@
       <code-highlight type="html" :code="overviewCode" label="html" />
     </div>
 
-    <h2 id="form-disabled-forms">禁用表单<a class="anchor-link" aria-label="Link to this section: 禁用表单" href="#form-disabled-forms"> </a></h2>
+    <h2 id="form-disabled-forms">
+      禁用表单<a class="anchor-link" aria-label="Link to this section: 禁用表单" href="#form-disabled-forms"> </a>
+    </h2>
     <p>
       在输入框上添加
       <code>disabled</code> 布尔属性，以阻止用户交互，并使其显示为浅色。
@@ -123,7 +129,8 @@
       <code>&lt;a class="btn btn-*"&gt;...&lt;/a&gt;</code>，这些元素将仅被赋予
       <code>pointer-events: none</code>
       的样式，这意味着它们仍然可以通过键盘获得焦点并进行操作。在这种情况下，你必须手动修改这些控件，添加
-      <code>tabindex="-1"</code> 以防止它们获得焦点，并添加 <code>aria-disabled="disabled"</code> 以向辅助技术表明其状态。
+      <code>tabindex="-1"</code> 以防止它们获得焦点，并添加
+      <code>aria-disabled="disabled"</code> 以向辅助技术表明其状态。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -157,10 +164,13 @@
       <code-highlight type="html" :code="disabledFormCode" label="html" />
     </div>
 
-    <h2 id="form-accessibility">无障碍<a class="anchor-link" aria-label="Link to this section: 无障碍" href="#form-accessibility"> </a></h2>
+    <h2 id="form-accessibility">
+      无障碍<a class="anchor-link" aria-label="Link to this section: 无障碍" href="#form-accessibility"> </a>
+    </h2>
     <p>
       确保所有表单控件都有适当的可访问名称，以便向使用辅助技术的用户传达其用途。实现这一目标的最简单方法是使用
-      <code>&lt;label&gt;</code> 元素，或者在按钮的情况下，在 <code>&lt;button&gt;...&lt;/button&gt;</code> 内容中包含足够描述性的文本。
+      <code>&lt;label&gt;</code> 元素，或者在按钮的情况下，在
+      <code>&lt;button&gt;...&lt;/button&gt;</code> 内容中包含足够描述性的文本。
     </p>
     <p>
       对于无法包含可见的
@@ -203,9 +213,9 @@ const overviewCode = `<form>
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>`
+</form>`;
 
-const disabledCode = `<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>`
+const disabledCode = `<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>`;
 
 const disabledFormCode = `<form>
   <fieldset disabled>
@@ -234,5 +244,5 @@ const disabledFormCode = `<form>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
-</form>`
+</form>`;
 </script>

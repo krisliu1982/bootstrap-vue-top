@@ -15,14 +15,14 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue';
 
 const props = defineProps({
   type: {
     type: String,
     default: 'info',
     validator(value) {
-      return ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'].includes(value)
+      return ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'].includes(value);
     }
   },
   message: {
@@ -33,31 +33,31 @@ const props = defineProps({
     type: Number,
     default: 3000
   }
-})
+});
 
-const visible = ref(false)
+const visible = ref(false);
 
 const className = computed(() => {
-  return `text-bg-${props.type}`
-})
+  return `text-bg-${props.type}`;
+});
 
 onMounted(() => {
-  startTimer()
-  visible.value = true
-})
+  startTimer();
+  visible.value = true;
+});
 
 function close() {
-  visible.value = false
+  visible.value = false;
 }
 
-let timer = null
+let timer = null;
 function clearTimer() {
-  clearTimeout(timer)
+  clearTimeout(timer);
 }
 
 function startTimer() {
   timer = setTimeout(() => {
-    close()
-  }, props.duration)
+    close();
+  }, props.duration);
 }
 </script>

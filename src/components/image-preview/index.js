@@ -1,26 +1,26 @@
-import { createVNode, render } from 'vue'
-import ImagePreview from './image-preview.vue'
+import { createVNode, render } from 'vue';
+import ImagePreview from './image-preview.vue';
 
-let container = null
+let container = null;
 const imagePreview = function (data, initIndex) {
   if (container) {
-    render(null, container)
-    container = null
+    render(null, container);
+    container = null;
   }
 
-  container = document.createElement('div')
+  container = document.createElement('div');
 
   const vnode = createVNode(ImagePreview, {
     data: data,
     initIndex: initIndex,
     onDestroy: () => {
-      render(null, container)
+      render(null, container);
     }
-  })
+  });
 
-  render(vnode, container)
+  render(vnode, container);
 
-  document.body.appendChild(container.firstElementChild)
-}
+  document.body.appendChild(container.firstElementChild);
+};
 
-export default imagePreview
+export default imagePreview;

@@ -17,7 +17,9 @@
       <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank">Boostrap Button group</a>
     </p>
 
-    <h2 id="button-group-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#button-group-example"> </a></h2>
+    <h2 id="button-group-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#button-group-example"> </a>
+    </h2>
     <p>使用 <code>.btn</code> 将一系列按钮包裹在 <code>.btn-group</code> 中。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -56,7 +58,12 @@
     </p>
 
     <h2 id="button-group-check">
-      复选框和单选按钮组<a class="anchor-link" aria-label="Link to this section: 复选框和单选按钮组" href="#button-group-check"> </a>
+      复选框和单选按钮组<a
+        class="anchor-link"
+        aria-label="Link to this section: 复选框和单选按钮组"
+        href="#button-group-check"
+      >
+      </a>
     </h2>
     <p>
       将类似按钮的复选框和单选框
@@ -90,7 +97,9 @@
       <code-highlight type="vue" :code="checkCode" label="vue" />
     </div>
 
-    <h2 id="button-group-toolbar">按钮工具栏<a class="anchor-link" aria-label="Link to this section: 按钮工具栏" href="#button-group-toolbar"> </a></h2>
+    <h2 id="button-group-toolbar">
+      按钮工具栏<a class="anchor-link" aria-label="Link to this section: 按钮工具栏" href="#button-group-toolbar"> </a>
+    </h2>
     <p>将多组按钮组合成按钮工具栏，以构建更复杂的组件。根据需要使用实用类来分隔组、按钮等。</p>
     <p>在你的工具栏中，可以随意将输入组与按钮组混合使用。与上面的示例类似，你可能需要一些工具来合理布局。</p>
     <div class="docs-example">
@@ -123,7 +132,13 @@
           </div>
           <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon">@</div>
-            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Input group example"
+              aria-label="Input group example"
+              aria-describedby="btnGroupAddon"
+            />
           </div>
         </div>
 
@@ -136,14 +151,22 @@
           </div>
           <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon2">@</div>
-            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Input group example"
+              aria-label="Input group example"
+              aria-describedby="btnGroupAddon2"
+            />
           </div>
         </div>
       </div>
       <code-highlight type="html" :code="toolbarCode" label="html" />
     </div>
 
-    <h2 id="button-group-size">尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#button-group-size"> </a></h2>
+    <h2 id="button-group-size">
+      尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#button-group-size"> </a>
+    </h2>
     <p>
       无需为组中的每个按钮都应用按钮大小类，只需在每个
       <code>.btn-group</code> 中添加 <code>.btn-group-*</code>，包括嵌套多个组时也要为每个组添加。
@@ -171,7 +194,9 @@
       <code-highlight type="html" :code="sizeCode" label="html" />
     </div>
 
-    <h2 id="button-group-nesting">嵌套<a class="anchor-link" aria-label="Link to this section: 嵌套" href="#button-group-nesting"> </a></h2>
+    <h2 id="button-group-nesting">
+      嵌套<a class="anchor-link" aria-label="Link to this section: 嵌套" href="#button-group-nesting"> </a>
+    </h2>
     <p>
       当您希望在一系列按钮中混合使用下拉菜单时，请将一个
       <code>.btn-group</code> 放置在另一个 <code>.btn-group</code> 中。
@@ -183,7 +208,9 @@
           <button type="button" class="btn btn-primary">2</button>
 
           <div class="btn-group" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
+            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+              Dropdown
+            </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -194,7 +221,9 @@
       <code-highlight type="html" :code="nestingCode" label="html" />
     </div>
 
-    <h2 id="button-group-vertical">竖向变化<a class="anchor-link" aria-label="Link to this section: 竖向变化" href="#button-group-vertical"> </a></h2>
+    <h2 id="button-group-vertical">
+      竖向变化<a class="anchor-link" aria-label="Link to this section: 竖向变化" href="#button-group-vertical"> </a>
+    </h2>
     <p>使一组按钮垂直堆叠显示，而非水平排列。<strong>此处不支持拆分按钮下拉菜单。</strong></p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -209,7 +238,9 @@
 
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <div class="btn-group" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
+            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+              Dropdown
+            </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -218,21 +249,27 @@
           <button type="button" class="btn btn-primary">Button</button>
           <button type="button" class="btn btn-primary">Button</button>
           <div class="btn-group dropstart" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
+            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+              Dropdown
+            </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
             </ul>
           </div>
           <div class="btn-group dropend" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
+            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+              Dropdown
+            </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
             </ul>
           </div>
           <div class="btn-group dropup" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
+            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+              Dropdown
+            </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -257,9 +294,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const checkboxVal = ref([])
-const radioVal = ref('btnradio1')
+import { ref } from 'vue';
+const checkboxVal = ref([]);
+const radioVal = ref('btnradio1');
 const exampleCode = `<div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-primary">Left</button>
   <button type="button" class="btn btn-primary">Middle</button>
@@ -282,7 +319,7 @@ const exampleCode = `<div class="btn-group" role="group" aria-label="Basic examp
   <button type="button" class="btn btn-outline-primary">Left</button>
   <button type="button" class="btn btn-outline-primary">Middle</button>
   <button type="button" class="btn btn-outline-primary">Right</button>
-</div>`
+</div>`;
 
 const checkCode = `<template>
     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
@@ -313,7 +350,7 @@ import {ref} from 'vue'
 
 const checkboxVal = ref([]);
 const radioVal = ref('btnradio1')
-<\/script>`
+<\/script>`;
 
 const toolbarCode = `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
@@ -358,7 +395,7 @@ const toolbarCode = `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar
     <div class="input-group-text" id="btnGroupAddon2">@</div>
     <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
   </div>
-</div>`
+</div>`;
 
 const sizeCode = `<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
   <button type="button" class="btn btn-outline-primary">Left</button>
@@ -376,7 +413,7 @@ const sizeCode = `<div class="btn-group btn-group-lg" role="group" aria-label="L
   <button type="button" class="btn btn-outline-primary">Left</button>
   <button type="button" class="btn btn-outline-primary">Middle</button>
   <button type="button" class="btn btn-outline-primary">Right</button>
-</div>`
+</div>`;
 
 const nestingCode = `<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-primary">1</button>
@@ -391,7 +428,7 @@ const nestingCode = `<div class="btn-group" role="group" aria-label="Button grou
       <li><a class="dropdown-item" href="#">Dropdown link</a></li>
     </ul>
   </div>
-</div>`
+</div>`;
 
 const verticalCode = `<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
   <button type="button" class="btn btn-primary">Button</button>
@@ -452,5 +489,5 @@ const verticalCode = `<div class="btn-group-vertical" role="group" aria-label="V
   <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
   <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3">
   <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
-</div>`
+</div>`;
 </script>

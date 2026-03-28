@@ -1,1 +1,1 @@
-export const panes_injection_key = Symbol()
+export const panes_injection_key = Symbol();

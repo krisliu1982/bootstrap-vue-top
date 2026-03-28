@@ -10,10 +10,12 @@
     <h1>Loading 加载</h1>
     <p class="fs-4 fw-light">加载数据时显示动效。</p>
 
-    <h2 id="loading-fullscreen">全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a></h2>
+    <h2 id="loading-fullscreen">
+      全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a>
+    </h2>
     <p>
-      通过提供 <code>LoadingFullscreen</code> 对象<strong>（需单独引用）</strong>的 <code>getInstance</code> 方法获得单例。你可以通过
-      <code>show</code> 方法显示，<code>hide</code> 方法隐藏。
+      通过提供 <code>LoadingFullscreen</code> 对象<strong>（需单独引用）</strong>的
+      <code>getInstance</code> 方法获得单例。你可以通过 <code>show</code> 方法显示，<code>hide</code> 方法隐藏。
     </p>
     <p>全屏加载为单例模式内置计数器，不必担心同时多次异步请求调用 <code>show</code> 的副作用。</p>
     <div class="docs-example">
@@ -23,7 +25,9 @@
       <code-highlight type="vue" :code="fullscreenCode" label="vue" />
     </div>
 
-    <h2 id="loading-area">区域加载<a class="anchor-link" aria-label="Link to this section: 区域加载" href="#loading-area"> </a></h2>
+    <h2 id="loading-area">
+      区域加载<a class="anchor-link" aria-label="Link to this section: 区域加载" href="#loading-area"> </a>
+    </h2>
     <p>通过 <code>bv-loading</code> 组件实现区域加载。设置 <code>loading</code> 属性值老控制是否加载。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -46,24 +50,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { LoadingFullscreen } from 'bootstrap-vue-ui'
+import { ref } from 'vue';
+import { LoadingFullscreen } from 'bootstrap-vue-ui';
 
 function handleShow() {
-  const instance = LoadingFullscreen.getInstance()
-  instance.show()
+  const instance = LoadingFullscreen.getInstance();
+  instance.show();
 
   setTimeout(() => {
-    instance.hide()
-  }, 1000)
+    instance.hide();
+  }, 1000);
 }
 
-const loading = ref(true)
+const loading = ref(true);
 const tableData = [
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
   { code: 1002, name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
-]
+];
 
 const fullscreenCode = `<template>
   <button type="button" class="btn btn-primary" @click="handleShow">show</button>
@@ -80,7 +84,7 @@ function handleShow() {
     instance.hide()
   }, 1000);
 }
-<\/script>`
+<\/script>`;
 
 const loadingCode = `<template>
   <bv-loading :loading="loading">
@@ -108,5 +112,5 @@ const tableData = [
   { code: 1002, name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
 ]
-<\/script>`
+<\/script>`;
 </script>

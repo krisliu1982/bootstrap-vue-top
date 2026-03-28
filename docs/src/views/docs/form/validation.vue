@@ -15,7 +15,9 @@
       <a href="https://getbootstrap.com/docs/5.3/forms/validation/" target="_blank">Bootstrap Form Validation</a>
     </p>
 
-    <h2 id="validation-form">表单验证<a class="anchor-link" aria-label="Link to this section: 表单验证" href="#validation-form"> </a></h2>
+    <h2 id="validation-form">
+      表单验证<a class="anchor-link" aria-label="Link to this section: 表单验证" href="#validation-form"> </a>
+    </h2>
     <p>
       你可以使用 <code>.is-invalid</code> 来分别指示无效表单字段。请注意，<code>.invalid-feedback</code>
       用于验证信息反馈。
@@ -40,7 +42,9 @@
             </div>
           </div>
           <div class="row mb-3">
-            <label for="password1" class="col-sm-3 col-form-label">Password <strong class="text-danger">*</strong></label>
+            <label for="password1" class="col-sm-3 col-form-label"
+              >Password <strong class="text-danger">*</strong></label
+            >
             <div class="col-sm-9">
               <input
                 type="password"
@@ -110,7 +114,13 @@
           <div class="row mb-3">
             <label for="select1" class="col-sm-3 col-form-label">Select <strong class="text-danger">*</strong></label>
             <div class="col-sm-9">
-              <select class="form-select" id="select1" v-model="data1.select" :class="{ 'is-invalid': errors1.select }" @change="validateField1('select')">
+              <select
+                class="form-select"
+                id="select1"
+                v-model="data1.select"
+                :class="{ 'is-invalid': errors1.select }"
+                @change="validateField1('select')"
+              >
                 <option value="">--</option>
                 <option value="One">One</option>
                 <option value="Two">Two</option>
@@ -125,11 +135,25 @@
             <label class="col-form-label col-sm-3">Radios <strong class="text-danger">*</strong></label>
             <div class="col-sm-9">
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="gridRadios1" value="option1" v-model="data1.radio" @change="validateField1('radio')" />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="gridRadios1"
+                  value="option1"
+                  v-model="data1.radio"
+                  @change="validateField1('radio')"
+                />
                 <label class="form-check-label" for="gridRadios1"> First radio </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="gridRadios2" value="option2" v-model="data1.radio" @change="validateField1('radio')" />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="gridRadios2"
+                  value="option2"
+                  v-model="data1.radio"
+                  @change="validateField1('radio')"
+                />
                 <label class="form-check-label" for="gridRadios2"> Second radio </label>
               </div>
               <div class="invalid-feedback" :class="{ 'd-block': errors1.radio }">
@@ -186,7 +210,13 @@
           <div class="row mb-3">
             <div class="col-sm-9 offset-sm-3">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="invalidCheck2" v-model="data1.checkbox" @change="validateField1('checkbox')" />
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="invalidCheck2"
+                  v-model="data1.checkbox"
+                  @change="validateField1('checkbox')"
+                />
                 <label class="form-check-label" for="invalidCheck2"> Agree to terms and conditions </label>
               </div>
               <div class="invalid-feedback" :class="{ 'd-block': errors1.checkbox }">
@@ -207,16 +237,21 @@
       <code-highlight type="vue" :code="formCode" label="vue" />
     </div>
 
-    <h2 id="validation-field">表单项验证<a class="anchor-link" aria-label="Link to this section: 表单项验证" href="#validation-field"> </a></h2>
+    <h2 id="validation-field">
+      表单项验证<a class="anchor-link" aria-label="Link to this section: 表单项验证" href="#validation-field"> </a>
+    </h2>
     <p>
       为了解决
-      <a href="https://github.com/twbs/bootstrap/issues/25110" target="_blank">边框圆角的问题</a>，输入组需要添加一个额外的 <code>.has-validation</code> 类。
+      <a href="https://github.com/twbs/bootstrap/issues/25110" target="_blank">边框圆角的问题</a
+      >，输入组需要添加一个额外的 <code>.has-validation</code> 类。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <form novalidate @submit.prevent="submitForm2">
           <div class="row mb-3">
-            <label for="mobile1" class="col-sm-3 col-form-label text-end"><strong class="text-danger">*</strong><span class="ms-1">Mobile</span></label>
+            <label for="mobile1" class="col-sm-3 col-form-label text-end"
+              ><strong class="text-danger">*</strong><span class="ms-1">Mobile</span></label
+            >
             <div class="col-sm-9">
               <input
                 type="tel"
@@ -245,7 +280,9 @@
                   v-model="data2.verification"
                   @change="validateField2('verification')"
                 />
-                <button class="btn btn-outline-primary" type="button" @click="validateField2('mobile')">Send Verification code</button>
+                <button class="btn btn-outline-primary" type="button" @click="validateField2('mobile')">
+                  Send Verification code
+                </button>
                 <div class="invalid-feedback">
                   {{ errors2.verification }}
                 </div>
@@ -265,9 +302,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import * as yup from 'yup'
-import { get } from 'lodash-es'
+import { ref } from 'vue';
+import * as yup from 'yup';
+import { get } from 'lodash-es';
 
 const data1Create = () => {
   let d = {
@@ -279,24 +316,24 @@ const data1Create = () => {
     checkboxs: [],
     checkbox: false,
     files: []
-  }
+  };
 
   for (let i = 0; i < 3; i++) {
     d.details.push({
       name: '',
       number: null,
       remark: ''
-    })
+    });
   }
 
-  return d
-}
-const data1 = ref(data1Create())
+  return d;
+};
+const data1 = ref(data1Create());
 
 const detailSchema = yup.object({
   name: yup.string().required('Name必填'),
   number: yup.number().required('Number必填').min(1, 'Number最小为1').max(10, 'Number最大为10')
-})
+});
 
 const schema1 = yup.object({
   email: yup.string().required('Email必填').email('Email格式不正确'),
@@ -307,70 +344,70 @@ const schema1 = yup.object({
   checkboxs: yup.array().min(1, 'Checkboxs必选'),
   checkbox: yup.boolean().oneOf([true], 'Checkbox必选'),
   files: yup.array().min(1, '文件必选')
-})
+});
 
-const errors1 = ref({})
+const errors1 = ref({});
 function submitForm1() {
   schema1
     .validate(data1.value, { abortEarly: false })
     .then(() => {
       // 验证通过，清除错误
-      errors1.value = {}
+      errors1.value = {};
     })
     .catch((err) => {
-      const validationErrors = {}
+      const validationErrors = {};
       err.inner.forEach((error) => {
         if (!validationErrors[error.path]) {
-          validationErrors[error.path] = error.message
+          validationErrors[error.path] = error.message;
         }
-      })
-      errors1.value = validationErrors
-    })
+      });
+      errors1.value = validationErrors;
+    });
 }
 
 function validateField1(fieldName) {
-  const fieldSchema = yup.reach(schema1, fieldName)
+  const fieldSchema = yup.reach(schema1, fieldName);
   fieldSchema
     .validate(get(data1.value, fieldName), { abortEarly: true })
     .then(() => {
       // 验证通过，清除错误
-      errors1.value[fieldName] = ''
+      errors1.value[fieldName] = '';
     })
     .catch((err) => {
-      errors1.value[fieldName] = err.message
-    })
+      errors1.value[fieldName] = err.message;
+    });
 }
 
 function resetForm1() {
-  data1.value = data1Create()
-  errors1.value = {}
+  data1.value = data1Create();
+  errors1.value = {};
 }
 
 function handleFileChange(fileEl) {
-  const file = fileEl.files[0]
-  console.log(file.size, file.name, file.type)
+  const file = fileEl.files[0];
+  console.log(file.size, file.name, file.type);
   //这里处理验证，上传等逻辑
   data1.value.files.push({
     url: 'http://baidu.com', //文件地址
     name: file.name,
     size: file.size
-  })
+  });
 
-  fileEl.value = '' //可选
+  fileEl.value = ''; //可选
 
-  validateField1('files')
+  validateField1('files');
 }
 
 function handleFileRemove(index) {
-  data1.value.files.splice(index, 1)
+  data1.value.files.splice(index, 1);
 
-  validateField1('files')
+  validateField1('files');
 }
 
 const data2 = ref({
   mobile: '',
   verification: ''
-})
+});
 
 let schema2 = yup.object({
   mobile: yup
@@ -378,38 +415,38 @@ let schema2 = yup.object({
     .required('Mobile必填')
     .matches(/^1[3-9]\d{9}$/, '请输入正确的Mobile'),
   verification: yup.string().required('Verification必填')
-})
+});
 
-const errors2 = ref({})
+const errors2 = ref({});
 function submitForm2() {
   schema2
     .validate(data2.value, { abortEarly: false })
     .then(() => {
       // 验证通过，清除错误
-      errors2.value = {}
+      errors2.value = {};
     })
     .catch((err) => {
-      const validationErrors = {}
+      const validationErrors = {};
       err.inner.forEach((error) => {
         if (!validationErrors[error.path]) {
-          validationErrors[error.path] = error.message
+          validationErrors[error.path] = error.message;
         }
-      })
-      errors2.value = validationErrors
-    })
+      });
+      errors2.value = validationErrors;
+    });
 }
 
 function validateField2(fieldName) {
-  const fieldSchema = yup.reach(schema2, fieldName)
+  const fieldSchema = yup.reach(schema2, fieldName);
   fieldSchema
     .validate(get(data2.value, fieldName), { abortEarly: true })
     .then(() => {
       // 验证通过，清除错误
-      errors2.value[fieldName] = ''
+      errors2.value[fieldName] = '';
     })
     .catch((err) => {
-      errors2.value[fieldName] = err.message
-    })
+      errors2.value[fieldName] = err.message;
+    });
 }
 
 const formCode = `<template>
@@ -668,7 +705,7 @@ function handleFileRemove(index) {
 
   validateField1('files');
 }
-<\/script>`
+<\/script>`;
 
 const fieldCode = `<template>
   <form novalidate @submit.prevent="submitForm2">
@@ -747,5 +784,5 @@ function validateField2(fieldName) {
     errors2.value[fieldName] = err.message;
   });
 }
-<\/script>`
+<\/script>`;
 </script>

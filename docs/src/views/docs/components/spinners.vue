@@ -14,10 +14,13 @@
       <a href="https://getbootstrap.com/docs/5.3/components/spinners/" target="_blank">Boostrap Spinners</a>
     </p>
 
-    <h2 id="spinners-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#spinners-about"> </a></h2>
+    <h2 id="spinners-about">
+      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#spinners-about"> </a>
+    </h2>
     <p>
-      “加载指示器”可用于在您的项目中展示加载状态。它们完全由 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript 即可创建它们。不过，您需要一些自定义的
-      JavaScript 来控制其显示状态。通过我们出色的实用类，您可以轻松地自定义其外观、对齐方式和尺寸。
+      “加载指示器”可用于在您的项目中展示加载状态。它们完全由 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript
+      即可创建它们。不过，您需要一些自定义的 JavaScript
+      来控制其显示状态。通过我们出色的实用类，您可以轻松地自定义其外观、对齐方式和尺寸。
     </p>
     <p>
       出于可访问性的考虑，这里的每个加载器都包含了 <code>role="status"</code> 以及一个嵌套的
@@ -25,10 +28,14 @@
     </p>
     <p class="text-bg-info">
       此组件的动画效果取决于 <code>prefers-reduced-motion</code> 媒体查询。请参阅我们的无障碍文档中
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#reduced-motion" target="_blank">无障碍部分</a>。
+      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#reduced-motion" target="_blank"
+        >无障碍部分</a
+      >。
     </p>
 
-    <h2 id="spinners-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#spinners-example"> </a></h2>
+    <h2 id="spinners-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#spinners-example"> </a>
+    </h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <!--Border spinner-->
@@ -144,11 +151,13 @@
       <code-highlight type="html" :code="exampleCode" label="html" />
     </div>
 
-    <h2 id="spinners-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#spinners-css"> </a></h2>
+    <h2 id="spinners-css">
+      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#spinners-css"> </a>
+    </h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，下拉菜单现在在
-      <code>.pinner-border</code> 和 <code>.spinner-grow</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此
-      Sass 自定义功能仍然得到支持。
+      <code>.pinner-border</code> 和 <code>.spinner-grow</code> 元素上使用本地 CSS
+      变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_spinners.scss" />
   </div>
@@ -263,12 +272,12 @@ const exampleCode = `<!--Border spinner-->
   <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
-</div>`
+</div>`;
 
 const css1Code = `--#{$prefix}spinner-width: #{$spinner-width};
 --#{$prefix}spinner-height: #{$spinner-height};
 --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
 --#{$prefix}spinner-border-width: #{$spinner-border-width};
 --#{$prefix}spinner-animation-speed: #{$spinner-animation-speed};
---#{$prefix}spinner-animation-name: spinner-border|spinner-grow;`
+--#{$prefix}spinner-animation-name: spinner-border|spinner-grow;`;
 </script>

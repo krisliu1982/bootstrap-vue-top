@@ -9,23 +9,23 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue';
 
-const visible = ref(false)
+const visible = ref(false);
 
 onMounted(() => {
-  document.addEventListener('scroll', handleScroll)
-})
+  document.addEventListener('scroll', handleScroll);
+});
 
 onUnmounted(() => {
-  document.removeEventListener('scroll', handleScroll)
-})
+  document.removeEventListener('scroll', handleScroll);
+});
 
 function handleScroll() {
-  visible.value = document.documentElement.scrollTop >= 200
+  visible.value = document.documentElement.scrollTop >= 200;
 }
 
 function handleClick() {
-  document.documentElement.scrollTo({ top: 0 })
+  document.documentElement.scrollTo({ top: 0 });
 }
 </script>

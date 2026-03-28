@@ -10,12 +10,12 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import Prism from 'prismjs'
+import { ref, computed, onMounted } from 'vue';
+import Prism from 'prismjs';
 // 引入 SCSS 语言支持
-import 'prismjs/components/prism-scss.min'
+import 'prismjs/components/prism-scss.min';
 
-const codeRef = ref(null)
+const codeRef = ref(null);
 const props = defineProps({
   code: {
     type: String,
@@ -29,35 +29,35 @@ const props = defineProps({
     type: String,
     default: null
   }
-})
+});
 
 onMounted(() => {
-  Prism.highlightElement(codeRef.value)
-})
+  Prism.highlightElement(codeRef.value);
+});
 
 const languageClass = computed(() => {
   if (props.type === 'html') {
-    return 'language-html'
+    return 'language-html';
   } else if (props.type === 'vue') {
-    return 'language-html'
+    return 'language-html';
   } else if (props.type === 'scss') {
-    return 'language-scss'
+    return 'language-scss';
   }
-})
+});
 
-const isCopy = ref(false)
+const isCopy = ref(false);
 function handleCopy() {
   navigator.clipboard
     .writeText(props.code)
     .then(() => {
-      isCopy.value = true
+      isCopy.value = true;
       setTimeout(() => {
-        isCopy.value = false
-      }, 2000)
+        isCopy.value = false;
+      }, 2000);
     })
     .catch((err) => {
-      isCopy.value = false
-      console.log('复制错误', err)
-    })
+      isCopy.value = false;
+      console.log('复制错误', err);
+    });
 }
 </script>

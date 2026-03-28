@@ -1,5 +1,12 @@
 <template>
-  <div class="offcanvas" :class="className" :style="offcanvasStyle" tabindex="-1" :id="id" :aria-labelledby="`${id}Label`">
+  <div
+    class="offcanvas"
+    :class="className"
+    :style="offcanvasStyle"
+    tabindex="-1"
+    :id="id"
+    :aria-labelledby="`${id}Label`"
+  >
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" :id="`${id}Label`">{{ title }}</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -11,18 +18,18 @@
 </template>
 
 <script setup>
-import { useId, onMounted, onUnmounted, computed } from 'vue'
-import Offcanvas from 'bootstrap/js/dist/offcanvas'
+import { useId, onMounted, onUnmounted, computed } from 'vue';
+import Offcanvas from 'bootstrap/js/dist/offcanvas';
 
-const emit = defineEmits(['offcanvas-shown'])
+const emit = defineEmits(['offcanvas-shown']);
 
-const id = useId()
+const id = useId();
 const props = defineProps({
   position: {
     type: String,
     default: 'start',
     validator(value) {
-      return ['start', 'end', 'top', 'bottom'].includes(value)
+      return ['start', 'end', 'top', 'bottom'].includes(value);
     }
   },
   title: {
@@ -37,36 +44,36 @@ const props = defineProps({
     type: String,
     default: null
   }
-})
+});
 
 const className = computed(() => {
-  return `offcanvas-${props.position}`
-})
+  return `offcanvas-${props.position}`;
+});
 
-let offcanvas = null
+let offcanvas = null;
 onMounted(() => {
   if (offcanvas === null) {
-    const offcanvasEl = document.getElementById(id)
+    const offcanvasEl = document.getElementById(id);
     offcanvas = new Offcanvas(offcanvasEl, {
       backdrop: props.backdrop
-    })
+    });
 
     offcanvasEl.addEventListener('shown.bs.offcanvas', (event) => {
-      emit('offcanvas-shown')
-    })
+      emit('offcanvas-shown');
+    });
   }
-})
+});
 
 onUnmounted(() => {
   if (offcanvas !== null) {
-    offcanvas.dispose()
-    offcanvas = null
+    offcanvas.dispose();
+    offcanvas = null;
   }
-})
+});
 
 defineExpose({
   toggle: function () {
-    offcanvas.toggle()
+    offcanvas.toggle();
   }
-})
+});
 </script>

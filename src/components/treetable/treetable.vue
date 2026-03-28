@@ -34,9 +34,9 @@
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted } from 'vue'
-import { cols_key, attrs_key, expand_keys } from './treetable-keys.js'
-import TreetableNode from './treetable-node.vue'
+import { useSlots, ref, provide, onMounted } from 'vue';
+import { cols_key, attrs_key, expand_keys } from './treetable-keys.js';
+import TreetableNode from './treetable-node.vue';
 
 const props = defineProps({
   data: {
@@ -75,39 +75,39 @@ const props = defineProps({
     type: String,
     default: null
   }
-})
+});
 
-const ready = ref(false)
+const ready = ref(false);
 
-const cols = []
-provide(cols_key, cols)
-provide(attrs_key, { key: props.attrKey, children: props.attrChildren })
-const expandKeys = ref({})
-expandKeys.value[props.data[props.attrKey]] = true
-provide(expand_keys, expandKeys)
+const cols = [];
+provide(cols_key, cols);
+provide(attrs_key, { key: props.attrKey, children: props.attrChildren });
+const expandKeys = ref({});
+expandKeys.value[props.data[props.attrKey]] = true;
+provide(expand_keys, expandKeys);
 
 onMounted(() => {
-  _initCols()
+  _initCols();
 
-  ready.value = true
-})
+  ready.value = true;
+});
 
 function _initCols() {
-  const slots = useSlots()
-  const vNodes = slots.default()
+  const slots = useSlots();
+  const vNodes = slots.default();
 
-  const colVNodes = []
+  const colVNodes = [];
   for (const vNode of vNodes) {
     if (vNode.type.__name === 'treetable-col') {
-      colVNodes.push(vNode)
+      colVNodes.push(vNode);
     }
   }
 
   for (let i = 0; i < cols.length; i++) {
     if (colVNodes[i].children !== null && colVNodes[i].children.body !== 'undefined') {
-      cols[i].body = colVNodes[i].children.body
+      cols[i].body = colVNodes[i].children.body;
     } else {
-      cols[i].body = null
+      cols[i].body = null;
     }
   }
 }

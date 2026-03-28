@@ -2,7 +2,9 @@
   <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary border-bottom border-body">
     <div class="container-xxl">
       <a class="navbar-brand d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)" class="me-3" /><span>BoostrapVue</span></a
+        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)" class="me-3" /><span
+          >BoostrapVue</span
+        ></a
       >
       <button
         class="navbar-toggler"
@@ -48,48 +50,48 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch } from 'vue';
 
-const size = ref('m')
+const size = ref('m');
 
 watch(
   size,
   (newVal) => {
     if (newVal === 's') {
-      document.documentElement.style.setProperty('font-size', '14px')
+      document.documentElement.style.setProperty('font-size', '14px');
     } else if (newVal === 'm') {
-      document.documentElement.style.setProperty('font-size', '16px')
+      document.documentElement.style.setProperty('font-size', '16px');
     } else if (newVal === 'l') {
-      document.documentElement.style.setProperty('font-size', '18px')
+      document.documentElement.style.setProperty('font-size', '18px');
     }
   },
   { immediate: true }
-)
+);
 
 // 初始加载一个默认主题
-const link = document.createElement('link')
-link.id = 'prism-theme'
-link.rel = 'stylesheet'
-link.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css'
-document.head.appendChild(link)
+const link = document.createElement('link');
+link.id = 'prism-theme';
+link.rel = 'stylesheet';
+link.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
+document.head.appendChild(link);
 
-const theme = ref('light')
+const theme = ref('light');
 function toggleTheme() {
   if (theme.value === 'light') {
-    theme.value = 'dark'
+    theme.value = 'dark';
   } else if (theme.value === 'dark') {
-    theme.value = 'light'
+    theme.value = 'light';
   } else {
-    theme.value = 'light'
+    theme.value = 'light';
   }
 
-  document.documentElement.setAttribute('data-bs-theme', theme.value)
+  document.documentElement.setAttribute('data-bs-theme', theme.value);
 
-  const themeLink = document.getElementById('prism-theme')
+  const themeLink = document.getElementById('prism-theme');
   if (theme.value === 'light') {
-    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css'
+    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
   } else if (theme.value === 'dark') {
-    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css'
+    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css';
   }
 }
 </script>

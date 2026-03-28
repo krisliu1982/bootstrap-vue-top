@@ -17,7 +17,9 @@
       <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">Boostrap Alerts</a>
     </p>
 
-    <h2 id="alerts-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#alerts-example"> </a></h2>
+    <h2 id="alerts-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#alerts-example"> </a>
+    </h2>
     <p>
       “警示”可用于任何长度的文本，以及一个可选的关闭按钮。为了确保样式正确，请使用八个<strong>必需</strong>的上下文类之一（例如，<code>.alert-success</code>）。
     </p>
@@ -43,7 +45,9 @@
       >），或者通过其他方式予以说明，比如使用带有<code>. visually-hidden</code>类的隐藏文本。
     </p>
 
-    <h2 id="alerts-link">链接颜色<a class="anchor-link" aria-label="Link to this section: 链接颜色" href="#alerts-link"> </a></h2>
+    <h2 id="alerts-link">
+      链接颜色<a class="anchor-link" aria-label="Link to this section: 链接颜色" href="#alerts-link"> </a>
+    </h2>
     <p>
       使用
       <code>.alert-link</code>
@@ -87,15 +91,17 @@
       <code-highlight type="html" :code="linkCode" label="html" />
     </div>
 
-    <h2 id="alerts-att">附加内容<a class="anchor-link" aria-label="Link to this section: 附加内容" href="#alerts-att"> </a></h2>
+    <h2 id="alerts-att">
+      附加内容<a class="anchor-link" aria-label="Link to this section: 附加内容" href="#alerts-att"> </a>
+    </h2>
     <p>警示还可以包含其他HTML元素，如标题、段落和分隔符。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="alert alert-success" role="alert">
           <h4 class="alert-heading">Well done!</h4>
           <p>
-            Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within
-            an alert works with this kind of content.
+            Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+            so that you can see how spacing within an alert works with this kind of content.
           </p>
           <hr />
           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
@@ -104,7 +110,9 @@
       <code-highlight type="html" :code="attCode" label="html" />
     </div>
 
-    <h2 id="alerts-icon">图标<a class="anchor-link" aria-label="Link to this section: 图标" href="#alerts-icon"> </a></h2>
+    <h2 id="alerts-icon">
+      图标<a class="anchor-link" aria-label="Link to this section: 图标" href="#alerts-icon"> </a>
+    </h2>
     <p>
       同样，您可以使用
       <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">flexbox 工具</a>
@@ -122,7 +130,9 @@
       <code-highlight type="html" :code="iconCode" label="html" />
     </div>
 
-    <h2 id="alerts-dismissing">可关闭<a class="anchor-link" aria-label="Link to this section: 可关闭" href="#alerts-dismissing"> </a></h2>
+    <h2 id="alerts-dismissing">
+      可关闭<a class="anchor-link" aria-label="Link to this section: 可关闭" href="#alerts-dismissing"> </a>
+    </h2>
     <p>使用 <code>v-alert</code> 指令，可以在行内关闭任何 alert。方法如下：</p>
     <ul class="docs-content-list">
       <li>
@@ -149,10 +159,13 @@
       <code-highlight type="vue" :code="dismissCode" label="vue" />
     </div>
 
-    <h2 id="alerts-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#alerts-css"> </a></h2>
+    <h2 id="alerts-css">
+      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#alerts-css"> </a>
+    </h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，Alerts 现在在
-      <code>.alert</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能依然可用。
+      <code>.alert</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
+      设置的，因此 Sass 自定义功能依然可用。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_alert.scss" />
   </div>
@@ -182,7 +195,7 @@ const exampleCode = `<div class="alert alert-primary" role="alert">
 </div>
 <div class="alert alert-dark" role="alert">
   A simple dark alert—check it out!
-</div>`
+</div>`;
 
 const linkCode = `<div class="alert alert-primary" role="alert">
   ... <a href="#" class="alert-link">an example link</a> ...
@@ -207,19 +220,19 @@ const linkCode = `<div class="alert alert-primary" role="alert">
 </div>
 <div class="alert alert-dark" role="alert">
   ... <a href="#" class="alert-link">an example link</a> ...
-</div>`
+</div>`;
 
 const attCode = `<div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Well done!</h4>
   <p>Aww yeah, you successfully read this important alert message. ...</p>
   <hr>
   <p class="mb-0">Whenever you need to, ...</p>
-</div>`
+</div>`;
 
 const iconCode = `<div class="alert alert-primary d-flex align-items-center" role="alert">
   <bi-info-circle-fill class="flex-shrink-0 me-2" />
   <div>An example alert with an icon</div>
-</div>`
+</div>`;
 
 const dismissCode = `<template>
   <div v-alert class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -227,7 +240,7 @@ const dismissCode = `<template>
       <button type="button" class="btn-close" 
         data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
-</template>`
+</template>`;
 
 const css1Code = `--#{$prefix}alert-bg: transparent;
 --#{$prefix}alert-padding-x: #{$alert-padding-x};
@@ -238,5 +251,5 @@ const css1Code = `--#{$prefix}alert-bg: transparent;
 --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
 --#{$prefix}alert-border-radius: #{$alert-border-radius};
 --#{$prefix}alert-link-color: inherit;
-`
+`;
 </script>

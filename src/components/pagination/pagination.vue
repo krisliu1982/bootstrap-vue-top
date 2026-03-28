@@ -4,7 +4,9 @@
     <ul v-if="pages > 1" class="col-auto pagination mb-0" :class="paginationClass">
       <li class="page-item" :class="{ disabled: currentPage === 1 }">
         <span v-if="currentPage === 1" class="page-link"><BiChevronLeft /></span>
-        <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage - 1)"><BiChevronLeft /></button>
+        <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage - 1)">
+          <BiChevronLeft />
+        </button>
       </li>
 
       <template v-if="mode === 'simple'">
@@ -44,7 +46,9 @@
 
       <li class="page-item" :class="{ disabled: currentPage === pages }">
         <span v-if="currentPage === pages" class="page-link"><BiChevronRight /></span>
-        <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage + 1)"><BiChevronRight /></button>
+        <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage + 1)">
+          <BiChevronRight />
+        </button>
       </li>
     </ul>
 
@@ -74,16 +78,16 @@
 </template>
 
 <script setup>
-import { computed, watchEffect, ref } from 'vue'
+import { computed, watchEffect, ref } from 'vue';
 
-const emit = defineEmits(['currentChange', 'sizeChange'])
+const emit = defineEmits(['currentChange', 'sizeChange']);
 
 const props = defineProps({
   mode: {
     type: String,
     default: 'base',
     validator(value) {
-      return ['simple', 'base', 'full'].includes(value)
+      return ['simple', 'base', 'full'].includes(value);
     }
   },
   total: {
@@ -98,115 +102,115 @@ const props = defineProps({
     type: Number,
     default: 20,
     validator(value) {
-      return [10, 20, 50, 100].includes(value)
+      return [10, 20, 50, 100].includes(value);
     }
   },
   pagerCount: {
     type: Number,
     default: 7,
     validator(value) {
-      return [5, 7, 9, 11, 13, 15, 17, 19, 21].includes(value)
+      return [5, 7, 9, 11, 13, 15, 17, 19, 21].includes(value);
     }
   },
   size: {
     type: String,
     default: 'md',
     validator(value) {
-      return ['sm', 'md', 'lg'].includes(value)
+      return ['sm', 'md', 'lg'].includes(value);
     }
   },
   position: {
     type: String,
     default: 'start',
     validator(value) {
-      return ['start', 'center', 'end'].includes(value)
+      return ['start', 'center', 'end'].includes(value);
     }
   }
-})
+});
 
 const navClass = computed(() => {
-  if (props.position === 'start') return null
-  return `justify-content-${props.position}`
-})
+  if (props.position === 'start') return null;
+  return `justify-content-${props.position}`;
+});
 
 const paginationClass = computed(() => {
-  if (props.size === 'md') return null
-  return `pagination-${props.size}`
-})
+  if (props.size === 'md') return null;
+  return `pagination-${props.size}`;
+});
 
 const totalClass = computed(() => {
-  if (props.size === 'md') return null
-  if (props.size === 'sm') return 'small'
-  if (props.size === 'lg') return 'fs-5'
-  return null
-})
+  if (props.size === 'md') return null;
+  if (props.size === 'sm') return 'small';
+  if (props.size === 'lg') return 'fs-5';
+  return null;
+});
 
 const pageSizeClass = computed(() => {
-  if (props.size === 'md') return null
-  return `form-select-${props.size}`
-})
+  if (props.size === 'md') return null;
+  return `form-select-${props.size}`;
+});
 
 const pageGoClass = computed(() => {
-  if (props.size === 'md') return null
-  return `input-group-${props.size}`
-})
+  if (props.size === 'md') return null;
+  return `input-group-${props.size}`;
+});
 
 const pages = computed(() => {
-  return Math.ceil(props.total / props.pageSize)
-})
+  return Math.ceil(props.total / props.pageSize);
+});
 
-const showPrevMore = ref(false)
-const showNextMore = ref(false)
+const showPrevMore = ref(false);
+const showNextMore = ref(false);
 
-const pagerCount = props.pagerCount
+const pagerCount = props.pagerCount;
 const pagers = computed(() => {
-  const halfPagerCount = (pagerCount - 1) / 2
-  const currentPage = props.currentPage
-  const pageCount = pages.value
-  let prevMore = false
-  let nextMore = false
+  const halfPagerCount = (pagerCount - 1) / 2;
+  const currentPage = props.currentPage;
+  const pageCount = pages.value;
+  let prevMore = false;
+  let nextMore = false;
   if (pageCount > pagerCount) {
     if (currentPage > pagerCount - halfPagerCount) {
-      prevMore = true
+      prevMore = true;
     }
     if (currentPage < pageCount - halfPagerCount) {
-      nextMore = true
+      nextMore = true;
     }
   }
-  const array = []
+  const array = [];
   if (prevMore && !nextMore) {
-    const startPage = pageCount - (pagerCount - 2)
+    const startPage = pageCount - (pagerCount - 2);
     for (let i = startPage; i < pageCount; i++) {
-      array.push(i)
+      array.push(i);
     }
   } else if (!prevMore && nextMore) {
     for (let i = 2; i < pagerCount; i++) {
-      array.push(i)
+      array.push(i);
     }
   } else if (prevMore && nextMore) {
-    const offset = Math.floor(pagerCount / 2) - 1
+    const offset = Math.floor(pagerCount / 2) - 1;
     for (let i = currentPage - offset; i <= currentPage + offset; i++) {
-      array.push(i)
+      array.push(i);
     }
   } else {
     for (let i = 2; i < pageCount; i++) {
-      array.push(i)
+      array.push(i);
     }
   }
-  return array
-})
+  return array;
+});
 
 watchEffect(() => {
-  const halfPagerCount = (pagerCount - 1) / 2
-  showPrevMore.value = false
-  showNextMore.value = false
+  const halfPagerCount = (pagerCount - 1) / 2;
+  showPrevMore.value = false;
+  showNextMore.value = false;
   if (pages.value > pagerCount) {
     if (props.currentPage > pagerCount - halfPagerCount) {
-      showPrevMore.value = true
+      showPrevMore.value = true;
     }
     if (props.currentPage < pages.value - halfPagerCount) {
-      showNextMore.value = true
+      showNextMore.value = true;
     }
   }
-})
+});
 </script>

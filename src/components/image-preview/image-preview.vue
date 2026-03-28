@@ -29,11 +29,11 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, nextTick } from 'vue'
-import { createFocusTrap } from 'focus-trap'
+import { onMounted, onUnmounted, ref, nextTick } from 'vue';
+import { createFocusTrap } from 'focus-trap';
 
-const elementRef = ref(null)
-let focusTrapInstance = null
+const elementRef = ref(null);
+let focusTrapInstance = null;
 
 const props = defineProps({
   data: {
@@ -44,72 +44,72 @@ const props = defineProps({
     type: Number,
     default: 0
   }
-})
+});
 
-const visible = ref(false)
-const index = ref(props.initIndex)
+const visible = ref(false);
+const index = ref(props.initIndex);
 onMounted(() => {
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`
+    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
   }
-  visible.value = true
+  visible.value = true;
 
   nextTick(() => {
     //焦点陷阱
     if (elementRef.value !== null) {
       focusTrapInstance = createFocusTrap(elementRef.value, {
         initialFocus: false
-      })
-      focusTrapInstance.activate()
+      });
+      focusTrapInstance.activate();
     }
-  })
+  });
 
   //添加监听keydown
-  document.addEventListener('keydown', handleKeyDown)
-})
+  document.addEventListener('keydown', handleKeyDown);
+});
 
 onUnmounted(() => {
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style = null
+    document.body.style = null;
   }
 
   //停止焦点陷阱
   if (focusTrapInstance !== null) {
-    focusTrapInstance.deactivate()
+    focusTrapInstance.deactivate();
   }
 
   //移除监听keydown
-  document.removeEventListener('keydown', handleKeyDown)
-})
+  document.removeEventListener('keydown', handleKeyDown);
+});
 
 function confirm() {
-  visible.value = false
+  visible.value = false;
 }
 
 function handleKeyDown(event) {
   if (event.key === 'Escape') {
-    confirm()
+    confirm();
   }
 }
 
 function pre() {
   if (index.value < props.data.length && index.value > 0) {
-    index.value--
-    return
+    index.value--;
+    return;
   }
 
   if (index.value === 0) {
-    index.value = props.data.length - 1
+    index.value = props.data.length - 1;
   }
 }
 
 function next() {
   if (index.value < props.data.length - 1) {
-    index.value++
-    return
+    index.value++;
+    return;
   }
   if (index.value === props.data.length - 1) {
-    index.value = 0
+    index.value = 0;
   }
 }
 </script>

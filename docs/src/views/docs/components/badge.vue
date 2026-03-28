@@ -15,7 +15,9 @@
       <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Boostrap Badge</a>
     </p>
 
-    <h2 id="badge-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#badge-example"> </a></h2>
+    <h2 id="badge-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#badge-example"> </a>
+    </h2>
     <p>
       徽章通过使用相对字体大小和
       <code>em</code>
@@ -37,14 +39,18 @@
     <p>徽章可以作为链接或按钮的一部分，用来提供计数功能。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <button type="button" class="btn btn-primary">Notifications <span class="badge text-bg-secondary">4</span></button>
+        <button type="button" class="btn btn-primary">
+          Notifications <span class="badge text-bg-secondary">4</span>
+        </button>
       </div>
       <code-highlight type="html" :code="example2Code" label="html" />
     </div>
     <p>
       请注意，根据使用方式的不同，徽章可能会让使用屏幕阅读器和类似辅助技术的用户感到困惑。虽然徽章的样式提供了关于其用途的视觉提示，但这些用户只会看到徽章的内容。根据具体情况，这些徽章可能看起来像是句子、链接或按钮末尾随机添加的单词或数字。
     </p>
-    <p>除非上下文清晰（如“通知”示例，其中“4”被理解为通知的数量），否则应考虑添加额外的上下文信息，并使用视觉隐藏的方式显示附加文本。</p>
+    <p>
+      除非上下文清晰（如“通知”示例，其中“4”被理解为通知的数量），否则应考虑添加额外的上下文信息，并使用视觉隐藏的方式显示附加文本。
+    </p>
     <h3>Positioned</h3>
     <p>使用工具修改 <code>.badge</code> 并将其放置在链接或按钮的角落。</p>
     <div class="docs-example">
@@ -67,7 +73,9 @@
       <div class="docs-example-data">
         <button type="button" class="btn btn-primary position-relative">
           Profile
-          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span
+            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+          >
             <span class="visually-hidden">New alerts</span>
           </span>
         </button>
@@ -78,7 +86,9 @@
     <h2 id="badge-bg">背景色<a class="anchor-link" aria-label="Link to this section: 背景色" href="#badge-bg"> </a></h2>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background" target="_blank">`.text-bg-{color}`辅助选择器</a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background" target="_blank"
+        >`.text-bg-{color}`辅助选择器</a
+      >
       来设置与前景 <code>color</code> 形成对比的 <code>background-color</code>。以前，需要手动将你选择的
       <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-{color}</code></a>
       和
@@ -101,13 +111,16 @@
       <code-highlight type="html" :code="bgCode" label="html" />
     </div>
     <p class="text-bg-info">
-      <strong>无障碍提示：</strong>仅通过颜色来添加含义只能提供视觉指示，而无法传达给使用屏幕阅读器等辅助技术的用户。请确保含义可以从内容本身（例如，具有
+      <strong>无障碍提示：</strong
+      >仅通过颜色来添加含义只能提供视觉指示，而无法传达给使用屏幕阅读器等辅助技术的用户。请确保含义可以从内容本身（例如，具有
       <a href="/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"><em>足够</em>的颜色对比</a>
       的可见文本）中明显看出，或者通过其他方式（如使用
       <code>.visually-hidden</code> 类隐藏的额外文本）包含在内。
     </p>
 
-    <h2 id="badge-pill">胶囊徽章<a class="anchor-link" aria-label="Link to this section: 胶囊徽章" href="#badge-pill"> </a></h2>
+    <h2 id="badge-pill">
+      胶囊徽章<a class="anchor-link" aria-label="Link to this section: 胶囊徽章" href="#badge-pill"> </a>
+    </h2>
     <p>使用 <code>.rounded-pill</code> 实用类可以使徽章更加圆润，具有更大的 <code>border-radius</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -125,10 +138,13 @@
       <code-highlight type="html" :code="pillCode" label="html" />
     </div>
 
-    <h2 id="badge-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#badge-css"> </a></h2>
+    <h2 id="badge-css">
+      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#badge-css"> </a>
+    </h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，徽章现在在
-      <code>.badge</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.badge</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
+      设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_badge.scss" />
   </div>
@@ -140,11 +156,11 @@ const example1Code = `<h1>Example heading <span class="badge text-bg-secondary">
 <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
 <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
 <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
-<h6>Example heading <span class="badge text-bg-secondary">New</span></h6>`
+<h6>Example heading <span class="badge text-bg-secondary">New</span></h6>`;
 
 const example2Code = `<button type="button" class="btn btn-primary">
   Notifications <span class="badge text-bg-secondary">4</span>
-</button>`
+</button>`;
 
 const example3Code = `<button type="button" class="btn btn-primary position-relative">
   Inbox
@@ -152,14 +168,14 @@ const example3Code = `<button type="button" class="btn btn-primary position-rela
     99+
     <span class="visually-hidden">unread messages</span>
   </span>
-</button>`
+</button>`;
 
 const example4Code = `<button type="button" class="btn btn-primary position-relative">
   Profile
   <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
     <span class="visually-hidden">New alerts</span>
   </span>
-</button>`
+</button>`;
 
 const bgCode = `<div class="hstack-3">
     <span class="badge text-bg-primary">Primary</span>
@@ -170,7 +186,7 @@ const bgCode = `<div class="hstack-3">
     <span class="badge text-bg-info">Info</span>
     <span class="badge text-bg-light">Light</span>
     <span class="badge text-bg-dark">Dark</span>
-</div>`
+</div>`;
 
 const pillCode = `<div class="hstack-3">
     <span class="badge rounded-pill text-bg-primary">Primary</span>
@@ -181,12 +197,12 @@ const pillCode = `<div class="hstack-3">
     <span class="badge rounded-pill text-bg-info">Info</span>
     <span class="badge rounded-pill text-bg-light">Light</span>
     <span class="badge rounded-pill text-bg-dark">Dark</span>
-</div>`
+</div>`;
 
 const css1Code = `--#{$prefix}badge-padding-x: #{$badge-padding-x};
 --#{$prefix}badge-padding-y: #{$badge-padding-y};
 @include rfs($badge-font-size, --#{$prefix}badge-font-size);
 --#{$prefix}badge-font-weight: #{$badge-font-weight};
 --#{$prefix}badge-color: #{$badge-color};
---#{$prefix}badge-border-radius: #{$badge-border-radius};`
+--#{$prefix}badge-border-radius: #{$badge-border-radius};`;
 </script>

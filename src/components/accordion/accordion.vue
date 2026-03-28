@@ -16,7 +16,12 @@
             {{ item.header }}
           </button>
         </h2>
-        <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: initActiveIndex === index }" :data-bs-parent="always ? null : `#${id}`">
+        <div
+          :id="item.keyId"
+          class="accordion-collapse collapse"
+          :class="{ show: initActiveIndex === index }"
+          :data-bs-parent="always ? null : `#${id}`"
+        >
           <div class="accordion-body">
             <component :is="item.body" />
           </div>
@@ -27,12 +32,12 @@
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted, useId } from 'vue'
-import { items_injection_key } from './accordion-keys.js'
-import Collapse from 'bootstrap/js/dist/collapse'
+import { useSlots, ref, provide, onMounted, useId } from 'vue';
+import { items_injection_key } from './accordion-keys.js';
+import Collapse from 'bootstrap/js/dist/collapse';
 
-const ready = ref(false)
-const id = useId()
+const ready = ref(false);
+const id = useId();
 const props = defineProps({
   accordionClass: {
     type: String,
@@ -46,33 +51,33 @@ const props = defineProps({
     type: Number,
     default: null
   }
-})
+});
 
-const items = []
-provide(items_injection_key, items)
+const items = [];
+provide(items_injection_key, items);
 
 onMounted(() => {
-  _initItems()
+  _initItems();
 
-  ready.value = true
-})
+  ready.value = true;
+});
 
 function _initItems() {
-  const slots = useSlots()
-  const vNodes = slots.default()
+  const slots = useSlots();
+  const vNodes = slots.default();
 
-  const itemVNodes = []
+  const itemVNodes = [];
   for (const vNode of vNodes) {
     if (vNode.type.__name === 'accordion-item') {
-      itemVNodes.push(vNode)
+      itemVNodes.push(vNode);
     }
   }
 
   for (let i = 0; i < items.length; i++) {
     if (itemVNodes[i].children !== null && itemVNodes[i].children.default !== 'undefined') {
-      items[i].body = itemVNodes[i].children.default
+      items[i].body = itemVNodes[i].children.default;
     } else {
-      items[i].body = null
+      items[i].body = null;
     }
   }
 }

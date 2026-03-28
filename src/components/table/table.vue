@@ -19,7 +19,12 @@
               <template v-if="col.type === null">
                 <template v-if="col.sortable === null">{{ col.header }}</template>
                 <template v-else>
-                  <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="_sortBy(col)">
+                  <a
+                    href="#"
+                    role="button"
+                    class="link-body-emphasis text-decoration-none"
+                    @click.prevent="_sortBy(col)"
+                  >
                     {{ col.header }}
                     <bi-arrow-down-up v-if="sortField !== col.field || sortOrder === null" />
                     <bi-sort-up-alt v-else-if="sortOrder === 'asc'" class="text-primary" />
@@ -47,14 +52,32 @@
               </template>
               <template v-else-if="col.type === 'index'">{{ index + 1 }}</template>
               <template v-else-if="col.type === 'checkbox'">
-                <input class="form-check-input" type="checkbox" :value="get(item, trKeyInfo.field)" v-model="checkboxSelectedKeys" />
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  :value="get(item, trKeyInfo.field)"
+                  v-model="checkboxSelectedKeys"
+                />
               </template>
               <template v-else-if="col.type === 'radio'">
-                <input class="form-check-input" type="radio" :value="get(item, trKeyInfo.field)" v-model="radioSelectedKey" />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  :value="get(item, trKeyInfo.field)"
+                  v-model="radioSelectedKey"
+                />
               </template>
               <template v-else-if="col.type === 'expand'">
-                <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))">
-                  <BiChevronRight class="expand-icon" :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }" />
+                <a
+                  href="#"
+                  role="button"
+                  class="link-body-emphasis text-decoration-none"
+                  @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))"
+                >
+                  <BiChevronRight
+                    class="expand-icon"
+                    :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }"
+                  />
                 </a>
               </template>
               <component v-else :is="col.body" :item="item" :index="index" />
@@ -77,11 +100,11 @@
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted, watch, computed } from 'vue'
-import { get, orderBy } from 'lodash-es'
-import { cols_injection_key, tr_keyinfo_injection_key } from './table-keys.js'
+import { useSlots, ref, provide, onMounted, watch, computed } from 'vue';
+import { get, orderBy } from 'lodash-es';
+import { cols_injection_key, tr_keyinfo_injection_key } from './table-keys.js';
 
-const emit = defineEmits(['sort-change', 'expand-change'])
+const emit = defineEmits(['sort-change', 'expand-change']);
 
 const props = defineProps({
   data: {
@@ -116,60 +139,60 @@ const props = defineProps({
     type: String,
     default: null
   }
-})
-const ready = ref(false)
+});
+const ready = ref(false);
 
-const sortable = ref(null)
-const sortField = ref(null)
-const sortOrder = ref(null)
+const sortable = ref(null);
+const sortField = ref(null);
+const sortOrder = ref(null);
 
 const items = computed(() => {
   if (sortable.value === null || sortable.value === 'remote') {
-    return props.data
+    return props.data;
   } else if (sortable.value === 'local') {
-    return orderBy(props.data, [sortField.value], [sortOrder.value])
+    return orderBy(props.data, [sortField.value], [sortOrder.value]);
   }
-})
+});
 
-const cols = []
-provide(cols_injection_key, cols)
+const cols = [];
+provide(cols_injection_key, cols);
 
-const trKeyInfo = { type: null, field: null }
-provide(tr_keyinfo_injection_key, trKeyInfo)
+const trKeyInfo = { type: null, field: null };
+provide(tr_keyinfo_injection_key, trKeyInfo);
 //checkbox
-let checkboxAllboxEl = null
-const checkboxSelectedKeys = ref([])
+let checkboxAllboxEl = null;
+const checkboxSelectedKeys = ref([]);
 //radio
-const radioSelectedKey = ref(null)
+const radioSelectedKey = ref(null);
 //expand
-const expandKeys = ref([])
+const expandKeys = ref([]);
 
 onMounted(() => {
-  _initCols()
+  _initCols();
 
   if (trKeyInfo.type === 'checkbox') {
-    _watchCheckboxCol()
+    _watchCheckboxCol();
   }
 
-  ready.value = true
-})
+  ready.value = true;
+});
 
 function _initCols() {
-  const slots = useSlots()
-  const vNodes = slots.default()
+  const slots = useSlots();
+  const vNodes = slots.default();
 
-  const colVNodes = []
+  const colVNodes = [];
   for (const vNode of vNodes) {
     if (vNode.type.__name === 'table-col') {
-      colVNodes.push(vNode)
+      colVNodes.push(vNode);
     }
   }
 
   for (let i = 0; i < cols.length; i++) {
     if (colVNodes[i].children !== null && colVNodes[i].children.body !== 'undefined') {
-      cols[i].body = colVNodes[i].children.body
+      cols[i].body = colVNodes[i].children.body;
     } else {
-      cols[i].body = null
+      cols[i].body = null;
     }
   }
 }
@@ -178,112 +201,112 @@ function _initCols() {
 function _tbodyTrClass(_item) {
   if (trKeyInfo.type === 'checkbox') {
     if (checkboxSelectedKeys.value.includes(get(_item, trKeyInfo.field))) {
-      return 'table-active'
+      return 'table-active';
     }
   }
 
   if (trKeyInfo.type === 'radio') {
     if (radioSelectedKey.value === get(_item, trKeyInfo.field)) {
-      return 'table-active'
+      return 'table-active';
     }
   }
 
   if (props.tbodyTrClass !== null) {
-    return props.tbodyTrClass(_item)
+    return props.tbodyTrClass(_item);
   } else {
-    return null
+    return null;
   }
 }
 
 function _watchCheckboxCol() {
   watch(checkboxSelectedKeys, (val) => {
-    if (checkboxAllboxEl === null) return
+    if (checkboxAllboxEl === null) return;
     if (val.length === 0) {
-      checkboxAllboxEl.checked = false
-      checkboxAllboxEl.indeterminate = false
-      return
+      checkboxAllboxEl.checked = false;
+      checkboxAllboxEl.indeterminate = false;
+      return;
     }
     if (val.length < props.data.length) {
-      checkboxAllboxEl.checked = false
-      checkboxAllboxEl.indeterminate = true
-      return
+      checkboxAllboxEl.checked = false;
+      checkboxAllboxEl.indeterminate = true;
+      return;
     }
     if (val.length === props.data.length) {
-      checkboxAllboxEl.checked = true
-      checkboxAllboxEl.indeterminate = false
-      return
+      checkboxAllboxEl.checked = true;
+      checkboxAllboxEl.indeterminate = false;
+      return;
     }
-  })
+  });
 }
 
 function _handleAllCheckboxChange(_event) {
   if (checkboxAllboxEl === null) {
-    checkboxAllboxEl = _event.currentTarget
+    checkboxAllboxEl = _event.currentTarget;
   }
 
-  checkboxSelectedKeys.value = []
+  checkboxSelectedKeys.value = [];
   if (checkboxAllboxEl.checked) {
     props.data.forEach((item) => {
-      checkboxSelectedKeys.value.push(get(item, trKeyInfo.field))
-    })
+      checkboxSelectedKeys.value.push(get(item, trKeyInfo.field));
+    });
   }
 }
 
 function _sortBy(_col) {
-  sortable.value = _col.sortable
+  sortable.value = _col.sortable;
 
   if (sortField.value !== _col.field) {
-    sortField.value = _col.field
-    sortOrder.value = 'asc'
+    sortField.value = _col.field;
+    sortOrder.value = 'asc';
   } else {
     if (sortOrder.value === null) {
-      sortOrder.value = 'asc'
+      sortOrder.value = 'asc';
     } else if (sortOrder.value === 'asc') {
-      sortOrder.value = 'desc'
+      sortOrder.value = 'desc';
     } else if (sortOrder.value === 'desc') {
-      sortOrder.value = null
+      sortOrder.value = null;
     }
   }
 
   if (sortable.value === 'remote') {
-    emit('sort-change', sortField.value, sortOrder.value)
+    emit('sort-change', sortField.value, sortOrder.value);
   }
 }
 
 function _getExpandBody() {
   for (let i = 0; i < cols.length; i++) {
     if (cols[i].type === 'expand') {
-      return cols[i].body
+      return cols[i].body;
     }
   }
-  return null
+  return null;
 }
 
 function _handleToggleExpandTr(_key) {
-  const index = expandKeys.value.indexOf(_key)
+  const index = expandKeys.value.indexOf(_key);
   if (index > -1) {
-    expandKeys.value.splice(index, 1)
+    expandKeys.value.splice(index, 1);
   } else {
-    expandKeys.value.push(_key)
+    expandKeys.value.push(_key);
 
-    emit('expand-change', _key)
+    emit('expand-change', _key);
   }
 }
 
 defineExpose({
   getCheckboxSelectedKeys: function () {
-    return checkboxSelectedKeys.value
+    return checkboxSelectedKeys.value;
   },
   setCheckboxSelectedKeys: function (val) {
-    checkboxSelectedKeys.value = val
+    checkboxSelectedKeys.value = val;
   },
   getRadioSelectedKey: function () {
-    return radioSelectedKey.value
+    return radioSelectedKey.value;
   },
   setRadioSelectedKey: function (val) {
-    radioSelectedKey.value = val
+    radioSelectedKey.value = val;
   }
-})
+});
 </script>
 
 <style lang="css" scoped>

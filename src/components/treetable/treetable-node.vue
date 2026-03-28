@@ -3,7 +3,14 @@
     <template v-for="(col, index) in cols">
       <td v-if="index === 0">
         <div class="node" :style="{ 'padding-left': level + 'rem' }">
-          <a v-if="isFolder" href="#" role="button" @click.prevent="toggle" class="link-body-emphasis node-switcher" :class="{ 'rotate-90': isExpand }">
+          <a
+            v-if="isFolder"
+            href="#"
+            role="button"
+            @click.prevent="toggle"
+            class="link-body-emphasis node-switcher"
+            :class="{ 'rotate-90': isExpand }"
+          >
             <BiCaretRight />
           </a>
           <div v-else class="node-placeholder"></div>
@@ -29,9 +36,9 @@
 </template>
 
 <script setup>
-import { computed, inject } from 'vue'
-import { get } from 'lodash-es'
-import { cols_key, attrs_key, expand_keys } from './treetable-keys.js'
+import { computed, inject } from 'vue';
+import { get } from 'lodash-es';
+import { cols_key, attrs_key, expand_keys } from './treetable-keys.js';
 
 const props = defineProps({
   data: {
@@ -42,26 +49,26 @@ const props = defineProps({
     type: Number,
     default: 0
   }
-})
+});
 
-const cols = inject(cols_key)
-const attrs = inject(attrs_key)
-const expandKeys = inject(expand_keys)
+const cols = inject(cols_key);
+const attrs = inject(attrs_key);
+const expandKeys = inject(expand_keys);
 
-const key = props.data[attrs.key]
+const key = props.data[attrs.key];
 
 const isExpand = computed(() => {
-  return expandKeys.value[key] === true
-})
+  return expandKeys.value[key] === true;
+});
 const isFolder = computed(() => {
-  return props.data[attrs.children] && props.data[attrs.children].length
-})
+  return props.data[attrs.children] && props.data[attrs.children].length;
+});
 
 function toggle() {
   if (expandKeys.value[key]) {
-    expandKeys.value[key] = false
+    expandKeys.value[key] = false;
   } else {
-    expandKeys.value[key] = true
+    expandKeys.value[key] = true;
   }
 }
 </script>

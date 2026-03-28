@@ -1,17 +1,31 @@
 <template>
   <li>
     <div class="node" :style="{ 'padding-left': level + 'rem' }">
-      <a v-if="isFolder" href="#" @click.prevent="toggle" class="link-body-emphasis node-switcher" :class="{ 'rotate-90': isExpand }">
+      <a
+        v-if="isFolder"
+        href="#"
+        @click.prevent="toggle"
+        class="link-body-emphasis node-switcher"
+        :class="{ 'rotate-90': isExpand }"
+      >
         <BiCaretRight />
       </a>
       <div v-else class="node-placeholder"></div>
       <div class="node-content">
         <template v-if="mode === 'base'">
-          <a href="#" class="node-content_link focus-ring p-1" @click.prevent="handleNodeClick(data[attrs.key])">{{ data[attrs.label] }}</a>
+          <a href="#" class="node-content_link focus-ring p-1" @click.prevent="handleNodeClick(data[attrs.key])">{{
+            data[attrs.label]
+          }}</a>
         </template>
         <template v-else-if="mode === 'checkbox'">
           <div class="p-1">
-            <input class="form-check-input" type="checkbox" :value="data[attrs.key]" :id="boxId" v-model="checkboxSelectedKeys" />
+            <input
+              class="form-check-input"
+              type="checkbox"
+              :value="data[attrs.key]"
+              :id="boxId"
+              v-model="checkboxSelectedKeys"
+            />
             <label class="form-check-label px-2" :for="boxId">
               {{ data[attrs.label] }}
             </label>
@@ -19,7 +33,13 @@
         </template>
         <template v-else-if="mode === 'radio'">
           <div class="p-1">
-            <input class="form-check-input" type="radio" :value="data[attrs.key]" :id="boxId" v-model="radioSelectedKey" />
+            <input
+              class="form-check-input"
+              type="radio"
+              :value="data[attrs.key]"
+              :id="boxId"
+              v-model="radioSelectedKey"
+            />
             <label class="form-check-label px-2" :for="boxId">
               {{ data[attrs.label] }}
             </label>
@@ -36,8 +56,15 @@
 </template>
 
 <script setup>
-import { ref, computed, inject, useId } from 'vue'
-import { attrs_key, mode_key, expand_level_key, radio_selected_Key, checkbox_selected_keys, node_click_key } from './tree-keys.js'
+import { ref, computed, inject, useId } from 'vue';
+import {
+  attrs_key,
+  mode_key,
+  expand_level_key,
+  radio_selected_Key,
+  checkbox_selected_keys,
+  node_click_key
+} from './tree-keys.js';
 
 const props = defineProps({
   data: {
@@ -48,26 +75,26 @@ const props = defineProps({
     type: Number,
     default: 0
   }
-})
+});
 
-const mode = inject(mode_key)
-const expandLevel = inject(expand_level_key)
-const radioSelectedKey = inject(radio_selected_Key)
-const checkboxSelectedKeys = inject(checkbox_selected_keys)
-const attrs = inject(attrs_key)
-const handleNodeClick = inject(node_click_key)
+const mode = inject(mode_key);
+const expandLevel = inject(expand_level_key);
+const radioSelectedKey = inject(radio_selected_Key);
+const checkboxSelectedKeys = inject(checkbox_selected_keys);
+const attrs = inject(attrs_key);
+const handleNodeClick = inject(node_click_key);
 
-const isExpand = ref(props.level < expandLevel + 1)
+const isExpand = ref(props.level < expandLevel + 1);
 const isFolder = computed(() => {
-  return props.data[attrs.children] && props.data[attrs.children].length
-})
+  return props.data[attrs.children] && props.data[attrs.children].length;
+});
 function toggle() {
-  isExpand.value = !isExpand.value
+  isExpand.value = !isExpand.value;
 }
 
-let boxId = null
+let boxId = null;
 if (mode === 'checkbox' || mode === 'radio') {
-  boxId = useId()
+  boxId = useId();
 }
 </script>
 

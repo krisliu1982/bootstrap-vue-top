@@ -1,7 +1,7 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onUnmounted, useId } from 'vue'
-import { cols_key } from './treetable-keys.js'
+import { inject, onMounted, onUnmounted, useId } from 'vue';
+import { cols_key } from './treetable-keys.js';
 
 const props = defineProps({
   header: {
@@ -16,22 +16,22 @@ const props = defineProps({
     type: String,
     default: 'auto'
   }
-})
+});
 
-const cols = inject(cols_key)
-const keyId = useId()
+const cols = inject(cols_key);
+const keyId = useId();
 onMounted(() => {
   const col = {
     keyId: keyId,
     header: props.header,
     field: props.field,
     width: props.width
-  }
-  cols.push(col)
-})
+  };
+  cols.push(col);
+});
 
 onUnmounted(() => {
-  const index = cols.findIndex((item) => item.keyId === keyId)
-  cols.splice(index, 1)
-})
+  const index = cols.findIndex((item) => item.keyId === keyId);
+  cols.splice(index, 1);
+});
 </script>

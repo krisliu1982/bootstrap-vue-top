@@ -1,11 +1,11 @@
-import Dropdown from 'bootstrap/js/dist/dropdown'
+import Dropdown from 'bootstrap/js/dist/dropdown';
 
 export default {
   mounted(el) {
-    el.setAttribute('data-bs-toggle', 'dropdown')
-    new Dropdown(el)
+    el.setAttribute('data-bs-toggle', 'dropdown');
+    new Dropdown(el);
   },
   unmounted(el) {
-    Dropdown.getInstance(el).dispose()
+    Dropdown.getInstance(el).dispose();
   }
-}
+};

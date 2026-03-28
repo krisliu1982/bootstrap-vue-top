@@ -9,38 +9,38 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue';
 
-const visible = ref(false)
+const visible = ref(false);
 
 const disableTab = (e) => {
-  if (e.key === 'Tab') e.preventDefault()
-}
+  if (e.key === 'Tab') e.preventDefault();
+};
 
 onMounted(() => {
-  document.addEventListener('keydown', disableTab)
-})
+  document.addEventListener('keydown', disableTab);
+});
 
 onUnmounted(() => {
-  document.removeEventListener('keydown', disableTab)
-})
+  document.removeEventListener('keydown', disableTab);
+});
 
 function show() {
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`
+    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
   }
-  visible.value = true
+  visible.value = true;
 }
 
 function hide() {
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style = null
+    document.body.style = null;
   }
-  visible.value = false
+  visible.value = false;
 }
 
 defineExpose({
   show,
   hide
-})
+});
 </script>

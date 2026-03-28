@@ -12,26 +12,46 @@
     <h1>Tree 树形结构</h1>
     <p class="fs-4 fw-light">用于层级结构展示信息，可展开或折叠，而构建 <code>bv-tree</code> 树形组件。</p>
 
-    <h2 id="tree-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#tree-base"> </a></h2>
+    <h2 id="tree-base">
+      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#tree-base"> </a>
+    </h2>
     <p>
-      设置 <code>data</code> 树形数据，<code>attr-key</code> 为节点数据唯一标识属性名，<code>attr-label</code> 为节点标签属性名，<code>attr-children</code>
-      为子树属性名。可以通过监听 <code>node-click</code> 事件，来处理点击节点后进行回调。
+      设置 <code>data</code> 树形数据，<code>attr-key</code> 为节点数据唯一标识属性名，<code>attr-label</code>
+      为节点标签属性名，<code>attr-children</code> 为子树属性名。可以通过监听
+      <code>node-click</code> 事件，来处理点击节点后进行回调。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div style="width: 300px; max-height: 300px; overflow: auto" class="border p-1">
-          <bv-tree :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0" @node-click="handleClick"></bv-tree>
+          <bv-tree
+            :data="treeData"
+            attr-key="id"
+            attr-label="name"
+            attr-children="children"
+            :expand-level="0"
+            @node-click="handleClick"
+          ></bv-tree>
         </div>
       </div>
       <code-highlight type="vue" :code="baseCode" label="vue" />
     </div>
 
-    <h2 id="tree-checkbox">多选节点<a class="anchor-link" aria-label="Link to this section: 多选节点" href="#tree-checkbox"> </a></h2>
+    <h2 id="tree-checkbox">
+      多选节点<a class="anchor-link" aria-label="Link to this section: 多选节点" href="#tree-checkbox"> </a>
+    </h2>
     <p>通过设置 <code>mode="checkbox"</code>，使树形组件能多选节点。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div style="width: 300px; max-height: 300px; overflow: auto" class="border p-1 mb-3">
-          <bv-tree ref="treeCheckboxRef" :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0" mode="checkbox"></bv-tree>
+          <bv-tree
+            ref="treeCheckboxRef"
+            :data="treeData"
+            attr-key="id"
+            attr-label="name"
+            attr-children="children"
+            :expand-level="0"
+            mode="checkbox"
+          ></bv-tree>
         </div>
 
         <div class="hstack-3 flex-wrap">
@@ -42,12 +62,22 @@
       <code-highlight type="vue" :code="checkboxCode" label="vue" />
     </div>
 
-    <h2 id="tree-radio">单选节点<a class="anchor-link" aria-label="Link to this section: 单选节点" href="#tree-radio"> </a></h2>
+    <h2 id="tree-radio">
+      单选节点<a class="anchor-link" aria-label="Link to this section: 单选节点" href="#tree-radio"> </a>
+    </h2>
     <p>通过设置 <code>mode="radio"</code>，使树形组件能多选节点。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div style="width: 300px; max-height: 300px; overflow: auto" class="border p-1 mb-3">
-          <bv-tree ref="treeRadioRef" :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0" mode="radio"></bv-tree>
+          <bv-tree
+            ref="treeRadioRef"
+            :data="treeData"
+            attr-key="id"
+            attr-label="name"
+            attr-children="children"
+            :expand-level="0"
+            mode="radio"
+          ></bv-tree>
         </div>
 
         <div class="hstack-3 flex-wrap">
@@ -58,12 +88,20 @@
       <code-highlight type="vue" :code="radioCode" label="vue" />
     </div>
 
-    <h2 id="tree-expand">展开层级<a class="anchor-link" aria-label="Link to this section: 展开层级" href="#tree-expand"> </a></h2>
+    <h2 id="tree-expand">
+      展开层级<a class="anchor-link" aria-label="Link to this section: 展开层级" href="#tree-expand"> </a>
+    </h2>
     <p>通过设置 <code>expand-level</code>，展开多少层级节点。默认为 <code>0</code>, 即根节点展开。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div style="width: 300px; max-height: 300px; overflow: auto" class="border p-1">
-          <bv-tree :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="10"></bv-tree>
+          <bv-tree
+            :data="treeData"
+            attr-key="id"
+            attr-label="name"
+            attr-children="children"
+            :expand-level="10"
+          ></bv-tree>
         </div>
       </div>
       <code-highlight type="vue" :code="expandCode" label="vue" />
@@ -72,8 +110,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { alertMessage } from 'bootstrap-vue-ui'
+import { ref } from 'vue';
+import { alertMessage } from 'bootstrap-vue-ui';
 
 const treeData = {
   id: 1,
@@ -106,41 +144,41 @@ const treeData = {
       ]
     }
   ]
-}
+};
 
 function handleClick(key) {
-  console.log(key) //树节点数据的唯一标识
-  alertMessage({ message: `树节点 ${key}` })
+  console.log(key); //树节点数据的唯一标识
+  alertMessage({ message: `树节点 ${key}` });
 }
 
-const treeCheckboxRef = ref(null)
+const treeCheckboxRef = ref(null);
 
 function handleGetCheckbox() {
-  const keys = treeCheckboxRef.value.getCheckboxSelectedKeys()
+  const keys = treeCheckboxRef.value.getCheckboxSelectedKeys();
   if (keys.length === 0) {
-    alertMessage({ type: 'warning', message: '没有节点被选择' })
+    alertMessage({ type: 'warning', message: '没有节点被选择' });
   } else {
-    alertMessage({ message: `被选节点 ${keys.join(',')}` })
+    alertMessage({ message: `被选节点 ${keys.join(',')}` });
   }
 }
 
 function handleSetCheckbox() {
-  treeCheckboxRef.value.setCheckboxSelectedKeys([])
+  treeCheckboxRef.value.setCheckboxSelectedKeys([]);
 }
 
-const treeRadioRef = ref(null)
+const treeRadioRef = ref(null);
 
 function handleGetRadio() {
-  const key = treeRadioRef.value.getRadioSelectedKey()
+  const key = treeRadioRef.value.getRadioSelectedKey();
   if (key === null) {
-    alertMessage({ type: 'warning', message: '没有节点被选择' })
+    alertMessage({ type: 'warning', message: '没有节点被选择' });
   } else {
-    alertMessage({ message: `被选节点 ${key}` })
+    alertMessage({ message: `被选节点 ${key}` });
   }
 }
 
 function handleSetRadio() {
-  treeRadioRef.value.setRadioSelectedKey(null)
+  treeRadioRef.value.setRadioSelectedKey(null);
 }
 
 const baseCode = `<template>
@@ -190,7 +228,7 @@ function handleClick(key) {
   console.log(key) //树节点数据的唯一标识
   alertMessage({ message: \`树节点 \${key}\` })
 }
-<\/script>`
+<\/script>`;
 
 const checkboxCode = `<template>
   <div style="width: 300px;max-height:300px;overflow: auto;" class="border p-1 mb-3">
@@ -227,7 +265,7 @@ function handleGetCheckbox() {
 function handleSetCheckbox() {
   treeCheckboxRef.value.setCheckboxSelectedKeys([])
 }
-<\/script>`
+<\/script>`;
 
 const radioCode = `<template>
   <div style="width: 300px;max-height:300px;overflow: auto;" class="border p-1 mb-3">
@@ -264,7 +302,7 @@ function handleGetRadio() {
 function handleSetRadio() {
   treeRadioRef.value.setRadioSelectedKey(null)
 }
-<\/script>`
+<\/script>`;
 
 const expandCode = `<template>
   <div style="width: 300px;max-height: 300px;overflow: auto;" class="border p-1">
@@ -280,5 +318,5 @@ const expandCode = `<template>
 
 <script setup>
 const treeData = {...}
-<\/script>`
+<\/script>`;
 </script>

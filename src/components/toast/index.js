@@ -1,14 +1,14 @@
-import { createVNode, render } from 'vue'
-import Toast from './toast.vue'
+import { createVNode, render } from 'vue';
+import Toast from './toast.vue';
 
-let container = null
+let container = null;
 const toast = function (data) {
   if (container) {
-    render(null, container)
-    container = null
+    render(null, container);
+    container = null;
   }
 
-  container = document.createElement('div')
+  container = document.createElement('div');
 
   const vnode = createVNode(Toast, {
     type: data.type,
@@ -17,13 +17,13 @@ const toast = function (data) {
     duration: data.duration,
     position: data.position,
     onDestroy: () => {
-      render(null, container)
+      render(null, container);
     }
-  })
+  });
 
-  render(vnode, container)
+  render(vnode, container);
 
-  document.body.appendChild(container.firstElementChild)
-}
+  document.body.appendChild(container.firstElementChild);
+};
 
-export default toast
+export default toast;

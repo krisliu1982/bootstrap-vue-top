@@ -21,7 +21,9 @@
       <a href="https://getbootstrap.com/docs/5.3/forms/input-group/" target="_blank">Bootstrap Form Input group</a>
     </p>
 
-    <h2 id="input-group-base">基本示例<a class="anchor-link" aria-label="Link to this section: 基本示例" href="#input-group-base"> </a></h2>
+    <h2 id="input-group-base">
+      基本示例<a class="anchor-link" aria-label="Link to this section: 基本示例" href="#input-group-base"> </a>
+    </h2>
     <p>
       在输入框的任一侧放置一个附加组件或按钮。你也可以在输入框的两侧各放置一个。请记住将
       <code>&lt;label&gt;</code> 标签放在输入框组的外部。
@@ -30,11 +32,23 @@
       <div class="docs-example-data">
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
         </div>
 
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient’s username"
+            aria-label="Recipient’s username"
+            aria-describedby="basic-addon2"
+          />
           <span class="input-group-text" id="basic-addon2">@example.com</span>
         </div>
 
@@ -67,7 +81,9 @@
       <code-highlight type="html" :code="baseCode" label="html" />
     </div>
 
-    <h2 id="input-group-wrapping">包裹<a class="anchor-link" aria-label="Link to this section: 包裹" href="#input-group-wrapping"> </a></h2>
+    <h2 id="input-group-wrapping">
+      包裹<a class="anchor-link" aria-label="Link to this section: 包裹" href="#input-group-wrapping"> </a>
+    </h2>
     <p>
       输入组默认通过
       <code>flex-wrap: wrap</code>
@@ -78,13 +94,21 @@
       <div class="docs-example-data">
         <div class="input-group flex-nowrap">
           <span class="input-group-text" id="addon-wrapping">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
         </div>
       </div>
       <code-highlight type="html" :code="wrappingCode" label="html" />
     </div>
 
-    <h2 id="input-group-radius">边框半径<a class="anchor-link" aria-label="Link to this section: 边框半径" href="#input-group-radius"> </a></h2>
+    <h2 id="input-group-radius">
+      边框半径<a class="anchor-link" aria-label="Link to this section: 边框半径" href="#input-group-radius"> </a>
+    </h2>
     <p>
       由于当时浏览器支持的局限性，<code>border-radius</code> 样式只能应用于
       <code>.input-group</code>
@@ -94,14 +118,28 @@
       <div class="docs-example-data">
         <div class="input-group">
           <span class="input-group-text" id="visible-addon">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="visible-addon" />
-          <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="visible-addon"
+          />
+          <input
+            type="text"
+            class="form-control d-none"
+            placeholder="Hidden input"
+            aria-label="Hidden input"
+            aria-describedby="visible-addon"
+          />
         </div>
       </div>
       <code-highlight type="html" :code="radiusCode" label="html" />
     </div>
 
-    <h2 id="input-group-sizing">尺寸调整<a class="anchor-link" aria-label="Link to this section: 尺寸调整" href="#input-group-sizing"> </a></h2>
+    <h2 id="input-group-sizing">
+      尺寸调整<a class="anchor-link" aria-label="Link to this section: 尺寸调整" href="#input-group-sizing"> </a>
+    </h2>
     <p>
       将相对形式的尺寸类添加到
       <code>.input-group</code>
@@ -112,24 +150,44 @@
       <div class="docs-example-data">
         <div class="input-group input-group-sm mb-3">
           <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm"
+          />
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
 
         <div class="input-group input-group-lg">
           <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+          />
         </div>
       </div>
       <code-highlight type="html" :code="sizingCode" label="html" />
     </div>
 
     <h2 id="input-group-checkbox">
-      复选框和单选按钮<a class="anchor-link" aria-label="Link to this section: Checkboxes and radios" href="#input-group-checkbox"> </a>
+      复选框和单选按钮<a
+        class="anchor-link"
+        aria-label="Link to this section: Checkboxes and radios"
+        href="#input-group-checkbox"
+      >
+      </a>
     </h2>
     <p>
       将任何复选框或单选选项放置在输入组的附加组件内，而不是文本旁边。当输入框旁边没有可见文本时，我们建议在
@@ -139,14 +197,24 @@
       <div class="docs-example-data">
         <div class="input-group mb-3">
           <div class="input-group-text">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" />
+            <input
+              class="form-check-input mt-0"
+              type="checkbox"
+              value=""
+              aria-label="Checkbox for following text input"
+            />
           </div>
           <input type="text" class="form-control" aria-label="Text input with checkbox" />
         </div>
 
         <div class="input-group">
           <div class="input-group-text">
-            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input" />
+            <input
+              class="form-check-input mt-0"
+              type="radio"
+              value=""
+              aria-label="Radio button for following text input"
+            />
           </div>
           <input type="text" class="form-control" aria-label="Text input with radio button" />
         </div>
@@ -154,8 +222,12 @@
       <code-highlight type="html" :code="checkboxCode" label="html" />
     </div>
 
-    <h2 id="input-group-inputs">多重输入<a class="anchor-link" aria-label="Link to this section: 多重输入" href="#input-group-inputs"> </a></h2>
-    <p>虽然视觉上支持多个 <code>&lt;input&gt;</code>，但验证样式仅适用于包含单个 <code>&lt;input&gt;</code> 的输入组。</p>
+    <h2 id="input-group-inputs">
+      多重输入<a class="anchor-link" aria-label="Link to this section: 多重输入" href="#input-group-inputs"> </a>
+    </h2>
+    <p>
+      虽然视觉上支持多个 <code>&lt;input&gt;</code>，但验证样式仅适用于包含单个 <code>&lt;input&gt;</code> 的输入组。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="input-group">
@@ -167,7 +239,10 @@
       <code-highlight type="html" :code="inputsCode" label="html" />
     </div>
 
-    <h2 id="input-group-addons">多个附加组件<a class="anchor-link" aria-label="Link to this section: 多个附加组件" href="#input-group-addons"> </a></h2>
+    <h2 id="input-group-addons">
+      多个附加组件<a class="anchor-link" aria-label="Link to this section: 多个附加组件" href="#input-group-addons">
+      </a>
+    </h2>
     <p>它支持多个附加组件，可以与复选框和单选框输入版本混合使用。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -187,17 +262,34 @@
     </div>
 
     <h2 id="input-group-button-addons">
-      按钮附加组件<a class="anchor-link" aria-label="Link to this section: 按钮附加组件" href="#input-group-button-addons"> </a>
+      按钮附加组件<a
+        class="anchor-link"
+        aria-label="Link to this section: 按钮附加组件"
+        href="#input-group-button-addons"
+      >
+      </a>
     </h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="input-group mb-3">
           <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
         </div>
 
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="button-addon2" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient’s username"
+            aria-label="Recipient’s username"
+            aria-describedby="button-addon2"
+          />
           <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
         </div>
 
@@ -208,7 +300,12 @@
         </div>
 
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username with two button addons" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recipient’s username"
+            aria-label="Recipient’s username with two button addons"
+          />
           <button class="btn btn-outline-secondary" type="button">Button</button>
           <button class="btn btn-outline-secondary" type="button">Button</button>
         </div>
@@ -217,13 +314,20 @@
     </div>
 
     <h2 id="input-group-button-dropdowns">
-      带下拉菜单的按钮<a class="anchor-link" aria-label="Link to this section: 带下拉菜单的按钮" href="#input-group-button-dropdowns"> </a>
+      带下拉菜单的按钮<a
+        class="anchor-link"
+        aria-label="Link to this section: 带下拉菜单的按钮"
+        href="#input-group-button-dropdowns"
+      >
+      </a>
     </h2>
     <p>在下拉菜单的触发元素上运用 <code>v-dropdown</code> 指令。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="input-group mb-3">
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">Dropdown</button>
+          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+            Dropdown
+          </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -238,7 +342,9 @@
 
         <div class="input-group mb-3">
           <input type="text" class="form-control" aria-label="Text input with dropdown button" />
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">Dropdown</button>
+          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+            Dropdown
+          </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -251,7 +357,9 @@
         </div>
 
         <div class="input-group">
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">Dropdown</button>
+          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+            Dropdown
+          </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action before</a></li>
             <li><a class="dropdown-item" href="#">Another action before</a></li>
@@ -262,7 +370,9 @@
             <li><a class="dropdown-item" href="#">Separated link</a></li>
           </ul>
           <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" />
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">Dropdown</button>
+          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+            Dropdown
+          </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -277,12 +387,19 @@
       <code-highlight type="html" :code="dropdownCode" label="html" />
     </div>
 
-    <h2 id="input-group-segmented">分段按钮<a class="anchor-link" aria-label="Link to this section: 分段按钮" href="#input-group-segmented"> </a></h2>
+    <h2 id="input-group-segmented">
+      分段按钮<a class="anchor-link" aria-label="Link to this section: 分段按钮" href="#input-group-segmented"> </a>
+    </h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="input-group mb-3">
           <button type="button" class="btn btn-outline-secondary">Action</button>
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" v-dropdown aria-expanded="false">
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            v-dropdown
+            aria-expanded="false"
+          >
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
@@ -300,7 +417,12 @@
         <div class="input-group">
           <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" />
           <button type="button" class="btn btn-outline-secondary">Action</button>
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" v-dropdown aria-expanded="false">
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            v-dropdown
+            aria-expanded="false"
+          >
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -354,18 +476,18 @@ const baseCode = `<div class="input-group mb-3">
 <div class="input-group">
   <span class="input-group-text">With textarea</span>
   <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>`
+</div>`;
 
 const wrappingCode = `<div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-</div>`
+</div>`;
 
 const radiusCode = `<div class="input-group">
   <span class="input-group-text" id="visible-addon">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="visible-addon">
   <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
-</div>`
+</div>`;
 
 const sizingCode = `<div class="input-group input-group-sm mb-3">
   <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
@@ -380,7 +502,7 @@ const sizingCode = `<div class="input-group input-group-sm mb-3">
 <div class="input-group input-group-lg">
   <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-</div>`
+</div>`;
 
 const checkboxCode = `<div class="input-group mb-3">
   <div class="input-group-text">
@@ -394,13 +516,13 @@ const checkboxCode = `<div class="input-group mb-3">
     <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
   </div>
   <input type="text" class="form-control" aria-label="Text input with radio button">
-</div>`
+</div>`;
 
 const inputsCode = `<div class="input-group">
   <span class="input-group-text">First and last name</span>
   <input type="text" aria-label="First name" class="form-control">
   <input type="text" aria-label="Last name" class="form-control">
-</div>`
+</div>`;
 
 const addonsCode = `<div class="input-group mb-3">
   <span class="input-group-text">$</span>
@@ -412,7 +534,7 @@ const addonsCode = `<div class="input-group mb-3">
   <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
   <span class="input-group-text">$</span>
   <span class="input-group-text">0.00</span>
-</div>`
+</div>`;
 
 const buttonAddonsCode = `<div class="input-group mb-3">
   <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
@@ -434,7 +556,7 @@ const buttonAddonsCode = `<div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username with two button addons">
   <button class="btn btn-outline-secondary" type="button">Button</button>
   <button class="btn btn-outline-secondary" type="button">Button</button>
-</div>`
+</div>`;
 
 const dropdownCode = `<div class="input-group mb-3">
   <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
@@ -478,7 +600,7 @@ const dropdownCode = `<div class="input-group mb-3">
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
-</div>`
+</div>`;
 
 const segmentedCode = `<div class="input-group mb-3">
   <button type="button" class="btn btn-outline-secondary">Action</button>
@@ -508,5 +630,5 @@ const segmentedCode = `<div class="input-group mb-3">
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
-</div>`
+</div>`;
 </script>
