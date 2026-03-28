@@ -14,15 +14,15 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const visible = ref(false)
 
 const disableTab = (e) => {
-  if (e.key === 'Tab') e.preventDefault();
-};
+  if (e.key === 'Tab') e.preventDefault()
+}
 
 onMounted(() => {
   document.addEventListener('keydown', disableTab)
 })
 
-onUnmounted(()=>{
-    document.removeEventListener('keydown', disableTab)
+onUnmounted(() => {
+  document.removeEventListener('keydown', disableTab)
 })
 
 function show() {

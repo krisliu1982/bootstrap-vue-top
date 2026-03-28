@@ -59,4 +59,3 @@ import LoadingFullscreen from '@/components/loading/index.js'
 import toast from '@/components/toast/index.js'
 
 export { alertBox, alertConfirm, alertMessage, LoadingFullscreen, toast }
-

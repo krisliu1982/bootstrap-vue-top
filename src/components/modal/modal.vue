@@ -49,7 +49,7 @@ onMounted(() => {
     })
 
     modalEl.addEventListener('show.bs.modal', (event) => {
-      previousFocus = document.activeElement;
+      previousFocus = document.activeElement
     })
 
     modalEl.addEventListener('shown.bs.modal', (event) => {

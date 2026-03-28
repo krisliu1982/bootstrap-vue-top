@@ -19,7 +19,7 @@
           type="button"
           :disabled="disabled"
           class="btn btn-secondary btn-sm"
-          style="--bs-btn-border-radius: 50%; cursor: move;"
+          style="--bs-btn-border-radius: 50%; cursor: move"
           @mousedown="mousedown"
           @mouseup="mouseup"
         >

@@ -61,6 +61,4 @@ import imagePreview from './components/image-preview/index.js'
 import LoadingFullscreen from './components/loading/index.js'
 import toast from './components/toast/index.js'
 
-
 export { alertBox, alertConfirm, alertMessage, imagePreview, LoadingFullscreen, toast }
-

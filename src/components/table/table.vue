@@ -1,7 +1,9 @@
 <template>
   <table class="table" :class="tableClass">
     <caption v-if="caption">
-      {{ caption }}
+      {{
+        caption
+      }}
     </caption>
     <slot></slot>
     <template v-if="ready">
@@ -20,8 +22,8 @@
                   <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="_sortBy(col)">
                     {{ col.header }}
                     <bi-arrow-down-up v-if="sortField !== col.field || sortOrder === null" />
-                    <bi-sort-up-alt v-else-if="sortOrder === 'asc'" class="text-primary"/>
-                    <bi-sort-down v-else-if="sortOrder === 'desc'" class="text-primary"/>
+                    <bi-sort-up-alt v-else-if="sortOrder === 'asc'" class="text-primary" />
+                    <bi-sort-down v-else-if="sortOrder === 'desc'" class="text-primary" />
                   </a>
                 </template>
               </template>
@@ -45,18 +47,14 @@
               </template>
               <template v-else-if="col.type === 'index'">{{ index + 1 }}</template>
               <template v-else-if="col.type === 'checkbox'">
-                <input class="form-check-input" type="checkbox" :value="get(item, trKeyInfo.field)"
-                  v-model="checkboxSelectedKeys" />
+                <input class="form-check-input" type="checkbox" :value="get(item, trKeyInfo.field)" v-model="checkboxSelectedKeys" />
               </template>
               <template v-else-if="col.type === 'radio'">
-                <input class="form-check-input" type="radio" :value="get(item, trKeyInfo.field)"
-                  v-model="radioSelectedKey" />
+                <input class="form-check-input" type="radio" :value="get(item, trKeyInfo.field)" v-model="radioSelectedKey" />
               </template>
               <template v-else-if="col.type === 'expand'">
-                <a href="#" role="button" class="link-body-emphasis text-decoration-none"
-                  @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))">
-                  <BiChevronRight class="expand-icon"
-                    :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }" />
+                <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))">
+                  <BiChevronRight class="expand-icon" :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }" />
                 </a>
               </template>
               <component v-else :is="col.body" :item="item" :index="index" />
