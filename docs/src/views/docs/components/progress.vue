@@ -21,9 +21,8 @@
 
     <h2 id="progress-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#progress-about"> </a></h2>
     <p>
-      进度组件由两个 HTML 元素、一些用于设置宽度的 CSS 代码以及少量属性构成。我们并未使用 <a
-        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank"
-        >HTML5 中的 <code>&lt;progress&gt;</code> 元素</a
+      进度组件由两个 HTML 元素、一些用于设置宽度的 CSS 代码以及少量属性构成。我们并未使用
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank">HTML5 中的 <code>&lt;progress&gt;</code> 元素</a
       >，这样您便能够堆叠进度条、对其进行动画处理，并在其上方添加文本标签。
     </p>
     <ul class="docs-content-list">

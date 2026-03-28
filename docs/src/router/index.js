@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import NProgress from 'nprogress-es'
 import 'nprogress-es/nprogress.css'
 
-NProgress.settings.showSpinner = false;
+NProgress.settings.showSpinner = false
 
 var routes = [
   {
@@ -192,7 +192,7 @@ var routes = [
       {
         path: '/docs/components/tree',
         component: () => import('@/views/docs/components/tree.vue')
-      }, 
+      },
       {
         path: '/docs/components/tree-table',
         component: () => import('@/views/docs/components/tree-table.vue')

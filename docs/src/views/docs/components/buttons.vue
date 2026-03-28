@@ -21,8 +21,7 @@
       <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Boostrap Buttons</a>
     </p>
 
-    <h2 id="buttons-base">基础样式<a class="anchor-link" aria-label="Link to this section: 基础样式" href="#buttons-base"> </a>
-    </h2>
+    <h2 id="buttons-base">基础样式<a class="anchor-link" aria-label="Link to this section: 基础样式" href="#buttons-base"> </a></h2>
     <p>
       Bootstrap 有一个基础的
       <code>.btn</code>
@@ -39,15 +38,15 @@
       <code>.btn</code>
       类旨在与我们的按钮变体一起使用，或作为您自定义样式的基础。
     </p>
-    <p class="text-bg-warning">如果你单独使用 <code>.btn</code> 类，请务必至少定义一些明确的 <code>:focus</code> 和/或
-      <code>:focus-visible</code> 样式。
-    </p>
+    <p class="text-bg-warning">如果你单独使用 <code>.btn</code> 类，请务必至少定义一些明确的 <code>:focus</code> 和/或 <code>:focus-visible</code> 样式。</p>
 
-    <h2 id="buttons-variants">变体按钮<a class="anchor-link" aria-label="Link to this section: 变体按钮"
-        href="#buttons-variants"> </a></h2>
-    <p>Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。其中 <code>.btn-link</code> 按钮 Boostrap
-      样式被更改，<code>padding</code> 被置为 <code>0</code>，让其看起来更像链接。<strong>因为使用 <code>&lt;a&gt;</code>
-        标签的点击事件处理和禁用不那么友好。</strong></p>
+    <h2 id="buttons-variants">变体按钮<a class="anchor-link" aria-label="Link to this section: 变体按钮" href="#buttons-variants"> </a></h2>
+    <p>
+      Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。其中 <code>.btn-link</code> 按钮 Boostrap
+      样式被更改，<code>padding</code> 被置为 <code>0</code>，让其看起来更像链接。<strong
+        >因为使用 <code>&lt;a&gt;</code> 标签的点击事件处理和禁用不那么友好。</strong
+      >
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack-3 flex-wrap">
@@ -67,13 +66,11 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的提示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast"
-        target="_blank"><em>足够的</em> 颜色对比度</a>
+      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"><em>足够的</em> 颜色对比度</a>
       的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
-    <h2 id="buttons-nowrap">禁用文本换行<a class="anchor-link" aria-label="Link to this section: 禁用文本换行"
-        href="#buttons-nowrap"> </a></h2>
+    <h2 id="buttons-nowrap">禁用文本换行<a class="anchor-link" aria-label="Link to this section: 禁用文本换行" href="#buttons-nowrap"> </a></h2>
     <p>
       如果你不希望按钮文本换行，可以在按钮上添加
       <code>.text-nowrap</code> 类。在 Sass 中，你可以设置
@@ -81,8 +78,7 @@
       来禁用每个按钮的文本换行。
     </p>
 
-    <h2 id="buttons-tag">按钮标签<a class="anchor-link" aria-label="Link to this section: 按钮标签" href="#buttons-tag"> </a>
-    </h2>
+    <h2 id="buttons-tag">按钮标签<a class="anchor-link" aria-label="Link to this section: 按钮标签" href="#buttons-tag"> </a></h2>
     <p>
       <code>.btn</code> 类是专为与
       <code>&lt;button&gt;</code>
@@ -111,8 +107,7 @@
       <code-highlight type="html" :code="tagCode" label="html" />
     </div>
 
-    <h2 id="buttons-outline">轮廓按钮<a class="anchor-link" aria-label="Link to this section: 轮廓按钮" href="#buttons-outline">
-      </a></h2>
+    <h2 id="buttons-outline">轮廓按钮<a class="anchor-link" aria-label="Link to this section: 轮廓按钮" href="#buttons-outline"> </a></h2>
     <p>
       需要按钮，但不需要它们带来的厚重背景色？将默认的修饰类替换为
       <code>.btn-outline-*</code>，即可移除任何按钮上的所有背景图像和颜色。
@@ -150,8 +145,7 @@
         </div>
         <hr />
         <div class="hstack-3">
-          <button type="button" class="btn btn-primary"
-            style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem">
+          <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem">
             Custom button
           </button>
         </div>
@@ -159,8 +153,7 @@
       <code-highlight type="html" :code="sizeCode" label="html" />
     </div>
 
-    <h2 id="buttons-disabled">禁用状态<a class="anchor-link" aria-label="Link to this section: 禁用状态"
-        href="#buttons-disabled"> </a></h2>
+    <h2 id="buttons-disabled">禁用状态<a class="anchor-link" aria-label="Link to this section: 禁用状态" href="#buttons-disabled"> </a></h2>
     <p>
       通过在任何 <code>&lt;button&gt;</code> 元素中添加
       <code>disabled</code>
@@ -214,8 +207,7 @@
       <code-highlight type="html" :code="disabled2Code" label="html" />
     </div>
 
-    <h2 id="buttons-block">块级按钮<a class="anchor-link" aria-label="Link to this section: 块级按钮" href="#buttons-block">
-      </a></h2>
+    <h2 id="buttons-block">块级按钮<a class="anchor-link" aria-label="Link to this section: 块级按钮" href="#buttons-block"> </a></h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="d-grid gap-2">
@@ -241,8 +233,7 @@
       <code-highlight type="html" :code="blockCode" label="html" />
     </div>
 
-    <h2 id="buttons-loading">加载按钮<a class="anchor-link" aria-label="Link to this section: 加载按钮" href="#buttons-loading">
-      </a></h2>
+    <h2 id="buttons-loading">加载按钮<a class="anchor-link" aria-label="Link to this section: 加载按钮" href="#buttons-loading"> </a></h2>
     <p>在按钮内部使用加载指示器来表示某个操作正在处理中或正在进行中。您还可以将加载指示器元素中的文字替换掉，并根据需要使用按钮上的文字。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -271,8 +262,7 @@
       <code-highlight type="html" :code="loadingCode" label="html" />
     </div>
 
-    <h2 id="buttons-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables"
-        href="#buttons-css"> </a></h2>
+    <h2 id="buttons-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#buttons-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，按钮现在在
       <code>.btn</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
