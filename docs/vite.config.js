@@ -10,25 +10,14 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   plugins: [
     vue(),
-        Icons({
+    Icons({
       compiler: 'vue3',
-      autoInstall: true, // 自动安装图标集
       scale: 1, // SVG缩放比例
-      defaultClass: 'bi', // 默认 class
-      // 只启用 Bootstrap Icons
-      collections: {
-        'bi': () => import('@iconify-json/bi/icons.json').then(i => i.default),
-      }
+      defaultClass: 'bi' // 默认 class
     }),
     Components({
-      resolvers: [
-        IconsResolver({
-          prefix: '', // 组件前缀
-          enabledCollections: ['bi'], // 只启用 Bootstrap Icons
-        })
-      ],
-      dts: false, // 生成类型声明文件
-    }),
+      resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]
+    })
   ],
   base: '/',
   resolve: {
