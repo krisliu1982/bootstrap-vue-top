@@ -1,0 +1,28 @@
+
+
+.image-uploader-one img:hover {
+    opacity: .75;
+}
+
+.image-uploader-many {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.image-uploader-many img:hover {
+    opacity: .75;
+}
+
+.btn-image-uploader {
+    --bs-btn-padding-x: 0;
+    --bs-btn-padding-y: 0;
+    --bs-btn-border-radius:var(--bs-border-radius);
+    --bs-btn-border-color:var(--bs-border-color);
+    display: block;
+    border-style: dashed;
+}
+
+.btn-image-uploader:hover {
+    border-color:var(--bs-primary);
+}

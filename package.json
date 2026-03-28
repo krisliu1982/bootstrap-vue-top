@@ -1,0 +1,52 @@
+{
+  "name": "bootstrap-vue-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "bootstrap-vue-ui 是一个基于 Bootstrap & Vue 的前端框架。",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/bootstrap-vue-ui.cjs",
+  "module": "./dist/bootstrap-vue-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bootstrap-vue-ui.js",
+      "require": "./dist/bootstrap-vue-ui.umd.cjs"
+    },
+    "./style.css": "./dist/bootstrap-vue-ui.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "focus-trap": "^6.9.4",
+    "lodash-es": "^4.17.23"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "autoprefixer": "^10.4.27",
+    "prettier": "^3.8.1",
+    "sass": "^1.98.0",
+    "unplugin-icons": "^22.5.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vite": "^8.0.3",
+    "vue": "^3.5.31"
+  },
+  "keywords": [
+    "boostrap5",
+    "vue3",
+    "ui-library"
+  ],
+  "author": "kris.liu",
+  "license": "MIT"
+}

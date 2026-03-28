@@ -1,0 +1,33 @@
+
+.alert-message {
+  z-index: $zindex-alert;
+  position: fixed;
+  width: fit-content;
+  max-width: 75%;
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.alert-box {
+  z-index: $zindex-alert;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.alert-confirm {
+  z-index: $zindex-alert;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .5);
+}

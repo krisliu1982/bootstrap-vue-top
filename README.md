@@ -1,7 +1,7 @@
 # BootstrapVue
 
 #### 介绍
-BootstrapVue 是一个基于 Vue.js 的前端框架，提供了一系列使用 Bootstrap 5 样式的 Vue 组件，帮助开发者快速构建响应式网页应用。
+BootstrapVue 是一个基于 Vue.js 的前端框架，提供了一系列使用 Bootstrap 样式的 Vue 组件，帮助开发者快速构建响应式网页应用。
 
 #### 软件架构
 软件架构说明
