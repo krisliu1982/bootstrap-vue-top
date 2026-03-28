@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-vue-ui",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "bootstrap-vue-ui 是一个基于 Bootstrap & Vue 的前端框架。",
   "files": [
