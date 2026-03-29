@@ -36,7 +36,7 @@
         以获取概览 以及可用属性的完整列表。
       </li>
       <li>
-        在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code>默认具有 <code>type="submit"</code> 属性，所以
+        在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code> 默认具有 <code>type="submit"</code> 属性，所以
         力求具体，并始终包含一个 <code>type</code>。
       </li>
     </ul>
