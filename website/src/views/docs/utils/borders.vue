@@ -113,7 +113,7 @@
       </div>
       <code-highlight type="html" :code="opacity1Code" label="html" />
     </div>
-    <p>或者，您可以从以下任何一个 <code>.border-opacity</code> 相关的实用工具中进行选择：</p>
+    <p>或者，您可以从以下任何一个 <code>.border-opacity</code> 相关的工具中进行选择：</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="border border-success p-2 mb-2">This is default success border</div>
@@ -219,7 +219,7 @@
     </div>
     <p>
       使用缩放类来实现较大或较小的圆角效果。尺寸范围从 <code>0</code> 到 <code>5</code>（包括 <code>circle</code> 和
-      <code>pill</code>），并且可以通过修改实用工具 API 来进行配置。
+      <code>pill</code>），并且可以通过修改工具 API 来进行配置。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">

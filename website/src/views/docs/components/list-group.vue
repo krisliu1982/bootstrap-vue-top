@@ -302,7 +302,7 @@
     </h2>
     <p>
       在任何列表组项上添加徽章，即可借助一些
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">实用工具</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">flex 工具</a>
       显示未读数量、活动情况等信息。
     </p>
     <div class="docs-example">

@@ -202,8 +202,20 @@ var routes = [
         component: () => import('@/views/docs/components/tree-table.vue')
       },
       {
+        path: '/docs/utils/background',
+        component: () => import('@/views/docs/utils/background.vue')
+      },
+      {
         path: '/docs/utils/borders',
         component: () => import('@/views/docs/utils/borders.vue')
+      },
+      {
+        path: '/docs/utils/colors',
+        component: () => import('@/views/docs/utils/colors.vue')
+      },
+      {
+        path: '/docs/utils/color-background',
+        component: () => import('@/views/docs/utils/color-background.vue')
       }
     ]
   },

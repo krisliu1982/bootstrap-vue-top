@@ -352,7 +352,7 @@
       变量相结合的特性，导航栏主题的设置比以往任何时候都更加简便。默认情况下，我们提供了“浅色导航栏”供搭配浅色背景使用，但您也可以通过在
       <code>.navbar</code> 父元素上添加 <code>data-bs-theme="dark"</code> 来使用深色背景。然后，您还可以使用
       <code>.bg-*</code>
-      和其他实用工具来进行个性化设置。
+      和其他工具来进行个性化设置。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -597,7 +597,7 @@
       导航栏可以使用 <code>.navbar-toggler</code>、<code>.navbar-collapse</code>
       和
       <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code>
-      这些类来确定其内容何时会缩回至按钮之后。结合其他实用工具，您可以轻松地决定何时显示或隐藏特定元素。
+      这些类来确定其内容何时会缩回至按钮之后。结合其他工具，您可以轻松地决定何时显示或隐藏特定元素。
     </p>
     <p>
       对于那些永远不会收起的导航栏，要在导航栏上添加

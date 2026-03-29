@@ -2,7 +2,7 @@
   <div class="docs-toc text-body-secondary">
     <nav id="docs-nav-layout">
       <a href="#layout-forms">表单</a>
-      <a href="#layout-utilities">实用工具</a>
+      <a href="#layout-utilities">工具使用</a>
       <a href="#layout-grid">表单网格</a>
       <a href="#layout-table">表单表格</a>
       <a href="#layout-gutters">Gutters</a>
@@ -46,7 +46,7 @@
     </p>
 
     <h2 id="layout-utilities">
-      实用工具<a class="anchor-link" aria-label="Link to this section: 实用工具" href="#layout-utilities"> </a>
+      工具使用<a class="anchor-link" aria-label="Link to this section: 工具使用" href="#layout-utilities"> </a>
     </h2>
     <p>
       <a href="https://getbootstrap.com/docs/5.3/utilities/spacing" target="_blank">边距工具</a>

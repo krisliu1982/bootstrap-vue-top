@@ -256,13 +256,23 @@
           <h6 class="fw-bold">Helper Utilities 辅助工具</h6>
           <ul class="list-unstyled">
             <li class="py-1">
+              <RouterLink to="/docs/utils/background" class="docs-sidebar-link" exact-active-class="active">
+                Background 背景
+              </RouterLink>
+            </li>
+            <li class="py-1">
               <RouterLink to="/docs/utils/borders" class="docs-sidebar-link" exact-active-class="active"
                 >Borders 边框
               </RouterLink>
             </li>
             <li class="py-1">
+              <RouterLink to="/docs/utils/colors" class="docs-sidebar-link" exact-active-class="active">
+                Colors 文本颜色
+              </RouterLink>
+            </li>
+            <li class="py-1">
               <RouterLink to="/docs/utils/color-background" class="docs-sidebar-link" exact-active-class="active">
-                Color &amp; background 颜色和背景
+                Color &amp; background 文本颜色背景
               </RouterLink>
             </li>
             <li class="py-1">
