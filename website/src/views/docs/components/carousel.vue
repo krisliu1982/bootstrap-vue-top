@@ -102,171 +102,100 @@
 <script setup>
 const slides = [
   {
-    image: 'https://picsum.photos/800/400?random=1',
+    image: '/images/docs-slide1-800x400.jpg',
     title: '风景图片1',
     description: '这是第1张风景图片的描述'
   },
   {
-    image: 'https://picsum.photos/800/400?random=2',
+    image: '/images/docs-slide2-800x400.jpg',
     description: '这是第2张风景图片的描述'
   },
   {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-  },
-  {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
+    image: '/images/docs-slide3-800x400.jpg',
+    title: '风景图片3'
   }
 ];
 
 const baseCode = `<template>
-    <bs-carousel :items="slides"></bs-carousel>
+  <bs-carousel :items="slides"></bs-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
+const slides = [
+  {
+    image: '/images/docs-slide1-800x400.jpg',
     title: '风景图片1',
     description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
+  },
+  {
+    image: '/images/docs-slide2-800x400.jpg',
     description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
+  },
+  {
+    image: '/images/docs-slide3-800x400.jpg',
     title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+  }
+];
 <\/script>`;
 
 const fadeCode = `<template>
-    <bv-carousel :items="slides" carousel-class="carousel-fade"></bv-carousel>
+  <bv-carousel 
+    :items="slides" 
+    carousel-class="carousel-fade">
+  </bv-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
-    title: '风景图片1',
-    description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
-    description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+const slides = [...];
 <\/script>`;
 
 const auto1Code = `<template>
-    <bv-carousel 
+  <bv-carousel 
     :items="slides" 
     ride="carousel" 
     :interval="3000" 
     :pause="false">
-    </bv-carousel>
+  </bv-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
-    title: '风景图片1',
-    description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
-    description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+const slides = [...];
 <\/script>`;
 
 const auto2Code = `<template>
-    <bv-carousel 
+  <bv-carousel 
     :items="slides" 
     :ride="true" 
     :interval="3000" 
     :pause="false">
-    </bv-carousel>
+  </bv-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
-    title: '风景图片1',
-    description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
-    description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+const slides = [...];
+
 <\/script>`;
 
 const auto3Code = `<template>
-    <bv-carousel 
+  <bv-carousel 
     :items="slides" 
     ride="carousel" 
     :interval="3000" 
     :pause="false" 
     :control="false" 
     :indicator="false">
-    </bv-carousel>
+  </bv-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
-    title: '风景图片1',
-    description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
-    description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+const slides = [...];
 <\/script>`;
 
 const touchCode = `<template>
-    <bv-carousel :items="slides" :touch="false"></bv-carousel>
+  <bv-carousel :items="slides" :touch="false"></bv-carousel>
 </template>
 
 <script setup>
-const slides = [{
-    image: 'https://picsum.photos/800/400?random=1',
-    title: '风景图片1',
-    description: '这是第1张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=2',
-    description: '这是第2张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=3',
-    title: '风景图片3',
-    description: '这是第3张风景图片的描述'
-}, {
-    image: 'https://picsum.photos/800/400?random=4',
-    title: '风景图片4'
-}]
+const slides = [...];
 <\/script>`;
 </script>

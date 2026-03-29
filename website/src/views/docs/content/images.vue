@@ -24,7 +24,19 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <img src="https://picsum.photos/1000/400?random=1" class="img-fluid" alt="..." />
+        <svg
+          aria-label="Placeholder: Responsive image"
+          class="docs-placeholder-img fs-1 img-fluid"
+          height="250"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text>
+        </svg>
       </div>
       <code-highlight type="html" :code="responsiveCode" label="html" />
     </div>
@@ -40,7 +52,22 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail" alt="..." />
+        <svg
+          aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+          class="docs-placeholder-img img-thumbnail"
+          height="200"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            A generic square placeholder image with a white border around it, making it resemble a photograph taken with
+            an old instant camera
+          </title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+        </svg>
       </div>
       <code-highlight type="html" :code="thumbnailCode" label="html" />
     </div>
@@ -62,16 +89,76 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="clearfix">
-          <img src="https://picsum.photos/200/200?random=1" class="rounded float-start" alt="..." />
-          <img src="https://picsum.photos/200/200?random=2" class="rounded float-end" alt="..." />
+          <svg
+            aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+            class="docs-placeholder-img rounded float-start"
+            height="200"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              A generic square placeholder image with a white border around it, making it resemble a photograph taken
+              with an old instant camera
+            </title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+          </svg>
+          <svg
+            aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+            class="docs-placeholder-img rounded float-end"
+            height="200"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              A generic square placeholder image with a white border around it, making it resemble a photograph taken
+              with an old instant camera
+            </title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+          </svg>
         </div>
         <hr />
 
-        <img src="https://picsum.photos/200/200?random=3" class="rounded mx-auto d-block" alt="..." />
+        <svg
+          aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+          class="docs-placeholder-img rounded mx-auto d-block"
+          height="200"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            A generic square placeholder image with a white border around it, making it resemble a photograph taken with
+            an old instant camera
+          </title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+        </svg>
         <hr />
 
         <div class="text-center">
-          <img src="https://picsum.photos/200/200?random=4" class="rounded" alt="..." />
+          <svg
+            aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+            class="docs-placeholder-img rounded"
+            height="200"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              A generic square placeholder image with a white border around it, making it resemble a photograph taken
+              with an old instant camera
+            </title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
+          </svg>
         </div>
       </div>
       <code-highlight type="html" :code="alignCode" label="html" />
@@ -90,21 +177,21 @@
 </template>
 
 <script setup>
-const responsiveCode = `<img src="https://picsum.photos/1000/400?random=1" class="img-fluid" alt="...">`;
+const responsiveCode = `<img src="..." class="img-fluid" alt="...">`;
 
-const thumbnailCode = `<img src="https://picsum.photos/200/200?random=1" class="img-thumbnail" alt="...">`;
+const thumbnailCode = `<img src="..." class="img-thumbnail" alt="...">`;
 
 const alignCode = `<div class="clearfix">
-    <img src="https://picsum.photos/200/200?random=1" class="rounded float-start" alt="...">
-    <img src="https://picsum.photos/200/200?random=2" class="rounded float-end" alt="...">
+    <img src="..." class="rounded float-start" alt="...">
+    <img src="..." class="rounded float-end" alt="...">
 </div>
 <hr/>
 
-<img src="https://picsum.photos/200/200?random=3" class="rounded mx-auto d-block" alt="...">
+<img src="..." class="rounded mx-auto d-block" alt="...">
 <hr/>
 
 <div class="text-center">
-  <img src="https://picsum.photos/200/200?random=4" class="rounded" alt="...">
+  <img src="..." class="rounded" alt="...">
 </div>`;
 
 const pictureCode = `<picture>

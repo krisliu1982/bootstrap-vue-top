@@ -29,7 +29,19 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <figure class="figure">
-          <img src="https://picsum.photos/400/300?random=1" class="figure-img img-fluid rounded" alt="..." />
+          <svg
+            aria-label="Placeholder: 400x300"
+            class="docs-placeholder-img figure-img img-fluid rounded"
+            height="300"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="400"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text>
+          </svg>
           <figcaption class="figure-caption">A caption for the above image.</figcaption>
         </figure>
       </div>
@@ -43,7 +55,19 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <figure class="figure">
-          <img src="https://picsum.photos/400/300?random=2" class="figure-img img-fluid rounded" alt="..." />
+          <svg
+            aria-label="Placeholder: 400x300"
+            class="docs-placeholder-img figure-img img-fluid rounded"
+            height="300"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="400"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text>
+          </svg>
           <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
         </figure>
       </div>
@@ -54,12 +78,12 @@
 
 <script setup>
 const figure1Code = `<figure class="figure">
-  <img src="https://picsum.photos/400/300?random=1" class="figure-img img-fluid rounded" alt="...">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption">A caption for the above image.</figcaption>
 </figure>`;
 
 const figure2Code = `<figure class="figure">
-  <img src="https://picsum.photos/400/300?random=2" class="figure-img img-fluid rounded" alt="...">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
 </figure>`;
 </script>

@@ -90,6 +90,10 @@ var routes = [
         component: () => import('@/views/docs/components/alerts-message.vue')
       },
       {
+        path: '/docs/components/backtop',
+        component: () => import('@/views/docs/components/backtop.vue')
+      },
+      {
         path: '/docs/components/badge',
         component: () => import('@/views/docs/components/badge.vue')
       },
@@ -196,6 +200,10 @@ var routes = [
       {
         path: '/docs/components/tree-table',
         component: () => import('@/views/docs/components/tree-table.vue')
+      },
+      {
+        path: '/docs/utils/borders',
+        component: () => import('@/views/docs/utils/borders.vue')
       }
     ]
   },

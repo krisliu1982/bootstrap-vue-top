@@ -128,3 +128,16 @@ ul.docs-content-list>li {
   border-radius: var(--bs-border-radius);
   background-color: var(--bs-tertiary-bg);
 }
+
+.docs-border-utils [class^=border] {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--bs-tertiary-bg);
+}
+
+.docs-placeholder-img
+ {
+    font-size: 1.125rem;
+    user-select: none;
+    text-anchor: middle;
+ }
