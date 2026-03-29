@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import Toast from 'bootstrap/js/dist/toast';
 
 const emit = defineEmits(['destroy']);
@@ -82,7 +82,7 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   if (toast !== null) {
     toast.dispose();
     toast = null;

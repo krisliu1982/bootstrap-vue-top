@@ -27,6 +27,9 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@tiptap/core": "^3.21.0",
+    "@tiptap/pm": "^3.21.0",
+    "@tiptap/starter-kit": "^3.21.0",
     "bootstrap": "^5.3.8",
     "focus-trap": "^6.9.4",
     "lodash-es": "^4.17.23"

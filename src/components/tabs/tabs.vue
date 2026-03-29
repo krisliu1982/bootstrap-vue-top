@@ -137,7 +137,7 @@
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted, onUnmounted, nextTick } from 'vue';
+import { useSlots, ref, provide, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
 import Tab from 'bootstrap/js/dist/tab';
 
@@ -204,7 +204,7 @@ onMounted(() => {
   });
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   panes.forEach((item) => {
     Tab.getInstance(`#${item.keyId}-tab`).dispose();
   });

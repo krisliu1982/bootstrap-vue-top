@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 
 const visible = ref(false);
 
@@ -47,7 +47,7 @@ onMounted(() => {
   document.addEventListener('scroll', handleScroll);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   document.removeEventListener('scroll', handleScroll);
 });
 

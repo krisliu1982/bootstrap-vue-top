@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const visible = ref(false);
 
@@ -21,7 +21,7 @@ onMounted(() => {
   document.addEventListener('keydown', disableTab);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   document.removeEventListener('keydown', disableTab);
 });
 

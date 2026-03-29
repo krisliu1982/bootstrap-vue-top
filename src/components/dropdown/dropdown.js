@@ -5,7 +5,7 @@ export default {
     el.setAttribute('data-bs-toggle', 'dropdown');
     new Dropdown(el);
   },
-  unmounted(el) {
+  beforeUnmount(el) {
     Dropdown.getInstance(el).dispose();
   }
 };

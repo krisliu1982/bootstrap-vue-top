@@ -4,5 +4,5 @@ export default {
   mounted(el, binding) {
     el.setAttribute('data-bs-toggle', 'collapse');
   },
-  unmounted(el, binding) {}
+  beforeUnmount(el, binding) {}
 };

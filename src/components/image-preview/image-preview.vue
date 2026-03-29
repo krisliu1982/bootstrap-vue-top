@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, nextTick } from 'vue';
+import { onMounted, onBeforeUnmount, ref, nextTick } from 'vue';
 import { createFocusTrap } from 'focus-trap';
 
 const elementRef = ref(null);
@@ -68,7 +68,7 @@ onMounted(() => {
   document.addEventListener('keydown', handleKeyDown);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   if (document.body.scrollHeight > window.innerHeight) {
     document.body.style = null;
   }

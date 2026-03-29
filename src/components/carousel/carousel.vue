@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-import { useId, onMounted, onUnmounted } from 'vue';
+import { useId, onMounted, onBeforeUnmount } from 'vue';
 import Carousel from 'bootstrap/js/dist/carousel';
 
 const id = useId();
@@ -98,7 +98,7 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   if (carousel !== null) {
     carousel.dispose();
     carousel = null;

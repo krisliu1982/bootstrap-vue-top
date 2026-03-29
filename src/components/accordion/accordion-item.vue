@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onUnmounted, useId } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
 
 const props = defineProps({
@@ -20,7 +20,7 @@ onMounted(() => {
   items.push(item);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   const index = items.findIndex((item) => item.keyId === keyId);
   items.splice(index, 1);
 });

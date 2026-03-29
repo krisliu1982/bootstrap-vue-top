@@ -4,7 +4,7 @@ export default {
   mounted(el) {
     new Tooltip(el);
   },
-  unmounted(el) {
+  beforeUnmount(el) {
     Tooltip.getInstance(el).dispose();
   }
 };

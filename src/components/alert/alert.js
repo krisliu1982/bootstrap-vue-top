@@ -4,7 +4,7 @@ export default {
   mounted(el) {
     new Alert(el);
   },
-  unmounted(el) {
+  beforeUnmount(el) {
     Alert.getInstance(el).dispose();
   }
 };

@@ -4,7 +4,7 @@ export default {
   mounted(el) {
     new Popover(el);
   },
-  unmounted(el) {
+  beforeUnmount(el) {
     Popover.getInstance(el).dispose();
   }
 };

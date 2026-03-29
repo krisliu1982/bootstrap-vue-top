@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import { ref, watch, nextTick, onUnmounted, onMounted } from 'vue';
+import { ref, watch, nextTick, onBeforeUnmount, onMounted } from 'vue';
 import { createFocusTrap } from 'focus-trap';
 import counter from './counter.js';
 
@@ -247,7 +247,7 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   counter.reset();
 
   if (document.body.scrollHeight > window.innerHeight) {

@@ -24,6 +24,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'bootstrap-vue-ui': fileURLToPath(new URL('../src/index.js', import.meta.url)),
+      'editor-html': fileURLToPath(new URL('../src/components/editor/editor-tiptap-html.vue', import.meta.url)),
     },
   },
   server: {//开发配置  npm run dev

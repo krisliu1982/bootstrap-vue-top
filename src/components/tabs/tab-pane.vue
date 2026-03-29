@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onUnmounted, useId } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
 
 const props = defineProps({
@@ -25,7 +25,7 @@ onMounted(() => {
   panes.push(pane);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   const index = panes.findIndex((item) => item.keyId === keyId);
   panes.splice(index, 1);
 });

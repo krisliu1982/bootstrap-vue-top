@@ -10,7 +10,7 @@ export default {
       threshold: [0.1, 0.5, 1]
     });
   },
-  unmounted(el, binding) {
+  beforeUnmount(el, binding) {
     ScrollSpy.getInstance(binding.modifiers.self ? el : document.body).dispose();
   }
 };

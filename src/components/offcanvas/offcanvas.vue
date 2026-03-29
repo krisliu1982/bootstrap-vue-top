@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { useId, onMounted, onUnmounted, computed } from 'vue';
+import { useId, onMounted, onBeforeUnmount, computed } from 'vue';
 import Offcanvas from 'bootstrap/js/dist/offcanvas';
 
 const emit = defineEmits(['offcanvas-shown']);
@@ -64,7 +64,7 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   if (offcanvas !== null) {
     offcanvas.dispose();
     offcanvas = null;

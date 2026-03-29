@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { useId, onMounted, onUnmounted } from 'vue';
+import { useId, onMounted, onBeforeUnmount } from 'vue';
 import Modal from 'bootstrap/js/dist/modal';
 
 const emit = defineEmits(['modal-shown']);
@@ -68,7 +68,7 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   if (modal !== null) {
     modal.dispose();
     modal = null;

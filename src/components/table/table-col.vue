@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onUnmounted, useId } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId } from 'vue';
 import { cols_injection_key, tr_keyinfo_injection_key } from './table-keys.js';
 
 const props = defineProps({
@@ -54,16 +54,8 @@ onMounted(() => {
   }
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   const index = cols.findIndex((item) => item.key_id === key_id);
   cols.splice(index, 1);
 });
-
-function tdContentWidth() {
-  if (props.width !== 'auto' && props.truncate === true) {
-    return `calc(${props.width} - 1rem)`;
-  } else {
-    return null;
-  }
-}
 </script>
