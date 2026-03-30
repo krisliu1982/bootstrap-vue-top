@@ -12,10 +12,10 @@ const elementRef = ref(null);
 let editor = null;
 onMounted(() => {
   editor = new Editor({
-  element: elementRef.value,
-  extensions: [StarterKit],
-  content: '<p>Hello World!</p>',
-})
+    element: elementRef.value,
+    extensions: [StarterKit],
+    content: '<p>Hello World!</p>',
+  })
 });
 
 onBeforeUnmount(() => {

@@ -14,9 +14,13 @@
   "exports": {
     ".": {
       "import": "./dist/bootstrap-vue.js",
-      "require": "./dist/bootstrap-vue.umd.cjs"
+      "require": "./dist/bootstrap-vue.cjs"
     },
-    "./style.css": "./dist/bootstrap-vue.css"
+    "./style.css": "./dist/bootstrap-vue.css",
+    "./editor": {
+      "import": "./dist/bootstrap-vue-editor.js",
+      "require": "./dist/bootstrap-vue-editor.cjs"
+    }
   },
   "scripts": {
     "dev": "vite",

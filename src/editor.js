@@ -1,9 +1,9 @@
-import BvEditorHtml from './components/editor/editor-html.vue';
+import BvEditor from './components/editor/editor.vue';
 
 export default {
   install: (app, options) => {
-    app.component('BvEditorHtml', BvEditorHtml);
+    app.component('BvEditor', BvEditor);
   }
 };
 
-export { BvEditorHtml }
+export { BvEditor }
