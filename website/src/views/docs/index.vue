@@ -282,24 +282,24 @@
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/display" class="docs-sidebar-link" exact-active-class="active"
-                >Display
+                >Display 显示属性
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active">Flex </RouterLink>
+              <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active">Flex 弹性布局</RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/float" class="docs-sidebar-link" exact-active-class="active"
-                >Float
+                >Float 浮动
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/interactions" class="docs-sidebar-link" exact-active-class="active">
-                Interactions
+                Interactions 交互
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/link" class="docs-sidebar-link" exact-active-class="active">Link </RouterLink>
+              <RouterLink to="/docs/utils/link" class="docs-sidebar-link" exact-active-class="active">Link 链接</RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active"

@@ -220,6 +220,26 @@ var routes = [
       {
         path: '/docs/utils/color-background',
         component: () => import('@/views/docs/utils/color-background.vue')
+      },
+      {
+        path: '/docs/utils/display',
+        component: () => import('@/views/docs/utils/display.vue')
+      },
+      {
+        path: '/docs/utils/flex',
+        component: () => import('@/views/docs/utils/flex.vue')
+      },
+      {
+        path: '/docs/utils/float',
+        component: () => import('@/views/docs/utils/float.vue')
+      },
+      {
+        path: '/docs/utils/interactions',
+        component: () => import('@/views/docs/utils/interactions.vue')
+      },
+      {
+        path: '/docs/utils/link',
+        component: () => import('@/views/docs/utils/link.vue')
       }
     ]
   },

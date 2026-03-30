@@ -102,7 +102,7 @@
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue-ui';
+import { toast } from '@bootstrap-vue-ui';
 
 function handleClick1() {
   toast({ title: 'Closes automatically', message: 'Hello, world! This is a toast message.' });
@@ -169,7 +169,7 @@ const baseCode = `<template>
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue-ui'
+import { toast } from '@bootstrap-vue-ui'
 
 function handleClick1() {
   toast({
@@ -201,7 +201,7 @@ const typeCode = `<template>
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue-ui'
+import { toast } from '@bootstrap-vue-ui'
 
 function handleClickSuccess() {
   toast({ 
@@ -246,7 +246,7 @@ const positionCode = `<template>
       @click="handleClickBottomLeft">BottomLeft</button>
   </div>
 </template><script setup>
-import { toast } from 'bootstrap-vue-ui'
+import { toast } from '@bootstrap-vue-ui'
 
 function handleClickTopRight() {
   toast({ 
@@ -290,7 +290,7 @@ const contentCode = `<template>
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue-ui'
+import { toast } from '@bootstrap-vue-ui'
 
 function handleClickHtml() {
   toast({ 

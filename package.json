@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "bootstrap-vue-ui 是一个基于 Bootstrap & Vue 的前端框架。",
+  "description": "BootstrapVue 是一个基于 Bootstrap & Vue 的前端框架。",
   "files": [
     "dist",
     "README.md",

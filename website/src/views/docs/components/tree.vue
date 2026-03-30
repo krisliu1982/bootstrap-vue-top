@@ -111,7 +111,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { alertMessage } from 'bootstrap-vue-ui';
+import { alertMessage } from '@bootstrap-vue-ui';
 
 const treeData = {
   id: 1,
@@ -195,7 +195,7 @@ const baseCode = `<template>
 </template>
 
 <script setup>
-import { alertMessage } from 'bootstrap-vue-ui'
+import { alertMessage } from '@bootstrap-vue-ui'
 
 const treeData = {
   id: 1,
@@ -247,7 +247,7 @@ const checkboxCode = `<template>
 
 <script setup>
 import { ref } from 'vue'
-import { alertMessage } from 'bootstrap-vue-ui'
+import { alertMessage } from '@bootstrap-vue-ui'
 
 const treeData = {...}
 
@@ -284,7 +284,7 @@ const radioCode = `<template>
 
 <script setup>
 import { ref } from 'vue'
-import { alertMessage } from 'bootstrap-vue-ui'
+import { alertMessage } from '@bootstrap-vue-ui'
 
 const treeData = {...}
 
