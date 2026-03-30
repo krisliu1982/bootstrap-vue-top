@@ -9,14 +9,14 @@
     "README.md",
     "LICENSE"
   ],
-  "main": "./dist/bootstrap-vue-ui.cjs",
-  "module": "./dist/bootstrap-vue-ui.js",
+  "main": "./dist/bootstrap-vue.cjs",
+  "module": "./dist/bootstrap-vue.js",
   "exports": {
     ".": {
-      "import": "./dist/bootstrap-vue-ui.js",
-      "require": "./dist/bootstrap-vue-ui.umd.cjs"
+      "import": "./dist/bootstrap-vue.js",
+      "require": "./dist/bootstrap-vue.umd.cjs"
     },
-    "./style.css": "./dist/bootstrap-vue-ui.css"
+    "./style.css": "./dist/bootstrap-vue.css"
   },
   "scripts": {
     "dev": "vite",

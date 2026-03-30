@@ -9,9 +9,6 @@ import StarterKit from '@tiptap/starter-kit'
 
 const elementRef = ref(null);
 
-const props = defineProps({
-});
-
 let editor = null;
 onMounted(() => {
   editor = new Editor({
