@@ -30,13 +30,13 @@
 </template>
 
 <script setup>
-import { ref, watch, nextTick, onBeforeUnmount, onMounted } from 'vue';
+import { ref, shallowRef, watch, nextTick, onBeforeUnmount, onMounted } from 'vue';
 import { createFocusTrap } from 'focus-trap';
 import counter from './counter.js';
 
-const modalRef = ref(null);
-const contentRef = ref(null);
-const headerRef = ref(null);
+const modalRef = shallowRef(null);
+const contentRef = shallowRef(null);
+const headerRef = shallowRef(null);
 
 const visible = defineModel({ type: Boolean, required: true });
 const rendered = ref(false);

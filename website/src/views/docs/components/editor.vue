@@ -25,13 +25,13 @@
 </template>
 
 <script setup>
-import { BvEditor } from '@bootstrap-vue-ui/editor';
+import { BvEditor } from 'bootstrap-vue-ui@editor';
 
 const baseCode = `<template>
   <BvEditor />
 </template>
 
 <script setup>
-import { BvEditor } from '@bootstrap-vue-ui/editor';
+import { BvEditor } from 'bootstrap-vue-ui/editor';
 <\/script>`;
 </script>

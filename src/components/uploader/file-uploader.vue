@@ -10,12 +10,12 @@
         <a href="#" @click.prevent="handleRemove(index)"><bi-x-lg /></a>
       </li>
     </ul>
-    <input ref="fileElRef" type="file" :multiple="multiple" name="file" style="display: none" @change="handleChange" />
+    <input ref="fileRef" type="file" :multiple="multiple" name="file" style="display: none" @change="handleChange" />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { shallowRef, onMounted } from 'vue';
 const emit = defineEmits(['file-change', 'file-remove']);
 
 const props = defineProps({
@@ -29,12 +29,12 @@ const props = defineProps({
   }
 });
 
-const elementRef = ref(null);
-const fileElRef = ref(null);
+const elementRef = shallowRef(null);
+const fileRef = shallowRef(null);
 
 onMounted(() => {
   elementRef.value.children[0].addEventListener('click', function () {
-    fileElRef.value.click();
+    fileRef.value.click();
   });
 });
 

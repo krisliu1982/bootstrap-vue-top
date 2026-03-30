@@ -15,12 +15,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
+import { shallowRef, onMounted, onBeforeUnmount, computed } from 'vue';
 import Toast from 'bootstrap/js/dist/toast';
 
 const emit = defineEmits(['destroy']);
 
-const toastRef = ref(null);
+const toastRef = shallowRef(null);
 const props = defineProps({
   type: {
     type: String,

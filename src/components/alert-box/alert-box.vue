@@ -22,10 +22,10 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref, nextTick } from 'vue';
+import { onMounted, onBeforeUnmount, ref, shallowRef, nextTick } from 'vue';
 import { createFocusTrap } from 'focus-trap';
 
-const elementRef = ref(null);
+const elementRef = shallowRef(null);
 let focusTrapInstance = null;
 
 const props = defineProps({

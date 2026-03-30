@@ -485,7 +485,7 @@
 <script setup>
 import { ref } from 'vue';
 import { orderBy } from 'lodash-es';
-import { alertMessage } from '@bootstrap-vue-ui';
+import { alertMessage } from 'bootstrap-vue-ui';
 
 const tableData = ref([
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
@@ -632,7 +632,7 @@ const baseCode = `<template>
 
 <script setup>
 import { ref } from 'vue'
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 
 const tableData = ref([
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
@@ -888,7 +888,7 @@ const checkboxCode = `<template>
 
 <script setup>
 import { ref } from 'vue'
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 
 const tableData = ref([
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
@@ -929,7 +929,7 @@ const radioCode = `<template>
 
 <script setup>
 import { ref } from 'vue'
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 
 const tableData = ref([
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },

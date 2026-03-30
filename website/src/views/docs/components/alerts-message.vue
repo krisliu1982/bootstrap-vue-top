@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-import { alertMessage } from '@bootstrap-vue-ui';
+import { alertMessage } from 'bootstrap-vue-ui';
 
 function handleClick() {
   alertMessage({ message: 'This is a alert-message message.' });
@@ -85,7 +85,7 @@ const baseCode = `<template>
 </template>
 
 <script setup>
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 
 function handleClick() {
   alertMessage({ message: 'This is a alert-message message.' })
@@ -102,7 +102,7 @@ const typeCode = `<template>
 </template>
 
 <script setup>
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 
 const messageTypes = [
   'primary', 
@@ -123,6 +123,6 @@ const durationCode = `<template>
 </template>
 
 <script setup>
-import { alertMessage } from '@bootstrap-vue-ui'
+import { alertMessage } from 'bootstrap-vue-ui'
 <\/script>`;
 </script>

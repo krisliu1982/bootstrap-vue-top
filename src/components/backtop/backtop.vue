@@ -41,7 +41,7 @@ const backtopClass = computed(() => {
   }
 
   return classList;
-})
+});
 
 onMounted(() => {
   document.addEventListener('scroll', handleScroll);

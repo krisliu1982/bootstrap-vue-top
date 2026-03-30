@@ -26,13 +26,13 @@
     >
       <bi-plus-lg class="fs-3" />
     </button>
-    <input ref="fileElRef" type="file" name="file" style="display: none" accept="image/*" @change="handleChange" />
+    <input ref="fileRef" type="file" name="file" style="display: none" accept="image/*" @change="handleChange" />
   </div>
   <slot v-if="$slots.tip" name="tip"></slot>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { shallowRef } from 'vue';
 const emit = defineEmits(['file-change', 'file-remove', 'file-preview']);
 
 const props = defineProps({
@@ -54,9 +54,9 @@ const props = defineProps({
   }
 });
 
-const fileElRef = ref(null);
+const fileRef = shallowRef(null);
 function openImageDialog() {
-  fileElRef.value.click();
+  fileRef.value.click();
 }
 
 function handleChange(event) {

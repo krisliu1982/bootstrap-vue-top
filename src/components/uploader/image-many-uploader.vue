@@ -57,7 +57,7 @@
       <bi-plus-lg class="fs-3" />
     </button>
     <input
-      ref="fileElRef"
+      ref="fileRef"
       type="file"
       multiple
       name="file"
@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { shallowRef } from 'vue';
 
 const emit = defineEmits(['file-change', 'file-remove', 'file-preview']);
 
@@ -97,9 +97,9 @@ const props = defineProps({
   }
 });
 
-const fileElRef = ref(null);
+const fileRef = shallowRef(null);
 function openImageDialog() {
-  fileElRef.value.click();
+  fileRef.value.click();
 }
 
 function handleChange(event) {
