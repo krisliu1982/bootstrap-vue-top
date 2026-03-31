@@ -12,9 +12,7 @@
     <h2 id="editor-base">
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#editor-base"> </a>
     </h2>
-    <p>
-      
-    </p>
+    <p></p>
     <div class="docs-example">
       <div class="docs-example-data">
         <BvEditor />

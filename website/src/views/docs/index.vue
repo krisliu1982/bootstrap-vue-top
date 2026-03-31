@@ -286,7 +286,9 @@
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active">Flex 弹性布局</RouterLink>
+              <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active"
+                >Flex 弹性布局</RouterLink
+              >
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/float" class="docs-sidebar-link" exact-active-class="active"
@@ -299,7 +301,9 @@
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/link" class="docs-sidebar-link" exact-active-class="active">Link 链接</RouterLink>
+              <RouterLink to="/docs/utils/link" class="docs-sidebar-link" exact-active-class="active"
+                >Link 链接</RouterLink
+              >
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active"

@@ -14,8 +14,9 @@
       <a href="https://getbootstrap.com/docs/5.3/utilities/display/" target="_blank">Boostrap Display</a>
     </p>
     <p>
-      通过使用我们的响应式显示类来更改 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
-        target="_blank"><code>display</code> 属性</a> 的值。我们特意只支持 <code>display</code>
+      通过使用我们的响应式显示类来更改
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank"><code>display</code> 属性</a>
+      的值。我们特意只支持 <code>display</code>
       属性的所有可能值中的一个子集。您可以根据需要组合使用这些类以实现不同的效果。
     </p>
 
@@ -23,13 +24,15 @@
       表示法<a class="anchor-link" aria-label="Link to this section: 表示法" href="#display-notation"> </a>
     </h2>
     <p>
-      适用于所有 <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">断点</a>（从 <code>xs</code> 到
-      <code>xxl</code>）的显示类中没有断点缩写。这是因为这些类是从 <code>min-width: 0;</code> 开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。
+      适用于所有 <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">断点</a>（从
+      <code>xs</code> 到 <code>xxl</code>）的显示类中没有断点缩写。这是因为这些类是从
+      <code>min-width: 0;</code> 开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。
     </p>
     <p>因此，这些类的名称采用的格式为：</p>
     <ul class="docs-content-list">
       <li>对于 <code>xs</code>，使用 <code>.d-{value}</code> ；</li>
-      <li>对于 <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code>，使用
+      <li>
+        对于 <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code>，使用
         <code>.d-{breakpoint}-{value}</code> 。
       </li>
     </ul>
@@ -47,8 +50,11 @@
       <li><code>flex</code></li>
       <li><code>inline-flex</code></li>
     </ul>
-    <p>媒体查询会根据指定的断点（或更大尺寸）来调整屏幕宽度。例如，<code>.d-lg-none</code> 会在 <code>lg</code>、<code>xl</code> 和 <code>xxl</code> 屏幕上设置
-      <code>display: none;</code> 。
+    <p>
+      媒体查询会根据指定的断点（或更大尺寸）来调整屏幕宽度。例如，<code>.d-lg-none</code> 会在 <code>lg</code>、<code
+        >xl</code
+      >
+      和 <code>xxl</code> 屏幕上设置 <code>display: none;</code> 。
     </p>
 
     <h2 id="display-hide">
@@ -57,9 +63,15 @@
     <p>
       为了实现更快速且适用于移动设备的开发，应使用响应式显示类来根据设备情况显示和隐藏元素。避免创建完全不同的同一网站的不同版本，而是针对每个屏幕尺寸以响应式方式隐藏元素。
     </p>
-    <p>若要隐藏元素，只需使用 <code>.d-none</code> 类，或者使用 <code>.d-{sm,md,lg,xl,xxl}-none</code> 类中的任何一个来针对任何响应式屏幕变体进行设置即可。</p>
-    <p>若要仅在特定屏幕尺寸范围内显示某个元素，您可以将一个 <code>.d-*-none</code> 类与一个 <code>.d-*-*</code> 类组合使用，例如
-      <code>.d-none .d-md-block .d-xl-none</code> 将会使该元素在除中型和大型设备之外的所有屏幕尺寸上均不显示。</p>
+    <p>
+      若要隐藏元素，只需使用 <code>.d-none</code> 类，或者使用
+      <code>.d-{sm,md,lg,xl,xxl}-none</code> 类中的任何一个来针对任何响应式屏幕变体进行设置即可。
+    </p>
+    <p>
+      若要仅在特定屏幕尺寸范围内显示某个元素，您可以将一个 <code>.d-*-none</code> 类与一个
+      <code>.d-*-*</code> 类组合使用，例如
+      <code>.d-none .d-md-block .d-xl-none</code> 将会使该元素在除中型和大型设备之外的所有屏幕尺寸上均不显示。
+    </p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -132,7 +144,9 @@
     <h2 id="display-print">
       打印显示<a class="anchor-link" aria-label="Link to this section: 打印显示" href="#display-opacity"> </a>
     </h2>
-    <p>使用我们的打印显示实用类来更改元素的 <code>display</code> 值，以便在打印时生效。该功能还支持与我们的响应式 <code>.d-*</code> 实用类相同的 <code>display</code> 值。
+    <p>
+      使用我们的打印显示实用类来更改元素的 <code>display</code> 值，以便在打印时生效。该功能还支持与我们的响应式
+      <code>.d-*</code> 实用类相同的 <code>display</code> 值。
     </p>
     <ul class="docs-content-list">
       <li><code>.d-print-none</code></li>

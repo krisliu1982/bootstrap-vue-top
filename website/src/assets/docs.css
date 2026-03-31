@@ -55,6 +55,11 @@ ul.docs-content-list>li {
   margin-bottom: .5rem;
 }
 
+.docs-content-flex-util div:not(.vr) {
+  background-color: var(--bs-primary-bg-subtle);
+  border: 1px solid rgba(var(--bs-primary-rgb), .75);
+}
+
 .docs-toc {
   grid-area: toc;
   position: sticky;
