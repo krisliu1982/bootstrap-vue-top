@@ -2,19 +2,10 @@
   <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary border-bottom border-body">
     <div class="container-xxl">
       <a class="navbar-brand d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)" class="me-3" /><span
-          >BoostrapVue</span
-        ></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        v-collapse
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)"
+          class="me-3" /><span>BoostrapVue</span></a>
+      <button class="navbar-toggler" type="button" v-collapse data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,18 +17,18 @@
         </div>
         <div class="me-0 me-md-3 mb-3 mb-md-0">
           <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" id="font-size-s" value="s" v-model="size" />
-            <label class="btn btn-outline-secondary" for="font-size-s">小</label>
+            <input type="radio" class="btn-check" id="font-size-sm" value="sm" v-model="fontSize" />
+            <label class="btn btn-outline-secondary" for="font-size-sm">小</label>
 
-            <input type="radio" class="btn-check" id="font-size-m" value="m" v-model="size" />
-            <label class="btn btn-outline-secondary" for="font-size-m">中</label>
+            <input type="radio" class="btn-check" id="font-size-md" value="md" v-model="fontSize" />
+            <label class="btn btn-outline-secondary" for="font-size-md">中</label>
 
-            <input type="radio" class="btn-check" id="font-size-l" value="l" v-model="size" />
-            <label class="btn btn-outline-secondary" for="font-size-l">大</label>
+            <input type="radio" class="btn-check" id="font-size-lg" value="lg" v-model="fontSize" />
+            <label class="btn btn-outline-secondary" for="font-size-lg">大</label>
           </div>
         </div>
         <div>
-          <a href="#" class="link-body-emphasis" title="暗黑模式切换" @click.prevent="toggleTheme">
+          <a href="#" class="link-body-emphasis" title="主题切换" @click.prevent="handleThemeChange">
             <bi-sun v-if="theme === 'light'" />
             <bi-moon v-else />
           </a>
@@ -52,46 +43,66 @@
 <script setup>
 import { ref, watch } from 'vue';
 
-const size = ref('m');
+//字体大小修改
+function getFontSize() {
+  const storedFontSize =  localStorage.getItem('font-size');
+  if (storedFontSize === null) {
+    return 'md';
+  }
 
+  return storedFontSize;
+}
+const fontSize = ref(getFontSize());
 watch(
-  size,
+  fontSize,
   (newVal) => {
-    if (newVal === 's') {
+    if (newVal === 'sm') {
       document.documentElement.style.setProperty('font-size', '14px');
-    } else if (newVal === 'm') {
+    } else if (newVal === 'md') {
       document.documentElement.style.setProperty('font-size', '16px');
-    } else if (newVal === 'l') {
+    } else if (newVal === 'lg') {
       document.documentElement.style.setProperty('font-size', '18px');
     }
+
+    localStorage.setItem('font-size', newVal);
   },
   { immediate: true }
 );
 
-// 初始加载一个默认主题
-const link = document.createElement('link');
-link.id = 'prism-theme';
-link.rel = 'stylesheet';
-link.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
-document.head.appendChild(link);
+//主题修改
+const linkPrism = document.createElement('link');
+linkPrism.id = 'prism-theme';
+linkPrism.rel = 'stylesheet';
+document.head.appendChild(linkPrism);
+function getTheme() {
+  const storedTheme =  localStorage.getItem('theme');
+  if (storedTheme === null) {
+    return 'light';
+  }
 
-const theme = ref('light');
-function toggleTheme() {
+  return storedTheme;
+}
+const theme = ref(getTheme());
+watch(
+  theme,
+  (newVal) => {
+    if (newVal === 'light') {
+      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
+    } else if (newVal === 'dark') {
+      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css';
+    }
+
+    document.documentElement.setAttribute('data-bs-theme', newVal);
+    localStorage.setItem('theme', newVal);
+  },
+  { immediate: true }
+);
+
+function handleThemeChange() {
   if (theme.value === 'light') {
     theme.value = 'dark';
   } else if (theme.value === 'dark') {
     theme.value = 'light';
-  } else {
-    theme.value = 'light';
-  }
-
-  document.documentElement.setAttribute('data-bs-theme', theme.value);
-
-  const themeLink = document.getElementById('prism-theme');
-  if (theme.value === 'light') {
-    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
-  } else if (theme.value === 'dark') {
-    themeLink.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css';
   }
 }
 </script>

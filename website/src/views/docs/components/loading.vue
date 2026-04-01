@@ -14,7 +14,7 @@
       全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a>
     </h2>
     <p>
-      通过提供 <code>LoadingFullscreen</code> 对象<strong>（需单独引用）</strong>的
+      通过提供 <code>LoadingFullscreen</code> 对象的
       <code>getInstance</code> 方法获得单例。你可以通过 <code>show</code> 方法显示，<code>hide</code> 方法隐藏。
     </p>
     <p>全屏加载为单例模式内置计数器，不必担心同时多次异步请求调用 <code>show</code> 的副作用。</p>

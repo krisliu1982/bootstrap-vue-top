@@ -15,7 +15,7 @@
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#alerts-message-base"> </a>
     </h2>
     <p>
-      通过提供 <code>alertMessage</code> 方法<strong>（需单独引用）</strong>并且它接受一个
+      通过提供 <code>alertMessage</code> 方法并且它接受一个
       <code>Object</code> 作为其参数。 你可以通过 <code>message</code> 属性来设置消息内容。
     </p>
     <div class="docs-example">
