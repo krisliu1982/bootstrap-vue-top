@@ -73,50 +73,6 @@ $zindex-alert: 1085;
   text-decoration: none;
 }
 
-// 基于 bootstrap stack 自定义堆叠类
-.hstack-1 {
-  @extend .hstack;
-  margin: -0.125rem;
-}
-.hstack-1 > * {
-  margin: 0.125rem;
-}
-.hstack-2 {
-  @extend .hstack;
-  margin: -0.25rem;
-}
-.hstack-2 > * {
-  margin: 0.25rem;
-}
-.hstack-3 {
-  @extend .hstack;
-  margin: -0.5rem;
-}
-.hstack-3 > * {
-  margin: 0.5rem;
-}
-.vstack-1 {
-  @extend .vstack;
-  margin: -0.125rem;
-}
-.vstack-1 > * {
-  margin: 0.125rem;
-}
-.vstack-2 {
-  @extend .vstack;
-  margin: -0.25rem;
-}
-.vstack-2 > * {
-  margin: 0.25rem;
-}
-.vstack-3 {
-  @extend .vstack;
-  margin: -0.5rem;
-}
-.vstack-3 > * {
-  margin: 0.5rem;
-}
-
 .bi {
   width: 1em;
   height: 1em;

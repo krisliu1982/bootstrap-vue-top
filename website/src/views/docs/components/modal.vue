@@ -246,7 +246,7 @@
     <p>我们默认的无修饰类模态框即为“中等”尺寸的模态框。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="modalXlRef.toggle()">Extra large modal</button>
           <button type="button" class="btn btn-primary" @click="modalLgRef.toggle()">Large modal</button>
           <button type="button" class="btn btn-primary" @click="modalSmRef.toggle()">Small modal</button>
@@ -298,7 +298,7 @@
     </table>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="modalFullscreenRef.toggle()">Full screen</button>
           <button type="button" class="btn btn-primary" @click="modalFullscreenSmRef.toggle()">
             Full screen below sm
@@ -404,7 +404,8 @@ const modalFullscreenLgRef = ref(null);
 const modalFullscreenXlRef = ref(null);
 const modalFullscreenXxlRef = ref(null);
 
-const exampleCode = `<template>
+const exampleCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalExampleRef.toggle()">
       Launch demo modal
   </button>
@@ -419,7 +420,8 @@ import { ref } from 'vue'
 const modalExampleRef = ref(null);
 <\/script>`;
 
-const footerCode = `<template>
+const footerCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalFooterRef.toggle()">
       Launch demo modal
   </button>
@@ -439,7 +441,8 @@ import { ref } from 'vue'
 const modalFooterRef = ref(null);
 <\/script>`;
 
-const staticCode = `<template>
+const staticCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalStaticRef.toggle()">
       Launch static backdrop modal
   </button>
@@ -459,7 +462,8 @@ import { ref } from 'vue'
 const modalStaticRef = ref(null);
 <\/script>`;
 
-const scrollableCode = `<template>
+const scrollableCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalScrollableRef.toggle()">
       Launch demo modal
   </button>
@@ -475,7 +479,8 @@ import { ref } from 'vue'
 const modalScrollableRef = ref(null);
 <\/script>`;
 
-const centerCode = `<template>
+const centerCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalCenterRef.toggle()">
       Launch demo modal
   </button>
@@ -491,8 +496,9 @@ import { ref } from 'vue'
 const modalScrollableRef = ref(null);
 <\/script>`;
 
-const sizeCode = `<template>
-  <div class="hstack-3">
+const sizeCode = `
+<template>
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-primary" 
       @click="modalXlRef.toggle()">Extra large modal</button>
     <button type="button" class="btn btn-primary" 
@@ -513,8 +519,9 @@ const modalLgRef = ref(null);
 const modalSmRef = ref(null);
 <\/script>`;
 
-const fullscreenCode = `<template>
-  <div class="hstack-3 flex-wrap"> 
+const fullscreenCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap"> 
       <button type="button" class="btn btn-primary" 
         @click="modalFullscreenRef.toggle()">Full screen</button>
       <button type="button" class="btn btn-primary" 
@@ -554,7 +561,8 @@ const modalFullscreenXlRef = ref(null);
 const modalFullscreenXxlRef = ref(null);
 <\/script>  
 `;
-const eventCode = `<template>
+const eventCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="modalEventRef.toggle()">
       Launch demo modal
   </button>
@@ -585,7 +593,8 @@ function handleShown() {
 }
 <\/script>`;
 
-const css1Code = `--#{$prefix}modal-zindex: #{$zindex-modal};
+const css1Code = `
+--#{$prefix}modal-zindex: #{$zindex-modal};
 --#{$prefix}modal-width: #{$modal-md};
 --#{$prefix}modal-padding: #{$modal-inner-padding};
 --#{$prefix}modal-margin: #{$modal-dialog-margin};

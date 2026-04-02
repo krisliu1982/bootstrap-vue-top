@@ -77,12 +77,14 @@
 </template>
 
 <script setup>
-const figure1Code = `<figure class="figure">
+const figure1Code = `
+<figure class="figure">
   <img src="..." class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption">A caption for the above image.</figcaption>
 </figure>`;
 
-const figure2Code = `<figure class="figure">
+const figure2Code = `
+<figure class="figure">
   <img src="..." class="figure-img img-fluid rounded" alt="...">
   <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
 </figure>`;

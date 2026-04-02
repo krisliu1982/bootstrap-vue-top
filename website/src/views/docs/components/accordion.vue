@@ -89,7 +89,10 @@
     <h2 id="accordion-always">
       保持打开<a class="anchor-link" aria-label="Link to this section: 保持打开" href="#accordion-always"> </a>
     </h2>
-    <p>通过设置 <code>always</code> 以便在打开另一个项目时，手风琴项目保持打开状态。</p>
+    <p>
+      通过设置
+      <code>always</code> 以便在打开另一个项目时，手风琴项目保持打开状态。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-accordion always>
@@ -132,7 +135,8 @@
 </template>
 
 <script setup>
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bv-accordion :init-active-index="0">
     <bv-accordion-item header="Accordion Item #1">
         ...
@@ -146,7 +150,8 @@ const baseCode = `<template>
   </bv-accordion>
 </template>`;
 
-const flushCode = `<template>
+const flushCode = `
+<template>
   <bv-accordion accordion-class="accordion-flush">
     <bv-accordion-item header="Accordion Item #1">
         ...
@@ -160,7 +165,8 @@ const flushCode = `<template>
   </bv-accordion>
 </template>`;
 
-const alwaysCode = `<template>
+const alwaysCode = `
+<template>
     <bv-accordion always>
         <bv-accordion-item header="Accordion Item #1">
             ...
@@ -174,7 +180,8 @@ const alwaysCode = `<template>
     </bv-accordion>
 </template>`;
 
-const css1Code = `--#{$prefix}accordion-color: #{$accordion-color};
+const css1Code = `
+--#{$prefix}accordion-color: #{$accordion-color};
 --#{$prefix}accordion-bg: #{$accordion-bg};
 --#{$prefix}accordion-transition: #{$accordion-transition};
 --#{$prefix}accordion-border-color: #{$accordion-border-color};

@@ -152,7 +152,8 @@
 </template>
 
 <script setup>
-const exampleCode = `<nav aria-label="breadcrumb">
+const exampleCode = `
+<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Home</li>
   </ol>
@@ -173,34 +174,41 @@ const exampleCode = `<nav aria-label="breadcrumb">
   </ol>
 </nav>`;
 
-const dividerCode = `<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+const dividerCode = `
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>`;
 
-const divider1Code = `$breadcrumb-divider: quote(">");`;
+const divider1Code = `
+$breadcrumb-divider: quote(">");`;
 
-const divider2Code = `<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+const divider2Code = `
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>`;
 
-const divider3Code = `$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");`;
+const divider3Code = `
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");`;
 
-const divider4Code = `<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+const divider4Code = `
+<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>`;
 
-const divider5Code = `$breadcrumb-divider: none;`;
+const divider5Code = `
+$breadcrumb-divider: none;`;
 
-const css1Code = `--#{$prefix}breadcrumb-padding-x: #{$breadcrumb-padding-x};
+const css1Code = `
+--#{$prefix}breadcrumb-padding-x: #{$breadcrumb-padding-x};
 --#{$prefix}breadcrumb-padding-y: #{$breadcrumb-padding-y};
 --#{$prefix}breadcrumb-margin-bottom: #{$breadcrumb-margin-bottom};
 @include rfs($breadcrumb-font-size, --#{$prefix}breadcrumb-font-size);

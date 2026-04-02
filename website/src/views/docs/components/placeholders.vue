@@ -30,12 +30,14 @@
       示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#placeholders-example"> </a>
     </h2>
     <p>
-      使用 <code>.placeholder</code> 类和网格列类（例如 <code>.col-6</code>）创建占位符，以设置 <code>width</code>
+      使用 <code>.placeholder</code> 类和网格列类（例如 <code>.col-6</code>）创建占位符，以设置
+      <code>width</code>
       属性。它们可以替换元素内部的文本内容，或者作为修饰类添加到现有的组件中。
     </p>
     <p>
       我们通过 <code>::before</code> 为 <code>.btn</code> 元素应用了额外的样式，以确保其
-      <code>高度</code> 能得到正确设置。您可以根据需要将此模式扩展到其他情况，或者在元素内添加
+      <code>高度</code>
+      能得到正确设置。您可以根据需要将此模式扩展到其他情况，或者在元素内添加
       <code>&nbsp;</code> 来反映实际文本填充时的高度情况。
     </p>
     <div class="docs-example">
@@ -116,7 +118,8 @@
     </h2>
     <p>
       使用 <code>.placeholder-glow</code> 或
-      <code>.placeholder-wave</code> 来为占位符添加动画效果，以便更清晰地传达出内容正在“积极”加载的这种感觉。
+      <code>.placeholder-wave</code>
+      来为占位符添加动画效果，以便更清晰地传达出内容正在“积极”加载的这种感觉。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -134,17 +137,20 @@
 </template>
 
 <script setup>
-const exampleCode = `<p aria-hidden="true">
+const exampleCode = `
+<p aria-hidden="true">
   <span class="placeholder col-6"></span>
 </p>
 
 <a class="btn btn-primary disabled placeholder col-4" aria-disabled="true"></a>`;
 
-const widthCode = `<span class="placeholder col-6"></span>
+const widthCode = `
+<span class="placeholder col-6"></span>
 <span class="placeholder w-75"></span>
 <span class="placeholder" style="width: 25%;"></span>`;
 
-const colorCode = `<span class="placeholder col-12"></span>
+const colorCode = `
+<span class="placeholder col-12"></span>
 
 <span class="placeholder col-12 bg-primary"></span>
 <span class="placeholder col-12 bg-secondary"></span>
@@ -155,12 +161,14 @@ const colorCode = `<span class="placeholder col-12"></span>
 <span class="placeholder col-12 bg-light"></span>
 <span class="placeholder col-12 bg-dark"></span>`;
 
-const sizeCode = `<span class="placeholder col-12 placeholder-lg"></span>
+const sizeCode = `
+<span class="placeholder col-12 placeholder-lg"></span>
 <span class="placeholder col-12"></span>
 <span class="placeholder col-12 placeholder-sm"></span>
 <span class="placeholder col-12 placeholder-xs"></span>`;
 
-const animationCode = `<p class="placeholder-glow">
+const animationCode = `
+<p class="placeholder-glow">
   <span class="placeholder col-12"></span>
 </p>
 

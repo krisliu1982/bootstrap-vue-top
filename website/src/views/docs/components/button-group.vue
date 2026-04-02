@@ -297,7 +297,8 @@
 import { ref } from 'vue';
 const checkboxVal = ref([]);
 const radioVal = ref('btnradio1');
-const exampleCode = `<div class="btn-group" role="group" aria-label="Basic example">
+const exampleCode = `
+<div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-primary">Left</button>
   <button type="button" class="btn btn-primary">Middle</button>
   <button type="button" class="btn btn-primary">Right</button>
@@ -321,7 +322,8 @@ const exampleCode = `<div class="btn-group" role="group" aria-label="Basic examp
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>`;
 
-const checkCode = `<template>
+const checkCode = `
+<template>
     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
         <input type="checkbox" class="btn-check" id="btncheck1" value="btncheck1" v-model="checkboxVal">
         <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
@@ -352,7 +354,8 @@ const checkboxVal = ref([]);
 const radioVal = ref('btnradio1')
 <\/script>`;
 
-const toolbarCode = `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+const toolbarCode = `
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
     <button type="button" class="btn btn-primary">1</button>
     <button type="button" class="btn btn-primary">2</button>
@@ -397,7 +400,8 @@ const toolbarCode = `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar
   </div>
 </div>`;
 
-const sizeCode = `<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+const sizeCode = `
+<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
   <button type="button" class="btn btn-outline-primary">Left</button>
   <button type="button" class="btn btn-outline-primary">Middle</button>
   <button type="button" class="btn btn-outline-primary">Right</button>
@@ -415,7 +419,8 @@ const sizeCode = `<div class="btn-group btn-group-lg" role="group" aria-label="L
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>`;
 
-const nestingCode = `<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+const nestingCode = `
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-primary">1</button>
   <button type="button" class="btn btn-primary">2</button>
 
@@ -430,7 +435,8 @@ const nestingCode = `<div class="btn-group" role="group" aria-label="Button grou
   </div>
 </div>`;
 
-const verticalCode = `<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+const verticalCode = `
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
   <button type="button" class="btn btn-primary">Button</button>
   <button type="button" class="btn btn-primary">Button</button>
   <button type="button" class="btn btn-primary">Button</button>

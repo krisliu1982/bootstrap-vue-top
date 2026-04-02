@@ -21,7 +21,8 @@
   <div v-scrollspy data-bs-target="#docs-nav-treetable" class="docs-content">
     <h1>Tree table 树形表格结构</h1>
     <p class="fs-4 fw-light">
-      以表格样式, 展示层级结构信息，可展开或折叠，而构建 <code>bv-treetable</code> 树形表格组件。
+      以表格样式, 展示层级结构信息，可展开或折叠，而构建
+      <code>bv-treetable</code> 树形表格组件。
     </p>
 
     <h2 id="treetable-base">
@@ -29,7 +30,8 @@
     </h2>
     <p>
       设置 <code>data</code> 树形数据，<code>attr-key</code> 为节点数据唯一标识属性名，<code>attr-children</code>
-      为子树属性名。在列中可以通过模板自定义的显示内容，通过 <code>slotProps</code> 可以获得 item 和 index。
+      为子树属性名。在列中可以通过模板自定义的显示内容，通过
+      <code>slotProps</code> 可以获得 item 和 index。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -38,7 +40,7 @@
           <bv-treetable-col header="Address" field="address" />
           <bv-treetable-col header="Operation">
             <template #body="{ item }">
-              <div class="hstack-3">
+              <div class="hstack gap-3">
                 <button
                   type="button"
                   class="btn btn-link"
@@ -352,28 +354,49 @@ const treeData = {
   name: 'Root',
   address: 'Honghu City, Hubei Province, China',
   children: [
-    { code: '1002', name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
+    {
+      code: '1002',
+      name: 'Kris2',
+      address: 'Honghu City, Hubei Province, China'
+    },
     {
       code: '1004',
       name: 'kris4',
       address: 'Honghu City, Hubei Province, China',
       children: [
-        { code: '1005', name: 'Kris5', address: 'Honghu City, Hubei Province, China' },
-        { code: '1006', name: 'Kris6', address: 'Honghu City, Hubei Province, China' },
-        { code: '1007', name: 'Kris7', address: 'Honghu City, Hubei Province, China' }
+        {
+          code: '1005',
+          name: 'Kris5',
+          address: 'Honghu City, Hubei Province, China'
+        },
+        {
+          code: '1006',
+          name: 'Kris6',
+          address: 'Honghu City, Hubei Province, China'
+        },
+        {
+          code: '1007',
+          name: 'Kris7',
+          address: 'Honghu City, Hubei Province, China'
+        }
       ]
     },
-    { code: '1008', name: 'Kris8', address: 'Honghu City, Hubei Province, China' }
+    {
+      code: '1008',
+      name: 'Kris8',
+      address: 'Honghu City, Hubei Province, China'
+    }
   ]
 };
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bv-treetable :data="treeData" attr-key="code" attr-children="children">
     <bv-treetable-col header="Name" field="name" />
     <bv-treetable-col header="Address" field="address" />
     <bv-treetable-col header="Operation">
       <template #body="{ item }">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-link"
             @click="alertMessage({ type: 'success', message: item.code })">编辑</button>
           <button type="button" class="btn btn-link"
@@ -405,7 +428,8 @@ const treeData = {
 }
 <\/script>`;
 
-const variantsCode = `<template>
+const variantsCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     :tfoot-data="['-', 239]" 
@@ -421,7 +445,8 @@ const variantsCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const tfootCode = `<template>
+const tfootCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     :tfoot-data="['-', 239]" 
@@ -435,7 +460,8 @@ const tfootCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const dividersCode = `<template>
+const dividersCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     :tfoot-data="['-', 239]"
@@ -451,7 +477,8 @@ const dividersCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const stripedCode = `<template>
+const stripedCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-striped">
@@ -465,7 +492,8 @@ const stripedCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const stripedColsCode = `<template>
+const stripedColsCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-striped-columns">
@@ -478,7 +506,8 @@ const stripedColsCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const hoverCode = `<template>
+const hoverCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-hover">
@@ -491,7 +520,8 @@ const hoverCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const borderedCode = `<template>
+const borderedCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-bordered">
@@ -504,7 +534,8 @@ const borderedCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const borderedColorCode = `<template>
+const borderedColorCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-bordered border-primary">
@@ -518,7 +549,8 @@ const borderedColorCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const borderlessCode = `<template>
+const borderlessCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children" 
     table-class="table-borderless">
@@ -531,7 +563,8 @@ const borderlessCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const smCode = `<template>
+const smCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-sm">
@@ -545,7 +578,8 @@ const smCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const truncateCode = `<template>
+const truncateCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children">
     <bv-treetable-col header="Name" field="name" />
@@ -564,7 +598,8 @@ const truncateCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const xAutoCode = `<template>
+const xAutoCode = `
+<template>
   <div class="table-responsive">
     <bv-treetable 
       :data="treeData" attr-key="code" attr-children="children" 
@@ -579,7 +614,8 @@ const xAutoCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const verticalAlignCode = `<template>
+const verticalAlignCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children" 
     table-class="align-top">
@@ -592,7 +628,8 @@ const verticalAlignCode = `<template>
 const treeData = {...}
 <\/script>`;
 
-const captionCode = `<template>
+const captionCode = `
+<template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children" 
     caption="List of users" 

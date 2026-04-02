@@ -28,7 +28,8 @@
     </h2>
     <p>
       应用 <code>display</code> 工具来创建一个弹性盒容器，并将
-      <strong>直接子元素</strong> 转换为弹性项。弹性容器和弹性项还可以通过其他弹性属性进行进一步修改。
+      <strong>直接子元素</strong>
+      转换为弹性项。弹性容器和弹性项还可以通过其他弹性属性进行进一步修改。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -63,10 +64,12 @@
     </h2>
     <p>
       使用方向工具设置 flex 容器中 flex 元素的方向。在大多数情况下，您可以省略这里的水平类，因为浏览器默认值是
-      <code>row</code> 。然而，您可能会遇到需要明确设置此值的情况（例如响应式布局）。
+      <code>row</code>
+      。然而，您可能会遇到需要明确设置此值的情况（例如响应式布局）。
     </p>
     <p>
-      使用 <code>.flex-row</code> 可设置为水平方向（这是浏览器的默认设置），或者使用
+      使用
+      <code>.flex-row</code> 可设置为水平方向（这是浏览器的默认设置），或者使用
       <code>.flex-row-reverse</code> 从相反的一侧开始设置水平方向。
     </p>
     <div class="docs-example">
@@ -294,12 +297,12 @@
       对齐自我<a class="anchor-link" aria-label="Link to this section: 对齐自我" href="#flex-align-self"> </a>
     </h2>
     <p>
-      在 flexbox 元素上使用 <code>align-self</code> 元素可单独改变其在交叉轴（即起始的 y 轴，对于
+      在 flexbox 元素上使用
+      <code>align-self</code> 元素可单独改变其在交叉轴（即起始的 y 轴，对于
       <code>flex-direction： column</code> 来说则是 x 轴）上的对齐方式。您可以从与
-      <code>align-items</code> 相同的选项中进行选择：<code>start</code>、<code>end</code>、<code>center</code>、<code
-        >baseline</code
-      >
-      或 <code>stretch</code>（浏览器默认值）。
+      <code>align-items</code>
+      相同的选项中进行选择：<code>start</code>、<code>end</code>、<code>center</code>、<code>baseline</code> 或
+      <code>stretch</code>（浏览器默认值）。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -397,7 +400,9 @@
       增长与收缩<a class="anchor-link" aria-label="Link to this section: 增长与收缩" href="#flex-grow-shrink"> </a>
     </h2>
     <p>
-      使用 <code>.flex-grow-*</code> 元素来切换弹性项填充可用空间的能力。在下面的示例中，<code>.flex-grow-1</code>
+      使用
+      <code>.flex-grow-*</code>
+      元素来切换弹性项填充可用空间的能力。在下面的示例中，<code>.flex-grow-1</code>
       元素会充分利用其可利用的空间，同时为其余两个弹性项留出必要的空间。
     </p>
     <div class="docs-example">
@@ -411,8 +416,11 @@
       <code-highlight type="html" :code="growCode" label="html" />
     </div>
     <p>
-      使用 <code>.flex-shrink-*</code> 元素样式来控制弹性项在必要时的收缩能力。在下面的示例中，带有
-      <code>.flex-shrink-1</code> 样式的第二个弹性项被强制将其内容换行到新行，从而“收缩”以为带有
+      使用
+      <code>.flex-shrink-*</code>
+      元素样式来控制弹性项在必要时的收缩能力。在下面的示例中，带有
+      <code>.flex-shrink-1</code>
+      样式的第二个弹性项被强制将其内容换行到新行，从而“收缩”以为带有
       <code>.w-100</code> 样式的前一个弹性项腾出更多空间。
     </p>
     <div class="docs-example">
@@ -470,7 +478,8 @@
     </div>
     <p>
       通过结合使用 <code>align-items</code>、<code>flex-direction: column</code> 以及 <code>margin-top: auto</code> 或
-      <code>margin-bottom: auto</code> 这些属性，可以将一个弹性项目垂直移动到容器的顶部或底部。
+      <code>margin-bottom: auto</code>
+      这些属性，可以将一个弹性项目垂直移动到容器的顶部或底部。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -891,10 +900,13 @@
 </template>
 
 <script setup>
-const enable1Code = `<div class="d-flex p-2">I'm a flexbox container!</div>`;
-const enable2Code = `<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`;
+const enable1Code = `
+<div class="d-flex p-2">I'm a flexbox container!</div>`;
+const enable2Code = `
+<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`;
 
-const direction1Code = `<div class="d-flex flex-row mb-3">
+const direction1Code = `
+<div class="d-flex flex-row mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
@@ -905,7 +917,8 @@ const direction1Code = `<div class="d-flex flex-row mb-3">
   <div class="p-2">Flex item 3</div>
 </div>`;
 
-const direction2Code = `<div class="d-flex flex-column mb-3">
+const direction2Code = `
+<div class="d-flex flex-column mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
@@ -916,43 +929,50 @@ const direction2Code = `<div class="d-flex flex-column mb-3">
   <div class="p-2">Flex item 3</div>
 </div>`;
 
-const justifyCode = `<div class="d-flex justify-content-start">...</div>
+const justifyCode = `
+<div class="d-flex justify-content-start">...</div>
 <div class="d-flex justify-content-end">...</div>
 <div class="d-flex justify-content-center">...</div>
 <div class="d-flex justify-content-between">...</div>
 <div class="d-flex justify-content-around">...</div>
 <div class="d-flex justify-content-evenly">...</div>`;
 
-const alignCode = `<div class="d-flex align-items-start">...</div>
+const alignCode = `
+<div class="d-flex align-items-start">...</div>
 <div class="d-flex align-items-end">...</div>
 <div class="d-flex align-items-center">...</div>
 <div class="d-flex align-items-baseline">...</div>
 <div class="d-flex align-items-stretch">...</div>`;
 
-const alignSelfCode = `<div class="align-self-start">Aligned flex item</div>
+const alignSelfCode = `
+<div class="align-self-start">Aligned flex item</div>
 <div class="align-self-end">Aligned flex item</div>
 <div class="align-self-center">Aligned flex item</div>
 <div class="align-self-baseline">Aligned flex item</div>
 <div class="align-self-stretch">Aligned flex item</div>`;
 
-const fillCode = `<div class="d-flex">
+const fillCode = `
+<div class="d-flex">
   <div class="p-2 flex-fill">Flex item with a lot of content</div>
   <div class="p-2 flex-fill">Flex item</div>
   <div class="p-2 flex-fill">Flex item</div>
 </div>`;
 
-const growCode = `<div class="d-flex">
+const growCode = `
+<div class="d-flex">
   <div class="p-2 flex-grow-1">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Third flex item</div>
 </div>`;
 
-const shrinkCode = `<div class="d-flex">
+const shrinkCode = `
+<div class="d-flex">
   <div class="p-2 w-100">Flex item</div>
   <div class="p-2 flex-shrink-1">Flex item</div>
 </div>`;
 
-const auto1Code = `<div class="d-flex mb-3">
+const auto1Code = `
+<div class="d-flex mb-3">
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -970,7 +990,8 @@ const auto1Code = `<div class="d-flex mb-3">
   <div class="ms-auto p-2">Flex item</div>
 </div>`;
 
-const auto2Code = `<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+const auto2Code = `
+<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
   <div class="mb-auto p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -982,34 +1003,45 @@ const auto2Code = `<div class="d-flex align-items-start flex-column mb-3" style=
   <div class="mt-auto p-2">Flex item</div>
 </div>`;
 
-const wrap1Code = `<div class="d-flex flex-nowrap">
+const wrap1Code = `
+<div class="d-flex flex-nowrap">
   ...
 </div>`;
 
-const wrap2Code = `<div class="d-flex flex-wrap">
+const wrap2Code = `
+<div class="d-flex flex-wrap">
   ...
 </div>`;
 
-const wrap3Code = `<div class="d-flex flex-wrap-reverse">
+const wrap3Code = `
+<div class="d-flex flex-wrap-reverse">
   ...
 </div>`;
 
-const orderCode = `<div class="d-flex flex-nowrap">
+const orderCode = `
+<div class="d-flex flex-nowrap">
   <div class="order-3 p-2">First flex item</div>
   <div class="order-2 p-2">Second flex item</div>
   <div class="order-1 p-2">Third flex item</div>
 </div>`;
 
-const alignContent1Code = `<div class="d-flex align-content-start flex-wrap">
+const alignContent1Code = `
+<div class="d-flex align-content-start flex-wrap">
   ...
 </div>`;
-const alignContent2Code = `<div class="d-flex align-content-end flex-wrap">...</div>`;
-const alignContent3Code = `<div class="d-flex align-content-center flex-wrap">...</div>`;
-const alignContent4Code = `<div class="d-flex align-content-between flex-wrap">...</div>`;
-const alignContent5Code = `<div class="d-flex align-content-around flex-wrap">...</div>`;
-const alignContent6Code = `<div class="d-flex align-content-stretch flex-wrap">...</div>`;
+const alignContent2Code = `
+<div class="d-flex align-content-end flex-wrap">...</div>`;
+const alignContent3Code = `
+<div class="d-flex align-content-center flex-wrap">...</div>`;
+const alignContent4Code = `
+<div class="d-flex align-content-between flex-wrap">...</div>`;
+const alignContent5Code = `
+<div class="d-flex align-content-around flex-wrap">...</div>`;
+const alignContent6Code = `
+<div class="d-flex align-content-stretch flex-wrap">...</div>`;
 
-const example1Code = `<div class="d-flex">
+const example1Code = `
+<div class="d-flex">
   <div class="flex-shrink-0">
     <img src="..." alt="...">
   </div>
@@ -1018,7 +1050,8 @@ const example1Code = `<div class="d-flex">
   </div>
 </div>`;
 
-const example2Code = `<div class="d-flex align-items-center">
+const example2Code = `
+<div class="d-flex align-items-center">
   <div class="flex-shrink-0">
     <img src="..." alt="...">
   </div>

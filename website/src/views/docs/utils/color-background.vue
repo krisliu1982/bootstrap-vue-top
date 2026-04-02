@@ -20,10 +20,12 @@
     </h2>
     <p>
       文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a> 工具类和
+      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
+      工具类和
       <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass <code>color-contrast()</code> 函数，我们能够自动为特定的
-      <code>背景颜色</code> 确定一个对比度良好的 <code>颜色</code> 。
+      工具类的功能整合到了一个类中。通过使用我们的 Sass
+      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
+      <code>颜色</code> 。
     </p>
     <p class="text-bg-warning">
       <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
@@ -48,7 +50,8 @@
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
-      的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
+      的可见文本），或者通过其他方式予以说明，比如使用带有
+      <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
     <h2 id="color-background-component">
@@ -61,11 +64,12 @@
     </h2>
     <p>
       用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a> 组件中的使用方式：
+      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
+      组件中的使用方式：
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <span class="badge text-bg-primary">Primary</span>
           <span class="badge text-bg-info">Info</span>
         </div>
@@ -98,7 +102,8 @@
 </template>
 
 <script setup>
-const baseCode = `<div class="text-bg-primary p-3">Primary with contrasting color</div>
+const baseCode = `
+<div class="text-bg-primary p-3">Primary with contrasting color</div>
 <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
 <div class="text-bg-success p-3">Success with contrasting color</div>
 <div class="text-bg-danger p-3">Danger with contrasting color</div>
@@ -107,19 +112,25 @@ const baseCode = `<div class="text-bg-primary p-3">Primary with contrasting colo
 <div class="text-bg-light p-3">Light with contrasting color</div>
 <div class="text-bg-dark p-3">Dark with contrasting color</div>`;
 
-const component1Code = `<span class="badge text-bg-primary">Primary</span>
+const component1Code = `
+<span class="badge text-bg-primary">Primary</span>
 <span class="badge text-bg-info">Info</span>`;
 
-const component2Code = `<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+const component2Code = `
+<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">
+      Some quick example text ...
+    </p>
   </div>
 </div>
 <div class="card text-bg-info mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">
+      Some quick example text ...
+    </p>
   </div>
 </div>`;
 </script>

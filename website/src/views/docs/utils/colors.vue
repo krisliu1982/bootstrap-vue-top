@@ -21,7 +21,8 @@
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
-      的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
+      的可见文本），或者通过其他方式予以说明，比如使用带有
+      <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
     <h2 id="colors-base">
@@ -29,8 +30,8 @@
     </h2>
     <p>
       使用文本颜色工具对文本进行着色。如果您想对链接进行着色，可以使用
-      <a href="https://getbootstrap.com/docs/5.3/helpers/colored-links" target="_blank"><code>.link-*</code></a> 辅助类
-      ，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
+      <a href="https://getbootstrap.com/docs/5.3/helpers/colored-links" target="_blank"><code>.link-*</code></a>
+      辅助类 ，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
     </p>
     <p class="text-bg-info">
       像 <code>.text-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass
@@ -70,7 +71,10 @@
     <h2 id="colors-opacity">
       透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#colors-opacity"> </a>
     </h2>
-    <p>若要更改该不透明度，请通过自定义样式或内联样式来覆盖 <code>--bs-text-opacity</code> 属性。</p>
+    <p>
+      若要更改该不透明度，请通过自定义样式或内联样式来覆盖
+      <code>--bs-text-opacity</code> 属性。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="text-primary">This is default primary text</div>
@@ -78,7 +82,10 @@
       </div>
       <code-highlight type="html" :code="opacity1Code" label="html" />
     </div>
-    <p>或者，您可以从以下任何一个 <code>.text-opacity</code> 相关的工具中进行选择：</p>
+    <p>
+      或者，您可以从以下任何一个
+      <code>.text-opacity</code> 相关的工具中进行选择：
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="text-primary">This is default primary text</div>
@@ -100,7 +107,8 @@
 </template>
 
 <script setup>
-const baseCode = `<p class="text-primary">.text-primary</p>
+const baseCode = `
+<p class="text-primary">.text-primary</p>
 <p class="text-primary-emphasis">.text-primary-emphasis</p>
 <p class="text-secondary">.text-secondary</p>
 <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
@@ -125,10 +133,14 @@ const baseCode = `<p class="text-primary">.text-primary</p>
 <p class="text-black bg-white">.text-black</p>
 <p class="text-white bg-dark">.text-white</p>`;
 
-const opacity1Code = `<div class="text-primary">This is default primary text</div>
-<div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>`;
+const opacity1Code = `
+<div class="text-primary">This is default primary text</div>
+<div class="text-primary" style="--bs-text-opacity: .5;">
+  This is 50% opacity primary text
+</div>`;
 
-const opacity2Code = `<div class="text-primary">This is default primary text</div>
+const opacity2Code = `
+<div class="text-primary">This is default primary text</div>
 <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
 <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
 <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>`;

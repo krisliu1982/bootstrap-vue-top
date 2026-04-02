@@ -168,7 +168,8 @@ function handleImageManyPreview(index) {
   imagePreview(imges, index);
 }
 
-const fileCode = `<template>
+const fileCode = `
+<template>
     <BvFileUploader 
     :file-list="fileList" 
     multiple
@@ -206,7 +207,8 @@ function handleFileRemove(index) {
 }
 <\/script>`;
 
-const imageOneCode = `<template>
+const imageOneCode = `
+<template>
     <BvImageOneUploader 
     width="160px" 
     height="160px" 
@@ -245,7 +247,8 @@ function handleImageOnePreview() {
 }
 <\/script>`;
 
-const imageManyCode = `<template>
+const imageManyCode = `
+<template>
     <BvImageManyUploader 
     width="160px" 
     height="160px" 

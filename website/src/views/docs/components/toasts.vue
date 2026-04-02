@@ -20,15 +20,15 @@
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#toasts-base"> </a>
     </h2>
     <p>
-      通过提供 <code>toast</code> 方法并且它接受一个 <code>Object</code> 作为其参数。
-      在最简单的情况下，你可以通过设置 <code>title</code> 和 <code>message</code> 属性来设置通知的标题和HTML正文。
+      通过提供 <code>toast</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 在最简单的情况下，你可以通过设置
+      <code>title</code> 和 <code>message</code> 属性来设置通知的标题和HTML正文。
       默认情况下，通知在5000毫秒后自动关闭，但你可以通过设置 <code>duration</code> 属性来自定义通知的展示时间。
       如果你将它设置为 <code>0</code>，那么通知将不会自动关闭。 需要注意的是 <code>duration</code> 接收一个
       <code>Number</code>，单位为毫秒。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="handleClick1">Closes automatically</button>
           <button type="button" class="btn btn-primary" @click="handleClick2">Won't close automatically</button>
         </div>
@@ -40,12 +40,12 @@
       类型调整<a class="anchor-link" aria-label="Link to this section: 类型调整" href="#toasts-type"> </a>
     </h2>
     <p>
-      我们提供了四种不同类型: <code>success | danger | warning | info</code>。可以设置
-      <code>type</code> 字段来修改，默认 <code>info</code>。
+      我们提供了四种不同类型:
+      <code>success | danger | warning | info</code>。可以设置 <code>type</code> 字段来修改，默认 <code>info</code>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-success" @click="handleClickSuccess">Success</button>
           <button type="button" class="btn btn-danger" @click="handleClickDanger">Danger</button>
           <button type="button" class="btn btn-warning" @click="handleClickWarning">Warning</button>
@@ -64,7 +64,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleClickTopRight">TopRight</button>
           <button type="button" class="btn btn-primary" @click="handleClickTopLeft">TopLeft</button>
           <button type="button" class="btn btn-primary" @click="handleClickTopCenter">TopCenter</button>
@@ -105,7 +105,10 @@
 import { toast } from 'bootstrap-vue-ui';
 
 function handleClick1() {
-  toast({ title: 'Closes automatically', message: 'Hello, world! This is a toast message.' });
+  toast({
+    title: 'Closes automatically',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClick2() {
@@ -117,39 +120,75 @@ function handleClick2() {
 }
 
 function handleClickSuccess() {
-  toast({ type: 'success', title: 'success', message: 'Hello, world! This is a toast message.' });
+  toast({
+    type: 'success',
+    title: 'success',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickDanger() {
-  toast({ type: 'danger', title: 'danger', message: 'Hello, world! This is a toast message.' });
+  toast({
+    type: 'danger',
+    title: 'danger',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickWarning() {
-  toast({ type: 'warning', title: 'warning', message: 'Hello, world! This is a toast message.' });
+  toast({
+    type: 'warning',
+    title: 'warning',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickInfo() {
-  toast({ type: 'info', title: 'info', message: 'Hello, world! This is a toast message.' });
+  toast({
+    type: 'info',
+    title: 'info',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickTopRight() {
-  toast({ position: 'top-right', title: 'top-right', message: 'Hello, world! This is a toast message.' });
+  toast({
+    position: 'top-right',
+    title: 'top-right',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickTopLeft() {
-  toast({ position: 'top-left', title: 'top-right', message: 'Hello, world! This is a toast message.' });
+  toast({
+    position: 'top-left',
+    title: 'top-right',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickTopCenter() {
-  toast({ position: 'top-center', title: 'top-center', message: 'Hello, world! This is a toast message.' });
+  toast({
+    position: 'top-center',
+    title: 'top-center',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickBottomRight() {
-  toast({ position: 'bottom-right', title: 'bottom-right', message: 'Hello, world! This is a toast message.' });
+  toast({
+    position: 'bottom-right',
+    title: 'bottom-right',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickBottomLeft() {
-  toast({ position: 'bottom-left', title: 'bottom-left', message: 'Hello, world! This is a toast message.' });
+  toast({
+    position: 'bottom-left',
+    title: 'bottom-left',
+    message: 'Hello, world! This is a toast message.'
+  });
 }
 
 function handleClickHtml() {
@@ -159,8 +198,9 @@ function handleClickHtml() {
                 <p class="text-bg-danger p-2 fs-5">Hello, world! This is a toast message.</p>`
   });
 }
-const baseCode = `<template>
-  <div class="hstack-3">
+const baseCode = `
+<template>
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-primary" 
       @click="handleClick1">Closes automatically</button>
     <button type="button" class="btn btn-primary" 
@@ -187,8 +227,9 @@ function handleClick2() {
 }
 <\/script>`;
 
-const typeCode = `<template>
-  <div class="hstack-3">
+const typeCode = `
+<template>
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-success" 
       @click="handleClickSuccess">Success</button>
     <button type="button" class="btn btn-danger" 
@@ -232,8 +273,9 @@ function handleClickInfo() {
 }
 <\/script>`;
 
-const positionCode = `<template>
-  <div class="hstack-3 flex-wrap">
+const positionCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
       @click="handleClickTopRight">TopRight</button>
     <button type="button" class="btn btn-primary" 
@@ -284,7 +326,8 @@ function handleClickBottomLeft() {
 }
 <\/script>`;
 
-const contentCode = `<template>
+const contentCode = `
+<template>
   <button type="button" class="btn btn-primary" 
     @click="handleClickHtml">Html content</button>
 </template>
@@ -301,7 +344,8 @@ function handleClickHtml() {
 }
 <\/script>`;
 
-const css1Code = `--#{$prefix}toast-zindex: #{$zindex-toast};
+const css1Code = `
+--#{$prefix}toast-zindex: #{$zindex-toast};
 --#{$prefix}toast-padding-x: #{$toast-padding-x};
 --#{$prefix}toast-padding-y: #{$toast-padding-y};
 --#{$prefix}toast-spacing: #{$toast-spacing};

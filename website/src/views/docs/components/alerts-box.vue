@@ -13,12 +13,12 @@
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#alerts-box-base"> </a>
     </h2>
     <p>
-      通过提供 <code>alertBox</code> 方法并且它接受一个 <code>Object</code> 作为其参数。
-      你可以通过 <code>message</code> 属性来设置警示内容。
+      通过提供 <code>alertBox</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 你可以通过
+      <code>message</code> 属性来设置警示内容。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="handleClick">Alert Box</button>
         </div>
       </div>
@@ -34,7 +34,8 @@ function handleClick() {
   alertBox({ message: 'This is a alert-box message.' });
 }
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <button type="button" class="btn btn-primary" 
     @click="handleClick">Alert Box</button>
 </template>

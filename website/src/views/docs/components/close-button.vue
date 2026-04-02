@@ -58,11 +58,14 @@
 </template>
 
 <script setup>
-const exampleCode = `<button type="button" class="btn-close" aria-label="Close"></button>`;
+const exampleCode = `
+<button type="button" class="btn-close" aria-label="Close"></button>`;
 
-const disabledCode = `<button type="button" class="btn-close" disabled aria-label="Close"></button>`;
+const disabledCode = `
+<button type="button" class="btn-close" disabled aria-label="Close"></button>`;
 
-const css1Code = `--#{$prefix}btn-close-color: #{$btn-close-color};
+const css1Code = `
+--#{$prefix}btn-close-color: #{$btn-close-color};
 --#{$prefix}btn-close-bg: #{ escape-svg($btn-close-bg) };
 --#{$prefix}btn-close-opacity: #{$btn-close-opacity};
 --#{$prefix}btn-close-hover-opacity: #{$btn-close-hover-opacity};

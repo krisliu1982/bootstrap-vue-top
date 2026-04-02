@@ -918,7 +918,8 @@
 </template>
 
 <script setup>
-const exampleCode = `<div class="card" style="width: 18rem;">
+const exampleCode = `
+<div class="card" style="width: 18rem;">
   <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -927,13 +928,15 @@ const exampleCode = `<div class="card" style="width: 18rem;">
   </div>
 </div>`;
 
-const type1Code = `<div class="card">
+const type1Code = `
+<div class="card">
   <div class="card-body">
     This is some text within a card body.
   </div>
 </div>`;
 
-const type2Code = `<div class="card" style="width: 18rem;">
+const type2Code = `
+<div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
@@ -943,14 +946,16 @@ const type2Code = `<div class="card" style="width: 18rem;">
   </div>
 </div>`;
 
-const type3Code = `<div class="card" style="width: 18rem;">
+const type3Code = `
+<div class="card" style="width: 18rem;">
   <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
   </div>
 </div>`;
 
-const type40Code = `<div class="card" style="width: 18rem;">
+const type40Code = `
+<div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
@@ -958,7 +963,8 @@ const type40Code = `<div class="card" style="width: 18rem;">
   </ul>
 </div>`;
 
-const type41Code = `<div class="card" style="width: 18rem;">
+const type41Code = `
+<div class="card" style="width: 18rem;">
   <div class="card-header">
     Featured
   </div>
@@ -969,7 +975,8 @@ const type41Code = `<div class="card" style="width: 18rem;">
   </ul>
 </div>`;
 
-const type42Code = `<div class="card" style="width: 18rem;">
+const type42Code = `
+<div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
@@ -980,7 +987,8 @@ const type42Code = `<div class="card" style="width: 18rem;">
   </div>
 </div>`;
 
-const type5Code = `<div class="card" style="width: 18rem;">
+const type5Code = `
+<div class="card" style="width: 18rem;">
   <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -997,7 +1005,8 @@ const type5Code = `<div class="card" style="width: 18rem;">
   </div>
 </div>`;
 
-const type60Code = `<div class="card">
+const type60Code = `
+<div class="card">
   <div class="card-header">
     Featured
   </div>
@@ -1008,7 +1017,8 @@ const type60Code = `<div class="card">
   </div>
 </div>`;
 
-const type61Code = `<div class="card">
+const type61Code = `
+<div class="card">
   <h5 class="card-header">Featured</h5>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -1017,7 +1027,8 @@ const type61Code = `<div class="card">
   </div>
 </div>`;
 
-const type62Code = `<div class="card">
+const type62Code = `
+<div class="card">
   <div class="card-header">
     Quote
   </div>
@@ -1033,7 +1044,8 @@ const type62Code = `<div class="card">
   </div>
 </div>`;
 
-const type63Code = `<div class="card text-center">
+const type63Code = `
+<div class="card text-center">
   <div class="card-header">
     Featured
   </div>
@@ -1047,7 +1059,8 @@ const type63Code = `<div class="card text-center">
   </div>
 </div>`;
 
-const sizingCode = `<div class="row">
+const sizingCode = `
+<div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
       <div class="card-body">
@@ -1096,7 +1109,8 @@ const sizingCode = `<div class="row">
   </div>
 </div>`;
 
-const alignCode = `<div class="card mb-3" style="width: 18rem;">
+const alignCode = `
+<div class="card mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -1120,7 +1134,8 @@ const alignCode = `<div class="card mb-3" style="width: 18rem;">
   </div>
 </div>`;
 
-const navCode = `<div class="card text-center">
+const navCode = `
+<div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
@@ -1164,7 +1179,8 @@ const navCode = `<div class="card text-center">
   </div>
 </div>`;
 
-const imageCode = `<div class="card mb-3">
+const imageCode = `
+<div class="card mb-3">
   <img src="https://picsum.photos/1000/400?random=1" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -1192,7 +1208,8 @@ const imageCode = `<div class="card mb-3">
   </div>
 </div>`;
 
-const horizontalCode = `  <div class="row g-0">
+const horizontalCode = `
+  <div class="row g-0">
     <div class="col-md-4">
       <img src="https://picsum.photos/200" class="img-fluid rounded-start" alt="...">
     </div>
@@ -1206,7 +1223,8 @@ const horizontalCode = `  <div class="row g-0">
   </div>
 </div>`;
 
-const bgCode = `<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+const bgCode = `
+<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">
     <h5 class="card-title">Primary card title</h5>
@@ -1263,7 +1281,8 @@ const bgCode = `<div class="card text-bg-primary mb-3" style="max-width: 18rem;"
   </div>
 </div>`;
 
-const borderCode = `<div class="card border-primary mb-3" style="max-width: 18rem;">
+const borderCode = `
+<div class="card border-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body text-primary">
     <h5 class="card-title">Primary card title</h5>
@@ -1320,7 +1339,8 @@ const borderCode = `<div class="card border-primary mb-3" style="max-width: 18re
   </div>
 </div>`;
 
-const mixinCode = `<div class="card border-success mb-3" style="max-width: 18rem;">
+const mixinCode = `
+<div class="card border-success mb-3" style="max-width: 18rem;">
   <div class="card-header bg-transparent border-success">Header</div>
   <div class="card-body text-success">
     <h5 class="card-title">Success card title</h5>
@@ -1329,7 +1349,8 @@ const mixinCode = `<div class="card border-success mb-3" style="max-width: 18rem
   <div class="card-footer bg-transparent border-success">Footer</div>
 </div>`;
 
-const layout1Code = `<div class="card-group">
+const layout1Code = `
+<div class="card-group">
   <div class="card">
     <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
     <div class="card-body">
@@ -1356,7 +1377,8 @@ const layout1Code = `<div class="card-group">
   </div>
 </div>`;
 
-const layout2Code = `<div class="card-group">
+const layout2Code = `
+<div class="card-group">
   <div class="card">
     <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
     <div class="card-body">
@@ -1389,7 +1411,8 @@ const layout2Code = `<div class="card-group">
   </div>
 </div>`;
 
-const layout3Code = `<div class="row row-cols-1 row-cols-md-2 g-4">
+const layout3Code = `
+<div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
       <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
@@ -1428,7 +1451,8 @@ const layout3Code = `<div class="row row-cols-1 row-cols-md-2 g-4">
   </div>
 </div>`;
 
-const layout4Code = `<div class="row row-cols-1 row-cols-md-3 g-4">
+const layout4Code = `
+<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
@@ -1467,7 +1491,8 @@ const layout4Code = `<div class="row row-cols-1 row-cols-md-3 g-4">
   </div>
 </div>`;
 
-const css1Code = `--#{$prefix}card-spacer-y: #{$card-spacer-y};
+const css1Code = `
+--#{$prefix}card-spacer-y: #{$card-spacer-y};
 --#{$prefix}card-spacer-x: #{$card-spacer-x};
 --#{$prefix}card-title-spacer-y: #{$card-title-spacer-y};
 --#{$prefix}card-title-color: #{$card-title-color};

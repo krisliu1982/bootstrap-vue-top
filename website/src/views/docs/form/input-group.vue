@@ -442,7 +442,8 @@
 </template>
 
 <script setup>
-const baseCode = `<div class="input-group mb-3">
+const baseCode = `
+<div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 </div>
@@ -478,18 +479,21 @@ const baseCode = `<div class="input-group mb-3">
   <textarea class="form-control" aria-label="With textarea"></textarea>
 </div>`;
 
-const wrappingCode = `<div class="input-group flex-nowrap">
+const wrappingCode = `
+<div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
 </div>`;
 
-const radiusCode = `<div class="input-group">
+const radiusCode = `
+<div class="input-group">
   <span class="input-group-text" id="visible-addon">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="visible-addon">
   <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
 </div>`;
 
-const sizingCode = `<div class="input-group input-group-sm mb-3">
+const sizingCode = `
+<div class="input-group input-group-sm mb-3">
   <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 </div>
@@ -504,7 +508,8 @@ const sizingCode = `<div class="input-group input-group-sm mb-3">
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
 </div>`;
 
-const checkboxCode = `<div class="input-group mb-3">
+const checkboxCode = `
+<div class="input-group mb-3">
   <div class="input-group-text">
     <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
   </div>
@@ -518,13 +523,15 @@ const checkboxCode = `<div class="input-group mb-3">
   <input type="text" class="form-control" aria-label="Text input with radio button">
 </div>`;
 
-const inputsCode = `<div class="input-group">
+const inputsCode = `
+<div class="input-group">
   <span class="input-group-text">First and last name</span>
   <input type="text" aria-label="First name" class="form-control">
   <input type="text" aria-label="Last name" class="form-control">
 </div>`;
 
-const addonsCode = `<div class="input-group mb-3">
+const addonsCode = `
+<div class="input-group mb-3">
   <span class="input-group-text">$</span>
   <span class="input-group-text">0.00</span>
   <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
@@ -536,7 +543,8 @@ const addonsCode = `<div class="input-group mb-3">
   <span class="input-group-text">0.00</span>
 </div>`;
 
-const buttonAddonsCode = `<div class="input-group mb-3">
+const buttonAddonsCode = `
+<div class="input-group mb-3">
   <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
   <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
 </div>
@@ -558,7 +566,8 @@ const buttonAddonsCode = `<div class="input-group mb-3">
   <button class="btn btn-outline-secondary" type="button">Button</button>
 </div>`;
 
-const dropdownCode = `<div class="input-group mb-3">
+const dropdownCode = `
+<div class="input-group mb-3">
   <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -602,7 +611,8 @@ const dropdownCode = `<div class="input-group mb-3">
   </ul>
 </div>`;
 
-const segmentedCode = `<div class="input-group mb-3">
+const segmentedCode = `
+<div class="input-group mb-3">
   <button type="button" class="btn btn-outline-secondary">Action</button>
   <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" v-dropdown aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>

@@ -22,7 +22,7 @@
     <p>使用边框工具来添加或移除元素的边框。您可以选择全部边框，也可以逐个选择边框。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <span class="border"></span>
           <span class="border-top"></span>
           <span class="border-end"></span>
@@ -35,7 +35,7 @@
     <p>或者移除边框：</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <span class="border border-0"></span>
           <span class="border border-top-0"></span>
           <span class="border border-end-0"></span>
@@ -57,7 +57,7 @@
     <p>使用基于我们主题颜色所构建的工具来更改边框颜色。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <span class="border border-primary"></span>
           <span class="border border-primary-subtle"></span>
           <span class="border border-secondary"></span>
@@ -105,7 +105,10 @@
     <h2 id="borders-opacity">
       透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#borders-opacity"> </a>
     </h2>
-    <p>若要更改该不透明度，请通过自定义样式或内联样式来覆盖 <code>--bs-border-opacity</code> 属性。</p>
+    <p>
+      若要更改该不透明度，请通过自定义样式或内联样式来覆盖
+      <code>--bs-border-opacity</code> 属性。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="border border-success p-2 mb-2">This is default success border</div>
@@ -113,7 +116,10 @@
       </div>
       <code-highlight type="html" :code="opacity1Code" label="html" />
     </div>
-    <p>或者，您可以从以下任何一个 <code>.border-opacity</code> 相关的工具中进行选择：</p>
+    <p>
+      或者，您可以从以下任何一个
+      <code>.border-opacity</code> 相关的工具中进行选择：
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="border border-success p-2 mb-2">This is default success border</div>
@@ -130,7 +136,7 @@
     </h2>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <span class="border border-1"></span>
           <span class="border border-2"></span>
           <span class="border border-3"></span>
@@ -147,7 +153,7 @@
     <p>为元素添加样式类，以便轻松地使其边角呈圆弧状。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <svg
             aria-label="Example rounded image: 75x75"
             class="docs-placeholder-img rounded"
@@ -223,7 +229,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <svg
             aria-label="Example non-rounded image: 75x75"
             class="docs-placeholder-img rounded-0"
@@ -334,7 +340,7 @@
     </div>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap docs-border-utils">
+        <div class="hstack gap-3 flex-wrap docs-border-utils">
           <svg
             aria-label="Example small rounded image: 75x75"
             class="docs-placeholder-img rounded-bottom-1"
@@ -408,19 +414,22 @@
 </template>
 
 <script setup>
-const base1Code = `<span class="border"></span>
+const base1Code = `
+<span class="border"></span>
 <span class="border-top"></span>
 <span class="border-end"></span>
 <span class="border-bottom"></span>
 <span class="border-start"></span>`;
 
-const base2Code = `<span class="border border-0"></span>
+const base2Code = `
+<span class="border border-0"></span>
 <span class="border border-top-0"></span>
 <span class="border border-end-0"></span>
 <span class="border border-bottom-0"></span>
 <span class="border border-start-0"></span>`;
 
-const color1Code = `<span class="border border-primary"></span>
+const color1Code = `
+<span class="border border-primary"></span>
 <span class="border border-primary-subtle"></span>
 <span class="border border-secondary"></span>
 <span class="border border-secondary-subtle"></span>
@@ -439,9 +448,12 @@ const color1Code = `<span class="border border-primary"></span>
 <span class="border border-black"></span>
 <span class="border border-white"></span>`;
 
-const color2Code = `<div class="mb-4">
+const color2Code = `
+<div class="mb-4">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input type="email" 
+    class="form-control border-success" 
+    id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
 
 <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
@@ -452,28 +464,43 @@ const color2Code = `<div class="mb-4">
   Changing border color and width
 </div>`;
 
-const opacity1Code = `<div class="border border-success p-2 mb-2">This is default success border</div>
-<div class="border border-success p-2" style="--bs-border-opacity: .5;">This is 50% opacity success border</div>`;
+const opacity1Code = `
+<div class="border border-success p-2 mb-2">This is default success border</div>
+<div class="border border-success p-2" style="--bs-border-opacity: .5;">
+  This is 50% opacity success border
+</div>`;
 
-const opacity2Code = `<div class="border border-success p-2 mb-2">This is default success border</div>
-<div class="border border-success p-2 mb-2 border-opacity-75">This is 75% opacity success border</div>
-<div class="border border-success p-2 mb-2 border-opacity-50">This is 50% opacity success border</div>
-<div class="border border-success p-2 mb-2 border-opacity-25">This is 25% opacity success border</div>
-<div class="border border-success p-2 border-opacity-10">This is 10% opacity success border</div>`;
+const opacity2Code = `
+<div class="border border-success p-2 mb-2">This is default success border</div>
+<div class="border border-success p-2 mb-2 border-opacity-75">
+  This is 75% opacity success border
+</div>
+<div class="border border-success p-2 mb-2 border-opacity-50">
+  This is 50% opacity success border
+</div>
+<div class="border border-success p-2 mb-2 border-opacity-25">
+  This is 25% opacity success border
+</div>
+<div class="border border-success p-2 border-opacity-10">
+  This is 10% opacity success border
+</div>`;
 
-const widthCode = `<span class="border border-1"></span>
+const widthCode = `
+<span class="border border-1"></span>
 <span class="border border-2"></span>
 <span class="border border-3"></span>
 <span class="border border-4"></span>
 <span class="border border-5"></span>`;
 
-const radius1Code = `<img src="..." class="rounded" alt="...">
+const radius1Code = `
+<img src="..." class="rounded" alt="...">
 <img src="..." class="rounded-top" alt="...">
 <img src="..." class="rounded-end" alt="...">
 <img src="..." class="rounded-bottom" alt="...">
 <img src="..." class="rounded-start" alt="...">`;
 
-const radius2Code = `<img src="..." class="rounded-0" alt="...">
+const radius2Code = `
+<img src="..." class="rounded-0" alt="...">
 <img src="..." class="rounded-1" alt="...">
 <img src="..." class="rounded-2" alt="...">
 <img src="..." class="rounded-3" alt="...">
@@ -482,7 +509,8 @@ const radius2Code = `<img src="..." class="rounded-0" alt="...">
 <img src="..." class="rounded-circle" alt="...">
 <img src="..." class="rounded-pill" alt="...">`;
 
-const radius3Code = `<img src="..." class="rounded-bottom-1" alt="...">
+const radius3Code = `
+<img src="..." class="rounded-bottom-1" alt="...">
 <img src="..." class="rounded-start-2" alt="...">
 <img src="..." class="rounded-end-circle" alt="...">
 <img src="..." class="rounded-start-pill" alt="...">

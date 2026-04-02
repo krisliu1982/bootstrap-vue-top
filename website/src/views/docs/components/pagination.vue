@@ -75,7 +75,10 @@
     <h2 id="pagination-alignment">
       横向对齐<a class="anchor-link" aria-label="Link to this section: 横向对齐" href="#pagination-alignment"> </a>
     </h2>
-    <p>可以通过 <code>position</code> 改变横向对齐方向，<code>center</code> 为居中，<code>end</code> 为居右。</p>
+    <p>
+      可以通过 <code>position</code> 改变横向对齐方向，<code>center</code> 为居中，<code>end</code>
+      为居右。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-pagination
@@ -102,7 +105,10 @@
     <h2 id="pagination-size">
       调整大小<a class="anchor-link" aria-label="Link to this section: 调整大小" href="#pagination-size"> </a>
     </h2>
-    <p>可以通过 <code>size</code> 改变大小，<code>lg</code> 为大尺寸，<code>sm</code> 为小尺寸。</p>
+    <p>
+      可以通过 <code>size</code> 改变大小，<code>lg</code> 为大尺寸，<code>sm</code>
+      为小尺寸。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-pagination
@@ -246,7 +252,8 @@ const ptotal = ref(200); //总记录数
 const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bv-pagination mode="base" 
   :total="ptotal" 
   :current-page="pcurrent" :page-size="psize"
@@ -261,7 +268,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const fullCode = `<template>
+const fullCode = `
+<template>
   <bv-pagination mode="full" 
   :total="ptotal" 
   :current-page="pcurrent" :page-size="psize"
@@ -278,7 +286,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const simpleCode = `<template>
+const simpleCode = `
+<template>
   <bv-pagination mode="simple" 
   :total="ptotal" 
   :current-page="pcurrent" :page-size="psize"
@@ -294,7 +303,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const alignmentCode = `<template>
+const alignmentCode = `
+<template>
   <bv-pagination mode="base" 
   position="center"
   :total="ptotal" 
@@ -318,7 +328,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const sizeCode = `<template>
+const sizeCode = `
+<template>
   <bv-pagination mode="base" 
   size="lg"
   :total="ptotal" 
@@ -342,7 +353,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const countCode = `<template>
+const countCode = `
+<template>
   <bv-pagination mode="base" 
   :pager-count="11"
   size="sm"
@@ -359,7 +371,8 @@ const pcurrent = ref(1); //当前页
 const psize = ref(10); //每页记录数
 <\/script>`;
 
-const css1Code = `--#{$prefix}pagination-padding-x: #{$pagination-padding-x};
+const css1Code = `
+--#{$prefix}pagination-padding-x: #{$pagination-padding-x};
 --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
 @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
 --#{$prefix}pagination-color: #{$pagination-color};

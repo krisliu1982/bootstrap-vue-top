@@ -276,7 +276,7 @@
     <p>我们默认的无修饰类模态框即为“中等”尺寸的模态框。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="isOpenModalXl = true">Extra large modal</button>
           <button type="button" class="btn btn-primary" @click="isOpenModalLg = true">Large modal</button>
           <button type="button" class="btn btn-primary" @click="isOpenModalSm = true">Small modal</button>
@@ -328,7 +328,7 @@
     </table>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="isOpenModalFullscreen = true">Full screen</button>
           <button type="button" class="btn btn-primary" @click="isOpenModalFullscreenSm = true">
             Full screen below sm
@@ -456,7 +456,8 @@ const isOpenModalDestory = ref(false);
 
 const isOpenModalDraggable = ref(false);
 
-const exampleCode = `<template>
+const exampleCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalExample = true">
     Launch demo modal
   </button>
@@ -471,7 +472,8 @@ import { ref } from 'vue'
 const isOpenModalExample= ref(false);
 <\/script>`;
 
-const manyCode = `<template>
+const manyCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalMany1 = true">
       Launch demo modal
   </button>
@@ -494,7 +496,8 @@ const isOpenModalMany1 = ref(false);
 const isOpenModalMany2 = ref(false);
 <\/script>`;
 
-const footerCode = `<template>
+const footerCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalFooter = true">
     Launch demo modal
   </button>
@@ -514,7 +517,8 @@ import { ref } from 'vue'
 const isOpenModalFooter= ref(false);
 <\/script>`;
 
-const staticCode = `<template>
+const staticCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalStatic = true">
     Launch static backdrop modal
   </button>
@@ -534,7 +538,8 @@ import { ref } from 'vue'
 const isOpenModalStatic= ref(false);
 <\/script>`;
 
-const scrollableCode = `<template>
+const scrollableCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalScrollable = true">
     Launch demo modal
   </button>
@@ -550,7 +555,8 @@ import { ref } from 'vue'
 const isOpenModalScrollable= ref(false);
 <\/script>`;
 
-const centerCode = `<template>
+const centerCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalCenter = true">
     Launch demo modal
   </button>
@@ -566,8 +572,9 @@ import { ref } from 'vue'
 const isOpenModalCenter= ref(false);
 <\/script>`;
 
-const sizeCode = `<template>
-  <div class="hstack-3">
+const sizeCode = `
+<template>
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-primary" 
       @click="isOpenModalXl = true">Extra large modal</button>
     <button type="button" class="btn btn-primary" 
@@ -592,8 +599,9 @@ const isOpenModalLg = ref(false);
 const isOpenModalSm = ref(false);
 <\/script>`;
 
-const fullscreenCode = `<template>
-  <div class="hstack-3 flex-wrap"> 
+const fullscreenCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap"> 
     <button type="button" class="btn btn-primary" 
       @click="isOpenModalFullscreen = true">Full screen</button>
     <button type="button" class="btn btn-primary" 
@@ -633,7 +641,8 @@ const isOpenModalFullscreenXl= ref(false);
 const isOpenModalFullscreenXxl= ref(false);
 <\/script>  
 `;
-const destoryCode = `<template>
+const destoryCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalDestory = true">
     Launch demo modal
   </button>
@@ -648,7 +657,8 @@ import { ref } from 'vue'
 const isOpenModalDestory= ref(false);
 <\/script>`;
 
-const draggableCode = `<template>
+const draggableCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="isOpenModalDraggable = true">
     Launch demo modal
   </button>

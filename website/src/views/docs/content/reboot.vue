@@ -612,7 +612,8 @@
 </template>
 
 <script setup>
-const variablesCode = `@if $font-size-root != null {
+const variablesCode = `
+@if $font-size-root != null {
   --#{$prefix}root-font-size: #{$font-size-root};
 }
 --#{$prefix}body-font-family: #{inspect($font-family-base)};
@@ -641,13 +642,17 @@ const variablesCode = `@if $font-size-root != null {
 --#{$prefix}tertiary-bg: #{$body-tertiary-bg};
 --#{$prefix}tertiary-bg-rgb: #{to-rgb($body-tertiary-bg)};`;
 
-const links1Code = `<a href="#">This is an example link</a>`;
+const links1Code = `
+<a href="#">This is an example link</a>`;
 
-const links2Code = `<a href="#" style="--bs-link-opacity: .5">This is an example link</a>`;
+const links2Code = `
+<a href="#" style="--bs-link-opacity: .5">This is an example link</a>`;
 
-const links3Code = `<a>This is a placeholder link</a>`;
+const links3Code = `
+<a>This is a placeholder link</a>`;
 
-const horizontalCode = `<hr>
+const horizontalCode = `
+<hr>
 
 <div class="text-success">
   <hr>
@@ -656,18 +661,23 @@ const horizontalCode = `<hr>
 <hr class="border border-danger border-2 opacity-50">
 <hr class="border border-primary border-3 opacity-75">`;
 
-const codeBlockCode = `<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+const codeBlockCode = `
+<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;
 </code></pre> `;
 
-const varCode = `<var>y</var> = <var>m</var><var>x</var> + <var>b</var> `;
+const varCode = `
+<var>y</var> = <var>m</var><var>x</var> + <var>b</var> `;
 
-const userInputCode = `To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+const userInputCode = `
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd> `;
 
-const sampleOutputCode = `<samp>This text is meant to be treated as sample output from a computer program.</samp> `;
+const sampleOutputCode = `
+<samp>This text is meant to be treated as sample output from a computer program.</samp> `;
 
-const tableCode = `<table>
+const tableCode = `
+<table>
   <caption>
     This is an example table, and this is its caption to describe the contents.
   </caption>
@@ -690,9 +700,11 @@ const tableCode = `<table>
   </tbody>
 </table>`;
 
-const buttonPointerCode = `<span role="button" tabindex="0">Non-button element button</span>`;
+const buttonPointerCode = `
+<span role="button" tabindex="0">Non-button element button</span>`;
 
-const addressCode = `<address>
+const addressCode = `
+<address>
   <strong>ACME Corporation</strong><br>
   1123 Fictional St,<br>
   San Francisco, CA 94103<br>
@@ -703,7 +715,8 @@ const addressCode = `<address>
   <a href="mailto:first.last@example.com">first.last@example.com</a>
 </address>`;
 
-const blockquoteCode = `<figure>
+const blockquoteCode = `
+<figure>
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
   </blockquote>
@@ -712,9 +725,11 @@ const blockquoteCode = `<figure>
   </figcaption>
 </figure>`;
 
-const abbrCode = `The <abbr title="HyperText Markup Language">HTML</abbr> abbreviation element.`;
+const abbrCode = `
+The <abbr title="HyperText Markup Language">HTML</abbr> abbreviation element.`;
 
-const summaryCode = `<details>
+const summaryCode = `
+<details>
   <summary>Some details</summary>
   <p>More info about the details.</p>
 </details>

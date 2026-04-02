@@ -779,8 +779,9 @@
     </h2>
     <p>
       使用
-      <a href="/docs/components/offcanvas">offcanvas 组件</a> 可将您不断扩展和收缩的导航栏转换为侧边抽屉形式。我们扩展了
-      offcanvas 的默认样式，并使用我们的 <code>.navbar-expand-*</code> 类来创建一个动态且灵活的导航侧栏。
+      <a href="/docs/components/offcanvas">offcanvas 组件</a>
+      可将您不断扩展和收缩的导航栏转换为侧边抽屉形式。我们扩展了 offcanvas 的默认样式，并使用我们的
+      <code>.navbar-expand-*</code> 类来创建一个动态且灵活的导航侧栏。
     </p>
     <p>
       在下面的示例中，若要创建一个在所有视口大小下始终保持折叠状态的侧边栏导航栏，请完全省略
@@ -814,11 +815,15 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -850,7 +855,8 @@ import { ref } from 'vue';
 
 const offcanvasRef = ref(null);
 
-const exampleCode = `<template>
+const exampleCode = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -895,7 +901,8 @@ const exampleCode = `<template>
   </nav>
 </template>`;
 
-const brand1Code = `<!-- As a link -->
+const brand1Code = `
+<!-- As a link -->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -909,7 +916,8 @@ const brand1Code = `<!-- As a link -->
   </div>
 </nav>`;
 
-const brand2Code = `<nav class="navbar bg-body-tertiary">
+const brand2Code = `
+<nav class="navbar bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
@@ -918,7 +926,8 @@ const brand2Code = `<nav class="navbar bg-body-tertiary">
   </div>
 </nav>`;
 
-const brand3Code = `<nav class="navbar bg-body-tertiary">
+const brand3Code = `
+<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
@@ -928,7 +937,8 @@ const brand3Code = `<nav class="navbar bg-body-tertiary">
   </div>
 </nav>`;
 
-const nav1Code = `<template>
+const nav1Code = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -949,7 +959,8 @@ const nav1Code = `<template>
   </nav>
 </template>`;
 
-const nav2Code = `<template>
+const nav2Code = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -986,7 +997,8 @@ const nav2Code = `<template>
   </nav>
 </template>`;
 
-const formCode = `<nav class="navbar bg-body-tertiary">
+const formCode = `
+<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand">Navbar</a>
     <form class="d-flex" role="search">
@@ -996,7 +1008,8 @@ const formCode = `<nav class="navbar bg-body-tertiary">
   </div>
 </nav>`;
 
-const textCode = `<template>
+const textCode = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar w/ text</a>
@@ -1025,7 +1038,8 @@ const textCode = `<template>
   </nav>
 </template>`;
 
-const colorCode = `<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+const colorCode = `
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <!-- Navbar content -->
 </nav>
 
@@ -1037,7 +1051,8 @@ const colorCode = `<nav class="navbar bg-dark border-bottom border-body" data-bs
   <!-- Navbar content -->
 </nav>`;
 
-const containerCode = `<div class="container">
+const containerCode = `
+<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -1051,7 +1066,8 @@ const containerCode = `<div class="container">
   </div>
 </nav>`;
 
-const placementCode = `<!--Default-->
+const placementCode = `
+<!--Default-->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Default</a>
@@ -1079,7 +1095,8 @@ const placementCode = `<!--Default-->
   </div>
 </nav>`;
 
-const scrollCode = `<template>
+const scrollCode = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar scroll</a>
@@ -1123,7 +1140,8 @@ const scrollCode = `<template>
   </nav>
 </template>`;
 
-const toggler1Code = `<template>
+const toggler1Code = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" 
@@ -1154,7 +1172,8 @@ const toggler1Code = `<template>
   </nav>
 </template>`;
 
-const toggler2Code = `<template>
+const toggler2Code = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -1185,7 +1204,8 @@ const toggler2Code = `<template>
   </nav>
 </template>`;
 
-const toggler3Code = `<template>
+const toggler3Code = `
+<template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" 
@@ -1216,7 +1236,8 @@ const toggler3Code = `<template>
   </nav>
 </template>`;
 
-const externalCode = `<template>
+const externalCode = `
+<template>
   <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
     <div class="bg-dark p-4">
       <h5 class="text-body-emphasis h4">Collapsed content</h5>
@@ -1234,7 +1255,8 @@ const externalCode = `<template>
   </nav>
 </template>`;
 
-const offcanvasCode = `<template>
+const offcanvasCode = `
+<template>
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Offcanvas navbar</a>
@@ -1280,7 +1302,8 @@ import { ref } from 'vue'
 const offcanvasRef = ref(null)
 <\/script>`;
 
-const css1Code = `--#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+const css1Code = `
+--#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
 --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
 --#{$prefix}navbar-color: #{$navbar-light-color};
 --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};

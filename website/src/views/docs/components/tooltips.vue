@@ -26,7 +26,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <a href="#" v-tooltip data-bs-title="tooltip content">tooltip link</a>
           <button type="button" class="btn btn-primary" v-tooltip data-bs-title="tooltip content">
             tooltip button
@@ -40,7 +40,8 @@
       自定义样式<a class="anchor-link" aria-label="Link to this section: 自定义样式" href="#tooltips-custom"> </a>
     </h2>
     <p>
-      您可以使用 <a href="#tooltips-css">CSS 变量</a> 来自定义样式的外观。我们通过
+      您可以使用
+      <a href="#tooltips-css">CSS 变量</a> 来自定义样式的外观。我们通过
       <code>data-bs-custom-class="custom-tooltip"</code>
       设置了一个自定义类，以限定我们的自定义外观，并利用它来覆盖一些本地的 CSS 变量。
     </p>
@@ -95,8 +96,9 @@
 </template>
 
 <script setup>
-const exampleCode = `<template>
-  <div class="hstack-3">
+const exampleCode = `
+<template>
+  <div class="hstack gap-3">
     <a href="#" 
       v-tooltip 
       data-bs-title="tooltip content">tooltip link</a>
@@ -109,7 +111,8 @@ const exampleCode = `<template>
   </div>
 </template>`;
 
-const customCode = `<template>
+const customCode = `
+<template>
   <button type="button" class="btn btn-primary"
     v-tooltip
     data-bs-custom-class="custom-tooltip"
@@ -125,7 +128,8 @@ const customCode = `<template>
 }
 </style>`;
 
-const htmlCode = `<template>
+const htmlCode = `
+<template>
   <button type="button" class="btn btn-primary" 
     v-tooltip 
     data-bs-html="true" 
@@ -134,7 +138,8 @@ const htmlCode = `<template>
   </button>
 </template>`;
 
-const css1Code = `--#{$prefix}tooltip-zindex: #{$zindex-tooltip};
+const css1Code = `
+--#{$prefix}tooltip-zindex: #{$zindex-tooltip};
 --#{$prefix}tooltip-max-width: #{$tooltip-max-width};
 --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
 --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};

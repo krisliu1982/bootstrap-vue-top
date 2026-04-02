@@ -381,33 +381,38 @@
 </template>
 
 <script setup>
-const headerCode = `<h1>h1. Bootstrap heading</h1>
+const headerCode = `
+<h1>h1. Bootstrap heading</h1>
 <h2>h2. Bootstrap heading</h2>
 <h3>h3. Bootstrap heading</h3>
 <h4>h4. Bootstrap heading</h4>
 <h5>h5. Bootstrap heading</h5>
 <h6>h6. Bootstrap heading</h6>`;
 
-const header1Code = `<p class="h1">h1. Bootstrap heading</p>
+const header1Code = `
+<p class="h1">h1. Bootstrap heading</p>
 <p class="h2">h2. Bootstrap heading</p>
 <p class="h3">h3. Bootstrap heading</p>
 <p class="h4">h4. Bootstrap heading</p>
 <p class="h5">h5. Bootstrap heading</p>
 <p class="h6">h6. Bootstrap heading</p>`;
 
-const header2Code = `<h3>
+const header2Code = `
+<h3>
   Fancy display heading
   <small class="text-body-secondary">With faded secondary text</small>
 </h3>`;
 
-const displayCode = `<h1 class="display-1">Display 1</h1>
+const displayCode = `
+<h1 class="display-1">Display 1</h1>
 <h1 class="display-2">Display 2</h1>
 <h1 class="display-3">Display 3</h1>
 <h1 class="display-4">Display 4</h1>
 <h1 class="display-5">Display 5</h1>
 <h1 class="display-6">Display 6</h1>`;
 
-const displayScssCode = `$display-font-sizes: (
+const displayScssCode = `
+$display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
   3: 4rem,
@@ -421,11 +426,13 @@ $display-font-style:  null;
 $display-font-weight: 300;
 $display-line-height: $headings-line-height;`;
 
-const leadCode = `<p class="lead">
+const leadCode = `
+<p class="lead">
   This is a lead paragraph. It stands out from regular paragraphs.
 </p>`;
 
-const inlineCode = `<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+const inlineCode = `
+<p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
 <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
@@ -434,14 +441,17 @@ const inlineCode = `<p>You can use the mark tag to <mark>highlight</mark> text.<
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>`;
 
-const abbrCode = `<p><abbr title="attribute">attr</abbr></p>
+const abbrCode = `
+<p><abbr title="attribute">attr</abbr></p>
 <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>`;
 
-const blockquoteCode = `<blockquote class="blockquote">
+const blockquoteCode = `
+<blockquote class="blockquote">
   <p>A well-known quote, contained in a blockquote element.</p>
 </blockquote>`;
 
-const blockquote1Code = `<figure>
+const blockquote1Code = `
+<figure>
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
   </blockquote>
@@ -450,7 +460,8 @@ const blockquote1Code = `<figure>
   </figcaption>
 </figure>`;
 
-const blockquote2Code = `<figure class="text-center">
+const blockquote2Code = `
+<figure class="text-center">
   <blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
   </blockquote>
@@ -468,7 +479,8 @@ const blockquote2Code = `<figure class="text-center">
   </figcaption>
 </figure>`;
 
-const lists1Code = `<ul class="list-unstyled">
+const lists1Code = `
+<ul class="list-unstyled">
   <li>This is a list.</li>
   <li>It appears completely unstyled.</li>
   <li>Structurally, it’s still a list.</li>
@@ -483,13 +495,15 @@ const lists1Code = `<ul class="list-unstyled">
   <li>This may still come in handy in some situations.</li>
 </ul>`;
 
-const lists2Code = `<ul class="list-inline">
+const lists2Code = `
+<ul class="list-inline">
   <li class="list-inline-item">This is a list item.</li>
   <li class="list-inline-item">And another one.</li>
   <li class="list-inline-item">But they’re displayed inline.</li>
 </ul>`;
 
-const lists3Code = `<dl class="row">
+const lists3Code = `
+<dl class="row">
   <dt class="col-sm-3">Description lists</dt>
   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 

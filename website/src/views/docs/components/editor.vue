@@ -25,7 +25,8 @@
 <script setup>
 import { BvEditor } from 'bootstrap-vue-ui@editor';
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <BvEditor />
 </template>
 

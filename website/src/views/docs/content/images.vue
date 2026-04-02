@@ -177,11 +177,14 @@
 </template>
 
 <script setup>
-const responsiveCode = `<img src="..." class="img-fluid" alt="...">`;
+const responsiveCode = `
+<img src="..." class="img-fluid" alt="...">`;
 
-const thumbnailCode = `<img src="..." class="img-thumbnail" alt="...">`;
+const thumbnailCode = `
+<img src="..." class="img-thumbnail" alt="...">`;
 
-const alignCode = `<div class="clearfix">
+const alignCode = `
+<div class="clearfix">
     <img src="..." class="rounded float-start" alt="...">
     <img src="..." class="rounded float-end" alt="...">
 </div>
@@ -194,7 +197,8 @@ const alignCode = `<div class="clearfix">
   <img src="..." class="rounded" alt="...">
 </div>`;
 
-const pictureCode = `<picture>
+const pictureCode = `
+<picture>
   <source srcset="..." type="image/svg+xml">
   <img src="..." class="img-fluid img-thumbnail" alt="...">
 </picture>`;

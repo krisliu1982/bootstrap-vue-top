@@ -39,7 +39,10 @@
       </li>
       <li>我们仅使用内部的 <code>.progress-bar</code> 来呈现视觉上的条形和标签。</li>
       <li><code>.progress-bar</code> 需要内联样式、实用类或自定义 CSS 来设置其宽度。</li>
-      <li>我们提供了一个特殊的 <code>.progress-stacked</code> 类来创建多个/堆叠的进度条。</li>
+      <li>
+        我们提供了一个特殊的
+        <code>.progress-stacked</code> 类来创建多个/堆叠的进度条。
+      </li>
     </ul>
     <p>将上述内容综合起来，便得到了以下的示例。</p>
     <div class="docs-example">
@@ -166,7 +169,9 @@
     </p>
     <p>
       标签的长度若超过进度条内部部分，可能无法通过这种方法完全实现可访问性，因为这种方法依赖于文本颜色与
-      <code>.progress</code> 和 <code>.progress-bar</code> 背景颜色之间的对比度符合要求。在实施此示例时请务必谨慎。
+      <code>.progress</code> 和
+      <code>.progress-bar</code>
+      背景颜色之间的对比度符合要求。在实施此示例时请务必谨慎。
     </p>
     <p>如果文本能够与进度条重叠，我们通常建议将标签显示在进度条之外，以提高可访问性。</p>
     <div class="docs-example">
@@ -287,7 +292,8 @@
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
-      的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
+      的可见文本），或者通过其他方式予以说明，比如使用带有
+      <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
     <h2 id="progress-multiple">
@@ -411,8 +417,9 @@
       动画<a class="anchor-link" aria-label="Link to this section: 动画" href="#progress-animation"> </a>
     </h2>
     <p>
-      这种条纹渐变效果也可以进行动画处理。在 <code>.progress-bar</code> 元素中添加
-      <code>.progress-bar-animated</code> 类，即可通过 CSS3 动画实现条纹从右向左的动画效果。
+      这种条纹渐变效果也可以进行动画处理。在
+      <code>.progress-bar</code> 元素中添加 <code>.progress-bar-animated</code> 类，即可通过 CSS3
+      动画实现条纹从右向左的动画效果。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -443,7 +450,8 @@
 </template>
 
 <script setup>
-const exampleCode = `<div class="progress" role="progressbar" aria-label="Basic example" 
+const exampleCode = `
+<div class="progress" role="progressbar" aria-label="Basic example" 
   aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 0%"></div>
 </div>
@@ -468,7 +476,8 @@ const exampleCode = `<div class="progress" role="progressbar" aria-label="Basic 
   <div class="progress-bar" style="width: 100%"></div>
 </div>`;
 
-const sizeCode = `<div class="progress" role="progressbar" 
+const sizeCode = `
+<div class="progress" role="progressbar" 
   aria-label="Basic" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar w-75"></div>
 </div>
@@ -485,12 +494,14 @@ const sizeCode = `<div class="progress" role="progressbar"
   <div class="progress-bar" style="width: 25%"></div>
 </div>`;
 
-const labelCode = `<div class="progress" role="progressbar" 
+const labelCode = `
+<div class="progress" role="progressbar" 
   aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 25%">25%</div>
 </div>`;
 
-const bgCode = `<div class="progress" role="progressbar" 
+const bgCode = `
+<div class="progress" role="progressbar" 
   aria-label="Success" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar bg-success" style="width: 25%"></div>
 </div>
@@ -524,7 +535,8 @@ const bgCode = `<div class="progress" role="progressbar"
   <div class="progress-bar text-bg-danger" style="width: 100%">100%</div>
 </div>`;
 
-const multipleCode = `<div class="progress-stacked">
+const multipleCode = `
+<div class="progress-stacked">
   <div class="progress" role="progressbar" 
     aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" 
     style="width: 15%">
@@ -542,7 +554,8 @@ const multipleCode = `<div class="progress-stacked">
   </div>
 </div>`;
 
-const stripedCode = `<div class="progress" role="progressbar" 
+const stripedCode = `
+<div class="progress" role="progressbar" 
   aria-label="Default striped" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar progress-bar-striped" style="width: 10%"></div>
 </div>
@@ -563,12 +576,14 @@ const stripedCode = `<div class="progress" role="progressbar"
   <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
 </div>`;
 
-const animationCode = `<div class="progress" role="progressbar" 
+const animationCode = `
+<div class="progress" role="progressbar" 
   aria-label="Animated striped" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
 </div>`;
 
-const css1Code = `--#{$prefix}progress-height: #{$progress-height};
+const css1Code = `
+--#{$prefix}progress-height: #{$progress-height};
 @include rfs($progress-font-size, --#{$prefix}progress-font-size);
 --#{$prefix}progress-bg: #{$progress-bg};
 --#{$prefix}progress-border-radius: #{$progress-border-radius};

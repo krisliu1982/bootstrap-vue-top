@@ -18,11 +18,12 @@
       示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#dropdowns-example"> </a>
     </h2>
     <p>
-      将下拉菜单的切换按钮（即您的按钮或链接）以及下拉菜单包裹在 <code>.dropdown</code> 元素内，或者使用声明了
-      <code>position: relative;</code> 的其他元素。设置
+      将下拉菜单的切换按钮（即您的按钮或链接）以及下拉菜单包裹在
+      <code>.dropdown</code> 元素内，或者使用声明了 <code>position: relative;</code> 的其他元素。设置
       <code>v-dropdown</code> 指令在下拉触发元素上。理想情况下，您应该使用
       <code>&lt;button&gt;</code> 元素作为下拉菜单的触发器，但该组件也能与
-      <code>&lt;a&gt;</code> 元素配合使用。这里展示的示例在适当的地方使用了语义化的
+      <code>&lt;a&gt;</code>
+      元素配合使用。这里展示的示例在适当的地方使用了语义化的
       <code>&lt;ul&gt;</code> 元素，但支持自定义标记。
     </p>
     <h3>单个按钮</h3>
@@ -146,7 +147,8 @@
 </template>
 
 <script setup>
-const example1Code = `<template>
+const example1Code = `
+<template>
   <div class="dropdown">
       <button v-dropdown class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
           Dropdown button
@@ -190,7 +192,8 @@ const example1Code = `<template>
   </div>
 </template>`;
 
-const example2Code = `<template>
+const example2Code = `
+<template>
   <div class="btn-group">
       <button type="button" class="btn btn-danger">Danger</button>
       <button v-dropdown type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" aria-expanded="false">
@@ -206,7 +209,8 @@ const example2Code = `<template>
   </div>
 </template>`;
 
-const css1Code = `--#{$prefix}dropdown-zindex: #{$zindex-dropdown};
+const css1Code = `
+--#{$prefix}dropdown-zindex: #{$zindex-dropdown};
 --#{$prefix}dropdown-min-width: #{$dropdown-min-width};
 --#{$prefix}dropdown-padding-x: #{$dropdown-padding-x};
 --#{$prefix}dropdown-padding-y: #{$dropdown-padding-y};

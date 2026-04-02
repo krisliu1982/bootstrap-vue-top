@@ -172,7 +172,8 @@
 </template>
 
 <script setup>
-const exampleCode = `<div class="alert alert-primary" role="alert">
+const exampleCode = `
+<div class="alert alert-primary" role="alert">
   A simple primary alert—check it out!
 </div>
 <div class="alert alert-secondary" role="alert">
@@ -197,7 +198,8 @@ const exampleCode = `<div class="alert alert-primary" role="alert">
   A simple dark alert—check it out!
 </div>`;
 
-const linkCode = `<div class="alert alert-primary" role="alert">
+const linkCode = `
+<div class="alert alert-primary" role="alert">
   ... <a href="#" class="alert-link">an example link</a> ...
 </div>
 <div class="alert alert-secondary" role="alert">
@@ -222,19 +224,22 @@ const linkCode = `<div class="alert alert-primary" role="alert">
   ... <a href="#" class="alert-link">an example link</a> ...
 </div>`;
 
-const attCode = `<div class="alert alert-success" role="alert">
+const attCode = `
+<div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Well done!</h4>
   <p>Aww yeah, you successfully read this important alert message. ...</p>
   <hr>
   <p class="mb-0">Whenever you need to, ...</p>
 </div>`;
 
-const iconCode = `<div class="alert alert-primary d-flex align-items-center" role="alert">
+const iconCode = `
+<div class="alert alert-primary d-flex align-items-center" role="alert">
   <bi-info-circle-fill class="flex-shrink-0 me-2" />
   <div>An example alert with an icon</div>
 </div>`;
 
-const dismissCode = `<template>
+const dismissCode = `
+<template>
   <div v-alert class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Holy guacamole!</strong> You should check in on some of those fields below.
       <button type="button" class="btn-close" 
@@ -242,7 +247,8 @@ const dismissCode = `<template>
   </div>
 </template>`;
 
-const css1Code = `--#{$prefix}alert-bg: transparent;
+const css1Code = `
+--#{$prefix}alert-bg: transparent;
 --#{$prefix}alert-padding-x: #{$alert-padding-x};
 --#{$prefix}alert-padding-y: #{$alert-padding-y};
 --#{$prefix}alert-margin-bottom: #{$alert-margin-bottom};

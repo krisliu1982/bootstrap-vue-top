@@ -58,7 +58,7 @@
           <bv-table-col header="Address" field="address" />
           <bv-table-col header="Operation">
             <template #body="{ item }">
-              <div class="hstack-3">
+              <div class="hstack gap-3">
                 <button
                   type="button"
                   class="btn btn-link"
@@ -279,7 +279,7 @@
           <bv-table-col header="Address" field="address" />
         </bv-table>
 
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
           <button type="button" class="btn btn-primary" @click="handleSetCheckbox">setCheckboxSelectedKeys</button>
         </div>
@@ -300,7 +300,7 @@
           <bv-table-col header="Address" field="address" />
         </bv-table>
 
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleGetRadio">getRadioSelectedKey</button>
           <button type="button" class="btn btn-primary" @click="handleSetRadio">setRadioSelectedKey</button>
         </div>
@@ -536,9 +536,24 @@ const tableExpandData = ref([
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
 ]);
 const details = [
-  { name: 'Jerry1', state: 'California', city: 'San Francisco', zip: 'CA 94114' },
-  { name: 'Jerry2', state: 'California', city: 'San Francisco', zip: 'CA 94114' },
-  { name: 'Jerry3', state: 'California', city: 'San Francisco', zip: 'CA 94114' }
+  {
+    name: 'Jerry1',
+    state: 'California',
+    city: 'San Francisco',
+    zip: 'CA 94114'
+  },
+  {
+    name: 'Jerry2',
+    state: 'California',
+    city: 'San Francisco',
+    zip: 'CA 94114'
+  },
+  {
+    name: 'Jerry3',
+    state: 'California',
+    city: 'San Francisco',
+    zip: 'CA 94114'
+  }
 ];
 function handleExpand(key) {
   console.log(key); //行数据的唯一标识
@@ -605,7 +620,8 @@ function handleSortChange(field, order) {
   }, 1000);
 }
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bv-table :data="tableData">
     <bv-table-col header="#" type="index" />
     <bv-table-col header="Name" width="100px">
@@ -619,7 +635,7 @@ const baseCode = `<template>
     <bv-table-col header="Address" field="address" />
     <bv-table-col header="Operation">
       <template #body="{ item }">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-link"
             @click="alertMessage({ type: 'success', message: item.code })">编辑</button>
           <button type="button" class="btn btn-link"
@@ -641,7 +657,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const variantsCode = `<template>
+const variantsCode = `
+<template>
   <bv-table 
     :data="tableData10" 
     :tfoot-data="['-', '-', 259]" 
@@ -695,7 +712,8 @@ function tbodyTrClass(item) {
 }
 <\/script>`;
 
-const tfootCode = `<template>
+const tfootCode = `
+<template>
   <bv-table 
     :data="tableData" 
     :tfoot-data="['-', '-', 239]" 
@@ -715,7 +733,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const dividersCode = `<template>
+const dividersCode = `
+<template>
   <bv-table 
     :data="tableData" 
     :tfoot-data="['-', '-', 239]"
@@ -737,7 +756,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const stripedCode = `<template>
+const stripedCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-striped">
@@ -756,7 +776,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const stripedColsCode = `<template>
+const stripedColsCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-striped-columns">
@@ -775,7 +796,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const hoverCode = `<template>
+const hoverCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-hover">
@@ -794,7 +816,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const borderedCode = `<template>
+const borderedCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-bordered">
@@ -813,7 +836,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const borderedColorCode = `<template>
+const borderedColorCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-bordered border-primary">
@@ -832,7 +856,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const borderlessCode = `<template>
+const borderlessCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-borderless">
@@ -851,7 +876,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const smCode = `<template>
+const smCode = `
+<template>
   <bv-table 
     :data="tableData" 
     table-class="table-sm">
@@ -870,7 +896,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const checkboxCode = `<template>
+const checkboxCode = `
+<template>
   <bv-table ref="tableCheckboxRef" :data="tableData" table-class="table-hover">
     <bv-table-col type="checkbox" field="code" />
     <bv-table-col header="Code" field="code" />
@@ -878,7 +905,7 @@ const checkboxCode = `<template>
     <bv-table-col header="Address" field="address" />
   </bv-table>
 
-  <div class="hstack-3 flex-wrap">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary"
       @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
     <button type="button" class="btn btn-primary"
@@ -911,7 +938,8 @@ function handleSetCheckbox() {
 }
 <\/script>`;
 
-const radioCode = `<template>
+const radioCode = `
+<template>
   <bv-table ref="tableRadioRef" :data="tableData" table-class="table-hover">
     <bv-table-col type="radio" field="code" />
     <bv-table-col header="Code" field="code" />
@@ -919,7 +947,7 @@ const radioCode = `<template>
     <bv-table-col header="Address" field="address" />
   </bv-table>
 
-  <div class="hstack-3 flex-wrap">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
       @click="handleGetRadio">getRadioSelectedKey</button>
     <button type="button" class="btn btn-primary" 
@@ -953,7 +981,8 @@ function handleSetRadio() {
 }
 <\/script>`;
 
-const expandCode = `<template>
+const expandCode = `
+<template>
   <bv-table :data="tableExpandData" @expand-change="handleExpand">
     <bv-table-col type="expand" field="code">
       <template #body="{ item }">
@@ -1005,7 +1034,8 @@ function handleExpand(key) {
 }
 <\/script>`;
 
-const truncateCode = `<template>
+const truncateCode = `
+<template>
   <bv-table :data="tableData">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
@@ -1029,7 +1059,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const theadFixedCode = `<template>
+const theadFixedCode = `
+<template>
   <div style="overflow-y: auto;height: 200px">
     <bv-table :data="tableData10" thead-class="table-info position-sticky top-0">
       <bv-table-col header="Code" field="code" />
@@ -1055,7 +1086,8 @@ const tableData10 = ref([
 ])
 <\/script>`;
 
-const xAutoCode = `<template>
+const xAutoCode = `
+<template>
   <div class="table-responsive">
     <bv-table :data="tableData" style="width: 150%">
       <bv-table-col header="Code" field="code" />
@@ -1074,7 +1106,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const sortCode = `<template>
+const sortCode = `
+<template>
   <bv-loading :loading="loading">
     <bv-table :data="tableSortData" @sort-change="handleSortChange">
       <bv-table-col header="Code" field="code" sortable="local" />
@@ -1111,7 +1144,8 @@ function handleSortChange(field, order) {
 }
 <\/script>`;
 
-const verticalAlignCode = `<template>
+const verticalAlignCode = `
+<template>
   <bv-table :data="tableData" table-class="align-middle">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
@@ -1128,7 +1162,8 @@ const tableData = ref([
 ])
 <\/script>`;
 
-const captionCode = `<template>
+const captionCode = `
+<template>
   <bv-table :data="tableData" caption="List of users" table-class="caption-top">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />

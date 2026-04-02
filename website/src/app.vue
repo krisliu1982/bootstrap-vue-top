@@ -2,10 +2,19 @@
   <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary border-bottom border-body">
     <div class="container-xxl">
       <a class="navbar-brand d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)"
-          class="me-3" /><span>BoostrapVue</span></a>
-      <button class="navbar-toggler" type="button" v-collapse data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="/favicon.svg" alt="Bootstrap" width="18" height="18" style="scale: calc(1.5)" class="me-3" /><span
+          >BoostrapVue</span
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        v-collapse
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,7 +54,7 @@ import { ref, watch } from 'vue';
 
 //字体大小修改
 function getFontSize() {
-  const storedFontSize =  localStorage.getItem('font-size');
+  const storedFontSize = localStorage.getItem('font-size');
   if (storedFontSize === null) {
     return 'md';
   }
@@ -75,7 +84,7 @@ linkPrism.id = 'prism-theme';
 linkPrism.rel = 'stylesheet';
 document.head.appendChild(linkPrism);
 function getTheme() {
-  const storedTheme =  localStorage.getItem('theme');
+  const storedTheme = localStorage.getItem('theme');
   if (storedTheme === null) {
     return 'light';
   }

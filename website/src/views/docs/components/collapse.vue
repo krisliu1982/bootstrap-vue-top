@@ -116,7 +116,8 @@
 </template>
 
 <script setup>
-const example1Code = `<template>
+const example1Code = `
+<template>
     <p class="d-inline-flex gap-1">
         <a class="btn btn-primary" v-collapse href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             Link with href
@@ -135,7 +136,8 @@ const example1Code = `<template>
     </div>
 </template>`;
 
-const example2Code = `<template>
+const example2Code = `
+<template>
     <p>
         <button class="btn btn-primary" type="button" v-collapse data-bs-target="#collapseWidthExample"
             aria-expanded="false" aria-controls="collapseWidthExample">

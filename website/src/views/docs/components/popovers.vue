@@ -24,10 +24,13 @@
       <strong>确保提示框易于通过键盘和辅助技术进行操作</strong>，仅将它们添加到传统上可被键盘聚焦且具有交互性的 HTML
       元素中（例如链接或表单控件）。虽然可以通过添加 <code>tabindex="0"</code> 来使其他 HTML
       元素具有可聚焦性，但这可能会在非交互性元素上为键盘用户创建令人烦恼和混乱的焦点位置，并且目前大多数辅助技术在这种情况下的也不会播报提示框。此外，不要仅仅依靠
-      <code>hover</code> 作为触发提示框的条件，因为这会使键盘用户无法触发提示框。
+      <code>hover</code>
+      作为触发提示框的条件，因为这会使键盘用户无法触发提示框。
     </p>
     <p>
-      在使用 <code>html</code> 内容时，<strong>请避免添加过多内容</strong>。一旦弹出框显示出来，其内容会通过
+      在使用
+      <code>html</code>
+      内容时，<strong>请避免添加过多内容</strong>。一旦弹出框显示出来，其内容会通过
       <code>aria-describedby</code>
       属性与触发元素关联起来，这会导致弹出框的所有内容都会作为一条不间断的长串信息向辅助技术用户进行播报。
     </p>
@@ -47,7 +50,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button
             type="button"
             class="btn btn-primary"
@@ -78,8 +81,8 @@
       <code>click</code> 触发方式。
     </p>
     <p class="text-bg-warning">
-      <strong>下次点击后自动关闭(focus)需要特定的 HTML 代码，以实现跨浏览器和跨平台的正常功能。</strong> 只能使用
-      <code>&lt;a&gt;</code> 元素，不能使用 <code>&lt;button&gt;</code> 元素，并且必须包含
+      <strong>下次点击后自动关闭(focus)需要特定的 HTML 代码，以实现跨浏览器和跨平台的正常功能。</strong>
+      只能使用 <code>&lt;a&gt;</code> 元素，不能使用 <code>&lt;button&gt;</code> 元素，并且必须包含
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank"
         ><code>tabindex</code></a
       >
@@ -87,7 +90,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button
             type="button"
             class="btn btn-primary"
@@ -129,7 +132,8 @@
       自定义样式<a class="anchor-link" aria-label="Link to this section: 自定义样式" href="#popovers-custom"> </a>
     </h2>
     <p>
-      您可以使用 <a href="#popovers-css">CSS 变量</a> 来自定义样式的外观。我们通过
+      您可以使用
+      <a href="#popovers-css">CSS 变量</a> 来自定义样式的外观。我们通过
       <code>data-bs-custom-class="custom-popover"</code>
       设置了一个自定义类，以限定我们的自定义外观，并利用它来覆盖一些本地的 CSS 变量。
     </p>
@@ -158,7 +162,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button
             type="button"
             class="btn btn-primary"
@@ -202,15 +206,22 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-const htmlTitle = `<u>Popover title</u>`;
-const htmlContent = `<p class="text-danger">And here’s some amazing content. It’s very engaging. Right?</p>
+const htmlTitle = `
+<u>Popover title</u>`;
+const htmlContent = `
+<p class="text-danger">And here’s some amazing content. It’s very engaging. Right?</p>
   <p class="text-succes">And here’s some amazing content. It’s very engaging. Right?</p>`;
 
 const timeoutContent = ref(null);
 onMounted(() => {
   setTimeout(() => {
-    const data = { code: '10001', name: 'kris', addr: 'Honghu City, Hubei Province, China' };
+    const data = {
+      code: '10001',
+      name: 'kris',
+      addr: 'Honghu City, Hubei Province, China'
+    };
     timeoutContent.value = `
+
     <dl class="row">
       <dt class="col-sm-3">Code</dt>
       <dd class="col-sm-9">${data.code}</dd>
@@ -224,8 +235,9 @@ onMounted(() => {
   }, 300);
 });
 
-const exampleCode = `<template>
-  <div class="hstack-3 flex-wrap">
+const exampleCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
     v-popover 
     data-bs-title="Popover title" 
@@ -241,7 +253,8 @@ const exampleCode = `<template>
   </div>
 </template>`;
 
-const triggerCode = `<template>
+const triggerCode = `
+<template>
   <button type="button" class="btn btn-primary" 
     v-popover
     data-bs-trigger="click"  
@@ -267,8 +280,9 @@ const triggerCode = `<template>
   </a>
 </template>`;
 
-const htmlCode = `<template>
-  <div class="hstack-3">
+const htmlCode = `
+<template>
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-primary" 
       v-popover 
       data-bs-html="true"
@@ -316,7 +330,8 @@ onMounted(() => {
 })
 <\/script>`;
 
-const customCode = `<template>
+const customCode = `
+<template>
   <button type="button" class="btn btn-primary"
     v-popover
     data-bs-custom-class="custom-popover" 
@@ -342,7 +357,8 @@ const customCode = `<template>
 }
 </style>`;
 
-const css1Code = `--#{$prefix}popover-zindex: #{$zindex-popover};
+const css1Code = `
+--#{$prefix}popover-zindex: #{$zindex-popover};
 --#{$prefix}popover-max-width: #{$popover-max-width};
 @include rfs($popover-font-size, --#{$prefix}popover-font-size);
 --#{$prefix}popover-bg: #{$popover-bg};

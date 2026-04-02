@@ -133,23 +133,48 @@
 </template>
 
 <script setup>
-const overviewCode = `<div class="float-start">Float start on all viewport sizes</div><br>
+const overviewCode = `
+<div class="float-start">Float start on all viewport sizes</div><br>
 <div class="float-end">Float end on all viewport sizes</div><br>
-<div class="float-none">Don’t float on all viewport sizes</div>`;
+<div class="float-none">Don’t float on all viewport sizes</div>
+`;
 
-const wrapCode = `<p class="clearfix">
+const wrapCode = `
+
+<p class="clearfix">
   <img src="..." class="float-start me-2" alt="..."/>
   This is a very long piece of text...
-</p>`;
+</p>
+`;
 
-const clearfixCode = `<div class="bg-info clearfix">
-  <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
-  <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
-</div>`;
+const clearfixCode = `
 
-const responsiveCode = `<div class="float-sm-end">Float end on viewports sized SM (small) or wider</div><br>
-<div class="float-md-end">Float end on viewports sized MD (medium) or wider</div><br>
-<div class="float-lg-end">Float end on viewports sized LG (large) or wider</div><br>
-<div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
-<div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>`;
+<div class="bg-info clearfix">
+  <button type="button" class="btn btn-secondary float-start">
+    Example Button floated left
+  </button>
+  <button type="button" class="btn btn-secondary float-end">
+    Example Button floated right
+  </button>
+</div>
+`;
+
+const responsiveCode = `
+
+<div class="float-sm-end">
+  Float end on viewports sized SM (small) or wider
+</div><br>
+<div class="float-md-end">
+  Float end on viewports sized MD (medium) or wider
+</div><br>
+<div class="float-lg-end">
+  Float end on viewports sized LG (large) or wider
+</div><br>
+<div class="float-xl-end">
+  Float end on viewports sized XL (extra large) or wider
+</div><br>
+<div class="float-xxl-end">
+  Float end on viewports sized XXL (extra extra large) or wider
+</div><br>
+`;
 </script>

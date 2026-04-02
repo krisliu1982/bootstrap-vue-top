@@ -98,19 +98,24 @@ import { ref } from 'vue';
 
 const outVal = ref(0);
 
-const overviewCode = `<label for="range1" class="form-label">Example range</label>
+const overviewCode = `
+<label for="range1" class="form-label">Example range</label>
 <input type="range" class="form-range" id="range1">`;
 
-const disabledCode = `<label for="disabledRange" class="form-label">Disabled range</label>
+const disabledCode = `
+<label for="disabledRange" class="form-label">Disabled range</label>
 <input type="range" class="form-range" id="disabledRange" disabled>`;
 
-const minmaxCode = `<label for="range2" class="form-label">Example range</label>
+const minmaxCode = `
+<label for="range2" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="100" id="range2">`;
 
-const stepsCode = `<label for="range3" class="form-label">Example range</label>
+const stepsCode = `
+<label for="range3" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="5" step="0.5" id="range3">`;
 
-const outputCode = `<templete>
+const outputCode = `
+<templete>
 <label for="range4" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="100" id="range4" v-model="outVal">
 <output for="range4" id="rangeValue" aria-hidden="true">{{ outVal }}</output>

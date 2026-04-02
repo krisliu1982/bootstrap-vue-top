@@ -23,11 +23,14 @@
       来控制其显示状态。通过我们出色的实用类，您可以轻松地自定义其外观、对齐方式和尺寸。
     </p>
     <p>
-      出于可访问性的考虑，这里的每个加载器都包含了 <code>role="status"</code> 以及一个嵌套的
-      <code>&lt;span class="visually-hidden"&gt;加载中...&lt;/span&gt;</code> 元素。
+      出于可访问性的考虑，这里的每个加载器都包含了
+      <code>role="status"</code> 以及一个嵌套的
+      <code>&lt;span class="visually-hidden"&gt;加载中...&lt;/span&gt;</code>
+      元素。
     </p>
     <p class="text-bg-info">
-      此组件的动画效果取决于 <code>prefers-reduced-motion</code> 媒体查询。请参阅我们的无障碍文档中
+      此组件的动画效果取决于
+      <code>prefers-reduced-motion</code> 媒体查询。请参阅我们的无障碍文档中
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#reduced-motion" target="_blank"
         >无障碍部分</a
       >。
@@ -39,7 +42,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <!--Border spinner-->
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -73,7 +76,7 @@
         <hr />
 
         <!--Growing spinner-->
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <div class="spinner-grow" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -133,7 +136,7 @@
         <hr />
 
         <!--Size-->
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <div class="spinner-border spinner-border-sm" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -164,8 +167,9 @@
 </template>
 
 <script setup>
-const exampleCode = `<!--Border spinner-->
-<div class="hstack-3">
+const exampleCode = `
+<!--Border spinner-->
+<div class="hstack gap-3">
   <div class="spinner-border" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -199,7 +203,7 @@ const exampleCode = `<!--Border spinner-->
 <hr />
 
 <!--Growing spinner-->
-<div class="hstack-3">
+<div class="hstack gap-3">
   <div class="spinner-grow" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -259,7 +263,7 @@ const exampleCode = `<!--Border spinner-->
 <hr />
 
 <!--Size-->
-<div class="hstack-3">
+<div class="hstack gap-3">
   <div class="spinner-border spinner-border-sm" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -274,7 +278,8 @@ const exampleCode = `<!--Border spinner-->
   </div>
 </div>`;
 
-const css1Code = `--#{$prefix}spinner-width: #{$spinner-width};
+const css1Code = `
+--#{$prefix}spinner-width: #{$spinner-width};
 --#{$prefix}spinner-height: #{$spinner-height};
 --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
 --#{$prefix}spinner-border-width: #{$spinner-border-width};

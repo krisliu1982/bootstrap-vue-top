@@ -21,7 +21,8 @@
     <p>
       当滚动到与锚点的 “href” 属性所引用的 “id” 相匹配的元素时，Scrollspy 会为锚点（<code>&lt;a&gt;</code>）元素添加
       <code>.active</code> 类。Scrollspy 最适合与 Bootstrap 的
-      <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs">nav component</a> 或
+      <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs">nav component</a>
+      或
       <a href="https://getbootstrap.com/docs/5.3/components/list-group">list group</a>
       结合使用，但它也能与当前页面中的任何锚点元素一起使用。下面是它的工作原理：
     </p>
@@ -37,8 +38,10 @@
         <code>id</code>。如果该元素内部没有可聚焦的元素，请务必同时添加 <code>tabindex="0"</code> 以确保键盘访问性。
       </li>
       <li>
-        当您滚动被监视的容器时，会为关联导航中的锚链接添加和移除 <code>.active</code> 类。链接必须有可解析的
-        <code>id</code> 目标，否则它们将被忽略。例如，<code>&lt;a href="#home"&gt;home&lt;/a&gt;</code>
+        当您滚动被监视的容器时，会为关联导航中的锚链接添加和移除
+        <code>.active</code> 类。链接必须有可解析的 <code>id</code> 目标，否则它们将被忽略。例如，<code
+          >&lt;a href="#home"&gt;home&lt;/a&gt;</code
+        >
         必须对应于 DOM 中的某个元素，如
         <code>&lt;div id="home"&gt;&lt;/div&gt;</code>
       </li>
@@ -47,7 +50,8 @@
     <p class="text-bg-warning">
       <strong>注意！</strong>如果滚动容器为 <code>body</code> 时, 页面上又有 <code>position: fixed;</code> 或
       <code>position: sticky;</code> 头部的时候，须为锚点目标元素添加
-      <code>scroll-margin-top</code> 样式，其中为头部的高度。(主要避免锚点目标元素被头部遮挡)
+      <code>scroll-margin-top</code>
+      样式，其中为头部的高度。(主要避免锚点目标元素被头部遮挡)
     </p>
     <code-highlight type="vue" :code="bodyCode" label="vue" />
 
@@ -146,7 +150,11 @@
     <h2 id="scrollspy-list">
       列表锚点<a class="anchor-link" aria-label="Link to this section: 列表锚点" href="#scrollspy-list"> </a>
     </h2>
-    <p>Scrollspy 还能与 <code>.list-group</code> 元素配合使用。滚动列表组旁边的区域，就会看到激活类发生变化。</p>
+    <p>
+      Scrollspy 还能与
+      <code>.list-group</code>
+      元素配合使用。滚动列表组旁边的区域，就会看到激活类发生变化。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="row">
@@ -304,7 +312,8 @@
 </template>
 
 <script setup>
-const bodyCode = `<template>
+const bodyCode = `
+<template>
   <div class="docs-toc text-body-secondary">
     <nav id="docs-nav-scrollspy">
       <a href="#scrollspy-about">使用说明</a>
@@ -327,7 +336,8 @@ const bodyCode = `<template>
   </div>
 </template>`;
 
-const navCode = `<template>
+const navCode = `
+<template>
   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
     <ul class="nav nav-pills">
       <li class="nav-item">
@@ -365,7 +375,8 @@ const navCode = `<template>
   </div>
 </template>`;
 
-const listCode = `<template>
+const listCode = `
+<template>
   <div class="row">
     <div class="col-3">
       <div id="list-example" class="list-group">
@@ -393,7 +404,8 @@ const listCode = `<template>
   </div>
 </template>`;
 
-const customCode = `<template>
+const customCode = `
+<template>
   <div class="row">
     <div class="col-3">
       <div id="custom-list-example" 

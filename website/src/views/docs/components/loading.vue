@@ -14,10 +14,14 @@
       全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a>
     </h2>
     <p>
-      通过提供 <code>LoadingFullscreen</code> 对象的
-      <code>getInstance</code> 方法获得单例。你可以通过 <code>show</code> 方法显示，<code>hide</code> 方法隐藏。
+      通过提供 <code>LoadingFullscreen</code> 对象的 <code>getInstance</code> 方法获得单例。你可以通过
+      <code>show</code> 方法显示，<code>hide</code>
+      方法隐藏。
     </p>
-    <p>全屏加载为单例模式内置计数器，不必担心同时多次异步请求调用 <code>show</code> 的副作用。</p>
+    <p>
+      全屏加载为单例模式内置计数器，不必担心同时多次异步请求调用
+      <code>show</code> 的副作用。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <button type="button" class="btn btn-primary" @click="handleShow">Show Loading-Fullscreen</button>
@@ -39,7 +43,7 @@
           </bv-table>
         </bv-loading>
 
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="loading = true">Show Loading</button>
           <button type="button" class="btn btn-primary" @click="loading = false">Hide Loading</button>
         </div>
@@ -69,7 +73,8 @@ const tableData = [
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
 ];
 
-const fullscreenCode = `<template>
+const fullscreenCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="handleShow">show</button>
 </template>
 
@@ -86,7 +91,8 @@ function handleShow() {
 }
 <\/script>`;
 
-const loadingCode = `<template>
+const loadingCode = `
+<template>
   <bv-loading :loading="loading">
     <bv-table :data="tableData" table-class="table-bordered border-info">
       <bv-table-col header="Code" field="code" />
@@ -95,7 +101,7 @@ const loadingCode = `<template>
     </bv-table>
   </bv-loading>
 
-  <div class="hstack-3">
+  <div class="hstack gap-3">
     <button type="button" class="btn btn-outline-primary" 
     @click="loading = true">Show Loading</button>
     <button type="button" class="btn btn-outline-primary" 

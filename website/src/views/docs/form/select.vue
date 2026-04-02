@@ -104,14 +104,16 @@
 </template>
 
 <script setup>
-const baseCode = `<select class="form-select" aria-label="Default select example">
+const baseCode = `
+<select class="form-select" aria-label="Default select example">
     <option value="0" selected>--</option>
     <option value="1">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
 </select>`;
 
-const sizingCode = `<select class="form-select form-select-lg mb-3" aria-label="Large select example">
+const sizingCode = `
+<select class="form-select form-select-lg mb-3" aria-label="Large select example">
     <option value="0" selected>--</option>
     <option value="1">One</option>
     <option value="2">Two</option>
@@ -125,21 +127,24 @@ const sizingCode = `<select class="form-select form-select-lg mb-3" aria-label="
     <option value="3">Three</option>
 </select>`;
 
-const sizingMultipleCode = `<select class="form-select" multiple aria-label="Multiple select example">
+const sizingMultipleCode = `
+<select class="form-select" multiple aria-label="Multiple select example">
   <option value="0" selected>--</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select>`;
 
-const sizingSizeCode = `<select class="form-select" size="3" aria-label="Size 3 select example">
+const sizingSizeCode = `
+<select class="form-select" size="3" aria-label="Size 3 select example">
   <option value="0" selected>--</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select>`;
 
-const disabledCode = `<select class="form-select" aria-label="Disabled select example" disabled>
+const disabledCode = `
+<select class="form-select" aria-label="Disabled select example" disabled>
   <option value="0" selected>--</option>
   <option value="1">One</option>
   <option value="2">Two</option>

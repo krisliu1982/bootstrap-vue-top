@@ -447,7 +447,8 @@
 </template>
 
 <script setup>
-const example1Code = `<ul class="list-group">
+const example1Code = `
+<ul class="list-group">
   <li class="list-group-item">An item</li>
   <li class="list-group-item">A second item</li>
   <li class="list-group-item">A third item</li>
@@ -455,7 +456,8 @@ const example1Code = `<ul class="list-group">
   <li class="list-group-item">And a fifth one</li>
 </ul>`;
 
-const activeCode = `<ul class="list-group">
+const activeCode = `
+<ul class="list-group">
   <li class="list-group-item active" aria-current="true">An active item</li>
   <li class="list-group-item">A second item</li>
   <li class="list-group-item">A third item</li>
@@ -463,7 +465,8 @@ const activeCode = `<ul class="list-group">
   <li class="list-group-item">And a fifth one</li>
 </ul>`;
 
-const link1Code = `<div class="list-group">
+const link1Code = `
+<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     The current link item
   </a>
@@ -473,7 +476,8 @@ const link1Code = `<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
 </div>`;
 
-const link2Code = `<div class="list-group">
+const link2Code = `
+<div class="list-group">
   <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
     The current button
   </button>
@@ -483,7 +487,8 @@ const link2Code = `<div class="list-group">
   <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
 </div>`;
 
-const flushCode = `<ul class="list-group list-group-flush">
+const flushCode = `
+<ul class="list-group list-group-flush">
   <li class="list-group-item">An item</li>
   <li class="list-group-item">A second item</li>
   <li class="list-group-item">A third item</li>
@@ -491,13 +496,15 @@ const flushCode = `<ul class="list-group list-group-flush">
   <li class="list-group-item">And a fifth one</li>
 </ul>`;
 
-const numberCode = `<ol class="list-group list-group-numbered">
+const numberCode = `
+<ol class="list-group list-group-numbered">
   <li class="list-group-item">A list item</li>
   <li class="list-group-item">A list item</li>
   <li class="list-group-item">A list item</li>
 </ol>`;
 
-const number1Code = `<ol class="list-group list-group-numbered">
+const number1Code = `
+<ol class="list-group list-group-numbered">
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold">Subheading</div>
@@ -521,7 +528,8 @@ const number1Code = `<ol class="list-group list-group-numbered">
   </li>
 </ol>`;
 
-const horizontalCode = `<ul class="list-group list-group-horizontal">
+const horizontalCode = `
+<ul class="list-group list-group-horizontal">
   <li class="list-group-item">An item</li>
   <li class="list-group-item">A second item</li>
   <li class="list-group-item">A third item</li>
@@ -552,7 +560,8 @@ const horizontalCode = `<ul class="list-group list-group-horizontal">
   <li class="list-group-item">A third item</li>
 </ul>`;
 
-const variantCode = `<ul class="list-group">
+const variantCode = `
+<ul class="list-group">
   <li class="list-group-item">A simple default list group item</li>
   <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
   <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
@@ -564,7 +573,8 @@ const variantCode = `<ul class="list-group">
   <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
 </ul>`;
 
-const variant1Code = `<div class="list-group">
+const variant1Code = `
+<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
@@ -576,7 +586,8 @@ const variant1Code = `<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
 </div>`;
 
-const badgeCode = `<ul class="list-group">
+const badgeCode = `
+<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
     A list item
     <span class="badge text-bg-primary rounded-pill">14</span>
@@ -591,7 +602,8 @@ const badgeCode = `<ul class="list-group">
   </li>
 </ul>`;
 
-const contentCode = `<div class="list-group">
+const contentCode = `
+<div class="list-group">
   <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
@@ -618,7 +630,8 @@ const contentCode = `<div class="list-group">
   </a>
 </div>`;
 
-const check1Code = `<ul class="list-group">
+const check1Code = `
+<ul class="list-group">
   <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
     <label class="form-check-label" for="firstCheckbox">First checkbox</label>
@@ -633,7 +646,8 @@ const check1Code = `<ul class="list-group">
   </li>
 </ul>`;
 
-const check2Code = `<ul class="list-group">
+const check2Code = `
+<ul class="list-group">
   <li class="list-group-item">
     <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
     <label class="form-check-label" for="firstRadio">First radio</label>
@@ -648,7 +662,8 @@ const check2Code = `<ul class="list-group">
   </li>
 </ul>`;
 
-const check3Code = `<ul class="list-group">
+const check3Code = `
+<ul class="list-group">
   <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
     <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
@@ -663,7 +678,8 @@ const check3Code = `<ul class="list-group">
   </li>
 </ul>`;
 
-const css1Code = `--#{$prefix}list-group-color: #{$list-group-color};
+const css1Code = `
+--#{$prefix}list-group-color: #{$list-group-color};
 --#{$prefix}list-group-bg: #{$list-group-bg};
 --#{$prefix}list-group-border-color: #{$list-group-border-color};
 --#{$prefix}list-group-border-width: #{$list-group-border-width};

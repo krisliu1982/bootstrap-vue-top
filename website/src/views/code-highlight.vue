@@ -12,8 +12,17 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import Prism from 'prismjs';
+import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 // 引入 SCSS 语言支持
 import 'prismjs/components/prism-scss.min';
+
+// 配置插件，解决首尾空行问题
+Prism.plugins.NormalizeWhitespace.setDefaults({
+  'remove-trailing': true, // 移除每行行尾空格
+  'remove-indent': true, // 移除多余缩进
+  'left-trim': true, // 移除代码块顶部空白
+  'right-trim': true // 移除代码块底部空白
+});
 
 const codeRef = ref(null);
 const props = defineProps({

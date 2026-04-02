@@ -17,7 +17,8 @@
     </h2>
     <p>
       设置 <code>data</code> 树形数据，<code>attr-key</code> 为节点数据唯一标识属性名，<code>attr-label</code>
-      为节点标签属性名，<code>attr-children</code> 为子树属性名。可以通过监听
+      为节点标签属性名，<code>attr-children</code>
+      为子树属性名。可以通过监听
       <code>node-click</code> 事件，来处理点击节点后进行回调。
     </p>
     <div class="docs-example">
@@ -54,7 +55,7 @@
           ></bv-tree>
         </div>
 
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
           <button type="button" class="btn btn-primary" @click="handleSetCheckbox">setCheckboxSelectedKeys</button>
         </div>
@@ -80,7 +81,7 @@
           ></bv-tree>
         </div>
 
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleGetRadio">getRadioSelectedKey</button>
           <button type="button" class="btn btn-primary" @click="handleSetRadio">setRadioSelectedKey</button>
         </div>
@@ -181,7 +182,8 @@ function handleSetRadio() {
   treeRadioRef.value.setRadioSelectedKey(null);
 }
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <div style="width: 300px;max-height:300px;overflow: auto;" class="border p-1">
     <bv-tree 
       :data="treeData" 
@@ -230,14 +232,15 @@ function handleClick(key) {
 }
 <\/script>`;
 
-const checkboxCode = `<template>
+const checkboxCode = `
+<template>
   <div style="width: 300px;max-height:300px;overflow: auto;" class="border p-1 mb-3">
     <bv-tree ref="treeCheckboxRef" :data="treeData" 
       attr-key="id" attr-label="name" attr-children="children"
       :expand-level="0" mode="checkbox"></bv-tree>
   </div>
 
-  <div class="hstack-3 flex-wrap">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary"
       @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
     <button type="button" class="btn btn-primary"
@@ -267,14 +270,15 @@ function handleSetCheckbox() {
 }
 <\/script>`;
 
-const radioCode = `<template>
+const radioCode = `
+<template>
   <div style="width: 300px;max-height:300px;overflow: auto;" class="border p-1 mb-3">
     <bv-tree ref="treeRadioRef" :data="treeData" 
       attr-key="id" attr-label="name" attr-children="children"
       :expand-level="0" mode="radio"></bv-tree>
   </div>
 
-  <div class="hstack-3 flex-wrap">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
       @click="handleGetRadio">getRadioSelectedKey</button>
     <button type="button" class="btn btn-primary" 
@@ -304,7 +308,8 @@ function handleSetRadio() {
 }
 <\/script>`;
 
-const expandCode = `<template>
+const expandCode = `
+<template>
   <div style="width: 300px;max-height: 300px;overflow: auto;" class="border p-1">
     <bv-tree 
       :data="treeData" 

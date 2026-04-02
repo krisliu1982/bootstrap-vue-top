@@ -116,7 +116,8 @@ const slides = [
   }
 ];
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bs-carousel :items="slides"></bs-carousel>
 </template>
 
@@ -138,7 +139,8 @@ const slides = [
 ];
 <\/script>`;
 
-const fadeCode = `<template>
+const fadeCode = `
+<template>
   <bv-carousel 
     :items="slides" 
     carousel-class="carousel-fade">
@@ -149,7 +151,8 @@ const fadeCode = `<template>
 const slides = [...];
 <\/script>`;
 
-const auto1Code = `<template>
+const auto1Code = `
+<template>
   <bv-carousel 
     :items="slides" 
     ride="carousel" 
@@ -162,7 +165,8 @@ const auto1Code = `<template>
 const slides = [...];
 <\/script>`;
 
-const auto2Code = `<template>
+const auto2Code = `
+<template>
   <bv-carousel 
     :items="slides" 
     :ride="true" 
@@ -176,7 +180,8 @@ const slides = [...];
 
 <\/script>`;
 
-const auto3Code = `<template>
+const auto3Code = `
+<template>
   <bv-carousel 
     :items="slides" 
     ride="carousel" 
@@ -191,7 +196,8 @@ const auto3Code = `<template>
 const slides = [...];
 <\/script>`;
 
-const touchCode = `<template>
+const touchCode = `
+<template>
   <bv-carousel :items="slides" :touch="false"></bv-carousel>
 </template>
 

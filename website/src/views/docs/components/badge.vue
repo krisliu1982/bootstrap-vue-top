@@ -97,7 +97,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <span class="badge text-bg-primary">Primary</span>
           <span class="badge text-bg-secondary">Secondary</span>
           <span class="badge text-bg-success">Success</span>
@@ -124,7 +124,7 @@
     <p>使用 <code>.rounded-pill</code> 实用类可以使徽章更加圆润，具有更大的 <code>border-radius</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <span class="badge rounded-pill text-bg-primary">Primary</span>
           <span class="badge rounded-pill text-bg-secondary">Secondary</span>
           <span class="badge rounded-pill text-bg-success">Success</span>
@@ -151,18 +151,21 @@
 </template>
 
 <script setup>
-const example1Code = `<h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+const example1Code = `
+<h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
 <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
 <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
 <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
 <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
 <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>`;
 
-const example2Code = `<button type="button" class="btn btn-primary">
+const example2Code = `
+<button type="button" class="btn btn-primary">
   Notifications <span class="badge text-bg-secondary">4</span>
 </button>`;
 
-const example3Code = `<button type="button" class="btn btn-primary position-relative">
+const example3Code = `
+<button type="button" class="btn btn-primary position-relative">
   Inbox
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
     99+
@@ -170,14 +173,16 @@ const example3Code = `<button type="button" class="btn btn-primary position-rela
   </span>
 </button>`;
 
-const example4Code = `<button type="button" class="btn btn-primary position-relative">
+const example4Code = `
+<button type="button" class="btn btn-primary position-relative">
   Profile
   <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
     <span class="visually-hidden">New alerts</span>
   </span>
 </button>`;
 
-const bgCode = `<div class="hstack-3">
+const bgCode = `
+<div class="hstack gap-3">
     <span class="badge text-bg-primary">Primary</span>
     <span class="badge text-bg-secondary">Secondary</span>
     <span class="badge text-bg-success">Success</span>
@@ -188,7 +193,8 @@ const bgCode = `<div class="hstack-3">
     <span class="badge text-bg-dark">Dark</span>
 </div>`;
 
-const pillCode = `<div class="hstack-3">
+const pillCode = `
+<div class="hstack gap-3">
     <span class="badge rounded-pill text-bg-primary">Primary</span>
     <span class="badge rounded-pill text-bg-secondary">Secondary</span>
     <span class="badge rounded-pill text-bg-success">Success</span>
@@ -199,7 +205,8 @@ const pillCode = `<div class="hstack-3">
     <span class="badge rounded-pill text-bg-dark">Dark</span>
 </div>`;
 
-const css1Code = `--#{$prefix}badge-padding-x: #{$badge-padding-x};
+const css1Code = `
+--#{$prefix}badge-padding-x: #{$badge-padding-x};
 --#{$prefix}badge-padding-y: #{$badge-padding-y};
 @include rfs($badge-font-size, --#{$prefix}badge-font-size);
 --#{$prefix}badge-font-weight: #{$badge-font-weight};

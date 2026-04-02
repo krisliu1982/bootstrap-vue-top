@@ -57,7 +57,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary">Primary</button>
           <button type="button" class="btn btn-secondary">Secondary</button>
           <button type="button" class="btn btn-success">Success</button>
@@ -77,7 +77,8 @@
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
-      的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
+      的可见文本），或者通过其他方式予以说明，比如使用带有
+      <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
     <h2 id="buttons-nowrap">
@@ -110,7 +111,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <a class="btn btn-primary" href="#" role="button">Link</a>
           <button class="btn btn-primary" type="submit">Button</button>
           <input class="btn btn-primary" type="button" value="Input" />
@@ -130,7 +131,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-outline-primary">Primary</button>
           <button type="button" class="btn btn-outline-secondary">Secondary</button>
           <button type="button" class="btn btn-outline-success">Success</button>
@@ -152,17 +153,17 @@
     <p>你甚至可以使用CSS变量来自定义尺寸：</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary btn-lg">Large button</button>
           <button type="button" class="btn btn-secondary btn-lg">Large button</button>
         </div>
         <hr />
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary btn-sm">Small button</button>
           <button type="button" class="btn btn-secondary btn-sm">Small button</button>
         </div>
         <hr />
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button
             type="button"
             class="btn btn-primary"
@@ -186,7 +187,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" disabled>Primary button</button>
           <button type="button" class="btn btn-secondary" disabled>Button</button>
           <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
@@ -213,7 +214,7 @@
     </ul>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
           <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
         </div>
@@ -222,7 +223,8 @@
     </div>
     <h3>链接功能注意事项</h3>
     <p>
-      为了处理那些需要保留 <code>href</code> 属性但在链接处于禁用状态时的情况，<code>.disabled</code> 类使用
+      为了处理那些需要保留
+      <code>href</code> 属性但在链接处于禁用状态时的情况，<code>.disabled</code> 类使用
       <code>pointer-events: none</code> 来尝试阻止 <code>&lt;a&gt;</code> 标签的链接功能。请注意，此 CSS 属性目前尚未在
       HTML 中标准化，但所有现代浏览器都支持它。此外，即使某些浏览器支持
       <code>pointer-events: none</code
@@ -232,7 +234,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
           <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
         </div>
@@ -276,7 +278,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button class="btn btn-primary" type="button" disabled>
             <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
             <span class="visually-hidden" role="status">Loading...</span>
@@ -287,7 +289,7 @@
           </button>
         </div>
         <hr />
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button class="btn btn-primary" type="button" disabled>
             <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
             <span class="visually-hidden" role="status"> Loading...</span>
@@ -314,9 +316,11 @@
 </template>
 
 <script setup>
-const baseCode = `<button type="button" class="btn">Base class</button>`;
+const baseCode = `
+<button type="button" class="btn">Base class</button>`;
 
-const variantsCode = `<div class="hstack-3 flex-wrap">
+const variantsCode = `
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-success">Success</button>
@@ -329,7 +333,8 @@ const variantsCode = `<div class="hstack-3 flex-wrap">
     <button type="button" class="btn btn-link">Link</button>
 </div>`;
 
-const tagCode = `<div class="hstack-3 flex-wrap">
+const tagCode = `
+<div class="hstack gap-3 flex-wrap">
     <a class="btn btn-primary" href="#" role="button">Link</a>
     <button class="btn btn-primary" type="submit">Button</button>
     <input class="btn btn-primary" type="button" value="Input">
@@ -337,7 +342,8 @@ const tagCode = `<div class="hstack-3 flex-wrap">
     <input class="btn btn-primary" type="reset" value="Reset">
 </div>`;
 
-const outlineCode = `<div class="hstack-3 flex-wrap">
+const outlineCode = `
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-outline-primary">Primary</button>
     <button type="button" class="btn btn-outline-secondary">Secondary</button>
     <button type="button" class="btn btn-outline-success">Success</button>
@@ -348,41 +354,46 @@ const outlineCode = `<div class="hstack-3 flex-wrap">
     <button type="button" class="btn btn-outline-dark">Dark</button>
 </div>`;
 
-const sizeCode = `<div class="hstack-3">
+const sizeCode = `
+<div class="hstack gap-3">
     <button type="button" class="btn btn-primary btn-lg">Large button</button>
     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
 </div>
 <hr/>
-<div class="hstack-3">
+<div class="hstack gap-3">
     <button type="button" class="btn btn-primary btn-sm">Small button</button>
     <button type="button" class="btn btn-secondary btn-sm">Small button</button>
 </div>
 <hr/>
-<div class="hstack-3">
+<div class="hstack gap-3">
     <button type="button" class="btn btn-primary"
             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
     Custom button
     </button>
 </div>`;
 
-const disabledCode = `<div class="hstack-3">
+const disabledCode = `
+<div class="hstack gap-3">
     <button type="button" class="btn btn-primary" disabled>Primary button</button>
     <button type="button" class="btn btn-secondary" disabled>Button</button>
     <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
     <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
 </div>`;
 
-const disabled1Code = `<div class="hstack-3">
+const disabled1Code = `
+<div class="hstack gap-3">
     <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
     <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
 </div>`;
 
-const disabled2Code = `<div class="hstack-3">
+const disabled2Code = `
+<div class="hstack gap-3">
     <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
     <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
 </div>`;
 
-const blockCode = `<div class="d-grid gap-2">
+const blockCode = `
+<div class="d-grid gap-2">
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
 </div>
@@ -402,7 +413,8 @@ const blockCode = `<div class="d-grid gap-2">
   <button class="btn btn-primary" type="button">Button</button>
 </div>`;
 
-const loadingCode = `<div class="hstack-3">
+const loadingCode = `
+<div class="hstack gap-3">
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
     <span class="visually-hidden" role="status">Loading...</span>
@@ -413,7 +425,7 @@ const loadingCode = `<div class="hstack-3">
   </button>
 </div>
 <hr />
-<div class="hstack-3">
+<div class="hstack gap-3">
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
     <span class="visually-hidden" role="status"> Loading...</span>
@@ -424,7 +436,8 @@ const loadingCode = `<div class="hstack-3">
   </button>
 </div>`;
 
-const css1Code = `--#{$prefix}btn-padding-x: #{$btn-padding-x};
+const css1Code = `
+--#{$prefix}btn-padding-x: #{$btn-padding-x};
 --#{$prefix}btn-padding-y: #{$btn-padding-y};
 --#{$prefix}btn-font-family: #{$btn-font-family};
 @include rfs($btn-font-size, --#{$prefix}btn-font-size);

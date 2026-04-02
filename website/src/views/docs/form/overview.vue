@@ -198,7 +198,8 @@
 </template>
 
 <script setup>
-const overviewCode = `<form>
+const overviewCode = `
+<form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -215,9 +216,11 @@ const overviewCode = `<form>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>`;
 
-const disabledCode = `<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>`;
+const disabledCode = `
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>`;
 
-const disabledFormCode = `<form>
+const disabledFormCode = `
+<form>
   <fieldset disabled>
     <legend>Disabled fieldset example</legend>
     <div class="mb-3">

@@ -270,7 +270,8 @@
 </template>
 
 <script setup>
-const exampleCode = `<div class="mb-3">
+const exampleCode = `
+<div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
@@ -279,22 +280,27 @@ const exampleCode = `<div class="mb-3">
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>`;
 
-const sizingCode = `<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"/>
+const sizingCode = `
+<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"/>
 <input class="form-control" type="text" placeholder="Default input" aria-label="default input example"/>
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example"/>`;
 
-const textCode = `<label for="inputPassword5" class="form-label">Password</label>
+const textCode = `
+<label for="inputPassword5" class="form-label">Password</label>
 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
 <div id="passwordHelpBlock" class="form-text">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </div>`;
 
-const disabledCode = `<input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+const disabledCode = `
+<input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
 <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>`;
 
-const readonlyCode = `<input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+const readonlyCode = `
+<input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
 `;
-const plainCode = `<div class="mb-3 row">
+const plainCode = `
+<div class="mb-3 row">
   <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
   <div class="col-sm-10">
     <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
@@ -307,7 +313,8 @@ const plainCode = `<div class="mb-3 row">
   </div>
 </div>`;
 
-const plaininlineCode = `<form class="row g-3">
+const plaininlineCode = `
+<form class="row g-3">
   <div class="col-auto">
     <label for="staticEmail2" class="visually-hidden">Email</label>
     <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
@@ -321,7 +328,8 @@ const plaininlineCode = `<form class="row g-3">
   </div>
 </form>`;
 
-const fileCode = `<div class="mb-3">
+const fileCode = `
+<div class="mb-3">
   <label for="formFile" class="form-label">Default file input example</label>
   <input class="form-control" type="file" id="formFile">
 </div>
@@ -342,10 +350,12 @@ const fileCode = `<div class="mb-3">
   <input class="form-control form-control-lg" id="formFileLg" type="file">
 </div>`;
 
-const colorCode = `<label for="exampleColorInput" class="form-label">Color picker</label>
+const colorCode = `
+<label for="exampleColorInput" class="form-label">Color picker</label>
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">`;
 
-const datalistsCode = `<label for="exampleDataList" class="form-label">Datalist example</label>
+const datalistsCode = `
+<label for="exampleDataList" class="form-label">Datalist example</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
 <datalist id="datalistOptions">
     <option value="San Francisco"></option>

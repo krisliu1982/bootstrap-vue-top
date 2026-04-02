@@ -24,9 +24,11 @@
       表示法<a class="anchor-link" aria-label="Link to this section: 表示法" href="#display-notation"> </a>
     </h2>
     <p>
-      适用于所有 <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">断点</a>（从
-      <code>xs</code> 到 <code>xxl</code>）的显示类中没有断点缩写。这是因为这些类是从
-      <code>min-width: 0;</code> 开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。
+      适用于所有
+      <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">断点</a>（从 <code>xs</code> 到
+      <code>xxl</code>）的显示类中没有断点缩写。这是因为这些类是从
+      <code>min-width: 0;</code>
+      开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。
     </p>
     <p>因此，这些类的名称采用的格式为：</p>
     <ul class="docs-content-list">
@@ -65,12 +67,14 @@
     </p>
     <p>
       若要隐藏元素，只需使用 <code>.d-none</code> 类，或者使用
-      <code>.d-{sm,md,lg,xl,xxl}-none</code> 类中的任何一个来针对任何响应式屏幕变体进行设置即可。
+      <code>.d-{sm,md,lg,xl,xxl}-none</code>
+      类中的任何一个来针对任何响应式屏幕变体进行设置即可。
     </p>
     <p>
-      若要仅在特定屏幕尺寸范围内显示某个元素，您可以将一个 <code>.d-*-none</code> 类与一个
-      <code>.d-*-*</code> 类组合使用，例如
-      <code>.d-none .d-md-block .d-xl-none</code> 将会使该元素在除中型和大型设备之外的所有屏幕尺寸上均不显示。
+      若要仅在特定屏幕尺寸范围内显示某个元素，您可以将一个
+      <code>.d-*-none</code> 类与一个 <code>.d-*-*</code> 类组合使用，例如
+      <code>.d-none .d-md-block .d-xl-none</code>
+      将会使该元素在除中型和大型设备之外的所有屏幕尺寸上均不显示。
     </p>
     <div class="table-responsive">
       <table class="table">
@@ -145,8 +149,9 @@
       打印显示<a class="anchor-link" aria-label="Link to this section: 打印显示" href="#display-opacity"> </a>
     </h2>
     <p>
-      使用我们的打印显示实用类来更改元素的 <code>display</code> 值，以便在打印时生效。该功能还支持与我们的响应式
-      <code>.d-*</code> 实用类相同的 <code>display</code> 值。
+      使用我们的打印显示实用类来更改元素的
+      <code>display</code> 值，以便在打印时生效。该功能还支持与我们的响应式 <code>.d-*</code> 实用类相同的
+      <code>display</code> 值。
     </p>
     <ul class="docs-content-list">
       <li><code>.d-print-none</code></li>
@@ -174,7 +179,14 @@
 </template>
 
 <script setup>
-const printCode = `<div class="d-print-none">Screen Only (Hide on print only)</div>
-<div class="d-none d-print-block">Print Only (Hide on screen only)</div>
-<div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>`;
+const printCode = `
+<div class="d-print-none">
+  Screen Only (Hide on print only)
+</div>
+<div class="d-none d-print-block">
+  Print Only (Hide on screen only)
+</div>
+<div class="d-none d-lg-block d-print-block">
+  Hide up to large on screen, but always show on print
+</div>`;
 </script>

@@ -13,13 +13,12 @@
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#alerts-confirm-base"> </a>
     </h2>
     <p>
-      通过提供 <code>alertConfirm</code> 方法并且它接受一个
-      <code>Object</code> 作为其参数。 你可以通过 <code>message</code> 属性来设置警示内容,
-      <code>confirm</code> 属性设置确认回调函数。
+      通过提供 <code>alertConfirm</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 你可以通过
+      <code>message</code> 属性来设置警示内容, <code>confirm</code> 属性设置确认回调函数。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <button type="button" class="btn btn-primary" @click="handleClick">Alert Confirm</button>
         </div>
       </div>
@@ -43,7 +42,8 @@ function handleClick() {
   });
 }
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <button type="button" class="btn btn-primary" 
     @click="handleClick">Alert Confirm</button>
 </template>

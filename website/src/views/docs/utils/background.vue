@@ -10,7 +10,9 @@
   <div v-scrollspy data-bs-target="#docs-nav-background" class="docs-content">
     <h1>Background 背景</h1>
     <p class="fs-4 fw-light">
-      通过 <code>background-color</code> 来传达意义，并使用渐变来添加装饰效果。了解更多请阅读
+      通过
+      <code>background-color</code>
+      来传达意义，并使用渐变来添加装饰效果。了解更多请阅读
       <a href="https://getbootstrap.com/docs/5.3/utilities/background/" target="_blank">Boostrap Background</a>
     </p>
     <p class="text-bg-info">
@@ -19,7 +21,8 @@
       <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
-      的可见文本），或者通过其他方式予以说明，比如使用带有 <code>.visually-hidden</code> 类的隐藏文本。
+      的可见文本），或者通过其他方式予以说明，比如使用带有
+      <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
     <h2 id="background-base">
@@ -27,8 +30,11 @@
     </h2>
     <p>
       与上下文文本颜色类类似，可以将元素的背景设置为任何上下文类。背景工具
-      <strong>不会设置 <code>color</code></strong> ，所以在某些情况下，您可能需要使用 <code>.text-*</code>
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank">文本颜色工具</a> 。
+      <strong>不会设置 <code>color</code></strong>
+      ，所以在某些情况下，您可能需要使用
+      <code>.text-*</code>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank">文本颜色工具</a>
+      。
     </p>
     <p class="text-bg-info">
       像 <code>.bg-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass
@@ -71,7 +77,10 @@
       <code>.bg-gradient</code>
       类，会在背景中添加一条线性渐变效果作为背景图片。这条渐变从半透明的白色开始，逐渐向底部淡去。
     </p>
-    <p>您的自定义 CSS 是否需要渐变效果呢？只需添加 <code>background-image: var(--bs-gradient);</code> 即可。</p>
+    <p>
+      您的自定义 CSS 是否需要渐变效果呢？只需添加
+      <code>background-image: var(--bs-gradient);</code> 即可。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary.bg-gradient</div>
@@ -89,7 +98,10 @@
     <h2 id="background-opacity">
       透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#background-opacity"> </a>
     </h2>
-    <p>若要更改该不透明度，请通过自定义样式或内联样式来覆盖 <code>--bs-border-opacity</code> 属性。</p>
+    <p>
+      若要更改该不透明度，请通过自定义样式或内联样式来覆盖
+      <code>--bs-border-opacity</code> 属性。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="bg-success p-2 text-white">This is default success background</div>
@@ -112,7 +124,8 @@
 </template>
 
 <script setup>
-const baseCode = `<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+const baseCode = `
+<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
 <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">.bg-primary-subtle</div>
 <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
 <div class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">.bg-secondary-subtle</div>
@@ -135,12 +148,26 @@ const baseCode = `<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
 <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
 <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>`;
 
-const opacity1Code = `<div class="bg-success p-2 text-white">This is default success background</div>
-<div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>`;
+const opacity1Code = `
+<div class="bg-success p-2 text-white">This is default success background</div>
+<div class="bg-success p-2" style="--bs-bg-opacity: .5;">
+  This is 50% opacity success background
+</div>`;
 
-const opacity2Code = `<div class="bg-success p-2 text-white">This is default success background</div>
-<div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
-<div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
-<div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
-<div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>`;
+const opacity2Code = `
+<div class="bg-success p-2 text-white">
+  This is default success background
+</div>
+<div class="bg-success p-2 text-white bg-opacity-75">
+  This is 75% opacity success background
+</div>
+<div class="bg-success p-2 text-dark bg-opacity-50">
+  This is 50% opacity success background
+</div>
+<div class="bg-success p-2 text-dark bg-opacity-25">
+  This is 25% opacity success background
+</div>
+<div class="bg-success p-2 text-dark bg-opacity-10">
+  This is 10% opacity success background
+</div>`;
 </script>

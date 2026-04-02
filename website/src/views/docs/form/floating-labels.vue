@@ -238,7 +238,8 @@ Disabled textarea with some text inside</textarea
 </template>
 
 <script setup>
-const exampleCode = `<div class="form-floating mb-3">
+const exampleCode = `
+<div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
   <label for="floatingInput">Email address</label>
 </div>
@@ -247,17 +248,20 @@ const exampleCode = `<div class="form-floating mb-3">
   <label for="floatingPassword">Password</label>
 </div>`;
 
-const textareasCode = `<div class="form-floating">
+const textareasCode = `
+<div class="form-floating">
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
   <label for="floatingTextarea">Comments</label>
 </div>`;
 
-const textareas1Code = `<div class="form-floating">
+const textareas1Code = `
+<div class="form-floating">
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
   <label for="floatingTextarea2">Comments</label>
 </div>`;
 
-const selectCode = `<div class="form-floating">
+const selectCode = `
+<div class="form-floating">
   <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
     <option value="0" selected>--</option>
     <option value="1">One</option>
@@ -267,7 +271,8 @@ const selectCode = `<div class="form-floating">
   <label for="floatingSelect">Works with selects</label>
 </div>`;
 
-const disabledCode = `<div class="form-floating mb-3">
+const disabledCode = `
+<div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
   <label for="floatingInputDisabled">Email address</label>
 </div>
@@ -289,7 +294,8 @@ const disabledCode = `<div class="form-floating mb-3">
   <label for="floatingSelectDisabled">Works with selects</label>
 </div>`;
 
-const plainCode = `<div class="form-floating mb-3">
+const plainCode = `
+<div class="form-floating mb-3">
   <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
   <label for="floatingEmptyPlaintextInput">Empty input</label>
 </div>
@@ -298,7 +304,8 @@ const plainCode = `<div class="form-floating mb-3">
   <label for="floatingPlaintextInput">Input with value</label>
 </div>`;
 
-const groupsCode = `<div class="input-group">
+const groupsCode = `
+<div class="input-group">
   <span class="input-group-text">@</span>
   <div class="form-floating">
     <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
@@ -306,7 +313,8 @@ const groupsCode = `<div class="input-group">
   </div>
 </div>`;
 
-const groups1Code = `<div class="input-group has-validation">
+const groups1Code = `
+<div class="input-group has-validation">
   <span class="input-group-text">@</span>
   <div class="form-floating is-invalid">
     <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>

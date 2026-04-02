@@ -487,7 +487,8 @@
 </template>
 
 <script setup>
-const utilitiesCode = `<div class="mb-3">
+const utilitiesCode = `
+<div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Example label</label>
   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
 </div>
@@ -496,7 +497,8 @@ const utilitiesCode = `<div class="mb-3">
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
 </div>`;
 
-const gridCode = `<div class="row">
+const gridCode = `
+<div class="row">
   <div class="col">
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
   </div>
@@ -505,7 +507,8 @@ const gridCode = `<div class="row">
   </div>
 </div>`;
 
-const tableCode = `<table class="table">
+const tableCode = `
+<table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -540,7 +543,8 @@ const tableCode = `<table class="table">
     </tbody>
   </table>`;
 
-const guttersCode = `<div class="row g-3">
+const guttersCode = `
+<div class="row g-3">
   <div class="col">
     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
   </div>
@@ -549,7 +553,8 @@ const guttersCode = `<div class="row g-3">
   </div>
 </div>`;
 
-const gutters1Code = `<form class="row g-3">
+const gutters1Code = `
+<form class="row g-3">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email</label>
     <input type="email" class="form-control" id="inputEmail4">
@@ -594,7 +599,8 @@ const gutters1Code = `<form class="row g-3">
   </div>
 </form>`;
 
-const horizontalCode = `<form>
+const horizontalCode = `
+<form>
   <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
@@ -647,7 +653,8 @@ const horizontalCode = `<form>
   </div>
 </form>`;
 
-const labelCode = `<div class="row mb-3">
+const labelCode = `
+<div class="row mb-3">
   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
   <div class="col-sm-10">
     <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
@@ -666,7 +673,8 @@ const labelCode = `<div class="row mb-3">
   </div>
 </div>`;
 
-const sizingCode = `<div class="row g-3">
+const sizingCode = `
+<div class="row g-3">
   <div class="col-sm-7">
     <input type="text" class="form-control" placeholder="City" aria-label="City">
   </div>
@@ -678,7 +686,8 @@ const sizingCode = `<div class="row g-3">
   </div>
 </div>`;
 
-const autoCode = `<form class="row gx-3 gy-2 align-items-center">
+const autoCode = `
+<form class="row gx-3 gy-2 align-items-center">
   <div class="col-sm-3">
     <label class="visually-hidden" for="specificSizeInputName">Name</label>
     <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
@@ -712,7 +721,8 @@ const autoCode = `<form class="row gx-3 gy-2 align-items-center">
   </div>
 </form>`;
 
-const auto1Code = `<form class="row gx-3 gy-2 align-items-center">
+const auto1Code = `
+<form class="row gx-3 gy-2 align-items-center">
   <div class="col-sm-3">
     <label class="visually-hidden" for="specificSizeInputName">Name</label>
     <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
@@ -746,7 +756,8 @@ const auto1Code = `<form class="row gx-3 gy-2 align-items-center">
   </div>
 </form>`;
 
-const inlineCode = `<form class="row row-cols-lg-auto g-3 align-items-center">
+const inlineCode = `
+<form class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">
     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
     <div class="input-group">

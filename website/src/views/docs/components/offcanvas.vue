@@ -117,7 +117,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="offcanvasEndRef.toggle()">
             Toggle right offcanvas
           </button>
@@ -218,7 +218,8 @@ function handleShown() {
   }
 }
 
-const exampleCode = `<template>
+const exampleCode = `
+<template>
     <button type="button" class="btn btn-primary" 
       @click="offcanvasExampleRef.toggle()">Toggle offcanvas</button>
     <bv-offcanvas ref="offcanvasExampleRef" title="基础示例">
@@ -232,7 +233,8 @@ import { ref } from 'vue'
 const offcanvasExampleRef = ref(null)
 <\/script>`;
 
-const staticCode = `<template>
+const staticCode = `
+<template>
     <button type="button" class="btn btn-primary" 
       @click="offcanvasStaticRef.toggle()">
       Static backdrop offcanvas
@@ -248,8 +250,9 @@ import { ref } from 'vue'
 const offcanvasStaticRef = ref(null)
 <\/script>`;
 
-const positionCode = `<template>
-  <div class="hstack-3 flex-wrap">
+const positionCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" @click="offcanvasEndRef.toggle()">
       Toggle right offcanvas
     </button>
@@ -283,7 +286,8 @@ const offcanvasTopRef = ref(null)
 const offcanvasBottomRef = ref(null)
 <\/script>`;
 
-const eventCode = `<template>
+const eventCode = `
+<template>
   <button type="button" class="btn btn-primary" @click="offcanvasEventRef.toggle()">
     Offcanvas event
   </button>
@@ -316,7 +320,8 @@ function handleShown() {
 }
 <\/script>`;
 
-const css1Code = `--#{$prefix}offcanvas-zindex: #{$zindex-offcanvas};
+const css1Code = `
+--#{$prefix}offcanvas-zindex: #{$zindex-offcanvas};
 --#{$prefix}offcanvas-width: #{$offcanvas-horizontal-width};
 --#{$prefix}offcanvas-height: #{$offcanvas-vertical-height};
 --#{$prefix}offcanvas-padding-x: #{$offcanvas-padding-x};

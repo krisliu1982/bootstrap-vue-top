@@ -483,12 +483,15 @@ const data = ref(null);
 function handleShown(index) {
   if (data.value === null && index === 1) {
     setTimeout(() => {
-      data.value = { content: 'Woo-hoo, you’re reading this text in a tab content!' };
+      data.value = {
+        content: 'Woo-hoo, you’re reading this text in a tab content!'
+      };
     }, 1000);
   }
 }
 
-const exampleCode = `<template>
+const exampleCode = `
+<template>
   <bv-tabs :init-active-index="0">
     <bv-tab-pane label="Home">
         ...
@@ -503,34 +506,41 @@ const exampleCode = `<template>
   </bv-tabs>
 </template>`;
 
-const horizontalCode = `<template>
+const horizontalCode = `
+<template>
   <bv-tabs tabs-class="justify-content-center">...</bv-tabs>
 
   <bv-tabs tabs-class="justify-content-end">...</bv-tabs>
 </template>`;
 
-const tabsCode = `<template>
+const tabsCode = `
+<template>
   <bv-tabs tabs-class="nav-tabs">...</bv-tabs>
 </template>`;
 
-const pillsCode = `<template>
+const pillsCode = `
+<template>
   <bv-tabs tabs-class="nav-pills">...</bv-tabs>
 </template>`;
 
-const underlineCode = `<template>
+const underlineCode = `
+<template>
   <bv-tabs tabs-class="nav-underline" 
     tabs-style="--bs-nav-underline-gap: 1.5rem;">...</bv-tabs>
 </template>`;
 
-const fill1Code = `<template>
+const fill1Code = `
+<template>
   <bv-tabs tabs-class="nav-pills nav-fill">...</bv-tabs>
 </template>`;
 
-const fill2Code = `<template>
+const fill2Code = `
+<template>
   <bv-tabs tabs-class="nav-pills nav-justified">...</bv-tabs>
 </template>`;
 
-const positionCode = `<template>
+const positionCode = `
+<template>
   <bv-tabs tabs-class="nav-pills" position="bottom">...</bv-tabs>
   <hr/>
   <bv-tabs tabs-class="nav-pills" position="start">...</bv-tabs>
@@ -538,11 +548,13 @@ const positionCode = `<template>
   <bv-tabs tabs-class="nav-pills" position="end">...</bv-tabs>
 </template>`;
 
-const lazyCode = `<template>
+const lazyCode = `
+<template>
     <bv-tabs tabs-class="nav-tabs" :lazy="true">...</bv-tabs>
 </template>`;
 
-const eventCode = `<template>
+const eventCode = `
+<template>
   <bv-tabs tabs-class="nav-tabs" @tab-shown="handleShown">
       <bv-tab-pane label="Home">
           ...
@@ -578,7 +590,8 @@ function handleShown(index) {
 }
 <\/script>`;
 
-const css1Code = `//.nav base class
+const css1Code = `
+//.nav base class
 --#{$prefix}nav-link-padding-x: #{$nav-link-padding-x};
 --#{$prefix}nav-link-padding-y: #{$nav-link-padding-y};
 @include rfs($nav-link-font-size, --#{$prefix}nav-link-font-size);

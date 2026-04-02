@@ -27,7 +27,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3 flex-wrap">
+        <div class="hstack gap-3 flex-wrap">
           <a
             v-for="item in colors"
             href="#"
@@ -74,12 +74,14 @@ const color = ref(null);
 
 const size = ref('md');
 
-const baseCode = `<template>
+const baseCode = `
+<template>
   <bv-backtop />
 </template>`;
 
-const colorCode = `<template>
-  <div class="hstack-3 flex-wrap">
+const colorCode = `
+<template>
+  <div class="hstack gap-3 flex-wrap">
     <a v-for="item in colors"
       href="#"
       class="link-offset-3"
@@ -109,7 +111,8 @@ const colors = [
 const color = ref(null);
 <\/script>`;
 
-const sizeCode = `<template>
+const sizeCode = `
+<template>
   <div class="form-check form-check-inline">
     <input class="form-check-input" type="radio" id="radio-sm" 
       value="sm" v-model="size">

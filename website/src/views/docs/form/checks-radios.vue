@@ -289,7 +289,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <input type="checkbox" class="btn-check" value="one" id="cb-1" v-model="checkboxVal" />
           <label class="btn btn-outline-primary" for="cb-1">Check1</label>
 
@@ -315,7 +315,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack-3">
+        <div class="hstack gap-3">
           <input type="radio" class="btn-check" value="one" id="rb-1" v-model="radioVal" />
           <label class="btn btn-outline-primary" for="rb-1">Radio1</label>
 
@@ -337,7 +337,8 @@ import { ref } from 'vue';
 const checkboxVal = ref([]);
 const radioVal = ref(null);
 
-const checksCode = `<div class="form-check">
+const checksCode = `
+<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkDefault">
   <label class="form-check-label" for="checkDefault">
     Default checkbox
@@ -350,7 +351,8 @@ const checksCode = `<div class="form-check">
   </label>
 </div>`;
 
-const radiosCode = `<div class="form-check">
+const radiosCode = `
+<div class="form-check">
   <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
   <label class="form-check-label" for="radioDefault1">
     Default radio
@@ -363,7 +365,8 @@ const radiosCode = `<div class="form-check">
   </label>
 </div>`;
 
-const disabledCode = `<div class="form-check">
+const disabledCode = `
+<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkDisabled" disabled>
   <label class="form-check-label" for="checkDisabled">
     Disabled checkbox
@@ -376,7 +379,8 @@ const disabledCode = `<div class="form-check">
   </label>
 </div>`;
 
-const switchesCode = `<div class="form-check form-switch">
+const switchesCode = `
+<div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
   <label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
 </div>
@@ -393,14 +397,16 @@ const switchesCode = `<div class="form-check form-switch">
   <label class="form-check-label" for="switchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
 </div>`;
 
-const switches1Code = `<div class="form-check form-switch">
+const switches1Code = `
+<div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
   <label class="form-check-label" for="checkNativeSwitch">
     Native switch haptics
   </label>
 </div>`;
 
-const inlineCode = `<section class="mb-3">
+const inlineCode = `
+<section class="mb-3">
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
         <label class="form-check-label" for="inlineCheckbox1">1</label>
@@ -430,7 +436,8 @@ const inlineCode = `<section class="mb-3">
     </div>
 </section>`;
 
-const reverseCode = `<div class="form-check form-check-reverse">
+const reverseCode = `
+<div class="form-check form-check-reverse">
   <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
   <label class="form-check-label" for="reverseCheck1">
     Reverse checkbox
@@ -448,7 +455,8 @@ const reverseCode = `<div class="form-check form-check-reverse">
   <label class="form-check-label" for="switchCheckReverse">Reverse switch checkbox input</label>
 </div>`;
 
-const nolabelsCode = `<div>
+const nolabelsCode = `
+<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
 </div>
 
@@ -456,8 +464,9 @@ const nolabelsCode = `<div>
   <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
 </div>`;
 
-const checkButtonCode = `<templete>
-    <div class="hstack-3">
+const checkButtonCode = `
+<templete>
+    <div class="hstack gap-3">
         <input type="checkbox" class="btn-check" value="one" id="cb-1" v-model="checkboxVal">
         <label class="btn btn-outline-primary" for="cb-1">Check1</label>
 
@@ -475,8 +484,9 @@ import { ref } from 'vue'
 const checkboxVal = ref([]);
 <\/script>`;
 
-const radioButtonCode = `<templete>
-    <div class="hstack-3">
+const radioButtonCode = `
+<templete>
+    <div class="hstack gap-3">
         <input type="radio" class="btn-check" value="one" id="rb-1" v-model="radioVal">
         <label class="btn btn-outline-primary" for="rb-1">Radio1</label>
 
