@@ -234,6 +234,10 @@ var routes = [
         component: () => import('@/views/docs/utils/float.vue')
       },
       {
+        path: '/docs/utils/focus-ring',
+        component: () => import('@/views/docs/utils/focus-ring.vue')
+      },
+      {
         path: '/docs/utils/interactions',
         component: () => import('@/views/docs/utils/interactions.vue')
       },

@@ -296,6 +296,11 @@
               </RouterLink>
             </li>
             <li class="py-1">
+              <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active"
+                >Focus ring 焦点环
+              </RouterLink>
+            </li>
+            <li class="py-1">
               <RouterLink to="/docs/utils/interactions" class="docs-sidebar-link" exact-active-class="active">
                 Interactions 交互
               </RouterLink>
@@ -306,86 +311,81 @@
               >
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active"
-                >Focus ring
-              </RouterLink>
-            </li>
-            <li class="py-1">
               <RouterLink to="/docs/utils/object-fit" class="docs-sidebar-link" exact-active-class="active"
-                >Object fit
+                >Object fit 对象拟合
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/opacity" class="docs-sidebar-link" exact-active-class="active"
-                >Opacity
+                >Opacity 透明度
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/overflow" class="docs-sidebar-link" exact-active-class="active"
-                >Overflow
+                >Overflow 溢出
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/position" class="docs-sidebar-link" exact-active-class="active"
-                >Position
+                >Position 位置
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/ratio" class="docs-sidebar-link" exact-active-class="active"
-                >Ratio
-              </RouterLink>
-            </li>
-            <li class="py-1">
-              <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active"
-                >Shadows
+                >Ratio 比例
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/sizing" class="docs-sidebar-link" exact-active-class="active"
-                >Sizing
+                >Sizing 尺寸规格
+              </RouterLink>
+            </li>
+            <li class="py-1">
+              <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active"
+                >Shadows 阴影
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/spacing" class="docs-sidebar-link" exact-active-class="active"
-                >Spacing
+                >Spacing 间距
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/stacks" class="docs-sidebar-link" exact-active-class="active"
-                >Stacks
+                >Stacks 堆叠
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/stretched-link" class="docs-sidebar-link" exact-active-class="active">
-                Stretched link
+                Stretched link 拉伸链接
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active">Text </RouterLink>
+              <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active">Text 文本</RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/vertical-align" class="docs-sidebar-link" exact-active-class="active">
-                Vertical align
+                Vertical align 垂直对齐
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/vertical-rule" class="docs-sidebar-link" exact-active-class="active">
-                Vertical rule
+                Vertical rule 竖线
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/visibility" class="docs-sidebar-link" exact-active-class="active"
-                >Visibility
+                >Visibility 可见性
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/visually-hidden" class="docs-sidebar-link" exact-active-class="active"
-                >Visually hidden
+                >Visually hidden 视觉隐藏
               </RouterLink>
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/z-index" class="docs-sidebar-link" exact-active-class="active"
-                >Z-index
+                >Z-index 层级
               </RouterLink>
             </li>
           </ul>
