@@ -1,7 +1,7 @@
 <template>
   <div class="docs-toc text-body-secondary">
     <nav id="docs-nav-select">
-      <a href="#select-base">预设</a>
+      <a href="#select-default">预设</a>
       <a href="#select-sizing">尺寸调整</a>
       <a href="#select-disabled">禁用</a>
     </nav>
@@ -15,8 +15,8 @@
       <a href="https://getbootstrap.com/docs/5.3/forms/select/" target="_blank">Bootstrap Form Select</a>
     </p>
 
-    <h2 id="select-base">
-      预设<a class="anchor-link" aria-label="Link to this section: 预设" href="#select-base"> </a>
+    <h2 id="select-default">
+      预设<a class="anchor-link" aria-label="Link to this section: 预设" href="#select-default"> </a>
     </h2>
     <p>
       自定义 <code>&lt;select&gt;</code> 选择器只需一个自定义类名
@@ -32,7 +32,7 @@
           <option value="3">Three</option>
         </select>
       </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
+      <code-highlight type="html" :code="defaultCode" label="html" />
     </div>
 
     <h2 id="select-sizing">
@@ -104,7 +104,7 @@
 </template>
 
 <script setup>
-const baseCode = `
+const defaultCode = `
 <select class="form-select" aria-label="Default select example">
     <option value="0" selected>--</option>
     <option value="1">One</option>

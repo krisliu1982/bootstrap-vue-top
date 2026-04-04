@@ -244,6 +244,10 @@ var routes = [
       {
         path: '/docs/utils/link',
         component: () => import('@/views/docs/utils/link.vue')
+      },
+      {
+        path: '/docs/utils/object-fit',
+        component: () => import('@/views/docs/utils/object-fit.vue')
       }
     ]
   },
