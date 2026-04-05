@@ -1,136 +1,205 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-position">
+      <a href="#position-value">位置值</a>
+      <a href="#position-arrange">排列元素</a>
+      <a href="#position-center">中心元素</a>
+      <a href="#position-example">示例</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-position" class="docs-content">
+    <h1>Position 位置</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      使用这些简写工具可以快速设置元素的位置。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/utilities/position/" target="_blank">Boostrap Position</a>
     </p>
 
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
+    <h2 id="position-value">
+      位置值<a class="anchor-link" aria-label="Link to this section: 位置值" href="#position-value"> </a>
     </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
+有快速定位功能的版本可供选择，不过它们的响应性欠佳。
     </p>
-    <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
-    </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
-      </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
-    </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
-    </p>
+    <code-highlight type="html" :code="valueCode" label="html" />
 
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
+    <h2 id="position-arrange">
+      排列元素<a class="anchor-link" aria-label="Link to this section: 排列元素" href="#position-arrange">
       </a>
     </h2>
     <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
+利用边缘定位工具可以轻松排列元素。其格式为 <code>{property}-{position}</code> 。
     </p>
+    <p>其中 <em>property</em> 指的是以下之一：</p>
+    <ul class="docs-content-list">
+<li><code>top</code> - for the vertical <code>top</code> position</li>
+<li><code>start</code> - for the horizontal <code>left</code> position (in LTR)</li>
+<li><code>bottom</code> - for the vertical <code>bottom</code> position</li>
+<li><code>end</code> - for the horizontal <code>right</code> position (in LTR)</li>
+</ul>
+    <p>其中 <em>position</em> 指的是以下之一：</p>
+<ul class="docs-content-list">
+<li><code>0</code> - for <code>0</code> edge position</li>
+<li><code>50</code> - for <code>50%</code> edge position</li>
+<li><code>100</code> - for <code>100%</code> edge position</li>
+</ul>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
-        </div>
+  <div class="position-relative bg-body-secondary" style="height: 200px;">
+  <div class="position-absolute top-0 start-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-0 end-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-50 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-50 end-50 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-0 start-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-0 end-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+ </div>
       </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
+      <code-highlight type="html" :code="arrangeCode" label="html" />
     </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
-    <div class="docs-example">
+
+        <h2 id="position-center">
+      中心元素<a class="anchor-link" aria-label="Link to this section: 中心元素" href="#position-center">
+      </a>
+    </h2>
+    <p>此外，您还可以使用 transform 工具类 <code>.translate-middle</code> 来对元素进行居中处理。</p>
+    <p>此类应用了 translateX(-50%) 和 translateY(-50%) 这两个变换操作到元素上，与边缘定位工具结合使用后，能够让您将元素绝对居中显示。</p>
+      <div class="docs-example">
       <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
+  <div class="position-relative bg-body-secondary" style="height: 200px;">
+  <div class="position-absolute top-0 start-0 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-0 start-50 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-0 start-100 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-0 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-50 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-100 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-100 start-0 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-100 start-50 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-100 start-100 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+</div>
       </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
+      <code-highlight type="html" :code="centerCode" label="html" />
+    </div>
+    <p>通过添加 <code>.translate-middle-x</code> 或 <code>.translate-middle-y</code> 类，元素就可以仅在水平方向或垂直方向上进行定位。</p>
+        <div class="docs-example">
+      <div class="docs-example-data">
+  <div class="position-relative bg-body-secondary" style="height: 200px;">
+  <div class="position-absolute top-0 start-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-0 start-50 translate-middle-x bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-0 end-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-0 translate-middle-y bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 start-50 translate-middle bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute top-50 end-0 translate-middle-y bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-0 start-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-0 start-50 translate-middle-x bg-dark" style="width: 2rem;height: 2rem;"></div>
+  <div class="position-absolute bottom-0 end-0 bg-dark" style="width: 2rem;height: 2rem;"></div>
+</div>
+      </div>
+      <code-highlight type="html" :code="center1Code" label="html" />
+    </div>
+
+    <h2 id="position-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#position-example"> </a>
+    </h2>
+    <p>以下是这些课程在现实生活中的几个实例：</p>
+            <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="hstack gap-5 flex-wrap">
+<button type="button" class="btn btn-primary position-relative">
+  Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+</button>
+
+<div class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill">
+  Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1" fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+</div>
+
+<button type="button" class="btn btn-primary position-relative">
+  Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+</button>
+</div>
+      </div>
+      <code-highlight type="html" :code="example1Code" label="html" />
+    </div>
+    <p>您可以将这些类与现有的组件结合使用，从而创建新的组件。请记住，您可以通过向 <code>$position-values</code> 变量中添加条目来扩展其功能。</p>
+              <div class="docs-example">
+      <div class="docs-example-data">
+<div class="position-relative m-4">
+  <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+    <div class="progress-bar" style="width: 50%"></div>
+  </div>
+  <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+  <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+  <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+</div>
+      </div>
+      <code-highlight type="html" :code="example2Code" label="html" />
     </div>
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
+const valueCode = `
+<div class="position-static">...</div>
+<div class="position-relative">...</div>
+<div class="position-absolute">...</div>
+<div class="position-fixed">...</div>
+<div class="position-sticky">...</div>`;
 
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
+const arrangeCode = `
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+  <div class="position-absolute top-0 end-0"></div>
+  <div class="position-absolute top-50 start-50"></div>
+  <div class="position-absolute bottom-50 end-50"></div>
+  <div class="position-absolute bottom-0 start-0"></div>
+  <div class="position-absolute bottom-0 end-0"></div>
+</div>`;
 
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+const centerCode = `
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0 translate-middle"></div>
+  <div class="position-absolute top-0 start-50 translate-middle"></div>
+  <div class="position-absolute top-0 start-100 translate-middle"></div>
+  <div class="position-absolute top-50 start-0 translate-middle"></div>
+  <div class="position-absolute top-50 start-50 translate-middle"></div>
+  <div class="position-absolute top-50 start-100 translate-middle"></div>
+  <div class="position-absolute top-100 start-0 translate-middle"></div>
+  <div class="position-absolute top-100 start-50 translate-middle"></div>
+  <div class="position-absolute top-100 start-100 translate-middle"></div>
+</div>`;
+
+const center1Code = `
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+  <div class="position-absolute top-0 start-50 translate-middle-x"></div>
+  <div class="position-absolute top-0 end-0"></div>
+  <div class="position-absolute top-50 start-0 translate-middle-y"></div>
+  <div class="position-absolute top-50 start-50 translate-middle"></div>
+  <div class="position-absolute top-50 end-0 translate-middle-y"></div>
+  <div class="position-absolute bottom-0 start-0"></div>
+  <div class="position-absolute bottom-0 start-50 translate-middle-x"></div>
+  <div class="position-absolute bottom-0 end-0"></div>
+</div>`;
+
+const example1Code = `
+<button type="button" class="btn btn-primary position-relative">
+  Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+</button>
+
+<div class="position-relative py-2 px-4 text-bg-secondary border border-secondary rounded-pill">
+  Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1" fill="var(--bs-secondary)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
 </div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
+
+<button type="button" class="btn btn-primary position-relative">
+  Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+</button>`;
+
+const example2Code = `
+<div class="position-relative m-4">
+  <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+    <div class="progress-bar" style="width: 50%"></div>
   </div>
+  <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+  <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+  <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
 </div>`;
 </script>

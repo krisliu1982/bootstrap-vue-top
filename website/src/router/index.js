@@ -248,6 +248,18 @@ var routes = [
       {
         path: '/docs/utils/object-fit',
         component: () => import('@/views/docs/utils/object-fit.vue')
+      },
+      {
+        path: '/docs/utils/opacity',
+        component: () => import('@/views/docs/utils/opacity.vue')
+      },
+      {
+        path: '/docs/utils/overflow',
+        component: () => import('@/views/docs/utils/overflow.vue')
+      },
+      {
+        path: '/docs/utils/position',
+        component: () => import('@/views/docs/utils/position.vue')
       }
     ]
   },
