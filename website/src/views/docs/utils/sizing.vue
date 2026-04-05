@@ -1,136 +1,104 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-sizing">
+      <a href="#sizing-parent">相对于父级</a>
+      <a href="#sizing-viewport">相对于视口</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-sizing" class="docs-content">
+    <h1>Sizing 尺寸规格</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      利用我们的“宽度”和“高度”工具，您可以轻松地将元素设置为任意宽或任意高。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/utilities/sizing/" target="_blank">Boostrap Sizing</a>
     </p>
 
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
+    <h2 id="sizing-parent">
+      相对于父级<a class="anchor-link" aria-label="Link to this section: 相对于父级" href="#sizing-parent"> </a>
     </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
-    </p>
-    <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
+      默认情况下支持 25%、50%、75%、100% 以及 auto。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
+        <div class="w-25 p-3 border border-primary">Width 25%</div>
+        <div class="w-50 p-3 border border-primary">Width 50%</div>
+        <div class="w-75 p-3 border border-primary">Width 75%</div>
+        <div class="w-100 p-3 border border-primary">Width 100%</div>
+        <div class="w-auto p-3 border border-primary">Width auto</div>
       </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
+      <code-highlight type="html" :code="parent1Code" label="html" />
     </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
-    </p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="border border-primary" style="height: 100px;">
+          <div class="h-25 d-inline-block border border-primary" style="width: 120px;">Height 25%</div>
+          <div class="h-50 d-inline-block border border-primary" style="width: 120px;">Height 50%</div>
+          <div class="h-75 d-inline-block border border-primary" style="width: 120px;">Height 75%</div>
+          <div class="h-100 d-inline-block border border-primary" style="width: 120px;">Height 100%</div>
+          <div class="h-auto d-inline-block border border-primary" style="width: 120px;">Height auto</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="parent2Code" label="html" />
+    </div>
+    <p>您还可以根据需要使用 <code>max-width: 100%;</code> 和 <code>max-height: 100%;</code> 这些样式属性。</p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="border border-primary" style="width: 50%; height: 100px;">
+          <div class="mw-100 border border-primary" style="width: 200%;">Max-width 100%</div>
+        </div>
+        <br />
+        <div class="border border-primary" style="height: 100px;">
+          <div class="mh-100 border border-primary" style="width: 100px; height: 200px;">Max-height 100%</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="parent3Code" label="html" />
+    </div>
 
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
+    <h2 id="sizing-viewport">
+      相对于视口<a class="anchor-link" aria-label="Link to this section: 相对于视口" href="#sizing-viewport">
       </a>
     </h2>
     <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
+      您还可以使用工具来根据视口设定宽度和高度。
     </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
-        </div>
-      </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
-    </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
-    </div>
+    <code-highlight type="html" :code="viewportCode" label="html" />
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
+const parent1Code = `
+<div class="w-25 p-3">Width 25%</div>
+<div class="w-50 p-3">Width 50%</div>
+<div class="w-75 p-3">Width 75%</div>
+<div class="w-100 p-3">Width 100%</div>
+<div class="w-auto p-3">Width auto</div>`;
 
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
-
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
-</div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+const parent2Code = `
+<div style="height: 100px;">
+  <div class="h-25 d-inline-block" style="width: 120px;">Height 25%</div>
+  <div class="h-50 d-inline-block" style="width: 120px;">Height 50%</div>
+  <div class="h-75 d-inline-block" style="width: 120px;">Height 75%</div>
+  <div class="h-100 d-inline-block" style="width: 120px;">Height 100%</div>
+  <div class="h-auto d-inline-block" style="width: 120px;">Height auto</div>
 </div>`;
+
+const parent3Code = `
+<div style="width: 50%; height: 100px;">
+  <div class="mw-100" style="width: 200%;">Max-width 100%</div>
+</div>
+
+<div style="height: 100px;">
+  <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
+</div>
+`;
+
+const viewportCode = `
+<div class="min-vw-100">Min-width 100vw</div>
+<div class="min-vh-100">Min-height 100vh</div>
+<div class="vw-100">Width 100vw</div>
+<div class="vh-100">Height 100vh</div>
+`;
+
+
 </script>

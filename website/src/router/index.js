@@ -260,6 +260,54 @@ var routes = [
       {
         path: '/docs/utils/position',
         component: () => import('@/views/docs/utils/position.vue')
+      },
+      {
+        path: '/docs/utils/ratio',
+        component: () => import('@/views/docs/utils/ratio.vue')
+      },
+      {
+        path: '/docs/utils/shadows',
+        component: () => import('@/views/docs/utils/shadows.vue')
+      },
+      {
+        path: '/docs/utils/sizing',
+        component: () => import('@/views/docs/utils/sizing.vue')
+      },
+      {
+        path: '/docs/utils/spacing',
+        component: () => import('@/views/docs/utils/spacing.vue')
+      },
+      {
+        path: '/docs/utils/stacks',
+        component: () => import('@/views/docs/utils/stacks.vue')
+      },
+      {
+        path: '/docs/utils/stretched-link',
+        component: () => import('@/views/docs/utils/stretched-link.vue')
+      },
+      {
+        path: '/docs/utils/text',
+        component: () => import('@/views/docs/utils/text.vue')
+      },
+      {
+        path: '/docs/utils/vertical-align',
+        component: () => import('@/views/docs/utils/vertical-align.vue')
+      },
+      {
+        path: '/docs/utils/vertical-rule',
+        component: () => import('@/views/docs/utils/vertical-rule.vue')
+      },
+      {
+        path: '/docs/utils/visibility',
+        component: () => import('@/views/docs/utils/visibility.vue')
+      },
+      {
+        path: '/docs/utils/visually-hidden',
+        component: () => import('@/views/docs/utils/visually-hidden.vue')
+      },
+      {
+        path: '/docs/utils/z-index',
+        component: () => import('@/views/docs/utils/z-index.vue')
       }
     ]
   },

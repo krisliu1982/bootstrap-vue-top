@@ -336,13 +336,13 @@
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/sizing" class="docs-sidebar-link" exact-active-class="active"
-                >Sizing 尺寸规格
+              <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active"
+                >Shadows 阴影
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active"
-                >Shadows 阴影
+              <RouterLink to="/docs/utils/sizing" class="docs-sidebar-link" exact-active-class="active"
+                >Sizing 尺寸规格
               </RouterLink>
             </li>
             <li class="py-1">

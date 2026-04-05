@@ -1,136 +1,109 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-ratio">
+      <a href="#ratio-about">使用说明</a>
+      <a href="#ratio-example">示例</a>
+      <a href="#ratio-aspect">宽高比</a>
+      <a href="#ratio-custom">自定义</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-ratio" class="docs-content">
+    <h1>Ratio 比例</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      利用生成的伪元素，可以让你的元素保持您所选择的特定比例。非常适合根据父元素的宽度来灵活处理视频或幻灯片嵌入内容。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/helpers/ratio/" target="_blank">Boostrap Ratio</a>
     </p>
 
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
+    <h2 id="ratio-about">
+      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#ratio-about"> </a>
     </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
+      使用比例辅助工具来管理外部内容（如 <code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;video&gt;</code> 和
+      <code>&lt;object&gt;</code>）的纵横比。这些辅助工具也可应用于任何标准的 HTML 子元素（例如，<code>&lt;div&gt;</code> 或
+      <code>&lt;img&gt;</code>）。样式会直接从父级的 <code>.ratio</code> 类应用到子元素上。
     </p>
-    <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
+    <p class="text-bg-info"><strong>温馨提示！</strong> 您无需在 <code>&lt;iframe&gt;</code> 元素中添加 <code>frameborder="0"</code>
+      属性，因为我们会在 <a href="https://getbootstrap.com/docs/5.3/content/reboot" target="_blank">Reboot</a> 中为您进行相应的设置。</p>
+
+    <h2 id="ratio-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#ratio-example"></a>
+    </h2>
+    <p>
+      将任何嵌入内容（例如 <code>&lt;iframe&gt;</code> ）包裹在一个带有 <code>.ratio</code> 和纵横比类的父元素中。由于我们采用了通用选择器
+      <code>.ratio &gt; *</code>，其直接子元素的大小会自动调整。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
-      </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
-    </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
-    </p>
-
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
-      </a>
-    </h2>
-    <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
-    </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://getbootstrap.com/" title="bootstrap"></iframe>
         </div>
       </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
+      <code-highlight type="html" :code="exampleCode" label="html" />
     </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
+
+    <h2 id="ratio-aspect">
+      宽高比<a class="anchor-link" aria-label="Link to this section: 宽高比" href="#ratio-aspect"></a>
+    </h2>
+    <p>可以通过修饰符类来自定义纵横比。默认情况下，提供了以下纵横比类：</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
+        <div class="hstack gap-3 flex-wrap">
+          <div class="ratio ratio-1x1" style="width:150px;">
+            <div class="border p-3">1x1</div>
           </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
+          <div class="ratio ratio-4x3" style="width:150px;">
+            <div class="border p-3">4x3</div>
+          </div>
+          <div class="ratio ratio-16x9" style="width:150px;">
+            <div class="border p-3">16x9</div>
+          </div>
+          <div class="ratio ratio-21x9" style="width:150px;">
+            <div class="border p-3">21x9</div>
           </div>
         </div>
       </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
+      <code-highlight type="html" :code="aspectCode" label="html" />
+    </div>
+
+    <h2 id="ratio-custom">
+      自定义<a class="anchor-link" aria-label="Link to this section: 自定义" href="#ratio-custom"></a>
+    </h2>
+    <p>每个 <code>.ratio-*</code> 类在选择器中都包含一个 CSS 自定义属性（或 CSS 变量）。您可以通过简单的数学运算来覆盖这个 CSS 变量，从而动态地创建自定义的纵横比。</p>
+    <p>例如，若要设置为 2:1 的纵横比，则在 <code>.ratio</code> 元素中设置 <code>--bs-aspect-ratio: 50%</code> 。</p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="ratio" style="--bs-aspect-ratio: 50%;width:150px;">
+          <div class="border p-3">2x1</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="customCode" label="html" />
     </div>
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
+const exampleCode = `
+<div class="ratio ratio-16x9">
+  <iframe src="https://getbootstrap.com/" title="bootstrap"></iframe>
+</div>`;
 
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
-
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+const aspectCode = `
+<div class="ratio ratio-1x1">
+  <div>1x1</div>
 </div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+<div class="ratio ratio-4x3">
+  <div>4x3</div>
+</div>
+<div class="ratio ratio-16x9">
+  <div>16x9</div>
+</div>
+<div class="ratio ratio-21x9">
+  <div>21x9</div>
+</div>`;
+
+const customCode = `
+<div class="ratio" style="--bs-aspect-ratio: 50%;">
+  <div>2x1</div>
 </div>`;
 </script>

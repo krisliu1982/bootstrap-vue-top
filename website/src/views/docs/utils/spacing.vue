@@ -1,136 +1,153 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-spacing">
+      <a href="#spacing-mp">外边距和内边距</a>
+      <a href="#spacing-gap">缝隙</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-spacing" class="docs-content">
+    <h1>Spacing 间距</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      Bootstrap 包含了众多简化的响应式边距、内边距和间距的实用类样式，用于调整元素的外观。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/" target="_blank">Boostrap Spacing</a>
     </p>
 
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
+    <h2 id="spacing-mp">
+      外边距和内边距<a class="anchor-link" aria-label="Link to this section: 外边距和内边距" href="#spacing-mp"> </a>
     </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
+      使用简写类为元素或其某一部分的边框设置响应式友好的“边距”或“内边距”值。该功能支持单个属性、所有属性以及垂直和水平属性。类名基于一个默认的 Sass 映射构建，范围从 <code>.25rem</code> 到
+      <code>3rem</code> 。
     </p>
-    <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
+    <p>
+      适用于所有断点（从 <code>xs</code> 到 <code>xxl</code>）的间距相关样式在其中没有断点缩写。这是因为这些类是从 <code>min-width： 0</code>
+      及以上开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。
     </p>
+    <p>这些类的命名采用以下格式：对于 <code>xs</code> 类型，使用 <code>{property}{sides}-{size}</code>；对于
+      <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 类型，则使用
+      <code>{property}{sides}-{breakpoint}-{size}</code> 。</p>
+    <p>当 <em>property</em> 属于以下情况之一时：</p>
+    <ul class="docs-content-list">
+      <li><code>m</code> - for classes that set <code>margin</code></li>
+      <li><code>p</code> - for classes that set <code>padding</code></li>
+    </ul>
+    <p>当 <em>sides</em> 属于以下情况之一时：</p>
+    <ul class="docs-content-list">
+      <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+      <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+      <li><code>s</code> - (start) for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR,
+        <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+      <li><code>e</code> - (end) for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR,
+        <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+      <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+      <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+      <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+    </ul>
+    <p>当 <em>size</em> 属于以下情况之一时：</p>
+    <ul class="docs-content-list">
+      <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to
+        <code>0</code></li>
+      <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+        <code>$spacer * .25</code></li>
+      <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+        <code>$spacer * .5</code></li>
+      <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+        <code>$spacer</code></li>
+      <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+        <code>$spacer * 1.5</code></li>
+      <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+        <code>$spacer * 3</code></li>
+      <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+    </ul>
+    <p>此外，Bootstrap 还包含一个名为 <code>.mx-auto</code> 的类，用于对固定宽度的块级内容进行水平居中显示——也就是说，那些具有 <code>display: block</code> 属性且设置了
+      <code>width</code> 的内容——通过将水平外边距设置为 <code>auto</code> 可以实现这一效果。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
+        <div class="mx-auto p-2 border border-primary" style="width: 200px;">
+          Centered element
+        </div>
       </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
+      <code-highlight type="html" :code="mp1Code" label="html" />
     </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
-    </p>
 
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
+    <h2 id="spacing-gap">
+      缝隙<a class="anchor-link" aria-label="Link to this section: 缝隙" href="#spacing-gap">
       </a>
     </h2>
     <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
+      当使用 <code>display: grid</code> 或 <code>display: flex</code> 时，您可以利用父元素上的 <code>gap</code>
+      辅助类。这样可以避免为网格或弹性容器的每个子元素单独添加边距辅助类。Gap 辅助类默认具有响应式特性。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
+        <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
+          <div class="p-2 border border-primary">Grid item 1</div>
+          <div class="p-2 border border-primary">Grid item 2</div>
+          <div class="p-2 border border-primary">Grid item 3</div>
+          <div class="p-2 border border-primary">Grid item 4</div>
         </div>
       </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
+      <code-highlight type="html" :code="gap1Code" label="html" />
     </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
+    <p>支持功能涵盖了 Bootstrap 的所有网格断点的响应式选项，同时还包含了来自 <code>$spacers</code> 映射的六种尺寸（<code>0</code> 到 <code>5</code>）。并且没有
+      <code>.gap-auto</code> 通用类，因为它实际上与 <code>.gap-0</code> 是相同的。</p>
+    <h3>row-gap</h3>
+    <p><code>row-gap</code> 属性用于设置指定容器内子元素之间的垂直间距。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
+        <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
+          <div class="p-2 border border-primary">Grid item 1</div>
+          <div class="p-2 border border-primary">Grid item 2</div>
+          <div class="p-2 border border-primary">Grid item 3</div>
+          <div class="p-2 border border-primary">Grid item 4</div>
         </div>
       </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
+      <code-highlight type="html" :code="gap2Code" label="html" />
+    </div>
+    <h3>column-gap</h3>
+    <p><code>column-gap</code> 用于设置指定容器内子元素之间的水平间距。</p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3">
+          <div class="p-2 border border-primary">Grid item 1</div>
+          <div class="p-2 border border-primary">Grid item 2</div>
+          <div class="p-2 border border-primary">Grid item 3</div>
+          <div class="p-2 border border-primary">Grid item 4</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="gap3Code" label="html" />
     </div>
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
+const mp1Code = `
+<div class="mx-auto p-2" style="width: 200px;">
+  Centered element
+</div>`;
 
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
+const gap1Code = `
+<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>`;
 
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
-</div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+const gap2Code = `
+<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>`;
+
+const gap3Code = `
+<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3">
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
 </div>`;
 </script>
