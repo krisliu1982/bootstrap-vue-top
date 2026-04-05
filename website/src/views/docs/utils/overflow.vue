@@ -15,30 +15,33 @@
     <h2 id="overflow-about">
       使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#overflow-about"> </a>
     </h2>
-    <p>
-      通过四个默认值和类来动态调整 <code>overflow</code> 属性。这些类默认情况下并不具备响应式效果。
-    </p>
+    <p>通过四个默认值和类来动态调整 <code>overflow</code> 属性。这些类默认情况下并不具备响应式效果。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <div class="overflow-auto p-3 border"
-            style="width: 150px; height: 100px;">
-            <p>This is an example of using <code>.overflow-auto</code> on an element with set width and height
-              dimensions. By design, this content will vertically scroll.</p>
+          <div class="overflow-auto p-3 border" style="width: 150px; height: 100px">
+            <p>
+              This is an example of using <code>.overflow-auto</code> on an element with set width and height
+              dimensions. By design, this content will vertically scroll.
+            </p>
           </div>
-          <div class="overflow-hidden p-3 border"
-            style="width: 150px; height: 100px;">
-            <p>This is an example of using <code>.overflow-hidden</code> on an element with set width and height
-              dimensions.</p>
+          <div class="overflow-hidden p-3 border" style="width: 150px; height: 100px">
+            <p>
+              This is an example of using <code>.overflow-hidden</code> on an element with set width and height
+              dimensions.
+            </p>
           </div>
-          <div class="overflow-visible p-3 border"
-            style="width: 150px; height: 100px;">
-            <p>This is an example of using <code>.overflow-visible</code> on an element with set width and height
-              dimensions.</p>
+          <div class="overflow-visible p-3 border" style="width: 150px; height: 100px">
+            <p>
+              This is an example of using <code>.overflow-visible</code> on an element with set width and height
+              dimensions.
+            </p>
           </div>
-          <div class="overflow-scroll p-3 border" style="width: 150px; height: 100px;">
-            <p>This is an example of using <code>.overflow-scroll</code> on an element with set width and height
-              dimensions.</p>
+          <div class="overflow-scroll p-3 border" style="width: 150px; height: 100px">
+            <p>
+              This is an example of using <code>.overflow-scroll</code> on an element with set width and height
+              dimensions.
+            </p>
           </div>
         </div>
       </div>
@@ -48,25 +51,21 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <div class="overflow-x-auto p-3 border"
-            style="width: 150px; height: 100px; white-space: nowrap;">
+          <div class="overflow-x-auto p-3 border" style="width: 150px; height: 100px; white-space: nowrap">
             <div><code>.overflow-x-auto</code> example on an element</div>
-            <div> with set width and height dimensions.</div>
+            <div>with set width and height dimensions.</div>
           </div>
-          <div class="overflow-x-hidden p-3 border"
-            style="width: 150px; height: 100px;white-space: nowrap;">
+          <div class="overflow-x-hidden p-3 border" style="width: 150px; height: 100px; white-space: nowrap">
             <div><code>.overflow-x-hidden</code> example</div>
             <div>on an element with set width and height dimensions.</div>
           </div>
-          <div class="overflow-x-visible p-3 border"
-            style="width: 150px; height: 100px;white-space: nowrap;">
-            <div><code>.overflow-x-visible</code> example </div>
+          <div class="overflow-x-visible p-3 border" style="width: 150px; height: 100px; white-space: nowrap">
+            <div><code>.overflow-x-visible</code> example</div>
             <div>on an element with set width and height dimensions.</div>
           </div>
-          <div class="overflow-x-scroll p-3 border"
-            style="width: 150px; height: 100px;white-space: nowrap;">
+          <div class="overflow-x-scroll p-3 border" style="width: 150px; height: 100px; white-space: nowrap">
             <div><code>.overflow-x-scroll</code> example on an element</div>
-            <div> with set width and height dimensions.</div>
+            <div>with set width and height dimensions.</div>
           </div>
         </div>
       </div>
@@ -76,19 +75,16 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <div class="overflow-y-auto p-3 border"
-            style="width: 150px; height: 100px;">
+          <div class="overflow-y-auto p-3 border" style="width: 150px; height: 100px">
             <p><code>.overflow-y-auto</code> example on an element with set width and height dimensions.</p>
           </div>
-          <div class="overflow-y-hidden p-3 border"
-            style="width: 150px; height: 100px;">
+          <div class="overflow-y-hidden p-3 border" style="width: 150px; height: 100px">
             <p><code>.overflow-y-hidden</code> example on an element with set width and height dimensions.</p>
           </div>
-          <div class="overflow-y-visible p-3 border"
-            style="width: 150px; height: 100px;">
+          <div class="overflow-y-visible p-3 border" style="width: 150px; height: 100px">
             <p><code>.overflow-y-visible</code> example on an element with set width and height dimensions.</p>
           </div>
-          <div class="overflow-y-scroll p-3 border" style="width: 150px; height: 100px;">
+          <div class="overflow-y-scroll p-3 border" style="width: 150px; height: 100px">
             <p><code>.overflow-y-scroll</code> example on an element with set width and height dimensions.</p>
           </div>
         </div>

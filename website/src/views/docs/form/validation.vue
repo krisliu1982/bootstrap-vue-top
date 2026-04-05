@@ -26,12 +26,16 @@
       <div class="docs-example-data">
         <form novalidate @submit.prevent="submitForm1">
           <div class="row mb-3">
-            <label for="email1" class="col-sm-3 col-form-label">
-              Email <strong class="text-danger">*</strong>
-            </label>
+            <label for="email1" class="col-sm-3 col-form-label"> Email <strong class="text-danger">*</strong> </label>
             <div class="col-sm-9">
-              <input type="email" class="form-control" id="email1" v-model="data1.email"
-                :class="{ 'is-invalid': errors1.email }" @change="validateField1('email')" />
+              <input
+                type="email"
+                class="form-control"
+                id="email1"
+                v-model="data1.email"
+                :class="{ 'is-invalid': errors1.email }"
+                @change="validateField1('email')"
+              />
               <div class="invalid-feedback">
                 {{ errors1.email }}
               </div>
@@ -42,17 +46,21 @@
               Password <strong class="text-danger">*</strong>
             </label>
             <div class="col-sm-9">
-              <input type="password" class="form-control" id="password1" v-model="data1.password"
-                :class="{ 'is-invalid': errors1.password }" @change="validateField1('password')" />
+              <input
+                type="password"
+                class="form-control"
+                id="password1"
+                v-model="data1.password"
+                :class="{ 'is-invalid': errors1.password }"
+                @change="validateField1('password')"
+              />
               <div class="invalid-feedback">
                 {{ errors1.password }}
               </div>
             </div>
           </div>
           <div class="mb-3">
-            <label class="col-form-label">
-              Details <strong class="text-danger">*</strong>
-            </label>
+            <label class="col-form-label"> Details <strong class="text-danger">*</strong> </label>
             <table class="table">
               <thead>
                 <tr>
@@ -66,17 +74,27 @@
                 <tr v-for="(item, index) in data1.details">
                   <td>{{ index + 1 }}</td>
                   <td>
-                    <input type="text" class="form-control" v-model="item.name" 
-                      :class="{'is-invalid': errors1[`details[${index}].name`]}" 
-                      @change="validateField1(`details[${index}].name`)" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      v-model="item.name"
+                      :class="{ 'is-invalid': errors1[`details[${index}].name`] }"
+                      @change="validateField1(`details[${index}].name`)"
+                    />
                     <div class="invalid-feedback">
                       {{ errors1[`details[${index}].name`] }}
                     </div>
                   </td>
                   <td>
-                    <input type="number" class="form-control" v-model="item.number" :class="{
-                      'is-invalid': errors1[`details[${index}].number`]
-                    }" @change="validateField1(`details[${index}].number`)" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      v-model="item.number"
+                      :class="{
+                        'is-invalid': errors1[`details[${index}].number`]
+                      }"
+                      @change="validateField1(`details[${index}].number`)"
+                    />
                     <div class="invalid-feedback">
                       {{ errors1[`details[${index}].number`] }}
                     </div>
@@ -92,12 +110,15 @@
             </div>
           </div>
           <div class="row mb-3">
-            <label for="select1" class="col-sm-3 col-form-label">
-              Select <strong class="text-danger">*</strong>
-            </label>
+            <label for="select1" class="col-sm-3 col-form-label"> Select <strong class="text-danger">*</strong> </label>
             <div class="col-sm-9">
-              <select class="form-select" id="select1" v-model="data1.select" :class="{ 'is-invalid': errors1.select }"
-                @change="validateField1('select')">
+              <select
+                class="form-select"
+                id="select1"
+                v-model="data1.select"
+                :class="{ 'is-invalid': errors1.select }"
+                @change="validateField1('select')"
+              >
                 <option value="">--</option>
                 <option value="One">One</option>
                 <option value="Two">Two</option>
@@ -109,18 +130,28 @@
             </div>
           </div>
           <div class="row mb-3">
-            <label class="col-form-label col-sm-3">
-              Radios <strong class="text-danger">*</strong>
-            </label>
+            <label class="col-form-label col-sm-3"> Radios <strong class="text-danger">*</strong> </label>
             <div class="col-sm-9">
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="gridRadios1" value="option1" v-model="data1.radio"
-                  @change="validateField1('radio')" />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="gridRadios1"
+                  value="option1"
+                  v-model="data1.radio"
+                  @change="validateField1('radio')"
+                />
                 <label class="form-check-label" for="gridRadios1"> First radio </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" id="gridRadios2" value="option2" v-model="data1.radio"
-                  @change="validateField1('radio')" />
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="gridRadios2"
+                  value="option2"
+                  v-model="data1.radio"
+                  @change="validateField1('radio')"
+                />
                 <label class="form-check-label" for="gridRadios2"> Second radio </label>
               </div>
               <div class="invalid-feedback" :class="{ 'd-block': errors1.radio }">
@@ -129,18 +160,28 @@
             </div>
           </div>
           <div class="row mb-3">
-            <label class="col-form-label col-sm-3">
-              Checkboxs <strong class="text-danger">*</strong>
-            </label>
+            <label class="col-form-label col-sm-3"> Checkboxs <strong class="text-danger">*</strong> </label>
             <div class="col-sm-9">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheckboxs1" value="option1"
-                  v-model="data1.checkboxs" @change="validateField1('checkboxs')" />
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheckboxs1"
+                  value="option1"
+                  v-model="data1.checkboxs"
+                  @change="validateField1('checkboxs')"
+                />
                 <label class="form-check-label" for="gridCheckboxs1"> First checkbox </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheckboxs2" value="option2"
-                  v-model="data1.checkboxs" @change="validateField1('checkboxs')" />
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheckboxs2"
+                  value="option2"
+                  v-model="data1.checkboxs"
+                  @change="validateField1('checkboxs')"
+                />
                 <label class="form-check-label" for="gridCheckboxs2"> Second checkbox </label>
               </div>
               <div class="invalid-feedback" :class="{ 'd-block': errors1.checkboxs }">
@@ -167,11 +208,14 @@
           <div class="row mb-3">
             <div class="col-sm-9 offset-sm-3">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="invalidCheck2" v-model="data1.checkbox"
-                  @change="validateField1('checkbox')" />
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="invalidCheck2"
+                  v-model="data1.checkbox"
+                  @change="validateField1('checkbox')"
+                />
+                <label class="form-check-label" for="invalidCheck2"> Agree to terms and conditions </label>
               </div>
               <div class="invalid-feedback" :class="{ 'd-block': errors1.checkbox }">
                 {{ errors1.checkbox }}
@@ -196,30 +240,44 @@
     </h2>
     <p>
       为了解决
-      <a href="https://github.com/twbs/bootstrap/issues/25110" target="_blank">边框圆角的问题</a>，输入组需要添加一个额外的
-      <code>.has-validation</code> 类。
+      <a href="https://github.com/twbs/bootstrap/issues/25110" target="_blank">边框圆角的问题</a
+      >，输入组需要添加一个额外的 <code>.has-validation</code> 类。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <form novalidate @submit.prevent="submitForm2">
           <div class="row mb-3">
-            <label for="mobile1" class="col-sm-3 col-form-label text-end"><strong class="text-danger">*</strong><span
-                class="ms-1">Mobile</span></label>
+            <label for="mobile1" class="col-sm-3 col-form-label text-end"
+              ><strong class="text-danger">*</strong><span class="ms-1">Mobile</span></label
+            >
             <div class="col-sm-9">
-              <input type="tel" class="form-control" id="mobile1" v-model="data2.mobile"
-                :class="{ 'is-invalid': errors2.mobile }" @change="validateField2('mobile')" />
+              <input
+                type="tel"
+                class="form-control"
+                id="mobile1"
+                v-model="data2.mobile"
+                :class="{ 'is-invalid': errors2.mobile }"
+                @change="validateField2('mobile')"
+              />
               <div class="invalid-feedback">
                 {{ errors2.mobile }}
               </div>
             </div>
           </div>
           <div class="row mb-3">
-            <label for="verification1" class="col-sm-3 col-form-label text-end"><strong
-                class="text-danger">*</strong><span class="ms-1">Verification code</span></label>
+            <label for="verification1" class="col-sm-3 col-form-label text-end"
+              ><strong class="text-danger">*</strong><span class="ms-1">Verification code</span></label
+            >
             <div class="col-sm-9">
               <div class="input-group has-validation">
-                <input type="text" class="form-control" :class="{ 'is-invalid': errors2.verification }"
-                  id="verification1" v-model="data2.verification" @change="validateField2('verification')" />
+                <input
+                  type="text"
+                  class="form-control"
+                  :class="{ 'is-invalid': errors2.verification }"
+                  id="verification1"
+                  v-model="data2.verification"
+                  @change="validateField2('verification')"
+                />
                 <button class="btn btn-outline-primary" type="button" @click="validateField2('mobile')">
                   Send Verification code
                 </button>

@@ -361,7 +361,9 @@
               </RouterLink>
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active">Text 文本</RouterLink>
+              <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active"
+                >Text 文本</RouterLink
+              >
             </li>
             <li class="py-1">
               <RouterLink to="/docs/utils/vertical-align" class="docs-sidebar-link" exact-active-class="active">

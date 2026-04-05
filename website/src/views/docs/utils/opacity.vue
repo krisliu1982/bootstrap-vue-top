@@ -15,8 +15,10 @@
     <h2 id="opacity-about">
       使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#opacity-about"> </a>
     </h2>
-    <p><code>opacity</code> 属性用于设置元素的透明度级别。透明度级别描述了透明度的程度，其中 <code>1</code> 表示完全不透明，<code>.5</code> 表示 50% 可见，而
-      <code>0</code> 则表示完全透明。</p>
+    <p>
+      <code>opacity</code> 属性用于设置元素的透明度级别。透明度级别描述了透明度的程度，其中
+      <code>1</code> 表示完全不透明，<code>.5</code> 表示 50% 可见，而 <code>0</code> 则表示完全透明。
+    </p>
     <p>使用 <code>.opacity-{value}</code> 通配符来设置元素的 <code>透明度</code> 。</p>
     <div class="docs-example">
       <div class="docs-example-data">
