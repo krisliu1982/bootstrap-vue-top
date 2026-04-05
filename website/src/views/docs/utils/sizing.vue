@@ -16,9 +16,7 @@
     <h2 id="sizing-parent">
       相对于父级<a class="anchor-link" aria-label="Link to this section: 相对于父级" href="#sizing-parent"> </a>
     </h2>
-    <p>
-      默认情况下支持 25%、50%、75%、100% 以及 auto。
-    </p>
+    <p>默认情况下支持 25%、50%、75%、100% 以及 auto。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="w-25 p-3 border border-primary">Width 25%</div>
@@ -31,12 +29,12 @@
     </div>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="border border-primary" style="height: 100px;">
-          <div class="h-25 d-inline-block border border-primary" style="width: 120px;">Height 25%</div>
-          <div class="h-50 d-inline-block border border-primary" style="width: 120px;">Height 50%</div>
-          <div class="h-75 d-inline-block border border-primary" style="width: 120px;">Height 75%</div>
-          <div class="h-100 d-inline-block border border-primary" style="width: 120px;">Height 100%</div>
-          <div class="h-auto d-inline-block border border-primary" style="width: 120px;">Height auto</div>
+        <div class="border border-primary" style="height: 100px">
+          <div class="h-25 d-inline-block border border-primary" style="width: 120px">Height 25%</div>
+          <div class="h-50 d-inline-block border border-primary" style="width: 120px">Height 50%</div>
+          <div class="h-75 d-inline-block border border-primary" style="width: 120px">Height 75%</div>
+          <div class="h-100 d-inline-block border border-primary" style="width: 120px">Height 100%</div>
+          <div class="h-auto d-inline-block border border-primary" style="width: 120px">Height auto</div>
         </div>
       </div>
       <code-highlight type="html" :code="parent2Code" label="html" />
@@ -44,24 +42,21 @@
     <p>您还可以根据需要使用 <code>max-width: 100%;</code> 和 <code>max-height: 100%;</code> 这些样式属性。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="border border-primary" style="width: 50%; height: 100px;">
-          <div class="mw-100 border border-primary" style="width: 200%;">Max-width 100%</div>
+        <div class="border border-primary" style="width: 50%; height: 100px">
+          <div class="mw-100 border border-primary" style="width: 200%">Max-width 100%</div>
         </div>
         <br />
-        <div class="border border-primary" style="height: 100px;">
-          <div class="mh-100 border border-primary" style="width: 100px; height: 200px;">Max-height 100%</div>
+        <div class="border border-primary" style="height: 100px">
+          <div class="mh-100 border border-primary" style="width: 100px; height: 200px">Max-height 100%</div>
         </div>
       </div>
       <code-highlight type="html" :code="parent3Code" label="html" />
     </div>
 
     <h2 id="sizing-viewport">
-      相对于视口<a class="anchor-link" aria-label="Link to this section: 相对于视口" href="#sizing-viewport">
-      </a>
+      相对于视口<a class="anchor-link" aria-label="Link to this section: 相对于视口" href="#sizing-viewport"> </a>
     </h2>
-    <p>
-      您还可以使用工具来根据视口设定宽度和高度。
-    </p>
+    <p>您还可以使用工具来根据视口设定宽度和高度。</p>
     <code-highlight type="html" :code="viewportCode" label="html" />
   </div>
 </template>
@@ -99,6 +94,4 @@ const viewportCode = `
 <div class="vw-100">Width 100vw</div>
 <div class="vh-100">Height 100vh</div>
 `;
-
-
 </script>

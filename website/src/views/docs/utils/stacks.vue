@@ -1,136 +1,186 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-stacks">
+      <a href="#stacks-vertical">垂直</a>
+      <a href="#stacks-horizontal">水平</a>
+      <a href="#stacks-example">示例</a>
+      <a href="#stacks-css">CSS</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-stacks" class="docs-content">
+    <h1>Stacks 堆叠</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      基于我们的弹性盒布局工具开发的简写辅助功能，能够使组件布局的速度和效率达到前所未有的水平。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/helpers/stacks/" target="_blank">Boostrap Stacks</a>
     </p>
-
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
-    </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
+      “堆栈”为应用一系列 flexbox 属性提供了便捷的途径，从而能够快速、轻松地在 Bootstrap
+      中创建布局。该概念及实现均归功于开源项目<a href="https://almonk.github.io/pylon/" target="_blank">Pylon 项目</a>。
     </p>
     <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
-    </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
-      </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
-    </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
+      <strong>注意！</strong> 在 Safari 14.5 之前，使用 flexbox
+      实现间距功能的功能并不支持，因此请考虑确认您所使用的浏览器是否支持该功能。网格布局应该不会出现任何问题。
+      <a href="https://caniuse.com/flexbox-gap" target="_blank">了解更多</a>。
     </p>
 
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
-      </a>
+    <h2 id="stacks-vertical">
+      垂直<a class="anchor-link" aria-label="Link to this section: 垂直" href="#stacks-vertical"> </a>
     </h2>
     <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
+      使用 <code>.vstack</code> 可以创建垂直布局。默认情况下，堆叠的项目是全宽的。使用
+      <code>.gap-*</code> 通配符样式可以为项目之间添加间距。
     </p>
+    <div class="docs-example">
+      <div class="docs-example-data docs-content-flex-util">
+        <div class="vstack gap-3">
+          <div class="p-2">First item</div>
+          <div class="p-2">Second item</div>
+          <div class="p-2">Third item</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="verticalCode" label="html" />
+    </div>
+
+    <h2 id="stacks-horizontal">
+      水平<a class="anchor-link" aria-label="Link to this section: 水平" href="#stacks-horizontal"> </a>
+    </h2>
+    <p>
+      对于水平布局，请使用 <code>.hstack</code> 。默认情况下，堆叠的项目会垂直居中，并且只会占用其所需的宽度。使用
+      <code>.gap-*</code> 通配符样式来为项目之间添加间距。
+    </p>
+    <div class="docs-example">
+      <div class="docs-example-data docs-content-flex-util">
+        <div class="hstack gap-3">
+          <div class="p-2">First item</div>
+          <div class="p-2">Second item</div>
+          <div class="p-2">Third item</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="horizontal1Code" label="html" />
+    </div>
+    <p>使用诸如 <code>.ms-auto</code> 这样的水平内边距样式作为分隔符：</p>
+    <div class="docs-example">
+      <div class="docs-example-data docs-content-flex-util">
+        <div class="hstack gap-3">
+          <div class="p-2">First item</div>
+          <div class="p-2 ms-auto">Second item</div>
+          <div class="p-2">Third item</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="horizontal2Code" label="html" />
+    </div>
+    <p>
+      并且使用了 <a href="https://getbootstrap.com/docs/5.3/helpers/vertical-rule" target="_blank">垂直分隔线</a> ：
+    </p>
+    <div class="docs-example">
+      <div class="docs-example-data docs-content-flex-util">
+        <div class="hstack gap-3">
+          <div class="p-2">First item</div>
+          <div class="p-2 ms-auto">Second item</div>
+          <div class="vr"></div>
+          <div class="p-2">Third item</div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="horizontal3Code" label="html" />
+    </div>
+
+    <h2 id="stacks-example">
+      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#stacks-example"> </a>
+    </h2>
+    <p>使用 <code>.vstack</code> 来堆叠按钮及其他元素：</p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="vstack gap-2 col-md-5 mx-auto">
+          <button type="button" class="btn btn-secondary">Save changes</button>
+          <button type="button" class="btn btn-outline-secondary">Cancel</button>
+        </div>
+      </div>
+      <code-highlight type="html" :code="example1Code" label="html" />
+    </div>
+    <p>使用 <code>.hstack</code> 创建一个内联表单：</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
+          <input
+            class="form-control me-auto"
+            type="text"
+            placeholder="Add your item here..."
+            aria-label="Add your item here..."
+          />
+          <button type="button" class="btn btn-secondary">Submit</button>
+          <div class="vr"></div>
+          <button type="button" class="btn btn-outline-danger">Reset</button>
         </div>
       </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
+      <code-highlight type="html" :code="example2Code" label="html" />
     </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
-    </div>
+
+    <h2 id="stacks-css">
+      CSS<a class="anchor-link" aria-label="Link to this section: CSS" href="#stacks-css"> </a>
+      <code-highlight type="scss" :code="css1Code" label="scss/helpers/_stacks.scss" />
+    </h2>
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
-
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
-
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
-</div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
-  </div>
+const verticalCode = `
+<div class="vstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2">Second item</div>
+  <div class="p-2">Third item</div>
 </div>`;
+
+const horizontal1Code = `
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2">Second item</div>
+  <div class="p-2">Third item</div>
+</div>`;
+
+const horizontal2Code = `
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2 ms-auto">Second item</div>
+  <div class="p-2">Third item</div>
+</div>`;
+
+const horizontal3Code = `
+<div class="hstack gap-3">
+  <div class="p-2">First item</div>
+  <div class="p-2 ms-auto">Second item</div>
+  <div class="vr"></div>
+  <div class="p-2">Third item</div>
+</div>`;
+
+const example1Code = `
+<div class="vstack gap-2 col-md-5 mx-auto">
+  <button type="button" class="btn btn-secondary">Save changes</button>
+  <button type="button" class="btn btn-outline-secondary">Cancel</button>
+</div>
+`;
+
+const example2Code = `
+<div class="hstack gap-3">
+  <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
+  <button type="button" class="btn btn-secondary">Submit</button>
+  <div class="vr"></div>
+  <button type="button" class="btn btn-outline-danger">Reset</button>
+</div>
+`;
+
+const css1Code = `
+.hstack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.vstack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}`;
 </script>

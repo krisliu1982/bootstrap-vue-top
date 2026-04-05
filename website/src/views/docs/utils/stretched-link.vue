@@ -1,136 +1,156 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-color-background">
-      <a href="#color-background-base">基础用法</a>
-      <a href="#color-background-component">在组件中使用</a>
+    <nav id="docs-nav-stretched-link">
+      <a href="#stretched-link-about">使用说明</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
-    <h1>Color and background 文本颜色背景</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-stretched-link" class="docs-content">
+    <h1>Stretched link 拉伸链接</h1>
     <p class="fs-4 fw-light">
-      设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
-      >
+      通过使用 CSS 将嵌套链接“拉伸”出来，可以使任何 HTML 元素或 Bootstrap 组件变为可点击状态。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/helpers/stretched-link/" target="_blank">Boostrap Stretched link</a>
     </p>
 
-    <h2 id="color-background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#color-background-base"> </a>
+    <h2 id="stretched-link-about">
+      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#stretched-link-about"> </a>
     </h2>
     <p>
-      文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
-      工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
-      工具类的功能整合到了一个类中。通过使用我们的 Sass
-      <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
-      <code>颜色</code> 。
+      将 <code>.stretched-link</code> 添加到链接中，以便通过 <code>::after</code> 伪元素使其
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block" target="_blank">包含块</a>
+      变得可点击。在大多数情况下，这意味着具有 <code>position: relative;</code> 属性的包含链接带有
+      <code>.stretched-link</code> 类的元素是可点击的。请注意，鉴于
+      <a href="https://www.w3.org/TR/CSS21/visuren.html#propdef-position" target="_blank"
+        >CSS 中 <code>position</code> 的工作原理</a
+      >，<code>.stretched-link</code> 不能与大多数表格元素混合使用。
     </p>
-    <p class="text-bg-warning">
-      <strong>请注意！</strong> 目前尚无针对 CSS 原生的 <code>color-contrast</code> 函数的支持，所以我们通过 Sass
-      来实现这一功能。这意味着通过 CSS 变量来自定义主题颜色可能会与这些工具产生颜色对比方面的问题。
-    </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="text-bg-primary p-3">Primary with contrasting color</div>
-        <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-        <div class="text-bg-success p-3">Success with contrasting color</div>
-        <div class="text-bg-danger p-3">Danger with contrasting color</div>
-        <div class="text-bg-warning p-3">Warning with contrasting color</div>
-        <div class="text-bg-info p-3">Info with contrasting color</div>
-        <div class="text-bg-light p-3">Light with contrasting color</div>
-        <div class="text-bg-dark p-3">Dark with contrasting color</div>
-      </div>
-      <code-highlight type="html" :code="baseCode" label="html" />
-    </div>
-    <p class="text-bg-info">
-      <strong>无障碍使用提示：</strong>
-      仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
-      的可见文本），或者通过其他方式予以说明，比如使用带有
-      <code>.visually-hidden</code> 类的隐藏文本。
-    </p>
-
-    <h2 id="color-background-component">
-      在组件中使用<a
-        class="anchor-link"
-        aria-label="Link to this section: 在组件中使用"
-        href="#color-background-component"
-      >
-      </a>
-    </h2>
     <p>
-      用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
-      组件中的使用方式：
+      在 Bootstrap 中，卡片默认具有“position: relative”属性，因此在这种情况下，您可以放心地将
+      <code>.stretched-link</code> 类添加到卡片中的链接上，而无需进行其他 HTML 修改。
+    </p>
+    <p>
+      对于拉伸链接，不建议使用多个链接和点击目标。不过，如果确实需要这样做，某些 <code>position</code> 和
+      <code>z-index</code> 样式可能会有所帮助。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
-          <span class="badge text-bg-primary">Primary</span>
-          <span class="badge text-bg-info">Info</span>
-        </div>
-      </div>
-      <code-highlight type="html" :code="component1Code" label="html" />
-    </div>
-    <p>或者在 <code>cards</code> 组件中：</p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
+        <div class="card" style="width: 18rem">
+          <svg
+            aria-label="Card image cap"
+            class="bd-placeholder-img card-img-top"
+            height="180"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Card image cap</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+          </svg>
           <div class="card-body">
+            <h5 class="card-title">Card with stretched link</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card’s content.
             </p>
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card’s content.
-            </p>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
           </div>
         </div>
       </div>
-      <code-highlight type="html" :code="component2Code" label="html" />
+      <code-highlight type="html" :code="about1Code" label="html" />
+    </div>
+    <p>
+      大多数自定义组件默认情况下并不包含 <code>position: relative</code> 属性，因此我们需要在此处添加
+      <code>.position-relative</code> 类，以防止链接超出父元素范围。
+    </p>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="d-flex position-relative">
+          <svg
+            aria-label="Generic placeholder image22222"
+            class="docs-placeholder-img flex-shrink-0 me-3"
+            height="144"
+            preserveAspectRatio="xMidYMid slice"
+            role="img"
+            width="144"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Generic placeholder image22222</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+          </svg>
+          <div>
+            <h5 class="mt-0">Custom component with stretched link</h5>
+            <p>
+              This is some placeholder content for the custom component. It is intended to mimic what some real-world
+              content would look like, and we’re using it here to give the component a bit of body and size.
+            </p>
+            <a href="#" class="stretched-link">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="about2Code" label="html" />
+    </div>
+    <div class="docs-example">
+      <div class="docs-example-data">
+        <div class="row g-0 bg-body-secondary position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <svg
+              aria-label="Generic placeholder image"
+              class="docs-placeholder-img w-100"
+              height="200"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Generic placeholder image</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+            </svg>
+          </div>
+          <div class="col-md-6 p-4 ps-md-0">
+            <h5 class="mt-0">Columns with stretched link</h5>
+            <p>
+              Another instance of placeholder content for this other custom component. It is intended to mimic what some
+              real-world content would look like, and we’re using it here to give the component a bit of body and size.
+            </p>
+            <a href="#" class="stretched-link">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <code-highlight type="html" :code="about3Code" label="html" />
     </div>
   </div>
 </template>
 
 <script setup>
-const baseCode = `
-<div class="text-bg-primary p-3">Primary with contrasting color</div>
-<div class="text-bg-secondary p-3">Secondary with contrasting color</div>
-<div class="text-bg-success p-3">Success with contrasting color</div>
-<div class="text-bg-danger p-3">Danger with contrasting color</div>
-<div class="text-bg-warning p-3">Warning with contrasting color</div>
-<div class="text-bg-info p-3">Info with contrasting color</div>
-<div class="text-bg-light p-3">Light with contrasting color</div>
-<div class="text-bg-dark p-3">Dark with contrasting color</div>`;
-
-const component1Code = `
-<span class="badge text-bg-primary">Primary</span>
-<span class="badge text-bg-info">Info</span>`;
-
-const component2Code = `
-<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+const about1Code = `
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
+    <h5 class="card-title">Card with stretched link</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
   </div>
-</div>
-<div class="card text-bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <p class="card-text">
-      Some quick example text ...
-    </p>
+</div>`;
+
+const about2Code = `
+<div class="d-flex position-relative">
+  <img src="..." class="flex-shrink-0 me-3" alt="...">
+  <div>
+    <h5 class="mt-0">Custom component with stretched link</h5>
+    <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
+    <a href="#" class="stretched-link">Go somewhere</a>
+  </div>
+</div>`;
+
+const about3Code = `
+<div class="row g-0 bg-body-secondary position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="..." class="w-100" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Columns with stretched link</h5>
+    <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
+    <a href="#" class="stretched-link">Go somewhere</a>
   </div>
 </div>`;
 </script>
