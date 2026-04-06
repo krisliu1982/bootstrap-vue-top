@@ -51,6 +51,8 @@ const languageClass = computed(() => {
     return 'language-html';
   } else if (props.type === 'scss') {
     return 'language-scss';
+  } else if (props.type === 'css') {
+    return 'language-css';
   }
 });
 
