@@ -1,9 +1,9 @@
 <template>
-  <div class="position-relative">
+  <div ref="elementRef" class="position-relative" tabindex="-1">
     <slot></slot>
     <Transition name="fadeIn">
-      <div ref="elementRef" v-show="loading" class="position-absolute top-0 start-0 w-100 h-100 text-center z-1"
-        style="background-color: rgba(255, 255, 255, 0.5);" tabindex="-1">
+      <div v-if="loading" class="position-absolute top-0 start-0 w-100 h-100 text-center z-1"
+        style="background-color: rgba(255, 255, 255, 0.5);">
         <div class="spinner-border text-primary" role="status" style="margin-top: 2rem;">
           <span class="visually-hidden">Loading...</span>
         </div>
