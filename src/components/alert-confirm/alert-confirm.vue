@@ -56,9 +56,6 @@ onMounted(() => {
       focusTrapInstance.activate();
     }
   });
-
-  //添加监听keydown
-  document.addEventListener('keydown', handleKeyDown);
 });
 
 onBeforeUnmount(() => {
@@ -70,8 +67,6 @@ onBeforeUnmount(() => {
   if (focusTrapInstance !== null) {
     focusTrapInstance.deactivate();
   }
-  //移除监听keydown
-  document.removeEventListener('keydown', handleKeyDown);
 });
 
 function confirm() {
@@ -81,11 +76,5 @@ function confirm() {
 
 function cancel() {
   visible.value = false;
-}
-
-function handleKeyDown(event) {
-  if (event.key === 'Escape') {
-    cancel();
-  }
 }
 </script>

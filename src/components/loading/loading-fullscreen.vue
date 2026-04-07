@@ -1,7 +1,7 @@
 <template>
   <Transition name="fadeIn">
-    <div v-show="visible" class="loading-fullscreen text-center" tabindex="-1">
-      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem; margin-top: 25vh">
+    <div ref="elementRef" v-show="visible" class="loading-fullscreen text-center" tabindex="-1">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; margin-top: 25vh">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
@@ -9,27 +9,19 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, shallowRef } from 'vue';
+
+const elementRef = shallowRef(null);
 
 const visible = ref(false);
-
-const disableTab = (e) => {
-  if (e.key === 'Tab') e.preventDefault();
-};
-
-onMounted(() => {
-  document.addEventListener('keydown', disableTab);
-});
-
-onBeforeUnmount(() => {
-  document.removeEventListener('keydown', disableTab);
-});
 
 function show() {
   if (document.body.scrollHeight > window.innerHeight) {
     document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
   }
   visible.value = true;
+
+  document.addEventListener('keydown', tabHandler)
 }
 
 function hide() {
@@ -37,6 +29,15 @@ function hide() {
     document.body.style = null;
   }
   visible.value = false;
+
+  document.removeEventListener('keydown', tabHandler)
+}
+
+const tabHandler = (e) => {
+  if (e.key === 'Tab') {
+    e.preventDefault()
+    elementRef.value.focus()
+  }
 }
 
 defineExpose({

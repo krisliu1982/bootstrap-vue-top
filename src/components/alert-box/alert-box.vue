@@ -1,15 +1,12 @@
 <template>
   <Transition name="fadeIn" @after-leave="$emit('destroy')">
-    <div
-      v-show="visible"
-      ref="elementRef"
-      tabindex="-1"
-      class="alert-box d-flex justify-content-center align-items-start"
-      role="alert"
-    >
+    <div v-show="visible" ref="elementRef" tabindex="-1"
+      class="alert-box d-flex justify-content-center align-items-start" role="alert">
       <div class="shadow rounded bg-body p-3 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
         <div class="d-flex justify-content-center align-items-center">
-          <div class="me-2"><BiExclamationCircle class="text-danger fs-5" /></div>
+          <div class="me-2">
+            <BiExclamationCircle class="text-danger fs-5" />
+          </div>
           <div class="fs-5 fw-bolder">{{ message }}</div>
         </div>
         <hr />
@@ -52,9 +49,6 @@ onMounted(() => {
       focusTrapInstance.activate();
     }
   });
-
-  //添加监听keydown
-  document.addEventListener('keydown', handleKeyDown);
 });
 
 onBeforeUnmount(() => {
@@ -66,18 +60,10 @@ onBeforeUnmount(() => {
   if (focusTrapInstance !== null) {
     focusTrapInstance.deactivate();
   }
-
-  //移除监听keydown
-  document.removeEventListener('keydown', handleKeyDown);
 });
 
 function confirm() {
   visible.value = false;
 }
 
-function handleKeyDown(event) {
-  if (event.key === 'Escape') {
-    confirm();
-  }
-}
 </script>

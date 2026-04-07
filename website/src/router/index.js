@@ -14,6 +14,22 @@ var routes = [
     component: () => import('@/views/docs/index.vue'),
     children: [
       {
+        path: '/docs/layout/breakpoints',
+        component: () => import('@/views/docs/layout/breakpoints.vue')
+      },
+      {
+        path: '/docs/layout/containers',
+        component: () => import('@/views/docs/layout/containers.vue')
+      },
+      {
+        path: '/docs/layout/grid',
+        component: () => import('@/views/docs/layout/grid.vue')
+      },
+      {
+        path: '/docs/layout/z-index',
+        component: () => import('@/views/docs/layout/z-index.vue')
+      },
+      {
         path: '/docs/content/reboot',
         component: () => import('@/views/docs/content/reboot.vue')
       },

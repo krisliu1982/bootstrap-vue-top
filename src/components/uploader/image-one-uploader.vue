@@ -4,7 +4,7 @@
       <a href="#" class="d-block w-100 h-100" @click.prevent="handlePreview"
         ><img class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl"
       /></a>
-      <div class="position-absolute top-0 start-0 end-0 z-1 p-2">
+      <div class="position-absolute top-0 end-0 z-1 p-2">
         <button
           type="button"
           :disabled="disabled"
