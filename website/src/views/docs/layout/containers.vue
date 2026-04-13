@@ -16,7 +16,7 @@
       使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#containers-about"> </a>
     </h2>
     <p>
-      容器是 Bootstrap 中最基本的布局元素，当使用我们的默认网格系统时，<strong>必须使用容器</strong>。容器用于容纳、填充以及（有时）使内容在其中居中对齐。虽然容器可以嵌套，但大多数布局并不需要嵌套的容器。
+      容器是 Bootstrap 中最基本的布局元素，当使用网格系统时，<strong>必须使用容器</strong>。容器用于容纳、填充以及（有时）使内容在其中居中对齐。虽然容器可以嵌套，但大多数布局并不需要嵌套的容器。
     </p>
     <p>Bootstrap 提供了三种不同的容器：</p>
     <ul class="docs-content-list">
