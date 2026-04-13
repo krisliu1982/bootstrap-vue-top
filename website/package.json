@@ -21,7 +21,7 @@
     "@iconify-json/bi": "^1.2.7",
     "@vitejs/plugin-vue": "^6.0.5",
     "autoprefixer": "^10.4.27",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "sass": "^1.99.0",
     "unplugin-icons": "^22.5.0",
     "unplugin-vue-components": "^30.0.0",

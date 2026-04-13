@@ -18,16 +18,23 @@
     </h2>
     <ul class="docs-content-list">
       <li>
-        <p><strong>断点是响应式设计的基础元素。</strong> 利用它们来控制您的布局在特定视口或设备尺寸下何时能够进行调整。</p>
+        <p>
+          <strong>断点是响应式设计的基础元素。</strong> 利用它们来控制您的布局在特定视口或设备尺寸下何时能够进行调整。
+        </p>
       </li>
       <li>
-        <p><strong>使用媒体查询按断点来设计您的 CSS 代码。</strong> 媒体查询是 CSS 的一个特性，它允许您根据一系列浏览器和操作系统参数有条件地应用样式。我们在媒体查询中最常使用的是
+        <p>
+          <strong>使用媒体查询按断点来设计您的 CSS 代码。</strong> 媒体查询是 CSS
+          的一个特性，它允许您根据一系列浏览器和操作系统参数有条件地应用样式。我们在媒体查询中最常使用的是
           <code>min-width</code>。
         </p>
       </li>
       <li>
-        <p><strong>“移动优先，响应式设计”便是 Bootstrap 的目标。</strong> Bootstrap 的 CSS
-          的目的是在最小断点下应用最少量的样式以使布局能够正常工作，然后在更大的设备上添加样式来调整该设计。这优化了您的 CSS，提高了渲染速度，并为您的访客提供了出色的体验。</p>
+        <p>
+          <strong>“移动优先，响应式设计”便是 Bootstrap 的目标。</strong> Bootstrap 的 CSS
+          的目的是在最小断点下应用最少量的样式以使布局能够正常工作，然后在更大的设备上添加样式来调整该设计。这优化了您的
+          CSS，提高了渲染速度，并为您的访客提供了出色的体验。
+        </p>
       </li>
     </ul>
 
@@ -35,7 +42,8 @@
       可用的断点<a class="anchor-link" aria-label="Link to this section: 可用的断点" href="#breakpoints-available"> </a>
     </h2>
     <p>
-      Bootstrap 包含了六个默认的断点设置，有时也被称为“网格层级”，用于实现响应式设计。如果您使用的是 Bootstrap 的源 Sass 文件，这些断点是可以进行自定义设置的。
+      Bootstrap 包含了六个默认的断点设置，有时也被称为“网格层级”，用于实现响应式设计。如果您使用的是 Bootstrap 的源 Sass
+      文件，这些断点是可以进行自定义设置的。
     </p>
     <div class="table-responsive">
       <table class="table">
@@ -87,5 +95,4 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>

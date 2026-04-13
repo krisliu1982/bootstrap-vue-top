@@ -2,10 +2,11 @@
   <div class="border rounded">
     <div v-if="ready" class="btn-toolbar" role="toolbar" aria-label="Editor Toolbar">
       <div class="button-group">
-        <button class="btn btn-editor"
+        <button
+          class="btn btn-editor"
           @click="editor.chain().focus().toggleBold().run()"
           :disabled="!editor.can().chain().focus().toggleBold().run()"
-          :class="{ 'active': editor.isActive('bold') }"
+          :class="{ active: editor.isActive('bold') }"
         >
           Bold
         </button>
@@ -167,14 +168,13 @@ onBeforeUnmount(() => {
     var(--bs-focus-ring-width) var(--bs-focus-ring-color);
 }
 
-
 .btn-editor {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-body-color);
   --bs-btn-bg: var(--bs-tertiary-bg);
   --bs-btn-border-color: none;
   --bs-btn-hover-color: var(--bs-body-color);
-  --bs-btn-hover-bg:var(--bs-secondary-bg);
+  --bs-btn-hover-bg: var(--bs-secondary-bg);
   --bs-btn-hover-border-color: 0;
   --bs-btn-focus-shadow-rgb: var(--bs-secondary-bg-rgb);
   --bs-btn-active-color: var(--bs-body-color);

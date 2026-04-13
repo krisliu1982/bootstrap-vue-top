@@ -21,7 +21,7 @@ function show() {
   }
   visible.value = true;
 
-  document.addEventListener('keydown', tabHandler)
+  document.addEventListener('keydown', tabHandler);
 }
 
 function hide() {
@@ -30,15 +30,15 @@ function hide() {
   }
   visible.value = false;
 
-  document.removeEventListener('keydown', tabHandler)
+  document.removeEventListener('keydown', tabHandler);
 }
 
 const tabHandler = (e) => {
   if (e.key === 'Tab') {
-    e.preventDefault()
-    elementRef.value.focus()
+    e.preventDefault();
+    elementRef.value.focus();
   }
-}
+};
 
 defineExpose({
   show,
