@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-flex">
+    <nav id="docs-nav-grid">
       <a href="#flex-enable">启用弹性布局</a>
       <a href="#flex-direction">方向调整</a>
       <a href="#flex-justify">内容布局</a>
@@ -15,12 +15,11 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-flex" class="docs-content">
-    <h1>Flex 弹性布局</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-grid" class="docs-content">
+    <h1>Grid 网格</h1>
     <p class="fs-4 fw-light">
-      借助一整套响应式弹性盒布局工具，您可以快速管理网格列、导航、组件等的布局、对齐和尺寸设置。对于更复杂的实现，可能需要使用自定义
-      CSS。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex/" target="_blank">Boostrap Flex</a>
+      利用 Boostrap 强大的移动优先弹性盒网格功能，借助十二列体系、六种默认响应式层级、Sass 变量和混合器以及数十种预定义类，您可以轻松构建各种形状和大小的布局。了解更多请阅读
+      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Boostrap Grid</a>
     </p>
 
     <h2 id="flex-enable">
@@ -32,31 +31,31 @@
       转换为弹性项。弹性容器和弹性项还可以通过其他弹性属性进行进一步修改。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex p-2">I'm a flexbox container!</div>
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid p-2">I'm a flexbox container!</div>
       </div>
       <code-highlight type="html" :code="enable1Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-inline-flex p-2">I'm an inline flexbox container!</div>
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-inline-grid p-2">I'm an inline flexbox container!</div>
       </div>
       <code-highlight type="html" :code="enable2Code" label="html" />
     </div>
-    <p>对于 <code>.d-flex</code> 和 <code>.d-inline-flex</code> 这两个元素，也存在相应的响应式变化。</p>
+    <p>对于 <code>.d-grid</code> 和 <code>.d-inline-grid</code> 这两个元素，也存在相应的响应式变化。</p>
     <ul class="docs-content-list">
-      <li><code>.d-flex</code></li>
-      <li><code>.d-inline-flex</code></li>
-      <li><code>.d-sm-flex</code></li>
-      <li><code>.d-sm-inline-flex</code></li>
-      <li><code>.d-md-flex</code></li>
-      <li><code>.d-md-inline-flex</code></li>
-      <li><code>.d-lg-flex</code></li>
-      <li><code>.d-lg-inline-flex</code></li>
-      <li><code>.d-xl-flex</code></li>
-      <li><code>.d-xl-inline-flex</code></li>
-      <li><code>.d-xxl-flex</code></li>
-      <li><code>.d-xxl-inline-flex</code></li>
+      <li><code>.d-grid</code></li>
+      <li><code>.d-inline-grid</code></li>
+      <li><code>.d-sm-grid</code></li>
+      <li><code>.d-sm-inline-grid</code></li>
+      <li><code>.d-md-grid</code></li>
+      <li><code>.d-md-inline-grid</code></li>
+      <li><code>.d-lg-grid</code></li>
+      <li><code>.d-lg-inline-grid</code></li>
+      <li><code>.d-xl-grid</code></li>
+      <li><code>.d-xl-inline-grid</code></li>
+      <li><code>.d-xxl-grid</code></li>
+      <li><code>.d-xxl-inline-grid</code></li>
     </ul>
 
     <h2 id="flex-direction">
@@ -73,13 +72,13 @@
       <code>.flex-row-reverse</code> 从相反的一侧开始设置水平方向。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-row mb-3">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-row mb-3">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
         </div>
-        <div class="d-flex flex-row-reverse">
+        <div class="d-grid flex-row-reverse">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
@@ -92,13 +91,13 @@
       <code>.flex-column-reverse</code> 从相反的一侧开始垂直方向的排列。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-column mb-3">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-column mb-3">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
         </div>
-        <div class="d-flex flex-column-reverse">
+        <div class="d-grid flex-column-reverse">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
@@ -146,33 +145,33 @@
       或 <code>evenly</code>。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex justify-content-start mb-3">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid justify-content-start mb-3">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">Start</div>
         </div>
-        <div class="d-flex justify-content-end mb-3">
+        <div class="d-grid justify-content-end mb-3">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">End</div>
         </div>
-        <div class="d-flex justify-content-center mb-3">
+        <div class="d-grid justify-content-center mb-3">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">Center</div>
         </div>
-        <div class="d-flex justify-content-between mb-3">
+        <div class="d-grid justify-content-between mb-3">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">Between</div>
         </div>
-        <div class="d-flex justify-content-around mb-3">
+        <div class="d-grid justify-content-around mb-3">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">Around</div>
         </div>
-        <div class="d-flex justify-content-evenly">
+        <div class="d-grid justify-content-evenly">
           <div class="p-2 bd-highlight">Justify</div>
           <div class="p-2 bd-highlight">Content</div>
           <div class="p-2 bd-highlight">Evenly</div>
@@ -230,28 +229,28 @@
       <code>stretch</code>（浏览器默认值）。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-items-start mb-3" style="height: 100px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-items-start mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex align-items-end mb-3" style="height: 100px">
+        <div class="d-grid align-items-end mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex align-items-center mb-3" style="height: 100px">
+        <div class="d-grid align-items-center mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex align-items-baseline mb-3" style="height: 100px">
+        <div class="d-grid align-items-baseline mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex align-items-stretch" style="height: 100px">
+        <div class="d-grid align-items-stretch" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -305,28 +304,28 @@
       <code>stretch</code>（浏览器默认值）。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex mb-3" style="height: 100px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="align-self-start p-2">Aligned flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex mb-3" style="height: 100px">
+        <div class="d-grid mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="align-self-end p-2">Aligned flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex mb-3" style="height: 100px">
+        <div class="d-grid mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="align-self-center p-2">Aligned flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex mb-3" style="height: 100px">
+        <div class="d-grid mb-3" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="align-self-baseline p-2">Aligned flex item</div>
           <div class="p-2">Flex item</div>
         </div>
-        <div class="d-flex" style="height: 100px">
+        <div class="d-grid" style="height: 100px">
           <div class="p-2">Flex item</div>
           <div class="align-self-stretch p-2">Aligned flex item</div>
           <div class="p-2">Flex item</div>
@@ -377,8 +376,8 @@
       类，可强制这些元素的宽度与其中的内容相等（如果其内容未超出边框盒范围，则使其宽度与相邻元素相同），同时占据所有可用的水平空间。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid">
           <div class="p-2 flex-fill">Flex item with a lot of content</div>
           <div class="p-2 flex-fill">Flex item</div>
           <div class="p-2 flex-fill">Flex item</div>
@@ -406,8 +405,8 @@
       元素会充分利用其可利用的空间，同时为其余两个弹性项留出必要的空间。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid">
           <div class="p-2 flex-grow-1">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Third flex item</div>
@@ -424,8 +423,8 @@
       <code>.w-100</code> 样式的前一个弹性项腾出更多空间。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid">
           <div class="p-2 w-100">Flex item</div>
           <div class="p-2 flex-shrink-1">Flex item</div>
         </div>
@@ -455,20 +454,20 @@
       当将弹性布局的对齐方式与自动边距相结合时，它能够实现一些非常出色的效果。下面展示了通过自动边距来控制弹性项的三个示例：默认情况（无自动边距）、将两个项目向右推（<code>.me-auto</code>）以及将两个项目向左推（<code>.ms-auto</code>）。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex mb-3">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid mb-3">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
 
-        <div class="d-flex mb-3">
+        <div class="d-grid mb-3">
           <div class="me-auto p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
 
-        <div class="d-flex mb-3">
+        <div class="d-grid mb-3">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="ms-auto p-2">Flex item</div>
@@ -482,14 +481,14 @@
       这些属性，可以将一个弹性项目垂直移动到容器的顶部或底部。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-items-start flex-column mb-3" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-items-start flex-column mb-3" style="height: 200px">
           <div class="mb-auto p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
         </div>
 
-        <div class="d-flex align-items-end flex-column mb-3" style="height: 200px">
+        <div class="d-grid align-items-end flex-column mb-3" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="mt-auto p-2">Flex item</div>
@@ -507,8 +506,8 @@
       <code>.flex-wrap-reverse</code>）。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-nowrap" style="width: 8rem">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-nowrap" style="width: 8rem">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -519,8 +518,8 @@
       <code-highlight type="html" :code="wrap1Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-wrap">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-wrap">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
@@ -540,8 +539,8 @@
       <code-highlight type="html" :code="wrap2Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-wrap-reverse">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-wrap-reverse">
           <div class="p-2">Flex item 1</div>
           <div class="p-2">Flex item 2</div>
           <div class="p-2">Flex item 3</div>
@@ -592,8 +591,8 @@
       排序的选项。由于 <code>order</code> 可接受 0 到 5 之间的任何整数值，因此您可以为所需的任何其他值添加自定义 CSS。
     </p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex flex-nowrap">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid flex-nowrap">
           <div class="order-3 p-2">First flex item</div>
           <div class="order-2 p-2">Second flex item</div>
           <div class="order-1 p-2">Third flex item</div>
@@ -672,8 +671,8 @@
     </p>
     <p><strong>注意！</strong> 此属性对 flex 元素的单个行项没有影响。</p>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-start flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-start flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -694,8 +693,8 @@
       <code-highlight type="html" :code="alignContent1Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-end flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-end flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -716,8 +715,8 @@
       <code-highlight type="html" :code="alignContent2Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-center flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-center flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -738,8 +737,8 @@
       <code-highlight type="html" :code="alignContent3Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-between flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-between flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -760,8 +759,8 @@
       <code-highlight type="html" :code="alignContent4Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-around flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-around flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -782,8 +781,8 @@
       <code-highlight type="html" :code="alignContent5Code" label="html" />
     </div>
     <div class="docs-example">
-      <div class="docs-example-data docs-content-flex-util">
-        <div class="d-flex align-content-stretch flex-wrap" style="height: 200px">
+      <div class="docs-example-data docs-content-grid-util">
+        <div class="d-grid align-content-stretch flex-wrap" style="height: 200px">
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
           <div class="p-2">Flex item</div>
@@ -848,7 +847,7 @@
     </h2>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="d-flex">
+        <div class="d-grid">
           <div class="flex-shrink-0">
             <svg
               aria-label="Placeholder: Image"
@@ -873,7 +872,7 @@
     </div>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="d-flex align-items-center">
+        <div class="d-grid align-items-center">
           <div class="flex-shrink-0">
             <svg
               aria-label="Placeholder: Image"
@@ -901,48 +900,48 @@
 
 <script setup>
 const enable1Code = `
-<div class="d-flex p-2">I'm a flexbox container!</div>`;
+<div class="d-grid p-2">I'm a flexbox container!</div>`;
 const enable2Code = `
-<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`;
+<div class="d-inline-grid p-2">I'm an inline flexbox container!</div>`;
 
 const direction1Code = `
-<div class="d-flex flex-row mb-3">
+<div class="d-grid flex-row mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>
-<div class="d-flex flex-row-reverse">
+<div class="d-grid flex-row-reverse">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>`;
 
 const direction2Code = `
-<div class="d-flex flex-column mb-3">
+<div class="d-grid flex-column mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>
-<div class="d-flex flex-column-reverse">
+<div class="d-grid flex-column-reverse">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
   <div class="p-2">Flex item 3</div>
 </div>`;
 
 const justifyCode = `
-<div class="d-flex justify-content-start">...</div>
-<div class="d-flex justify-content-end">...</div>
-<div class="d-flex justify-content-center">...</div>
-<div class="d-flex justify-content-between">...</div>
-<div class="d-flex justify-content-around">...</div>
-<div class="d-flex justify-content-evenly">...</div>`;
+<div class="d-grid justify-content-start">...</div>
+<div class="d-grid justify-content-end">...</div>
+<div class="d-grid justify-content-center">...</div>
+<div class="d-grid justify-content-between">...</div>
+<div class="d-grid justify-content-around">...</div>
+<div class="d-grid justify-content-evenly">...</div>`;
 
 const alignCode = `
-<div class="d-flex align-items-start">...</div>
-<div class="d-flex align-items-end">...</div>
-<div class="d-flex align-items-center">...</div>
-<div class="d-flex align-items-baseline">...</div>
-<div class="d-flex align-items-stretch">...</div>`;
+<div class="d-grid align-items-start">...</div>
+<div class="d-grid align-items-end">...</div>
+<div class="d-grid align-items-center">...</div>
+<div class="d-grid align-items-baseline">...</div>
+<div class="d-grid align-items-stretch">...</div>`;
 
 const alignSelfCode = `
 <div class="align-self-start">Aligned flex item</div>
@@ -952,96 +951,96 @@ const alignSelfCode = `
 <div class="align-self-stretch">Aligned flex item</div>`;
 
 const fillCode = `
-<div class="d-flex">
+<div class="d-grid">
   <div class="p-2 flex-fill">Flex item with a lot of content</div>
   <div class="p-2 flex-fill">Flex item</div>
   <div class="p-2 flex-fill">Flex item</div>
 </div>`;
 
 const growCode = `
-<div class="d-flex">
+<div class="d-grid">
   <div class="p-2 flex-grow-1">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Third flex item</div>
 </div>`;
 
 const shrinkCode = `
-<div class="d-flex">
+<div class="d-grid">
   <div class="p-2 w-100">Flex item</div>
   <div class="p-2 flex-shrink-1">Flex item</div>
 </div>`;
 
 const auto1Code = `
-<div class="d-flex mb-3">
+<div class="d-grid mb-3">
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
 </div>
 
-<div class="d-flex mb-3">
+<div class="d-grid mb-3">
   <div class="me-auto p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
 </div>
 
-<div class="d-flex mb-3">
+<div class="d-grid mb-3">
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="ms-auto p-2">Flex item</div>
 </div>`;
 
 const auto2Code = `
-<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+<div class="d-grid align-items-start flex-column mb-3" style="height: 200px;">
   <div class="mb-auto p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
 </div>
 
-<div class="d-flex align-items-end flex-column mb-3" style="height: 200px;">
+<div class="d-grid align-items-end flex-column mb-3" style="height: 200px;">
   <div class="p-2">Flex item</div>
   <div class="p-2">Flex item</div>
   <div class="mt-auto p-2">Flex item</div>
 </div>`;
 
 const wrap1Code = `
-<div class="d-flex flex-nowrap">
+<div class="d-grid flex-nowrap">
   ...
 </div>`;
 
 const wrap2Code = `
-<div class="d-flex flex-wrap">
+<div class="d-grid flex-wrap">
   ...
 </div>`;
 
 const wrap3Code = `
-<div class="d-flex flex-wrap-reverse">
+<div class="d-grid flex-wrap-reverse">
   ...
 </div>`;
 
 const orderCode = `
-<div class="d-flex flex-nowrap">
+<div class="d-grid flex-nowrap">
   <div class="order-3 p-2">First flex item</div>
   <div class="order-2 p-2">Second flex item</div>
   <div class="order-1 p-2">Third flex item</div>
 </div>`;
 
 const alignContent1Code = `
-<div class="d-flex align-content-start flex-wrap">
+<div class="d-grid align-content-start flex-wrap">
   ...
 </div>`;
 const alignContent2Code = `
-<div class="d-flex align-content-end flex-wrap">...</div>`;
+<div class="d-grid align-content-end flex-wrap">...</div>`;
 const alignContent3Code = `
-<div class="d-flex align-content-center flex-wrap">...</div>`;
+<div class="d-grid align-content-center flex-wrap">...</div>`;
 const alignContent4Code = `
-<div class="d-flex align-content-between flex-wrap">...</div>`;
+<div class="d-grid align-content-between flex-wrap">...</div>`;
 const alignContent5Code = `
-<div class="d-flex align-content-around flex-wrap">...</div>`;
+<div class="d-grid align-content-around flex-wrap">...</div>`;
 const alignContent6Code = `
-<div class="d-flex align-content-stretch flex-wrap">...</div>`;
+<div class="d-grid align-content-stretch flex-wrap">...</div>`;
 
 const example1Code = `
-<div class="d-flex">
+<div class="d-grid">
   <div class="flex-shrink-0">
     <img src="..." alt="...">
   </div>
@@ -1051,7 +1050,7 @@ const example1Code = `
 </div>`;
 
 const example2Code = `
-<div class="d-flex align-items-center">
+<div class="d-grid align-items-center">
   <div class="flex-shrink-0">
     <img src="..." alt="...">
   </div>
