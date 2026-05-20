@@ -1,7 +1,7 @@
 <template>
   <div class="docs-toc text-body-secondary">
     <nav id="docs-nav-grid">
-      <a href="#flex-enable">启用弹性布局</a>
+      <a href="#grid-about">使用说明</a>
       <a href="#flex-direction">方向调整</a>
       <a href="#flex-justify">内容布局</a>
       <a href="#flex-align">对齐项目</a>
@@ -22,20 +22,35 @@
       <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Boostrap Grid</a>
     </p>
 
-    <h2 id="flex-enable">
-      启用弹性布局<a class="anchor-link" aria-label="Link to this section: 启用弹性布局" href="#flex-enable"> </a>
+    <h2 id="grid-about">
+      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#grid-about"> </a>
     </h2>
     <p>
-      应用 <code>display</code> 工具来创建一个弹性盒容器，并将
-      <strong>直接子元素</strong>
-      转换为弹性项。弹性容器和弹性项还可以通过其他弹性属性进行进一步修改。
+      具体来说，网格系统是如何构建起来的呢？以下是其大致流程：
     </p>
-    <div class="docs-example">
-      <div class="docs-example-data docs-content-grid-util">
-        <div class="d-grid p-2">I'm a flexbox container!</div>
-      </div>
-      <code-highlight type="html" :code="enable1Code" label="html" />
-    </div>
+
+<ul>
+<li>
+<p><strong>我们的网格系统支持 <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">六种响应式断点</a>。</strong> 断点是基于 <code>min-width</code> 媒体查询设定的，这意味着它们会影响到该断点及其之上所有的断点（例如，<code>.col-sm-4</code> 适用于 <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code>）。这意味着您可以通过每个断点来控制容器和列的大小及行为。</p>
+</li>
+<li>
+<p><strong>容器会将内容居中并进行水平填充。</strong> 使用 <code>.container</code> 可获得响应式的像素宽度，使用 <code>.container-fluid</code> 可在所有视口和设备上实现 <code>width： 100%</code>，或者使用响应式容器（例如 <code>.container-md</code>）来结合流式和像素宽度。</p>
+</li>
+<li>
+<p><strong>行是列的容器。</strong> 每个列都有水平的 <code>填充</code>（称为缝隙），用于控制它们之间的间距。然后，这些 <code>填充</code> 在行上通过负边距来抵消，以确保列中的内容在左侧视觉上对齐。 </p>
+</li>
+</ul>行还支持修饰类 <a href="#row-columns">以统一应用列尺寸</a> 以及 <a href="https://getbootstrap.com/docs/5.3/layout/gutters">栅距类</a> 来更改内容的间距。</p>
+</li>
+<li>
+<p><strong>列具有极高的灵活性。</strong> 每行有 12 个模板列可供使用，允许您创建不同元素的组合，这些元素可以跨越任意数量的列。列类指示要跨越的模板列数量（例如，<code>col-4</code> 跨越四个）。<code>宽度</code> 以百分比设置，因此您始终具有相同的相对尺寸。</p>
+</li>
+<li>
+<p><strong>栅距也具有响应性和可定制性。</strong> <a href="/docs/5.3/layout/gutters">所有断点都提供了栅距类</a>，其大小与我们的 <a href="/docs/5.3/utilities/spacing">边距和内边距间距</a> 相同。使用 <code>.gx-*</code> 类更改水平栅距，使用 <code>.gy-*</code> 类更改垂直栅距，或使用 <code>.g-*</code> 类更改所有栅距。 <code>.g-0</code> 也可用于移除栅距。</p>
+</li>
+<li>
+</li></ul>
+
+
     <div class="docs-example">
       <div class="docs-example-data docs-content-grid-util">
         <div class="d-inline-grid p-2">I'm an inline flexbox container!</div>
@@ -139,9 +154,7 @@
     <p>
       在 flexbox 容器中使用 <code>justify-content</code> 元素可改变 flex 元素在主轴（即 x 轴，若
       <code>flex-direction: column</code> 则为 y 轴）上的排列方式。可供选择的值有
-      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code
-        >around</code
-      >
+      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code>around</code>
       或 <code>evenly</code>。
     </p>
     <div class="docs-example">
@@ -663,9 +676,7 @@
     </h2>
     <p>
       在 flexbox 容器中使用 <code>align-content</code> 元素，可使 flex 元素在交叉轴上 <em>排列在一起</em> 。您可以从
-      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code
-        >around</code
-      >
+      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code>around</code>
       或 <code>stretch</code> 中进行选择。为了演示这些元素，我们已设置了 <code>flex-wrap： wrap</code> 并增加了 flex
       元素的数量。
     </p>
@@ -849,15 +860,8 @@
       <div class="docs-example-data">
         <div class="d-grid">
           <div class="flex-shrink-0">
-            <svg
-              aria-label="Placeholder: Image"
-              class="docs-placeholder-img"
-              height="100"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg aria-label="Placeholder: Image" class="docs-placeholder-img" height="100"
+              preserveAspectRatio="xMidYMid slice" role="img" width="100" xmlns="http://www.w3.org/2000/svg">
               <title>Placeholder</title>
               <rect width="100%" height="100%" fill="#e5e5e5"></rect>
               <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
@@ -874,15 +878,8 @@
       <div class="docs-example-data">
         <div class="d-grid align-items-center">
           <div class="flex-shrink-0">
-            <svg
-              aria-label="Placeholder: Image"
-              class="docs-placeholder-img"
-              height="100"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg aria-label="Placeholder: Image" class="docs-placeholder-img" height="100"
+              preserveAspectRatio="xMidYMid slice" role="img" width="100" xmlns="http://www.w3.org/2000/svg">
               <title>Placeholder</title>
               <rect width="100%" height="100%" fill="#e5e5e5"></rect>
               <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
