@@ -31,23 +31,23 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "@tiptap/core": "^3.23.1",
-    "@tiptap/pm": "^3.23.1",
-    "@tiptap/starter-kit": "^3.23.1",
+    "@tiptap/core": "^3.29.2",
+    "@tiptap/pm": "^3.29.2",
+    "@tiptap/starter-kit": "^3.29.2",
     "bootstrap": "^5.3.8",
     "focus-trap": "^6.9.4",
     "lodash-es": "^4.18.1"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
-    "@vitejs/plugin-vue": "^6.0.7",
-    "autoprefixer": "^10.5.0",
-    "prettier": "^3.8.4",
-    "sass": "^1.100.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "autoprefixer": "^10.5.4",
+    "prettier": "^3.9.6",
+    "sass": "^1.102.0",
     "unplugin-icons": "^22.5.0",
     "unplugin-vue-components": "^30.0.0",
-    "vite": "^8.0.16",
-    "vue": "^3.5.38"
+    "vite": "^8.2.0",
+    "vue": "^3.5.40"
   },
   "keywords": [
     "boostrap5",
@@ -55,5 +55,8 @@
     "ui-library"
   ],
   "author": "kris.liu",
-  "license": "MIT"
+  "license": "MIT",
+  "allowScripts": {
+    "@parcel/watcher@2.5.6": true
+  }
 }
