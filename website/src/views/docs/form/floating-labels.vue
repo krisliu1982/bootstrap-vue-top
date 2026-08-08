@@ -138,8 +138,7 @@
             style="height: 100px"
             disabled
           >
-Disabled textarea with some text inside</textarea
-          >
+Disabled textarea with some text inside</textarea>
           <label for="floatingTextarea2Disabled">Comments</label>
         </div>
         <div class="form-floating">
