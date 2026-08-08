@@ -297,7 +297,7 @@ const htmlCode = `
       data-bs-html="true"
       data-bs-custom-class="custom-popover" 
       data-bs-title="Detail title" 
-      :data-bs-content='timeoutContent'>
+      :data-bs-content="timeoutContent">
       Lazy Content
     </button>
   </div>

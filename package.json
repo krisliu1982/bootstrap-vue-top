@@ -55,8 +55,5 @@
     "ui-library"
   ],
   "author": "kris.liu",
-  "license": "MIT",
-  "allowScripts": {
-    "@parcel/watcher@2.5.6": true
-  }
+  "license": "MIT"
 }
