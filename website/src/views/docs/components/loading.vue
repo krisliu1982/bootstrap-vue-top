@@ -32,7 +32,7 @@
     <h2 id="loading-area">
       区域加载<a class="anchor-link" aria-label="Link to this section: 区域加载" href="#loading-area"> </a>
     </h2>
-    <p>通过 <code>bv-loading</code> 组件实现区域加载。设置 <code>loading</code> 属性值老控制是否加载。</p>
+    <p>通过 <code>bv-loading</code> 组件实现区域加载。设置 <code>loading</code> 属性值控制是否加载。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-loading :loading="loading">
