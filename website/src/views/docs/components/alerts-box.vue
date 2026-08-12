@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import { alertBox } from 'bootstrap-vue-ui';
+import { alertBox } from 'bootstrap-vue';
 
 function handleClick() {
   alertBox({ message: 'This is a alert-box message.' });
@@ -41,7 +41,7 @@ const baseCode = `
 </template>
 
 <script setup>
-import { alertBox } from 'bootstrap-vue-ui'
+import { alertBox } from 'bootstrap-vue'
 
 function handleClick() {
   alertBox({ message: 'This is a alert-box message.' })

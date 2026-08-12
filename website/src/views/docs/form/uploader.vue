@@ -101,7 +101,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { imagePreview } from 'bootstrap-vue-ui';
+import { imagePreview } from 'bootstrap-vue';
 
 const fileList = ref([]);
 function handleFileChange(fileEl) {
@@ -186,7 +186,7 @@ const fileCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue-ui'
+import { imagePreview } from 'bootstrap-vue'
 
 const fileList = ref([]);
 function handleFileChange(fileEl) {
@@ -224,7 +224,7 @@ const imageOneCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue-ui'
+import { imagePreview } from 'bootstrap-vue'
 
 const imageUrl = ref(null);
 function handleImageOneChange(fileEl) {
@@ -265,7 +265,7 @@ const imageManyCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue-ui'
+import { imagePreview } from 'bootstrap-vue'
 
 const imageUrls = ref([]);
 function handleImageManyChange(fileEl) {

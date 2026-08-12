@@ -55,7 +55,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { LoadingFullscreen } from 'bootstrap-vue-ui';
+import { LoadingFullscreen } from 'bootstrap-vue';
 
 function handleShow() {
   const instance = LoadingFullscreen.getInstance();
@@ -79,7 +79,7 @@ const fullscreenCode = `
 </template>
 
 <script setup>
-import { LoadingFullscreen } from 'bootstrap-vue-ui'
+import { LoadingFullscreen } from 'bootstrap-vue'
 
 function handleShow() {
   const instance = LoadingFullscreen.getInstance();

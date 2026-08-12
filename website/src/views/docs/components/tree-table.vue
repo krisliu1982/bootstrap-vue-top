@@ -347,7 +347,7 @@
 </template>
 
 <script setup>
-import { alertMessage } from 'bootstrap-vue-ui';
+import { alertMessage } from 'bootstrap-vue';
 
 const treeData = {
   code: '1001',

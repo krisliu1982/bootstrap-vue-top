@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import app_ from './app.vue';
 import router from './router/index.js';
 
-import BootstrapVue from 'bootstrap-vue-ui';
+import BootstrapVue from 'bootstrap-vue';
 
 import './assets/docs.css';
 

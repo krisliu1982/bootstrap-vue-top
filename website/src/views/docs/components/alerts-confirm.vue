@@ -28,8 +28,8 @@
 </template>
 
 <script setup>
-import { alertConfirm } from 'bootstrap-vue-ui';
-import { alertMessage } from 'bootstrap-vue-ui';
+import { alertConfirm } from 'bootstrap-vue';
+import { alertMessage } from 'bootstrap-vue';
 
 function handleClick() {
   alertConfirm({
@@ -49,8 +49,8 @@ const baseCode = `
 </template>
 
 <script setup>
-import { alertConfirm } from 'bootstrap-vue-ui'
-import { alertMessage } from 'bootstrap-vue-ui'
+import { alertConfirm } from 'bootstrap-vue'
+import { alertMessage } from 'bootstrap-vue'
 
 function handleClick() {
   alertConfirm({
