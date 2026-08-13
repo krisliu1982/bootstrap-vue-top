@@ -1,37 +1,8 @@
 # BootstrapVue
+基于 Bootstrap5 & Vue3 的前端框架
 
-#### 介绍
-这是一款深度融合了 Bootstrap 的 CSS 样式体系 与 Vue.js 响应式能力的前端 UI 框架。它旨在让你既能直接用 Bootstrap 成熟的栅格和组件样式，又能通过 Vue 组件化的方式高效开发交互逻辑。
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 简介
+#### 框架完美融合了 Bootstrap 强大的样式体系与 Vue 的响应式数据驱动能力，为开发者提供了一套高度灵活、高效、稳健，适配不同设备尺寸的企业级 UI 解决方案。
+#### 框架严格遵循“样式归 Bootstrap，行为归 Vue”的架构范式。完全继承 Bootstrap 的原子化工具类（间距、排版、颜色、Flex/Grid 栅格），开发者无需学习新的 CSS类名，直接使用 d-flex、text-primary、mb-3 等原生类名控制外观。
+#### 框架将 Bootstrap 的纯交互组件（弹窗、轮播、工具提示等）转化为 Vue 的声明式组件。开发者无需关心 Popper.js 的实例化、销毁或事件监听器的移除，所有生命周期（如mounted、unmounted）均由框架底层接管。
+#### 框架只接管了 JavaScript 交互部分，CSS 层面完全透明。这意味着：所有 Bootstrap 官方文档中关于样式类的说明（如表格条纹、卡片分组、网格偏移）在 Vue项目中直接适用，降低了团队的学习与迁移成本。

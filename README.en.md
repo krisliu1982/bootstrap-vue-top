@@ -1,36 +1,8 @@
 # BootstrapVue
+A front-end framework based on Bootstrap 5 & Vue 3
 
-#### Description
-BootstrapVue 是一个基于 Vue.js 的前端框架，提供了一系列使用 Bootstrap 5 样式的 Vue 组件，帮助开发者快速构建响应式网页应用。
-
-#### Software Architecture
-Software architecture description
-
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## Introduction
+#### This framework seamlessly combines Bootstrap’s powerful styling system with Vue’s reactive data‑driven capabilities, providing developers with a highly flexible, efficient, and robust enterprise‑grade UI solution that adapts perfectly to different screen sizes.
+#### The framework strictly follows the architectural paradigm of “styles belong to Bootstrap, behavior belongs to Vue”. It fully inherits Bootstrap’s atomic utility classes (spacing, typography, colors, Flex/Grid layout), so developers can use native class names like d-flex, text-primary, and mb-3 directly to control appearance without learning new CSS class names.
+#### The framework transforms Bootstrap’s interactive components (modals, carousels, tooltips, etc.) into Vue declarative components. Developers no longer need to worry about Popper.js instantiation, destruction, or event listener removal – all lifecycle management (such as mounted and unmounted) is handled by the framework under the hood.
+#### The framework only takes over the JavaScript interaction part; the CSS layer remains completely transparent. This means that all style‑related instructions in the official Bootstrap documentation (e.g., table stripes, card grouping, grid offset) are directly applicable in Vue projects, reducing the learning and migration cost for teams.
