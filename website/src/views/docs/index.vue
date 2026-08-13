@@ -186,11 +186,6 @@
               >
             </li>
             <li class="py-1">
-              <RouterLink to="/docs/components/editor" class="docs-sidebar-link" exact-active-class="active"
-                >Editor 编辑器
-              </RouterLink>
-            </li>
-            <li class="py-1">
               <RouterLink to="/docs/components/list-group" class="docs-sidebar-link" exact-active-class="active"
                 >List group 列表</RouterLink
               >
