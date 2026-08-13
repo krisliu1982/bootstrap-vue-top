@@ -1,8 +1,0 @@
-# bootstrap-vue-top
-A front-end framework based on Bootstrap 5 & Vue 3
-
-## Introduction
-#### This framework seamlessly combines Bootstrap’s powerful styling system with Vue’s reactive data‑driven capabilities, providing developers with a highly flexible, efficient, and robust enterprise‑grade UI solution that adapts perfectly to different screen sizes.
-#### The framework strictly follows the architectural paradigm of “styles belong to Bootstrap, behavior belongs to Vue”. It fully inherits Bootstrap’s atomic utility classes (spacing, typography, colors, Flex/Grid layout), so developers can use native class names like d-flex, text-primary, and mb-3 directly to control appearance without learning new CSS class names.
-#### The framework transforms Bootstrap’s interactive components (modals, carousels, tooltips, etc.) into Vue declarative components. Developers no longer need to worry about Popper.js instantiation, destruction, or event listener removal – all lifecycle management (such as mounted and unmounted) is handled by the framework under the hood.
-#### The framework only takes over the JavaScript interaction part; the CSS layer remains completely transparent. This means that all style‑related instructions in the official Bootstrap documentation (e.g., table stripes, card grouping, grid offset) are directly applicable in Vue projects, reducing the learning and migration cost for teams.

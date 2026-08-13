@@ -1,10 +1,10 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
-  "description": "bootstrap-vue-top 是一个基于 Bootstrap5 & Vue3 的前端框架。",
+  "description": "bootstrap-vue-top 是一个基于 Bootstrap 5 & Vue 3 的前端框架。",
   "files": [
     "dist",
     "README.md",
@@ -44,9 +44,10 @@
     "vue": "^3.5.41"
   },
   "keywords": [
-    "boostrap5",
-    "vue3",
-    "ui-library"
+    "boostrap 5.3.8",
+    "vue 3.5.41",
+    "ES6",
+    "ui library"
   ],
   "author": "kris.liu",
   "license": "MIT"
