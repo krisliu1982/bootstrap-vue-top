@@ -23,8 +23,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'bootstrap-vue': fileURLToPath(new URL('../src/index.js', import.meta.url)),
-      'bootstrap-vue@editor': fileURLToPath(new URL('../src/editor.js', import.meta.url)),
+      'bootstrap-vue': fileURLToPath(new URL('../src/index.js', import.meta.url))
     },
   },
   server: {//开发配置  npm run dev

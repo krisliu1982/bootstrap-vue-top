@@ -1,4 +1,4 @@
-# BootstrapVue
+# bootstrap-vue-top
 A front-end framework based on Bootstrap 5 & Vue 3
 
 ## Introduction
