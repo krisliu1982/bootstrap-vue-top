@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "bootstrap-vue",
+  "short_name": "BV",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
