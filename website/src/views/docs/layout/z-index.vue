@@ -8,7 +8,7 @@
   <div v-scrollspy data-bs-target="#docs-nav-z-index" class="docs-content">
     <h1>Z-index</h1>
     <p class="fs-4 fw-light">
-      虽然不是Bootstrap网格系统的一部分，但z-index在决定我们的组件如何相互叠放和交互方面发挥着重要作用。了解更多请阅读
+      虽然不是 Bootstrap 网格系统的一部分，但 z-index 在决定我们的组件如何相互叠放和交互方面发挥着重要作用。了解更多请阅读
       <a href="https://getbootstrap.com/docs/5.3/layout/z-index/" target="_blank">Bootstrap Z-index</a>
     </p>
 
