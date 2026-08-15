@@ -10,7 +10,7 @@
     <h1>Spacing 间距</h1>
     <p class="fs-4 fw-light">
       Bootstrap 包含了众多简化的响应式边距、内边距和间距的实用类样式，用于调整元素的外观。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/" target="_blank">Boostrap Spacing</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/" target="_blank">Bootstrap Spacing</a>
     </p>
 
     <h2 id="spacing-mp">

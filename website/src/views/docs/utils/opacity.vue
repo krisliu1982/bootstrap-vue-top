@@ -9,7 +9,7 @@
     <h1>Opacity 透明度</h1>
     <p class="fs-4 fw-light">
       控制元素的透明度。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/opacity/" target="_blank">Boostrap Opacity</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/opacity/" target="_blank">Bootstrap Opacity</a>
     </p>
 
     <h2 id="opacity-about">

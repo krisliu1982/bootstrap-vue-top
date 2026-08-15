@@ -12,7 +12,7 @@
     <h1>Badge 徽章</h1>
     <p class="fs-4 fw-light">
       徽章的文档和示例，我们的小计数和标签组件。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Boostrap Badge</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Bootstrap Badge</a>
     </p>
 
     <h2 id="badge-example">

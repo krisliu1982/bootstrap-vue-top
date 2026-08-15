@@ -18,7 +18,7 @@
     <h1>Buttons 按钮</h1>
     <p class="fs-4 fw-light">
       使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，支持多种尺寸、状态等。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Boostrap Buttons</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Bootstrap Buttons</a>
     </p>
 
     <h2 id="buttons-base">
@@ -50,7 +50,7 @@
     </h2>
     <p>
       Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。其中
-      <code>.btn-link</code> 按钮 Boostrap 样式被更改，<code>padding</code> 被置为
+      <code>.btn-link</code> 按钮 Bootstrap 样式被更改，<code>padding</code> 被置为
       <code>0</code>，让其看起来更像链接。<strong
         >因为使用 <code>&lt;a&gt;</code> 标签的点击事件处理和禁用不那么友好。</strong
       >

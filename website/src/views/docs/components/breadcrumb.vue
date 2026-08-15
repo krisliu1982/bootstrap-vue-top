@@ -12,7 +12,7 @@
     <h1>Breadcrumb 面包屑</h1>
     <p class="fs-4 fw-light">
       在导航层次结构中指示当前页面的位置，该结构通过CSS自动添加分隔符。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/breadcrumb/" target="_blank">Boostrap Breadcrumb</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/breadcrumb/" target="_blank">Bootstrap Breadcrumb</a>
     </p>
 
     <h2 id="breadcrumb-example">

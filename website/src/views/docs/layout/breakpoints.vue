@@ -10,7 +10,7 @@
     <h1>Breakpoints 断点</h1>
     <p class="fs-4 fw-light">
       断点决定了在 Bootstrap 中响应式布局在不同设备或视口尺寸下的表现方式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank">Boostrap Breakpoints</a>
+      <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank">Bootstrap Breakpoints</a>
     </p>
 
     <h2 id="breakpoints-core">

@@ -9,7 +9,7 @@
     <h1>Containers 容器</h1>
     <p class="fs-4 fw-light">
       容器是 Bootstrap 的一个基本组成部分，它能够容纳、填充并调整页面内容在特定设备或视口中的布局。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/containers/" target="_blank">Boostrap Containers</a>
+      <a href="https://getbootstrap.com/docs/5.3/layout/containers/" target="_blank">Bootstrap Containers</a>
     </p>
 
     <h2 id="containers-about">

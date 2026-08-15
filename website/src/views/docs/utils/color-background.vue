@@ -11,7 +11,7 @@
     <p class="fs-4 fw-light">
       设置一个与前景色形成对比的背景色。了解更多请阅读
       <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
-        >Boostrap Color and background</a
+        >Bootstrap Color and background</a
       >
     </p>
 

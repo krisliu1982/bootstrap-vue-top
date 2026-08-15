@@ -9,8 +9,8 @@
 .docs-sidebar {
   grid-area: sidebar;
   position: sticky;
-  top: 4.75rem;
-  height: calc(100vh - 6rem);
+  top: calc(2.5rem + 32px);
+  height: calc(100vh - 3.5rem - 32px);
   overflow-y: auto;
 }
 

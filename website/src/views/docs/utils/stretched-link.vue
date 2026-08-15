@@ -9,7 +9,7 @@
     <h1>Stretched link 拉伸链接</h1>
     <p class="fs-4 fw-light">
       通过使用 CSS 将嵌套链接“拉伸”出来，可以使任何 HTML 元素或 Bootstrap 组件变为可点击状态。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/stretched-link/" target="_blank">Boostrap Stretched link</a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/stretched-link/" target="_blank">Bootstrap Stretched link</a>
     </p>
 
     <h2 id="stretched-link-about">

@@ -12,7 +12,7 @@
     <h1>Float 浮动</h1>
     <p class="fs-4 fw-light">
       使用我们的响应式浮动工具，可以对任何元素在任何分界点上进行浮动设置。解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/float/" target="_blank">Boostrap Float</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/float/" target="_blank">Bootstrap Float</a>
     </p>
 
     <h2 id="float-overview">

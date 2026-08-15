@@ -10,7 +10,7 @@
     <h1>Focus ring 焦点环</h1>
     <p class="fs-4 fw-light">
       这些工具类允许您为元素和组件添加及修改自定义的焦点环样式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/focus-ring/" target="_blank">Boostrap Focus ring</a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/focus-ring/" target="_blank">Bootstrap Focus ring</a>
     </p>
 
     <p>

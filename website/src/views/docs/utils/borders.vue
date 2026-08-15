@@ -13,7 +13,7 @@
     <h1>Borders 边框</h1>
     <p class="fs-4 fw-light">
       使用边框工具可以快速设置元素的边框样式和圆角样式。非常适合用于图片、按钮或其他任何元素。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/borders/" target="_blank">Boostrap Borders</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/borders/" target="_blank">Bootstrap Borders</a>
     </p>
 
     <h2 id="borders-base">

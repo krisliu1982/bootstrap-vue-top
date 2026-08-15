@@ -14,7 +14,7 @@
     <h1>Placeholders 占位符</h1>
     <p class="fs-4 fw-light">
       为您的组件或页面使用加载占位符（骨架加载器）来表明某些内容可能仍在加载中。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/placeholders/" target="_blank">Boostrap Placeholders</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/placeholders/" target="_blank">Bootstrap Placeholders</a>
     </p>
 
     <h2 id="placeholders-about">

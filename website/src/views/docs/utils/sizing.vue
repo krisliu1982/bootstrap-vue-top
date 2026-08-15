@@ -10,7 +10,7 @@
     <h1>Sizing 尺寸规格</h1>
     <p class="fs-4 fw-light">
       利用我们的“宽度”和“高度”工具，您可以轻松地将元素设置为任意宽或任意高。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/sizing/" target="_blank">Boostrap Sizing</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/sizing/" target="_blank">Bootstrap Sizing</a>
     </p>
 
     <h2 id="sizing-parent">

@@ -13,7 +13,7 @@
       通过
       <code>color</code>
       来传达信息，使用少量的文本颜色工具类即可实现。此外，还支持为带有悬停状态的链接进行样式设置。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors/" target="_blank">Boostrap Colors</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/colors/" target="_blank">Bootstrap Colors</a>
     </p>
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>

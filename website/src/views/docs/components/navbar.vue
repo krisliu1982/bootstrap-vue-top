@@ -23,7 +23,7 @@
     <p class="fs-4 fw-light">
       有关 Bootstrap 强大且响应式的导航栏的文档和示例。其中包括品牌标识、导航功能等内容的支持，还包括我们 Collapse
       折叠组件的支持。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Boostrap Navbar</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Bootstrap Navbar</a>
     </p>
 
     <h2 id="navbar-example">

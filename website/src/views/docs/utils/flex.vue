@@ -20,7 +20,7 @@
     <p class="fs-4 fw-light">
       借助一整套响应式弹性盒布局工具，您可以快速管理网格列、导航、组件等的布局、对齐和尺寸设置。对于更复杂的实现，可能需要使用自定义
       CSS。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex/" target="_blank">Boostrap Flex</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/flex/" target="_blank">Bootstrap Flex</a>
     </p>
 
     <h2 id="flex-enable">

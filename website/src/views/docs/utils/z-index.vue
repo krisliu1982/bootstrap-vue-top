@@ -9,7 +9,7 @@
     <h1>Z-index 层级</h1>
     <p class="fs-4 fw-light">
       使用我们的低级 <code>z-index</code> 工具，可以轻松更改元素或组件的堆叠层级。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/z-index/" target="_blank">Boostrap Z-index</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/z-index/" target="_blank">Bootstrap Z-index</a>
     </p>
 
     <h2 id="z-index-about">

@@ -1,21 +1,22 @@
 <template>
   <nav class="sticky-top bg-body-tertiary border-bottom border-body d-none d-lg-block">
     <div class="container">
-            <div class="d-flex justify-content-between py-2">
+            <div class="d-flex justify-content-between py-2 lh-1">
       <a class="link-body-emphasis text-decoration-none d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="bootstrap-vue" width="24" height="24"
+        <img src="/favicon.svg" alt="bootstrap-vue" width="32" height="32"
           class="me-2" /><span class="fw-bold fs-5">boostrap-vue</span></a>
         <div class="d-flex align-items-center gap-3">
           <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold">文档</RouterLink>
           <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
           <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
+          <div class="vr"></div>
           <div class="dropdown">
           <a v-dropdown class="link-body-emphasis text-decoration-none dropdown-toggle" title="文字大小" href="#" role="button" aria-expanded="false">
             <template v-if="fontSize === 'sm'">小型文字</template>
             <template v-else-if="fontSize === 'md'">中型文字</template>
             <template v-else-if="fontSize === 'lg'">大型文字</template>
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu lh-base">
             <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
             <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型文字</button></li>
             <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
@@ -32,11 +33,11 @@
 
   <!--移动端导航-->
   <nav class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
-    <div class="container">
-      <div class="d-flex justify-content-between py-2">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center py-2 lh-1">
       <span></span>
-      <a class="navbar-brand d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="bootstrap-vue" width="24" height="24"/></a>
+      <a href="#" @click.prevent="$router.push('/')">
+        <img src="/favicon.svg" alt="bootstrap-vue" width="32" height="32"/></a>
       <a href="#" class="link-body-emphasis fs-4" type="button" @click.prevent="navbarRef.toggle()">
         <bi-three-dots/>
       </a>

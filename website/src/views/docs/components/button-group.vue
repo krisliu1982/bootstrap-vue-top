@@ -14,7 +14,7 @@
     <h1>Button group 按钮组</h1>
     <p class="fs-4 fw-light">
       将一系列按钮排列在一条直线上，或将其堆叠成垂直列。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank">Boostrap Button group</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank">Bootstrap Button group</a>
     </p>
 
     <h2 id="button-group-example">

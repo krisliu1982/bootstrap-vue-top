@@ -19,11 +19,11 @@
     <h1>Text 文本</h1>
     <p class="fs-4 fw-light">
       有关用于控制文本对齐、换行、粗细等常见文本功能的文档及示例。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank">Boostrap Text</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank">Bootstrap Text</a>
     </p>
     <p class="fs-4 fw-light">
       用省略号来截断过长的文本段落。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/text-truncation/" target="_blank">Boostrap Text truncation </a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/text-truncation/" target="_blank">Bootstrap Text truncation </a>
     </p>
 
     <h2 id="text-alignment">

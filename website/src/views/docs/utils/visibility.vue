@@ -9,7 +9,7 @@
     <h1>Visibility 可见性</h1>
     <p class="fs-4 fw-light">
       利用可见性工具来控制元素的可见性，而无需修改其显示方式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/visibility/" target="_blank">Boostrap Visibility</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/visibility/" target="_blank">Bootstrap Visibility</a>
     </p>
 
     <h2 id="visibility-about">

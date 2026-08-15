@@ -8,9 +8,9 @@
   <div v-scrollspy data-bs-target="#docs-nav-grid" class="docs-content">
     <h1>Grid 网格</h1>
     <p class="fs-4 fw-light">
-      利用 Boostrap 强大的移动优先弹性盒网格功能，借助十二列体系、六种默认响应式层级、Sass
+      利用 Bootstrap 强大的移动优先弹性盒网格功能，借助十二列体系、六种默认响应式层级、Sass
       变量和混合器以及数十种预定义类，您可以轻松构建各种形状和大小的布局。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Boostrap Grid</a>
+      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Bootstrap Grid</a>
     </p>
 
     <h2 id="grid-about">

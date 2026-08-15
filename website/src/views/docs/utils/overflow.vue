@@ -9,7 +9,7 @@
     <h1>Overflow 溢出</h1>
     <p class="fs-4 fw-light">
       使用这些简写工具可以快速设置内容在超出元素范围时的显示方式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/overflow/" target="_blank">Boostrap Overflow</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/overflow/" target="_blank">Bootstrap Overflow</a>
     </p>
 
     <h2 id="overflow-about">

@@ -12,11 +12,11 @@
     <h1>Link 链接</h1>
     <p class="fs-4 fw-light">
       链接工具用于对您的链接进行样式设置，以调整其颜色、透明度、下划线偏移量、下划线颜色等。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/link/" target="_blank">Boostrap Link</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/link/" target="_blank">Bootstrap Link</a>
     </p>
     <p class="fs-4 fw-light">
       快速使用 Bootstrap 图标或其他图标来创建风格化的超链接。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/icon-link/" target="_blank">Boostrap Icon link</a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/icon-link/" target="_blank">Bootstrap Icon link</a>
     </p>
 
     <h2 id="link-opacity">

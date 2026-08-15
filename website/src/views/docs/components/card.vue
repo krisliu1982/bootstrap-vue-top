@@ -19,7 +19,7 @@
     <h1>Card 卡片</h1>
     <p class="fs-4 fw-light">
       Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，具有多种变体和选项。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank">Boostrap Card</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank">Bootstrap Card</a>
     </p>
 
     <h2 id="card-about">简介<a class="anchor-link" aria-label="Link to this section: 简介" href="#card-about"> </a></h2>

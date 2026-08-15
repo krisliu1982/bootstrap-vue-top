@@ -11,7 +11,7 @@
     <h1>Close button 关闭按钮</h1>
     <p class="fs-4 fw-light">
       使一个通用的关闭按钮，用于关闭模态框和警告等提示内容。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/close-button/" target="_blank">Boostrap Close button</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/close-button/" target="_blank">Bootstrap Close button</a>
     </p>
 
     <h2 id="close-example">

@@ -9,7 +9,7 @@
     <h1>Shadows 阴影</h1>
     <p class="fs-4 fw-light">
       使用“box-shadow”样式可为元素添加或移除阴影效果。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/shadows/" target="_blank">Boostrap Shadows</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/shadows/" target="_blank">Bootstrap Shadows</a>
     </p>
 
     <h2 id="shadows-example">

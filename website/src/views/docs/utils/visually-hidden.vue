@@ -9,7 +9,7 @@
     <h1>Visually hidden 视觉隐藏</h1>
     <p class="fs-4 fw-light">
       使用这些辅助工具来实现元素的可视化隐藏，同时确保这些元素仍对辅助技术可用，以提供更好的用户体验。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/" target="_blank">Boostrap Visually hidden</a>
+      <a href="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/" target="_blank">Bootstrap Visually hidden</a>
     </p>
 
     <h2 id="visually-hidden-about">

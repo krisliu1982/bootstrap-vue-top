@@ -13,7 +13,7 @@
       通过
       <code>background-color</code>
       来传达意义，并使用渐变来添加装饰效果。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background/" target="_blank">Boostrap Background</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/background/" target="_blank">Bootstrap Background</a>
     </p>
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>

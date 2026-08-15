@@ -12,7 +12,7 @@
     <h1>Position 位置</h1>
     <p class="fs-4 fw-light">
       使用这些简写工具可以快速设置元素的位置。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/position/" target="_blank">Boostrap Position</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/position/" target="_blank">Bootstrap Position</a>
     </p>
 
     <h2 id="position-value">

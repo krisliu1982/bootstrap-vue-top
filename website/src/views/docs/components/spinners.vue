@@ -11,7 +11,7 @@
     <h1>Spinners 加载指示器</h1>
     <p class="fs-4 fw-light">
       使用基于 HTML、CSS 构建且无需 JavaScript 的 Bootstrap 加载指示器来指示组件或页面的加载状态。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/spinners/" target="_blank">Boostrap Spinners</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/spinners/" target="_blank">Bootstrap Spinners</a>
     </p>
 
     <h2 id="spinners-about">

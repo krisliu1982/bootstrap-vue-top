@@ -13,7 +13,7 @@
     <p class="fs-4 fw-light">
       使用“对象拟合”工具来调整被替换元素（如 <code>&lt;img&gt;</code> 或
       <code>&lt;video&gt;</code> 等）的内容应如何根据其容器进行调整以实现适配。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" target="_blank">Boostrap Object fit</a>
+      <a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" target="_blank">Bootstrap Object fit</a>
     </p>
 
     <h2 id="object-fit-work">

@@ -14,7 +14,7 @@
     <h1>Alerts 警示</h1>
     <p class="fs-4 fw-light">
       利用这少量但灵活多样的提示信息，为用户的常见操作提供相应的上下文反馈信息。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">Boostrap Alerts</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">Bootstrap Alerts</a>
     </p>
 
     <h2 id="alerts-example">
