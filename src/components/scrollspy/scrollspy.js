@@ -9,9 +9,8 @@ export default {
       smoothScroll: binding.modifiers.self ? true : false,
       threshold: [0.1, 0.5, 1]
     });
-    console.log('aaaa');
   },
   beforeUnmount(el, binding) {
-    //ScrollSpy.getInstance(binding.modifiers.self ? el : document.body).dispose();
+    ScrollSpy.getInstance(binding.modifiers.self ? el : document.body).dispose();
   }
 };
