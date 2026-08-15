@@ -722,9 +722,9 @@
       </ul>
     </bv-offcanvas>
 
-    <main>
+<!--    <main>
       <router-view />
-    </main>
+    </main>-->
   </div>
 </template>
 

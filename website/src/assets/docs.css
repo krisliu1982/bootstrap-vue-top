@@ -44,7 +44,7 @@
 
 .docs-content>h2 {
   margin-top: 2.5rem;
-  scroll-margin-top: 4.75rem;
+  scroll-margin-top: calc(2.5rem + 32px);
 }
 
 .docs-content>h3 {
