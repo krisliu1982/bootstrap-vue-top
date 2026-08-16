@@ -11,7 +11,7 @@
 /* 桌面：≥ 992px */
 @media (min-width: 992px) {
   .docs-sidebar {
-    --bs-offcanvas-width: 14rem;
+    width: 12rem;
     height: calc(100vh - 5rem);
     overflow-y: auto;
     position: sticky;

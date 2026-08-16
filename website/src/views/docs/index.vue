@@ -1,17 +1,18 @@
 <template>
   <div class="bg-body-tertiary border-bottom border-top border-body d-lg-none docs-menubar">
     <div class="container">
-    <div class="d-flex justify-content-between align-items-center py-2">
-  <a href="#" class="link-body-emphasis text-decoration-none"
-    @click="sidebarRef.toggle()"><bi-menu-button-wide-fill /> 菜单</a>
+      <div class="d-flex justify-content-between align-items-center py-2">
+        <a href="#" class="link-body-emphasis text-decoration-none"
+          @click="offcanvasRef.toggle()"><bi-menu-button-wide-fill /> 菜单</a>
+      </div>
     </div>
-  </div>
   </div>
 
   <div class="container">
     <div class="d-flex gap-3 mt-3">
-      <bv-offcanvas ref="sidebarRef" title="文档菜单" offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar">
-        <ul class="list-unstyled">
+      <bv-offcanvas ref="offcanvasRef" title="文档菜单"
+        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar">
+        <ul ref="menuRef" class="list-unstyled">
           <li class="mb-4">
             <h6 class="fw-bold">Layout 布局</h6>
             <ul class="list-unstyled">
@@ -375,7 +376,29 @@
 </template>
 
 <script setup lang="js">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
-const sidebarRef = ref(null);
+const offcanvasRef = ref(null);
+const menuRef = ref(null);
+// 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
+const isSmallScreen = () => {
+  return window.innerWidth < 992; // 和 offcanvas-lg 的断点一致
+};
+
+onMounted(() => {
+  
+    menuRef.value.addEventListener('click', function (e) {
+      e.preventDefault();
+if (isSmallScreen()) {
+      // 找到实际点击的菜单项（向上查找）
+      const menuItem = e.target.closest('.docs-sidebar-link');
+
+      offcanvasRef.value.toggle();
+      }
+    });
+  
+});
+
+
+
 </script>
