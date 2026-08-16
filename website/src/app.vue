@@ -1,10 +1,11 @@
 <template>
-  <nav class="sticky-top bg-body-tertiary border-bottom border-body d-none d-lg-block">
+  <nav class="sticky-top bg-primary-subtle">
     <div class="container">
-            <div class="d-flex justify-content-between py-2 lh-1">
+            <div class="d-flex justify-content-between align-items-center" style="height:3rem;">
       <a class="link-body-emphasis text-decoration-none d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="BoostrapVue" width="32" height="32"
+        <img src="/favicon.svg" alt="BoostrapVue" width="24" height="24"
           class="me-2" /><span class="fw-bold fs-5">BoostrapVue</span></a>
+          <div class="d-none d-lg-block">
         <div class="d-flex align-items-center gap-3">
           <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold">文档</RouterLink>
           <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
@@ -16,7 +17,7 @@
             <template v-else-if="fontSize === 'md'">中型文字</template>
             <template v-else-if="fontSize === 'lg'">大型文字</template>
           </a>
-          <ul class="dropdown-menu lh-base">
+          <ul class="dropdown-menu">
             <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
             <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型文字</button></li>
             <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
@@ -27,35 +28,28 @@
             <bi-moon v-else />
           </a>
         </div>
+        </div>
+        <div class="d-lg-none">
+              <a href="#" class="link-body-emphasis fs-5" type="button" @click.prevent="navbarRef.toggle()">
+        <bi-three-dots/>
+      </a>
+      </div>
       </div>
     </div>
   </nav>
 
-  <!--移动端导航-->
-  <nav class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center py-2 lh-1">
-      <span></span>
-      <a href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="BoostrapVue" width="32" height="32"/></a>
-      <a href="#" class="link-body-emphasis fs-4" type="button" @click.prevent="navbarRef.toggle()">
-        <bi-three-dots/>
-      </a>
-      </div>
-      <bv-offcanvas ref="navbarRef" title="bootstrap-vue" position="end" offcanvas-style="--bs-offcanvas-width:75vw;">
+      <bv-offcanvas ref="navbarRef" title="bootstrap-vue" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
         <div class="list-group list-group-flush" @click="navbarRef.toggle()">
           <RouterLink to="/docs" class="list-group-item list-group-item-action">文档</RouterLink>
           <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/"
             target="_blank">Bootstrap</a>
           <a class="list-group-item list-group-item-action" href="https://cn.vuejs.org/" target="_blank">Vue</a>
-          <a href="#" class="list-group-item list-group-item-action" title="主题切换" @click.prevent="handleThemeChange">
+          <a href="#" class="list-group-item list-group-item-action" @click.prevent="handleThemeChange">
             <bi-sun v-if="theme === 'light'" />
             <bi-moon v-else />
           </a>
         </div>
       </bv-offcanvas>
-    </div>
-  </nav>
 
   <router-view />
 </template>

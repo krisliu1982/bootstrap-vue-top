@@ -111,8 +111,8 @@
       位置和大小<a class="anchor-link" aria-label="Link to this section: 位置和大小" href="#offcanvas-placement"> </a>
     </h2>
     <p>
-      可以通过 <code>position</code> 设置侧边栏的位置。一共有四个方向的设置
-      <code>position="start|end|top|bottom"</code>。可以通过 <code>offcanvas-style</code> 设置 CSS
+      可以通过 <code>offcanvas-class</code> 设置侧边栏的位置, 一共有四个方向的设置
+      <code>start|end|top|bottom</code>。可以通过 <code>offcanvas-style</code> 设置 CSS
       变量来改变高度和宽度。
     </p>
     <div class="docs-example">
@@ -129,7 +129,7 @@
         <bv-offcanvas
           ref="offcanvasEndRef"
           title="右边侧边栏"
-          position="end"
+          offcanvas-class="offcanvas offcanvas-end"
           offcanvas-style="--bs-offcanvas-width:75vw;"
         >
           ...
@@ -137,7 +137,7 @@
         <bv-offcanvas
           ref="offcanvasTopRef"
           title="顶部侧边栏"
-          position="top"
+          offcanvas-class="offcanvas offcanvas-top"
           offcanvas-style="--bs-offcanvas-height:75vh;"
         >
           ...
@@ -145,7 +145,7 @@
         <bv-offcanvas
           ref="offcanvasBottomRef"
           title="底部侧边栏"
-          position="bottom"
+          offcanvas-class="offcanvas offcanvas-bottom"
           offcanvas-style="--bs-offcanvas-height:75vh;"
         >
           ...
@@ -264,15 +264,18 @@ const positionCode = `
     </button>
   </div>
 
-  <bv-offcanvas ref="offcanvasEndRef" title="右边侧边栏" position="end" 
+  <bv-offcanvas ref="offcanvasEndRef" title="右边侧边栏"
+  offcanvas-class="offcanvas offcanvas-end"
   offcanvas-style="--bs-offcanvas-width:75vw;">
     ...
   </bv-offcanvas>
-  <bv-offcanvas ref="offcanvasTopRef" title="顶部侧边栏" position="top" 
+  <bv-offcanvas ref="offcanvasTopRef" title="顶部侧边栏" 
+  offcanvas-class="offcanvas offcanvas-top"
   offcanvas-style="--bs-offcanvas-height:75vh;">
     ...
   </bv-offcanvas>
-  <bv-offcanvas ref="offcanvasBottomRef" title="底部侧边栏" position="bottom" 
+  <bv-offcanvas ref="offcanvasBottomRef" title="底部侧边栏"
+  offcanvas-class="offcanvas offcanvas-bottom" 
   offcanvas-style="--bs-offcanvas-height:75vh;">
     ...
   </bv-offcanvas>

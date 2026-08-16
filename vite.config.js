@@ -42,8 +42,8 @@ export default defineConfig({
       entry: {
        'bootstrap-vue': resolve(import.meta.dirname, 'src/index.js')
       },
-      cssFileName:'bootstrap-vue',
-      name:'BootstrapVue'
+      name:'BootstrapVue',
+      fileName:'bootstrap-vue',
     },
     rolldownOptions: {
       external: ['vue'],

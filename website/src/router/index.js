@@ -345,7 +345,7 @@ const router = createRouter({
         setTimeout(() => {
           resolve({
             el: to.hash,
-            top: remToPx(1.5) + 32 // 考虑固定导航栏高度
+            top: remToPx(3) // 考虑固定导航栏高度
           });
         }, 300); // 等待时间，根据页面复杂度调整
       });

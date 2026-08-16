@@ -1,17 +1,22 @@
-.docs-layout {
-  display: grid;
-  grid-template-areas: 'sidebar main';
-  grid-template-columns: 1fr 5fr;
-  gap: 1.5rem;
-  margin-top: 1rem;
+.docs-menubar {
+    position: sticky;
+    top: 3rem;
+    z-index: 1020;
 }
 
 .docs-sidebar {
-  grid-area: sidebar;
-  position: sticky;
-  top: calc(2.5rem + 32px);
-  height: calc(100vh - 3.5rem - 32px);
-  overflow-y: auto;
+  --bs-offcanvas-width: 75vw;
+}
+
+/* 桌面：≥ 992px */
+@media (min-width: 992px) {
+  .docs-sidebar {
+    --bs-offcanvas-width: 14rem;
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    position: sticky;
+    top: 4rem;
+  }
 }
 
 .docs-sidebar-link {
@@ -28,13 +33,6 @@
   background-color: var(--bs-purple);
 }
 
-.docs-main {
-  grid-area: main;
-  display: grid;
-  grid-template-areas: 'content toc';
-  grid-template-columns: 5fr 1fr;
-  gap: 1.5rem;
-}
 
 .docs-content {
   grid-area: content;
@@ -44,7 +42,7 @@
 
 .docs-content>h2 {
   margin-top: 2.5rem;
-  scroll-margin-top: calc(2.5rem + 32px);
+  scroll-margin-top: calc(4rem);
 }
 
 .docs-content>h3 {
@@ -61,7 +59,6 @@ ul.docs-content-list>li {
 }
 
 .docs-toc {
-  grid-area: toc;
   position: sticky;
   top: 4.75rem;
   height: calc(100vh - 6rem);

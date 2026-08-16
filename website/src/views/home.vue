@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="col-md-9 mx-auto my-4">
+    <div class="my-4">
       <h1 class="mb-3">基于 Bootstrap5 & Vue3 的前端框架</h1>
       <ul class="ps-3">
         <li>

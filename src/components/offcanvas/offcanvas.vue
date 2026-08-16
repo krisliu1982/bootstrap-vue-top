@@ -1,15 +1,10 @@
 <template>
-  <div
-    class="offcanvas"
-    :class="className"
-    :style="offcanvasStyle"
-    tabindex="-1"
-    :id="id"
-    :aria-labelledby="`${id}Label`"
-  >
+  <div :class="offcanvasClass" :style="offcanvasStyle" tabindex="-1" :id="id"
+    :aria-labelledby="`${id}Label`">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" :id="`${id}Label`">{{ title }}</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" :data-bs-target="`#${id}`"
+        aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <slot></slot>
@@ -25,13 +20,6 @@ const emit = defineEmits(['offcanvas-shown']);
 
 const id = useId();
 const props = defineProps({
-  position: {
-    type: String,
-    default: 'start',
-    validator(value) {
-      return ['start', 'end', 'top', 'bottom'].includes(value);
-    }
-  },
   title: {
     type: String,
     default: 'Offcanvas'
@@ -40,14 +28,14 @@ const props = defineProps({
     type: [String, Boolean],
     default: true
   },
+  offcanvasClass: {
+    type: String,
+    default: 'offcanvas offcanvas-start'
+  },
   offcanvasStyle: {
     type: String,
     default: null
   }
-});
-
-const className = computed(() => {
-  return `offcanvas-${props.position}`;
 });
 
 let offcanvas = null;
