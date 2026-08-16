@@ -3,8 +3,8 @@
     <div class="container">
             <div class="d-flex justify-content-between py-2 lh-1">
       <a class="link-body-emphasis text-decoration-none d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="bootstrap-vue" width="32" height="32"
-          class="me-2" /><span class="fw-bold fs-5">boostrap-vue</span></a>
+        <img src="/favicon.svg" alt="BoostrapVue" width="32" height="32"
+          class="me-2" /><span class="fw-bold fs-5">BoostrapVue</span></a>
         <div class="d-flex align-items-center gap-3">
           <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold">文档</RouterLink>
           <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
@@ -37,7 +37,7 @@
       <div class="d-flex justify-content-between align-items-center py-2 lh-1">
       <span></span>
       <a href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="bootstrap-vue" width="32" height="32"/></a>
+        <img src="/favicon.svg" alt="BoostrapVue" width="32" height="32"/></a>
       <a href="#" class="link-body-emphasis fs-4" type="button" @click.prevent="navbarRef.toggle()">
         <bi-three-dots/>
       </a>
