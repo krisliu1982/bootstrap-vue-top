@@ -33,6 +33,12 @@
   background-color: var(--bs-purple);
 }
 
+.docs-main {
+  display: grid;
+  grid-template-areas: 'content toc';
+  grid-template-columns: 5fr 1fr;
+  gap: 1.5rem;
+}
 
 .docs-content {
   grid-area: content;
@@ -42,7 +48,6 @@
 
 .docs-content>h2 {
   margin-top: 2.5rem;
-  scroll-margin-top: calc(4rem);
 }
 
 .docs-content>h3 {
@@ -59,9 +64,10 @@ ul.docs-content-list>li {
 }
 
 .docs-toc {
+  grid-area: toc;
   position: sticky;
-  top: 4.75rem;
-  height: calc(100vh - 6rem);
+  top: 4rem;
+  height: calc(100vh - 5rem);
   overflow-y: auto;
 }
 

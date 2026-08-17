@@ -3,7 +3,9 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" class="link-body-emphasis text-decoration-none"
-          @click="offcanvasRef.toggle()"><bi-menu-button-wide-fill /> 菜单</a>
+          @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
+        <a href="#" class="link-body-emphasis text-decoration-none"
+          ><small>{{ activeTitle }} <bi-chevron-right /></small></a>
       </div>
     </div>
   </div>
@@ -13,6 +15,24 @@
       <bv-offcanvas ref="offcanvasRef" title="文档菜单"
         offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar">
         <ul ref="menuRef" class="list-unstyled">
+          <li class="mb-4">
+            <h6 class="fw-bold">开发指南</h6>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <RouterLink to="/docs/guide/introduction" class="docs-sidebar-link" exact-active-class="active">
+                  Introduction 介绍
+                </RouterLink>
+              </li>
+              <li class="py-1">
+                <RouterLink to="/docs/guide/quick-start" class="docs-sidebar-link" exact-active-class="active">
+                  Quick start 快速开始</RouterLink>
+              </li>
+              <li class="py-1">
+                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active">Changelog 更新日志
+                </RouterLink>
+              </li>
+            </ul>
+          </li>
           <li class="mb-4">
             <h6 class="fw-bold">Layout 布局</h6>
             <ul class="list-unstyled">
@@ -368,7 +388,7 @@
           </li>
         </ul>
       </bv-offcanvas>
-      <main class="flex-grow-1 overflow-hidden">
+      <main class="flex-grow-1 docs-main">
         <router-view />
       </main>
     </div>
@@ -376,28 +396,40 @@
 </template>
 
 <script setup lang="js">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
+
+// 当前激活菜单项标题
+const activeTitle = ref(null);
+
 // 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
-const isSmallScreen = () => {
-  return window.innerWidth < 992; // 和 offcanvas-lg 的断点一致
-};
+let smallScreen = window.innerWidth < 992;
+
+function handleViewportChange() {
+  smallScreen = window.innerWidth < 992;
+}
 
 onMounted(() => {
-  
-    menuRef.value.addEventListener('click', function (e) {
-      e.preventDefault();
-if (isSmallScreen()) {
+  menuRef.value.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (smallScreen) {
       // 找到实际点击的菜单项（向上查找）
       const menuItem = e.target.closest('.docs-sidebar-link');
-
+      activeTitle.value = menuItem.innerText;
       offcanvasRef.value.toggle();
-      }
-    });
-  
+    }
+  });
+
+  // 添加监听
+  window.addEventListener('resize', handleViewportChange);
+
 });
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleViewportChange);
+})
 
 
 

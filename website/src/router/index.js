@@ -14,6 +14,22 @@ var routes = [
     component: () => import('@/views/docs/index.vue'),
     children: [
       {
+        path: '',
+        redirect: '/docs/guide/introduction'
+      },
+      {
+        path: '/docs/guide/introduction',
+        component: () => import('@/views/docs/guide/introduction.vue')
+      },
+      {
+        path: '/docs/guide/quick-start',
+        component: () => import('@/views/docs/guide/quick-start.vue')
+      },
+      {
+        path: '/docs/guide/changelog',
+        component: () => import('@/views/docs/guide/changelog.vue')
+      },
+      {
         path: '/docs/layout/breakpoints',
         component: () => import('@/views/docs/layout/breakpoints.vue')
       },
@@ -345,7 +361,7 @@ const router = createRouter({
         setTimeout(() => {
           resolve({
             el: to.hash,
-            top: remToPx(3) // 考虑固定导航栏高度
+            top: remToPx(4) // 考虑固定导航栏高度
           });
         }, 300); // 等待时间，根据页面复杂度调整
       });
