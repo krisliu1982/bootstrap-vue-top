@@ -1,13 +1,13 @@
 <template>
-  <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-breakpoints">
+  <div class="docs-toc">
+    <nav id="docs-nav-introduction">
       <a href="#breakpoints-core">核心概念</a>
       <a href="#breakpoints-available">可用的断点</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-breakpoints" class="docs-content">
-    <h1>Breakpoints 断点</h1>
+  <div v-scrollspy data-bs-target="#docs-nav-introduction" class="docs-content">
+    <h1>Introduction 介绍</h1>
     <p class="fs-4 fw-light">
       断点决定了在 Bootstrap 中响应式布局在不同设备或视口尺寸下的表现方式。了解更多请阅读
       <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank">Bootstrap Breakpoints</a>

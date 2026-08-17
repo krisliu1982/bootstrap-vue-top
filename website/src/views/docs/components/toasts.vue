@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-toasts">
       <a href="#toasts-base">基础用法</a>
       <a href="#toasts-type">类型调整</a>

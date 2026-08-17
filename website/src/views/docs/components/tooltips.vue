@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-dropdowns">
       <a href="#tooltips-example">示例</a>
       <a href="#tooltips-custom">自定义样式</a>

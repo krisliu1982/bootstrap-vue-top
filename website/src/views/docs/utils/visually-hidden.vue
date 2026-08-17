@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-visually-hidden">
       <a href="#visually-hidden-about">使用说明</a>
     </nav>

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-floating-labels">
       <a href="#floating-labels-example">示例</a>
       <a href="#floating-labels-textareas">文本区域</a>

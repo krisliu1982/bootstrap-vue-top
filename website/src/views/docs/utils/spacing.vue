@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-spacing">
       <a href="#spacing-mp">外边距和内边距</a>
       <a href="#spacing-gap">缝隙</a>

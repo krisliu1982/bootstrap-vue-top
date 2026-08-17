@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-check">
       <a href="#check-approach">处理方式</a>
       <a href="#check-checks">复选框</a>

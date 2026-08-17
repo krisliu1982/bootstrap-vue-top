@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-buttons">
       <a href="#buttons-base">基础样式</a>
       <a href="#buttons-variants">变体按钮</a>

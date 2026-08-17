@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-alerts">
       <a href="#alerts-example">示例</a>
       <a href="#alerts-link">链接颜色</a>

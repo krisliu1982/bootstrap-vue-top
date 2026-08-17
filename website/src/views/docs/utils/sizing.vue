@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-sizing">
       <a href="#sizing-parent">相对于父级</a>
       <a href="#sizing-viewport">相对于视口</a>

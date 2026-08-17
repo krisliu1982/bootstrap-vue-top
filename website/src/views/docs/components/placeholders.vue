@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-placeholders">
       <a href="#placeholders-about">使用说明</a>
       <a href="#placeholders-example">示例</a>

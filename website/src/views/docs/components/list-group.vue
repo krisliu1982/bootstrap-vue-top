@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-list">
       <a href="#list-example">基础示例</a>
       <a href="#list-active">当前活动项</a>

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-breadcrumb">
       <a href="#breadcrumb-example">示例</a>
       <a href="#breadcrumb-divider">分隔线</a>

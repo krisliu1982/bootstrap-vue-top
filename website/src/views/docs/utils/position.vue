@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-position">
       <a href="#position-value">位置值</a>
       <a href="#position-arrange">排列元素</a>

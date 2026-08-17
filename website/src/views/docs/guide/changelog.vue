@@ -1,11 +1,11 @@
 <template>
-  <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-containers">
+  <div class="docs-toc">
+    <nav id="docs-nav-changelog">
       <a href="#containers-about">使用说明</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-containers" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-changelog" class="docs-content">
     <h1>Containers 容器</h1>
     <p class="fs-4 fw-light">
       容器是 Bootstrap 的一个基本组成部分，它能够容纳、填充并调整页面内容在特定设备或视口中的布局。了解更多请阅读

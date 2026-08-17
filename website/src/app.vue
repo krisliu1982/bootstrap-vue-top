@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky-top bg-primary-subtle">
+  <nav class="sticky-lg-top bg-primary-subtle">
     <div class="container">
             <div class="d-flex justify-content-between align-items-center" style="height:3rem;">
       <a class="link-body-emphasis text-decoration-none d-flex align-items-center" href="#" @click.prevent="$router.push('/')">

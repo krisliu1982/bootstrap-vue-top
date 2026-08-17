@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-card">
       <a href="#card-about">简介</a>
       <a href="#card-example">示例</a>

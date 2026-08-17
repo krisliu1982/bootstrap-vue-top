@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-popovers">
       <a href="#popovers-about">使用说明</a>
       <a href="#popovers-example">示例</a>

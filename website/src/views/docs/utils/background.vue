@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-background">
       <a href="#background-base">基础用法</a>
       <a href="#background-gradient">渐变背景</a>

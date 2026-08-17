@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-text">
       <a href="#text-alignment">文本对齐</a>
       <a href="#text-wrap">文本环绕与溢出</a>

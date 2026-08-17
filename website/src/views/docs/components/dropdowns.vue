@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-dropdowns">
       <a href="#dropdowns-example">示例</a>
       <a href="#dropdowns-accessibility">无障碍</a>

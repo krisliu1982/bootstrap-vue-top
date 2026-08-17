@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-reboot">
       <a href="#reboot-approach">处理方式</a>
       <a href="#reboot-variables">CSS变量</a>

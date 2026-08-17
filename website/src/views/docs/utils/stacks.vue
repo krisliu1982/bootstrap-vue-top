@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-stacks">
       <a href="#stacks-vertical">垂直</a>
       <a href="#stacks-horizontal">水平</a>

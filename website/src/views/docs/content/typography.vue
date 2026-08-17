@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-ty">
       <a href="#ty-global">全局设置</a>
       <a href="#ty-header">标题</a>

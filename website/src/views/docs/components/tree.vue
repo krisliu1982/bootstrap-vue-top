@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-tree">
       <a href="#tree-base">基础用法</a>
       <a href="#tree-checkbox">多选节点</a>

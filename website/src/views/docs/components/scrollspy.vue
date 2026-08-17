@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-scrollspy">
       <a href="#scrollspy-about">使用说明</a>
       <a href="#scrollspy-nav">导航锚点</a>
@@ -314,7 +314,7 @@
 <script setup>
 const bodyCode = `
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-scrollspy">
       <a href="#scrollspy-about">使用说明</a>
       <a href="#scrollspy-nav">导航锚点</a>

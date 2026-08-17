@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-tabs">
       <a href="#tabs-example">基础示例</a>
       <a href="#tabs-horizontal">水平对齐</a>

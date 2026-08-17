@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-close">
       <a href="#close-example">示例</a>
       <a href="#close-disabled">禁用</a>

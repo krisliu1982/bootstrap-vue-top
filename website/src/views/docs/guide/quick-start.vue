@@ -1,11 +1,11 @@
 <template>
-  <div class="docs-toc text-body-secondary">
-    <nav id="docs-nav-grid">
+  <div class="docs-toc">
+    <nav id="docs-nav-quick-start">
       <a href="#grid-about">使用说明</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-grid" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-quick-start" class="docs-content">
     <h1>Grid 网格</h1>
     <p class="fs-4 fw-light">
       利用 Bootstrap 强大的移动优先弹性盒网格功能，借助十二列体系、六种默认响应式层级、Sass

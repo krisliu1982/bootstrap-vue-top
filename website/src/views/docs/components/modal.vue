@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-modal">
       <a href="#modal-example">基础示例</a>
       <a href="#modal-footer">底部插槽</a>

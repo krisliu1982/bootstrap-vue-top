@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-img">
       <a href="#img-responsive">响应式图片</a>
       <a href="#img-thumbnail">图片缩略图</a>

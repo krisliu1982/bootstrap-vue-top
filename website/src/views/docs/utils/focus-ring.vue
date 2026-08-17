@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-focus-ring">
       <a href="#focus-ring-example">示例</a>
       <a href="#focus-ring-coustom">自定义</a>

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-badge">
       <a href="#badge-example">示例</a>
       <a href="#badge-bg">背景色</a>

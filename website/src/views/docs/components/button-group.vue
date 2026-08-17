@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-button">
       <a href="#button-group-example">示例</a>
       <a href="#button-group-check">复选框和单选按钮组</a>

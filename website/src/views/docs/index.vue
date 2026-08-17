@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-body-tertiary border-bottom border-top border-body d-lg-none docs-menubar">
+  <div class="sticky-top bg-body-tertiary border-bottom border-top border-body d-lg-none">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" class="link-body-emphasis text-decoration-none"
           @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
         <a href="#" class="link-body-emphasis text-decoration-none"
-          ><small>{{ activeTitle }} <bi-chevron-right /></small></a>
+          ><small>本页目录 <bi-chevron-right /></small></a>
       </div>
     </div>
   </div>
@@ -401,9 +401,6 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
 
-// 当前激活菜单项标题
-const activeTitle = ref(null);
-
 // 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
 let smallScreen = window.innerWidth < 992;
 
@@ -417,7 +414,6 @@ onMounted(() => {
     if (smallScreen) {
       // 找到实际点击的菜单项（向上查找）
       const menuItem = e.target.closest('.docs-sidebar-link');
-      activeTitle.value = menuItem.innerText;
       offcanvasRef.value.toggle();
     }
   });

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-modal2">
       <a href="#modal2-example">基础示例</a>
       <a href="#modal2-many">打开多个</a>

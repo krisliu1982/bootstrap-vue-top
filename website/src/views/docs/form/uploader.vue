@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-uploader">
       <a href="#uploader-file">文件上传</a>
       <a href="#uploader-image-one">单图片上传</a>

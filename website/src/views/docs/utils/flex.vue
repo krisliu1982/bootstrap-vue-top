@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-flex">
       <a href="#flex-enable">启用弹性布局</a>
       <a href="#flex-direction">方向调整</a>

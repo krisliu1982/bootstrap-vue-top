@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-treetable">
       <a href="#treetable-base">基础用法</a>
       <a href="#treetable-variants">表格上色</a>

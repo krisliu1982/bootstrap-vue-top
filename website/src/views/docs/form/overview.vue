@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc text-body-secondary">
+  <div class="docs-toc">
     <nav id="docs-nav-form">
       <a href="#form-overview">概述</a>
       <a href="#form-disabled-forms">禁用表单</a>
