@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-ratio">
       <a href="#ratio-about">使用说明</a>
       <a href="#ratio-example">示例</a>

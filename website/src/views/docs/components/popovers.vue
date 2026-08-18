@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-popovers">
       <a href="#popovers-about">使用说明</a>
       <a href="#popovers-example">示例</a>
@@ -14,7 +14,7 @@
     <h1>Popovers 弹出框</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-popover</code> 指令激活弹出框。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">Bootstrap Popovers</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/popovers/" target="_blank">Bootstrap Popovers</a>
     </p>
 
     <h2 id="popovers-about">

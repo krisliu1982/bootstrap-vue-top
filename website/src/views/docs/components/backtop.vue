@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-backtop">
       <a href="#backtop-base">基础用法</a>
       <a href="#backtop-color">颜色调整</a>

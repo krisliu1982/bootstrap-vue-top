@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-tabs">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-navs-tabs">
       <a href="#tabs-example">基础示例</a>
       <a href="#tabs-horizontal">水平对齐</a>
       <a href="#tabs-tabs">卡片样式</a>
@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-tabs" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-navs-tabs" class="docs-content">
     <h1>Navs and tabs 导航标签</h1>
     <p class="fs-4 fw-light">
       基于

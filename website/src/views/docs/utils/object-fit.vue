@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-object-fit">
       <a href="#object-fit-work">工作方式</a>
       <a href="#object-fit-example">示例</a>

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-spinners">
       <a href="#spinners-about">使用说明</a>
       <a href="#spinners-example">示例</a>

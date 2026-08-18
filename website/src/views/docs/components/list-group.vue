@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-list">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-list-group">
       <a href="#list-example">基础示例</a>
       <a href="#list-active">当前活动项</a>
       <a href="#list-link">链接和按钮</a>
@@ -15,7 +15,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-list" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-list-group" class="docs-content">
     <h1>List group 列表</h1>
     <p class="fs-4 fw-light">
       列表是一种灵活且强大的组件，用于展示一系列内容。了解更多请阅读

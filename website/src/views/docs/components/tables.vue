@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-table">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-tables">
       <a href="#table-base">基础用法</a>
       <a href="#table-variants">表格上色</a>
       <a href="#table-tfoot">表尾数据</a>
@@ -23,7 +23,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-table" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-tables" class="docs-content">
     <h1>Tables 表格</h1>
     <p class="fs-4 fw-light">
       基于

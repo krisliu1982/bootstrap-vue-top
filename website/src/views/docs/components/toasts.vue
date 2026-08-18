@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-toasts">
       <a href="#toasts-base">基础用法</a>
       <a href="#toasts-type">类型调整</a>
@@ -13,7 +13,7 @@
     <h1>Toasts 轻提示</h1>
     <p class="fs-4 fw-light">
       通过弹出提示的方式向您的访客发送通知，这是一种简洁且易于自定义的提醒信息。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/scrollspy/" target="_blank">Bootstrap Toasts</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank">Bootstrap Toasts</a>
     </p>
 
     <h2 id="toasts-base">

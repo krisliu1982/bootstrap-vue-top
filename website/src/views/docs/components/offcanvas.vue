@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-offcanvas">
       <a href="#offcanvas-example">基础示例</a>
       <a href="#offcanvas-static">静态背景</a>

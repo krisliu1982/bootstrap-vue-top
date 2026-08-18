@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-validation">
       <a href="#validation-form">表单验证</a>
       <a href="#validation-field">表单项验证</a>

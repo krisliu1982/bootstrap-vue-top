@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-borders">
       <a href="#borders-base">基础用法</a>
       <a href="#borders-color">颜色调整</a>

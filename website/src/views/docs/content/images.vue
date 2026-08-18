@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-img">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-images">
       <a href="#img-responsive">响应式图片</a>
       <a href="#img-thumbnail">图片缩略图</a>
       <a href="#img-align">图像对齐</a>
@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-img" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-images" class="docs-content">
     <h1>Images 图片</h1>
     <p class="fs-4 fw-light">
       提供文档和示例，说明如何通过类为图像设置响应式行为（使其宽度永远不会超过其父元素），并为它们添加轻量级样式。了解更多请阅读

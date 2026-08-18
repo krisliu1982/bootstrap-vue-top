@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-shadows">
       <a href="#shadows-example">示例</a>
     </nav>

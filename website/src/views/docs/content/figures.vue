@@ -1,11 +1,11 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-figure">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-figures">
       <a href="#figure-example">示例</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-figure" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-figures" class="docs-content">
     <h1>Figures 图表区</h1>
     <p class="fs-4 fw-light">
       关于在 Bootstrap 中使用 figure 组件展示相关图像和文本的文档与示例。了解更多请阅读

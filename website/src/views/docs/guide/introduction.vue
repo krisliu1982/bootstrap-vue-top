@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-introduction">
       <a href="#breakpoints-core">核心概念</a>
       <a href="#breakpoints-available">可用的断点</a>
@@ -94,5 +94,3 @@
     </p>
   </div>
 </template>
-
-<script setup></script>

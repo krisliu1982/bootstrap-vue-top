@@ -1,13 +1,13 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-close">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-close-button">
       <a href="#close-example">示例</a>
       <a href="#close-disabled">禁用</a>
       <a href="#close-css">CSS Variables</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-close" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-close-button" class="docs-content">
     <h1>Close button 关闭按钮</h1>
     <p class="fs-4 fw-light">
       使一个通用的关闭按钮，用于关闭模态框和警告等提示内容。了解更多请阅读

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-select">
       <a href="#select-default">预设</a>
       <a href="#select-sizing">尺寸调整</a>

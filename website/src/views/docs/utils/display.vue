@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-display">
       <a href="#display-notation">表示法</a>
       <a href="#display-hide">隐藏元素</a>

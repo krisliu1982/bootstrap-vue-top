@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-collapse">
       <a href="#collapse-example">示例</a>
       <a href="#collapse-accessibility">无障碍</a>

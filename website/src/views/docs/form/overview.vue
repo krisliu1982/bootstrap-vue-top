@@ -1,13 +1,13 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-form">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-overview">
       <a href="#form-overview">概述</a>
       <a href="#form-disabled-forms">禁用表单</a>
       <a href="#form-accessibility">无障碍</a>
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-form" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-overview" class="docs-content">
     <h1>Forms 表单</h1>
     <p class="fs-4 fw-light">
       基于

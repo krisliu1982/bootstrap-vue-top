@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-progress">
       <a href="#progress-about">使用说明</a>
       <a href="#progress-size">宽度和高度</a>
@@ -16,7 +16,7 @@
     <h1>Progress 进度条</h1>
     <p class="fs-4 fw-light">
       有关使用 Bootstrap 自定义进度条的文档和示例，该进度条支持堆叠条、动画背景以及文本标签功能。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/placeholders/" target="_blank">Bootstrap Placeholders</a>
+      <a href="https://getbootstrap.com/docs/5.3/components/progress/" target="_blank">Bootstrap Placeholders</a>
     </p>
 
     <h2 id="progress-about">

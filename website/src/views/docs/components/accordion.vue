@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-accordion">
       <a href="#accordion-base">基础用法</a>
       <a href="#accordion-flush">齐平手风琴</a>

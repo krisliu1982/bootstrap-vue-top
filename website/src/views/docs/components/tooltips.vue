@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-dropdowns">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-tooltips">
       <a href="#tooltips-example">示例</a>
       <a href="#tooltips-custom">自定义样式</a>
       <a href="#tooltips-html">HTML内容</a>
@@ -9,7 +9,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-dropdowns" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-tooltips" class="docs-content">
     <h1>Tooltips 文字提示</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-tooltip</code> 指令激活文字提示。了解更多请阅读

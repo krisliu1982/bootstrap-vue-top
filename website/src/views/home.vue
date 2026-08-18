@@ -2,7 +2,7 @@
   <div class="container">
     <div class="my-4">
       <h1 class="mb-3">基于 Bootstrap5 & Vue3 的前端框架</h1>
-      <ul class="ps-3">
+      <ul class="docs-content-list">
         <li>
           <p>框架完美融合了 Bootstrap 强大的样式体系与 Vue 的响应式数据驱动能力，为开发者提供了<strong>一套高度灵活、高效、稳健，适配不同设备尺寸的企业级 UI 解决方案</strong>。</p>
         </li>
@@ -18,7 +18,7 @@
             项目中直接适用，降低了团队的学习与迁移成本。</p>
         </li>
       </ul>
-      <div class="hstack gap-3 justify-content-center"><a href="/docs" class="icon-link icon-link-hover">查看文档<BiArrowRight /></a></div>
+      <div class="hstack gap-3 justify-content-center"><RouterLink to="/docs" class="icon-link icon-link-hover">查看文档<BiArrowRight /></RouterLink></div>
     </div>
   </div>
 </template>

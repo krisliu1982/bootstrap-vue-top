@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-layout">
       <a href="#layout-forms">表单</a>
       <a href="#layout-utilities">工具使用</a>

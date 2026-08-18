@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-pagination">
       <a href="#pagination-base">基础模式</a>
       <a href="#pagination-full">全量模式</a>

@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-alerts-box">
       <a href="#alerts-box-base">基础用法</a>
     </nav>

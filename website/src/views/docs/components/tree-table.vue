@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-treetable">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-tree-table">
       <a href="#treetable-base">基础用法</a>
       <a href="#treetable-variants">表格上色</a>
       <a href="#treetable-tfoot">表尾数据</a>
@@ -18,7 +18,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-treetable" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-tree-table" class="docs-content">
     <h1>Tree table 树形表格结构</h1>
     <p class="fs-4 fw-light">
       以表格样式, 展示层级结构信息，可展开或折叠，而构建

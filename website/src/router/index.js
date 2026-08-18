@@ -384,7 +384,7 @@ router.beforeEach((to, from) => {
   NProgress.start();
 });
 
-router.afterEach(() => {
+router.afterEach((to, from) => {
   NProgress.done();
 });
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-button">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-button-group">
       <a href="#button-group-example">示例</a>
       <a href="#button-group-check">复选框和单选按钮组</a>
       <a href="#button-group-toolbar">按钮工具栏</a>
@@ -10,7 +10,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-button" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-button-group" class="docs-content">
     <h1>Button group 按钮组</h1>
     <p class="fs-4 fw-light">
       将一系列按钮排列在一条直线上，或将其堆叠成垂直列。了解更多请阅读

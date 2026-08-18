@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-toc">
-    <nav id="docs-nav-ty">
+  <div class="docs-toc-nav">
+    <nav id="docs-nav-typography">
       <a href="#ty-global">全局设置</a>
       <a href="#ty-header">标题</a>
       <a href="#ty-display">展示标题</a>
@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-ty" class="docs-content">
+  <div v-scrollspy data-bs-target="#docs-nav-typography" class="docs-content">
     <h1>Typography 文字排版</h1>
     <p class="fs-4 fw-light">
       Bootstrap 排版的相关文档和示例，包括全局设置、标题、正文、列表等。了解更多请阅读

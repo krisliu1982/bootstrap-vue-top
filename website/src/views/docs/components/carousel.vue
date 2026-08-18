@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-carousel">
       <a href="#carousel-base">基础用法</a>
       <a href="#carousel-fade">淡入淡出</a>

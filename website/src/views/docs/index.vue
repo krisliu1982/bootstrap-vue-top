@@ -2,10 +2,13 @@
   <div class="sticky-top bg-body-tertiary border-bottom border-top border-body d-lg-none">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-2">
-        <a href="#" class="link-body-emphasis text-decoration-none"
-          @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
-        <a href="#" class="link-body-emphasis text-decoration-none"
-          ><small>本页目录 <bi-chevron-right /></small></a>
+        <a href="#" class="link-body-emphasis text-decoration-none" @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
+        <div class="dropdown docs-toc-menu">
+          <a v-dropdown href="#" class="link-body-emphasis text-decoration-none small dropdown-toggle"
+            aria-expanded="false">本页内容</a>
+          <nav class="dropdown-menu" style="max-height: 50vh;overflow-y: auto;" ref="tocMenuRef">
+          </nav>
+        </div>
       </div>
     </div>
   </div>
@@ -28,7 +31,8 @@
                   Quick start 快速开始</RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active">Changelog 更新日志
+                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active">Changelog
+                  更新日志
                 </RouterLink>
               </li>
             </ul>
@@ -396,10 +400,13 @@
 </template>
 
 <script setup lang="js">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
+import { useRoute } from 'vue-router'
+
 
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
+const tocMenuRef = ref(null);
 
 // 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
 let smallScreen = window.innerWidth < 992;
@@ -427,6 +434,16 @@ onUnmounted(() => {
   window.removeEventListener('resize', handleViewportChange);
 })
 
-
-
+// 监听路径变化
+const route = useRoute();
+watch(() => route.path, (newPath, oldPath) => {
+  const lastSegment = newPath.split('/').pop()
+  setTimeout(() => {
+    const tocEl = document.getElementById(`docs-nav-${lastSegment}`);
+    if (tocEl !== null) {
+      tocMenuRef.value.scrollTo(0, 0);
+      tocMenuRef.value.innerHTML = tocEl.innerHTML;
+    }
+  }, 1500);
+}, {immediate:true})
 </script>

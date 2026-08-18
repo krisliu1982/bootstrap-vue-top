@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-toc">
+  <div class="docs-toc-nav">
     <nav id="docs-nav-range">
       <a href="#range-overview">概述</a>
       <a href="#range-disabled">禁用</a>
