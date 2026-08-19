@@ -1,6 +1,6 @@
 {
-  "name": "boostrap-vue-docs",
-  "version": "1.0.3",
+  "name": "bootstrap-vue-docs",
+  "version": "1.0.4",
   "private": true,
   "type": "module",
   "scripts": {

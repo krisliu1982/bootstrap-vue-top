@@ -1,10 +1,12 @@
 <template>
-  <nav class="sticky-lg-top bg-primary-subtle">
+  <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container">
-            <div class="d-flex justify-content-between align-items-center" style="height:3rem;">
-      <a class="link-body-emphasis text-decoration-none d-flex align-items-center" href="#" @click.prevent="$router.push('/')">
-        <img src="/favicon.svg" alt="BoostrapVue" width="24" height="24"
-          class="me-2" /><span class="fw-bold fs-5">BoostrapVue</span></a>
+            <div class="d-flex align-items-center gap-3" style="height:3rem;">
+      <a class="link-body-emphasis text-decoration-none" href="#" @click.prevent="$router.push('/')">
+        <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"
+      /></a>
+          <span class="badge bg-body text-body" style="--bs-badge-font-weight:500;">1.0.4</span>
+          <div class="ms-auto">
           <div class="d-none d-lg-block">
         <div class="d-flex align-items-center gap-3">
           <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold">文档</RouterLink>
@@ -35,10 +37,11 @@
       </a>
       </div>
       </div>
+      </div>
     </div>
   </nav>
 
-      <bv-offcanvas ref="navbarRef" title="bootstrap-vue" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
+      <bv-offcanvas ref="navbarRef" title="BootstrapVue" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
         <div class="list-group list-group-flush" @click="navbarRef.toggle()">
           <RouterLink to="/docs" class="list-group-item list-group-item-action">文档</RouterLink>
           <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/"
