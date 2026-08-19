@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-images">
+    <nav v-docstoc id="docs-nav-images">
       <a href="#img-responsive">响应式图片</a>
       <a href="#img-thumbnail">图片缩略图</a>
       <a href="#img-align">图像对齐</a>

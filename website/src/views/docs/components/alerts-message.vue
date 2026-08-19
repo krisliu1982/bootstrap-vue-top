@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-alerts-message">
+    <nav v-docstoc id="docs-nav-alerts-message">
       <a href="#alerts-message-base">基础用法</a>
       <a href="#alerts-message-type">不同类型</a>
       <a href="#alerts-message-duration">显示时间</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-z-index">
+    <nav v-docstoc id="docs-nav-z-index">
       <a href="#z-index-about">使用说明</a>
     </nav>
   </div>

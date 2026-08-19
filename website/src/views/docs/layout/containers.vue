@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-containers">
+    <nav v-docstoc id="docs-nav-containers">
       <a href="#containers-about">使用说明</a>
     </nav>
   </div>

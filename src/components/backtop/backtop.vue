@@ -33,11 +33,11 @@ const props = defineProps({
 const backtopClass = computed(() => {
   const classList = [`link-${props.color}`];
   if (props.size === 'md') {
-    classList.push('fs-2');
+    classList.push('display-4');
   } else if (props.size === 'sm') {
-    classList.push('fs-3');
+    classList.push('display-6');
   } else if (props.size === 'lg') {
-    classList.push('fs-1');
+    classList.push('display-2');
   }
 
   return classList;

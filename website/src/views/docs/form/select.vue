@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-select">
+    <nav v-docstoc id="docs-nav-select">
       <a href="#select-default">预设</a>
       <a href="#select-sizing">尺寸调整</a>
       <a href="#select-disabled">禁用</a>

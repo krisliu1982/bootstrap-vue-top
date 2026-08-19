@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-typography">
+    <nav v-docstoc id="docs-nav-typography">
       <a href="#ty-global">全局设置</a>
       <a href="#ty-header">标题</a>
       <a href="#ty-display">展示标题</a>

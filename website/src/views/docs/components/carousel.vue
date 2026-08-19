@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-carousel">
+    <nav v-docstoc id="docs-nav-carousel">
       <a href="#carousel-base">基础用法</a>
       <a href="#carousel-fade">淡入淡出</a>
       <a href="#carousel-auto">自动播放</a>

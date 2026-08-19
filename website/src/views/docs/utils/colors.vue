@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-colors">
+    <nav v-docstoc id="docs-nav-colors">
       <a href="#colors-base">基础用法</a>
       <a href="#colors-opacity">透明度调整</a>
       <a href="#colors-specificity">特别点</a>

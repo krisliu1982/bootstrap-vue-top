@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-stretched-link">
+    <nav v-docstoc id="docs-nav-stretched-link">
       <a href="#stretched-link-about">使用说明</a>
     </nav>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-interactions">
+    <nav v-docstoc id="docs-nav-interactions">
       <a href="#interactions-selection">文本选择</a>
       <a href="#interactions-pointer">指针事件</a>
     </nav>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-flex">
+    <nav v-docstoc id="docs-nav-flex">
       <a href="#flex-enable">启用弹性布局</a>
       <a href="#flex-direction">方向调整</a>
       <a href="#flex-justify">内容布局</a>

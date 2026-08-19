@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-alerts">
+    <nav v-docstoc id="docs-nav-alerts">
       <a href="#alerts-example">示例</a>
       <a href="#alerts-link">链接颜色</a>
       <a href="#alerts-att">附加内容</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-progress">
+    <nav v-docstoc id="docs-nav-progress">
       <a href="#progress-about">使用说明</a>
       <a href="#progress-size">宽度和高度</a>
       <a href="#progress-label">标签</a>

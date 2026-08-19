@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-checks-radios">
+    <nav v-docstoc id="docs-nav-checks-radios">
       <a href="#check-approach">处理方式</a>
       <a href="#check-checks">复选框</a>
       <a href="#check-radios">单选框</a>

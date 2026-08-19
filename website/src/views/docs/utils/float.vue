@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-float">
+    <nav v-docstoc id="docs-nav-float">
       <a href="#float-overview">概述</a>
       <a href="#float-wrap">环绕图片</a>
       <a href="#float-clearfix">清理浮动</a>

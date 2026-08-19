@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-modal2">
+    <nav v-docstoc id="docs-nav-modal2">
       <a href="#modal2-example">基础示例</a>
       <a href="#modal2-many">打开多个</a>
       <a href="#modal2-footer">底部插槽</a>

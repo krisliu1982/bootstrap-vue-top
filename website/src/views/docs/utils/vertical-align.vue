@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-vertical-align">
+    <nav v-docstoc id="docs-nav-vertical-align">
       <a href="#vertical-align-about">使用说明</a>
     </nav>
   </div>

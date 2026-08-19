@@ -7,7 +7,7 @@
       class="alert-box d-flex justify-content-center align-items-start"
       role="alert"
     >
-      <div class="shadow rounded bg-body p-3 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
+      <div class="shadow rounded bg-body p-3 col-10 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
         <div class="d-flex justify-content-center align-items-center">
           <div class="me-2">
             <BiExclamationCircle class="text-danger fs-5" />

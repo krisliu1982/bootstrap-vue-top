@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-object-fit">
+    <nav v-docstoc id="docs-nav-object-fit">
       <a href="#object-fit-work">工作方式</a>
       <a href="#object-fit-example">示例</a>
       <a href="#object-fit-responsive">响应性</a>

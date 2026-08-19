@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-focus-ring">
+    <nav v-docstoc id="docs-nav-focus-ring">
       <a href="#focus-ring-example">示例</a>
       <a href="#focus-ring-coustom">自定义</a>
     </nav>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-position">
+    <nav v-docstoc id="docs-nav-position">
       <a href="#position-value">位置值</a>
       <a href="#position-arrange">排列元素</a>
       <a href="#position-center">中心元素</a>

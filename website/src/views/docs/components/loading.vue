@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-loading">
+    <nav v-docstoc id="docs-nav-loading">
       <a href="#loading-fullscreen">全屏加载</a>
       <a href="#loading-area">区域加载</a>
     </nav>

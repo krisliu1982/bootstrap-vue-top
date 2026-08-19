@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-alerts-confirm">
+    <nav v-docstoc id="docs-nav-alerts-confirm">
       <a href="#alerts-confirm-base">基础用法</a>
     </nav>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-spacing">
+    <nav v-docstoc id="docs-nav-spacing">
       <a href="#spacing-mp">外边距和内边距</a>
       <a href="#spacing-gap">缝隙</a>
     </nav>

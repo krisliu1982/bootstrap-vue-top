@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-card">
+    <nav v-docstoc id="docs-nav-card">
       <a href="#card-about">简介</a>
       <a href="#card-example">示例</a>
       <a href="#card-type">内容类型</a>

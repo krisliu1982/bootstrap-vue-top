@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-buttons">
+    <nav v-docstoc id="docs-nav-buttons">
       <a href="#buttons-base">基础样式</a>
       <a href="#buttons-variants">变体按钮</a>
       <a href="#buttons-nowrap">禁用文本换行</a>

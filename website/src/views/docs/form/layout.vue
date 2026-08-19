@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-layout">
+    <nav v-docstoc id="docs-nav-layout">
       <a href="#layout-forms">表单</a>
       <a href="#layout-utilities">工具使用</a>
       <a href="#layout-grid">表单网格</a>

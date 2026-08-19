@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-overview">
+    <nav v-docstoc id="docs-nav-overview">
       <a href="#form-overview">概述</a>
       <a href="#form-disabled-forms">禁用表单</a>
       <a href="#form-accessibility">无障碍</a>

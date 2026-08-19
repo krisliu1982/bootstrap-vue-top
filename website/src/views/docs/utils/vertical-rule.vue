@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-vertical-rule">
+    <nav v-docstoc id="docs-nav-vertical-rule">
       <a href="#vertical-rule-about">使用说明</a>
     </nav>
   </div>

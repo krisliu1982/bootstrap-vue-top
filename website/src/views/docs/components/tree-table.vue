@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-tree-table">
+    <nav v-docstoc id="docs-nav-tree-table">
       <a href="#treetable-base">基础用法</a>
       <a href="#treetable-variants">表格上色</a>
       <a href="#treetable-tfoot">表尾数据</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-dropdowns">
+    <nav v-docstoc id="docs-nav-dropdowns">
       <a href="#dropdowns-example">示例</a>
       <a href="#dropdowns-accessibility">无障碍</a>
       <a href="#dropdowns-css">CSS Variables</a>

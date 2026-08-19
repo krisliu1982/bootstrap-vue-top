@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-pagination">
+    <nav v-docstoc id="docs-nav-pagination">
       <a href="#pagination-base">基础模式</a>
       <a href="#pagination-full">全量模式</a>
       <a href="#pagination-simple">简单模式</a>

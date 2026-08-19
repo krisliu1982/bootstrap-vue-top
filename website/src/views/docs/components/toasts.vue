@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-toasts">
+    <nav v-docstoc id="docs-nav-toasts">
       <a href="#toasts-base">基础用法</a>
       <a href="#toasts-type">类型调整</a>
       <a href="#toasts-position">弹出位置</a>

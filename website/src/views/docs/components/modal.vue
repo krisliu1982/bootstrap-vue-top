@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-modal">
+    <nav v-docstoc id="docs-nav-modal">
       <a href="#modal-example">基础示例</a>
       <a href="#modal-footer">底部插槽</a>
       <a href="#modal-static">静态背景</a>

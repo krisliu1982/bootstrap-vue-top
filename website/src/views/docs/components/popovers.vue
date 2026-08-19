@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-popovers">
+    <nav v-docstoc id="docs-nav-popovers">
       <a href="#popovers-about">使用说明</a>
       <a href="#popovers-example">示例</a>
       <a href="#popovers-trigger">触发方式</a>

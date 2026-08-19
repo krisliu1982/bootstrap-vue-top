@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-reboot">
+    <nav v-docstoc id="docs-nav-reboot">
       <a href="#reboot-approach">处理方式</a>
       <a href="#reboot-variables">CSS变量</a>
       <a href="#reboot-default">页面预设</a>

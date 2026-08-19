@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-uploader">
+    <nav v-docstoc id="docs-nav-uploader">
       <a href="#uploader-file">文件上传</a>
       <a href="#uploader-image-one">单图片上传</a>
       <a href="#uploader-image-many">多图片上传</a>

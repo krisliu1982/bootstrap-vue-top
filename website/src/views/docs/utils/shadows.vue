@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-shadows">
+    <nav v-docstoc id="docs-nav-shadows">
       <a href="#shadows-example">示例</a>
     </nav>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-tree">
+    <nav v-docstoc id="docs-nav-tree">
       <a href="#tree-base">基础用法</a>
       <a href="#tree-checkbox">多选节点</a>
       <a href="#tree-radio">单选节点</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-visually-hidden">
+    <nav v-docstoc id="docs-nav-visually-hidden">
       <a href="#visually-hidden-about">使用说明</a>
     </nav>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-breadcrumb">
+    <nav v-docstoc id="docs-nav-breadcrumb">
       <a href="#breadcrumb-example">示例</a>
       <a href="#breadcrumb-divider">分隔线</a>
       <a href="#breadcrumb-accessibility">无障碍</a>

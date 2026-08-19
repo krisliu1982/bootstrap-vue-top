@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-list-group">
+    <nav v-docstoc id="docs-nav-list-group">
       <a href="#list-example">基础示例</a>
       <a href="#list-active">当前活动项</a>
       <a href="#list-link">链接和按钮</a>

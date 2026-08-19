@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-scrollspy">
+    <nav v-docstoc id="docs-nav-scrollspy">
       <a href="#scrollspy-about">使用说明</a>
       <a href="#scrollspy-nav">导航锚点</a>
       <a href="#scrollspy-list">列表锚点</a>
@@ -315,7 +315,7 @@
 const bodyCode = `
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-scrollspy">
+    <nav v-docstoc id="docs-nav-scrollspy">
       <a href="#scrollspy-about">使用说明</a>
       <a href="#scrollspy-nav">导航锚点</a>
       <a href="#scrollspy-list">列表锚点</a>

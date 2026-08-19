@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-tooltips">
+    <nav v-docstoc id="docs-nav-tooltips">
       <a href="#tooltips-example">示例</a>
       <a href="#tooltips-custom">自定义样式</a>
       <a href="#tooltips-html">HTML内容</a>

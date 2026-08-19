@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-input-group">
+    <nav v-docstoc id="docs-nav-input-group">
       <a href="#input-group-base">基本示例</a>
       <a href="#input-group-wrapping">包裹</a>
       <a href="#input-group-radius">边框半径</a>

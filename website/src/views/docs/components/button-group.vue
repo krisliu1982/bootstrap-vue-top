@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-button-group">
+    <nav v-docstoc id="docs-nav-button-group">
       <a href="#button-group-example">示例</a>
       <a href="#button-group-check">复选框和单选按钮组</a>
       <a href="#button-group-toolbar">按钮工具栏</a>

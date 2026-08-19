@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-stacks">
+    <nav v-docstoc id="docs-nav-stacks">
       <a href="#stacks-vertical">垂直</a>
       <a href="#stacks-horizontal">水平</a>
       <a href="#stacks-example">示例</a>

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-navbar">
+    <nav v-docstoc id="docs-nav-navbar">
       <a href="#navbar-example">基础示例</a>
       <a href="#navbar-brand">品牌标识</a>
       <a href="#navbar-nav">导航区</a>

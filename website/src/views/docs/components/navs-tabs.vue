@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-navs-tabs">
+    <nav v-docstoc id="docs-nav-navs-tabs">
       <a href="#tabs-example">基础示例</a>
       <a href="#tabs-horizontal">水平对齐</a>
       <a href="#tabs-tabs">卡片样式</a>

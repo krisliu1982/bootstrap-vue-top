@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-color-background">
+    <nav v-docstoc id="docs-nav-color-background">
       <a href="#color-background-base">基础用法</a>
       <a href="#color-background-component">在组件中使用</a>
     </nav>

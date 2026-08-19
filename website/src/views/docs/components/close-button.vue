@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-close-button">
+    <nav v-docstoc id="docs-nav-close-button">
       <a href="#close-example">示例</a>
       <a href="#close-disabled">禁用</a>
       <a href="#close-css">CSS Variables</a>

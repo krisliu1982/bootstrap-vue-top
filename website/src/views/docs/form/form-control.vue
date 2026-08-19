@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-form-control">
+    <nav v-docstoc id="docs-nav-form-control">
       <a href="#form-control-example">示例</a>
       <a href="#form-control-sizing">尺寸调整</a>
       <a href="#form-control-form-text">表单文本</a>

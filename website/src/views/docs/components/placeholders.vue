@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-placeholders">
+    <nav v-docstoc id="docs-nav-placeholders">
       <a href="#placeholders-about">使用说明</a>
       <a href="#placeholders-example">示例</a>
       <a href="#placeholders-width">宽度</a>

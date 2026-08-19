@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-range">
+    <nav v-docstoc id="docs-nav-range">
       <a href="#range-overview">概述</a>
       <a href="#range-disabled">禁用</a>
       <a href="#range-minmax">最小和最大</a>

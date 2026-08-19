@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav id="docs-nav-figures">
+    <nav v-docstoc id="docs-nav-figures">
       <a href="#figure-example">示例</a>
     </nav>
   </div>
