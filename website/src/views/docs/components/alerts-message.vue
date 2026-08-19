@@ -20,7 +20,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleClick">Alert Message</button>
         </div>
       </div>

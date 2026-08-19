@@ -28,7 +28,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="handleClick1">Closes automatically</button>
           <button type="button" class="btn btn-primary" @click="handleClick2">Won't close automatically</button>
         </div>
@@ -45,7 +45,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-success" @click="handleClickSuccess">Success</button>
           <button type="button" class="btn btn-danger" @click="handleClickDanger">Danger</button>
           <button type="button" class="btn btn-warning" @click="handleClickWarning">Warning</button>
@@ -200,7 +200,7 @@ function handleClickHtml() {
 }
 const baseCode = `
 <template>
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
       @click="handleClick1">Closes automatically</button>
     <button type="button" class="btn btn-primary" 
@@ -229,7 +229,7 @@ function handleClick2() {
 
 const typeCode = `
 <template>
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-success" 
       @click="handleClickSuccess">Success</button>
     <button type="button" class="btn btn-danger" 

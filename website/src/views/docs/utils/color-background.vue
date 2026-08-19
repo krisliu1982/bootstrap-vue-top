@@ -69,7 +69,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <span class="badge text-bg-primary">Primary</span>
           <span class="badge text-bg-info">Info</span>
         </div>

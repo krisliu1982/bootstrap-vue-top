@@ -224,7 +224,7 @@
           </div>
           <div class="row mb-3">
             <div class="col-sm-9 offset-sm-3">
-              <div class="hstack gap-3">
+              <div class="hstack gap-3 flex-wrap">
                 <button type="submit" class="btn btn-primary">Create</button>
                 <button type="button" class="btn btn-secondary" @click="resetForm1">Reset</button>
               </div>
@@ -617,7 +617,7 @@ const formCode = `
     </div>
     <div class="row mb-3">
       <div class="col-sm-9 offset-sm-3">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="submit" class="btn btn-primary">Create</button>
           <button type="button" class="btn btn-secondary" @click="resetForm1">Reset</button>
         </div>

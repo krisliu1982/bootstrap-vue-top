@@ -227,7 +227,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <a class="icon-link" href="#"> <bi-box />Icon link </a>
           <a class="icon-link" href="#"> Icon link<bi-arrow-right /> </a>
           <a class="icon-link icon-link-hover" href="#"> Icon link<bi-arrow-right /> </a>
@@ -241,7 +241,7 @@
     <p>可以需要修改 <code>--bs-link-*</code> 和 <code>--bs-icon-link-*</code> 这些 CSS 变量，以改变默认的外观。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)" href="#">
             <bi-box />Icon link
           </a>
@@ -324,7 +324,7 @@ const color2Code = `
 `;
 
 const icon1Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <a class="icon-link" href="#">
     <bi-box />Icon link
   </a>
@@ -340,7 +340,7 @@ const icon1Code = `
 </div>`;
 
 const icon2Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <a class="icon-link icon-link-hover" 
     style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
     <bi-box />Icon link

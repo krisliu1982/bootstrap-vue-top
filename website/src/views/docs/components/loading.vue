@@ -43,7 +43,7 @@
           </bv-table>
         </bv-loading>
 
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="loading = true">Show Loading</button>
           <button type="button" class="btn btn-primary" @click="loading = false">Hide Loading</button>
         </div>
@@ -101,7 +101,7 @@ const loadingCode = `
     </bv-table>
   </bv-loading>
 
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-outline-primary" 
     @click="loading = true">Show Loading</button>
     <button type="button" class="btn btn-outline-primary" 

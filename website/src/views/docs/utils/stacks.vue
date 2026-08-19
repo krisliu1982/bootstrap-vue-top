@@ -51,7 +51,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="p-2">First item</div>
           <div class="p-2">Second item</div>
           <div class="p-2">Third item</div>
@@ -62,7 +62,7 @@
     <p>使用诸如 <code>.ms-auto</code> 这样的水平内边距样式作为分隔符：</p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="p-2">First item</div>
           <div class="p-2 ms-auto">Second item</div>
           <div class="p-2">Third item</div>
@@ -75,7 +75,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="p-2">First item</div>
           <div class="p-2 ms-auto">Second item</div>
           <div class="vr"></div>
@@ -101,7 +101,7 @@
     <p>使用 <code>.hstack</code> 创建一个内联表单：</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <input
             class="form-control me-auto"
             type="text"
@@ -132,21 +132,21 @@ const verticalCode = `
 </div>`;
 
 const horizontal1Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="p-2">First item</div>
   <div class="p-2">Second item</div>
   <div class="p-2">Third item</div>
 </div>`;
 
 const horizontal2Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="p-2">Third item</div>
 </div>`;
 
 const horizontal3Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="vr"></div>
@@ -161,7 +161,7 @@ const example1Code = `
 `;
 
 const example2Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
   <button type="button" class="btn btn-secondary">Submit</button>
   <div class="vr"></div>

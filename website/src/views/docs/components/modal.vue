@@ -246,7 +246,7 @@
     <p>我们默认的无修饰类模态框即为“中等”尺寸的模态框。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" @click="modalXlRef.toggle()">Extra large modal</button>
           <button type="button" class="btn btn-primary" @click="modalLgRef.toggle()">Large modal</button>
           <button type="button" class="btn btn-primary" @click="modalSmRef.toggle()">Small modal</button>
@@ -498,7 +498,7 @@ const modalScrollableRef = ref(null);
 
 const sizeCode = `
 <template>
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" 
       @click="modalXlRef.toggle()">Extra large modal</button>
     <button type="button" class="btn btn-primary" 

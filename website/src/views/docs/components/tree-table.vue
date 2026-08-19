@@ -40,7 +40,7 @@
           <bv-treetable-col header="Address" field="address" />
           <bv-treetable-col header="Operation">
             <template #body="{ item }">
-              <div class="hstack gap-3">
+              <div class="hstack gap-3 flex-wrap">
                 <button
                   type="button"
                   class="btn btn-link"
@@ -396,7 +396,7 @@ const baseCode = `
     <bv-treetable-col header="Address" field="address" />
     <bv-treetable-col header="Operation">
       <template #body="{ item }">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-link"
             @click="alertMessage({ type: 'success', message: item.code })">编辑</button>
           <button type="button" class="btn btn-link"

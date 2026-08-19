@@ -26,7 +26,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <a href="#" v-tooltip data-bs-title="tooltip content">tooltip link</a>
           <button type="button" class="btn btn-primary" v-tooltip data-bs-title="tooltip content">
             tooltip button
@@ -98,7 +98,7 @@
 <script setup>
 const exampleCode = `
 <template>
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 flex-wrap">
     <a href="#" 
       v-tooltip 
       data-bs-title="tooltip content">tooltip link</a>

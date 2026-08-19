@@ -42,7 +42,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <!--Border spinner-->
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -76,7 +76,7 @@
         <hr />
 
         <!--Growing spinner-->
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="spinner-grow" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -136,7 +136,7 @@
         <hr />
 
         <!--Size-->
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <div class="spinner-border spinner-border-sm" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
@@ -169,7 +169,7 @@
 <script setup>
 const exampleCode = `
 <!--Border spinner-->
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="spinner-border" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -203,7 +203,7 @@ const exampleCode = `
 <hr />
 
 <!--Growing spinner-->
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="spinner-grow" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>
@@ -263,7 +263,7 @@ const exampleCode = `
 <hr />
 
 <!--Size-->
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <div class="spinner-border spinner-border-sm" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>

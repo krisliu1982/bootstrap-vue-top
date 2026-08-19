@@ -153,17 +153,17 @@
     <p>你甚至可以使用CSS变量来自定义尺寸：</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary btn-lg">Large button</button>
           <button type="button" class="btn btn-secondary btn-lg">Large button</button>
         </div>
         <hr />
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary btn-sm">Small button</button>
           <button type="button" class="btn btn-secondary btn-sm">Small button</button>
         </div>
         <hr />
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button
             type="button"
             class="btn btn-primary"
@@ -187,7 +187,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-primary" disabled>Primary button</button>
           <button type="button" class="btn btn-secondary" disabled>Button</button>
           <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
@@ -214,7 +214,7 @@
     </ul>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
           <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
         </div>
@@ -234,7 +234,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
           <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
         </div>
@@ -278,7 +278,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button class="btn btn-primary" type="button" disabled>
             <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
             <span class="visually-hidden" role="status">Loading...</span>
@@ -289,7 +289,7 @@
           </button>
         </div>
         <hr />
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button class="btn btn-primary" type="button" disabled>
             <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
             <span class="visually-hidden" role="status"> Loading...</span>
@@ -355,17 +355,17 @@ const outlineCode = `
 </div>`;
 
 const sizeCode = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary btn-lg">Large button</button>
     <button type="button" class="btn btn-secondary btn-lg">Large button</button>
 </div>
 <hr/>
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary btn-sm">Small button</button>
     <button type="button" class="btn btn-secondary btn-sm">Small button</button>
 </div>
 <hr/>
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary"
             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
     Custom button
@@ -373,7 +373,7 @@ const sizeCode = `
 </div>`;
 
 const disabledCode = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <button type="button" class="btn btn-primary" disabled>Primary button</button>
     <button type="button" class="btn btn-secondary" disabled>Button</button>
     <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
@@ -381,13 +381,13 @@ const disabledCode = `
 </div>`;
 
 const disabled1Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
     <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
 </div>`;
 
 const disabled2Code = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
     <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
 </div>`;
@@ -414,7 +414,7 @@ const blockCode = `
 </div>`;
 
 const loadingCode = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
     <span class="visually-hidden" role="status">Loading...</span>
@@ -425,7 +425,7 @@ const loadingCode = `
   </button>
 </div>
 <hr />
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
   <button class="btn btn-primary" type="button" disabled>
     <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
     <span class="visually-hidden" role="status"> Loading...</span>

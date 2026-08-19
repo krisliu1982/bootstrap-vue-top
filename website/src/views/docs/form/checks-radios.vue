@@ -289,7 +289,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <input type="checkbox" class="btn-check" value="one" id="cb-1" v-model="checkboxVal" />
           <label class="btn btn-outline-primary" for="cb-1">Check1</label>
 
@@ -315,7 +315,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <input type="radio" class="btn-check" value="one" id="rb-1" v-model="radioVal" />
           <label class="btn btn-outline-primary" for="rb-1">Radio1</label>
 
@@ -466,7 +466,7 @@ const nolabelsCode = `
 
 const checkButtonCode = `
 <templete>
-    <div class="hstack gap-3">
+    <div class="hstack gap-3 flex-wrap">
         <input type="checkbox" class="btn-check" value="one" id="cb-1" v-model="checkboxVal">
         <label class="btn btn-outline-primary" for="cb-1">Check1</label>
 
@@ -486,7 +486,7 @@ const checkboxVal = ref([]);
 
 const radioButtonCode = `
 <templete>
-    <div class="hstack gap-3">
+    <div class="hstack gap-3 flex-wrap">
         <input type="radio" class="btn-check" value="one" id="rb-1" v-model="radioVal">
         <label class="btn btn-outline-primary" for="rb-1">Radio1</label>
 
