@@ -135,7 +135,7 @@
     <h2 id="pagination-count">
       调整页码数<a class="anchor-link" aria-label="Link to this section: 调整页码数" href="#pagination-count"> </a>
     </h2>
-    <p>可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数。</p>
+    <p>可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数，默认是 <code>5</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-pagination
@@ -143,7 +143,7 @@
           :total="ptotal"
           :current-page="pcurrent"
           :page-size="psize"
-          :pager-count="11"
+          :pager-count="7"
           size="sm"
           @current-change="(_page) => (pcurrent = _page)"
         ></bv-pagination>
@@ -205,7 +205,7 @@
           <td>pager-count</td>
           <td>设置最大页码按钮数</td>
           <td>Number (5|7|9|11|13|15|17|19|21)</td>
-          <td>7</td>
+          <td>5</td>
         </tr>
         <tr>
           <td>position</td>
@@ -356,7 +356,7 @@ const psize = ref(10); //每页记录数
 const countCode = `
 <template>
   <bv-pagination mode="base" 
-  :pager-count="11"
+  :pager-count="7"
   size="sm"
   :total="ptotal" 
   :current-page="pcurrent" :page-size="psize"
