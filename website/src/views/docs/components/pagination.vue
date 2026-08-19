@@ -164,7 +164,8 @@
     <h2 id="pagination-api">
       API<a class="anchor-link" aria-label="Link to this section: API" href="#pagination-api"> </a>
     </h2>
-    <table class="table">
+    <div class="table-responsive-lg">
+    <table class="table text-nowrap">
       <caption class="caption-top">
         属性列表
       </caption>
@@ -221,7 +222,9 @@
         </tr>
       </tbody>
     </table>
-    <table class="table">
+  </div>
+  <div class="table-responsive-lg">
+    <table class="table text-nowrap">
       <caption class="caption-top">
         事件列表
       </caption>
@@ -242,6 +245,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </template>
 
