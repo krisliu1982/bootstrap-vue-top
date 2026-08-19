@@ -4,10 +4,10 @@
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" class="link-body-emphasis text-decoration-none" @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
         <div class="dropdown docs-toc-menu">
-          <a v-dropdown href="#" class="link-body-emphasis text-decoration-none dropdown-toggle"
-            aria-expanded="false">本页内容</a>
-          <nav class="dropdown-menu" style="max-height: 50vh;overflow-y: auto;" id="docs-toc">
-          </nav>
+          <a v-dropdown href="#" class="link-body-emphasis text-decoration-none dropdown-toggle" aria-expanded="false"
+            >本页内容</a
+          >
+          <nav class="dropdown-menu" style="max-height: 50vh; overflow-y: auto" id="docs-toc"></nav>
         </div>
       </div>
     </div>
@@ -15,8 +15,11 @@
 
   <div class="container">
     <div class="d-flex gap-3 mt-3">
-      <bv-offcanvas ref="offcanvasRef" title="文档菜单"
-        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar">
+      <bv-offcanvas
+        ref="offcanvasRef"
+        title="文档菜单"
+        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar"
+      >
         <ul ref="menuRef" class="list-unstyled">
           <li class="mb-4">
             <h6 class="fw-bold">开发指南</h6>
@@ -28,11 +31,12 @@
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/guide/quick-start" class="docs-sidebar-link" exact-active-class="active">
-                  Quick start 快速开始</RouterLink>
+                  Quick start 快速开始</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active">Changelog
-                  更新日志
+                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active"
+                  >Changelog 更新日志
                 </RouterLink>
               </li>
             </ul>
@@ -47,14 +51,17 @@
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/layout/containers" class="docs-sidebar-link" exact-active-class="active">
-                  Containers 容器</RouterLink>
+                  Containers 容器</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/layout/grid" class="docs-sidebar-link" exact-active-class="active">Grid 网格
+                <RouterLink to="/docs/layout/grid" class="docs-sidebar-link" exact-active-class="active"
+                  >Grid 网格
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/layout/z-index" class="docs-sidebar-link" exact-active-class="active">Z-index 层级
+                <RouterLink to="/docs/layout/z-index" class="docs-sidebar-link" exact-active-class="active"
+                  >Z-index 层级
                 </RouterLink>
               </li>
             </ul>
@@ -63,19 +70,23 @@
             <h6 class="fw-bold">Content 内容</h6>
             <ul class="list-unstyled">
               <li class="py-1">
-                <RouterLink to="/docs/content/reboot" class="docs-sidebar-link" exact-active-class="active">Reboot 重置
+                <RouterLink to="/docs/content/reboot" class="docs-sidebar-link" exact-active-class="active"
+                  >Reboot 重置
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/content/typography" class="docs-sidebar-link" exact-active-class="active">
-                  Typography 文字排版</RouterLink>
+                  Typography 文字排版</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/content/images" class="docs-sidebar-link" exact-active-class="active">Images 图片
+                <RouterLink to="/docs/content/images" class="docs-sidebar-link" exact-active-class="active"
+                  >Images 图片
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/content/figures" class="docs-sidebar-link" exact-active-class="active">Figures 图表区
+                <RouterLink to="/docs/content/figures" class="docs-sidebar-link" exact-active-class="active"
+                  >Figures 图表区
                 </RouterLink>
               </li>
             </ul>
@@ -84,44 +95,53 @@
             <h6 class="fw-bold">Forms 表单</h6>
             <ul class="list-unstyled">
               <li class="py-1">
-                <RouterLink to="/docs/form/overview" class="docs-sidebar-link" exact-active-class="active">Overview 概述
+                <RouterLink to="/docs/form/overview" class="docs-sidebar-link" exact-active-class="active"
+                  >Overview 概述
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/form-control" class="docs-sidebar-link" exact-active-class="active">Form
-                  control 表单控件</RouterLink>
+                <RouterLink to="/docs/form/form-control" class="docs-sidebar-link" exact-active-class="active"
+                  >Form control 表单控件</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/select" class="docs-sidebar-link" exact-active-class="active">Select 选择器
+                <RouterLink to="/docs/form/select" class="docs-sidebar-link" exact-active-class="active"
+                  >Select 选择器
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/checks-radios" class="docs-sidebar-link" exact-active-class="active">Checks
-                  &amp; radios 复选和单选</RouterLink>
+                <RouterLink to="/docs/form/checks-radios" class="docs-sidebar-link" exact-active-class="active"
+                  >Checks &amp; radios 复选和单选</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/range" class="docs-sidebar-link" exact-active-class="active">Range 滑块
+                <RouterLink to="/docs/form/range" class="docs-sidebar-link" exact-active-class="active"
+                  >Range 滑块
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/input-group" class="docs-sidebar-link" exact-active-class="active">Input
-                  group 输入组</RouterLink>
+                <RouterLink to="/docs/form/input-group" class="docs-sidebar-link" exact-active-class="active"
+                  >Input group 输入组</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/form/floating-labels" class="docs-sidebar-link" exact-active-class="active">
-                  Floating labels 浮动标签</RouterLink>
+                  Floating labels 浮动标签</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/uploader" class="docs-sidebar-link" exact-active-class="active">Uploader 上传器
+                <RouterLink to="/docs/form/uploader" class="docs-sidebar-link" exact-active-class="active"
+                  >Uploader 上传器
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/layout" class="docs-sidebar-link" exact-active-class="active">Layout 布局
+                <RouterLink to="/docs/form/layout" class="docs-sidebar-link" exact-active-class="active"
+                  >Layout 布局
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/form/validation" class="docs-sidebar-link" exact-active-class="active">Validation
-                  验证
+                <RouterLink to="/docs/form/validation" class="docs-sidebar-link" exact-active-class="active"
+                  >Validation 验证
                 </RouterLink>
               </li>
             </ul>
@@ -131,140 +151,167 @@
             <ul class="list-unstyled">
               <li class="py-1">
                 <RouterLink to="/docs/components/accordion" class="docs-sidebar-link" exact-active-class="active">
-                  Accordion 手风琴</RouterLink>
+                  Accordion 手风琴</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/alerts" class="docs-sidebar-link" exact-active-class="active">Alerts 警示
+                <RouterLink to="/docs/components/alerts" class="docs-sidebar-link" exact-active-class="active"
+                  >Alerts 警示
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/alerts-box" class="docs-sidebar-link" exact-active-class="active">
-                  Alerts Box 警示弹窗</RouterLink>
+                  Alerts Box 警示弹窗</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/alerts-confirm" class="docs-sidebar-link" exact-active-class="active">
-                  Alerts Confirm 警示确认窗</RouterLink>
+                  Alerts Confirm 警示确认窗</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/alerts-message" class="docs-sidebar-link" exact-active-class="active">
-                  Alerts Message 警示消息</RouterLink>
+                  Alerts Message 警示消息</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/backtop" class="docs-sidebar-link" exact-active-class="active">
-                  Backtop 回到顶部</RouterLink>
+                  Backtop 回到顶部</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/badge" class="docs-sidebar-link" exact-active-class="active">Badge 徽章
+                <RouterLink to="/docs/components/badge" class="docs-sidebar-link" exact-active-class="active"
+                  >Badge 徽章
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/breadcrumb" class="docs-sidebar-link" exact-active-class="active">
-                  Breadcrumb 面包屑</RouterLink>
+                  Breadcrumb 面包屑</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/buttons" class="docs-sidebar-link" exact-active-class="active">Buttons
-                  按钮
+                <RouterLink to="/docs/components/buttons" class="docs-sidebar-link" exact-active-class="active"
+                  >Buttons 按钮
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/button-group" class="docs-sidebar-link" exact-active-class="active">
-                  Button group 按钮组</RouterLink>
+                  Button group 按钮组</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/card" class="docs-sidebar-link" exact-active-class="active">Card 卡片
+                <RouterLink to="/docs/components/card" class="docs-sidebar-link" exact-active-class="active"
+                  >Card 卡片
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/carousel" class="docs-sidebar-link" exact-active-class="active">
-                  Carousel 轮播图</RouterLink>
+                  Carousel 轮播图</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/close-button" class="docs-sidebar-link" exact-active-class="active">
-                  Close button 关闭按钮</RouterLink>
+                  Close button 关闭按钮</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/collapse" class="docs-sidebar-link" exact-active-class="active">
-                  Collapse 折叠</RouterLink>
+                  Collapse 折叠</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/dropdowns" class="docs-sidebar-link" exact-active-class="active">
-                  Dropdowns 下拉菜单</RouterLink>
+                  Dropdowns 下拉菜单</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/list-group" class="docs-sidebar-link" exact-active-class="active">List
-                  group 列表</RouterLink>
+                <RouterLink to="/docs/components/list-group" class="docs-sidebar-link" exact-active-class="active"
+                  >List group 列表</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/loading" class="docs-sidebar-link" exact-active-class="active">Loading
-                  加载
+                <RouterLink to="/docs/components/loading" class="docs-sidebar-link" exact-active-class="active"
+                  >Loading 加载
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/modal" class="docs-sidebar-link" exact-active-class="active">Modal 模态框
+                <RouterLink to="/docs/components/modal" class="docs-sidebar-link" exact-active-class="active"
+                  >Modal 模态框
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/modal2" class="docs-sidebar-link" exact-active-class="active">Modal2
-                  模态框2
+                <RouterLink to="/docs/components/modal2" class="docs-sidebar-link" exact-active-class="active"
+                  >Modal2 模态框2
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/navbar" class="docs-sidebar-link" exact-active-class="active">Navbar
-                  导航栏
+                <RouterLink to="/docs/components/navbar" class="docs-sidebar-link" exact-active-class="active"
+                  >Navbar 导航栏
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/navs-tabs" class="docs-sidebar-link" exact-active-class="active">Navs
-                  &amp; tabs 导航标签</RouterLink>
+                <RouterLink to="/docs/components/navs-tabs" class="docs-sidebar-link" exact-active-class="active"
+                  >Navs &amp; tabs 导航标签</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/offcanvas" class="docs-sidebar-link" exact-active-class="active">
-                  Offcanvas 侧边栏</RouterLink>
+                  Offcanvas 侧边栏</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/pagination" class="docs-sidebar-link" exact-active-class="active">
-                  Pagination 分页</RouterLink>
+                  Pagination 分页</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/placeholders" class="docs-sidebar-link" exact-active-class="active">
-                  Placeholders 占位符</RouterLink>
+                  Placeholders 占位符</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/popovers" class="docs-sidebar-link" exact-active-class="active">
-                  Popovers 弹出框</RouterLink>
+                  Popovers 弹出框</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/progress" class="docs-sidebar-link" exact-active-class="active">
-                  Progress 进度条</RouterLink>
+                  Progress 进度条</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/scrollspy" class="docs-sidebar-link" exact-active-class="active">
-                  Scrollspy 滚动监听</RouterLink>
+                  Scrollspy 滚动监听</RouterLink
+                >
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/spinners" class="docs-sidebar-link" exact-active-class="active">
-                  Spinners 加载指示器</RouterLink>
+                  Spinners 加载指示器</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/tables" class="docs-sidebar-link" exact-active-class="active">Tables 表格
+                <RouterLink to="/docs/components/tables" class="docs-sidebar-link" exact-active-class="active"
+                  >Tables 表格
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/toasts" class="docs-sidebar-link" exact-active-class="active">Toasts
-                  轻提示
+                <RouterLink to="/docs/components/toasts" class="docs-sidebar-link" exact-active-class="active"
+                  >Toasts 轻提示
                 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/docs/components/tooltips" class="docs-sidebar-link" exact-active-class="active">
-                  Tooltips 文字提示</RouterLink>
+                  Tooltips 文字提示</RouterLink
+                >
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/tree" class="docs-sidebar-link" exact-active-class="active">Tree 树形结构
+                <RouterLink to="/docs/components/tree" class="docs-sidebar-link" exact-active-class="active"
+                  >Tree 树形结构
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/components/tree-table" class="docs-sidebar-link" exact-active-class="active">Tree
-                  table 树形表格
+                <RouterLink to="/docs/components/tree-table" class="docs-sidebar-link" exact-active-class="active"
+                  >Tree table 树形表格
                 </RouterLink>
               </li>
             </ul>
@@ -278,7 +325,8 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/borders" class="docs-sidebar-link" exact-active-class="active">Borders 边框
+                <RouterLink to="/docs/utils/borders" class="docs-sidebar-link" exact-active-class="active"
+                  >Borders 边框
                 </RouterLink>
               </li>
               <li class="py-1">
@@ -292,20 +340,23 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/display" class="docs-sidebar-link" exact-active-class="active">Display 显示属性
+                <RouterLink to="/docs/utils/display" class="docs-sidebar-link" exact-active-class="active"
+                  >Display 显示属性
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active">Flex 弹性布局
+                <RouterLink to="/docs/utils/flex" class="docs-sidebar-link" exact-active-class="active"
+                  >Flex 弹性布局
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/float" class="docs-sidebar-link" exact-active-class="active">Float 浮动
+                <RouterLink to="/docs/utils/float" class="docs-sidebar-link" exact-active-class="active"
+                  >Float 浮动
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active">Focus ring
-                  焦点环
+                <RouterLink to="/docs/utils/focus-ring" class="docs-sidebar-link" exact-active-class="active"
+                  >Focus ring 焦点环
                 </RouterLink>
               </li>
               <li class="py-1">
@@ -324,35 +375,43 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/opacity" class="docs-sidebar-link" exact-active-class="active">Opacity 透明度
+                <RouterLink to="/docs/utils/opacity" class="docs-sidebar-link" exact-active-class="active"
+                  >Opacity 透明度
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/overflow" class="docs-sidebar-link" exact-active-class="active">Overflow 溢出
+                <RouterLink to="/docs/utils/overflow" class="docs-sidebar-link" exact-active-class="active"
+                  >Overflow 溢出
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/position" class="docs-sidebar-link" exact-active-class="active">Position 位置
+                <RouterLink to="/docs/utils/position" class="docs-sidebar-link" exact-active-class="active"
+                  >Position 位置
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/ratio" class="docs-sidebar-link" exact-active-class="active">Ratio 比例
+                <RouterLink to="/docs/utils/ratio" class="docs-sidebar-link" exact-active-class="active"
+                  >Ratio 比例
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active">Shadows 阴影
+                <RouterLink to="/docs/utils/shadows" class="docs-sidebar-link" exact-active-class="active"
+                  >Shadows 阴影
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/sizing" class="docs-sidebar-link" exact-active-class="active">Sizing 尺寸规格
+                <RouterLink to="/docs/utils/sizing" class="docs-sidebar-link" exact-active-class="active"
+                  >Sizing 尺寸规格
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/spacing" class="docs-sidebar-link" exact-active-class="active">Spacing 间距
+                <RouterLink to="/docs/utils/spacing" class="docs-sidebar-link" exact-active-class="active"
+                  >Spacing 间距
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/stacks" class="docs-sidebar-link" exact-active-class="active">Stacks 堆叠
+                <RouterLink to="/docs/utils/stacks" class="docs-sidebar-link" exact-active-class="active"
+                  >Stacks 堆叠
                 </RouterLink>
               </li>
               <li class="py-1">
@@ -361,7 +420,8 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active">Text 文本
+                <RouterLink to="/docs/utils/text" class="docs-sidebar-link" exact-active-class="active"
+                  >Text 文本
                 </RouterLink>
               </li>
               <li class="py-1">
@@ -375,8 +435,8 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/visibility" class="docs-sidebar-link" exact-active-class="active">Visibility
-                  可见性
+                <RouterLink to="/docs/utils/visibility" class="docs-sidebar-link" exact-active-class="active"
+                  >Visibility 可见性
                 </RouterLink>
               </li>
               <li class="py-1">
@@ -385,7 +445,8 @@
                 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/docs/utils/z-index" class="docs-sidebar-link" exact-active-class="active">Z-index 层级
+                <RouterLink to="/docs/utils/z-index" class="docs-sidebar-link" exact-active-class="active"
+                  >Z-index 层级
                 </RouterLink>
               </li>
             </ul>
@@ -401,7 +462,6 @@
 
 <script setup lang="js">
 import { ref, onMounted, onUnmounted } from 'vue';
-
 
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
@@ -425,10 +485,9 @@ onMounted(() => {
 
   // 添加监听
   window.addEventListener('resize', handleViewportChange);
-
 });
 
 onUnmounted(() => {
   window.removeEventListener('resize', handleViewportChange);
-})
+});
 </script>

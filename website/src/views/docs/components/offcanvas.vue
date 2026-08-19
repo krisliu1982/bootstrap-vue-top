@@ -112,8 +112,7 @@
     </h2>
     <p>
       可以通过 <code>offcanvas-class</code> 设置侧边栏的位置, 一共有四个方向的设置
-      <code>start|end|top|bottom</code>。可以通过 <code>offcanvas-style</code> 设置 CSS
-      变量来改变高度和宽度。
+      <code>start|end|top|bottom</code>。可以通过 <code>offcanvas-style</code> 设置 CSS 变量来改变高度和宽度。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">

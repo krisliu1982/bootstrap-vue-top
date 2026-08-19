@@ -135,7 +135,9 @@
     <h2 id="pagination-count">
       调整页码数<a class="anchor-link" aria-label="Link to this section: 调整页码数" href="#pagination-count"> </a>
     </h2>
-    <p>可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数，默认是 <code>5</code>。</p>
+    <p>
+      可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数，默认是 <code>5</code>。
+    </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-pagination
@@ -165,86 +167,86 @@
       API<a class="anchor-link" aria-label="Link to this section: API" href="#pagination-api"> </a>
     </h2>
     <div class="table-responsive-lg">
-    <table class="table text-nowrap">
-      <caption class="caption-top">
-        属性列表
-      </caption>
-      <thead>
-        <tr>
-          <th>属性</th>
-          <th>说明</th>
-          <th>类型</th>
-          <th>默认值</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>mode</td>
-          <td>模式</td>
-          <td>String (simple|base|full)</td>
-          <td>base</td>
-        </tr>
-        <tr>
-          <td>total</td>
-          <td>总记录数</td>
-          <td>Number</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td>current-page</td>
-          <td>当前页数</td>
-          <td>Number</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>page-size</td>
-          <td>每页记录数</td>
-          <td>Number (10|20|50|200)</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>pager-count</td>
-          <td>设置最大页码按钮数</td>
-          <td>Number (5|7|9|11|13|15|17|19|21)</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>position</td>
-          <td>横向位置</td>
-          <td>String (start|center|end)</td>
-          <td>start</td>
-        </tr>
-        <tr>
-          <td>size</td>
-          <td>大小</td>
-          <td>String (sm|md|lg)</td>
-          <td>md</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="table-responsive-lg">
-    <table class="table text-nowrap">
-      <caption class="caption-top">
-        事件列表
-      </caption>
-      <thead>
-        <tr>
-          <th>事件名</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>current-change</td>
-          <td>当前页变化后触发。</td>
-        </tr>
-        <tr>
-          <td>size-change</td>
-          <td>每页记录数后触发。</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table text-nowrap">
+        <caption class="caption-top">
+          属性列表
+        </caption>
+        <thead>
+          <tr>
+            <th>属性</th>
+            <th>说明</th>
+            <th>类型</th>
+            <th>默认值</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>mode</td>
+            <td>模式</td>
+            <td>String (simple|base|full)</td>
+            <td>base</td>
+          </tr>
+          <tr>
+            <td>total</td>
+            <td>总记录数</td>
+            <td>Number</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>current-page</td>
+            <td>当前页数</td>
+            <td>Number</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>page-size</td>
+            <td>每页记录数</td>
+            <td>Number (10|20|50|200)</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>pager-count</td>
+            <td>设置最大页码按钮数</td>
+            <td>Number (5|7|9|11|13|15|17|19|21)</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>position</td>
+            <td>横向位置</td>
+            <td>String (start|center|end)</td>
+            <td>start</td>
+          </tr>
+          <tr>
+            <td>size</td>
+            <td>大小</td>
+            <td>String (sm|md|lg)</td>
+            <td>md</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-responsive-lg">
+      <table class="table text-nowrap">
+        <caption class="caption-top">
+          事件列表
+        </caption>
+        <thead>
+          <tr>
+            <th>事件名</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>current-change</td>
+            <td>当前页变化后触发。</td>
+          </tr>
+          <tr>
+            <td>size-change</td>
+            <td>每页记录数后触发。</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>

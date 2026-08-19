@@ -13,10 +13,10 @@ app.use(router);
 app.use(BootstrapVue);
 app.component('CodeHighlight', CodeHighlight);
 app.directive('docstoc', {
-    mounted: (el) => {
-      const tocEl = document.getElementById('docs-toc');
-      tocEl.innerHTML = el.innerHTML;
-      tocEl.scrollTo(0, 0);
-    }
-})
+  mounted: (el) => {
+    const tocEl = document.getElementById('docs-toc');
+    tocEl.innerHTML = el.innerHTML;
+    tocEl.scrollTo(0, 0);
+  }
+});
 app.mount('#app');
