@@ -155,6 +155,7 @@ ul.docs-content-list>li {
   border-radius: var(--bs-border-radius);
   padding: 1rem;
   margin-bottom: 0.5rem;
+  overflow-x: auto;
 }
 
 .docs-example-code {

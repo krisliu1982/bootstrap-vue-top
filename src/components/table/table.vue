@@ -22,7 +22,7 @@
                   <a
                     href="#"
                     role="button"
-                    class="link-body-emphasis text-decoration-none"
+                    class="link-body-emphasis text-decoration-none text-nowrap"
                     @click.prevent="_sortBy(col)"
                   >
                     {{ col.header }}

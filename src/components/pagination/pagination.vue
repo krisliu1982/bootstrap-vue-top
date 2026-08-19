@@ -107,7 +107,7 @@ const props = defineProps({
   },
   pagerCount: {
     type: Number,
-    default: 7,
+    default: 5,
     validator(value) {
       return [5, 7, 9, 11, 13, 15, 17, 19, 21].includes(value);
     }

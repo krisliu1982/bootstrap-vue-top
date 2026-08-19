@@ -97,7 +97,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <span class="badge text-bg-primary">Primary</span>
           <span class="badge text-bg-secondary">Secondary</span>
           <span class="badge text-bg-success">Success</span>
@@ -124,7 +124,7 @@
     <p>使用 <code>.rounded-pill</code> 实用类可以使徽章更加圆润，具有更大的 <code>border-radius</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <span class="badge rounded-pill text-bg-primary">Primary</span>
           <span class="badge rounded-pill text-bg-secondary">Secondary</span>
           <span class="badge rounded-pill text-bg-success">Success</span>
@@ -182,7 +182,7 @@ const example4Code = `
 </button>`;
 
 const bgCode = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <span class="badge text-bg-primary">Primary</span>
     <span class="badge text-bg-secondary">Secondary</span>
     <span class="badge text-bg-success">Success</span>
@@ -194,7 +194,7 @@ const bgCode = `
 </div>`;
 
 const pillCode = `
-<div class="hstack gap-3">
+<div class="hstack gap-3 flex-wrap">
     <span class="badge rounded-pill text-bg-primary">Primary</span>
     <span class="badge rounded-pill text-bg-secondary">Secondary</span>
     <span class="badge rounded-pill text-bg-success">Success</span>

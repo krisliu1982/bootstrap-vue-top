@@ -58,7 +58,7 @@
           <bv-table-col header="Address" field="address" />
           <bv-table-col header="Operation">
             <template #body="{ item }">
-              <div class="hstack gap-3">
+              <div class="hstack gap-3 flex-wrap">
                 <button
                   type="button"
                   class="btn btn-link"
@@ -635,7 +635,7 @@ const baseCode = `
     <bv-table-col header="Address" field="address" />
     <bv-table-col header="Operation">
       <template #body="{ item }">
-        <div class="hstack gap-3">
+        <div class="hstack gap-3 flex-wrap">
           <button type="button" class="btn btn-link"
             @click="alertMessage({ type: 'success', message: item.code })">编辑</button>
           <button type="button" class="btn btn-link"
