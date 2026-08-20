@@ -4,23 +4,23 @@
       <div class="d-flex w-100 h-100 justify-content-center align-items-center user-select-none">
         <img :src="data[index]" class="mw-100 mh-100" />
       </div>
-      <div class="position-absolute z-1" style="top: 2rem; right: 2rem">
-        <button type="button" class="btn btn-dark btn-lg" style="--bs-btn-border-radius: 50%" @click="visible = false">
-          <bi-x-lg />
+      <div class="position-absolute z-1" style="top: 2rem; right: 2rem;">
+        <button type="button" class="btn btn-image-preview" @click="visible = false">
+          <bi-x />
         </button>
       </div>
       <template v-if="data.length > 1">
-        <div class="position-absolute z-1 top-50 translate-middle-y" style="left: 2rem">
-          <button type="button" class="btn btn-dark btn-lg" style="--bs-btn-border-radius: 50%" @click="pre">
+        <div class="position-absolute z-1 top-50 translate-middle-y" style="left: 2rem;">
+          <button type="button" class="btn btn-image-preview" @click="pre">
             <bi-chevron-left />
           </button>
         </div>
-        <div class="position-absolute z-1 top-50 translate-middle-y" style="right: 2rem">
-          <button type="button" class="btn btn-dark btn-lg" style="--bs-btn-border-radius: 50%" @click="next">
+        <div class="position-absolute z-1 top-50 translate-middle-y" style="right: 2rem;">
+          <button type="button" class="btn btn-image-preview" style="--bs-btn-border-radius: 50%" @click="next">
             <bi-chevron-right />
           </button>
         </div>
-        <div class="position-absolute z-1 start-50 translate-middle-x" style="bottom: 2rem">
+        <div class="position-absolute z-1 start-50 translate-middle-x" style="bottom: 2rem;">
           <span class="badge text-bg-secondary fs-6">{{ index + 1 }} / {{ data.length }}</span>
         </div>
       </template>

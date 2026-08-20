@@ -5,7 +5,22 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%; 
   overflow: hidden;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-image-preview {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #{$white};
+  --bs-btn-padding-y:               6px;
+  --bs-btn-padding-x:               6px;
+  --bs-btn-font-size:               2rem;
+  --bs-btn-line-height:             1;
+  --bs-btn-bg: #{$gray-600};
+  --bs-btn-hover-color: #{$white};
+  --bs-btn-hover-bg: #{$gray-700};
+  --bs-btn-active-color: #{$white};
+  --bs-btn-active-bg: #{$gray-700};
+  --bs-btn-border-radius: 50%;
 }
