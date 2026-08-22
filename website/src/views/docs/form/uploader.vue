@@ -140,7 +140,7 @@ function handleImageOneRemove() {
 }
 
 function handleImageOnePreview() {
-  imagePreview(['https://picsum.photos/400/400?random=1']);
+  imagePreview(['https://picsum.photos/800/600?random=1']);
 }
 
 const imageUrls = ref([]);
@@ -163,7 +163,7 @@ function handleImageManyRemove(index) {
 function handleImageManyPreview(index) {
   const imges = [];
   for (let i = 0; i < imageUrls.value.length; i++) {
-    imges.push(`https://picsum.photos/400/400?random=${i}`);
+    imges.push(`https://picsum.photos/800/600?random=${i}`);
   }
   imagePreview(imges, index);
 }
@@ -242,7 +242,7 @@ function handleImageOneRemove() {
 
 function handleImageOnePreview() {
     imagePreview([
-        'https://picsum.photos/400/400?random=1'//原图地址
+        'https://picsum.photos/800/600?random=1'//原图地址
     ])
 }
 <\/script>`;
@@ -287,7 +287,7 @@ function handleImageManyRemove(index) {
 function handleImageManyPreview(index) {
     const imges = [];
     for (let i = 0; i < imageUrls.value.length; i++) {
-        imges.push('https://picsum.photos/400/400?random=' + i)
+        imges.push('https://picsum.photos/800/600?random=' + i)
     }
     imagePreview(imges, index)
 }

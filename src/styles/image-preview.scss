@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.btn-image-preview {
+.image-preview-btn {
   --bs-btn-font-weight: 600;
   --bs-btn-color: #{$white};
   --bs-btn-padding-y:               6px;
@@ -18,9 +18,23 @@
   --bs-btn-font-size:               2rem;
   --bs-btn-line-height:             1;
   --bs-btn-bg: #{$gray-600};
+  --bs-btn-border-color: #{$gray-600};
   --bs-btn-hover-color: #{$white};
   --bs-btn-hover-bg: #{$gray-700};
+  --bs-btn-hover-border-color: #{shade-color($gray-700, 10%)};
   --bs-btn-active-color: #{$white};
-  --bs-btn-active-bg: #{$gray-700};
+  --bs-btn-active-bg: #{shade-color($gray-700, 20%)};
+  --bs-btn-active-border-color: #{shade-color($gray-700, 20%)};
   --bs-btn-border-radius: 50%;
+}
+
+
+.image-preview-fade-enter-active,
+.image-preview-fade-leave-active {
+  transition: opacity 0.6s ease;
+}
+
+.image-preview-fade-enter-from,
+.image-preview-fade-leave-to {
+  opacity: 0;
 }
