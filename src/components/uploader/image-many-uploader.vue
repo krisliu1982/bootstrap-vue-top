@@ -14,33 +14,22 @@
       <a href="#" class="d-block w-100 h-100" draggable="false" @click.prevent="handlePreview(index)"
         ><img draggable="false" class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl"
       /></a>
-      <div v-if="sortable" class="position-absolute top-0 start-0 end-0 z-1 d-flex justify-content-between p-2">
-        <button
+      <div class="position-absolute top-0 start-0 end-0 z-1 d-flex p-2">
+        <button v-if="sortable"
           type="button"
           :disabled="disabled"
-          class="btn btn-secondary btn-sm"
-          style="--bs-btn-border-radius: 50%; cursor: move"
-          @mousedown="mousedown"
-          @mouseup="mouseup"
+          class="btn btn-secondary d-none d-lg-block"
+          style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius: 50%; cursor: move;"
+          @mousedown="handleStart"
+          @mouseup="handleEnd"
         >
           <bi-arrows-move />
         </button>
         <button
           type="button"
           :disabled="disabled"
-          class="btn btn-danger btn-sm"
-          style="--bs-btn-border-radius: 50%"
-          @click.stop="handleRemove(index)"
-        >
-          <bi-trash />
-        </button>
-      </div>
-      <div v-else class="position-absolute top-0 start-0 end-0 z-1 d-flex justify-content-end p-2">
-        <button
-          type="button"
-          :disabled="disabled"
-          class="btn btn-danger btn-sm"
-          style="--bs-btn-border-radius: 50%"
+          class="btn btn-secondary ms-auto"
+          style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius: 50%;"
           @click.stop="handleRemove(index)"
         >
           <bi-trash />
@@ -122,7 +111,6 @@ function dragstart(imgUrl, event) {
 
   let elem = event.currentTarget.querySelector('img');
   elem.classList.add('border-primary');
-  elem.classList.add('border-3');
 
   event.dataTransfer.effectAllowd = 'move';
 }
@@ -148,7 +136,6 @@ function dragend(event) {
 
   let elem = event.currentTarget.querySelector('img');
   elem.classList.remove('border-primary');
-  elem.classList.remove('border-3');
 
   dragId = null; //清除dragId
   event.currentTarget.setAttribute('draggable', false);
@@ -159,16 +146,16 @@ function dragover(event) {
   event.dataTransfer.dropEffect = 'move';
 }
 
-function mousedown(event) {
-  if (event.button === 0) {
-    var elem = event.currentTarget;
-    elem.parentNode.parentNode.setAttribute('draggable', true);
-  }
+function handleStart(event) {
+  if (event.button !== 0) return;
+  const elem = event.currentTarget;
+  elem.parentNode.parentNode.setAttribute('draggable', true);
 }
-function mouseup(event) {
-  if (event.button === 0) {
-    var elem = event.currentTarget;
-    elem.parentNode.parentNode.setAttribute('draggable', false);
-  }
+
+function handleEnd(event) {
+  if (event.button !== 0) return;
+  
+  const elem = event.currentTarget;
+  elem.parentNode.parentNode.setAttribute('draggable', false);
 }
 </script>

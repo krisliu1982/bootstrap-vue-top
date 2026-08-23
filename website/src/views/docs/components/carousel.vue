@@ -102,16 +102,16 @@
 <script setup>
 const slides = [
   {
-    image: '/images/docs-slide1-800x400.jpg',
+    image: '/images/docs-slide1-800x800.jpg',
     title: '风景图片1',
     description: '这是第1张风景图片的描述'
   },
   {
-    image: '/images/docs-slide2-800x400.jpg',
+    image: '/images/docs-slide2-800x800.jpg',
     description: '这是第2张风景图片的描述'
   },
   {
-    image: '/images/docs-slide3-800x400.jpg',
+    image: '/images/docs-slide3-800x800.jpg',
     title: '风景图片3'
   }
 ];
@@ -124,16 +124,16 @@ const baseCode = `
 <script setup>
 const slides = [
   {
-    image: '/images/docs-slide1-800x400.jpg',
+    image: '/images/docs-slide1-800x800.jpg',
     title: '风景图片1',
     description: '这是第1张风景图片的描述'
   },
   {
-    image: '/images/docs-slide2-800x400.jpg',
+    image: '/images/docs-slide2-800x800.jpg',
     description: '这是第2张风景图片的描述'
   },
   {
-    image: '/images/docs-slide3-800x400.jpg',
+    image: '/images/docs-slide3-800x800.jpg',
     title: '风景图片3',
   }
 ];

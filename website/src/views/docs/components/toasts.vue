@@ -102,7 +102,7 @@
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue';
+import { toast } from 'bootstrap-vue-top';
 
 function handleClick1() {
   toast({
@@ -209,7 +209,7 @@ const baseCode = `
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue'
+import { toast } from 'bootstrap-vue-top'
 
 function handleClick1() {
   toast({
@@ -242,7 +242,7 @@ const typeCode = `
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue'
+import { toast } from 'bootstrap-vue-top'
 
 function handleClickSuccess() {
   toast({ 
@@ -288,7 +288,7 @@ const positionCode = `
       @click="handleClickBottomLeft">BottomLeft</button>
   </div>
 </template><script setup>
-import { toast } from 'bootstrap-vue'
+import { toast } from 'bootstrap-vue-top'
 
 function handleClickTopRight() {
   toast({ 
@@ -333,7 +333,7 @@ const contentCode = `
 </template>
 
 <script setup>
-import { toast } from 'bootstrap-vue'
+import { toast } from 'bootstrap-vue-top'
 
 function handleClickHtml() {
   toast({ 

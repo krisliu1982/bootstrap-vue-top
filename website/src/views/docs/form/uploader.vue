@@ -87,7 +87,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { imagePreview } from 'bootstrap-vue';
+import { imagePreview } from 'bootstrap-vue-top';
 
 const fileList = ref([]);
 function handleFileChange(fileEl) {
@@ -126,7 +126,7 @@ function handleImageOneRemove() {
 }
 
 function handleImageOnePreview() {
-  imagePreview(['/images/docs-slide1-800x400.jpg']);
+  imagePreview(['/images/docs-slide1-800x800.jpg']);
 }
 
 const imageUrls = ref([]);
@@ -148,9 +148,9 @@ function handleImageManyRemove(index) {
 
 function handleImageManyPreview(index) {
   const imges = [
-    '/images/docs-slide1-800x400.jpg',
-    '/images/docs-slide2-800x400.jpg',
-    '/images/docs-slide3-800x400.jpg'];
+    '/images/docs-slide1-800x800.jpg',
+    '/images/docs-slide2-800x800.jpg',
+    '/images/docs-slide3-800x800.jpg'];
   //imagePreview(imges, index);
   imagePreview(imges, 0);
 }
@@ -173,7 +173,7 @@ const fileCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue'
+import { imagePreview } from 'bootstrap-vue-top'
 
 const fileList = ref([]);
 function handleFileChange(fileEl) {
@@ -211,7 +211,7 @@ const imageOneCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue'
+import { imagePreview } from 'bootstrap-vue-top'
 
 const imageUrl = ref(null);
 function handleImageOneChange(fileEl) {
@@ -229,7 +229,7 @@ function handleImageOneRemove() {
 
 function handleImageOnePreview() {
     imagePreview([
-        '/images/docs-slide1-800x400.jpg'//原图地址
+        '/images/docs-slide1-800x800.jpg'//原图地址
     ])
 }
 <\/script>`;
@@ -252,7 +252,7 @@ const imageManyCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { imagePreview } from 'bootstrap-vue'
+import { imagePreview } from 'bootstrap-vue-top'
 
 const imageUrls = ref([]);
 function handleImageManyChange(fileEl) {
@@ -273,9 +273,9 @@ function handleImageManyRemove(index) {
 
 function handleImageManyPreview(index) {
   const imges = [
-    '/images/docs-slide1-800x400.jpg',
-    '/images/docs-slide2-800x400.jpg',
-    '/images/docs-slide3-800x400.jpg'];
+    '/images/docs-slide1-800x800.jpg',
+    '/images/docs-slide2-800x800.jpg',
+    '/images/docs-slide3-800x800.jpg'];
   //imagePreview(imges, index);
   imagePreview(imges, 0);
 }

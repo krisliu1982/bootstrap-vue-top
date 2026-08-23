@@ -61,7 +61,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <select class="form-select" multiple aria-label="Multiple select example">
-          <option value="0" selected>-</option>
+          <option value="0" selected>--</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>

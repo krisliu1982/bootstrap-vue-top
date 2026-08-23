@@ -65,11 +65,6 @@ import { ref, watch } from 'vue';
 
 const navbarRef = ref(null);
 
-//字体大小修改
-const rootFontSize = parseFloat(
-  getComputedStyle(document.documentElement).fontSize
-);
-
 function getFontSize() {
   const storedFontSize = localStorage.getItem('font-size');
   if (storedFontSize === null) {
@@ -83,11 +78,11 @@ watch(
   fontSize,
   (newVal) => {
     if (newVal === 'sm') {
-      document.documentElement.style.setProperty('font-size', `${rootFontSize - 2}px`);
+      document.documentElement.style.setProperty('font-size', '14px');
     } else if (newVal === 'md') {
-      document.documentElement.style.setProperty('font-size', `${rootFontSize}px`);
+      document.documentElement.style.setProperty('font-size', '16px');
     } else if (newVal === 'lg') {
-      document.documentElement.style.setProperty('font-size', `${rootFontSize + 2}px`);
+      document.documentElement.style.setProperty('font-size', '18px');
     }
 
     localStorage.setItem('font-size', newVal);

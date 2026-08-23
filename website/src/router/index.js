@@ -161,6 +161,10 @@ var routes = [
         path: '/docs/components/dropdowns',
         component: () => import('@/views/docs/components/dropdowns.vue')
       },
+            {
+        path: '/docs/components/image-preview',
+        component: () => import('@/views/docs/components/image-preview.vue')
+      },
       {
         path: '/docs/components/list-group',
         component: () => import('@/views/docs/components/list-group.vue')

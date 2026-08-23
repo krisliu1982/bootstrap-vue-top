@@ -225,6 +225,11 @@
                 >
               </li>
               <li class="py-1">
+                <RouterLink to="/docs/components/image-preview" class="docs-sidebar-link" exact-active-class="active">
+                  ImagePreview 图片预览</RouterLink
+                >
+              </li>
+              <li class="py-1">
                 <RouterLink to="/docs/components/list-group" class="docs-sidebar-link" exact-active-class="active"
                   >List group 列表</RouterLink
                 >

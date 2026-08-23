@@ -7,23 +7,5 @@
   width: 100vw;
   height: 100%; 
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.image-preview-btn {
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: #{$white};
-  --bs-btn-padding-y:               .5rem;
-  --bs-btn-padding-x:               .5rem;
-  --bs-btn-font-size:               1.5rem;
-  --bs-btn-line-height:             1;
-  --bs-btn-bg: #{$gray-600};
-  --bs-btn-border-color: #{$gray-600};
-  --bs-btn-hover-color: #{$white};
-  --bs-btn-hover-bg: #{$gray-700};
-  --bs-btn-hover-border-color: #{shade-color($gray-700, 10%)};
-  --bs-btn-active-color: #{$white};
-  --bs-btn-active-bg: #{shade-color($gray-700, 20%)};
-  --bs-btn-active-border-color: #{shade-color($gray-700, 20%)};
-  --bs-btn-border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
 }

@@ -7,33 +7,31 @@
           @touchstart="startDragTouch" draggable="false" />
       </div>
       <div v-if="isLoading" class="position-absolute top-50 translate-middle-y start-50 translate-middle-x">
-        <div class="spinner-grow text-light" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
       <div class="position-absolute" style="top: 2rem; right: 2rem;">
-        <button type="button" class="btn image-preview-btn" @click="visible = false">
-          <bi-x />
+        <button type="button" class="btn btn-secondary btn-lg" style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius:50%;" aria-label="Close" @click="visible = false">
+          <bi-x-lg />
         </button>
       </div>
       <template v-if="data.length > 1">
-        <div class="position-absolute top-50 translate-middle-y" style="left: 2rem;">
-          <button type="button" class="btn image-preview-btn" @click="pre">
-            <bi-chevron-left />
-          </button>
-        </div>
-        <div class="position-absolute top-50 translate-middle-y" style="right: 2rem;">
-          <button type="button" class="btn image-preview-btn" @click="next">
-            <bi-chevron-right />
-          </button>
-        </div>
         <div class="position-absolute start-50 translate-middle-x" style="bottom: 5rem;">
-          <span class="text-white">{{ index + 1 }} / {{ data.length }}</span>
+          <span class="badge text-bg-light">{{ index + 1 }} / {{ data.length }}</span>
         </div>
       </template>
 
       <div class="position-absolute start-50 translate-middle-x" style="bottom: 2rem;">
           <div class="btn-group" role="group" aria-label="First group">
+            <template v-if="data.length > 1">
+            <button type="button" class="btn btn-secondary" @click="pre">
+              <bi-chevron-left />
+            </button>
+            <button type="button" class="btn btn-secondary" @click="next">
+              <bi-chevron-right />
+            </button>
+            </template>
             <button type="button" class="btn btn-secondary" @click="scale = Math.min(2, scale + 0.2)">
               <bi-zoom-in/>
             </button>
@@ -147,11 +145,8 @@ function goto(_index) {
     isLoading.value = true
   }
 
-  preload(_index);
-
   reset();
 }
-
 
 const handleLoad = (_index) => {
   isLoading.value = false
@@ -164,32 +159,6 @@ const handleError = (event) => {
   event.target.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23f5f5f5%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3E图片加载失败%3C/text%3E%3C/svg%3E'
 };
 
-function preload(_index) {
-  if (cache.size === props.data.length) return;
-
-  let pre = null;
-  if (_index < props.data.length && _index > 0) {
-    pre = _index - 1;
-  } else if (_index === 0) {
-    pre = props.data.length - 1;
-  }
-
-  let next = null;
-  if (_index < props.data.length - 1) {
-    next = _index + 1;
-  } else if (_index === props.data.length - 1) {
-    next = 0;
-  }
-
-  [pre, next].forEach((i) => {
-    if (!cache.has(i)) {
-      const img = new Image()
-      img.src = props.data[i]
-
-      cache.set(i, props.data[i])
-    }
-  })
-}
 
 // 图片状态
 const offsetX = ref(0)
