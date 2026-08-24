@@ -49,11 +49,7 @@
       变体按钮<a class="anchor-link" aria-label="Link to this section: 变体按钮" href="#buttons-variants"> </a>
     </h2>
     <p>
-      Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。其中
-      <code>.btn-link</code> 按钮 Bootstrap 样式被更改，<code>padding</code> 被置为
-      <code>0</code>，让其看起来更像链接。<strong
-        >因为使用 <code>&lt;a&gt;</code> 标签的点击事件处理和禁用不那么友好。</strong
-      >
+      Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">

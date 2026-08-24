@@ -61,14 +61,14 @@
               <div class="hstack gap-3 flex-wrap">
                 <button
                   type="button"
-                  class="btn btn-link"
+                  class="btn btn-link p-0 text-decoration-none"
                   @click="alertMessage({ type: 'success', message: item.code })"
                 >
                   编辑
                 </button>
                 <button
                   type="button"
-                  class="btn btn-link"
+                  class="btn btn-link p-0 text-decoration-none"
                   @click.prevent="alertMessage({ type: 'danger', message: item.code })"
                 >
                   删除
@@ -636,9 +636,9 @@ const baseCode = `
     <bv-table-col header="Operation">
       <template #body="{ item }">
         <div class="hstack gap-3 flex-wrap">
-          <button type="button" class="btn btn-link"
+          <button type="button" class="btn btn-link p-0 text-decoration-none"
             @click="alertMessage({ type: 'success', message: item.code })">编辑</button>
-          <button type="button" class="btn btn-link"
+          <button type="button" class="btn btn-link p-0 text-decoration-none"
             @click="alertMessage({ type: 'danger', message: item.code })">删除</button>
         </div>
       </template>

@@ -8,7 +8,6 @@
         tabindex="-1"
         role="dialog"
         aria-modal="true"
-        :aria-hidden="!visible"
       >
         <div class="modal-dialog" :class="dialogClass">
           <div v-if="rendered" ref="contentRef" class="modal-content">
@@ -82,7 +81,8 @@ function open() {
     //焦点陷阱
     if (focusTrapInstance === null) {
       focusTrapInstance = createFocusTrap(modalRef.value, {
-        initialFocus: false
+        initialFocus: false,
+        isolateSubtrees: true
       });
     }
     focusTrapInstance.activate();
@@ -119,11 +119,6 @@ function close() {
   //关闭拖动
   if (props.draggable) {
     offDraggable();
-  }
-
-  //清理模态框焦点
-  if (document.activeElement && modalRef.value.contains(document.activeElement)) {
-    document.activeElement.blur();
   }
 
   //移除监听keydown

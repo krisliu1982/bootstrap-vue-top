@@ -66,13 +66,6 @@ $zindex-alert: 1085;
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 
-// 覆盖 bootstrap btn-link 样式
-.btn-link {
-  --bs-btn-padding-x: 0;
-  --bs-btn-padding-y: 0;
-  text-decoration: none;
-}
-
 .bi {
   width: 1em;
   height: 1em;
