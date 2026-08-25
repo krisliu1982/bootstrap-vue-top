@@ -48,9 +48,7 @@
     <h2 id="buttons-variants">
       变体按钮<a class="anchor-link" aria-label="Link to this section: 变体按钮" href="#buttons-variants"> </a>
     </h2>
-    <p>
-      Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。
-    </p>
+    <p>Bootstrap 提供了多种按钮样式，每种样式都有其特定的语义用途，同时还附带了一些额外功能以提供更多控制。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">

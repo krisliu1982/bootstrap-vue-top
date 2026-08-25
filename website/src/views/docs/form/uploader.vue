@@ -46,8 +46,14 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <BvImageOneUploader width="160px" height="160px" :img-url="imageUrl" @file-change="handleImageOneChange"
-          @file-remove="handleImageOneRemove" @file-preview="handleImageOnePreview">
+        <BvImageOneUploader
+          width="160px"
+          height="160px"
+          :img-url="imageUrl"
+          @file-change="handleImageOneChange"
+          @file-remove="handleImageOneRemove"
+          @file-preview="handleImageOnePreview"
+        >
           <template #tip>
             <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
           </template>
@@ -64,7 +70,9 @@
       <code>img-urls</code> 为图片地址数组，其中地址项必须唯一。
     </p>
     <p>
-      可以通过 <code>sortable</code> 启动图片排序功能。<span class="text-bg-warning">目前排序功能在<strong>触摸设备</strong>上不支持。</span>
+      可以通过 <code>sortable</code> 启动图片排序功能。<span class="text-bg-warning"
+        >目前排序功能在<strong>触摸设备</strong>上不支持。</span
+      >
     </p>
     <p>
       监听 <code>file-change</code> 事件处理图片验证，压缩和上传。监听 <code>file-remove</code> 事件删除图片。监听
@@ -72,9 +80,15 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <BvImageManyUploader width="160px" height="160px" :img-urls="imageUrls" sortable
-          @file-change="handleImageManyChange" @file-remove="handleImageManyRemove"
-          @file-preview="handleImageManyPreview">
+        <BvImageManyUploader
+          width="160px"
+          height="160px"
+          :img-urls="imageUrls"
+          sortable
+          @file-change="handleImageManyChange"
+          @file-remove="handleImageManyRemove"
+          @file-preview="handleImageManyPreview"
+        >
           <template #tip>
             <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
           </template>
@@ -150,7 +164,8 @@ function handleImageManyPreview(index) {
   const imges = [
     '/images/docs-slide1-800x800.jpg',
     '/images/docs-slide2-800x800.jpg',
-    '/images/docs-slide3-800x800.jpg'];
+    '/images/docs-slide3-800x800.jpg'
+  ];
   //imagePreview(imges, index);
   imagePreview(imges, 0);
 }

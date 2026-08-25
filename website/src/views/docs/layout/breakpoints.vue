@@ -2,7 +2,7 @@
   <div class="docs-toc-nav">
     <nav v-docstoc id="docs-nav-breakpoints">
       <a href="#breakpoints-core">核心概念</a>
-      <a href="#breakpoints-available">可用的断点</a>
+      <a href="#breakpoints-available">可用断点</a>
     </nav>
   </div>
 
@@ -39,7 +39,7 @@
     </ul>
 
     <h2 id="breakpoints-available">
-      可用的断点<a class="anchor-link" aria-label="Link to this section: 可用的断点" href="#breakpoints-available"> </a>
+      可用断点<a class="anchor-link" aria-label="Link to this section: 可用断点" href="#breakpoints-available"> </a>
     </h2>
     <p>
       Bootstrap 包含了六个默认的断点设置，有时也被称为“网格层级”，用于实现响应式设计。如果您使用的是 Bootstrap 的源 Sass

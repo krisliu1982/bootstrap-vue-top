@@ -13,7 +13,8 @@
       示例<a class="anchor-link" aria-label="Link to this section: 文件上传" href="#image-preview-example"> </a>
     </h2>
     <p>
-      通过提供 <code>imagePreview</code> 方法。第一个参数为图片地址数组。第二个参数初始化第一张预览图片的位置，默认初始位置为 0。
+      通过提供
+      <code>imagePreview</code> 方法。第一个参数为图片地址数组。第二个参数初始化第一张预览图片的位置，默认初始位置为 0。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -33,7 +34,8 @@ function handleImageManyPreview() {
   const imges = [
     '/images/docs-slide1-800x800.jpg',
     '/images/docs-slide2-800x800.jpg',
-    '/images/docs-slide3-800x800.jpg'];
+    '/images/docs-slide3-800x800.jpg'
+  ];
   imagePreview(imges, 1);
 }
 
