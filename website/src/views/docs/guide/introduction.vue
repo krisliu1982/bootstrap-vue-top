@@ -1,20 +1,25 @@
 <template>
   <div class="docs-toc-nav">
     <nav v-docstoc id="docs-nav-introduction">
-      <a href="#breakpoints-core">核心概念</a>
-      <a href="#breakpoints-available">可用的断点</a>
+      <a href="#introduction-features">特点</a>
+      <a href="#introduction-browser">浏览器支持</a>
+      <a href="#introduction-license">开源协议</a>
+      <a href="#introduction-support">商业支持</a>
     </nav>
   </div>
 
   <div v-scrollspy data-bs-target="#docs-nav-introduction" class="docs-content">
     <h1>Introduction 介绍</h1>
-    <p class="fs-4 fw-light">
-      断点决定了在 Bootstrap 中响应式布局在不同设备或视口尺寸下的表现方式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank">Bootstrap Breakpoints</a>
-    </p>
+    <ul class="docs-content-list">
+      <li><p>这是一个融合了 Bootstrap 5.3.x 和 Vue 3.x 的现代化前端框架解决方案，充分发挥了两者的优势：Bootstrap 5 提供强大的 UI 组件库和响应式布局系统，Vue 3 则带来了高效的响应式数据驱动和组合式 API。
+</p></li>
+<li><p>严格遵循“样式归 Bootstrap，行为归 Vue”的架构范式。完全继承 Bootstrap 的原子化工具类（间距、排版、颜色、Flex/Grid 栅格），开发者无需学习新的 CSS类名，直接使用 d-flex、text-primary、mb-3 等原生类名控制外观。
+</p></li>
+<li><p>所有 Bootstrap 官方文档中关于样式类的说明（如表格条纹、卡片分组、网格偏移）在 Vue项目中直接适用，降低了团队的学习与迁移成本。</p></li>
+    </ul>
 
-    <h2 id="breakpoints-core">
-      核心概念<a class="anchor-link" aria-label="Link to this section: 核心概念" href="#breakpoints-core"> </a>
+    <h2 id="introduction-features">
+      特点<a class="anchor-link" aria-label="Link to this section: 特点" href="#introduction-features"> </a>
     </h2>
     <ul class="docs-content-list">
       <li>

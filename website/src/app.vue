@@ -4,7 +4,7 @@
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
         <a class="link-body-emphasis text-decoration-none" href="#" @click.prevent="$router.push('/')">
           <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28" /></a>
-        <span class="badge bg-body text-body" style="--bs-badge-font-weight: 500">1.0.4</span>
+        <span class="badge bg-body text-body" style="--bs-badge-font-weight: 500">{{ version }}</span>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
@@ -126,4 +126,8 @@ function handleThemeChange() {
     theme.value = 'light';
   }
 }
+
+import pkg from '../package.json';
+
+const version = pkg.version;
 </script>
