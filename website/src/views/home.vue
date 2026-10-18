@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="container">
       <h1 class="display-3 fw-bold text-center mt-5">BootstrapVueTop</h1>
       <h1 class="display-5 text-center mt-3">基于 Bootstrap 5.3.8 & Vue 3.x 的前端框架</h1>
@@ -7,5 +6,4 @@
         <RouterLink to="/docs" class="icon-link icon-link-hover display-5">查看文档<BiArrowRight /></RouterLink>
       </div>
     </div>
-  </div>
 </template>
