@@ -1,20 +1,15 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
   "description": "bootstrap-vue-top is a frontend framework based on Bootstrap & Vue.",
   "files": [
     "dist",
-    "src",
-    ".browserslistrc",
-    "package.json",
-    "postcss.config.js",
     "README.md",
     "README.zh-CN.md",
-    "LICENSE",
-    "vite.config.js"
+    "LICENSE"
   ],
   "main": "./dist/bootstrap-vue.umd.cjs",
   "module": "./dist/bootstrap-vue.js",
