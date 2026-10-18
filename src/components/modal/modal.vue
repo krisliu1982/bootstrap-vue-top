@@ -19,7 +19,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount } from 'vue';
-import Modal from 'bootstrap/js/dist/modal';
+//import Modal from 'bootstrap/js/dist/modal';
 
 const emit = defineEmits(['modal-shown']);
 
@@ -44,9 +44,9 @@ let modal = null;
 onMounted(() => {
   const modalEl = document.getElementById(id);
   if (modal === null) {
-    modal = new Modal(modalEl, {
+    /*modal = new Modal(modalEl, {
       backdrop: props.backdrop
-    });
+    });*/
 
     modalEl.addEventListener('show.bs.modal', (event) => {
       previousFocus = document.activeElement;

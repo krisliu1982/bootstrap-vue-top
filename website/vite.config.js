@@ -30,8 +30,5 @@ export default defineConfig({
     port: 8888,//端口号
     host: '0.0.0.0',
     open: true,//是否自动打开浏览器
-  },
-  build: {
-    target: 'es2015'
   }
 })

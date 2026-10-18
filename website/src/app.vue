@@ -1,44 +1,49 @@
 <template>
-  <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
+  <nav class="lg:sticky-top bg-subtle-primary bg-gradient">
     <div class="container">
-      <div class="d-flex align-items-center gap-2" style="height: 3rem">
-        <a class="link-body-emphasis text-decoration-none" href="#" @click.prevent="$router.push('/')">
+      <div class="d-flex align-items-center gap-3" style="height: 3rem;">
+        <a href="#" @click.prevent="$router.push('/')">
           <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"
         /></a>
-        <span class="badge bg-body text-body" style="--bs-badge-font-weight: 500">{{ version }}</span>
+        <span class="badge badge-outline theme-inverse">{{ version }}</span>
         <div class="ms-auto">
-          <div class="d-none d-lg-block">
-            <div class="d-flex align-items-center gap-3">
-              <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold"
+          <div class="d-none lg:d-block">
+            <div class="d-flex align-items-center gap-5">
+              <RouterLink to="/docs" class="theme-inverse text-decoration-none" active-class="fw-bold"
                 >文档
               </RouterLink>
-              <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank"
+              <a class="theme-inverse text-decoration-none" href="https://getbootstrap.com/" target="_blank"
                 >Bootstrap</a
               >
-              <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
+              <a class="theme-inverse text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
               <div class="vr"></div>
-              <div class="dropdown">
+              <a class="theme-inverse text-decoration-none" href="https://gitee.com/asdfghjkl012345/bootstrap-vue" target="_blank">Gitee</a>
+              <a class="theme-inverse text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
+              <div class="vr"></div>
+              <div>
                 <a
-                  v-dropdown
-                  class="link-body-emphasis text-decoration-none dropdown-toggle"
+                  v-menu
+                  class="icon-link theme-inverse text-decoration-none"
                   title="文字大小"
                   href="#"
                   role="button"
                   aria-expanded="false"
                 >
-                  <template v-if="fontSize === 'sm'">小型文字</template>
-                  <template v-else-if="fontSize === 'md'">中型文字</template>
-                  <template v-else-if="fontSize === 'lg'">大型文字</template>
+                  <template v-if="fontSize === 'sm'">小型</template>
+                  <template v-else-if="fontSize === 'md'">中型</template>
+                  <template v-else-if="fontSize === 'lg'">大型</template>
+                  <bi-chevron-expand class="small"/>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
-                </ul>
+                <div class="menu">
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'sm'">小型文字</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'md'">中型文字</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'lg'">大型文字</a>
+                </div>
               </div>
+              <div class="vr"></div>
               <a
                 href="#"
-                class="link-body-emphasis text-decoration-none"
+                class="theme-inverse text-decoration-none"
                 title="主题切换"
                 @click.prevent="handleThemeChange"
               >
@@ -47,8 +52,8 @@
               </a>
             </div>
           </div>
-          <div class="d-lg-none">
-            <a href="#" class="link-body-emphasis fs-5" type="button" @click.prevent="navbarRef.toggle()">
+          <div class="lg:d-none">
+            <a href="#" class="theme-inverse fs-lg" type="button" @click.prevent="navbarRef.toggle()">
               <bi-three-dots />
             </a>
           </div>
@@ -57,7 +62,7 @@
     </div>
   </nav>
 
-  <bv-offcanvas
+<!--   <bv-offcanvas
     ref="navbarRef"
     title="BootstrapVue"
     offcanvas-class="offcanvas offcanvas-end"
@@ -72,7 +77,7 @@
         <bi-moon v-else />
       </a>
     </div>
-  </bv-offcanvas>
+  </bv-offcanvas> -->
 
   <router-view />
 </template>

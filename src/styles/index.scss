@@ -1,5 +1,7 @@
 // 覆盖变量
-// $enable-validation-icons: false;
+$enable-validation-icons: false;
+$pagination-padding-y-lg: 0.5rem;
+$modal-footer-margin-between: 1rem;
 
 // 自定义变量
 $zindex-backtop: 990;
@@ -7,77 +9,23 @@ $zindex-image-preview: 1082;
 $zindex-loading-fullscreen: 1083;
 $zindex-alert: 1085;
 
-// scss-docs-start import-stack
-@forward "../node_modules/bootstrap/scss/banner";
-
-// Configuration variables and maps, such as $utilities. Forwarding config makes
-// them configurable from this entrypoint with `@use ... with (...)`. Emits no CSS.
-@forward "../node_modules/bootstrap/scss/config";
-
-@forward "../node_modules/bootstrap/scss/colors";
-
-// Theme color maps ($theme-colors, $theme-bgs, etc.). Forwarding makes them
-// configurable from this entrypoint with `@use ... with (...)`. Emits no CSS.
-@forward "../node_modules/bootstrap/scss/theme";
-
-// Global CSS variables, layer definitions, and configuration
-@forward "../node_modules/bootstrap/scss/root";
-
-// Subdir imports
-@forward "../node_modules/bootstrap/scss/content";
-@forward "../node_modules/bootstrap/scss/layout";
-@forward "../node_modules/bootstrap/scss/forms";
-@forward "../node_modules/bootstrap/scss/buttons";
-
-// Components
-@forward "../node_modules/bootstrap/scss/accordion";
-@forward "../node_modules/bootstrap/scss/alert";
-@forward "../node_modules/bootstrap/scss/avatar";
-@forward "../node_modules/bootstrap/scss/badge";
-@forward "../node_modules/bootstrap/scss/breadcrumb";
-@forward "../node_modules/bootstrap/scss/chip";
-@forward "../node_modules/bootstrap/scss/card";
-@forward "../node_modules/bootstrap/scss/carousel";
-@forward "../node_modules/bootstrap/scss/datepicker";
-@forward "../node_modules/bootstrap/scss/dialog";
-@forward "../node_modules/bootstrap/scss/menu";
-@forward "../node_modules/bootstrap/scss/list-group";
-@forward "../node_modules/bootstrap/scss/nav";
-@forward "../node_modules/bootstrap/scss/nav-overflow";
-@forward "../node_modules/bootstrap/scss/navbar";
-@forward "../node_modules/bootstrap/scss/drawer";
-@forward "../node_modules/bootstrap/scss/pagination";
-@forward "../node_modules/bootstrap/scss/placeholder";
-@forward "../node_modules/bootstrap/scss/popover";
-@forward "../node_modules/bootstrap/scss/progress";
-@forward "../node_modules/bootstrap/scss/spinner";
-@forward "../node_modules/bootstrap/scss/stepper";
-@forward "../node_modules/bootstrap/scss/toasts";
-@forward "../node_modules/bootstrap/scss/tooltip";
-@forward "../node_modules/bootstrap/scss/transitions";
-
-// Helpers
-@forward "../node_modules/bootstrap/scss/helpers";
-
-// Utilities
-@forward "../node_modules/bootstrap/scss/utilities/api";
-// scss-docs-end import-stack
+// Import all of Bootstrap’s CSS
+@use "bootstrap/scss/bootstrap";
 
 
-@use 'modal-2.scss';
+/*@use 'modal-2.scss';
 @use 'alert.scss';
 @use 'loading.scss';
 @use 'backtop.scss';
 @use 'uploader.scss';
-@use 'image-preview.scss';
+@use 'image-preview.scss';*/
 
 .bi {
   width: 1em;
   height: 1em;
-  line-height: 1;
   display: inline-block;
-  vertical-align: -0.125em;
   fill: currentColor;
+  vertical-align: -0.125em;
 }
 
 .fadeIn-enter-active,

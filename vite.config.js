@@ -24,7 +24,6 @@ export default defineConfig({
     },
   },
   build: {
-    target: 'es2015',
     lib: {
       entry: {
         'bootstrap-vue': resolve(import.meta.dirname, 'src/index.js')

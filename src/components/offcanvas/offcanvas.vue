@@ -18,7 +18,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount, computed } from 'vue';
-import Offcanvas from 'bootstrap/js/dist/offcanvas';
+//import Offcanvas from 'bootstrap/js/dist/offcanvas';
 
 const emit = defineEmits(['offcanvas-shown']);
 
@@ -46,9 +46,9 @@ let offcanvas = null;
 onMounted(() => {
   if (offcanvas === null) {
     const offcanvasEl = document.getElementById(id);
-    offcanvas = new Offcanvas(offcanvasEl, {
+    /*offcanvas = new Offcanvas(offcanvasEl, {
       backdrop: props.backdrop
-    });
+    });*/
 
     offcanvasEl.addEventListener('shown.bs.offcanvas', (event) => {
       emit('offcanvas-shown');
