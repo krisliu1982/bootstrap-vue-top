@@ -34,11 +34,6 @@
                   Quick start 快速开始</RouterLink
                 >
               </li>
-              <li class="py-1">
-                <RouterLink to="/docs/guide/changelog" class="docs-sidebar-link" exact-active-class="active"
-                  >Changelog 更新日志
-                </RouterLink>
-              </li>
             </ul>
           </li>
           <li class="mb-4">

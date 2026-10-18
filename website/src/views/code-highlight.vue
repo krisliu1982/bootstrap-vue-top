@@ -15,6 +15,8 @@ import Prism from 'prismjs';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 // 引入 SCSS 语言支持
 import 'prismjs/components/prism-scss.min';
+// 引入 bash 语言支持
+import 'prismjs/components/prism-bash.min';
 
 // 配置插件，解决首尾空行问题
 Prism.plugins.NormalizeWhitespace.setDefaults({
@@ -53,6 +55,10 @@ const languageClass = computed(() => {
     return 'language-scss';
   } else if (props.type === 'css') {
     return 'language-css';
+  } else if (props.type === 'js') {
+    return 'language-javascript';
+  } else if (props.type === 'bash') {
+    return 'language-bash';
   }
 });
 
