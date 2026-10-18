@@ -9,7 +9,12 @@
           type="button"
           :disabled="disabled"
           class="btn btn-secondary"
-          style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius: 50%;"
+          style="
+            --bs-btn-padding-x: 0.5rem;
+            --bs-btn-padding-y: 0.5rem;
+            --bs-btn-line-height: 1;
+            --bs-btn-border-radius: 50%;
+          "
           @click.stop="handleRemove"
         >
           <bi-trash />

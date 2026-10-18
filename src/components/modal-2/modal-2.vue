@@ -1,14 +1,7 @@
 <template>
   <Teleport to="body">
     <Transition name="fadeIn">
-      <div
-        v-show="visible"
-        ref="modalRef"
-        class="modal modal-2"
-        tabindex="-1"
-        role="dialog"
-        aria-modal="true"
-      >
+      <div v-show="visible" ref="modalRef" class="modal modal-2" tabindex="-1" role="dialog" aria-modal="true">
         <div class="modal-dialog" :class="dialogClass">
           <div v-if="rendered" ref="contentRef" class="modal-content">
             <div ref="headerRef" class="modal-header" :style="{ cursor: draggable ? 'move' : 'auto' }">

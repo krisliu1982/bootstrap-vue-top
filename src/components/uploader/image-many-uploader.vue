@@ -15,11 +15,18 @@
         ><img draggable="false" class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl"
       /></a>
       <div class="position-absolute top-0 start-0 end-0 z-1 d-flex p-2">
-        <button v-if="sortable"
+        <button
+          v-if="sortable"
           type="button"
           :disabled="disabled"
           class="btn btn-secondary d-none d-lg-block"
-          style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius: 50%; cursor: move;"
+          style="
+            --bs-btn-padding-x: 0.5rem;
+            --bs-btn-padding-y: 0.5rem;
+            --bs-btn-line-height: 1;
+            --bs-btn-border-radius: 50%;
+            cursor: move;
+          "
           @mousedown="handleStart"
           @mouseup="handleEnd"
         >
@@ -29,7 +36,12 @@
           type="button"
           :disabled="disabled"
           class="btn btn-secondary ms-auto"
-          style="--bs-btn-padding-x:.5rem;--bs-btn-padding-y:.5rem;--bs-btn-line-height:1;--bs-btn-border-radius: 50%;"
+          style="
+            --bs-btn-padding-x: 0.5rem;
+            --bs-btn-padding-y: 0.5rem;
+            --bs-btn-line-height: 1;
+            --bs-btn-border-radius: 50%;
+          "
           @click.stop="handleRemove(index)"
         >
           <bi-trash />
@@ -154,7 +166,7 @@ function handleStart(event) {
 
 function handleEnd(event) {
   if (event.button !== 0) return;
-  
+
   const elem = event.currentTarget;
   elem.parentNode.parentNode.setAttribute('draggable', false);
 }
