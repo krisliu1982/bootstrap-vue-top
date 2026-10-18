@@ -28,12 +28,14 @@ npm i bootstrap-vue-top`;
 
 const importCode = `
 import { createApp } from 'vue'
-import BootstrapVue from 'bootstrap-vue-top';
-import 'bootstrap-vue-top/dist/index.css'
 import App from './App.vue'
 
-const app = createApp(App)
+// 引入样式(已包括bootstrap 5 样式，切记不要再次引入。)
+import 'bootstrap-vue-top/dist/index.css'
+// 引入Vue组件(已打包bootstrap 5 JS组件，切记不要再次引入。)
+import BootstrapVueTop from 'bootstrap-vue-top'
 
-app.use(BootstrapVue)
+const app = createApp(App)
+app.use(BootstrapVueTop)
 app.mount('#app')`;
 </script>
