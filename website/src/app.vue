@@ -18,6 +18,7 @@
               <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
               <div class="vr"></div>
               <a class="link-body-emphasis text-decoration-none" href="https://gitee.com/asdfghjkl012345/bootstrap-vue" target="_blank">Gitee</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
               <div class="vr"></div>
               <div class="dropdown">
                 <a
