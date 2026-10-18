@@ -1,10 +1,5 @@
-@import 'bootstrap/scss/mixins/banner';
-@include bsBanner('');
-
 // 覆盖变量
-$enable-validation-icons: false;
-$pagination-padding-y-lg: 0.5rem;
-$modal-footer-margin-between: 1rem;
+// $enable-validation-icons: false;
 
 // 自定义变量
 $zindex-backtop: 990;
@@ -12,59 +7,69 @@ $zindex-image-preview: 1082;
 $zindex-loading-fullscreen: 1083;
 $zindex-alert: 1085;
 
-// Configuration
-@import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/variables-dark';
-@import 'bootstrap/scss/maps';
-@import 'bootstrap/scss/mixins';
-@import 'bootstrap/scss/utilities';
+// scss-docs-start import-stack
+@forward "../node_modules/bootstrap/scss/banner";
 
-// Layout & components
-@import 'bootstrap/scss/root';
-@import 'bootstrap/scss/reboot';
-@import 'bootstrap/scss/type';
-@import 'bootstrap/scss/images';
-@import 'bootstrap/scss/containers';
-@import 'bootstrap/scss/grid';
-@import 'bootstrap/scss/tables';
-@import 'bootstrap/scss/forms';
-@import 'bootstrap/scss/buttons';
-@import 'bootstrap/scss/transitions';
-@import 'bootstrap/scss/dropdown';
-@import 'bootstrap/scss/button-group';
-@import 'bootstrap/scss/nav';
-@import 'bootstrap/scss/navbar';
-@import 'bootstrap/scss/card';
-@import 'bootstrap/scss/accordion';
-@import 'bootstrap/scss/breadcrumb';
-@import 'bootstrap/scss/pagination';
-@import 'bootstrap/scss/badge';
-@import 'bootstrap/scss/alert';
-@import 'bootstrap/scss/progress';
-@import 'bootstrap/scss/list-group';
-@import 'bootstrap/scss/close';
-@import 'bootstrap/scss/toasts';
-@import 'bootstrap/scss/modal';
-@import 'bootstrap/scss/tooltip';
-@import 'bootstrap/scss/popover';
-@import 'bootstrap/scss/carousel';
-@import 'bootstrap/scss/spinners';
-@import 'bootstrap/scss/offcanvas';
-@import 'bootstrap/scss/placeholders';
+// Configuration variables and maps, such as $utilities. Forwarding config makes
+// them configurable from this entrypoint with `@use ... with (...)`. Emits no CSS.
+@forward "../node_modules/bootstrap/scss/config";
 
-@import 'modal-2.scss';
-@import 'alert.scss';
-@import 'loading.scss';
-@import 'backtop.scss';
-@import 'uploader.scss';
-@import 'image-preview.scss';
+@forward "../node_modules/bootstrap/scss/colors";
+
+// Theme color maps ($theme-colors, $theme-bgs, etc.). Forwarding makes them
+// configurable from this entrypoint with `@use ... with (...)`. Emits no CSS.
+@forward "../node_modules/bootstrap/scss/theme";
+
+// Global CSS variables, layer definitions, and configuration
+@forward "../node_modules/bootstrap/scss/root";
+
+// Subdir imports
+@forward "../node_modules/bootstrap/scss/content";
+@forward "../node_modules/bootstrap/scss/layout";
+@forward "../node_modules/bootstrap/scss/forms";
+@forward "../node_modules/bootstrap/scss/buttons";
+
+// Components
+@forward "../node_modules/bootstrap/scss/accordion";
+@forward "../node_modules/bootstrap/scss/alert";
+@forward "../node_modules/bootstrap/scss/avatar";
+@forward "../node_modules/bootstrap/scss/badge";
+@forward "../node_modules/bootstrap/scss/breadcrumb";
+@forward "../node_modules/bootstrap/scss/chip";
+@forward "../node_modules/bootstrap/scss/card";
+@forward "../node_modules/bootstrap/scss/carousel";
+@forward "../node_modules/bootstrap/scss/datepicker";
+@forward "../node_modules/bootstrap/scss/dialog";
+@forward "../node_modules/bootstrap/scss/menu";
+@forward "../node_modules/bootstrap/scss/list-group";
+@forward "../node_modules/bootstrap/scss/nav";
+@forward "../node_modules/bootstrap/scss/nav-overflow";
+@forward "../node_modules/bootstrap/scss/navbar";
+@forward "../node_modules/bootstrap/scss/drawer";
+@forward "../node_modules/bootstrap/scss/pagination";
+@forward "../node_modules/bootstrap/scss/placeholder";
+@forward "../node_modules/bootstrap/scss/popover";
+@forward "../node_modules/bootstrap/scss/progress";
+@forward "../node_modules/bootstrap/scss/spinner";
+@forward "../node_modules/bootstrap/scss/stepper";
+@forward "../node_modules/bootstrap/scss/toasts";
+@forward "../node_modules/bootstrap/scss/tooltip";
+@forward "../node_modules/bootstrap/scss/transitions";
 
 // Helpers
-@import 'bootstrap/scss/helpers';
+@forward "../node_modules/bootstrap/scss/helpers";
 
 // Utilities
-@import 'bootstrap/scss/utilities/api';
+@forward "../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+@use 'modal-2.scss';
+@use 'alert.scss';
+@use 'loading.scss';
+@use 'backtop.scss';
+@use 'uploader.scss';
+@use 'image-preview.scss';
 
 .bi {
   width: 1em;

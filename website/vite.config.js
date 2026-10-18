@@ -31,19 +31,6 @@ export default defineConfig({
     host: '0.0.0.0',
     open: true,//是否自动打开浏览器
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        silenceDeprecations: [
-          'import',
-          'mixed-decls',
-          'color-functions',
-          'global-builtin',
-          'if-function'
-        ],
-      },
-    },
-  },
   build: {
     target: 'es2015'
   }
