@@ -1,14 +1,19 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
   "description": "bootstrap-vue-top 是一个基于 Bootstrap & Vue 的前端框架。",
   "files": [
     "dist",
+    "src",
+    ".browserslistrc",
+    "package.json",
+    "postcss.config.js",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "vite.config.js"
   ],
   "main": "./dist/bootstrap-vue.umd.cjs",
   "module": "./dist/bootstrap-vue.js",

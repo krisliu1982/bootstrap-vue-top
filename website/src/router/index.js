@@ -26,10 +26,6 @@ var routes = [
         component: () => import('@/views/docs/guide/quick-start.vue')
       },
       {
-        path: '/docs/guide/changelog',
-        component: () => import('@/views/docs/guide/changelog.vue')
-      },
-      {
         path: '/docs/layout/breakpoints',
         component: () => import('@/views/docs/layout/breakpoints.vue')
       },
