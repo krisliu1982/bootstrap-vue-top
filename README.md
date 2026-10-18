@@ -1,9 +1,9 @@
 # bootstrap-vue-top
-基于 Bootstrap 5.3.8 & Vue 3.5.x 的前端框架
+A frontend framework based on Bootstrap 5.3.8 & Vue 3.5.x
 
 ## 简介
-这是一个融合了 Bootstrap 5.3.8 和 Vue 3.5.x 的现代化前端框架解决方案，充分发挥了两者的优势：Bootstrap 5 提供强大的 UI 组件库和响应式布局系统，Vue 3 则带来了高效的响应式数据驱动和组合式 API。
+This is a modern frontend framework solution that combines Bootstrap 5.3.8 and Vue 3.5.x, fully leveraging the strengths of both: Bootstrap 5 provides a powerful UI component library and responsive layout system, while Vue 3 brings efficient reactive data-driven rendering and the Composition API.
 
-严格遵循“样式归 Bootstrap，行为归 Vue”的架构范式。完全继承 Bootstrap 的原子化工具类（间距、排版、颜色、Flex/Grid 栅格），开发者无需学习新的 CSS类名，直接使用 d-flex、text-primary、mb-3 等原生类名控制外观。
+It strictly follows the architectural paradigm of "styling by Bootstrap, behavior by Vue." It fully inherits Bootstrap's atomic utility classes (spacing, typography, colors, Flex/Grid), so developers do not need to learn new CSS class names — they can directly use native classes such as d-flex, text-primary, and mb-3 to control appearance.
 
-所有 Bootstrap 官方文档中关于样式类的说明（如表格条纹、卡片分组、网格偏移）在 Vue项目中直接适用，降低了团队的学习与迁移成本。
+All descriptions of style classes in the official Bootstrap documentation (such as table striping, card grouping, and grid offsets) apply directly in Vue projects, reducing the learning and migration costs for teams.

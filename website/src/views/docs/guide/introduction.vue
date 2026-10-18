@@ -10,7 +10,7 @@
 
   <div v-scrollspy data-bs-target="#docs-nav-introduction" class="docs-content">
     <h1>Introduction 介绍</h1>
-    <p class="fs-4 fw-light">这是一个融合了 Bootstrap 5.3.x 和 Vue 3.x 的现代化前端框架解决方案。</p>
+    <p class="fs-4 fw-light">这是一个融合了 Bootstrap 5.3.8 和 Vue 3.x 的现代化前端框架解决方案。</p>
 
     <h2 id="introduction-features">
       主要特点<a class="anchor-link" aria-label="Link to this section: 主要特点" href="#introduction-features"> </a>

@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
@@ -8,6 +8,7 @@
   "files": [
     "dist",
     "src",
+    "website",
     ".browserslistrc",
     "package.json",
     "postcss.config.js",
@@ -49,8 +50,9 @@
     "vue": "^3.5.44"
   },
   "keywords": [
-    "boostrap 5.3.8",
-    "vue 3.5.x",
+    "bootstrap",
+    "vue",
+    "ui",
     "ES6",
     "javascript"
   ],
