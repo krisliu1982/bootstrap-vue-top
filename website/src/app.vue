@@ -39,6 +39,7 @@
                   <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
                 </ul>
               </div>
+              <div class="vr"></div>
               <a
                 href="#"
                 class="link-body-emphasis text-decoration-none"
