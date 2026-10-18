@@ -14,6 +14,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { shallowRef, onMounted } from 'vue';
 const emit = defineEmits(['file-change', 'file-remove']);
