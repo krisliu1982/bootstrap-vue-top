@@ -29,9 +29,9 @@
                   role="button"
                   aria-expanded="false"
                 >
-                  <template v-if="fontSize === 'sm'">小型文字</template>
-                  <template v-else-if="fontSize === 'md'">中型文字</template>
-                  <template v-else-if="fontSize === 'lg'">大型文字</template>
+                  <template v-if="fontSize === 'sm'">小型</template>
+                  <template v-else-if="fontSize === 'md'">中型</template>
+                  <template v-else-if="fontSize === 'lg'">大型</template>
                 </a>
                 <ul class="dropdown-menu">
                   <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
