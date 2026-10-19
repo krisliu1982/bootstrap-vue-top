@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-figures" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-figures" class="docs-content">
     <h1>Figures 图表区</h1>
     <p class="fs-4 fw-light">
       关于在 Bootstrap 中使用 figure 组件展示相关图像和文本的文档与示例。了解更多请阅读

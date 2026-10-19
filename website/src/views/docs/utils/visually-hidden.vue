@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-visually-hidden" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-visually-hidden" class="docs-content">
     <h1>Visually hidden 视觉隐藏</h1>
     <p class="fs-4 fw-light">
       使用这些辅助工具来实现元素的可视化隐藏，同时确保这些元素仍对辅助技术可用，以提供更好的用户体验。了解更多请阅读

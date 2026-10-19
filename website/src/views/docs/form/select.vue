@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-select" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-select" class="docs-content">
     <h1>Select 选择器</h1>
     <p class="fs-4 fw-light">
       使用自定义CSS对原生

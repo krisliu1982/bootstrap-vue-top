@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-stretched-link" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-stretched-link" class="docs-content">
     <h1>Stretched link 拉伸链接</h1>
     <p class="fs-4 fw-light">
       通过使用 CSS 将嵌套链接“拉伸”出来，可以使任何 HTML 元素或 Bootstrap 组件变为可点击状态。了解更多请阅读

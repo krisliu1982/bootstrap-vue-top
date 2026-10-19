@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-scrollspy" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-scrollspy" class="docs-content">
     <h1>Scrollspy 滚动监听</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-scrollspy</code> 指令激活滚动监听。了解更多请阅读
@@ -33,8 +33,8 @@
         <code>overflow-y: scroll</code> 属性的自定义元素。
       </li>
       <li>
-        在可滚动容器上添加 <code>v-scrollspy</code> (有 <code>.self</code> 修饰符是滚动监听自己，否则是
-        <code>body</code>) 和 <code>data-bs-target="#navId"</code>，其中 <code>navId</code> 是相关导航的唯一
+        在可滚动容器上添加 <code>v-scrollspy</code> (添加 <code>.body</code> 修饰符监听 document.body 元素，否则监听
+        自身元素) 和 <code>data-bs-target="#navId"</code>，其中 <code>navId</code> 是相关导航的唯一
         <code>id</code>。如果该元素内部没有可聚焦的元素，请务必同时添加 <code>tabindex="0"</code> 以确保键盘访问性。
       </li>
       <li>
@@ -81,7 +81,7 @@
           </ul>
         </nav>
         <div
-          v-scrollspy.self
+          v-scrollspy
           data-bs-target="#navbar-example2"
           style="height: 200px; overflow-y: scroll"
           class="bg-body-tertiary p-3 rounded-2"
@@ -167,7 +167,7 @@
             </div>
           </div>
           <div class="col-9">
-            <div v-scrollspy.self data-bs-target="#list-example" style="height: 300px; overflow-y: scroll" tabindex="0">
+            <div v-scrollspy data-bs-target="#list-example" style="height: 300px; overflow-y: scroll" tabindex="0">
               <h4 id="list-item-1">Item 1</h4>
               <p>
                 This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
@@ -242,7 +242,7 @@
           </div>
           <div class="col-9">
             <div
-              v-scrollspy.self
+              v-scrollspy
               data-bs-target="#custom-list-example"
               style="height: 300px; overflow-y: scroll"
               tabindex="0"
@@ -358,7 +358,7 @@ const navCode = `
     </ul>
   </nav>
   <div 
-    v-scrollspy.self 
+    v-scrollspy 
     data-bs-target="#navbar-example2" 
     style="height: 200px;overflow-y: scroll;" tabindex="0"
     class="bg-body-tertiary p-3 rounded-2">
@@ -387,7 +387,7 @@ const listCode = `
       </div>
     </div>
     <div class="col-9">
-      <div v-scrollspy.self 
+      <div v-scrollspy 
         data-bs-target="#list-example" 
         style="height: 300px;overflow-y: scroll;" 
         tabindex="0">
@@ -418,7 +418,7 @@ const customCode = `
       </div>
     </div>
     <div class="col-9">
-      <div v-scrollspy.self 
+      <div v-scrollspy 
         data-bs-target="#custom-list-example" 
         style="height: 300px;overflow-y: scroll;"
         tabindex="0">

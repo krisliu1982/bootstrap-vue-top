@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-uploader" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-uploader" class="docs-content">
     <h1>Uploader</h1>
     <p class="fs-4 fw-light">基于Input File元素，构建上传文件组件。</p>
 

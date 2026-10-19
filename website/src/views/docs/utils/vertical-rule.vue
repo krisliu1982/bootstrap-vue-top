@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-vertical-rule" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-vertical-rule" class="docs-content">
     <h1>Vertical rule 垂直分割线</h1>
     <p class="fs-4 fw-light">
       使用自定义垂直分隔线辅助工具来创建类似于 <code>&lt;hr&gt;</code> 元素那样的垂直分隔线。了解更多请阅读

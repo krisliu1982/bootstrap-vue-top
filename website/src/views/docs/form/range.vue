@@ -9,7 +9,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-range" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-range" class="docs-content">
     <h1>Range 滑块</h1>
     <p class="fs-4 fw-light">
       使用我们的自定义范围输入，以实现一致的跨浏览器样式和内置自定义功能。了解更多请阅读

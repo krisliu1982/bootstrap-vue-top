@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-alerts-box" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-alerts-box" class="docs-content">
     <h1>Alerts Box 警示弹窗</h1>
     <p class="fs-4 fw-light">模拟浏览器原生 alert 消息提示框而实现的弹窗组件, 用于重要信息提示。</p>
 

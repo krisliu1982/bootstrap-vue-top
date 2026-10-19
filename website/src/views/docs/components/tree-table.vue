@@ -18,7 +18,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-tree-table" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-tree-table" class="docs-content">
     <h1>Tree table 树形表格结构</h1>
     <p class="fs-4 fw-light">
       以表格样式, 展示层级结构信息，可展开或折叠，而构建

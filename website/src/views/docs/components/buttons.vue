@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-buttons" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-buttons" class="docs-content">
     <h1>Buttons 按钮</h1>
     <p class="fs-4 fw-light">
       使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，支持多种尺寸、状态等。了解更多请阅读

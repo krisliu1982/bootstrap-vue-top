@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-breakpoints" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-breakpoints" class="docs-content">
     <h1>Breakpoints 断点</h1>
     <p class="fs-4 fw-light">
       断点决定了在 Bootstrap 中响应式布局在不同设备或视口尺寸下的表现方式。了解更多请阅读

@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-tree" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-tree" class="docs-content">
     <h1>Tree 树形结构</h1>
     <p class="fs-4 fw-light">用于层级结构展示信息，可展开或折叠，而构建 <code>bv-tree</code> 树形组件。</p>
 

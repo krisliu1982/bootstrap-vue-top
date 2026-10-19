@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-typography" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-typography" class="docs-content">
     <h1>Typography 文字排版</h1>
     <p class="fs-4 fw-light">
       Bootstrap 排版的相关文档和示例，包括全局设置、标题、正文、列表等。了解更多请阅读

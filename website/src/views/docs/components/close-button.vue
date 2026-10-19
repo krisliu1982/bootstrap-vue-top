@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-close-button" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-close-button" class="docs-content">
     <h1>Close button 关闭按钮</h1>
     <p class="fs-4 fw-light">
       使一个通用的关闭按钮，用于关闭模态框和警告等提示内容。了解更多请阅读

@@ -10,7 +10,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-button-group" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-button-group" class="docs-content">
     <h1>Button group 按钮组</h1>
     <p class="fs-4 fw-light">
       将一系列按钮排列在一条直线上，或将其堆叠成垂直列。了解更多请阅读

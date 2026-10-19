@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-shadows" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-shadows" class="docs-content">
     <h1>Shadows 阴影</h1>
     <p class="fs-4 fw-light">
       使用“box-shadow”样式可为元素添加或移除阴影效果。了解更多请阅读

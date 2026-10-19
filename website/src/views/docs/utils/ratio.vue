@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-ratio" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-ratio" class="docs-content">
     <h1>Ratio 比例</h1>
     <p class="fs-4 fw-light">
       利用生成的伪元素，可以让你的元素保持您所选择的特定比例。非常适合根据父元素的宽度来灵活处理视频或幻灯片嵌入内容。了解更多请阅读

@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-object-fit" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-object-fit" class="docs-content">
     <h1>Object fit 对象拟合</h1>
     <p class="fs-4 fw-light">
       使用“对象拟合”工具来调整被替换元素（如 <code>&lt;img&gt;</code> 或

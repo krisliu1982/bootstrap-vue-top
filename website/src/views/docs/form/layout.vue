@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-layout" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-layout" class="docs-content">
     <h1>Layout 布局</h1>
     <p class="fs-4 fw-light">
       利用我们的表单布局选项，为您的表单赋予结构——从内联到水平再到自定义网格实现。了解更多请阅读

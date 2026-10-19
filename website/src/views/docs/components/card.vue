@@ -15,7 +15,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-card" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-card" class="docs-content">
     <h1>Card 卡片</h1>
     <p class="fs-4 fw-light">
       Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，具有多种变体和选项。了解更多请阅读

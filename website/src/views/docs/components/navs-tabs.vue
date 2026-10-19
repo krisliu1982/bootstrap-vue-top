@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-navs-tabs" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-navs-tabs" class="docs-content">
     <h1>Navs and tabs 导航标签</h1>
     <p class="fs-4 fw-light">
       基于

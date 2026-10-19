@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-display" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-display" class="docs-content">
     <h1>Display 显示属性</h1>
     <p class="fs-4 fw-light">
       借助我们的显示工具，您可以快速、灵活地调整组件的显示值及其他内容。它支持一些常见的显示值，并且还提供了用于控制打印时显示效果的一些附加功能。了解更多请阅读

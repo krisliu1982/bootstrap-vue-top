@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-colors" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-colors" class="docs-content">
     <h1>Colors 文本颜色</h1>
     <p class="fs-4 fw-light">
       通过

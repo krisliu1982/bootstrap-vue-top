@@ -25,7 +25,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-reboot" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-reboot" class="docs-content">
     <h1>Reboot 重置</h1>
     <p class="fs-4 fw-light">
       Reboot 是一个包含单个文件中针对特定元素的 CSS 更改的集合，它为 Bootstrap

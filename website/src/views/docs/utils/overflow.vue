@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-overflow" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-overflow" class="docs-content">
     <h1>Overflow 溢出</h1>
     <p class="fs-4 fw-light">
       使用这些简写工具可以快速设置内容在超出元素范围时的显示方式。了解更多请阅读

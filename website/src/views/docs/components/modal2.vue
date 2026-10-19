@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-modal2" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-modal2" class="docs-content">
     <h1>Modal2 模态框2</h1>
     <p class="fs-4 fw-light">
       为了支持打开多个模态框和拖动，特定构建

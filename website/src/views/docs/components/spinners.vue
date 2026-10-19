@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-spinners" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-spinners" class="docs-content">
     <h1>Spinners 加载指示器</h1>
     <p class="fs-4 fw-light">
       使用基于 HTML、CSS 构建且无需 JavaScript 的 Bootstrap 加载指示器来指示组件或页面的加载状态。了解更多请阅读

@@ -15,7 +15,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-flex" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-flex" class="docs-content">
     <h1>Flex 弹性布局</h1>
     <p class="fs-4 fw-light">
       借助一整套响应式弹性盒布局工具，您可以快速管理网格列、导航、组件等的布局、对齐和尺寸设置。对于更复杂的实现，可能需要使用自定义
