@@ -1,6 +1,6 @@
 <template>
   <div class="docs-toc-nav">
-    <nav v-docstoc id="docs-nav-breakpoints">
+    <nav id="docs-nav-breakpoints">
       <a href="#breakpoints-core">核心概念</a>
       <a href="#breakpoints-available">可用断点</a>
     </nav>

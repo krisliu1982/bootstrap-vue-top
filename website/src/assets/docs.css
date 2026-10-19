@@ -1,9 +1,9 @@
 .docs-sidebar {
-  --bs-offcanvas-width: 75vw;
+  /*--bs-offcanvas-width: 75vw;*/
 }
 
-/* 桌面：≥ 992px */
-@media (min-width: 992px) {
+/* 桌面：≥1024px */
+@media (min-width: 1024px) {
   .docs-sidebar {
     width: 12rem;
     height: calc(100vh - 5rem);
@@ -22,13 +22,13 @@
 }
 
 .docs-sidebar-link:hover {
-color: var(--bs-secondary-color);
+  color: var(--secondary-fg);
 }
 
 
 .docs-sidebar-link.active {
-  color: var(--bs-white);
-  background-color: var(--bs-purple);
+  color: var(--fg-white);
+  background-color: var(--accent-bg);
 }
 
 .docs-main {
@@ -64,6 +64,7 @@ color: var(--bs-secondary-color);
 ul.docs-content-list {
   padding-left: 1rem;
 }
+
 ul.docs-content-list>li {
   margin-bottom: .5rem;
 }
@@ -79,14 +80,14 @@ ul.docs-content-list>li {
 
 /* 桌面：≥ 992px */
 @media (min-width: 992px) {
-.docs-toc-nav {
-  display: block;
-  grid-area: toc;
-  position: sticky;
-  top: 4rem;
-  height: calc(100vh - 5rem);
-  overflow-y: auto;
-  font-size: 0.875rem;
+  .docs-toc-nav {
+    display: block;
+    grid-area: toc;
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    font-size: 0.875rem;
   }
 }
 
@@ -173,9 +174,8 @@ ul.docs-content-list>li {
   background-color: var(--bs-tertiary-bg);
 }
 
-.docs-placeholder-img
- {
-    font-size: 1.125rem;
-    user-select: none;
-    text-anchor: middle;
- }
+.docs-placeholder-img {
+  font-size: 1.125rem;
+  user-select: none;
+  text-anchor: middle;
+}

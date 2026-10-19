@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
+<!--   <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" class="link-body-emphasis text-decoration-none" @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
@@ -11,18 +11,19 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container">
-    <div class="d-flex gap-3 mt-3">
-      <bv-offcanvas
+    <div class="d-flex gap-5 mt-5">
+<!--       <bv-offcanvas
         ref="offcanvasRef"
         title="文档菜单"
         offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar"
-      >
+      > -->
+      <div class="flex-shrink-0 docs-sidebar">
         <ul ref="menuRef" class="list-unstyled">
           <li class="mb-4">
-            <h6 class="fw-bold">开发指南</h6>
+            <h6>开发指南</h6>
             <ul class="list-unstyled">
               <li class="py-1">
                 <RouterLink to="/docs/guide/introduction" class="docs-sidebar-link" exact-active-class="active">
@@ -452,7 +453,8 @@
             </ul>
           </li>
         </ul>
-      </bv-offcanvas>
+        </div>
+<!--       </bv-offcanvas> -->
       <main class="flex-grow-1 docs-main">
         <router-view />
       </main>
