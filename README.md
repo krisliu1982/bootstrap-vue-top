@@ -26,18 +26,67 @@ npm install bootstrap-vue-top
 
 ## Quick Start
 
+**main.js**
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
 
 // Import styles (Bootstrap 5 styles are already included—do NOT import them again)
-import 'bootstrap-vue-top/dist/index.css'
+import 'bootstrap-vue-top/style.css'
 // Import Vue components (Bootstrap 5 JS components are already bundled—do NOT import them again)
 import BootstrapVueTop from 'bootstrap-vue-top'
 
 const app = createApp(App)
 app.use(BootstrapVueTop)
 app.mount('#app')
+```
+
+**App.vue**
+```javascript
+<template>
+  <div class="container p-3">
+    <h1 class="text-primary text-center">Hello</h1>
+
+    <h4 class="mt-4">Example 1 (Vue component)</h4>
+    <bv-table :data="tableData" table-class="table-bordered">
+      <bv-table-col header="Code" field="code" />
+      <bv-table-col header="Name" field="name" />
+      <bv-table-col header="Address" field="address" />
+    </bv-table>
+
+    <h4 class="mt-4">Example 2  (Bootstrap component)</h4>
+    <div>
+      <button ref="popoverRef" type="button" class="btn btn-primary" data-bs-toggle="popover"
+        data-bs-title="Popover title"
+        data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle
+        popover</button>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const tableData = ref([
+  { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
+  { code: 1002, name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
+  { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
+])
+
+// Bootstrap component
+import { bootstrap } from 'bootstrap-vue-top'
+const popoverRef = ref(null)
+onMounted(() => {
+  // Instantiate the Bootstrap component
+  new bootstrap.Popover(popoverRef.value, {
+    container: 'body'
+  })
+})
+onBeforeUnmount(() => {
+  // Destroy the Bootstrap component
+  bootstrap.Popover.getInstance(popoverRef.value).dispose();
+})
+</script>
 ```
 
 

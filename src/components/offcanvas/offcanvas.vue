@@ -18,7 +18,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount, computed } from 'vue';
-import Offcanvas from 'bootstrap/js/dist/offcanvas';
+import { Offcanvas } from 'bootstrap';
 
 const emit = defineEmits(['offcanvas-shown']);
 

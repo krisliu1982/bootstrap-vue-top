@@ -1,4 +1,4 @@
-import Tooltip from 'bootstrap/js/dist/tooltip';
+import { Tooltip } from 'bootstrap';
 
 export default {
   mounted(el) {

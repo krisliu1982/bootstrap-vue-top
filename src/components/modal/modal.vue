@@ -19,7 +19,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount } from 'vue';
-import Modal from 'bootstrap/js/dist/modal';
+import { Modal } from 'bootstrap';
 
 const emit = defineEmits(['modal-shown']);
 

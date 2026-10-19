@@ -1,4 +1,4 @@
-import Alert from 'bootstrap/js/dist/alert';
+import { Alert } from 'bootstrap';
 
 export default {
   mounted(el) {

@@ -139,7 +139,7 @@
 <script setup>
 import { useSlots, ref, provide, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
-import Tab from 'bootstrap/js/dist/tab';
+import { Tab } from 'bootstrap';
 
 const emit = defineEmits(['tab-shown']);
 

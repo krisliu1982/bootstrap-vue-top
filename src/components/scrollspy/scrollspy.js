@@ -1,4 +1,4 @@
-import ScrollSpy from 'bootstrap/js/dist/scrollspy';
+import { ScrollSpy } from 'bootstrap';
 
 export default {
   mounted(el, binding) {
