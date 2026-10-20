@@ -1,5 +1,7 @@
 import './styles/index.scss';
 
+import * as bootstrap from 'bootstrap';
+
 import vAlert from './components/alert/alert.js';
 import vMenu from './components/menu/menu.js';
 import vTooltip from './components/tooltip/tooltip.js';
@@ -61,4 +63,4 @@ import imagePreview from './components/image-preview/index.js';
 import LoadingFullscreen from './components/loading/index.js';
 import toast from './components/toast/index.js';
 
-export { alertBox, alertConfirm, alertMessage, imagePreview, LoadingFullscreen, toast };
+export {bootstrap, alertBox, alertConfirm, alertMessage, imagePreview, LoadingFullscreen, toast };
