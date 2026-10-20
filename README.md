@@ -1,39 +1,40 @@
 # bootstrap-vue-top
 
-A frontend component library built on Bootstrap 5.3.8 & Vue 3.5.x
+基于 Bootstrap 5.3.8 & Vue 3.5.x 的前端组件库
 
-## Introduction
+## 简介
 
-This is a modern frontend framework solution that combines Bootstrap 5.3.8 with Vue 3.5.x, fully leveraging the strengths of both: Bootstrap 5 provides a powerful UI component library and responsive layout system, while Vue 3 brings efficient data-driven reactive rendering and the Composition API.
+这是一个现代化的前端框架解决方案，将 Bootstrap 5.3.8 与 Vue 3.5.x 完美结合，充分利用双方的优势：Bootstrap 5 提供了强大的 UI 组件库和响应式布局系统，而 Vue 3 则带来了高效的数据驱动响应式渲染和 Composition API。
 
-The framework strictly follows the architectural paradigm of "styling with Bootstrap, behavior with Vue," fully inheriting Bootstrap's atomic utility classes (spacing, typography, colors, Flex/Grid). Developers don't need to learn new CSS class names—they can directly use native classes like `d-flex`, `text-primary`, and `mb-3` to control appearance.
+框架严格遵循"样式用 Bootstrap，行为用 Vue"的架构范式，完全继承 Bootstrap 的原子化工具类（间距、字体、颜色、Flex/Grid），开发者无需学习新的 CSS 类名，可直接使用原生类名如 `d-flex`、`text-primary`、`mb-3` 等来控制外观。
 
-All style classes described in the official Bootstrap documentation (such as table striping, card groups, grid offsets, etc.) can be used directly in Vue projects, reducing the learning and migration costs for teams.
+Bootstrap 官方文档中描述的所有样式类（如表格条纹、卡片分组、栅格偏移等）均可直接在 Vue 项目中使用，降低了团队的学习和迁移成本。
 
-## Features
+## 特性
 
-- **Vue 3 + Composition API**: Built with the latest Vue 3 features
-- **Bootstrap 5 styles**: Fully inherits all Bootstrap 5 style classes
-- **Rich components**: Provides 20+ common components
-- **Complete documentation**: Comes with a full Chinese documentation website
+- **Vue 3 + Composition API**: 使用 Vue 3 最新特性开发
+- **Bootstrap 5 样式**: 完全继承 Bootstrap 5 的全部样式类
+- **组件丰富**: 提供 20+ 常用组件
+- **文档完善**: 配套完整的中文文档网站
 
-## Installation
+
+## 安装
 
 ```bash
 npm install bootstrap-vue-top
 ```
 
 
-## Quick Start
+## 快速开始
 
 **main.js**
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// Import styles (Bootstrap 5 styles are already included—do NOT import them again)
+// 引入样式(已包括bootstrap 5 样式，切记不要再次引入。)
 import 'bootstrap-vue-top/style.css'
-// Import Vue components (Bootstrap 5 JS components are already bundled—do NOT import them again)
+// 引入Vue组件(已打包bootstrap 5 JS 组件，切记不要再次引入。)
 import BootstrapVueTop from 'bootstrap-vue-top'
 
 const app = createApp(App)
@@ -42,19 +43,19 @@ app.mount('#app')
 ```
 
 **App.vue**
-```javascript
+```html
 <template>
   <div class="container p-3">
     <h1 class="text-primary text-center">Hello</h1>
 
-    <h4 class="mt-4">Example 1 (Vue component)</h4>
+    <h4 class="mt-4">Example 1 (vue 组件)</h4>
     <bv-table :data="tableData" table-class="table-bordered">
       <bv-table-col header="Code" field="code" />
       <bv-table-col header="Name" field="name" />
       <bv-table-col header="Address" field="address" />
     </bv-table>
 
-    <h4 class="mt-4">Example 2  (Bootstrap component)</h4>
+    <h4 class="mt-4">Example 2 (Bootstrap 组件)</h4>
     <div>
       <button ref="popoverRef" type="button" class="btn btn-primary" data-bs-toggle="popover"
         data-bs-title="Popover title"
@@ -73,37 +74,37 @@ const tableData = ref([
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
 ])
 
-// Bootstrap component
+// Bootstrap 组件
 import { bootstrap } from 'bootstrap-vue-top'
 const popoverRef = ref(null)
 onMounted(() => {
-  // Instantiate the Bootstrap component
+  // 实例化 Bootstrap 组件
   new bootstrap.Popover(popoverRef.value, {
     container: 'body'
   })
 })
 onBeforeUnmount(() => {
-  // Destroy the Bootstrap component
+  // 销毁 Bootstrap 组件
   bootstrap.Popover.getInstance(popoverRef.value).dispose();
 })
 </script>
 ```
 
 
-## Development
+## 开发
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
 
-# Start the dev server
+# 启动开发服务器
 npm run dev
 
-# Build for production
+# 构建生产版本
 npm run build
 ```
 
-### Documentation Website Development
+### 开发文档网站
 
 ```bash
 cd website
@@ -112,7 +113,7 @@ npm run dev
 ```
 
 
-## Browser Support
+## 浏览器支持
 
 - Chrome >= 84
 - Firefox >= 63
@@ -120,6 +121,6 @@ npm run dev
 - Safari >= 14.1
 
 
-## License
+## 协议
 
 MIT License

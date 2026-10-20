@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-vue-top-example",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap-vue-top": "^1.1.0",
+    "bootstrap-vue-top": "^1.1.1",
     "vue": "^3.5.44"
   },
   "devDependencies": {

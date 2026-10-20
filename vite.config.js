@@ -40,10 +40,10 @@ export default defineConfig({
     target: 'es2015',
     lib: {
       entry: {
-        'bootstrap-vue': resolve(import.meta.dirname, 'src/index.js')
+        'bootstrap-vue-top': resolve(import.meta.dirname, 'src/index.js')
       },
-      name: 'BootstrapVue',
-      fileName: 'bootstrap-vue',
+      name: 'BootstrapVueTop',
+      fileName: 'bootstrap-vue-top',
     },
     rolldownOptions: {
       external: ['vue'],

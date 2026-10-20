@@ -1,24 +1,25 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
-  "description": "bootstrap-vue-top is a frontend framework based on Bootstrap & Vue.",
+  "description": "A frontend framework based on Bootstrap & Vue.",
   "files": [
     "dist",
+    "src",
     "README.md",
-    "README.zh-CN.md",
-    "LICENSE"
+    "LICENSE",
+    "package.json"
   ],
-  "main": "./dist/bootstrap-vue.umd.cjs",
-  "module": "./dist/bootstrap-vue.js",
+  "main": "./dist/bootstrap-vue-top.umd.cjs",
+  "module": "./dist/bootstrap-vue-top.js",
   "exports": {
     ".": {
-      "import": "./dist/bootstrap-vue.js",
-      "require": "./dist/bootstrap-vue.umd.cjs"
+      "import": "./dist/bootstrap-vue-top.js",
+      "require": "./dist/bootstrap-vue-top.umd.cjs"
     },
-    "./style.css": "./dist/bootstrap-vue.css"
+    "./style.css": "./dist/bootstrap-vue-top.css"
   },
   "scripts": {
     "dev": "vite",
