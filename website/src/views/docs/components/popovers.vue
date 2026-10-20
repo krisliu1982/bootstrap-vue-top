@@ -10,7 +10,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-popovers" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-popovers" class="docs-content">
     <h1>Popovers 弹出框</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-popover</code> 指令激活弹出框。了解更多请阅读

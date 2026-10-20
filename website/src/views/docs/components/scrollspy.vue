@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-scrollspy" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-scrollspy" class="docs-content">
     <h1>Scrollspy 滚动监听</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-scrollspy</code> 指令激活滚动监听。了解更多请阅读
@@ -167,7 +167,7 @@
             </div>
           </div>
           <div class="col-9">
-            <div v-scrollspy.self data-bs-target="#list-example" style="height: 300px; overflow-y: scroll" tabindex="0">
+            <div v-scrollspy data-bs-target="#list-example" style="height: 300px; overflow-y: scroll" tabindex="0">
               <h4 id="list-item-1">Item 1</h4>
               <p>
                 This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
@@ -387,7 +387,7 @@ const listCode = `
       </div>
     </div>
     <div class="col-9">
-      <div v-scrollspy.self 
+      <div v-scrollspy 
         data-bs-target="#list-example" 
         style="height: 300px;overflow-y: scroll;" 
         tabindex="0">
@@ -418,7 +418,7 @@ const customCode = `
       </div>
     </div>
     <div class="col-9">
-      <div v-scrollspy.self 
+      <div v-scrollspy 
         data-bs-target="#custom-list-example" 
         style="height: 300px;overflow-y: scroll;"
         tabindex="0">

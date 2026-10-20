@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-validation" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-validation" class="docs-content">
     <h1>Validation</h1>
     <p class="fs-4 fw-light">
       引入

@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-focus-ring" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-focus-ring" class="docs-content">
     <h1>Focus ring 焦点环</h1>
     <p class="fs-4 fw-light">
       这些工具类允许您为元素和组件添加及修改自定义的焦点环样式。了解更多请阅读

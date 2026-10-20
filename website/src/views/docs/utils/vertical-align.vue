@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-vertical-align" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-vertical-align" class="docs-content">
     <h1>Vertical align 垂直对齐</h1>
     <p class="fs-4 fw-light">
       可以轻松更改内联元素、内联块元素、内联表格元素以及表格单元格元素的垂直对齐方式。了解更多请阅读

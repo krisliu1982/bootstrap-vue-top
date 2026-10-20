@@ -15,7 +15,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-text" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-text" class="docs-content">
     <h1>Text 文本</h1>
     <p class="fs-4 fw-light">
       有关用于控制文本对齐、换行、粗细等常见文本功能的文档及示例。了解更多请阅读

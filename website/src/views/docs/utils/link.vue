@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-link" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-link" class="docs-content">
     <h1>Link 链接</h1>
     <p class="fs-4 fw-light">
       链接工具用于对您的链接进行样式设置，以调整其颜色、透明度、下划线偏移量、下划线颜色等。了解更多请阅读

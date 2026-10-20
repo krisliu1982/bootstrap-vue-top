@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-stacks" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-stacks" class="docs-content">
     <h1>Stacks 堆叠</h1>
     <p class="fs-4 fw-light">
       基于我们的弹性盒布局工具开发的简写辅助功能，能够使组件布局的速度和效率达到前所未有的水平。了解更多请阅读

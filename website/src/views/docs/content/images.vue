@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-images" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-images" class="docs-content">
     <h1>Images 图片</h1>
     <p class="fs-4 fw-light">
       提供文档和示例，说明如何通过类为图像设置响应式行为（使其宽度永远不会超过其父元素），并为它们添加轻量级样式。了解更多请阅读

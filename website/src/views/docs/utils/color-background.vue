@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-color-background" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-color-background" class="docs-content">
     <h1>Color and background 文本颜色背景</h1>
     <p class="fs-4 fw-light">
       设置一个与前景色形成对比的背景色。了解更多请阅读

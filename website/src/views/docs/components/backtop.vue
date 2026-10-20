@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-backtop" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-backtop" class="docs-content">
     <h1>Backtop 回到顶部</h1>
     <p class="fs-4 fw-light">回到页面顶部的 <code>bv-backtop</code> 组件。</p>
     <bv-backtop :color="color" :size="size" />

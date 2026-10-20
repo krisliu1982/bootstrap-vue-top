@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-accordion" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-accordion" class="docs-content">
     <h1>Accordion 手风琴</h1>
     <p class="fs-4 fw-light">
       用于将复杂的内容区域分组和隐藏，可折叠或展开。基于

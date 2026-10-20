@@ -10,7 +10,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-alerts" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-alerts" class="docs-content">
     <h1>Alerts 警示</h1>
     <p class="fs-4 fw-light">
       利用这少量但灵活多样的提示信息，为用户的常见操作提供相应的上下文反馈信息。了解更多请阅读

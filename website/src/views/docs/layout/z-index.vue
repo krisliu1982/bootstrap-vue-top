@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-z-index" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-z-index" class="docs-content">
     <h1>Z-index</h1>
     <p class="fs-4 fw-light">
       虽然不是 Bootstrap 网格系统的一部分，但 z-index

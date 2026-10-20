@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-breadcrumb" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-breadcrumb" class="docs-content">
     <h1>Breadcrumb 面包屑</h1>
     <p class="fs-4 fw-light">
       在导航层次结构中指示当前页面的位置，该结构通过CSS自动添加分隔符。了解更多请阅读

@@ -8,7 +8,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-badge" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-badge" class="docs-content">
     <h1>Badge 徽章</h1>
     <p class="fs-4 fw-light">
       徽章的文档和示例，我们的小计数和标签组件。了解更多请阅读

@@ -34,7 +34,7 @@
 <script setup>
 import { useSlots, ref, provide, onMounted, useId } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
-import Collapse from 'bootstrap/js/dist/collapse';
+import { Collapse } from 'bootstrap';
 
 const ready = ref(false);
 const id = useId();

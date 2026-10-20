@@ -10,7 +10,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-floating-labels" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-floating-labels" class="docs-content">
     <h1>Floating labels 浮动标签</h1>
     <p class="fs-4 fw-light">
       创建美观简洁的表单标签，使其悬浮在输入框上方。了解更多请阅读

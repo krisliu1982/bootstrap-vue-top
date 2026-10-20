@@ -15,7 +15,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-list-group" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-list-group" class="docs-content">
     <h1>List group 列表</h1>
     <p class="fs-4 fw-light">
       列表是一种灵活且强大的组件，用于展示一系列内容。了解更多请阅读

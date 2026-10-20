@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-interactions" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-interactions" class="docs-content">
     <h1>Interactions 交互</h1>
     <p class="fs-4 fw-light">
       用于改变用户与网站内容交互方式的工具类。了解更多请阅读

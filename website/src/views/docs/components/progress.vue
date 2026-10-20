@@ -12,7 +12,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-progress" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-progress" class="docs-content">
     <h1>Progress 进度条</h1>
     <p class="fs-4 fw-light">
       有关使用 Bootstrap 自定义进度条的文档和示例，该进度条支持堆叠条、动画背景以及文本标签功能。了解更多请阅读

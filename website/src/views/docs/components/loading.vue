@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-loading" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-loading" class="docs-content">
     <h1>Loading 加载</h1>
     <p class="fs-4 fw-light">加载数据时显示动效。</p>
 

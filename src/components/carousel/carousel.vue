@@ -38,7 +38,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount } from 'vue';
-import Carousel from 'bootstrap/js/dist/carousel';
+import { Carousel } from 'bootstrap';
 
 const id = useId();
 const props = defineProps({

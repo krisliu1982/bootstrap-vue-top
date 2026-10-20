@@ -1,4 +1,4 @@
-import Collapse from 'bootstrap/js/dist/collapse';
+import {Collapse} from 'bootstrap';
 
 export default {
   mounted(el, binding) {

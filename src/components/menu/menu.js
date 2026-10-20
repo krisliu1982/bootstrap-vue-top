@@ -1,4 +1,4 @@
-import Menu from 'bootstrap/js/dist/menu';
+import {Menu} from 'bootstrap';
 
 export default {
   mounted(el) {

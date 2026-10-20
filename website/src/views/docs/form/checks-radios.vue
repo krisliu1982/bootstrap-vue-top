@@ -14,7 +14,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-checks-radios" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-checks-radios" class="docs-content">
     <h1>Checks and radios 复单选</h1>
     <p class="fs-4 fw-light">
       使用我们完全重写的 checks 组件，可以创建跨浏览器和跨设备一致性的复选框和单选按钮。了解更多请阅读

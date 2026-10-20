@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy data-bs-target="#docs-nav-sizing" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-sizing" class="docs-content">
     <h1>Sizing 尺寸规格</h1>
     <p class="fs-4 fw-light">
       利用我们的“宽度”和“高度”工具，您可以轻松地将元素设置为任意宽或任意高。了解更多请阅读
