@@ -142,7 +142,14 @@
         any device.</p>
       <p>These breakpoints are customizable via Sass—you’ll find them in a Sass map in our <code>_config.scss</code>
         stylesheet.</p>
-      <CodeHighlight :code="breakpointsCode" lang="scss" label="scss/_config.scss"></CodeHighlight>
+      <CodeHighlight :code="`$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1536px
+);`" lang="scss" label="scss/_config.scss"></CodeHighlight>
       <p>For more information and examples on how to modify our Sass maps and variables, please refer to <a
           href="/docs/6.0/layout/grid#css">the CSS section of the Grid documentation</a>.</p>
       <h2 id="media-queries">Media queries<a class="anchor-link" aria-label="Link to this section: Media queries"
@@ -155,83 +162,101 @@
         </a></h3>
       <p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our
         layout, grid system, and components.</p>
-        <CodeHighlight :code="mediaQueriesCode" lang="scss"></CodeHighlight>
+        <CodeHighlight :code="`// Source mixins
+
+// No media query necessary for xs breakpoint as it’s effectively \`@media (min-width: 0) { ... }\`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(2xl) { ... }
+
+// Usage
+
+// Example: Hide starting at \`min-width: 0\`, and then show at the \`sm\` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}`" lang="scss"></CodeHighlight>
       <p>These Sass mixins translate in our compiled CSS using the values declared in our Sass variables. For example:
       </p>
-      <CodeHighlight :code="mediaQueriesCompiledCode" lang="scss"></CodeHighlight>
+      <CodeHighlight :code="`// X-Small devices (portrait phones, less than 576px)
+// No media query for \`xs\` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (width >= 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (width >= 768px) { ... }
+
+// Large devices (desktops, 1024px and up)
+@media (width >= 1024px) { ... }
+
+// X-Large devices (large desktops, 1280px and up)
+@media (width >= 1280px) { ... }
+
+// XX-Large devices (larger desktops, 1536px and up)
+@media (width >= 1536px) { ... }`" lang="scss"></CodeHighlight>
       <h3 id="max-width">Max-width<a class="anchor-link" aria-label="Link to this section: Max-width" href="#max-width">
         </a></h3>
       <p>We occasionally use media queries that go in the other direction (the given screen size <em>or smaller</em>):
       </p>
-      <CodeHighlight :code="mediaQueriesMaxCode" lang="scss"></CodeHighlight>
+      <CodeHighlight :code="`// No media query necessary for xs breakpoint as it’s effectively \`@media (max-width: 0) { ... }\`
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+@include media-breakpoint-down(xl) { ... }
+@include media-breakpoint-down(2xl) { ... }
+
+// Example: Style from medium breakpoint and down
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}`" lang="scss"></CodeHighlight>
       <p>These mixins use the breakpoint values to create <code>max-width</code> media queries using modern range
         syntax. For example:</p>
-        <CodeHighlight :code="mediaQueriesMaxCompiledCode" lang="scss"></CodeHighlight>
+        <CodeHighlight :code="`// \`xs\` returns only a ruleset and no media query
+// ... { ... }
+
+// \`sm\` applies to x-small devices (portrait phones, less than 576px)
+@media (width < 576px) { ... }
+
+// \`md\` applies to small devices (landscape phones, less than 768px)
+@media (width < 768px) { ... }
+
+// \`lg\` applies to medium devices (tablets, less than 1024px)
+@media (width < 1024px) { ... }
+
+// \`xl\` applies to large devices (desktops, less than 1280px)
+@media (width < 1280px) { ... }
+
+// \`2xl\` applies to x-large devices (large desktops, less than 1536px)
+@media (width < 1536px) { ... }`" lang="scss"></CodeHighlight>
       <h3 id="single-breakpoint">Single breakpoint<a class="anchor-link"
           aria-label="Link to this section: Single breakpoint" href="#single-breakpoint"> </a></h3>
       <p>There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and
         maximum breakpoint widths.</p>
-        <CodeHighlight :code="mediaQueriesOnlyCode" lang="scss"></CodeHighlight>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">xs</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">sm</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">lg</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">xl</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#1A95CC, #68C3FA);--shiki-light:#1A95CC;--shiki-dark:#68C3FA">2</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">xl</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+        <CodeHighlight :code="`@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+@include media-breakpoint-only(2xl) { ... }`" lang="scss"></CodeHighlight>
       <p>For example the <code>@include media-breakpoint-only(md) { ... }</code> will result in :</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">media</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> (width</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> &gt;= 768px</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8"> and</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> (width</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> &lt; 1024px</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`@media (width >= 768px) and (width < 1024px) { ... }`" lang="scss"></CodeHighlight>
       <h3 id="between-breakpoints">Between breakpoints<a class="anchor-link"
           aria-label="Link to this section: Between breakpoints" href="#between-breakpoints"> </a></h3>
       <p>Similarly, media queries may span multiple breakpoint widths:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> media-breakpoint-between</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md, xl</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`@include media-breakpoint-between(md, xl) { ... }`" lang="scss"></CodeHighlight>
       <p>Which results in:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Example</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Apply styles starting from medium devices and up to extra large devices</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">media</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> (width</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> &gt;= 768px</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8"> and</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> (width</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> &lt; 1280px</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`// Example
+// Apply styles starting from medium devices and up to extra large devices
+@media (width >= 768px) and (width < 1280px) { ... }`" lang="scss"></CodeHighlight>
       <h2 id="container-queries">Container queries<a class="anchor-link"
           aria-label="Link to this section: Container queries" href="#container-queries"> </a></h2>
       <p>In addition to viewport-based media queries, Bootstrap uses <a
@@ -268,59 +293,37 @@
         </li>
       </ul>
       <p>Here’s how the navbar implements container queries:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// The navbar is defined as a query container</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">navbar</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">  container-type</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">:</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8"> inline-size</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">;</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Responsive classes use container queries</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">lg</span><span style="color:light-dark(#1A95CC, #68C3FA);--shiki-light:#1A95CC;--shiki-dark:#68C3FA">\:</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">navbar-expand</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">  @</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">container</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> (</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">min-width</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">:</span><span style="color:light-dark(#1A95CC, #68C3FA);--shiki-light:#1A95CC;--shiki-dark:#68C3FA"> 1024</span><span style="color:light-dark(#BE273A, #F26167);--shiki-light:#BE273A;--shiki-dark:#F26167">px</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">    // Expanded navbar styles...</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  }</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`// The navbar is defined as a query container
+.navbar {
+  container-type: inline-size;
+}
+
+// Responsive classes use container queries
+.lg\:navbar-expand {
+  @container (min-width: 1024px) {
+    // Expanded navbar styles...
+  }
+}`" lang="scss"></CodeHighlight>
       <h3 id="setting-a-container">Setting a container<a class="anchor-link"
           aria-label="Link to this section: Setting a container" href="#setting-a-container"> </a></h3>
       <p>Use the <code>set-container()</code> mixin to establish an element as a query container:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Default: inline-size containment</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">my-component</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">();</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">  // Output: container-type: inline-size;</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// With explicit type</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">my-component</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">size</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">);</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">  // Output: container-type: size;</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// With a name (uses shorthand property)</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">my-component</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">inline-size</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">, sidebar</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">);</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">  // Output: container: sidebar / inline-size;</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+            <CodeHighlight :code="`// Default: inline-size containment
+.my-component {
+  @include set-container();
+  // Output: container-type: inline-size;
+}
+
+// With explicit type
+.my-component {
+  @include set-container(size);
+  // Output: container-type: size;
+}
+
+// With a name (uses shorthand property)
+.my-component {
+  @include set-container(inline-size, sidebar);
+  // Output: container: sidebar / inline-size;
+}`" lang="scss"></CodeHighlight>
       <h3 id="container-query-mixins">Container query mixins<a class="anchor-link"
           aria-label="Link to this section: Container query mixins" href="#container-query-mixins"> </a></h3>
       <p>Similar to the <code>media-breakpoint-*</code> mixins for viewport-based media queries, Bootstrap provides
@@ -329,255 +332,84 @@
           href="#min-width-1"> </a></h4>
       <p>Use <code>container-breakpoint-up()</code> to apply styles when the container is at least the given breakpoint
         width:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">my-component</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">();</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">my-component-child</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">  // …</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-up</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">    // Styles for when container is at least 768px wide</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  }</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-up</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">lg</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">    // Styles for when container is at least 1024px wide</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  }</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`.my-component {
+  @include set-container();
+}
+
+.my-component-child {
+  // …
+
+  @include container-breakpoint-up(md) {
+    // Styles for when container is at least 768px wide
+  }
+
+  @include container-breakpoint-up(lg) {
+    // Styles for when container is at least 1024px wide
+  }
+}`" lang="scss"></CodeHighlight>
       <p>These mixins use the same modern range syntax as media queries. For example:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container (width &gt;= 768px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container (width &gt;= 1024px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`@container (width >= 768px) { ... }
+@container (width >= 1024px) { ... }`" lang="scss"></CodeHighlight>
       <h4 id="max-width-1">Max-width<a class="anchor-link" aria-label="Link to this section: Max-width"
           href="#max-width-1"> </a></h4>
       <p>Use <code>container-breakpoint-down()</code> to apply styles when the container is narrower than the given
         breakpoint:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Sass usage</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-down</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">lg</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Compiled CSS</span></span>
-<span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container (width &lt; 1024px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`// Sass usage
+@include container-breakpoint-down(lg) { ... }
+
+// Compiled CSS
+@container (width < 1024px) { ... }`" lang="scss"></CodeHighlight>
       <h4 id="single-breakpoint-1">Single breakpoint<a class="anchor-link"
           aria-label="Link to this section: Single breakpoint" href="#single-breakpoint-1"> </a></h4>
       <p>Use <code>container-breakpoint-only()</code> to target a single breakpoint range:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Sass usage</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-only</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Compiled CSS</span></span>
-<span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container (width &gt;= 768px) and (width &lt; 1024px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`// Sass usage
+@include container-breakpoint-only(md) { ... }
+
+// Compiled CSS
+@container (width >= 768px) and (width < 1024px) { ... }`" lang="scss"></CodeHighlight> 
       <h4 id="between-breakpoints-1">Between breakpoints<a class="anchor-link"
           aria-label="Link to this section: Between breakpoints" href="#between-breakpoints-1"> </a></h4>
       <p>Use <code>container-breakpoint-between()</code> to span multiple breakpoint widths:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Sass usage</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">@</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-between</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md, xl</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Compiled CSS</span></span>
-<span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container (width &gt;= 768px) and (width &lt; 1280px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`// Sass usage
+@include container-breakpoint-between(md, xl) { ... }
+
+// Compiled CSS
+@container (width >= 768px) and (width < 1280px) { ... }`" lang="scss"></CodeHighlight>
       <h3 id="named-containers">Named containers<a class="anchor-link"
           aria-label="Link to this section: Named containers" href="#named-containers"> </a></h3>
       <p>All container query mixins accept an optional container name parameter for querying a specific ancestor
         container. This is useful when you have nested containers:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">sidebar</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">inline-size</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">, sidebar</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">);</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">main-content</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> set-container</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#00B4F8, #00B4F8);--shiki-light:#00B4F8;--shiki-dark:#00B4F8">inline-size</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">, main</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">);</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">// Query the sidebar container specifically, even if nested inside main</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">.</span><span style="color:light-dark(#169D96, #5FCBC4);--shiki-light:#169D96;--shiki-dark:#5FCBC4">widget</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  @</span><span style="color:light-dark(#E12871, #ED618B);--shiki-light:#E12871;--shiki-dark:#ED618B">include</span><span style="color:light-dark(#7740FF, #9C68FF);--shiki-light:#7740FF;--shiki-dark:#9C68FF"> container-breakpoint-up</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">(</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">md, sidebar</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">)</span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D"> {</span></span>
-<span class="line"><span style="color:light-dark(#636C74, #636C74);--shiki-light:#636C74;--shiki-dark:#636C74">    // …</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">  }</span></span>
-<span class="line"><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
+      <CodeHighlight :code="`.sidebar {
+  @include set-container(inline-size, sidebar);
+}
+
+.main-content {
+  @include set-container(inline-size, main);
+}
+
+// Query the sidebar container specifically, even if nested inside main
+.widget {
+  @include container-breakpoint-up(md, sidebar) {
+    // …
+  }
+}`" lang="scss"></CodeHighlight>
       <p>The compiled output includes the container name:</p>
-      <div class="bd-code-snippet" data-pagefind-ignore="">
-        <div class="hstack highlight-toolbar align-items-center">
-          <div class="font-monospace text-uppercase fs-xs fg-3">SCSS</div>
-          <div class="d-flex ms-auto align-items-center gap-1"><button type="button"
-              class="btn btn-xs btn-icon bg-transparent" data-bd-clipboard="" aria-label="Copy"
-              data-bs-original-title="Copy"><svg class="bi fs-md" aria-hidden="true">
-                <use href="#copy"></use>
-              </svg></button></div>
-        </div>
-        <pre class="astro-code astro-code-themes  ">          <code><span class="line"><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8">@container sidebar (width &gt;= 768px) </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">{</span><span style="color:light-dark(#0B0C0D, #F6F7F8);--shiki-light:#0B0C0D;--shiki-dark:#F6F7F8"> ... </span><span style="color:light-dark(#50575D, #50575D);--shiki-light:#50575D;--shiki-dark:#50575D">}</span></span></code>
-        </pre>
-      </div>
-      <nav class="bd-links-nav py-9 mt-9 border-top">
-        <div class="d-flex flex-column md:flex-row justify-content-stretch gap-3 md:gap-5 lh-1"><a
+            <CodeHighlight :code="`@container sidebar (width >= 768px) { ... }`" lang="scss"></CodeHighlight>
+            
+      <nav class="docs-links-nav py-9">
+        <div class="d-flex justify-content-stretch gap-9 lh-1">
+          <a
             href="/docs/6.0/customize/optimize/"
-            class="d-flex flex-column gap-2 p-5 text-decoration-none border rounded-5 flex-grow-1" rel="prev">
+            class="d-flex flex-column gap-3 text-decoration-none text-end flex-grow-1" rel="prev">
             <div class="fg-3">← Previous</div>
             <div class="fw-semibold">Optimize</div>
             <div class="fg-3">Customize</div>
           </a><a href="/docs/6.0/layout/containers/"
-            class="d-flex flex-column gap-2 p-5 text-decoration-none text-end border rounded-5 flex-grow-1" rel="next">
+            class="d-flex flex-column gap-3 text-decoration-none flex-grow-1" rel="next">
             <div class="fg-3">Next →</div>
             <div class="fw-semibold">Containers</div>
             <div class="fg-3">Layout</div>
           </a></div>
       </nav>
     </div>
-
 </template>
-
-<script setup>
-const breakpointsCode = 
-`$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1280px,
-  2xl: 1536px
-);`;
-
-const mediaQueriesCode = 
-`// Source mixins
-
-// No media query necessary for xs breakpoint as it’s effectively \`@media (min-width: 0) { ... }\`
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-@include media-breakpoint-up(2xl) { ... }
-
-// Usage
-
-// Example: Hide starting at \`min-width: 0\`, and then show at the \`sm\` breakpoint
-.custom-class {
-  display: none;
-}
-@include media-breakpoint-up(sm) {
-  .custom-class {
-    display: block;
-  }
-}`;
-
-const mediaQueriesCompiledCode = 
-`// X-Small devices (portrait phones, less than 576px)
-// No media query for \`xs\` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (width >= 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (width >= 768px) { ... }
-
-// Large devices (desktops, 1024px and up)
-@media (width >= 1024px) { ... }
-
-// X-Large devices (large desktops, 1280px and up)
-@media (width >= 1280px) { ... }
-
-// XX-Large devices (larger desktops, 1536px and up)
-@media (width >= 1536px) { ... }`;
-
-const mediaQueriesMaxCode = 
-`// No media query necessary for xs breakpoint as it’s effectively \`@media (max-width: 0) { ... }\`
-@include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... }
-@include media-breakpoint-down(xl) { ... }
-@include media-breakpoint-down(2xl) { ... }
-
-// Example: Style from medium breakpoint and down
-@include media-breakpoint-down(md) {
-  .custom-class {
-    display: block;
-  }
-}`;
-
-const mediaQueriesMaxCompiledCode = 
-`// \`xs\` returns only a ruleset and no media query
-// ... { ... }
-
-// \`sm\` applies to x-small devices (portrait phones, less than 576px)
-@media (width < 576px) { ... }
-
-// \`md\` applies to small devices (landscape phones, less than 768px)
-@media (width < 768px) { ... }
-
-// \`lg\` applies to medium devices (tablets, less than 1024px)
-@media (width < 1024px) { ... }
-
-// \`xl\` applies to large devices (desktops, less than 1280px)
-@media (width < 1280px) { ... }
-
-// \`2xl\` applies to x-large devices (large desktops, less than 1536px)
-@media (width < 1536px) { ... }`;
-
-const mediaQueriesOnlyCode = 
-`@include media-breakpoint-only(xs) { ... }
-@include media-breakpoint-only(sm) { ... }
-@include media-breakpoint-only(md) { ... }
-@include media-breakpoint-only(lg) { ... }
-@include media-breakpoint-only(xl) { ... }
-@include media-breakpoint-only(2xl) { ... }`;
-</script>

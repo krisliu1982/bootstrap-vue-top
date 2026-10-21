@@ -1,5 +1,5 @@
 <template>
-  <div class="border rounded overflow-hidden" data-pagefind-ignore>
+  <div class="border rounded" data-pagefind-ignore>
     <div class="d-flex align-items-center px-5 py-3 bg-2 border-bottom">
       <div class="font-monospace fs-xs fg-2">{{ label }}</div>
       <div class="ms-auto">
