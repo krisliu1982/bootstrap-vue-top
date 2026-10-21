@@ -2,20 +2,13 @@
 
 基于 Bootstrap 5.3.8 & Vue 3.5.x 的前端组件库
 
-## 简介
 
-这是一个现代化的前端框架解决方案，将 Bootstrap 5.3.8 与 Vue 3.5.x 完美结合，充分利用双方的优势：Bootstrap 5 提供了强大的 UI 组件库和响应式布局系统，而 Vue 3 则带来了高效的数据驱动响应式渲染和 Composition API。
+## 主要特点
 
-框架严格遵循"样式用 Bootstrap，行为用 Vue"的架构范式，完全继承 Bootstrap 的原子化工具类（间距、字体、颜色、Flex/Grid），开发者无需学习新的 CSS 类名，可直接使用原生类名如 `d-flex`、`text-primary`、`mb-3` 等来控制外观。
-
-Bootstrap 官方文档中描述的所有样式类（如表格条纹、卡片分组、栅格偏移等）均可直接在 Vue 项目中使用，降低了团队的学习和迁移成本。
-
-## 特性
-
-- **Vue 3 + Composition API**: 使用 Vue 3 最新特性开发
-- **Bootstrap 5 样式**: 完全继承 Bootstrap 5 的全部样式类
-- **组件丰富**: 提供 20+ 常用组件
-- **文档完善**: 配套完整的中文文档网站
+- 所有 Bootstrap 官方文档中的样式类和JS组件在项目中直接使用，降低了团队的学习与迁移成本。
+- 交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件，避免过渡 Vue 组件化带来的臃肿与通讯问题。
+- 完全继承 Bootstrap 自定义功能，能设计出自己喜欢的主题。
+- 配套完整的[中文文档网站](https://bootstrap-vue.top)
 
 
 ## 安装
@@ -93,24 +86,7 @@ onBeforeUnmount(() => {
 
 ## 开发
 
-```bash
-# 安装依赖
-npm install
-
-# 启动开发服务器
-npm run dev
-
-# 构建生产版本
-npm run build
-```
-
-### 开发文档网站
-
-```bash
-cd website
-npm install
-npm run dev
-```
+请参考[例子](https://gitee.com/asdfghjkl012345/bootstrap-vue/tree/master/example)
 
 
 ## 浏览器支持

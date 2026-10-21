@@ -17,16 +17,10 @@
     </h2>
     <ul class="docs-content-list">
       <li>
-        <p>
-          严格遵循“样式归 Bootstrap，行为归 Vue”的架构范式。完全继承 Bootstrap 的原子化工具类，开发者无需学习新的
-          CSS类名，直接使用 d-flex、text-primary、mb-3 等原生类名控制外观。
-        </p>
+        <p>所有 Bootstrap 官方文档中的样式类和JS组件在项目中直接使用，降低了团队的学习与迁移成本。</p>
       </li>
       <li>
-        <p>所有 Bootstrap 官方文档中关于样式类的说明在Vue项目中直接适用，降低了团队的学习与迁移成本。</p>
-      </li>
-      <li>
-        <p>交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件，避免过渡组件化带来的臃肿。</p>
+        <p>交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件，避免过渡 Vue 组件化带来的臃肿与通讯问题。</p>
       </li>
       <li>
         <p>完全继承 Bootstrap 自定义功能，能设计出自己喜欢的主题。</p>

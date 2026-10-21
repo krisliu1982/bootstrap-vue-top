@@ -63,7 +63,7 @@
 
   <bv-offcanvas
     ref="navbarRef"
-    title="BootstrapVue"
+    title="bootstrap-vue-top"
     offcanvas-class="offcanvas offcanvas-end"
     offcanvas-style="--bs-offcanvas-width:75vw;"
   >
