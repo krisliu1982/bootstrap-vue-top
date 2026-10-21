@@ -357,14 +357,10 @@ const router = createRouter({
     // 处理锚点
     if (to.hash) {
       // 返回一个 Promise，确保等待 DOM 更新
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve({
+      return {
             el: to.hash,
-            top: remToPx(4) // 考虑固定导航栏高度
-          });
-        }, 300); // 等待时间，根据页面复杂度调整
-      });
+            top: remToPx(4) // 固定导航栏高度
+          };
     }
 
     if (savedPosition) {

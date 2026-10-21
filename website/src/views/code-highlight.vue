@@ -1,40 +1,32 @@
 <template>
-  <div class="docs-example-code">
-    <div class="position-absolute top-0 end-0 d-flex align-items-center p-2">
-      <small class="text-body-secondary me-3">{{ label }}</small>
-      <div v-if="isCopy" class="text-success"><BiCheckLg /></div>
-      <a v-else role="button" @click="handleCopy" title="Copy"><BiCopy /></a>
+  <div class="border rounded overflow-hidden" data-pagefind-ignore>
+    <div class="d-flex align-items-center px-5 py-3 bg-2 border-bottom">
+      <div class="font-monospace fs-xs fg-2">{{ label }}</div>
+      <div class="ms-auto">
+        <BiCheckLg v-if="isCopy" class="fg-success" />
+        <a v-else role="button" class="fg-body" title="Copy" aria-label="Copy" @click="handleCopy">
+          <BiCopy />
+        </a>
+      </div>
     </div>
-    <pre><code ref="codeRef" :class="languageClass">{{ code }}</code></pre>
+    <div v-html="html"></div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
-import Prism from 'prismjs';
-import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
-// 引入 SCSS 语言支持
-import 'prismjs/components/prism-scss.min';
-// 引入 bash 语言支持
-import 'prismjs/components/prism-bash.min';
+import { ref, onMounted, computed } from 'vue';
+import { codeToHtml } from 'shiki'
 
-// 配置插件，解决首尾空行问题
-Prism.plugins.NormalizeWhitespace.setDefaults({
-  'remove-trailing': true, // 移除每行行尾空格
-  'remove-indent': true, // 移除多余缩进
-  'left-trim': true, // 移除代码块顶部空白
-  'right-trim': true // 移除代码块底部空白
-});
 
-const codeRef = ref(null);
+const html = ref(null);
 const props = defineProps({
   code: {
     type: String,
     default: null
   },
-  type: {
+  lang: {
     type: String,
-    default: 'html'
+    default: null
   },
   label: {
     type: String,
@@ -42,25 +34,34 @@ const props = defineProps({
   }
 });
 
-onMounted(() => {
-  Prism.highlightElement(codeRef.value);
-});
-
-const languageClass = computed(() => {
-  if (props.type === 'html') {
-    return 'language-html';
-  } else if (props.type === 'vue') {
-    return 'language-html';
-  } else if (props.type === 'scss') {
-    return 'language-scss';
-  } else if (props.type === 'css') {
-    return 'language-css';
-  } else if (props.type === 'js') {
-    return 'language-javascript';
-  } else if (props.type === 'bash') {
-    return 'language-bash';
+const label = computed(() => {
+  if (props.label) {
+    return props.label;
+  } else if (props.lang) {
+    return props.lang.toUpperCase();
+  } else {
+    return '';
   }
 });
+
+onMounted(async () => {
+  html.value = await codeToHtml(props.code, {
+    lang: props.lang,
+    themes: {
+      light: 'github-light',
+      dark: 'github-dark',
+    },
+    defaultColor: 'light-dark()',
+    transformers: [
+    {
+      pre(node) {
+        this.addClassToHast(node, 'p-5')
+      }
+    }
+  ]
+  });
+});
+
 
 const isCopy = ref(false);
 function handleCopy() {

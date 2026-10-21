@@ -113,10 +113,6 @@ watch(
 );
 
 //主题修改
-const linkPrism = document.createElement('link');
-linkPrism.id = 'prism-theme';
-linkPrism.rel = 'stylesheet';
-document.head.appendChild(linkPrism);
 function getTheme() {
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme === null) {
@@ -129,12 +125,6 @@ const theme = ref(getTheme());
 watch(
   theme,
   (newVal) => {
-    if (newVal === 'light') {
-      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
-    } else if (newVal === 'dark') {
-      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css';
-    }
-
     document.documentElement.setAttribute('data-bs-theme', newVal);
     localStorage.setItem('theme', newVal);
   },
