@@ -125,26 +125,6 @@ display: grid;
   scroll-margin-block-end: 100px;
 }
 
-
-.docs-content-flex-util div:not(.vr) {
-  background-color: var(--bs-primary-bg-subtle);
-  border: 1px solid rgba(var(--bs-primary-rgb), .75);
-}
-
-
-.docs-toc-menu nav a {
-  display: block;
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
-  padding: .25rem 1rem;
-  color: var(--bs-secondary-color);
-  text-decoration: none;
-}
-
-.docs-toc-menu nav a:hover {
-  color: var(--bs-tertiary-color);
-}
-
 .anchor-link {
   padding: 0 0.5rem;
   font-weight: 400;
@@ -165,31 +145,60 @@ display: grid;
   opacity: 1;
 }
 
+.docs-callout {
+    --link-color: var(--docs-callout-color);
+    --link-hover-color: var(--docs-callout-color);
+    --code-color: var(--docs-callout-color);
+    color: var(--docs-callout-color, var(--body-color));
+    background-color: var(--docs-callout-bg, var(--gray-100));
+    border: 1px solid var(--docs-callout-border, var(--border-color));
+    border-radius: var(--radius-5);
+    padding: 1rem 1rem 1rem 1.75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    position: relative;
+    container-type: inline-size;
+}
+
+.docs-callout:before {
+    --offset: .5rem;
+    inset: var(--offset) auto var(--offset) var(--offset);
+    content: "";
+    background-color: var(--docs-callout-band, var(--docs-callout-border, var(--gray-300)));
+    border-radius: var(--radius-2);
+    width: .25rem;
+    position: absolute;
+}
+
+.docs-callout-info {
+    --docs-callout-color: var(--info-fg-emphasis);
+    --docs-callout-bg:  color-mix(in oklch, var(--info-bg-subtle), transparent 50%);
+    --docs-callout-border: var(--info-border);
+    --docs-callout-band:  color-mix(in oklch, var(--info-border), var(--info-fg-emphasis));
+}
+
 .docs-example {
-  margin-bottom: 1rem;
+  display: flow-root;
+  position: relative;
+  border: 1px solid var(--border);
 }
 
 .docs-example-data {
-  border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  padding: 1rem;
-  margin-bottom: 0.5rem;
+  display: flow-root;
+  position: relative;
+  border: 1px solid var(--border-subtle);
 }
 
 .docs-example-code {
+  display: flow-root;
   position: relative;
-}
-
-.docs-example-code pre[class*='language-'] {
-  border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--border-subtle);
 }
 
 .docs-border-utils [class^=border] {
   width: 5rem;
   height: 5rem;
-  background-color: var(--bs-tertiary-bg);
+  background-color: var(--tertiary-bg);
 }
 
 .docs-placeholder-img {
