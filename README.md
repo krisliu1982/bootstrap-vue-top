@@ -6,9 +6,9 @@
 ## 主要特点
 
 - 所有 Bootstrap 官方文档中的样式类和JS组件在项目中直接使用，降低了团队的学习与迁移成本。
-- 交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件，避免过渡 Vue 组件化带来的臃肿与通讯问题。
+- 交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件。避免组件臃肿，组件过度封装和组件通信复杂。
 - 完全继承 Bootstrap 自定义功能，能设计出自己喜欢的主题。
-- 配套完整的[中文文档网站](https://bootstrap-vue.top)
+- 配套完整的中文文档网站 [https://bootstrap-vue.top](https://bootstrap-vue.top)
 
 
 ## 安装
