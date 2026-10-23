@@ -65,7 +65,7 @@ display: grid;
   grid-template-areas:
     'intro   toc'
     'content toc';
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 1.5rem;
   } 
@@ -269,6 +269,14 @@ color-mix(in srgb, var(--docs-violet) 30%, transparent);
     background-color: 
 color-mix(in srgb, var(--docs-violet) 15%, transparent);
     min-height: 10rem;
+}
+
+.docs-example-row [class^=col], .docs-example-cols [class^=col]>*, .docs-example-cssgrid [class*=grid]>* {
+    background-color: 
+color-mix(in srgb, var(--docs-violet) 15%, transparent);
+    border: 1px solid 
+color-mix(in srgb, var(--docs-violet) 30%, transparent);
+    padding-block: .75rem;
 }
 
 .docs-border-utils [class^=border] {

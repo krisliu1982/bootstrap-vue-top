@@ -42,6 +42,14 @@ var routes = [
         component: () => import('@/views/docs/layout/columns.vue')
       },
       {
+        path: '/docs/layout/gutters',
+        component: () => import('@/views/docs/layout/gutters.vue')
+      },
+            {
+        path: '/docs/layout/utilities',
+        component: () => import('@/views/docs/layout/utilities.vue')
+      },
+      {
         path: '/docs/layout/z-index',
         component: () => import('@/views/docs/layout/z-index.vue')
       },

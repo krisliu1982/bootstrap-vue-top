@@ -28,7 +28,7 @@
     </nav>
   </div>
 
-  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents">
+  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
     <h2 id="core-concepts">核心概念<a class="anchor-link" aria-label="链接到本节：核心概念"
         href="#core-concepts"> </a></h2>
     <ul>

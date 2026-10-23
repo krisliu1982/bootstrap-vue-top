@@ -1,51 +1,41 @@
 <template>
     <div class="docs-intro pt-5 md:pt-2 lg:ps-2">
-        <h1>Gutters</h1>
-        <p>Gutters are the padding between your columns, used to responsively space and align content in the
-            Bootstrap grid system.</p>
+        <h1>间隔</h1>
+        <p>间隔是列之间的内边距，用于在 Bootstrap 网格系统中以响应式方式调整内容间距和对齐。</p>
     </div>
     <div class="docs-toc">
-
-        <nav id="TableOfContents" aria-label="Table of contents">
+        <nav id="TableOfContents" aria-label="目录">
             <ul>
-                <li><a href="#how-they-work">How they work</a></li>
-                <li><a href="#horizontal-gutters">Horizontal gutters</a></li>
-                <li><a href="#vertical-gutters">Vertical gutters</a></li>
-                <li><a href="#horizontal--vertical-gutters">Horizontal &amp; vertical
-                        gutters</a></li>
-                <li><a href="#row-columns-gutters">Row columns gutters</a></li>
-                <li><a href="#no-gutters">No gutters</a></li>
-                <li><a href="#change-the-gutters">Change the gutters</a></li>
+                <li><a href="#how-they-work">工作原理</a></li>
+                <li><a href="#horizontal-gutters">水平间隔</a></li>
+                <li><a href="#vertical-gutters">垂直间隔</a></li>
+                <li><a href="#horizontal--vertical-gutters">水平与垂直间隔</a></li>
+                <li><a href="#row-columns-gutters">行列间隔</a></li>
+                <li><a href="#no-gutters">无间隔</a></li>
+                <li><a href="#change-the-gutters">更改间隔</a></li>
             </ul>
         </nav>
     </div>
-    <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents">
-        <h2 id="how-they-work">How they work<a class="anchor-link" aria-label="Link to this section: How they work"
+    <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
+        <h2 id="how-they-work">工作原理<a class="anchor-link" aria-label="链接到此部分：工作原理"
                 href="#how-they-work"> </a></h2>
         <ul>
             <li>
-                <p><strong>Gutters are the gaps between column content, created by horizontal
-                        <code>padding</code>.</strong> We set <code>padding-right</code> and
-                    <code>padding-left</code> on each column, and use negative <code>margin</code> to offset that at
-                    the start and end of each row to align content.
+                <p><strong>间隔是列内容之间的间隙，由水平 <code>padding</code> 创建。</strong>我们在每一列上设置 <code>padding-right</code> 和
+                    <code>padding-left</code>，并使用负 <code>margin</code> 在每一行的开头和结尾抵消它，以对齐内容。
                 </p>
             </li>
             <li>
-                <p><strong>Gutters start at <code>1.5rem</code> (<code>24px</code>) wide.</strong> This allows us to
-                    match our grid to the <a href="/docs/6.0/utilities/margin">margin</a> and <a
-                        href="/docs/6.0/utilities/padding">padding</a> utilities scale.</p>
+                <p><strong>间隔初始宽度为 <code>1.5rem</code>（<code>24px</code>）。</strong>这使我们能够将网格与 <a href="/docs/6.0/utilities/margin">外边距</a>和 <a
+                        href="/docs/6.0/utilities/padding">内边距</a>工具的比例相匹配。</p>
             </li>
             <li>
-                <p><strong>Gutters can be responsively adjusted.</strong> Use breakpoint-specific gutter classes to
-                    modify horizontal gutters, vertical gutters, and all gutters.</p>
+                <p><strong>间隔可以响应式调整。</strong>使用特定断点的间隔类来修改水平间隔、垂直间隔以及所有间隔。</p>
             </li>
         </ul>
-        <h2 id="horizontal-gutters">Horizontal gutters<a class="anchor-link"
-                aria-label="Link to this section: Horizontal gutters" href="#horizontal-gutters"> </a></h2>
-        <p><code>.gx-*</code> classes can be used to control the horizontal gutter widths. The
-            <code>.container</code> or <code>.container-fluid</code> parent may need to be adjusted if larger
-            gutters are used too to avoid unwanted overflow, using a matching padding utility. For example, in the
-            following example we’ve increased the padding with <code>.px-4</code>:
+        <h2 id="horizontal-gutters">水平间隔<a class="anchor-link"
+                aria-label="链接到此部分：水平间隔" href="#horizontal-gutters"> </a></h2>
+        <p><code>.gx-*</code> 类可用于控制水平间隔宽度。如果使用较大的间隔，可能还需要调整 <code>.container</code> 或 <code>.container-fluid</code> 父元素，以避免不希望的溢出，可使用匹配的内边距工具。例如，在以下示例中，我们使用 <code>.px-4</code> 增加了内边距：
         </p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-cols">
@@ -71,8 +61,7 @@
   </div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <p>An alternative solution is to add a wrapper around the <code>.row</code> with the
-            <code>.overflow-hidden</code> class:
+        <p>另一种解决方案是在 <code>.row</code> 周围添加一个带有 <code>.overflow-hidden</code> 类的包装器：
         </p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-cols">
@@ -98,12 +87,9 @@
   </div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <h2 id="vertical-gutters">Vertical gutters<a class="anchor-link"
-                aria-label="Link to this section: Vertical gutters" href="#vertical-gutters"> </a></h2>
-        <p><code>.gy-*</code> classes can be used to control the vertical gutter widths within a row when columns
-            wrap to new lines. Like the horizontal gutters, the vertical gutters can cause some overflow below the
-            <code>.row</code> at the end of a page. If this occurs, you add a wrapper around <code>.row</code> with
-            the <code>.overflow-hidden</code> class:
+        <h2 id="vertical-gutters">垂直间隔<a class="anchor-link"
+                aria-label="链接到此部分：垂直间隔" href="#vertical-gutters"> </a></h2>
+        <p><code>.gy-*</code> 类可用于在列换行到新行时控制行内的垂直间隔宽度。与水平间隔一样，垂直间隔可能会导致页面末尾 <code>.row</code> 下方出现一些溢出。如果发生这种情况，可以在 <code>.row</code> 周围添加一个带有 <code>.overflow-hidden</code> 类的包装器：
         </p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-cols">
@@ -141,12 +127,10 @@
   </div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <h2 id="horizontal--vertical-gutters">Horizontal &amp; vertical gutters<a class="anchor-link"
-                aria-label="Link to this section: Horizontal &amp; vertical gutters"
+        <h2 id="horizontal--vertical-gutters">水平与垂直间隔<a class="anchor-link"
+                aria-label="链接到此部分：水平与垂直间隔"
                 href="#horizontal--vertical-gutters"> </a></h2>
-        <p>Use <code>.g-*</code> classes to control the horizontal and vertical grid gutters. In the example below,
-            we use a smaller gutter width, so there isn’t a need for the <code>.overflow-hidden</code> wrapper
-            class.</p>
+        <p>使用 <code>.g-*</code> 类来控制水平和垂直网格间隔。在下面的示例中，我们使用了较小的间隔宽度，因此不需要 <code>.overflow-hidden</code> 包装类。</p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-cols">
                 <div class="container text-center">
@@ -183,10 +167,9 @@
   </div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <h2 id="row-columns-gutters">Row columns gutters<a class="anchor-link"
-                aria-label="Link to this section: Row columns gutters" href="#row-columns-gutters"> </a></h2>
-        <p>Gutter classes can also be added to <a href="/docs/6.0/layout/grid#row-columns">row columns</a>. In the
-            following example, we use responsive row columns and responsive gutter classes.</p>
+        <h2 id="row-columns-gutters">行列间隔<a class="anchor-link"
+                aria-label="链接到此部分：行列间隔" href="#row-columns-gutters"> </a></h2>
+        <p>间隔类也可以添加到<a href="/docs/6.0/layout/grid#row-columns">行列</a>上。在以下示例中，我们使用了响应式行列和响应式间隔类。</p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-cols">
                 <div class="container text-center">
@@ -259,16 +242,13 @@
   </div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <h2 id="no-gutters">No gutters<a class="anchor-link" aria-label="Link to this section: No gutters"
+        <h2 id="no-gutters">无间隔<a class="anchor-link" aria-label="链接到此部分：无间隔"
                 href="#no-gutters"> </a></h2>
-        <p>The gutters between columns in our predefined grid classes can be removed with <code>.g-0</code>. This
-            removes the negative <code>margin</code>s from <code>.row</code> and the horizontal <code>padding</code>
-            from all immediate children columns.</p>
-        <p><strong>Need an edge-to-edge design?</strong> Drop the parent <code>.container</code> or
-            <code>.container-fluid</code> and add <code>.mx-0</code> to the <code>.row</code> to prevent overflow.
+        <p>我们预定义网格类中列之间的间隔可以通过 <code>.g-0</code> 移除。这会移除 <code>.row</code> 上的负 <code>margin</code> 以及所有直接子列上的水平 <code>padding</code>。</p>
+        <p><strong>需要边缘到边缘的设计？</strong>去掉父级 <code>.container</code> 或
+            <code>.container-fluid</code>，并在 <code>.row</code> 上添加 <code>.mx-0</code> 以防止溢出。
         </p>
-        <p>In practice, here’s how it looks. Note that you can continue to use this with all other predefined grid
-            classes (including column widths, responsive tiers, reorders, and more).</p>
+        <p>实际效果如下。请注意，你可以继续将其与所有其他预定义网格类（包括列宽、响应式层级、重新排序等）一起使用。</p>
         <div class="docs-example-snippet docs-code-snippet not-prose" data-pagefind-ignore>
             <div class="docs-example docs-example-row">
                 <div class="row g-0 text-center">
@@ -281,10 +261,9 @@
   <div class="col-6 md:col-4">.col-6 .md:col-4</div>
 </div>`' lang="html"></CodeHighlight>
         </div>
-        <h2 id="change-the-gutters">Change the gutters<a class="anchor-link"
-                aria-label="Link to this section: Change the gutters" href="#change-the-gutters"> </a></h2>
-        <p>Classes are built from the <code>$gutters</code> Sass map which is inherited from the
-            <code>$spacers</code> Sass map.
+        <h2 id="change-the-gutters">更改间隔<a class="anchor-link"
+                aria-label="链接到此部分：更改间隔" href="#change-the-gutters"> </a></h2>
+        <p>这些类由 <code>$gutters</code> Sass 映射构建，该映射继承自 <code>$spacers</code> Sass 映射。
         </p>
         <div class="docs-code-snippet" data-pagefind-ignore>
             <CodeHighlight :code='`$grid-gutter-x: 1.5rem;
@@ -294,14 +273,14 @@ $gutters: $spacers;`' lang="scss"></CodeHighlight>
         <nav class="docs-links-nav py-9">
             <div class="d-flex justify-content-stretch gap-9 lh-1"><a href="/docs/6.0/layout/columns/"
                     class="d-flex flex-column gap-3 text-decoration-none text-end flex-grow-1" rel="prev">
-                    <div class="fg-3">← Previous</div>
-                    <div class="fw-semibold">Columns</div>
-                    <div class="fg-3">Layout</div>
+                    <div class="fg-3">← 上一页</div>
+                    <div class="fw-semibold">列</div>
+                    <div class="fg-3">布局</div>
                 </a><a href="/docs/6.0/layout/utilities/"
                     class="d-flex flex-column gap-3 text-decoration-none flex-grow-1" rel="next">
-                    <div class="fg-3">Next →</div>
-                    <div class="fw-semibold">Utilities</div>
-                    <div class="fg-3">Layout</div>
+                    <div class="fg-3">下一页 →</div>
+                    <div class="fw-semibold">工具</div>
+                    <div class="fg-3">布局</div>
                 </a></div>
         </nav>
     </div>

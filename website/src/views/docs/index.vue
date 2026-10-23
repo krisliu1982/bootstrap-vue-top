@@ -56,8 +56,16 @@
                 <RouterLink to="/docs/layout/columns" class="docs-sidebar-link" exact-active-class="active">Columns 列
                 </RouterLink>
               </li>
+                                          <li>
+                <RouterLink to="/docs/layout/gutters" class="docs-sidebar-link" exact-active-class="active">Gutters 间隔
+                </RouterLink>
+              </li>
+                                                        <li>
+                <RouterLink to="/docs/layout/utilities" class="docs-sidebar-link" exact-active-class="active">Utilities 工具
+                </RouterLink>
+              </li>
               <li>
-                <RouterLink to="/docs/layout/z-index" class="docs-sidebar-link" exact-active-class="active">Z-index 层级
+                <RouterLink to="/docs/layout/z-index" class="docs-sidebar-link" exact-active-class="active">Z-index 层叠上下文
                 </RouterLink>
               </li>
             </ul>

@@ -1,53 +1,57 @@
 <template>
-  <div class="docs-toc-nav">
-    <nav v-docstoc id="docs-nav-z-index">
-      <a href="#z-index-about">工作说明</a>
-    </nav>
-  </div>
-
-  <div v-scrollspy.body data-bs-target="#docs-nav-z-index" class="docs-content">
+  <div class="docs-intro">
     <h1>Z-index</h1>
-    <p class="fs-4 fw-light">
-      虽然不是 Bootstrap 网格系统的一部分，但 z-index
-      在决定我们的组件如何相互叠放和交互方面发挥着重要作用。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/z-index/" target="_blank">Bootstrap Z-index</a>
+    <p>While not a part of Bootstrap’s grid system, z-indexes play an important part in how our components overlay
+      and interact with one another.</p>
+  </div>
+  <div class="docs-toc">
+  </div>
+  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
+    <p>Several Bootstrap components utilize <code>z-index</code>, the CSS property that helps control layout by
+      providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed
+      to properly layer navigation, tooltips and popovers, modals, and more.</p>
+    <p>These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need
+      a standard set of these across our layered components—tooltips, popovers, navbars, menus, modals—so we can be
+      reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code>100</code>+ or
+      <code>500</code>+.
+    </p>
+    <p>We don’t encourage customization of these individual values; should you change one, you likely need to change
+      them all.</p>
+    <div class="docs-code-snippet docs-example-snippet" data-pagefind-ignore="">
+      <CodeHighlight :code='`$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  menu: 1000,
+  sticky: 1010,
+  fixed: 1020,
+  drawer: 1030,
+  dialog: 1040,
+  popover: 1050,
+  tooltip: 1060,
+  toast: 1070,
+);`' lang="scss" label="scss/_config.scss"></CodeHighlight>
+    </div>
+    <p>To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single
+      digit <code>z-index</code> values of <code>1</code>, <code>2</code>, and <code>3</code> for default, hover, and
+      active states. On hover/focus/active, we bring a particular element to the forefront with a higher
+      <code>z-index</code> value to show their border over the sibling elements.
     </p>
 
-    <nav v-docstoc id="docs-nav-changelog">
-      <a href="#z-index-about">工作说明</a>
+    <nav class="docs-links-nav py-9">
+      <div class="d-flex justify-content-stretch gap-9 lh-1"><a href="/docs/6.0/layout/utilities/"
+          class="d-flex flex-column gap-3 text-decoration-none text-end flex-grow-1" rel="prev">
+          <div class="fg-3">← Previous</div>
+          <div class="fw-semibold">Utilities</div>
+          <div class="fg-3">Layout</div>
+        </a><a href="/docs/6.0/layout/css-grid/" class="d-flex flex-column gap-3 text-decoration-none flex-grow-1"
+          rel="next">
+          <div class="fg-3">Next →</div>
+          <div class="fw-semibold">CSS Grid</div>
+          <div class="fg-3">Layout</div>
+        </a></div>
     </nav>
-    <p>
-      Bootstrap 的多个组件都使用了 <code>z-index</code> 这个 CSS
-      属性，它通过提供第三轴来排列内容，从而帮助控制布局。我们在 Bootstrap 中采用了一套默认的 z-index
-      等级体系，专门设计用于正确分层导航栏、工具提示、弹出框、模态框等元素。
-    </p>
-    <p>
-      这些较高的数值从某个任意数字开始，既足够高又足够具体，以尽可能避免冲突。我们需要为这些分层组件——工具提示、弹出框、导航栏、下拉菜单、模态框——设定一套标准值，以便在行为上保持合理的一致性。我们完全可以使用
-      <code>100</code>+ 或 <code>500</code>+ 这样的数值，没有理由不行。
-    </p>
-    <p>我们不鼓励对这些单个值进行自定义；如果你更改了其中一个，很可能需要同时更改所有值。</p>
-
-    <code-highlight type="scss" :code="css1Code" label="scss" />
   </div>
 </template>
-
-<script setup>
-const css1Code = `
-// style/index.scss(自定义变量)
-$zindex-backtop:                    990;
-$zindex-image-preview:              1082;
-$zindex-loading-fullscreen:         1083;
-$zindex-alert:                      1085;
-
-// scss/_variables.scss(Bootstrap)
-$zindex-dropdown:                   1000;
-$zindex-sticky:                     1020;
-$zindex-fixed:                      1030;
-$zindex-offcanvas-backdrop:         1040;
-$zindex-offcanvas:                  1045;
-$zindex-modal-backdrop:             1050;
-$zindex-modal:                      1055;
-$zindex-popover:                    1070;
-$zindex-tooltip:                    1080;
-$zindex-toast:                      1090;`;
-</script>

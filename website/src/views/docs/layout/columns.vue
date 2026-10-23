@@ -25,7 +25,7 @@
       </ul>
     </nav>
   </div>
-  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents">
+  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
     <div class="docs-callout docs-callout-info">
       <p><strong>注意！</strong>在深入了解如何修改和自定义网格列之前，请务必先<a href="/docs/6.0/layout/grid">阅读网格页面</a>。</p>
     </div>

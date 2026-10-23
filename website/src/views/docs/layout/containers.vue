@@ -19,7 +19,7 @@
       </ul>
     </nav>
   </div>
-  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents">
+  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
     <h2 id="how-they-work">工作原理<a class="anchor-link" aria-label="链接到本节：工作原理"
         href="#how-they-work"> </a></h2>
     <p>容器是 Bootstrap 中最基础的布局元素，<strong>在使用我们的默认网格系统时是必需的</strong>。容器用于容纳、填充并（有时）居中其内部的内容。虽然容器<em>可以</em>嵌套，但大多数布局并不需要嵌套容器。</p>

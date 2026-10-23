@@ -41,7 +41,7 @@
       </ul>
     </nav>
   </div>
-  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents">
+  <div class="docs-content prose" v-scrollspy.body data-bs-target="#TableOfContents" data-pagefind-body>
     <h2 id="example">示例<a class="anchor-link" aria-label="链接到本节：示例" href="#example"> </a>
     </h2>
     <p>Bootstrap 的栅格系统使用一系列容器、行和列来布局和对齐内容。它基于 <a
