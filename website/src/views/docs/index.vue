@@ -90,7 +90,11 @@
                 </RouterLink>
               </li>
               <li>
-                <RouterLink to="/docs/content/figures" class="docs-sidebar-link" exact-active-class="active">Figures 图表区
+                <RouterLink to="/docs/content/tables" class="docs-sidebar-link" exact-active-class="active">Tables 表格
+                </RouterLink>
+              </li>
+                            <li>
+                <RouterLink to="/docs/content/prose" class="docs-sidebar-link" exact-active-class="active">Prose 正文
                 </RouterLink>
               </li>
             </ul>

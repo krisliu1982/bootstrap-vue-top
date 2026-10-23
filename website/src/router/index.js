@@ -70,8 +70,12 @@ var routes = [
         component: () => import('@/views/docs/content/images.vue')
       },
       {
-        path: '/docs/content/figures',
-        component: () => import('@/views/docs/content/figures.vue')
+        path: '/docs/content/tables',
+        component: () => import('@/views/docs/content/tables.vue')
+      },
+      {
+        path: '/docs/content/prose',
+        component: () => import('@/views/docs/content/prose.vue')
       },
       {
         path: '/docs/form/overview',
