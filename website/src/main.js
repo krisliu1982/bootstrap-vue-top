@@ -2,6 +2,8 @@ import { createApp } from 'vue';
 import app_ from './app.vue';
 import router from './router/index.js';
 
+
+
 import BootstrapVue from 'bootstrap-vue-top';
 
 import './assets/docs.css';

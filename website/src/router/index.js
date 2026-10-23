@@ -54,6 +54,10 @@ var routes = [
         component: () => import('@/views/docs/layout/z-index.vue')
       },
       {
+        path: '/docs/layout/css-grid',
+        component: () => import('@/views/docs/layout/css-grid.vue')
+      },
+      {
         path: '/docs/content/reboot',
         component: () => import('@/views/docs/content/reboot.vue')
       },
