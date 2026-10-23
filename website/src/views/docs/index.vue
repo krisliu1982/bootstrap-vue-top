@@ -53,7 +53,7 @@
                 </RouterLink>
               </li>
                             <li>
-                <RouterLink to="/docs/layout/columns" class="docs-sidebar-link" exact-active-class="active">Columns 栅格
+                <RouterLink to="/docs/layout/columns" class="docs-sidebar-link" exact-active-class="active">Columns 列
                 </RouterLink>
               </li>
               <li>

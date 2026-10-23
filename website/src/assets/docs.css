@@ -184,6 +184,11 @@ display: grid;
     position: absolute;
 }
 
+.docs-callout a, .docs-callout code {
+    color:  color-mix(in oklch, var(--docs-callout-color), var(--fg-body) 50%);
+    font-weight: 500;
+}
+
 .docs-callout-info {
     --docs-callout-color: var(--info-fg-emphasis);
     --docs-callout-bg:  color-mix(in oklch, var(--info-bg-subtle), transparent 50%);
