@@ -49,7 +49,11 @@
                   Containers 容器</RouterLink>
               </li>
               <li>
-                <RouterLink to="/docs/layout/grid" class="docs-sidebar-link" exact-active-class="active">Grid 网格
+                <RouterLink to="/docs/layout/grid" class="docs-sidebar-link" exact-active-class="active">Grid 栅格
+                </RouterLink>
+              </li>
+                            <li>
+                <RouterLink to="/docs/layout/columns" class="docs-sidebar-link" exact-active-class="active">Columns 栅格
                 </RouterLink>
               </li>
               <li>

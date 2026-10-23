@@ -260,6 +260,12 @@ color-mix(in srgb, var(--docs-violet) 30%, transparent);
     margin-top: 1rem;
 }
 
+.docs-example-row-flex-cols .row {
+    background-color: 
+color-mix(in srgb, var(--docs-violet) 15%, transparent);
+    min-height: 10rem;
+}
+
 .docs-border-utils [class^=border] {
   width: 5rem;
   height: 5rem;
