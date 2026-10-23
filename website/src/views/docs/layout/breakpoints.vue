@@ -90,6 +90,7 @@
     </div>
     <p>每个断点的选择都旨在舒适地容纳宽度为 12 的倍数的容器。断点也代表了常见设备尺寸和视口尺寸的一个子集——它们并不专门针对每一种用例或设备。相反，这些范围提供了一个强大而一致的基础，几乎可以为任何设备在其上构建。</p>
     <p>这些断点可通过 Sass 自定义——你可以在 <code>_config.scss</code> 样式表的 Sass map 中找到它们。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`$breakpoints: (
   xs: 0,
   sm: 576px,
@@ -98,6 +99,7 @@
   xl: 1280px,
   2xl: 1536px
 );`" lang="scss" label="scss/_config.scss"></CodeHighlight>
+</div>
     <p>关于如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a
         href="/docs/6.0/layout/grid#css">网格文档的 CSS 部分</a>。</p>
     <h2 id="media-queries">媒体查询<a class="anchor-link" aria-label="链接到本节：媒体查询"
@@ -107,6 +109,7 @@
     <h3 id="min-width">最小宽度<a class="anchor-link" aria-label="链接到本节：最小宽度" href="#min-width">
       </a></h3>
     <p>Bootstrap 在布局、网格系统和组件的 Sass 源文件中主要使用以下媒体查询范围——即断点。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Source mixins
 
 // No media query necessary for xs breakpoint as it’s effectively \`@media (min-width: 0) { ... }\`
@@ -126,8 +129,9 @@
   .custom-class {
     display: block;
   }
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <p>这些 Sass mixin 在编译后的 CSS 中使用 Sass 变量中声明的值进行转换。例如：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// X-Small devices (portrait phones, less than 576px)
 // No media query for \`xs\` since this is the default in Bootstrap
 
@@ -145,9 +149,11 @@
 
 // XX-Large devices (larger desktops, 1536px and up)
 @media (width >= 1536px) { ... }`" lang="scss"></CodeHighlight>
+</div>
     <h3 id="max-width">最大宽度<a class="anchor-link" aria-label="链接到本节：最大宽度" href="#max-width">
       </a></h3>
     <p>我们偶尔会使用相反方向的媒体查询（给定屏幕尺寸<em>或更小</em>）：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// No media query necessary for xs breakpoint as it’s effectively \`@media (max-width: 0) { ... }\`
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
@@ -160,8 +166,9 @@
   .custom-class {
     display: block;
   }
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <p>这些 mixin 使用断点值，通过现代范围语法创建 <code>max-width</code> 媒体查询。例如：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// \`xs\` returns only a ruleset and no media query
 // ... { ... }
 
@@ -178,26 +185,33 @@
 @media (width < 1280px) { ... }
 
 // \`2xl\` applies to x-large devices (large desktops, less than 1536px)
-@media (width < 1536px) { ... }`" lang="scss"></CodeHighlight>
+@media (width < 1536px) { ... }`" lang="scss"></CodeHighlight></div>
     <h3 id="single-breakpoint">单一断点<a class="anchor-link"
         aria-label="链接到本节：单一断点" href="#single-breakpoint"> </a></h3>
     <p>还有用于通过最小和最大断点宽度定位单个屏幕尺寸区间的媒体查询和 mixin。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`@include media-breakpoint-only(xs) { ... }
 @include media-breakpoint-only(sm) { ... }
 @include media-breakpoint-only(md) { ... }
 @include media-breakpoint-only(lg) { ... }
 @include media-breakpoint-only(xl) { ... }
-@include media-breakpoint-only(2xl) { ... }`" lang="scss"></CodeHighlight>
+@include media-breakpoint-only(2xl) { ... }`" lang="scss"></CodeHighlight></div>
     <p>例如，<code>@include media-breakpoint-only(md) { ... }</code> 会生成：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`@media (width >= 768px) and (width < 1024px) { ... }`" lang="scss"></CodeHighlight>
+    </div>
     <h3 id="between-breakpoints">断点之间<a class="anchor-link"
         aria-label="链接到本节：断点之间" href="#between-breakpoints"> </a></h3>
     <p>类似地，媒体查询可以跨越多个断点宽度：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`@include media-breakpoint-between(md, xl) { ... }`" lang="scss"></CodeHighlight>
+    </div>
     <p>其结果为：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Example
 // Apply styles starting from medium devices and up to extra large devices
 @media (width >= 768px) and (width < 1280px) { ... }`" lang="scss"></CodeHighlight>
+    </div>
     <h2 id="container-queries">容器查询<a class="anchor-link"
         aria-label="链接到本节：容器查询" href="#container-queries"> </a></h2>
     <p>除了基于视口的媒体查询外，Bootstrap 还为某些组件使用了<a
@@ -221,6 +235,7 @@
       </li>
     </ul>
     <p>以下是导航栏如何实现容器查询：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// The navbar is defined as a query container
 .navbar {
   container-type: inline-size;
@@ -231,10 +246,11 @@
   @container (min-width: 1024px) {
     // Expanded navbar styles...
   }
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <h3 id="setting-a-container">设置容器<a class="anchor-link"
         aria-label="链接到本节：设置容器" href="#setting-a-container"> </a></h3>
     <p>使用 <code>set-container()</code> mixin 将元素建立为查询容器：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Default: inline-size containment
 .my-component {
   @include set-container();
@@ -251,13 +267,14 @@
 .my-component {
   @include set-container(inline-size, sidebar);
   // Output: container: sidebar / inline-size;
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <h3 id="container-query-mixins">容器查询 mixin<a class="anchor-link"
         aria-label="链接到本节：容器查询 mixin" href="#container-query-mixins"> </a></h3>
     <p>与用于基于视口的媒体查询的 <code>media-breakpoint-*</code> mixin 类似，Bootstrap 提供了使用相同断点值和范围语法的容器查询 mixin。</p>
     <h4 id="min-width-1">最小宽度<a class="anchor-link" aria-label="链接到本节：最小宽度"
         href="#min-width-1"> </a></h4>
     <p>使用 <code>container-breakpoint-up()</code> 在容器至少达到给定断点宽度时应用样式：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`.my-component {
   @include set-container();
 }
@@ -272,13 +289,15 @@
   @include container-breakpoint-up(lg) {
     // Styles for when container is at least 1024px wide
   }
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <p>这些 mixin 使用与媒体查询相同的现代范围语法。例如：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`@container (width >= 768px) { ... }
-@container (width >= 1024px) { ... }`" lang="scss"></CodeHighlight>
+@container (width >= 1024px) { ... }`" lang="scss"></CodeHighlight></div>
     <h4 id="max-width-1">最大宽度<a class="anchor-link" aria-label="链接到本节：最大宽度"
         href="#max-width-1"> </a></h4>
     <p>使用 <code>container-breakpoint-down()</code> 在容器窄于给定断点时应用样式：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Sass usage
 @include container-breakpoint-down(lg) { ... }
 
@@ -286,23 +305,26 @@
 @container (width < 1024px) { ... }`" lang="scss"></CodeHighlight>
     <h4 id="single-breakpoint-1">单一断点<a class="anchor-link"
         aria-label="链接到本节：单一断点" href="#single-breakpoint-1"> </a></h4>
-    <p>使用 <code>container-breakpoint-only()</code> 定位单个断点范围：</p>
+    <p>使用 <code>container-breakpoint-only()</code> 定位单个断点范围：</p></div>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Sass usage
 @include container-breakpoint-only(md) { ... }
 
 // Compiled CSS
-@container (width >= 768px) and (width < 1024px) { ... }`" lang="scss"></CodeHighlight>
+@container (width >= 768px) and (width < 1024px) { ... }`" lang="scss"></CodeHighlight></div>
     <h4 id="between-breakpoints-1">断点之间<a class="anchor-link"
         aria-label="链接到本节：断点之间" href="#between-breakpoints-1"> </a></h4>
     <p>使用 <code>container-breakpoint-between()</code> 跨越多个断点宽度：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`// Sass usage
 @include container-breakpoint-between(md, xl) { ... }
 
 // Compiled CSS
-@container (width >= 768px) and (width < 1280px) { ... }`" lang="scss"></CodeHighlight>
+@container (width >= 768px) and (width < 1280px) { ... }`" lang="scss"></CodeHighlight></div>
     <h3 id="named-containers">命名容器<a class="anchor-link" aria-label="链接到本节：命名容器"
         href="#named-containers"> </a></h3>
     <p>所有容器查询 mixin 都接受一个可选的容器名称参数，用于查询特定的祖先容器。这在你有嵌套容器时非常有用：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code="`.sidebar {
   @include set-container(inline-size, sidebar);
 }
@@ -316,9 +338,10 @@
   @include container-breakpoint-up(md, sidebar) {
     // …
   }
-}`" lang="scss"></CodeHighlight>
+}`" lang="scss"></CodeHighlight></div>
     <p>编译后的输出会包含容器名称：</p>
-    <CodeHighlight :code="`@container sidebar (width >= 768px) { ... }`" lang="scss"></CodeHighlight>
+    <div class="docs-code-snippet" data-pagefind-ignore>
+    <CodeHighlight :code="`@container sidebar (width >= 768px) { ... }`" lang="scss"></CodeHighlight></div>
 
     <nav class="docs-links-nav py-9">
       <div class="d-flex justify-content-stretch gap-9 lh-1">

@@ -1,16 +1,14 @@
 <template>
-  <div class="border overflow-hidden" data-pagefind-ignore>
-    <div class="d-flex align-items-center px-5 py-3 bg-2 border-bottom">
-      <div class="font-monospace fs-xs fg-2">{{ label }}</div>
-      <div class="ms-auto">
-        <BiCheckLg v-if="isCopy" class="fg-success" />
-        <a v-else role="button" class="fg-body" title="Copy" aria-label="Copy" @click="handleCopy">
-          <BiCopy />
-        </a>
-      </div>
+  <div class="hstack align-items-center highlight-toolbar">
+    <div class="font-monospace fs-xs fg-2">{{ label }}</div>
+    <div class="ms-auto">
+      <BiCheckLg v-if="isCopy" class="fg-success" />
+      <a v-else role="button" class="fg-body" title="Copy" aria-label="Copy" @click="handleCopy">
+        <BiCopy />
+      </a>
     </div>
-    <div v-html="html"></div>
   </div>
+  <div v-html="html"></div>
 </template>
 
 <script setup>
@@ -53,12 +51,12 @@ onMounted(async () => {
     },
     defaultColor: 'light-dark()',
     transformers: [
-    {
-      pre(node) {
-        this.addClassToHast(node, 'p-5')
+      {
+        pre(node) {
+          this.addClassToHast(node, 'max-w-100 overflow-x-auto p-5');
+        }
       }
-    }
-  ]
+    ]
   });
 });
 

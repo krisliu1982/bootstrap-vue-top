@@ -120,27 +120,32 @@
     <h2 id="default-container">默认容器<a class="anchor-link"
         aria-label="链接到本节：默认容器" href="#default-container"> </a></h2>
     <p>我们的默认 <code>.container</code> 类是一个响应式、固定宽度的容器，意味着它的 <code>max-width</code> 会在每个断点发生变化。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code='`<div class="container">
   <!-- Content here -->
 </div>`' lang="html"></CodeHighlight>
+    </div>
     <h2 id="responsive-containers">响应式容器<a class="anchor-link"
         aria-label="链接到本节：响应式容器" href="#responsive-containers"> </a></h2>
     <p>响应式容器允许你指定一个在达到指定断点之前保持 100% 宽度的类，达到该断点后，我们会为更高的各个断点应用 <code>max-width</code>。例如，<code>.sm:container</code> 初始为 100% 宽度，直到达到 <code>sm</code> 断点，之后它会随 <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>2xl</code> 逐级放大。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>    
     <CodeHighlight :code='`<div class="sm:container">100% wide until small breakpoint</div>
 <div class="md:container">100% wide until medium breakpoint</div>
 <div class="lg:container">100% wide until large breakpoint</div>
 <div class="xl:container">100% wide until extra large breakpoint</div>
-<div class="2xl:container">100% wide until extra extra large breakpoint</div>`' lang="html"></CodeHighlight>
+<div class="2xl:container">100% wide until extra extra large breakpoint</div>`' lang="html"></CodeHighlight></div>
     <h2 id="fluid-containers">流式容器<a class="anchor-link" aria-label="链接到本节：流式容器"
         href="#fluid-containers"> </a></h2>
     <p>使用 <code>.container-fluid</code> 获得全宽容器，横跨视口的整个宽度。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code='`<div class="container-fluid">
   ...
-</div>`' lang="html"></CodeHighlight>
+</div>`' lang="html"></CodeHighlight></div>
     <h2 id="css">CSS<a class="anchor-link" aria-label="链接到本节：CSS" href="#css"> </a></h2>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" aria-label="链接到本节：Sass 变量"
         href="#sass-variables"> </a></h3>
     <p>如上所示，Bootstrap 生成了一系列预定义的容器类，帮助你构建所需的布局。你可以通过修改驱动它们的 Sass map（位于 <code>_config.scss</code>）来自定义这些预定义的容器类：</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code='`$container-max-widths: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $container-max-widths: defaults(
@@ -152,12 +157,13 @@ $container-max-widths: defaults(
     2xl: 1440px
   ),
   $container-max-widths
-);`' lang="scss" label="scss/_config.scss"></CodeHighlight>
+);`' lang="scss" label="scss/_config.scss"></CodeHighlight></div>
     <p>关于如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a
         href="/docs/6.0/layout/grid#css">网格文档的 Sass 部分</a>。</p>
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" aria-label="链接到本节：Sass mixin"
         href="#sass-mixins"> </a></h3>
     <p>除了自定义 Sass 之外，你还可以使用我们的 Sass mixin 创建自己的容器。</p>
+    <div class="docs-code-snippet" data-pagefind-ignore>
     <CodeHighlight :code='`// Source mixin
 @mixin make-container($padding-x: $container-padding-x) {
   width: 100%;
@@ -168,7 +174,7 @@ $container-max-widths: defaults(
 // Usage
 .custom-container {
   @include make-container();
-}`' lang="scss"></CodeHighlight>
+}`' lang="scss"></CodeHighlight></div>
 
     <nav class="docs-links-nav py-9">
       <div class="d-flex justify-content-stretch gap-9 lh-1">

@@ -1,3 +1,17 @@
+:root {
+    --docs-purple: #4c0bce;
+    --docs-violet: #712cf9;
+    --docs-accent: #ffe484;
+    --docs-violet-bg: var(--docs-violet);
+    --docs-toc-color: var(--fg-body);
+    --docs-sidebar-link-bg: light-dark(
+ color-mix(in srgb, var(--docs-violet), transparent 90%), 
+ color-mix(in srgb, var(--docs-violet), transparent 70%));
+    --docs-callout-link: var(--blue-600);
+    --docs-pre-bg: var(--bg-body);
+    --docs-swatch-shadow: inset 0 0 0 1px light-dark(#0000001a, #ffffff1a);
+}
+
 /* 桌面：≥1024px */
 @media (min-width: 1024px) {
   .docs-sidebar {
@@ -177,22 +191,73 @@ display: grid;
     --docs-callout-band:  color-mix(in oklch, var(--info-border), var(--info-fg-emphasis));
 }
 
+.docs-example-snippet {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.docs-code-snippet {
+    --docs-example-padding: 1rem;
+    --docs-example-border-color: var(--border-subtle);
+    --docs-example-radius: var(--radius-5);
+    --docs-example-inner-radius: calc(var(--docs-example-radius) - 1px);
+    background-color: var(--docs-pre-bg);
+    border: 1px solid var(--docs-example-border-color);
+    border-radius: var(--docs-example-radius);
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.docs-code-snippet .docs-example:first-child {
+    border-start-start-radius: var(--docs-example-inner-radius);
+    border-start-end-radius: var(--docs-example-inner-radius);
+}
+
+.docs-example-snippet .docs-example {
+    border-bottom: 1px solid var(--docs-example-border-color);
+    border-radius: 0;
+}
+
 .docs-example {
-  display: flow-root;
-  position: relative;
-  border: 1px solid var(--border);
+    padding: var(--docs-example-padding);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    background-color: var(--bg-body);
+    display: flow-root;
+    position: relative;
 }
 
-.docs-example-data {
-  display: flow-root;
-  position: relative;
-  border: 1px solid var(--border-subtle);
+.highlight-toolbar:not(:first-child) {
+    border-top: 1px solid var(--docs-example-border-color);
 }
 
-.docs-example-code {
-  display: flow-root;
-  position: relative;
-  border: 1px solid var(--border-subtle);
+.highlight-toolbar {
+    min-width: 0;
+    background-color: var(--bg-1);
+    border-bottom: 1px solid var(--docs-example-border-color);
+    padding-block: .5rem;
+    padding-inline: var(--docs-example-padding);
+}
+
+.docs-code-snippet pre {
+max-width: 100%;
+    padding: var(--docs-example-padding);
+    margin-bottom: 0;
+  overflow-x: auto;
+  background-color: var(--docs-pre-bg);
+}
+
+.docs-example-row [class^=col], .bd-example-cols [class^=col]>*, .bd-example-cssgrid [class*=grid]>* {
+    background-color: 
+color-mix(in srgb, var(--docs-violet) 15%, transparent);
+    border: 1px solid 
+color-mix(in srgb, var(--docs-violet) 30%, transparent);
+    padding-block: .75rem;
+}
+
+.docs-example-row .row+.row, .docs-example-cssgrid .grid+.grid {
+    margin-top: 1rem;
 }
 
 .docs-border-utils [class^=border] {
