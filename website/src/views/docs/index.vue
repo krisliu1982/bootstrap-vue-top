@@ -69,7 +69,7 @@
                 </RouterLink>
               </li>
                             <li>
-                <RouterLink to="/docs/layout/css-grid" class="docs-sidebar-link" exact-active-class="active">CSS Grid CSS 网格
+                <RouterLink to="/docs/layout/css-grid" class="docs-sidebar-link" exact-active-class="active">CSS Grid [CSS 网格]
                 </RouterLink>
               </li>
             </ul>

@@ -17,7 +17,7 @@
 @media (min-width: 1024px) {
   .docs-sidebar {
     flex-shrink: 0;
-    width: 12rem;
+    width: 13rem;
     height: calc(100vh - 5rem);
     overflow-y: auto;
     position: sticky;
@@ -33,14 +33,16 @@
 }
 
 .docs-sidebar h6 {
-  margin-bottom: 0.25rem;
+  padding: 0.5rem 1rem 0.25rem 1rem;
 }
 
 .docs-sidebar-link {
   display: block;
-  padding: 0.25rem 0;
-  color: var(--secondary-fg);
+  padding: 0.25rem 1rem;
+  color: var(--fg-2);
   text-decoration: none;
+  border-radius: var(--radius-5);
+  margin-bottom: 2px;
 }
 .docs-sidebar-link:hover {
   color: var(--fg-body);
@@ -111,7 +113,7 @@ display: grid;
 .docs-toc nav a {
   display: block;
   padding: 0.25rem 0.5rem;
-  color: var(--secondary-fg);
+  color: var(--fg-2);
   text-decoration: none;
   border-left: 2px solid transparent;
 }
