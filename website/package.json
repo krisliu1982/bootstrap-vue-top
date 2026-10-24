@@ -23,11 +23,15 @@
     "@iconify-json/bi": "^1.2.7",
     "@vitejs/plugin-vue": "^6.0.10",
     "autoprefixer": "^10.6.1",
+    "markdown-it-anchor": "^10.0.0",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "postcss-prefix-custom-properties": "^0.1.0",
     "prettier": "^3.9.10",
     "sass": "^1.106.1",
     "unplugin-icons": "^22.5.0",
     "unplugin-vue-components": "^30.0.0",
+    "unplugin-vue-markdown": "^32.1.1",
     "vite": "^8.3.5",
-    "wrangler": "^4.151.3"
+    "wrangler": "^4.152.0"
   }
 }

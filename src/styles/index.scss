@@ -27,24 +27,3 @@ $zindex-alert: 1085;
   fill: currentColor;
   vertical-align: -0.125em;
 }
-
-.fadeIn-enter-active,
-.fadeIn-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fadeIn-enter-from,
-.fadeIn-leave-to {
-  opacity: 0;
-}
-
-.fadeInDown-enter-active,
-.fadeInDown-leave-active {
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
-}
-.fadeInDown-enter-from,
-.fadeInDown-leave-to {
-  opacity: 0;
-  transform: translateY(-60px);
-}

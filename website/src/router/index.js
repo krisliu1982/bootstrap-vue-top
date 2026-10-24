@@ -59,7 +59,7 @@ var routes = [
       },
       {
         path: '/docs/content/reboot',
-        component: () => import('@/views/docs/content/reboot.vue')
+        component: () => import('@/views/docs/content/reboot.md')
       },
       {
         path: '/docs/content/typography',

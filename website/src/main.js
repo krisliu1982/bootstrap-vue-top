@@ -8,11 +8,14 @@ import BootstrapVue from 'bootstrap-vue-top';
 
 import './assets/docs.css';
 
-import CodeHighlight from '@/views/code-highlight.vue';
+
+import MdWrapper from '@/views/docs/md-wrapper.vue';
+import CodeHighlight from '@/views/docs/code-highlight.vue';
 
 const app = createApp(app_);
 app.use(router);
 app.use(BootstrapVue);
+app.component('MdWrapper', MdWrapper);
 app.component('CodeHighlight', CodeHighlight);
 /*app.directive('docstoc', {
   mounted: (el) => {
