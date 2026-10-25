@@ -11,8 +11,8 @@ import './assets/docs.css';
 
 import MdWrapper from '@/docs/md-wrapper.vue';
 import CodeWrapper from '@/docs/code-wrapper.vue';
+import CodeTabs from '@/docs/code-tabs.vue';
 import ScssDocs from '@/docs/scss-docs.vue';
-
 import Example from '@/docs/example.vue';
 import Callout from '@/docs/callout.vue';
 
@@ -22,6 +22,7 @@ app.use(router);
 app.use(BootstrapVue);
 app.component('MdWrapper', MdWrapper);
 app.component('CodeWrapper', CodeWrapper);
+app.component('CodeTabs', CodeTabs);
 app.component('ScssDocs', ScssDocs);
 
 app.component('Example', Example);

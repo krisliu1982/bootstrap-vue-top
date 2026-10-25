@@ -22,17 +22,12 @@
       position: sticky;
       top: 4rem;
       font-size: 0.875rem;
-      padding-top: 0.5rem;
     }
   }
 
   .docs-sidebar ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  .docs-sidebar h6 {
-    padding: 0.5rem 1rem 0.25rem 1rem;
   }
 
   .docs-sidebar-link {
@@ -325,4 +320,24 @@
   margin-bottom: 0;
   overflow-x: auto;
   background-color: var(--docs-pre-bg);
+}
+
+.code-tabs {
+    gap: .75rem;
+    display: flex;
+}
+
+.code-tab-btn {
+    font-size: var(--bs-font-size-xs);
+    color: var(--bs-fg-3);
+    border-radius: var(--bs-radius-5);
+    background: 0 0;
+    border: 0;
+    padding: .25rem 0;
+    position: relative;
+}
+
+.code-tab-btn.active {
+    color: var(--bs-fg-body);
+    font-weight: 500;
 }

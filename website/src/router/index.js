@@ -25,7 +25,10 @@ const allUrl = data.sidebar.flatMap((group) => {
     if (item.group && item.pages) {
       const subgroupTitle = item.group
       return item.pages.map((page) => ({
+        
         url: `/docs/${data['bs-docs-version']}/${group.slug}/${page.slug}`,
+        groupSlug:group.slug,
+        pageSlug:page.slug
       }))
     }
     // Handle direct pages
@@ -33,6 +36,8 @@ const allUrl = data.sidebar.flatMap((group) => {
       return [
         {
           url: `/docs/${data['bs-docs-version']}/${group.slug}/${item.slug}`,
+          groupSlug:group.slug,
+          pageSlug:item.slug
         }
       ]
     }
@@ -57,7 +62,7 @@ const docsRoutes = {
 allUrl.forEach((page) => {
   docsRoutes.children.push({
     path: page.url,
-    component: () => import(`@/${page.url}.md`)
+    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.md`)
   })
 })
 

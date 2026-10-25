@@ -8,18 +8,19 @@ aliases:
  - "/getting-started/"
 ---
 
+<script setup>
+  const install_data = [{ label: 'npm', code: 'npm install bootstrap', lang: 'bash' },{ label: 'pnpm', code: 'pnpm add bootstrap', lang: 'bash' },{ label: 'Yarn', code: 'yarn add bootstrap', lang: 'bash' },{ label: 'Bun', code: 'bun add bootstrap', lang: 'bash' }]
+
+  const packages_data = [{ label: 'RubyGems', code: `gem 'bootstrap', '~> 6.0.0-alpha.1'`, lang: 'bash' },
+    { label: 'Composer', code: 'composer require twbs/bootstrap:[[config:current_version]]', lang: 'bash' },
+    { label: 'NuGet', code: 'Install-Package bootstrap # Default Install-Package bootstrap.sass # Sass version', 'shell' }]
+  </script>
+
 ## Install
 
 Pull in Bootstrap’s **source files** into nearly any project with a package manager. Package installs don‘t include documentation or complete build scripts. You can also [use any demo from our Examples repo](https://github.com/twbs/examples) to quickly jumpstart Bootstrap projects.
 
-<Code
-  tabs={[
-    { label: 'npm', code: 'npm install bootstrap', lang: 'bash' },
-    { label: 'pnpm', code: 'pnpm add bootstrap', lang: 'bash' },
-    { label: 'Yarn', code: 'yarn add bootstrap', lang: 'bash' },
-    { label: 'Bun', code: 'bun add bootstrap', lang: 'bash' }
-  ]}
-/>
+<CodeTabs :tabs="install_data" />
 
 After installing, head to [our npm guide]([[docsref:/guides/npm]]) for a full setup guide.
 
@@ -29,9 +30,7 @@ After installing, head to [our npm guide]([[docsref:/guides/npm]]) for a full se
 
 Using `import * as bootstrap from 'bootstrap'` will load all of Bootstrap’s plugins onto a `bootstrap` object. You can also import plugins individually for automatic tree shaking:
 
-```js
-import { Tooltip, Toast, Popover } from 'bootstrap'
-```
+<CodeWrapper :code='`import { Tooltip, Toast, Popover } from 'bootstrap'`' lang="javascript"/>
 
 You can also import plugins directly by loading the `/js/dist/*.js` files under the package’s top-level directory.
 
@@ -46,33 +45,22 @@ Additionally, Bootstrap ships a `.browserslistrc` file at the package root, whic
 
 Yarn 2+ (aka Yarn Berry) doesn’t support the `node_modules` directory by default, so our [Sass & JS example](https://github.com/twbs/examples/tree/main/sass-js) needs some adjustments:
 
-```sh
-yarn config set nodeLinker node-modules # Use the node_modules linker
+<CodeWrapper :code='`yarn config set nodeLinker node-modules # Use the node_modules linker
 touch yarn.lock # Create an empty yarn.lock file
 yarn install # Install the dependencies
-yarn start # Start the project
-```
+yarn start # Start the project`' lang="shell"/>
 
 ## More packages
 
 Other package-managed installs are available as well for Bootstrap as well.
 
-<Code
-  tabs={[
-    { label: 'RubyGems', code: `gem 'bootstrap', '~> [[config:current_ruby_version]]'`, lang: 'bash' },
-    { label: 'Composer', code: 'composer require twbs/bootstrap:[[config:current_version]]', lang: 'bash' },
-    { label: 'NuGet', code: `Install-Package bootstrap # Default
-Install-Package bootstrap.sass # Sass version`, lang: 'powershell' }
-  ]}
-/>
+<CodeTabs :tabs="packages_data" />
 
 ### Using RubyGems
 
 We recommend installing Bootstrap in your Ruby apps using [Bundler](https://bundler.io/), but you can also use [RubyGems](https://rubygems.org/). See [the gem’s README](https://github.com/twbs/bootstrap-rubygem/blob/main/README.md) for further details.
 
-```sh
-gem install bootstrap -v [[config:current_ruby_version]]
-```
+<CodeWrapper :code='`gem install bootstrap -v [[config:current_ruby_version]]`' lang="shell"/>
 
 ### Using NuGet
 
@@ -84,15 +72,12 @@ Include Bootstrap’s CSS and JavaScript files via CDN. CDNs (Content Delivery N
 
 Here are our primary CDN links for CSS and JavaScript:
 
-```html
-<link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous">
-<script type="module" src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"></script>
-```
+<CodeWrapper :code='`<link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous">
+<script type="module" src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"></script>`' lang="html"/>
 
 If you prefer to include Floating UI and Vanilla Calendar Pro separately instead of using the bundle, use an import map to resolve the bare module specifiers:
 
-```html
-<script type="importmap">
+<CodeWrapper :code='`<script type="importmap">
 {
   "imports": {
     "@floating-ui/dom": "[[config:cdn.floating_ui_esm]]",
@@ -100,15 +85,12 @@ If you prefer to include Floating UI and Vanilla Calendar Pro separately instead
   }
 }
 </script>
-<script type="module" src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"></script>
-```
+<script type="module" src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"></script>`' lang="html"/>
 
-<BsTable>
 | File type | URL |
 | --- | --- |
 | CSS | [`[[config:cdn.css]]`]([[config:cdn.css]]) |
 | JS bundle (with Floating UI and Vanilla Calendar Pro) | [`[[config:cdn.js_bundle]]`]([[config:cdn.js_bundle]]) |
-</BsTable>
 
 ### Using CDNs
 
@@ -125,27 +107,23 @@ We recommend [jsDelivr](https://www.jsdelivr.com/) and use it ourselves in our d
 You’ll find the same files on these CDN providers, albeit with different URLs. With cdnjs, you can [use this direct Bootstrap package link](https://cdnjs.com/libraries/bootstrap) to copy and paste ready-to-use HTML snippets for each dist file from any version of Bootstrap.
 
 <Callout type="warning">
-**Security warning** — If the SRI hashes differ for a given file, you shouldn’t use the files from that CDN, because it means that the file was modified by someone else.
+<strong>Security warning</strong> — If the SRI hashes differ for a given file, you shouldn’t use the files from that CDN, because it means that the file was modified by someone else.
 </Callout>
 
 Note that you should compare same length hashes, e.g. `sha384` with `sha384`, otherwise it’s expected for them to be different.
 As such, you can use an online tool like [SRI Hash Generator](https://www.srihash.org/) to make sure that the hashes are the same for a given file.
 Alternatively, assuming you have OpenSSL installed, you can achieve the same from the CLI, for example:
 
-```sh
-openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
-```
+<CodeWrapper :code='`openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A`' lang="shell"/>
 
 ## Download
 
 You can also do the old fashioned thing and download Bootstrap manually. Choose between compiled dist (distribution) files or source files. The latter requires some additional tooling to compiled and use Bootstrap in your project.
 
-<BsTable>
 | Type | Description | Link |
 | --- | --- | --- |
 | <strong class="text-nowrap">Distribution files</strong> | Ready-to-use compiled and minified CSS and JavaScript files. Doesn’t include documentation, source files, or dependencies like Floating UI and Vanilla Calendar Pro. | <a href="[[config:download.dist]]" class="theme-accent">Download</a> |
 | <strong class="text-nowrap">Source files</strong> | Sass, JavaScript, and documentation files for compiling with your own asset pipeline. Requires [Sass compiler]([[docsref:/guides/contribute#sass]]), [Autoprefixer](https://github.com/postcss/autoprefixer), and a JavaScript bundler like [Rollup](https://rollupjs.org/) or [Webpack](https://webpack.js.org/). | <a href="[[config:download.source]]" class="theme-accent">Download</a> |
-</BsTable>
 
 Should you require our full set of [build tools]([[docsref:/guides/contribute#tooling-setup]]), they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.
 

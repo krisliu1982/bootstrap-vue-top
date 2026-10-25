@@ -52,6 +52,7 @@ export default {
   },
   'callouts': {
     'warning-input-support': `Some date inputs types are <a href="https://caniuse.com/input-datetime" target="_blank">not fully supported</a> by the latest versions of Safari and Firefox.`,
+    'info-npm-starter':`<strong>Use the Bootstrap npm starter project!</strong> Head to the <a href="https://github.com/twbs/examples/tree/main/sass-js" target="_blank">Sass &amp; JS example</a> template repository to see how to build and customize Bootstrap in your own npm project. Includes Sass compiler, Autoprefixer, Stylelint, PurgeCSS, and Bootstrap Icons.`
   },
   'sidebar': [
     {
