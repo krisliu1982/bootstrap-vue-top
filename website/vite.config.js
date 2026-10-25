@@ -48,6 +48,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@libs': fileURLToPath(new URL('./src/views/docs', import.meta.url)),
       'bootstrap-vue-top': fileURLToPath(new URL('../src/index.js', import.meta.url))
     },
   },
