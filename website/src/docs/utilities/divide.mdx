@@ -1,0 +1,78 @@
+---
+title: Divide
+description: Divide content with borders between direct children of an element. Supports horizontal and vertical dividers with responsive variants.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+utility:
+  - divide-x
+  - divide-y
+---
+
+import { getData } from '@libs/data'
+
+## Example
+
+Rather than adding border classes to individual children, use `.divide-x` or `.divide-y` on the parent.
+
+<Example class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-flex divide-x">
+    <div class="px-3 py-2">Item 1</div>
+    <div class="px-3 py-2">Item 2</div>
+    <div class="px-3 py-2">Item 3</div>
+  </div>`} />
+
+The selectors generated for divider utilities are wrapped in `:where()` for zero specificity, making them easy to override with additional utilities or custom CSS.
+
+## Horizontal
+
+Use `.divide-x` to add vertical border lines between horizontally arranged children:
+
+<Example class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-flex divide-x rounded-3 border">
+    <div class="px-4 py-3">One</div>
+    <div class="px-4 py-3">Two</div>
+    <div class="px-4 py-3">Three</div>
+  </div>`} />
+
+## Vertical
+
+Use `.divide-y` to add horizontal border lines between vertically stacked children:
+
+<Example class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="divide-y rounded-3 border d-inline-block">
+    <div class="px-4 py-3">One</div>
+    <div class="px-4 py-3">Two</div>
+    <div class="px-4 py-3">Three</div>
+  </div>`} />
+
+### Removing dividers
+
+Use `.divide-x-0` or `.divide-y-0` to remove dividers, which is particularly useful at specific breakpoints:
+
+```html
+<div class="divide-y divide-y-md-0 divide-x-md">
+  ...
+</div>
+```
+
+### How it works
+
+Divide utilities apply `border-inline-start` or `border-block-start` to every direct child except the first via the selector `:where(.divide-y > :not(:first-child))`. The `:where()` wrapper keeps specificity at zero. Border styling is controlled by the existing `--border-width`, `--border-style`, and `--border-color` CSS variables.
+
+```css
+:where(.divide-y > :not(:first-child)) {
+  border-block-start: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+```
+
+<Callout>
+Divider color comes from the inheriting `--bs-border-color` design token, so set it on the parent to recolor dividers. Note this differs from the `.border-{color}` utilities, which are element-scoped (they set the non-inheriting `--bs-bc` variable) and therefore won’t recolor a parent’s dividers.
+</Callout>
+
+## CSS
+
+### Sass utilities API
+
+Divide utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-divide" file="scss/_utilities.scss" />

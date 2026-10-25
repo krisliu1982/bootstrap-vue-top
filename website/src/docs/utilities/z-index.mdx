@@ -1,0 +1,66 @@
+---
+title: Z-index
+description: Use our low-level `z-index` utilities to quickly change the stack level of an element or component.
+toc: true
+utility:
+  - z-index
+---
+
+## Example
+
+Use `z-index` utilities to stack elements on top of one another. Requires a `position` value other than `static`, which can be set with custom styles or using our [position utilities]([[docsref:/utilities/position/]]).
+
+### Low-level stack
+
+We call these “low-level” `z-index` utilities because of their default values of `-1` through `3`, which we use for the layout of overlapping components. High-level `z-index` values are used for overlay components like modals and tooltips.
+
+<Example class="bd-example-zindex-levels position-relative" code={`<div class="z-3 position-absolute p-9 rounded-3"><span>z-3</span></div>
+<div class="z-2 position-absolute p-9 rounded-3"><span>z-2</span></div>
+<div class="z-1 position-absolute p-9 rounded-3"><span>z-1</span></div>
+<div class="z-0 position-absolute p-9 rounded-3"><span>z-0</span></div>
+<div class="z-n1 position-absolute p-9 rounded-3"><span>z-n1</span></div>`} />
+
+### Component stack
+
+The component `z-index` utilities are used for overlay components like dialogs, popovers, and more. Classes are available for all of them, and their CSS variables are used in their respective components out of the box.
+
+<BsTable>
+| Class | Value | CSS variable |
+| --- | --- | --- |
+| `z-menu` | `1000` | `var(--z-menu)` |
+| `z-sticky` | `1010` | `var(--z-sticky)` |
+| `z-fixed` | `1020` | `var(--z-fixed)` |
+| `z-drawer` | `1030` | `var(--z-drawer)` |
+| `z-dialog` | `1040` | `var(--z-dialog)` |
+| `z-popover` | `1050` | `var(--z-popover)` |
+| `z-tooltip` | `1060` | `var(--z-tooltip)` |
+| `z-toast` | `1070` | `var(--z-toast)` |
+</BsTable>
+
+Read more about the component `z-index` values in the [`z-index` layout page]([[docsref:/layout/z-index]]).
+
+## Overlays
+
+Bootstrap overlay components—menu, dialog, drawer, popover, toast, and tooltip—all have their own `z-index` values to ensure a usable experience with competing “layers” of an interface.
+
+Read about them in the [`z-index` layout page]([[docsref:/layout/z-index]]).
+
+## Component approach
+
+On some components, we use our low-level `z-index` values to manage repeating elements that overlap one another (like buttons in a button group or items in a list group).
+
+Learn about our [`z-index` approach]([[docsref:/getting-started/approach#z-index-scales]]).
+
+## CSS
+
+### Sass maps
+
+Customize this Sass map to change the available values and generated utilities.
+
+<ScssDocs name="zindex-levels-map" file="scss/_config.scss" />
+
+### Sass utilities API
+
+Position utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-zindex" file="scss/_utilities.scss" />

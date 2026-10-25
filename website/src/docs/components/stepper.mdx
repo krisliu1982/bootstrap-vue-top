@@ -1,0 +1,193 @@
+---
+title: Stepper
+description: Create timelines, wizards, or step-by-step progress bars. Ideal for shopping carts, sign-up forms, and more.
+toc: true
+css_layer: components
+css_media: container
+---
+
+## Examples
+
+Stepper is built with CSS Grid and `<ol>` elements. By default, steps are displayed vertically. You can transform them into horizontal lists with responsive modifier classes.
+
+### Basic
+
+Here’s a simple example of a vertical stepper.
+
+<Example code={`<ol class="stepper">
+    <li class="stepper-item active">Create account</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+### Responsive
+
+Steppers can be made horizontal at specific breakpoints using the `contains-inline` utility on a parent element and by adding the responsive `.stepper-horizontal-{breakpoint}` modifier classes on the stepper. The extra parent element is required when using container queries.
+
+<ResizableExample code={`<div class="contains-inline">
+    <ol class="stepper sm:stepper-horizontal">
+      <li class="stepper-item active">Create account</li>
+      <li class="stepper-item active">Confirm email</li>
+      <li class="stepper-item">Update profile</li>
+      <li class="stepper-item">Finish</li>
+    </ol>
+  </div>`} />
+
+### Gap
+
+Customize the gap with styles that override the `--bs-stepper-gap` CSS variable.
+
+<Example code={`<ol class="stepper" style="--bs-stepper-gap: 3rem">
+    <li class="stepper-item active">Create account</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+## Variants
+
+<Example code={`<ol class="stepper stepper-horizontal">
+    <li class="stepper-item active theme-accent">Create account</li>
+    <li class="stepper-item">Confirm email</li>
+    <li class="stepper-item active theme-success">Update profile</li>
+    <li class="stepper-item active theme-danger">Finish</li>
+  </ol>`} />
+
+## Overflow
+
+Wrap your horizontal stepper in a `.stepper-overflow` container to enable horizontal scrolling when the stepper overflows its parent. Uses `container-type: inline-size` for container query support as opposed to a viewport-based media query.
+
+<Example code={`<div class="stepper-overflow">
+    <ol class="stepper stepper-horizontal">
+      <li class="stepper-item active">Create account</li>
+      <li class="stepper-item active">Verify email address</li>
+      <li class="stepper-item">Complete profile setup</li>
+      <li class="stepper-item">Add payment method</li>
+      <li class="stepper-item">Review and confirm</li>
+      <li class="stepper-item">Finish onboarding</li>
+    </ol>
+  </div>`} />
+
+## Complex
+
+Add additional content beyond labels to provide more context within each step, such as descriptions, helper messages, status indicators, or other decorative elements.
+
+<Example code={`<ol class="stepper stepper-vertical">
+    <li class="stepper-item align-items-start active">
+      <div class="pt-1">
+        <div class="fw-semibold">Create</div>
+        <small class="fg-3">Create an account.</small>
+      </div>
+    </li>
+    <li class="stepper-item align-items-start active">
+      <div class="pt-1">
+        <div class="fw-semibold">Confirm</div>
+        <small class="fg-3">Confirm your email.</small>
+      </div>
+    </li>
+    <li class="stepper-item align-items-start">
+      <div class="pt-1">
+        <div class="fw-semibold">Set-up</div>
+        <small class="fg-3">Configure your profile.</small>
+      </div>
+    </li>
+    <li class="stepper-item align-items-start">
+      <div class="pt-1">
+        <div class="fw-semibold">Finish</div>
+        <small class="fg-3">Welcome aboard!</small>
+      </div>
+    </li>
+  </ol>`} />
+
+Mix with other components, like badges, and our theme helpers to create a more unique steppers.
+
+<Example code={`<ol class="stepper stepper-horizontal w-100">
+    <li class="stepper-item theme-success active">
+      <div>
+        <div>Create account</div>
+        <div class="badge badge-subtle">Complete</div>
+      </div>
+    </li>
+    <li class="stepper-item theme-success active">
+      <div>
+        <div>Confirm email</div>
+        <div class="badge badge-subtle">Complete</div>
+      </div>
+    </li>
+    <li class="stepper-item theme-primary active">
+      <div>
+        <div>Update profile</div>
+        <div class="badge badge-subtle">In-progress</div>
+      </div>
+    </li>
+    <li class="stepper-item theme-secondary">
+      <div>
+        <div>Finish</div>
+        <div class="badge badge-subtle">Pending</div>
+      </div>
+    </li>
+  </ol>`} />
+
+## Alignment
+
+Use [text alignment utilities]([[docsref:/utilities/text-alignment]]) (because we use `display: inline-grid`) to align the steps. The inline grid arrangement allows us to keep the steps equal width and ensures the connecting lines are rendered correctly.
+
+<Example code={`<ol class="stepper stepper-horizontal">
+    <li class="stepper-item active">Default stepper</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+<Example class="text-center" code={`<ol class="stepper stepper-horizontal">
+    <li class="stepper-item active">Center stepper</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+<Example class="text-end" code={`<ol class="stepper stepper-horizontal">
+    <li class="stepper-item active">End stepper</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+Apply `.w-100` to the stepper to make it full width. Stepper items will be stretched to fill the available space. Alignment doesn’t affect full-width steppers.
+
+<Example code={`<ol class="stepper stepper-horizontal w-100">
+    <li class="stepper-item active">Create account</li>
+    <li class="stepper-item active">Confirm email</li>
+    <li class="stepper-item">Update profile</li>
+    <li class="stepper-item">Finish</li>
+  </ol>`} />
+
+## With anchors
+
+Use anchor elements to build your stepper if it links across multiple pages. Add `role="button"` or use `<button>` elements if you’re linking across sections in the same document.
+
+Consider using our [link utilities]([[docsref:/utilities/link]]) for quick color control.
+
+<Example code={`<div class="stepper">
+    <a href="#" role="button" class="stepper-item active">Create account</a>
+    <a href="#" role="button" class="stepper-item active">Confirm email</a>
+    <a href="#" role="button" class="stepper-item theme-secondary">Update profile</a>
+    <a href="#" role="button" class="stepper-item theme-secondary">Finish</a>
+  </div>`} />
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Steppers" className="stepper" />
+
+<ScssDocs name="stepper-tokens" file="scss/_stepper.scss" />
+
+### Sass mixin
+
+<ScssDocs name="stepper-horizontal-mixin" file="scss/_stepper.scss" />
+
+### Overflow wrapper
+
+<ScssDocs name="stepper-overflow" file="scss/_stepper.scss" />

@@ -1,0 +1,73 @@
+---
+title: Place items
+description: Use place-items utilities to control the alignment of grid items within their grid areas on both the block and inline axes simultaneously.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items
+utility:
+  - place-items
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use `place-items` utilities on CSS Grid containers as a shorthand to set both `align-items` and `justify-items` at once. This property controls how grid items are positioned within their grid areas on both axes.
+
+## Basic usage
+
+Use `place-items` utilities to control the alignment of grid items. Choose from `start`, `end`, `center`, or `stretch` (browser default).
+
+<div class="bd-example bd-example-flex vstack gap-3">
+  <div class="d-grid gap-3 place-items-start" style="grid-template-columns: 1fr 1fr 1fr; height: 150px;">
+    <div class="p-2">Place</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Start</div>
+  </div>
+  <div class="d-grid gap-3 place-items-end" style="grid-template-columns: 1fr 1fr 1fr; height: 150px;">
+    <div class="p-2">Place</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">End</div>
+  </div>
+  <div class="d-grid gap-3 place-items-center" style="grid-template-columns: 1fr 1fr 1fr; height: 150px;">
+    <div class="p-2">Place</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Center</div>
+  </div>
+  <div class="d-grid gap-3 place-items-stretch" style="grid-template-columns: 1fr 1fr 1fr; height: 150px;">
+    <div class="p-2">Place</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Stretch</div>
+  </div>
+</div>
+
+```html
+<div class="d-grid place-items-start">...</div>
+<div class="d-grid place-items-end">...</div>
+<div class="d-grid place-items-center">...</div>
+<div class="d-grid place-items-stretch">...</div>
+```
+
+## Responsive
+
+Responsive variations also exist for `place-items`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}place-items-start</code></li>
+      <li><code>.{breakpoint.abbr}place-items-end</code></li>
+      <li><code>.{breakpoint.abbr}place-items-center</code></li>
+      <li><code>.{breakpoint.abbr}place-items-stretch</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Place items utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-place-items" file="scss/_utilities.scss" />

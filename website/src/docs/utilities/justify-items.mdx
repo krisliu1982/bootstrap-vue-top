@@ -1,0 +1,73 @@
+---
+title: Justify items
+description: Use justify-items utilities to control the alignment of grid items along the inline axis (horizontally, in most writing modes).
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items
+utility:
+  - justify-items
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use `justify-items` utilities on CSS Grid containers to change the alignment of grid items along the inline (row) axis. This property controls how grid items are positioned horizontally within their grid areas.
+
+## Basic usage
+
+Use `justify-items` utilities to control the horizontal alignment of grid items. Choose from `start`, `end`, `center`, or `stretch` (browser default).
+
+<div class="bd-example bd-example-flex vstack gap-3">
+  <div class="d-grid gap-3 justify-items-start" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="p-2">Justify</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Start</div>
+  </div>
+  <div class="d-grid gap-3 justify-items-end" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="p-2">Justify</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">End</div>
+  </div>
+  <div class="d-grid gap-3 justify-items-center" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="p-2">Justify</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Center</div>
+  </div>
+  <div class="d-grid gap-3 justify-items-stretch" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="p-2">Justify</div>
+    <div class="p-2">Items</div>
+    <div class="p-2">Stretch</div>
+  </div>
+</div>
+
+```html
+<div class="d-grid justify-items-start">...</div>
+<div class="d-grid justify-items-end">...</div>
+<div class="d-grid justify-items-center">...</div>
+<div class="d-grid justify-items-stretch">...</div>
+```
+
+## Responsive
+
+Responsive variations also exist for `justify-items`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}justify-items-start</code></li>
+      <li><code>.{breakpoint.abbr}justify-items-end</code></li>
+      <li><code>.{breakpoint.abbr}justify-items-center</code></li>
+      <li><code>.{breakpoint.abbr}justify-items-stretch</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Justify items utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-justify-items" file="scss/_utilities.scss" />

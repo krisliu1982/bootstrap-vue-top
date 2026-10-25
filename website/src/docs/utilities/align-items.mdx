@@ -1,0 +1,78 @@
+---
+title: Align items
+description: Use align-items utilities to change the alignment of flex items on the cross axis.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+utility:
+  - align-items
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use `align-items` utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if `flex-direction: column`). Choose from `start`, `end`, `center`, `baseline`, or `stretch` (browser default).
+
+## Basic usage
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-items-start mb-3" style="height: 100px">
+    <div class="p-2 w-5">Align</div>
+    <div class="p-2 w-5">Items</div>
+    <div class="p-2 w-5">Start</div>
+  </div>
+  <div class="d-flex align-items-end mb-3" style="height: 100px">
+    <div class="p-2 w-5">Align</div>
+    <div class="p-2 w-5">Items</div>
+    <div class="p-2 w-5">End</div>
+  </div>
+  <div class="d-flex align-items-center mb-3" style="height: 100px">
+    <div class="p-2 w-5">Align</div>
+    <div class="p-2 w-5">Items</div>
+    <div class="p-2 w-5">Center</div>
+  </div>
+  <div class="d-flex align-items-baseline mb-3" style="height: 100px">
+    <div class="p-2 w-5">Align</div>
+    <div class="p-2 w-5">Items</div>
+    <div class="p-2 w-5">Baseline</div>
+  </div>
+  <div class="d-flex align-items-stretch" style="height: 100px">
+    <div class="p-2 w-5">Align</div>
+    <div class="p-2 w-5">Items</div>
+    <div class="p-2 w-5">Stretch</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-items-start">...</div>
+<div class="d-flex align-items-end">...</div>
+<div class="d-flex align-items-center">...</div>
+<div class="d-flex align-items-baseline">...</div>
+<div class="d-flex align-items-stretch">...</div>
+```
+
+## Responsive
+
+Responsive variations also exist for `align-items`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}align-items-start</code></li>
+      <li><code>.{breakpoint.abbr}align-items-end</code></li>
+      <li><code>.{breakpoint.abbr}align-items-center</code></li>
+      <li><code>.{breakpoint.abbr}align-items-baseline</code></li>
+      <li><code>.{breakpoint.abbr}align-items-stretch</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Align items utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-align-items" file="scss/_utilities.scss" />

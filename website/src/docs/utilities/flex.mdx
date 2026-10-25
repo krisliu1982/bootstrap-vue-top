@@ -1,0 +1,226 @@
+---
+title: Flex
+description: Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+csstricks:
+  url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  label: Flexbox Guide
+utility:
+  - flex
+  - flex-direction
+  - flex-grow
+  - flex-shrink
+  - flex-wrap
+---
+
+import { getData } from '@libs/data'
+import { getSequence } from '@libs/utils'
+
+## Enable flex behaviors
+
+Apply `display` utilities to create a flexbox container and transform **direct children elements** into flex items. Flex containers and items are able to be modified further with additional flex properties.
+
+<Example class="bd-example-flex" code={`<div class="d-flex p-2">I'm a flexbox container!</div>`} />
+
+<Example class="bd-example-flex" code={`<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`} />
+
+Responsive variations also exist for `.d-flex` and `.d-inline-flex`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}d-flex</code></li>
+      <li><code>.{breakpoint.abbr}d-inline-flex</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## Direction
+
+Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is `row`. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).
+
+Use `.flex-row` to set a horizontal direction (the browser default), or `.flex-row-reverse` to start the horizontal direction from the opposite side.
+
+<Example class="bd-example-flex" code={`<div class="d-flex flex-row mb-3">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>`} />
+
+Use `.flex-column` to set a vertical direction, or `.flex-column-reverse` to start the vertical direction from the opposite side.
+
+<Example class="bd-example-flex" code={`<div class="d-flex flex-column mb-3">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>
+  <div class="d-flex flex-column-reverse">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>`} />
+
+Responsive variations also exist for `flex-direction`.
+
+<ul>
+{getSequence(0, 5).map((i) => (
+  <Fragment>
+    <li><code>.{getData('breakpoints')[i].abbr}flex-row</code></li>
+    <li><code>.{getData('breakpoints')[i].abbr}flex-row-reverse</code></li>
+    <li><code>.{getData('breakpoints')[i].abbr}flex-column</code></li>
+    <li><code>.{getData('breakpoints')[i].abbr}flex-column-reverse</code></li>
+  </Fragment>
+))}
+</ul>
+
+## Fill
+
+Use the `.flex-fill` class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.
+
+<Example class="bd-example-flex" code={`<div class="d-flex">
+    <div class="p-2 flex-fill">Flex item with a lot of content</div>
+    <div class="p-2 flex-fill">Flex item</div>
+    <div class="p-2 flex-fill">Flex item</div>
+  </div>`} />
+
+Responsive variations also exist for `flex-fill`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <li><code>.{breakpoint.abbr}flex-fill</code></li>
+  )
+})}
+</ul>
+
+## Grow and shrink
+
+Use `.flex-grow-*` utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the `.flex-grow-1` elements uses all available space it can, while allowing the remaining two flex items their necessary space.
+
+<Example class="bd-example-flex" code={`<div class="d-flex">
+    <div class="p-2 flex-grow-1">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Third flex item</div>
+  </div>`} />
+
+Use `.flex-shrink-*` utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with `.flex-shrink-1` is forced to wrap its contents to a new line, "shrinking" to allow more space for the previous flex item with `.w-100`.
+
+<Example class="bd-example-flex" code={`<div class="d-flex">
+    <div class="p-2 w-100">Flex item</div>
+    <div class="p-2 flex-shrink-1">Flex item</div>
+  </div>`} />
+
+Responsive variations also exist for `flex-grow` and `flex-shrink`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}flex-grow-0</code></li>
+      <li><code>.{breakpoint.abbr}flex-grow-1</code></li>
+      <li><code>.{breakpoint.abbr}flex-shrink-0</code></li>
+      <li><code>.{breakpoint.abbr}flex-shrink-1</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## Wrap
+
+Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with `.flex-nowrap`, wrapping with `.flex-wrap`, or reverse wrapping with `.flex-wrap-reverse`.
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex flex-nowrap" style="width: 8rem;">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex flex-nowrap">
+  ...
+</div>
+```
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex flex-wrap">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+    <div class="p-2">Flex item 4</div>
+    <div class="p-2">Flex item 5</div>
+    <div class="p-2">Flex item 6</div>
+    <div class="p-2">Flex item 7</div>
+    <div class="p-2">Flex item 8</div>
+    <div class="p-2">Flex item 9</div>
+    <div class="p-2">Flex item 10</div>
+    <div class="p-2">Flex item 11</div>
+    <div class="p-2">Flex item 12</div>
+    <div class="p-2">Flex item 13</div>
+    <div class="p-2">Flex item 14</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex flex-wrap">
+  ...
+</div>
+```
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex flex-wrap-reverse">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+    <div class="p-2">Flex item 4</div>
+    <div class="p-2">Flex item 5</div>
+    <div class="p-2">Flex item 6</div>
+    <div class="p-2">Flex item 7</div>
+    <div class="p-2">Flex item 8</div>
+    <div class="p-2">Flex item 9</div>
+    <div class="p-2">Flex item 10</div>
+    <div class="p-2">Flex item 11</div>
+    <div class="p-2">Flex item 12</div>
+    <div class="p-2">Flex item 13</div>
+    <div class="p-2">Flex item 14</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex flex-wrap-reverse">
+  ...
+</div>
+```
+
+Responsive variations also exist for `flex-wrap`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}flex-nowrap</code></li>
+      <li><code>.{breakpoint.abbr}flex-wrap</code></li>
+      <li><code>.{breakpoint.abbr}flex-wrap-reverse</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Flexbox utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-flex" file="scss/_utilities.scss" />

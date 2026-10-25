@@ -9,19 +9,19 @@ import BootstrapVue from 'bootstrap-vue-top';
 import './assets/docs.css';
 
 
-import MdWrapper from '@/views/docs/md-wrapper.vue';
-import CodeHighlight from '@/views/docs/code-highlight.vue';
-import ScssDocs from '@/views/docs/scss-docs.vue';
+import MdWrapper from '@/docs/md-wrapper.vue';
+import CodeWrapper from '@/docs/code-wrapper.vue';
+import ScssDocs from '@/docs/scss-docs.vue';
 
-import Example from '@/views/docs/example.vue';
-import Callout from '@/views/docs/callout.vue';
+import Example from '@/docs/example.vue';
+import Callout from '@/docs/callout.vue';
 
 
 const app = createApp(app_);
 app.use(router);
 app.use(BootstrapVue);
 app.component('MdWrapper', MdWrapper);
-app.component('CodeHighlight', CodeHighlight);
+app.component('CodeWrapper', CodeWrapper);
 app.component('ScssDocs', ScssDocs);
 
 app.component('Example', Example);

@@ -1,0 +1,201 @@
+---
+title: Align content
+description: Use align-content utilities to align flex items together on the cross axis.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+utility:
+  - align-content
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use `align-content` utilities on flexbox containers to align flex items _together_ on the cross axis. Choose from `start` (browser default), `end`, `center`, `between`, `around`, or `stretch`. To demonstrate these utilities, we’ve enforced `flex-wrap: wrap` and increased the number of flex items.
+
+**Heads up!** This property has no effect on single rows of flex items.
+
+## Basic usage
+
+### Start
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-start flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-start flex-wrap">...</div>
+```
+
+### End
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-end flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-end flex-wrap">...</div>
+```
+
+### Center
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-center flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-center flex-wrap">...</div>
+```
+
+### Between
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-between flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-between flex-wrap">...</div>
+```
+
+### Around
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-around flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-around flex-wrap">...</div>
+```
+
+### Stretch
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex align-content-stretch flex-wrap" style="height: 200px">
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+    <div class="p-2">Flex item</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex align-content-stretch flex-wrap">...</div>
+```
+
+## Responsive
+
+Responsive variations also exist for `align-content`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}align-content-start</code></li>
+      <li><code>.{breakpoint.abbr}align-content-end</code></li>
+      <li><code>.{breakpoint.abbr}align-content-center</code></li>
+      <li><code>.{breakpoint.abbr}align-content-between</code></li>
+      <li><code>.{breakpoint.abbr}align-content-around</code></li>
+      <li><code>.{breakpoint.abbr}align-content-stretch</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Align content utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-align-content" file="scss/_utilities.scss" />

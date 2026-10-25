@@ -1,0 +1,432 @@
+---
+title: Drawer
+description: Build hidden sidebars or drawers into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin. Replaces the old Offcanvas component.
+toc: true
+css_layer: components
+css_media: viewport
+js: required
+---
+
+## How it works
+
+Drawer builds on the native `<dialog>` element and our Dialog component to manage hidden sidebars via JavaScript. These sidebars, or drawers, can appear from the left, right, top, or bottom edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and `data` attributes are used to invoke our JavaScript.
+
+- **Drawer shares the same base as [our Dialog component]([[docsref:/components/dialog]])**, using native `<dialog>` APIs for focus trapping, backdrop, and top-layer rendering.
+- **Use the `<dialog>` element**, not a `<div>`. Due to how CSS handles animations, don’t apply `margin` or `translate` directly to `.drawer` — wrap it if you need those.
+- **Modal by default** — opens with `showModal()`, a backdrop, and focus trapping. Set `scroll: true` and `backdrop: false` to open as a non-modal drawer with `show()`: body scrolling stays on, and focus is not trapped.
+- **Built-in backdrop** via `::backdrop` (modal only) closes the drawer on click; set `backdrop: "static"` to lock clicks outside, or `backdrop: false` to hide it.
+- **Escape key handling** closes the drawer by default; set `keyboard: false` to disable.
+- **Swipe to dismiss** — drawer auto-wires a placement-aware swipe (swipe left to close `drawer-start` in LTR, swipe down to close `drawer-bottom`, etc.).
+- **Responsive placement** — `.sm:drawer`, `.md:drawer`, and up stay drawer-like below their breakpoint and collapse inline above it, making drawers useful as responsive navbars.
+- **Only one drawer can be shown at a time** (enforced by the data API).
+- **Animated open and close** — drawer slides back out to its placement-specific off-screen position on close, with the `::backdrop` fading alongside it when opened modally. When authoring custom CSS, qualify your `[open]` rules with `:not(.hiding)` so the exit transition can fall through to the base state; add `.drawer-instant` to skip animations.
+
+<Callout name="info-prefersreducedmotion" />
+
+## Examples
+
+### Drawer components
+
+Below is a drawer example that is shown by default (via `open` and `.show` on the `<dialog>`). Drawer includes support for a header with a close button and an optional body class for some initial `padding`. We suggest that you include drawer headers with dismiss actions whenever possible, or provide an explicit dismiss action.
+
+<Example class="bd-example-drawer p-0 bg-1 overflow-hidden" code={`<dialog class="drawer drawer-start show" open tabindex="-1" id="drawer" aria-labelledby="drawerLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerLabel">Drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      Content for the drawer goes here. You can place just about any Bootstrap component or custom elements here.
+    </div>
+  </dialog>`} />
+
+### Live demo
+
+Use the buttons below to show and hide a drawer element via JavaScript. You can use a link with the `href` attribute, or a button with the `data-bs-target` attribute. In both cases, the `data-bs-toggle="drawer"` is required.
+
+<Example code={`<a class="btn-solid theme-primary" data-bs-toggle="drawer" href="#drawerExample" role="button" aria-controls="drawerExample">
+    Link with href
+  </a>
+  <button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerExample" aria-controls="drawerExample">
+    Button with data-bs-target
+  </button>
+
+  <dialog class="drawer drawer-start" tabindex="-1" id="drawerExample" aria-labelledby="drawerExampleLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerExampleLabel">Drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="mt-3">
+        <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu">
+          Menu
+        </button>
+        <div class="menu">
+          <a class="menu-item" href="#">Action</a>
+          <a class="menu-item" href="#">Another action</a>
+          <a class="menu-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </dialog>`} />
+
+### Without JavaScript
+
+Supported browsers can open and close a drawer with the [Invoker Commands API](https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API)—no Bootstrap JavaScript required. Set `commandfor` to the drawer’s `id`, use `command="show-modal"` to open, and `command="close"` to dismiss.
+
+<Callout type="warning">
+The Invoker Commands API is not supported in all browsers. For guaranteed support, use the `data-bs-toggle` examples above when you need our plugin options, events, swipe to dismiss, or animated close.
+</Callout>
+
+<Example code={`<button type="button" class="btn-solid theme-primary" commandfor="invokerDrawer" command="show-modal">
+    Open drawer
+  </button>
+
+  <dialog class="drawer drawer-start" tabindex="-1" id="invokerDrawer" aria-labelledby="invokerDrawerLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="invokerDrawerLabel">Invoker Commands</h5>
+      <button type="button" class="btn-close" commandfor="invokerDrawer" command="close" aria-label="Close"></button>
+    </div>
+    <div class="drawer-body">
+      <p>This drawer opens with <code>command="show-modal"</code> and closes with <code>command="close"</code>. No Bootstrap JavaScript is involved.</p>
+    </div>
+  </dialog>`} />
+
+### Body scrolling
+
+Scrolling the `<body>` element is disabled when a drawer opens modally. Use `data-bs-scroll="true"` with `data-bs-backdrop="false"` to keep body scrolling and open the drawer as non-modal. Focus moves into the drawer, but is not trapped, so the page stays interactive.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerScrolling" aria-controls="drawerScrolling">Enable body scrolling</button>
+
+  <dialog class="drawer drawer-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="drawerScrolling" aria-labelledby="drawerScrollingLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerScrollingLabel">Drawer with body scrolling</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+  </dialog>`} />
+
+### Body scrolling & backdrop
+
+You can also allow `<body>` scrolling while keeping a backdrop. With a backdrop present, the drawer stays modal (`showModal()` and focus trapping) even when `scroll` is `true`.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerWithBothOptions" aria-controls="drawerWithBothOptions">Enable both scrolling & backdrop</button>
+
+  <dialog class="drawer drawer-start" data-bs-scroll="true" tabindex="-1" id="drawerWithBothOptions" aria-labelledby="drawerWithBothOptionsLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+  </dialog>`} />
+
+### Static backdrop
+
+When backdrop is set to static, the drawer will not close when clicking outside of it.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+    Toggle static drawer
+  </button>
+
+  <dialog class="drawer drawer-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="staticBackdropLabel">Drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <div>
+        I will not close if you click outside of me.
+      </div>
+    </div>
+  </dialog>`} />
+
+## Instant drawer
+
+By default, drawers animate with a slide on open and close. To disable animations, add `.drawer-instant` to the `<dialog>` element.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#instantDrawer" aria-controls="instantDrawer">
+    Toggle instant drawer
+  </button>
+
+  <dialog class="drawer drawer-start drawer-instant" tabindex="-1" id="instantDrawer" aria-labelledby="instantDrawerLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="instantDrawerLabel">Instant drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>This drawer doesn’t animate and appears instantly on open and close.</p>
+    </div>
+  </dialog>`} />
+
+## Dark drawer
+
+Change the appearance of drawers with utilities to better match them to different contexts like dark navbars. Here we add `data-bs-theme="dark"` to the `.drawer`, and it makes all nested elements within use dark mode.
+
+<Example class="bd-example-drawer p-0 bg-1 overflow-hidden" code={`<dialog class="drawer drawer-start show" open tabindex="-1" id="drawerDark" aria-labelledby="drawerDarkLabel" data-bs-theme="dark">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerDarkLabel">Drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>Place drawer content here.</p>
+    </div>
+  </dialog>`} />
+
+## Translucent drawer
+
+Add `.drawer-translucent` to the drawer panel to blur and saturate the background. This makes the panel semi-transparent so content behind it shows through.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerTranslucent" aria-controls="drawerTranslucent">
+    Toggle translucent drawer
+  </button>
+
+  <dialog class="drawer drawer-start drawer-translucent" tabindex="-1" id="drawerTranslucent" aria-labelledby="drawerTranslucentLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerTranslucentLabel">Translucent drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      Content for the translucent drawer goes here. The background blurs and saturates whatever is behind it.
+    </div>
+  </dialog>`} />
+
+## Sheet
+
+Add `.drawer-sheet` to render the panel flush against the viewport edge. The sheet variant removes the drawer’s inset, border, border-radius, and box-shadow, so it sits edge-to-edge like a traditional offcanvas. It works with any placement.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerSheet" aria-controls="drawerSheet">
+    Toggle sheet drawer
+  </button>
+
+  <dialog class="drawer drawer-bottom drawer-sheet" tabindex="-1" id="drawerSheet" aria-labelledby="drawerSheetLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerSheetLabel">Sheet drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      Content for the sheet drawer goes here. It sits flush to the edge with no inset, border, rounded corners, or shadow.
+    </div>
+  </dialog>`} />
+
+## Responsive
+
+Responsive drawer classes hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, `.lg:drawer` hides content in a drawer below the `lg` breakpoint, but shows the content above the `lg` breakpoint. Responsive drawer classes are available for each breakpoint.
+
+To make a responsive drawer, replace the `.drawer` base class with a responsive variant. Close buttons inside the drawer work without an explicit `data-bs-target`.
+
+<Example code={`<button class="btn-solid theme-primary lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#drawerResponsive" aria-controls="drawerResponsive">Toggle drawer</button>
+
+  <div class="alert theme-info d-none lg:d-block mb-3"><p>Resize your browser to show the responsive drawer toggle.</p></div>
+
+  <dialog class="lg:drawer drawer-end" tabindex="-1" id="drawerResponsive" aria-labelledby="drawerResponsiveLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerResponsiveLabel">Responsive drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p class="mb-0">This is content within an <code>.lg:drawer</code>.</p>
+    </div>
+  </dialog>`} />
+
+## Placement
+
+There’s no default placement for drawer components, so you must add one of the modifier classes below.
+
+- `.drawer-start` places drawer on the left of the viewport (shown above)
+- `.drawer-end` places drawer on the right of the viewport
+- `.drawer-top` places drawer on the top of the viewport
+- `.drawer-bottom` places drawer on the bottom of the viewport
+- `.drawer-fullscreen` covers the entire viewport
+
+Try the top, right, bottom, and fullscreen examples out below.
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerTop" aria-controls="drawerTop">Toggle top drawer</button>
+
+  <dialog class="drawer drawer-top" tabindex="-1" id="drawerTop" aria-labelledby="drawerTopLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerTopLabel">Drawer top</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      ...
+    </div>
+  </dialog>`} />
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerRight" aria-controls="drawerRight">Toggle right drawer</button>
+
+  <dialog class="drawer drawer-end" tabindex="-1" id="drawerRight" aria-labelledby="drawerRightLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerRightLabel">Drawer right</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      ...
+    </div>
+  </dialog>`} />
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerBottom" aria-controls="drawerBottom">Toggle bottom drawer</button>
+
+  <dialog class="drawer drawer-bottom" tabindex="-1" id="drawerBottom" aria-labelledby="drawerBottomLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerBottomLabel">Drawer bottom</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body small">
+      ...
+    </div>
+  </dialog>`} />
+
+<Example code={`<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerFullscreen" aria-controls="drawerFullscreen">Toggle fullscreen drawer</button>
+
+  <dialog class="drawer drawer-fullscreen" tabindex="-1" id="drawerFullscreen" aria-labelledby="drawerFullscreenLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerFullscreenLabel">Fullscreen drawer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>This drawer covers the entire viewport, useful for full-page menus or modal-like experiences.</p>
+    </div>
+  </dialog>`} />
+
+## Footer
+
+Add an optional `.drawer-footer` for action buttons or other content at the bottom of the drawer.
+
+<Example class="bd-example-drawer p-0 bg-1 overflow-hidden" code={`<dialog class="drawer drawer-start show" open tabindex="-1" id="drawerFooter" aria-labelledby="drawerFooterLabel">
+    <div class="drawer-header">
+      <h5 class="drawer-title" id="drawerFooterLabel">Drawer with footer</h5>
+      <CloseButton dismiss="drawer" />
+    </div>
+    <div class="drawer-body">
+      <p>Content for the drawer goes here. The footer will stick to the bottom.</p>
+    </div>
+    <div class="drawer-footer">
+      <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="drawer">Close</button>
+      <button type="button" class="btn-solid theme-primary">Save changes</button>
+    </div>
+  </dialog>`} />
+
+## Accessibility
+
+Since the drawer is a native `<dialog>`, it gets the correct `dialog` role. Modal drawers also get modal semantics and focus trapping from `showModal()`. Non-modal drawers (`scroll: true` and `backdrop: false`) use `show()` instead, so they do not trap focus or mark the rest of the page as inert. Add `aria-labelledby` that points at the drawer title.
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Drawer" className="drawer" />
+
+<ScssDocs name="drawer-tokens" file="scss/_drawer.scss" />
+
+Tokens for the drawer backdrop are available in a separate map as they style the native `::backdrop` pseudo-element.
+
+<ScssDocs name="drawer-backdrop-tokens" file="scss/_drawer.scss" />
+
+## Usage
+
+The drawer plugin is built on the native `<dialog>` element and utilizes a few classes and attributes to handle the heavy lifting:
+
+- `.drawer` on a `<dialog>` element enables drawer behavior
+- `.drawer-start` places the drawer on the left
+- `.drawer-end` places the drawer on the right
+- `.drawer-top` places the drawer on the top
+- `.drawer-bottom` places the drawer on the bottom
+
+Add a dismiss button with the `data-bs-dismiss="drawer"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
+
+### Via data attributes
+
+<BsTable>
+| Attribute | Description |
+| --- | --- |
+| `data-bs-toggle="drawer"` | Initializes drawer behavior on the trigger element. |
+| `data-bs-target` | CSS selector for the `<dialog>` drawer element to open (or use `href` on a link). |
+| `data-bs-dismiss="drawer"` | On a dismiss control, closes the drawer when activated. |
+</BsTable>
+
+#### Toggle
+
+Add `data-bs-toggle="drawer"` and a `data-bs-target` or `href` to the element to automatically assign control of one drawer element. The `data-bs-target` attribute accepts a CSS selector to apply the drawer to. Be sure to use a `<dialog>` element with the class `drawer`.
+
+#### Dismiss
+
+<JsDismiss name="drawer" />
+
+<Callout type="warning">
+While both ways to dismiss a drawer are supported, keep in mind that dismissing from outside a drawer does not match the [ARIA Authoring Practices Guide dialog (modal) pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/). Do this at your own risk.
+</Callout>
+
+### Via JavaScript
+
+Enable manually with:
+
+```js
+const drawerElementList = document.querySelectorAll('dialog.drawer')
+const drawerList = [...drawerElementList].map(drawerEl => new bootstrap.Drawer(drawerEl))
+```
+
+### Dependencies
+
+<JsDependencies component="drawer" />
+
+### Options
+
+<JsDataAttributes />
+
+<BsTable>
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| `backdrop` | boolean or the string `static` | `true` | Apply a backdrop on body while drawer is open. Alternatively, specify `static` for a backdrop which doesn’t close the drawer when clicked. |
+| `keyboard` | boolean | `true` | Closes the drawer when escape key is pressed. |
+| `scroll` | boolean | `false` | Allow body scrolling while the drawer is open. Combined with `backdrop: false`, opens the drawer as non-modal (no focus trap). |
+</BsTable>
+
+### Methods
+
+<Callout name="info-promise-methods" />
+
+Activates your content as a drawer element. Accepts an optional options `object`.
+
+You can create a drawer instance with the constructor, for example:
+
+```js
+const bsDrawer = new bootstrap.Drawer('#myDrawer')
+```
+
+<BsTable>
+| Method | Description |
+| --- | --- |
+| `dispose` | Destroys an element’s drawer. |
+| `getInstance` | *Static* method which allows you to get the drawer instance associated with a DOM element. |
+| `getOrCreateInstance` | *Static* method which allows you to get the drawer instance associated with a DOM element, or create a new one in case it wasn’t initialized. |
+| `hide` | Hides a drawer element. **Returns a promise that resolves once the drawer element is hidden** (i.e. after the `hidden.bs.drawer` event fires). |
+| `show` | Shows a drawer element. **Returns a promise that resolves once the drawer element is shown** (i.e. after the `shown.bs.drawer` event fires). |
+| `toggle` | Toggles a drawer element to shown or hidden. **Returns a promise that resolves once the drawer element is shown or hidden** (i.e. after the `shown.bs.drawer` or `hidden.bs.drawer` event fires). |
+</BsTable>
+
+### Events
+
+Bootstrap’s drawer class exposes a few events for hooking into drawer functionality.
+
+<BsTable>
+| Event type | Description |
+| --- | --- |
+| `hide.bs.drawer` | This event is fired immediately when the `hide` method has been called. |
+| `hidden.bs.drawer` | This event is fired when a drawer element has been hidden from the user (will wait for CSS transitions to complete). |
+| `hidePrevented.bs.drawer` | This event is fired when the drawer is shown, its backdrop is `static` and a click outside of the drawer is performed. The event is also fired when the escape key is pressed and the `keyboard` option is set to `false`. |
+| `show.bs.drawer` | This event fires immediately when the `show` instance method is called. |
+| `shown.bs.drawer` | This event is fired when a drawer element has been made visible to the user (will wait for CSS transitions to complete). |
+</BsTable>
+
+```js
+const myDrawer = document.getElementById('myDrawer')
+myDrawer.addEventListener('hidden.bs.drawer', event => {
+  // do something...
+})
+```

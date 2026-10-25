@@ -1,0 +1,74 @@
+---
+title: Images
+description: Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes.
+toc: true
+css_layer: content
+---
+
+## Responsive images
+
+Images in Bootstrap are made responsive with `.img-fluid`. This applies `max-width: 100%;` and `height: auto;` to the image so that it scales with the parent width.
+
+<Example code={`<Placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="Responsive image" />`} />
+
+## Image thumbnails
+
+In addition to our [border-radius utilities]([[docsref:/utilities/border]]), you can use `.img-thumbnail` to give an image a rounded 1px border appearance.
+
+<Example code={`<Placeholder width="200" height="200" class="img-thumbnail" title="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" />`} />
+
+## Aligning images
+
+Align images with the [helper float classes]([[docsref:/utilities/float]]) or [text alignment classes]([[docsref:/utilities/text-alignment]]). `block`-level images can be centered using [the `.mx-auto` margin utility class]([[docsref:/utilities/margin#horizontal-centering]]).
+
+<Example code={`<Placeholder width="200" height="200" class="rounded float-start" />
+<Placeholder width="200" height="200" class="rounded float-end" />`} />
+
+<Example code={`<Placeholder width="200" height="200" class="rounded mx-auto d-block" />`} />
+
+<Example code={`<div class="text-center">
+    <Placeholder width="200" height="200" class="rounded" />
+  </div>`} />
+
+## Figures
+
+Anytime you need to display a piece of content—like an image with an optional caption, consider using a `<figure>` element. Figures are flex containers in Bootstrap, so you can easily modify the layout and alignment with our [flex utilities]([[docsref:/utilities/flex]]).
+
+Use the included `.figure` and `.figure-caption` classes to provide some baseline styles for the HTML5 `<figure>` and `<figcaption>` elements. Images in figures have no explicit size, so be sure to add the `.img-fluid` class to your `<img>` to make it responsive.
+
+<Example code={`<figure class="figure">
+    <Placeholder width="400" height="300" class="img-fluid rounded-3" />
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure>`} />
+
+And with a reverse alignment:
+
+<Example code={`<figure class="figure align-items-end"><!-- [!code highlight] -->
+    <Placeholder width="400" height="300" class="img-fluid rounded-3" />
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure>`} />
+
+## Picture
+
+If you are using the `<picture>` element to specify multiple `<source>` elements for a specific `<img>`, make sure to add the `.img-*` classes to the `<img>` and not to the `<picture>` tag.
+
+Give the `<img>` an `alt` text that describes the image, or an empty `alt=""` when it’s only decorative. The `alt="..."` in the example below is a placeholder for that text.
+
+```html
+<picture>
+  <source srcset="..." type="image/svg+xml">
+  <img src="..." class="img-fluid img-thumbnail" alt="...">
+</picture>
+```
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Images" className="img-thumbnail" />
+
+<ScssDocs name="thumbnail-tokens" file="scss/content/_images.scss" />
+
+And for figures as well:
+
+<ScssDocs name="figure-tokens" file="scss/content/_images.scss" />

@@ -1,0 +1,257 @@
+---
+title: Avatar
+description: Documentation and examples for avatars, including image avatars, initials, status indicators, and avatar stacks.
+toc: true
+css_layer: components
+---
+
+## Examples
+
+Avatars are used to represent users or entities. They can display an image or initials as a fallback.
+
+### Image
+
+Use `.avatar` with an `.avatar-img` for image-based avatars. The parent `.avatar` element provides an easy wrapper for additional avatar features like status indicators and stacks. You’re welcome to use the `.avatar-img` class on its own if you only need a single HTML element.
+
+<Example code={`<span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>`} />
+
+When used inside the `.avatar` wrapper, the image fills the wrapper and its size is set with `--avatar-size`. Used on its own, `.avatar-img` honors its own `width` and `height` instead, so set them to your desired size.
+
+<Example code={`<img class="avatar-img" src="https://github.com/mdo.png" alt="mdo" width="50" height="50">`} />
+
+### Initials
+
+Use text content inside `.avatar` for initials-based avatars.
+
+<Example code={`<span class="avatar">AB</span>
+<span class="avatar theme-primary">CD</span>
+<span class="avatar theme-accent">EF</span>
+<span class="avatar theme-success">GG</span>
+<span class="avatar theme-danger">GH</span>
+<span class="avatar theme-warning">IJ</span>
+<span class="avatar theme-info">KL</span>
+<span class="avatar theme-inverse">MN</span>
+<span class="avatar theme-secondary">OP</span>`} />
+
+Use `.avatar-subtle` to create a subtle avatar.
+
+<Example code={`<span class="avatar">AB</span>
+<span class="avatar avatar-subtle theme-primary">CD</span>
+<span class="avatar avatar-subtle theme-accent">EF</span>
+<span class="avatar avatar-subtle theme-success">GG</span>
+<span class="avatar avatar-subtle theme-danger">GH</span>
+<span class="avatar avatar-subtle theme-warning">IJ</span>
+<span class="avatar avatar-subtle theme-info">KL</span>
+<span class="avatar avatar-subtle theme-inverse">MN</span>
+<span class="avatar avatar-subtle theme-secondary">OP</span>`} />
+
+## Sizes
+
+Avatars come in multiple sizes: extra small, small, default, large, and extra large.
+
+<Example code={`<span class="avatar avatar-xs">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>
+  <span class="avatar avatar-sm">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>
+  <span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>
+  <span class="avatar avatar-lg">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>
+  <span class="avatar avatar-xl">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>`} />
+
+Use a custom size by modifying the `--bs-avatar-size` variable.
+
+<Example code={`<span class="avatar" style="--bs-avatar-size: 8rem;">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+  </span>`} />
+
+## Status indicator
+
+Add a `.avatar-status` element inside the avatar to show a status indicator. Each status has a distinct shape and color:
+
+- `.status-online` — green circle
+- `.status-offline` — gray rounded square
+- `.status-busy` — red rounded square
+- `.status-away` — yellow circle
+
+Because the status is conveyed purely through color and shape, give each `.avatar-status` a `role="img"` and an `aria-label` (e.g. `Online`) so assistive technologies can announce it.
+
+<Example code={`<span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>
+  <span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-offline" role="img" aria-label="Offline"></span>
+  </span>
+  <span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-busy" role="img" aria-label="Busy"></span>
+  </span>
+  <span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-away" role="img" aria-label="Away"></span>
+  </span>`} />
+
+### Status with sizes
+
+The status indicator scales with the avatar size.
+
+<Example code={`<span class="avatar avatar-xs">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>
+  <span class="avatar avatar-sm">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>
+  <span class="avatar">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>
+  <span class="avatar avatar-lg">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>
+  <span class="avatar avatar-xl">
+    <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    <span class="avatar-status status-online" role="img" aria-label="Online"></span>
+  </span>`} />
+
+## Avatar stack
+
+Use `.avatar-stack` to group multiple avatars together with overlapping effect. Avatars are rendered in reverse order so the first avatar appears on top. Stacks use a percentage of the avatar size to determine how much to overlap stacked avatars.
+
+<Example code={`<div class="avatar-stack">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>`} />
+
+### Stack with sizes
+
+As a shorthand, size classes are available for `.avatar-stack` and `.avatar`.
+
+<Example class="vstack align-items-start gap-3" code={`<div class="avatar-stack avatar-stack-xs">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>
+
+  <div class="avatar-stack avatar-stack-sm">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>
+
+  <div class="avatar-stack">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>
+
+  <div class="avatar-stack avatar-stack-lg">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>
+
+  <div class="avatar-stack avatar-stack-xl">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+  </div>`} />
+
+### Stack with count
+
+Combine with initials to show a count of additional users.
+
+<Example code={`<div class="avatar-stack">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar theme-secondary">+5</span>
+  </div>`} />
+
+<Example code={`<div class="avatar-stack avatar-stack-xl">
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar">
+      <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+    </span>
+    <span class="avatar theme-secondary">+5</span>
+  </div>`} />
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Avatar" className="avatar" />
+
+<ScssDocs name="avatar-tokens" file="scss/_avatar.scss" />
+
+### Sass maps
+
+Avatar sizes are defined in the `$avatar-sizes` Sass map. Each size specifies the avatar size and status size.
+
+<ScssDocs name="avatar-sizes" file="scss/_avatar.scss" />

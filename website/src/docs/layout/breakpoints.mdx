@@ -1,0 +1,324 @@
+---
+title: Breakpoints
+description: Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+aliases:
+ - "/docs/[[config:docs_version]]/layout/"
+ - "/docs/layout/"
+ - "/layout/"
+toc: true
+---
+
+## Core concepts
+
+- **Breakpoints are the building blocks of responsive design.** Use them to control when your layout can be adapted at a particular viewport or device size.
+
+- **Use media queries to architect your CSS by breakpoint.** Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use `min-width` in our media queries.
+
+- **Mobile first, responsive design is the goal.** Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.
+
+## Available breakpoints
+
+Bootstrap includes six default breakpoints, sometimes referred to as _grid tiers_, for building responsively. These breakpoints can be customized if you’re using our source Sass files.
+
+<BsTable>
+| Breakpoint | Class infix | Dimensions |
+| --- | --- | --- |
+| Extra small | <em>None</em> |&lt;576px |
+| Small | `sm` | &ge;576px |
+| Medium | `md` | &ge;768px |
+| Large | `lg` | &ge;1024px |
+| Extra large | `xl` | &ge;1280px |
+| Extra extra large | `2xl` | &ge;1536px |
+</BsTable>
+
+Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.
+
+These breakpoints are customizable via Sass—you’ll find them in a Sass map in our `_config.scss` stylesheet.
+
+<ScssDocs name="breakpoints" file="scss/_config.scss" />
+
+For more information and examples on how to modify our Sass maps and variables, please refer to [the CSS section of the Grid documentation]([[docsref:/layout/grid#css]]).
+
+## Media queries
+
+Since Bootstrap is developed to be mobile first, we use a handful of [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.
+
+### Min-width
+
+Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.
+
+```scss
+// Source mixins
+
+// No media query necessary for xs breakpoint as it’s effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(2xl) { ... }
+
+// Usage
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+```
+
+These Sass mixins translate in our compiled CSS using the values declared in our Sass variables. For example:
+
+```scss
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (width >= 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (width >= 768px) { ... }
+
+// Large devices (desktops, 1024px and up)
+@media (width >= 1024px) { ... }
+
+// X-Large devices (large desktops, 1280px and up)
+@media (width >= 1280px) { ... }
+
+// XX-Large devices (larger desktops, 1536px and up)
+@media (width >= 1536px) { ... }
+```
+
+### Max-width
+
+We occasionally use media queries that go in the other direction (the given screen size _or smaller_):
+
+```scss
+// No media query necessary for xs breakpoint as it’s effectively `@media (max-width: 0) { ... }`
+@include media-breakpoint-down(sm) { ... }
+@include media-breakpoint-down(md) { ... }
+@include media-breakpoint-down(lg) { ... }
+@include media-breakpoint-down(xl) { ... }
+@include media-breakpoint-down(2xl) { ... }
+
+// Example: Style from medium breakpoint and down
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}
+```
+
+These mixins use the breakpoint values to create `max-width` media queries using modern range syntax. For example:
+
+```scss
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (width < 576px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (width < 768px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 1024px)
+@media (width < 1024px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1280px)
+@media (width < 1280px) { ... }
+
+// `2xl` applies to x-large devices (large desktops, less than 1536px)
+@media (width < 1536px) { ... }
+```
+
+### Single breakpoint
+
+There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.
+
+```scss
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+@include media-breakpoint-only(2xl) { ... }
+```
+
+For example the `@include media-breakpoint-only(md) { ... }` will result in :
+
+```scss
+@media (width >= 768px) and (width < 1024px) { ... }
+```
+
+### Between breakpoints
+
+Similarly, media queries may span multiple breakpoint widths:
+
+```scss
+@include media-breakpoint-between(md, xl) { ... }
+```
+
+Which results in:
+
+```scss
+// Example
+// Apply styles starting from medium devices and up to extra large devices
+@media (width >= 768px) and (width < 1280px) { ... }
+```
+
+## Container queries
+
+In addition to viewport-based media queries, Bootstrap uses [container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries) for certain components. Container queries allow elements to respond to the size of a parent element rather than the viewport, enabling more flexible and modular responsive behavior.
+
+Container queries use the same breakpoint values as viewport media queries.
+
+### Usage in Bootstrap
+
+The following components use container queries:
+
+- **[Navbar]([[docsref:/components/navbar]])** — Uses container queries for its responsive expand behavior. The `.navbar` element is set as a query container, and the `.*:navbar-expand` classes use `@container` queries instead of `@media` queries. This means the navbar responds to its own width rather than the viewport width, making it more adaptable when placed in different layout contexts (e.g., within a sidebar or constrained container).
+
+- **[Stepper]([[docsref:/components/stepper]])** — The `.stepper-overflow` wrapper uses `container-type: inline-size` to establish a containment context for the horizontally scrolling stepper pattern.
+
+- **[List group]([[docsref:/components/list-group]])** — The `.*:list-group-horizontal` classes use `@container` queries so the list group switches between vertical and horizontal layouts based on the width of its query container rather than the viewport.
+
+- **[Card]([[docsref:/components/card]])** — The `.card-group` layout uses an `@container` query to attach cards into equal-width columns based on the width of its query container rather than the viewport.
+
+Here’s how the navbar implements container queries:
+
+```scss
+// The navbar is defined as a query container
+.navbar {
+  container-type: inline-size;
+}
+
+// Responsive classes use container queries
+.lg\:navbar-expand {
+  @container (min-width: 1024px) {
+    // Expanded navbar styles...
+  }
+}
+```
+
+### Setting a container
+
+Use the `set-container()` mixin to establish an element as a query container:
+
+```scss
+// Default: inline-size containment
+.my-component {
+  @include set-container();
+  // Output: container-type: inline-size;
+}
+
+// With explicit type
+.my-component {
+  @include set-container(size);
+  // Output: container-type: size;
+}
+
+// With a name (uses shorthand property)
+.my-component {
+  @include set-container(inline-size, sidebar);
+  // Output: container: sidebar / inline-size;
+}
+```
+
+### Container query mixins
+
+Similar to the `media-breakpoint-*` mixins for viewport-based media queries, Bootstrap provides container query mixins that use the same breakpoint values and range syntax.
+
+#### Min-width
+
+Use `container-breakpoint-up()` to apply styles when the container is at least the given breakpoint width:
+
+```scss
+.my-component {
+  @include set-container();
+}
+
+.my-component-child {
+  // …
+
+  @include container-breakpoint-up(md) {
+    // Styles for when container is at least 768px wide
+  }
+
+  @include container-breakpoint-up(lg) {
+    // Styles for when container is at least 1024px wide
+  }
+}
+```
+
+These mixins use the same modern range syntax as media queries. For example:
+
+```scss
+@container (width >= 768px) { ... }
+@container (width >= 1024px) { ... }
+```
+
+#### Max-width
+
+Use `container-breakpoint-down()` to apply styles when the container is narrower than the given breakpoint:
+
+```scss
+// Sass usage
+@include container-breakpoint-down(lg) { ... }
+
+// Compiled CSS
+@container (width < 1024px) { ... }
+```
+
+#### Single breakpoint
+
+Use `container-breakpoint-only()` to target a single breakpoint range:
+
+```scss
+// Sass usage
+@include container-breakpoint-only(md) { ... }
+
+// Compiled CSS
+@container (width >= 768px) and (width < 1024px) { ... }
+```
+
+#### Between breakpoints
+
+Use `container-breakpoint-between()` to span multiple breakpoint widths:
+
+```scss
+// Sass usage
+@include container-breakpoint-between(md, xl) { ... }
+
+// Compiled CSS
+@container (width >= 768px) and (width < 1280px) { ... }
+```
+
+### Named containers
+
+All container query mixins accept an optional container name parameter for querying a specific ancestor container. This is useful when you have nested containers:
+
+```scss
+.sidebar {
+  @include set-container(inline-size, sidebar);
+}
+
+.main-content {
+  @include set-container(inline-size, main);
+}
+
+// Query the sidebar container specifically, even if nested inside main
+.widget {
+  @include container-breakpoint-up(md, sidebar) {
+    // …
+  }
+}
+```
+
+The compiled output includes the container name:
+
+```scss
+@container sidebar (width >= 768px) { ... }
+```

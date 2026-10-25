@@ -1,0 +1,106 @@
+---
+title: Border color
+description: Utilities for controlling border color and opacity.
+toc: true
+alias:
+  - /docs/6.0/utilities/border-color/
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-color
+utility:
+  - border-color
+  - border-color-subtle
+  - border-opacity
+---
+
+import { getData } from '@libs/data'
+
+## Colors
+
+Change the `border-color` using utilities built on our theme colors using `.border-{color}` and `.border-subtle-{color}`. All these border color utilities set the `border-color` property to a local CSS variable, `--bs-bc`, which has the value of the theme color. The root color tokens color values also use `light-dark()` to ensure sufficient contrast in both light and dark color modes.
+
+For example, `.border-primary` sets the `--bs-bc` variable to `var(--bs-primary-border)`:
+
+```css
+.border-primary {
+  --bs-bc: var(--bs-primary-border);
+  border-color: var(--bs-bc);
+}
+```
+
+This approach allows us to also easily support translucency with our `.border-{opacity}` utilities as we can use `color-mix()` with the CSS variable to generate the appropriate color. See the [opacity section](#opacity) for more details.
+
+<Callout>
+The `--bs-bc` variable is registered with `@property` as non-inheriting (`inherits: false`), so border color utilities are scoped to the element they’re applied to and never cascade into nested elements or components. This is why `--bs-bc` is deliberately separate from the inheriting `--bs-border-color` design token that components resolve their default borders from.
+</Callout>
+
+<Example class="d-flex flex-column gap-2 bd-example-border-color-utils" code={[
+  ...getData('theme-colors').map((themeColor) => `<div class="border border-5 border-${themeColor.name}">${themeColor.name}</div>
+<div class="border border-5 border-subtle-${themeColor.name}">${themeColor.name} subtle</div>`),
+  `<div class="border border-5 border-bg">bg</div>
+  <div class="border border-5 border-body">body</div>
+  <div class="border border-5 border-muted">muted</div>
+  <div class="border border-5 border-subtle">subtle</div>
+  <div class="border border-5 border-emphasized">emphasized</div>
+  <div class="border border-5 border-black">black</div>
+<div class="border border-5 border-white">white</div>`
+]} />
+
+Or modify the default `border-color` of a component:
+
+<Example code={`<div class="mb-4">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+  <div class="h4 pb-2 mb-4 fg-danger border-bottom border-danger">
+    Dangerous heading
+  </div>
+
+  <div class="p-3 bg-info bg-10 border border-info border-start-0 rounded-end">
+    Changing border color and width
+  </div>`} />
+
+## Nested elements
+
+Because border color utilities set the non-inheriting `--bs-bc` variable, parent border colors don’t affect the borders of nested elements. Below, the parent uses `.border-danger` while the nested `.border` keeps the default border color.
+
+<Example code={`<div class="p-3 border border-danger rounded-5">
+    Parent with .border-danger
+    <div class="border p-3 mt-3">
+      Nested .border keeps the default color
+    </div>
+  </div>`} />
+
+## Opacity
+
+Change the opacity of a border color by using any of the `.border-<percentage>` utilities which use `color-mix()` to mix the border color with `transparent` thanks to the CSS variable approach mentioned above. Because `--bs-bc` is scoped to the element, pair these opacity utilities with a `.border-{color}` utility on the same element—they no longer inherit a border color from an ancestor.
+
+<Example code={`<div class="border border-5 border-primary p-2 mb-2">Default border</div>
+<div class="border border-5 border-primary border-90 p-2 mb-2">90% opacity</div>
+<div class="border border-5 border-primary border-80 p-2 mb-2">80% opacity</div>
+<div class="border border-5 border-primary border-70 p-2 mb-2">70% opacity</div>
+<div class="border border-5 border-primary border-60 p-2 mb-2">60% opacity</div>
+<div class="border border-5 border-primary border-50 p-2 mb-2">50% opacity</div>
+<div class="border border-5 border-primary border-40 p-2 mb-2">40% opacity</div>
+<div class="border border-5 border-primary border-30 p-2 mb-2">30% opacity</div>
+<div class="border border-5 border-primary border-20 p-2 mb-2">20% opacity</div>
+<div class="border border-5 border-primary border-10 p-2">10% opacity</div>`} />
+
+## CSS
+
+### Variables
+
+<ScssDocs name="root-border-var" file="scss/_root.scss" />
+
+### Sass variables
+
+Variables for setting `border-color` in `.border-*-subtle` utilities in light and dark mode:
+
+{/* <ScssDocs name="theme-border-subtle-variables" file="scss/_config.scss" /> */}
+
+{/* <ScssDocs name="theme-border-subtle-dark-variables" file="scss/_variables-dark.scss" /> */}
+
+### Sass utilities API
+
+Border color utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-border-color" file="scss/_utilities.scss" />

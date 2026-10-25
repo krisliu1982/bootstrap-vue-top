@@ -1,0 +1,210 @@
+---
+title: Grid
+description: Utilities for controlling CSS Grid layout behavior including column counts, column behavior, and auto-placement options.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/grid
+utility:
+  - grid-column-counts
+  - grid-columns
+  - grid-auto-flow
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use grid utilities to control CSS Grid layout behavior. These utilities work with Bootstrap’s [CSS Grid layout system]([[docsref:/layout/css-grid]]) to manage column counts and auto-placement algorithms.
+
+<Callout type="info">
+**CSS Grid is opt-in.** To use these utilities, you need to enable the CSS Grid system by setting `$enable-cssgrid: true` in your Sass configuration. See our [CSS Grid documentation]([[docsref:/layout/css-grid]]) for more details.
+</Callout>
+
+## Column counts
+
+Use `grid-cols-{value}` utilities to set the number of columns in a CSS Grid container by modifying the `--bs-columns` CSS variable. Bootstrap’s CSS Grid system supports 3, 4, and 6 column layouts out of the box.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-cols-3">
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+  </div>`} />
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-cols-4">
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+  </div>`} />
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-cols-6">
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+  </div>`} />
+
+These utilities set the `--bs-columns` CSS variable:
+
+```scss
+.grid-cols-3 {
+  --bs-columns: 3;
+}
+
+.grid-cols-4 {
+  --bs-columns: 4;
+}
+
+.grid-cols-6 {
+  --bs-columns: 6;
+}
+```
+
+## Fill columns
+
+Use `grid-cols-fill` to make a grid item span the entire width of the grid container by setting `grid-column: 1 / -1`.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-columns: 4;">
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div>Column</div>
+    <div class="grid-cols-fill">Full width column</div>
+    <div>Column</div>
+    <div>Column</div>
+  </div>`} />
+
+```html
+<div class="grid" style="--bs-columns: 4;">
+  <div>Column</div>
+  <div>Column</div>
+  <div>Column</div>
+  <div>Column</div>
+  <div class="grid-cols-fill">Full width column</div>
+  <div>Column</div>
+  <div>Column</div>
+</div>
+```
+
+## Subgrid
+
+Use `grid-cols-subgrid` to have a nested `.grid` adopt the column tracks of its parent grid, instead of generating its own evenly divided columns, by setting `grid-template-columns: subgrid`.
+
+In the example below, the parent grid’s three columns are unevenly sized (`2fr 1fr 1fr`). The nested grid in the last row uses `grid-cols-subgrid` to line up with those same column tracks rather than splitting into three equal columns of its own.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="grid-template-columns: 2fr 1fr 1fr;">
+    <div>Column (2fr)</div>
+    <div>Column (1fr)</div>
+    <div>Column (1fr)</div>
+    <div class="grid grid-cols-subgrid" style="grid-column: 1 / -1;">
+      <div>Subgrid column (2fr)</div>
+      <div>Subgrid column (1fr)</div>
+      <div>Subgrid column (1fr)</div>
+    </div>
+  </div>`} />
+
+```scss
+.grid-cols-subgrid {
+  grid-template-columns: subgrid;
+}
+```
+
+## Auto flow
+
+Control how auto-placed items are inserted into the grid with `grid-auto-flow` utilities.
+
+### Row (default)
+
+Use `grid-auto-flow-row` to place items by filling each row in turn, adding new rows as necessary.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-auto-flow-row" style="--bs-columns: 3;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+  </div>`} />
+
+### Column
+
+Use `grid-auto-flow-column` to place items by filling each column in turn, adding new columns as necessary.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-auto-flow-column" style="--bs-rows: 3; --bs-columns: 3;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+  </div>`} />
+
+### Dense
+
+Use `grid-auto-flow-dense` to use the "dense" packing algorithm, which attempts to fill in holes earlier in the grid if smaller items come up later.
+
+<Example class="bd-example-cssgrid" code={`<div class="grid text-center grid-auto-flow-dense" style="--bs-columns: 3;">
+    <div class="g-col-2">Item 1 (spans 2)</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div class="g-col-2">Item 5 (spans 2)</div>
+  </div>`} />
+
+```scss
+.grid-auto-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-auto-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid-auto-flow-dense {
+  grid-auto-flow: dense;
+}
+```
+
+## Responsive
+
+All grid utilities are responsive and include all breakpoints.
+
+### Column counts
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}grid-cols-3</code></li>
+      <li><code>.{breakpoint.abbr}grid-cols-4</code></li>
+      <li><code>.{breakpoint.abbr}grid-cols-6</code></li>
+      <li><code>.{breakpoint.abbr}grid-cols-fill</code></li>
+      <li><code>.{breakpoint.abbr}grid-cols-subgrid</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+### Auto flow
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}grid-auto-flow-row</code></li>
+      <li><code>.{breakpoint.abbr}grid-auto-flow-column</code></li>
+      <li><code>.{breakpoint.abbr}grid-auto-flow-dense</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Grid utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-grid" file="scss/_utilities.scss" />

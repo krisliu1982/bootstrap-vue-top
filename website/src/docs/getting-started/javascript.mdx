@@ -1,0 +1,356 @@
+---
+title: JavaScript
+description: Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.
+toc: true
+---
+
+## JS components
+
+Curious which components explicitly require our JavaScript and Floating UI or Vanilla Calendar Pro?
+
+- Alerts for dismissing
+- Buttons for toggling states and checkbox/radio functionality
+- Carousel for all slide behaviors, controls, and indicators
+- Collapse for toggling visibility of content
+- Datepicker for date selection (also requires [Vanilla Calendar Pro](https://vanilla-calendar.pro/))
+- [Dialog]([[docsref:/components/dialog]]) for displaying, positioning, and scroll behavior
+- Menus for displaying and positioning (also requires [Floating UI](https://floating-ui.com/))
+- Navbar for extending our Collapse and Drawer plugins to implement responsive behaviors
+- [Nav]([[docsref:/components/nav]]) for navigation markup and styles; [Tab]([[docsref:/components/tab]]) plugin for toggling tab panes
+- Drawers for displaying, positioning, and scroll behavior
+- Scrollspy for scroll behavior and navigation updates
+- Toasts for displaying and dismissing
+- Tooltips and popovers for displaying and positioning (also requires [Floating UI](https://floating-ui.com/))
+
+## Individual or compiled
+
+Plugins can be included individually (using Bootstrap’s individual `js/dist/*.js`), or all at once using `bootstrap.js` or the minified `bootstrap.min.js` (don’t include both).
+
+If you use a bundler (Webpack, Parcel, Vite…), you can import only the plugins you need and your bundler will automatically tree-shake the rest:
+
+```js
+import { Toast, Tooltip } from 'bootstrap'
+```
+
+## TypeScript
+
+Bootstrap’s plugins are authored in TypeScript and ship with built-in type declarations — no `@types/bootstrap` package needed. The main entry point and every individual plugin under `js/dist/*.js` are fully typed, including each plugin’s configuration options:
+
+```ts
+import { Tooltip } from 'bootstrap'
+
+const tooltip = Tooltip.getOrCreateInstance('#example')
+tooltip.show()
+```
+
+Each plugin module also exports its configuration object type (for example `TooltipConfig`) if you need to type your own wrappers.
+
+## Usage with JavaScript frameworks
+
+While the Bootstrap CSS can be used with any framework, **the Bootstrap JavaScript is not fully compatible with JavaScript frameworks like React, Vue, and Angular** which assume full knowledge of the DOM. Both Bootstrap and the framework may attempt to mutate the same DOM element, resulting in bugs like menus that are stuck in the "open" position.
+
+A better alternative for those using this type of frameworks is to use a framework-specific package **instead of** the Bootstrap JavaScript. Here are some of the most popular options:
+
+- React: [React Bootstrap](https://react-bootstrap.github.io/) (Bootstrap 5)
+- Vue 2: [BootstrapVue](https://bootstrap-vue.org/) (Bootstrap 4)
+- Vue 3: [BootstrapVueNext](https://bootstrap-vue-next.github.io/bootstrap-vue-next/) (Bootstrap 5)
+- Angular: [ng-bootstrap](https://ng-bootstrap.github.io/) (Bootstrap 5) or [ngx-bootstrap](https://valor-software.com/ngx-bootstrap) (Bootstrap 5)
+
+## Using Bootstrap as a module
+
+<Callout>
+**Try it yourself!** Download the source code and working demo for using Bootstrap as an ES module from the [twbs/examples repository](https://github.com/twbs/examples/tree/main/sass-js-esm). You can also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html).
+</Callout>
+
+Bootstrap’s JavaScript is built as native ES modules (`bootstrap.js` and `bootstrap.min.js`). Use `<script type="module">` to load Bootstrap in the browser:
+
+```html
+<script type="module">
+  import { Toast } from './bootstrap.min.js'
+
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
+```
+
+Using ESM in the browser requires full paths or an [import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) for bare module specifiers like `@floating-ui/dom` and `vanilla-calendar-pro`. Here’s a complete example using an import map:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous">
+    <title>Hello, modularity!</title>
+  </head>
+  <body>
+    <h1>Hello, modularity!</h1>
+    <button id="popoverButton" type="button" class="btn-solid theme-primary btn-lg" data-bs-toggle="popover" title="ESM in Browser" data-bs-content="Bang!">Custom popover</button>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "@floating-ui/dom": "[[config:cdn.floating_ui_esm]]",
+        "vanilla-calendar-pro": "[[config:cdn.vanilla_calendar_pro_esm]]",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@[[config:current_version]]/dist/js/bootstrap.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
+  </body>
+</html>
+```
+
+Components that don’t depend on Floating UI (like Toast, Alert, Collapse, etc.) can be imported individually without any import map:
+
+```html
+<script type="module">
+  import Toast from './js/dist/toast.js'
+
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
+```
+
+## Dependencies
+
+Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.
+
+Our menus, popovers, and tooltips also depend on [Floating UI](https://floating-ui.com/). Our datepicker also depends on [Vanilla Calendar Pro](https://vanilla-calendar.pro/).
+
+## Data attributes
+
+Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to **only use one set of data attributes on a single element** (e.g., you cannot trigger a tooltip and dialog from the same button.)
+
+<JsDataAttributes />
+
+## Selectors
+
+We use the native `querySelector` and `querySelectorAll` methods to query DOM elements for performance reasons, so you must use [valid selectors](https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier). If you use special selectors like `collapse:Example`, be sure to escape them.
+
+## Events
+
+Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. `show`) is triggered at the start of an event, and its past participle form (ex. `shown`) is triggered on the completion of an action.
+
+All infinitive events provide [`preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call `preventDefault()`.
+
+```js
+const myDialogEl = document.querySelector('#myDialog')
+
+myDialogEl.addEventListener('show.bs.dialog', event => {
+  return event.preventDefault() // stops dialog from being shown
+})
+```
+
+## Programmatic API
+
+All constructors accept an optional options object or nothing (which initiates a plugin with its default behavior):
+
+```js
+const myDialogEl = document.querySelector('#myDialog')
+const dialog = new bootstrap.Dialog(myDialogEl) // initialized with defaults
+
+const configObject = { keyboard: false }
+const dialog1 = new bootstrap.Dialog(myDialogEl, configObject) // initialized with no keyboard
+```
+
+If you’d like to get a particular plugin instance, each plugin exposes a `getInstance` method. For example, to retrieve an instance directly from an element:
+
+```js
+bootstrap.Popover.getInstance(myPopoverEl)
+```
+
+This method will return `null` if an instance is not initiated over the requested element.
+
+Alternatively, `getOrCreateInstance` can be used to get the instance associated with a DOM element, or create a new one in case it wasn’t initialized.
+
+```js
+bootstrap.Popover.getOrCreateInstance(myPopoverEl, configObject)
+```
+
+In case an instance wasn’t initialized, it may accept and use an optional configuration object as second argument.
+
+### CSS selectors in constructors
+
+In addition to the `getInstance` and `getOrCreateInstance` methods, all plugin constructors can accept a DOM element or a valid [CSS selector](#selectors) as the first argument. Plugin elements are found with the `querySelector` method since our plugins only support a single element.
+
+```js
+const dialog = new bootstrap.Dialog('#myDialog')
+const menu = new bootstrap.Menu('[data-bs-toggle="menu"]')
+const drawer = bootstrap.Drawer.getInstance('#myDrawer')
+const alert = bootstrap.Alert.getOrCreateInstance('#myAlert')
+```
+
+### Promises and transitions
+
+All programmatic API methods are **asynchronous** and return to the caller once the transition is started, but **before it ends**.
+
+Methods that show or hide a component return a **promise**. The promise resolves when the transition ends, so you can `await` the method instead of listening for an event.
+
+```js
+const collapse = bootstrap.Collapse.getOrCreateInstance('#myCollapse')
+
+await collapse.show()
+// The collapsible area is now expanded
+```
+
+These methods return a promise:
+
+<BsTable class="table">
+| Method | Components |
+| --- | --- |
+| `show`, `hide`, `toggle` | Collapse, Combobox, Datepicker, Dialog, Drawer, Menu, Popover, Tooltip |
+| `show`, `hide` | Toast |
+| `show` | Tab |
+| `close` | Alert |
+</BsTable>
+
+The promise resolves with no value. It resolves at the same moment the matching `shown.bs.*`, `hidden.bs.*`, or `closed.bs.*` event fires, so both styles run your code at the same time. Use the event when you must react to every change, including ones your own code did not start.
+
+```js
+const myDrawerEl = document.querySelector('#myDrawer')
+const drawer = bootstrap.Drawer.getOrCreateInstance(myDrawerEl)
+
+// Await the method you called…
+await drawer.hide()
+saveState()
+
+// …or listen for every hide, whoever started it
+myDrawerEl.addEventListener('hidden.bs.drawer', () => {
+  saveState()
+})
+```
+
+Because each method returns a promise, you can run steps in order without nesting listeners.
+
+```js
+const dialog = bootstrap.Dialog.getOrCreateInstance('#myDialog')
+const toast = bootstrap.Toast.getOrCreateInstance('#myToast')
+
+await dialog.hide()
+await toast.show()
+```
+
+The promise also resolves when the call does nothing — for example when the component is already open, when a listener calls `preventDefault()` on the `show.bs.*` event, or when you dispose the component mid-transition. `await` therefore never hangs, but it also does not tell you whether the state changed. Check the state yourself when that matters.
+
+In addition, a method call on a **transitioning component will be ignored**. For the promise-returning methods above, such a call resolves immediately. It does not wait for the running transition to end.
+
+```js
+const myCarouselEl = document.querySelector('#myCarousel')
+const carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
+
+myCarouselEl.addEventListener('slid.bs.carousel', event => {
+  carousel.to('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
+})
+
+carousel.to('1') // Will start sliding to the slide 1 and returns to the caller
+carousel.to('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
+```
+
+#### `dispose` method
+
+Do not call `dispose` immediately after `hide()`. The hide transition is still running at that point, so the component tears down mid-transition. Await the promise first:
+
+```js
+const toast = bootstrap.Toast.getInstance('#myToast')
+
+await toast.hide()
+toast.dispose()
+```
+
+The event-based equivalent also works:
+
+```js
+const myToastEl = document.querySelector('#myToast')
+const toast = bootstrap.Toast.getInstance(myToastEl)
+
+myToastEl.addEventListener('hidden.bs.toast', () => {
+  toast.dispose()
+})
+
+toast.hide()
+```
+
+### Default settings
+
+You can change the default settings for a plugin by modifying the plugin’s `Constructor.Default` object:
+
+```js
+// changes default for the toast plugin's `autohide` option to false
+bootstrap.Toast.Default.autohide = false
+```
+
+## Methods and properties
+
+Every Bootstrap plugin exposes the following methods and static properties.
+
+<BsTable class="table">
+| Method | Description |
+| --- | --- |
+| `dispose` | Destroys an element’s plugin instance. (Removes stored data on the DOM element) |
+| `getInstance` | *Static* method which allows you to get the plugin instance associated with a DOM element. |
+| `getOrCreateInstance` | *Static* method which allows you to get the plugin instance associated with a DOM element, or create a new one in case it wasn’t initialized. |
+</BsTable>
+
+<BsTable class="table">
+| Static property | Description |
+| --- | --- |
+| `NAME` | Returns the plugin name. (Example: `bootstrap.Tooltip.NAME`) |
+| `VERSION` | The version of each of Bootstrap’s plugins can be accessed via the `VERSION` property of the plugin’s constructor (Example: `bootstrap.Tooltip.VERSION`) |
+</BsTable>
+
+## Sanitizer
+
+Some JavaScript components can render or accept arbitrary HTML in their configuration. To prevent cross-site scripting (XSS) attacks, these components use our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default. In particular:
+
+- Popovers and Tooltips can render arbitrary HTML to the page if configured to do so.
+- Chips and Nav overflow can accept HTML for their icon options (`dismissIcon`, `moreIcon`, and `[data-bs-overflow-icon]`).
+
+The tags and attributes allowed by default for tooltip and popover content are as follows. Any tags or attributes not explicitly allowed will be removed during sanitization:
+
+<JsDocs name="allow-list" file="js/src/util/sanitizer.ts" removeIndentation={false} />
+
+Icon options use a separate, tighter allowlist that covers the default SVG icons and common inline-icon markup:
+
+<JsDocs name="icon-allow-list" file="js/src/util/sanitizer.ts" removeIndentation={false} />
+
+<Callout type="warning">
+**Exercise caution when using these advanced options.** Refer to [OWASP’s Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) for more information. Vulnerabilities caused solely by disabling or modifying content sanitization are not considered within scope for Bootstrap’s security model.
+</Callout>
+
+You can add new values to this default `allowList`:
+
+```js
+const myDefaultAllowList = bootstrap.Tooltip.Default.allowList
+
+// To allow table elements
+myDefaultAllowList.table = []
+
+// To allow td elements and data-bs-option attributes on td elements
+myDefaultAllowList.td = ['data-bs-option']
+
+// You can push your custom regex to validate your attributes.
+// Be careful about your regular expressions being too lax
+const myCustomRegex = /^data-my-app-[\w-]+/
+myDefaultAllowList['*'].push(myCustomRegex)
+```
+
+You can also replace our sanitizer with a dedicated library, for example [DOMPurify](https://www.npmjs.com/package/dompurify):
+
+```js
+const myTooltipEl = document.querySelector('#myTooltip')
+const tooltip = new bootstrap.Tooltip(myTooltipEl, {
+  sanitizeFn(content) {
+    return DOMPurify.sanitize(content)
+  }
+})
+```
+
+## Disabled JavaScript
+
+Bootstrap’s plugins have no special fallback when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
