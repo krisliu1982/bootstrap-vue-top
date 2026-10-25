@@ -7,7 +7,6 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import MarkdownItAnchor from 'markdown-it-anchor'
-import MarkdownItTocDoneRight from 'markdown-it-toc-done-right'
 import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vite.dev/config/
@@ -29,13 +28,6 @@ export default defineConfig({
         // 先加载 anchor，为标题生成 id
         md.use(MarkdownItAnchor, {
           permalink: MarkdownItAnchor.permalink.headerLink()
-        })
-        // 再加载 TOC 插件
-        md.use(MarkdownItTocDoneRight, {
-          // 可选配置：例如只收录 h2 和 h3
-          level: [2, 3],
-          listType: 'ul', // 无序列表，默认是有序列表 ol
-          containerClass: 'table-of-contents'
         })
       },
       markdownOptions: {

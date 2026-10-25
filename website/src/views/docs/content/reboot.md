@@ -8,7 +8,7 @@ aliases:
 toc: true
 css_layer: reboot
 ---
-[[toc]]
+
 ## Approach
 
 Reboot builds upon Normalize, providing many HTML elements with somewhat opinionated styles using only element selectors. Additional styling is done only with classes. For example, we reboot some `<table>` styles for a simpler baseline and later provide `.table`, `.table-bordered`, and more.

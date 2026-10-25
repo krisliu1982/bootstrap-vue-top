@@ -24,7 +24,6 @@
     "@vitejs/plugin-vue": "^6.0.10",
     "autoprefixer": "^10.6.1",
     "markdown-it-anchor": "^10.0.0",
-    "markdown-it-toc-done-right": "^4.2.0",
     "postcss-prefix-custom-properties": "^0.1.0",
     "prettier": "^3.9.10",
     "sass": "^1.106.1",
