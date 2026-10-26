@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import NProgress from 'nprogress-es';
 import 'nprogress-es/nprogress.css';
-import data from '@data'
+import data from '@data/data.js'
 
 NProgress.settings.showSpinner = false;
 

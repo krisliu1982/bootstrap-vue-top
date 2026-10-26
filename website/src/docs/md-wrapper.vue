@@ -33,7 +33,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import data from '@data'
+import data from '@data/data.js'
 
 const props = defineProps({
   frontmatter: {

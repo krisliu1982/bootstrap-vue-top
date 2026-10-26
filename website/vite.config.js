@@ -27,7 +27,7 @@ function flattenConfig(source, prefix = '') {
 }
 
 // docsref 占位符指向的文档站点根地址
-const docsrefPrefix = `${config.baseURL.replace(/\/$/, '')}/${[config.docsDir, 'docs', config.docs_version].filter(Boolean).join('/')}`
+const docsrefPrefix = `${config.baseURL.replace(/\/$/, '')}/${[config.docsDir, config.docs_version, 'docs'].filter(Boolean).join('/')}`
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -36,7 +36,13 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/]
     }),
     Markdown({
-      wrapperComponent: 'MdWrapper',
+      wrapperComponent: (id) => {
+    // id 通常是文件路径或唯一标识
+    if (id.includes('/website/src/docs/')) {
+      return 'MdWrapper'
+    }
+    return null;
+  },
       wrapperDiv: false,
       markdownSetup(md) {
         md.renderer.rules.table_open = () => {
@@ -73,7 +79,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@data': fileURLToPath(new URL('./src/docs/_data/data.js', import.meta.url)),
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
       'bootstrap-vue-top': fileURLToPath(new URL('../src/index.js', import.meta.url))
     },
   },

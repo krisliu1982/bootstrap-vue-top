@@ -1,18 +1,18 @@
 <template>
   <div :class="`docs-callout docs-callout-${type}`">
     <template v-if="name === 'info-npm-starter'">
-      {{ InfoNpmStarter }}
+      <info-npm-starter />
     </template>
     <template v-if="name === 'warning-input-support'">
-      {{ WarningInputSupport }}
+      <warning-input-support />
     </template>
     <slot v-else />
   </div>
 </template>
 
 <script setup>
-import InfoNpmStarter from './_data/callouts/info-npm-starter.md?raw'
-import WarningInputSupport from './_data/callouts/warning-input-support.md?raw'
+import InfoNpmStarter from '@data/callouts/info-npm-starter.md'
+import WarningInputSupport from '@data/callouts/warning-input-support.md'
 
 const props = defineProps({
   type: {

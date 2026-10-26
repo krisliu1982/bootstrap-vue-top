@@ -56,7 +56,7 @@
 
 <script setup lang="js">
 import { ref, onMounted, onUnmounted } from 'vue';
-import data from '@data'
+import data from '@data/data.js'
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
 

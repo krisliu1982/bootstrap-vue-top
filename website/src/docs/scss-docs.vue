@@ -18,7 +18,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import Code from './code.vue'
-import data from '@data';
+import data from '@data/data.js'
 
 const props = defineProps({
     name: {
