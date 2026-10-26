@@ -341,3 +341,13 @@
     color: var(--bs-fg-body);
     font-weight: 500;
 }
+
+.code-tab-btn.active:after {
+    content: "";
+    background-color: var(--bs-border-emphasized);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+}

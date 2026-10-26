@@ -1,24 +1,5 @@
-// 覆盖变量
-$enable-validation-icons: false;
-$pagination-padding-y-lg: 0.5rem;
-$modal-footer-margin-between: 1rem;
-
-// 自定义变量
-$zindex-backtop: 990;
-$zindex-image-preview: 1082;
-$zindex-loading-fullscreen: 1083;
-$zindex-alert: 1085;
-
 // Import all of Bootstrap’s CSS
 @use "bootstrap/scss/bootstrap";
-
-
-/*@use 'modal-2.scss';
-@use 'alert.scss';
-@use 'loading.scss';
-@use 'backtop.scss';
-@use 'uploader.scss';
-@use 'image-preview.scss';*/
 
 .bi {
   width: 1em;

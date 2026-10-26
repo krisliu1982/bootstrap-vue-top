@@ -7,7 +7,27 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 import Markdown from 'unplugin-vue-markdown/vite'
 import MarkdownItAnchor from 'markdown-it-anchor'
+import PlaceholderPlugin from './markdown-placeholder.js'
 import { cloudflare } from "@cloudflare/vite-plugin";
+import config from './config.json' with { type: 'json' }
+
+// 将 config.json 扁平化为 'cdn.css' -> '...' 形式的占位符映射
+function flattenConfig(source, prefix = '') {
+  const map = {}
+  for (const [key, value] of Object.entries(source)) {
+    const path = prefix ? `${prefix}.${key}` : key
+    if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
+      map[`config:${path}`] = JSON.stringify(value)
+      Object.assign(map, flattenConfig(value, path))
+    } else {
+      map[`config:${path}`] = String(value)
+    }
+  }
+  return map
+}
+
+// docsref 占位符指向的文档站点根地址
+const docsrefPrefix = `${config.baseURL.replace(/\/$/, '')}/${[config.docsDir, 'docs', config.docs_version].filter(Boolean).join('/')}`
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -28,6 +48,11 @@ export default defineConfig({
         // 先加载 anchor，为标题生成 id
         md.use(MarkdownItAnchor, {
           permalink: MarkdownItAnchor.permalink.headerLink()
+        }),
+        // 占位符替换
+        md.use(PlaceholderPlugin, {
+          docsrefPrefix,
+          map: flattenConfig(config)
         })
       },
       markdownOptions: {
@@ -48,7 +73,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@data': fileURLToPath(new URL('./src/docs/data.js', import.meta.url)),
+      '@data': fileURLToPath(new URL('./src/docs/_data/data.js', import.meta.url)),
       'bootstrap-vue-top': fileURLToPath(new URL('../src/index.js', import.meta.url))
     },
   },

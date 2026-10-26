@@ -31,6 +31,6 @@
     "unplugin-vue-components": "^30.0.0",
     "unplugin-vue-markdown": "^32.1.1",
     "vite": "^8.3.5",
-    "wrangler": "^4.152.0"
+    "wrangler": "^4.153.0"
   }
 }

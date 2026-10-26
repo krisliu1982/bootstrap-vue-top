@@ -5,7 +5,6 @@ import data from '@data'
 
 NProgress.settings.showSpinner = false;
 
-
 const routes = [
   {
     path: '/',
@@ -23,21 +22,17 @@ const allUrl = data.sidebar.flatMap((group) => {
   return group.pages.flatMap((item) => {
     // Handle nested groups (e.g., Utilities > Borders > Border)
     if (item.group && item.pages) {
-      const subgroupTitle = item.group
       return item.pages.map((page) => ({
-        
-        url: `/docs/${data['bs-docs-version']}/${group.slug}/${page.slug}`,
-        groupSlug:group.slug,
-        pageSlug:page.slug
+        groupSlug: group.slug,
+        pageSlug: page.slug
       }))
     }
     // Handle direct pages
     if (item.title) {
       return [
         {
-          url: `/docs/${data['bs-docs-version']}/${group.slug}/${item.slug}`,
-          groupSlug:group.slug,
-          pageSlug:item.slug
+          groupSlug: group.slug,
+          pageSlug: item.slug
         }
       ]
     }
@@ -46,23 +41,21 @@ const allUrl = data.sidebar.flatMap((group) => {
 })
 
 const docsRoutes = {
-  path: `/docs/${data['bs-docs-version']}`,
+  path: `/docs`,
   component: () => import('@/docs/index.vue'),
   children: [
     {
       path: '',
-      redirect: allUrl[0].url
-  },    {
-      path: '/docs',
-      redirect: allUrl[0].url
-  },
-  ]
+      redirect: `/docs/${allUrl[0].groupSlug}/${allUrl[0].pageSlug}`
+    }
+  ],
+  alias:['/docs']
 }
 
 allUrl.forEach((page) => {
   docsRoutes.children.push({
-    path: page.url,
-    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.md`)
+    path: `/docs/${page.groupSlug}/${page.pageSlug}`,
+    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.md`),
   })
 })
 

@@ -2,12 +2,9 @@ import { createApp } from 'vue';
 import app_ from './app.vue';
 import router from './router/index.js';
 
-
-
-import BootstrapVue from 'bootstrap-vue-top';
+import BootstrapVueTop from 'bootstrap-vue-top';
 
 import './assets/docs.css';
-
 
 import MdWrapper from '@/docs/md-wrapper.vue';
 import CodeWrapper from '@/docs/code-wrapper.vue';
@@ -19,7 +16,7 @@ import Callout from '@/docs/callout.vue';
 
 const app = createApp(app_);
 app.use(router);
-app.use(BootstrapVue);
+app.use(BootstrapVueTop);
 app.component('MdWrapper', MdWrapper);
 app.component('CodeWrapper', CodeWrapper);
 app.component('CodeTabs', CodeTabs);

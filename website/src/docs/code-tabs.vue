@@ -12,7 +12,9 @@
         </a>
       </div>
     </div>
-    <Code :code="props.tabs[curIndex].code" :lang="props.tabs[curIndex].code" />
+    <template v-for="t, index in props.tabs">
+      <Code v-show="curIndex === index" :code="t.code" :lang="t.lang" />
+    </template>
   </div>
 
 </template>

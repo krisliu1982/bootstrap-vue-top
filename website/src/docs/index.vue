@@ -27,16 +27,16 @@
             <ul v-if="t.pages">
               <li  v-for="tt in t.pages">
                 <template v-if="tt.title">
-                <RouterLink :to="`/docs/${data['bs-docs-version']}/${tt.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{tt.title}} {{ tt['zh-CN'] }}
+                <RouterLink :to="`/docs/${tt.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                  {{tt.title}} {{ tt['zh-CN']?tt['zh-CN']:'' }}
                 </RouterLink>
                 </template>
                 <template v-if="tt.group">
                 <div class="fw-bold">{{ tt.group }}</div>
                 <ul>
                   <li  v-for="ttt in tt.pages">
-                <RouterLink :to="`/docs/${data['bs-docs-version']}/${ttt.slug}/${ttt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{ttt.title}} {{ ttt['zh-CN'] }}
+                <RouterLink :to="`/docs/${ttt.slug}/${ttt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                  {{ttt.title}} {{ ttt['zh-CN']?ttt['zh-CN']:'' }}
                 </RouterLink>
                   </li>
                 </ul>

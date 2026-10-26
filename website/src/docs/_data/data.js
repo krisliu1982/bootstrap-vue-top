@@ -1,9 +1,4 @@
-const bs_version = '6.0.0-alpha.1'
-const bs_docs_version = '6.0'
 export default {
-  'bs-version': bs_version,
-  'bs-docs-version': bs_docs_version,
-  'blob-url': `https://github.com/twbs/bootstrap/blob/v${bs_version}`,
   'theme-colors': [
     { "name": "primary", "title": "primary" },
     { "name": "accent", "title": "accent" },
@@ -49,10 +44,6 @@ export default {
   <iframe class="w-100" src="data:text/html,<!DOCTYPE html><html><meta name='color-scheme' content='light dark'><body style='background-color:transparent;color:gray;'><h4>iframe with color-scheme: light-dark</h4></body></html>"></iframe>
   <iframe class="w-100" src="data:text/html,<!DOCTYPE html><html><body style='background-color:transparent;color:gray;'><h4>Embed that declares no color scheme</h4></body></html>"></iframe>
 </div>`,
-  },
-  'callouts': {
-    'warning-input-support': `Some date inputs types are <a href="https://caniuse.com/input-datetime" target="_blank">not fully supported</a> by the latest versions of Safari and Firefox.`,
-    'info-npm-starter':`<strong>Use the Bootstrap npm starter project!</strong> Head to the <a href="https://github.com/twbs/examples/tree/main/sass-js" target="_blank">Sass &amp; JS example</a> template repository to see how to build and customize Bootstrap in your own npm project. Includes Sass compiler, Autoprefixer, Stylelint, PurgeCSS, and Bootstrap Icons.`
   },
   'sidebar': [
     {

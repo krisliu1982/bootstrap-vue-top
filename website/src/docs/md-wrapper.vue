@@ -54,7 +54,7 @@ const allPages = data.sidebar.flatMap((group) => {
     if (item.group && item.pages) {
       const subgroupTitle = item.group
       return item.pages.map((page) => ({
-        title: page['zh-CN'],
+        title: page['zh-CN']?page['zh-CN']:page.title,
         url: `/docs/${data['bs-docs-version']}/${group.slug}/${page.slug}`,
         groupTitle: subgroupTitle
       }))
@@ -63,7 +63,7 @@ const allPages = data.sidebar.flatMap((group) => {
     if (item.title) {
       return [
         {
-          title: item['zh-CN'],
+          title: item['zh-CN']?item['zh-CN']:item.title,
           url: `/docs/${data['bs-docs-version']}/${group.slug}/${item.slug}`,
           groupTitle: group.title
         }
