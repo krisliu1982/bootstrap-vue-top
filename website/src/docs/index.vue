@@ -67,7 +67,7 @@ function handleViewportChange() {
   smallScreen = window.innerWidth < 992;
 }
 
-onMounted(() => {
+/*onMounted(() => {
   menuRef.value.addEventListener('click', function (e) {
     e.preventDefault();
     if (smallScreen) {
@@ -83,5 +83,5 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('resize', handleViewportChange);
-});
+});*/
 </script>

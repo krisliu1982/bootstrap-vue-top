@@ -16,7 +16,7 @@
   @media (min-width: 1024px) {
     .docs-sidebar {
       flex-shrink: 0;
-      width: 13rem;
+      width: 200px;
       height: calc(100vh - 5rem);
       overflow-y: auto;
       position: sticky;

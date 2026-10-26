@@ -54,14 +54,20 @@ export default defineConfig({
 
         // 先加载 anchor，为标题生成 id
         md.use(MarkdownItAnchor, {
-          permalink: MarkdownItAnchor.permalink.headerLink()
+          permalink: MarkdownItAnchor.permalink.headerLink(),
+          slugify: (s) =>
+            s.trim()
+              .toLowerCase()
+              .replace(/[^\w\u4e00-\u9fff-]+/g, '-') // 保留中文、字母数字、连字符
+              .replace(/-+/g, '-')                    // 合并连续连字符
+              .replace(/^-|-$/g, '')                  // 去掉首尾连字符
         }),
 
-        // 占位符替换
-        md.use(PlaceholderPlugin, {
-          docsrefPrefix,
-          map: flattenConfig(config)
-        })
+          // 占位符替换
+          md.use(PlaceholderPlugin, {
+            docsrefPrefix,
+            map: flattenConfig(config)
+          })
       },
       markdownOptions: {
         html: true
