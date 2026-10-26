@@ -37,12 +37,12 @@ export default defineConfig({
     }),
     Markdown({
       wrapperComponent: (id) => {
-    // id 通常是文件路径或唯一标识
-    if (id.includes('/website/src/docs/')) {
-      return 'MdWrapper'
-    }
-    return null;
-  },
+        // id 通常是文件路径或唯一标识
+        if (id.includes('/website/src/docs/')) {
+          return 'MdWrapper'
+        }
+        return null;
+      },
       wrapperDiv: false,
       markdownSetup(md) {
         md.renderer.rules.table_open = () => {
@@ -55,11 +55,11 @@ export default defineConfig({
         md.use(MarkdownItAnchor, {
           permalink: MarkdownItAnchor.permalink.headerLink()
         }),
-        // 占位符替换
-        md.use(PlaceholderPlugin, {
-          docsrefPrefix,
-          map: flattenConfig(config)
-        })
+          // 占位符替换
+          md.use(PlaceholderPlugin, {
+            docsrefPrefix,
+            map: flattenConfig(config)
+          })
       },
       markdownOptions: {
         html: true
