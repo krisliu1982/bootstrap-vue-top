@@ -38,7 +38,7 @@ Bootstrap 的 `package.json` 在以下键下包含一些额外的元数据：
 
 ### 使用 Yarn
 
-Yarn 2+（又称 Yarn Berry）默认不支持 `node_modules` 目录，因此我们的 [Sass 与 JS 示例](https://github.com/twbs/examples/tree/main/sass-js)需要做一些调整：
+Yarn 2+（又称 Yarn Berry）默认不支持 `node_modules` 目录，因此我们的 [Sass 与 JS 示例](https://github.com/twbs/examples/tree/main/sass-js) 需要做一些调整：
 
 <CodeWrapper code="yarn config set nodeLinker node-modules # Use the node_modules linker
 touch yarn.lock # Create an empty yarn.lock file
