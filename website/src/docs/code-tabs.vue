@@ -12,9 +12,11 @@
         </a>
       </div>
     </div>
+    <div class="docs-code">
     <template v-for="t, index in props.tabs">
       <Code v-show="curIndex === index" :code="t.code" :lang="t.lang" />
     </template>
+    </div>
   </div>
 
 </template>

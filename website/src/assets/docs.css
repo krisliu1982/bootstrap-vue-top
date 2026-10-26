@@ -60,19 +60,15 @@
   /* 桌面：≥ 1024px */
   @media (min-width: 1024px) {
     .docs-main {
-      display: grid;
-      grid-template-areas:
-        'intro   toc'
-        'content toc';
-      grid-template-columns: 4fr 1fr;
-      grid-template-rows: auto 1fr;
+      display: flex;
       gap: 1.5rem;
     }
   }
 
-  .docs-intro {
-    grid-area: intro;
+  .docs-body {
+    flex-grow: 1;
   }
+
 
   .docs-intro h1 {
     margin-bottom: 0;
@@ -90,8 +86,9 @@
   /* 桌面：≥ 1024px */
   @media (min-width: 1024px) {
     .docs-toc {
+      width: 200px;
+      flex-shrink: 0;
       display: block;
-      grid-area: toc;
       position: sticky;
       top: 4rem;
       height: calc(100vh - 5rem);
@@ -104,7 +101,6 @@
     list-style-type: none;
     padding: 0;
   }
-
 
   .docs-toc nav a {
     display: block;
@@ -205,8 +201,7 @@
   }
 
   .docs-example-snippet {
-    max-width: 100%;
-    overflow: hidden;
+
   }
 
   .docs-code-snippet {
@@ -217,9 +212,6 @@
     background-color: var(--docs-pre-bg);
     border: 1px solid var(--docs-example-border-color);
     border-radius: var(--docs-example-radius);
-    min-width: 0;
-    margin: 0;
-    overflow: hidden;
   }
 
   .docs-code-snippet .docs-example:first-child {
@@ -315,11 +307,15 @@
 }
 
 .docs-code {
-  max-width: 100%;
-  padding: var(--docs-example-padding);
-  margin-bottom: 0;
-  overflow-x: auto;
+  font-size: 14px;
+  line-height: 20px;
   background-color: var(--docs-pre-bg);
+}
+
+.docs-code>pre {
+  margin-bottom: 0;
+  padding: var(--docs-example-padding);
+  overflow-x:auto;
 }
 
 .code-tabs {
