@@ -51,15 +51,17 @@ export default defineConfig({
         md.renderer.rules.table_close = () => {
           return '</table></div>\n'
         }
+
         // 先加载 anchor，为标题生成 id
         md.use(MarkdownItAnchor, {
           permalink: MarkdownItAnchor.permalink.headerLink()
         }),
-          // 占位符替换
-          md.use(PlaceholderPlugin, {
-            docsrefPrefix,
-            map: flattenConfig(config)
-          })
+
+        // 占位符替换
+        md.use(PlaceholderPlugin, {
+          docsrefPrefix,
+          map: flattenConfig(config)
+        })
       },
       markdownOptions: {
         html: true
