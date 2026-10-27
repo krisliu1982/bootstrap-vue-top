@@ -13,8 +13,8 @@
     </div>
   </div> -->
 
-  <div class="container">
-    <div class="d-flex gap-5 mt-5">
+  <div class="2xl:container">
+    <div class="d-flex gap-7 mt-5">
       <!--       <bv-offcanvas
         ref="offcanvasRef"
         title="文档菜单"
@@ -27,16 +27,16 @@
             <ul v-if="t.pages">
               <li  v-for="tt in t.pages">
                 <template v-if="tt.title">
-                <RouterLink :to="`/docs/${tt.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{tt.title}} {{ tt['zh-CN']?tt['zh-CN']:'' }}
+                <RouterLink :to="`/docs/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                  {{ tt['zh-CN']?tt['zh-CN']:'' }} {{tt.title}}
                 </RouterLink>
                 </template>
                 <template v-if="tt.group">
                 <div class="fw-bold">{{ tt.group }}</div>
                 <ul>
                   <li  v-for="ttt in tt.pages">
-                <RouterLink :to="`/docs/${ttt.slug}/${ttt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{ttt.title}} {{ ttt['zh-CN']?ttt['zh-CN']:'' }}
+                <RouterLink :to="`/docs/${t.slug}/${ttt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                  {{ ttt['zh-CN']?ttt['zh-CN']:'' }} {{ttt.title}}
                 </RouterLink>
                   </li>
                 </ul>

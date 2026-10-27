@@ -1,8 +1,8 @@
----
-title: Install Bootstrap
-description: Add Bootstrap to your project with CDN, package manager, or source files.
-toc: true
----
+[[toc]]
+
+# Install Bootstrap
+
+Add Bootstrap to your project with CDN, package manager, or source files.
 
 ## Install
 

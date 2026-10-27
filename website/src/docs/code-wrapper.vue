@@ -9,9 +9,7 @@
       </a>
     </div>
   </div>
-  <div class="docs-code">
     <Code :code="props.code" :lang="props.lang"/>
-  </div>
   </div>
 
 </template>

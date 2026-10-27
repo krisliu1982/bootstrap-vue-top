@@ -1,5 +1,5 @@
 <template>
-  <pre><code v-html="html"></code></pre>
+  <pre class="docs-code"><code v-html="html"></code></pre>
 </template>
 
 <script setup>

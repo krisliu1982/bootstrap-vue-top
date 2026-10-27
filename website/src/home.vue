@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="2xl:container">
       <h1 class="fs-6xl text-center mt-9">bootstrap-vue-top</h1>
       <p class="fs-4xl fw-lighter text-center mt-6">基于 Bootstrap 6.0.x & Vue 3.5.x 的前端框架</p>
       <div class="d-flex justify-content-center mt-9">

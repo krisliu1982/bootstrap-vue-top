@@ -1,6 +1,6 @@
 <template>
   <nav class="lg:sticky-top bg-subtle-accent bg-gradient">
-    <div class="container">
+    <div class="2xl:container">
       <div class="d-flex align-items-center gap-3" style="height: 3rem;">
         <a href="#" @click.prevent="$router.push('/')">
           <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"

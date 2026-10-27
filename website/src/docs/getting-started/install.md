@@ -1,8 +1,9 @@
----
-title: 安装 Bootstrap
-description: 通过 CDN、包管理器或源文件将 Bootstrap 添加到你的项目中。
-toc: true
----
+[[toc]]
+[[config:tag-start]]
+
+# 安装 Bootstrap
+
+通过 CDN、包管理器或源文件将 Bootstrap 添加到你的项目中。
 
 ## 安装
 
@@ -132,3 +133,5 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell' }
 ## 面向 AI 工具与 LLM
 
 Bootstrap 的文档以机器可读格式提供，我们还为 AI 驱动的编码工具提供了 agent skills。请参阅 [AI]([[docsref:/getting-started/ai]]) 了解我们的 `llms.txt` 文件以及技能的完整列表。
+
+[[config:tag-end]]

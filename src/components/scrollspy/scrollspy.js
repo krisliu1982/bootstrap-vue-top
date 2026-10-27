@@ -5,9 +5,7 @@ export default {
     const target = el.getAttribute('data-bs-target');
     const targetEl = document.querySelector(target);
     new ScrollSpy(binding.modifiers.body ? document.body : el, {
-      target: targetEl,
-      smoothScroll: binding.modifiers.body ? false : true,
-      threshold: [0.1, 0.5, 1]
+      target: targetEl
     });
   },
   beforeUnmount(el, binding) {
