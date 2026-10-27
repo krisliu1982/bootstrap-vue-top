@@ -23,23 +23,38 @@
       <aside class="docs-sidebar">
         <nav ref="menuRef">
           <div v-for="t in data.sidebar">
-            <div class="fw-bold fs-xl">{{ t.title }}</div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <div class="bg-accent rounded-circle" style="width: 0.375rem;height: 0.375rem;"></div>
+              <div class="fw-bold">
+              <span class="fs-sm">{{ t['zh-CN']}}</span>
+              <span class="fg-secondary fs-xs ms-2">{{ t.title }}</span>
+              </div>
+            </div>
             <ul v-if="t.pages">
-              <li  v-for="tt in t.pages">
+              <li v-for="tt in t.pages">
                 <template v-if="tt.title">
-                <RouterLink :to="`/docs/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{ tt['zh-CN']?tt['zh-CN']:'' }} {{tt.title}}
-                </RouterLink>
+                  <RouterLink :to="`/docs/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                    <span class="fs-sm">{{ tt['zh-CN']}}</span>
+                    <span class="ms-2 fg-secondary fs-xs">{{ tt.title }}</span>
+                  </RouterLink>
                 </template>
                 <template v-if="tt.group">
-                <div class="fw-bold">{{ tt.group }}</div>
-                <ul>
-                  <li  v-for="ttt in tt.pages">
-                <RouterLink :to="`/docs/${t.slug}/${ttt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                  {{ ttt['zh-CN']?ttt['zh-CN']:'' }} {{ttt.title}}
-                </RouterLink>
-                  </li>
-                </ul>
+            <div class="d-flex align-items-center gap-2 mt-2 mb-1">
+              <div class="bg-transparent" style="width: 0.375rem;height: 0.375rem;"></div>
+                            <div class="fw-bold">
+              <span class="fs-sm">{{ tt['zh-CN']}}</span>
+              <span class="fg-secondary fs-xs ms-2">{{ tt.group }}</span>
+              </div>
+            </div>
+                  <ul>
+                    <li v-for="ttt in tt.pages">
+                      <RouterLink :to="`/docs/${t.slug}/${ttt.slug}`" class="docs-sidebar-link"
+                        exact-active-class="active">
+                                            <span class="fs-sm">{{ ttt['zh-CN']}}</span>
+                    <span class="ms-2 fg-secondary fs-xs">{{ ttt.title }}</span>
+                      </RouterLink>
+                    </li>
+                  </ul>
                 </template>
               </li>
             </ul>

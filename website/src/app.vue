@@ -1,17 +1,17 @@
 <template>
-  <nav class="lg:sticky-top bg-subtle-accent bg-gradient">
+  <nav class="lg:sticky-top bg-1 bg-gradient bg-90 border-bottom">
     <div class="2xl:container">
-      <div class="d-flex align-items-center gap-3" style="height: 3rem;">
+      <div class="d-flex align-items-center gap-5" style="height: 3rem;">
         <a href="#" @click.prevent="$router.push('/')">
-          <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"
-        /></a>
-        <span class="badge badge-outline theme-inverse">{{ version }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi fg-accent fs-xl" viewBox="0 0 16 16">
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+</svg>
+        </a>
+        <small>{{ version }}</small>
         <div class="ms-auto">
           <div class="d-none lg:d-block">
             <div class="d-flex align-items-center gap-5">
-              <RouterLink to="/docs" class="theme-inverse text-decoration-none" active-class="fw-bold"
-                >文档
-              </RouterLink>
               <a class="theme-inverse text-decoration-none" href="https://getbootstrap.com/" target="_blank"
                 >Bootstrap</a
               >
@@ -29,15 +29,15 @@
                   role="button"
                   aria-expanded="false"
                 >
-                  <template v-if="fontSize === 'sm'">小型</template>
-                  <template v-else-if="fontSize === 'md'">中型</template>
-                  <template v-else-if="fontSize === 'lg'">大型</template>
+                  <template v-if="fontSize === 'sm'">小字体</template>
+                  <template v-else-if="fontSize === 'md'">中字体</template>
+                  <template v-else-if="fontSize === 'lg'">大字体</template>
                   <bi-chevron-expand class="small"/>
                 </a>
                 <div class="menu">
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'sm'">小型文字</a>
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'md'">中型文字</a>
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'lg'">大型文字</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'sm'">小字体</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'md'">中字体</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'lg'">大字体</a>
                 </div>
               </div>
               <div class="vr"></div>
