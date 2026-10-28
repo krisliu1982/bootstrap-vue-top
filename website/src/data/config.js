@@ -1,4 +1,4 @@
-{
+export default {
   "title": "Bootstrap",
   "baseURL": "https://getbootstrap.com",
   "docsDir": "site",

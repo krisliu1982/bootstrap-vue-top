@@ -3,18 +3,18 @@
         <table class="table md:table-stacked">
             <thead>
                 <tr>
-                    <th scope="col">Skill</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Guide</th>
+                    <th scope="col">技能（Skill）</th>
+                    <th scope="col">描述</th>
+                    <th scope="col">指南</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="item in skillOrder">
+                <tr v-for="skill in data.skills">
                     <td>
-                        <a href="#">{{ item }}</a>
+                        <a :href="`${config.examples}/skills/${skill.name}`">{{ skill.name }}</a>
                     </td>
-                    <td>skill.description</td>
-                    <td><a href="#">guide.label</a></td>
+                    <td>{{ skill.description }}</td>
+                    <td><a :href="`/${skill.guide}`">{{ skill.guide }}</a></td>
                 </tr>
             </tbody>
         </table>
@@ -22,18 +22,6 @@
 </template>
 
 <script setup>
-const skillOrder = [
-    'bootstrap-v4-v6-migration',
-    'bootstrap-v5-v6-migration',
-    'bootstrap-v6-install',
-    'bootstrap-npm',
-    'bootstrap-webpack',
-    'bootstrap-parcel',
-    'bootstrap-vite',
-    'bootstrap-component',
-    'bootstrap-component-js',
-    'bootstrap-color-system',
-    'bootstrap-utility-api'
-]
-
+import data from '@data/data.js'
+import config from '@data/config.js'
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="docs-code-snippet not-prose" data-pagefind-ignore>
+  <div class="docs-code-snippet not-prose" data-pagefind-ignore>
     <div class="hstack align-items-center highlight-toolbar">
     <div  class="font-monospace text-uppercase fs-xs fg-3">{{ props.lang }}</div>
     <div class="ms-auto">
@@ -9,9 +9,8 @@
       </a>
     </div>
   </div>
-    <Code :code="props.code" :lang="props.lang"/>
+  <Code :code="props.code" :lang="props.lang"/>
   </div>
-
 </template>
 
 <script setup>

@@ -13,13 +13,13 @@ import ScssDocs from '@/docs/scss-docs.vue'
 import Example from '@/docs/example.vue'
 import Callout from '@/docs/callout.vue'
 import LinksNav from '@/docs/links-nav.vue'
-import SkillsTable from '@/docs/Skills-table.vue'
+import SkillsTable from '@/docs/skills-table.vue'
 
 const app = createApp(app_)
 app.use(router)
 app.use(BootstrapVueTop)
-const head = createHead() // <--
-app.use(head) // <--
+const head = createHead()
+app.use(head)
 
 app.component('CodeWrapper', CodeWrapper)
 app.component('CodeTabs', CodeTabs)

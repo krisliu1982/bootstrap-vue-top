@@ -10,7 +10,7 @@ import MarkdownItAnchor from 'markdown-it-anchor'
 import MarkdownItTOC from 'markdown-it-table-of-contents'
 import PlaceholderPlugin from './markdown-placeholder.js'
 import { pinyin } from 'pinyin-pro'
-import config from './src/data/config.json' with { type: 'json' }
+import config from './src/data/config.js'
 
 // 将 config.json 扁平化为 'cdn.css' -> '...' 形式的占位符映射
 function flattenConfig(source, prefix = '') {
@@ -55,7 +55,7 @@ export default defineConfig({
     Markdown({
       wrapperDiv: false,
       headEnabled: true,
-      markdownSetup(md) {
+      async markdownSetup(md) {
         md.renderer.rules.table_open = () => {
           return '<div class="table-responsive"><table class="table md:table-stacked">\n'
         }
