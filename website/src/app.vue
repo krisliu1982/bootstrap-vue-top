@@ -1,5 +1,5 @@
 <template>
-  <nav class="lg:sticky-top bg-1 bg-gradient bg-90 border-bottom">
+  <nav class="lg:sticky-top bg-1 bg-gradient bg-80 border-bottom">
     <div class="2xl:container">
       <div class="d-flex align-items-center gap-5" style="height: 3rem;">
         <a href="#" @click.prevent="$router.push('/')">

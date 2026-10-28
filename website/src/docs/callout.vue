@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-import InfoNpmStarter from '@data/callouts/info-npm-starter.md'
-import WarningInputSupport from '@data/callouts/warning-input-support.md'
+import InfoNpmStarter from '@data/callouts/info-npm-starter.vue'
+import WarningInputSupport from '@data/callouts/warning-input-support.vue'
 
 const props = defineProps({
   type: {
