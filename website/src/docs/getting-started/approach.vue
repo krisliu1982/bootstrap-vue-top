@@ -4,7 +4,7 @@
     <p>了解用于构建和维护 Bootstrap 的指导原则、策略与技巧，以便你更轻松地自定义和扩展它。</p>
     <h2 id="sass--css">
   Sass &amp; CSS
-  <a class="anchor-link" href="#sass--css" aria-label="链接到Sass &amp; CSS章节"></a>
+  <a class="anchor-link" href="#sass--css" aria-label="链接到 Sass &amp; CSS"></a>
 </h2>
 
 <p>Bootstrap 6 带来了一种新理念：将 Sass 与 CSS 结合使用，针对你的具体需求构建和自定义项目。概括来说：</p>
@@ -20,7 +20,7 @@
 
 <h3 id="sass">
   Sass
-  <a class="anchor-link" href="#sass" aria-label="链接到Sass章节"></a>
+  <a class="anchor-link" href="#sass" aria-label="链接到 Sass"></a>
 </h3>
 
 <p>Sass 用于以下用途：</p>
@@ -37,7 +37,7 @@
 
 <h3 id="css">
   CSS
-  <a class="anchor-link" href="#css" aria-label="链接到CSS章节"></a>
+  <a class="anchor-link" href="#css" aria-label="链接到 CSS"></a>
 </h3>
 
 <p>虽然你可以用 Sass 自定义 Bootstrap 的外观，但现在更推荐尽可能使用 CSS 变量，包括在使用 Sass 时。以下是我们使用 CSS 的方式：</p>
@@ -51,7 +51,7 @@
 
 <h3 id="examples">
   Examples
-  <a class="anchor-link" href="#examples" aria-label="链接到Examples章节"></a>
+  <a class="anchor-link" href="#examples" aria-label="链接到 Examples"></a>
 </h3>
 
 <p>下面是我们如何混合使用 Sass 和 CSS 来自定义 Bootstrap。Sass 帮助我们管理特性并访问生成式 token，CSS 则让我们自定义单个 token 和值。在我们几乎所有的组件中，都会建立一个“tokens”的 Sass map，它们实际上就是 CSS 变量。使用这个 map，我们在组件的类上生成 CSS 自定义属性。</p>
@@ -111,14 +111,14 @@
 
 <h2 id="modern-essentials">
   现代基础
-  <a class="anchor-link" href="#modern-essentials" aria-label="链接到现代基础章节"></a>
+  <a class="anchor-link" href="#modern-essentials" aria-label="链接到 现代基础"></a>
 </h2>
 
 <p>Bootstrap 采用了一些重要的全局样式和设置，旨在规范化浏览器样式、启用响应式和移动优先设计，并提供现代化的构建基础。</p>
 
 <h3 id="responsive-design">
   响应式设计
-  <a class="anchor-link" href="#responsive-design" aria-label="链接到响应式设计章节"></a>
+  <a class="anchor-link" href="#responsive-design" aria-label="链接到 响应式设计"></a>
 </h3>
 
 <p>响应式网页设计是指构建一个能根据查看设备视口尺寸做出响应的网站。这通过范围媒体查询实现，根据视口尺寸对网站应用不同样式。</p>
@@ -133,7 +133,7 @@
 
 <h3 id="html5-doctype">
   HTML5 doctype
-  <a class="anchor-link" href="#html5-doctype" aria-label="链接到HTML5 doctype章节"></a>
+  <a class="anchor-link" href="#html5-doctype" aria-label="链接到 HTML5 doctype"></a>
 </h3>
 
 <p>Bootstrap 要求使用 HTML5 doctype。缺少它，你会看到一些奇怪且不完整的样式。</p>
@@ -145,7 +145,7 @@
 
 <h3 id="viewport-meta">
   视口 meta 标签
-  <a class="anchor-link" href="#viewport-meta" aria-label="链接到视口 meta 标签章节"></a>
+  <a class="anchor-link" href="#viewport-meta" aria-label="链接到 视口 meta 标签"></a>
 </h3>
 
 <p>Bootstrap 采用<em>移动优先</em>开发策略：先为移动设备优化代码，再通过 CSS 媒体查询按需放大组件。为确保所有设备正确渲染和触摸缩放，请在 <code>&lt;head&gt;</code> 中添加响应式 viewport meta 标签。</p>
@@ -165,7 +165,7 @@
 
 <h3 id="box-sizing">
   盒尺寸(box-sizing)
-  <a class="anchor-link" href="#box-sizing" aria-label="链接到Box-sizing章节"></a>
+  <a class="anchor-link" href="#box-sizing" aria-label="链接到 Box-sizing"></a>
 </h3>
 
 <p>为了让 CSS 尺寸计算更直接，我们将全局 <code>box-sizing</code> 从 <code>content-box</code> 改为 <code>border-box</code>。这确保 <code>padding</code> 不影响元素的最终计算宽度。</p>
@@ -180,14 +180,14 @@
 
 <h3 id="reboot">
   重置样式
-  <a class="anchor-link" href="#reboot" aria-label="链接到重置样式章节"></a>
+  <a class="anchor-link" href="#reboot" aria-label="链接到 重置样式"></a>
 </h3>
 
 <p>为改善跨浏览器渲染，我们使用 <a href="/docs/content/reboot">Reboot</a> 来修正浏览器和设备之间的不一致，同时为常见 HTML 元素提供略微更有主见的重置样式。</p>
 
 <h3 id="browser-support">
   浏览器支持
-  <a class="anchor-link" href="#browser-support" aria-label="链接到浏览器支持章节"></a>
+  <a class="anchor-link" href="#browser-support" aria-label="链接到 浏览器支持"></a>
 </h3>
 
 <p>你可以在<a href="https://github.com/twbs/bootstrap/blob/v6.0.0-alpha.1/.browserslistrc">我们的 <code>.browserslistrc</code> 文件</a>中找到支持的浏览器范围及版本。各版本背后的原因以及这些下限带来的与未带来的平台特性，请参阅<a href="/docs/getting-started/browsers-devices">浏览器与设备</a>。</p>
@@ -213,7 +213,7 @@ not op_mini all" lang="plaintext" />
 
 <h2 id="guiding-principles">
   指导原则
-  <a class="anchor-link" href="#guiding-principles" aria-label="链接到指导原则章节"></a>
+  <a class="anchor-link" href="#guiding-principles" aria-label="链接到 指导原则"></a>
 </h2>
 
 <p>除了 Bootstrap 做了什么，这里还有我们<em>为什么</em>这样做——我们在 Web 上构建的理念。概括来说，指导我们方法的原则是：</p>
@@ -231,7 +231,7 @@ not op_mini all" lang="plaintext" />
 
 <h3 id="responsive">
   响应式
-  <a class="anchor-link" href="#responsive" aria-label="链接到响应式章节"></a>
+  <a class="anchor-link" href="#responsive" aria-label="链接到 响应式"></a>
 </h3>
 
 <p>Bootstrap 的样式是移动优先的——随着视口增大我们添加样式，而不是在视口缩小时覆盖样式。并非每个组件都必须完全响应式，但这种方式减少了 CSS 覆盖。</p>
@@ -240,7 +240,7 @@ not op_mini all" lang="plaintext" />
 
 <h3 id="classes">
   样式类
-  <a class="anchor-link" href="#classes" aria-label="链接到样式类章节"></a>
+  <a class="anchor-link" href="#classes" aria-label="链接到 样式类"></a>
 </h3>
 
 <p>除 <a href="/docs/content/reboot">Reboot</a> 外，我们尽量只把类用作选择器。在可行的情况下，我们避免类型选择器和多余的父选择器，以获得更大的灵活性。</p>
@@ -251,7 +251,7 @@ not op_mini all" lang="plaintext" />
 
 <h3 id="z-index-scales">
   z-index 层级
-  <a class="anchor-link" href="#z-index-scales" aria-label="链接到z-index层级章节"></a>
+  <a class="anchor-link" href="#z-index-scales" aria-label="链接到 z-index层级"></a>
 </h3>
 
 <p>Bootstrap 中使用两个 <code>z-index</code> 层级——组件内元素和覆盖层组件。</p>
@@ -289,7 +289,7 @@ not op_mini all" lang="plaintext" />
 
 <h3 id="html-and-css-over-js">
   优先 HTML 与 CSS 而非 JS
-  <a class="anchor-link" href="#html-and-css-over-js" aria-label="链接到优先HTML 与 CSS 而非 JS章节"></a>
+  <a class="anchor-link" href="#html-and-css-over-js" aria-label="链接到 优先HTML 与 CSS 而非 JS"></a>
 </h3>
 
 <p>只要可能，我们优先使用 HTML 和 CSS 而非 JavaScript——它们对所有经验水平的人都更易上手，在浏览器中也更快。这就是为什么我们的一等 JavaScript API 是 <code>data</code> 属性——它让你写更多 HTML 而不是 JavaScript。更多内容请阅读<a href="/docs/getting-started/javascript#data-attributes">我们的 JavaScript 概览</a>。</p>
@@ -298,21 +298,21 @@ not op_mini all" lang="plaintext" />
 
 <h3 id="utilities">
   工具类
-  <a class="anchor-link" href="#utilities" aria-label="链接到工具类章节"></a>
+  <a class="anchor-link" href="#utilities" aria-label="链接到 工具类"></a>
 </h3>
 
 <p>工具类——单一、不可变的属性-值配对，如 <code>.d-block</code> 对应 <code>display: block;</code>——有助于减少 CSS 冗余并提升性能。它们加快 HTML 编写，并通过把重复的属性-值对合并为可复用类来减少自定义 CSS。我们尽量使用它们，而不是额外写 CSS。</p>
 
 <h3 id="code-conventions">
   代码约定
-  <a class="anchor-link" href="#code-conventions" aria-label="链接到代码约定章节"></a>
+  <a class="anchor-link" href="#code-conventions" aria-label="链接到 代码约定"></a>
 </h3>
 
 <p><a href="https://codeguide.co/">Code Guide</a> 记录了我们的 HTML 和 CSS 写法——涵盖格式、默认值、属性顺序等。我们通过 <a href="https://stylelint.io/">Stylelint</a> 和<a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">我们的开源配置</a>来强制执行这些标准。</p>
 
 <h2 id="community">
   社区
-  <a class="anchor-link" href="#community" aria-label="链接到社区章节"></a>
+  <a class="anchor-link" href="#community" aria-label="链接到 社区"></a>
 </h2>
 
 <p>通过以下资源了解 Bootstrap 的最新开发动态并与社区交流。</p>

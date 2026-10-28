@@ -41,7 +41,7 @@ To use one without the CLI, point your agent at the relevant `SKILL.md` file and
         <p>了解 Bootstrap 面向 LLM 和智能体开发工具的机器可读文档与 skills 文件。</p>
         <h2 id="llm-ready-docs">
             面向 LLM 的文档
-            <a class="anchor-link" href="#llm-ready-docs" aria-label="链接到面向 LLM 的文档章节"></a>
+            <a class="anchor-link" href="#llm-ready-docs" aria-label="链接到 面向 LLM 的文档"></a>
         </h2>
         <p>我们的文档提供机器可读格式，遵循 <a
                 href="https://llmstxt.org/">llms.txt</a> 约定。</p>
@@ -72,7 +72,7 @@ To use one without the CLI, point your agent at the relevant `SKILL.md` file and
 
         <h2 id="skills">
             Skills
-            <a class="anchor-link" href="#skills" aria-label="链接到Skills章节"></a>
+            <a class="anchor-link" href="#skills" aria-label="链接到 Skills"></a>
         </h2>
         <p>将所有 Bootstrap skill 安装到你的编码智能体中：</p>
 

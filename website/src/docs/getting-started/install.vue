@@ -5,7 +5,7 @@
     <p>通过 CDN、包管理器或源文件将 Bootstrap 添加到你的项目中。</p>
     <h2 id="install">
       安装
-      <a class="anchor-link" href="#install" aria-label="链接到安装章节"></a>
+      <a class="anchor-link" href="#install" aria-label="链接到 安装章节"></a>
     </h2>
     <p>使用包管理器将 Bootstrap 的<strong>源文件</strong>引入几乎任何项目。通过包管理器安装的内容不包含文档或完整的构建脚本。你也可以<a
         href="https://github.com/twbs/examples">使用我们 Examples 仓库中的任意示例</a>来快速启动 Bootstrap 项目。</p>
@@ -23,7 +23,7 @@
 
     <h3 id="using-npm">
       使用 npm
-      <a class="anchor-link" href="#using-npm" aria-label="链接到使用 npm 章节"></a>
+      <a class="anchor-link" href="#using-npm" aria-label="链接到 使用 npm"></a>
     </h3>
     <p>使用 <code>import * as bootstrap from 'bootstrap'</code> 会将 Bootstrap 的所有插件加载到一个 <code>bootstrap</code>
       对象上。你也可以单独导入插件以实现自动 tree shaking：</p>
@@ -41,7 +41,7 @@
 
     <h3 id="using-yarn">
       使用 Yarn
-      <a class="anchor-link" href="#using-yarn" aria-label="链接到使用 Yarn 章节"></a>
+      <a class="anchor-link" href="#using-yarn" aria-label="链接到 使用 Yarn"></a>
     </h3>
     <p>Yarn 2+（即 Yarn Berry）默认不支持 <code>node_modules</code> 目录，因此我们的 <a
         href="https://github.com/twbs/examples/tree/main/sass-js">Sass 与 JS 示例</a> 需要做一些调整：</p>
@@ -53,7 +53,7 @@ yarn start # Start the project" lang="shell" />
 
     <h2 id="more-packages">
       更多包
-      <a class="anchor-link" href="#more-packages" aria-label="链接到更多包章节"></a>
+      <a class="anchor-link" href="#more-packages" aria-label="链接到 更多包章节"></a>
     </h2>
     <p>Bootstrap 还提供其他通过包管理器安装的方式。</p>
 
@@ -68,7 +68,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h3 id="using-rubygems">
       使用 RubyGems
-      <a class="anchor-link" href="#using-rubygems" aria-label="链接到使用 RubyGems 章节"></a>
+      <a class="anchor-link" href="#using-rubygems" aria-label="链接到 使用 RubyGems"></a>
     </h3>
     <p>我们建议使用 <a href="https://bundler.io/">Bundler</a> 在你的 Ruby 应用中安装 Bootstrap，但你也可以使用 <a
         href="https://rubygems.org/">RubyGems</a>。更多细节请参阅<a
@@ -78,7 +78,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h3 id="using-nuget">
       使用 NuGet
-      <a class="anchor-link" href="#using-nuget" aria-label="链接到使用 NuGet 章节"></a>
+      <a class="anchor-link" href="#using-nuget" aria-label="链接到 使用 NuGet"></a>
     </h3>
     <p>如果你在 .NET Framework 中开发，也可以使用 <a href="https://www.nuget.org/">NuGet</a> 安装和管理 Bootstrap 的 <a
         href="https://www.nuget.org/packages/bootstrap/">CSS</a> 或 <a
@@ -88,7 +88,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h2 id="cdn">
       CDN
-      <a class="anchor-link" href="#cdn" aria-label="链接到CDN章节"></a>
+      <a class="anchor-link" href="#cdn" aria-label="链接到 CDN章节"></a>
     </h2>
     <p>通过 CDN 引入 Bootstrap 的 CSS 和 JavaScript 文件。CDN（内容分发网络）是为你的网站提供库副本的服务。与其通过包管理器安装 Bootstrap，不如在网站中链接到 CDN 托管的文件。</p>
     <p>以下是我们的主要 CSS 和 JavaScript CDN 链接：</p>
@@ -139,7 +139,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h3 id="using-cdns">
       使用 CDN
-      <a class="anchor-link" href="#using-cdns" aria-label="链接到使用 CDN 章节"></a>
+      <a class="anchor-link" href="#using-cdns" aria-label="链接到 使用 CDN"></a>
     </h3>
     <p>你也可以使用 CDN 获取我们的任何其他构建版本。</p>
     <p>使用 CDN 链接时，请务必使用 <code>integrity</code> 属性来校验正确的文件和版本。这些哈希值对每个文件和每个 Bootstrap 版本都是唯一的，因此当你更新到新版本时，请确保
@@ -149,7 +149,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h3 id="alternative-cdns">
       其他 CDN
-      <a class="anchor-link" href="#alternative-cdns" aria-label="链接到其他 CDN 章节"></a>
+      <a class="anchor-link" href="#alternative-cdns" aria-label="链接到 其他 CDN"></a>
     </h3>
     <p>我们推荐 <a href="https://www.jsdelivr.com/">jsDelivr</a>，并在自己的文档中使用它。但在某些情况下——比如在某些特定国家或环境中——你可能需要使用其他 CDN 提供商，如 <a
         href="https://cdnjs.com/">cdnjs</a> 或 <a href="https://unpkg.com/">unpkg</a>。</p>
@@ -168,7 +168,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h2 id="download">
       下载
-      <a class="anchor-link" href="#download" aria-label="链接到下载章节"></a>
+      <a class="anchor-link" href="#download" aria-label="链接到 下载章节"></a>
     </h2>
     <p>你也可以用传统方式手动下载 Bootstrap。可以在编译好的 dist（分发）文件和源文件之间选择。后者需要一些额外的工具才能在项目中使用 Bootstrap。</p>
 
@@ -206,7 +206,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
 
     <h2 id="for-ai-tools--llms">
       面向 AI 工具与 LLM
-      <a class="anchor-link" href="#for-ai-tools--llms" aria-label="链接到面向 AI 工具与 LLM 章节"></a>
+      <a class="anchor-link" href="#for-ai-tools--llms" aria-label="链接到 面向 AI 工具与 LLM"></a>
     </h2>
     <p>Bootstrap 的文档提供机器可读格式，我们还为 AI 驱动的编码工具提供了 agent skills。关于我们的 <code>llms.txt</code> 文件和完整的 skills 列表，请参阅 <a
         href="/docs/getting-started/ai">AI</a>。</p>

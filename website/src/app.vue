@@ -29,15 +29,15 @@
                   role="button"
                   aria-expanded="false"
                 >
-                  <template v-if="fontSize === 'sm'">小字体</template>
-                  <template v-else-if="fontSize === 'md'">中字体</template>
-                  <template v-else-if="fontSize === 'lg'">大字体</template>
+                  <template v-if="fontSize === 'sm'">小型字体</template>
+                  <template v-else-if="fontSize === 'md'">中型字体</template>
+                  <template v-else-if="fontSize === 'lg'">大型字体</template>
                   <bi-chevron-expand class="small"/>
                 </a>
                 <div class="menu">
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'sm'">小字体</a>
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'md'">中字体</a>
-                  <a class="menu-item" href="#" @click.prevent="fontSize = 'lg'">大字体</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'sm'">小型字体</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'md'">中型字体</a>
+                  <a class="menu-item" href="#" @click.prevent="fontSize = 'lg'">大型字体</a>
                 </div>
               </div>
               <div class="vr"></div>
