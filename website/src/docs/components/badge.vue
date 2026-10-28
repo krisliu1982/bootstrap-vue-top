@@ -1,0 +1,80 @@
+---
+title: Badges
+description: Small components for indicating status and counts, or labelling items.
+toc: true
+css_layer: components
+---
+
+import { getData } from '@libs/data'
+
+## Examples
+
+Badges are tiny, static display components used for adding context to other elements. They can be used as part of navigation, buttons, and more to provide a counter or label. Badges scale to match the size of the immediate parent element by using relative font sizing and `em` units.
+
+Badges come in three variants: solid (default), subtle, and outline.
+
+<Example code={`<span class="badge theme-primary">New</span>
+  <span class="badge badge-subtle theme-primary">New</span>
+  <span class="badge badge-outline theme-primary">New</span>`} />
+
+### Headings
+
+Badges adapt to the `font-size` of the parent element.
+
+<Example code={`<h1>Example heading <span class="badge">New</span></h1>
+<h2>Example heading <span class="badge">New</span></h2>
+<h3>Example heading <span class="badge">New</span></h3>
+<h4>Example heading <span class="badge">New</span></h4>
+<h5>Example heading <span class="badge">New</span></h5>
+<h6>Example heading <span class="badge">New</span></h6>`} />
+
+### Buttons
+
+Badges can be used as part of links or buttons to provide a counter.
+
+<Example code={`<button type="button" class="btn-solid theme-primary">
+    Notifications <span class="badge theme-danger">4</span>
+  </button>`} />
+
+Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
+
+Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context with a visually hidden piece of additional text.
+
+### Positioned
+
+Use utilities to modify a `.badge` and position it in the corner of a link or button.
+
+<Example code={`<button type="button" class="btn-solid theme-primary position-relative">
+    Inbox
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill border border-bg theme-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>`} />
+
+You can also replace the `.badge` class with a few more utilities without a count for a more generic indicator.
+
+<Example code={`<button type="button" class="btn-solid theme-primary position-relative">
+    Profile
+    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-bg rounded-circle">
+      <span class="visually-hidden">New alerts</span>
+    </span>
+  </button>`} />
+
+## Variants
+
+Use the contextual `.theme-{color}` classes to apply a semantic theme color to badges.
+
+<Example code={getData('theme-colors').map((themeColor) => `<span class="badge theme-${themeColor.name}">${themeColor.title}</span>`)} />
+<Example code={getData('theme-colors').map((themeColor) => `<span class="badge badge-subtle theme-${themeColor.name}">${themeColor.title}</span>`)} />
+<Example code={getData('theme-colors').map((themeColor) => `<span class="badge badge-outline theme-${themeColor.name}">${themeColor.title}</span>`)} />
+
+<Details name="warning-color-assistive-technologies" />
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Badges" className="badge" />
+
+<ScssDocs name="badge-tokens" file="scss/_badge.scss" />

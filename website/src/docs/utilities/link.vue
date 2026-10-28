@@ -1,0 +1,57 @@
+---
+title: Link
+description: Link utilities are used to stylize your anchors to adjust their color and opacity.
+toc: true
+utility:
+  - link-opacity
+---
+
+import { getData } from '@libs/data'
+
+## Link opacity
+
+Change the alpha opacity of the link `rgba()` color value with utilities. Please be aware that changes to a color’s opacity can lead to links with [*insufficient* contrast]([[docsref:getting-started/accessibility/#color-contrast]]).
+
+<Example code={`<p><a class="link-10" href="#">Link opacity 10</a></p>
+<p><a class="link-20" href="#">Link opacity 20</a></p>
+<p><a class="link-30" href="#">Link opacity 30</a></p>
+<p><a class="link-40" href="#">Link opacity 40</a></p>
+<p><a class="link-50" href="#">Link opacity 50</a></p>
+<p><a class="link-60" href="#">Link opacity 60</a></p>
+<p><a class="link-70" href="#">Link opacity 70</a></p>
+<p><a class="link-80" href="#">Link opacity 80</a></p>
+<p><a class="link-90" href="#">Link opacity 90</a></p>
+<p><a class="link-100" href="#">Link opacity 100</a></p>`} />
+
+You can even change the opacity level on hover.
+
+<Example code={`<p><a class="hover:link-10" href="#">Link hover opacity 10</a></p>
+<p><a class="hover:link-20" href="#">Link hover opacity 20</a></p>
+<p><a class="hover:link-30" href="#">Link hover opacity 30</a></p>
+<p><a class="hover:link-40" href="#">Link hover opacity 40</a></p>
+<p><a class="hover:link-50" href="#">Link hover opacity 50</a></p>
+<p><a class="hover:link-60" href="#">Link hover opacity 60</a></p>
+<p><a class="hover:link-70" href="#">Link hover opacity 70</a></p>
+<p><a class="hover:link-80" href="#">Link hover opacity 80</a></p>
+<p><a class="hover:link-90" href="#">Link hover opacity 90</a></p>
+<p><a class="hover:link-100" href="#">Link hover opacity 100</a></p>`} />
+
+## Colored links
+
+Links can be colored using the theme color utilities.
+
+<Example code={[
+  ...getData('theme-colors').map((themeColor) => `<p><a href="#" class="theme-${themeColor.name} underline-offset-2 underline-20 hover:underline-100">${themeColor.title} link</a></p>`)
+]} />
+
+<Details name="warning-color-assistive-technologies" />
+
+## CSS
+
+In addition to the following Sass functionality, consider reading about our included [CSS custom properties]([[docsref:/getting-started/css-variables]]) (aka CSS variables) for colors and more.
+
+### Sass utilities API
+
+Link utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-links" file="scss/_utilities.scss" />

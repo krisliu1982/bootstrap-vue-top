@@ -1,0 +1,154 @@
+---
+title: Optimize
+description: Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.
+toc: true
+---
+
+## Lean Sass setup
+
+When using Sass in your asset pipeline, make sure you optimize Bootstrap by only `@use`ing the partials you need. Your largest optimizations will likely come from the `Layout & Components` section of our `bootstrap.scss`.
+
+<ScssDocs name="import-stack" file="scss/bootstrap.scss" />
+
+If you’re not using a component, comment it out or delete its `@forward` entry entirely. For example, if you’re not using the carousel, remove that line to save file size in your compiled CSS. Keep in mind there are some dependencies across Sass partials that may make it more difficult to omit a file.
+
+The cleanest way to do this is to maintain your own entry file that forwards only the parts of Bootstrap you need, rather than importing all of `bootstrap`. Copy the import stack above into your own stylesheet, then comment out the components you don’t use:
+
+```scss
+// custom-bootstrap.scss
+@forward "bootstrap/scss/colors";
+@forward "bootstrap/scss/root";
+
+// Layout & content
+@forward "bootstrap/scss/content";
+@forward "bootstrap/scss/layout";
+@forward "bootstrap/scss/forms";
+@forward "bootstrap/scss/buttons";
+
+// Components — keep only what you need
+@forward "bootstrap/scss/alert";
+@forward "bootstrap/scss/badge";
+@forward "bootstrap/scss/card";
+// @forward "bootstrap/scss/accordion";  // unused
+// @forward "bootstrap/scss/carousel";   // unused
+// @forward "bootstrap/scss/dialog";     // unused
+
+// Helpers & utilities
+@forward "bootstrap/scss/helpers";
+@forward "bootstrap/scss/utilities/api";
+```
+
+Then compile your `custom-bootstrap.scss` instead of Bootstrap’s default `bootstrap.scss`. Just remember to keep `colors` and `root` (and any partials your remaining components depend on), since the rest of the framework builds on the variables and tokens they define.
+
+## Lean JavaScript
+
+Bootstrap’s JavaScript includes every component in our primary dist files (`bootstrap.js` and `bootstrap.min.js`), and even our primary dependencies (Floating UI and Vanilla Calendar Pro) with our bundle files (`bootstrap.bundle.js` and `bootstrap.bundle.min.js`). While you’re customizing via Sass, be sure to remove related JavaScript.
+
+For instance, assuming you’re using your own JavaScript bundler like Webpack, Parcel, or Vite, you’d only import the JavaScript you plan on using. In the example below, we show how to just include our dialog JavaScript:
+
+```js
+// Import just what we need
+
+// import 'bootstrap/js/dist/alert'
+// import 'bootstrap/js/dist/button'
+// import 'bootstrap/js/dist/carousel'
+// import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/dialog'
+// import 'bootstrap/js/dist/menu'
+// import 'bootstrap/js/dist/drawer'
+// import 'bootstrap/js/dist/popover'
+// import 'bootstrap/js/dist/scrollspy'
+// import 'bootstrap/js/dist/tab'
+// import 'bootstrap/js/dist/toast'
+// import 'bootstrap/js/dist/tooltip'
+```
+
+Importing a file this way runs it for its side effects, which registers that component’s data attribute API—so `data-bs-toggle` and friends keep working without any extra code. This way, you’re not including any JavaScript you don’t intend to use for components like buttons, carousels, and tooltips. If you’re importing menus, tooltips or popovers, be sure to list the Floating UI dependency in your `package.json` file. If you’re using the datepicker, be sure to also list the Vanilla Calendar Pro dependency.
+
+<Callout>
+**Heads up!** Files in `bootstrap/js/dist` use the **default export**. To use them, do the following:
+
+```js
+import Dialog from 'bootstrap/js/dist/dialog'
+const dialog = new Dialog(document.getElementById('myDialog'))
+```
+</Callout>
+
+## Autoprefixer .browserslistrc
+
+Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our `.browserslistrc` file, found in the root of the Bootstrap repo and at the root of the npm package (`node_modules/bootstrap/.browserslistrc`). Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.
+
+## Unused CSS
+
+[PurgeCSS](https://github.com/FullHuman/purgecss) analyzes your markup and strips out any CSS selectors it can’t find in use, which can dramatically shrink Bootstrap’s compiled CSS. The setup below assumes a project of static HTML pages alongside Bootstrap’s JavaScript.
+
+First, install PurgeCSS as a dev dependency:
+
+```sh
+npm install --save-dev purgecss
+```
+
+Then add a `purgecss.config.js` to the root of your project:
+
+```js
+// purgecss.config.js
+export default {
+  // Files to scan for the class names actually in use
+  content: ['./**/*.html', './**/*.js'],
+  // Your compiled Bootstrap CSS (plus any of your own)
+  css: ['./css/bootstrap.css'],
+  output: './css/bootstrap.purged.css',
+  // Bootstrap 6 uses ":" in class names (e.g. `md:d-none`, `hover:opacity-50`),
+  // so the extractor must keep colons and slashes.
+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+  safelist: {
+    // Classes added at runtime by Bootstrap's JS that never appear in your HTML
+    standard: ['show', 'active', 'hiding', 'dialog-open'],
+    // Keep component families that are generated or toggled dynamically
+    greedy: [/^carousel/, /^menu/, /^drawer/, /^dialog/, /^tooltip/, /^popover/]
+  }
+}
+```
+
+Run it as part of your build, pointing PurgeCSS at the config:
+
+```sh
+npx purgecss --config purgecss.config.js
+```
+
+Then serve `bootstrap.purged.css` instead of the full file.
+
+<Callout type="warning">
+**Test thoroughly after purging.** Bootstrap toggles many classes with JavaScript (`.show`, `.active`, `.hiding`, and more) and generates others dynamically (carousels, menus, dialogs). Anything PurgeCSS can’t find in the files it scans will be removed, so use the `safelist` option to protect runtime classes and verify every interactive component still works.
+</Callout>
+
+For deeper walkthroughs, the community has written some helpful guides:
+
+- [Remove unused CSS styles from Bootstrap using PurgeCSS](https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772)
+- [Automatically remove unused CSS from Bootstrap or other frameworks](https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/)
+- [CSS-Tricks: How do you remove unused CSS from a site?](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/)
+
+## Minify and gzip
+
+Whenever possible, be sure to compress all the code you serve to your visitors. If you’re using Bootstrap dist files, try to stick to the minified versions (indicated by the `.min.css` and `.min.js` extensions). If you’re building Bootstrap from the source with your own build system, be sure to implement your own minifiers for HTML, CSS, and JS.
+
+## Non-blocking files
+
+While minifying and using compression might seem like enough, making your files non-blocking ones is also a big step in making your site well-optimized and fast enough.
+
+If you are using a [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) plugin in Google Chrome, you may have stumbled over FCP. [The First Contentful Paint](https://web.dev/articles/fcp) metric measures the time from when the page starts loading to when any part of the page’s content is rendered on the screen.
+
+You can improve FCP by deferring non-critical JavaScript or CSS. What does that mean? Simply, JavaScript or stylesheets that don’t need to be present on the first paint of your page should be marked with `async` or `defer` attributes.
+
+This ensures that the less important resources are loaded later and not blocking the first paint. On the other hand, critical resources can be included as inline scripts or styles.
+
+If you want to learn more about this, there are already a lot of great articles about it:
+
+- https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/
+- https://web.dev/articles/defer-non-critical-css
+
+## Always use HTTPS
+
+Your website should only be available over HTTPS connections in production. HTTPS improves the security, privacy, and availability of all sites, and there is no such thing as non-sensitive web traffic. The steps to configure your website to be served exclusively over HTTPS vary widely depending on your architecture and web hosting provider, and thus are beyond the scope of these docs.
+
+Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you’ll be sending users [mixed active content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content), leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself, ensure that you only access it over HTTPS connections.

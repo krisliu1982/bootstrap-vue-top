@@ -1,0 +1,250 @@
+---
+title: Approach
+description: Learn about the guiding principles, strategies, and techniques used to build and maintain Bootstrap so you can more easily customize and extend it yourself.
+toc: true
+---
+
+## Sass & CSS
+
+Bootstrap 6 brings with it a new philosophy of using Sass and CSS together to build and customize projects for your specific needs. At a high level:
+
+- **Sass is for programmatic configuration —** Think functions, loops, mixins, and more for generative constructs.
+- **CSS is for visual customization —** CSS variables for visual properties like colors, spacing, typography, etc.
+
+Previous major versions have treated Sass as both programmatic and visual customization with CSS variables adding a more complicated, and less complete, secondary layer. This has been greatly improved in v6.
+
+On top of that, we use [PostCSS](https://postcss.org/) to [prefix our CSS variables](https://github.com/twbs/postcss-prefix-custom-properties) with the `bs-` prefix and add vendor prefixes to our CSS properties, as appropriate.
+
+### Sass
+
+Sass is used for the following:
+
+- Import (`@use` and `@forward`) individual stylesheets that compile into CSS.
+- Manage repetitive snippets of code with mixins and functions.
+- Toggle global options like `$enable-smooth-scroll`, `$enable-reduced-motion`, etc.
+- Configure and generate component variants (theme colors, sizes, etc) through Sass maps, loops, and more.
+- Bulk-generate CSS variables for every tint and shade of our colors.
+- Manage component token lists (e.g., `$alert-tokens`) and apply them to specific classes.
+- Power the utilities API to customize and generate utility classes.
+
+### CSS
+
+While you can use Sass to customize how Bootstrap looks, the preferred way now is to use CSS variables whenever possible, including when working with Sass. Here’s how we use CSS:
+
+- Customize individual global and component tokens like `--bs-border-radius`, `--bs-alert-padding-x`, etc.
+- Customize token values using Sass’s `with (...tokens)` syntax to override the default values.
+- Mix colors to generate our tints and shades for each hue.
+- Use `calc()` for dynamic values based on the value of another token or CSS variable.
+
+### Examples
+
+Here’s how we’d use a mix of Sass and CSS to customize Bootstrap. The Sass helps us manage features and gives us access to generative tokens, while the CSS allows us to customize individual tokens and values. In almost all our components, we setup a Sass map of "tokens" that are really just CSS variables. Using this map, we then generate the CSS custom properties on the component’s class.
+
+For example, the alert component has a `$alert-tokens` map that is used to generate the CSS custom properties on the `.alert` class.
+
+```scss
+$alert-tokens: (
+  --alert-padding-x: 2rem,
+  --alert-border-radius: 1rem,
+  // …
+);
+
+.alert {
+  @include tokens($alert-tokens);
+  // …
+}
+```
+
+In practice for you and your projects, this means you can use Sass’s module system to override the CSS variables at build-time for a specific component, or even globally.
+
+```scss
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  // Manage global options
+  $enable-smooth-scroll: true,
+
+  // Modify global tokens
+  $root-tokens: (
+    --border-radius: .25rem,
+    --spacer: 1.5rem,
+  ),
+
+  // Modify component tokens
+  $alert-tokens: (
+    --alert-padding-x: calc(var(--spacer) * 2),
+    --alert-border-radius: 1rem,
+  ),
+);
+```
+
+Here’s a Sass-specific example, where we cannot use CSS to easily achieve the same result. The following will remove the `text` and `subtle` variants from the `button-variants` map, and override the `button-sizes` map to only include `sm` and `lg` sizes.
+
+```scss
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  // Modify button sizes to remove default `xs` size
+  $button-sizes: ("sm", "lg"),
+
+  // Remove default `text` and `subtle` button variants with `null`
+  $button-variants: (
+    "text": null,
+    "subtle": null,
+  ),
+);
+```
+
+Here’s an example of just using pure CSS to customize a CSS variables from the compiled CSS. Wherever `var(--bs-border-radius)` is used, it will be replaced with the value `.25rem`.
+
+```css
+:root {
+  --border-radius: .25rem;
+  --spacer: 1.5rem;
+}
+```
+
+## Modern essentials
+
+Bootstrap employs a handful of important global styles and settings geared towards normalizing browser styles, enabling responsive and mobile-first design, and providing a modern foundation to build upon.
+
+### Responsive design
+
+Responsive web design is the practice of building a website that responds to the viewport size of the device it’s being viewed on. This is achieved by using range media queries to apply different styles to the website based on the viewport size.
+
+```css
+@media (width < 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+```
+
+Bootstrap ships with several responsive tiers or breakpoints that allow you to stack styles on top of each other, from small mobile devices to large desktop screens. This gives you a very flexible and powerful way to build websites that can be optimized for any-sized device.
+
+### HTML5 doctype
+
+Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.
+
+```html
+<!doctype html><!--[!code highlight]-->
+<html lang="en">
+  …
+</html>
+```
+
+### Viewport meta
+
+Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>`.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--[!code highlight]-->
+    …
+  </head>
+  <body>
+    …
+  </body>
+</html>
+```
+
+You can see an example of this in action in [the quick start]([[docsref:/guides/quickstart/]]).
+
+### Box-sizing
+
+For more straightforward sizing in CSS, we switch the global `box-sizing` value from `content-box` to `border-box`. This ensures `padding` does not affect the final computed width of an element.
+
+On the rare occasion you need to override it, use something like the following:
+
+```css
+.your-selector {
+  box-sizing: content-box;
+}
+```
+
+Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
+
+### Reboot
+
+For improved cross-browser rendering, we use [Reboot]([[docsref:/content/reboot]]) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+
+### Browser support
+
+You can find our supported range of browsers and their versions [in our `.browserslistrc` file]([[config:repo]]/blob/v[[config:current_version]]/.browserslistrc). See [Browsers & devices]([[docsref:/getting-started/browsers-devices]]) for the reason behind each version, and for the platform features these floors do and do not give us.
+
+<Code lang="plaintext" filePath=".browserslistrc" fileMatch="last 2 major versions[\s\S]+not op_mini all" />
+
+If you installed Bootstrap via npm, you can also find this file locally at `node_modules/bootstrap/.browserslistrc`.
+
+We use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle intended browser support via CSS prefixes, which uses [Browserslist](https://github.com/browserslist/browserslist) to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.
+
+## Guiding principles
+
+Beyond what Bootstrap does, here’s *why* we do it—our philosophy for building on the web. At a high level, here’s what guides our approach:
+
+- Components should be responsive and mobile-first
+- Components should be built with a base class and extended via modifier classes
+- Component states should obey a common `z-index` scale
+- Prefer an HTML and CSS implementation over JavaScript
+- Use utilities over custom styles
+- Avoid enforcing strict HTML requirements (immediate children selectors)
+
+These rules cannot always be followed to the letter, but we strive to follow them as much as possible.
+
+### Responsive
+
+Bootstrap’s styles are mobile-first—we add styles as the viewport grows rather than overriding them as it shrinks. Not every component must be fully responsive, but this approach reduces CSS overrides.
+
+We use range media queries (`width >= 768px`, for example) to apply styles at a specific breakpoint and carry up through the larger breakpoints. For example, a `.d-none` applies from `min-width: 0` to infinity. On the other hand, a `.md:d-none` applies from the medium breakpoint and up.
+
+### Classes
+
+Aside from [Reboot]([[docsref:/content/reboot]]), we strive to use only classes as selectors. Where we can, we avoid type selectors and extraneous parent selectors for greater flexibility.
+
+Components are typically built with a base class for shared property-value pairs. For example, `.btn`, `.btn-solid`, and `.theme-primary`. We use `.btn` for all the common styles like `display`, `padding`, and `border-width`. We then use variant and theme modifiers like `.btn-solid.theme-primary` to add more styles.
+
+This reduces complexity, streamlines code, and makes for more scalable systems.
+
+### z-index scales
+
+We use two `z-index` scales in Bootstrap—elements within a component and overlay components.
+
+Some components in Bootstrap are built with overlapping elements to prevent double borders without modifying the `border` property. For example, button groups, input groups, and pagination. These components share a standard `z-index` scale of `0` through `3`, matching our expectations of highest user priority.
+
+- `0` is for default states (initial, not actually set)
+- `1` is for `:hover`, lowest because while it indicates user intent, nearly *anything* can be hovered.
+- `2` is for `:active`/`.active`, second highest because they indicate state.
+- `3` is for `:focus`, highest because focused elements are in view and at the user’s attention.
+
+Components built with overlays also have a predefined z-index scale, beginning at `1000`. This starting number was chosen arbitrarily and serves as a small buffer between our styles and your project’s custom styles.
+
+<ScssDocs name="zindex-levels-map" file="scss/_config.scss" />
+
+Each overlay component increases its `z-index` value slightly in such a way that common UI principles allow user focused or hovered elements to remain in view at all times. For example, a modal dialog is document blocking (e.g., you cannot take any other action save for the dialog’s action), so we put that above our navbars.
+
+Learn more about this in our [`z-index` layout page]([[docsref:/layout/z-index]]).
+
+### HTML and CSS over JS
+
+Whenever possible, we prefer HTML and CSS over JavaScript—they’re more accessible to people of all experience levels and faster in the browser. That’s why our first-class JavaScript API is `data` attributes—it lets you write more HTML instead of JavaScript. Read more in [our JavaScript overview]([[docsref:/getting-started/javascript#data-attributes]]).
+
+Our styles build on fundamental browser behaviors. For example, while you can put `.btn` on nearly any element, we prefer `<button>`s and `<a>`s for their semantic value. For form validation, we scope styles behind `data-bs-validate` and use the `:user-invalid` pseudo-class so feedback appears only after user interaction—not on initial page load.
+
+### Utilities
+
+Utility classes—single, immutable property-value pairings like `.d-block` for `display: block;`—help reduce CSS bloat and improve performance. They speed up HTML authoring and limit custom CSS by consolidating repeated property-value pairs into reusable classes. We try to use these when possible instead of additional CSS.
+
+### Code conventions
+
+[Code Guide](https://codeguide.co/) documents how we write HTML and CSS—covering formatting, defaults, property orders, and more. We enforce these standards with [Stylelint](https://stylelint.io/) using [our open source config](https://github.com/twbs/stylelint-config-twbs-bootstrap).
+
+## Community
+
+Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.
+
+- Read and subscribe to [The Official Bootstrap Blog]([[config:blog]]).
+- Ask questions and explore [our GitHub Discussions](https://github.com/orgs/twbs/discussions).
+- Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://www.reddit.com/r/bootstrap/).
+- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
+- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
+- Developers distributing Bootstrap-related packages on [npm](https://www.npmjs.com/search?q=keywords:bootstrap) should use the `bootstrap` keyword for discoverability.
+
+You can also follow [@getbootstrap on X](https://x.com/[[config:x]]) for the latest gossip and awesome music videos.

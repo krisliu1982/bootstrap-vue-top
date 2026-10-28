@@ -1,0 +1,45 @@
+---
+title: Text wrapping
+description: Utilities for controlling text wrapping, overflow, and word breaking behavior.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+utility:
+  - text-wrap
+  - word-wrap
+---
+
+## Wrapping
+
+Control how text wraps inside an element with `text-wrap` utilities. This is a newer CSS property that replaces the older `white-space` property and adds new functionality.
+
+<Example class="d-flex flex-column gap-3" code={`<div class="w-12 p-3 bg-subtle-accent text-wrap">
+    This text should wrap across multiple lines within the parent element.
+  </div>
+  <div class="w-12 p-3 bg-subtle-accent text-nowrap">
+    This text should not wrap across multiple lines within the parent element.
+  </div>
+  <div class="w-12 p-3 bg-subtle-accent text-balance">
+    This text should wrap in a balanced way across multiple lines within the parent element.
+  </div>
+  <div class="w-12 p-3 bg-subtle-accent text-pretty">
+    This text should wrap in a pretty way across multiple lines within the parent element.
+  </div>`} customMarkup={`<div class="text-wrap">…</div>
+  <div class="text-nowrap">…</div>
+  <div class="text-balance">…</div>
+  <div class="text-pretty">…</div>`} />
+
+## Word break
+
+Prevent long strings of text from breaking your components' layout by using `.text-break` to set `word-wrap: break-word` and `word-break: break-word`. We use `word-wrap` instead of the more common `overflow-wrap` for wider browser support, and add the deprecated `word-break: break-word` to avoid issues with flex containers.
+
+<Example code={`<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>`} />
+
+## CSS
+
+### Sass utilities API
+
+Text wrapping utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-text-wrap" file="scss/_utilities.scss" />
+
+<ScssDocs name="utils-text-break" file="scss/_utilities.scss" />

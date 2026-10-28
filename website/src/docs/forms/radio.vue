@@ -1,0 +1,90 @@
+---
+title: Radio
+description: Highly customizable, native radio `<input>` elements for choosing one option from many.
+toc: true
+css_layer: forms
+mdn: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio
+---
+
+import { getData } from '@libs/data'
+
+## Basic radio
+
+Similar to checkboxes, radios are styled with the `.radio` class. However, there’s no custom SVG as we use pure CSS to style the input and its checked state.
+
+A radio without a visible label still needs an accessible name for assistive technologies, for instance with `aria-label`. The name should say what the option is, like `aria-label="Red"` in a color picker, and replaces the `...` placeholder in the example below. See the [forms overview accessibility]([[docsref:/forms/overview/#accessibility]]) section for details.
+
+<Example code={`<input type="radio" id="radio" class="radio" aria-label="..." />`} />
+
+## With form field
+
+Wrap the `.radio` in a `.form-field` layout wrapper and add your label. The grid layout places the radio and label side by side.
+
+<Example class="d-flex flex-column gap-2" code={`<div class="form-field">
+    <input class="radio" name="radios" type="radio" id="radioLabel" />
+    <label for="radioLabel">First example radio</label>
+  </div>
+  <div class="form-field">
+    <input class="radio" name="radios" type="radio" id="radioLabel2" />
+    <label for="radioLabel2">Second example radio</label>
+  </div>`} />
+
+## Description
+
+Add a description or other content after the label. We recommend wrapping the label and description in a `.form-field-content` to ensure appropriate spacing and alignment.
+
+<Example code={`<div class="form-field">
+    <input type="radio" id="radioLabelDescription" class="radio" />
+    <div class="form-field-content">
+      <label for="radioLabelDescription" class="fw-medium">Example new radio</label>
+      <small class="form-text">Supporting description for the above label.</small>
+    </div>
+  </div>`} />
+
+## Theme colors
+
+Modify the appearance of checked radios by adding the `.theme-{color}` class to the `.radio` element. This will set the checked background and border color to the theme color.
+
+<Example class="d-flex flex-column gap-2" code={getData('theme-colors').map((themeColor) => `<div class="form-field">
+    <input type="radio" id="radio${themeColor.name}" class="radio theme-${themeColor.name}" checked />
+    <label for="radio${themeColor.name}">Example ${themeColor.name} radio</label>
+  </div>`)} />
+
+## Disabled
+
+Add the `disabled` attribute and the associated `<label>`s are automatically styled to match with a lighter color to help indicate the input’s state.
+
+<Example class="vstack gap-2" code={`<div class="form-field">
+    <input type="radio" id="radioDisabled" class="radio" disabled />
+    <label for="radioDisabled">Example new radio</label>
+  </div>
+
+  <div class="form-field">
+    <input type="radio" id="radioCheckedDisabled" class="radio" disabled checked />
+    <label for="radioCheckedDisabled">Example checked disabled radio</label>
+  </div>`} />
+
+## Sizes
+
+Add `.radio-sm` or `.radio-lg` to make your radio appear smaller or larger.
+
+<Example class="d-flex flex-column gap-3" code={`<div class="form-field">
+    <input type="radio" id="radioSizeSm" class="radio radio-sm" checked />
+    <label for="radioSizeSm">Small radio</label>
+  </div>
+  <div class="form-field">
+    <input type="radio" id="radioSizeMd" class="radio" checked />
+    <label for="radioSizeMd">Default radio</label>
+  </div>
+  <div class="form-field">
+    <input type="radio" id="radioSizeLg" class="radio radio-lg" checked />
+    <label for="radioSizeLg">Large radio</label>
+  </div>`} />
+
+## CSS
+
+### Variables
+
+CSS variables for the radio component are built on the Sass variables.
+
+<ScssDocs name="radio-tokens" file="scss/forms/_radio.scss" />

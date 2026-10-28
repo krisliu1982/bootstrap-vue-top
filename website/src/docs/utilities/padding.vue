@@ -1,0 +1,143 @@
+---
+title: Padding
+description: Use padding utilities to responsively control the inner spacing of elements.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding
+utility:
+  - padding
+  - padding-x
+  - padding-y
+  - padding-top
+  - padding-end
+  - padding-bottom
+  - padding-start
+---
+
+## Overview
+
+Use padding utilities to control the inner space within elements. Padding utilities are built from a default Sass map ranging from `0` to `3rem` (`.p-0` through `.p-12`). Use utilities like `.p-3` and `.p-5` to control the padding on all sides of an element:
+
+<Example class="d-flex align-items-center justify-content-center gap-4 text-center" showMarkup={false} code={`
+  <div class="p-3 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .p-3
+    </div>
+  </div>
+  <div class="p-5 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .p-5
+    </div>
+  </div>`} />
+
+```html
+<div class="p-3">.p-3</div>
+<div class="p-5">.p-5</div>
+```
+
+## Notation
+
+<SpacingNotation
+  noun="padding"
+  format="{property}{sides}-{size}"
+  properties={[{ class: 'p', property: 'padding' }]}
+  sides={[
+    { abbr: 't', desc: 'for classes that set <code>padding-block-start</code>' },
+    { abbr: 'b', desc: 'for classes that set <code>padding-block-end</code>' },
+    { abbr: 's', desc: '(start) for classes that set <code>padding-inline-start</code>' },
+    { abbr: 'e', desc: '(end) for classes that set <code>padding-inline-end</code>' },
+    { abbr: 'x', desc: 'for classes that set <code>padding-inline</code>' },
+    { abbr: 'y', desc: 'for classes that set <code>padding-block</code>' },
+    { abbr: 'blank', desc: 'for classes that set a <code>padding</code> on all 4 sides of the element' }
+  ]}
+/>
+
+## Examples
+
+### Single side
+
+Use utilities like `.pt-4`, `.pe-4`, `.pb-4`, and `.ps-4` to control the padding on one side of an element:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center gap-4 text-center" code={`
+  <div class="pt-4 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .pt-4
+    </div>
+  </div>
+  <div class="pe-4 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .pe-4
+    </div>
+  </div>
+  <div class="pb-4 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .pb-4
+    </div>
+  </div>
+  <div class="ps-4 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .ps-4
+    </div>
+  </div>`} />
+
+```html
+<div class="pt-4">.pt-4</div>
+<div class="pe-4">.pe-4</div>
+<div class="pb-4">.pb-4</div>
+<div class="ps-4">.ps-4</div>
+```
+
+### Horizontal padding
+
+Use utilities like `.px-3` and `.px-5` to control the horizontal padding of an element:
+
+<Example showMarkup={false} class="d-flex flex-column align-items-center justify-content-center gap-4 text-center" code={`
+  <div class="px-3 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .px-3
+    </div>
+  </div>
+  <div class="px-5 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .px-5
+    </div>
+  </div>`} />
+
+```html
+<div class="px-3">.px-3</div>
+<div class="px-5">.px-5</div>
+```
+
+### Vertical padding
+
+Use utilities like `.py-3` and `.py-5` to control the vertical padding of an element:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center gap-4 text-center" code={`
+  <div class="py-3 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .py-3
+    </div>
+  </div>
+  <div class="py-5 bg-primary bd-pattern-diagonal-inner fg-contrast-accent rounded-3">
+    <div class="p-3 bg-primary rounded-3">
+      .py-5
+    </div>
+  </div>`} />
+
+```html
+<div class="py-3">.py-3</div>
+<div class="py-5">.py-5</div>
+```
+
+## Responsive
+
+All padding utilities are responsive and include all breakpoints.
+
+<SpacingResponsive classes={['p']} />
+
+## CSS
+
+### Sass utilities API
+
+Padding utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-padding" file="scss/_utilities.scss" />

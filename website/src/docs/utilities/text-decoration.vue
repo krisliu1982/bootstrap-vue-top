@@ -1,0 +1,85 @@
+---
+title: Text decoration
+description: Utilities for controlling text decoration, text transform, and text color reset.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+utility:
+  - underline-offset
+  - underline-color
+  - underline-opacity
+  - underline-thickness
+  - text-decoration
+---
+
+import { getData } from '@libs/data'
+
+## Text decoration
+
+Decorate text in components with text decoration classes.
+
+<Example code={`<p class="text-decoration-underline">This text has a line underneath it.</p>
+<p class="text-decoration-line-through">This text has a line going through it.</p>
+<a href="#" class="text-decoration-none">This link has its text decoration removed</a>`} />
+
+## Underline
+
+### Offset
+
+Change the underline’s distance from your text. Offset is set in `em` units to automatically scale with the element’s current `font-size`.
+
+<Example code={`<p><a href="#">Default link</a></p>
+<p><a class="underline-offset-1" href="#">Offset 1 link</a></p>
+<p><a class="underline-offset-2" href="#">Offset 2 link</a></p>
+<p><a class="underline-offset-3" href="#">Offset 3 link</a></p>`} />
+
+### Color
+
+Change the underline’s color independent of the text color.
+
+<Example code={getData('theme-colors').map((themeColor) => `<p><a href="#" class="underline-${themeColor.name}">${themeColor.title} underline</a></p>`)} />
+
+### Opacity
+
+Change the underline’s opacity. Fades the current text color by default, or pair with `.underline-{color}` to first set a color that the opacity is then mixed against.
+
+<Example code={`<p><a class="underline-10" href="#">Underline opacity 10</a></p>
+<p><a class="underline-20" href="#">Underline opacity 20</a></p>
+<p><a class="underline-30" href="#">Underline opacity 30</a></p>
+<p><a class="underline-40" href="#">Underline opacity 40</a></p>
+<p><a class="underline-50" href="#">Underline opacity 50</a></p>
+<p><a class="underline-60" href="#">Underline opacity 60</a></p>
+<p><a class="underline-70" href="#">Underline opacity 70</a></p>
+<p><a class="underline-80" href="#">Underline opacity 80</a></p>
+<p><a class="underline-90" href="#">Underline opacity 90</a></p>
+<p><a class="underline-100" href="#">Underline opacity 100</a></p>`} />
+
+Pair an opacity class with a color class to fade that specific color instead of the default text color:
+
+<Example code={`<a class="theme-success underline-success underline-30 hover:underline-80" href="#">Faded success underline</a>`} />
+
+### Thickness
+
+Change the thickness of the underline.
+
+<Example code={`<p><a href="#">Default link</a></p>
+<p><a class="underline-thickness-1" href="#">Thickness 1 link</a></p>
+<p><a class="underline-thickness-2" href="#">Thickness 2 link</a></p>
+<p><a class="underline-thickness-3" href="#">Thickness 3 link</a></p>
+<p><a class="underline-thickness-4" href="#">Thickness 4 link</a></p>
+<p><a class="underline-thickness-5" href="#">Thickness 5 link</a></p>`} />
+
+### Hover variants
+
+The `.underline-offset`, `.underline-{N}`, and `.underline-thickness` utilities include `:hover` variants by default. Mix and match to create unique link styles.
+
+<Example code={`<a class="underline-offset-2 hover:underline-offset-3 underline-10 hover:underline-50 hover:underline-thickness-2" href="#">
+    Underline with offset and opacity changes on hover
+  </a>`} />
+
+## CSS
+
+### Sass utilities API
+
+Text decoration utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-underline" file="scss/_utilities.scss" />

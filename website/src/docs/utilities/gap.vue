@@ -1,0 +1,149 @@
+---
+title: Gap
+description: Use gap utilities to control the space between elements in flexbox or grid layouts. Includes support for individual row and column gaps.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/gap
+utility:
+  - gap
+  - row-gap
+  - column-gap
+---
+
+## Overview
+
+Use gap utilities to control the space between children in flexbox and grid layouts. Gap utilities are built from a default Sass map ranging from `0` to `3rem` (`.gap-0` through `.gap-12`). Use utilities like `.gap-3` and `.gap-5` to control the gap between all children:
+
+<Example class="d-flex align-items-center justify-content-center gap-4 text-center" showMarkup={false} code={`
+  <div class="d-flex gap-3 p-3 bd-pattern-diagonal rounded-3">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+  </div>
+  <div class="d-flex gap-5 p-3 bd-pattern-diagonal rounded-3">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+  </div>`} />
+
+```html
+<div class="d-flex gap-3">...</div>
+<div class="d-flex gap-5">...</div>
+```
+
+<Callout type="info">
+**Support note:** Gap utilities work with CSS Grid and Flexbox layouts. They are a modern alternative to margin utilities for spacing children within a container.
+</Callout>
+
+## Notation
+
+<SpacingNotation
+  noun="gap"
+  format="{property}-{size}"
+  properties={[
+    { class: 'gap', property: 'gap' },
+    { class: 'row-gap', property: 'row-gap' },
+    { class: 'column-gap', property: 'column-gap' }
+  ]}
+/>
+
+## Examples
+
+### Flexbox gap
+
+Use `gap` utilities to control the space between children in a flexbox container:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-flex gap-4 bd-pattern-diagonal rounded-3">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 3</div>
+  </div>`} />
+
+```html
+<div class="d-flex gap-4">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+### Grid gap
+
+Gap utilities also work with CSS Grid layouts:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-grid gap-3 bd-pattern-diagonal rounded-3" style="grid-template-columns: 1fr 1fr;">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 3</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 4</div>
+  </div>`} />
+
+```html
+<div class="d-grid gap-3" style="grid-template-columns: 1fr 1fr;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+</div>
+```
+
+### Row and column gaps
+
+Use `row-gap` and `column-gap` utilities to control the space between rows and columns independently:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-grid row-gap-4 column-gap-2 bd-pattern-diagonal rounded-3" style="grid-template-columns: 1fr 1fr 1fr;">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 3</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 4</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 5</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 6</div>
+  </div>`} />
+
+```html
+<div class="d-grid row-gap-4 column-gap-2" style="grid-template-columns: 1fr 1fr 1fr;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+  <div>Item 6</div>
+</div>
+```
+
+### Flexbox with wrapping
+
+You can also use `row-gap` and `column-gap` utilities with flexbox layouts that wrap:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="d-flex flex-wrap row-gap-3 column-gap-2 p-3 bd-pattern-diagonal rounded-3">
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 1</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 2</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 3</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 4</div>
+    <div class="p-3 bg-subtle-accent fg-accent rounded-3">Item 5</div>
+  </div>`} />
+
+```html
+<div class="d-flex flex-wrap row-gap-3 column-gap-2">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+  <div>Item 4</div>
+  <div>Item 5</div>
+</div>
+```
+
+## Responsive
+
+All gap utilities are responsive and include all breakpoints.
+
+<SpacingResponsive classes={['gap', 'row-gap', 'column-gap']} />
+
+## CSS
+
+### Sass utilities API
+
+Gap utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-gap" file="scss/_utilities.scss" />

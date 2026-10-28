@@ -55,7 +55,7 @@ const docsRoutes = {
 allUrl.forEach((page) => {
   docsRoutes.children.push({
     path: `/docs/${page.groupSlug}/${page.pageSlug}`,
-    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.md`),
+    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.vue`),
   })
 })
 

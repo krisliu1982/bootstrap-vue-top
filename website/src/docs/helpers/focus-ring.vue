@@ -1,0 +1,35 @@
+---
+title: Focus ring
+description: Utility classes that allows you to add and modify custom focus ring styles to elements and components.
+aliases:
+ - "/docs/[[config:docs_version]]/helpers/"
+ - "/docs/helpers/"
+ - "/helpers/"
+toc: true
+---
+
+import { getData } from '@libs/data'
+
+The `.focus-ring` helper modifies the default `outline` for focus states with one that can be more easily customized. Focus ring is made up of a series of CSS variables, inherited from the `:root` level, that can be modified for any element or component.
+
+## Example
+
+Tab into the example below to see the focus ring in action, or into the example below and then press <kbd>Tab</kbd>.
+
+<Example code={`<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+    Custom focus ring
+  </a>`} />
+
+## Variants
+
+Change the color of the focus ring with the [theme color]([[docsref:/customize/theme#theme-colors]]) utility classes. The helper class pulls in the `--bs-theme-focus-ring` CSS variable for the given theme color.
+
+<Example class="vstack gap-2 align-items-start" code={getData('theme-colors').map((themeColor) => `<a href="#" class="d-inline-flex focus-ring theme-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2">${themeColor.title} focus</a>`)} />
+
+## Custom colors
+
+Modify the `--bs-focus-ring-color` CSS variable as needed to change the default appearance. Use existing theme variables or your own colors. When using your own colors, we recommend using `light-dark()` for color mode support and `color-mix()` to ensure colors deviate slightly for more contrast on different backgrounds.
+
+<Example code={`<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: var(--bs-success-focus-ring)">
+    Green focus ring
+  </a>`} />

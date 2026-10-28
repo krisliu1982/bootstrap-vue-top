@@ -1,0 +1,85 @@
+---
+title: Justify content
+description: Use justify-content utilities to change the alignment of flex items on the main axis.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+utility:
+  - justify-content
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+Use `justify-content` utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if `flex-direction: column`). Choose from `start` (browser default), `end`, `center`, `between`, `around`, or `evenly`.
+
+## Basic usage
+
+<div class="bd-example bd-example-flex">
+  <div class="d-flex justify-content-start mb-3">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">Start</div>
+  </div>
+  <div class="d-flex justify-content-end mb-3">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">End</div>
+  </div>
+  <div class="d-flex justify-content-center mb-3">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">Center</div>
+  </div>
+  <div class="d-flex justify-content-between mb-3">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">Between</div>
+  </div>
+  <div class="d-flex justify-content-around mb-3">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">Around</div>
+  </div>
+  <div class="d-flex justify-content-evenly">
+    <div class="p-2 bd-highlight">Justify</div>
+    <div class="p-2 bd-highlight">Content</div>
+    <div class="p-2 bd-highlight">Evenly</div>
+  </div>
+</div>
+
+```html
+<div class="d-flex justify-content-start">...</div>
+<div class="d-flex justify-content-end">...</div>
+<div class="d-flex justify-content-center">...</div>
+<div class="d-flex justify-content-between">...</div>
+<div class="d-flex justify-content-around">...</div>
+<div class="d-flex justify-content-evenly">...</div>
+```
+
+## Responsive
+
+Responsive variations also exist for `justify-content`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}justify-content-start</code></li>
+      <li><code>.{breakpoint.abbr}justify-content-end</code></li>
+      <li><code>.{breakpoint.abbr}justify-content-center</code></li>
+      <li><code>.{breakpoint.abbr}justify-content-between</code></li>
+      <li><code>.{breakpoint.abbr}justify-content-around</code></li>
+      <li><code>.{breakpoint.abbr}justify-content-evenly</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Justify content utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-justify-content" file="scss/_utilities.scss" />

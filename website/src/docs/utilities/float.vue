@@ -1,0 +1,51 @@
+---
+title: Float
+description: Toggle floats on any element, across any breakpoint, using our responsive float utilities.
+toc: true
+utility:
+  - float
+---
+
+import { getData } from '@libs/data'
+
+## Overview
+
+These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the [CSS `float` property](https://developer.mozilla.org/en-US/docs/Web/CSS/float). `!important` is included to avoid specificity issues. These use the same viewport breakpoints as our grid system. Please be aware float utilities have no effect on flex items.
+
+<Example code={`<div class="float-start">Float start on all viewport sizes</div><br>
+<div class="float-end">Float end on all viewport sizes</div><br>
+<div class="float-none">Don’t float on all viewport sizes</div>`} />
+
+Use the [`.d-flow-root` utility]([[docsref:/utilities/display#clearfix]]) on a parent element to clear floats.
+
+## Responsive
+
+Responsive variations also exist for each `float` value.
+
+<Example code={`<div class="sm:float-end">Float end on viewports sized SM (small) or wider</div><br>
+<div class="md:float-end">Float end on viewports sized MD (medium) or wider</div><br>
+<div class="lg:float-end">Float end on viewports sized LG (large) or wider</div><br>
+<div class="xl:float-end">Float end on viewports sized XL (extra large) or wider</div><br>
+<div class="2xl:float-end">Float end on viewports sized 2XL (extra extra large) or wider</div><br>`} />
+
+Here are all the support classes:
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}float-start</code></li>
+      <li><code>.{breakpoint.abbr}float-end</code></li>
+      <li><code>.{breakpoint.abbr}float-none</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Float utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-float" file="scss/_utilities.scss" />

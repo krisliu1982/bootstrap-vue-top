@@ -1,0 +1,176 @@
+---
+title: Margin
+description: Use margin utilities to responsively control the space around elements.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+utility:
+  - margin
+  - margin-x
+  - margin-y
+  - margin-top
+  - margin-end
+  - margin-bottom
+  - margin-start
+---
+
+## Overview
+
+Use margin utilities to control the outer space around elements. Margin utilities are built from a default Sass map ranging from `0` to `3rem` (`.m-0` through `.m-12`). Use utilities like `.m-3` and `.m-5` to control the margin on all sides of an element:
+
+<Example class="d-flex align-items-center justify-content-center gap-4 text-center" showMarkup={false} code={`
+  <div class="bd-pattern-diagonal rounded-3">
+    <div class="w-12 p-3 m-3 bg-accent fg-contrast-accent rounded-3">
+      .m-3
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3">
+    <div class="w-12 p-3 m-5 bg-accent fg-contrast-accent rounded-3">
+      .m-5
+    </div>
+  </div>`} />
+
+```html
+<div class="m-3">.m-3</div>
+<div class="m-5">.m-5</div>
+```
+
+<Callout>
+**Using flexbox or CSS Grid?** Consider using [the gap utility]([[docsref:/utilities/gap]]) instead.
+</Callout>
+
+## Notation
+
+<SpacingNotation
+  noun="margin"
+  format="{property}{sides}-{size}"
+  properties={[{ class: 'm', property: 'margin' }]}
+  includeAuto
+  sides={[
+    { abbr: 't', desc: 'for classes that set <code>margin-top</code>' },
+    { abbr: 'b', desc: 'for classes that set <code>margin-bottom</code>' },
+    { abbr: 's', desc: '(start) for classes that set <code>margin-left</code> in LTR, <code>margin-right</code> in RTL' },
+    { abbr: 'e', desc: '(end) for classes that set <code>margin-right</code> in LTR, <code>margin-left</code> in RTL' },
+    { abbr: 'x', desc: 'for classes that set both <code>*-left</code> and <code>*-right</code>' },
+    { abbr: 'y', desc: 'for classes that set both <code>*-top</code> and <code>*-bottom</code>' },
+    { abbr: 'blank', desc: 'for classes that set a <code>margin</code> on all 4 sides of the element' }
+  ]}
+/>
+
+## Examples
+
+### Single side
+
+Use utilities like `.mt-3`, `.me-2`, `.mb-4`, and `.ms-1` to control the margin on one side of an element:
+
+<Example showMarkup={false} class="d-flex flex-column align-items-center justify-content-center gap-4 text-center" code={`
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 mt-4 bg-accent fg-contrast-accent rounded-3">
+      .mt-4
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 me-4 bg-accent fg-contrast-accent rounded-3">
+      .me-4
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 mb-4 bg-accent fg-contrast-accent rounded-3">
+      .mb-4
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 ms-4 bg-accent fg-contrast-accent rounded-3">
+      .ms-4
+    </div>
+  </div>`} />
+
+```html
+<div class="mt-4">.mt-4</div>
+<div class="me-4">.me-4</div>
+<div class="mb-4">.mb-4</div>
+<div class="ms-4">.ms-4</div>
+```
+
+### Horizontal margin
+
+Use utilities like `.mx-3` and `.mx-5` to control the horizontal margin of an element:
+
+<Example showMarkup={false} class="d-flex flex-column align-items-center justify-content-center gap-4 text-center" code={`
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 mx-3 bg-accent fg-contrast-accent rounded-3">
+      .mx-3
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 mx-5 bg-accent fg-contrast-accent rounded-3">
+      .mx-5
+    </div>
+  </div>`} />
+
+```html
+<div class="mx-3">.mx-3</div>
+<div class="mx-5">.mx-5</div>
+```
+
+### Vertical margin
+
+Use utilities like `.my-3` and `.my-5` to control the vertical margin of an element:
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center gap-4 text-center" code={`
+    <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 my-3 bg-accent fg-contrast-accent rounded-3">
+      .my-3
+    </div>
+  </div>
+  <div class="bd-pattern-diagonal rounded-3 d-inline-block">
+    <div class="w-12 p-3 my-5 bg-accent fg-contrast-accent rounded-3">
+      .my-5
+    </div>
+  </div>`} />
+
+```html
+<div class="my-3">.my-3</div>
+<div class="my-5">.my-5</div>
+```
+
+### Horizontal centering
+
+Bootstrap includes an `.mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal margins to `auto`.
+
+<Example showMarkup={false} class="d-flex align-items-center justify-content-center text-center" code={`
+  <div class="bd-pattern-diagonal rounded-3 w-100">
+    <div class="w-12 p-3 mx-auto bg-accent fg-contrast-accent rounded-3">
+      .mx-auto
+    </div>
+  </div>`} />
+
+```html
+<div class="mx-auto" style="width: 200px;">
+  Centered element
+</div>
+```
+
+## Negative margin
+
+In CSS, `margin` properties can utilize negative values (`padding` cannot). In v6, negative margins are limited to `margin-inline-start` and `margin-inline-end` only, using spacers `-1` (`-0.25rem`) and `-2` (`-0.5rem`):
+
+```html
+<div class="ms--1">.ms--1</div>
+<div class="me--2">.me--2</div>
+```
+
+The v5 full negative margin utilities across all sides (like `.mt-n1`) have been removed.
+
+## Responsive
+
+All margin utilities are responsive and include all breakpoints.
+
+<SpacingResponsive classes={['m']} includeAuto />
+
+## CSS
+
+### Sass utilities API
+
+Margin utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-margin" file="scss/_utilities.scss" />

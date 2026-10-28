@@ -1,0 +1,193 @@
+---
+title: Floating labels
+description: Create beautifully simple form labels that float over your input fields.
+toc: true
+css_layer: forms
+---
+
+## Example
+
+Wrap a pair of `<input class="form-control">` and `<label>` elements in `.form-floating` to enable floating labels with Bootstrap’s textual form fields.
+
+A non-empty `placeholder` attribute is required on each `<input>` as our CSS-only floating label implementation relies on the `:placeholder-shown` pseudo-element to detect when the input is empty. The placeholder stays transparent until the control is focused, then uses the normal placeholder color. Only the `<label>` is shown when the field is empty and unfocused.
+
+Also note that the `<label>` must come first so that screen readers announce it before the field’s value; our CSS reacts to the control’s state with the `:has()` selector.
+
+<Example class="vstack gap-3" code={`<div class="form-floating">
+    <label for="floatingInput">Email address</label>
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  </div>
+  <div class="form-floating">
+    <label for="floatingPassword">Password</label>
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  </div>`} />
+
+When there’s a `value` already defined, `<label>`s will automatically adjust to their floated position.
+
+<Example code={`<form class="form-floating">
+    <label for="floatingInputValue">Input with value</label>
+    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
+  </form>`} />
+
+Form validation styles also work as expected.
+
+<Example code={`<form class="form-floating">
+    <label for="floatingInputInvalid">Invalid input</label>
+    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+  </form>`} />
+
+## Textareas
+
+By default, `<textarea>`s with `.form-control` will be the same height as `<input>`s.
+
+<Example code={`<div class="form-floating">
+    <label for="floatingTextarea">Comments</label>
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  </div>`} />
+
+To set a custom height on your `<textarea>`, do not use the `rows` attribute. Instead, override the `--bs-form-floating-height` CSS variable on the `.form-floating` wrapper (either inline or via custom CSS) so the label floats correctly at any height.
+
+<Example code={`<div class="form-floating" style="--bs-form-floating-height: 100px">
+    <label for="floatingTextarea2">Comments</label>
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+  </div>`} />
+
+## Selects
+
+Select elements work in the same way, but unlike `<input>`s, they’ll always show the `<label>` in its floated state. **Selects with `size` and `multiple` are not supported.**
+
+<Example code={`<div class="form-floating">
+    <label for="floatingSelect">Works with selects</label>
+    <select class="form-control" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>`} />
+
+## Date and time
+
+Date, time, datetime-local, month, and week inputs also always show the `<label>` in its floated state. These controls do not support placeholders the way textual inputs do, so a `placeholder` attribute is not required (and is ignored by most browsers on these types).
+
+<Example class="vstack gap-3" code={`<div class="form-floating">
+    <label for="floatingDate">Date</label>
+    <input type="date" class="form-control" id="floatingDate">
+  </div>
+  <div class="form-floating">
+    <label for="floatingTime">Time</label>
+    <input type="time" class="form-control" id="floatingTime">
+  </div>`} />
+
+## Disabled
+
+Add the `disabled` boolean attribute on an input, a textarea or a select to give it a grayed out appearance, remove pointer events, and prevent focusing.
+
+<Example class="vstack gap-3" code={`<div class="form-floating">
+    <label for="floatingInputDisabled">Email address</label>
+    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+  </div>
+  <div class="form-floating">
+    <label for="floatingTextareaDisabled">Comments</label>
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+  </div>
+  <div class="form-floating" style="--bs-form-floating-height: 100px">
+    <label for="floatingTextarea2Disabled">Comments</label>
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" disabled>Disabled textarea with some text inside</textarea>
+  </div>
+  <div class="form-floating">
+    <label for="floatingSelectDisabled">Works with selects</label>
+    <select class="form-control" id="floatingSelectDisabled" aria-label="Floating label disabled select example" disabled>
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>`} />
+
+## Readonly plaintext
+
+Floating labels also support `.form-control-plaintext`, which can be helpful for toggling from an editable `<input>` to a plaintext value without affecting the page layout.
+
+<Example class="vstack gap-3" code={`<div class="form-floating">
+    <label for="floatingEmptyPlaintextInput">Empty input</label>
+    <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
+  </div>
+  <div class="form-floating">
+    <label for="floatingPlaintextInput">Input with value</label>
+    <input type="email" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="name@example.com" value="name@example.com">
+  </div>`} />
+
+## Input groups
+
+Floating labels also support `.input-group`.
+
+<Example code={`<div class="input-group">
+    <span class="input-group-text">@</span>
+    <div class="form-floating">
+      <label for="floatingInputGroup1">Username</label>
+      <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+    </div>
+  </div>`} />
+
+When using `.input-group` and `.form-floating` along with form validation, place the `-feedback` outside the `.input-group` inside a `.form-field` wrapper.
+
+<Example code={`<div class="form-field">
+    <div class="input-group">
+      <span class="input-group-text">@</span>
+      <div class="form-floating is-invalid">
+        <label for="floatingInputGroup2">Username</label>
+        <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+      </div>
+    </div>
+    <div class="invalid-feedback">
+      Please choose a username.
+    </div>
+  </div>`} />
+
+## Always floating
+
+Add `.form-floating-always` to keep the label floated and show the placeholder. Use it on the `.form-floating` itself or as a wrapper around one.
+
+<Example class="vstack gap-3" code={`<div class="form-floating form-floating-always">
+    <label for="alwaysFloatingInput">Email address</label>
+    <input type="email" class="form-control" id="alwaysFloatingInput" placeholder="name@example.com">
+  </div>
+  <div class="form-floating form-floating-always">
+    <label for="alwaysFloatingPassword">Password</label>
+    <input type="password" class="form-control" id="alwaysFloatingPassword" placeholder="••••••••">
+  </div>`} />
+
+By default, placeholders stay transparent until the control is focused. With `.form-floating-always`, the placeholder stays visible in both states.
+
+## Layout
+
+When working with the Bootstrap grid system, be sure to place form elements within column classes.
+
+<Example code={`<div class="row g-2">
+    <div class="md:col">
+      <div class="form-floating">
+        <label for="floatingInputGrid">Email address</label>
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      </div>
+    </div>
+    <div class="md:col">
+      <div class="form-floating">
+        <label for="floatingSelectGrid">Works with selects</label>
+        <select class="form-control" id="floatingSelectGrid">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+  </div>`} />
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Floating labels" className="form-floating" />
+
+<ScssDocs name="form-floating-tokens" file="scss/forms/_floating-labels.scss" />
