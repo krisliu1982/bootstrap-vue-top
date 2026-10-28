@@ -9,57 +9,6 @@ export default {
     { "name": "inverse", "title": "inverse" },
     { "name": "secondary", "title": "secondary" }
   ],
-  'scss': {
-    'root-border-var': `--border-width: #{$border-width},
---border-width-keyline: .5px,
---border-style: #{$border-style},
---border-color: light-dark(var(--gray-200), var(--gray-700)),
---border-color-translucent: color-mix(in oklch, var(--fg-body) 15%, transparent),`,
-    'reboot-body-rules': `body {
-  margin: 0; // 1
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
-  font-weight: var(--body-font-weight);
-  line-height: var(--body-line-height);
-  color: var(--fg-body);
-  text-align: var(--body-text-align);
-  background-color: var(--bg-body); // 2
-  -webkit-text-size-adjust: 100%; // 3
-  -webkit-tap-highlight-color: transparent; // 4
-}`,
-    'root-body-variables': `// The stack omits system-ui. It resolves to the user interface font of the
-// locale, which shows non-Latin text incorrectly. See twbs/bootstrap#42703.
---body-font-family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
---body-font-size: 1rem,
---body-font-weight: var(--font-weight-normal),
---body-line-height: 1.5,`,
-'zindex-levels-map':`$zindex-levels: (
-  n1: -1,
-  0: 0,
-  1: 1,
-  2: 2,
-  3: 3,
-  menu: 1000,
-  sticky: 1010,
-  fixed: 1020,
-  drawer: 1030,
-  dialog: 1040,
-  popover: 1050,
-  tooltip: 1060,
-  toast: 1070,
-);`
-  },
-  'html': {
-    'reboot-inline-code-code': `For example, <code>&lt;section&gt;</code> should be wrapped as inline.`,
-    'reboot-inline-code-pre': `<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;p&gt;And another line of sample text here...&lt;/p&gt;
-</code></pre>`,
-    'reboot-ifram-color-scheme': `<div class="bg-body fg-body p-3" data-bs-theme="dark">
-  <iframe class="w-100" style="color-scheme: unset" src="data:text/html,<!DOCTYPE html><html><meta name='color-scheme' content='light dark'><body style='background-color:transparent;color:gray;'><h4>Default iframe</h4></body></html>"></iframe>
-  <iframe class="w-100" src="data:text/html,<!DOCTYPE html><html><meta name='color-scheme' content='light dark'><body style='background-color:transparent;color:gray;'><h4>iframe with color-scheme: light-dark</h4></body></html>"></iframe>
-  <iframe class="w-100" src="data:text/html,<!DOCTYPE html><html><body style='background-color:transparent;color:gray;'><h4>Embed that declares no color scheme</h4></body></html>"></iframe>
-</div>`,
-  },
   'sidebar': [
     {
       "title": "Getting started", "slug": "getting-started", "zh-CN": "入门",
