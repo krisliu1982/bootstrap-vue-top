@@ -142,4 +142,9 @@ function handleThemeChange() {
 import pkg from '../package.json';
 
 const version = pkg.version;
+
+import { useHead } from '@unhead/vue'
+useHead({
+  titleTemplate: (title) => title ? `${title} - Bootstrap` : 'Bootstrap v6.0'
+})
 </script>

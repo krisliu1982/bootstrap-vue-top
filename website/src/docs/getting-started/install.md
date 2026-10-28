@@ -1,9 +1,15 @@
+---
+title: 安装 Bootstrap
+description: 通过 CDN、包管理器或源文件将 Bootstrap 添加到你的项目中。
+---
+
 [[toc]]
+
 [[config:tag-start]]
 
-# 安装 Bootstrap
+# {{frontmatter.title}}
 
-通过 CDN、包管理器或源文件将 Bootstrap 添加到你的项目中。
+{{frontmatter.description}}
 
 ## 安装
 
@@ -126,7 +132,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell' }
 | 类型 | 描述 | 链接 |
 | --- | --- | --- |
 | <strong class="text-nowrap">分发文件</strong> | 即用型编译并压缩的 CSS 和 JavaScript 文件。不包含文档、源文件或 Floating UI 和 Vanilla Calendar Pro 等依赖项。 | <a href="[[config:download.dist]]" class="theme-accent">下载</a> |
-| <strong class="text-nowrap">源文件</strong> | 用于你自己的资源管道编译的 Sass、JavaScript 和文档文件。需要 [Sass 编译器]([[docsref:/guides/contribute#sass]])、[Autoprefixer](https://github.com/postcss/autoprefixer)，以及像 [Rollup](https://rollupjs.org/) 或 [Webpack](https://webpack.js.org/) 这样的 JavaScript 打包工具。 | <a href="[[config:download.source]]" class="theme-accent">下载</a> |
+| <strong class="text-nowrap">源文件</strong> | 用于你自己的资源管线编译的 Sass、JavaScript 和文档文件。需要 [Sass 编译器]([[docsref:/guides/contribute#sass]])、[Autoprefixer](https://github.com/postcss/autoprefixer)，以及像 [Rollup](https://rollupjs.org/) 或 [Webpack](https://webpack.js.org/) 这样的 JavaScript 打包工具。 | <a href="[[config:download.source]]" class="theme-accent">下载</a> |
 
 如果你需要我们完整的[构建工具]([[docsref:/guides/contribute#tooling-setup]])，它们包含在开发和文档构建中，但它们可能不适合你自己的用途。
 

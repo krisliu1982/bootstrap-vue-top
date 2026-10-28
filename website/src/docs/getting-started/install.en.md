@@ -1,8 +1,15 @@
+---
+title: Install Bootstrap
+description: Add Bootstrap to your project with CDN, package manager, or source files.
+---
+
 [[toc]]
 
-# Install Bootstrap
+[[config:tag-start]]
 
-Add Bootstrap to your project with CDN, package manager, or source files.
+# {{frontmatter.title}}
+
+{{frontmatter.description}}
 
 ## Install
 
