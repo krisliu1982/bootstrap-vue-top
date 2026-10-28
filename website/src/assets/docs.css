@@ -130,26 +130,22 @@
     padding-left: 1.25rem;
   }
 
-  .anchor-link {
-    color: color-mix(in srgb, var(--bs-link-color), transparent .5);
-    opacity: 0;
-    padding: 0 .175rem;
-    font-weight: 400;
-    text-decoration: none;
-  }
-
-  .anchor-link:after {
-    content: "#";
+.anchor-link {
+  text-decoration: none;
 }
 
-  .anchor-link:focus,
-  .anchor-link:hover,
-  :hover>.anchor-link,
-  :target>.anchor-link {
-    color: var(--bs-link-color);
-    opacity: 0;
-    text-decoration: none;
-  }
+.anchor-link::after {
+  content: "#";
+  margin-left: 0.125em;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.anchor-link:hover::after,
+.anchor-link:focus-visible::after {
+  opacity: 1;
+}
+
 
   .docs-callout {
     --link-color: var(--docs-callout-color);
