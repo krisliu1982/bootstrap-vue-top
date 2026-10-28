@@ -109,8 +109,8 @@
   .docs-toc a {
     display: block;
     padding: 0 .375rem;
-    font-size: 0.875rem;
-    color: var(--bs-fg-3);
+    font-size: 0.75rem;
+    color: var(--bs-fg-2);
     text-decoration: none;
     border-left: 2px solid transparent;
     margin-bottom: 0.375rem;

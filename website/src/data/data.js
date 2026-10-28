@@ -68,8 +68,8 @@ export default {
       "icon_color": "indigo",
       "pages": [
         { "title": "Install", "slug": "install", "zh-CN": "安装" },
-        { "title": "AI", "slug": "ai", "zh-CN": "人工智能" },
-        { "title": "Approach", "slug": "approach", "zh-CN": "方法" },
+        { "title": "AI", "slug": "ai", "zh-CN": "AI" },
+        { "title": "Approach", "slug": "approach", "zh-CN": "实现思路" },
         { "title": "CSS variables", "slug": "css-variables", "zh-CN": "CSS 变量" },
         { "title": "JavaScript", "slug": "javascript", "zh-CN": "JavaScript" },
         { "title": "Browsers & devices", "slug": "browsers-devices", "zh-CN": "浏览器与设备" },

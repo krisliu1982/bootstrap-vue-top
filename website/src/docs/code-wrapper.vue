@@ -1,15 +1,16 @@
 <template>
   <div class="docs-code-snippet not-prose" data-pagefind-ignore>
     <div class="hstack align-items-center highlight-toolbar">
-    <div  class="font-monospace text-uppercase fs-xs fg-3">{{ props.lang }}</div>
-    <div class="ms-auto">
-      <BiCheckLg v-if="isCopy" class="fg-success" />
-      <a v-else role="button" class="fg-body" title="Copy" aria-label="Copy" @click="handleCopy">
-        <BiCopy />
-      </a>
+      <div v-if="props.label" class="font-monospace fs-xs fg-3">{{ props.label }}</div>
+      <div v-else class="font-monospace text-uppercase fs-xs fg-3">{{ props.lang }}</div>
+      <div class="ms-auto">
+        <BiCheckLg v-if="isCopy" class="fg-success" />
+        <a v-else role="button" class="fg-body" title="Copy" aria-label="Copy" @click="handleCopy">
+          <BiCopy />
+        </a>
+      </div>
     </div>
-  </div>
-  <Code :code="props.code" :lang="props.lang"/>
+    <Code :code="props.code" :lang="props.lang" />
   </div>
 </template>
 
@@ -25,6 +26,10 @@ const props = defineProps({
   lang: {
     type: String,
     default: 'html'
+  },
+  label: {
+    type: String,
+    default: null
   }
 });
 

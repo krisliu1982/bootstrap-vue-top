@@ -1,49 +1,64 @@
----
-title: Approach
-description: Learn about the guiding principles, strategies, and techniques used to build and maintain Bootstrap so you can more easily customize and extend it yourself.
-toc: true
----
+<template>
+<article class="docs-content prose">
+    <h1>实现思路</h1>
+    <p>了解用于构建和维护 Bootstrap 的指导原则、策略与技巧，以便你更轻松地自定义和扩展它。</p>
+    <h2 id="sass--css">
+  Sass &amp; CSS
+  <a class="anchor-link" href="#sass--css" aria-label="链接到Sass &amp; CSS章节"></a>
+</h2>
 
-## Sass & CSS
+<p>Bootstrap 6 带来了一种新理念：将 Sass 与 CSS 结合使用，针对你的具体需求构建和自定义项目。概括来说：</p>
 
-Bootstrap 6 brings with it a new philosophy of using Sass and CSS together to build and customize projects for your specific needs. At a high level:
+<ul>
+<li><strong>Sass 用于程序化配置——</strong> 函数、循环、mixin 等生成式构造。</li>
+<li><strong>CSS 用于视觉定制——</strong> 用 CSS 变量控制颜色、间距、排版等视觉属性。</li>
+</ul>
 
-- **Sass is for programmatic configuration —** Think functions, loops, mixins, and more for generative constructs.
-- **CSS is for visual customization —** CSS variables for visual properties like colors, spacing, typography, etc.
+<p>以往的大版本把 Sass 同时当作程序化配置和视觉定制的手段，CSS 变量只是更复杂、更不完整的第二层。v6 对此做了大幅改进。</p>
 
-Previous major versions have treated Sass as both programmatic and visual customization with CSS variables adding a more complicated, and less complete, secondary layer. This has been greatly improved in v6.
+<p>此外，我们使用 <a href="https://postcss.org/">PostCSS</a> 为 <a href="https://github.com/twbs/postcss-prefix-custom-properties">CSS 变量添加 <code>bs-</code> 前缀</a>，并按需为 CSS 属性添加厂商前缀。</p>
 
-On top of that, we use [PostCSS](https://postcss.org/) to [prefix our CSS variables](https://github.com/twbs/postcss-prefix-custom-properties) with the `bs-` prefix and add vendor prefixes to our CSS properties, as appropriate.
+<h3 id="sass">
+  Sass
+  <a class="anchor-link" href="#sass" aria-label="链接到Sass章节"></a>
+</h3>
 
-### Sass
+<p>Sass 用于以下用途：</p>
 
-Sass is used for the following:
+<ul>
+<li>导入（<code>@use</code> 和 <code>@forward</code>）会编译成 CSS 的各个样式表。</li>
+<li>用 mixin 和函数管理重复的代码片段。</li>
+<li>开关全局选项，如 <code>$enable-smooth-scroll</code>、<code>$enable-reduced-motion</code> 等。</li>
+<li>通过 Sass map、循环等配置并生成组件变体（主题色、尺寸等）。</li>
+<li>为每种颜色的每个色调和明暗批量生成 CSS 变量。</li>
+<li>管理组件 token 列表（例如 <code>$alert-tokens</code>）并将它们应用到特定类。</li>
+<li>驱动 utilities API 以自定义和生成工具类。</li>
+</ul>
 
-- Import (`@use` and `@forward`) individual stylesheets that compile into CSS.
-- Manage repetitive snippets of code with mixins and functions.
-- Toggle global options like `$enable-smooth-scroll`, `$enable-reduced-motion`, etc.
-- Configure and generate component variants (theme colors, sizes, etc) through Sass maps, loops, and more.
-- Bulk-generate CSS variables for every tint and shade of our colors.
-- Manage component token lists (e.g., `$alert-tokens`) and apply them to specific classes.
-- Power the utilities API to customize and generate utility classes.
+<h3 id="css">
+  CSS
+  <a class="anchor-link" href="#css" aria-label="链接到CSS章节"></a>
+</h3>
 
-### CSS
+<p>虽然你可以用 Sass 自定义 Bootstrap 的外观，但现在更推荐尽可能使用 CSS 变量，包括在使用 Sass 时。以下是我们使用 CSS 的方式：</p>
 
-While you can use Sass to customize how Bootstrap looks, the preferred way now is to use CSS variables whenever possible, including when working with Sass. Here’s how we use CSS:
+<ul>
+<li>自定义单个全局和组件 token，如 <code>--bs-border-radius</code>、<code>--bs-alert-padding-x</code> 等。</li>
+<li>使用 Sass 的 <code>with (...tokens)</code> 语法覆盖默认值来定制 token 值。</li>
+<li>混合颜色，为每种色相生成色调和明暗。</li>
+<li>使用 <code>calc()</code> 基于另一个 token 或 CSS 变量的值计算动态值。</li>
+</ul>
 
-- Customize individual global and component tokens like `--bs-border-radius`, `--bs-alert-padding-x`, etc.
-- Customize token values using Sass’s `with (...tokens)` syntax to override the default values.
-- Mix colors to generate our tints and shades for each hue.
-- Use `calc()` for dynamic values based on the value of another token or CSS variable.
+<h3 id="examples">
+  Examples
+  <a class="anchor-link" href="#examples" aria-label="链接到Examples章节"></a>
+</h3>
 
-### Examples
+<p>下面是我们如何混合使用 Sass 和 CSS 来自定义 Bootstrap。Sass 帮助我们管理特性并访问生成式 token，CSS 则让我们自定义单个 token 和值。在我们几乎所有的组件中，都会建立一个“tokens”的 Sass map，它们实际上就是 CSS 变量。使用这个 map，我们在组件的类上生成 CSS 自定义属性。</p>
 
-Here’s how we’d use a mix of Sass and CSS to customize Bootstrap. The Sass helps us manage features and gives us access to generative tokens, while the CSS allows us to customize individual tokens and values. In almost all our components, we setup a Sass map of "tokens" that are really just CSS variables. Using this map, we then generate the CSS custom properties on the component’s class.
+<p>例如，alert 组件有一个 <code>$alert-tokens</code> map，用于在 <code>.alert</code> 类上生成 CSS 自定义属性。</p>
 
-For example, the alert component has a `$alert-tokens` map that is used to generate the CSS custom properties on the `.alert` class.
-
-```scss
-$alert-tokens: (
+<CodeWrapper code="$alert-tokens: (
   --alert-padding-x: 2rem,
   --alert-border-radius: 1rem,
   // …
@@ -52,13 +67,11 @@ $alert-tokens: (
 .alert {
   @include tokens($alert-tokens);
   // …
-}
-```
+}" lang="scss" />
 
-In practice for you and your projects, this means you can use Sass’s module system to override the CSS variables at build-time for a specific component, or even globally.
+<p>在实际项目里，这意味着你可以用 Sass 的模块系统在构建时覆盖某个特定组件、甚至全局的 CSS 变量。</p>
 
-```scss
-@use "../node_modules/bootstrap/scss/bootstrap" with (
+<CodeWrapper code='@use "../node_modules/bootstrap/scss/bootstrap" with (
   // Manage global options
   $enable-smooth-scroll: true,
 
@@ -73,13 +86,12 @@ In practice for you and your projects, this means you can use Sass’s module sy
     --alert-padding-x: calc(var(--spacer) * 2),
     --alert-border-radius: 1rem,
   ),
-);
-```
+);' lang="scss" />
 
-Here’s a Sass-specific example, where we cannot use CSS to easily achieve the same result. The following will remove the `text` and `subtle` variants from the `button-variants` map, and override the `button-sizes` map to only include `sm` and `lg` sizes.
 
-```scss
-@use "../node_modules/bootstrap/scss/bootstrap" with (
+<p>下面是一个 Sass 专属的例子，用 CSS 不容易达到同样效果。以下代码会从 <code>button-variants</code> map 中移除 <code>text</code> 和 <code>subtle</code> 变体，并覆盖 <code>button-sizes</code> map 只保留 <code>sm</code> 和 <code>lg</code> 尺寸。</p>
+
+<CodeWrapper code='@use "../node_modules/bootstrap/scss/bootstrap" with (
   // Modify button sizes to remove default `xs` size
   $button-sizes: ("sm", "lg"),
 
@@ -88,163 +100,269 @@ Here’s a Sass-specific example, where we cannot use CSS to easily achieve the 
     "text": null,
     "subtle": null,
   ),
-);
-```
+);' lang="scss" />
 
-Here’s an example of just using pure CSS to customize a CSS variables from the compiled CSS. Wherever `var(--bs-border-radius)` is used, it will be replaced with the value `.25rem`.
+<p>下面是一个只用纯 CSS 从编译后的 CSS 自定义 CSS 变量的例子。凡是使用 <code>var(--bs-border-radius)</code> 的地方，都会被替换为 <code>.25rem</code>。</p>
 
-```css
-:root {
+<CodeWrapper code=":root {
   --border-radius: .25rem;
   --spacer: 1.5rem;
-}
-```
+}" lang="css" />
 
-## Modern essentials
+<h2 id="modern-essentials">
+  现代基础
+  <a class="anchor-link" href="#modern-essentials" aria-label="链接到现代基础章节"></a>
+</h2>
 
-Bootstrap employs a handful of important global styles and settings geared towards normalizing browser styles, enabling responsive and mobile-first design, and providing a modern foundation to build upon.
+<p>Bootstrap 采用了一些重要的全局样式和设置，旨在规范化浏览器样式、启用响应式和移动优先设计，并提供现代化的构建基础。</p>
 
-### Responsive design
+<h3 id="responsive-design">
+  响应式设计
+  <a class="anchor-link" href="#responsive-design" aria-label="链接到响应式设计章节"></a>
+</h3>
 
-Responsive web design is the practice of building a website that responds to the viewport size of the device it’s being viewed on. This is achieved by using range media queries to apply different styles to the website based on the viewport size.
+<p>响应式网页设计是指构建一个能根据查看设备视口尺寸做出响应的网站。这通过范围媒体查询实现，根据视口尺寸对网站应用不同样式。</p>
 
-```css
-@media (width < 768px) {
+<CodeWrapper code="@media (width < 768px) {
   .container {
     max-width: 100%;
   }
-}
-```
+}" lang="css" />
 
-Bootstrap ships with several responsive tiers or breakpoints that allow you to stack styles on top of each other, from small mobile devices to large desktop screens. This gives you a very flexible and powerful way to build websites that can be optimized for any-sized device.
+<p>Bootstrap 内置了多个响应式层级（断点），允许你从小型移动设备到大型桌面屏幕逐层叠加样式。这为你提供了非常灵活且强大的方式来构建可针对任意尺寸设备优化的网站。</p>
 
-### HTML5 doctype
+<h3 id="html5-doctype">
+  HTML5 doctype
+  <a class="anchor-link" href="#html5-doctype" aria-label="链接到HTML5 doctype章节"></a>
+</h3>
 
-Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.
+<p>Bootstrap 要求使用 HTML5 doctype。缺少它，你会看到一些奇怪且不完整的样式。</p>
 
-```html
-<!doctype html><!--[!code highlight]-->
+<CodeWrapper code='<!doctype html>
 <html lang="en">
   …
-</html>
-```
+</html>' lang="html" />
 
-### Viewport meta
+<h3 id="viewport-meta">
+  视口 meta 标签
+  <a class="anchor-link" href="#viewport-meta" aria-label="链接到视口 meta 标签章节"></a>
+</h3>
 
-Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>`.
+<p>Bootstrap 采用<em>移动优先</em>开发策略：先为移动设备优化代码，再通过 CSS 媒体查询按需放大组件。为确保所有设备正确渲染和触摸缩放，请在 <code>&lt;head&gt;</code> 中添加响应式 viewport meta 标签。</p>
 
-```html
-<!doctype html>
+<CodeWrapper code='<!doctype html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!--[!code highlight]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     …
   </head>
   <body>
     …
   </body>
-</html>
-```
+</html>' lang="html" />
 
-You can see an example of this in action in [the quick start]([[docsref:/guides/quickstart/]]).
+<p>你可以在<a href="/docs/guides/quickstart">快速开始</a>中看到实际示例。</p>
 
-### Box-sizing
+<h3 id="box-sizing">
+  盒尺寸(box-sizing)
+  <a class="anchor-link" href="#box-sizing" aria-label="链接到Box-sizing章节"></a>
+</h3>
 
-For more straightforward sizing in CSS, we switch the global `box-sizing` value from `content-box` to `border-box`. This ensures `padding` does not affect the final computed width of an element.
+<p>为了让 CSS 尺寸计算更直接，我们将全局 <code>box-sizing</code> 从 <code>content-box</code> 改为 <code>border-box</code>。这确保 <code>padding</code> 不影响元素的最终计算宽度。</p>
 
-On the rare occasion you need to override it, use something like the following:
+<p>极少数需要覆盖时，可以这样写：</p>
 
-```css
-.your-selector {
+<CodeWrapper code=".your-selector {
   box-sizing: content-box;
-}
-```
+}" lang="css"/>
 
-Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
+<p>在 <a href="https://css-tricks.com/box-sizing/">CSS Tricks 上了解更多盒模型与尺寸</a>。</p>
 
-### Reboot
+<h3 id="reboot">
+  重置样式
+  <a class="anchor-link" href="#reboot" aria-label="链接到重置样式章节"></a>
+</h3>
 
-For improved cross-browser rendering, we use [Reboot]([[docsref:/content/reboot]]) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+<p>为改善跨浏览器渲染，我们使用 <a href="/docs/content/reboot">Reboot</a> 来修正浏览器和设备之间的不一致，同时为常见 HTML 元素提供略微更有主见的重置样式。</p>
 
-### Browser support
+<h3 id="browser-support">
+  浏览器支持
+  <a class="anchor-link" href="#browser-support" aria-label="链接到浏览器支持章节"></a>
+</h3>
 
-You can find our supported range of browsers and their versions [in our `.browserslistrc` file]([[config:repo]]/blob/v[[config:current_version]]/.browserslistrc). See [Browsers & devices]([[docsref:/getting-started/browsers-devices]]) for the reason behind each version, and for the platform features these floors do and do not give us.
+<p>你可以在<a href="https://github.com/twbs/bootstrap/blob/v6.0.0-alpha.1/.browserslistrc">我们的 <code>.browserslistrc</code> 文件</a>中找到支持的浏览器范围及版本。各版本背后的原因以及这些下限带来的与未带来的平台特性，请参阅<a href="/docs/getting-started/browsers-devices">浏览器与设备</a>。</p>
 
-<Code lang="plaintext" filePath=".browserslistrc" fileMatch="last 2 major versions[\s\S]+not op_mini all" />
+<CodeWrapper code="last 2 major versions
+not dead
+unreleased versions
 
-If you installed Bootstrap via npm, you can also find this file locally at `node_modules/bootstrap/.browserslistrc`.
+Chrome >= 130
+Edge >= 130
+Firefox >= 132
+iOS >= 18.0
+Safari >= 18.0
 
-We use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle intended browser support via CSS prefixes, which uses [Browserslist](https://github.com/browserslist/browserslist) to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.
+not and_uc > 0
+not and_qq > 0
+not kaios > 0
+not op_mini all" lang="plaintext" />
 
-## Guiding principles
+<p>如果你通过 npm 安装 Bootstrap，也可以在本地 <code>node_modules/bootstrap/.browserslistrc</code> 找到该文件。</p>
 
-Beyond what Bootstrap does, here’s *why* we do it—our philosophy for building on the web. At a high level, here’s what guides our approach:
+<p>我们使用 <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 通过 CSS 前缀处理目标浏览器支持，它使用 <a href="https://github.com/browserslist/browserslist">Browserslist</a> 管理这些浏览器版本。如何将这些工具集成到你的项目，请参阅它们的文档。</p>
 
-- Components should be responsive and mobile-first
-- Components should be built with a base class and extended via modifier classes
-- Component states should obey a common `z-index` scale
-- Prefer an HTML and CSS implementation over JavaScript
-- Use utilities over custom styles
-- Avoid enforcing strict HTML requirements (immediate children selectors)
+<h2 id="guiding-principles">
+  指导原则
+  <a class="anchor-link" href="#guiding-principles" aria-label="链接到指导原则章节"></a>
+</h2>
 
-These rules cannot always be followed to the letter, but we strive to follow them as much as possible.
+<p>除了 Bootstrap 做了什么，这里还有我们<em>为什么</em>这样做——我们在 Web 上构建的理念。概括来说，指导我们方法的原则是：</p>
 
-### Responsive
+<ul>
+<li>组件应当响应式且移动优先</li>
+<li>组件应当基于一个基类构建，并通过修饰类扩展</li>
+<li>组件状态应遵循统一的 <code>z-index</code> 层级</li>
+<li>优先使用 HTML 和 CSS 实现，而非 JavaScript</li>
+<li>优先使用工具类，而非自定义样式</li>
+<li>避免强制严格的 HTML 结构要求（直接子元素选择器）</li>
+</ul>
 
-Bootstrap’s styles are mobile-first—we add styles as the viewport grows rather than overriding them as it shrinks. Not every component must be fully responsive, but this approach reduces CSS overrides.
+<p>这些规则无法总是照字面执行，但我们会尽可能遵循。</p>
 
-We use range media queries (`width >= 768px`, for example) to apply styles at a specific breakpoint and carry up through the larger breakpoints. For example, a `.d-none` applies from `min-width: 0` to infinity. On the other hand, a `.md:d-none` applies from the medium breakpoint and up.
+<h3 id="responsive">
+  响应式
+  <a class="anchor-link" href="#responsive" aria-label="链接到响应式章节"></a>
+</h3>
 
-### Classes
+<p>Bootstrap 的样式是移动优先的——随着视口增大我们添加样式，而不是在视口缩小时覆盖样式。并非每个组件都必须完全响应式，但这种方式减少了 CSS 覆盖。</p>
 
-Aside from [Reboot]([[docsref:/content/reboot]]), we strive to use only classes as selectors. Where we can, we avoid type selectors and extraneous parent selectors for greater flexibility.
+<p>我们使用范围媒体查询（例如 <code>width &gt;= 768px</code>）在特定断点应用样式，并向上延续到更大的断点。例如，<code>.d-none</code> 从 <code>min-width: 0</code> 一直生效到无穷大。另一方面，<code>.md:d-none</code> 从中等断点及以上生效。</p>
 
-Components are typically built with a base class for shared property-value pairs. For example, `.btn`, `.btn-solid`, and `.theme-primary`. We use `.btn` for all the common styles like `display`, `padding`, and `border-width`. We then use variant and theme modifiers like `.btn-solid.theme-primary` to add more styles.
+<h3 id="classes">
+  样式类
+  <a class="anchor-link" href="#classes" aria-label="链接到样式类章节"></a>
+</h3>
 
-This reduces complexity, streamlines code, and makes for more scalable systems.
+<p>除 <a href="/docs/content/reboot">Reboot</a> 外，我们尽量只把类用作选择器。在可行的情况下，我们避免类型选择器和多余的父选择器，以获得更大的灵活性。</p>
 
-### z-index scales
+<p>组件通常以一个基类承载共享的属性-值对。例如 <code>.btn</code>、<code>.btn-solid</code> 和 <code>.theme-primary</code>。我们用 <code>.btn</code> 承载 <code>display</code>、<code>padding</code>、<code>border-width</code> 等所有通用样式，再用 <code>.btn-solid.theme-primary</code> 这样的变体和主题修饰类添加更多样式。</p>
 
-We use two `z-index` scales in Bootstrap—elements within a component and overlay components.
+<p>这降低了复杂度、精简了代码，并形成更可扩展的系统。</p>
 
-Some components in Bootstrap are built with overlapping elements to prevent double borders without modifying the `border` property. For example, button groups, input groups, and pagination. These components share a standard `z-index` scale of `0` through `3`, matching our expectations of highest user priority.
+<h3 id="z-index-scales">
+  z-index 层级
+  <a class="anchor-link" href="#z-index-scales" aria-label="链接到z-index层级章节"></a>
+</h3>
 
-- `0` is for default states (initial, not actually set)
-- `1` is for `:hover`, lowest because while it indicates user intent, nearly *anything* can be hovered.
-- `2` is for `:active`/`.active`, second highest because they indicate state.
-- `3` is for `:focus`, highest because focused elements are in view and at the user’s attention.
+<p>Bootstrap 中使用两个 <code>z-index</code> 层级——组件内元素和覆盖层组件。</p>
 
-Components built with overlays also have a predefined z-index scale, beginning at `1000`. This starting number was chosen arbitrarily and serves as a small buffer between our styles and your project’s custom styles.
+<p>Bootstrap 中有些组件用重叠元素来避免修改 <code>border</code> 属性而产生双边框，例如按钮组、输入框组和分页。这些组件共享 <code>0</code> 到 <code>3</code> 的标准 <code>z-index</code> 层级，符合我们对用户最高优先级的预期。</p>
 
-<ScssDocs name="zindex-levels-map" file="scss/_config.scss" />
+<ul>
+<li><code>0</code> 用于默认状态（初始状态，实际未设置）</li>
+<li><code>1</code> 用于 <code>:hover</code>，最低，因为虽然它表示用户意图，但几乎<em>任何</em>东西都可以被悬停。</li>
+<li><code>2</code> 用于 <code>:active</code>/<code>.active</code>，第二高，因为它们表示状态。</li>
+<li><code>3</code> 用于 <code>:focus</code>，最高，因为聚焦元素在视野内并处于用户注意中心。</li>
+</ul>
 
-Each overlay component increases its `z-index` value slightly in such a way that common UI principles allow user focused or hovered elements to remain in view at all times. For example, a modal dialog is document blocking (e.g., you cannot take any other action save for the dialog’s action), so we put that above our navbars.
+<p>使用覆盖层构建的组件也有预定义的 z-index 层级，从 <code>1000</code> 开始。这个起始数字是任意选的，作为我们样式与你项目自定义样式之间的小缓冲。</p>
 
-Learn more about this in our [`z-index` layout page]([[docsref:/layout/z-index]]).
+<CodeWrapper code="$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  menu: 1000,
+  sticky: 1010,
+  fixed: 1020,
+  drawer: 1030,
+  dialog: 1040,
+  popover: 1050,
+  tooltip: 1060,
+  toast: 1070,
+);" lang="scss" label="scss/_config.scss"/>
 
-### HTML and CSS over JS
+<p>每个覆盖层组件都会略微提高其 <code>z-index</code> 值，使得常见 UI 原则下用户聚焦或悬停的元素始终保持在视野内。例如，模态对话框会阻塞文档（即除对话框操作外你不能做其他操作），所以我们把它放在导航栏之上。</p>
 
-Whenever possible, we prefer HTML and CSS over JavaScript—they’re more accessible to people of all experience levels and faster in the browser. That’s why our first-class JavaScript API is `data` attributes—it lets you write more HTML instead of JavaScript. Read more in [our JavaScript overview]([[docsref:/getting-started/javascript#data-attributes]]).
+<p>更多内容请参阅我们的 <a href="/docs/layout/z-index"><code>z-index</code> 布局页面</a>。</p>
 
-Our styles build on fundamental browser behaviors. For example, while you can put `.btn` on nearly any element, we prefer `<button>`s and `<a>`s for their semantic value. For form validation, we scope styles behind `data-bs-validate` and use the `:user-invalid` pseudo-class so feedback appears only after user interaction—not on initial page load.
+<h3 id="html-and-css-over-js">
+  优先 HTML 与 CSS 而非 JS
+  <a class="anchor-link" href="#html-and-css-over-js" aria-label="链接到优先HTML 与 CSS 而非 JS章节"></a>
+</h3>
 
-### Utilities
+<p>只要可能，我们优先使用 HTML 和 CSS 而非 JavaScript——它们对所有经验水平的人都更易上手，在浏览器中也更快。这就是为什么我们的一等 JavaScript API 是 <code>data</code> 属性——它让你写更多 HTML 而不是 JavaScript。更多内容请阅读<a href="/docs/getting-started/javascript#data-attributes">我们的 JavaScript 概览</a>。</p>
 
-Utility classes—single, immutable property-value pairings like `.d-block` for `display: block;`—help reduce CSS bloat and improve performance. They speed up HTML authoring and limit custom CSS by consolidating repeated property-value pairs into reusable classes. We try to use these when possible instead of additional CSS.
+<p>我们的样式建立在浏览器基本行为之上。例如，虽然你可以把 <code>.btn</code> 放在几乎任何元素上，但我们更倾向于 <code>&lt;button&gt;</code> 和 <code>&lt;a&gt;</code> 的语义价值。对于表单验证，我们把样式限定在 <code>data-bs-validate</code> 之后，并使用 <code>:user-invalid</code> 伪类，让反馈只在用户交互后出现——而不是在页面初次加载时。</p>
 
-### Code conventions
+<h3 id="utilities">
+  工具类
+  <a class="anchor-link" href="#utilities" aria-label="链接到工具类章节"></a>
+</h3>
 
-[Code Guide](https://codeguide.co/) documents how we write HTML and CSS—covering formatting, defaults, property orders, and more. We enforce these standards with [Stylelint](https://stylelint.io/) using [our open source config](https://github.com/twbs/stylelint-config-twbs-bootstrap).
+<p>工具类——单一、不可变的属性-值配对，如 <code>.d-block</code> 对应 <code>display: block;</code>——有助于减少 CSS 冗余并提升性能。它们加快 HTML 编写，并通过把重复的属性-值对合并为可复用类来减少自定义 CSS。我们尽量使用它们，而不是额外写 CSS。</p>
 
-## Community
+<h3 id="code-conventions">
+  代码约定
+  <a class="anchor-link" href="#code-conventions" aria-label="链接到代码约定章节"></a>
+</h3>
 
-Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.
+<p><a href="https://codeguide.co/">Code Guide</a> 记录了我们的 HTML 和 CSS 写法——涵盖格式、默认值、属性顺序等。我们通过 <a href="https://stylelint.io/">Stylelint</a> 和<a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">我们的开源配置</a>来强制执行这些标准。</p>
 
-- Read and subscribe to [The Official Bootstrap Blog]([[config:blog]]).
-- Ask questions and explore [our GitHub Discussions](https://github.com/orgs/twbs/discussions).
-- Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://www.reddit.com/r/bootstrap/).
-- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
-- Developers distributing Bootstrap-related packages on [npm](https://www.npmjs.com/search?q=keywords:bootstrap) should use the `bootstrap` keyword for discoverability.
+<h2 id="community">
+  社区
+  <a class="anchor-link" href="#community" aria-label="链接到社区章节"></a>
+</h2>
 
-You can also follow [@getbootstrap on X](https://x.com/[[config:x]]) for the latest gossip and awesome music videos.
+<p>通过以下资源了解 Bootstrap 的最新开发动态并与社区交流。</p>
+
+<ul>
+<li>阅读并订阅<a href="https://blog.getbootstrap.com/">官方 Bootstrap 博客</a>。</li>
+<li>在<a href="https://github.com/orgs/twbs/discussions">我们的 GitHub Discussions</a> 提问和探索。</li>
+<li>在<a href="https://discord.gg/bZUvakRU3M">社区 Discord</a> 或 <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a> 讨论、提问等。</li>
+<li>在 IRC 上与其他 Bootstrapper 聊天。服务器 <code>irc.libera.chat</code>，频道 <code>#bootstrap</code>。</li>
+<li>实现方面的帮助可以在 Stack Overflow 找到（标签 <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>）。</li>
+<li>在 <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> 上分发 Bootstrap 相关包的开发者应使用 <code>bootstrap</code> 关键字以便被发现。</li>
+</ul>
+
+<p>你也可以在 X 上关注 <a href="https://x.com/getbootstrap">@getbootstrap</a> 获取最新八卦和精彩音乐视频。</p>
+  </article>
+<nav class="docs-toc" id="table-of-contents" aria-label="目录">
+  <ul>
+    <li>
+      <a href="#sass--css">Sass 与 CSS</a>
+      <ul>
+        <li><a href="#sass">Sass</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#examples">示例</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#modern-essentials">现代基础</a>
+      <ul>
+        <li><a href="#responsive-design">响应式设计</a></li>
+        <li><a href="#html5-doctype">HTML5 doctype</a></li>
+        <li><a href="#viewport-meta">视口 meta 标签</a></li>
+        <li><a href="#box-sizing">盒尺寸(box-sizing)</a></li>
+        <li><a href="#reboot">重置样式</a></li>
+        <li><a href="#browser-support">浏览器支持</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#guiding-principles">指导原则</a>
+      <ul>
+        <li><a href="#responsive">响应式</a></li>
+        <li><a href="#classes">样式类</a></li>
+        <li><a href="#z-index-scales">z-index 层级</a></li>
+        <li><a href="#html-and-css-over-js">优先 HTML 与 CSS 而非 JS</a></li>
+        <li><a href="#utilities">工具类</a></li>
+        <li><a href="#code-conventions">代码约定</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#community">社区</a>
+    </li>
+  </ul>
+</nav>
+</template>
