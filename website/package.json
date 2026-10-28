@@ -20,7 +20,7 @@
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@vitejs/plugin-vue": "^6.0.10",
-    "autoprefixer": "^10.6.1",
+    "autoprefixer": "^10.6.2",
     "postcss-prefix-custom-properties": "^0.1.0",
     "prettier": "^3.9.10",
     "sass": "^1.106.1",
