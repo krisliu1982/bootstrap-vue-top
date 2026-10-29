@@ -124,13 +124,13 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
           <tr>
             <td>CSS</td>
             <td><a
-                href="[[config:cdn.css]]"><code>https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css</code></a>
+                href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"><code>https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css</code></a>
             </td>
           </tr>
           <tr>
             <td>JS bundle（包含 Floating UI 和 Vanilla Calendar Pro）</td>
             <td><a
-                href="[[config:cdn.js_bundle]]"><code>https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js</code></a>
+                href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"><code>https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js</code></a>
             </td>
           </tr>
         </tbody>
@@ -184,7 +184,7 @@ Install-Package bootstrap.sass # Sass version`, lang: 'shell'
         <tbody>
           <tr>
             <td><strong class="text-nowrap">分发文件</strong></td>
-            <td>即用型的编译并压缩后的 CSS 和 JavaScript 文件。不包含文档、源文件，也不包含 Floating UI 和 Vanilla Calendar Pro 等依赖。</td>
+            <td>可直接使用的已编译并压缩的 CSS 和 JavaScript 文件。不包含文档、源文件，也不包含 Floating UI 和 Vanilla Calendar Pro 等依赖项。</td>
             <td><a
                 href="https://github.com/twbs/bootstrap/releases/download/v6.0.0-alpha.1/bootstrap-6.0.0-alpha.1-dist.zip"
                 class="theme-accent">下载</a></td>
