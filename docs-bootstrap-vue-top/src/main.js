@@ -10,7 +10,6 @@ import './assets/docs.css'
 import CodeWrapper from '@/docs/code-wrapper.vue'
 import CodeTabs from '@/docs/code-tabs.vue'
 import Example from '@/docs/example.vue'
-import Callout from '@/docs/callout.vue'
 import LinksNav from '@/docs/links-nav.vue'
 
 const app = createApp(app_)
@@ -21,17 +20,8 @@ app.use(head)
 
 app.component('CodeWrapper', CodeWrapper)
 app.component('CodeTabs', CodeTabs)
-
 app.component('Example', Example)
-app.component('Callout', Callout)
 app.component('LinksNav', LinksNav)
 
 
-/*app.directive('docstoc', {
-  mounted: (el) => {
-    const tocEl = document.getElementById('docs-toc');
-    tocEl.innerHTML = el.innerHTML;
-    tocEl.scrollTo(0, 0);
-  }
-});*/
 app.mount('#app')

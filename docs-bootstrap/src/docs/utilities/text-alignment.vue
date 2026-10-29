@@ -1,0 +1,52 @@
+---
+title: Text alignment
+description: Easily realign text with text alignment utilities for start, end, and center alignment.
+toc: true
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+utility:
+  - text-align
+---
+
+import { getData } from '@libs/data'
+
+## Alignment
+
+Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.
+
+<Example code={`<p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="sm:text-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="md:text-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="lg:text-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="xl:text-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="2xl:text-end">End aligned text on viewports sized 2xl (extra extra large) or wider.</p>`} />
+
+<Callout>
+Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, it does make word-spacing more random and therefore harder to read.
+</Callout>
+
+## Responsive
+
+Responsive variations also exist for `text-align`.
+
+<ul>
+{getData('breakpoints').map((breakpoint) => {
+  return (
+    <Fragment>
+      <li><code>.{breakpoint.abbr}text-start</code></li>
+      <li><code>.{breakpoint.abbr}text-center</code></li>
+      <li><code>.{breakpoint.abbr}text-end</code></li>
+    </Fragment>
+  )
+})}
+</ul>
+
+## CSS
+
+### Sass utilities API
+
+Text alignment utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-text-align" file="scss/_utilities.scss" />

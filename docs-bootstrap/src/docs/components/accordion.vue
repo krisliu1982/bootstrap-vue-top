@@ -1,0 +1,402 @@
+---
+title: Accordion
+description: Build vertically collapsing accordions with native HTML `<details>` and `<summary>` elements.
+toc: true
+aliases:
+ - "/docs/[[config:docs_version]]/components/"
+ - "/docs/components/"
+ - "/components/"
+css_layer: components
+---
+
+The accordion uses native HTML `<details>` and `<summary>` elements, leveraging the `name` attribute to create exclusive accordions where only one item can be open at a time. This approach requires no JavaScript for core functionality and is fully accessible by default.
+
+## Example
+
+Click the accordions below to expand/collapse the accordion content. Each `<details>` element shares the same `name` attribute value, creating an exclusive accordion where opening one item automatically closes the others.
+
+To render an accordion that’s expanded by default, add the `open` attribute to the `<details>` element.
+
+<Example code={`<div class="accordion">
+    <details class="accordion-item" name="accordionExample" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default because the <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the show/hide logic without any JavaScript. You can put any HTML content within the <code>.accordion-body</code>.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExample">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this with other accordion items. When you open this item, any other open item in the same group will close automatically.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExample">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on your <code>&lt;details&gt;</code> elements.
+      </div>
+    </details>
+  </div>`} />
+
+The panel height animation needs [`interpolate-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size). Browsers without it open and close the panel at once. See [Transitions]([[docsref:/customize/transitions]]) to change the timing or to remove it.
+
+<Callout name="info-prefersreducedmotion" />
+
+## Variants
+
+Use the contextual `.theme-{color}` classes to apply a semantic theme color to open accordion items.
+
+<Example code={`<div class="accordion theme-primary">
+    <details class="accordion-item" name="accordionExampleTheme" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default because the <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the show/hide logic without any JavaScript. You can put any HTML content within the <code>.accordion-body</code>.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExampleTheme">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this with other accordion items. When you open this item, any other open item in the same group will close automatically.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExampleTheme">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on your <code>&lt;details&gt;</code> elements.
+      </div>
+    </details>
+  </div>`} customMarkup={`<div class="accordion theme-primary"><!--[!code highlight]-->
+    <!-- Accordion items here -->
+  </div>`} />
+
+## Small
+
+Add `.accordion-sm` to the `.accordion` for a more compact accordion with tighter padding, a smaller border radius, and a smaller font size.
+
+<Example code={`<div class="accordion accordion-sm">
+    <details class="accordion-item" name="accordionSmall" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> The <code>.accordion-sm</code> class tightens up the padding, border radius, and font size for a more compact presentation.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionSmall">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> Everything is driven by CSS custom properties, so you can fine-tune the compact sizing to taste.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionSmall">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> Combine <code>.accordion-sm</code> with other variants like <code>.accordion-flush</code> as needed.
+      </div>
+    </details>
+  </div>`} customMarkup={`<div class="accordion accordion-sm"><!--[!code highlight]-->
+    <!-- Accordion items here -->
+  </div>`} />
+
+## Flush
+
+Add `.accordion-flush` to remove some borders and rounded corners to render accordions edge-to-edge with their parent container.
+
+<Example class="bg-1" code={`<div class="accordion accordion-flush">
+    <details class="accordion-item" name="accordionFlushExample">
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+    </details>
+    <details class="accordion-item" name="accordionFlushExample">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+    </details>
+    <details class="accordion-item" name="accordionFlushExample">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </details>
+  </div>`} customMarkup={`<div class="accordion accordion-flush"><!--[!code highlight]-->
+    <!-- Accordion items here -->
+  </div>`} />
+
+## Gap
+
+Add `.accordion-gap` to put space between accordion items. Each item is a separate rounded card.
+
+The gap lives on the accordion, not the panel. The panel still animates only its `block-size`, so the open and close transition stays smooth.
+
+<Example code={`<div class="accordion accordion-gap">
+    <details class="accordion-item" name="accordionGapExample" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> The <code>.accordion-gap</code> class spaces items apart. Each item keeps a full border radius while the panel opens and closes.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionGapExample">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> The gap does not change during the transition, so adjacent items do not jump.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionGapExample">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> Override <code>--accordion-gap</code> to change the space between items.
+      </div>
+    </details>
+  </div>`} customMarkup={`<div class="accordion accordion-gap"><!--[!code highlight]-->
+    <!-- Accordion items here -->
+  </div>`} />
+
+<ScssDocs name="accordion-gap-css-vars" file="scss/_accordion.scss" />
+
+## Always open
+
+Omit the `name` attribute on each `<details>` element to allow multiple accordion items to be open simultaneously.
+
+<Example code={`<div class="accordion">
+    <details class="accordion-item" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> Without the <code>name</code> attribute, each accordion item operates independently. You can open multiple items at the same time.
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> Opening this won’t close the first item because there’s no <code>name</code> attribute linking them together.
+      </div>
+    </details>
+    <details class="accordion-item">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> Each item is completely independent—open or close them in any combination you like.
+      </div>
+    </details>
+  </div>`} customMarkup={`<div class="accordion">
+    <details class="accordion-item" open><!--[!code highlight]-->
+      <!-- No name attribute, so items open independently -->
+    </details>
+    <!-- More accordion items here -->
+  </div>`} />
+
+## Expand & Collapse all
+
+To enable expanding and collapsing of all accordion items at once, remove the `name` attribute from each `<details>` element using JavaScript. This allows multiple accordion items to be open simultaneously. Restore the `name` attribute when you collapse the items again if you want exclusive behavior back.
+
+<Example code={`<button type="button" class="btn-subtle btn-sm theme-secondary mb-3" id="btnAccordionToggleAll" aria-expanded="false">Expand all</button>
+
+  <div class="accordion accordion-sm" id="accordionExpandCollapse">
+    <details class="accordion-item" name="accordionExpandCollapse" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> Use Expand all to open every item, even when they share a <code>name</code>.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExpandCollapse">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> Collapse all closes every item and restores exclusive <code>name</code> grouping.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionExpandCollapse">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> If your accordion has no <code>name</code>, you only need to set <code>open</code> on each item.
+      </div>
+    </details>
+  </div>`} />
+
+We use the following JavaScript for this demo:
+
+<JsDocs name="accordion-expand-collapse" file="site/src/assets/partials/snippets.js" />
+
+## Nested
+
+Accordions can be nested inside each other by placing a full `.accordion` within an `.accordion-body`. Use unique `name` attribute values for each level so the parent and child accordions operate independently.
+
+<Example code={`<div class="accordion">
+    <details class="accordion-item" name="accordionNested" open>
+      <summary class="accordion-header">
+        Accordion Item #1
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It contains a nested accordion below.
+        <div class="accordion mt-3">
+          <details class="accordion-item" name="accordionNestedInner" open>
+            <summary class="accordion-header">
+              Nested Item #1
+              <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+              This is the body of the first nested accordion item.
+            </div>
+          </details>
+          <details class="accordion-item" name="accordionNestedInner">
+            <summary class="accordion-header">
+              Nested Item #2
+              <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+              This is the body of the second nested accordion item.
+            </div>
+          </details>
+          <details class="accordion-item" name="accordionNestedInner">
+            <summary class="accordion-header">
+              Nested Item #3
+              <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+            </summary>
+            <div class="accordion-body">
+              This is the body of the third nested accordion item.
+            </div>
+          </details>
+        </div>
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionNested">
+      <summary class="accordion-header">
+        Accordion Item #2
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It does not contain a nested accordion.
+      </div>
+    </details>
+    <details class="accordion-item" name="accordionNested">
+      <summary class="accordion-header">
+        Accordion Item #3
+        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+      </summary>
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It does not contain a nested accordion.
+      </div>
+    </details>
+  </div>`} />
+
+## Accessibility
+
+The native `<details>` and `<summary>` elements provide built-in accessibility:
+
+- Screen readers announce the expanded/collapsed state automatically
+- Keyboard navigation works out of the box (Enter/Space to toggle)
+- The `<summary>` element is focusable by default
+- No ARIA attributes are required as the semantics are built into the elements
+
+## CSS
+
+### Variables
+
+<CSSVariables component="Accordions" className="accordion" />
+
+<ScssDocs name="accordion-tokens" file="scss/_accordion.scss" />
+
+## Customize
+
+### Custom icons
+
+The accordion uses an inline SVG for the chevron icon. You can customize this by replacing the SVG within the `.accordion-header`:
+
+```html
+<summary class="accordion-header">
+  Accordion Title
+  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m2 5 6 6 6-6"/>
+  </svg>
+</summary>
+```
+
+The `.accordion-icon` class handles positioning and the rotation animation when the accordion opens.
+
+### Events
+
+You can listen for the native `toggle` event on `<details>` elements:
+
+```js
+const accordionItem = document.querySelector('.accordion-item')
+accordionItem.addEventListener('toggle', event => {
+  if (event.target.open) {
+    console.log('Accordion opened')
+  } else {
+    console.log('Accordion closed')
+  }
+})
+```
+
+### Programmatic control
+
+Toggle accordion items programmatically using the `open` property:
+
+```js
+const accordionItem = document.querySelector('.accordion-item')
+
+// Open the accordion
+accordionItem.open = true
+
+// Close the accordion
+accordionItem.open = false
+
+// Toggle the accordion
+accordionItem.open = !accordionItem.open
+```

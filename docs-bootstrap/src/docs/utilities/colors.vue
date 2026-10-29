@@ -1,0 +1,123 @@
+---
+title: Colors
+description: Convey meaning through `color` with a handful of color utility classes, including built-in color mode adaptivity and support for translucency.
+toc: true
+utility:
+  - fg
+  - fg-emphasis
+  - fg-opacity
+  - fg-contrast
+---
+
+import { getData } from '@libs/data'
+
+<Details name="warning-color-assistive-technologies" />
+
+## Colors
+
+Change the `color` using utilities built on our theme colors using `.fg-{color}` and `.fg-emphasis-{color}`. All these color utilities set the `color` property to a local CSS variable, `--bs-fg`, which has the value of the theme color. The root color tokens color values also use `light-dark()` to ensure sufficient contrast in both light and dark color modes.
+
+For example, `.fg-primary` sets the `--bs-fg` variable to `var(--bs-primary-fg)`:
+
+```css
+.fg-primary {
+  --bs-fg: var(--bs-primary-fg);
+  color: var(--bs-fg);
+}
+```
+
+This approach allows us to also easily support translucency with our `.fg-{opacity}` utilities as we can use `color-mix()` with the CSS variable to generate the appropriate color. See the [opacity section](#opacity) for more details.
+
+If you want to colorize links, you can use the [`.link-{color}` utilities]([[docsref:/utilities/link]]) which have `:hover` and `:focus` states.
+
+<Example code={[
+  ...getData('theme-colors').map((themeColor) => `<p class="fg-${themeColor.name}">.fg-${themeColor.name}</p>
+<p class="fg-emphasis-${themeColor.name}">.fg-emphasis-${themeColor.name}</p>`),
+  `
+<p class="fg-body">.fg-body</p>
+<p class="fg-1">.fg-1</p>
+<p class="fg-2">.fg-2</p>
+<p class="fg-3">.fg-3</p>
+<p class="fg-4">.fg-4</p>
+
+<p class="fg-black bg-white">.fg-black</p>
+<p class="fg-white bg-black">.fg-white</p>`
+]} />
+
+## Opacity
+
+Change the opacity of a text color by using any of the `.fg-<percentage>` utilities which use `color-mix()` to mix the text color with `transparent` thanks to the CSS variable approach mentioned above.
+
+<Example class="d-flex flex-column gap-2" code={`<div class="fg-primary">This is default primary text</div>
+<div class="fg-primary fg-90">This is 90% opacity primary text</div>
+<div class="fg-primary fg-80">This is 80% opacity primary text</div>
+<div class="fg-primary fg-70">This is 70% opacity primary text</div>
+<div class="fg-primary fg-60">This is 60% opacity primary text</div>
+<div class="fg-primary fg-50">This is 50% opacity primary text</div>
+<div class="fg-primary fg-40">This is 40% opacity primary text</div>
+<div class="fg-primary fg-30">This is 30% opacity primary text</div>
+<div class="fg-primary fg-20">This is 20% opacity primary text</div>
+<div class="fg-primary fg-10">This is 10% opacity primary text</div>`} />
+
+## Contrast colors
+
+Change the contrast color of a text or link with `.fg-contrast-{color}`. This will set the `--bs-fg` variable to the theme’s `contrast` key color.
+```css
+.fg-contrast-primary {
+  --bs-fg: var(--bs-white);
+  color: var(--bs-fg);
+}
+```
+
+<Example class="d-flex flex-column gap-2" code={`<p class="bg-primary fg-contrast-primary">.fg-contrast-primary</p>
+<p class="bg-accent fg-contrast-accent">.fg-contrast-accent</p>
+<p class="bg-success fg-contrast-success">.fg-contrast-success</p>
+<p class="bg-danger fg-contrast-danger">.fg-contrast-danger</p>
+<p class="bg-warning fg-contrast-warning">.fg-contrast-warning</p>
+<p class="bg-info fg-contrast-info">.fg-contrast-info</p>
+<p class="bg-inverse fg-contrast-inverse">.fg-contrast-inverse</p>
+<p class="bg-secondary fg-contrast-secondary">.fg-contrast-secondary</p>`} />
+
+These even mix with the opacity utilities.
+
+<Example class="d-flex flex-column gap-2" code={`<p class="bg-primary fg-contrast-primary fg-100">.fg-contrast-primary fg-100</p>
+<p class="bg-primary fg-contrast-primary fg-90">.fg-contrast-primary fg-90</p>
+<p class="bg-primary fg-contrast-primary fg-80">.fg-contrast-primary fg-80</p>
+<p class="bg-primary fg-contrast-primary fg-70">.fg-contrast-primary fg-70</p>
+<p class="bg-primary fg-contrast-primary fg-60">.fg-contrast-primary fg-60</p>
+<p class="bg-primary fg-contrast-primary fg-50">.fg-contrast-primary fg-50</p>
+<p class="bg-primary fg-contrast-primary fg-40">.fg-contrast-primary fg-40</p>
+<p class="bg-primary fg-contrast-primary fg-30">.fg-contrast-primary fg-30</p>
+<p class="bg-primary fg-contrast-primary fg-20">.fg-contrast-primary fg-20</p>
+<p class="bg-primary fg-contrast-primary fg-10">.fg-contrast-primary fg-10</p>`} />
+
+## Reset color
+
+Reset a text or link’s color with `.fg-reset`, so that it inherits the color from its parent.
+
+<Example code={`<p class="fg-danger">
+    Danger text with a <a href="#">normal link</a> and a <a href="#" class="fg-reset">reset link</a>.
+  </p>
+  `} />
+
+## Specificity
+
+Sometimes contextual classes cannot be applied due to the specificity of another selector. In some cases, a sufficient workaround is to wrap your element’s content in a `<div>` or more semantic element with the desired class.
+
+## CSS
+
+In addition to the following Sass functionality, consider reading about our included [CSS custom properties]([[docsref:/getting-started/css-variables]]) (aka CSS variables) for colors and more.
+
+### Sass variables
+
+Most `color` utilities are generated by our theme colors, reassigned from our generic color palette variables. Grayscale colors are also available, but only a subset are used to generate any utilities. See the [Color]([[docsref:/customize/color]]) documentation for our base color variables and map.
+
+### Sass maps
+
+Theme colors are then put into a Sass map so we can loop over them to generate our utilities, component modifiers, and more. See the [Theme]([[docsref:/customize/theme]]) documentation for the full `$theme-colors` Sass map.
+
+### Sass utilities API
+
+Color utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
+
+<ScssDocs name="utils-color" file="scss/_utilities.scss" />

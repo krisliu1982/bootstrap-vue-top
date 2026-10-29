@@ -1,0 +1,35 @@
+{
+  "name": "bootstrap-docs",
+  "version": "6.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0",
+    "@unhead/vue": "^3.4.3",
+    "bootstrap": "^6.0.0-alpha.1",
+    "lodash-es": "^4.18.1",
+    "nprogress-es": "^1.5.5",
+    "vanilla-calendar-pro": "^3.4.0",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "autoprefixer": "^10.6.2",
+    "postcss-prefix-custom-properties": "^0.1.0",
+    "prettier": "^3.9.10",
+    "sass": "^1.106.1",
+    "shiki": "^4.5.0",
+    "unplugin-icons": "^22.5.0",
+    "unplugin-vue-components": "^30.0.0",
+    "unplugin-vue-markdown": "^32.1.1",
+    "vite": "^8.3.5"
+  }
+}
