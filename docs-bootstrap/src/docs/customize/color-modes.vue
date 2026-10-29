@@ -1,206 +1,271 @@
----
-title: Color modes
-description: Bootstrap supports light and dark color modes. The page follows the visitor’s system preference by default, and you can force a mode globally or per-component with the `data-bs-theme` attribute.
-toc: true
----
+<template>
+<article class="docs-content prose">
+   <h1>颜色模式</h1>
+<p>Bootstrap 支持浅色和深色两种颜色模式。页面默认跟随访问者的系统偏好，你也可以使用 <code>data-bs-theme</code> 属性在全局或按组件强制指定模式。</p>
 
-import { getDocsRelativePath } from '@libs/path'
+<div class="callout">
+    <p><strong>亲自试一试！</strong> 从 <a href="https://github.com/twbs/examples/tree/main/color-modes">twbs/examples 仓库</a>下载使用 Stylelint 配合 Bootstrap 以及颜色模式的源代码和可运行示例。你也可以<a href="https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html">在 StackBlitz 中打开该示例</a>。</p>
+</div>
 
-<Callout>
-**Try it yourself!** Download the source code and working demo for using Bootstrap with Stylelint, and the color modes from the [twbs/examples repository](https://github.com/twbs/examples/tree/main/color-modes). You can also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html).
-</Callout>
+<h2 id="dark-mode">深色模式<a class="anchor-link" href="#dark-mode" aria-label="链接到 深色模式"></a></h2>
 
-## Dark mode
+<p><strong>Bootstrap 开箱即支持浅色和深色颜色模式。</strong> 它们构建于原生 CSS <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value/light-dark"><code>light-dark()</code></a> 函数和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/color-scheme"><code>color-scheme</code></a> 属性之上，因此我们的颜色令牌会自动解析为浅色或深色值——无需重新编译，也无需重复的样式表。</p>
 
-**Bootstrap supports light and dark color modes out of the box.** They’re built on the native CSS [`light-dark()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) function and the [`color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme) property, so our color tokens resolve to a light or dark value automatically—no recompiling and no duplicate stylesheets required.
+<p>这让你两全其美，且无需设置任何标志：</p>
 
-This gives you the best of both worlds, with no flag to set:
+<ul>
+    <li><strong>默认跟随系统偏好。</strong> 我们的 <code>:root</code> 声明为 <code>color-scheme: light dark</code>，因此页面会自动跟随访问者的操作系统偏好（<code>prefers-color-scheme</code>），就像媒体查询实现一样。</li>
+    <li><strong>使用数据属性覆盖。</strong> 在 <code>&lt;html&gt;</code> 元素上设置 <code>data-bs-theme="light"</code> 或 <code>data-bs-theme="dark"</code> 以强制整个页面使用某种模式，或在任何元素或组件上设置以将该模式限定到该子树。</li>
+</ul>
 
-- **System preference by default.** Our `:root` is declared with `color-scheme: light dark`, so the page automatically follows the visitor’s operating system preference (`prefers-color-scheme`), just like a media query implementation.
-- **Override with a data attribute.** Set `data-bs-theme="light"` or `data-bs-theme="dark"` on the `<html>` element to force a mode for the whole page, or on any element or component to scope a mode to just that subtree.
+<p>你不必在媒体查询和数据属性之间做选择——因为颜色模式由 <code>color-scheme</code> 驱动，系统偏好和任何 <code>data-bs-theme</code> 覆盖可以协同工作。</p>
 
-You don’t have to choose between media queries and a data attribute—because color modes are driven by `color-scheme`, the system preference and any `data-bs-theme` override work together.
+<h2 id="example">示例<a class="anchor-link" href="#example" aria-label="链接到 示例"></a></h2>
 
-## Example
+<p>例如，要更改菜单的颜色模式，请向父元素添加 <code>data-bs-theme="light"</code> 或 <code>data-bs-theme="dark"</code>。这样，无论全局颜色模式如何，这些菜单都会以指定的主题值显示。</p>
 
-For example, to change the color mode of a menu, add `data-bs-theme="light"` or `data-bs-theme="dark"` to the parent element. Now, no matter the global color mode, these menus will display with the specified theme value.
+<pre><code class="language-html">&lt;div data-bs-theme="light"&gt;
+  &lt;button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false"&gt;
+    Default menu
+  &lt;/button&gt;
+  &lt;div class="menu"&gt;
+    &lt;a class="menu-item active" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Another action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Something else here&lt;/a&gt;
+    &lt;hr class="menu-divider"&gt;
+    &lt;a class="menu-item" href="#"&gt;Separated link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<Example class="d-flex justify-content-between" code={`<div data-bs-theme="light">
-    <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false">
-      Default menu
-    </button>
-    <div class="menu">
-      <a class="menu-item active" href="#">Action</a>
-      <a class="menu-item" href="#">Action</a>
-      <a class="menu-item" href="#">Another action</a>
-      <a class="menu-item" href="#">Something else here</a>
-      <hr class="menu-divider">
-      <a class="menu-item" href="#">Separated link</a>
-    </div>
-  </div>
+&lt;div data-bs-theme="dark"&gt;
+  &lt;button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false"&gt;
+    Dark menu
+  &lt;/button&gt;
+  &lt;div class="menu"&gt;
+    &lt;a class="menu-item active" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Another action&lt;/a&gt;
+    &lt;a class="menu-item" href="#"&gt;Something else here&lt;/a&gt;
+    &lt;hr class="menu-divider"&gt;
+    &lt;a class="menu-item" href="#"&gt;Separated link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-  <div data-bs-theme="dark">
-    <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false">
-      Dark menu
-    </button>
-    <div class="menu">
-      <a class="menu-item active" href="#">Action</a>
-      <a class="menu-item" href="#">Action</a>
-      <a class="menu-item" href="#">Another action</a>
-      <a class="menu-item" href="#">Something else here</a>
-      <hr class="menu-divider">
-      <a class="menu-item" href="#">Separated link</a>
-    </div>
-  </div>`} />
+<h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="链接到 工作原理"></a></h2>
 
-## How it works
+<ul>
+    <li>我们的颜色令牌在 <code>:root</code> 中使用 CSS <code>light-dark()</code> 函数一次性定义，例如 <code>--bs-border-color: light-dark(var(--bs-gray-200), var(--bs-gray-700))</code>。每个令牌同时携带其浅色和深色值，浏览器根据元素使用的颜色方案解析出正确的值。</li>
+    <li><code>:root</code> 元素设置为 <code>color-scheme: light dark</code>，因此页面默认尊重访问者的系统偏好。自动深色模式无需其他配置。</li>
+    <li><code>data-bs-theme</code> 属性会覆盖其所设置元素及其后代的 <code>color-scheme</code>——<code>[data-bs-theme="dark"]</code> 设置 <code>color-scheme: dark</code>，<code>[data-bs-theme="light"]</code> 设置 <code>color-scheme: light</code>。这会强制该子树中每个 <code>light-dark()</code> 令牌解析为所选模式，这就是为什么你可以从 <code>&lt;html&gt;</code> 翻转整个页面，或仅重新着色单个组件（如上所示）。</li>
+    <li>对于无法用令牌表达的样式——自定义组件，或你自己的额外颜色模式——请使用 <code>color-mode()</code> Sass mixin 将规则限定到某个模式。参见<a href="#building-with-sass">使用 Sass 构建</a>。</li>
+</ul>
 
-- Our color tokens are defined once in `:root` using the CSS `light-dark()` function, e.g. `--bs-border-color: light-dark(var(--bs-gray-200), var(--bs-gray-700))`. Each token carries both its light and dark value, and the browser resolves the right one based on the element’s used color scheme.
+<h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="链接到 用法"></a></h2>
 
-- The `:root` element is set to `color-scheme: light dark`, so the page honors the visitor’s system preference by default. There’s nothing else to wire up for automatic dark mode.
+<h3 id="enable-dark-mode">启用深色模式<a class="anchor-link" href="#enable-dark-mode" aria-label="链接到 启用深色模式"></a></h3>
 
-- The `data-bs-theme` attribute overrides `color-scheme` for the element it’s set on and its descendants—`[data-bs-theme="dark"]` sets `color-scheme: dark` and `[data-bs-theme="light"]` sets `color-scheme: light`. That forces every `light-dark()` token in that subtree to resolve to the chosen mode, which is why you can flip the whole page from `<html>` or recolor just a single component (as shown above).
+<p>默认情况下 Bootstrap 已跟随访问者的系统偏好，因此你无需做任何事情即可获得自动深色模式。要<strong>强制</strong>深色模式（无论其系统设置如何），请向 <code>&lt;html&gt;</code> 元素添加 <code>data-bs-theme="dark"</code> 属性。这会将深色颜色模式应用于所有组件和元素，但具有自己 <code>data-bs-theme</code> 属性的元素除外。基于<a href="[[docsref:/guides/quickstart/]]">快速入门模板</a>：</p>
 
-- For styles that can’t be expressed as a token—custom components, or additional color modes of your own—use the `color-mode()` Sass mixin to scope rules to a mode. See [Building with Sass](#building-with-sass).
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en" data-bs-theme="dark"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+    &lt;link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script type="module" src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
-## Usage
+<p>Bootstrap 目前尚未内置颜色模式选择器，但如果你愿意，可以使用我们自己的文档中的选择器。<a href="#javascript">在 JavaScript 部分了解更多。</a></p>
 
-### Enable dark mode
+<h3 id="building-with-sass">使用 Sass 构建<a class="anchor-link" href="#building-with-sass" aria-label="链接到 使用 Sass 构建"></a></h3>
 
-By default Bootstrap already follows the visitor’s system preference, so you don’t need to do anything to get automatic dark mode. To **force** dark mode regardless of their system setting, add the `data-bs-theme="dark"` attribute to the `<html>` element. This applies the dark color mode to all components and elements, other than those with their own `data-bs-theme` attribute. Building on the [quick start template]([[docsref:/guides/quickstart/]]):
+<p>我们内置的浅色和深色令牌通过 <code>light-dark()</code> 自动切换，因此你不需要 Sass 即可获得自动深色模式。<code>color-mode()</code> mixin 用于额外情况：无法用令牌捕获的样式，或你自己的额外自定义颜色模式。</p>
 
-```html
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script type="module" src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"></script>
-  </body>
-</html>
-```
+<p>该 mixin 可以通过 <code>$color-mode-type</code> Sass 变量控制，以两种方式输出其规则：</p>
 
-Bootstrap does not yet ship with a built-in color mode picker, but you can use the one from our own documentation if you like. [Learn more in the JavaScript section.](#javascript)
+<ul>
+    <li><code>media-query</code>（默认）将你的样式包裹在 <code>@media (prefers-color-scheme: …)</code> 块中，因此它们跟随系统偏好。</li>
+    <li><code>data</code> 将你的样式限定到 <code>[data-bs-theme="…"]</code> 选择器，因此可以按页面或按组件切换。</li>
+</ul>
 
-### Building with Sass
+<p>例如，选择 <code>data</code> 属性方式会生成一个限定作用域的选择器：</p>
 
-Our built-in light and dark tokens auto-toggle via `light-dark()`, so you don’t need Sass to get automatic dark mode. The `color-mode()` mixin is for the extra cases: styles that can’t be captured by a token, or additional custom color modes of your own.
-
-The mixin can emit its rules two ways, controlled by the `$color-mode-type` Sass variable:
-
-- `media-query` (the default) wraps your styles in a `@media (prefers-color-scheme: …)` block, so they follow the system preference.
-- `data` scopes your styles to a `[data-bs-theme="…"]` selector, so they can be toggled per-page or per-component.
-
-For example, opting into the `data` attribute approach produces a scoped selector:
-
-```scss
-$color-mode-type: data;
+<pre><code class="language-scss">$color-mode-type: data;
 
 @include color-mode(dark) {
   .element {
     color: var(--bs-primary-fg-emphasis);
     background-color: var(--bs-primary-bg-subtle);
   }
-}
-```
+}</code></pre>
 
-Outputs to:
+<p>输出为：</p>
 
-```css
-[data-bs-theme=dark] .element {
+<pre><code class="language-css">[data-bs-theme=dark] .element {
   color: var(--bs-primary-fg-emphasis);
   background-color: var(--bs-primary-bg-subtle);
-}
-```
+}</code></pre>
 
-And with the default `media-query` type, the same mixin output is wrapped in a media query instead:
+<p>而使用默认的 <code>media-query</code> 类型时，同样的 mixin 输出会被包裹在媒体查询中：</p>
 
-```scss
-$color-mode-type: media-query;
+<pre><code class="language-scss">$color-mode-type: media-query;
 
 @include color-mode(dark) {
   .element {
     color: var(--bs-primary-fg-emphasis);
     background-color: var(--bs-primary-bg-subtle);
   }
-}
-```
+}</code></pre>
 
-Outputs to:
+<p>输出为：</p>
 
-```css
-@media (prefers-color-scheme: dark) {
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
   .element {
     color: var(--bs-primary-fg-emphasis);
     background-color: var(--bs-primary-bg-subtle);
   }
-}
-```
+}</code></pre>
 
-## Custom color modes
+<h2 id="custom-color-modes">自定义颜色模式<a class="anchor-link" href="#custom-color-modes" aria-label="链接到 自定义颜色模式"></a></h2>
 
-While the primary use case for color modes is light and dark mode, custom color modes are also possible. Create your own `data-bs-theme` selector with a custom value as the name of your color mode, then modify our Sass and CSS variables as needed. Bootstrap’s built-in dark mode uses `_root.scss` and `_theme.scss`, but you can follow the same pattern in your own stylesheet.
+<p>虽然颜色模式的主要用例是浅色和深色模式，但也可以实现自定义颜色模式。用自定义值作为颜色模式名称创建你自己的 <code>data-bs-theme</code> 选择器，然后根据需要修改我们的 Sass 和 CSS 变量。Bootstrap 内置的深色模式使用 <code>_root.scss</code> 和 <code>_theme.scss</code>，但你可以在自己的样式表中遵循相同的模式。</p>
 
-For example, you can create a “blue theme” with the selector `data-bs-theme="blue"`. In your custom Sass or CSS file, add the new selector and override any global or component CSS variables as needed. If you’re using Sass, you can also use Sass’s functions within your CSS variable overrides.
+<p>例如，你可以创建一个使用选择器 <code>data-bs-theme="blue"</code> 的“蓝色主题”。在你的自定义 Sass 或 CSS 文件中，添加新选择器并按需覆盖任何全局或组件 CSS 变量。如果你使用 Sass，还可以在 CSS 变量覆盖中使用 Sass 函数。</p>
 
-<ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" />
+<pre><code class="language-scss">// site/src/scss/_content.scss（节选）
+[data-bs-theme="blue"] {
+  --bs-body-color: var(--bs-white);
+  --bs-body-bg: var(--bs-blue-900);
+  --bs-border-color: var(--bs-blue-700);
+  // ...
+}</code></pre>
 
-<Example showMarkup={false} code={`<div class="p-5 fg-body bg-body rounded-3" data-bs-theme="blue">
-      <div class="h4">Example blue theme</div>
-      <p>Some paragraph text to show how the blue theme might look with written copy.</p>
+<pre><code class="language-html">&lt;div class="p-5 fg-body bg-body rounded-3" data-bs-theme="blue"&gt;
+  &lt;div class="h4"&gt;Example blue theme&lt;/div&gt;
+  &lt;p&gt;Some paragraph text to show how the blue theme might look with written copy.&lt;/p&gt;
 
-      <hr class="my-4"/>
+  &lt;hr class="my-4"/&gt;
 
-      <div>
-        <button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false">
-          Menu
-        </button>
-        <div class="menu">
-          <a class="menu-item active" href="#">Action</a>
-          <a class="menu-item" href="#">Action</a>
-          <a class="menu-item" href="#">Another action</a>
-          <a class="menu-item" href="#">Something else here</a>
-          <hr class="menu-divider">
-          <a class="menu-item" href="#">Separated link</a>
-        </div>
-      </div>
-  </div>`} />
+  &lt;div&gt;
+    &lt;button class="btn-solid theme-secondary" type="button" data-bs-toggle="menu" aria-expanded="false"&gt;
+      Menu
+    &lt;/button&gt;
+    &lt;div class="menu"&gt;
+      &lt;a class="menu-item active" href="#"&gt;Action&lt;/a&gt;
+      &lt;a class="menu-item" href="#"&gt;Action&lt;/a&gt;
+      &lt;a class="menu-item" href="#"&gt;Another action&lt;/a&gt;
+      &lt;a class="menu-item" href="#"&gt;Something else here&lt;/a&gt;
+      &lt;hr class="menu-divider"&gt;
+      &lt;a class="menu-item" href="#"&gt;Separated link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-```html
-<div data-bs-theme="blue">
+<pre><code class="language-html">&lt;div data-bs-theme="blue"&gt;
   ...
-</div>
-```
+&lt;/div&gt;</code></pre>
 
-## JavaScript
+<h2 id="javascript">JavaScript<a class="anchor-link" href="#javascript" aria-label="链接到 JavaScript"></a></h2>
 
-To allow visitors or users to toggle color modes, you’ll need to create a toggle element to control the `data-bs-theme` attribute on the root element, `<html>`. We’ve built a toggler in our documentation that initially defers to a user’s current system color mode, but provides an option to override that and pick a specific color mode.
+<p>要允许访问者或用户切换颜色模式，你需要创建一个切换元素来控制根元素 <code>&lt;html&gt;</code> 上的 <code>data-bs-theme</code> 属性。我们在文档中构建了一个切换器，它最初遵循用户当前的系统颜色模式，但提供了覆盖该设置并选择特定颜色模式的选项。</p>
 
-Here’s a look at the JavaScript that powers it. Feel free to inspect our own documentation navbar to see how it’s implemented using HTML and CSS from our own components. It is suggested to include the JavaScript at the top of your page to reduce potential screen flickering during reloading of your site. Note that if you decide to use media queries for your color modes, your JavaScript may need to be modified or removed if you prefer an implicit control.
+<p>以下是驱动它的 JavaScript。欢迎检查我们自己的文档导航栏，了解如何使用我们自己的组件中的 HTML 和 CSS 实现它。建议将 JavaScript 包含在页面顶部，以减少站点重新加载期间潜在的屏幕闪烁。请注意，如果你决定为颜色模式使用媒体查询，且你偏好隐式控制，则你的 JavaScript 可能需要修改或移除。</p>
 
-<Code containerClass="bd-example-snippet" lang="js" filePath={getDocsRelativePath('/static/docs/[version]/assets/js/color-modes.js')} />
+<pre><code class="language-js">// static/docs/[version]/assets/js/color-modes.js（节选）
+(() =&gt; {
+  'use strict'
 
-## CSS
+  const getStoredTheme = () =&gt; localStorage.getItem('theme')
+  const setStoredTheme = theme =&gt; localStorage.setItem('theme', theme)
 
-### Variables
+  const getPreferredTheme = () =&gt; {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
 
-Dozens of root-level CSS variables carry both a light and a dark value via `light-dark()`, so a single `:root` declaration covers both modes—no repeated dark mode overrides. Use these as a guideline when defining tokens for your own custom color modes.
+  const setTheme = theme =&gt; {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
 
-{/* <ScssDocs name="root-dark-mode-vars" file="scss/_root.scss" /> */}
+  setTheme(getPreferredTheme())
 
-### Sass variables
+  // ...（事件监听与切换逻辑）
+})()</code></pre>
 
-Our light and dark color tokens are generated from Sass in `_root.scss` and `_theme.scss`, where most are emitted as `light-dark()` values so they resolve automatically. Components that paint their icons via CSS masks (carousel controls, close buttons, and similar) inherit the current color and adapt to the active mode without per-mode overrides.
+<h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="链接到 CSS"></a></h2>
 
-{/* <ScssDocs name="sass-dark-mode-vars" file="scss/_config.scss" /> */}
+<h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="链接到 变量"></a></h3>
 
-### Sass mixins
+<p>数十个根级 CSS 变量通过 <code>light-dark()</code> 同时携带浅色和深色值，因此单个 <code>:root</code> 声明即可覆盖两种模式——无需重复的深色模式覆盖。在为你自己的自定义颜色模式定义令牌时，可将这些作为参考。</p>
 
-Styles for dark mode, and any custom color modes you create, can be scoped appropriately to the `data-bs-theme` attribute selector or media query with the customizable `color-mode()` mixin. See the [Sass usage section](#building-with-sass) for more details.
+<!-- 原文档使用 <ScssDocs name="root-dark-mode-vars" file="scss/_root.scss" /> 动态展示，此处占位说明。 -->
+<p><em>（根级深色模式变量：原文档通过 <code>&lt;ScssDocs&gt;</code> 组件展示 <code>scss/_root.scss</code> 中的相关变量，此处略去具体内容。）</em></p>
 
-<ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
+<h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="链接到 Sass 变量"></a></h3>
+
+<p>我们的浅色和深色颜色令牌在 <code>_root.scss</code> 和 <code>_theme.scss</code> 中由 Sass 生成，其中大部分以 <code>light-dark()</code> 值输出，因此会自动解析。通过 CSS 遮罩绘制图标的组件（轮播控件、关闭按钮等）继承当前颜色并适应激活模式，无需按模式覆盖。</p>
+
+<!-- 原文档使用 <ScssDocs name="sass-dark-mode-vars" file="scss/_config.scss" /> 动态展示，此处占位说明。 -->
+<p><em>（Sass 深色模式变量：原文档通过 <code>&lt;ScssDocs&gt;</code> 组件展示 <code>scss/_config.scss</code> 中的相关变量，此处略去具体内容。）</em></p>
+
+<h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="链接到 Sass mixin"></a></h3>
+
+<p>深色模式的样式以及你创建的任何自定义颜色模式，都可以使用可自定义的 <code>color-mode()</code> mixin 适当地限定到 <code>data-bs-theme</code> 属性选择器或媒体查询。更多详情请参阅<a href="#building-with-sass">Sass 用法部分</a>。</p>
+
+<pre><code class="language-scss">// scss/mixins/_color-mode.scss（节选）
+@mixin color-mode($mode: light, $root: false) {
+  @if $color-mode-type == "media-query" {
+    @if $root == true {
+      @media (prefers-color-scheme: $mode) {
+        :root {
+          @content;
+        }
+      }
+    } @else {
+      @media (prefers-color-scheme: $mode) {
+        @content;
+      }
+    }
+  } @else {
+    [data-bs-theme="#{$mode}"] {
+      @content;
+    }
+  }
+}</code></pre>
+  </article>
+  <nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#dark-mode">深色模式</a></li>
+        <li><a href="#example">示例</a></li>
+        <li><a href="#how-it-works">工作原理</a></li>
+        <li><a href="#usage">用法</a>
+            <ul>
+                <li><a href="#enable-dark-mode">启用深色模式</a></li>
+                <li><a href="#building-with-sass">使用 Sass 构建</a></li>
+            </ul>
+        </li>
+        <li><a href="#custom-color-modes">自定义颜色模式</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#css">CSS</a>
+            <ul>
+                <li><a href="#variables">变量</a></li>
+                <li><a href="#sass-variables">Sass 变量</a></li>
+                <li><a href="#sass-mixins">Sass mixin</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav> 
+  </template>

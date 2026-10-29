@@ -45,7 +45,7 @@
 
 <p>基于此，你可以通过 CSS 或 Sass 自定义 Bootstrap 6，得益于革新的颜色系统和主题配置，两者都比以往更加容易。</p>
 
-<h2 id="csps-and-embedded-svgs">CSP 与内嵌 SVG<a class="anchor-link" href="#csps-and-embedded-svgs" aria-label="链接到 CSP 与内嵌 SVG"></a></h2>
+<h2 id="csps-and-embedded-svgs">CSP与内嵌SVG<a class="anchor-link" href="#csps-and-embedded-svgs" aria-label="链接到 CSP与内嵌SVG"></a></h2>
 
 <p>若干 Bootstrap 组件在 CSS 中内嵌了 SVG，以便跨浏览器和设备一致、轻松地为组件设置样式。<strong>对于具有更严格 <abbr title="Content Security Policy">CSP</abbr> 配置的组织</strong>，我们记录了所有内嵌 SVG 的实例（全部通过 <code>background-image</code> 应用），以便你更彻底地审查自己的选项。</p>
 
@@ -63,7 +63,7 @@
     <ul>
         <li><a href="#overview">概述</a></li>
         <li><a href="#sass-vs-css">Sass 与 CSS</a></li>
-        <li><a href="#csps-and-embedded-svgs">CSP 与内嵌 SVG</a></li>
+        <li><a href="#csps-and-embedded-svgs">CSP与内嵌SVG</a></li>
     </ul>
 </nav>
 </template>

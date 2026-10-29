@@ -1,86 +1,102 @@
----
-title: Color
-description: Bootstrap is supported by an extensive color system that powers our revamped theme, components, and color modes. This enables more comprehensive customization and extension for any project.
-toc: true
----
+<template>
+<article class="docs-content prose">
+    <h1>颜色</h1>
+<p>Bootstrap 由一套丰富的颜色系统支撑，驱动我们革新的主题、组件和颜色模式。这为任何项目提供了更全面的自定义和扩展能力。</p>
 
-import { getData } from '@libs/data'
-import { getSequence } from '@libs/utils'
+<h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="链接到 颜色"></a></h2>
 
-export const additionalColors = [
-  'white',
-  'black',
-]
+<p>Bootstrap 新的颜色系统包含 16 种颜色、每种 13 个色调，这意味着使用 Bootstrap 时我们有 208 种颜色可供使用。</p>
 
-## Colors
+<p>所有 Bootstrap 颜色都可以作为 Sass 变量和 <code>scss/_config.scss</code> 文件中的 Sass 映射使用。为避免文件体积增加，我们不会为每个变量都创建文本或背景颜色类。相反，我们从中选取一个子集用于<a href="[[docsref:/customize/theme]]">主题调色板</a>。</p>
 
-There are 13 shades of 16 colors in Bootstrap’s new color system, meaning we have 208 colors to work with when using Bootstrap.
+<p>自定义颜色时请务必监控对比度。如下所示，我们为主要颜色各自添加了三个对比度值——一个针对色板当前颜色，一个针对白色，一个针对黑色。</p>
 
-All Bootstrap colors are available as Sass variables and a Sass map in `scss/_config.scss` file. To avoid increased file sizes, we don’t create text or background color classes for each of these variables. Instead, we choose a subset of these colors for a [theme palette]([[docsref:/customize/theme]]).
-
-Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors—one for the swatch’s current colors, one for against white, and one for against black.
-
+<!-- 原文档使用 JSX 动态渲染色板网格（getData('colors')、Swatch 组件等），
+     在静态 HTML 中无法执行，故此处以说明性占位呈现。 -->
 <div class="grid bd-colors-grid">
-  {getData('colors').map((color) => {
-     return (
-       <div class="d-contents grid-cols-fill">
-         <h5 class="d-block text-capitalize grid-cols-fill">{color.name.replace('-', ' ')}</h5>
-
-         {["025", "050", ...getSequence(100, 900, 100), 950, 975].map((value) => {
-           return (
-             <div class="mb-3 font-monospace small">
-               <Swatch bg={`${color.name}-${value}`} size="medium" />
-               <div class="text-center fg-3">{value}</div>
-             </div>
-           )
-         })}
-       </div>
-     )
-   })}
-
-   <div class="d-contents grid-cols-fill">
-    <h5 class="d-block text-capitalize grid-cols-fill">Additional</h5>
-    {additionalColors.map((color) => {
-      return (
-        <div class="mb-3 font-monospace small">
-          <Swatch bg={`${color}`} size="medium" />
-          <div class="text-center fg-3">{color}</div>
-        </div>
-      )
-    })}
-   </div>
+    <p><em>（色板网格：16 种颜色 × 13 个色调，另含 white、black 两个附加颜色。原文档通过 JavaScript 动态渲染，此处略去具体色块。）</em></p>
 </div>
 
-## How it works
+<h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="链接到 工作原理"></a></h2>
 
-Bootstrap generates its colors from a series of Sass variables and a Sass map called `$colors` in `scss/_colors.scss`. These are our base colors—blue, indigo, violet, etc—and are used to generate the tints and shades of each color you see above. You can customize these colors by adding or removing colors from the `$colors` map.
+<p>Bootstrap 从一系列 Sass 变量和 <code>scss/_colors.scss</code> 中名为 <code>$colors</code> 的 Sass 映射生成颜色。这些是我们的基础颜色——蓝色、靛蓝、紫罗兰等——用于生成你上方看到的每种颜色的浅色调和深色调。你可以通过向 <code>$colors</code> 映射添加或移除颜色来自定义这些颜色。</p>
 
-### Default colors
+<h3 id="default-colors">默认颜色<a class="anchor-link" href="#default-colors" aria-label="链接到 默认颜色"></a></h3>
 
-Below is our default list of colors. Colors are unique in Bootstrap in that they’re still Sass variables by default. In addition, they’re in `oklch()` format, which is a modern color space that is designed to be perceptually uniform.
+<p>以下是我们默认的颜色列表。Bootstrap 中颜色的独特之处在于它们默认仍然是 Sass 变量。此外，它们采用 <code>oklch()</code> 格式，这是一种旨在实现感知均匀性的现代颜色空间。</p>
 
-<ScssDocs name="colors-list" file="scss/_colors.scss" />
+<pre><code class="language-scss">// scss/_colors.scss（节选）
+$blue:    oklch(60% 0.24 240);
+$indigo:  oklch(55% 0.25 275);
+$violet:  oklch(58% 0.24 300);
+$purple:  oklch(55% 0.25 320);
+$pink:    oklch(65% 0.26 350);
+$red:     oklch(60% 0.26 25);
+$orange:  oklch(70% 0.22 50);
+$yellow:  oklch(85% 0.18 90);
+$green:   oklch(65% 0.22 150);
+$teal:    oklch(60% 0.18 190);
+$cyan:    oklch(70% 0.16 210);
+// ...</code></pre>
 
-The above colors are then turned into a Sass map called `$colors`.
+<p>上述颜色随后被转换为名为 <code>$colors</code> 的 Sass 映射。</p>
 
-<ScssDocs name="colors-map" file="scss/_colors.scss" />
+<pre><code class="language-scss">// scss/_colors.scss（节选）
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "violet": $violet,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  // ...
+) !default;</code></pre>
 
-### Color mixing
+<h3 id="color-mixing">颜色混合<a class="anchor-link" href="#color-mixing" aria-label="链接到 颜色混合"></a></h3>
 
-As mentioned already, we generate lighter (tints) and darker (shades) versions of each color using the `color-mix()` function. This allows us to quickly and easily generate a full scale of colors.
+<p>如前所述，我们使用 <code>color-mix()</code> 函数为每种颜色生成较浅（浅色调）和较深（深色调）的版本。这让我们能够快速轻松地生成完整的颜色刻度。</p>
 
-The tint and shade stops, the `color-mix()` color space, and the mix colors are all customizable.
+<p>浅色调和深色调的停靠点、<code>color-mix()</code> 颜色空间以及混合颜色都是可自定义的。</p>
 
-<ScssDocs name="color-mix-options" file="scss/_colors.scss" />
+<pre><code class="language-scss">// scss/_colors.scss（节选）
+$color-mix-space: lab !default;
+$color-tints: (
+  025: 94%,
+  050: 90%,
+  100: 80%,
+  // ...
+) !default;
+$color-shades: (
+  900: 64%,
+  950: 76%,
+  975: 88%,
+  // ...
+) !default;
+$color-mix-white: var(--bs-white) !default;
+$color-mix-black: var(--bs-black) !default;</code></pre>
 
-Those options and the `$colors` map are used to generate a `$color-tokens` map, which is output as CSS custom properties on `:root`.
+<p>这些选项和 <code>$colors</code> 映射用于生成 <code>$color-tokens</code> 映射，后者作为 CSS 自定义属性输出到 <code>:root</code> 上。</p>
 
-<ScssDocs name="color-tokens" file="scss/_colors.scss" />
+<pre><code class="language-scss">// scss/_colors.scss（节选）
+$color-tokens: () !default;
+@each $name, $value in $colors {
+  @each $stop, $mix in $color-tints {
+    $color-tokens: map-merge($color-tokens, ("--bs-#{$name}-#{$stop}": color-mix(in #{$color-mix-space}, #{$color-mix-white} #{$mix}, #{$value})));
+  }
+  $color-tokens: map-merge($color-tokens, ("--bs-#{$name}-500": $value));
+  @each $stop, $mix in $color-shades {
+    $color-tokens: map-merge($color-tokens, ("--bs-#{$name}-#{$stop}": color-mix(in #{$color-mix-space}, #{$color-mix-black} #{$mix}, #{$value})));
+  }
+}</code></pre>
 
-In practice, our CSS variables that get output from this looks like this:
+<p>在实践中，由此输出的 CSS 变量看起来如下：</p>
 
-```scss
-// Example generated custom properties from _colors.scss
+<pre><code class="language-scss">// 从 _colors.scss 生成的 CSS 自定义属性示例
 --bs-blue-025: color-mix(in lab, var(--bs-white) 94%, oklch(60% 0.24 240));
 --bs-blue-050: color-mix(in lab, var(--bs-white) 90%, oklch(60% 0.24 240));
 --bs-blue-100: color-mix(in lab, var(--bs-white) 80%, oklch(60% 0.24 240));
@@ -88,63 +104,61 @@ In practice, our CSS variables that get output from this looks like this:
 --bs-blue-500: oklch(60% 0.24 240);
 // ...
 --bs-blue-900: color-mix(in lab, var(--bs-black) 64%, oklch(60% 0.24 240));
---bs-blue-975: color-mix(in lab, var(--bs-black) 88%, oklch(60% 0.24 240));
-```
+--bs-blue-975: color-mix(in lab, var(--bs-black) 88%, oklch(60% 0.24 240));</code></pre>
 
-<Callout type="info">
-We use CSS variables `var(--bs-white)` and `var(--bs-black)` to prevent LightningCSS from converting the real-time mixing into static `lab()` values. Unfortunately, this feature cannot be disabled in LightningCSS at this time.
-</Callout>
+<div class="callout">
+    <p>我们使用 CSS 变量 <code>var(--bs-white)</code> 和 <code>var(--bs-black)</code> 来防止 LightningCSS 将实时混合转换为静态的 <code>lab()</code> 值。遗憾的是，目前无法在 LightningCSS 中禁用此特性。</p>
+</div>
 
-## Customizing
+<h2 id="customizing">自定义<a class="anchor-link" href="#customizing" aria-label="链接到 自定义"></a></h2>
 
-You can customize the colors by adding or removing colors from the `$colors` map. You can also customize the tint and shade stops, the `color-mix()` color space, and the mix colors. Say you want to add another blue-gray color, like slate.
+<p>你可以通过向 <code>$colors</code> 映射添加或移除颜色来自定义颜色。你也可以自定义浅色调和深色调的停靠点、<code>color-mix()</code> 颜色空间以及混合颜色。假设你想添加另一种蓝灰色，比如石板灰（slate）。</p>
 
-1. Create a new Sass variable for the new color, in `oklch()` format.
-2. Add the new color to the `$colors` map.
-3. Recompile source Sass to generate the new colors.
+<ol>
+    <li>为这个新颜色创建一个新的 Sass 变量，采用 <code>oklch()</code> 格式。</li>
+    <li>将新颜色添加到 <code>$colors</code> 映射。</li>
+    <li>重新编译源 Sass 以生成新颜色。</li>
+</ol>
 
-Here’s how that would look:
+<p>具体做法如下：</p>
 
-```scss
-$slate: oklch(55% 0.07 260);
+<pre><code class="language-scss">$slate: oklch(55% 0.07 260);
 
 @use "bootstrap" as * with (
   $colors: (
     "slate": $slate,
   ),
-);
-```
+);</code></pre>
 
-To remove a color, set the value to `null`.
+<p>要移除一种颜色，将其值设置为 <code>null</code>。</p>
 
-```scss
-@use "bootstrap" as * with (
+<pre><code class="language-scss">@use "bootstrap" as * with (
   $colors: (
     "pewter": null,
   ),
-);
-```
+);</code></pre>
 
-## From colors to theme
+<h2 id="from-colors-to-theme">从颜色到主题<a class="anchor-link" href="#from-colors-to-theme" aria-label="链接到 从颜色到主题"></a></h2>
 
-The `--bs-{color}-{stop}` tokens above are the raw palette. On their own they don’t style components—Bootstrap feeds a chosen subset of them into the **theme layer**, where they’re assigned semantic roles (background, foreground, border, and so on) and exposed as `.theme-*` classes that components read.
+<p>上述 <code>--bs-{color}-{stop}</code> 令牌是原始调色板。它们本身并不为组件设置样式——Bootstrap 将选定的子集送入<strong>主题层</strong>，在那里它们被赋予语义角色（背景、前景、边框等），并作为组件读取的 <code>.theme-*</code> 类暴露出来。</p>
 
-The full pipeline looks like this:
+<p>完整流水线如下：</p>
 
-1. **`$colors`** (`scss/_colors.scss`) defines the base hues and generates the `--bs-{color}-{stop}` tokens (for example `--bs-blue-500`).
-2. **`$theme-colors`** (`scss/_theme.scss`) maps semantic names (`primary`, `success`, `danger`, and so on) onto those tokens one role at a time (`base`, `fg`, `bg`, `bg-subtle`, `border`, `contrast`, …), most wrapped in `light-dark()` so they adapt to the color mode.
-3. Those roles are emitted as **`--bs-{name}-{role}`** tokens (for example `--bs-primary-bg`).
-4. The **`.theme-{name}`** classes remap them onto generic **`--bs-theme-{role}`** tokens (for example `.theme-primary` sets `--bs-theme-bg: var(--bs-primary-bg)`).
-5. **Components** read the `--bs-theme-*` tokens, so a single `.theme-primary` class restyles any theme-aware component.
+<ol>
+    <li><strong><code>$colors</code></strong>（<code>scss/_colors.scss</code>）定义基础色相并生成 <code>--bs-{color}-{stop}</code> 令牌（例如 <code>--bs-blue-500</code>）。</li>
+    <li><strong><code>$theme-colors</code></strong>（<code>scss/_theme.scss</code>）将语义名称（<code>primary</code>、<code>success</code>、<code>danger</code> 等）逐一映射到这些令牌上（<code>base</code>、<code>fg</code>、<code>bg</code>、<code>bg-subtle</code>、<code>border</code>、<code>contrast</code> 等），大部分包裹在 <code>light-dark()</code> 中以便适应颜色模式。</li>
+    <li>这些角色被输出为 <strong><code>--bs-{name}-{role}</code></strong> 令牌（例如 <code>--bs-primary-bg</code>）。</li>
+    <li><strong><code>.theme-{name}</code></strong> 类将它们重新映射到通用的 <strong><code>--bs-theme-{role}</code></strong> 令牌（例如 <code>.theme-primary</code> 设置 <code>--bs-theme-bg: var(--bs-primary-bg)</code>）。</li>
+    <li><strong>组件</strong>读取 <code>--bs-theme-*</code> 令牌，因此单个 <code>.theme-primary</code> 类就能为任何感知主题的组件重新设置样式。</li>
+</ol>
 
-The theme layer—semantic tokens, `.theme-*` classes, layer colors, and color modes—is documented in full on the [Theme page]([[docsref:/customize/theme]]). The rest of this page stays on the base color layer.
+<p>主题层——语义令牌、<code>.theme-*</code> 类、层颜色和颜色模式——在<a href="[[docsref:/customize/theme]]">主题页面</a>中有完整文档。本页其余部分仍停留在基础颜色层。</p>
 
-## Generating utilities
+<h2 id="generating-utilities">生成工具类<a class="anchor-link" href="#generating-utilities" aria-label="链接到 生成工具类"></a></h2>
 
-Bootstrap doesn’t ship `color` and `background-color` utilities for every palette token—that would add a lot of rarely used CSS. If you need a few specific shades as utilities, add a utility group through the [utilities API]([[docsref:/utilities/api]]). Configure the `$utilities` map when you import `utilities`, then load `utilities/api` to emit the CSS. Each value points at a generated color token (`--bs-{color}-{stop}`):
+<p>Bootstrap 不会为每个调色板令牌都发布 <code>color</code> 和 <code>background-color</code> 工具类——那会添加大量很少使用的 CSS。如果你需要几个特定色调作为工具类，请通过<a href="[[docsref:/utilities/api]]">工具类 API</a> 添加一个工具类组。在导入 <code>utilities</code> 时配置 <code>$utilities</code> 映射，然后加载 <code>utilities/api</code> 以输出 CSS。每个值指向一个生成的 color 令牌（<code>--bs-{color}-{stop}</code>）：</p>
 
-```scss
-@use "../node_modules/bootstrap/scss/utilities" with (
+<pre><code class="language-scss">@use "../node_modules/bootstrap/scss/utilities" with (
   $utilities: (
     "fg-palette": (
       property: color,
@@ -157,7 +171,24 @@ Bootstrap doesn’t ship `color` and `background-color` utilities for every pale
     ),
   )
 );
-@use "../node_modules/bootstrap/scss/utilities/api";
-```
+@use "../node_modules/bootstrap/scss/utilities/api";</code></pre>
 
-This adds `.fg-purple-300`, `.fg-purple-500`, and `.fg-purple-700`. Bootstrap merges your entry on top of the default `$utilities` map, so the built-in utilities are left untouched. List as many shades as you need, and set `property: background-color` with `class: bg` to generate backgrounds instead. (The color tokens themselves come from your main Bootstrap import; this snippet only emits the extra utility classes.)
+<p>这会添加 <code>.fg-purple-300</code>、<code>.fg-purple-500</code> 和 <code>.fg-purple-700</code>。Bootstrap 将你的条目合并到默认 <code>$utilities</code> 映射之上，因此内置工具类保持不变。按需列出任意数量的色调，并将 <code>property: background-color</code> 与 <code>class: bg</code> 一起设置以生成背景。（颜色令牌本身来自你的主 Bootstrap 导入；此片段仅输出额外的工具类。）</p>
+
+  </article>
+
+  <nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#colors">颜色</a></li>
+        <li><a href="#how-it-works">工作原理</a>
+            <ul>
+                <li><a href="#default-colors">默认颜色</a></li>
+                <li><a href="#color-mixing">颜色混合</a></li>
+            </ul>
+        </li>
+        <li><a href="#customizing">自定义</a></li>
+        <li><a href="#from-colors-to-theme">从颜色到主题</a></li>
+        <li><a href="#generating-utilities">生成工具类</a></li>
+    </ul>
+</nav>
+  </template>

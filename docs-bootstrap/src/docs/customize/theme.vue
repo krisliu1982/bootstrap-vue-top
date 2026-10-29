@@ -1,351 +1,400 @@
----
-title: Theme
-description: The Bootstrap theme is a set of semantically named tokens that are used to style our components, utilities, and more. The theme is configurable, responds to color modes, and can be consumed via Sass or CSS.
-toc: true
----
+<template>
+<article class="docs-content prose">
+    <h1>主题</h1>
+<p>Bootstrap 主题是一组以语义命名的令牌，用于为我们的组件、工具类等设置样式。主题可配置、响应颜色模式，并可通过 Sass 或 CSS 使用。</p>
 
-import { getData } from '@libs/data'
+<h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="链接到 工作原理"></a></h2>
 
-export const themeTokens = [
-  'base',
-  'fg',
-  'fg-emphasis',
-  'bg',
-  'bg-subtle',
-  'bg-muted',
-  'border',
-  'focus-ring',
-  'contrast'
-]
+<p>主题颜色在 <code>$theme-colors</code> Sass 映射中定义。该映射用于生成我们的主题颜色值。你可以在 <code>_theme.scss</code> 文件中找到这些值。我们在这里定义 Bootstrap 的设计令牌，涵盖浅色和深色两种颜色模式。</p>
 
-## How it works
+<p>主题颜色包括以下语义颜色：</p>
 
-Theme colors are defined in the `$theme-colors` Sass map. This map is used to generate our theme color values. You’ll find these values in the `_theme.scss` file. These are where we define our design tokens for Bootstrap, across both light and dark color modes.
+<table class="table">
+    <thead>
+        <tr><th>主题颜色</th><th>默认值</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>primary</code></td><td><code>var(--bs-blue-500)</code></td><td>主要操作的主品牌色</td></tr>
+        <tr><td><code>accent</code></td><td><code>var(--bs-indigo-500)</code></td><td>补充品牌色选项</td></tr>
+        <tr><td><code>success</code></td><td><code>var(--bs-green-500)</code></td><td>正向操作和成功状态</td></tr>
+        <tr><td><code>danger</code></td><td><code>var(--bs-red-500)</code></td><td>破坏性操作和错误状态</td></tr>
+        <tr><td><code>warning</code></td><td><code>var(--bs-yellow-500)</code></td><td>警告消息和状态</td></tr>
+        <tr><td><code>info</code></td><td><code>var(--bs-cyan-500)</code></td><td>信息消息和中性状态</td></tr>
+        <tr><td><code>inverse</code></td><td><code>var(--bs-gray-900)</code></td><td>通过反转前景和背景实现高对比度</td></tr>
+        <tr><td><code>secondary</code></td><td><code>var(--bs-gray-300)</code></td><td>较不突出的操作和状态</td></tr>
+    </tbody>
+</table>
 
-Theme colors include the following semantic colors:
+<p>在每个语义主题颜色内部，你会找到以下键，其中大部分是颜色模式自适应的：</p>
 
-<BsTable>
-| Theme color | Default value | Description |
-| --- | --- | --- |
-| `primary` | <Swatch size="inline" bg="blue-500" /> `var(--bs-blue-500)`| Main brand color for primary actions |
-| `accent` | <Swatch size="inline" bg="indigo-500" /> `var(--bs-indigo-500)` | Complementary brand color option |
-| `success` | <Swatch size="inline" bg="green-500" /> `var(--bs-green-500)` | Positive actions and successful states |
-| `danger` | <Swatch size="inline" bg="red-500" /> `var(--bs-red-500)` | Destructive actions and error states |
-| `warning` | <Swatch size="inline" bg="yellow-500" /> `var(--bs-yellow-500)` | Cautionary messages and states |
-| `info` | <Swatch size="inline" bg="cyan-500" /> `var(--bs-cyan-500)` | Informational messages and neutral states |
-| `inverse` | <Swatch size="inline" bg="gray-900" /> `var(--bs-gray-900)` | High contrast by inverting foreground and background |
-| `secondary` | <Swatch size="inline" bg="gray-300" /> `var(--bs-gray-300)` | Less prominent actions and states |
-</BsTable>
+<table class="table">
+    <thead>
+        <tr><th>主题令牌</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>base</code></td><td>语义颜色的默认颜色值</td></tr>
+        <tr><td><code>fg</code></td><td>可访问的文本颜色（针对 body，以及 <code>subtle</code> 和 <code>muted</code> 颜色令牌）</td></tr>
+        <tr><td><code>fg-emphasis</code></td><td>强调文本颜色，用于配合 <code>muted</code> 背景令牌</td></tr>
+        <tr><td><code>bg</code></td><td>用于高对比度的实色背景</td></tr>
+        <tr><td><code>bg-subtle</code></td><td>最低对比度的背景，通常与 <code>fg</code> 键配对用于文本颜色</td></tr>
+        <tr><td><code>bg-muted</code></td><td>较低对比度的背景，常用于禁用状态</td></tr>
+        <tr><td><code>border</code></td><td>边框和分隔线</td></tr>
+        <tr><td><code>focus-ring</code></td><td>用于可见焦点指示器和轮廓样式</td></tr>
+        <tr><td><code>contrast</code></td><td>需要在 <code>base</code> 和 <code>bg</code> 颜色上保持可读性的文本颜色</td></tr>
+    </tbody>
+</table>
 
-And within each semantic theme color, you’ll find the following keys, most of which are color-mode adaptive:
+<h2 id="token-playground">令牌演练场<a class="anchor-link" href="#token-playground" aria-label="链接到 令牌演练场"></a></h2>
 
-<BsTable>
-| Theme token | Description |
-| --- | --- |
-| `base` | The default color value for the semantic color |
-| `fg` | Accessible text color (against body, plus `subtle` and `muted` color tokens) |
-| `fg-emphasis` | Emphasized text color for use with `muted` background tokens |
-| `bg` | For solid colored backgrounds with high contrast |
-| `bg-subtle` | Lowest contrast backgrounds, usually paired with `fg` key for text color |
-| `bg-muted` | Lower contrast backgrounds, often used for disabled states |
-| `border` | Borders and dividers |
-| `focus-ring` | For visible focus indicators and outline styles |
-| `contrast` | Text color that needs to be readable on the `base` and `bg` colors |
-</BsTable>
+<p>每个组件读取相同的主题和布局令牌，因此一次更改会影响到整个组。更改下方的圆角、间距或主色，观察按钮、输入框、警告框和卡片一起更新。</p>
 
-## Token playground
-
-Every component reads the same theme and layout tokens, so one change reaches the whole group. Change the radius, the spacer, or the primary color below and watch the button, input, alert, and card update together.
-
-<TokenPlayground />
-
-The **Remint** control shows how the theme works today. Set it to **All** and each color restates every derived token—`bg-subtle`, `fg`, `border`, and the rest—so the whole preview follows. Set it to **Base** and only `--bs-primary-base` and `--bs-primary-bg` change. The solid button recolors, but the alert keeps the compiled blue pairing, because its `bg-subtle`, `fg`, and `border` tokens still point at the blue palette on `:root`.
-
-## Theme colors
-
-Every token is available as a CSS variable, and most are then consumed by our utilities and components. So for the `primary` color, you have the following colors:
-
-<div class="grid bd-theme-colors-grid small">
-  {getData('theme-colors').map((color) => {
-    return (
-      <div class="d-contents grid-cols-fill">
-        <h6 class="d-block text-capitalize grid-cols-fill">{color.title}</h6>
-        {themeTokens.map((token) => (
-          <div class="mb-3 font-monospace">
-            <Swatch bg={`${color.name}-${token}`} size="medium" />
-            <div class="text-center small fg-3">{token}</div>
-          </div>
-        ))}
-      </div>
-    )
-  })}
+<!-- 原文档使用 <TokenPlayground /> 动态交互组件，静态 HTML 无法执行，此处占位说明。 -->
+<div class="callout">
+    <p><em>（令牌演练场：原文档通过交互式 <code>&lt;TokenPlayground /&gt;</code> 组件呈现，可实时调整圆角、间距和主色并观察组件更新。此处略去具体交互。）</em></p>
 </div>
 
-### Pairings
+<p><strong>Remint</strong> 控件展示了主题当前的工作方式。将其设置为 <strong>All</strong> 时，每种颜色会重述每个派生令牌——<code>bg-subtle</code>、<code>fg</code>、<code>border</code> 等——因此整个预览都会跟随变化。将其设置为 <strong>Base</strong> 时，只有 <code>--bs-primary-base</code> 和 <code>--bs-primary-bg</code> 改变。实心按钮会重新着色，但警告框保持编译时的蓝色配对，因为其 <code>bg-subtle</code>、<code>fg</code> 和 <code>border</code> 令牌仍指向 <code>:root</code> 上的蓝色调色板。</p>
 
-Not all colors can be used for all purposes due to accessibility, color contrast, and general aesthetic considerations. Here are some recommended pairings.
+<h2 id="theme-colors">主题颜色<a class="anchor-link" href="#theme-colors" aria-label="链接到 主题颜色"></a></h2>
 
-- `contrast` work best with `bg`
-- `fg` works best with `subtle`
-- `fg-emphasis` works best with `muted`
-- `border` works best with `subtle`, but can be used with `muted`
+<p>每个令牌都可作为 CSS 变量使用，其中大部分随后被我们的工具类和组件消费。因此对于 <code>primary</code> 颜色，你有以下颜色：</p>
 
-<Example code={`<div class="theme-primary vstack gap-3">
-    <div style="color: var(--bs-theme-contrast); background: var(--bs-theme-bg);" class="p-3 rounded-5">
-      Example element with theme color
-    </div>
-    <div style="color: var(--bs-theme-fg-emphasis); background: var(--bs-theme-bg-muted); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-5">
-      Example element with theme color
-    </div>
-    <div style="color: var(--bs-theme-fg); background: var(--bs-theme-bg-subtle); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-5">
-      Example element with theme color
-    </div>
-  </div>`} />
+<!-- 原文档使用 getData('theme-colors').map(...) 和 <Swatch> 动态渲染色板网格，静态 HTML 无法执行，此处占位说明。 -->
+<div class="grid bd-theme-colors-grid small">
+    <p><em>（主题颜色色板网格：展示 8 种语义主题颜色 × 9 个主题令牌（base、fg、fg-emphasis、bg、bg-subtle、bg-muted、border、focus-ring、contrast）。原文档通过 JavaScript 动态渲染，此处略去具体色块。）</em></p>
+</div>
 
-## Layer colors
+<h3 id="pairings">配对<a class="anchor-link" href="#pairings" aria-label="链接到 配对"></a></h3>
 
-Color tokens that are used for foreground, background, and border colors are called **theme layer colors** in Bootstrap. These layer colors are configured outside the `$theme-colors` Sass map in their own respective Sass maps as they have more nuanced theming use cases.
+<p>由于可访问性、颜色对比度和一般美学考虑，并非所有颜色都可用于所有用途。以下是一些推荐的配对。</p>
 
-Tokens for these three themes are defined in the `$theme-fgs`, `$theme-bgs`, and `$theme-borders` Sass maps. These maps are used to generate color mode adaptive `color`, `background-color`, and `border-color` values that are then consumed by our utilities and components. You’ll find these values in the `_theme.scss` file.
+<ul>
+    <li><code>contrast</code> 最适合搭配 <code>bg</code></li>
+    <li><code>fg</code> 最适合搭配 <code>subtle</code></li>
+    <li><code>fg-emphasis</code> 最适合搭配 <code>muted</code></li>
+    <li><code>border</code> 最适合搭配 <code>subtle</code>，但也可以搭配 <code>muted</code></li>
+</ul>
 
-### Background
+<pre><code class="language-html">&lt;div class="theme-primary vstack gap-3"&gt;
+  &lt;div style="color: var(--bs-theme-contrast); background: var(--bs-theme-bg);" class="p-3 rounded-5"&gt;
+    Example element with theme color
+  &lt;/div&gt;
+  &lt;div style="color: var(--bs-theme-fg-emphasis); background: var(--bs-theme-bg-muted); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-5"&gt;
+    Example element with theme color
+  &lt;/div&gt;
+  &lt;div style="color: var(--bs-theme-fg); background: var(--bs-theme-bg-subtle); border: 1px solid var(--bs-theme-border);" class="p-3 rounded-5"&gt;
+    Example element with theme color
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-Theme backgrounds include several practical and semantic color options.
+<h2 id="layer-colors">层颜色<a class="anchor-link" href="#layer-colors" aria-label="链接到 层颜色"></a></h2>
 
-<BsTable>
-| Background | Default value | Description |
-| --- | --- | --- |
-| `body` | <Swatch bg="bg-body" size="inline" /> | Default background color |
-| `secondary` | <Swatch bg="bg-1" size="inline" /> | Lowest contrast background color |
-| `subtle` | <Swatch bg="bg-2" size="inline" /> | Lower contrast background color |
-| `muted` | <Swatch bg="bg-3" size="inline" /> | Medium contrast background color, typically used for disabled states |
-| `white` | <Swatch bg="bg-white" size="inline" /> | Pure white background color |
-| `black` | <Swatch bg="bg-black" size="inline" /> | Pure black background color |
-| `transparent` | <Swatch bg="bg-transparent" size="inline" /> | Transparent background color |
-| `inherit` |`inherit` | Inherited background color |
-</BsTable>
+<p>用于前景、背景和边框颜色的颜色令牌在 Bootstrap 中称为<strong>主题层颜色</strong>。这些层颜色在 <code>$theme-colors</code> Sass 映射之外各自的 Sass 映射中配置，因为它们有更细致的主题化用例。</p>
 
-### Foreground
+<p>这三种主题的令牌在 <code>$theme-fgs</code>、<code>$theme-bgs</code> 和 <code>$theme-borders</code> Sass 映射中定义。这些映射用于生成颜色模式自适应的 <code>color</code>、<code>background-color</code> 和 <code>border-color</code> 值，随后被我们的工具类和组件消费。你可以在 <code>_theme.scss</code> 文件中找到这些值。</p>
 
-Almost all those options are also available for foreground text colors.
+<h3 id="background">背景<a class="anchor-link" href="#background" aria-label="链接到 背景"></a></h3>
 
-<BsTable>
-| Foreground | Default value | Description |
-| --- | --- | --- |
-| `body` | <Swatch bg="fg-body" size="inline" /> | Default foreground color |
-| `secondary` | <Swatch bg="fg-1" size="inline" /> | Lowest contrast foreground color |
-| `subtle` | <Swatch bg="fg-2" size="inline" /> | Lower contrast foreground color |
-| `muted` | <Swatch bg="fg-3" size="inline" /> | Medium contrast foreground color |
-| `white` | <Swatch bg="fg-white" size="inline" /> | Pure white foreground color |
-| `black` | <Swatch bg="fg-black" size="inline" /> | Pure black foreground color |
-| `inherit` | `inherit` | Inherited foreground color |
-</BsTable>
+<p>主题背景包括几个实用和语义颜色选项。</p>
 
-### Border
+<table class="table">
+    <thead>
+        <tr><th>背景</th><th>默认值</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>body</code></td><td><code>bg-body</code></td><td>默认背景色</td></tr>
+        <tr><td><code>secondary</code></td><td><code>bg-1</code></td><td>最低对比度背景色</td></tr>
+        <tr><td><code>subtle</code></td><td><code>bg-2</code></td><td>较低对比度背景色</td></tr>
+        <tr><td><code>muted</code></td><td><code>bg-3</code></td><td>中等对比度背景色，通常用于禁用状态</td></tr>
+        <tr><td><code>white</code></td><td><code>bg-white</code></td><td>纯白背景色</td></tr>
+        <tr><td><code>black</code></td><td><code>bg-black</code></td><td>纯黑背景色</td></tr>
+        <tr><td><code>transparent</code></td><td><code>bg-transparent</code></td><td>透明背景色</td></tr>
+        <tr><td><code>inherit</code></td><td><code>inherit</code></td><td>继承的背景色</td></tr>
+    </tbody>
+</table>
 
-Border colors have similar levels, but different naming.
+<h3 id="foreground">前景<a class="anchor-link" href="#foreground" aria-label="链接到 前景"></a></h3>
 
-<BsTable>
-| Border | Default value | Description |
-| --- | --- | --- |
-| `bg` | <Swatch bg="border-bg" size="inline" /> | Border that matches the body background color |
-| `body` | <Swatch bg="border-body" size="inline" /> | Default border color for body content |
-| `muted` | <Swatch bg="border-muted" size="inline" /> | Muted, lower contrast border color, often used for disabled states |
-| `subtle` | <Swatch bg="border-subtle" size="inline" /> | Subtle, lowest contrast border color |
-| `emphasized` | <Swatch bg="border-emphasized" size="inline" /> | Emphasized, higher contrast border color |
-| `white` | <Swatch bg="border-white" size="inline" /> | Pure white border color |
-| `black` | <Swatch bg="border-black" size="inline" /> | Pure black border color |
-</BsTable>
+<p>几乎所有这些选项也适用于前景文本颜色。</p>
 
-### Examples
+<table class="table">
+    <thead>
+        <tr><th>前景</th><th>默认值</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>body</code></td><td><code>fg-body</code></td><td>默认前景色</td></tr>
+        <tr><td><code>secondary</code></td><td><code>fg-1</code></td><td>最低对比度前景色</td></tr>
+        <tr><td><code>subtle</code></td><td><code>fg-2</code></td><td>较低对比度前景色</td></tr>
+        <tr><td><code>muted</code></td><td><code>fg-3</code></td><td>中等对比度前景色</td></tr>
+        <tr><td><code>white</code></td><td><code>fg-white</code></td><td>纯白前景色</td></tr>
+        <tr><td><code>black</code></td><td><code>fg-black</code></td><td>纯黑前景色</td></tr>
+        <tr><td><code>inherit</code></td><td><code>inherit</code></td><td>继承的前景色</td></tr>
+    </tbody>
+</table>
 
-Not all colors can be used for all purposes due to accessibility, color contrast, and general aesthetic considerations. Here are some recommended pairings.
+<h3 id="border">边框<a class="anchor-link" href="#border" aria-label="链接到 边框"></a></h3>
 
-- `fg-body` works with all `bg` colors
-- `fg-1` works with `bg-body`, `bg-1`, `bg-2`, and `bg-3`
-- `fg-2` works with `bg-body`, `bg-1`, and `bg-2`
-- `fg-3` works with `bg-body`, `bg-1`
+<p>边框颜色有类似的层级，但命名不同。</p>
 
-Here are some examples showing them together. Note
+<table class="table">
+    <thead>
+        <tr><th>边框</th><th>默认值</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>bg</code></td><td><code>border-bg</code></td><td>与 body 背景色匹配的边框</td></tr>
+        <tr><td><code>body</code></td><td><code>border-body</code></td><td>body 内容的默认边框色</td></tr>
+        <tr><td><code>muted</code></td><td><code>border-muted</code></td><td>柔和、较低对比度的边框色，常用于禁用状态</td></tr>
+        <tr><td><code>subtle</code></td><td><code>border-subtle</code></td><td>微妙、最低对比度的边框色</td></tr>
+        <tr><td><code>emphasized</code></td><td><code>border-emphasized</code></td><td>强调、较高对比度的边框色</td></tr>
+        <tr><td><code>white</code></td><td><code>border-white</code></td><td>纯白边框色</td></tr>
+        <tr><td><code>black</code></td><td><code>border-black</code></td><td>纯黑边框色</td></tr>
+    </tbody>
+</table>
 
-<Example code={`<div class="vstack gap-3">
-    <div class="p-3 rounded-5 bg-body fg-body border border-subtle">
-      fg-body on bg-body with border-subtle
-    </div>
-    <div class="p-3 rounded-5 bg-body fg-body border">
-      fg-body on bg-body
-    </div>
-    <div class="p-3 rounded-5 bg-1 fg-3 border">
-      fg-3 on bg-1
-    </div>
-    <div class="p-3 rounded-5 bg-2 fg-2 border">
-      fg-2 on bg-2
-    </div>
-    <div class="p-3 rounded-5 bg-3 fg-1 border">
-      fg-1 on bg-3
-    </div>
-  </div>`} />
+<h3 id="examples">示例<a class="anchor-link" href="#examples" aria-label="链接到 示例"></a></h3>
 
-## Color modes
+<p>由于可访问性、颜色对比度和一般美学考虑，并非所有颜色都可用于所有用途。以下是一些推荐的配对。</p>
 
-Bootstrap’s theme and layer colors are **color mode adaptive** thanks to our use of CSS’s `light-dark()` function. This lets us specify two colors at once for a component, one for light and one for dark mode. These colors are switched by using the `data-bs-theme` attribute to set the `color-scheme` property to `light` or `dark`.
+<ul>
+    <li><code>fg-body</code> 适用于所有 <code>bg</code> 颜色</li>
+    <li><code>fg-1</code> 适用于 <code>bg-body</code>、<code>bg-1</code>、<code>bg-2</code> 和 <code>bg-3</code></li>
+    <li><code>fg-2</code> 适用于 <code>bg-body</code>、<code>bg-1</code> 和 <code>bg-2</code></li>
+    <li><code>fg-3</code> 适用于 <code>bg-body</code>、<code>bg-1</code></li>
+</ul>
 
-By default, `color-scheme: light dark` is set on the `:root` element, meaning Bootstrap respects the user’s system preference. You can override this at any level by setting `data-bs-theme="light"` or `data-bs-theme="dark"` on any element to force a specific mode for that subtree. Depending on the element, you may need to include `.bg-body`, `.fg-body`, or similar utilities to ensure correct color application.
+<p>以下是一些展示它们组合在一起的示例。</p>
 
-Here’s the same set of components rendered in both light and dark modes side by side. Note the use of `.bg-body` for the backgrounds. Without it, the light mode demo wouldn’t have a white background—just light mode components on a dark background.
+<pre><code class="language-html">&lt;div class="vstack gap-3"&gt;
+  &lt;div class="p-3 rounded-5 bg-body fg-body border border-subtle"&gt;
+    fg-body on bg-body with border-subtle
+  &lt;/div&gt;
+  &lt;div class="p-3 rounded-5 bg-body fg-body border"&gt;
+    fg-body on bg-body
+  &lt;/div&gt;
+  &lt;div class="p-3 rounded-5 bg-1 fg-3 border"&gt;
+    fg-3 on bg-1
+  &lt;/div&gt;
+  &lt;div class="p-3 rounded-5 bg-2 fg-2 border"&gt;
+    fg-2 on bg-2
+  &lt;/div&gt;
+  &lt;div class="p-3 rounded-5 bg-3 fg-1 border"&gt;
+    fg-1 on bg-3
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-<Example class="p-0 overflow-hidden" code={`<div class="row g-0">
-    <div class="md:col-6 vstack gap-3 p-4 bg-body fg-body" data-bs-theme="light"><!-- [!code highlight] -->
-      <h6 class="fw-semibold">Light mode</h6>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-      </div>
-      <div class="alert theme-primary"><p>This is a primary alert.</p></div>
-      <input type="text" class="form-control" placeholder="Form control">
-      <div class="form-field">
-        <input type="checkbox" id="checkLabel" class="check" />
-        <label for="checkLabel">Example new checkbox</label>
-      </div>
-      <div class="vstack gap-2">
-        <button type="button" class="btn-solid theme-primary">Primary</button>
-        <button type="button" class="btn-subtle theme-secondary">Secondary</button>
-      </div>
-    </div>
-    <div class="md:col-6 vstack gap-3 p-4 bg-body fg-body" data-bs-theme="dark"><!-- [!code highlight] -->
-      <h6 class="fw-semibold">Dark mode</h6>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-      </div>
-      <div class="alert theme-primary"><p>This is a primary alert.</p></div>
-      <input type="text" class="form-control" placeholder="Form control">
-      <div class="form-field">
-        <input type="checkbox" id="checkDarkLabel" class="check" />
-        <label for="checkDarkLabel">Example new checkbox</label>
-      </div>
-      <div class="vstack gap-2">
-        <button type="button" class="btn-solid theme-primary">Primary</button>
-        <button type="button" class="btn-subtle theme-secondary">Secondary</button>
-      </div>
-    </div>
-  </div>`} />
+<h2 id="color-modes">颜色模式<a class="anchor-link" href="#color-modes" aria-label="链接到 颜色模式"></a></h2>
 
-Under the hood, token values like `--bs-primary-fg` resolve differently depending on the active color mode. For example, in our `_theme.scss`, the primary text color is defined as:
+<p>得益于我们使用 CSS 的 <code>light-dark()</code> 函数，Bootstrap 的主题和层颜色是<strong>颜色模式自适应的</strong>。这让我们可以为一个组件同时指定两种颜色，一种用于浅色模式，一种用于深色模式。通过使用 <code>data-bs-theme</code> 属性将 <code>color-scheme</code> 属性设置为 <code>light</code> 或 <code>dark</code> 来切换这些颜色。</p>
 
-```scss
-"fg": light-dark(var(--blue-600), var(--blue-400)),
-```
+<p>默认情况下，<code>color-scheme: light dark</code> 设置在 <code>:root</code> 元素上，意味着 Bootstrap 尊重用户的系统偏好。你可以在任何层级上通过在任何元素上设置 <code>data-bs-theme="light"</code> 或 <code>data-bs-theme="dark"</code> 来强制该子树使用特定模式。根据元素的不同，你可能需要包含 <code>.bg-body</code>、<code>.fg-body</code> 或类似工具类以确保颜色正确应用。</p>
 
-When `data-bs-theme="light"` is active (or the user’s system preference is light), this resolves to `var(--blue-600)`. In dark mode, it resolves to `var(--blue-400)`—a lighter shade that maintains readability against dark backgrounds. The same pattern applies to backgrounds, borders, and all other adaptive tokens.
+<p>以下是同一组组件在浅色和深色模式下并排渲染的效果。注意背景使用了 <code>.bg-body</code>。没有它，浅色模式演示将没有白色背景——只是深色背景上的浅色模式组件。</p>
 
-For more details on toggling color modes globally, building custom modes, and JavaScript toggler examples, see the [color modes documentation]([[docsref:/customize/color-modes/]]).
+<pre><code class="language-html">&lt;div class="row g-0"&gt;
+  &lt;div class="md:col-6 vstack gap-3 p-4 bg-body fg-body" data-bs-theme="light"&gt;
+    &lt;h6 class="fw-semibold"&gt;Light mode&lt;/h6&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="alert theme-primary"&gt;&lt;p&gt;This is a primary alert.&lt;/p&gt;&lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Form control"&gt;
+    &lt;div class="form-field"&gt;
+      &lt;input type="checkbox" id="checkLabel" class="check" /&gt;
+      &lt;label for="checkLabel"&gt;Example new checkbox&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="vstack gap-2"&gt;
+      &lt;button type="button" class="btn-solid theme-primary"&gt;Primary&lt;/button&gt;
+      &lt;button type="button" class="btn-subtle theme-secondary"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="md:col-6 vstack gap-3 p-4 bg-body fg-body" data-bs-theme="dark"&gt;
+    &lt;h6 class="fw-semibold"&gt;Dark mode&lt;/h6&gt;
+    &lt;div class="card"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="alert theme-primary"&gt;&lt;p&gt;This is a primary alert.&lt;/p&gt;&lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Form control"&gt;
+    &lt;div class="form-field"&gt;
+      &lt;input type="checkbox" id="checkDarkLabel" class="check" /&gt;
+      &lt;label for="checkDarkLabel"&gt;Example new checkbox&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="vstack gap-2"&gt;
+      &lt;button type="button" class="btn-solid theme-primary"&gt;Primary&lt;/button&gt;
+      &lt;button type="button" class="btn-subtle theme-secondary"&gt;Secondary&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-## Theme utility classes
+<p>在底层，像 <code>--bs-primary-fg</code> 这样的令牌值会根据激活的颜色模式以不同方式解析。例如，在我们的 <code>_theme.scss</code> 中，主文本颜色定义为：</p>
 
-We generate theme utility classes from the `$theme-colors` Sass map that make all theme color tokens available as CSS variables. We use these in our component variants to allow for quick theming with a single, global class. This requires components to support theme colors, and not every component does.
+<pre><code class="language-scss">"fg": light-dark(var(--blue-600), var(--blue-400)),</code></pre>
 
-With theme utilities, you can apply a theme color to an element with a single class.
+<p>当 <code>data-bs-theme="light"</code> 处于激活状态（或用户系统偏好为浅色）时，它解析为 <code>var(--blue-600)</code>。在深色模式下，它解析为 <code>var(--blue-400)</code>——一种在深色背景上保持可读性的较浅色调。相同的模式适用于背景、边框和所有其他自适应令牌。</p>
 
-<Example class="vstack gap-3" code={`<div class="alert theme-primary"><p>Primary alert</p></div>
-  <div>
-    <button type="button" class="btn-solid theme-primary">Primary button</button>
-    <button type="button" class="btn-outline theme-primary">Primary outline button</button>
-    <button type="button" class="btn-subtle theme-primary">Primary subtle button</button>
-    <button type="button" class="btn-text theme-primary">Primary text button</button>
-  </div>
-  <div>
-    <span class="badge theme-primary">Primary badge</span>
-    <span class="badge badge-subtle theme-primary">Primary subtle badge</span>
-  </div>`} />
+<p>关于全局切换颜色模式、构建自定义模式以及 JavaScript 切换器示例的更多详细信息，请参阅<a href="[[docsref:/customize/color-modes/]]">颜色模式文档</a>。</p>
 
-And you can apply a theme color utility to a container and any theme-aware children will inherit the theme color.
+<h2 id="theme-utility-classes">主题工具类<a class="anchor-link" href="#theme-utility-classes" aria-label="链接到 主题工具类"></a></h2>
 
-<Example code={`<div class="vstack gap-3 theme-primary"><!-- [!code highlight] -->
-    <div class="alert"><p>Primary alert</p></div>
-    <div>
-      <button type="button" class="btn-solid">Primary button</button>
-      <button type="button" class="btn-outline">Primary outline button</button>
-      <button type="button" class="btn-subtle">Primary subtle button</button>
-      <button type="button" class="btn-text">Primary text button</button>
-    </div>
-    <div>
-      <span class="badge">Primary badge</span>
-      <span class="badge badge-subtle">Primary subtle badge</span>
-    </div>
-  </div>`} />
+<p>我们从 <code>$theme-colors</code> Sass 映射生成主题工具类，使所有主题颜色令牌都可作为 CSS 变量使用。我们在组件变体中使用这些工具类，以便通过单个全局类快速实现主题化。这要求组件支持主题颜色，但并非每个组件都支持。</p>
 
-This also means you can override a container’s theme color with another theme color on specific components.
+<p>借助主题工具类，你可以用单个类为元素应用主题颜色。</p>
 
-<Example code={`<div class="vstack gap-3 theme-primary">
-    <div class="alert"><p>Primary alert</p></div>
-    <div>
-      <button type="button" class="btn-solid theme-inverse">Inverse button</button><!-- [!code highlight] -->
-      <button type="button" class="btn-outline">Primary outline button</button>
-      <button type="button" class="btn-subtle theme-danger">Danger subtle button</button><!-- [!code highlight] -->
-      <button type="button" class="btn-text">Primary text button</button>
-    </div>
-    <div>
-      <span class="badge theme-success">Success badge</span><!-- [!code highlight] -->
-      <span class="badge badge-subtle">Primary subtle badge</span>
-    </div>
-  </div>`} />
+<pre><code class="language-html">&lt;div class="alert theme-primary"&gt;&lt;p&gt;Primary alert&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;
+  &lt;button type="button" class="btn-solid theme-primary"&gt;Primary button&lt;/button&gt;
+  &lt;button type="button" class="btn-outline theme-primary"&gt;Primary outline button&lt;/button&gt;
+  &lt;button type="button" class="btn-subtle theme-primary"&gt;Primary subtle button&lt;/button&gt;
+  &lt;button type="button" class="btn-text theme-primary"&gt;Primary text button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span class="badge theme-primary"&gt;Primary badge&lt;/span&gt;
+  &lt;span class="badge badge-subtle theme-primary"&gt;Primary subtle badge&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 
-### Reset
+<p>你还可以将主题颜色工具类应用于容器，任何感知主题的子元素都会继承该主题颜色。</p>
 
-Use `.theme-reset` on a nested container to stop inheriting those tokens. Theme-aware children then use their component defaults again.
+<pre><code class="language-html">&lt;div class="vstack gap-3 theme-primary"&gt;
+  &lt;div class="alert"&gt;&lt;p&gt;Primary alert&lt;/p&gt;&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button type="button" class="btn-solid"&gt;Primary button&lt;/button&gt;
+    &lt;button type="button" class="btn-outline"&gt;Primary outline button&lt;/button&gt;
+    &lt;button type="button" class="btn-subtle"&gt;Primary subtle button&lt;/button&gt;
+    &lt;button type="button" class="btn-text"&gt;Primary text button&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;span class="badge"&gt;Primary badge&lt;/span&gt;
+    &lt;span class="badge badge-subtle"&gt;Primary subtle badge&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-<Example code={`<div class="vstack gap-3 theme-primary"><!-- [!code highlight] -->
-    <div class="alert"><p>Primary alert</p></div>
-    <div>
-      <button type="button" class="btn-solid">Primary button</button>
-      <span class="badge">Primary badge</span>
-    </div>
+<p>这也意味着你可以在特定组件上用另一个主题颜色覆盖容器的主题颜色。</p>
 
-    <div class="vstack gap-3 theme-reset"><!-- [!code highlight] -->
-      <div class="alert"><p>Default alert</p></div>
-      <div>
-        <button type="button" class="btn-solid">Default button</button>
-        <span class="badge">Default badge</span>
-      </div>
-    </div>
-  </div>`} />
+<pre><code class="language-html">&lt;div class="vstack gap-3 theme-primary"&gt;
+  &lt;div class="alert"&gt;&lt;p&gt;Primary alert&lt;/p&gt;&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button type="button" class="btn-solid theme-inverse"&gt;Inverse button&lt;/button&gt;
+    &lt;button type="button" class="btn-outline"&gt;Primary outline button&lt;/button&gt;
+    &lt;button type="button" class="btn-subtle theme-danger"&gt;Danger subtle button&lt;/button&gt;
+    &lt;button type="button" class="btn-text"&gt;Primary text button&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;span class="badge theme-success"&gt;Success badge&lt;/span&gt;
+    &lt;span class="badge badge-subtle"&gt;Primary subtle badge&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-The class sets each `--theme-*` custom property to `initial`. That makes the property invalid, so `var(--theme-bg, fallback)` uses the fallback. Do not use `unset` here—`unset` inherits from the parent again.
+<h3 id="reset">重置<a class="anchor-link" href="#reset" aria-label="链接到 重置"></a></h3>
 
-## Theme Sass map
+<p>在嵌套容器上使用 <code>.theme-reset</code> 以停止继承这些令牌。感知主题的子元素随后会再次使用其组件默认值。</p>
 
-We use a large, nested Sass map to generate our theme color values.
+<pre><code class="language-html">&lt;div class="vstack gap-3 theme-primary"&gt;
+  &lt;div class="alert"&gt;&lt;p&gt;Primary alert&lt;/p&gt;&lt;/div&gt;
+  &lt;div&gt;
+    &lt;button type="button" class="btn-solid"&gt;Primary button&lt;/button&gt;
+    &lt;span class="badge"&gt;Primary badge&lt;/span&gt;
+  &lt;/div&gt;
 
-<ScssDocs name="theme-colors" file="scss/_theme.scss" />
+  &lt;div class="vstack gap-3 theme-reset"&gt;
+    &lt;div class="alert"&gt;&lt;p&gt;Default alert&lt;/p&gt;&lt;/div&gt;
+    &lt;div&gt;
+      &lt;button type="button" class="btn-solid"&gt;Default button&lt;/button&gt;
+      &lt;span class="badge"&gt;Default badge&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
-### Customize the map
+<p>该类将每个 <code>--theme-*</code> 自定义属性设置为 <code>initial</code>。这会使属性无效，因此 <code>var(--theme-bg, fallback)</code> 会使用回退值。不要在这里使用 <code>unset</code>——<code>unset</code> 会再次从父级继承。</p>
 
-Configure `$theme-colors` through the main entrypoint with `@use ... with ()`. Our `defaults()` function merges your map on top of the built-ins, so the standard themes stay intact and you add only what you need. The layer maps (`$theme-bgs`, `$theme-fgs`, and `$theme-borders`) work the same way.
+<h2 id="theme-sass-map">主题 Sass 映射<a class="anchor-link" href="#theme-sass-map" aria-label="链接到 主题 Sass 映射"></a></h2>
 
-```scss
-@use "../node_modules/bootstrap/scss/bootstrap" with (
+<p>我们使用一个大型嵌套 Sass 映射来生成主题颜色值。</p>
+
+<pre><code class="language-scss">// scss/_theme.scss（节选）
+$theme-colors: (
+  "primary": (
+    "base": var(--bs-blue-500),
+    "fg": light-dark(var(--blue-600), var(--blue-400)),
+    "fg-emphasis": light-dark(var(--blue-800), var(--blue-300)),
+    "bg": var(--bs-blue-500),
+    "bg-subtle": light-dark(var(--blue-100), var(--blue-900)),
+    "bg-muted": light-dark(var(--blue-200), var(--blue-800)),
+    "border": light-dark(var(--blue-300), var(--blue-600)),
+    "focus-ring": ...,
+    "contrast": var(--bs-white),
+  ),
+  // ...
+) !default;</code></pre>
+
+<h3 id="customize-the-map">自定义映射<a class="anchor-link" href="#customize-the-map" aria-label="链接到 自定义映射"></a></h3>
+
+<p>通过主入口点使用 <code>@use ... with ()</code> 配置 <code>$theme-colors</code>。我们的 <code>defaults()</code> 函数将你的映射合并到内置映射之上，因此标准主题保持不变，你只需添加所需内容。层映射（<code>$theme-bgs</code>、<code>$theme-fgs</code> 和 <code>$theme-borders</code>）的工作方式相同。</p>
+
+<pre><code class="language-scss">@use "../node_modules/bootstrap/scss/bootstrap" with (
   $theme-colors: (
-    // Add a new theme color
+    // 添加一个新的主题颜色
     "brand": (
       "base": var(--indigo-500),
       "bg": var(--indigo-500),
       "contrast": var(--white)
     ),
-    // Remove a built-in theme color
+    // 移除一个内置主题颜色
     "info": null
   )
-);
-```
+);</code></pre>
 
-Each theme color is a nested map, so the merge is one level deep. To change one sub-key of a built-in theme, pass the whole sub-map for that theme. For more detail, see the [Sass customization docs]([[docsref:/customize/sass#theme-color-map]]).
+<p>每个主题颜色是一个嵌套映射，因此合并只有一层深度。要更改内置主题的一个子键，请传递该主题的整个子映射。更多详情请参阅 <a href="[[docsref:/customize/sass#theme-color-map]]">Sass 自定义文档</a>。</p>
 
-## CSS variables
+<h2 id="css-variables">CSS 变量<a class="anchor-link" href="#css-variables" aria-label="链接到 CSS 变量"></a></h2>
 
-CSS variables are generated from the `$theme-colors` Sass map at the `:root` level inside `_root.scss` using a Sass loop.
+<p>CSS 变量在 <code>_root.scss</code> 中通过 Sass 循环从 <code>$theme-colors</code> Sass 映射在 <code>:root</code> 层级生成。</p>
 
-<ScssDocs name="root-theme-tokens" file="scss/_root.scss" />
+<pre><code class="language-scss">// scss/_root.scss（节选）
+:root,
+:host {
+  @each $name, $theme in $theme-colors {
+    @each $key, $value in $theme {
+      --bs-#{$name}-#{$key}: #{$value};
+    }
+  }
+}</code></pre>
+
+  </article>
+
+  <nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#how-it-works">工作原理</a></li>
+        <li><a href="#token-playground">令牌演练场</a></li>
+        <li><a href="#theme-colors">主题颜色</a>
+            <ul>
+                <li><a href="#pairings">配对</a></li>
+            </ul>
+        </li>
+        <li><a href="#layer-colors">层颜色</a>
+            <ul>
+                <li><a href="#background">背景</a></li>
+                <li><a href="#foreground">前景</a></li>
+                <li><a href="#border">边框</a></li>
+                <li><a href="#examples">示例</a></li>
+            </ul>
+        </li>
+        <li><a href="#color-modes">颜色模式</a></li>
+        <li><a href="#theme-utility-classes">主题工具类</a>
+            <ul>
+                <li><a href="#reset">重置</a></li>
+            </ul>
+        </li>
+        <li><a href="#theme-sass-map">主题 Sass 映射</a>
+            <ul>
+                <li><a href="#customize-the-map">自定义映射</a></li>
+            </ul>
+        </li>
+        <li><a href="#css-variables">CSS 变量</a></li>
+    </ul>
+</nav>
+  </template>
