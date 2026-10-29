@@ -1,5 +1,4 @@
-<template>
-      <article class="docs-content prose">
+<template><article class="docs-content prose">
     <h1>贡献</h1>
 <p>借助我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 
