@@ -1,5 +1,4 @@
-<template>
-<article class="docs-content prose">
+<template><article class="docs-content prose">
     <h1>组件</h1>
 <p>了解我们如何以及为何以响应式方式、使用基础类和修饰类来构建几乎全部组件。</p>
 
