@@ -18,21 +18,21 @@
   "dependencies": {
     "bootstrap": "^6.0.0"
   }
-}' lang="json" class="my-6" />
+}' lang="json" class="my-5" />
         <p>将 <code>@popperjs/core</code> 替换为 <code>@floating-ui/dom</code>。如果你使用 Datepicker，请添加 <code>vanilla-calendar-pro</code>。打包版 JavaScript 包含这两个对等依赖。独立版 JavaScript 需要安装包或导入映射。</p>
     </li>
     <li>
         <p>如果使用 Bootstrap 的所有 Sass 文件，请使用 <code>@use</code> 将其包含在 Sass 中：</p>
-                <CodeWrapper code='@use "bootstrap/scss/bootstrap";' lang="scss" class="my-6" />
+                <CodeWrapper code='@use "bootstrap/scss/bootstrap";' lang="scss" class="my-5" />
         <p>这样，你就可以轻松覆盖 Bootstrap 的 Sass 变量和映射：</p>
                 <CodeWrapper code='@use "bootstrap/scss/bootstrap" with (
  $spacer: 1rem,
  $enable-reduced-motion: true,
-);' lang="scss" class="my-6" />
+);' lang="scss" class="my-5" />
     </li>
     <li>
         <p>如果只使用 Bootstrap Sass 文件的某些部分，可以使用 <code>@use</code> 单独导入它们。请注意，我们的 Sass 文件结构已更改，你可能需要相应调整导入。</p>
-                        <CodeWrapper code='@use "bootstrap/scss/forms";' lang="scss" class="my-6" />
+                        <CodeWrapper code='@use "bootstrap/scss/forms";' lang="scss" class="my-5" />
     </li>
     <li>根据变更日志和文档中的更新，更新 HTML 和 CSS。</li>
     <li>重新编译 Sass 以查看更改。</li>
@@ -173,27 +173,27 @@
   // Runs once the collapsible area is expanded
 })
 
-collapse.show()" lang="javascript" class="my-6" />
+collapse.show()" lang="javascript" class="my-5" />
 
         <p><strong>之后（v6）：</strong></p>
                 <CodeWrapper code="await collapse.show()
-// The collapsible area is now expanded" lang="javascript" class="my-6" />
+// The collapsible area is now expanded" lang="javascript" class="my-5" />
 
         <p>Promise 不携带值 resolve，即使调用什么都不做也会 resolve——例如组件已经打开或监听器阻止了 <code>show.bs.*</code> 事件。如果你需要知道状态是否改变，请自行检查组件状态。</p>
     </li>
     <li><strong>Bootstrap 的 JavaScript 现在仅限 ESM。</strong> 我们不再发布 UMD 包。所有 dist 文件（<code>bootstrap.js</code>、<code>bootstrap.bundle.js</code> 及其压缩版本）都是原生 ES 模块。加载模型已更改，若干组件 API 也如下文所列发生了变化。
         <ul>
             <li>CDN <code>&lt;script&gt;</code> 标签必须添加 <code>type="module"</code>：
-                              <CodeWrapper code='<script type="module" src="bootstrap.bundle.min.js"></script>' lang="html" class="my-6" />
+                              <CodeWrapper code='<script type="module" src="bootstrap.bundle.min.js"></script>' lang="html" class="my-5" />
             </li>
             <li>在 v5 中，UMD 包自动创建 <code>window.bootstrap</code> 全局对象。ES 模块不这样做，因此不再有 <code>bootstrap</code> 全局对象。如果你通过全局命名空间调用插件 API，必须更新为显式导入：
 
                 <p><strong>之前（v5）：</strong></p>
-                <CodeWrapper code="const tooltip = bootstrap.Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-6" />
+                <CodeWrapper code="const tooltip = bootstrap.Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-5" />
 
                 <p><strong>之后（v6）：</strong></p>
                  <CodeWrapper code="import { Tooltip } from './bootstrap.bundle.min.js'
-const tooltip = Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-6" />
+const tooltip = Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-5" />
             </li>
             <li><strong>Data API 初始化仍自动运行。</strong> 向 script 标签添加 <code>type="module"</code>。你还必须应用本指南中的组件和数据属性重命名。</li>
             <li>对于现代基于 ESM 的打包工具（Vite、Webpack 5、Parcel 2、Rolldown 等），<code>import { Tooltip } from 'bootstrap'</code> 仍然有效并支持 tree shaking。为定位组件安装 <code>@floating-ui/dom</code>，为 Datepicker 安装 <code>vanilla-calendar-pro</code>。使用 CommonJS <code>require()</code> 调用的项目必须改为 ESM <code>import</code> 语法。</li>
@@ -349,7 +349,7 @@ const tooltip = Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-6" 
       </ul>
     </div>
   </div>
-</nav>' lang="html" class="my-6" />
+</nav>' lang="html" class="my-5" />
 
         <p><strong>之后（v6）：</strong></p>
 
@@ -372,7 +372,7 @@ const tooltip = Tooltip.getOrCreateInstance(el)" lang="javascript" class="my-6" 
       </div>
     </dialog>
   </div>
-</nav>' lang="html" class="my-6" />
+</nav>' lang="html" class="my-5" />
     </li>
     <li><strong>Collapse 触发器现在使用 <code>aria-expanded</code> 作为状态信号。</strong> Bootstrap v6 不再在折叠触发器元素上添加或移除 <code>.collapsed</code> 类。如果你使用 <code>.collapsed</code> 设置样式或查询触发器状态，请将这些选择器迁移到 <code>[aria-expanded="false"]</code>，打开状态选择器迁移到 <code>[aria-expanded="true"]</code>。</li>
     <li><strong>移除了 Collapse 的 <code>toggle</code> 选项。</strong> 构造函数现在保持标记声明的状态，而非翻转它。从配置中删除 <code>toggle: false</code>，这就是你已经获得的行为。如果你依赖旧的 <code>toggle: true</code> 默认值在初始化时更改状态，请改为调用匹配的方法。
@@ -383,7 +383,7 @@ new bootstrap.Collapse(el, { toggle: false })
 
 // v6
 new bootstrap.Collapse(el).show()
-new bootstrap.Collapse(el)" lang="javascript" class="my-6" />
+new bootstrap.Collapse(el)" lang="javascript" class="my-5" />
     </li>
     <li><strong>关闭触发器现在能找到响应式抽屉。</strong> <code>data-bs-dismiss="drawer"</code> 解析带断点前缀的抽屉，如 <code>.lg:drawer</code>，因此响应式抽屉内的关闭按钮不再需要 <code>data-bs-target</code>。现有 <code>data-bs-target</code> 属性继续有效。</li>
     <li><strong>切换按钮获得默认的 <code>aria-pressed</code>。</strong> 切换按钮需要 <code>aria-pressed</code> 以便辅助技术将其宣布为切换，因此 Bootstrap 现在在 <code>DOMContentLoaded</code> 时为每个缺少它的 <code>[data-bs-toggle="button"]</code> 添加该属性，读取 <code>.active</code> 来选择值。在标记中写入 <code>aria-pressed="false"</code>，以便在我们的 JavaScript 运行之前状态正确。</li>
@@ -495,7 +495,7 @@ new bootstrap.Collapse(el)" lang="javascript" class="my-6" />
 <label class="form-control form-adorn">
   <span class="form-adorn-text" aria-hidden="true">$</span>
   <input type="text" class="form-ghost" placeholder="0.00">
-</label>' lang="html" class="my-6"/>
+</label>' lang="html" class="my-5"/>
     </li>
 </ul>
 

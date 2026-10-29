@@ -22,15 +22,15 @@
     <li>
         <p><strong>创建项目文件夹并设置 npm。</strong> 我们将创建 <code>my-project</code> 文件夹并使用 <code>-y</code> 参数初始化 npm，以避免它询问所有交互式问题。</p>
         <CodeWrapper code="mkdir my-project && cd my-project
-npm init -y" lang="shell" class="my-6" />
+npm init -y" lang="shell" class="my-5" />
     </li>
     <li>
         <p><strong>安装 Parcel。</strong> 与我们的 Webpack 指南不同，这里只有一个构建工具依赖项。Parcel 会在检测到语言转换器（如 Sass）时自动安装它们。我们使用 <code>--save-dev</code> 表示此依赖项仅用于开发而非生产环境。</p>
-                <CodeWrapper code="npm i --save-dev parcel" lang="shell" class="my-6" />
+                <CodeWrapper code="npm i --save-dev parcel" lang="shell" class="my-5" />
     </li>
     <li>
         <p><strong>安装 Bootstrap。</strong> 现在我们可以安装 Bootstrap。我们还会安装 Floating UI 和 Vanilla Calendar Pro，因为我们的一些组件依赖它们。如果你不打算使用菜单、弹出框或工具提示，可以省略 Floating UI。如果你不打算使用日期选择器，可以省略 Vanilla Calendar Pro。</p>
-        <CodeWrapper code="npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro" lang="shell" class="my-6" />
+        <CodeWrapper code="npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro" lang="shell" class="my-5" />
     </li>
 </ol>
 
@@ -79,7 +79,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss" lang="shell" />
       <button class="btn-solid theme-primary">Primary button</button>
     </div>
   </body>
-</html>' lang="html" class="my-6" />
+</html>' lang="html" class="my-5" />
         <p>我们在这里通过 <code>div class="container"</code> 和 <code>&lt;button&gt;</code> 引入了一点 Bootstrap 样式，以便我们看到 Bootstrap 的 CSS 已被 Parcel 加载。</p>
         <p>Parcel 会自动检测我们正在使用 Sass，并安装 <a href="https://parceljs.org/languages/sass/">Sass Parcel 插件</a>以支持它。不过，如果你愿意，也可以手动运行 <code>npm i --save-dev @parcel/transformer-sass</code>。</p>
     </li>
@@ -92,11 +92,11 @@ touch src/index.html src/js/main.js src/scss/styles.scss" lang="shell" />
      "test": "echo \"Error: no test specified\" && exit 1"
    },
    // ...
-}' lang="html" class="my-6" />
+}' lang="json" class="my-5" />
     </li>
     <li>
         <p><strong>最后，我们可以启动 Parcel 了。</strong> 在终端中从 <code>my-project</code> 文件夹运行新添加的 npm 脚本：</p>
-        <CodeWrapper code="npm start" lang="shell" class="my-6" />
+        <CodeWrapper code="npm start" lang="shell" class="my-5" />
     </li>
 </ol>
 
@@ -110,18 +110,18 @@ touch src/index.html src/js/main.js src/scss/styles.scss" lang="shell" />
     <li>
         <p><strong>导入 Bootstrap 的 CSS。</strong> 将以下内容添加到 <code>src/scss/styles.scss</code> 以导入 Bootstrap 的所有源 Sass。</p>
         <CodeWrapper code='// Import all of Bootstrap’s CSS
-@use "bootstrap/scss/bootstrap";' lang="scss" class="my-6" />
+@use "bootstrap/scss/bootstrap";' lang="scss" class="my-5" />
         <p><em>如果你愿意，也可以单独导入我们的样式表。<a href="/docs/customize/sass#importing">阅读我们的 Sass 导入文档</a>了解详情。</em></p>
     </li>
     <li>
         <p><strong>导入 Bootstrap 的 JS。</strong> 将以下内容添加到 <code>src/js/main.js</code> 以导入 Bootstrap 的所有 JS。Floating UI 和 Vanilla Calendar Pro 将通过 Bootstrap 自动导入。</p>
                 <CodeWrapper code="// Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap'" lang="javascript" class="my-6" />
+import * as bootstrap from 'bootstrap'" lang="javascript" class="my-5" />
         <p>你也可以根据需要单独导入 JavaScript 插件以减小打包体积：</p>
                         <CodeWrapper code="import Alert from 'bootstrap/js/dist/alert'
 
 // or, specify which plugins you need:
-import { Tooltip, Toast, Popover } from 'bootstrap'" lang="javascript" class="my-6" />
+import { Tooltip, Toast, Popover } from 'bootstrap'" lang="javascript" class="my-5" />
         <p><em><a href="/docs/getting-started/javascript/">阅读我们的 JavaScript 文档</a>以了解有关如何使用 Bootstrap 插件的更多信息。</em></p>
     </li>
     <li>

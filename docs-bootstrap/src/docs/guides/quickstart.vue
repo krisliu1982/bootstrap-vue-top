@@ -30,7 +30,7 @@
   <body>
     <h1>Hello, world!</h1>
   </body>
-</html>' lang="html" class="my-6" />
+</html>' lang="html" class="my-5" />
       </li>
       <li>
         <p><strong>引入 Bootstrap 的 CSS 和 JS。</strong> 将 CSS 的 <code>&lt;link&gt;</code> 标签放在 <code>&lt;head&gt;</code>
@@ -49,7 +49,7 @@
     <h1>Hello, world!</h1>
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
   </body>
-</html>' lang="html" class="my-6" />
+</html>' lang="html" class="my-5" />
 
         <p>选择适合你配置的 JavaScript 文件：</p>
         <ul>
@@ -69,7 +69,7 @@
 }
 </script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js" integrity="sha384-BJf/nQgxZJU68GxBse97Vdlc8Rh+z9PzzXiS3/BjV+1nQPR7IKn+iJnD3DJvCMaU" crossorigin="anonymous"></script>'
-          lang="html" class="my-6" />
+          lang="html" class="my-5" />
         <p>如需省略任一依赖项，请<a href="/docs/customize/optimize#lean-javascript">仅导入你使用的 Bootstrap 组件，或使用支持 tree shaking
             的打包工具</a>。</p>
       </li>
@@ -104,7 +104,7 @@
     <h1>Hello, world!</h1>
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
   </body>
-</html>' lang="html" class="my-6" />
+</html>' lang="html" class="my-5" />
       </li>
       <li>
         <p><strong>通过覆盖 Bootstrap 的 CSS 变量来应用字体。</strong> 你可以在 <code>&lt;head&gt;</code> 中的 <code>&lt;style&gt;</code>
@@ -114,7 +114,7 @@
     --bs-body-font-family: "Geist", system-ui, sans-serif;
     --bs-font-mono: "Geist Mono", ui-monospace, monospace;
   }
-</style>' lang="html" class="my-6" />
+</style>' lang="html" class="my-5" />
       </li>
     </ol>
 
