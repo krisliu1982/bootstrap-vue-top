@@ -12,13 +12,12 @@
         <div class="ms-auto">
           <div class="d-none lg:d-block">
             <div class="d-flex align-items-center gap-5">
+              <a class="theme-inverse text-decoration-none fw-bold" href="/docs" 
+                >中文文档</a
+              >
               <a class="theme-inverse text-decoration-none" href="https://getbootstrap.com/" target="_blank"
                 >Bootstrap</a
               >
-              <a class="theme-inverse text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
-              <div class="vr"></div>
-              <a class="theme-inverse text-decoration-none" href="https://gitee.com/asdfghjkl012345/bootstrap-vue" target="_blank">Gitee</a>
-              <a class="theme-inverse text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
               <div class="vr"></div>
               <div>
                 <a

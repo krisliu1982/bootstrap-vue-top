@@ -12,10 +12,10 @@
   <li>Carousel（轮播）——用于所有幻灯片行为、控件和指示器</li>
   <li>Collapse（折叠）——用于切换内容可见性</li>
   <li>Datepicker（日期选择器）——用于日期选择（还需要 <a href="https://vanilla-calendar.pro/">Vanilla Calendar Pro</a>）</li>
-  <li><a href="[[docsref:/components/dialog]]">Dialog（对话框）</a>——用于显示、定位和滚动行为</li>
+  <li><a href="/docs/components/dialog">Dialog（对话框）</a>——用于显示、定位和滚动行为</li>
   <li>Menus（菜单）——用于显示和定位（还需要 <a href="https://floating-ui.com/">Floating UI</a>）</li>
   <li>Navbar（导航栏）——扩展我们的 Collapse 和 Drawer 插件以实现响应式行为</li>
-  <li><a href="[[docsref:/components/nav]]">Nav（导航）</a>——用于导航标记和样式；<a href="[[docsref:/components/tab]]">Tab（标签页）</a>插件用于切换标签面板</li>
+  <li><a href="/docs/components/nav">Nav（导航）</a>——用于导航标记和样式；<a href="/docs/components/tab">Tab（标签页）</a>插件用于切换标签面板</li>
   <li>Drawers（抽屉）——用于显示、定位和滚动行为</li>
   <li>Scrollspy（滚动监听）——用于滚动行为和导航更新</li>
   <li>Toasts（轻提示）——用于显示和关闭</li>
@@ -52,10 +52,10 @@ tooltip.show()" lang="typescript" />
 <Callout>
   <p><strong>自己试试看！</strong>从 <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples 仓库</a>下载将 Bootstrap 作为 ES 模块使用的源代码和可运行演示。你也可以<a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">在 StackBlitz 中打开示例</a>。</p>
 </Callout>
-<p>Bootstrap 的 JavaScript 以原生 ES 模块构建（<code>bootstrap.js</code> 和 <code>bootstrap.min.js</code>）。使用 <code>&lt;script type="module"&gt;</code> 在浏览器中加载 Bootstrap：</p>
-  <CodeWrapper :code="code1" lang="html" />
+<p>Bootstrap 的 JavaScript 以原生 ES 模块构建。该捆绑包包含 Floating UI 和 Vanilla Calendar Pro。你可以直接在浏览器中加载它：</p>
+<CodeWrapper :code="code1" lang="html" />
 
-<p>在浏览器中使用 ESM 需要完整路径，或者为 <code>@floating-ui/dom</code> 和 <code>vanilla-calendar-pro</code> 这样的裸模块说明符使用<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap">导入映射</a>。以下是使用导入映射的完整示例：</p>
+<p>非捆绑文件（<code>bootstrap.js</code> 和 <code>bootstrap.min.js</code>）引用了 <code>@floating-ui/dom</code> 和 <code>vanilla-calendar-pro</code>。浏览器必须先解析这两个裸模块说明符，Bootstrap 才能运行。当你直接加载非捆绑文件时，请使用 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap">导入映射</a>：</p>
 <CodeWrapper :code="code2" lang="html" />
 <p>不依赖 Floating UI 的组件（如 Toast、Alert、Collapse 等）可以单独导入，无需任何导入映射：</p>
 <CodeWrapper :code="code3" lang="javascript" label="html" />
@@ -217,8 +217,8 @@ bootstrap.Toast.Default.autohide = false" lang="javascript" />
   </tbody>
 </table>
 
-<h2 id="sanitizer">清理器 <a class="anchor-link" href="#sanitizer" aria-label="链接到 清理器"></a></h2>
-<p>一些 JavaScript 组件可以在其配置中渲染或接受任意 HTML。为了防止跨站脚本（XSS）攻击，这些组件使用我们内置的内容清理器，在将任何接受 HTML 的选项渲染到页面之前对其进行清理。内容清理默认启用。具体来说：</p>
+<h2 id="sanitizer">HTML 清理器 <a class="anchor-link" href="#sanitizer" aria-label="链接到 HTML 清理器"></a></h2>
+<p>一些 JavaScript 组件可以在其配置中渲染或接受任意 HTML。为了防止跨站脚本（XSS）攻击，这些组件使用我们内置的内容HTML 清理器，在将任何接受 HTML 的选项渲染到页面之前对其进行清理。内容清理默认启用。具体来说：</p>
 <ul>
   <li>Popovers 和 Tooltips 如果配置为这样做，可以在页面上渲染任意 HTML。</li>
   <li>Chips 和 Nav overflow 可以为其图标选项（<code>dismissIcon</code>、<code>moreIcon</code> 和 <code>[data-bs-overflow-icon]</code>）接受 HTML。</li>
@@ -302,7 +302,7 @@ myDefaultAllowList.td = ['data-bs-option']
 // Be careful about your regular expressions being too lax
 const myCustomRegex = /^data-my-app-[\w-]+/
 myDefaultAllowList['*'].push(myCustomRegex)" lang="javascript" />
-<p>你也可以用专门的库替换我们的清理器，例如 <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>：</p>
+<p>你也可以用专门的库替换我们的HTML 清理器，例如 <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>：</p>
 <CodeWrapper code="const myTooltipEl = document.querySelector('#myTooltip')
 const tooltip = new bootstrap.Tooltip(myTooltipEl, {
   sanitizeFn(content) {
@@ -334,14 +334,14 @@ const tooltip = new bootstrap.Tooltip(myTooltipEl, {
       </ul>
     </li>
     <li><a href="#methods-and-properties">方法和属性</a></li>
-    <li><a href="#sanitizer">清理器</a></li>
+    <li><a href="#sanitizer">HTML 清理器</a></li>
     <li><a href="#disabled-javascript">禁用 JavaScript</a></li>
   </ul>
 </nav>
 </template>
 <script setup>
 const code1 = `<script type="module">
-  import { Toast } from './bootstrap.min.js'
+  import { Toast } from './bootstrap.bundle.min.js'
 
   Array.from(document.querySelectorAll('.toast'))
     .forEach(toastNode => new Toast(toastNode))
