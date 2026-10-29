@@ -1,70 +1,57 @@
----
-title: Bootstrap and npm
-description: The official guide for how to build a starter project with Bootstrap’s CSS and JavaScript in your project using just npm.
-toc: true
-thumbnail: guides/bootstrap-npm@2x.png
----
+<h1>Bootstrap 与 npm</h1>
+<p>使用 npm 在项目中引入 Bootstrap 的 CSS 和 JavaScript 构建入门项目的官方指南。</p>
 
 <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-npm.png, /docs/[[config:docs_version]]/assets/img/guides/bootstrap-npm@2x.png 2x" src="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-npm.png" width="1000" height="500" alt=""/>
 
-<Callout>
-**Want to skip to the end?** Download the source code and working demo for this guide from the [twbs/examples repository](https://github.com/twbs/examples/tree/main/sass-js/). You can also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/sass-js?file=index.html).
-</Callout>
+<div class="callout callout-info">
+    <p><strong>想直接跳到结尾？</strong> 从 <a href="https://github.com/twbs/examples/tree/main/sass-js/">twbs/examples 仓库</a>下载本指南的源代码和可运行示例。你也可以<a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js?file=index.html">在 StackBlitz 中打开该示例</a>。</p>
+</div>
 
-<Callout type="info">
-**Using an AI coding agent?** Point it at our [`bootstrap-npm` skill](https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-npm) to automate this setup. See [AI]([[docsref:/getting-started/ai]]) for all available skills.
-</Callout>
+<div class="callout callout-info">
+    <p><strong>使用 AI 编程代理？</strong> 让它指向我们的 <a href="https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-npm"><code>bootstrap-npm</code> 技能</a>以自动化此设置。有关所有可用技能，请参阅 <a href="[[docsref:/getting-started/ai]]">AI</a>。</p>
+</div>
 
-## What is npm?
+<h2 id="what-is-npm">什么是 npm？<a class="anchor-link" href="#what-is-npm" aria-label="链接到 什么是 npm？">#</a></h2>
 
-[npm](https://www.npmjs.com/) is the default package manager for Node.js. In this guide, we use npm to install Bootstrap and its dependencies, then compile Sass to CSS using command-line tools—no bundler required.
+<p><a href="https://www.npmjs.com/">npm</a> 是 Node.js 的默认包管理器。在本指南中，我们使用 npm 安装 Bootstrap 及其依赖项，然后使用命令行工具将 Sass 编译为 CSS——无需打包工具。</p>
 
-## Setup
+<h2 id="setup">设置<a class="anchor-link" href="#setup" aria-label="链接到 设置">#</a></h2>
 
-We’re building a npm project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
+<p>我们将从零开始构建一个使用 Bootstrap 的 npm 项目，因此在开始之前有一些前提条件和前期步骤。本指南要求你已安装 Node.js 并对终端有一定熟悉度。</p>
 
-1. **Create a project folder and set up npm.** We’ll create the `my-project` folder and initialize npm with the `-y` argument to avoid it asking us all the interactive questions.
+<ol>
+    <li>
+        <p><strong>创建项目文件夹并设置 npm。</strong> 我们将创建 <code>my-project</code> 文件夹并使用 <code>-y</code> 参数初始化 npm，以避免它询问所有交互式问题。</p>
+        <pre><code class="language-sh">mkdir my-project &amp;&amp; cd my-project
+npm init -y</code></pre>
+    </li>
+    <li>
+        <p><strong>安装 Bootstrap。</strong> 现在我们可以安装 Bootstrap。我们还会安装 Floating UI 和 Vanilla Calendar Pro，因为我们的一些组件依赖它们。如果你不打算使用菜单、弹出框或工具提示，可以省略 Floating UI。如果你不打算使用日期选择器，可以省略 Vanilla Calendar Pro。</p>
+        <pre><code class="language-sh">npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro</code></pre>
+    </li>
+    <li>
+        <p><strong>安装额外依赖项。</strong> 除了 Bootstrap 之外，我们还需要一些其他依赖项来编译和后处理我们的 CSS。Sass 将我们的源 <code>.scss</code> 文件编译为 CSS，Autoprefixer 和 PostCSS 处理浏览器兼容性。我们安装 <code>postcss-cli</code> 包，以便从命令行运行 PostCSS。</p>
+        <pre><code class="language-sh">npm i --save-dev autoprefixer postcss postcss-cli sass</code></pre>
+    </li>
+    <li>
+        <p><strong>安装本地开发工具。</strong> 最后，为了让工作更轻松，我们建议安装一些开发工具，以便运行具有热刷新功能的本地服务器（你做的更改会自动反映在浏览器中）并添加一些代码质量检查。</p>
+        <p>我们使用 <code>nodemon</code> 监视文件更改，<code>npm-run-all</code> 一次运行多个 npm 脚本，<code>sirv-cli</code> 运行本地服务器，<code>stylelint</code> 像 Bootstrap 一样格式化 CSS 以保持一致性。</p>
+        <pre><code class="language-sh">npm i --save-dev nodemon npm-run-all sirv-cli stylelint stylelint-config-twbs-bootstrap</code></pre>
+    </li>
+</ol>
 
-   ```sh
-   mkdir my-project && cd my-project
-   npm init -y
-   ```
+<p>现在我们已经安装了所有必要的依赖项，可以开始创建项目文件并导入 Bootstrap 了。</p>
 
-2. **Install Bootstrap.** Now we can install Bootstrap. We’ll also install Floating UI and Vanilla Calendar Pro since some of our components depend on them. If you don’t plan on using menus, popovers, or tooltips, you can omit Floating UI. If you don’t plan on using the datepicker, you can omit Vanilla Calendar Pro.
+<h2 id="project-structure">项目结构<a class="anchor-link" href="#project-structure" aria-label="链接到 项目结构">#</a></h2>
 
-   ```sh
-   npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro
-   ```
+<p>我们已经创建了 <code>my-project</code> 文件夹并初始化了 npm。现在我们将创建 <code>scss</code> 文件夹、样式表和配置文件，以完善项目结构。在 <code>my-project</code> 中运行以下命令，或手动创建下面显示的文件夹和文件结构。</p>
 
-3. **Install additional dependencies.** In addition to Bootstrap, we need a few more dependencies to compile and post-process our CSS. Sass compiles our source `.scss` files into CSS, and Autoprefixer and PostCSS handle browser compatibility. We install the `postcss-cli` package so we can run PostCSS from the command line.
+<pre><code class="language-sh">mkdir {css,scss}
+touch index.html scss/styles.scss postcss.config.js stylelint.config.mjs</code></pre>
 
-   ```sh
-   npm i --save-dev autoprefixer postcss postcss-cli sass
-   ```
+<p>完成后，你的项目应如下所示：</p>
 
-4. **Install local development tools.** Lastly, to make life a little easier, we recommend installing some dev tools to make running local servers with hot refresh (where changes you make are reflected in the browser automatically) and add some code quality checks.
-
-   We use `nodemon` to watch files for changes, `npm-run-all` to run multiple npm scripts at a time, `sirv-cli` to run a local server, and `stylelint` to format CSS like Bootstrap does for consistency.
-
-   ```sh
-   npm i --save-dev nodemon npm-run-all sirv-cli stylelint stylelint-config-twbs-bootstrap
-   ```
-
-Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.
-
-## Project structure
-
-We’ve already created the `my-project` folder and initialized npm. Now we’ll also create our `scss` folder, stylesheet, and configuration files to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
-
-```sh
-mkdir {css,scss}
-touch index.html scss/styles.scss postcss.config.js stylelint.config.mjs
-```
-
-When you’re done, your project should look like this:
-
-```text
-my-project/
+<pre><code class="language-text">my-project/
 ├── css/
 ├── scss/
 │   └── styles.scss
@@ -72,123 +59,118 @@ my-project/
 ├── index.html
 ├── package-lock.json
 ├── package.json
-└── postcss.config.js
-```
+└── postcss.config.js</code></pre>
 
-At this point, everything is in the right place, but we’ll need to configure our files and add some npm scripts to compile the CSS.
+<p>此时，所有内容都在正确的位置，但我们需要配置文件并添加一些 npm 脚本以编译 CSS。</p>
 
-## Configure npm
+<h2 id="configure-npm">配置 npm<a class="anchor-link" href="#configure-npm" aria-label="链接到 配置 npm">#</a></h2>
 
-With dependencies installed and our project folder ready for us to start coding, we can now configure our npm scripts and run our project locally.
+<p>依赖项已安装，项目文件夹已准备好开始编码，我们现在可以配置 npm 脚本并在本地运行项目。</p>
 
-1. **Open `postcss.config.js` in your editor.** We need to configure Autoprefixer to run after Sass compilation for browser compatibility.
+<ol>
+    <li>
+        <p><strong>在编辑器中打开 <code>postcss.config.js</code>。</strong> 我们需要配置 Autoprefixer 在 Sass 编译后运行，以确保浏览器兼容性。</p>
+        <pre><code class="language-js">const autoprefixer = require('autoprefixer')
 
-   ```js
-   const autoprefixer = require('autoprefixer')
+module.exports = {
+  plugins: [
+    autoprefixer
+  ]
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>填写 <code>index.html</code> 文件。</strong> 我们需要一个 HTML 页面来渲染我们的项目。此页面链接到编译后的 CSS 文件，并包含 Bootstrap 的预构建 JavaScript 打包文件。</p>
+        <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap w/ npm&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container py-4 px-3 mx-auto"&gt;
+      &lt;h1&gt;Hello, Bootstrap and npm!&lt;/h1&gt;
+      &lt;button class="btn-solid theme-primary"&gt;Primary button&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>我们在这里通过 <code>div class="container"</code> 和 <code>&lt;button&gt;</code> 引入了一点 Bootstrap 样式，以便我们看到 Bootstrap 的 CSS 已被 npm 脚本加载。由于此设置不使用 JavaScript 打包工具，我们通过 <code>&lt;script&gt;</code> 标签直接加载 Bootstrap 的预构建 JS 打包文件。</p>
+        <p><em><a href="[[docsref:/getting-started/javascript/]]">阅读我们的 JavaScript 文档</a>以了解有关如何使用 Bootstrap 插件的更多信息。</em></p>
+    </li>
+    <li>
+        <p><strong>在 <code>package.json</code> 中添加 npm 脚本。</strong> 打开 <code>package.json</code> 并添加以下脚本。我们使用 <code>sass</code> 编译 Sass（使用 <code>--load-path=node_modules</code> 以便解析 Bootstrap），<code>postcss-cli</code> 应用 Autoprefixer，<code>nodemon</code> 监视更改，<code>npm-run-all</code> 按顺序或并行运行脚本，<code>sirv-cli</code> 为项目提供服务，<code>stylelint</code> 对我们的 Sass 进行 lint 检查。</p>
+        <pre><code class="language-json">{
+  // ...
+  "scripts": {
+    "css-compile": "sass --load-path=node_modules --style expanded --source-map --embed-sources scss:css",
+    "css-prefix": "postcss --config postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
+    "build": "npm-run-all --sequential css-compile css-prefix",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm run build\"",
+    "serve": "sirv --port 8080 --dev .",
+    "start": "npm-run-all build --parallel watch serve",
+    "lint": "stylelint \"scss/**/*.scss\""
+  },
+  // ...
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>配置 <code>stylelint.config.mjs</code>。</strong> 我们使用 <code>stylelint-config-twbs-bootstrap</code> 来保持我们的 Sass lint 检查与 Bootstrap 自身的代码风格一致。</p>
+        <pre><code class="language-js">/** @type {import('stylelint').Config} */
+export default {
+  extends: 'stylelint-config-twbs-bootstrap',
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>最后，我们可以启动 npm 脚本了。</strong> 在终端中从 <code>my-project</code> 文件夹运行新添加的 npm 脚本：</p>
+        <pre><code class="language-sh">npm start</code></pre>
+        <p>{/* <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/npm-dev-server.png" alt="npm dev server running" /> */}</p>
+    </li>
+</ol>
 
-   module.exports = {
-     plugins: [
-       autoprefixer
-     ]
-   }
-   ```
+<p>在本指南的下一节也是最后一节中，我们将导入 Bootstrap 的所有 CSS。</p>
 
-2. **Fill in the `index.html` file.** We need an HTML page to render our project. This page links to the compiled CSS file and includes Bootstrap’s pre-built JavaScript bundle.
+<h2 id="import-bootstrap">导入 Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="链接到 导入 Bootstrap">#</a></h2>
 
-   ```html
-   <!doctype html>
-   <html lang="en">
-     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap w/ npm</title>
-       <link rel="stylesheet" href="css/styles.css">
-     </head>
-     <body>
-       <div class="container py-4 px-3 mx-auto">
-         <h1>Hello, Bootstrap and npm!</h1>
-         <button class="btn-solid theme-primary">Primary button</button>
-       </div>
-       <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-     </body>
-   </html>
-   ```
+<p>将 Bootstrap 导入我们的项目需要向 <code>scss/styles.scss</code> 文件添加 Sass 导入。</p>
 
-   We’re including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap’s CSS is loaded by our npm scripts. Since this setup doesn’t use a JavaScript bundler, we load Bootstrap’s pre-built JS bundle directly via a `<script>` tag.
-
-   *[Read our JavaScript docs]([[docsref:/getting-started/javascript/]]) for more information on how to use Bootstrap’s plugins.*
-
-3. **Add npm scripts to `package.json`.** Open `package.json` and add the following scripts. We use `sass` to compile our Sass (with `--load-path=node_modules` so it can resolve Bootstrap), `postcss-cli` to apply Autoprefixer, `nodemon` to watch for changes, `npm-run-all` to run scripts in sequence or in parallel, `sirv-cli` to serve our project, and `stylelint` to lint our Sass.
-
-   ```json
-   {
-     // ...
-     "scripts": {
-       "css-compile": "sass --load-path=node_modules --style expanded --source-map --embed-sources scss:css",
-       "css-prefix": "postcss --config postcss.config.js --replace \"css/*.css\" \"!css/*.min.css\"",
-       "build": "npm-run-all --sequential css-compile css-prefix",
-       "watch": "nodemon --watch scss/ --ext scss --exec \"npm run build\"",
-       "serve": "sirv --port 8080 --dev .",
-       "start": "npm-run-all build --parallel watch serve",
-       "lint": "stylelint \"scss/**/*.scss\""
-     },
-     // ...
-   }
-   ```
-
-4. **Configure `stylelint.config.mjs`.** We’re using `stylelint-config-twbs-bootstrap` to keep our Sass linting consistent with Bootstrap’s own code style.
-
-   ```js
-   /** @type {import('stylelint').Config} */
-   export default {
-     extends: 'stylelint-config-twbs-bootstrap',
-   }
-   ```
-
-5. **And finally, we can start the npm scripts.** From the `my-project` folder in your terminal, run that newly added npm script:
-
-   ```sh
-   npm start
-   ```
-
-   {/* <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/npm-dev-server.png" alt="npm dev server running" /> */}
-
-In the next and final section to this guide, we’ll import all of Bootstrap’s CSS.
-
-## Import Bootstrap
-
-Importing Bootstrap into our project requires adding a Sass import to our `scss/styles.scss` file.
-
-1. **Import Bootstrap’s CSS.** Add the following to `scss/styles.scss` to import all of Bootstrap’s source Sass. We use the `@use` rule, which is the modern Sass module system.
-
-   ```scss
-   // Import all of Bootstrap’s CSS
-   @use "bootstrap/scss/bootstrap";
-   ```
-
-   *You can also import our stylesheets individually if you want. [Read our Sass import docs]([[docsref:/customize/sass#importing]]) for details.*
-
-2. **Optionally, customize Bootstrap’s Sass tokens.** Since Bootstrap uses Sass modules (`@use`/`@forward`), you can override default values using the `with ()` syntax. You only need to include the keys you want to change — Bootstrap merges your overrides with its defaults.
-
-   ```scss
-   @use "bootstrap/scss/bootstrap" with (
-     $root-tokens: (
-       --border-radius: .25rem,
-       --spacer: 1.5rem,
-     ),
-     $alert-tokens: (
-       --alert-padding-x: 2rem,
-       --alert-border-radius: 1rem,
-     )
-   );
-   ```
-
-   *[Read our Sass customization docs]([[docsref:/customize/sass#token-defaults]]) for the full list of available token maps and options.*
-
-3. **And you’re done! 🎉** With Bootstrap’s source Sass fully loaded, your local development server should now look like this:
-
-   {/* <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/npm-dev-server-bootstrap.png" alt="npm dev server running with Bootstrap" /> */}
-
-   Now you can start adding any Bootstrap components you want to use. Be sure to [check out the complete npm Sass and JS example project](https://github.com/twbs/examples/tree/main/sass-js) for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.
+<ol>
+    <li>
+        <p><strong>导入 Bootstrap 的 CSS。</strong> 将以下内容添加到 <code>scss/styles.scss</code> 以导入 Bootstrap 的所有源 Sass。我们使用 <code>@use</code> 规则，这是现代 Sass 模块系统。</p>
+        <pre><code class="language-scss">// Import all of Bootstrap’s CSS
+@use "bootstrap/scss/bootstrap";</code></pre>
+        <p><em>如果你愿意，也可以单独导入我们的样式表。<a href="[[docsref:/customize/sass#importing]]">阅读我们的 Sass 导入文档</a>了解详情。</em></p>
+    </li>
+    <li>
+        <p><strong>可选：自定义 Bootstrap 的 Sass 令牌。</strong> 由于 Bootstrap 使用 Sass 模块（<code>@use</code>/<code>@forward</code>），你可以使用 <code>with ()</code> 语法覆盖默认值。你只需包含要更改的键——Bootstrap 会将你的覆盖与其默认值合并。</p>
+        <pre><code class="language-scss">@use "bootstrap/scss/bootstrap" with (
+  $root-tokens: (
+    --border-radius: .25rem,
+    --spacer: 1.5rem,
+  ),
+  $alert-tokens: (
+    --alert-padding-x: 2rem,
+    --alert-border-radius: 1rem,
+  )
+);</code></pre>
+        <p><em><a href="[[docsref:/customize/sass#token-defaults]]">阅读我们的 Sass 自定义文档</a>以获取可用令牌映射和选项的完整列表。</em></p>
+    </li>
+    <li>
+        <p><strong>大功告成！🎉</strong> Bootstrap 的源 Sass 已完全加载，你的本地开发服务器现在应如下所示：</p>
+        <p>{/* <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/npm-dev-server-bootstrap.png" alt="npm dev server running with Bootstrap" /> */}</p>
+        <p>现在你可以开始添加任何你想使用的 Bootstrap 组件了。请务必<a href="https://github.com/twbs/examples/tree/main/sass-js">查看完整的 npm Sass 和 JS 示例项目</a>，了解如何包含额外的自定义 Sass，以及通过仅导入你需要的 Bootstrap CSS 和 JS 部分来优化构建。</p>
+    </li>
+</ol>
 
 <GuideFooter />
+
+<nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#what-is-npm">什么是 npm？</a></li>
+        <li><a href="#setup">设置</a></li>
+        <li><a href="#project-structure">项目结构</a></li>
+        <li><a href="#configure-npm">配置 npm</a></li>
+        <li><a href="#import-bootstrap">导入 Bootstrap</a></li>
+    </ul>
+</nav>

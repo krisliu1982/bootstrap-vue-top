@@ -1,70 +1,94 @@
----
-title: Contribute
-description: Help develop Bootstrap with our documentation build scripts and tests.
-toc: true
-aliases: "/docs/[[config:docs_version]]/getting-started/build-tools/"
----
-## Tooling setup
+<template>
+    <h1>贡献</h1>
+<p>借助我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 
-Bootstrap uses [npm scripts](https://docs.npmjs.com/misc/scripts/) to build the documentation and compile source files. Our [package.json]([[config:repo]]/blob/v[[config:current_version]]/package.json) houses these scripts for compiling code, running tests, and more. These aren’t intended for use outside our repository and documentation.
+<h2 id="tooling-setup">工具设置<a class="anchor-link" href="#tooling-setup" aria-label="链接到 工具设置"></a></h2>
 
-To use our build system and run our documentation locally, you’ll need a copy of Bootstrap’s source files and Node. Follow these steps and you should be ready to rock:
+<p>Bootstrap 使用 <a href="https://docs.npmjs.com/misc/scripts/">npm 脚本</a>来构建文档并编译源文件。我们的 <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> 中存放了这些用于编译代码、运行测试等操作的脚本。这些脚本并非供我们仓库和文档之外使用。</p>
 
-1. [Download and install Node.js](https://nodejs.org/en/download/), which we use to manage our dependencies.
-2. Either [download Bootstrap’s sources]([[config:download.source]]) or fork and clone [Bootstrap’s repository]([[config:repo]]).
-3. Navigate to the root `/bootstrap` directory and run `npm install` to install our local dependencies listed in [package.json]([[config:repo]]/blob/v[[config:current_version]]/package.json).
+<p>要使用我们的构建系统并在本地运行文档，你需要一份 Bootstrap 源文件副本和 Node。按照以下步骤操作，即可准备就绪：</p>
 
-When completed, you’ll be able to run the various commands provided from the command line.
+<ol>
+    <li><a href="https://nodejs.org/en/download/">下载并安装 Node.js</a>，我们用它来管理依赖项。</li>
+    <li>要么<a href="[[config:download.source]]">下载 Bootstrap 源代码</a>，要么 fork 并克隆 <a href="[[config:repo]]">Bootstrap 仓库</a>。</li>
+    <li>导航到根目录 <code>/bootstrap</code> 并运行 <code>npm install</code> 以安装 <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> 中列出的本地依赖项。</li>
+</ol>
 
-## Using npm scripts
+<p>完成后，你将能够从命令行运行提供的各种命令。</p>
 
-Our [package.json]([[config:repo]]/blob/v[[config:current_version]]/package.json) includes numerous tasks for developing the project. Run `npm run` to see all the npm scripts in your terminal. **Primary tasks include:**
+<h2 id="using-npm-scripts">使用 npm 脚本<a class="anchor-link" href="#using-npm-scripts" aria-label="链接到 使用 npm 脚本"></a></h2>
 
-<BsTable>
-| Task | Description |
-| --- | --- |
-| `npm start` | Compiles CSS and JavaScript, builds the documentation, and starts a local server. |
-| `npm run dist` | Creates the `dist/` directory with compiled files. Uses [Sass](https://sass-lang.com/), [Autoprefixer](https://github.com/postcss/autoprefixer), [Rolldown](https://rolldown.rs/), and [terser](https://github.com/terser/terser). |
-| `npm test` | Runs tests locally after running `npm run dist` |
-| `npm run docs-serve` | Builds and runs the documentation locally. |
-</BsTable>
+<p>我们的 <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> 包含了大量用于开发项目的任务。在终端中运行 <code>npm run</code> 可查看所有 npm 脚本。<strong>主要任务包括：</strong></p>
 
-<Callout name="info-npm-starter" />
+<table class="table">
+    <thead>
+        <tr><th>任务</th><th>描述</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>npm start</code></td><td>编译 CSS 和 JavaScript，构建文档，并启动本地服务器。</td></tr>
+        <tr><td><code>npm run dist</code></td><td>创建包含编译文件的 <code>dist/</code> 目录。使用 <a href="https://sass-lang.com/">Sass</a>、<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>、<a href="https://rolldown.rs/">Rolldown</a> 和 <a href="https://github.com/terser/terser">terser</a>。</td></tr>
+        <tr><td><code>npm test</code></td><td>在运行 <code>npm run dist</code> 后于本地运行测试。</td></tr>
+        <tr><td><code>npm run docs-serve</code></td><td>在本地构建并运行文档。</td></tr>
+    </tbody>
+</table>
 
-## Sass
+<div class="callout">
+</div>
 
-Bootstrap uses [Dart Sass](https://sass-lang.com/dart-sass/) for compiling our Sass source files into CSS files (included in our build process), and we recommend you do the same if you’re compiling Sass using your own asset pipeline. We previously used Node Sass for Bootstrap v4, but LibSass and packages built on top of it, including Node Sass, are now [deprecated](https://sass-lang.com/blog/libsass-is-deprecated/).
+<h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="链接到 Sass"></a></h2>
 
-Dart Sass uses a rounding precision of 10 and for efficiency reasons does not allow adjustment of this value. We don’t lower this precision during further processing of our generated CSS, such as during minification, but if you chose to do so we recommend maintaining a precision of at least 6 to prevent issues with browser rounding.
+<p>Bootstrap 使用 <a href="https://sass-lang.com/dart-sass/">Dart Sass</a> 将我们的 Sass 源文件编译为 CSS 文件（已包含在我们的构建流程中），如果你使用自己的资源流水线编译 Sass，我们也推荐你这样做。我们之前为 Bootstrap v4 使用 Node Sass，但 LibSass 及其上构建的包（包括 Node Sass）现在已<a href="https://sass-lang.com/blog/libsass-is-deprecated/">弃用</a>。</p>
 
-## PostCSS
+<p>Dart Sass 使用 10 的舍入精度，出于效率原因不允许调整此值。在我们对生成的 CSS 进行进一步处理（如压缩）时，我们不会降低此精度，但如果你选择这样做，我们建议保持至少 6 的精度，以防止浏览器舍入问题。</p>
 
-Bootstrap uses [PostCSS](https://postcss.org/) to process our compiled CSS with several plugins:
+<h2 id="postcss">PostCSS<a class="anchor-link" href="#postcss" aria-label="链接到 PostCSS"></a></h2>
 
-- **[Autoprefixer](https://github.com/postcss/autoprefixer)** automatically adds vendor prefixes to CSS properties at build time. This saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins. We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See [.browserslistrc]([[config:repo]]/blob/v[[config:current_version]]/.browserslistrc) for details.
+<p>Bootstrap 使用 <a href="https://postcss.org/">PostCSS</a> 通过多个插件处理我们编译后的 CSS：</p>
 
-- **[postcss-prefix-custom-properties](https://github.com/twbs/postcss-prefix-custom-properties)** adds the `bs-` prefix to all CSS custom properties (variables). This allows us to write clean, unprefixed variable names in our Sass source (e.g., `--border-radius`) that become prefixed in the compiled CSS (e.g., `--bs-border-radius`).
+<ul>
+    <li>
+        <p><strong><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong> 在构建时自动为 CSS 属性添加厂商前缀。这节省了我们的时间和代码，使我们能够只编写一次 CSS 的关键部分，同时无需厂商 mixin。我们通过 Autoprefixer 维护支持的浏览器列表，该列表位于我们 GitHub 仓库中的单独文件。详情请参阅 <a href="[[config:repo]]/blob/v[[config:current_version]]/.browserslistrc">.browserslistrc</a>。</p>
+    </li>
+    <li>
+        <p><strong><a href="https://github.com/twbs/postcss-prefix-custom-properties">postcss-prefix-custom-properties</a></strong> 为所有 CSS 自定义属性（变量）添加 <code>bs-</code> 前缀。这使我们能够在 Sass 源中编写干净、无前缀的变量名（如 <code>--border-radius</code>），并在编译后的 CSS 中变为带前缀的形式（如 <code>--bs-border-radius</code>）。</p>
+    </li>
+</ul>
 
-Our PostCSS configuration is located in [build/postcss.config.mjs]([[config:repo]]/blob/v[[config:current_version]]/build/postcss.config.mjs).
+<p>我们的 PostCSS 配置位于 <a href="[[config:repo]]/blob/v[[config:current_version]]/build/postcss.config.mjs">build/postcss.config.mjs</a>。</p>
 
-## JavaScript
+<h2 id="javascript">JavaScript<a class="anchor-link" href="#javascript" aria-label="链接到 JavaScript"></a></h2>
 
-Our JavaScript source is written in TypeScript and lives in `js/src/`. We bundle it with [Rolldown](https://rolldown.rs/), the Rust-based bundler from the Vite team, and then minify the output with [terser](https://github.com/terser/terser). Bootstrap v5 used [Rollup](https://rollupjs.org/) and [Babel](https://babeljs.io/) for this. Rolldown strips the TypeScript types and lowers the syntax itself, so we no longer need Babel.
+<p>我们的 JavaScript 源代码使用 TypeScript 编写，位于 <code>js/src/</code>。我们使用 <a href="https://rolldown.rs/">Rolldown</a>（Vite 团队开发的基于 Rust 的打包工具）对其进行打包，然后使用 <a href="https://github.com/terser/terser">terser</a> 压缩输出。Bootstrap v5 为此使用了 <a href="https://rollupjs.org/">Rollup</a> 和 <a href="https://babeljs.io/">Babel</a>。Rolldown 会剥离 TypeScript 类型并自行降低语法，因此我们不再需要 Babel。</p>
 
-Rolldown does not read `.browserslistrc`, so [build/browser-targets.mjs]([[config:repo]]/blob/v[[config:current_version]]/build/browser-targets.mjs) resolves that file at build time and converts it into the target list Rolldown expects. Both pipelines therefore honor one browser list.
+<p>Rolldown 不读取 <code>.browserslistrc</code>，因此 <a href="[[config:repo]]/blob/v[[config:current_version]]/build/browser-targets.mjs">build/browser-targets.mjs</a> 在构建时解析该文件并将其转换为 Rolldown 期望的目标列表。因此，两条流水线都遵循同一个浏览器列表。</p>
 
-We ship our own TypeScript declarations, so you do not need `@types/bootstrap`. Our bundler configuration is located in [build/rolldown.config.mjs]([[config:repo]]/blob/v[[config:current_version]]/build/rolldown.config.mjs).
+<p>我们发布自己的 TypeScript 声明，因此你不需要 <code>@types/bootstrap</code>。我们的打包配置位于 <a href="[[config:repo]]/blob/v[[config:current_version]]/build/rolldown.config.mjs">build/rolldown.config.mjs</a>。</p>
 
-## Local documentation
+<h2 id="local-documentation">本地文档<a class="anchor-link" href="#local-documentation" aria-label="链接到 本地文档"></a></h2>
 
-Running our documentation locally requires the use of Astro. Astro is a modern static site generator that allows us to build our documentation with a combination of Markdown and React components. Here’s how to get it started:
+<p>在本地运行我们的文档需要使用 Astro。Astro 是一个现代静态站点生成器，允许我们使用 Markdown 和 React 组件的组合来构建文档。以下是启动方法：</p>
 
-1. Run through the [tooling setup](#tooling-setup) above to install all dependencies.
-2. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
-3. Open http://localhost:9001 in your browser, and voilà.
+<ol>
+    <li>完成上述<a href="#tooling-setup">工具设置</a>以安装所有依赖项。</li>
+    <li>从根目录 <code>/bootstrap</code> 在命令行中运行 <code>npm run docs-serve</code>。</li>
+    <li>在浏览器中打开 http://localhost:9001，大功告成。</li>
+</ol>
 
-Learn more about using Astro by reading its [documentation](https://docs.astro.build/en/getting-started/).
+<p>阅读 Astro 的<a href="https://docs.astro.build/en/getting-started/">文档</a>以了解更多关于使用 Astro 的信息。</p>
 
-## Troubleshooting
+<h2 id="troubleshooting">故障排除<a class="anchor-link" href="#troubleshooting" aria-label="链接到 故障排除"></a></h2>
 
-Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun `npm install`.
+<p>如果你在安装依赖项时遇到问题，请卸载所有之前的依赖版本（全局和本地）。然后重新运行 <code>npm install</code>。</p>
+
+<nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#tooling-setup">工具设置</a></li>
+        <li><a href="#using-npm-scripts">使用 npm 脚本</a></li>
+        <li><a href="#sass">Sass</a></li>
+        <li><a href="#postcss">PostCSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#local-documentation">本地文档</a></li>
+        <li><a href="#troubleshooting">故障排除</a></li>
+    </ul>
+</nav>
+    </template>

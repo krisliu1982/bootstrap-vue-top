@@ -1,129 +1,190 @@
----
-title: Browsers & devices
-description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, and the modern platform features the framework is built on.
-toc: true
----
+<template>
+<article class="docs-content prose">
+    <h1>浏览器与设备</h1>
 
-## Supported browsers
+<p>了解 Bootstrap 支持的浏览器和设备（从现代到旧版），以及该框架所构建于其上的现代平台特性。</p>
 
-Bootstrap supports the **latest, stable releases** of all major browsers and platforms, plus a run of older versions of each engine. The exact policy lives in [our `.browserslistrc` file](https://github.com/twbs/bootstrap/blob/main/.browserslistrc):
+<h2 id="supported-browsers">支持的浏览器<a class="anchor-link" href="#supported-browsers" aria-label="链接到 支持的浏览器"></a></h2>
 
-<Code lang="plaintext" filePath=".browserslistrc" fileMatch="last 2 major versions[\s\S]+not op_mini all" />
+<p>Bootstrap 支持所有主流浏览器和平台的<strong>最新稳定版本</strong>，以及各引擎的一批较旧版本。具体策略见<a href="https://github.com/twbs/bootstrap/blob/main/.browserslistrc">我们的 <code>.browserslistrc</code> 文件</a>：</p>
 
-Browserslist joins these lines with OR, not AND. The `>=` lines do not narrow `last 2 major versions`. They add every version above each floor, which is what sets our real minimums:
+<CodeWrapper code="last 2 major versions
+not dead
+unreleased versions
 
-<BsTable>
-| Browser | Minimum version |
-| --- | --- |
-| Chrome | 130 |
-| Edge | 130 |
-| Firefox | 132 |
-| Safari (macOS) | 18 |
-| Safari (iOS and iPadOS) | 18 |
-</BsTable>
+Chrome >= 130
+Edge >= 130
+Firefox >= 132
+iOS >= 18.0
+Safari >= 18.0
 
-Alternative browsers built on these engines (Chromium-based browsers like Brave, Opera, or Vivaldi, and browsers using WebKit on iOS) are not explicitly tested, but should be fully supported at equivalent engine versions.
+not and_uc > 0
+not and_qq > 0
+not kaios > 0
+not op_mini all" lang="plaintext" />
 
-### How to read the query list
+<p>Browserslist 用 OR（而非 AND）连接这些行。<code>&gt;=</code> 行不会缩小 <code>last 2 major versions</code> 的范围，它们会加入每个下限之上的所有版本，从而设定我们真正的最低版本：</p>
 
-Two of those lines do more than they look like they do:
+<div class="table-responsive">
+<table class="table table md:table-stacked">
+    <thead>
+        <tr><th>浏览器</th><th>最低版本</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Chrome</td><td>130</td></tr>
+        <tr><td>Edge</td><td>130</td></tr>
+        <tr><td>Firefox</td><td>132</td></tr>
+        <tr><td>Safari（macOS）</td><td>18</td></tr>
+        <tr><td>Safari（iOS 和 iPadOS）</td><td>18</td></tr>
+    </tbody>
+</table>
+</div>
 
-- **`last 2 major versions` carries our mobile coverage.** caniuse tracks Chrome for Android as a single unversioned entry rather than one entry per release, so this line, not the `>=` floors, is what picks it up.
-- **`unreleased versions` is worth about eight points of coverage, and it costs nothing.** caniuse gives the newest Safari a null release date, yet that version already holds most of Safari’s usage share. Both range queries and `last N versions` skip unreleased versions, so without this line we would exclude the single most-used Safari. It cannot pull in anything old, because an unreleased version is newer than every floor.
+<p>基于这些引擎构建的替代浏览器（如 Brave、Opera、Vivaldi 等 Chromium 浏览器，以及 iOS 上使用 WebKit 的浏览器）未经过显式测试，但在等效引擎版本下应得到完全支持。</p>
 
-To measure coverage yourself, run `npx browserslist --coverage` in a clone of the repository. Do not read the figure off browserslist.dev: that site pins an older copy of caniuse-db and reports a materially different number.
+<h3 id="how-to-read-the-query-list">如何解读查询列表<a class="anchor-link" href="#how-to-read-the-query-list" aria-label="链接到 如何解读查询列表"></a></h3>
 
-### Why these versions?
+<p>其中两行所做的事情比看上去更多：</p>
 
-Bootstrap’s CSS is written against the modern platform baseline: [`light-dark()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) for [color modes]([[docsref:/customize/color-modes]]), `oklch()` and `color-mix()` for the [color system]([[docsref:/customize/color]]), native CSS nesting, container queries, and `:has()`.
+<ul>
+    <li><strong><code>last 2 major versions</code> 承载我们的移动端覆盖。</strong>caniuse 将 Chrome for Android 跟踪为单个无版本条目，而非每个版本一个条目，因此正是这一行（而非 <code>&gt;=</code> 下限）将它纳入。</li>
+    <li><strong><code>unreleased versions</code> 约值八个百分点的覆盖，且没有代价。</strong>caniuse 将最新的 Safari 的发布日期标记为 null，但该版本已占据 Safari 的大部分使用份额。范围查询和 <code>last N versions</code> 都会跳过未发布版本，因此如果没有这一行，我们就会排除使用最广泛的单个 Safari。它不会引入任何旧版本，因为未发布版本比所有下限都新。</li>
+</ul>
 
-Our floors also have to last. They apply to the whole v6.x line, and we cannot raise them in a minor release, so they cap what every future 6.x feature may use. We therefore set each floor on the newest feature v6 already depends on, not the oldest version we could tolerate:
+<p>要自行测量覆盖率，请在仓库克隆中运行 <code>npx browserslist --coverage</code>。不要从 browserslist.dev 读取数字：该网站固定了较旧的 caniuse-db 副本，报告的数字会有实质差异。</p>
 
-<BsTable>
-| Feature | Sets the floor for |
-| --- | --- |
-| `:has()` | Firefox 121—used by forms, button groups, and cards |
-| `content-visibility` | Firefox 125 and Safari 18—the accordion transitions it with `allow-discrete` |
-| `<details name="…">` | Firefox 130—exclusive accordions |
-| `text-wrap: balance` | Chrome 130—shipped as a utility |
-| Unprefixed `backdrop-filter` | Safari and iOS 18—Dialog and Drawer blur their `::backdrop` |
-</BsTable>
+<h3 id="why-these-versions">为什么是这些版本？<a class="anchor-link" href="#why-these-versions" aria-label="链接到 为什么是这些版本？"></a></h3>
 
-`light-dark()` sets the hard lower bound: Chrome 123, Firefox 120, and Safari 17.5. Below it, our build pipeline lowers `light-dark()` to a custom-property polyfill, and that polyfill breaks `data-bs-theme` dark mode. We will not go below that bound in any release.
+<p>Bootstrap 的 CSS 基于现代平台基线编写：用于<a href="/docs/customize/color-modes">颜色模式</a>的 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark"><code>light-dark()</code></a>，用于<a href="/docs/customize/color">颜色系统</a>的 <code>oklch()</code> 和 <code>color-mix()</code>，原生 CSS 嵌套，容器查询，以及 <code>:has()</code>。</p>
 
-Together these targets cover about 85% of global browser usage.
+<p>我们的下限还必须持久。它们适用于整个 v6.x 系列，且我们无法在次要版本中提高它们，因此它们限制了未来所有 6.x 特性可以使用的范围。因此，我们将每个下限设定在 v6 已依赖的最新特性上，而非我们所能容忍的最旧版本：</p>
 
-Unlike previous major versions, Bootstrap 6 does not ship fallbacks, prefixes, or polyfills for browsers below this floor. Pages will not render correctly in unsupported browsers—most visibly, colors depending on `light-dark()` will not resolve.
+<div class="table-responsive">
+<table class="table table md:table-stacked">
+    <thead>
+        <tr><th>特性</th><th>设定下限的依据</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>:has()</code></td><td>Firefox 121——用于表单、按钮组和卡片</td></tr>
+        <tr><td><code>content-visibility</code></td><td>Firefox 125 和 Safari 18——手风琴用它配合 <code>allow-discrete</code> 进行过渡</td></tr>
+        <tr><td><code>&lt;details name="…"&gt;</code></td><td>Firefox 130——互斥手风琴</td></tr>
+        <tr><td><code>text-wrap: balance</code></td><td>Chrome 130——作为工具类发布</td></tr>
+        <tr><td>无前缀 <code>backdrop-filter</code></td><td>Safari 和 iOS 18——对话框和抽屉会模糊其 <code>::backdrop</code></td></tr>
+    </tbody>
+</table>
+</div>
 
-## Modern platform features
+<p><code>light-dark()</code> 设定了硬性下限：Chrome 123、Firefox 120 和 Safari 17.5。低于此版本，我们的构建流水线会将 <code>light-dark()</code> 降级为自定义属性 polyfill，而该 polyfill 会破坏 <code>data-bs-theme</code> 深色模式。我们不会在任何版本中低于该界限。</p>
 
-The table below lists the platform features v6 relies on and how each behaves at—and below—the support floor.
+<p>这些目标合计覆盖约 85% 的全球浏览器使用量。</p>
 
-<BsTable>
-| Feature | Used by | Behavior in supported browsers |
-| --- | --- | --- |
-| `light-dark()` | [Color modes]([[docsref:/customize/color-modes]]), all theme tokens | Sets the hard lower bound for the floor; no fallback below it |
-| `oklch()`, `color-mix()` | [Color system]([[docsref:/customize/color]]), theme variants | Fully supported above the floor |
-| Container queries (`@container`) | [Card groups]([[docsref:/components/card#card-groups]]), [horizontal list groups]([[docsref:/components/list-group#horizontal]]) | Fully supported above the floor; these components also require an ancestor query container (`.contains-inline`)—without one they stay stacked |
-| `:has()` | Forms, button groups with menus, and other contextual styling | Fully supported above the floor |
-| Native `<dialog>` | [Dialog]([[docsref:/components/dialog]]), [Drawer]([[docsref:/components/drawer]]) | Fully supported above the floor; focus containment and `inert` behavior come from the browser |
-| `<details name="…">` | [Exclusive accordions]([[docsref:/components/accordion]]) | Fully supported above the floor; in older, unsupported browsers accordion items degrade gracefully to independently openable `<details>` elements |
-| CSS scroll snap | [Carousel]([[docsref:/components/carousel]]) | Fully supported above the floor; native touch, wheel, and keyboard scrolling |
-| Logical properties | Spacing, borders, and [RTL]([[docsref:/customize/rtl]]) support throughout | Fully supported above the floor |
-</BsTable>
+<p>与之前的主要版本不同，Bootstrap 6 不为低于此下限的浏览器提供降级、前缀或 polyfill。页面在不受支持的浏览器中将无法正确渲染——最明显的是，依赖 <code>light-dark()</code> 的颜色将无法解析。</p>
 
-### Also safe to use
+<h2 id="modern-platform-features">现代平台特性<a class="anchor-link" href="#modern-platform-features" aria-label="链接到 现代平台特性"></a></h2>
 
-The floors clear more of the platform than the components currently use. All of the following need no fallback, no vendor prefix, and no polyfill in any 6.x release, so reach for them first when you build on top of Bootstrap or contribute to it:
+<p>下表列出了 v6 依赖的平台特性，以及每个特性在支持下限及以下时的行为。</p>
 
-- Native CSS nesting, so compiled output can stay nested
-- `@layer`, which our [layer order]([[docsref:/getting-started/approach]]) depends on
-- `:focus-visible` for keyboard-only focus styling
-- Container query units and `subgrid`
-- `content-visibility`, `transition-behavior: allow-discrete`, and `@starting-style`, which together animate `<details>` and `<dialog>` open and closed
-- Unprefixed `backdrop-filter`
-- `text-wrap: balance`
-- Range syntax in media queries, such as `@media (width >= 1024px)`
+<div class="table-responsive">
+<table class="table table md:table-stacked">
+    <thead>
+        <tr><th>特性</th><th>使用者</th><th>在受支持浏览器中的行为</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>light-dark()</code></td><td><a href="/docs/customize/color-modes">颜色模式</a>、所有主题令牌</td><td>设定下限的硬性最低值；低于此值无降级</td></tr>
+        <tr><td><code>oklch()</code>、<code>color-mix()</code></td><td><a href="/docs/customize/color">颜色系统</a>、主题变体</td><td>在下限以上完全支持</td></tr>
+        <tr><td>容器查询（<code>@container</code>）</td><td><a href="/docs/components/card#card-groups">卡片组</a>、<a href="/docs/components/list-group#horizontal">水平列表组</a></td><td>在下限以上完全支持；这些组件还要求祖先查询容器（<code>.contains-inline</code>）——没有它则保持堆叠</td></tr>
+        <tr><td><code>:has()</code></td><td>表单、带菜单的按钮组以及其他上下文样式</td><td>在下限以上完全支持</td></tr>
+        <tr><td>原生 <code>&lt;dialog&gt;</code></td><td><a href="/docs/components/dialog">对话框</a>、<a href="/docs/components/drawer">抽屉</a></td><td>在下限以上完全支持；焦点遏制和 <code>inert</code> 行为来自浏览器</td></tr>
+        <tr><td><code>&lt;details name="…"&gt;</code></td><td><a href="/docs/components/accordion">互斥手风琴</a></td><td>在下限以上完全支持；在较旧的不受支持浏览器中，手风琴项会优雅降级为可独立打开的 <code>&lt;details&gt;</code> 元素</td></tr>
+        <tr><td>CSS 滚动捕捉</td><td><a href="/docs/components/carousel">轮播</a></td><td>在下限以上完全支持；原生触摸、滚轮和键盘滚动</td></tr>
+        <tr><td>逻辑属性</td><td>贯穿整个项目的间距、边框和 <a href="/docs/customize/rtl">RTL</a> 支持</td><td>在下限以上完全支持</td></tr>
+    </tbody>
+</table>
+</div>
 
-### Not available yet
+<h3 id="also-safe-to-use">同样可以安全使用<a class="anchor-link" href="#also-safe-to-use" aria-label="链接到 同样可以安全使用"></a></h3>
 
-These features sit above our floors, so v6 cannot use them without a fallback. Firefox is the blocker in nearly every case, which means Chrome support alone is never enough to tell you whether we can ship something.
+<p>这些下限所覆盖的平台范围超过了组件当前使用的范围。以下所有内容在任何 6.x 版本中都无需降级、无需厂商前缀、无需 polyfill，因此当你基于 Bootstrap 构建或为其贡献代码时，可以优先使用它们：</p>
 
-<BsTable>
-| Feature | First fully supported in |
-| --- | --- |
-| Relative color syntax, `rgb(from …)` | Chrome 131, Firefox 133 |
-| View transitions | Firefox 144 |
-| Invoker Commands API (`command` / `commandfor`) | Chrome 135, Firefox 144, Safari 26.2 |
-| `@scope` | Firefox 146 |
-| Anchor positioning | Firefox 147, Safari 26 |
-| Style container queries | Firefox 151 |
-| `text-box-trim` | Firefox 154 |
-| Scrollbar styling | Safari 26.2 |
-</BsTable>
+<ul>
+    <li>原生 CSS 嵌套，因此编译输出可以保持嵌套</li>
+    <li><code>@layer</code>，我们的<a href="/docs/getting-started/approach">层级顺序</a>依赖它</li>
+    <li><code>:focus-visible</code>，用于仅键盘焦点样式</li>
+    <li>容器查询单位和 <code>subgrid</code></li>
+    <li><code>content-visibility</code>、<code>transition-behavior: allow-discrete</code> 和 <code>@starting-style</code>，它们共同为 <code>&lt;details&gt;</code> 和 <code>&lt;dialog&gt;</code> 的打开与关闭添加动画</li>
+    <li>无前缀 <code>backdrop-filter</code></li>
+    <li><code>text-wrap: balance</code></li>
+    <li>媒体查询中的范围语法，例如 <code>@media (width &gt;= 1024px)</code></li>
+</ul>
 
-Relative color syntax is the closest miss, one version above our Chrome floor. Anchor positioning is the one most worth waiting for: it would let Menu, Tooltip, Popover, and Combobox drop their [Floating UI](https://floating-ui.com/) dependency. Re-check these with `npx browserslist` before you assume one has landed.
+<h3 id="not-available-yet">尚不可用<a class="anchor-link" href="#not-available-yet" aria-label="链接到 尚不可用"></a></h3>
 
-## JavaScript
+<p>这些特性位于我们的下限之上，因此 v6 在没有降级的情况下无法使用它们。几乎所有情况下 Firefox 都是阻碍，这意味着仅凭 Chrome 支持永远不足以告诉你我们能否发布某项特性。</p>
 
-Bootstrap’s JavaScript ships as **native ES modules only**. Load it with `<script type="module">`—a classic `<script src>` without `type="module"` will not execute it, and there is no global `window.bootstrap` object. See the [JavaScript getting-started guide]([[docsref:/getting-started/javascript]]) for loading patterns, including import maps for the bundle’s dependencies.
+<div class="table-responsive">
+<table class="table table md:table-stacked">
+    <thead>
+        <tr><th>特性</th><th>首次完全支持于</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>相对颜色语法，<code>rgb(from …)</code></td><td>Chrome 131、Firefox 133</td></tr>
+        <tr><td>视图过渡（View transitions）</td><td>Firefox 144</td></tr>
+        <tr><td>Invoker Commands API（<code>command</code> / <code>commandfor</code>）</td><td>Chrome 135、Firefox 144、Safari 26.2</td></tr>
+        <tr><td><code>@scope</code></td><td>Firefox 146</td></tr>
+        <tr><td>锚点定位（Anchor positioning）</td><td>Firefox 147、Safari 26</td></tr>
+        <tr><td>样式容器查询</td><td>Firefox 151</td></tr>
+        <tr><td><code>text-box-trim</code></td><td>Firefox 154</td></tr>
+        <tr><td>滚动条样式</td><td>Safari 26.2</td></tr>
+    </tbody>
+</table>
+</div>
 
-All browsers meeting the CSS support floor above fully support ES modules, `import`/`export` syntax, and the DOM APIs Bootstrap’s plugins use—no transpilation or polyfills are required or provided.
+<p>相对颜色语法是最接近的未达标项，比我们的 Chrome 下限高一个版本。锚点定位是最值得等待的：它能让 Menu、Tooltip、Popover 和 Combobox 放弃对 <a href="https://floating-ui.com/">Floating UI</a> 的依赖。在假设某项特性已经落地之前，请用 <code>npx browserslist</code> 重新检查这些内容。</p>
 
-## Mobile devices
+<h2 id="javascript">JavaScript<a class="anchor-link" href="#javascript" aria-label="链接到 JavaScript"></a></h2>
 
-Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported. We also exclude UC Browser, QQ Browser, and KaiOS. Together they hold under 1% of users, and including them only adds vendor prefixes to our CSS: `-webkit-mask-*` for UC and QQ, and `-moz-column-gap` for KaiOS. KaiOS additionally [broke our floating labels](https://github.com/postcss/autoprefixer/issues/1533).
+<p>Bootstrap 的 JavaScript 仅以<strong>原生 ES 模块</strong>形式发布。使用 <code>&lt;script type="module"&gt;</code> 加载它——不带 <code>type="module"</code> 的经典 <code>&lt;script src&gt;</code> 不会执行它，而且不存在全局 <code>window.bootstrap</code> 对象。加载模式（包括打包依赖的导入映射）请参阅 <a href="/docs/getting-started/javascript">JavaScript 入门指南</a>。</p>
 
-<BsTable>
-| Platform | Supported browsers |
-| --- | --- |
-| Android | Chrome (last two major versions) |
-| iOS and iPadOS | Safari 18+, Chrome (uses WebKit on iOS) |
-| Windows, macOS, Linux | Chrome 130+, Edge 130+, Firefox 132+; Safari 18+ on macOS |
-</BsTable>
+<p>所有满足上述 CSS 支持下限的浏览器都完全支持 ES 模块、<code>import</code>/<code>export</code> 语法，以及 Bootstrap 插件使用的 DOM API——不需要也不提供转译或 polyfill。</p>
 
-As with v5, make sure you include the responsive viewport meta tag in your `<head>` for proper rendering on mobile devices:
+<h2 id="mobile-devices">移动设备<a class="anchor-link" href="#mobile-devices" aria-label="链接到 移动设备"></a></h2>
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
+<p>一般来说，Bootstrap 支持每个主要平台默认浏览器的最新版本。请注意，不支持代理浏览器（如 Opera Mini、Opera Mobile 的 Turbo 模式、UC Browser Mini、Amazon Silk）。我们同样排除 UC Browser、QQ Browser 和 KaiOS。它们合计占用户不到 1%，纳入它们只会给我们的 CSS 增加厂商前缀：UC 和 QQ 的 <code>-webkit-mask-*</code>，以及 KaiOS 的 <code>-moz-column-gap</code>。KaiOS 还<a href="https://github.com/postcss/autoprefixer/issues/1533">破坏了我们的浮动标签</a>。</p>
+
+<div class="table-responsive">
+<table class="table table md:table-stacked">
+    <thead>
+        <tr><th>平台</th><th>支持的浏览器</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Android</td><td>Chrome（最近两个主要版本）</td></tr>
+        <tr><td>iOS 和 iPadOS</td><td>Safari 18+、Chrome（在 iOS 上使用 WebKit）</td></tr>
+        <tr><td>Windows、macOS、Linux</td><td>Chrome 130+、Edge 130+、Firefox 132+；macOS 上 Safari 18+</td></tr>
+    </tbody>
+</table>
+</div>
+
+<p>与 v5 一样，请确保在 <code>&lt;head&gt;</code> 中包含响应式视口 meta 标签，以便在移动设备上正确渲染：</p>
+
+<CodeWrapper code='<meta name="viewport" content="width=device-width, initial-scale=1">' lang="html" />
+</article>
+
+  <nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#supported-browsers">支持的浏览器</a>
+            <ul>
+                <li><a href="#how-to-read-the-query-list">如何解读查询列表</a></li>
+                <li><a href="#why-these-versions">为什么是这些版本？</a></li>
+            </ul>
+        </li>
+        <li><a href="#modern-platform-features">现代平台特性</a>
+            <ul>
+                <li><a href="#also-safe-to-use">同样可以安全使用</a></li>
+                <li><a href="#not-available-yet">尚不可用</a></li>
+            </ul>
+        </li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#mobile-devices">移动设备</a></li>
+    </ul>
+</nav>
+</template>

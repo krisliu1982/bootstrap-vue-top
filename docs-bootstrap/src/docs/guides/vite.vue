@@ -1,68 +1,57 @@
----
-title: Bootstrap and Vite
-description: The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Vite.
-toc: true
-thumbnail: guides/bootstrap-vite@2x.png
----
+<template>
+   <h1>Bootstrap 与 Vite</h1>
+<p>使用 Vite 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 
 <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-vite.png, /docs/[[config:docs_version]]/assets/img/guides/bootstrap-vite@2x.png 2x" src="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-vite.png" width="1000" height="500" alt="" />
 
-<Callout>
-**Want to skip to the end?** Download the source code and working demo for this guide from the [twbs/examples repository](https://github.com/twbs/examples/tree/main/vite). You can also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html) for live editing.
-</Callout>
+<div class="callout">
+    <p><strong>想直接跳到结尾？</strong> 从 <a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples 仓库</a>下载本指南的源代码和可运行示例。你也可以<a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">在 StackBlitz 中打开该示例</a>进行实时编辑。</p>
+</div>
 
-<Callout type="info">
-**Using an AI coding agent?** Point it at our [`bootstrap-vite` skill](https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-vite) to automate this setup. See [AI]([[docsref:/getting-started/ai]]) for all available skills.
-</Callout>
+<div class="callout">
+    <p><strong>使用 AI 编程代理？</strong> 让它指向我们的 <a href="https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-vite"><code>bootstrap-vite</code> 技能</a>以自动化此设置。有关所有可用技能，请参阅 <a href="[[docsref:/getting-started/ai]]">AI</a>。</p>
+</div>
 
-## What is Vite?
+<h2 id="what-is-vite">什么是 Vite？<a class="anchor-link" href="#what-is-vite" aria-label="链接到 什么是 Vite？"></a></h2>
 
-[Vite](https://vite.dev/) is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.
+<p><a href="https://vite.dev/">Vite</a> 是一个现代前端构建工具，专为速度和简洁性而设计。它提供了高效、精简的开发体验，尤其适用于现代 JavaScript 框架。</p>
 
-## Setup
+<h2 id="setup">设置<a class="anchor-link" href="#setup" aria-label="链接到 设置"></a></h2>
 
-We’re building a Vite project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
+<p>我们将从零开始构建一个使用 Bootstrap 的 Vite 项目，因此在真正开始之前有一些前提条件和前期步骤。本指南要求你已安装 Node.js 并对终端有一定熟悉度。</p>
 
-1. **Create a project folder and set up npm.** We’ll create the `my-project` folder and initialize npm with the `-y` argument to avoid it asking us all the interactive questions.
+<ol>
+    <li>
+        <p><strong>创建项目文件夹并设置 npm。</strong> 我们将创建 <code>my-project</code> 文件夹并使用 <code>-y</code> 参数初始化 npm，以避免它询问所有交互式问题。</p>
+        <pre><code class="language-sh">mkdir my-project &amp;&amp; cd my-project
+npm init -y</code></pre>
+    </li>
+    <li>
+        <p><strong>安装 Vite。</strong> 与我们的 Webpack 指南不同，这里只有一个构建工具依赖项。我们使用 <code>--save-dev</code> 表示此依赖项仅用于开发而非生产环境。</p>
+        <pre><code class="language-sh">npm i --save-dev vite</code></pre>
+    </li>
+    <li>
+        <p><strong>安装 Bootstrap。</strong> 现在我们可以安装 Bootstrap。我们还会安装 Floating UI 和 Vanilla Calendar Pro，因为我们的一些组件依赖它们。如果你不打算使用菜单、弹出框或工具提示，可以省略 Floating UI。如果你不打算使用日期选择器，可以省略 Vanilla Calendar Pro。</p>
+        <pre><code class="language-sh">npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro</code></pre>
+    </li>
+    <li>
+        <p><strong>安装额外依赖项。</strong> 除了 Vite 和 Bootstrap 之外，我们还需要另一个依赖项（Sass）来正确导入和打包 Bootstrap 的 CSS。</p>
+        <pre><code class="language-sh">npm i --save-dev sass</code></pre>
+    </li>
+</ol>
 
-   ```sh
-   mkdir my-project && cd my-project
-   npm init -y
-   ```
+<p>现在我们已经安装了所有必要的依赖项并完成了设置，可以开始创建项目文件并导入 Bootstrap 了。</p>
 
-2. **Install Vite.** Unlike our Webpack guide, there’s only a single build tool dependency here. We use `--save-dev` to signal that this dependency is only for development use and not for production.
+<h2 id="project-structure">项目结构<a class="anchor-link" href="#project-structure" aria-label="链接到 项目结构"></a></h2>
 
-   ```sh
-   npm i --save-dev vite
-   ```
+<p>我们已经创建了 <code>my-project</code> 文件夹并初始化了 npm。现在我们将创建 <code>src</code> 文件夹、样式表和 JavaScript 文件，以完善项目结构。在 <code>my-project</code> 中运行以下命令，或手动创建下面显示的文件夹和文件结构。</p>
 
-3. **Install Bootstrap.** Now we can install Bootstrap. We’ll also install Floating UI and Vanilla Calendar Pro since some of our components depend on them. If you don’t plan on using menus, popovers, or tooltips, you can omit Floating UI. If you don’t plan on using the datepicker, you can omit Vanilla Calendar Pro.
+<pre><code class="language-sh">mkdir {src,src/js,src/scss}
+touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js</code></pre>
 
-   ```sh
-   npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro
-   ```
+<p>完成后，你的完整项目应如下所示：</p>
 
-4. **Install additional dependency.** In addition to Vite and Bootstrap, we need another dependency (Sass) to properly import and bundle Bootstrap’s CSS.
-
-   ```sh
-   npm i --save-dev sass
-   ```
-
-Now that we have all the necessary dependencies installed and set up, we can get to work creating the project files and importing Bootstrap.
-
-## Project structure
-
-We’ve already created the `my-project` folder and initialized npm. Now we’ll also create our `src` folder, stylesheet, and JavaScript file to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
-
-```sh
-mkdir {src,src/js,src/scss}
-touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
-```
-
-When you’re done, your complete project should look like this:
-
-```text
-my-project/
+<pre><code class="language-text">my-project/
 ├── src/
 │   ├── js/
 │   │   └── main.js
@@ -71,112 +60,107 @@ my-project/
 |   └── index.html
 ├── package-lock.json
 ├── package.json
-└── vite.config.js
-```
+└── vite.config.js</code></pre>
 
-At this point, everything is in the right place, but Vite won’t work because we haven’t filled in our `vite.config.js` yet.
+<p>此时，所有内容都在正确的位置，但 Vite 还无法工作，因为我们尚未填写 <code>vite.config.js</code>。</p>
 
-## Configure Vite
+<h2 id="configure-vite">配置 Vite<a class="anchor-link" href="#configure-vite" aria-label="链接到 配置 Vite"></a></h2>
 
-With dependencies installed and our project folder ready for us to start coding, we can now configure Vite and run our project locally.
+<p>依赖项已安装，项目文件夹已准备好开始编码，我们现在可以配置 Vite 并在本地运行项目。</p>
 
-1. **Open `vite.config.js` in your editor.** Since it’s blank, we’ll need to add some boilerplate config to it so we can start our server. This part of the config tells Vite where to look for our project’s JavaScript and how the development server should behave (pulling from the `src` folder with hot reload).
+<ol>
+    <li>
+        <p><strong>在编辑器中打开 <code>vite.config.js</code>。</strong> 由于它是空的，我们需要添加一些样板配置以便启动服务器。这部分配置告诉 Vite 在哪里查找项目的 JavaScript，以及开发服务器应如何行为（从 <code>src</code> 文件夹拉取并支持热重载）。</p>
+        <pre><code class="language-js">import { resolve } from 'path'
 
-   ```js
-   import { resolve } from 'path'
+export default {
+  root: resolve(__dirname, 'src'),
+  build: {
+    outDir: '../dist'
+  },
+  server: {
+    port: 8080
+  }
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>接下来填写 <code>src/index.html</code>。</strong> 这是 Vite 将在浏览器中加载的 HTML 页面，用于使用我们将在后续步骤中添加的打包 CSS 和 JS。</p>
+        <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
+    &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container py-4 px-3 mx-auto"&gt;
+      &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
+      &lt;button class="btn-solid theme-primary"&gt;Primary button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>我们在这里通过 <code>div class="container"</code> 和 <code>&lt;button&gt;</code> 引入了一点 Bootstrap 样式，以便我们看到 Bootstrap 的 CSS 已被 Vite 加载。</p>
+    </li>
+    <li>
+        <p><strong>现在我们需要一个 npm 脚本来运行 Vite。</strong> 打开 <code>package.json</code> 并添加下面显示的 <code>start</code> 脚本（你应该已经有 test 脚本了）。我们将使用此脚本启动本地 Vite 开发服务器。</p>
+        <pre><code class="language-json">{
+  // ...
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+  },
+  // ...
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>最后，我们可以启动 Vite 了。</strong> 在终端中从 <code>my-project</code> 文件夹运行新添加的 npm 脚本：</p>
+        <pre><code class="language-sh">npm start</code></pre>
+        <p><img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/vite-dev-server.png" alt="Vite dev server running" /></p>
+    </li>
+</ol>
 
-   export default {
-     root: resolve(__dirname, 'src'),
-     build: {
-       outDir: '../dist'
-     },
-     server: {
-       port: 8080
-     }
-   }
-   ```
+<p>在本指南的下一节也是最后一节中，我们将导入 Bootstrap 的所有 CSS 和 JavaScript。</p>
 
-2. **Next we fill in `src/index.html`.** This is the HTML page Vite will load in the browser to utilize the bundled CSS and JS we’ll add to it in later steps.
+<h2 id="import-bootstrap">导入 Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="链接到 导入 Bootstrap"></a></h2>
 
-   ```html
-   <!doctype html>
-   <html lang="en">
-     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap w/ Vite</title>
-       <script type="module" src="./js/main.js"></script>
-     </head>
-     <body>
-       <div class="container py-4 px-3 mx-auto">
-         <h1>Hello, Bootstrap and Vite!</h1>
-         <button class="btn-solid theme-primary">Primary button</button>
-       </div>
-     </body>
-   </html>
-   ```
+<ol>
+    <li>
+        <p><strong>导入 Bootstrap 的 CSS。</strong> 将以下内容添加到 <code>src/scss/styles.scss</code> 以导入 Bootstrap 的所有源 Sass。</p>
+        <pre><code class="language-scss">// Import all of Bootstrap’s CSS
+@use "bootstrap/scss/bootstrap";</code></pre>
+        <p><em>如果你愿意，也可以单独导入我们的样式表。<a href="[[docsref:/customize/sass#importing]]">阅读我们的 Sass 导入文档</a>了解详情。</em></p>
+    </li>
+    <li>
+        <p><strong>接下来加载 CSS 并导入 Bootstrap 的 JavaScript。</strong> 将以下内容添加到 <code>src/js/main.js</code> 以加载 CSS 并导入 Bootstrap 的所有 JS。Floating UI 和 Vanilla Calendar Pro 将通过 Bootstrap 自动导入。</p>
+        <pre><code class="language-js">// Import our custom CSS
+import '../scss/styles.scss'
 
-   We’re including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap’s CSS is loaded by Vite.
+// Import all of Bootstrap’s JS
+import * as bootstrap from 'bootstrap'</code></pre>
+        <p>你也可以根据需要单独导入 JavaScript 插件以减小打包体积：</p>
+        <pre><code class="language-js">import Alert from 'bootstrap/js/dist/alert';
 
-3. **Now we need an npm script to run Vite.** Open `package.json` and add the `start` script shown below (you should already have the test script). We’ll use this script to start our local Vite dev server.
-
-   ```json
-   {
-     // ...
-     "scripts": {
-       "start": "vite",
-       "test": "echo \"Error: no test specified\" && exit 1"
-     },
-     // ...
-   }
-   ```
-
-4. **And finally, we can start Vite.** From the `my-project` folder in your terminal, run that newly added npm script:
-
-   ```sh
-   npm start
-   ```
-
-   <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/vite-dev-server.png" alt="Vite dev server running" />
-
-In the next and final section to this guide, we’ll import all of Bootstrap’s CSS and JavaScript.
-
-## Import Bootstrap
-
-1. **Import Bootstrap’s CSS.** Add the following to `src/scss/styles.scss` to import all of Bootstrap’s source Sass.
-
-   ```scss
-   // Import all of Bootstrap’s CSS
-   @use "bootstrap/scss/bootstrap";
-   ```
-
-   *You can also import our stylesheets individually if you want. [Read our Sass import docs]([[docsref:/customize/sass#importing]]) for details.*
-
-2. **Next we load the CSS and import Bootstrap’s JavaScript.** Add the following to `src/js/main.js` to load the CSS and import all of Bootstrap’s JS. Floating UI and Vanilla Calendar Pro will be imported automatically through Bootstrap.
-
-   ```js
-   // Import our custom CSS
-   import '../scss/styles.scss'
-
-   // Import all of Bootstrap’s JS
-   import * as bootstrap from 'bootstrap'
-   ```
-
-   You can also import JavaScript plugins individually as needed to keep bundle sizes down:
-
-   ```js
-   import Alert from 'bootstrap/js/dist/alert';
-
-   // or, specify which plugins you need:
-   import { Tooltip, Toast, Popover } from 'bootstrap';
-   ```
-
-   *[Read our JavaScript docs]([[docsref:/getting-started/javascript/]]) for more information on how to use Bootstrap’s plugins.*
-
-3. **And you’re done! 🎉** With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:
-
-   <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Bootstrap" />
-
-   Now you can start adding any Bootstrap components you want to use. Be sure to [check out the complete Vite example project](https://github.com/twbs/examples/tree/main/vite) for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.
+// or, specify which plugins you need:
+import { Tooltip, Toast, Popover } from 'bootstrap';</code></pre>
+        <p><em><a href="[[docsref:/getting-started/javascript/]]">阅读我们的 JavaScript 文档</a>以了解有关如何使用 Bootstrap 插件的更多信息。</em></p>
+    </li>
+    <li>
+        <p><strong>大功告成！🎉</strong> Bootstrap 的源 Sass 和 JS 已完全加载，你的本地开发服务器现在应如下所示：</p>
+        <p><img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Bootstrap" /></p>
+        <p>现在你可以开始添加任何你想使用的 Bootstrap 组件了。请务必<a href="https://github.com/twbs/examples/tree/main/vite">查看完整的 Vite 示例项目</a>，了解如何包含额外的自定义 Sass，以及通过仅导入你需要的 Bootstrap CSS 和 JS 部分来优化构建。</p>
+    </li>
+</ol>
 
 <GuideFooter />
+
+<nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#what-is-vite">什么是 Vite？</a></li>
+        <li><a href="#setup">设置</a></li>
+        <li><a href="#project-structure">项目结构</a></li>
+        <li><a href="#configure-vite">配置 Vite</a></li>
+        <li><a href="#import-bootstrap">导入 Bootstrap</a></li>
+    </ul>
+</nav>
+</template>

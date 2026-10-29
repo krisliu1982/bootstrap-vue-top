@@ -1,68 +1,57 @@
----
-title: Bootstrap and Webpack
-description: The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Webpack.
-toc: true
-thumbnail: guides/bootstrap-webpack@2x.png
----
+<template>
+<h1>Bootstrap 与 Webpack</h1>
+<p>使用 Webpack 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 
 <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack.png, /docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack@2x.png 2x" src="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack.png" width="1000" height="500" alt=""/>
 
-<Callout>
-**Want to skip to the end?** Download the source code and working demo for this guide from the [twbs/examples repository](https://github.com/twbs/examples/tree/main/webpack). You can also [open the example in StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html) for live editing.
-</Callout>
+<div class="callout callout-info">
+    <p><strong>想直接跳到结尾？</strong> 从 <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples 仓库</a>下载本指南的源代码和可运行示例。你也可以<a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">在 StackBlitz 中打开该示例</a>进行实时编辑。</p>
+</div>
 
-<Callout type="info">
-**Using an AI coding agent?** Point it at our [`bootstrap-webpack` skill](https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-webpack) to automate this setup. See [AI]([[docsref:/getting-started/ai]]) for all available skills.
-</Callout>
+<div class="callout callout-info">
+    <p><strong>使用 AI 编程代理？</strong> 让它指向我们的 <a href="https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-webpack"><code>bootstrap-webpack</code> 技能</a>以自动化此设置。有关所有可用技能，请参阅 <a href="[[docsref:/getting-started/ai]]">AI</a>。</p>
+</div>
 
-## What is Webpack?
+<h2 id="what-is-webpack">什么是 Webpack？<a class="anchor-link" href="#what-is-webpack" aria-label="链接到 什么是 Webpack？">#</a></h2>
 
-[Webpack](https://webpack.js.org/) is a JavaScript module bundler that processes modules and their dependencies to generate static assets. It simplifies managing complex web applications with multiple files and dependencies.
+<p><a href="https://webpack.js.org/">Webpack</a> 是一个 JavaScript 模块打包工具，它处理模块及其依赖关系以生成静态资源。它简化了管理具有多个文件和依赖项的复杂 Web 应用程序的工作。</p>
 
-## Setup
+<h2 id="setup">设置<a class="anchor-link" href="#setup" aria-label="链接到 设置">#</a></h2>
 
-We’re building a Webpack project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.
+<p>我们将从零开始构建一个使用 Bootstrap 的 Webpack 项目，因此在真正开始之前有一些前提条件和前期步骤。本指南要求你已安装 Node.js 并对终端有一定熟悉度。</p>
 
-1. **Create a project folder and set up npm.** We’ll create the `my-project` folder and initialize npm with the `-y` argument to avoid it asking us all the interactive questions.
+<ol>
+    <li>
+        <p><strong>创建项目文件夹并设置 npm。</strong> 我们将创建 <code>my-project</code> 文件夹并使用 <code>-y</code> 参数初始化 npm，以避免它询问所有交互式问题。</p>
+        <pre><code class="language-sh">mkdir my-project &amp;&amp; cd my-project
+npm init -y</code></pre>
+    </li>
+    <li>
+        <p><strong>安装 Webpack。</strong> 接下来我们需要安装 Webpack 开发依赖项：<code>webpack</code> 作为 Webpack 核心，<code>webpack-cli</code> 以便从终端运行 Webpack 命令，<code>webpack-dev-server</code> 以便运行本地开发服务器。此外，我们还会安装 <code>html-webpack-plugin</code>，以便将 <code>index.html</code> 存放在 <code>src</code> 目录中，而非默认的 <code>dist</code> 目录。我们使用 <code>--save-dev</code> 表示这些依赖项仅用于开发而非生产环境。</p>
+        <pre><code class="language-sh">npm i --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin</code></pre>
+    </li>
+    <li>
+        <p><strong>安装 Bootstrap。</strong> 现在我们可以安装 Bootstrap。我们还会安装 Floating UI 和 Vanilla Calendar Pro，因为我们的一些组件依赖它们。如果你不打算使用菜单、弹出框或工具提示，可以省略 Floating UI。如果你不打算使用日期选择器，可以省略 Vanilla Calendar Pro。</p>
+        <pre><code class="language-sh">npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro</code></pre>
+    </li>
+    <li>
+        <p><strong>安装额外依赖项。</strong> 除了 Webpack 和 Bootstrap 之外，我们还需要一些其他依赖项来正确导入和打包 Bootstrap 的 CSS 和 JS。这些包括 Sass、一些加载器和 Autoprefixer。</p>
+        <pre><code class="language-sh">npm i --save-dev autoprefixer css-loader postcss-loader sass sass-loader style-loader</code></pre>
+    </li>
+</ol>
 
-   ```sh
-   mkdir my-project && cd my-project
-   npm init -y
-   ```
+<p>现在我们已经安装了所有必要的依赖项，可以开始创建项目文件并导入 Bootstrap 了。</p>
 
-2. **Install Webpack.** Next we need to install our Webpack development dependencies: `webpack` for the core of Webpack, `webpack-cli` so we can run Webpack commands from the terminal, and `webpack-dev-server` so we can run a local development server. Additionally, we’ll install `html-webpack-plugin` to be able to store our `index.html` in `src` directory instead of the default `dist` one. We use `--save-dev` to signal that these dependencies are only for development use and not for production.
+<h2 id="project-structure">项目结构<a class="anchor-link" href="#project-structure" aria-label="链接到 项目结构">#</a></h2>
 
-   ```sh
-   npm i --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin
-   ```
+<p>我们已经创建了 <code>my-project</code> 文件夹并初始化了 npm。现在我们将创建 <code>src</code> 和 <code>dist</code> 文件夹，以完善项目结构。在 <code>my-project</code> 中运行以下命令，或手动创建下面显示的文件夹和文件结构。</p>
 
-3. **Install Bootstrap.** Now we can install Bootstrap. We’ll also install Floating UI and Vanilla Calendar Pro since some of our components depend on them. If you don’t plan on using menus, popovers, or tooltips, you can omit Floating UI. If you don’t plan on using the datepicker, you can omit Vanilla Calendar Pro.
+<pre><code class="language-sh">mkdir {src,src/js,src/scss}
+touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js</code></pre>
 
-   ```sh
-   npm i --save bootstrap @floating-ui/dom vanilla-calendar-pro
-   ```
+<p>完成后，你的完整项目应如下所示：</p>
 
-4. **Install additional dependencies.** In addition to Webpack and Bootstrap, we need a few more dependencies to properly import and bundle Bootstrap’s CSS and JS with Webpack. These include Sass, some loaders, and Autoprefixer.
-
-   ```sh
-   npm i --save-dev autoprefixer css-loader postcss-loader sass sass-loader style-loader
-   ```
-
-Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.
-
-## Project structure
-
-We’ve already created the `my-project` folder and initialized npm. Now we’ll also create our `src` and `dist` folders to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
-
-```sh
-mkdir {src,src/js,src/scss}
-touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
-```
-
-When you’re done, your complete project should look like this:
-
-```text
-my-project/
+<pre><code class="language-text">my-project/
 ├── src/
 │   ├── js/
 │   │   └── main.js
@@ -71,207 +60,185 @@ my-project/
 │   └── index.html
 ├── package-lock.json
 ├── package.json
-└── webpack.config.js
-```
+└── webpack.config.js</code></pre>
 
-At this point, everything is in the right place, but Webpack won’t work because we haven’t filled in our `webpack.config.js` yet.
+<p>此时，所有内容都在正确的位置，但 Webpack 还无法工作，因为我们尚未填写 <code>webpack.config.js</code>。</p>
 
-## Configure Webpack
+<h2 id="configure-webpack">配置 Webpack<a class="anchor-link" href="#configure-webpack" aria-label="链接到 配置 Webpack">#</a></h2>
 
-With dependencies installed and our project folder ready for us to start coding, we can now configure Webpack and run our project locally.
+<p>依赖项已安装，项目文件夹已准备好开始编码，我们现在可以配置 Webpack 并在本地运行项目。</p>
 
-1. **Open `webpack.config.js` in your editor.** Since it’s blank, we’ll need to add some boilerplate config to it so we can start our server. This part of the config tells Webpack where to look for our project’s JavaScript, where to output the compiled code to (`dist`), and how the development server should behave (pulling from the `dist` folder with hot reload).
+<ol>
+    <li>
+        <p><strong>在编辑器中打开 <code>webpack.config.js</code>。</strong> 由于它是空的，我们需要添加一些样板配置以便启动服务器。这部分配置告诉 Webpack 在哪里查找项目的 JavaScript、将编译后的代码输出到哪里（<code>dist</code>），以及开发服务器应如何行为（从 <code>dist</code> 文件夹拉取并支持热重载）。</p>
+        <pre><code class="language-js">'use strict'
 
-   ```js
-   'use strict'
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-   const path = require('path')
-   const HtmlWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+  mode: 'development',
+  entry: './src/js/main.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  devServer: {
+    static: path.resolve(__dirname, 'dist'),
+    port: 8080,
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.html' })
+  ]
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>接下来填写 <code>src/index.html</code>。</strong> 这是 Webpack 将在浏览器中加载的 HTML 页面，用于使用我们将在后续步骤中添加的打包 CSS 和 JS。在此之前，我们必须给它一些可渲染的内容，并包含上一步生成的 <code>output</code> JS。</p>
+        <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap w/ Webpack&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container py-4 px-3 mx-auto"&gt;
+      &lt;h1&gt;Hello, Bootstrap and Webpack!&lt;/h1&gt;
+      &lt;button class="btn-solid theme-primary"&gt;Primary button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>我们在这里通过 <code>div class="container"</code> 和 <code>&lt;button&gt;</code> 引入了一点 Bootstrap 样式，以便我们看到 Bootstrap 的 CSS 已被 Webpack 加载。</p>
+    </li>
+    <li>
+        <p><strong>现在我们需要一个 npm 脚本来运行 Webpack。</strong> 打开 <code>package.json</code> 并添加下面显示的 <code>start</code> 脚本（你应该已经有 test 脚本了）。我们将使用此脚本启动本地 Webpack 开发服务器。你也可以添加下面显示的 <code>build</code> 脚本来构建项目。</p>
+        <pre><code class="language-json">{
+  // ...
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+  },
+  // ...
+}</code></pre>
+    </li>
+    <li>
+        <p><strong>最后，我们可以启动 Webpack 了。</strong> 在终端中从 <code>my-project</code> 文件夹运行新添加的 npm 脚本：</p>
+        <pre><code class="language-sh">npm start</code></pre>
+        <p><img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server.png" alt="Webpack dev server running"/></p>
+    </li>
+</ol>
 
-   module.exports = {
-     mode: 'development',
-     entry: './src/js/main.js',
-     output: {
-       filename: 'main.js',
-       path: path.resolve(__dirname, 'dist')
-     },
-     devServer: {
-       static: path.resolve(__dirname, 'dist'),
-       port: 8080,
-       hot: true
-     },
-     plugins: [
-       new HtmlWebpackPlugin({ template: './src/index.html' })
-     ]
-   }
-   ```
+<p>在本指南的下一节也是最后一节中，我们将设置 Webpack 加载器并导入 Bootstrap 的所有 CSS 和 JavaScript。</p>
 
-2. **Next we fill in our `src/index.html`.** This is the HTML page Webpack will load in the browser to utilize the bundled CSS and JS we’ll add to it in later steps. Before we can do that, we have to give it something to render and include the `output` JS from the previous step.
+<h2 id="import-bootstrap">导入 Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="链接到 导入 Bootstrap">#</a></h2>
 
-   ```html
-   <!doctype html>
-   <html lang="en">
-     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap w/ Webpack</title>
-     </head>
-     <body>
-       <div class="container py-4 px-3 mx-auto">
-         <h1>Hello, Bootstrap and Webpack!</h1>
-         <button class="btn-solid theme-primary">Primary button</button>
-       </div>
-     </body>
-   </html>
-   ```
+<p>将 Bootstrap 导入 Webpack 需要我们在第一节中安装的加载器。我们已经用 npm 安装了它们，但现在需要配置 Webpack 以使用它们。</p>
 
-   We’re including a little bit of Bootstrap styling here with the `div class="container"` and `<button>` so that we see when Bootstrap’s CSS is loaded by Webpack.
+<ol>
+    <li>
+        <p><strong>在 <code>webpack.config.js</code> 中设置加载器。</strong> 你的配置文件现在已完成，应与下面的代码片段匹配。这里唯一新增的部分是 <code>module</code> 部分。</p>
+        <pre><code class="language-js">'use strict'
 
-3. **Now we need an npm script to run Webpack.** Open `package.json` and add the `start` script shown below (you should already have the test script). We’ll use this script to start our local Webpack dev server. You can also add a `build` script shown below to build your project.
+const path = require('path')
+const autoprefixer = require('autoprefixer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-   ```json
-   {
-     // ...
-     "scripts": {
-       "start": "webpack serve",
-       "build": "webpack build --mode=production",
-       "test": "echo \"Error: no test specified\" && exit 1"
-     },
-     // ...
-   }
-   ```
+module.exports = {
+  mode: 'development',
+  entry: './src/js/main.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  devServer: {
+    static: path.resolve(__dirname, 'dist'),
+    port: 8080,
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: './src/index.html' })
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(scss)$/,
+        use: [
+          {
+            // Adds CSS to the DOM by injecting a `&lt;style&gt;` tag
+            loader: 'style-loader'
+          },
+          {
+            // Interprets `@import` and `url()` like `import/require()` and will resolve them
+            loader: 'css-loader'
+          },
+          {
+            // Loader for webpack to process CSS with PostCSS
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer
+                ]
+              }
+            }
+          },
+          {
+            // Loads a SASS/SCSS file and compiles it to CSS
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+        <p>以下是为什么我们需要所有这些加载器的简要回顾。<code>style-loader</code> 将 CSS 注入到 HTML 页面 <code>&lt;head&gt;</code> 中的 <code>&lt;style&gt;</code> 元素中，<code>css-loader</code> 帮助处理 <code>@import</code> 和 <code>url()</code>，<code>postcss-loader</code> 是 Autoprefixer 所需的，而 <code>sass-loader</code> 允许我们使用 Sass。</p>
+    </li>
+    <li>
+        <p><strong>现在，让我们导入 Bootstrap 的 CSS。</strong> 将以下内容添加到 <code>src/scss/styles.scss</code> 以导入 Bootstrap 的所有源 Sass。</p>
+        <pre><code class="language-scss">// Import all of Bootstrap’s CSS
+@use "bootstrap/scss/bootstrap";</code></pre>
+        <p><em>如果你愿意，也可以单独导入我们的样式表。<a href="[[docsref:/customize/sass#importing]]">阅读我们的 Sass 导入文档</a>了解详情。</em></p>
+    </li>
+    <li>
+        <p><strong>接下来加载 CSS 并导入 Bootstrap 的 JavaScript。</strong> 将以下内容添加到 <code>src/js/main.js</code> 以加载 CSS 并导入 Bootstrap 的所有 JS。Floating UI 和 Vanilla Calendar Pro 将通过 Bootstrap 自动导入。</p>
+        <pre><code class="language-js">// Import our custom CSS
+import '../scss/styles.scss'
 
-4. **And finally, we can start Webpack.** From the `my-project` folder in your terminal, run that newly added npm script:
+// Import all of Bootstrap’s JS
+import * as bootstrap from 'bootstrap'</code></pre>
+        <p>你也可以根据需要单独导入 JavaScript 插件以减小打包体积：</p>
+        <pre><code class="language-js">import Alert from 'bootstrap/js/dist/alert'
 
-   ```sh
-   npm start
-   ```
+// or, specify which plugins you need:
+import { Tooltip, Toast, Popover } from 'bootstrap'</code></pre>
+        <p><em><a href="[[docsref:/getting-started/javascript/]]">阅读我们的 JavaScript 文档</a>以了解有关如何使用 Bootstrap 插件的更多信息。</em></p>
+    </li>
+    <li>
+        <p><strong>大功告成！🎉</strong> Bootstrap 的源 Sass 和 JS 已完全加载，你的本地开发服务器现在应如下所示：</p>
+        <p><img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server-bootstrap.png" alt="Webpack dev server running with Bootstrap"/></p>
+        <p>现在你可以开始添加任何你想使用的 Bootstrap 组件了。请务必<a href="https://github.com/twbs/examples/tree/main/webpack">查看完整的 Webpack 示例项目</a>，了解如何包含额外的自定义 Sass，以及通过仅导入你需要的 Bootstrap CSS 和 JS 部分来优化构建。</p>
+    </li>
+</ol>
 
-   <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server.png" alt="Webpack dev server running"/>
+<h2 id="production-optimizations">生产环境优化<a class="anchor-link" href="#production-optimizations" aria-label="链接到 生产环境优化">#</a></h2>
 
-In the next and final section to this guide, we’ll set up the Webpack loaders and import all of Bootstrap’s CSS and JavaScript.
+<p>根据你的配置，你可能需要实施一些额外的安全和速度优化，以便在生产环境中运行项目。请注意，这些优化并未应用于<a href="https://github.com/twbs/examples/tree/main/webpack">Webpack 示例项目</a>，需要你自行实施。</p>
 
-## Import Bootstrap
+<h3 id="extracting-css">提取 CSS<a class="anchor-link" href="#extracting-css" aria-label="链接到 提取 CSS">#</a></h3>
 
-Importing Bootstrap into Webpack requires the loaders we installed in the first section. We’ve installed them with npm, but now Webpack needs to be configured to use them.
+<p>我们上面配置的 <code>style-loader</code> 会方便地将 CSS 输出到打包文件中，因此无需在 <code>dist/index.html</code> 中手动加载 CSS 文件。然而，这种方法可能不适用于严格的内容安全策略（CSP），并且由于打包体积较大，可能会成为应用程序的瓶颈。</p>
 
-1. **Set up the loaders in `webpack.config.js`.** Your configuration file is now complete and should match the snippet below. The only new part here is the `module` section.
+<p>要将 CSS 分离出来以便直接从 <code>dist/index.html</code> 加载，请使用 <code>mini-css-extract-plugin</code> Webpack 插件。</p>
 
-   ```js
-   'use strict'
+<p>首先，安装插件：</p>
 
-   const path = require('path')
-   const autoprefixer = require('autoprefixer')
-   const HtmlWebpackPlugin = require('html-webpack-plugin')
+<pre><code class="language-sh">npm install --save-dev mini-css-extract-plugin</code></pre>
 
-   module.exports = {
-     mode: 'development',
-     entry: './src/js/main.js',
-     output: {
-       filename: 'main.js',
-       path: path.resolve(__dirname, 'dist')
-     },
-     devServer: {
-       static: path.resolve(__dirname, 'dist'),
-       port: 8080,
-       hot: true
-     },
-     plugins: [
-       new HtmlWebpackPlugin({ template: './src/index.html' })
-     ],
-     module: {
-       rules: [
-         {
-           test: /\.(scss)$/,
-           use: [
-             {
-               // Adds CSS to the DOM by injecting a `<style>` tag
-               loader: 'style-loader'
-             },
-             {
-               // Interprets `@import` and `url()` like `import/require()` and will resolve them
-               loader: 'css-loader'
-             },
-             {
-               // Loader for webpack to process CSS with PostCSS
-               loader: 'postcss-loader',
-               options: {
-                 postcssOptions: {
-                   plugins: [
-                     autoprefixer
-                   ]
-                 }
-               }
-             },
-             {
-               // Loads a SASS/SCSS file and compiles it to CSS
-               loader: 'sass-loader'
-             }
-           ]
-         }
-       ]
-     }
-   }
-   ```
+<p>然后在 Webpack 配置中实例化并使用该插件：</p>
 
-   Here’s a recap of why we need all these loaders. `style-loader` injects the CSS into a `<style>` element in the `<head>` of the HTML page, `css-loader` helps with using `@import` and `url()`, `postcss-loader` is required for Autoprefixer, and `sass-loader` allows us to use Sass.
-
-2. **Now, let’s import Bootstrap’s CSS.** Add the following to `src/scss/styles.scss` to import all of Bootstrap’s source Sass.
-
-   ```scss
-   // Import all of Bootstrap’s CSS
-   @use "bootstrap/scss/bootstrap";
-   ```
-
-   *You can also import our stylesheets individually if you want. [Read our Sass import docs]([[docsref:/customize/sass#importing]]) for details.*
-
-3. **Next we load the CSS and import Bootstrap’s JavaScript.** Add the following to `src/js/main.js` to load the CSS and import all of Bootstrap’s JS. Floating UI and Vanilla Calendar Pro will be imported automatically through Bootstrap.
-
-   ```js
-   // Import our custom CSS
-   import '../scss/styles.scss'
-
-   // Import all of Bootstrap’s JS
-   import * as bootstrap from 'bootstrap'
-   ```
-
-   You can also import JavaScript plugins individually as needed to keep bundle sizes down:
-
-   ```js
-   import Alert from 'bootstrap/js/dist/alert'
-
-   // or, specify which plugins you need:
-   import { Tooltip, Toast, Popover } from 'bootstrap'
-   ```
-
-   *[Read our JavaScript docs]([[docsref:/getting-started/javascript/]]) for more information on how to use Bootstrap’s plugins.*
-
-4. **And you’re done! 🎉** With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:
-
-   <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server-bootstrap.png" alt="Webpack dev server running with Bootstrap"/>
-
-   Now you can start adding any Bootstrap components you want to use. Be sure to [check out the complete Webpack example project](https://github.com/twbs/examples/tree/main/webpack) for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.
-
-## Production optimizations
-
-Depending on your setup, you may want to implement some additional security and speed optimizations useful for running the project in production. Note that these optimizations are not applied on [the Webpack example project](https://github.com/twbs/examples/tree/main/webpack) and are up to you to implement.
-
-### Extracting CSS
-
-The `style-loader` we configured above conveniently emits CSS into the bundle so that manually loading a CSS file in `dist/index.html` isn’t necessary. This approach may not work with a strict Content Security Policy, however, and it may become a bottleneck in your application due to the large bundle size.
-
-To separate the CSS so that we can load it directly from `dist/index.html`, use the `mini-css-extract-loader` Webpack plugin.
-
-First, install the plugin:
-
-```sh
-npm install --save-dev mini-css-extract-plugin
-```
-
-Then instantiate and use the plugin in the Webpack configuration:
-
-```diff
---- a/webpack.config.js
+<pre><code class="language-diff">--- a/webpack.config.js
 +++ b/webpack.config.js
 @@ -3,6 +3,7 @@
  const path = require('path')
@@ -295,37 +262,35 @@ Then instantiate and use the plugin in the Webpack configuration:
          test: /\.(scss)$/,
          use: [
            {
--            // Adds CSS to the DOM by injecting a `<style>` tag
+-            // Adds CSS to the DOM by injecting a `&lt;style&gt;` tag
 -            loader: 'style-loader'
 +            // Extracts CSS for each JS file that includes CSS
 +            loader: miniCssExtractPlugin.loader
            },
            {
-```
+</code></pre>
 
-After running `npm run build` again, there will be a new file `dist/main.css`, which will contain all of the CSS imported by `src/js/main.js`. If you view `dist/index.html` in your browser now, the style will be missing, as it is now in `dist/main.css`. You can include the generated CSS in `dist/index.html` like this:
+<p>再次运行 <code>npm run build</code> 后，将生成一个新文件 <code>dist/main.css</code>，其中包含由 <code>src/js/main.js</code> 导入的所有 CSS。如果你现在在浏览器中查看 <code>dist/index.html</code>，样式将缺失，因为它现在位于 <code>dist/main.css</code> 中。你可以像这样在 <code>dist/index.html</code> 中包含生成的 CSS：</p>
 
-```diff
---- a/dist/index.html
+<pre><code class="language-diff">--- a/dist/index.html
 +++ b/dist/index.html
 @@ -3,6 +3,7 @@
-   <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-+    <link rel="stylesheet" href="./main.css">
-     <title>Bootstrap w/ Webpack</title>
-   </head>
-   <body>
-```
+   &lt;head&gt;
+     &lt;meta charset="utf-8"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
++    &lt;link rel="stylesheet" href="./main.css"&gt;
+     &lt;title&gt;Bootstrap w/ Webpack&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+</code></pre>
 
-### Extracting SVG files
+<h3 id="extracting-svg-files">提取 SVG 文件<a class="anchor-link" href="#extracting-svg-files" aria-label="链接到 提取 SVG 文件">#</a></h3>
 
-Bootstrap’s CSS includes multiple references to SVG files via inline `data:` URIs—mostly as `mask-image` icons (close buttons, carousel controls, and more), with a few remaining `background-image` cases such as select carets. If you define a Content Security Policy for your project that blocks `data:` URIs for images, then these SVG files will not load. You can get around this problem by extracting the inline SVG files using Webpack’s asset modules feature.
+<p>Bootstrap 的 CSS 通过内联 <code>data:</code> URI 多次引用 SVG 文件——主要是作为 <code>mask-image</code> 图标（关闭按钮、轮播控件等），还有少数剩余的 <code>background-image</code> 情况，例如 select 箭头。如果你为项目定义了阻止图像使用 <code>data:</code> URI 的内容安全策略，那么这些 SVG 文件将无法加载。你可以使用 Webpack 的资源模块功能提取内联 SVG 文件来绕过此问题。</p>
 
-Configure Webpack to extract inline SVG files like this:
+<p>像这样配置 Webpack 以提取内联 SVG 文件：</p>
 
-```diff
---- a/webpack.config.js
+<pre><code class="language-diff">--- a/webpack.config.js
 +++ b/webpack.config.js
 @@ -23,6 +23,14 @@ module.exports = {
    },
@@ -342,8 +307,25 @@ Configure Webpack to extract inline SVG files like this:
        {
          test: /\.(scss)$/,
          use: [
-```
+</code></pre>
 
-After running `npm run build` again, you’ll find the SVG files extracted into `dist/icons` and properly referenced from CSS.
+<p>再次运行 <code>npm run build</code> 后，你将发现 SVG 文件被提取到 <code>dist/icons</code> 中，并从 CSS 中正确引用。</p>
 
 <GuideFooter />
+
+<nav class="docs-toc" id="table-of-contents" aria-label="目录">
+    <ul>
+        <li><a href="#what-is-webpack">什么是 Webpack？</a></li>
+        <li><a href="#setup">设置</a></li>
+        <li><a href="#project-structure">项目结构</a></li>
+        <li><a href="#configure-webpack">配置 Webpack</a></li>
+        <li><a href="#import-bootstrap">导入 Bootstrap</a></li>
+        <li><a href="#production-optimizations">生产环境优化</a>
+            <ul>
+                <li><a href="#extracting-css">提取 CSS</a></li>
+                <li><a href="#extracting-svg-files">提取 SVG 文件</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</template>

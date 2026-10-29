@@ -21,7 +21,7 @@
               <div class="vr"></div>
               <div>
                 <a
-                  v-menu
+                  data-bs-toggle="menu"
                   class="icon-link theme-inverse text-decoration-none"
                   title="文字大小"
                   href="#"
