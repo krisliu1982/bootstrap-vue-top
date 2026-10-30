@@ -22,12 +22,11 @@ export default defineConfig({
   base: '/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'bootstrap-vue-top': fileURLToPath(new URL('../src/index.js', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
   server: {//开发配置  npm run dev
-    port: 8888,//端口号
+    port: 8885,//端口号
     host: '0.0.0.0',
     open: true,//是否自动打开浏览器
   },
