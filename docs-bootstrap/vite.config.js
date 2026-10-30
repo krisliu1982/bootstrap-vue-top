@@ -27,7 +27,7 @@ export default defineConfig({
     },
   },
   server: {//开发配置  npm run dev
-    port: 8888,//端口号
+    port: 8886,//端口号
     host: '0.0.0.0',
     open: true,//是否自动打开浏览器
   }

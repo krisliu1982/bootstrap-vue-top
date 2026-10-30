@@ -17,7 +17,7 @@ const routes = [
 ];
 
 // Create a flat array of all pages with their groups, handling nested groups
-const allUrl = data.sidebar.flatMap((group) => {
+const allPage = data.sidebar.flatMap((group) => {
   if (!group.pages) return []
   return group.pages.flatMap((item) => {
     // Handle nested groups (e.g., Utilities > Borders > Border)
@@ -46,13 +46,13 @@ const docsRoutes = {
   children: [
     {
       path: '',
-      redirect: `/docs/${allUrl[0].groupSlug}/${allUrl[0].pageSlug}`
+      redirect: `/docs/${allPage[0].groupSlug}/${allPage[0].pageSlug}`
     }
   ],
   alias:['/docs']
 }
 
-allUrl.forEach((page) => {
+allPage.forEach((page) => {
   docsRoutes.children.push({
     path: `/docs/${page.groupSlug}/${page.pageSlug}`,
     component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.vue`),
