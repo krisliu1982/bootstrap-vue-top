@@ -1,0 +1,5 @@
+
+<template>
+  <h1>Colored links</h1>
+  <p>Colored links with hover states</p>
+</template>
