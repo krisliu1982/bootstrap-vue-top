@@ -4,7 +4,7 @@
     <h1>Bootstrap and Webpack</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Webpack.</p>
 
-    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack.png, /docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack@2x.png 2x" src="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-webpack.png" width="800" height="400" alt=""/><Callout>
+    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png" width="800" height="400" alt=""/><Callout>
     <p><strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples repository</a>. You can also <a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">open the example in StackBlitz</a> for live editing.</p>
     </Callout><h2 id="what-is-webpack">What is Webpack?<a class="anchor-link" href="#what-is-webpack" aria-label="Link to What is Webpack?"></a></h2>
     <p><a href="https://webpack.js.org/">Webpack</a> is a JavaScript module bundler that processes modules and their dependencies to generate static assets. It simplifies managing complex web applications with multiple files and dependencies.</p>
@@ -108,7 +108,7 @@
     <li><p><strong>And finally, we can start Webpack.</strong> From the <code>my-project</code> folder in your terminal, run that newly added npm script:</p>
     <pre><code class="language-sh">npm start
     </code></pre>
-    <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server.png" alt="Webpack dev server running"/></li>
+    <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/webpack-dev-server.png" alt="Webpack dev server running"/></li>
     </ol>
     <p>In the next and final section to this guide, we&#39;ll set up the Webpack loaders and import all of Bootstrap’s CSS and JavaScript.</p>
     <h2 id="import-bootstrap">Import Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="Link to Import Bootstrap"></a></h2>
@@ -206,7 +206,7 @@
     <p><em><a href="[[docsref:/getting-started/javascript/]]">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
     </li>
     <li><p><strong>And you’re done! 🎉</strong> With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:</p>
-    <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/webpack-dev-server-bootstrap.png" alt="Webpack dev server running with Bootstrap"/><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/webpack">check out the complete Webpack example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>
+    <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/webpack-dev-server-bootstrap.png" alt="Webpack dev server running with Bootstrap"/><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/webpack">check out the complete Webpack example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>
     </li>
     </ol>
     <h2 id="production-optimizations">Production optimizations<a class="anchor-link" href="#production-optimizations" aria-label="Link to Production optimizations"></a></h2>

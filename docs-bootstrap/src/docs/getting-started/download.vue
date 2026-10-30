@@ -89,7 +89,7 @@
     <pre><code class="language-powershell">Install-Package bootstrap.sass
     </code></pre>
     <h2 id="intellisense-extension">IntelliSense extension<a class="anchor-link" href="#intellisense-extension" aria-label="Link to IntelliSense extension"></a></h2>
-    <img class="d-block mb-4 img-fluid rounded-3" src="/docs/[[config:docs_version]]/assets/img/bootstrap-intellisense-autocomplete.png" width="573" height="332" alt="" /><p>Install the community-maintained <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense extension</a> for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.</p>
+    <img class="d-block mb-4 img-fluid rounded-3" src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-intellisense-autocomplete.png" width="573" height="332" alt="" /><p>Install the community-maintained <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense extension</a> for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.</p>
     <p><a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">View in VS Code Marketplace</a></p>
   </article>
 </template>

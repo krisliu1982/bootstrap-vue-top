@@ -4,7 +4,7 @@
     <h1>Bootstrap and Parcel</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
 
-    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-parcel.png, /docs/[[config:docs_version]]/assets/img/guides/bootstrap-parcel@2x.png 2x" src="/docs/[[config:docs_version]]/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt=""/><Callout>
+    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="800" height="400" alt=""/><Callout>
     <p><strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples repository</a>. You can also <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">open the example in StackBlitz</a> but not run it because Parcel isn’t currently supported there.</p>
     </Callout><h2 id="what-is-parcel">What is Parcel?<a class="anchor-link" href="#what-is-parcel" aria-label="Link to What is Parcel?"></a></h2>
     <p><a href="https://parceljs.org/">Parcel</a> is a web application bundler designed to simplify the development process with a zero-configuration setup out of the box. It offers features found in more advanced bundlers while focusing on ease of use, making it ideal for developers seeking a quick start.</p>
@@ -81,7 +81,7 @@
     <li><p><strong>And finally, we can start Parcel.</strong> From the <code>my-project</code> folder in your terminal, run that newly added npm script:</p>
     <pre><code class="language-sh">npm start
     </code></pre>
-    <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/parcel-dev-server.png" alt="Parcel dev server running" /></li>
+    <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server.png" alt="Parcel dev server running" /></li>
     </ol>
     <p>In the next and final section to this guide, we&#39;ll import all of Bootstrap’s CSS and JavaScript.</p>
     <h2 id="import-bootstrap">Import Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="Link to Import Bootstrap"></a></h2>
@@ -111,7 +111,7 @@
     <p><em><a href="[[docsref:/getting-started/javascript/]]">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
     </li>
     <li><p><strong>And you’re done! 🎉</strong> With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:</p>
-    <img class="img-fluid" src="/docs/[[config:docs_version]]/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Bootstrap" /><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/parcel">check out the complete Parcel example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>
+    <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Bootstrap" /><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/parcel">check out the complete Parcel example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>
     </li>
     </ol>
     <GuideFooter />
