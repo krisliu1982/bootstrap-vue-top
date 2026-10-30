@@ -14,7 +14,7 @@
   </div> -->
 
   <div class="container-xxl">
-    <div class="d-flex gap-4 mt-3">
+    <div class="docs-layout">
       <!--       <bv-offcanvas
         ref="offcanvasRef"
         title="文档菜单"
