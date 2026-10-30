@@ -17,7 +17,10 @@ const routes = [
 ];
 
 const allpage = data.sidebar.flatMap((group) => {
-  if (!group.pages) return []
+  if (!group.pages) return {
+    groupSlug: group.slug,
+    pageSlug: null
+  }
   return group.pages.flatMap((item) => {
     // Handle direct pages
     if (item.title) {
@@ -41,14 +44,21 @@ const docsRoutes = {
       redirect: `/docs/${allpage[0].groupSlug}/${allpage[0].pageSlug}`
     }
   ],
-  alias:['/docs']
+  alias: ['/docs']
 }
 
 allpage.forEach((page) => {
-  docsRoutes.children.push({
-    path: `/docs/${page.groupSlug}/${page.pageSlug}`,
-    component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.vue`),
-  })
+  if (page.pageSlug) {
+    docsRoutes.children.push({
+      path: `/docs/${page.groupSlug}/${page.pageSlug}`,
+      component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.vue`),
+    })
+  } else {
+    docsRoutes.children.push({
+      path: `/docs/${page.groupSlug}`,
+      component: () => import(`@/docs/${page.groupSlug}.vue`),
+    })
+  }
 })
 
 routes.push(docsRoutes)

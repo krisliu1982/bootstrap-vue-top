@@ -23,11 +23,10 @@
       <aside class="docs-sidebar">
         <nav ref="menuRef">
           <div v-for="t in data.sidebar">
+            <template v-if="t.pages">
             <div class="d-flex align-items-center gap-2 mb-1">
-              <div class="bg-primary rounded-circle" style="width: 0.375rem;height: 0.375rem;"></div>
-              <div class="fw-bold">
-              <span class="small">{{ t['zh-CN']}} <small class="text-secondary">{{ t.title }}</small></span>
-              </div>
+              <div class="bg-primary rounded-circle" style="width: 0.5rem;height: 0.5rem;"></div>
+              <span class="small fw-bold">{{ t['zh-CN']}} <small class="text-secondary">{{ t.title }}</small></span>
             </div>
             <ul>
               <li v-for="tt in t.pages">
@@ -36,6 +35,13 @@
                   </RouterLink>
               </li>
             </ul>
+            </template>
+            <template v-else>
+              <hr/>
+                                <RouterLink :to="`/docs/${t.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                    <span class="small">{{ t['zh-CN']}} <small>{{ t.title }}</small></span>
+                  </RouterLink>
+            </template>
           </div>
         </nav>
       </aside>
