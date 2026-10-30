@@ -1,3 +1,4 @@
 <template>
-  <h1>Hello world!</h1>
+  <h1>Get started with Bootstrap</h1>
+  <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
 </template>
