@@ -1,4 +1,4 @@
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
 <p>Things to know when using the tooltip plugin:</p>
 <ul>
 <li>Tooltips rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include <a href="[[config:cdn.popper]]">popper.min.js</a> before <code>bootstrap.js</code>, or use one <code>bootstrap.bundle.min.js</code> which contains Popper.</li>
@@ -12,22 +12,22 @@
 <li>Tooltips can be triggered thanks to an element inside a shadow DOM.</li>
 </ul>
 <p>Got all that? Great, let’s see how they work with some examples.</p>
-<Callout name="info-sanitizer" /><Callout name="info-prefersreducedmotion" /><h2 id="examples">Examples</h2>
-<h3 id="enable-tooltips">Enable tooltips</h3>
+<Callout name="info-sanitizer" /><Callout name="info-prefersreducedmotion" /><h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
+<h3 id="enable-tooltips">Enable tooltips<a class="anchor-link" href="#enable-tooltips" aria-label="Link to Enable tooltips"></a></h3>
 <p>As mentioned above, you must initialize tooltips before they can be used. One way to initialize all tooltips on a page would be to select them by their <code>data-bs-toggle</code> attribute, like so:</p>
 <pre><code class="language-js">const tooltipTriggerList = document.querySelectorAll(&#39;[data-bs-toggle=&quot;tooltip&quot;]&#39;)
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new bootstrap.Tooltip(tooltipTriggerEl))
 </code></pre>
-<h3 id="tooltips-on-links">Tooltips on links</h3>
+<h3 id="tooltips-on-links">Tooltips on links<a class="anchor-link" href="#tooltips-on-links" aria-label="Link to Tooltips on links"></a></h3>
 <p>Hover over the links below to see tooltips:</p>
-<Example addStackblitzJs class="tooltip-demo" code={`<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>`} /><Callout name="warning-data-bs-title-vs-title" type="warning" /><h3 id="custom-tooltips">Custom tooltips</h3>
+<Example addStackblitzJs class="tooltip-demo" code={`<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>`} /><Callout name="warning-data-bs-title-vs-title" type="warning" /><h3 id="custom-tooltips">Custom tooltips<a class="anchor-link" href="#custom-tooltips" aria-label="Link to Custom tooltips"></a></h3>
 <AddedIn version="5.2.0" /><p>You can customize the appearance of tooltips using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> to scope our custom appearance and use it to override a local CSS variable.</p>
 <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" /><Example addStackblitzJs class="tooltip-demo" code={`<button type="button" class="btn btn-secondary"
           data-bs-toggle="tooltip" data-bs-placement="top"
           data-bs-custom-class="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables.">
     Custom tooltip
-  </button>`} /><h3 id="directions">Directions</h3>
+  </button>`} /><h3 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h3>
 <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.</p>
 <Example showMarkup={false} class="tooltip-demo" code={`<div class="bd-example-tooltips">
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Tooltip on top</button>
@@ -61,11 +61,11 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
       <circle cx="50" cy="50" r="30" fill="#007bff"/>
     </svg>
   </a>
-</div><h2 id="css">CSS</h2>
-<h3 id="variables">Variables</h3>
+</div><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+<h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
 <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, tooltips now use local CSS variables on <code>.tooltip</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<ScssDocs name="tooltip-css-vars" file="scss/_tooltip.scss" /><h3 id="sass-variables">Sass variables</h3>
-<ScssDocs name="tooltip-variables" file="scss/_variables.scss" /><h2 id="usage">Usage</h2>
+<ScssDocs name="tooltip-css-vars" file="scss/_tooltip.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+<ScssDocs name="tooltip-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
 <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element. Trigger the tooltip via JavaScript:</p>
 <pre><code class="language-js">const exampleEl = document.getElementById(&#39;example&#39;)
 const tooltip = new bootstrap.Tooltip(exampleEl, options)
@@ -76,7 +76,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
   boundary: document.body // or document.querySelector(&#39;#boundary&#39;)
 })
 </code></pre>
-</Callout><h3 id="markup">Markup</h3>
+</Callout><h3 id="markup">Markup<a class="anchor-link" href="#markup" aria-label="Link to Markup"></a></h3>
 <p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
 <Callout type="warning">
 <p><strong>Keep tooltips accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce tooltips in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your tooltips as this will make them impossible to trigger for keyboard users.</p>
@@ -91,11 +91,11 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-<h3 id="disabled-elements">Disabled elements</h3>
+<h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
 <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
 <Example class="tooltip-demo" addStackblitzJs code={`<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
     <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-  </span>`} /><h3 id="options">Options</h3>
+  </span>`} /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
 <JsDataAttributes /><Callout type="warning">
 <p>Note that for security reasons the <code>sanitize</code>, <code>sanitizeFn</code>, and <code>allowList</code> options cannot be supplied using data attributes.</p>
 </Callout><BsTable>
@@ -223,7 +223,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
   }
 })
 </code></pre>
-<h3 id="methods">Methods</h3>
+<h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
 <Callout name="danger-async-methods" type="danger" /><BsTable>
 <table>
 <thead>
@@ -284,7 +284,7 @@ tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
 </code></pre>
 <Callout>
 <p>The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the tooltip template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> | <code>null</code></p>
-</Callout><h3 id="events">Events</h3>
+</Callout><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
 <BsTable>
 <table>
 <thead>

@@ -1,4 +1,4 @@
-<h2 id="colors">Colors</h2>
+<h2 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h2>
 <AddedIn version="5.3.0" /><p>Bootstrap’s color palette has continued to expand and become more nuanced in v5.3.0. We’ve added new variables for <code>secondary</code> and <code>tertiary</code> text and background colors, plus <code>{color}-bg-subtle</code>, <code>{color}-border-subtle</code>, and <code>{color}-text-emphasis</code> for our theme colors. These new colors are available through Sass and CSS variables (but not our color maps or utility classes) with the express goal of making it easier to customize across multiple colors modes like light and dark. These new variables are globally set on <code>:root</code> and are adapted for our new dark color mode while our original theme colors remain unchanged.</p>
 <p>Colors ending in <code>-rgb</code> provide the <code>red, green, blue</code> values for use in <code>rgb()</code> and <code>rgba()</code> color modes. For example, <code>rgba(var(--bs-secondary-bg-rgb), .5)</code>.</p>
 <Callout type="warning">
@@ -339,11 +339,11 @@
       </tr>
     </tbody>
   </table>
-</div><h3 id="using-the-new-colors">Using the new colors</h3>
+</div><h3 id="using-the-new-colors">Using the new colors<a class="anchor-link" href="#using-the-new-colors" aria-label="Link to Using the new colors"></a></h3>
 <p>These new colors are accessible via CSS variables and utility classes—like <code>--bs-primary-bg-subtle</code> and <code>.bg-primary-subtle</code>—allowing you to compose your own CSS rules with the variables, or to quickly apply styles via classes. The utilities are built with the color’s associated CSS variables, and since we customize those CSS variables for dark mode, they are also adaptive to color mode by default.</p>
 <Example code={`<div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
     Example element with utilities
-  </div>`} /><h3 id="theme-colors">Theme colors</h3>
+  </div>`} /><h3 id="theme-colors">Theme colors<a class="anchor-link" href="#theme-colors" aria-label="Link to Theme colors"></a></h3>
 <p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap’s <code>scss/_variables.scss</code> file.</p>
 <div class="row">
   {getData('theme-colors').map((themeColor) => {
@@ -355,7 +355,7 @@
   })}
 </div><p>All these colors are available as a Sass map, <code>$theme-colors</code>.</p>
 <ScssDocs name="theme-colors-map" file="scss/_variables.scss" /><p>Check out <a href="[[docsref:/customize/sass#maps-and-loops]]">our Sass maps and loops docs</a> for how to modify these colors.</p>
-<h3 id="all-colors">All colors</h3>
+<h3 id="all-colors">All colors<a class="anchor-link" href="#all-colors" aria-label="Link to All colors"></a></h3>
 <p>All Bootstrap colors are available as Sass variables and a Sass map in <code>scss/_variables.scss</code> file. To avoid increased file sizes, we don’t create text or background color classes for each of these variables. Instead, we choose a subset of these colors for a <a href="#theme-colors">theme palette</a>.</p>
 <p>Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors—one for the swatch’s current colors, one for against white, and one for against black.</p>
 <div class="row font-monospace">
@@ -393,11 +393,11 @@
       #fff
     </div>
   </div>
-</div><h3 id="notes-on-sass">Notes on Sass</h3>
+</div><h3 id="notes-on-sass">Notes on Sass<a class="anchor-link" href="#notes-on-sass" aria-label="Link to Notes on Sass"></a></h3>
 <p>Sass cannot programmatically generate variables, so we manually created variables for every tint and shade ourselves. We specify the midpoint value (e.g., <code>$blue-500</code>) and use custom color functions to tint (lighten) or shade (darken) our colors via Sass’s <code>mix()</code> color function.</p>
 <p>Using <code>mix()</code> is not the same as <code>lighten()</code> and <code>darken()</code>—the former blends the specified color with white or black, while the latter only adjusts the lightness value of each color. The result is a much more complete suite of colors, as <a href="https://codepen.io/emdeoh/pen/zYOQOPB">shown in this CodePen demo</a>.</p>
 <p>Our <code>tint-color()</code> and <code>shade-color()</code> functions use <code>mix()</code> alongside our <code>$theme-color-interval</code> variable, which specifies a stepped percentage value for each mixed color we produce. See the <code>scss/_functions.scss</code> and <code>scss/_variables.scss</code> files for the full source code.</p>
-<h2 id="color-sass-maps">Color Sass maps</h2>
+<h2 id="color-sass-maps">Color Sass maps<a class="anchor-link" href="#color-sass-maps" aria-label="Link to Color Sass maps"></a></h2>
 <p>Bootstrap’s source Sass files include three maps to help you quickly and easily loop over a list of colors and their hex values.</p>
 <ul>
 <li><code>$colors</code> lists all our available base (<code>500</code>) colors</li>
@@ -406,7 +406,7 @@
 </ul>
 <p>Within <code>scss/_variables.scss</code>, you’ll find Bootstrap’s color variables and Sass map. Here’s an example of the <code>$colors</code> Sass map:</p>
 <ScssDocs name="colors-map" file="scss/_variables.scss" /><p>Add, remove, or modify values within the map to update how they’re used in many other components. Unfortunately at this time, not <em>every</em> component utilizes this Sass map. Future updates will strive to improve upon this. Until then, plan on making use of the <code>${color}</code> variables and this Sass map.</p>
-<h3 id="example">Example</h3>
+<h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
 <p>Here’s how you can use these in your Sass:</p>
 <pre><code class="language-scss">.alpha { color: $purple; }
 .beta {
@@ -415,7 +415,7 @@
 }
 </code></pre>
 <p><a href="[[docsref:/utilities/colors]]">Color</a> and <a href="[[docsref:/utilities/background]]">background</a> utility classes are also available for setting <code>color</code> and <code>background-color</code> using the <code>500</code> color values.</p>
-<h2 id="generating-utilities">Generating utilities</h2>
+<h2 id="generating-utilities">Generating utilities<a class="anchor-link" href="#generating-utilities" aria-label="Link to Generating utilities"></a></h2>
 <AddedIn version="5.1.0"/><p>Bootstrap doesn’t include <code>color</code> and <code>background-color</code> utilities for every color variable, but you can generate these yourself with our <a href="[[docsref:/utilities/api]]">utility API</a> and our extended Sass maps added in v5.1.0.</p>
 <ol>
 <li>To start, make sure you’ve imported our functions, variables, mixins, and utilities.</li>

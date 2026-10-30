@@ -1,6 +1,6 @@
-<h2 id="how-it-works">How it works</h2>
+<h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
 <p>The accordion uses <a href="[[docsref:/components/collapse]]">collapse</a> internally to make it collapsible.</p>
-<Callout name="info-prefersreducedmotion" /><h2 id="example">Example</h2>
+<Callout name="info-prefersreducedmotion" /><h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
 <p>Click the accordions below to expand/collapse the accordion content.</p>
 <p>To render an accordion that’s expanded by default:</p>
 <ul>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-  </div>`} /><h3 id="flush">Flush</h3>
+  </div>`} /><h3 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h3>
 <p>Add <code>.accordion-flush</code> to remove some borders and rounded corners to render accordions edge-to-edge with their parent container.</p>
 <Example class="bg-body-secondary" code={`<div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
@@ -77,7 +77,7 @@
         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
       </div>
     </div>
-  </div>`} /><h3 id="always-open">Always open</h3>
+  </div>`} /><h3 id="always-open">Always open<a class="anchor-link" href="#always-open" aria-label="Link to Always open"></a></h3>
 <p>Omit the <code>data-bs-parent</code> attribute on each <code>.accordion-collapse</code> to make accordion items stay open when another item is opened.</p>
 <Example code={`<div class="accordion" id="accordionPanelsStayOpenExample">
     <div class="accordion-item">
@@ -116,13 +116,13 @@
         </div>
       </div>
     </div>
-  </div>`} /><h2 id="accessibility">Accessibility</h2>
+  </div>`} /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
 <p>Please read the <a href="[[docsref:/components/collapse#accessibility]]">collapse accessibility section</a> for more information.</p>
-<h2 id="css">CSS</h2>
-<h3 id="variables">Variables</h3>
+<h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+<h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
 <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, accordions now use local CSS variables on <code>.accordion</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<ScssDocs name="accordion-css-vars" file="scss/_accordion.scss" /><h3 id="sass-variables">Sass variables</h3>
-<ScssDocs name="accordion-variables" file="scss/_variables.scss" /><h2 id="usage">Usage</h2>
+<ScssDocs name="accordion-css-vars" file="scss/_accordion.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+<ScssDocs name="accordion-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
 <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
 <ul>
 <li><code>.collapse</code> hides the content</li>
@@ -130,15 +130,15 @@
 <li><code>.collapsing</code> is added when the transition starts, and removed when it finishes</li>
 </ul>
 <p>These classes can be found in <code>_transitions.scss</code>.</p>
-<h3 id="via-data-attributes">Via data attributes</h3>
+<h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
 <p>Just add <code>data-bs-toggle=&quot;collapse&quot;</code> and a <code>data-bs-target</code> to the element to automatically assign control of one or more collapsible elements. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code>show</code>.</p>
 <p>To add accordion group management to a collapsible area, add the data attribute <code>data-bs-parent=&quot;#selector&quot;</code>.</p>
-<h3 id="via-javascript">Via JavaScript</h3>
+<h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
 <p>Enable manually with:</p>
 <pre><code class="language-js">const accordionCollapseElementList = document.querySelectorAll(&#39;#myAccordion .collapse&#39;)
 const accordionCollapseList = [...accordionCollapseElementList].map(accordionCollapseEl =&gt; new bootstrap.Collapse(accordionCollapseEl))
 </code></pre>
-<h3 id="options">Options</h3>
+<h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
 <JsDataAttributes /><BsTable>
 <table>
 <thead>
@@ -162,7 +162,7 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
 <td>Toggles the collapsible element on invocation.</td>
 </tr>
 </tbody></table>
-</BsTable><h3 id="methods">Methods</h3>
+</BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
 <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
 <p>You can create a collapse instance with the constructor, for example:</p>
 <pre><code class="language-js">const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
@@ -202,7 +202,7 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
 <td>Toggles a collapsible element to shown or hidden. <strong>Returns to the caller before the collapsible element has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.collapse</code> or <code>hidden.bs.collapse</code> event occurs).</td>
 </tr>
 </tbody></table>
-</BsTable><h3 id="events">Events</h3>
+</BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
 <p>Bootstrap’s collapse class exposes a few events for hooking into collapse functionality.</p>
 <BsTable>
 <table>

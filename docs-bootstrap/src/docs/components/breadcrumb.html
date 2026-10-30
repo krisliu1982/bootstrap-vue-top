@@ -1,4 +1,4 @@
-<h2 id="example">Example</h2>
+<h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
 <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
 <Example code={`<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -19,7 +19,7 @@
       <li class="breadcrumb-item"><a href="#">Library</a></li>
       <li class="breadcrumb-item active" aria-current="page">Data</li>
     </ol>
-  </nav>`} /><h2 id="dividers">Dividers</h2>
+  </nav>`} /><h2 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h2>
 <p>Dividers are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a>. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you get a global divider that you can override without recompiling CSS at any time.</p>
 <Example code={`<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -47,11 +47,11 @@
     </ol>
   </nav>`} /><pre><code class="language-scss">$breadcrumb-divider: none;
 </code></pre>
-<h2 id="accessibility">Accessibility</h2>
+<h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
 <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.</p>
 <p>For more information, see the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/">ARIA Authoring Practices Guide breadcrumb pattern</a>.</p>
-<h2 id="css">CSS</h2>
-<h3 id="variables">Variables</h3>
+<h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+<h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
 <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, breadcrumbs now use local CSS variables on <code>.breadcrumb</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<ScssDocs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" /><h3 id="sass-variables">Sass variables</h3>
+<ScssDocs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
 <ScssDocs name="breadcrumb-variables" file="scss/_variables.scss" />

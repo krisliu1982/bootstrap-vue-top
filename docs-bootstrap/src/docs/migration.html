@@ -1,25 +1,25 @@
-<h2 id="v536">v5.3.6</h2>
-<h3 id="dependencies">Dependencies</h3>
+<h2 id="v536">v5.3.6<a class="anchor-link" href="#v536" aria-label="Link to v5.3.6"></a></h2>
+<h3 id="dependencies">Dependencies<a class="anchor-link" href="#dependencies" aria-label="Link to Dependencies"></a></h3>
 <ul>
 <li>Migrated from Hugo to Astro for building our documentation</li>
 </ul>
-<h2 id="v530">v5.3.0</h2>
+<h2 id="v530">v5.3.0<a class="anchor-link" href="#v530" aria-label="Link to v5.3.0"></a></h2>
 <p>If you’re migrating from our previous alpha releases of v5.3.0, please review their changes in addition to this section.</p>
-<h3 id="helpers">Helpers</h3>
+<h3 id="helpers">Helpers<a class="anchor-link" href="#helpers" aria-label="Link to Helpers"></a></h3>
 <ul>
 <li><a href="[[docsref:/helpers/colored-links]]">Colored links</a> once again have <code>!important</code> so they work better with our newly added link utilities.</li>
 </ul>
-<h3 id="utilities">Utilities</h3>
+<h3 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h3>
 <ul>
 <li>Added new <code>.d-inline-grid</code> <a href="[[docsref:/utilities/display]]">display utility</a>.</li>
 </ul>
-<h2 id="v530-alpha2">v5.3.0-alpha2</h2>
+<h2 id="v530-alpha2">v5.3.0-alpha2<a class="anchor-link" href="#v530-alpha2" aria-label="Link to v5.3.0-alpha2"></a></h2>
 <p>If you’re migrating from our previous alpha release of v5.3.0, please review the changes listed below.</p>
-<h3 id="css-variables">CSS variables</h3>
+<h3 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h3>
 <ul>
 <li>Removed several duplicate and unused root CSS variables.</li>
 </ul>
-<h3 id="color-modes">Color modes</h3>
+<h3 id="color-modes">Color modes<a class="anchor-link" href="#color-modes" aria-label="Link to Color modes"></a></h3>
 <ul>
 <li><p>Dark mode colors are now derived from our theme colors (e.g., <code>$primary</code>) in Sass, rather than color specific tints or shades (e.g., <code>$blue-300</code>). This allows for a more automated dark mode when customizing the default theme colors.</p>
 </li>
@@ -40,11 +40,11 @@
 <li><p>Improved docs code syntax colors and more across light and dark modes.</p>
 </li>
 </ul>
-<h3 id="typography">Typography</h3>
+<h3 id="typography">Typography<a class="anchor-link" href="#typography" aria-label="Link to Typography"></a></h3>
 <ul>
 <li>We no longer set a color for <code>$headings-color-dark</code> or <code>--bs-heading-color</code> for dark mode. To avoid several problems of headings within components appearing the wrong color, we’ve set the Sass variable to <code>null</code> and added a <code>null</code> check like we use on the default light mode.</li>
 </ul>
-<h3 id="components">Components</h3>
+<h3 id="components">Components<a class="anchor-link" href="#components" aria-label="Link to Components"></a></h3>
 <ul>
 <li><p>Cards now have a <code>color</code> set on them to improve rendering across color modes.</p>
 </li>
@@ -53,14 +53,14 @@
 <li><p>Navs now have new <code>:focus-visible</code> styles that better match our custom button focus styles.</p>
 </li>
 </ul>
-<h3 id="helpers-1">Helpers</h3>
+<h3 id="helpers-1">Helpers<a class="anchor-link" href="#helpers-1" aria-label="Link to Helpers"></a></h3>
 <ul>
 <li><p>Added new <code>.icon-link</code> helper to quickly place and align Bootstrap Icons alongside a textual link. Icon links support our new link utilities, too.</p>
 </li>
 <li><p>Added new focus ring helper for removing the default <code>outline</code> and setting a custom <code>box-shadow</code> focus ring.</p>
 </li>
 </ul>
-<h3 id="utilities-1">Utilities</h3>
+<h3 id="utilities-1">Utilities<a class="anchor-link" href="#utilities-1" aria-label="Link to Utilities"></a></h3>
 <ul>
 <li><p>Renamed Sass and CSS variables <code>${color}-text</code> to <code>${color}-text-emphasis</code> to match their associated utilities.</p>
 </li>
@@ -75,7 +75,7 @@
 <li><p><span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>.text-muted</code> utility and <code>$text-muted</code> Sass variable have been deprecated and replaced with <code>.text-body-secondary</code> and <code>$body-secondary-color</code>.</p>
 </li>
 </ul>
-<h3 id="docs">Docs</h3>
+<h3 id="docs">Docs<a class="anchor-link" href="#docs" aria-label="Link to Docs"></a></h3>
 <ul>
 <li><p>Examples are now displayed with the appropriate light or dark color mode as dictated by the setting in our docs. Each example has an individual color mode picker.</p>
 </li>
@@ -84,7 +84,7 @@
 <li><p>Added <code>twbs/examples</code> repo contents to the top of the Examples page.</p>
 </li>
 </ul>
-<h3 id="tooling">Tooling</h3>
+<h3 id="tooling">Tooling<a class="anchor-link" href="#tooling" aria-label="Link to Tooling"></a></h3>
 <ul>
 <li><p>Added SCSS testing via True to help test our utilities API and other customizations.</p>
 </li>
@@ -92,8 +92,8 @@
 </li>
 </ul>
 <hr class="mb-4"/><p>For a complete list of changes, <a href="https://github.com/orgs/twbs/projects/13">see the v5.3.0-alpha2 project on GitHub</a>.</p>
-<h2 id="v530-alpha1">v5.3.0-alpha1</h2>
-<hr class="mb-4"/><h3 id="color-modes-1">Color modes!</h3>
+<h2 id="v530-alpha1">v5.3.0-alpha1<a class="anchor-link" href="#v530-alpha1" aria-label="Link to v5.3.0-alpha1"></a></h2>
+<hr class="mb-4"/><h3 id="color-modes-1">Color modes!<a class="anchor-link" href="#color-modes-1" aria-label="Link to Color modes!"></a></h3>
 <p>Learn more by reading the new <a href="[[docsref:/customize/color-modes]]">color modes documentation</a>.</p>
 <ul>
 <li><p><strong>Global support for light (default) and dark color modes.</strong> Set color mode globally on the <code>:root</code> element, on groups of elements and components with a wrapper class, or directly on components, with <code>data-bs-theme=&quot;light|dark&quot;</code>. Also included is a new <code>color-mode()</code> mixin that can output a ruleset with the <code>data-bs-theme</code> selector or a media query, depending on your preference.</p>
@@ -119,7 +119,7 @@ index 8f8296def..449d70487 100644
 </code></pre>
 </li>
 </ul>
-<h3 id="css-variables-1">CSS variables</h3>
+<h3 id="css-variables-1">CSS variables<a class="anchor-link" href="#css-variables-1" aria-label="Link to CSS variables"></a></h3>
 <ul>
 <li><p>Restores CSS variables for breakpoints, though we don’t use them in our media queries as they’re not supported. However, these can be useful in JS-specific contexts.</p>
 </li>
@@ -136,7 +136,7 @@ index 8f8296def..449d70487 100644
 <li><p>Adds new root CSS variables for our <code>box-shadow</code>s, including <code>--bs-box-shadow</code>, <code>--bs-box-shadow-sm</code>, <code>--bs-box-shadow-lg</code>, and <code>--bs-box-shadow-inset</code>.</p>
 </li>
 </ul>
-<h3 id="components-1">Components</h3>
+<h3 id="components-1">Components<a class="anchor-link" href="#components-1" aria-label="Link to Components"></a></h3>
 <h4 id="alert">Alert</h4>
 <ul>
 <li><p>Alert variants are now styled via CSS variables.</p>
@@ -163,7 +163,7 @@ index 8f8296def..449d70487 100644
 <ul>
 <li><span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>.navbar-dark</code> class has been deprecated and replaced with <code>data-bs-theme=&quot;dark&quot;</code> on the navbar or any parent element. <a href="[[docsref:/components/navbar#color-schemes]]">See the docs for updated examples.</a></li>
 </ul>
-<h3 id="progress-bars">Progress bars</h3>
+<h3 id="progress-bars">Progress bars<a class="anchor-link" href="#progress-bars" aria-label="Link to Progress bars"></a></h3>
 <p>The markup for <a href="[[docsref:/components/progress]]">progress bars</a> has been updated in v5.3.0. Due to the placement of <code>role</code> and various <code>aria-</code> attributes on the inner <code>.progress-bar</code> element, <strong>some screen readers were not announcing zero value progress bars</strong>. Now, <code>role=&quot;progressbar&quot;</code> and the relevant <code>aria-*</code> attributes are on the outer <code>.progress</code> element, leaving the <code>.progress-bar</code> purely for the visual presentation of the bar and optional label.</p>
 <p>While we recommend adopting the new markup for improved compatibility with all screen readers, note that the legacy progress bar structure will continue to work as before.</p>
 <pre><code class="language-html">&lt;!-- Previous markup --&gt;
@@ -197,7 +197,7 @@ index 8f8296def..449d70487 100644
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-<h3 id="forms">Forms</h3>
+<h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
 <ul>
 <li><p><code>.form-control</code> is now styled with CSS variables to support color modes. This includes the addition of two new root CSS variables for the default and disabled form control backgrounds.</p>
 </li>
@@ -208,7 +208,7 @@ index 8f8296def..449d70487 100644
 <li><p>Fixed display of date and time inputs in WebKit based browsers.</p>
 </li>
 </ul>
-<h3 id="utilities-2">Utilities</h3>
+<h3 id="utilities-2">Utilities<a class="anchor-link" href="#utilities-2" aria-label="Link to Utilities"></a></h3>
 <ul>
 <li><p><span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> <code>.text-muted</code> will be replaced by <code>.text-body-secondary</code> in v6.</p>
 <p>With the addition of the expanded theme colors and variables, the <code>.text-muted</code> variables and utility have been deprecated with v5.3.0. Its default value has also been reassigned to the new <code>--bs-secondary-color</code> CSS variable to better support color modes. It will be removed in v6.0.0.</p>
@@ -223,14 +223,14 @@ index 8f8296def..449d70487 100644
 </li>
 </ul>
 <p>For a complete list of changes, <a href="https://github.com/twbs/bootstrap/projects/">see the v5.3.0 project on GitHub</a>.</p>
-<h2 id="v520">v5.2.0</h2>
-<hr class="mb-4"/><h3 id="refreshed-design">Refreshed design</h3>
+<h2 id="v520">v5.2.0<a class="anchor-link" href="#v520" aria-label="Link to v5.2.0"></a></h2>
+<hr class="mb-4"/><h3 id="refreshed-design">Refreshed design<a class="anchor-link" href="#refreshed-design" aria-label="Link to Refreshed design"></a></h3>
 <p>Bootstrap v5.2.0 features a subtle design update for a handful of components and properties across the project, <strong>most notably through refined <code>border-radius</code> values on buttons and form controls</strong>. Our documentation also has been updated with a new homepage, simpler docs layout that no longer collapses sections of the sidebar, and more prominent examples of <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>.</p>
-<h3 id="more-css-variables">More CSS variables</h3>
+<h3 id="more-css-variables">More CSS variables<a class="anchor-link" href="#more-css-variables" aria-label="Link to More CSS variables"></a></h3>
 <p><strong>We’ve updated all our components to use CSS variables.</strong> While Sass still underpins everything, each component has been updated to include CSS variables on the component base classes (e.g., <code>.btn</code>), allowing for more real-time customization of Bootstrap. In subsequent releases, we&#39;ll continue to expand our use of CSS variables into our layout, forms, helpers, and utilities. Read more about CSS variables in each component on their respective documentation pages.</p>
 <p>Our CSS variable usage will be somewhat incomplete until Bootstrap 6. While we’d love to fully implement these across the board, they do run the risk of causing breaking changes. For example, setting <code>$alert-border-width: var(--bs-border-width)</code> in our source code breaks potential Sass in your own code if you were doing <code>$alert-border-width * 2</code> for some reason.</p>
 <p>As such, wherever possible, we will continue to push towards more CSS variables, but please recognize our implementation may be slightly limited in v5.</p>
-<h3 id="new-mapsscss">New <code>_maps.scss</code></h3>
+<h3 id="new-mapsscss">New <code>_maps.scss</code><a class="anchor-link" href="#new-mapsscss" aria-label="Link to New _maps.scss"></a></h3>
 <p><strong>Bootstrap v5.2.0 introduced a new Sass file with <code>_maps.scss</code>.</strong> It pulls out several Sass maps from <code>_variables.scss</code> to fix an issue where updates to an original map were not applied to secondary maps that extend them. For example, updates to <code>$theme-colors</code> were not being applied to other theme maps that relied on <code>$theme-colors</code>, breaking key customization workflows. In short, Sass has a limitation where once a default variable or map has been <em>used</em>, it cannot be updated. <em>There’s a similar shortcoming with CSS variables when they’re used to compose other CSS variables.</em></p>
 <p>This is why variable customizations in Bootstrap have to come after <code>@import &quot;functions&quot;</code>, but before <code>@import &quot;variables&quot;</code> and the rest of our import stack. The same applies to Sass maps—you must override the defaults before they get used. The following maps have been moved to the new <code>_maps.scss</code>:</p>
 <ul>
@@ -269,12 +269,12 @@ index 8f8296def..449d70487 100644
   @import &quot;reboot&quot;;
   // etc
 </code></pre>
-<h3 id="new-utilities">New utilities</h3>
+<h3 id="new-utilities">New utilities<a class="anchor-link" href="#new-utilities" aria-label="Link to New utilities"></a></h3>
 <ul>
 <li>Expanded <a href="[[docsref:/utilities/text#font-weight-and-italics]]"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.</li>
 <li>Expanded <a href="[[docsref:/utilities/borders#sizes]]"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and <code>.rounded-5</code>, for more options.</li>
 </ul>
-<h3 id="additional-changes">Additional changes</h3>
+<h3 id="additional-changes">Additional changes<a class="anchor-link" href="#additional-changes" aria-label="Link to Additional changes"></a></h3>
 <ul>
 <li><p><strong>Introduced new <code>$enable-container-classes</code> option. —</strong> Now when opting into the experimental CSS Grid layout, <code>.container-*</code> classes will still be compiled, unless this option is set to <code>false</code>. Containers also now keep their gutter values.</p>
 </li>
@@ -294,7 +294,7 @@ index 8f8296def..449d70487 100644
 </li>
 </ul>
 <p>For a complete list of changes, <a href="https://github.com/twbs/bootstrap/projects/32">see the v5.2.0 project on GitHub</a>.</p>
-<h2 id="v510">v5.1.0</h2>
+<h2 id="v510">v5.1.0<a class="anchor-link" href="#v510" aria-label="Link to v5.1.0"></a></h2>
 <hr class="mb-4"/><ul>
 <li><p><strong>Added experimental support for <a href="[[docsref:/layout/css-grid]]">CSS Grid layout</a>. —</strong> This is a work in progress, and is not yet ready for production use, but you can opt into the new feature via Sass. To enable it, disable the default grid, by setting <code>$enable-grid-classes: false</code> and enable the CSS Grid by setting <code>$enable-cssgrid: true</code>.</p>
 </li>
@@ -316,17 +316,17 @@ index 8f8296def..449d70487 100644
 </li>
 </ul>
 <p>Want more information? <a href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">Read the v5.1.0 blog post.</a></p>
-<h2 id="v500">v5.0.0</h2>
+<h2 id="v500">v5.0.0<a class="anchor-link" href="#v500" aria-label="Link to v5.0.0"></a></h2>
 <hr class="mb-4"/><Callout>
 <p><strong>Hey there!</strong> Changes to our first major release of Bootstrap 5, v5.0.0, are documented below. They don’t reflect the additional changes shown above.</p>
-</Callout><h3 id="dependencies-1">Dependencies</h3>
+</Callout><h3 id="dependencies-1">Dependencies<a class="anchor-link" href="#dependencies-1" aria-label="Link to Dependencies"></a></h3>
 <ul>
 <li>Dropped jQuery.</li>
 <li>Upgraded from Popper v1.x to Popper v2.x.</li>
 <li>Replaced Libsass with Dart Sass as our Sass compiler given Libsass was deprecated.</li>
 <li>Migrated from Jekyll to Hugo for building our documentation</li>
 </ul>
-<h3 id="browser-support">Browser support</h3>
+<h3 id="browser-support">Browser support<a class="anchor-link" href="#browser-support" aria-label="Link to Browser support"></a></h3>
 <ul>
 <li>Dropped Internet Explorer 10 and 11</li>
 <li>Dropped Microsoft Edge &lt; 16 (Legacy Edge)</li>
@@ -335,7 +335,7 @@ index 8f8296def..449d70487 100644
 <li>Dropped iOS Safari &lt; 12</li>
 <li>Dropped Chrome &lt; 60</li>
 </ul>
-<hr class="my-5"/><h3 id="documentation-changes">Documentation changes</h3>
+<hr class="my-5"/><h3 id="documentation-changes">Documentation changes<a class="anchor-link" href="#documentation-changes" aria-label="Link to Documentation changes"></a></h3>
 <ul>
 <li>Redesigned homepage, docs layout, and footer.</li>
 <li>Added <a href="[[docsref:/getting-started/parcel]]">new Parcel guide</a>.</li>
@@ -347,7 +347,7 @@ index 8f8296def..449d70487 100644
 <li>Redesigned the navbar and added a new subnav to make it easier to get around our sites and docs versions.</li>
 <li>Added new keyboard shortcut for the search field: <kbd><kbd>Ctrl</kbd> + <kbd>/</kbd></kbd>.</li>
 </ul>
-<h3 id="sass">Sass</h3>
+<h3 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h3>
 <ul>
 <li><p>We’ve ditched the default Sass map merges to make it easier to remove redundant values. Keep in mind you now have to define all values in the Sass maps like <code>$theme-colors</code>. Check out how to deal with <a href="[[docsref:/customize/sass#maps-and-loops]]">Sass maps</a>.</p>
 </li>
@@ -392,7 +392,7 @@ index 8f8296def..449d70487 100644
 <li><p>The <code>border-radius()</code> mixin now has a default value.</p>
 </li>
 </ul>
-<h3 id="color-system">Color system</h3>
+<h3 id="color-system">Color system<a class="anchor-link" href="#color-system" aria-label="Link to Color system"></a></h3>
 <ul>
 <li><p>The color system which worked with <code>color-level()</code> and <code>$theme-color-interval</code> was removed in favor of a new color system. All <code>lighten()</code> and <code>darken()</code> functions in our codebase are replaced by <code>tint-color()</code> and <code>shade-color()</code>. These functions will mix the color with either white or black instead of changing its lightness by a fixed amount. The <code>shift-color()</code> will either tint or shade a color depending on whether its weight parameter is positive or negative. <a href="https://github.com/twbs/bootstrap/pull/30622">See #30622</a> for more details.</p>
 </li>
@@ -403,7 +403,7 @@ index 8f8296def..449d70487 100644
 <li><p>To support our color system, we’ve added new custom <code>tint-color()</code> and <code>shade-color()</code> functions to mix our colors appropriately.</p>
 </li>
 </ul>
-<h3 id="grid-updates">Grid updates</h3>
+<h3 id="grid-updates">Grid updates<a class="anchor-link" href="#grid-updates" aria-label="Link to Grid updates"></a></h3>
 <ul>
 <li><p><strong>New breakpoint!</strong> Added new <code>xxl</code> breakpoint for <code>1400px</code> and up. No changes to all other breakpoints.</p>
 </li>
@@ -426,7 +426,7 @@ index 8f8296def..449d70487 100644
 <li><p>Updated the <code>make-col</code> mixin to default to equal columns without a specified size.</p>
 </li>
 </ul>
-<h3 id="content-reboot-etc">Content, Reboot, etc</h3>
+<h3 id="content-reboot-etc">Content, Reboot, etc<a class="anchor-link" href="#content-reboot-etc" aria-label="Link to Content, Reboot, etc"></a></h3>
 <ul>
 <li><p><strong><a href="[[docsref:/getting-started/rfs]]">RFS</a> is now enabled by default.</strong> Headings using the <code>font-size()</code> mixin will automatically adjust their <code>font-size</code> to scale with the viewport. <em>This feature was previously opt-in with v4.</em></p>
 </li>
@@ -459,11 +459,11 @@ index 8f8296def..449d70487 100644
 <li><p>Added <code>$enable-smooth-scroll</code>, which applies <code>scroll-behavior: smooth</code> globally—except for users asking for reduced motion through <code>prefers-reduced-motion</code> media query. <a href="https://github.com/twbs/bootstrap/pull/31877">See #31877</a></p>
 </li>
 </ul>
-<h3 id="rtl">RTL</h3>
+<h3 id="rtl">RTL<a class="anchor-link" href="#rtl" aria-label="Link to RTL"></a></h3>
 <ul>
 <li>Horizontal direction specific variables, utilities, and mixins have all been renamed to use logical properties like those found in flexbox layouts—e.g., <code>start</code> and <code>end</code> in lieu of <code>left</code> and <code>right</code>.</li>
 </ul>
-<h3 id="forms-1">Forms</h3>
+<h3 id="forms-1">Forms<a class="anchor-link" href="#forms-1" aria-label="Link to Forms"></a></h3>
 <ul>
 <li><p><strong>Added new floating forms!</strong> We’ve promoted the Floating labels example to fully supported form components. <a href="[[docsref:/forms/floating-labels]]">See the new Floating labels page.</a></p>
 </li>
@@ -495,7 +495,7 @@ index 8f8296def..449d70487 100644
 <li><p>Rearranged source Sass files under <code>scss/forms/</code>, including input group styles.</p>
 </li>
 </ul>
-<hr class="my-5"/><h3 id="components-2">Components</h3>
+<hr class="my-5"/><h3 id="components-2">Components<a class="anchor-link" href="#components-2" aria-label="Link to Components"></a></h3>
 <ul>
 <li>Unified <code>padding</code> values for alerts, breadcrumbs, cards, dropdowns, list groups, modals, popovers, and tooltips to be based on our <code>$spacer</code> variable. <a href="https://github.com/twbs/bootstrap/pull/30564">See #30564</a>.</li>
 </ul>
@@ -649,7 +649,7 @@ index 8f8296def..449d70487 100644
 <li><p><span class="badge text-bg-danger">Breaking</span> Renamed <code>whiteList</code> option to <code>allowList</code>.</p>
 </li>
 </ul>
-<h3 id="utilities-3">Utilities</h3>
+<h3 id="utilities-3">Utilities<a class="anchor-link" href="#utilities-3" aria-label="Link to Utilities"></a></h3>
 <ul>
 <li><p><span class="badge text-bg-danger">Breaking</span> Renamed several utilities to use logical property names instead of directional names with the addition of RTL support:</p>
 <ul>
@@ -692,7 +692,7 @@ index 8f8296def..449d70487 100644
 <li><p>Extended the <code>.visually-hidden-focusable</code> helper to also work on containers, using <code>:focus-within</code>.</p>
 </li>
 </ul>
-<h3 id="helpers-2">Helpers</h3>
+<h3 id="helpers-2">Helpers<a class="anchor-link" href="#helpers-2" aria-label="Link to Helpers"></a></h3>
 <ul>
 <li><p><span class="badge text-bg-danger">Breaking</span> <strong>Responsive embed helpers have been renamed to <a href="[[docsref:/helpers/ratio]]">ratio helpers</a></strong> with new class names and improved behaviors, as well as a helpful CSS variable.</p>
 <ul>
@@ -712,7 +712,7 @@ index 8f8296def..449d70487 100644
 <li><p><code>bootstrap-utilities.css</code> now also includes our helpers. Helpers don’t need to be imported in custom builds anymore.</p>
 </li>
 </ul>
-<h3 id="javascript">JavaScript</h3>
+<h3 id="javascript">JavaScript<a class="anchor-link" href="#javascript" aria-label="Link to JavaScript"></a></h3>
 <ul>
 <li><p><strong>Dropped jQuery dependency</strong> and rewrote plugins to be in regular JavaScript.</p>
 </li>

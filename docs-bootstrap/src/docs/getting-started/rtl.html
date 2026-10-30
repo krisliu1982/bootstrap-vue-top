@@ -1,9 +1,9 @@
-<h2 id="get-familiar">Get familiar</h2>
+<h2 id="get-familiar">Get familiar<a class="anchor-link" href="#get-familiar" aria-label="Link to Get familiar"></a></h2>
 <p>We recommend getting familiar with Bootstrap first by reading through our <a href="[[docsref:/getting-started/introduction]]">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.</p>
 <p>You may also want to read up on <a href="https://rtlcss.com/">the RTLCSS project</a>, as it powers our approach to RTL.</p>
 <Callout type="warning">
 <p><strong>Bootstrap’s RTL feature is still experimental</strong> and will evolve based on user feedback. Spotted something or have an improvement to suggest? <a href="[[config:repo]]/issues/new/choose">Open an issue</a>, we’d love to get your insights.</p>
-</Callout><h2 id="required-html">Required HTML</h2>
+</Callout><h2 id="required-html">Required HTML<a class="anchor-link" href="#required-html" aria-label="Link to Required HTML"></a></h2>
 <p>There are two strict requirements for enabling RTL in Bootstrap-powered pages.</p>
 <ol>
 <li>Set <code>dir=&quot;rtl&quot;</code> on the <code>&lt;html&gt;</code> element.</li>
@@ -12,7 +12,7 @@
 <p>From there, you’ll need to include an RTL version of our CSS. For example, here’s the stylesheet for our compiled and minified CSS with RTL enabled:</p>
 <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;[[config:cdn.css_rtl]]&quot; integrity=&quot;[[config:cdn.css_rtl_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
 </code></pre>
-<h3 id="starter-template">Starter template</h3>
+<h3 id="starter-template">Starter template<a class="anchor-link" href="#starter-template" aria-label="Link to Starter template"></a></h3>
 <p>You can see the above requirements reflected in this modified RTL starter template.</p>
 <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
@@ -42,9 +42,9 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="rtl-examples">RTL examples</h3>
+<h3 id="rtl-examples">RTL examples<a class="anchor-link" href="#rtl-examples" aria-label="Link to RTL examples"></a></h3>
 <p>Get started with one of our several <a href="[[docsref:/examples/#rtl]]">RTL examples</a>.</p>
-<h2 id="approach">Approach</h2>
+<h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
 <p>Our approach to building RTL support into Bootstrap comes with two important decisions that impact how we write and use our CSS:</p>
 <ol>
 <li><p><strong>First, we decided to build it with the <a href="https://rtlcss.com/">RTLCSS</a> project.</strong> This gives us some powerful features for managing changes and overrides when moving from LTR to RTL. It also allows us to build two versions of Bootstrap from one codebase.</p>
@@ -54,9 +54,9 @@
 </ol>
 <p>  For example, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>.</p>
 <p>Working with RTL, through our source Sass or compiled CSS, shouldn’t be much different from our default LTR though.</p>
-<h2 id="customize-from-source">Customize from source</h2>
+<h2 id="customize-from-source">Customize from source<a class="anchor-link" href="#customize-from-source" aria-label="Link to Customize from source"></a></h2>
 <p>When it comes to <a href="[[docsref:/customize/sass]]">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.</p>
-<h3 id="custom-rtl-values">Custom RTL values</h3>
+<h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
 <p>Using <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS value directives</a>, you can make a variable output a different value for RTL. For example, to decrease the weight for <code>$font-weight-bold</code> throughout the codebase, you may use the <code>/*rtl: {value}*/</code> syntax:</p>
 <pre><code class="language-scss">$font-weight-bold: 700 #{/* rtl:600 */} !default;
 </code></pre>
@@ -71,7 +71,7 @@ dt {
   font-weight: 600;
 }
 </code></pre>
-<h3 id="alternative-font-stack">Alternative font stack</h3>
+<h3 id="alternative-font-stack">Alternative font stack<a class="anchor-link" href="#alternative-font-stack" aria-label="Link to Alternative font stack"></a></h3>
 <p>In the case you’re using a custom font, be aware that not all fonts support the non-Latin alphabet. To switch from Pan-European to Arabic family, you may need to use <code>/*rtl:insert: {value}*/</code> in your font stack to modify the names of font families.</p>
 <p>For example, to switch from <code>Helvetica Neue</code> font for LTR to <code>Helvetica Neue Arabic</code> for RTL, your Sass code could look like this:</p>
 <pre><code class="language-scss">$font-family-sans-serif:
@@ -95,7 +95,7 @@ dt {
   // Emoji fonts
   &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
 </code></pre>
-<h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time</h3>
+<h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
 <p>Need both LTR and RTL on the same page? Thanks to <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS String Maps</a>, this is pretty straightforward. Wrap your <code>@import</code>s with a class, and set a custom rename rule for RTLCSS:</p>
 <pre><code class="language-scss">/* rtl:begin:options: {
   &quot;autoRename&quot;: true,
@@ -131,9 +131,9 @@ dt {
 <li>Having a single bundle with both directions will increase the size of the final stylesheet (on average, by 20%-30%): consider some <a href="[[docsref:/customize/optimize]]">optimization</a>.</li>
 <li>Take into account that PostCSS RTLCSS is not compatible with <code>/* rtl:remove */</code> directives because it doesn’t remove any CSS rule. You should replace your <code>/* rtl:remove */</code>, <code>/* rtl:begin:remove */</code> and <code>/* rtl:end:remove */</code> directives with <code>/* rtl:freeze */</code>, <code>/* rtl:begin:freeze */</code> and <code>/* rtl:end:freeze */</code> directives respectively. These directives will prefix the targeted rules or declarations with the current direction but will not create an RTL counterpart (same result as the <code>remove</code> ones in RTLCSS).</li>
 </ol>
-</Callout><h2 id="the-breadcrumb-case">The breadcrumb case</h2>
+</Callout><h2 id="the-breadcrumb-case">The breadcrumb case<a class="anchor-link" href="#the-breadcrumb-case" aria-label="Link to The breadcrumb case"></a></h2>
 <p>The <a href="[[docsref:/components/breadcrumb]]#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely <code>$breadcrumb-divider-flipped</code> —defaulting to <code>$breadcrumb-divider</code>.</p>
-<h2 id="additional-resources">Additional resources</h2>
+<h2 id="additional-resources">Additional resources<a class="anchor-link" href="#additional-resources" aria-label="Link to Additional resources"></a></h2>
 <ul>
 <li><a href="https://rtlcss.com/">RTLCSS</a></li>
 <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL Styling 101</a></li>

@@ -1,4 +1,4 @@
-<h2 id="global-settings">Global settings</h2>
+<h2 id="global-settings">Global settings<a class="anchor-link" href="#global-settings" aria-label="Link to Global settings"></a></h2>
 <p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the <a href="[[docsref:/utilities/text]]">textual utility classes</a>.</p>
 <ul>
 <li>Use a <a href="[[docsref:/content/reboot#native-font-stack]]">native font stack</a> that selects the best <code>font-family</code> for each OS and device.</li>
@@ -8,7 +8,7 @@
 <li>Use <code>$body-bg</code> to set a <code>background-color</code> on the <code>&lt;body&gt;</code> (<code>#fff</code> by default).</li>
 </ul>
 <p>These styles can be found within <code>_reboot.scss</code>, and the global variables are defined in <code>_variables.scss</code>. Make sure to set <code>$font-size-base</code> in <code>rem</code>.</p>
-<h2 id="headings">Headings</h2>
+<h2 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h2>
 <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
 <BsTable>
 <table>
@@ -56,12 +56,12 @@
 <p class="h3">h3. Bootstrap heading</p>
 <p class="h4">h4. Bootstrap heading</p>
 <p class="h5">h5. Bootstrap heading</p>
-<p class="h6">h6. Bootstrap heading</p>`} /><h3 id="customizing-headings">Customizing headings</h3>
+<p class="h6">h6. Bootstrap heading</p>`} /><h3 id="customizing-headings">Customizing headings<a class="anchor-link" href="#customizing-headings" aria-label="Link to Customizing headings"></a></h3>
 <p>Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.</p>
 <Example code={`<h3>
     Fancy display heading
     <small class="text-body-secondary">With faded secondary text</small>
-  </h3>`} /><h2 id="display-headings">Display headings</h2>
+  </h3>`} /><h2 id="display-headings">Display headings<a class="anchor-link" href="#display-headings" aria-label="Link to Display headings"></a></h2>
 <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
 <Example showMarkup={false} code={`
 <div class="display-1 pb-3 mb-3 border-bottom">Display 1</div>
@@ -79,11 +79,11 @@
 </code></pre>
 <p>Display headings are configured via the <code>$display-font-sizes</code> Sass map and two variables, <code>$display-font-weight</code> and <code>$display-line-height</code>.</p>
 <p>Display headings are customizable via two variables, <code>$display-font-family</code> and <code>$display-font-style</code>.</p>
-<ScssDocs name="display-headings" file="scss/_variables.scss" /><h2 id="lead">Lead</h2>
+<ScssDocs name="display-headings" file="scss/_variables.scss" /><h2 id="lead">Lead<a class="anchor-link" href="#lead" aria-label="Link to Lead"></a></h2>
 <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
 <Example code={`<p class="lead">
     This is a lead paragraph. It stands out from regular paragraphs.
-  </p>`} /><h2 id="inline-text-elements">Inline text elements</h2>
+  </p>`} /><h2 id="inline-text-elements">Inline text elements<a class="anchor-link" href="#inline-text-elements" aria-label="Link to Inline text elements"></a></h2>
 <p>Styling for common inline HTML5 elements.</p>
 <Example code={`<p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
@@ -107,17 +107,17 @@
 <li><code>.text-decoration-line-through</code> will apply the same styles as <code>&lt;s&gt;</code>.</li>
 </ul>
 <p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
-<h2 id="text-utilities">Text utilities</h2>
+<h2 id="text-utilities">Text utilities<a class="anchor-link" href="#text-utilities" aria-label="Link to Text utilities"></a></h2>
 <p>Change text alignment, transform, style, weight, line-height, decoration and color with our <a href="[[docsref:/utilities/text]]">text utilities</a> and <a href="[[docsref:/utilities/colors]]">color utilities</a>.</p>
-<h2 id="abbreviations">Abbreviations</h2>
+<h2 id="abbreviations">Abbreviations<a class="anchor-link" href="#abbreviations" aria-label="Link to Abbreviations"></a></h2>
 <p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
 <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
 <Example code={`<p><abbr title="attribute">attr</abbr></p>
-<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>`} /><h2 id="blockquotes">Blockquotes</h2>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>`} /><h2 id="blockquotes">Blockquotes<a class="anchor-link" href="#blockquotes" aria-label="Link to Blockquotes"></a></h2>
 <p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class=&quot;blockquote&quot;&gt;</code> around any HTML as the quote.</p>
 <Example code={`<blockquote class="blockquote">
     <p>A well-known quote, contained in a blockquote element.</p>
-  </blockquote>`} /><h3 id="naming-a-source">Naming a source</h3>
+  </blockquote>`} /><h3 id="naming-a-source">Naming a source<a class="anchor-link" href="#naming-a-source" aria-label="Link to Naming a source"></a></h3>
 <p>The HTML spec requires that blockquote attribution be placed outside the <code>&lt;blockquote&gt;</code>. When providing attribution, wrap your <code>&lt;blockquote&gt;</code> in a <code>&lt;figure&gt;</code> and use a <code>&lt;figcaption&gt;</code> or a block level element (e.g., <code>&lt;p&gt;</code>) with the <code>.blockquote-footer</code> class. Be sure to wrap the name of the source work in <code>&lt;cite&gt;</code> as well.</p>
 <Example code={`<figure>
     <blockquote class="blockquote">
@@ -126,7 +126,7 @@
     <figcaption class="blockquote-footer">
       Someone famous in <cite title="Source Title">Source Title</cite>
     </figcaption>
-  </figure>`} /><h3 id="alignment">Alignment</h3>
+  </figure>`} /><h3 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h3>
 <p>Use text utilities as needed to change the alignment of your blockquote.</p>
 <Example code={`<figure class="text-center">
     <blockquote class="blockquote">
@@ -142,8 +142,8 @@
     <figcaption class="blockquote-footer">
       Someone famous in <cite title="Source Title">Source Title</cite>
     </figcaption>
-  </figure>`} /><h2 id="lists">Lists</h2>
-<h3 id="unstyled">Unstyled</h3>
+  </figure>`} /><h2 id="lists">Lists<a class="anchor-link" href="#lists" aria-label="Link to Lists"></a></h2>
+<h3 id="unstyled">Unstyled<a class="anchor-link" href="#unstyled" aria-label="Link to Unstyled"></a></h3>
 <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
 <Example code={`<ul class="list-unstyled">
     <li>This is a list.</li>
@@ -158,13 +158,13 @@
       </ul>
     </li>
     <li>This may still come in handy in some situations.</li>
-  </ul>`} /><h3 id="inline">Inline</h3>
+  </ul>`} /><h3 id="inline">Inline<a class="anchor-link" href="#inline" aria-label="Link to Inline"></a></h3>
 <p>Remove a list’s bullets and apply some light <code>margin</code> with a combination of two classes, <code>.list-inline</code> and <code>.list-inline-item</code>.</p>
 <Example code={`<ul class="list-inline">
     <li class="list-inline-item">This is a list item.</li>
     <li class="list-inline-item">And another one.</li>
     <li class="list-inline-item">But they’re displayed inline.</li>
-  </ul>`} /><h3 id="description-list-alignment">Description list alignment</h3>
+  </ul>`} /><h3 id="description-list-alignment">Description list alignment<a class="anchor-link" href="#description-list-alignment" aria-label="Link to Description list alignment"></a></h3>
 <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code>.text-truncate</code> class to truncate the text with an ellipsis.</p>
 <Example code={`<dl class="row">
     <dt class="col-sm-3">Description lists</dt>
@@ -189,11 +189,11 @@
         <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
       </dl>
     </dd>
-  </dl>`} /><h2 id="responsive-font-sizes">Responsive font sizes</h2>
+  </dl>`} /><h2 id="responsive-font-sizes">Responsive font sizes<a class="anchor-link" href="#responsive-font-sizes" aria-label="Link to Responsive font sizes"></a></h2>
 <p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally across device and viewport sizes. Have a look at the <a href="[[docsref:/getting-started/rfs]]">RFS page</a> to find out how this works.</p>
-<h2 id="css">CSS</h2>
-<h3 id="sass-variables">Sass variables</h3>
+<h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+<h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
 <p>Headings have some dedicated variables for sizing and spacing.</p>
 <ScssDocs name="headings-variables" file="scss/_variables.scss" /><p>Miscellaneous typography elements covered here and in <a href="[[docsref:/content/reboot]]">Reboot</a> also have dedicated variables.</p>
-<ScssDocs name="type-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins</h3>
+<ScssDocs name="type-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
 <p>There are no dedicated mixins for typography, but Bootstrap does use <a href="[[docsref:/getting-started/rfs]]">Responsive Font Sizing (RFS)</a>.</p>
