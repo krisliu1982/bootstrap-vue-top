@@ -1,8 +1,5 @@
-
-## Basic example
-
-Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place `<label>`s outside the input group.
-
+<h2 id="basic-example">Basic example</h2>
+<p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
 <Example code={`<div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">@</span>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -37,33 +34,20 @@ Place one add-on or button on either side of an input. You may also place one on
   <div class="input-group">
     <span class="input-group-text">With textarea</span>
     <textarea class="form-control" aria-label="With textarea"></textarea>
-  </div>`} />
-
-## Wrapping
-
-Input groups wrap by default via `flex-wrap: wrap` in order to accommodate custom form field validation within an input group. You may disable this with `.flex-nowrap`.
-
+  </div>`} /><h2 id="wrapping">Wrapping</h2>
+<p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p>
 <Example code={`<div class="input-group flex-nowrap">
     <span class="input-group-text" id="addon-wrapping">@</span>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-  </div>`} />
-
-## Border radius
-
-Due to limitations of browser support at the time, `border-radius` styles can only be applied to the first and last children within the `.input-group` class. Any non-visible element in one of those positions will cause the input group to render incorrectly. This will unfortunately not be fixed until v6 most likely.
-
+  </div>`} /><h2 id="border-radius">Border radius</h2>
+<p>Due to limitations of browser support at the time, <code>border-radius</code> styles can only be applied to the first and last children within the <code>.input-group</code> class. Any non-visible element in one of those positions will cause the input group to render incorrectly. This will unfortunately not be fixed until v6 most likely.</p>
 <Example code={`<div class="input-group">
     <span class="input-group-text" id="visible-addon">@</span>
     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="visible-addon">
     <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
-  </div>`} />
-
-## Sizing
-
-Add the relative form sizing classes to the `.input-group` itself and contents within will automatically resize—no need for repeating the form control size classes on each element.
-
-**Sizing on the individual input group elements isn’t supported.**
-
+  </div>`} /><h2 id="sizing">Sizing</h2>
+<p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+<p><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
 <Example code={`<div class="input-group input-group-sm mb-3">
     <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -77,12 +61,8 @@ Add the relative form sizing classes to the `.input-group` itself and contents w
   <div class="input-group input-group-lg">
     <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-  </div>`} />
-
-## Checkboxes and radios
-
-Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding `.mt-0` to the `.form-check-input` when there’s no visible text next to the input.
-
+  </div>`} /><h2 id="checkboxes-and-radios">Checkboxes and radios</h2>
+<p>Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding <code>.mt-0</code> to the <code>.form-check-input</code> when there’s no visible text next to the input.</p>
 <Example code={`<div class="input-group mb-3">
     <div class="input-group-text">
       <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
@@ -95,22 +75,14 @@ Place any checkbox or radio option within an input group’s addon instead of te
       <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
     </div>
     <input type="text" class="form-control" aria-label="Text input with radio button">
-  </div>`} />
-
-## Multiple inputs
-
-While multiple `<input>`s are supported visually, validation styles are only available for input groups with a single `<input>`.
-
+  </div>`} /><h2 id="multiple-inputs">Multiple inputs</h2>
+<p>While multiple <code>&lt;input&gt;</code>s are supported visually, validation styles are only available for input groups with a single <code>&lt;input&gt;</code>.</p>
 <Example code={`<div class="input-group">
     <span class="input-group-text">First and last name</span>
     <input type="text" aria-label="First name" class="form-control">
     <input type="text" aria-label="Last name" class="form-control">
-  </div>`} />
-
-## Multiple addons
-
-Multiple add-ons are supported and can be mixed with checkbox and radio input versions.
-
+  </div>`} /><h2 id="multiple-addons">Multiple addons</h2>
+<p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
 <Example code={`<div class="input-group mb-3">
     <span class="input-group-text">$</span>
     <span class="input-group-text">0.00</span>
@@ -121,10 +93,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
     <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
     <span class="input-group-text">$</span>
     <span class="input-group-text">0.00</span>
-  </div>`} />
-
-## Button addons
-
+  </div>`} /><h2 id="button-addons">Button addons</h2>
 <Example code={`<div class="input-group mb-3">
     <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
     <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
@@ -145,10 +114,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
     <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username with two button addons">
     <button class="btn btn-outline-secondary" type="button">Button</button>
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>`} />
-
-## Buttons with dropdowns
-
+  </div>`} /><h2 id="buttons-with-dropdowns">Buttons with dropdowns</h2>
 <Example code={`<div class="input-group mb-3">
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
     <ul class="dropdown-menu">
@@ -191,10 +157,7 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
-  </div>`} />
-
-## Segmented buttons
-
+  </div>`} /><h2 id="segmented-buttons">Segmented buttons</h2>
 <Example code={`<div class="input-group mb-3">
     <button type="button" class="btn btn-outline-secondary">Action</button>
     <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,14 +186,9 @@ Multiple add-ons are supported and can be mixed with checkbox and radio input ve
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
-  </div>`} />
-
-## Custom forms
-
-Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.
-
-### Custom select
-
+  </div>`} /><h2 id="custom-forms">Custom forms</h2>
+<p>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</p>
+<h3 id="custom-select">Custom select</h3>
 <Example code={`<div class="input-group mb-3">
     <label class="input-group-text" for="inputGroupSelect01">Options</label>
     <select class="form-select" id="inputGroupSelect01">
@@ -269,10 +227,7 @@ Input groups include support for custom selects and custom file inputs. Browser 
       <option value="3">Three</option>
     </select>
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>`} />
-
-### Custom file input
-
+  </div>`} /><h3 id="custom-file-input">Custom file input</h3>
 <Example code={`<div class="input-group mb-3">
     <label class="input-group-text" for="inputGroupFile01">Upload</label>
     <input type="file" class="form-control" id="inputGroupFile01">
@@ -291,10 +246,6 @@ Input groups include support for custom selects and custom file inputs. Browser 
   <div class="input-group">
     <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
     <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
-  </div>`} />
-
-## CSS
-
-### Sass variables
-
+  </div>`} /><h2 id="css">CSS</h2>
+<h3 id="sass-variables">Sass variables</h3>
 <ScssDocs name="input-group-variables" file="scss/_variables.scss" />

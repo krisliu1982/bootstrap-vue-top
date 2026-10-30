@@ -1,24 +1,18 @@
-
 <Callout>
-**Heads up!** Be sure to [read the Grid page]([[docsref:/layout/grid]]) first before diving into how to modify and customize your grid columns.
-</Callout>
-
-## How they work
-
-- **Columns build on the grid’s flexbox architecture.** Flexbox means we have options for changing individual columns and [modifying groups of columns at the row level]([[docsref:/layout/grid#row-columns]]). You choose how columns grow, shrink, or otherwise change.
-
-- **When building grid layouts, all content goes in columns.** The hierarchy of Bootstrap’s grid goes from [container]([[docsref:/layout/containers]]) to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.
-
-- **Bootstrap includes predefined classes for creating fast, responsive layouts.** With [six breakpoints]([[docsref:/layout/breakpoints]]) and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.
-
-## Alignment
-
-Use flexbox alignment utilities to vertically and horizontally align columns.
-
-### Vertical alignment
-
-Change the vertical alignment with any of the responsive `align-items-*` classes.
-
+<p><strong>Heads up!</strong> Be sure to <a href="[[docsref:/layout/grid]]">read the Grid page</a> first before diving into how to modify and customize your grid columns.</p>
+</Callout><h2 id="how-they-work">How they work</h2>
+<ul>
+<li><p><strong>Columns build on the grid’s flexbox architecture.</strong> Flexbox means we have options for changing individual columns and <a href="[[docsref:/layout/grid#row-columns]]">modifying groups of columns at the row level</a>. You choose how columns grow, shrink, or otherwise change.</p>
+</li>
+<li><p><strong>When building grid layouts, all content goes in columns.</strong> The hierarchy of Bootstrap’s grid goes from <a href="[[docsref:/layout/containers]]">container</a> to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.</p>
+</li>
+<li><p><strong>Bootstrap includes predefined classes for creating fast, responsive layouts.</strong> With <a href="[[docsref:/layout/breakpoints]]">six breakpoints</a> and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.</p>
+</li>
+</ul>
+<h2 id="alignment">Alignment</h2>
+<p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
+<h3 id="vertical-alignment">Vertical alignment</h3>
+<p>Change the vertical alignment with any of the responsive <code>align-items-*</code> classes.</p>
 <Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
     <div class="row align-items-start">
       <div class="col">
@@ -31,9 +25,7 @@ Change the vertical alignment with any of the responsive `align-items-*` classes
         One of three columns
       </div>
     </div>
-  </div>`} />
-
-<Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
+  </div>`} /><Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
     <div class="row align-items-center">
       <div class="col">
         One of three columns
@@ -45,9 +37,7 @@ Change the vertical alignment with any of the responsive `align-items-*` classes
         One of three columns
       </div>
     </div>
-  </div>`} />
-
-<Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
+  </div>`} /><Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
     <div class="row align-items-end">
       <div class="col">
         One of three columns
@@ -59,10 +49,7 @@ Change the vertical alignment with any of the responsive `align-items-*` classes
         One of three columns
       </div>
     </div>
-  </div>`} />
-
-Or, change the alignment of each column individually with any of the responsive `.align-self-*` classes.
-
+  </div>`} /><p>Or, change the alignment of each column individually with any of the responsive <code>.align-self-*</code> classes.</p>
 <Example class="bd-example-row bd-example-row-flex-cols" code={`<div class="container text-center">
     <div class="row">
       <div class="col align-self-start">
@@ -75,12 +62,8 @@ Or, change the alignment of each column individually with any of the responsive 
         One of three columns
       </div>
     </div>
-  </div>`} />
-
-### Horizontal alignment
-
-Change the horizontal alignment with any of the responsive `justify-content-*` classes.
-
+  </div>`} /><h3 id="horizontal-alignment">Horizontal alignment</h3>
+<p>Change the horizontal alignment with any of the responsive <code>justify-content-*</code> classes.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row justify-content-start">
       <div class="col-4">
@@ -130,24 +113,16 @@ Change the horizontal alignment with any of the responsive `justify-content-*` c
         One of two columns
       </div>
     </div>
-  </div>`} />
-
-### Column wrapping
-
-If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
-
+  </div>`} /><h3 id="column-wrapping">Column wrapping</h3>
+<p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
 <Example class="bd-example-row" code={`<div class="container">
     <div class="row">
       <div class="col-9">.col-9</div>
       <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
       <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
     </div>
-  </div>`} />
-
-### Column breaks
-
-Breaking columns to a new line in flexbox requires a small hack: add an element with `width: 100%` wherever you want to wrap your columns to a new line. Normally this is accomplished with multiple `.row`s, but not every implementation method can account for this.
-
+  </div>`} /><h3 id="column-breaks">Column breaks</h3>
+<p>Breaking columns to a new line in flexbox requires a small hack: add an element with <code>width: 100%</code> wherever you want to wrap your columns to a new line. Normally this is accomplished with multiple <code>.row</code>s, but not every implementation method can account for this.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
@@ -159,10 +134,7 @@ Breaking columns to a new line in flexbox requires a small hack: add an element 
       <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
       <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
     </div>
-  </div>`} />
-
-You may also apply this break at specific breakpoints with our [responsive display utilities]([[docsref:/utilities/display]]).
-
+  </div>`} /><p>You may also apply this break at specific breakpoints with our <a href="[[docsref:/utilities/display]]">responsive display utilities</a>.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
@@ -174,14 +146,9 @@ You may also apply this break at specific breakpoints with our [responsive displ
       <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
       <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
     </div>
-  </div>`} />
-
-## Reordering
-
-### Order classes
-
-Use `.order-` classes for controlling the **visual order** of your content. These classes are responsive, so you can set the `order` by breakpoint (e.g., `.order-1.order-md-2`). Includes support for `1` through `5` across all six grid tiers.
-
+  </div>`} /><h2 id="reordering">Reordering</h2>
+<h3 id="order-classes">Order classes</h3>
+<p>Use <code>.order-</code> classes for controlling the <strong>visual order</strong> of your content. These classes are responsive, so you can set the <code>order</code> by breakpoint (e.g., <code>.order-1.order-md-2</code>). Includes support for <code>1</code> through <code>5</code> across all six grid tiers.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col">
@@ -194,10 +161,7 @@ Use `.order-` classes for controlling the **visual order** of your content. Thes
         Third in DOM, with an order of 1
       </div>
     </div>
-  </div>`} />
-
-There are also responsive `.order-first` and `.order-last` classes that change the `order` of an element by applying `order: -1` and `order: 6`, respectively. These classes can also be intermixed with the numbered `.order-*` classes as needed.
-
+  </div>`} /><p>There are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively. These classes can also be intermixed with the numbered <code>.order-*</code> classes as needed.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col order-last">
@@ -210,20 +174,15 @@ There are also responsive `.order-first` and `.order-last` classes that change t
         Third in DOM, ordered first
       </div>
     </div>
-  </div>`} />
-
-
-If you need more `.order-*` classes, you can add new ones by modifying our `$utilities` Sass map. [Read our Sass maps and loops docs]([[docsref:/customize/sass#maps-and-loops]]) or [our Modify utilities docs]([[docsref:/utilities/api#modify-utilities]]) for details.
-
-```scss
-$utilities: map-merge(
+  </div>`} /><p>If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map. <a href="[[docsref:/customize/sass#maps-and-loops]]">Read our Sass maps and loops docs</a> or <a href="[[docsref:/utilities/api#modify-utilities]]">our Modify utilities docs</a> for details.</p>
+<pre><code class="language-scss">$utilities: map-merge(
   $utilities,
   (
-    "order": map-merge(
-      map-get($utilities, "order"),
+    &quot;order&quot;: map-merge(
+      map-get($utilities, &quot;order&quot;),
       (
         values: map-merge(
-          map-get(map-get($utilities, "order"), "values"),
+          map-get(map-get($utilities, &quot;order&quot;), &quot;values&quot;),
           (
             6: 6, // Add a new `.order-{breakpoint}-6` utility
             last: 7 // Change the `.order-{breakpoint}-last` utility to use the next number
@@ -233,16 +192,11 @@ $utilities: map-merge(
     ),
   )
 );
-```
-
-### Offsetting columns
-
-You can offset grid columns in two ways: our responsive `.offset-` grid classes and our [margin utilities]([[docsref:/utilities/spacing]]). Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.
-
-#### Offset classes
-
-Move columns to the right using `.offset-md-*` classes. These classes increase the left margin of a column by `*` columns. For example, `.offset-md-4` moves `.col-md-4` over four columns.
-
+</code></pre>
+<h3 id="offsetting-columns">Offsetting columns</h3>
+<p>You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="[[docsref:/utilities/spacing]]">margin utilities</a>. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>
+<h4 id="offset-classes">Offset classes</h4>
+<p>Move columns to the right using <code>.offset-md-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col-md-4">.col-md-4</div>
@@ -255,10 +209,7 @@ Move columns to the right using `.offset-md-*` classes. These classes increase t
     <div class="row">
       <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
     </div>
-  </div>`} />
-
-In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in [the grid example]([[docsref:/examples/grid/]]).
-
+  </div>`} /><p>In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in <a href="[[docsref:/examples/grid/]]">the grid example</a>.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
@@ -268,12 +219,8 @@ In addition to column clearing at responsive breakpoints, you may need to reset 
       <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
       <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
     </div>
-  </div>`} />
-
-#### Margin utilities
-
-With the move to flexbox in v4, you can use margin utilities like `.me-auto` to force sibling columns away from one another.
-
+  </div>`} /><h4 id="margin-utilities">Margin utilities</h4>
+<p>With the move to flexbox in v4, you can use margin utilities like <code>.me-auto</code> to force sibling columns away from one another.</p>
 <Example class="bd-example-row" code={`<div class="container text-center">
     <div class="row">
       <div class="col-md-4">.col-md-4</div>
@@ -287,22 +234,15 @@ With the move to flexbox in v4, you can use margin utilities like `.me-auto` to 
       <div class="col-auto me-auto">.col-auto .me-auto</div>
       <div class="col-auto">.col-auto</div>
     </div>
-  </div>`} />
-
-## Standalone column classes
-
-The `.col-*` classes can also be used outside a `.row` to give an element a specific width. Whenever column classes are used as non-direct children of a row, the paddings are omitted.
-
+  </div>`} /><h2 id="standalone-column-classes">Standalone column classes</h2>
+<p>The <code>.col-*</code> classes can also be used outside a <code>.row</code> to give an element a specific width. Whenever column classes are used as non-direct children of a row, the paddings are omitted.</p>
 <Example class="bd-example-row" code={`<div class="col-3 p-3 mb-2">
     .col-3: width of 25%
   </div>
 
   <div class="col-sm-9 p-3">
     .col-sm-9: width of 75% above sm breakpoint
-  </div>`} />
-
-The classes can be used together with utilities to create responsive floated images. Make sure to wrap the content in a [`.clearfix`]([[docsref:/helpers/clearfix]]) wrapper to clear the float if the text is shorter.
-
+  </div>`} /><p>The classes can be used together with utilities to create responsive floated images. Make sure to wrap the content in a <a href="[[docsref:/helpers/clearfix]]"><code>.clearfix</code></a> wrapper to clear the float if the text is shorter.</p>
 <Example code={`<div class="clearfix">
     <Placeholder width="100%" height="210" class="col-md-6 float-md-end mb-3 ms-md-3" text="Responsive floated image" />
 

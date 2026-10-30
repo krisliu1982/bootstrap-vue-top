@@ -1,8 +1,5 @@
-
-## Overflow
-
-Adjust the `overflow` property on the fly with four default values and classes. These classes are not responsive by default.
-
+<h2 id="overflow">Overflow</h2>
+<p>Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>
 <div class="bd-example d-md-flex">
   <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
     This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
@@ -16,19 +13,13 @@ Adjust the `overflow` property on the fly with four default values and classes. 
   <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
     This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
   </div>
-</div>
-
-```html
-<div class="overflow-auto">...</div>
-<div class="overflow-hidden">...</div>
-<div class="overflow-visible">...</div>
-<div class="overflow-scroll">...</div>
-```
-
-### `overflow-x`
-
-Adjust the `overflow-x` property to affect the overflow of content horizontally.
-
+</div><pre><code class="language-html">&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-scroll&quot;&gt;...&lt;/div&gt;
+</code></pre>
+<h3 id="overflow-x"><code>overflow-x</code></h3>
+<p>Adjust the <code>overflow-x</code> property to affect the overflow of content horizontally.</p>
 <div class="bd-example d-md-flex">
   <div class="overflow-x-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap;">
     <div><code>.overflow-x-auto</code> example on an element</div>
@@ -46,19 +37,13 @@ Adjust the `overflow-x` property to affect the overflow of content horizontally.
     <div><code>.overflow-x-scroll</code> example on an element</div>
     <div> with set width and height dimensions.</div>
   </div>
-</div>
-
-```html
-<div class="overflow-x-auto">...</div>
-<div class="overflow-x-hidden">...</div>
-<div class="overflow-x-visible">...</div>
-<div class="overflow-x-scroll">...</div>
-```
-
-### `overflow-y`
-
-Adjust the `overflow-y` property to affect the overflow of content vertically.
-
+</div><pre><code class="language-html">&lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-scroll&quot;&gt;...&lt;/div&gt;
+</code></pre>
+<h3 id="overflow-y"><code>overflow-y</code></h3>
+<p>Adjust the <code>overflow-y</code> property to affect the overflow of content vertically.</p>
 <div class="bd-example d-md-flex">
   <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
     <code>.overflow-y-auto</code> example on an element with set width and height dimensions.
@@ -72,21 +57,13 @@ Adjust the `overflow-y` property to affect the overflow of content vertically.
   <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
     <code>.overflow-y-scroll</code> example on an element with set width and height dimensions.
   </div>
-</div>
-
-```html
-<div class="overflow-y-auto">...</div>
-<div class="overflow-y-hidden">...</div>
-<div class="overflow-y-visible">...</div>
-<div class="overflow-y-scroll">...</div>
-```
-
-Using Sass variables, you may customize the overflow utilities by changing the `$overflows` variable in `_variables.scss`.
-
-## CSS
-
-### Sass utilities API
-
-Overflow utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
-
+</div><pre><code class="language-html">&lt;div class=&quot;overflow-y-auto&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;
+</code></pre>
+<p>Using Sass variables, you may customize the overflow utilities by changing the <code>$overflows</code> variable in <code>_variables.scss</code>.</p>
+<h2 id="css">CSS</h2>
+<h3 id="sass-utilities-api">Sass utilities API</h3>
+<p>Overflow utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
 <ScssDocs name="utils-overflow" file="scss/_utilities.scss" />

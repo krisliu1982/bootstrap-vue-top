@@ -1,31 +1,19 @@
-
-Set the `visibility` of elements with our visibility utilities. These utility classes do not modify the `display` value at all and do not affect layout – `.invisible` elements still take up space in the page.
-
+<p>Set the <code>visibility</code> of elements with our visibility utilities. These utility classes do not modify the <code>display</code> value at all and do not affect layout – <code>.invisible</code> elements still take up space in the page.</p>
 <Callout type="warning">
-Elements with the `.invisible` class will be hidden *both* visually and for assistive technology/screen reader users.
-</Callout>
-
-Apply `.visible` or `.invisible` as needed.
-
-```html
-<div class="visible">...</div>
-<div class="invisible">...</div>
-```
-
-```scss
-// Class
+<p>Elements with the <code>.invisible</code> class will be hidden <em>both</em> visually and for assistive technology/screen reader users.</p>
+</Callout><p>Apply <code>.visible</code> or <code>.invisible</code> as needed.</p>
+<pre><code class="language-html">&lt;div class=&quot;visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;invisible&quot;&gt;...&lt;/div&gt;
+</code></pre>
+<pre><code class="language-scss">// Class
 .visible {
   visibility: visible !important;
 }
 .invisible {
   visibility: hidden !important;
 }
-```
-
-## CSS
-
-### Sass utilities API
-
-Visibility utilities are declared in our utilities API in `scss/_utilities.scss`. [Learn how to use the utilities API.]([[docsref:/utilities/api#using-the-api]])
-
+</code></pre>
+<h2 id="css">CSS</h2>
+<h3 id="sass-utilities-api">Sass utilities API</h3>
+<p>Visibility utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
 <ScssDocs name="utils-visibility" file="scss/_utilities.scss" />

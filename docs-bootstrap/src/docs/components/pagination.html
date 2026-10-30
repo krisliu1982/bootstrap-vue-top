@@ -1,10 +1,6 @@
-
-## Overview
-
-We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping `<nav>` element to identify it as a navigation section to screen readers and other assistive technologies.
-
-In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive `aria-label` for the `<nav>` to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be `aria-label="Search results pages"`.
-
+<h2 id="overview">Overview</h2>
+<p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+<p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label=&quot;Search results pages&quot;</code>.</p>
 <Example code={`<nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -13,12 +9,8 @@ In addition, as pages likely have more than one such navigation section, it’s 
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
-  </nav>`} />
-
-## Working with icons
-
-Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with `aria` attributes.
-
+  </nav>`} /><h2 id="working-with-icons">Working with icons</h2>
+<p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.</p>
 <Example code={`<nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item">
@@ -35,12 +27,8 @@ Looking to use an icon or symbol in place of text for some pagination links? Be 
         </a>
       </li>
     </ul>
-  </nav>`} />
-
-## Active
-
-Add `.active` to indicate a `.page-item` is the one currently being viewed. If using an `<a>` on the current page, `aria-current="page"` should be added for assistive technologies.
-
+  </nav>`} /><h2 id="active">Active</h2>
+<p>Add <code>.active</code> to indicate a <code>.page-item</code> is the one currently being viewed. If using an <code>&lt;a&gt;</code> on the current page, <code>aria-current=&quot;page&quot;</code> should be added for assistive technologies.</p>
 <Example code={`<nav aria-label="...">
     <ul class="pagination">
       <li class="page-item"><a href="#" class="page-link">Previous</a></li>
@@ -51,20 +39,13 @@ Add `.active` to indicate a `.page-item` is the one currently being viewed. If u
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
-  </nav>`} />
-
-If using a non-interactive element, like a `<span>` for the current page, you may omit the `aria-current` attribute.
-
-```html
-<li class="page-item active">
-  <span class="page-link">2</span>
-</li>
-```
-
-## Disabled
-
-Add `.disabled` to a `.page-item` to make it appear un-clickable. While `.disabled` uses `pointer-events: none` to disable the link‘s interactivity, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add `tabindex="-1"` on disabled links and use custom JavaScript to fully disable their functionality.
-
+  </nav>`} /><p>If using a non-interactive element, like a <code>&lt;span&gt;</code> for the current page, you may omit the <code>aria-current</code> attribute.</p>
+<pre><code class="language-html">&lt;li class=&quot;page-item active&quot;&gt;
+  &lt;span class=&quot;page-link&quot;&gt;2&lt;/span&gt;
+&lt;/li&gt;
+</code></pre>
+<h2 id="disabled">Disabled</h2>
+<p>Add <code>.disabled</code> to a <code>.page-item</code> to make it appear un-clickable. While <code>.disabled</code> uses <code>pointer-events: none</code> to disable the link‘s interactivity, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex=&quot;-1&quot;</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
 <Example code={`<nav aria-label="...">
     <ul class="pagination">
       <li class="page-item disabled">
@@ -79,20 +60,13 @@ Add `.disabled` to a `.page-item` to make it appear un-clickable. While `.disabl
         <a class="page-link" href="#">Next</a>
       </li>
     </ul>
-  </nav>`} />
-
-And just like active page items, you can swap out the disabled `<a>` for a `<span>` to remove click functionality and prevent keyboard focus while retaining intended styles.
-
-```html
-<li class="page-item disabled">
-  <span class="page-link">Previous</span>
-</li>
-```
-
-## Sizing
-
-Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for additional sizes.
-
+  </nav>`} /><p>And just like active page items, you can swap out the disabled <code>&lt;a&gt;</code> for a <code>&lt;span&gt;</code> to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
+<pre><code class="language-html">&lt;li class=&quot;page-item disabled&quot;&gt;
+  &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+&lt;/li&gt;
+</code></pre>
+<h2 id="sizing">Sizing</h2>
+<p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
 <Example code={`<nav aria-label="...">
     <ul class="pagination pagination-lg">
       <li class="page-item active" >
@@ -101,9 +75,7 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
       <li class="page-item"><a class="page-link" href="#">2</a></li>
       <li class="page-item"><a class="page-link" href="#">3</a></li>
     </ul>
-  </nav>`} />
-
-<Example code={`<nav aria-label="...">
+  </nav>`} /><Example code={`<nav aria-label="...">
     <ul class="pagination pagination-sm">
       <li class="page-item active">
         <a class="page-link" aria-current="page">1</a>
@@ -111,12 +83,8 @@ Fancy larger or smaller pagination? Add `.pagination-lg` or `.pagination-sm` for
       <li class="page-item"><a class="page-link" href="#">2</a></li>
       <li class="page-item"><a class="page-link" href="#">3</a></li>
     </ul>
-  </nav>`} />
-
-## Alignment
-
-Change the alignment of pagination components with [flexbox utilities]([[docsref:/utilities/flex]]). For example, with `.justify-content-center`:
-
+  </nav>`} /><h2 id="alignment">Alignment</h2>
+<p>Change the alignment of pagination components with <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>. For example, with <code>.justify-content-center</code>:</p>
 <Example code={`<nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
       <li class="page-item disabled">
@@ -129,10 +97,7 @@ Change the alignment of pagination components with [flexbox utilities]([[docsref
         <a class="page-link" href="#">Next</a>
       </li>
     </ul>
-  </nav>`} />
-
-Or with `.justify-content-end`:
-
+  </nav>`} /><p>Or with <code>.justify-content-end</code>:</p>
 <Example code={`<nav aria-label="Page navigation example">
     <ul class="pagination justify-content-end">
       <li class="page-item disabled">
@@ -145,22 +110,9 @@ Or with `.justify-content-end`:
         <a class="page-link" href="#">Next</a>
       </li>
     </ul>
-  </nav>`} />
-
-## CSS
-
-### Variables
-
-<AddedIn version="5.2.0" />
-
-As part of Bootstrap’s evolving CSS variables approach, pagination now uses local CSS variables on `.pagination` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
-
-<ScssDocs name="pagination-css-vars" file="scss/_pagination.scss" />
-
-### Sass variables
-
-<ScssDocs name="pagination-variables" file="scss/_variables.scss" />
-
-### Sass mixins
-
+  </nav>`} /><h2 id="css">CSS</h2>
+<h3 id="variables">Variables</h3>
+<AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, pagination now uses local CSS variables on <code>.pagination</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
+<ScssDocs name="pagination-css-vars" file="scss/_pagination.scss" /><h3 id="sass-variables">Sass variables</h3>
+<ScssDocs name="pagination-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins</h3>
 <ScssDocs name="pagination-mixin" file="scss/mixins/_pagination.scss" />

@@ -1,36 +1,17 @@
-
-## Overview
-
-Create custom `<input type="range">` controls with `.form-range`. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.
-
+<h2 id="overview">Overview</h2>
+<p>Create custom <code>&lt;input type=&quot;range&quot;&gt;</code> controls with <code>.form-range</code>. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.</p>
 <Example code={`<label for="range1" class="form-label">Example range</label>
-<input type="range" class="form-range" id="range1">`} />
-
-## Disabled
-
-Add the `disabled` boolean attribute on an input to give it a grayed out appearance, remove pointer events, and prevent focusing.
-
+<input type="range" class="form-range" id="range1">`} /><h2 id="disabled">Disabled</h2>
+<p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance, remove pointer events, and prevent focusing.</p>
 <Example code={`<label for="disabledRange" class="form-label">Disabled range</label>
-<input type="range" class="form-range" id="disabledRange" disabled>`} />
-
-## Min and max
-
-Range inputs have implicit values for `min` and `max`—`0` and `100`, respectively. You may specify new values for those using the `min` and `max` attributes.
-
+<input type="range" class="form-range" id="disabledRange" disabled>`} /><h2 id="min-and-max">Min and max</h2>
+<p>Range inputs have implicit values for <code>min</code> and <code>max</code>—<code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
 <Example code={`<label for="range2" class="form-label">Example range</label>
-<input type="range" class="form-range" min="0" max="5" id="range2">`} />
-
-## Steps
-
-By default, range inputs “snap” to integer values. To change this, you can specify a `step` value. In the example below, we double the number of steps by using `step="0.5"`.
-
+<input type="range" class="form-range" min="0" max="5" id="range2">`} /><h2 id="steps">Steps</h2>
+<p>By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step=&quot;0.5&quot;</code>.</p>
 <Example code={`<label for="range3" class="form-label">Example range</label>
-<input type="range" class="form-range" min="0" max="5" step="0.5" id="range3">`} />
-
-## Output value
-
-The value of the range input can be shown using the `output` element and a bit of JavaScript.
-
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="range3">`} /><h2 id="output-value">Output value</h2>
+<p>The value of the range input can be shown using the <code>output</code> element and a bit of JavaScript.</p>
 <Example code={`<label for="range4" class="form-label">Example range</label>
   <input type="range" class="form-range" min="0" max="100" value="50" id="range4">
   <output for="range4" id="rangeValue" aria-hidden="true"></output>
@@ -46,10 +27,6 @@ The value of the range input can be shown using the `output` element and a bit o
     rangeInput.addEventListener('input', function() {
       rangeOutput.textContent = this.value;
     });
-  </script>`} />
-
-## CSS
-
-### Sass variables
-
+  </script>`} /><h2 id="css">CSS</h2>
+<h3 id="sass-variables">Sass variables</h3>
 <ScssDocs name="form-range-variables" file="scss/_variables.scss" />

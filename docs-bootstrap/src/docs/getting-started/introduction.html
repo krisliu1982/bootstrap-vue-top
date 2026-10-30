@@ -1,149 +1,103 @@
+<h2 id="quick-start">Quick start</h2>
 
-## Quick start
+<p>Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this <a href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap CodePen demo</a>.</p>
 
-Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this [Bootstrap CodePen demo](https://codepen.io/team/bootstrap/pen/qBamdLj).
+<br>
 
-<br/>
+<ol><li><p><strong>Create a new <code>index.html</code> file in your project root.</strong> Include the <code>&lt;meta name="viewport"&gt;</code> tag as well for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">proper responsive behavior</a> in mobile devices.</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></li><li><p><strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+    &lt;link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
+<pre><code class="language-html">&lt;script src="[[config:cdn.popper]]" integrity="[[config:cdn.popper_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="[[docsref:/layout/grid]]">layout</a>, adding dozens of <a href="[[docsref:/components/buttons]]">components</a>, and utilizing <a href="[[docsref:/examples]]">our official examples</a>.</p></li></ol>
 
-1. **Create a new `index.html` file in your project root.** Include the `<meta name="viewport">` tag as well for [proper responsive behavior](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) in mobile devices.
+<h2 id="cdn-links">CDN links</h2>
 
-   ```html
-   <!doctype html>
-   <html lang="en">
-     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap demo</title>
-     </head>
-     <body>
-       <h1>Hello, world!</h1>
-     </body>
-   </html>
-   ```
+<p>As reference, here are our primary CDN links.</p>
 
-2. **Include Bootstrap’s CSS and JS.** Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing `</body>`. Learn more about our [CDN links](#cdn-links).
+<table class="table"><thead><tr><th scope="col">Description</th><th scope="col">URL</th></tr></thead><tbody><tr><td>CSS</td><td><code>[[config:cdn.css]]</code></td></tr><tr><td>JS</td><td><code>[[config:cdn.js_bundle]]</code></td></tr></tbody></table>
 
-   ```html
-   <!doctype html>
-   <html lang="en">
-     <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap demo</title>
-       <link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous">
-     </head>
-     <body>
-       <h1>Hello, world!</h1>
-       <script src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"></script>
-     </body>
-   </html>
-   ```
+<p>You can also use the CDN to fetch any of our <a href="[[docsref:/getting-started/contents]]">additional builds listed in the Contents page</a>.</p>
 
-   You can also include [Popper](https://popper.js.org/docs/v2/) and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
+<p>When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.</p>
 
-   ```html
-   <script src="[[config:cdn.popper]]" integrity="[[config:cdn.popper_hash]]" crossorigin="anonymous"></script>
-   <script src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"></script>
-   ```
+<p>We also include a <code>crossorigin="anonymous"</code> attribute to prevent <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors.</p>
 
-3. **Hello, world!** Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own [layout]([[docsref:/layout/grid]]), adding dozens of [components]([[docsref:/components/buttons]]), and utilizing [our official examples]([[docsref:/examples]]).
+<h2 id="next-steps">Next steps</h2>
 
-## CDN links
+<ul><li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li><li>Read about what’s included in Bootstrap in our <a href="[[docsref:/getting-started/contents/]]">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li><li>Need a little more power? Consider building with Bootstrap by <a href="[[docsref:/getting-started/download#package-managers]]">including the source files via package manager</a>.</li><li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="[[docsref:/getting-started/javascript#using-bootstrap-as-a-module]]">using Bootstrap as a module</a> section.</li></ul>
 
-As reference, here are our primary CDN links.
+<h2 id="js-components">JS components</h2>
 
-<BsTable>
-| Description | URL |
-| --- | --- |
-| CSS | `[[config:cdn.css]]` |
-| JS | `[[config:cdn.js_bundle]]` |
-</BsTable>
+<p>Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
 
-You can also use the CDN to fetch any of our [additional builds listed in the Contents page]([[docsref:/getting-started/contents]]).
+<ul><li>Accordions for extending our Collapse plugin</li><li>Alerts for dismissing</li><li>Buttons for toggling states and checkbox/radio functionality</li><li>Carousel for all slide behaviors, controls, and indicators</li><li>Collapse for toggling visibility of content</li><li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/docs/v2/">Popper</a>)</li><li>Modals for displaying, positioning, and scroll behavior</li><li>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</li><li>Navs with the Tab plugin for toggling content panes</li><li>Offcanvases for displaying, positioning, and scroll behavior</li><li>Scrollspy for scroll behavior and navigation updates</li><li>Toasts for displaying and dismissing</li><li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/docs/v2/">Popper</a>)</li></ul>
 
-When using CDN links, be sure to use the `integrity` attribute to verify the correct files and versions. These hashes are unique to each file and version of Bootstrap, so when you update to a new version, be sure the `integrity` attribute is also updated.
+<h2 id="important-globals">Important globals</h2>
 
-We also include a `crossorigin="anonymous"` attribute to prevent [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors.
+<p>Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles. Let’s dive in.</p>
 
-## Next steps
+<h3 id="html5-doctype">HTML5 doctype</h3>
 
-- Read a bit more about some [important global environment settings](#important-globals) that Bootstrap utilizes.
-- Read about what’s included in Bootstrap in our [contents section]([[docsref:/getting-started/contents/]]) and the list of [components that require JavaScript](#js-components) below.
-- Need a little more power? Consider building with Bootstrap by [including the source files via package manager]([[docsref:/getting-started/download#package-managers]]).
-- Looking to use Bootstrap as a module with `<script type="module">`? Please refer to our [using Bootstrap as a module]([[docsref:/getting-started/javascript#using-bootstrap-as-a-module]]) section.
+<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
 
-## JS components
-
-Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
-
-- Accordions for extending our Collapse plugin
-- Alerts for dismissing
-- Buttons for toggling states and checkbox/radio functionality
-- Carousel for all slide behaviors, controls, and indicators
-- Collapse for toggling visibility of content
-- Dropdowns for displaying and positioning (also requires [Popper](https://popper.js.org/docs/v2/))
-- Modals for displaying, positioning, and scroll behavior
-- Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors
-- Navs with the Tab plugin for toggling content panes
-- Offcanvases for displaying, positioning, and scroll behavior
-- Scrollspy for scroll behavior and navigation updates
-- Toasts for displaying and dismissing
-- Tooltips and popovers for displaying and positioning (also requires [Popper](https://popper.js.org/docs/v2/))
-
-## Important globals
-
-Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the *normalization* of cross browser styles. Let’s dive in.
-
-### HTML5 doctype
-
-Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.
-
-```html
-<!doctype html>
-<html lang="en">
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
   ...
-</html>
-```
+&lt;/html&gt;</code></pre>
 
-### Viewport meta
+<h3 id="viewport-meta">Viewport meta</h3>
 
-Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>`.
+<p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head&gt;</code>.</p>
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
+<pre><code class="language-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
 
-You can see an example of this in action in the [quick start](#quick-start).
+<p>You can see an example of this in action in the <a href="#quick-start">quick start</a>.</p>
 
-### Box-sizing
+<h3 id="box-sizing">Box-sizing</h3>
 
-For more straightforward sizing in CSS, we switch the global `box-sizing` value from `content-box` to `border-box`. This ensures `padding` does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom Search Engine.
+<p>For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from <code>content-box</code> to <code>border-box</code>. This ensures <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom Search Engine.</p>
 
-On the rare occasion you need to override it, use something like the following:
+<p>On the rare occasion you need to override it, use something like the following:</p>
 
-```css
-.selector-for-some-widget {
+<pre><code class="language-css">.selector-for-some-widget {
   box-sizing: content-box;
-}
-```
+}</code></pre>
 
-With the above snippet, nested elements—including generated content via `::before` and `::after`—will all inherit the specified `box-sizing` for that `.selector-for-some-widget`.
+<p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>
 
-Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box-sizing/).
+<p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.</p>
 
-### Reboot
+<h3 id="reboot">Reboot</h3>
 
-For improved cross-browser rendering, we use [Reboot]([[docsref:/content/reboot]]) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+<p>For improved cross-browser rendering, we use <a href="[[docsref:/content/reboot]]">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
 
-## Community
+<h2 id="community">Community</h2>
 
-Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.
+<p>Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
 
-- Read and subscribe to [The Official Bootstrap Blog]([[config:blog]]).
-- Ask questions and explore [our GitHub Discussions](https://github.com/twbs/bootstrap/discussions).
-- Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://www.reddit.com/r/bootstrap/).
-- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
-- Developers should use the keyword `bootstrap` on packages that modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
+<ul><li>Read and subscribe to <a href="[[config:blog]]">The Official Bootstrap Blog</a>.</li><li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li><li>Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.</li><li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li><li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).</li><li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li></ul>
 
-You can also follow [@getbootstrap on X](https://x.com/[[config:x]]) for the latest gossip and awesome music videos.
+<p>You can also follow <a href="https://x.com/[[config:x]]">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>

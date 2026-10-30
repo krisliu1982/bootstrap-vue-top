@@ -1,16 +1,8 @@
-
-import { getData } from '@libs/data'
-
-## About
-
-A **card** is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
-
-## Example
-
-Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no `margin` by default, so use [spacing utilities]([[docsref:/utilities/spacing]]) as needed.
-
-Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
-
+<h2 id="about">About</h2>
+<p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
+<h2 id="example">Example</h2>
+<p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="[[docsref:/utilities/spacing]]">spacing utilities</a> as needed.</p>
+<p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="#sizing">sizing options</a>.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
     <div class="card-body">
@@ -18,28 +10,17 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-## Content types
-
-Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.
-
-### Body
-
-The building block of a card is the `.card-body`. Use it whenever you need a padded section within a card.
-
+  </div>`} /><h2 id="content-types">Content types</h2>
+<p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
+<h3 id="body">Body</h3>
+<p>The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.</p>
 <Example code={`<div class="card">
     <div class="card-body">
       This is some text within a card body.
     </div>
-  </div>`} />
-
-### Titles, text, and links
-
-Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, links are added and placed next to each other by adding `.card-link` to an `<a>` tag.
-
-Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-body` item, the card title and subtitle are aligned nicely.
-
+  </div>`} /><h3 id="titles-text-and-links">Titles, text, and links</h3>
+<p>Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code>.card-link</code> to an <code>&lt;a&gt;</code> tag.</p>
+<p>Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*&gt;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -48,32 +29,22 @@ Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-t
       <a href="#" class="card-link">Card link</a>
       <a href="#" class="card-link">Another link</a>
     </div>
-  </div>`} />
-
-### Images
-
-`.card-img-top` and `.card-img-bottom` respectively set the top and bottom corners rounded to match the card’s borders. With `.card-text`, text can be added to the card. Text within `.card-text` can also be styled with the standard HTML tags.
-
+  </div>`} /><h3 id="images">Images</h3>
+<p><code>.card-img-top</code> and <code>.card-img-bottom</code> respectively set the top and bottom corners rounded to match the card’s borders. With <code>.card-text</code>, text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
     <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     </div>
-  </div>`} />
-
-### List groups
-
-Create lists of content in a card with a flush list group.
-
+  </div>`} /><h3 id="list-groups">List groups</h3>
+<p>Create lists of content in a card with a flush list group.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
     </ul>
-  </div>`} />
-
-<Example code={`<div class="card" style="width: 18rem;">
+  </div>`} /><Example code={`<div class="card" style="width: 18rem;">
     <div class="card-header">
       Featured
     </div>
@@ -82,9 +53,7 @@ Create lists of content in a card with a flush list group.
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
     </ul>
-  </div>`} />
-
-<Example code={`<div class="card" style="width: 18rem;">
+  </div>`} /><Example code={`<div class="card" style="width: 18rem;">
     <ul class="list-group list-group-flush">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
@@ -93,12 +62,8 @@ Create lists of content in a card with a flush list group.
     <div class="card-footer">
       Card footer
     </div>
-  </div>`} />
-
-### Kitchen sink
-
-Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
-
+  </div>`} /><h3 id="kitchen-sink">Kitchen sink</h3>
+<p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
     <div class="card-body">
@@ -114,12 +79,8 @@ Mix and match multiple content types to create the card you need, or throw every
       <a href="#" class="card-link">Card link</a>
       <a href="#" class="card-link">Another link</a>
     </div>
-  </div>`} />
-
-### Header and footer
-
-Add an optional header and/or footer within a card.
-
+  </div>`} /><h3 id="header-and-footer">Header and footer</h3>
+<p>Add an optional header and/or footer within a card.</p>
 <Example code={`<div class="card">
     <div class="card-header">
       Featured
@@ -129,10 +90,7 @@ Add an optional header and/or footer within a card.
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-Card headers can be styled by adding `.card-header` to `<h*>` elements.
-
+  </div>`} /><p>Card headers can be styled by adding <code>.card-header</code> to <code>&lt;h*&gt;</code> elements.</p>
 <Example code={`<div class="card">
     <h5 class="card-header">Featured</h5>
     <div class="card-body">
@@ -140,9 +98,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-<Example code={`<div class="card">
+  </div>`} /><Example code={`<div class="card">
     <div class="card-header">
       Quote
     </div>
@@ -156,9 +112,7 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
         </figcaption>
       </figure>
     </div>
-  </div>`} />
-
-<Example code={`<div class="card text-center">
+  </div>`} /><Example code={`<div class="card text-center">
     <div class="card-header">
       Featured
     </div>
@@ -170,16 +124,10 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
     <div class="card-footer text-body-secondary">
       2 days ago
     </div>
-  </div>`} />
-
-## Sizing
-
-Cards assume no specific `width` to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.
-
-### Using grid markup
-
-Using the grid, wrap cards in columns and rows as needed.
-
+  </div>`} /><h2 id="sizing">Sizing</h2>
+<p>Cards assume no specific <code>width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p>
+<h3 id="using-grid-markup">Using grid markup</h3>
+<p>Using the grid, wrap cards in columns and rows as needed.</p>
 <Example code={`<div class="row">
     <div class="col-sm-6 mb-3 mb-sm-0">
       <div class="card">
@@ -199,12 +147,8 @@ Using the grid, wrap cards in columns and rows as needed.
         </div>
       </div>
     </div>
-  </div>`} />
-
-### Using utilities
-
-Use our handful of [available sizing utilities]([[docsref:/utilities/sizing]]) to quickly set a card’s width.
-
+  </div>`} /><h3 id="using-utilities">Using utilities</h3>
+<p>Use our handful of <a href="[[docsref:/utilities/sizing]]">available sizing utilities</a> to quickly set a card’s width.</p>
 <Example code={`<div class="card w-75 mb-3">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -219,24 +163,16 @@ Use our handful of [available sizing utilities]([[docsref:/utilities/sizing]]) t
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Button</a>
     </div>
-  </div>`} />
-
-### Using custom CSS
-
-Use custom CSS in your stylesheets or as inline styles to set a width.
-
+  </div>`} /><h3 id="using-custom-css">Using custom CSS</h3>
+<p>Use custom CSS in your stylesheets or as inline styles to set a width.</p>
 <Example code={`<div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-## Text alignment
-
-You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]([[docsref:/utilities/text#text-alignment]]).
-
+  </div>`} /><h2 id="text-alignment">Text alignment</h2>
+<p>You can quickly change the text alignment of any card—in its entirety or specific parts—with our <a href="[[docsref:/utilities/text#text-alignment]]">text align classes</a>.</p>
 <Example code={`<div class="card mb-3" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
@@ -259,12 +195,8 @@ You can quickly change the text alignment of any card—in its entirety or speci
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-## Navigation
-
-Add some navigation to a card’s header (or block) with Bootstrap’s [nav components]([[docsref:/components/navs-tabs]]).
-
+  </div>`} /><h2 id="navigation">Navigation</h2>
+<p>Add some navigation to a card’s header (or block) with Bootstrap’s <a href="[[docsref:/components/navs-tabs]]">nav components</a>.</p>
 <Example code={`<div class="card text-center">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
@@ -284,9 +216,7 @@ Add some navigation to a card’s header (or block) with Bootstrap’s [nav comp
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-<Example code={`<div class="card text-center">
+  </div>`} /><Example code={`<div class="card text-center">
     <div class="card-header">
       <ul class="nav nav-pills card-header-pills">
         <li class="nav-item">
@@ -305,16 +235,10 @@ Add some navigation to a card’s header (or block) with Bootstrap’s [nav comp
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>`} />
-
-## Images
-
-Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.
-
-### Image caps
-
-Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.
-
+  </div>`} /><h2 id="images-1">Images</h2>
+<p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
+<h3 id="image-caps">Image caps</h3>
+<p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
 <Example code={`<div class="card mb-3">
     <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
     <div class="card-body">
@@ -330,12 +254,8 @@ Similar to headers and footers, cards can include top and bottom “image caps�
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
     <Placeholder width="100%" height="180" class="card-img-bottom" text="Image cap" />
-  </div>`} />
-
-### Image overlays
-
-Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.
-
+  </div>`} /><h3 id="image-overlays">Image overlays</h3>
+<p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
 <Example code={`<div class="card text-bg-dark">
     <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
     <div class="card-img-overlay">
@@ -343,16 +263,10 @@ Turn an image into a card background and overlay your card’s text. Depending o
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small>Last updated 3 mins ago</small></p>
     </div>
-  </div>`} />
-
-<Callout>
-Note that content should not be larger than the height of the image. If content is larger than the image the content will be displayed outside the image.
-</Callout>
-
-## Horizontal
-
-Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with `.g-0` and use `.col-md-*` classes to make the card horizontal at the `md` breakpoint. Further adjustments may be needed depending on your card content.
-
+  </div>`} /><Callout>
+<p>Note that content should not be larger than the height of the image. If content is larger than the image the content will be displayed outside the image.</p>
+</Callout><h2 id="horizontal">Horizontal</h2>
+<p>Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your card content.</p>
 <Example code={`<div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
@@ -366,44 +280,26 @@ Using a combination of grid and utility classes, cards can be made horizontal in
         </div>
       </div>
     </div>
-  </div>`} />
-
-## Card styles
-
-Cards include various options for customizing their backgrounds, borders, and color.
-
-### Background and color
-
-<AddedIn version="5.2.0" />
-
-Set a `background-color` with contrasting foreground `color` with [our `.text-bg-{color}` helpers]([[docsref:helpers/color-background]]). Previously it was required to manually pair your choice of [`.text-{color}`]([[docsref:/utilities/colors]]) and [`.bg-{color}`]([[docsref:/utilities/background]]) utilities for styling, which you still may use if you prefer.
-
+  </div>`} /><h2 id="card-styles">Card styles</h2>
+<p>Cards include various options for customizing their backgrounds, borders, and color.</p>
+<h3 id="background-and-color">Background and color</h3>
+<AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="[[docsref:helpers/color-background]]">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="[[docsref:/utilities/colors]]"><code>.text-{color}</code></a> and <a href="[[docsref:/utilities/background]]"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
 <Example code={getData('theme-colors').map((themeColor) => `<div class="card text-bg-${themeColor.name} mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body">
       <h5 class="card-title">${themeColor.title} card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     </div>
-  </div>`)} />
-
-<Callout name="warning-color-assistive-technologies" />
-
-### Border
-
-Use [border utilities]([[docsref:/utilities/borders]]) to change just the `border-color` of a card. Note that you can put `.text-{color}` classes on the parent `.card` or a subset of the card’s contents as shown below.
-
+  </div>`)} /><Callout name="warning-color-assistive-technologies" /><h3 id="border">Border</h3>
+<p>Use <a href="[[docsref:/utilities/borders]]">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.</p>
 <Example code={getData('theme-colors').map((themeColor) => `<div class="card border-${themeColor.name} mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body${themeColor.contrast_color ? '' : ` text-${themeColor.name}`}">
       <h5 class="card-title">${themeColor.title} card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     </div>
-  </div>`)} />
-
-### Mixins utilities
-
-You can also change the borders on the card header and footer as needed, and even remove their `background-color` with `.bg-transparent`.
-
+  </div>`)} /><h3 id="mixins-utilities">Mixins utilities</h3>
+<p>You can also change the borders on the card header and footer as needed, and even remove their <code>background-color</code> with <code>.bg-transparent</code>.</p>
 <Example code={`<div class="card border-success mb-3" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success">Header</div>
     <div class="card-body text-success">
@@ -411,16 +307,10 @@ You can also change the borders on the card header and footer as needed, and eve
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
-  </div>`} />
-
-## Card layout
-
-In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
-
-### Card groups
-
-Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use `display: flex;` to become attached with uniform dimensions starting at the `sm` breakpoint.
-
+  </div>`} /><h2 id="card-layout">Card layout</h2>
+<p>In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, <strong>these layout options are not yet responsive</strong>.</p>
+<h3 id="card-groups">Card groups</h3>
+<p>Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex;</code> to become attached with uniform dimensions starting at the <code>sm</code> breakpoint.</p>
 <Example code={`<div class="card-group">
     <div class="card">
       <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
@@ -446,10 +336,7 @@ Use card groups to render cards as a single, attached element with equal width a
         <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
       </div>
     </div>
-  </div>`} />
-
-When using card groups with footers, their content will automatically line up.
-
+  </div>`} /><p>When using card groups with footers, their content will automatically line up.</p>
 <Example code={`<div class="card-group">
     <div class="card">
       <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
@@ -481,12 +368,8 @@ When using card groups with footers, their content will automatically line up.
         <small class="text-body-secondary">Last updated 3 mins ago</small>
       </div>
     </div>
-  </div>`} />
-
-### Grid cards
-
-Use the Bootstrap grid system and its [`.row-cols` classes]([[docsref:/layout/grid#row-columns]]) to control how many grid columns (wrapped around your cards) you show per row. For example, here’s `.row-cols-1` laying out the cards on one column, and `.row-cols-md-2` splitting four cards to equal width across multiple rows, from the medium breakpoint up.
-
+  </div>`} /><h3 id="grid-cards">Grid cards</h3>
+<p>Use the Bootstrap grid system and its <a href="[[docsref:/layout/grid#row-columns]]"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium breakpoint up.</p>
 <Example code={`<div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
       <div class="card">
@@ -524,10 +407,7 @@ Use the Bootstrap grid system and its [`.row-cols` classes]([[docsref:/layout/gr
         </div>
       </div>
     </div>
-  </div>`} />
-
-Change it to `.row-cols-3` and you’ll see the fourth card wrap.
-
+  </div>`} /><p>Change it to <code>.row-cols-3</code> and you’ll see the fourth card wrap.</p>
 <Example code={`<div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card">
@@ -565,10 +445,7 @@ Change it to `.row-cols-3` and you’ll see the fourth card wrap.
         </div>
       </div>
     </div>
-  </div>`} />
-
-When you need equal height, add `.h-100` to the cards. If you want equal heights by default, you can set `$card-height: 100%` in Sass.
-
+  </div>`} /><p>When you need equal height, add <code>.h-100</code> to the cards. If you want equal heights by default, you can set <code>$card-height: 100%</code> in Sass.</p>
 <Example code={`<div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
@@ -606,10 +483,7 @@ When you need equal height, add `.h-100` to the cards. If you want equal heights
         </div>
       </div>
     </div>
-  </div>`} />
-
-Just like with card groups, card footers will automatically line up.
-
+  </div>`} /><p>Just like with card groups, card footers will automatically line up.</p>
 <Example code={`<div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
@@ -647,22 +521,10 @@ Just like with card groups, card footers will automatically line up.
         </div>
       </div>
     </div>
-  </div>`} />
-
-### Masonry
-
-In `v4` we used a CSS-only technique to mimic the behavior of [Masonry](https://masonry.desandro.com/)-like columns, but this technique came with lots of unpleasant [side effects](https://github.com/twbs/bootstrap/pull/28922). If you want to have this type of layout in `v5`, you can just make use of Masonry plugin. **Masonry is not included in Bootstrap**, but we’ve made a [demo example]([[docsref:/examples/masonry]]) to help you get started.
-
-## CSS
-
-### Variables
-
-<AddedIn version="5.2.0" />
-
-As part of Bootstrap’s evolving CSS variables approach, cards now use local CSS variables on `.card` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
-
-<ScssDocs name="card-css-vars" file="scss/_card.scss" />
-
-### Sass variables
-
+  </div>`} /><h3 id="masonry">Masonry</h3>
+<p>In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots of unpleasant <a href="https://github.com/twbs/bootstrap/pull/28922">side effects</a>. If you want to have this type of layout in <code>v5</code>, you can just make use of Masonry plugin. <strong>Masonry is not included in Bootstrap</strong>, but we’ve made a <a href="[[docsref:/examples/masonry]]">demo example</a> to help you get started.</p>
+<h2 id="css">CSS</h2>
+<h3 id="variables">Variables</h3>
+<AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, cards now use local CSS variables on <code>.card</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
+<ScssDocs name="card-css-vars" file="scss/_card.scss" /><h3 id="sass-variables">Sass variables</h3>
 <ScssDocs name="card-variables" file="scss/_variables.scss" />

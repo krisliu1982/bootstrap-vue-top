@@ -1,26 +1,14 @@
-
-## About
-
-Use the ratio helper to manage the aspect ratios of external content like `<iframe>`s, `<embed>`s, `<video>`s, and `<object>`s. These helpers also can be used on any standard HTML child element (e.g., a `<div>` or `<img>`). Styles are applied from the parent `.ratio` class directly to the child.
-
-Aspect ratios are declared in a Sass map and included in each class via CSS variable, which also allows [custom aspect ratios](#custom-ratios).
-
+<h2 id="about">About</h2>
+<p>Use the ratio helper to manage the aspect ratios of external content like <code>&lt;iframe&gt;</code>s, <code>&lt;embed&gt;</code>s, <code>&lt;video&gt;</code>s, and <code>&lt;object&gt;</code>s. These helpers also can be used on any standard HTML child element (e.g., a <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code>). Styles are applied from the parent <code>.ratio</code> class directly to the child.</p>
+<p>Aspect ratios are declared in a Sass map and included in each class via CSS variable, which also allows <a href="#custom-ratios">custom aspect ratios</a>.</p>
 <Callout>
-**Pro-Tip!** You don’t need `frameborder="0"` on your `<iframe>`s as we override that for you in [Reboot]([[docsref:/content/reboot]]).
-</Callout>
-
-## Example
-
-Wrap any embed, like an `<iframe>`, in a parent element with `.ratio` and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector `.ratio > *`.
-
+<p><strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in <a href="[[docsref:/content/reboot]]">Reboot</a>.</p>
+</Callout><h2 id="example">Example</h2>
+<p>Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector <code>.ratio &gt; *</code>.</p>
 <Example code={`<div class="ratio ratio-16x9">
     <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
-  </div>`} />
-
-## Aspect ratios
-
-Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:
-
+  </div>`} /><h2 id="aspect-ratios">Aspect ratios</h2>
+<p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
 <Example class="bd-example-ratios" code={`<div class="ratio ratio-1x1">
     <div>1x1</div>
   </div>
@@ -32,35 +20,20 @@ Aspect ratios can be customized with modifier classes. By default the following 
   </div>
   <div class="ratio ratio-21x9">
     <div>21x9</div>
-  </div>`} />
-
-## Custom ratios
-
-Each `.ratio-*` class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the fly with some quick math on your part.
-
-For example, to create a 2x1 aspect ratio, set `--bs-aspect-ratio: 50%` on the `.ratio`.
-
+  </div>`} /><h2 id="custom-ratios">Custom ratios</h2>
+<p>Each <code>.ratio-*</code> class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the fly with some quick math on your part.</p>
+<p>For example, to create a 2x1 aspect ratio, set <code>--bs-aspect-ratio: 50%</code> on the <code>.ratio</code>.</p>
 <Example class="bd-example-ratios" code={`<div class="ratio" style="--bs-aspect-ratio: 50%;">
     <div>2x1</div>
-  </div>`} />
-
-This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes to a custom 2x1 at the medium breakpoint.
-
-```scss
-.ratio-4x3 {
+  </div>`} /><p>This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes to a custom 2x1 at the medium breakpoint.</p>
+<pre><code class="language-scss">.ratio-4x3 {
   @include media-breakpoint-up(md) {
     --bs-aspect-ratio: 50%; // 2x1
   }
 }
-```
-
+</code></pre>
 <Example class="bd-example-ratios bd-example-ratios-breakpoint" code={`<div class="ratio ratio-4x3">
     <div>4x3, then 2x1</div>
-  </div>`} />
-
-
-## Sass maps
-
-Within `_variables.scss`, you can change the aspect ratios you want to use. Here’s our default `$ratio-aspect-ratios` map. Modify the map as you like and recompile your Sass to put them to use.
-
+  </div>`} /><h2 id="sass-maps">Sass maps</h2>
+<p>Within <code>_variables.scss</code>, you can change the aspect ratios you want to use. Here’s our default <code>$ratio-aspect-ratios</code> map. Modify the map as you like and recompile your Sass to put them to use.</p>
 <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
