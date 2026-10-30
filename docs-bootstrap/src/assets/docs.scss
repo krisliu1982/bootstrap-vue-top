@@ -821,7 +821,7 @@ color: var(--bs-secondary-color);
         margin-right:0;
         margin-left: 0;
         border-width: 1px;
-        border-radius: var(--bs-border-radius)
+        border-radius: var(--bs-border-radius);
     }
 }
 
@@ -842,7 +842,6 @@ color: var(--bs-secondary-color);
 
 @media (min-width: 768px) {
     .docs-example {
-        --docs-example-padding: 1.5rem;
         margin-right: 0;
         margin-left: 0;
         border-width: 1px;
@@ -1147,24 +1146,9 @@ color: var(--bs-secondary-color);
     left: 7.5rem
 }
 
-.docs-example-snippet .highlight pre {
-    margin-right: 0
-}
 
 .highlight-toolbar {
     background-color: var(--docs-pre-bg)
-}
-
-.highlight-toolbar+.highlight {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0
-}
-
-@media (min-width: 768px) {
-    .docs-file-ref .highlight-toolbar {
-        border-top-left-radius:calc(var(--bs-border-radius) - 1px);
-        border-top-right-radius: calc(var(--bs-border-radius) - 1px)
-    }
 }
 
 .docs-content .docs-code-snippet {
@@ -2212,4 +2196,11 @@ main a,main button,main input,main select,main textarea,main h2,main h3,main h4,
     to {
         opacity: 1
     }
+}
+
+.docs-content pre {
+    padding: 1rem;
+    margin: 0;
+    overflow-x: auto;
+    max-width: 100%;
 }

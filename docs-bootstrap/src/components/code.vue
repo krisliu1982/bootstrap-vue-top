@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-//import { codeToHtml } from 'shiki'
+import { codeToHtml } from 'shiki'
 
 const html = ref(null);
 
@@ -19,15 +19,15 @@ const props = defineProps({
   }
 });
 
-/*onMounted(async () => {
+onMounted(async () => {
   html.value = await codeToHtml(props.code, {
     lang: props.lang,
     themes: {
-      light: 'github-light',
-      dark: 'github-dark',
+      light: 'light-plus',
+      dark: 'dark-plus',
     },
     defaultColor: 'light-dark()',
   structure: 'inline' // 关键配置
   });
-});*/
+});
 </script>
