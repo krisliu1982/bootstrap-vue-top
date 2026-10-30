@@ -26,16 +26,14 @@
             <div class="d-flex align-items-center gap-2 mb-1">
               <div class="bg-accent rounded-circle" style="width: 0.375rem;height: 0.375rem;"></div>
               <div class="fw-bold">
-              <span class="fs-sm">{{ t['zh-CN']}}</span>
-              <span class="fg-secondary fs-xs ms-2">{{ t.title }}</span>
+              <span class="fs-sm">{{ t['zh-CN']}} <small>{{ t.title }}</small></span>
               </div>
             </div>
             <ul v-if="t.pages">
               <li v-for="tt in t.pages">
                 <template v-if="tt.title">
                   <RouterLink :to="`/docs/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
-                    <span class="fs-sm">{{ tt['zh-CN']}}</span>
-                    <span class="ms-2 fg-secondary fs-xs">{{ tt.title }}</span>
+                    <span class="fs-sm">{{ tt['zh-CN']}} <small>{{ tt.title }}</small></span>
                   </RouterLink>
                 </template>
                 <template v-if="tt.group">
