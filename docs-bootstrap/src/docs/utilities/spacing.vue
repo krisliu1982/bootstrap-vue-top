@@ -3,5 +3,101 @@
   <article>
     <h1>Spacing</h1>
     <p>Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+
+    <h2 id="margin-and-padding">Margin and padding<a class="anchor-link" href="#margin-and-padding" aria-label="Link to Margin and padding"></a></h2>
+    <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.</p>
+    <Callout>
+    <p><strong>Using the CSS Grid layout module?</strong> Consider using <a href="#gap">the gap utility</a> instead.</p>
+    </Callout><h3 id="notation">Notation<a class="anchor-link" href="#notation" aria-label="Link to Notation"></a></h3>
+    <p>Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+    <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
+    <p>Where <em>property</em> is one of:</p>
+    <ul>
+    <li><code>m</code> - for classes that set <code>margin</code></li>
+    <li><code>p</code> - for classes that set <code>padding</code></li>
+    </ul>
+    <p>Where <em>sides</em> is one of:</p>
+    <ul>
+    <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+    <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+    <li><code>s</code> - (start) for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+    <li><code>e</code> - (end) for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+    <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+    <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+    <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+    </ul>
+    <p>Where <em>size</em> is one of:</p>
+    <ul>
+    <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
+    <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>
+    <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .5</code></li>
+    <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer</code></li>
+    <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 1.5</code></li>
+    <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 3</code></li>
+    <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+    </ul>
+    <p>(You can add more sizes by adding entries to the <code>$spacers</code> Sass map variable.)</p>
+    <h3 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h3>
+    <p>Here are some representative examples of these classes:</p>
+    <pre><code class="language-scss">.mt-0 {
+      margin-top: 0 !important;
+    }
+
+    .ms-1 {
+      margin-left: ($spacer * .25) !important;
+    }
+
+    .px-2 {
+      padding-left: ($spacer * .5) !important;
+      padding-right: ($spacer * .5) !important;
+    }
+
+    .p-3 {
+      padding: $spacer !important;
+    }
+    </code></pre>
+    <h3 id="horizontal-centering">Horizontal centering<a class="anchor-link" href="#horizontal-centering" aria-label="Link to Horizontal centering"></a></h3>
+    <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
+    <Example showMarkup={false} code={`<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--bd-violet-rgb),.15); border: rgba(var(--bd-violet-rgb),.3) solid 1px;">
+        Centered element
+      </div>`} /><pre><code class="language-html">&lt;div class=&quot;mx-auto p-2&quot; style=&quot;width: 200px;&quot;&gt;
+      Centered element
+    &lt;/div&gt;
+    </code></pre>
+    <h2 id="negative-margin">Negative margin<a class="anchor-link" href="#negative-margin" aria-label="Link to Negative margin"></a></h2>
+    <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting <code>$enable-negative-margins: true</code>.</p>
+    <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of <code>n</code> before the requested size. Here’s an example class that’s the opposite of <code>.mt-1</code>:</p>
+    <pre><code class="language-scss">.mt-n1 {
+      margin-top: -0.25rem !important;
+    }
+    </code></pre>
+    <h2 id="gap">Gap<a class="anchor-link" href="#gap" aria-label="Link to Gap"></a></h2>
+    <p>When using <code>display: grid</code> or <code>display: flex</code>, you can make use of <code>gap</code> utilities on the parent element. This can save on having to add margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the <code>$spacers</code> Sass map.</p>
+    <Example class="bd-example-cssgrid" code={`<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
+        <div class="p-2">Grid item 1</div>
+        <div class="p-2">Grid item 2</div>
+        <div class="p-2">Grid item 3</div>
+        <div class="p-2">Grid item 4</div>
+      </div>`} /><p>Support includes responsive options for all of Bootstrap’s grid breakpoints, as well as six sizes from the <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class as it’s effectively the same as <code>.gap-0</code>.</p>
+    <h3 id="row-gap">row-gap<a class="anchor-link" href="#row-gap" aria-label="Link to row-gap"></a></h3>
+    <p><code>row-gap</code> sets the vertical space between children items in the specified container.</p>
+    <Example class="bd-example-cssgrid" code={`<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
+        <div class="p-2">Grid item 1</div>
+        <div class="p-2">Grid item 2</div>
+        <div class="p-2">Grid item 3</div>
+        <div class="p-2">Grid item 4</div>
+      </div>`} /><h3 id="column-gap">column-gap<a class="anchor-link" href="#column-gap" aria-label="Link to column-gap"></a></h3>
+    <p><code>column-gap</code> sets the horizontal space between children items in the specified container.</p>
+    <Example class="bd-example-cssgrid" code={`<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3">
+        <div class="p-2">Grid item 1</div>
+        <div class="p-2">Grid item 2</div>
+        <div class="p-2">Grid item 3</div>
+        <div class="p-2">Grid item 4</div>
+      </div>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
+    <p>Spacing utilities are declared via Sass map and then generated with our utilities API.</p>
+    <ScssDocs name="spacer-variables-maps" file="scss/_variables.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <p>Spacing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <ScssDocs name="utils-spacing" file="scss/_utilities.scss" />
   </article>
 </template>

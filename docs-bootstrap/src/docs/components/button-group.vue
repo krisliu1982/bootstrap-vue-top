@@ -3,5 +3,178 @@
   <article>
     <h1>Button group</h1>
     <p>Group a series of buttons together on a single line or stack them in a vertical column.</p>
+
+    <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
+    <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+    <Example code={`<div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+      </div>`} /><Callout>
+    <p>Button groups require an appropriate <code>role</code> attribute and explicit label to ensure assistive technologies like screen readers identify buttons as grouped and announce them. Use <code>role=&quot;group&quot;</code> for button groups or <code>role=&quot;toolbar&quot;</code> for button toolbars. Then use <code>aria-label</code> or <code>aria-labelledby</code> to label them.</p>
+    </Callout><p>These classes can also be added to groups of links, as an alternative to the <a href="[[docsref:/components/navs-tabs]]"><code>.nav</code> navigation components</a>.</p>
+    <Example code={`<div class="btn-group">
+        <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+      </div>`} /><h2 id="mixed-styles">Mixed styles<a class="anchor-link" href="#mixed-styles" aria-label="Link to Mixed styles"></a></h2>
+    <Example code={`<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">Left</button>
+        <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-success">Right</button>
+      </div>`} /><h2 id="outlined-styles">Outlined styles<a class="anchor-link" href="#outlined-styles" aria-label="Link to Outlined styles"></a></h2>
+    <Example code={`<div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>`} /><h2 id="checkbox-and-radio-button-groups">Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a></h2>
+    <p>Combine button-like checkbox and radio <a href="[[docsref:/forms/checks-radios]]">toggle buttons</a> into a seamless looking button group.</p>
+    <Example code={`<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+      </div>`} /><Example code={`<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+      </div>`} /><h2 id="button-toolbar">Button toolbar<a class="anchor-link" href="#button-toolbar" aria-label="Link to Button toolbar"></a></h2>
+    <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
+    <Example code={`<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+          <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-secondary">5</button>
+          <button type="button" class="btn btn-secondary">6</button>
+          <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-info">8</button>
+        </div>
+      </div>`} /><p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities though to space things properly.</p>
+    <Example code={`<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">1</button>
+          <button type="button" class="btn btn-outline-secondary">2</button>
+          <button type="button" class="btn btn-outline-secondary">3</button>
+          <button type="button" class="btn btn-outline-secondary">4</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-text" id="btnGroupAddon">@</div>
+          <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+        </div>
+      </div>
+
+      <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">1</button>
+          <button type="button" class="btn btn-outline-secondary">2</button>
+          <button type="button" class="btn btn-outline-secondary">3</button>
+          <button type="button" class="btn btn-outline-secondary">4</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-text" id="btnGroupAddon2">@</div>
+          <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+        </div>
+      </div>`} /><h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
+    <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+    <Example code={`<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br>
+      <div class="btn-group" role="group" aria-label="Default button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>`} /><h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
+    <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+    <Example code={`<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>`} /><h2 id="vertical-variation">Vertical variation<a class="anchor-link" href="#vertical-variation" aria-label="Link to Vertical variation"></a></h2>
+    <p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not supported here.</strong></p>
+    <Example code={`<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+      </div>`} /><Example code={`<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+        <div class="btn-group dropstart" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropend" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropup" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>`} /><Example code={`<div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+        <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+      </div>`} />
   </article>
 </template>

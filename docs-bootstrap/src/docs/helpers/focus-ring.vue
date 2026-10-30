@@ -3,5 +3,27 @@
   <article>
     <h1>Focus ring</h1>
     <p>Utility classes that allows you to add and modify custom focus ring styles to elements and components.</p>
+
+    <p>The <code>.focus-ring</code> helper removes the default <code>outline</code> on <code>:focus</code>, replacing it with a <code>box-shadow</code> that can be more broadly customized. The new shadow is made up of a series of CSS variables, inherited from the <code>:root</code> level, that can be modified for any element or component.</p>
+    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
+    <p>Click directly on the link below to see the focus ring in action, or into the example below and then press <kbd>Tab</kbd>.</p>
+    <Example code={`<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+        Custom focus ring
+      </a>`} /><h2 id="customize">Customize<a class="anchor-link" href="#customize" aria-label="Link to Customize"></a></h2>
+    <p>Modify the styling of a focus ring with our CSS variables, Sass variables, utilities, or custom styles.</p>
+    <h3 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h3>
+    <p>Modify the <code>--bs-focus-ring-*</code> CSS variables as needed to change the default appearance.</p>
+    <Example code={`<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
+        Green focus ring
+      </a>`} /><p><code>.focus-ring</code> sets styles via global CSS variables that can be overridden on any parent element, as shown above. These variables are generated from their Sass variable counterparts.</p>
+    <ScssDocs name="root-focus-variables" file="scss/_root.scss" /><p>By default, there is no <code>--bs-focus-ring-x</code>, <code>--bs-focus-ring-y</code>, or <code>--bs-focus-ring-blur</code>, but we provide CSS variables with fallbacks to initial <code>0</code> values. Modify them to change the default appearance.</p>
+    <Example code={`<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+        Blurry offset focus ring
+      </a>`} /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <p>Customize the focus ring Sass variables to modify all usage of the focus ring styles across your Bootstrap-powered project.</p>
+    <ScssDocs name="focus-ring-variables" file="scss/_variables.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <p>In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our <a href="[[docsref:/customize/color#theme-colors]]">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current color mode support.</p>
+    <Example code={getData('theme-colors').map((themeColor) => `<p><a href="#" class="d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2">${themeColor.title} focus</a></p>`)} /><p>Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
   </article>
 </template>

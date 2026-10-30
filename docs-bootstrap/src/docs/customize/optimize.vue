@@ -3,5 +3,58 @@
   <article>
     <h1>Optimize</h1>
     <p>Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
+
+    <h2 id="lean-sass-imports">Lean Sass imports<a class="anchor-link" href="#lean-sass-imports" aria-label="Link to Lean Sass imports"></a></h2>
+    <p>When using Sass in your asset pipeline, make sure you optimize Bootstrap by only <code>@import</code>ing the components you need. Your largest optimizations will likely come from the <code>Layout &amp; Components</code> section of our <code>bootstrap.scss</code>.</p>
+    <ScssDocs name="import-stack" file="scss/bootstrap.scss" /><p>If you’re not using a component, comment it out or delete it entirely. For example, if you’re not using the carousel, remove that import to save some file size in your compiled CSS. Keep in mind there are some dependencies across Sass imports that may make it more difficult to omit a file.</p>
+    <h2 id="lean-javascript">Lean JavaScript<a class="anchor-link" href="#lean-javascript" aria-label="Link to Lean JavaScript"></a></h2>
+    <p>Bootstrap’s JavaScript includes every component in our primary dist files (<code>bootstrap.js</code> and <code>bootstrap.min.js</code>), and even our primary dependency (Popper) with our bundle files (<code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code>). While you’re customizing via Sass, be sure to remove related JavaScript.</p>
+    <p>For instance, assuming you’re using your own JavaScript bundler like Webpack, Parcel, or Vite, you’d only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:</p>
+    <pre><code class="language-js">// Import just what we need
+
+    // import &#39;bootstrap/js/dist/alert&#39;;
+    // import &#39;bootstrap/js/dist/button&#39;;
+    // import &#39;bootstrap/js/dist/carousel&#39;;
+    // import &#39;bootstrap/js/dist/collapse&#39;;
+    // import &#39;bootstrap/js/dist/dropdown&#39;;
+    import &#39;bootstrap/js/dist/modal&#39;;
+    // import &#39;bootstrap/js/dist/offcanvas&#39;;
+    // import &#39;bootstrap/js/dist/popover&#39;;
+    // import &#39;bootstrap/js/dist/scrollspy&#39;;
+    // import &#39;bootstrap/js/dist/tab&#39;;
+    // import &#39;bootstrap/js/dist/toast&#39;;
+    // import &#39;bootstrap/js/dist/tooltip&#39;;
+    </code></pre>
+    <p>This way, you’re not including any JavaScript you don’t intend to use for components like buttons, carousels, and tooltips. If you’re importing dropdowns, tooltips or popovers, be sure to list the Popper dependency in your <code>package.json</code> file.</p>
+    <Callout>
+    <p><strong>Heads up!</strong> Files in <code>bootstrap/js/dist</code> use the <strong>default export</strong>. To use them, do the following:</p>
+    <pre><code class="language-js">import Modal from &#39;bootstrap/js/dist/modal&#39;
+    const modal = new Modal(document.getElementById(&#39;myModal&#39;))
+    </code></pre>
+    </Callout><h2 id="autoprefixer-browserslistrc">Autoprefixer .browserslistrc<a class="anchor-link" href="#autoprefixer-browserslistrc" aria-label="Link to Autoprefixer .browserslistrc"></a></h2>
+    <p>Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our <code>.browserslistrc</code> file, found in the root of the Bootstrap repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.</p>
+    <h2 id="unused-css">Unused CSS<a class="anchor-link" href="#unused-css" aria-label="Link to Unused CSS"></a></h2>
+    <p><em>Help wanted with this section, please consider opening a PR. Thanks!</em></p>
+    <p>While we don’t have a prebuilt example for using <a href="https://github.com/FullHuman/purgecss">PurgeCSS</a> with Bootstrap, there are some helpful articles and walkthroughs that the community has written. Here are some options:</p>
+    <ul>
+    <li><a href="https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772">https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772</a></li>
+    <li><a href="https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/">https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/</a></li>
+    </ul>
+    <p>Lastly, this <a href="https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/">CSS Tricks article on unused CSS</a> shows how to use PurgeCSS and other similar tools.</p>
+    <h2 id="minify-and-gzip">Minify and gzip<a class="anchor-link" href="#minify-and-gzip" aria-label="Link to Minify and gzip"></a></h2>
+    <p>Whenever possible, be sure to compress all the code you serve to your visitors. If you’re using Bootstrap dist files, try to stick to the minified versions (indicated by the <code>.min.css</code> and <code>.min.js</code> extensions). If you’re building Bootstrap from the source with your own build system, be sure to implement your own minifiers for HTML, CSS, and JS.</p>
+    <h2 id="non-blocking-files">Non-blocking files<a class="anchor-link" href="#non-blocking-files" aria-label="Link to Non-blocking files"></a></h2>
+    <p>While minifying and using compression might seem like enough, making your files non-blocking ones is also a big step in making your site well-optimized and fast enough.</p>
+    <p>If you are using a <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> plugin in Google Chrome, you may have stumbled over FCP. <a href="https://web.dev/articles/fcp">The First Contentful Paint</a> metric measures the time from when the page starts loading to when any part of the page’s content is rendered on the screen.</p>
+    <p>You can improve FCP by deferring non-critical JavaScript or CSS. What does that mean? Simply, JavaScript or stylesheets that don’t need to be present on the first paint of your page should be marked with <code>async</code> or <code>defer</code> attributes.</p>
+    <p>This ensures that the less important resources are loaded later and not blocking the first paint. On the other hand, critical resources can be included as inline scripts or styles.</p>
+    <p>If you want to learn more about this, there are already a lot of great articles about it:</p>
+    <ul>
+    <li><a href="https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/">https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/</a></li>
+    <li><a href="https://web.dev/articles/defer-non-critical-css">https://web.dev/articles/defer-non-critical-css</a></li>
+    </ul>
+    <h2 id="always-use-https">Always use HTTPS<a class="anchor-link" href="#always-use-https" aria-label="Link to Always use HTTPS"></a></h2>
+    <p>Your website should only be available over HTTPS connections in production. HTTPS improves the security, privacy, and availability of all sites, and <a href="https://https.cio.gov/everything/">there is no such thing as non-sensitive web traffic</a>. The steps to configure your website to be served exclusively over HTTPS vary widely depending on your architecture and web hosting provider, and thus are beyond the scope of these docs.</p>
+    <p>Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you’ll be sending users <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">mixed active content</a>, leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself, ensure that you only access it over HTTPS connections.</p>
   </article>
 </template>
