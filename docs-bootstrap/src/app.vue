@@ -1,25 +1,26 @@
 <template>
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
-    <div class="container">
+    <div class="container-xxl">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
         <a class="link-body-emphasis text-decoration-none" href="#" @click.prevent="$router.push('/')">
-          <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"
-        /></a>
-        <span class="badge bg-body text-body" style="--bs-badge-font-weight: 500">{{ version }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi text-primary fs-4" viewBox="0 0 16 16">
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+</svg>        </a>
+        <small>{{ version }}</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
               <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold"
-                >文档
+                >中文文档
               </RouterLink>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank"
                 >Bootstrap</a
               >
-              <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
               <div class="vr"></div>
               <div class="dropdown">
                 <a
-                  v-dropdown
+                  data-bs-toggle="dropdown"
                   class="link-body-emphasis text-decoration-none dropdown-toggle"
                   title="文字大小"
                   href="#"
@@ -57,7 +58,7 @@
     </div>
   </nav>
 
-  <bv-offcanvas
+ <!-- <bv-offcanvas
     ref="navbarRef"
     title="BootstrapVue"
     offcanvas-class="offcanvas offcanvas-end"
@@ -73,7 +74,7 @@
       </a>
     </div>
   </bv-offcanvas>
-
+-->
   <router-view />
 </template>
 
@@ -108,10 +109,6 @@ watch(
 );
 
 //主题修改
-const linkPrism = document.createElement('link');
-linkPrism.id = 'prism-theme';
-linkPrism.rel = 'stylesheet';
-document.head.appendChild(linkPrism);
 function getTheme() {
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme === null) {
@@ -124,12 +121,6 @@ const theme = ref(getTheme());
 watch(
   theme,
   (newVal) => {
-    if (newVal === 'light') {
-      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css';
-    } else if (newVal === 'dark') {
-      linkPrism.href = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism-okaidia.min.css';
-    }
-
     document.documentElement.setAttribute('data-bs-theme', newVal);
     localStorage.setItem('theme', newVal);
   },

@@ -22,7 +22,8 @@ export default defineConfig({
   base: '/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
     },
   },
   server: {//开发配置  npm run dev
