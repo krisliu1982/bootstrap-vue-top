@@ -8,8 +8,8 @@
     <p>Colorize text with color utilities. If you want to colorize links, you can use the <a href="[[docsref:/helpers/colored-links]]"><code>.link-*</code> helper classes</a> which have <code>:hover</code> and <code>:focus</code> states.</p>
     <Callout>
     <p>Color utilities like <code>.text-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.text-*-emphasis</code> utility will. This will be resolved in v6.</p>
-    </Callout><Example code={[
-      ...getData('theme-colors').map((themeColor) => `<p class="text-${themeColor.name}${themeColor.contrast_color ? ` bg-${themeColor.contrast_color}` : ``}">.text-${themeColor.name}</p>
+    </Callout><Example :code='[
+      ...data["theme-colors"].map((themeColor) => `<p class="text-${themeColor.name}${themeColor.contrast_color ? ` bg-${themeColor.contrast_color}` : ``}">.text-${themeColor.name}</p>
     <p class="text-${themeColor.name}-emphasis">.text-${themeColor.name}-emphasis</p>`),
       `
     <p class="text-body">.text-body</p>
@@ -21,7 +21,7 @@
     <p class="text-white bg-dark">.text-white</p>
     <p class="text-black-50 bg-white">.text-black-50</p>
     <p class="text-white-50 bg-dark">.text-white-50</p>`
-    ]} /><Callout type="warning">
+    ].join("\n")' /><Callout type="warning">
     <p><strong>Deprecation:</strong> With the addition of <code>.text-opacity-*</code> utilities and CSS variables for text utilities, <code>.text-black-50</code> and <code>.text-white-50</code> are deprecated as of v5.1.0. They’ll be removed in v6.0.0.</p>
     </Callout><Callout type="warning">
     <p><strong>Deprecation:</strong> With the addition of the expanded theme colors and variables, the <code>.text-muted</code> utility has been deprecated as of v5.3.0. Its default value has also been reassigned to the new <code>--bs-secondary-color</code> CSS variable to better support color modes. It will be removed in v6.0.0.</p>

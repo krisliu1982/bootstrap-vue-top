@@ -314,5 +314,103 @@ export default {
     "description": "Bootstrap 5 한국어 문서",
     "url": "https://getbootstrap.kr/"
   }
-]
+],
+"breakpoints":[
+  {
+    "breakpoint": "xs",
+    "abbr": "",
+    "name": "X-Small",
+    "min-width": "0px",
+    "container": ""
+  },
+  {
+    "breakpoint": "sm",
+    "abbr": "-sm",
+    "name": "Small",
+    "min-width": "576px",
+    "container": "540px"
+  },
+  {
+    "breakpoint": "md",
+    "abbr": "-md",
+    "name": "Medium",
+    "min-width": "768px",
+    "container": "720px"
+  },
+  {
+    "breakpoint": "lg",
+    "abbr": "-lg",
+    "name": "Large",
+    "min-width": "992px",
+    "container": "960px"
+  },
+  {
+    "breakpoint": "xl",
+    "abbr": "-xl",
+    "name": "X-Large",
+    "min-width": "1200px",
+    "container": "1140px"
+  },
+  {
+    "breakpoint": "xxl",
+    "abbr": "-xxl",
+    "name": "XX-Large",
+    "min-width": "1400px",
+    "container": "1320px"
+  }
+],
+"icons":{
+  "preferred": [
+    {
+      "name": "Font Awesome",
+      "website": "https://fontawesome.com/"
+    },
+    {
+      "name": "Feather",
+      "website": "https://feathericons.com/"
+    },
+    {
+      "name": "Octicons",
+      "website": "https://primer.style/foundations/icons"
+    }
+  ],
+  "more": [
+    {
+      "name": "Bytesize",
+      "website": "https://github.com/danklammer/bytesize-icons"
+    },
+    {
+      "name": "CoreUI Icons",
+      "website": "https://coreui.io/icons/"
+    },
+    {
+      "name": "Google Material icons",
+      "website": "https://fonts.google.com/icons"
+    },
+    {
+      "name": "Ionicons",
+      "website": "https://ionic.io/ionicons"
+    },
+    {
+      "name": "Dripicons",
+      "website": "http://demo.amitjakhu.com/dripicons/"
+    },
+    {
+      "name": "Ikons",
+      "website": "https://ikons.piotrkwiatkowski.co.uk/"
+    },
+    {
+      "name": "Icons8",
+      "website": "https://icons8.com/"
+    },
+    {
+      "name": "icofont",
+      "website": "https://icofont.com/"
+    },
+    {
+      "name": "Tabler Icons",
+      "website": "https://tabler.io/icons"
+    }
+  ]
+}
 }

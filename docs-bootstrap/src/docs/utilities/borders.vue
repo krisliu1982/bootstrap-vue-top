@@ -22,12 +22,12 @@
     <Callout>
     <p>Border utilities like <code>.border-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.border-*-subtle</code> utility will. This will be resolved in v6.</p>
     </Callout><p>Change the border color using utilities built on our theme colors.</p>
-    <Example class="bd-example-border-utils" code={[
-      ...getData('theme-colors').map((themeColor) => `<span class="border border-${themeColor.name}"></span>
+    <Example class="bd-example-border-utils" :code='[
+      ...data["theme-colors"].map((themeColor) => `<span class="border border-${themeColor.name}"></span>
     <span class="border border-${themeColor.name}-subtle"></span>`),
       `<span class="border border-black"></span>
     <span class="border border-white"></span>`
-    ]} /><p>Or modify the default <code>border-color</code> of a component:</p>
+    ].join("\n")' /><p>Or modify the default <code>border-color</code> of a component:</p>
     <Example code={`<div class="mb-4">
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
         <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">

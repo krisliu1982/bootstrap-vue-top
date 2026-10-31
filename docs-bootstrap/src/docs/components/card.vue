@@ -290,21 +290,21 @@
     <p>Cards include various options for customizing their backgrounds, borders, and color.</p>
     <h3 id="background-and-color">Background and color<a class="anchor-link" href="#background-and-color" aria-label="Link to Background and color"></a></h3>
     <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="[[docsref:helpers/color-background]]">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="[[docsref:/utilities/colors]]"><code>.text-{color}</code></a> and <a href="[[docsref:/utilities/background]]"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<div class="card text-bg-${themeColor.name} mb-3" style="max-width: 18rem;">
+    <Example :code='data["theme-colors"].map((themeColor) => `<div class="card text-bg-${themeColor.name} mb-3" style="max-width: 18rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
-          <h5 class="card-title">${themeColor.title} card title</h5>
+          <h5 class="card-title">${themeColor.name} card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         </div>
-      </div>`)} /><Callout name="warning-color-assistive-technologies" /><h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
+      </div>`).join("\n")' /><Callout name="warning-color-assistive-technologies" /><h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
     <p>Use <a href="[[docsref:/utilities/borders]]">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<div class="card border-${themeColor.name} mb-3" style="max-width: 18rem;">
+    <Example :code='data["theme-colors"].map((themeColor) => `<div class="card border-${themeColor.name} mb-3" style="max-width: 18rem;">
         <div class="card-header">Header</div>
         <div class="card-body${themeColor.contrast_color ? '' : ` text-${themeColor.name}`}">
-          <h5 class="card-title">${themeColor.title} card title</h5>
+          <h5 class="card-title">${themeColor.name} card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         </div>
-      </div>`)} /><h3 id="mixins-utilities">Mixins utilities<a class="anchor-link" href="#mixins-utilities" aria-label="Link to Mixins utilities"></a></h3>
+      </div>`).join("\n")' /><h3 id="mixins-utilities">Mixins utilities<a class="anchor-link" href="#mixins-utilities" aria-label="Link to Mixins utilities"></a></h3>
     <p>You can also change the borders on the card header and footer as needed, and even remove their <code>background-color</code> with <code>.bg-transparent</code>.</p>
     <Example code={`<div class="card border-success mb-3" style="max-width: 18rem;">
         <div class="card-header bg-transparent border-success">Header</div>

@@ -25,7 +25,7 @@
     <input class="btn btn-primary" type="submit" value="Submit">
     <input class="btn btn-primary" type="reset" value="Reset">`} /><h2 id="outline-buttons">Outline buttons<a class="anchor-link" href="#outline-buttons" aria-label="Link to Outline buttons"></a></h2>
     <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<button type="button" class="btn btn-outline-${themeColor.name}">${themeColor.title}</button>`)} /><Callout>
+    <Example :code='data["theme-colors"].map((themeColor) => `<button type="button" class="btn btn-outline-${themeColor.name}">${themeColor.name}</button>`).join("\n")' /><Callout>
     <p>Some of the button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.</p>
     </Callout><h2 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h2>
     <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>

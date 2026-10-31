@@ -17,15 +17,13 @@
     <div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
     <div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>`} /><p>Here are all the support classes:</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.float{breakpoint.abbr}-start</code></li>
-          <li><code>.float{breakpoint.abbr}-end</code></li>
-          <li><code>.float{breakpoint.abbr}-none</code></li>
-        </Fragment>
-      )
-    })}
+
+        <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.float{{breakpoint.abbr}}-start</code></li>
+          <li><code>.float{{breakpoint.abbr}}-end</code></li>
+          <li><code>.float{{breakpoint.abbr}}-none</code></li>
+        </template>
+
     </ul><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Float utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>

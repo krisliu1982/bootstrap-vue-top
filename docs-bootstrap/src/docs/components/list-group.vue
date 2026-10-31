@@ -82,29 +82,29 @@
       </ol>`} /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently <strong>horizontal list groups cannot be combined with flush list groups.</strong></p>
     <p><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
-    <Example code={getData('breakpoints').map((breakpoint) => `<ul class="list-group list-group-horizontal${breakpoint.abbr}">
+    <Example :code='data["breakpoints"].map((breakpoint) => `<ul class="list-group list-group-horizontal${breakpoint.abbr}">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
-      </ul>`)} /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
+      </ul>`).join("\n")' /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <Callout>
     <p><strong>Heads up!</strong> As of v5.3.0, the <code>list-group-item-variant()</code> Sass mixin is deprecated. List group item variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
     </Callout><p>Use contextual classes to style list items with a stateful background and color.</p>
-    <Example code={[
+    <Example :code='[
         `<ul class="list-group">
         <li class="list-group-item">A simple default list group item</li>
         `,
-        ...getData('theme-colors').map((themeColor) => `  <li class="list-group-item list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</li>`),
+        ...data["theme-colors"].map((themeColor) => `  <li class="list-group-item list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</li>`),
         `</ul>`
-      ]} /><h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
+      ].join("\n")' /><h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
     <p>Contextual classes also work with <code>.list-group-item-action</code> for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
-    <Example code={[
+    <Example :code='[
         `<div class="list-group">
         <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
         `,
-        ...getData('theme-colors').map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
+        ...data["theme-colors"].map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
         `</div>`
-      ]} /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
+      ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
     <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="[[docsref:/utilities/flex]]">utilities</a>.</p>
     <Example code={`<ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">

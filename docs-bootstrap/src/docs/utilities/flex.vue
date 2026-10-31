@@ -8,14 +8,10 @@
     <p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
     <Example class="bd-example-flex" code={`<div class="d-flex p-2">I'm a flexbox container!</div>`} /><Example class="bd-example-flex" code={`<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`} /><p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.d{breakpoint.abbr}-flex</code></li>
-          <li><code>.d{breakpoint.abbr}-inline-flex</code></li>
-        </Fragment>
-      )
-    })}
+        <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.d{{breakpoint.abbr}}-flex</code></li>
+          <li><code>.d{{breakpoint.abbr}}-inline-flex</code></li>
+        </template>
     </ul><h2 id="direction">Direction<a class="anchor-link" href="#direction" aria-label="Link to Direction"></a></h2>
     <p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
     <p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
@@ -40,16 +36,12 @@
         <div class="p-2">Flex item 3</div>
       </div>`} /><p>Responsive variations also exist for <code>flex-direction</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.flex{breakpoint.abbr}-row</code></li>
-          <li><code>.flex{breakpoint.abbr}-row-reverse</code></li>
-          <li><code>.flex{breakpoint.abbr}-column</code></li>
-          <li><code>.flex{breakpoint.abbr}-column-reverse</code></li>
-        </Fragment>
-      )
-    })}
+              <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.flex{{breakpoint.abbr}}-row</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-row-reverse</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-column</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-column-reverse</code></li>
+        </template>
     </ul><h2 id="justify-content">Justify content<a class="anchor-link" href="#justify-content" aria-label="Link to Justify content"></a></h2>
     <p>Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>evenly</code>.</p>
     <div class="bd-example bd-example-flex">
@@ -92,18 +84,14 @@
     </code></pre>
     <p>Responsive variations also exist for <code>justify-content</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.justify-content{breakpoint.abbr}-start</code></li>
-          <li><code>.justify-content{breakpoint.abbr}-end</code></li>
-          <li><code>.justify-content{breakpoint.abbr}-center</code></li>
-          <li><code>.justify-content{breakpoint.abbr}-between</code></li>
-          <li><code>.justify-content{breakpoint.abbr}-around</code></li>
-          <li><code>.justify-content{breakpoint.abbr}-evenly</code></li>
-        </Fragment>
-      )
-    })}
+              <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.justify-content{{breakpoint.abbr}}-start</code></li>
+          <li><code>.justify-content{{breakpoint.abbr}}-end</code></li>
+          <li><code>.justify-content{{breakpoint.abbr}}-center</code></li>
+          <li><code>.justify-content{{breakpoint.abbr}}-between</code></li>
+          <li><code>.justify-content{{breakpoint.abbr}}-around</code></li>
+          <li><code>.justify-content{{breakpoint.abbr}}-evenly</code></li>
+        </template>
     </ul><h2 id="align-items">Align items<a class="anchor-link" href="#align-items" aria-label="Link to Align items"></a></h2>
     <p>Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
     <div class="bd-example bd-example-flex">
@@ -140,17 +128,13 @@
     </code></pre>
     <p>Responsive variations also exist for <code>align-items</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.align-items{breakpoint.abbr}-start</code></li>
-          <li><code>.align-items{breakpoint.abbr}-end</code></li>
-          <li><code>.align-items{breakpoint.abbr}-center</code></li>
-          <li><code>.align-items{breakpoint.abbr}-baseline</code></li>
-          <li><code>.align-items{breakpoint.abbr}-stretch</code></li>
-        </Fragment>
-      )
-    })}
+             <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.align-items{{breakpoint.abbr}}-start</code></li>
+          <li><code>.align-items{{breakpoint.abbr}}-end</code></li>
+          <li><code>.align-items{{breakpoint.abbr}}-center</code></li>
+          <li><code>.align-items{{breakpoint.abbr}}-baseline</code></li>
+          <li><code>.align-items{{breakpoint.abbr}}-stretch</code></li>
+        </template>
     </ul><h2 id="align-self">Align self<a class="anchor-link" href="#align-self" aria-label="Link to Align self"></a></h2>
     <p>Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as <code>align-items</code>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
     <div class="bd-example bd-example-flex">
@@ -187,17 +171,13 @@
     </code></pre>
     <p>Responsive variations also exist for <code>align-self</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.align-self{breakpoint.abbr}-start</code></li>
-          <li><code>.align-self{breakpoint.abbr}-end</code></li>
-          <li><code>.align-self{breakpoint.abbr}-center</code></li>
-          <li><code>.align-self{breakpoint.abbr}-baseline</code></li>
-          <li><code>.align-self{breakpoint.abbr}-stretch</code></li>
-        </Fragment>
-      )
-    })}
+             <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.align-self{{breakpoint.abbr}}-start</code></li>
+          <li><code>.align-self{{breakpoint.abbr}}-end</code></li>
+          <li><code>.align-self{{breakpoint.abbr}}-center</code></li>
+          <li><code>.align-self{{breakpoint.abbr}}-baseline</code></li>
+          <li><code>.align-self{{breakpoint.abbr}}-stretch</code></li>
+        </template>
     </ul><h2 id="fill">Fill<a class="anchor-link" href="#fill" aria-label="Link to Fill"></a></h2>
     <p>Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
     <Example class="bd-example-flex" code={`<div class="d-flex">
@@ -206,11 +186,7 @@
         <div class="p-2 flex-fill">Flex item</div>
       </div>`} /><p>Responsive variations also exist for <code>flex-fill</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <li><code>.flex{breakpoint.abbr}-fill</code></li>
-      )
-    })}
+      <li v-for="breakpoint in data['breakpoints']"><code>.flex{{breakpoint.abbr}}-fill</code></li>
     </ul><h2 id="grow-and-shrink">Grow and shrink<a class="anchor-link" href="#grow-and-shrink" aria-label="Link to Grow and shrink"></a></h2>
     <p>Use <code>.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
     <Example class="bd-example-flex" code={`<div class="d-flex">
@@ -223,14 +199,10 @@
         <div class="p-2 flex-shrink-1">Flex item</div>
       </div>`} /><p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.flex{breakpoint.abbr}-{'{'}grow|shrink{'}'}-0</code></li>
-          <li><code>.flex{breakpoint.abbr}-{'{'}grow|shrink{'}'}-1</code></li>
-        </Fragment>
-      )
-    })}
+              <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.flex{{breakpoint.abbr}}-{'{'}grow|shrink{'}'}-0</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-{'{'}grow|shrink{'}'}-1</code></li>
+        </template>
     </ul><h2 id="auto-margins">Auto margins<a class="anchor-link" href="#auto-margins" aria-label="Link to Auto margins"></a></h2>
     <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).</p>
     <Example class="bd-example-flex" code={`<div class="d-flex mb-3">
@@ -319,15 +291,13 @@
     </code></pre>
     <p>Responsive variations also exist for <code>flex-wrap</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.flex{breakpoint.abbr}-nowrap</code></li>
-          <li><code>.flex{breakpoint.abbr}-wrap</code></li>
-          <li><code>.flex{breakpoint.abbr}-wrap-reverse</code></li>
-        </Fragment>
-      )
-    })}
+
+                      <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.flex{{breakpoint.abbr}}-nowrap</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-wrap</code></li>
+          <li><code>.flex{{breakpoint.abbr}}-wrap-reverse</code></li>
+        </template>
+  
     </ul><h2 id="order">Order<a class="anchor-link" href="#order" aria-label="Link to Order"></a></h2>
     <p>Change the <em>visual</em> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.</p>
     <Example class="bd-example-flex" code={`<div class="d-flex flex-nowrap">
@@ -336,18 +306,10 @@
         <div class="order-1 p-2">Third flex item</div>
       </div>`} /><p>Responsive variations also exist for <code>order</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => getSequence(0, 5).map((value) => {
-      return (
-        <li><code>.order{breakpoint.abbr}-{value}</code></li>
-      )
-    }))}
+      <li v-for="breakpoint in data['breakpoints']"><code>.order{{breakpoint.abbr}}-{value}</code></li>
     </ul><p>Additionally there are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => ['first', 'last'].map((value) => {
-      return (
-        <li><code>.order{breakpoint.abbr}-{value}</code></li>
-      )
-    }))}
+        <li v-for="breakpoint in data['breakpoints']"><code>.order{{breakpoint.abbr}}-{value}</code></li>
     </ul><h2 id="align-content">Align content<a class="anchor-link" href="#align-content" aria-label="Link to Align content"></a></h2>
     <p>Use <code>align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we’ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items.</p>
     <p><strong>Heads up!</strong> This property has no effect on single rows of flex items.</p>
@@ -475,18 +437,15 @@
     </code></pre>
     <p>Responsive variations also exist for <code>align-content</code>.</p>
     <ul>
-    {getData('breakpoints').map((breakpoint) => {
-      return (
-        <Fragment>
-          <li><code>.align-content{breakpoint.abbr}-start</code></li>
-          <li><code>.align-content{breakpoint.abbr}-end</code></li>
-          <li><code>.align-content{breakpoint.abbr}-center</code></li>
-          <li><code>.align-content{breakpoint.abbr}-between</code></li>
-          <li><code>.align-content{breakpoint.abbr}-around</code></li>
-          <li><code>.align-content{breakpoint.abbr}-stretch</code></li>
-        </Fragment>
-      )
-    })}
+
+        <template v-for="breakpoint in data['breakpoints']">
+          <li><code>.align-content{{breakpoint.abbr}}-start</code></li>
+          <li><code>.align-content{{breakpoint.abbr}}-end</code></li>
+          <li><code>.align-content{{breakpoint.abbr}}-center</code></li>
+          <li><code>.align-content{{breakpoint.abbr}}-between</code></li>
+          <li><code>.align-content{{breakpoint.abbr}}-around</code></li>
+          <li><code>.align-content{{breakpoint.abbr}}-stretch</code></li>
+        </template>
     </ul><h2 id="media-object">Media object<a class="anchor-link" href="#media-object" aria-label="Link to Media object"></a></h2>
     <p>Looking to replicate the <a href="https://getbootstrap.com/docs/4.6/components/media-object/">media object component</a> from Bootstrap 4? Recreate it in no time with a few flex utilities that allow even more flexibility and customization than before.</p>
     <Example code={`<div class="d-flex">

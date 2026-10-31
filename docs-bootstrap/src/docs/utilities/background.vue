@@ -8,8 +8,8 @@
     <p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities <strong>do not set <code>color</code></strong>, so in some cases you’ll want to use <code>.text-*</code> <a href="[[docsref:/utilities/colors]]">color utilities</a>.</p>
     <Callout>
     <p>Background utilities like <code>.bg-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.bg-*-subtle</code> utility will. This will be resolved in v6.</p>
-    </Callout><Example code={[
-      ...getData('theme-colors').map((themeColor) => `<div class="p-3 mb-2 bg-${themeColor.name} ${themeColor.contrast_color ? `text-${themeColor.contrast_color}` : `text-white`}">.bg-${themeColor.name}</div>
+    </Callout><Example :code='[
+      ...data["theme-colors"].map((themeColor) => `<div class="p-3 mb-2 bg-${themeColor.name} ${themeColor.contrast_color ? `text-${themeColor.contrast_color}` : `text-white`}">.bg-${themeColor.name}</div>
     <div class="p-3 mb-2 bg-${themeColor.name}-subtle text-${themeColor.name}-emphasis">.bg-${themeColor.name}-subtle</div>`),
       `<div class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</div>
     <div class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</div>
@@ -17,14 +17,12 @@
     <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
     <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
     <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>`
-    ]} /><h2 id="background-gradient">Background gradient<a class="anchor-link" href="#background-gradient" aria-label="Link to Background gradient"></a></h2>
+    ].join("\n")' /><h2 id="background-gradient">Background gradient<a class="anchor-link" href="#background-gradient" aria-label="Link to Background gradient"></a></h2>
     <p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
     <p>Do you need a gradient in your custom CSS? Just add <code>background-image: var(--bs-gradient);</code>.</p>
-    <p>{getData(&#39;theme-colors&#39;).map((themeColor) =&gt; {
-      return (
-        &lt;div class={<code>p-3 mb-2 bg-${themeColor.name} bg-gradient${themeColor.contrast_color ? (&#39; text-&#39; + themeColor.contrast_color) : &#39; text-white&#39;}</code>}&gt;.bg-{themeColor.name}.bg-gradient</div>
-      )
-    })}</p>
+    <p>
+      <div v-for="themeColor in data['theme-colors']" class="p-3 mb-2" :class="[`bg-${themeColor.name} bg-gradient`, themeColor.contrast_color ? 'text-' + themeColor.contrast_color : 'text-white']">.bg-{{themeColor.name}}.bg-gradient</div>
+  </p>
     <div class="p-3 mb-2 bg-black bg-gradient text-white">.bg-black.bg-gradient</div><h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
     <AddedIn version="5.1.0" /><p>As of v5.1.0, <code>background-color</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.</p>
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>

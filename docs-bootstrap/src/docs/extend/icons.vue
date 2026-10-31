@@ -13,19 +13,11 @@
     <h2 id="alternatives">Alternatives<a class="anchor-link" href="#alternatives" aria-label="Link to Alternatives"></a></h2>
     <p>We’ve tested and used these icon sets ourselves as preferred alternatives to Bootstrap Icons.</p>
     <ul>
-    {getData('icons').preferred.map((icon) => {
-      return (
-        <li><a href={icon.website}>{icon.name}</a></li>
-      )
-    })}
+      <li v-for="icon in data['icons'].preferred"><a :href="icon.website">{{icon.name}}</a></li>
     </ul><h2 id="more-options">More options<a class="anchor-link" href="#more-options" aria-label="Link to More options"></a></h2>
     <p>While we haven’t tried these out ourselves, they do look promising and provide multiple formats, including SVG.</p>
     <ul>
-    {getData('icons').more.map((icon) => {
-      return (
-        <li><a href={icon.website}>{icon.name}</a></li>
-      )
-    })}
+      <li v-for="icon in data['icons'].more"><a :href="icon.website">{{icon.name}}</a></li>
     </ul>
   </article>
 </template>

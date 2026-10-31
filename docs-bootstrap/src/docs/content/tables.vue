@@ -26,29 +26,25 @@
             <td>Cell</td>
             <td>Cell</td>
           </tr>
-          {getData('theme-colors').map((themeColor) => {
-            return (
-              <tr class={`table-${themeColor.name}`}>
-                <th scope="row">{themeColor.title}</th>
+              <tr v-for="themeColor in data['theme-colors']" :class="`table-${themeColor.name}`">
+                <th scope="row">{themeColor.name}</th>
                 <td>Cell</td>
                 <td>Cell</td>
               </tr>
-            )
-          })}
         </tbody>
       </table>
-    </div><Code code={[
+    </div><Code :code='[
       `<!-- On tables -->`,
-      ...getData('theme-colors').map((themeColor) => `<table class="table-${themeColor.name}">...</table>`),
+      ...data["theme-colors"].map((themeColor) => `<table class="table-${themeColor.name}">...</table>`),
       `
     <!-- On rows -->`,
-      ...getData('theme-colors').map((themeColor) => `<tr class="table-${themeColor.name}">...</tr>`),
+      ...data["theme-colors"].map((themeColor) => `<tr class="table-${themeColor.name}">...</tr>`),
       `
     <!-- On cells (\`td\` or \`th\`) -->
     <tr>`,
-      ...getData('theme-colors').map((themeColor) => `  <td class="table-${themeColor.name}">...</td>`),
+      ...data["theme-colors"].map((themeColor) => `  <td class="table-${themeColor.name}">...</td>`),
       `</tr>`
-    ]} lang="html" /><Callout name="warning-color-assistive-technologies" /><h2 id="accented-tables">Accented tables<a class="anchor-link" href="#accented-tables" aria-label="Link to Accented tables"></a></h2>
+    ].join("\n")' lang="html" /><Callout name="warning-color-assistive-technologies" /><h2 id="accented-tables">Accented tables<a class="anchor-link" href="#accented-tables" aria-label="Link to Accented tables"></a></h2>
     <h3 id="striped-rows">Striped rows<a class="anchor-link" href="#striped-rows" aria-label="Link to Striped rows"></a></h3>
     <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
     <Table class="table table-striped" /><h3 id="striped-columns">Striped columns<a class="anchor-link" href="#striped-columns" aria-label="Link to Striped columns"></a></h3>
@@ -602,10 +598,9 @@
     <h3 id="breakpoint-specific">Breakpoint specific<a class="anchor-link" href="#breakpoint-specific" aria-label="Link to Breakpoint specific"></a></h3>
     <p>Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
     <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
-    <p>{getData(&#39;breakpoints&#39;).map((breakpoint) =&gt; {
-      return (
-        <div class="bd-example">
-          &lt;div class={<code>table-responsive${breakpoint.abbr}</code>}&gt;
+    <p>
+              <div v-for="breakpoint in data['breakpoints']" class="bd-example">
+          <div :class="`table-responsive${breakpoint.abbr}`">
             <table class="table">
               <thead>
                 <tr>
@@ -658,14 +653,13 @@
             </table>
           </div>
         </div>
-      )
-    })}</p>
-    <Code code={getData('breakpoints').map((breakpoint) => `<div class="table-responsive${breakpoint.abbr}">
+  </p>
+    <Code :code='data["breakpoints"].map((breakpoint) => `<div class="table-responsive${breakpoint.abbr}">
         <table class="table">
           ...
         </table>
     </div>
-    `)} lang="html" /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    `).join("\n")' lang="html" /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="table-variables" file="scss/_variables.scss" /><h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
     <ScssDocs name="table-loop" file="scss/_variables.scss" /><h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>

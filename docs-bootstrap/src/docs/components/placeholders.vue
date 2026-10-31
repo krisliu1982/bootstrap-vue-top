@@ -74,11 +74,11 @@
     <span class="placeholder w-75"></span>
     <span class="placeholder" style="width: 25%;"></span>`} /><h3 id="color">Color<a class="anchor-link" href="#color" aria-label="Link to Color"></a></h3>
     <p>By default, the <code>placeholder</code> uses <code>currentColor</code>. This can be overridden with a custom color or utility class.</p>
-    <Example code={[
+    <Example :code='[
       `<span class="placeholder col-12"></span>
       `,
-      ...getData('theme-colors').map((themeColor) => `<span class="placeholder col-12 bg-${themeColor.name}"></span>`)
-    ]} /><h3 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h3>
+      ...data["theme-colors"].map((themeColor) => `<span class="placeholder col-12 bg-${themeColor.name}"></span>`)
+    ].join("\n")' /><h3 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h3>
     <p>The size of <code>.placeholder</code>s are based on the typographic style of the parent element. Customize them with sizing modifiers: <code>.placeholder-lg</code>, <code>.placeholder-sm</code>, or <code>.placeholder-xs</code>.</p>
     <Example code={`<span class="placeholder col-12 placeholder-lg"></span>
     <span class="placeholder col-12"></span>
