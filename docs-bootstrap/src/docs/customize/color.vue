@@ -627,6 +627,5 @@ $utilities: map-merge(
 </template>
 
 <script setup>
-import data from '@data/data.js'
-import CodeWrapper from '../../components/code-wrapper.vue';
+import data from '@/data/data.js'
 </script>

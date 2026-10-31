@@ -172,5 +172,5 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
 </template>
 
 <script setup>
-import data from '@data/data.js'
+import data from '@/data/data.js'
 </script>

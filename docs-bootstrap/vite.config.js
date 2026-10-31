@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import { codeSnippetsPlugin } from '@nrg-ui/code-snippets'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,13 +18,19 @@ export default defineConfig({
     }),
     Components({
       resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]
+    }),
+    codeSnippetsPlugin({
+      include: ['src/data/scss/**/*.scss'],
+      markers: {
+        start: /\/\/ scss-docs-start (\S+)/,
+        end: /\/\/ scss-docs-end/
+      }
     })
   ],
   base: '/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
   server: {//开发配置  npm run dev

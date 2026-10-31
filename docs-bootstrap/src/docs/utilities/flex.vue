@@ -483,5 +483,5 @@
 </template>
 
 <script setup>
-import data from '@data/data.js'
+import data from '@/data/data.js'
 </script>
