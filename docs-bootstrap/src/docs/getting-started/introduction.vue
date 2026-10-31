@@ -11,32 +11,32 @@
 
     <ol><li><p><strong>Create a new <code>index.html</code> file in your project root.</strong> Include the <code>&lt;meta name="viewport"&gt;</code> tag as well for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">proper responsive behavior</a> in mobile devices.</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
-    &lt;html lang="en"&gt;
-      &lt;head&gt;
-        &lt;meta charset="utf-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        &lt;title&gt;Bootstrap demo&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;</code></pre></li><li><p><strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.</p>
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></li><li><p><strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
-    &lt;html lang="en"&gt;
-      &lt;head&gt;
-        &lt;meta charset="utf-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        &lt;title&gt;Bootstrap demo&lt;/title&gt;
-        &lt;link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous"&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;Hello, world!&lt;/h1&gt;
-        &lt;script src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;</code></pre>
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Bootstrap demo&lt;/title&gt;
+    &lt;link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;script src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
     <p>You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
     <pre><code class="language-html">&lt;script src="[[config:cdn.popper]]" integrity="[[config:cdn.popper_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
-    &lt;script src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="[[docsref:/layout/grid]]">layout</a>, adding dozens of <a href="[[docsref:/components/buttons]]">components</a>, and utilizing <a href="[[docsref:/examples]]">our official examples</a>.</p></li></ol>
+&lt;script src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="[[docsref:/layout/grid]]">layout</a>, adding dozens of <a href="[[docsref:/components/buttons]]">components</a>, and utilizing <a href="[[docsref:/examples]]">our official examples</a>.</p></li></ol>
 
     <h2 id="cdn-links">CDN links<a class="anchor-link" href="#cdn-links" aria-label="Link to CDN links"></a></h2>
 
@@ -69,9 +69,9 @@
     <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
 
     <pre><code class="language-html">&lt;!doctype html&gt;
-    &lt;html lang="en"&gt;
-      ...
-    &lt;/html&gt;</code></pre>
+&lt;html lang="en"&gt;
+  ...
+&lt;/html&gt;</code></pre>
 
     <h3 id="viewport-meta">Viewport meta<a class="anchor-link" href="#viewport-meta" aria-label="Link to Viewport meta"></a></h3>
 
@@ -88,8 +88,8 @@
     <p>On the rare occasion you need to override it, use something like the following:</p>
 
     <pre><code class="language-css">.selector-for-some-widget {
-      box-sizing: content-box;
-    }</code></pre>
+  box-sizing: content-box;
+}</code></pre>
 
     <p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>
 
