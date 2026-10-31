@@ -16,8 +16,7 @@
     <p>These styles can be found within <code>_reboot.scss</code>, and the global variables are defined in <code>_variables.scss</code>. Make sure to set <code>$font-size-base</code> in <code>rem</code>.</p>
     <h2 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h2>
     <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Heading</th>
@@ -49,7 +48,7 @@
     <td><span class="h6">h6. Bootstrap heading</span></td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+    </div><pre><code class="language-html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
     &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
     &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
     &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;

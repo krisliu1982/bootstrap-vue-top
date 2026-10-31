@@ -15,8 +15,7 @@
     <p>When completed, you’ll be able to run the various commands provided from the command line.</p>
     <h2 id="using-npm-scripts">Using npm scripts<a class="anchor-link" href="#using-npm-scripts" aria-label="Link to Using npm scripts"></a></h2>
     <p>Our <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Task</th>
@@ -40,7 +39,7 @@
     <td>Builds and runs the documentation locally.</td>
     </tr>
     </tbody></table>
-    </BsTable><Callout name="info-npm-starter" /><h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h2>
+    </div><Callout name="info-npm-starter" /><h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h2>
     <p>Bootstrap uses <a href="https://sass-lang.com/dart-sass/">Dart Sass</a> for compiling our Sass source files into CSS files (included in our build process), and we recommend you do the same if you’re compiling Sass using your own asset pipeline. We previously used Node Sass for Bootstrap v4, but LibSass and packages built on top of it, including Node Sass, are now <a href="https://sass-lang.com/blog/libsass-is-deprecated/">deprecated</a>.</p>
     <p>Dart Sass uses a rounding precision of 10 and for efficiency reasons does not allow adjustment of this value. We don’t lower this precision during further processing of our generated CSS, such as during minification, but if you chose to do so we recommend maintaining a precision of at least 6 to prevent issues with browser rounding.</p>
     <h2 id="autoprefixer">Autoprefixer<a class="anchor-link" href="#autoprefixer" aria-label="Link to Autoprefixer"></a></h2>

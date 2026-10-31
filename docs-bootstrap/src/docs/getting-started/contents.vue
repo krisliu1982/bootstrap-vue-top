@@ -58,8 +58,8 @@
     <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). <a href="https://web.dev/articles/source-maps">Source maps</a> (<code>bootstrap.*.map</code>) are available for use with certain browsers’ developer tools. Bundled JS files (<code>bootstrap.bundle.js</code> and minified <code>bootstrap.bundle.min.js</code>) include <a href="https://popper.js.org/docs/v2/">Popper</a>.</p>
     <h3 id="css-files">CSS files<a class="anchor-link" href="#css-files" aria-label="Link to CSS files"></a></h3>
     <p>Bootstrap includes a handful of options for including some or all of our compiled CSS.</p>
-    <BsTable class="table">
-    <table>
+    <div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>CSS files</th>
@@ -98,10 +98,10 @@
     <td>—</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="js-files">JS files<a class="anchor-link" href="#js-files" aria-label="Link to JS files"></a></h3>
+    </div><h3 id="js-files">JS files<a class="anchor-link" href="#js-files" aria-label="Link to JS files"></a></h3>
     <p>Similarly, we have options for including some or all of our compiled JavaScript.</p>
-    <BsTable class="table">
-    <table>
+    <div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>JS Files</th>
@@ -117,7 +117,7 @@
     <td>–</td>
     </tr>
     </tbody></table>
-    </BsTable><h2 id="bootstrap-source-code">Bootstrap source code<a class="anchor-link" href="#bootstrap-source-code" aria-label="Link to Bootstrap source code"></a></h2>
+    </div><h2 id="bootstrap-source-code">Bootstrap source code<a class="anchor-link" href="#bootstrap-source-code" aria-label="Link to Bootstrap source code"></a></h2>
     <p>The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:</p>
     <pre><code class="language-text">bootstrap/
     ├── dist/

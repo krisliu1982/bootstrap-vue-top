@@ -11,8 +11,8 @@
     <Code lang="plaintext" filePath=".browserslistrc" /><p>We use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to handle intended browser support via CSS prefixes, which uses <a href="https://github.com/browserslist/browserslist">Browserslist</a> to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.</p>
     <h3 id="mobile-devices">Mobile devices<a class="anchor-link" href="#mobile-devices" aria-label="Link to Mobile devices"></a></h3>
     <p>Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.</p>
-    <BsTable class="table">
-    <table>
+    <div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th></th>
@@ -37,10 +37,10 @@
     <td><span class="text-body-secondary">&mdash;</span></td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="desktop-browsers">Desktop browsers<a class="anchor-link" href="#desktop-browsers" aria-label="Link to Desktop browsers"></a></h3>
+    </div><h3 id="desktop-browsers">Desktop browsers<a class="anchor-link" href="#desktop-browsers" aria-label="Link to Desktop browsers"></a></h3>
     <p>Similarly, the latest versions of most desktop browsers are supported.</p>
-    <BsTable class="table">
-    <table>
+    <div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th></th>
@@ -68,7 +68,7 @@
     <td><span class="text-body-secondary">&mdash;</span></td>
     </tr>
     </tbody></table>
-    </BsTable><p>For Firefox, in addition to the latest normal stable release, we also support the latest <a href="https://www.mozilla.org/en-US/firefox/enterprise/">Extended Support Release (ESR)</a> version of Firefox.</p>
+    </div><p>For Firefox, in addition to the latest normal stable release, we also support the latest <a href="https://www.mozilla.org/en-US/firefox/enterprise/">Extended Support Release (ESR)</a> version of Firefox.</p>
     <p>Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, and Firefox for Linux, though they are not officially supported.</p>
     <h2 id="internet-explorer">Internet Explorer<a class="anchor-link" href="#internet-explorer" aria-label="Link to Internet Explorer"></a></h2>
     <p>Internet Explorer is not supported. <strong>If you require Internet Explorer support, please use Bootstrap v4.</strong></p>

@@ -296,8 +296,7 @@
     <p>You can create a tab instance with the constructor, for example:</p>
     <pre><code class="language-js">const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -321,7 +320,7 @@
     <td>Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>When showing a new tab, the events fire in the following order:</p>
     <ol>
     <li><code>hide.bs.tab</code> (on the current active tab)</li>
@@ -330,8 +329,7 @@
     <li><code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
     </ol>
     <p>If no tab was already active, then the <code>hide.bs.tab</code> and <code>hidden.bs.tab</code> events will not be fired.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event type</th>
@@ -355,7 +353,7 @@
     <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
+    </div><pre><code class="language-js">const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
     tabElms.forEach(tabElm =&gt; {
       tabElm.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
         event.target // newly activated tab

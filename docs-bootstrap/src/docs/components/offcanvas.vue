@@ -201,8 +201,8 @@
     const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootstrap.Offcanvas(offcanvasEl))
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -230,13 +230,12 @@
     <td>Allow body scrolling while offcanvas is open.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as an offcanvas element. Accepts an optional options <code>object</code>.</p>
     <p>You can create an offcanvas instance with the constructor, for example:</p>
     <pre><code class="language-js">const bsOffcanvas = new bootstrap.Offcanvas(&#39;#myOffcanvas&#39;)
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -268,10 +267,9 @@
     <td>Toggles an offcanvas element to shown or hidden. <strong>Returns to the caller before the offcanvas element has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.offcanvas</code> or <code>hidden.bs.offcanvas</code> event occurs).</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s offcanvas class exposes a few events for hooking into offcanvas functionality.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event type</th>
@@ -299,7 +297,7 @@
     <td>This event is fired when an offcanvas element has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
+    </div><pre><code class="language-js">const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
     myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       // do something...
     })

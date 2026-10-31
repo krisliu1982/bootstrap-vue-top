@@ -6,8 +6,8 @@
 
     <p>Bootstrap utilities are generated with our utility API and can be used to modify or extend our default set of utility classes via Sass. Our utility API is based on a series of Sass maps and functions for generating families of classes with various options. If you’re unfamiliar with Sass maps, read up on the <a href="https://sass-lang.com/documentation/values/maps/">official Sass docs</a> to get started.</p>
     <p>The <code>$utilities</code> map contains all our utilities and is later merged with your custom <code>$utilities</code> map, if present. The utility map contains a keyed list of utility groups which accept the following options:</p>
-    <BsTable class="table table-utilities">
-    <table>
+    <div class="table-responsive">
+    <table class="table table-utilities">
     <thead>
     <tr>
     <th>Option</th>
@@ -83,7 +83,7 @@
     <td>Boolean indicating if utility should be kept in RTL.</td>
     </tr>
     </tbody></table>
-    </BsTable><h2 id="api-explained">API explained<a class="anchor-link" href="#api-explained" aria-label="Link to API explained"></a></h2>
+    </div><h2 id="api-explained">API explained<a class="anchor-link" href="#api-explained" aria-label="Link to API explained"></a></h2>
     <p>All utility variables are added to the <code>$utilities</code> variable within our <code>_utilities.scss</code> stylesheet. Each group of utilities looks something like this:</p>
     <pre><code class="language-scss">$utilities: (
       &quot;opacity&quot;: (

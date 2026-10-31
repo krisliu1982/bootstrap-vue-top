@@ -15,8 +15,7 @@
     </ul>
     <h2 id="available-breakpoints">Available breakpoints<a class="anchor-link" href="#available-breakpoints" aria-label="Link to Available breakpoints"></a></h2>
     <p>Bootstrap includes six default breakpoints, sometimes referred to as <em>grid tiers</em>, for building responsively. These breakpoints can be customized if you’re using our source Sass files.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Breakpoint</th>
@@ -55,7 +54,7 @@
     <td>&ge;1400px</td>
     </tr>
     </tbody></table>
-    </BsTable><p>Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.</p>
+    </div><p>Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.</p>
     <p>These breakpoints are customizable via Sass—you’ll find them in a Sass map in our <code>_variables.scss</code> stylesheet.</p>
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="[[docsref:/layout/grid#css]]">the CSS section of the Grid documentation</a>.</p>
     <h2 id="media-queries">Media queries<a class="anchor-link" href="#media-queries" aria-label="Link to Media queries"></a></h2>

@@ -104,8 +104,8 @@
       </span>' /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><Callout type="warning">
     <p>Note that for security reasons the <code>sanitize</code>, <code>sanitizeFn</code>, and <code>allowList</code> options cannot be supplied using data attributes.</p>
-    </Callout><BsTable>
-    <table>
+    </Callout><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -217,7 +217,7 @@
     <td>How tooltip is triggered: click, hover, focus, manual. You may pass multiple triggers; separate them with a space. <code>&#39;manual&#39;</code> indicates that the tooltip will be triggered programmatically via the <code>.tooltip(&#39;show&#39;)</code>, <code>.tooltip(&#39;hide&#39;)</code> and <code>.tooltip(&#39;toggle&#39;)</code> methods; this value cannot be combined with any other trigger. <code>&#39;hover&#39;</code> on its own will result in tooltips that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present.</td>
     </tr>
     </tbody></table>
-    </BsTable><Callout>
+    </div><Callout>
     <h4 id="data-attributes-for-individual-tooltips">Data attributes for individual tooltips</h4>
     <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
     </Callout><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
@@ -230,8 +230,8 @@
     })
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <Callout name="danger-async-methods" type="danger" /><BsTable>
-    <table>
+    <Callout name="danger-async-methods" type="danger" /><div class="table-responsive">
+   <table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -283,7 +283,7 @@
     <td>Updates the position of an element’s tooltip.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const tooltip = bootstrap.Tooltip.getInstance(&#39;#example&#39;) // Returns a Bootstrap tooltip instance
+    </div><pre><code class="language-js">const tooltip = bootstrap.Tooltip.getInstance(&#39;#example&#39;) // Returns a Bootstrap tooltip instance
 
     // setContent example
     tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
@@ -291,8 +291,7 @@
     <Callout>
     <p>The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the tooltip template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> | <code>null</code></p>
     </Callout><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event</th>
@@ -320,7 +319,7 @@
     <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myTooltipEl = document.getElementById(&#39;myTooltip&#39;)
+    </div><pre><code class="language-js">const myTooltipEl = document.getElementById(&#39;myTooltip&#39;)
     const tooltip = bootstrap.Tooltip.getOrCreateInstance(myTooltipEl)
 
     myTooltipEl.addEventListener(&#39;hidden.bs.tooltip&#39;, () =&gt; {

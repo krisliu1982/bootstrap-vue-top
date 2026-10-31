@@ -14,8 +14,7 @@
     </ul>
     <p>The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each breakpoint.</p>
     <p>See them in action and compare them in our <a href="[[docsref:/examples/grid/#containers]]">Grid example</a>.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th></th>
@@ -91,7 +90,7 @@
     <td><span class="text-body-secondary">100%</span></td>
     </tr>
     </tbody></table>
-    </BsTable><h2 id="default-container">Default container<a class="anchor-link" href="#default-container" aria-label="Link to Default container"></a></h2>
+    </div><h2 id="default-container">Default container<a class="anchor-link" href="#default-container" aria-label="Link to Default container"></a></h2>
     <p>Our default <code>.container</code> class is a responsive, fixed-width container, meaning its <code>max-width</code> changes at each breakpoint.</p>
     <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
       &lt;!-- Content here --&gt;

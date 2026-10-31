@@ -116,8 +116,7 @@
         <div>Third auto-column</div>
       </div>' /><h2 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h2>
     <p>Customize the number of columns, the number of rows, and the width of the gaps with local CSS variables.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Variable</th>
@@ -141,7 +140,7 @@
     <td>The size of the gap between columns (vertical and horizontal)</td>
     </tr>
     </tbody></table>
-    </BsTable><p>These CSS variables have no default value; instead, they apply fallback values that are used <em>until</em> a local instance is provided. For example, we use <code>var(--bs-rows, 1)</code> for our CSS Grid rows, which ignores <code>--bs-rows</code> because that hasn’t been set anywhere yet. Once it is, the <code>.grid</code> instance will use that value instead of the fallback value of <code>1</code>.</p>
+    </div><p>These CSS variables have no default value; instead, they apply fallback values that are used <em>until</em> a local instance is provided. For example, we use <code>var(--bs-rows, 1)</code> for our CSS Grid rows, which ignores <code>--bs-rows</code> because that hasn’t been set anywhere yet. Once it is, the <code>.grid</code> instance will use that value instead of the fallback value of <code>1</code>.</p>
     <h3 id="no-grid-classes">No grid classes<a class="anchor-link" href="#no-grid-classes" aria-label="Link to No grid classes"></a></h3>
     <p>Immediate children elements of <code>.grid</code> are grid items, so they’ll be sized without explicitly adding a <code>.g-col</code> class.</p>
     <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-columns: 3;">

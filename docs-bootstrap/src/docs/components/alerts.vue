@@ -112,8 +112,7 @@
     <pre><code class="language-js">const bsAlert = new bootstrap.Alert(&#39;#myAlert&#39;)
     </code></pre>
     <p>This makes an alert listen for click events on descendant elements which have the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute. (Not necessary when using the data-api’s auto-initialization.)</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -137,14 +136,13 @@
     <td>Static method which returns an alert instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this: <code>bootstrap.Alert.getOrCreateInstance(element)</code>.</td>
     </tr>
     </tbody></table>
-    </BsTable><p>Basic usage:</p>
+    </div><p>Basic usage:</p>
     <pre><code class="language-js">const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
     alert.close()
     </code></pre>
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s alert plugin exposes a few events for hooking into alert functionality.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event</th>
@@ -160,7 +158,7 @@
     <td>Fired when the alert has been closed and CSS transitions have completed.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
+    </div><pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
     myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
       // do something, for instance, explicitly move focus to the most appropriate element,
       // so it doesn’t get lost/reset to the start of the page

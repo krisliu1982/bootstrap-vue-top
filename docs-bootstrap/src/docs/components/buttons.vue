@@ -96,8 +96,7 @@
     <p>You can create a button instance with the button constructor, for example:</p>
     <pre><code class="language-js">const bsButton = new bootstrap.Button(&#39;#myButton&#39;)
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -121,7 +120,7 @@
     <td>Toggles push state. Gives the button the appearance that it has been activated.</td>
     </tr>
     </tbody></table>
-    </BsTable><p>For example, to toggle all buttons</p>
+    </div><p>For example, to toggle all buttons</p>
     <pre><code class="language-js">document.querySelectorAll(&#39;.btn&#39;).forEach(buttonElement =&gt; {
       const button = bootstrap.Button.getOrCreateInstance(buttonElement)
       button.toggle()

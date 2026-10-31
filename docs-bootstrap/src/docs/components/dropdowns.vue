@@ -825,8 +825,8 @@
     const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new bootstrap.Dropdown(dropdownToggleEl))
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -872,7 +872,7 @@
     <td>Reference element of the dropdown menu. Accepts the values of <code>&#39;toggle&#39;</code>, <code>&#39;parent&#39;</code>, an HTMLElement reference or an object providing <code>getBoundingClientRect</code>. For more information refer to Popper’s <a href="https://popper.js.org/docs/v2/constructors/#createpopper">constructor docs</a> and <a href="https://popper.js.org/docs/v2/virtual-elements/">virtual element docs</a>.</td>
     </tr>
     </tbody></table>
-    </BsTable><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
+    </div><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
     <pre><code class="language-js">const dropdown = new bootstrap.Dropdown(element, {
       popperConfig(defaultBsPopperConfig) {
         // const newPopperConfig = {...}
@@ -882,8 +882,7 @@
     })
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -919,10 +918,9 @@
     <td>Updates the position of an element’s dropdown.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>All dropdown events are fired at the toggling element and then bubbled up. So you can also add event listeners on the <code>.dropdown-menu</code>’s parent element. <code>hide.bs.dropdown</code> and <code>hidden.bs.dropdown</code> events have a <code>clickEvent</code> property (only when the original Event type is <code>click</code>) that contains an Event Object for the click event.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event type</th>
@@ -946,7 +944,7 @@
     <td>Fired when the dropdown has been made visible to the user and CSS transitions have completed.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myDropdown = document.getElementById(&#39;myDropdown&#39;)
+    </div><pre><code class="language-js">const myDropdown = document.getElementById(&#39;myDropdown&#39;)
     myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       // do something...
     })

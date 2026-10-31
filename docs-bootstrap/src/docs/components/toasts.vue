@@ -237,8 +237,8 @@
     </code></pre>
     <h3 id="triggers">Triggers<a class="anchor-link" href="#triggers" aria-label="Link to Triggers"></a></h3>
     <JsDismiss name="toast" /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -266,9 +266,9 @@
     <td>Delay in milliseconds before hiding the toast.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <Callout name="danger-async-methods" type="danger" /><BsTable>
-    <table>
+    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <Callout name="danger-async-methods" type="danger" /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -300,9 +300,8 @@
     <td>Reveals an element’s toast. <strong>Returns to the caller before the toast has actually been shown</strong> (i.e. before the <code>shown.bs.toast</code> event occurs). You have to manually call this method, instead your toast won’t show.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <BsTable>
-    <table>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event</th>
@@ -326,7 +325,7 @@
     <td>This event is fired when the toast has been made visible to the user.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
+    </div><pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
     myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
       // do something...
     })

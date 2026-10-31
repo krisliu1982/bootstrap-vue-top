@@ -85,8 +85,7 @@
     </code></pre>
     <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
     <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
-    <Example :showMarkup="false" '
-    <div class="row">
+    <Example :showMarkup="false" code='<div class="row">
       <div class="col-4">
         <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
           <nav class="nav nav-pills flex-column">
@@ -199,8 +198,7 @@
     </code></pre>
     <h3 id="list-group">List group<a class="anchor-link" href="#list-group" aria-label="Link to List group"></a></h3>
     <p>Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
-    <Example :showMarkup="false" '
-    <div class="row">
+    <Example :showMarkup="false" code='<div class="row">
       <div class="col-4">
         <div id="list-example" class="list-group">
           <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
@@ -247,8 +245,7 @@
     </code></pre>
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
     <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current document. Scroll the area and watch the <code>.active</code> class change.</p>
-    <Example :showMarkup="false" '
-    <div class="row">
+    <Example :showMarkup="false" code='<div class="row">
       <div class="col-4">
         <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
           <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
@@ -328,8 +325,8 @@
     })
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -363,13 +360,12 @@
     <td><code>IntersectionObserver</code> <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a> valid input, when calculating scroll position.</td>
     </tr>
     </tbody></table>
-    </BsTable><Callout type="warning">
+    </div><Callout type="warning">
     <p><strong>Deprecated Options</strong></p>
     <p>Up until v5.1.3 we were using <code>offset</code> &amp; <code>method</code> options, which are now deprecated and replaced by <code>rootMargin</code>.
     To keep backwards compatibility, we will continue to parse a given <code>offset</code> to <code>rootMargin</code>, but this feature will be removed in <strong>v6</strong>.</p>
     </Callout><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -393,15 +389,14 @@
     <td>When adding or removing elements in the DOM, you’ll need to call the refresh method.</td>
     </tr>
     </tbody></table>
-    </BsTable><p>Here’s an example using the refresh method:</p>
+    </div><p>Here’s an example using the refresh method:</p>
     <pre><code class="language-js">const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
     dataSpyList.forEach(dataSpyEl =&gt; {
       bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
     })
     </code></pre>
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event</th>
@@ -413,7 +408,7 @@
     <td>This event fires on the scroll element whenever an anchor is activated by the scrollspy.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
+    </div><pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
     firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
       // do something...
     })

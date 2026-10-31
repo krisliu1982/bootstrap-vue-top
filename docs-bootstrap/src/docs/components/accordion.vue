@@ -145,8 +145,8 @@
     const accordionCollapseList = [...accordionCollapseElementList].map(accordionCollapseEl =&gt; new bootstrap.Collapse(accordionCollapseEl))
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -168,15 +168,14 @@
     <td>Toggles the collapsible element on invocation.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
     <p>You can create a collapse instance with the constructor, for example:</p>
     <pre><code class="language-js">const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
       toggle: false
     })
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -208,10 +207,9 @@
     <td>Toggles a collapsible element to shown or hidden. <strong>Returns to the caller before the collapsible element has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.collapse</code> or <code>hidden.bs.collapse</code> event occurs).</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s collapse class exposes a few events for hooking into collapse functionality.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event type</th>
@@ -235,7 +233,7 @@
     <td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
+    </div><pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
     myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       // do something...
     })

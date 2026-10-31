@@ -36,8 +36,7 @@
     <p>For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide elements responsively for each screen size.</p>
     <p>To hide elements simply use the <code>.d-none</code> class or one of the <code>.d-{sm,md,lg,xl,xxl}-none</code> classes for any responsive screen variation.</p>
     <p>To show an element only on a given interval of screen sizes you can combine one <code>.d-*-none</code> class with a <code>.d-*-*</code> class, for example <code>.d-none .d-md-block .d-xl-none</code> will hide the element for all screen sizes except on medium and large devices.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Screen size</th>
@@ -101,7 +100,7 @@
     <td><code>.d-none .d-xxl-block</code></td>
     </tr>
     </tbody></table>
-    </BsTable><Example code='<div class="d-lg-none">hide on lg and wider screens</div>
+    </div><Example code='<div class="d-lg-none">hide on lg and wider screens</div>
     <div class="d-none d-lg-block">hide on screens smaller than lg</div>' /><h2 id="display-in-print">Display in print<a class="anchor-link" href="#display-in-print" aria-label="Link to Display in print"></a></h2>
     <p>Change the <code>display</code> value of elements when printing with our print display utility classes. Includes support for the same <code>display</code> values as our responsive <code>.d-*</code> utilities.</p>
     <ul>

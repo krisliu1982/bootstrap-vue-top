@@ -437,8 +437,7 @@
     <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
     <h2 id="optional-sizes">Optional sizes<a class="anchor-link" href="#optional-sizes" aria-label="Link to Optional sizes"></a></h2>
     <p>Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Size</th>
@@ -467,7 +466,7 @@
     <td><code>1140px</code></td>
     </tr>
     </tbody></table>
-    </BsTable><p>Our default modal without modifier class constitutes the “medium” size modal.</p>
+    </div><p>Our default modal without modifier class constitutes the “medium” size modal.</p>
     <Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>' /><pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
@@ -512,8 +511,7 @@
       </div>
     </div><h2 id="fullscreen-modal">Fullscreen Modal<a class="anchor-link" href="#fullscreen-modal" aria-label="Link to Fullscreen Modal"></a></h2>
     <p>Another override is the option to pop up a modal that covers the user viewport, available via modifier classes that are placed on a <code>.modal-dialog</code>.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Class</th>
@@ -545,7 +543,7 @@
     <td><code>1400px</code></td>
     </tr>
     </tbody></table>
-    </BsTable><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
+    </div><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
@@ -668,8 +666,8 @@
     const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -697,15 +695,14 @@
     <td>Closes the modal when escape key is pressed.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><h4 id="passing-options">Passing options</h4>
     <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
     <pre><code class="language-js">const myModal = new bootstrap.Modal(&#39;#myModal&#39;, {
       keyboard: false
     })
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -741,10 +738,9 @@
     <td>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the <code>&lt;div class=&quot;modal&quot;&gt;</code>).</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event</th>
@@ -772,7 +768,7 @@
     <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myModalEl = document.getElementById(&#39;myModal&#39;)
+    </div><pre><code class="language-js">const myModalEl = document.getElementById(&#39;myModal&#39;)
     myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       // do something...
     })

@@ -138,8 +138,8 @@
     </code></pre>
     <h2 id="methods-and-properties">Methods and properties<a class="anchor-link" href="#methods-and-properties" aria-label="Link to Methods and properties"></a></h2>
     <p>Every Bootstrap plugin exposes the following methods and static properties.</p>
-    <BsTable class="table">
-    <table>
+    <div class="table-responsive">
+   <table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -159,8 +159,8 @@
     <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
     </tr>
     </tbody></table>
-    </BsTable><BsTable class="table">
-    <table>
+    </div><div class="table-responsive">
+    <table class="table">
     <thead>
     <tr>
     <th>Static property</th>
@@ -176,7 +176,7 @@
     <td>The version of each of Bootstrap’s plugins can be accessed via the <code>VERSION</code> property of the plugin’s constructor (Example: <code>bootstrap.Tooltip.VERSION</code>)</td>
     </tr>
     </tbody></table>
-    </BsTable><h2 id="sanitizer">Sanitizer<a class="anchor-link" href="#sanitizer" aria-label="Link to Sanitizer"></a></h2>
+    </div><h2 id="sanitizer">Sanitizer<a class="anchor-link" href="#sanitizer" aria-label="Link to Sanitizer"></a></h2>
     <p>Our tooltip and popover components are able to render arbitrary HTML to the page if configured to do so.
     To prevent cross-site scripting (XSS) attacks, these components use our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default.</p>
     <p>The tags and attributes allowed by default are as follows. Any tags or attributes not explicitly allowed will be removed during sanitization:</p>

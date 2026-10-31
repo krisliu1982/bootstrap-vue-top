@@ -283,8 +283,8 @@
     <pre><code class="language-js">const carousel = new bootstrap.Carousel(&#39;#myCarousel&#39;)
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><BsTable>
-    <table>
+    <JsDataAttributes /><div class="table-responsive">
+       <table class="table">
     <thead>
     <tr>
     <th>Name</th>
@@ -330,7 +330,7 @@
     <td>Whether the carousel should cycle continuously or have hard stops.</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>You can create a carousel instance with the carousel constructor, and pass on any additional options. For example, to manually initialize an autoplaying carousel (assuming you’re not using the <code>data-bs-ride=&quot;carousel&quot;</code> attribute in the markup itself) with a specific interval and with touch support disabled, you can use:</p>
     <pre><code class="language-js">const myCarouselElement = document.querySelector(&#39;#myCarousel&#39;)
 
@@ -339,8 +339,7 @@
       touch: false
     })
     </code></pre>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Method</th>
@@ -384,7 +383,7 @@
     <td>Cycles the carousel to a particular frame (0 based, similar to an array). <strong>Returns to the caller before the target item has been shown</strong> (e.g., before the <code>slid.bs.carousel</code> event occurs).</td>
     </tr>
     </tbody></table>
-    </BsTable><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s carousel class exposes two events for hooking into carousel functionality. Both events have the following additional properties:</p>
     <ul>
     <li><code>direction</code>: The direction in which the carousel is sliding (either <code>&quot;left&quot;</code> or <code>&quot;right&quot;</code>).</li>
@@ -393,8 +392,7 @@
     <li><code>to</code>: The index of the next item</li>
     </ul>
     <p>All carousel events are fired at the carousel itself (i.e. at the <code>&lt;div class=&quot;carousel&quot;&gt;</code>).</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Event type</th>
@@ -410,7 +408,7 @@
     <td>Fires immediately when the <code>slide</code> instance method is invoked.</td>
     </tr>
     </tbody></table>
-    </BsTable><pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
+    </div><pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
 
     myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       // do something...

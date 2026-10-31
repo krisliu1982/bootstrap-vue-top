@@ -59,8 +59,7 @@
     <p>This <code>font-family</code> is applied to the <code>&lt;body&gt;</code> and automatically inherited globally throughout Bootstrap. To switch the global <code>font-family</code>, update <code>$font-family-base</code> and recompile Bootstrap.</p>
     <h2 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h2>
     <p>All heading elements—<code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> have their <code>margin-top</code> removed, <code>margin-bottom: .5rem</code> set, and <code>line-height</code> tightened. While headings inherit their <code>color</code> by default, you can also override it via optional CSS variable, <code>--bs-heading-color</code>.</p>
-    <BsTable>
-    <table>
+<div class="table-responsive"><table class="table">
     <thead>
     <tr>
     <th>Heading</th>
@@ -92,7 +91,7 @@
     <td><span class="h6">h6. Bootstrap heading</span></td>
     </tr>
     </tbody></table>
-    </BsTable><h2 id="paragraphs">Paragraphs<a class="anchor-link" href="#paragraphs" aria-label="Link to Paragraphs"></a></h2>
+    </div><h2 id="paragraphs">Paragraphs<a class="anchor-link" href="#paragraphs" aria-label="Link to Paragraphs"></a></h2>
     <p>All <code>&lt;p&gt;</code> elements have their <code>margin-top</code> removed and <code>margin-bottom: 1rem</code> set for easy spacing.</p>
     <Example code='<p>This is an example paragraph.</p>' /><h2 id="links">Links<a class="anchor-link" href="#links" aria-label="Link to Links"></a></h2>
     <p>Links have a default <code>color</code> and underline applied. While links change on <code>:hover</code>, they don’t change based on whether someone <code>:visited</code> the link. They also receive no special <code>:focus</code> styles.</p>

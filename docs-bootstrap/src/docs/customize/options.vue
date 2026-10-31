@@ -6,8 +6,8 @@
 
     <p>Customize Bootstrap with our built-in custom variables file and easily toggle global CSS preferences with new <code>$enable-*</code> Sass variables. Override a variable’s value and recompile with <code>npm run test</code> as needed.</p>
     <p>You can find and customize these variables for key global options in Bootstrap’s <code>scss/_variables.scss</code> file.</p>
-    <BsTable class="table table-options">
-    <table>
+    <div class="table-responsive">
+    <table class="table table-options">
     <thead>
     <tr>
     <th>Variable</th>
@@ -106,6 +106,6 @@
     <td>Applies <code>scroll-behavior: smooth</code> globally, except for users asking for reduced motion through <a href="[[docsref:/getting-started/accessibility#reduced-motion]]"><code>prefers-reduced-motion</code> media query</a></td>
     </tr>
     </tbody></table>
-    </BsTable>
+    </div>
   </article>
 </template>
