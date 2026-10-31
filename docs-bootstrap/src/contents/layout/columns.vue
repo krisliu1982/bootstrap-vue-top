@@ -5,14 +5,14 @@
     <p>Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.</p>
 
     <Callout>
-    <p><strong>Heads up!</strong> Be sure to <a href="[[docsref:/layout/grid]]">read the Grid page</a> first before diving into how to modify and customize your grid columns.</p>
+    <p><strong>Heads up!</strong> Be sure to <a href="/layout/grid">read the Grid page</a> first before diving into how to modify and customize your grid columns.</p>
     </Callout><h2 id="how-they-work">How they work<a class="anchor-link" href="#how-they-work" aria-label="Link to How they work"></a></h2>
     <ul>
-    <li><p><strong>Columns build on the grid’s flexbox architecture.</strong> Flexbox means we have options for changing individual columns and <a href="[[docsref:/layout/grid#row-columns]]">modifying groups of columns at the row level</a>. You choose how columns grow, shrink, or otherwise change.</p>
+    <li><p><strong>Columns build on the grid’s flexbox architecture.</strong> Flexbox means we have options for changing individual columns and <a href="/layout/grid#row-columns">modifying groups of columns at the row level</a>. You choose how columns grow, shrink, or otherwise change.</p>
     </li>
-    <li><p><strong>When building grid layouts, all content goes in columns.</strong> The hierarchy of Bootstrap’s grid goes from <a href="[[docsref:/layout/containers]]">container</a> to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.</p>
+    <li><p><strong>When building grid layouts, all content goes in columns.</strong> The hierarchy of Bootstrap’s grid goes from <a href="/layout/containers">container</a> to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.</p>
     </li>
-    <li><p><strong>Bootstrap includes predefined classes for creating fast, responsive layouts.</strong> With <a href="[[docsref:/layout/breakpoints]]">six breakpoints</a> and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.</p>
+    <li><p><strong>Bootstrap includes predefined classes for creating fast, responsive layouts.</strong> With <a href="/layout/breakpoints">six breakpoints</a> and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.</p>
     </li>
     </ul>
     <h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
@@ -140,7 +140,7 @@
           <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
           <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
         </div>
-      </div>' /><p>You may also apply this break at specific breakpoints with our <a href="[[docsref:/utilities/display]]">responsive display utilities</a>.</p>
+      </div>' /><p>You may also apply this break at specific breakpoints with our <a href="/utilities/display">responsive display utilities</a>.</p>
     <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
@@ -180,7 +180,7 @@
             Third in DOM, ordered first
           </div>
         </div>
-      </div>' /><p>If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map. <a href="[[docsref:/customize/sass#maps-and-loops]]">Read our Sass maps and loops docs</a> or <a href="[[docsref:/utilities/api#modify-utilities]]">our Modify utilities docs</a> for details.</p>
+      </div>' /><p>If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map. <a href="/customize/sass#maps-and-loops">Read our Sass maps and loops docs</a> or <a href="/utilities/api#modify-utilities">our Modify utilities docs</a> for details.</p>
     <pre><code class="language-scss">$utilities: map-merge(
   $utilities,
   (
@@ -200,7 +200,7 @@
 );
     </code></pre>
     <h3 id="offsetting-columns">Offsetting columns<a class="anchor-link" href="#offsetting-columns" aria-label="Link to Offsetting columns"></a></h3>
-    <p>You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="[[docsref:/utilities/spacing]]">margin utilities</a>. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>
+    <p>You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="/utilities/spacing">margin utilities</a>. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>
     <h4 id="offset-classes">Offset classes</h4>
     <p>Move columns to the right using <code>.offset-md-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.</p>
     <Example class="docs-example-row" code='<div class="container text-center">
@@ -215,7 +215,7 @@
         <div class="row">
           <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
         </div>
-      </div>' /><p>In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in <a href="[[docsref:/examples/grid/]]">the grid example</a>.</p>
+      </div>' /><p>In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in <a href="/examples/grid/">the grid example</a>.</p>
     <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
@@ -248,7 +248,7 @@
 
       <div class="col-sm-9 p-3">
         .col-sm-9: width of 75% above sm breakpoint
-      </div>' /><p>The classes can be used together with utilities to create responsive floated images. Make sure to wrap the content in a <a href="[[docsref:/helpers/clearfix]]"><code>.clearfix</code></a> wrapper to clear the float if the text is shorter.</p>
+      </div>' /><p>The classes can be used together with utilities to create responsive floated images. Make sure to wrap the content in a <a href="/helpers/clearfix"><code>.clearfix</code></a> wrapper to clear the float if the text is shorter.</p>
     <Example code='<div class="clearfix">
         <Placeholder width="100%" height="210" class="col-md-6 float-md-end mb-3 ms-md-3" text="Responsive floated image" />
 

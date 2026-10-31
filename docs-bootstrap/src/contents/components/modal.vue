@@ -11,7 +11,7 @@
     <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
     <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
     <li>Modals use <code>position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a <code>.modal</code> within another fixed element.</li>
-    <li>Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices. <a href="[[docsref:/getting-started/browsers-devices#modals-and-dropdowns-on-mobile]]">See our browser support docs</a> for details.</li>
+    <li>Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices. <a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a> for details.</li>
     <li>Due to how HTML5 defines its semantics, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">the <code>autofocus</code> HTML attribute</a> has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:</li>
     </ul>
     <pre><code class="language-js">const myModal = document.getElementById(&#39;myModal&#39;)
@@ -63,7 +63,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;
     </code></pre>
     <Callout>
-    <p>In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the <a href="[[docsref:/utilities/text#font-size]]">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.</p>
+    <p>In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the <a href="/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.</p>
     </Callout><h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
     <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
     <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
@@ -254,7 +254,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;
     </code></pre>
     <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
-    <p><a href="[[docsref:/components/tooltips]]">Tooltips</a> and <a href="[[docsref:/components/popovers]]">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
+    <p><a href="/components/tooltips">Tooltips</a> and <a href="/components/popovers">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
     <Example :showMarkup="false" code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -758,7 +758,7 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
     </thead>
     <tbody><tr>
     <td><code>hide.bs.modal</code></td>
-    <td>This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See <a href="[[docsref:/getting-started/javascript#events]]">JavaScript events documentation</a> for more details on event prevention.</td>
+    <td>This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See <a href="/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.</td>
     </tr>
     <tr>
     <td><code>hidden.bs.modal</code></td>

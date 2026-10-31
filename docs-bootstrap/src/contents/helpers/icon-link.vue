@@ -47,7 +47,7 @@
       </a>' /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Customize the icon link Sass variables to modify all icon link styles across your Bootstrap-powered project.</p>
     <ScssDocs name="icon-link-variables" file="scss/_variables.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Modify icon links with any of <a href="[[docsref:/utilities/link/]]">our link utilities</a> for modifying underline color and offset.</p>
+    <p>Modify icon links with any of <a href="/utilities/link/">our link utilities</a> for modifying underline color and offset.</p>
     <Example code='<a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
         Icon link
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">

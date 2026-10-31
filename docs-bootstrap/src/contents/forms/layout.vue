@@ -12,7 +12,7 @@
     </ul>
     <p>Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.</p>
     <h2 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h2>
-    <p><a href="[[docsref:/utilities/spacing]]">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.</p>
+    <p><a href="/utilities/spacing">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.</p>
     <p>Feel free to build your forms however you like, with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
     <Example code='<div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Example label</label>
@@ -31,7 +31,7 @@
           <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
         </div>
       </div>' /><h2 id="gutters">Gutters<a class="anchor-link" href="#gutters" aria-label="Link to Gutters"></a></h2>
-    <p>By adding <a href="[[docsref:/layout/gutters]]">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
+    <p>By adding <a href="/layout/gutters">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
     <Example code='<div class="row g-3">
         <div class="col">
           <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -232,7 +232,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>' /><h2 id="inline-forms">Inline forms<a class="anchor-link" href="#inline-forms" aria-label="Link to Inline forms"></a></h2>
-    <p>Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="[[docsref:/layout/gutters]]">gutter modifier classes</a>, we&#39;ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-check</code> align properly.</p>
+    <p>Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/layout/gutters">gutter modifier classes</a>, we&#39;ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-check</code> align properly.</p>
     <Example code='<form class="row row-cols-lg-auto g-3 align-items-center">
         <div class="col-12">
           <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>

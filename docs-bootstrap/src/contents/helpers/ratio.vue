@@ -8,7 +8,7 @@
     <p>Use the ratio helper to manage the aspect ratios of external content like <code>&lt;iframe&gt;</code>s, <code>&lt;embed&gt;</code>s, <code>&lt;video&gt;</code>s, and <code>&lt;object&gt;</code>s. These helpers also can be used on any standard HTML child element (e.g., a <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code>). Styles are applied from the parent <code>.ratio</code> class directly to the child.</p>
     <p>Aspect ratios are declared in a Sass map and included in each class via CSS variable, which also allows <a href="#custom-ratios">custom aspect ratios</a>.</p>
     <Callout>
-    <p><strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in <a href="[[docsref:/content/reboot]]">Reboot</a>.</p>
+    <p><strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in <a href="/content/reboot">Reboot</a>.</p>
     </Callout><h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector <code>.ratio &gt; *</code>.</p>
     <Example code='<div class="ratio ratio-16x9">

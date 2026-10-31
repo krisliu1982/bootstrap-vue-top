@@ -18,12 +18,12 @@
     <tbody><tr>
     <td><code>$spacer</code></td>
     <td><code>1rem</code> (default), or any value &gt; 0</td>
-    <td>Specifies the default spacer value to programmatically generate our <a href="[[docsref:/utilities/spacing]]">spacer utilities</a>.</td>
+    <td>Specifies the default spacer value to programmatically generate our <a href="/utilities/spacing">spacer utilities</a>.</td>
     </tr>
     <tr>
     <td><code>$enable-dark-mode</code></td>
     <td><code>true</code> (default) or <code>false</code></td>
-    <td>Enables built-in <a href="[[docsref:/customize/color-modes#dark-mode]]">dark mode support</a> across the project and its components.</td>
+    <td>Enables built-in <a href="/customize/color-modes#dark-mode">dark mode support</a> across the project and its components.</td>
     </tr>
     <tr>
     <td><code>$enable-rounded</code></td>
@@ -48,7 +48,7 @@
     <tr>
     <td><code>$enable-reduced-motion</code></td>
     <td><code>true</code> (default) or <code>false</code></td>
-    <td>Enables the <a href="[[docsref:/getting-started/accessibility#reduced-motion]]"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain animations/transitions based on the users’ browser/operating system preferences.</td>
+    <td>Enables the <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain animations/transitions based on the users’ browser/operating system preferences.</td>
     </tr>
     <tr>
     <td><code>$enable-grid-classes</code></td>
@@ -78,7 +78,7 @@
     <tr>
     <td><code>$enable-rfs</code></td>
     <td><code>true</code> (default) or <code>false</code></td>
-    <td>Globally enables <a href="[[docsref:/getting-started/rfs]]">RFS</a>.</td>
+    <td>Globally enables <a href="/getting-started/rfs">RFS</a>.</td>
     </tr>
     <tr>
     <td><code>$enable-validation-icons</code></td>
@@ -88,7 +88,7 @@
     <tr>
     <td><code>$enable-negative-margins</code></td>
     <td><code>true</code> or <code>false</code> (default)</td>
-    <td>Enables the generation of <a href="[[docsref:/utilities/spacing#negative-margin]]">negative margin utilities</a>.</td>
+    <td>Enables the generation of <a href="/utilities/spacing#negative-margin">negative margin utilities</a>.</td>
     </tr>
     <tr>
     <td><code>$enable-deprecation-messages</code></td>
@@ -103,7 +103,7 @@
     <tr>
     <td><code>$enable-smooth-scroll</code></td>
     <td><code>true</code> (default) or <code>false</code></td>
-    <td>Applies <code>scroll-behavior: smooth</code> globally, except for users asking for reduced motion through <a href="[[docsref:/getting-started/accessibility#reduced-motion]]"><code>prefers-reduced-motion</code> media query</a></td>
+    <td>Applies <code>scroll-behavior: smooth</code> globally, except for users asking for reduced motion through <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a></td>
     </tr>
     </tbody></table>
     </div>

@@ -12,7 +12,7 @@
     <Example code='<div class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>' /><h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
-    <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="[[docsref:/utilities/colors]]">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
+    <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="/utilities/colors">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="spinner-border text-${themeColor.name}" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>`).join("\n")' /><Callout>
@@ -21,17 +21,17 @@
     <p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
     <Example code='<div class="spinner-grow" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>' /><p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="[[docsref:/utilities/colors]]">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
+      </div>' /><p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="/utilities/colors">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="spinner-grow text-${themeColor.name}" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>`).join("\n")' /><h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
     <p>Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
     <h3 id="margin">Margin<a class="anchor-link" href="#margin" aria-label="Link to Margin"></a></h3>
-    <p>Use <a href="[[docsref:/utilities/spacing]]">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
+    <p>Use <a href="/utilities/spacing">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
     <Example code='<div class="spinner-border m-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>' /><h3 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h3>
-    <p>Use <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>, <a href="[[docsref:/utilities/float]]">float utilities</a>, or <a href="[[docsref:/utilities/text]]">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
+    <p>Use <a href="/utilities/flex">flexbox utilities</a>, <a href="/utilities/float">float utilities</a>, or <a href="/utilities/text">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
     <h4 id="flex">Flex</h4>
     <Example code='<div class="d-flex justify-content-center">
         <div class="spinner-border" role="status">

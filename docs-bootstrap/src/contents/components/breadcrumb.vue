@@ -37,7 +37,7 @@
     </code></pre>
     <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
     <Callout>
-    <p><strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our <a href="[[docsref:/customize/sass#escape-svg]]"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.</p>
+    <p><strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.</p>
     </Callout><Example code='<nav style="--bs-breadcrumb-divider: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="%236c757d"/%3E%3C/svg%3E&#39;);" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>

@@ -24,15 +24,15 @@
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Breaking it down, here’s how the grid system comes together:</p>
     <ul>
-    <li><p><strong>Our grid supports <a href="[[docsref:/layout/breakpoints]]">six responsive breakpoints</a>.</strong>  Breakpoints are based on <code>min-width</code> media queries, meaning they affect that breakpoint and all those above it (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>). This means you can control container and column sizing and behavior by each breakpoint.</p>
+    <li><p><strong>Our grid supports <a href="/layout/breakpoints">six responsive breakpoints</a>.</strong>  Breakpoints are based on <code>min-width</code> media queries, meaning they affect that breakpoint and all those above it (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>). This means you can control container and column sizing and behavior by each breakpoint.</p>
     </li>
     <li><p><strong>Containers center and horizontally pad your content.</strong> Use <code>.container</code> for a responsive pixel width, <code>.container-fluid</code> for <code>width: 100%</code> across all viewports and devices, or a responsive container (e.g., <code>.container-md</code>) for a combination of fluid and pixel widths.</p>
     </li>
-    <li><p><strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to <a href="#row-columns">uniformly apply column sizing</a> and <a href="[[docsref:/layout/gutters]]">gutter classes</a> to change the spacing of your content.</p>
+    <li><p><strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to <a href="#row-columns">uniformly apply column sizing</a> and <a href="/layout/gutters">gutter classes</a> to change the spacing of your content.</p>
     </li>
     <li><p><strong>Columns are incredibly flexible.</strong> There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., <code>col-4</code> spans four). <code>width</code>s are set in percentages so you always have the same relative sizing.</p>
     </li>
-    <li><p><strong>Gutters are also responsive and customizable.</strong> <a href="[[docsref:/layout/gutters]]">Gutter classes are available</a> across all breakpoints, with all the same sizes as our <a href="[[docsref:/utilities/spacing]]">margin and padding spacing</a>. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.</p>
+    <li><p><strong>Gutters are also responsive and customizable.</strong> <a href="/layout/gutters">Gutter classes are available</a> across all breakpoints, with all the same sizes as our <a href="/utilities/spacing">margin and padding spacing</a>. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.</p>
     </li>
     <li><p><strong>Sass variables, maps, and mixins power the grid.</strong> If you don’t want to use the predefined grid classes in Bootstrap, you can use our <a href="#sass-variables">grid’s source Sass</a> to create your own with more semantic markup. We also include some CSS custom properties to consume these Sass variables for even greater flexibility for you.</p>
     </li>
@@ -91,7 +91,7 @@
           </tr>
           <tr>
             <th class="text-nowrap" scope="row">Custom gutters</th>
-            <td colspan="6"><a href="[[docsref:/layout/gutters]]">Yes</a></td>
+            <td colspan="6"><a href="/layout/gutters">Yes</a></td>
           </tr>
           <tr>
             <th class="text-nowrap" scope="row">Nestable</th>
@@ -99,7 +99,7 @@
           </tr>
           <tr>
             <th class="text-nowrap" scope="row">Column ordering</th>
-            <td colspan="6"><a href="[[docsref:/layout/columns#reordering]]">Yes</a></td>
+            <td colspan="6"><a href="/layout/columns#reordering">Yes</a></td>
           </tr>
         </tbody>
       </table>

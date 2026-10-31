@@ -9,7 +9,7 @@
     <ul>
     <li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
     <li>Navbars and their contents are fluid by default. Change the <a href="#containers">container</a> to limit their horizontal width in different ways.</li>
-    <li>Use our <a href="[[docsref:/utilities/spacing]]">spacing</a> and <a href="[[docsref:/utilities/flex]]">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+    <li>Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
     <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
     <li>Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
     <li>Indicate the current item by using <code>aria-current=&quot;page&quot;</code> for the current page or <code>aria-current=&quot;true&quot;</code> for the current item in a set.</li>
@@ -62,7 +62,7 @@
             </form>
           </div>
         </div>
-      </nav>' /><p>This example uses <a href="[[docsref:/utilities/background]]">background</a> (<code>bg-body-tertiary</code>) and <a href="[[docsref:/utilities/spacing]]">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.</p>
+      </nav>' /><p>This example uses <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.</p>
     <h3 id="brand">Brand<a class="anchor-link" href="#brand" aria-label="Link to Brand"></a></h3>
     <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p>
     <h4 id="text">Text</h4>
@@ -179,7 +179,7 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
-      </nav>' /><p>Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional <a href="[[docsref:/utilities/flex]]">flex utilities</a> as needed to adjust this behavior.</p>
+      </nav>' /><p>Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional <a href="/utilities/flex">flex utilities</a> as needed to adjust this behavior.</p>
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand">Navbar</a>
@@ -236,7 +236,7 @@
         </div>
       </nav>' /><h2 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h2>
     <Callout type="warning">
-    <p><strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode. <a href="[[docsref:/customize/color-modes]]">Learn more about our color modes.</a></p>
+    <p><strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode. <a href="/customize/color-modes">Learn more about our color modes.</a></p>
     <hr>
     <p><strong>New in v5.2.0  —</strong> Navbar theming is now powered by CSS variables and <code>.navbar-light</code> has been deprecated. CSS variables are applied to <code>.navbar</code>, defaulting to the “light” appearance, and can be overridden with <code>.navbar-dark</code>.</p>
     </Callout><p>Navbar themes are easier than ever thanks to Bootstrap’s combination of Sass and CSS variables. The default is our “light navbar” for use with light background colors, but you can also apply <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> parent for dark background colors. Then, customize with <code>.bg-*</code> and additional utilities.</p>
@@ -354,7 +354,7 @@
           <a class="navbar-brand" href="#">Navbar</a>
         </div>
       </nav>' /><h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
-    <p>Use our <a href="[[docsref:/utilities/position]]">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).</p>
+    <p>Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).</p>
     <p>Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the <code>&lt;body&gt;</code>) to prevent overlap with other elements.</p>
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
@@ -511,7 +511,7 @@
         </div>
       </nav>' /><p>When you do this, we recommend including additional JavaScript to move the focus programmatically to the container when it is opened. Otherwise, keyboard users and users of assistive technologies will likely have a hard time finding the newly revealed content - particularly if the container that was opened comes <em>before</em> the toggler in the document’s structure. We also recommend making sure that the toggler has the <code>aria-controls</code> attribute, pointing to the <code>id</code> of the content container. In theory, this allows assistive technology users to jump directly from the toggler to the container it controls–but support for this is currently quite patchy.</p>
     <h3 id="offcanvas">Offcanvas<a class="anchor-link" href="#offcanvas" aria-label="Link to Offcanvas"></a></h3>
-    <p>Transform your expanding and collapsing navbar into an offcanvas drawer with the <a href="[[docsref:/components/offcanvas]]">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and flexible navigation sidebar.</p>
+    <p>Transform your expanding and collapsing navbar into an offcanvas drawer with the <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and flexible navigation sidebar.</p>
     <p>In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the <code>.navbar-expand-*</code> class entirely.</p>
     <Example code='<nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">

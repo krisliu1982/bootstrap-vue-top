@@ -40,7 +40,7 @@
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;link href=&quot;[[config:cdn.css]]&quot; rel=&quot;stylesheet&quot; integrity=&quot;[[config:cdn.css_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB&quot; crossorigin=&quot;anonymous&quot;&gt;
     &lt;title&gt;Hello, modularity!&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -51,8 +51,8 @@
     &lt;script type=&quot;importmap&quot;&gt;
     {
       &quot;imports&quot;: {
-        &quot;@popperjs/core&quot;: &quot;[[config:cdn.popper_esm]]&quot;,
-        &quot;bootstrap&quot;: &quot;https://cdn.jsdelivr.net/npm/bootstrap@[[config:current_version]]/dist/js/bootstrap.esm.min.js&quot;
+        &quot;@popperjs/core&quot;: &quot;https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js&quot;,
+        &quot;bootstrap&quot;: &quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.esm.min.js&quot;
       }
     }
     &lt;/script&gt;

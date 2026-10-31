@@ -5,7 +5,7 @@
     <p>Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="[[docsref:/components/navs-tabs]]">nav component</a> or <a href="[[docsref:/components/list-group]]">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.</p>
+    <p>Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/components/navs-tabs">nav component</a> or <a href="/components/list-group">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.</p>
     <ul>
     <li><p>To start, scrollspy requires two things: a navigation, list group, or a simple set of links, plus a scrollable container. The scrollable container can be the <code>&lt;body&gt;</code> or a custom element with a set <code>height</code> and <code>overflow-y: scroll</code>.</p>
     </li>

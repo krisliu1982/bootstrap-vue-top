@@ -5,7 +5,7 @@
     <p>Learn about the guiding principles, strategies, and techniques used to build and maintain Bootstrap so you can more easily customize and extend it yourself.</p>
 
     <p>While the getting started pages provide an introductory tour of the project and what it offers, this document focuses on <em>why</em> we do the things we do in Bootstrap. It explains our philosophy to building on the web so that others can learn from us, contribute with us, and help us improve.</p>
-    <p>See something that doesn’t sound right, or perhaps could be done better? <a href="[[config:repo]]/issues/new/choose">Open an issue</a>—we’d love to discuss it with you.</p>
+    <p>See something that doesn’t sound right, or perhaps could be done better? <a href="https://github.com/twbs/bootstrap/issues/new/choose">Open an issue</a>—we’d love to discuss it with you.</p>
     <h2 id="summary">Summary<a class="anchor-link" href="#summary" aria-label="Link to Summary"></a></h2>
     <p>We&#39;ll dive into each of these more throughout, but at a high level, here’s what guides our approach.</p>
     <ul>
@@ -36,10 +36,10 @@
     <h3 id="overlay-components">Overlay components<a class="anchor-link" href="#overlay-components" aria-label="Link to Overlay components"></a></h3>
     <p>Bootstrap includes several components that function as an overlay of some kind. This includes, in order of highest <code>z-index</code>, dropdowns, fixed and sticky navbars, modals, tooltips, and popovers. These components have their own <code>z-index</code> scale that begins at <code>1000</code>. This starting number was chosen arbitrarily and serves as a small buffer between our styles and your project’s custom styles.</p>
     <p>Each overlay component increases its <code>z-index</code> value slightly in such a way that common UI principles allow user focused or hovered elements to remain in view at all times. For example, a modal is document blocking (e.g., you cannot take any other action save for the modal’s action), so we put that above our navbars.</p>
-    <p>Learn more about this in our <a href="[[docsref:/layout/z-index]]"><code>z-index</code> layout page</a>.</p>
+    <p>Learn more about this in our <a href="/layout/z-index"><code>z-index</code> layout page</a>.</p>
     <h2 id="html-and-css-over-js">HTML and CSS over JS<a class="anchor-link" href="#html-and-css-over-js" aria-label="Link to HTML and CSS over JS"></a></h2>
     <p>Whenever possible, we prefer to write HTML and CSS over JavaScript. In general, HTML and CSS are more prolific and accessible to more people of all different experience levels. HTML and CSS are also faster in your browser than JavaScript, and your browser generally provides a great deal of functionality for you.</p>
-    <p>This principle is our first-class JavaScript API using <code>data</code> attributes. You don’t need to write nearly any JavaScript to use our JavaScript plugins; instead, write HTML. Read more about this in <a href="[[docsref:/getting-started/javascript#data-attributes]]">our JavaScript overview page</a>.</p>
+    <p>This principle is our first-class JavaScript API using <code>data</code> attributes. You don’t need to write nearly any JavaScript to use our JavaScript plugins; instead, write HTML. Read more about this in <a href="/getting-started/javascript#data-attributes">our JavaScript overview page</a>.</p>
     <p>Lastly, our styles build on the fundamental behaviors of common web elements. Whenever possible, we prefer to use what the browser provides. For example, you can put a <code>.btn</code> class on nearly any element, but most elements don’t provide any semantic value or browser functionality. So instead, we use <code>&lt;button&gt;</code>s and <code>&lt;a&gt;</code>s.</p>
     <p>The same goes for more complex components. While we <em>could</em> write our own form validation plugin to add classes to a parent element based on an input’s state, thereby allowing us to style the text say red, we prefer using the <code>:valid</code>/<code>:invalid</code> pseudo-elements every browser provides us.</p>
     <h2 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h2>

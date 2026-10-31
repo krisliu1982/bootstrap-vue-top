@@ -12,7 +12,7 @@
         <button type="button" class="btn btn-primary">Right</button>
       </div>' /><Callout>
     <p>Button groups require an appropriate <code>role</code> attribute and explicit label to ensure assistive technologies like screen readers identify buttons as grouped and announce them. Use <code>role=&quot;group&quot;</code> for button groups or <code>role=&quot;toolbar&quot;</code> for button toolbars. Then use <code>aria-label</code> or <code>aria-labelledby</code> to label them.</p>
-    </Callout><p>These classes can also be added to groups of links, as an alternative to the <a href="[[docsref:/components/navs-tabs]]"><code>.nav</code> navigation components</a>.</p>
+    </Callout><p>These classes can also be added to groups of links, as an alternative to the <a href="/components/navs-tabs"><code>.nav</code> navigation components</a>.</p>
     <Example code='<div class="btn-group">
         <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
         <a href="#" class="btn btn-primary">Link</a>
@@ -28,7 +28,7 @@
         <button type="button" class="btn btn-outline-primary">Middle</button>
         <button type="button" class="btn btn-outline-primary">Right</button>
       </div>' /><h2 id="checkbox-and-radio-button-groups">Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a></h2>
-    <p>Combine button-like checkbox and radio <a href="[[docsref:/forms/checks-radios]]">toggle buttons</a> into a seamless looking button group.</p>
+    <p>Combine button-like checkbox and radio <a href="/forms/checks-radios">toggle buttons</a> into a seamless looking button group.</p>
     <Example code='<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
         <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>

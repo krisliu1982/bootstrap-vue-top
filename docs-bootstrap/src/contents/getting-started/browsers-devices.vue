@@ -7,7 +7,7 @@
     <h2 id="supported-browsers">Supported browsers<a class="anchor-link" href="#supported-browsers" aria-label="Link to Supported browsers"></a></h2>
     <p>Bootstrap supports the <strong>latest, stable releases</strong> of all major browsers and platforms.</p>
     <p>Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform’s web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.</p>
-    <p>You can find our supported range of browsers and their versions <a href="[[config:repo]]/blob/v[[config:current_version]]/.browserslistrc">in our <code>.browserslistrc file</code></a>:</p>
+    <p>You can find our supported range of browsers and their versions <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.browserslistrc">in our <code>.browserslistrc file</code></a>:</p>
     <CodeWrapper code="# https://github.com/browserslist/browserslist#readme
 
 >= 0.5%

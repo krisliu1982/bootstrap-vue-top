@@ -36,7 +36,7 @@
     </code></pre>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Object fit utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <p>Object fit utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-object-fit" file="scss/_utilities.scss" />
   </article>
 </template>

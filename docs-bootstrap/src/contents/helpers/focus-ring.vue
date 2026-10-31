@@ -22,8 +22,8 @@
       </a>' /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Customize the focus ring Sass variables to modify all usage of the focus ring styles across your Bootstrap-powered project.</p>
     <ScssDocs name="focus-ring-variables" file="scss/_variables.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our <a href="[[docsref:/customize/color#theme-colors]]">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current color mode support.</p>
-    <Example :code='data["theme-colors"].map((themeColor) => `<p><a href="#" class="d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2">${themeColor.name} focus</a></p>`).join("\n")' /><p>Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <p>In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our <a href="/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current color mode support.</p>
+    <Example :code='data["theme-colors"].map((themeColor) => `<p><a href="#" class="d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2">${themeColor.name} focus</a></p>`).join("\n")' /><p>Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
   </article>
 </template>

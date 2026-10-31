@@ -8,7 +8,7 @@
     <ul>
     <li><p><strong>Gutters are the gaps between column content, created by horizontal <code>padding</code>.</strong> We set <code>padding-right</code> and <code>padding-left</code> on each column, and use negative <code>margin</code> to offset that at the start and end of each row to align content.</p>
     </li>
-    <li><p><strong>Gutters start at <code>1.5rem</code> (<code>24px</code>) wide.</strong> This allows us to match our grid to the <a href="[[docsref:/utilities/spacing]]">padding and margin spacers</a> scale.</p>
+    <li><p><strong>Gutters start at <code>1.5rem</code> (<code>24px</code>) wide.</strong> This allows us to match our grid to the <a href="/utilities/spacing">padding and margin spacers</a> scale.</p>
     </li>
     <li><p><strong>Gutters can be responsively adjusted.</strong> Use breakpoint-specific gutter classes to modify horizontal gutters, vertical gutters, and all gutters.</p>
     </li>
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>' /><h2 id="row-columns-gutters">Row columns gutters<a class="anchor-link" href="#row-columns-gutters" aria-label="Link to Row columns gutters"></a></h2>
-    <p>Gutter classes can also be added to <a href="[[docsref:/layout/grid#row-columns]]">row columns</a>. In the following example, we use responsive row columns and responsive gutter classes.</p>
+    <p>Gutter classes can also be added to <a href="/layout/grid#row-columns">row columns</a>. In the following example, we use responsive row columns and responsive gutter classes.</p>
     <Example class="docs-example-cols" code='<div class="container text-center">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
           <div class="col">

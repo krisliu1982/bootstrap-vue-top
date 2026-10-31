@@ -7,8 +7,8 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Things to know when using the popover plugin:</p>
     <ul>
-    <li>Popovers rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include <a href="[[config:cdn.popper]]">popper.min.js</a> before <code>bootstrap.js</code>, or use one <code>bootstrap.bundle.min.js</code> which contains Popper.</li>
-    <li>Popovers require the <a href="[[docsref:/components/popovers]]">popover plugin</a> as a dependency.</li>
+    <li>Popovers rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before <code>bootstrap.js</code>, or use one <code>bootstrap.bundle.min.js</code> which contains Popper.</li>
+    <li>Popovers require the <a href="/components/popovers">popover plugin</a> as a dependency.</li>
     <li>Popovers are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
     <li>Zero-length <code>title</code> and <code>content</code> values will never show a popover.</li>
     <li>Specify <code>container: &#39;body&#39;</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
@@ -46,7 +46,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
   container: &#39;body&#39;
 })
     </code></pre>
-    <p>Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="[[docsref:/components/modal]]">modal dialog</a>, to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.</p>
+    <p>Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/components/modal">modal dialog</a>, to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.</p>
     <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
   container: &#39;.modal-body&#39;
 })
@@ -102,8 +102,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
     <tbody><tr>
     <td><code>allowList</code></td>
     <td>object</td>
-    <td><a href="[[docsref:/getting-started/javascript#sanitizer]]">Default value</a></td>
-    <td>An object containing allowed tags and attributes. Those not explicitly allowed will be removed by <a href="[[docsref:/getting-started/javascript#sanitizer]]">the content sanitizer</a>. <Callout type="warning"><strong>Exercise caution when adding to this list.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information.</Callout></td>
+    <td><a href="/getting-started/javascript#sanitizer">Default value</a></td>
+    <td>An object containing allowed tags and attributes. Those not explicitly allowed will be removed by <a href="/getting-started/javascript#sanitizer">the content sanitizer</a>. <Callout type="warning"><strong>Exercise caution when adding to this list.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information.</Callout></td>
     </tr>
     <tr>
     <td><code>animation</code></td>
@@ -175,19 +175,19 @@ const popover = new bootstrap.Popover(exampleEl, options)
     <td><code>sanitize</code></td>
     <td>boolean</td>
     <td><code>true</code></td>
-    <td>Enable <a href="[[docsref:/getting-started/javascript#sanitizer]]">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized. <Callout type="warning"><strong>Exercise caution when disabling content sanitization.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information. Vulnerabilities caused solely by disabling content sanitization are not considered within scope for Bootstrap’s security model.</Callout></td>
+    <td>Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized. <Callout type="warning"><strong>Exercise caution when disabling content sanitization.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information. Vulnerabilities caused solely by disabling content sanitization are not considered within scope for Bootstrap’s security model.</Callout></td>
     </tr>
     <tr>
     <td><code>sanitizeFn</code></td>
     <td>null, function</td>
     <td><code>null</code></td>
-    <td>Provide an alternative <a href="[[docsref:/getting-started/javascript#sanitizer]]">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.</td>
+    <td>Provide an alternative <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.</td>
     </tr>
     <tr>
     <td><code>selector</code></td>
     <td>string, false</td>
     <td><code>false</code></td>
-    <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to also apply popovers to dynamically added DOM elements (<code>jQuery.on</code> support). See <a href="[[config:repo]]/issues/4215">this issue</a> and <a href="https://codepen.io/Johann-S/pen/djJYPb">an informative example</a>. <strong>Note</strong>: <code>title</code> attribute must not be used as a selector.</td>
+    <td>If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to also apply popovers to dynamically added DOM elements (<code>jQuery.on</code> support). See <a href="https://github.com/twbs/bootstrap/issues/4215">this issue</a> and <a href="https://codepen.io/Johann-S/pen/djJYPb">an informative example</a>. <strong>Note</strong>: <code>title</code> attribute must not be used as a selector.</td>
     </tr>
     <tr>
     <td><code>template</code></td>

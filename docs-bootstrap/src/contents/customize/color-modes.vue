@@ -53,18 +53,18 @@
     </ul>
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <h3 id="enable-dark-mode">Enable dark mode<a class="anchor-link" href="#enable-dark-mode" aria-label="Link to Enable dark mode"></a></h3>
-    <p>Enable the built in dark color mode across your entire project by adding the <code>data-bs-theme=&quot;dark&quot;</code> attribute to the <code>&lt;html&gt;</code> element. This will apply the dark color mode to all components and elements, other than those with a specific <code>data-bs-theme</code> attribute applied. Building on the <a href="[[docsref:/getting-started/introduction#quick-start]]">quick start template</a>:</p>
+    <p>Enable the built in dark color mode across your entire project by adding the <code>data-bs-theme=&quot;dark&quot;</code> attribute to the <code>&lt;html&gt;</code> element. This will apply the dark color mode to all components and elements, other than those with a specific <code>data-bs-theme</code> attribute applied. Building on the <a href="/getting-started/introduction#quick-start">quick start template</a>:</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot; data-bs-theme=&quot;dark&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
     &lt;title&gt;Bootstrap demo&lt;/title&gt;
-    &lt;link href=&quot;[[config:cdn.css]]&quot; rel=&quot;stylesheet&quot; integrity=&quot;[[config:cdn.css_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB&quot; crossorigin=&quot;anonymous&quot;&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src=&quot;[[config:cdn.js_bundle]]&quot; integrity=&quot;[[config:cdn.js_bundle_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
     </code></pre>
@@ -217,7 +217,7 @@
   })
 })()" lang="javascript" />
     <h2 id="adding-theme-colors">Adding theme colors<a class="anchor-link" href="#adding-theme-colors" aria-label="Link to Adding theme colors"></a></h2>
-    <p>Adding a new color in <code>$theme-colors</code> is not enough for some of our components like <a href="[[docsref:/components/alerts]]">alerts</a> and <a href="[[docsref:/components/list-group]]">list groups</a>. New colors must also be defined in <code>$theme-colors-text</code>, <code>$theme-colors-bg-subtle</code>, and <code>$theme-colors-border-subtle</code> for light theme; but also in <code>$theme-colors-text-dark</code>, <code>$theme-colors-bg-subtle-dark</code>, and <code>$theme-colors-border-subtle-dark</code> for dark theme.</p>
+    <p>Adding a new color in <code>$theme-colors</code> is not enough for some of our components like <a href="/components/alerts">alerts</a> and <a href="/components/list-group">list groups</a>. New colors must also be defined in <code>$theme-colors-text</code>, <code>$theme-colors-bg-subtle</code>, and <code>$theme-colors-border-subtle</code> for light theme; but also in <code>$theme-colors-text-dark</code>, <code>$theme-colors-bg-subtle-dark</code>, and <code>$theme-colors-border-subtle-dark</code> for dark theme.</p>
     <p>This is a manual process because Sass cannot generate its own Sass variables from an existing variable or map. In future versions of Bootstrap, we&#39;ll revisit this setup to reduce the duplication.</p>
     <pre><code class="language-scss">// Required
 @import &quot;functions&quot;;

@@ -33,7 +33,7 @@
           <span class="visually-hidden">New alerts</span>
         </span>
       </button>' /><h2 id="background-colors">Background colors<a class="anchor-link" href="#background-colors" aria-label="Link to Background colors"></a></h2>
-    <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="[[docsref:helpers/color-background]]">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="[[docsref:/utilities/colors]]"><code>.text-{color}</code></a> and <a href="[[docsref:/utilities/background]]"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
+    <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
     
     <Example :code='data["theme-colors"].map((themeColor) => `<span class="badge text-bg-${themeColor.name}">${themeColor.name}</span>`).join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="pill-badges">Pill badges<a class="anchor-link" href="#pill-badges" aria-label="Link to Pill badges"></a></h2>
     

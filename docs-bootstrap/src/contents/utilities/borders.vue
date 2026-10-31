@@ -89,7 +89,7 @@
     <p>Color mode adaptive border colors are also available as a Sass map:</p>
     <ScssDocs name="theme-border-subtle-map" file="scss/_maps.scss" /><ScssDocs name="theme-border-subtle-dark-map" file="scss/_maps.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <ScssDocs name="border-radius-mixins" file="scss/mixins/_border-radius.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Border utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <p>Border utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
   </article>
 </template>

@@ -90,7 +90,7 @@
           <li class="page-item"><a class="page-link" href="#">3</a></li>
         </ul>
       </nav>' /><h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
-    <p>Change the alignment of pagination components with <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>. For example, with <code>.justify-content-center</code>:</p>
+    <p>Change the alignment of pagination components with <a href="/utilities/flex">flexbox utilities</a>. For example, with <code>.justify-content-center</code>:</p>
     <Example code='<nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">

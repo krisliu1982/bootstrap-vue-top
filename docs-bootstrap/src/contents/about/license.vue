@@ -29,6 +29,6 @@
     <li>Include the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it</li>
     <li>Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)</li>
     </ul>
-    <p>The full Bootstrap license is located <a href="[[config:repo]]/blob/v[[config:current_version]]/LICENSE">in the project repository</a> for more information.</p>
+    <p>The full Bootstrap license is located <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/LICENSE">in the project repository</a> for more information.</p>
   </article>
 </template>

@@ -5,16 +5,16 @@
     <p>Help develop Bootstrap with our documentation build scripts and tests.</p>
 
     <h2 id="tooling-setup">Tooling setup<a class="anchor-link" href="#tooling-setup" aria-label="Link to Tooling setup"></a></h2>
-    <p>Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> to build the documentation and compile source files. Our <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> houses these scripts for compiling code, running tests, and more. These aren’t intended for use outside our repository and documentation.</p>
+    <p>Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> to build the documentation and compile source files. Our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> houses these scripts for compiling code, running tests, and more. These aren’t intended for use outside our repository and documentation.</p>
     <p>To use our build system and run our documentation locally, you’ll need a copy of Bootstrap’s source files and Node. Follow these steps and you should be ready to rock:</p>
     <ol>
     <li><a href="https://nodejs.org/en/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
-    <li>Either <a href="[[config:download.source]]">download Bootstrap’s sources</a> or fork and clone <a href="[[config:repo]]">Bootstrap’s repository</a>.</li>
-    <li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a>.</li>
+    <li>Either <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip">download Bootstrap’s sources</a> or fork and clone <a href="https://github.com/twbs/bootstrap">Bootstrap’s repository</a>.</li>
+    <li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a>.</li>
     </ol>
     <p>When completed, you’ll be able to run the various commands provided from the command line.</p>
     <h2 id="using-npm-scripts">Using npm scripts<a class="anchor-link" href="#using-npm-scripts" aria-label="Link to Using npm scripts"></a></h2>
-    <p>Our <a href="[[config:repo]]/blob/v[[config:current_version]]/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
+    <p>Our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal. <strong>Primary tasks include:</strong></p>
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -44,7 +44,7 @@
     <p>Dart Sass uses a rounding precision of 10 and for efficiency reasons does not allow adjustment of this value. We don’t lower this precision during further processing of our generated CSS, such as during minification, but if you chose to do so we recommend maintaining a precision of at least 6 to prevent issues with browser rounding.</p>
     <h2 id="autoprefixer">Autoprefixer<a class="anchor-link" href="#autoprefixer" aria-label="Link to Autoprefixer"></a></h2>
     <p>Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.</p>
-    <p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="[[config:repo]]/blob/v[[config:current_version]]/.browserslistrc">.browserslistrc</a> for details.</p>
+    <p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.browserslistrc">.browserslistrc</a> for details.</p>
     <h2 id="rtlcss">RTLCSS<a class="anchor-link" href="#rtlcss" aria-label="Link to RTLCSS"></a></h2>
     <p>Bootstrap uses <a href="https://rtlcss.com/">RTLCSS</a> to process compiled CSS and convert them to RTL – basically replacing horizontal direction aware properties (e.g. <code>padding-left</code>) with their opposite. It allows us only write our CSS a single time and make minor tweaks using RTLCSS <a href="https://rtlcss.com/learn/usage-guide/control-directives/">control</a> and <a href="https://rtlcss.com/learn/usage-guide/value-directives/">value</a> directives.</p>
     <h2 id="local-documentation">Local documentation<a class="anchor-link" href="#local-documentation" aria-label="Link to Local documentation"></a></h2>

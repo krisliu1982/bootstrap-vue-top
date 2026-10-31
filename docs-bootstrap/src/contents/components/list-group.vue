@@ -105,7 +105,7 @@
         ...data["theme-colors"].map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
         `</div>`
       ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
-    <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="[[docsref:/utilities/flex]]">utilities</a>.</p>
+    <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="/utilities/flex">utilities</a>.</p>
     <Example code='<ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           A list item
@@ -120,7 +120,7 @@
           <span class="badge text-bg-primary rounded-pill">1</span>
         </li>
       </ul>' /><h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
-    <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>.</p>
+    <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="/utilities/flex">flexbox utilities</a>.</p>
     <Example code='<div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
           <div class="d-flex w-100 justify-content-between">

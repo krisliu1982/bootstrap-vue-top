@@ -12,7 +12,7 @@
               <strong>{{member.name}}</strong> @{{member.user}}
             </span>
           </a>
-    </div><p>Get involved with Bootstrap development by <a href="[[config:repo]]/issues/new/choose">opening an issue</a> or submitting a pull request. Read our <a href="[[config:repo]]/blob/v[[config:current_version]]/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.</p>
+    </div><p>Get involved with Bootstrap development by <a href="https://github.com/twbs/bootstrap/issues/new/choose">opening an issue</a> or submitting a pull request. Read our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.</p>
   </article>
 </template>
 

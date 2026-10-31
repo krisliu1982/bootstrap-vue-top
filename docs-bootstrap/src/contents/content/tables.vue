@@ -170,7 +170,7 @@
     <ScssDocs name="table-variant" file="scss/mixins/_table-variants.scss" /><h2 id="table-borders">Table borders<a class="anchor-link" href="#table-borders" aria-label="Link to Table borders"></a></h2>
     <h3 id="bordered-tables">Bordered tables<a class="anchor-link" href="#bordered-tables" aria-label="Link to Bordered tables"></a></h3>
     <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
-    <Table class="table table-bordered" /><p><a href="[[docsref:/utilities/borders#border-color]]">Border color utilities</a> can be added to change colors:</p>
+    <Table class="table table-bordered" /><p><a href="/utilities/borders#border-color">Border color utilities</a> can be added to change colors:</p>
     <Table class="table table-bordered border-primary" /><h3 id="tables-without-borders">Tables without borders<a class="anchor-link" href="#tables-without-borders" aria-label="Link to Tables without borders"></a></h3>
     <p>Add <code>.table-borderless</code> for a table without borders.</p>
     <Table class="table table-borderless" /><Table class="table table-dark table-borderless" /><h2 id="small-tables">Small tables<a class="anchor-link" href="#small-tables" aria-label="Link to Small tables"></a></h2>
@@ -207,7 +207,7 @@
           </tr>
         </tbody>
       </table>' /><h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
-    <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="[[docsref:/utilities/vertical-align]]">vertical align</a> classes to re-align where needed.</p>
+    <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="/utilities/vertical-align">vertical align</a> classes to re-align where needed.</p>
     <Example :showMarkup="false" code='<div class="table-responsive">
       <table class="table align-middle">
         <thead>

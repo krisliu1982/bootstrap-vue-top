@@ -7,7 +7,7 @@
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Change the value of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display</code> property</a> with our responsive display utility classes. We purposely support only a subset of all possible values for <code>display</code>. Classes can be combined for various effects as you need.</p>
     <h2 id="notation">Notation<a class="anchor-link" href="#notation" aria-label="Link to Notation"></a></h2>
-    <p>Display utility classes that apply to all <a href="[[docsref:/layout/breakpoints]]">breakpoints</a>, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0;</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+    <p>Display utility classes that apply to all <a href="/layout/breakpoints">breakpoints</a>, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0;</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
     <p>As such, the classes are named using the format:</p>
     <ul>
     <li><code>.d-{value}</code> for <code>xs</code></li>
@@ -121,7 +121,7 @@
     <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
     <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Display utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
+    <p>Display utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-display" file="scss/_utilities.scss" />
   </article>
 </template>

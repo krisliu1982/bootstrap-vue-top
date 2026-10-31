@@ -5,7 +5,7 @@
     <p>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>The accordion uses <a href="[[docsref:/components/collapse]]">collapse</a> internally to make it collapsible.</p>
+    <p>The accordion uses <a href="/components/collapse">collapse</a> internally to make it collapsible.</p>
     <Callout name="info-prefersreducedmotion" /><h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Click the accordions below to expand/collapse the accordion content.</p>
     <p>To render an accordion that’s expanded by default:</p>
@@ -123,7 +123,7 @@
           </div>
         </div>
       </div>' /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
-    <p>Please read the <a href="[[docsref:/components/collapse#accessibility]]">collapse accessibility section</a> for more information.</p>
+    <p>Please read the <a href="/components/collapse#accessibility">collapse accessibility section</a> for more information.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, accordions now use local CSS variables on <code>.accordion</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>

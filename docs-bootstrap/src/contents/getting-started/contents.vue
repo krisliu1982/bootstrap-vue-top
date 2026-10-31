@@ -78,10 +78,10 @@
     </tr>
     <tr>
     <td><code>bootstrap-grid.css</code><br/> <code>bootstrap-grid.rtl.css</code><br/> <code>bootstrap-grid.min.css</code><br/> <code>bootstrap-grid.rtl.min.css</code></td>
-    <td><a href="[[docsref:/layout/grid]]">Only grid system</a></td>
+    <td><a href="/layout/grid">Only grid system</a></td>
     <td>—</td>
     <td>—</td>
-    <td><a href="[[docsref:/utilities/flex]]">Only flex utilities</a></td>
+    <td><a href="/utilities/flex">Only flex utilities</a></td>
     </tr>
     <tr>
     <td><code>bootstrap-utilities.css</code><br/> <code>bootstrap-utilities.rtl.css</code><br/> <code>bootstrap-utilities.min.css</code><br/> <code>bootstrap-utilities.rtl.min.css</code></td>
@@ -93,7 +93,7 @@
     <tr>
     <td><code>bootstrap-reboot.css</code><br/> <code>bootstrap-reboot.rtl.css</code><br/> <code>bootstrap-reboot.min.css</code><br/> <code>bootstrap-reboot.rtl.min.css</code></td>
     <td>—</td>
-    <td><a href="[[docsref:/content/reboot]]">Only Reboot</a></td>
+    <td><a href="/content/reboot">Only Reboot</a></td>
     <td>—</td>
     <td>—</td>
     </tr>
@@ -126,7 +126,7 @@
 ├── site/
 │   └──content/
 │      └── docs/
-│          └── [[config:docs_version]]/
+│          └── 5.3/
 │              └── examples/
 ├── js/
 └── scss/

@@ -17,7 +17,7 @@
     <Example code='<div class="d-flex" style="height: 200px;">
         <div class="vr"></div>
       </div>' /><h2 id="with-stacks">With stacks<a class="anchor-link" href="#with-stacks" aria-label="Link to With stacks"></a></h2>
-    <p>They can also be used in <a href="[[docsref:/helpers/stacks]]">stacks</a>:</p>
+    <p>They can also be used in <a href="/helpers/stacks">stacks</a>:</p>
     <Example class="docs-example-flex" code='<div class="hstack gap-3">
         <div class="p-2">First item</div>
         <div class="p-2 ms-auto">Second item</div>

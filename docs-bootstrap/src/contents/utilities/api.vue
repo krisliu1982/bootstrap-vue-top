@@ -68,7 +68,7 @@
     <td><code>rfs</code></td>
     <td>Optional</td>
     <td><code>false</code></td>
-    <td>Boolean to enable <a href="[[docsref:/getting-started/rfs]]">fluid rescaling with RFS</a>.</td>
+    <td>Boolean to enable <a href="/getting-started/rfs">fluid rescaling with RFS</a>.</td>
     </tr>
     <tr>
     <td><a href="#print"><code>print</code></a></td>
@@ -121,10 +121,10 @@
     </code></pre>
     <h3 id="values">Values<a class="anchor-link" href="#values" aria-label="Link to Values"></a></h3>
     <p>Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map (set in the utilities or in a Sass variable).</p>
-    <p>As a list, like with <a href="[[docsref:/utilities/text#text-decoration]]"><code>text-decoration</code> utilities</a>:</p>
+    <p>As a list, like with <a href="/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:</p>
     <pre><code class="language-scss">values: none underline line-through
     </code></pre>
-    <p>As a map, like with <a href="[[docsref:/utilities/opacity]]"><code>opacity</code> utilities</a>:</p>
+    <p>As a map, like with <a href="/utilities/opacity"><code>opacity</code> utilities</a>:</p>
     <pre><code class="language-scss">values: (
   0: 0,
   25: .25,
@@ -133,7 +133,7 @@
   100: 1,
 )
     </code></pre>
-    <p>As a Sass variable that sets the list or map, as in our <a href="[[docsref:/utilities/position]]"><code>position</code> utilities</a>:</p>
+    <p>As a Sass variable that sets the list or map, as in our <a href="/utilities/position"><code>position</code> utilities</a>:</p>
     <pre><code class="language-scss">values: $position-values
     </code></pre>
     <h3 id="class">Class<a class="anchor-link" href="#class" aria-label="Link to Class"></a></h3>
@@ -248,7 +248,7 @@
 .opacity-100-hover:hover { opacity: 1 !important; }
     </code></pre>
     <h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
-    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="[[docsref:/layout/breakpoints]]">all breakpoints</a>.</p>
+    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/layout/breakpoints">all breakpoints</a>.</p>
     <pre><code class="language-scss">$utilities: (
   &quot;opacity&quot;: (
     property: opacity,

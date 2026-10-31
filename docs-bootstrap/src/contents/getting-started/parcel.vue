@@ -91,7 +91,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss
     <pre><code class="language-scss">// Import all of Bootstrap’s CSS
 @import &quot;bootstrap/scss/bootstrap&quot;;
     </code></pre>
-    <p><em>You can also import our stylesheets individually if you want. <a href="[[docsref:/customize/sass#importing]]">Read our Sass import docs</a> for details.</em></p>
+    <p><em>You can also import our stylesheets individually if you want. <a href="/customize/sass#importing">Read our Sass import docs</a> for details.</em></p>
     <p><strong>Optional:</strong> You may see Sass deprecation warnings with the latest versions of Dart Sass. These can silenced by adding the following configuration in a <code>.sassrc.js</code> file in the root folder with the following:</p>
     <pre><code class="language-js">module.exports = {
   silenceDeprecations: [&#39;import&#39;, &#39;mixed-decls&#39;, &#39;color-functions&#39;, &#39;global-builtin&#39;]
@@ -108,7 +108,7 @@ import * as bootstrap from &#39;bootstrap&#39;
 // or, specify which plugins you need:
 import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     </code></pre>
-    <p><em><a href="[[docsref:/getting-started/javascript/]]">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
+    <p><em><a href="/getting-started/javascript/">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
     </li>
     <li><p><strong>And you’re done! 🎉</strong> With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:</p>
     <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Bootstrap" /><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/parcel">check out the complete Parcel example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>

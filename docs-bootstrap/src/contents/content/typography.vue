@@ -5,9 +5,9 @@
     <p>Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
 
     <h2 id="global-settings">Global settings<a class="anchor-link" href="#global-settings" aria-label="Link to Global settings"></a></h2>
-    <p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the <a href="[[docsref:/utilities/text]]">textual utility classes</a>.</p>
+    <p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the <a href="/utilities/text">textual utility classes</a>.</p>
     <ul>
-    <li>Use a <a href="[[docsref:/content/reboot#native-font-stack]]">native font stack</a> that selects the best <code>font-family</code> for each OS and device.</li>
+    <li>Use a <a href="/content/reboot#native-font-stack">native font stack</a> that selects the best <code>font-family</code> for each OS and device.</li>
     <li>For a more inclusive and accessible type scale, we use the browser’s default root <code>font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.</li>
     <li>Use the <code>$font-family-base</code>, <code>$font-size-base</code>, and <code>$line-height-base</code> attributes as our typographic base applied to the <code>&lt;body&gt;</code>.</li>
     <li>Set the global link color via <code>$link-color</code>.</li>
@@ -114,7 +114,7 @@
     </ul>
     <p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
     <h2 id="text-utilities">Text utilities<a class="anchor-link" href="#text-utilities" aria-label="Link to Text utilities"></a></h2>
-    <p>Change text alignment, transform, style, weight, line-height, decoration and color with our <a href="[[docsref:/utilities/text]]">text utilities</a> and <a href="[[docsref:/utilities/colors]]">color utilities</a>.</p>
+    <p>Change text alignment, transform, style, weight, line-height, decoration and color with our <a href="/utilities/text">text utilities</a> and <a href="/utilities/colors">color utilities</a>.</p>
     <h2 id="abbreviations">Abbreviations<a class="anchor-link" href="#abbreviations" aria-label="Link to Abbreviations"></a></h2>
     <p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
     <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
@@ -196,12 +196,12 @@
           </dl>
         </dd>
       </dl>' /><h2 id="responsive-font-sizes">Responsive font sizes<a class="anchor-link" href="#responsive-font-sizes" aria-label="Link to Responsive font sizes"></a></h2>
-    <p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally across device and viewport sizes. Have a look at the <a href="[[docsref:/getting-started/rfs]]">RFS page</a> to find out how this works.</p>
+    <p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally across device and viewport sizes. Have a look at the <a href="/getting-started/rfs">RFS page</a> to find out how this works.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Headings have some dedicated variables for sizing and spacing.</p>
-    <ScssDocs name="headings-variables" file="scss/_variables.scss" /><p>Miscellaneous typography elements covered here and in <a href="[[docsref:/content/reboot]]">Reboot</a> also have dedicated variables.</p>
+    <ScssDocs name="headings-variables" file="scss/_variables.scss" /><p>Miscellaneous typography elements covered here and in <a href="/content/reboot">Reboot</a> also have dedicated variables.</p>
     <ScssDocs name="type-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>There are no dedicated mixins for typography, but Bootstrap does use <a href="[[docsref:/getting-started/rfs]]">Responsive Font Sizing (RFS)</a>.</p>
+    <p>There are no dedicated mixins for typography, but Bootstrap does use <a href="/getting-started/rfs">Responsive Font Sizing (RFS)</a>.</p>
   </article>
 </template>

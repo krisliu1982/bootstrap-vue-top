@@ -32,7 +32,7 @@
       </nav>' /><h2 id="available-styles">Available styles<a class="anchor-link" href="#available-styles" aria-label="Link to Available styles"></a></h2>
     <p>Change the style of <code>.nav</code>s component with modifiers and utilities. Mix and match as needed, or build your own.</p>
     <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
-    <p>Change the horizontal alignment of your nav with <a href="[[docsref:/utilities/flex#justify-content]]">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right-aligned.</p>
+    <p>Change the horizontal alignment of your nav with <a href="/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right-aligned.</p>
     <p>Centered with <code>.justify-content-center</code>:</p>
     <Example code='<ul class="nav justify-content-center">
         <li class="nav-item">
@@ -169,7 +169,7 @@
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </nav>' /><h2 id="working-with-flex-utilities">Working with flex utilities<a class="anchor-link" href="#working-with-flex-utilities" aria-label="Link to Working with flex utilities"></a></h2>
-    <p>If you need responsive nav variations, consider using a series of <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
+    <p>If you need responsive nav variations, consider using a series of <a href="/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
     <Example code='<nav class="nav nav-pills flex-column flex-sm-row">
         <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
@@ -179,7 +179,7 @@
     <p>If you’re using navs to provide a navigation bar, be sure to add a <code>role=&quot;navigation&quot;</code> to the most logical parent container of the <code>&lt;ul&gt;</code>, or wrap a <code>&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;</code> itself, as this would prevent it from being announced as an actual list by assistive technologies.</p>
     <p>Note that navigation bars, even if visually styled as tabs with the <code>.nav-tabs</code> class, should <strong>not</strong> be given <code>role=&quot;tablist&quot;</code>, <code>role=&quot;tab&quot;</code> or <code>role=&quot;tabpanel&quot;</code> attributes. These are only appropriate for dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA Authoring Practices Guide tabs pattern</a>. See <a href="#javascript-behavior">JavaScript behavior</a> for dynamic tabbed interfaces in this section for an example. The <code>aria-current</code> attribute is not necessary on dynamic tabbed interfaces since our JavaScript handles the selected state by adding <code>aria-selected=&quot;true&quot;</code> on the active tab.</p>
     <h2 id="using-dropdowns">Using dropdowns<a class="anchor-link" href="#using-dropdowns" aria-label="Link to Using dropdowns"></a></h2>
-    <p>Add dropdown menus with a little extra HTML and the <a href="[[docsref:/components/dropdowns#usage]]">dropdowns JavaScript plugin</a>.</p>
+    <p>Add dropdown menus with a little extra HTML and the <a href="/components/dropdowns#usage">dropdowns JavaScript plugin</a>.</p>
     <h3 id="tabs-with-dropdowns">Tabs with dropdowns<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="Link to Tabs with dropdowns"></a></h3>
     <Example code='<ul class="nav nav-tabs">
         <li class="nav-item">

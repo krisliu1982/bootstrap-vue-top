@@ -27,24 +27,24 @@
     &lt;meta charset="utf-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
     &lt;title&gt;Bootstrap demo&lt;/title&gt;
-    &lt;link href="[[config:cdn.css]]" rel="stylesheet" integrity="[[config:cdn.css_hash]]" crossorigin="anonymous"&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
-    &lt;script src="[[config:cdn.js_bundle]]" integrity="[[config:cdn.js_bundle_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
     <p>You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
-    <pre><code class="language-html">&lt;script src="[[config:cdn.popper]]" integrity="[[config:cdn.popper_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;script src="[[config:cdn.js]]" integrity="[[config:cdn.js_hash]]" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="[[docsref:/layout/grid]]">layout</a>, adding dozens of <a href="[[docsref:/components/buttons]]">components</a>, and utilizing <a href="[[docsref:/examples]]">our official examples</a>.</p></li></ol>
+    <pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="/layout/grid">layout</a>, adding dozens of <a href="/components/buttons">components</a>, and utilizing <a href="/examples">our official examples</a>.</p></li></ol>
 
     <h2 id="cdn-links">CDN links<a class="anchor-link" href="#cdn-links" aria-label="Link to CDN links"></a></h2>
 
     <p>As reference, here are our primary CDN links.</p>
 
-    <table class="table"><thead><tr><th scope="col">Description</th><th scope="col">URL</th></tr></thead><tbody><tr><td>CSS</td><td><code>[[config:cdn.css]]</code></td></tr><tr><td>JS</td><td><code>[[config:cdn.js_bundle]]</code></td></tr></tbody></table>
+    <table class="table"><thead><tr><th scope="col">Description</th><th scope="col">URL</th></tr></thead><tbody><tr><td>CSS</td><td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css</code></td></tr><tr><td>JS</td><td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js</code></td></tr></tbody></table>
 
-    <p>You can also use the CDN to fetch any of our <a href="[[docsref:/getting-started/contents]]">additional builds listed in the Contents page</a>.</p>
+    <p>You can also use the CDN to fetch any of our <a href="/getting-started/contents">additional builds listed in the Contents page</a>.</p>
 
     <p>When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.</p>
 
@@ -52,7 +52,7 @@
 
     <h2 id="next-steps">Next steps<a class="anchor-link" href="#next-steps" aria-label="Link to Next steps"></a></h2>
 
-    <ul><li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li><li>Read about what’s included in Bootstrap in our <a href="[[docsref:/getting-started/contents/]]">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li><li>Need a little more power? Consider building with Bootstrap by <a href="[[docsref:/getting-started/download#package-managers]]">including the source files via package manager</a>.</li><li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="[[docsref:/getting-started/javascript#using-bootstrap-as-a-module]]">using Bootstrap as a module</a> section.</li></ul>
+    <ul><li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li><li>Read about what’s included in Bootstrap in our <a href="/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li><li>Need a little more power? Consider building with Bootstrap by <a href="/getting-started/download#package-managers">including the source files via package manager</a>.</li><li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a> section.</li></ul>
 
     <h2 id="js-components">JS components<a class="anchor-link" href="#js-components" aria-label="Link to JS components"></a></h2>
 
@@ -97,14 +97,14 @@ box-sizing: content-box;
 
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
-    <p>For improved cross-browser rendering, we use <a href="[[docsref:/content/reboot]]">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+    <p>For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
 
     <h2 id="community">Community<a class="anchor-link" href="#community" aria-label="Link to Community"></a></h2>
 
     <p>Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
 
-    <ul><li>Read and subscribe to <a href="[[config:blog]]">The Official Bootstrap Blog</a>.</li><li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li><li>Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.</li><li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li><li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).</li><li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li></ul>
+    <ul><li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.</li><li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li><li>Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.</li><li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li><li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).</li><li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li></ul>
 
-    <p>You can also follow <a href="https://x.com/[[config:x]]">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>
+    <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>
   </article>
 </template>

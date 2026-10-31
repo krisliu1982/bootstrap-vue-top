@@ -5,7 +5,7 @@
     <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
-    <p>Bootstrap’s form controls expand on <a href="[[docsref:/content/reboot#forms]]">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
+    <p>Bootstrap’s form controls expand on <a href="/content/reboot#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
     <p>Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., <code>email</code> for email address or <code>number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
     <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
     <Example code='<form>
@@ -66,7 +66,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>Many form variables are set at a general level to be re-used and extended by individual form components. You’ll see these most often as <code>$input-btn-*</code> and <code>$input-*</code> variables.</p>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p><code>$input-btn-*</code> variables are shared global variables between our <a href="[[docsref:/components/buttons]]">buttons</a> and our form components. You’ll find these frequently reassigned as values to other component-specific variables.</p>
+    <p><code>$input-btn-*</code> variables are shared global variables between our <a href="/components/buttons">buttons</a> and our form components. You’ll find these frequently reassigned as values to other component-specific variables.</p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
   </article>
 </template>

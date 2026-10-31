@@ -56,7 +56,7 @@
     </tbody></table>
     </div><p>Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.</p>
     <p>These breakpoints are customizable via Sass—you’ll find them in a Sass map in our <code>_variables.scss</code> stylesheet.</p>
-    <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="[[docsref:/layout/grid#css]]">the CSS section of the Grid documentation</a>.</p>
+    <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/layout/grid#css">the CSS section of the Grid documentation</a>.</p>
     <h2 id="media-queries">Media queries<a class="anchor-link" href="#media-queries" aria-label="Link to Media queries"></a></h2>
     <p>Since Bootstrap is developed to be mobile first, we use a handful of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a> to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
     <h3 id="min-width">Min-width<a class="anchor-link" href="#min-width" aria-label="Link to Min-width"></a></h3>

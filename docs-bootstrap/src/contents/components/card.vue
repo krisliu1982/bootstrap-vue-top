@@ -7,7 +7,7 @@
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="[[docsref:/utilities/spacing]]">spacing utilities</a> as needed.</p>
+    <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as needed.</p>
     <p>Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various <a href="#sizing">sizing options</a>.</p>
     <Example code='<div class="card" style="width: 18rem;">
         <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
@@ -154,7 +154,7 @@
           </div>
         </div>
       </div>' /><h3 id="using-utilities">Using utilities<a class="anchor-link" href="#using-utilities" aria-label="Link to Using utilities"></a></h3>
-    <p>Use our handful of <a href="[[docsref:/utilities/sizing]]">available sizing utilities</a> to quickly set a card’s width.</p>
+    <p>Use our handful of <a href="/utilities/sizing">available sizing utilities</a> to quickly set a card’s width.</p>
     <Example code='<div class="card w-75 mb-3">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -178,7 +178,7 @@
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>' /><h2 id="text-alignment">Text alignment<a class="anchor-link" href="#text-alignment" aria-label="Link to Text alignment"></a></h2>
-    <p>You can quickly change the text alignment of any card—in its entirety or specific parts—with our <a href="[[docsref:/utilities/text#text-alignment]]">text align classes</a>.</p>
+    <p>You can quickly change the text alignment of any card—in its entirety or specific parts—with our <a href="/utilities/text#text-alignment">text align classes</a>.</p>
     <Example code='<div class="card mb-3" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Special title treatment</h5>
@@ -202,7 +202,7 @@
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>' /><h2 id="navigation">Navigation<a class="anchor-link" href="#navigation" aria-label="Link to Navigation"></a></h2>
-    <p>Add some navigation to a card’s header (or block) with Bootstrap’s <a href="[[docsref:/components/navs-tabs]]">nav components</a>.</p>
+    <p>Add some navigation to a card’s header (or block) with Bootstrap’s <a href="/components/navs-tabs">nav components</a>.</p>
     <Example code='<div class="card text-center">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
@@ -289,7 +289,7 @@
       </div>' /><h2 id="card-styles">Card styles<a class="anchor-link" href="#card-styles" aria-label="Link to Card styles"></a></h2>
     <p>Cards include various options for customizing their backgrounds, borders, and color.</p>
     <h3 id="background-and-color">Background and color<a class="anchor-link" href="#background-and-color" aria-label="Link to Background and color"></a></h3>
-    <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="[[docsref:helpers/color-background]]">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="[[docsref:/utilities/colors]]"><code>.text-{color}</code></a> and <a href="[[docsref:/utilities/background]]"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
+    <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="card text-bg-${themeColor.name} mb-3" style="max-width: 18rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
@@ -297,7 +297,7 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         </div>
       </div>`).join("\n")' /><Callout name="warning-color-assistive-technologies" /><h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
-    <p>Use <a href="[[docsref:/utilities/borders]]">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.</p>
+    <p>Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="card border-${themeColor.name} mb-3" style="max-width: 18rem;">
         <div class="card-header">Header</div>
         <div class="card-body${themeColor.contrast_color ? "" : " text-" + themeColor.name}">
@@ -375,7 +375,7 @@
           </div>
         </div>
       </div>' /><h3 id="grid-cards">Grid cards<a class="anchor-link" href="#grid-cards" aria-label="Link to Grid cards"></a></h3>
-    <p>Use the Bootstrap grid system and its <a href="[[docsref:/layout/grid#row-columns]]"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium breakpoint up.</p>
+    <p>Use the Bootstrap grid system and its <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium breakpoint up.</p>
     <Example code='<div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
@@ -528,7 +528,7 @@
           </div>
         </div>
       </div>' /><h3 id="masonry">Masonry<a class="anchor-link" href="#masonry" aria-label="Link to Masonry"></a></h3>
-    <p>In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots of unpleasant <a href="https://github.com/twbs/bootstrap/pull/28922">side effects</a>. If you want to have this type of layout in <code>v5</code>, you can just make use of Masonry plugin. <strong>Masonry is not included in Bootstrap</strong>, but we’ve made a <a href="[[docsref:/examples/masonry]]">demo example</a> to help you get started.</p>
+    <p>In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots of unpleasant <a href="https://github.com/twbs/bootstrap/pull/28922">side effects</a>. If you want to have this type of layout in <code>v5</code>, you can just make use of Masonry plugin. <strong>Masonry is not included in Bootstrap</strong>, but we’ve made a <a href="/examples/masonry">demo example</a> to help you get started.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, cards now use local CSS variables on <code>.card</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>

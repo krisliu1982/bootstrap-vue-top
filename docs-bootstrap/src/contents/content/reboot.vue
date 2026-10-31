@@ -14,7 +14,7 @@
     <li>Keep declarations of <code>font</code>-related properties to a minimum, using <code>inherit</code> whenever possible.</li>
     </ul>
     <h2 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h2>
-    <AddedIn version="5.2.0"/><p>With v5.1.1, we standardized our required <code>@import</code>s across all our CSS bundles (including <code>bootstrap.css</code>, <code>bootstrap-reboot.css</code>, and <code>bootstrap-grid.css</code>) to include <code>_root.scss</code>. This adds <code>:root</code> level CSS variables to all bundles, regardless of how many of them are used in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="[[docsref:/customize/css-variables]]">CSS variables</a> added over time, in order to provide more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way, even if you don’t use CSS variables, you still have all the power of Sass. <strong>This is still in-progress and will take time to fully implement.</strong></p>
+    <AddedIn version="5.2.0"/><p>With v5.1.1, we standardized our required <code>@import</code>s across all our CSS bundles (including <code>bootstrap.css</code>, <code>bootstrap-reboot.css</code>, and <code>bootstrap-grid.css</code>) to include <code>_root.scss</code>. This adds <code>:root</code> level CSS variables to all bundles, regardless of how many of them are used in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="/customize/css-variables">CSS variables</a> added over time, in order to provide more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way, even if you don’t use CSS variables, you still have all the power of Sass. <strong>This is still in-progress and will take time to fully implement.</strong></p>
     <p>For example, consider these <code>:root</code> CSS variables for common <code>&lt;body&gt;</code> styles:</p>
     <ScssDocs name="root-body-variables" file="scss/_root.scss" /><p>In practice, those variables are then applied in Reboot like so:</p>
     <ScssDocs name="reboot-body-rules" file="scss/_reboot.scss" /><p>Which allows you to make real-time customizations however you like:</p>
@@ -144,7 +144,7 @@ sans-serif,
     To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>' /><h2 id="sample-output">Sample output<a class="anchor-link" href="#sample-output" aria-label="Link to Sample output"></a></h2>
     <p>For indicating sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
     <Example code='<samp>This text is meant to be treated as sample output from a computer program.</samp>' /><h2 id="tables">Tables<a class="anchor-link" href="#tables" aria-label="Link to Tables"></a></h2>
-    <p>Tables are slightly adjusted to style <code>&lt;caption&gt;</code>s, collapse borders, and ensure consistent <code>text-align</code> throughout. Additional changes for borders, padding, and more come with <a href="[[docsref:/content/tables]]">the <code>.table</code> class</a>.</p>
+    <p>Tables are slightly adjusted to style <code>&lt;caption&gt;</code>s, collapse borders, and ensure consistent <code>text-align</code> throughout. Additional changes for borders, padding, and more come with <a href="/content/tables">the <code>.table</code> class</a>.</p>
     <Example code='<table>
         <caption>
           This is an example table, and this is its caption to describe the contents.
@@ -352,6 +352,6 @@ sans-serif,
     </code></pre>
     <Callout>
     <p>Since <code>[hidden]</code> is not compatible with jQuery’s <code>$(...).hide()</code> and <code>$(...).show()</code> methods, we don’t specifically endorse <code>[hidden]</code> over other techniques for managing the <code>display</code> of elements.</p>
-    </Callout><p>To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use <a href="[[docsref:/utilities/visibility]]">the <code>.invisible</code> class</a> instead.</p>
+    </Callout><p>To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use <a href="/utilities/visibility">the <code>.invisible</code> class</a> instead.</p>
   </article>
 </template>

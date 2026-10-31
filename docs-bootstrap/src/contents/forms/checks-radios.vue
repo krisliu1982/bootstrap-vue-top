@@ -169,7 +169,7 @@
         <input class="form-check-input" type="checkbox" id="switchCheckReverse">
         <label class="form-check-label" for="switchCheckReverse">Reverse switch checkbox input</label>
       </div>' /><h2 id="without-labels">Without labels<a class="anchor-link" href="#without-labels" aria-label="Link to Without labels"></a></h2>
-    <p>Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <code>aria-label</code>). See the <a href="[[docsref:/forms/overview/#accessibility]]">forms overview accessibility</a> section for details.</p>
+    <p>Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for details.</p>
     <Example code='<div>
         <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
       </div>
@@ -177,7 +177,7 @@
       <div>
         <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
       </div>' /><h2 id="toggle-buttons">Toggle buttons<a class="anchor-link" href="#toggle-buttons" aria-label="Link to Toggle buttons"></a></h2>
-    <p>Create button-like checkboxes and radio buttons by using <code>.btn</code> styles rather than <code>.form-check-label</code> on the <code>&lt;label&gt;</code> elements. These toggle buttons can further be grouped in a <a href="[[docsref:/components/button-group]]">button group</a> if needed.</p>
+    <p>Create button-like checkboxes and radio buttons by using <code>.btn</code> styles rather than <code>.form-check-label</code> on the <code>&lt;label&gt;</code> elements. These toggle buttons can further be grouped in a <a href="/components/button-group">button group</a> if needed.</p>
     <h3 id="checkbox-toggle-buttons">Checkbox toggle buttons<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="Link to Checkbox toggle buttons"></a></h3>
     <Example code='<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
     <label class="btn btn-primary" for="btn-check">Single toggle</label>
@@ -194,7 +194,7 @@
 
     <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off" disabled>
     <label class="btn" for="btn-check-6">Disabled</label>' /><Callout>
-    <p>Visually, these checkbox toggle buttons are identical to the <a href="[[docsref:/components/buttons#button-plugin]]">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle buttons will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.</p>
+    <p>Visually, these checkbox toggle buttons are identical to the <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle buttons will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.</p>
     </Callout><h3 id="radio-toggle-buttons">Radio toggle buttons<a class="anchor-link" href="#radio-toggle-buttons" aria-label="Link to Radio toggle buttons"></a></h3>
     <Example code='<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
     <label class="btn btn-secondary" for="option1">Checked</label>

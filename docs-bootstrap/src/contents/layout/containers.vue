@@ -13,7 +13,7 @@
     <li><code>.container-fluid</code>, which is <code>width: 100%</code> at all breakpoints</li>
     </ul>
     <p>The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each breakpoint.</p>
-    <p>See them in action and compare them in our <a href="[[docsref:/examples/grid/#containers]]">Grid example</a>.</p>
+    <p>See them in action and compare them in our <a href="/examples/grid/#containers">Grid example</a>.</p>
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -113,7 +113,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by modifying the Sass map (found in <code>_variables.scss</code>) that powers them:</p>
-    <ScssDocs name="container-max-widths" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="[[docsref:/layout/grid#css]]">the Sass section of the Grid documentation</a>.</p>
+    <ScssDocs name="container-max-widths" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/layout/grid#css">the Sass section of the Grid documentation</a>.</p>
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>In addition to customizing the Sass, you can also create your own containers with our Sass mixin.</p>
     <pre><code class="language-scss">// Source mixin

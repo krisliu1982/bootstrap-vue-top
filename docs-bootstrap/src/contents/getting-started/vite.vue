@@ -77,7 +77,7 @@ export default {
   },
 }
     </code></pre>
-    <p><strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or usage of Bootstrap. We’re <a href="[[config:repo]]/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be ignored.</p>
+    <p><strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or usage of Bootstrap. We’re <a href="https://github.com/twbs/bootstrap/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be ignored.</p>
     </li>
     <li><p><strong>Next we fill in <code>src/index.html</code>.</strong> This is the HTML page Vite will load in the browser to utilize the bundled CSS and JS we&#39;ll add to it in later steps.</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
@@ -121,7 +121,7 @@ export default {
     <pre><code class="language-scss">// Import all of Bootstrap’s CSS
 @import &quot;bootstrap/scss/bootstrap&quot;;
     </code></pre>
-    <p><em>You can also import our stylesheets individually if you want. <a href="[[docsref:/customize/sass#importing]]">Read our Sass import docs</a> for details.</em></p>
+    <p><em>You can also import our stylesheets individually if you want. <a href="/customize/sass#importing">Read our Sass import docs</a> for details.</em></p>
     </li>
     <li><p><strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
     <pre><code class="language-js">// Import our custom CSS
@@ -136,7 +136,7 @@ import * as bootstrap from &#39;bootstrap&#39;
 // or, specify which plugins you need:
 import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
     </code></pre>
-    <p><em><a href="[[docsref:/getting-started/javascript/]]">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
+    <p><em><a href="/getting-started/javascript/">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
     </li>
     <li><p><strong>And you’re done! 🎉</strong> With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:</p>
     <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Bootstrap" /><p>Now you can start adding any Bootstrap components you want to use. Be sure to <a href="https://github.com/twbs/examples/tree/main/vite">check out the complete Vite example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.</p>

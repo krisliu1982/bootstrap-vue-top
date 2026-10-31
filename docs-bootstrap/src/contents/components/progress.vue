@@ -5,7 +5,7 @@
     <p>Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</p>
 
     <Callout>
-    <p><strong>New markup in v5.3.0 —</strong> We’ve deprecated the previous HTML structure for progress bars and replaced it with a more accessible one. The previous structure will continue to work until v6. <a href="[[docsref:/migration#improved-markup-for-progress-bars]]">See what’s changed in our migration guide.</a></p>
+    <p><strong>New markup in v5.3.0 —</strong> We’ve deprecated the previous HTML structure for progress bars and replaced it with a more accessible one. The previous structure will continue to work until v6. <a href="/migration#improved-markup-for-progress-bars">See what’s changed in our migration guide.</a></p>
     </Callout><h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code>&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.</p>
     <ul>
@@ -32,7 +32,7 @@
         <div class="progress-bar" style="width: 100%"></div>
       </div>' /><h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
-    <p>Bootstrap provides a handful of <a href="[[docsref:/utilities/sizing]]">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the <code>.progress-bar</code>.</p>
+    <p>Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the <code>.progress-bar</code>.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar w-75"></div>
       </div>' /><h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
@@ -47,7 +47,7 @@
     <Example code='<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar" style="width: 25%">25%</div>
       </div>' /><h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
-    <p>Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the <a href="[[docsref:/utilities/overflow]]">overflow utilities</a>.</p>
+    <p>Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the <a href="/utilities/overflow">overflow utilities</a>.</p>
     <Callout type="warning">
     <p>Labels longer than the progress bar within may not be fully accessible using this method because it relies on the text color having the correct contrast ratio with both the <code>.progress</code> and <code>.progress-bar</code> background colors. Use caution when implementing this example.</p>
     <p>If the text can overlap the progress bar, we often recommend displaying the label outside of the progress bar for better accessibility.</p>
@@ -64,7 +64,7 @@
       </div>
       <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar bg-danger" style="width: 100%"></div>
-      </div>' /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="[[docsref:/utilities/colors#colors]]">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="[[docsref:/helpers/color-background]]">color and background</a> helper classes.</p>
+      </div>' /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="/helpers/color-background">color and background</a> helper classes.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
       </div>

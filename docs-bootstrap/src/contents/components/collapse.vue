@@ -27,7 +27,7 @@
           Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
         </div>
       </div>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
-    <p>The collapse plugin supports horizontal collapsing. Add the <code>.collapse-horizontal</code> modifier class to transition the <code>width</code> instead of <code>height</code> and set a <code>width</code> on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our <a href="[[docsref:/utilities/sizing]]">width utilities</a>.</p>
+    <p>The collapse plugin supports horizontal collapsing. Add the <code>.collapse-horizontal</code> modifier class to transition the <code>width</code> instead of <code>height</code> and set a <code>width</code> on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our <a href="/utilities/sizing">width utilities</a>.</p>
     <Callout>
     <p>Please note that while the example below has a <code>min-height</code> set to avoid excessive repaints in our docs, this is not explicitly required. <strong>Only the <code>width</code> on the child element is required.</strong></p>
     </Callout><Example code='<p>
@@ -82,7 +82,7 @@
     <p>These classes can be found in <code>_transitions.scss</code>.</p>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>Just add <code>data-bs-toggle=&quot;collapse&quot;</code> and a <code>data-bs-target</code> to the element to automatically assign control of one or more collapsible elements. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you’d like it to default open, add the additional class <code>show</code>.</p>
-    <p>To add accordion-like group management to a collapsible area, add the data attribute <code>data-bs-parent=&quot;#selector&quot;</code>. Refer to the <a href="[[docsref:/components/accordion]]">accordion page</a> for more information.</p>
+    <p>To add accordion-like group management to a collapsible area, add the data attribute <code>data-bs-parent=&quot;#selector&quot;</code>. Refer to the <a href="/components/accordion">accordion page</a> for more information.</p>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable manually with:</p>
     <pre><code class="language-js">const collapseElementList = document.querySelectorAll(&#39;.collapse&#39;)

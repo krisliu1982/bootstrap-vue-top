@@ -6,7 +6,7 @@
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">an intentional design decision</a>.</p>
-    <p>Dropdowns are built on a third party library, <a href="https://popper.js.org/docs/v2/">Popper</a>, which provides dynamic positioning and viewport detection. Be sure to include <a href="[[config:cdn.popper]]">popper.min.js</a> before Bootstrap’s JavaScript or use <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.</p>
+    <p>Dropdowns are built on a third party library, <a href="https://popper.js.org/docs/v2/">Popper</a>, which provides dynamic positioning and viewport detection. Be sure to include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before Bootstrap’s JavaScript or use <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.</p>
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>The <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a> standard defines an actual <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> widget</a>, but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups, and sub-menus.</p>
     <p>Bootstrap’s dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of the <code>role</code> and <code>aria-</code> attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.</p>
@@ -668,7 +668,7 @@
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#">Separated link</a></li>
       </ul>' /><h3 id="text">Text<a class="anchor-link" href="#text" aria-label="Link to Text"></a></h3>
-    <p>Place any freeform text within a dropdown menu with text and use <a href="[[docsref:/utilities/spacing]]">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
+    <p>Place any freeform text within a dropdown menu with text and use <a href="/utilities/spacing">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
     <Example code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
         <p>
           Some example text that’s free-flowing within the dropdown menu.
@@ -677,7 +677,7 @@
           And this is more example text.
         </p>
       </div>' /><h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
-    <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="[[docsref:/utilities/spacing]]">margin or padding utilities</a> to give it the negative space you require.</p>
+    <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="/utilities/spacing">margin or padding utilities</a> to give it the negative space you require.</p>
     <Example code='<div class="dropdown-menu">
         <form class="px-4 py-3">
           <div class="mb-3">
