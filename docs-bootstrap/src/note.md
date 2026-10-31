@@ -5,9 +5,9 @@ Example
 BsTable
 Code
 Table
-ScssDocs
+ScssDocs T(改用构建时处理)
 Placeholder
-JsDocs
+JsDocs T(改用构建时处理)
 JsDismiss T
 JsDataAttributes T
 GuideFooter T

@@ -1,6 +1,6 @@
 <template>
   <div class="docs-code-snippet docs-example-snippet">
-      <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
+    <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
       <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
         :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
       <div class="ms-auto">
@@ -43,7 +43,32 @@ if (!props.name || !props.file) {
 
 // 构建时：把所有可能被引用的 scss 文件以 raw 字符串形式收集进来
 // eager: true 让它同步可用，直接拿到 string
-const rawFiles = import.meta.glob('@data/scss/_variables.scss', {
+const rawFiles = import.meta.glob(['@data/scss/_variables.scss', 
+'@data/scss/_accordion.scss', 
+'@data/scss/_alert.scss', 
+'@data/scss/mixins/_alert.scss', 
+'@data/scss/_badge.scss', 
+'@data/scss/_breadcrumb.scss', 
+'@data/scss/_buttons.scss', 
+'@data/scss//mixins/_buttons.scss', 
+'@data/scss/_card.scss', 
+'@data/scss/_close.scss', 
+'@data/scss/_transitions.scss', 
+'@data/scss/_dropdown.scss', 
+'@data/scss/mixins/_caret.scss', 
+'@data/scss/_list-group.scss', 
+'@data/scss/_modal.scss', 
+'@data/scss/_navbar.scss', 
+'@data/scss/_nav.scss', 
+'@data/scss/_utilities.scss', 
+'@data/scss/_maps.scss', 
+'@data/scss/mixins/_border-radius.scss', 
+'@data/scss/_root.scss', 
+'@data/scss/_gradients.scss', 
+'@data/scss/helpers/_stacks.scss', 
+'@data/scss/mixins/_clearfix.scss', 
+'@data/scss/forms/_validation.scss', 
+'@data/scss/mixins/_forms'], {
   query: '?raw',
   import: 'default',
   eager: true,
@@ -102,7 +127,7 @@ function extractContent(name, file) {
     if (!matchedKey) {
       throw new Error(
         `Failed to find the content to render in the '<ScssDocs />' component at '${file}'. ` +
-          `Make sure the file is matched by the import.meta.glob pattern.`
+        `Make sure the file is matched by the import.meta.glob pattern.`
       )
     }
     return parseContent(rawFiles[matchedKey], name, file)
