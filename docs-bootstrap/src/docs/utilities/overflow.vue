@@ -43,7 +43,8 @@
         <div><code>.overflow-x-scroll</code> example on an element</div>
         <div> with set width and height dimensions.</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-x-visible&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-x-scroll&quot;&gt;...&lt;/div&gt;
