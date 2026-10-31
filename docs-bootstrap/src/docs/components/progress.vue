@@ -16,7 +16,7 @@
     <li>We provide a special <code>.progress-stacked</code> class to create multiple/stacked progress bars.</li>
     </ul>
     <p>Put that all together, and you have the following examples.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar" style="width: 0%"></div>
       </div>
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -30,30 +30,30 @@
       </div>
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar" style="width: 100%"></div>
-      </div>`} /><h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
+      </div>' /><h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
     <p>Bootstrap provides a handful of <a href="[[docsref:/utilities/sizing]]">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the <code>.progress-bar</code>.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar w-75"></div>
-      </div>`} /><h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
+      </div>' /><h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
     <p>You only set a <code>height</code> value on the <code>.progress</code> container, so if you change that value, the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+    <Example code='<div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
         <div class="progress-bar" style="width: 25%"></div>
       </div>
       <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
         <div class="progress-bar" style="width: 25%"></div>
-      </div>`} /><h2 id="labels">Labels<a class="anchor-link" href="#labels" aria-label="Link to Labels"></a></h2>
+      </div>' /><h2 id="labels">Labels<a class="anchor-link" href="#labels" aria-label="Link to Labels"></a></h2>
     <p>Add labels to your progress bars by placing text within the <code>.progress-bar</code>.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar" style="width: 25%">25%</div>
-      </div>`} /><h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
+      </div>' /><h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
     <p>Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the <a href="[[docsref:/utilities/overflow]]">overflow utilities</a>.</p>
     <Callout type="warning">
     <p>Labels longer than the progress bar within may not be fully accessible using this method because it relies on the text color having the correct contrast ratio with both the <code>.progress</code> and <code>.progress-bar</code> background colors. Use caution when implementing this example.</p>
     <p>If the text can overlap the progress bar, we often recommend displaying the label outside of the progress bar for better accessibility.</p>
     </Callout><h2 id="backgrounds">Backgrounds<a class="anchor-link" href="#backgrounds" aria-label="Link to Backgrounds"></a></h2>
     <p>Use background utility classes to change the appearance of individual progress bars.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar bg-success" style="width: 25%"></div>
       </div>
       <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
@@ -64,8 +64,8 @@
       </div>
       <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar bg-danger" style="width: 100%"></div>
-      </div>`} /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="[[docsref:/utilities/colors#colors]]">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="[[docsref:/helpers/color-background]]">color and background</a> helper classes.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      </div>' /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="[[docsref:/utilities/colors#colors]]">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="[[docsref:/helpers/color-background]]">color and background</a> helper classes.</p>
+    <Example code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
       </div>
       <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
@@ -76,9 +76,9 @@
       </div>
       <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar text-bg-danger" style="width: 100%">100%</div>
-      </div>`} /><h2 id="multiple-bars">Multiple bars<a class="anchor-link" href="#multiple-bars" aria-label="Link to Multiple bars"></a></h2>
+      </div>' /><h2 id="multiple-bars">Multiple bars<a class="anchor-link" href="#multiple-bars" aria-label="Link to Multiple bars"></a></h2>
     <p>You can include multiple progress components inside a container with <code>.progress-stacked</code> to create a single stacked progress bar. Note that in this case, the styling to set the visual width of the progress bar <em>must</em> be applied to the <code>.progress</code> elements, rather than the <code>.progress-bar</code>s.</p>
-    <Example code={`<div class="progress-stacked">
+    <Example code='<div class="progress-stacked">
         <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
           <div class="progress-bar"></div>
         </div>
@@ -88,9 +88,9 @@
         <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
           <div class="progress-bar bg-info"></div>
         </div>
-      </div>`} /><h2 id="striped">Striped<a class="anchor-link" href="#striped" aria-label="Link to Striped"></a></h2>
+      </div>' /><h2 id="striped">Striped<a class="anchor-link" href="#striped" aria-label="Link to Striped"></a></h2>
     <p>Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped" style="width: 10%"></div>
       </div>
       <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -104,11 +104,11 @@
       </div>
       <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
-      </div>`} /><h2 id="animated-stripes">Animated stripes<a class="anchor-link" href="#animated-stripes" aria-label="Link to Animated stripes"></a></h2>
+      </div>' /><h2 id="animated-stripes">Animated stripes<a class="anchor-link" href="#animated-stripes" aria-label="Link to Animated stripes"></a></h2>
     <p>The striped gradient can also be animated. Add <code>.progress-bar-animated</code> to <code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
-    <Example code={`<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <Example code='<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-      </div>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </div>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, progress bars now use local CSS variables on <code>.progress</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="progress-css-vars" file="scss/_progress.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>

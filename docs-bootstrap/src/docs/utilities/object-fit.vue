@@ -16,17 +16,17 @@
     </ul>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>Add the <code>object-fit-{value}</code> class to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">replaced element</a>:</p>
-    <Example class="d-flex overflow-auto" code={`<Placeholder width="140" height="120" class="object-fit-contain border rounded" text="Object fit contain" markup="img" />
+    <Example class="d-flex overflow-auto" code='<Placeholder width="140" height="120" class="object-fit-contain border rounded" text="Object fit contain" markup="img" />
     <Placeholder width="140" height="120" class="object-fit-cover border rounded" text="Object fit cover" markup="img" />
     <Placeholder width="140" height="120" class="object-fit-fill border rounded" text="Object fit fill" markup="img" />
     <Placeholder width="140" height="120" class="object-fit-scale border rounded" text="Object fit scale down" markup="img" />
-    <Placeholder width="140" height="120" class="object-fit-none border rounded" text="Object fit none" markup="img" />`} /><h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
+    <Placeholder width="140" height="120" class="object-fit-none border rounded" text="Object fit none" markup="img" />' /><h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
     <p>Responsive variations also exist for each <code>object-fit</code> value using the format <code>.object-fit-{breakpoint}-{value}</code>, for the following breakpoint abbreviations: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>. Classes can be combined for various effects as you need.</p>
-    <Example class="d-flex overflow-auto" code={`<Placeholder width="140" height="80" class="object-fit-sm-contain border rounded" text="Contain on sm" markup="img" />
+    <Example class="d-flex overflow-auto" code='<Placeholder width="140" height="80" class="object-fit-sm-contain border rounded" text="Contain on sm" markup="img" />
     <Placeholder width="140" height="80" class="object-fit-md-contain border rounded" text="Contain on md" markup="img" />
     <Placeholder width="140" height="80" class="object-fit-lg-contain border rounded" text="Contain on lg" markup="img" />
     <Placeholder width="140" height="80" class="object-fit-xl-contain border rounded" text="Contain on xl" markup="img" />
-    <Placeholder width="140" height="80" class="object-fit-xxl-contain border rounded" text="Contain on xxl" markup="img" />`} /><h2 id="video">Video<a class="anchor-link" href="#video" aria-label="Link to Video"></a></h2>
+    <Placeholder width="140" height="80" class="object-fit-xxl-contain border rounded" text="Contain on xxl" markup="img" />' /><h2 id="video">Video<a class="anchor-link" href="#video" aria-label="Link to Video"></a></h2>
     <p>The <code>.object-fit-{value}</code> and responsive <code>.object-fit-{breakpoint}-{value}</code> utilities also work on <code>&lt;video&gt;</code> elements.</p>
     <pre><code class="language-html">&lt;video src=&quot;...&quot; class=&quot;object-fit-contain&quot; autoplay&gt;&lt;/video&gt;
     &lt;video src=&quot;...&quot; class=&quot;object-fit-cover&quot; autoplay&gt;&lt;/video&gt;

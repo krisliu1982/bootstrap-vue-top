@@ -94,20 +94,20 @@
     </tbody></table>
     </BsTable><h2 id="paragraphs">Paragraphs<a class="anchor-link" href="#paragraphs" aria-label="Link to Paragraphs"></a></h2>
     <p>All <code>&lt;p&gt;</code> elements have their <code>margin-top</code> removed and <code>margin-bottom: 1rem</code> set for easy spacing.</p>
-    <Example code={`<p>This is an example paragraph.</p>`} /><h2 id="links">Links<a class="anchor-link" href="#links" aria-label="Link to Links"></a></h2>
+    <Example code='<p>This is an example paragraph.</p>' /><h2 id="links">Links<a class="anchor-link" href="#links" aria-label="Link to Links"></a></h2>
     <p>Links have a default <code>color</code> and underline applied. While links change on <code>:hover</code>, they don’t change based on whether someone <code>:visited</code> the link. They also receive no special <code>:focus</code> styles.</p>
-    <Example code={`<a href="#">This is an example link</a>`} /><p>As of v5.3.x, link <code>color</code> is set using <code>rgba()</code> and new <code>-rgb</code> CSS variables, allowing for easy customization of link color opacity. Change the link color opacity with the <code>--bs-link-opacity</code> CSS variable:</p>
-    <Example code={`<a href="#" style="--bs-link-opacity: .5">This is an example link</a>`} /><p>Placeholder links—those without an <code>href</code>—are targeted with a more specific selector and have their <code>color</code> and <code>text-decoration</code> reset to their default values.</p>
-    <Example code={`<a>This is a placeholder link</a>`} /><h2 id="horizontal-rules">Horizontal rules<a class="anchor-link" href="#horizontal-rules" aria-label="Link to Horizontal rules"></a></h2>
+    <Example code='<a href="#">This is an example link</a>' /><p>As of v5.3.x, link <code>color</code> is set using <code>rgba()</code> and new <code>-rgb</code> CSS variables, allowing for easy customization of link color opacity. Change the link color opacity with the <code>--bs-link-opacity</code> CSS variable:</p>
+    <Example code='<a href="#" style="--bs-link-opacity: .5">This is an example link</a>' /><p>Placeholder links—those without an <code>href</code>—are targeted with a more specific selector and have their <code>color</code> and <code>text-decoration</code> reset to their default values.</p>
+    <Example code='<a>This is a placeholder link</a>' /><h2 id="horizontal-rules">Horizontal rules<a class="anchor-link" href="#horizontal-rules" aria-label="Link to Horizontal rules"></a></h2>
     <p>The <code>&lt;hr&gt;</code> element has been simplified. Similar to browser defaults, <code>&lt;hr&gt;</code>s are styled via <code>border-top</code>, have a default <code>opacity: .25</code>, and automatically inherit their <code>border-color</code> via <code>color</code>, including when <code>color</code> is set via the parent. They can be modified with text, border, and opacity utilities.</p>
-    <Example code={`<hr>
+    <Example code='<hr>
 
       <div class="text-success">
         <hr>
       </div>
 
       <hr class="border border-danger border-2 opacity-50">
-      <hr class="border border-primary border-3 opacity-75">`} /><h2 id="lists">Lists<a class="anchor-link" href="#lists" aria-label="Link to Lists"></a></h2>
+      <hr class="border border-primary border-3 opacity-75">' /><h2 id="lists">Lists<a class="anchor-link" href="#lists" aria-label="Link to Lists"></a></h2>
     <p>All lists—<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>—have their <code>margin-top</code> removed and a <code>margin-bottom: 1rem</code>. Nested lists have no <code>margin-bottom</code>. We’ve also reset the <code>padding-left</code> on <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements.</p>
     <div class="bd-example">
     * All lists have their top margin removed
@@ -122,8 +122,7 @@
     <li>As the previous unordered list</li>
     </ol>
     </div><p>For simpler styling, clear hierarchy, and better spacing, description lists have updated <code>margin</code>s. <code>&lt;dd&gt;</code>s reset <code>margin-left</code> to <code>0</code> and add <code>margin-bottom: .5rem</code>. <code>&lt;dt&gt;</code>s are <strong>bolded</strong>.</p>
-    <Example showMarkup={false} code={`
-    <dl>
+    <Example :showMarkup="false" code='<dl>
       <dt>Description lists</dt>
       <dd>A description list is perfect for defining terms.</dd>
       <dt>Term</dt>
@@ -132,22 +131,22 @@
       <dt>Another term</dt>
       <dd>Definition for this other term.</dd>
     </dl>
-    `} /><h2 id="inline-code">Inline code<a class="anchor-link" href="#inline-code" aria-label="Link to Inline code"></a></h2>
+    ' /><h2 id="inline-code">Inline code<a class="anchor-link" href="#inline-code" aria-label="Link to Inline code"></a></h2>
     <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>. Be sure to escape HTML angle brackets.</p>
-    <Example code={`For example, <code>&lt;section&gt;</code> should be wrapped as inline.`} /><h2 id="code-blocks">Code blocks<a class="anchor-link" href="#code-blocks" aria-label="Link to Code blocks"></a></h2>
+    <Example code='For example, <code>&lt;section&gt;</code> should be wrapped as inline.' /><h2 id="code-blocks">Code blocks<a class="anchor-link" href="#code-blocks" aria-label="Link to Code blocks"></a></h2>
     <p>Use <code>&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. The <code>&lt;pre&gt;</code> element is reset to remove its <code>margin-top</code> and use <code>rem</code> units for its <code>margin-bottom</code>.</p>
-    <Example code={`<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+    <Example code='<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
     &lt;p&gt;And another line of sample text here...&lt;/p&gt;
-    </code></pre>`} /><h2 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h2>
+    </code></pre>' /><h2 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h2>
     <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
-    <Example code={`<var>y</var> = <var>m</var><var>x</var> + <var>b</var>`} /><h2 id="user-input">User input<a class="anchor-link" href="#user-input" aria-label="Link to User input"></a></h2>
+    <Example code='<var>y</var> = <var>m</var><var>x</var> + <var>b</var>' /><h2 id="user-input">User input<a class="anchor-link" href="#user-input" aria-label="Link to User input"></a></h2>
     <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
-    <Example code={`To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-    To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>`} /><h2 id="sample-output">Sample output<a class="anchor-link" href="#sample-output" aria-label="Link to Sample output"></a></h2>
+    <Example code='To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+    To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>' /><h2 id="sample-output">Sample output<a class="anchor-link" href="#sample-output" aria-label="Link to Sample output"></a></h2>
     <p>For indicating sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
-    <Example code={`<samp>This text is meant to be treated as sample output from a computer program.</samp>`} /><h2 id="tables">Tables<a class="anchor-link" href="#tables" aria-label="Link to Tables"></a></h2>
+    <Example code='<samp>This text is meant to be treated as sample output from a computer program.</samp>' /><h2 id="tables">Tables<a class="anchor-link" href="#tables" aria-label="Link to Tables"></a></h2>
     <p>Tables are slightly adjusted to style <code>&lt;caption&gt;</code>s, collapse borders, and ensure consistent <code>text-align</code> throughout. Additional changes for borders, padding, and more come with <a href="[[docsref:/content/tables]]">the <code>.table</code> class</a>.</p>
-    <Example code={`<table>
+    <Example code='<table>
         <caption>
           This is an example table, and this is its caption to describe the contents.
         </caption>
@@ -179,7 +178,7 @@
             <td>Table cell</td>
           </tr>
         </tbody>
-      </table>`} /><h2 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h2>
+      </table>' /><h2 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h2>
     <p>Various form elements have been rebooted for simpler base styles. Here are some of the most notable changes:</p>
     <ul>
     <li><code>&lt;fieldset&gt;</code>s have no borders, padding, or margin so they can be easily used as wrappers for individual inputs or groups of inputs.</li>
@@ -190,7 +189,7 @@
     <li><code>&lt;button&gt;</code>s and <code>&lt;input&gt;</code> button elements have <code>cursor: pointer</code> when <code>:not(:disabled)</code>.</li>
     </ul>
     <p>These changes, and more, are demonstrated below.</p>
-    <Callout name="warning-input-support" type="warning" /><Example showMarkup={false} code={`<form>
+    <Callout name="warning-input-support" type="warning" /><Example :showMarkup="false" code='<form>
       <fieldset>
         <legend>Example legend</legend>
         <p>
@@ -310,12 +309,12 @@
           <input type="button" value="Input button" disabled/>
         </p>
       </fieldset>
-    </form>`} /><h3 id="pointers-on-buttons">Pointers on buttons<a class="anchor-link" href="#pointers-on-buttons" aria-label="Link to Pointers on buttons"></a></h3>
+    </form>' /><h3 id="pointers-on-buttons">Pointers on buttons<a class="anchor-link" href="#pointers-on-buttons" aria-label="Link to Pointers on buttons"></a></h3>
     <p>Reboot includes an enhancement for <code>role=&quot;button&quot;</code> to change the default cursor to <code>pointer</code>. Add this attribute to elements to help indicate elements are interactive. This role isn’t necessary for <code>&lt;button&gt;</code> elements, which get their own <code>cursor</code> change.</p>
-    <Example code={`<span role="button" tabindex="0">Non-button element button</span>`} /><h2 id="misc-elements">Misc elements<a class="anchor-link" href="#misc-elements" aria-label="Link to Misc elements"></a></h2>
+    <Example code='<span role="button" tabindex="0">Non-button element button</span>' /><h2 id="misc-elements">Misc elements<a class="anchor-link" href="#misc-elements" aria-label="Link to Misc elements"></a></h2>
     <h3 id="address">Address<a class="anchor-link" href="#address" aria-label="Link to Address"></a></h3>
     <p>The <code>&lt;address&gt;</code> element is updated to reset the browser default <code>font-style</code> from <code>italic</code> to <code>normal</code>. <code>line-height</code> is also now inherited, and <code>margin-bottom: 1rem</code> has been added. <code>&lt;address&gt;</code>s are for presenting contact information for the nearest ancestor (or an entire body of work). Preserve formatting by ending lines with <code>&lt;br&gt;</code>.</p>
-    <Example showMarkup={false} code={`<address>
+    <Example :showMarkup="false" code='<address>
         <strong>ACME Corporation</strong><br/>
         1123 Fictional St,<br/>
         San Francisco, CA 94103<br/>
@@ -325,23 +324,21 @@
       <address>
         <strong>Full Name</strong><br/>
         <a href="mailto:first.last@example.com">first.last@example.com</a>
-      </address>`} /><h3 id="blockquote">Blockquote<a class="anchor-link" href="#blockquote" aria-label="Link to Blockquote"></a></h3>
+      </address>' /><h3 id="blockquote">Blockquote<a class="anchor-link" href="#blockquote" aria-label="Link to Blockquote"></a></h3>
     <p>The default <code>margin</code> on blockquotes is <code>1em 40px</code>, so we reset that to <code>0 0 1rem</code> for something more consistent with other elements.</p>
-    <Example showMarkup={false} code={`<figure>
+    <Example :showMarkup="false" code='<figure>
         <blockquote class="blockquote">
           <p>A well-known quote, contained in a blockquote element.</p>
         </blockquote>
         <figcaption>
           Someone famous in <cite title="Source Title">Source Title</cite>
         </figcaption>
-      </figure>`} /><h3 id="inline-elements">Inline elements<a class="anchor-link" href="#inline-elements" aria-label="Link to Inline elements"></a></h3>
+      </figure>' /><h3 id="inline-elements">Inline elements<a class="anchor-link" href="#inline-elements" aria-label="Link to Inline elements"></a></h3>
     <p>The <code>&lt;abbr&gt;</code> element receives basic styling to make it stand out amongst paragraph text.</p>
-    <Example showMarkup={false} code={`
-    The <abbr title="HyperText Markup Language">HTML</abbr> abbreviation element.
-    `} /><h3 id="summary">Summary<a class="anchor-link" href="#summary" aria-label="Link to Summary"></a></h3>
+    <Example :showMarkup="false" code='The <abbr title="HyperText Markup Language">HTML</abbr> abbreviation element.
+    ' /><h3 id="summary">Summary<a class="anchor-link" href="#summary" aria-label="Link to Summary"></a></h3>
     <p>The default <code>cursor</code> on summary is <code>text</code>, so we reset that to <code>pointer</code> to convey that the element can be interacted with by clicking on it.</p>
-    <Example showMarkup={false} code={`
-    <details>
+    <Example :showMarkup="false" code='<details>
       <summary>Some details</summary>
       <p>More info about the details.</p>
     </details>
@@ -350,7 +347,7 @@
       <summary>Even more details</summary>
       <p>Here are even more details about the details.</p>
     </details>
-    `} /><h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> attribute<a class="anchor-link" href="#html5-hidden-attribute" aria-label="Link to HTML5 [hidden] attribute"></a></h2>
+    ' /><h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> attribute<a class="anchor-link" href="#html5-hidden-attribute" aria-label="Link to HTML5 [hidden] attribute"></a></h2>
     <p>HTML5 adds <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">a new global attribute named <code>[hidden]</code></a>, which is styled as <code>display: none</code> by default. Borrowing an idea from <a href="https://purecss.io/">PureCSS</a>, we improve upon this default by making <code>[hidden] { display: none !important; }</code> to help prevent its <code>display</code> from getting accidentally overridden.</p>
     <pre><code class="language-html">&lt;input type=&quot;text&quot; hidden&gt;
     </code></pre>

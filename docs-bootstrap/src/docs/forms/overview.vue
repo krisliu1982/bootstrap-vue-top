@@ -8,11 +8,11 @@
     <p>Bootstrap’s form controls expand on <a href="[[docsref:/content/reboot#forms]]">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
     <p>Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., <code>email</code> for email address or <code>number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
     <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
-    <Example code={`<form>
+    <Example code='<form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text">We&#39;ll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -23,13 +23,13 @@
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-      </form>`} /><h2 id="disabled-forms">Disabled forms<a class="anchor-link" href="#disabled-forms" aria-label="Link to Disabled forms"></a></h2>
+      </form>' /><h2 id="disabled-forms">Disabled forms<a class="anchor-link" href="#disabled-forms" aria-label="Link to Disabled forms"></a></h2>
     <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
     <pre><code class="language-html">&lt;input class=&quot;form-control&quot; id=&quot;disabledInput&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;
     </code></pre>
     <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within. Browsers treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them.</p>
     <p>However, if your form also includes custom button-like elements such as <code>&lt;a class=&quot;btn btn-*&quot;&gt;...&lt;/a&gt;</code>, these will only be given a style of <code>pointer-events: none</code>, meaning they are still focusable and operable using the keyboard. In this case, you must manually modify these controls by adding <code>tabindex=&quot;-1&quot;</code> to prevent them from receiving focus and <code>aria-disabled=&quot;disabled&quot;</code> to signal their state to assistive technologies.</p>
-    <Example code={`<form>
+    <Example code='<form>
         <fieldset disabled>
           <legend>Disabled fieldset example</legend>
           <div class="mb-3">
@@ -52,7 +52,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
-      </form>`} /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+      </form>' /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to users of assistive technologies. The simplest way to achieve this is to use a <code>&lt;label&gt;</code> element, or—in the case of buttons—to include sufficiently descriptive text as part of the <code>&lt;button&gt;...&lt;/button&gt;</code> content.</p>
     <p>For situations where it’s not possible to include a visible <code>&lt;label&gt;</code> or appropriate text content, there are alternative ways of still providing an accessible name, such as:</p>
     <ul>

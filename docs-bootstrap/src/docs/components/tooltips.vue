@@ -26,22 +26,22 @@
     </code></pre>
     <h3 id="tooltips-on-links">Tooltips on links<a class="anchor-link" href="#tooltips-on-links" aria-label="Link to Tooltips on links"></a></h3>
     <p>Hover over the links below to see tooltips:</p>
-    <Example addStackblitzJs class="tooltip-demo" code={`<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>`} /><Callout name="warning-data-bs-title-vs-title" type="warning" /><h3 id="custom-tooltips">Custom tooltips<a class="anchor-link" href="#custom-tooltips" aria-label="Link to Custom tooltips"></a></h3>
+    <Example addStackblitzJs class="tooltip-demo" code='<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>' /><Callout name="warning-data-bs-title-vs-title" type="warning" /><h3 id="custom-tooltips">Custom tooltips<a class="anchor-link" href="#custom-tooltips" aria-label="Link to Custom tooltips"></a></h3>
     <AddedIn version="5.2.0" /><p>You can customize the appearance of tooltips using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> to scope our custom appearance and use it to override a local CSS variable.</p>
-    <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" /><Example addStackblitzJs class="tooltip-demo" code={`<button type="button" class="btn btn-secondary"
+    <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" /><Example addStackblitzJs class="tooltip-demo" code='<button type="button" class="btn btn-secondary"
               data-bs-toggle="tooltip" data-bs-placement="top"
               data-bs-custom-class="custom-tooltip"
               data-bs-title="This top tooltip is themed via CSS variables.">
         Custom tooltip
-      </button>`} /><h3 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h3>
+      </button>' /><h3 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h3>
     <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.</p>
-    <Example showMarkup={false} class="tooltip-demo" code={`<div class="bd-example-tooltips">
+    <Example :showMarkup="false" class="tooltip-demo" code='<div class="bd-example-tooltips">
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Tooltip on top</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Tooltip on right</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">Tooltip on bottom</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">Tooltip on left</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Tooltip with HTML</button>
-      </div>`} /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
+      </div>' /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
       Tooltip on top
     &lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;Tooltip on right&quot;&gt;
@@ -99,9 +99,9 @@
     </code></pre>
     <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
     <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
-    <Example class="tooltip-demo" addStackblitzJs code={`<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
+    <Example class="tooltip-demo" addStackblitzJs code='<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
         <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-      </span>`} /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+      </span>' /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><Callout type="warning">
     <p>Note that for security reasons the <code>sanitize</code>, <code>sanitizeFn</code>, and <code>allowList</code> options cannot be supplied using data attributes.</p>
     </Callout><BsTable>

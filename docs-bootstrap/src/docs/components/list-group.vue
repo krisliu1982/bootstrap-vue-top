@@ -6,25 +6,25 @@
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
-    <Example code={`<ul class="list-group">
+    <Example code='<ul class="list-group">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
         <li class="list-group-item">A fourth item</li>
         <li class="list-group-item">And a fifth one</li>
-      </ul>`} /><h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
+      </ul>' /><h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
     <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
-    <Example code={`<ul class="list-group">
+    <Example code='<ul class="list-group">
         <li class="list-group-item active" aria-current="true">An active item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
         <li class="list-group-item">A fourth item</li>
         <li class="list-group-item">And a fifth one</li>
-      </ul>`} /><h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
+      </ul>' /><h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
     <p>Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
     <p>Make <code>.list-group-item-action</code> instances <em>appear</em> disabled by adding <code>.disabled</code>, and <code>aria-disabled=&quot;true&quot;</code> to inform assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.</p>
     <p>Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.</p>
-    <Example code={`<div class="list-group">
+    <Example code='<div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
           The current link item
         </a>
@@ -32,8 +32,8 @@
         <a href="#" class="list-group-item list-group-item-action">A third link item</a>
         <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
         <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
-      </div>`} /><p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
-    <Example code={`<div class="list-group">
+      </div>' /><p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+    <Example code='<div class="list-group">
         <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
           The current button
         </button>
@@ -41,23 +41,23 @@
         <button type="button" class="list-group-item list-group-item-action">A third button item</button>
         <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
         <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
-      </div>`} /><h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
+      </div>' /><h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
     <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
-    <Example code={`<ul class="list-group list-group-flush">
+    <Example code='<ul class="list-group list-group-flush">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
         <li class="list-group-item">A fourth item</li>
         <li class="list-group-item">And a fifth one</li>
-      </ul>`} /><h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
+      </ul>' /><h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
     <p>Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.</p>
     <p>Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> pseudo-element on the <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.</p>
-    <Example code={`<ol class="list-group list-group-numbered">
+    <Example code='<ol class="list-group list-group-numbered">
         <li class="list-group-item">A list item</li>
         <li class="list-group-item">A list item</li>
         <li class="list-group-item">A list item</li>
-      </ol>`} /><p>These work great with custom content as well.</p>
-    <Example code={`<ol class="list-group list-group-numbered">
+      </ol>' /><p>These work great with custom content as well.</p>
+    <Example code='<ol class="list-group list-group-numbered">
         <li class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
             <div class="fw-bold">Subheading</div>
@@ -79,7 +79,7 @@
           </div>
           <span class="badge text-bg-primary rounded-pill">14</span>
         </li>
-      </ol>`} /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
+      </ol>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently <strong>horizontal list groups cannot be combined with flush list groups.</strong></p>
     <p><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
     <Example :code='data["breakpoints"].map((breakpoint) => `<ul class="list-group list-group-horizontal${breakpoint.abbr}">
@@ -106,7 +106,7 @@
         `</div>`
       ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
     <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="[[docsref:/utilities/flex]]">utilities</a>.</p>
-    <Example code={`<ul class="list-group">
+    <Example code='<ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           A list item
           <span class="badge text-bg-primary rounded-pill">14</span>
@@ -119,9 +119,9 @@
           A third list item
           <span class="badge text-bg-primary rounded-pill">1</span>
         </li>
-      </ul>`} /><h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
+      </ul>' /><h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
     <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>.</p>
-    <Example code={`<div class="list-group">
+    <Example code='<div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">List group item heading</h5>
@@ -146,9 +146,9 @@
           <p class="mb-1">Some placeholder content in a paragraph.</p>
           <small class="text-body-secondary">And some muted small print.</small>
         </a>
-      </div>`} /><h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
+      </div>' /><h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
     <p>Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without <code>&lt;label&gt;</code>s, but please remember to include an <code>aria-label</code> attribute and value for accessibility.</p>
-    <Example code={`<ul class="list-group">
+    <Example code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
           <label class="form-check-label" for="firstCheckbox">First checkbox</label>
@@ -161,7 +161,7 @@
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
           <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
         </li>
-      </ul>`} /><Example code={`<ul class="list-group">
+      </ul>' /><Example code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
           <label class="form-check-label" for="firstRadio">First radio</label>
@@ -174,8 +174,8 @@
           <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
           <label class="form-check-label" for="thirdRadio">Third radio</label>
         </li>
-      </ul>`} /><p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
-    <Example code={`<ul class="list-group">
+      </ul>' /><p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
+    <Example code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
           <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
@@ -188,7 +188,7 @@
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
           <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
         </li>
-      </ul>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </ul>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, list groups now use local CSS variables on <code>.list-group</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="list-group-css-vars" file="scss/_list-group.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>

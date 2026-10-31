@@ -9,9 +9,9 @@
     <p>For accessibility purposes, each loader here includes <code>role=&quot;status&quot;</code> and a nested <code>&lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;</code>.</p>
     <Callout name="info-prefersreducedmotion" /><h2 id="border-spinner">Border spinner<a class="anchor-link" href="#border-spinner" aria-label="Link to Border spinner"></a></h2>
     <p>Use the border spinners for a lightweight loading indicator.</p>
-    <Example code={`<div class="spinner-border" role="status">
+    <Example code='<div class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>`} /><h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
+      </div>' /><h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
     <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="[[docsref:/utilities/colors]]">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="spinner-border text-${themeColor.name}" role="status">
         <span class="visually-hidden">Loading...</span>
@@ -19,67 +19,67 @@
     <p><strong>Why not use <code>border-color</code> utilities?</strong> Each border spinner specifies a <code>transparent</code> border for at least one side, so <code>.border-{color}</code> utilities would override that.</p>
     </Callout><h2 id="growing-spinner">Growing spinner<a class="anchor-link" href="#growing-spinner" aria-label="Link to Growing spinner"></a></h2>
     <p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
-    <Example code={`<div class="spinner-grow" role="status">
+    <Example code='<div class="spinner-grow" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>`} /><p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="[[docsref:/utilities/colors]]">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
+      </div>' /><p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="[[docsref:/utilities/colors]]">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="spinner-grow text-${themeColor.name}" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>`).join("\n")' /><h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
     <p>Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
     <h3 id="margin">Margin<a class="anchor-link" href="#margin" aria-label="Link to Margin"></a></h3>
     <p>Use <a href="[[docsref:/utilities/spacing]]">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
-    <Example code={`<div class="spinner-border m-5" role="status">
+    <Example code='<div class="spinner-border m-5" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>`} /><h3 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h3>
+      </div>' /><h3 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h3>
     <p>Use <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>, <a href="[[docsref:/utilities/float]]">float utilities</a>, or <a href="[[docsref:/utilities/text]]">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
     <h4 id="flex">Flex</h4>
-    <Example code={`<div class="d-flex justify-content-center">
+    <Example code='<div class="d-flex justify-content-center">
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-      </div>`} /><Example code={`<div class="d-flex align-items-center">
+      </div>' /><Example code='<div class="d-flex align-items-center">
         <strong role="status">Loading...</strong>
         <div class="spinner-border ms-auto" aria-hidden="true"></div>
-      </div>`} /><h4 id="floats">Floats</h4>
-    <Example code={`<div class="clearfix">
+      </div>' /><h4 id="floats">Floats</h4>
+    <Example code='<div class="clearfix">
         <div class="spinner-border float-end" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-      </div>`} /><h4 id="text-align">Text align</h4>
-    <Example code={`<div class="text-center">
+      </div>' /><h4 id="text-align">Text align</h4>
+    <Example code='<div class="text-center">
         <div class="spinner-border" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
-      </div>`} /><h2 id="size">Size<a class="anchor-link" href="#size" aria-label="Link to Size"></a></h2>
+      </div>' /><h2 id="size">Size<a class="anchor-link" href="#size" aria-label="Link to Size"></a></h2>
     <p>Add <code>.spinner-border-sm</code> and <code>.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components.</p>
-    <Example code={`<div class="spinner-border spinner-border-sm" role="status">
+    <Example code='<div class="spinner-border spinner-border-sm" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="spinner-grow spinner-grow-sm" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>`} /><p>Or, use custom CSS or inline styles to change the dimensions as needed.</p>
-    <Example code={`<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+      </div>' /><p>Or, use custom CSS or inline styles to change the dimensions as needed.</p>
+    <Example code='<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
         <span class="visually-hidden">Loading...</span>
-      </div>`} /><h2 id="buttons">Buttons<a class="anchor-link" href="#buttons" aria-label="Link to Buttons"></a></h2>
+      </div>' /><h2 id="buttons">Buttons<a class="anchor-link" href="#buttons" aria-label="Link to Buttons"></a></h2>
     <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
-    <Example code={`<button class="btn btn-primary" type="button" disabled>
+    <Example code='<button class="btn btn-primary" type="button" disabled>
         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
         <span class="visually-hidden" role="status">Loading...</span>
       </button>
       <button class="btn btn-primary" type="button" disabled>
         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
         <span role="status">Loading...</span>
-      </button>`} /><Example code={`<button class="btn btn-primary" type="button" disabled>
+      </button>' /><Example code='<button class="btn btn-primary" type="button" disabled>
         <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
         <span class="visually-hidden" role="status">Loading...</span>
       </button>
       <button class="btn btn-primary" type="button" disabled>
         <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
         <span role="status">Loading...</span>
-      </button>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </button>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, spinners now use local CSS variables on <code>.spinner-border</code> and <code>.spinner-grow</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <p>Border spinner variables:</p>

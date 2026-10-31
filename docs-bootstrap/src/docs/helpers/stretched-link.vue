@@ -7,22 +7,22 @@
     <p>Add <code>.stretched-link</code> to a link to make its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block</a> clickable via a <code>::after</code> pseudo element. In most cases, this means that an element with <code>position: relative;</code> that contains a link with the <code>.stretched-link</code> class is clickable. Please note given <a href="https://www.w3.org/TR/CSS21/visuren.html#propdef-position">how CSS <code>position</code> works</a>, <code>.stretched-link</code> cannot be mixed with most table elements.</p>
     <p>Cards have <code>position: relative</code> by default in Bootstrap, so in this case you can safely add the <code>.stretched-link</code> class to a link in the card without any other HTML changes.</p>
     <p>Multiple links and tap targets are not recommended with stretched links. However, some <code>position</code> and <code>z-index</code> styles can help should this be required.</p>
-    <Example code={`<div class="card" style="width: 18rem;">
+    <Example code='<div class="card" style="width: 18rem;">
         <Placeholder width="100%" height="180" class="card-img-top" text={false} title="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">Card with stretched link</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
           <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
         </div>
-      </div>`} /><p>Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching outside the parent element.</p>
-    <Example code={`<div class="d-flex position-relative">
+      </div>' /><p>Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching outside the parent element.</p>
+    <Example code='<div class="d-flex position-relative">
         <Placeholder width="144" height="144" class="flex-shrink-0 me-3" text={false} title="Generic placeholder image22222" />
         <div>
           <h5 class="mt-0">Custom component with stretched link</h5>
           <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
           <a href="#" class="stretched-link">Go somewhere</a>
         </div>
-      </div>`} /><Example code={`<div class="row g-0 bg-body-secondary position-relative">
+      </div>' /><Example code='<div class="row g-0 bg-body-secondary position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
           <Placeholder width="100%" height="200" class="w-100" text={false} title="Generic placeholder image" />
         </div>
@@ -31,7 +31,7 @@
           <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
           <a href="#" class="stretched-link">Go somewhere</a>
         </div>
-      </div>`} /><h2 id="identifying-the-containing-block">Identifying the containing block<a class="anchor-link" href="#identifying-the-containing-block" aria-label="Link to Identifying the containing block"></a></h2>
+      </div>' /><h2 id="identifying-the-containing-block">Identifying the containing block<a class="anchor-link" href="#identifying-the-containing-block" aria-label="Link to Identifying the containing block"></a></h2>
     <p>If the stretched link doesn’t seem to work, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block">containing block</a> will probably be the cause. The following CSS properties will make an element the containing block:</p>
     <ul>
     <li>A <code>position</code> value other than <code>static</code></li>
@@ -39,7 +39,7 @@
     <li>A <code>will-change</code> value of <code>transform</code> or <code>perspective</code></li>
     <li>A <code>filter</code> value other than <code>none</code> or a <code>will-change</code> value of <code>filter</code> (only works on Firefox)</li>
     </ul>
-    <Example code={`<div class="card" style="width: 18rem;">
+    <Example code='<div class="card" style="width: 18rem;">
         <Placeholder width="100%" height="180" class="card-img-top" text={false} title="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">Card with stretched links</h5>
@@ -51,6 +51,6 @@
             This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
           </p>
         </div>
-      </div>`} />
+      </div>' />
   </article>
 </template>

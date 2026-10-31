@@ -10,49 +10,49 @@
     <p>When icons are purely decorative, they should be hidden from assistive technologies using <code>aria-hidden=&quot;true&quot;</code>, as we’ve done in our examples. For icons that convey meaning, provide an appropriate text alternative by adding <code>role=&quot;img&quot;</code> and an appropriate <code>aria-label=&quot;...&quot;</code> to the SVGs.</p>
     </Callout><h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Take a regular <code>&lt;a&gt;</code> element, add <code>.icon-link</code>, and insert an icon on either the left or right of your link text. The icon is automatically sized, placed, and colored.</p>
-    <Example code={`<a class="icon-link" href="#">
+    <Example code='<a class="icon-link" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
         </svg>
         Icon link
-      </a>`} /><Example code={`<a class="icon-link" href="#">
+      </a>' /><Example code='<a class="icon-link" href="#">
         Icon link
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
-      </a>`} /><h2 id="style-on-hover">Style on hover<a class="anchor-link" href="#style-on-hover" aria-label="Link to Style on hover"></a></h2>
+      </a>' /><h2 id="style-on-hover">Style on hover<a class="anchor-link" href="#style-on-hover" aria-label="Link to Style on hover"></a></h2>
     <p>Add <code>.icon-link-hover</code> to move the icon to the right on hover.</p>
-    <Example code={`<a class="icon-link icon-link-hover" href="#">
+    <Example code='<a class="icon-link icon-link-hover" href="#">
         Icon link
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
-      </a>`} /><h2 id="customize">Customize<a class="anchor-link" href="#customize" aria-label="Link to Customize"></a></h2>
+      </a>' /><h2 id="customize">Customize<a class="anchor-link" href="#customize" aria-label="Link to Customize"></a></h2>
     <p>Modify the styling of an icon link with our link CSS variables, Sass variables, utilities, or custom styles.</p>
     <h3 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h3>
     <p>Modify the <code>--bs-link-*</code> and <code>--bs-icon-link-*</code> CSS variables as needed to change the default appearance.</p>
     <p>Customize the hover <code>transform</code> by overriding the <code>--bs-icon-link-transform</code> CSS variable:</p>
-    <Example code={`<a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+    <Example code='<a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
           <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
         </svg>
         Icon link
-      </a>`} /><p>Customize the color by overriding the <code>--bs-link-*</code> CSS variable:</p>
-    <Example code={`<a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
+      </a>' /><p>Customize the color by overriding the <code>--bs-link-*</code> CSS variable:</p>
+    <Example code='<a class="icon-link icon-link-hover" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#">
         Icon link
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
-      </a>`} /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+      </a>' /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Customize the icon link Sass variables to modify all icon link styles across your Bootstrap-powered project.</p>
     <ScssDocs name="icon-link-variables" file="scss/_variables.scss" /><h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Modify icon links with any of <a href="[[docsref:/utilities/link/]]">our link utilities</a> for modifying underline color and offset.</p>
-    <Example code={`<a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
+    <Example code='<a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
         Icon link
         <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
           <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
         </svg>
-      </a>`} />
+      </a>' />
   </article>
 </template>

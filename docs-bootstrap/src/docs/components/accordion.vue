@@ -13,7 +13,7 @@
     <li>add the <code>.show</code> class on the <code>.accordion-collapse</code> element.</li>
     <li>drop the <code>.collapsed</code> class from the <code>.accordion-button</code> element and set its <code>aria-expanded</code> attribute to <code>true</code>.</li>
     </ul>
-    <Example code={`<div class="accordion" id="accordionExample">
+    <Example code='<div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -50,9 +50,9 @@
             </div>
           </div>
         </div>
-      </div>`} /><h3 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h3>
+      </div>' /><h3 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h3>
     <p>Add <code>.accordion-flush</code> to remove some borders and rounded corners to render accordions edge-to-edge with their parent container.</p>
-    <Example class="bg-body-secondary" code={`<div class="accordion accordion-flush" id="accordionFlushExample">
+    <Example class="bg-body-secondary" code='<div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -83,9 +83,9 @@
             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
           </div>
         </div>
-      </div>`} /><h3 id="always-open">Always open<a class="anchor-link" href="#always-open" aria-label="Link to Always open"></a></h3>
+      </div>' /><h3 id="always-open">Always open<a class="anchor-link" href="#always-open" aria-label="Link to Always open"></a></h3>
     <p>Omit the <code>data-bs-parent</code> attribute on each <code>.accordion-collapse</code> to make accordion items stay open when another item is opened.</p>
-    <Example code={`<div class="accordion" id="accordionPanelsStayOpenExample">
+    <Example code='<div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -122,7 +122,7 @@
             </div>
           </div>
         </div>
-      </div>`} /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+      </div>' /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Please read the <a href="[[docsref:/components/collapse#accessibility]]">collapse accessibility section</a> for more information.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>

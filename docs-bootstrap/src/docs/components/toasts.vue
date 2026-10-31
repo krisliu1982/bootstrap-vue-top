@@ -15,7 +15,7 @@
     <h3 id="basic">Basic<a class="anchor-link" href="#basic" aria-label="Link to Basic"></a></h3>
     <p>To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use <code>display: flex</code>, allowing easy alignment of content thanks to our margin and flexbox utilities.</p>
     <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.</p>
-    <Example code={`<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
           <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
           <strong class="me-auto">Bootstrap</strong>
@@ -25,7 +25,7 @@
         <div class="toast-body">
           Hello, world! This is a toast message.
         </div>
-      </div>`} /><Callout type="warning">
+      </div>' /><Callout type="warning">
     <p>Previously, our scripts dynamically added the <code>.hide</code> class to completely hide a toast (with <code>display:none</code>, rather than just with <code>opacity:0</code>). This is now not necessary anymore. However, for backwards compatibility, our script will continue to toggle the class (even though there is no practical need for it) until the next major version.</p>
     </Callout><h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.</p>
@@ -41,9 +41,8 @@
           Hello, world! This is a toast message.
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
-    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-    `} /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
+    </div><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+    ' /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
 
     &lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
       &lt;div id=&quot;liveToast&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
@@ -62,7 +61,7 @@
     <p>We use the following JavaScript to trigger our live toast demo:</p>
     <JsDocs name="live-toast" file="site/src/assets/partials/snippets.js" /><h3 id="translucent">Translucent<a class="anchor-link" href="#translucent" aria-label="Link to Translucent"></a></h3>
     <p>Toasts are slightly translucent to blend in with what’s below them.</p>
-    <Example class="bg-dark" code={`<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <Example class="bg-dark" code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
           <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
           <strong class="me-auto">Bootstrap</strong>
@@ -72,9 +71,9 @@
         <div class="toast-body">
           Hello, world! This is a toast message.
         </div>
-      </div>`} /><h3 id="stacking">Stacking<a class="anchor-link" href="#stacking" aria-label="Link to Stacking"></a></h3>
+      </div>' /><h3 id="stacking">Stacking<a class="anchor-link" href="#stacking" aria-label="Link to Stacking"></a></h3>
     <p>You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.</p>
-    <Example code={`<div class="toast-container position-static">
+    <Example code='<div class="toast-container position-static">
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
             <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
@@ -98,17 +97,17 @@
             Heads up, toasts will stack automatically
           </div>
         </div>
-      </div>`} /><h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
+      </div>' /><h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
     <p>Customize your toasts by removing sub-components, tweaking them with <a href="[[docsref:/utilities/api]]">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default <code>.toast-header</code>, adding a custom hide icon from <a href="[[config:icons]]">Bootstrap Icons</a>, and using some <a href="[[docsref:/utilities/flex]]">flexbox utilities</a> to adjust the layout.</p>
-    <Example code={`<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+    <Example code='<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
           <div class="toast-body">
             Hello, world! This is a toast message.
           </div>
           <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-      </div>`} /><p>Alternatively, you can also add additional controls and components to toasts.</p>
-    <Example code={`<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      </div>' /><p>Alternatively, you can also add additional controls and components to toasts.</p>
+    <Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-body">
           Hello, world! This is a toast message.
           <div class="mt-2 pt-2 border-top">
@@ -116,18 +115,18 @@
             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
           </div>
         </div>
-      </div>`} /><h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
+      </div>' /><h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>Building on the above example, you can create different toast color schemes with our <a href="[[docsref:/utilities/colors]]">color</a> and <a href="[[docsref:/utilities/background]]">background</a> utilities. Here we’ve added <code>.text-bg-primary</code> to the <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0</code>.</p>
-    <Example code={`<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <Example code='<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
           <div class="toast-body">
             Hello, world! This is a toast message.
           </div>
           <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-      </div>`} /><h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
+      </div>' /><h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the <code>.toast</code>.</p>
-    <Example addStackblitzJs code={`<form>
+    <Example addStackblitzJs code='<form>
         <div class="mb-3">
           <label for="selectToastPlacement">Toast placement</label>
           <select class="form-select mt-2" id="selectToastPlacement">
@@ -157,8 +156,8 @@
             </div>
           </div>
         </div>
-      </div>`} /><p>For systems that generate more notifications, consider using a wrapping element so they can easily stack.</p>
-    <Example class="bd-example-toasts p-0" code={`<div aria-live="polite" aria-atomic="true" class="position-relative">
+      </div>' /><p>For systems that generate more notifications, consider using a wrapping element so they can easily stack.</p>
+    <Example class="bd-example-toasts p-0" code='<div aria-live="polite" aria-atomic="true" class="position-relative">
         <!-- Position it: -->
         <!-- - \`.toast-container\` for spacing between toasts -->
         <!-- - \`top-0\` & \`end-0\` to position the toasts in the upper right corner -->
@@ -190,8 +189,8 @@
             </div>
           </div>
         </div>
-      </div>`} /><p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
-    <Example class="bd-example-toasts d-flex" code={`<!-- Flexbox container for aligning the toasts -->
+      </div>' /><p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
+    <Example class="bd-example-toasts d-flex" code='<!-- Flexbox container for aligning the toasts -->
       <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
 
         <!-- Then put toasts within -->
@@ -206,7 +205,7 @@
             Hello, world! This is a toast message.
           </div>
         </div>
-      </div>`} /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+      </div>' /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Toasts are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your toasts in an <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> region</a>. Changes to live regions (such as injecting/updating a toast component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user. Additionally, include <code>aria-atomic=&quot;true&quot;</code> to ensure that the entire toast is always announced as a single (atomic) unit, rather than just announcing what was changed (which could lead to problems if you only update part of the toast’s content, or if displaying the same toast content at a later point in time). If the information needed is important for the process, e.g. for a list of errors in a form, then use the <a href="[[docsref:/components/alerts]]">alert component</a> instead of toast.</p>
     <p>Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.</p>
     <p>You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> attributes.</p>
@@ -216,7 +215,7 @@
     &lt;/div&gt;
     </code></pre>
     <p>When using <code>autohide: false</code>, you must add a close button to allow users to dismiss the toast.</p>
-    <Example code={`<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+    <Example code='<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
         <div class="toast-header">
           <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
           <strong class="me-auto">Bootstrap</strong>
@@ -226,7 +225,7 @@
         <div class="toast-body">
           Hello, world! This is a toast message.
         </div>
-      </div>`} /><p>While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts. Even if you give the toast a long <a href="#options"><code>delay</code> timeout</a>, keyboard and assistive technology users may find it difficult to reach the toast in time to take action (since toasts don’t receive focus when they are displayed). If you absolutely must have further controls, we recommend using a toast with <code>autohide: false</code>.</p>
+      </div>' /><p>While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts. Even if you give the toast a long <a href="#options"><code>delay</code> timeout</a>, keyboard and assistive technology users may find it difficult to reach the toast in time to take action (since toasts don’t receive focus when they are displayed). If you absolutely must have further controls, we recommend using a toast with <code>autohide: false</code>.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, toasts now use local CSS variables on <code>.toast</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>

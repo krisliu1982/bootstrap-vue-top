@@ -10,7 +10,7 @@
     <Callout>
     <p>The base <code>.nav</code> component does not include any <code>.active</code> state. The following examples include the class, mainly to demonstrate that this particular class does not trigger any special styling.</p>
     <p>To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for current page, or <code>true</code> for the current item in a set.</p>
-    </Callout><Example code={`<ul class="nav">
+    </Callout><Example code='<ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -23,18 +23,18 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><p>Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like above, <code>&lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code>&lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
-    <Example code={`<nav class="nav">
+      </ul>' /><p>Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like above, <code>&lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code>&lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would, but without the extra markup.</p>
+    <Example code='<nav class="nav">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </nav>`} /><h2 id="available-styles">Available styles<a class="anchor-link" href="#available-styles" aria-label="Link to Available styles"></a></h2>
+      </nav>' /><h2 id="available-styles">Available styles<a class="anchor-link" href="#available-styles" aria-label="Link to Available styles"></a></h2>
     <p>Change the style of <code>.nav</code>s component with modifiers and utilities. Mix and match as needed, or build your own.</p>
     <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
     <p>Change the horizontal alignment of your nav with <a href="[[docsref:/utilities/flex#justify-content]]">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right-aligned.</p>
     <p>Centered with <code>.justify-content-center</code>:</p>
-    <Example code={`<ul class="nav justify-content-center">
+    <Example code='<ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -47,8 +47,8 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><p>Right-aligned with <code>.justify-content-end</code>:</p>
-    <Example code={`<ul class="nav justify-content-end">
+      </ul>' /><p>Right-aligned with <code>.justify-content-end</code>:</p>
+    <Example code='<ul class="nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -61,9 +61,9 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h3 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h3>
+      </ul>' /><h3 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h3>
     <p>Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</p>
-    <Example code={`<ul class="nav flex-column">
+    <Example code='<ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -76,15 +76,15 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><p>As always, vertical navigation is possible without <code>&lt;ul&gt;</code>s, too.</p>
-    <Example code={`<nav class="nav flex-column">
+      </ul>' /><p>As always, vertical navigation is possible without <code>&lt;ul&gt;</code>s, too.</p>
+    <Example code='<nav class="nav flex-column">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </nav>`} /><h3 id="tabs">Tabs<a class="anchor-link" href="#tabs" aria-label="Link to Tabs"></a></h3>
+      </nav>' /><h3 id="tabs">Tabs<a class="anchor-link" href="#tabs" aria-label="Link to Tabs"></a></h3>
     <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="#javascript-behavior">tab JavaScript plugin</a>.</p>
-    <Example code={`<ul class="nav nav-tabs">
+    <Example code='<ul class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -97,9 +97,9 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h3 id="pills">Pills<a class="anchor-link" href="#pills" aria-label="Link to Pills"></a></h3>
+      </ul>' /><h3 id="pills">Pills<a class="anchor-link" href="#pills" aria-label="Link to Pills"></a></h3>
     <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
-    <Example code={`<ul class="nav nav-pills">
+    <Example code='<ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -112,9 +112,9 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h3 id="underline">Underline<a class="anchor-link" href="#underline" aria-label="Link to Underline"></a></h3>
+      </ul>' /><h3 id="underline">Underline<a class="anchor-link" href="#underline" aria-label="Link to Underline"></a></h3>
     <p>Take that same HTML, but use <code>.nav-underline</code> instead:</p>
-    <Example code={`<ul class="nav nav-underline">
+    <Example code='<ul class="nav nav-underline">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -127,9 +127,9 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h3 id="fill-and-justify">Fill and justify<a class="anchor-link" href="#fill-and-justify" aria-label="Link to Fill and justify"></a></h3>
+      </ul>' /><h3 id="fill-and-justify">Fill and justify<a class="anchor-link" href="#fill-and-justify" aria-label="Link to Fill and justify"></a></h3>
     <p>Force your <code>.nav</code>’s contents to extend the full available width with one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
-    <Example code={`<ul class="nav nav-pills nav-fill">
+    <Example code='<ul class="nav nav-pills nav-fill">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -142,14 +142,14 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><p>When using a <code>&lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code>&lt;a&gt;</code> elements.</p>
-    <Example code={`<nav class="nav nav-pills nav-fill">
+      </ul>' /><p>When using a <code>&lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code>&lt;a&gt;</code> elements.</p>
+    <Example code='<nav class="nav nav-pills nav-fill">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Much longer nav link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </nav>`} /><p>For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
-    <Example code={`<ul class="nav nav-pills nav-justified">
+      </nav>' /><p>For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
+    <Example code='<ul class="nav nav-pills nav-justified">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -162,26 +162,26 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><p>Similar to the <code>.nav-fill</code> example using a <code>&lt;nav&gt;</code>-based navigation.</p>
-    <Example code={`<nav class="nav nav-pills nav-justified">
+      </ul>' /><p>Similar to the <code>.nav-fill</code> example using a <code>&lt;nav&gt;</code>-based navigation.</p>
+    <Example code='<nav class="nav nav-pills nav-justified">
         <a class="nav-link active" aria-current="page" href="#">Active</a>
         <a class="nav-link" href="#">Much longer nav link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </nav>`} /><h2 id="working-with-flex-utilities">Working with flex utilities<a class="anchor-link" href="#working-with-flex-utilities" aria-label="Link to Working with flex utilities"></a></h2>
+      </nav>' /><h2 id="working-with-flex-utilities">Working with flex utilities<a class="anchor-link" href="#working-with-flex-utilities" aria-label="Link to Working with flex utilities"></a></h2>
     <p>If you need responsive nav variations, consider using a series of <a href="[[docsref:/utilities/flex]]">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.</p>
-    <Example code={`<nav class="nav nav-pills flex-column flex-sm-row">
+    <Example code='<nav class="nav nav-pills flex-column flex-sm-row">
         <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
         <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
-      </nav>`} /><h2 id="regarding-accessibility">Regarding accessibility<a class="anchor-link" href="#regarding-accessibility" aria-label="Link to Regarding accessibility"></a></h2>
+      </nav>' /><h2 id="regarding-accessibility">Regarding accessibility<a class="anchor-link" href="#regarding-accessibility" aria-label="Link to Regarding accessibility"></a></h2>
     <p>If you’re using navs to provide a navigation bar, be sure to add a <code>role=&quot;navigation&quot;</code> to the most logical parent container of the <code>&lt;ul&gt;</code>, or wrap a <code>&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;</code> itself, as this would prevent it from being announced as an actual list by assistive technologies.</p>
     <p>Note that navigation bars, even if visually styled as tabs with the <code>.nav-tabs</code> class, should <strong>not</strong> be given <code>role=&quot;tablist&quot;</code>, <code>role=&quot;tab&quot;</code> or <code>role=&quot;tabpanel&quot;</code> attributes. These are only appropriate for dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA Authoring Practices Guide tabs pattern</a>. See <a href="#javascript-behavior">JavaScript behavior</a> for dynamic tabbed interfaces in this section for an example. The <code>aria-current</code> attribute is not necessary on dynamic tabbed interfaces since our JavaScript handles the selected state by adding <code>aria-selected=&quot;true&quot;</code> on the active tab.</p>
     <h2 id="using-dropdowns">Using dropdowns<a class="anchor-link" href="#using-dropdowns" aria-label="Link to Using dropdowns"></a></h2>
     <p>Add dropdown menus with a little extra HTML and the <a href="[[docsref:/components/dropdowns#usage]]">dropdowns JavaScript plugin</a>.</p>
     <h3 id="tabs-with-dropdowns">Tabs with dropdowns<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="Link to Tabs with dropdowns"></a></h3>
-    <Example code={`<ul class="nav nav-tabs">
+    <Example code='<ul class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -201,8 +201,8 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h3 id="pills-with-dropdowns">Pills with dropdowns<a class="anchor-link" href="#pills-with-dropdowns" aria-label="Link to Pills with dropdowns"></a></h3>
-    <Example code={`<ul class="nav nav-pills">
+      </ul>' /><h3 id="pills-with-dropdowns">Pills with dropdowns<a class="anchor-link" href="#pills-with-dropdowns" aria-label="Link to Pills with dropdowns"></a></h3>
+    <Example code='<ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
@@ -222,7 +222,7 @@
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
-      </ul>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </ul>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, navs now use local CSS variables on <code>.nav</code>, <code>.nav-tabs</code>, and <code>.nav-pills</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <p>On the <code>.nav</code> base class:</p>
@@ -232,7 +232,7 @@
     <ScssDocs name="nav-underline-css-vars" file="scss/_nav.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="nav-variables" file="scss/_variables.scss" /><h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
     <p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" code='
     <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
@@ -261,7 +261,7 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+    ' /><pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
       &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home-tab-pane&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
       &lt;/li&gt;
@@ -283,7 +283,7 @@
     &lt;/div&gt;
     </code></pre>
     <p>To help fit your needs, this works with <code>&lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code>&lt;nav&gt;</code>, you shouldn’t add <code>role=&quot;tablist&quot;</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple <code>&lt;div&gt;</code>) and wrap the <code>&lt;nav&gt;</code> around it.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" code='
     <nav>
       <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
@@ -306,7 +306,7 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;nav&gt;
+    ' /><pre><code class="language-html">&lt;nav&gt;
       &lt;div class=&quot;nav nav-tabs&quot; id=&quot;nav-tab&quot; role=&quot;tablist&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;nav-home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
         &lt;button class=&quot;nav-link&quot; id=&quot;nav-profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
@@ -322,7 +322,7 @@
     &lt;/div&gt;
     </code></pre>
     <p>The tabs plugin also works with pills.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" code='
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
@@ -351,7 +351,7 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;ul class=&quot;nav nav-pills mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
+    ' /><pre><code class="language-html">&lt;ul class=&quot;nav nav-pills mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
       &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
       &lt;/li&gt;
@@ -373,7 +373,7 @@
     &lt;/div&gt;
     </code></pre>
     <p>And with vertical pills. Ideally, for vertical tabs, you should also add <code>aria-orientation=&quot;vertical&quot;</code> to the tab list container.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" code='
     <div class="d-flex align-items-start">
       <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
@@ -400,7 +400,7 @@
         </div>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;
       &lt;div class=&quot;nav flex-column nav-pills me-3&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;v-pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
         &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;

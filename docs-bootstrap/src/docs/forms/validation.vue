@@ -22,7 +22,7 @@
     <h2 id="custom-styles">Custom styles<a class="anchor-link" href="#custom-styles" aria-label="Link to Custom styles"></a></h2>
     <p>For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the <code>:invalid</code> and <code>:valid</code> styles applied to your form controls.</p>
     <p>Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.form-select</code>, and not <code>.form-control</code>.</p>
-    <Example code={`<form class="row g-3 needs-validation" novalidate>
+    <Example code='<form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
@@ -85,10 +85,10 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-      </form>`} /><Code containerClass="bd-example-snippet" lang="js" filePath={getDocsRelativePath('/static/docs/[version]/assets/js/validate-forms.js')} /><h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
+      </form>' /><Code containerClass="bd-example-snippet" lang="js" filePath={getDocsRelativePath('/static/docs/[version]/assets/js/validate-forms.js')} /><h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
     <p>Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p>
     <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
-    <Example code={`<form class="row g-3">
+    <Example code='<form class="row g-3">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
@@ -130,11 +130,11 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-      </form>`} /><h2 id="server-side">Server-side<a class="anchor-link" href="#server-side" aria-label="Link to Server-side"></a></h2>
+      </form>' /><h2 id="server-side">Server-side<a class="anchor-link" href="#server-side" aria-label="Link to Server-side"></a></h2>
     <p>We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with <code>.is-invalid</code> and <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also supported with these classes.</p>
     <p>For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using <code>aria-describedby</code> (noting that this attribute allows more than one <code>id</code> to be referenced, in case the field already points to additional form text).</p>
     <p>To fix <a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radius</a>, input groups require an additional <code>.has-validation</code> class.</p>
-    <Example code={`<form class="row g-3">
+    <Example code='<form class="row g-3">
         <div class="col-md-4">
           <label for="validationServer01" class="form-label">First name</label>
           <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
@@ -197,14 +197,14 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-      </form>`} /><h2 id="supported-elements">Supported elements<a class="anchor-link" href="#supported-elements" aria-label="Link to Supported elements"></a></h2>
+      </form>' /><h2 id="supported-elements">Supported elements<a class="anchor-link" href="#supported-elements" aria-label="Link to Supported elements"></a></h2>
     <p>Validation styles are available for the following form controls and components:</p>
     <ul>
     <li><code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s with <code>.form-control</code> (including up to one <code>.form-control</code> in input groups)</li>
     <li><code>&lt;select&gt;</code>s with <code>.form-select</code></li>
     <li><code>.form-check</code>s</li>
     </ul>
-    <Example code={`<form class="was-validated">
+    <Example code='<form class="was-validated">
         <div class="mb-3">
           <label for="validationTextarea" class="form-label">Textarea</label>
           <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
@@ -247,9 +247,9 @@
         <div class="mb-3">
           <button class="btn btn-primary" type="submit" disabled>Submit form</button>
         </div>
-      </form>`} /><h2 id="tooltips">Tooltips<a class="anchor-link" href="#tooltips" aria-label="Link to Tooltips"></a></h2>
+      </form>' /><h2 id="tooltips">Tooltips<a class="anchor-link" href="#tooltips" aria-label="Link to Tooltips"></a></h2>
     <p>If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</p>
-    <Example code={`<form class="row g-3 needs-validation" novalidate>
+    <Example code='<form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4 position-relative">
           <label for="validationTooltip01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
@@ -301,7 +301,7 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-      </form>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </form>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.3.0"/><p>As part of Bootstrap’s evolving CSS variables approach, forms now use local CSS variables for validation for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="root-form-validation-variables" file="scss/_root.scss" /><p>These variables are also color mode adaptive, meaning they change color while in dark mode.</p>

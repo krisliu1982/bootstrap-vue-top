@@ -8,11 +8,11 @@
     <p>Use <code>z-index</code> utilities to stack elements on top of one another. Requires a <code>position</code> value other than <code>static</code>, which can be set with custom styles or using our <a href="[[docsref:/utilities/position/]]">position utilities</a>.</p>
     <Callout>
     <p>We call these “low-level” <code>z-index</code> utilities because of their default values of <code>-1</code> through <code>3</code>, which we use for the layout of overlapping components. High-level <code>z-index</code> values are used for overlay components like modals and tooltips.</p>
-    </Callout><Example class="bd-example-zindex-levels position-relative" code={`<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
+    </Callout><Example class="bd-example-zindex-levels position-relative" code='<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
     <div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
     <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
     <div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
-    <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>`} /><h2 id="overlays">Overlays<a class="anchor-link" href="#overlays" aria-label="Link to Overlays"></a></h2>
+    <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>' /><h2 id="overlays">Overlays<a class="anchor-link" href="#overlays" aria-label="Link to Overlays"></a></h2>
     <p>Bootstrap overlay components—dropdown, modal, offcanvas, popover, toast, and tooltip—all have their own <code>z-index</code> values to ensure a usable experience with competing “layers” of an interface.</p>
     <p>Read about them in the <a href="[[docsref:/layout/z-index]]"><code>z-index</code> layout page</a>.</p>
     <h2 id="component-approach">Component approach<a class="anchor-link" href="#component-approach" aria-label="Link to Component approach"></a></h2>

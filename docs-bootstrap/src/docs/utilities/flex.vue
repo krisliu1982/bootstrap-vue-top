@@ -6,7 +6,7 @@
 
     <h2 id="enable-flex-behaviors">Enable flex behaviors<a class="anchor-link" href="#enable-flex-behaviors" aria-label="Link to Enable flex behaviors"></a></h2>
     <p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex p-2">I'm a flexbox container!</div>`} /><Example class="bd-example-flex" code={`<div class="d-inline-flex p-2">I'm an inline flexbox container!</div>`} /><p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
+    <Example class="bd-example-flex" code='<div class="d-flex p-2">I&#39;m a flexbox container!</div>' /><Example class="bd-example-flex" code='<div class="d-inline-flex p-2">I&#39;m an inline flexbox container!</div>' /><p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
     <ul>
         <template v-for="breakpoint in data['breakpoints']">
           <li><code>.d{{breakpoint.abbr}}-flex</code></li>
@@ -15,7 +15,7 @@
     </ul><h2 id="direction">Direction<a class="anchor-link" href="#direction" aria-label="Link to Direction"></a></h2>
     <p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
     <p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex flex-row mb-3">
+    <Example class="bd-example-flex" code='<div class="d-flex flex-row mb-3">
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
         <div class="p-2">Flex item 3</div>
@@ -24,8 +24,8 @@
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
         <div class="p-2">Flex item 3</div>
-      </div>`} /><p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex flex-column mb-3">
+      </div>' /><p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
+    <Example class="bd-example-flex" code='<div class="d-flex flex-column mb-3">
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
         <div class="p-2">Flex item 3</div>
@@ -34,7 +34,7 @@
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
         <div class="p-2">Flex item 3</div>
-      </div>`} /><p>Responsive variations also exist for <code>flex-direction</code>.</p>
+      </div>' /><p>Responsive variations also exist for <code>flex-direction</code>.</p>
     <ul>
               <template v-for="breakpoint in data['breakpoints']">
           <li><code>.flex{{breakpoint.abbr}}-row</code></li>
@@ -180,24 +180,24 @@
         </template>
     </ul><h2 id="fill">Fill<a class="anchor-link" href="#fill" aria-label="Link to Fill"></a></h2>
     <p>Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex">
+    <Example class="bd-example-flex" code='<div class="d-flex">
         <div class="p-2 flex-fill">Flex item with a lot of content</div>
         <div class="p-2 flex-fill">Flex item</div>
         <div class="p-2 flex-fill">Flex item</div>
-      </div>`} /><p>Responsive variations also exist for <code>flex-fill</code>.</p>
+      </div>' /><p>Responsive variations also exist for <code>flex-fill</code>.</p>
     <ul>
       <li v-for="breakpoint in data['breakpoints']"><code>.flex{{breakpoint.abbr}}-fill</code></li>
     </ul><h2 id="grow-and-shrink">Grow and shrink<a class="anchor-link" href="#grow-and-shrink" aria-label="Link to Grow and shrink"></a></h2>
     <p>Use <code>.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex">
+    <Example class="bd-example-flex" code='<div class="d-flex">
         <div class="p-2 flex-grow-1">Flex item</div>
         <div class="p-2">Flex item</div>
         <div class="p-2">Third flex item</div>
-      </div>`} /><p>Use <code>.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with <code>.w-100</code>.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex">
+      </div>' /><p>Use <code>.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with <code>.w-100</code>.</p>
+    <Example class="bd-example-flex" code='<div class="d-flex">
         <div class="p-2 w-100">Flex item</div>
         <div class="p-2 flex-shrink-1">Flex item</div>
-      </div>`} /><p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
+      </div>' /><p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
     <ul>
               <template v-for="breakpoint in data['breakpoints']">
           <li><code>.flex{{breakpoint.abbr}}-{'{'}grow|shrink{'}'}-0</code></li>
@@ -205,7 +205,7 @@
         </template>
     </ul><h2 id="auto-margins">Auto margins<a class="anchor-link" href="#auto-margins" aria-label="Link to Auto margins"></a></h2>
     <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex mb-3">
+    <Example class="bd-example-flex" code='<div class="d-flex mb-3">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -221,9 +221,9 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
         <div class="ms-auto p-2">Flex item</div>
-      </div>`} /><h3 id="with-align-items">With align-items<a class="anchor-link" href="#with-align-items" aria-label="Link to With align-items"></a></h3>
+      </div>' /><h3 id="with-align-items">With align-items<a class="anchor-link" href="#with-align-items" aria-label="Link to With align-items"></a></h3>
     <p>Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column</code>, and <code>margin-top: auto</code> or <code>margin-bottom: auto</code>.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+    <Example class="bd-example-flex" code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
         <div class="mb-auto p-2">Flex item</div>
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -233,7 +233,7 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
         <div class="mt-auto p-2">Flex item</div>
-      </div>`} /><h2 id="wrap">Wrap<a class="anchor-link" href="#wrap" aria-label="Link to Wrap"></a></h2>
+      </div>' /><h2 id="wrap">Wrap<a class="anchor-link" href="#wrap" aria-label="Link to Wrap"></a></h2>
     <p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code>.flex-nowrap</code>, wrapping with <code>.flex-wrap</code>, or reverse wrapping with <code>.flex-wrap-reverse</code>.</p>
     <div class="bd-example bd-example-flex">
       <div class="d-flex flex-nowrap" style="width: 8rem;">
@@ -300,11 +300,11 @@
   
     </ul><h2 id="order">Order<a class="anchor-link" href="#order" aria-label="Link to Order"></a></h2>
     <p>Change the <em>visual</em> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.</p>
-    <Example class="bd-example-flex" code={`<div class="d-flex flex-nowrap">
+    <Example class="bd-example-flex" code='<div class="d-flex flex-nowrap">
         <div class="order-3 p-2">First flex item</div>
         <div class="order-2 p-2">Second flex item</div>
         <div class="order-1 p-2">Third flex item</div>
-      </div>`} /><p>Responsive variations also exist for <code>order</code>.</p>
+      </div>' /><p>Responsive variations also exist for <code>order</code>.</p>
     <ul>
       <li v-for="breakpoint in data['breakpoints']"><code>.order{{breakpoint.abbr}}-{value}</code></li>
     </ul><p>Additionally there are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively.</p>
@@ -448,22 +448,22 @@
         </template>
     </ul><h2 id="media-object">Media object<a class="anchor-link" href="#media-object" aria-label="Link to Media object"></a></h2>
     <p>Looking to replicate the <a href="https://getbootstrap.com/docs/4.6/components/media-object/">media object component</a> from Bootstrap 4? Recreate it in no time with a few flex utilities that allow even more flexibility and customization than before.</p>
-    <Example code={`<div class="d-flex">
+    <Example code='<div class="d-flex">
         <div class="flex-shrink-0">
           <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
         </div>
         <div class="flex-grow-1 ms-3">
           This is some content from a media component. You can replace this with any content and adjust it as needed.
         </div>
-      </div>`} /><p>And say you want to vertically center the content next to the image:</p>
-    <Example code={`<div class="d-flex align-items-center">
+      </div>' /><p>And say you want to vertically center the content next to the image:</p>
+    <Example code='<div class="d-flex align-items-center">
         <div class="flex-shrink-0">
           <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
         </div>
         <div class="flex-grow-1 ms-3">
           This is some content from a media component. You can replace this with any content and adjust it as needed.
         </div>
-      </div>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </div>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Flexbox utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="[[docsref:/utilities/api#using-the-api]]">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />

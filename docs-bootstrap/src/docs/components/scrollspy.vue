@@ -19,7 +19,7 @@
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="navbar">Navbar<a class="anchor-link" href="#navbar" aria-label="Link to Navbar"></a></h3>
     <p>Scroll the area below the navbar and watch the active class change. Open the dropdown menu and watch the dropdown items be highlighted as well.</p>
-    <Example showMarkup={false} code={`<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 rounded-2">
+    <Example :showMarkup="false" code='<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 rounded-2">
         <a class="navbar-brand" href="#">Navbar</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
@@ -50,7 +50,7 @@
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         <h4 id="scrollspyHeading5">Fifth heading</h4>
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>`} /><pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
+      </div>' /><pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
       &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
       &lt;ul class=&quot;nav nav-pills&quot;&gt;
         &lt;li class=&quot;nav-item&quot;&gt;
@@ -85,7 +85,7 @@
     </code></pre>
     <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
     <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" '
     <div class="row">
       <div class="col-4">
         <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
@@ -144,7 +144,7 @@
         </div>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;nav id=&quot;navbar-example3&quot; class=&quot;h-100 flex-column align-items-stretch pe-4 border-end&quot;&gt;
           &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
@@ -199,7 +199,7 @@
     </code></pre>
     <h3 id="list-group">List group<a class="anchor-link" href="#list-group" aria-label="Link to List group"></a></h3>
     <p>Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" '
     <div class="row">
       <div class="col-4">
         <div id="list-example" class="list-group">
@@ -222,7 +222,7 @@
         </div>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;div id=&quot;list-example&quot; class=&quot;list-group&quot;&gt;
           &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-1&quot;&gt;Item 1&lt;/a&gt;
@@ -247,7 +247,7 @@
     </code></pre>
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
     <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current document. Scroll the area and watch the <code>.active</code> class change.</p>
-    <Example showMarkup={false} code={`
+    <Example :showMarkup="false" '
     <div class="row">
       <div class="col-4">
         <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
@@ -273,7 +273,7 @@
         </div>
       </div>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;div id=&quot;simple-list-example&quot; class=&quot;d-flex flex-column gap-2 simple-list-example-scrollspy text-center&quot;&gt;
           &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-1&quot;&gt;Item 1&lt;/a&gt;

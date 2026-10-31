@@ -55,8 +55,7 @@
     <Table class="table table-hover" /><Table class="table table-dark table-hover" /><p>These hoverable rows can also be combined with the striped rows variant:</p>
     <Table class="table table-striped table-hover" /><h3 id="active-tables">Active tables<a class="anchor-link" href="#active-tables" aria-label="Link to Active tables"></a></h3>
     <p>Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
-    <Example showMarkup={false} code={`
-    <table class="table">
+    <Example :showMarkup="false" code='<table class="table">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -86,7 +85,7 @@
         </tr>
       </tbody>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -106,8 +105,7 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
     </code></pre>
-    <Example showMarkup={false} code={`
-    <table class="table table-dark">
+    <Example :showMarkup="false" code='<table class="table table-dark">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -137,7 +135,7 @@
         </tr>
       </tbody>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table table-dark&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table table-dark&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -177,7 +175,7 @@
     <p>Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
     <Table class="table table-sm" /><Table class="table table-dark table-sm" /><h2 id="table-group-dividers">Table group dividers<a class="anchor-link" href="#table-group-dividers" aria-label="Link to Table group dividers"></a></h2>
     <p>Add a thicker border, darker between table groups—<code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code>—with <code>.table-group-divider</code>. Customize the color by changing the <code>border-top-color</code> (which we don’t currently provide a utility class for at this time).</p>
-    <Example code={`<table class="table">
+    <Example code='<table class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -206,10 +204,9 @@
             <td>@social</td>
           </tr>
         </tbody>
-      </table>`} /><h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
+      </table>' /><h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
     <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="[[docsref:/utilities/vertical-align]]">vertical align</a> classes to re-align where needed.</p>
-    <Example showMarkup={false} code={`
-    <div class="table-responsive">
+    <Example :showMarkup="false" code='<div class="table-responsive">
       <table class="table align-middle">
         <thead>
           <tr>
@@ -241,7 +238,7 @@
         </tbody>
       </table>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
       &lt;table class=&quot;table align-middle&quot;&gt;
         &lt;thead&gt;
           &lt;tr&gt;
@@ -267,8 +264,7 @@
     </code></pre>
     <h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
     <p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
-    <Example showMarkup={false} code={`
-    <table class="table table-striped table-bordered">
+    <Example :showMarkup="false" code='<table class="table table-striped table-bordered">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -322,7 +318,7 @@
         </tr>
       </tbody>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -345,8 +341,7 @@
     <h2 id="anatomy">Anatomy<a class="anchor-link" href="#anatomy" aria-label="Link to Anatomy"></a></h2>
     <h3 id="table-head">Table head<a class="anchor-link" href="#table-head" aria-label="Link to Table head"></a></h3>
     <p>Similar to tables and dark tables, use the modifier classes <code>.table-light</code> or <code>.table-dark</code> to make <code>&lt;thead&gt;</code>s appear light or dark gray.</p>
-    <Example showMarkup={false} code={`
-    <table class="table">
+    <Example :showMarkup="false" code='<table class="table">
       <thead class="table-light">
         <tr>
           <th scope="col">#</th>
@@ -376,7 +371,7 @@
         </tr>
       </tbody>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead class=&quot;table-light&quot;&gt;
         ...
       &lt;/thead&gt;
@@ -385,8 +380,7 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
     </code></pre>
-    <Example showMarkup={false} code={`
-    <table class="table">
+    <Example :showMarkup="false" code='<table class="table">
       <thead class="table-dark">
         <tr>
           <th scope="col">#</th>
@@ -416,7 +410,7 @@
         </tr>
       </tbody>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead class=&quot;table-dark&quot;&gt;
         ...
       &lt;/thead&gt;
@@ -426,8 +420,7 @@
     &lt;/table&gt;
     </code></pre>
     <h3 id="table-foot">Table foot<a class="anchor-link" href="#table-foot" aria-label="Link to Table foot"></a></h3>
-    <Example showMarkup={false} code={`
-    <table class="table">
+    <Example :showMarkup="false" code='<table class="table">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -465,7 +458,7 @@
         </tr>
       </tfoot>
     </table>
-    `} /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -495,7 +488,7 @@
     &lt;/table&gt;
     </code></pre>
     <p>You can also put the <code>&lt;caption&gt;</code> on the top of the table with <code>.caption-top</code>.</p>
-    <Example code={`<table class="table caption-top">
+    <Example code='<table class="table caption-top">
         <caption>List of users</caption>
         <thead>
           <tr>
@@ -525,15 +518,14 @@
             <td>@social</td>
           </tr>
         </tbody>
-      </table>`} /><h2 id="responsive-tables">Responsive tables<a class="anchor-link" href="#responsive-tables" aria-label="Link to Responsive tables"></a></h2>
+      </table>' /><h2 id="responsive-tables">Responsive tables<a class="anchor-link" href="#responsive-tables" aria-label="Link to Responsive tables"></a></h2>
     <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
     <Callout type="warning">
     <h5 id="vertical-clippingtruncation">Vertical clipping/truncation</h5>
     <p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.</p>
     </Callout><h3 id="always-responsive">Always responsive<a class="anchor-link" href="#always-responsive" aria-label="Link to Always responsive"></a></h3>
     <p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
-    <Example showMarkup={false} code={`
-    <div class="table-responsive">
+    <Example :showMarkup="false" code='<div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
@@ -589,7 +581,7 @@
         </tbody>
       </table>
     </div>
-    `} /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
       &lt;table class=&quot;table&quot;&gt;
         ...
       &lt;/table&gt;

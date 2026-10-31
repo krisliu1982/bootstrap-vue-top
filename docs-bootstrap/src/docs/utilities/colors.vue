@@ -37,12 +37,12 @@
     <p>We use an RGB version of our <code>--bs-primary</code> (with the value of <code>13, 110, 253</code>) CSS variable and attached a second CSS variable, <code>--bs-text-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.text-primary</code> now, your computed <code>color</code> value is <code>rgba(13, 110, 253, 1)</code>. The local CSS variable inside each <code>.text-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.</p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
     <p>To change that opacity, override <code>--bs-text-opacity</code> via custom styles or inline styles.</p>
-    <Example code={`<div class="text-primary">This is default primary text</div>
-    <div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>`} /><p>Or, choose from any of the <code>.text-opacity</code> utilities:</p>
-    <Example code={`<div class="text-primary">This is default primary text</div>
+    <Example code='<div class="text-primary">This is default primary text</div>
+    <div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>' /><p>Or, choose from any of the <code>.text-opacity</code> utilities:</p>
+    <Example code='<div class="text-primary">This is default primary text</div>
     <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
     <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
-    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>`} /><h2 id="specificity">Specificity<a class="anchor-link" href="#specificity" aria-label="Link to Specificity"></a></h2>
+    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>' /><h2 id="specificity">Specificity<a class="anchor-link" href="#specificity" aria-label="Link to Specificity"></a></h2>
     <p>Sometimes contextual classes cannot be applied due to the specificity of another selector. In some cases, a sufficient workaround is to wrap your element’s content in a <code>&lt;div&gt;</code> or more semantic element with the desired class.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>In addition to the following Sass functionality, consider reading about our included <a href="[[docsref:/customize/css-variables]]">CSS custom properties</a> (aka CSS variables) for colors and more.</p>

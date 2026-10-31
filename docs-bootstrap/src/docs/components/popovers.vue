@@ -27,9 +27,9 @@
     </code></pre>
     <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
     <p>We use JavaScript similar to the snippet above to render the following live popover. Titles are set via <code>data-bs-title</code> and body content is set via <code>data-bs-content</code>.</p>
-    <Callout name="warning-data-bs-title-vs-title" type="warning" /><Example addStackblitzJs code={`<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>`} /><h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
+    <Callout name="warning-data-bs-title-vs-title" type="warning" /><Example addStackblitzJs code='<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>' /><h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
     <p>Four options are available: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL. Set <code>data-bs-placement</code> to change the direction.</p>
-    <Example addStackblitzJs code={`<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+    <Example addStackblitzJs code='<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
         Popover on top
       </button>
       <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
@@ -40,7 +40,7 @@
       </button>
       <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
         Popover on left
-      </button>`} /><h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
+      </button>' /><h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
     <p>When you have some styles on a parent element that interfere with a popover, you’ll want to specify a custom <code>container</code> so that the popover’s HTML appears within that element instead. This is common in responsive tables, input groups, and the like.</p>
     <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
       container: &#39;body&#39;
@@ -53,26 +53,26 @@
     </code></pre>
     <h3 id="custom-popovers">Custom popovers<a class="anchor-link" href="#custom-popovers" aria-label="Link to Custom popovers"></a></h3>
     <AddedIn version="5.2.0" /><p>You can customize the appearance of popovers using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-popover&quot;</code> to scope our custom appearance and use it to override some of the local CSS variables.</p>
-    <ScssDocs name="custom-popovers" file="site/src/scss/_component-examples.scss" /><Example addStackblitzJs class="custom-popover-demo" code={`<button type="button" class="btn btn-secondary"
+    <ScssDocs name="custom-popovers" file="site/src/scss/_component-examples.scss" /><Example addStackblitzJs class="custom-popover-demo" code='<button type="button" class="btn btn-secondary"
               data-bs-toggle="popover" data-bs-placement="right"
               data-bs-custom-class="custom-popover"
               data-bs-title="Custom popover"
               data-bs-content="This popover is themed via CSS variables.">
         Custom popover
-      </button>`} /><h3 id="dismiss-on-next-click">Dismiss on next click<a class="anchor-link" href="#dismiss-on-next-click" aria-label="Link to Dismiss on next click"></a></h3>
+      </button>' /><h3 id="dismiss-on-next-click">Dismiss on next click<a class="anchor-link" href="#dismiss-on-next-click" aria-label="Link to Dismiss on next click"></a></h3>
     <p>Use the <code>focus</code> trigger to dismiss popovers on the user’s next click of an element other than the toggle element.</p>
     <Callout type="danger">
     <p><strong>Dismissing on next click requires specific HTML for proper cross-browser and cross-platform behavior.</strong> You can only use <code>&lt;a&gt;</code> elements, not <code>&lt;button&gt;</code>s, and you must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code>tabindex</code></a>.</p>
-    </Callout><Example addStackblitzJs code={`<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>`} /><pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.popover-dismiss&#39;, {
+    </Callout><Example addStackblitzJs code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>' /><pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.popover-dismiss&#39;, {
       trigger: &#39;focus&#39;
     })
     </code></pre>
     <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
     <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
     <p>For disabled popover triggers, you may also prefer <code>data-bs-trigger=&quot;hover focus&quot;</code> so that the popover appears as immediate visual feedback to your users as they may not expect to <em>click</em> on a disabled element.</p>
-    <Example addStackblitzJs code={`<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+    <Example addStackblitzJs code='<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
         <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-      </span>`} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </span>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, popovers now use local CSS variables on <code>.popover</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="popover-css-vars" file="scss/_popover.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>

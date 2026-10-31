@@ -37,36 +37,36 @@
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="three-columns">Three columns<a class="anchor-link" href="#three-columns" aria-label="Link to Three columns"></a></h3>
     <p>Three equal-width columns across all viewports and devices can be created by using the <code>.g-col-4</code> classes. Add <a href="#responsive">responsive classes</a> to change the layout by viewport size.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-4">.g-col-4</div>
         <div class="g-col-4">.g-col-4</div>
         <div class="g-col-4">.g-col-4</div>
-      </div>`} /><h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
+      </div>' /><h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
     <p>Use responsive classes to adjust your layout across viewports. Here we start with two columns on the narrowest viewports, and then grow to three columns on medium viewports and above.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
         <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
         <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
-      </div>`} /><p>Compare that to this two column layout at all viewports.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+      </div>' /><p>Compare that to this two column layout at all viewports.</p>
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
-      </div>`} /><h2 id="wrapping">Wrapping<a class="anchor-link" href="#wrapping" aria-label="Link to Wrapping"></a></h2>
+      </div>' /><h2 id="wrapping">Wrapping<a class="anchor-link" href="#wrapping" aria-label="Link to Wrapping"></a></h2>
     <p>Grid items automatically wrap to the next line when there’s no more room horizontally. Note that the <code>gap</code> applies to horizontal and vertical gaps between grid items.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
 
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
-      </div>`} /><h2 id="starts">Starts<a class="anchor-link" href="#starts" aria-label="Link to Starts"></a></h2>
+      </div>' /><h2 id="starts">Starts<a class="anchor-link" href="#starts" aria-label="Link to Starts"></a></h2>
     <p>Start classes aim to replace our default grid’s offset classes, but they’re not entirely the same. CSS Grid creates a grid template through styles that tell browsers to “start at this column” and “end at this column”. Those properties are <code>grid-column-start</code> and <code>grid-column-end</code>. Start classes are shorthand for the former. Pair them with the column classes to size and align your columns however you need. Start classes begin at <code>1</code> as <code>0</code> is an invalid value for these properties.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-3 g-start-2">.g-col-3 .g-start-2</div>
         <div class="g-col-4 g-start-6">.g-col-4 .g-start-6</div>
-      </div>`} /><h2 id="auto-columns">Auto columns<a class="anchor-link" href="#auto-columns" aria-label="Link to Auto columns"></a></h2>
+      </div>' /><h2 id="auto-columns">Auto columns<a class="anchor-link" href="#auto-columns" aria-label="Link to Auto columns"></a></h2>
     <p>When there are no classes on the grid items (the immediate children of a <code>.grid</code>), each grid item will automatically be sized to one column.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div>1</div>
         <div>1</div>
         <div>1</div>
@@ -79,8 +79,8 @@
         <div>1</div>
         <div>1</div>
         <div>1</div>
-      </div>`} /><p>This behavior can be mixed with grid column classes.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center">
+      </div>' /><p>This behavior can be mixed with grid column classes.</p>
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center">
         <div class="g-col-6">.g-col-6</div>
         <div>1</div>
         <div>1</div>
@@ -88,7 +88,7 @@
         <div>1</div>
         <div>1</div>
         <div>1</div>
-      </div>`} /><h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
+      </div>' /><h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
     <p>Similar to our default grid system, our CSS Grid allows for easy nesting of <code>.grid</code>s. However, unlike the default, this grid inherits changes in the rows, columns, and gaps. Consider the example below:</p>
     <ul>
     <li>We override the default number of columns with a local CSS variable: <code>--bs-columns: 3</code>.</li>
@@ -97,7 +97,7 @@
     <li>The third auto-column has no nested content.</li>
     </ul>
     <p>In practice this allows for more complex and custom layouts when compared to our default grid system.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center overflow-x-auto" style="--bs-columns: 3;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center overflow-x-auto" style="--bs-columns: 3;">
         <div>
           First auto-column
           <div class="grid">
@@ -114,7 +114,7 @@
           </div>
         </div>
         <div>Third auto-column</div>
-      </div>`} /><h2 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h2>
+      </div>' /><h2 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h2>
     <p>Customize the number of columns, the number of rows, and the width of the gaps with local CSS variables.</p>
     <BsTable>
     <table>
@@ -144,49 +144,49 @@
     </BsTable><p>These CSS variables have no default value; instead, they apply fallback values that are used <em>until</em> a local instance is provided. For example, we use <code>var(--bs-rows, 1)</code> for our CSS Grid rows, which ignores <code>--bs-rows</code> because that hasn’t been set anywhere yet. Once it is, the <code>.grid</code> instance will use that value instead of the fallback value of <code>1</code>.</p>
     <h3 id="no-grid-classes">No grid classes<a class="anchor-link" href="#no-grid-classes" aria-label="Link to No grid classes"></a></h3>
     <p>Immediate children elements of <code>.grid</code> are grid items, so they’ll be sized without explicitly adding a <code>.g-col</code> class.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-columns: 3;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-columns: 3;">
         <div>Auto-column</div>
         <div>Auto-column</div>
         <div>Auto-column</div>
-      </div>`} /><h3 id="columns-and-gaps">Columns and gaps<a class="anchor-link" href="#columns-and-gaps" aria-label="Link to Columns and gaps"></a></h3>
+      </div>' /><h3 id="columns-and-gaps">Columns and gaps<a class="anchor-link" href="#columns-and-gaps" aria-label="Link to Columns and gaps"></a></h3>
     <p>Adjust the number of columns and the gap.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
         <div class="g-col-2">.g-col-2</div>
         <div class="g-col-2">.g-col-2</div>
-      </div>`} /><Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
+      </div>' /><Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-4">.g-col-4</div>
-      </div>`} /><h3 id="adding-rows">Adding rows<a class="anchor-link" href="#adding-rows" aria-label="Link to Adding rows"></a></h3>
+      </div>' /><h3 id="adding-rows">Adding rows<a class="anchor-link" href="#adding-rows" aria-label="Link to Adding rows"></a></h3>
     <p>Adding more rows and changing the placement of columns:</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3;">
         <div>Auto-column</div>
         <div class="g-start-2" style="grid-row: 2">Auto-column</div>
         <div class="g-start-3" style="grid-row: 3">Auto-column</div>
-      </div>`} /><h3 id="gaps">Gaps<a class="anchor-link" href="#gaps" aria-label="Link to Gaps"></a></h3>
+      </div>' /><h3 id="gaps">Gaps<a class="anchor-link" href="#gaps" aria-label="Link to Gaps"></a></h3>
     <p>Change the vertical gaps only by modifying the <code>row-gap</code>. Note that we use <code>gap</code> on <code>.grid</code>s, but <code>row-gap</code> and <code>column-gap</code> can be modified as needed.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="row-gap: 0;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="row-gap: 0;">
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
 
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
-      </div>`} /><p>Because of that, you can have different vertical and horizontal <code>gap</code>s, which can take a single value (all sides) or a pair of values (vertical and horizontal). This can be applied with an inline style for <code>gap</code>, or with our <code>--bs-gap</code> CSS variable.</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-gap: .25rem 1rem;">
+      </div>' /><p>Because of that, you can have different vertical and horizontal <code>gap</code>s, which can take a single value (all sides) or a pair of values (vertical and horizontal). This can be applied with an inline style for <code>gap</code>, or with our <code>--bs-gap</code> CSS variable.</p>
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-gap: .25rem 1rem;">
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
 
         <div class="g-col-6">.g-col-6</div>
         <div class="g-col-6">.g-col-6</div>
-      </div>`} /><h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h2>
+      </div>' /><h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h2>
     <p>One limitation of the CSS Grid is that our default classes are still generated by two Sass variables, <code>$grid-columns</code> and <code>$grid-gutter-width</code>. This effectively predetermines the number of classes generated in our compiled CSS. You have two options here:</p>
     <ul>
     <li>Modify those default Sass variables and recompile your CSS.</li>
     <li>Use inline or custom styles to augment the provided classes.</li>
     </ul>
     <p>For example, you can increase the column count and change the gap size, and then size your “columns” with a mix of inline styles and predefined CSS Grid column classes (e.g., <code>.g-col-4</code>).</p>
-    <Example class="bd-example-cssgrid" code={`<div class="grid text-center" style="--bs-columns: 18; --bs-gap: .5rem;">
+    <Example class="bd-example-cssgrid" code='<div class="grid text-center" style="--bs-columns: 18; --bs-gap: .5rem;">
         <div style="grid-column: span 14;">14 columns</div>
         <div class="g-col-4">.g-col-4</div>
-      </div>`} />
+      </div>' />
   </article>
 </template>

@@ -11,7 +11,7 @@
     <p>Alternatively, you can also switch to a media query implementation thanks to our color mode mixin—see <a href="#building-with-sass">the usage section for details</a>. Heads up though—this eliminates your ability to change themes on a per-component basis as shown below.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>For example, to change the color mode of a dropdown menu, add <code>data-bs-theme=&quot;light&quot;</code> or <code>data-bs-theme=&quot;dark&quot;</code> to the parent <code>.dropdown</code>. Now, no matter the global color mode, these dropdowns will display with the specified theme value.</p>
-    <Example class="d-flex justify-content-between" code={`<div class="dropdown" data-bs-theme="light">
+    <Example class="d-flex justify-content-between" code='<div class="dropdown" data-bs-theme="light">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
           Default dropdown
         </button>
@@ -37,7 +37,7 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>`} /><h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
+      </div>' /><h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <ul>
     <li><p>As shown above, color mode styles are controlled by the <code>data-bs-theme</code> attribute. This attribute can be applied to the <code>&lt;html&gt;</code> element, or to any other element or Bootstrap component. If applied to the <code>&lt;html&gt;</code> element, it will apply to everything. If applied to a component or element, it will be scoped to that specific component or element.</p>
     </li>
@@ -109,7 +109,7 @@
     <h2 id="custom-color-modes">Custom color modes<a class="anchor-link" href="#custom-color-modes" aria-label="Link to Custom color modes"></a></h2>
     <p>While the primary use case for color modes is light and dark mode, custom color modes are also possible. Create your own <code>data-bs-theme</code> selector with a custom value as the name of your color mode, then modify our Sass and CSS variables as needed. We opted to create a separate <code>_variables-dark.scss</code> stylesheet to house Bootstrap’s dark mode specific Sass variables, but that’s not required for you.</p>
     <p>For example, you can create a “blue theme” with the selector <code>data-bs-theme=&quot;blue&quot;</code>. In your custom Sass or CSS file, add the new selector and override any global or component CSS variables as needed. If you’re using Sass, you can also use Sass’s functions within your CSS variable overrides.</p>
-    <ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" /><Example showMarkup={false} code={`<div class="bd-example text-body bg-body" data-bs-theme="blue">
+    <ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" /><Example :showMarkup="false" code='<div class="bd-example text-body bg-body" data-bs-theme="blue">
       <div class="h4">Example blue theme</div>
       <p>Some paragraph text to show how the blue theme might look with written copy.</p>
 
@@ -128,7 +128,7 @@
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
       </div>
-    </div>`} /><pre><code class="language-html">&lt;div data-bs-theme=&quot;blue&quot;&gt;
+    </div>' /><pre><code class="language-html">&lt;div data-bs-theme=&quot;blue&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>

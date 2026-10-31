@@ -81,9 +81,9 @@
           </div>
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
+    </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLive">Launch demo modal</button>
-    `} /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
+    ' /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#exampleModal&quot;&gt;
       Launch demo modal
     &lt;/button&gt;
@@ -125,9 +125,9 @@
           </div>
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
+    </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">Launch static backdrop modal</button>
-    `} /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
+    ' /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#staticBackdrop&quot;&gt;
       Launch static backdrop modal
     &lt;/button&gt;
@@ -169,9 +169,9 @@
           </div>
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
+    </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">Launch demo modal</button>
-    `} /><p>You can also create a scrollable modal that allows scrolling the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.</p>
+    ' /><p>You can also create a scrollable modal that allows scrolling the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.</p>
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
@@ -190,16 +190,16 @@
           </div>
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
+    </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">Launch demo modal</button>
-    `} /><pre><code class="language-html">&lt;!-- Scrollable modal --&gt;
+    ' /><pre><code class="language-html">&lt;!-- Scrollable modal --&gt;
     &lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>
     <h3 id="vertically-centered">Vertically centered<a class="anchor-link" href="#vertically-centered" aria-label="Link to Vertically centered"></a></h3>
     <p>Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.</p>
-    <Example showMarkup={false} code={`<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <Example :showMarkup="false" code='<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -238,7 +238,7 @@
       </div>
 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Vertically centered modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>`} /><pre><code class="language-html">&lt;!-- Vertically centered modal --&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>' /><pre><code class="language-html">&lt;!-- Vertically centered modal --&gt;
     &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
       ...
     &lt;/div&gt;
@@ -250,7 +250,7 @@
     </code></pre>
     <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
     <p><a href="[[docsref:/components/tooltips]]">Tooltips</a> and <a href="[[docsref:/components/popovers]]">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
-    <Example showMarkup={false} code={`<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+    <Example :showMarkup="false" code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -272,7 +272,7 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>`} /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>' /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
       &lt;h2 class=&quot;fs-5&quot;&gt;Popover in a modal&lt;/h2&gt;
       &lt;p&gt;This &lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; title=&quot;Popover title&quot; data-bs-content=&quot;Popover body content is set in this attribute.&quot;&gt;button&lt;/button&gt; triggers a popover on click.&lt;/p&gt;
       &lt;hr&gt;
@@ -323,9 +323,9 @@
           </div>
         </div>
       </div>
-    </div><Example showMarkup={false} code={`
+    </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gridSystemModal">Launch demo modal</button>
-    `} /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
+    ' /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
       &lt;div class=&quot;container-fluid&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
@@ -357,7 +357,7 @@
     <h3 id="varying-modal-content">Varying modal content<a class="anchor-link" href="#varying-modal-content" aria-label="Link to Varying modal content"></a></h3>
     <p>Have a bunch of buttons that all trigger the same modal with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> attributes</a> to vary the contents of the modal depending on which button was clicked.</p>
     <p>Below is a live demo followed by example HTML and JavaScript. For more information, <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.</p>
-    <Example addStackblitzJs code={`<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <Example addStackblitzJs code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
 
@@ -386,9 +386,9 @@
             </div>
           </div>
         </div>
-      </div>`} /><JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" /><h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
+      </div>' /><JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" /><h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
     <p>Toggle between multiple modals with some clever placement of the <code>data-bs-target</code> and <code>data-bs-toggle</code> attributes. For example, you could toggle a password reset modal from within an already open sign in modal. <strong>Please note multiple modals cannot be open at the same time</strong>—this method simply toggles between two separate modals.</p>
-    <Example code={`<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <Example code='<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -420,7 +420,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>`} /><h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
+      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>' /><h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
     <p>The <code>$modal-fade-transform</code> variable determines the transform state of <code>.modal-dialog</code> before the modal fade-in animation, the <code>$modal-show-transform</code> variable determines the transform of <code>.modal-dialog</code> at the end of the modal fade-in animation.</p>
     <p>If you want for example a zoom-in animation, you can set <code>$modal-fade-transform: scale(.8)</code>.</p>
     <h3 id="remove-animation">Remove animation<a class="anchor-link" href="#remove-animation" aria-label="Link to Remove animation"></a></h3>
@@ -468,9 +468,9 @@
     </tr>
     </tbody></table>
     </BsTable><p>Our default modal without modifier class constitutes the “medium” size modal.</p>
-    <Example showMarkup={false} code={`<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
+    <Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>`} /><pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>' /><pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;...&lt;/div&gt;
     </code></pre>
@@ -545,12 +545,12 @@
     <td><code>1400px</code></td>
     </tr>
     </tbody></table>
-    </BsTable><Example showMarkup={false} code={`<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
+    </BsTable><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>`} /><pre><code class="language-html">&lt;!-- Full screen modal --&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>' /><pre><code class="language-html">&lt;!-- Full screen modal --&gt;
     &lt;div class=&quot;modal-dialog modal-fullscreen-sm-down&quot;&gt;
       ...
     &lt;/div&gt;

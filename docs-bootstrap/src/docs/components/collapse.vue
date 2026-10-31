@@ -14,7 +14,7 @@
     <li><code>.collapse.show</code> shows content</li>
     </ul>
     <p>Generally, we recommend using a <code>&lt;button&gt;</code> with the <code>data-bs-target</code> attribute. While not recommended from a semantic point of view, you can also use an <code>&lt;a&gt;</code> link with the <code>href</code> attribute (and a <code>role=&quot;button&quot;</code>). In both cases, the <code>data-bs-toggle=&quot;collapse&quot;</code> is required.</p>
-    <Example code={`<p class="d-inline-flex gap-1">
+    <Example code='<p class="d-inline-flex gap-1">
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           Link with href
         </a>
@@ -26,11 +26,11 @@
         <div class="card card-body">
           Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
         </div>
-      </div>`} /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
+      </div>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>The collapse plugin supports horizontal collapsing. Add the <code>.collapse-horizontal</code> modifier class to transition the <code>width</code> instead of <code>height</code> and set a <code>width</code> on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our <a href="[[docsref:/utilities/sizing]]">width utilities</a>.</p>
     <Callout>
     <p>Please note that while the example below has a <code>min-height</code> set to avoid excessive repaints in our docs, this is not explicitly required. <strong>Only the <code>width</code> on the child element is required.</strong></p>
-    </Callout><Example code={`<p>
+    </Callout><Example code='<p>
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
           Toggle width collapse
         </button>
@@ -41,10 +41,10 @@
             This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.
           </div>
         </div>
-      </div>`} /><h2 id="multiple-toggles-and-targets">Multiple toggles and targets<a class="anchor-link" href="#multiple-toggles-and-targets" aria-label="Link to Multiple toggles and targets"></a></h2>
+      </div>' /><h2 id="multiple-toggles-and-targets">Multiple toggles and targets<a class="anchor-link" href="#multiple-toggles-and-targets" aria-label="Link to Multiple toggles and targets"></a></h2>
     <p>A <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> element can show and hide multiple elements by referencing them with a selector in its <code>data-bs-target</code> or <code>href</code> attribute.
     Conversely, multiple <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements can show and hide the same element if they each reference it with their <code>data-bs-target</code> or <code>href</code> attribute.</p>
-    <Example code={`<p class="d-inline-flex gap-1">
+    <Example code='<p class="d-inline-flex gap-1">
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-      </div>`} /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+      </div>' /><h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Be sure to add <code>aria-expanded</code> to the control element. This attribute explicitly conveys the current state of the collapsible element tied to the control to screen readers and similar assistive technologies. If the collapsible element is closed by default, the attribute on the control element should have a value of <code>aria-expanded=&quot;false&quot;</code>. If you’ve set the collapsible element to be open by default using the <code>show</code> class, set <code>aria-expanded=&quot;true&quot;</code> on the control instead. The plugin will automatically toggle this attribute on the control based on whether or not the collapsible element has been opened or closed (via JavaScript, or because the user triggered another control element also tied to the same collapsible element). If the control element’s HTML element is not a button (e.g., an <code>&lt;a&gt;</code> or <code>&lt;div&gt;</code>), the attribute <code>role=&quot;button&quot;</code> should be added to the element.</p>
     <p>If your control element is targeting a single collapsible element – i.e. the <code>data-bs-target</code> attribute is pointing to an <code>id</code> selector – you should add the <code>aria-controls</code> attribute to the control element, containing the <code>id</code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.</p>
     <p>Note that Bootstrap’s current implementation does not cover the various <em>optional</em> keyboard interactions described in the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">ARIA Authoring Practices Guide accordion pattern</a> - you will need to include these yourself with custom JavaScript.</p>
