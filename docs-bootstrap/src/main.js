@@ -15,6 +15,9 @@ import CalloutDeprecatedDarkVariants from '@/components/CalloutDeprecatedDarkVar
 import JsDismiss from '@/components/JsDismiss.vue'
 import JsDataAttributes from '@/components/JsDataAttributes.vue'
 import GuideFooter from '@/components/GuideFooter.vue'
+import JsDocs from '@/components/JsDocs.vue'
+import Placeholder from '@/components/Placeholder.vue'
+import Table from '@/components/Table.vue'
 
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap'
@@ -31,5 +34,8 @@ app.component('CalloutDeprecatedDarkVariants', CalloutDeprecatedDarkVariants)
 app.component('JsDismiss', JsDismiss)
 app.component('JsDataAttributes', JsDataAttributes)
 app.component('GuideFooter', GuideFooter)
+app.component('JsDocs', JsDocs)
+app.component('Placeholder', Placeholder)
+app.component('Table', Table)
 
 app.mount('#app');
