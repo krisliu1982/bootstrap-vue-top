@@ -37,7 +37,7 @@ const allpage = data.sidebar.flatMap((group) => {
 
 const docsRoutes = {
   path: `/docs`,
-  component: () => import('@/docs/index.vue'),
+  component: () => import('@/index.vue'),
   children: [
     {
       path: '',
@@ -51,12 +51,12 @@ allpage.forEach((page) => {
   if (page.pageSlug) {
     docsRoutes.children.push({
       path: `/docs/${page.groupSlug}/${page.pageSlug}`,
-      component: () => import(`@/docs/${page.groupSlug}/${page.pageSlug}.vue`),
+      component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`),
     })
   } else {
     docsRoutes.children.push({
       path: `/docs/${page.groupSlug}`,
-      component: () => import(`@/docs/${page.groupSlug}.vue`),
+      component: () => import(`@/contents/${page.groupSlug}.vue`),
     })
   }
 })
