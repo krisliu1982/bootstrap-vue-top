@@ -142,3 +142,7 @@
     <ScssDocs name="btn-variant-loops" file="scss/_buttons.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

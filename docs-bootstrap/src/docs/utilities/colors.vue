@@ -61,3 +61,7 @@
     <ScssDocs name="utils-color" file="scss/_utilities.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

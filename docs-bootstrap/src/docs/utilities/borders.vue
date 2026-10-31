@@ -93,3 +93,7 @@
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

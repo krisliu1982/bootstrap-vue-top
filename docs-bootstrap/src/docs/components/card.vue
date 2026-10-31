@@ -536,3 +536,7 @@
     <ScssDocs name="card-variables" file="scss/_variables.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

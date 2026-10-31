@@ -29,3 +29,7 @@
     </ul>
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

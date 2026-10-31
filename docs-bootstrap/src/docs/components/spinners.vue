@@ -91,3 +91,7 @@
     <ScssDocs name="spinner-border-keyframes" file="scss/_spinners.scss" /><ScssDocs name="spinner-grow-keyframes" file="scss/_spinners.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>
