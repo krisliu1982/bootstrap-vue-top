@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import Code from './code.vue'
+import Code from './Code.vue'
 
 const props = defineProps({
   addStackblitzJs: {

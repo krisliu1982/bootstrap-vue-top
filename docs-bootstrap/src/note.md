@@ -8,9 +8,9 @@ Table
 ScssDocs
 Placeholder
 JsDocs
-JsDismiss
-JsDataAttributes
-GuideFooter
-DeprecatedIn
-CalloutDeprecatedDarkVariants
-getData
+JsDismiss T
+JsDataAttributes T
+GuideFooter T
+DeprecatedIn T
+CalloutDeprecatedDarkVariants T
+getData T
