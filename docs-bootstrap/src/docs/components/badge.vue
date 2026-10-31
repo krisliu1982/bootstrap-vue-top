@@ -34,12 +34,21 @@
         </span>
       </button>`} /><h2 id="background-colors">Background colors<a class="anchor-link" href="#background-colors" aria-label="Link to Background colors"></a></h2>
     <AddedIn version="5.2.0" /><p>Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="[[docsref:helpers/color-background]]">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="[[docsref:/utilities/colors]]"><code>.text-{color}</code></a> and <a href="[[docsref:/utilities/background]]"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<span class="badge text-bg-${themeColor.name}">${themeColor.title}</span>`)} /><Callout name="warning-color-assistive-technologies" /><h2 id="pill-badges">Pill badges<a class="anchor-link" href="#pill-badges" aria-label="Link to Pill badges"></a></h2>
-    <p>Use the <code>.rounded-pill</code> utility class to make badges more rounded with a larger <code>border-radius</code>.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<span class="badge rounded-pill text-bg-${themeColor.name}">${themeColor.title}</span>`)} /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    
+    <Example :code='data["theme-colors"].map((themeColor) => `<span class="badge text-bg-${themeColor.name}">${themeColor.title}</span>`).join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="pill-badges">Pill badges<a class="anchor-link" href="#pill-badges" aria-label="Link to Pill badges"></a></h2>
+    
+      <p>Use the <code>.rounded-pill</code> utility class to make badges more rounded with a larger <code>border-radius</code>.</p>
+          
+      <Example :code='data["theme-colors"].map((themeColor) => `<span class="badge rounded-pill text-bg-${themeColor.name}">${themeColor.title}</span>`).join("\n")' />
+
+      <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, badges now use local CSS variables on <code>.badge</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="badge-css-vars" file="scss/_badge.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="badge-variables" file="scss/_variables.scss" />
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>

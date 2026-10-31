@@ -11,8 +11,10 @@
     <p>If you are using the <code>.btn</code> class on its own, remember to at least define some explicit <code>:focus</code> and/or <code>:focus-visible</code> styles.</p>
     </Callout><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
-    <Example code={[...getData('theme-colors').map((themeColor) => `<button type="button" class="btn btn-${themeColor.name}">${themeColor.title}</button>`), `
-    <button type="button" class="btn btn-link">Link</button>`]} /><Callout name="warning-color-assistive-technologies" /><h2 id="disable-text-wrapping">Disable text wrapping<a class="anchor-link" href="#disable-text-wrapping" aria-label="Link to Disable text wrapping"></a></h2>
+    
+    <Example :code='[...data["theme-colors"].map((themeColor) => `<button type="button" class="btn btn-${themeColor.name}">${themeColor.name}</button>`), `
+      <button type="button" class="btn btn-link">Link</button>`].join("\n")' />
+      <Callout name="warning-color-assistive-technologies" /><h2 id="disable-text-wrapping">Disable text wrapping<a class="anchor-link" href="#disable-text-wrapping" aria-label="Link to Disable text wrapping"></a></h2>
     <p>If you don’t want the button text to wrap, you can add the <code>.text-nowrap</code> class to the button. In Sass, you can set <code>$btn-white-space: nowrap</code> to disable text wrapping for each button.</p>
     <h2 id="button-tags">Button tags<a class="anchor-link" href="#button-tags" aria-label="Link to Button tags"></a></h2>
     <p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>

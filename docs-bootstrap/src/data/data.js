@@ -238,5 +238,81 @@ export default {
       "hex": "#343a40",
       "contrast_color": "white"
     }
-  ]
+  ],
+  "core-team":[
+  {
+    "name": "Mark Otto",
+    "user": "mdo"
+  },
+  {
+    "name": "Jacob Thornton",
+    "user": "fat"
+  },
+  {
+    "name": "XhmikosR",
+    "user": "xhmikosr"
+  },
+  {
+    "name": "GeoSot",
+    "user": "geosot"
+  },
+  {
+    "name": "Patrick H. Lauke",
+    "user": "patrickhlauke"
+  },
+  {
+    "name": "Julien Déramond",
+    "user": "julien-deramond"
+  },
+  {
+    "name": "Gaël Poupard",
+    "user": "ffoodd"
+  },
+  {
+    "name": "Rohit Sharma",
+    "user": "rohit2sharma95"
+  },
+  {
+    "name": "alpadev",
+    "user": "alpadev"
+  },
+  {
+    "name": "Martijn Cuppens",
+    "user": "martijncuppens"
+  },
+  {
+    "name": "Johann-S",
+    "user": "johann-s"
+  },
+  {
+    "name": "Gleb Mazovetskiy",
+    "user": "glebm"
+  }
+],
+"translations":[
+  {
+    "name": "中文(繁體)",
+    "code": "zh-tw",
+    "description": "Bootstrap 5 繁體中文手冊",
+    "url": "https://bootstrap5.hexschool.com/"
+  },
+  {
+    "name": "Japanese",
+    "code": "ja",
+    "description": "Bootstrap 5 日本語リファレンス",
+    "url": "https://getbootstrap.jp/"
+  },
+  {
+    "name": "Russian",
+    "code": "ru",
+    "description": "Bootstrap 5 на русском",
+    "url": "https://getbootstrap.su/"
+  },
+  {
+    "name": "Korean",
+    "code": "ko",
+    "description": "Bootstrap 5 한국어 문서",
+    "url": "https://getbootstrap.kr/"
+  }
+]
 }

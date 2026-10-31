@@ -13,3 +13,4 @@ JsDataAttributes
 GuideFooter
 DeprecatedIn
 CalloutDeprecatedDarkVariants
+getData

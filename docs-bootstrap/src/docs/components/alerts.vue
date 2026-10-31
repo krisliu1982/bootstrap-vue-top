@@ -8,17 +8,22 @@
     <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts JavaScript plugin</a>.</p>
     <Callout>
     <p><strong>Heads up!</strong> As of v5.3.0, the <code>alert-variant()</code> Sass mixin is deprecated. Alert variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
-    </Callout><Example code={getData('theme-colors').map((themeColor) => `<div class="alert alert-${themeColor.name}" role="alert">
+    </Callout>
+      <Example :code='data["theme-colors"].map((themeColor) => `<div class="alert alert-${themeColor.name}" role="alert">
         A simple ${themeColor.name} alert—check it out!
-      </div>`)} /><Callout name="warning-color-assistive-technologies" /><h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
+      </div>`).join("\n")' />
+      <Callout name="warning-color-assistive-technologies" /><h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
     <Example addStackblitzJs code={`<div id="liveAlertPlaceholder"></div>
     <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>`} /><p>We use the following JavaScript to trigger our live alert demo:</p>
     <JsDocs name="live-alert" file="site/src/assets/partials/snippets.js" /><h3 id="link-color">Link color<a class="anchor-link" href="#link-color" aria-label="Link to Link color"></a></h3>
     <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
-    <Example code={getData('theme-colors').map((themeColor) => `<div class="alert alert-${themeColor.name}" role="alert">
+    
+    <Example :code='data["theme-colors"].map((themeColor) => `<div class="alert alert-${themeColor.name}" role="alert">
         A simple ${themeColor.name} alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>`)} /><h3 id="additional-content">Additional content<a class="anchor-link" href="#additional-content" aria-label="Link to Additional content"></a></h3>
+      </div>`).join("\n")' />
+
+    <h3 id="additional-content">Additional content<a class="anchor-link" href="#additional-content" aria-label="Link to Additional content"></a></h3>
     <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
     <Example code={`<div class="alert alert-success" role="alert">
         <h4 class="alert-heading">Well done!</h4>
@@ -164,3 +169,7 @@
     </code></pre>
   </article>
 </template>
+
+<script setup>
+import data from '@data/data.js'
+</script>
