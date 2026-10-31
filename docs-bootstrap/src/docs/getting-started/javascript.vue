@@ -180,7 +180,7 @@ bootstrap.Modal.Default.keyboard = false
     <p>Our tooltip and popover components are able to render arbitrary HTML to the page if configured to do so.
     To prevent cross-site scripting (XSS) attacks, these components use our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default.</p>
     <p>The tags and attributes allowed by default are as follows. Any tags or attributes not explicitly allowed will be removed during sanitization:</p>
-    <JsDocs name="allow-list" file="js/src/util/sanitizer.js" removeIndentation={false} /><Callout type="warning">
+    <JsDocs name="allow-list" file="js/sanitizer.js" /><Callout type="warning">
     <p><strong>Exercise caution when using these advanced options.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information. Vulnerabilities caused solely by disabling or modifying content sanitization are not considered within scope for Bootstrap’s security model.</p>
     </Callout><p>You can add new values to this default <code>allowList</code>:</p>
     <pre><code class="language-js">const myDefaultAllowList = bootstrap.Tooltip.Default.allowList

@@ -16,7 +16,9 @@
     <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
     <Example addStackblitzJs code='<div id="liveAlertPlaceholder"></div>
     <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>' /><p>We use the following JavaScript to trigger our live alert demo:</p>
+    
     <JsDocs name="live-alert" file="site/src/assets/partials/snippets.js" /><h3 id="link-color">Link color<a class="anchor-link" href="#link-color" aria-label="Link to Link color"></a></h3>
+    
     <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
     
     <Example :code='data["theme-colors"].map((themeColor) => `<div class="alert alert-${themeColor.name}" role="alert">

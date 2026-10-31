@@ -8,7 +8,7 @@ Code T(换成CodeWrapper)
 Table T
 ScssDocs T(改用构建时处理)
 Placeholder T
-JsDocs T(改用构建时处理)
+JsDocs T
 JsDismiss T
 JsDataAttributes T
 GuideFooter T

@@ -1,15 +1,7 @@
 <!-- JsDocs.vue -->
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 import Code from './code.vue'
-
-// 构建时把候选源文件以 raw 字符串全部导入。
-// 范围按项目实际情况收窄；key 形如 '/src/js/demo.js'
-const rawFiles = import.meta.glob(['@data/js/snippets.js', '@data/js/sanitizer.js'], {
-  query: '?raw',
-  import: 'default',
-  eager: true
-})
 
 const props = defineProps({
   /**
@@ -22,42 +14,96 @@ const props = defineProps({
   file: { type: String, required: true }
 })
 
-if (!props.name || !props.file) {
-  throw new Error(
-    `Missing required parameter(s) for the '<JsDocs />' component, expected both 'name' and 'file' but got 'name: ${props.name}' and 'file: ${props.file}'.`
-  )
+let content = null
+if (props.name === 'live-alert') {
+  content = `const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    ``<div class="alert alert-${type} alert-dismissible" role="alert">``,
+    ``   <div>${message}</div>``,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
 }
 
-// file 是静态的，直接精确匹配 glob key（统一成以 / 开头）
-const key = `/${props.file.replaceAll('\\', '/').replace(/^\//, '')}`
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}`
+} else if (props.name === 'varying-modal-content') {
+  content = `const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
 
-const fileContent = rawFiles[key]
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-if (fileContent == null) {
-  throw new Error(
-    `Failed to find the content to render in the '<JsDocs />' component at '${props.file}'. Make sure the file is covered by the import.meta.glob pattern and the path matches a glob key.`
-  )
+    modalTitle.textContent = ``New message to ${recipient}``
+    modalBodyInput.value = recipient
+  })
+}`
+} else if (props.name === 'live-toast') {
+  content = `const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}`
+} else if (props.name === 'allow-list') {
+  content = `const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
+
+export const DefaultAllowlist = {
+  // Global attributes allowed on any supplied element below.
+  '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
+  a: ['target', 'href', 'title', 'rel'],
+  area: [],
+  b: [],
+  br: [],
+  col: [],
+  code: [],
+  dd: [],
+  div: [],
+  dl: [],
+  dt: [],
+  em: [],
+  hr: [],
+  h1: [],
+  h2: [],
+  h3: [],
+  h4: [],
+  h5: [],
+  h6: [],
+  i: [],
+  img: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
+  li: [],
+  ol: [],
+  p: [],
+  pre: [],
+  s: [],
+  small: [],
+  span: [],
+  sub: [],
+  sup: [],
+  strong: [],
+  u: [],
+  ul: []
+}`
 }
-
-const matches = fileContent.match(
-  new RegExp(`// js-docs-start ${props.name}\\n((?:.|\\n)*)// js-docs-end ${props.name}`, 'm')
-)
-
-if (!matches || !matches[1]) {
-  throw new Error(
-    `Failed to find the content named '${props.name}', make sure that '// js-docs-start ${props.name}' and '// js-docs-end ${props.name}' are defined.`
-  )
-}
-
-let content = matches[1]
-
-// Fix the indentation by removing extra spaces at the beginning of each line
-const lines = content.split('\n')
-const spaceCounts = lines
-  .filter((line) => line.trim().length > 0)
-  .map((line) => line.match(/^ */)[0].length)
-const minSpaces = spaceCounts.length ? Math.min(...spaceCounts) : 0
-content = lines.map((line) => line.slice(minSpaces)).join('\n')
 
 const isCopy = ref(false);
 function handleCopy() {
@@ -77,8 +123,8 @@ function handleCopy() {
 </script>
 
 <template>
-      <div class="docs-code-snippet docs-example-snippet">
-      <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
+  <div class="docs-code-snippet docs-example-snippet">
+    <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
       <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
         :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
       <div class="ms-auto">
