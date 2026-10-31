@@ -50,11 +50,11 @@
     </tbody></table>
     </div>
     <pre><code class="language-html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
-    &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
-    &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
-    &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
-    &lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
-    &lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;
+&lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;
     </code></pre>
     <p><code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
     <Example code='<p class="h1">h1. Bootstrap heading</p>
@@ -77,11 +77,11 @@
     <div class="display-6">Display 6</div>
     ' />
     <pre><code class="language-html">&lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
-    &lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
-    &lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
-    &lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;
-    &lt;h1 class=&quot;display-5&quot;&gt;Display 5&lt;/h1&gt;
-    &lt;h1 class=&quot;display-6&quot;&gt;Display 6&lt;/h1&gt;
+&lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
+&lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
+&lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;
+&lt;h1 class=&quot;display-5&quot;&gt;Display 5&lt;/h1&gt;
+&lt;h1 class=&quot;display-6&quot;&gt;Display 6&lt;/h1&gt;
     </code></pre>
     <p>Display headings are configured via the <code>$display-font-sizes</code> Sass map and two variables, <code>$display-font-weight</code> and <code>$display-line-height</code>.</p>
     <p>Display headings are customizable via two variables, <code>$display-font-family</code> and <code>$display-font-style</code>.</p>

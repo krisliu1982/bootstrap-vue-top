@@ -569,10 +569,10 @@
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
     <p>Here’s how you can use these in your Sass:</p>
     <pre><code class="language-scss">.alpha { color: $purple; }
-    .beta {
-      color: $yellow-300;
-      background-color: $indigo-900;
-    }
+.beta {
+  color: $yellow-300;
+  background-color: $indigo-900;
+}
     </code></pre>
     <p><a href="[[docsref:/utilities/colors]]">Color</a> and <a href="[[docsref:/utilities/background]]">background</a>
       utility classes are also available for setting <code>color</code> and <code>background-color</code> using the
@@ -593,32 +593,32 @@
     <p>Here’s an example that generates text color utilities (e.g., <code>.text-purple-500</code>) using the above
       steps.</p>
     <pre><code class="language-scss">@import "bootstrap/scss/functions";
-    @import &quot;bootstrap/scss/variables&quot;;
-    @import &quot;bootstrap/scss/variables-dark&quot;;
-    @import &quot;bootstrap/scss/maps&quot;;
-    @import &quot;bootstrap/scss/mixins&quot;;
-    @import &quot;bootstrap/scss/utilities&quot;;
+@import &quot;bootstrap/scss/variables&quot;;
+@import &quot;bootstrap/scss/variables-dark&quot;;
+@import &quot;bootstrap/scss/maps&quot;;
+@import &quot;bootstrap/scss/mixins&quot;;
+@import &quot;bootstrap/scss/utilities&quot;;
 
-    $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
 
-    $utilities: map-merge(
-      $utilities,
+$utilities: map-merge(
+  $utilities,
+  (
+    &quot;color&quot;: map-merge(
+      map-get($utilities, &quot;color&quot;),
       (
-        &quot;color&quot;: map-merge(
-          map-get($utilities, &quot;color&quot;),
+        values: map-merge(
+          map-get(map-get($utilities, &quot;color&quot;), &quot;values&quot;),
           (
-            values: map-merge(
-              map-get(map-get($utilities, &quot;color&quot;), &quot;values&quot;),
-              (
-                $all-colors
-              ),
-            ),
+            $all-colors
           ),
         ),
-      )
-    );
+      ),
+    ),
+  )
+);
 
-    @import &quot;bootstrap/scss/utilities/api&quot;;
+@import &quot;bootstrap/scss/utilities/api&quot;;
     </code></pre>
 
     <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the

@@ -10,13 +10,13 @@
       <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>' /><p>Both <code>visually-hidden</code> and <code>visually-hidden-focusable</code> can also be used as mixins.</p>
     <pre><code class="language-scss">// Usage as a mixin
 
-    .visually-hidden-title {
-      @include visually-hidden;
-    }
+.visually-hidden-title {
+  @include visually-hidden;
+}
 
-    .skip-navigation {
-      @include visually-hidden-focusable;
-    }
+.skip-navigation {
+  @include visually-hidden-focusable;
+}
     </code></pre>
   </article>
 </template>

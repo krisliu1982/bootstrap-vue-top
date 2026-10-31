@@ -13,7 +13,7 @@
     <ol>
     <li><p><strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid it asking us all the interactive questions.</p>
     <pre><code class="language-sh">mkdir my-project &amp;&amp; cd my-project
-    npm init -y
+npm init -y
     </code></pre>
     </li>
     <li><p><strong>Install Vite.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. We use <code>--save-dev</code> to signal that this dependency is only for development use and not for production.</p>
@@ -33,19 +33,19 @@
     <h2 id="project-structure">Project structure<a class="anchor-link" href="#project-structure" aria-label="Link to Project structure"></a></h2>
     <p>We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.</p>
     <pre><code class="language-sh">mkdir {src,src/js,src/scss}
-    touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
     </code></pre>
     <p>When you’re done, your complete project should look like this:</p>
     <pre><code class="language-text">my-project/
-    ├── src/
-    │   ├── js/
-    │   │   └── main.js
-    │   └── scss/
-    │   |   └── styles.scss
-    |   └── index.html
-    ├── package-lock.json
-    ├── package.json
-    └── vite.config.js
+├── src/
+│   ├── js/
+│   │   └── main.js
+│   └── scss/
+│   |   └── styles.scss
+|   └── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
     </code></pre>
     <p>At this point, everything is in the right place, but Vite won’t work because we haven’t filled in our <code>vite.config.js</code> yet.</p>
     <h2 id="configure-vite">Configure Vite<a class="anchor-link" href="#configure-vite" aria-label="Link to Configure Vite"></a></h2>
@@ -54,59 +54,59 @@
     <li><p><strong>Open <code>vite.config.js</code> in your editor.</strong> Since it’s blank, we&#39;ll need to add some boilerplate config to it so we can start our server. This part of the config tells Vite where to look for our project’s JavaScript and how the development server should behave (pulling from the <code>src</code> folder with hot reload).</p>
     <pre><code class="language-js">import { resolve } from &#39;path&#39;
 
-    export default {
-      root: resolve(__dirname, &#39;src&#39;),
-      build: {
-        outDir: &#39;../dist&#39;
-      },
-      server: {
-        port: 8080
-      },
-      // Optional: Silence Sass deprecation warnings. See note below.
-      css: {
-         preprocessorOptions: {
-            scss: {
-              silenceDeprecations: [
-                &#39;import&#39;,
-                &#39;mixed-decls&#39;,
-                &#39;color-functions&#39;,
-                &#39;global-builtin&#39;,
-              ],
-            },
-         },
-      },
-    }
+export default {
+  root: resolve(__dirname, &#39;src&#39;),
+  build: {
+    outDir: &#39;../dist&#39;
+  },
+  server: {
+    port: 8080
+  },
+  // Optional: Silence Sass deprecation warnings. See note below.
+  css: {
+     preprocessorOptions: {
+        scss: {
+          silenceDeprecations: [
+            &#39;import&#39;,
+            &#39;mixed-decls&#39;,
+            &#39;color-functions&#39;,
+            &#39;global-builtin&#39;,
+          ],
+        },
+     },
+  },
+}
     </code></pre>
     <p><strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or usage of Bootstrap. We’re <a href="[[config:repo]]/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be ignored.</p>
     </li>
     <li><p><strong>Next we fill in <code>src/index.html</code>.</strong> This is the HTML page Vite will load in the browser to utilize the bundled CSS and JS we&#39;ll add to it in later steps.</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
-    &lt;html lang=&quot;en&quot;&gt;
-      &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-        &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
-        &lt;script type=&quot;module&quot; src=&quot;./js/main.js&quot;&gt;&lt;/script&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;div class=&quot;container py-4 px-3 mx-auto&quot;&gt;
-          &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
-          &lt;button class=&quot;btn btn-primary&quot;&gt;Primary button&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
+    &lt;script type=&quot;module&quot; src=&quot;./js/main.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;container py-4 px-3 mx-auto&quot;&gt;
+      &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
+      &lt;button class=&quot;btn btn-primary&quot;&gt;Primary button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
     </code></pre>
     <p>We’re including a little bit of Bootstrap styling here with the <code>div class=&quot;container&quot;</code> and <code>&lt;button&gt;</code> so that we see when Bootstrap’s CSS is loaded by Vite.</p>
     </li>
     <li><p><strong>Now we need an npm script to run Vite.</strong> Open <code>package.json</code> and add the <code>start</code> script shown below (you should already have the test script). We&#39;ll use this script to start our local Vite dev server.</p>
     <pre><code class="language-json">{
-      // ...
-      &quot;scripts&quot;: {
-        &quot;start&quot;: &quot;vite&quot;,
-        &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
-      },
-      // ...
-    }
+  // ...
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;vite&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  // ...
+}
     </code></pre>
     </li>
     <li><p><strong>And finally, we can start Vite.</strong> From the <code>my-project</code> folder in your terminal, run that newly added npm script:</p>
@@ -119,22 +119,22 @@
     <ol>
     <li><p><strong>Import Bootstrap’s CSS.</strong> Add the following to <code>src/scss/styles.scss</code> to import all of Bootstrap’s source Sass.</p>
     <pre><code class="language-scss">// Import all of Bootstrap’s CSS
-    @import &quot;bootstrap/scss/bootstrap&quot;;
+@import &quot;bootstrap/scss/bootstrap&quot;;
     </code></pre>
     <p><em>You can also import our stylesheets individually if you want. <a href="[[docsref:/customize/sass#importing]]">Read our Sass import docs</a> for details.</em></p>
     </li>
     <li><p><strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
     <pre><code class="language-js">// Import our custom CSS
-    import &#39;../scss/styles.scss&#39;
+import &#39;../scss/styles.scss&#39;
 
-    // Import all of Bootstrap’s JS
-    import * as bootstrap from &#39;bootstrap&#39;
+// Import all of Bootstrap’s JS
+import * as bootstrap from &#39;bootstrap&#39;
     </code></pre>
     <p>You can also import JavaScript plugins individually as needed to keep bundle sizes down:</p>
     <pre><code class="language-js">import Alert from &#39;bootstrap/js/dist/alert&#39;;
 
-    // or, specify which plugins you need:
-    import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
+// or, specify which plugins you need:
+import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
     </code></pre>
     <p><em><a href="[[docsref:/getting-started/javascript/]]">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em></p>
     </li>

@@ -33,10 +33,10 @@
         <div>2x1</div>
       </div>' /><p>This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes to a custom 2x1 at the medium breakpoint.</p>
     <pre><code class="language-scss">.ratio-4x3 {
-      @include media-breakpoint-up(md) {
-        --bs-aspect-ratio: 50%; // 2x1
-      }
-    }
+  @include media-breakpoint-up(md) {
+    --bs-aspect-ratio: 50%; // 2x1
+  }
+}
     </code></pre>
     <Example class="bd-example-ratios bd-example-ratios-breakpoint" code='<div class="ratio ratio-4x3">
         <div>4x3, then 2x1</div>

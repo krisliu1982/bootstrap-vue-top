@@ -28,9 +28,9 @@
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.bg-success</code> utility.</p>
     <pre><code class="language-css">.bg-success {
-      --bs-bg-opacity: 1;
-      background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
-    }
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
     </code></pre>
     <p>We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable, <code>--bs-bg-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.bg-success</code> now, your computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.bg-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.</p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>

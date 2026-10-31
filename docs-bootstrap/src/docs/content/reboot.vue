@@ -19,8 +19,8 @@
     <ScssDocs name="root-body-variables" file="scss/_root.scss" /><p>In practice, those variables are then applied in Reboot like so:</p>
     <ScssDocs name="reboot-body-rules" file="scss/_reboot.scss" /><p>Which allows you to make real-time customizations however you like:</p>
     <pre><code class="language-html">&lt;body style=&quot;--bs-body-color: #333;&quot;&gt;
-      &lt;!-- ... --&gt;
-    &lt;/body&gt;
+  &lt;!-- ... --&gt;
+&lt;/body&gt;
     </code></pre>
     <h2 id="page-defaults">Page defaults<a class="anchor-link" href="#page-defaults" aria-label="Link to Page defaults"></a></h2>
     <p>The <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> elements are updated to provide better page-wide defaults. More specifically:</p>
@@ -35,25 +35,25 @@
     <h2 id="native-font-stack">Native font stack<a class="anchor-link" href="#native-font-stack" aria-label="Link to Native font stack"></a></h2>
     <p>Bootstrap utilizes a “native font stack” or “system font stack” for optimum text rendering on every device and OS. These system fonts have been designed specifically with today’s devices in mind, with improved rendering on screens, variable font support, and more. Read more about <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">native font stacks in this <em>Smashing Magazine</em> article</a>.</p>
     <pre><code class="language-scss">$font-family-sans-serif:
-      // Cross-platform generic font family (default user interface font)
-      system-ui,
-      // Safari for macOS and iOS (San Francisco)
-      -apple-system,
-      // Windows
-      &quot;Segoe UI&quot;,
-      // Android
-      Roboto,
-      // older macOS and iOS
-      &quot;Helvetica Neue&quot;,
-      // Linux
-      &quot;Noto Sans&quot;,
-      &quot;Liberation Sans&quot;,
-      // Basic web fallback
-      Arial,
-      // Sans serif fallback
-      sans-serif,
-      // Emoji fonts
-      &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
+// Cross-platform generic font family (default user interface font)
+system-ui,
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Windows
+&quot;Segoe UI&quot;,
+// Android
+Roboto,
+// older macOS and iOS
+&quot;Helvetica Neue&quot;,
+// Linux
+&quot;Noto Sans&quot;,
+&quot;Liberation Sans&quot;,
+// Basic web fallback
+Arial,
+// Sans serif fallback
+sans-serif,
+// Emoji fonts
+&quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
     </code></pre>
     <p>Note that because the font stack includes emoji fonts, many common symbol/dingbat Unicode characters will be rendered as multicolored pictographs. Their appearance will vary, depending on the style used in the browser/platform’s native emoji font, and they won’t be affected by any CSS <code>color</code> styles.</p>
     <p>This <code>font-family</code> is applied to the <code>&lt;body&gt;</code> and automatically inherited globally throughout Bootstrap. To switch the global <code>font-family</code>, update <code>$font-family-base</code> and recompile Bootstrap.</p>
@@ -135,7 +135,7 @@
     <Example code='For example, <code>&lt;section&gt;</code> should be wrapped as inline.' /><h2 id="code-blocks">Code blocks<a class="anchor-link" href="#code-blocks" aria-label="Link to Code blocks"></a></h2>
     <p>Use <code>&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. The <code>&lt;pre&gt;</code> element is reset to remove its <code>margin-top</code> and use <code>rem</code> units for its <code>margin-bottom</code>.</p>
     <Example code='<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
-    &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
     </code></pre>' /><h2 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h2>
     <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
     <Example code='<var>y</var> = <var>m</var><var>x</var> + <var>b</var>' /><h2 id="user-input">User input<a class="anchor-link" href="#user-input" aria-label="Link to User input"></a></h2>

@@ -44,9 +44,9 @@
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.border-success</code> utility.</p>
     <pre><code class="language-css">.border-success {
-      --bs-border-opacity: 1;
-      border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
-    }
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
+}
     </code></pre>
     <p>We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable, <code>--bs-border-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.border-success</code> now, your computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.border-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.</p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>

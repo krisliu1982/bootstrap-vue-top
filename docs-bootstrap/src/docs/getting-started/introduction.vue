@@ -88,7 +88,7 @@
     <p>On the rare occasion you need to override it, use something like the following:</p>
 
     <pre><code class="language-css">.selector-for-some-widget {
-  box-sizing: content-box;
+box-sizing: content-box;
 }</code></pre>
 
     <p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>

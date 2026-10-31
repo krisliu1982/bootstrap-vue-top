@@ -86,7 +86,7 @@
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable manually with:</p>
     <pre><code class="language-js">const collapseElementList = document.querySelectorAll(&#39;.collapse&#39;)
-    const collapseList = [...collapseElementList].map(collapseEl =&gt; new bootstrap.Collapse(collapseEl))
+const collapseList = [...collapseElementList].map(collapseEl =&gt; new bootstrap.Collapse(collapseEl))
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
@@ -116,8 +116,8 @@
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
     <p>You can create a collapse instance with the constructor, for example:</p>
     <pre><code class="language-js">const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
-      toggle: false
-    })
+  toggle: false
+})
     </code></pre>
 <div class="table-responsive"><table class="table">
     <thead>
@@ -179,9 +179,9 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
-    myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
-      // do something...
-    })
+myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

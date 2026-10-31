@@ -122,9 +122,9 @@
     </tbody></table>
     </div><p>For example, to toggle all buttons</p>
     <pre><code class="language-js">document.querySelectorAll(&#39;.btn&#39;).forEach(buttonElement =&gt; {
-      const button = bootstrap.Button.getOrCreateInstance(buttonElement)
-      button.toggle()
-    })
+  const button = bootstrap.Button.getOrCreateInstance(buttonElement)
+  button.toggle()
+})
     </code></pre>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>

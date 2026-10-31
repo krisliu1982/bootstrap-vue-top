@@ -182,22 +182,22 @@
         </div>
       </div>' /><p>If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map. <a href="[[docsref:/customize/sass#maps-and-loops]]">Read our Sass maps and loops docs</a> or <a href="[[docsref:/utilities/api#modify-utilities]]">our Modify utilities docs</a> for details.</p>
     <pre><code class="language-scss">$utilities: map-merge(
-      $utilities,
+  $utilities,
+  (
+    &quot;order&quot;: map-merge(
+      map-get($utilities, &quot;order&quot;),
       (
-        &quot;order&quot;: map-merge(
-          map-get($utilities, &quot;order&quot;),
+        values: map-merge(
+          map-get(map-get($utilities, &quot;order&quot;), &quot;values&quot;),
           (
-            values: map-merge(
-              map-get(map-get($utilities, &quot;order&quot;), &quot;values&quot;),
-              (
-                6: 6, // Add a new `.order-{breakpoint}-6` utility
-                last: 7 // Change the `.order-{breakpoint}-last` utility to use the next number
-              )
-            ),
-          ),
+            6: 6, // Add a new `.order-{breakpoint}-6` utility
+            last: 7 // Change the `.order-{breakpoint}-last` utility to use the next number
+          )
         ),
-      )
-    );
+      ),
+    ),
+  )
+);
     </code></pre>
     <h3 id="offsetting-columns">Offsetting columns<a class="anchor-link" href="#offsetting-columns" aria-label="Link to Offsetting columns"></a></h3>
     <p>You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="[[docsref:/utilities/spacing]]">margin utilities</a>. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>

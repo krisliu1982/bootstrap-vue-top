@@ -45,19 +45,19 @@
     ' />
     <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
 
-    &lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
-      &lt;div id=&quot;liveToast&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
-        &lt;div class=&quot;toast-header&quot;&gt;
-          &lt;img src=&quot;...&quot; class=&quot;rounded me-2&quot; alt=&quot;...&quot;&gt;
-          &lt;strong class=&quot;me-auto&quot;&gt;Bootstrap&lt;/strong&gt;
-          &lt;small&gt;11 mins ago&lt;/small&gt;
-          &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;toast-body&quot;&gt;
-          Hello, world! This is a toast message.
-        &lt;/div&gt;
-      &lt;/div&gt;
+&lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
+  &lt;div id=&quot;liveToast&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
+    &lt;div class=&quot;toast-header&quot;&gt;
+      &lt;img src=&quot;...&quot; class=&quot;rounded me-2&quot; alt=&quot;...&quot;&gt;
+      &lt;strong class=&quot;me-auto&quot;&gt;Bootstrap&lt;/strong&gt;
+      &lt;small&gt;11 mins ago&lt;/small&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
     &lt;/div&gt;
+    &lt;div class=&quot;toast-body&quot;&gt;
+      Hello, world! This is a toast message.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>We use the following JavaScript to trigger our live toast demo:</p>
     <JsDocs name="live-toast" file="site/src/assets/partials/snippets.js" /><h3 id="translucent">Translucent<a class="anchor-link" href="#translucent" aria-label="Link to Translucent"></a></h3>
@@ -212,8 +212,8 @@
     <p>You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> attributes.</p>
     <p>As the content you’re displaying changes, be sure to update the <a href="#options"><code>delay</code> timeout</a> so that users have enough time to read the toast.</p>
     <pre><code class="language-html">&lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot; data-bs-delay=&quot;10000&quot;&gt;
-      &lt;div role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>When using <code>autohide: false</code>, you must add a close button to allow users to dismiss the toast.</p>
     <Example code='<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
@@ -234,7 +234,7 @@
     <ScssDocs name="toast-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Initialize toasts via JavaScript:</p>
     <pre><code class="language-js">const toastElList = document.querySelectorAll(&#39;.toast&#39;)
-    const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
+const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
     </code></pre>
     <h3 id="triggers">Triggers<a class="anchor-link" href="#triggers" aria-label="Link to Triggers"></a></h3>
     <JsDismiss name="toast" /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
@@ -328,9 +328,9 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
-    myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
-      // do something...
-    })
+myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

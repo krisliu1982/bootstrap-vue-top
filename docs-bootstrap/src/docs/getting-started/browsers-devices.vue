@@ -8,7 +8,19 @@
     <p>Bootstrap supports the <strong>latest, stable releases</strong> of all major browsers and platforms.</p>
     <p>Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform’s web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.</p>
     <p>You can find our supported range of browsers and their versions <a href="[[config:repo]]/blob/v[[config:current_version]]/.browserslistrc">in our <code>.browserslistrc file</code></a>:</p>
-    <Code lang="plaintext" filePath=".browserslistrc" /><p>We use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to handle intended browser support via CSS prefixes, which uses <a href="https://github.com/browserslist/browserslist">Browserslist</a> to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.</p>
+    <CodeWrapper code="# https://github.com/browserslist/browserslist#readme
+
+>= 0.5%
+last 2 major versions
+not dead
+Chrome >= 60
+Firefox >= 60
+Firefox ESR
+iOS >= 12
+Safari >= 12
+not Explorer <= 11
+not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/postcss/autoprefixer/issues/1533)" lang="plaintext" />
+    <p>We use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> to handle intended browser support via CSS prefixes, which uses <a href="https://github.com/browserslist/browserslist">Browserslist</a> to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.</p>
     <h3 id="mobile-devices">Mobile devices<a class="anchor-link" href="#mobile-devices" aria-label="Link to Mobile devices"></a></h3>
     <p>Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.</p>
     <div class="table-responsive">

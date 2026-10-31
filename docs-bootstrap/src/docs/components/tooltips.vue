@@ -22,7 +22,7 @@
     <h3 id="enable-tooltips">Enable tooltips<a class="anchor-link" href="#enable-tooltips" aria-label="Link to Enable tooltips"></a></h3>
     <p>As mentioned above, you must initialize tooltips before they can be used. One way to initialize all tooltips on a page would be to select them by their <code>data-bs-toggle</code> attribute, like so:</p>
     <pre><code class="language-js">const tooltipTriggerList = document.querySelectorAll(&#39;[data-bs-toggle=&quot;tooltip&quot;]&#39;)
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new bootstrap.Tooltip(tooltipTriggerEl))
     </code></pre>
     <h3 id="tooltips-on-links">Tooltips on links<a class="anchor-link" href="#tooltips-on-links" aria-label="Link to Tooltips on links"></a></h3>
     <p>Hover over the links below to see tooltips:</p>
@@ -43,22 +43,22 @@
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Tooltip with HTML</button>
       </div>' />
     <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
-      Tooltip on top
-    &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;Tooltip on right&quot;&gt;
-      Tooltip on right
-    &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; data-bs-title=&quot;Tooltip on bottom&quot;&gt;
-      Tooltip on bottom
-    &lt;/button&gt;
-    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; data-bs-title=&quot;Tooltip on left&quot;&gt;
-      Tooltip on left
-    &lt;/button&gt;
+  Tooltip on top
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;Tooltip on right&quot;&gt;
+  Tooltip on right
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;bottom&quot; data-bs-title=&quot;Tooltip on bottom&quot;&gt;
+  Tooltip on bottom
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; data-bs-title=&quot;Tooltip on left&quot;&gt;
+  Tooltip on left
+&lt;/button&gt;
     </code></pre>
     <p>And with custom HTML added:</p>
     <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-html=&quot;true&quot; data-bs-title=&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;&gt;
-      Tooltip with HTML
-    &lt;/button&gt;
+  Tooltip with HTML
+&lt;/button&gt;
     </code></pre>
     <p>With an SVG:</p>
     <div class="bd-example tooltip-demo">
@@ -75,13 +75,13 @@
     <ScssDocs name="tooltip-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element. Trigger the tooltip via JavaScript:</p>
     <pre><code class="language-js">const exampleEl = document.getElementById(&#39;example&#39;)
-    const tooltip = new bootstrap.Tooltip(exampleEl, options)
+const tooltip = new bootstrap.Tooltip(exampleEl, options)
     </code></pre>
     <Callout type="warning">
     <p>Tooltips automatically attempt to change positions when a parent container has <code>overflow: auto</code> or <code>overflow: scroll</code>, but still keeps the original placement’s positioning. Set the <a href="https://popper.js.org/docs/v2/modifiers/flip/#boundary"><code>boundary</code> option</a> (for the flip modifier using the <code>popperConfig</code> option) to any HTMLElement to override the default value, <code>&#39;clippingParents&#39;</code>, such as <code>document.body</code>:</p>
     <pre><code class="language-js">const tooltip = new bootstrap.Tooltip(&#39;#example&#39;, {
-      boundary: document.body // or document.querySelector(&#39;#boundary&#39;)
-    })
+  boundary: document.body // or document.querySelector(&#39;#boundary&#39;)
+})
     </code></pre>
     </Callout><h3 id="markup">Markup<a class="anchor-link" href="#markup" aria-label="Link to Markup"></a></h3>
     <p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
@@ -89,15 +89,15 @@
     <p><strong>Keep tooltips accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce tooltips in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your tooltips as this will make them impossible to trigger for keyboard users.</p>
     </Callout>
     <pre><code class="language-html">&lt;!-- HTML to write --&gt;
-    &lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Some tooltip text!&quot;&gt;Hover over me&lt;/a&gt;
+&lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Some tooltip text!&quot;&gt;Hover over me&lt;/a&gt;
 
-    &lt;!-- Generated markup by the plugin --&gt;
-    &lt;div class=&quot;tooltip bs-tooltip-auto&quot; role=&quot;tooltip&quot;&gt;
-      &lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;tooltip-inner&quot;&gt;
-        Some tooltip text!
-      &lt;/div&gt;
-    &lt;/div&gt;
+&lt;!-- Generated markup by the plugin --&gt;
+&lt;div class=&quot;tooltip bs-tooltip-auto&quot; role=&quot;tooltip&quot;&gt;
+  &lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;tooltip-inner&quot;&gt;
+    Some tooltip text!
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
     <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
@@ -224,12 +224,12 @@
     <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
     </Callout><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
     <pre><code class="language-js">const tooltip = new bootstrap.Tooltip(element, {
-      popperConfig(defaultBsPopperConfig) {
-        // const newPopperConfig = {...}
-        // use defaultBsPopperConfig if needed...
-        // return newPopperConfig
-      }
-    })
+  popperConfig(defaultBsPopperConfig) {
+    // const newPopperConfig = {...}
+    // use defaultBsPopperConfig if needed...
+    // return newPopperConfig
+  }
+})
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><div class="table-responsive">
@@ -288,8 +288,8 @@
     </div>
     <pre><code class="language-js">const tooltip = bootstrap.Tooltip.getInstance(&#39;#example&#39;) // Returns a Bootstrap tooltip instance
 
-    // setContent example
-    tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
+// setContent example
+tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
     </code></pre>
     <Callout>
     <p>The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the tooltip template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> | <code>null</code></p>
@@ -324,13 +324,13 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myTooltipEl = document.getElementById(&#39;myTooltip&#39;)
-    const tooltip = bootstrap.Tooltip.getOrCreateInstance(myTooltipEl)
+const tooltip = bootstrap.Tooltip.getOrCreateInstance(myTooltipEl)
 
-    myTooltipEl.addEventListener(&#39;hidden.bs.tooltip&#39;, () =&gt; {
-      // do something...
-    })
+myTooltipEl.addEventListener(&#39;hidden.bs.tooltip&#39;, () =&gt; {
+  // do something...
+})
 
-    tooltip.hide()
+tooltip.hide()
     </code></pre>
   </article>
 </template>

@@ -77,11 +77,11 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex justify-content-end&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex justify-content-center&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex justify-content-between&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex justify-content-around&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex justify-content-evenly&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-end&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-center&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-between&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-around&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-evenly&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <p>Responsive variations also exist for <code>justify-content</code>.</p>
     <ul>
@@ -123,10 +123,10 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex align-items-end&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex align-items-center&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex align-items-baseline&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;d-flex align-items-stretch&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-end&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-center&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-baseline&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-stretch&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <p>Responsive variations also exist for <code>align-items</code>.</p>
     <ul>
@@ -167,10 +167,10 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;align-self-start&quot;&gt;Aligned flex item&lt;/div&gt;
-    &lt;div class=&quot;align-self-end&quot;&gt;Aligned flex item&lt;/div&gt;
-    &lt;div class=&quot;align-self-center&quot;&gt;Aligned flex item&lt;/div&gt;
-    &lt;div class=&quot;align-self-baseline&quot;&gt;Aligned flex item&lt;/div&gt;
-    &lt;div class=&quot;align-self-stretch&quot;&gt;Aligned flex item&lt;/div&gt;
+&lt;div class=&quot;align-self-end&quot;&gt;Aligned flex item&lt;/div&gt;
+&lt;div class=&quot;align-self-center&quot;&gt;Aligned flex item&lt;/div&gt;
+&lt;div class=&quot;align-self-baseline&quot;&gt;Aligned flex item&lt;/div&gt;
+&lt;div class=&quot;align-self-stretch&quot;&gt;Aligned flex item&lt;/div&gt;
     </code></pre>
     <p>Responsive variations also exist for <code>align-self</code>.</p>
     <ul>
@@ -248,8 +248,8 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt;
-      ...
-    &lt;/div&gt;
+  ...
+&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex flex-wrap">
@@ -270,8 +270,8 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap&quot;&gt;
-      ...
-    &lt;/div&gt;
+  ...
+&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex flex-wrap-reverse">
@@ -292,8 +292,8 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap-reverse&quot;&gt;
-      ...
-    &lt;/div&gt;
+  ...
+&lt;/div&gt;
     </code></pre>
     <p>Responsive variations also exist for <code>flex-wrap</code>.</p>
     <ul>
@@ -339,8 +339,8 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-start flex-wrap&quot;&gt;
-      ...
-    &lt;/div&gt;
+  ...
+&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-end flex-wrap mb-3" style="height: 200px">

@@ -34,31 +34,31 @@
         </div>
       </div>' />
     <pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
-      &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+  &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
 
-      &lt;div class=&quot;card-body&quot;&gt;
-        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
-        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
-        &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class=&quot;card&quot; aria-hidden=&quot;true&quot;&gt;
-      &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
-      &lt;div class=&quot;card-body&quot;&gt;
-        &lt;h5 class=&quot;card-title placeholder-glow&quot;&gt;
-          &lt;span class=&quot;placeholder col-6&quot;&gt;&lt;/span&gt;
-        &lt;/h5&gt;
-        &lt;p class=&quot;card-text placeholder-glow&quot;&gt;
-          &lt;span class=&quot;placeholder col-7&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;placeholder col-4&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;placeholder col-4&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;placeholder col-6&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;placeholder col-8&quot;&gt;&lt;/span&gt;
-        &lt;/p&gt;
-        &lt;a class=&quot;btn btn-primary disabled placeholder col-6&quot; aria-disabled=&quot;true&quot;&gt;&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;card&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title placeholder-glow&quot;&gt;
+      &lt;span class=&quot;placeholder col-6&quot;&gt;&lt;/span&gt;
+    &lt;/h5&gt;
+    &lt;p class=&quot;card-text placeholder-glow&quot;&gt;
+      &lt;span class=&quot;placeholder col-7&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;placeholder col-4&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;placeholder col-4&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;placeholder col-6&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;placeholder col-8&quot;&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;a class=&quot;btn btn-primary disabled placeholder col-6&quot; aria-disabled=&quot;true&quot;&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text inside an element or be added as a modifier class to an existing component.</p>

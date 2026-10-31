@@ -111,17 +111,17 @@
     </li>
     <li><p>Adds new <code>_variables-dark.scss</code> stylesheet to house dark-mode specific overrides. This stylesheet should be imported immediately after the existing <code>_variables.scss</code> file in your import stack.</p>
     <pre><code class="language-diff">diff --git a/scss/bootstrap.scss b/scss/bootstrap.scss
-    index 8f8296def..449d70487 100644
-    --- a/scss/bootstrap.scss
-    +++ b/scss/bootstrap.scss
-    @@ -6,6 +6,7 @@
-     // Configuration
-     @import &quot;functions&quot;;
-     @import &quot;variables&quot;;
-    +@import &quot;variables-dark&quot;;
-     @import &quot;maps&quot;;
-     @import &quot;mixins&quot;;
-     @import &quot;utilities&quot;;
+index 8f8296def..449d70487 100644
+--- a/scss/bootstrap.scss
++++ b/scss/bootstrap.scss
+@@ -6,6 +6,7 @@
+ // Configuration
+ @import &quot;functions&quot;;
+ @import &quot;variables&quot;;
++@import &quot;variables-dark&quot;;
+ @import &quot;maps&quot;;
+ @import &quot;mixins&quot;;
+ @import &quot;utilities&quot;;
     </code></pre>
     </li>
     </ul>
@@ -173,35 +173,35 @@
     <p>The markup for <a href="[[docsref:/components/progress]]">progress bars</a> has been updated in v5.3.0. Due to the placement of <code>role</code> and various <code>aria-</code> attributes on the inner <code>.progress-bar</code> element, <strong>some screen readers were not announcing zero value progress bars</strong>. Now, <code>role=&quot;progressbar&quot;</code> and the relevant <code>aria-*</code> attributes are on the outer <code>.progress</code> element, leaving the <code>.progress-bar</code> purely for the visual presentation of the bar and optional label.</p>
     <p>While we recommend adopting the new markup for improved compatibility with all screen readers, note that the legacy progress bar structure will continue to work as before.</p>
     <pre><code class="language-html">&lt;!-- Previous markup --&gt;
-    &lt;div class=&quot;progress&quot;&gt;
-      &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;!-- New markup --&gt;
-    &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;
-      &lt;div class=&quot;progress-bar&quot; style=&quot;width: 25%&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
+&lt;!-- New markup --&gt;
+&lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; style=&quot;width: 25%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>We’ve also introduced a new <code>.progress-stacked</code> class to more logically wrap <a href="[[docsref:/components/progress#multiple-bars]]">multiple progress bars</a> into a single stacked progress bar.</p>
     <pre><code class="language-html">&lt;!-- Previous markup --&gt;
-    &lt;div class=&quot;progress&quot;&gt;
-      &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment one&quot; style=&quot;width: 15%&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;progress-bar bg-success&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment two&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;progress-bar bg-info&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment three&quot; style=&quot;width: 20%&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment one&quot; style=&quot;width: 15%&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;progress-bar bg-success&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment two&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;progress-bar bg-info&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment three&quot; style=&quot;width: 20%&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;!-- New markup --&gt;
-    &lt;div class=&quot;progress-stacked&quot;&gt;
-      &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment one&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 15%&quot;&gt;
-        &lt;div class=&quot;progress-bar&quot;&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment two&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 30%&quot;&gt;
-        &lt;div class=&quot;progress-bar bg-success&quot;&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment three&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
-        &lt;div class=&quot;progress-bar bg-info&quot;&gt;&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+&lt;!-- New markup --&gt;
+&lt;div class=&quot;progress-stacked&quot;&gt;
+  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment one&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 15%&quot;&gt;
+    &lt;div class=&quot;progress-bar&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment two&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 30%&quot;&gt;
+    &lt;div class=&quot;progress-bar bg-success&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment three&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;div class=&quot;progress-bar bg-info&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
     <ul>
@@ -251,29 +251,29 @@
     </ul>
     <p>Your custom Bootstrap CSS builds should now look something like this with a separate maps import.</p>
     <pre><code class="language-diff">  // Functions come first
-      @import &quot;functions&quot;;
+  @import &quot;functions&quot;;
 
-      // Optional variable overrides here
-    + $custom-color: #df711b;
-    + $custom-theme-colors: (
-    +   &quot;custom&quot;: $custom-color
-    + );
+  // Optional variable overrides here
++ $custom-color: #df711b;
++ $custom-theme-colors: (
++   &quot;custom&quot;: $custom-color
++ );
 
-      // Variables come next
-      @import &quot;variables&quot;;
+  // Variables come next
+  @import &quot;variables&quot;;
 
-    + // Optional Sass map overrides here
-    + $theme-colors: map-merge($theme-colors, $custom-theme-colors);
-    +
-    + // Followed by our default maps
-    + @import &quot;maps&quot;;
-    +
-      // Rest of our imports
-      @import &quot;mixins&quot;;
-      @import &quot;utilities&quot;;
-      @import &quot;root&quot;;
-      @import &quot;reboot&quot;;
-      // etc
++ // Optional Sass map overrides here
++ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
++
++ // Followed by our default maps
++ @import &quot;maps&quot;;
++
+  // Rest of our imports
+  @import &quot;mixins&quot;;
+  @import &quot;utilities&quot;;
+  @import &quot;root&quot;;
+  @import &quot;reboot&quot;;
+  // etc
     </code></pre>
     <h3 id="new-utilities">New utilities<a class="anchor-link" href="#new-utilities" aria-label="Link to New utilities"></a></h3>
     <ul>
@@ -726,7 +726,7 @@
     </li>
     <li><p><strong>All plugins can now accept a CSS selector as the first argument.</strong> You can either pass a DOM element or any valid CSS selector to create a new instance of the plugin:</p>
     <pre><code class="language-js">const modal = new bootstrap.Modal(&#39;#myModal&#39;)
-    const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)
+const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)
     </code></pre>
     </li>
     <li><p><code>popperConfig</code> can be passed as a function that accepts the Bootstrap’s default Popper config as an argument, so that you can merge this default configuration in your way. <strong>Applies to dropdowns, popovers, and tooltips.</strong></p>

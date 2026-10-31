@@ -47,8 +47,8 @@
         </ul>
       </nav>' /><p>If using a non-interactive element, like a <code>&lt;span&gt;</code> for the current page, you may omit the <code>aria-current</code> attribute.</p>
     <pre><code class="language-html">&lt;li class=&quot;page-item active&quot;&gt;
-      &lt;span class=&quot;page-link&quot;&gt;2&lt;/span&gt;
-    &lt;/li&gt;
+  &lt;span class=&quot;page-link&quot;&gt;2&lt;/span&gt;
+&lt;/li&gt;
     </code></pre>
     <h2 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h2>
     <p>Add <code>.disabled</code> to a <code>.page-item</code> to make it appear un-clickable. While <code>.disabled</code> uses <code>pointer-events: none</code> to disable the link‘s interactivity, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex=&quot;-1&quot;</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
@@ -68,8 +68,8 @@
         </ul>
       </nav>' /><p>And just like active page items, you can swap out the disabled <code>&lt;a&gt;</code> for a <code>&lt;span&gt;</code> to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
     <pre><code class="language-html">&lt;li class=&quot;page-item disabled&quot;&gt;
-      &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
-    &lt;/li&gt;
+  &lt;span class=&quot;page-link&quot;&gt;Previous&lt;/span&gt;
+&lt;/li&gt;
     </code></pre>
     <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
     <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>

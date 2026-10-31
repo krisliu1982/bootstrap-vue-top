@@ -26,11 +26,11 @@
     <h2 id="cdn-via-jsdelivr">CDN via jsDelivr<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="Link to CDN via jsDelivr"></a></h2>
     <p>Skip the download with <a href="https://www.jsdelivr.com/">jsDelivr</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.</p>
     <pre><code class="language-html">&lt;link href=&quot;[[config:cdn.css]]&quot; rel=&quot;stylesheet&quot; integrity=&quot;[[config:cdn.css_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
-    &lt;script src=&quot;[[config:cdn.js_bundle]]&quot; integrity=&quot;[[config:cdn.js_bundle_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;[[config:cdn.js_bundle]]&quot; integrity=&quot;[[config:cdn.js_bundle_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
     </code></pre>
     <p>If you’re using our compiled JavaScript and prefer to include Popper separately, add Popper before our JS, via a CDN preferably.</p>
     <pre><code class="language-html">&lt;script src=&quot;[[config:cdn.popper]]&quot; integrity=&quot;[[config:cdn.popper_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;[[config:cdn.js]]&quot; integrity=&quot;[[config:cdn.js_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;[[config:cdn.js]]&quot; integrity=&quot;[[config:cdn.js_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
     </code></pre>
     <h3 id="alternative-cdns">Alternative CDNs<a class="anchor-link" href="#alternative-cdns" aria-label="Link to Alternative CDNs"></a></h3>
     <p>We recommend <a href="https://www.jsdelivr.com/">jsDelivr</a> and use it ourselves in our documentation. However, in some cases—like in some specific countries or environments—you may need to use other CDN providers like <a href="https://cdnjs.com/">cdnjs</a> or <a href="https://unpkg.com/">unpkg</a>.</p>
@@ -62,9 +62,9 @@
     <Callout type="warning">
     <p><strong>Yarn 2+ (aka Yarn Berry) doesn’t support the <code>node_modules</code> directory by default</strong>: using our <a href="https://github.com/twbs/examples/tree/main/sass-js">Sass &amp; JS example</a> needs some adjustments:</p>
     <pre><code class="language-sh">yarn config set nodeLinker node-modules # Use the node_modules linker
-    touch yarn.lock # Create an empty yarn.lock file
-    yarn install # Install the dependencies
-    yarn start # Start the project
+touch yarn.lock # Create an empty yarn.lock file
+yarn install # Install the dependencies
+yarn start # Start the project
     </code></pre>
     </Callout><h3 id="bun">Bun<a class="anchor-link" href="#bun" aria-label="Link to Bun"></a></h3>
     <p>Install Bootstrap in your Bun or Node.js powered apps with <a href="https://bun.sh/">the Bun CLI</a>:</p>

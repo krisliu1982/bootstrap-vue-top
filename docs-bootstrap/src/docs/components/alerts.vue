@@ -100,7 +100,7 @@
     <h3 id="initialize">Initialize<a class="anchor-link" href="#initialize" aria-label="Link to Initialize"></a></h3>
     <p>Initialize elements as alerts</p>
     <pre><code class="language-js">const alertList = document.querySelectorAll(&#39;.alert&#39;)
-    const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
+const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
     </code></pre>
     <Callout>
     <p>For the sole purpose of dismissing an alert, it isn’t necessary to initialize the component manually via the JS API. By making use of <code>data-bs-dismiss=&quot;alert&quot;</code>, the component will be initialized automatically and properly dismissed.</p>
@@ -138,7 +138,7 @@
     </tbody></table>
     </div><p>Basic usage:</p>
     <pre><code class="language-js">const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
-    alert.close()
+alert.close()
     </code></pre>
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s alert plugin exposes a few events for hooking into alert functionality.</p>
@@ -160,11 +160,11 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
-    myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
-      // do something, for instance, explicitly move focus to the most appropriate element,
-      // so it doesn’t get lost/reset to the start of the page
-      // document.getElementById(&#39;...&#39;).focus()
-    })
+myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
+  // do something, for instance, explicitly move focus to the most appropriate element,
+  // so it doesn’t get lost/reset to the start of the page
+  // document.getElementById(&#39;...&#39;).focus()
+})
     </code></pre>
   </article>
 </template>

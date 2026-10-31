@@ -113,14 +113,14 @@
       </div>' /><h2 id="change-the-gutters">Change the gutters<a class="anchor-link" href="#change-the-gutters" aria-label="Link to Change the gutters"></a></h2>
     <p>Classes are built from the <code>$gutters</code> Sass map which is inherited from the <code>$spacers</code> Sass map.</p>
     <pre><code class="language-scss">$grid-gutter-width: 1.5rem;
-    $gutters: (
-      0: 0,
-      1: $spacer * .25,
-      2: $spacer * .5,
-      3: $spacer,
-      4: $spacer * 1.5,
-      5: $spacer * 3,
-    );
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
     </code></pre>
   </article>
 </template>

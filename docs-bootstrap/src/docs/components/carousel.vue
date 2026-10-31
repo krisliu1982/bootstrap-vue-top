@@ -334,10 +334,10 @@
     <Callout name="danger-async-methods" type="danger" /><p>You can create a carousel instance with the carousel constructor, and pass on any additional options. For example, to manually initialize an autoplaying carousel (assuming you’re not using the <code>data-bs-ride=&quot;carousel&quot;</code> attribute in the markup itself) with a specific interval and with touch support disabled, you can use:</p>
     <pre><code class="language-js">const myCarouselElement = document.querySelector(&#39;#myCarousel&#39;)
 
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      touch: false
-    })
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
     </code></pre>
 <div class="table-responsive"><table class="table">
     <thead>
@@ -411,9 +411,9 @@
     </div>
     <pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
 
-    myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
-      // do something...
-    })
+myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

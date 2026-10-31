@@ -29,10 +29,10 @@
     <Placeholder width="140" height="80" class="object-fit-xxl-contain border rounded" text="Contain on xxl" markup="img" />' /><h2 id="video">Video<a class="anchor-link" href="#video" aria-label="Link to Video"></a></h2>
     <p>The <code>.object-fit-{value}</code> and responsive <code>.object-fit-{breakpoint}-{value}</code> utilities also work on <code>&lt;video&gt;</code> elements.</p>
     <pre><code class="language-html">&lt;video src=&quot;...&quot; class=&quot;object-fit-contain&quot; autoplay&gt;&lt;/video&gt;
-    &lt;video src=&quot;...&quot; class=&quot;object-fit-cover&quot; autoplay&gt;&lt;/video&gt;
-    &lt;video src=&quot;...&quot; class=&quot;object-fit-fill&quot; autoplay&gt;&lt;/video&gt;
-    &lt;video src=&quot;...&quot; class=&quot;object-fit-scale&quot; autoplay&gt;&lt;/video&gt;
-    &lt;video src=&quot;...&quot; class=&quot;object-fit-none&quot; autoplay&gt;&lt;/video&gt;
+&lt;video src=&quot;...&quot; class=&quot;object-fit-cover&quot; autoplay&gt;&lt;/video&gt;
+&lt;video src=&quot;...&quot; class=&quot;object-fit-fill&quot; autoplay&gt;&lt;/video&gt;
+&lt;video src=&quot;...&quot; class=&quot;object-fit-scale&quot; autoplay&gt;&lt;/video&gt;
+&lt;video src=&quot;...&quot; class=&quot;object-fit-none&quot; autoplay&gt;&lt;/video&gt;
     </code></pre>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>

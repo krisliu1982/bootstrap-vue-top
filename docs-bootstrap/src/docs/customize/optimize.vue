@@ -12,24 +12,24 @@
     <p>For instance, assuming you’re using your own JavaScript bundler like Webpack, Parcel, or Vite, you’d only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:</p>
     <pre><code class="language-js">// Import just what we need
 
-    // import &#39;bootstrap/js/dist/alert&#39;;
-    // import &#39;bootstrap/js/dist/button&#39;;
-    // import &#39;bootstrap/js/dist/carousel&#39;;
-    // import &#39;bootstrap/js/dist/collapse&#39;;
-    // import &#39;bootstrap/js/dist/dropdown&#39;;
-    import &#39;bootstrap/js/dist/modal&#39;;
-    // import &#39;bootstrap/js/dist/offcanvas&#39;;
-    // import &#39;bootstrap/js/dist/popover&#39;;
-    // import &#39;bootstrap/js/dist/scrollspy&#39;;
-    // import &#39;bootstrap/js/dist/tab&#39;;
-    // import &#39;bootstrap/js/dist/toast&#39;;
-    // import &#39;bootstrap/js/dist/tooltip&#39;;
+// import &#39;bootstrap/js/dist/alert&#39;;
+// import &#39;bootstrap/js/dist/button&#39;;
+// import &#39;bootstrap/js/dist/carousel&#39;;
+// import &#39;bootstrap/js/dist/collapse&#39;;
+// import &#39;bootstrap/js/dist/dropdown&#39;;
+import &#39;bootstrap/js/dist/modal&#39;;
+// import &#39;bootstrap/js/dist/offcanvas&#39;;
+// import &#39;bootstrap/js/dist/popover&#39;;
+// import &#39;bootstrap/js/dist/scrollspy&#39;;
+// import &#39;bootstrap/js/dist/tab&#39;;
+// import &#39;bootstrap/js/dist/toast&#39;;
+// import &#39;bootstrap/js/dist/tooltip&#39;;
     </code></pre>
     <p>This way, you’re not including any JavaScript you don’t intend to use for components like buttons, carousels, and tooltips. If you’re importing dropdowns, tooltips or popovers, be sure to list the Popper dependency in your <code>package.json</code> file.</p>
     <Callout>
     <p><strong>Heads up!</strong> Files in <code>bootstrap/js/dist</code> use the <strong>default export</strong>. To use them, do the following:</p>
     <pre><code class="language-js">import Modal from &#39;bootstrap/js/dist/modal&#39;
-    const modal = new Modal(document.getElementById(&#39;myModal&#39;))
+const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     </code></pre>
     </Callout><h2 id="autoprefixer-browserslistrc">Autoprefixer .browserslistrc<a class="anchor-link" href="#autoprefixer-browserslistrc" aria-label="Link to Autoprefixer .browserslistrc"></a></h2>
     <p>Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our <code>.browserslistrc</code> file, found in the root of the Bootstrap repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.</p>

@@ -7,10 +7,10 @@
     <h2 id="position-values">Position values<a class="anchor-link" href="#position-values" aria-label="Link to Position values"></a></h2>
     <p>Quick positioning classes are available, though they are not responsive.</p>
     <pre><code class="language-html">&lt;div class=&quot;position-static&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;position-relative&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;position-absolute&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;position-fixed&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;position-sticky&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;position-relative&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;position-absolute&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;position-fixed&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;position-sticky&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <h2 id="arrange-elements">Arrange elements<a class="anchor-link" href="#arrange-elements" aria-label="Link to Arrange elements"></a></h2>
     <p>Arrange elements easily with the edge positioning utilities. The format is <code>{property}-{position}</code>.</p>

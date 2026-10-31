@@ -97,18 +97,18 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;!-- Example single danger button --&gt;
-    &lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Danger
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Danger
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="split-button">Split button<a class="anchor-link" href="#split-button" aria-label="Link to Split button"></a></h3>
     <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</p>
@@ -192,19 +192,19 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;!-- Example split danger button --&gt;
-    &lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
     <p>Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
@@ -234,25 +234,25 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;!-- Large button groups (default and split) --&gt;
-    &lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button class=&quot;btn btn-secondary btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Large button
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        ...
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button class=&quot;btn btn-secondary btn-lg&quot; type=&quot;button&quot;&gt;
-        Large split button
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        ...
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Large button
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary btn-lg&quot; type=&quot;button&quot;&gt;
+    Large split button
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <Example :showMarkup="false" code='<div class="btn-group">
         <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -280,24 +280,24 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button class=&quot;btn btn-secondary btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Small button
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        ...
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;btn-group&quot;&gt;
-      &lt;button class=&quot;btn btn-secondary btn-sm&quot; type=&quot;button&quot;&gt;
-        Small split button
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        ...
-      &lt;/ul&gt;
-    &lt;/div&gt;
+  &lt;button class=&quot;btn btn-secondary btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Small button
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary btn-sm&quot; type=&quot;button&quot;&gt;
+    Small split button
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h2 id="dark-dropdowns">Dark dropdowns<a class="anchor-link" href="#dark-dropdowns" aria-label="Link to Dark dropdowns"></a></h2>
     <DeprecatedIn version="5.3.0" /><p>Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are required to the dropdown items.</p>
@@ -376,27 +376,27 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;!-- Default dropup button --&gt;
-    &lt;div class=&quot;btn-group dropup&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Dropup
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group dropup&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Dropup
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
-    &lt;!-- Split dropup button --&gt;
-    &lt;div class=&quot;btn-group dropup&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
-        Split dropup
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;!-- Split dropup button --&gt;
+&lt;div class=&quot;btn-group dropup&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
+    Split dropup
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="dropup-centered">Dropup centered<a class="anchor-link" href="#dropup-centered" aria-label="Link to Dropup centered"></a></h3>
     <p>Make the dropup menu centered above the toggle with <code>.dropup-center</code> on the parent element.</p>
@@ -437,27 +437,27 @@
         </ul>
       </div>' />
     <pre><code class="language-html">&lt;!-- Default dropend button --&gt;
-    &lt;div class=&quot;btn-group dropend&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Dropend
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group dropend&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Dropend
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
-    &lt;!-- Split dropend button --&gt;
-    &lt;div class=&quot;btn-group dropend&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
-        Split dropend
-      &lt;/button&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropend&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;!-- Split dropend button --&gt;
+&lt;div class=&quot;btn-group dropend&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
+    Split dropend
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropend&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="dropstart">Dropstart<a class="anchor-link" href="#dropstart" aria-label="Link to Dropstart"></a></h3>
     <p>Trigger dropdown menus at the left of the elements by adding <code>.dropstart</code> to the parent element.</p>
@@ -487,27 +487,27 @@
         <button type="button" class="btn btn-secondary">Split dropstart</button>
       </div>' />
     <pre><code class="language-html">&lt;!-- Default dropstart button --&gt;
-    &lt;div class=&quot;btn-group dropstart&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Dropstart
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;btn-group dropstart&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Dropstart
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 
-    &lt;!-- Split dropstart button --&gt;
-    &lt;div class=&quot;btn-group dropstart&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropstart&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;!-- Dropdown menu links --&gt;
-      &lt;/ul&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
-        Split dropstart
-      &lt;/button&gt;
-    &lt;/div&gt;
+&lt;!-- Split dropstart button --&gt;
+&lt;div class=&quot;btn-group dropstart&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropstart&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;
+    Split dropstart
+  &lt;/button&gt;
+&lt;/div&gt;
     </code></pre>
     <h2 id="menu-items">Menu items<a class="anchor-link" href="#menu-items" aria-label="Link to Menu items"></a></h2>
     <p>You can use <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements as dropdown items.</p>
@@ -816,20 +816,20 @@
     </Callout><h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>Add <code>data-bs-toggle=&quot;dropdown&quot;</code> to a link or button to toggle a dropdown.</p>
     <pre><code class="language-html">&lt;div class=&quot;dropdown&quot;&gt;
-      &lt;button type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
-        Dropdown trigger
-      &lt;/button&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        ...
-      &lt;/ul&gt;
-    &lt;/div&gt;
+  &lt;button type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+    Dropdown trigger
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <Callout type="warning">
     <p>Dropdowns must have <code>data-bs-toggle=&quot;dropdown&quot;</code> on their trigger element, regardless of whether you call your dropdown via JavaScript or use the data-api.</p>
     </Callout><p>Call the dropdowns via JavaScript:</p>
     <pre><code class="language-js">const dropdownElementList = document.querySelectorAll(&#39;.dropdown-toggle&#39;)
-    const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new bootstrap.Dropdown(dropdownToggleEl))
+const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new bootstrap.Dropdown(dropdownToggleEl))
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
@@ -881,12 +881,12 @@
     </tbody></table>
     </div><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
     <pre><code class="language-js">const dropdown = new bootstrap.Dropdown(element, {
-      popperConfig(defaultBsPopperConfig) {
-        // const newPopperConfig = {...}
-        // use defaultBsPopperConfig if needed...
-        // return newPopperConfig
-      }
-    })
+  popperConfig(defaultBsPopperConfig) {
+    // const newPopperConfig = {...}
+    // use defaultBsPopperConfig if needed...
+    // return newPopperConfig
+  }
+})
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
 <div class="table-responsive"><table class="table">
@@ -953,9 +953,9 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myDropdown = document.getElementById(&#39;myDropdown&#39;)
-    myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
-      // do something...
-    })
+myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

@@ -11,8 +11,8 @@
     <p>The mixin source code:</p>
     <ScssDocs name="clearfix" file="scss/mixins/_clearfix.scss" /><p>Use the mixin in SCSS:</p>
     <pre><code class="language-scss">.element {
-      @include clearfix;
-    }
+  @include clearfix;
+}
     </code></pre>
     <p>The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.</p>
     <Example code='<div class="bg-info clearfix">

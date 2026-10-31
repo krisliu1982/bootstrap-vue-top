@@ -263,25 +263,25 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home-tab-pane&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#profile-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;profile-tab-pane&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#contact-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;contact-tab-pane&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;disabled-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#disabled-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;disabled-tab-pane&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;disabled-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home-tab-pane&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#profile-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;profile-tab-pane&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#contact-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;contact-tab-pane&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;disabled-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#disabled-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;disabled-tab-pane&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;disabled-tab-pane&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>To help fit your needs, this works with <code>&lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code>&lt;nav&gt;</code>, you shouldn’t add <code>role=&quot;tablist&quot;</code> directly to it, as this would override the element’s native role as a navigation landmark. Instead, switch to an alternative element (in the example below, a simple <code>&lt;div&gt;</code>) and wrap the <code>&lt;nav&gt;</code> around it.</p>
     <Example :showMarkup="false" code='
@@ -309,19 +309,19 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;nav&gt;
-      &lt;div class=&quot;nav nav-tabs&quot; id=&quot;nav-tab&quot; role=&quot;tablist&quot;&gt;
-        &lt;button class=&quot;nav-link active&quot; id=&quot;nav-home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;nav-profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;nav-contact-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-contact&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;nav-disabled-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/nav&gt;
-    &lt;div class=&quot;tab-content&quot; id=&quot;nav-tabContent&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nav-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;nav nav-tabs&quot; id=&quot;nav-tab&quot; role=&quot;tablist&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;nav-home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;nav-profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;nav-contact-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-contact&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;nav-disabled-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;nav-tabContent&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;nav-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;nav-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;nav-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>The tabs plugin also works with pills.</p>
     <Example :showMarkup="false" code='
@@ -355,25 +355,25 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;ul class=&quot;nav nav-pills mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link active&quot; id=&quot;pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;pills-contact-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-contact&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;pills-disabled-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;tab-content&quot; id=&quot;pills-tabContent&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;pills-contact-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-contact&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;pills-disabled-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;pills-tabContent&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-contact-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <p>And with vertical pills. Ideally, for vertical tabs, you should also add <code>aria-orientation=&quot;vertical&quot;</code> to the tab list container.</p>
     <Example :showMarkup="false" code='
@@ -405,21 +405,21 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;
-      &lt;div class=&quot;nav flex-column nav-pills me-3&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
-        &lt;button class=&quot;nav-link active&quot; id=&quot;v-pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-disabled-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-messages-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-messages&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/button&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-settings-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-settings&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
-        &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-        &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-        &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-        &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-        &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;nav flex-column nav-pills me-3&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;v-pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-disabled-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-disabled&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-disabled&quot; aria-selected=&quot;false&quot; disabled&gt;Disabled&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-messages-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-messages&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/button&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-settings-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-settings&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-content&quot; id=&quot;v-pills-tabContent&quot;&gt;
+    &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;v-pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-disabled&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-disabled-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;tab-pane fade&quot; id=&quot;v-pills-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;v-pills-settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h3>
     <p>Dynamic tabbed interfaces, as described in the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA Authoring Practices Guide tabs pattern</a>, require <code>role=&quot;tablist&quot;</code>, <code>role=&quot;tab&quot;</code>, <code>role=&quot;tabpanel&quot;</code>, and additional <code>aria-</code> attributes in order to convey their structure, functionality, and current state to users of assistive technologies (such as screen readers). As a best practice, we recommend using <code>&lt;button&gt;</code> elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.</p>
@@ -431,56 +431,56 @@
     </Callout><h3 id="using-data-attributes">Using data attributes<a class="anchor-link" href="#using-data-attributes" aria-label="Link to Using data attributes"></a></h3>
     <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-bs-toggle=&quot;tab&quot;</code> or <code>data-bs-toggle=&quot;pill&quot;</code> on an element. Use these data attributes on <code>.nav-tabs</code> or <code>.nav-pills</code>.</p>
     <pre><code class="language-html">&lt;!-- Nav tabs --&gt;
-    &lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;messages-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#messages&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-        &lt;button class=&quot;nav-link&quot; id=&quot;settings-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#settings&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/button&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;messages-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#messages&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;messages&quot; aria-selected=&quot;false&quot;&gt;Messages&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;settings-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#settings&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;settings&quot; aria-selected=&quot;false&quot;&gt;Settings&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;!-- Tab panes --&gt;
-    &lt;div class=&quot;tab-content&quot;&gt;
-      &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+&lt;!-- Tab panes --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
     <pre><code class="language-js">const triggerTabList = document.querySelectorAll(&#39;#myTab button&#39;)
-    triggerTabList.forEach(triggerEl =&gt; {
-      const tabTrigger = new bootstrap.Tab(triggerEl)
+triggerTabList.forEach(triggerEl =&gt; {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
 
-      triggerEl.addEventListener(&#39;click&#39;, event =&gt; {
-        event.preventDefault()
-        tabTrigger.show()
-      })
-    })
+  triggerEl.addEventListener(&#39;click&#39;, event =&gt; {
+    event.preventDefault()
+    tabTrigger.show()
+  })
+})
     </code></pre>
     <p>You can activate individual tabs in several ways:</p>
     <pre><code class="language-js">const triggerEl = document.querySelector(&#39;#myTab button[data-bs-target=&quot;#profile&quot;]&#39;)
-    bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
 
-    const triggerFirstTabEl = document.querySelector(&#39;#myTab li:first-child button&#39;)
-    bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+const triggerFirstTabEl = document.querySelector(&#39;#myTab li:first-child button&#39;)
+bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
     </code></pre>
     <h3 id="fade-effect">Fade effect<a class="anchor-link" href="#fade-effect" aria-label="Link to Fade effect"></a></h3>
     <p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.</p>
     <pre><code class="language-html">&lt;div class=&quot;tab-content&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;messages-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;settings-tab&quot; tabindex=&quot;0&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a tab element.</p>
@@ -546,10 +546,10 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const tabEl = document.querySelector(&#39;button[data-bs-toggle=&quot;tab&quot;]&#39;)
-    tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
-      event.target // newly activated tab
-      event.relatedTarget // previous active tab
-    })
+tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
+  event.target // newly activated tab
+  event.relatedTarget // previous active tab
+})
     </code></pre>
   </article>
 </template>

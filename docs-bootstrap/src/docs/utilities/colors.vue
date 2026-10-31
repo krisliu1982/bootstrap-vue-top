@@ -30,9 +30,9 @@
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.text-primary</code> utility.</p>
     <pre><code class="language-css">.text-primary {
-      --bs-text-opacity: 1;
-      color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-    }
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
     </code></pre>
     <p>We use an RGB version of our <code>--bs-primary</code> (with the value of <code>13, 110, 253</code>) CSS variable and attached a second CSS variable, <code>--bs-text-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.text-primary</code> now, your computed <code>color</code> value is <code>rgba(13, 110, 253, 1)</code>. The local CSS variable inside each <code>.text-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.</p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>

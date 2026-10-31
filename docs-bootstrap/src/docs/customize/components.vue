@@ -25,12 +25,12 @@
     </code></pre>
     <p>In your CSS, you’d have something like the following where the bulk of the styling is done via <code>.callout</code>. Then, the unique styles between each variant is controlled via modifier class.</p>
     <pre><code class="language-scss">// Base class
-    .callout {}
+.callout {}
 
-    // Modifier classes
-    .callout-info {}
-    .callout-warning {}
-    .callout-danger {}
+// Modifier classes
+.callout-info {}
+.callout-warning {}
+.callout-danger {}
     </code></pre>
     <p>For the callouts, that unique styling is just a <code>border-left-color</code>. When you combine that base class with one of those modifier classes, you get your complete component family:</p>
     <Callout>

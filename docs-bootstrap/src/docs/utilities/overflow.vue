@@ -21,9 +21,9 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-visible&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-scroll&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-scroll&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <h3 id="overflow-x"><code>overflow-x</code><a class="anchor-link" href="#overflow-x" aria-label="Link to overflow-x"></a></h3>
     <p>Adjust the <code>overflow-x</code> property to affect the overflow of content horizontally.</p>
@@ -46,9 +46,9 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-x-visible&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-x-scroll&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-x-scroll&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <h3 id="overflow-y"><code>overflow-y</code><a class="anchor-link" href="#overflow-y" aria-label="Link to overflow-y"></a></h3>
     <p>Adjust the <code>overflow-y</code> property to affect the overflow of content vertically.</p>
@@ -67,9 +67,9 @@
       </div>
     </div>
     <pre><code class="language-html">&lt;div class=&quot;overflow-y-auto&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-y-hidden&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-hidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <p>Using Sass variables, you may customize the overflow utilities by changing the <code>$overflows</code> variable in <code>_variables.scss</code>.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>

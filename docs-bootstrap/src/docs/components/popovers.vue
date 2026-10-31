@@ -23,7 +23,7 @@
     <h3 id="enable-popovers">Enable popovers<a class="anchor-link" href="#enable-popovers" aria-label="Link to Enable popovers"></a></h3>
     <p>As mentioned above, you must initialize popovers before they can be used. One way to initialize all popovers on a page would be to select them by their <code>data-bs-toggle</code> attribute, like so:</p>
     <pre><code class="language-js">const popoverTriggerList = document.querySelectorAll(&#39;[data-bs-toggle=&quot;popover&quot;]&#39;)
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl))
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl))
     </code></pre>
     <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
     <p>We use JavaScript similar to the snippet above to render the following live popover. Titles are set via <code>data-bs-title</code> and body content is set via <code>data-bs-content</code>.</p>
@@ -43,13 +43,13 @@
       </button>' /><h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
     <p>When you have some styles on a parent element that interfere with a popover, you’ll want to specify a custom <code>container</code> so that the popover’s HTML appears within that element instead. This is common in responsive tables, input groups, and the like.</p>
     <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
-      container: &#39;body&#39;
-    })
+  container: &#39;body&#39;
+})
     </code></pre>
     <p>Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="[[docsref:/components/modal]]">modal dialog</a>, to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.</p>
     <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
-      container: &#39;.modal-body&#39;
-    })
+  container: &#39;.modal-body&#39;
+})
     </code></pre>
     <h3 id="custom-popovers">Custom popovers<a class="anchor-link" href="#custom-popovers" aria-label="Link to Custom popovers"></a></h3>
     <AddedIn version="5.2.0" /><p>You can customize the appearance of popovers using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-popover&quot;</code> to scope our custom appearance and use it to override some of the local CSS variables.</p>
@@ -65,8 +65,8 @@
     <p><strong>Dismissing on next click requires specific HTML for proper cross-browser and cross-platform behavior.</strong> You can only use <code>&lt;a&gt;</code> elements, not <code>&lt;button&gt;</code>s, and you must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code>tabindex</code></a>.</p>
     </Callout><Example addStackblitzJs code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>' />
     <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.popover-dismiss&#39;, {
-      trigger: &#39;focus&#39;
-    })
+  trigger: &#39;focus&#39;
+})
     </code></pre>
     <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
     <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
@@ -80,7 +80,7 @@
     <ScssDocs name="popover-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Enable popovers via JavaScript:</p>
     <pre><code class="language-js">const exampleEl = document.getElementById(&#39;example&#39;)
-    const popover = new bootstrap.Popover(exampleEl, options)
+const popover = new bootstrap.Popover(exampleEl, options)
     </code></pre>
     <Callout type="warning">
     <p><strong>Keep popovers accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce popovers in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your popovers as this will make them impossible to trigger for keyboard users.</p>
@@ -213,12 +213,12 @@
     <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
     </Callout><h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
     <pre><code class="language-js">const popover = new bootstrap.Popover(element, {
-      popperConfig(defaultBsPopperConfig) {
-        // const newPopperConfig = {...}
-        // use defaultBsPopperConfig if needed...
-        // return newPopperConfig
-      }
-    })
+  popperConfig(defaultBsPopperConfig) {
+    // const newPopperConfig = {...}
+    // use defaultBsPopperConfig if needed...
+    // return newPopperConfig
+  }
+})
     </code></pre>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><div class="table-responsive">
@@ -276,13 +276,13 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">// getOrCreateInstance example
-    const popover = bootstrap.Popover.getOrCreateInstance(&#39;#example&#39;) // Returns a Bootstrap popover instance
+const popover = bootstrap.Popover.getOrCreateInstance(&#39;#example&#39;) // Returns a Bootstrap popover instance
 
-    // setContent example
-    popover.setContent({
-      &#39;.popover-header&#39;: &#39;another title&#39;,
-      &#39;.popover-body&#39;: &#39;another content&#39;
-    })
+// setContent example
+popover.setContent({
+  &#39;.popover-header&#39;: &#39;another title&#39;,
+  &#39;.popover-body&#39;: &#39;another content&#39;
+})
     </code></pre>
     <Callout>
     <p>The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the popover template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> | <code>null</code></p>
@@ -317,9 +317,9 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const myPopoverTrigger = document.getElementById(&#39;myPopover&#39;)
-    myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
-      // do something...
-    })
+myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

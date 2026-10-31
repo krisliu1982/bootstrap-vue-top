@@ -17,9 +17,9 @@
     <h3 id="visually-hidden-content">Visually hidden content<a class="anchor-link" href="#visually-hidden-content" aria-label="Link to Visually hidden content"></a></h3>
     <p>Content which should be visually hidden, but remain accessible to assistive technologies such as screen readers, can be styled using the <code>.visually-hidden</code> class. This can be useful in situations where additional visual information or cues (such as meaning denoted through the use of color) need to also be conveyed to non-visual users.</p>
     <pre><code class="language-html">&lt;p class=&quot;text-danger&quot;&gt;
-      &lt;span class=&quot;visually-hidden&quot;&gt;Danger: &lt;/span&gt;
-      This action is not reversible
-    &lt;/p&gt;
+  &lt;span class=&quot;visually-hidden&quot;&gt;Danger: &lt;/span&gt;
+  This action is not reversible
+&lt;/p&gt;
     </code></pre>
     <p>For visually hidden interactive controls, such as traditional “skip” links, use the <code>.visually-hidden-focusable</code> class. This will ensure that the control becomes visible once focused (for sighted keyboard users). <strong>Watch out, compared to the equivalent <code>.sr-only</code> and <code>.sr-only-focusable</code> classes in past versions, Bootstrap 5’s <code>.visually-hidden-focusable</code> is a standalone class, and must not be used in combination with the <code>.visually-hidden</code> class.</strong></p>
     <pre><code class="language-html">&lt;a class=&quot;visually-hidden-focusable&quot; href=&quot;#content&quot;&gt;Skip to main content&lt;/a&gt;

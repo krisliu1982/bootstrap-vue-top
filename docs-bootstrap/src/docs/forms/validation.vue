@@ -85,7 +85,27 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
-      </form>' /><Code containerClass="bd-example-snippet" lang="js" filePath={getDocsRelativePath('/static/docs/[version]/assets/js/validate-forms.js')} /><h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
+      </form>' />
+      <CodeWrapper code="// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()" lang="javascript" />
+      <h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
     <p>Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p>
     <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
     <Example code='<form class="row g-3">

@@ -52,37 +52,37 @@
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
       </div>' />
     <pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
-      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
-      &lt;ul class=&quot;nav nav-pills&quot;&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;
-          &lt;a class=&quot;nav-link&quot; href=&quot;#scrollspyHeading1&quot;&gt;First&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;
-          &lt;a class=&quot;nav-link&quot; href=&quot;#scrollspyHeading2&quot;&gt;Second&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;nav-item dropdown&quot;&gt;
-          &lt;a class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
-          &lt;ul class=&quot;dropdown-menu&quot;&gt;
-            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading3&quot;&gt;Third&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading4&quot;&gt;Fourth&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading5&quot;&gt;Fifth&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+  &lt;ul class=&quot;nav nav-pills&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#scrollspyHeading1&quot;&gt;First&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#scrollspyHeading2&quot;&gt;Second&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item dropdown&quot;&gt;
+      &lt;a class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading3&quot;&gt;Third&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading4&quot;&gt;Fourth&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#scrollspyHeading5&quot;&gt;Fifth&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
-    &lt;/nav&gt;
-    &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example2&quot; data-bs-root-margin=&quot;0px 0px -40%&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example bg-body-tertiary p-3 rounded-2&quot; tabindex=&quot;0&quot;&gt;
-      &lt;h4 id=&quot;scrollspyHeading1&quot;&gt;First heading&lt;/h4&gt;
-      &lt;p&gt;...&lt;/p&gt;
-      &lt;h4 id=&quot;scrollspyHeading2&quot;&gt;Second heading&lt;/h4&gt;
-      &lt;p&gt;...&lt;/p&gt;
-      &lt;h4 id=&quot;scrollspyHeading3&quot;&gt;Third heading&lt;/h4&gt;
-      &lt;p&gt;...&lt;/p&gt;
-      &lt;h4 id=&quot;scrollspyHeading4&quot;&gt;Fourth heading&lt;/h4&gt;
-      &lt;p&gt;...&lt;/p&gt;
-      &lt;h4 id=&quot;scrollspyHeading5&quot;&gt;Fifth heading&lt;/h4&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example2&quot; data-bs-root-margin=&quot;0px 0px -40%&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example bg-body-tertiary p-3 rounded-2&quot; tabindex=&quot;0&quot;&gt;
+  &lt;h4 id=&quot;scrollspyHeading1&quot;&gt;First heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id=&quot;scrollspyHeading2&quot;&gt;Second heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id=&quot;scrollspyHeading3&quot;&gt;Third heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id=&quot;scrollspyHeading4&quot;&gt;Fourth heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id=&quot;scrollspyHeading5&quot;&gt;Fifth heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
     <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
@@ -146,57 +146,57 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-4&quot;&gt;
-        &lt;nav id=&quot;navbar-example3&quot; class=&quot;h-100 flex-column align-items-stretch pe-4 border-end&quot;&gt;
-          &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#item-1&quot;&gt;Item 1&lt;/a&gt;
-            &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
-              &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-1-1&quot;&gt;Item 1-1&lt;/a&gt;
-              &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-1-2&quot;&gt;Item 1-2&lt;/a&gt;
-            &lt;/nav&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#item-2&quot;&gt;Item 2&lt;/a&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#item-3&quot;&gt;Item 3&lt;/a&gt;
-            &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
-              &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-3-1&quot;&gt;Item 3-1&lt;/a&gt;
-              &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-3-2&quot;&gt;Item 3-2&lt;/a&gt;
-            &lt;/nav&gt;
-          &lt;/nav&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;nav id=&quot;navbar-example3&quot; class=&quot;h-100 flex-column align-items-stretch pe-4 border-end&quot;&gt;
+      &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#item-1&quot;&gt;Item 1&lt;/a&gt;
+        &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+          &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-1-1&quot;&gt;Item 1-1&lt;/a&gt;
+          &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-1-2&quot;&gt;Item 1-2&lt;/a&gt;
         &lt;/nav&gt;
-      &lt;/div&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#item-2&quot;&gt;Item 2&lt;/a&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#item-3&quot;&gt;Item 3&lt;/a&gt;
+        &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+          &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-3-1&quot;&gt;Item 3-1&lt;/a&gt;
+          &lt;a class=&quot;nav-link ms-3 my-1&quot; href=&quot;#item-3-2&quot;&gt;Item 3-2&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/nav&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
 
-      &lt;div class=&quot;col-8&quot;&gt;
-        &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example3&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example-2&quot; tabindex=&quot;0&quot;&gt;
-          &lt;div id=&quot;item-1&quot;&gt;
-            &lt;h4&gt;Item 1&lt;/h4&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-1-1&quot;&gt;
-            &lt;h5&gt;Item 1-1&lt;/h5&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-1-2&quot;&gt;
-            &lt;h5&gt;Item 1-2&lt;/h5&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-2&quot;&gt;
-            &lt;h4&gt;Item 2&lt;/h4&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-3&quot;&gt;
-            &lt;h4&gt;Item 3&lt;/h4&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-3-1&quot;&gt;
-            &lt;h5&gt;Item 3-1&lt;/h5&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div id=&quot;item-3-2&quot;&gt;
-            &lt;h5&gt;Item 3-2&lt;/h5&gt;
-            &lt;p&gt;...&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+  &lt;div class=&quot;col-8&quot;&gt;
+    &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example3&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example-2&quot; tabindex=&quot;0&quot;&gt;
+      &lt;div id=&quot;item-1&quot;&gt;
+        &lt;h4&gt;Item 1&lt;/h4&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-1-1&quot;&gt;
+        &lt;h5&gt;Item 1-1&lt;/h5&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-1-2&quot;&gt;
+        &lt;h5&gt;Item 1-2&lt;/h5&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-2&quot;&gt;
+        &lt;h4&gt;Item 2&lt;/h4&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-3&quot;&gt;
+        &lt;h4&gt;Item 3&lt;/h4&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-3-1&quot;&gt;
+        &lt;h5&gt;Item 3-1&lt;/h5&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;item-3-2&quot;&gt;
+        &lt;h5&gt;Item 3-2&lt;/h5&gt;
+        &lt;p&gt;...&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="list-group">List group<a class="anchor-link" href="#list-group" aria-label="Link to List group"></a></h3>
     <p>Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
@@ -224,27 +224,27 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-4&quot;&gt;
-        &lt;div id=&quot;list-example&quot; class=&quot;list-group&quot;&gt;
-          &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-1&quot;&gt;Item 1&lt;/a&gt;
-          &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-2&quot;&gt;Item 2&lt;/a&gt;
-          &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-3&quot;&gt;Item 3&lt;/a&gt;
-          &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-4&quot;&gt;Item 4&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-8&quot;&gt;
-        &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#list-example&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example&quot; tabindex=&quot;0&quot;&gt;
-          &lt;h4 id=&quot;list-item-1&quot;&gt;Item 1&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;list-item-2&quot;&gt;Item 2&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;list-item-3&quot;&gt;Item 3&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;list-item-4&quot;&gt;Item 4&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div id=&quot;list-example&quot; class=&quot;list-group&quot;&gt;
+      &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-1&quot;&gt;Item 1&lt;/a&gt;
+      &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-2&quot;&gt;Item 2&lt;/a&gt;
+      &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-3&quot;&gt;Item 3&lt;/a&gt;
+      &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-4&quot;&gt;Item 4&lt;/a&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-8&quot;&gt;
+    &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#list-example&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example&quot; tabindex=&quot;0&quot;&gt;
+      &lt;h4 id=&quot;list-item-1&quot;&gt;Item 1&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;list-item-2&quot;&gt;Item 2&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;list-item-3&quot;&gt;Item 3&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;list-item-4&quot;&gt;Item 4&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
     <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current document. Scroll the area and watch the <code>.active</code> class change.</p>
@@ -275,58 +275,58 @@
     </div>
     ' />
     <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-4&quot;&gt;
-        &lt;div id=&quot;simple-list-example&quot; class=&quot;d-flex flex-column gap-2 simple-list-example-scrollspy text-center&quot;&gt;
-          &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-1&quot;&gt;Item 1&lt;/a&gt;
-          &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-2&quot;&gt;Item 2&lt;/a&gt;
-          &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-3&quot;&gt;Item 3&lt;/a&gt;
-          &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-4&quot;&gt;Item 4&lt;/a&gt;
-          &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-5&quot;&gt;Item 5&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-8&quot;&gt;
-        &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#simple-list-example&quot; data-bs-offset=&quot;0&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example&quot; tabindex=&quot;0&quot;&gt;
-          &lt;h4 id=&quot;simple-list-item-1&quot;&gt;Item 1&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;simple-list-item-2&quot;&gt;Item 2&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;simple-list-item-3&quot;&gt;Item 3&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;simple-list-item-4&quot;&gt;Item 4&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-          &lt;h4 id=&quot;simple-list-item-5&quot;&gt;Item 5&lt;/h4&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;div id=&quot;simple-list-example&quot; class=&quot;d-flex flex-column gap-2 simple-list-example-scrollspy text-center&quot;&gt;
+      &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-1&quot;&gt;Item 1&lt;/a&gt;
+      &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-2&quot;&gt;Item 2&lt;/a&gt;
+      &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-3&quot;&gt;Item 3&lt;/a&gt;
+      &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-4&quot;&gt;Item 4&lt;/a&gt;
+      &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-5&quot;&gt;Item 5&lt;/a&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-8&quot;&gt;
+    &lt;div data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#simple-list-example&quot; data-bs-offset=&quot;0&quot; data-bs-smooth-scroll=&quot;true&quot; class=&quot;scrollspy-example&quot; tabindex=&quot;0&quot;&gt;
+      &lt;h4 id=&quot;simple-list-item-1&quot;&gt;Item 1&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;simple-list-item-2&quot;&gt;Item 2&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;simple-list-item-3&quot;&gt;Item 3&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;simple-list-item-4&quot;&gt;Item 4&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;h4 id=&quot;simple-list-item-5&quot;&gt;Item 5&lt;/h4&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
     </code></pre>
     <h2 id="non-visible-elements">Non-visible elements<a class="anchor-link" href="#non-visible-elements" aria-label="Link to Non-visible elements"></a></h2>
     <p>Target elements that aren’t visible will be ignored and their corresponding nav items won’t receive an <code>.active</code> class. Scrollspy instances initialized in a non-visible wrapper will ignore all target elements. Use the <code>refresh</code> method to check for observable elements once the wrapper becomes visible.</p>
     <pre><code class="language-js">document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle=&quot;tab&quot;]&#39;).forEach(el =&gt; {
-      el.addEventListener(&#39;shown.bs.tab&#39;, () =&gt; {
-        const target = el.getAttribute(&#39;data-bs-target&#39;)
-        const scrollElem = document.querySelector(`${target} [data-bs-spy=&quot;scroll&quot;]`)
-        bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
-      })
-    })
+  el.addEventListener(&#39;shown.bs.tab&#39;, () =&gt; {
+    const target = el.getAttribute(&#39;data-bs-target&#39;)
+    const scrollElem = document.querySelector(`${target} [data-bs-spy=&quot;scroll&quot;]`)
+    bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
+  })
+})
     </code></pre>
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-bs-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-bs-target</code> attribute with the <code>id</code> or class name of the parent element of any Bootstrap <code>.nav</code> component.</p>
     <pre><code class="language-html">&lt;body data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example&quot;&gt;
+  ...
+  &lt;div id=&quot;navbar-example&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
       ...
-      &lt;div id=&quot;navbar-example&quot;&gt;
-        &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-          ...
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      ...
-    &lt;/body&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  ...
+&lt;/body&gt;
     </code></pre>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <pre><code class="language-js">const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: &#39;#navbar-example&#39;
-    })
+  target: &#39;#navbar-example&#39;
+})
     </code></pre>
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
@@ -395,9 +395,9 @@
     </tbody></table>
     </div><p>Here’s an example using the refresh method:</p>
     <pre><code class="language-js">const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
-    dataSpyList.forEach(dataSpyEl =&gt; {
-      bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
-    })
+dataSpyList.forEach(dataSpyEl =&gt; {
+  bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
+})
     </code></pre>
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
 <div class="table-responsive"><table class="table">
@@ -414,9 +414,9 @@
     </tbody></table>
     </div>
     <pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
-    firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
-      // do something...
-    })
+firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
+  // do something...
+})
     </code></pre>
   </article>
 </template>

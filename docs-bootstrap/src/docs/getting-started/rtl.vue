@@ -21,32 +21,32 @@
     <h3 id="starter-template">Starter template<a class="anchor-link" href="#starter-template" aria-label="Link to Starter template"></a></h3>
     <p>You can see the above requirements reflected in this modified RTL starter template.</p>
     <pre><code class="language-html">&lt;!doctype html&gt;
-    &lt;html lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
-      &lt;head&gt;
-        &lt;!-- Required meta tags --&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;html lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 
-        &lt;!-- Bootstrap CSS --&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;[[config:cdn.css_rtl]]&quot; integrity=&quot;[[config:cdn.css_rtl_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;[[config:cdn.css_rtl]]&quot; integrity=&quot;[[config:cdn.css_rtl_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
 
-        &lt;title&gt;مرحبًا بالعالم!&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;مرحبًا بالعالم!&lt;/h1&gt;
+    &lt;title&gt;مرحبًا بالعالم!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;مرحبًا بالعالم!&lt;/h1&gt;
 
-        &lt;!-- Optional JavaScript; choose one of the two! --&gt;
+    &lt;!-- Optional JavaScript; choose one of the two! --&gt;
 
-        &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
-        &lt;script src=&quot;[[config:cdn.js_bundle]]&quot; integrity=&quot;[[config:cdn.js_bundle_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
+    &lt;script src=&quot;[[config:cdn.js_bundle]]&quot; integrity=&quot;[[config:cdn.js_bundle_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
-        &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
-        &lt;!--
-        &lt;script src=&quot;[[config:cdn.popper]]&quot; integrity=&quot;[[config:cdn.popper_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-        &lt;script src=&quot;[[config:cdn.js]]&quot; integrity=&quot;[[config:cdn.js_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-        --&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
+    &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
+    &lt;!--
+    &lt;script src=&quot;[[config:cdn.popper]]&quot; integrity=&quot;[[config:cdn.popper_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;[[config:cdn.js]]&quot; integrity=&quot;[[config:cdn.js_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
     </code></pre>
     <h3 id="rtl-examples">RTL examples<a class="anchor-link" href="#rtl-examples" aria-label="Link to RTL examples"></a></h3>
     <p>Get started with one of our several <a href="[[docsref:/examples/#rtl]]">RTL examples</a>.</p>
@@ -68,58 +68,58 @@
     </code></pre>
     <p>Which would output to the following for our default CSS and RTL CSS:</p>
     <pre><code class="language-css">/* bootstrap.css */
-    dt {
-      font-weight: 700 /* rtl:600 */;
-    }
+dt {
+  font-weight: 700 /* rtl:600 */;
+}
 
-    /* bootstrap.rtl.css */
-    dt {
-      font-weight: 600;
-    }
+/* bootstrap.rtl.css */
+dt {
+  font-weight: 600;
+}
     </code></pre>
     <h3 id="alternative-font-stack">Alternative font stack<a class="anchor-link" href="#alternative-font-stack" aria-label="Link to Alternative font stack"></a></h3>
     <p>In the case you’re using a custom font, be aware that not all fonts support the non-Latin alphabet. To switch from Pan-European to Arabic family, you may need to use <code>/*rtl:insert: {value}*/</code> in your font stack to modify the names of font families.</p>
     <p>For example, to switch from <code>Helvetica Neue</code> font for LTR to <code>Helvetica Neue Arabic</code> for RTL, your Sass code could look like this:</p>
     <pre><code class="language-scss">$font-family-sans-serif:
-      Helvetica Neue #{&quot;/* rtl:insert:Arabic */&quot;},
-      // Cross-platform generic font family (default user interface font)
-      system-ui,
-      // Safari for macOS and iOS (San Francisco)
-      -apple-system,
-      // Chrome &lt; 56 for macOS (San Francisco)
-      BlinkMacSystemFont,
-      // Windows
-      &quot;Segoe UI&quot;,
-      // Android
-      Roboto,
-      // Basic web fallback
-      Arial,
-      // Linux
-      &quot;Noto Sans&quot;,
-      // Sans serif fallback
-      sans-serif,
-      // Emoji fonts
-      &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
+Helvetica Neue #{&quot;/* rtl:insert:Arabic */&quot;},
+// Cross-platform generic font family (default user interface font)
+system-ui,
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome &lt; 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+&quot;Segoe UI&quot;,
+// Android
+Roboto,
+// Basic web fallback
+Arial,
+// Linux
+&quot;Noto Sans&quot;,
+// Sans serif fallback
+sans-serif,
+// Emoji fonts
+&quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
     </code></pre>
     <h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
     <p>Need both LTR and RTL on the same page? Thanks to <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS String Maps</a>, this is pretty straightforward. Wrap your <code>@import</code>s with a class, and set a custom rename rule for RTLCSS:</p>
     <pre><code class="language-scss">/* rtl:begin:options: {
-      &quot;autoRename&quot;: true,
-      &quot;stringMap&quot;:[ {
-        &quot;name&quot;: &quot;ltr-rtl&quot;,
-        &quot;priority&quot;: 100,
-        &quot;search&quot;: [&quot;ltr&quot;],
-        &quot;replace&quot;: [&quot;rtl&quot;],
-        &quot;options&quot;: {
-          &quot;scope&quot;: &quot;*&quot;,
-          &quot;ignoreCase&quot;: false
-        }
-      } ]
-    } */
-    .ltr {
-      @import &quot;../node_modules/bootstrap/scss/bootstrap&quot;;
+  &quot;autoRename&quot;: true,
+  &quot;stringMap&quot;:[ {
+    &quot;name&quot;: &quot;ltr-rtl&quot;,
+    &quot;priority&quot;: 100,
+    &quot;search&quot;: [&quot;ltr&quot;],
+    &quot;replace&quot;: [&quot;rtl&quot;],
+    &quot;options&quot;: {
+      &quot;scope&quot;: &quot;*&quot;,
+      &quot;ignoreCase&quot;: false
     }
-    /*rtl:end:options*/
+  } ]
+} */
+.ltr {
+  @import &quot;../node_modules/bootstrap/scss/bootstrap&quot;;
+}
+/*rtl:end:options*/
     </code></pre>
     <p>After running Sass then RTLCSS, each selector in your CSS files will be prepended by <code>.ltr</code>, and <code>.rtl</code> for RTL files. Now you’re able to use both files on the same page, and simply use <code>.ltr</code> or <code>.rtl</code> on your components wrappers to use one or the other direction.</p>
     <Callout type="warning">
