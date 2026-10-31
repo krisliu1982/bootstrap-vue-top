@@ -60,7 +60,8 @@
     <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
     <Example :showMarkup="false" code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--bd-violet-rgb),.15); border: rgba(var(--bd-violet-rgb),.3) solid 1px;">
         Centered element
-      </div>' /><pre><code class="language-html">&lt;div class=&quot;mx-auto p-2&quot; style=&quot;width: 200px;&quot;&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;div class=&quot;mx-auto p-2&quot; style=&quot;width: 200px;&quot;&gt;
       Centered element
     &lt;/div&gt;
     </code></pre>

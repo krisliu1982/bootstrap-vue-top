@@ -327,7 +327,8 @@
         </div>
       </div>
     </nav>
-    ' /><pre><code class="language-html">&lt;nav class=&quot;navbar bg-dark border-bottom border-body&quot; data-bs-theme=&quot;dark&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;nav class=&quot;navbar bg-dark border-bottom border-body&quot; data-bs-theme=&quot;dark&quot;&gt;
       &lt;!-- Navbar content --&gt;
     &lt;/nav&gt;
 

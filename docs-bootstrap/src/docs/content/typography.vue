@@ -48,7 +48,8 @@
     <td><span class="h6">h6. Bootstrap heading</span></td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+    </div>
+    <pre><code class="language-html">&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
     &lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
     &lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
     &lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
@@ -74,7 +75,8 @@
     <div class="display-4 pb-3 mb-3 border-bottom">Display 4</div>
     <div class="display-5 pb-3 mb-3 border-bottom">Display 5</div>
     <div class="display-6">Display 6</div>
-    ' /><pre><code class="language-html">&lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
+    ' />
+    <pre><code class="language-html">&lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
     &lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
     &lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
     &lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;

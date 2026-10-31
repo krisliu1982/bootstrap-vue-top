@@ -250,7 +250,8 @@
     <p>Our <code>scss/mixins/</code> directory has a ton of mixins that power parts of Bootstrap and can also be used across your own project.</p>
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See <a href="[[docsref:/customize/color-modes]]">the color modes documentation</a> for information on our color mode mixin.</p>
-    <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" /><pre><code class="language-scss">.custom-element {
+    <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" />
+    <pre><code class="language-scss">.custom-element {
       @include color-scheme(light) {
         // Insert light mode styles here
       }

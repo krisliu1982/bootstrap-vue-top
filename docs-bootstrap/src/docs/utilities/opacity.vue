@@ -12,7 +12,8 @@
       <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
       <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
       <div class="opacity-0 p-3 m-2 bg-primary text-light fw-bold rounded">0%</div>
-    </div><pre><code class="language-html">&lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;opacity-75&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;opacity-50&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;opacity-25&quot;&gt;...&lt;/div&gt;

@@ -261,7 +261,8 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
       &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#home-tab-pane&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;home-tab-pane&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
       &lt;/li&gt;
@@ -306,7 +307,8 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;nav&gt;
+    ' />
+    <pre><code class="language-html">&lt;nav&gt;
       &lt;div class=&quot;nav nav-tabs&quot; id=&quot;nav-tab&quot; role=&quot;tablist&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;nav-home-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
         &lt;button class=&quot;nav-link&quot; id=&quot;nav-profile-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#nav-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;nav-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
@@ -351,7 +353,8 @@
         <p>This is some placeholder content the <strong>Disabled tab’s</strong> associated content.</p>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;ul class=&quot;nav nav-pills mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;ul class=&quot;nav nav-pills mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
       &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
       &lt;/li&gt;
@@ -400,7 +403,8 @@
         </div>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;
       &lt;div class=&quot;nav flex-column nav-pills me-3&quot; id=&quot;v-pills-tab&quot; role=&quot;tablist&quot; aria-orientation=&quot;vertical&quot;&gt;
         &lt;button class=&quot;nav-link active&quot; id=&quot;v-pills-home-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-home&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
         &lt;button class=&quot;nav-link&quot; id=&quot;v-pills-profile-tab&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#v-pills-profile&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;v-pills-profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
@@ -540,7 +544,8 @@
     <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const tabEl = document.querySelector(&#39;button[data-bs-toggle=&quot;tab&quot;]&#39;)
+    </div>
+    <pre><code class="language-js">const tabEl = document.querySelector(&#39;button[data-bs-toggle=&quot;tab&quot;]&#39;)
     tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
       event.target // newly activated tab
       event.relatedTarget // previous active tab

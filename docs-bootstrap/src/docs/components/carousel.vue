@@ -408,7 +408,8 @@
     <td>Fires immediately when the <code>slide</code> instance method is invoked.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
+    </div>
+    <pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
 
     myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       // do something...

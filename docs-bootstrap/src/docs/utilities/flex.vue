@@ -75,7 +75,8 @@
         <div class="p-2 bd-highlight">Content</div>
         <div class="p-2 bd-highlight">Evenly</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex justify-content-end&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex justify-content-center&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex justify-content-between&quot;&gt;...&lt;/div&gt;
@@ -120,7 +121,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex align-items-end&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex align-items-center&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;d-flex align-items-baseline&quot;&gt;...&lt;/div&gt;
@@ -163,7 +165,8 @@
         <div class="align-self-stretch p-2">Aligned flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;align-self-start&quot;&gt;Aligned flex item&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;align-self-start&quot;&gt;Aligned flex item&lt;/div&gt;
     &lt;div class=&quot;align-self-end&quot;&gt;Aligned flex item&lt;/div&gt;
     &lt;div class=&quot;align-self-center&quot;&gt;Aligned flex item&lt;/div&gt;
     &lt;div class=&quot;align-self-baseline&quot;&gt;Aligned flex item&lt;/div&gt;
@@ -243,7 +246,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>
@@ -264,7 +268,8 @@
         <div class="p-2">Flex item 13</div>
         <div class="p-2">Flex item 14</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>
@@ -285,7 +290,8 @@
         <div class="p-2">Flex item 13</div>
         <div class="p-2">Flex item 14</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap-reverse&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap-reverse&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>
@@ -331,7 +337,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-start flex-wrap&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-start flex-wrap&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>
@@ -353,7 +360,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-end flex-wrap&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-end flex-wrap&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-center flex-wrap mb-3" style="height: 200px">
@@ -373,7 +381,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-center flex-wrap&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-center flex-wrap&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-between flex-wrap mb-3" style="height: 200px">
@@ -393,7 +402,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-between flex-wrap&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-between flex-wrap&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-around flex-wrap mb-3" style="height: 200px">
@@ -413,7 +423,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-around flex-wrap&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-around flex-wrap&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-stretch flex-wrap mb-3" style="height: 200px">
@@ -433,7 +444,8 @@
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;d-flex align-content-stretch flex-wrap&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-stretch flex-wrap&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <p>Responsive variations also exist for <code>align-content</code>.</p>
     <ul>

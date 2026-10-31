@@ -224,7 +224,8 @@
           </div>
         </div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;div class=&quot;list-group&quot; id=&quot;list-tab&quot; role=&quot;tablist&quot;&gt;
           &lt;a class=&quot;list-group-item list-group-item-action active&quot; id=&quot;list-home-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-home&quot; role=&quot;tab&quot; aria-controls=&quot;list-home&quot;&gt;Home&lt;/a&gt;
@@ -353,7 +354,8 @@
     <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
+    </div>
+    <pre><code class="language-js">const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
     tabElms.forEach(tabElm =&gt; {
       tabElm.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
         event.target // newly activated tab

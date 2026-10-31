@@ -42,7 +42,8 @@
         </div>
       </div>
     </div><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-    ' /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
+    ' />
+    <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
 
     &lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
       &lt;div id=&quot;liveToast&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
@@ -325,7 +326,8 @@
     <td>This event is fired when the toast has been made visible to the user.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
+    </div>
+    <pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
     myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
       // do something...
     })

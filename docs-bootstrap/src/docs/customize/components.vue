@@ -20,7 +20,8 @@
     <Example :showMarkup="false" code='<div class="bd-callout my-0">
       <strong>This is a callout.</strong> We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;callout&quot;&gt;...&lt;/div&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;callout&quot;&gt;...&lt;/div&gt;
     </code></pre>
     <p>In your CSS, you’d have something like the following where the bulk of the styling is done via <code>.callout</code>. Then, the unique styles between each variant is controlled via modifier class.</p>
     <pre><code class="language-scss">// Base class

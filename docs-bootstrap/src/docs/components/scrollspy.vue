@@ -50,7 +50,8 @@
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
         <h4 id="scrollspyHeading5">Fifth heading</h4>
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>' /><pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
       &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
       &lt;ul class=&quot;nav nav-pills&quot;&gt;
         &lt;li class=&quot;nav-item&quot;&gt;
@@ -143,7 +144,8 @@
         </div>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;nav id=&quot;navbar-example3&quot; class=&quot;h-100 flex-column align-items-stretch pe-4 border-end&quot;&gt;
           &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
@@ -220,7 +222,8 @@
         </div>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;div id=&quot;list-example&quot; class=&quot;list-group&quot;&gt;
           &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-1&quot;&gt;Item 1&lt;/a&gt;
@@ -270,7 +273,8 @@
         </div>
       </div>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-4&quot;&gt;
         &lt;div id=&quot;simple-list-example&quot; class=&quot;d-flex flex-column gap-2 simple-list-example-scrollspy text-center&quot;&gt;
           &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-1&quot;&gt;Item 1&lt;/a&gt;
@@ -408,7 +412,8 @@
     <td>This event fires on the scroll element whenever an anchor is activated by the scrollspy.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
+    </div>
+    <pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
     firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
       // do something...
     })

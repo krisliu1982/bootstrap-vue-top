@@ -85,7 +85,8 @@
         </tr>
       </tbody>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -135,7 +136,8 @@
         </tr>
       </tbody>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table table-dark&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table table-dark&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -238,7 +240,8 @@
         </tbody>
       </table>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
       &lt;table class=&quot;table align-middle&quot;&gt;
         &lt;thead&gt;
           &lt;tr&gt;
@@ -318,7 +321,8 @@
         </tr>
       </tbody>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -371,7 +375,8 @@
         </tr>
       </tbody>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead class=&quot;table-light&quot;&gt;
         ...
       &lt;/thead&gt;
@@ -410,7 +415,8 @@
         </tr>
       </tbody>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead class=&quot;table-dark&quot;&gt;
         ...
       &lt;/thead&gt;
@@ -458,7 +464,8 @@
         </tr>
       </tfoot>
     </table>
-    ' /><pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
       &lt;thead&gt;
         ...
       &lt;/thead&gt;
@@ -477,7 +484,8 @@
         <caption>List of users</caption>
         <TableContent />
       </table>
-    </div><pre><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
       &lt;caption&gt;List of users&lt;/caption&gt;
       &lt;thead&gt;
         ...
@@ -581,7 +589,8 @@
         </tbody>
       </table>
     </div>
-    ' /><pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
       &lt;table class=&quot;table&quot;&gt;
         ...
       &lt;/table&gt;

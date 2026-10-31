@@ -233,7 +233,8 @@
     <td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
+    </div>
+    <pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
     myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       // do something...
     })

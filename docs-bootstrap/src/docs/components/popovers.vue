@@ -63,7 +63,8 @@
     <p>Use the <code>focus</code> trigger to dismiss popovers on the user’s next click of an element other than the toggle element.</p>
     <Callout type="danger">
     <p><strong>Dismissing on next click requires specific HTML for proper cross-browser and cross-platform behavior.</strong> You can only use <code>&lt;a&gt;</code> elements, not <code>&lt;button&gt;</code>s, and you must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code>tabindex</code></a>.</p>
-    </Callout><Example addStackblitzJs code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>' /><pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.popover-dismiss&#39;, {
+    </Callout><Example addStackblitzJs code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>' />
+    <pre><code class="language-js">const popover = new bootstrap.Popover(&#39;.popover-dismiss&#39;, {
       trigger: &#39;focus&#39;
     })
     </code></pre>
@@ -273,7 +274,8 @@
     <td>Updates the position of an element’s popover.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">// getOrCreateInstance example
+    </div>
+    <pre><code class="language-js">// getOrCreateInstance example
     const popover = bootstrap.Popover.getOrCreateInstance(&#39;#example&#39;) // Returns a Bootstrap popover instance
 
     // setContent example
@@ -313,7 +315,8 @@
     <td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myPopoverTrigger = document.getElementById(&#39;myPopover&#39;)
+    </div>
+    <pre><code class="language-js">const myPopoverTrigger = document.getElementById(&#39;myPopover&#39;)
     myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
       // do something...
     })

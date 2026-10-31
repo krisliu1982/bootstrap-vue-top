@@ -43,7 +43,8 @@
           </div>
         </div>
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot;&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot;&gt;
       &lt;div class=&quot;modal-dialog&quot;&gt;
         &lt;div class=&quot;modal-content&quot;&gt;
           &lt;div class=&quot;modal-header&quot;&gt;
@@ -83,7 +84,8 @@
       </div>
     </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLive">Launch demo modal</button>
-    ' /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
+    ' />
+    <pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#exampleModal&quot;&gt;
       Launch demo modal
     &lt;/button&gt;
@@ -127,7 +129,8 @@
       </div>
     </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">Launch static backdrop modal</button>
-    ' /><pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
+    ' />
+    <pre><code class="language-html">&lt;!-- Button trigger modal --&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#staticBackdrop&quot;&gt;
       Launch static backdrop modal
     &lt;/button&gt;
@@ -192,7 +195,8 @@
       </div>
     </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">Launch demo modal</button>
-    ' /><pre><code class="language-html">&lt;!-- Scrollable modal --&gt;
+    ' />
+    <pre><code class="language-html">&lt;!-- Scrollable modal --&gt;
     &lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot;&gt;
       ...
     &lt;/div&gt;
@@ -238,7 +242,8 @@
       </div>
 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Vertically centered modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>' /><pre><code class="language-html">&lt;!-- Vertically centered modal --&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>' />
+    <pre><code class="language-html">&lt;!-- Vertically centered modal --&gt;
     &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
       ...
     &lt;/div&gt;
@@ -272,7 +277,8 @@
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>' /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>' />
+    <pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
       &lt;h2 class=&quot;fs-5&quot;&gt;Popover in a modal&lt;/h2&gt;
       &lt;p&gt;This &lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; title=&quot;Popover title&quot; data-bs-content=&quot;Popover body content is set in this attribute.&quot;&gt;button&lt;/button&gt; triggers a popover on click.&lt;/p&gt;
       &lt;hr&gt;
@@ -325,7 +331,8 @@
       </div>
     </div><Example :showMarkup="false" code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gridSystemModal">Launch demo modal</button>
-    ' /><pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
+    ' />
+    <pre><code class="language-html">&lt;div class=&quot;modal-body&quot;&gt;
       &lt;div class=&quot;container-fluid&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
           &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
@@ -469,7 +476,8 @@
     </div><p>Our default modal without modifier class constitutes the “medium” size modal.</p>
     <Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>' /><pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>' />
+    <pre><code class="language-html">&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;modal-dialog modal-sm&quot;&gt;...&lt;/div&gt;
     </code></pre>
@@ -548,7 +556,8 @@
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>' /><pre><code class="language-html">&lt;!-- Full screen modal --&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>' />
+    <pre><code class="language-html">&lt;!-- Full screen modal --&gt;
     &lt;div class=&quot;modal-dialog modal-fullscreen-sm-down&quot;&gt;
       ...
     &lt;/div&gt;
@@ -768,7 +777,8 @@
     <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myModalEl = document.getElementById(&#39;myModal&#39;)
+    </div>
+    <pre><code class="language-js">const myModalEl = document.getElementById(&#39;myModal&#39;)
     myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       // do something...
     })

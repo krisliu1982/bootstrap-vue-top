@@ -32,7 +32,8 @@
           </p>
           <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
         </div>
-      </div>' /><pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
       &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
 
       &lt;div class=&quot;card-body&quot;&gt;

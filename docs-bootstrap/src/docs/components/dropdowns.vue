@@ -95,7 +95,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;!-- Example single danger button --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Example single danger button --&gt;
     &lt;div class=&quot;btn-group&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Danger
@@ -189,7 +190,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;!-- Example split danger button --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Example split danger button --&gt;
     &lt;div class=&quot;btn-group&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
@@ -230,7 +232,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;!-- Large button groups (default and split) --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Large button groups (default and split) --&gt;
     &lt;div class=&quot;btn-group&quot;&gt;
       &lt;button class=&quot;btn btn-secondary btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Large button
@@ -275,7 +278,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
       &lt;button class=&quot;btn btn-secondary btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Small button
       &lt;/button&gt;
@@ -370,7 +374,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;!-- Default dropup button --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Default dropup button --&gt;
     &lt;div class=&quot;btn-group dropup&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Dropup
@@ -430,7 +435,8 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
-      </div>' /><pre><code class="language-html">&lt;!-- Default dropend button --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Default dropend button --&gt;
     &lt;div class=&quot;btn-group dropend&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Dropend
@@ -479,7 +485,8 @@
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
         <button type="button" class="btn btn-secondary">Split dropstart</button>
-      </div>' /><pre><code class="language-html">&lt;!-- Default dropstart button --&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;!-- Default dropstart button --&gt;
     &lt;div class=&quot;btn-group dropstart&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
         Dropstart
@@ -944,7 +951,8 @@
     <td>Fired when the dropdown has been made visible to the user and CSS transitions have completed.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myDropdown = document.getElementById(&#39;myDropdown&#39;)
+    </div>
+    <pre><code class="language-js">const myDropdown = document.getElementById(&#39;myDropdown&#39;)
     myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       // do something...
     })

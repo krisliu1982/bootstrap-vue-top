@@ -41,7 +41,8 @@
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">Tooltip on bottom</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">Tooltip on left</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Tooltip with HTML</button>
-      </div>' /><pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
+      </div>' />
+    <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;top&quot; data-bs-title=&quot;Tooltip on top&quot;&gt;
       Tooltip on top
     &lt;/button&gt;
     &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;right&quot; data-bs-title=&quot;Tooltip on right&quot;&gt;
@@ -86,7 +87,8 @@
     <p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
     <Callout type="warning">
     <p><strong>Keep tooltips accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce tooltips in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your tooltips as this will make them impossible to trigger for keyboard users.</p>
-    </Callout><pre><code class="language-html">&lt;!-- HTML to write --&gt;
+    </Callout>
+    <pre><code class="language-html">&lt;!-- HTML to write --&gt;
     &lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-title=&quot;Some tooltip text!&quot;&gt;Hover over me&lt;/a&gt;
 
     &lt;!-- Generated markup by the plugin --&gt;
@@ -283,7 +285,8 @@
     <td>Updates the position of an element’s tooltip.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const tooltip = bootstrap.Tooltip.getInstance(&#39;#example&#39;) // Returns a Bootstrap tooltip instance
+    </div>
+    <pre><code class="language-js">const tooltip = bootstrap.Tooltip.getInstance(&#39;#example&#39;) // Returns a Bootstrap tooltip instance
 
     // setContent example
     tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
@@ -319,7 +322,8 @@
     <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myTooltipEl = document.getElementById(&#39;myTooltip&#39;)
+    </div>
+    <pre><code class="language-js">const myTooltipEl = document.getElementById(&#39;myTooltip&#39;)
     const tooltip = bootstrap.Tooltip.getOrCreateInstance(myTooltipEl)
 
     myTooltipEl.addEventListener(&#39;hidden.bs.tooltip&#39;, () =&gt; {

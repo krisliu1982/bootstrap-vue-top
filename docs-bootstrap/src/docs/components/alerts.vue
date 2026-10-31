@@ -158,7 +158,8 @@
     <td>Fired when the alert has been closed and CSS transitions have completed.</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
+    </div>
+    <pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
     myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
       // do something, for instance, explicitly move focus to the most appropriate element,
       // so it doesn’t get lost/reset to the start of the page

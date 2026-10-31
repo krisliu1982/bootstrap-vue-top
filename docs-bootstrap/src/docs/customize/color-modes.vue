@@ -128,7 +128,8 @@
           <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
       </div>
-    </div>' /><pre><code class="language-html">&lt;div data-bs-theme=&quot;blue&quot;&gt;
+    </div>' />
+    <pre><code class="language-html">&lt;div data-bs-theme=&quot;blue&quot;&gt;
       ...
     &lt;/div&gt;
     </code></pre>

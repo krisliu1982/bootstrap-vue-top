@@ -19,7 +19,8 @@
       <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
         This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-visible&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-scroll&quot;&gt;...&lt;/div&gt;
@@ -64,7 +65,8 @@
       <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
         <code>.overflow-y-scroll</code> example on an element with set width and height dimensions.
       </div>
-    </div><pre><code class="language-html">&lt;div class=&quot;overflow-y-auto&quot;&gt;...&lt;/div&gt;
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;overflow-y-auto&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-y-hidden&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;

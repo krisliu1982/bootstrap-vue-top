@@ -43,7 +43,8 @@
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
-      </nav>' /><pre><code class="language-scss">$breadcrumb-divider: url(&quot;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39;&gt;&lt;path d=&#39;M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z&#39; fill=&#39;#{$breadcrumb-divider-color}&#39;/&gt;&lt;/svg&gt;&quot;);
+      </nav>' />
+    <pre><code class="language-scss">$breadcrumb-divider: url(&quot;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39;&gt;&lt;path d=&#39;M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z&#39; fill=&#39;#{$breadcrumb-divider-color}&#39;/&gt;&lt;/svg&gt;&quot;);
     </code></pre>
     <p>You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass variable to <code>$breadcrumb-divider: none;</code>.</p>
     <Example code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
@@ -51,7 +52,8 @@
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
-      </nav>' /><pre><code class="language-scss">$breadcrumb-divider: none;
+      </nav>' />
+    <pre><code class="language-scss">$breadcrumb-divider: none;
     </code></pre>
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.</p>

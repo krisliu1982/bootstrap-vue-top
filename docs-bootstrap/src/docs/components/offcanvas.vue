@@ -297,7 +297,8 @@
     <td>This event is fired when an offcanvas element has been made visible to the user (will wait for CSS transitions to complete).</td>
     </tr>
     </tbody></table>
-    </div><pre><code class="language-js">const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
+    </div>
+    <pre><code class="language-js">const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
     myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       // do something...
     })
