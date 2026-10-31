@@ -17,7 +17,7 @@
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="[[docsref:/layout/grid#css]]">the CSS section of the Grid documentation</a>.</p>
     <h2 id="creating-your-own">Creating your own<a class="anchor-link" href="#creating-your-own" aria-label="Link to Creating your own"></a></h2>
     <p>We encourage you to adopt these guidelines when building with Bootstrap to create your own components. We’ve extended this approach ourselves to the custom components in our documentation and examples. Components like our callouts are built just like our provided components with base and modifier classes.</p>
-    <Example :showMarkup="false" code='<div class="bd-callout my-0">
+    <Example :showMarkup="false" code='<div class="docs-callout my-0">
       <strong>This is a callout.</strong> We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
     </div>
     ' />

@@ -109,7 +109,7 @@
     <h2 id="custom-color-modes">Custom color modes<a class="anchor-link" href="#custom-color-modes" aria-label="Link to Custom color modes"></a></h2>
     <p>While the primary use case for color modes is light and dark mode, custom color modes are also possible. Create your own <code>data-bs-theme</code> selector with a custom value as the name of your color mode, then modify our Sass and CSS variables as needed. We opted to create a separate <code>_variables-dark.scss</code> stylesheet to house Bootstrap’s dark mode specific Sass variables, but that’s not required for you.</p>
     <p>For example, you can create a “blue theme” with the selector <code>data-bs-theme=&quot;blue&quot;</code>. In your custom Sass or CSS file, add the new selector and override any global or component CSS variables as needed. If you’re using Sass, you can also use Sass’s functions within your CSS variable overrides.</p>
-    <ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" /><Example :showMarkup="false" code='<div class="bd-example text-body bg-body" data-bs-theme="blue">
+    <ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" /><Example :showMarkup="false" code='<div class="docs-example text-body bg-body" data-bs-theme="blue">
       <div class="h4">Example blue theme</div>
       <p>Some paragraph text to show how the blue theme might look with written copy.</p>
 
@@ -168,13 +168,13 @@
   setTheme(getPreferredTheme())
 
   const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
+    const themeSwitcher = document.querySelector('#docs-theme')
 
     if (!themeSwitcher) {
       return
     }
 
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const themeSwitcherText = document.querySelector('#docs-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
     const btnToActive = document.querySelector(`[data-bs-theme-value=&quot;${theme}&quot;]`)
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')

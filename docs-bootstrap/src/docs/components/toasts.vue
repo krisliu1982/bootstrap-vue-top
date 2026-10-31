@@ -144,7 +144,7 @@
           </select>
         </div>
       </form>
-      <div aria-live="polite" aria-atomic="true" class="bg-body-secondary position-relative bd-example-toasts rounded-3">
+      <div aria-live="polite" aria-atomic="true" class="bg-body-secondary position-relative docs-example-toasts rounded-3">
         <div class="toast-container p-3" id="toastPlacement">
           <div class="toast">
             <div class="toast-header">
@@ -158,7 +158,7 @@
           </div>
         </div>
       </div>' /><p>For systems that generate more notifications, consider using a wrapping element so they can easily stack.</p>
-    <Example class="bd-example-toasts p-0" code='<div aria-live="polite" aria-atomic="true" class="position-relative">
+    <Example class="docs-example-toasts p-0" code='<div aria-live="polite" aria-atomic="true" class="position-relative">
         <!-- Position it: -->
         <!-- - \`.toast-container\` for spacing between toasts -->
         <!-- - \`top-0\` & \`end-0\` to position the toasts in the upper right corner -->
@@ -191,7 +191,7 @@
           </div>
         </div>
       </div>' /><p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
-    <Example class="bd-example-toasts d-flex" code='<!-- Flexbox container for aligning the toasts -->
+    <Example class="docs-example-toasts d-flex" code='<!-- Flexbox container for aligning the toasts -->
       <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
 
         <!-- Then put toasts within -->

@@ -132,7 +132,7 @@
     <ScssDocs name="btn-css-vars" file="scss/_buttons.scss" /><p>Each <code>.btn-*</code> modifier class updates the appropriate CSS variables to minimize additional CSS rules with our <code>button-variant()</code>, <code>button-outline-variant()</code>, and <code>button-size()</code> mixins.</p>
     <p>Here’s an example of building a custom <code>.btn-*</code> modifier class as we do for the buttons unique to our docs by reassigning Bootstrap’s CSS variables with a mixture of our own CSS and Sass variables.</p>
     <Example :showMarkup="false" code='
-    <button type="button" class="btn btn-bd-primary">Custom button</button>
+    <button type="button" class="btn btn-docs-primary">Custom button</button>
     ' /><ScssDocs name="btn-css-vars-example" file="site/src/scss/_buttons.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="btn-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>There are three mixins for buttons: button and button outline variant mixins (both based on <code>$theme-colors</code>), plus a button size mixin.</p>

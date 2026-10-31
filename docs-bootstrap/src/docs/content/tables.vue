@@ -11,7 +11,7 @@
     <p>Use contextual classes to color tables, table rows or individual cells.</p>
     <Callout>
     <p><strong>Heads up!</strong> Because of the more complicated CSS used to generate our table variants, they most likely won’t see color mode adaptive styling until v6.</p>
-    </Callout><div class="bd-example">
+    </Callout><div class="docs-example">
       <table class="table">
         <thead>
           <tr>
@@ -479,7 +479,7 @@
     </code></pre>
     <h3 id="captions">Captions<a class="anchor-link" href="#captions" aria-label="Link to Captions"></a></h3>
     <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
-    <div class="bd-example">
+    <div class="docs-example">
       <table class="table">
         <caption>List of users</caption>
         <TableContent />
@@ -600,7 +600,7 @@
     <p>Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
     <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
     <p>
-              <div v-for="breakpoint in data['breakpoints']" class="bd-example">
+              <div v-for="breakpoint in data['breakpoints']" class="docs-example">
           <div :class="`table-responsive${breakpoint.abbr}`">
             <table class="table">
               <thead>

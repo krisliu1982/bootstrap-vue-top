@@ -16,7 +16,7 @@
     <Callout name="info-prefersreducedmotion" /><h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="offcanvas-components">Offcanvas components<a class="anchor-link" href="#offcanvas-components" aria-label="Link to Offcanvas components"></a></h3>
     <p>Below is an offcanvas example that is shown by default (via <code>.show</code> on <code>.offcanvas</code>). Offcanvas includes support for a header with a close button and an optional body class for some initial <code>padding</code>. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit dismiss action.</p>
-    <Example class="bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden" code='<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <Example class="docs-example-offcanvas p-0 bg-body-tertiary overflow-hidden" code='<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -102,7 +102,7 @@
     <DeprecatedIn version="5.3.0" /> <AddedIn version="5.2.0" /><p>Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. Here we add <code>.text-bg-dark</code> to the <code>.offcanvas</code> and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas. If you have dropdowns within, consider also adding <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>.</p>
     <Callout type="warning">
     <p><strong>Heads up!</strong> Dark variants for components were deprecated in v5.3.0 with the introduction of color modes. Instead of manually adding classes mentioned above, set <code>data-bs-theme=&quot;dark&quot;</code> on the root element, a parent wrapper, or the component itself.</p>
-    </Callout><Example class="bd-example-offcanvas p-0 bg-body-secondary overflow-hidden" code='<div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+    </Callout><Example class="docs-example-offcanvas p-0 bg-body-secondary overflow-hidden" code='<div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkLabel">Offcanvas</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>

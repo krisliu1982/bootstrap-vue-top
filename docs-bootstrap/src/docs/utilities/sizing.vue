@@ -6,20 +6,20 @@
 
     <h2 id="relative-to-the-parent">Relative to the parent<a class="anchor-link" href="#relative-to-the-parent" aria-label="Link to Relative to the parent"></a></h2>
     <p>Width and height utilities are generated from the utility API in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
-    <Example class="bd-example-flex" code='<div class="w-25 p-3">Width 25%</div>
+    <Example class="docs-example-flex" code='<div class="w-25 p-3">Width 25%</div>
     <div class="w-50 p-3">Width 50%</div>
     <div class="w-75 p-3">Width 75%</div>
     <div class="w-100 p-3">Width 100%</div>
-    <div class="w-auto p-3">Width auto</div>' /><Example class="bd-example-flex" code='<div style="height: 100px;">
+    <div class="w-auto p-3">Width auto</div>' /><Example class="docs-example-flex" code='<div style="height: 100px;">
         <div class="h-25 d-inline-block" style="width: 120px;">Height 25%</div>
         <div class="h-50 d-inline-block" style="width: 120px;">Height 50%</div>
         <div class="h-75 d-inline-block" style="width: 120px;">Height 75%</div>
         <div class="h-100 d-inline-block" style="width: 120px;">Height 100%</div>
         <div class="h-auto d-inline-block" style="width: 120px;">Height auto</div>
       </div>' /><p>You can also use <code>max-width: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
-    <Example class="bd-example-flex" code='<div style="width: 50%; height: 100px;">
+    <Example class="docs-example-flex" code='<div style="width: 50%; height: 100px;">
         <div class="mw-100" style="width: 200%;">Max-width 100%</div>
-      </div>' /><Example class="bd-example-flex" code='<div style="height: 100px;">
+      </div>' /><Example class="docs-example-flex" code='<div style="height: 100px;">
         <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
       </div>' /><h2 id="relative-to-the-viewport">Relative to the viewport<a class="anchor-link" href="#relative-to-the-viewport" aria-label="Link to Relative to the viewport"></a></h2>
     <p>You can also use utilities to set the width and height relative to the viewport.</p>

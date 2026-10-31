@@ -25,7 +25,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="modal-components">Modal components<a class="anchor-link" href="#modal-components" aria-label="Link to Modal components"></a></h3>
     <p>Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
-    <div class="bd-example bg-body-tertiary">
+    <div class="docs-example bg-body-tertiary">
       <div class="modal position-static d-block" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -296,7 +296,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="container-fluid bd-example-row">
+            <div class="container-fluid docs-example-row">
               <div class="row">
                 <div class="col-md-4">.col-md-4</div>
                 <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>

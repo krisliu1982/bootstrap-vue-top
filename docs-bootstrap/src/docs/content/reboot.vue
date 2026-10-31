@@ -108,7 +108,7 @@ sans-serif,
       <hr class="border border-danger border-2 opacity-50">
       <hr class="border border-primary border-3 opacity-75">' /><h2 id="lists">Lists<a class="anchor-link" href="#lists" aria-label="Link to Lists"></a></h2>
     <p>All lists—<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>—have their <code>margin-top</code> removed and a <code>margin-bottom: 1rem</code>. Nested lists have no <code>margin-bottom</code>. We’ve also reset the <code>padding-left</code> on <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements.</p>
-    <div class="bd-example">
+    <div class="docs-example">
     * All lists have their top margin removed
     * And their bottom margin normalized
     * Nested lists have no bottom margin

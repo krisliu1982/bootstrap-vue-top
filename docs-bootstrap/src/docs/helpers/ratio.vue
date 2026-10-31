@@ -15,7 +15,7 @@
         <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
       </div>' /><h2 id="aspect-ratios">Aspect ratios<a class="anchor-link" href="#aspect-ratios" aria-label="Link to Aspect ratios"></a></h2>
     <p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
-    <Example class="bd-example-ratios" code='<div class="ratio ratio-1x1">
+    <Example class="docs-example-ratios" code='<div class="ratio ratio-1x1">
         <div>1x1</div>
       </div>
       <div class="ratio ratio-4x3">
@@ -29,7 +29,7 @@
       </div>' /><h2 id="custom-ratios">Custom ratios<a class="anchor-link" href="#custom-ratios" aria-label="Link to Custom ratios"></a></h2>
     <p>Each <code>.ratio-*</code> class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the fly with some quick math on your part.</p>
     <p>For example, to create a 2x1 aspect ratio, set <code>--bs-aspect-ratio: 50%</code> on the <code>.ratio</code>.</p>
-    <Example class="bd-example-ratios" code='<div class="ratio" style="--bs-aspect-ratio: 50%;">
+    <Example class="docs-example-ratios" code='<div class="ratio" style="--bs-aspect-ratio: 50%;">
         <div>2x1</div>
       </div>' /><p>This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes to a custom 2x1 at the medium breakpoint.</p>
     <pre><code class="language-scss">.ratio-4x3 {
@@ -38,7 +38,7 @@
   }
 }
     </code></pre>
-    <Example class="bd-example-ratios bd-example-ratios-breakpoint" code='<div class="ratio ratio-4x3">
+    <Example class="docs-example-ratios docs-example-ratios-breakpoint" code='<div class="ratio ratio-4x3">
         <div>4x3, then 2x1</div>
       </div>' /><h2 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h2>
     <p>Within <code>_variables.scss</code>, you can change the aspect ratios you want to use. Here’s our default <code>$ratio-aspect-ratios</code> map. Modify the map as you like and recompile your Sass to put them to use.</p>

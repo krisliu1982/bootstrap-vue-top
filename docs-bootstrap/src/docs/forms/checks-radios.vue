@@ -22,14 +22,14 @@
         </label>
       </div>' /><h3 id="indeterminate">Indeterminate<a class="anchor-link" href="#indeterminate" aria-label="Link to Indeterminate"></a></h3>
     <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
-    <Example addStackblitzJs class="bd-example-indeterminate" code='<div class="form-check">
+    <Example addStackblitzJs class="docs-example-indeterminate" code='<div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
         <label class="form-check-label" for="checkIndeterminate">
           Indeterminate checkbox
         </label>
       </div>' /><h3 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h3>
     <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
-    <Example addStackblitzJs class="bd-example-indeterminate" code='<div class="form-check">
+    <Example addStackblitzJs class="docs-example-indeterminate" code='<div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="checkIndeterminateDisabled" disabled>
         <label class="form-check-label" for="checkIndeterminateDisabled">
           Disabled indeterminate checkbox

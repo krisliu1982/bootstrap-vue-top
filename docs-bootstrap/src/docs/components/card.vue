@@ -263,7 +263,7 @@
       </div>' /><h3 id="image-overlays">Image overlays<a class="anchor-link" href="#image-overlays" aria-label="Link to Image overlays"></a></h3>
     <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
     <Example code='<div class="card text-bg-dark">
-        <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
+        <Placeholder width="100%" height="270" class="docs-placeholder-img-lg card-img" text="Card image" />
         <div class="card-img-overlay">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

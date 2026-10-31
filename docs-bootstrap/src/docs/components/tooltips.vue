@@ -35,7 +35,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
         Custom tooltip
       </button>' /><h3 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h3>
     <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.</p>
-    <Example :showMarkup="false" class="tooltip-demo" code='<div class="bd-example-tooltips">
+    <Example :showMarkup="false" class="tooltip-demo" code='<div class="docs-example-tooltips">
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Tooltip on top</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Tooltip on right</button>
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">Tooltip on bottom</button>
@@ -61,7 +61,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
 &lt;/button&gt;
     </code></pre>
     <p>With an SVG:</p>
-    <div class="bd-example tooltip-demo">
+    <div class="docs-example tooltip-demo">
       <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip" aria-label="Hover or focus to see default tooltip">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" aria-hidden="true">
           <rect width="100%" height="100%" fill="#563d7c"/>

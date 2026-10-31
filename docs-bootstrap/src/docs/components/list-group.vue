@@ -197,7 +197,7 @@
     <p>Loop that generates the modifier classes with an overriding of CSS variables.</p>
     <ScssDocs name="list-group-modifiers" file="scss/_list-group.scss" /><h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
     <p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our list group to create tabbable panes of local content.</p>
-    <div class="bd-example" role="tabpanel">
+    <div class="docs-example" role="tabpanel">
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">

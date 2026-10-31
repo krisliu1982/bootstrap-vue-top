@@ -28,7 +28,7 @@
     <li><code>100</code> - for <code>100%</code> edge position</li>
     </ul>
     <p>(You can add more position values by adding entries to the <code>$position-values</code> Sass map variable.)</p>
-    <Example class="bd-example-position-utils" code='<div class="position-relative">
+    <Example class="docs-example-position-utils" code='<div class="position-relative">
         <div class="position-absolute top-0 start-0"></div>
         <div class="position-absolute top-0 end-0"></div>
         <div class="position-absolute top-50 start-50"></div>
@@ -38,7 +38,7 @@
       </div>' /><h2 id="center-elements">Center elements<a class="anchor-link" href="#center-elements" aria-label="Link to Center elements"></a></h2>
     <p>In addition, you can also center the elements with the transform utility class <code>.translate-middle</code>.</p>
     <p>This class applies the transformations <code>translateX(-50%)</code> and <code>translateY(-50%)</code> to the element which, in combination with the edge positioning utilities, allows you to absolute center an element.</p>
-    <Example class="bd-example-position-utils" code='<div class="position-relative">
+    <Example class="docs-example-position-utils" code='<div class="position-relative">
         <div class="position-absolute top-0 start-0 translate-middle"></div>
         <div class="position-absolute top-0 start-50 translate-middle"></div>
         <div class="position-absolute top-0 start-100 translate-middle"></div>
@@ -49,7 +49,7 @@
         <div class="position-absolute top-100 start-50 translate-middle"></div>
         <div class="position-absolute top-100 start-100 translate-middle"></div>
       </div>' /><p>By adding <code>.translate-middle-x</code> or <code>.translate-middle-y</code> classes, elements can be positioned only in horizontal or vertical direction.</p>
-    <Example class="bd-example-position-utils" code='<div class="position-relative">
+    <Example class="docs-example-position-utils" code='<div class="position-relative">
         <div class="position-absolute top-0 start-0"></div>
         <div class="position-absolute top-0 start-50 translate-middle-x"></div>
         <div class="position-absolute top-0 end-0"></div>
@@ -61,7 +61,7 @@
         <div class="position-absolute bottom-0 end-0"></div>
       </div>' /><h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>Here are some real life examples of these classes:</p>
-    <Example class="bd-example-position-examples d-flex justify-content-around align-items-center" code='<button type="button" class="btn btn-primary position-relative">
+    <Example class="docs-example-position-examples d-flex justify-content-around align-items-center" code='<button type="button" class="btn btn-primary position-relative">
         Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
       </button>
 
@@ -72,7 +72,7 @@
       <button type="button" class="btn btn-primary position-relative">
         Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
       </button>' /><p>You can use these classes with existing components to create new ones. Remember that you can extend its functionality by adding entries to the <code>$position-values</code> variable.</p>
-    <Example class="bd-example-position-examples" code='<div class="position-relative m-4">
+    <Example class="docs-example-position-examples" code='<div class="position-relative m-4">
         <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
           <div class="progress-bar" style="width: 50%"></div>
         </div>

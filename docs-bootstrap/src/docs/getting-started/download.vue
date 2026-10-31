@@ -11,7 +11,7 @@
     <li>Compiled and minified JavaScript plugins (see <a href="[[docsref:/getting-started/contents#js-files]]">JS files comparison</a>)</li>
     </ul>
     <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies like Popper.</p>
-    <p><a href="[[config:download.dist]]" class="btn btn-bd-primary">Download</a></p>
+    <p><a href="[[config:download.dist]]" class="btn btn-docs-primary">Download</a></p>
     <h2 id="source-files">Source files<a class="anchor-link" href="#source-files" aria-label="Link to Source files"></a></h2>
     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
     <ul>
@@ -19,10 +19,10 @@
     <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for CSS vendor prefixing</li>
     </ul>
     <p>Should you require our full set of <a href="[[docsref:/getting-started/contribute#tooling-setup]]">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.</p>
-    <p><a href="[[config:download.source]]" class="btn btn-bd-primary">Download source</a></p>
+    <p><a href="[[config:download.source]]" class="btn btn-docs-primary">Download source</a></p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>If you want to download and examine our <a href="[[docsref:/examples]]">examples</a>, you can grab the already built examples:</p>
-    <p><a href="[[config:download.dist_examples]]" class="btn btn-bd-primary">Download Examples</a></p>
+    <p><a href="[[config:download.dist_examples]]" class="btn btn-docs-primary">Download Examples</a></p>
     <h2 id="cdn-via-jsdelivr">CDN via jsDelivr<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="Link to CDN via jsDelivr"></a></h2>
     <p>Skip the download with <a href="https://www.jsdelivr.com/">jsDelivr</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.</p>
     <pre><code class="language-html">&lt;link href=&quot;[[config:cdn.css]]&quot; rel=&quot;stylesheet&quot; integrity=&quot;[[config:cdn.css_hash]]&quot; crossorigin=&quot;anonymous&quot;&gt;
@@ -90,6 +90,6 @@ yarn start # Start the project
     </code></pre>
     <h2 id="intellisense-extension">IntelliSense extension<a class="anchor-link" href="#intellisense-extension" aria-label="Link to IntelliSense extension"></a></h2>
     <img class="d-block mb-4 img-fluid rounded-3" src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-intellisense-autocomplete.png" width="573" height="332" alt="" /><p>Install the community-maintained <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense extension</a> for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.</p>
-    <p><a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">View in VS Code Marketplace</a></p>
+    <p><a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-docs-primary">View in VS Code Marketplace</a></p>
   </article>
 </template>

@@ -8,7 +8,7 @@
     <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a> and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.</p>
     <Callout>
     <p><strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.</p>
-    </Callout><Example class="bd-example-row" code='<div class="container text-center">
+    </Callout><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col">
             Column
@@ -107,7 +107,7 @@
     <p>Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like <code>.col-sm-6</code>.</p>
     <h3 id="equal-width">Equal-width<a class="anchor-link" href="#equal-width" aria-label="Link to Equal-width"></a></h3>
     <p>For example, here are two grid layouts that apply to every device and viewport, from <code>xs</code> to <code>xxl</code>. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col">
             1 of 2
@@ -129,7 +129,7 @@
         </div>
       </div>' /><h3 id="setting-one-column-width">Setting one column width<a class="anchor-link" href="#setting-one-column-width" aria-label="Link to Setting one column width"></a></h3>
     <p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col">
             1 of 3
@@ -154,7 +154,7 @@
         </div>
       </div>' /><h3 id="variable-width-content">Variable width content<a class="anchor-link" href="#variable-width-content" aria-label="Link to Variable width content"></a></h3>
     <p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row justify-content-md-center">
           <div class="col col-lg-2">
             1 of 3
@@ -181,7 +181,7 @@
     <p>Bootstrap’s grid includes six tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
     <h3 id="all-breakpoints">All breakpoints<a class="anchor-link" href="#all-breakpoints" aria-label="Link to All breakpoints"></a></h3>
     <p>For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code>.col</code>.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col">col</div>
           <div class="col">col</div>
@@ -194,7 +194,7 @@
         </div>
       </div>' /><h3 id="stacked-to-horizontal">Stacked to horizontal<a class="anchor-link" href="#stacked-to-horizontal" aria-label="Link to Stacked to horizontal"></a></h3>
     <p>Using a single set of <code>.col-sm-*</code> classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (<code>sm</code>).</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col-sm-8">col-sm-8</div>
           <div class="col-sm-4">col-sm-4</div>
@@ -206,7 +206,7 @@
         </div>
       </div>' /><h3 id="mix-and-match">Mix and match<a class="anchor-link" href="#mix-and-match" aria-label="Link to Mix and match"></a></h3>
     <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <div class="row">
           <div class="col-md-8">.col-md-8</div>
@@ -228,42 +228,42 @@
       </div>' /><h3 id="row-columns">Row columns<a class="anchor-link" href="#row-columns" aria-label="Link to Row columns"></a></h3>
     <p>Use the responsive <code>.row-cols-*</code> classes to quickly set the number of columns that best render your content and layout. Whereas normal <code>.col-*</code> classes apply to the individual columns (e.g., <code>.col-md-4</code>), the row columns classes are set on the parent <code>.row</code> as a shortcut. With <code>.row-cols-auto</code> you can give the columns their natural width.</p>
     <p>Use these row columns classes to quickly create basic grid layouts or to control your card layouts.</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-2">
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
         </div>
-      </div>' /><Example class="bd-example-row" code='<div class="container text-center">
+      </div>' /><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-3">
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
         </div>
-      </div>' /><Example class="bd-example-row" code='<div class="container text-center">
+      </div>' /><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-auto">
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
         </div>
-      </div>' /><Example class="bd-example-row" code='<div class="container text-center">
+      </div>' /><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-4">
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col">Column</div>
         </div>
-      </div>' /><Example class="bd-example-row" code='<div class="container text-center">
+      </div>' /><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-4">
           <div class="col">Column</div>
           <div class="col">Column</div>
           <div class="col-6">Column</div>
           <div class="col">Column</div>
         </div>
-      </div>' /><Example class="bd-example-row" code='<div class="container text-center">
+      </div>' /><Example class="docs-example-row" code='<div class="container text-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
           <div class="col">Column</div>
           <div class="col">Column</div>
@@ -283,7 +283,7 @@
     </code></pre>
     <h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
     <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
-    <Example class="bd-example-row" code='<div class="container text-center">
+    <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col-sm-3">
             Level 1: .col-sm-3

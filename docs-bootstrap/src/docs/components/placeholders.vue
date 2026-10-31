@@ -8,7 +8,7 @@
     <p>Placeholders can be used to enhance the experience of your application. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, color, and sizing can be easily customized with our utility classes.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the two.</p>
-    <Example :showMarkup="false" class="bd-example-placeholder-cards d-flex justify-content-around" code='<div class="card">
+    <Example :showMarkup="false" class="docs-example-placeholder-cards d-flex justify-content-around" code='<div class="card">
         <Placeholder width="100%" height="180" class="card-img-top" text={false} background="#20c997" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>

@@ -9,23 +9,23 @@
     <p><strong>Heads up!</strong> Support for gap utilities with flexbox isn’t available in Safari prior to 14.5, so consider verifying your intended browser support. Grid layout should have no issues. <a href="https://caniuse.com/flexbox-gap">Read more</a>.</p>
     </Callout><h2 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h2>
     <p>Use <code>.vstack</code> to create vertical layouts. Stacked items are full-width by default. Use <code>.gap-*</code> utilities to add space between items.</p>
-    <Example class="bd-example-flex" code='<div class="vstack gap-3">
+    <Example class="docs-example-flex" code='<div class="vstack gap-3">
         <div class="p-2">First item</div>
         <div class="p-2">Second item</div>
         <div class="p-2">Third item</div>
       </div>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>Use <code>.hstack</code> for horizontal layouts. Stacked items are vertically centered by default and only take up their necessary width. Use <code>.gap-*</code> utilities to add space between items.</p>
-    <Example class="bd-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
         <div class="p-2">First item</div>
         <div class="p-2">Second item</div>
         <div class="p-2">Third item</div>
       </div>' /><p>Using horizontal margin utilities like <code>.ms-auto</code> as spacers:</p>
-    <Example class="bd-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
         <div class="p-2">First item</div>
         <div class="p-2 ms-auto">Second item</div>
         <div class="p-2">Third item</div>
       </div>' /><p>And with <a href="[[docsref:/helpers/vertical-rule]]">vertical rules</a>:</p>
-    <Example class="bd-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
         <div class="p-2">First item</div>
         <div class="p-2 ms-auto">Second item</div>
         <div class="vr"></div>
