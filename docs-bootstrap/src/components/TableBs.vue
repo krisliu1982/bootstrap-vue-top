@@ -69,6 +69,5 @@ const exampleCode = `<table${props.class ? ` class="${props.class}"` : ''}>
       <td>Doe</td>
       <td>@social</td>
     </tr>
-  </tbody>
-</table>`
+  </tbody>`
 </script>

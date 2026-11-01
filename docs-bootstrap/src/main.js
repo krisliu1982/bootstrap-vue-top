@@ -20,7 +20,7 @@ import JsDataAttributes from '@/components/JsDataAttributes.vue'
 import GuideFooter from '@/components/GuideFooter.vue'
 import JsDocs from '@/components/JsDocs.vue'
 import Placeholder from '@/components/Placeholder.vue'
-import Table from '@/components/Table.vue'
+import TableBs from '@/components/TableBs.vue'
 
 const app = createApp(app_);
 app.use(router);
@@ -36,6 +36,6 @@ app.component('JsDataAttributes', JsDataAttributes)
 app.component('GuideFooter', GuideFooter)
 app.component('JsDocs', JsDocs)
 app.component('Placeholder', Placeholder)
-app.component('Table', Table)
+app.component('TableBs', TableBs)
 
 app.mount('#app');
