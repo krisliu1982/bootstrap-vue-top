@@ -1,7 +1,7 @@
 <template>
     <template v-if="props.markup === 'svg'">
         <svg :aria-hidden="placeholderAriaHidden" :aria-label="placeholderLabel" :height="props.height"
-            class="docs-placeholder-img" :role="placeholderRole" :width="props.width"
+            class="docs-placeholder-img" :class="props.class" :role="placeholderRole" :width="props.width"
             xmlns="http://www.w3.org/2000/svg">
             <title v-if="props.title !== false">{{ props.title }}</title>
             <rect width="100%" height="100%" :fill="props.background"></rect>
@@ -24,8 +24,9 @@ const props = defineProps({
     color: { type: String, default: '#dee2e6' },
     markup: { type: String, default: 'svg' },
     width: { type: String, default: '100%' },
-    text: { type: String || Boolean, default: 'w*h' },
-    title: { type: String || Boolean, default: 'Placeholder' }
+    text: { type: [String , Boolean], default: 'w*h' },
+    title: { type: [String , Boolean], default: 'Placeholder' },
+    class: { type: String, default: null }
 })
 
 

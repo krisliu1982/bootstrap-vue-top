@@ -39,7 +39,7 @@
     <p>(You can add more sizes by adding entries to the <code>$spacers</code> Sass map variable.)</p>
     <h3 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h3>
     <p>Here are some representative examples of these classes:</p>
-    <pre><code class="language-scss">.mt-0 {
+    <CodeWrapper code=".mt-0 {
   margin-top: 0 !important;
 }
 
@@ -55,23 +55,22 @@
 .p-3 {
   padding: $spacer !important;
 }
-    </code></pre>
+" lang="scss" />
     <h3 id="horizontal-centering">Horizontal centering<a class="anchor-link" href="#horizontal-centering" aria-label="Link to Horizontal centering"></a></h3>
     <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
     <Example :showMarkup="false" code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--docs-violet-rgb),.15); border: rgba(var(--docs-violet-rgb),.3) solid 1px;">
         Centered element
       </div>' />
-    <pre><code class="language-html">&lt;div class=&quot;mx-auto p-2&quot; style=&quot;width: 200px;&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;mx-auto p-2&quot; style=&quot;width: 200px;&quot;&gt;
   Centered element
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h2 id="negative-margin">Negative margin<a class="anchor-link" href="#negative-margin" aria-label="Link to Negative margin"></a></h2>
     <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting <code>$enable-negative-margins: true</code>.</p>
     <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of <code>n</code> before the requested size. Here’s an example class that’s the opposite of <code>.mt-1</code>:</p>
-    <pre><code class="language-scss">.mt-n1 {
+    <CodeWrapper code=".mt-n1 {
   margin-top: -0.25rem !important;
 }
-    </code></pre>
+" lang="scss" />
     <h2 id="gap">Gap<a class="anchor-link" href="#gap" aria-label="Link to Gap"></a></h2>
     <p>When using <code>display: grid</code> or <code>display: flex</code>, you can make use of <code>gap</code> utilities on the parent element. This can save on having to add margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the <code>$spacers</code> Sass map.</p>
     <Example class="docs-example-cssgrid" code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">

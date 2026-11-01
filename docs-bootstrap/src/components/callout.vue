@@ -1,30 +1,30 @@
 <template>
-  <div :class="`docs-callout docs-callout-${type}`">
-    <template v-if="name === 'info-npm-starter'">
+  <div :class="`docs-callout docs-callout-${props.type}`">
+    <template v-if="props.name === 'info-npm-starter'">
       <info-npm-starter />
     </template>
-    <template v-if="name === 'warning-input-support'">
+    <template v-else-if="props.name === 'warning-input-support'">
       <warning-input-support />
     </template>
-    <template v-if="name === 'warning-data-bs-title-vs-title'">
+    <template v-else-if="props.name === 'warning-data-bs-title-vs-title'">
       <warning-data-bs-title-vs-title />
     </template>
-    <template v-if="name === 'warning-color-assistive-technologies'">
+    <template v-else-if="props.name === 'warning-color-assistive-technologies'">
       <warning-color-assistive-technologies />
     </template>
-    <template v-if="name === 'info-sanitizer'">
+    <template v-else-if="props.name === 'info-sanitizer'">
       <info-sanitizer />
     </template>
-    <template v-if="name === 'info-prefersreducedmotion'">
+    <template v-else-if="props.name === 'info-prefersreducedmotion'">
       <info-prefersreducedmotion />
     </template>
-    <template v-if="name === 'info-mediaqueries-breakpoints'">
+    <template v-else-if="props.name === 'info-mediaqueries-breakpoints'">
       <info-mediaqueries-breakpoints />
     </template>
-    <template v-if="name === 'danger-async-methods'">
+    <template v-else-if="props.name === 'danger-async-methods'">
       <danger-async-methods />
     </template>
-    <slot v-else />
+    <slot />
   </div>
 </template>
 

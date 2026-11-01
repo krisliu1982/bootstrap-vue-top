@@ -13,12 +13,11 @@
       <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
       <div class="opacity-0 p-3 m-2 bg-primary text-light fw-bold rounded">0%</div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;opacity-100&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;opacity-75&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;opacity-50&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;opacity-25&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;opacity-0&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;opacity-0&quot;&gt;...&lt;/div&gt;' lang="html" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Opacity utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>

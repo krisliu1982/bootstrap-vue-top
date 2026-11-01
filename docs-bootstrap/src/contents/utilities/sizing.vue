@@ -23,11 +23,10 @@
         <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
       </div>' /><h2 id="relative-to-the-viewport">Relative to the viewport<a class="anchor-link" href="#relative-to-the-viewport" aria-label="Link to Relative to the viewport"></a></h2>
     <p>You can also use utilities to set the width and height relative to the viewport.</p>
-    <pre><code class="language-html">&lt;div class=&quot;min-vw-100&quot;&gt;Min-width 100vw&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;min-vw-100&quot;&gt;Min-width 100vw&lt;/div&gt;
 &lt;div class=&quot;min-vh-100&quot;&gt;Min-height 100vh&lt;/div&gt;
 &lt;div class=&quot;vw-100&quot;&gt;Width 100vw&lt;/div&gt;
-&lt;div class=&quot;vh-100&quot;&gt;Height 100vh&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;vh-100&quot;&gt;Height 100vh&lt;/div&gt;' lang="html" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Sizing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>

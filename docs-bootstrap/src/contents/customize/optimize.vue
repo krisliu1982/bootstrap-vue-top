@@ -10,7 +10,7 @@
     <h2 id="lean-javascript">Lean JavaScript<a class="anchor-link" href="#lean-javascript" aria-label="Link to Lean JavaScript"></a></h2>
     <p>Bootstrap’s JavaScript includes every component in our primary dist files (<code>bootstrap.js</code> and <code>bootstrap.min.js</code>), and even our primary dependency (Popper) with our bundle files (<code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code>). While you’re customizing via Sass, be sure to remove related JavaScript.</p>
     <p>For instance, assuming you’re using your own JavaScript bundler like Webpack, Parcel, or Vite, you’d only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:</p>
-    <pre><code class="language-js">// Import just what we need
+    <CodeWrapper code="// Import just what we need
 
 // import &#39;bootstrap/js/dist/alert&#39;;
 // import &#39;bootstrap/js/dist/button&#39;;
@@ -24,13 +24,13 @@ import &#39;bootstrap/js/dist/modal&#39;;
 // import &#39;bootstrap/js/dist/tab&#39;;
 // import &#39;bootstrap/js/dist/toast&#39;;
 // import &#39;bootstrap/js/dist/tooltip&#39;;
-    </code></pre>
+" lang="javascript" />
     <p>This way, you’re not including any JavaScript you don’t intend to use for components like buttons, carousels, and tooltips. If you’re importing dropdowns, tooltips or popovers, be sure to list the Popper dependency in your <code>package.json</code> file.</p>
     <Callout>
     <p><strong>Heads up!</strong> Files in <code>bootstrap/js/dist</code> use the <strong>default export</strong>. To use them, do the following:</p>
-    <pre><code class="language-js">import Modal from &#39;bootstrap/js/dist/modal&#39;
+    <CodeWrapper code="import Modal from &#39;bootstrap/js/dist/modal&#39;
 const modal = new Modal(document.getElementById(&#39;myModal&#39;))
-    </code></pre>
+" lang="javascript" />
     </Callout><h2 id="autoprefixer-browserslistrc">Autoprefixer .browserslistrc<a class="anchor-link" href="#autoprefixer-browserslistrc" aria-label="Link to Autoprefixer .browserslistrc"></a></h2>
     <p>Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our <code>.browserslistrc</code> file, found in the root of the Bootstrap repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor prefixes unique to that browser or version.</p>
     <h2 id="unused-css">Unused CSS<a class="anchor-link" href="#unused-css" aria-label="Link to Unused CSS"></a></h2>

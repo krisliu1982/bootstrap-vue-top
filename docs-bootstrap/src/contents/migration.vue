@@ -110,7 +110,7 @@
     <li><p>We’ve also expanded our theme color Sass variables, CSS variables, and utilities to include text emphasis, subtle background colors, and subtle border colors. These are available as Sass variables, CSS variables, and utilities.</p>
     </li>
     <li><p>Adds new <code>_variables-dark.scss</code> stylesheet to house dark-mode specific overrides. This stylesheet should be imported immediately after the existing <code>_variables.scss</code> file in your import stack.</p>
-    <pre><code class="language-diff">diff --git a/scss/bootstrap.scss b/scss/bootstrap.scss
+    <CodeWrapper code="diff --git a/scss/bootstrap.scss b/scss/bootstrap.scss
 index 8f8296def..449d70487 100644
 --- a/scss/bootstrap.scss
 +++ b/scss/bootstrap.scss
@@ -121,8 +121,7 @@ index 8f8296def..449d70487 100644
 +@import &quot;variables-dark&quot;;
  @import &quot;maps&quot;;
  @import &quot;mixins&quot;;
- @import &quot;utilities&quot;;
-    </code></pre>
+ @import &quot;utilities&quot;;" lang="diff" />
     </li>
     </ul>
     <h3 id="css-variables-1">CSS variables<a class="anchor-link" href="#css-variables-1" aria-label="Link to CSS variables"></a></h3>
@@ -172,7 +171,7 @@ index 8f8296def..449d70487 100644
     <h3 id="progress-bars">Progress bars<a class="anchor-link" href="#progress-bars" aria-label="Link to Progress bars"></a></h3>
     <p>The markup for <a href="/components/progress">progress bars</a> has been updated in v5.3.0. Due to the placement of <code>role</code> and various <code>aria-</code> attributes on the inner <code>.progress-bar</code> element, <strong>some screen readers were not announcing zero value progress bars</strong>. Now, <code>role=&quot;progressbar&quot;</code> and the relevant <code>aria-*</code> attributes are on the outer <code>.progress</code> element, leaving the <code>.progress-bar</code> purely for the visual presentation of the bar and optional label.</p>
     <p>While we recommend adopting the new markup for improved compatibility with all screen readers, note that the legacy progress bar structure will continue to work as before.</p>
-    <pre><code class="language-html">&lt;!-- Previous markup --&gt;
+    <CodeWrapper code='&lt;!-- Previous markup --&gt;
 &lt;div class=&quot;progress&quot;&gt;
   &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -180,10 +179,9 @@ index 8f8296def..449d70487 100644
 &lt;!-- New markup --&gt;
 &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Basic example&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;
   &lt;div class=&quot;progress-bar&quot; style=&quot;width: 25%&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <p>We’ve also introduced a new <code>.progress-stacked</code> class to more logically wrap <a href="/components/progress#multiple-bars">multiple progress bars</a> into a single stacked progress bar.</p>
-    <pre><code class="language-html">&lt;!-- Previous markup --&gt;
+    <CodeWrapper code='&lt;!-- Previous markup --&gt;
 &lt;div class=&quot;progress&quot;&gt;
   &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment one&quot; style=&quot;width: 15%&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;progress-bar bg-success&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment two&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
@@ -201,8 +199,7 @@ index 8f8296def..449d70487 100644
   &lt;div class=&quot;progress&quot; role=&quot;progressbar&quot; aria-label=&quot;Segment three&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
     &lt;div class=&quot;progress-bar bg-info&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
     <ul>
     <li><p><code>.form-control</code> is now styled with CSS variables to support color modes. This includes the addition of two new root CSS variables for the default and disabled form control backgrounds.</p>
@@ -250,7 +247,7 @@ index 8f8296def..449d70487 100644
     <li><code>$gutters</code></li>
     </ul>
     <p>Your custom Bootstrap CSS builds should now look something like this with a separate maps import.</p>
-    <pre><code class="language-diff">  // Functions come first
+    <CodeWrapper code="  // Functions come first
   @import &quot;functions&quot;;
 
   // Optional variable overrides here
@@ -273,8 +270,7 @@ index 8f8296def..449d70487 100644
   @import &quot;utilities&quot;;
   @import &quot;root&quot;;
   @import &quot;reboot&quot;;
-  // etc
-    </code></pre>
+  // etc" lang="diff" />
     <h3 id="new-utilities">New utilities<a class="anchor-link" href="#new-utilities" aria-label="Link to New utilities"></a></h3>
     <ul>
     <li>Expanded <a href="/utilities/text#font-weight-and-italics"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.</li>
@@ -725,9 +721,8 @@ index 8f8296def..449d70487 100644
     <li><p><span class="badge text-bg-danger">Breaking</span> Data attributes for all JavaScript plugins are now namespaced to help distinguish Bootstrap functionality from third parties and your own code. For example, we use <code>data-bs-toggle</code> instead of <code>data-toggle</code>.</p>
     </li>
     <li><p><strong>All plugins can now accept a CSS selector as the first argument.</strong> You can either pass a DOM element or any valid CSS selector to create a new instance of the plugin:</p>
-    <pre><code class="language-js">const modal = new bootstrap.Modal(&#39;#myModal&#39;)
-const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)
-    </code></pre>
+    <CodeWrapper code="const modal = new bootstrap.Modal(&#39;#myModal&#39;)
+const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)" lang="javascript" />
     </li>
     <li><p><code>popperConfig</code> can be passed as a function that accepts the Bootstrap’s default Popper config as an argument, so that you can merge this default configuration in your way. <strong>Applies to dropdowns, popovers, and tooltips.</strong></p>
     </li>

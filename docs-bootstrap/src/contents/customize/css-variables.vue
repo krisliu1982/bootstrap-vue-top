@@ -196,13 +196,13 @@
     <p>Customize the prefix via the <code>$prefix</code> Sass variable. By default, it’s set to <code>bs-</code> (note the trailing dash).</p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser. For example, here we’re resetting our page’s font and link styles with CSS variables.</p>
-    <pre><code class="language-css">body {
+    <CodeWrapper code="body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
 }
 a {
   color: var(--bs-blue);
 }
-    </code></pre>
+" lang="css" />
     <h2 id="focus-variables">Focus variables<a class="anchor-link" href="#focus-variables" aria-label="Link to Focus variables"></a></h2>
     <AddedIn version="5.3.0"/><p>Bootstrap provides custom <code>:focus</code> styles using a combination of Sass and CSS variables that can be optionally added to specific components and elements. We do not yet globally override all <code>:focus</code> styles.</p>
     <p>In our Sass, we set default values that can be customized before compiling.</p>

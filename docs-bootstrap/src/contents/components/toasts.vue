@@ -17,7 +17,7 @@
     <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.</p>
     <Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
           <strong class="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -32,7 +32,7 @@
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
           <strong class="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -43,7 +43,7 @@
       </div>
     </div><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
     ' />
-    <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
+    <CodeWrapper code='&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;liveToastBtn&quot;&gt;Show live toast&lt;/button&gt;
 
 &lt;div class=&quot;toast-container position-fixed bottom-0 end-0 p-3&quot;&gt;
   &lt;div id=&quot;liveToast&quot; class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
@@ -57,14 +57,13 @@
       Hello, world! This is a toast message.
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <p>We use the following JavaScript to trigger our live toast demo:</p>
     <JsDocs name="live-toast" file="site/src/assets/partials/snippets.js" /><h3 id="translucent">Translucent<a class="anchor-link" href="#translucent" aria-label="Link to Translucent"></a></h3>
     <p>Toasts are slightly translucent to blend in with what’s below them.</p>
     <Example class="bg-dark" code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
           <strong class="me-auto">Bootstrap</strong>
           <small class="text-body-secondary">11 mins ago</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -77,7 +76,7 @@
     <Example code='<div class="toast-container position-static">
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
-            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
             <strong class="me-auto">Bootstrap</strong>
             <small class="text-body-secondary">just now</small>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -89,7 +88,7 @@
 
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
-            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
             <strong class="me-auto">Bootstrap</strong>
             <small class="text-body-secondary">2 seconds ago</small>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -148,7 +147,7 @@
         <div class="toast-container p-3" id="toastPlacement">
           <div class="toast">
             <div class="toast-header">
-              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
               <strong class="me-auto">Bootstrap</strong>
               <small>11 mins ago</small>
             </div>
@@ -168,7 +167,7 @@
           <!-- Then put toasts within -->
           <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
               <strong class="me-auto">Bootstrap</strong>
               <small class="text-body-secondary">just now</small>
               <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -180,7 +179,7 @@
 
           <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+              <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
               <strong class="me-auto">Bootstrap</strong>
               <small class="text-body-secondary">2 seconds ago</small>
               <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -197,7 +196,7 @@
         <!-- Then put toasts within -->
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
-            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+            <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
             <strong class="me-auto">Bootstrap</strong>
             <small>11 mins ago</small>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -211,14 +210,13 @@
     <p>Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.</p>
     <p>You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> attributes.</p>
     <p>As the content you’re displaying changes, be sure to update the <a href="#options"><code>delay</code> timeout</a> so that users have enough time to read the toast.</p>
-    <pre><code class="language-html">&lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot; data-bs-delay=&quot;10000&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot; data-bs-delay=&quot;10000&quot;&gt;
   &lt;div role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <p>When using <code>autohide: false</code>, you must add a close button to allow users to dismiss the toast.</p>
     <Example code='<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
         <div class="toast-header">
-          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" text={false} title={false} />
+          <Placeholder width="20" height="20" background="#007aff" class="rounded me-2" :text="false" :title="false" />
           <strong class="me-auto">Bootstrap</strong>
           <small>11 mins ago</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -233,9 +231,9 @@
     <ScssDocs name="toast-css-vars" file="scss/_toasts.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="toast-variables" file="scss/_variables.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Initialize toasts via JavaScript:</p>
-    <pre><code class="language-js">const toastElList = document.querySelectorAll(&#39;.toast&#39;)
+    <CodeWrapper code="const toastElList = document.querySelectorAll(&#39;.toast&#39;)
 const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
-    </code></pre>
+" lang="javascript" />
     <h3 id="triggers">Triggers<a class="anchor-link" href="#triggers" aria-label="Link to Triggers"></a></h3>
     <JsDismiss name="toast" /><h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
@@ -327,10 +325,10 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const myToastEl = document.getElementById(&#39;myToast&#39;)
+    <CodeWrapper code="const myToastEl = document.getElementById(&#39;myToast&#39;)
 myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   // do something...
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>

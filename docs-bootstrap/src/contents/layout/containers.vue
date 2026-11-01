@@ -92,31 +92,28 @@
     </tbody></table>
     </div><h2 id="default-container">Default container<a class="anchor-link" href="#default-container" aria-label="Link to Default container"></a></h2>
     <p>Our default <code>.container</code> class is a responsive, fixed-width container, meaning its <code>max-width</code> changes at each breakpoint.</p>
-    <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;container&quot;&gt;
   &lt;!-- Content here --&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h2 id="responsive-containers">Responsive containers<a class="anchor-link" href="#responsive-containers" aria-label="Link to Responsive containers"></a></h2>
     <p>Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply <code>max-width</code>s for each of the higher breakpoints. For example, <code>.container-sm</code> is 100% wide to start until the <code>sm</code> breakpoint is reached, where it will scale up with <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
-    <pre><code class="language-html">&lt;div class=&quot;container-sm&quot;&gt;100% wide until small breakpoint&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;container-sm&quot;&gt;100% wide until small breakpoint&lt;/div&gt;
 &lt;div class=&quot;container-md&quot;&gt;100% wide until medium breakpoint&lt;/div&gt;
 &lt;div class=&quot;container-lg&quot;&gt;100% wide until large breakpoint&lt;/div&gt;
 &lt;div class=&quot;container-xl&quot;&gt;100% wide until extra large breakpoint&lt;/div&gt;
-&lt;div class=&quot;container-xxl&quot;&gt;100% wide until extra extra large breakpoint&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;container-xxl&quot;&gt;100% wide until extra extra large breakpoint&lt;/div&gt;' lang="html" />
     <h2 id="fluid-containers">Fluid containers<a class="anchor-link" href="#fluid-containers" aria-label="Link to Fluid containers"></a></h2>
     <p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
-    <pre><code class="language-html">&lt;div class=&quot;container-fluid&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;container-fluid&quot;&gt;
   ...
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by modifying the Sass map (found in <code>_variables.scss</code>) that powers them:</p>
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/layout/grid#css">the Sass section of the Grid documentation</a>.</p>
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>In addition to customizing the Sass, you can also create your own containers with our Sass mixin.</p>
-    <pre><code class="language-scss">// Source mixin
+    <CodeWrapper code="// Source mixin
 @mixin make-container($padding-x: $container-padding-x) {
   width: 100%;
   padding-right: $padding-x;
@@ -129,6 +126,6 @@
 .custom-container {
   @include make-container();
 }
-    </code></pre>
+" lang="scss" />
   </article>
 </template>

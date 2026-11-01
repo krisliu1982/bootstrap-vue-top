@@ -21,17 +21,16 @@
       <strong>This is a callout.</strong> We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;callout&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;callout&quot;&gt;...&lt;/div&gt;' lang="html" />
     <p>In your CSS, you’d have something like the following where the bulk of the styling is done via <code>.callout</code>. Then, the unique styles between each variant is controlled via modifier class.</p>
-    <pre><code class="language-scss">// Base class
+    <CodeWrapper code="// Base class
 .callout {}
 
 // Modifier classes
 .callout-info {}
 .callout-warning {}
 .callout-danger {}
-    </code></pre>
+" lang="scss" />
     <p>For the callouts, that unique styling is just a <code>border-left-color</code>. When you combine that base class with one of those modifier classes, you get your complete component family:</p>
     <Callout>
     <p><strong>This is an info callout.</strong> Example text to show it in action.</p>

@@ -11,11 +11,11 @@
     <p>The mixins are included in Bootstrap and are available once you include Bootstrap’s <code>scss</code>. RFS can also be <a href="https://github.com/twbs/rfs/tree/v10.0.0#installation">installed standalone</a> if needed.</p>
     <h3 id="using-the-mixins">Using the mixins<a class="anchor-link" href="#using-the-mixins" aria-label="Link to Using the mixins"></a></h3>
     <p>The <code>rfs()</code> mixin has shorthands for <code>font-size</code>, <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>, <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>. See the example below for source Sass and compiled CSS.</p>
-    <pre><code class="language-scss">.title {
+    <CodeWrapper code=".title {
   @include font-size(4rem);
 }
-    </code></pre>
-    <pre><code class="language-css">.title {
+" lang="scss" />
+    <CodeWrapper code=".title {
   font-size: calc(1.525rem + 3.3vw);
 }
 
@@ -24,17 +24,17 @@
     font-size: 4rem;
   }
 }
-    </code></pre>
+" lang="css" />
     <p>Any other property can be passed to the <code>rfs()</code> mixin like this:</p>
-    <pre><code class="language-scss">.selector {
+    <CodeWrapper code=".selector {
   @include rfs(4rem, border-radius);
 }
-    </code></pre>
+" lang="scss" />
     <p><code>!important</code> can also just be added to whatever value you want:</p>
-    <pre><code class="language-scss">.selector {
+    <CodeWrapper code=".selector {
   @include padding(2.5rem !important);
 }
-    </code></pre>
+" lang="scss" />
     <h3 id="using-the-functions">Using the functions<a class="anchor-link" href="#using-the-functions" aria-label="Link to Using the functions"></a></h3>
     <p>When you don’t want to use the includes, there are also two functions:</p>
     <ul>
@@ -42,20 +42,20 @@
     <li><code>rfs-fluid-value()</code> returns the fluid version of a value if the property needs rescaling.</li>
     </ul>
     <p>In this example, we use one of Bootstrap’s built-in <a href="/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.</p>
-    <pre><code class="language-scss">.selector {
+    <CodeWrapper code=".selector {
   @include media-breakpoint-down(lg) {
     padding: rfs-fluid-value(2rem);
     font-size: rfs-fluid-value(1.125rem);
   }
 }
-    </code></pre>
-    <pre><code class="language-css">@media (max-width: 991.98px) {
+" lang="scss" />
+    <CodeWrapper code="@media (max-width: 991.98px) {
   .selector {
     padding: calc(1.325rem + 0.9vw);
     font-size: 1.125rem; /* 1.125rem is small enough, so RFS won’t rescale this */
   }
 }
-    </code></pre>
+" lang="css" />
     <h2 id="extended-documentation">Extended documentation<a class="anchor-link" href="#extended-documentation" aria-label="Link to Extended documentation"></a></h2>
     <p>RFS is a separate project under the Bootstrap organization. More about RFS and its configuration can be found on its <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub repository</a>.</p>
   </article>

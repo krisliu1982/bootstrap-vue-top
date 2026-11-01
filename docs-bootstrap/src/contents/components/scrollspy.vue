@@ -51,7 +51,7 @@
         <h4 id="scrollspyHeading5">Fifth heading</h4>
         <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It’s repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
       </div>' />
-    <pre><code class="language-html">&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
+    <CodeWrapper code='&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar bg-body-tertiary px-3 mb-3&quot;&gt;
   &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
   &lt;ul class=&quot;nav nav-pills&quot;&gt;
     &lt;li class=&quot;nav-item&quot;&gt;
@@ -82,8 +82,7 @@
   &lt;p&gt;...&lt;/p&gt;
   &lt;h4 id=&quot;scrollspyHeading5&quot;&gt;Fifth heading&lt;/h4&gt;
   &lt;p&gt;...&lt;/p&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
     <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
     <Example :showMarkup="false" code='<div class="row">
@@ -145,7 +144,7 @@
       </div>
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-4&quot;&gt;
     &lt;nav id=&quot;navbar-example3&quot; class=&quot;h-100 flex-column align-items-stretch pe-4 border-end&quot;&gt;
       &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
@@ -196,8 +195,7 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="list-group">List group<a class="anchor-link" href="#list-group" aria-label="Link to List group"></a></h3>
     <p>Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
     <Example :showMarkup="false" code='<div class="row">
@@ -223,7 +221,7 @@
       </div>
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-4&quot;&gt;
     &lt;div id=&quot;list-example&quot; class=&quot;list-group&quot;&gt;
       &lt;a class=&quot;list-group-item list-group-item-action&quot; href=&quot;#list-item-1&quot;&gt;Item 1&lt;/a&gt;
@@ -244,8 +242,7 @@
       &lt;p&gt;...&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
     <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current document. Scroll the area and watch the <code>.active</code> class change.</p>
     <Example :showMarkup="false" code='<div class="row">
@@ -274,7 +271,7 @@
       </div>
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-4&quot;&gt;
     &lt;div id=&quot;simple-list-example&quot; class=&quot;d-flex flex-column gap-2 simple-list-example-scrollspy text-center&quot;&gt;
       &lt;a class=&quot;p-1 rounded&quot; href=&quot;#simple-list-item-1&quot;&gt;Item 1&lt;/a&gt;
@@ -298,22 +295,21 @@
       &lt;p&gt;...&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h2 id="non-visible-elements">Non-visible elements<a class="anchor-link" href="#non-visible-elements" aria-label="Link to Non-visible elements"></a></h2>
     <p>Target elements that aren’t visible will be ignored and their corresponding nav items won’t receive an <code>.active</code> class. Scrollspy instances initialized in a non-visible wrapper will ignore all target elements. Use the <code>refresh</code> method to check for observable elements once the wrapper becomes visible.</p>
-    <pre><code class="language-js">document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle=&quot;tab&quot;]&#39;).forEach(el =&gt; {
+    <CodeWrapper code="document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle=&quot;tab&quot;]&#39;).forEach(el =&gt; {
   el.addEventListener(&#39;shown.bs.tab&#39;, () =&gt; {
     const target = el.getAttribute(&#39;data-bs-target&#39;)
     const scrollElem = document.querySelector(`${target} [data-bs-spy=&quot;scroll&quot;]`)
     bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
   })
 })
-    </code></pre>
+" lang="javascript" />
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-bs-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-bs-target</code> attribute with the <code>id</code> or class name of the parent element of any Bootstrap <code>.nav</code> component.</p>
-    <pre><code class="language-html">&lt;body data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example&quot;&gt;
+    <CodeWrapper code='&lt;body data-bs-spy=&quot;scroll&quot; data-bs-target=&quot;#navbar-example&quot;&gt;
   ...
   &lt;div id=&quot;navbar-example&quot;&gt;
     &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
@@ -321,13 +317,12 @@
     &lt;/ul&gt;
   &lt;/div&gt;
   ...
-&lt;/body&gt;
-    </code></pre>
+&lt;/body&gt;' lang="html" />
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <pre><code class="language-js">const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    <CodeWrapper code="const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: &#39;#navbar-example&#39;
 })
-    </code></pre>
+" lang="javascript" />
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
     <table class="table">
@@ -394,11 +389,11 @@
     </tr>
     </tbody></table>
     </div><p>Here’s an example using the refresh method:</p>
-    <pre><code class="language-js">const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
+    <CodeWrapper code="const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
 dataSpyList.forEach(dataSpyEl =&gt; {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
 })
-    </code></pre>
+" lang="javascript" />
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
 <div class="table-responsive"><table class="table">
     <thead>
@@ -413,10 +408,10 @@ dataSpyList.forEach(dataSpyEl =&gt; {
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
+    <CodeWrapper code="const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;)
 firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
   // do something...
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>

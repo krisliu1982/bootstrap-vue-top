@@ -181,7 +181,7 @@
           </div>
         </div>
       </div>' /><p>If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map. <a href="/customize/sass#maps-and-loops">Read our Sass maps and loops docs</a> or <a href="/utilities/api#modify-utilities">our Modify utilities docs</a> for details.</p>
-    <pre><code class="language-scss">$utilities: map-merge(
+    <CodeWrapper code="$utilities: map-merge(
   $utilities,
   (
     &quot;order&quot;: map-merge(
@@ -198,7 +198,7 @@
     ),
   )
 );
-    </code></pre>
+" lang="scss" />
     <h3 id="offsetting-columns">Offsetting columns<a class="anchor-link" href="#offsetting-columns" aria-label="Link to Offsetting columns"></a></h3>
     <p>You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="/utilities/spacing">margin utilities</a>. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</p>
     <h4 id="offset-classes">Offset classes</h4>

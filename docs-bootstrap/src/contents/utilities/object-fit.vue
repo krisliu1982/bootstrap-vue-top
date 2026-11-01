@@ -28,12 +28,11 @@
     <Placeholder width="140" height="80" class="object-fit-xl-contain border rounded" text="Contain on xl" markup="img" />
     <Placeholder width="140" height="80" class="object-fit-xxl-contain border rounded" text="Contain on xxl" markup="img" />' /><h2 id="video">Video<a class="anchor-link" href="#video" aria-label="Link to Video"></a></h2>
     <p>The <code>.object-fit-{value}</code> and responsive <code>.object-fit-{breakpoint}-{value}</code> utilities also work on <code>&lt;video&gt;</code> elements.</p>
-    <pre><code class="language-html">&lt;video src=&quot;...&quot; class=&quot;object-fit-contain&quot; autoplay&gt;&lt;/video&gt;
+    <CodeWrapper code='&lt;video src=&quot;...&quot; class=&quot;object-fit-contain&quot; autoplay&gt;&lt;/video&gt;
 &lt;video src=&quot;...&quot; class=&quot;object-fit-cover&quot; autoplay&gt;&lt;/video&gt;
 &lt;video src=&quot;...&quot; class=&quot;object-fit-fill&quot; autoplay&gt;&lt;/video&gt;
 &lt;video src=&quot;...&quot; class=&quot;object-fit-scale&quot; autoplay&gt;&lt;/video&gt;
-&lt;video src=&quot;...&quot; class=&quot;object-fit-none&quot; autoplay&gt;&lt;/video&gt;
-    </code></pre>
+&lt;video src=&quot;...&quot; class=&quot;object-fit-none&quot; autoplay&gt;&lt;/video&gt;' lang="html" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>Object fit utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>

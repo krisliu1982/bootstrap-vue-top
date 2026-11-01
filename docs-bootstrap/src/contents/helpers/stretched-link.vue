@@ -8,7 +8,7 @@
     <p>Cards have <code>position: relative</code> by default in Bootstrap, so in this case you can safely add the <code>.stretched-link</code> class to a link in the card without any other HTML changes.</p>
     <p>Multiple links and tap targets are not recommended with stretched links. However, some <code>position</code> and <code>z-index</code> styles can help should this be required.</p>
     <Example code='<div class="card" style="width: 18rem;">
-        <Placeholder width="100%" height="180" class="card-img-top" text={false} title="Card image cap" />
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" title="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">Card with stretched link</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -16,7 +16,7 @@
         </div>
       </div>' /><p>Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching outside the parent element.</p>
     <Example code='<div class="d-flex position-relative">
-        <Placeholder width="144" height="144" class="flex-shrink-0 me-3" text={false} title="Generic placeholder image22222" />
+        <Placeholder width="144" height="144" class="flex-shrink-0 me-3" :text="false" title="Generic placeholder image22222" />
         <div>
           <h5 class="mt-0">Custom component with stretched link</h5>
           <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
@@ -24,7 +24,7 @@
         </div>
       </div>' /><Example code='<div class="row g-0 bg-body-secondary position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
-          <Placeholder width="100%" height="200" class="w-100" text={false} title="Generic placeholder image" />
+          <Placeholder width="100%" height="200" class="w-100" :text="false" title="Generic placeholder image" />
         </div>
         <div class="col-md-6 p-4 ps-md-0">
           <h5 class="mt-0">Columns with stretched link</h5>
@@ -40,7 +40,7 @@
     <li>A <code>filter</code> value other than <code>none</code> or a <code>will-change</code> value of <code>filter</code> (only works on Firefox)</li>
     </ul>
     <Example code='<div class="card" style="width: 18rem;">
-        <Placeholder width="100%" height="180" class="card-img-top" text={false} title="Card image cap" />
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" title="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">Card with stretched links</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>

@@ -8,7 +8,7 @@
     <Example code='<h2 class="visually-hidden">Title for screen readers</h2>
       <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
       <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>' /><p>Both <code>visually-hidden</code> and <code>visually-hidden-focusable</code> can also be used as mixins.</p>
-    <pre><code class="language-scss">// Usage as a mixin
+    <CodeWrapper code="// Usage as a mixin
 
 .visually-hidden-title {
   @include visually-hidden;
@@ -17,6 +17,6 @@
 .skip-navigation {
   @include visually-hidden-focusable;
 }
-    </code></pre>
+" lang="scss" />
   </article>
 </template>

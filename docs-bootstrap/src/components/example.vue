@@ -1,9 +1,9 @@
 <template>
-  <div class="docs-example-snippet docs-code-snippet">
-    <div class="docs-example m-0 border-0" :class="{ [props.class]: props.class !== null }" v-html="props.code">
+  <div class="docs-code-snippet">
+    <div class="docs-example border" :class="{ [props.class]: props.class !== null }" v-html="props.code">
     </div>
     <template v-if="props.showMarkup">
-      <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-top border-bottom">
+      <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
         <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
         <div class="ms-auto">
           <BiCheckLg v-if="isCopy" class="text-success" />

@@ -9,7 +9,7 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the two.</p>
     <Example :showMarkup="false" class="docs-example-placeholder-cards d-flex justify-content-around" code='<div class="card">
-        <Placeholder width="100%" height="180" class="card-img-top" text={false} background="#20c997" />
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" background="#20c997" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -18,7 +18,7 @@
       </div>
 
       <div class="card" aria-hidden="true">
-        <Placeholder width="100%" height="180" class="card-img-top" text={false} />
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" />
         <div class="card-body">
           <div class="h5 card-title placeholder-glow">
             <span class="placeholder col-6"></span>
@@ -33,7 +33,7 @@
           <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
         </div>
       </div>' />
-    <pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;card&quot;&gt;
   &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
 
   &lt;div class=&quot;card-body&quot;&gt;
@@ -58,8 +58,7 @@
     &lt;/p&gt;
     &lt;a class=&quot;btn btn-primary disabled placeholder col-6&quot; aria-disabled=&quot;true&quot;&gt;&lt;/a&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text inside an element or be added as a modifier class to an existing component.</p>
     <p>We apply additional styling to <code>.btn</code>s via <code>::before</code> to ensure the <code>height</code> is respected. You may extend this pattern for other situations as needed, or add a <code>&amp;nbsp;</code> within the element to reflect the height when actual text is rendered in its place.</p>

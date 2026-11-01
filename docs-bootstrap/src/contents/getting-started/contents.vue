@@ -7,7 +7,7 @@
     <h2 id="compiled-bootstrap">Compiled Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="Link to Compiled Bootstrap"></a></h2>
     <p>Once downloaded, unzip the compressed folder and you’ll see something like this:</p>
     <p>{/* NOTE: This info is intentionally duplicated in the README. Copy any changes made here over to the README too, but be sure to keep in mind to add the <code>dist</code> folder. */}</p>
-    <pre><code class="language-text">bootstrap/
+    <CodeWrapper code="bootstrap/
 ├── css/
 │   ├── bootstrap-grid.css
 │   ├── bootstrap-grid.css.map
@@ -54,7 +54,7 @@
     ├── bootstrap.js.map
     ├── bootstrap.min.js
     └── bootstrap.min.js.map
-    </code></pre>
+" lang="text" />
     <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). <a href="https://web.dev/articles/source-maps">Source maps</a> (<code>bootstrap.*.map</code>) are available for use with certain browsers’ developer tools. Bundled JS files (<code>bootstrap.bundle.js</code> and minified <code>bootstrap.bundle.min.js</code>) include <a href="https://popper.js.org/docs/v2/">Popper</a>.</p>
     <h3 id="css-files">CSS files<a class="anchor-link" href="#css-files" aria-label="Link to CSS files"></a></h3>
     <p>Bootstrap includes a handful of options for including some or all of our compiled CSS.</p>
@@ -119,7 +119,7 @@
     </tbody></table>
     </div><h2 id="bootstrap-source-code">Bootstrap source code<a class="anchor-link" href="#bootstrap-source-code" aria-label="Link to Bootstrap source code"></a></h2>
     <p>The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:</p>
-    <pre><code class="language-text">bootstrap/
+    <CodeWrapper code="bootstrap/
 ├── dist/
 │   ├── css/
 │   └── js/
@@ -130,7 +130,7 @@
 │              └── examples/
 ├── js/
 └── scss/
-    </code></pre>
+" lang="text" />
     <p>The <code>scss/</code> and <code>js/</code> are the source code for our CSS and JavaScript. The <code>dist/</code> folder includes everything listed in the compiled download section above. The <code>site/content/docs/</code> folder includes the source code for our hosted documentation, including our live examples of Bootstrap usage.</p>
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
   </article>

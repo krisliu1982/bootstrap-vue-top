@@ -280,8 +280,8 @@
     <p>Use data attributes to easily control the position of the carousel. <code>data-bs-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-bs-slide-to</code> to pass a raw slide index to the carousel <code>data-bs-slide-to=&quot;2&quot;</code>, which shifts the slide position to a particular index beginning with <code>0</code>.</p>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Call carousel manually with:</p>
-    <pre><code class="language-js">const carousel = new bootstrap.Carousel(&#39;#myCarousel&#39;)
-    </code></pre>
+    <CodeWrapper code="const carousel = new bootstrap.Carousel(&#39;#myCarousel&#39;)
+" lang="javascript" />
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
        <table class="table">
@@ -332,13 +332,13 @@
     </tbody></table>
     </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>You can create a carousel instance with the carousel constructor, and pass on any additional options. For example, to manually initialize an autoplaying carousel (assuming you’re not using the <code>data-bs-ride=&quot;carousel&quot;</code> attribute in the markup itself) with a specific interval and with touch support disabled, you can use:</p>
-    <pre><code class="language-js">const myCarouselElement = document.querySelector(&#39;#myCarousel&#39;)
+    <CodeWrapper code="const myCarouselElement = document.querySelector(&#39;#myCarousel&#39;)
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 2000,
   touch: false
 })
-    </code></pre>
+" lang="javascript" />
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -409,11 +409,11 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const myCarousel = document.getElementById(&#39;myCarousel&#39;)
+    <CodeWrapper code="const myCarousel = document.getElementById(&#39;myCarousel&#39;)
 
 myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
   // do something...
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>

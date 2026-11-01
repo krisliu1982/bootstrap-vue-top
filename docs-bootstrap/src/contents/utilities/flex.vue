@@ -76,13 +76,12 @@
         <div class="p-2 docs-highlight">Evenly</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex justify-content-start&quot;&gt;...&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex justify-content-start&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex justify-content-end&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex justify-content-center&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex justify-content-between&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex justify-content-around&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;d-flex justify-content-evenly&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;d-flex justify-content-evenly&quot;&gt;...&lt;/div&gt;' lang="html" />
     <p>Responsive variations also exist for <code>justify-content</code>.</p>
     <ul>
               <template v-for="breakpoint in data['breakpoints']">
@@ -122,12 +121,11 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-items-start&quot;&gt;...&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-items-start&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex align-items-end&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex align-items-center&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;d-flex align-items-baseline&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;d-flex align-items-stretch&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;d-flex align-items-stretch&quot;&gt;...&lt;/div&gt;' lang="html" />
     <p>Responsive variations also exist for <code>align-items</code>.</p>
     <ul>
              <template v-for="breakpoint in data['breakpoints']">
@@ -166,12 +164,11 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;align-self-start&quot;&gt;Aligned flex item&lt;/div&gt;
+    <CodeWrapper code='&lt;div class=&quot;align-self-start&quot;&gt;Aligned flex item&lt;/div&gt;
 &lt;div class=&quot;align-self-end&quot;&gt;Aligned flex item&lt;/div&gt;
 &lt;div class=&quot;align-self-center&quot;&gt;Aligned flex item&lt;/div&gt;
 &lt;div class=&quot;align-self-baseline&quot;&gt;Aligned flex item&lt;/div&gt;
-&lt;div class=&quot;align-self-stretch&quot;&gt;Aligned flex item&lt;/div&gt;
-    </code></pre>
+&lt;div class=&quot;align-self-stretch&quot;&gt;Aligned flex item&lt;/div&gt;' lang="html" />
     <p>Responsive variations also exist for <code>align-self</code>.</p>
     <ul>
              <template v-for="breakpoint in data['breakpoints']">
@@ -247,10 +244,9 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex flex-nowrap&quot;&gt;
   ...
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex flex-wrap">
         <div class="p-2">Flex item 1</div>
@@ -269,10 +265,9 @@
         <div class="p-2">Flex item 14</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex flex-wrap&quot;&gt;
   ...
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex flex-wrap-reverse">
         <div class="p-2">Flex item 1</div>
@@ -291,10 +286,9 @@
         <div class="p-2">Flex item 14</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap-reverse&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex flex-wrap-reverse&quot;&gt;
   ...
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <p>Responsive variations also exist for <code>flex-wrap</code>.</p>
     <ul>
 
@@ -338,10 +332,9 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-start flex-wrap&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-start flex-wrap&quot;&gt;
   ...
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex align-content-end flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
@@ -361,8 +354,7 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-end flex-wrap&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-end flex-wrap&quot;&gt;...&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex align-content-center flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
@@ -382,8 +374,7 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-center flex-wrap&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-center flex-wrap&quot;&gt;...&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex align-content-between flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
@@ -403,8 +394,7 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-between flex-wrap&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-between flex-wrap&quot;&gt;...&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex align-content-around flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
@@ -424,8 +414,7 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-around flex-wrap&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-around flex-wrap&quot;&gt;...&lt;/div&gt;' lang="html" />
     <div class="docs-example docs-example-flex">
       <div class="d-flex align-content-stretch flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
@@ -445,8 +434,7 @@
         <div class="p-2">Flex item</div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;d-flex align-content-stretch flex-wrap&quot;&gt;...&lt;/div&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;div class=&quot;d-flex align-content-stretch flex-wrap&quot;&gt;...&lt;/div&gt;' lang="html" />
     <p>Responsive variations also exist for <code>align-content</code>.</p>
     <ul>
 

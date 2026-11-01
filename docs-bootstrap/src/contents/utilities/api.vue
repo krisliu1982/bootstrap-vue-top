@@ -85,7 +85,7 @@
     </tbody></table>
     </div><h2 id="api-explained">API explained<a class="anchor-link" href="#api-explained" aria-label="Link to API explained"></a></h2>
     <p>All utility variables are added to the <code>$utilities</code> variable within our <code>_utilities.scss</code> stylesheet. Each group of utilities looks something like this:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
     values: (
@@ -97,48 +97,48 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Which outputs the following:</p>
-    <pre><code class="language-css">.opacity-0 { opacity: 0; }
+    <CodeWrapper code=".opacity-0 { opacity: 0; }
 .opacity-25 { opacity: .25; }
 .opacity-50 { opacity: .5; }
 .opacity-75 { opacity: .75; }
 .opacity-100 { opacity: 1; }
-    </code></pre>
+" lang="css" />
     <h3 id="property">Property<a class="anchor-link" href="#property" aria-label="Link to Property"></a></h3>
     <p>The required <code>property</code> key must be set for any utility, and it must contain a valid CSS property. This property is used in the generated utility’s ruleset. When the <code>class</code> key is omitted, it also serves as the default class name. Consider the <code>text-decoration</code> utility:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;text-decoration&quot;: (
     property: text-decoration,
     values: none underline line-through
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.text-decoration-none { text-decoration: none !important; }
+    <CodeWrapper code=".text-decoration-none { text-decoration: none !important; }
 .text-decoration-underline { text-decoration: underline !important; }
 .text-decoration-line-through { text-decoration: line-through !important; }
-    </code></pre>
+" lang="css" />
     <h3 id="values">Values<a class="anchor-link" href="#values" aria-label="Link to Values"></a></h3>
     <p>Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map (set in the utilities or in a Sass variable).</p>
     <p>As a list, like with <a href="/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:</p>
-    <pre><code class="language-scss">values: none underline line-through
-    </code></pre>
+    <CodeWrapper code="values: none underline line-through
+" lang="scss" />
     <p>As a map, like with <a href="/utilities/opacity"><code>opacity</code> utilities</a>:</p>
-    <pre><code class="language-scss">values: (
+    <CodeWrapper code="values: (
   0: 0,
   25: .25,
   50: .5,
   75: .75,
   100: 1,
 )
-    </code></pre>
+" lang="scss" />
     <p>As a Sass variable that sets the list or map, as in our <a href="/utilities/position"><code>position</code> utilities</a>:</p>
-    <pre><code class="language-scss">values: $position-values
-    </code></pre>
+    <CodeWrapper code="values: $position-values
+" lang="scss" />
     <h3 id="class">Class<a class="anchor-link" href="#class" aria-label="Link to Class"></a></h3>
     <p>Use the <code>class</code> option to change the class prefix used in the compiled CSS. For example, to change from <code>.opacity-*</code> to <code>.o-*</code>:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
     class: o,
@@ -151,16 +151,16 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.o-0 { opacity: 0 !important; }
+    <CodeWrapper code=".o-0 { opacity: 0 !important; }
 .o-25 { opacity: .25 !important; }
 .o-50 { opacity: .5 !important; }
 .o-75 { opacity: .75 !important; }
 .o-100 { opacity: 1 !important; }
-    </code></pre>
+" lang="css" />
     <p>If <code>class: null</code>, generates classes for each of the <code>values</code> keys:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;visibility&quot;: (
     property: visibility,
     class: null,
@@ -170,15 +170,15 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.visible { visibility: visible !important; }
+    <CodeWrapper code=".visible { visibility: visible !important; }
 .invisible { visibility: hidden !important; }
-    </code></pre>
+" lang="css" />
     <h3 id="css-variable-utilities">CSS variable utilities<a class="anchor-link" href="#css-variable-utilities" aria-label="Link to CSS variable utilities"></a></h3>
     <p>Set the <code>css-var</code> boolean option to <code>true</code> and the API will generate local CSS variables for the given selector instead of the usual <code>property: value</code> rules. Add an optional <code>css-variable-name</code> to set a different CSS variable name than the class name.</p>
     <p>Consider our <code>.text-opacity-*</code> utilities. If we add the <code>css-variable-name</code> option, we&#39;ll get a custom output.</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;text-opacity&quot;: (
     css-var: true,
     css-variable-name: text-alpha,
@@ -191,16 +191,16 @@
     )
   ),
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.text-opacity-25 { --bs-text-alpha: .25; }
+    <CodeWrapper code=".text-opacity-25 { --bs-text-alpha: .25; }
 .text-opacity-50 { --bs-text-alpha: .5; }
 .text-opacity-75 { --bs-text-alpha: .75; }
 .text-opacity-100 { --bs-text-alpha: 1; }
-    </code></pre>
+" lang="css" />
     <h3 id="local-css-variables">Local CSS variables<a class="anchor-link" href="#local-css-variables" aria-label="Link to Local CSS variables"></a></h3>
     <p>Use the <code>local-vars</code> option to specify a Sass map that will generate local CSS variables within the utility class’s ruleset. Please note that it may require additional work to consume those local CSS variables in the generated CSS rules. For example, consider our <code>.bg-*</code> utilities:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;background-color&quot;: (
     property: background-color,
     class: bg,
@@ -215,17 +215,17 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.bg-primary {
+    <CodeWrapper code=".bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
-    </code></pre>
+" lang="css" />
     <h3 id="states">States<a class="anchor-link" href="#states" aria-label="Link to States"></a></h3>
     <p>Use the <code>state</code> option to generate pseudo-class variations. Example pseudo-classes are <code>:hover</code> and <code>:focus</code>. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add <code>state: hover</code> and you’ll get <code>.opacity-hover:hover</code> in your compiled CSS.</p>
     <p>Need multiple pseudo-classes? Use a space-separated list of states: <code>state: hover focus</code>.</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
     class: opacity,
@@ -239,17 +239,17 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.opacity-0-hover:hover { opacity: 0 !important; }
+    <CodeWrapper code=".opacity-0-hover:hover { opacity: 0 !important; }
 .opacity-25-hover:hover { opacity: .25 !important; }
 .opacity-50-hover:hover { opacity: .5 !important; }
 .opacity-75-hover:hover { opacity: .75 !important; }
 .opacity-100-hover:hover { opacity: 1 !important; }
-    </code></pre>
+" lang="css" />
     <h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
     <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/layout/breakpoints">all breakpoints</a>.</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
     responsive: true,
@@ -262,9 +262,9 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.opacity-0 { opacity: 0 !important; }
+    <CodeWrapper code=".opacity-0 { opacity: 0 !important; }
 .opacity-25 { opacity: .25 !important; }
 .opacity-50 { opacity: .5 !important; }
 .opacity-75 { opacity: .75 !important; }
@@ -309,10 +309,10 @@
   .opacity-xxl-75 { opacity: .75 !important; }
   .opacity-xxl-100 { opacity: 1 !important; }
 }
-    </code></pre>
+" lang="css" />
     <h3 id="print">Print<a class="anchor-link" href="#print" aria-label="Link to Print"></a></h3>
     <p>Enabling the <code>print</code> option will <strong>also</strong> generate utility classes for print, which are only applied within the <code>@media print { ... }</code> media query.</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
     print: true,
@@ -325,9 +325,9 @@
     )
   )
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">.opacity-0 { opacity: 0 !important; }
+    <CodeWrapper code=".opacity-0 { opacity: 0 !important; }
 .opacity-25 { opacity: .25 !important; }
 .opacity-50 { opacity: .5 !important; }
 .opacity-75 { opacity: .75 !important; }
@@ -340,24 +340,24 @@
   .opacity-print-75 { opacity: .75 !important; }
   .opacity-print-100 { opacity: 1 !important; }
 }
-    </code></pre>
+" lang="css" />
     <h2 id="importance">Importance<a class="anchor-link" href="#importance" aria-label="Link to Importance"></a></h2>
     <p>All utilities generated by the API include <code>!important</code> to ensure they override components and modifier classes as intended. You can toggle this setting globally with the <code>$enable-important-utilities</code> variable (defaults to <code>true</code>).</p>
     <h2 id="using-the-api">Using the API<a class="anchor-link" href="#using-the-api" aria-label="Link to Using the API"></a></h2>
     <p>Now that you’re familiar with how the utilities API works, learn how to add your own custom classes and modify our default utilities.</p>
     <h3 id="override-utilities">Override utilities<a class="anchor-link" href="#override-utilities" aria-label="Link to Override utilities"></a></h3>
     <p>Override existing utilities by using the same key. For example, if you want additional responsive overflow utility classes, you can do this:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;overflow&quot;: (
     responsive: true,
     property: overflow,
     values: visible hidden scroll auto,
   ),
 );
-    </code></pre>
+" lang="scss" />
     <h3 id="add-utilities">Add utilities<a class="anchor-link" href="#add-utilities" aria-label="Link to Add utilities"></a></h3>
     <p>New utilities can be added to the default <code>$utilities</code> map with a <code>map-merge</code>. Make sure our required Sass files and <code>_utilities.scss</code> are imported first, then use the <code>map-merge</code> to add your additional utilities. For example, here’s how to add a responsive <code>cursor</code> utility with three values.</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -377,10 +377,10 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <h3 id="modify-utilities">Modify utilities<a class="anchor-link" href="#modify-utilities" aria-label="Link to Modify utilities"></a></h3>
     <p>Modify existing utilities in the default <code>$utilities</code> map with <code>map-get</code> and <code>map-merge</code> functions. In the example below, we’re adding an additional value to the <code>width</code> utilities. Start with an initial <code>map-merge</code> and then specify which utility you want to modify. From there, fetch the nested <code>&quot;width&quot;</code> map with <code>map-get</code> to access and modify the utility’s options and values.</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -403,10 +403,10 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <h4 id="enable-responsive">Enable responsive</h4>
     <p>You can enable responsive classes for an existing set of utilities that are not currently responsive by default. For example, to make the <code>border</code> classes responsive:</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -424,9 +424,9 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <p>This will now generate responsive variations of <code>.border</code> and <code>.border-0</code> for each breakpoint. Your generated CSS will look like this:</p>
-    <pre><code class="language-css">.border { ... }
+    <CodeWrapper code=".border { ... }
 .border-0 { ... }
 
 @media (min-width: 576px) {
@@ -453,10 +453,10 @@ $utilities: map-merge(
   .border-xxl { ... }
   .border-xxl-0 { ... }
 }
-    </code></pre>
+" lang="css" />
     <h4 id="rename-utilities">Rename utilities</h4>
     <p>Missing v4 utilities, or used to another naming convention? The utilities API can be used to override the resulting <code>class</code> of a given utility—for example, to rename <code>.ms-*</code> utilities to oldish <code>.ml-*</code>:</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -474,10 +474,10 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <h3 id="remove-utilities">Remove utilities<a class="anchor-link" href="#remove-utilities" aria-label="Link to Remove utilities"></a></h3>
     <p>Remove any of the default utilities with the <a href="https://sass-lang.com/documentation/modules/map/#remove"><code>map-remove()</code> Sass function</a>.</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -488,9 +488,9 @@ $utilities: map-merge(
 $utilities: map-remove($utilities, &quot;width&quot;, &quot;float&quot;);
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <p>You can also use the <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a> and set the group key to <code>null</code> to remove the utility.</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -505,10 +505,10 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <h3 id="add-remove-modify">Add, remove, modify<a class="anchor-link" href="#add-remove-modify" aria-label="Link to Add, remove, modify"></a></h3>
     <p>You can add, remove, and modify many utilities all at once with the <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a>. Here’s how you can combine the previous examples into one larger map.</p>
-    <pre><code class="language-scss">@import &quot;bootstrap/scss/functions&quot;;
+    <CodeWrapper code="@import &quot;bootstrap/scss/functions&quot;;
 @import &quot;bootstrap/scss/variables&quot;;
 @import &quot;bootstrap/scss/variables-dark&quot;;
 @import &quot;bootstrap/scss/maps&quot;;
@@ -536,10 +536,10 @@ $utilities: map-merge(
 );
 
 @import &quot;bootstrap/scss/utilities/api&quot;;
-    </code></pre>
+" lang="scss" />
     <h4 id="remove-utility-in-rtl">Remove utility in RTL</h4>
     <p>Some edge cases make <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL styling difficult</a>, such as line breaks in Arabic. Thus utilities can be dropped from RTL output by setting the <code>rtl</code> option to <code>false</code>:</p>
-    <pre><code class="language-scss">$utilities: (
+    <CodeWrapper code="$utilities: (
   &quot;word-wrap&quot;: (
     property: word-wrap word-break,
     class: text,
@@ -547,15 +547,15 @@ $utilities: map-merge(
     rtl: false
   ),
 );
-    </code></pre>
+" lang="scss" />
     <p>Output:</p>
-    <pre><code class="language-css">/* rtl:begin:remove */
+    <CodeWrapper code="/* rtl:begin:remove */
 .text-break {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
 /* rtl:end:remove */
-    </code></pre>
+" lang="css" />
     <p>This doesn’t output anything in RTL, thanks to <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">the RTLCSS <code>remove</code> control directive</a>.</p>
   </article>
 </template>

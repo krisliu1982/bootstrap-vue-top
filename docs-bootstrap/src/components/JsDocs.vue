@@ -20,8 +20,8 @@ if (props.name === 'live-alert') {
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
-    ``<div class="alert alert-${type} alert-dismissible" role="alert">``,
-    ``   <div>${message}</div>``,
+    \`<div class="alert alert-\${type} alert-dismissible" role="alert">\`,
+    \`   <div>\${message}</div>\`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
   ].join('')
@@ -50,7 +50,7 @@ if (exampleModal) {
     const modalTitle = exampleModal.querySelector('.modal-title')
     const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-    modalTitle.textContent = ``New message to ${recipient}``
+    modalTitle.textContent = \`\`New message to \${recipient}\`\`
     modalBodyInput.value = recipient
   })
 }`

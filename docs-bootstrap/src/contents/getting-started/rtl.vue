@@ -16,11 +16,10 @@
     <li>Add an appropriate <code>lang</code> attribute, like <code>lang=&quot;ar&quot;</code>, on the <code>&lt;html&gt;</code> element.</li>
     </ol>
     <p>From there, you’ll need to include an RTL version of our CSS. For example, here’s the stylesheet for our compiled and minified CSS with RTL enabled:</p>
-    <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css&quot; integrity=&quot;sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW&quot; crossorigin=&quot;anonymous&quot;&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css&quot; integrity=&quot;sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW&quot; crossorigin=&quot;anonymous&quot;&gt;' lang="html" />
     <h3 id="starter-template">Starter template<a class="anchor-link" href="#starter-template" aria-label="Link to Starter template"></a></h3>
     <p>You can see the above requirements reflected in this modified RTL starter template.</p>
-    <pre><code class="language-html">&lt;!doctype html&gt;
+    <CodeWrapper code='&lt;!doctype html&gt;
 &lt;html lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
   &lt;head&gt;
     &lt;!-- Required meta tags --&gt;
@@ -46,8 +45,7 @@
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
     --&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-    </code></pre>
+&lt;/html&gt;' lang="html" />
     <h3 id="rtl-examples">RTL examples<a class="anchor-link" href="#rtl-examples" aria-label="Link to RTL examples"></a></h3>
     <p>Get started with one of our several <a href="/examples/#rtl">RTL examples</a>.</p>
     <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
@@ -64,10 +62,10 @@
     <p>When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.</p>
     <h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
     <p>Using <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS value directives</a>, you can make a variable output a different value for RTL. For example, to decrease the weight for <code>$font-weight-bold</code> throughout the codebase, you may use the <code>/*rtl: {value}*/</code> syntax:</p>
-    <pre><code class="language-scss">$font-weight-bold: 700 #{/* rtl:600 */} !default;
-    </code></pre>
+    <CodeWrapper code="$font-weight-bold: 700 #{/* rtl:600 */} !default;
+" lang="scss" />
     <p>Which would output to the following for our default CSS and RTL CSS:</p>
-    <pre><code class="language-css">/* bootstrap.css */
+    <CodeWrapper code="/* bootstrap.css */
 dt {
   font-weight: 700 /* rtl:600 */;
 }
@@ -76,11 +74,11 @@ dt {
 dt {
   font-weight: 600;
 }
-    </code></pre>
+" lang="css" />
     <h3 id="alternative-font-stack">Alternative font stack<a class="anchor-link" href="#alternative-font-stack" aria-label="Link to Alternative font stack"></a></h3>
     <p>In the case you’re using a custom font, be aware that not all fonts support the non-Latin alphabet. To switch from Pan-European to Arabic family, you may need to use <code>/*rtl:insert: {value}*/</code> in your font stack to modify the names of font families.</p>
     <p>For example, to switch from <code>Helvetica Neue</code> font for LTR to <code>Helvetica Neue Arabic</code> for RTL, your Sass code could look like this:</p>
-    <pre><code class="language-scss">$font-family-sans-serif:
+    <CodeWrapper code="$font-family-sans-serif:
 Helvetica Neue #{&quot;/* rtl:insert:Arabic */&quot;},
 // Cross-platform generic font family (default user interface font)
 system-ui,
@@ -100,10 +98,10 @@ Arial,
 sans-serif,
 // Emoji fonts
 &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
-    </code></pre>
+" lang="scss" />
     <h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
     <p>Need both LTR and RTL on the same page? Thanks to <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS String Maps</a>, this is pretty straightforward. Wrap your <code>@import</code>s with a class, and set a custom rename rule for RTLCSS:</p>
-    <pre><code class="language-scss">/* rtl:begin:options: {
+    <CodeWrapper code="/* rtl:begin:options: {
   &quot;autoRename&quot;: true,
   &quot;stringMap&quot;:[ {
     &quot;name&quot;: &quot;ltr-rtl&quot;,
@@ -120,7 +118,7 @@ sans-serif,
   @import &quot;../node_modules/bootstrap/scss/bootstrap&quot;;
 }
 /*rtl:end:options*/
-    </code></pre>
+" lang="scss" />
     <p>After running Sass then RTLCSS, each selector in your CSS files will be prepended by <code>.ltr</code>, and <code>.rtl</code> for RTL files. Now you’re able to use both files on the same page, and simply use <code>.ltr</code> or <code>.rtl</code> on your components wrappers to use one or the other direction.</p>
     <Callout type="warning">
     <p><strong>Edge cases and known limitations</strong> to consider when working with a combined LTR and RTL implementation:</p>

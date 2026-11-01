@@ -61,7 +61,7 @@
     <p>Since Bootstrap is developed to be mobile first, we use a handful of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a> to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
     <h3 id="min-width">Min-width<a class="anchor-link" href="#min-width" aria-label="Link to Min-width"></a></h3>
     <p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.</p>
-    <pre><code class="language-scss">// Source mixins
+    <CodeWrapper code="// Source mixins
 
 // No media query necessary for xs breakpoint as it’s effectively `@media (min-width: 0) { ... }`
 @include media-breakpoint-up(sm) { ... }
@@ -81,9 +81,9 @@
     display: block;
   }
 }
-    </code></pre>
+" lang="scss" />
     <p>These Sass mixins translate in our compiled CSS using the values declared in our Sass variables. For example:</p>
-    <pre><code class="language-scss">// X-Small devices (portrait phones, less than 576px)
+    <CodeWrapper code="// X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
@@ -100,10 +100,10 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) { ... }
-    </code></pre>
+" lang="scss" />
     <h3 id="max-width">Max-width<a class="anchor-link" href="#max-width" aria-label="Link to Max-width"></a></h3>
     <p>We occasionally use media queries that go in the other direction (the given screen size <em>or smaller</em>):</p>
-    <pre><code class="language-scss">// No media query necessary for xs breakpoint as it’s effectively `@media (max-width: 0) { ... }`
+    <CodeWrapper code="// No media query necessary for xs breakpoint as it’s effectively `@media (max-width: 0) { ... }`
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
 @include media-breakpoint-down(lg) { ... }
@@ -116,9 +116,9 @@
     display: block;
   }
 }
-    </code></pre>
+" lang="scss" />
     <p>These mixins take those declared breakpoints, subtract <code>.02px</code> from them, and use them as our <code>max-width</code> values. For example:</p>
-    <pre><code class="language-scss">// `xs` returns only a ruleset and no media query
+    <CodeWrapper code="// `xs` returns only a ruleset and no media query
 // ... { ... }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
@@ -135,27 +135,27 @@
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) { ... }
-    </code></pre>
+" lang="scss" />
     <Callout name="info-mediaqueries-breakpoints" type="warning" /><h3 id="single-breakpoint">Single breakpoint<a class="anchor-link" href="#single-breakpoint" aria-label="Link to Single breakpoint"></a></h3>
     <p>There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.</p>
-    <pre><code class="language-scss">@include media-breakpoint-only(xs) { ... }
+    <CodeWrapper code="@include media-breakpoint-only(xs) { ... }
 @include media-breakpoint-only(sm) { ... }
 @include media-breakpoint-only(md) { ... }
 @include media-breakpoint-only(lg) { ... }
 @include media-breakpoint-only(xl) { ... }
 @include media-breakpoint-only(xxl) { ... }
-    </code></pre>
+" lang="scss" />
     <p>For example the <code>@include media-breakpoint-only(md) { ... }</code> will result in :</p>
-    <pre><code class="language-scss">@media (min-width: 768px) and (max-width: 991.98px) { ... }
-    </code></pre>
+    <CodeWrapper code="@media (min-width: 768px) and (max-width: 991.98px) { ... }
+" lang="scss" />
     <h3 id="between-breakpoints">Between breakpoints<a class="anchor-link" href="#between-breakpoints" aria-label="Link to Between breakpoints"></a></h3>
     <p>Similarly, media queries may span multiple breakpoint widths:</p>
-    <pre><code class="language-scss">@include media-breakpoint-between(md, xl) { ... }
-    </code></pre>
+    <CodeWrapper code="@include media-breakpoint-between(md, xl) { ... }
+" lang="scss" />
     <p>Which results in:</p>
-    <pre><code class="language-scss">// Example
+    <CodeWrapper code="// Example
 // Apply styles starting from medium devices and up to extra large devices
 @media (min-width: 768px) and (max-width: 1199.98px) { ... }
-    </code></pre>
+" lang="scss" />
   </article>
 </template>

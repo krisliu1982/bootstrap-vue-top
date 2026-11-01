@@ -225,7 +225,7 @@
         </div>
       </div>
     </div>
-    <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-4&quot;&gt;
     &lt;div class=&quot;list-group&quot; id=&quot;list-tab&quot; role=&quot;tablist&quot;&gt;
       &lt;a class=&quot;list-group-item list-group-item-action active&quot; id=&quot;list-home-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-home&quot; role=&quot;tab&quot; aria-controls=&quot;list-home&quot;&gt;Home&lt;/a&gt;
@@ -242,11 +242,10 @@
       &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;list-settings-list&quot;&gt;...&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="using-data-attributes">Using data attributes<a class="anchor-link" href="#using-data-attributes" aria-label="Link to Using data attributes"></a></h3>
     <p>You can activate a list group navigation without writing any JavaScript by simply specifying <code>data-bs-toggle=&quot;list&quot;</code> or on an element. Use these data attributes on <code>.list-group-item</code>.</p>
-    <pre><code class="language-html">&lt;div role=&quot;tabpanel&quot;&gt;
+    <CodeWrapper code='&lt;div role=&quot;tabpanel&quot;&gt;
   &lt;!-- List group --&gt;
   &lt;div class=&quot;list-group&quot; id=&quot;myList&quot; role=&quot;tablist&quot;&gt;
     &lt;a class=&quot;list-group-item list-group-item-action active&quot; data-bs-toggle=&quot;list&quot; href=&quot;#home&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
@@ -262,11 +261,10 @@
     &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable tabbable list item via JavaScript (each list item needs to be activated individually):</p>
-    <pre><code class="language-js">const triggerTabList = document.querySelectorAll(&#39;#myTab a&#39;)
+    <CodeWrapper code="const triggerTabList = document.querySelectorAll(&#39;#myTab a&#39;)
 triggerTabList.forEach(triggerEl =&gt; {
   const tabTrigger = new bootstrap.Tab(triggerEl)
 
@@ -275,28 +273,27 @@ triggerTabList.forEach(triggerEl =&gt; {
     tabTrigger.show()
   })
 })
-    </code></pre>
+" lang="javascript" />
     <p>You can activate individual list item in several ways:</p>
-    <pre><code class="language-js">const triggerEl = document.querySelector(&#39;#myTab a[href=&quot;#profile&quot;]&#39;)
+    <CodeWrapper code="const triggerEl = document.querySelector(&#39;#myTab a[href=&quot;#profile&quot;]&#39;)
 bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
 
 const triggerFirstTabEl = document.querySelector(&#39;#myTab li:first-child a&#39;)
 bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
-    </code></pre>
+" lang="javascript" />
     <h3 id="fade-effect">Fade effect<a class="anchor-link" href="#fade-effect" aria-label="Link to Fade effect"></a></h3>
     <p>To make tabs panel fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.</p>
-    <pre><code class="language-html">&lt;div class=&quot;tab-content&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;tab-content&quot;&gt;
   &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
   &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt;' lang="html" />
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a tab element.</p>
     <p>You can create a tab instance with the constructor, for example:</p>
-    <pre><code class="language-js">const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
-    </code></pre>
+    <CodeWrapper code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
+" lang="javascript" />
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -355,14 +352,14 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
+    <CodeWrapper code="const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
 tabElms.forEach(tabElm =&gt; {
   tabElm.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     event.target // newly activated tab
     event.relatedTarget // previous active tab
   })
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-code-snippet docs-example-snippet">
-    <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
+  <div class="docs-code-snippet">
+      <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
       <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
         :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
       <div class="ms-auto">

@@ -101,9 +101,9 @@
     <ScssDocs name="alert-modifiers" file="scss/_alert.scss" removeIndentation={false} /><h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
     <h3 id="initialize">Initialize<a class="anchor-link" href="#initialize" aria-label="Link to Initialize"></a></h3>
     <p>Initialize elements as alerts</p>
-    <pre><code class="language-js">const alertList = document.querySelectorAll(&#39;.alert&#39;)
+    <CodeWrapper code="const alertList = document.querySelectorAll(&#39;.alert&#39;)
 const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
-    </code></pre>
+" lang="javascript" />
     <Callout>
     <p>For the sole purpose of dismissing an alert, it isn’t necessary to initialize the component manually via the JS API. By making use of <code>data-bs-dismiss=&quot;alert&quot;</code>, the component will be initialized automatically and properly dismissed.</p>
     <p>See the <a href="#triggers">triggers</a> section for more details.</p>
@@ -111,8 +111,8 @@ const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
     <JsDismiss name="alert" /><p><strong>Note that closing an alert will remove it from the DOM.</strong></p>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <p>You can create an alert instance with the alert constructor, for example:</p>
-    <pre><code class="language-js">const bsAlert = new bootstrap.Alert(&#39;#myAlert&#39;)
-    </code></pre>
+    <CodeWrapper code="const bsAlert = new bootstrap.Alert(&#39;#myAlert&#39;)
+" lang="javascript" />
     <p>This makes an alert listen for click events on descendant elements which have the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute. (Not necessary when using the data-api’s auto-initialization.)</p>
 <div class="table-responsive"><table class="table">
     <thead>
@@ -139,9 +139,9 @@ const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
     </tr>
     </tbody></table>
     </div><p>Basic usage:</p>
-    <pre><code class="language-js">const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
+    <CodeWrapper code="const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
 alert.close()
-    </code></pre>
+" lang="javascript" />
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>Bootstrap’s alert plugin exposes a few events for hooking into alert functionality.</p>
 <div class="table-responsive"><table class="table">
@@ -161,13 +161,13 @@ alert.close()
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const myAlert = document.getElementById(&#39;myAlert&#39;)
+    <CodeWrapper code="const myAlert = document.getElementById(&#39;myAlert&#39;)
 myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
   // do something, for instance, explicitly move focus to the most appropriate element,
   // so it doesn’t get lost/reset to the start of the page
   // document.getElementById(&#39;...&#39;).focus()
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>
 

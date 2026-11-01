@@ -32,12 +32,12 @@
     <Example class="docs-example-ratios" code='<div class="ratio" style="--bs-aspect-ratio: 50%;">
         <div>2x1</div>
       </div>' /><p>This CSS variable makes it easy to modify the aspect ratio across breakpoints. The following is 4x3 to start, but changes to a custom 2x1 at the medium breakpoint.</p>
-    <pre><code class="language-scss">.ratio-4x3 {
+    <CodeWrapper code=".ratio-4x3 {
   @include media-breakpoint-up(md) {
     --bs-aspect-ratio: 50%; // 2x1
   }
 }
-    </code></pre>
+" lang="scss" />
     <Example class="docs-example-ratios docs-example-ratios-breakpoint" code='<div class="ratio ratio-4x3">
         <div>4x3, then 2x1</div>
       </div>' /><h2 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h2>

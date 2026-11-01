@@ -15,11 +15,10 @@
         <Placeholder width="200" height="200" class="rounded" />
       </div>' /><h2 id="picture">Picture<a class="anchor-link" href="#picture" aria-label="Link to Picture"></a></h2>
     <p>If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the <code>.img-*</code> classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</code> tag.</p>
-    <pre><code class="language-html">&lt;picture&gt;
+    <CodeWrapper code='&lt;picture&gt;
   &lt;source srcset=&quot;...&quot; type=&quot;image/svg+xml&quot;&gt;
   &lt;img src=&quot;...&quot; class=&quot;img-fluid img-thumbnail&quot; alt=&quot;...&quot;&gt;
-&lt;/picture&gt;
-    </code></pre>
+&lt;/picture&gt;' lang="html" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Variables are available for image thumbnails.</p>

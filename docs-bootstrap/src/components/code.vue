@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { codeToHtml } from 'shiki'
+import { highlightCode } from './code-highlighter.js'
 
 const html = ref(null);
 
@@ -20,13 +20,6 @@ const props = defineProps({
 });
 
 onMounted(async () => {
-  html.value = await codeToHtml(props.code, {
-    lang: props.lang,
-    themes: {
-      light: 'light-plus',
-      dark: 'dark-plus',
-    },
-    defaultColor: 'light-dark()'
-  });
+  html.value = await highlightCode(props.code, props.lang);
 });
 </script>

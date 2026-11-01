@@ -18,10 +18,9 @@
     <p>For example, consider these <code>:root</code> CSS variables for common <code>&lt;body&gt;</code> styles:</p>
     <ScssDocs name="root-body-variables" file="scss/_root.scss" /><p>In practice, those variables are then applied in Reboot like so:</p>
     <ScssDocs name="reboot-body-rules" file="scss/_reboot.scss" /><p>Which allows you to make real-time customizations however you like:</p>
-    <pre><code class="language-html">&lt;body style=&quot;--bs-body-color: #333;&quot;&gt;
+    <CodeWrapper code='&lt;body style=&quot;--bs-body-color: #333;&quot;&gt;
   &lt;!-- ... --&gt;
-&lt;/body&gt;
-    </code></pre>
+&lt;/body&gt;' lang="html" />
     <h2 id="page-defaults">Page defaults<a class="anchor-link" href="#page-defaults" aria-label="Link to Page defaults"></a></h2>
     <p>The <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> elements are updated to provide better page-wide defaults. More specifically:</p>
     <ul>
@@ -34,7 +33,7 @@
     </ul>
     <h2 id="native-font-stack">Native font stack<a class="anchor-link" href="#native-font-stack" aria-label="Link to Native font stack"></a></h2>
     <p>Bootstrap utilizes a “native font stack” or “system font stack” for optimum text rendering on every device and OS. These system fonts have been designed specifically with today’s devices in mind, with improved rendering on screens, variable font support, and more. Read more about <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">native font stacks in this <em>Smashing Magazine</em> article</a>.</p>
-    <pre><code class="language-scss">$font-family-sans-serif:
+    <CodeWrapper code="$font-family-sans-serif:
 // Cross-platform generic font family (default user interface font)
 system-ui,
 // Safari for macOS and iOS (San Francisco)
@@ -54,7 +53,7 @@ Arial,
 sans-serif,
 // Emoji fonts
 &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
-    </code></pre>
+" lang="scss" />
     <p>Note that because the font stack includes emoji fonts, many common symbol/dingbat Unicode characters will be rendered as multicolored pictographs. Their appearance will vary, depending on the style used in the browser/platform’s native emoji font, and they won’t be affected by any CSS <code>color</code> styles.</p>
     <p>This <code>font-family</code> is applied to the <code>&lt;body&gt;</code> and automatically inherited globally throughout Bootstrap. To switch the global <code>font-family</code>, update <code>$font-family-base</code> and recompile Bootstrap.</p>
     <h2 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h2>
@@ -348,8 +347,7 @@ sans-serif,
     </details>
     ' /><h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> attribute<a class="anchor-link" href="#html5-hidden-attribute" aria-label="Link to HTML5 [hidden] attribute"></a></h2>
     <p>HTML5 adds <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">a new global attribute named <code>[hidden]</code></a>, which is styled as <code>display: none</code> by default. Borrowing an idea from <a href="https://purecss.io/">PureCSS</a>, we improve upon this default by making <code>[hidden] { display: none !important; }</code> to help prevent its <code>display</code> from getting accidentally overridden.</p>
-    <pre><code class="language-html">&lt;input type=&quot;text&quot; hidden&gt;
-    </code></pre>
+    <CodeWrapper code='&lt;input type=&quot;text&quot; hidden&gt;' lang="html" />
     <Callout>
     <p>Since <code>[hidden]</code> is not compatible with jQuery’s <code>$(...).hide()</code> and <code>$(...).show()</code> methods, we don’t specifically endorse <code>[hidden]</code> over other techniques for managing the <code>display</code> of elements.</p>
     </Callout><p>To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use <a href="/utilities/visibility">the <code>.invisible</code> class</a> instead.</p>

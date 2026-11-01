@@ -94,8 +94,8 @@
         <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
       </p>' /><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <p>You can create a button instance with the button constructor, for example:</p>
-    <pre><code class="language-js">const bsButton = new bootstrap.Button(&#39;#myButton&#39;)
-    </code></pre>
+    <CodeWrapper code="const bsButton = new bootstrap.Button(&#39;#myButton&#39;)
+" lang="javascript" />
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -121,11 +121,11 @@
     </tr>
     </tbody></table>
     </div><p>For example, to toggle all buttons</p>
-    <pre><code class="language-js">document.querySelectorAll(&#39;.btn&#39;).forEach(buttonElement =&gt; {
+    <CodeWrapper code="document.querySelectorAll(&#39;.btn&#39;).forEach(buttonElement =&gt; {
   const button = bootstrap.Button.getOrCreateInstance(buttonElement)
   button.toggle()
 })
-    </code></pre>
+" lang="javascript" />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, buttons now use local CSS variables on <code>.btn</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>

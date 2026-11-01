@@ -197,9 +197,9 @@
     <p>While both ways to dismiss an offcanvas are supported, keep in mind that dismissing from outside an offcanvas does not match the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide dialog (modal) pattern</a>. Do this at your own risk.</p>
     </Callout><h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable manually with:</p>
-    <pre><code class="language-js">const offcanvasElementList = document.querySelectorAll(&#39;.offcanvas&#39;)
+    <CodeWrapper code="const offcanvasElementList = document.querySelectorAll(&#39;.offcanvas&#39;)
 const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootstrap.Offcanvas(offcanvasEl))
-    </code></pre>
+" lang="javascript" />
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
     <table class="table">
@@ -233,8 +233,8 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootst
     </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as an offcanvas element. Accepts an optional options <code>object</code>.</p>
     <p>You can create an offcanvas instance with the constructor, for example:</p>
-    <pre><code class="language-js">const bsOffcanvas = new bootstrap.Offcanvas(&#39;#myOffcanvas&#39;)
-    </code></pre>
+    <CodeWrapper code="const bsOffcanvas = new bootstrap.Offcanvas(&#39;#myOffcanvas&#39;)
+" lang="javascript" />
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -298,10 +298,10 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootst
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
+    <CodeWrapper code="const myOffcanvas = document.getElementById(&#39;myOffcanvas&#39;)
 myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
   // do something...
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>

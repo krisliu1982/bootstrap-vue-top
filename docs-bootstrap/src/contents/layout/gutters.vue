@@ -112,7 +112,7 @@
         <div class="col-6 col-md-4">.col-6 .col-md-4</div>
       </div>' /><h2 id="change-the-gutters">Change the gutters<a class="anchor-link" href="#change-the-gutters" aria-label="Link to Change the gutters"></a></h2>
     <p>Classes are built from the <code>$gutters</code> Sass map which is inherited from the <code>$spacers</code> Sass map.</p>
-    <pre><code class="language-scss">$grid-gutter-width: 1.5rem;
+    <CodeWrapper code="$grid-gutter-width: 1.5rem;
 $gutters: (
   0: 0,
   1: $spacer * .25,
@@ -121,6 +121,6 @@ $gutters: (
   4: $spacer * 1.5,
   5: $spacer * 3,
 );
-    </code></pre>
+" lang="scss" />
   </article>
 </template>

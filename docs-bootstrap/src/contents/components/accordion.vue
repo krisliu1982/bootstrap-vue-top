@@ -141,9 +141,9 @@
     <p>To add accordion group management to a collapsible area, add the data attribute <code>data-bs-parent=&quot;#selector&quot;</code>.</p>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable manually with:</p>
-    <pre><code class="language-js">const accordionCollapseElementList = document.querySelectorAll(&#39;#myAccordion .collapse&#39;)
+    <CodeWrapper code="const accordionCollapseElementList = document.querySelectorAll(&#39;#myAccordion .collapse&#39;)
 const accordionCollapseList = [...accordionCollapseElementList].map(accordionCollapseEl =&gt; new bootstrap.Collapse(accordionCollapseEl))
-    </code></pre>
+" lang="javascript" />
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
     <JsDataAttributes /><div class="table-responsive">
     <table class="table">
@@ -171,10 +171,10 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
     </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
     <p>You can create a collapse instance with the constructor, for example:</p>
-    <pre><code class="language-js">const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
+    <CodeWrapper code="const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
   toggle: false
 })
-    </code></pre>
+" lang="javascript" />
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
@@ -234,10 +234,10 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
     </tr>
     </tbody></table>
     </div>
-    <pre><code class="language-js">const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
+    <CodeWrapper code="const myCollapsible = document.getElementById(&#39;myCollapsible&#39;)
 myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
   // do something...
 })
-    </code></pre>
+" lang="javascript" />
   </article>
 </template>

@@ -84,7 +84,7 @@
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
           </a>
         </div>
       </nav>' /><h4 id="image-and-text">Image and text</h4>
@@ -92,7 +92,7 @@
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Bootstrap
           </a>
         </div>
@@ -328,7 +328,7 @@
       </div>
     </nav>
     ' />
-    <pre><code class="language-html">&lt;nav class=&quot;navbar bg-dark border-bottom border-body&quot; data-bs-theme=&quot;dark&quot;&gt;
+    <CodeWrapper code='&lt;nav class=&quot;navbar bg-dark border-bottom border-body&quot; data-bs-theme=&quot;dark&quot;&gt;
   &lt;!-- Navbar content --&gt;
 &lt;/nav&gt;
 
@@ -338,8 +338,7 @@
 
 &lt;nav class=&quot;navbar&quot; style=&quot;background-color: #e3f2fd;&quot; data-bs-theme=&quot;light&quot;&gt;
   &lt;!-- Navbar content --&gt;
-&lt;/nav&gt;
-    </code></pre>
+&lt;/nav&gt;' lang="html" />
     <h2 id="containers">Containers<a class="anchor-link" href="#containers" aria-label="Link to Containers"></a></h2>
     <p>Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a container inside the <code>.navbar</code> to only center the contents of a <a href="#placement">fixed or static top navbar</a>.</p>
     <Example code='<div class="container">
@@ -554,7 +553,7 @@
           </div>
         </div>
       </nav>' /><p>To create an offcanvas navbar that expands into a normal navbar at a specific breakpoint like <code>lg</code>, use <code>.navbar-expand-lg</code>.</p>
-    <pre><code class="language-html">&lt;nav class=&quot;navbar navbar-expand-lg bg-body-tertiary fixed-top&quot;&gt;
+    <CodeWrapper code='&lt;nav class=&quot;navbar navbar-expand-lg bg-body-tertiary fixed-top&quot;&gt;
   &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Offcanvas navbar&lt;/a&gt;
   &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#navbarOffcanvasLg&quot; aria-controls=&quot;navbarOffcanvasLg&quot; aria-label=&quot;Toggle navigation&quot;&gt;
     &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
@@ -562,8 +561,7 @@
   &lt;div class=&quot;offcanvas offcanvas-end&quot; tabindex=&quot;-1&quot; id=&quot;navbarOffcanvasLg&quot; aria-labelledby=&quot;navbarOffcanvasLgLabel&quot;&gt;
     ...
   &lt;/div&gt;
-&lt;/nav&gt;
-    </code></pre>
+&lt;/nav&gt;' lang="html" />
     <p>When using offcanvas in a dark navbar, be aware that you may need to have a dark background on the offcanvas content to avoid the text becoming illegible. In the example below, we add <code>.navbar-dark</code> and <code>.bg-dark</code> to the <code>.navbar</code>, <code>.text-bg-dark</code> to the <code>.offcanvas</code>, <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>, and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas.</p>
     <Example code='<nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">

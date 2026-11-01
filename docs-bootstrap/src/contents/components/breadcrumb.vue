@@ -33,8 +33,8 @@
           <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
       </nav>' /><p>When modifying via Sass, the <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using <code>&gt;</code> as the divider, you can use this:</p>
-    <pre><code class="language-scss">$breadcrumb-divider: quote(&quot;&gt;&quot;);
-    </code></pre>
+    <CodeWrapper code="$breadcrumb-divider: quote(&quot;&gt;&quot;);
+" lang="scss" />
     <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
     <Callout>
     <p><strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.</p>
@@ -44,8 +44,8 @@
           <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
       </nav>' />
-    <pre><code class="language-scss">$breadcrumb-divider: url(&quot;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39;&gt;&lt;path d=&#39;M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z&#39; fill=&#39;#{$breadcrumb-divider-color}&#39;/&gt;&lt;/svg&gt;&quot;);
-    </code></pre>
+    <CodeWrapper code="$breadcrumb-divider: url(&quot;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39;&gt;&lt;path d=&#39;M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z&#39; fill=&#39;#{$breadcrumb-divider-color}&#39;/&gt;&lt;/svg&gt;&quot;);
+" lang="scss" />
     <p>You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass variable to <code>$breadcrumb-divider: none;</code>.</p>
     <Example code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -53,8 +53,8 @@
           <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
       </nav>' />
-    <pre><code class="language-scss">$breadcrumb-divider: none;
-    </code></pre>
+    <CodeWrapper code="$breadcrumb-divider: none;
+" lang="scss" />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.</p>
     <p>For more information, see the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/">ARIA Authoring Practices Guide breadcrumb pattern</a>.</p>

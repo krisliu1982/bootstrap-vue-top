@@ -27,24 +27,45 @@
             <td>Cell</td>
           </tr>
               <tr v-for="themeColor in data['theme-colors']" :class="`table-${themeColor.name}`">
-                <th scope="row">{themeColor.name}</th>
+                <th scope="row">{{themeColor.name}}</th>
                 <td>Cell</td>
                 <td>Cell</td>
               </tr>
         </tbody>
       </table>
-    </div><CodeWrapper :code='[
-      `<!-- On tables -->`,
-      ...data["theme-colors"].map((themeColor) => `<table class="table-${themeColor.name}">...</table>`),
-      `
-    <!-- On rows -->`,
-      ...data["theme-colors"].map((themeColor) => `<tr class="table-${themeColor.name}">...</tr>`),
-      `
-    <!-- On cells (\`td\` or \`th\`) -->
-    <tr>`,
-      ...data["theme-colors"].map((themeColor) => `  <td class="table-${themeColor.name}">...</td>`),
-      `</tr>`
-    ].join("\n")' lang="html" /><Callout name="warning-color-assistive-technologies" /><h2 id="accented-tables">Accented tables<a class="anchor-link" href="#accented-tables" aria-label="Link to Accented tables"></a></h2>
+    </div>
+    <CodeWrapper code='<!-- On tables -->
+<table class="table-primary">...</table>
+<table class="table-secondary">...</table>
+<table class="table-success">...</table>
+<table class="table-danger">...</table>
+<table class="table-warning">...</table>
+<table class="table-info">...</table>
+<table class="table-light">...</table>
+<table class="table-dark">...</table>
+
+<!-- On rows -->
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>
+<tr class="table-success">...</tr>
+<tr class="table-danger">...</tr>
+<tr class="table-warning">...</tr>
+<tr class="table-info">...</tr>
+<tr class="table-light">...</tr>
+<tr class="table-dark">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-primary">...</td>
+  <td class="table-secondary">...</td>
+  <td class="table-success">...</td>
+  <td class="table-danger">...</td>
+  <td class="table-warning">...</td>
+  <td class="table-info">...</td>
+  <td class="table-light">...</td>
+  <td class="table-dark">...</td>
+</tr>' lang="html" />
+    <Callout name="warning-color-assistive-technologies" /><h2 id="accented-tables">Accented tables<a class="anchor-link" href="#accented-tables" aria-label="Link to Accented tables"></a></h2>
     <h3 id="striped-rows">Striped rows<a class="anchor-link" href="#striped-rows" aria-label="Link to Striped rows"></a></h3>
     <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
     <TableBs class="table table-striped" /><h3 id="striped-columns">Striped columns<a class="anchor-link" href="#striped-columns" aria-label="Link to Striped columns"></a></h3>
@@ -86,7 +107,7 @@
       </tbody>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
     ...
   &lt;/thead&gt;
@@ -104,8 +125,7 @@
       &lt;td class=&quot;table-active&quot;&gt;@social&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <Example :showMarkup="false" code='<table class="table table-dark">
       <thead>
         <tr>
@@ -137,7 +157,7 @@
       </tbody>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table table-dark&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table table-dark&quot;&gt;
   &lt;thead&gt;
     ...
   &lt;/thead&gt;
@@ -155,8 +175,7 @@
       &lt;td class=&quot;table-active&quot;&gt;@social&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <h2 id="how-do-the-variants-and-accented-tables-work">How do the variants and accented tables work?<a class="anchor-link" href="#how-do-the-variants-and-accented-tables-work" aria-label="Link to How do the variants and accented tables work?"></a></h2>
     <p>For the accented tables (<a href="#striped-rows">striped rows</a>, <a href="#striped-columns">striped columns</a>, <a href="#hoverable-rows">hoverable rows</a>, and <a href="#active-tables">active tables</a>), we used some techniques to make these effects work for all our <a href="#variants">table variants</a>:</p>
     <ul>
@@ -241,7 +260,7 @@
       </table>
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;table-responsive&quot;&gt;
   &lt;table class=&quot;table align-middle&quot;&gt;
     &lt;thead&gt;
       &lt;tr&gt;
@@ -263,8 +282,7 @@
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt; ' lang="html" />
     <h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
     <p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
     <Example :showMarkup="false" code='<table class="table table-striped table-bordered">
@@ -322,7 +340,7 @@
       </tbody>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table table-striped table-bordered&quot;&gt;
   &lt;thead&gt;
     ...
   &lt;/thead&gt;
@@ -337,8 +355,7 @@
     &lt;/tr&gt;
     ...
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <h2 id="how-nesting-works">How nesting works<a class="anchor-link" href="#how-nesting-works" aria-label="Link to How nesting works"></a></h2>
     <p>To prevent <em>any</em> styles from leaking to nested tables, we use the child combinator (<code>&gt;</code>) selector in our CSS. Since we need to target all the <code>td</code>s and <code>th</code>s in the <code>thead</code>, <code>tbody</code>, and <code>tfoot</code>, our selector would look pretty long without it. As such, we use the rather odd looking <code>.table &gt; :not(caption) &gt; * &gt; *</code> selector to target all <code>td</code>s and <code>th</code>s of the <code>.table</code>, but none of any potential nested tables.</p>
     <p>Note that if you add <code>&lt;tr&gt;</code>s as direct children of a table, those <code>&lt;tr&gt;</code> will be wrapped in a <code>&lt;tbody&gt;</code> by default, thus making our selectors work as intended.</p>
@@ -376,15 +393,14 @@
       </tbody>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table&quot;&gt;
   &lt;thead class=&quot;table-light&quot;&gt;
     ...
   &lt;/thead&gt;
   &lt;tbody&gt;
     ...
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <Example :showMarkup="false" code='<table class="table">
       <thead class="table-dark">
         <tr>
@@ -416,15 +432,14 @@
       </tbody>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table&quot;&gt;
   &lt;thead class=&quot;table-dark&quot;&gt;
     ...
   &lt;/thead&gt;
   &lt;tbody&gt;
     ...
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <h3 id="table-foot">Table foot<a class="anchor-link" href="#table-foot" aria-label="Link to Table foot"></a></h3>
     <Example :showMarkup="false" code='<table class="table">
       <thead>
@@ -465,7 +480,7 @@
       </tfoot>
     </table>
     ' />
-    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table&quot;&gt;
   &lt;thead&gt;
     ...
   &lt;/thead&gt;
@@ -475,8 +490,7 @@
   &lt;tfoot&gt;
     ...
   &lt;/tfoot&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <h3 id="captions">Captions<a class="anchor-link" href="#captions" aria-label="Link to Captions"></a></h3>
     <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
     <div class="docs-example">
@@ -512,7 +526,7 @@
   </tbody>
       </table>
     </div>
-    <pre><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
+    <CodeWrapper code='&lt;table class=&quot;table table-sm&quot;&gt;
   &lt;caption&gt;List of users&lt;/caption&gt;
   &lt;thead&gt;
     ...
@@ -520,8 +534,7 @@
   &lt;tbody&gt;
     ...
   &lt;/tbody&gt;
-&lt;/table&gt;
-    </code></pre>
+&lt;/table&gt; ' lang="html" />
     <p>You can also put the <code>&lt;caption&gt;</code> on the top of the table with <code>.caption-top</code>.</p>
     <Example code='<table class="table caption-top">
         <caption>List of users</caption>
@@ -617,12 +630,11 @@
       </table>
     </div>
     ' />
-    <pre><code class="language-html">&lt;div class=&quot;table-responsive&quot;&gt;
+    <CodeWrapper code='&lt;div class=&quot;table-responsive&quot;&gt;
   &lt;table class=&quot;table&quot;&gt;
     ...
   &lt;/table&gt;
-&lt;/div&gt;
-    </code></pre>
+&lt;/div&gt; ' lang="html" />
     <h3 id="breakpoint-specific">Breakpoint specific<a class="anchor-link" href="#breakpoint-specific" aria-label="Link to Breakpoint specific"></a></h3>
     <p>Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
     <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
