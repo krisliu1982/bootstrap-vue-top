@@ -84,7 +84,7 @@
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/docs/${getConfig().docs_version}/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
           </a>
         </div>
       </nav>' /><h4 id="image-and-text">Image and text</h4>
@@ -92,7 +92,7 @@
     <Example code='<nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="/docs/${getConfig().docs_version}/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Bootstrap
           </a>
         </div>

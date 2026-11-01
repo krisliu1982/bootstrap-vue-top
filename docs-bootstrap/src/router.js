@@ -5,22 +5,13 @@ import data from '@/data/data.js'
 
 NProgress.settings.showSpinner = false;
 
-const routes = [
-  {
-    path: '/',
-    component: () => import('@/home.vue')
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    component: () => import('@/404.vue')
-  }
-];
+const routes = [];
 
 const allpage = data.sidebar.flatMap((group) => {
-  if (!group.pages) return {
+  if (!group.pages) return [{
     groupSlug: group.slug,
     pageSlug: null
-  }
+  }];
   return group.pages.flatMap((item) => {
     // Handle direct pages
     if (item.title) {
@@ -35,33 +26,31 @@ const allpage = data.sidebar.flatMap((group) => {
   })
 })
 
-const docsRoutes = {
-  path: `/docs`,
-  component: () => import('@/index.vue'),
-  children: [
-    {
-      path: '',
-      redirect: `/docs/${allpage[0].groupSlug}/${allpage[0].pageSlug}`
-    }
-  ],
-  alias: ['/docs']
-}
+const docsRoutes = [{
+  path: '/',
+  component: () => import(`@/contents/${allpage[0].groupSlug}/${allpage[0].pageSlug}.vue`),
+}]
 
 allpage.forEach((page) => {
   if (page.pageSlug) {
-    docsRoutes.children.push({
-      path: `/docs/${page.groupSlug}/${page.pageSlug}`,
+    docsRoutes.push({
+      path: `/${page.groupSlug}/${page.pageSlug}`,
       component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`),
     })
   } else {
-    docsRoutes.children.push({
-      path: `/docs/${page.groupSlug}`,
+    docsRoutes.push({
+      path: `/${page.groupSlug}`,
       component: () => import(`@/contents/${page.groupSlug}.vue`),
     })
   }
 })
 
 routes.push(docsRoutes)
+
+routes.push({
+    path: '/:pathMatch(.*)*',
+    component: () => import('@/404.vue')
+  })
 
 function remToPx(remValue) {
   const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -101,5 +90,10 @@ router.beforeEach((to, from) => {
 router.afterEach((to, from) => {
   NProgress.done();
 });
+
+router.onError((error) => {
+  NProgress.done()
+  console.error('路由导航错误:', error)
+})
 
 export default router;

@@ -75,12 +75,50 @@
     </div>
   </bv-offcanvas>
 -->
-  <router-view />
+
+  <div class="container-xxl">
+    <div class="docs-layout">
+      <!--       <bv-offcanvas
+        ref="offcanvasRef"
+        title="文档菜单"
+        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar"
+      > -->
+      <aside class="docs-sidebar">
+        <nav ref="menuRef">
+          <div v-for="t in data.sidebar">
+            <template v-if="t.pages">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <div class="bg-primary rounded-circle" style="width: 0.5rem;height: 0.5rem;"></div>
+              <span class="small fw-bold">{{ t['zh-CN']}} <small class="text-secondary">{{ t.title }}</small></span>
+            </div>
+            <ul>
+              <li v-for="tt in t.pages">
+                  <RouterLink :to="`/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                    <span class="small">{{ tt['zh-CN']}} <small>{{ tt.title }}</small></span>
+                  </RouterLink>
+              </li>
+            </ul>
+            </template>
+            <template v-else>
+              <hr/>
+                                <RouterLink :to="`/${t.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                    <span class="small">{{ t['zh-CN']}} <small>{{ t.title }}</small></span>
+                  </RouterLink>
+            </template>
+          </div>
+        </nav>
+      </aside>
+      <!--       </bv-offcanvas> -->
+      <main class="docs-main">
+        <router-view />
+      </main>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
-
+import { ref, watch, onMounted, onUnmounted } from 'vue';
+import data from '@/data/data.js'
 const navbarRef = ref(null);
 
 function getFontSize() {
@@ -138,4 +176,34 @@ function handleThemeChange() {
 import pkg from '../package.json';
 
 const version = pkg.version;
+
+
+
+const offcanvasRef = ref(null);
+const menuRef = ref(null);
+
+// 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
+let smallScreen = window.innerWidth < 992;
+
+function handleViewportChange() {
+  smallScreen = window.innerWidth < 992;
+}
+
+/*onMounted(() => {
+  menuRef.value.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (smallScreen) {
+      // 找到实际点击的菜单项（向上查找）
+      const menuItem = e.target.closest('.docs-sidebar-link');
+      offcanvasRef.value.toggle();
+    }
+  });
+
+  // 添加监听
+  window.addEventListener('resize', handleViewportChange);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleViewportChange);
+});*/
 </script>

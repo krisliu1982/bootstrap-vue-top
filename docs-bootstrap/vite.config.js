@@ -27,7 +27,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/',
+  base: '/docs-bootstrap/5.3/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
