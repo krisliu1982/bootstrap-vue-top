@@ -7,7 +7,7 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Due to the widespread use of <code>&lt;table&gt;</code> elements across third-party widgets like calendars and date pickers, Bootstrap’s tables are <strong>opt-in</strong>. Add the base class <code>.table</code> to any <code>&lt;table&gt;</code>, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.</p>
     <p>Using the most basic table markup, here’s how <code>.table</code>-based tables look in Bootstrap.</p>
-    <Table class="table" simplified={false} /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
+    <TableBs class="table" :simplified="false" /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <p>Use contextual classes to color tables, table rows or individual cells.</p>
     <Callout>
     <p><strong>Heads up!</strong> Because of the more complicated CSS used to generate our table variants, they most likely won’t see color mode adaptive styling until v6.</p>
@@ -47,13 +47,13 @@
     ].join("\n")' lang="html" /><Callout name="warning-color-assistive-technologies" /><h2 id="accented-tables">Accented tables<a class="anchor-link" href="#accented-tables" aria-label="Link to Accented tables"></a></h2>
     <h3 id="striped-rows">Striped rows<a class="anchor-link" href="#striped-rows" aria-label="Link to Striped rows"></a></h3>
     <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
-    <Table class="table table-striped" /><h3 id="striped-columns">Striped columns<a class="anchor-link" href="#striped-columns" aria-label="Link to Striped columns"></a></h3>
+    <TableBs class="table table-striped" /><h3 id="striped-columns">Striped columns<a class="anchor-link" href="#striped-columns" aria-label="Link to Striped columns"></a></h3>
     <p>Use <code>.table-striped-columns</code> to add zebra-striping to any table column.</p>
-    <Table class="table table-striped-columns" /><p>These classes can also be added to table variants:</p>
-    <Table class="table table-dark table-striped" /><Table class="table table-dark table-striped-columns" /><Table class="table table-success table-striped" /><Table class="table table-success table-striped-columns" /><h3 id="hoverable-rows">Hoverable rows<a class="anchor-link" href="#hoverable-rows" aria-label="Link to Hoverable rows"></a></h3>
+    <TableBs class="table table-striped-columns" /><p>These classes can also be added to table variants:</p>
+    <TableBs class="table table-dark table-striped" /><TableBs class="table table-dark table-striped-columns" /><TableBs class="table table-success table-striped" /><TableBs class="table table-success table-striped-columns" /><h3 id="hoverable-rows">Hoverable rows<a class="anchor-link" href="#hoverable-rows" aria-label="Link to Hoverable rows"></a></h3>
     <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
-    <Table class="table table-hover" /><Table class="table table-dark table-hover" /><p>These hoverable rows can also be combined with the striped rows variant:</p>
-    <Table class="table table-striped table-hover" /><h3 id="active-tables">Active tables<a class="anchor-link" href="#active-tables" aria-label="Link to Active tables"></a></h3>
+    <TableBs class="table table-hover" /><TableBs class="table table-dark table-hover" /><p>These hoverable rows can also be combined with the striped rows variant:</p>
+    <TableBs class="table table-striped table-hover" /><h3 id="active-tables">Active tables<a class="anchor-link" href="#active-tables" aria-label="Link to Active tables"></a></h3>
     <p>Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
     <Example :showMarkup="false" code='<table class="table">
       <thead>
@@ -170,12 +170,12 @@
     <ScssDocs name="table-variant" file="scss/mixins/_table-variants.scss" /><h2 id="table-borders">Table borders<a class="anchor-link" href="#table-borders" aria-label="Link to Table borders"></a></h2>
     <h3 id="bordered-tables">Bordered tables<a class="anchor-link" href="#bordered-tables" aria-label="Link to Bordered tables"></a></h3>
     <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
-    <Table class="table table-bordered" /><p><a href="/utilities/borders#border-color">Border color utilities</a> can be added to change colors:</p>
-    <Table class="table table-bordered border-primary" /><h3 id="tables-without-borders">Tables without borders<a class="anchor-link" href="#tables-without-borders" aria-label="Link to Tables without borders"></a></h3>
+    <TableBs class="table table-bordered" /><p><a href="/utilities/borders#border-color">Border color utilities</a> can be added to change colors:</p>
+    <TableBs class="table table-bordered border-primary" /><h3 id="tables-without-borders">Tables without borders<a class="anchor-link" href="#tables-without-borders" aria-label="Link to Tables without borders"></a></h3>
     <p>Add <code>.table-borderless</code> for a table without borders.</p>
-    <Table class="table table-borderless" /><Table class="table table-dark table-borderless" /><h2 id="small-tables">Small tables<a class="anchor-link" href="#small-tables" aria-label="Link to Small tables"></a></h2>
+    <TableBs class="table table-borderless" /><TableBs class="table table-dark table-borderless" /><h2 id="small-tables">Small tables<a class="anchor-link" href="#small-tables" aria-label="Link to Small tables"></a></h2>
     <p>Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
-    <Table class="table table-sm" /><Table class="table table-dark table-sm" /><h2 id="table-group-dividers">Table group dividers<a class="anchor-link" href="#table-group-dividers" aria-label="Link to Table group dividers"></a></h2>
+    <TableBs class="table table-sm" /><TableBs class="table table-dark table-sm" /><h2 id="table-group-dividers">Table group dividers<a class="anchor-link" href="#table-group-dividers" aria-label="Link to Table group dividers"></a></h2>
     <p>Add a thicker border, darker between table groups—<code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code>—with <code>.table-group-divider</code>. Customize the color by changing the <code>border-top-color</code> (which we don’t currently provide a utility class for at this time).</p>
     <Example code='<table class="table">
         <thead>
@@ -482,7 +482,7 @@
     <div class="docs-example">
       <table class="table">
         <caption>List of users</caption>
-        <TableContent />
+        <TableBsContent />
       </table>
     </div>
     <pre><code class="language-html">&lt;table class=&quot;table table-sm&quot;&gt;
