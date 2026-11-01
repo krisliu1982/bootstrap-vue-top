@@ -1,5 +1,5 @@
 <template>
-  <pre><code v-html="html"></code></pre>
+  <div class="docs-code border border-top-0 rounded-bottom" v-html="html"></div>
 </template>
 
 <script setup>
@@ -26,8 +26,7 @@ onMounted(async () => {
       light: 'light-plus',
       dark: 'dark-plus',
     },
-    defaultColor: 'light-dark()',
-  structure: 'inline' // 关键配置
+    defaultColor: 'light-dark()'
   });
 });
 </script>

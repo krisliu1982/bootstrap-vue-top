@@ -5,6 +5,9 @@ import router from './router.js';
 
 import './assets/docs.scss';
 
+// Import all of Bootstrap’s JS
+import * as bootstrap from 'bootstrap'
+
 import Example from '@/components/Example.vue'
 import Callout from '@/components/Callout.vue'
 import AddedIn from '@/components/AddedIn.vue'
@@ -18,9 +21,6 @@ import GuideFooter from '@/components/GuideFooter.vue'
 import JsDocs from '@/components/JsDocs.vue'
 import Placeholder from '@/components/Placeholder.vue'
 import Table from '@/components/Table.vue'
-
-// Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap'
 
 const app = createApp(app_);
 app.use(router);

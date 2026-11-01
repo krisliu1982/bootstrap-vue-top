@@ -5,8 +5,6 @@ import data from '@/data/data.js'
 
 NProgress.settings.showSpinner = false;
 
-const routes = [];
-
 const allpage = data.sidebar.flatMap((group) => {
   if (!group.pages) return [{
     groupSlug: group.slug,
@@ -26,31 +24,31 @@ const allpage = data.sidebar.flatMap((group) => {
   })
 })
 
-const docsRoutes = [{
+const routes = [{
   path: '/',
-  component: () => import(`@/contents/${allpage[0].groupSlug}/${allpage[0].pageSlug}.vue`),
-}]
+  redirect: `/${allpage[0].groupSlug}/${allpage[0].pageSlug}`,
+}];
 
 allpage.forEach((page) => {
   if (page.pageSlug) {
-    docsRoutes.push({
+    routes.push({
       path: `/${page.groupSlug}/${page.pageSlug}`,
       component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`),
     })
   } else {
-    docsRoutes.push({
+    routes.push({
       path: `/${page.groupSlug}`,
       component: () => import(`@/contents/${page.groupSlug}.vue`),
     })
   }
 })
 
-routes.push(docsRoutes)
-
 routes.push({
     path: '/:pathMatch(.*)*',
     component: () => import('@/404.vue')
   })
+
+
 
 function remToPx(remValue) {
   const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
