@@ -1,7 +1,14 @@
 <template>
+  <div class="docs-code-snippet">
+    <div class="docs-example border rounded-top" :class="props.class">
+      <slot />
+    </div>
       <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
-        <small class="font-monospace text-secondary text-uppercase">{{ props.lang }}</small>
+        <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
         <div class="ms-auto">
+          <a v-if="props.addStackblitzJs" role="button" class="text-body me-3" title="Edit" aria-label="Edit">
+            <bi-lightning-charge-fill />
+          </a>
           <BiCheckLg v-if="isCopy" class="text-success" />
           <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
             <BiCopy />
@@ -9,7 +16,7 @@
         </div>
       </div>
       <Code :code="props.code" :lang="props.lang" />
-
+  </div>
 </template>
 
 <script setup>
@@ -17,6 +24,10 @@ import { ref } from 'vue';
 import Code from './Code.vue'
 
 const props = defineProps({
+  addStackblitzJs: {
+    type: Boolean,
+    default: false
+  },
   code: {
     type: String,
     default: null
@@ -24,6 +35,10 @@ const props = defineProps({
   lang: {
     type: String,
     default: 'html'
+  },
+  class:{
+    type: String,
+    default: null
   }
 });
 

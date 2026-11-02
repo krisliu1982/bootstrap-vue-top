@@ -1,17 +1,27 @@
-<!-- JsDocs.vue -->
+
+<template>
+  <div class="docs-code-snippet">
+    <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
+      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
+        :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
+      <div class="ms-auto">
+        <BiCheckLg v-if="isCopy" class="text-success" />
+        <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
+          <BiCopy />
+        </a>
+      </div>
+    </div>
+    <Code :code="content" lang="javascript" />
+  </div>
+</template>
+
 <script setup>
 import {ref} from 'vue'
 import Code from './code.vue'
 
 const props = defineProps({
-  /**
-   * Reference name used to find the content to display within the content of the `file` prop.
-   */
-  name: { type: String, required: true },
-  /**
-   * File path that contains the content to display relative to the root of the repository.
-   */
-  file: { type: String, required: true }
+  name: { type: String },
+  file: { type: String }
 })
 
 let content = null
@@ -108,7 +118,7 @@ export const DefaultAllowlist = {
 const isCopy = ref(false);
 function handleCopy() {
   navigator.clipboard
-    .writeText(props.code)
+    .writeText(content)
     .then(() => {
       isCopy.value = true;
       setTimeout(() => {
@@ -121,19 +131,3 @@ function handleCopy() {
     });
 }
 </script>
-
-<template>
-  <div class="docs-code-snippet docs-example-snippet">
-    <div class="d-flex align-items-center highlight-toolbar px-3 py-2 border-0 border-bottom">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
-        :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
-      <div class="ms-auto">
-        <BiCheckLg v-if="isCopy" class="text-success" />
-        <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
-          <BiCopy />
-        </a>
-      </div>
-    </div>
-    <Code :code="content" lang="javascript" />
-  </div>
-</template>

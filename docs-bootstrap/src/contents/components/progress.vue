@@ -17,36 +17,36 @@
     </ul>
     <p>Put that all together, and you have the following examples.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 0%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 50%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 75%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 100%"></div>
-      </div>' /><h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
+    <div class="progress-bar" style="width: 0%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 25%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 50%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 75%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" style="width: 100%"></div>
+  </div>' /><h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
     <p>Bootstrap provides a handful of <a href="/docs-bootstrap/5.3/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the <code>.progress-bar</code>.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar w-75"></div>
-      </div>' /><h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
+    <div class="progress-bar w-75"></div>
+  </div>' /><h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
     <p>You only set a <code>height</code> value on the <code>.progress</code> container, so if you change that value, the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
-        <div class="progress-bar" style="width: 25%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
-        <div class="progress-bar" style="width: 25%"></div>
-      </div>' /><h2 id="labels">Labels<a class="anchor-link" href="#labels" aria-label="Link to Labels"></a></h2>
+    <div class="progress-bar" style="width: 25%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+    <div class="progress-bar" style="width: 25%"></div>
+  </div>' /><h2 id="labels">Labels<a class="anchor-link" href="#labels" aria-label="Link to Labels"></a></h2>
     <p>Add labels to your progress bars by placing text within the <code>.progress-bar</code>.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 25%">25%</div>
-      </div>' /><h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
+    <div class="progress-bar" style="width: 25%">25%</div>
+  </div>' /><h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
     <p>Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the <a href="/docs-bootstrap/5.3/utilities/overflow">overflow utilities</a>.</p>
     <Callout type="warning">
     <p>Labels longer than the progress bar within may not be fully accessible using this method because it relies on the text color having the correct contrast ratio with both the <code>.progress</code> and <code>.progress-bar</code> background colors. Use caution when implementing this example.</p>
@@ -54,17 +54,17 @@
     </Callout><h2 id="backgrounds">Backgrounds<a class="anchor-link" href="#backgrounds" aria-label="Link to Backgrounds"></a></h2>
     <p>Use background utility classes to change the appearance of individual progress bars.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-success" style="width: 25%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-info" style="width: 50%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-warning" style="width: 75%"></div>
-      </div>
-      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-danger" style="width: 100%"></div>
-      </div>' /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="/docs-bootstrap/5.3/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="/docs-bootstrap/5.3/helpers/color-background">color and background</a> helper classes.</p>
+    <div class="progress-bar bg-success" style="width: 25%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-info" style="width: 50%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-warning" style="width: 75%"></div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+  </div>' /><Callout name="warning-color-assistive-technologies" /><p>If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate <a href="/docs-bootstrap/5.3/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="/docs-bootstrap/5.3/helpers/color-background">color and background</a> helper classes.</p>
     <Example code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
       </div>

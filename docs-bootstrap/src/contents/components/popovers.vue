@@ -30,17 +30,17 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     <Callout name="warning-data-bs-title-vs-title" type="warning" /><Example addStackblitzJs code='<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>' /><h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
     <p>Four options are available: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL. Set <code>data-bs-placement</code> to change the direction.</p>
     <Example addStackblitzJs code='<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-        Popover on top
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
-        Popover on right
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-        Popover on bottom
-      </button>
-      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
-        Popover on left
-      </button>' /><h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
+    Popover on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+    Popover on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+    Popover on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+    Popover on left
+  </button>' /><h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
     <p>When you have some styles on a parent element that interfere with a popover, you’ll want to specify a custom <code>container</code> so that the popover’s HTML appears within that element instead. This is common in responsive tables, input groups, and the like.</p>
     <CodeWrapper code="const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
   container: &#39;body&#39;
@@ -72,8 +72,8 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     <p>Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.</p>
     <p>For disabled popover triggers, you may also prefer <code>data-bs-trigger=&quot;hover focus&quot;</code> so that the popover appears as immediate visual feedback to your users as they may not expect to <em>click</em> on a disabled element.</p>
     <Example addStackblitzJs code='<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-        <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-      </span>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+  </span>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, popovers now use local CSS variables on <code>.popover</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
     <ScssDocs name="popover-css-vars" file="scss/_popover.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>

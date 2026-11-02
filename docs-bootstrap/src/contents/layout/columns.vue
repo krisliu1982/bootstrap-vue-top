@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import ExampleCustom from '../../components/ExampleCustom.vue';
+
+</script>
+
 <template>
   <article class="docs-content">
     <h1>Columns</h1>
@@ -303,8 +308,21 @@
     <p>The classes can be used together with utilities to create responsive floated images. Make sure to wrap the
       content in a <a href="/docs-bootstrap/5.3/helpers/clearfix"><code>.clearfix</code></a> wrapper to clear the float
       if the text is shorter.</p>
-        <div class="docs-code-snippet">
-    <div class="docs-example border rounded-top">
+      <ExampleCustom code='<div class="clearfix">
+  <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+  <p>
+    A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+  </p>
+
+  <p>
+    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+  </p>
+
+  <p>
+    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there’s none of that here.
+  </p>
+</div>'>
     <div class="clearfix">
   <Placeholder width="100%" height="210" class="col-md-6 float-md-end mb-3 ms-md-3" text="Responsive floated image" />
 
@@ -320,23 +338,7 @@
     And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there’s none of that here.
   </p>
 </div>
-    </div>
-    <CodeWrapperCustom code='<div class="clearfix">
-  <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-
-  <p>
-    A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-  </p>
-
-  <p>
-    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
-  </p>
-
-  <p>
-    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there’s none of that here.
-  </p>
-</div>' lang="html" />
-  </div>
+</ExampleCustom>
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">

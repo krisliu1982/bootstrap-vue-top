@@ -7,32 +7,32 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
     <Example code='<nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
-      </nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>' /><h2 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h2>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>' /><h2 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h2>
     <p>Dividers are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a>. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you get a global divider that you can override without recompiling CSS at any time.</p>
     <Example code='<nav style="--bs-breadcrumb-divider: &#39;>&#39;;" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>' /><p>When modifying via Sass, the <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using <code>&gt;</code> as the divider, you can use this:</p>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>' /><p>When modifying via Sass, the <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using <code>&gt;</code> as the divider, you can use this:</p>
     <CodeWrapper code="$breadcrumb-divider: quote(&quot;&gt;&quot;);
 " lang="scss" />
     <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
@@ -48,11 +48,11 @@
 " lang="scss" />
     <p>You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass variable to <code>$breadcrumb-divider: none;</code>.</p>
     <Example code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>' />
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>' />
     <CodeWrapper code="$breadcrumb-divider: none;
 " lang="scss" />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>

@@ -7,104 +7,104 @@
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
     <Example code='<ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>' /><h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>' /><h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
     <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
     <Example code='<ul class="list-group">
-        <li class="list-group-item active" aria-current="true">An active item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>' /><h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
+    <li class="list-group-item active" aria-current="true">An active item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>' /><h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
     <p>Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
     <p>Make <code>.list-group-item-action</code> instances <em>appear</em> disabled by adding <code>.disabled</code>, and <code>aria-disabled=&quot;true&quot;</code> to inform assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.</p>
     <p>Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.</p>
     <Example code='<div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          The current link item
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
-      </div>' /><p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      The current link item
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+    <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+  </div>' /><p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
     <Example code='<div class="list-group">
-        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-          The current button
-        </button>
-        <button type="button" class="list-group-item list-group-item-action">A second button item</button>
-        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-        <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
-      </div>' /><h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
+    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+      The current button
+    </button>
+    <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+    <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+    <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+    <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+  </div>' /><h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
     <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
     <Example code='<ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>' /><h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>' /><h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
     <p>Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.</p>
     <p>Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> pseudo-element on the <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.</p>
     <Example code='<ol class="list-group list-group-numbered">
-        <li class="list-group-item">A list item</li>
-        <li class="list-group-item">A list item</li>
-        <li class="list-group-item">A list item</li>
-      </ol>' /><p>These work great with custom content as well.</p>
+    <li class="list-group-item">A list item</li>
+    <li class="list-group-item">A list item</li>
+    <li class="list-group-item">A list item</li>
+  </ol>' /><p>These work great with custom content as well.</p>
     <Example code='<ol class="list-group list-group-numbered">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Subheading</div>
-            Content for list item
-          </div>
-          <span class="badge text-bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Subheading</div>
-            Content for list item
-          </div>
-          <span class="badge text-bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Subheading</div>
-            Content for list item
-          </div>
-          <span class="badge text-bg-primary rounded-pill">14</span>
-        </li>
-      </ol>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Subheading</div>
+        Content for list item
+      </div>
+      <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+  </ol>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently <strong>horizontal list groups cannot be combined with flush list groups.</strong></p>
     <p><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
     <Example :code='data["breakpoints"].map((breakpoint) => `<ul class="list-group list-group-horizontal${breakpoint.abbr}">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul>`).join("\n")' /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>`).join("\n")' /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <Callout>
     <p><strong>Heads up!</strong> As of v5.3.0, the <code>list-group-item-variant()</code> Sass mixin is deprecated. List group item variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
     </Callout><p>Use contextual classes to style list items with a stateful background and color.</p>
     <Example :code='[
-        `<ul class="list-group">
-        <li class="list-group-item">A simple default list group item</li>
-        `,
-        ...data["theme-colors"].map((themeColor) => `  <li class="list-group-item list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</li>`),
-        `</ul>`
-      ].join("\n")' /><h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
+    `<ul class="list-group">
+    <li class="list-group-item">A simple default list group item</li>
+    `,
+    ...data["theme-colors"].map((themeColor) => `  <li class="list-group-item list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</li>`),
+    `</ul>`
+  ].join("\n")' /><h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
     <p>Contextual classes also work with <code>.list-group-item-action</code> for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
     <Example :code='[
-        `<div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
-        `,
-        ...data["theme-colors"].map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
-        `</div>`
-      ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
+    `<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+    `,
+    ...data["theme-colors"].map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
+    `</div>`
+  ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
     <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="/docs-bootstrap/5.3/utilities/flex">utilities</a>.</p>
     <Example code='<ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">

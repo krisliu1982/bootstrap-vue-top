@@ -17,9 +17,9 @@
     <Callout name="info-prefersreducedmotion" /><h2 id="basic-examples">Basic examples<a class="anchor-link" href="#basic-examples" aria-label="Link to Basic examples"></a></h2>
     <p>Here is a basic example of a carousel with three slides. Note the previous/next controls. We recommend using <code>&lt;button&gt;</code> elements, but you can also use <code>&lt;a&gt;</code> elements with <code>role=&quot;button&quot;</code>.</p>
     <Example code='<div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -41,14 +41,14 @@
     <h3 id="indicators">Indicators<a class="anchor-link" href="#indicators" aria-label="Link to Indicators"></a></h3>
     <p>You can add indicators to the carousel, alongside the previous/next controls. The indicators let users jump directly to a particular slide.</p>
     <Example code='<div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -68,14 +68,14 @@
       </div>' /><h3 id="captions">Captions<a class="anchor-link" href="#captions" aria-label="Link to Captions"></a></h3>
     <p>You can add captions to your slides with the <code>.carousel-caption</code> element within any <code>.carousel-item</code>. They can be easily hidden on smaller viewports, as shown below, with optional <a href="/docs-bootstrap/5.3/utilities/display">display utilities</a>. We hide them initially with <code>.d-none</code> and bring them back on medium-sized devices with <code>.d-md-block</code>.</p>
     <Example code='<div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -107,9 +107,9 @@
       </div>' /><h3 id="crossfade">Crossfade<a class="anchor-link" href="#crossfade" aria-label="Link to Crossfade"></a></h3>
     <p>Add <code>.carousel-fade</code> to your carousel to animate slides with a fade transition instead of a slide. Depending on your carousel content (e.g., text only slides), you may want to add <code>.bg-body</code> or some custom CSS to the <code>.carousel-item</code>s for proper crossfading.</p>
     <Example code='<div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -153,9 +153,9 @@
         </button>
       </div>' /><p>When the <code>ride</code> option is set to <code>true</code>, rather than <code>carousel</code>, the carousel won’t automatically start to cycle on page load. Instead, it will only start after the first user interaction.</p>
     <Example code='<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -175,9 +175,9 @@
       </div>' /><h3 id="individual-carousel-item-interval">Individual <code>.carousel-item</code> interval<a class="anchor-link" href="#individual-carousel-item-interval" aria-label="Link to Individual .carousel-item interval"></a></h3>
     <p>Add <code>data-bs-interval=&quot;&quot;</code> to a <code>.carousel-item</code> to change the amount of time to delay between automatically cycling to the next item.</p>
     <Example code='<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -197,9 +197,9 @@
       </div>' /><h3 id="autoplaying-carousels-without-controls">Autoplaying carousels without controls<a class="anchor-link" href="#autoplaying-carousels-without-controls" aria-label="Link to Autoplaying carousels without controls"></a></h3>
     <p>Here’s a carousel with slides only. Note the presence of the <code>.d-block</code> and <code>.w-100</code> on carousel images to prevent browser default image alignment.</p>
     <Example code='<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
@@ -211,9 +211,9 @@
       </div>' /><h2 id="disable-touch-swiping">Disable touch swiping<a class="anchor-link" href="#disable-touch-swiping" aria-label="Link to Disable touch swiping"></a></h2>
     <p>Carousels support swiping left/right on touchscreen devices to move between slides. This can be disabled by setting the <code>touch</code> option to <code>false</code>.</p>
     <Example code='<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#555" background="#777" text="First slide" />
           </div>
           <div class="carousel-item">
             <Placeholder width="800" height="400" class="docs-placeholder-img-lg d-block w-100" color="#444" background="#666" text="Second slide" />
