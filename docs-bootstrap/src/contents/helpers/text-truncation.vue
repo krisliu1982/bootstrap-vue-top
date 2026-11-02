@@ -1,6 +1,6 @@
 
 <template>
-  <article>
+  <article class="docs-content">
     <h1>Text truncation</h1>
     <p>Truncate long strings of text with an ellipsis.</p>
 

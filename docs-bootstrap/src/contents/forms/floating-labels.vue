@@ -1,6 +1,6 @@
 
 <template>
-  <article>
+  <article class="docs-content">
     <h1>Floating labels</h1>
     <p>Create beautifully simple form labels that float over your input fields.</p>
 

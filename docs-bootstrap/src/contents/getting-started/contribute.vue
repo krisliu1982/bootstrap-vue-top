@@ -1,6 +1,6 @@
 
 <template>
-  <article>
+  <article class="docs-content">
     <h1>Contribute</h1>
     <p>Help develop Bootstrap with our documentation build scripts and tests.</p>
 
