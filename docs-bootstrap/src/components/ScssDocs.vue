@@ -15,23 +15,16 @@
 </template>
 
 <script setup>
-import { ref,computed } from 'vue'
+import { ref } from 'vue'
 import Code from './code.vue'
-import snippets from '@nrg-ui/code-snippets/virtual'
+import scss from '@/data/scss.json' with { type: 'json' };
 
 const props = defineProps({
   name: { type: String, required: true },
   file: { type: String, required: true },
 })
 
-const content = computed(() => {
-  const snippet = snippets[props.name]
-  if (!snippet) {
-    throw new Error(`Snippet "${props.name}" not found`)
-  }
-  // 注意：插件不会自动去掉 !default，需要在这里处理
-  return snippet.code.replaceAll(' !default', '')
-})
+const content = scss[props.name] || '暂无内容';
 
 const isCopy = ref(false);
 function handleCopy() {
