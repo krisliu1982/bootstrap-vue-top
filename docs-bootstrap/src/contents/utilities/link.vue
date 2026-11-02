@@ -35,14 +35,14 @@
     <Example code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
         Underline opacity 0
       </a>' /><h2 id="colored-links">Colored links<a class="anchor-link" href="#colored-links" aria-label="Link to Colored links"></a></h2>
-    <p><a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.</p>
+    <p><a href="/docs-bootstrap/5.3/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.</p>
     <Example :code='[
       ...data["theme-colors"].map((themeColor) => `<p><a href="#" class="link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">${themeColor.name} link</a></p>`),
       `<p><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p>`
     ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <p>In addition to the following Sass functionality, consider reading about our included <a href="/customize/css-variables">CSS custom properties</a> (aka CSS variables) for colors and more.</p>
+    <p>In addition to the following Sass functionality, consider reading about our included <a href="/docs-bootstrap/5.3/customize/css-variables">CSS custom properties</a> (aka CSS variables) for colors and more.</p>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Link utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
+    <p>Link utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
   </article>
 

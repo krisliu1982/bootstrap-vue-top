@@ -5,7 +5,7 @@
     <p>Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
 
     <h2 id="get-familiar">Get familiar<a class="anchor-link" href="#get-familiar" aria-label="Link to Get familiar"></a></h2>
-    <p>We recommend getting familiar with Bootstrap first by reading through our <a href="/getting-started/introduction">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.</p>
+    <p>We recommend getting familiar with Bootstrap first by reading through our <a href="/docs-bootstrap/5.3/getting-started/introduction">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.</p>
     <p>You may also want to read up on <a href="https://rtlcss.com/">the RTLCSS project</a>, as it powers our approach to RTL.</p>
     <Callout type="warning">
     <p><strong>Bootstrap’s RTL feature is still experimental</strong> and will evolve based on user feedback. Spotted something or have an improvement to suggest? <a href="https://github.com/twbs/bootstrap/issues/new/choose">Open an issue</a>, we’d love to get your insights.</p>
@@ -59,7 +59,7 @@
     <p>  For example, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>.</p>
     <p>Working with RTL, through our source Sass or compiled CSS, shouldn’t be much different from our default LTR though.</p>
     <h2 id="customize-from-source">Customize from source<a class="anchor-link" href="#customize-from-source" aria-label="Link to Customize from source"></a></h2>
-    <p>When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.</p>
+    <p>When it comes to <a href="/docs-bootstrap/5.3/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.</p>
     <h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
     <p>Using <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS value directives</a>, you can make a variable output a different value for RTL. For example, to decrease the weight for <code>$font-weight-bold</code> throughout the codebase, you may use the <code>/*rtl: {value}*/</code> syntax:</p>
     <CodeWrapper code="$font-weight-bold: 700 #{/* rtl:600 */} !default;
@@ -124,7 +124,7 @@ sans-serif,
     <p><strong>Edge cases and known limitations</strong> to consider when working with a combined LTR and RTL implementation:</p>
     <ol>
     <li>When switching <code>.ltr</code> and <code>.rtl</code>, make sure you add <code>dir</code> and <code>lang</code> attributes accordingly.</li>
-    <li>Loading both files can be a real performance bottleneck: consider some <a href="/customize/optimize">optimization</a>, and maybe try to <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.</li>
+    <li>Loading both files can be a real performance bottleneck: consider some <a href="/docs-bootstrap/5.3/customize/optimize">optimization</a>, and maybe try to <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.</li>
     <li>Nesting styles this way will prevent our <code>form-validation-state()</code> mixin from working as intended, thus require you tweak it a bit by yourself. <a href="https://github.com/twbs/bootstrap/issues/31223">See #31223</a>.</li>
     </ol>
     </Callout><p>Do you want to automate this process and address several edge cases involving both directions within a single stylesheet? Then, consider using <a href="https://github.com/elchininet/postcss-rtlcss">PostCSS RTLCSS</a> as a <a href="https://github.com/postcss/postcss">PostCSS</a> plugin to process your source files. PostCSS RTLCSS uses <a href="https://rtlcss.com">RTLCSS</a> behind the scenes to manage the direction flipping process, but it separates the flipped declarations into rules with a different prefix for LTR and RTL, something that allows you to have both directions within the same stylesheet file. By doing this, you can switch between LTR and RTL orientations by simply changing the <code>dir</code> of the page (or even by modifying a specific class if you configure the plugin accordingly).</p>
@@ -132,11 +132,11 @@ sans-serif,
     <p><strong>Important things to take into account</strong> when using PostCSS RTLCSS to build a combined LTR and RTL implementation:</p>
     <ol>
     <li>It is recommended that you add the <code>dir</code> attribute to the <code>html</code> element. This way, the entire page will be affected when you change the direction. Also, make sure you add the <code>lang</code> attribute accordingly.</li>
-    <li>Having a single bundle with both directions will increase the size of the final stylesheet (on average, by 20%-30%): consider some <a href="/customize/optimize">optimization</a>.</li>
+    <li>Having a single bundle with both directions will increase the size of the final stylesheet (on average, by 20%-30%): consider some <a href="/docs-bootstrap/5.3/customize/optimize">optimization</a>.</li>
     <li>Take into account that PostCSS RTLCSS is not compatible with <code>/* rtl:remove */</code> directives because it doesn’t remove any CSS rule. You should replace your <code>/* rtl:remove */</code>, <code>/* rtl:begin:remove */</code> and <code>/* rtl:end:remove */</code> directives with <code>/* rtl:freeze */</code>, <code>/* rtl:begin:freeze */</code> and <code>/* rtl:end:freeze */</code> directives respectively. These directives will prefix the targeted rules or declarations with the current direction but will not create an RTL counterpart (same result as the <code>remove</code> ones in RTLCSS).</li>
     </ol>
     </Callout><h2 id="the-breadcrumb-case">The breadcrumb case<a class="anchor-link" href="#the-breadcrumb-case" aria-label="Link to The breadcrumb case"></a></h2>
-    <p>The <a href="/components/breadcrumb#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely <code>$breadcrumb-divider-flipped</code> —defaulting to <code>$breadcrumb-divider</code>.</p>
+    <p>The <a href="/docs-bootstrap/5.3/components/breadcrumb#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely <code>$breadcrumb-divider-flipped</code> —defaulting to <code>$breadcrumb-divider</code>.</p>
     <h2 id="additional-resources">Additional resources<a class="anchor-link" href="#additional-resources" aria-label="Link to Additional resources"></a></h2>
     <ul>
     <li><a href="https://rtlcss.com/">RTLCSS</a></li>

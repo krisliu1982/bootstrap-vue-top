@@ -661,7 +661,7 @@
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#">Separated link</a></li>
       </ul>' /><h3 id="text">Text<a class="anchor-link" href="#text" aria-label="Link to Text"></a></h3>
-    <p>Place any freeform text within a dropdown menu with text and use <a href="/utilities/spacing">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
+    <p>Place any freeform text within a dropdown menu with text and use <a href="/docs-bootstrap/5.3/utilities/spacing">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
     <Example code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
         <p>
           Some example text that’s free-flowing within the dropdown menu.
@@ -670,7 +670,7 @@
           And this is more example text.
         </p>
       </div>' /><h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
-    <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="/utilities/spacing">margin or padding utilities</a> to give it the negative space you require.</p>
+    <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use <a href="/docs-bootstrap/5.3/utilities/spacing">margin or padding utilities</a> to give it the negative space you require.</p>
     <Example code='<div class="dropdown-menu">
         <form class="px-4 py-3">
           <div class="mb-3">

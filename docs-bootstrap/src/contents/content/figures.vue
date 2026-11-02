@@ -9,7 +9,7 @@
     <Example code='<figure class="figure">
         <Placeholder width="400" height="300" class="figure-img img-fluid rounded" />
         <figcaption class="figure-caption">A caption for the above image.</figcaption>
-      </figure>' /><p>Aligning the figure’s caption is easy with our <a href="/utilities/text#text-alignment">text utilities</a>.</p>
+      </figure>' /><p>Aligning the figure’s caption is easy with our <a href="/docs-bootstrap/5.3/utilities/text#text-alignment">text utilities</a>.</p>
     <Example code='<figure class="figure">
         <Placeholder width="400" height="300" class="figure-img img-fluid rounded" />
         <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>

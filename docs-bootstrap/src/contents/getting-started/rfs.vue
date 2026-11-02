@@ -41,7 +41,7 @@
     <li><code>rfs-value()</code> converts a value into a <code>rem</code> value if a <code>px</code> value is passed, in other cases it returns the same result.</li>
     <li><code>rfs-fluid-value()</code> returns the fluid version of a value if the property needs rescaling.</li>
     </ul>
-    <p>In this example, we use one of Bootstrap’s built-in <a href="/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.</p>
+    <p>In this example, we use one of Bootstrap’s built-in <a href="/docs-bootstrap/5.3/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.</p>
     <CodeWrapper code=".selector {
   @include media-breakpoint-down(lg) {
     padding: rfs-fluid-value(2rem);

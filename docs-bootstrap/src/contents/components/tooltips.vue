@@ -116,8 +116,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     <tbody><tr>
     <td><code>allowList</code></td>
     <td>object</td>
-    <td><a href="/getting-started/javascript#sanitizer">Default value</a></td>
-    <td>An object containing allowed tags and attributes. Those not explicitly allowed will be removed by <a href="/getting-started/javascript#sanitizer">the content sanitizer</a>. <Callout type="warning"><strong>Exercise caution when adding to this list.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information.</Callout></td>
+    <td><a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">Default value</a></td>
+    <td>An object containing allowed tags and attributes. Those not explicitly allowed will be removed by <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">the content sanitizer</a>. <Callout type="warning"><strong>Exercise caution when adding to this list.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information.</Callout></td>
     </tr>
     <tr>
     <td><code>animation</code></td>
@@ -183,13 +183,13 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     <td><code>sanitize</code></td>
     <td>boolean</td>
     <td><code>true</code></td>
-    <td>Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized. <Callout type="warning"><strong>Exercise caution when disabling content sanitization.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information. Vulnerabilities caused solely by disabling content sanitization are not considered within scope for Bootstrap’s security model.</Callout></td>
+    <td>Enable <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized. <Callout type="warning"><strong>Exercise caution when disabling content sanitization.</strong> Refer to <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a> for more information. Vulnerabilities caused solely by disabling content sanitization are not considered within scope for Bootstrap’s security model.</Callout></td>
     </tr>
     <tr>
     <td><code>sanitizeFn</code></td>
     <td>null, function</td>
     <td><code>null</code></td>
-    <td>Provide an alternative <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.</td>
+    <td>Provide an alternative <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.</td>
     </tr>
     <tr>
     <td><code>selector</code></td>

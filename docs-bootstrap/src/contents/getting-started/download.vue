@@ -7,18 +7,18 @@
     <h2 id="compiled-css-and-js">Compiled CSS and JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="Link to Compiled CSS and JS"></a></h2>
     <p>Download ready-to-use compiled code for <strong>Bootstrap v5.3.8</strong> to easily drop into your project, which includes:</p>
     <ul>
-    <li>Compiled and minified CSS bundles (see <a href="/getting-started/contents#css-files">CSS files comparison</a>)</li>
-    <li>Compiled and minified JavaScript plugins (see <a href="/getting-started/contents#js-files">JS files comparison</a>)</li>
+    <li>Compiled and minified CSS bundles (see <a href="/docs-bootstrap/5.3/getting-started/contents#css-files">CSS files comparison</a>)</li>
+    <li>Compiled and minified JavaScript plugins (see <a href="/docs-bootstrap/5.3/getting-started/contents#js-files">JS files comparison</a>)</li>
     </ul>
     <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies like Popper.</p>
     <p><a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-docs-primary">Download</a></p>
     <h2 id="source-files">Source files<a class="anchor-link" href="#source-files" aria-label="Link to Source files"></a></h2>
     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
     <ul>
-    <li><a href="/getting-started/contribute#sass">Sass compiler</a> for compiling Sass source files into CSS files</li>
+    <li><a href="/docs-bootstrap/5.3/getting-started/contribute#sass">Sass compiler</a> for compiling Sass source files into CSS files</li>
     <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for CSS vendor prefixing</li>
     </ul>
-    <p>Should you require our full set of <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.</p>
+    <p>Should you require our full set of <a href="/docs-bootstrap/5.3/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.</p>
     <p><a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-docs-primary">Download source</a></p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>If you want to download and examine our <a href="https://getbootstrap.com/docs/5.3/examples">examples</a>, you can grab the already built examples:</p>
@@ -41,7 +41,7 @@
     <CodeWrapper code="openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
 " lang="shell" />
     <h2 id="package-managers">Package managers<a class="anchor-link" href="#package-managers" aria-label="Link to Package managers"></a></h2>
-    <p>Pull in Bootstrap’s <strong>source files</strong> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will <strong>require a <a href="/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong> for a setup that matches our official compiled versions.</p>
+    <p>Pull in Bootstrap’s <strong>source files</strong> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will <strong>require a <a href="/docs-bootstrap/5.3/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong> for a setup that matches our official compiled versions.</p>
     <h3 id="npm">npm<a class="anchor-link" href="#npm" aria-label="Link to npm"></a></h3>
     <p>Install Bootstrap in your Node.js powered apps with <a href="https://www.npmjs.com/package/bootstrap">the npm package</a>:</p>
     <CodeWrapper code="npm install bootstrap@5.3.8

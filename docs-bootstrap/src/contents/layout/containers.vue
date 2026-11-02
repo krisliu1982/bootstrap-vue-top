@@ -110,7 +110,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by modifying the Sass map (found in <code>_variables.scss</code>) that powers them:</p>
-    <ScssDocs name="container-max-widths" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/layout/grid#css">the Sass section of the Grid documentation</a>.</p>
+    <ScssDocs name="container-max-widths" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/docs-bootstrap/5.3/layout/grid#css">the Sass section of the Grid documentation</a>.</p>
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>In addition to customizing the Sass, you can also create your own containers with our Sass mixin.</p>
     <CodeWrapper code="// Source mixin

@@ -385,7 +385,7 @@
     </div>
     <p>All these colors are available as a Sass map, <code>$theme-colors</code>.</p>
     <ScssDocs name="theme-colors-map" file="scss/_variables.scss" />
-    <p>Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to modify
+    <p>Check out <a href="/docs-bootstrap/5.3/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to modify
       these colors.</p>
     <h3 id="all-colors">All colors<a class="anchor-link" href="#all-colors" aria-label="Link to All colors"></a></h3>
     <p>All Bootstrap colors are available as Sass variables and a Sass map in <code>scss/_variables.scss</code> file. To
@@ -574,7 +574,7 @@
   background-color: $indigo-900;
 }
 " lang="scss" />
-    <p><a href="/utilities/colors">Color</a> and <a href="/utilities/background">background</a>
+    <p><a href="/docs-bootstrap/5.3/utilities/colors">Color</a> and <a href="/docs-bootstrap/5.3/utilities/background">background</a>
       utility classes are also available for setting <code>color</code> and <code>background-color</code> using the
       <code>500</code> color values.
     </p>
@@ -582,7 +582,7 @@
         aria-label="Link to Generating utilities"></a></h2>
     <AddedIn version="5.1.0" />
     <p>Bootstrap doesn’t include <code>color</code> and <code>background-color</code> utilities for every color
-      variable, but you can generate these yourself with our <a href="/utilities/api">utility API</a> and
+      variable, but you can generate these yourself with our <a href="/docs-bootstrap/5.3/utilities/api">utility API</a> and
       our extended Sass maps added in v5.1.0.</p>
     <ol>
       <li>To start, make sure you’ve imported our functions, variables, mixins, and utilities.</li>

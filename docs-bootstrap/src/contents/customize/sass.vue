@@ -84,7 +84,7 @@ sass --watch ./scss/custom.scss ./css/custom.css
 " lang="shell" />
     <p>Learn more about your options at <a href="https://sass-lang.com/install/">sass-lang.com/install</a> and <a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">compiling with VS Code</a>.</p>
     <Callout>
-    <p><strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/getting-started/webpack">Webpack</a>, <a href="/getting-started/parcel">Parcel</a>, or <a href="/getting-started/vite">Vite</a>. We also have production-ready demos in <a href="https://github.com/twbs/examples">our examples repository on GitHub</a>.</p>
+    <p><strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/docs-bootstrap/5.3/getting-started/webpack">Webpack</a>, <a href="/docs-bootstrap/5.3/getting-started/parcel">Parcel</a>, or <a href="/docs-bootstrap/5.3/getting-started/vite">Vite</a>. We also have production-ready demos in <a href="https://github.com/twbs/examples">our examples repository on GitHub</a>.</p>
     </Callout><h2 id="including">Including<a class="anchor-link" href="#including" aria-label="Link to Including"></a></h2>
     <p>Once your CSS is compiled, you can include it in your HTML files. Inside your <code>index.html</code> you’ll want to include your compiled CSS file. Be sure to update the path to your compiled CSS file if you’ve changed it.</p>
     <CodeWrapper code='&lt;!doctype html&gt;
@@ -171,7 +171,7 @@ $theme-colors: map-remove($theme-colors, &quot;info&quot;, &quot;light&quot;, &q
     <p>For example, we use the <code>primary</code>, <code>success</code>, and <code>danger</code> keys from <code>$theme-colors</code> for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that makes use of those values.</p>
     <h2 id="functions">Functions<a class="anchor-link" href="#functions" aria-label="Link to Functions"></a></h2>
     <h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
-    <p>Next to the <a href="/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like <code>$primary</code>.</p>
+    <p>Next to the <a href="/docs-bootstrap/5.3/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like <code>$primary</code>.</p>
     <CodeWrapper code=".custom-element {
   color: $gray-100;
   background-color: $dark;
@@ -248,7 +248,7 @@ $border-width: 0;
     <h2 id="mixins">Mixins<a class="anchor-link" href="#mixins" aria-label="Link to Mixins"></a></h2>
     <p>Our <code>scss/mixins/</code> directory has a ton of mixins that power parts of Bootstrap and can also be used across your own project.</p>
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
-    <p>A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See <a href="/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.</p>
+    <p>A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See <a href="/docs-bootstrap/5.3/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.</p>
     <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" />
     <CodeWrapper code=".custom-element {
   @include color-scheme(light) {

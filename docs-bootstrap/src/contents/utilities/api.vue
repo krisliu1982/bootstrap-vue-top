@@ -68,7 +68,7 @@
     <td><code>rfs</code></td>
     <td>Optional</td>
     <td><code>false</code></td>
-    <td>Boolean to enable <a href="/getting-started/rfs">fluid rescaling with RFS</a>.</td>
+    <td>Boolean to enable <a href="/docs-bootstrap/5.3/getting-started/rfs">fluid rescaling with RFS</a>.</td>
     </tr>
     <tr>
     <td><a href="#print"><code>print</code></a></td>
@@ -121,10 +121,10 @@
 " lang="css" />
     <h3 id="values">Values<a class="anchor-link" href="#values" aria-label="Link to Values"></a></h3>
     <p>Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map (set in the utilities or in a Sass variable).</p>
-    <p>As a list, like with <a href="/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:</p>
+    <p>As a list, like with <a href="/docs-bootstrap/5.3/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:</p>
     <CodeWrapper code="values: none underline line-through
 " lang="scss" />
-    <p>As a map, like with <a href="/utilities/opacity"><code>opacity</code> utilities</a>:</p>
+    <p>As a map, like with <a href="/docs-bootstrap/5.3/utilities/opacity"><code>opacity</code> utilities</a>:</p>
     <CodeWrapper code="values: (
   0: 0,
   25: .25,
@@ -133,7 +133,7 @@
   100: 1,
 )
 " lang="scss" />
-    <p>As a Sass variable that sets the list or map, as in our <a href="/utilities/position"><code>position</code> utilities</a>:</p>
+    <p>As a Sass variable that sets the list or map, as in our <a href="/docs-bootstrap/5.3/utilities/position"><code>position</code> utilities</a>:</p>
     <CodeWrapper code="values: $position-values
 " lang="scss" />
     <h3 id="class">Class<a class="anchor-link" href="#class" aria-label="Link to Class"></a></h3>
@@ -248,7 +248,7 @@
 .opacity-100-hover:hover { opacity: 1 !important; }
 " lang="css" />
     <h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
-    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/layout/breakpoints">all breakpoints</a>.</p>
+    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/docs-bootstrap/5.3/layout/breakpoints">all breakpoints</a>.</p>
     <CodeWrapper code="$utilities: (
   &quot;opacity&quot;: (
     property: opacity,
