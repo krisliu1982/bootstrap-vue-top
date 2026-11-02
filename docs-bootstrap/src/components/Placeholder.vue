@@ -6,7 +6,7 @@
             <title v-if="props.title !== false">{{ props.title }}</title>
             <rect width="100%" height="100%" :fill="props.background"></rect>
             <text v-if="props.text !== false" x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                {{ props.text }}
+                {{ textContent }}
             </text>
         </svg>
     </template>
@@ -24,7 +24,7 @@ const props = defineProps({
     color: { type: String, default: '#dee2e6' },
     markup: { type: String, default: 'svg' },
     width: { type: String, default: '100%' },
-    text: { type: [String , Boolean], default: 'w*h' },
+    text: { type: [String , Boolean], default: undefined },
     title: { type: [String , Boolean], default: 'Placeholder' },
     class: { type: String, default: null }
 })
@@ -72,4 +72,6 @@ function getPlaceholderSrc(
 
     return `data:image/svg+xml,${encodedSvg}`
 }
+
+const textContent = props.text !== undefined ? props.text : props.width + 'x' + props.height
 </script>

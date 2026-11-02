@@ -709,11 +709,6 @@
         font-weight: 300;
   }
 
-  .docs-content>h2,
-  .docs-content>h3,
-  .docs-content>h4 {
-  }
-
   .docs-content>h2:not(:first-child) {
       margin-top: 3rem
   }
@@ -722,73 +717,6 @@
       margin-top: 2rem
   }
 
-  .docs-content>ul li,
-  .docs-content>ol li {
-      margin-bottom: .25rem
-  }
-
-  .docs-content>ul li>p~ul,
-  .docs-content>ol li>p~ul {
-      margin-top: -.5rem;
-      margin-bottom: 1rem
-  }
-
-  .docs-content>.table,
-  .docs-content>.table-responsive .table {
-      --bs-table-border-color: var(--bs-border-color);
-      max-width: 100%;
-      margin-bottom: 1.5rem;
-      font-size: .875rem
-  }
-
-  @media (max-width: 991.98px) {
-
-      .docs-content>.table.table-bordered,
-      .docs-content>.table-responsive .table.table-bordered {
-          border: 0
-      }
-  }
-
-  .docs-content>.table thead,
-  .docs-content>.table-responsive .table thead {
-      border-bottom: 2px solid currentcolor
-  }
-
-  .docs-content>.table tbody:not(:first-child),
-  .docs-content>.table-responsive .table tbody:not(:first-child) {
-      border-top: 2px solid currentcolor
-  }
-
-  .docs-content>.table th:first-child,
-  .docs-content>.table td:first-child,
-  .docs-content>.table-responsive .table th:first-child,
-  .docs-content>.table-responsive .table td:first-child {
-      padding-left: 0
-  }
-
-  .docs-content>.table th:not(:last-child),
-  .docs-content>.table td:not(:last-child),
-  .docs-content>.table-responsive .table th:not(:last-child),
-  .docs-content>.table-responsive .table td:not(:last-child) {
-      padding-right: 1.5rem
-  }
-
-  .docs-content>.table th,
-  .docs-content>.table-responsive .table th {
-      color: var(--bs-emphasis-color)
-  }
-
-  .docs-content>.table:not(.docs-callout)>strong,
-  .docs-content>.table-responsive .table:not(.docs-callout)>strong {
-      color: var(--bs-emphasis-color)
-  }
-
-  .docs-content>.table th,
-  .docs-content>.table td:first-child>code,
-  .docs-content>.table-responsive .table th,
-  .docs-content>.table-responsive .table td:first-child>code {
-      white-space: nowrap
-  }
 
   .table-options td:nth-child(2) {
       min-width: 160px

@@ -1,4 +1,5 @@
 <template>
+  <div class="docs-example border rounded mb-3">
   <table :class="props.class">
   <thead>
     <tr>
@@ -29,6 +30,7 @@
     </tr>
   </tbody>
   </table>
+  </div>
 
     <CodeWrapper :code="tableCode" lang="html" />
 </template>

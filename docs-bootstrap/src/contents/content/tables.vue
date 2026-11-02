@@ -11,7 +11,7 @@
     <p>Use contextual classes to color tables, table rows or individual cells.</p>
     <Callout>
     <p><strong>Heads up!</strong> Because of the more complicated CSS used to generate our table variants, they most likely won’t see color mode adaptive styling until v6.</p>
-    </Callout><div class="docs-example">
+    </Callout><div class="docs-example border rounded mb-3">
       <table class="table">
         <thead>
           <tr>
@@ -197,35 +197,35 @@
     <TableBs class="table table-sm" /><TableBs class="table table-dark table-sm" /><h2 id="table-group-dividers">Table group dividers<a class="anchor-link" href="#table-group-dividers" aria-label="Link to Table group dividers"></a></h2>
     <p>Add a thicker border, darker between table groups—<code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code>—with <code>.table-group-divider</code>. Customize the color by changing the <code>border-top-color</code> (which we don’t currently provide a utility class for at this time).</p>
     <Example code='<table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>@social</td>
-          </tr>
-        </tbody>
-      </table>' /><h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>' /><h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
     <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="/docs-bootstrap/5.3/utilities/vertical-align">vertical align</a> classes to re-align where needed.</p>
     <Example :showMarkup="false" code='<div class="table-responsive">
       <table class="table align-middle">
@@ -493,7 +493,7 @@
 &lt;/table&gt; ' lang="html" />
     <h3 id="captions">Captions<a class="anchor-link" href="#captions" aria-label="Link to Captions"></a></h3>
     <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
-    <div class="docs-example">
+    <div class="docs-example border rounded mb-3">
       <table class="table">
         <caption>List of users</caption>
   <thead>
@@ -536,100 +536,99 @@
   &lt;/tbody&gt;
 &lt;/table&gt; ' lang="html" />
     <p>You can also put the <code>&lt;caption&gt;</code> on the top of the table with <code>.caption-top</code>.</p>
-    <Example code='<table class="table caption-top">
-        <caption>List of users</caption>
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>@social</td>
-          </tr>
-        </tbody>
-      </table>' /><h2 id="responsive-tables">Responsive tables<a class="anchor-link" href="#responsive-tables" aria-label="Link to Responsive tables"></a></h2>
-    <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
-    <Callout type="warning">
-    <h5 id="vertical-clippingtruncation">Vertical clipping/truncation</h5>
-    <p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.</p>
-    </Callout><h3 id="always-responsive">Always responsive<a class="anchor-link" href="#always-responsive" aria-label="Link to Always responsive"></a></h3>
-    <p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
-    <Example :showMarkup="false" code='<div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-            <th scope="col">Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    ' />
+<Example code='<table class="table caption-top">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>' /><h2 id="responsive-tables">Responsive tables<a class="anchor-link" href="#responsive-tables" aria-label="Link to Responsive tables"></a></h2>
+<p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
+<Callout type="warning">
+<h5 id="vertical-clippingtruncation">Vertical clipping/truncation</h5>
+<p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.</p>
+</Callout><h3 id="always-responsive">Always responsive<a class="anchor-link" href="#always-responsive" aria-label="Link to Always responsive"></a></h3>
+<p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
+<Example :showMarkup="false" code='<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+        <th scope="col">Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </tbody>
+  </table>
+</div>' />
     <CodeWrapper code='&lt;div class=&quot;table-responsive&quot;&gt;
   &lt;table class=&quot;table&quot;&gt;
     ...
@@ -639,7 +638,8 @@
     <p>Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
     <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
     <p>
-              <div v-for="breakpoint in data['breakpoints']" class="docs-example">
+              <div v-for="breakpoint in data['breakpoints']" class="docs-example border rounded mb-3">
+                <p class="text-muted small mb-2">class: <code>table-responsive{{ breakpoint.abbr }}</code></p>
           <div :class="`table-responsive${breakpoint.abbr}`">
             <table class="table">
               <thead>
@@ -695,11 +695,10 @@
         </div>
   </p>
     <CodeWrapper :code='data["breakpoints"].map((breakpoint) => `<div class="table-responsive${breakpoint.abbr}">
-        <table class="table">
-          ...
-        </table>
-    </div>
-    `).join("\n")' lang="html" /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+  <table class="table">
+    ...
+  </table>
+</div>`).join("\n")' lang="html" /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="table-variables" file="scss/_variables.scss" /><h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
     <ScssDocs name="table-loop" file="scss/_variables.scss" /><h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>
