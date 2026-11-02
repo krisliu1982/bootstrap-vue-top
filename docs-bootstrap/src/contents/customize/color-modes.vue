@@ -12,32 +12,33 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>For example, to change the color mode of a dropdown menu, add <code>data-bs-theme=&quot;light&quot;</code> or <code>data-bs-theme=&quot;dark&quot;</code> to the parent <code>.dropdown</code>. Now, no matter the global color mode, these dropdowns will display with the specified theme value.</p>
     <Example class="d-flex justify-content-between" code='<div class="dropdown" data-bs-theme="light">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-          Default dropdown
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-          <li><a class="dropdown-item active" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+    Default dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
 
-      <div class="dropdown" data-bs-theme="dark">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
-          Dark dropdown
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
-          <li><a class="dropdown-item active" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div>' /><h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
+<div class="dropdown" data-bs-theme="dark">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
+    Dark dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+    <li><a class="dropdown-item active" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>' />
+    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <ul>
     <li><p>As shown above, color mode styles are controlled by the <code>data-bs-theme</code> attribute. This attribute can be applied to the <code>&lt;html&gt;</code> element, or to any other element or Bootstrap component. If applied to the <code>&lt;html&gt;</code> element, it will apply to everything. If applied to a component or element, it will be scoped to that specific component or element.</p>
     </li>
