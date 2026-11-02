@@ -84,10 +84,11 @@
   /* 桌面：≥ 992px */
   @media (min-width: 992px) {
       .docs-toc {
+          display: block;
           grid-area: toc;
           position: sticky;
-          top: 4rem;
-          height: calc(100vh - 5rem);
+          top: 4.5rem;
+          height: calc(100vh - 6rem);
           overflow-y: auto;
       }
   }

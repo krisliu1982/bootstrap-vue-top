@@ -352,4 +352,40 @@ sans-serif,
     <p>Since <code>[hidden]</code> is not compatible with jQuery’s <code>$(...).hide()</code> and <code>$(...).show()</code> methods, we don’t specifically endorse <code>[hidden]</code> over other techniques for managing the <code>display</code> of elements.</p>
     </Callout><p>To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use <a href="/utilities/visibility">the <code>.invisible</code> class</a> instead.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#css-variables">CSS variables</a></li>
+      <li><a href="#page-defaults">Page defaults</a></li>
+      <li><a href="#native-font-stack">Native font stack</a></li>
+      <li><a href="#headings">Headings</a></li>
+      <li><a href="#paragraphs">Paragraphs</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#horizontal-rules">Horizontal rules</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#inline-code">Inline code</a></li>
+      <li><a href="#code-blocks">Code blocks</a></li>
+      <li><a href="#variables">Variables</a></li>
+      <li><a href="#user-input">User input</a></li>
+      <li><a href="#sample-output">Sample output</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li>
+        <a href="#forms">Forms</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#pointers-on-buttons" class="ps-4">Pointers on buttons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#misc-elements">Misc elements</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#address" class="ps-4">Address</a></li>
+          <li><a href="#blockquote" class="ps-4">Blockquote</a></li>
+          <li><a href="#inline-elements" class="ps-4">Inline elements</a></li>
+          <li><a href="#summary" class="ps-4">Summary</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

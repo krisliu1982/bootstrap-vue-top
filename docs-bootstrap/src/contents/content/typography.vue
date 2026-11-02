@@ -202,4 +202,45 @@
     <ScssDocs name="type-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>There are no dedicated mixins for typography, but Bootstrap does use <a href="/getting-started/rfs">Responsive Font Sizing (RFS)</a>.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#global-settings">Global settings</a></li>
+      <li>
+        <a href="#headings">Headings</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#customizing-headings" class="ps-4">Customizing headings</a></li>
+        </ul>
+      </li>
+      <li><a href="#display-headings">Display headings</a></li>
+      <li><a href="#lead">Lead</a></li>
+      <li><a href="#inline-text-elements">Inline text elements</a></li>
+      <li><a href="#text-utilities">Text utilities</a></li>
+      <li><a href="#abbreviations">Abbreviations</a></li>
+      <li>
+        <a href="#blockquotes">Blockquotes</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#naming-a-source" class="ps-4">Naming a source</a></li>
+          <li><a href="#alignment" class="ps-4">Alignment</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#lists">Lists</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#unstyled" class="ps-4">Unstyled</a></li>
+          <li><a href="#inline" class="ps-4">Inline</a></li>
+          <li><a href="#description-list-alignment" class="ps-4">Description list alignment</a></li>
+        </ul>
+      </li>
+      <li><a href="#responsive-font-sizes">Responsive font sizes</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

@@ -708,8 +708,60 @@
     <li>Apart from the light &amp; dark table variants, theme colors are lightened by the <code>$table-bg-scale</code> variable.</li>
     </ul>
   </article>
-</template>
 
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#variants">Variants</a></li>
+      <li>
+        <a href="#accented-tables">Accented tables</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#striped-rows" class="ps-4">Striped rows</a></li>
+          <li><a href="#striped-columns" class="ps-4">Striped columns</a></li>
+          <li><a href="#hoverable-rows" class="ps-4">Hoverable rows</a></li>
+          <li><a href="#active-tables" class="ps-4">Active tables</a></li>
+        </ul>
+      </li>
+      <li><a href="#how-do-the-variants-and-accented-tables-work">How do the variants and accented tables work?</a></li>
+      <li>
+        <a href="#table-borders">Table borders</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#bordered-tables" class="ps-4">Bordered tables</a></li>
+          <li><a href="#tables-without-borders" class="ps-4">Tables without borders</a></li>
+        </ul>
+      </li>
+      <li><a href="#small-tables">Small tables</a></li>
+      <li><a href="#table-group-dividers">Table group dividers</a></li>
+      <li><a href="#vertical-alignment">Vertical alignment</a></li>
+      <li><a href="#nesting">Nesting</a></li>
+      <li><a href="#how-nesting-works">How nesting works</a></li>
+      <li>
+        <a href="#anatomy">Anatomy</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#table-head" class="ps-4">Table head</a></li>
+          <li><a href="#table-foot" class="ps-4">Table foot</a></li>
+          <li><a href="#captions" class="ps-4">Captions</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#responsive-tables">Responsive tables</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#always-responsive" class="ps-4">Always responsive</a></li>
+          <li><a href="#breakpoint-specific" class="ps-4">Breakpoint specific</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#customizing" class="ps-4">Customizing</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</template>
 <script setup>
 import data from '@/data/data.js'
 </script>
