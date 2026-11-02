@@ -73,33 +73,31 @@ dt {
 /* bootstrap.rtl.css */
 dt {
   font-weight: 600;
-}
-" lang="css" />
+}" lang="css" />
     <h3 id="alternative-font-stack">Alternative font stack<a class="anchor-link" href="#alternative-font-stack" aria-label="Link to Alternative font stack"></a></h3>
     <p>In the case you’re using a custom font, be aware that not all fonts support the non-Latin alphabet. To switch from Pan-European to Arabic family, you may need to use <code>/*rtl:insert: {value}*/</code> in your font stack to modify the names of font families.</p>
     <p>For example, to switch from <code>Helvetica Neue</code> font for LTR to <code>Helvetica Neue Arabic</code> for RTL, your Sass code could look like this:</p>
     <CodeWrapper code="$font-family-sans-serif:
-Helvetica Neue #{&quot;/* rtl:insert:Arabic */&quot;},
-// Cross-platform generic font family (default user interface font)
-system-ui,
-// Safari for macOS and iOS (San Francisco)
--apple-system,
-// Chrome &lt; 56 for macOS (San Francisco)
-BlinkMacSystemFont,
-// Windows
-&quot;Segoe UI&quot;,
-// Android
-Roboto,
-// Basic web fallback
-Arial,
-// Linux
-&quot;Noto Sans&quot;,
-// Sans serif fallback
-sans-serif,
-// Emoji fonts
-&quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;
-" lang="scss" />
-    <h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
+  Helvetica Neue #{&quot;/* rtl:insert:Arabic */&quot;},
+  // Cross-platform generic font family (default user interface font)
+  system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome &lt; 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  &quot;Segoe UI&quot;,
+  // Android
+  Roboto,
+  // Basic web fallback
+  Arial,
+  // Linux
+  &quot;Noto Sans&quot;,
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !default;" lang="scss" />
+      <h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
     <p>Need both LTR and RTL on the same page? Thanks to <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS String Maps</a>, this is pretty straightforward. Wrap your <code>@import</code>s with a class, and set a custom rename rule for RTLCSS:</p>
     <CodeWrapper code="/* rtl:begin:options: {
   &quot;autoRename&quot;: true,
