@@ -215,7 +215,7 @@
         <div class="row">
           <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
         </div>
-      </div>' /><p>In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in <a href="/examples/grid/">the grid example</a>.</p>
+      </div>' /><p>In addition to column clearing at responsive breakpoints, you may need to reset offsets. See this in action in <a href="https://getbootstrap.com/docs/5.3/examples/grid/">the grid example</a>.</p>
     <Example class="docs-example-row" code='<div class="container text-center">
         <div class="row">
           <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>

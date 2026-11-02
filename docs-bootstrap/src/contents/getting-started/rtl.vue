@@ -47,7 +47,7 @@
   &lt;/body&gt;
 &lt;/html&gt;' lang="html" />
     <h3 id="rtl-examples">RTL examples<a class="anchor-link" href="#rtl-examples" aria-label="Link to RTL examples"></a></h3>
-    <p>Get started with one of our several <a href="/examples/#rtl">RTL examples</a>.</p>
+    <p>Get started with one of our several <a href="https://getbootstrap.com/docs/5.3/examples/#rtl">RTL examples</a>.</p>
     <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
     <p>Our approach to building RTL support into Bootstrap comes with two important decisions that impact how we write and use our CSS:</p>
     <ol>

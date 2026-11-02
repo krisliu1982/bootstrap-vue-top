@@ -21,7 +21,7 @@
     <p>Should you require our full set of <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.</p>
     <p><a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-docs-primary">Download source</a></p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <p>If you want to download and examine our <a href="/examples">examples</a>, you can grab the already built examples:</p>
+    <p>If you want to download and examine our <a href="https://getbootstrap.com/docs/5.3/examples">examples</a>, you can grab the already built examples:</p>
     <p><a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-docs-primary">Download Examples</a></p>
     <h2 id="cdn-via-jsdelivr">CDN via jsDelivr<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="Link to CDN via jsDelivr"></a></h2>
     <p>Skip the download with <a href="https://www.jsdelivr.com/">jsDelivr</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.</p>

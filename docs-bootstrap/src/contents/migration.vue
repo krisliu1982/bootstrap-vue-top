@@ -31,7 +31,7 @@
     </li>
     <li><p>Added Sass maps for generating theme colors for dark mode text, subtle background, and subtle border.</p>
     </li>
-    <li><p><a href="/examples/#snippets">Snippet examples</a> are now ready for dark mode with updated markup and reduced custom styles.</p>
+    <li><p><a href="https://getbootstrap.com/docs/5.3/examples/#snippets">Snippet examples</a> are now ready for dark mode with updated markup and reduced custom styles.</p>
     </li>
     <li><p>Added <code>color-scheme: dark</code> to dark mode CSS to change OS level controls like scrollbars</p>
     </li>
@@ -312,7 +312,7 @@ index 8f8296def..449d70487 100644
     </li>
     <li><p><strong>Overhauled color and background utilities to use CSS variables, and added new <a href="/utilities/text#opacity">text opacity</a> and <a href="/utilities/background#opacity">background opacity</a> utilities. —</strong> <code>.text-*</code> and <code>.bg-*</code> utilities are now built with CSS variables and <code>rgba()</code> color values, allowing you to easily customize any utility with new opacity utilities.</p>
     </li>
-    <li><p><strong>Added new snippet examples based to show how to customize our components. —</strong> Pull ready to use customized components and other common design patterns with our new <a href="/examples/#snippets">Snippets examples</a>. Includes <a href="/examples/footers/">footers</a>, <a href="/examples/dropdowns/">dropdowns</a>, <a href="/examples/list-groups/">list groups</a>, and <a href="/examples/modals/">modals</a>.</p>
+    <li><p><strong>Added new snippet examples based to show how to customize our components. —</strong> Pull ready to use customized components and other common design patterns with our new <a href="https://getbootstrap.com/docs/5.3/examples/#snippets">Snippets examples</a>. Includes <a href="https://getbootstrap.com/docs/5.3/examples/footers/">footers</a>, <a href="https://getbootstrap.com/docs/5.3/examples/dropdowns/">dropdowns</a>, <a href="https://getbootstrap.com/docs/5.3/examples/list-groups/">list groups</a>, and <a href="https://getbootstrap.com/docs/5.3/examples/modals/">modals</a>.</p>
     </li>
     <li><p><strong>Removed unused positioning styles from popovers and tooltips</strong> as these are handled solely by Popper. <code>$tooltip-margin</code> has been deprecated and set to <code>null</code> in the process.</p>
     </li>
@@ -593,7 +593,7 @@ index 8f8296def..449d70487 100644
     </ul>
     <h4 id="jumbotron">Jumbotron</h4>
     <ul>
-    <li><span class="badge text-bg-danger">Breaking</span> Dropped the jumbotron component as it can be replicated with utilities. <a href="/examples/jumbotron">See our new Jumbotron example for a demo.</a></li>
+    <li><span class="badge text-bg-danger">Breaking</span> Dropped the jumbotron component as it can be replicated with utilities. <a href="https://getbootstrap.com/docs/5.3/examples/jumbotron">See our new Jumbotron example for a demo.</a></li>
     </ul>
     <h4 id="list-group-1">List group</h4>
     <ul>

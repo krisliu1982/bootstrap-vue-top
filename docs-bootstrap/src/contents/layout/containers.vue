@@ -13,7 +13,7 @@
     <li><code>.container-fluid</code>, which is <code>width: 100%</code> at all breakpoints</li>
     </ul>
     <p>The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each breakpoint.</p>
-    <p>See them in action and compare them in our <a href="/examples/grid/#containers">Grid example</a>.</p>
+    <p>See them in action and compare them in our <a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">Grid example</a>.</p>
 <div class="table-responsive"><table class="table">
     <thead>
     <tr>
