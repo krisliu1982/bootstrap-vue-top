@@ -14,6 +14,7 @@ const highlighterPromise = createHighlighterCore({themes: [
     import('@shikijs/langs/shell'),
     import('@shikijs/langs/powershell'),
     import('@shikijs/langs/ruby'),
+    import('@shikijs/langs/diff'),
   ],
   engine: createJavaScriptRegexEngine()})
 
