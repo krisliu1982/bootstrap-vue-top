@@ -15,7 +15,6 @@
       <Code :code="props.code" :lang="props.lang" />
     </template>
   </div>
-
 </template>
 
 <script setup>

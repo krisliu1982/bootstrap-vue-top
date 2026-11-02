@@ -14,6 +14,7 @@ import Callout from '@/components/Callout.vue'
 import AddedIn from '@/components/AddedIn.vue'
 import ScssDocs from '@/components/ScssDocs.vue'
 import CodeWrapper from '@/components/CodeWrapper.vue'
+import CodeWrapperCustom from '@/components/CodeWrapperCustom.vue'
 import DeprecatedIn from '@/components/DeprecatedIn.vue'
 import CalloutDeprecatedDarkVariants from '@/components/CalloutDeprecatedDarkVariants.vue'
 import JsDismiss from '@/components/JsDismiss.vue'
@@ -30,6 +31,7 @@ app.component('Callout', Callout)
 app.component('AddedIn', AddedIn)
 app.component('ScssDocs', ScssDocs)
 app.component('CodeWrapper', CodeWrapper)
+app.component('CodeWrapperCustom', CodeWrapperCustom)
 app.component('DeprecatedIn', DeprecatedIn)
 app.component('CalloutDeprecatedDarkVariants', CalloutDeprecatedDarkVariants)
 app.component('JsDismiss', JsDismiss)
