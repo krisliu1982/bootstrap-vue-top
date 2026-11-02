@@ -2,11 +2,12 @@ import { createApp } from 'vue';
 import app_ from './app.vue';
 import router from './router.js';
 
-
-import './assets/docs.scss';
-
+  // Import all of Bootstrap’s CSS
+import 'bootstrap/scss/bootstrap.scss' ;
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap'
+
+import './assets/docs.css';
 
 import Example from '@/components/Example.vue'
 import Callout from '@/components/Callout.vue'

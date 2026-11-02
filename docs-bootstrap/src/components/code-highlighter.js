@@ -1,7 +1,8 @@
 import { createHighlighterCore } from 'shiki/core'
 import { createJavaScriptRegexEngine } from 'shiki/engine/javascript'
 
-const highlighterPromise = createHighlighterCore({themes: [
+const highlighterPromise = createHighlighterCore({
+  themes: [
     import('@shikijs/themes/light-plus'),
     import('@shikijs/themes/dark-plus'),
   ],
@@ -16,12 +17,17 @@ const highlighterPromise = createHighlighterCore({themes: [
     import('@shikijs/langs/ruby'),
     import('@shikijs/langs/diff'),
   ],
-  engine: createJavaScriptRegexEngine()})
+  engine: createJavaScriptRegexEngine()
+})
 
 export async function highlightCode(code, lang) {
   const highlighter = await highlighterPromise
-  return highlighter.codeToHtml(code, {
-    lang: lang,           // 这里必须是一个对象
-    theme: 'light-plus',  // 需要指定一个已加载的主题
+  return highlighter.codeToHtml(code, {// 这里必须是一个对象
+    lang: lang,
+    themes: {
+      light: 'light-plus',
+      dark: 'dark-plus',
+    },
+    defaultColor: 'light-dark()',
   })
 }

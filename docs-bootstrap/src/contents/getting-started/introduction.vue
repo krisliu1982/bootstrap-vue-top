@@ -36,7 +36,7 @@
 &lt;/html&gt;' lang="html" />
     <p>You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
     <CodeWrapper code='&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;' lang="html" /></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="/layout/grid">layout</a>, adding dozens of <a href="/components/buttons">components</a>, and utilizing <a href="/examples">our official examples</a>.</p></li></ol>
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;' lang="html" /></li><li><p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="/docs-bootstrap/5.3/layout/grid">layout</a>, adding dozens of <a href="/docs-bootstrap/5.3/components/buttons">components</a>, and utilizing <a href="https://getbootstrap.com/examples">our official examples</a>.</p></li></ol>
 
     <h2 id="cdn-links">CDN links<a class="anchor-link" href="#cdn-links" aria-label="Link to CDN links"></a></h2>
 
@@ -44,7 +44,7 @@
 
     <table class="table"><thead><tr><th scope="col">Description</th><th scope="col">URL</th></tr></thead><tbody><tr><td>CSS</td><td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css</code></td></tr><tr><td>JS</td><td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js</code></td></tr></tbody></table>
 
-    <p>You can also use the CDN to fetch any of our <a href="/getting-started/contents">additional builds listed in the Contents page</a>.</p>
+    <p>You can also use the CDN to fetch any of our <a href="/docs-bootstrap/5.3/getting-started/contents">additional builds listed in the Contents page</a>.</p>
 
     <p>When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.</p>
 
@@ -52,7 +52,7 @@
 
     <h2 id="next-steps">Next steps<a class="anchor-link" href="#next-steps" aria-label="Link to Next steps"></a></h2>
 
-    <ul><li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li><li>Read about what’s included in Bootstrap in our <a href="/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li><li>Need a little more power? Consider building with Bootstrap by <a href="/getting-started/download#package-managers">including the source files via package manager</a>.</li><li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a> section.</li></ul>
+    <ul><li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li><li>Read about what’s included in Bootstrap in our <a href="/docs-bootstrap/5.3/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li><li>Need a little more power? Consider building with Bootstrap by <a href="/docs-bootstrap/5.3/getting-started/download#package-managers">including the source files via package manager</a>.</li><li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="/docs-bootstrap/5.3/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a> section.</li></ul>
 
     <h2 id="js-components">JS components<a class="anchor-link" href="#js-components" aria-label="Link to JS components"></a></h2>
 
@@ -88,7 +88,7 @@
     <p>On the rare occasion you need to override it, use something like the following:</p>
 
     <CodeWrapper code=".selector-for-some-widget {
-box-sizing: content-box;
+  box-sizing: content-box;
 }" lang="css" />
 
     <p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>
@@ -97,7 +97,7 @@ box-sizing: content-box;
 
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
-    <p>For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+    <p>For improved cross-browser rendering, we use <a href="/docs-bootstrap/5.3/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
 
     <h2 id="community">Community<a class="anchor-link" href="#community" aria-label="Link to Community"></a></h2>
 
