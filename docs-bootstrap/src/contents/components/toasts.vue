@@ -331,4 +331,40 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 })
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#basic" class="ps-4">Basic</a></li>
+          <li><a href="#live-example" class="ps-4">Live example</a></li>
+          <li><a href="#translucent" class="ps-4">Translucent</a></li>
+          <li><a href="#stacking" class="ps-4">Stacking</a></li>
+          <li><a href="#custom-content" class="ps-4">Custom content</a></li>
+          <li><a href="#color-schemes" class="ps-4">Color schemes</a></li>
+        </ul>
+      </li>
+      <li><a href="#placement">Placement</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#triggers" class="ps-4">Triggers</a></li>
+          <li><a href="#options" class="ps-4">Options</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

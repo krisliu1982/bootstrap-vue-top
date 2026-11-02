@@ -615,4 +615,40 @@
     <p><a href="#responsive-behaviors">Responsive navbar expand/collapse classes</a> (e.g., <code>.navbar-expand-lg</code>) are combined with the <code>$breakpoints</code> map and generated through a loop in <code>scss/_navbar.scss</code>.</p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li>
+        <a href="#supported-content">Supported content</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#brand" class="ps-4">Brand</a></li>
+          <li><a href="#nav" class="ps-4">Nav</a></li>
+          <li><a href="#forms" class="ps-4">Forms</a></li>
+          <li><a href="#text-1" class="ps-4">Text</a></li>
+        </ul>
+      </li>
+      <li><a href="#color-schemes">Color schemes</a></li>
+      <li><a href="#containers">Containers</a></li>
+      <li><a href="#placement">Placement</a></li>
+      <li><a href="#scrolling">Scrolling</a></li>
+      <li>
+        <a href="#responsive-behaviors">Responsive behaviors</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#toggler" class="ps-4">Toggler</a></li>
+          <li><a href="#external-content" class="ps-4">External content</a></li>
+          <li><a href="#offcanvas" class="ps-4">Offcanvas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

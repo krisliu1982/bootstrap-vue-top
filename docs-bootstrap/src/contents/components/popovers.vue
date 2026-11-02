@@ -322,4 +322,37 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
 })
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#enable-popovers" class="ps-4">Enable popovers</a></li>
+          <li><a href="#live-demo" class="ps-4">Live demo</a></li>
+          <li><a href="#four-directions" class="ps-4">Four directions</a></li>
+          <li><a href="#custom-popovers" class="ps-4">Custom popovers</a></li>
+          <li><a href="#dismiss-on-next-click" class="ps-4">Dismiss on next click</a></li>
+          <li><a href="#disabled-elements" class="ps-4">Disabled elements</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#options" class="ps-4">Options</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

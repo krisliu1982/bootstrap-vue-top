@@ -68,4 +68,19 @@
     <p><code>$input-btn-*</code> variables are shared global variables between our <a href="/components/buttons">buttons</a> and our form components. You’ll find these frequently reassigned as values to other component-specific variables.</p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#disabled-forms">Disabled forms</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

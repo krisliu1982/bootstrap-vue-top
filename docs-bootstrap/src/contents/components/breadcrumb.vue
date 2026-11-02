@@ -64,4 +64,20 @@
     <ScssDocs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="breadcrumb-variables" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#example">Example</a></li>
+      <li><a href="#dividers">Dividers</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

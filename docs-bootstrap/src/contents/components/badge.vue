@@ -47,6 +47,29 @@
     <ScssDocs name="badge-css-vars" file="scss/_badge.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="badge-variables" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#headings" class="ps-4">Headings</a></li>
+          <li><a href="#buttons" class="ps-4">Buttons</a></li>
+          <li><a href="#positioned" class="ps-4">Positioned</a></li>
+        </ul>
+      </li>
+      <li><a href="#background-colors">Background colors</a></li>
+      <li><a href="#pill-badges">Pill badges</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

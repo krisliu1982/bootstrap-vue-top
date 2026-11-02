@@ -266,4 +266,27 @@
         </div>
       </form>' />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#utilities">Utilities</a></li>
+      <li><a href="#form-grid">Form grid</a></li>
+      <li><a href="#gutters">Gutters</a></li>
+      <li>
+        <a href="#horizontal-form">Horizontal form</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#horizontal-form-label-sizing" class="ps-4">Horizontal form label sizing</a></li>
+        </ul>
+      </li>
+      <li><a href="#column-sizing">Column sizing</a></li>
+      <li><a href="#auto-sizing">Auto-sizing</a></li>
+      <li>
+        <a href="#inline-forms">Inline forms</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

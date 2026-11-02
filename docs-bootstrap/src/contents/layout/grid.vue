@@ -387,4 +387,46 @@ $container-max-widths: (
 " lang="scss" />
     <p>When making any changes to the Sass variables or maps, you’ll need to save your changes and recompile. Doing so will output a brand-new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in <code>px</code> (not <code>rem</code>, <code>em</code>, or <code>%</code>).</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#example">Example</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#grid-options">Grid options</a></li>
+      <li>
+        <a href="#auto-layout-columns">Auto-layout columns</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#equal-width" class="ps-4">Equal-width</a></li>
+          <li><a href="#setting-one-column-width" class="ps-4">Setting one column width</a></li>
+          <li><a href="#variable-width-content" class="ps-4">Variable width content</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#responsive-classes">Responsive classes</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#all-breakpoints" class="ps-4">All breakpoints</a></li>
+          <li><a href="#stacked-to-horizontal" class="ps-4">Stacked to horizontal</a></li>
+          <li><a href="#mix-and-match" class="ps-4">Mix and match</a></li>
+          <li><a href="#row-columns" class="ps-4">Row columns</a></li>
+        </ul>
+      </li>
+      <li><a href="#nesting">Nesting</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#example-usage" class="ps-4">Example usage</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#customizing-the-grid">Customizing the grid</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#columns-and-gutters" class="ps-4">Columns and gutters</a></li>
+          <li><a href="#grid-tiers" class="ps-4">Grid tiers</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

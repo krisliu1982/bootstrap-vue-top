@@ -31,4 +31,20 @@
 &lt;div class=&quot;sticky-xl-bottom&quot;&gt;Stick to the bottom on viewports sized XL (extra-large) or wider&lt;/div&gt;
 &lt;div class=&quot;sticky-xxl-bottom&quot;&gt;Stick to the bottom on viewports sized XXL (extra-extra-large) or wider&lt;/div&gt;' lang="html" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#fixed-top">Fixed top</a></li>
+      <li><a href="#fixed-bottom">Fixed bottom</a></li>
+      <li><a href="#sticky-top">Sticky top</a></li>
+      <li><a href="#responsive-sticky-top">Responsive sticky top</a></li>
+      <li><a href="#sticky-bottom">Sticky bottom</a></li>
+      <li>
+        <a href="#responsive-sticky-bottom">Responsive sticky bottom</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

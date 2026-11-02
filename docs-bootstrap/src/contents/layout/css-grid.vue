@@ -188,4 +188,37 @@
         <div class="g-col-4">.g-col-4</div>
       </div>' />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#key-differences">Key differences</a></li>
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#three-columns" class="ps-4">Three columns</a></li>
+          <li><a href="#responsive" class="ps-4">Responsive</a></li>
+        </ul>
+      </li>
+      <li><a href="#wrapping">Wrapping</a></li>
+      <li><a href="#starts">Starts</a></li>
+      <li><a href="#auto-columns">Auto columns</a></li>
+      <li><a href="#nesting">Nesting</a></li>
+      <li>
+        <a href="#customizing">Customizing</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#no-grid-classes" class="ps-4">No grid classes</a></li>
+          <li><a href="#columns-and-gaps" class="ps-4">Columns and gaps</a></li>
+          <li><a href="#adding-rows" class="ps-4">Adding rows</a></li>
+          <li><a href="#gaps" class="ps-4">Gaps</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#sass">Sass</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

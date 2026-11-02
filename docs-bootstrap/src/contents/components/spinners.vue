@@ -90,6 +90,37 @@
     <p>Used for creating the CSS animations for our spinners. Included in <code>scss/_spinners.scss</code>.</p>
     <ScssDocs name="spinner-border-keyframes" file="scss/_spinners.scss" /><ScssDocs name="spinner-grow-keyframes" file="scss/_spinners.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#about">About</a></li>
+      <li>
+        <a href="#border-spinner">Border spinner</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#colors" class="ps-4">Colors</a></li>
+        </ul>
+      </li>
+      <li><a href="#growing-spinner">Growing spinner</a></li>
+      <li>
+        <a href="#alignment">Alignment</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#margin" class="ps-4">Margin</a></li>
+          <li><a href="#placement" class="ps-4">Placement</a></li>
+        </ul>
+      </li>
+      <li><a href="#size">Size</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#keyframes" class="ps-4">Keyframes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

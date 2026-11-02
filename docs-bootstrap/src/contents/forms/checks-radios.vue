@@ -234,4 +234,48 @@
     <ScssDocs name="form-check-variables" file="scss/_variables.scss" /><p>Variables for switches:</p>
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#approach">Approach</a></li>
+      <li>
+        <a href="#checks">Checks</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#indeterminate" class="ps-4">Indeterminate</a></li>
+          <li><a href="#disabled" class="ps-4">Disabled</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#radios">Radios</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#disabled-1" class="ps-4">Disabled</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#switches">Switches</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#native-switches" class="ps-4">Native switches</a></li>
+        </ul>
+      </li>
+      <li><a href="#default-stacked">Default (stacked)</a></li>
+      <li><a href="#inline">Inline</a></li>
+      <li><a href="#reverse">Reverse</a></li>
+      <li><a href="#without-labels">Without labels</a></li>
+      <li>
+        <a href="#toggle-buttons">Toggle buttons</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#checkbox-toggle-buttons" class="ps-4">Checkbox toggle buttons</a></li>
+          <li><a href="#radio-toggle-buttons" class="ps-4">Radio toggle buttons</a></li>
+          <li><a href="#outlined-styles" class="ps-4">Outlined styles</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

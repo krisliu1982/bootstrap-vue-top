@@ -90,4 +90,35 @@ yarn start # Start the project
     <img class="d-block mb-4 img-fluid rounded-3" src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-intellisense-autocomplete.png" width="573" height="332" alt="" /><p>Install the community-maintained <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense extension</a> for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.</p>
     <p><a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-docs-primary">View in VS Code Marketplace</a></p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#compiled-css-and-js">Compiled CSS and JS</a></li>
+      <li><a href="#source-files">Source files</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li>
+        <a href="#cdn-via-jsdelivr">CDN via jsDelivr</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#alternative-cdns" class="ps-4">Alternative CDNs</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#package-managers">Package managers</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#npm" class="ps-4">npm</a></li>
+          <li><a href="#yarn" class="ps-4">yarn</a></li>
+          <li><a href="#bun" class="ps-4">Bun</a></li>
+          <li><a href="#rubygems" class="ps-4">RubyGems</a></li>
+          <li><a href="#composer" class="ps-4">Composer</a></li>
+          <li><a href="#nuget" class="ps-4">NuGet</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#intellisense-extension">IntelliSense extension</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

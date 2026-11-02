@@ -59,4 +59,23 @@
     <h2 id="extended-documentation">Extended documentation<a class="anchor-link" href="#extended-documentation" aria-label="Link to Extended documentation"></a></h2>
     <p>RFS is a separate project under the Bootstrap organization. More about RFS and its configuration can be found on its <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub repository</a>.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#what-is-rfs">What is RFS?</a></li>
+      <li>
+        <a href="#using-rfs">Using RFS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#using-the-mixins" class="ps-4">Using the mixins</a></li>
+          <li><a href="#using-the-functions" class="ps-4">Using the functions</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#extended-documentation">Extended documentation</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

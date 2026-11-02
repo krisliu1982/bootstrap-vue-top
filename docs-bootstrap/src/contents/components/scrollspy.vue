@@ -414,4 +414,31 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
 })
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#navbar" class="ps-4">Navbar</a></li>
+          <li><a href="#nested-nav" class="ps-4">Nested nav</a></li>
+          <li><a href="#list-group" class="ps-4">List group</a></li>
+          <li><a href="#simple-anchors" class="ps-4">Simple anchors</a></li>
+        </ul>
+      </li>
+      <li><a href="#non-visible-elements">Non-visible elements</a></li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
+          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
+          <li><a href="#options" class="ps-4">Options</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

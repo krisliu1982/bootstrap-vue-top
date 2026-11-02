@@ -330,4 +330,37 @@ myTooltipEl.addEventListener(&#39;hidden.bs.tooltip&#39;, () =&gt; {
 tooltip.hide()
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#enable-tooltips" class="ps-4">Enable tooltips</a></li>
+          <li><a href="#tooltips-on-links" class="ps-4">Tooltips on links</a></li>
+          <li><a href="#custom-tooltips" class="ps-4">Custom tooltips</a></li>
+          <li><a href="#directions" class="ps-4">Directions</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#markup" class="ps-4">Markup</a></li>
+          <li><a href="#disabled-elements" class="ps-4">Disabled elements</a></li>
+          <li><a href="#options" class="ps-4">Options</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

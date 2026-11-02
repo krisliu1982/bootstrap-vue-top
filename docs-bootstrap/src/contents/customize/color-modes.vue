@@ -266,4 +266,31 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
     <p>Styles for dark mode, and any custom color modes you create, can be scoped appropriately to the <code>data-bs-theme</code> attribute selector or media query with the customizable <code>color-mode()</code> mixin. See the <a href="#building-with-sass">Sass usage section</a> for more details.</p>
     <ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#dark-mode">Dark mode</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#enable-dark-mode" class="ps-4">Enable dark mode</a></li>
+          <li><a href="#building-with-sass" class="ps-4">Building with Sass</a></li>
+        </ul>
+      </li>
+      <li><a href="#custom-color-modes">Custom color modes</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#adding-theme-colors">Adding theme colors</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

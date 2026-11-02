@@ -143,4 +143,33 @@ sans-serif,
     <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL Styling 101</a></li>
     </ul>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#get-familiar">Get familiar</a></li>
+      <li>
+        <a href="#required-html">Required HTML</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#starter-template" class="ps-4">Starter template</a></li>
+          <li><a href="#rtl-examples" class="ps-4">RTL examples</a></li>
+        </ul>
+      </li>
+      <li><a href="#approach">Approach</a></li>
+      <li>
+        <a href="#customize-from-source">Customize from source</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#custom-rtl-values" class="ps-4">Custom RTL values</a></li>
+          <li><a href="#alternative-font-stack" class="ps-4">Alternative font stack</a></li>
+          <li><a href="#ltr-and-rtl-at-the-same-time" class="ps-4">LTR and RTL at the same time</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-breadcrumb-case">The breadcrumb case</a></li>
+      <li>
+        <a href="#additional-resources">Additional resources</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

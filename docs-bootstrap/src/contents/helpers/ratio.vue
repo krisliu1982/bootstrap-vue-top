@@ -44,4 +44,19 @@
     <p>Within <code>_variables.scss</code>, you can change the aspect ratios you want to use. Here’s our default <code>$ratio-aspect-ratios</code> map. Modify the map as you like and recompile your Sass to put them to use.</p>
     <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#about">About</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#aspect-ratios">Aspect ratios</a></li>
+      <li><a href="#custom-ratios">Custom ratios</a></li>
+      <li>
+        <a href="#sass-maps">Sass maps</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

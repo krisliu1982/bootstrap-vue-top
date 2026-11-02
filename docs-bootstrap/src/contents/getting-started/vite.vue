@@ -143,4 +143,19 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
     </ol>
     <GuideFooter />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#what-is-vite">What is Vite?</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#project-structure">Project structure</a></li>
+      <li><a href="#configure-vite">Configure Vite</a></li>
+      <li>
+        <a href="#import-bootstrap">Import Bootstrap</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

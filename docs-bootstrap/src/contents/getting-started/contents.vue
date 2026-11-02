@@ -134,4 +134,22 @@
     <p>The <code>scss/</code> and <code>js/</code> are the source code for our CSS and JavaScript. The <code>dist/</code> folder includes everything listed in the compiled download section above. The <code>site/content/docs/</code> folder includes the source code for our hosted documentation, including our live examples of Bootstrap usage.</p>
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#compiled-bootstrap">Compiled Bootstrap</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#css-files" class="ps-4">CSS files</a></li>
+          <li><a href="#js-files" class="ps-4">JS files</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#bootstrap-source-code">Bootstrap source code</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

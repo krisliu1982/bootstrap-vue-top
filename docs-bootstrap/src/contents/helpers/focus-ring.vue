@@ -26,6 +26,21 @@
     <Example :code='data["theme-colors"].map((themeColor) => `<p><a href="#" class="d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2">${themeColor.name} focus</a></p>`).join("\n")' /><p>Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#example">Example</a></li>
+      <li>
+        <a href="#customize">Customize</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#css-variables" class="ps-4">CSS variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

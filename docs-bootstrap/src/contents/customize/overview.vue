@@ -28,4 +28,16 @@
     </ul>
     <p>Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not possible in all components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li>
+        <a href="#csps-and-embedded-svgs">CSPs and embedded SVGs</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

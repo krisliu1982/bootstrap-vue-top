@@ -121,4 +121,24 @@
     <ScssDocs name="pagination-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <ScssDocs name="pagination-mixin" file="scss/mixins/_pagination.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#working-with-icons">Working with icons</a></li>
+      <li><a href="#active">Active</a></li>
+      <li><a href="#disabled">Disabled</a></li>
+      <li><a href="#sizing">Sizing</a></li>
+      <li><a href="#alignment">Alignment</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

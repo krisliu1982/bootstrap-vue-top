@@ -416,4 +416,44 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
 })
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li>
+        <a href="#basic-examples">Basic examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#indicators" class="ps-4">Indicators</a></li>
+          <li><a href="#captions" class="ps-4">Captions</a></li>
+          <li><a href="#crossfade" class="ps-4">Crossfade</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#autoplaying-carousels">Autoplaying carousels</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#autoplaying-carousels-without-controls" class="ps-4">Autoplaying carousels without controls</a></li>
+        </ul>
+      </li>
+      <li><a href="#disable-touch-swiping">Disable touch swiping</a></li>
+      <li><a href="#dark-variant">Dark variant</a></li>
+      <li><a href="#custom-transition">Custom transition</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#usage">Usage</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
+          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
+          <li><a href="#options" class="ps-4">Options</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

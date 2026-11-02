@@ -169,6 +169,40 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
 })
 " lang="javascript" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#examples">Examples</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#live-example" class="ps-4">Live example</a></li>
+          <li><a href="#link-color" class="ps-4">Link color</a></li>
+          <li><a href="#additional-content" class="ps-4">Additional content</a></li>
+          <li><a href="#icons" class="ps-4">Icons</a></li>
+          <li><a href="#dismissing" class="ps-4">Dismissing</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#javascript-behavior">JavaScript behavior</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#initialize" class="ps-4">Initialize</a></li>
+          <li><a href="#triggers" class="ps-4">Triggers</a></li>
+          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#events" class="ps-4">Events</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

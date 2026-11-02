@@ -45,6 +45,29 @@
     <p>Link utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#link-opacity">Link opacity</a></li>
+      <li>
+        <a href="#link-underlines">Link underlines</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#underline-color" class="ps-4">Underline color</a></li>
+          <li><a href="#underline-offset" class="ps-4">Underline offset</a></li>
+          <li><a href="#underline-opacity" class="ps-4">Underline opacity</a></li>
+          <li><a href="#hover-variants" class="ps-4">Hover variants</a></li>
+        </ul>
+      </li>
+      <li><a href="#colored-links">Colored links</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

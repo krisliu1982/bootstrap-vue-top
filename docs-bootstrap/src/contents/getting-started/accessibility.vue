@@ -37,4 +37,25 @@
     <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility</a></li>
     </ul>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#overview-and-limitations">Overview and limitations</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#structural-markup" class="ps-4">Structural markup</a></li>
+          <li><a href="#interactive-components" class="ps-4">Interactive components</a></li>
+          <li><a href="#color-contrast" class="ps-4">Color contrast</a></li>
+          <li><a href="#visually-hidden-content" class="ps-4">Visually hidden content</a></li>
+          <li><a href="#reduced-motion" class="ps-4">Reduced motion</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#additional-resources">Additional resources</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

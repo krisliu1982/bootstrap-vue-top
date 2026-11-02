@@ -95,6 +95,29 @@
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="placeholders" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#about">About</a></li>
+      <li><a href="#example">Example</a></li>
+      <li>
+        <a href="#how-it-works">How it works</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#width" class="ps-4">Width</a></li>
+          <li><a href="#color" class="ps-4">Color</a></li>
+          <li><a href="#sizing" class="ps-4">Sizing</a></li>
+          <li><a href="#animation" class="ps-4">Animation</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

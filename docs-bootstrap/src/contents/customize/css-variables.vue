@@ -210,4 +210,26 @@ a {
     <ScssDocs name="root-focus-variables" file="scss/_root.scss" /><h2 id="grid-breakpoints">Grid breakpoints<a class="anchor-link" href="#grid-breakpoints" aria-label="Link to Grid breakpoints"></a></h2>
     <p>While we include our grid breakpoints as CSS variables (except for <code>xs</code>), be aware that <strong>CSS variables do not work in media queries</strong>. This is by design in the CSS spec for variables, but may change in coming years with support for <code>env()</code> variables. Check out <a href="https://stackoverflow.com/a/47212942">this Stack Overflow answer</a> for some helpful links. In the meantime, you can use these variables in other CSS situations, as well as in your JavaScript.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#root-variables">Root variables</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#default" class="ps-4">Default</a></li>
+          <li><a href="#dark-mode" class="ps-4">Dark mode</a></li>
+        </ul>
+      </li>
+      <li><a href="#component-variables">Component variables</a></li>
+      <li><a href="#prefix">Prefix</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#focus-variables">Focus variables</a></li>
+      <li>
+        <a href="#grid-breakpoints">Grid breakpoints</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

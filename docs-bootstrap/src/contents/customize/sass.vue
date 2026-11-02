@@ -261,4 +261,39 @@ $border-width: 0;
 }
 " lang="scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#file-structure">File structure</a></li>
+      <li><a href="#importing">Importing</a></li>
+      <li><a href="#compiling">Compiling</a></li>
+      <li><a href="#including">Including</a></li>
+      <li><a href="#variable-defaults">Variable defaults</a></li>
+      <li>
+        <a href="#maps-and-loops">Maps and loops</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#modify-map" class="ps-4">Modify map</a></li>
+          <li><a href="#add-to-map" class="ps-4">Add to map</a></li>
+          <li><a href="#remove-from-map" class="ps-4">Remove from map</a></li>
+        </ul>
+      </li>
+      <li><a href="#required-keys">Required keys</a></li>
+      <li>
+        <a href="#functions">Functions</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#colors" class="ps-4">Colors</a></li>
+          <li><a href="#color-contrast" class="ps-4">Color contrast</a></li>
+          <li><a href="#escape-svg" class="ps-4">Escape SVG</a></li>
+          <li><a href="#add-and-subtract-functions" class="ps-4">Add and Subtract functions</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#mixins">Mixins</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#color-schemes" class="ps-4">Color schemes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

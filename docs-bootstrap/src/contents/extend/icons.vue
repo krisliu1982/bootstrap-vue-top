@@ -20,6 +20,19 @@
       <li v-for="icon in data['icons'].more"><a :href="icon.website">{{icon.name}}</a></li>
     </ul>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#bootstrap-icons">Bootstrap Icons</a></li>
+      <li><a href="#alternatives">Alternatives</a></li>
+      <li>
+        <a href="#more-options">More options</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

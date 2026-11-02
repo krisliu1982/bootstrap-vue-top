@@ -57,4 +57,21 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     <p>Your website should only be available over HTTPS connections in production. HTTPS improves the security, privacy, and availability of all sites, and <a href="https://https.cio.gov/everything/">there is no such thing as non-sensitive web traffic</a>. The steps to configure your website to be served exclusively over HTTPS vary widely depending on your architecture and web hosting provider, and thus are beyond the scope of these docs.</p>
     <p>Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you’ll be sending users <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">mixed active content</a>, leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself, ensure that you only access it over HTTPS connections.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#lean-sass-imports">Lean Sass imports</a></li>
+      <li><a href="#lean-javascript">Lean JavaScript</a></li>
+      <li><a href="#autoprefixer-browserslistrc">Autoprefixer .browserslistrc</a></li>
+      <li><a href="#unused-css">Unused CSS</a></li>
+      <li><a href="#minify-and-gzip">Minify and gzip</a></li>
+      <li><a href="#non-blocking-files">Non-blocking files</a></li>
+      <li>
+        <a href="#always-use-https">Always use HTTPS</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

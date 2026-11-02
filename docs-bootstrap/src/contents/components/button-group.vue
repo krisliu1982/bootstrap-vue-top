@@ -177,4 +177,22 @@
         <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
       </div>' />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#basic-example">Basic example</a></li>
+      <li><a href="#mixed-styles">Mixed styles</a></li>
+      <li><a href="#outlined-styles">Outlined styles</a></li>
+      <li><a href="#checkbox-and-radio-button-groups">Checkbox and radio button groups</a></li>
+      <li><a href="#button-toolbar">Button toolbar</a></li>
+      <li><a href="#sizing">Sizing</a></li>
+      <li><a href="#nesting">Nesting</a></li>
+      <li>
+        <a href="#vertical-variation">Vertical variation</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

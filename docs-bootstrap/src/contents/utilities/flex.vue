@@ -468,6 +468,35 @@
     <p>Flexbox utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
+      <li><a href="#direction">Direction</a></li>
+      <li><a href="#justify-content">Justify content</a></li>
+      <li><a href="#align-items">Align items</a></li>
+      <li><a href="#align-self">Align self</a></li>
+      <li><a href="#fill">Fill</a></li>
+      <li><a href="#grow-and-shrink">Grow and shrink</a></li>
+      <li>
+        <a href="#auto-margins">Auto margins</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#with-align-items" class="ps-4">With align-items</a></li>
+        </ul>
+      </li>
+      <li><a href="#wrap">Wrap</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#align-content">Align content</a></li>
+      <li><a href="#media-object">Media object</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

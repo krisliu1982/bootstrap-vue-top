@@ -336,4 +336,27 @@
     <ScssDocs name="form-validation-states-loop" file="scss/forms/_validation.scss" /><h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>
     <p>Validation states can be customized via Sass with the <code>$form-validation-states</code> map. Located in our <code>_variables.scss</code> file, this Sass map is how we generate the default <code>valid</code>/<code>invalid</code> validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those using custom styles can easily add more complex form feedback.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#custom-styles">Custom styles</a></li>
+      <li><a href="#browser-defaults">Browser defaults</a></li>
+      <li><a href="#server-side">Server-side</a></li>
+      <li><a href="#supported-elements">Supported elements</a></li>
+      <li><a href="#tooltips">Tooltips</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
+          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#customizing" class="ps-4">Customizing</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

@@ -232,4 +232,39 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
     <h2 id="disabled-javascript">Disabled JavaScript<a class="anchor-link" href="#disabled-javascript" aria-label="Link to Disabled JavaScript"></a></h2>
     <p>Bootstrap’s plugins have no special fallback when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#individual-or-compiled">Individual or compiled</a></li>
+      <li><a href="#usage-with-javascript-frameworks">Usage with JavaScript frameworks</a></li>
+      <li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
+      <li><a href="#dependencies">Dependencies</a></li>
+      <li><a href="#data-attributes">Data attributes</a></li>
+      <li><a href="#selectors">Selectors</a></li>
+      <li><a href="#events">Events</a></li>
+      <li>
+        <a href="#programmatic-api">Programmatic API</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#css-selectors-in-constructors" class="ps-4">CSS selectors in constructors</a></li>
+          <li><a href="#asynchronous-functions-and-transitions" class="ps-4">Asynchronous functions and transitions</a></li>
+          <li><a href="#default-settings" class="ps-4">Default settings</a></li>
+        </ul>
+      </li>
+      <li><a href="#methods-and-properties">Methods and properties</a></li>
+      <li><a href="#sanitizer">Sanitizer</a></li>
+      <li>
+        <a href="#optionally-using-jquery">Optionally using jQuery</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#no-conflict" class="ps-4">No conflict</a></li>
+          <li><a href="#jquery-events" class="ps-4">jQuery events</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#disabled-javascript">Disabled JavaScript</a>
+        <ul class="list-unstyled mb-0">
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

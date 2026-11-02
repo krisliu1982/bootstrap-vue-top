@@ -558,4 +558,34 @@ $utilities: map-merge(
 " lang="css" />
     <p>This doesn’t output anything in RTL, thanks to <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">the RTLCSS <code>remove</code> control directive</a>.</p>
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#api-explained">API explained</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#property" class="ps-4">Property</a></li>
+          <li><a href="#values" class="ps-4">Values</a></li>
+          <li><a href="#class" class="ps-4">Class</a></li>
+          <li><a href="#css-variable-utilities" class="ps-4">CSS variable utilities</a></li>
+          <li><a href="#local-css-variables" class="ps-4">Local CSS variables</a></li>
+          <li><a href="#states" class="ps-4">States</a></li>
+          <li><a href="#responsive" class="ps-4">Responsive</a></li>
+          <li><a href="#print" class="ps-4">Print</a></li>
+        </ul>
+      </li>
+      <li><a href="#importance">Importance</a></li>
+      <li>
+        <a href="#using-the-api">Using the API</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#override-utilities" class="ps-4">Override utilities</a></li>
+          <li><a href="#add-utilities" class="ps-4">Add utilities</a></li>
+          <li><a href="#modify-utilities" class="ps-4">Modify utilities</a></li>
+          <li><a href="#remove-utilities" class="ps-4">Remove utilities</a></li>
+          <li><a href="#add-remove-modify" class="ps-4">Add, remove, modify</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

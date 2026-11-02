@@ -110,4 +110,25 @@
     <ScssDocs name="form-label-variables" file="scss/_variables.scss" /><ScssDocs name="form-text-variables" file="scss/_variables.scss" /><p><code>$form-file-*</code> are for file input.</p>
     <ScssDocs name="form-file-variables" file="scss/_variables.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#example">Example</a></li>
+      <li><a href="#sizing">Sizing</a></li>
+      <li><a href="#form-text">Form text</a></li>
+      <li><a href="#disabled">Disabled</a></li>
+      <li><a href="#readonly">Readonly</a></li>
+      <li><a href="#readonly-plain-text">Readonly plain text</a></li>
+      <li><a href="#file-input">File input</a></li>
+      <li><a href="#color">Color</a></li>
+      <li><a href="#datalists">Datalists</a></li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>

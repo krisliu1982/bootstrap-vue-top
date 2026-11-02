@@ -92,6 +92,44 @@
     <p>Border utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#border">Border</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#additive" class="ps-4">Additive</a></li>
+          <li><a href="#subtractive" class="ps-4">Subtractive</a></li>
+        </ul>
+      </li>
+      <li><a href="#color">Color</a></li>
+      <li>
+        <a href="#opacity">Opacity</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#how-it-works" class="ps-4">How it works</a></li>
+          <li><a href="#example" class="ps-4">Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#width">Width</a></li>
+      <li>
+        <a href="#radius">Radius</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#sizes" class="ps-4">Sizes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#css">CSS</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#variables" class="ps-4">Variables</a></li>
+          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
+          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup>

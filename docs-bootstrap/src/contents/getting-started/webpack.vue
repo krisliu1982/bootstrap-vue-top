@@ -284,4 +284,22 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     <p>After running <code>npm run build</code> again, you’ll find the SVG files extracted into <code>dist/icons</code> and properly referenced from CSS.</p>
     <GuideFooter />
   </article>
+
+  <nav class="docs-toc" aria-label="本页目录">
+    <h2 class="h6 mb-2">本页目录</h2>
+    <ul class="list-unstyled mb-0">
+      <li><a href="#what-is-webpack">What is Webpack?</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#project-structure">Project structure</a></li>
+      <li><a href="#configure-webpack">Configure Webpack</a></li>
+      <li><a href="#import-bootstrap">Import Bootstrap</a></li>
+      <li>
+        <a href="#production-optimizations">Production optimizations</a>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#extracting-css" class="ps-4">Extracting CSS</a></li>
+          <li><a href="#extracting-svg-files" class="ps-4">Extracting SVG files</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
