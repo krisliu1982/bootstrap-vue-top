@@ -7,8 +7,7 @@
       class="d-block mx-auto mb-4 img-fluid rounded-3"
       srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x"
       src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png"
-      width="800"
-      height="400"
+      width="100%"
       alt=""
     /><Callout>
       <p>

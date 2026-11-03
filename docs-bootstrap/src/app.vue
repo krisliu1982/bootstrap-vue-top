@@ -74,9 +74,9 @@
         <nav ref="menuRef">
           <div v-for="t in data.sidebar">
             <template v-if="t.pages">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <div class="bg-primary rounded-circle" style="width: 0.5rem; height: 0.5rem"></div>
+              <div class="d-flex align-items-center gap-2 px-2 mb-2">
                 <span class="small fw-bold">{{ t['zh-CN'] }}</span>
+                <div class="bg-primary rounded-circle" style="width: 1rem; height: 1rem"></div>
               </div>
               <ul>
                 <li v-for="tt in t.pages">
