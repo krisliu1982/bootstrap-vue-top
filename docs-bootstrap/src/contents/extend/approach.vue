@@ -136,8 +136,8 @@
       <li>
         <a href="#z-index-scales">z-index scales</a>
         <ul>
-          <li><a href="#component-elements" class="ps-4">Component elements</a></li>
-          <li><a href="#overlay-components" class="ps-4">Overlay components</a></li>
+          <li><a href="#component-elements">Component elements</a></li>
+          <li><a href="#overlay-components">Overlay components</a></li>
         </ul>
       </li>
       <li><a href="#html-and-css-over-js">HTML and CSS over JS</a></li>

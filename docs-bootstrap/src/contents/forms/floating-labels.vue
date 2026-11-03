@@ -180,7 +180,7 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

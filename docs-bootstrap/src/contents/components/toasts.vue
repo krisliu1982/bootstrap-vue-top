@@ -467,12 +467,12 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#basic" class="ps-4">Basic</a></li>
-          <li><a href="#live-example" class="ps-4">Live example</a></li>
-          <li><a href="#translucent" class="ps-4">Translucent</a></li>
-          <li><a href="#stacking" class="ps-4">Stacking</a></li>
-          <li><a href="#custom-content" class="ps-4">Custom content</a></li>
-          <li><a href="#color-schemes" class="ps-4">Color schemes</a></li>
+          <li><a href="#basic">Basic</a></li>
+          <li><a href="#live-example">Live example</a></li>
+          <li><a href="#translucent">Translucent</a></li>
+          <li><a href="#stacking">Stacking</a></li>
+          <li><a href="#custom-content">Custom content</a></li>
+          <li><a href="#color-schemes">Color schemes</a></li>
         </ul>
       </li>
       <li><a href="#placement">Placement</a></li>
@@ -480,17 +480,17 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#triggers" class="ps-4">Triggers</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#triggers">Triggers</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

@@ -99,6 +99,10 @@
     margin: 0;
   }
 
+    .docs-toc ul ul {
+    padding-left: 1rem;
+  }
+
   .docs-toc a {
       display: block;
       padding: 0.125rem 0.5rem;

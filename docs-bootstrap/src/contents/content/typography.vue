@@ -310,7 +310,7 @@
       <li>
         <a href="#headings">Headings</a>
         <ul>
-          <li><a href="#customizing-headings" class="ps-4">Customizing headings</a></li>
+          <li><a href="#customizing-headings">Customizing headings</a></li>
         </ul>
       </li>
       <li><a href="#display-headings">Display headings</a></li>
@@ -321,24 +321,24 @@
       <li>
         <a href="#blockquotes">Blockquotes</a>
         <ul>
-          <li><a href="#naming-a-source" class="ps-4">Naming a source</a></li>
-          <li><a href="#alignment" class="ps-4">Alignment</a></li>
+          <li><a href="#naming-a-source">Naming a source</a></li>
+          <li><a href="#alignment">Alignment</a></li>
         </ul>
       </li>
       <li>
         <a href="#lists">Lists</a>
         <ul>
-          <li><a href="#unstyled" class="ps-4">Unstyled</a></li>
-          <li><a href="#inline" class="ps-4">Inline</a></li>
-          <li><a href="#description-list-alignment" class="ps-4">Description list alignment</a></li>
+          <li><a href="#unstyled">Unstyled</a></li>
+          <li><a href="#inline">Inline</a></li>
+          <li><a href="#description-list-alignment">Description list alignment</a></li>
         </ul>
       </li>
       <li><a href="#responsive-font-sizes">Responsive font sizes</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
         </ul>
       </li>
     </ul>

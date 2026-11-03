@@ -229,17 +229,17 @@ dt {
       <li>
         <a href="#required-html">Required HTML</a>
         <ul>
-          <li><a href="#starter-template" class="ps-4">Starter template</a></li>
-          <li><a href="#rtl-examples" class="ps-4">RTL examples</a></li>
+          <li><a href="#starter-template">Starter template</a></li>
+          <li><a href="#rtl-examples">RTL examples</a></li>
         </ul>
       </li>
       <li><a href="#approach">Approach</a></li>
       <li>
         <a href="#customize-from-source">Customize from source</a>
         <ul>
-          <li><a href="#custom-rtl-values" class="ps-4">Custom RTL values</a></li>
-          <li><a href="#alternative-font-stack" class="ps-4">Alternative font stack</a></li>
-          <li><a href="#ltr-and-rtl-at-the-same-time" class="ps-4">LTR and RTL at the same time</a></li>
+          <li><a href="#custom-rtl-values">Custom RTL values</a></li>
+          <li><a href="#alternative-font-stack">Alternative font stack</a></li>
+          <li><a href="#ltr-and-rtl-at-the-same-time">LTR and RTL at the same time</a></li>
         </ul>
       </li>
       <li><a href="#the-breadcrumb-case">The breadcrumb case</a></li>

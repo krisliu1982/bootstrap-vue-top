@@ -454,8 +454,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       <li>
         <a href="#production-optimizations">Production optimizations</a>
         <ul>
-          <li><a href="#extracting-css" class="ps-4">Extracting CSS</a></li>
-          <li><a href="#extracting-svg-files" class="ps-4">Extracting SVG files</a></li>
+          <li><a href="#extracting-css">Extracting CSS</a></li>
+          <li><a href="#extracting-svg-files">Extracting SVG files</a></li>
         </ul>
       </li>
     </ul>

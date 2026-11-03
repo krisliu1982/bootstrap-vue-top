@@ -182,24 +182,24 @@
       <li>
         <a href="#margin-and-padding">Margin and padding</a>
         <ul>
-          <li><a href="#notation" class="ps-4">Notation</a></li>
-          <li><a href="#examples" class="ps-4">Examples</a></li>
-          <li><a href="#horizontal-centering" class="ps-4">Horizontal centering</a></li>
+          <li><a href="#notation">Notation</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#horizontal-centering">Horizontal centering</a></li>
         </ul>
       </li>
       <li><a href="#negative-margin">Negative margin</a></li>
       <li>
         <a href="#gap">Gap</a>
         <ul>
-          <li><a href="#row-gap" class="ps-4">row-gap</a></li>
-          <li><a href="#column-gap" class="ps-4">column-gap</a></li>
+          <li><a href="#row-gap">row-gap</a></li>
+          <li><a href="#column-gap">column-gap</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#sass-maps">Sass maps</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>

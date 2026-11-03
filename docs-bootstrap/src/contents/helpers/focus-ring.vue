@@ -73,9 +73,9 @@
       <li>
         <a href="#customize">Customize</a>
         <ul>
-          <li><a href="#css-variables" class="ps-4">CSS variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#css-variables">CSS variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>

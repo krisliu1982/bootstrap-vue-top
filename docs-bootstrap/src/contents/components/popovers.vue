@@ -542,27 +542,27 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#enable-popovers" class="ps-4">Enable popovers</a></li>
-          <li><a href="#live-demo" class="ps-4">Live demo</a></li>
-          <li><a href="#four-directions" class="ps-4">Four directions</a></li>
-          <li><a href="#custom-popovers" class="ps-4">Custom popovers</a></li>
-          <li><a href="#dismiss-on-next-click" class="ps-4">Dismiss on next click</a></li>
-          <li><a href="#disabled-elements" class="ps-4">Disabled elements</a></li>
+          <li><a href="#enable-popovers">Enable popovers</a></li>
+          <li><a href="#live-demo">Live demo</a></li>
+          <li><a href="#four-directions">Four directions</a></li>
+          <li><a href="#custom-popovers">Custom popovers</a></li>
+          <li><a href="#dismiss-on-next-click">Dismiss on next click</a></li>
+          <li><a href="#disabled-elements">Disabled elements</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

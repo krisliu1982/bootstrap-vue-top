@@ -273,29 +273,29 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#live-example" class="ps-4">Live example</a></li>
-          <li><a href="#link-color" class="ps-4">Link color</a></li>
-          <li><a href="#additional-content" class="ps-4">Additional content</a></li>
-          <li><a href="#icons" class="ps-4">Icons</a></li>
-          <li><a href="#dismissing" class="ps-4">Dismissing</a></li>
+          <li><a href="#live-example">Live example</a></li>
+          <li><a href="#link-color">Link color</a></li>
+          <li><a href="#additional-content">Additional content</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#dismissing">Dismissing</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
         </ul>
       </li>
       <li>
         <a href="#javascript-behavior">JavaScript behavior</a>
         <ul>
-          <li><a href="#initialize" class="ps-4">Initialize</a></li>
-          <li><a href="#triggers" class="ps-4">Triggers</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#initialize">Initialize</a></li>
+          <li><a href="#triggers">Triggers</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

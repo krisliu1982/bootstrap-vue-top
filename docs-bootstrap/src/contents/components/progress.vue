@@ -192,14 +192,14 @@
       <li>
         <a href="#bar-sizing">Bar sizing</a>
         <ul>
-          <li><a href="#width" class="ps-4">Width</a></li>
-          <li><a href="#height" class="ps-4">Height</a></li>
+          <li><a href="#width">Width</a></li>
+          <li><a href="#height">Height</a></li>
         </ul>
       </li>
       <li>
         <a href="#labels">Labels</a>
         <ul>
-          <li><a href="#long-labels" class="ps-4">Long labels</a></li>
+          <li><a href="#long-labels">Long labels</a></li>
         </ul>
       </li>
       <li><a href="#backgrounds">Backgrounds</a></li>
@@ -209,9 +209,9 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#keyframes" class="ps-4">Keyframes</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#keyframes">Keyframes</a></li>
         </ul>
       </li>
     </ul>

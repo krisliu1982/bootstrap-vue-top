@@ -782,16 +782,16 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       <li>
         <a href="#basic-examples">Basic examples</a>
         <ul>
-          <li><a href="#indicators" class="ps-4">Indicators</a></li>
-          <li><a href="#captions" class="ps-4">Captions</a></li>
-          <li><a href="#crossfade" class="ps-4">Crossfade</a></li>
+          <li><a href="#indicators">Indicators</a></li>
+          <li><a href="#captions">Captions</a></li>
+          <li><a href="#crossfade">Crossfade</a></li>
         </ul>
       </li>
       <li>
         <a href="#autoplaying-carousels">Autoplaying carousels</a>
         <ul>
           <li>
-            <a href="#autoplaying-carousels-without-controls" class="ps-4">Autoplaying carousels without controls</a>
+            <a href="#autoplaying-carousels-without-controls">Autoplaying carousels without controls</a>
           </li>
         </ul>
       </li>
@@ -801,17 +801,17 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

@@ -1411,66 +1411,66 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       <li>
         <a href="#v536">v5.3.6</a>
         <ul>
-          <li><a href="#dependencies" class="ps-4">Dependencies</a></li>
+          <li><a href="#dependencies">Dependencies</a></li>
         </ul>
       </li>
       <li>
         <a href="#v530">v5.3.0</a>
         <ul>
-          <li><a href="#helpers" class="ps-4">Helpers</a></li>
-          <li><a href="#utilities" class="ps-4">Utilities</a></li>
+          <li><a href="#helpers">Helpers</a></li>
+          <li><a href="#utilities">Utilities</a></li>
         </ul>
       </li>
       <li>
         <a href="#v530-alpha2">v5.3.0-alpha2</a>
         <ul>
-          <li><a href="#css-variables" class="ps-4">CSS variables</a></li>
-          <li><a href="#color-modes" class="ps-4">Color modes</a></li>
-          <li><a href="#typography" class="ps-4">Typography</a></li>
-          <li><a href="#components" class="ps-4">Components</a></li>
-          <li><a href="#helpers-1" class="ps-4">Helpers</a></li>
-          <li><a href="#utilities-1" class="ps-4">Utilities</a></li>
-          <li><a href="#docs" class="ps-4">Docs</a></li>
-          <li><a href="#tooling" class="ps-4">Tooling</a></li>
+          <li><a href="#css-variables">CSS variables</a></li>
+          <li><a href="#color-modes">Color modes</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#helpers-1">Helpers</a></li>
+          <li><a href="#utilities-1">Utilities</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#tooling">Tooling</a></li>
         </ul>
       </li>
       <li>
         <a href="#v530-alpha1">v5.3.0-alpha1</a>
         <ul>
-          <li><a href="#color-modes-1" class="ps-4">Color modes!</a></li>
-          <li><a href="#css-variables-1" class="ps-4">CSS variables</a></li>
-          <li><a href="#components-1" class="ps-4">Components</a></li>
-          <li><a href="#progress-bars" class="ps-4">Progress bars</a></li>
-          <li><a href="#forms" class="ps-4">Forms</a></li>
-          <li><a href="#utilities-2" class="ps-4">Utilities</a></li>
+          <li><a href="#color-modes-1">Color modes!</a></li>
+          <li><a href="#css-variables-1">CSS variables</a></li>
+          <li><a href="#components-1">Components</a></li>
+          <li><a href="#progress-bars">Progress bars</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#utilities-2">Utilities</a></li>
         </ul>
       </li>
       <li>
         <a href="#v520">v5.2.0</a>
         <ul>
-          <li><a href="#refreshed-design" class="ps-4">Refreshed design</a></li>
-          <li><a href="#more-css-variables" class="ps-4">More CSS variables</a></li>
-          <li><a href="#new-utilities" class="ps-4">New utilities</a></li>
-          <li><a href="#additional-changes" class="ps-4">Additional changes</a></li>
+          <li><a href="#refreshed-design">Refreshed design</a></li>
+          <li><a href="#more-css-variables">More CSS variables</a></li>
+          <li><a href="#new-utilities">New utilities</a></li>
+          <li><a href="#additional-changes">Additional changes</a></li>
         </ul>
       </li>
       <li><a href="#v510">v5.1.0</a></li>
       <li>
         <a href="#v500">v5.0.0</a>
         <ul>
-          <li><a href="#dependencies-1" class="ps-4">Dependencies</a></li>
-          <li><a href="#browser-support" class="ps-4">Browser support</a></li>
-          <li><a href="#documentation-changes" class="ps-4">Documentation changes</a></li>
-          <li><a href="#sass" class="ps-4">Sass</a></li>
-          <li><a href="#color-system" class="ps-4">Color system</a></li>
-          <li><a href="#grid-updates" class="ps-4">Grid updates</a></li>
-          <li><a href="#content-reboot-etc" class="ps-4">Content, Reboot, etc</a></li>
-          <li><a href="#rtl" class="ps-4">RTL</a></li>
-          <li><a href="#forms-1" class="ps-4">Forms</a></li>
-          <li><a href="#components-2" class="ps-4">Components</a></li>
-          <li><a href="#utilities-3" class="ps-4">Utilities</a></li>
-          <li><a href="#helpers-2" class="ps-4">Helpers</a></li>
-          <li><a href="#javascript" class="ps-4">JavaScript</a></li>
+          <li><a href="#dependencies-1">Dependencies</a></li>
+          <li><a href="#browser-support">Browser support</a></li>
+          <li><a href="#documentation-changes">Documentation changes</a></li>
+          <li><a href="#sass">Sass</a></li>
+          <li><a href="#color-system">Color system</a></li>
+          <li><a href="#grid-updates">Grid updates</a></li>
+          <li><a href="#content-reboot-etc">Content, Reboot, etc</a></li>
+          <li><a href="#rtl">RTL</a></li>
+          <li><a href="#forms-1">Forms</a></li>
+          <li><a href="#components-2">Components</a></li>
+          <li><a href="#utilities-3">Utilities</a></li>
+          <li><a href="#helpers-2">Helpers</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
         </ul>
       </li>
     </ul>

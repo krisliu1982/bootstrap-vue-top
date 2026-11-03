@@ -293,24 +293,24 @@
       <li>
         <a href="#disabled-state">Disabled state</a>
         <ul>
-          <li><a href="#link-functionality-caveat" class="ps-4">Link functionality caveat</a></li>
+          <li><a href="#link-functionality-caveat">Link functionality caveat</a></li>
         </ul>
       </li>
       <li><a href="#block-buttons">Block buttons</a></li>
       <li>
         <a href="#button-plugin">Button plugin</a>
         <ul>
-          <li><a href="#toggle-states" class="ps-4">Toggle states</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
+          <li><a href="#toggle-states">Toggle states</a></li>
+          <li><a href="#methods">Methods</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
         </ul>
       </li>
     </ul>

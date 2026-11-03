@@ -315,26 +315,26 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       <li>
         <a href="#example">Example</a>
         <ul>
-          <li><a href="#flush" class="ps-4">Flush</a></li>
-          <li><a href="#always-open" class="ps-4">Always open</a></li>
+          <li><a href="#flush">Flush</a></li>
+          <li><a href="#always-open">Always open</a></li>
         </ul>
       </li>
       <li><a href="#accessibility">Accessibility</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

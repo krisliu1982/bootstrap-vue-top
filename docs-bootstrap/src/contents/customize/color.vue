@@ -637,16 +637,16 @@ $utilities: map-merge(
       <li>
         <a href="#colors">Colors</a>
         <ul>
-          <li><a href="#using-the-new-colors" class="ps-4">Using the new colors</a></li>
-          <li><a href="#theme-colors" class="ps-4">Theme colors</a></li>
-          <li><a href="#all-colors" class="ps-4">All colors</a></li>
-          <li><a href="#notes-on-sass" class="ps-4">Notes on Sass</a></li>
+          <li><a href="#using-the-new-colors">Using the new colors</a></li>
+          <li><a href="#theme-colors">Theme colors</a></li>
+          <li><a href="#all-colors">All colors</a></li>
+          <li><a href="#notes-on-sass">Notes on Sass</a></li>
         </ul>
       </li>
       <li>
         <a href="#color-sass-maps">Color Sass maps</a>
         <ul>
-          <li><a href="#example" class="ps-4">Example</a></li>
+          <li><a href="#example">Example</a></li>
         </ul>
       </li>
       <li>

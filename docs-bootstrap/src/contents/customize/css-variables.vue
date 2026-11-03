@@ -266,8 +266,8 @@ a {
       <li>
         <a href="#root-variables">Root variables</a>
         <ul>
-          <li><a href="#default" class="ps-4">Default</a></li>
-          <li><a href="#dark-mode" class="ps-4">Dark mode</a></li>
+          <li><a href="#default">Default</a></li>
+          <li><a href="#dark-mode">Dark mode</a></li>
         </ul>
       </li>
       <li><a href="#component-variables">Component variables</a></li>

@@ -23,7 +23,7 @@
   <nav class="docs-toc" aria-label="本页目录">
     <h6>本页目录</h6>
     <ul>
-      <li><a href="#general-outline" class="ps-4">General outline</a></li>
+      <li><a href="#general-outline">General outline</a></li>
     </ul>
   </nav>
 </template>

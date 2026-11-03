@@ -88,9 +88,9 @@
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#headings" class="ps-4">Headings</a></li>
-          <li><a href="#buttons" class="ps-4">Buttons</a></li>
-          <li><a href="#positioned" class="ps-4">Positioned</a></li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#positioned">Positioned</a></li>
         </ul>
       </li>
       <li><a href="#background-colors">Background colors</a></li>
@@ -98,8 +98,8 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

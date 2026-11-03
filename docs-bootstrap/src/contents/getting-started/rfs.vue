@@ -104,8 +104,8 @@
       <li>
         <a href="#using-rfs">Using RFS</a>
         <ul>
-          <li><a href="#using-the-mixins" class="ps-4">Using the mixins</a></li>
-          <li><a href="#using-the-functions" class="ps-4">Using the functions</a></li>
+          <li><a href="#using-the-mixins">Using the mixins</a></li>
+          <li><a href="#using-the-functions">Using the functions</a></li>
         </ul>
       </li>
       <li>

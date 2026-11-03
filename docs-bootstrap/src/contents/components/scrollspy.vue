@@ -518,21 +518,21 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#navbar" class="ps-4">Navbar</a></li>
-          <li><a href="#nested-nav" class="ps-4">Nested nav</a></li>
-          <li><a href="#list-group" class="ps-4">List group</a></li>
-          <li><a href="#simple-anchors" class="ps-4">Simple anchors</a></li>
+          <li><a href="#navbar">Navbar</a></li>
+          <li><a href="#nested-nav">Nested nav</a></li>
+          <li><a href="#list-group">List group</a></li>
+          <li><a href="#simple-anchors">Simple anchors</a></li>
         </ul>
       </li>
       <li><a href="#non-visible-elements">Non-visible elements</a></li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

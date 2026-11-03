@@ -1221,8 +1221,8 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#single-button" class="ps-4">Single button</a></li>
-          <li><a href="#split-button" class="ps-4">Split button</a></li>
+          <li><a href="#single-button">Single button</a></li>
+          <li><a href="#split-button">Split button</a></li>
         </ul>
       </li>
       <li><a href="#sizing">Sizing</a></li>
@@ -1230,58 +1230,58 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       <li>
         <a href="#directions">Directions</a>
         <ul>
-          <li><a href="#centered" class="ps-4">Centered</a></li>
-          <li><a href="#dropup" class="ps-4">Dropup</a></li>
-          <li><a href="#dropup-centered" class="ps-4">Dropup centered</a></li>
-          <li><a href="#dropend" class="ps-4">Dropend</a></li>
-          <li><a href="#dropstart" class="ps-4">Dropstart</a></li>
+          <li><a href="#centered">Centered</a></li>
+          <li><a href="#dropup">Dropup</a></li>
+          <li><a href="#dropup-centered">Dropup centered</a></li>
+          <li><a href="#dropend">Dropend</a></li>
+          <li><a href="#dropstart">Dropstart</a></li>
         </ul>
       </li>
       <li>
         <a href="#menu-items">Menu items</a>
         <ul>
-          <li><a href="#active" class="ps-4">Active</a></li>
-          <li><a href="#disabled" class="ps-4">Disabled</a></li>
+          <li><a href="#active">Active</a></li>
+          <li><a href="#disabled">Disabled</a></li>
         </ul>
       </li>
       <li>
         <a href="#menu-alignment">Menu alignment</a>
         <ul>
-          <li><a href="#responsive-alignment" class="ps-4">Responsive alignment</a></li>
-          <li><a href="#alignment-options" class="ps-4">Alignment options</a></li>
+          <li><a href="#responsive-alignment">Responsive alignment</a></li>
+          <li><a href="#alignment-options">Alignment options</a></li>
         </ul>
       </li>
       <li>
         <a href="#menu-content">Menu content</a>
         <ul>
-          <li><a href="#headers" class="ps-4">Headers</a></li>
-          <li><a href="#dividers" class="ps-4">Dividers</a></li>
-          <li><a href="#text" class="ps-4">Text</a></li>
-          <li><a href="#forms" class="ps-4">Forms</a></li>
+          <li><a href="#headers">Headers</a></li>
+          <li><a href="#dividers">Dividers</a></li>
+          <li><a href="#text">Text</a></li>
+          <li><a href="#forms">Forms</a></li>
         </ul>
       </li>
       <li>
         <a href="#dropdown-options">Dropdown options</a>
         <ul>
-          <li><a href="#auto-close-behavior" class="ps-4">Auto close behavior</a></li>
+          <li><a href="#auto-close-behavior">Auto close behavior</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

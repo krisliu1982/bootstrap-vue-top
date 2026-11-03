@@ -956,20 +956,20 @@
       <li>
         <a href="#content-types">Content types</a>
         <ul>
-          <li><a href="#body" class="ps-4">Body</a></li>
-          <li><a href="#titles-text-and-links" class="ps-4">Titles, text, and links</a></li>
-          <li><a href="#images" class="ps-4">Images</a></li>
-          <li><a href="#list-groups" class="ps-4">List groups</a></li>
-          <li><a href="#kitchen-sink" class="ps-4">Kitchen sink</a></li>
-          <li><a href="#header-and-footer" class="ps-4">Header and footer</a></li>
+          <li><a href="#body">Body</a></li>
+          <li><a href="#titles-text-and-links">Titles, text, and links</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#list-groups">List groups</a></li>
+          <li><a href="#kitchen-sink">Kitchen sink</a></li>
+          <li><a href="#header-and-footer">Header and footer</a></li>
         </ul>
       </li>
       <li>
         <a href="#sizing">Sizing</a>
         <ul>
-          <li><a href="#using-grid-markup" class="ps-4">Using grid markup</a></li>
-          <li><a href="#using-utilities" class="ps-4">Using utilities</a></li>
-          <li><a href="#using-custom-css" class="ps-4">Using custom CSS</a></li>
+          <li><a href="#using-grid-markup">Using grid markup</a></li>
+          <li><a href="#using-utilities">Using utilities</a></li>
+          <li><a href="#using-custom-css">Using custom CSS</a></li>
         </ul>
       </li>
       <li><a href="#text-alignment">Text alignment</a></li>
@@ -977,32 +977,32 @@
       <li>
         <a href="#images-1">Images</a>
         <ul>
-          <li><a href="#image-caps" class="ps-4">Image caps</a></li>
-          <li><a href="#image-overlays" class="ps-4">Image overlays</a></li>
+          <li><a href="#image-caps">Image caps</a></li>
+          <li><a href="#image-overlays">Image overlays</a></li>
         </ul>
       </li>
       <li><a href="#horizontal">Horizontal</a></li>
       <li>
         <a href="#card-styles">Card styles</a>
         <ul>
-          <li><a href="#background-and-color" class="ps-4">Background and color</a></li>
-          <li><a href="#border" class="ps-4">Border</a></li>
-          <li><a href="#mixins-utilities" class="ps-4">Mixins utilities</a></li>
+          <li><a href="#background-and-color">Background and color</a></li>
+          <li><a href="#border">Border</a></li>
+          <li><a href="#mixins-utilities">Mixins utilities</a></li>
         </ul>
       </li>
       <li>
         <a href="#card-layout">Card layout</a>
         <ul>
-          <li><a href="#card-groups" class="ps-4">Card groups</a></li>
-          <li><a href="#grid-cards" class="ps-4">Grid cards</a></li>
-          <li><a href="#masonry" class="ps-4">Masonry</a></li>
+          <li><a href="#card-groups">Card groups</a></li>
+          <li><a href="#grid-cards">Grid cards</a></li>
+          <li><a href="#masonry">Masonry</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

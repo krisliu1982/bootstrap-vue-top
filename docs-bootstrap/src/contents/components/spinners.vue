@@ -183,15 +183,15 @@
       <li>
         <a href="#border-spinner">Border spinner</a>
         <ul>
-          <li><a href="#colors" class="ps-4">Colors</a></li>
+          <li><a href="#colors">Colors</a></li>
         </ul>
       </li>
       <li><a href="#growing-spinner">Growing spinner</a></li>
       <li>
         <a href="#alignment">Alignment</a>
         <ul>
-          <li><a href="#margin" class="ps-4">Margin</a></li>
-          <li><a href="#placement" class="ps-4">Placement</a></li>
+          <li><a href="#margin">Margin</a></li>
+          <li><a href="#placement">Placement</a></li>
         </ul>
       </li>
       <li><a href="#size">Size</a></li>
@@ -199,9 +199,9 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#keyframes" class="ps-4">Keyframes</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#keyframes">Keyframes</a></li>
         </ul>
       </li>
     </ul>

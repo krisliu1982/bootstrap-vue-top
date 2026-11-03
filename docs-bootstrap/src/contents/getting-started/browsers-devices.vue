@@ -164,17 +164,17 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
       <li>
         <a href="#supported-browsers">Supported browsers</a>
         <ul>
-          <li><a href="#mobile-devices" class="ps-4">Mobile devices</a></li>
-          <li><a href="#desktop-browsers" class="ps-4">Desktop browsers</a></li>
+          <li><a href="#mobile-devices">Mobile devices</a></li>
+          <li><a href="#desktop-browsers">Desktop browsers</a></li>
         </ul>
       </li>
       <li><a href="#internet-explorer">Internet Explorer</a></li>
       <li>
         <a href="#modals-and-dropdowns-on-mobile">Modals and dropdowns on mobile</a>
         <ul>
-          <li><a href="#overflow-and-scrolling" class="ps-4">Overflow and scrolling</a></li>
-          <li><a href="#ios-text-fields-and-scrolling" class="ps-4">iOS text fields and scrolling</a></li>
-          <li><a href="#navbar-dropdowns" class="ps-4">Navbar Dropdowns</a></li>
+          <li><a href="#overflow-and-scrolling">Overflow and scrolling</a></li>
+          <li><a href="#ios-text-fields-and-scrolling">iOS text fields and scrolling</a></li>
+          <li><a href="#navbar-dropdowns">Navbar Dropdowns</a></li>
         </ul>
       </li>
       <li><a href="#browser-zooming">Browser zooming</a></li>

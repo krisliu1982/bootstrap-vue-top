@@ -547,7 +547,7 @@ tabElms.forEach(tabElm =&gt; {
       <li>
         <a href="#variants">Variants</a>
         <ul>
-          <li><a href="#for-links-and-buttons" class="ps-4">For links and buttons</a></li>
+          <li><a href="#for-links-and-buttons">For links and buttons</a></li>
         </ul>
       </li>
       <li><a href="#with-badges">With badges</a></li>
@@ -556,20 +556,20 @@ tabElms.forEach(tabElm =&gt; {
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
         </ul>
       </li>
       <li>
         <a href="#javascript-behavior">JavaScript behavior</a>
         <ul>
-          <li><a href="#using-data-attributes" class="ps-4">Using data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#fade-effect" class="ps-4">Fade effect</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#using-data-attributes">Using data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#fade-effect">Fade effect</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

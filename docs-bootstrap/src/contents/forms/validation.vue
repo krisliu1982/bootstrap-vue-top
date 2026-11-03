@@ -432,12 +432,12 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
-          <li><a href="#customizing" class="ps-4">Customizing</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-maps">Sass maps</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#customizing">Customizing</a></li>
         </ul>
       </li>
     </ul>

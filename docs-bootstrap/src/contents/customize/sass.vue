@@ -422,25 +422,25 @@ $border-width: 0;
       <li>
         <a href="#maps-and-loops">Maps and loops</a>
         <ul>
-          <li><a href="#modify-map" class="ps-4">Modify map</a></li>
-          <li><a href="#add-to-map" class="ps-4">Add to map</a></li>
-          <li><a href="#remove-from-map" class="ps-4">Remove from map</a></li>
+          <li><a href="#modify-map">Modify map</a></li>
+          <li><a href="#add-to-map">Add to map</a></li>
+          <li><a href="#remove-from-map">Remove from map</a></li>
         </ul>
       </li>
       <li><a href="#required-keys">Required keys</a></li>
       <li>
         <a href="#functions">Functions</a>
         <ul>
-          <li><a href="#colors" class="ps-4">Colors</a></li>
-          <li><a href="#color-contrast" class="ps-4">Color contrast</a></li>
-          <li><a href="#escape-svg" class="ps-4">Escape SVG</a></li>
-          <li><a href="#add-and-subtract-functions" class="ps-4">Add and Subtract functions</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#color-contrast">Color contrast</a></li>
+          <li><a href="#escape-svg">Escape SVG</a></li>
+          <li><a href="#add-and-subtract-functions">Add and Subtract functions</a></li>
         </ul>
       </li>
       <li>
         <a href="#mixins">Mixins</a>
         <ul>
-          <li><a href="#color-schemes" class="ps-4">Color schemes</a></li>
+          <li><a href="#color-schemes">Color schemes</a></li>
         </ul>
       </li>
     </ul>

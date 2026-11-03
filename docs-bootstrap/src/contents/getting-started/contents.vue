@@ -192,8 +192,8 @@
       <li>
         <a href="#compiled-bootstrap">Compiled Bootstrap</a>
         <ul>
-          <li><a href="#css-files" class="ps-4">CSS files</a></li>
-          <li><a href="#js-files" class="ps-4">JS files</a></li>
+          <li><a href="#css-files">CSS files</a></li>
+          <li><a href="#js-files">JS files</a></li>
         </ul>
       </li>
       <li>

@@ -439,11 +439,11 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#offcanvas-components" class="ps-4">Offcanvas components</a></li>
-          <li><a href="#live-demo" class="ps-4">Live demo</a></li>
-          <li><a href="#body-scrolling" class="ps-4">Body scrolling</a></li>
-          <li><a href="#body-scrolling-and-backdrop" class="ps-4">Body scrolling and backdrop</a></li>
-          <li><a href="#static-backdrop" class="ps-4">Static backdrop</a></li>
+          <li><a href="#offcanvas-components">Offcanvas components</a></li>
+          <li><a href="#live-demo">Live demo</a></li>
+          <li><a href="#body-scrolling">Body scrolling</a></li>
+          <li><a href="#body-scrolling-and-backdrop">Body scrolling and backdrop</a></li>
+          <li><a href="#static-backdrop">Static backdrop</a></li>
         </ul>
       </li>
       <li><a href="#dark-offcanvas">Dark offcanvas</a></li>
@@ -453,18 +453,18 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

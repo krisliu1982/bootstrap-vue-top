@@ -394,8 +394,8 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#enable-dark-mode" class="ps-4">Enable dark mode</a></li>
-          <li><a href="#building-with-sass" class="ps-4">Building with Sass</a></li>
+          <li><a href="#enable-dark-mode">Enable dark mode</a></li>
+          <li><a href="#building-with-sass">Building with Sass</a></li>
         </ul>
       </li>
       <li><a href="#custom-color-modes">Custom color modes</a></li>
@@ -404,9 +404,9 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
         </ul>
       </li>
     </ul>

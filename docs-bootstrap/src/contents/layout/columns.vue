@@ -408,17 +408,17 @@
       <li>
         <a href="#alignment">Alignment</a>
         <ul>
-          <li><a href="#vertical-alignment" class="ps-4">Vertical alignment</a></li>
-          <li><a href="#horizontal-alignment" class="ps-4">Horizontal alignment</a></li>
-          <li><a href="#column-wrapping" class="ps-4">Column wrapping</a></li>
-          <li><a href="#column-breaks" class="ps-4">Column breaks</a></li>
+          <li><a href="#vertical-alignment">Vertical alignment</a></li>
+          <li><a href="#horizontal-alignment">Horizontal alignment</a></li>
+          <li><a href="#column-wrapping">Column wrapping</a></li>
+          <li><a href="#column-breaks">Column breaks</a></li>
         </ul>
       </li>
       <li>
         <a href="#reordering">Reordering</a>
         <ul>
-          <li><a href="#order-classes" class="ps-4">Order classes</a></li>
-          <li><a href="#offsetting-columns" class="ps-4">Offsetting columns</a></li>
+          <li><a href="#order-classes">Order classes</a></li>
+          <li><a href="#offsetting-columns">Offsetting columns</a></li>
         </ul>
       </li>
       <li>

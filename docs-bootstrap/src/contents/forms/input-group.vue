@@ -324,14 +324,14 @@
       <li>
         <a href="#custom-forms">Custom forms</a>
         <ul>
-          <li><a href="#custom-select" class="ps-4">Custom select</a></li>
-          <li><a href="#custom-file-input" class="ps-4">Custom file input</a></li>
+          <li><a href="#custom-select">Custom select</a></li>
+          <li><a href="#custom-file-input">Custom file input</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

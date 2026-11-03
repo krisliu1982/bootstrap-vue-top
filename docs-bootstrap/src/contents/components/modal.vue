@@ -979,20 +979,20 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#modal-components" class="ps-4">Modal components</a></li>
-          <li><a href="#live-demo" class="ps-4">Live demo</a></li>
-          <li><a href="#static-backdrop" class="ps-4">Static backdrop</a></li>
-          <li><a href="#scrolling-long-content" class="ps-4">Scrolling long content</a></li>
-          <li><a href="#vertically-centered" class="ps-4">Vertically centered</a></li>
-          <li><a href="#tooltips-and-popovers" class="ps-4">Tooltips and popovers</a></li>
-          <li><a href="#using-the-grid" class="ps-4">Using the grid</a></li>
-          <li><a href="#varying-modal-content" class="ps-4">Varying modal content</a></li>
-          <li><a href="#toggle-between-modals" class="ps-4">Toggle between modals</a></li>
-          <li><a href="#change-animation" class="ps-4">Change animation</a></li>
-          <li><a href="#remove-animation" class="ps-4">Remove animation</a></li>
-          <li><a href="#dynamic-heights" class="ps-4">Dynamic heights</a></li>
-          <li><a href="#accessibility" class="ps-4">Accessibility</a></li>
-          <li><a href="#embedding-youtube-videos" class="ps-4">Embedding YouTube videos</a></li>
+          <li><a href="#modal-components">Modal components</a></li>
+          <li><a href="#live-demo">Live demo</a></li>
+          <li><a href="#static-backdrop">Static backdrop</a></li>
+          <li><a href="#scrolling-long-content">Scrolling long content</a></li>
+          <li><a href="#vertically-centered">Vertically centered</a></li>
+          <li><a href="#tooltips-and-popovers">Tooltips and popovers</a></li>
+          <li><a href="#using-the-grid">Using the grid</a></li>
+          <li><a href="#varying-modal-content">Varying modal content</a></li>
+          <li><a href="#toggle-between-modals">Toggle between modals</a></li>
+          <li><a href="#change-animation">Change animation</a></li>
+          <li><a href="#remove-animation">Remove animation</a></li>
+          <li><a href="#dynamic-heights">Dynamic heights</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#embedding-youtube-videos">Embedding YouTube videos</a></li>
         </ul>
       </li>
       <li><a href="#optional-sizes">Optional sizes</a></li>
@@ -1000,19 +1000,19 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
         <ul>
-          <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#options" class="ps-4">Options</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#via-data-attributes">Via data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#options">Options</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

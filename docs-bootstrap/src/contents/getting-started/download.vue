@@ -202,18 +202,18 @@ yarn start # Start the project
       <li>
         <a href="#cdn-via-jsdelivr">CDN via jsDelivr</a>
         <ul>
-          <li><a href="#alternative-cdns" class="ps-4">Alternative CDNs</a></li>
+          <li><a href="#alternative-cdns">Alternative CDNs</a></li>
         </ul>
       </li>
       <li>
         <a href="#package-managers">Package managers</a>
         <ul>
-          <li><a href="#npm" class="ps-4">npm</a></li>
-          <li><a href="#yarn" class="ps-4">yarn</a></li>
-          <li><a href="#bun" class="ps-4">Bun</a></li>
-          <li><a href="#rubygems" class="ps-4">RubyGems</a></li>
-          <li><a href="#composer" class="ps-4">Composer</a></li>
-          <li><a href="#nuget" class="ps-4">NuGet</a></li>
+          <li><a href="#npm">npm</a></li>
+          <li><a href="#yarn">yarn</a></li>
+          <li><a href="#bun">Bun</a></li>
+          <li><a href="#rubygems">RubyGems</a></li>
+          <li><a href="#composer">Composer</a></li>
+          <li><a href="#nuget">NuGet</a></li>
         </ul>
       </li>
       <li>

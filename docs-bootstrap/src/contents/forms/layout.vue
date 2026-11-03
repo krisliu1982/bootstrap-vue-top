@@ -349,7 +349,7 @@
       <li>
         <a href="#horizontal-form">Horizontal form</a>
         <ul>
-          <li><a href="#horizontal-form-label-sizing" class="ps-4">Horizontal form label sizing</a></li>
+          <li><a href="#horizontal-form-label-sizing">Horizontal form label sizing</a></li>
         </ul>
       </li>
       <li><a href="#column-sizing">Column sizing</a></li>

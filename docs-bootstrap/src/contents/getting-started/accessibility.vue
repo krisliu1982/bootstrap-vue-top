@@ -94,11 +94,11 @@
       <li>
         <a href="#overview-and-limitations">Overview and limitations</a>
         <ul>
-          <li><a href="#structural-markup" class="ps-4">Structural markup</a></li>
-          <li><a href="#interactive-components" class="ps-4">Interactive components</a></li>
-          <li><a href="#color-contrast" class="ps-4">Color contrast</a></li>
-          <li><a href="#visually-hidden-content" class="ps-4">Visually hidden content</a></li>
-          <li><a href="#reduced-motion" class="ps-4">Reduced motion</a></li>
+          <li><a href="#structural-markup">Structural markup</a></li>
+          <li><a href="#interactive-components">Interactive components</a></li>
+          <li><a href="#color-contrast">Color contrast</a></li>
+          <li><a href="#visually-hidden-content">Visually hidden content</a></li>
+          <li><a href="#reduced-motion">Reduced motion</a></li>
         </ul>
       </li>
       <li>

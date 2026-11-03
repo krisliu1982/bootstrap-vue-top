@@ -692,7 +692,7 @@ code='<div class="d-flex flex-nowrap">
       <li>
         <a href="#auto-margins">Auto margins</a>
         <ul>
-          <li><a href="#with-align-items" class="ps-4">With align-items</a></li>
+          <li><a href="#with-align-items">With align-items</a></li>
         </ul>
       </li>
       <li><a href="#wrap">Wrap</a></li>
@@ -702,7 +702,7 @@ code='<div class="d-flex flex-nowrap">
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>

@@ -224,10 +224,10 @@
       <li>
         <a href="#media-queries">Media queries</a>
         <ul>
-          <li><a href="#min-width" class="ps-4">Min-width</a></li>
-          <li><a href="#max-width" class="ps-4">Max-width</a></li>
-          <li><a href="#single-breakpoint" class="ps-4">Single breakpoint</a></li>
-          <li><a href="#between-breakpoints" class="ps-4">Between breakpoints</a></li>
+          <li><a href="#min-width">Min-width</a></li>
+          <li><a href="#max-width">Max-width</a></li>
+          <li><a href="#single-breakpoint">Single breakpoint</a></li>
+          <li><a href="#between-breakpoints">Between breakpoints</a></li>
         </ul>
       </li>
     </ul>

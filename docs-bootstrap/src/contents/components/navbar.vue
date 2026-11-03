@@ -812,10 +812,10 @@
       <li>
         <a href="#supported-content">Supported content</a>
         <ul>
-          <li><a href="#brand" class="ps-4">Brand</a></li>
-          <li><a href="#nav" class="ps-4">Nav</a></li>
-          <li><a href="#forms" class="ps-4">Forms</a></li>
-          <li><a href="#text-1" class="ps-4">Text</a></li>
+          <li><a href="#brand">Brand</a></li>
+          <li><a href="#nav">Nav</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#text-1">Text</a></li>
         </ul>
       </li>
       <li><a href="#color-schemes">Color schemes</a></li>
@@ -825,17 +825,17 @@
       <li>
         <a href="#responsive-behaviors">Responsive behaviors</a>
         <ul>
-          <li><a href="#toggler" class="ps-4">Toggler</a></li>
-          <li><a href="#external-content" class="ps-4">External content</a></li>
-          <li><a href="#offcanvas" class="ps-4">Offcanvas</a></li>
+          <li><a href="#toggler">Toggler</a></li>
+          <li><a href="#external-content">External content</a></li>
+          <li><a href="#offcanvas">Offcanvas</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
         </ul>
       </li>
     </ul>

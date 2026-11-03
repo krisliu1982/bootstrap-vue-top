@@ -874,18 +874,18 @@
       <li>
         <a href="#accented-tables">Accented tables</a>
         <ul>
-          <li><a href="#striped-rows" class="ps-4">Striped rows</a></li>
-          <li><a href="#striped-columns" class="ps-4">Striped columns</a></li>
-          <li><a href="#hoverable-rows" class="ps-4">Hoverable rows</a></li>
-          <li><a href="#active-tables" class="ps-4">Active tables</a></li>
+          <li><a href="#striped-rows">Striped rows</a></li>
+          <li><a href="#striped-columns">Striped columns</a></li>
+          <li><a href="#hoverable-rows">Hoverable rows</a></li>
+          <li><a href="#active-tables">Active tables</a></li>
         </ul>
       </li>
       <li><a href="#how-do-the-variants-and-accented-tables-work">How do the variants and accented tables work?</a></li>
       <li>
         <a href="#table-borders">Table borders</a>
         <ul>
-          <li><a href="#bordered-tables" class="ps-4">Bordered tables</a></li>
-          <li><a href="#tables-without-borders" class="ps-4">Tables without borders</a></li>
+          <li><a href="#bordered-tables">Bordered tables</a></li>
+          <li><a href="#tables-without-borders">Tables without borders</a></li>
         </ul>
       </li>
       <li><a href="#small-tables">Small tables</a></li>
@@ -896,24 +896,24 @@
       <li>
         <a href="#anatomy">Anatomy</a>
         <ul>
-          <li><a href="#table-head" class="ps-4">Table head</a></li>
-          <li><a href="#table-foot" class="ps-4">Table foot</a></li>
-          <li><a href="#captions" class="ps-4">Captions</a></li>
+          <li><a href="#table-head">Table head</a></li>
+          <li><a href="#table-foot">Table foot</a></li>
+          <li><a href="#captions">Captions</a></li>
         </ul>
       </li>
       <li>
         <a href="#responsive-tables">Responsive tables</a>
         <ul>
-          <li><a href="#always-responsive" class="ps-4">Always responsive</a></li>
-          <li><a href="#breakpoint-specific" class="ps-4">Breakpoint specific</a></li>
+          <li><a href="#always-responsive">Always responsive</a></li>
+          <li><a href="#breakpoint-specific">Breakpoint specific</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
-          <li><a href="#customizing" class="ps-4">Customizing</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#customizing">Customizing</a></li>
         </ul>
       </li>
     </ul>

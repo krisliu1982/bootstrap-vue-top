@@ -408,11 +408,11 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       <li>
         <a href="#programmatic-api">Programmatic API</a>
         <ul>
-          <li><a href="#css-selectors-in-constructors" class="ps-4">CSS selectors in constructors</a></li>
+          <li><a href="#css-selectors-in-constructors">CSS selectors in constructors</a></li>
           <li>
-            <a href="#asynchronous-functions-and-transitions" class="ps-4">Asynchronous functions and transitions</a>
+            <a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a>
           </li>
-          <li><a href="#default-settings" class="ps-4">Default settings</a></li>
+          <li><a href="#default-settings">Default settings</a></li>
         </ul>
       </li>
       <li><a href="#methods-and-properties">Methods and properties</a></li>
@@ -420,8 +420,8 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       <li>
         <a href="#optionally-using-jquery">Optionally using jQuery</a>
         <ul>
-          <li><a href="#no-conflict" class="ps-4">No conflict</a></li>
-          <li><a href="#jquery-events" class="ps-4">jQuery events</a></li>
+          <li><a href="#no-conflict">No conflict</a></li>
+          <li><a href="#jquery-events">jQuery events</a></li>
         </ul>
       </li>
       <li>

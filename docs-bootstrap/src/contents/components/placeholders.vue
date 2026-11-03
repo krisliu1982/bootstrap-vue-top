@@ -144,16 +144,16 @@
       <li>
         <a href="#how-it-works">How it works</a>
         <ul>
-          <li><a href="#width" class="ps-4">Width</a></li>
-          <li><a href="#color" class="ps-4">Color</a></li>
-          <li><a href="#sizing" class="ps-4">Sizing</a></li>
-          <li><a href="#animation" class="ps-4">Animation</a></li>
+          <li><a href="#width">Width</a></li>
+          <li><a href="#color">Color</a></li>
+          <li><a href="#sizing">Sizing</a></li>
+          <li><a href="#animation">Animation</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

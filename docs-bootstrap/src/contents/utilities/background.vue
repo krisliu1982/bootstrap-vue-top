@@ -133,17 +133,17 @@
       <li>
         <a href="#opacity">Opacity</a>
         <ul>
-          <li><a href="#how-it-works" class="ps-4">How it works</a></li>
-          <li><a href="#example" class="ps-4">Example</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#example">Example</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-maps">Sass maps</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>

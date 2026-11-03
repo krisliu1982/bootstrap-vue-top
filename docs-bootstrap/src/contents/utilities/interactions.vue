@@ -46,7 +46,7 @@
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>

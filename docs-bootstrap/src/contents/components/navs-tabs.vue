@@ -775,12 +775,12 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
       <li>
         <a href="#available-styles">Available styles</a>
         <ul>
-          <li><a href="#horizontal-alignment" class="ps-4">Horizontal alignment</a></li>
-          <li><a href="#vertical" class="ps-4">Vertical</a></li>
-          <li><a href="#tabs" class="ps-4">Tabs</a></li>
-          <li><a href="#pills" class="ps-4">Pills</a></li>
-          <li><a href="#underline" class="ps-4">Underline</a></li>
-          <li><a href="#fill-and-justify" class="ps-4">Fill and justify</a></li>
+          <li><a href="#horizontal-alignment">Horizontal alignment</a></li>
+          <li><a href="#vertical">Vertical</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#pills">Pills</a></li>
+          <li><a href="#underline">Underline</a></li>
+          <li><a href="#fill-and-justify">Fill and justify</a></li>
         </ul>
       </li>
       <li><a href="#working-with-flex-utilities">Working with flex utilities</a></li>
@@ -788,26 +788,26 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
       <li>
         <a href="#using-dropdowns">Using dropdowns</a>
         <ul>
-          <li><a href="#tabs-with-dropdowns" class="ps-4">Tabs with dropdowns</a></li>
-          <li><a href="#pills-with-dropdowns" class="ps-4">Pills with dropdowns</a></li>
+          <li><a href="#tabs-with-dropdowns">Tabs with dropdowns</a></li>
+          <li><a href="#pills-with-dropdowns">Pills with dropdowns</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables" class="ps-4">Variables</a></li>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#javascript-behavior">JavaScript behavior</a>
         <ul>
-          <li><a href="#accessibility" class="ps-4">Accessibility</a></li>
-          <li><a href="#using-data-attributes" class="ps-4">Using data attributes</a></li>
-          <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
-          <li><a href="#fade-effect" class="ps-4">Fade effect</a></li>
-          <li><a href="#methods" class="ps-4">Methods</a></li>
-          <li><a href="#events" class="ps-4">Events</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#using-data-attributes">Using data attributes</a></li>
+          <li><a href="#via-javascript">Via JavaScript</a></li>
+          <li><a href="#fade-effect">Fade effect</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </li>
     </ul>

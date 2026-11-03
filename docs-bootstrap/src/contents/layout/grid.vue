@@ -570,34 +570,34 @@ $container-max-widths: (
       <li>
         <a href="#auto-layout-columns">Auto-layout columns</a>
         <ul>
-          <li><a href="#equal-width" class="ps-4">Equal-width</a></li>
-          <li><a href="#setting-one-column-width" class="ps-4">Setting one column width</a></li>
-          <li><a href="#variable-width-content" class="ps-4">Variable width content</a></li>
+          <li><a href="#equal-width">Equal-width</a></li>
+          <li><a href="#setting-one-column-width">Setting one column width</a></li>
+          <li><a href="#variable-width-content">Variable width content</a></li>
         </ul>
       </li>
       <li>
         <a href="#responsive-classes">Responsive classes</a>
         <ul>
-          <li><a href="#all-breakpoints" class="ps-4">All breakpoints</a></li>
-          <li><a href="#stacked-to-horizontal" class="ps-4">Stacked to horizontal</a></li>
-          <li><a href="#mix-and-match" class="ps-4">Mix and match</a></li>
-          <li><a href="#row-columns" class="ps-4">Row columns</a></li>
+          <li><a href="#all-breakpoints">All breakpoints</a></li>
+          <li><a href="#stacked-to-horizontal">Stacked to horizontal</a></li>
+          <li><a href="#mix-and-match">Mix and match</a></li>
+          <li><a href="#row-columns">Row columns</a></li>
         </ul>
       </li>
       <li><a href="#nesting">Nesting</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
-          <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
-          <li><a href="#example-usage" class="ps-4">Example usage</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#example-usage">Example usage</a></li>
         </ul>
       </li>
       <li>
         <a href="#customizing-the-grid">Customizing the grid</a>
         <ul>
-          <li><a href="#columns-and-gutters" class="ps-4">Columns and gutters</a></li>
-          <li><a href="#grid-tiers" class="ps-4">Grid tiers</a></li>
+          <li><a href="#columns-and-gutters">Columns and gutters</a></li>
+          <li><a href="#grid-tiers">Grid tiers</a></li>
         </ul>
       </li>
     </ul>

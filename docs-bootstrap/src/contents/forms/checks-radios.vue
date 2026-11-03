@@ -336,20 +336,20 @@
       <li>
         <a href="#checks">Checks</a>
         <ul>
-          <li><a href="#indeterminate" class="ps-4">Indeterminate</a></li>
-          <li><a href="#disabled" class="ps-4">Disabled</a></li>
+          <li><a href="#indeterminate">Indeterminate</a></li>
+          <li><a href="#disabled">Disabled</a></li>
         </ul>
       </li>
       <li>
         <a href="#radios">Radios</a>
         <ul>
-          <li><a href="#disabled-1" class="ps-4">Disabled</a></li>
+          <li><a href="#disabled-1">Disabled</a></li>
         </ul>
       </li>
       <li>
         <a href="#switches">Switches</a>
         <ul>
-          <li><a href="#native-switches" class="ps-4">Native switches</a></li>
+          <li><a href="#native-switches">Native switches</a></li>
         </ul>
       </li>
       <li><a href="#default-stacked">Default (stacked)</a></li>
@@ -359,15 +359,15 @@
       <li>
         <a href="#toggle-buttons">Toggle buttons</a>
         <ul>
-          <li><a href="#checkbox-toggle-buttons" class="ps-4">Checkbox toggle buttons</a></li>
-          <li><a href="#radio-toggle-buttons" class="ps-4">Radio toggle buttons</a></li>
-          <li><a href="#outlined-styles" class="ps-4">Outlined styles</a></li>
+          <li><a href="#checkbox-toggle-buttons">Checkbox toggle buttons</a></li>
+          <li><a href="#radio-toggle-buttons">Radio toggle buttons</a></li>
+          <li><a href="#outlined-styles">Outlined styles</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass variables</a></li>
         </ul>
       </li>
     </ul>

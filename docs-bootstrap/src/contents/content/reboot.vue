@@ -516,16 +516,16 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       <li>
         <a href="#forms">Forms</a>
         <ul>
-          <li><a href="#pointers-on-buttons" class="ps-4">Pointers on buttons</a></li>
+          <li><a href="#pointers-on-buttons">Pointers on buttons</a></li>
         </ul>
       </li>
       <li>
         <a href="#misc-elements">Misc elements</a>
         <ul>
-          <li><a href="#address" class="ps-4">Address</a></li>
-          <li><a href="#blockquote" class="ps-4">Blockquote</a></li>
-          <li><a href="#inline-elements" class="ps-4">Inline elements</a></li>
-          <li><a href="#summary" class="ps-4">Summary</a></li>
+          <li><a href="#address">Address</a></li>
+          <li><a href="#blockquote">Blockquote</a></li>
+          <li><a href="#inline-elements">Inline elements</a></li>
+          <li><a href="#summary">Summary</a></li>
         </ul>
       </li>
     </ul>

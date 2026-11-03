@@ -332,8 +332,8 @@
       <li>
         <a href="#examples">Examples</a>
         <ul>
-          <li><a href="#three-columns" class="ps-4">Three columns</a></li>
-          <li><a href="#responsive" class="ps-4">Responsive</a></li>
+          <li><a href="#three-columns">Three columns</a></li>
+          <li><a href="#responsive">Responsive</a></li>
         </ul>
       </li>
       <li><a href="#wrapping">Wrapping</a></li>
@@ -343,10 +343,10 @@
       <li>
         <a href="#customizing">Customizing</a>
         <ul>
-          <li><a href="#no-grid-classes" class="ps-4">No grid classes</a></li>
-          <li><a href="#columns-and-gaps" class="ps-4">Columns and gaps</a></li>
-          <li><a href="#adding-rows" class="ps-4">Adding rows</a></li>
-          <li><a href="#gaps" class="ps-4">Gaps</a></li>
+          <li><a href="#no-grid-classes">No grid classes</a></li>
+          <li><a href="#columns-and-gaps">Columns and gaps</a></li>
+          <li><a href="#adding-rows">Adding rows</a></li>
+          <li><a href="#gaps">Gaps</a></li>
         </ul>
       </li>
       <li>

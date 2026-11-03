@@ -95,17 +95,17 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
       <li>
         <a href="#link-underlines">Link underlines</a>
         <ul>
-          <li><a href="#underline-color" class="ps-4">Underline color</a></li>
-          <li><a href="#underline-offset" class="ps-4">Underline offset</a></li>
-          <li><a href="#underline-opacity" class="ps-4">Underline opacity</a></li>
-          <li><a href="#hover-variants" class="ps-4">Hover variants</a></li>
+          <li><a href="#underline-color">Underline color</a></li>
+          <li><a href="#underline-offset">Underline offset</a></li>
+          <li><a href="#underline-opacity">Underline opacity</a></li>
+          <li><a href="#hover-variants">Hover variants</a></li>
         </ul>
       </li>
       <li><a href="#colored-links">Colored links</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
         </ul>
       </li>
     </ul>
