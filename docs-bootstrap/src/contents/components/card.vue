@@ -20,7 +20,7 @@
       This is easily customized with our various
       <a href="#sizing">sizing options</a>.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -39,7 +39,7 @@
     <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
     <h3 id="body">Body<a class="anchor-link" href="#body" aria-label="Link to Body"></a></h3>
     <p>The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card">
   <div class="card-body">
     This is some text within a card body.
@@ -55,7 +55,7 @@
       Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*&gt;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are
       placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -71,7 +71,7 @@
       <code>.card-img-top</code> and <code>.card-img-bottom</code> respectively set the top and bottom corners rounded to match the card’s borders. With <code>.card-text</code>,
       text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -84,7 +84,7 @@
       </div></ExampleCustom>
     <h3 id="list-groups">List groups<a class="anchor-link" href="#list-groups" aria-label="Link to List groups"></a></h3>
     <p>Create lists of content in a card with a flush list group.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
@@ -92,7 +92,7 @@
     <li class="list-group-item">A third item</li>
   </ul>
 </div>'
-  /><Example addStackblitzJs
+  /><Example
     code='<div class="card" style="width: 18rem;">
   <div class="card-header">
     Featured
@@ -103,7 +103,7 @@
     <li class="list-group-item">A third item</li>
   </ul>
 </div>'
-  /><Example addStackblitzJs
+  /><Example
     code='<div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
@@ -120,7 +120,7 @@
       Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all
       wrapped in a fixed-width card.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -153,7 +153,7 @@
       </div></ExampleCustom>
     <h3 id="header-and-footer">Header and footer<a class="anchor-link" href="#header-and-footer" aria-label="Link to Header and footer"></a></h3>
     <p>Add an optional header and/or footer within a card.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card">
   <div class="card-header">
     Featured
@@ -166,7 +166,7 @@
 </div>'
     />
     <p>Card headers can be styled by adding <code>.card-header</code> to <code>&lt;h*&gt;</code> elements.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card">
   <h5 class="card-header">Featured</h5>
   <div class="card-body">
@@ -175,7 +175,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
-  /><Example addStackblitzJs
+  /><Example
     code='<div class="card">
   <div class="card-header">
     Quote
@@ -191,7 +191,7 @@
     </figure>
   </div>
 </div>'
-  /><Example addStackblitzJs
+  /><Example
     code='<div class="card text-center">
   <div class="card-header">
     Featured
@@ -213,7 +213,7 @@
     </p>
     <h3 id="using-grid-markup">Using grid markup<a class="anchor-link" href="#using-grid-markup" aria-label="Link to Using grid markup"></a></h3>
     <p>Using the grid, wrap cards in columns and rows as needed.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
@@ -237,7 +237,7 @@
     />
     <h3 id="using-utilities">Using utilities<a class="anchor-link" href="#using-utilities" aria-label="Link to Using utilities"></a></h3>
     <p>Use our handful of <a href="/docs-bootstrap/5.3/utilities/sizing">available sizing utilities</a> to quickly set a card’s width.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card w-75 mb-3">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -256,7 +256,7 @@
     />
     <h3 id="using-custom-css">Using custom CSS<a class="anchor-link" href="#using-custom-css" aria-label="Link to Using custom CSS"></a></h3>
     <p>Use custom CSS in your stylesheets or as inline styles to set a width.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -270,7 +270,7 @@
       You can quickly change the text alignment of any card—in its entirety or specific parts—with our
       <a href="/docs-bootstrap/5.3/utilities/text#text-alignment">text align classes</a>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
@@ -300,7 +300,7 @@
       Add some navigation to a card’s header (or block) with Bootstrap’s
       <a href="/docs-bootstrap/5.3/components/navs-tabs">nav components</a>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
@@ -321,7 +321,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
-  /><Example addStackblitzJs
+  /><Example
     code='<div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
@@ -350,7 +350,7 @@
     </p>
     <h3 id="image-caps">Image caps<a class="anchor-link" href="#image-caps" aria-label="Link to Image caps"></a></h3>
     <p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
-    <ExampleCustom addStackblitzJs code='<div class="card mb-3">
+    <ExampleCustom code='<div class="card mb-3">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -383,7 +383,7 @@
       </div></ExampleCustom>
     <h3 id="image-overlays">Image overlays<a class="anchor-link" href="#image-overlays" aria-label="Link to Image overlays"></a></h3>
     <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
-    <ExampleCustom addStackblitzJs code='<div class="card text-bg-dark">
+    <ExampleCustom code='<div class="card text-bg-dark">
   <img src="..." class="card-img" alt="...">
   <div class="card-img-overlay">
     <h5 class="card-title">Card title</h5>
@@ -407,7 +407,7 @@
       <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your
       card content.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card mb-3" style="max-width: 540px;">
+    <ExampleCustom code='<div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="..." class="img-fluid rounded-start" alt="...">
@@ -443,7 +443,7 @@
       Previously it was required to manually pair your choice of <a href="/docs-bootstrap/5.3/utilities/colors"><code>.text-{color}</code></a> and
       <a href="/docs-bootstrap/5.3/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors']
           .map(
@@ -464,7 +464,7 @@
       Use <a href="/docs-bootstrap/5.3/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put
       <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.
     </p>
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors']
           .map(
@@ -484,7 +484,7 @@
       You can also change the borders on the card header and footer as needed, and even remove their
       <code>background-color</code> with <code>.bg-transparent</code>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="card border-success mb-3" style="max-width: 18rem;">
   <div class="card-header bg-transparent border-success">Header</div>
   <div class="card-body text-success">
@@ -504,7 +504,7 @@
       Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex;</code> to become
       attached with uniform dimensions starting at the <code>sm</code> breakpoint.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card-group">
+    <ExampleCustom code='<div class="card-group">
   <div class="card">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -556,7 +556,7 @@
         </div>
       </div></ExampleCustom>
     <p>When using card groups with footers, their content will automatically line up.</p>
-    <ExampleCustom addStackblitzJs code='<div class="card-group">
+    <ExampleCustom code='<div class="card-group">
   <div class="card">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -626,7 +626,7 @@
       example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from
       the medium breakpoint up.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="row row-cols-1 row-cols-md-2 g-4">
+    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -702,7 +702,7 @@
         </div>
       </div></ExampleCustom>
     <p>Change it to <code>.row-cols-3</code> and you’ll see the fourth card wrap.</p>
-    <ExampleCustom addStackblitzJs code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -778,7 +778,7 @@
         </div>
       </div></ExampleCustom>
     <p>When you need equal height, add <code>.h-100</code> to the cards. If you want equal heights by default, you can set <code>$card-height: 100%</code> in Sass.</p>
-    <ExampleCustom addStackblitzJs code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="..." class="card-img-top" alt="...">
@@ -854,7 +854,7 @@
         </div>
       </div></ExampleCustom>
     <p>Just like with card groups, card footers will automatically line up.</p>
-    <ExampleCustom addStackblitzJs code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="..." class="card-img-top" alt="...">

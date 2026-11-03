@@ -7,7 +7,7 @@
       For longer content, you can add a <code>.text-truncate</code> class to truncate the text with an ellipsis.
       <strong>Requires <code>display: inline-block</code> or <code>display: block</code>.</strong>
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<!-- Block level -->
 <div class="row">
   <div class="col-2 text-truncate">

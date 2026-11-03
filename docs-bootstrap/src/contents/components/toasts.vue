@@ -36,7 +36,7 @@
     Hello, world! This is a toast message.
   </div>
 </div>'
-      addStackblitzJs
+     
     />
 
     <Callout type="warning">
@@ -83,7 +83,7 @@
   </div>
 </div>'
       class="bg-dark"
-      addStackblitzJs
+     
     />
     <h3 id="stacking">Stacking<a class="anchor-link" href="#stacking" aria-label="Link to Stacking"></a></h3>
     <p>You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.</p>
@@ -113,7 +113,7 @@
     </div>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
 
     <h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
@@ -132,7 +132,7 @@
     <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <p>Alternatively, you can also add additional controls and components to toasts.</p>
     <Example
@@ -145,7 +145,7 @@
     </div>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
@@ -163,7 +163,7 @@
     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
@@ -172,7 +172,7 @@
       <code>.toast</code>.
     </p>
     <Example
-      addStackblitzJs
+     
       code='<form>
   <div class="mb-3">
     <label for="selectToastPlacement">Toast placement</label>
@@ -241,7 +241,7 @@
     </div>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
     <Example
@@ -262,7 +262,7 @@
     </div>
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
@@ -305,7 +305,7 @@
     Hello, world! This is a toast message.
   </div>
 </div>'
-      addStackblitzJs
+     
     />
     <p>
       While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts.

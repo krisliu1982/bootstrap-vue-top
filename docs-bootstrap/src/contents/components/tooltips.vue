@@ -41,7 +41,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <h3 id="tooltips-on-links">Tooltips on links<a class="anchor-link" href="#tooltips-on-links" aria-label="Link to Tooltips on links"></a></h3>
     <p>Hover over the links below to see tooltips:</p>
     <Example
-      addStackblitzJs
+     
       class="tooltip-demo"
       code='<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>'
     />
@@ -54,7 +54,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     </p>
     <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" />
     <Example
-      addStackblitzJs
+     
       class="tooltip-demo"
       code='<button type="button" class="btn btn-secondary"
         data-bs-toggle="tooltip" data-bs-placement="top"
@@ -155,7 +155,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     </p>
     <Example
       class="tooltip-demo"
-      addStackblitzJs
+     
       code='<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
   <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>'

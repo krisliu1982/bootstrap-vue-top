@@ -8,7 +8,7 @@
       Bootstrap has a base <code>.btn</code> class that sets up basic styles such as padding and content alignment. By default, <code>.btn</code> controls have a transparent border
       and background color, and lack any explicit focus and hover styles.
     </p>
-    <Example addStackblitzJs code='<button type="button" class="btn">Base class</button>' />
+    <Example code='<button type="button" class="btn">Base class</button>' />
     <p>The <code>.btn</code> class is intended to be used in conjunction with our button variants, or to serve as a basis for your own custom styles.</p>
     <Callout type="warning">
       <p>If you are using the <code>.btn</code> class on its own, remember to at least define some explicit <code>:focus</code> and/or <code>:focus-visible</code> styles.</p>
@@ -16,7 +16,7 @@
     <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
 
-    <Example addStackblitzJs
+    <Example
       :code="
         [
           ...data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-${themeColor.name}&quot;>${themeColor.name}</button>`),
@@ -40,7 +40,7 @@
       sections within the current page, these links should be given a <code>role=&quot;button&quot;</code> to appropriately convey their purpose to assistive technologies such as
       screen readers.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
 <input class="btn btn-primary" type="button" value="Input">
@@ -52,7 +52,7 @@
       In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the
       <code>.btn-outline-*</code> ones to remove all background images and colors on any button.
     </p>
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-outline-${themeColor.name}&quot;>${themeColor.name}</button>`).join('\n')
       "
@@ -61,15 +61,15 @@
     </Callout>
     <h2 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h2>
     <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
-    <Example addStackblitzJs
+    <Example
       code='<button type="button" class="btn btn-primary btn-lg">Large button</button>
 <button type="button" class="btn btn-secondary btn-lg">Large button</button>'
-    /><Example addStackblitzJs
+    /><Example
       code='<button type="button" class="btn btn-primary btn-sm">Small button</button>
 <button type="button" class="btn btn-secondary btn-sm">Small button</button>'
     />
     <p>You can even roll your own custom sizing with CSS variables:</p>
-    <Example addStackblitzJs
+    <Example
       code='<button type="button" class="btn btn-primary"
           style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
   Custom button
@@ -80,7 +80,7 @@
       Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. Disabled buttons have
       <code>pointer-events: none</code> applied to, preventing hover and active states from triggering.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<button type="button" class="btn btn-primary" disabled>Primary button</button>
 <button type="button" class="btn btn-secondary" disabled>Button</button>
 <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
@@ -96,7 +96,7 @@
       </li>
       <li>Disabled buttons using <code>&lt;a&gt;</code> <em>should not</em> include the <code>href</code> attribute.</li>
     </ul>
-    <Example addStackblitzJs
+    <Example
       code='<a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
 <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>'
     />
@@ -109,7 +109,7 @@
       <code>tabindex=&quot;-1&quot;</code> attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality
       altogether.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
 <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>'
     />
@@ -118,7 +118,7 @@
       Create responsive stacks of full-width, “block buttons” like those in Bootstrap 4 with a mix of our display and gap utilities. By using utilities instead of button-specific
       classes, we have much greater control over spacing, alignment, and responsive behaviors.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="d-grid gap-2">
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
@@ -129,7 +129,7 @@
       <code>md</code> breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see
       them change.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="d-grid gap-2 d-md-block">
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
@@ -139,7 +139,7 @@
       You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally
       with <code>.mx-auto</code>, too.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
@@ -149,7 +149,7 @@
       Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a
       margin utility on the button to right-align the buttons when they’re no longer stacked.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
@@ -171,7 +171,7 @@
       Add <code>data-bs-toggle=&quot;button&quot;</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the
       <code>.active</code> class <strong>and</strong> <code>aria-pressed=&quot;true&quot;</code> to ensure that it is conveyed appropriately to assistive technologies.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<p class="d-inline-flex gap-1">
   <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
   <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
@@ -182,7 +182,7 @@
   <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
   <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
 </p>'
-    /><Example addStackblitzJs
+    /><Example
       code='<p class="d-inline-flex gap-1">
   <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
   <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>

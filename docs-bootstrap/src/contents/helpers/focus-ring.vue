@@ -12,7 +12,7 @@
       Click directly on the link below to see the focus ring in action, or into the example below and then press
       <kbd>Tab</kbd>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
   Custom focus ring
 </a>'
@@ -21,7 +21,7 @@
     <p>Modify the styling of a focus ring with our CSS variables, Sass variables, utilities, or custom styles.</p>
     <h3 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h3>
     <p>Modify the <code>--bs-focus-ring-*</code> CSS variables as needed to change the default appearance.</p>
-    <Example addStackblitzJs
+    <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
   Green focus ring
 </a>'
@@ -35,7 +35,7 @@
       By default, there is no <code>--bs-focus-ring-x</code>, <code>--bs-focus-ring-y</code>, or <code>--bs-focus-ring-blur</code>, but we provide CSS variables with fallbacks to
       initial <code>0</code> values. Modify them to change the default appearance.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
   Blurry offset focus ring
 </a>'
@@ -49,7 +49,7 @@
       <a href="/docs-bootstrap/5.3/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current
       color mode support.
     </p>
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors']
           .map(

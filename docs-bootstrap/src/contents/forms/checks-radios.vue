@@ -34,7 +34,7 @@
     <h3 id="indeterminate">Indeterminate<a class="anchor-link" href="#indeterminate" aria-label="Link to Indeterminate"></a></h3>
     <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
     <Example
-      addStackblitzJs
+     
       class="docs-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
@@ -49,7 +49,7 @@
       state.
     </p>
     <Example
-      addStackblitzJs
+     
       class="docs-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminateDisabled" disabled>

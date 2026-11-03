@@ -27,14 +27,14 @@
       Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically
       sized thanks to our universal selector <code>.ratio &gt; *</code>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="ratio ratio-16x9">
   <iframe src="https://player.bilibili.com/player.html?bvid=BV15Kxu6nE9f" title="bilibili video" allowfullscreen></iframe>
 </div>'
     />
     <h2 id="aspect-ratios">Aspect ratios<a class="anchor-link" href="#aspect-ratios" aria-label="Link to Aspect ratios"></a></h2>
     <p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
-    <Example addStackblitzJs
+    <Example
       class="docs-example-ratios"
       code='<div class="ratio ratio-1x1">
   <div>1x1</div>
@@ -55,7 +55,7 @@
       fly with some quick math on your part.
     </p>
     <p>For example, to create a 2x1 aspect ratio, set <code>--bs-aspect-ratio: 50%</code> on the <code>.ratio</code>.</p>
-    <Example addStackblitzJs
+    <Example
       class="docs-example-ratios"
       code='<div class="ratio" style="--bs-aspect-ratio: 50%;">
   <div>2x1</div>
@@ -70,7 +70,7 @@
 }"
       lang="scss"
     />
-    <Example addStackblitzJs
+    <Example
       class="docs-example-ratios docs-example-ratios-breakpoint"
       code='<div class="ratio ratio-4x3">
   <div>4x3, then 2x1</div>

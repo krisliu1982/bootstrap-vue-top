@@ -15,7 +15,7 @@
         and we can more thoroughly rebuild our theme colors for color modes. Until then, it’s a unique, high-contrast link color with custom <code>:hover</code> and
         <code>:focus</code> styles. However, it still responds to the new link utilities.
       </p> </Callout
-    ><Example addStackblitzJs
+    ><Example
       :code="
         [
           ...data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-${themeColor.name}&quot;>${themeColor.name} link</a></p>`),
@@ -26,7 +26,7 @@
     <h2 id="link-utilities">Link utilities<a class="anchor-link" href="#link-utilities" aria-label="Link to Link utilities"></a></h2>
     <AddedIn version="5.3.0" />
     <p>Colored links can also be modified by our <a href="/docs-bootstrap/5.3/utilities/link/">link utilities</a>.</p>
-    <Example addStackblitzJs
+    <Example
       :code="
         [
           ...data['theme-colors'].map(

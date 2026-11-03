@@ -5,7 +5,7 @@
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
-    <Example addStackblitzJs
+    <Example
       code='<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -36,7 +36,7 @@
       <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you
       get a global divider that you can override without recompiling CSS at any time.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<nav style="--bs-breadcrumb-divider: &#39;>&#39;;" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -61,7 +61,7 @@
         <a href="/docs-bootstrap/5.3/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read
         <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.
       </p> </Callout
-    ><Example addStackblitzJs
+    ><Example
       code='<nav style="--bs-breadcrumb-divider: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="%236c757d"/%3E%3C/svg%3E&#39;);" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -78,7 +78,7 @@
       You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass
       variable to <code>$breadcrumb-divider: none;</code>.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>

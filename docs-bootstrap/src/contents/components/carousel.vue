@@ -32,7 +32,7 @@
       Here is a basic example of a carousel with three slides. Note the previous/next controls. We recommend using
       <code>&lt;button&gt;</code> elements, but you can also use <code>&lt;a&gt;</code> elements with <code>role=&quot;button&quot;</code>.
     </p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExample" class="carousel slide">
+    <ExampleCustom code='<div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -84,7 +84,7 @@
     </p>
     <h3 id="indicators">Indicators<a class="anchor-link" href="#indicators" aria-label="Link to Indicators"></a></h3>
     <p>You can add indicators to the carousel, alongside the previous/next controls. The indicators let users jump directly to a particular slide.</p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleIndicators" class="carousel slide">
+    <ExampleCustom code='<div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -141,7 +141,7 @@
       shown below, with optional <a href="/docs-bootstrap/5.3/utilities/display">display utilities</a>. We hide them initially with <code>.d-none</code> and bring them back on
       medium-sized devices with <code>.d-md-block</code>.
     </p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleCaptions" class="carousel slide">
+    <ExampleCustom code='<div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -221,7 +221,7 @@
       Add <code>.carousel-fade</code> to your carousel to animate slides with a fade transition instead of a slide. Depending on your carousel content (e.g., text only slides), you
       may want to add <code>.bg-body</code> or some custom CSS to the <code>.carousel-item</code>s for proper crossfading.
     </p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <ExampleCustom code='<div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -279,7 +279,7 @@
         <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 Success Criterion 2.2.2 Pause, Stop, Hide</a>.
       </p> </Callout
     >
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <ExampleCustom code='<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -324,7 +324,7 @@
       When the <code>ride</code> option is set to <code>true</code>, rather than <code>carousel</code>, the carousel won’t automatically start to cycle on page load. Instead, it
       will only start after the first user interaction.
     </p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <ExampleCustom code='<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -369,7 +369,7 @@
       Individual <code>.carousel-item</code> interval<a class="anchor-link" href="#individual-carousel-item-interval" aria-label="Link to Individual .carousel-item interval"></a>
     </h3>
     <p>Add <code>data-bs-interval=&quot;&quot;</code> to a <code>.carousel-item</code> to change the amount of time to delay between automatically cycling to the next item.</p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <ExampleCustom code='<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="..." class="d-block w-100" alt="...">
@@ -414,7 +414,7 @@
       Autoplaying carousels without controls<a class="anchor-link" href="#autoplaying-carousels-without-controls" aria-label="Link to Autoplaying carousels without controls"></a>
     </h3>
     <p>Here’s a carousel with slides only. Note the presence of the <code>.d-block</code> and <code>.w-100</code> on carousel images to prevent browser default image alignment.</p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <ExampleCustom code='<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -441,7 +441,7 @@
       </div></ExampleCustom>
     <h2 id="disable-touch-swiping">Disable touch swiping<a class="anchor-link" href="#disable-touch-swiping" aria-label="Link to Disable touch swiping"></a></h2>
     <p>Carousels support swiping left/right on touchscreen devices to move between slides. This can be disabled by setting the <code>touch</code> option to <code>false</code>.</p>
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <ExampleCustom code='<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="..." class="d-block w-100" alt="...">
@@ -489,7 +489,7 @@
       the <code>filter</code> CSS property. Captions and controls have additional Sass variables that customize the <code>color</code> and <code>background-color</code>.
     </p>
     <CalloutDeprecatedDarkVariants component="carousel" />
-    <ExampleCustom addStackblitzJs code='<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <ExampleCustom code='<div id="carouselExampleDark" class="carousel carousel-dark slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>

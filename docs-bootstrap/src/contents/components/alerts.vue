@@ -14,7 +14,7 @@
         <a href="#sass-loops">a Sass loop</a>.
       </p>
     </Callout>
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors']
           .map(
@@ -29,7 +29,7 @@
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
     <Example
-      addStackblitzJs
+     
       code='<div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>'
     />
@@ -40,7 +40,7 @@
 
     <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
 
-    <Example addStackblitzJs
+    <Example
       :code="
         data['theme-colors']
           .map(
@@ -54,7 +54,7 @@
 
     <h3 id="additional-content">Additional content<a class="anchor-link" href="#additional-content" aria-label="Link to Additional content"></a></h3>
     <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Well done!</h4>
   <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -67,7 +67,7 @@
       Similarly, you can use <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts
       with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
     </p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
     <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
@@ -78,7 +78,7 @@
 </div>'
     />
     <p>Need more than one icon for your alerts? Consider using more Bootstrap Icons and making a local SVG sprite like so to easily reference the same icons repeatedly.</p>
-    <Example addStackblitzJs
+    <Example
       code='<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check-circle-fill" viewBox="0 0 16 16">
     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
@@ -131,7 +131,7 @@
       <li>To animate alerts when dismissing them, be sure to add the <code>.fade</code> and <code>.show</code> classes.</li>
     </ul>
     <p>You can see this in action with a live demo:</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

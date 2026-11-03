@@ -15,16 +15,16 @@
     </ul>
     <p>Customize them with additional styles as needed.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <Example addStackblitzJs code='<div class="vr"></div>' />
+    <Example code='<div class="vr"></div>' />
     <p>Vertical rules scale their height in flex layouts:</p>
-    <Example addStackblitzJs
+    <Example
       code='<div class="d-flex" style="height: 200px;">
   <div class="vr"></div>
 </div>'
     />
     <h2 id="with-stacks">With stacks<a class="anchor-link" href="#with-stacks" aria-label="Link to With stacks"></a></h2>
     <p>They can also be used in <a href="/docs-bootstrap/5.3/helpers/stacks">stacks</a>:</p>
-    <Example addStackblitzJs
+    <Example
       class="docs-example-flex"
       code='<div class="hstack gap-3">
   <div class="p-2">First item</div>

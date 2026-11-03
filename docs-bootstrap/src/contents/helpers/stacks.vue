@@ -20,7 +20,7 @@
     <h2 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h2>
     <p>Use <code>.vstack</code> to create vertical layouts. Stacked items are full-width by default. Use
       <code>.gap-*</code> utilities to add space between items.</p>
-    <Example addStackblitzJs class="docs-example-flex" code='<div class="vstack gap-3">
+    <Example class="docs-example-flex" code='<div class="vstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2">Second item</div>
   <div class="p-2">Third item</div>
@@ -31,19 +31,19 @@
       their necessary width. Use <code>.gap-*</code> utilities to
       add space between items.
     </p>
-    <Example addStackblitzJs class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2">Second item</div>
   <div class="p-2">Third item</div>
 </div>' />
     <p>Using horizontal margin utilities like <code>.ms-auto</code> as spacers:</p>
-    <Example addStackblitzJs class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="p-2">Third item</div>
 </div>' />
     <p>And with <a href="/docs-bootstrap/5.3/helpers/vertical-rule">vertical rules</a>:</p>
-    <Example addStackblitzJs class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="docs-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="vr"></div>
@@ -51,12 +51,12 @@
 </div>' />
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>Use <code>.vstack</code> to stack buttons and other elements:</p>
-    <Example addStackblitzJs code='<div class="vstack gap-2 col-md-5 mx-auto">
+    <Example code='<div class="vstack gap-2 col-md-5 mx-auto">
   <button type="button" class="btn btn-secondary">Save changes</button>
   <button type="button" class="btn btn-outline-secondary">Cancel</button>
 </div>' />
     <p>Create an inline form with <code>.hstack</code>:</p>
-    <Example addStackblitzJs code='<div class="hstack gap-3">
+    <Example code='<div class="hstack gap-3">
   <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
   <button type="button" class="btn btn-secondary">Submit</button>
   <div class="vr"></div>

@@ -46,7 +46,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     </p>
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <Example
-      addStackblitzJs
+     
       code='<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>'
     />
     <h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
@@ -55,7 +55,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       <code>data-bs-placement</code> to change the direction.
     </p>
     <Example
-      addStackblitzJs
+     
       code='<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
   Popover on top
 </button>
@@ -101,7 +101,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     </p>
     <ScssDocs name="custom-popovers" file="site/src/scss/_component-examples.scss" />
     <Example
-      addStackblitzJs
+     
       class="custom-popover-demo"
       code='<button type="button" class="btn btn-secondary"
         data-bs-toggle="popover" data-bs-placement="right"
@@ -122,7 +122,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       </p>
     </Callout>
     <Example
-      addStackblitzJs
+     
       code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>'
     />
     <CodeWrapper
@@ -142,7 +142,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       as they may not expect to <em>click</em> on a disabled element.
     </p>
     <Example
-      addStackblitzJs
+     
       code='<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
   <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>'

@@ -22,7 +22,7 @@
       Multiple links and tap targets are not recommended with stretched links. However, some <code>position</code> and
       <code>z-index</code> styles can help should this be required.
     </p>
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
@@ -46,7 +46,7 @@
       outside the parent element.
     </p>
     <Example code='' />
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
@@ -82,7 +82,7 @@
       <li>A <code>filter</code> value other than <code>none</code> or a <code>will-change</code> value of
         <code>filter</code> (only works on Firefox)</li>
     </ul>
-    <ExampleCustom addStackblitzJs code='<div class="card" style="width: 18rem;">
+    <ExampleCustom code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card with stretched links</h5>

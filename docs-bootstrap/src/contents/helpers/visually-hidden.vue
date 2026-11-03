@@ -12,7 +12,7 @@
       the container will be displayed when any child element of the
       container receives focus.
     </p>
-    <Example addStackblitzJs code='<h2 class="visually-hidden">Title for screen readers</h2>
+    <Example code='<h2 class="visually-hidden">Title for screen readers</h2>
 <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>' />
     <p>Both <code>visually-hidden</code> and <code>visually-hidden-focusable</code> can also be used as mixins.</p>
