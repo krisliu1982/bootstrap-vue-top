@@ -7,23 +7,22 @@
     <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
     <Example
       code='<ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>'
-    />
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>' />
     <h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
     <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
     <Example
       code='<ul class="list-group">
-    <li class="list-group-item active" aria-current="true">An active item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>'
+  <li class="list-group-item active" aria-current="true">An active item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>'
     />
     <h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
     <p>
@@ -40,14 +39,14 @@
     </p>
     <Example
       code='<div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-      The current link item
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-    <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
-  </div>'
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    The current link item
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+</div>'
     />
     <p>
       With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s
@@ -55,25 +54,25 @@
     </p>
     <Example
       code='<div class="list-group">
-    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-      The current button
-    </button>
-    <button type="button" class="list-group-item list-group-item-action">A second button item</button>
-    <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-    <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-    <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
-  </div>'
+  <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+    The current button
+  </button>
+  <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+  <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+  <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+  <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+</div>'
     />
     <h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
     <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
     <Example
       code='<ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>'
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>'
     />
     <h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
     <p>
@@ -86,36 +85,36 @@
     </p>
     <Example
       code='<ol class="list-group list-group-numbered">
-    <li class="list-group-item">A list item</li>
-    <li class="list-group-item">A list item</li>
-    <li class="list-group-item">A list item</li>
-  </ol>'
+  <li class="list-group-item">A list item</li>
+  <li class="list-group-item">A list item</li>
+  <li class="list-group-item">A list item</li>
+</ol>'
     />
     <p>These work great with custom content as well.</p>
     <Example
       code='<ol class="list-group list-group-numbered">
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
-      </div>
-      <span class="badge text-bg-primary rounded-pill">14</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
-      </div>
-      <span class="badge text-bg-primary rounded-pill">14</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Subheading</div>
-        Content for list item
-      </div>
-      <span class="badge text-bg-primary rounded-pill">14</span>
-    </li>
-  </ol>'
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge text-bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge text-bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge text-bg-primary rounded-pill">14</span>
+  </li>
+</ol>'
     />
     <h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>
@@ -129,12 +128,10 @@
         data['breakpoints']
           .map(
             (breakpoint) => `<ul class=&quot;list-group list-group-horizontal${breakpoint.abbr}&quot;>
-    <li class=&quot;list-group-item&quot;>An item</li>
-    <li class=&quot;list-group-item&quot;>A second item</li>
-    <li class=&quot;list-group-item&quot;>A third item</li>
-  </ul>`
-          )
-          .join('\n')
+  <li class=&quot;list-group-item&quot;>An item</li>
+  <li class=&quot;list-group-item&quot;>A second item</li>
+  <li class=&quot;list-group-item&quot;>A third item</li>
+</ul>`).join('\n')
       "
     />
     <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
@@ -149,7 +146,7 @@
       :code="
         [
           `<ul class=&quot;list-group&quot;>
-    <li class=&quot;list-group-item&quot;>A simple default list group item</li>
+  <li class=&quot;list-group-item&quot;>A simple default list group item</li>
     `,
           ...data['theme-colors'].map(
             (themeColor) => `  <li class=&quot;list-group-item list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</li>`
@@ -167,7 +164,7 @@
       :code="
         [
           `<div class=&quot;list-group&quot;>
-    <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
+  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
     `,
           ...data['theme-colors'].map(
             (themeColor) =>
@@ -184,19 +181,19 @@
     </p>
     <Example
       code='<ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          A list item
-          <span class="badge text-bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          A second list item
-          <span class="badge text-bg-primary rounded-pill">2</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          A third list item
-          <span class="badge text-bg-primary rounded-pill">1</span>
-        </li>
-      </ul>'
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A list item
+    <span class="badge text-bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A second list item
+    <span class="badge text-bg-primary rounded-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A third list item
+    <span class="badge text-bg-primary rounded-pill">1</span>
+  </li>
+</ul>'
     />
     <h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
     <p>
@@ -205,31 +202,31 @@
     </p>
     <Example
       code='<div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">List group item heading</h5>
-            <small>3 days ago</small>
-          </div>
-          <p class="mb-1">Some placeholder content in a paragraph.</p>
-          <small>And some small print.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">List group item heading</h5>
-            <small class="text-body-secondary">3 days ago</small>
-          </div>
-          <p class="mb-1">Some placeholder content in a paragraph.</p>
-          <small class="text-body-secondary">And some muted small print.</small>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">List group item heading</h5>
-            <small class="text-body-secondary">3 days ago</small>
-          </div>
-          <p class="mb-1">Some placeholder content in a paragraph.</p>
-          <small class="text-body-secondary">And some muted small print.</small>
-        </a>
-      </div>'
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small>And some small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-body-secondary">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-body-secondary">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-body-secondary">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-body-secondary">And some muted small print.</small>
+  </a>
+</div>'
     />
     <h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
     <p>
@@ -238,51 +235,51 @@
     </p>
     <Example
       code='<ul class="list-group">
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-          <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-          <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-        </li>
-      </ul>'
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+    <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+    <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+    <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+  </li>
+</ul>'
     /><Example
       code='<ul class="list-group">
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-          <label class="form-check-label" for="firstRadio">First radio</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-          <label class="form-check-label" for="secondRadio">Second radio</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-          <label class="form-check-label" for="thirdRadio">Third radio</label>
-        </li>
-      </ul>'
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+    <label class="form-check-label" for="firstRadio">First radio</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+    <label class="form-check-label" for="secondRadio">Second radio</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+    <label class="form-check-label" for="thirdRadio">Third radio</label>
+  </li>
+</ul>'
     />
     <p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
     <Example
       code='<ul class="list-group">
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-          <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
-        </li>
-        <li class="list-group-item">
-          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-          <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
-        </li>
-      </ul>'
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+    <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+    <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+    <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+  </li>
+</ul>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
@@ -437,8 +434,7 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
     <p>Activates your content as a tab element.</p>
     <p>You can create a tab instance with the constructor, for example:</p>
     <CodeWrapper
-      code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
-"
+      code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)"
       lang="javascript"
     />
     <div class="table-responsive">
