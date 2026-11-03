@@ -503,13 +503,14 @@ tooltip.hide()
 import { onMounted, onBeforeUnmount } from "vue";
 import * as bootstrap from 'bootstrap'
 
-let tooltipList = null
 onMounted(() => {
   const tooltipTriggerList = document.querySelectorAll('article.docs-content [data-bs-toggle="tooltip"]')
-  tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
 
 onBeforeUnmount(() => {
+  const tooltipTriggerList = document.querySelectorAll('article.docs-content [data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => bootstrap.Tooltip.getInstance(tooltipTriggerEl))
   tooltipList.forEach(tooltip => tooltip.dispose())
 })
 </script>

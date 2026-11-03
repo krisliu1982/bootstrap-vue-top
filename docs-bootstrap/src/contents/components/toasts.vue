@@ -481,7 +481,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])')
-  const toastList = [...toastElList].map(toastEl => new bootstrap.Toast.getInstance(toastEl))
+  const toastList = [...toastElList].map(toastEl => bootstrap.Toast.getInstance(toastEl))
   for (const toast of toastList) {
     toast.dispose()
   }

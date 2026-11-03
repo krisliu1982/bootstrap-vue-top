@@ -524,8 +524,7 @@ onMounted(() => {
 })
 onBeforeUnmount(() => {
   const popoverList = document.querySelectorAll('article.docs-content [data-bs-toggle="popover"]')
-  popoverList.forEach(popoverEl => {
-    bootstrap.Popover.getInstance(popoverEl).dispose()
-  })
+  const popoverInstances = [...popoverList].map(popoverEl => bootstrap.Popover.getInstance(popoverEl))
+  popoverInstances.forEach(popover => popover.dispose())
 })
 </script>
