@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import ExampleCustom from '../../components/ExampleCustom.vue';
-
-</script>
-
 <template>
   <article class="docs-content">
     <h1>Columns</h1>
