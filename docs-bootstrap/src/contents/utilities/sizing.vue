@@ -55,8 +55,8 @@ code='<div style="height: 100px;">
     <ScssDocs name="utils-sizing" file="scss/_utilities.scss" />
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#relative-to-the-parent">Relative to the parent</a></li>
       <li><a href="#relative-to-the-viewport">Relative to the viewport</a></li>

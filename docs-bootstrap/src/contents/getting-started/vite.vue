@@ -251,8 +251,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
     <GuideFooter />
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#what-is-vite">What is Vite?</a></li>
       <li><a href="#setup">Setup</a></li>

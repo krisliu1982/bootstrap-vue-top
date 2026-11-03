@@ -103,8 +103,8 @@
     <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#tooling-setup">Tooling setup</a></li>
       <li><a href="#using-npm-scripts">Using npm scripts</a></li>

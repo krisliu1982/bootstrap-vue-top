@@ -411,8 +411,8 @@ $border-width: 0;
     />
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#file-structure">File structure</a></li>
       <li><a href="#importing">Importing</a></li>

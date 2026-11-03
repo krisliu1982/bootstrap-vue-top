@@ -127,8 +127,8 @@
     <p>We use <a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a> to enforce standard and semantic HTML, as well as detecting common errors.</p>
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#summary">Summary</a></li>
       <li><a href="#responsive">Responsive</a></li>

@@ -631,8 +631,8 @@ $utilities: map-merge(
     <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the same for any other utility and property as well.</p>
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li>
         <a href="#colors">Colors</a>

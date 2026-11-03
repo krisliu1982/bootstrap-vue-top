@@ -166,8 +166,8 @@
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li>
         <a href="#border">Border</a>

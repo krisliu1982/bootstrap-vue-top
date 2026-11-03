@@ -133,8 +133,8 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     </p>
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#lean-sass-imports">Lean Sass imports</a></li>
       <li><a href="#lean-javascript">Lean JavaScript</a></li>

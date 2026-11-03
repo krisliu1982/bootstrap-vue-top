@@ -132,8 +132,8 @@ code='<p class="text-body-secondary">
     <ScssDocs name="utils-text" file="scss/_utilities.scss" />
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#text-alignment">Text alignment</a></li>
       <li><a href="#text-wrapping-and-overflow">Text wrapping and overflow</a></li>

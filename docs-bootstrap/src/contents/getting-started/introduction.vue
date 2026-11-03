@@ -241,8 +241,8 @@
     <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>
   </article>
 
-  <nav class="docs-toc" aria-label="本页目录">
-    <h6>本页目录</h6>
+  <nav class="docs-toc" aria-label="On this page">
+    <h6>On this page</h6>
     <ul>
       <li><a href="#quick-start">Quick start</a></li>
       <li><a href="#cdn-links">CDN links</a></li>
