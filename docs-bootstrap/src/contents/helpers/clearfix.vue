@@ -17,11 +17,11 @@
       lang="scss"
     />
     <p>The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.</p>
-    <Example
+    <Example addStackblitzJs
       code='<div class="bg-info clearfix">
-        <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
-        <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
-      </div>'
+  <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+  <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+</div>'
     />
   </article>
 </template>

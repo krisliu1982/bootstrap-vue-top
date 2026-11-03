@@ -14,29 +14,29 @@
         <strong>Heads up!</strong> There’s currently no support for a CSS-native <code>color-contrast</code> function, so we use our own via Sass. This means that customizing our
         theme colors via CSS variables may cause color contrast issues with these utilities.
       </p> </Callout
-    ><Example
+    ><Example addStackblitzJs
       :code="data['theme-colors'].map((themeColor) => `<div class=&quot;text-bg-${themeColor.name} p-3&quot;>${themeColor.name} with contrasting color</div>`).join('\n')"
     /><Callout name="warning-color-assistive-technologies" />
     <h2 id="with-components">With components<a class="anchor-link" href="#with-components" aria-label="Link to With components"></a></h2>
     <p>Use them in place of combined <code>.text-*</code> and <code>.bg-*</code> classes, like on <a href="/docs-bootstrap/5.3/components/badge#background-colors">badges</a>:</p>
-    <Example
+    <Example addStackblitzJs
       code='<span class="badge text-bg-primary">Primary</span>
-    <span class="badge text-bg-info">Info</span>'
+<span class="badge text-bg-info">Info</span>'
     />
     <p>Or on <a href="/docs-bootstrap/5.3/components/card#background-and-color">cards</a>:</p>
-    <Example
+    <Example addStackblitzJs
       code='<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-      </div>
-      <div class="card text-bg-info mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-      </div>'
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
+<div class="card text-bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>'
     />
   </article>
 
