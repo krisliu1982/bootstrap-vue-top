@@ -243,14 +243,14 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#quick-start">Quick start</a></li>
       <li><a href="#cdn-links">CDN links</a></li>
       <li><a href="#next-steps">Next steps</a></li>
       <li><a href="#js-components">JS components</a></li>
       <li>
         <a href="#important-globals">Important globals</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#html5-doctype" class="ps-4">HTML5 doctype</a></li>
           <li><a href="#viewport-meta" class="ps-4">Viewport meta</a></li>
           <li><a href="#box-sizing" class="ps-4">Box-sizing</a></li>
