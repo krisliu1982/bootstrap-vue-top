@@ -21,8 +21,8 @@
     <p>Badges can be used as part of links or buttons to provide a counter.</p>
     <Example
       code='<button type="button" class="btn btn-primary">
-    Notifications <span class="badge text-bg-secondary">4</span>
-  </button>'
+  Notifications <span class="badge text-bg-secondary">4</span>
+</button>'
     />
     <p>
       Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a
@@ -37,21 +37,21 @@
     <p>Use utilities to modify a <code>.badge</code> and position it in the corner of a link or button.</p>
     <Example
       code='<button type="button" class="btn btn-primary position-relative">
-    Inbox
-    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-      99+
-      <span class="visually-hidden">unread messages</span>
-    </span>
-  </button>'
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>'
     />
     <p>You can also replace the <code>.badge</code> class with a few more utilities without a count for a more generic indicator.</p>
     <Example
       code='<button type="button" class="btn btn-primary position-relative">
-    Profile
-    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-      <span class="visually-hidden">New alerts</span>
-    </span>
-  </button>'
+  Profile
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>'
     />
     <h2 id="background-colors">Background colors<a class="anchor-link" href="#background-colors" aria-label="Link to Background colors"></a></h2>
     <AddedIn version="5.2.0" />

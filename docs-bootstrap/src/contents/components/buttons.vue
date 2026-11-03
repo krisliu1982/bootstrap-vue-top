@@ -20,8 +20,7 @@
       :code="
         [
           ...data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-${themeColor.name}&quot;>${themeColor.name}</button>`),
-          `
-  <button type=&quot;button&quot; class=&quot;btn btn-link&quot;>Link</button>`
+          `<button type=&quot;button&quot; class=&quot;btn btn-link&quot;>Link</button>`
         ].join('\n')
       "
     />
@@ -73,8 +72,8 @@
     <Example
       code='<button type="button" class="btn btn-primary"
           style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-    Custom button
-  </button>'
+  Custom button
+</button>'
     />
     <h2 id="disabled-state">Disabled state<a class="anchor-link" href="#disabled-state" aria-label="Link to Disabled state"></a></h2>
     <p>
@@ -121,9 +120,9 @@
     </p>
     <Example
       code='<div class="d-grid gap-2">
-    <button class="btn btn-primary" type="button">Button</button>
-    <button class="btn btn-primary" type="button">Button</button>
-  </div>'
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>'
     />
     <p>
       Here we create a responsive variation, starting with vertically stacked buttons until the
@@ -132,9 +131,9 @@
     </p>
     <Example
       code='<div class="d-grid gap-2 d-md-block">
-    <button class="btn btn-primary" type="button">Button</button>
-    <button class="btn btn-primary" type="button">Button</button>
-  </div>'
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>'
     />
     <p>
       You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally
@@ -142,9 +141,9 @@
     </p>
     <Example
       code='<div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary" type="button">Button</button>
-    <button class="btn btn-primary" type="button">Button</button>
-  </div>'
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>'
     />
     <p>
       Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a
@@ -152,9 +151,9 @@
     </p>
     <Example
       code='<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-    <button class="btn btn-primary me-md-2" type="button">Button</button>
-    <button class="btn btn-primary" type="button">Button</button>
-  </div>'
+  <button class="btn btn-primary me-md-2" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>'
     />
     <h2 id="button-plugin">Button plugin<a class="anchor-link" href="#button-plugin" aria-label="Link to Button plugin"></a></h2>
     <p>The button plugin allows you to create simple on/off toggle buttons.</p>
@@ -174,32 +173,31 @@
     </p>
     <Example
       code='<p class="d-inline-flex gap-1">
-    <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
-    <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-    <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
-  </p>
-  <p class="d-inline-flex gap-1">
-    <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
-    <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
-  </p>'
+  <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+  <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+  <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
+</p>
+<p class="d-inline-flex gap-1">
+  <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+  <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+  <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+</p>'
     /><Example
       code='<p class="d-inline-flex gap-1">
-    <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
-    <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
-    <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
-  </p>
-  <p class="d-inline-flex gap-1">
-    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
-    <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
-    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
-  </p>'
+  <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
+  <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+  <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+</p>
+<p class="d-inline-flex gap-1">
+  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+  <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+  <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+</p>'
     />
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <p>You can create a button instance with the button constructor, for example:</p>
     <CodeWrapper
-      code="const bsButton = new bootstrap.Button(&#39;#myButton&#39;)
-"
+      code="const bsButton = new bootstrap.Button(&#39;#myButton&#39;)"
       lang="javascript"
     />
     <div class="table-responsive">
@@ -262,9 +260,7 @@
     </p>
     <Example
       :showMarkup="false"
-      code='
-<button type="button" class="btn btn-docs-primary">Custom button</button>
-'
+      code='<button type="button" class="btn btn-docs-primary">Custom button</button>'
     /><ScssDocs name="btn-css-vars-example" file="site/src/scss/_buttons.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="btn-variables" file="scss/_variables.scss" />
