@@ -396,7 +396,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
-    <h2 class="h6 mb-2">本页目录</h2>
+    <h6>本页目录</h6>
     <ul>
       <li><a href="#individual-or-compiled">Individual or compiled</a></li>
       <li><a href="#usage-with-javascript-frameworks">Usage with JavaScript frameworks</a></li>

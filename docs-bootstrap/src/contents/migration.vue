@@ -1406,7 +1406,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
-    <h2 class="h6 mb-2">本页目录</h2>
+    <h6>本页目录</h6>
     <ul>
       <li>
         <a href="#v536">v5.3.6</a>

@@ -185,7 +185,7 @@ $gutters: (
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
-    <h2 class="h6 mb-2">本页目录</h2>
+    <h6>本页目录</h6>
     <ul>
       <li><a href="#how-they-work">How they work</a></li>
       <li><a href="#horizontal-gutters">Horizontal gutters</a></li>

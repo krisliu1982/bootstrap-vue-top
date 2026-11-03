@@ -133,7 +133,7 @@ code='<p class="text-body-secondary">
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
-    <h2 class="h6 mb-2">本页目录</h2>
+    <h6>本页目录</h6>
     <ul>
       <li><a href="#text-alignment">Text alignment</a></li>
       <li><a href="#text-wrapping-and-overflow">Text wrapping and overflow</a></li>

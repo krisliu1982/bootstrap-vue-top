@@ -56,7 +56,7 @@ code='<div style="height: 100px;">
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
-    <h2 class="h6 mb-2">本页目录</h2>
+    <h6>本页目录</h6>
     <ul>
       <li><a href="#relative-to-the-parent">Relative to the parent</a></li>
       <li><a href="#relative-to-the-viewport">Relative to the viewport</a></li>
