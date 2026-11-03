@@ -1,7 +1,6 @@
 <template>
   <div class="docs-code-snippet">
-    <div class="docs-example border rounded-top" :class="{ 'rounded-bottom' : !showMarkup, [props.class]: props.class !== null }" v-html="props.code">
-    </div>
+    <div class="docs-example border rounded-top" :class="{ 'rounded-bottom': !showMarkup, [props.class]: props.class !== null }" v-html="props.code"></div>
     <template v-if="props.showMarkup">
       <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
         <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
@@ -22,7 +21,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import Code from './Code.vue'
+import Code from './Code.vue';
 
 const props = defineProps({
   addStackblitzJs: {
@@ -41,7 +40,7 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
-  class:{
+  class: {
     type: String,
     default: null
   }

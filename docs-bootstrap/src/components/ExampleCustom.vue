@@ -3,25 +3,25 @@
     <div class="docs-example border rounded-top" :class="props.class">
       <slot />
     </div>
-      <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
-        <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
-        <div class="ms-auto">
-          <a v-if="props.addStackblitzJs" role="button" class="text-body me-3" title="Edit" aria-label="Edit">
-            <bi-lightning-charge-fill />
-          </a>
-          <BiCheckLg v-if="isCopy" class="text-success" />
-          <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
-            <BiCopy />
-          </a>
-        </div>
+    <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
+      <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
+      <div class="ms-auto">
+        <a v-if="props.addStackblitzJs" role="button" class="text-body me-3" title="Edit" aria-label="Edit">
+          <bi-lightning-charge-fill />
+        </a>
+        <BiCheckLg v-if="isCopy" class="text-success" />
+        <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
+          <BiCopy />
+        </a>
       </div>
-      <Code :code="props.code" :lang="props.lang" />
+    </div>
+    <Code :code="props.code" :lang="props.lang" />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import Code from './Code.vue'
+import Code from './Code.vue';
 
 const props = defineProps({
   addStackblitzJs: {
@@ -36,7 +36,7 @@ const props = defineProps({
     type: String,
     default: 'html'
   },
-  class:{
+  class: {
     type: String,
     default: null
   }

@@ -1,4 +1,3 @@
-
 <template>
   <article class="docs-content">
     <h1>List group</h1>
@@ -6,25 +5,41 @@
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
-    <Example code='<ul class="list-group">
+    <Example
+      code='<ul class="list-group">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item">And a fifth one</li>
-  </ul>' /><h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
+  </ul>'
+    />
+    <h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
     <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
-    <Example code='<ul class="list-group">
+    <Example
+      code='<ul class="list-group">
     <li class="list-group-item active" aria-current="true">An active item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item">And a fifth one</li>
-  </ul>' /><h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
-    <p>Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.</p>
-    <p>Make <code>.list-group-item-action</code> instances <em>appear</em> disabled by adding <code>.disabled</code>, and <code>aria-disabled=&quot;true&quot;</code> to inform assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.</p>
-    <p>Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.</p>
-    <Example code='<div class="list-group">
+  </ul>'
+    />
+    <h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
+    <p>
+      Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding
+      <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or
+      <code>&lt;div&gt;</code>s) don’t provide a click or tap affordance.
+    </p>
+    <p>
+      Make <code>.list-group-item-action</code> instances <em>appear</em> disabled by adding <code>.disabled</code>, and <code>aria-disabled=&quot;true&quot;</code> to inform
+      assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.
+    </p>
+    <p>
+      Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.
+    </p>
+    <Example
+      code='<div class="list-group">
     <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
       The current link item
     </a>
@@ -32,8 +47,14 @@
     <a href="#" class="list-group-item list-group-item-action">A third link item</a>
     <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
     <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
-  </div>' /><p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
-    <Example code='<div class="list-group">
+  </div>'
+    />
+    <p>
+      With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s
+      don’t support the disabled attribute.
+    </p>
+    <Example
+      code='<div class="list-group">
     <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
       The current button
     </button>
@@ -41,23 +62,38 @@
     <button type="button" class="list-group-item list-group-item-action">A third button item</button>
     <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
     <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
-  </div>' /><h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
+  </div>'
+    />
+    <h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
     <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
-    <Example code='<ul class="list-group list-group-flush">
+    <Example
+      code='<ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item">And a fifth one</li>
-  </ul>' /><h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
-    <p>Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.</p>
-    <p>Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> pseudo-element on the <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.</p>
-    <Example code='<ol class="list-group list-group-numbered">
+  </ul>'
+    />
+    <h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
+    <p>
+      Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated
+      via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.
+    </p>
+    <p>
+      Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> pseudo-element on the
+      <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.
+    </p>
+    <Example
+      code='<ol class="list-group list-group-numbered">
     <li class="list-group-item">A list item</li>
     <li class="list-group-item">A list item</li>
     <li class="list-group-item">A list item</li>
-  </ol>' /><p>These work great with custom content as well.</p>
-    <Example code='<ol class="list-group list-group-numbered">
+  </ol>'
+    />
+    <p>These work great with custom content as well.</p>
+    <Example
+      code='<ol class="list-group list-group-numbered">
     <li class="list-group-item d-flex justify-content-between align-items-start">
       <div class="ms-2 me-auto">
         <div class="fw-bold">Subheading</div>
@@ -79,34 +115,75 @@
       </div>
       <span class="badge text-bg-primary rounded-pill">14</span>
     </li>
-  </ol>' /><h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
-    <p>Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently <strong>horizontal list groups cannot be combined with flush list groups.</strong></p>
+  </ol>'
+    />
+    <h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
+    <p>
+      Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive
+      variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently
+      <strong>horizontal list groups cannot be combined with flush list groups.</strong>
+    </p>
     <p><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
-    <Example :code='data["breakpoints"].map((breakpoint) => `<ul class="list-group list-group-horizontal${breakpoint.abbr}">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>`).join("\n")' /><h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
+    <Example
+      :code="
+        data['breakpoints']
+          .map(
+            (breakpoint) => `<ul class=&quot;list-group list-group-horizontal${breakpoint.abbr}&quot;>
+    <li class=&quot;list-group-item&quot;>An item</li>
+    <li class=&quot;list-group-item&quot;>A second item</li>
+    <li class=&quot;list-group-item&quot;>A third item</li>
+  </ul>`
+          )
+          .join('\n')
+      "
+    />
+    <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <Callout>
-    <p><strong>Heads up!</strong> As of v5.3.0, the <code>list-group-item-variant()</code> Sass mixin is deprecated. List group item variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
-    </Callout><p>Use contextual classes to style list items with a stateful background and color.</p>
-    <Example :code='[
-    `<ul class="list-group">
-    <li class="list-group-item">A simple default list group item</li>
+      <p>
+        <strong>Heads up!</strong> As of v5.3.0, the <code>list-group-item-variant()</code> Sass mixin is deprecated. List group item variants now have their CSS variables
+        overridden in <a href="#sass-loops">a Sass loop</a>.
+      </p>
+    </Callout>
+    <p>Use contextual classes to style list items with a stateful background and color.</p>
+    <Example
+      :code="
+        [
+          `<ul class=&quot;list-group&quot;>
+    <li class=&quot;list-group-item&quot;>A simple default list group item</li>
     `,
-    ...data["theme-colors"].map((themeColor) => `  <li class="list-group-item list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</li>`),
-    `</ul>`
-  ].join("\n")' /><h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
-    <p>Contextual classes also work with <code>.list-group-item-action</code> for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
-    <Example :code='[
-    `<div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+          ...data['theme-colors'].map(
+            (themeColor) => `  <li class=&quot;list-group-item list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</li>`
+          ),
+          `</ul>`
+        ].join('\n')
+      "
+    />
+    <h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
+    <p>
+      Contextual classes also work with <code>.list-group-item-action</code> for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements. Note the addition of the hover
+      styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.
+    </p>
+    <Example
+      :code="
+        [
+          `<div class=&quot;list-group&quot;>
+    <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
     `,
-    ...data["theme-colors"].map((themeColor) => `  <a href="#" class="list-group-item list-group-item-action list-group-item-${themeColor.name}">A simple ${themeColor.name} list group item</a>`),
-    `</div>`
-  ].join("\n")' /><Callout name="warning-color-assistive-technologies" /><h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
-    <p>Add badges to any list group item to show unread counts, activity, and more with the help of some <a href="/docs-bootstrap/5.3/utilities/flex">utilities</a>.</p>
-    <Example code='<ul class="list-group">
+          ...data['theme-colors'].map(
+            (themeColor) =>
+              `  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</a>`
+          ),
+          `</div>`
+        ].join('\n')
+      "
+    /><Callout name="warning-color-assistive-technologies" />
+    <h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
+    <p>
+      Add badges to any list group item to show unread counts, activity, and more with the help of some
+      <a href="/docs-bootstrap/5.3/utilities/flex">utilities</a>.
+    </p>
+    <Example
+      code='<ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           A list item
           <span class="badge text-bg-primary rounded-pill">14</span>
@@ -119,9 +196,15 @@
           A third list item
           <span class="badge text-bg-primary rounded-pill">1</span>
         </li>
-      </ul>' /><h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
-    <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a>.</p>
-    <Example code='<div class="list-group">
+      </ul>'
+    />
+    <h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
+    <p>
+      Add nearly any HTML within, even for linked list groups like the one below, with the help of
+      <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a>.
+    </p>
+    <Example
+      code='<div class="list-group">
         <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">List group item heading</h5>
@@ -146,9 +229,15 @@
           <p class="mb-1">Some placeholder content in a paragraph.</p>
           <small class="text-body-secondary">And some muted small print.</small>
         </a>
-      </div>' /><h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
-    <p>Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without <code>&lt;label&gt;</code>s, but please remember to include an <code>aria-label</code> attribute and value for accessibility.</p>
-    <Example code='<ul class="list-group">
+      </div>'
+    />
+    <h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
+    <p>
+      Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without
+      <code>&lt;label&gt;</code>s, but please remember to include an <code>aria-label</code> attribute and value for accessibility.
+    </p>
+    <Example
+      code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
           <label class="form-check-label" for="firstCheckbox">First checkbox</label>
@@ -161,7 +250,9 @@
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
           <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
         </li>
-      </ul>' /><Example code='<ul class="list-group">
+      </ul>'
+    /><Example
+      code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
           <label class="form-check-label" for="firstRadio">First radio</label>
@@ -174,8 +265,11 @@
           <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
           <label class="form-check-label" for="thirdRadio">Third radio</label>
         </li>
-      </ul>' /><p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
-    <Example code='<ul class="list-group">
+      </ul>'
+    />
+    <p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
+    <Example
+      code='<ul class="list-group">
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
           <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
@@ -188,83 +282,122 @@
           <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
           <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
         </li>
-      </ul>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+      </ul>'
+    />
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
-    <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, list groups now use local CSS variables on <code>.list-group</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-    <ScssDocs name="list-group-css-vars" file="scss/_list-group.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <ScssDocs name="list-group-variables" file="scss/_variables.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <DeprecatedIn version="5.3.0" /><ScssDocs name="list-group-mixin" file="scss/mixins/_list-group.scss" /><h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
+    <AddedIn version="5.2.0" />
+    <p>
+      As part of Bootstrap’s evolving CSS variables approach, list groups now use local CSS variables on
+      <code>.list-group</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+    </p>
+    <ScssDocs name="list-group-css-vars" file="scss/_list-group.scss" />
+    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <ScssDocs name="list-group-variables" file="scss/_variables.scss" />
+    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
+    <DeprecatedIn version="5.3.0" /><ScssDocs name="list-group-mixin" file="scss/mixins/_list-group.scss" />
+    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
     <p>Loop that generates the modifier classes with an overriding of CSS variables.</p>
-    <ScssDocs name="list-group-modifiers" file="scss/_list-group.scss" /><h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
-    <p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our list group to create tabbable panes of local content.</p>
+    <ScssDocs name="list-group-modifiers" file="scss/_list-group.scss" />
+    <h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
+    <p>
+      Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our list group to create tabbable panes of local
+      content.
+    </p>
     <div class="docs-example" role="tabpanel">
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
             <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages"
+              >Messages</a
+            >
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings"
+              >Settings</a
+            >
           </div>
         </div>
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <p>Some placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>
+                Some placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out and fill this tab panel. In production, you would
+                obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.
+              </p>
             </div>
             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <p>Some placeholder content in a paragraph relating to "Profile". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>
+                Some placeholder content in a paragraph relating to "Profile". And some more content, used here just to pad out and fill this tab panel. In production, you would
+                obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.
+              </p>
             </div>
             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <p>Some placeholder content in a paragraph relating to "Messages". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>
+                Some placeholder content in a paragraph relating to "Messages". And some more content, used here just to pad out and fill this tab panel. In production, you would
+                obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.
+              </p>
             </div>
             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <p>Some placeholder content in a paragraph relating to "Settings". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>
+                Some placeholder content in a paragraph relating to "Settings". And some more content, used here just to pad out and fill this tab panel. In production, you would
+                obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <CodeWrapper code='&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-4&quot;&gt;
-    &lt;div class=&quot;list-group&quot; id=&quot;list-tab&quot; role=&quot;tablist&quot;&gt;
-      &lt;a class=&quot;list-group-item list-group-item-action active&quot; id=&quot;list-home-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-home&quot; role=&quot;tab&quot; aria-controls=&quot;list-home&quot;&gt;Home&lt;/a&gt;
-      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-profile-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-profile&quot; role=&quot;tab&quot; aria-controls=&quot;list-profile&quot;&gt;Profile&lt;/a&gt;
-      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-messages-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-messages&quot; role=&quot;tab&quot; aria-controls=&quot;list-messages&quot;&gt;Messages&lt;/a&gt;
-      &lt;a class=&quot;list-group-item list-group-item-action&quot; id=&quot;list-settings-list&quot; data-bs-toggle=&quot;list&quot; href=&quot;#list-settings&quot; role=&quot;tab&quot; aria-controls=&quot;list-settings&quot;&gt;Settings&lt;/a&gt;
+    <CodeWrapper
+      code='&lt;div class="row"&gt;
+  &lt;div class="col-4"&gt;
+    &lt;div class="list-group" id="list-tab" role="tablist"&gt;
+      &lt;a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"&gt;Home&lt;/a&gt;
+      &lt;a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"&gt;Profile&lt;/a&gt;
+      &lt;a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"&gt;Messages&lt;/a&gt;
+      &lt;a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"&gt;Settings&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;col-8&quot;&gt;
-    &lt;div class=&quot;tab-content&quot; id=&quot;nav-tabContent&quot;&gt;
-      &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;list-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;list-home-list&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;list-profile-list&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-messages&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;list-messages-list&quot;&gt;...&lt;/div&gt;
-      &lt;div class=&quot;tab-pane fade&quot; id=&quot;list-settings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;list-settings-list&quot;&gt;...&lt;/div&gt;
+  &lt;div class="col-8"&gt;
+    &lt;div class="tab-content" id="nav-tabContent"&gt;
+      &lt;div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"&gt;...&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"&gt;...&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"&gt;...&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"&gt;...&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="using-data-attributes">Using data attributes<a class="anchor-link" href="#using-data-attributes" aria-label="Link to Using data attributes"></a></h3>
-    <p>You can activate a list group navigation without writing any JavaScript by simply specifying <code>data-bs-toggle=&quot;list&quot;</code> or on an element. Use these data attributes on <code>.list-group-item</code>.</p>
-    <CodeWrapper code='&lt;div role=&quot;tabpanel&quot;&gt;
+    <p>
+      You can activate a list group navigation without writing any JavaScript by simply specifying
+      <code>data-bs-toggle=&quot;list&quot;</code> or on an element. Use these data attributes on <code>.list-group-item</code>.
+    </p>
+    <CodeWrapper
+      code='&lt;div role="tabpanel"&gt;
   &lt;!-- List group --&gt;
-  &lt;div class=&quot;list-group&quot; id=&quot;myList&quot; role=&quot;tablist&quot;&gt;
-    &lt;a class=&quot;list-group-item list-group-item-action active&quot; data-bs-toggle=&quot;list&quot; href=&quot;#home&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
-    &lt;a class=&quot;list-group-item list-group-item-action&quot; data-bs-toggle=&quot;list&quot; href=&quot;#profile&quot; role=&quot;tab&quot;&gt;Profile&lt;/a&gt;
-    &lt;a class=&quot;list-group-item list-group-item-action&quot; data-bs-toggle=&quot;list&quot; href=&quot;#messages&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
-    &lt;a class=&quot;list-group-item list-group-item-action&quot; data-bs-toggle=&quot;list&quot; href=&quot;#settings&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+  &lt;div class="list-group" id="myList" role="tablist"&gt;
+    &lt;a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab"&gt;Home&lt;/a&gt;
+    &lt;a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab"&gt;Profile&lt;/a&gt;
+    &lt;a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab"&gt;Messages&lt;/a&gt;
+    &lt;a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings" role="tab"&gt;Settings&lt;/a&gt;
   &lt;/div&gt;
 
   &lt;!-- Tab panes --&gt;
-  &lt;div class=&quot;tab-content&quot;&gt;
-    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane active" id="home" role="tabpanel"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane" id="profile" role="tabpanel"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane" id="messages" role="tabpanel"&gt;...&lt;/div&gt;
+    &lt;div class="tab-pane" id="settings" role="tabpanel"&gt;...&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable tabbable list item via JavaScript (each list item needs to be activated individually):</p>
-    <CodeWrapper code="const triggerTabList = document.querySelectorAll(&#39;#myTab a&#39;)
+    <CodeWrapper
+      code="const triggerTabList = document.querySelectorAll(&#39;#myTab a&#39;)
 triggerTabList.forEach(triggerEl =&gt; {
   const tabTrigger = new bootstrap.Tab(triggerEl)
 
@@ -273,93 +406,137 @@ triggerTabList.forEach(triggerEl =&gt; {
     tabTrigger.show()
   })
 })
-" lang="javascript" />
+"
+      lang="javascript"
+    />
     <p>You can activate individual list item in several ways:</p>
-    <CodeWrapper code="const triggerEl = document.querySelector(&#39;#myTab a[href=&quot;#profile&quot;]&#39;)
+    <CodeWrapper
+      code='const triggerEl = document.querySelector(&#39;#myTab a[href="#profile"]&#39;)
 bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
 
 const triggerFirstTabEl = document.querySelector(&#39;#myTab li:first-child a&#39;)
 bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
-" lang="javascript" />
+'
+      lang="javascript"
+    />
     <h3 id="fade-effect">Fade effect<a class="anchor-link" href="#fade-effect" aria-label="Link to Fade effect"></a></h3>
-    <p>To make tabs panel fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.</p>
-    <CodeWrapper code='&lt;div class=&quot;tab-content&quot;&gt;
-  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;...&lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+    <p>
+      To make tabs panel fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.
+    </p>
+    <CodeWrapper
+      code='&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane fade show active" id="home" role="tabpanel"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile" role="tabpanel"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="messages" role="tabpanel"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="settings" role="tabpanel"&gt;...&lt;/div&gt;
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <Callout name="danger-async-methods" type="danger" /><p>Activates your content as a tab element.</p>
+    <Callout name="danger-async-methods" type="danger" />
+    <p>Activates your content as a tab element.</p>
     <p>You can create a tab instance with the constructor, for example:</p>
-    <CodeWrapper code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
-" lang="javascript" />
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Method</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>dispose</code></td>
-    <td>Destroys an element’s tab.</td>
-    </tr>
-    <tr>
-    <td><code>getInstance</code></td>
-    <td>Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: <code>bootstrap.Tab.getInstance(element)</code>.</td>
-    </tr>
-    <tr>
-    <td><code>getOrCreateInstance</code></td>
-    <td>Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this: <code>bootstrap.Tab.getOrCreateInstance(element)</code>.</td>
-    </tr>
-    <tr>
-    <td><code>show</code></td>
-    <td>Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden. <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).</td>
-    </tr>
-    </tbody></table>
-    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <CodeWrapper
+      code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
+"
+      lang="javascript"
+    />
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>dispose</code></td>
+            <td>Destroys an element’s tab.</td>
+          </tr>
+          <tr>
+            <td><code>getInstance</code></td>
+            <td>
+              Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: <code>bootstrap.Tab.getInstance(element)</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>getOrCreateInstance</code></td>
+            <td>
+              Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
+              <code>bootstrap.Tab.getOrCreateInstance(element)</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>show</code></td>
+            <td>
+              Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden.
+              <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>When showing a new tab, the events fire in the following order:</p>
     <ol>
-    <li><code>hide.bs.tab</code> (on the current active tab)</li>
-    <li><code>show.bs.tab</code> (on the to-be-shown tab)</li>
-    <li><code>hidden.bs.tab</code> (on the previous active tab, the same one as for the <code>hide.bs.tab</code> event)</li>
-    <li><code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
+      <li><code>hide.bs.tab</code> (on the current active tab)</li>
+      <li><code>show.bs.tab</code> (on the to-be-shown tab)</li>
+      <li><code>hidden.bs.tab</code> (on the previous active tab, the same one as for the <code>hide.bs.tab</code> event)</li>
+      <li><code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
     </ol>
     <p>If no tab was already active, then the <code>hide.bs.tab</code> and <code>hidden.bs.tab</code> events will not be fired.</p>
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Event type</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>hide.bs.tab</code></td>
-    <td>This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.</td>
-    </tr>
-    <tr>
-    <td><code>hidden.bs.tab</code></td>
-    <td>This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.</td>
-    </tr>
-    <tr>
-    <td><code>show.bs.tab</code></td>
-    <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
-    </tr>
-    <tr>
-    <td><code>shown.bs.tab</code></td>
-    <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
-    </tr>
-    </tbody></table>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Event type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>hide.bs.tab</code></td>
+            <td>
+              This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use
+              <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.
+            </td>
+          </tr>
+          <tr>
+            <td><code>hidden.bs.tab</code></td>
+            <td>
+              This event fires after a new tab is shown (and thus the previous active tab is hidden). Use
+              <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.
+            </td>
+          </tr>
+          <tr>
+            <td><code>show.bs.tab</code></td>
+            <td>
+              This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and
+              the previous active tab (if available) respectively.
+            </td>
+          </tr>
+          <tr>
+            <td><code>shown.bs.tab</code></td>
+            <td>
+              This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous
+              active tab (if available) respectively.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <CodeWrapper code="const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle=&quot;list&quot;]&#39;)
+    <CodeWrapper
+      code='const tabElms = document.querySelectorAll(&#39;a[data-bs-toggle="list"]&#39;)
 tabElms.forEach(tabElm =&gt; {
   tabElm.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     event.target // newly activated tab
     event.relatedTarget // previous active tab
   })
 })
-" lang="javascript" />
+'
+      lang="javascript"
+    />
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
@@ -404,5 +581,5 @@ tabElms.forEach(tabElm =&gt; {
 </template>
 
 <script setup>
-import data from '@/data/data.js'
+import data from '@/data/data.js';
 </script>

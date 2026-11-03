@@ -1,4 +1,3 @@
-
 <template>
   <article class="docs-content">
     <h1>Modal</h1>
@@ -7,24 +6,46 @@
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.</p>
     <ul>
-    <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <code>&lt;body&gt;</code> so that modal content scrolls instead.</li>
-    <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
-    <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
-    <li>Modals use <code>position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a <code>.modal</code> within another fixed element.</li>
-    <li>Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices. <a href="/docs-bootstrap/5.3/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a> for details.</li>
-    <li>Due to how HTML5 defines its semantics, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">the <code>autofocus</code> HTML attribute</a> has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:</li>
+      <li>
+        Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <code>&lt;body&gt;</code> so that modal
+        content scrolls instead.
+      </li>
+      <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
+      <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
+      <li>
+        Modals use <code>position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to
+        avoid potential interference from other elements. You’ll likely run into issues when nesting a <code>.modal</code> within another fixed element.
+      </li>
+      <li>
+        Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices.
+        <a href="/docs-bootstrap/5.3/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a>
+        for details.
+      </li>
+      <li>
+        Due to how HTML5 defines its semantics,
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">the <code>autofocus</code> HTML attribute</a>
+        has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
+      </li>
     </ul>
-    <CodeWrapper code="const myModal = document.getElementById(&#39;myModal&#39;)
+    <CodeWrapper
+      code="const myModal = document.getElementById(&#39;myModal&#39;)
 const myInput = document.getElementById(&#39;myInput&#39;)
 
 myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
   myInput.focus()
 })
-" lang="javascript" />
-    <Callout name="info-prefersreducedmotion" /><p>Keep reading for demos and usage guidelines.</p>
+"
+      lang="javascript"
+    />
+    <Callout name="info-prefersreducedmotion" />
+    <p>Keep reading for demos and usage guidelines.</p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="modal-components">Modal components<a class="anchor-link" href="#modal-components" aria-label="Link to Modal components"></a></h3>
-    <p>Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+    <p>
+      Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body
+      (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit
+      dismiss action.
+    </p>
     <div class="docs-example bg-body-tertiary">
       <div class="modal position-static d-block" tabindex="-1">
         <div class="modal-dialog">
@@ -44,26 +65,34 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
         </div>
       </div>
     </div>
-    <CodeWrapper code='&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    <CodeWrapper
+      code='&lt;div class="modal" tabindex="-1"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class="modal-body"&gt;
         &lt;p&gt;Modal body text goes here.&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <Callout>
-    <p>In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the <a href="/docs-bootstrap/5.3/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.</p>
-    </Callout><h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
+      <p>
+        In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog
+        represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the
+        <a href="/docs-bootstrap/5.3/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.
+      </p>
+    </Callout>
+    <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
     <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
     <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -81,32 +110,39 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-    </div><Example :showMarkup="false" code='
+    </div>
+    <Example
+      :showMarkup="false"
+      code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLive">Launch demo modal</button>
-    ' />
-    <CodeWrapper code='&lt;!-- Button trigger modal --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#exampleModal&quot;&gt;
+    '
+    />
+    <CodeWrapper
+      code='&lt;!-- Button trigger modal --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
   Launch demo modal
 &lt;/button&gt;
 
 &lt;!-- Modal --&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;exampleModal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;exampleModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;h1 class=&quot;modal-title fs-5&quot; id=&quot;exampleModalLabel&quot;&gt;Modal title&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h1 class="modal-title fs-5" id="exampleModalLabel"&gt;Modal title&lt;/h1&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class="modal-body"&gt;
         ...
       &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="static-backdrop">Static backdrop<a class="anchor-link" href="#static-backdrop" aria-label="Link to Static backdrop"></a></h3>
     <p>When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below to try it.</p>
     <div class="modal fade" id="staticBackdropLive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
@@ -125,32 +161,39 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-    </div><Example :showMarkup="false" code='
+    </div>
+    <Example
+      :showMarkup="false"
+      code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">Launch static backdrop modal</button>
-    ' />
-    <CodeWrapper code='&lt;!-- Button trigger modal --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#staticBackdrop&quot;&gt;
+    '
+    />
+    <CodeWrapper
+      code='&lt;!-- Button trigger modal --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"&gt;
   Launch static backdrop modal
 &lt;/button&gt;
 
 &lt;!-- Modal --&gt;
-&lt;div class=&quot;modal fade&quot; id=&quot;staticBackdrop&quot; data-bs-backdrop=&quot;static&quot; data-bs-keyboard=&quot;false&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;staticBackdropLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;h1 class=&quot;modal-title fs-5&quot; id=&quot;staticBackdropLabel&quot;&gt;Modal title&lt;/h1&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+&lt;div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h1 class="modal-title fs-5" id="staticBackdropLabel"&gt;Modal title&lt;/h1&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;div class="modal-body"&gt;
         ...
       &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Understood&lt;/button&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Understood&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="scrolling-long-content">Scrolling long content<a class="anchor-link" href="#scrolling-long-content" aria-label="Link to Scrolling long content"></a></h3>
     <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
     <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -161,7 +204,11 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="min-height: 100vh">
-            <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text in the modal, we use an inline style to set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
+            <p>
+              This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text in the modal, we use an inline style to set a minimum
+              height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport,
+              scrolling will move the modal as needed.
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -169,9 +216,17 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-    </div><Example :showMarkup="false" code='
+    </div>
+    <Example
+      :showMarkup="false"
+      code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">Launch demo modal</button>
-    ' /><p>You can also create a scrollable modal that allows scrolling the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.</p>
+    '
+    />
+    <p>
+      You can also create a scrollable modal that allows scrolling the modal body by adding
+      <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.
+    </p>
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
@@ -180,8 +235,11 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p>
+              This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height,
+              thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+            </p>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <p>This content should appear at the bottom after you scroll.</p>
           </div>
           <div class="modal-footer">
@@ -190,16 +248,25 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-    </div><Example :showMarkup="false" code='
+    </div>
+    <Example
+      :showMarkup="false"
+      code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">Launch demo modal</button>
-    ' />
-    <CodeWrapper code='&lt;!-- Scrollable modal --&gt;
-&lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot;&gt;
+    '
+    />
+    <CodeWrapper
+      code='&lt;!-- Scrollable modal --&gt;
+&lt;div class="modal-dialog modal-dialog-scrollable"&gt;
   ...
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="vertically-centered">Vertically centered<a class="anchor-link" href="#vertically-centered" aria-label="Link to Vertically centered"></a></h3>
     <p>Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.</p>
-    <Example :showMarkup="false" code='<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <Example
+      :showMarkup="false"
+      code='<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -238,19 +305,28 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       </div>
 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Vertically centered modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>' />
-    <CodeWrapper code='&lt;!-- Vertically centered modal --&gt;
-&lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Vertically centered scrollable modal</button>'
+    />
+    <CodeWrapper
+      code='&lt;!-- Vertically centered modal --&gt;
+&lt;div class="modal-dialog modal-dialog-centered"&gt;
   ...
 &lt;/div&gt;
 
 &lt;!-- Vertically centered scrollable modal --&gt;
-&lt;div class=&quot;modal-dialog modal-dialog-centered modal-dialog-scrollable&quot;&gt;
+&lt;div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"&gt;
   ...
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
-    <p><a href="/docs-bootstrap/5.3/components/tooltips">Tooltips</a> and <a href="/docs-bootstrap/5.3/components/popovers">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
-    <Example :showMarkup="false" code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
+    <p>
+      <a href="/docs-bootstrap/5.3/components/tooltips">Tooltips</a> and <a href="/docs-bootstrap/5.3/components/popovers">popovers</a> can be placed within modals as needed. When
+      modals are closed, any tooltips and popovers within are also automatically dismissed.
+    </p>
+    <Example
+      :showMarkup="false"
+      code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -272,16 +348,23 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>' />
-    <CodeWrapper code='&lt;div class=&quot;modal-body&quot;&gt;
-  &lt;h2 class=&quot;fs-5&quot;&gt;Popover in a modal&lt;/h2&gt;
-  &lt;p&gt;This &lt;button class=&quot;btn btn-secondary&quot; data-bs-toggle=&quot;popover&quot; title=&quot;Popover title&quot; data-bs-content=&quot;Popover body content is set in this attribute.&quot;&gt;button&lt;/button&gt; triggers a popover on click.&lt;/p&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">Launch demo modal</button>'
+    />
+    <CodeWrapper
+      code='&lt;div class="modal-body"&gt;
+  &lt;h2 class="fs-5"&gt;Popover in a modal&lt;/h2&gt;
+  &lt;p&gt;This &lt;button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute."&gt;button&lt;/button&gt; triggers a popover on click.&lt;/p&gt;
   &lt;hr&gt;
-  &lt;h2 class=&quot;fs-5&quot;&gt;Tooltips in a modal&lt;/h2&gt;
-  &lt;p&gt;&lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;This link&lt;/a&gt; and &lt;a href=&quot;#&quot; data-bs-toggle=&quot;tooltip&quot; title=&quot;Tooltip&quot;&gt;that link&lt;/a&gt; have tooltips on hover.&lt;/p&gt;
-&lt;/div&gt;' lang="html" />
+  &lt;h2 class="fs-5"&gt;Tooltips in a modal&lt;/h2&gt;
+  &lt;p&gt;&lt;a href="#" data-bs-toggle="tooltip" title="Tooltip"&gt;This link&lt;/a&gt; and &lt;a href="#" data-bs-toggle="tooltip" title="Tooltip"&gt;that link&lt;/a&gt; have tooltips on hover.&lt;/p&gt;
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="using-the-grid">Using the grid<a class="anchor-link" href="#using-the-grid" aria-label="Link to Using the grid"></a></h3>
-    <p>Utilize the Bootstrap grid system within a modal by nesting <code>.container-fluid</code> within the <code>.modal-body</code>. Then, use the normal grid system classes as you would anywhere else.</p>
+    <p>
+      Utilize the Bootstrap grid system within a modal by nesting <code>.container-fluid</code> within the <code>.modal-body</code>. Then, use the normal grid system classes as you
+      would anywhere else.
+    </p>
     <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -306,12 +389,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
                 <div class="col-sm-9">
                   Level 1: .col-sm-9
                   <div class="row">
-                    <div class="col-8 col-sm-6">
-                      Level 2: .col-8 .col-sm-6
-                    </div>
-                    <div class="col-4 col-sm-6">
-                      Level 2: .col-4 .col-sm-6
-                    </div>
+                    <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+                    <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
                   </div>
                 </div>
               </div>
@@ -323,41 +402,58 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-    </div><Example :showMarkup="false" code='
+    </div>
+    <Example
+      :showMarkup="false"
+      code='
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gridSystemModal">Launch demo modal</button>
-    ' />
-    <CodeWrapper code='&lt;div class=&quot;modal-body&quot;&gt;
-  &lt;div class=&quot;container-fluid&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
-      &lt;div class=&quot;col-md-4 ms-auto&quot;&gt;.col-md-4 .ms-auto&lt;/div&gt;
+    '
+    />
+    <CodeWrapper
+      code='&lt;div class="modal-body"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+      &lt;div class="col-md-4 ms-auto"&gt;.col-md-4 .ms-auto&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-3 ms-auto&quot;&gt;.col-md-3 .ms-auto&lt;/div&gt;
-      &lt;div class=&quot;col-md-2 ms-auto&quot;&gt;.col-md-2 .ms-auto&lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-3 ms-auto"&gt;.col-md-3 .ms-auto&lt;/div&gt;
+      &lt;div class="col-md-2 ms-auto"&gt;.col-md-2 .ms-auto&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-6 ms-auto&quot;&gt;.col-md-6 .ms-auto&lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-6 ms-auto"&gt;.col-md-6 .ms-auto&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-sm-9&quot;&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-9"&gt;
         Level 1: .col-sm-9
-        &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-8 col-sm-6&quot;&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-8 col-sm-6"&gt;
             Level 2: .col-8 .col-sm-6
           &lt;/div&gt;
-          &lt;div class=&quot;col-4 col-sm-6&quot;&gt;
+          &lt;div class="col-4 col-sm-6"&gt;
             Level 2: .col-4 .col-sm-6
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="varying-modal-content">Varying modal content<a class="anchor-link" href="#varying-modal-content" aria-label="Link to Varying modal content"></a></h3>
-    <p>Have a bunch of buttons that all trigger the same modal with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> attributes</a> to vary the contents of the modal depending on which button was clicked.</p>
-    <p>Below is a live demo followed by example HTML and JavaScript. For more information, <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.</p>
-    <Example addStackblitzJs code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <p>
+      Have a bunch of buttons that all trigger the same modal with slightly different contents? Use
+      <code>event.relatedTarget</code> and
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> attributes</a>
+      to vary the contents of the modal depending on which button was clicked.
+    </p>
+    <p>
+      Below is a live demo followed by example HTML and JavaScript. For more information,
+      <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.
+    </p>
+    <Example
+      addStackblitzJs
+      code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
 
@@ -386,9 +482,16 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             </div>
           </div>
         </div>
-      </div>' /><JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" /><h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
-    <p>Toggle between multiple modals with some clever placement of the <code>data-bs-target</code> and <code>data-bs-toggle</code> attributes. For example, you could toggle a password reset modal from within an already open sign in modal. <strong>Please note multiple modals cannot be open at the same time</strong>—this method simply toggles between two separate modals.</p>
-    <Example code='<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      </div>'
+    /><JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" />
+    <h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
+    <p>
+      Toggle between multiple modals with some clever placement of the <code>data-bs-target</code> and <code>data-bs-toggle</code> attributes. For example, you could toggle a
+      password reset modal from within an already open sign in modal. <strong>Please note multiple modals cannot be open at the same time</strong>—this method simply toggles
+      between two separate modals.
+    </p>
+    <Example
+      code='<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -420,58 +523,86 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
           </div>
         </div>
       </div>
-      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>' /><h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
-    <p>The <code>$modal-fade-transform</code> variable determines the transform state of <code>.modal-dialog</code> before the modal fade-in animation, the <code>$modal-show-transform</code> variable determines the transform of <code>.modal-dialog</code> at the end of the modal fade-in animation.</p>
+      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>'
+    />
+    <h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
+    <p>
+      The <code>$modal-fade-transform</code> variable determines the transform state of <code>.modal-dialog</code> before the modal fade-in animation, the
+      <code>$modal-show-transform</code> variable determines the transform of <code>.modal-dialog</code> at the end of the modal fade-in animation.
+    </p>
     <p>If you want for example a zoom-in animation, you can set <code>$modal-fade-transform: scale(.8)</code>.</p>
     <h3 id="remove-animation">Remove animation<a class="anchor-link" href="#remove-animation" aria-label="Link to Remove animation"></a></h3>
     <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
-    <CodeWrapper code='&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;...&quot; aria-hidden=&quot;true&quot;&gt;
+    <CodeWrapper
+      code='&lt;div class="modal" tabindex="-1" aria-labelledby="..." aria-hidden="true"&gt;
   ...
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="dynamic-heights">Dynamic heights<a class="anchor-link" href="#dynamic-heights" aria-label="Link to Dynamic heights"></a></h3>
     <p>If the height of a modal changes while it is open, you should call <code>myModal.handleUpdate()</code> to readjust the modal’s position in case a scrollbar appears.</p>
     <h3 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h3>
-    <p>Be sure to add <code>aria-labelledby=&quot;...&quot;</code>, referencing the modal title, to <code>.modal</code>. Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.</p>
+    <p>
+      Be sure to add <code>aria-labelledby=&quot;...&quot;</code>, referencing the modal title, to <code>.modal</code>. Additionally, you may give a description of your modal
+      dialog with <code>aria-describedby</code> on <code>.modal</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
+    </p>
     <h3 id="embedding-youtube-videos">Embedding YouTube videos<a class="anchor-link" href="#embedding-youtube-videos" aria-label="Link to Embedding YouTube videos"></a></h3>
-    <p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
+    <p>
+      Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more.
+      <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a>
+      for more information.
+    </p>
     <h2 id="optional-sizes">Optional sizes<a class="anchor-link" href="#optional-sizes" aria-label="Link to Optional sizes"></a></h2>
-    <p>Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Size</th>
-    <th>Class</th>
-    <th>Modal max-width</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td>Small</td>
-    <td><code>.modal-sm</code></td>
-    <td><code>300px</code></td>
-    </tr>
-    <tr>
-    <td>Default</td>
-    <td><span class="text-body-secondary">None</span></td>
-    <td><code>500px</code></td>
-    </tr>
-    <tr>
-    <td>Large</td>
-    <td><code>.modal-lg</code></td>
-    <td><code>800px</code></td>
-    </tr>
-    <tr>
-    <td>Extra large</td>
-    <td><code>.modal-xl</code></td>
-    <td><code>1140px</code></td>
-    </tr>
-    </tbody></table>
-    </div><p>Our default modal without modifier class constitutes the “medium” size modal.</p>
-    <Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
+    <p>
+      Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal
+      scrollbars on narrower viewports.
+    </p>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Class</th>
+            <th>Modal max-width</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Small</td>
+            <td><code>.modal-sm</code></td>
+            <td><code>300px</code></td>
+          </tr>
+          <tr>
+            <td>Default</td>
+            <td><span class="text-body-secondary">None</span></td>
+            <td><code>500px</code></td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td><code>.modal-lg</code></td>
+            <td><code>800px</code></td>
+          </tr>
+          <tr>
+            <td>Extra large</td>
+            <td><code>.modal-xl</code></td>
+            <td><code>1140px</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Our default modal without modifier class constitutes the “medium” size modal.</p>
+    <Example
+      :showMarkup="false"
+      code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>' />
-    <CodeWrapper code='&lt;div class=&quot;modal-dialog modal-xl&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;modal-dialog modal-lg&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;modal-dialog modal-sm&quot;&gt;...&lt;/div&gt;' lang="html" />
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>'
+    />
+    <CodeWrapper
+      code='&lt;div class="modal-dialog modal-xl"&gt;...&lt;/div&gt;
+&lt;div class="modal-dialog modal-lg"&gt;...&lt;/div&gt;
+&lt;div class="modal-dialog modal-sm"&gt;...&lt;/div&gt;'
+      lang="html"
+    />
     <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -479,79 +610,86 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <h1 class="modal-title fs-4" id="exampleModalXlLabel">Extra large modal</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalLgLabel">Large modal</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalSm" tabindex="-1" aria-labelledby="exampleModalSmLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalSm" tabindex="-1" aria-labelledby="exampleModalSmLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalSmLabel">Small modal</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
         </div>
       </div>
-    </div><h2 id="fullscreen-modal">Fullscreen Modal<a class="anchor-link" href="#fullscreen-modal" aria-label="Link to Fullscreen Modal"></a></h2>
+    </div>
+    <h2 id="fullscreen-modal">Fullscreen Modal<a class="anchor-link" href="#fullscreen-modal" aria-label="Link to Fullscreen Modal"></a></h2>
     <p>Another override is the option to pop up a modal that covers the user viewport, available via modifier classes that are placed on a <code>.modal-dialog</code>.</p>
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Class</th>
-    <th>Availability</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>.modal-fullscreen</code></td>
-    <td>Always</td>
-    </tr>
-    <tr>
-    <td><code>.modal-fullscreen-sm-down</code></td>
-    <td><code>576px</code></td>
-    </tr>
-    <tr>
-    <td><code>.modal-fullscreen-md-down</code></td>
-    <td><code>768px</code></td>
-    </tr>
-    <tr>
-    <td><code>.modal-fullscreen-lg-down</code></td>
-    <td><code>992px</code></td>
-    </tr>
-    <tr>
-    <td><code>.modal-fullscreen-xl-down</code></td>
-    <td><code>1200px</code></td>
-    </tr>
-    <tr>
-    <td><code>.modal-fullscreen-xxl-down</code></td>
-    <td><code>1400px</code></td>
-    </tr>
-    </tbody></table>
-    </div><Example :showMarkup="false" code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>.modal-fullscreen</code></td>
+            <td>Always</td>
+          </tr>
+          <tr>
+            <td><code>.modal-fullscreen-sm-down</code></td>
+            <td><code>576px</code></td>
+          </tr>
+          <tr>
+            <td><code>.modal-fullscreen-md-down</code></td>
+            <td><code>768px</code></td>
+          </tr>
+          <tr>
+            <td><code>.modal-fullscreen-lg-down</code></td>
+            <td><code>992px</code></td>
+          </tr>
+          <tr>
+            <td><code>.modal-fullscreen-xl-down</code></td>
+            <td><code>1200px</code></td>
+          </tr>
+          <tr>
+            <td><code>.modal-fullscreen-xxl-down</code></td>
+            <td><code>1400px</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <Example
+      :showMarkup="false"
+      code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">Full screen</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenSm">Full screen below sm</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenMd">Full screen below md</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>' />
-    <CodeWrapper code='&lt;!-- Full screen modal --&gt;
-&lt;div class=&quot;modal-dialog modal-fullscreen-sm-down&quot;&gt;
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>'
+    />
+    <CodeWrapper
+      code='&lt;!-- Full screen modal --&gt;
+&lt;div class="modal-dialog modal-fullscreen-sm-down"&gt;
   ...
-&lt;/div&gt;' lang="html" />
+&lt;/div&gt;'
+      lang="html"
+    />
     <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
@@ -559,219 +697,280 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">Full screen modal</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1" aria-labelledby="exampleModalFullscreenSmLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenSm" tabindex="-1" aria-labelledby="exampleModalFullscreenSmLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalFullscreenSmLabel">Full screen below sm</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1" aria-labelledby="exampleModalFullscreenMdLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenMd" tabindex="-1" aria-labelledby="exampleModalFullscreenMdLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen-md-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalFullscreenMdLabel">Full screen below md</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1" aria-labelledby="exampleModalFullscreenLgLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenLg" tabindex="-1" aria-labelledby="exampleModalFullscreenLgLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen-lg-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalFullscreenLgLabel">Full screen below lg</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1" aria-labelledby="exampleModalFullscreenXlLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenXl" tabindex="-1" aria-labelledby="exampleModalFullscreenXlLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalFullscreenXlLabel">Full screen below xl</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><div class="modal fade" id="exampleModalFullscreenXxl" tabindex="-1" aria-labelledby="exampleModalFullscreenXxlLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="exampleModalFullscreenXxl" tabindex="-1" aria-labelledby="exampleModalFullscreenXxlLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen-xxl-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="exampleModalFullscreenXxlLabel">Full screen below xxl</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">...</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    </div>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
-    <AddedIn version="5.2.0" /><p>As part of Bootstrap’s evolving CSS variables approach, modals now use local CSS variables on <code>.modal</code> and <code>.modal-backdrop</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-    <ScssDocs name="modal-css-vars" file="scss/_modal.scss" /><ScssDocs name="modal-backdrop-css-vars" file="scss/_modal.scss" /><h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <ScssDocs name="modal-variables" file="scss/_variables.scss" /><h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
+    <AddedIn version="5.2.0" />
+    <p>
+      As part of Bootstrap’s evolving CSS variables approach, modals now use local CSS variables on
+      <code>.modal</code> and <code>.modal-backdrop</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still
+      supported, too.
+    </p>
+    <ScssDocs name="modal-css-vars" file="scss/_modal.scss" /><ScssDocs name="modal-backdrop-css-vars" file="scss/_modal.scss" />
+    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <ScssDocs name="modal-variables" file="scss/_variables.scss" />
+    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
     <p><a href="#fullscreen-modal">Responsive fullscreen modals</a> are generated via the <code>$breakpoints</code> map and a loop in <code>scss/_modal.scss</code>.</p>
-    <ScssDocs name="modal-fullscreen-loop" file="scss/_modal.scss" /><h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
-    <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also overrides default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+    <ScssDocs name="modal-fullscreen-loop" file="scss/_modal.scss" />
+    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
+    <p>
+      The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also overrides default scrolling behavior and generates a
+      <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.
+    </p>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <h4 id="toggle">Toggle</h4>
-    <p>Activate a modal without writing JavaScript. Set <code>data-bs-toggle=&quot;modal&quot;</code> on a controller element, like a button, along with a <code>data-bs-target=&quot;#foo&quot;</code> or <code>href=&quot;#foo&quot;</code> to target a specific modal to toggle.</p>
-    <CodeWrapper code='&lt;button type=&quot;button&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#myModal&quot;&gt;Launch modal&lt;/button&gt;' lang="html" />
+    <p>
+      Activate a modal without writing JavaScript. Set <code>data-bs-toggle=&quot;modal&quot;</code> on a controller element, like a button, along with a
+      <code>data-bs-target=&quot;#foo&quot;</code> or <code>href=&quot;#foo&quot;</code> to target a specific modal to toggle.
+    </p>
+    <CodeWrapper code='&lt;button type="button" data-bs-toggle="modal" data-bs-target="#myModal"&gt;Launch modal&lt;/button&gt;' lang="html" />
     <h4 id="dismiss">Dismiss</h4>
     <JsDismiss name="modal" /><Callout type="warning">
-    <p>While both ways to dismiss a modal are supported, keep in mind that dismissing from outside a modal does not match the <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide dialog (modal) pattern</a>. Do this at your own risk.</p>
-    </Callout><h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
+      <p>
+        While both ways to dismiss a modal are supported, keep in mind that dismissing from outside a modal does not match the
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide dialog (modal) pattern</a>. Do this at your own risk.
+      </p>
+    </Callout>
+    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Create a modal with a single line of JavaScript:</p>
-    <CodeWrapper code="const myModal = new bootstrap.Modal(document.getElementById(&#39;myModal&#39;), options)
+    <CodeWrapper
+      code="const myModal = new bootstrap.Modal(document.getElementById(&#39;myModal&#39;), options)
 // or
 const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
-" lang="javascript" />
+"
+      lang="javascript"
+    />
     <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
-    <JsDataAttributes /><div class="table-responsive">
-    <table class="table">
-    <thead>
-    <tr>
-    <th>Name</th>
-    <th>Type</th>
-    <th>Default</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>backdrop</code></td>
-    <td>boolean, <code>’static&#39;</code></td>
-    <td><code>true</code></td>
-    <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn’t close the modal when clicked.</td>
-    </tr>
-    <tr>
-    <td><code>focus</code></td>
-    <td>boolean</td>
-    <td><code>true</code></td>
-    <td>Puts the focus on the modal when initialized.</td>
-    </tr>
-    <tr>
-    <td><code>keyboard</code></td>
-    <td>boolean</td>
-    <td><code>true</code></td>
-    <td>Closes the modal when escape key is pressed.</td>
-    </tr>
-    </tbody></table>
-    </div><h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <Callout name="danger-async-methods" type="danger" /><h4 id="passing-options">Passing options</h4>
+    <JsDataAttributes />
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>backdrop</code></td>
+            <td>boolean, <code>’static&#39;</code></td>
+            <td><code>true</code></td>
+            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn’t close the modal when clicked.</td>
+          </tr>
+          <tr>
+            <td><code>focus</code></td>
+            <td>boolean</td>
+            <td><code>true</code></td>
+            <td>Puts the focus on the modal when initialized.</td>
+          </tr>
+          <tr>
+            <td><code>keyboard</code></td>
+            <td>boolean</td>
+            <td><code>true</code></td>
+            <td>Closes the modal when escape key is pressed.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <Callout name="danger-async-methods" type="danger" />
+    <h4 id="passing-options">Passing options</h4>
     <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
-    <CodeWrapper code="const myModal = new bootstrap.Modal(&#39;#myModal&#39;, {
+    <CodeWrapper
+      code="const myModal = new bootstrap.Modal(&#39;#myModal&#39;, {
   keyboard: false
 })
-" lang="javascript" />
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Method</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>dispose</code></td>
-    <td>Destroys an element’s modal. (Removes stored data on the DOM element)</td>
-    </tr>
-    <tr>
-    <td><code>getInstance</code></td>
-    <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element.</td>
-    </tr>
-    <tr>
-    <td><code>getOrCreateInstance</code></td>
-    <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
-    </tr>
-    <tr>
-    <td><code>handleUpdate</code></td>
-    <td>Manually readjust the modal’s position if the height of a modal changes while it is open (i.e. in case a scrollbar appears).</td>
-    </tr>
-    <tr>
-    <td><code>hide</code></td>
-    <td>Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).</td>
-    </tr>
-    <tr>
-    <td><code>show</code></td>
-    <td>Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs). Also, you can pass a DOM element as an argument that can be received in the modal events (as the <code>relatedTarget</code> property). (i.e. <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>.</td>
-    </tr>
-    <tr>
-    <td><code>toggle</code></td>
-    <td>Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).</td>
-    </tr>
-    </tbody></table>
-    </div><h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the <code>&lt;div class=&quot;modal&quot;&gt;</code>).</p>
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Event</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td><code>hide.bs.modal</code></td>
-    <td>This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See <a href="/docs-bootstrap/5.3/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.</td>
-    </tr>
-    <tr>
-    <td><code>hidden.bs.modal</code></td>
-    <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-    </tr>
-    <tr>
-    <td><code>hidePrevented.bs.modal</code></td>
-    <td>This event is fired when the modal is shown, its backdrop is <code>static</code> and a click outside of the modal is performed. The event is also fired when the escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.</td>
-    </tr>
-    <tr>
-    <td><code>show.bs.modal</code></td>
-    <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-    </tr>
-    <tr>
-    <td><code>shown.bs.modal</code></td>
-    <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-    </tr>
-    </tbody></table>
+"
+      lang="javascript"
+    />
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>dispose</code></td>
+            <td>Destroys an element’s modal. (Removes stored data on the DOM element)</td>
+          </tr>
+          <tr>
+            <td><code>getInstance</code></td>
+            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element.</td>
+          </tr>
+          <tr>
+            <td><code>getOrCreateInstance</code></td>
+            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
+          </tr>
+          <tr>
+            <td><code>handleUpdate</code></td>
+            <td>Manually readjust the modal’s position if the height of a modal changes while it is open (i.e. in case a scrollbar appears).</td>
+          </tr>
+          <tr>
+            <td><code>hide</code></td>
+            <td>
+              Manually hides a modal.
+              <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).
+            </td>
+          </tr>
+          <tr>
+            <td><code>show</code></td>
+            <td>
+              Manually opens a modal.
+              <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs). Also, you can pass a DOM
+              element as an argument that can be received in the modal events (as the <code>relatedTarget</code> property). (i.e.
+              <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>toggle</code></td>
+            <td>
+              Manually toggles a modal.
+              <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or
+              <code>hidden.bs.modal</code> event occurs).
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <CodeWrapper code="const myModalEl = document.getElementById(&#39;myModal&#39;)
+    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <p>
+      Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the
+      <code>&lt;div class=&quot;modal&quot;&gt;</code>).
+    </p>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>hide.bs.modal</code></td>
+            <td>
+              This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See
+              <a href="/docs-bootstrap/5.3/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.
+            </td>
+          </tr>
+          <tr>
+            <td><code>hidden.bs.modal</code></td>
+            <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+          </tr>
+          <tr>
+            <td><code>hidePrevented.bs.modal</code></td>
+            <td>
+              This event is fired when the modal is shown, its backdrop is <code>static</code> and a click outside of the modal is performed. The event is also fired when the
+              escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>show.bs.modal</code></td>
+            <td>
+              This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the
+              <code>relatedTarget</code> property of the event.
+            </td>
+          </tr>
+          <tr>
+            <td><code>shown.bs.modal</code></td>
+            <td>
+              This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is
+              available as the
+              <code>relatedTarget</code> property of the event.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <CodeWrapper
+      code="const myModalEl = document.getElementById(&#39;myModal&#39;)
 myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
   // do something...
 })
-" lang="javascript" />
+"
+      lang="javascript"
+    />
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">

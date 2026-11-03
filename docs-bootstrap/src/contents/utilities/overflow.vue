@@ -1,4 +1,3 @@
-
 <template>
   <article class="docs-content">
     <h1>Overflow</h1>
@@ -7,71 +6,83 @@
     <h2 id="overflow">Overflow<a class="anchor-link" href="#overflow" aria-label="Link to Overflow"></a></h2>
     <p>Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>
     <div class="docs-example d-md-flex">
-      <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+      <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
         This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
       </div>
-      <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+      <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
         This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
       </div>
-      <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+      <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
         This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
       </div>
-      <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px;">
+      <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
         This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
       </div>
     </div>
-    <CodeWrapper code='&lt;div class=&quot;overflow-auto&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-hidden&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-visible&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-scroll&quot;&gt;...&lt;/div&gt;' lang="html" />
+    <CodeWrapper
+      code='&lt;div class="overflow-auto"&gt;...&lt;/div&gt;
+&lt;div class="overflow-hidden"&gt;...&lt;/div&gt;
+&lt;div class="overflow-visible"&gt;...&lt;/div&gt;
+&lt;div class="overflow-scroll"&gt;...&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="overflow-x"><code>overflow-x</code><a class="anchor-link" href="#overflow-x" aria-label="Link to overflow-x"></a></h3>
     <p>Adjust the <code>overflow-x</code> property to affect the overflow of content horizontally.</p>
     <div class="docs-example d-md-flex">
-      <div class="overflow-x-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap;">
+      <div class="overflow-x-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap">
         <div><code>.overflow-x-auto</code> example on an element</div>
-        <div> with set width and height dimensions.</div>
+        <div>with set width and height dimensions.</div>
       </div>
-      <div class="overflow-x-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;white-space: nowrap;">
+      <div class="overflow-x-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap">
         <div><code>.overflow-x-hidden</code> example</div>
         <div>on an element with set width and height dimensions.</div>
       </div>
-      <div class="overflow-x-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;white-space: nowrap;">
-        <div><code>.overflow-x-visible</code> example </div>
+      <div class="overflow-x-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap">
+        <div><code>.overflow-x-visible</code> example</div>
         <div>on an element with set width and height dimensions.</div>
       </div>
-      <div class="overflow-x-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;white-space: nowrap;">
+      <div class="overflow-x-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px; white-space: nowrap">
         <div><code>.overflow-x-scroll</code> example on an element</div>
-        <div> with set width and height dimensions.</div>
+        <div>with set width and height dimensions.</div>
       </div>
     </div>
-    <CodeWrapper code='&lt;div class=&quot;overflow-x-auto&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-x-hidden&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-x-visible&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-x-scroll&quot;&gt;...&lt;/div&gt;' lang="html" />
+    <CodeWrapper
+      code='&lt;div class="overflow-x-auto"&gt;...&lt;/div&gt;
+&lt;div class="overflow-x-hidden"&gt;...&lt;/div&gt;
+&lt;div class="overflow-x-visible"&gt;...&lt;/div&gt;
+&lt;div class="overflow-x-scroll"&gt;...&lt;/div&gt;'
+      lang="html"
+    />
     <h3 id="overflow-y"><code>overflow-y</code><a class="anchor-link" href="#overflow-y" aria-label="Link to overflow-y"></a></h3>
     <p>Adjust the <code>overflow-y</code> property to affect the overflow of content vertically.</p>
     <div class="docs-example d-md-flex">
-      <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
+      <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
         <code>.overflow-y-auto</code> example on an element with set width and height dimensions.
       </div>
-      <div class="overflow-y-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
+      <div class="overflow-y-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
         <code>.overflow-y-hidden</code> example on an element with set width and height dimensions.
       </div>
-      <div class="overflow-y-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
+      <div class="overflow-y-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
         <code>.overflow-y-visible</code> example on an element with set width and height dimensions.
       </div>
-      <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px;">
+      <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
         <code>.overflow-y-scroll</code> example on an element with set width and height dimensions.
       </div>
     </div>
-    <CodeWrapper code='&lt;div class=&quot;overflow-y-auto&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-y-hidden&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-y-visible&quot;&gt;...&lt;/div&gt;
-&lt;div class=&quot;overflow-y-scroll&quot;&gt;...&lt;/div&gt;' lang="html" />
+    <CodeWrapper
+      code='&lt;div class="overflow-y-auto"&gt;...&lt;/div&gt;
+&lt;div class="overflow-y-hidden"&gt;...&lt;/div&gt;
+&lt;div class="overflow-y-visible"&gt;...&lt;/div&gt;
+&lt;div class="overflow-y-scroll"&gt;...&lt;/div&gt;'
+      lang="html"
+    />
     <p>Using Sass variables, you may customize the overflow utilities by changing the <code>$overflows</code> variable in <code>_variables.scss</code>.</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Overflow utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a></p>
+    <p>
+      Overflow utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
+      <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+    </p>
     <ScssDocs name="utils-overflow" file="scss/_utilities.scss" />
   </article>
 

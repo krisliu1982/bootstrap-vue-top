@@ -3,8 +3,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { highlightCode } from './code-highlighter.js'
+import { ref, onMounted } from 'vue';
+import { highlightCode } from './code-highlighter.js';
 
 const html = ref(null);
 

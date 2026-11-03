@@ -1,9 +1,11 @@
-
 <template>
   <div class="docs-code-snippet">
     <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
-      <a class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
-        :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`">{{ props.file }}</a>
+      <a
+        class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"
+        :href="`https://github.com/twbs/bootstrap/blob/v5.3.8/${props.file}`"
+        >{{ props.file }}</a
+      >
       <div class="ms-auto">
         <BiCheckLg v-if="isCopy" class="text-success" />
         <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
@@ -16,15 +18,15 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
-import Code from './code.vue'
+import { ref } from 'vue';
+import Code from './code.vue';
 
 const props = defineProps({
   name: { type: String },
   file: { type: String }
-})
+});
 
-let content = null
+let content = null;
 if (props.name === 'live-alert') {
   content = `const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
@@ -44,7 +46,7 @@ if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
     appendAlert('Nice, you triggered this alert message!', 'success')
   })
-}`
+}`;
 } else if (props.name === 'varying-modal-content') {
   content = `const exampleModal = document.getElementById('exampleModal')
 if (exampleModal) {
@@ -63,7 +65,7 @@ if (exampleModal) {
     modalTitle.textContent = \`\`New message to \${recipient}\`\`
     modalBodyInput.value = recipient
   })
-}`
+}`;
 } else if (props.name === 'live-toast') {
   content = `const toastTrigger = document.getElementById('liveToastBtn')
 const toastLiveExample = document.getElementById('liveToast')
@@ -73,9 +75,9 @@ if (toastTrigger) {
   toastTrigger.addEventListener('click', () => {
     toastBootstrap.show()
   })
-}`
+}`;
 } else if (props.name === 'allow-list') {
-  content = `const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
+  content = `const ARIA_ATTRIBUTE_PATTERN = /^aria-[\\w-]*$/i
 
 export const DefaultAllowlist = {
   // Global attributes allowed on any supplied element below.
@@ -112,7 +114,7 @@ export const DefaultAllowlist = {
   strong: [],
   u: [],
   ul: []
-}`
+}`;
 }
 
 const isCopy = ref(false);

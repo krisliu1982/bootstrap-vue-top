@@ -1,4 +1,3 @@
-
 <template>
   <article class="docs-content">
     <h1>Breakpoints</h1>
@@ -6,62 +5,96 @@
 
     <h2 id="core-concepts">Core concepts<a class="anchor-link" href="#core-concepts" aria-label="Link to Core concepts"></a></h2>
     <ul>
-    <li><p><strong>Breakpoints are the building blocks of responsive design.</strong> Use them to control when your layout can be adapted at a particular viewport or device size.</p>
-    </li>
-    <li><p><strong>Use media queries to architect your CSS by breakpoint.</strong> Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use <code>min-width</code> in our media queries.</p>
-    </li>
-    <li><p><strong>Mobile first, responsive design is the goal.</strong> Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</p>
-    </li>
+      <li>
+        <p>
+          <strong>Breakpoints are the building blocks of responsive design.</strong> Use them to control when your layout can be adapted at a particular viewport or device size.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Use media queries to architect your CSS by breakpoint.</strong> Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of
+          browser and operating system parameters. We most commonly use <code>min-width</code> in our media queries.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Mobile first, responsive design is the goal.</strong> Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint,
+          and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.
+        </p>
+      </li>
     </ul>
     <h2 id="available-breakpoints">Available breakpoints<a class="anchor-link" href="#available-breakpoints" aria-label="Link to Available breakpoints"></a></h2>
-    <p>Bootstrap includes six default breakpoints, sometimes referred to as <em>grid tiers</em>, for building responsively. These breakpoints can be customized if you’re using our source Sass files.</p>
-<div class="table-responsive"><table class="table">
-    <thead>
-    <tr>
-    <th>Breakpoint</th>
-    <th>Class infix</th>
-    <th>Dimensions</th>
-    </tr>
-    </thead>
-    <tbody><tr>
-    <td>Extra small</td>
-    <td><em>None</em></td>
-    <td>&lt;576px</td>
-    </tr>
-    <tr>
-    <td>Small</td>
-    <td><code>sm</code></td>
-    <td>&ge;576px</td>
-    </tr>
-    <tr>
-    <td>Medium</td>
-    <td><code>md</code></td>
-    <td>&ge;768px</td>
-    </tr>
-    <tr>
-    <td>Large</td>
-    <td><code>lg</code></td>
-    <td>&ge;992px</td>
-    </tr>
-    <tr>
-    <td>Extra large</td>
-    <td><code>xl</code></td>
-    <td>&ge;1200px</td>
-    </tr>
-    <tr>
-    <td>Extra extra large</td>
-    <td><code>xxl</code></td>
-    <td>&ge;1400px</td>
-    </tr>
-    </tbody></table>
-    </div><p>Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.</p>
-    <p>These breakpoints are customizable via Sass—you’ll find them in a Sass map in our <code>_variables.scss</code> stylesheet.</p>
-    <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><p>For more information and examples on how to modify our Sass maps and variables, please refer to <a href="/docs-bootstrap/5.3/layout/grid#css">the CSS section of the Grid documentation</a>.</p>
+    <p>
+      Bootstrap includes six default breakpoints, sometimes referred to as <em>grid tiers</em>, for building responsively. These breakpoints can be customized if you’re using our
+      source Sass files.
+    </p>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Breakpoint</th>
+            <th>Class infix</th>
+            <th>Dimensions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Extra small</td>
+            <td><em>None</em></td>
+            <td>&lt;576px</td>
+          </tr>
+          <tr>
+            <td>Small</td>
+            <td><code>sm</code></td>
+            <td>&ge;576px</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td><code>md</code></td>
+            <td>&ge;768px</td>
+          </tr>
+          <tr>
+            <td>Large</td>
+            <td><code>lg</code></td>
+            <td>&ge;992px</td>
+          </tr>
+          <tr>
+            <td>Extra large</td>
+            <td><code>xl</code></td>
+            <td>&ge;1200px</td>
+          </tr>
+          <tr>
+            <td>Extra extra large</td>
+            <td><code>xxl</code></td>
+            <td>&ge;1400px</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and
+      viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.
+    </p>
+    <p>
+      These breakpoints are customizable via Sass—you’ll find them in a Sass map in our
+      <code>_variables.scss</code> stylesheet.
+    </p>
+    <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
+    <p>
+      For more information and examples on how to modify our Sass maps and variables, please refer to
+      <a href="/docs-bootstrap/5.3/layout/grid#css">the CSS section of the Grid documentation</a>.
+    </p>
     <h2 id="media-queries">Media queries<a class="anchor-link" href="#media-queries" aria-label="Link to Media queries"></a></h2>
-    <p>Since Bootstrap is developed to be mobile first, we use a handful of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a> to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+    <p>
+      Since Bootstrap is developed to be mobile first, we use a handful of
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a>
+      to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport
+      changes.
+    </p>
     <h3 id="min-width">Min-width<a class="anchor-link" href="#min-width" aria-label="Link to Min-width"></a></h3>
     <p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.</p>
-    <CodeWrapper code="// Source mixins
+    <CodeWrapper
+      code="// Source mixins
 
 // No media query necessary for xs breakpoint as it’s effectively `@media (min-width: 0) { ... }`
 @include media-breakpoint-up(sm) { ... }
@@ -81,9 +114,12 @@
     display: block;
   }
 }
-" lang="scss" />
+"
+      lang="scss"
+    />
     <p>These Sass mixins translate in our compiled CSS using the values declared in our Sass variables. For example:</p>
-    <CodeWrapper code="// X-Small devices (portrait phones, less than 576px)
+    <CodeWrapper
+      code="// X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
@@ -100,10 +136,13 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) { ... }
-" lang="scss" />
+"
+      lang="scss"
+    />
     <h3 id="max-width">Max-width<a class="anchor-link" href="#max-width" aria-label="Link to Max-width"></a></h3>
     <p>We occasionally use media queries that go in the other direction (the given screen size <em>or smaller</em>):</p>
-    <CodeWrapper code="// No media query necessary for xs breakpoint as it’s effectively `@media (max-width: 0) { ... }`
+    <CodeWrapper
+      code="// No media query necessary for xs breakpoint as it’s effectively `@media (max-width: 0) { ... }`
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
 @include media-breakpoint-down(lg) { ... }
@@ -116,9 +155,12 @@
     display: block;
   }
 }
-" lang="scss" />
+"
+      lang="scss"
+    />
     <p>These mixins take those declared breakpoints, subtract <code>.02px</code> from them, and use them as our <code>max-width</code> values. For example:</p>
-    <CodeWrapper code="// `xs` returns only a ruleset and no media query
+    <CodeWrapper
+      code="// `xs` returns only a ruleset and no media query
 // ... { ... }
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
@@ -135,28 +177,43 @@
 
 // `xxl` applies to x-large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) { ... }
-" lang="scss" />
-    <Callout name="info-mediaqueries-breakpoints" type="warning" /><h3 id="single-breakpoint">Single breakpoint<a class="anchor-link" href="#single-breakpoint" aria-label="Link to Single breakpoint"></a></h3>
+"
+      lang="scss"
+    />
+    <Callout name="info-mediaqueries-breakpoints" type="warning" />
+    <h3 id="single-breakpoint">Single breakpoint<a class="anchor-link" href="#single-breakpoint" aria-label="Link to Single breakpoint"></a></h3>
     <p>There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.</p>
-    <CodeWrapper code="@include media-breakpoint-only(xs) { ... }
+    <CodeWrapper
+      code="@include media-breakpoint-only(xs) { ... }
 @include media-breakpoint-only(sm) { ... }
 @include media-breakpoint-only(md) { ... }
 @include media-breakpoint-only(lg) { ... }
 @include media-breakpoint-only(xl) { ... }
 @include media-breakpoint-only(xxl) { ... }
-" lang="scss" />
+"
+      lang="scss"
+    />
     <p>For example the <code>@include media-breakpoint-only(md) { ... }</code> will result in :</p>
-    <CodeWrapper code="@media (min-width: 768px) and (max-width: 991.98px) { ... }
-" lang="scss" />
+    <CodeWrapper
+      code="@media (min-width: 768px) and (max-width: 991.98px) { ... }
+"
+      lang="scss"
+    />
     <h3 id="between-breakpoints">Between breakpoints<a class="anchor-link" href="#between-breakpoints" aria-label="Link to Between breakpoints"></a></h3>
     <p>Similarly, media queries may span multiple breakpoint widths:</p>
-    <CodeWrapper code="@include media-breakpoint-between(md, xl) { ... }
-" lang="scss" />
+    <CodeWrapper
+      code="@include media-breakpoint-between(md, xl) { ... }
+"
+      lang="scss"
+    />
     <p>Which results in:</p>
-    <CodeWrapper code="// Example
+    <CodeWrapper
+      code="// Example
 // Apply styles starting from medium devices and up to extra large devices
 @media (min-width: 768px) and (max-width: 1199.98px) { ... }
-" lang="scss" />
+"
+      lang="scss"
+    />
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">

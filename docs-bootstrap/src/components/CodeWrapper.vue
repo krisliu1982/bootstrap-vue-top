@@ -1,22 +1,21 @@
 <template>
   <div class="docs-code-snippet">
-      <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
-        <small class="font-monospace text-secondary text-uppercase">{{ props.lang }}</small>
-        <div class="ms-auto">
-          <BiCheckLg v-if="isCopy" class="text-success" />
-          <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
-            <BiCopy />
-          </a>
-        </div>
+    <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
+      <small class="font-monospace text-secondary text-uppercase">{{ props.lang }}</small>
+      <div class="ms-auto">
+        <BiCheckLg v-if="isCopy" class="text-success" />
+        <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
+          <BiCopy />
+        </a>
       </div>
-      <Code :code="props.code" :lang="props.lang" />
+    </div>
+    <Code :code="props.code" :lang="props.lang" />
   </div>
-
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import Code from './Code.vue'
+import Code from './Code.vue';
 
 const props = defineProps({
   code: {

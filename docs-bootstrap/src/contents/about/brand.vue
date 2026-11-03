@@ -1,4 +1,3 @@
-
 <template>
   <article class="docs-content">
     <h1>Brand guidelines</h1>
@@ -9,7 +8,8 @@
     <p>When referencing Bootstrap, use our logo mark. Do not modify our logos in any way. Do not use Bootstrap’s branding for your own open or closed source projects.</p>
     <div class="docs-brand-item px-2 py-5 mb-3 border rounded-3">
       <img class="d-block img-fluid mx-auto" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="256" height="204" />
-    </div><p>Our logo mark is also available in black and white. All rules for our primary logo apply to these as well.</p>
+    </div>
+    <p>Our logo mark is also available in black and white. All rules for our primary logo apply to these as well.</p>
     <div class="docs-brand-logos d-sm-flex text-center bg-light rounded-3 overflow-hidden w-100 mb-3">
       <div class="docs-brand-item w-100 px-2 py-5">
         <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-black.svg" alt="Bootstrap" width="128" height="102" loading="lazy" />
@@ -17,7 +17,8 @@
       <div class="docs-brand-item w-100 px-2 py-5 inverse">
         <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-white.svg" alt="Bootstrap" width="128" height="102" loading="lazy" />
       </div>
-    </div><h2 id="name">Name<a class="anchor-link" href="#name" aria-label="Link to Name"></a></h2>
+    </div>
+    <h2 id="name">Name<a class="anchor-link" href="#name" aria-label="Link to Name"></a></h2>
     <p>Bootstrap should always be referred to as just <strong>Bootstrap</strong>. No capital <em>s</em>.</p>
     <div class="docs-brand-logos d-sm-flex text-center border rounded-3 overflow-hidden w-100 mb-3">
       <div class="docs-brand-item w-100 px-2 py-5">
@@ -37,8 +38,7 @@
       <li><a href="#logo">Logo</a></li>
       <li>
         <a href="#name">Name</a>
-        <ul class="list-unstyled mb-0">
-        </ul>
+        <ul class="list-unstyled mb-0"></ul>
       </li>
     </ul>
   </nav>

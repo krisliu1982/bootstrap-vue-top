@@ -1,15 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import NProgress from 'nprogress-es';
 import 'nprogress-es/nprogress.css';
-import data from '@/data/data.js'
+import data from '@/data/data.js';
 
 NProgress.settings.showSpinner = false;
 
 const allpage = data.sidebar.flatMap((group) => {
-  if (!group.pages) return [{
-    groupSlug: group.slug,
-    pageSlug: null
-  }];
+  if (!group.pages)
+    return [
+      {
+        groupSlug: group.slug,
+        pageSlug: null
+      }
+    ];
   return group.pages.flatMap((item) => {
     // Handle direct pages
     if (item.title) {
@@ -18,37 +21,37 @@ const allpage = data.sidebar.flatMap((group) => {
           groupSlug: group.slug,
           pageSlug: item.slug
         }
-      ]
+      ];
     }
-    return []
-  })
-})
+    return [];
+  });
+});
 
-const routes = [{
-  path: '/',
-  redirect: `/${allpage[0].groupSlug}/${allpage[0].pageSlug}`,
-}];
+const routes = [
+  {
+    path: '/',
+    redirect: `/${allpage[0].groupSlug}/${allpage[0].pageSlug}`
+  }
+];
 
 allpage.forEach((page) => {
   if (page.pageSlug) {
     routes.push({
       path: `/${page.groupSlug}/${page.pageSlug}`,
-      component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`),
-    })
+      component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`)
+    });
   } else {
     routes.push({
       path: `/${page.groupSlug}`,
-      component: () => import(`@/contents/${page.groupSlug}.vue`),
-    })
+      component: () => import(`@/contents/${page.groupSlug}.vue`)
+    });
   }
-})
+});
 
 routes.push({
-    path: '/:pathMatch(.*)*',
-    component: () => import('@/404.vue')
-  })
-
-
+  path: '/:pathMatch(.*)*',
+  component: () => import('@/404.vue')
+});
 
 function remToPx(remValue) {
   const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -90,8 +93,8 @@ router.afterEach((to, from) => {
 });
 
 router.onError((error) => {
-  NProgress.done()
-  console.error('路由导航错误:', error)
-})
+  NProgress.done();
+  console.error('路由导航错误:', error);
+});
 
 export default router;

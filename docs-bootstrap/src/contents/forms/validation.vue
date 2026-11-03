@@ -1,28 +1,62 @@
-
 <template>
   <article class="docs-content">
     <h1>Validation</h1>
     <p>Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom styles and JavaScript.</p>
 
     <Callout type="warning">
-    <p>We are aware that currently the client-side custom validation styles and tooltips are not accessible, since they are not exposed to assistive technologies. While we work on a solution, we’d recommend either using the server-side option or the default browser validation method.</p>
-    </Callout><h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
+      <p>
+        We are aware that currently the client-side custom validation styles and tooltips are not accessible, since they are not exposed to assistive technologies. While we work on
+        a solution, we’d recommend either using the server-side option or the default browser validation method.
+      </p>
+    </Callout>
+    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Here’s how form validation works with Bootstrap:</p>
     <ul>
-    <li>HTML form validation is applied via CSS’s two pseudo-classes, <code>:invalid</code> and <code>:valid</code>. It applies to <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code> elements.</li>
-    <li>Bootstrap scopes the <code>:invalid</code> and <code>:valid</code> styles to parent <code>.was-validated</code> class, usually applied to the <code>&lt;form&gt;</code>. Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is attempted).</li>
-    <li>To reset the appearance of the form (for instance, in the case of dynamic form submissions using Ajax), remove the <code>.was-validated</code> class from the <code>&lt;form&gt;</code> again after submission.</li>
-    <li>As a fallback, <code>.is-invalid</code> and <code>.is-valid</code> classes may be used instead of the pseudo-classes for <a href="#server-side">server-side validation</a>. They do not require a <code>.was-validated</code> parent class.</li>
-    <li>Due to constraints in how CSS works, we cannot (at present) apply styles to a <code>&lt;label&gt;</code> that comes before a form control in the DOM without the help of custom JavaScript.</li>
-    <li>All modern browsers support the <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">constraint validation API</a>, a series of JavaScript methods for validating form controls.</li>
-    <li>Feedback messages may utilize the <a href="#browser-defaults">browser defaults</a> (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.</li>
-    <li>You may provide custom validity messages with <code>setCustomValidity</code> in JavaScript.</li>
+      <li>
+        HTML form validation is applied via CSS’s two pseudo-classes, <code>:invalid</code> and <code>:valid</code>. It applies to <code>&lt;input&gt;</code>,
+        <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code> elements.
+      </li>
+      <li>
+        Bootstrap scopes the <code>:invalid</code> and <code>:valid</code> styles to parent <code>.was-validated</code> class, usually applied to the <code>&lt;form&gt;</code>.
+        Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is
+        attempted).
+      </li>
+      <li>
+        To reset the appearance of the form (for instance, in the case of dynamic form submissions using Ajax), remove the <code>.was-validated</code> class from the
+        <code>&lt;form&gt;</code> again after submission.
+      </li>
+      <li>
+        As a fallback, <code>.is-invalid</code> and <code>.is-valid</code> classes may be used instead of the pseudo-classes for <a href="#server-side">server-side validation</a>.
+        They do not require a <code>.was-validated</code> parent class.
+      </li>
+      <li>
+        Due to constraints in how CSS works, we cannot (at present) apply styles to a <code>&lt;label&gt;</code> that comes before a form control in the DOM without the help of
+        custom JavaScript.
+      </li>
+      <li>
+        All modern browsers support the
+        <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">constraint validation API</a>, a series of JavaScript
+        methods for validating form controls.
+      </li>
+      <li>
+        Feedback messages may utilize the <a href="#browser-defaults">browser defaults</a> (different for each browser, and unstylable via CSS) or our custom feedback styles with
+        additional HTML and CSS.
+      </li>
+      <li>You may provide custom validity messages with <code>setCustomValidity</code> in JavaScript.</li>
     </ul>
     <p>With that in mind, consider the following demos for our custom form validation styles, optional server-side classes, and browser defaults.</p>
     <h2 id="custom-styles">Custom styles<a class="anchor-link" href="#custom-styles" aria-label="Link to Custom styles"></a></h2>
-    <p>For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the <code>:invalid</code> and <code>:valid</code> styles applied to your form controls.</p>
-    <p>Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.form-select</code>, and not <code>.form-control</code>.</p>
-<Example code='<form class="row g-3 needs-validation" novalidate>
+    <p>
+      For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser
+      default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button
+      and relay feedback to you. When attempting to submit, you’ll see the <code>:invalid</code> and <code>:valid</code> styles applied to your form controls.
+    </p>
+    <p>
+      Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are
+      only available with <code>.form-select</code>, and not <code>.form-control</code>.
+    </p>
+    <Example
+      code='<form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4">
     <label for="validationCustom01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
@@ -85,8 +119,10 @@
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
-</form>' />
-<CodeWrapper code="// Example starter JavaScript for disabling form submissions if there are invalid fields
+</form>'
+    />
+    <CodeWrapper
+      code="// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
 'use strict'
 
@@ -104,11 +140,17 @@ if (!form.checkValidity()) {
 form.classList.add('was-validated')
 }, false)
 })
-})()" lang="javascript" />
-<h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
-<p>Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p>
-<p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
-<Example code='<form class="row g-3">
+})()"
+      lang="javascript"
+    />
+    <h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
+    <p>
+      Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form
+      below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+    </p>
+    <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+    <Example
+      code='<form class="row g-3">
   <div class="col-md-4">
     <label for="validationDefault01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
@@ -150,11 +192,20 @@ form.classList.add('was-validated')
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
-</form>' /><h2 id="server-side">Server-side<a class="anchor-link" href="#server-side" aria-label="Link to Server-side"></a></h2>
-<p>We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with <code>.is-invalid</code> and <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also supported with these classes.</p>
-<p>For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using <code>aria-describedby</code> (noting that this attribute allows more than one <code>id</code> to be referenced, in case the field already points to additional form text).</p>
-<p>To fix <a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radius</a>, input groups require an additional <code>.has-validation</code> class.</p>
-<Example code='<form class="row g-3">
+</form>'
+    />
+    <h2 id="server-side">Server-side<a class="anchor-link" href="#server-side" aria-label="Link to Server-side"></a></h2>
+    <p>
+      We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with <code>.is-invalid</code> and
+      <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also supported with these classes.
+    </p>
+    <p>
+      For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using <code>aria-describedby</code> (noting that this attribute
+      allows more than one <code>id</code> to be referenced, in case the field already points to additional form text).
+    </p>
+    <p>To fix <a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radius</a>, input groups require an additional <code>.has-validation</code> class.</p>
+    <Example
+      code='<form class="row g-3">
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">First name</label>
     <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
@@ -217,14 +268,17 @@ form.classList.add('was-validated')
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
-</form>' /><h2 id="supported-elements">Supported elements<a class="anchor-link" href="#supported-elements" aria-label="Link to Supported elements"></a></h2>
-<p>Validation styles are available for the following form controls and components:</p>
-<ul>
-<li><code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s with <code>.form-control</code> (including up to one <code>.form-control</code> in input groups)</li>
-<li><code>&lt;select&gt;</code>s with <code>.form-select</code></li>
-<li><code>.form-check</code>s</li>
-</ul>
-<Example code='<form class="was-validated">
+</form>'
+    />
+    <h2 id="supported-elements">Supported elements<a class="anchor-link" href="#supported-elements" aria-label="Link to Supported elements"></a></h2>
+    <p>Validation styles are available for the following form controls and components:</p>
+    <ul>
+      <li><code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s with <code>.form-control</code> (including up to one <code>.form-control</code> in input groups)</li>
+      <li><code>&lt;select&gt;</code>s with <code>.form-select</code></li>
+      <li><code>.form-check</code>s</li>
+    </ul>
+    <Example
+      code='<form class="was-validated">
   <div class="mb-3">
     <label for="validationTextarea" class="form-label">Textarea</label>
     <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
@@ -267,9 +321,16 @@ form.classList.add('was-validated')
   <div class="mb-3">
     <button class="btn btn-primary" type="submit" disabled>Submit form</button>
   </div>
-</form>' /><h2 id="tooltips">Tooltips<a class="anchor-link" href="#tooltips" aria-label="Link to Tooltips"></a></h2>
-<p>If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.</p>
-<Example code='<form class="row g-3 needs-validation" novalidate>
+</form>'
+    />
+    <h2 id="tooltips">Tooltips<a class="anchor-link" href="#tooltips" aria-label="Link to Tooltips"></a></h2>
+    <p>
+      If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation
+      feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this
+      already, but your project may require an alternative setup.
+    </p>
+    <Example
+      code='<form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4 position-relative">
     <label for="validationTooltip01" class="form-label">First name</label>
     <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
@@ -321,20 +382,42 @@ form.classList.add('was-validated')
   <div class="col-12">
     <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
-</form>' /><h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+</form>'
+    />
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
-    <AddedIn version="5.3.0"/><p>As part of Bootstrap’s evolving CSS variables approach, forms now use local CSS variables for validation for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-    <ScssDocs name="root-form-validation-variables" file="scss/_root.scss" /><p>These variables are also color mode adaptive, meaning they change color while in dark mode.</p>
+    <AddedIn version="5.3.0" />
+    <p>
+      As part of Bootstrap’s evolving CSS variables approach, forms now use local CSS variables for validation for enhanced real-time customization. Values for the CSS variables
+      are set via Sass, so Sass customization is still supported, too.
+    </p>
+    <ScssDocs name="root-form-validation-variables" file="scss/_root.scss" />
+    <p>These variables are also color mode adaptive, meaning they change color while in dark mode.</p>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <ScssDocs name="form-feedback-variables" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors-dark" file="scss/_variables-dark.scss" /><h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
+    <ScssDocs name="form-feedback-variables" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors" file="scss/_variables.scss" /><ScssDocs
+      name="form-validation-colors-dark"
+      file="scss/_variables-dark.scss"
+    />
+    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>Two mixins are combined, through our <a href="#sass-loops">loop</a>, to generate our form validation feedback styles.</p>
-    <ScssDocs name="form-validation-mixins" file="scss/mixins/_forms.scss" /><h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
+    <ScssDocs name="form-validation-mixins" file="scss/mixins/_forms.scss" />
+    <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
     <p>This is the validation Sass map from <code>_variables.scss</code>. Override or extend this to generate different or additional states.</p>
-    <ScssDocs name="form-validation-states" file="scss/_variables.scss" /><p>Maps of <code>$form-validation-states</code> can contain three optional parameters to override tooltips and focus styles.</p>
+    <ScssDocs name="form-validation-states" file="scss/_variables.scss" />
+    <p>Maps of <code>$form-validation-states</code> can contain three optional parameters to override tooltips and focus styles.</p>
     <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p>Used to iterate over <code>$form-validation-states</code> map values to generate our validation styles. Any modifications to the above Sass map will be reflected in your compiled CSS via this loop.</p>
-    <ScssDocs name="form-validation-states-loop" file="scss/forms/_validation.scss" /><h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>
-    <p>Validation states can be customized via Sass with the <code>$form-validation-states</code> map. Located in our <code>_variables.scss</code> file, this Sass map is how we generate the default <code>valid</code>/<code>invalid</code> validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those using custom styles can easily add more complex form feedback.</p>
+    <p>
+      Used to iterate over <code>$form-validation-states</code> map values to generate our validation styles. Any modifications to the above Sass map will be reflected in your
+      compiled CSS via this loop.
+    </p>
+    <ScssDocs name="form-validation-states-loop" file="scss/forms/_validation.scss" />
+    <h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>
+    <p>
+      Validation states can be customized via Sass with the <code>$form-validation-states</code> map. Located in our <code>_variables.scss</code> file, this Sass map is how we
+      generate the default <code>valid</code>/<code>invalid</code>
+      validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those
+      using custom styles can easily add more complex form feedback.
+    </p>
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
