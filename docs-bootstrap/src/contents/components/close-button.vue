@@ -29,9 +29,9 @@
     <Example
       class="bg-dark"
       code='<div data-bs-theme="dark">
-    <button type="button" class="btn-close" aria-label="Close"></button>
-    <button type="button" class="btn-close" disabled aria-label="Close"></button>
-  </div>'
+  <button type="button" class="btn-close" aria-label="Close"></button>
+  <button type="button" class="btn-close" disabled aria-label="Close"></button>
+</div>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
