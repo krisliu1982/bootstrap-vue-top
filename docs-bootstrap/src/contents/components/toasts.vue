@@ -15,7 +15,8 @@
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="basic">Basic<a class="anchor-link" href="#basic" aria-label="Link to Basic"></a></h3>
     <p>To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use
-      <code>display: flex</code>, allowing easy alignment of content thanks to our margin and flexbox utilities.</p>
+      <code>display: flex</code>, allowing easy alignment of content thanks to our margin and flexbox utilities.
+    </p>
     <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single
       element to contain your “toasted” content and strongly encourage a dismiss button.</p>
     <Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -34,7 +35,8 @@
       <p>Previously, our scripts dynamically added the <code>.hide</code> class to completely hide a toast (with
         <code>display:none</code>, rather than just with <code>opacity:0</code>). This is now not necessary anymore.
         However, for backwards compatibility, our script will continue to toggle the class (even though there is no
-        practical need for it) until the next major version.</p>
+        practical need for it) until the next major version.
+      </p>
     </Callout>
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a>
     </h3>
@@ -61,7 +63,7 @@
     <h3 id="translucent">Translucent<a class="anchor-link" href="#translucent" aria-label="Link to Translucent"></a>
     </h3>
     <p>Toasts are slightly translucent to blend in with what’s below them.</p>
-<Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <Example code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     <span title="图片占位" class="text-primary me-2">✓</span>
     <strong class="me-auto">Bootstrap</strong>
@@ -74,7 +76,7 @@
 </div>' class="bg-dark" addStackblitzJs />
     <h3 id="stacking">Stacking<a class="anchor-link" href="#stacking" aria-label="Link to Stacking"></a></h3>
     <p>You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.</p>
-<Example code='<div class="toast-container position-static">
+    <Example code='<div class="toast-container position-static">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       <span title="图片占位" class="text-primary me-2">✓</span>
@@ -131,7 +133,8 @@
         href="/docs-bootstrap/5.3/utilities/colors">color</a> and <a
         href="/docs-bootstrap/5.3/utilities/background">background</a> utilities. Here we’ve added
       <code>.text-bg-primary</code> to the <code>.toast</code>, and then added <code>.btn-close-white</code> to our
-      close button. For a crisp edge, we remove the default border with <code>.border-0</code>.</p>
+      close button. For a crisp edge, we remove the default border with <code>.border-0</code>.
+    </p>
     <Example code='<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
@@ -143,7 +146,8 @@
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top
       middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the
-      <code>.toast</code>.</p>
+      <code>.toast</code>.
+    </p>
     <Example addStackblitzJs code='<form>
   <div class="mb-3">
     <label for="selectToastPlacement">Toast placement</label>
@@ -208,7 +212,7 @@
       </div>
     </div>
   </div>
-</div>' addStackblitzJs/>
+</div>' addStackblitzJs />
     <p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
     <Example class="docs-example-toasts d-flex" code='<!-- Flexbox container for aligning the toasts -->
 <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
@@ -225,7 +229,7 @@
       Hello, world! This is a toast message.
     </div>
   </div>
-</div>' addStackblitzJs/>
+</div>' addStackblitzJs />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility"
         aria-label="Link to Accessibility"></a></h2>
     <p>Toasts are intended to be small interruptions to your visitors or users, so to help those with screen readers and
@@ -237,7 +241,8 @@
       unit, rather than just announcing what was changed (which could lead to problems if you only update part of the
       toast’s content, or if displaying the same toast content at a later point in time). If the information needed is
       important for the process, e.g. for a list of errors in a form, then use the <a
-        href="/docs-bootstrap/5.3/components/alerts">alert component</a> instead of toast.</p>
+        href="/docs-bootstrap/5.3/components/alerts">alert component</a> instead of toast.
+    </p>
     <p>Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If
       you dynamically generate both at the same time and inject them into the page, they will generally not be announced
       by assistive technologies.</p>
@@ -260,7 +265,7 @@
   <div class="toast-body">
     Hello, world! This is a toast message.
   </div>
-</div>' addStackblitzJs/>
+</div>' addStackblitzJs />
     <p>While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in
       your toast, you should avoid doing this for autohiding toasts. Even if you give the toast a long <a
         href="#options"><code>delay</code> timeout</a>, keyboard and assistive technology users may find it difficult to
@@ -345,7 +350,8 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
               create a new one, in case it wasn’t initialized.
               <br /><code>const myToastEl = document.getElementById(&#39;myToastEl&#39;)</code>
               <code>const myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)</code> Returns a Bootstrap toast
-              instance.</td>
+              instance.
+            </td>
           </tr>
           <tr>
             <td><code>hide</code></td>
@@ -439,17 +445,18 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 </template>
 
 <script setup>
-import {onMounted} from "vue";
+import { onMounted, onBeforeUnmount } from "vue";
 import * as bootstrap from 'bootstrap'
-onMounted(() => {
-const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])')
-const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, {
-  autohide: false
-}))
 
-for (const toast of toastList) {
-  toast.show()
-}
+onMounted(() => {
+  const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])')
+  const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, {
+    autohide: false
+  }))
+
+  for (const toast of toastList) {
+    toast.show()
+  }
 
   const toastTrigger = document.getElementById('liveToastBtn')
   const toastLiveExample = document.getElementById('liveToast')
@@ -460,7 +467,7 @@ for (const toast of toastList) {
     })
   }
 
-    const toastPlacement = document.getElementById('toastPlacement')
+  const toastPlacement = document.getElementById('toastPlacement')
   if (toastPlacement) {
     document.getElementById('selectToastPlacement').addEventListener('change', function () {
       if (!toastPlacement.dataset.originalClass) {
@@ -470,5 +477,20 @@ for (const toast of toastList) {
       toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`
     })
   }
+})
+
+onBeforeUnmount(() => {
+  const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])')
+  const toastList = [...toastElList].map(toastEl => new bootstrap.Toast.getInstance(toastEl))
+  for (const toast of toastList) {
+    toast.dispose()
+  }
+
+  const toastLiveExample = document.getElementById('liveToast')
+  const liveToastInstance = bootstrap.Toast.getInstance(toastLiveExample)
+  if (liveToastInstance) {
+    liveToastInstance.dispose()
+  }
+
 })
 </script>
