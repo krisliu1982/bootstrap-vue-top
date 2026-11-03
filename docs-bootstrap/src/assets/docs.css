@@ -733,6 +733,10 @@
       margin-top: 2rem
   }
 
+  .docs-content>ul li, .docs-content>ol li {
+    margin-bottom: .25rem;
+}
+
 
   .table-options td:nth-child(2) {
       min-width: 160px
