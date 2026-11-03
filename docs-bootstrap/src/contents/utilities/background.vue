@@ -21,14 +21,14 @@
             (
               themeColor
             ) => `<div class=&quot;p-3 mb-2 bg-${themeColor.name} ${themeColor.contrast_color ? `text-${themeColor.contrast_color}` : `text-white`}&quot;>.bg-${themeColor.name}</div>
-    <div class=&quot;p-3 mb-2 bg-${themeColor.name}-subtle text-${themeColor.name}-emphasis&quot;>.bg-${themeColor.name}-subtle</div>`
+<div class=&quot;p-3 mb-2 bg-${themeColor.name}-subtle text-${themeColor.name}-emphasis&quot;>.bg-${themeColor.name}-subtle</div>`
           ),
           `<div class=&quot;p-3 mb-2 bg-body-secondary&quot;>.bg-body-secondary</div>
-    <div class=&quot;p-3 mb-2 bg-body-tertiary&quot;>.bg-body-tertiary</div>
-    <div class=&quot;p-3 mb-2 bg-body text-body&quot;>.bg-body</div>
-    <div class=&quot;p-3 mb-2 bg-black text-white&quot;>.bg-black</div>
-    <div class=&quot;p-3 mb-2 bg-white text-dark&quot;>.bg-white</div>
-    <div class=&quot;p-3 mb-2 bg-transparent text-body&quot;>.bg-transparent</div>`
+<div class=&quot;p-3 mb-2 bg-body-tertiary&quot;>.bg-body-tertiary</div>
+<div class=&quot;p-3 mb-2 bg-body text-body&quot;>.bg-body</div>
+<div class=&quot;p-3 mb-2 bg-black text-white&quot;>.bg-black</div>
+<div class=&quot;p-3 mb-2 bg-white text-dark&quot;>.bg-white</div>
+<div class=&quot;p-3 mb-2 bg-transparent text-body&quot;>.bg-transparent</div>`
         ].join('\n')
       "
     />
@@ -72,15 +72,15 @@
     <p>To change that opacity, override <code>--bs-bg-opacity</code> via custom styles or inline styles.</p>
     <Example
       code='<div class="bg-success p-2 text-white">This is default success background</div>
-    <div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>'
+<div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>'
     />
     <p>Or, choose from any of the <code>.bg-opacity</code> utilities:</p>
     <Example
       code='<div class="bg-success p-2 text-white">This is default success background</div>
-    <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
-    <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
-    <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
-    <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>'
+<div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+<div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+<div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+<div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>

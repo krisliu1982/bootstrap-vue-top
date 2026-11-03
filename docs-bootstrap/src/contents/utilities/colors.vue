@@ -19,18 +19,17 @@
         [
           ...data['theme-colors'].map(
             (themeColor) => `<p class=&quot;text-${themeColor.name}${themeColor.contrast_color ? ` bg-${themeColor.contrast_color}` : ``}&quot;>.text-${themeColor.name}</p>
-    <p class=&quot;text-${themeColor.name}-emphasis&quot;>.text-${themeColor.name}-emphasis</p>`
+<p class=&quot;text-${themeColor.name}-emphasis&quot;>.text-${themeColor.name}-emphasis</p>`
           ),
-          `
-    <p class=&quot;text-body&quot;>.text-body</p>
-    <p class=&quot;text-body-emphasis&quot;>.text-body-emphasis</p>
-    <p class=&quot;text-body-secondary&quot;>.text-body-secondary</p>
-    <p class=&quot;text-body-tertiary&quot;>.text-body-tertiary</p>
+          `<p class=&quot;text-body&quot;>.text-body</p>
+<p class=&quot;text-body-emphasis&quot;>.text-body-emphasis</p>
+<p class=&quot;text-body-secondary&quot;>.text-body-secondary</p>
+<p class=&quot;text-body-tertiary&quot;>.text-body-tertiary</p>
 
-    <p class=&quot;text-black bg-white&quot;>.text-black</p>
-    <p class=&quot;text-white bg-dark&quot;>.text-white</p>
-    <p class=&quot;text-black-50 bg-white&quot;>.text-black-50</p>
-    <p class=&quot;text-white-50 bg-dark&quot;>.text-white-50</p>`
+<p class=&quot;text-black bg-white&quot;>.text-black</p>
+<p class=&quot;text-white bg-dark&quot;>.text-white</p>
+<p class=&quot;text-black-50 bg-white&quot;>.text-black-50</p>
+<p class=&quot;text-white-50 bg-dark&quot;>.text-white-50</p>`
         ].join('\n')
       "
     /><Callout type="warning">
@@ -70,14 +69,14 @@
     <p>To change that opacity, override <code>--bs-text-opacity</code> via custom styles or inline styles.</p>
     <Example
       code='<div class="text-primary">This is default primary text</div>
-    <div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>'
+<div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>'
     />
     <p>Or, choose from any of the <code>.text-opacity</code> utilities:</p>
     <Example
       code='<div class="text-primary">This is default primary text</div>
-    <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
-    <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
-    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>'
+<div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+<div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+<div class="text-primary text-opacity-25">This is 25% opacity primary text</div>'
     />
     <h2 id="specificity">Specificity<a class="anchor-link" href="#specificity" aria-label="Link to Specificity"></a></h2>
     <p>

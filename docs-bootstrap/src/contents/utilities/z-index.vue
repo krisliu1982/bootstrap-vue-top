@@ -16,11 +16,11 @@
     ><Example
       class="docs-example-zindex-levels position-relative"
       code='<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
-    <div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
-    <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
-    <div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
-    <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>'
-    />
+<div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
+<div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
+<div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
+<div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>'
+/>
     <h2 id="overlays">Overlays<a class="anchor-link" href="#overlays" aria-label="Link to Overlays"></a></h2>
     <p>
       Bootstrap overlay components—dropdown, modal, offcanvas, popover, toast, and tooltip—all have their own

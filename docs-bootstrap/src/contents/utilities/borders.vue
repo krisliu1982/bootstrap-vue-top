@@ -9,21 +9,21 @@
     <p>Add borders to custom elements:</p>
     <Example
       class="docs-example-border-utils"
-      code='<span class="border"></span>
-    <span class="border-top"></span>
-    <span class="border-end"></span>
-    <span class="border-bottom"></span>
-    <span class="border-start"></span>'
+  code='<span class="border"></span>
+<span class="border-top"></span>
+<span class="border-end"></span>
+<span class="border-bottom"></span>
+<span class="border-start"></span>'
     />
     <h3 id="subtractive">Subtractive<a class="anchor-link" href="#subtractive" aria-label="Link to Subtractive"></a></h3>
     <p>Or remove borders:</p>
     <Example
       class="docs-example-border-utils"
       code='<span class="border border-0"></span>
-    <span class="border border-top-0"></span>
-    <span class="border border-end-0"></span>
-    <span class="border border-bottom-0"></span>
-    <span class="border border-start-0"></span>'
+<span class="border border-top-0"></span>
+<span class="border border-end-0"></span>
+<span class="border border-bottom-0"></span>
+<span class="border border-start-0"></span>'
     />
     <h2 id="color">Color<a class="anchor-link" href="#color" aria-label="Link to Color"></a></h2>
     <Callout>
@@ -39,27 +39,27 @@
         [
           ...data['theme-colors'].map(
             (themeColor) => `<span class=&quot;border border-${themeColor.name}&quot;></span>
-    <span class=&quot;border border-${themeColor.name}-subtle&quot;></span>`
+<span class=&quot;border border-${themeColor.name}-subtle&quot;></span>`
           ),
           `<span class=&quot;border border-black&quot;></span>
-    <span class=&quot;border border-white&quot;></span>`
+<span class=&quot;border border-white&quot;></span>`
         ].join('\n')
       "
     />
     <p>Or modify the default <code>border-color</code> of a component:</p>
     <Example
       code='<div class="mb-4">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
 
-      <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
-        Dangerous heading
-      </div>
+<div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+  Dangerous heading
+</div>
 
-      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
-        Changing border color and width
-      </div>'
+<div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+  Changing border color and width
+</div>'
     />
     <h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
     <AddedIn version="5.2.0" />
@@ -92,53 +92,60 @@
     <p>Or, choose from any of the <code>.border-opacity</code> utilities:</p>
     <Example
       code='<div class="border border-success p-2 mb-2">This is default success border</div>
-    <div class="border border-success p-2 mb-2 border-opacity-75">This is 75% opacity success border</div>
-    <div class="border border-success p-2 mb-2 border-opacity-50">This is 50% opacity success border</div>
-    <div class="border border-success p-2 mb-2 border-opacity-25">This is 25% opacity success border</div>
-    <div class="border border-success p-2 border-opacity-10">This is 10% opacity success border</div>'
+<div class="border border-success p-2 mb-2 border-opacity-75">This is 75% opacity success border</div>
+<div class="border border-success p-2 mb-2 border-opacity-50">This is 50% opacity success border</div>
+<div class="border border-success p-2 mb-2 border-opacity-25">This is 25% opacity success border</div>
+<div class="border border-success p-2 border-opacity-10">This is 10% opacity success border</div>'
     />
     <h2 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h2>
     <Example
       class="docs-example-border-utils"
       code='<span class="border border-1"></span>
-    <span class="border border-2"></span>
-    <span class="border border-3"></span>
-    <span class="border border-4"></span>
-    <span class="border border-5"></span>'
+<span class="border border-2"></span>
+<span class="border border-3"></span>
+<span class="border border-4"></span>
+<span class="border border-5"></span>'
     />
     <h2 id="radius">Radius<a class="anchor-link" href="#radius" aria-label="Link to Radius"></a></h2>
     <p>Add classes to an element to easily round its corners.</p>
-    <Example
-      class="docs-example-rounded-utils"
-      code='<Placeholder width="75" height="75" class="rounded" title="Example rounded image" />
+    <ExampleCustom  class="docs-example-rounded-utils" code='<img src="..." class="rounded" alt="...">
+<img src="..." class="rounded-top" alt="...">
+<img src="..." class="rounded-end" alt="...">
+<img src="..." class="rounded-bottom" alt="...">
+<img src="..." class="rounded-start" alt="...">'><Placeholder width="75" height="75" class="rounded" title="Example rounded image" />
     <Placeholder width="75" height="75" class="rounded-top" title="Example top rounded image" />
     <Placeholder width="75" height="75" class="rounded-end" title="Example right rounded image" />
     <Placeholder width="75" height="75" class="rounded-bottom" title="Example bottom rounded image" />
-    <Placeholder width="75" height="75" class="rounded-start" title="Example left rounded image" />'
-    />
+    <Placeholder width="75" height="75" class="rounded-start" title="Example left rounded image" /></ExampleCustom>
     <h3 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h3>
     <p>
       Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>5</code> including <code>circle</code> and <code>pill</code>, and can
       be configured by modifying the utilities API.
     </p>
-    <Example
-      class="docs-example-rounded-utils"
-      code='<Placeholder width="75" height="75" class="rounded-0" title="Example non-rounded image" />
+    <ExampleCustom  class="docs-example-rounded-utils" code='<img src="..." class="rounded-0" alt="...">
+<img src="..." class="rounded-1" alt="...">
+<img src="..." class="rounded-2" alt="...">
+<img src="..." class="rounded-3" alt="...">
+<img src="..." class="rounded-4" alt="...">
+<img src="..." class="rounded-5" alt="...">
+<img src="..." class="rounded-circle" alt="...">
+<img src="..." class="rounded-pill" alt="...">'><Placeholder width="75" height="75" class="rounded-0" title="Example non-rounded image" />
     <Placeholder width="75" height="75" class="rounded-1" title="Example small rounded image" />
     <Placeholder width="75" height="75" class="rounded-2" title="Example default rounded image" />
     <Placeholder width="75" height="75" class="rounded-3" title="Example large rounded image" />
     <Placeholder width="75" height="75" class="rounded-4" title="Example larger rounded image" />
     <Placeholder width="75" height="75" class="rounded-5" title="Example extra large rounded image" />
     <Placeholder width="75" height="75" class="rounded-circle" title="Completely round image" />
-    <Placeholder width="150" height="75" class="rounded-pill" title="Rounded pill image" />'
-    /><Example
-      class="docs-example-rounded-utils"
-      code='<Placeholder width="75" height="75" class="rounded-bottom-1" title="Example small rounded image" />
+    <Placeholder width="150" height="75" class="rounded-pill" title="Rounded pill image" /></ExampleCustom>
+    <ExampleCustom class="docs-example-rounded-utils" code='<img src="..." class="rounded-bottom-1" alt="...">
+<img src="..." class="rounded-start-2" alt="...">
+<img src="..." class="rounded-end-circle" alt="...">
+<img src="..." class="rounded-start-pill" alt="...">
+<img src="..." class="rounded-5 rounded-top-0" alt="...">'><Placeholder width="75" height="75" class="rounded-bottom-1" title="Example small rounded image" />
     <Placeholder width="75" height="75" class="rounded-start-2" title="Example default left rounded image" />
     <Placeholder width="75" height="75" class="rounded-end-circle" title="Example right completely round image" />
     <Placeholder width="75" height="75" class="rounded-start-pill" title="Example left rounded pill image" />
-    <Placeholder width="75" height="75" class="rounded-5 rounded-top-0" title="Example extra large bottom rounded image" />'
-    />
+    <Placeholder width="75" height="75" class="rounded-5 rounded-top-0" title="Example extra large bottom rounded image" /></ExampleCustom>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><ScssDocs name="root-border-var" file="scss/_root.scss" />

@@ -12,10 +12,10 @@
     <Example
       class="overflow-hidden"
       code='<div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
-    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
-    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
-    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>'
-    />
+<div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>'
+/>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="box-shadow-variables" file="scss/_variables.scss" />

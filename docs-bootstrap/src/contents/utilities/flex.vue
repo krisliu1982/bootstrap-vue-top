@@ -11,7 +11,8 @@
       Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able
       to be modified further with additional flex properties.
     </p>
-    <Example class="docs-example-flex" code='<div class="d-flex p-2">I&#39;m a flexbox container!</div>' /><Example
+    <Example class="docs-example-flex" code='<div class="d-flex p-2">I&#39;m a flexbox container!</div>' />
+    <Example
       class="docs-example-flex"
       code='<div class="d-inline-flex p-2">I&#39;m an inline flexbox container!</div>'
     />
@@ -34,33 +35,33 @@
     <p>
       Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex flex-row mb-3">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>
-      <div class="d-flex flex-row-reverse">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>'
-    />
-    <p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code> to start the vertical direction from the opposite side.</p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex flex-column mb-3">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>
-      <div class="d-flex flex-column-reverse">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>'
-    />
+<Example
+class="docs-example-flex"
+code='<div class="d-flex flex-row mb-3">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex flex-row-reverse">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>'
+/>
+<p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code> to start the vertical direction from the opposite side.</p>
+<Example
+class="docs-example-flex"
+code='<div class="d-flex flex-column mb-3">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex flex-column-reverse">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>'
+/>
     <p>Responsive variations also exist for <code>flex-direction</code>.</p>
     <ul>
       <template v-for="breakpoint in data['breakpoints']">
@@ -274,14 +275,14 @@
       Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass
       their border-boxes) while taking up all available horizontal space.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex">
-        <div class="p-2 flex-fill">Flex item with a lot of content</div>
-        <div class="p-2 flex-fill">Flex item</div>
-        <div class="p-2 flex-fill">Flex item</div>
-      </div>'
-    />
+<Example
+class="docs-example-flex"
+code='<div class="d-flex">
+  <div class="p-2 flex-fill">Flex item with a lot of content</div>
+  <div class="p-2 flex-fill">Flex item</div>
+  <div class="p-2 flex-fill">Flex item</div>
+</div>'
+/>
     <p>Responsive variations also exist for <code>flex-fill</code>.</p>
     <ul>
       <li v-for="breakpoint in data['breakpoints']">
@@ -293,25 +294,25 @@
       Use <code>.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all
       available space it can, while allowing the remaining two flex items their necessary space.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex">
-        <div class="p-2 flex-grow-1">Flex item</div>
-        <div class="p-2">Flex item</div>
-        <div class="p-2">Third flex item</div>
-      </div>'
-    />
+<Example
+class="docs-example-flex"
+code='<div class="d-flex">
+  <div class="p-2 flex-grow-1">Flex item</div>
+  <div class="p-2">Flex item</div>
+  <div class="p-2">Third flex item</div>
+</div>'
+/>
     <p>
       Use <code>.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with
       <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with <code>.w-100</code>.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex">
-        <div class="p-2 w-100">Flex item</div>
-        <div class="p-2 flex-shrink-1">Flex item</div>
-      </div>'
-    />
+<Example
+class="docs-example-flex"
+code='<div class="d-flex">
+  <div class="p-2 w-100">Flex item</div>
+  <div class="p-2 flex-shrink-1">Flex item</div>
+</div>'
+/>
     <p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
     <ul>
       <template v-for="breakpoint in data['breakpoints']">
@@ -353,20 +354,20 @@
       Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column</code>, and
       <code>margin-top: auto</code> or <code>margin-bottom: auto</code>.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
-        <div class="mb-auto p-2">Flex item</div>
-        <div class="p-2">Flex item</div>
-        <div class="p-2">Flex item</div>
-      </div>
+<Example
+class="docs-example-flex"
+code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
+  <div class="mb-auto p-2">Flex item</div>
+  <div class="p-2">Flex item</div>
+  <div class="p-2">Flex item</div>
+</div>
 
-      <div class="d-flex align-items-end flex-column mb-3" style="height: 200px;">
-        <div class="p-2">Flex item</div>
-        <div class="p-2">Flex item</div>
-        <div class="mt-auto p-2">Flex item</div>
-      </div>'
-    />
+<div class="d-flex align-items-end flex-column mb-3" style="height: 200px;">
+  <div class="p-2">Flex item</div>
+  <div class="p-2">Flex item</div>
+  <div class="mt-auto p-2">Flex item</div>
+</div>'
+/>
     <h2 id="wrap">Wrap<a class="anchor-link" href="#wrap" aria-label="Link to Wrap"></a></h2>
     <p>
       Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with
@@ -454,14 +455,14 @@
       Change the <em>visual</em> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a
       reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.
     </p>
-    <Example
-      class="docs-example-flex"
-      code='<div class="d-flex flex-nowrap">
-        <div class="order-3 p-2">First flex item</div>
-        <div class="order-2 p-2">Second flex item</div>
-        <div class="order-1 p-2">Third flex item</div>
-      </div>'
-    />
+<Example
+class="docs-example-flex"
+code='<div class="d-flex flex-nowrap">
+  <div class="order-3 p-2">First flex item</div>
+  <div class="order-2 p-2">Second flex item</div>
+  <div class="order-1 p-2">Third flex item</div>
+</div>'
+/>
     <p>Responsive variations also exist for <code>order</code>.</p>
     <ul>
       <li v-for="breakpoint in data['breakpoints']">
@@ -638,27 +639,37 @@
       <a href="https://getbootstrap.com/docs/4.6/components/media-object/">media object component</a> from Bootstrap 4? Recreate it in no time with a few flex utilities that allow
       even more flexibility and customization than before.
     </p>
-    <Example
-      code='<div class="d-flex">
-        <div class="flex-shrink-0">
-          <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
-        </div>
-        <div class="flex-grow-1 ms-3">
-          This is some content from a media component. You can replace this with any content and adjust it as needed.
-        </div>
-      </div>'
-    />
+<ExampleCustom code='<div class="d-flex">
+  <div class="flex-shrink-0">
+    <img src="..." alt="...">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>'><div class="d-flex">
+  <div class="flex-shrink-0">
+    <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div></ExampleCustom>
     <p>And say you want to vertically center the content next to the image:</p>
-    <Example
-      code='<div class="d-flex align-items-center">
-        <div class="flex-shrink-0">
-          <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
-        </div>
-        <div class="flex-grow-1 ms-3">
-          This is some content from a media component. You can replace this with any content and adjust it as needed.
-        </div>
-      </div>'
-    />
+<ExampleCustom code='<div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <img src="..." alt="...">
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>'><div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <Placeholder width="100" height="100" color="#999" background="#e5e5e5" text="Image" />
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div></ExampleCustom>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>

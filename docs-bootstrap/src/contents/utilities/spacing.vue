@@ -98,8 +98,8 @@
     <Example
       :showMarkup="false"
       code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--docs-violet-rgb),.15); border: rgba(var(--docs-violet-rgb),.3) solid 1px;">
-        Centered element
-      </div>'
+  Centered element
+</div>'
     />
     <CodeWrapper
       code='&lt;div class="mx-auto p-2" style="width: 200px;"&gt;
@@ -132,12 +132,12 @@
     <Example
       class="docs-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
-        <div class="p-2">Grid item 1</div>
-        <div class="p-2">Grid item 2</div>
-        <div class="p-2">Grid item 3</div>
-        <div class="p-2">Grid item 4</div>
-      </div>'
-    />
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>'
+/>
     <p>
       Support includes responsive options for all of Bootstrap’s grid breakpoints, as well as six sizes from the
       <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class as it’s effectively the same as <code>.gap-0</code>.
@@ -147,23 +147,23 @@
     <Example
       class="docs-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
-        <div class="p-2">Grid item 1</div>
-        <div class="p-2">Grid item 2</div>
-        <div class="p-2">Grid item 3</div>
-        <div class="p-2">Grid item 4</div>
-      </div>'
-    />
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>'
+/>
     <h3 id="column-gap">column-gap<a class="anchor-link" href="#column-gap" aria-label="Link to column-gap"></a></h3>
     <p><code>column-gap</code> sets the horizontal space between children items in the specified container.</p>
     <Example
       class="docs-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3">
-        <div class="p-2">Grid item 1</div>
-        <div class="p-2">Grid item 2</div>
-        <div class="p-2">Grid item 3</div>
-        <div class="p-2">Grid item 4</div>
-      </div>'
-    />
+  <div class="p-2">Grid item 1</div>
+  <div class="p-2">Grid item 2</div>
+  <div class="p-2">Grid item 3</div>
+  <div class="p-2">Grid item 4</div>
+</div>'
+/>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
     <p>Spacing utilities are declared via Sass map and then generated with our utilities API.</p>
