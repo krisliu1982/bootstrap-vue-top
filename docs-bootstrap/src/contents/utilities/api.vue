@@ -756,10 +756,10 @@ $utilities: map-merge(
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#api-explained">API explained</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#property" class="ps-4">Property</a></li>
           <li><a href="#values" class="ps-4">Values</a></li>
           <li><a href="#class" class="ps-4">Class</a></li>
@@ -773,7 +773,7 @@ $utilities: map-merge(
       <li><a href="#importance">Importance</a></li>
       <li>
         <a href="#using-the-api">Using the API</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#override-utilities" class="ps-4">Override utilities</a></li>
           <li><a href="#add-utilities" class="ps-4">Add utilities</a></li>
           <li><a href="#modify-utilities" class="ps-4">Modify utilities</a></li>

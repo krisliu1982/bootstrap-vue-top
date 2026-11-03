@@ -950,12 +950,12 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#example">Example</a></li>
       <li>
         <a href="#content-types">Content types</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#body" class="ps-4">Body</a></li>
           <li><a href="#titles-text-and-links" class="ps-4">Titles, text, and links</a></li>
           <li><a href="#images" class="ps-4">Images</a></li>
@@ -966,7 +966,7 @@
       </li>
       <li>
         <a href="#sizing">Sizing</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#using-grid-markup" class="ps-4">Using grid markup</a></li>
           <li><a href="#using-utilities" class="ps-4">Using utilities</a></li>
           <li><a href="#using-custom-css" class="ps-4">Using custom CSS</a></li>
@@ -976,7 +976,7 @@
       <li><a href="#navigation">Navigation</a></li>
       <li>
         <a href="#images-1">Images</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#image-caps" class="ps-4">Image caps</a></li>
           <li><a href="#image-overlays" class="ps-4">Image overlays</a></li>
         </ul>
@@ -984,7 +984,7 @@
       <li><a href="#horizontal">Horizontal</a></li>
       <li>
         <a href="#card-styles">Card styles</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#background-and-color" class="ps-4">Background and color</a></li>
           <li><a href="#border" class="ps-4">Border</a></li>
           <li><a href="#mixins-utilities" class="ps-4">Mixins utilities</a></li>
@@ -992,7 +992,7 @@
       </li>
       <li>
         <a href="#card-layout">Card layout</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#card-groups" class="ps-4">Card groups</a></li>
           <li><a href="#grid-cards" class="ps-4">Grid cards</a></li>
           <li><a href="#masonry" class="ps-4">Masonry</a></li>
@@ -1000,7 +1000,7 @@
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>

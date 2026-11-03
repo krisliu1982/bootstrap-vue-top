@@ -397,7 +397,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#individual-or-compiled">Individual or compiled</a></li>
       <li><a href="#usage-with-javascript-frameworks">Usage with JavaScript frameworks</a></li>
       <li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
@@ -407,7 +407,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       <li><a href="#events">Events</a></li>
       <li>
         <a href="#programmatic-api">Programmatic API</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#css-selectors-in-constructors" class="ps-4">CSS selectors in constructors</a></li>
           <li>
             <a href="#asynchronous-functions-and-transitions" class="ps-4">Asynchronous functions and transitions</a>
@@ -419,14 +419,14 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       <li><a href="#sanitizer">Sanitizer</a></li>
       <li>
         <a href="#optionally-using-jquery">Optionally using jQuery</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#no-conflict" class="ps-4">No conflict</a></li>
           <li><a href="#jquery-events" class="ps-4">jQuery events</a></li>
         </ul>
       </li>
       <li>
         <a href="#disabled-javascript">Disabled JavaScript</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

@@ -195,19 +195,19 @@ yarn start # Start the project
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#compiled-css-and-js">Compiled CSS and JS</a></li>
       <li><a href="#source-files">Source files</a></li>
       <li><a href="#examples">Examples</a></li>
       <li>
         <a href="#cdn-via-jsdelivr">CDN via jsDelivr</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#alternative-cdns" class="ps-4">Alternative CDNs</a></li>
         </ul>
       </li>
       <li>
         <a href="#package-managers">Package managers</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#npm" class="ps-4">npm</a></li>
           <li><a href="#yarn" class="ps-4">yarn</a></li>
           <li><a href="#bun" class="ps-4">Bun</a></li>
@@ -218,7 +218,7 @@ yarn start # Start the project
       </li>
       <li>
         <a href="#intellisense-extension">IntelliSense extension</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

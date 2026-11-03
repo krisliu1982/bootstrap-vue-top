@@ -807,11 +807,11 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#how-it-works">How it works</a></li>
       <li>
         <a href="#supported-content">Supported content</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#brand" class="ps-4">Brand</a></li>
           <li><a href="#nav" class="ps-4">Nav</a></li>
           <li><a href="#forms" class="ps-4">Forms</a></li>
@@ -824,7 +824,7 @@
       <li><a href="#scrolling">Scrolling</a></li>
       <li>
         <a href="#responsive-behaviors">Responsive behaviors</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#toggler" class="ps-4">Toggler</a></li>
           <li><a href="#external-content" class="ps-4">External content</a></li>
           <li><a href="#offcanvas" class="ps-4">Offcanvas</a></li>
@@ -832,7 +832,7 @@
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>

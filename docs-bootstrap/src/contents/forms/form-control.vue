@@ -165,7 +165,7 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#example">Example</a></li>
       <li><a href="#sizing">Sizing</a></li>
       <li><a href="#form-text">Form text</a></li>
@@ -177,7 +177,7 @@
       <li><a href="#datalists">Datalists</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>

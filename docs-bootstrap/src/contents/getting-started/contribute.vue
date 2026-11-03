@@ -105,7 +105,7 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#tooling-setup">Tooling setup</a></li>
       <li><a href="#using-npm-scripts">Using npm scripts</a></li>
       <li><a href="#sass">Sass</a></li>
@@ -114,7 +114,7 @@
       <li><a href="#local-documentation">Local documentation</a></li>
       <li>
         <a href="#troubleshooting">Troubleshooting</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

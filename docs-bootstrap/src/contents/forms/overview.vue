@@ -112,13 +112,13 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#disabled-forms">Disabled forms</a></li>
       <li><a href="#accessibility">Accessibility</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>

@@ -69,14 +69,14 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#responsive-images">Responsive images</a></li>
       <li><a href="#image-thumbnails">Image thumbnails</a></li>
       <li><a href="#aligning-images">Aligning images</a></li>
       <li><a href="#picture">Picture</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>

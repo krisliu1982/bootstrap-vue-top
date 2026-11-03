@@ -168,10 +168,10 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#border">Border</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#additive" class="ps-4">Additive</a></li>
           <li><a href="#subtractive" class="ps-4">Subtractive</a></li>
         </ul>
@@ -179,7 +179,7 @@
       <li><a href="#color">Color</a></li>
       <li>
         <a href="#opacity">Opacity</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#how-it-works" class="ps-4">How it works</a></li>
           <li><a href="#example" class="ps-4">Example</a></li>
         </ul>
@@ -187,13 +187,13 @@
       <li><a href="#width">Width</a></li>
       <li>
         <a href="#radius">Radius</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sizes" class="ps-4">Sizes</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>

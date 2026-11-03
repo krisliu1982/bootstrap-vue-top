@@ -310,7 +310,7 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#basic-example">Basic example</a></li>
       <li><a href="#wrapping">Wrapping</a></li>
       <li><a href="#border-radius">Border radius</a></li>
@@ -323,14 +323,14 @@
       <li><a href="#segmented-buttons">Segmented buttons</a></li>
       <li>
         <a href="#custom-forms">Custom forms</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#custom-select" class="ps-4">Custom select</a></li>
           <li><a href="#custom-file-input" class="ps-4">Custom file input</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>

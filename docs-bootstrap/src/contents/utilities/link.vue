@@ -90,11 +90,11 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#link-opacity">Link opacity</a></li>
       <li>
         <a href="#link-underlines">Link underlines</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#underline-color" class="ps-4">Underline color</a></li>
           <li><a href="#underline-offset" class="ps-4">Underline offset</a></li>
           <li><a href="#underline-opacity" class="ps-4">Underline opacity</a></li>
@@ -104,7 +104,7 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
       <li><a href="#colored-links">Colored links</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
         </ul>
       </li>

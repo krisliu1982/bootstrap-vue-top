@@ -497,7 +497,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#approach">Approach</a></li>
       <li><a href="#css-variables">CSS variables</a></li>
       <li><a href="#page-defaults">Page defaults</a></li>
@@ -515,13 +515,13 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       <li><a href="#tables">Tables</a></li>
       <li>
         <a href="#forms">Forms</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#pointers-on-buttons" class="ps-4">Pointers on buttons</a></li>
         </ul>
       </li>
       <li>
         <a href="#misc-elements">Misc elements</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#address" class="ps-4">Address</a></li>
           <li><a href="#blockquote" class="ps-4">Blockquote</a></li>
           <li><a href="#inline-elements" class="ps-4">Inline elements</a></li>

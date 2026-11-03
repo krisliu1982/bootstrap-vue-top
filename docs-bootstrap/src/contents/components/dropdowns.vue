@@ -1215,12 +1215,12 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#accessibility">Accessibility</a></li>
       <li>
         <a href="#examples">Examples</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#single-button" class="ps-4">Single button</a></li>
           <li><a href="#split-button" class="ps-4">Split button</a></li>
         </ul>
@@ -1229,7 +1229,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       <li><a href="#dark-dropdowns">Dark dropdowns</a></li>
       <li>
         <a href="#directions">Directions</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#centered" class="ps-4">Centered</a></li>
           <li><a href="#dropup" class="ps-4">Dropup</a></li>
           <li><a href="#dropup-centered" class="ps-4">Dropup centered</a></li>
@@ -1239,21 +1239,21 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       </li>
       <li>
         <a href="#menu-items">Menu items</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#active" class="ps-4">Active</a></li>
           <li><a href="#disabled" class="ps-4">Disabled</a></li>
         </ul>
       </li>
       <li>
         <a href="#menu-alignment">Menu alignment</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#responsive-alignment" class="ps-4">Responsive alignment</a></li>
           <li><a href="#alignment-options" class="ps-4">Alignment options</a></li>
         </ul>
       </li>
       <li>
         <a href="#menu-content">Menu content</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#headers" class="ps-4">Headers</a></li>
           <li><a href="#dividers" class="ps-4">Dividers</a></li>
           <li><a href="#text" class="ps-4">Text</a></li>
@@ -1262,13 +1262,13 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       </li>
       <li>
         <a href="#dropdown-options">Dropdown options</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#auto-close-behavior" class="ps-4">Auto close behavior</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
@@ -1276,7 +1276,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       </li>
       <li>
         <a href="#usage">Usage</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
           <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
           <li><a href="#options" class="ps-4">Options</a></li>

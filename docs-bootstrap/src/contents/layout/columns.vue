@@ -403,11 +403,11 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#how-they-work">How they work</a></li>
       <li>
         <a href="#alignment">Alignment</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#vertical-alignment" class="ps-4">Vertical alignment</a></li>
           <li><a href="#horizontal-alignment" class="ps-4">Horizontal alignment</a></li>
           <li><a href="#column-wrapping" class="ps-4">Column wrapping</a></li>
@@ -416,14 +416,14 @@
       </li>
       <li>
         <a href="#reordering">Reordering</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#order-classes" class="ps-4">Order classes</a></li>
           <li><a href="#offsetting-columns" class="ps-4">Offsetting columns</a></li>
         </ul>
       </li>
       <li>
         <a href="#standalone-column-classes">Standalone column classes</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

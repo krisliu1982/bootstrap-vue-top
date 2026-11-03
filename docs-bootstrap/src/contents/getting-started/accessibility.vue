@@ -90,10 +90,10 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#overview-and-limitations">Overview and limitations</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#structural-markup" class="ps-4">Structural markup</a></li>
           <li><a href="#interactive-components" class="ps-4">Interactive components</a></li>
           <li><a href="#color-contrast" class="ps-4">Color contrast</a></li>
@@ -103,7 +103,7 @@
       </li>
       <li>
         <a href="#additional-resources">Additional resources</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

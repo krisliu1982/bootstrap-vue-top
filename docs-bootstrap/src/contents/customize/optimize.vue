@@ -135,7 +135,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#lean-sass-imports">Lean Sass imports</a></li>
       <li><a href="#lean-javascript">Lean JavaScript</a></li>
       <li><a href="#autoprefixer-browserslistrc">Autoprefixer .browserslistrc</a></li>
@@ -144,7 +144,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
       <li><a href="#non-blocking-files">Non-blocking files</a></li>
       <li>
         <a href="#always-use-https">Always use HTTPS</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

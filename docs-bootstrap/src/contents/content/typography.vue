@@ -305,11 +305,11 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#global-settings">Global settings</a></li>
       <li>
         <a href="#headings">Headings</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#customizing-headings" class="ps-4">Customizing headings</a></li>
         </ul>
       </li>
@@ -320,14 +320,14 @@
       <li><a href="#abbreviations">Abbreviations</a></li>
       <li>
         <a href="#blockquotes">Blockquotes</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#naming-a-source" class="ps-4">Naming a source</a></li>
           <li><a href="#alignment" class="ps-4">Alignment</a></li>
         </ul>
       </li>
       <li>
         <a href="#lists">Lists</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#unstyled" class="ps-4">Unstyled</a></li>
           <li><a href="#inline" class="ps-4">Inline</a></li>
           <li><a href="#description-list-alignment" class="ps-4">Description list alignment</a></li>
@@ -336,7 +336,7 @@
       <li><a href="#responsive-font-sizes">Responsive font sizes</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
         </ul>

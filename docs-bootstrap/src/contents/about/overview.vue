@@ -40,12 +40,12 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#team">Team</a></li>
       <li><a href="#history">History</a></li>
       <li>
         <a href="#get-involved">Get involved</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

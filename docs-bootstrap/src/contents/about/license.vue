@@ -40,13 +40,13 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#it-requires-you-to">It requires you to:</a></li>
       <li><a href="#it-permits-you-to">It permits you to:</a></li>
       <li><a href="#it-forbids-you-to">It forbids you to:</a></li>
       <li>
         <a href="#it-does-not-require-you-to">It does not require you to:</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

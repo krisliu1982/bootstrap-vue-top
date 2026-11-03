@@ -218,12 +218,12 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#core-concepts">Core concepts</a></li>
       <li><a href="#available-breakpoints">Available breakpoints</a></li>
       <li>
         <a href="#media-queries">Media queries</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#min-width" class="ps-4">Min-width</a></li>
           <li><a href="#max-width" class="ps-4">Max-width</a></li>
           <li><a href="#single-breakpoint" class="ps-4">Single breakpoint</a></li>

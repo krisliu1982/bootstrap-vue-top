@@ -283,7 +283,7 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#base-class">Base class</a></li>
       <li><a href="#variants">Variants</a></li>
       <li><a href="#disable-text-wrapping">Disable text wrapping</a></li>
@@ -292,21 +292,21 @@
       <li><a href="#sizes">Sizes</a></li>
       <li>
         <a href="#disabled-state">Disabled state</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#link-functionality-caveat" class="ps-4">Link functionality caveat</a></li>
         </ul>
       </li>
       <li><a href="#block-buttons">Block buttons</a></li>
       <li>
         <a href="#button-plugin">Button plugin</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#toggle-states" class="ps-4">Toggle states</a></li>
           <li><a href="#methods" class="ps-4">Methods</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>

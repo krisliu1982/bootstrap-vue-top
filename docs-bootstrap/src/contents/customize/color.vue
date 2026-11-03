@@ -633,10 +633,10 @@ $utilities: map-merge(
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#colors">Colors</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#using-the-new-colors" class="ps-4">Using the new colors</a></li>
           <li><a href="#theme-colors" class="ps-4">Theme colors</a></li>
           <li><a href="#all-colors" class="ps-4">All colors</a></li>
@@ -645,13 +645,13 @@ $utilities: map-merge(
       </li>
       <li>
         <a href="#color-sass-maps">Color Sass maps</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#example" class="ps-4">Example</a></li>
         </ul>
       </li>
       <li>
         <a href="#generating-utilities">Generating utilities</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

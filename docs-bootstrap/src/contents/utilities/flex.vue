@@ -681,7 +681,7 @@ code='<div class="d-flex flex-nowrap">
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
       <li><a href="#direction">Direction</a></li>
       <li><a href="#justify-content">Justify content</a></li>
@@ -691,7 +691,7 @@ code='<div class="d-flex flex-nowrap">
       <li><a href="#grow-and-shrink">Grow and shrink</a></li>
       <li>
         <a href="#auto-margins">Auto margins</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#with-align-items" class="ps-4">With align-items</a></li>
         </ul>
       </li>
@@ -701,7 +701,7 @@ code='<div class="d-flex flex-nowrap">
       <li><a href="#media-object">Media object</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>
         </ul>
       </li>

@@ -868,12 +868,12 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#variants">Variants</a></li>
       <li>
         <a href="#accented-tables">Accented tables</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#striped-rows" class="ps-4">Striped rows</a></li>
           <li><a href="#striped-columns" class="ps-4">Striped columns</a></li>
           <li><a href="#hoverable-rows" class="ps-4">Hoverable rows</a></li>
@@ -883,7 +883,7 @@
       <li><a href="#how-do-the-variants-and-accented-tables-work">How do the variants and accented tables work?</a></li>
       <li>
         <a href="#table-borders">Table borders</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#bordered-tables" class="ps-4">Bordered tables</a></li>
           <li><a href="#tables-without-borders" class="ps-4">Tables without borders</a></li>
         </ul>
@@ -895,7 +895,7 @@
       <li><a href="#how-nesting-works">How nesting works</a></li>
       <li>
         <a href="#anatomy">Anatomy</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#table-head" class="ps-4">Table head</a></li>
           <li><a href="#table-foot" class="ps-4">Table foot</a></li>
           <li><a href="#captions" class="ps-4">Captions</a></li>
@@ -903,14 +903,14 @@
       </li>
       <li>
         <a href="#responsive-tables">Responsive tables</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#always-responsive" class="ps-4">Always responsive</a></li>
           <li><a href="#breakpoint-specific" class="ps-4">Breakpoint specific</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-loops" class="ps-4">Sass loops</a></li>
           <li><a href="#customizing" class="ps-4">Customizing</a></li>

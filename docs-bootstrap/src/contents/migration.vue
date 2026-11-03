@@ -1407,23 +1407,23 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#v536">v5.3.6</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#dependencies" class="ps-4">Dependencies</a></li>
         </ul>
       </li>
       <li>
         <a href="#v530">v5.3.0</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#helpers" class="ps-4">Helpers</a></li>
           <li><a href="#utilities" class="ps-4">Utilities</a></li>
         </ul>
       </li>
       <li>
         <a href="#v530-alpha2">v5.3.0-alpha2</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#css-variables" class="ps-4">CSS variables</a></li>
           <li><a href="#color-modes" class="ps-4">Color modes</a></li>
           <li><a href="#typography" class="ps-4">Typography</a></li>
@@ -1436,7 +1436,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       </li>
       <li>
         <a href="#v530-alpha1">v5.3.0-alpha1</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#color-modes-1" class="ps-4">Color modes!</a></li>
           <li><a href="#css-variables-1" class="ps-4">CSS variables</a></li>
           <li><a href="#components-1" class="ps-4">Components</a></li>
@@ -1447,7 +1447,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       </li>
       <li>
         <a href="#v520">v5.2.0</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#refreshed-design" class="ps-4">Refreshed design</a></li>
           <li><a href="#more-css-variables" class="ps-4">More CSS variables</a></li>
           <li><a href="#new-utilities" class="ps-4">New utilities</a></li>
@@ -1457,7 +1457,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       <li><a href="#v510">v5.1.0</a></li>
       <li>
         <a href="#v500">v5.0.0</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#dependencies-1" class="ps-4">Dependencies</a></li>
           <li><a href="#browser-support" class="ps-4">Browser support</a></li>
           <li><a href="#documentation-changes" class="ps-4">Documentation changes</a></li>

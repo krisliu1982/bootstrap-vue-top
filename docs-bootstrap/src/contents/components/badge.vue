@@ -84,10 +84,10 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#examples">Examples</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#headings" class="ps-4">Headings</a></li>
           <li><a href="#buttons" class="ps-4">Buttons</a></li>
           <li><a href="#positioned" class="ps-4">Positioned</a></li>
@@ -97,7 +97,7 @@
       <li><a href="#pill-badges">Pill badges</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>

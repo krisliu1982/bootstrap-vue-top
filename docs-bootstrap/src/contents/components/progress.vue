@@ -187,18 +187,18 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#how-it-works">How it works</a></li>
       <li>
         <a href="#bar-sizing">Bar sizing</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#width" class="ps-4">Width</a></li>
           <li><a href="#height" class="ps-4">Height</a></li>
         </ul>
       </li>
       <li>
         <a href="#labels">Labels</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#long-labels" class="ps-4">Long labels</a></li>
         </ul>
       </li>
@@ -208,7 +208,7 @@
       <li><a href="#animated-stripes">Animated stripes</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#keyframes" class="ps-4">Keyframes</a></li>

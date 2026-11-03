@@ -445,7 +445,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#what-is-webpack">What is Webpack?</a></li>
       <li><a href="#setup">Setup</a></li>
       <li><a href="#project-structure">Project structure</a></li>
@@ -453,7 +453,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       <li><a href="#import-bootstrap">Import Bootstrap</a></li>
       <li>
         <a href="#production-optimizations">Production optimizations</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#extracting-css" class="ps-4">Extracting CSS</a></li>
           <li><a href="#extracting-svg-files" class="ps-4">Extracting SVG files</a></li>
         </ul>

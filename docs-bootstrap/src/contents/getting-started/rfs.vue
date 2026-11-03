@@ -99,18 +99,18 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#what-is-rfs">What is RFS?</a></li>
       <li>
         <a href="#using-rfs">Using RFS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#using-the-mixins" class="ps-4">Using the mixins</a></li>
           <li><a href="#using-the-functions" class="ps-4">Using the functions</a></li>
         </ul>
       </li>
       <li>
         <a href="#extended-documentation">Extended documentation</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

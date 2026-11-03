@@ -160,10 +160,10 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li>
         <a href="#supported-browsers">Supported browsers</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#mobile-devices" class="ps-4">Mobile devices</a></li>
           <li><a href="#desktop-browsers" class="ps-4">Desktop browsers</a></li>
         </ul>
@@ -171,7 +171,7 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
       <li><a href="#internet-explorer">Internet Explorer</a></li>
       <li>
         <a href="#modals-and-dropdowns-on-mobile">Modals and dropdowns on mobile</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#overflow-and-scrolling" class="ps-4">Overflow and scrolling</a></li>
           <li><a href="#ios-text-fields-and-scrolling" class="ps-4">iOS text fields and scrolling</a></li>
           <li><a href="#navbar-dropdowns" class="ps-4">Navbar Dropdowns</a></li>
@@ -180,7 +180,7 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
       <li><a href="#browser-zooming">Browser zooming</a></li>
       <li>
         <a href="#validators">Validators</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>

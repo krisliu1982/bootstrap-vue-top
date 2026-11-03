@@ -387,13 +387,13 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#dark-mode">Dark mode</a></li>
       <li><a href="#example">Example</a></li>
       <li><a href="#how-it-works">How it works</a></li>
       <li>
         <a href="#usage">Usage</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#enable-dark-mode" class="ps-4">Enable dark mode</a></li>
           <li><a href="#building-with-sass" class="ps-4">Building with Sass</a></li>
         </ul>
@@ -403,7 +403,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <li><a href="#adding-theme-colors">Adding theme colors</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>

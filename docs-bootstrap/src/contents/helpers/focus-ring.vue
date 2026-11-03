@@ -68,11 +68,11 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#example">Example</a></li>
       <li>
         <a href="#customize">Customize</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#css-variables" class="ps-4">CSS variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-utilities-api" class="ps-4">Sass utilities API</a></li>

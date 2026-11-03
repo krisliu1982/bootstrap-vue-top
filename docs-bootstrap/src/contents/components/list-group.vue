@@ -537,7 +537,7 @@ tabElms.forEach(tabElm =&gt; {
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#basic-example">Basic example</a></li>
       <li><a href="#active-items">Active items</a></li>
       <li><a href="#links-and-buttons">Links and buttons</a></li>
@@ -546,7 +546,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#horizontal">Horizontal</a></li>
       <li>
         <a href="#variants">Variants</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#for-links-and-buttons" class="ps-4">For links and buttons</a></li>
         </ul>
       </li>
@@ -555,7 +555,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>
@@ -564,7 +564,7 @@ tabElms.forEach(tabElm =&gt; {
       </li>
       <li>
         <a href="#javascript-behavior">JavaScript behavior</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#using-data-attributes" class="ps-4">Using data attributes</a></li>
           <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
           <li><a href="#fade-effect" class="ps-4">Fade effect</a></li>

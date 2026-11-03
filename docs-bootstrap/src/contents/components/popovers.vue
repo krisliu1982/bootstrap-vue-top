@@ -537,11 +537,11 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#overview">Overview</a></li>
       <li>
         <a href="#examples">Examples</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#enable-popovers" class="ps-4">Enable popovers</a></li>
           <li><a href="#live-demo" class="ps-4">Live demo</a></li>
           <li><a href="#four-directions" class="ps-4">Four directions</a></li>
@@ -552,14 +552,14 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#options" class="ps-4">Options</a></li>
           <li><a href="#methods" class="ps-4">Methods</a></li>
           <li><a href="#events" class="ps-4">Events</a></li>

@@ -310,11 +310,11 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#how-it-works">How it works</a></li>
       <li>
         <a href="#example">Example</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#flush" class="ps-4">Flush</a></li>
           <li><a href="#always-open" class="ps-4">Always open</a></li>
         </ul>
@@ -322,14 +322,14 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       <li><a href="#accessibility">Accessibility</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
           <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
           <li><a href="#options" class="ps-4">Options</a></li>

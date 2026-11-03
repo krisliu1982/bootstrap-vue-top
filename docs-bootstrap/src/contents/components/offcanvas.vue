@@ -434,11 +434,11 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#how-it-works">How it works</a></li>
       <li>
         <a href="#examples">Examples</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#offcanvas-components" class="ps-4">Offcanvas components</a></li>
           <li><a href="#live-demo" class="ps-4">Live demo</a></li>
           <li><a href="#body-scrolling" class="ps-4">Body scrolling</a></li>
@@ -452,14 +452,14 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       <li><a href="#accessibility">Accessibility</a></li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#variables" class="ps-4">Variables</a></li>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
         </ul>
       </li>
       <li>
         <a href="#usage">Usage</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#via-data-attributes" class="ps-4">Via data attributes</a></li>
           <li><a href="#via-javascript" class="ps-4">Via JavaScript</a></li>
           <li><a href="#options" class="ps-4">Options</a></li>

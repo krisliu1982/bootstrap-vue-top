@@ -127,19 +127,19 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#background-color">Background color</a></li>
       <li><a href="#background-gradient">Background gradient</a></li>
       <li>
         <a href="#opacity">Opacity</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#how-it-works" class="ps-4">How it works</a></li>
           <li><a href="#example" class="ps-4">Example</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#sass-variables" class="ps-4">Sass variables</a></li>
           <li><a href="#sass-maps" class="ps-4">Sass maps</a></li>
           <li><a href="#sass-mixins" class="ps-4">Sass mixins</a></li>

@@ -129,13 +129,13 @@
 
   <nav class="docs-toc" aria-label="本页目录">
     <h2 class="h6 mb-2">本页目录</h2>
-    <ul class="list-unstyled mb-0">
+    <ul>
       <li><a href="#summary">Summary</a></li>
       <li><a href="#responsive">Responsive</a></li>
       <li><a href="#classes">Classes</a></li>
       <li>
         <a href="#z-index-scales">z-index scales</a>
-        <ul class="list-unstyled mb-0">
+        <ul>
           <li><a href="#component-elements" class="ps-4">Component elements</a></li>
           <li><a href="#overlay-components" class="ps-4">Overlay components</a></li>
         </ul>
@@ -145,7 +145,7 @@
       <li><a href="#flexible-html">Flexible HTML</a></li>
       <li>
         <a href="#code-conventions">Code conventions</a>
-        <ul class="list-unstyled mb-0"></ul>
+        
       </li>
     </ul>
   </nav>
