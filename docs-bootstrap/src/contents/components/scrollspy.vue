@@ -442,3 +442,14 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+import {onMounted} from "vue";
+import * as bootstrap from 'bootstrap'
+onMounted(() => {
+  const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
+dataSpyList.forEach(dataSpyEl => {
+  new bootstrap.ScrollSpy(dataSpyEl)
+})
+})
+</script>

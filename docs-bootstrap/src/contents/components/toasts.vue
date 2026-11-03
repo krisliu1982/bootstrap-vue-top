@@ -471,6 +471,4 @@ for (const toast of toastList) {
     })
   }
 })
-
-
 </script>
