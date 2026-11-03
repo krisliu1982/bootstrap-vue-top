@@ -9,7 +9,7 @@
       <code>em</code> units. As of v5, badges no longer have focus or hover styles for links.
     </p>
     <h3 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h3>
-    <Example
+    <Example addStackblitzJs
       code='<h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
 <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
 <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
@@ -19,7 +19,7 @@
     />
     <h3 id="buttons">Buttons<a class="anchor-link" href="#buttons" aria-label="Link to Buttons"></a></h3>
     <p>Badges can be used as part of links or buttons to provide a counter.</p>
-    <Example
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-primary">
   Notifications <span class="badge text-bg-secondary">4</span>
 </button>'
@@ -35,7 +35,7 @@
     </p>
     <h3 id="positioned">Positioned<a class="anchor-link" href="#positioned" aria-label="Link to Positioned"></a></h3>
     <p>Use utilities to modify a <code>.badge</code> and position it in the corner of a link or button.</p>
-    <Example
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-primary position-relative">
   Inbox
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -45,7 +45,7 @@
 </button>'
     />
     <p>You can also replace the <code>.badge</code> class with a few more utilities without a count for a more generic indicator.</p>
-    <Example
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-primary position-relative">
   Profile
   <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -61,14 +61,14 @@
       <a href="/docs-bootstrap/5.3/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
 
-    <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout
+    <Example addStackblitzJs :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout
       name="warning-color-assistive-technologies"
     />
     <h2 id="pill-badges">Pill badges<a class="anchor-link" href="#pill-badges" aria-label="Link to Pill badges"></a></h2>
 
     <p>Use the <code>.rounded-pill</code> utility class to make badges more rounded with a larger <code>border-radius</code>.</p>
 
-    <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge rounded-pill text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" />
+    <Example addStackblitzJs :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge rounded-pill text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" />
 
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>

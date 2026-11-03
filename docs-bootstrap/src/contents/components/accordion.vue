@@ -13,7 +13,7 @@
       <li>add the <code>.show</code> class on the <code>.accordion-collapse</code> element.</li>
       <li>drop the <code>.collapsed</code> class from the <code>.accordion-button</code> element and set its <code>aria-expanded</code> attribute to <code>true</code>.</li>
     </ul>
-    <Example
+    <Example addStackblitzJs
       code='<div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -55,7 +55,7 @@
     />
     <h3 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h3>
     <p>Add <code>.accordion-flush</code> to remove some borders and rounded corners to render accordions edge-to-edge with their parent container.</p>
-    <Example
+    <Example addStackblitzJs
       class="bg-body-secondary"
       code='<div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -92,7 +92,7 @@
     />
     <h3 id="always-open">Always open<a class="anchor-link" href="#always-open" aria-label="Link to Always open"></a></h3>
     <p>Omit the <code>data-bs-parent</code> attribute on each <code>.accordion-collapse</code> to make accordion items stay open when another item is opened.</p>
-    <Example
+    <Example addStackblitzJs
       code='<div class="accordion" id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
