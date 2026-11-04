@@ -220,7 +220,7 @@ dt {
       <li><a href="https://rtlcss.com/">RTLCSS</a></li>
       <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL Styling 101</a></li>
     </ul>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

@@ -279,7 +279,7 @@
       <code>$theme-colors</code> map to generate the modifier classes in <code>scss/_buttons.scss</code>.
     </p>
     <ScssDocs name="btn-variant-loops" file="scss/_buttons.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

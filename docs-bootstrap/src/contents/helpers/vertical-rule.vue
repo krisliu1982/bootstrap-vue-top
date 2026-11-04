@@ -37,7 +37,7 @@
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Customize the vertical rule Sass variable to change its width.</p>
     <ScssDocs name="vr-variables" file="scss/_variables.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

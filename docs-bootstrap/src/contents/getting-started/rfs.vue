@@ -95,7 +95,7 @@
       RFS is a separate project under the Bootstrap organization. More about RFS and its configuration can be found on its
       <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub repository</a>.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

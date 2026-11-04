@@ -677,7 +677,7 @@ code='<div class="d-flex flex-nowrap">
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

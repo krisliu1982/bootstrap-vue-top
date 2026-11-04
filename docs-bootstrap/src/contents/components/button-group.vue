@@ -216,7 +216,7 @@
   <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
   <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
 </div>' />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

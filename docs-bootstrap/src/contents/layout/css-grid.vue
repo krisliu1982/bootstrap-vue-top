@@ -322,7 +322,7 @@
   <div class="g-col-4">.g-col-4</div>
 </div>'
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

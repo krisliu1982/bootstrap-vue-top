@@ -1,48 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import NProgress from 'nprogress-es';
 import 'nprogress-es/nprogress.css';
-import data from '@/data/data.js';
+import { flatPages } from '@/data/data.js';
 
 NProgress.settings.showSpinner = false;
-
-const allpage = data.sidebar.flatMap((group) => {
-  if (!group.pages)
-    return [
-      {
-        groupSlug: group.slug,
-        pageSlug: null
-      }
-    ];
-  return group.pages.flatMap((item) => {
-    // Handle direct pages
-    if (item.title) {
-      return [
-        {
-          groupSlug: group.slug,
-          pageSlug: item.slug
-        }
-      ];
-    }
-    return [];
-  });
-});
 
 const routes = [
   {
     path: '/',
-    redirect: `/${allpage[0].groupSlug}/${allpage[0].pageSlug}`
+    redirect: `${flatPages[0].path}`
   }
 ];
 
-allpage.forEach((page) => {
+flatPages.forEach((page) => {
   if (page.pageSlug) {
     routes.push({
-      path: `/${page.groupSlug}/${page.pageSlug}`,
+      path: page.path,
       component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`)
     });
   } else {
     routes.push({
-      path: `/${page.groupSlug}`,
+      path: page.path,
       component: () => import(`@/contents/${page.groupSlug}.vue`)
     });
   }

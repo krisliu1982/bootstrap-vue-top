@@ -430,7 +430,7 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
 "
       lang="javascript"
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

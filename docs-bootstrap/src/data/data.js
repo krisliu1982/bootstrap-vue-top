@@ -1,5 +1,4 @@
-export default {
-  sidebar: [
+const sidebar = [
     {
       title: 'Getting started',
       slug: 'getting-started',
@@ -200,7 +199,33 @@ export default {
       slug: 'migration',
       'zh-CN': '迁移'
     }
-  ],
+  ]
+
+// 按侧边栏顺序展开所有文档页，供路由与上下页导航共用
+const flatPages = sidebar.flatMap((group) => {
+  const groupTitle = group['zh-CN'] || group.title;
+  if (!group.pages)
+    return [
+      {
+        groupSlug: group.slug,
+        groupTitle,
+        pageSlug: null,
+        title: null,
+        path: `/${group.slug}`
+      }
+    ];
+  return group.pages.map((item) => ({
+    groupSlug: group.slug,
+    groupTitle,
+    pageSlug: item.slug,
+    title: item['zh-CN'] || item.title,
+    path: `/${group.slug}/${item.slug}`
+  }));
+});
+
+export { flatPages };
+export default {
+  sidebar,
   'theme-colors': [
     {
       name: 'primary',

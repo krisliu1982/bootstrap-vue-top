@@ -1403,7 +1403,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
         </p>
       </li>
     </ul>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

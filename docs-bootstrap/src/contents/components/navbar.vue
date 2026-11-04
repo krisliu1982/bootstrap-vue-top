@@ -803,7 +803,7 @@
       generated through a loop in <code>scss/_navbar.scss</code>.
     </p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

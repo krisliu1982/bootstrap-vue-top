@@ -34,7 +34,7 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-visibility" file="scss/_utilities.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

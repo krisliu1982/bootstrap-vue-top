@@ -26,7 +26,7 @@
   @include visually-hidden-focusable;
 }
 " lang="scss" />
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

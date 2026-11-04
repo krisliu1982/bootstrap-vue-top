@@ -41,7 +41,7 @@
 &lt;div class="sticky-xxl-bottom"&gt;Stick to the bottom on viewports sized XXL (extra-extra-large) or wider&lt;/div&gt;'
       lang="html"
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

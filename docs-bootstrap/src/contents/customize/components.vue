@@ -76,7 +76,7 @@
     ><Callout type="danger">
       <p><strong>This is a danger callout.</strong> Example text to show it in action.</p>
     </Callout>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

@@ -184,7 +184,7 @@
       section above. The <code>site/content/docs/</code> folder includes the source code for our hosted documentation, including our live examples of Bootstrap usage.
     </p>
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

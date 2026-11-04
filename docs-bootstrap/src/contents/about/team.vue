@@ -17,7 +17,7 @@
       <a href="https://github.com/twbs/bootstrap/issues/new/choose">opening an issue</a> or submitting a pull request. Read our
       <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.
     </p>
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

@@ -418,7 +418,7 @@
       validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those
       using custom styles can easily add more complex form feedback.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

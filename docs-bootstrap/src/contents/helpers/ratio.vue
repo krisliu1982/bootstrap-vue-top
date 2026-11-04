@@ -82,7 +82,7 @@
       and recompile your Sass to put them to use.
     </p>
     <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

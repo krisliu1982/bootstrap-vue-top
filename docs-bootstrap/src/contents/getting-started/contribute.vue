@@ -101,7 +101,7 @@
     </p>
     <h2 id="troubleshooting">Troubleshooting<a class="anchor-link" href="#troubleshooting" aria-label="Link to Troubleshooting"></a></h2>
     <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

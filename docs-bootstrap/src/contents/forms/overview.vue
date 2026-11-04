@@ -108,7 +108,7 @@
       these frequently reassigned as values to other component-specific variables.
     </p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

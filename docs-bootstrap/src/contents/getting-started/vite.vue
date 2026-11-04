@@ -248,7 +248,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
       </li>
     </ol>
     <GuideFooter />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

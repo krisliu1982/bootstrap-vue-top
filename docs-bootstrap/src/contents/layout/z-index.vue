@@ -18,7 +18,7 @@
       <code>2</code>, and <code>3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher
       <code>z-index</code> value to show their border over the sibling elements.
     </p>
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

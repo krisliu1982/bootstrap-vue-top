@@ -20,7 +20,7 @@
   This text is quite long, and will be truncated once displayed.
 </span>'
     />
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

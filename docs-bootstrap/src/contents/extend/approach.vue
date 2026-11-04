@@ -125,7 +125,7 @@
       <a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">Our custom Stylelint config</a> is open source and available for others to use and extend.
     </p>
     <p>We use <a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a> to enforce standard and semantic HTML, as well as detecting common errors.</p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

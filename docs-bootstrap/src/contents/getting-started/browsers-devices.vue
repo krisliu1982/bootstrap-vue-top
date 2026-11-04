@@ -156,7 +156,7 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
       Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for
       <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">a certain Firefox bug</a>.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

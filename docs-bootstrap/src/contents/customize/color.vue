@@ -629,7 +629,7 @@ $utilities: map-merge(
     />
 
     <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the same for any other utility and property as well.</p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

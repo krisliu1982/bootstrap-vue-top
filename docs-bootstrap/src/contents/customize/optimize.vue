@@ -131,7 +131,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
       by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself,
       ensure that you only access it over HTTPS connections.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

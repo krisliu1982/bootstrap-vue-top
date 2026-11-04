@@ -53,7 +53,7 @@
       <a href="/docs-bootstrap/5.3/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not
       possible in all components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

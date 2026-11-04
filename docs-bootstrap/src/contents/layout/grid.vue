@@ -559,7 +559,7 @@ $container-max-widths: (
       column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in
       <code>px</code> (not <code>rem</code>, <code>em</code>, or <code>%</code>).
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

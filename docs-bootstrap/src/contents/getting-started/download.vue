@@ -191,7 +191,7 @@ yarn start # Start the project
     <p>
       <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-docs-primary">View in VS Code Marketplace</a>
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

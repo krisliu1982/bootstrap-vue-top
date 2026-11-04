@@ -493,7 +493,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use
       <a href="/docs-bootstrap/5.3/utilities/visibility">the <code>.invisible</code> class</a> instead.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

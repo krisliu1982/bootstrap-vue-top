@@ -18,7 +18,7 @@
       <li>Working with flexbox</li>
       <li>Ask in <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a></li>
     </ul>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

@@ -161,7 +161,7 @@
     <ScssDocs name="form-label-variables" file="scss/_variables.scss" /><ScssDocs name="form-text-variables" file="scss/_variables.scss" />
     <p><code>$form-file-*</code> are for file input.</p>
     <ScssDocs name="form-file-variables" file="scss/_variables.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

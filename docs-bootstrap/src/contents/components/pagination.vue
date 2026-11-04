@@ -176,7 +176,7 @@
     <ScssDocs name="pagination-variables" file="scss/_variables.scss" />
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <ScssDocs name="pagination-mixin" file="scss/mixins/_pagination.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

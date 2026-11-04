@@ -970,7 +970,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
 "
       lang="javascript"
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

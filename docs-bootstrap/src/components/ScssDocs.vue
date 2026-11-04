@@ -13,7 +13,7 @@
         </a>
       </div>
     </div>
-    <Code :code="content" lang="scss" />
+    <Code :code="content" lang="sass" />
   </div>
 </template>
 

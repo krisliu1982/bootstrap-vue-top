@@ -64,7 +64,7 @@
 </div>' />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <ScssDocs name="stacks" file="scss/helpers/_stacks.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

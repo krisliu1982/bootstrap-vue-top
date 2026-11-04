@@ -258,7 +258,7 @@
 
     <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome
       music videos.</p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -283,6 +283,7 @@
 
 <script setup>
 import { useContent } from '@/components/content-handle.js'
+import DocsPager from '../../components/DocsPager.vue';
 
 useContent()
 </script>

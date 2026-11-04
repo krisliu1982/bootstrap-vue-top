@@ -409,7 +409,7 @@ $border-width: 0;
 "
       lang="scss"
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

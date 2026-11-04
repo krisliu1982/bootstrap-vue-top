@@ -458,7 +458,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 })"
       lang="javascript"
     />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

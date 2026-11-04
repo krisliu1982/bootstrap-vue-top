@@ -327,7 +327,7 @@
     <ScssDocs name="form-check-variables" file="scss/_variables.scss" />
     <p>Variables for switches:</p>
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

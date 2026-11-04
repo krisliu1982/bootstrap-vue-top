@@ -301,7 +301,7 @@
       There are no dedicated mixins for typography, but Bootstrap does use
       <a href="/docs-bootstrap/5.3/getting-started/rfs">Responsive Font Sizing (RFS)</a>.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

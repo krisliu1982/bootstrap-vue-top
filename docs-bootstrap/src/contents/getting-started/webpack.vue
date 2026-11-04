@@ -440,7 +440,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     />
     <p>After running <code>npm run build</code> again, you’ll find the SVG files extracted into <code>dist/icons</code> and properly referenced from CSS.</p>
     <GuideFooter />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

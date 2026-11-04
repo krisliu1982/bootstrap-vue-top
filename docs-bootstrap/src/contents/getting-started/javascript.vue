@@ -393,7 +393,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to
       your users, and/or add your own custom fallbacks.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

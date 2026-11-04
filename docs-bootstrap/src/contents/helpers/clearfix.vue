@@ -23,7 +23,7 @@
   <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
 </div>'
     />
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

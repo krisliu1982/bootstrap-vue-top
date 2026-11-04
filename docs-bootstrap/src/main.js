@@ -23,6 +23,7 @@ import CalloutDeprecatedDarkVariants from '@/components/CalloutDeprecatedDarkVar
 import JsDismiss from '@/components/JsDismiss.vue';
 import JsDataAttributes from '@/components/JsDataAttributes.vue';
 import GuideFooter from '@/components/GuideFooter.vue';
+import DocsPager from '@/components/DocsPager.vue';
 import JsDocs from '@/components/JsDocs.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
@@ -45,6 +46,7 @@ app.component('CalloutDeprecatedDarkVariants', CalloutDeprecatedDarkVariants);
 app.component('JsDismiss', JsDismiss);
 app.component('JsDataAttributes', JsDataAttributes);
 app.component('GuideFooter', GuideFooter);
+app.component('DocsPager', DocsPager);
 app.component('JsDocs', JsDocs);
 app.component('Placeholder', Placeholder);
 app.component('TableBs', TableBs);

@@ -752,7 +752,7 @@ $utilities: map-merge(
       This doesn’t output anything in RTL, thanks to
       <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">the RTLCSS <code>remove</code> control directive</a>.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

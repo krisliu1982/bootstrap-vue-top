@@ -36,7 +36,7 @@
       The full Bootstrap license is located
       <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/LICENSE">in the project repository</a> for more information.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

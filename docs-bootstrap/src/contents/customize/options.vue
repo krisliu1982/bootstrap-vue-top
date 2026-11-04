@@ -130,7 +130,7 @@
         </tbody>
       </table>
     </div>
-  </article>
+  <DocsPager /></article>
 </template>
 
 <script setup>

@@ -174,7 +174,7 @@
     <h3 id="keyframes">Keyframes<a class="anchor-link" href="#keyframes" aria-label="Link to Keyframes"></a></h3>
     <p>Used for creating the CSS animations for our spinners. Included in <code>scss/_spinners.scss</code>.</p>
     <ScssDocs name="spinner-border-keyframes" file="scss/_spinners.scss" /><ScssDocs name="spinner-grow-keyframes" file="scss/_spinners.scss" />
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

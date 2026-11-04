@@ -86,7 +86,7 @@
       <li><a href="https://www.deque.com/axe/">Deque Axe testing tools</a></li>
       <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility</a></li>
     </ul>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

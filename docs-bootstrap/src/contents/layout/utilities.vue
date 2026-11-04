@@ -31,7 +31,7 @@
       <a href="/docs-bootstrap/5.3/utilities/visibility">visibility utilities</a>. Invisible elements will still affect the layout of the page, but are visually hidden from
       visitors.
     </p>
-  </article>
+  <DocsPager /></article>
 
   <nav class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>

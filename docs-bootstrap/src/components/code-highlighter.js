@@ -8,6 +8,7 @@ const highlighterPromise = createHighlighterCore({
     import('@shikijs/langs/javascript'),
     import('@shikijs/langs/css'),
     import('@shikijs/langs/scss'),
+    import('@shikijs/langs/sass'),
     import('@shikijs/langs/json'),
     import('@shikijs/langs/shell'),
     import('@shikijs/langs/powershell'),
