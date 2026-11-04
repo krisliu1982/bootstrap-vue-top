@@ -23,9 +23,11 @@ export function useContent() {
     })
 
     onBeforeUnmount(() => {
+
         const tocEl = document.querySelector('nav.docs-toc')
         if (tocEl) {
-            bootstrap.ScrollSpy.getInstance(tocEl).dispose()
+            const articleEl = document.querySelector('article.docs-content')
+            bootstrap.ScrollSpy.getInstance(articleEl).dispose()
         }
     })
 }
