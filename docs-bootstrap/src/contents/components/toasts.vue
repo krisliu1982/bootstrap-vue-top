@@ -54,7 +54,7 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <span title="图片占位" class="text-primary me-2">✓</span>
+      <span title="image placeholder" class="text-primary me-2">✓</span>
       <strong class="me-auto">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -73,7 +73,7 @@
     <Example
       code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <span title="图片占位" class="text-primary me-2">✓</span>
+    <span title="image placeholder" class="text-primary me-2">✓</span>
     <strong class="me-auto">Bootstrap</strong>
     <small class="text-body-secondary">11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -91,7 +91,7 @@
       code='<div class="toast-container position-static">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <span title="图片占位" class="text-primary me-2">✓</span>
+      <span title="image placeholder" class="text-primary me-2">✓</span>
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-body-secondary">just now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -103,7 +103,7 @@
 
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <span title="图片占位" class="text-primary me-2">✓</span>
+      <span title="image placeholder" class="text-primary me-2">✓</span>
       <strong class="me-auto">Bootstrap</strong>
       <small class="text-body-secondary">2 seconds ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -194,7 +194,7 @@
   <div class="toast-container p-3" id="toastPlacement">
     <div class="toast">
       <div class="toast-header">
-        <span title="图片占位" class="text-primary me-2">✓</span>
+        <span title="image placeholder" class="text-primary me-2">✓</span>
         <strong class="me-auto">Bootstrap</strong>
         <small>11 mins ago</small>
       </div>
@@ -218,7 +218,7 @@
     <!-- Then put toasts within -->
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <span title="图片占位" class="text-primary me-2">✓</span>
+        <span title="image placeholder" class="text-primary me-2">✓</span>
         <strong class="me-auto">Bootstrap</strong>
         <small class="text-body-secondary">just now</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -230,7 +230,7 @@
 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <span title="图片占位" class="text-primary me-2">✓</span>
+        <span title="image placeholder" class="text-primary me-2">✓</span>
         <strong class="me-auto">Bootstrap</strong>
         <small class="text-body-secondary">2 seconds ago</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -252,7 +252,7 @@
   <!-- Then put toasts within -->
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <span title="图片占位" class="text-primary me-2">✓</span>
+      <span title="image placeholder" class="text-primary me-2">✓</span>
       <strong class="me-auto">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -296,7 +296,7 @@
     <Example
       code='<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
   <div class="toast-header">
-    <span title="图片占位" class="text-primary me-2">✓</span>
+    <span title="image placeholder" class="text-primary me-2">✓</span>
     <strong class="me-auto">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
