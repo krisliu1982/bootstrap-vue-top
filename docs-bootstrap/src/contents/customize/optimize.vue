@@ -149,3 +149,6 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

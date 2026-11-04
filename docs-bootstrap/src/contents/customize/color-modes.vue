@@ -412,3 +412,6 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

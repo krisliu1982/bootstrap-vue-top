@@ -1018,3 +1018,6 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

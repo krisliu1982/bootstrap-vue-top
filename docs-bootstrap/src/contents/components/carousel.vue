@@ -817,3 +817,6 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

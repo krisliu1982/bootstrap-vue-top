@@ -1476,3 +1476,6 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

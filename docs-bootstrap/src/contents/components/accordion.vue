@@ -340,3 +340,6 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

@@ -531,3 +531,6 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

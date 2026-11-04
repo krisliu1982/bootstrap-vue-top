@@ -20,3 +20,6 @@
     </p>
   </article>
 </template>
+
+<script setup>
+</script>

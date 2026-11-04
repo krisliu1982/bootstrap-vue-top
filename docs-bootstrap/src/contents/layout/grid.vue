@@ -603,3 +603,6 @@ $container-max-widths: (
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

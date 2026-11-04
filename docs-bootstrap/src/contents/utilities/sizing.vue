@@ -69,3 +69,6 @@ code='<div style="height: 100px;">
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

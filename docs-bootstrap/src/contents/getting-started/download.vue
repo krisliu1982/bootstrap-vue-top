@@ -223,3 +223,6 @@ yarn start # Start the project
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

@@ -431,3 +431,6 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

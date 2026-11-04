@@ -813,3 +813,6 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

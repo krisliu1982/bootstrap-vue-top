@@ -361,3 +361,6 @@
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

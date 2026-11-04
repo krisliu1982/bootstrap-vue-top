@@ -1287,3 +1287,6 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

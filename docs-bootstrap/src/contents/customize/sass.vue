@@ -446,3 +446,6 @@ $border-width: 0;
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

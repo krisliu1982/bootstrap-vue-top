@@ -25,3 +25,6 @@
     />
   </article>
 </template>
+
+<script setup>
+</script>

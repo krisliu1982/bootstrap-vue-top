@@ -236,3 +236,6 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

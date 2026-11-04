@@ -156,3 +156,6 @@ code='<p class="text-body-secondary">
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

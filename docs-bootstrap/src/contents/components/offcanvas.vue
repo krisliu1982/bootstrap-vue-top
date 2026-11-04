@@ -470,3 +470,6 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

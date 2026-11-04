@@ -784,3 +784,6 @@ $utilities: map-merge(
     </ul>
   </nav>
 </template>
+
+<script setup>
+</script>

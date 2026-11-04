@@ -28,3 +28,6 @@
 " lang="scss" />
   </article>
 </template>
+
+<script setup>
+</script>

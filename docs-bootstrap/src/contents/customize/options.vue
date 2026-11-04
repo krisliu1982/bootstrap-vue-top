@@ -132,3 +132,6 @@
     </div>
   </article>
 </template>
+
+<script setup>
+</script>
