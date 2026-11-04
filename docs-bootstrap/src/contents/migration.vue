@@ -1478,4 +1478,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

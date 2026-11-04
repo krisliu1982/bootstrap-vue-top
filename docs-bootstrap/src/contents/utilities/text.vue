@@ -158,4 +158,7 @@ code='<p class="text-body-secondary">
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

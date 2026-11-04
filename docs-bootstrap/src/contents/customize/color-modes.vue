@@ -414,4 +414,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

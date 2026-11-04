@@ -238,4 +238,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

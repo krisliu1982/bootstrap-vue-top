@@ -1020,4 +1020,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

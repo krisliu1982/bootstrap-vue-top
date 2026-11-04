@@ -541,6 +541,7 @@ tooltip.hide()
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 
@@ -554,4 +555,6 @@ onBeforeUnmount(() => {
   const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
   tooltipList.forEach((tooltip) => tooltip.dispose());
 });
+
+useContent()
 </script>

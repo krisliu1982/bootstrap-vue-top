@@ -570,6 +570,7 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 onMounted(() => {
@@ -581,4 +582,6 @@ onBeforeUnmount(() => {
   const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
   popoverInstances.forEach((popover) => popover.dispose());
 });
+
+useContent()
 </script>

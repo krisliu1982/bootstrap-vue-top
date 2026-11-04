@@ -540,6 +540,7 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 onMounted(() => {
@@ -555,4 +556,6 @@ onBeforeUnmount(() => {
     bootstrap.ScrollSpy.getInstance(dataSpyEl).dispose();
   });
 });
+
+useContent()
 </script>

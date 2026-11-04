@@ -55,6 +55,8 @@
   rangeInput.addEventListener(&#39;input&#39;, function() {
     rangeOutput.textContent = this.value;
   });
+
+useContent()
 </script>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
@@ -81,4 +83,5 @@
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
 </script>

@@ -819,4 +819,7 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>

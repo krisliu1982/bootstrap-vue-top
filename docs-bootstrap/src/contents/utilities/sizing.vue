@@ -71,4 +71,7 @@ code='<div style="height: 100px;">
 </template>
 
 <script setup>
+import { useContent } from '@/components/content-handle.js'
+
+useContent()
 </script>
