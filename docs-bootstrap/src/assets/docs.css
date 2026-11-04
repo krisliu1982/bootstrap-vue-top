@@ -2099,7 +2099,7 @@
   main h3,
   main h4,
   main [tabindex="0"] {
-      scroll-margin-top: 4rem;
+      scroll-margin-top: 4.5rem;
       scroll-margin-bottom: 100px
   }
 

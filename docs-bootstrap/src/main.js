@@ -1,11 +1,14 @@
 import { createApp } from 'vue';
 import app_ from './app.vue';
 import router from './router.js';
+import { createHead } from '@unhead/vue/client' // SPA 用 /client，SSR 需区分入口
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap';
+
+
 
 import './assets/docs.css';
 
@@ -25,7 +28,12 @@ import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
 
 const app = createApp(app_);
+
+const head = createHead()
+app.use(head)
+
 app.use(router);
+
 app.component('Example', Example);
 app.component('ExampleCustom', ExampleCustom);
 app.component('Callout', Callout);
