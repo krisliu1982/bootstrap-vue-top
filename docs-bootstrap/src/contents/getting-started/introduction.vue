@@ -1,12 +1,15 @@
 <template>
   <article class="docs-content">
     <h1>Get started with Bootstrap</h1>
-    <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
+    <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+    </p>
 
-    <h2 id="quick-start">Quick start<a class="anchor-link" href="#quick-start" aria-label="Link to Quick start"></a></h2>
+    <h2 id="quick-start">Quick start<a class="anchor-link" href="#quick-start" aria-label="Link to Quick start"></a>
+    </h2>
 
     <p>
-      Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this
+      Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build
+      steps. See it in practice with this
       <a href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap CodePen demo</a>.
     </p>
 
@@ -15,12 +18,12 @@
     <ol>
       <li>
         <p>
-          <strong>Create a new <code>index.html</code> file in your project root.</strong> Include the <code>&lt;meta name="viewport"&gt;</code> tag as well for
+          <strong>Create a new <code>index.html</code> file in your project root.</strong> Include the
+          <code>&lt;meta name="viewport"&gt;</code> tag as well for
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">proper responsive behavior</a>
           in mobile devices.
         </p>
-        <CodeWrapper
-          code='&lt;!doctype html&gt;
+        <CodeWrapper code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -30,18 +33,17 @@
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
   &lt;/body&gt;
-&lt;/html&gt;'
-          lang="html"
-        />
+&lt;/html&gt;' lang="html" />
       </li>
       <li>
         <p>
-          <strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the
-          <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing
+          <strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the
+          <code>&lt;head&gt;</code> for our CSS, and the
+          <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns,
+          popovers, and tooltips) before the closing
           <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.
         </p>
-        <CodeWrapper
-          code='&lt;!doctype html&gt;
+        <CodeWrapper code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -53,23 +55,23 @@
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
     &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;'
-          lang="html"
-        />
+&lt;/html&gt;' lang="html" />
         <p>
-          You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some
+          You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t
+          plan to use dropdowns, popovers, or tooltips, save some
           kilobytes by not including Popper.
         </p>
         <CodeWrapper
           code='&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;'
-          lang="html"
-        />
+          lang="html" />
       </li>
       <li>
         <p>
-          <strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own
-          <a href="/docs-bootstrap/5.3/layout/grid">layout</a>, adding dozens of <a href="/docs-bootstrap/5.3/components/buttons">components</a>, and utilizing
+          <strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you
+          can start building with Bootstrap by creating your own
+          <a href="/docs-bootstrap/5.3/layout/grid">layout</a>, adding dozens of <a
+            href="/docs-bootstrap/5.3/components/buttons">components</a>, and utilizing
           <a href="https://getbootstrap.com/examples">our official examples</a>.
         </p>
       </li>
@@ -104,35 +106,43 @@
     </p>
 
     <p>
-      When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of
+      When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and
+      versions. These hashes are unique to each file and version of
       Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.
     </p>
 
-    <p>We also include a <code>crossorigin="anonymous"</code> attribute to prevent <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors.</p>
+    <p>We also include a <code>crossorigin="anonymous"</code> attribute to prevent <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors.</p>
 
     <h2 id="next-steps">Next steps<a class="anchor-link" href="#next-steps" aria-label="Link to Next steps"></a></h2>
 
     <ul>
-      <li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li>
+      <li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that
+        Bootstrap utilizes.</li>
       <li>
         Read about what’s included in Bootstrap in our
-        <a href="/docs-bootstrap/5.3/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.
+        <a href="/docs-bootstrap/5.3/getting-started/contents/">contents section</a> and the list of <a
+          href="#js-components">components that require JavaScript</a> below.
       </li>
       <li>
         Need a little more power? Consider building with Bootstrap by
-        <a href="/docs-bootstrap/5.3/getting-started/download#package-managers">including the source files via package manager</a>.
+        <a href="/docs-bootstrap/5.3/getting-started/download#package-managers">including the source files via package
+          manager</a>.
       </li>
       <li>
         Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our
-        <a href="/docs-bootstrap/5.3/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a>
+        <a href="/docs-bootstrap/5.3/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a
+          module</a>
         section.
       </li>
     </ul>
 
-    <h2 id="js-components">JS components<a class="anchor-link" href="#js-components" aria-label="Link to JS components"></a></h2>
+    <h2 id="js-components">JS components<a class="anchor-link" href="#js-components"
+        aria-label="Link to JS components"></a></h2>
 
     <p>
-      Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
+      Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general
+      page structure, keep reading for an example page template.
     </p>
 
     <ul>
@@ -141,7 +151,8 @@
       <li>Buttons for toggling states and checkbox/radio functionality</li>
       <li>Carousel for all slide behaviors, controls, and indicators</li>
       <li>Collapse for toggling visibility of content</li>
-      <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/docs/v2/">Popper</a>)</li>
+      <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/docs/v2/">Popper</a>)
+      </li>
       <li>Modals for displaying, positioning, and scroll behavior</li>
       <li>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</li>
       <li>Navs with the Tab plugin for toggling content panes</li>
@@ -154,30 +165,33 @@
       </li>
     </ul>
 
-    <h2 id="important-globals">Important globals<a class="anchor-link" href="#important-globals" aria-label="Link to Important globals"></a></h2>
+    <h2 id="important-globals">Important globals<a class="anchor-link" href="#important-globals"
+        aria-label="Link to Important globals"></a></h2>
 
     <p>
-      Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles.
+      Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared
+      towards the <em>normalization</em> of cross browser styles.
       Let’s dive in.
     </p>
 
-    <h3 id="html5-doctype">HTML5 doctype<a class="anchor-link" href="#html5-doctype" aria-label="Link to HTML5 doctype"></a></h3>
+    <h3 id="html5-doctype">HTML5 doctype<a class="anchor-link" href="#html5-doctype"
+        aria-label="Link to HTML5 doctype"></a></h3>
 
     <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
 
-    <CodeWrapper
-      code='&lt;!doctype html&gt;
+    <CodeWrapper code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
   ...
-&lt;/html&gt;'
-      lang="html"
-    />
+&lt;/html&gt;' lang="html" />
 
-    <h3 id="viewport-meta">Viewport meta<a class="anchor-link" href="#viewport-meta" aria-label="Link to Viewport meta"></a></h3>
+    <h3 id="viewport-meta">Viewport meta<a class="anchor-link" href="#viewport-meta"
+        aria-label="Link to Viewport meta"></a></h3>
 
     <p>
-      Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries.
-      To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head&gt;</code>.
+      Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and
+      then scale up components as necessary using CSS media queries.
+      To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your
+      <code>&lt;head&gt;</code>.
     </p>
 
     <CodeWrapper code='&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;' lang="html" />
@@ -187,22 +201,22 @@
     <h3 id="box-sizing">Box-sizing<a class="anchor-link" href="#box-sizing" aria-label="Link to Box-sizing"></a></h3>
 
     <p>
-      For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from <code>content-box</code> to <code>border-box</code>. This ensures
-      <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom
+      For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from
+      <code>content-box</code> to <code>border-box</code>. This ensures
+      <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some
+      third-party software like Google Maps and Google Custom
       Search Engine.
     </p>
 
     <p>On the rare occasion you need to override it, use something like the following:</p>
 
-    <CodeWrapper
-      code=".selector-for-some-widget {
+    <CodeWrapper code=".selector-for-some-widget {
   box-sizing: content-box;
-}"
-      lang="css"
-    />
+}" lang="css" />
 
     <p>
-      With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified
+      With the above snippet, nested elements—including generated content via <code>::before</code> and
+      <code>::after</code>—will all inherit the specified
       <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.
     </p>
 
@@ -211,7 +225,8 @@
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
     <p>
-      For improved cross-browser rendering, we use <a href="/docs-bootstrap/5.3/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing
+      For improved cross-browser rendering, we use <a href="/docs-bootstrap/5.3/content/reboot">Reboot</a> to correct
+      inconsistencies across browsers and devices while providing
       slightly more opinionated resets to common HTML elements.
     </p>
 
@@ -221,24 +236,28 @@
 
     <ul>
       <li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.</li>
-      <li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li>
+      <li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.
+      </li>
       <li>
         Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or
         <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.
       </li>
-      <li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li>
+      <li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the
+        <code>#bootstrap</code> channel.</li>
       <li>
         Implementation help may be found at Stack Overflow (tagged
-        <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a
-        >).
+        <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).
       </li>
       <li>
-        Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through
-        <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.
+        Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of
+        Bootstrap when distributing through
+        <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum
+        discoverability.
       </li>
     </ul>
 
-    <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>
+    <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome
+      music videos.</p>
   </article>
 
   <nav class="docs-toc" aria-label="On this page">
@@ -263,7 +282,7 @@
 </template>
 
 <script setup>
-import {useContent} from '@/components/content-handle.js'
+import { useContent } from '@/components/content-handle.js'
 
 useContent()
 </script>
