@@ -20,7 +20,6 @@ export function useContent() {
                 target: tocEl
             })
         }
-
     })
 
     onBeforeUnmount(() => {
