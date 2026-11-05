@@ -285,5 +285,5 @@
 import { useContent } from '@/components/content-handle.js'
 import DocsPager from '../../components/DocsPager.vue';
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

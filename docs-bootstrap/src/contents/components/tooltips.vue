@@ -591,5 +591,5 @@ onBeforeUnmount(() => {
   tooltipList.forEach((tooltip) => tooltip.dispose());
 });
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

@@ -607,5 +607,5 @@ $container-max-widths: (
 <script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

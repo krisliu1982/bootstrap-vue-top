@@ -55,5 +55,5 @@
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

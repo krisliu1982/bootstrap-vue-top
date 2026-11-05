@@ -833,5 +833,5 @@ onBeforeUnmount(() => {
       bootstrap.Carousel.getInstance(carousel).dispose()
     })
 });
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

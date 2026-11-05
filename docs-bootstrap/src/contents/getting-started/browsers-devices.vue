@@ -189,5 +189,5 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
 <script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

@@ -448,7 +448,7 @@
 import {onMounted} from 'vue'
 import { useContent } from '@/components/content-handle.js'
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 
 onMounted(()=>{
   const forms = document.querySelectorAll('.needs-validation')

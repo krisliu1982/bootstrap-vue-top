@@ -583,5 +583,5 @@ onBeforeUnmount(() => {
   popoverInstances.forEach((popover) => popover.dispose());
 });
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>

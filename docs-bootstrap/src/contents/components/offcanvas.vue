@@ -486,5 +486,5 @@ onMounted(()=>{
   }
 })
 
-useContent()
+useContent(contentRef.value,  tocRef.value)
 </script>
