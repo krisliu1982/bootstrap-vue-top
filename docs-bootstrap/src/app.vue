@@ -34,9 +34,9 @@
                   <bi-fonts />
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'" :disabled="fontSize == 'sm'">小型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'" :disabled="fontSize == 'md'">中型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'" :disabled="fontSize == 'lg'">大型布局</button></li>
                 </ul>
               </div>
               <a href="#" class="link-body-emphasis text-decoration-none" title="主题切换"
