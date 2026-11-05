@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@stackblitz/sdk": "^1.11.1",
     "@unhead/vue": "^3.4.3",
     "bootstrap": "^5.3.8",
     "nprogress-es": "^1.5.5",
