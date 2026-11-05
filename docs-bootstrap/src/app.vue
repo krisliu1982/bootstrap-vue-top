@@ -14,15 +14,24 @@
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
               <RouterLink to="/docs" class="link-body-emphasis text-decoration-none fw-bold">中文文档 </RouterLink>
-              <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/"
-                target="_blank">Bootstrap</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/"
+                target="_blank" rel="noopener">示例</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank"
+                rel="noopener">图标</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://blog.getbootstrap.com/" target="_blank"
+                rel="noopener">博客</a>
+              <div class="vr"></div>
+              <a class="link-body-emphasis text-decoration-none" href="https://github.com/twbs" target="_blank"
+                rel="noopener"><bi-github /></a>
+              <a class="link-body-emphasis text-decoration-none" href="https://x.com/getbootstrap" target="_blank"
+                rel="noopener"><bi-twitter-x /></a>
+              <a class="link-body-emphasis text-decoration-none" href="https://opencollective.com/bootstrap" target="_blank"
+                rel="noopener"><bi-opencollective /></a>
               <div class="vr"></div>
               <div class="dropdown">
                 <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle"
-                  title="文字大小" href="#" role="button" aria-expanded="false">
-                  <template v-if="fontSize === 'sm'">小型文字</template>
-                  <template v-else-if="fontSize === 'md'">中型文字</template>
-                  <template v-else-if="fontSize === 'lg'">大型文字</template>
+                  title="布局大小" href="#" role="button" aria-expanded="false">
+                  <bi-fonts />
                 </a>
                 <ul class="dropdown-menu">
                   <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
@@ -104,7 +113,7 @@
                 </template>
                 <template v-else-if="t.slug === 'extend'">
                   <bi-tools style="color:var(--bs-blue)" />
-                </template> 
+                </template>
                 <template v-else-if="t.slug === 'about'">
                   <bi-globe2 style="color:var(--bs-indigo)" />
                 </template>

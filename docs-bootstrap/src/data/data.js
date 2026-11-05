@@ -210,7 +210,7 @@ const flatPages = sidebar.flatMap((group) => {
         groupSlug: group.slug,
         groupTitle,
         pageSlug: null,
-        title: null,
+        title: groupTitle,
         path: `/${group.slug}`
       }
     ];
