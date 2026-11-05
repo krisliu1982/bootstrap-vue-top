@@ -139,7 +139,7 @@
     /><Callout type="warning">
       <p>
         When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will
-        suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the
+        suddenly be lost and, depending on the browser, reset to the start of the page/contentRef.value. For this reason, we recommend including additional JavaScript that listens for the
         <code>closed.bs.alert</code> event and programmatically sets <code>focus()</code> to the most appropriate location in the page. If you’re planning to move focus to a
         non-interactive element that normally does not receive focus, make sure to add <code>tabindex=&quot;-1&quot;</code> to the element.
       </p>
@@ -163,7 +163,7 @@
     <h3 id="initialize">Initialize<a class="anchor-link" href="#initialize" aria-label="Link to Initialize"></a></h3>
     <p>Initialize elements as alerts</p>
     <CodeWrapper
-      code="const alertList = document.querySelectorAll(&#39;.alert&#39;)
+      code="const alertList = contentRef.value.querySelectorAll(&#39;.alert&#39;)
 const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
 "
       lang="javascript"
@@ -256,11 +256,11 @@ alert.close()
       </table>
     </div>
     <CodeWrapper
-      code="const myAlert = document.getElementById(&#39;myAlert&#39;)
+      code="const myAlert = contentRef.value.getElementById(&#39;myAlert&#39;)
 myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
   // do something, for instance, explicitly move focus to the most appropriate element,
   // so it doesn’t get lost/reset to the start of the page
-  // document.getElementById(&#39;...&#39;).focus()
+  // contentRef.value.getElementById(&#39;...&#39;).focus()
 })
 "
       lang="javascript"
@@ -302,9 +302,31 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>import {ref, onMounted} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
+
+
+onMounted(()=> {
+    const alertPlaceholder = contentRef.value.getElementById('liveAlertPlaceholder')
+  const appendAlert = (message, type) => {
+    const wrapper = contentRef.value.createElement('div')
+    wrapper.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+
+    alertPlaceholder.append(wrapper)
+  }
+  const alertTrigger = contentRef.value.getElementById('liveAlertBtn')
+  if (alertTrigger) {
+    alertTrigger.addEventListener('click', () => {
+      appendAlert('Nice, you triggered this alert message!', 'success')
+    })
+  }
+})
 
 useContent()
 </script>

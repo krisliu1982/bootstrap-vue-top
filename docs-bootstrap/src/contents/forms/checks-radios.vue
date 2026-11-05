@@ -376,6 +376,16 @@
 
 <script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
+import { onMounted } from 'vue';
+
+onMounted(()=>{
+    contentRef.value.querySelectorAll('.docs-example-indeterminate [type="checkbox"]')
+    .forEach(checkbox => {
+      if (checkbox.id.includes('Indeterminate')) {
+        checkbox.indeterminate = true
+      }
+    })
+})
 
 useContent()
 </script>

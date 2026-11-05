@@ -34,7 +34,7 @@
       <code>data-bs-toggle</code> attribute, like so:
     </p>
     <CodeWrapper
-      code='const popoverTriggerList = document.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
+      code='const popoverTriggerList = contentRef.value.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl))
 '
       lang="javascript"
@@ -160,7 +160,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Enable popovers via JavaScript:</p>
     <CodeWrapper
-      code="const exampleEl = document.getElementById(&#39;example&#39;)
+      code="const exampleEl = contentRef.value.getElementById(&#39;example&#39;)
 const popover = new bootstrap.Popover(exampleEl, options)
 "
       lang="javascript"
@@ -526,7 +526,7 @@ popover.setContent({
       </table>
     </div>
     <CodeWrapper
-      code="const myPopoverTrigger = document.getElementById(&#39;myPopover&#39;)
+      code="const myPopoverTrigger = contentRef.value.getElementById(&#39;myPopover&#39;)
 myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
   // do something...
 })
@@ -574,11 +574,11 @@ import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 onMounted(() => {
-  const popoverTriggerList = document.querySelectorAll('article.docs-content [data-bs-toggle="popover"]');
+  const popoverTriggerList = contentRef.value.querySelectorAll('[data-bs-toggle="popover"]');
   const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
 });
 onBeforeUnmount(() => {
-  const popoverList = document.querySelectorAll('article.docs-content [data-bs-toggle="popover"]');
+  const popoverList = contentRef.value.querySelectorAll('[data-bs-toggle="popover"]');
   const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
   popoverInstances.forEach((popover) => popover.dispose());
 });

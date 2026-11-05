@@ -115,6 +115,16 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
 <script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
+import { onMounted } from 'vue';
+
+onMounted(()=>{
+  contentRef.value.querySelectorAll('[href="#"]')
+    .forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault()
+      })
+    })
+})
 
 useContent()
 </script>

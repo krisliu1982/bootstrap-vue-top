@@ -326,7 +326,7 @@
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Initialize toasts via JavaScript:</p>
     <CodeWrapper
-      code="const toastElList = document.querySelectorAll(&#39;.toast&#39;)
+      code="const toastElList = contentRef.value.querySelectorAll(&#39;.toast&#39;)
 const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
 "
       lang="javascript"
@@ -386,7 +386,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element. <br />
-              For example: <code>const myToastEl = document.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a
+              For example: <code>const myToastEl = contentRef.value.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a
               Bootstrap toast instance.
             </td>
           </tr>
@@ -394,7 +394,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getOrCreateInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element, or create a new one, in case it wasn’t initialized. <br /><code
-                >const myToastEl = document.getElementById(&#39;myToastEl&#39;)</code
+                >const myToastEl = contentRef.value.getElementById(&#39;myToastEl&#39;)</code
               >
               <code>const myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)</code> Returns a Bootstrap toast instance.
             </td>
@@ -452,7 +452,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
       </table>
     </div>
     <CodeWrapper
-      code="const myToastEl = document.getElementById(&#39;myToast&#39;)
+      code="const myToastEl = contentRef.value.getElementById(&#39;myToast&#39;)
 myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   // do something...
 })"
@@ -503,7 +503,7 @@ import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 
 onMounted(() => {
-  const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])');
+  const toastElList = contentRef.value.querySelectorAll('.toast');
   const toastList = [...toastElList].map(
     (toastEl) =>
       new bootstrap.Toast(toastEl, {
@@ -515,8 +515,8 @@ onMounted(() => {
     toast.show();
   }
 
-  const toastTrigger = document.getElementById('liveToastBtn');
-  const toastLiveExample = document.getElementById('liveToast');
+  const toastTrigger = contentRef.value.getElementById('liveToastBtn');
+  const toastLiveExample = contentRef.value.getElementById('liveToast');
   if (toastTrigger) {
     toastTrigger.addEventListener('click', () => {
       const toast = new bootstrap.Toast(toastLiveExample);
@@ -524,9 +524,9 @@ onMounted(() => {
     });
   }
 
-  const toastPlacement = document.getElementById('toastPlacement');
+  const toastPlacement = contentRef.value.getElementById('toastPlacement');
   if (toastPlacement) {
-    document.getElementById('selectToastPlacement').addEventListener('change', function () {
+    contentRef.value.getElementById('selectToastPlacement').addEventListener('change', function () {
       if (!toastPlacement.dataset.originalClass) {
         toastPlacement.dataset.originalClass = toastPlacement.className;
       }
@@ -537,13 +537,13 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  const toastElList = document.querySelectorAll('article.docs-content .toast:not([id])');
+  const toastElList = contentRef.value.querySelectorAll('article.docs-content .toast:not([id])');
   const toastList = [...toastElList].map((toastEl) => bootstrap.Toast.getInstance(toastEl));
   for (const toast of toastList) {
     toast.dispose();
   }
 
-  const toastLiveExample = document.getElementById('liveToast');
+  const toastLiveExample = contentRef.value.getElementById('liveToast');
   const liveToastInstance = bootstrap.Toast.getInstance(toastLiveExample);
   if (liveToastInstance) {
     liveToastInstance.dispose();

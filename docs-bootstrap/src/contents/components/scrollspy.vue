@@ -287,7 +287,7 @@
     />
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
     <p>
-      Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current document. Scroll the area and watch
+      Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current contentRef.value. Scroll the area and watch
       the <code>.active</code> class change.
     </p>
     <Example
@@ -354,10 +354,10 @@
       observable elements once the wrapper becomes visible.
     </p>
     <CodeWrapper
-      code='document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
+      code='contentRef.value.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
   el.addEventListener(&#39;shown.bs.tab&#39;, () =&gt; {
     const target = el.getAttribute(&#39;data-bs-target&#39;)
-    const scrollElem = document.querySelector(`${target} [data-bs-spy="scroll"]`)
+    const scrollElem = contentRef.value.querySelector(`${target} [data-bs-spy="scroll"]`)
     bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
   })
 })
@@ -385,7 +385,7 @@
     />
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <CodeWrapper
-      code="const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      code="const scrollSpy = new bootstrap.ScrollSpy(contentRef.value.body, {
   target: &#39;#navbar-example&#39;
 })
 "
@@ -477,7 +477,7 @@
     </div>
     <p>Here’s an example using the refresh method:</p>
     <CodeWrapper
-      code='const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy="scroll"]&#39;)
+      code='const dataSpyList = contentRef.value.querySelectorAll(&#39;[data-bs-spy="scroll"]&#39;)
 dataSpyList.forEach(dataSpyEl =&gt; {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
 })
@@ -502,7 +502,7 @@ dataSpyList.forEach(dataSpyEl =&gt; {
       </table>
     </div>
     <CodeWrapper
-      code='const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy="scroll"]&#39;)
+      code='const firstScrollSpyEl = contentRef.value.querySelector(&#39;[data-bs-spy="scroll"]&#39;)
 firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
   // do something...
 })
@@ -544,14 +544,14 @@ import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 onMounted(() => {
-  const dataSpyList = document.querySelectorAll('article.docs-content [data-bs-spy="scroll"]');
+  const dataSpyList = contentRef.value.querySelectorAll('[data-bs-spy="scroll"]');
   dataSpyList.forEach((dataSpyEl) => {
     new bootstrap.ScrollSpy(dataSpyEl);
   });
 });
 
 onBeforeUnmount(() => {
-  const dataSpyList = document.querySelectorAll('article.docs-content [data-bs-spy="scroll"]');
+  const dataSpyList = contentRef.value.querySelectorAll('[data-bs-spy="scroll"]');
   dataSpyList.forEach((dataSpyEl) => {
     bootstrap.ScrollSpy.getInstance(dataSpyEl).dispose();
   });
