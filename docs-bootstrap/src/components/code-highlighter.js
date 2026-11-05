@@ -12,7 +12,6 @@ const highlighterPromise = createHighlighterCore({
     import('@shikijs/langs/json'),
     import('@shikijs/langs/shell'),
     import('@shikijs/langs/powershell'),
-    import('@shikijs/langs/ruby'),
     import('@shikijs/langs/diff')
   ],
   engine: createJavaScriptRegexEngine()
