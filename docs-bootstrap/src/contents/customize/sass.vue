@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Sass</h1>
     <p>Utilize our source Sass files to take advantage of variables, maps, mixins, and functions to help you build faster and customize your project.</p>
 
@@ -411,7 +411,7 @@ $border-width: 0;
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#file-structure">File structure</a></li>

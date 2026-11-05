@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Position</h1>
     <p>Use these helpers for quickly configuring the position of an element.</p>
 
@@ -43,7 +43,7 @@
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#fixed-top">Fixed top</a></li>

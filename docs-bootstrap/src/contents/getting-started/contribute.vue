@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Contribute</h1>
     <p>Help develop Bootstrap with our documentation build scripts and tests.</p>
 
@@ -53,7 +53,7 @@
             <td>Runs tests locally after running <code>npm run dist</code></td>
           </tr>
           <tr>
-            <td><code>npm run docs-serve</code></td>
+            <td><code>npm run bd-serve</code></td>
             <td>Builds and runs the documentation locally.</td>
           </tr>
         </tbody>
@@ -92,7 +92,7 @@
     </p>
     <ol>
       <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install all dependencies.</li>
-      <li>From the root <code>/bootstrap</code> directory, run <code>npm run docs-serve</code> in the command line.</li>
+      <li>From the root <code>/bootstrap</code> directory, run <code>npm run bd-serve</code> in the command line.</li>
       <li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, and voilà.</li>
     </ol>
     <p>
@@ -103,7 +103,7 @@
     <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#tooling-setup">Tooling setup</a></li>

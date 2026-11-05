@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Pagination</h1>
     <p>Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
 
@@ -178,7 +178,7 @@
     <ScssDocs name="pagination-mixin" file="scss/mixins/_pagination.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

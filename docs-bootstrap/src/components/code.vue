@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-code border border-top-0 rounded-bottom" v-html="html"></div>
+  <div class="bd-code border border-top-0 rounded-bottom" v-html="html"></div>
 </template>
 
 <script setup>

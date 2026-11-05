@@ -4,7 +4,7 @@
       :aria-hidden="placeholderAriaHidden"
       :aria-label="placeholderLabel"
       :height="props.height"
-      class="docs-placeholder-img"
+      class="bd-placeholder-img"
       :class="props.class"
       :role="placeholderRole"
       :width="props.width"

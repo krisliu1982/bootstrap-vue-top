@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Stretched link</h1>
     <p>Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
 
@@ -114,7 +114,7 @@
     </ExampleCustom>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

@@ -1,5 +1,5 @@
 <template>
-  <div :class="`docs-callout docs-callout-${props.type}`">
+  <div :class="`bd-callout bd-callout-${props.type}`">
     <template v-if="props.name === 'info-npm-starter'">
       <info-npm-starter />
     </template>

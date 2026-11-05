@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Images</h1>
     <p>Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes.</p>
 
@@ -9,7 +9,7 @@
       with the parent width.
     </p>
     <ExampleCustom code='<img src="..." class="img-fluid" alt="...">'
-      ><Placeholder width="100%" height="250" class="docs-placeholder-img-lg img-fluid" text="Responsive image" />
+      ><Placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="Responsive image" />
     </ExampleCustom>
     <h2 id="image-thumbnails">Image thumbnails<a class="anchor-link" href="#image-thumbnails" aria-label="Link to Image thumbnails"></a></h2>
 
@@ -67,7 +67,7 @@
     <ScssDocs name="thumbnail-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#responsive-images">Responsive images</a></li>

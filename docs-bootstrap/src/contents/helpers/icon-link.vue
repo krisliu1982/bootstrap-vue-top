@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Icon link</h1>
     <p>Quickly create stylized hyperlinks with Bootstrap Icons or other icons.</p>
 
@@ -85,7 +85,7 @@
 </a>' />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#example">Example</a></li>

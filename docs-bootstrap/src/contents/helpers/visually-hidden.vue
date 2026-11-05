@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Visually hidden</h1>
     <p>Use these helpers to visually hide elements but keep them accessible to assistive technologies.</p>
 

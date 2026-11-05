@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Modal</h1>
     <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
 
@@ -46,7 +46,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit
       dismiss action.
     </p>
-    <div class="docs-example bg-body-tertiary border rounded-3 p-3 mb-3">
+    <div class="bd-example bg-body-tertiary border rounded-3 p-3 mb-3">
       <div class="modal position-static d-block" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -373,7 +373,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="container-fluid docs-example-row">
+            <div class="container-fluid bd-example-row">
               <div class="row">
                 <div class="col-md-4">.col-md-4</div>
                 <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
@@ -972,7 +972,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

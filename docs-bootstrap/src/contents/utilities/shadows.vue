@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Shadows</h1>
     <p>Add or remove shadows to elements with box-shadow utilities.</p>
 
@@ -27,7 +27,7 @@
     <ScssDocs name="utils-shadow" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#examples">Examples</a></li>

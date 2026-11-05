@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Accordion</h1>
     <p>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.</p>
 
@@ -308,7 +308,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

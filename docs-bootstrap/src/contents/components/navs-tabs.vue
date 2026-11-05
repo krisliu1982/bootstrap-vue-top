@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Navs and tabs</h1>
     <p>Documentation and examples for how to use Bootstrap’s included navigation components.</p>
 
@@ -768,7 +768,7 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#base-nav">Base nav</a></li>

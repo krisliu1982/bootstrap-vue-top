@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Gutters</h1>
     <p>Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid system.</p>
 
@@ -28,7 +28,7 @@
       <code>.px-4</code>:
     </p>
     <Example
-      class="docs-example-cols"
+      class="bd-example-cols"
       code='<div class="container px-4 text-center">
   <div class="row gx-5">
     <div class="col">
@@ -42,7 +42,7 @@
     />
     <p>An alternative solution is to add a wrapper around the <code>.row</code> with the <code>.overflow-hidden</code> class:</p>
     <Example
-      class="docs-example-cols"
+      class="bd-example-cols"
       code='<div class="container overflow-hidden text-center">
   <div class="row gx-5">
     <div class="col">
@@ -61,7 +61,7 @@
       <code>.overflow-hidden</code> class:
     </p>
     <Example
-      class="docs-example-cols"
+      class="bd-example-cols"
       code='<div class="container overflow-hidden text-center">
   <div class="row gy-5">
     <div class="col-6">
@@ -87,7 +87,7 @@
       <code>.overflow-hidden</code> wrapper class.
     </p>
     <Example
-      class="docs-example-cols"
+      class="bd-example-cols"
       code='<div class="container text-center">
   <div class="row g-2">
     <div class="col-6">
@@ -111,7 +111,7 @@
       responsive gutter classes.
     </p>
     <Example
-      class="docs-example-cols"
+      class="bd-example-cols"
       code='<div class="container text-center">
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
     <div class="col">
@@ -161,7 +161,7 @@
       more).
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="row g-0 text-center">
   <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
@@ -184,7 +184,7 @@ $gutters: (
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-they-work">How they work</a></li>

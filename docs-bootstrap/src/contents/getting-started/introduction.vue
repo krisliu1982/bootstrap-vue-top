@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Get started with Bootstrap</h1>
     <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
     </p>
@@ -260,7 +260,7 @@
       music videos.</p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#quick-start">Quick start</a></li>

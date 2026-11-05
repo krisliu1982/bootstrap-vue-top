@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Checks and radios</h1>
     <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
 
@@ -35,7 +35,7 @@
     <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
     <Example
      
-      class="docs-example-indeterminate"
+      class="bd-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
   <label class="form-check-label" for="checkIndeterminate">
@@ -50,7 +50,7 @@
     </p>
     <Example
      
-      class="docs-example-indeterminate"
+      class="bd-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminateDisabled" disabled>
   <label class="form-check-label" for="checkIndeterminateDisabled">
@@ -329,7 +329,7 @@
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#approach">Approach</a></li>
@@ -379,7 +379,7 @@ import { useContent } from '@/components/content-handle.js'
 import { onMounted } from 'vue';
 
 onMounted(()=>{
-    contentRef.value.querySelectorAll('.docs-example-indeterminate [type="checkbox"]')
+    contentRef.value.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
     .forEach(checkbox => {
       if (checkbox.id.includes('Indeterminate')) {
         checkbox.indeterminate = true

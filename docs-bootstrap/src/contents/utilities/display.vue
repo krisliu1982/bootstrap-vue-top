@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Display property</h1>
     <p>
       Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some
@@ -165,7 +165,7 @@
     <ScssDocs name="utils-display" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

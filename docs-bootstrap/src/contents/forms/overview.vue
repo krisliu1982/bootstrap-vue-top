@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Forms</h1>
     <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
 
@@ -110,7 +110,7 @@
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

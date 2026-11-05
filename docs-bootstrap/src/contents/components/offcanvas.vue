@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Offcanvas</h1>
     <p>Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin.</p>
 
@@ -27,7 +27,7 @@
       dismiss action.
     </p>
     <Example
-      class="docs-example-offcanvas p-0 bg-body-tertiary overflow-hidden"
+      class="bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden"
       code='<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
@@ -150,7 +150,7 @@
       </p>
     </Callout>
     <Example
-      class="docs-example-offcanvas p-0 bg-body-secondary overflow-hidden"
+      class="bd-example-offcanvas p-0 bg-body-secondary overflow-hidden"
       code='<div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasDarkLabel">Offcanvas</h5>
@@ -432,7 +432,7 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>
@@ -476,7 +476,7 @@ import { useContent } from '@/components/content-handle.js'
 import { onMounted } from 'vue';
 
 onMounted(()=>{
-  const myOffcanvas = contentRef.value.querySelectorAll('.docs-example-offcanvas .offcanvas')
+  const myOffcanvas = contentRef.value.querySelectorAll('.bd-example-offcanvas .offcanvas')
   if (myOffcanvas) {
     myOffcanvas.forEach(offcanvas => {
       offcanvas.addEventListener('show.bs.offcanvas', event => {

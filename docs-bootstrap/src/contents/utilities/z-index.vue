@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Z-index</h1>
     <p>Use our low-level `z-index` utilities to quickly change the stack level of an element or component.</p>
 
@@ -14,7 +14,7 @@
         overlapping components. High-level <code>z-index</code> values are used for overlay components like modals and tooltips.
       </p> </Callout
     ><Example
-      class="docs-example-zindex-levels position-relative"
+      class="bd-example-zindex-levels position-relative"
       code='<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
 <div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
 <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
@@ -49,7 +49,7 @@
     <ScssDocs name="utils-zindex" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#example">Example</a></li>

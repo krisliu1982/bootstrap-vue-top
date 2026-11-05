@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Containers</h1>
     <p>Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.</p>
 
@@ -184,7 +184,7 @@
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-they-work">How they work</a></li>

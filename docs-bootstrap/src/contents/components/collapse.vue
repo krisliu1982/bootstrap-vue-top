@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Collapse</h1>
     <p>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
 
@@ -279,7 +279,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

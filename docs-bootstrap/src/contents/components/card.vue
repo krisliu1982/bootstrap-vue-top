@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Cards</h1>
     <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
 
@@ -391,7 +391,7 @@
     <p class="card-text"><small>Last updated 3 mins ago</small></p>
   </div>
 </div>'><div class="card text-bg-dark">
-    <Placeholder width="100%" height="270" class="docs-placeholder-img-lg card-img" text="Card image" />
+    <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
         <div class="card-img-overlay">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -948,7 +948,7 @@
     <ScssDocs name="card-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#about">About</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>List group</h1>
     <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
 
@@ -301,7 +301,7 @@
       Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our list group to create tabbable panes of local
       content.
     </p>
-    <div class="docs-example" role="tabpanel">
+    <div class="bd-example" role="tabpanel">
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
@@ -535,7 +535,7 @@ tabElms.forEach(tabElm =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#basic-example">Basic example</a></li>

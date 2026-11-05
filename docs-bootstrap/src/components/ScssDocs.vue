@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-code-snippet">
+  <div class="bd-code-snippet">
     <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
       <a
         class="font-monospace link-secondary link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover small"

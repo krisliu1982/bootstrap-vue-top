@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Colors</h1>
     <p>Convey meaning through `color` with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
 
@@ -117,7 +117,7 @@
     <ScssDocs name="utils-color" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#colors">Colors</a></li>

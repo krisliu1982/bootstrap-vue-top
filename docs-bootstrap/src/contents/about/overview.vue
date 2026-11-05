@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>About Bootstrap</h1>
     <p>Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.</p>
 
@@ -38,7 +38,7 @@
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#team">Team</a></li>

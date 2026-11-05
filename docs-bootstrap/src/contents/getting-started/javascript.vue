@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>JavaScript</h1>
     <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
 
@@ -395,7 +395,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#individual-or-compiled">Individual or compiled</a></li>

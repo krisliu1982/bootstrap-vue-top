@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Columns</h1>
     <p>
       Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage
@@ -40,7 +40,7 @@
     <h3 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h3>
     <p>Change the vertical alignment with any of the responsive <code>align-items-*</code> classes.</p>
     <Example
-      class="docs-example-row docs-example-row-flex-cols"
+      class="bd-example-row bd-example-row-flex-cols"
       code='<div class="container text-center">
   <div class="row align-items-start">
     <div class="col">
@@ -56,7 +56,7 @@
 </div>'
     />
     <Example
-      class="docs-example-row docs-example-row-flex-cols"
+      class="bd-example-row bd-example-row-flex-cols"
       code='<div class="container text-center">
   <div class="row align-items-center">
     <div class="col">
@@ -72,7 +72,7 @@
 </div>'
     />
     <Example
-      class="docs-example-row docs-example-row-flex-cols"
+      class="bd-example-row bd-example-row-flex-cols"
       code='<div class="container text-center">
   <div class="row align-items-end">
     <div class="col">
@@ -92,7 +92,7 @@
       <code>.align-self-*</code> classes.
     </p>
     <Example
-      class="docs-example-row docs-example-row-flex-cols"
+      class="bd-example-row bd-example-row-flex-cols"
       code='<div class="container text-center">
   <div class="row">
     <div class="col align-self-start">
@@ -110,7 +110,7 @@
     <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
     <p>Change the horizontal alignment with any of the responsive <code>justify-content-*</code> classes.</p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row justify-content-start">
     <div class="col-4">
@@ -165,7 +165,7 @@
     <h3 id="column-wrapping">Column wrapping<a class="anchor-link" href="#column-wrapping" aria-label="Link to Column wrapping"></a></h3>
     <p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container">
   <div class="row">
     <div class="col-9">.col-9</div>
@@ -181,7 +181,7 @@
       <code>.row</code>s, but not every implementation method can account for this.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
@@ -200,7 +200,7 @@
       <a href="/docs-bootstrap/5.3/utilities/display">responsive display utilities</a>.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
@@ -221,7 +221,7 @@
       breakpoint (e.g., <code>.order-1.order-md-2</code>). Includes support for <code>1</code> through <code>5</code> across all six grid tiers.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col">
@@ -241,7 +241,7 @@
       <code>order: -1</code> and <code>order: 6</code>, respectively. These classes can also be intermixed with the numbered <code>.order-*</code> classes as needed.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col order-last">
@@ -293,7 +293,7 @@
       <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
         <div class="row">
           <div class="col-md-4">.col-md-4</div>
@@ -313,7 +313,7 @@
       <a href="https://getbootstrap.com/docs/5.3/examples/grid/">the grid example</a>.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
         <div class="row">
           <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
@@ -328,7 +328,7 @@
     <h4 id="margin-utilities">Margin utilities</h4>
     <p>With the move to flexbox in v4, you can use margin utilities like <code>.me-auto</code> to force sibling columns away from one another.</p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
         <div class="row">
           <div class="col-md-4">.col-md-4</div>
@@ -350,7 +350,7 @@
       row, the paddings are omitted.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="col-3 p-3 mb-2">
   .col-3: width of 25%
 </div>
@@ -401,7 +401,7 @@
     </ExampleCustom>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-they-work">How they work</a></li>

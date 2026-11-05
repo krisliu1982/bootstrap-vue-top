@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Tooltips</h1>
     <p>Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations
       and data-bs-attributes for local title storage.</p>
@@ -541,7 +541,7 @@ tooltip.hide()
     <DocsPager />
   </article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

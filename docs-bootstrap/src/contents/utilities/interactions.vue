@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Interactions</h1>
     <p>Utility classes that change how users interact with contents of a website.</p>
 
@@ -38,7 +38,7 @@
     <ScssDocs name="utils-interaction" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#text-selection">Text selection</a></li>

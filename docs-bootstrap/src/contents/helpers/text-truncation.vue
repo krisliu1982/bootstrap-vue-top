@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Text truncation</h1>
     <p>Truncate long strings of text with an ellipsis.</p>
 

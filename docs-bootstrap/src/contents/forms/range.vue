@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Range</h1>
     <p>Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
 
@@ -64,7 +64,7 @@ useContent(contentRef.value,  tocRef.value)
     <ScssDocs name="form-range-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

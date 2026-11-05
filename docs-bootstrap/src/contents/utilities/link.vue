@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Link</h1>
     <p>Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
 
@@ -88,7 +88,7 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#link-opacity">Link opacity</a></li>

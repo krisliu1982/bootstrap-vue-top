@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Tables</h1>
     <p>Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
 
@@ -16,7 +16,7 @@
     <Callout>
       <p><strong>Heads up!</strong> Because of the more complicated CSS used to generate our table variants, they most likely won’t see color mode adaptive styling until v6.</p>
     </Callout>
-    <div class="docs-example border rounded mb-3">
+    <div class="bd-example border rounded mb-3">
       <table class="table">
         <thead>
           <tr>
@@ -606,7 +606,7 @@
       A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want
       to read it.
     </p>
-    <div class="docs-example border rounded mb-3">
+    <div class="bd-example border rounded mb-3">
       <table class="table">
         <caption>
           List of users
@@ -777,7 +777,7 @@
       <strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong>
     </p>
 
-    <div v-for="breakpoint in data['breakpoints']" class="docs-example border rounded mb-3">
+    <div v-for="breakpoint in data['breakpoints']" class="bd-example border rounded mb-3">
       <p class="text-muted small mb-2">
         class: <code>table-responsive{{ breakpoint.abbr }}</code>
       </p>
@@ -866,7 +866,7 @@
     </ul>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Grid system</h1>
     <p>
       Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers, Sass variables and mixins,
@@ -19,7 +19,7 @@
         for background, terminology, guidelines, and code snippets.
       </p> </Callout
     ><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col">
@@ -167,7 +167,7 @@
       breakpoint you need and every column will be the same width.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col">
@@ -196,7 +196,7 @@
       classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col">
@@ -225,7 +225,7 @@
     <h3 id="variable-width-content">Variable width content<a class="anchor-link" href="#variable-width-content" aria-label="Link to Variable width content"></a></h3>
     <p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row justify-content-md-center">
     <div class="col col-lg-2">
@@ -262,7 +262,7 @@
       particularly sized column; otherwise, feel free to stick to <code>.col</code>.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col">col</div>
@@ -282,7 +282,7 @@
       (<code>sm</code>).
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col-sm-8">col-sm-8</div>
@@ -301,7 +301,7 @@
       all works.
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
   <div class="row">
@@ -331,7 +331,7 @@
     </p>
     <p>Use these row columns classes to quickly create basic grid layouts or to control your card layouts.</p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-2">
     <div class="col">Column</div>
@@ -341,7 +341,7 @@
   </div>
 </div>'
     /><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-3">
     <div class="col">Column</div>
@@ -351,7 +351,7 @@
   </div>
 </div>'
     /><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-auto">
     <div class="col">Column</div>
@@ -361,7 +361,7 @@
   </div>
 </div>'
     /><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-4">
     <div class="col">Column</div>
@@ -371,7 +371,7 @@
   </div>
 </div>'
     /><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-4">
     <div class="col">Column</div>
@@ -381,7 +381,7 @@
   </div>
 </div>'
     /><Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
     <div class="col">Column</div>
@@ -411,7 +411,7 @@
       rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).
     </p>
     <Example
-      class="docs-example-row"
+      class="bd-example-row"
       code='<div class="container text-center">
   <div class="row">
     <div class="col-sm-3">
@@ -561,7 +561,7 @@ $container-max-widths: (
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#example">Example</a></li>

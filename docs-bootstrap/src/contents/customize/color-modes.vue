@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Color modes</h1>
     <p>
       Bootstrap now supports color modes, or themes, as of v5.3.0. Explore our default light color mode and the new dark mode, or create your own using our styles as your template.
@@ -187,7 +187,7 @@
     </p>
     <ScssDocs name="custom-color-mode" file="site/src/scss/_content.scss" /><Example
       :showMarkup="false"
-      code='<div class="docs-example text-body bg-body" data-bs-theme="blue">
+      code='<div class="bd-example text-body bg-body" data-bs-theme="blue">
       <div class="h4">Example blue theme</div>
       <p>Some paragraph text to show how the blue theme might look with written copy.</p>
 
@@ -258,13 +258,13 @@
   setTheme(getPreferredTheme())
 
   const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#docs-theme')
+    const themeSwitcher = document.querySelector('#bd-theme')
 
     if (!themeSwitcher) {
       return
     }
 
-    const themeSwitcherText = document.querySelector('#docs-theme-text')
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
     const btnToActive = document.querySelector(`[data-bs-theme-value=&quot;${theme}&quot;]`)
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
@@ -385,7 +385,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
     <ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#dark-mode">Dark mode</a></li>

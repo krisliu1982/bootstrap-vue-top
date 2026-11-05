@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>CSS Grid</h1>
     <p>Learn how to enable, use, and customize our alternate layout system built on CSS Grid with examples and code snippets.</p>
 
@@ -81,7 +81,7 @@
       <code>.g-col-4</code> classes. Add <a href="#responsive">responsive classes</a> to change the layout by viewport size.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-4">.g-col-4</div>
   <div class="g-col-4">.g-col-4</div>
@@ -94,7 +94,7 @@
       and above.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
   <div class="g-col-6 g-col-md-4">.g-col-6 .g-col-md-4</div>
@@ -103,7 +103,7 @@
     />
     <p>Compare that to this two column layout at all viewports.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-6">.g-col-6</div>
   <div class="g-col-6">.g-col-6</div>
@@ -115,7 +115,7 @@
       <code>gap</code> applies to horizontal and vertical gaps between grid items.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-6">.g-col-6</div>
   <div class="g-col-6">.g-col-6</div>
@@ -132,7 +132,7 @@
       these properties.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-3 g-start-2">.g-col-3 .g-start-2</div>
   <div class="g-col-4 g-start-6">.g-col-4 .g-start-6</div>
@@ -141,7 +141,7 @@
     <h2 id="auto-columns">Auto columns<a class="anchor-link" href="#auto-columns" aria-label="Link to Auto columns"></a></h2>
     <p>When there are no classes on the grid items (the immediate children of a <code>.grid</code>), each grid item will automatically be sized to one column.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div>1</div>
   <div>1</div>
@@ -159,7 +159,7 @@
     />
     <p>This behavior can be mixed with grid column classes.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center">
   <div class="g-col-6">.g-col-6</div>
   <div>1</div>
@@ -183,7 +183,7 @@
     </ul>
     <p>In practice this allows for more complex and custom layouts when compared to our default grid system.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center overflow-x-auto" style="--bs-columns: 3;">
   <div>
     First auto-column
@@ -241,7 +241,7 @@
     <h3 id="no-grid-classes">No grid classes<a class="anchor-link" href="#no-grid-classes" aria-label="Link to No grid classes"></a></h3>
     <p>Immediate children elements of <code>.grid</code> are grid items, so they’ll be sized without explicitly adding a <code>.g-col</code> class.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-columns: 3;">
   <div>Auto-column</div>
   <div>Auto-column</div>
@@ -251,13 +251,13 @@
     <h3 id="columns-and-gaps">Columns and gaps<a class="anchor-link" href="#columns-and-gaps" aria-label="Link to Columns and gaps"></a></h3>
     <p>Adjust the number of columns and the gap.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-columns: 4; --bs-gap: 5rem;">
   <div class="g-col-2">.g-col-2</div>
   <div class="g-col-2">.g-col-2</div>
 </div>'
     /><Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
   <div class="g-col-6">.g-col-6</div>
   <div class="g-col-4">.g-col-4</div>
@@ -266,7 +266,7 @@
     <h3 id="adding-rows">Adding rows<a class="anchor-link" href="#adding-rows" aria-label="Link to Adding rows"></a></h3>
     <p>Adding more rows and changing the placement of columns:</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3;">
   <div>Auto-column</div>
   <div class="g-start-2" style="grid-row: 2">Auto-column</div>
@@ -279,7 +279,7 @@
       <code>column-gap</code> can be modified as needed.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="row-gap: 0;">
   <div class="g-col-6">.g-col-6</div>
   <div class="g-col-6">.g-col-6</div>
@@ -293,7 +293,7 @@
       This can be applied with an inline style for <code>gap</code>, or with our <code>--bs-gap</code> CSS variable.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-gap: .25rem 1rem;">
   <div class="g-col-6">.g-col-6</div>
   <div class="g-col-6">.g-col-6</div>
@@ -316,7 +316,7 @@
       <code>.g-col-4</code>).
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div class="grid text-center" style="--bs-columns: 18; --bs-gap: .5rem;">
   <div style="grid-column: span 14;">14 columns</div>
   <div class="g-col-4">.g-col-4</div>
@@ -324,7 +324,7 @@
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

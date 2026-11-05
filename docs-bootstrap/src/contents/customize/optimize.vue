@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Optimize</h1>
     <p>Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
 
@@ -133,7 +133,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#lean-sass-imports">Lean Sass imports</a></li>

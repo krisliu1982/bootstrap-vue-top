@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Browsers and devices</h1>
     <p>Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.</p>
 
@@ -158,7 +158,7 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

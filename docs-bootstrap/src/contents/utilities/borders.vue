@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Borders</h1>
     <p>Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
 
@@ -8,7 +8,7 @@
     <h3 id="additive">Additive<a class="anchor-link" href="#additive" aria-label="Link to Additive"></a></h3>
     <p>Add borders to custom elements:</p>
     <Example
-      class="docs-example-border-utils"
+      class="bd-example-border-utils"
   code='<span class="border"></span>
 <span class="border-top"></span>
 <span class="border-end"></span>
@@ -18,7 +18,7 @@
     <h3 id="subtractive">Subtractive<a class="anchor-link" href="#subtractive" aria-label="Link to Subtractive"></a></h3>
     <p>Or remove borders:</p>
     <Example
-      class="docs-example-border-utils"
+      class="bd-example-border-utils"
       code='<span class="border border-0"></span>
 <span class="border border-top-0"></span>
 <span class="border border-end-0"></span>
@@ -34,7 +34,7 @@
     </Callout>
     <p>Change the border color using utilities built on our theme colors.</p>
     <Example
-      class="docs-example-border-utils"
+      class="bd-example-border-utils"
       :code="
         [
           ...data['theme-colors'].map(
@@ -99,7 +99,7 @@
     />
     <h2 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h2>
     <Example
-      class="docs-example-border-utils"
+      class="bd-example-border-utils"
       code='<span class="border border-1"></span>
 <span class="border border-2"></span>
 <span class="border border-3"></span>
@@ -108,7 +108,7 @@
     />
     <h2 id="radius">Radius<a class="anchor-link" href="#radius" aria-label="Link to Radius"></a></h2>
     <p>Add classes to an element to easily round its corners.</p>
-    <ExampleCustom  class="docs-example-rounded-utils" code='<img src="..." class="rounded" alt="...">
+    <ExampleCustom  class="bd-example-rounded-utils" code='<img src="..." class="rounded" alt="...">
 <img src="..." class="rounded-top" alt="...">
 <img src="..." class="rounded-end" alt="...">
 <img src="..." class="rounded-bottom" alt="...">
@@ -122,7 +122,7 @@
       Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>5</code> including <code>circle</code> and <code>pill</code>, and can
       be configured by modifying the utilities API.
     </p>
-    <ExampleCustom  class="docs-example-rounded-utils" code='<img src="..." class="rounded-0" alt="...">
+    <ExampleCustom  class="bd-example-rounded-utils" code='<img src="..." class="rounded-0" alt="...">
 <img src="..." class="rounded-1" alt="...">
 <img src="..." class="rounded-2" alt="...">
 <img src="..." class="rounded-3" alt="...">
@@ -137,7 +137,7 @@
     <Placeholder width="75" height="75" class="rounded-5" title="Example extra large rounded image" />
     <Placeholder width="75" height="75" class="rounded-circle" title="Completely round image" />
     <Placeholder width="150" height="75" class="rounded-pill" title="Rounded pill image" /></ExampleCustom>
-    <ExampleCustom class="docs-example-rounded-utils" code='<img src="..." class="rounded-bottom-1" alt="...">
+    <ExampleCustom class="bd-example-rounded-utils" code='<img src="..." class="rounded-bottom-1" alt="...">
 <img src="..." class="rounded-start-2" alt="...">
 <img src="..." class="rounded-end-circle" alt="...">
 <img src="..." class="rounded-start-pill" alt="...">
@@ -166,7 +166,7 @@
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

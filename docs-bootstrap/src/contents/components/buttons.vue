@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Buttons</h1>
     <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
 
@@ -260,7 +260,7 @@
     </p>
     <Example
       :showMarkup="false"
-      code='<button type="button" class="btn btn-docs-primary">Custom button</button>'
+      code='<button type="button" class="btn btn-bd-primary">Custom button</button>'
     /><ScssDocs name="btn-css-vars-example" file="site/src/scss/_buttons.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="btn-variables" file="scss/_variables.scss" />
@@ -281,7 +281,7 @@
     <ScssDocs name="btn-variant-loops" file="scss/_buttons.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#base-class">Base class</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Dropdowns</h1>
     <p>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
 
@@ -1213,7 +1213,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>

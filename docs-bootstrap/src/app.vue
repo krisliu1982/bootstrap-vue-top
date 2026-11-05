@@ -75,13 +75,13 @@
 -->
 
   <div class="container-xxl">
-    <div class="docs-layout">
+    <div class="bd-layout">
       <!--       <bv-offcanvas
         ref="offcanvasRef"
         title="文档菜单"
-        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 docs-sidebar"
+        offcanvas-class="offcanvas-lg offcanvas-start flex-shrink-0 bd-sidebar"
       > -->
-      <aside class="docs-sidebar">
+      <aside class="bd-sidebar">
         <nav ref="menuRef">
           <div v-for="t in data.sidebar">
             <template v-if="t.pages">
@@ -120,7 +120,7 @@
               </div>
               <ul>
                 <li v-for="tt in t.pages">
-                  <RouterLink :to="`/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">
+                  <RouterLink :to="`/${t.slug}/${tt.slug}`" class="bd-sidebar-link" exact-active-class="active">
                     <span class="small">{{ tt['zh-CN'] }} <small>{{ tt.title }}</small></span>
                   </RouterLink>
                 </li>
@@ -128,7 +128,7 @@
             </template>
             <template v-else>
               <hr />
-              <RouterLink :to="`/${t.slug}`" class="docs-sidebar-link" exact-active-class="active">
+              <RouterLink :to="`/${t.slug}`" class="bd-sidebar-link" exact-active-class="active">
                 <span class="small">{{ t['zh-CN'] }} <small>{{ t.title }}</small></span>
               </RouterLink>
             </template>
@@ -136,7 +136,7 @@
         </nav>
       </aside>
       <!--       </bv-offcanvas> -->
-      <main class="docs-main">
+      <main class="bd-main">
         <router-view />
       </main>
     </div>
@@ -219,7 +219,7 @@ function handleViewportChange() {
     e.preventDefault();
     if (smallScreen) {
       // 找到实际点击的菜单项（向上查找）
-      const menuItem = e.target.closest('.docs-sidebar-link');
+      const menuItem = e.target.closest('.bd-sidebar-link');
       offcanvasRef.value.toggle();
     }
   });

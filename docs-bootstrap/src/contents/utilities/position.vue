@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Position</h1>
     <p>Use these shorthand utilities for quickly configuring the position of an element.</p>
 
@@ -30,7 +30,7 @@
     </ul>
     <p>(You can add more position values by adding entries to the <code>$position-values</code> Sass map variable.)</p>
     <Example
-      class="docs-example-position-utils"
+      class="bd-example-position-utils"
       code='<div class="position-relative">
   <div class="position-absolute top-0 start-0"></div>
   <div class="position-absolute top-0 end-0"></div>
@@ -47,7 +47,7 @@
       utilities, allows you to absolute center an element.
     </p>
     <Example
-      class="docs-example-position-utils"
+      class="bd-example-position-utils"
       code='<div class="position-relative">
   <div class="position-absolute top-0 start-0 translate-middle"></div>
   <div class="position-absolute top-0 start-50 translate-middle"></div>
@@ -62,7 +62,7 @@
     />
     <p>By adding <code>.translate-middle-x</code> or <code>.translate-middle-y</code> classes, elements can be positioned only in horizontal or vertical direction.</p>
     <Example
-      class="docs-example-position-utils"
+      class="bd-example-position-utils"
       code='<div class="position-relative">
   <div class="position-absolute top-0 start-0"></div>
   <div class="position-absolute top-0 start-50 translate-middle-x"></div>
@@ -78,7 +78,7 @@
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>Here are some real life examples of these classes:</p>
     <Example
-      class="docs-example-position-examples d-flex justify-content-around align-items-center"
+      class="bd-example-position-examples d-flex justify-content-around align-items-center"
       code='<button type="button" class="btn btn-primary position-relative">
   Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
 </button>
@@ -96,7 +96,7 @@
       <code>$position-values</code> variable.
     </p>
     <Example
-      class="docs-example-position-examples"
+      class="bd-example-position-examples"
       code='<div class="position-relative m-4">
   <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
     <div class="progress-bar" style="width: 50%"></div>
@@ -118,7 +118,7 @@
     <ScssDocs name="utils-position" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#position-values">Position values</a></li>

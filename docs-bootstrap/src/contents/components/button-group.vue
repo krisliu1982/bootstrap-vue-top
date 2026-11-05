@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Button group</h1>
     <p>Group a series of buttons together on a single line or stack them in a vertical column.</p>
 
@@ -218,7 +218,7 @@
 </div>' />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#basic-example">Basic example</a></li>

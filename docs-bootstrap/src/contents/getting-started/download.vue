@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Download</h1>
     <p>Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.</p>
 
@@ -17,7 +17,7 @@
     </ul>
     <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies like Popper.</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-docs-primary">Download</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-bd-primary">Download</a>
     </p>
     <h2 id="source-files">Source files<a class="anchor-link" href="#source-files" aria-label="Link to Source files"></a></h2>
     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
@@ -31,12 +31,12 @@
       for your own purposes.
     </p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-docs-primary">Download source</a>
+      <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">Download source</a>
     </p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>If you want to download and examine our <a href="https://getbootstrap.com/docs/5.3/examples">examples</a>, you can grab the already built examples:</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-docs-primary">Download Examples</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-bd-primary">Download Examples</a>
     </p>
     <h2 id="cdn-via-jsdelivr">CDN via jsDelivr<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="Link to CDN via jsDelivr"></a></h2>
     <p>Skip the download with <a href="https://www.jsdelivr.com/">jsDelivr</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.</p>
@@ -188,11 +188,11 @@ yarn start # Start the project
       for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.
     </p>
     <p>
-      <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-docs-primary">View in VS Code Marketplace</a>
+      <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">View in VS Code Marketplace</a>
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#compiled-css-and-js">Compiled CSS and JS</a></li>

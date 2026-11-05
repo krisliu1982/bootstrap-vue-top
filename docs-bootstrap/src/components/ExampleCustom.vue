@@ -1,6 +1,6 @@
 <template>
-  <div class="docs-code-snippet">
-    <div class="docs-example border rounded-top" :class="props.class">
+  <div class="bd-code-snippet">
+    <div class="bd-example border rounded-top" :class="props.class">
       <slot />
     </div>
     <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Contents</h1>
     <p>Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
 
@@ -186,7 +186,7 @@
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

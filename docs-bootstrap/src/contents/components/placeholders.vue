@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Placeholders</h1>
     <p>Use loading placeholders (skeleton loaders) for your components or pages to indicate something may still be loading.</p>
 
@@ -14,7 +14,7 @@
       two.
     </p>
     <ExampleCustom
-      class="docs-example-placeholder-cards d-flex justify-content-around"
+      class="bd-example-placeholder-cards d-flex justify-content-around"
       code='<div class="card">
   <img src="..." class="card-img-top" alt="...">
 
@@ -136,7 +136,7 @@
     <ScssDocs name="placeholders" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#about">About</a></li>

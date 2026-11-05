@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Flex</h1>
     <p>
       Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex
@@ -11,9 +11,9 @@
       Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able
       to be modified further with additional flex properties.
     </p>
-    <Example class="docs-example-flex" code='<div class="d-flex p-2">I&#39;m a flexbox container!</div>' />
+    <Example class="bd-example-flex" code='<div class="d-flex p-2">I&#39;m a flexbox container!</div>' />
     <Example
-      class="docs-example-flex"
+      class="bd-example-flex"
       code='<div class="d-inline-flex p-2">I&#39;m an inline flexbox container!</div>'
     />
     <p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
@@ -36,7 +36,7 @@
       Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex flex-row mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
@@ -50,7 +50,7 @@ code='<div class="d-flex flex-row mb-3">
 />
 <p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code> to start the vertical direction from the opposite side.</p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex flex-column mb-3">
   <div class="p-2">Flex item 1</div>
   <div class="p-2">Flex item 2</div>
@@ -85,36 +85,36 @@ code='<div class="d-flex flex-column mb-3">
       <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or
       <code>evenly</code>.
     </p>
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex justify-content-start mb-3">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">Start</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">Start</div>
       </div>
       <div class="d-flex justify-content-end mb-3">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">End</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">End</div>
       </div>
       <div class="d-flex justify-content-center mb-3">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">Center</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">Center</div>
       </div>
       <div class="d-flex justify-content-between mb-3">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">Between</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">Between</div>
       </div>
       <div class="d-flex justify-content-around mb-3">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">Around</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">Around</div>
       </div>
       <div class="d-flex justify-content-evenly">
-        <div class="p-2 docs-highlight">Justify</div>
-        <div class="p-2 docs-highlight">Content</div>
-        <div class="p-2 docs-highlight">Evenly</div>
+        <div class="p-2 bd-highlight">Justify</div>
+        <div class="p-2 bd-highlight">Content</div>
+        <div class="p-2 bd-highlight">Evenly</div>
       </div>
     </div>
     <CodeWrapper
@@ -154,7 +154,7 @@ code='<div class="d-flex flex-column mb-3">
       Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if
       <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).
     </p>
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-items-start mb-3" style="height: 100px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -215,7 +215,7 @@ code='<div class="d-flex flex-column mb-3">
       <code>flex-direction: column</code>). Choose from the same options as <code>align-items</code>: <code>start</code>, <code>end</code>, <code>center</code>,
       <code>baseline</code>, or <code>stretch</code> (browser default).
     </p>
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex mb-3" style="height: 100px">
         <div class="p-2">Flex item</div>
         <div class="align-self-start p-2">Aligned flex item</div>
@@ -276,7 +276,7 @@ code='<div class="d-flex flex-column mb-3">
       their border-boxes) while taking up all available horizontal space.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex">
   <div class="p-2 flex-fill">Flex item with a lot of content</div>
   <div class="p-2 flex-fill">Flex item</div>
@@ -295,7 +295,7 @@ code='<div class="d-flex">
       available space it can, while allowing the remaining two flex items their necessary space.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex">
   <div class="p-2 flex-grow-1">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -307,7 +307,7 @@ code='<div class="d-flex">
       <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with <code>.w-100</code>.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex">
   <div class="p-2 w-100">Flex item</div>
   <div class="p-2 flex-shrink-1">Flex item</div>
@@ -330,7 +330,7 @@ code='<div class="d-flex">
       (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>).
     </p>
     <Example
-      class="docs-example-flex"
+      class="bd-example-flex"
       code='<div class="d-flex mb-3">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -355,7 +355,7 @@ code='<div class="d-flex">
       <code>margin-top: auto</code> or <code>margin-bottom: auto</code>.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">
   <div class="mb-auto p-2">Flex item</div>
   <div class="p-2">Flex item</div>
@@ -373,7 +373,7 @@ code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200p
       Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with
       <code>.flex-nowrap</code>, wrapping with <code>.flex-wrap</code>, or reverse wrapping with <code>.flex-wrap-reverse</code>.
     </p>
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex flex-nowrap" style="width: 8rem">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -388,7 +388,7 @@ code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200p
 &lt;/div&gt;'
       lang="html"
     />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex flex-wrap">
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
@@ -412,7 +412,7 @@ code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200p
 &lt;/div&gt;'
       lang="html"
     />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex flex-wrap-reverse">
         <div class="p-2">Flex item 1</div>
         <div class="p-2">Flex item 2</div>
@@ -456,7 +456,7 @@ code='<div class="d-flex align-items-start flex-column mb-3" style="height: 200p
       reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.
     </p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div class="d-flex flex-nowrap">
   <div class="order-3 p-2">First flex item</div>
   <div class="order-2 p-2">Second flex item</div>
@@ -485,7 +485,7 @@ code='<div class="d-flex flex-nowrap">
       <code>flex-wrap: wrap</code> and increased the number of flex items.
     </p>
     <p><strong>Heads up!</strong> This property has no effect on single rows of flex items.</p>
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-start flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -510,7 +510,7 @@ code='<div class="d-flex flex-nowrap">
 &lt;/div&gt;'
       lang="html"
     />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-end flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -530,7 +530,7 @@ code='<div class="d-flex flex-nowrap">
       </div>
     </div>
     <CodeWrapper code='&lt;div class="d-flex align-content-end flex-wrap"&gt;...&lt;/div&gt;' lang="html" />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-center flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -550,7 +550,7 @@ code='<div class="d-flex flex-nowrap">
       </div>
     </div>
     <CodeWrapper code='&lt;div class="d-flex align-content-center flex-wrap"&gt;...&lt;/div&gt;' lang="html" />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-between flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -570,7 +570,7 @@ code='<div class="d-flex flex-nowrap">
       </div>
     </div>
     <CodeWrapper code='&lt;div class="d-flex align-content-between flex-wrap"&gt;...&lt;/div&gt;' lang="html" />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-around flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -590,7 +590,7 @@ code='<div class="d-flex flex-nowrap">
       </div>
     </div>
     <CodeWrapper code='&lt;div class="d-flex align-content-around flex-wrap"&gt;...&lt;/div&gt;' lang="html" />
-    <div class="docs-example docs-example-flex">
+    <div class="bd-example bd-example-flex">
       <div class="d-flex align-content-stretch flex-wrap mb-3" style="height: 200px">
         <div class="p-2">Flex item</div>
         <div class="p-2">Flex item</div>
@@ -679,7 +679,7 @@ code='<div class="d-flex flex-nowrap">
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>

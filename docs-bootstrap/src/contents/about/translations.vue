@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Translations</h1>
     <p>Links to community-translated Bootstrap documentation sites.</p>
 

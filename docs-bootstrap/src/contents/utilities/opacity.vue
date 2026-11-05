@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Opacity</h1>
     <p>Control the opacity of elements.</p>
 
@@ -8,7 +8,7 @@
       <code>.5</code> is 50% visible, and <code>0</code> is completely transparent.
     </p>
     <p>Set the <code>opacity</code> of an element using <code>.opacity-{value}</code> utilities.</p>
-    <div class="docs-example d-sm-flex">
+    <div class="bd-example d-sm-flex">
       <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
       <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
       <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
@@ -32,7 +32,7 @@
     <ScssDocs name="utils-opacity" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Clearfix</h1>
     <p>Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
 

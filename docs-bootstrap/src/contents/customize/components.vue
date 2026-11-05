@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Components</h1>
     <p>Learn how and why we build nearly all our components responsively and with base and modifier classes.</p>
 
@@ -44,7 +44,7 @@
     </p>
     <Example
       :showMarkup="false"
-      code='<div class="docs-callout my-0">
+      code='<div class="bd-callout my-0">
       <strong>This is a callout.</strong> We built it custom for our docs so our messages to you stand out. It has three variants via modifier classes.
     </div>
     '
@@ -78,7 +78,7 @@
     </Callout>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#base-classes">Base classes</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Reboot</h1>
     <p>Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon.</p>
 
@@ -179,7 +179,7 @@ sans-serif,
       All lists—<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code>—have their <code>margin-top</code> removed and a <code>margin-bottom: 1rem</code>.
       Nested lists have no <code>margin-bottom</code>. We’ve also reset the <code>padding-left</code> on <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements.
     </p>
-    <div class="docs-example">
+    <div class="bd-example">
       * All lists have their top margin removed * And their bottom margin normalized * Nested lists have no bottom margin * This way they have a more even appearance * Particularly
       when followed by more list items * The left padding has also been reset
       <ol>
@@ -495,7 +495,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     </p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#approach">Approach</a></li>

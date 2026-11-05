@@ -1,5 +1,5 @@
 <template>
-  <div class="docs-example border rounded mb-3">
+  <div class="bd-example border rounded mb-3">
     <table :class="props.class">
       <thead>
         <tr>

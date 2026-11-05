@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Stacks</h1>
     <p>Shorthand helpers that build on top of our flexbox utilities to make component layout faster and easier than
       ever.</p>
@@ -20,7 +20,7 @@
     <h2 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h2>
     <p>Use <code>.vstack</code> to create vertical layouts. Stacked items are full-width by default. Use
       <code>.gap-*</code> utilities to add space between items.</p>
-    <Example class="docs-example-flex" code='<div class="vstack gap-3">
+    <Example class="bd-example-flex" code='<div class="vstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2">Second item</div>
   <div class="p-2">Third item</div>
@@ -31,19 +31,19 @@
       their necessary width. Use <code>.gap-*</code> utilities to
       add space between items.
     </p>
-    <Example class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="bd-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2">Second item</div>
   <div class="p-2">Third item</div>
 </div>' />
     <p>Using horizontal margin utilities like <code>.ms-auto</code> as spacers:</p>
-    <Example class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="bd-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="p-2">Third item</div>
 </div>' />
     <p>And with <a href="/docs-bootstrap/5.3/helpers/vertical-rule">vertical rules</a>:</p>
-    <Example class="docs-example-flex" code='<div class="hstack gap-3">
+    <Example class="bd-example-flex" code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
   <div class="vr"></div>
@@ -66,7 +66,7 @@
     <ScssDocs name="stacks" file="scss/helpers/_stacks.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#vertical">Vertical</a></li>

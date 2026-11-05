@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Alerts</h1>
     <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 
@@ -267,7 +267,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Sizing</h1>
     <p>Easily make an element as wide or as tall with our width and height utilities.</p>
 
@@ -9,14 +9,14 @@
       <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.
     </p>
 <Example
-  class="docs-example-flex"
+  class="bd-example-flex"
   code='<div class="w-25 p-3">Width 25%</div>
 <div class="w-50 p-3">Width 50%</div>
 <div class="w-75 p-3">Width 75%</div>
 <div class="w-100 p-3">Width 100%</div>
 <div class="w-auto p-3">Width auto</div>'
 /><Example
-  class="docs-example-flex"
+  class="bd-example-flex"
   code='<div style="height: 100px;">
   <div class="h-25 d-inline-block" style="width: 120px;">Height 25%</div>
   <div class="h-50 d-inline-block" style="width: 120px;">Height 50%</div>
@@ -27,12 +27,12 @@
 />
     <p>You can also use <code>max-width: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
 <Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div style="width: 50%; height: 100px;">
   <div class="mw-100" style="width: 200%;">Max-width 100%</div>
 </div>'
 /><Example
-class="docs-example-flex"
+class="bd-example-flex"
 code='<div style="height: 100px;">
   <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
 </div>'
@@ -55,7 +55,7 @@ code='<div style="height: 100px;">
     <ScssDocs name="utils-sizing" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#relative-to-the-parent">Relative to the parent</a></li>

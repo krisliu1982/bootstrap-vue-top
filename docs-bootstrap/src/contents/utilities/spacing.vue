@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Spacing</h1>
     <p>Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
 
@@ -97,7 +97,7 @@
     </p>
     <Example
       :showMarkup="false"
-      code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--docs-violet-rgb),.15); border: rgba(var(--docs-violet-rgb),.3) solid 1px;">
+      code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--bd-violet-rgb),.15); border: rgba(var(--bd-violet-rgb),.3) solid 1px;">
   Centered element
 </div>'
     />
@@ -130,7 +130,7 @@
       <code>$spacers</code> Sass map.
     </p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
   <div class="p-2">Grid item 1</div>
   <div class="p-2">Grid item 2</div>
@@ -145,7 +145,7 @@
     <h3 id="row-gap">row-gap<a class="anchor-link" href="#row-gap" aria-label="Link to row-gap"></a></h3>
     <p><code>row-gap</code> sets the vertical space between children items in the specified container.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 row-gap-3">
   <div class="p-2">Grid item 1</div>
   <div class="p-2">Grid item 2</div>
@@ -156,7 +156,7 @@
     <h3 id="column-gap">column-gap<a class="anchor-link" href="#column-gap" aria-label="Link to column-gap"></a></h3>
     <p><code>column-gap</code> sets the horizontal space between children items in the specified container.</p>
     <Example
-      class="docs-example-cssgrid"
+      class="bd-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3">
   <div class="p-2">Grid item 1</div>
   <div class="p-2">Grid item 2</div>
@@ -176,7 +176,7 @@
     <ScssDocs name="utils-spacing" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>

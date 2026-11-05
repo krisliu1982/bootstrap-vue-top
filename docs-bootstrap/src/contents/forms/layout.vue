@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Layout</h1>
     <p>Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
 
@@ -339,7 +339,7 @@
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#forms">Forms</a></li>

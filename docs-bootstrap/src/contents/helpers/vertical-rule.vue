@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Vertical rule</h1>
     <p>Use the custom vertical rule helper to create vertical dividers like the `&lt;hr&gt;` element.</p>
 
@@ -25,7 +25,7 @@
     <h2 id="with-stacks">With stacks<a class="anchor-link" href="#with-stacks" aria-label="Link to With stacks"></a></h2>
     <p>They can also be used in <a href="/docs-bootstrap/5.3/helpers/stacks">stacks</a>:</p>
     <Example
-      class="docs-example-flex"
+      class="bd-example-flex"
       code='<div class="hstack gap-3">
   <div class="p-2">First item</div>
   <div class="p-2 ms-auto">Second item</div>
@@ -39,7 +39,7 @@
     <ScssDocs name="vr-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Ratios</h1>
     <p>
       Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of
@@ -35,7 +35,7 @@
     <h2 id="aspect-ratios">Aspect ratios<a class="anchor-link" href="#aspect-ratios" aria-label="Link to Aspect ratios"></a></h2>
     <p>Aspect ratios can be customized with modifier classes. By default the following ratio classes are provided:</p>
     <Example
-      class="docs-example-ratios"
+      class="bd-example-ratios"
       code='<div class="ratio ratio-1x1">
   <div>1x1</div>
 </div>
@@ -56,7 +56,7 @@
     </p>
     <p>For example, to create a 2x1 aspect ratio, set <code>--bs-aspect-ratio: 50%</code> on the <code>.ratio</code>.</p>
     <Example
-      class="docs-example-ratios"
+      class="bd-example-ratios"
       code='<div class="ratio" style="--bs-aspect-ratio: 50%;">
   <div>2x1</div>
 </div>'
@@ -71,7 +71,7 @@
       lang="scss"
     />
     <Example
-      class="docs-example-ratios docs-example-ratios-breakpoint"
+      class="bd-example-ratios bd-example-ratios-breakpoint"
       code='<div class="ratio ratio-4x3">
   <div>4x3, then 2x1</div>
 </div>'
@@ -84,7 +84,7 @@
     <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#about">About</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="docs-content">
+  <article ref="contentRef" class="bd-content">
     <h1>Icons</h1>
     <p>Guidance and suggestions for using external icon libraries with Bootstrap.</p>
 
@@ -33,7 +33,7 @@
     </ul>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#bootstrap-icons">Bootstrap Icons</a></li>
