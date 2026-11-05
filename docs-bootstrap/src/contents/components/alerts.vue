@@ -303,7 +303,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
 </template>
 
 <script setup>import {ref, onMounted} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
-import { useContent } from '@/components/content-handle.js'
+import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
 
 

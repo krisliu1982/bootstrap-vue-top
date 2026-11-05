@@ -17,26 +17,12 @@ import snippetsContent from './partials/snippets.js?raw'
 
 // These values will be replaced by Astro's Vite plugin
 const CONFIG = {
-  cssCdn: '__CSS_CDN__',
-  jsBundleCdn: '__JS_BUNDLE_CDN__',
+  cssCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css',
+  jsBundleCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js',
   docsVersion: '5.3'
 }
 
 // Open in StackBlitz logic
-document.querySelectorAll('.btn-edit').forEach(btn => {
-  btn.addEventListener('click', event => {
-    const codeSnippet = event.target.closest('.bd-code-snippet')
-    const exampleEl = codeSnippet.querySelector('.bd-example')
-
-    const htmlSnippet = exampleEl.innerHTML
-    const jsSnippet = codeSnippet.querySelector('.btn-edit').getAttribute('data-sb-js-snippet')
-    // Get extra classes for this example
-    const classes = Array.from(exampleEl.classList).join(' ')
-
-    openBootstrapSnippet(htmlSnippet, jsSnippet, classes)
-  })
-})
-
 export default (event) => {
     const codeSnippet = event.target.closest('.bd-code-snippet')
     const exampleEl = codeSnippet.querySelector('.bd-example')

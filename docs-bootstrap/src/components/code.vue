@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { highlightCode } from './code-highlighter.js';
+import { highlightCode } from '@/assets/code-highlighter.js';
 
 const html = ref(null);
 

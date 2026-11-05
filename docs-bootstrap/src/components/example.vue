@@ -1,11 +1,12 @@
 <template>
   <div class="bd-code-snippet">
-    <div class="bd-example border rounded-top" :class="{ 'rounded-bottom': !showMarkup, [props.class]: props.class !== null }" v-html="props.code"></div>
+    <div class="bd-example border rounded-top"
+      :class="{ 'rounded-bottom': !showMarkup, [props.class]: props.class !== null }" v-html="props.code"></div>
     <template v-if="props.showMarkup">
       <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
         <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
         <div class="ms-auto">
-          <a v-if="props.addStackblitzJs" role="button" class="text-body me-3" title="Edit" aria-label="Edit">
+          <a :data-sb-js-snippet="props.addStackblitzJs ? true : undefined" role="button" class="text-body me-3" title="Edit" aria-label="Edit" @click="handleEdit($event)">
             <bi-lightning-charge-fill />
           </a>
           <BiCheckLg v-if="isCopy" class="text-success" />
@@ -22,6 +23,7 @@
 <script setup>
 import { ref } from 'vue';
 import Code from './Code.vue';
+import handleEdit from '@/assets/stackblitz.js';
 
 const props = defineProps({
   addStackblitzJs: {

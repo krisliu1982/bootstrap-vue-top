@@ -498,7 +498,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 </template>
 
 <script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
-import { useContent } from '@/components/content-handle.js'
+import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 
