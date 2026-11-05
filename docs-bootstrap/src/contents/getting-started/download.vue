@@ -143,8 +143,7 @@ yarn start # Start the project
       >:
     </p>
     <CodeWrapper
-      code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;
-"
+      code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;"
       lang="ruby"
     />
     <p>Alternatively, if you’re not using Bundler, you can install the gem by running this command:</p>
