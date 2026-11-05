@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Flex</h1>
     <p>
       Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex
@@ -679,7 +679,7 @@ code='<div class="d-flex flex-nowrap">
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#enable-flex-behaviors">Enable flex behaviors</a></li>
@@ -709,7 +709,7 @@ code='<div class="d-flex flex-nowrap">
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

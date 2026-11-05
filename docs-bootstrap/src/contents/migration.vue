@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Migrating to v5</h1>
     <p>Track and review changes to the Bootstrap source files, documentation, and components to help you migrate from v4 to v5.</p>
 
@@ -1405,7 +1405,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
     </ul>
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>
@@ -1477,7 +1477,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

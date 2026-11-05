@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Sass</h1>
     <p>Utilize our source Sass files to take advantage of variables, maps, mixins, and functions to help you build faster and customize your project.</p>
 
@@ -411,7 +411,7 @@ $border-width: 0;
     />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#file-structure">File structure</a></li>
@@ -447,7 +447,7 @@ $border-width: 0;
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Tables</h1>
     <p>Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
 
@@ -866,7 +866,7 @@
     </ul>
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -919,7 +919,7 @@
     </ul>
   </nav>
 </template>
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

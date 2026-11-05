@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Gutters</h1>
     <p>Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid system.</p>
 
@@ -184,7 +184,7 @@ $gutters: (
     />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-they-work">How they work</a></li>
@@ -201,7 +201,7 @@ $gutters: (
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

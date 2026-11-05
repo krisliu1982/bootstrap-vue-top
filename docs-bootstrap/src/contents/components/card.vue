@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Cards</h1>
     <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
 
@@ -948,7 +948,7 @@
     <ScssDocs name="card-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#about">About</a></li>
@@ -1009,7 +1009,7 @@
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

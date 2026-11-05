@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Approach</h1>
     <p>Learn about the guiding principles, strategies, and techniques used to build and maintain Bootstrap so you can more easily customize and extend it yourself.</p>
 
@@ -127,7 +127,7 @@
     <p>We use <a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a> to enforce standard and semantic HTML, as well as detecting common errors.</p>
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#summary">Summary</a></li>
@@ -151,7 +151,7 @@
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

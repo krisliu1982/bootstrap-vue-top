@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Range</h1>
     <p>Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
 
@@ -64,7 +64,7 @@ useContent()
     <ScssDocs name="form-range-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -82,6 +82,6 @@ useContent()
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Figures</h1>
     <p>Documentation and examples for displaying related images and text with the figure component in Bootstrap.</p>
 
@@ -43,7 +43,7 @@
     <ScssDocs name="figure-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>
@@ -56,7 +56,7 @@
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

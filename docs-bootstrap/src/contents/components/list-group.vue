@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>List group</h1>
     <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
 
@@ -535,7 +535,7 @@ tabElms.forEach(tabElm =&gt; {
     />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#basic-example">Basic example</a></li>
@@ -576,7 +576,7 @@ tabElms.forEach(tabElm =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

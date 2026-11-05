@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Translations</h1>
     <p>Links to community-translated Bootstrap documentation sites.</p>
 
@@ -14,7 +14,7 @@
   <DocsPager /></article>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

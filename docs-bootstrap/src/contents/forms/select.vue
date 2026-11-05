@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Select</h1>
     <p>Customize the native `&lt;select&gt;`s with custom CSS that changes the element’s initial appearance.</p>
 
@@ -66,7 +66,7 @@
     <ScssDocs name="form-select-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#default">Default</a></li>
@@ -82,7 +82,7 @@
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Color</h1>
     <p>Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
 
@@ -631,7 +631,7 @@ $utilities: map-merge(
     <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the same for any other utility and property as well.</p>
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>
@@ -657,7 +657,7 @@ $utilities: map-merge(
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import data from '@/data/data.js';
 

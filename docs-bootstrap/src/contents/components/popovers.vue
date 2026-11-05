@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Popovers</h1>
     <p>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
 
@@ -535,7 +535,7 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
     />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -569,7 +569,7 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';

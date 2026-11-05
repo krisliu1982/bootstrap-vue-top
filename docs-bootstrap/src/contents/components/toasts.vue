@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Toasts</h1>
     <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
 
@@ -460,7 +460,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
     />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -497,7 +497,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';

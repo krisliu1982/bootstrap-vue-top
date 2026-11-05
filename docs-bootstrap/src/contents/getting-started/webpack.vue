@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Bootstrap and Webpack</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Webpack.</p>
 
@@ -442,7 +442,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     <GuideFooter />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#what-is-webpack">What is Webpack?</a></li>
@@ -461,7 +461,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

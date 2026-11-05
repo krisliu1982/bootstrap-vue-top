@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Text</h1>
     <p>Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
 
@@ -132,7 +132,7 @@ code='<p class="text-body-secondary">
     <ScssDocs name="utils-text" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#text-alignment">Text alignment</a></li>
@@ -157,7 +157,7 @@ code='<p class="text-body-secondary">
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

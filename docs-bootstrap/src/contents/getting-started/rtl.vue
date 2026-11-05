@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>RTL</h1>
     <p>Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
 
@@ -222,7 +222,7 @@ dt {
     </ul>
   <DocsPager /></article>
 
-  <nav class="docs-toc" aria-label="On this page">
+  <nav ref="tocRef" class="docs-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#get-familiar">Get familiar</a></li>
@@ -251,7 +251,7 @@ dt {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()

@@ -1,5 +1,5 @@
 <template>
-  <article class="docs-content">
+  <article ref="contentRef" class="docs-content">
     <h1>Z-index</h1>
     <p>While not a part of Bootstrap’s grid system, z-indexes play an important part in how our components overlay and interact with one another.</p>
 
@@ -21,7 +21,7 @@
   <DocsPager /></article>
 </template>
 
-<script setup>
+<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
 import { useContent } from '@/components/content-handle.js'
 
 useContent()
