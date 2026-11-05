@@ -2,9 +2,8 @@ import { onMounted, onBeforeUnmount } from 'vue'
 import { useHead } from '@unhead/vue'
 import * as bootstrap from 'bootstrap';
 
-export function useContent() {
+export function useContent(articleEl, tocEl) {
     onMounted(() => {
-        const articleEl = document.querySelector('article.docs-content')
         const titleEl = articleEl.querySelector('h1')
         const descriptionEl = articleEl.querySelector('h1+p')
         useHead({
@@ -14,7 +13,6 @@ export function useContent() {
             ]
         })
 
-        const tocEl = document.querySelector('nav.docs-toc')
         if (tocEl) {
             new bootstrap.ScrollSpy(articleEl, {
                 target: tocEl
@@ -23,10 +21,7 @@ export function useContent() {
     })
 
     onBeforeUnmount(() => {
-
-        const tocEl = document.querySelector('nav.docs-toc')
         if (tocEl) {
-            const articleEl = document.querySelector('article.docs-content')
             bootstrap.ScrollSpy.getInstance(articleEl).dispose()
         }
     })
