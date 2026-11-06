@@ -45,8 +45,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       <code>data-bs-title</code> and body content is set via <code>data-bs-content</code>.
     </p>
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
-    <Example
-     
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>'
     />
     <h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
@@ -54,8 +53,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       Four options are available: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL. Set
       <code>data-bs-placement</code> to change the direction.
     </p>
-    <Example
-     
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
   Popover on top
 </button>
@@ -100,8 +98,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       <code>data-bs-custom-class=&quot;custom-popover&quot;</code> to scope our custom appearance and use it to override some of the local CSS variables.
     </p>
     <ScssDocs name="custom-popovers" file="site/src/scss/_component-examples.scss" />
-    <Example
-     
+    <Example addStackblitzJs
       class="custom-popover-demo"
       code='<button type="button" class="btn btn-secondary"
         data-bs-toggle="popover" data-bs-placement="right"
@@ -121,8 +118,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
         >.
       </p>
     </Callout>
-    <Example
-     
+    <Example addStackblitzJs
       code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>'
     />
     <CodeWrapper
@@ -141,8 +137,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       For disabled popover triggers, you may also prefer <code>data-bs-trigger=&quot;hover focus&quot;</code> so that the popover appears as immediate visual feedback to your users
       as they may not expect to <em>click</em> on a disabled element.
     </p>
-    <Example
-     
+    <Example addStackblitzJs
       code='<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
   <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>'

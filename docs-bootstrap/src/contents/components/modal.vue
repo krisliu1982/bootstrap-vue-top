@@ -451,8 +451,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       Below is a live demo followed by example HTML and JavaScript. For more information,
       <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.
     </p>
-    <Example
-     
+    <Example addStackblitzJs
       code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>

@@ -171,8 +171,7 @@
       the positioning styles right on the
       <code>.toast</code>.
     </p>
-    <Example
-     
+    <Example addStackblitzJs
       code='<form>
   <div class="mb-3">
     <label for="selectToastPlacement">Toast placement</label>

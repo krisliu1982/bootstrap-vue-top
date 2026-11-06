@@ -45,7 +45,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <h3 id="tooltips-on-links">Tooltips on links<a class="anchor-link" href="#tooltips-on-links"
         aria-label="Link to Tooltips on links"></a></h3>
     <p>Hover over the links below to see tooltips:</p>
-    <Example class="tooltip-demo"
+    <Example addStackblitzJs class="tooltip-demo"
       code='<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>' />
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <h3 id="custom-tooltips">Custom tooltips<a class="anchor-link" href="#custom-tooltips"
@@ -58,7 +58,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
       a local CSS variable.
     </p>
     <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" />
-    <Example class="tooltip-demo" code='<button type="button" class="btn btn-secondary"
+    <Example addStackblitzJs class="tooltip-demo" code='<button type="button" class="btn btn-secondary"
         data-bs-toggle="tooltip" data-bs-placement="top"
         data-bs-custom-class="custom-tooltip"
         data-bs-title="This top tooltip is themed via CSS variables.">
@@ -67,7 +67,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <h3 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h3>
     <p>Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are
       mirrored when using Bootstrap in RTL.</p>
-    <Example class="tooltip-demo" code='<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+    <Example addStackblitzJs class="tooltip-demo" code='<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
   Tooltip on top
 </button>
 <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">

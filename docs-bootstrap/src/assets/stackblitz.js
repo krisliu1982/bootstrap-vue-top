@@ -28,7 +28,7 @@ export default (event) => {
     const exampleEl = codeSnippet.querySelector('.bd-example')
 
     const htmlSnippet = exampleEl.innerHTML
-    const jsSnippet = event.target.getAttribute('data-sb-js-snippet')
+    const jsSnippet = event.currentTarget.getAttribute('data-sb-js-snippet')
     // Get extra classes for this example
     const classes = Array.from(exampleEl.classList).join(' ')
 

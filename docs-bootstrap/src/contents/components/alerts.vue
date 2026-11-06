@@ -28,8 +28,7 @@
     <Callout name="warning-color-assistive-technologies" />
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
-    <Example
-     
+    <Example addStackblitzJs
       code='<div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>'
     />

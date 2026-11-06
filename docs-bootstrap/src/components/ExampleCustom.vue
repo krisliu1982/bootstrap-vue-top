@@ -6,9 +6,9 @@
     <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">
       <small class="font-monospace text-body-secondary text-uppercase">{{ props.lang }}</small>
       <div class="ms-auto">
-        <a v-if="props.addStackblitzJs" role="button" class="text-body me-3" title="Edit" aria-label="Edit">
-          <bi-lightning-charge-fill />
-        </a>
+          <a :data-sb-js-snippet="props.addStackblitzJs ? true : undefined" role="button" class="text-body me-3" title="Edit" aria-label="Edit" @click="handleEdit($event)">
+            <bi-lightning-charge-fill />
+          </a>
         <BiCheckLg v-if="isCopy" class="text-success" />
         <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
           <BiCopy />
@@ -22,6 +22,7 @@
 <script setup>
 import { ref } from 'vue';
 import Code from './Code.vue';
+import handleEdit from '@/assets/stackblitz.js';
 
 const props = defineProps({
   addStackblitzJs: {

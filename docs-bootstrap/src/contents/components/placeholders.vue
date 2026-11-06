@@ -12,9 +12,36 @@
     <p>
       In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the
       two.
-    </p>
-    <ExampleCustom
-      class="bd-example-placeholder-cards d-flex justify-content-around"
+    </p>      
+        <div class="bd-code-snippet">
+          <div class="bd-example border rounded-top bd-example-placeholder-cards d-flex justify-content-around">
+<div class="card">
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" background="#20c997" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+            <div class="card" aria-hidden="true">
+        <Placeholder width="100%" height="180" class="card-img-top" :text="false" />
+        <div class="card-body">
+          <div class="h5 card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </div>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+        </div>
+      </div>
+          </div>
+</div>
+    <CodeWrapper    
       code='<div class="card">
   <img src="..." class="card-img-top" alt="...">
 
@@ -40,34 +67,8 @@
     </p>
     <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
   </div>
-</div>'
-    >
-      <div class="card">
-        <Placeholder width="100%" height="180" class="card-img-top" :text="false" background="#20c997" />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+</div>' lang="html"/>
 
-      <div class="card" aria-hidden="true">
-        <Placeholder width="100%" height="180" class="card-img-top" :text="false" />
-        <div class="card-body">
-          <div class="h5 card-title placeholder-glow">
-            <span class="placeholder col-6"></span>
-          </div>
-          <p class="card-text placeholder-glow">
-            <span class="placeholder col-7"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-6"></span>
-            <span class="placeholder col-8"></span>
-          </p>
-          <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-        </div>
-      </div>
-    </ExampleCustom>
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>
       Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text
