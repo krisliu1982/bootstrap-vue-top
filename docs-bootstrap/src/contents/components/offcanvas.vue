@@ -141,7 +141,7 @@
 </div>' />
     <h2 id="dark-offcanvas">Dark offcanvas<a class="anchor-link" href="#dark-offcanvas"
         aria-label="Link to Dark offcanvas"></a></h2>
-    <DeprecatedIn version="5.3.0" />
+    <DeprecatedIn version="5.3.0" class="me-2"/>
     <AddedIn version="5.2.0" />
     <p>
       Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars.
@@ -490,9 +490,7 @@ onMounted(() => {
   const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
   if (myOffcanvas) {
     myOffcanvas.forEach(offcanvas => {
-      offcanvas.addEventListener('show.bs.offcanvas', event => {
-        event.preventDefault()
-      }, false)
+      offcanvas.classList.remove('show')
     })
   }
 })
