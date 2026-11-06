@@ -13,7 +13,7 @@
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <RouterLink to="/docs" class="link-body-emphasis text-decoration-none fw-bold">中文文档 </RouterLink>
+              <RouterLink to="/docs" class="link-body-emphasis text-decoration-none fw-bold">中文文档</RouterLink>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/"
                 target="_blank" rel="noopener">示例</a>
               <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank"
@@ -21,11 +21,11 @@
               <a class="link-body-emphasis text-decoration-none" href="https://blog.getbootstrap.com/" target="_blank"
                 rel="noopener">博客</a>
               <div class="vr"></div>
-              <a class="link-body-emphasis text-decoration-none" href="https://github.com/twbs" target="_blank"
+              <a class="link-body-emphasis text-decoration-none" title="github" href="https://github.com/twbs" target="_blank"
                 rel="noopener"><bi-github /></a>
-              <a class="link-body-emphasis text-decoration-none" href="https://x.com/getbootstrap" target="_blank"
+              <a class="link-body-emphasis text-decoration-none" title="twitter-x" href="https://x.com/getbootstrap" target="_blank"
                 rel="noopener"><bi-twitter-x /></a>
-              <a class="link-body-emphasis text-decoration-none" href="https://opencollective.com/bootstrap" target="_blank"
+              <a class="link-body-emphasis text-decoration-none" title="open collective" href="https://opencollective.com/bootstrap" target="_blank"
                 rel="noopener"><bi-opencollective /></a>
               <div class="vr"></div>
               <div class="dropdown">
