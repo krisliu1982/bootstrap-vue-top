@@ -821,6 +821,7 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
 <script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
+import * as bootstrap from 'bootstrap';
 
 let articleEl = null;
 

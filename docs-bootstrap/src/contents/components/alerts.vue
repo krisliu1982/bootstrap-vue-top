@@ -305,7 +305,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
 <script setup>
 import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
-
+import { onMounted } from 'vue';
 
 onMounted(()=> {
     const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
