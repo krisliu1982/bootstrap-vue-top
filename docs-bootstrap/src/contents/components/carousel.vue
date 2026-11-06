@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Carousel</h1>
     <p>A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
 
@@ -775,7 +775,7 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>
@@ -818,20 +818,25 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
+
+let articleEl = null;
+
 onMounted(() => {
-    contentRef.value.querySelectorAll('.carousel')
+        articleEl = document.querySelector('article.bd-content')
+
+    articleEl.querySelectorAll('.carousel')
     .forEach(carousel => {
       new bootstrap.Carousel(carousel)
     })
 });
 onBeforeUnmount(() => {
-    contentRef.value.querySelectorAll('.carousel')
+    articleEl.querySelectorAll('.carousel')
     .forEach(carousel => {
       bootstrap.Carousel.getInstance(carousel).dispose()
     })
 });
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

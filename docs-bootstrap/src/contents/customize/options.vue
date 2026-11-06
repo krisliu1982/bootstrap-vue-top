@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Options</h1>
     <p>Quickly customize Bootstrap with built-in variables to easily toggle global CSS preferences for controlling style and behavior.</p>
 
@@ -133,8 +133,8 @@
   <DocsPager /></article>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

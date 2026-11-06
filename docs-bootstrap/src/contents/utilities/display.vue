@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Display property</h1>
     <p>
       Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some
@@ -165,7 +165,7 @@
     <ScssDocs name="utils-display" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>
@@ -183,8 +183,8 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

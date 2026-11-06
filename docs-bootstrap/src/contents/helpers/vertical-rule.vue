@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Vertical rule</h1>
     <p>Use the custom vertical rule helper to create vertical dividers like the `&lt;hr&gt;` element.</p>
 
@@ -39,7 +39,7 @@
     <ScssDocs name="vr-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>
@@ -55,8 +55,8 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Contents</h1>
     <p>Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
 
@@ -186,7 +186,7 @@
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>
@@ -204,8 +204,8 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

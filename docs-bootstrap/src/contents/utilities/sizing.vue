@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Sizing</h1>
     <p>Easily make an element as wide or as tall with our width and height utilities.</p>
 
@@ -55,7 +55,7 @@ code='<div style="height: 100px;">
     <ScssDocs name="utils-sizing" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#relative-to-the-parent">Relative to the parent</a></li>
@@ -70,8 +70,8 @@ code='<div style="height: 100px;">
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

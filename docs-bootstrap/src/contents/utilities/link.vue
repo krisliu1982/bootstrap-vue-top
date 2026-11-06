@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Link</h1>
     <p>Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
 
@@ -88,7 +88,7 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#link-opacity">Link opacity</a></li>
@@ -112,13 +112,13 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
 import { onMounted } from 'vue';
 
 onMounted(()=>{
-  contentRef.value.querySelectorAll('[href="#"]')
+  document.querySelectorAll('.bd-content [href="#"]')
     .forEach(link => {
       link.addEventListener('click', event => {
         event.preventDefault()
@@ -126,5 +126,5 @@ onMounted(()=>{
     })
 })
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

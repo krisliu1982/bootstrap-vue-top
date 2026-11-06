@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Badges</h1>
     <p>Documentation and examples for badges, our small count and labeling component.</p>
 
@@ -82,7 +82,7 @@
     <ScssDocs name="badge-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li>
@@ -106,9 +106,9 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Modal</h1>
     <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
 
@@ -972,7 +972,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#how-it-works">How it works</a></li>
@@ -1019,12 +1019,12 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted } from 'vue';
 
 onMounted(()=>{
-  const exampleModal = contentRef.value.getElementById('exampleModal')
+  const exampleModal = document.getElementById('exampleModal')
   if (exampleModal) {
     exampleModal.addEventListener('show.bs.modal', event => {
       // Button that triggered the modal
@@ -1044,5 +1044,5 @@ onMounted(()=>{
   }
 })
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

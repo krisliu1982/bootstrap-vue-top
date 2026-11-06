@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Bootstrap and Vite</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Vite.</p>
 
@@ -250,7 +250,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
     <GuideFooter />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#what-is-vite">What is Vite?</a></li>
@@ -265,8 +265,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

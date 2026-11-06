@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Translations</h1>
     <p>Links to community-translated Bootstrap documentation sites.</p>
 
@@ -14,9 +14,9 @@
   <DocsPager /></article>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

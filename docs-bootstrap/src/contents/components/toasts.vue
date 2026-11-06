@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Toasts</h1>
     <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
 
@@ -326,7 +326,7 @@
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Initialize toasts via JavaScript:</p>
     <CodeWrapper
-      code="const toastElList = contentRef.value.querySelectorAll(&#39;.toast&#39;)
+      code="const toastElList = articleEl.querySelectorAll(&#39;.toast&#39;)
 const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
 "
       lang="javascript"
@@ -386,7 +386,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element. <br />
-              For example: <code>const myToastEl = contentRef.value.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a
+              For example: <code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a
               Bootstrap toast instance.
             </td>
           </tr>
@@ -394,7 +394,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getOrCreateInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element, or create a new one, in case it wasn’t initialized. <br /><code
-                >const myToastEl = contentRef.value.getElementById(&#39;myToastEl&#39;)</code
+                >const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code
               >
               <code>const myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)</code> Returns a Bootstrap toast instance.
             </td>
@@ -452,7 +452,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
       </table>
     </div>
     <CodeWrapper
-      code="const myToastEl = contentRef.value.getElementById(&#39;myToast&#39;)
+      code="const myToastEl = articleEl.getElementById(&#39;myToast&#39;)
 myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   // do something...
 })"
@@ -460,7 +460,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -497,13 +497,17 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 
+let articleEl = null;
+
 onMounted(() => {
-  const toastElList = contentRef.value.querySelectorAll('.toast');
+    articleEl = document.querySelector('article.bd-content')
+
+  const toastElList = articleEl.querySelectorAll('.bd-example .toast');
   const toastList = [...toastElList].map(
     (toastEl) =>
       new bootstrap.Toast(toastEl, {
@@ -515,8 +519,8 @@ onMounted(() => {
     toast.show();
   }
 
-  const toastTrigger = contentRef.value.getElementById('liveToastBtn');
-  const toastLiveExample = contentRef.value.getElementById('liveToast');
+  const toastTrigger = articleEl.getElementById('liveToastBtn');
+  const toastLiveExample = articleEl.getElementById('liveToast');
   if (toastTrigger) {
     toastTrigger.addEventListener('click', () => {
       const toast = new bootstrap.Toast(toastLiveExample);
@@ -524,9 +528,9 @@ onMounted(() => {
     });
   }
 
-  const toastPlacement = contentRef.value.getElementById('toastPlacement');
+  const toastPlacement = articleEl.getElementById('toastPlacement');
   if (toastPlacement) {
-    contentRef.value.getElementById('selectToastPlacement').addEventListener('change', function () {
+    articleEl.getElementById('selectToastPlacement').addEventListener('change', function () {
       if (!toastPlacement.dataset.originalClass) {
         toastPlacement.dataset.originalClass = toastPlacement.className;
       }
@@ -537,18 +541,18 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  const toastElList = contentRef.value.querySelectorAll('article.bd-content .toast:not([id])');
+  const toastElList = articleEl.querySelectorAll('.bd-example .toast');
   const toastList = [...toastElList].map((toastEl) => bootstrap.Toast.getInstance(toastEl));
   for (const toast of toastList) {
     toast.dispose();
   }
 
-  const toastLiveExample = contentRef.value.getElementById('liveToast');
+  const toastLiveExample = articleEl.getElementById('liveToast');
   const liveToastInstance = bootstrap.Toast.getInstance(toastLiveExample);
   if (liveToastInstance) {
     liveToastInstance.dispose();
   }
 });
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

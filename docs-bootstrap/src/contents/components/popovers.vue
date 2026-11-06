@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Popovers</h1>
     <p>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
 
@@ -34,7 +34,7 @@
       <code>data-bs-toggle</code> attribute, like so:
     </p>
     <CodeWrapper
-      code='const popoverTriggerList = contentRef.value.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
+      code='const popoverTriggerList = articleEl.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl))
 '
       lang="javascript"
@@ -160,7 +160,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Enable popovers via JavaScript:</p>
     <CodeWrapper
-      code="const exampleEl = contentRef.value.getElementById(&#39;example&#39;)
+      code="const exampleEl = articleEl.getElementById(&#39;example&#39;)
 const popover = new bootstrap.Popover(exampleEl, options)
 "
       lang="javascript"
@@ -526,7 +526,7 @@ popover.setContent({
       </table>
     </div>
     <CodeWrapper
-      code="const myPopoverTrigger = contentRef.value.getElementById(&#39;myPopover&#39;)
+      code="const myPopoverTrigger = articleEl.getElementById(&#39;myPopover&#39;)
 myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
   // do something...
 })
@@ -535,7 +535,7 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
     />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -569,19 +569,24 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
+
+let articleEl = null;
+
 onMounted(() => {
-  const popoverTriggerList = contentRef.value.querySelectorAll('[data-bs-toggle="popover"]');
+      articleEl = document.querySelector('article.bd-content')
+
+  const popoverTriggerList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
   const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
 });
 onBeforeUnmount(() => {
-  const popoverList = contentRef.value.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
   const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
   popoverInstances.forEach((popover) => popover.dispose());
 });
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

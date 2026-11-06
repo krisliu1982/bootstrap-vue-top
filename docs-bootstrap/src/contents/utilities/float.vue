@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Float</h1>
     <p>Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
 
@@ -47,7 +47,7 @@
     <ScssDocs name="utils-float" file="scss/_utilities.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -62,9 +62,9 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

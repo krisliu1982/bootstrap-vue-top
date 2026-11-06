@@ -2,8 +2,13 @@ import { onMounted, onBeforeUnmount } from 'vue'
 import { useHead } from '@unhead/vue'
 import * as bootstrap from 'bootstrap';
 
-export function useContent(articleEl, tocEl) {
+export function useContent() {
+    let articleEl = null;
+    let tocEl = null;
     onMounted(() => {
+        articleEl = document.querySelector('article.bd-content')
+        tocEl = document.querySelector('nav.bd-toc')
+
         const titleEl = articleEl.querySelector('h1')
         const descriptionEl = articleEl.querySelector('h1+p')
         useHead({

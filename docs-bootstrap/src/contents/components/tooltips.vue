@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Tooltips</h1>
     <p>Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations
       and data-bs-attributes for local title storage.</p>
@@ -541,7 +541,7 @@ tooltip.hide()
     <DocsPager />
   </article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#overview">Overview</a></li>
@@ -575,21 +575,24 @@ tooltip.hide()
   </nav>
 </template>
 
-<script setup>import { ref } from 'vue'; const contentRef = ref(null); const tocRef = ref(null);
+<script setup>
 import { useContent } from '@/assets/content-handle.js'
 import { onMounted, onBeforeUnmount } from 'vue';
 import * as bootstrap from 'bootstrap';
 
+let articleEl = null;
 onMounted(() => {
-  const tooltipTriggerList = contentRef.value.querySelectorAll('[data-bs-toggle="tooltip"]');
+  articleEl = document.querySelector('article.bd-content')
+  
+  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 });
 
 onBeforeUnmount(() => {
-  const tooltipTriggerList = contentRef.value.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
   const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
   tooltipList.forEach((tooltip) => tooltip.dispose());
 });
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>

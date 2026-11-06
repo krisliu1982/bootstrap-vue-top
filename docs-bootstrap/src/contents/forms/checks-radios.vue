@@ -1,5 +1,5 @@
 <template>
-  <article ref="contentRef" class="bd-content">
+  <article class="bd-content">
     <h1>Checks and radios</h1>
     <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
 
@@ -329,7 +329,7 @@
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
   <DocsPager /></article>
 
-  <nav ref="tocRef" class="bd-toc" aria-label="On this page">
+  <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
     <ul>
       <li><a href="#approach">Approach</a></li>
@@ -374,12 +374,12 @@
   </nav>
 </template>
 
-<script setup>import {ref} from 'vue'; const contentRef = ref(null);const tocRef = ref(null);
+<script setup>
+import {onMounted} from 'vue'
 import { useContent } from '@/assets/content-handle.js'
-import { onMounted } from 'vue';
 
 onMounted(()=>{
-    contentRef.value.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+    document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
     .forEach(checkbox => {
       if (checkbox.id.includes('Indeterminate')) {
         checkbox.indeterminate = true
@@ -387,5 +387,5 @@ onMounted(()=>{
     })
 })
 
-useContent(contentRef.value,  tocRef.value)
+useContent()
 </script>
