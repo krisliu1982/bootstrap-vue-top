@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import { ViteSSG } from 'vite-ssg/single-page'
+
 import app_ from './app.vue';
 import router from './router.js';
 import { createHead } from '@unhead/vue/client' // SPA 用 /client，SSR 需区分入口
@@ -7,7 +9,6 @@ import { createHead } from '@unhead/vue/client' // SPA 用 /client，SSR 需区�
 import 'bootstrap/scss/bootstrap.scss';
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap';
-
 
 
 import './assets/docs.css';
@@ -28,7 +29,17 @@ import JsDocs from '@/components/JsDocs.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
 
-const app = createApp(app_);
+export const app = ViteSSG(
+  // the root component
+  app_,
+  // vue-router options
+  { router },
+  // function to have custom setups
+  ({ app, router, routes, isClient, initialState }) => {
+    // install plugins etc.
+  },
+)
+//const app = createApp(app_);
 
 const head = createHead()
 app.use(head)
