@@ -519,8 +519,8 @@ onMounted(() => {
     toast.show();
   }
 
-  const toastTrigger = articleEl.getElementById('liveToastBtn');
-  const toastLiveExample = articleEl.getElementById('liveToast');
+  const toastTrigger = document.getElementById('liveToastBtn');
+  const toastLiveExample = document.getElementById('liveToast');
   if (toastTrigger) {
     toastTrigger.addEventListener('click', () => {
       const toast = new bootstrap.Toast(toastLiveExample);
@@ -528,9 +528,9 @@ onMounted(() => {
     });
   }
 
-  const toastPlacement = articleEl.getElementById('toastPlacement');
+  const toastPlacement = document.getElementById('toastPlacement');
   if (toastPlacement) {
-    articleEl.getElementById('selectToastPlacement').addEventListener('change', function () {
+    document.getElementById('selectToastPlacement').addEventListener('change', function () {
       if (!toastPlacement.dataset.originalClass) {
         toastPlacement.dataset.originalClass = toastPlacement.className;
       }
@@ -547,7 +547,7 @@ onBeforeUnmount(() => {
     toast.dispose();
   }
 
-  const toastLiveExample = articleEl.getElementById('liveToast');
+  const toastLiveExample = document.getElementById('liveToast');
   const liveToastInstance = bootstrap.Toast.getInstance(toastLiveExample);
   if (liveToastInstance) {
     liveToastInstance.dispose();
