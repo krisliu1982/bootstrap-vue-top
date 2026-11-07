@@ -532,7 +532,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 

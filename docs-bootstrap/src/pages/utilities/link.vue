@@ -112,6 +112,6 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 import data from '@/data/data.js';
 </script>

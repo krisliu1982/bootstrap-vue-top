@@ -413,7 +413,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 

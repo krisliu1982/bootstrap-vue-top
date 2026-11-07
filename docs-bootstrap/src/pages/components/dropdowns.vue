@@ -1288,7 +1288,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 

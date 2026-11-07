@@ -539,5 +539,5 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 </script>

@@ -814,7 +814,7 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 

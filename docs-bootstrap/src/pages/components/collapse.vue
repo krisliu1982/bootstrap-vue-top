@@ -308,7 +308,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 

@@ -1477,7 +1477,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
   </nav>
 </template>
 
-<script setup>
+<script setup>import {usePage} from '@/components/use-page.js';usePage()
 
 
 
