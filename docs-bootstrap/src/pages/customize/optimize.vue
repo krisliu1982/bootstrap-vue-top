@@ -152,6 +152,4 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
 
 <script setup>
 
-
-
 </script>

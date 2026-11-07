@@ -29,7 +29,4 @@
 </template>
 
 <script setup>
-
-
-
 </script>
