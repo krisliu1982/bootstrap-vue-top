@@ -545,4 +545,22 @@ tooltip.hide()
 <script setup>
 import { usePage } from '@/components/use-page.js';
 usePage();
+
+import { onMounted, onBeforeUnmount } from 'vue';
+import * as bootstrap from 'bootstrap';
+
+let articleEl = null;
+onMounted(() => {
+  articleEl = document.querySelector('article.bd-content')
+  
+  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+});
+
+onBeforeUnmount(() => {
+  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
+  tooltipList.forEach((tooltip) => tooltip.dispose());
+});
+
 </script>
