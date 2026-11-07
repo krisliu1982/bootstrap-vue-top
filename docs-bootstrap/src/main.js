@@ -1,9 +1,5 @@
-import { createApp } from 'vue';
-import { ViteSSG } from 'vite-ssg/single-page'
-
+import { ViteSSG } from 'vite-ssg'
 import app_ from './app.vue';
-import router from './router.js';
-import { createHead } from '@unhead/vue/client' // SPA 用 /client，SSR 需区分入口
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
@@ -29,37 +25,54 @@ import JsDocs from '@/components/JsDocs.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
 
-export const app = ViteSSG(
+import { flatPages } from '@/data/data.js';
+
+
+const routes = [
+  {
+    path: '/',
+    redirect: `${flatPages[0].path}`
+  }
+];
+
+flatPages.forEach((page) => {
+  if (page.pageSlug) {
+    routes.push({
+      path: page.path,
+      component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`)
+    });
+  } else {
+    routes.push({
+      path: page.path,
+      component: () => import(`@/contents/${page.groupSlug}.vue`)
+    });
+  }
+});
+
+export const createApp = ViteSSG(
   // the root component
   app_,
   // vue-router options
-  { router },
+  { base: import.meta.env.BASE_URL, routes },
   // function to have custom setups
-  ({ app, router, routes, isClient, initialState }) => {
-    // install plugins etc.
+  ({ app }) => {
+
+    app.component('Example', Example);
+    app.component('ExampleCustom', ExampleCustom);
+    app.component('Callout', Callout);
+    app.component('AddedIn', AddedIn);
+    app.component('ScssDocs', ScssDocs);
+    app.component('CodeWrapper', CodeWrapper);
+    app.component('DeprecatedIn', DeprecatedIn);
+    app.component('CalloutDeprecatedDarkVariants', CalloutDeprecatedDarkVariants);
+    app.component('JsDismiss', JsDismiss);
+    app.component('JsDataAttributes', JsDataAttributes);
+    app.component('GuideFooter', GuideFooter);
+    app.component('DocsPager', DocsPager);
+    app.component('JsDocs', JsDocs);
+    app.component('Placeholder', Placeholder);
+    app.component('TableBs', TableBs);
   },
 )
-//const app = createApp(app_);
 
-const head = createHead()
-app.use(head)
 
-app.use(router);
-
-app.component('Example', Example);
-app.component('ExampleCustom', ExampleCustom);
-app.component('Callout', Callout);
-app.component('AddedIn', AddedIn);
-app.component('ScssDocs', ScssDocs);
-app.component('CodeWrapper', CodeWrapper);
-app.component('DeprecatedIn', DeprecatedIn);
-app.component('CalloutDeprecatedDarkVariants', CalloutDeprecatedDarkVariants);
-app.component('JsDismiss', JsDismiss);
-app.component('JsDataAttributes', JsDataAttributes);
-app.component('GuideFooter', GuideFooter);
-app.component('DocsPager', DocsPager);
-app.component('JsDocs', JsDocs);
-app.component('Placeholder', Placeholder);
-app.component('TableBs', TableBs);
-
-app.mount('#app');

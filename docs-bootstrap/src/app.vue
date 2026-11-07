@@ -13,7 +13,7 @@
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <RouterLink to="/docs" class="link-body-emphasis text-decoration-none fw-bold">中文文档</RouterLink>
+              <a class="link-body-emphasis text-decoration-none fw-bold" href="/docs-bootstrap/5.3/">中文文档</a>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/"
                 target="_blank" rel="noopener">示例</a>
               <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank"
