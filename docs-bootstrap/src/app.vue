@@ -161,7 +161,7 @@ const fontSize = ref(null);
 const theme = ref(null);
 
 onMounted(() => {
-  function handleFontSizeChange(_fontSize) {
+  /*function handleFontSizeChange(_fontSize) {
     fontSize.value = _fontSize;
     if (_fontSize === 'sm') {
       document.documentElement.style.setProperty('font-size', '14px');
@@ -207,7 +207,7 @@ onMounted(() => {
   })
 
   handleFontSizeChange(getFontSize());
-  handleThemeChange(getTheme());
+  handleThemeChange(getTheme());*/
 });
 
 const navbarRef = ref(null);

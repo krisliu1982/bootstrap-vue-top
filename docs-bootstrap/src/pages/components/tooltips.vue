@@ -547,7 +547,6 @@ import { usePage } from '@/components/use-page.js';
 usePage();
 
 import { onMounted, onBeforeUnmount } from 'vue';
-import * as bootstrap from 'bootstrap';
 
 let articleEl = null;
 onMounted(() => {
