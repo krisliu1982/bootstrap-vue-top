@@ -187,7 +187,7 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

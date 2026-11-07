@@ -448,7 +448,7 @@ $border-width: 0;
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

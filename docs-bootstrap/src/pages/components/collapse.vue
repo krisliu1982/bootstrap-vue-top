@@ -309,7 +309,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

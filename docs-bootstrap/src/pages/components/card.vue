@@ -1010,8 +1010,8 @@
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
+
 import data from '@/data/data.js';
 
-useContent()
+
 </script>

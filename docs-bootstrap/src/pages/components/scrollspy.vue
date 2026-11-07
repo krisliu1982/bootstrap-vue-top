@@ -540,27 +540,4 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
-import { onMounted, onBeforeUnmount } from 'vue';
-import * as bootstrap from 'bootstrap';
-
-let articleEl = null;
-
-onMounted(() => {
-    articleEl = document.querySelector('article.bd-content')
-
-  const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
-  dataSpyList.forEach((dataSpyEl) => {
-    new bootstrap.ScrollSpy(dataSpyEl);
-  });
-});
-
-onBeforeUnmount(() => {
-  const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
-  dataSpyList.forEach((dataSpyEl) => {
-    bootstrap.ScrollSpy.getInstance(dataSpyEl).dispose();
-  });
-});
-
-useContent()
 </script>

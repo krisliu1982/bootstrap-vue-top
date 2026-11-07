@@ -144,7 +144,7 @@ yarn start # Start the project
     </p>
     <CodeWrapper
       code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;"
-      lang="ruby" label="shell"
+      lang="text"
     />
     <p>Alternatively, if you’re not using Bundler, you can install the gem by running this command:</p>
     <CodeWrapper
@@ -224,7 +224,7 @@ yarn start # Start the project
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

@@ -146,7 +146,14 @@
 <script setup>
 import { ref, watch, onMounted, onUnmounted } from 'vue';
 import data from '@/data/data.js';
-const navbarRef = ref(null);
+const fontSize = ref('md');
+const theme = ref('light');
+
+import pkg from '../package.json';
+
+const version = pkg.version;
+
+/*const navbarRef = ref(null);
 
 function getFontSize() {
   const storedFontSize = localStorage.getItem('font-size');
@@ -169,8 +176,7 @@ watch(
     }
 
     localStorage.setItem('font-size', newVal);
-  },
-  { immediate: true }
+  }
 );
 
 //主题修改
@@ -188,8 +194,7 @@ watch(
   (newVal) => {
     document.documentElement.setAttribute('data-bs-theme', newVal);
     localStorage.setItem('theme', newVal);
-  },
-  { immediate: true }
+  }
 );
 
 function handleThemeChange() {
@@ -212,7 +217,7 @@ let smallScreen = window.innerWidth < 992;
 
 function handleViewportChange() {
   smallScreen = window.innerWidth < 992;
-}
+}*/
 
 /*onMounted(() => {
   menuRef.value.addEventListener('click', function (e) {

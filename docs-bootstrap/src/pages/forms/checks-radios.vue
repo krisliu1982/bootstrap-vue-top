@@ -373,17 +373,4 @@
 </template>
 
 <script setup>
-import {onMounted} from 'vue'
-import { useContent } from '@/assets/content-handle.js'
-
-onMounted(()=>{
-    document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
-    .forEach(checkbox => {
-      if (checkbox.id.includes('Indeterminate')) {
-        checkbox.indeterminate = true
-      }
-    })
-})
-
-useContent()
 </script>

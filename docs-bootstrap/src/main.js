@@ -3,9 +3,6 @@ import app_ from './app.vue';
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
-// Import all of Bootstrap’s JS
-import * as bootstrap from 'bootstrap';
-
 
 import './assets/docs.css';
 
@@ -25,6 +22,8 @@ import JsDocs from '@/components/JsDocs.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
 
+import { useHead } from '@unhead/vue'
+
 import { flatPages } from '@/data/data.js';
 
 
@@ -39,12 +38,12 @@ flatPages.forEach((page) => {
   if (page.pageSlug) {
     routes.push({
       path: page.path,
-      component: () => import(`@/contents/${page.groupSlug}/${page.pageSlug}.vue`)
+      component: () => import(`@/pages/${page.groupSlug}/${page.pageSlug}.vue`)
     });
   } else {
     routes.push({
       path: page.path,
-      component: () => import(`@/contents/${page.groupSlug}.vue`)
+      component: () => import(`@/pages/${page.groupSlug}.vue`)
     });
   }
 });
@@ -55,7 +54,7 @@ export const createApp = ViteSSG(
   // vue-router options
   { base: import.meta.env.BASE_URL, routes },
   // function to have custom setups
-  ({ app }) => {
+  async ({ app }) => {
 
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);
@@ -72,6 +71,33 @@ export const createApp = ViteSSG(
     app.component('JsDocs', JsDocs);
     app.component('Placeholder', Placeholder);
     app.component('TableBs', TableBs);
+
+    // 只在浏览器环境加载 Bootstrap JS
+    if (!import.meta.env.SSR) {
+      const bootstrap = await import('bootstrap')
+      await import('./assets/snippets.js')
+
+      const articleEl = document.querySelector('article.bd-content')
+
+      if (articleEl) {
+        const titleEl = articleEl.querySelector('h1')
+        const descriptionEl = articleEl.querySelector('h1+p')
+        useHead({
+          title: titleEl.textContent + ' | Bootstrap v5.3',
+          meta: [
+            { name: 'description', content: descriptionEl.textContent }
+          ]
+        })
+      }
+
+      const tocEl = document.querySelector('nav.bd-toc')
+
+      if (tocEl) {
+        new bootstrap.ScrollSpy(articleEl, {
+          target: tocEl
+        })
+      }
+    }
   },
 )
 

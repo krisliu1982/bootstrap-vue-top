@@ -433,7 +433,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

@@ -565,23 +565,4 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
-import { onMounted, onBeforeUnmount } from 'vue';
-import * as bootstrap from 'bootstrap';
-
-let articleEl = null;
-
-onMounted(() => {
-      articleEl = document.querySelector('article.bd-content')
-
-  const popoverTriggerList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
-  const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
-});
-onBeforeUnmount(() => {
-  const popoverList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
-  const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
-  popoverInstances.forEach((popover) => popover.dispose());
-});
-
-useContent()
 </script>

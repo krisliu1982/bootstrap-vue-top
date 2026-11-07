@@ -5,13 +5,11 @@ import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
-import Pages from 'vite-plugin-pages'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    Pages(),
     Icons({
       compiler: 'vue3',
       scale: 1, // SVG缩放比例

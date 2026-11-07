@@ -815,7 +815,7 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

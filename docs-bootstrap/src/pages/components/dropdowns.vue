@@ -1289,7 +1289,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

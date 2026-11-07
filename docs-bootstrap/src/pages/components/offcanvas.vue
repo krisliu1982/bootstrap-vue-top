@@ -483,17 +483,4 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
-  if (myOffcanvas) {
-    myOffcanvas.forEach(offcanvas => {
-      offcanvas.classList.remove('show')
-    })
-  }
-})
-
-useContent()
 </script>

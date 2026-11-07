@@ -151,7 +151,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 
-useContent()
+
+
 </script>

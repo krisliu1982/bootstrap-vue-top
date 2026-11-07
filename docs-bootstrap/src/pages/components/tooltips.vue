@@ -576,23 +576,4 @@ tooltip.hide()
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
-import { onMounted, onBeforeUnmount } from 'vue';
-import * as bootstrap from 'bootstrap';
-
-let articleEl = null;
-onMounted(() => {
-  articleEl = document.querySelector('article.bd-content')
-  
-  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
-});
-
-onBeforeUnmount(() => {
-  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
-  tooltipList.forEach((tooltip) => tooltip.dispose());
-});
-
-useContent()
 </script>

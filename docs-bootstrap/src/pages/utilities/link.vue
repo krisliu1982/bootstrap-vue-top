@@ -113,18 +113,5 @@ code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-
 </template>
 
 <script setup>
-import { useContent } from '@/assets/content-handle.js'
 import data from '@/data/data.js';
-import { onMounted } from 'vue';
-
-onMounted(()=>{
-  document.querySelectorAll('.bd-content [href="#"]')
-    .forEach(link => {
-      link.addEventListener('click', event => {
-        event.preventDefault()
-      })
-    })
-})
-
-useContent()
 </script>
