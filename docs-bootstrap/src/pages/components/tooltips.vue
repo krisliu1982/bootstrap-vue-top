@@ -551,23 +551,20 @@ import * as bootstrap from 'bootstrap';
 
 let articleEl = null;
 onMounted(() => {
-  import('bootstrap').then(bootstrap=>{
-  articleEl = document.querySelector('article.bd-content')
-  
-  const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
-  
-  [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+  import('bootstrap').then((bootstrap) => {
+    articleEl = document.querySelector('article.bd-content');
 
-  })
+    const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+  });
 });
 
 onBeforeUnmount(() => {
   const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
-    import('bootstrap').then(bootstrap=>{
-  const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
-  tooltipList.forEach((tooltip) => tooltip.dispose());
-  })
-
+  import('bootstrap').then((bootstrap) => {
+    const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => bootstrap.Tooltip.getInstance(tooltipTriggerEl));
+    tooltipList.forEach((tooltip) => tooltip.dispose());
+  });
 });
-
 </script>

@@ -549,24 +549,22 @@ import { onMounted, onBeforeUnmount } from 'vue';
 let articleEl = null;
 
 onMounted(() => {
-    import('bootstrap').then(bootstrap=>{
+  import('bootstrap').then((bootstrap) => {
+    articleEl = document.querySelector('article.bd-content');
 
-    articleEl = document.querySelector('article.bd-content')
-
-  const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
-  dataSpyList.forEach((dataSpyEl) => {
-    new bootstrap.ScrollSpy(dataSpyEl);
+    const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
+    dataSpyList.forEach((dataSpyEl) => {
+      new bootstrap.ScrollSpy(dataSpyEl);
+    });
   });
-  })
 });
 
 onBeforeUnmount(() => {
-      import('bootstrap').then(bootstrap=>{
-
-  const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
-  dataSpyList.forEach((dataSpyEl) => {
-    bootstrap.ScrollSpy.getInstance(dataSpyEl).dispose();
-  });
+  import('bootstrap').then((bootstrap) => {
+    const dataSpyList = articleEl.querySelectorAll('[data-bs-spy="scroll"]');
+    dataSpyList.forEach((dataSpyEl) => {
+      bootstrap.ScrollSpy.getInstance(dataSpyEl).dispose();
+    });
   });
 });
 </script>

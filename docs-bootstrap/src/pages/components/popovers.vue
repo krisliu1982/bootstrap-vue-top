@@ -574,25 +574,23 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
 import { usePage } from '@/components/use-page.js';
 usePage();
 
-
 import { onMounted, onBeforeUnmount } from 'vue';
 
 let articleEl = null;
 
 onMounted(() => {
-  import('bootstrap').then(bootstrap=>{
-      articleEl = document.querySelector('article.bd-content')
+  import('bootstrap').then((bootstrap) => {
+    articleEl = document.querySelector('article.bd-content');
 
-  const popoverTriggerList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
-  [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
-  })
+    const popoverTriggerList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
+    [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
+  });
 });
 onBeforeUnmount(() => {
-  import('bootstrap').then(bootstrap=>{
-  const popoverList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
-  const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
-  popoverInstances.forEach((popover) => popover.dispose());
-  })
+  import('bootstrap').then((bootstrap) => {
+    const popoverList = articleEl.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverInstances = [...popoverList].map((popoverEl) => bootstrap.Popover.getInstance(popoverEl));
+    popoverInstances.forEach((popover) => popover.dispose());
+  });
 });
-
 </script>

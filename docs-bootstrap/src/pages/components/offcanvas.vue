@@ -480,11 +480,11 @@ usePage();
 import { onMounted } from 'vue';
 
 onMounted(() => {
-  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas');
   if (myOffcanvas) {
-    myOffcanvas.forEach(offcanvas => {
-      offcanvas.classList.remove('show')
-    })
+    myOffcanvas.forEach((offcanvas) => {
+      offcanvas.classList.remove('show');
+    });
   }
-})
+});
 </script>

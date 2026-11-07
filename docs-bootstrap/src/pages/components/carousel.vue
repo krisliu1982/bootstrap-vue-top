@@ -857,21 +857,19 @@ import { onMounted, onBeforeUnmount } from 'vue';
 let articleEl = null;
 
 onMounted(() => {
-  import('bootstrap').then(bootstrap=>{
-        articleEl = document.querySelector('article.bd-content')
+  import('bootstrap').then((bootstrap) => {
+    articleEl = document.querySelector('article.bd-content');
 
-    articleEl.querySelectorAll('.carousel')
-    .forEach(carousel => {
-      new bootstrap.Carousel(carousel)
-    })
-    })
+    articleEl.querySelectorAll('.carousel').forEach((carousel) => {
+      new bootstrap.Carousel(carousel);
+    });
+  });
 });
 onBeforeUnmount(() => {
-  import('bootstrap').then(bootstrap=>{
-    articleEl.querySelectorAll('.carousel')
-    .forEach(carousel => {
-      bootstrap.Carousel.getInstance(carousel).dispose()
-    })
-    })
+  import('bootstrap').then((bootstrap) => {
+    articleEl.querySelectorAll('.carousel').forEach((carousel) => {
+      bootstrap.Carousel.getInstance(carousel).dispose();
+    });
+  });
 });
 </script>
