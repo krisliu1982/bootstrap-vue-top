@@ -354,7 +354,7 @@
       observable elements once the wrapper becomes visible.
     </p>
     <CodeWrapper
-      code='articleEl.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
+      code='document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
   el.addEventListener(&#39;shown.bs.tab&#39;, () =&gt; {
     const target = el.getAttribute(&#39;data-bs-target&#39;)
     const scrollElem = articleEl.querySelector(`${target} [data-bs-spy="scroll"]`)
@@ -477,7 +477,7 @@
     </div>
     <p>Here’s an example using the refresh method:</p>
     <CodeWrapper
-      code='const dataSpyList = articleEl.querySelectorAll(&#39;[data-bs-spy="scroll"]&#39;)
+      code='const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy="scroll"]&#39;)
 dataSpyList.forEach(dataSpyEl =&gt; {
   bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
 })

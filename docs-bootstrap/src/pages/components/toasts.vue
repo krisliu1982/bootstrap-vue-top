@@ -317,7 +317,7 @@
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>Initialize toasts via JavaScript:</p>
     <CodeWrapper
-      code="const toastElList = articleEl.querySelectorAll(&#39;.toast&#39;)
+      code="const toastElList = document.querySelectorAll(&#39;.toast&#39;)
 const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl, option))
 "
       lang="javascript"

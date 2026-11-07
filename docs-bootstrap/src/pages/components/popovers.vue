@@ -34,7 +34,7 @@
       <code>data-bs-toggle</code> attribute, like so:
     </p>
     <CodeWrapper
-      code='const popoverTriggerList = articleEl.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
+      code='const popoverTriggerList = document.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new bootstrap.Popover(popoverTriggerEl))
 '
       lang="javascript"
