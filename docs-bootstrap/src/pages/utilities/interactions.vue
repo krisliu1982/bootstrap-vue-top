@@ -9,14 +9,14 @@
       code='<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
 <p class="user-select-auto">This paragraph has default select behavior.</p>
 <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>'
-/>
+    />
     <h2 id="pointer-events">Pointer events<a class="anchor-link" href="#pointer-events" aria-label="Link to Pointer events"></a></h2>
     <p>Bootstrap provides <code>.pe-none</code> and <code>.pe-auto</code> classes to prevent or add element interactions.</p>
     <Example
       code='<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
 <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
 <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>'
-/>
+    />
     <p>
       The <code>.pe-none</code> class (and the <code>pointer-events</code> CSS property it sets) only prevents interactions with a pointer (mouse, stylus, touch). Links and
       controls with <code>.pe-none</code> are, by default, still focusable and actionable for keyboard users. To ensure that they are completely neutralized even for keyboard
@@ -36,7 +36,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-interaction" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -53,8 +54,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

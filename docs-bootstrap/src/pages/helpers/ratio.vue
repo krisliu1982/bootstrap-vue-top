@@ -82,7 +82,8 @@
       and recompile your Sass to put them to use.
     </p>
     <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -93,14 +94,12 @@
       <li><a href="#custom-ratios">Custom ratios</a></li>
       <li>
         <a href="#sass-maps">Sass maps</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

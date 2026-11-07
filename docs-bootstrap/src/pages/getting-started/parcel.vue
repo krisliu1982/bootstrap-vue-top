@@ -220,7 +220,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       </li>
     </ol>
     <GuideFooter />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -231,14 +232,12 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       <li><a href="#configure-parcel">Configure Parcel</a></li>
       <li>
         <a href="#import-bootstrap">Import Bootstrap</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

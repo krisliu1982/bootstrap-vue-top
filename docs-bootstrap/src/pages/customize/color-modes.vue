@@ -383,7 +383,8 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <a href="#building-with-sass">Sass usage section</a> for more details.
     </p>
     <ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -413,8 +414,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

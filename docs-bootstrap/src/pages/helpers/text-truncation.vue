@@ -20,11 +20,11 @@
   This text is quite long, and will be truncated once displayed.
 </span>'
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

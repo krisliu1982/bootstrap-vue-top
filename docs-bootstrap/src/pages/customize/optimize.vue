@@ -131,7 +131,8 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
       by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself,
       ensure that you only access it over HTTPS connections.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -144,12 +145,12 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
       <li><a href="#non-blocking-files">Non-blocking files</a></li>
       <li>
         <a href="#always-use-https">Always use HTTPS</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

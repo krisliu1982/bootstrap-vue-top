@@ -142,10 +142,7 @@ yarn start # Start the project
       the following line to your <a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a
       >:
     </p>
-    <CodeWrapper
-      code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;"
-      lang="text"
-    />
+    <CodeWrapper code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;" lang="text" />
     <p>Alternatively, if you’re not using Bundler, you can install the gem by running this command:</p>
     <CodeWrapper
       code="gem install bootstrap -v 5.3.8
@@ -190,7 +187,8 @@ yarn start # Start the project
     <p>
       <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">View in VS Code Marketplace</a>
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -217,14 +215,12 @@ yarn start # Start the project
       </li>
       <li>
         <a href="#intellisense-extension">IntelliSense extension</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

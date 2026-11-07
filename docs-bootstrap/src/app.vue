@@ -2,35 +2,31 @@
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container-xxl">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi fs-3"
-          style="color: var(--bs-indigo)" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi fs-3" style="color: var(--bs-indigo)" viewBox="0 0 16 16">
           <path
-            d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
+            d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"
+          />
           <path
-            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
+            d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"
+          />
         </svg>
         <small>{{ version }}</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
               <a class="link-body-emphasis text-decoration-none fw-bold" href="/docs-bootstrap/5.3/">中文文档</a>
-              <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/"
-                target="_blank" rel="noopener">示例</a>
-              <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank"
-                rel="noopener">图标</a>
-              <a class="link-body-emphasis text-decoration-none" href="https://blog.getbootstrap.com/" target="_blank"
-                rel="noopener">博客</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/" target="_blank" rel="noopener">示例</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">图标</a>
+              <a class="link-body-emphasis text-decoration-none" href="https://blog.getbootstrap.com/" target="_blank" rel="noopener">博客</a>
               <div class="vr"></div>
-              <a class="link-body-emphasis text-decoration-none" title="github" href="https://github.com/twbs" target="_blank"
-                rel="noopener"><bi-github /></a>
-              <a class="link-body-emphasis text-decoration-none" title="twitter-x" href="https://x.com/getbootstrap" target="_blank"
-                rel="noopener"><bi-twitter-x /></a>
-              <a class="link-body-emphasis text-decoration-none" title="open collective" href="https://opencollective.com/bootstrap" target="_blank"
-                rel="noopener"><bi-opencollective /></a>
+              <a class="link-body-emphasis text-decoration-none" title="github" href="https://github.com/twbs" target="_blank" rel="noopener"><bi-github /></a>
+              <a class="link-body-emphasis text-decoration-none" title="twitter-x" href="https://x.com/getbootstrap" target="_blank" rel="noopener"><bi-twitter-x /></a>
+              <a class="link-body-emphasis text-decoration-none" title="open collective" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener"
+                ><bi-opencollective
+              /></a>
               <div class="vr"></div>
               <div class="dropdown">
-                <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle"
-                  title="布局大小" href="#" role="button" aria-expanded="false">
+                <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="布局大小" href="#" role="button" aria-expanded="false">
                   <bi-fonts />
                 </a>
                 <ul class="dropdown-menu">
@@ -39,8 +35,7 @@
                   <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'" :disabled="fontSize == 'lg'">大型布局</button></li>
                 </ul>
               </div>
-              <a href="#" class="link-body-emphasis text-decoration-none" title="主题切换"
-                @click.prevent="handleThemeChange">
+              <a href="#" class="link-body-emphasis text-decoration-none" title="主题切换" @click.prevent="handleThemeChange">
                 <bi-sun v-if="theme === 'light'" />
                 <bi-moon v-else />
               </a>
@@ -88,40 +83,42 @@
               <div class="px-2 mb-1">
                 <strong class="me-2">{{ t['zh-CN'] }}</strong>
                 <template v-if="t.slug === 'getting-started'">
-                  <bi-book-half style="color:var(--bs-indigo)" />
+                  <bi-book-half style="color: var(--bs-indigo)" />
                 </template>
                 <template v-else-if="t.slug === 'customize'">
-                  <bi-palette2 style="color:var(--bs-pink)" />
+                  <bi-palette2 style="color: var(--bs-pink)" />
                 </template>
                 <template v-else-if="t.slug === 'layout'">
-                  <bi-grid-fill style="color:var(--bs-teal)" />
+                  <bi-grid-fill style="color: var(--bs-teal)" />
                 </template>
                 <template v-else-if="t.slug === 'content'">
-                  <bi-file-earmark-richtext style="color:var(--bs-gray)" />
+                  <bi-file-earmark-richtext style="color: var(--bs-gray)" />
                 </template>
                 <template v-else-if="t.slug === 'forms'">
-                  <bi-ui-radios style="color:var(--bs-blue)" />
+                  <bi-ui-radios style="color: var(--bs-blue)" />
                 </template>
                 <template v-else-if="t.slug === 'components'">
-                  <bi-menu-button-wide-fill style="color:var(--bs-cyan)" />
+                  <bi-menu-button-wide-fill style="color: var(--bs-cyan)" />
                 </template>
                 <template v-else-if="t.slug === 'helpers'">
-                  <bi-magic style="color:var(--bs-orange)" />
+                  <bi-magic style="color: var(--bs-orange)" />
                 </template>
                 <template v-else-if="t.slug === 'utilities'">
-                  <bi-braces-asterisk style="color:var(--bs-red)" />
+                  <bi-braces-asterisk style="color: var(--bs-red)" />
                 </template>
                 <template v-else-if="t.slug === 'extend'">
-                  <bi-tools style="color:var(--bs-blue)" />
+                  <bi-tools style="color: var(--bs-blue)" />
                 </template>
                 <template v-else-if="t.slug === 'about'">
-                  <bi-globe2 style="color:var(--bs-indigo)" />
+                  <bi-globe2 style="color: var(--bs-indigo)" />
                 </template>
               </div>
               <ul>
                 <li v-for="tt in t.pages">
                   <RouterLink :to="`/${t.slug}/${tt.slug}`" class="bd-sidebar-link" exact-active-class="active">
-                    <span class="small">{{ tt['zh-CN'] }} <small>{{ tt.title }}</small></span>
+                    <span class="small"
+                      >{{ tt['zh-CN'] }} <small>{{ tt.title }}</small></span
+                    >
                   </RouterLink>
                 </li>
               </ul>
@@ -129,7 +126,9 @@
             <template v-else>
               <hr />
               <RouterLink :to="`/${t.slug}`" class="bd-sidebar-link" exact-active-class="active">
-                <span class="small">{{ t['zh-CN'] }} <small>{{ t.title }}</small></span>
+                <span class="small"
+                  >{{ t['zh-CN'] }} <small>{{ t.title }}</small></span
+                >
               </RouterLink>
             </template>
           </div>

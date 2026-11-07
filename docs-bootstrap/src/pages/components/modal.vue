@@ -451,7 +451,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       Below is a live demo followed by example HTML and JavaScript. For more information,
       <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.
     </p>
-    <Example addStackblitzJs
+    <Example
+      addStackblitzJs
       code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
@@ -481,7 +482,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       </div>
     </div>
   </div>
-</div>' />
+</div>'
+    />
     <JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" />
     <h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
     <p>
@@ -522,7 +524,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     </div>
   </div>
 </div>
-<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>' />
+<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>'
+    />
     <h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
     <p>
       The <code>$modal-fade-transform</code> variable determines the transform state of <code>.modal-dialog</code> before the modal fade-in animation, the
@@ -969,7 +972,8 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
 "
       lang="javascript"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -1018,5 +1022,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

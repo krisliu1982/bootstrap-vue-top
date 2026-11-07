@@ -9,7 +9,7 @@
     <p>Add borders to custom elements:</p>
     <Example
       class="bd-example-border-utils"
-  code='<span class="border"></span>
+      code='<span class="border"></span>
 <span class="border-top"></span>
 <span class="border-end"></span>
 <span class="border-bottom"></span>
@@ -108,44 +108,56 @@
     />
     <h2 id="radius">Radius<a class="anchor-link" href="#radius" aria-label="Link to Radius"></a></h2>
     <p>Add classes to an element to easily round its corners.</p>
-    <ExampleCustom  class="bd-example-rounded-utils" code='<img src="..." class="rounded" alt="...">
+    <ExampleCustom
+      class="bd-example-rounded-utils"
+      code='<img src="..." class="rounded" alt="...">
 <img src="..." class="rounded-top" alt="...">
 <img src="..." class="rounded-end" alt="...">
 <img src="..." class="rounded-bottom" alt="...">
-<img src="..." class="rounded-start" alt="...">'><Placeholder width="75" height="75" class="rounded" title="Example rounded image" />
-    <Placeholder width="75" height="75" class="rounded-top" title="Example top rounded image" />
-    <Placeholder width="75" height="75" class="rounded-end" title="Example right rounded image" />
-    <Placeholder width="75" height="75" class="rounded-bottom" title="Example bottom rounded image" />
-    <Placeholder width="75" height="75" class="rounded-start" title="Example left rounded image" /></ExampleCustom>
+<img src="..." class="rounded-start" alt="...">'
+      ><Placeholder width="75" height="75" class="rounded" title="Example rounded image" />
+      <Placeholder width="75" height="75" class="rounded-top" title="Example top rounded image" />
+      <Placeholder width="75" height="75" class="rounded-end" title="Example right rounded image" />
+      <Placeholder width="75" height="75" class="rounded-bottom" title="Example bottom rounded image" />
+      <Placeholder width="75" height="75" class="rounded-start" title="Example left rounded image"
+    /></ExampleCustom>
     <h3 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h3>
     <p>
       Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>5</code> including <code>circle</code> and <code>pill</code>, and can
       be configured by modifying the utilities API.
     </p>
-    <ExampleCustom  class="bd-example-rounded-utils" code='<img src="..." class="rounded-0" alt="...">
+    <ExampleCustom
+      class="bd-example-rounded-utils"
+      code='<img src="..." class="rounded-0" alt="...">
 <img src="..." class="rounded-1" alt="...">
 <img src="..." class="rounded-2" alt="...">
 <img src="..." class="rounded-3" alt="...">
 <img src="..." class="rounded-4" alt="...">
 <img src="..." class="rounded-5" alt="...">
 <img src="..." class="rounded-circle" alt="...">
-<img src="..." class="rounded-pill" alt="...">'><Placeholder width="75" height="75" class="rounded-0" title="Example non-rounded image" />
-    <Placeholder width="75" height="75" class="rounded-1" title="Example small rounded image" />
-    <Placeholder width="75" height="75" class="rounded-2" title="Example default rounded image" />
-    <Placeholder width="75" height="75" class="rounded-3" title="Example large rounded image" />
-    <Placeholder width="75" height="75" class="rounded-4" title="Example larger rounded image" />
-    <Placeholder width="75" height="75" class="rounded-5" title="Example extra large rounded image" />
-    <Placeholder width="75" height="75" class="rounded-circle" title="Completely round image" />
-    <Placeholder width="150" height="75" class="rounded-pill" title="Rounded pill image" /></ExampleCustom>
-    <ExampleCustom class="bd-example-rounded-utils" code='<img src="..." class="rounded-bottom-1" alt="...">
+<img src="..." class="rounded-pill" alt="...">'
+      ><Placeholder width="75" height="75" class="rounded-0" title="Example non-rounded image" />
+      <Placeholder width="75" height="75" class="rounded-1" title="Example small rounded image" />
+      <Placeholder width="75" height="75" class="rounded-2" title="Example default rounded image" />
+      <Placeholder width="75" height="75" class="rounded-3" title="Example large rounded image" />
+      <Placeholder width="75" height="75" class="rounded-4" title="Example larger rounded image" />
+      <Placeholder width="75" height="75" class="rounded-5" title="Example extra large rounded image" />
+      <Placeholder width="75" height="75" class="rounded-circle" title="Completely round image" />
+      <Placeholder width="150" height="75" class="rounded-pill" title="Rounded pill image"
+    /></ExampleCustom>
+    <ExampleCustom
+      class="bd-example-rounded-utils"
+      code='<img src="..." class="rounded-bottom-1" alt="...">
 <img src="..." class="rounded-start-2" alt="...">
 <img src="..." class="rounded-end-circle" alt="...">
 <img src="..." class="rounded-start-pill" alt="...">
-<img src="..." class="rounded-5 rounded-top-0" alt="...">'><Placeholder width="75" height="75" class="rounded-bottom-1" title="Example small rounded image" />
-    <Placeholder width="75" height="75" class="rounded-start-2" title="Example default left rounded image" />
-    <Placeholder width="75" height="75" class="rounded-end-circle" title="Example right completely round image" />
-    <Placeholder width="75" height="75" class="rounded-start-pill" title="Example left rounded pill image" />
-    <Placeholder width="75" height="75" class="rounded-5 rounded-top-0" title="Example extra large bottom rounded image" /></ExampleCustom>
+<img src="..." class="rounded-5 rounded-top-0" alt="...">'
+      ><Placeholder width="75" height="75" class="rounded-bottom-1" title="Example small rounded image" />
+      <Placeholder width="75" height="75" class="rounded-start-2" title="Example default left rounded image" />
+      <Placeholder width="75" height="75" class="rounded-end-circle" title="Example right completely round image" />
+      <Placeholder width="75" height="75" class="rounded-start-pill" title="Example left rounded pill image" />
+      <Placeholder width="75" height="75" class="rounded-5 rounded-top-0" title="Example extra large bottom rounded image"
+    /></ExampleCustom>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
     <AddedIn version="5.2.0" /><ScssDocs name="root-border-var" file="scss/_root.scss" />
@@ -163,8 +175,8 @@
       Border utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
-    <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" /> <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -205,9 +217,9 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

@@ -36,7 +36,8 @@
       <a href="https://github.com/twbs/bootstrap/issues/new/choose">opening an issue</a> or submitting a pull request. Read our
       <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -45,14 +46,12 @@
       <li><a href="#history">History</a></li>
       <li>
         <a href="#get-involved">Get involved</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

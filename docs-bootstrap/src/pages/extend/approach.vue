@@ -125,7 +125,8 @@
       <a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">Our custom Stylelint config</a> is open source and available for others to use and extend.
     </p>
     <p>We use <a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a> to enforce standard and semantic HTML, as well as detecting common errors.</p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -145,14 +146,12 @@
       <li><a href="#flexible-html">Flexible HTML</a></li>
       <li>
         <a href="#code-conventions">Code conventions</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

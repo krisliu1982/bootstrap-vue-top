@@ -16,17 +16,17 @@
       To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/docs-bootstrap/5.3/utilities/flex#align-items">flex box utilities</a>.
     </p>
     <p>With inline elements:</p>
-<Example
-  code='<span class="align-baseline">baseline</span>
+    <Example
+      code='<span class="align-baseline">baseline</span>
 <span class="align-top">top</span>
 <span class="align-middle">middle</span>
 <span class="align-bottom">bottom</span>
 <span class="align-text-top">text-top</span>
 <span class="align-text-bottom">text-bottom</span>'
-/>
-<p>With table cells:</p>
-<Example
-  code='<table style="height: 100px;">
+    />
+    <p>With table cells:</p>
+    <Example
+      code='<table style="height: 100px;">
   <tbody>
     <tr>
       <td class="align-baseline">baseline</td>
@@ -38,7 +38,7 @@
     </tr>
   </tbody>
 </table>'
-/>
+    />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
@@ -46,7 +46,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-vertical-align" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -61,8 +62,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

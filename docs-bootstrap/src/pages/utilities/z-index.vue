@@ -20,7 +20,7 @@
 <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
 <div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
 <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>'
-/>
+    />
     <h2 id="overlays">Overlays<a class="anchor-link" href="#overlays" aria-label="Link to Overlays"></a></h2>
     <p>
       Bootstrap overlay components—dropdown, modal, offcanvas, popover, toast, and tooltip—all have their own
@@ -47,7 +47,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-zindex" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -66,8 +67,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

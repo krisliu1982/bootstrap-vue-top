@@ -36,7 +36,6 @@
     Hello, world! This is a toast message.
   </div>
 </div>'
-     
     />
 
     <Callout type="warning">
@@ -83,7 +82,6 @@
   </div>
 </div>'
       class="bg-dark"
-     
     />
     <h3 id="stacking">Stacking<a class="anchor-link" href="#stacking" aria-label="Link to Stacking"></a></h3>
     <p>You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.</p>
@@ -113,7 +111,6 @@
     </div>
   </div>
 </div>'
-     
     />
 
     <h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
@@ -132,7 +129,6 @@
     <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>'
-     
     />
     <p>Alternatively, you can also add additional controls and components to toasts.</p>
     <Example
@@ -145,7 +141,6 @@
     </div>
   </div>
 </div>'
-     
     />
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
@@ -163,7 +158,6 @@
     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
 </div>'
-     
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
@@ -171,7 +165,8 @@
       the positioning styles right on the
       <code>.toast</code>.
     </p>
-    <Example addStackblitzJs
+    <Example
+      addStackblitzJs
       code='<form>
   <div class="mb-3">
     <label for="selectToastPlacement">Toast placement</label>
@@ -240,7 +235,6 @@
     </div>
   </div>
 </div>'
-     
     />
     <p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
     <Example
@@ -261,7 +255,6 @@
     </div>
   </div>
 </div>'
-     
     />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
@@ -304,7 +297,6 @@
     Hello, world! This is a toast message.
   </div>
 </div>'
-     
     />
     <p>
       While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts.
@@ -385,8 +377,8 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element. <br />
-              For example: <code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a
-              Bootstrap toast instance.
+              For example: <code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns
+              a Bootstrap toast instance.
             </td>
           </tr>
           <tr>
@@ -457,7 +449,8 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 })"
       lang="javascript"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -496,5 +489,7 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

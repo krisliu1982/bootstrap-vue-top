@@ -399,7 +399,8 @@
         </p>
       </div>
     </ExampleCustom>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -423,14 +424,12 @@
       </li>
       <li>
         <a href="#standalone-column-classes">Standalone column classes</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

@@ -137,7 +137,7 @@
   <div class="p-2">Grid item 3</div>
   <div class="p-2">Grid item 4</div>
 </div>'
-/>
+    />
     <p>
       Support includes responsive options for all of Bootstrap’s grid breakpoints, as well as six sizes from the
       <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class as it’s effectively the same as <code>.gap-0</code>.
@@ -152,7 +152,7 @@
   <div class="p-2">Grid item 3</div>
   <div class="p-2">Grid item 4</div>
 </div>'
-/>
+    />
     <h3 id="column-gap">column-gap<a class="anchor-link" href="#column-gap" aria-label="Link to column-gap"></a></h3>
     <p><code>column-gap</code> sets the horizontal space between children items in the specified container.</p>
     <Example
@@ -163,7 +163,7 @@
   <div class="p-2">Grid item 3</div>
   <div class="p-2">Grid item 4</div>
 </div>'
-/>
+    />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
     <p>Spacing utilities are declared via Sass map and then generated with our utilities API.</p>
@@ -174,7 +174,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-spacing" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -206,8 +207,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

@@ -629,7 +629,8 @@ $utilities: map-merge(
     />
 
     <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the same for any other utility and property as well.</p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -651,15 +652,14 @@ $utilities: map-merge(
       </li>
       <li>
         <a href="#generating-utilities">Generating utilities</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

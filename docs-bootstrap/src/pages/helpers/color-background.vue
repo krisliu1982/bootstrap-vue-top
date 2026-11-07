@@ -38,7 +38,8 @@
   </div>
 </div>'
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -46,15 +47,14 @@
       <li><a href="#overview">Overview</a></li>
       <li>
         <a href="#with-components">With components</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

@@ -76,7 +76,8 @@
     ><Callout type="danger">
       <p><strong>This is a danger callout.</strong> Example text to show it in action.</p>
     </Callout>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -86,14 +87,12 @@
       <li><a href="#responsive">Responsive</a></li>
       <li>
         <a href="#creating-your-own">Creating your own</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

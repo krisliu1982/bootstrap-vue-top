@@ -184,7 +184,8 @@
       section above. The <code>site/content/docs/</code> folder includes the source code for our hosted documentation, including our live examples of Bootstrap usage.
     </p>
     <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -198,14 +199,12 @@
       </li>
       <li>
         <a href="#bootstrap-source-code">Bootstrap source code</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

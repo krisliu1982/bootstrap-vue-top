@@ -23,11 +23,11 @@
   <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
 </div>'
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

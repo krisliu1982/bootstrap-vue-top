@@ -337,7 +337,8 @@
   </div>
 </form>'
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -356,14 +357,12 @@
       <li><a href="#auto-sizing">Auto-sizing</a></li>
       <li>
         <a href="#inline-forms">Inline forms</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

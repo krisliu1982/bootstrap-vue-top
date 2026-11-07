@@ -28,7 +28,8 @@
     <Callout name="warning-color-assistive-technologies" />
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
-    <Example addStackblitzJs
+    <Example
+      addStackblitzJs
       code='<div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>'
     />
@@ -264,7 +265,8 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
 "
       lang="javascript"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -301,6 +303,8 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 import data from '@/data/data.js';
 </script>

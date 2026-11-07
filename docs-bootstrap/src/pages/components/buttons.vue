@@ -196,10 +196,7 @@
     />
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <p>You can create a button instance with the button constructor, for example:</p>
-    <CodeWrapper
-      code="const bsButton = new bootstrap.Button(&#39;#myButton&#39;)"
-      lang="javascript"
-    />
+    <CodeWrapper code="const bsButton = new bootstrap.Button(&#39;#myButton&#39;)" lang="javascript" />
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -258,10 +255,10 @@
       Here’s an example of building a custom <code>.btn-*</code> modifier class as we do for the buttons unique to our docs by reassigning Bootstrap’s CSS variables with a mixture
       of our own CSS and Sass variables.
     </p>
-    <Example
-      :showMarkup="false"
-      code='<button type="button" class="btn btn-bd-primary">Custom button</button>'
-    /><ScssDocs name="btn-css-vars-example" file="site/src/scss/_buttons.scss" />
+    <Example :showMarkup="false" code='<button type="button" class="btn btn-bd-primary">Custom button</button>' /><ScssDocs
+      name="btn-css-vars-example"
+      file="site/src/scss/_buttons.scss"
+    />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="btn-variables" file="scss/_variables.scss" />
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
@@ -279,7 +276,8 @@
       <code>$theme-colors</code> map to generate the modifier classes in <code>scss/_buttons.scss</code>.
     </p>
     <ScssDocs name="btn-variant-loops" file="scss/_buttons.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -317,9 +315,9 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

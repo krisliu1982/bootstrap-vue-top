@@ -182,7 +182,8 @@ $gutters: (
 "
       lang="scss"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -195,14 +196,12 @@ $gutters: (
       <li><a href="#no-gutters">No gutters</a></li>
       <li>
         <a href="#change-the-gutters">Change the gutters</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

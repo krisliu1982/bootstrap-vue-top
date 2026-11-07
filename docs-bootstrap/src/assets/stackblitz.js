@@ -11,29 +11,28 @@
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-import sdk from '@stackblitz/sdk'
-// eslint-disable-next-line import/no-unresolved
-import snippetsContent from './partials/snippets.js?raw'
+import sdk from '@stackblitz/sdk';
+import snippetsContent from './partials/snippets.js?raw';
 
 // These values will be replaced by Astro's Vite plugin
 const CONFIG = {
   cssCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css',
   jsBundleCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js',
   docsVersion: '5.3'
-}
+};
 
 // Open in StackBlitz logic
 export default (event) => {
-    const codeSnippet = event.target.closest('.bd-code-snippet')
-    const exampleEl = codeSnippet.querySelector('.bd-example')
+  const codeSnippet = event.target.closest('.bd-code-snippet');
+  const exampleEl = codeSnippet.querySelector('.bd-example');
 
-    const htmlSnippet = exampleEl.innerHTML
-    const jsSnippet = event.currentTarget.getAttribute('data-sb-js-snippet')
-    // Get extra classes for this example
-    const classes = Array.from(exampleEl.classList).join(' ')
+  const htmlSnippet = exampleEl.innerHTML;
+  const jsSnippet = event.currentTarget.getAttribute('data-sb-js-snippet');
+  // Get extra classes for this example
+  const classes = Array.from(exampleEl.classList).join(' ');
 
-    openBootstrapSnippet(htmlSnippet, jsSnippet, classes)
-}
+  openBootstrapSnippet(htmlSnippet, jsSnippet, classes);
+};
 
 const openBootstrapSnippet = (htmlSnippet, jsSnippet, classes) => {
   const indexHtml = `<!doctype html>
@@ -48,20 +47,21 @@ const openBootstrapSnippet = (htmlSnippet, jsSnippet, classes) => {
   </head>
   <body class="p-3 m-0 border-0 ${classes}">
     <!-- Example Code Start-->
-${htmlSnippet.trimStart().replace(/^/gm, '    ').replace(/^ {4}$/gm, '').trimEnd()}
+${htmlSnippet
+  .trimStart()
+  .replace(/^/gm, '    ')
+  .replace(/^ {4}$/gm, '')
+  .trimEnd()}
     <!-- Example Code End -->
   </body>
-</html>`
+</html>`;
 
   // Modify the snippets content to convert export default to a variable and invoke it
-  let modifiedSnippetsContent = ''
+  let modifiedSnippetsContent = '';
 
   if (jsSnippet) {
     // Replace export default with a variable assignment
-    modifiedSnippetsContent = snippetsContent.replace(
-      'export default () => {',
-      'const snippets_default = () => {'
-    )
+    modifiedSnippetsContent = snippetsContent.replace('export default () => {', 'const snippets_default = () => {');
 
     // Add IIFE wrapper and execution
     modifiedSnippetsContent = `(() => {
@@ -69,7 +69,7 @@ ${htmlSnippet.trimStart().replace(/^/gm, '    ').replace(/^ {4}$/gm, '').trimEnd
 
   // <stdin>
   snippets_default();
-})();`
+})();`;
   }
 
   const project = {
@@ -81,7 +81,7 @@ ${htmlSnippet.trimStart().replace(/^/gm, '    ').replace(/^ {4}$/gm, '').trimEnd
     description: `Official example from ${window.location.href}`,
     template: jsSnippet ? 'javascript' : 'html',
     tags: ['bootstrap']
-  }
+  };
 
-  sdk.openProject(project, { openFile: 'index.html' })
-}
+  sdk.openProject(project, { openFile: 'index.html' });
+};

@@ -45,27 +45,18 @@ npm init -y
           <strong>Install Vite.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. We use <code>--save-dev</code> to signal that this dependency
           is only for development use and not for production.
         </p>
-        <CodeWrapper
-          code="npm i --save-dev vite"
-          lang="shell"
-        />
+        <CodeWrapper code="npm i --save-dev vite" lang="shell" />
       </li>
       <li>
         <p>
           <strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their
           positioning. If you don’t plan on using those components, you can omit Popper here.
         </p>
-        <CodeWrapper
-          code="npm i --save bootstrap @popperjs/core"
-          lang="shell"
-        />
+        <CodeWrapper code="npm i --save bootstrap @popperjs/core" lang="shell" />
       </li>
       <li>
         <p><strong>Install additional dependency.</strong> In addition to Vite and Bootstrap, we need another dependency (Sass) to properly import and bundle Bootstrap’s CSS.</p>
-        <CodeWrapper
-          code="npm i --save-dev sass"
-          lang="shell"
-        />
+        <CodeWrapper code="npm i --save-dev sass" lang="shell" />
       </li>
     </ol>
     <p>Now that we have all the necessary dependencies installed and set up, we can get to work creating the project files and importing Bootstrap.</p>
@@ -248,7 +239,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
       </li>
     </ol>
     <GuideFooter />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -259,14 +251,12 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
       <li><a href="#configure-vite">Configure Vite</a></li>
       <li>
         <a href="#import-bootstrap">Import Bootstrap</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

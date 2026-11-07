@@ -1,4 +1,4 @@
-import { ViteSSG } from 'vite-ssg'
+import { ViteSSG } from 'vite-ssg';
 import app_ from './app.vue';
 
 // Import all of Bootstrap’s CSS
@@ -22,9 +22,7 @@ import JsDocs from '@/components/JsDocs.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import TableBs from '@/components/TableBs.vue';
 
-
 import { flatPages } from '@/data/data.js';
-
 
 const routes = [
   {
@@ -51,16 +49,19 @@ export const createApp = ViteSSG(
   // the root component
   app_,
   // vue-router options
-  { base: import.meta.env.BASE_URL, routes,scrollBehavior(to, from, savedPosition) {
+  {
+    base: import.meta.env.BASE_URL,
+    routes,
+    scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
-        return savedPosition
+        return savedPosition;
       } else {
-        return { top: 0 }
+        return { top: 0 };
       }
-    } },
+    }
+  },
   // function to have custom setups
   async ({ app }) => {
-
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);
     app.component('Callout', Callout);
@@ -76,20 +77,5 @@ export const createApp = ViteSSG(
     app.component('JsDocs', JsDocs);
     app.component('Placeholder', Placeholder);
     app.component('TableBs', TableBs);
-
-    if (import.meta.env.SSR) {
-
-    } else {
-      /*const bootstrap = await import('bootstrap')
-
-      const articleEl = document.querySelector('article.bd-content')
-      const tocEl = document.querySelector('nav.bd-toc')
-
-      if (tocEl) {
-        new bootstrap.ScrollSpy(articleEl, { target: tocEl })
-      }*/
-    }
-  },
-)
-
-
+  }
+);

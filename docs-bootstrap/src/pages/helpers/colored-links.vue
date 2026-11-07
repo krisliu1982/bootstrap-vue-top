@@ -37,7 +37,8 @@
         ].join('\n')
       "
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -45,15 +46,14 @@
       <li><a href="#link-colors">Link colors</a></li>
       <li>
         <a href="#link-utilities">Link utilities</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

@@ -31,7 +31,8 @@
       <a href="/docs-bootstrap/5.3/utilities/visibility">visibility utilities</a>. Invisible elements will still affect the layout of the page, but are visually hidden from
       visitors.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -39,14 +40,12 @@
       <li><a href="#flexbox-options">Flexbox options</a></li>
       <li>
         <a href="#margin-and-padding">Margin and padding</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

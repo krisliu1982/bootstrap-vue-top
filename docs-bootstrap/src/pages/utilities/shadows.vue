@@ -15,7 +15,7 @@
 <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
 <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>'
-/>
+    />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="box-shadow-variables" file="scss/_variables.scss" />
@@ -25,7 +25,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-shadow" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -42,8 +43,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

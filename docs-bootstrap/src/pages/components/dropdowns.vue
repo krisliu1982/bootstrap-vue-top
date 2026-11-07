@@ -381,7 +381,8 @@
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
-</div>' />
+</div>'
+    />
     <p>And putting it to use in a navbar:</p>
     <Example
       code='<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -1211,7 +1212,8 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
 "
       lang="javascript"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -1288,8 +1290,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

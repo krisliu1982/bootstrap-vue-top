@@ -440,7 +440,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     />
     <p>After running <code>npm run build</code> again, you’ll find the SVG files extracted into <code>dist/icons</code> and properly referenced from CSS.</p>
     <GuideFooter />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -461,8 +462,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

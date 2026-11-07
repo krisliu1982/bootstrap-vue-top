@@ -48,9 +48,9 @@ const router = createRouter({
           resolve({
             el: to.hash,
             top: remToPx(4) // 固定导航栏高度
-          })
-        }, 300)
-      })
+          });
+        }, 300);
+      });
     }
 
     if (savedPosition) {

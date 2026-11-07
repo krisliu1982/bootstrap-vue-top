@@ -322,7 +322,8 @@
   <div class="g-col-4">.g-col-4</div>
 </div>'
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -351,14 +352,12 @@
       </li>
       <li>
         <a href="#sass">Sass</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

@@ -130,11 +130,11 @@
         </tbody>
       </table>
     </div>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

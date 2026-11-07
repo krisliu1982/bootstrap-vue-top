@@ -31,7 +31,8 @@
         <a :href="icon.website">{{ icon.name }}</a>
       </li>
     </ul>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -40,15 +41,14 @@
       <li><a href="#alternatives">Alternatives</a></li>
       <li>
         <a href="#more-options">More options</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

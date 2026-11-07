@@ -33,7 +33,8 @@
     />
     <h3 id="indeterminate">Indeterminate<a class="anchor-link" href="#indeterminate" aria-label="Link to Indeterminate"></a></h3>
     <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
-    <Example addStackblitzJs
+    <Example
+      addStackblitzJs
       class="bd-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
@@ -47,7 +48,8 @@
       Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s
       state.
     </p>
-    <Example addStackblitzJs
+    <Example
+      addStackblitzJs
       class="bd-example-indeterminate"
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkIndeterminateDisabled" disabled>
@@ -325,7 +327,8 @@
     <ScssDocs name="form-check-variables" file="scss/_variables.scss" />
     <p>Variables for switches:</p>
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -372,5 +375,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

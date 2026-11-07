@@ -220,7 +220,8 @@ dt {
       <li><a href="https://rtlcss.com/">RTLCSS</a></li>
       <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL Styling 101</a></li>
     </ul>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -245,14 +246,12 @@ dt {
       <li><a href="#the-breadcrumb-case">The breadcrumb case</a></li>
       <li>
         <a href="#additional-resources">Additional resources</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

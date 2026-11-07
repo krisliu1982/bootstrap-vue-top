@@ -17,12 +17,13 @@
       <a href="https://github.com/twbs/bootstrap/issues/new/choose">opening an issue</a> or submitting a pull request. Read our
       <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

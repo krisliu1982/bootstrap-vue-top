@@ -43,13 +43,13 @@
       <code>xl</code>, and <code>xxl</code> screens.
     </p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-<Example
-  code='<div class="d-inline p-2 text-bg-primary">d-inline</div>
+    <Example
+      code='<div class="d-inline p-2 text-bg-primary">d-inline</div>
 <div class="d-inline p-2 text-bg-dark">d-inline</div>'
-/><Example
-  code='<span class="d-block p-2 text-bg-primary">d-block</span>
+    /><Example
+      code='<span class="d-block p-2 text-bg-primary">d-block</span>
 <span class="d-block p-2 text-bg-dark">d-block</span>'
-/>
+    />
     <h2 id="hiding-elements">Hiding elements<a class="anchor-link" href="#hiding-elements" aria-label="Link to Hiding elements"></a></h2>
     <p>
       For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site,
@@ -128,10 +128,10 @@
         </tbody>
       </table>
     </div>
-<Example
-  code='<div class="d-lg-none">hide on lg and wider screens</div>
+    <Example
+      code='<div class="d-lg-none">hide on lg and wider screens</div>
 <div class="d-none d-lg-block">hide on screens smaller than lg</div>'
-/>
+    />
     <h2 id="display-in-print">Display in print<a class="anchor-link" href="#display-in-print" aria-label="Link to Display in print"></a></h2>
     <p>
       Change the <code>display</code> value of elements when printing with our print display utility classes. Includes support for the same <code>display</code> values as our
@@ -151,11 +151,11 @@
       <li><code>.d-print-inline-flex</code></li>
     </ul>
     <p>The print and display classes can be combined.</p>
-<Example
-  code='<div class="d-print-none">Screen Only (Hide on print only)</div>
+    <Example
+      code='<div class="d-print-none">Screen Only (Hide on print only)</div>
 <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
 <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>'
-/>
+    />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
@@ -163,7 +163,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-display" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -183,8 +184,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

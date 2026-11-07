@@ -101,7 +101,8 @@
     </p>
     <h2 id="troubleshooting">Troubleshooting<a class="anchor-link" href="#troubleshooting" aria-label="Link to Troubleshooting"></a></h2>
     <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -114,14 +115,12 @@
       <li><a href="#local-documentation">Local documentation</a></li>
       <li>
         <a href="#troubleshooting">Troubleshooting</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

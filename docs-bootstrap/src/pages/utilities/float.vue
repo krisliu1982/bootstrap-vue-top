@@ -13,7 +13,7 @@
       code='<div class="float-start">Float start on all viewport sizes</div><br>
 <div class="float-end">Float end on all viewport sizes</div><br>
 <div class="float-none">Don’t float on all viewport sizes</div>'
-/>
+    />
     <p>Use the <a href="/docs-bootstrap/5.3/helpers/clearfix">clearfix helper</a> on a parent element to clear floats.</p>
     <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
     <p>Responsive variations also exist for each <code>float</code> value.</p>
@@ -23,7 +23,7 @@
 <div class="float-lg-end">Float end on viewports sized LG (large) or wider</div><br>
 <div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
 <div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>'
-/>
+    />
     <p>Here are all the support classes:</p>
     <ul>
       <template v-for="breakpoint in data['breakpoints']">
@@ -45,7 +45,8 @@
       <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-float" file="scss/_utilities.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -62,9 +63,9 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

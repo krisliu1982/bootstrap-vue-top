@@ -49,10 +49,7 @@
       <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using
       <code>&gt;</code> as the divider, you can use this:
     </p>
-    <CodeWrapper
-      code='$breadcrumb-divider: quote("&gt;");'
-      lang="scss"
-    />
+    <CodeWrapper code='$breadcrumb-divider: quote("&gt;");' lang="scss" />
     <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
     <Callout>
       <p>
@@ -111,7 +108,8 @@
     <ScssDocs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="breadcrumb-variables" file="scss/_variables.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -130,8 +128,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

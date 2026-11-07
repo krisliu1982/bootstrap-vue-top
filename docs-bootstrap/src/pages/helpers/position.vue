@@ -41,7 +41,8 @@
 &lt;div class="sticky-xxl-bottom"&gt;Stick to the bottom on viewports sized XXL (extra-extra-large) or wider&lt;/div&gt;'
       lang="html"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -53,14 +54,12 @@
       <li><a href="#sticky-bottom">Sticky bottom</a></li>
       <li>
         <a href="#responsive-sticky-bottom">Responsive sticky bottom</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

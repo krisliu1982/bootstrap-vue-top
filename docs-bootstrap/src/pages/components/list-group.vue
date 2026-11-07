@@ -12,7 +12,8 @@
   <li class="list-group-item">A third item</li>
   <li class="list-group-item">A fourth item</li>
   <li class="list-group-item">And a fifth one</li>
-</ul>' />
+</ul>'
+    />
     <h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
     <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
     <Example
@@ -131,7 +132,9 @@
   <li class=&quot;list-group-item&quot;>An item</li>
   <li class=&quot;list-group-item&quot;>A second item</li>
   <li class=&quot;list-group-item&quot;>A third item</li>
-</ul>`).join('\n')
+</ul>`
+          )
+          .join('\n')
       "
     />
     <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
@@ -433,10 +436,7 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
     <Callout name="danger-async-methods" type="danger" />
     <p>Activates your content as a tab element.</p>
     <p>You can create a tab instance with the constructor, for example:</p>
-    <CodeWrapper
-      code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)"
-      lang="javascript"
-    />
+    <CodeWrapper code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)" lang="javascript" />
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -533,7 +533,8 @@ tabElms.forEach(tabElm =&gt; {
 '
       lang="javascript"
     />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -576,9 +577,9 @@ tabElms.forEach(tabElm =&gt; {
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

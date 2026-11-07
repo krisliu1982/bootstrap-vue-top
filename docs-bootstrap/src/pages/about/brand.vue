@@ -30,7 +30,8 @@
         <strong class="text-danger">Incorrect</strong>
       </div>
     </div>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -38,11 +39,12 @@
       <li><a href="#logo">Logo</a></li>
       <li>
         <a href="#name">Name</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

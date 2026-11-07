@@ -36,7 +36,8 @@
       The full Bootstrap license is located
       <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/LICENSE">in the project repository</a> for more information.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -46,14 +47,12 @@
       <li><a href="#it-forbids-you-to">It forbids you to:</a></li>
       <li>
         <a href="#it-does-not-require-you-to">It does not require you to:</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

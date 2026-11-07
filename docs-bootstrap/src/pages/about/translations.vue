@@ -11,12 +11,13 @@
     </ul>
     <p><strong>We don’t help organize or host translations, we just link to them.</strong></p>
     <p>Finished a new or better translation? Open a pull request to add it to our list.</p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

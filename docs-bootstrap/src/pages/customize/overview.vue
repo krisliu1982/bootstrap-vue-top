@@ -53,7 +53,8 @@
       <a href="/docs-bootstrap/5.3/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not
       possible in all components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -61,14 +62,12 @@
       <li><a href="#overview">Overview</a></li>
       <li>
         <a href="#csps-and-embedded-svgs">CSPs and embedded SVGs</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

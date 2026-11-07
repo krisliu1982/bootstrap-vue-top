@@ -20,21 +20,24 @@
       This is easily customized with our various
       <a href="#sizing">sizing options</a>.
     </p>
-    <ExampleCustom code='<div class="card" style="width: 18rem;">
+    <ExampleCustom
+      code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-</div>'><div class="card" style="width: 18rem;">
-    <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
+</div>'
+      ><div class="card" style="width: 18rem">
+        <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h2 id="content-types">Content types<a class="anchor-link" href="#content-types" aria-label="Link to Content types"></a></h2>
     <p>Cards support a wide variety of content, including images, text, list groups, links, and more. Below are examples of what’s supported.</p>
     <h3 id="body">Body<a class="anchor-link" href="#body" aria-label="Link to Body"></a></h3>
@@ -71,17 +74,20 @@
       <code>.card-img-top</code> and <code>.card-img-bottom</code> respectively set the top and bottom corners rounded to match the card’s borders. With <code>.card-text</code>,
       text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.
     </p>
-    <ExampleCustom code='<div class="card" style="width: 18rem;">
+    <ExampleCustom
+      code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
   </div>
-</div>'><div class="card" style="width: 18rem;">
-    <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
+</div>'
+      ><div class="card" style="width: 18rem">
+        <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h3 id="list-groups">List groups<a class="anchor-link" href="#list-groups" aria-label="Link to List groups"></a></h3>
     <p>Create lists of content in a card with a flush list group.</p>
     <Example
@@ -92,8 +98,8 @@
     <li class="list-group-item">A third item</li>
   </ul>
 </div>'
-  /><Example
-    code='<div class="card" style="width: 18rem;">
+    /><Example
+      code='<div class="card" style="width: 18rem;">
   <div class="card-header">
     Featured
   </div>
@@ -103,8 +109,8 @@
     <li class="list-group-item">A third item</li>
   </ul>
 </div>'
-  /><Example
-    code='<div class="card" style="width: 18rem;">
+    /><Example
+      code='<div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
@@ -120,7 +126,8 @@
       Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all
       wrapped in a fixed-width card.
     </p>
-    <ExampleCustom code='<div class="card" style="width: 18rem;">
+    <ExampleCustom
+      code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -135,8 +142,9 @@
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
   </div>
-</div>'><div class="card" style="width: 18rem;">
-    <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
+</div>'
+      ><div class="card" style="width: 18rem">
+        <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -150,7 +158,8 @@
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h3 id="header-and-footer">Header and footer<a class="anchor-link" href="#header-and-footer" aria-label="Link to Header and footer"></a></h3>
     <p>Add an optional header and/or footer within a card.</p>
     <Example
@@ -175,8 +184,8 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
-  /><Example
-    code='<div class="card">
+    /><Example
+      code='<div class="card">
   <div class="card-header">
     Quote
   </div>
@@ -191,8 +200,8 @@
     </figure>
   </div>
 </div>'
-  /><Example
-    code='<div class="card text-center">
+    /><Example
+      code='<div class="card text-center">
   <div class="card-header">
     Featured
   </div>
@@ -321,8 +330,8 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
-  /><Example
-    code='<div class="card text-center">
+    /><Example
+      code='<div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
       <li class="nav-item">
@@ -350,7 +359,8 @@
     </p>
     <h3 id="image-caps">Image caps<a class="anchor-link" href="#image-caps" aria-label="Link to Image caps"></a></h3>
     <p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
-    <ExampleCustom code='<div class="card mb-3">
+    <ExampleCustom
+      code='<div class="card mb-3">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -365,8 +375,9 @@
     <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
   </div>
   <img src="..." class="card-img-bottom" alt="...">
-</div>'><div class="card mb-3">
-    <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
+</div>'
+      ><div class="card mb-3">
+        <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -379,25 +390,28 @@
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
         </div>
-        <Placeholder width="100%" height="180" class="card-img-bottom" text="Image cap" />
-      </div></ExampleCustom>
+        <Placeholder width="100%" height="180" class="card-img-bottom" text="Image cap" /></div
+    ></ExampleCustom>
     <h3 id="image-overlays">Image overlays<a class="anchor-link" href="#image-overlays" aria-label="Link to Image overlays"></a></h3>
     <p>Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need additional styles or utilities.</p>
-    <ExampleCustom code='<div class="card text-bg-dark">
+    <ExampleCustom
+      code='<div class="card text-bg-dark">
   <img src="..." class="card-img" alt="...">
   <div class="card-img-overlay">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"><small>Last updated 3 mins ago</small></p>
   </div>
-</div>'><div class="card text-bg-dark">
-    <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
+</div>'
+      ><div class="card text-bg-dark">
+        <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
         <div class="card-img-overlay">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p class="card-text"><small>Last updated 3 mins ago</small></p>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <Callout>
       <p>Note that content should not be larger than the height of the image. If content is larger than the image the content will be displayed outside the image.</p>
     </Callout>
@@ -407,7 +421,8 @@
       <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your
       card content.
     </p>
-    <ExampleCustom code='<div class="card mb-3" style="max-width: 540px;">
+    <ExampleCustom
+      code='<div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="..." class="img-fluid rounded-start" alt="...">
@@ -420,10 +435,11 @@
       </div>
     </div>
   </div>
-</div>'><div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <Placeholder width="100%" height="250" text="Image" class="img-fluid rounded-start" />
+</div>'
+      ><div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <Placeholder width="100%" height="250" text="Image" class="img-fluid rounded-start" />
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -433,7 +449,8 @@
             </div>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h2 id="card-styles">Card styles<a class="anchor-link" href="#card-styles" aria-label="Link to Card styles"></a></h2>
     <p>Cards include various options for customizing their backgrounds, borders, and color.</p>
     <h3 id="background-and-color">Background and color<a class="anchor-link" href="#background-and-color" aria-label="Link to Background and color"></a></h3>
@@ -504,7 +521,8 @@
       Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex;</code> to become
       attached with uniform dimensions starting at the <code>sm</code> breakpoint.
     </p>
-    <ExampleCustom code='<div class="card-group">
+    <ExampleCustom
+      code='<div class="card-group">
   <div class="card">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -529,7 +547,8 @@
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>'><div class="card-group">
+</div>'
+      ><div class="card-group">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
@@ -550,13 +569,18 @@
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height
+              action.
+            </p>
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <p>When using card groups with footers, their content will automatically line up.</p>
-    <ExampleCustom code='<div class="card-group">
+    <ExampleCustom
+      code='<div class="card-group">
   <div class="card">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -587,7 +611,8 @@
       <small class="text-body-secondary">Last updated 3 mins ago</small>
     </div>
   </div>
-</div>'><div class="card-group">
+</div>'
+      ><div class="card-group">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
@@ -612,13 +637,17 @@
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height
+              action.
+            </p>
           </div>
           <div class="card-footer">
             <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h3 id="grid-cards">Grid cards<a class="anchor-link" href="#grid-cards" aria-label="Link to Grid cards"></a></h3>
     <p>
       Use the Bootstrap grid system and its
@@ -626,7 +655,8 @@
       example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from
       the medium breakpoint up.
     </p>
-    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-2 g-4">
+    <ExampleCustom
+      code='<div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -663,7 +693,8 @@
       </div>
     </div>
   </div>
-</div>'><div class="row row-cols-1 row-cols-md-2 g-4">
+</div>'
+      ><div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
@@ -700,9 +731,11 @@
             </div>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <p>Change it to <code>.row-cols-3</code> and you’ll see the fourth card wrap.</p>
-    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom
+      code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -739,7 +772,8 @@
       </div>
     </div>
   </div>
-</div>'><div class="row row-cols-1 row-cols-md-3 g-4">
+</div>'
+      ><div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
@@ -776,9 +810,11 @@
             </div>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <p>When you need equal height, add <code>.h-100</code> to the cards. If you want equal heights by default, you can set <code>$card-height: 100%</code> in Sass.</p>
-    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom
+      code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="..." class="card-img-top" alt="...">
@@ -815,7 +851,8 @@
       </div>
     </div>
   </div>
-</div>'><div class="row row-cols-1 row-cols-md-3 g-4">
+</div>'
+      ><div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
@@ -852,9 +889,11 @@
             </div>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <p>Just like with card groups, card footers will automatically line up.</p>
-    <ExampleCustom code='<div class="row row-cols-1 row-cols-md-3 g-4">
+    <ExampleCustom
+      code='<div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="..." class="card-img-top" alt="...">
@@ -891,7 +930,8 @@
       </div>
     </div>
   </div>
-</div>'><div class="row row-cols-1 row-cols-md-3 g-4">
+</div>'
+      ><div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
@@ -921,14 +961,18 @@
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal
+                height action.
+              </p>
             </div>
             <div class="card-footer">
               <small class="text-body-secondary">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-      </div></ExampleCustom>
+      </div></ExampleCustom
+    >
     <h3 id="masonry">Masonry<a class="anchor-link" href="#masonry" aria-label="Link to Masonry"></a></h3>
     <p>
       In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots
@@ -946,7 +990,8 @@
     <ScssDocs name="card-css-vars" file="scss/_card.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="card-variables" file="scss/_variables.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -1009,9 +1054,9 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 
 import data from '@/data/data.js';
-
-
 </script>

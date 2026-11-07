@@ -45,8 +45,8 @@
       <li>Add an optional <code>.navbar-nav-scroll</code> to set a <code>max-height</code> and <a href="#scrolling">scroll expanded navbar content</a>.</li>
     </ul>
     <p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
-  <Example
-    code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <Example
+      code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,8 @@
       </form>
     </div>
   </div>
-</nav>' />
+</nav>'
+    />
     <p>
       This example uses
       <a href="/docs-bootstrap/5.3/utilities/background">background</a> (<code>bg-body-tertiary</code>) and
@@ -104,7 +105,8 @@
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">Navbar</span>
   </div>
-</nav>' />
+</nav>'
+    />
     <h4 id="image">Image</h4>
     <p>You can replace the text within the <code>.navbar-brand</code> with an <code>&lt;img&gt;</code>.</p>
     <Example
@@ -162,7 +164,8 @@
       </ul>
     </div>
   </div>
-</nav>' />
+</nav>'
+    />
     <p>And because we use classes for our navs, you can avoid the list-based approach entirely if you like.</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -180,7 +183,8 @@
       </div>
     </div>
   </div>
-</nav>' />
+</nav>'
+    />
     <p>
       You can also use dropdowns in your navbar. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for
       <code>.nav-item</code> and <code>.nav-link</code> as shown below.
@@ -228,7 +232,8 @@
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
-</nav>' />
+</nav>'
+    />
     <p>
       Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional
       <a href="/docs-bootstrap/5.3/utilities/flex">flex utilities</a> as needed to adjust this behavior.
@@ -242,7 +247,8 @@
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
-</nav>' />
+</nav>'
+    />
     <p>
       Input groups work, too. If your navbar is an entire form, or mostly a form, you can use the
       <code>&lt;form&gt;</code> element as the container and save some HTML.
@@ -255,7 +261,8 @@
       <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
     </div>
   </form>
-</nav>' />
+</nav>'
+    />
     <p>
       Various buttons are supported as part of these navbar forms, too. This is also a great reminder that vertical alignment utilities can be used to align different sized
       elements.
@@ -278,10 +285,10 @@
     </span>
   </div>
 </nav>'
-  />
-  <p>Mix and match with other components and utilities as needed.</p>
-  <Example
-    code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    />
+    <p>Mix and match with other components and utilities as needed.</p>
+    <Example
+      code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar w/ text</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -412,7 +419,8 @@
       </form>
     </div>
   </div>
-</nav>' />
+</nav>'
+    />
     <CodeWrapper
       code='&lt;nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"&gt;
   &lt;!-- Navbar content --&gt;
@@ -432,23 +440,23 @@
       Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a
       container inside the <code>.navbar</code> to only center the contents of a <a href="#placement">fixed or static top navbar</a>.
     </p>
-  <Example
-    code='<div class="container">
+    <Example
+      code='<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
     </div>
   </nav>
 </div>'
-  />
-  <p>Use any of the responsive containers to change how wide the content in your navbar is presented.</p>
-  <Example
-    code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    />
+    <p>Use any of the responsive containers to change how wide the content in your navbar is presented.</p>
+    <Example
+      code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-md">
     <a class="navbar-brand" href="#">Navbar</a>
   </div>
 </nav>'
-  />
+    />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
       Use our <a href="/docs-bootstrap/5.3/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom,
@@ -459,32 +467,32 @@
       Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the
       <code>&lt;body&gt;</code>) to prevent overlap with other elements.
     </p>
-  <Example
-    code='<nav class="navbar bg-body-tertiary">
+    <Example
+      code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Default</a>
   </div>
 </nav>'
-  /><Example
-    code='<nav class="navbar fixed-top bg-body-tertiary">
+    /><Example
+      code='<nav class="navbar fixed-top bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Fixed top</a>
   </div>
 </nav>'
-  /><Example
-    code='<nav class="navbar fixed-bottom bg-body-tertiary">
+    /><Example
+      code='<nav class="navbar fixed-bottom bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Fixed bottom</a>
   </div>
 </nav>'
-  /><Example
-    code='<nav class="navbar sticky-top bg-body-tertiary">
+    /><Example
+      code='<nav class="navbar sticky-top bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sticky top</a>
   </div>
 </nav>'
-  /><Example
-    code='<nav class="navbar sticky-bottom bg-body-tertiary">
+    /><Example
+      code='<nav class="navbar sticky-bottom bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Sticky bottom</a>
   </div>
@@ -803,7 +811,8 @@
       generated through a loop in <code>scss/_navbar.scss</code>.
     </p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -842,8 +851,7 @@
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

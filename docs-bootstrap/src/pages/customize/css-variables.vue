@@ -258,7 +258,8 @@ a {
       <a href="https://stackoverflow.com/a/47212942">this Stack Overflow answer</a> for some helpful links. In the meantime, you can use these variables in other CSS situations, as
       well as in your JavaScript.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -276,14 +277,12 @@ a {
       <li><a href="#focus-variables">Focus variables</a></li>
       <li>
         <a href="#grid-breakpoints">Grid breakpoints</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>

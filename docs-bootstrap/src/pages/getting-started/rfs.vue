@@ -95,7 +95,8 @@
       RFS is a separate project under the Bootstrap organization. More about RFS and its configuration can be found on its
       <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub repository</a>.
     </p>
-  <DocsPager /></article>
+    <DocsPager />
+  </article>
 
   <nav class="bd-toc" aria-label="On this page">
     <h6>On this page</h6>
@@ -110,14 +111,12 @@
       </li>
       <li>
         <a href="#extended-documentation">Extended documentation</a>
-        
       </li>
     </ul>
   </nav>
 </template>
 
-<script setup>import {usePage} from '@/components/use-page.js';usePage()
-
-
-
+<script setup>
+import { usePage } from '@/components/use-page.js';
+usePage();
 </script>
