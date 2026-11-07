@@ -117,4 +117,15 @@
 import { usePage } from '@/components/use-page.js';
 usePage();
 import data from '@/data/data.js';
+
+import { onMounted } from 'vue';
+
+onMounted(()=>{
+  document.querySelectorAll('.bd-content [href="#"]')
+    .forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault()
+      })
+    })
+})
 </script>

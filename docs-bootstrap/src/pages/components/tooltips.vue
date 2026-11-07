@@ -551,10 +551,11 @@ import * as bootstrap from 'bootstrap';
 
 let articleEl = null;
 onMounted(() => {
+  import('bootstrap').then(bootstrap=>{
   articleEl = document.querySelector('article.bd-content')
   
   const tooltipTriggerList = articleEl.querySelectorAll('[data-bs-toggle="tooltip"]');
-  import('bootstrap').then(bootstrap=>{
+  
   [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 
   })

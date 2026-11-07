@@ -851,4 +851,27 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
 <script setup>
 import { usePage } from '@/components/use-page.js';
 usePage();
+
+import { onMounted, onBeforeUnmount } from 'vue';
+
+let articleEl = null;
+
+onMounted(() => {
+  import('bootstrap').then(bootstrap=>{
+        articleEl = document.querySelector('article.bd-content')
+
+    articleEl.querySelectorAll('.carousel')
+    .forEach(carousel => {
+      new bootstrap.Carousel(carousel)
+    })
+    })
+});
+onBeforeUnmount(() => {
+  import('bootstrap').then(bootstrap=>{
+    articleEl.querySelectorAll('.carousel')
+    .forEach(carousel => {
+      bootstrap.Carousel.getInstance(carousel).dispose()
+    })
+    })
+});
 </script>

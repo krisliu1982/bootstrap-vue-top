@@ -378,4 +378,17 @@
 <script setup>
 import { usePage } from '@/components/use-page.js';
 usePage();
+
+import {onMounted} from 'vue'
+
+onMounted(()=>{
+    document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+    .forEach(checkbox => {
+      if (checkbox.id.includes('Indeterminate')) {
+        checkbox.indeterminate = true
+      }
+    })
+})
+
+useContent()
 </script>

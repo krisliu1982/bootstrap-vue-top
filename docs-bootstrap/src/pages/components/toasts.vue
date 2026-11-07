@@ -492,4 +492,63 @@ myToastEl.addEventListener(&#39;hidden.bs.toast&#39;, () =&gt; {
 <script setup>
 import { usePage } from '@/components/use-page.js';
 usePage();
+
+import { onMounted, onBeforeUnmount } from 'vue';
+
+let articleEl = null;
+
+onMounted(() => {
+  import('bootstrap').then(bootstrap=>{
+    articleEl = document.querySelector('article.bd-content')
+
+  const toastElList = articleEl.querySelectorAll('.bd-example .toast');
+  const toastList = [...toastElList].map(
+    (toastEl) =>
+      new bootstrap.Toast(toastEl, {
+        autohide: false
+      })
+  );
+
+  for (const toast of toastList) {
+    toast.show();
+  }
+
+  const toastTrigger = document.getElementById('liveToastBtn');
+  const toastLiveExample = document.getElementById('liveToast');
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+      const toast = new bootstrap.Toast(toastLiveExample);
+      toast.show();
+    });
+  }
+
+  const toastPlacement = document.getElementById('toastPlacement');
+  if (toastPlacement) {
+    document.getElementById('selectToastPlacement').addEventListener('change', function () {
+      if (!toastPlacement.dataset.originalClass) {
+        toastPlacement.dataset.originalClass = toastPlacement.className;
+      }
+
+      toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`;
+    });
+  }
+  })
+});
+
+onBeforeUnmount(() => {
+    import('bootstrap').then(bootstrap=>{
+
+  const toastElList = articleEl.querySelectorAll('.bd-example .toast');
+  const toastList = [...toastElList].map((toastEl) => bootstrap.Toast.getInstance(toastEl));
+  for (const toast of toastList) {
+    toast.dispose();
+  }
+
+  const toastLiveExample = document.getElementById('liveToast');
+  const liveToastInstance = bootstrap.Toast.getInstance(toastLiveExample);
+  if (liveToastInstance) {
+    liveToastInstance.dispose();
+  }
+  })
+});
 </script>
