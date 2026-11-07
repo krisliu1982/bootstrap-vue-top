@@ -30,14 +30,16 @@
                   <bi-fonts />
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'" :disabled="fontSize == 'sm'">小型布局</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'" :disabled="fontSize == 'md'">中型布局</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'" :disabled="fontSize == 'lg'">大型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('sm')" :disabled="fontSize == 'sm'">小型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('md')" :disabled="fontSize == 'md'">中型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize == 'lg'">大型布局</button></li>
                 </ul>
               </div>
-              <a href="#" class="link-body-emphasis text-decoration-none" title="主题切换" @click.prevent="handleThemeChange">
-                <bi-sun v-if="theme === 'light'" />
-                <bi-moon v-else />
+              <a v-if="theme === 'light'" href="#" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
+                <bi-sun/>
+              </a>
+              <a v-else href="#" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
+                <bi-moon  />
               </a>
             </div>
           </div>
@@ -143,16 +145,13 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import data from '@/data/data.js';
-const fontSize = ref('md');
-const theme = ref('light');
+
 
 import pkg from '../package.json';
-
 const version = pkg.version;
 
-/*const navbarRef = ref(null);
 
 function getFontSize() {
   const storedFontSize = localStorage.getItem('font-size');
@@ -163,20 +162,19 @@ function getFontSize() {
   return storedFontSize;
 }
 const fontSize = ref(getFontSize());
-watch(
-  fontSize,
-  (newVal) => {
-    if (newVal === 'sm') {
+function handleFontSizeChange(_fontSize) {
+  fontSize.value = _fontSize;
+    if (_fontSize === 'sm') {
       document.documentElement.style.setProperty('font-size', '14px');
-    } else if (newVal === 'md') {
+    } else if (_fontSize === 'md') {
       document.documentElement.style.setProperty('font-size', '16px');
-    } else if (newVal === 'lg') {
+    } else if (_fontSize === 'lg') {
       document.documentElement.style.setProperty('font-size', '18px');
     }
 
-    localStorage.setItem('font-size', newVal);
-  }
-);
+    localStorage.setItem('font-size', _fontSize);
+}
+
 
 //主题修改
 function getTheme() {
@@ -188,25 +186,22 @@ function getTheme() {
   return storedTheme;
 }
 const theme = ref(getTheme());
-watch(
-  theme,
-  (newVal) => {
-    document.documentElement.setAttribute('data-bs-theme', newVal);
-    localStorage.setItem('theme', newVal);
-  }
-);
 
-function handleThemeChange() {
-  if (theme.value === 'light') {
-    theme.value = 'dark';
-  } else if (theme.value === 'dark') {
-    theme.value = 'light';
-  }
+function handleThemeChange(_theme) {
+    theme.value = _theme;
+
+  document.documentElement.setAttribute('data-bs-theme', _theme);
+
+  localStorage.setItem('theme', _theme);
+
 }
 
-import pkg from '../package.json';
+onMounted(()=>{
+  handleFontSizeChange(getFontSize())
+  handleThemeChange(getTheme())
+})
 
-const version = pkg.version;
+const navbarRef = ref(null);
 
 const offcanvasRef = ref(null);
 const menuRef = ref(null);
@@ -216,7 +211,7 @@ let smallScreen = window.innerWidth < 992;
 
 function handleViewportChange() {
   smallScreen = window.innerWidth < 992;
-}*/
+}
 
 /*onMounted(() => {
   menuRef.value.addEventListener('click', function (e) {
