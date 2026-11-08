@@ -19,7 +19,7 @@ export default defineConfig({
       resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]
     })
   ],
-  base: '/docs-bootstrap/5.3/',
+  base: '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

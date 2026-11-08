@@ -1,5 +1,7 @@
 import { ViteSSG } from 'vite-ssg';
 import app_ from './app.vue';
+import NProgress from 'nprogress-es';
+import 'nprogress-es/nprogress.css';
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
@@ -58,10 +60,28 @@ export const createApp = ViteSSG(
       } else {
         return { top: 0 };
       }
-    }
+    },
+    // 全局移除 router-link-active
+    linkActiveClass: '',
+    // 全局移除 router-link-exact-active
+    linkExactActiveClass: ''
   },
   // function to have custom setups
-  async ({ app }) => {
+  ({ app, router }) => {
+    router.beforeEach((to, from) => {
+      if (to.hash) return;
+      NProgress.start();
+    });
+
+    router.afterEach((to, from) => {
+      NProgress.done();
+    });
+
+    router.onError((error) => {
+      NProgress.done();
+      console.error('路由导航错误:', error);
+    });
+
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);
     app.component('Callout', Callout);
