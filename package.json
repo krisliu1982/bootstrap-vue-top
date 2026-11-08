@@ -1,40 +1,20 @@
 {
   "name": "bootstrap-vue-top",
   "version": "1.1.3",
-  "homepage": "https://bootstrap-vue.top",
-  "private": false,
+  "private": true,
   "type": "module",
-  "description": "A frontend framework based on Bootstrap & Vue.",
-  "files": [
-    "dist",
-    "src",
-    "README.md",
-    "LICENSE",
-    "package.json"
-  ],
-  "main": "./dist/bootstrap-vue-top.umd.cjs",
-  "module": "./dist/bootstrap-vue-top.js",
-  "exports": {
-    ".": {
-      "import": "./dist/bootstrap-vue-top.js",
-      "require": "./dist/bootstrap-vue-top.umd.cjs"
-    },
-    "./style.css": "./dist/bootstrap-vue-top.css"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build",
+    "deploy": "vite build && wrangler deploy",
     "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
-    "focus-trap": "^8.2.4",
-    "lodash-es": "^4.18.1"
+    "vue": "^3.5.45"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.67.0",
     "@iconify-json/bi": "^1.2.7",
     "@vitejs/plugin-vue": "^6.0.10",
     "autoprefixer": "^10.6.2",
@@ -43,15 +23,6 @@
     "unplugin-icons": "^22.5.0",
     "unplugin-vue-components": "^30.0.0",
     "vite": "^8.3.6",
-    "vue": "^3.5.45"
-  },
-  "keywords": [
-    "bootstrap",
-    "vue",
-    "ui",
-    "ES6",
-    "javascript"
-  ],
-  "author": "kris.liu",
-  "license": "MIT"
+    "wrangler": "^4.158.0"
+  }
 }

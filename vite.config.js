@@ -1,11 +1,13 @@
 import { fileURLToPath, URL } from 'node:url'
-import { resolve } from 'node:path'
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import { cloudflare } from "@cloudflare/vite-plugin";
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -16,12 +18,20 @@ export default defineConfig({
     }),
     Components({
       resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]
-    })
+    }),
+    cloudflare()
   ],
+  base: '/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'bootstrap-vue-top': fileURLToPath(new URL('../src/index.js', import.meta.url))
     },
+  },
+  server: {//开发配置  npm run dev
+    port: 8888,//端口号
+    host: '0.0.0.0',
+    open: true,//是否自动打开浏览器
   },
   css: {
     preprocessorOptions: {
@@ -37,22 +47,6 @@ export default defineConfig({
     },
   },
   build: {
-    target: 'es2015',
-    lib: {
-      entry: {
-        'bootstrap-vue-top': resolve(import.meta.dirname, 'src/index.js')
-      },
-      name: 'BootstrapVueTop',
-      fileName: 'bootstrap-vue-top',
-    },
-    rolldownOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue'
-        },
-        exports: 'named'
-      }
-    }
+    target: 'es2015'
   }
 })

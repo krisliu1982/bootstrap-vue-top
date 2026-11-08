@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "bootstrap-vue-top",
+  "assets": {
+    "directory": "./dist"
+  }
+}
