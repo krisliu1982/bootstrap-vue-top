@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-uploader" class="docs-content">
+  <div v-scrollspy.body data-bs-target="#docs-nav-image-preview" class="docs-content">
     <h1>ImagePreview 图片预览</h1>
     <p class="fs-4 fw-light">用于预览大图的功能。</p>
 

@@ -6,7 +6,7 @@ import BootstrapVueTop from 'bootstrap-vue-top';
 
 import './assets/docs.css';
 
-import CodeHighlight from '@/views/code-highlight.vue';
+import CodeHighlight from '@/code-highlight.vue';
 
 const app = createApp(app_);
 app.use(router);
