@@ -13,9 +13,9 @@
       <a href="https://getbootstrap.com/docs/5.3/layout/z-index/" target="_blank">Bootstrap Z-index</a>
     </p>
 
-    <nav v-docstoc id="docs-nav-changelog">
-      <a href="#z-index-about">工作说明</a>
-    </nav>
+        <h2 id="z-index-about">
+      工作说明<a class="anchor-link" aria-label="Link to this section: 工作说明" href="#z-index-about"> </a>
+    </h2>
     <p>
       Bootstrap 的多个组件都使用了 <code>z-index</code> 这个 CSS
       属性，它通过提供第三轴来排列内容，从而帮助控制布局。我们在 Bootstrap 中采用了一套默认的 z-index
