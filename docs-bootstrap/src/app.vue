@@ -36,10 +36,10 @@
                 </ul>
               </div>
               <a v-if="theme === 'light'" href="#" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
-                <bi-sun/>
+                <bi-sun />
               </a>
               <a v-else href="#" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
-                <bi-moon  />
+                <bi-moon />
               </a>
             </div>
           </div>
@@ -148,10 +148,8 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import data from '@/data/data.js';
 
-
 import pkg from '../package.json';
 const version = pkg.version;
-
 
 function getFontSize() {
   const storedFontSize = localStorage.getItem('font-size');
@@ -164,17 +162,16 @@ function getFontSize() {
 const fontSize = ref(null);
 function handleFontSizeChange(_fontSize) {
   fontSize.value = _fontSize;
-    if (_fontSize === 'sm') {
-      document.documentElement.style.setProperty('font-size', '14px');
-    } else if (_fontSize === 'md') {
-      document.documentElement.style.setProperty('font-size', '16px');
-    } else if (_fontSize === 'lg') {
-      document.documentElement.style.setProperty('font-size', '18px');
-    }
+  if (_fontSize === 'sm') {
+    document.documentElement.style.setProperty('font-size', '14px');
+  } else if (_fontSize === 'md') {
+    document.documentElement.style.setProperty('font-size', '16px');
+  } else if (_fontSize === 'lg') {
+    document.documentElement.style.setProperty('font-size', '18px');
+  }
 
-    localStorage.setItem('font-size', _fontSize);
+  localStorage.setItem('font-size', _fontSize);
 }
-
 
 //主题修改
 function getTheme() {
@@ -188,18 +185,17 @@ function getTheme() {
 const theme = ref(null);
 
 function handleThemeChange(_theme) {
-    theme.value = _theme;
+  theme.value = _theme;
 
   document.documentElement.setAttribute('data-bs-theme', _theme);
 
   localStorage.setItem('theme', _theme);
-
 }
 
-onMounted(()=>{
-  handleFontSizeChange(getFontSize())
-  handleThemeChange(getTheme())
-})
+onMounted(() => {
+  handleFontSizeChange(getFontSize());
+  handleThemeChange(getTheme());
+});
 
 const navbarRef = ref(null);
 
