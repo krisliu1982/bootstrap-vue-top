@@ -1,10 +1,5 @@
 import { ViteSSG } from 'vite-ssg';
 import app_ from './app.vue';
-import NProgress from 'nprogress-es';
-import 'nprogress-es/nprogress.css';
-
-NProgress.settings.showSpinner = false;
-
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
@@ -88,20 +83,7 @@ export const createApp = ViteSSG(
     linkExactActiveClass: ''
   },
   // function to have custom setups
-  ({ app, router }) => {
-    router.beforeEach((to, from) => {
-      if (to.hash) return;
-      NProgress.start();
-    });
-
-    router.afterEach((to, from) => {
-      NProgress.done();
-    });
-
-    router.onError((error) => {
-      NProgress.done();
-      console.error('路由导航错误:', error);
-    });
+  ({ app }) => {
 
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);
