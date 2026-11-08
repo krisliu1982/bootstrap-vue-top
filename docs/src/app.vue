@@ -2,7 +2,7 @@
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
-        <img src="/favicon.svg" alt="BootstrapVue" width="24" height="24"/>
+        <img src="/favicon.svg" alt="bootstrap-vue-top" width="24" height="24"/>
         <small>{{ version }}</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
