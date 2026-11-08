@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,7 +18,8 @@ export default defineConfig({
     }),
     Components({
       resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]
-    })
+    }),
+    cloudflare()
   ],
   base: '/',
   resolve: {
