@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import NProgress from 'nprogress-es';
-import 'nprogress-es/nprogress.css';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 
-NProgress.settings.showSpinner = false;
+NProgress.configure({ showSpinner: false });
 
 var routes = [
   {
@@ -380,12 +380,17 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from) => {
-  if (to.hash) return true;
+  if (to.hash) return;
   NProgress.start();
 });
 
 router.afterEach((to, from) => {
   NProgress.done();
+});
+
+router.onError((error) => {
+  NProgress.done();
+  console.error('路由导航错误:', error);
 });
 
 export default router;
