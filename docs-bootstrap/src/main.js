@@ -1,5 +1,7 @@
 import { ViteSSG } from 'vite-ssg';
 import app_ from './app.vue';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
@@ -50,6 +52,8 @@ function remToPx(remValue) {
   return remValue * rootFontSize;
 }
 
+NProgress.configure({ showSpinner: false });
+
 export const createApp = ViteSSG(
   // the root component
   app_,
@@ -58,18 +62,18 @@ export const createApp = ViteSSG(
     base: import.meta.env.BASE_URL,
     routes,
     scrollBehavior(to, from, savedPosition) {
-          // 处理锚点
-    if (to.hash) {
-      // 返回一个 Promise，确保等待 DOM 更新
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve({
-            el: to.hash,
-            top: remToPx(4.5) // 固定导航栏高度
-          });
-        }, 300);
-      });
-    }
+      // 处理锚点
+      if (to.hash) {
+        // 返回一个 Promise，确保等待 DOM 更新
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve({
+              el: to.hash,
+              top: remToPx(4.5) // 固定导航栏高度
+            });
+          }, 300);
+        });
+      }
 
       if (savedPosition) {
         return savedPosition;
@@ -83,7 +87,27 @@ export const createApp = ViteSSG(
     linkExactActiveClass: ''
   },
   // function to have custom setups
-  ({ app }) => {
+  ({ app, router }) => {
+    if (import.meta.env.SSR) {
+      // your server code will be removed in the client build
+    }
+    else {
+      router.beforeEach((to, from) => {
+        if (to.hash) return;
+        NProgress.start();
+      });
+
+      router.afterEach((to, from) => {
+        NProgress.done();
+      });
+
+      router.onError((error) => {
+        NProgress.done();
+        console.error('路由导航错误:', error);
+      });
+    }
+
+
 
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);

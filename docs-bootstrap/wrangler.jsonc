@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "bootstrap-vue-top-docs",
+  "name": "bs53-docs",
   "assets": {
     "directory": "./dist",
   }
