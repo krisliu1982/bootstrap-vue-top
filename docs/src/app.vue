@@ -7,9 +7,7 @@
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <RouterLink to="/" class="link-body-emphasis text-decoration-none" active-class="fw-bold"
-                >文档
-              </RouterLink>
+              <a href="/" class="link-body-emphasis text-decoration-none">文档</a>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank"
                 >Bootstrap</a
               >
@@ -27,17 +25,16 @@
                   role="button"
                   aria-expanded="false"
                 >
-                  <template v-if="fontSize === 'sm'">小型</template>
-                  <template v-else-if="fontSize === 'md'">中型</template>
-                  <template v-else-if="fontSize === 'lg'">大型</template>
+                  <template v-if="fontSize === 'sm'">小型布局</template>
+                  <template v-else-if="fontSize === 'md'">中型布局</template>
+                  <template v-else-if="fontSize === 'lg'">大型布局</template>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型文字</button></li>
-                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型文字</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'sm'">小型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'md'">中型布局</button></li>
+                  <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型布局</button></li>
                 </ul>
               </div>
-              <div class="vr"></div>
               <a
                 href="#"
                 class="link-body-emphasis text-decoration-none"
