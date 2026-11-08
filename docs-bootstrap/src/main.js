@@ -3,6 +3,9 @@ import app_ from './app.vue';
 import NProgress from 'nprogress-es';
 import 'nprogress-es/nprogress.css';
 
+NProgress.settings.showSpinner = false;
+
+
 // Import all of Bootstrap’s CSS
 import 'bootstrap/scss/bootstrap.scss';
 
@@ -47,6 +50,11 @@ flatPages.forEach((page) => {
   }
 });
 
+function remToPx(remValue) {
+  const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+  return remValue * rootFontSize;
+}
+
 export const createApp = ViteSSG(
   // the root component
   app_,
@@ -55,6 +63,19 @@ export const createApp = ViteSSG(
     base: import.meta.env.BASE_URL,
     routes,
     scrollBehavior(to, from, savedPosition) {
+          // 处理锚点
+    if (to.hash) {
+      // 返回一个 Promise，确保等待 DOM 更新
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({
+            el: to.hash,
+            top: remToPx(4.5) // 固定导航栏高度
+          });
+        }, 300);
+      });
+    }
+
       if (savedPosition) {
         return savedPosition;
       } else {
