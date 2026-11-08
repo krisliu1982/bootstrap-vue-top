@@ -8,11 +8,11 @@
     <ul>
       <li>
         Compiled and minified CSS bundles (see
-        <a href="/docs-bootstrap/5.3/getting-started/contents#css-files">CSS files comparison</a>)
+        <a href="/getting-started/contents#css-files">CSS files comparison</a>)
       </li>
       <li>
         Compiled and minified JavaScript plugins (see
-        <a href="/docs-bootstrap/5.3/getting-started/contents#js-files">JS files comparison</a>)
+        <a href="/getting-started/contents#js-files">JS files comparison</a>)
       </li>
     </ul>
     <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies like Popper.</p>
@@ -22,12 +22,12 @@
     <h2 id="source-files">Source files<a class="anchor-link" href="#source-files" aria-label="Link to Source files"></a></h2>
     <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
     <ul>
-      <li><a href="/docs-bootstrap/5.3/getting-started/contribute#sass">Sass compiler</a> for compiling Sass source files into CSS files</li>
+      <li><a href="/getting-started/contribute#sass">Sass compiler</a> for compiling Sass source files into CSS files</li>
       <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for CSS vendor prefixing</li>
     </ul>
     <p>
       Should you require our full set of
-      <a href="/docs-bootstrap/5.3/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable
+      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable
       for your own purposes.
     </p>
     <p>
@@ -80,7 +80,7 @@
     <p>
       Pull in Bootstrap’s <strong>source files</strong> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will
       <strong
-        >require a <a href="/docs-bootstrap/5.3/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong
+        >require a <a href="/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong
       >
       for a setup that matches our official compiled versions.
     </p>

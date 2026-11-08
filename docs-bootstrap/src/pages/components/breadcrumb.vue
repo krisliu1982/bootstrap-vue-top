@@ -55,7 +55,7 @@
       <p>
         <strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be
         URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our
-        <a href="/docs-bootstrap/5.3/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read
+        <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read
         <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.
       </p> </Callout
     ><Example

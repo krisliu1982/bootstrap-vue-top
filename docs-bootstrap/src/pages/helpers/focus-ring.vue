@@ -46,7 +46,7 @@
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
       In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our
-      <a href="/docs-bootstrap/5.3/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current
+      <a href="/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current
       color mode support.
     </p>
     <Example
@@ -61,7 +61,7 @@
     />
     <p>
       Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
     <DocsPager />

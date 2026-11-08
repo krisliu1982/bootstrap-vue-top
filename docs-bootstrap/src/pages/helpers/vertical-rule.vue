@@ -23,7 +23,7 @@
 </div>'
     />
     <h2 id="with-stacks">With stacks<a class="anchor-link" href="#with-stacks" aria-label="Link to With stacks"></a></h2>
-    <p>They can also be used in <a href="/docs-bootstrap/5.3/helpers/stacks">stacks</a>:</p>
+    <p>They can also be used in <a href="/helpers/stacks">stacks</a>:</p>
     <Example
       class="bd-example-flex"
       code='<div class="hstack gap-3">

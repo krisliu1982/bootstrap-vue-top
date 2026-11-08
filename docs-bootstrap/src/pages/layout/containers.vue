@@ -161,7 +161,7 @@
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" />
     <p>
       For more information and examples on how to modify our Sass maps and variables, please refer to
-      <a href="/docs-bootstrap/5.3/layout/grid#css">the Sass section of the Grid documentation</a>.
+      <a href="/layout/grid#css">the Sass section of the Grid documentation</a>.
     </p>
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
     <p>In addition to customizing the Sass, you can also create your own containers with our Sass mixin.</p>

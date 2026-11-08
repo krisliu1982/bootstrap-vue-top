@@ -180,7 +180,7 @@
     <h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
     <p>
       Add badges to any list group item to show unread counts, activity, and more with the help of some
-      <a href="/docs-bootstrap/5.3/utilities/flex">utilities</a>.
+      <a href="/utilities/flex">utilities</a>.
     </p>
     <Example
       code='<ul class="list-group">
@@ -201,7 +201,7 @@
     <h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
     <p>
       Add nearly any HTML within, even for linked list groups like the one below, with the help of
-      <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a>.
+      <a href="/utilities/flex">flexbox utilities</a>.
     </p>
     <Example
       code='<div class="list-group">

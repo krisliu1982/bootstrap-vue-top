@@ -14,7 +14,7 @@
     <h2 id="image-thumbnails">Image thumbnails<a class="anchor-link" href="#image-thumbnails" aria-label="Link to Image thumbnails"></a></h2>
 
     <p>
-      In addition to our <a href="/docs-bootstrap/5.3/utilities/borders">border-radius utilities</a>, you can use <code>.img-thumbnail</code> to give an image a rounded 1px border
+      In addition to our <a href="/utilities/borders">border-radius utilities</a>, you can use <code>.img-thumbnail</code> to give an image a rounded 1px border
       appearance.
     </p>
 
@@ -29,9 +29,9 @@
     <h2 id="aligning-images">Aligning images<a class="anchor-link" href="#aligning-images" aria-label="Link to Aligning images"></a></h2>
 
     <p>
-      Align images with the <a href="/docs-bootstrap/5.3/utilities/float">helper float classes</a> or
-      <a href="/docs-bootstrap/5.3/utilities/text#text-alignment">text alignment classes</a>. <code>block</code>-level images can be centered using
-      <a href="/docs-bootstrap/5.3/utilities/spacing#horizontal-centering">the <code>.mx-auto</code> margin utility class</a>.
+      Align images with the <a href="/utilities/float">helper float classes</a> or
+      <a href="/utilities/text#text-alignment">text alignment classes</a>. <code>block</code>-level images can be centered using
+      <a href="/utilities/spacing#horizontal-centering">the <code>.mx-auto</code> margin utility class</a>.
     </p>
 
     <ExampleCustom

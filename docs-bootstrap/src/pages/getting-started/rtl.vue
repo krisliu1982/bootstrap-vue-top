@@ -6,7 +6,7 @@
     <h2 id="get-familiar">Get familiar<a class="anchor-link" href="#get-familiar" aria-label="Link to Get familiar"></a></h2>
     <p>
       We recommend getting familiar with Bootstrap first by reading through our
-      <a href="/docs-bootstrap/5.3/getting-started/introduction">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.
+      <a href="/getting-started/introduction">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.
     </p>
     <p>You may also want to read up on <a href="https://rtlcss.com/">the RTLCSS project</a>, as it powers our approach to RTL.</p>
     <Callout type="warning">
@@ -81,7 +81,7 @@
     <p>Working with RTL, through our source Sass or compiled CSS, shouldn’t be much different from our default LTR though.</p>
     <h2 id="customize-from-source">Customize from source<a class="anchor-link" href="#customize-from-source" aria-label="Link to Customize from source"></a></h2>
     <p>
-      When it comes to <a href="/docs-bootstrap/5.3/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works
+      When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works
       the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.
     </p>
     <h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
@@ -175,7 +175,7 @@ dt {
         <li>When switching <code>.ltr</code> and <code>.rtl</code>, make sure you add <code>dir</code> and <code>lang</code> attributes accordingly.</li>
         <li>
           Loading both files can be a real performance bottleneck: consider some
-          <a href="/docs-bootstrap/5.3/customize/optimize">optimization</a>, and maybe try to
+          <a href="/customize/optimize">optimization</a>, and maybe try to
           <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.
         </li>
         <li>
@@ -200,7 +200,7 @@ dt {
         </li>
         <li>
           Having a single bundle with both directions will increase the size of the final stylesheet (on average, by 20%-30%): consider some
-          <a href="/docs-bootstrap/5.3/customize/optimize">optimization</a>.
+          <a href="/customize/optimize">optimization</a>.
         </li>
         <li>
           Take into account that PostCSS RTLCSS is not compatible with <code>/* rtl:remove */</code> directives because it doesn’t remove any CSS rule. You should replace your
@@ -212,7 +212,7 @@ dt {
     </Callout>
     <h2 id="the-breadcrumb-case">The breadcrumb case<a class="anchor-link" href="#the-breadcrumb-case" aria-label="Link to The breadcrumb case"></a></h2>
     <p>
-      The <a href="/docs-bootstrap/5.3/components/breadcrumb#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely
+      The <a href="/components/breadcrumb#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely
       <code>$breadcrumb-divider-flipped</code> —defaulting to <code>$breadcrumb-divider</code>.
     </p>
     <h2 id="additional-resources">Additional resources<a class="anchor-link" href="#additional-resources" aria-label="Link to Additional resources"></a></h2>

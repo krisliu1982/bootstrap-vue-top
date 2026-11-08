@@ -82,7 +82,7 @@
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
     <p>
       For more information and examples on how to modify our Sass maps and variables, please refer to
-      <a href="/docs-bootstrap/5.3/layout/grid#css">the CSS section of the Grid documentation</a>.
+      <a href="/layout/grid#css">the CSS section of the Grid documentation</a>.
     </p>
     <h2 id="media-queries">Media queries<a class="anchor-link" href="#media-queries" aria-label="Link to Media queries"></a></h2>
     <p>

@@ -56,7 +56,7 @@
     <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
     <p>
       Change the horizontal alignment of your nav with
-      <a href="/docs-bootstrap/5.3/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or
+      <a href="/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or
       right-aligned.
     </p>
     <p>Centered with <code>.justify-content-center</code>:</p>
@@ -247,7 +247,7 @@
     </h2>
     <p>
       If you need responsive nav variations, consider using a series of
-      <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the
+      <a href="/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the
       example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
     </p>
     <Example
@@ -274,7 +274,7 @@
     <h2 id="using-dropdowns">Using dropdowns<a class="anchor-link" href="#using-dropdowns" aria-label="Link to Using dropdowns"></a></h2>
     <p>
       Add dropdown menus with a little extra HTML and the
-      <a href="/docs-bootstrap/5.3/components/dropdowns#usage">dropdowns JavaScript plugin</a>.
+      <a href="/components/dropdowns#usage">dropdowns JavaScript plugin</a>.
     </p>
     <h3 id="tabs-with-dropdowns">Tabs with dropdowns<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="Link to Tabs with dropdowns"></a></h3>
     <Example

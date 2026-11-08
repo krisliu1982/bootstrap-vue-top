@@ -41,7 +41,7 @@
     <p>
       The collapse plugin supports horizontal collapsing. Add the <code>.collapse-horizontal</code> modifier class to transition the <code>width</code> instead of
       <code>height</code> and set a <code>width</code> on the immediate child element. Feel free to write your own custom Sass, use inline styles, or use our
-      <a href="/docs-bootstrap/5.3/utilities/sizing">width utilities</a>.
+      <a href="/utilities/sizing">width utilities</a>.
     </p>
     <Callout>
       <p>
@@ -134,7 +134,7 @@
     </p>
     <p>
       To add accordion-like group management to a collapsible area, add the data attribute
-      <code>data-bs-parent=&quot;#selector&quot;</code>. Refer to the <a href="/docs-bootstrap/5.3/components/accordion">accordion page</a> for more information.
+      <code>data-bs-parent=&quot;#selector&quot;</code>. Refer to the <a href="/components/accordion">accordion page</a> for more information.
     </p>
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <p>Enable manually with:</p>

@@ -11,7 +11,7 @@
         <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before <code>bootstrap.js</code>, or use one
         <code>bootstrap.bundle.min.js</code> which contains Popper.
       </li>
-      <li>Popovers require the <a href="/docs-bootstrap/5.3/components/popovers">popover plugin</a> as a dependency.</li>
+      <li>Popovers require the <a href="/components/popovers">popover plugin</a> as a dependency.</li>
       <li>Popovers are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
       <li>Zero-length <code>title</code> and <code>content</code> values will never show a popover.</li>
       <li>Specify <code>container: &#39;body&#39;</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
@@ -82,7 +82,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       lang="javascript"
     />
     <p>
-      Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/docs-bootstrap/5.3/components/modal">modal dialog</a>, to
+      Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/components/modal">modal dialog</a>, to
       make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so
       unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.
     </p>
@@ -201,10 +201,10 @@ const popover = new bootstrap.Popover(exampleEl, options)
           <tr>
             <td><code>allowList</code></td>
             <td>object</td>
-            <td><a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">Default value</a></td>
+            <td><a href="/getting-started/javascript#sanitizer">Default value</a></td>
             <td>
               An object containing allowed tags and attributes. Those not explicitly allowed will be removed by
-              <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">the content sanitizer</a>.
+              <a href="/getting-started/javascript#sanitizer">the content sanitizer</a>.
               <Callout type="warning"
                 ><strong>Exercise caution when adding to this list.</strong> Refer to
                 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
@@ -321,7 +321,7 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>boolean</td>
             <td><code>true</code></td>
             <td>
-              Enable <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and
+              Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and
               <code>title</code> options will be sanitized.
               <Callout type="warning"
                 ><strong>Exercise caution when disabling content sanitization.</strong> Refer to
@@ -336,7 +336,7 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td><code>null</code></td>
             <td>
               Provide an alternative
-              <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
+              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
               perform sanitization.
             </td>
           </tr>

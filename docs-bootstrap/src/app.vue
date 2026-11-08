@@ -14,7 +14,7 @@
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <a class="link-body-emphasis text-decoration-none fw-bold" href="/docs-bootstrap/5.3/">中文文档</a>
+              <a class="link-body-emphasis text-decoration-none fw-bold" href="/">中文文档</a>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/" target="_blank" rel="noopener">示例</a>
               <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">图标</a>
               <a class="link-body-emphasis text-decoration-none" href="https://blog.getbootstrap.com/" target="_blank" rel="noopener">博客</a>

@@ -18,7 +18,7 @@
       </li>
       <li>
         Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices.
-        <a href="/docs-bootstrap/5.3/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a>
+        <a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a>
         for details.
       </li>
       <li>
@@ -89,7 +89,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <p>
         In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog
         represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the
-        <a href="/docs-bootstrap/5.3/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.
+        <a href="/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.
       </p>
     </Callout>
     <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
@@ -321,7 +321,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     />
     <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
     <p>
-      <a href="/docs-bootstrap/5.3/components/tooltips">Tooltips</a> and <a href="/docs-bootstrap/5.3/components/popovers">popovers</a> can be placed within modals as needed. When
+      <a href="/components/tooltips">Tooltips</a> and <a href="/components/popovers">popovers</a> can be placed within modals as needed. When
       modals are closed, any tooltips and popovers within are also automatically dismissed.
     </p>
     <Example
@@ -932,7 +932,7 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
             <td><code>hide.bs.modal</code></td>
             <td>
               This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See
-              <a href="/docs-bootstrap/5.3/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.
+              <a href="/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.
             </td>
           </tr>
           <tr>

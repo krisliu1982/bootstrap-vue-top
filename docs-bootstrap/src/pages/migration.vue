@@ -13,12 +13,12 @@
     <h3 id="helpers">Helpers<a class="anchor-link" href="#helpers" aria-label="Link to Helpers"></a></h3>
     <ul>
       <li>
-        <a href="/docs-bootstrap/5.3/helpers/colored-links">Colored links</a> once again have <code>!important</code> so they work better with our newly added link utilities.
+        <a href="/helpers/colored-links">Colored links</a> once again have <code>!important</code> so they work better with our newly added link utilities.
       </li>
     </ul>
     <h3 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h3>
     <ul>
-      <li>Added new <code>.d-inline-grid</code> <a href="/docs-bootstrap/5.3/utilities/display">display utility</a>.</li>
+      <li>Added new <code>.d-inline-grid</code> <a href="/utilities/display">display utility</a>.</li>
     </ul>
     <h2 id="v530-alpha2">v5.3.0-alpha2<a class="anchor-link" href="#v530-alpha2" aria-label="Link to v5.3.0-alpha2"></a></h2>
     <p>If you’re migrating from our previous alpha release of v5.3.0, please review the changes listed below.</p>
@@ -78,7 +78,7 @@
       <li>
         <p>
           Added new <code>.nav-underline</code> variant for our navigation with a simpler bottom border under the active nav link.
-          <a href="/docs-bootstrap/5.3/components/navs-tabs#underline">See the docs for an example.</a>
+          <a href="/components/navs-tabs#underline">See the docs for an example.</a>
         </p>
       </li>
       <li>
@@ -101,14 +101,14 @@
       </li>
       <li>
         <p>
-          Added new <code>.link-body-emphasis</code> helper alongside our <a href="/docs-bootstrap/5.3/helpers/colored-links">colored links</a>. This creates a colored link using
+          Added new <code>.link-body-emphasis</code> helper alongside our <a href="/helpers/colored-links">colored links</a>. This creates a colored link using
           our color mode responsive emphasis color.
         </p>
       </li>
       <li>
         <p>
           Added new link utilities for link color opacity, underline offset, underline color, and underline opacity.
-          <a href="/docs-bootstrap/5.3/utilities/link">Explore the new links utilities.</a>
+          <a href="/utilities/link">Explore the new links utilities.</a>
         </p>
       </li>
       <li>
@@ -155,7 +155,7 @@
     <h2 id="v530-alpha1">v5.3.0-alpha1<a class="anchor-link" href="#v530-alpha1" aria-label="Link to v5.3.0-alpha1"></a></h2>
     <hr class="mb-4" />
     <h3 id="color-modes-1">Color modes!<a class="anchor-link" href="#color-modes-1" aria-label="Link to Color modes!"></a></h3>
-    <p>Learn more by reading the new <a href="/docs-bootstrap/5.3/customize/color-modes">color modes documentation</a>.</p>
+    <p>Learn more by reading the new <a href="/customize/color-modes">color modes documentation</a>.</p>
     <ul>
       <li>
         <p>
@@ -249,7 +249,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>alert-variant()</code> mixin is now deprecated. We now
-          <a href="/docs-bootstrap/5.3/components/alerts#sass-loops">use a Sass loop</a> directly to modify the component’s default CSS variables for each variant.
+          <a href="/components/alerts#sass-loops">use a Sass loop</a> directly to modify the component’s default CSS variables for each variant.
         </p>
       </li>
     </ul>
@@ -259,7 +259,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>list-group-item-variant()</code> mixin is now deprecated. We now
-          <a href="/docs-bootstrap/5.3/components/list-group#sass-loops">use a Sass loop</a> directly to modify the component’s default CSS variables for each variant.
+          <a href="/components/list-group#sass-loops">use a Sass loop</a> directly to modify the component’s default CSS variables for each variant.
         </p>
       </li>
     </ul>
@@ -268,7 +268,7 @@ index 8f8296def..449d70487 100644
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>.dropdown-menu-dark</code> class has been deprecated and replaced with
         <code>data-bs-theme=&quot;dark&quot;</code> on the dropdown or any parent element.
-        <a href="/docs-bootstrap/5.3/components/dropdowns#dark-dropdowns">See the docs for an example.</a>
+        <a href="/components/dropdowns#dark-dropdowns">See the docs for an example.</a>
       </li>
     </ul>
     <h4 id="close-button">Close button</h4>
@@ -276,7 +276,7 @@ index 8f8296def..449d70487 100644
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>.btn-close-white</code> class has been deprecated and replaced with
         <code>data-bs-theme=&quot;dark&quot;</code> on the close button or any parent element.
-        <a href="/docs-bootstrap/5.3/components/close-button#dark-variant">See the docs for an example.</a>
+        <a href="/components/close-button#dark-variant">See the docs for an example.</a>
       </li>
     </ul>
     <h4 id="navbar">Navbar</h4>
@@ -284,12 +284,12 @@ index 8f8296def..449d70487 100644
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> The <code>.navbar-dark</code> class has been deprecated and replaced with
         <code>data-bs-theme=&quot;dark&quot;</code> on the navbar or any parent element.
-        <a href="/docs-bootstrap/5.3/components/navbar#color-schemes">See the docs for updated examples.</a>
+        <a href="/components/navbar#color-schemes">See the docs for updated examples.</a>
       </li>
     </ul>
     <h3 id="progress-bars">Progress bars<a class="anchor-link" href="#progress-bars" aria-label="Link to Progress bars"></a></h3>
     <p>
-      The markup for <a href="/docs-bootstrap/5.3/components/progress">progress bars</a> has been updated in v5.3.0. Due to the placement of <code>role</code> and various
+      The markup for <a href="/components/progress">progress bars</a> has been updated in v5.3.0. Due to the placement of <code>role</code> and various
       <code>aria-</code> attributes on the inner <code>.progress-bar</code> element, <strong>some screen readers were not announcing zero value progress bars</strong>. Now,
       <code>role=&quot;progressbar&quot;</code> and the relevant <code>aria-*</code> attributes are on the outer <code>.progress</code> element, leaving the
       <code>.progress-bar</code> purely for the visual presentation of the bar and optional label.
@@ -311,7 +311,7 @@ index 8f8296def..449d70487 100644
     />
     <p>
       We’ve also introduced a new <code>.progress-stacked</code> class to more logically wrap
-      <a href="/docs-bootstrap/5.3/components/progress#multiple-bars">multiple progress bars</a> into a single stacked progress bar.
+      <a href="/components/progress#multiple-bars">multiple progress bars</a> into a single stacked progress bar.
     </p>
     <CodeWrapper
       code='&lt;!-- Previous markup --&gt;
@@ -381,12 +381,12 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          Added new <a href="/docs-bootstrap/5.3/utilities/z-index"><code>.z-*</code> utilities</a> for <code>z-index</code>.
+          Added new <a href="/utilities/z-index"><code>.z-*</code> utilities</a> for <code>z-index</code>.
         </p>
       </li>
       <li>
         <p>
-          <a href="/docs-bootstrap/5.3/utilities/shadows">Box shadow utilities</a> (and Sass variables) have been updated for dark mode. They now use
+          <a href="/utilities/shadows">Box shadow utilities</a> (and Sass variables) have been updated for dark mode. They now use
           <code>--bs-body-color-rgb</code> to generate the <code>rgba()</code> color values, allowing them to easily adapt to color modes based on the specified foreground color.
         </p>
       </li>
@@ -471,10 +471,10 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         Expanded
-        <a href="/docs-bootstrap/5.3/utilities/text#font-weight-and-italics"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.
+        <a href="/utilities/text#font-weight-and-italics"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.
       </li>
       <li>
-        Expanded <a href="/docs-bootstrap/5.3/utilities/borders#sizes"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and
+        Expanded <a href="/utilities/borders#sizes"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and
         <code>.rounded-5</code>, for more options.
       </li>
     </ul>
@@ -488,7 +488,7 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          <strong>Offcanvas component now has <a href="/docs-bootstrap/5.3/components/offcanvas#responsive">responsive variations</a>.</strong>
+          <strong>Offcanvas component now has <a href="/components/offcanvas#responsive">responsive variations</a>.</strong>
           The original <code>.offcanvas</code> class remains unchanged—it hides content across all viewports. To make it responsive, change that <code>.offcanvas</code> class to
           any <code>.offcanvas-{sm|md|lg|xl|xxl}</code> class.
         </p>
@@ -497,7 +497,7 @@ index 8f8296def..449d70487 100644
         <p>
           <strong>Thicker table dividers are now opt-in. —</strong> We’ve removed the thicker and more difficult to override border between table groups and moved it to an optional
           class you can apply, <code>.table-group-divider</code>.
-          <a href="/docs-bootstrap/5.3/content/tables#table-group-dividers">See the table docs for an example.</a>
+          <a href="/content/tables#table-group-dividers">See the table docs for an example.</a>
         </p>
       </li>
       <li>
@@ -524,7 +524,7 @@ index 8f8296def..449d70487 100644
         <p>Added <code>.form-check-reverse</code> modifier to flip the order of labels and associated checkboxes/radios.</p>
       </li>
       <li>
-        <p>Added <a href="/docs-bootstrap/5.3/content/tables#striped-columns">striped columns</a> support to tables via the new <code>.table-striped-columns</code> class.</p>
+        <p>Added <a href="/content/tables#striped-columns">striped columns</a> support to tables via the new <code>.table-striped-columns</code> class.</p>
       </li>
     </ul>
     <p>
@@ -536,26 +536,26 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <p>
-          <strong>Added experimental support for <a href="/docs-bootstrap/5.3/layout/css-grid">CSS Grid layout</a>. —</strong>
+          <strong>Added experimental support for <a href="/layout/css-grid">CSS Grid layout</a>. —</strong>
           This is a work in progress, and is not yet ready for production use, but you can opt into the new feature via Sass. To enable it, disable the default grid, by setting
           <code>$enable-grid-classes: false</code> and enable the CSS Grid by setting <code>$enable-cssgrid: true</code>.
         </p>
       </li>
       <li>
         <p>
-          <strong>Updated navbars to support offcanvas. —</strong> Add <a href="/docs-bootstrap/5.3/components/navbar#offcanvas">offcanvas drawers in any navbar</a> with the
+          <strong>Updated navbars to support offcanvas. —</strong> Add <a href="/components/navbar#offcanvas">offcanvas drawers in any navbar</a> with the
           responsive <code>.navbar-expand-*</code> classes and some offcanvas markup.
         </p>
       </li>
       <li>
         <p>
-          <strong>Added new <a href="/docs-bootstrap/5.3/components/placeholders/">placeholder component</a>. —</strong>
+          <strong>Added new <a href="/components/placeholders/">placeholder component</a>. —</strong>
           Our newest component, a way to provide temporary blocks in lieu of real content to help indicate that something is still loading in your site or app.
         </p>
       </li>
       <li>
         <p>
-          <strong>Collapse plugin now supports <a href="/docs-bootstrap/5.3/components/collapse#horizontal">horizontal collapsing</a>. —</strong>
+          <strong>Collapse plugin now supports <a href="/components/collapse#horizontal">horizontal collapsing</a>. —</strong>
           Add <code>.collapse-horizontal</code> to your <code>.collapse</code> to collapse the <code>width</code> instead of the <code>height</code>. Avoid browser repainting by
           setting a <code>min-height</code> or <code>height</code>.
         </p>
@@ -563,22 +563,22 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>Added new stack and vertical rule helpers. —</strong> Quickly apply multiple flexbox properties to quickly create custom layouts with
-          <a href="/docs-bootstrap/5.3/helpers/stacks/">stacks</a>. Choose from horizontal (<code>.hstack</code>) and vertical (<code>.vstack</code>) stacks. Add vertical dividers
-          similar to <code>&lt;hr&gt;</code> elements with the <a href="/docs-bootstrap/5.3/helpers/vertical-rule/">new <code>.vr</code> helpers</a>.
+          <a href="/helpers/stacks/">stacks</a>. Choose from horizontal (<code>.hstack</code>) and vertical (<code>.vstack</code>) stacks. Add vertical dividers
+          similar to <code>&lt;hr&gt;</code> elements with the <a href="/helpers/vertical-rule/">new <code>.vr</code> helpers</a>.
         </p>
       </li>
       <li>
         <p>
           <strong>Added new global <code>:root</code> CSS variables. —</strong> Added several new CSS variables to the <code>:root</code> level for controlling
           <code>&lt;body&gt;</code> styles. More are in the works, including across our utilities and components, but for now read up
-          <a href="/docs-bootstrap/5.3/customize/css-variables/">CSS variables in the Customize section</a>.
+          <a href="/customize/css-variables/">CSS variables in the Customize section</a>.
         </p>
       </li>
       <li>
         <p>
           <strong
-            >Overhauled color and background utilities to use CSS variables, and added new <a href="/docs-bootstrap/5.3/utilities/text#opacity">text opacity</a> and
-            <a href="/docs-bootstrap/5.3/utilities/background#opacity">background opacity</a> utilities. —</strong
+            >Overhauled color and background utilities to use CSS variables, and added new <a href="/utilities/text#opacity">text opacity</a> and
+            <a href="/utilities/background#opacity">background opacity</a> utilities. —</strong
           >
           <code>.text-*</code> and <code>.bg-*</code> utilities are now built with CSS variables and <code>rgba()</code> color values, allowing you to easily customize any utility
           with new opacity utilities.
@@ -628,14 +628,14 @@ index 8f8296def..449d70487 100644
     <h3 id="documentation-changes">Documentation changes<a class="anchor-link" href="#documentation-changes" aria-label="Link to Documentation changes"></a></h3>
     <ul>
       <li>Redesigned homepage, docs layout, and footer.</li>
-      <li>Added <a href="/docs-bootstrap/5.3/getting-started/parcel">new Parcel guide</a>.</li>
+      <li>Added <a href="/getting-started/parcel">new Parcel guide</a>.</li>
       <li>
-        Added <a href="/docs-bootstrap/5.3/customize/overview/">new Customize section</a>, replacing
+        Added <a href="/customize/overview/">new Customize section</a>, replacing
         <a href="https://getbootstrap.com/docs/4.6/getting-started/theming/">v4’s Theming page</a>, with new details on Sass, global configuration options, color schemes, CSS
         variables, and more.
       </li>
-      <li>Reorganized all form documentation into <a href="/docs-bootstrap/5.3/forms/overview/">new Forms section</a>, breaking apart the content into more focused pages.</li>
-      <li>Similarly, updated <a href="/docs-bootstrap/5.3/layout/breakpoints">the Layout section</a>, to flesh out grid content more clearly.</li>
+      <li>Reorganized all form documentation into <a href="/forms/overview/">new Forms section</a>, breaking apart the content into more focused pages.</li>
+      <li>Similarly, updated <a href="/layout/breakpoints">the Layout section</a>, to flesh out grid content more clearly.</li>
       <li>Renamed “Navs” component page to &quot;Navs &amp; Tabs&quot;.</li>
       <li>Renamed “Checks” page to &quot;Checks &amp; radios&quot;.</li>
       <li>Redesigned the navbar and added a new subnav to make it easier to get around our sites and docs versions.</li>
@@ -649,7 +649,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           We’ve ditched the default Sass map merges to make it easier to remove redundant values. Keep in mind you now have to define all values in the Sass maps like
-          <code>$theme-colors</code>. Check out how to deal with <a href="/docs-bootstrap/5.3/customize/sass#maps-and-loops">Sass maps</a>.
+          <code>$theme-colors</code>. Check out how to deal with <a href="/customize/sass#maps-and-loops">Sass maps</a>.
         </p>
       </li>
       <li>
@@ -776,7 +776,7 @@ index 8f8296def..449d70487 100644
         </p>
         <ul>
           <li>
-            Added new <a href="/docs-bootstrap/5.3/layout/gutters">gutter class</a> (<code>.g-*</code>, <code>.gx-*</code>, and <code>.gy-*</code>) to control horizontal/vertical
+            Added new <a href="/layout/gutters">gutter class</a> (<code>.g-*</code>, <code>.gx-*</code>, and <code>.gy-*</code>) to control horizontal/vertical
             gutters, horizontal gutters, and vertical gutters.
           </li>
           <li><span class="badge text-bg-danger">Breaking</span> Renamed <code>.no-gutters</code> to <code>.g-0</code> to match new gutter utilities.</li>
@@ -795,7 +795,7 @@ index 8f8296def..449d70487 100644
         <p>
           <span class="badge text-bg-danger">Breaking</span> Dropped the <code>.media</code> component as it can be easily replicated with utilities.
           <a href="https://github.com/twbs/bootstrap/pull/28265">See #28265</a> and the
-          <a href="/docs-bootstrap/5.3/utilities/flex#media-object">flex utilities page for an example</a>.
+          <a href="/utilities/flex#media-object">flex utilities page for an example</a>.
         </p>
       </li>
       <li>
@@ -818,7 +818,7 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <p>
-          <strong><a href="/docs-bootstrap/5.3/getting-started/rfs">RFS</a> is now enabled by default.</strong> Headings using the <code>font-size()</code> mixin will automatically
+          <strong><a href="/getting-started/rfs">RFS</a> is now enabled by default.</strong> Headings using the <code>font-size()</code> mixin will automatically
           adjust their <code>font-size</code> to scale with the viewport. <em>This feature was previously opt-in with v4.</em>
         </p>
       </li>
@@ -911,7 +911,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>Added new floating forms!</strong> We’ve promoted the Floating labels example to fully supported form components.
-          <a href="/docs-bootstrap/5.3/forms/floating-labels">See the new Floating labels page.</a>
+          <a href="/forms/floating-labels">See the new Floating labels page.</a>
         </p>
       </li>
       <li>
@@ -982,12 +982,12 @@ index 8f8296def..449d70487 100644
     </ul>
     <h4 id="accordion">Accordion</h4>
     <ul>
-      <li>Added <a href="/docs-bootstrap/5.3/components/accordion">new accordion component</a>.</li>
+      <li>Added <a href="/components/accordion">new accordion component</a>.</li>
     </ul>
     <h4 id="alerts">Alerts</h4>
     <ul>
       <li>
-        <p>Alerts now have <a href="/docs-bootstrap/5.3/components/alerts#icons">examples with icons</a>.</p>
+        <p>Alerts now have <a href="/components/alerts#icons">examples with icons</a>.</p>
       </li>
       <li>
         <p>Removed custom styles for <code>&lt;hr&gt;</code>s in each alert since they already use <code>currentColor</code>.</p>
@@ -1026,7 +1026,7 @@ index 8f8296def..449d70487 100644
         <p>
           <span class="badge text-bg-danger">Breaking</span>
           <strong
-            ><a href="/docs-bootstrap/5.3/forms/checks-radios#toggle-buttons">Toggle buttons</a>, with checkboxes or radios, no longer require JavaScript and have new
+            ><a href="/forms/checks-radios#toggle-buttons">Toggle buttons</a>, with checkboxes or radios, no longer require JavaScript and have new
             markup.</strong
           >
           We no longer require a wrapping element, add <code>.btn-check</code> to the <code>&lt;input&gt;</code>, and pair it with any <code>.btn</code> classes on the
@@ -1039,7 +1039,7 @@ index 8f8296def..449d70487 100644
           <span class="badge text-bg-danger">Breaking</span>
           <strong>Dropped <code>.btn-block</code> for utilities.</strong> Instead of using <code>.btn-block</code> on the <code>.btn</code>, wrap your buttons with
           <code>.d-grid</code> and a <code>.gap-*</code> utility to space them as needed. Switch to responsive classes for even more control over them.
-          <a href="/docs-bootstrap/5.3/components/buttons#block-buttons">Read the docs for some examples.</a>
+          <a href="/components/buttons#block-buttons">Read the docs for some examples.</a>
         </p>
       </li>
       <li>
@@ -1067,7 +1067,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">Breaking</span> Replaced the <code>.card</code> based accordion with a
-          <a href="/docs-bootstrap/5.3/components/accordion">new Accordion component</a>.
+          <a href="/components/accordion">new Accordion component</a>.
         </p>
       </li>
     </ul>
@@ -1076,7 +1076,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           Added new
-          <a href="/docs-bootstrap/5.3/components/carousel#dark-variant"><code>.carousel-dark</code> variant</a> for dark text, controls, and indicators (great for lighter
+          <a href="/components/carousel#dark-variant"><code>.carousel-dark</code> variant</a> for dark text, controls, and indicators (great for lighter
           backgrounds).
         </p>
       </li>
@@ -1138,7 +1138,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           Dropdown menus can now be clickable with a new <code>autoClose</code> option to handle the
-          <a href="/docs-bootstrap/5.3/components/dropdowns#auto-close-behavior">auto close behavior</a>. You can use this option to accept the click inside or outside the dropdown
+          <a href="/components/dropdowns#auto-close-behavior">auto close behavior</a>. You can use this option to accept the click inside or outside the dropdown
           menu to make it interactive.
         </p>
       </li>
@@ -1157,7 +1157,7 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         Added new
-        <a href="/docs-bootstrap/5.3/components/list-group#numbered"><code>.list-group-numbered</code> modifier</a> to list groups.
+        <a href="/components/list-group#numbered"><code>.list-group-numbered</code> modifier</a> to list groups.
       </li>
     </ul>
     <h4 id="navs-and-tabs">Navs and tabs</h4>
@@ -1177,7 +1177,7 @@ index 8f8296def..449d70487 100644
     </ul>
     <h4 id="offcanvas">Offcanvas</h4>
     <ul>
-      <li>Added the new <a href="/docs-bootstrap/5.3/components/offcanvas">offcanvas component</a>.</li>
+      <li>Added the new <a href="/components/offcanvas">offcanvas component</a>.</li>
     </ul>
     <h4 id="pagination">Pagination</h4>
     <ul>
@@ -1208,8 +1208,8 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <p>
-          Toasts can now be <a href="/docs-bootstrap/5.3/components/toasts#placement">positioned</a> in a <code>.toast-container</code> with the help of
-          <a href="/docs-bootstrap/5.3/utilities/position">positioning utilities</a>.
+          Toasts can now be <a href="/components/toasts#placement">positioned</a> in a <code>.toast-container</code> with the help of
+          <a href="/utilities/position">positioning utilities</a>.
         </p>
       </li>
       <li><p>Changed default toast duration to 5 seconds.</p></li>
@@ -1255,7 +1255,7 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          Added new <a href="/docs-bootstrap/5.3/utilities/position#arrange-elements">position utilities</a> for <code>top</code>, <code>right</code>, <code>bottom</code>, and
+          Added new <a href="/utilities/position#arrange-elements">position utilities</a> for <code>top</code>, <code>right</code>, <code>bottom</code>, and
           <code>left</code>. Values include <code>0</code>, <code>50%</code>, and <code>100%</code> for each property.
         </p>
       </li>
@@ -1265,7 +1265,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           Added new
-          <a href="/docs-bootstrap/5.3/utilities/borders#border-width"><code>border-width</code> utilities</a>.
+          <a href="/utilities/borders#border-width"><code>border-width</code> utilities</a>.
         </p>
       </li>
       <li>
@@ -1301,7 +1301,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           Added new <code>line-height</code> utilities: <code>.lh-1</code>, <code>.lh-sm</code>, <code>.lh-base</code> and <code>.lh-lg</code>. See
-          <a href="/docs-bootstrap/5.3/utilities/text#line-height">here</a>.
+          <a href="/utilities/text#line-height">here</a>.
         </p>
       </li>
       <li>
@@ -1316,7 +1316,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">Breaking</span>
-          <strong>Responsive embed helpers have been renamed to <a href="/docs-bootstrap/5.3/helpers/ratio">ratio helpers</a></strong>
+          <strong>Responsive embed helpers have been renamed to <a href="/helpers/ratio">ratio helpers</a></strong>
           with new class names and improved behaviors, as well as a helpful CSS variable.
         </p>
         <ul>
@@ -1333,14 +1333,14 @@ index 8f8296def..449d70487 100644
           </li>
           <li>
             CSS variables are now generated and included for each value in the Sass map. Modify the
-            <code>--bs-aspect-ratio</code> variable on the <code>.ratio</code> to create any <a href="/docs-bootstrap/5.3/helpers/ratio#custom-ratios">custom aspect ratio</a>.
+            <code>--bs-aspect-ratio</code> variable on the <code>.ratio</code> to create any <a href="/helpers/ratio#custom-ratios">custom aspect ratio</a>.
           </li>
         </ul>
       </li>
       <li>
         <p>
           <span class="badge text-bg-danger">Breaking</span>
-          <strong>&quot;Screen reader&quot; classes are now <a href="/docs-bootstrap/5.3/helpers/visually-hidden">&quot;visually hidden&quot; classes</a>.</strong>
+          <strong>&quot;Screen reader&quot; classes are now <a href="/helpers/visually-hidden">&quot;visually hidden&quot; classes</a>.</strong>
         </p>
         <ul>
           <li>

@@ -57,8 +57,8 @@
     <AddedIn version="5.2.0" />
     <p>
       Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>.
-      Previously it was required to manually pair your choice of <a href="/docs-bootstrap/5.3/utilities/colors"><code>.text-{color}</code></a> and
-      <a href="/docs-bootstrap/5.3/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
+      Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
+      <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
 
     <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout

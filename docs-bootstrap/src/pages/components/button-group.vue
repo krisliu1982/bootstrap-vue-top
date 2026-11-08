@@ -21,7 +21,7 @@
     </Callout>
     <p>
       These classes can also be added to groups of links, as an alternative to the
-      <a href="/docs-bootstrap/5.3/components/navs-tabs"><code>.nav</code> navigation components</a>.
+      <a href="/components/navs-tabs"><code>.nav</code> navigation components</a>.
     </p>
     <Example
       code='<div class="btn-group">
@@ -49,7 +49,7 @@
     <h2 id="checkbox-and-radio-button-groups">
       Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a>
     </h2>
-    <p>Combine button-like checkbox and radio <a href="/docs-bootstrap/5.3/forms/checks-radios">toggle buttons</a> into a seamless looking button group.</p>
+    <p>Combine button-like checkbox and radio <a href="/forms/checks-radios">toggle buttons</a> into a seamless looking button group.</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">

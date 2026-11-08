@@ -69,7 +69,7 @@
       <li>
         <p>
           <strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own
-          <a href="/docs-bootstrap/5.3/layout/grid">layout</a>, adding dozens of <a href="/docs-bootstrap/5.3/components/buttons">components</a>, and utilizing
+          <a href="/layout/grid">layout</a>, adding dozens of <a href="/components/buttons">components</a>, and utilizing
           <a href="https://getbootstrap.com/examples">our official examples</a>.
         </p>
       </li>
@@ -100,7 +100,7 @@
 
     <p>
       You can also use the CDN to fetch any of our
-      <a href="/docs-bootstrap/5.3/getting-started/contents">additional builds listed in the Contents page</a>.
+      <a href="/getting-started/contents">additional builds listed in the Contents page</a>.
     </p>
 
     <p>
@@ -116,15 +116,15 @@
       <li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li>
       <li>
         Read about what’s included in Bootstrap in our
-        <a href="/docs-bootstrap/5.3/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.
+        <a href="/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.
       </li>
       <li>
         Need a little more power? Consider building with Bootstrap by
-        <a href="/docs-bootstrap/5.3/getting-started/download#package-managers">including the source files via package manager</a>.
+        <a href="/getting-started/download#package-managers">including the source files via package manager</a>.
       </li>
       <li>
         Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our
-        <a href="/docs-bootstrap/5.3/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a>
+        <a href="/getting-started/javascript#using-bootstrap-as-a-module">using Bootstrap as a module</a>
         section.
       </li>
     </ul>
@@ -211,7 +211,7 @@
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
     <p>
-      For improved cross-browser rendering, we use <a href="/docs-bootstrap/5.3/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing
+      For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing
       slightly more opinionated resets to common HTML elements.
     </p>
 

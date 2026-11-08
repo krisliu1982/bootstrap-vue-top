@@ -123,8 +123,8 @@ sass --watch ./scss/custom.scss ./css/custom.css
     </p>
     <Callout>
       <p>
-        <strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/docs-bootstrap/5.3/getting-started/webpack">Webpack</a>,
-        <a href="/docs-bootstrap/5.3/getting-started/parcel">Parcel</a>, or <a href="/docs-bootstrap/5.3/getting-started/vite">Vite</a>. We also have production-ready demos in
+        <strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/getting-started/webpack">Webpack</a>,
+        <a href="/getting-started/parcel">Parcel</a>, or <a href="/getting-started/vite">Vite</a>. We also have production-ready demos in
         <a href="https://github.com/twbs/examples">our examples repository on GitHub</a>.
       </p>
     </Callout>
@@ -266,7 +266,7 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     <h2 id="functions">Functions<a class="anchor-link" href="#functions" aria-label="Link to Functions"></a></h2>
     <h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
     <p>
-      Next to the <a href="/docs-bootstrap/5.3/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like
+      Next to the <a href="/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like
       <code>$primary</code>.
     </p>
     <CodeWrapper
@@ -393,7 +393,7 @@ $border-width: 0;
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
       A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See
-      <a href="/docs-bootstrap/5.3/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.
+      <a href="/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.
     </p>
     <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" />
     <CodeWrapper

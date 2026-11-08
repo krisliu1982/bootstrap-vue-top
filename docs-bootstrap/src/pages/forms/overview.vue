@@ -6,7 +6,7 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
       Bootstrap’s form controls expand on
-      <a href="/docs-bootstrap/5.3/content/reboot#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent
+      <a href="/content/reboot#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent
       rendering across browsers and devices.
     </p>
     <p>
@@ -104,7 +104,7 @@
     </p>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>
-      <code>$input-btn-*</code> variables are shared global variables between our <a href="/docs-bootstrap/5.3/components/buttons">buttons</a> and our form components. You’ll find
+      <code>$input-btn-*</code> variables are shared global variables between our <a href="/components/buttons">buttons</a> and our form components. You’ll find
       these frequently reassigned as values to other component-specific variables.
     </p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />

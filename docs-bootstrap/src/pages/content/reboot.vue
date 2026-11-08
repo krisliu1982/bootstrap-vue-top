@@ -24,7 +24,7 @@
     <p>
       With v5.1.1, we standardized our required <code>@import</code>s across all our CSS bundles (including <code>bootstrap.css</code>, <code>bootstrap-reboot.css</code>, and
       <code>bootstrap-grid.css</code>) to include <code>_root.scss</code>. This adds <code>:root</code> level CSS variables to all bundles, regardless of how many of them are used
-      in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="/docs-bootstrap/5.3/customize/css-variables">CSS variables</a> added over time, in order to provide
+      in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="/customize/css-variables">CSS variables</a> added over time, in order to provide
       more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way,
       even if you don’t use CSS variables, you still have all the power of Sass. <strong>This is still in-progress and will take time to fully implement.</strong>
     </p>
@@ -233,7 +233,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <h2 id="tables">Tables<a class="anchor-link" href="#tables" aria-label="Link to Tables"></a></h2>
     <p>
       Tables are slightly adjusted to style <code>&lt;caption&gt;</code>s, collapse borders, and ensure consistent <code>text-align</code> throughout. Additional changes for
-      borders, padding, and more come with <a href="/docs-bootstrap/5.3/content/tables">the <code>.table</code> class</a>.
+      borders, padding, and more come with <a href="/content/tables">the <code>.table</code> class</a>.
     </p>
     <Example
       code="<table>
@@ -491,7 +491,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     </Callout>
     <p>
       To merely toggle the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document, use
-      <a href="/docs-bootstrap/5.3/utilities/visibility">the <code>.invisible</code> class</a> instead.
+      <a href="/utilities/visibility">the <code>.invisible</code> class</a> instead.
     </p>
     <DocsPager />
   </article>

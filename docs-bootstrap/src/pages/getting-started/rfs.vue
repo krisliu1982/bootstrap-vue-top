@@ -68,7 +68,7 @@
     </ul>
     <p>
       In this example, we use one of Bootstrap’s built-in
-      <a href="/docs-bootstrap/5.3/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.
+      <a href="/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.
     </p>
     <CodeWrapper
       code=".selector {

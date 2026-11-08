@@ -14,7 +14,7 @@
       <li>
         <p>
           <strong>Gutters start at <code>1.5rem</code> (<code>24px</code>) wide.</strong> This allows us to match our grid to the
-          <a href="/docs-bootstrap/5.3/utilities/spacing">padding and margin spacers</a> scale.
+          <a href="/utilities/spacing">padding and margin spacers</a> scale.
         </p>
       </li>
       <li>
@@ -107,7 +107,7 @@
     />
     <h2 id="row-columns-gutters">Row columns gutters<a class="anchor-link" href="#row-columns-gutters" aria-label="Link to Row columns gutters"></a></h2>
     <p>
-      Gutter classes can also be added to <a href="/docs-bootstrap/5.3/layout/grid#row-columns">row columns</a>. In the following example, we use responsive row columns and
+      Gutter classes can also be added to <a href="/layout/grid#row-columns">row columns</a>. In the following example, we use responsive row columns and
       responsive gutter classes.
     </p>
     <Example

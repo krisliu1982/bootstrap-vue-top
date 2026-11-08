@@ -46,7 +46,7 @@
   <div class="p-2">Third item</div>
 </div>'
     />
-    <p>And with <a href="/docs-bootstrap/5.3/helpers/vertical-rule">vertical rules</a>:</p>
+    <p>And with <a href="/helpers/vertical-rule">vertical rules</a>:</p>
     <Example
       class="bd-example-flex"
       code='<div class="hstack gap-3">

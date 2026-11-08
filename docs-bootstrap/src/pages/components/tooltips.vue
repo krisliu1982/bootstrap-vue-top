@@ -179,10 +179,10 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
           <tr>
             <td><code>allowList</code></td>
             <td>object</td>
-            <td><a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">Default value</a></td>
+            <td><a href="/getting-started/javascript#sanitizer">Default value</a></td>
             <td>
               An object containing allowed tags and attributes. Those not explicitly allowed will be removed by
-              <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">the content sanitizer</a>.
+              <a href="/getting-started/javascript#sanitizer">the content sanitizer</a>.
               <Callout type="warning"
                 ><strong>Exercise caution when adding to this list.</strong> Refer to
                 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
@@ -293,7 +293,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>boolean</td>
             <td><code>true</code></td>
             <td>
-              Enable <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and
+              Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and
               <code>title</code> options will be sanitized.
               <Callout type="warning"
                 ><strong>Exercise caution when disabling content sanitization.</strong> Refer to
@@ -308,7 +308,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               Provide an alternative
-              <a href="/docs-bootstrap/5.3/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
+              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
               perform sanitization.
             </td>
           </tr>

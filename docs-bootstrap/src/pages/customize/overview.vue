@@ -12,20 +12,20 @@
     <ol>
       <li>
         Using Bootstrap
-        <a href="/docs-bootstrap/5.3/getting-started/download#package-managers">via package manager</a> so you can use and extend our source files.
+        <a href="/getting-started/download#package-managers">via package manager</a> so you can use and extend our source files.
       </li>
       <li>
         Using Bootstrap’s compiled distribution files or
-        <a href="/docs-bootstrap/5.3/getting-started/download#cdn-via-jsdelivr">jsDelivr</a> so you can add onto or override Bootstrap’s styles.
+        <a href="/getting-started/download#cdn-via-jsdelivr">jsDelivr</a> so you can add onto or override Bootstrap’s styles.
       </li>
     </ol>
     <p>
       While we cannot go into details here on how to use every package manager, we can give some guidance on
-      <a href="/docs-bootstrap/5.3/customize/sass">using Bootstrap with your own Sass compiler</a>.
+      <a href="/customize/sass">using Bootstrap with your own Sass compiler</a>.
     </p>
     <p>
       For those who want to use the distribution files, review the
-      <a href="/docs-bootstrap/5.3/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for
+      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for
       the layout, components, and behaviors you’d like to use.
     </p>
     <p>
@@ -39,18 +39,18 @@
       of which are applied via <code>background-image</code>) so you can more thoroughly review your options.
     </p>
     <ul>
-      <li><a href="/docs-bootstrap/5.3/components/accordion">Accordion</a></li>
-      <li><a href="/docs-bootstrap/5.3/components/carousel#with-controls">Carousel controls</a></li>
-      <li><a href="/docs-bootstrap/5.3/components/close-button">Close button</a> (used in alerts and modals)</li>
-      <li><a href="/docs-bootstrap/5.3/forms/checks-radios">Form checkboxes and radio buttons</a></li>
-      <li><a href="/docs-bootstrap/5.3/forms/checks-radios#switches">Form switches</a></li>
-      <li><a href="/docs-bootstrap/5.3/forms/validation#server-side">Form validation icons</a></li>
-      <li><a href="/docs-bootstrap/5.3/components/navbar#responsive-behaviors">Navbar toggle buttons</a></li>
-      <li><a href="/docs-bootstrap/5.3/forms/select">Select menus</a></li>
+      <li><a href="/components/accordion">Accordion</a></li>
+      <li><a href="/components/carousel#with-controls">Carousel controls</a></li>
+      <li><a href="/components/close-button">Close button</a> (used in alerts and modals)</li>
+      <li><a href="/forms/checks-radios">Form checkboxes and radio buttons</a></li>
+      <li><a href="/forms/checks-radios#switches">Form switches</a></li>
+      <li><a href="/forms/validation#server-side">Form validation icons</a></li>
+      <li><a href="/components/navbar#responsive-behaviors">Navbar toggle buttons</a></li>
+      <li><a href="/forms/select">Select menus</a></li>
     </ul>
     <p>
       Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include
-      <a href="/docs-bootstrap/5.3/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not
+      <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not
       possible in all components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
     </p>
     <DocsPager />

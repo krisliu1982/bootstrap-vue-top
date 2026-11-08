@@ -94,7 +94,7 @@
       Enable the built in dark color mode across your entire project by adding the
       <code>data-bs-theme=&quot;dark&quot;</code> attribute to the <code>&lt;html&gt;</code> element. This will apply the dark color mode to all components and elements, other than
       those with a specific <code>data-bs-theme</code> attribute applied. Building on the
-      <a href="/docs-bootstrap/5.3/getting-started/introduction#quick-start">quick start template</a>:
+      <a href="/getting-started/introduction#quick-start">quick start template</a>:
     </p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
@@ -310,8 +310,8 @@
     />
     <h2 id="adding-theme-colors">Adding theme colors<a class="anchor-link" href="#adding-theme-colors" aria-label="Link to Adding theme colors"></a></h2>
     <p>
-      Adding a new color in <code>$theme-colors</code> is not enough for some of our components like <a href="/docs-bootstrap/5.3/components/alerts">alerts</a> and
-      <a href="/docs-bootstrap/5.3/components/list-group">list groups</a>. New colors must also be defined in <code>$theme-colors-text</code>, <code>$theme-colors-bg-subtle</code>,
+      Adding a new color in <code>$theme-colors</code> is not enough for some of our components like <a href="/components/alerts">alerts</a> and
+      <a href="/components/list-group">list groups</a>. New colors must also be defined in <code>$theme-colors-text</code>, <code>$theme-colors-bg-subtle</code>,
       and <code>$theme-colors-border-subtle</code> for light theme; but also in <code>$theme-colors-text-dark</code>, <code>$theme-colors-bg-subtle-dark</code>, and
       <code>$theme-colors-border-subtle-dark</code> for dark theme.
     </p>

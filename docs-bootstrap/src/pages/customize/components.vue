@@ -14,7 +14,7 @@
       reflected in these loops.
     </p>
     <p>
-      Check out <a href="/docs-bootstrap/5.3/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to customize these loops and extend Bootstrap’s base-modifier
+      Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to customize these loops and extend Bootstrap’s base-modifier
       approach to your own code.
     </p>
     <h2 id="modifiers">Modifiers<a class="anchor-link" href="#modifiers" aria-label="Link to Modifiers"></a></h2>
@@ -35,7 +35,7 @@
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
     <p>
       For more information and examples on how to modify our Sass maps and variables, please refer to
-      <a href="/docs-bootstrap/5.3/layout/grid#css">the CSS section of the Grid documentation</a>.
+      <a href="/layout/grid#css">the CSS section of the Grid documentation</a>.
     </p>
     <h2 id="creating-your-own">Creating your own<a class="anchor-link" href="#creating-your-own" aria-label="Link to Creating your own"></a></h2>
     <p>

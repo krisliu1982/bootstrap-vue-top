@@ -6,7 +6,7 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>
       Use <code>z-index</code> utilities to stack elements on top of one another. Requires a <code>position</code> value other than <code>static</code>, which can be set with
-      custom styles or using our <a href="/docs-bootstrap/5.3/utilities/position/">position utilities</a>.
+      custom styles or using our <a href="/utilities/position/">position utilities</a>.
     </p>
     <Callout>
       <p>
@@ -27,7 +27,7 @@
       <code>z-index</code> values to ensure a usable experience with competing “layers” of an interface.
     </p>
     <p>
-      Read about them in the <a href="/docs-bootstrap/5.3/layout/z-index"><code>z-index</code> layout page</a>.
+      Read about them in the <a href="/layout/z-index"><code>z-index</code> layout page</a>.
     </p>
     <h2 id="component-approach">Component approach<a class="anchor-link" href="#component-approach" aria-label="Link to Component approach"></a></h2>
     <p>
@@ -35,7 +35,7 @@
       group).
     </p>
     <p>
-      Learn about our <a href="/docs-bootstrap/5.3/extend/approach#z-index-scales"><code>z-index</code> approach</a>.
+      Learn about our <a href="/extend/approach#z-index-scales"><code>z-index</code> approach</a>.
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
@@ -44,7 +44,7 @@
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
       Position utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-zindex" file="scss/_utilities.scss" />
     <DocsPager />

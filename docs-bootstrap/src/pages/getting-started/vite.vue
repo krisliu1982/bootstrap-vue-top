@@ -198,7 +198,7 @@ export default {
           lang="scss"
         />
         <p>
-          <em>You can also import our stylesheets individually if you want. <a href="/docs-bootstrap/5.3/customize/sass#importing">Read our Sass import docs</a> for details.</em>
+          <em>You can also import our stylesheets individually if you want. <a href="/customize/sass#importing">Read our Sass import docs</a> for details.</em>
         </p>
       </li>
       <li>
@@ -225,7 +225,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
           lang="javascript"
         />
         <p>
-          <em><a href="/docs-bootstrap/5.3/getting-started/javascript/">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em>
+          <em><a href="/getting-started/javascript/">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em>
         </p>
       </li>
       <li>

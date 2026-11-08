@@ -209,9 +209,9 @@
     </p>
     <p>
       Have a look at our table documentation for some
-      <a href="/docs-bootstrap/5.3/content/tables#how-do-the-variants-and-accented-tables-work">insight into how we’re using CSS variables</a>. Our
-      <a href="/docs-bootstrap/5.3/components/navbar#css">navbars also use CSS variables</a> as of v5.2.0. We’re also using CSS variables across our grids—primarily for gutters the
-      <a href="/docs-bootstrap/5.3/layout/css-grid">new opt-in CSS grid</a>—with more component usage coming in the future.
+      <a href="/content/tables#how-do-the-variants-and-accented-tables-work">insight into how we’re using CSS variables</a>. Our
+      <a href="/components/navbar#css">navbars also use CSS variables</a> as of v5.2.0. We’re also using CSS variables across our grids—primarily for gutters the
+      <a href="/layout/css-grid">new opt-in CSS grid</a>—with more component usage coming in the future.
     </p>
     <p>
       Whenever possible, we&#39;ll assign CSS variables at the base component level (e.g., <code>.navbar</code> for navbar and its sub-components). This reduces guessing on where

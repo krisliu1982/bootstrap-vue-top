@@ -12,7 +12,7 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>
       Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment
-      and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/docs-bootstrap/5.3/utilities/spacing">spacing utilities</a> as
+      and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as
       needed.
     </p>
     <p>
@@ -245,7 +245,7 @@
 </div>'
     />
     <h3 id="using-utilities">Using utilities<a class="anchor-link" href="#using-utilities" aria-label="Link to Using utilities"></a></h3>
-    <p>Use our handful of <a href="/docs-bootstrap/5.3/utilities/sizing">available sizing utilities</a> to quickly set a card’s width.</p>
+    <p>Use our handful of <a href="/utilities/sizing">available sizing utilities</a> to quickly set a card’s width.</p>
     <Example
       code='<div class="card w-75 mb-3">
   <div class="card-body">
@@ -277,7 +277,7 @@
     <h2 id="text-alignment">Text alignment<a class="anchor-link" href="#text-alignment" aria-label="Link to Text alignment"></a></h2>
     <p>
       You can quickly change the text alignment of any card—in its entirety or specific parts—with our
-      <a href="/docs-bootstrap/5.3/utilities/text#text-alignment">text align classes</a>.
+      <a href="/utilities/text#text-alignment">text align classes</a>.
     </p>
     <Example
       code='<div class="card mb-3" style="width: 18rem;">
@@ -307,7 +307,7 @@
     <h2 id="navigation">Navigation<a class="anchor-link" href="#navigation" aria-label="Link to Navigation"></a></h2>
     <p>
       Add some navigation to a card’s header (or block) with Bootstrap’s
-      <a href="/docs-bootstrap/5.3/components/navs-tabs">nav components</a>.
+      <a href="/components/navs-tabs">nav components</a>.
     </p>
     <Example
       code='<div class="card text-center">
@@ -457,8 +457,8 @@
     <AddedIn version="5.2.0" />
     <p>
       Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>.
-      Previously it was required to manually pair your choice of <a href="/docs-bootstrap/5.3/utilities/colors"><code>.text-{color}</code></a> and
-      <a href="/docs-bootstrap/5.3/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
+      Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
+      <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
     <Example
       :code="
@@ -478,7 +478,7 @@
     <Callout name="warning-color-assistive-technologies" />
     <h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
     <p>
-      Use <a href="/docs-bootstrap/5.3/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put
+      Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put
       <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.
     </p>
     <Example
@@ -651,7 +651,7 @@
     <h3 id="grid-cards">Grid cards<a class="anchor-link" href="#grid-cards" aria-label="Link to Grid cards"></a></h3>
     <p>
       Use the Bootstrap grid system and its
-      <a href="/docs-bootstrap/5.3/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For
+      <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For
       example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from
       the medium breakpoint up.
     </p>

@@ -7,7 +7,7 @@
       <p>
         <strong>New markup in v5.3.0 —</strong> We’ve deprecated the previous HTML structure for progress bars and replaced it with a more accessible one. The previous structure
         will continue to work until v6.
-        <a href="/docs-bootstrap/5.3/migration#improved-markup-for-progress-bars">See what’s changed in our migration guide.</a>
+        <a href="/migration#improved-markup-for-progress-bars">See what’s changed in our migration guide.</a>
       </p>
     </Callout>
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
@@ -47,7 +47,7 @@
     <h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
     <p>
-      Bootstrap provides a handful of <a href="/docs-bootstrap/5.3/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly
+      Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly
       configuring the width of the <code>.progress-bar</code>.
     </p>
     <Example
@@ -79,7 +79,7 @@
     <p>
       Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress
       bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the
-      <a href="/docs-bootstrap/5.3/utilities/overflow">overflow utilities</a>.
+      <a href="/utilities/overflow">overflow utilities</a>.
     </p>
     <Callout type="warning">
       <p>
@@ -107,8 +107,8 @@
     <Callout name="warning-color-assistive-technologies" />
     <p>
       If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate
-      <a href="/docs-bootstrap/5.3/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the
-      <a href="/docs-bootstrap/5.3/helpers/color-background">color and background</a> helper classes.
+      <a href="/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the
+      <a href="/helpers/color-background">color and background</a> helper classes.
     </p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">

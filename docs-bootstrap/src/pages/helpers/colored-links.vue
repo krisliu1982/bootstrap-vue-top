@@ -5,7 +5,7 @@
 
     <h2 id="link-colors">Link colors<a class="anchor-link" href="#link-colors" aria-label="Link to Link colors"></a></h2>
     <p>
-      You can use the <code>.link-*</code> classes to colorize links. Unlike the <a href="/docs-bootstrap/5.3/utilities/colors"><code>.text-*</code> classes</a>, these classes have
+      You can use the <code>.link-*</code> classes to colorize links. Unlike the <a href="/utilities/colors"><code>.text-*</code> classes</a>, these classes have
       a <code>:hover</code> and <code>:focus</code> state. Some of the link styles use a relatively light foreground color, and should only be used on a dark background in order to
       have sufficient contrast.
     </p>
@@ -25,7 +25,7 @@
     /><Callout name="warning-color-assistive-technologies" />
     <h2 id="link-utilities">Link utilities<a class="anchor-link" href="#link-utilities" aria-label="Link to Link utilities"></a></h2>
     <AddedIn version="5.3.0" />
-    <p>Colored links can also be modified by our <a href="/docs-bootstrap/5.3/utilities/link/">link utilities</a>.</p>
+    <p>Colored links can also be modified by our <a href="/utilities/link/">link utilities</a>.</p>
     <Example
       :code="
         [

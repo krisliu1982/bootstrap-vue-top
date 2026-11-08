@@ -74,7 +74,7 @@
     <p>Customize the icon link Sass variables to modify all icon link styles across your Bootstrap-powered project.</p>
     <ScssDocs name="icon-link-variables" file="scss/_variables.scss" />
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>Modify icon links with any of <a href="/docs-bootstrap/5.3/utilities/link/">our link utilities</a> for modifying underline color and offset.</p>
+    <p>Modify icon links with any of <a href="/utilities/link/">our link utilities</a> for modifying underline color and offset.</p>
     <Example
       code='<a class="icon-link icon-link-hover link-success link-underline-success link-underline-opacity-25" href="#">
   Icon link

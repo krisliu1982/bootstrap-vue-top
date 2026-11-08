@@ -19,7 +19,7 @@
     <Callout>
       <p>
         <strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in
-        <a href="/docs-bootstrap/5.3/content/reboot">Reboot</a>.
+        <a href="/content/reboot">Reboot</a>.
       </p>
     </Callout>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>

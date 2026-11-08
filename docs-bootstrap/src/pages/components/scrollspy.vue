@@ -6,8 +6,8 @@
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>
       Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s
-      <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/docs-bootstrap/5.3/components/navs-tabs">nav component</a> or
-      <a href="/docs-bootstrap/5.3/components/list-group">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.
+      <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/components/navs-tabs">nav component</a> or
+      <a href="/components/list-group">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.
     </p>
     <ul>
       <li>

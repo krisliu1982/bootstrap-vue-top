@@ -116,9 +116,9 @@
     <h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
     <p>
       Customize your toasts by removing sub-components, tweaking them with
-      <a href="/docs-bootstrap/5.3/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default
+      <a href="/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default
       <code>.toast-header</code>, adding a custom hide icon from <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, and using some
-      <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a> to adjust the layout.
+      <a href="/utilities/flex">flexbox utilities</a> to adjust the layout.
     </p>
     <Example
       code='<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -145,7 +145,7 @@
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
       Building on the above example, you can create different toast color schemes with our
-      <a href="/docs-bootstrap/5.3/utilities/colors">color</a> and <a href="/docs-bootstrap/5.3/utilities/background">background</a> utilities. Here we’ve added
+      <a href="/utilities/colors">color</a> and <a href="/utilities/background">background</a> utilities. Here we’ve added
       <code>.text-bg-primary</code> to the <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border
       with <code>.border-0</code>.
     </p>
@@ -264,7 +264,7 @@
       injecting/updating a toast component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user. Additionally,
       include <code>aria-atomic=&quot;true&quot;</code> to ensure that the entire toast is always announced as a single (atomic) unit, rather than just announcing what was changed
       (which could lead to problems if you only update part of the toast’s content, or if displaying the same toast content at a later point in time). If the information needed is
-      important for the process, e.g. for a list of errors in a form, then use the <a href="/docs-bootstrap/5.3/components/alerts">alert component</a> instead of toast.
+      important for the process, e.g. for a list of errors in a form, then use the <a href="/components/alerts">alert component</a> instead of toast.
     </p>
     <p>
       Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If you dynamically generate both at the same time and inject

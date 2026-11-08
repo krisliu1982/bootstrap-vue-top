@@ -15,7 +15,7 @@
       </li>
       <li>Navbars and their contents are fluid by default. Change the <a href="#containers">container</a> to limit their horizontal width in different ways.</li>
       <li>
-        Use our <a href="/docs-bootstrap/5.3/utilities/spacing">spacing</a> and <a href="/docs-bootstrap/5.3/utilities/flex">flex</a> utility classes for controlling spacing and
+        Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and
         alignment within navbars.
       </li>
       <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
@@ -85,8 +85,8 @@
     />
     <p>
       This example uses
-      <a href="/docs-bootstrap/5.3/utilities/background">background</a> (<code>bg-body-tertiary</code>) and
-      <a href="/docs-bootstrap/5.3/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
+      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and
+      <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
     </p>
     <h3 id="brand">Brand<a class="anchor-link" href="#brand" aria-label="Link to Brand"></a></h3>
     <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p>
@@ -236,7 +236,7 @@
     />
     <p>
       Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional
-      <a href="/docs-bootstrap/5.3/utilities/flex">flex utilities</a> as needed to adjust this behavior.
+      <a href="/utilities/flex">flex utilities</a> as needed to adjust this behavior.
     </p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
@@ -318,7 +318,7 @@
       <p>
         <strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add
         <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode.
-        <a href="/docs-bootstrap/5.3/customize/color-modes">Learn more about our color modes.</a>
+        <a href="/customize/color-modes">Learn more about our color modes.</a>
       </p>
       <hr />
       <p>
@@ -459,7 +459,7 @@
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
-      Use our <a href="/docs-bootstrap/5.3/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom,
+      Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom,
       stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then
       stays there).
     </p>
@@ -677,7 +677,7 @@
     <h3 id="offcanvas">Offcanvas<a class="anchor-link" href="#offcanvas" aria-label="Link to Offcanvas"></a></h3>
     <p>
       Transform your expanding and collapsing navbar into an offcanvas drawer with the
-      <a href="/docs-bootstrap/5.3/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to
+      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to
       create a dynamic and flexible navigation sidebar.
     </p>
     <p>

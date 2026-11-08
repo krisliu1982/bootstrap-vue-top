@@ -99,10 +99,10 @@
               <code>bootstrap-grid.min.css</code><br />
               <code>bootstrap-grid.rtl.min.css</code>
             </td>
-            <td><a href="/docs-bootstrap/5.3/layout/grid">Only grid system</a></td>
+            <td><a href="/layout/grid">Only grid system</a></td>
             <td>—</td>
             <td>—</td>
-            <td><a href="/docs-bootstrap/5.3/utilities/flex">Only flex utilities</a></td>
+            <td><a href="/utilities/flex">Only flex utilities</a></td>
           </tr>
           <tr>
             <td>
@@ -124,7 +124,7 @@
               <code>bootstrap-reboot.rtl.min.css</code>
             </td>
             <td>—</td>
-            <td><a href="/docs-bootstrap/5.3/content/reboot">Only Reboot</a></td>
+            <td><a href="/content/reboot">Only Reboot</a></td>
             <td>—</td>
             <td>—</td>
           </tr>

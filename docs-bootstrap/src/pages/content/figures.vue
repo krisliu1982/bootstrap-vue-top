@@ -25,7 +25,7 @@
     >
     <p>
       Aligning the figure’s caption is easy with our
-      <a href="/docs-bootstrap/5.3/utilities/text#text-alignment">text utilities</a>.
+      <a href="/utilities/text#text-alignment">text utilities</a>.
     </p>
 
     <ExampleCustom

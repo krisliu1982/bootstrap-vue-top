@@ -79,7 +79,7 @@
       all times. For example, a modal is document blocking (e.g., you cannot take any other action save for the modal’s action), so we put that above our navbars.
     </p>
     <p>
-      Learn more about this in our <a href="/docs-bootstrap/5.3/layout/z-index"><code>z-index</code> layout page</a>.
+      Learn more about this in our <a href="/layout/z-index"><code>z-index</code> layout page</a>.
     </p>
     <h2 id="html-and-css-over-js">HTML and CSS over JS<a class="anchor-link" href="#html-and-css-over-js" aria-label="Link to HTML and CSS over JS"></a></h2>
     <p>
@@ -88,7 +88,7 @@
     </p>
     <p>
       This principle is our first-class JavaScript API using <code>data</code> attributes. You don’t need to write nearly any JavaScript to use our JavaScript plugins; instead,
-      write HTML. Read more about this in <a href="/docs-bootstrap/5.3/getting-started/javascript#data-attributes">our JavaScript overview page</a>.
+      write HTML. Read more about this in <a href="/getting-started/javascript#data-attributes">our JavaScript overview page</a>.
     </p>
     <p>
       Lastly, our styles build on the fundamental behaviors of common web elements. Whenever possible, we prefer to use what the browser provides. For example, you can put a

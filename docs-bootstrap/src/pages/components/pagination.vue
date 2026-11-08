@@ -131,7 +131,7 @@
     <h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
     <p>
       Change the alignment of pagination components with
-      <a href="/docs-bootstrap/5.3/utilities/flex">flexbox utilities</a>. For example, with <code>.justify-content-center</code>:
+      <a href="/utilities/flex">flexbox utilities</a>. For example, with <code>.justify-content-center</code>:
     </p>
     <Example
       code='<nav aria-label="Page navigation example">

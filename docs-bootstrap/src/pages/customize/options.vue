@@ -26,7 +26,7 @@
             <td><code>1rem</code> (default), or any value &gt; 0</td>
             <td>
               Specifies the default spacer value to programmatically generate our
-              <a href="/docs-bootstrap/5.3/utilities/spacing">spacer utilities</a>.
+              <a href="/utilities/spacing">spacer utilities</a>.
             </td>
           </tr>
           <tr>
@@ -34,7 +34,7 @@
             <td><code>true</code> (default) or <code>false</code></td>
             <td>
               Enables built-in
-              <a href="/docs-bootstrap/5.3/customize/color-modes#dark-mode">dark mode support</a> across the project and its components.
+              <a href="/customize/color-modes#dark-mode">dark mode support</a> across the project and its components.
             </td>
           </tr>
           <tr>
@@ -62,7 +62,7 @@
             <td><code>true</code> (default) or <code>false</code></td>
             <td>
               Enables the
-              <a href="/docs-bootstrap/5.3/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain
+              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain
               animations/transitions based on the users’ browser/operating system preferences.
             </td>
           </tr>
@@ -94,7 +94,7 @@
           <tr>
             <td><code>$enable-rfs</code></td>
             <td><code>true</code> (default) or <code>false</code></td>
-            <td>Globally enables <a href="/docs-bootstrap/5.3/getting-started/rfs">RFS</a>.</td>
+            <td>Globally enables <a href="/getting-started/rfs">RFS</a>.</td>
           </tr>
           <tr>
             <td><code>$enable-validation-icons</code></td>
@@ -106,7 +106,7 @@
             <td><code>true</code> or <code>false</code> (default)</td>
             <td>
               Enables the generation of
-              <a href="/docs-bootstrap/5.3/utilities/spacing#negative-margin">negative margin utilities</a>.
+              <a href="/utilities/spacing#negative-margin">negative margin utilities</a>.
             </td>
           </tr>
           <tr>
@@ -124,7 +124,7 @@
             <td><code>true</code> (default) or <code>false</code></td>
             <td>
               Applies <code>scroll-behavior: smooth</code> globally, except for users asking for reduced motion through
-              <a href="/docs-bootstrap/5.3/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>
+              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>
             </td>
           </tr>
         </tbody>

@@ -14,7 +14,7 @@
 <div class="float-end">Float end on all viewport sizes</div><br>
 <div class="float-none">Don’t float on all viewport sizes</div>'
     />
-    <p>Use the <a href="/docs-bootstrap/5.3/helpers/clearfix">clearfix helper</a> on a parent element to clear floats.</p>
+    <p>Use the <a href="/helpers/clearfix">clearfix helper</a> on a parent element to clear floats.</p>
     <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
     <p>Responsive variations also exist for each <code>float</code> value.</p>
     <Example
@@ -42,7 +42,7 @@
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
       Float utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/docs-bootstrap/5.3/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
     </p>
     <ScssDocs name="utils-float" file="scss/_utilities.scss" />
     <DocsPager />
