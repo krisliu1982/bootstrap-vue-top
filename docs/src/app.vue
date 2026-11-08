@@ -2,14 +2,12 @@
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
-        <a class="link-body-emphasis text-decoration-none" href="#" @click.prevent="$router.push('/')">
-          <img src="/favicon.svg" alt="BootstrapVue" width="28" height="28"
-        /></a>
-        <span class="badge bg-body text-body" style="--bs-badge-font-weight: 500">{{ version }}</span>
+        <img src="/favicon.svg" alt="BootstrapVue" width="24" height="24"/>
+        <small>{{ version }}</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <RouterLink to="/docs" class="link-body-emphasis text-decoration-none" active-class="fw-bold"
+              <RouterLink to="/" class="link-body-emphasis text-decoration-none" active-class="fw-bold"
                 >文档
               </RouterLink>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank"
