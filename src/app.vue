@@ -24,4 +24,12 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useHead } from '@unhead/vue'
+
+useHead({
+  htmlAttrs: {
+    lang: 'zh-CN'
+  }
+})
+</script>
