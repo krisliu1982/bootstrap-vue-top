@@ -1,13 +1,13 @@
 <template>
   <article class="bd-content">
-    <h1>Contents</h1>
-    <p>Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
+    <h1>目录内容</h1>
+    <p>了解 Bootstrap 包含的内容，包括编译版本和源代码版本。</p>
 
-    <h2 id="compiled-bootstrap">Compiled Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="Link to Compiled Bootstrap"></a></h2>
-    <p>Once downloaded, unzip the compressed folder and you’ll see something like this:</p>
+    <h2 id="compiled-bootstrap">编译后的 Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="编译后的 Bootstrap 链接"></a></h2>
+    <p>下载后，解压压缩包，你会看到类似下面的目录结构：</p>
     <p>
-      {/* NOTE: This info is intentionally duplicated in the README. Copy any changes made here over to the README too, but be sure to keep in mind to add the
-      <code>dist</code> folder. */}
+      {/* 注意：此信息有意在 README 中重复一份。若在此处做了修改，请同步更新 README，但务必记得添加
+      <code>dist</code> 文件夹。 */}
     </p>
     <CodeWrapper
       code="bootstrap/
@@ -61,20 +61,19 @@
       lang="text"
     />
     <p>
-      This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>).
-      <a href="https://web.dev/articles/source-maps">Source maps</a> (<code>bootstrap.*.map</code>) are available for use with certain browsers’ developer tools. Bundled JS files (<code>bootstrap.bundle.js</code> and minified <code>bootstrap.bundle.min.js</code>) include <a href="https://popper.js.org/docs/v2/">Popper</a>.
+      这是 Bootstrap 最基本的形式：编译好的文件，可直接嵌入几乎任何 Web 项目中快速使用。我们提供了编译后的 CSS 和 JS（<code>bootstrap.*</code>），以及编译并压缩后的 CSS 和 JS（<code>bootstrap.min.*</code>）。<a href="https://web.dev/articles/source-maps">Source map</a>（<code>bootstrap.*.map</code>）可用于某些浏览器的开发者工具。打包的 JS 文件（<code>bootstrap.bundle.js</code> 和压缩版 <code>bootstrap.bundle.min.js</code>）包含 <a href="https://popper.js.org/docs/v2/">Popper</a>。
     </p>
-    <h3 id="css-files">CSS files<a class="anchor-link" href="#css-files" aria-label="Link to CSS files"></a></h3>
-    <p>Bootstrap includes a handful of options for including some or all of our compiled CSS.</p>
+    <h3 id="css-files">CSS 文件<a class="anchor-link" href="#css-files" aria-label="CSS 文件链接"></a></h3>
+    <p>Bootstrap 提供了多种选项，可用于引入我们的部分或全部编译后 CSS。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>CSS files</th>
-            <th>Layout</th>
-            <th>Content</th>
-            <th>Components</th>
-            <th>Utilities</th>
+            <th>CSS 文件</th>
+            <th>布局</th>
+            <th>内容</th>
+            <th>组件</th>
+            <th>工具类</th>
           </tr>
         </thead>
         <tbody>
@@ -97,10 +96,10 @@
               <code>bootstrap-grid.min.css</code><br />
               <code>bootstrap-grid.rtl.min.css</code>
             </td>
-            <td><a href="/layout/grid">Only grid system</a></td>
+            <td><a href="/layout/grid">仅网格系统</a></td>
             <td>—</td>
             <td>—</td>
-            <td><a href="/utilities/flex">Only flex utilities</a></td>
+            <td><a href="/utilities/flex">仅 flex 工具类</a></td>
           </tr>
           <tr>
             <td>
@@ -122,20 +121,20 @@
               <code>bootstrap-reboot.rtl.min.css</code>
             </td>
             <td>—</td>
-            <td><a href="/content/reboot">Only Reboot</a></td>
+            <td><a href="/content/reboot">仅 Reboot</a></td>
             <td>—</td>
             <td>—</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="js-files">JS files<a class="anchor-link" href="#js-files" aria-label="Link to JS files"></a></h3>
-    <p>Similarly, we have options for including some or all of our compiled JavaScript.</p>
+    <h3 id="js-files">JS 文件<a class="anchor-link" href="#js-files" aria-label="JS 文件链接"></a></h3>
+    <p>同样，我们也提供了多种选项，可用于引入我们的部分或全部编译后 JavaScript。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>JS Files</th>
+            <th>JS 文件</th>
             <th>Popper</th>
           </tr>
         </thead>
@@ -157,8 +156,8 @@
         </tbody>
       </table>
     </div>
-    <h2 id="bootstrap-source-code">Bootstrap source code<a class="anchor-link" href="#bootstrap-source-code" aria-label="Link to Bootstrap source code"></a></h2>
-    <p>The Bootstrap source code download includes the compiled CSS and JavaScript assets, along with source Sass, JavaScript, and documentation. More specifically, it includes the following and more:</p>
+    <h2 id="bootstrap-source-code">Bootstrap 源代码<a class="anchor-link" href="#bootstrap-source-code" aria-label="Bootstrap 源代码链接"></a></h2>
+    <p>Bootstrap 源代码下载包包含编译后的 CSS 和 JavaScript 资源，以及 Sass、JavaScript 源代码和文档。更具体地说，它包含以下内容等：</p>
     <CodeWrapper
       code="bootstrap/
 ├── dist/
@@ -174,23 +173,23 @@
 "
       lang="text"
     />
-    <p>The <code>scss/</code> and <code>js/</code> are the source code for our CSS and JavaScript. The <code>dist/</code> folder includes everything listed in the compiled download section above. The <code>site/content/docs/</code> folder includes the source code for our hosted documentation, including our live examples of Bootstrap usage.</p>
-    <p>Beyond that, any other included file provides support for packages, license information, and development.</p>
+    <p><code>scss/</code> 和 <code>js/</code> 是我们 CSS 和 JavaScript 的源代码。<code>dist/</code> 文件夹包含上面编译下载部分列出的所有内容。<code>site/content/docs/</code> 文件夹包含我们托管的文档的源代码，包括 Bootstrap 用法的实时示例。</p>
+    <p>除此之外，其他任何包含的文件都为软件包、许可信息和开发提供支持。</p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#compiled-bootstrap">Compiled Bootstrap</a>
+        <a href="#compiled-bootstrap">编译后的 Bootstrap</a>
         <ul>
-          <li><a href="#css-files">CSS files</a></li>
-          <li><a href="#js-files">JS files</a></li>
+          <li><a href="#css-files">CSS 文件</a></li>
+          <li><a href="#js-files">JS 文件</a></li>
         </ul>
       </li>
       <li>
-        <a href="#bootstrap-source-code">Bootstrap source code</a>
+        <a href="#bootstrap-source-code">Bootstrap 源代码</a>
       </li>
     </ul>
   </nav>

@@ -1,101 +1,94 @@
 <template>
   <article class="bd-content">
-    <h1>Contribute</h1>
-    <p>Help develop Bootstrap with our documentation build scripts and tests.</p>
+    <h1>参与贡献</h1>
+    <p>使用我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 
-    <h2 id="tooling-setup">Tooling setup<a class="anchor-link" href="#tooling-setup" aria-label="Link to Tooling setup"></a></h2>
+    <h2 id="tooling-setup">工具设置<a class="anchor-link" href="#tooling-setup" aria-label="工具设置链接"></a></h2>
     <p>
-      Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> to build the documentation and compile source files. Our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> houses these scripts for compiling code, running tests, and more. These aren’t intended for use outside our repository and
-      documentation.
+      Bootstrap 使用 <a href="https://docs.npmjs.com/misc/scripts/">npm 脚本</a>构建文档并编译源文件。我们的 <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> 中存放了用于编译代码、运行测试等任务的脚本。这些脚本并非供我们仓库和文档之外的场景使用。
     </p>
-    <p>To use our build system and run our documentation locally, you’ll need a copy of Bootstrap’s source files and Node. Follow these steps and you should be ready to rock:</p>
+    <p>要使用我们的构建系统并在本地运行文档，你需要一份 Bootstrap 源文件和 Node。按以下步骤操作即可准备就绪：</p>
     <ol>
-      <li><a href="https://nodejs.org/en/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
-      <li>Either <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip">download Bootstrap’s sources</a> or fork and clone <a href="https://github.com/twbs/bootstrap">Bootstrap’s repository</a>.</li>
-      <li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a>.</li>
+      <li><a href="https://nodejs.org/en/download/">下载并安装 Node.js</a>，我们使用它来管理依赖。</li>
+      <li><a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip">下载 Bootstrap 源代码</a>，或者 fork 并克隆 <a href="https://github.com/twbs/bootstrap">Bootstrap 仓库</a>。</li>
+      <li>进入根目录 <code>/bootstrap</code> 并运行 <code>npm install</code>，以安装 <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> 中列出的本地依赖。</li>
     </ol>
-    <p>When completed, you’ll be able to run the various commands provided from the command line.</p>
-    <h2 id="using-npm-scripts">Using npm scripts<a class="anchor-link" href="#using-npm-scripts" aria-label="Link to Using npm scripts"></a></h2>
+    <p>完成后，你就可以在命令行中运行所提供的各种命令了。</p>
+    <h2 id="using-npm-scripts">使用 npm 脚本<a class="anchor-link" href="#using-npm-scripts" aria-label="使用 npm 脚本链接"></a></h2>
     <p>
-      Our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> includes numerous tasks for developing the project. Run <code>npm run</code> to see all the npm scripts in your terminal.
-      <strong>Primary tasks include:</strong>
+      我们的 <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a> 包含许多用于开发项目的任务。在终端中运行 <code>npm run</code> 可查看所有 npm 脚本。<strong>主要任务包括：</strong>
     </p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Task</th>
-            <th>Description</th>
+            <th>任务</th>
+            <th>说明</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>npm start</code></td>
-            <td>Compiles CSS and JavaScript, builds the documentation, and starts a local server.</td>
+            <td>编译 CSS 和 JavaScript，构建文档，并启动本地服务器。</td>
           </tr>
           <tr>
             <td><code>npm run dist</code></td>
-            <td>Creates the <code>dist/</code> directory with compiled files. Uses <a href="https://sass-lang.com/">Sass</a>, <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>, and <a href="https://github.com/terser/terser">terser</a>.</td>
+            <td>创建包含编译文件的 <code>dist/</code> 目录。使用 <a href="https://sass-lang.com/">Sass</a>、<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 和 <a href="https://github.com/terser/terser">terser</a>。</td>
           </tr>
           <tr>
             <td><code>npm test</code></td>
-            <td>Runs tests locally after running <code>npm run dist</code></td>
+            <td>运行 <code>npm run dist</code> 后在本地运行测试</td>
           </tr>
           <tr>
             <td><code>npm run bd-serve</code></td>
-            <td>Builds and runs the documentation locally.</td>
+            <td>在本地构建并运行文档。</td>
           </tr>
         </tbody>
       </table>
     </div>
     <Callout name="info-npm-starter" />
-    <h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Link to Sass"></a></h2>
+    <h2 id="sass">Sass<a class="anchor-link" href="#sass" aria-label="Sass 链接"></a></h2>
     <p>
-      Bootstrap uses <a href="https://sass-lang.com/dart-sass/">Dart Sass</a> for compiling our Sass source files into CSS files (included in our build process), and we recommend you do the same if you’re compiling Sass using your own asset pipeline. We previously used Node Sass for Bootstrap v4, but LibSass and packages built on top of it,
-      including Node Sass, are now <a href="https://sass-lang.com/blog/libsass-is-deprecated/">deprecated</a>.
+      Bootstrap 使用 <a href="https://sass-lang.com/dart-sass/">Dart Sass</a> 将 Sass 源文件编译为 CSS 文件（已包含在我们的构建流程中）。如果你使用自己的资源处理流程编译 Sass，我们也推荐这样做。我们之前曾为 Bootstrap v4 使用 Node Sass，但 LibSass 及基于它构建的包（包括 Node Sass）现在已被<a href="https://sass-lang.com/blog/libsass-is-deprecated/">弃用</a>。
     </p>
-    <p>Dart Sass uses a rounding precision of 10 and for efficiency reasons does not allow adjustment of this value. We don’t lower this precision during further processing of our generated CSS, such as during minification, but if you chose to do so we recommend maintaining a precision of at least 6 to prevent issues with browser rounding.</p>
-    <h2 id="autoprefixer">Autoprefixer<a class="anchor-link" href="#autoprefixer" aria-label="Link to Autoprefixer"></a></h2>
+    <p>Dart Sass 使用 10 位的舍入精度，出于效率考虑不允许调整此值。我们在对生成的 CSS 进行后续处理（如压缩）时不会降低此精度，但如果你选择降低，我们建议至少保持 6 位精度，以避免浏览器舍入带来的问题。</p>
+    <h2 id="autoprefixer">Autoprefixer<a class="anchor-link" href="#autoprefixer" aria-label="Autoprefixer 链接"></a></h2>
     <p>
-      Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in
-      v3.
+      Bootstrap 使用 <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>（已包含在我们的构建流程中）在构建时自动为某些 CSS 属性添加厂商前缀。这样既能节省时间和代码，让我们只需编写一次 CSS 的关键部分，又无需像 v3 中那样使用厂商 mixin。
     </p>
     <p>
-      We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See
-      <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.browserslistrc">.browserslistrc</a> for details.
+      我们通过 Autoprefixer 支持的浏览器列表维护在 GitHub 仓库中的单独文件里。详情请参阅 <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.browserslistrc">.browserslistrc</a>。
     </p>
-    <h2 id="rtlcss">RTLCSS<a class="anchor-link" href="#rtlcss" aria-label="Link to RTLCSS"></a></h2>
+    <h2 id="rtlcss">RTLCSS<a class="anchor-link" href="#rtlcss" aria-label="RTLCSS 链接"></a></h2>
     <p>
-      Bootstrap uses <a href="https://rtlcss.com/">RTLCSS</a> to process compiled CSS and convert them to RTL – basically replacing horizontal direction aware properties (e.g. <code>padding-left</code>) with their opposite. It allows us only write our CSS a single time and make minor tweaks using RTLCSS
-      <a href="https://rtlcss.com/learn/usage-guide/control-directives/">control</a> and <a href="https://rtlcss.com/learn/usage-guide/value-directives/">value</a> directives.
+      Bootstrap 使用 <a href="https://rtlcss.com/">RTLCSS</a> 处理编译后的 CSS 并将其转换为 RTL——基本上就是用相反方向的属性替换水平方向相关的属性（例如 <code>padding-left</code>）。这让我们只需编写一次 CSS，并通过 RTLCSS 的<a href="https://rtlcss.com/learn/usage-guide/control-directives/">控制指令</a>和<a href="https://rtlcss.com/learn/usage-guide/value-directives/">值指令</a>进行细微调整。
     </p>
-    <h2 id="local-documentation">Local documentation<a class="anchor-link" href="#local-documentation" aria-label="Link to Local documentation"></a></h2>
-    <p>Running our documentation locally requires the use of Astro. Astro is a modern static site generator that allows us to build our documentation with a combination of Markdown and React components. Here’s how to get it started:</p>
+    <h2 id="local-documentation">本地文档<a class="anchor-link" href="#local-documentation" aria-label="本地文档链接"></a></h2>
+    <p>在本地运行我们的文档需要使用 Astro。Astro 是一个现代静态站点生成器，可让我们结合 Markdown 和 React 组件来构建文档。启动方式如下：</p>
     <ol>
-      <li>Run through the <a href="#tooling-setup">tooling setup</a> above to install all dependencies.</li>
-      <li>From the root <code>/bootstrap</code> directory, run <code>npm run bd-serve</code> in the command line.</li>
-      <li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, and voilà.</li>
+      <li>完成上面的<a href="#tooling-setup">工具设置</a>，以安装所有依赖。</li>
+      <li>在根目录 <code>/bootstrap</code> 中，于命令行运行 <code>npm run bd-serve</code>。</li>
+      <li>在浏览器中打开 <a href="http://localhost:9001">http://localhost:9001</a>，大功告成。</li>
     </ol>
     <p>
-      Learn more about using Astro by reading its
-      <a href="https://docs.astro.build/en/getting-started/">documentation</a>.
+      阅读 Astro 的<a href="https://docs.astro.build/en/getting-started/">文档</a>，进一步了解 Astro 的用法。
     </p>
-    <h2 id="troubleshooting">Troubleshooting<a class="anchor-link" href="#troubleshooting" aria-label="Link to Troubleshooting"></a></h2>
-    <p>Should you encounter problems with installing dependencies, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
+    <h2 id="troubleshooting">疑难解答<a class="anchor-link" href="#troubleshooting" aria-label="疑难解答链接"></a></h2>
+    <p>如果你在安装依赖时遇到问题，请卸载之前所有版本的依赖（全局和本地），然后重新运行 <code>npm install</code>。</p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#tooling-setup">Tooling setup</a></li>
-      <li><a href="#using-npm-scripts">Using npm scripts</a></li>
+      <li><a href="#tooling-setup">工具设置</a></li>
+      <li><a href="#using-npm-scripts">使用 npm 脚本</a></li>
       <li><a href="#sass">Sass</a></li>
       <li><a href="#autoprefixer">Autoprefixer</a></li>
       <li><a href="#rtlcss">RTLCSS</a></li>
-      <li><a href="#local-documentation">Local documentation</a></li>
+      <li><a href="#local-documentation">本地文档</a></li>
       <li>
-        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#troubleshooting">疑难解答</a>
       </li>
     </ul>
   </nav>

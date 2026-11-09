@@ -1,12 +1,12 @@
 <template>
   <article class="bd-content">
-    <h1>Alerts</h1>
-    <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+    <h1>警告框</h1>
+    <p>使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
 
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts JavaScript plugin</a>.</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <p>警告框可容纳任意长度的文本，并可选带有关闭按钮。为了获得正确的样式，请使用八个<strong>必需的</strong>情境类之一（例如 <code>.alert-success</code>）。若需行内关闭，请使用<a href="#dismissing">警告框 JavaScript 插件</a>。</p>
     <Callout>
-      <p><strong>Heads up!</strong> As of v5.3.0, the <code>alert-variant()</code> Sass mixin is deprecated. Alert variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
+      <p><strong>注意！</strong> 从 v5.3.0 开始，<code>alert-variant()</code> Sass mixin 已被弃用。现在警告框变体通过<a href="#sass-loops">Sass 循环</a>覆盖其 CSS 变量。</p>
     </Callout>
     <Example
       :code="
@@ -20,19 +20,19 @@
       "
     />
     <Callout name="warning-color-assistive-technologies" />
-    <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
-    <p>Click the button below to show an alert (hidden with inline styles to start), then dismiss (and destroy) it with the built-in close button.</p>
+    <h3 id="live-example">实时示例<a class="anchor-link" href="#live-example" aria-label="实时示例链接"></a></h3>
+    <p>点击下面的按钮显示一个警告框（初始时通过行内样式隐藏），然后使用内置的关闭按钮将其关闭（并销毁）。</p>
     <Example
       addStackblitzJs
       code='<div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>'
     />
-    <p>We use the following JavaScript to trigger our live alert demo:</p>
+    <p>我们使用以下 JavaScript 来触发实时警告框演示：</p>
 
     <JsDocs name="live-alert" file="site/src/assets/partials/snippets.js" />
-    <h3 id="link-color">Link color<a class="anchor-link" href="#link-color" aria-label="Link to Link color"></a></h3>
+    <h3 id="link-color">链接颜色<a class="anchor-link" href="#link-color" aria-label="链接颜色链接"></a></h3>
 
-    <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+    <p>使用 <code>.alert-link</code> 工具类，可以在任意警告框内快速提供颜色匹配的链接。</p>
 
     <Example
       :code="
@@ -46,8 +46,8 @@
       "
     />
 
-    <h3 id="additional-content">Additional content<a class="anchor-link" href="#additional-content" aria-label="Link to Additional content"></a></h3>
-    <p>Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
+    <h3 id="additional-content">附加内容<a class="anchor-link" href="#additional-content" aria-label="附加内容链接"></a></h3>
+    <p>警告框还可以包含其他 HTML 元素，例如标题、段落和分隔线。</p>
     <Example
       code='<div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Well done!</h4>
@@ -56,8 +56,8 @@
   <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>'
     />
-    <h3 id="icons">Icons<a class="anchor-link" href="#icons" aria-label="Link to Icons"></a></h3>
-    <p>Similarly, you can use <a href="/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.</p>
+    <h3 id="icons">图标<a class="anchor-link" href="#icons" aria-label="图标链接"></a></h3>
+    <p>同样，你可以使用 <a href="/utilities/flex">flexbox 工具类</a>和 <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 创建带图标的警告框。根据你的图标和内容，可能需要添加更多工具类或自定义样式。</p>
     <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
@@ -68,7 +68,7 @@
   </div>
 </div>'
     />
-    <p>Need more than one icon for your alerts? Consider using more Bootstrap Icons and making a local SVG sprite like so to easily reference the same icons repeatedly.</p>
+    <p>警告框需要多个图标？可以考虑使用更多 Bootstrap Icons 并创建一个本地 SVG sprite，以便轻松重复引用相同的图标。</p>
     <Example
       code='<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="check-circle-fill" viewBox="0 0 16 16">
@@ -107,15 +107,15 @@
   </div>
 </div>'
     />
-    <h3 id="dismissing">Dismissing<a class="anchor-link" href="#dismissing" aria-label="Link to Dismissing"></a></h3>
-    <p>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how:</p>
+    <h3 id="dismissing">关闭<a class="anchor-link" href="#dismissing" aria-label="关闭链接"></a></h3>
+    <p>使用警告框 JavaScript 插件，可以在行内关闭任意警告框。方法如下：</p>
     <ul>
-      <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
-      <li>Add a <a href="/components/close-button">close button</a> and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the close button.</li>
-      <li>On the close button, add the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
-      <li>To animate alerts when dismissing them, be sure to add the <code>.fade</code> and <code>.show</code> classes.</li>
+      <li>请确保已加载警告框插件，或已编译的 Bootstrap JavaScript。</li>
+      <li>添加一个<a href="/components/close-button">关闭按钮</a>和 <code>.alert-dismissible</code> 类，后者会在警告框右侧添加额外内边距并为关闭按钮定位。</li>
+      <li>在关闭按钮上添加 <code>data-bs-dismiss=&quot;alert&quot;</code> 属性，以触发 JavaScript 功能。请务必搭配使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上行为正确。</li>
+      <li>若要在关闭时对警告框进行动画处理，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
     </ul>
-    <p>You can see this in action with a live demo:</p>
+    <p>你可以通过下面的实时演示查看效果：</p>
     <Example
       code='<div class="alert alert-warning alert-dismissible fade show" role="alert">
   <strong>Holy guacamole!</strong> You should check in on some of those fields below.
@@ -123,28 +123,28 @@
 </div>'
     /><Callout type="warning">
       <p>
-        When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the
-        <code>closed.bs.alert</code> event and programmatically sets <code>focus()</code> to the most appropriate location in the page. If you’re planning to move focus to a non-interactive element that normally does not receive focus, make sure to add <code>tabindex=&quot;-1&quot;</code> to the element.
+        警告框被关闭时，该元素会从页面结构中完全移除。如果键盘用户使用关闭按钮关闭警告框，其焦点会突然丢失，并且可能因浏览器而异被重置到页面/文档的开头。因此，我们建议加入额外的 JavaScript，监听
+        <code>closed.bs.alert</code> 事件，并以编程方式将 <code>focus()</code> 设置到页面中最合适的位置。如果你打算将焦点移到通常不会获得焦点的非交互元素上，请务必为该元素添加 <code>tabindex=&quot;-1&quot;</code>。
       </p>
     </Callout>
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, alerts now use local CSS variables on
-      <code>.alert</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，警告框现在在
+      <code>.alert</code> 上使用本地 CSS 变量，以增强实时自定义能力。CSS 变量的值由 Sass 设置，因此仍然支持 Sass 自定义。
     </p>
     <ScssDocs name="alert-css-vars" file="scss/_alert.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="alert-variables" file="scss/_variables.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
+    <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin链接"></a></h3>
     <DeprecatedIn version="5.3.0" /><ScssDocs name="alert-variant-mixin" file="scss/mixins/_alert.scss" removeIndentation="{false}" />
-    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p>Loop that generates the modifier classes with an overriding of CSS variables.</p>
+    <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
+    <p>生成修饰类并覆盖 CSS 变量的循环。</p>
     <ScssDocs name="alert-modifiers" file="scss/_alert.scss" removeIndentation="{false}" />
-    <h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
-    <h3 id="initialize">Initialize<a class="anchor-link" href="#initialize" aria-label="Link to Initialize"></a></h3>
-    <p>Initialize elements as alerts</p>
+    <h2 id="javascript-behavior">JavaScript 行为<a class="anchor-link" href="#javascript-behavior" aria-label="JavaScript 行为链接"></a></h2>
+    <h3 id="initialize">初始化<a class="anchor-link" href="#initialize" aria-label="初始化链接"></a></h3>
+    <p>将元素初始化为警告框</p>
     <CodeWrapper
       code="const alertList = document.querySelectorAll(&#39;.alert&#39;)
 const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
@@ -153,84 +153,84 @@ const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
     />
     <Callout>
       <p>
-        For the sole purpose of dismissing an alert, it isn’t necessary to initialize the component manually via the JS API. By making use of
-        <code>data-bs-dismiss=&quot;alert&quot;</code>, the component will be initialized automatically and properly dismissed.
+        如果仅仅是为了关闭警告框，则无需通过 JS API 手动初始化该组件。通过使用
+        <code>data-bs-dismiss=&quot;alert&quot;</code>，组件将自动初始化并正确关闭。
       </p>
-      <p>See the <a href="#triggers">triggers</a> section for more details.</p>
+      <p>更多细节请参阅<a href="#triggers">触发器</a>章节。</p>
     </Callout>
-    <h3 id="triggers">Triggers<a class="anchor-link" href="#triggers" aria-label="Link to Triggers"></a></h3>
+    <h3 id="triggers">触发器<a class="anchor-link" href="#triggers" aria-label="触发器链接"></a></h3>
     <JsDismiss name="alert" />
-    <p><strong>Note that closing an alert will remove it from the DOM.</strong></p>
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
-    <p>You can create an alert instance with the alert constructor, for example:</p>
+    <p><strong>请注意，关闭警告框会将其从 DOM 中移除。</strong></p>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
+    <p>你可以使用警告框构造函数创建一个警告框实例，例如：</p>
     <CodeWrapper
       code="const bsAlert = new bootstrap.Alert(&#39;#myAlert&#39;)
 "
       lang="javascript"
     />
     <p>
-      This makes an alert listen for click events on descendant elements which have the
-      <code>data-bs-dismiss=&quot;alert&quot;</code> attribute. (Not necessary when using the data-api’s auto-initialization.)
+      这会使警告框监听具有
+      <code>data-bs-dismiss=&quot;alert&quot;</code> 属性的后代元素上的点击事件。（使用 data-api 自动初始化时无需这样做。）
     </p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>close</code></td>
-            <td>Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.show</code> classes are present on the element, the alert will fade out before it is removed.</td>
+            <td>通过从 DOM 中移除此元素来关闭警告框。如果元素上存在 <code>.fade</code> 和 <code>.show</code> 类，警告框将在移除前淡出。</td>
           </tr>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s alert. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的警告框功能。（移除 DOM 元素上存储的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
             <td>
-              Static method which allows you to get the alert instance associated to a DOM element. For example:
-              <code>bootstrap.Alert.getInstance(alert)</code>.
+              静态方法，用于获取与某个 DOM 元素关联的警告框实例。例如：
+              <code>bootstrap.Alert.getInstance(alert)</code>。
             </td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
             <td>
-              Static method which returns an alert instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
-              <code>bootstrap.Alert.getOrCreateInstance(element)</code>.
+              静态方法，返回与某个 DOM 元素关联的警告框实例，如果尚未初始化则创建一个新实例。可以这样使用：
+              <code>bootstrap.Alert.getOrCreateInstance(element)</code>。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Basic usage:</p>
+    <p>基本用法：</p>
     <CodeWrapper
       code="const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
 alert.close()
 "
       lang="javascript"
     />
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>Bootstrap’s alert plugin exposes a few events for hooking into alert functionality.</p>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
+    <p>Bootstrap 的警告框插件暴露了几个事件，用于挂接警告框功能。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event</th>
-            <th>Description</th>
+            <th>事件</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>close.bs.alert</code></td>
-            <td>Fires immediately when the <code>close</code> instance method is called.</td>
+            <td>当调用 <code>close</code> 实例方法时立即触发。</td>
           </tr>
           <tr>
             <td><code>closed.bs.alert</code></td>
-            <td>Fired when the alert has been closed and CSS transitions have completed.</td>
+            <td>当警告框已关闭且 CSS 过渡完成时触发。</td>
           </tr>
         </tbody>
       </table>
@@ -248,35 +248,35 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#live-example">Live example</a></li>
-          <li><a href="#link-color">Link color</a></li>
-          <li><a href="#additional-content">Additional content</a></li>
-          <li><a href="#icons">Icons</a></li>
-          <li><a href="#dismissing">Dismissing</a></li>
+          <li><a href="#live-example">实时示例</a></li>
+          <li><a href="#link-color">链接颜色</a></li>
+          <li><a href="#additional-content">附加内容</a></li>
+          <li><a href="#icons">图标</a></li>
+          <li><a href="#dismissing">关闭</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-mixins">Sass mixins</a></li>
-          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-mixins">Sass mixin</a></li>
+          <li><a href="#sass-loops">Sass 循环</a></li>
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript behavior</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
-          <li><a href="#initialize">Initialize</a></li>
-          <li><a href="#triggers">Triggers</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#initialize">初始化</a></li>
+          <li><a href="#triggers">触发器</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

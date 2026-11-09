@@ -1,17 +1,17 @@
 <template>
   <article class="bd-content">
     <h1>Z-index</h1>
-    <p>While not a part of Bootstrap’s grid system, z-indexes play an important part in how our components overlay and interact with one another.</p>
+    <p>虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。</p>
 
-    <p>Several Bootstrap components utilize <code>z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
+    <p>多个 Bootstrap 组件都用到了 <code>z-index</code>，这个 CSS 属性通过提供第三条轴来排列内容，从而帮助控制布局。Bootstrap 使用了一套默认的 z-index 层级，旨在正确地对导航、工具提示和弹出框、模态框等进行分层。</p>
     <p>
-      These higher values start at an arbitrary number, high and specific enough to ideally avoid conflicts. We need a standard set of these across our layered components—tooltips, popovers, navbars, dropdowns, modals—so we can be reasonably consistent in the behaviors. There’s no reason we couldn’t have used <code>100</code>+ or <code>500</code>+.
+      这些较高的值从一个任意数字开始，足够高且足够具体，以尽可能避免冲突。我们需要在我们的分层组件——工具提示、弹出框、导航栏、下拉菜单、模态框——中拥有一套标准的这类值，以便在行为上保持合理的一致性。我们没有理由不能使用 <code>100</code>+ 或 <code>500</code>+。
     </p>
-    <p>We don’t encourage customization of these individual values; should you change one, you likely need to change them all.</p>
+    <p>我们不鼓励自定义这些单独的值；如果你改动了其中一个，很可能需要把所有的都改掉。</p>
     <ScssDocs name="zindex-stack" file="scss/_variables.scss" />
     <p>
-      To handle overlapping borders within components (e.g., buttons and inputs in input groups), we use low single digit <code>z-index</code> values of <code>1</code>, <code>2</code>, and <code>3</code> for default, hover, and active states. On hover/focus/active, we bring a particular element to the forefront with a higher
-      <code>z-index</code> value to show their border over the sibling elements.
+      为了处理组件内部重叠的边框（例如输入框组中的按钮和输入框），我们在默认、悬停和激活状态下使用 <code>1</code>、<code>2</code> 和 <code>3</code> 这样较小的个位数 <code>z-index</code> 值。在悬停/聚焦/激活时，我们会通过更高的
+      <code>z-index</code> 值将特定元素置于最前面，以便其边框显示在同级元素之上。
     </p>
     <DocsPager />
   </article>

@@ -1,60 +1,60 @@
 <template>
   <article class="bd-content">
-    <h1>Focus ring</h1>
-    <p>Utility classes that allows you to add and modify custom focus ring styles to elements and components.</p>
+    <h1>聚焦环</h1>
+    <p>用于向元素和组件添加及修改自定义聚焦环样式的工具类。</p>
 
-    <p>The <code>.focus-ring</code> helper removes the default <code>outline</code> on <code>:focus</code>, replacing it with a <code>box-shadow</code> that can be more broadly customized. The new shadow is made up of a series of CSS variables, inherited from the <code>:root</code> level, that can be modified for any element or component.</p>
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
+    <p><code>.focus-ring</code> 工具类会移除 <code>:focus</code> 状态下默认的 <code>outline</code>，并替换为可更广泛定制的 <code>box-shadow</code>。新的阴影由一系列继承自 <code>:root</code> 层级的 CSS 变量组成，可以为任意元素或组件进行修改。</p>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>
-      Click directly on the link below to see the focus ring in action, or into the example below and then press
-      <kbd>Tab</kbd>.
+      直接点击下方链接即可看到聚焦环效果，或点击进入下方的示例后按下
+      <kbd>Tab</kbd> 键。
     </p>
     <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
   Custom focus ring
 </a>'
     />
-    <h2 id="customize">Customize<a class="anchor-link" href="#customize" aria-label="Link to Customize"></a></h2>
-    <p>Modify the styling of a focus ring with our CSS variables, Sass variables, utilities, or custom styles.</p>
-    <h3 id="css-variables">CSS variables<a class="anchor-link" href="#css-variables" aria-label="Link to CSS variables"></a></h3>
-    <p>Modify the <code>--bs-focus-ring-*</code> CSS variables as needed to change the default appearance.</p>
+    <h2 id="customize">自定义<a class="anchor-link" href="#customize" aria-label="自定义链接"></a></h2>
+    <p>使用我们的 CSS 变量、Sass 变量、工具类或自定义样式来修改聚焦环的样式。</p>
+    <h3 id="css-variables">CSS 变量<a class="anchor-link" href="#css-variables" aria-label="CSS 变量链接"></a></h3>
+    <p>根据需要修改 <code>--bs-focus-ring-*</code> CSS 变量，以更改默认外观。</p>
     <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
   Green focus ring
 </a>'
     />
-    <p><code>.focus-ring</code> sets styles via global CSS variables that can be overridden on any parent element, as shown above. These variables are generated from their Sass variable counterparts.</p>
+    <p><code>.focus-ring</code> 通过全局 CSS 变量设置样式，可以在任意父元素上覆盖，如上所示。这些变量由对应的 Sass 变量生成。</p>
     <ScssDocs name="root-focus-variables" file="scss/_root.scss" />
-    <p>By default, there is no <code>--bs-focus-ring-x</code>, <code>--bs-focus-ring-y</code>, or <code>--bs-focus-ring-blur</code>, but we provide CSS variables with fallbacks to initial <code>0</code> values. Modify them to change the default appearance.</p>
+    <p>默认情况下不存在 <code>--bs-focus-ring-x</code>、<code>--bs-focus-ring-y</code> 或 <code>--bs-focus-ring-blur</code>，但我们提供了回退到初始值 <code>0</code> 的 CSS 变量。修改它们即可更改默认外观。</p>
     <Example
       code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
   Blurry offset focus ring
 </a>'
     />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Customize the focus ring Sass variables to modify all usage of the focus ring styles across your Bootstrap-powered project.</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>定制聚焦环的 Sass 变量，即可修改整个由 Bootstrap 驱动的项目中所有聚焦环样式的用法。</p>
     <ScssDocs name="focus-ring-variables" file="scss/_variables.scss" />
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
-    <p>In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our <a href="/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current color mode support.</p>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
+    <p>除了 <code>.focus-ring</code> 之外，我们还提供了若干 <code>.focus-ring-*</code> 工具类，用于修改该工具类的默认值。可以使用任意<a href="/customize/color#theme-colors">主题颜色</a>修改颜色。请注意，鉴于当前的颜色模式支持情况，浅色和深色变体可能并非在所有背景色上都可见。</p>
     <Example :code="data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2&quot;>${themeColor.name} focus</a></p>`).join('\n')" />
     <p>
-      Focus ring utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      聚焦环工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#example">Example</a></li>
+      <li><a href="#example">示例</a></li>
       <li>
-        <a href="#customize">Customize</a>
+        <a href="#customize">自定义</a>
         <ul>
-          <li><a href="#css-variables">CSS variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#css-variables">CSS 变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

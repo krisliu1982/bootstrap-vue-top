@@ -1,36 +1,33 @@
 <template>
   <article class="bd-content">
-    <h1>Validation</h1>
-    <p>Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom styles and JavaScript.</p>
+    <h1>校验</h1>
+    <p>通过浏览器默认行为，或自定义样式与 JavaScript，利用 HTML5 表单校验为你的用户提供有价值且可操作的反馈。</p>
 
     <Callout type="warning">
-      <p>We are aware that currently the client-side custom validation styles and tooltips are not accessible, since they are not exposed to assistive technologies. While we work on a solution, we’d recommend either using the server-side option or the default browser validation method.</p>
+      <p>我们知道，目前客户端自定义校验样式和工具提示尚不具备无障碍性，因为它们未暴露给辅助技术。在我们寻求解决方案的同时，建议你使用服务端方案或浏览器默认校验方式。</p>
     </Callout>
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Here’s how form validation works with Bootstrap:</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>Bootstrap 的表单校验工作原理如下：</p>
     <ul>
-      <li>HTML form validation is applied via CSS’s two pseudo-classes, <code>:invalid</code> and <code>:valid</code>. It applies to <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code> elements.</li>
+      <li>HTML 表单校验通过 CSS 的两个伪类 <code>:invalid</code> 和 <code>:valid</code> 应用，作用于 <code>&lt;input&gt;</code>、<code>&lt;select&gt;</code> 和 <code>&lt;textarea&gt;</code> 元素。</li>
       <li>
-        Bootstrap scopes the <code>:invalid</code> and <code>:valid</code> styles to parent <code>.was-validated</code> class, usually applied to the <code>&lt;form&gt;</code>. Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is
-        attempted).
+        Bootstrap 将 <code>:invalid</code> 和 <code>:valid</code> 样式的作用范围限定为父级 <code>.was-validated</code> 类，该类通常应用于 <code>&lt;form&gt;</code>。否则，任何没有值的必填字段都会在页面加载时显示为无效。这样，你可以自行选择何时激活这些样式（通常在尝试提交表单之后）。
       </li>
-      <li>To reset the appearance of the form (for instance, in the case of dynamic form submissions using Ajax), remove the <code>.was-validated</code> class from the <code>&lt;form&gt;</code> again after submission.</li>
-      <li>As a fallback, <code>.is-invalid</code> and <code>.is-valid</code> classes may be used instead of the pseudo-classes for <a href="#server-side">server-side validation</a>. They do not require a <code>.was-validated</code> parent class.</li>
-      <li>Due to constraints in how CSS works, we cannot (at present) apply styles to a <code>&lt;label&gt;</code> that comes before a form control in the DOM without the help of custom JavaScript.</li>
+      <li>要重置表单的外观（例如在使用 Ajax 动态提交表单的情况下），可在提交后再次从 <code>&lt;form&gt;</code> 中移除 <code>.was-validated</code> 类。</li>
+      <li>作为后备方案，<a href="#server-side">服务端校验</a>可以使用 <code>.is-invalid</code> 和 <code>.is-valid</code> 类代替伪类，它们不需要父级 <code>.was-validated</code> 类。</li>
+      <li>由于 CSS 工作原理的限制，我们目前无法在没有任何自定义 JavaScript 帮助下，对 DOM 中位于表单控件之前的 <code>&lt;label&gt;</code> 应用样式。</li>
       <li>
-        All modern browsers support the
-        <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">constraint validation API</a>, a series of JavaScript methods for validating form controls.
+        所有现代浏览器都支持<a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">约束校验 API</a>，这是一系列用于校验表单控件的 JavaScript 方法。
       </li>
-      <li>Feedback messages may utilize the <a href="#browser-defaults">browser defaults</a> (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.</li>
-      <li>You may provide custom validity messages with <code>setCustomValidity</code> in JavaScript.</li>
+      <li>反馈消息可以使用<a href="#browser-defaults">浏览器默认样式</a>（每个浏览器各不相同，且无法通过 CSS 设置样式），也可以使用我们借助额外 HTML 和 CSS 的自定义反馈样式。</li>
+      <li>你可以在 JavaScript 中使用 <code>setCustomValidity</code> 提供自定义的有效性消息。</li>
     </ul>
-    <p>With that in mind, consider the following demos for our custom form validation styles, optional server-side classes, and browser defaults.</p>
-    <h2 id="custom-styles">Custom styles<a class="anchor-link" href="#custom-styles" aria-label="Link to Custom styles"></a></h2>
+    <p>基于以上说明，请查看下面关于我们的自定义表单校验样式、可选的服务端类和浏览器默认样式的演示。</p>
+    <h2 id="custom-styles">自定义样式<a class="anchor-link" href="#custom-styles" aria-label="自定义样式链接"></a></h2>
     <p>
-      For custom Bootstrap form validation messages, you’ll need to add the <code>novalidate</code> boolean attribute to your <code>&lt;form&gt;</code>. This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit
-      button and relay feedback to you. When attempting to submit, you’ll see the <code>:invalid</code> and <code>:valid</code> styles applied to your form controls.
+      要使用 Bootstrap 自定义表单校验消息，你需要为 <code>&lt;form&gt;</code> 添加 <code>novalidate</code> 布尔属性。这会禁用浏览器默认的反馈工具提示，但仍可通过 JavaScript 访问表单校验 API。请尝试提交下面的表单，我们的 JavaScript 会拦截提交按钮并将反馈传达给你。尝试提交时，你会看到 <code>:invalid</code> 和 <code>:valid</code> 样式应用到表单控件上。
     </p>
-    <p>Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for <code>&lt;select&gt;</code>s are only available with <code>.form-select</code>, and not <code>.form-control</code>.</p>
+    <p>自定义反馈样式会应用自定义颜色、边框、聚焦样式和背景图标，以更好地传达反馈。<code>&lt;select&gt;</code> 的背景图标仅在使用 <code>.form-select</code> 时可用，使用 <code>.form-control</code> 时不可用。</p>
     <Example
       code='<form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4">
@@ -119,9 +116,9 @@
 })()"
       lang="javascript"
     />
-    <h2 id="browser-defaults">Browser defaults<a class="anchor-link" href="#browser-defaults" aria-label="Link to Browser defaults"></a></h2>
-    <p>Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p>
-    <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.</p>
+    <h2 id="browser-defaults">浏览器默认样式<a class="anchor-link" href="#browser-defaults" aria-label="浏览器默认样式链接"></a></h2>
+    <p>不想使用自定义校验反馈消息，也不想编写 JavaScript 来改变表单行为？完全没问题，你可以使用浏览器默认样式。请尝试提交下面的表单。根据浏览器和操作系统的不同，你会看到略有差异的反馈样式。</p>
+    <p>虽然这些反馈样式无法通过 CSS 设置，但你仍然可以通过 JavaScript 自定义反馈文本。</p>
     <Example
       code='<form class="row g-3">
   <div class="col-md-4">
@@ -167,10 +164,10 @@
   </div>
 </form>'
     />
-    <h2 id="server-side">Server-side<a class="anchor-link" href="#server-side" aria-label="Link to Server-side"></a></h2>
-    <p>We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with <code>.is-invalid</code> and <code>.is-valid</code>. Note that <code>.invalid-feedback</code> is also supported with these classes.</p>
-    <p>For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using <code>aria-describedby</code> (noting that this attribute allows more than one <code>id</code> to be referenced, in case the field already points to additional form text).</p>
-    <p>To fix <a href="https://github.com/twbs/bootstrap/issues/25110">issues with border radius</a>, input groups require an additional <code>.has-validation</code> class.</p>
+    <h2 id="server-side">服务端<a class="anchor-link" href="#server-side" aria-label="服务端链接"></a></h2>
+    <p>我们推荐使用客户端校验，但如果你需要服务端校验，可以使用 <code>.is-invalid</code> 和 <code>.is-valid</code> 来标记无效和有效的表单字段。请注意，这些类同样支持 <code>.invalid-feedback</code>。</p>
+    <p>对于无效字段，请使用 <code>aria-describedby</code> 确保无效反馈/错误消息与相关表单字段关联（注意，该属性允许引用多个 <code>id</code>，以防该字段已指向其他表单文本）。</p>
+    <p>为了解决<a href="https://github.com/twbs/bootstrap/issues/25110">圆角问题</a>，输入框组需要额外添加 <code>.has-validation</code> 类。</p>
     <Example
       code='<form class="row g-3">
   <div class="col-md-4">
@@ -237,12 +234,12 @@
   </div>
 </form>'
     />
-    <h2 id="supported-elements">Supported elements<a class="anchor-link" href="#supported-elements" aria-label="Link to Supported elements"></a></h2>
-    <p>Validation styles are available for the following form controls and components:</p>
+    <h2 id="supported-elements">支持的元素<a class="anchor-link" href="#supported-elements" aria-label="支持的元素链接"></a></h2>
+    <p>以下表单控件和组件支持校验样式：</p>
     <ul>
-      <li><code>&lt;input&gt;</code>s and <code>&lt;textarea&gt;</code>s with <code>.form-control</code> (including up to one <code>.form-control</code> in input groups)</li>
-      <li><code>&lt;select&gt;</code>s with <code>.form-select</code></li>
-      <li><code>.form-check</code>s</li>
+      <li>带有 <code>.form-control</code> 的 <code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code>（包括输入框组中最多一个 <code>.form-control</code>）</li>
+      <li>带有 <code>.form-select</code> 的 <code>&lt;select&gt;</code></li>
+      <li><code>.form-check</code></li>
     </ul>
     <Example
       code='<form class="was-validated">
@@ -290,10 +287,9 @@
   </div>
 </form>'
     />
-    <h2 id="tooltips">Tooltips<a class="anchor-link" href="#tooltips" aria-label="Link to Tooltips"></a></h2>
+    <h2 id="tooltips">工具提示<a class="anchor-link" href="#tooltips" aria-label="工具提示链接"></a></h2>
     <p>
-      If your form layout allows it, you can swap the <code>.{valid|invalid}-feedback</code> classes for <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in a styled tooltip. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning. In the example below, our column classes have this
-      already, but your project may require an alternative setup.
+      如果表单布局允许，你可以将 <code>.{valid|invalid}-feedback</code> 类换成 <code>.{valid|invalid}-tooltip</code> 类，以样式化的工具提示显示校验反馈。请确保其父元素设置了 <code>position: relative</code>，以便定位工具提示。在下面的示例中，我们的列类已经具备此属性，但你的项目可能需要其他设置。
     </p>
     <Example
       code='<form class="row g-3 needs-validation" novalidate>
@@ -350,50 +346,49 @@
   </div>
 </form>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.3.0" />
-    <p>As part of Bootstrap’s evolving CSS variables approach, forms now use local CSS variables for validation for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
+    <p>作为 Bootstrap 不断演进的 CSS 变量方案的一部分，表单现在使用局部 CSS 变量进行校验，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此仍然支持 Sass 自定义。</p>
     <ScssDocs name="root-form-validation-variables" file="scss/_root.scss" />
-    <p>These variables are also color mode adaptive, meaning they change color while in dark mode.</p>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <p>这些变量还会自适应颜色模式，即在深色模式下会改变颜色。</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="form-feedback-variables" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors-dark" file="scss/_variables-dark.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>Two mixins are combined, through our <a href="#sass-loops">loop</a>, to generate our form validation feedback styles.</p>
+    <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
+    <p>两个 mixin 通过我们的<a href="#sass-loops">循环</a>组合起来，用于生成表单校验反馈样式。</p>
     <ScssDocs name="form-validation-mixins" file="scss/mixins/_forms.scss" />
-    <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
-    <p>This is the validation Sass map from <code>_variables.scss</code>. Override or extend this to generate different or additional states.</p>
+    <h3 id="sass-maps">Sass map<a class="anchor-link" href="#sass-maps" aria-label="Sass map 链接"></a></h3>
+    <p>这是来自 <code>_variables.scss</code> 的校验 Sass map。覆盖或扩展它即可生成不同或额外的状态。</p>
     <ScssDocs name="form-validation-states" file="scss/_variables.scss" />
-    <p>Maps of <code>$form-validation-states</code> can contain three optional parameters to override tooltips and focus styles.</p>
-    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p>Used to iterate over <code>$form-validation-states</code> map values to generate our validation styles. Any modifications to the above Sass map will be reflected in your compiled CSS via this loop.</p>
+    <p><code>$form-validation-states</code> 的 map 可以包含三个可选参数，用于覆盖工具提示和聚焦样式。</p>
+    <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
+    <p>用于遍历 <code>$form-validation-states</code> map 的值来生成校验样式。对上述 Sass map 的任何修改都会通过此循环反映到你编译后的 CSS 中。</p>
     <ScssDocs name="form-validation-states-loop" file="scss/forms/_validation.scss" />
-    <h3 id="customizing">Customizing<a class="anchor-link" href="#customizing" aria-label="Link to Customizing"></a></h3>
+    <h3 id="customizing">自定义<a class="anchor-link" href="#customizing" aria-label="自定义链接"></a></h3>
     <p>
-      Validation states can be customized via Sass with the <code>$form-validation-states</code> map. Located in our <code>_variables.scss</code> file, this Sass map is how we generate the default <code>valid</code>/<code>invalid</code>
-      validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those using custom styles can easily add more complex form feedback.
+      可以通过 Sass 使用 <code>$form-validation-states</code> map 自定义校验状态。该 Sass map 位于我们的 <code>_variables.scss</code> 文件中，我们正是通过它生成默认的 <code>valid</code>/<code>invalid</code> 校验状态。其中包含一个嵌套 map，用于自定义每个状态的颜色、图标、工具提示颜色和聚焦阴影。虽然浏览器不支持其他状态，但使用自定义样式的人可以轻松添加更复杂的表单反馈。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
-      <li><a href="#custom-styles">Custom styles</a></li>
-      <li><a href="#browser-defaults">Browser defaults</a></li>
-      <li><a href="#server-side">Server-side</a></li>
-      <li><a href="#supported-elements">Supported elements</a></li>
-      <li><a href="#tooltips">Tooltips</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
+      <li><a href="#custom-styles">自定义样式</a></li>
+      <li><a href="#browser-defaults">浏览器默认样式</a></li>
+      <li><a href="#server-side">服务端</a></li>
+      <li><a href="#supported-elements">支持的元素</a></li>
+      <li><a href="#tooltips">工具提示</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-mixins">Sass mixins</a></li>
-          <li><a href="#sass-maps">Sass maps</a></li>
-          <li><a href="#sass-loops">Sass loops</a></li>
-          <li><a href="#customizing">Customizing</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-mixins">Sass mixin</a></li>
+          <li><a href="#sass-maps">Sass map</a></li>
+          <li><a href="#sass-loops">Sass 循环</a></li>
+          <li><a href="#customizing">自定义</a></li>
         </ul>
       </li>
     </ul>

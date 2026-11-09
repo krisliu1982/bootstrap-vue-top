@@ -1,39 +1,37 @@
 <template>
   <article class="bd-content">
-    <h1>About Bootstrap</h1>
-    <p>Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.</p>
+    <h1>关于 Bootstrap</h1>
+    <p>进一步了解维护 Bootstrap 的团队、项目的起源与原因，以及如何参与其中。</p>
 
-    <h2 id="team">Team<a class="anchor-link" href="#team" aria-label="Link to Team"></a></h2>
-    <p>Bootstrap is maintained by a <a href="https://github.com/orgs/twbs/people">small team of developers</a> on GitHub. We’re actively looking to grow this team and would love to hear from you if you’re excited about CSS at scale, writing and maintaining vanilla JavaScript plugins, and improving build tooling processes for frontend code.</p>
-    <h2 id="history">History<a class="anchor-link" href="#history" aria-label="Link to History"></a></h2>
-    <p>Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world.</p>
+    <h2 id="team">团队<a class="anchor-link" href="#team" aria-label="团队链接"></a></h2>
+    <p>Bootstrap 由 GitHub 上一个<a href="https://github.com/orgs/twbs/people">小型开发者团队</a>维护。我们正在积极扩充这个团队，如果你对大规模 CSS、编写与维护原生 JavaScript 插件，以及改进前端代码的构建工具流程充满热情，我们非常期待你的加入。</p>
+    <h2 id="history">历史<a class="anchor-link" href="#history" aria-label="历史链接"></a></h2>
+    <p>Bootstrap 最初由 Twitter 的一位设计师和一位开发者创建，如今已成为全球最流行的前端框架和开源项目之一。</p>
     <p>
-      Bootstrap was created at Twitter in mid-2010 by <a href="https://x.com/mdo">@mdo</a> and <a href="https://x.com/fat">@fat</a>. Prior to being an open-sourced framework, Bootstrap was known as <em>Twitter Blueprint</em>. A few months into development, Twitter held its
-      <a href="https://blog.x.com/engineering/en_us/a/2010/hack-week">first Hack Week</a> and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.
+      Bootstrap 于 2010 年中由 <a href="https://x.com/mdo">@mdo</a> 和 <a href="https://x.com/fat">@fat</a> 在 Twitter 创建。在成为开源框架之前，Bootstrap 被称为 <em>Twitter Blueprint</em>。在开发几个月后，Twitter 举办了
+      <a href="https://blog.x.com/engineering/en_us/a/2010/hack-week">首届黑客周</a>，随着各技能水平的开发者无需任何外部指导便纷纷加入，这个项目迅速壮大。在公开发布之前的一年多时间里，它一直是公司内部工具开发的样式指南，并延续至今。
     </p>
     <p>
-      Originally <a href="https://blog.x.com/developer/en_us/a/2011/bootstrap-twitter">released</a> on <time datetime="2011-08-19 11:25">Friday, August 19, 2011</time>, we’ve since had over <a href="https://github.com/twbs/bootstrap/releases">twenty releases</a>, including two major rewrites with v2 and v3. With Bootstrap 2, we added responsive
-      functionality to the entire framework as an optional stylesheet. Building on that with Bootstrap 3, we rewrote the library once more to make it responsive by default with a mobile first approach.
+      它最初于 <time datetime="2011-08-19 11:25">2011 年 8 月 19 日（星期五）</time><a href="https://blog.x.com/developer/en_us/a/2011/bootstrap-twitter">发布</a>，此后我们已经发布了<a href="https://github.com/twbs/bootstrap/releases">二十多个版本</a>，其中包括 v2 和 v3 两次重大重写。在 Bootstrap 2 中，我们以可选样式表的形式为整个框架添加了响应式功能。在 Bootstrap 3 中，我们在此基础之上再次重写了这个库，使其默认就具备响应式能力，并采用移动优先的方法。
     </p>
     <p>
-      With Bootstrap 4, we once again rewrote the project to account for two key architectural changes: a migration to Sass and the move to CSS’s flexbox. Our intention is to help in a small way to move the web development community forward by pushing for newer CSS properties, fewer dependencies, and new technologies across more modern browsers.
+      在 Bootstrap 4 中，我们再次重写了项目，以应对两项关键的架构变化：迁移到 Sass 以及转向 CSS 的 flexbox。我们的初衷是推动采用更新的 CSS 属性、更少的依赖项，并让新技术在更多现代浏览器中普及，从而以微薄之力帮助 Web 开发社区向前迈进。
     </p>
-    <p>Our latest release, Bootstrap 5, focuses on improving v4’s codebase with as few major breaking changes as possible. We improved existing features and components, removed support for older browsers, dropped jQuery for regular JavaScript, and embraced more future-friendly technologies like CSS custom properties as part of our tooling.</p>
-    <h2 id="get-involved">Get involved<a class="anchor-link" href="#get-involved" aria-label="Link to Get involved"></a></h2>
+    <p>我们最新的版本 Bootstrap 5 致力于在尽可能少引入重大破坏性更改的前提下改进 v4 的代码库。我们改进了现有功能和组件，移除了对旧版浏览器的支持，用原生 JavaScript 替代了 jQuery，并拥抱了 CSS 自定义属性等更具前瞻性的技术，将其作为我们工具链的一部分。</p>
+    <h2 id="get-involved">参与其中<a class="anchor-link" href="#get-involved" aria-label="参与其中链接"></a></h2>
     <p>
-      Get involved with Bootstrap development by
-      <a href="https://github.com/twbs/bootstrap/issues/new/choose">opening an issue</a> or submitting a pull request. Read our <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">contributing guidelines</a> for information on how we develop.
+      通过<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a> 或提交 pull request 来参与 Bootstrap 的开发。阅读我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">贡献指南</a>，了解我们的开发方式。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#history">History</a></li>
+      <li><a href="#team">团队</a></li>
+      <li><a href="#history">历史</a></li>
       <li>
-        <a href="#get-involved">Get involved</a>
+        <a href="#get-involved">参与其中</a>
       </li>
     </ul>
   </nav>

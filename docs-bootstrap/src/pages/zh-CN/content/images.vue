@@ -1,20 +1,20 @@
 <template>
   <article class="bd-content">
-    <h1>Images</h1>
-    <p>Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes.</p>
+    <h1>图片</h1>
+    <p>关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。</p>
 
-    <h2 id="responsive-images">Responsive images<a class="anchor-link" href="#responsive-images" aria-label="Link to Responsive images"></a></h2>
-    <p>Images in Bootstrap are made responsive with <code>.img-fluid</code>. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales with the parent width.</p>
-    <ExampleCustom code='<img src="..." class="img-fluid" alt="...">'><Placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="Responsive image" /> </ExampleCustom>
-    <h2 id="image-thumbnails">Image thumbnails<a class="anchor-link" href="#image-thumbnails" aria-label="Link to Image thumbnails"></a></h2>
+    <h2 id="responsive-images">响应式图片<a class="anchor-link" href="#responsive-images" aria-label="响应式图片链接"></a></h2>
+    <p>Bootstrap 中的图片通过 <code>.img-fluid</code> 实现响应式。这会为图片应用 <code>max-width: 100%;</code> 和 <code>height: auto;</code>，使其随父级宽度缩放。</p>
+    <ExampleCustom code='<img src="..." class="img-fluid" alt="...">'><Placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="响应式图片" /> </ExampleCustom>
+    <h2 id="image-thumbnails">图片缩略图<a class="anchor-link" href="#image-thumbnails" aria-label="图片缩略图链接"></a></h2>
 
-    <p>In addition to our <a href="/utilities/borders">border-radius utilities</a>, you can use <code>.img-thumbnail</code> to give an image a rounded 1px border appearance.</p>
+    <p>除了我们的<a href="/utilities/borders">圆角工具类</a>之外，你还可以使用 <code>.img-thumbnail</code> 为图片赋予带有 1px 圆角边框的外观。</p>
 
-    <ExampleCustom code='<img src="..." class="img-thumbnail" alt="...">'><Placeholder width="200" height="200" class="img-thumbnail" title="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" /> </ExampleCustom>
-    <h2 id="aligning-images">Aligning images<a class="anchor-link" href="#aligning-images" aria-label="Link to Aligning images"></a></h2>
+    <ExampleCustom code='<img src="..." class="img-thumbnail" alt="...">'><Placeholder width="200" height="200" class="img-thumbnail" title="一张带有白色边框的通用方形占位图片，使其看起来像是用老式拍立得相机拍摄的照片" /> </ExampleCustom>
+    <h2 id="aligning-images">对齐图片<a class="anchor-link" href="#aligning-images" aria-label="对齐图片链接"></a></h2>
 
     <p>
-      Align images with the <a href="/utilities/float">helper float classes</a> or <a href="/utilities/text#text-alignment">text alignment classes</a>. <code>block</code>-level images can be centered using <a href="/utilities/spacing#horizontal-centering">the <code>.mx-auto</code> margin utility class</a>.
+      使用<a href="/utilities/float">浮动辅助类</a>或<a href="/utilities/text#text-alignment">文本对齐类</a>来对齐图片。<code>block</code> 级别的图片可以使用<a href="/utilities/spacing#horizontal-centering"><code>.mx-auto</code> 外边距工具类</a>来居中。
     </p>
 
     <ExampleCustom
@@ -32,8 +32,8 @@
       ><div class="text-center">
         <Placeholder width="200" height="200" class="rounded" /></div
     ></ExampleCustom>
-    <h2 id="picture">Picture<a class="anchor-link" href="#picture" aria-label="Link to Picture"></a></h2>
-    <p>If you are using the <code>&lt;picture&gt;</code> element to specify multiple <code>&lt;source&gt;</code> elements for a specific <code>&lt;img&gt;</code>, make sure to add the <code>.img-*</code> classes to the <code>&lt;img&gt;</code> and not to the <code>&lt;picture&gt;</code> tag.</p>
+    <h2 id="picture">Picture<a class="anchor-link" href="#picture" aria-label="Picture 链接"></a></h2>
+    <p>如果你使用 <code>&lt;picture&gt;</code> 元素为特定的 <code>&lt;img&gt;</code> 指定多个 <code>&lt;source&gt;</code> 元素，请确保将 <code>.img-*</code> 类添加到 <code>&lt;img&gt;</code> 上，而不是 <code>&lt;picture&gt;</code> 标签上。</p>
     <CodeWrapper
       code='&lt;picture&gt;
   &lt;source srcset="..." type="image/svg+xml"&gt;
@@ -41,24 +41,24 @@
 &lt;/picture&gt;'
       lang="html"
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Variables are available for image thumbnails.</p>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>图片缩略图提供了可用的变量。</p>
     <ScssDocs name="thumbnail-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#responsive-images">Responsive images</a></li>
-      <li><a href="#image-thumbnails">Image thumbnails</a></li>
-      <li><a href="#aligning-images">Aligning images</a></li>
+      <li><a href="#responsive-images">响应式图片</a></li>
+      <li><a href="#image-thumbnails">图片缩略图</a></li>
+      <li><a href="#aligning-images">对齐图片</a></li>
       <li><a href="#picture">Picture</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

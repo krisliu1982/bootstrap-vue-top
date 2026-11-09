@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Form controls</h1>
-    <p>Give textual form controls like `&lt;input&gt;`s and `&lt;textarea&gt;`s an upgrade with custom styles, sizing, focus states, and more.</p>
+    <h1>表单控件</h1>
+    <p>通过自定义样式、尺寸、聚焦状态等，升级 `&lt;input&gt;` 和 `&lt;textarea&gt;` 等文本表单控件。</p>
 
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>Form controls are styled with a mix of Sass and CSS variables, allowing them to adapt to color modes and support any customization method.</p>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
+    <p>表单控件使用 Sass 和 CSS 变量组合进行样式设置，使其能够适配颜色模式并支持任何自定义方式。</p>
     <Example
       code='<div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -15,22 +15,21 @@
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>'
     />
-    <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>Set heights using classes like <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+    <h2 id="sizing">尺寸<a class="anchor-link" href="#sizing" aria-label="尺寸链接"></a></h2>
+    <p>使用 <code>.form-control-lg</code> 和 <code>.form-control-sm</code> 等类设置高度。</p>
     <Example
       code='<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
 <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">'
     />
-    <h2 id="form-text">Form text<a class="anchor-link" href="#form-text" aria-label="Link to Form text"></a></h2>
-    <p>Block-level or inline-level form text can be created using <code>.form-text</code>.</p>
+    <h2 id="form-text">表单文本<a class="anchor-link" href="#form-text" aria-label="表单文本链接"></a></h2>
+    <p>可以使用 <code>.form-text</code> 创建块级或行内级表单文本。</p>
     <Callout type="warning">
       <p>
-        Form text should be explicitly associated with the form control it relates to using the
-        <code>aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen readers—will announce this form text when the user focuses or enters the control.
+        应使用 <code>aria-describedby</code> 属性将表单文本与其相关的表单控件显式关联起来。这样可以确保辅助技术（例如屏幕阅读器）在用户聚焦或进入该控件时读出这段表单文本。
       </p>
     </Callout>
-    <p>Form text below inputs can be styled with <code>.form-text</code>. If a block-level element will be used, a top margin is added for easy spacing from the inputs above.</p>
+    <p>输入框下方的表单文本可使用 <code>.form-text</code> 设置样式。如果使用块级元素，会添加上外边距，以便与上方的输入框轻松留出间距。</p>
     <Example
       code='<label for="inputPassword5" class="form-label">Password</label>
 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
@@ -38,7 +37,7 @@
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </div>'
     />
-    <p>Inline text can use any typical inline HTML element (be it a <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code>, or something else) with nothing more than the <code>.form-text</code> class.</p>
+    <p>行内文本可以使用任何常规的行内 HTML 元素（如 <code>&lt;span&gt;</code>、<code>&lt;small&gt;</code> 等），只需搭配 <code>.form-text</code> 类即可。</p>
     <Example
       code='<div class="row g-3 align-items-center">
   <div class="col-auto">
@@ -54,17 +53,17 @@
   </div>
 </div>'
     />
-    <h2 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h2>
-    <p>Add the <code>disabled</code> boolean attribute on an input to give it a grayed out appearance, remove pointer events, and prevent focusing.</p>
+    <h2 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h2>
+    <p>在输入框上添加 <code>disabled</code> 布尔属性，可使其呈现灰色外观、移除指针事件并阻止获得焦点。</p>
     <Example
       code='<input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
 <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>'
     />
-    <h2 id="readonly">Readonly<a class="anchor-link" href="#readonly" aria-label="Link to Readonly"></a></h2>
-    <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. <code>readonly</code> inputs can still be focused and selected, while <code>disabled</code> inputs cannot.</p>
+    <h2 id="readonly">只读<a class="anchor-link" href="#readonly" aria-label="只读链接"></a></h2>
+    <p>在输入框上添加 <code>readonly</code> 布尔属性，可防止修改输入框的值。<code>readonly</code> 输入框仍然可以获得焦点并被选中，而 <code>disabled</code> 输入框则不能。</p>
     <Example code='<input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>' />
-    <h2 id="readonly-plain-text">Readonly plain text<a class="anchor-link" href="#readonly-plain-text" aria-label="Link to Readonly plain text"></a></h2>
-    <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, replace <code>.form-control</code> with <code>.form-control-plaintext</code> to remove the default form field styling and preserve the correct <code>margin</code> and <code>padding</code>.</p>
+    <h2 id="readonly-plain-text">只读纯文本<a class="anchor-link" href="#readonly-plain-text" aria-label="只读纯文本链接"></a></h2>
+    <p>如果你希望表单中的 <code>&lt;input readonly&gt;</code> 元素以纯文本样式呈现，请将 <code>.form-control</code> 替换为 <code>.form-control-plaintext</code>，以移除默认的表单字段样式，同时保留正确的 <code>margin</code> 和 <code>padding</code>。</p>
     <Example
       code='<div class="mb-3 row">
   <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
@@ -93,7 +92,7 @@
   </div>
 </form>'
     />
-    <h2 id="file-input">File input<a class="anchor-link" href="#file-input" aria-label="Link to File input"></a></h2>
+    <h2 id="file-input">文件输入框<a class="anchor-link" href="#file-input" aria-label="文件输入框链接"></a></h2>
     <Example
       code='<div class="mb-3">
   <label for="formFile" class="form-label">Default file input example</label>
@@ -116,18 +115,17 @@
   <input class="form-control form-control-lg" id="formFileLg" type="file">
 </div>'
     />
-    <h2 id="color">Color<a class="anchor-link" href="#color" aria-label="Link to Color"></a></h2>
-    <p>Set the <code>type=&quot;color&quot;</code> and add <code>.form-control-color</code> to the <code>&lt;input&gt;</code>. We use the modifier class to set fixed <code>height</code>s and override some inconsistencies between browsers.</p>
+    <h2 id="color">颜色<a class="anchor-link" href="#color" aria-label="颜色链接"></a></h2>
+    <p>在 <code>&lt;input&gt;</code> 上设置 <code>type=&quot;color&quot;</code> 并添加 <code>.form-control-color</code>。我们使用这个修饰类来设置固定的 <code>height</code>，并覆盖浏览器之间的一些不一致之处。</p>
     <Example
       code='<label for="exampleColorInput" class="form-label">Color picker</label>
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">'
     />
-    <h2 id="datalists">Datalists<a class="anchor-link" href="#datalists" aria-label="Link to Datalists"></a></h2>
+    <h2 id="datalists">数据列表<a class="anchor-link" href="#datalists" aria-label="数据列表链接"></a></h2>
     <p>
-      Datalists allow you to create a group of <code>&lt;option&gt;</code>s that can be accessed (and autocompleted) from within an <code>&lt;input&gt;</code>. These are similar to <code>&lt;select&gt;</code> elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for
-      <code>&lt;datalist&gt;</code> elements, their styling is inconsistent at best.
+      数据列表允许你在 <code>&lt;input&gt;</code> 中访问（并自动补全）一组 <code>&lt;option&gt;</code>。它们与 <code>&lt;select&gt;</code> 元素类似，但菜单样式的限制和差异更多。虽然大多数浏览器和操作系统都对 <code>&lt;datalist&gt;</code> 元素提供了一定支持，但它们的样式充其量也只是不一致的。
     </p>
-    <p>Learn more about <a href="https://caniuse.com/datalist">support for datalist elements</a>.</p>
+    <p>进一步了解<a href="https://caniuse.com/datalist">数据列表元素的支持情况</a>。</p>
     <Example
       code='<label for="exampleDataList" class="form-label">Datalist example</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
@@ -139,33 +137,33 @@
   <option value="Chicago">
 </datalist>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p><code>$input-*</code> are shared across most of our form controls (and not buttons).</p>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p><code>$input-*</code> 在我们的大多数表单控件（不包括按钮）之间共享。</p>
     <ScssDocs name="form-input-variables" file="scss/_variables.scss" />
-    <p><code>$form-label-*</code> and <code>$form-text-*</code> are for our <code>&lt;label&gt;</code>s and <code>.form-text</code> component.</p>
+    <p><code>$form-label-*</code> 和 <code>$form-text-*</code> 用于我们的 <code>&lt;label&gt;</code> 和 <code>.form-text</code> 组件。</p>
     <ScssDocs name="form-label-variables" file="scss/_variables.scss" /><ScssDocs name="form-text-variables" file="scss/_variables.scss" />
-    <p><code>$form-file-*</code> are for file input.</p>
+    <p><code>$form-file-*</code> 用于文件输入框。</p>
     <ScssDocs name="form-file-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#example">Example</a></li>
-      <li><a href="#sizing">Sizing</a></li>
-      <li><a href="#form-text">Form text</a></li>
-      <li><a href="#disabled">Disabled</a></li>
-      <li><a href="#readonly">Readonly</a></li>
-      <li><a href="#readonly-plain-text">Readonly plain text</a></li>
-      <li><a href="#file-input">File input</a></li>
-      <li><a href="#color">Color</a></li>
-      <li><a href="#datalists">Datalists</a></li>
+      <li><a href="#example">示例</a></li>
+      <li><a href="#sizing">尺寸</a></li>
+      <li><a href="#form-text">表单文本</a></li>
+      <li><a href="#disabled">禁用状态</a></li>
+      <li><a href="#readonly">只读</a></li>
+      <li><a href="#readonly-plain-text">只读纯文本</a></li>
+      <li><a href="#file-input">文件输入框</a></li>
+      <li><a href="#color">颜色</a></li>
+      <li><a href="#datalists">数据列表</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

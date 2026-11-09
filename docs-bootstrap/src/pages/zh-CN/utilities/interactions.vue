@@ -1,50 +1,49 @@
 <template>
   <article class="bd-content">
-    <h1>Interactions</h1>
-    <p>Utility classes that change how users interact with contents of a website.</p>
+    <h1>交互</h1>
+    <p>用于更改用户与网站内容交互方式的工具类。</p>
 
-    <h2 id="text-selection">Text selection<a class="anchor-link" href="#text-selection" aria-label="Link to Text selection"></a></h2>
-    <p>Change the way in which the content is selected when the user interacts with it.</p>
+    <h2 id="text-selection">文本选择<a class="anchor-link" href="#text-selection" aria-label="文本选择链接"></a></h2>
+    <p>更改用户与内容交互时选择内容的方式。</p>
     <Example
       code='<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
 <p class="user-select-auto">This paragraph has default select behavior.</p>
 <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>'
     />
-    <h2 id="pointer-events">Pointer events<a class="anchor-link" href="#pointer-events" aria-label="Link to Pointer events"></a></h2>
-    <p>Bootstrap provides <code>.pe-none</code> and <code>.pe-auto</code> classes to prevent or add element interactions.</p>
+    <h2 id="pointer-events">指针事件<a class="anchor-link" href="#pointer-events" aria-label="指针事件链接"></a></h2>
+    <p>Bootstrap 提供了 <code>.pe-none</code> 和 <code>.pe-auto</code> 类，用于阻止或添加元素交互。</p>
     <Example
       code='<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
 <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
 <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>'
     />
     <p>
-      The <code>.pe-none</code> class (and the <code>pointer-events</code> CSS property it sets) only prevents interactions with a pointer (mouse, stylus, touch). Links and controls with <code>.pe-none</code> are, by default, still focusable and actionable for keyboard users. To ensure that they are completely neutralized even for keyboard users,
-      you may need to add further attributes such as <code>tabindex=&quot;-1&quot;</code> (to prevent them from receiving keyboard focus) and <code>aria-disabled=&quot;true&quot;</code> (to convey the fact they are effectively disabled to assistive technologies), and possibly use JavaScript to completely prevent them from being actionable.
+      <code>.pe-none</code> 类（及其设置的 <code>pointer-events</code> CSS 属性）只会阻止与指针（鼠标、触控笔、触摸）的交互。带有 <code>.pe-none</code> 的链接和控件默认仍然可供键盘用户聚焦和操作。要确保即使对键盘用户也完全失效，你可能需要添加额外的属性，例如 <code>tabindex=&quot;-1&quot;</code>（阻止它们获得键盘焦点）和 <code>aria-disabled=&quot;true&quot;</code>（向辅助技术传达它们实际上已被禁用的信息），并且可能需要使用 JavaScript 来完全阻止其可操作性。
     </p>
-    <p>If possible, the simpler solution is:</p>
+    <p>如果可能的话，更简单的解决方案是：</p>
     <ul>
-      <li>For form controls, add the <code>disabled</code> HTML attribute.</li>
-      <li>For links, remove the <code>href</code> attribute, making it a non-interactive anchor or placeholder link.</li>
+      <li>对于表单控件，添加 <code>disabled</code> HTML 属性。</li>
+      <li>对于链接，移除 <code>href</code> 属性，使其成为不可交互的锚点或占位链接。</li>
     </ul>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Interaction utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      交互工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-interaction" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#text-selection">Text selection</a></li>
-      <li><a href="#pointer-events">Pointer events</a></li>
+      <li><a href="#text-selection">文本选择</a></li>
+      <li><a href="#pointer-events">指针事件</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

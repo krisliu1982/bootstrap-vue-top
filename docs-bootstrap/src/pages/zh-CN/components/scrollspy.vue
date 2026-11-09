@@ -1,42 +1,41 @@
 <template>
   <article class="bd-content">
-    <h1>Scrollspy</h1>
-    <p>Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p>
+    <h1>滚动监听</h1>
+    <p>根据滚动位置自动更新 Bootstrap 导航或列表组组件，以指示视口中当前处于活动状态的链接。</p>
 
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
-      Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/components/navs-tabs">nav component</a> or
-      <a href="/components/list-group">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.
+      当锚点的 <code>href</code> 所引用的 <code>id</code> 对应元素滚动进入视图时，滚动监听会切换锚点（<code>&lt;a&gt;</code>）元素上的 <code>.active</code> 类。滚动监听最适合与 Bootstrap 的 <a href="/components/navs-tabs">导航组件</a>或
+      <a href="/components/list-group">列表组</a>配合使用，但它也可用于当前页面中的任何锚点元素。它的工作方式如下。
     </p>
     <ul>
       <li>
         <p>
-          To start, scrollspy requires two things: a navigation, list group, or a simple set of links, plus a scrollable container. The scrollable container can be the
-          <code>&lt;body&gt;</code> or a custom element with a set <code>height</code> and <code>overflow-y: scroll</code>.
+          首先，滚动监听需要两样东西：一个导航、列表组或一组简单的链接，以及一个可滚动容器。可滚动容器可以是
+          <code>&lt;body&gt;</code>，也可以是设置了 <code>height</code> 和 <code>overflow-y: scroll</code> 的自定义元素。
         </p>
       </li>
       <li>
         <p>
-          On the scrollable container, add <code>data-bs-spy=&quot;scroll&quot;</code> and <code>data-bs-target=&quot;#navId&quot;</code> where <code>navId</code> is the unique <code>id</code> of the associated navigation. If there is no focusable element inside the element, be sure to also include a <code>tabindex=&quot;0&quot;</code> to ensure
-          keyboard access.
+          在可滚动容器上添加 <code>data-bs-spy=&quot;scroll&quot;</code> 和 <code>data-bs-target=&quot;#navId&quot;</code>，其中 <code>navId</code> 是所关联导航的唯一 <code>id</code>。如果元素内部没有可聚焦元素，请务必同时包含 <code>tabindex=&quot;0&quot;</code> 以确保键盘可访问性。
         </p>
       </li>
       <li>
         <p>
-          As you scroll the “spied” container, an <code>.active</code> class is added and removed from anchor links within the associated navigation. Links must have resolvable <code>id</code> targets, otherwise they’re ignored. For example, a <code>&lt;a href=&quot;#home&quot;&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like
+          当你滚动被“监视”的容器时，关联导航中的锚点链接会添加或移除 <code>.active</code> 类。链接必须具有可解析的 <code>id</code> 目标，否则将被忽略。例如，<code>&lt;a href=&quot;#home&quot;&gt;home&lt;/a&gt;</code> 必须对应 DOM 中的某个元素，如
           <code>&lt;div id=&quot;home&quot;&gt;&lt;/div&gt;</code>
         </p>
       </li>
       <li>
         <p>
-          Target elements that are not visible will be ignored. See the
-          <a href="#non-visible-elements">Non-visible elements</a> section below.
+          不可见的目标元素将被忽略。请参阅下面的
+          <a href="#non-visible-elements">不可见元素</a>部分。
         </p>
       </li>
     </ul>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <h3 id="navbar">Navbar<a class="anchor-link" href="#navbar" aria-label="Link to Navbar"></a></h3>
-    <p>Scroll the area below the navbar and watch the active class change. Open the dropdown menu and watch the dropdown items be highlighted as well.</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <h3 id="navbar">导航栏<a class="anchor-link" href="#navbar" aria-label="导航栏链接"></a></h3>
+    <p>滚动导航栏下方的区域，观察活动类的变化。打开下拉菜单，观察下拉菜单项也会被高亮显示。</p>
     <Example
       :showMarkup="false"
       code='<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 rounded-2">
@@ -107,8 +106,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
-    <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
+    <h3 id="nested-nav">嵌套导航<a class="anchor-link" href="#nested-nav" aria-label="嵌套导航链接"></a></h3>
+    <p>滚动监听也适用于嵌套的 <code>.nav</code>。如果嵌套的 <code>.nav</code> 处于 <code>.active</code> 状态，它的父级也会处于 <code>.active</code> 状态。滚动导航栏旁边的区域，观察活动类的变化。</p>
     <Example
       :showMarkup="false"
       code='<div class="row">
@@ -226,8 +225,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="list-group">List group<a class="anchor-link" href="#list-group" aria-label="Link to List group"></a></h3>
-    <p>Scrollspy also works with <code>.list-group</code>s. Scroll the area next to the list group and watch the active class change.</p>
+    <h3 id="list-group">列表组<a class="anchor-link" href="#list-group" aria-label="列表组链接"></a></h3>
+    <p>滚动监听也适用于 <code>.list-group</code>。滚动列表组旁边的区域，观察活动类的变化。</p>
     <Example
       :showMarkup="false"
       code='<div class="row">
@@ -279,8 +278,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
-    <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current articleEl. Scroll the area and watch the <code>.active</code> class change.</p>
+    <h3 id="simple-anchors">简单锚点<a class="anchor-link" href="#simple-anchors" aria-label="简单锚点链接"></a></h3>
+    <p>滚动监听并不限于导航组件和列表组，它适用于当前 articleEl 中的任何 <code>&lt;a&gt;</code> 锚点元素。滚动该区域，观察 <code>.active</code> 类的变化。</p>
     <Example
       :showMarkup="false"
       code='<div class="row">
@@ -338,10 +337,10 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="non-visible-elements">Non-visible elements<a class="anchor-link" href="#non-visible-elements" aria-label="Link to Non-visible elements"></a></h2>
+    <h2 id="non-visible-elements">不可见元素<a class="anchor-link" href="#non-visible-elements" aria-label="不可见元素链接"></a></h2>
     <p>
-      Target elements that aren’t visible will be ignored and their corresponding nav items won’t receive an
-      <code>.active</code> class. Scrollspy instances initialized in a non-visible wrapper will ignore all target elements. Use the <code>refresh</code> method to check for observable elements once the wrapper becomes visible.
+      不可见的目标元素将被忽略，其对应的导航项也不会获得
+      <code>.active</code> 类。在不可见包裹元素中初始化的滚动监听实例将忽略所有目标元素。一旦包裹元素变得可见，请使用 <code>refresh</code> 方法来检查可观察的元素。
     </p>
     <CodeWrapper
       code='document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
@@ -354,11 +353,11 @@
 '
       lang="javascript"
     />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
-    <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
+    <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
     <p>
-      To easily add scrollspy behavior to your topbar navigation, add <code>data-bs-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-bs-target</code> attribute with the <code>id</code> or class name of the parent element of any Bootstrap
-      <code>.nav</code> component.
+      要为顶部导航栏轻松添加滚动监听行为，请为你想要监视的元素（通常最典型的是 <code>&lt;body&gt;</code>）添加 <code>data-bs-spy=&quot;scroll&quot;</code>。然后添加 <code>data-bs-target</code> 属性，其值为任意 Bootstrap
+      <code>.nav</code> 组件父元素的 <code>id</code> 或类名。
     </p>
     <CodeWrapper
       code='&lt;body data-bs-spy="scroll" data-bs-target="#navbar-example"&gt;
@@ -372,7 +371,7 @@
 &lt;/body&gt;'
       lang="html"
     />
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
     <CodeWrapper
       code="const scrollSpy = new bootstrap.ScrollSpy(articleEl.body, {
   target: &#39;#navbar-example&#39;
@@ -380,88 +379,88 @@
 "
       lang="javascript"
     />
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>rootMargin</code></td>
-            <td>string</td>
+            <td>字符串</td>
             <td><code>0px 0px -25%</code></td>
             <td>
-              Intersection Observer
+              计算滚动位置时使用的 Intersection Observer
               <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">rootMargin</a>
-              valid units, when calculating scroll position.
+              有效单位。
             </td>
           </tr>
           <tr>
             <td><code>smoothScroll</code></td>
-            <td>boolean</td>
+            <td>布尔值</td>
             <td><code>false</code></td>
-            <td>Enables smooth scrolling when a user clicks on a link that refers to ScrollSpy observables.</td>
+            <td>当用户点击指向 ScrollSpy 可观察元素的链接时，启用平滑滚动。</td>
           </tr>
           <tr>
             <td><code>target</code></td>
-            <td>string, DOM element</td>
+            <td>字符串、DOM 元素</td>
             <td><code>null</code></td>
-            <td>Specifies element to apply Scrollspy plugin.</td>
+            <td>指定要应用滚动监听插件的元素。</td>
           </tr>
           <tr>
             <td><code>threshold</code></td>
-            <td>array</td>
+            <td>数组</td>
             <td><code>[0.1, 0.5, 1]</code></td>
             <td>
-              <code>IntersectionObserver</code>
+              计算滚动位置时使用的 <code>IntersectionObserver</code>
               <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a>
-              valid input, when calculating scroll position.
+              有效输入。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <Callout type="warning">
-      <p><strong>Deprecated Options</strong></p>
-      <p>Up until v5.1.3 we were using <code>offset</code> &amp; <code>method</code> options, which are now deprecated and replaced by <code>rootMargin</code>. To keep backwards compatibility, we will continue to parse a given <code>offset</code> to <code>rootMargin</code>, but this feature will be removed in <strong>v6</strong>.</p>
+      <p><strong>已弃用的选项</strong></p>
+      <p>直到 v5.1.3，我们一直使用 <code>offset</code> 和 <code>method</code> 选项，它们现在已被弃用并替换为 <code>rootMargin</code>。为保持向后兼容，我们将继续把给定的 <code>offset</code> 解析为 <code>rootMargin</code>，但此功能将在 <strong>v6</strong> 中移除。</p>
     </Callout>
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s scrollspy. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的滚动监听。（移除 DOM 元素上存储的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td><em>Static</em> method to get the scrollspy instance associated with a DOM element.</td>
+            <td><em>静态</em>方法，用于获取与某个 DOM 元素关联的滚动监听实例。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td><em>Static</em> method to get the scrollspy instance associated with a DOM element, or to create a new one in case it wasn’t initialized.</td>
+            <td><em>静态</em>方法，用于获取与某个 DOM 元素关联的滚动监听实例，如果尚未初始化，则创建一个新实例。</td>
           </tr>
           <tr>
             <td><code>refresh</code></td>
-            <td>When adding or removing elements in the DOM, you’ll need to call the refresh method.</td>
+            <td>在 DOM 中添加或移除元素时，你需要调用 refresh 方法。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Here’s an example using the refresh method:</p>
+    <p>以下是一个使用 refresh 方法的示例：</p>
     <CodeWrapper
       code='const dataSpyList = document.querySelectorAll(&#39;[data-bs-spy="scroll"]&#39;)
 dataSpyList.forEach(dataSpyEl =&gt; {
@@ -470,19 +469,19 @@ dataSpyList.forEach(dataSpyEl =&gt; {
 '
       lang="javascript"
     />
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event</th>
-            <th>Description</th>
+            <th>事件</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>activate.bs.scrollspy</code></td>
-            <td>This event fires on the scroll element whenever an anchor is activated by the scrollspy.</td>
+            <td>当滚动监听激活某个锚点时，会在滚动元素上触发此事件。</td>
           </tr>
         </tbody>
       </table>
@@ -498,28 +497,28 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#navbar">Navbar</a></li>
-          <li><a href="#nested-nav">Nested nav</a></li>
-          <li><a href="#list-group">List group</a></li>
-          <li><a href="#simple-anchors">Simple anchors</a></li>
+          <li><a href="#navbar">导航栏</a></li>
+          <li><a href="#nested-nav">嵌套导航</a></li>
+          <li><a href="#list-group">列表组</a></li>
+          <li><a href="#simple-anchors">简单锚点</a></li>
         </ul>
       </li>
-      <li><a href="#non-visible-elements">Non-visible elements</a></li>
+      <li><a href="#non-visible-elements">不可见元素</a></li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#via-data-attributes">Via data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#via-data-attributes">通过 data 属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

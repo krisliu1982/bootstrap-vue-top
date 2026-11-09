@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Button group</h1>
-    <p>Group a series of buttons together on a single line or stack them in a vertical column.</p>
+    <h1>按钮组</h1>
+    <p>将一系列按钮组合在同一行中，或将它们堆叠成一列。</p>
 
-    <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
-    <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+    <h2 id="basic-example">基本示例<a class="anchor-link" href="#basic-example" aria-label="基本示例链接"></a></h2>
+    <p>将一系列带有 <code>.btn</code> 的按钮包裹在 <code>.btn-group</code> 中。</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-primary">Left</button>
@@ -14,13 +14,13 @@
     />
     <Callout>
       <p>
-        Button groups require an appropriate <code>role</code> attribute and explicit label to ensure assistive technologies like screen readers identify buttons as grouped and announce them. Use <code>role=&quot;group&quot;</code> for button groups or <code>role=&quot;toolbar&quot;</code> for button toolbars. Then use <code>aria-label</code> or
-        <code>aria-labelledby</code> to label them.
+        按钮组需要合适的 <code>role</code> 属性和明确的标签，以确保屏幕阅读器等辅助技术能够识别按钮已分组并进行播报。按钮组请使用 <code>role=&quot;group&quot;</code>，按钮工具栏请使用 <code>role=&quot;toolbar&quot;</code>。然后使用 <code>aria-label</code> 或
+        <code>aria-labelledby</code> 为它们添加标签。
       </p>
     </Callout>
     <p>
-      These classes can also be added to groups of links, as an alternative to the
-      <a href="/components/navs-tabs"><code>.nav</code> navigation components</a>.
+      这些类也可以添加到链接组中，作为
+      <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
     </p>
     <Example
       code='<div class="btn-group">
@@ -29,7 +29,7 @@
   <a href="#" class="btn btn-primary">Link</a>
 </div>'
     />
-    <h2 id="mixed-styles">Mixed styles<a class="anchor-link" href="#mixed-styles" aria-label="Link to Mixed styles"></a></h2>
+    <h2 id="mixed-styles">混合样式<a class="anchor-link" href="#mixed-styles" aria-label="混合样式链接"></a></h2>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic mixed styles example">
   <button type="button" class="btn btn-danger">Left</button>
@@ -37,7 +37,7 @@
   <button type="button" class="btn btn-success">Right</button>
 </div>'
     />
-    <h2 id="outlined-styles">Outlined styles<a class="anchor-link" href="#outlined-styles" aria-label="Link to Outlined styles"></a></h2>
+    <h2 id="outlined-styles">轮廓样式<a class="anchor-link" href="#outlined-styles" aria-label="轮廓样式链接"></a></h2>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic outlined example">
   <button type="button" class="btn btn-outline-primary">Left</button>
@@ -45,8 +45,8 @@
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>'
     />
-    <h2 id="checkbox-and-radio-button-groups">Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a></h2>
-    <p>Combine button-like checkbox and radio <a href="/forms/checks-radios">toggle buttons</a> into a seamless looking button group.</p>
+    <h2 id="checkbox-and-radio-button-groups">复选框和单选按钮组<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="复选框和单选按钮组链接"></a></h2>
+    <p>将按钮式的复选框和单选<a href="/forms/checks-radios">切换按钮</a>组合成外观无缝的按钮组。</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
@@ -71,8 +71,8 @@
   <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
 </div>'
     />
-    <h2 id="button-toolbar">Button toolbar<a class="anchor-link" href="#button-toolbar" aria-label="Link to Button toolbar"></a></h2>
-    <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
+    <h2 id="button-toolbar">按钮工具栏<a class="anchor-link" href="#button-toolbar" aria-label="按钮工具栏链接"></a></h2>
+    <p>将多组按钮组合成按钮工具栏，以构建更复杂的组件。可根据需要使用工具类来为组、按钮等添加间距。</p>
     <Example
       code='<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
@@ -91,7 +91,7 @@
   </div>
 </div>'
     />
-    <p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need some utilities though to space things properly.</p>
+    <p>你可以随意在工具栏中混合使用输入框组和按钮组。与上面的示例类似，你很可能需要使用一些工具类来正确设置间距。</p>
     <Example
       code='<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
@@ -119,8 +119,8 @@
   </div>
 </div>'
     />
-    <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
+    <h2 id="sizing">尺寸<a class="anchor-link" href="#sizing" aria-label="尺寸链接"></a></h2>
+    <p>无需为组内的每个按钮应用按钮尺寸类，只需为每个 <code>.btn-group</code> 添加 <code>.btn-group-*</code>，嵌套多个组时也要为每个组添加。</p>
     <Example
       code='<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
   <button type="button" class="btn btn-outline-primary">Left</button>
@@ -140,8 +140,8 @@
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>'
     />
-    <h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
-    <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+    <h2 id="nesting">嵌套<a class="anchor-link" href="#nesting" aria-label="嵌套链接"></a></h2>
+    <p>当你希望在一系列按钮中混合下拉菜单时，可将一个 <code>.btn-group</code> 放入另一个 <code>.btn-group</code> 中。</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-primary">1</button>
@@ -158,10 +158,10 @@
   </div>
 </div>'
     />
-    <h2 id="vertical-variation">Vertical variation<a class="anchor-link" href="#vertical-variation" aria-label="Link to Vertical variation"></a></h2>
+    <h2 id="vertical-variation">垂直排列变体<a class="anchor-link" href="#vertical-variation" aria-label="垂直排列变体链接"></a></h2>
     <p>
-      Make a set of buttons appear vertically stacked rather than horizontally.
-      <strong>Split button dropdowns are not supported here.</strong>
+      让一组按钮呈垂直堆叠显示，而不是水平排列。
+      <strong>此处不支持分裂式下拉按钮。</strong>
     </p>
     <Example
       code='<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
@@ -226,18 +226,18 @@
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#basic-example">Basic example</a></li>
-      <li><a href="#mixed-styles">Mixed styles</a></li>
-      <li><a href="#outlined-styles">Outlined styles</a></li>
-      <li><a href="#checkbox-and-radio-button-groups">Checkbox and radio button groups</a></li>
-      <li><a href="#button-toolbar">Button toolbar</a></li>
-      <li><a href="#sizing">Sizing</a></li>
-      <li><a href="#nesting">Nesting</a></li>
+      <li><a href="#basic-example">基本示例</a></li>
+      <li><a href="#mixed-styles">混合样式</a></li>
+      <li><a href="#outlined-styles">轮廓样式</a></li>
+      <li><a href="#checkbox-and-radio-button-groups">复选框和单选按钮组</a></li>
+      <li><a href="#button-toolbar">按钮工具栏</a></li>
+      <li><a href="#sizing">尺寸</a></li>
+      <li><a href="#nesting">嵌套</a></li>
       <li>
-        <a href="#vertical-variation">Vertical variation</a>
+        <a href="#vertical-variation">垂直排列变体</a>
       </li>
     </ul>
   </nav>

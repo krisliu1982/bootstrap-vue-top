@@ -1,11 +1,11 @@
 <template>
   <article class="bd-content">
-    <h1>Text truncation</h1>
-    <p>Truncate long strings of text with an ellipsis.</p>
+    <h1>文本截断</h1>
+    <p>使用省略号截断长字符串文本。</p>
 
     <p>
-      For longer content, you can add a <code>.text-truncate</code> class to truncate the text with an ellipsis.
-      <strong>Requires <code>display: inline-block</code> or <code>display: block</code>.</strong>
+      对于较长的内容，你可以添加 <code>.text-truncate</code> 类，用省略号截断文本。
+      <strong>需要 <code>display: inline-block</code> 或 <code>display: block</code>。</strong>
     </p>
     <Example
       code='<!-- Block level -->

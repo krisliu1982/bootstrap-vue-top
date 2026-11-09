@@ -1,19 +1,19 @@
 <template>
   <article class="bd-content">
-    <h1>Grid system</h1>
-    <p>Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+    <h1>网格系统</h1>
+    <p>借助十二列系统、六个默认响应式层级、Sass 变量和 mixin 以及数十个预定义类，使用我们强大的移动优先 flexbox 网格来构建各种形状和大小的布局。</p>
 
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>
-      Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with
+      Bootstrap 的网格系统使用一系列容器、行和列来布局和对齐内容。它使用
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
-      and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.
+      构建，完全响应式。下面是一个示例，以及关于网格系统如何组合而成的深入说明。
     </p>
     <Callout>
       <p>
-        <strong>New to or unfamiliar with flexbox?</strong>
-        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a>
-        for background, terminology, guidelines, and code snippets.
+        <strong>刚接触或不熟悉 flexbox？</strong>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">阅读这篇 CSS Tricks flexbox 指南</a>
+        了解背景、术语、准则和代码片段。
       </p> </Callout
     ><Example
       class="bd-example-row"
@@ -32,60 +32,56 @@
 </div>'
     />
     <p>
-      The above example creates three equal-width columns across all devices and viewports using our predefined grid classes. Those columns are centered in the page with the parent
-      <code>.container</code>.
+      上面的示例使用我们预定义的网格类，在所有设备和视口上创建了三个等宽的列。这些列通过父级
+      <code>.container</code> 在页面中居中。
     </p>
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Breaking it down, here’s how the grid system comes together:</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>将它拆解开来，网格系统是这样组合而成的：</p>
     <ul>
       <li>
         <p>
-          <strong>Our grid supports <a href="/layout/breakpoints">six responsive breakpoints</a>.</strong>
-          Breakpoints are based on <code>min-width</code> media queries, meaning they affect that breakpoint and all those above it (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>). This means you can control container and column sizing and behavior by each
-          breakpoint.
+          <strong>我们的网格支持<a href="/layout/breakpoints">六个响应式断点</a>。</strong>
+          断点基于 <code>min-width</code> 媒体查询，这意味着它们会影响该断点及其以上的所有断点（例如，<code>.col-sm-4</code> 适用于 <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code>）。这意味着你可以按每个断点控制容器和列的尺寸与行为。
         </p>
       </li>
       <li>
-        <p><strong>Containers center and horizontally pad your content.</strong> Use <code>.container</code> for a responsive pixel width, <code>.container-fluid</code> for <code>width: 100%</code> across all viewports and devices, or a responsive container (e.g., <code>.container-md</code>) for a combination of fluid and pixel widths.</p>
+        <p><strong>容器会使内容居中并进行水平填充。</strong> 使用 <code>.container</code> 获得响应式像素宽度，使用 <code>.container-fluid</code> 在所有视口和设备上获得 <code>width: 100%</code>，或使用响应式容器（例如 <code>.container-md</code>）获得流式与像素宽度的组合。</p>
       </li>
       <li>
         <p>
-          <strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier
-          classes to <a href="#row-columns">uniformly apply column sizing</a> and <a href="/layout/gutters">gutter classes</a> to change the spacing of your content.
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Columns are incredibly flexible.</strong> There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., <code>col-4</code> spans four). <code>width</code>s are set in percentages so
-          you always have the same relative sizing.
+          <strong>行是列的包裹元素。</strong> 每一列都有水平 <code>padding</code>（称为间距 gutter），用于控制它们之间的空间。然后通过负外边距在行上抵消此 <code>padding</code>，以确保列中的内容在左侧视觉上对齐。行还支持修饰类来<a href="#row-columns">统一应用列尺寸</a>，以及<a href="/layout/gutters">间距类</a>来更改内容的间隔。
         </p>
       </li>
       <li>
         <p>
-          <strong>Gutters are also responsive and customizable.</strong>
-          <a href="/layout/gutters">Gutter classes are available</a> across all breakpoints, with all the same sizes as our <a href="/utilities/spacing">margin and padding spacing</a>. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes.
-          <code>.g-0</code> is also available to remove gutters.
+          <strong>列非常灵活。</strong> 每行有 12 个模板列可用，允许你创建跨越任意列数的元素的不同组合。列类指示要跨越的模板列数（例如，<code>col-4</code> 跨越四列）。<code>width</code> 以百分比设置，因此你始终拥有相同的相对尺寸。
         </p>
       </li>
       <li>
         <p>
-          <strong>Sass variables, maps, and mixins power the grid.</strong> If you don’t want to use the predefined grid classes in Bootstrap, you can use our <a href="#sass-variables">grid’s source Sass</a> to create your own with more semantic markup. We also include some CSS custom properties to consume these Sass variables for even greater
-          flexibility for you.
+          <strong>间距同样是响应式且可自定义的。</strong>
+          <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。
+          还可以使用 <code>.g-0</code> 移除间距。
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Sass 变量、map 和 mixin 驱动着网格。</strong> 如果你不想使用 Bootstrap 中预定义的网格类，可以使用我们的<a href="#sass-variables">网格 Sass 源码</a>创建具有更语义化标记的自定义网格。我们还包含了一些 CSS 自定义属性，供你使用这些 Sass 变量，为你提供更大的灵活性。
         </p>
       </li>
     </ul>
-    <p>Be aware of the limitations and <a href="https://github.com/philipwalton/flexbugs">bugs around flexbox</a>, like the <a href="https://github.com/philipwalton/flexbugs#flexbug-9">inability to use some HTML elements as flex containers</a>.</p>
-    <h2 id="grid-options">Grid options<a class="anchor-link" href="#grid-options" aria-label="Link to Grid options"></a></h2>
-    <p>Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follows:</p>
+    <p>请注意 flexbox 的局限性和<a href="https://github.com/philipwalton/flexbugs">相关缺陷</a>，例如<a href="https://github.com/philipwalton/flexbugs#flexbug-9">无法将某些 HTML 元素用作 flex 容器</a>。</p>
+    <h2 id="grid-options">网格选项<a class="anchor-link" href="#grid-options" aria-label="网格选项链接"></a></h2>
+    <p>Bootstrap 的网格系统可以适应所有六个默认断点以及你自定义的任何断点。六个默认网格层级如下：</p>
     <ul>
-      <li>Extra small (xs)</li>
-      <li>Small (sm)</li>
-      <li>Medium (md)</li>
-      <li>Large (lg)</li>
-      <li>Extra large (xl)</li>
-      <li>Extra extra large (xxl)</li>
+      <li>超小（xs）</li>
+      <li>小（sm）</li>
+      <li>中（md）</li>
+      <li>大（lg）</li>
+      <li>超大（xl）</li>
+      <li>特大（xxl）</li>
     </ul>
-    <p>As noted above, each of these breakpoints have their own container, unique class prefix, and modifiers. Here’s how the grid changes across these breakpoints:</p>
+    <p>如上所述，这些断点中的每一个都有自己的容器、唯一的类前缀和修饰符。以下是网格在这些断点间的变化方式：</p>
     <div class="table-responsive">
       <table class="table mb-4">
         <thead>
@@ -101,8 +97,8 @@
         </thead>
         <tbody>
           <tr>
-            <th class="text-nowrap" scope="row">Container <code class="fw-normal">max-width</code></th>
-            <td>None (auto)</td>
+            <th class="text-nowrap" scope="row">容器 <code class="fw-normal">max-width</code></th>
+            <td>无（auto）</td>
             <td>540px</td>
             <td>720px</td>
             <td>960px</td>
@@ -110,7 +106,7 @@
             <td>1320px</td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row">Class prefix</th>
+            <th class="text-nowrap" scope="row">类前缀</th>
             <td><code>.col-</code></td>
             <td><code>.col-sm-</code></td>
             <td><code>.col-md-</code></td>
@@ -119,35 +115,35 @@
             <td><code>.col-xxl-</code></td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row"># of columns</th>
+            <th class="text-nowrap" scope="row">列数</th>
             <td colspan="6">12</td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row">Gutter width</th>
-            <td colspan="6">1.5rem (.75rem on left and right)</td>
+            <th class="text-nowrap" scope="row">间距宽度</th>
+            <td colspan="6">1.5rem（左右各 .75rem）</td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row">Custom gutters</th>
-            <td colspan="6"><a href="/layout/gutters">Yes</a></td>
+            <th class="text-nowrap" scope="row">自定义间距</th>
+            <td colspan="6"><a href="/layout/gutters">支持</a></td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row">Nestable</th>
-            <td colspan="6"><a href="#nesting">Yes</a></td>
+            <th class="text-nowrap" scope="row">可嵌套</th>
+            <td colspan="6"><a href="#nesting">支持</a></td>
           </tr>
           <tr>
-            <th class="text-nowrap" scope="row">Column ordering</th>
-            <td colspan="6"><a href="/layout/columns#reordering">Yes</a></td>
+            <th class="text-nowrap" scope="row">列排序</th>
+            <td colspan="6"><a href="/layout/columns#reordering">支持</a></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h2 id="auto-layout-columns">Auto-layout columns<a class="anchor-link" href="#auto-layout-columns" aria-label="Link to Auto-layout columns"></a></h2>
+    <h2 id="auto-layout-columns">自动布局列<a class="anchor-link" href="#auto-layout-columns" aria-label="自动布局列链接"></a></h2>
     <p>
-      Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like
-      <code>.col-sm-6</code>.
+      利用特定断点的列类，无需像
+      <code>.col-sm-6</code> 这样显式的带数字类，即可轻松设置列尺寸。
     </p>
-    <h3 id="equal-width">Equal-width<a class="anchor-link" href="#equal-width" aria-label="Link to Equal-width"></a></h3>
-    <p>For example, here are two grid layouts that apply to every device and viewport, from <code>xs</code> to <code>xxl</code>. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p>
+    <h3 id="equal-width">等宽<a class="anchor-link" href="#equal-width" aria-label="等宽链接"></a></h3>
+    <p>例如，以下两个网格布局适用于从 <code>xs</code> 到 <code>xxl</code> 的每台设备和每个视口。为所需的每个断点添加任意数量的无单位类，每一列都将具有相同的宽度。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -172,8 +168,8 @@
   </div>
 </div>'
     />
-    <h3 id="setting-one-column-width">Setting one column width<a class="anchor-link" href="#setting-one-column-width" aria-label="Link to Setting one column width"></a></h3>
-    <p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
+    <h3 id="setting-one-column-width">设置单列宽度<a class="anchor-link" href="#setting-one-column-width" aria-label="设置单列宽度链接"></a></h3>
+    <p>flexbox 网格列的自动布局还意味着你可以设置一列的宽度，并让相邻的列围绕它自动调整尺寸。你可以使用预定义的网格类（如下所示）、网格 mixin 或内联宽度。请注意，无论中间列的宽度如何，其他列都会调整尺寸。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -201,8 +197,8 @@
   </div>
 </div>'
     />
-    <h3 id="variable-width-content">Variable width content<a class="anchor-link" href="#variable-width-content" aria-label="Link to Variable width content"></a></h3>
-    <p>Use <code>col-{breakpoint}-auto</code> classes to size columns based on the natural width of their content.</p>
+    <h3 id="variable-width-content">可变宽度内容<a class="anchor-link" href="#variable-width-content" aria-label="可变宽度内容链接"></a></h3>
+    <p>使用 <code>col-{breakpoint}-auto</code> 类，根据内容的自然宽度来设置列的尺寸。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -230,10 +226,10 @@
   </div>
 </div>'
     />
-    <h2 id="responsive-classes">Responsive classes<a class="anchor-link" href="#responsive-classes" aria-label="Link to Responsive classes"></a></h2>
-    <p>Bootstrap’s grid includes six tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
-    <h3 id="all-breakpoints">All breakpoints<a class="anchor-link" href="#all-breakpoints" aria-label="Link to All breakpoints"></a></h3>
-    <p>For grids that are the same from the smallest of devices to the largest, use the <code>.col</code> and <code>.col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to <code>.col</code>.</p>
+    <h2 id="responsive-classes">响应式类<a class="anchor-link" href="#responsive-classes" aria-label="响应式类链接"></a></h2>
+    <p>Bootstrap 的网格包含六个层级的预定义类，用于构建复杂的响应式布局。你可以在超小、小、中、大或超大设备上随意自定义列的尺寸。</p>
+    <h3 id="all-breakpoints">所有断点<a class="anchor-link" href="#all-breakpoints" aria-label="所有断点链接"></a></h3>
+    <p>对于从最小的设备到最大的设备都相同的网格，请使用 <code>.col</code> 和 <code>.col-*</code> 类。当你需要特定尺寸的列时，请指定带数字的类；否则，尽可以使用 <code>.col</code>。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -249,8 +245,8 @@
   </div>
 </div>'
     />
-    <h3 id="stacked-to-horizontal">Stacked to horizontal<a class="anchor-link" href="#stacked-to-horizontal" aria-label="Link to Stacked to horizontal"></a></h3>
-    <p>Using a single set of <code>.col-sm-*</code> classes, you can create a basic grid system that starts out stacked and becomes horizontal at the small breakpoint (<code>sm</code>).</p>
+    <h3 id="stacked-to-horizontal">从堆叠到水平<a class="anchor-link" href="#stacked-to-horizontal" aria-label="从堆叠到水平链接"></a></h3>
+    <p>使用一组 <code>.col-sm-*</code> 类，你可以创建一个基本的网格系统，它一开始是堆叠的，在小断点（<code>sm</code>）处变为水平排列。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -265,8 +261,8 @@
   </div>
 </div>'
     />
-    <h3 id="mix-and-match">Mix and match<a class="anchor-link" href="#mix-and-match" aria-label="Link to Mix and match"></a></h3>
-    <p>Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
+    <h3 id="mix-and-match">混合匹配<a class="anchor-link" href="#mix-and-match" aria-label="混合匹配链接"></a></h3>
+    <p>不想让你的列在某些网格层级中只是简单堆叠？根据需要对每个层级使用不同类的组合。查看下面的示例，更好地了解整体的工作方式。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -290,12 +286,12 @@
   </div>
 </div>'
     />
-    <h3 id="row-columns">Row columns<a class="anchor-link" href="#row-columns" aria-label="Link to Row columns"></a></h3>
+    <h3 id="row-columns">行内列（Row columns）<a class="anchor-link" href="#row-columns" aria-label="行内列链接"></a></h3>
     <p>
-      Use the responsive <code>.row-cols-*</code> classes to quickly set the number of columns that best render your content and layout. Whereas normal <code>.col-*</code> classes apply to the individual columns (e.g., <code>.col-md-4</code>), the row columns classes are set on the parent <code>.row</code> as a shortcut. With
-      <code>.row-cols-auto</code> you can give the columns their natural width.
+      使用响应式 <code>.row-cols-*</code> 类，快速设置最能呈现你的内容和布局的列数。普通的 <code>.col-*</code> 类应用于单个列（例如 <code>.col-md-4</code>），而行内列类则作为快捷方式设置在父级 <code>.row</code> 上。使用
+      <code>.row-cols-auto</code> 可以让列采用其自然宽度。
     </p>
-    <p>Use these row columns classes to quickly create basic grid layouts or to control your card layouts.</p>
+    <p>使用这些行内列类可以快速创建基本的网格布局，或控制你的卡片布局。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -357,7 +353,7 @@
   </div>
 </div>'
     />
-    <p>You can also use the accompanying Sass mixin, <code>row-cols()</code>:</p>
+    <p>你也可以使用随附的 Sass mixin <code>row-cols()</code>：</p>
     <CodeWrapper
       code=".element {
   // Three columns to start
@@ -371,8 +367,8 @@
 "
       lang="scss"
     />
-    <h2 id="nesting">Nesting<a class="anchor-link" href="#nesting" aria-label="Link to Nesting"></a></h2>
-    <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
+    <h2 id="nesting">嵌套<a class="anchor-link" href="#nesting" aria-label="嵌套链接"></a></h2>
+    <p>要使用默认网格嵌套内容，请在现有的 <code>.col-sm-*</code> 列中添加一个新的 <code>.row</code> 和一组 <code>.col-sm-*</code> 列。嵌套行应包含一组加起来不超过 12 的列（并不要求你使用全部 12 个可用列）。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -393,10 +389,10 @@
   </div>
 </div>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <p>When using Bootstrap’s source Sass files, you have the option of using Sass variables and mixins to create custom, semantic, and responsive page layouts. Our predefined grid classes use these same variables and mixins to provide a whole suite of ready-to-use classes for fast responsive layouts.</p>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.</p>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <p>使用 Bootstrap 的 Sass 源文件时，你可以选择使用 Sass 变量和 mixin 来创建自定义、语义化且响应式的页面布局。我们预定义的网格类使用这些相同的变量和 mixin，提供了一整套现成的类，用于快速构建响应式布局。</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>变量和 map 决定列数、间距宽度，以及开始浮动列的媒体查询点。我们使用它们来生成上面记录的预定义网格类，以及下面列出的自定义 mixin。</p>
     <CodeWrapper
       code="$grid-columns:      12;
 $grid-gutter-width: 1.5rem;
@@ -405,8 +401,8 @@ $grid-row-columns:  6;
       lang="scss"
     />
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" /><ScssDocs name="container-max-widths" file="scss/_variables.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
+    <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
+    <p>Mixin 与网格变量结合使用，为各个网格列生成语义化的 CSS。</p>
     <CodeWrapper
       code="// Creates a wrapper for a series of columns
 @include make-row();
@@ -423,8 +419,8 @@ $grid-row-columns:  6;
 "
       lang="scss"
     />
-    <h3 id="example-usage">Example usage<a class="anchor-link" href="#example-usage" aria-label="Link to Example usage"></a></h3>
-    <p>You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.</p>
+    <h3 id="example-usage">用法示例<a class="anchor-link" href="#example-usage" aria-label="用法示例链接"></a></h3>
+    <p>你可以将变量修改为自己自定义的值，或者直接使用带有默认值的 mixin。下面是一个使用默认设置创建带间隙的两列布局的示例。</p>
     <CodeWrapper
       code=".example-container {
   @include make-container();
@@ -469,12 +465,11 @@ $grid-row-columns:  6;
   </div>
 </div>'
     />
-    <h2 id="customizing-the-grid">Customizing the grid<a class="anchor-link" href="#customizing-the-grid" aria-label="Link to Customizing the grid"></a></h2>
-    <p>Using our built-in grid Sass variables and maps, it’s possible to completely customize the predefined grid classes. Change the number of tiers, the media query dimensions, and the container widths—then recompile.</p>
-    <h3 id="columns-and-gutters">Columns and gutters<a class="anchor-link" href="#columns-and-gutters" aria-label="Link to Columns and gutters"></a></h3>
+    <h2 id="customizing-the-grid">自定义网格<a class="anchor-link" href="#customizing-the-grid" aria-label="自定义网格链接"></a></h2>
+    <p>使用我们内置的网格 Sass 变量和 map，你可以完全自定义预定义的网格类。更改层级数量、媒体查询尺寸和容器宽度——然后重新编译。</p>
+    <h3 id="columns-and-gutters">列与间距<a class="anchor-link" href="#columns-and-gutters" aria-label="列与间距链接"></a></h3>
     <p>
-      The number of grid columns can be modified via Sass variables. <code>$grid-columns</code> is used to generate the widths (in percent) of each individual column while <code>$grid-gutter-width</code> sets the width for the column gutters. <code>$grid-row-columns</code> is used to set the maximum number of columns of <code>.row-cols-*</code>,
-      any number over this limit is ignored.
+      网格列数可以通过 Sass 变量修改。<code>$grid-columns</code> 用于生成每个单独列的宽度（以百分比表示），而 <code>$grid-gutter-width</code> 设置列间距的宽度。<code>$grid-row-columns</code> 用于设置 <code>.row-cols-*</code> 的最大列数，超过此限制的任何数字都将被忽略。
     </p>
     <CodeWrapper
       code="$grid-columns: 12 !default;
@@ -483,8 +478,8 @@ $grid-row-columns: 6 !default;
 "
       lang="scss"
     />
-    <h3 id="grid-tiers">Grid tiers<a class="anchor-link" href="#grid-tiers" aria-label="Link to Grid tiers"></a></h3>
-    <p>Moving beyond the columns themselves, you may also customize the number of grid tiers. If you wanted just four grid tiers, you’d update the <code>$grid-breakpoints</code> and <code>$container-max-widths</code> to something like this:</p>
+    <h3 id="grid-tiers">网格层级<a class="anchor-link" href="#grid-tiers" aria-label="网格层级链接"></a></h3>
+    <p>除了列本身，你还可以自定义网格层级的数量。如果你只想要四个网格层级，可以将 <code>$grid-breakpoints</code> 和 <code>$container-max-widths</code> 更新为类似下面的内容：</p>
     <CodeWrapper
       code="$grid-breakpoints: (
   xs: 0,
@@ -502,49 +497,49 @@ $container-max-widths: (
       lang="scss"
     />
     <p>
-      When making any changes to the Sass variables or maps, you’ll need to save your changes and recompile. Doing so will output a brand-new set of predefined grid classes for column widths, offsets, and ordering. Responsive visibility utilities will also be updated to use the custom breakpoints. Make sure to set grid values in
-      <code>px</code> (not <code>rem</code>, <code>em</code>, or <code>%</code>).
+      对 Sass 变量或 map 做出任何更改时，你需要保存更改并重新编译。这样做将输出一套全新的预定义网格类，用于列宽、偏移和排序。响应式可见性工具类也会更新为使用自定义断点。请确保以
+      <code>px</code> 设置网格值（而非 <code>rem</code>、<code>em</code> 或 <code>%</code>）。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#example">Example</a></li>
-      <li><a href="#how-it-works">How it works</a></li>
-      <li><a href="#grid-options">Grid options</a></li>
+      <li><a href="#example">示例</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
+      <li><a href="#grid-options">网格选项</a></li>
       <li>
-        <a href="#auto-layout-columns">Auto-layout columns</a>
+        <a href="#auto-layout-columns">自动布局列</a>
         <ul>
-          <li><a href="#equal-width">Equal-width</a></li>
-          <li><a href="#setting-one-column-width">Setting one column width</a></li>
-          <li><a href="#variable-width-content">Variable width content</a></li>
+          <li><a href="#equal-width">等宽</a></li>
+          <li><a href="#setting-one-column-width">设置单列宽度</a></li>
+          <li><a href="#variable-width-content">可变宽度内容</a></li>
         </ul>
       </li>
       <li>
-        <a href="#responsive-classes">Responsive classes</a>
+        <a href="#responsive-classes">响应式类</a>
         <ul>
-          <li><a href="#all-breakpoints">All breakpoints</a></li>
-          <li><a href="#stacked-to-horizontal">Stacked to horizontal</a></li>
-          <li><a href="#mix-and-match">Mix and match</a></li>
-          <li><a href="#row-columns">Row columns</a></li>
+          <li><a href="#all-breakpoints">所有断点</a></li>
+          <li><a href="#stacked-to-horizontal">从堆叠到水平</a></li>
+          <li><a href="#mix-and-match">混合匹配</a></li>
+          <li><a href="#row-columns">行内列（Row columns）</a></li>
         </ul>
       </li>
-      <li><a href="#nesting">Nesting</a></li>
+      <li><a href="#nesting">嵌套</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-mixins">Sass mixins</a></li>
-          <li><a href="#example-usage">Example usage</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-mixins">Sass mixin</a></li>
+          <li><a href="#example-usage">用法示例</a></li>
         </ul>
       </li>
       <li>
-        <a href="#customizing-the-grid">Customizing the grid</a>
+        <a href="#customizing-the-grid">自定义网格</a>
         <ul>
-          <li><a href="#columns-and-gutters">Columns and gutters</a></li>
-          <li><a href="#grid-tiers">Grid tiers</a></li>
+          <li><a href="#columns-and-gutters">列与间距</a></li>
+          <li><a href="#grid-tiers">网格层级</a></li>
         </ul>
       </li>
     </ul>

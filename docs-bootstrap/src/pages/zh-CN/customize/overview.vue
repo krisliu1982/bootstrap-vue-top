@@ -1,58 +1,54 @@
 <template>
   <article class="bd-content">
-    <h1>Customize</h1>
-    <p>Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.</p>
+    <h1>自定义</h1>
+    <p>了解如何使用 Sass、大量全局选项、扩展的颜色系统等来设置 Bootstrap 主题、自定义和扩展 Bootstrap。</p>
 
-    <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
-    <p>There are multiple ways to customize Bootstrap. Your best path can depend on your project, the complexity of your build tools, the version of Bootstrap you’re using, browser support, and more.</p>
-    <p>Our two preferred methods are:</p>
+    <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述"></a></h2>
+    <p>自定义 Bootstrap 有多种方式。最佳选择取决于你的项目、构建工具的复杂度、所使用的 Bootstrap 版本、浏览器支持等因素。</p>
+    <p>我们推荐的两种方式是：</p>
     <ol>
       <li>
-        Using Bootstrap
-        <a href="/getting-started/download#package-managers">via package manager</a> so you can use and extend our source files.
+        通过<a href="/getting-started/download#package-managers">包管理器</a>使用 Bootstrap，以便你可以使用并扩展我们的源文件。
       </li>
       <li>
-        Using Bootstrap’s compiled distribution files or
-        <a href="/getting-started/download#cdn-via-jsdelivr">jsDelivr</a> so you can add onto or override Bootstrap’s styles.
+        使用 Bootstrap 的编译发行文件或
+        <a href="/getting-started/download#cdn-via-jsdelivr">jsDelivr</a>，以便你可以追加或覆盖 Bootstrap 的样式。
       </li>
     </ol>
     <p>
-      While we cannot go into details here on how to use every package manager, we can give some guidance on
-      <a href="/customize/sass">using Bootstrap with your own Sass compiler</a>.
+      由于篇幅所限，我们无法在此详细介绍如何使用每一种包管理器，但可以提供一些关于<a href="/customize/sass">将 Bootstrap 与你自己的 Sass 编译器配合使用</a>的指导。
     </p>
     <p>
-      For those who want to use the distribution files, review the
-      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for the layout, components, and behaviors you’d like to use.
+      如果你希望使用发行文件，请查看<a href="/getting-started/introduction">入门页面</a>，了解如何引入这些文件以及一个示例 HTML 页面。之后，请查阅布局、组件和行为相关的文档。
     </p>
-    <p>As you familiarize yourself with Bootstrap, continue exploring this section for more details on how to utilize our global options, making use of and changing our color system, how we build our components, how to use our growing list of CSS custom properties, and how to optimize your code when building with Bootstrap.</p>
-    <h2 id="csps-and-embedded-svgs">CSPs and embedded SVGs<a class="anchor-link" href="#csps-and-embedded-svgs" aria-label="Link to CSPs and embedded SVGs"></a></h2>
+    <p>当你逐渐熟悉 Bootstrap 后，可以继续探索本节，了解更多细节：如何使用全局选项、使用和更改我们的颜色系统、我们如何构建组件、如何使用不断增加的 CSS 自定义属性列表，以及如何在使用 Bootstrap 构建时优化代码。</p>
+    <h2 id="csps-and-embedded-svgs">CSP 与内嵌 SVG<a class="anchor-link" href="#csps-and-embedded-svgs" aria-label="CSP 与内嵌 SVG"></a></h2>
     <p>
-      Several Bootstrap components include embedded SVGs in our CSS to style components consistently and easily across browsers and devices.
-      <strong>For organizations with more strict <abbr title="Content Security Policy">CSP</abbr> configurations</strong>, we’ve documented all instances of our embedded SVGs (all of which are applied via <code>background-image</code>) so you can more thoroughly review your options.
+      若干 Bootstrap 组件在 CSS 中包含内嵌的 SVG，以便在不同浏览器和设备上一致且轻松地设置组件样式。
+      <strong>对于 <abbr title="Content Security Policy">CSP</abbr> 配置更严格的组织</strong>，我们记录了所有内嵌 SVG 的位置（它们都通过 <code>background-image</code> 应用），以便你更全面地评估你的选项。
     </p>
     <ul>
-      <li><a href="/components/accordion">Accordion</a></li>
-      <li><a href="/components/carousel#with-controls">Carousel controls</a></li>
-      <li><a href="/components/close-button">Close button</a> (used in alerts and modals)</li>
-      <li><a href="/forms/checks-radios">Form checkboxes and radio buttons</a></li>
-      <li><a href="/forms/checks-radios#switches">Form switches</a></li>
-      <li><a href="/forms/validation#server-side">Form validation icons</a></li>
-      <li><a href="/components/navbar#responsive-behaviors">Navbar toggle buttons</a></li>
-      <li><a href="/forms/select">Select menus</a></li>
+      <li><a href="/components/accordion">折叠面板</a></li>
+      <li><a href="/components/carousel#with-controls">轮播控件</a></li>
+      <li><a href="/components/close-button">关闭按钮</a>（用于警告框和模态框）</li>
+      <li><a href="/forms/checks-radios">表单复选框和单选按钮</a></li>
+      <li><a href="/forms/checks-radios#switches">表单开关</a></li>
+      <li><a href="/forms/validation#server-side">表单验证图标</a></li>
+      <li><a href="/components/navbar#responsive-behaviors">导航栏切换按钮</a></li>
+      <li><a href="/forms/select">选择菜单</a></li>
     </ul>
     <p>
-      Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not possible in all components), and
-      modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
+      根据<a href="https://github.com/twbs/bootstrap/issues/25394">社区讨论</a>，在你自己的代码库中解决此问题的一些选项包括：<a href="/getting-started/webpack#extracting-svg-files">将 URL 替换为本地托管的资源</a>、移除图片并使用内联图片（并非所有组件都可行），以及修改你的 CSP。我们建议仔细审查你自己的安全策略，并在必要时决定最佳方案。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#overview">Overview</a></li>
+      <li><a href="#overview">概述</a></li>
       <li>
-        <a href="#csps-and-embedded-svgs">CSPs and embedded SVGs</a>
+        <a href="#csps-and-embedded-svgs">CSP 与内嵌 SVG</a>
       </li>
     </ul>
   </nav>

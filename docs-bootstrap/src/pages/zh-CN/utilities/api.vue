@@ -1,21 +1,21 @@
 <template>
   <article class="bd-content">
-    <h1>Utility API</h1>
-    <p>The utility API is a Sass-based tool to generate utility classes.</p>
+    <h1>工具类 API</h1>
+    <p>工具类 API 是一个基于 Sass 的工具，用于生成工具类。</p>
 
     <p>
-      Bootstrap utilities are generated with our utility API and can be used to modify or extend our default set of utility classes via Sass. Our utility API is based on a series of Sass maps and functions for generating families of classes with various options. If you’re unfamiliar with Sass maps, read up on the
-      <a href="https://sass-lang.com/documentation/values/maps/">official Sass docs</a> to get started.
+      Bootstrap 的工具类由我们的工具类 API 生成，你可以通过 Sass 修改或扩展默认的工具类集合。我们的工具类 API 基于一系列 Sass 映射和函数，用于生成带有各种选项的类族。如果你不熟悉 Sass 映射，请先阅读
+      <a href="https://sass-lang.com/documentation/values/maps/">Sass 官方文档</a>以入门。
     </p>
-    <p>The <code>$utilities</code> map contains all our utilities and is later merged with your custom <code>$utilities</code> map, if present. The utility map contains a keyed list of utility groups which accept the following options:</p>
+    <p><code>$utilities</code> 映射包含我们的所有工具类，如果存在自定义的 <code>$utilities</code> 映射，它稍后会与之合并。工具类映射包含一个带键的工具类组列表，这些组接受以下选项：</p>
     <div class="table-responsive">
       <table class="table table-utilities">
         <thead>
           <tr>
-            <th>Option</th>
-            <th>Type</th>
-            <th>Default&nbsp;value</th>
-            <th>Description</th>
+            <th>选项</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
@@ -23,94 +23,94 @@
             <td>
               <a href="#property"><code>property</code></a>
             </td>
-            <td><strong>Required</strong></td>
+            <td><strong>必需</strong></td>
             <td>–</td>
-            <td>Name of the property, this can be a string or an array of strings (e.g., horizontal paddings or margins).</td>
+            <td>属性名称，可以是字符串或字符串数组（例如水平内边距或外边距）。</td>
           </tr>
           <tr>
             <td>
               <a href="#values"><code>values</code></a>
             </td>
-            <td><strong>Required</strong></td>
+            <td><strong>必需</strong></td>
             <td>–</td>
             <td>
-              List of values, or a map if you don’t want the class name to be the same as the value. If
-              <code>null</code> is used as map key, <code>class</code> is not prepended to the class name.
+              值列表，或者当你希望类名与值不同时使用映射。如果将
+              <code>null</code> 用作映射键，则 <code>class</code> 不会作为前缀添加到类名中。
             </td>
           </tr>
           <tr>
             <td>
               <a href="#class"><code>class</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td>null</td>
-            <td>Name of the generated class. If not provided and <code>property</code> is an array of strings, <code>class</code> will default to the first element of the <code>property</code> array. If not provided and <code>property</code> is a string, the <code>values</code> keys are used for the <code>class</code> names.</td>
+            <td>生成的类的名称。如果未提供且 <code>property</code> 是字符串数组，<code>class</code> 将默认为 <code>property</code> 数组的第一个元素。如果未提供且 <code>property</code> 是字符串，则使用 <code>values</code> 的键作为 <code>class</code> 名称。</td>
           </tr>
           <tr>
             <td>
               <a href="#css-variable-utilities"><code>css-var</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td><code>false</code></td>
-            <td>Boolean to generate CSS variables instead of CSS rules.</td>
+            <td>布尔值，用于生成 CSS 变量而不是 CSS 规则。</td>
           </tr>
           <tr>
             <td>
               <a href="#css-variable-utilities"><code>css-variable-name</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td>null</td>
-            <td>Custom un-prefixed name for the CSS variable inside the ruleset.</td>
+            <td>规则集中 CSS 变量的自定义无前缀名称。</td>
           </tr>
           <tr>
             <td>
               <a href="#local-css-variables"><code>local-vars</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td>null</td>
-            <td>Map of local CSS variables to generate in addition to the CSS rules.</td>
+            <td>要在 CSS 规则之外额外生成的局部 CSS 变量映射。</td>
           </tr>
           <tr>
             <td>
               <a href="#states"><code>state</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td>null</td>
-            <td>List of pseudo-class variants (e.g., <code>:hover</code> or <code>:focus</code>) to generate.</td>
+            <td>要生成的伪类变体列表（例如 <code>:hover</code> 或 <code>:focus</code>）。</td>
           </tr>
           <tr>
             <td>
               <a href="#responsive"><code>responsive</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td><code>false</code></td>
-            <td>Boolean indicating if responsive classes should be generated.</td>
+            <td>布尔值，表示是否应生成响应式类。</td>
           </tr>
           <tr>
             <td><code>rfs</code></td>
-            <td>Optional</td>
+            <td>可选</td>
             <td><code>false</code></td>
-            <td>Boolean to enable <a href="/getting-started/rfs">fluid rescaling with RFS</a>.</td>
+            <td>布尔值，用于启用<a href="/getting-started/rfs">使用 RFS 的流式重新缩放</a>。</td>
           </tr>
           <tr>
             <td>
               <a href="#print"><code>print</code></a>
             </td>
-            <td>Optional</td>
+            <td>可选</td>
             <td><code>false</code></td>
-            <td>Boolean indicating if print classes need to be generated.</td>
+            <td>布尔值，表示是否需要生成打印类。</td>
           </tr>
           <tr>
             <td><code>rtl</code></td>
-            <td>Optional</td>
+            <td>可选</td>
             <td><code>true</code></td>
-            <td>Boolean indicating if utility should be kept in RTL.</td>
+            <td>布尔值，表示该工具类是否应在 RTL 中保留。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h2 id="api-explained">API explained<a class="anchor-link" href="#api-explained" aria-label="Link to API explained"></a></h2>
-    <p>All utility variables are added to the <code>$utilities</code> variable within our <code>_utilities.scss</code> stylesheet. Each group of utilities looks something like this:</p>
+    <h2 id="api-explained">API 说明<a class="anchor-link" href="#api-explained" aria-label="API 说明"></a></h2>
+    <p>所有工具类变量都被添加到 <code>_utilities.scss</code> 样式表中的 <code>$utilities</code> 变量中。每个工具类组看起来大致如下：</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -127,7 +127,7 @@
 '
       lang="scss"
     />
-    <p>Which outputs the following:</p>
+    <p>其输出结果如下：</p>
     <CodeWrapper
       code=".opacity-0 { opacity: 0; }
 .opacity-25 { opacity: .25; }
@@ -137,8 +137,8 @@
 "
       lang="css"
     />
-    <h3 id="property">Property<a class="anchor-link" href="#property" aria-label="Link to Property"></a></h3>
-    <p>The required <code>property</code> key must be set for any utility, and it must contain a valid CSS property. This property is used in the generated utility’s ruleset. When the <code>class</code> key is omitted, it also serves as the default class name. Consider the <code>text-decoration</code> utility:</p>
+    <h3 id="property">property 属性<a class="anchor-link" href="#property" aria-label="property 属性"></a></h3>
+    <p>任何工具类都必须设置必需的 <code>property</code> 键，且它必须包含有效的 CSS 属性。该属性用于生成工具类的规则集。当省略 <code>class</code> 键时，它也会作为默认类名。请参考 <code>text-decoration</code> 工具类：</p>
     <CodeWrapper
       code='$utilities: (
   "text-decoration": (
@@ -149,7 +149,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".text-decoration-none { text-decoration: none !important; }
 .text-decoration-underline { text-decoration: underline !important; }
@@ -157,11 +157,11 @@
 "
       lang="css"
     />
-    <h3 id="values">Values<a class="anchor-link" href="#values" aria-label="Link to Values"></a></h3>
-    <p>Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map (set in the utilities or in a Sass variable).</p>
+    <h3 id="values">values 值<a class="anchor-link" href="#values" aria-label="values 值"></a></h3>
+    <p>使用 <code>values</code> 键来指定生成的类名和规则中应为指定的 <code>property</code> 使用哪些值。它可以是列表或映射（在工具类中或 Sass 变量中设置）。</p>
     <p>
-      As a list, like with
-      <a href="/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:
+      作为列表，就像
+      <a href="/utilities/text#text-decoration"><code>text-decoration</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: none underline line-through
@@ -169,7 +169,7 @@
       lang="scss"
     />
     <p>
-      As a map, like with <a href="/utilities/opacity"><code>opacity</code> utilities</a>:
+      作为映射，就像 <a href="/utilities/opacity"><code>opacity</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: (
@@ -183,16 +183,16 @@
       lang="scss"
     />
     <p>
-      As a Sass variable that sets the list or map, as in our
-      <a href="/utilities/position"><code>position</code> utilities</a>:
+      作为设置列表或映射的 Sass 变量，就像我们的
+      <a href="/utilities/position"><code>position</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: $position-values
 "
       lang="scss"
     />
-    <h3 id="class">Class<a class="anchor-link" href="#class" aria-label="Link to Class"></a></h3>
-    <p>Use the <code>class</code> option to change the class prefix used in the compiled CSS. For example, to change from <code>.opacity-*</code> to <code>.o-*</code>:</p>
+    <h3 id="class">class 类<a class="anchor-link" href="#class" aria-label="class 类"></a></h3>
+    <p>使用 <code>class</code> 选项可以更改编译后的 CSS 中使用的类前缀。例如，将 <code>.opacity-*</code> 改为 <code>.o-*</code>：</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -210,7 +210,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".o-0 { opacity: 0 !important; }
 .o-25 { opacity: .25 !important; }
@@ -220,7 +220,7 @@
 "
       lang="css"
     />
-    <p>If <code>class: null</code>, generates classes for each of the <code>values</code> keys:</p>
+    <p>如果 <code>class: null</code>，则会为每个 <code>values</code> 键生成类：</p>
     <CodeWrapper
       code='$utilities: (
   "visibility": (
@@ -235,16 +235,16 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".visible { visibility: visible !important; }
 .invisible { visibility: hidden !important; }
 "
       lang="css"
     />
-    <h3 id="css-variable-utilities">CSS variable utilities<a class="anchor-link" href="#css-variable-utilities" aria-label="Link to CSS variable utilities"></a></h3>
-    <p>Set the <code>css-var</code> boolean option to <code>true</code> and the API will generate local CSS variables for the given selector instead of the usual <code>property: value</code> rules. Add an optional <code>css-variable-name</code> to set a different CSS variable name than the class name.</p>
-    <p>Consider our <code>.text-opacity-*</code> utilities. If we add the <code>css-variable-name</code> option, we&#39;ll get a custom output.</p>
+    <h3 id="css-variable-utilities">CSS 变量工具类<a class="anchor-link" href="#css-variable-utilities" aria-label="CSS 变量工具类"></a></h3>
+    <p>将 <code>css-var</code> 布尔选项设为 <code>true</code>，API 就会为给定选择器生成局部 CSS 变量，而不是通常的 <code>property: value</code> 规则。可以添加可选的 <code>css-variable-name</code>，以设置与类名不同的 CSS 变量名。</p>
+    <p>请参考我们的 <code>.text-opacity-*</code> 工具类。如果添加 <code>css-variable-name</code> 选项，我们将得到自定义输出。</p>
     <CodeWrapper
       code='$utilities: (
   "text-opacity": (
@@ -262,7 +262,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".text-opacity-25 { --bs-text-alpha: .25; }
 .text-opacity-50 { --bs-text-alpha: .5; }
@@ -271,8 +271,8 @@
 "
       lang="css"
     />
-    <h3 id="local-css-variables">Local CSS variables<a class="anchor-link" href="#local-css-variables" aria-label="Link to Local CSS variables"></a></h3>
-    <p>Use the <code>local-vars</code> option to specify a Sass map that will generate local CSS variables within the utility class’s ruleset. Please note that it may require additional work to consume those local CSS variables in the generated CSS rules. For example, consider our <code>.bg-*</code> utilities:</p>
+    <h3 id="local-css-variables">局部 CSS 变量<a class="anchor-link" href="#local-css-variables" aria-label="局部 CSS 变量"></a></h3>
+    <p>使用 <code>local-vars</code> 选项可以指定一个 Sass 映射，在该工具类规则的规则集中生成局部 CSS 变量。请注意，在生成的 CSS 规则中使用这些局部 CSS 变量可能需要额外的工作。例如，请参考我们的 <code>.bg-*</code> 工具类：</p>
     <CodeWrapper
       code='$utilities: (
   "background-color": (
@@ -292,7 +292,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".bg-primary {
   --bs-bg-opacity: 1;
@@ -301,12 +301,12 @@
 "
       lang="css"
     />
-    <h3 id="states">States<a class="anchor-link" href="#states" aria-label="Link to States"></a></h3>
+    <h3 id="states">状态<a class="anchor-link" href="#states" aria-label="状态"></a></h3>
     <p>
-      Use the <code>state</code> option to generate pseudo-class variations. Example pseudo-classes are <code>:hover</code> and <code>:focus</code>. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add <code>state: hover</code> and you’ll get
-      <code>.opacity-hover:hover</code> in your compiled CSS.
+      使用 <code>state</code> 选项可以生成伪类变体。例如伪类 <code>:hover</code> 和 <code>:focus</code>。提供状态列表时，会为该伪类创建类名。例如，要在悬停时更改不透明度，添加 <code>state: hover</code>，编译后的 CSS 中就会得到
+      <code>.opacity-hover:hover</code>。
     </p>
-    <p>Need multiple pseudo-classes? Use a space-separated list of states: <code>state: hover focus</code>.</p>
+    <p>需要多个伪类？使用以空格分隔的状态列表：<code>state: hover focus</code>。</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -325,7 +325,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".opacity-0-hover:hover { opacity: 0 !important; }
 .opacity-25-hover:hover { opacity: .25 !important; }
@@ -335,8 +335,8 @@
 "
       lang="css"
     />
-    <h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
-    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/layout/breakpoints">all breakpoints</a>.</p>
+    <h3 id="responsive">响应式<a class="anchor-link" href="#responsive" aria-label="响应式"></a></h3>
+    <p>添加 <code>responsive</code> 布尔值以在<a href="/layout/breakpoints">所有断点</a>生成响应式工具类（例如 <code>.opacity-md-25</code>）。</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -354,7 +354,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".opacity-0 { opacity: 0 !important; }
 .opacity-25 { opacity: .25 !important; }
@@ -404,8 +404,8 @@
 "
       lang="css"
     />
-    <h3 id="print">Print<a class="anchor-link" href="#print" aria-label="Link to Print"></a></h3>
-    <p>Enabling the <code>print</code> option will <strong>also</strong> generate utility classes for print, which are only applied within the <code>@media print { ... }</code> media query.</p>
+    <h3 id="print">打印<a class="anchor-link" href="#print" aria-label="打印"></a></h3>
+    <p>启用 <code>print</code> 选项还会<strong>另外</strong>为打印生成工具类，这些类仅在 <code>@media print { ... }</code> 媒体查询中生效。</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -423,7 +423,7 @@
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code=".opacity-0 { opacity: 0 !important; }
 .opacity-25 { opacity: .25 !important; }
@@ -441,12 +441,12 @@
 "
       lang="css"
     />
-    <h2 id="importance">Importance<a class="anchor-link" href="#importance" aria-label="Link to Importance"></a></h2>
-    <p>All utilities generated by the API include <code>!important</code> to ensure they override components and modifier classes as intended. You can toggle this setting globally with the <code>$enable-important-utilities</code> variable (defaults to <code>true</code>).</p>
-    <h2 id="using-the-api">Using the API<a class="anchor-link" href="#using-the-api" aria-label="Link to Using the API"></a></h2>
-    <p>Now that you’re familiar with how the utilities API works, learn how to add your own custom classes and modify our default utilities.</p>
-    <h3 id="override-utilities">Override utilities<a class="anchor-link" href="#override-utilities" aria-label="Link to Override utilities"></a></h3>
-    <p>Override existing utilities by using the same key. For example, if you want additional responsive overflow utility classes, you can do this:</p>
+    <h2 id="importance">重要性<a class="anchor-link" href="#importance" aria-label="重要性"></a></h2>
+    <p>API 生成的所有工具类都包含 <code>!important</code>，以确保它们按预期覆盖组件和修饰类。你可以使用 <code>$enable-important-utilities</code> 变量（默认为 <code>true</code>）在全局范围内切换此设置。</p>
+    <h2 id="using-the-api">使用 API<a class="anchor-link" href="#using-the-api" aria-label="使用 API"></a></h2>
+    <p>现在你已了解工具类 API 的工作原理，接下来学习如何添加自定义类以及修改默认的工具类。</p>
+    <h3 id="override-utilities">覆盖工具类<a class="anchor-link" href="#override-utilities" aria-label="覆盖工具类"></a></h3>
+    <p>使用相同的键即可覆盖已有的工具类。例如，如果你想要额外的响应式 overflow 工具类，可以这样做：</p>
     <CodeWrapper
       code='$utilities: (
   "overflow": (
@@ -458,10 +458,9 @@
 '
       lang="scss"
     />
-    <h3 id="add-utilities">Add utilities<a class="anchor-link" href="#add-utilities" aria-label="Link to Add utilities"></a></h3>
+    <h3 id="add-utilities">添加工具类<a class="anchor-link" href="#add-utilities" aria-label="添加工具类"></a></h3>
     <p>
-      New utilities can be added to the default <code>$utilities</code> map with a <code>map-merge</code>. Make sure our required Sass files and <code>_utilities.scss</code> are imported first, then use the <code>map-merge</code> to add your additional utilities. For example, here’s how to add a responsive <code>cursor</code> utility with three
-      values.
+      可以使用 <code>map-merge</code> 将新工具类添加到默认的 <code>$utilities</code> 映射中。请确保先导入必需的 Sass 文件和 <code>_utilities.scss</code>，然后使用 <code>map-merge</code> 添加额外的工具类。例如，下面演示如何添加一个包含三个值的响应式 <code>cursor</code> 工具类。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -487,10 +486,9 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <h3 id="modify-utilities">Modify utilities<a class="anchor-link" href="#modify-utilities" aria-label="Link to Modify utilities"></a></h3>
+    <h3 id="modify-utilities">修改工具类<a class="anchor-link" href="#modify-utilities" aria-label="修改工具类"></a></h3>
     <p>
-      Modify existing utilities in the default <code>$utilities</code> map with <code>map-get</code> and <code>map-merge</code> functions. In the example below, we’re adding an additional value to the <code>width</code> utilities. Start with an initial <code>map-merge</code> and then specify which utility you want to modify. From there, fetch the
-      nested <code>&quot;width&quot;</code> map with <code>map-get</code> to access and modify the utility’s options and values.
+      可以使用 <code>map-get</code> 和 <code>map-merge</code> 函数修改默认 <code>$utilities</code> 映射中已有的工具类。在下面的示例中，我们为 <code>width</code> 工具类添加了一个额外的值。首先进行一次初始的 <code>map-merge</code>，然后指定要修改的工具类。接着，使用 <code>map-get</code> 获取嵌套的 <code>&quot;width&quot;</code> 映射，以访问并修改该工具类的选项和值。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -519,8 +517,8 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <h4 id="enable-responsive">Enable responsive</h4>
-    <p>You can enable responsive classes for an existing set of utilities that are not currently responsive by default. For example, to make the <code>border</code> classes responsive:</p>
+    <h4 id="enable-responsive">启用响应式</h4>
+    <p>你可以为一组现有的、默认不支持响应式的工具类启用响应式类。例如，让 <code>border</code> 类支持响应式：</p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -543,7 +541,7 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <p>This will now generate responsive variations of <code>.border</code> and <code>.border-0</code> for each breakpoint. Your generated CSS will look like this:</p>
+    <p>现在这将为每个断点生成 <code>.border</code> 和 <code>.border-0</code> 的响应式变体。生成的 CSS 如下所示：</p>
     <CodeWrapper
       code=".border { ... }
 .border-0 { ... }
@@ -575,8 +573,8 @@ $utilities: map-merge(
 "
       lang="css"
     />
-    <h4 id="rename-utilities">Rename utilities</h4>
-    <p>Missing v4 utilities, or used to another naming convention? The utilities API can be used to override the resulting <code>class</code> of a given utility—for example, to rename <code>.ms-*</code> utilities to oldish <code>.ml-*</code>:</p>
+    <h4 id="rename-utilities">重命名工具类</h4>
+    <p>缺少 v4 工具类，或已经习惯了其他命名约定？可以使用工具类 API 覆盖给定工具类的生成结果 <code>class</code>——例如，将 <code>.ms-*</code> 工具类重命名为旧式的 <code>.ml-*</code>：</p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -599,10 +597,10 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <h3 id="remove-utilities">Remove utilities<a class="anchor-link" href="#remove-utilities" aria-label="Link to Remove utilities"></a></h3>
+    <h3 id="remove-utilities">移除工具类<a class="anchor-link" href="#remove-utilities" aria-label="移除工具类"></a></h3>
     <p>
-      Remove any of the default utilities with the
-      <a href="https://sass-lang.com/documentation/modules/map/#remove"><code>map-remove()</code> Sass function</a>.
+      使用
+      <a href="https://sass-lang.com/documentation/modules/map/#remove"><code>map-remove()</code> Sass 函数</a>移除任意默认工具类。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -620,8 +618,8 @@ $utilities: map-remove($utilities, "width", "float");
       lang="scss"
     />
     <p>
-      You can also use the
-      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a> and set the group key to <code>null</code> to remove the utility.
+      你也可以使用
+      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>，并将组的键设为 <code>null</code> 来移除该工具类。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -642,10 +640,10 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <h3 id="add-remove-modify">Add, remove, modify<a class="anchor-link" href="#add-remove-modify" aria-label="Link to Add, remove, modify"></a></h3>
+    <h3 id="add-remove-modify">添加、移除与修改<a class="anchor-link" href="#add-remove-modify" aria-label="添加、移除与修改"></a></h3>
     <p>
-      You can add, remove, and modify many utilities all at once with the
-      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a>. Here’s how you can combine the previous examples into one larger map.
+      你可以使用
+      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>一次性添加、移除和修改多个工具类。下面展示了如何将前面的示例合并为一个更大的映射。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -679,10 +677,10 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <h4 id="remove-utility-in-rtl">Remove utility in RTL</h4>
+    <h4 id="remove-utility-in-rtl">在 RTL 中移除工具类</h4>
     <p>
-      Some edge cases make
-      <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL styling difficult</a>, such as line breaks in Arabic. Thus utilities can be dropped from RTL output by setting the <code>rtl</code> option to <code>false</code>:
+      某些边缘情况会使
+      <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL 样式编写变得困难</a>，例如阿拉伯语中的换行。因此，可以通过将 <code>rtl</code> 选项设为 <code>false</code>，将工具类从 RTL 输出中移除：
     </p>
     <CodeWrapper
       code='$utilities: (
@@ -696,7 +694,7 @@ $utilities: map-merge(
 '
       lang="scss"
     />
-    <p>Output:</p>
+    <p>输出：</p>
     <CodeWrapper
       code="/* rtl:begin:remove */
 .text-break {
@@ -708,37 +706,37 @@ $utilities: map-merge(
       lang="css"
     />
     <p>
-      This doesn’t output anything in RTL, thanks to
-      <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">the RTLCSS <code>remove</code> control directive</a>.
+      由于使用了
+      <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">RTLCSS 的 <code>remove</code> 控制指令</a>，这在 RTL 中不会输出任何内容。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#api-explained">API explained</a>
+        <a href="#api-explained">API 说明</a>
         <ul>
-          <li><a href="#property">Property</a></li>
-          <li><a href="#values">Values</a></li>
-          <li><a href="#class">Class</a></li>
-          <li><a href="#css-variable-utilities">CSS variable utilities</a></li>
-          <li><a href="#local-css-variables">Local CSS variables</a></li>
-          <li><a href="#states">States</a></li>
-          <li><a href="#responsive">Responsive</a></li>
-          <li><a href="#print">Print</a></li>
+          <li><a href="#property">property 属性</a></li>
+          <li><a href="#values">values 值</a></li>
+          <li><a href="#class">class 类</a></li>
+          <li><a href="#css-variable-utilities">CSS 变量工具类</a></li>
+          <li><a href="#local-css-variables">局部 CSS 变量</a></li>
+          <li><a href="#states">状态</a></li>
+          <li><a href="#responsive">响应式</a></li>
+          <li><a href="#print">打印</a></li>
         </ul>
       </li>
-      <li><a href="#importance">Importance</a></li>
+      <li><a href="#importance">重要性</a></li>
       <li>
-        <a href="#using-the-api">Using the API</a>
+        <a href="#using-the-api">使用 API</a>
         <ul>
-          <li><a href="#override-utilities">Override utilities</a></li>
-          <li><a href="#add-utilities">Add utilities</a></li>
-          <li><a href="#modify-utilities">Modify utilities</a></li>
-          <li><a href="#remove-utilities">Remove utilities</a></li>
-          <li><a href="#add-remove-modify">Add, remove, modify</a></li>
+          <li><a href="#override-utilities">覆盖工具类</a></li>
+          <li><a href="#add-utilities">添加工具类</a></li>
+          <li><a href="#modify-utilities">修改工具类</a></li>
+          <li><a href="#remove-utilities">移除工具类</a></li>
+          <li><a href="#add-remove-modify">添加、移除与修改</a></li>
         </ul>
       </li>
     </ul>

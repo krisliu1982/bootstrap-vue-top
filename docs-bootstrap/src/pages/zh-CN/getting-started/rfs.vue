@@ -1,20 +1,18 @@
 <template>
   <article class="bd-content">
     <h1>RFS</h1>
-    <p>Bootstrap’s resizing engine responsively scales common CSS properties to better utilize available space across viewports and devices.</p>
+    <p>Bootstrap 的尺寸调整引擎会响应式地缩放常用 CSS 属性，以便在各种视口和设备上更好地利用可用空间。</p>
 
-    <h2 id="what-is-rfs">What is RFS?<a class="anchor-link" href="#what-is-rfs" aria-label="Link to What is RFS?"></a></h2>
+    <h2 id="what-is-rfs">什么是 RFS？<a class="anchor-link" href="#what-is-rfs" aria-label="什么是 RFS？链接"></a></h2>
     <p>
-      Bootstrap’s side project <a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a> is a unit resizing engine which was initially developed to resize font sizes (hence its abbreviation for Responsive Font Sizes). Nowadays RFS is capable of rescaling most CSS properties with unit values like <code>margin</code>, <code>padding</code>,
-      <code>border-radius</code>, or even <code>box-shadow</code>.
+      Bootstrap 的附属项目 <a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a> 是一个单位尺寸调整引擎，最初是为了调整字体大小而开发的（因此其缩写为 Responsive Font Sizes，即响应式字体大小）。如今，RFS 能够重新缩放大多数带单位值的 CSS 属性，例如 <code>margin</code>、<code>padding</code>、<code>border-radius</code>，甚至 <code>box-shadow</code>。
     </p>
-    <p>The mechanism automatically calculates the appropriate values based on the dimensions of the browser viewport. It will be compiled into <code>calc()</code> functions with a mix of <code>rem</code> and viewport units to enable the responsive scaling behavior.</p>
-    <h2 id="using-rfs">Using RFS<a class="anchor-link" href="#using-rfs" aria-label="Link to Using RFS"></a></h2>
-    <p>The mixins are included in Bootstrap and are available once you include Bootstrap’s <code>scss</code>. RFS can also be <a href="https://github.com/twbs/rfs/tree/v10.0.0#installation">installed standalone</a> if needed.</p>
-    <h3 id="using-the-mixins">Using the mixins<a class="anchor-link" href="#using-the-mixins" aria-label="Link to Using the mixins"></a></h3>
+    <p>该机制会根据浏览器视口的尺寸自动计算合适的值。它会被编译成混合使用 <code>rem</code> 和视口单位的 <code>calc()</code> 函数，从而实现响应式缩放行为。</p>
+    <h2 id="using-rfs">使用 RFS<a class="anchor-link" href="#using-rfs" aria-label="使用 RFS 链接"></a></h2>
+    <p>这些 mixin 已包含在 Bootstrap 中，引入 Bootstrap 的 <code>scss</code> 后即可使用。如有需要，RFS 也可以<a href="https://github.com/twbs/rfs/tree/v10.0.0#installation">单独安装</a>。</p>
+    <h3 id="using-the-mixins">使用 mixin<a class="anchor-link" href="#using-the-mixins" aria-label="使用 mixin 链接"></a></h3>
     <p>
-      The <code>rfs()</code> mixin has shorthands for <code>font-size</code>, <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>, <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>. See the
-      example below for source Sass and compiled CSS.
+      <code>rfs()</code> mixin 为 <code>font-size</code>、<code>margin</code>、<code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code>、<code>margin-left</code>、<code>padding</code>、<code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 提供了简写形式。下面的示例展示了 Sass 源码和编译后的 CSS。
     </p>
     <CodeWrapper
       code=".title {
@@ -36,7 +34,7 @@
 "
       lang="css"
     />
-    <p>Any other property can be passed to the <code>rfs()</code> mixin like this:</p>
+    <p>其他任何属性都可以像下面这样传给 <code>rfs()</code> mixin：</p>
     <CodeWrapper
       code=".selector {
   @include rfs(4rem, border-radius);
@@ -44,7 +42,7 @@
 "
       lang="scss"
     />
-    <p><code>!important</code> can also just be added to whatever value you want:</p>
+    <p><code>!important</code> 也可以直接添加到任何你想要的值后面：</p>
     <CodeWrapper
       code=".selector {
   @include padding(2.5rem !important);
@@ -52,15 +50,14 @@
 "
       lang="scss"
     />
-    <h3 id="using-the-functions">Using the functions<a class="anchor-link" href="#using-the-functions" aria-label="Link to Using the functions"></a></h3>
-    <p>When you don’t want to use the includes, there are also two functions:</p>
+    <h3 id="using-the-functions">使用函数<a class="anchor-link" href="#using-the-functions" aria-label="使用函数链接"></a></h3>
+    <p>如果你不想使用 include，还有两个函数可用：</p>
     <ul>
-      <li><code>rfs-value()</code> converts a value into a <code>rem</code> value if a <code>px</code> value is passed, in other cases it returns the same result.</li>
-      <li><code>rfs-fluid-value()</code> returns the fluid version of a value if the property needs rescaling.</li>
+      <li>如果传入的是 <code>px</code> 值，<code>rfs-value()</code> 会将其转换为 <code>rem</code> 值，其他情况下则返回相同的结果。</li>
+      <li>如果该属性需要重新缩放，<code>rfs-fluid-value()</code> 会返回值的流体版本。</li>
     </ul>
     <p>
-      In this example, we use one of Bootstrap’s built-in
-      <a href="/layout/breakpoints">responsive breakpoint mixins</a> to only apply styling below the <code>lg</code> breakpoint.
+      在这个示例中，我们使用 Bootstrap 内置的<a href="/layout/breakpoints">响应式断点 mixin</a>，仅在 <code>lg</code> 断点以下应用样式。
     </p>
     <CodeWrapper
       code=".selector {
@@ -82,27 +79,26 @@
 "
       lang="css"
     />
-    <h2 id="extended-documentation">Extended documentation<a class="anchor-link" href="#extended-documentation" aria-label="Link to Extended documentation"></a></h2>
+    <h2 id="extended-documentation">扩展文档<a class="anchor-link" href="#extended-documentation" aria-label="扩展文档链接"></a></h2>
     <p>
-      RFS is a separate project under the Bootstrap organization. More about RFS and its configuration can be found on its
-      <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub repository</a>.
+      RFS 是 Bootstrap 组织下的一个独立项目。关于 RFS 及其配置的更多信息，请参阅其 <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub 仓库</a>。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#what-is-rfs">What is RFS?</a></li>
+      <li><a href="#what-is-rfs">什么是 RFS？</a></li>
       <li>
-        <a href="#using-rfs">Using RFS</a>
+        <a href="#using-rfs">使用 RFS</a>
         <ul>
-          <li><a href="#using-the-mixins">Using the mixins</a></li>
-          <li><a href="#using-the-functions">Using the functions</a></li>
+          <li><a href="#using-the-mixins">使用 mixin</a></li>
+          <li><a href="#using-the-functions">使用函数</a></li>
         </ul>
       </li>
       <li>
-        <a href="#extended-documentation">Extended documentation</a>
+        <a href="#extended-documentation">扩展文档</a>
       </li>
     </ul>
   </nav>

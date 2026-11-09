@@ -1,32 +1,31 @@
 <template>
   <article class="bd-content">
-    <h1>Color</h1>
-    <p>Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
+    <h1>颜色</h1>
+    <p>Bootstrap 由一个完善的颜色系统支撑，为我们的样式和组件提供主题。这使任何项目都能进行更全面的自定义和扩展。</p>
 
-    <h2 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h2>
+    <h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色"></a></h2>
     <AddedIn version="5.3.0" />
     <p>
-      Bootstrap’s color palette has continued to expand and become more nuanced in v5.3.0. We’ve added new variables for
-      <code>secondary</code> and <code>tertiary</code> text and background colors, plus <code>{color}-bg-subtle</code>, <code>{color}-border-subtle</code>, and <code>{color}-text-emphasis</code> for our theme colors. These new colors are available through Sass and CSS variables (but not our color maps or utility classes) with the express goal of
-      making it easier to customize across multiple colors modes like light and dark. These new variables are globally set on <code>:root</code> and are adapted for our new dark color mode while our original theme colors remain unchanged.
+      Bootstrap 的调色板在 v5.3.0 中继续扩展并变得更加精细。我们为 <code>secondary</code> 和 <code>tertiary</code> 文本及背景色新增了变量，并为我们的主题色新增了 <code>{color}-bg-subtle</code>、<code>{color}-border-subtle</code> 和 <code>{color}-text-emphasis</code>。这些新颜色可通过 Sass 和 CSS 变量使用（但不能通过我们的颜色映射或工具类使用），其明确目标是
+      让在浅色和深色等多种颜色模式之间进行自定义变得更容易。这些新变量全局设置在 <code>:root</code> 上，并针对我们新的深色颜色模式进行了适配，而原有的主题色保持不变。
     </p>
-    <p>Colors ending in <code>-rgb</code> provide the <code>red, green, blue</code> values for use in <code>rgb()</code> and <code>rgba()</code> color modes. For example, <code>rgba(var(--bs-secondary-bg-rgb), .5)</code>.</p>
+    <p>以 <code>-rgb</code> 结尾的颜色提供 <code>red, green, blue</code> 值，供 <code>rgb()</code> 和 <code>rgba()</code> 颜色模式使用。例如 <code>rgba(var(--bs-secondary-bg-rgb), .5)</code>。</p>
     <Callout type="warning">
-      <p><strong>Heads up!</strong> There’s some potential confusion with our new secondary and tertiary colors, and our existing secondary theme color, as well as our light and dark theme colors. Expect this to be ironed out in v6.</p>
+      <p><strong>注意！</strong>我们新的 secondary 和 tertiary 颜色与我们现有的 secondary 主题色以及浅色、深色主题色之间可能存在一些混淆。预计这将在 v6 中得到解决。</p>
     </Callout>
     <div class="table-responsive">
       <table class="table table-swatches">
         <thead>
           <tr>
-            <th style="width: 340px">Description</th>
-            <th style="width: 200px" class="ps-0">Swatch</th>
-            <th>Variables</th>
+            <th style="width: 340px">描述</th>
+            <th style="width: 200px" class="ps-0">色板</th>
+            <th>变量</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td rowspan="2">
-              <p><strong>Body —</strong> Default foreground (color) and background, including components.</p>
+              <p><strong>Body —</strong> 默认前景色（颜色）和背景色，包括组件。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2" style="background-color: var(--bs-body-color)">&nbsp;</div>
@@ -45,7 +44,7 @@
           </tr>
           <tr>
             <td rowspan="2">
-              <p><strong>Secondary —</strong> Use the <code>color</code> option for lighter text. Use the <code>bg</code> option for dividers and to indicate disabled component states.</p>
+              <p><strong>Secondary —</strong> 使用 <code>color</code> 选项以获得较浅的文本。使用 <code>bg</code> 选项用于分隔线并指示禁用的组件状态。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2" style="background-color: var(--bs-secondary-color)">&nbsp;</div>
@@ -64,7 +63,7 @@
           </tr>
           <tr>
             <td rowspan="2">
-              <p><strong>Tertiary —</strong> Use the <code>color</code> option for even lighter text. Use the <code>bg</code> option to style backgrounds for hover states, accents, and wells.</p>
+              <p><strong>Tertiary —</strong> 使用 <code>color</code> 选项以获得更浅的文本。使用 <code>bg</code> 选项为悬停状态、强调区域和 well 设置背景样式。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2" style="background-color: var(--bs-tertiary-color)">&nbsp;</div>
@@ -83,7 +82,7 @@
           </tr>
           <tr>
             <td>
-              <p><strong>Emphasis —</strong> For higher contrast text. Not applicable for backgrounds.</p>
+              <p><strong>Emphasis —</strong> 用于对比度更高的文本。不适用于背景。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2" style="background-color: var(--bs-emphasis-color)">&nbsp;</div>
@@ -94,7 +93,7 @@
           </tr>
           <tr>
             <td>
-              <p><strong>Border —</strong> For component borders, dividers, and rules. Use <code>--bs-border-color-translucent</code> to blend with backgrounds with an <code>rgba()</code> value.</p>
+              <p><strong>Border —</strong> 用于组件边框、分隔线和规则线。使用 <code>--bs-border-color-translucent</code> 通过 <code>rgba()</code> 值与背景混合。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2" style="background-color: var(--bs-border-color)">&nbsp;</div>
@@ -105,7 +104,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Primary —</strong> Main theme color, used for hyperlinks, focus styles, and component and form active states.</p>
+              <p><strong>Primary —</strong> 主主题色，用于超链接、聚焦样式以及组件和表单的活动状态。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-primary">&nbsp;</div>
@@ -140,7 +139,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Success —</strong> Theme color used for positive or successful actions and information.</p>
+              <p><strong>Success —</strong> 用于积极或成功操作及信息的主题色。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-success">&nbsp;</div>
@@ -175,7 +174,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Danger —</strong> Theme color used for errors and dangerous actions.</p>
+              <p><strong>Danger —</strong> 用于错误和危险操作的主题色。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-danger">&nbsp;</div>
@@ -210,7 +209,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Warning —</strong> Theme color used for non-destructive warning messages.</p>
+              <p><strong>Warning —</strong> 用于非破坏性警告消息的主题色。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-warning">&nbsp;</div>
@@ -245,7 +244,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Info —</strong> Theme color used for neutral and informative content.</p>
+              <p><strong>Info —</strong> 用于中性和信息性内容的主题色。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-info">&nbsp;</div>
@@ -280,7 +279,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Light —</strong> Additional theme option for less contrasting colors.</p>
+              <p><strong>Light —</strong> 对比度较低颜色的附加主题选项。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-light">&nbsp;</div>
@@ -315,7 +314,7 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><strong>Dark —</strong> Additional theme option for higher contrasting colors.</p>
+              <p><strong>Dark —</strong> 对比度较高颜色的附加主题选项。</p>
             </td>
             <td class="ps-0">
               <div class="p-3 rounded-2 bg-dark">&nbsp;</div>
@@ -351,32 +350,32 @@
         </tbody>
       </table>
     </div>
-    <h3 id="using-the-new-colors">Using the new colors<a class="anchor-link" href="#using-the-new-colors" aria-label="Link to Using the new colors"></a></h3>
+    <h3 id="using-the-new-colors">使用新颜色<a class="anchor-link" href="#using-the-new-colors" aria-label="使用新颜色"></a></h3>
     <p>
-      These new colors are accessible via CSS variables and utility classes—like <code>--bs-primary-bg-subtle</code> and <code>.bg-primary-subtle</code>—allowing you to compose your own CSS rules with the variables, or to quickly apply styles via classes. The utilities are built with the color’s associated CSS variables, and since we customize
-      those CSS variables for dark mode, they are also adaptive to color mode by default.
+      这些新颜色可通过 CSS 变量和工具类（如 <code>--bs-primary-bg-subtle</code> 和 <code>.bg-primary-subtle</code>）访问，让你可以使用这些变量组合自己的 CSS 规则，或通过类快速应用样式。这些工具类构建于颜色对应的 CSS 变量之上，并且由于我们为深色模式自定义了
+      这些 CSS 变量，因此它们默认也会自适应颜色模式。
     </p>
     <Example
       code='<div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
   Example element with utilities
 </div>'
     />
-    <h3 id="theme-colors">Theme colors<a class="anchor-link" href="#theme-colors" aria-label="Link to Theme colors"></a></h3>
+    <h3 id="theme-colors">主题色<a class="anchor-link" href="#theme-colors" aria-label="主题色"></a></h3>
     <p>
-      We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap’s
-      <code>scss/_variables.scss</code> file.
+      我们使用所有颜色中的一个子集来创建较小的调色板，用于生成配色方案，这些颜色同样以 Sass 变量和 Sass 映射的形式提供，位于 Bootstrap 的
+      <code>scss/_variables.scss</code> 文件中。
     </p>
     <div class="row">
       <div v-for="themeColor in data['theme-colors']" class="col-md-4">
         <div :class="`p-3 mb-3 text-bg-${themeColor.name} rounded-3`">{{ themeColor.name }}</div>
       </div>
     </div>
-    <p>All these colors are available as a Sass map, <code>$theme-colors</code>.</p>
+    <p>所有这些颜色都作为 Sass 映射 <code>$theme-colors</code> 提供。</p>
     <ScssDocs name="theme-colors-map" file="scss/_variables.scss" />
-    <p>Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to modify these colors.</p>
-    <h3 id="all-colors">All colors<a class="anchor-link" href="#all-colors" aria-label="Link to All colors"></a></h3>
-    <p>All Bootstrap colors are available as Sass variables and a Sass map in <code>scss/_variables.scss</code> file. To avoid increased file sizes, we don’t create text or background color classes for each of these variables. Instead, we choose a subset of these colors for a <a href="#theme-colors">theme palette</a>.</p>
-    <p>Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors—one for the swatch’s current colors, one for against white, and one for against black.</p>
+    <p>请查阅<a href="/customize/sass#maps-and-loops">我们的 Sass 映射和循环文档</a>，了解如何修改这些颜色。</p>
+    <h3 id="all-colors">所有颜色<a class="anchor-link" href="#all-colors" aria-label="所有颜色"></a></h3>
+    <p>所有 Bootstrap 颜色都以 Sass 变量和 Sass 映射的形式提供，位于 <code>scss/_variables.scss</code> 文件中。为避免文件体积增大，我们不会为这些变量中的每一个都创建文本或背景颜色类。相反，我们会为<a href="#theme-colors">主题调色板</a>选择这些颜色中的一个子集。</p>
+    <p>自定义颜色时，请务必监控对比度。如下所示，我们为主要颜色中的每一个都添加了三种对比度值——一种针对色板当前的颜色，一种针对白色背景，一种针对黑色背景。</p>
     <div class="row font-monospace">
       <div class="col-md-4 mb-3">
         <div class="p-3 mb-2 position-relative swatch-blue"><strong class="d-block">$blue</strong>#0d6efd</div>
@@ -519,30 +518,30 @@
         </div>
       </div>
     </div>
-    <h3 id="notes-on-sass">Notes on Sass<a class="anchor-link" href="#notes-on-sass" aria-label="Link to Notes on Sass"></a></h3>
+    <h3 id="notes-on-sass">Sass 说明<a class="anchor-link" href="#notes-on-sass" aria-label="Sass 说明"></a></h3>
     <p>
-      Sass cannot programmatically generate variables, so we manually created variables for every tint and shade ourselves. We specify the midpoint value (e.g.,
-      <code>$blue-500</code>) and use custom color functions to tint (lighten) or shade (darken) our colors via Sass’s <code>mix()</code> color function.
+      Sass 无法以编程方式生成变量，因此我们手动为每个色调和色阶创建了变量。我们指定中间值（例如
+      <code>$blue-500</code>），并使用自定义颜色函数通过 Sass 的 <code>mix()</code> 颜色函数来为颜色添加色调（变亮）或色阶（变暗）。
     </p>
     <p>
-      Using <code>mix()</code> is not the same as <code>lighten()</code> and <code>darken()</code>—the former blends the specified color with white or black, while the latter only adjusts the lightness value of each color. The result is a much more complete suite of colors, as
-      <a href="https://codepen.io/emdeoh/pen/zYOQOPB">shown in this CodePen demo</a>.
+      使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如
+      <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。
     </p>
     <p>
-      Our <code>tint-color()</code> and <code>shade-color()</code> functions use <code>mix()</code> alongside our <code>$theme-color-interval</code> variable, which specifies a stepped percentage value for each mixed color we produce. See the <code>scss/_functions.scss</code> and <code>scss/_variables.scss</code> files for the full source code.
+      我们的 <code>tint-color()</code> 和 <code>shade-color()</code> 函数使用 <code>mix()</code> 以及我们的 <code>$theme-color-interval</code> 变量，该变量为我们生成的每种混合颜色指定一个阶梯式的百分比值。完整源代码请参阅 <code>scss/_functions.scss</code> 和 <code>scss/_variables.scss</code> 文件。
     </p>
-    <h2 id="color-sass-maps">Color Sass maps<a class="anchor-link" href="#color-sass-maps" aria-label="Link to Color Sass maps"></a></h2>
-    <p>Bootstrap’s source Sass files include three maps to help you quickly and easily loop over a list of colors and their hex values.</p>
+    <h2 id="color-sass-maps">颜色 Sass 映射<a class="anchor-link" href="#color-sass-maps" aria-label="颜色 Sass 映射"></a></h2>
+    <p>Bootstrap 的 Sass 源文件包含三个映射，帮助你快速轻松地遍历颜色列表及其十六进制值。</p>
     <ul>
-      <li><code>$colors</code> lists all our available base (<code>500</code>) colors</li>
-      <li><code>$theme-colors</code> lists all semantically named theme colors (shown below)</li>
-      <li><code>$grays</code> lists all tints and shades of gray</li>
+      <li><code>$colors</code> 列出我们所有可用的基础（<code>500</code>）颜色</li>
+      <li><code>$theme-colors</code> 列出所有具有语义名称的主题色（如下所示）</li>
+      <li><code>$grays</code> 列出所有灰度的色调和色阶</li>
     </ul>
-    <p>Within <code>scss/_variables.scss</code>, you’ll find Bootstrap’s color variables and Sass map. Here’s an example of the <code>$colors</code> Sass map:</p>
+    <p>在 <code>scss/_variables.scss</code> 中，你会找到 Bootstrap 的颜色变量和 Sass 映射。以下是 <code>$colors</code> Sass 映射的示例：</p>
     <ScssDocs name="colors-map" file="scss/_variables.scss" />
-    <p>Add, remove, or modify values within the map to update how they’re used in many other components. Unfortunately at this time, not <em>every</em> component utilizes this Sass map. Future updates will strive to improve upon this. Until then, plan on making use of the <code>${color}</code> variables and this Sass map.</p>
-    <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
-    <p>Here’s how you can use these in your Sass:</p>
+    <p>在映射中添加、移除或修改值，以更新它们在许多其他组件中的使用方式。遗憾的是，目前并非<em>每个</em>组件都使用此 Sass 映射。未来的更新将努力改进这一点。在此之前，请计划使用 <code>${color}</code> 变量和此 Sass 映射。</p>
+    <h3 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h3>
+    <p>以下是在 Sass 中使用它们的方法：</p>
     <CodeWrapper
       code=".alpha { color: $purple; }
 .beta {
@@ -552,16 +551,16 @@
 "
       lang="scss"
     />
-    <p><a href="/utilities/colors">Color</a> and <a href="/utilities/background">background</a> utility classes are also available for setting <code>color</code> and <code>background-color</code> using the <code>500</code> color values.</p>
-    <h2 id="generating-utilities">Generating utilities<a class="anchor-link" href="#generating-utilities" aria-label="Link to Generating utilities"></a></h2>
+    <p><a href="/utilities/colors">颜色</a>和<a href="/utilities/background">背景</a>工具类也可用于使用 <code>500</code> 颜色值设置 <code>color</code> 和 <code>background-color</code>。</p>
+    <h2 id="generating-utilities">生成工具类<a class="anchor-link" href="#generating-utilities" aria-label="生成工具类"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>Bootstrap doesn’t include <code>color</code> and <code>background-color</code> utilities for every color variable, but you can generate these yourself with our <a href="/utilities/api">utility API</a> and our extended Sass maps added in v5.1.0.</p>
+    <p>Bootstrap 并未为每个颜色变量都包含 <code>color</code> 和 <code>background-color</code> 工具类，但你可以使用我们的<a href="/utilities/api">工具类 API</a> 以及 v5.1.0 中新增的扩展 Sass 映射自行生成。</p>
     <ol>
-      <li>To start, make sure you’ve imported our functions, variables, mixins, and utilities.</li>
-      <li>Use our <code>map-merge-multiple()</code> function to quickly merge multiple Sass maps together in a new map.</li>
-      <li>Merge this new combined map to extend any utility with a <code>{color}-{level}</code> class name.</li>
+      <li>首先，确保你已经导入了我们的函数、变量、mixin 和工具类。</li>
+      <li>使用我们的 <code>map-merge-multiple()</code> 函数，快速将多个 Sass 映射合并到一个新映射中。</li>
+      <li>合并这个新的组合映射，以 <code>{color}-{level}</code> 类名扩展任何工具类。</li>
     </ol>
-    <p>Here’s an example that generates text color utilities (e.g., <code>.text-purple-500</code>) using the above steps.</p>
+    <p>以下示例使用上述步骤生成文本颜色工具类（例如 <code>.text-purple-500</code>）。</p>
     <CodeWrapper
       code="@import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
@@ -593,30 +592,30 @@ $utilities: map-merge(
       lang="scss"
     />
 
-    <p>This will generate new <code>.text-{color}-{level}</code> utilities for every color and level. You can do the same for any other utility and property as well.</p>
+    <p>这将为每种颜色和级别生成新的 <code>.text-{color}-{level}</code> 工具类。你也可以对其他任何工具类和属性做同样的事情。</p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#colors">Colors</a>
+        <a href="#colors">颜色</a>
         <ul>
-          <li><a href="#using-the-new-colors">Using the new colors</a></li>
-          <li><a href="#theme-colors">Theme colors</a></li>
-          <li><a href="#all-colors">All colors</a></li>
-          <li><a href="#notes-on-sass">Notes on Sass</a></li>
+          <li><a href="#using-the-new-colors">使用新颜色</a></li>
+          <li><a href="#theme-colors">主题色</a></li>
+          <li><a href="#all-colors">所有颜色</a></li>
+          <li><a href="#notes-on-sass">Sass 说明</a></li>
         </ul>
       </li>
       <li>
-        <a href="#color-sass-maps">Color Sass maps</a>
+        <a href="#color-sass-maps">颜色 Sass 映射</a>
         <ul>
-          <li><a href="#example">Example</a></li>
+          <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
-        <a href="#generating-utilities">Generating utilities</a>
+        <a href="#generating-utilities">生成工具类</a>
       </li>
     </ul>
   </nav>

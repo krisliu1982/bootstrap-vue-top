@@ -1,44 +1,44 @@
 <template>
   <article class="bd-content">
     <h1>JavaScript</h1>
-    <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
+    <p>使用我们可选的 JavaScript 插件，让 Bootstrap 生动起来。了解每个插件、我们的数据 API 与编程式 API 选项等内容。</p>
 
-    <h2 id="individual-or-compiled">Individual or compiled<a class="anchor-link" href="#individual-or-compiled" aria-label="Link to Individual or compiled"></a></h2>
-    <p>Plugins can be included individually (using Bootstrap’s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don’t include both).</p>
-    <p>If you use a bundler (Webpack, Parcel, Vite…), you can use <code>/js/dist/*.js</code> files which are UMD ready.</p>
-    <h2 id="usage-with-javascript-frameworks">Usage with JavaScript frameworks<a class="anchor-link" href="#usage-with-javascript-frameworks" aria-label="Link to Usage with JavaScript frameworks"></a></h2>
+    <h2 id="individual-or-compiled">单独引入或编译版本<a class="anchor-link" href="#individual-or-compiled" aria-label="单独引入或编译版本链接"></a></h2>
+    <p>插件可以单独引入（使用 Bootstrap 各自的 <code>js/dist/*.js</code>），也可以通过 <code>bootstrap.js</code> 或压缩版 <code>bootstrap.min.js</code> 一次性全部引入（不要同时引入两者）。</p>
+    <p>如果你使用打包工具（Webpack、Parcel、Vite……），可以使用已支持 UMD 的 <code>/js/dist/*.js</code> 文件。</p>
+    <h2 id="usage-with-javascript-frameworks">与 JavaScript 框架一起使用<a class="anchor-link" href="#usage-with-javascript-frameworks" aria-label="与 JavaScript 框架一起使用链接"></a></h2>
     <p>
-      While the Bootstrap CSS can be used with any framework,
-      <strong>the Bootstrap JavaScript is not fully compatible with JavaScript frameworks like React, Vue, and Angular</strong>
-      which assume full knowledge of the DOM. Both Bootstrap and the framework may attempt to mutate the same DOM element, resulting in bugs like dropdowns that are stuck in the “open” position.
+      虽然 Bootstrap CSS 可用于任何框架，但
+      <strong>Bootstrap JavaScript 与 React、Vue 和 Angular 等 JavaScript 框架并不完全兼容</strong>，
+      因为这些框架假定自己有对 DOM 的完整掌控权。Bootstrap 和框架都可能尝试修改同一个 DOM 元素，从而导致诸如下拉菜单卡在"打开"位置之类的问题。
     </p>
     <p>
-      A better alternative for those using this type of frameworks is to use a framework-specific package
-      <strong>instead of</strong> the Bootstrap JavaScript. Here are some of the most popular options:
+      对于使用此类框架的用户来说，更好的选择是使用针对该框架的专用包，
+      <strong>而不是</strong> Bootstrap JavaScript。以下是一些最流行的选项：
     </p>
     <ul>
       <li>
         React: <a href="https://react-bootstrap.github.io/">React Bootstrap</a
         ><Callout>
-          <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap with React, Next.js, and React Bootstrap from the <a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples repository</a>. You can also
-          <a href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx">open the example in StackBlitz</a>.</Callout
+          <strong>亲自试一试吧！</strong>从 <a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples 仓库</a>下载在 React、Next.js 和 React Bootstrap 中使用 Bootstrap 的源码和可运行演示。你也可以
+          <a href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx">在 StackBlitz 中打开该示例</a>。</Callout
         >
       </li>
-      <li>Vue: <a href="https://bootstrap-vue.org/">BootstrapVue</a> (Bootstrap 4)</li>
-      <li>Vue 3: <a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a> (Bootstrap 5, currently in alpha)</li>
+      <li>Vue：<a href="https://bootstrap-vue.org/">BootstrapVue</a>（Bootstrap 4）</li>
+      <li>Vue 3：<a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a>（Bootstrap 5，目前处于 alpha 阶段）</li>
       <li>
-        Angular: <a href="https://ng-bootstrap.github.io/">ng-bootstrap</a> or
+        Angular：<a href="https://ng-bootstrap.github.io/">ng-bootstrap</a> 或
         <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap</a>
       </li>
     </ul>
-    <h2 id="using-bootstrap-as-a-module">Using Bootstrap as a module<a class="anchor-link" href="#using-bootstrap-as-a-module" aria-label="Link to Using Bootstrap as a module"></a></h2>
+    <h2 id="using-bootstrap-as-a-module">将 Bootstrap 作为模块使用<a class="anchor-link" href="#using-bootstrap-as-a-module" aria-label="将 Bootstrap 作为模块使用链接"></a></h2>
     <Callout>
       <p>
-        <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap as an ES module from the <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples repository</a>. You can also
-        <a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">open the example in StackBlitz</a>.
+        <strong>亲自试一试吧！</strong>从 <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples 仓库</a>下载将 Bootstrap 作为 ES 模块使用的源码和可运行演示。你也可以
+        <a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">在 StackBlitz 中打开该示例</a>。
       </p>
     </Callout>
-    <p>We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a module in the browser, if your <a href="https://caniuse.com/es6-module">targeted browsers support it</a>.</p>
+    <p>我们提供了一个以 <code>ESM</code> 形式构建的 Bootstrap 版本（<code>bootstrap.esm.js</code> 和 <code>bootstrap.esm.min.js</code>），如果你的<a href="https://caniuse.com/es6-module">目标浏览器支持</a>，就可以在浏览器中将 Bootstrap 作为模块使用。</p>
     <CodeWrapper
       code='&lt;script type="module"&gt;
   import { Toast } from &#39;bootstrap.esm.min.js&#39;
@@ -49,23 +49,22 @@
       lang="html"
     />
     <p>
-      Compared to JS bundlers, using ESM in the browser requires you to use the full path and filename instead of the module name.
-      <a href="https://v8.dev/features/modules#specifiers">Read more about JS modules in the browser.</a> That’s why we use <code>&#39;bootstrap.esm.min.js&#39;</code> instead of <code>&#39;bootstrap&#39;</code> above. However, this is further complicated by our Popper dependency, which imports Popper into our JavaScript like so:
+      与 JS 打包工具相比，在浏览器中使用 ESM 需要你使用完整路径和文件名，而不是模块名。
+      <a href="https://v8.dev/features/modules#specifiers">进一步了解浏览器中的 JS 模块。</a>这就是为什么上面的代码中使用 <code>&#39;bootstrap.esm.min.js&#39;</code> 而不是 <code>&#39;bootstrap&#39;</code>。不过，我们的 Popper 依赖让这件事变得更加复杂，它像这样将 Popper 导入到我们的 JavaScript 中：
     </p>
     <CodeWrapper
       code='import * as Popper from "@popperjs/core"
 '
       lang="javascript"
     />
-    <p>If you try this as-is, you’ll see an error in the console like the following:</p>
+    <p>如果你照原样尝试，控制台中会出现类似下面的错误：</p>
     <CodeWrapper
       code='Uncaught TypeError: Failed to resolve module specifier "@popperjs/core". Relative references must start with either "/", "./", or "../".
 '
       lang="text"
     />
     <p>
-      To fix this, you can use an <code>importmap</code> to resolve the arbitrary module names to complete paths. If your <a href="https://caniuse.com/?search=importmap">targeted browsers</a> do not support <code>importmap</code>, you’ll need to use the <a href="https://github.com/guybedford/es-module-shims">es-module-shims</a> project. Here’s how
-      it works for Bootstrap and Popper:
+      要解决这个问题，你可以使用 <code>importmap</code> 将任意模块名解析为完整路径。如果你的<a href="https://caniuse.com/?search=importmap">目标浏览器</a>不支持 <code>importmap</code>，则需要使用 <a href="https://github.com/guybedford/es-module-shims">es-module-shims</a> 项目。下面是它对 Bootstrap 和 Popper 生效的方式：
     </p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
@@ -98,27 +97,27 @@
 &lt;/html&gt;'
       lang="html"
     />
-    <h2 id="dependencies">Dependencies<a class="anchor-link" href="#dependencies" aria-label="Link to Dependencies"></a></h2>
-    <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.</p>
-    <p>Our dropdowns, popovers, and tooltips also depend on <a href="https://popper.js.org/docs/v2/">Popper</a>.</p>
-    <h2 id="data-attributes">Data attributes<a class="anchor-link" href="#data-attributes" aria-label="Link to Data attributes"></a></h2>
+    <h2 id="dependencies">依赖<a class="anchor-link" href="#dependencies" aria-label="依赖链接"></a></h2>
+    <p>部分插件和 CSS 组件依赖于其他插件。如果你单独引入插件，请务必在文档中查看这些依赖关系。</p>
+    <p>我们的下拉菜单、弹出框和工具提示还依赖于 <a href="https://popper.js.org/docs/v2/">Popper</a>。</p>
+    <h2 id="data-attributes">数据属性<a class="anchor-link" href="#data-attributes" aria-label="数据属性链接"></a></h2>
     <p>
-      Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to
-      <strong>only use one set of data attributes on a single element</strong> (e.g., you cannot trigger a tooltip and modal from the same button.)
+      几乎所有 Bootstrap 插件都可以仅通过 HTML 和 data 数据属性来启用和配置（这是我们认为使用 JavaScript 功能的首选方式）。请务必
+      <strong>只在单个元素上使用一组数据属性</strong>（例如，你无法用同一个按钮同时触发工具提示和模态框。）
     </p>
     <JsDataAttributes />
-    <h2 id="selectors">Selectors<a class="anchor-link" href="#selectors" aria-label="Link to Selectors"></a></h2>
-    <p>We use the native <code>querySelector</code> and <code>querySelectorAll</code> methods to query DOM elements for performance reasons, so you must use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>. If you use special selectors like <code>collapse:Example</code>, be sure to escape them.</p>
-    <h2 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h2>
+    <h2 id="selectors">选择器<a class="anchor-link" href="#selectors" aria-label="选择器链接"></a></h2>
+    <p>出于性能考虑，我们使用原生的 <code>querySelector</code> 和 <code>querySelectorAll</code> 方法来查询 DOM 元素，因此你必须使用<a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">有效的选择器</a>。如果你使用 <code>collapse:Example</code> 这类特殊选择器，请务必对其进行转义。</p>
+    <h2 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h2>
     <p>
-      Bootstrap provides custom events for most plugins’ unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex.
-      <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.
+      Bootstrap 为大多数插件的独有操作提供了自定义事件。通常，这些事件以不定式和过去分词两种形式出现——其中不定式（例如
+      <code>show</code>）在事件开始时触发，其过去分词形式（例如 <code>shown</code>）在操作完成时触发。
     </p>
     <p>
-      All infinitive events provide
+      所有不定式事件都提供
       <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a>
-      functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call
-      <code>preventDefault()</code>.
+      功能。这让我们能够在某个操作开始之前阻止其执行。从事件处理函数中返回 false 也会自动调用
+      <code>preventDefault()</code>。
     </p>
     <CodeWrapper
       code="const myModal = document.querySelector(&#39;#myModal&#39;)
@@ -129,8 +128,8 @@ myModal.addEventListener(&#39;show.bs.modal&#39;, event =&gt; {
 "
       lang="javascript"
     />
-    <h2 id="programmatic-api">Programmatic API<a class="anchor-link" href="#programmatic-api" aria-label="Link to Programmatic API"></a></h2>
-    <p>All constructors accept an optional options object or nothing (which initiates a plugin with its default behavior):</p>
+    <h2 id="programmatic-api">编程式 API<a class="anchor-link" href="#programmatic-api" aria-label="编程式 API 链接"></a></h2>
+    <p>所有构造函数都接受一个可选的选项对象，或什么都不传（这将以默认行为初始化插件）：</p>
     <CodeWrapper
       code="const myModalEl = document.querySelector(&#39;#myModal&#39;)
 const modal = new bootstrap.Modal(myModalEl) // initialized with defaults
@@ -140,22 +139,22 @@ const modal1 = new bootstrap.Modal(myModalEl, configObject) // initialized with 
 "
       lang="javascript"
     />
-    <p>If you’d like to get a particular plugin instance, each plugin exposes a <code>getInstance</code> method. For example, to retrieve an instance directly from an element:</p>
+    <p>如果你想获取某个特定的插件实例，每个插件都暴露了一个 <code>getInstance</code> 方法。例如，直接从元素中获取实例：</p>
     <CodeWrapper
       code="bootstrap.Popover.getInstance(myPopoverEl)
 "
       lang="javascript"
     />
-    <p>This method will return <code>null</code> if an instance is not initiated over the requested element.</p>
-    <p>Alternatively, <code>getOrCreateInstance</code> can be used to get the instance associated with a DOM element, or create a new one in case it wasn’t initialized.</p>
+    <p>如果请求的元素上尚未初始化实例，该方法将返回 <code>null</code>。</p>
+    <p>或者，可以使用 <code>getOrCreateInstance</code> 获取与 DOM 元素关联的实例，或者在尚未初始化时创建一个新实例。</p>
     <CodeWrapper
       code="bootstrap.Popover.getOrCreateInstance(myPopoverEl, configObject)
 "
       lang="javascript"
     />
-    <p>In case an instance wasn’t initialized, it may accept and use an optional configuration object as second argument.</p>
-    <h3 id="css-selectors-in-constructors">CSS selectors in constructors<a class="anchor-link" href="#css-selectors-in-constructors" aria-label="Link to CSS selectors in constructors"></a></h3>
-    <p>In addition to the <code>getInstance</code> and <code>getOrCreateInstance</code> methods, all plugin constructors can accept a DOM element or a valid <a href="#selectors">CSS selector</a> as the first argument. Plugin elements are found with the <code>querySelector</code> method since our plugins only support a single element.</p>
+    <p>如果实例尚未初始化，它还可以接受并使用一个可选的配置对象作为第二个参数。</p>
+    <h3 id="css-selectors-in-constructors">构造函数中的 CSS 选择器<a class="anchor-link" href="#css-selectors-in-constructors" aria-label="构造函数中的 CSS 选择器链接"></a></h3>
+    <p>除了 <code>getInstance</code> 和 <code>getOrCreateInstance</code> 方法之外，所有插件构造函数都接受 DOM 元素或有效的 <a href="#selectors">CSS 选择器</a>作为第一个参数。由于我们的插件仅支持单个元素，因此插件元素通过 <code>querySelector</code> 方法查找。</p>
     <CodeWrapper
       code='const modal = new bootstrap.Modal(&#39;#myModal&#39;)
 const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)
@@ -164,8 +163,8 @@ const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
 '
       lang="javascript"
     />
-    <h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions<a class="anchor-link" href="#asynchronous-functions-and-transitions" aria-label="Link to Asynchronous functions and transitions"></a></h3>
-    <p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started, but <strong>before it ends</strong>. In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
+    <h3 id="asynchronous-functions-and-transitions">异步函数和过渡<a class="anchor-link" href="#asynchronous-functions-and-transitions" aria-label="异步函数和过渡链接"></a></h3>
+    <p>所有编程式 API 方法都是<strong>异步的</strong>，它们在过渡开始时（但在<strong>过渡结束之前</strong>）就返回给调用者。如果要在过渡完成后执行某个操作，你可以监听相应的事件。</p>
     <CodeWrapper
       code="const myCollapseEl = document.querySelector(&#39;#myCollapse&#39;)
 
@@ -175,7 +174,7 @@ myCollapseEl.addEventListener(&#39;shown.bs.collapse&#39;, event =&gt; {
 "
       lang="javascript"
     />
-    <p>In addition, a method call on a <strong>transitioning component will be ignored</strong>.</p>
+    <p>此外，对<strong>正在过渡的组件调用方法将被忽略</strong>。</p>
     <CodeWrapper
       code="const myCarouselEl = document.querySelector(&#39;#myCarousel&#39;)
 const carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
@@ -189,8 +188,8 @@ carousel.to(&#39;2&#39;) // !! Will be ignored, as the transition to the slide 1
 "
       lang="javascript"
     />
-    <h4 id="dispose-method"><code>dispose</code> method</h4>
-    <p>While it may seem correct to use the <code>dispose</code> method immediately after <code>hide()</code>, it will lead to incorrect results. Here’s an example of the problem use:</p>
+    <h4 id="dispose-method"><code>dispose</code> 方法</h4>
+    <p>虽然在 <code>hide()</code> 之后立即调用 <code>dispose</code> 方法看起来是正确的，但这会导致错误的结果。下面是一个有问题的用法示例：</p>
     <CodeWrapper
       code="const myModal = document.querySelector(&#39;#myModal&#39;)
 myModal.hide() // it is asynchronous
@@ -201,10 +200,10 @@ myModal.addEventListener(&#39;shown.bs.hidden&#39;, event =&gt; {
 "
       lang="javascript"
     />
-    <h3 id="default-settings">Default settings<a class="anchor-link" href="#default-settings" aria-label="Link to Default settings"></a></h3>
+    <h3 id="default-settings">默认设置<a class="anchor-link" href="#default-settings" aria-label="默认设置链接"></a></h3>
     <p>
-      You can change the default settings for a plugin by modifying the plugin’s
-      <code>Constructor.Default</code> object:
+      你可以通过修改插件的
+      <code>Constructor.Default</code> 对象来更改插件的默认设置：
     </p>
     <CodeWrapper
       code="// changes default for the modal plugin’s `keyboard` option to false
@@ -212,28 +211,28 @@ bootstrap.Modal.Default.keyboard = false
 "
       lang="javascript"
     />
-    <h2 id="methods-and-properties">Methods and properties<a class="anchor-link" href="#methods-and-properties" aria-label="Link to Methods and properties"></a></h2>
-    <p>Every Bootstrap plugin exposes the following methods and static properties.</p>
+    <h2 id="methods-and-properties">方法和属性<a class="anchor-link" href="#methods-and-properties" aria-label="方法和属性链接"></a></h2>
+    <p>每个 Bootstrap 插件都暴露以下方法和静态属性。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s modal. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的模态框。（移除 DOM 元素上存储的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element.</td>
+            <td><em>静态</em>方法，允许你获取与 DOM 元素关联的模态框实例。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
+            <td><em>静态</em>方法，允许你获取与 DOM 元素关联的模态框实例，或者在尚未初始化时创建一个新实例。</td>
           </tr>
         </tbody>
       </table>
@@ -242,33 +241,33 @@ bootstrap.Modal.Default.keyboard = false
       <table class="table">
         <thead>
           <tr>
-            <th>Static property</th>
-            <th>Description</th>
+            <th>静态属性</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>NAME</code></td>
-            <td>Returns the plugin name. (Example: <code>bootstrap.Tooltip.NAME</code>)</td>
+            <td>返回插件名称。（例如：<code>bootstrap.Tooltip.NAME</code>）</td>
           </tr>
           <tr>
             <td><code>VERSION</code></td>
-            <td>The version of each of Bootstrap’s plugins can be accessed via the <code>VERSION</code> property of the plugin’s constructor (Example: <code>bootstrap.Tooltip.VERSION</code>)</td>
+            <td>可以通过插件构造函数的 <code>VERSION</code> 属性访问每个 Bootstrap 插件的版本（例如：<code>bootstrap.Tooltip.VERSION</code>）。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h2 id="sanitizer">Sanitizer<a class="anchor-link" href="#sanitizer" aria-label="Link to Sanitizer"></a></h2>
-    <p>Our tooltip and popover components are able to render arbitrary HTML to the page if configured to do so. To prevent cross-site scripting (XSS) attacks, these components use our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default.</p>
-    <p>The tags and attributes allowed by default are as follows. Any tags or attributes not explicitly allowed will be removed during sanitization:</p>
+    <h2 id="sanitizer">清理器<a class="anchor-link" href="#sanitizer" aria-label="清理器链接"></a></h2>
+    <p>如果进行了相应配置，我们的工具提示和弹出框组件可以在页面上渲染任意 HTML。为防止跨站脚本（XSS）攻击，这些组件会在将接受 HTML 的选项渲染到页面之前，使用内置的内容清理器对其进行清理。内容清理默认启用。</p>
+    <p>默认允许的标签和属性如下。任何未显式允许的标签或属性都会在清理过程中被移除：</p>
     <JsDocs name="allow-list" file="js/sanitizer.js" /><Callout type="warning">
       <p>
-        <strong>Exercise caution when using these advanced options.</strong> Refer to
-        <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
-        for more information. Vulnerabilities caused solely by disabling or modifying content sanitization are not considered within scope for Bootstrap’s security model.
+        <strong>使用这些高级选项时请务必小心。</strong>有关更多信息，请参阅
+        <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本防护速查表</a>。
+        仅因禁用或修改内容清理而引起的漏洞不在 Bootstrap 安全模型的考虑范围之内。
       </p>
     </Callout>
-    <p>You can add new values to this default <code>allowList</code>:</p>
+    <p>你可以向默认的 <code>allowList</code> 添加新值：</p>
     <CodeWrapper
       code="const myDefaultAllowList = bootstrap.Tooltip.Default.allowList
 
@@ -286,8 +285,8 @@ myDefaultAllowList[&#39;*&#39;].push(myCustomRegex)
       lang="javascript"
     />
     <p>
-      You can also replace our sanitizer with a dedicated library, for example
-      <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>:
+      你也可以用专门的库替换我们的清理器，例如
+      <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>：
     </p>
     <CodeWrapper
       code="const yourTooltipEl = document.querySelector(&#39;#yourTooltip&#39;)
@@ -299,8 +298,8 @@ const tooltip = new bootstrap.Tooltip(yourTooltipEl, {
 "
       lang="javascript"
     />
-    <h2 id="optionally-using-jquery">Optionally using jQuery<a class="anchor-link" href="#optionally-using-jquery" aria-label="Link to Optionally using jQuery"></a></h2>
-    <p><strong>You don’t need jQuery in Bootstrap 5</strong>, but it’s still possible to use our components with jQuery. If Bootstrap detects <code>jQuery</code> in the <code>window</code> object, it&#39;ll add all of our components in jQuery’s plugin system. This allows you to do the following:</p>
+    <h2 id="optionally-using-jquery">可选地使用 jQuery<a class="anchor-link" href="#optionally-using-jquery" aria-label="可选地使用 jQuery 链接"></a></h2>
+    <p><strong>在 Bootstrap 5 中你不需要 jQuery</strong>，但仍然可以将我们的组件与 jQuery 一起使用。如果 Bootstrap 在 <code>window</code> 对象中检测到 <code>jQuery</code>，它就会将所有组件添加到 jQuery 的插件系统中。这让你可以执行以下操作：</p>
     <CodeWrapper
       code='// to enable tooltips with the default configuration
 $(&#39;[data-bs-toggle="tooltip"]&#39;).tooltip()
@@ -316,9 +315,9 @@ $(&#39;#myTooltip&#39;).tooltip(&#39;show&#39;)
 '
       lang="javascript"
     />
-    <p>The same goes for our other components.</p>
-    <h3 id="no-conflict">No conflict<a class="anchor-link" href="#no-conflict" aria-label="Link to No conflict"></a></h3>
-    <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+    <p>我们的其他组件也是如此。</p>
+    <h3 id="no-conflict">避免冲突<a class="anchor-link" href="#no-conflict" aria-label="避免冲突链接"></a></h3>
+    <p>有时需要将 Bootstrap 插件与其他 UI 框架一起使用。在这种情况下，偶尔会出现命名空间冲突。如果发生这种情况，你可以调用希望还原值的插件上的 <code>.noConflict</code>。</p>
     <CodeWrapper
       code="const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
@@ -326,13 +325,13 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
       lang="javascript"
     />
     <p>
-      Bootstrap does not officially support third-party JavaScript libraries like Prototype or jQuery UI. Despite
-      <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.
+      Bootstrap 官方并不支持 Prototype 或 jQuery UI 等第三方 JavaScript 库。尽管有
+      <code>.noConflict</code> 和命名空间事件，仍可能存在你需要自行修复的兼容性问题。
     </p>
-    <h3 id="jquery-events">jQuery events<a class="anchor-link" href="#jquery-events" aria-label="Link to jQuery events"></a></h3>
+    <h3 id="jquery-events">jQuery 事件<a class="anchor-link" href="#jquery-events" aria-label="jQuery 事件链接"></a></h3>
     <p>
-      Bootstrap will detect jQuery if <code>jQuery</code> is present in the <code>window</code> object and there is no <code>data-bs-no-jquery</code> attribute set on <code>&lt;body&gt;</code>. If jQuery is found, Bootstrap will emit events thanks to jQuery’s event system. So if you want to listen to Bootstrap’s events, you’ll have to use the
-      jQuery methods (<code>.on</code>, <code>.one</code>) instead of <code>addEventListener</code>.
+      如果 <code>window</code> 对象中存在 <code>jQuery</code>，且 <code>&lt;body&gt;</code> 上没有设置 <code>data-bs-no-jquery</code> 属性，Bootstrap 就会检测到 jQuery。如果找到 jQuery，Bootstrap 会借助 jQuery 的事件系统来触发事件。因此，如果你想监听 Bootstrap 的事件，必须使用
+      jQuery 方法（<code>.on</code>、<code>.one</code>）而不是 <code>addEventListener</code>。
     </p>
     <CodeWrapper
       code="$(&#39;#myTab a&#39;).on(&#39;shown.bs.tab&#39;, () =&gt; {
@@ -341,45 +340,45 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
 "
       lang="javascript"
     />
-    <h2 id="disabled-javascript">Disabled JavaScript<a class="anchor-link" href="#disabled-javascript" aria-label="Link to Disabled JavaScript"></a></h2>
+    <h2 id="disabled-javascript">禁用 JavaScript 时<a class="anchor-link" href="#disabled-javascript" aria-label="禁用 JavaScript 时链接"></a></h2>
     <p>
-      Bootstrap’s plugins have no special fallback when JavaScript is disabled. If you care about the user experience in this case, use
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
+      当 JavaScript 被禁用时，Bootstrap 的插件没有特殊的降级方案。如果你在意这种情况下的用户体验，可以使用
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> 向用户说明情况（以及如何重新启用 JavaScript），和/或添加你自己的自定义降级方案。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#individual-or-compiled">Individual or compiled</a></li>
-      <li><a href="#usage-with-javascript-frameworks">Usage with JavaScript frameworks</a></li>
-      <li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
-      <li><a href="#dependencies">Dependencies</a></li>
-      <li><a href="#data-attributes">Data attributes</a></li>
-      <li><a href="#selectors">Selectors</a></li>
-      <li><a href="#events">Events</a></li>
+      <li><a href="#individual-or-compiled">单独引入或编译版本</a></li>
+      <li><a href="#usage-with-javascript-frameworks">与 JavaScript 框架一起使用</a></li>
+      <li><a href="#using-bootstrap-as-a-module">将 Bootstrap 作为模块使用</a></li>
+      <li><a href="#dependencies">依赖</a></li>
+      <li><a href="#data-attributes">数据属性</a></li>
+      <li><a href="#selectors">选择器</a></li>
+      <li><a href="#events">事件</a></li>
       <li>
-        <a href="#programmatic-api">Programmatic API</a>
+        <a href="#programmatic-api">编程式 API</a>
         <ul>
-          <li><a href="#css-selectors-in-constructors">CSS selectors in constructors</a></li>
+          <li><a href="#css-selectors-in-constructors">构造函数中的 CSS 选择器</a></li>
           <li>
-            <a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a>
+            <a href="#asynchronous-functions-and-transitions">异步函数和过渡</a>
           </li>
-          <li><a href="#default-settings">Default settings</a></li>
+          <li><a href="#default-settings">默认设置</a></li>
         </ul>
       </li>
-      <li><a href="#methods-and-properties">Methods and properties</a></li>
-      <li><a href="#sanitizer">Sanitizer</a></li>
+      <li><a href="#methods-and-properties">方法和属性</a></li>
+      <li><a href="#sanitizer">清理器</a></li>
       <li>
-        <a href="#optionally-using-jquery">Optionally using jQuery</a>
+        <a href="#optionally-using-jquery">可选地使用 jQuery</a>
         <ul>
-          <li><a href="#no-conflict">No conflict</a></li>
-          <li><a href="#jquery-events">jQuery events</a></li>
+          <li><a href="#no-conflict">避免冲突</a></li>
+          <li><a href="#jquery-events">jQuery 事件</a></li>
         </ul>
       </li>
       <li>
-        <a href="#disabled-javascript">Disabled JavaScript</a>
+        <a href="#disabled-javascript">禁用 JavaScript 时</a>
       </li>
     </ul>
   </nav>

@@ -1,27 +1,26 @@
 <template>
   <article class="bd-content">
-    <h1>RTL</h1>
-    <p>Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
+    <h1>从右到左（RTL）</h1>
+    <p>了解如何在 Bootstrap 的布局、组件和工具类中启用从右到左的文字支持。</p>
 
-    <h2 id="get-familiar">Get familiar<a class="anchor-link" href="#get-familiar" aria-label="Link to Get familiar"></a></h2>
+    <h2 id="get-familiar">熟悉基础<a class="anchor-link" href="#get-familiar" aria-label="熟悉基础链接"></a></h2>
     <p>
-      We recommend getting familiar with Bootstrap first by reading through our
-      <a href="/getting-started/introduction">Getting Started Introduction page</a>. Once you’ve run through it, continue reading here for how to enable RTL.
+      我们建议先阅读<a href="/getting-started/introduction">入门中的介绍页面</a>来熟悉 Bootstrap。阅读完毕之后，再继续阅读下面的内容，了解如何启用 RTL。
     </p>
-    <p>You may also want to read up on <a href="https://rtlcss.com/">the RTLCSS project</a>, as it powers our approach to RTL.</p>
+    <p>你可能还想了解一下 <a href="https://rtlcss.com/">RTLCSS 项目</a>，因为它是我们实现 RTL 方案的基础。</p>
     <Callout type="warning">
-      <p><strong>Bootstrap’s RTL feature is still experimental</strong> and will evolve based on user feedback. Spotted something or have an improvement to suggest? <a href="https://github.com/twbs/bootstrap/issues/new/choose">Open an issue</a>, we’d love to get your insights.</p>
+      <p><strong>Bootstrap 的 RTL 特性仍处于实验阶段</strong>，并将根据用户反馈不断演进。发现问题或有改进建议？欢迎<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>，我们非常期待你的见解。</p>
     </Callout>
-    <h2 id="required-html">Required HTML<a class="anchor-link" href="#required-html" aria-label="Link to Required HTML"></a></h2>
-    <p>There are two strict requirements for enabling RTL in Bootstrap-powered pages.</p>
+    <h2 id="required-html">必需的 HTML<a class="anchor-link" href="#required-html" aria-label="必需的 HTML 链接"></a></h2>
+    <p>要在由 Bootstrap 驱动的页面中启用 RTL，有两个严格的要求。</p>
     <ol>
-      <li>Set <code>dir=&quot;rtl&quot;</code> on the <code>&lt;html&gt;</code> element.</li>
-      <li>Add an appropriate <code>lang</code> attribute, like <code>lang=&quot;ar&quot;</code>, on the <code>&lt;html&gt;</code> element.</li>
+      <li>在 <code>&lt;html&gt;</code> 元素上设置 <code>dir=&quot;rtl&quot;</code>。</li>
+      <li>在 <code>&lt;html&gt;</code> 元素上添加合适的 <code>lang</code> 属性，例如 <code>lang=&quot;ar&quot;</code>。</li>
     </ol>
-    <p>From there, you’ll need to include an RTL version of our CSS. For example, here’s the stylesheet for our compiled and minified CSS with RTL enabled:</p>
+    <p>接下来，你需要引入我们 CSS 的 RTL 版本。例如，下面是启用了 RTL 的编译并压缩后的 CSS 样式表：</p>
     <CodeWrapper code='&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous"&gt;' lang="html" />
-    <h3 id="starter-template">Starter template<a class="anchor-link" href="#starter-template" aria-label="Link to Starter template"></a></h3>
-    <p>You can see the above requirements reflected in this modified RTL starter template.</p>
+    <h3 id="starter-template">入门模板<a class="anchor-link" href="#starter-template" aria-label="入门模板链接"></a></h3>
+    <p>你可以在下面这个修改过的 RTL 入门模板中看到上述要求的体现。</p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
 &lt;html lang="ar" dir="rtl"&gt;
@@ -52,35 +51,34 @@
 &lt;/html&gt;'
       lang="html"
     />
-    <h3 id="rtl-examples">RTL examples<a class="anchor-link" href="#rtl-examples" aria-label="Link to RTL examples"></a></h3>
-    <p>Get started with one of our several <a href="https://getbootstrap.com/docs/5.3/examples/#rtl">RTL examples</a>.</p>
-    <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
-    <p>Our approach to building RTL support into Bootstrap comes with two important decisions that impact how we write and use our CSS:</p>
+    <h3 id="rtl-examples">RTL 示例<a class="anchor-link" href="#rtl-examples" aria-label="RTL 示例链接"></a></h3>
+    <p>从我们的多个 <a href="https://getbootstrap.com/docs/5.3/examples/#rtl">RTL 示例</a>中选择一个开始吧。</p>
+    <h2 id="approach">实现方式<a class="anchor-link" href="#approach" aria-label="实现方式链接"></a></h2>
+    <p>我们在 Bootstrap 中构建 RTL 支持的方式包含两个重要决定，它们会影响我们编写和使用 CSS 的方式：</p>
     <ol>
       <li>
         <p>
-          <strong>First, we decided to build it with the <a href="https://rtlcss.com/">RTLCSS</a> project.</strong> This gives us some powerful features for managing changes and overrides when moving from LTR to RTL. It also allows us to build two versions of Bootstrap from one codebase.
+          <strong>首先，我们决定借助 <a href="https://rtlcss.com/">RTLCSS</a> 项目来构建它。</strong>这为我们提供了强大的功能，可在从 LTR 转换为 RTL 时管理变更和覆盖。它还让我们能够基于同一份代码库构建两个版本的 Bootstrap。
         </p>
       </li>
       <li>
         <p>
-          <strong>Second, we’ve renamed a handful of directional classes to adopt a logical properties approach.</strong>
-          Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like <code>left</code> and <code>right</code> in favor <code>start</code> and <code>end</code>. That makes the class names and values appropriate for LTR and RTL without any overhead.
+          <strong>其次，我们重命名了少数方向性类，以采用逻辑属性的思路。</strong>得益于我们的 flex 工具类，你们中的大多数人已经接触过逻辑属性——它们用 <code>start</code> 和 <code>end</code> 取代了 <code>left</code> 和 <code>right</code> 等方向属性。这使得类名和值同时适用于 LTR 和 RTL，且无需任何额外开销。
         </p>
       </li>
     </ol>
-    <p>For example, instead of <code>.ml-3</code> for <code>margin-left</code>, use <code>.ms-3</code>.</p>
-    <p>Working with RTL, through our source Sass or compiled CSS, shouldn’t be much different from our default LTR though.</p>
-    <h2 id="customize-from-source">Customize from source<a class="anchor-link" href="#customize-from-source" aria-label="Link to Customize from source"></a></h2>
-    <p>When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.</p>
-    <h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
-    <p>Using <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS value directives</a>, you can make a variable output a different value for RTL. For example, to decrease the weight for <code>$font-weight-bold</code> throughout the codebase, you may use the <code>/*rtl: {value}*/</code> syntax:</p>
+    <p>例如，将用于 <code>margin-left</code> 的 <code>.ml-3</code> 替换为 <code>.ms-3</code>。</p>
+    <p>不过，无论通过我们的 Sass 源码还是编译后的 CSS 使用 RTL，都不应与默认的 LTR 有太大差别。</p>
+    <h2 id="customize-from-source">从源码自定义<a class="anchor-link" href="#customize-from-source" aria-label="从源码自定义链接"></a></h2>
+    <p>谈到<a href="/customize/sass">自定义</a>，首选方式是借助变量、map 和 mixin。得益于 <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">RTLCSS 的工作方式</a>，即使 RTL 是基于编译后的文件进行后处理生成的，这种方式对 RTL 同样适用。</p>
+    <h3 id="custom-rtl-values">自定义 RTL 值<a class="anchor-link" href="#custom-rtl-values" aria-label="自定义 RTL 值链接"></a></h3>
+    <p>使用 <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS 值指令</a>，可以让某个变量在 RTL 下输出不同的值。例如，要在整个代码库中降低 <code>$font-weight-bold</code> 的粗细，可以使用 <code>/*rtl: {value}*/</code> 语法：</p>
     <CodeWrapper
       code="$font-weight-bold: 700 #{/* rtl:600 */} !default;
 "
       lang="scss"
     />
-    <p>Which would output to the following for our default CSS and RTL CSS:</p>
+    <p>这将在我们的默认 CSS 和 RTL CSS 中分别输出如下内容：</p>
     <CodeWrapper
       code="/* bootstrap.css */
 dt {
@@ -93,12 +91,11 @@ dt {
 }"
       lang="css"
     />
-    <h3 id="alternative-font-stack">Alternative font stack<a class="anchor-link" href="#alternative-font-stack" aria-label="Link to Alternative font stack"></a></h3>
+    <h3 id="alternative-font-stack">替代字体栈<a class="anchor-link" href="#alternative-font-stack" aria-label="替代字体栈链接"></a></h3>
     <p>
-      In the case you’re using a custom font, be aware that not all fonts support the non-Latin alphabet. To switch from Pan-European to Arabic family, you may need to use
-      <code>/*rtl:insert: {value}*/</code> in your font stack to modify the names of font families.
+      如果你使用自定义字体，请注意并非所有字体都支持非拉丁字母。要从泛欧字体家族切换到阿拉伯语字体家族，你可能需要在字体栈中使用 <code>/*rtl:insert: {value}*/</code> 来修改字体家族的名称。
     </p>
-    <p>For example, to switch from <code>Helvetica Neue</code> font for LTR to <code>Helvetica Neue Arabic</code> for RTL, your Sass code could look like this:</p>
+    <p>例如，要将 LTR 下的 <code>Helvetica Neue</code> 字体切换为 RTL 下的 <code>Helvetica Neue Arabic</code>，你的 Sass 代码可以这样写：</p>
     <CodeWrapper
       code='$font-family-sans-serif:
   Helvetica Neue #{"/* rtl:insert:Arabic */"},
@@ -122,10 +119,9 @@ dt {
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;'
       lang="scss"
     />
-    <h3 id="ltr-and-rtl-at-the-same-time">LTR and RTL at the same time<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="Link to LTR and RTL at the same time"></a></h3>
+    <h3 id="ltr-and-rtl-at-the-same-time">同时使用 LTR 和 RTL<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="同时使用 LTR 和 RTL 链接"></a></h3>
     <p>
-      Need both LTR and RTL on the same page? Thanks to
-      <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS String Maps</a>, this is pretty straightforward. Wrap your <code>@import</code>s with a class, and set a custom rename rule for RTLCSS:
+      需要在同一页面上同时使用 LTR 和 RTL？借助 <a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS 字符串映射</a>，这非常直接。用一个类包裹你的 <code>@import</code>，并为 RTLCSS 设置自定义的重命名规则：
     </p>
     <CodeWrapper
       code='/* rtl:begin:options: {
@@ -148,70 +144,65 @@ dt {
 '
       lang="scss"
     />
-    <p>After running Sass then RTLCSS, each selector in your CSS files will be prepended by <code>.ltr</code>, and <code>.rtl</code> for RTL files. Now you’re able to use both files on the same page, and simply use <code>.ltr</code> or <code>.rtl</code> on your components wrappers to use one or the other direction.</p>
+    <p>依次运行 Sass 和 RTLCSS 后，你的 CSS 文件中的每个选择器都会被加上 <code>.ltr</code> 前缀，而 RTL 文件则会加上 <code>.rtl</code> 前缀。现在，你可以在同一页面上使用这两个文件，只需在组件的外层容器上使用 <code>.ltr</code> 或 <code>.rtl</code>，即可使用其中任一方向。</p>
     <Callout type="warning">
-      <p><strong>Edge cases and known limitations</strong> to consider when working with a combined LTR and RTL implementation:</p>
+      <p>在采用 LTR 与 RTL 组合实现时，需要考虑的<strong>边界情况和已知局限</strong>：</p>
       <ol>
-        <li>When switching <code>.ltr</code> and <code>.rtl</code>, make sure you add <code>dir</code> and <code>lang</code> attributes accordingly.</li>
+        <li>切换 <code>.ltr</code> 和 <code>.rtl</code> 时，请确保相应地添加 <code>dir</code> 和 <code>lang</code> 属性。</li>
         <li>
-          Loading both files can be a real performance bottleneck: consider some
-          <a href="/customize/optimize">optimization</a>, and maybe try to <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.
+          同时加载两个文件可能成为真正的性能瓶颈：请考虑进行一些<a href="/customize/optimize">优化</a>，也许可以尝试<a href="https://www.filamentgroup.com/lab/load-css-simpler/">异步加载其中一个文件</a>。
         </li>
-        <li>Nesting styles this way will prevent our <code>form-validation-state()</code> mixin from working as intended, thus require you tweak it a bit by yourself. <a href="https://github.com/twbs/bootstrap/issues/31223">See #31223</a>.</li>
+        <li>以这种方式嵌套样式会导致我们的 <code>form-validation-state()</code> mixin 无法按预期工作，因此需要你自己稍作调整。<a href="https://github.com/twbs/bootstrap/issues/31223">参见 #31223</a>。</li>
       </ol>
     </Callout>
     <p>
-      Do you want to automate this process and address several edge cases involving both directions within a single stylesheet? Then, consider using
-      <a href="https://github.com/elchininet/postcss-rtlcss">PostCSS RTLCSS</a> as a <a href="https://github.com/postcss/postcss">PostCSS</a> plugin to process your source files. PostCSS RTLCSS uses <a href="https://rtlcss.com">RTLCSS</a> behind the scenes to manage the direction flipping process, but it separates the flipped declarations into
-      rules with a different prefix for LTR and RTL, something that allows you to have both directions within the same stylesheet file. By doing this, you can switch between LTR and RTL orientations by simply changing the <code>dir</code> of the page (or even by modifying a specific class if you configure the plugin accordingly).
+      想要自动化这一过程，并在同一份样式表中处理涉及两个方向的多种边界情况？那么可以考虑将 <a href="https://github.com/elchininet/postcss-rtlcss">PostCSS RTLCSS</a> 作为 <a href="https://github.com/postcss/postcss">PostCSS</a> 插件来处理源文件。PostCSS RTLCSS 在底层使用 <a href="https://rtlcss.com">RTLCSS</a> 管理方向翻转过程，但它会将翻转后的声明分离到使用不同前缀的 LTR 和 RTL 规则中，从而让你能在同一个样式表文件中同时拥有两个方向。这样一来，只需更改页面的 <code>dir</code>（如果相应配置了插件，甚至可以修改特定类），就可以在 LTR 和 RTL 方向之间切换。
     </p>
     <Callout type="warning">
-      <p><strong>Important things to take into account</strong> when using PostCSS RTLCSS to build a combined LTR and RTL implementation:</p>
+      <p>使用 PostCSS RTLCSS 构建 LTR 与 RTL 组合实现时，<strong>需要重点注意的事项</strong>：</p>
       <ol>
-        <li>It is recommended that you add the <code>dir</code> attribute to the <code>html</code> element. This way, the entire page will be affected when you change the direction. Also, make sure you add the <code>lang</code> attribute accordingly.</li>
+        <li>建议为 <code>html</code> 元素添加 <code>dir</code> 属性。这样，更改方向时整个页面都会受影响。同时，请确保相应地添加 <code>lang</code> 属性。</li>
         <li>
-          Having a single bundle with both directions will increase the size of the final stylesheet (on average, by 20%-30%): consider some
-          <a href="/customize/optimize">optimization</a>.
+          将两个方向打包到单个文件中会增加最终样式表的大小（平均增加 20%-30%）：请考虑进行一些<a href="/customize/optimize">优化</a>。
         </li>
         <li>
-          Take into account that PostCSS RTLCSS is not compatible with <code>/* rtl:remove */</code> directives because it doesn’t remove any CSS rule. You should replace your <code>/* rtl:remove */</code>, <code>/* rtl:begin:remove */</code> and <code>/* rtl:end:remove */</code> directives with <code>/* rtl:freeze */</code>,
-          <code>/* rtl:begin:freeze */</code> and <code>/* rtl:end:freeze */</code> directives respectively. These directives will prefix the targeted rules or declarations with the current direction but will not create an RTL counterpart (same result as the <code>remove</code> ones in RTLCSS).
+          请注意，PostCSS RTLCSS 与 <code>/* rtl:remove */</code> 指令不兼容，因为它不会移除任何 CSS 规则。你应分别将 <code>/* rtl:remove */</code>、<code>/* rtl:begin:remove */</code> 和 <code>/* rtl:end:remove */</code> 指令替换为 <code>/* rtl:freeze */</code>、<code>/* rtl:begin:freeze */</code> 和 <code>/* rtl:end:freeze */</code> 指令。这些指令会为目标规则或声明加上当前方向的前缀，但不会创建 RTL 对应版本（效果与 RTLCSS 中的 <code>remove</code> 指令相同）。
         </li>
       </ol>
     </Callout>
-    <h2 id="the-breadcrumb-case">The breadcrumb case<a class="anchor-link" href="#the-breadcrumb-case" aria-label="Link to The breadcrumb case"></a></h2>
-    <p>The <a href="/components/breadcrumb#dividers">breadcrumb separator</a> is the only case requiring its own brand-new variable— namely <code>$breadcrumb-divider-flipped</code> —defaulting to <code>$breadcrumb-divider</code>.</p>
-    <h2 id="additional-resources">Additional resources<a class="anchor-link" href="#additional-resources" aria-label="Link to Additional resources"></a></h2>
+    <h2 id="the-breadcrumb-case">面包屑的特殊情况<a class="anchor-link" href="#the-breadcrumb-case" aria-label="面包屑的特殊情况链接"></a></h2>
+    <p><a href="/components/breadcrumb#dividers">面包屑分隔符</a>是唯一需要专属全新变量的情况——即 <code>$breadcrumb-divider-flipped</code>——其默认值为 <code>$breadcrumb-divider</code>。</p>
+    <h2 id="additional-resources">其他资源<a class="anchor-link" href="#additional-resources" aria-label="其他资源链接"></a></h2>
     <ul>
       <li><a href="https://rtlcss.com/">RTLCSS</a></li>
-      <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL Styling 101</a></li>
+      <li><a href="https://rtlstyling.com/posts/rtl-styling">RTL 样式入门</a></li>
     </ul>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#get-familiar">Get familiar</a></li>
+      <li><a href="#get-familiar">熟悉基础</a></li>
       <li>
-        <a href="#required-html">Required HTML</a>
+        <a href="#required-html">必需的 HTML</a>
         <ul>
-          <li><a href="#starter-template">Starter template</a></li>
-          <li><a href="#rtl-examples">RTL examples</a></li>
+          <li><a href="#starter-template">入门模板</a></li>
+          <li><a href="#rtl-examples">RTL 示例</a></li>
         </ul>
       </li>
-      <li><a href="#approach">Approach</a></li>
+      <li><a href="#approach">实现方式</a></li>
       <li>
-        <a href="#customize-from-source">Customize from source</a>
+        <a href="#customize-from-source">从源码自定义</a>
         <ul>
-          <li><a href="#custom-rtl-values">Custom RTL values</a></li>
-          <li><a href="#alternative-font-stack">Alternative font stack</a></li>
-          <li><a href="#ltr-and-rtl-at-the-same-time">LTR and RTL at the same time</a></li>
+          <li><a href="#custom-rtl-values">自定义 RTL 值</a></li>
+          <li><a href="#alternative-font-stack">替代字体栈</a></li>
+          <li><a href="#ltr-and-rtl-at-the-same-time">同时使用 LTR 和 RTL</a></li>
         </ul>
       </li>
-      <li><a href="#the-breadcrumb-case">The breadcrumb case</a></li>
+      <li><a href="#the-breadcrumb-case">面包屑的特殊情况</a></li>
       <li>
-        <a href="#additional-resources">Additional resources</a>
+        <a href="#additional-resources">其他资源</a>
       </li>
     </ul>
   </nav>

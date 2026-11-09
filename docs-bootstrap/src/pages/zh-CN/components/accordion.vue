@@ -1,17 +1,17 @@
 <template>
   <article class="bd-content">
-    <h1>Accordion</h1>
-    <p>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.</p>
+    <h1>折叠面板</h1>
+    <p>结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。</p>
 
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>The accordion uses <a href="/components/collapse">collapse</a> internally to make it collapsible.</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>折叠面板内部使用<a href="/components/collapse">折叠</a>来使其可折叠。</p>
     <Callout name="info-prefersreducedmotion" />
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>Click the accordions below to expand/collapse the accordion content.</p>
-    <p>To render an accordion that’s expanded by default:</p>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
+    <p>点击下面的折叠面板来展开/折叠其内容。</p>
+    <p>要渲染一个默认展开的折叠面板：</p>
     <ul>
-      <li>add the <code>.show</code> class on the <code>.accordion-collapse</code> element.</li>
-      <li>drop the <code>.collapsed</code> class from the <code>.accordion-button</code> element and set its <code>aria-expanded</code> attribute to <code>true</code>.</li>
+      <li>在 <code>.accordion-collapse</code> 元素上添加 <code>.show</code> 类。</li>
+      <li>从 <code>.accordion-button</code> 元素上移除 <code>.collapsed</code> 类，并将其 <code>aria-expanded</code> 属性设置为 <code>true</code>。</li>
     </ul>
     <Example
       code='<div class="accordion" id="accordionExample">
@@ -53,8 +53,8 @@
   </div>
 </div>'
     />
-    <h3 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h3>
-    <p>Add <code>.accordion-flush</code> to remove some borders and rounded corners to render accordions edge-to-edge with their parent container.</p>
+    <h3 id="flush">贴边显示<a class="anchor-link" href="#flush" aria-label="贴边显示链接"></a></h3>
+    <p>添加 <code>.accordion-flush</code> 以移除部分边框和圆角，使折叠面板与其父容器边缘贴合。</p>
     <Example
       class="bg-body-secondary"
       code='<div class="accordion accordion-flush" id="accordionFlushExample">
@@ -90,8 +90,8 @@
   </div>
 </div>'
     />
-    <h3 id="always-open">Always open<a class="anchor-link" href="#always-open" aria-label="Link to Always open"></a></h3>
-    <p>Omit the <code>data-bs-parent</code> attribute on each <code>.accordion-collapse</code> to make accordion items stay open when another item is opened.</p>
+    <h3 id="always-open">始终展开<a class="anchor-link" href="#always-open" aria-label="始终展开链接"></a></h3>
+    <p>省略每个 <code>.accordion-collapse</code> 上的 <code>data-bs-parent</code> 属性，即可在打开某个折叠面板项时保持其他项展开。</p>
     <Example
       code='<div class="accordion" id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
@@ -132,81 +132,81 @@
   </div>
 </div>'
     />
-    <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+    <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
-      Please read the
-      <a href="/components/collapse#accessibility">collapse accessibility section</a> for more information.
+      请阅读
+      <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
     </p>
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, accordions now use local CSS variables on
-      <code>.accordion</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，折叠面板现在在
+      <code>.accordion</code> 上使用本地 CSS 变量，以增强实时自定义能力。CSS 变量的值由 Sass 设置，因此仍然支持 Sass 自定义。
     </p>
     <ScssDocs name="accordion-css-vars" file="scss/_accordion.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="accordion-variables" file="scss/_variables.scss" />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
-    <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
+    <p>折叠插件使用几个类来完成主要工作：</p>
     <ul>
-      <li><code>.collapse</code> hides the content</li>
-      <li><code>.collapse.show</code> shows the content</li>
-      <li><code>.collapsing</code> is added when the transition starts, and removed when it finishes</li>
+      <li><code>.collapse</code> 隐藏内容</li>
+      <li><code>.collapse.show</code> 显示内容</li>
+      <li><code>.collapsing</code> 在过渡开始时添加，在过渡结束时移除</li>
     </ul>
-    <p>These classes can be found in <code>_transitions.scss</code>.</p>
-    <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
+    <p>这些类可以在 <code>_transitions.scss</code> 中找到。</p>
+    <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
     <p>
-      Just add <code>data-bs-toggle=&quot;collapse&quot;</code> and a <code>data-bs-target</code> to the element to automatically assign control of one or more collapsible elements. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If
-      you’d like it to default open, add the additional class <code>show</code>.
+      只需在元素上添加 <code>data-bs-toggle=&quot;collapse&quot;</code> 和 <code>data-bs-target</code>，即可自动为一个或多个可折叠元素分配控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定要应用折叠的目标。请确保为可折叠元素添加 <code>collapse</code> 类。如果你希望它默认展开，请额外添加
+      <code>show</code> 类。
     </p>
     <p>
-      To add accordion group management to a collapsible area, add the data attribute
-      <code>data-bs-parent=&quot;#selector&quot;</code>.
+      要为可折叠区域添加折叠面板组管理，请添加数据属性
+      <code>data-bs-parent=&quot;#selector&quot;</code>。
     </p>
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <p>Enable manually with:</p>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript链接"></a></h3>
+    <p>手动启用：</p>
     <CodeWrapper
       code="const accordionCollapseElementList = document.querySelectorAll(&#39;#myAccordion .collapse&#39;)
 const accordionCollapseList = [...accordionCollapseElementList].map(accordionCollapseEl =&gt; new bootstrap.Collapse(accordionCollapseEl))
 "
       lang="javascript"
     />
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>parent</code></td>
-            <td>selector, DOM element</td>
+            <td>选择器、DOM 元素</td>
             <td><code>null</code></td>
             <td>
-              If parent is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the
-              <code>card</code> class). The attribute has to be set on the target collapsible area.
+              如果提供了 parent，则当此可折叠项显示时，指定父元素下的所有可折叠元素都将被关闭。（类似于传统的折叠面板行为——这取决于
+              <code>card</code> 类）。该属性必须设置在目标可折叠区域上。
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
-            <td>boolean</td>
+            <td>布尔值</td>
             <td><code>true</code></td>
-            <td>Toggles the collapsible element on invocation.</td>
+            <td>在调用时切换可折叠元素。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
-    <p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.</p>
-    <p>You can create a collapse instance with the constructor, for example:</p>
+    <p>将您的内容激活为可折叠元素。接受一个可选的选项 <code>object</code>。</p>
+    <p>你可以使用构造函数创建一个折叠实例，例如：</p>
     <CodeWrapper
       code="const bsCollapse = new bootstrap.Collapse(&#39;#myCollapse&#39;, {
   toggle: false
@@ -218,80 +218,80 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s collapse. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的折叠功能。（移除 DOM 元素上存储的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
             <td>
-              Static method which allows you to get the collapse instance associated to a DOM element, you can use it like this:
-              <code>bootstrap.Collapse.getInstance(element)</code>.
+              静态方法，用于获取与某个 DOM 元素关联的折叠实例，可以这样使用：
+              <code>bootstrap.Collapse.getInstance(element)</code>。
             </td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
             <td>
-              Static method which returns a collapse instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
-              <code>bootstrap.Collapse.getOrCreateInstance(element)</code>.
+              静态方法，返回与某个 DOM 元素关联的折叠实例，如果尚未初始化则创建一个新实例。可以这样使用：
+              <code>bootstrap.Collapse.getOrCreateInstance(element)</code>。
             </td>
           </tr>
           <tr>
             <td><code>hide</code></td>
             <td>
-              Hides a collapsible element.
-              <strong>Returns to the caller before the collapsible element has actually been hidden</strong> (e.g., before the <code>hidden.bs.collapse</code> event occurs).
+              隐藏可折叠元素。
+              <strong>在可折叠元素实际隐藏之前就返回给调用者</strong>（例如在 <code>hidden.bs.collapse</code> 事件发生之前）。
             </td>
           </tr>
           <tr>
             <td><code>show</code></td>
             <td>
-              Shows a collapsible element.
-              <strong>Returns to the caller before the collapsible element has actually been shown</strong> (e.g., before the <code>shown.bs.collapse</code> event occurs).
+              显示可折叠元素。
+              <strong>在可折叠元素实际显示之前就返回给调用者</strong>（例如在 <code>shown.bs.collapse</code> 事件发生之前）。
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
             <td>
-              Toggles a collapsible element to shown or hidden.
-              <strong>Returns to the caller before the collapsible element has actually been shown or hidden</strong>
-              (i.e. before the <code>shown.bs.collapse</code> or <code>hidden.bs.collapse</code> event occurs).
+              将可折叠元素切换为显示或隐藏。
+              <strong>在可折叠元素实际显示或隐藏之前就返回给调用者</strong>
+              （即在 <code>shown.bs.collapse</code> 或 <code>hidden.bs.collapse</code> 事件发生之前）。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>Bootstrap’s collapse class exposes a few events for hooking into collapse functionality.</p>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
+    <p>Bootstrap 的折叠（collapse）类暴露了几个事件，用于挂接折叠功能。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event type</th>
-            <th>Description</th>
+            <th>事件类型</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.collapse</code></td>
-            <td>This event is fired immediately when the <code>hide</code> method has been called.</td>
+            <td>当调用 <code>hide</code> 方法时会立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.collapse</code></td>
-            <td>This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete).</td>
+            <td>当折叠元素对用户隐藏完成后触发此事件（会等待 CSS 过渡完成）。</td>
           </tr>
           <tr>
             <td><code>show.bs.collapse</code></td>
-            <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+            <td>当调用 <code>show</code> 实例方法时立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>shown.bs.collapse</code></td>
-            <td>This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete).</td>
+            <td>当折叠元素已对用户可见后触发此事件（会等待 CSS 过渡完成）。</td>
           </tr>
         </tbody>
       </table>
@@ -307,33 +307,33 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#example">Example</a>
+        <a href="#example">示例</a>
         <ul>
-          <li><a href="#flush">Flush</a></li>
-          <li><a href="#always-open">Always open</a></li>
+          <li><a href="#flush">贴边显示</a></li>
+          <li><a href="#always-open">始终展开</a></li>
         </ul>
       </li>
-      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#accessibility">无障碍</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#via-data-attributes">Via data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#via-data-attributes">通过 data 属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

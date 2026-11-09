@@ -1,33 +1,31 @@
 <template>
   <article class="bd-content">
-    <h1>Components</h1>
-    <p>Learn how and why we build nearly all our components responsively and with base and modifier classes.</p>
+    <h1>组件</h1>
+    <p>了解我们为何以及如何以响应式方式、使用基础类和修饰类来构建几乎所有组件。</p>
 
-    <h2 id="base-classes">Base classes<a class="anchor-link" href="#base-classes" aria-label="Link to Base classes"></a></h2>
-    <p>Bootstrap’s components are largely built with a base-modifier nomenclature. We group as many shared properties as possible into a base class, like <code>.btn</code>, and then group individual styles for each variant into modifier classes, like <code>.btn-primary</code> or <code>.btn-success</code>.</p>
+    <h2 id="base-classes">基础类<a class="anchor-link" href="#base-classes" aria-label="基础类"></a></h2>
+    <p>Bootstrap 的组件在很大程度上采用基础-修饰（base-modifier）命名法构建。我们将尽可能多的共享属性归入一个基础类，例如 <code>.btn</code>，然后将每个变体的单独样式归入修饰类，例如 <code>.btn-primary</code> 或 <code>.btn-success</code>。</p>
     <p>
-      To build our modifier classes, we use Sass’s <code>@each</code> loops to iterate over a Sass map. This is especially helpful for generating variants of a component by our <code>$theme-colors</code> and creating responsive variants for each breakpoint. As you customize these Sass maps and recompile, you’ll automatically see your changes
-      reflected in these loops.
+      为了构建修饰类，我们使用 Sass 的 <code>@each</code> 循环遍历 Sass 映射。这对于根据 <code>$theme-colors</code> 生成组件的变体，以及为每个断点创建响应式变体特别有帮助。当你自定义这些 Sass 映射并重新编译时，你会自动看到这些循环中反映出你的更改。
     </p>
-    <p>Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to customize these loops and extend Bootstrap’s base-modifier approach to your own code.</p>
-    <h2 id="modifiers">Modifiers<a class="anchor-link" href="#modifiers" aria-label="Link to Modifiers"></a></h2>
+    <p>请查阅<a href="/customize/sass#maps-and-loops">我们的 Sass 映射和循环文档</a>，了解如何自定义这些循环，并将 Bootstrap 的基础-修饰方法扩展到你的代码中。</p>
+    <h2 id="modifiers">修饰类<a class="anchor-link" href="#modifiers" aria-label="修饰类"></a></h2>
     <p>
-      Many of Bootstrap’s components are built with a base-modifier class approach. This means the bulk of the styling is contained to a base class (e.g., <code>.btn</code>) while style variations are confined to modifier classes (e.g., <code>.btn-danger</code>). These modifier classes are built from the <code>$theme-colors</code> map to make
-      customizing the number and name of our modifier classes.
+      Bootstrap 的许多组件都采用基础-修饰类方法构建。这意味着大部分样式集中在基础类中（例如 <code>.btn</code>），而样式变体则限定在修饰类中（例如 <code>.btn-danger</code>）。这些修饰类由 <code>$theme-colors</code> 映射构建，便于自定义修饰类的数量和名称。
     </p>
-    <p>Here are two examples of how we loop over the <code>$theme-colors</code> map to generate modifiers to the <code>.alert</code> and <code>.list-group</code> components.</p>
+    <p>下面通过两个示例展示我们如何遍历 <code>$theme-colors</code> 映射，为 <code>.alert</code> 和 <code>.list-group</code> 组件生成修饰类。</p>
     <ScssDocs name="alert-modifiers" file="scss/_alert.scss" /><ScssDocs name="list-group-modifiers" file="scss/_list-group.scss" />
-    <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
-    <p>These Sass loops aren’t limited to color maps, either. You can also generate responsive variations of your components. Take for example our responsive alignment of the dropdowns where we mix an <code>@each</code> loop for the <code>$grid-breakpoints</code> Sass map with a media query include.</p>
+    <h2 id="responsive">响应式<a class="anchor-link" href="#responsive" aria-label="响应式"></a></h2>
+    <p>这些 Sass 循环也不限于颜色映射。你还可以为组件生成响应式变体。例如，我们对下拉菜单的响应式对齐，其中将 <code>$grid-breakpoints</code> Sass 映射的 <code>@each</code> 循环与媒体查询 include 结合使用。</p>
     <ScssDocs name="responsive-breakpoints" file="scss/_dropdown.scss" />
-    <p>Should you modify your <code>$grid-breakpoints</code>, your changes will apply to all the loops iterating over that map.</p>
+    <p>如果你修改了 <code>$grid-breakpoints</code>，你的更改将应用于所有遍历该映射的循环。</p>
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
     <p>
-      For more information and examples on how to modify our Sass maps and variables, please refer to
-      <a href="/layout/grid#css">the CSS section of the Grid documentation</a>.
+      有关如何修改 Sass 映射和变量的更多信息和示例，请参阅
+      <a href="/layout/grid#css">栅格文档的 CSS 部分</a>。
     </p>
-    <h2 id="creating-your-own">Creating your own<a class="anchor-link" href="#creating-your-own" aria-label="Link to Creating your own"></a></h2>
-    <p>We encourage you to adopt these guidelines when building with Bootstrap to create your own components. We’ve extended this approach ourselves to the custom components in our documentation and examples. Components like our callouts are built just like our provided components with base and modifier classes.</p>
+    <h2 id="creating-your-own">创建你自己的组件<a class="anchor-link" href="#creating-your-own" aria-label="创建你自己的组件"></a></h2>
+    <p>我们鼓励你在使用 Bootstrap 创建自己的组件时遵循这些指导原则。我们已在文档和示例中的自定义组件上扩展了这种方法。像我们的提示框（callout）这样的组件，其构建方式与我们提供的组件完全一样，都使用基础类和修饰类。</p>
     <Example
       :showMarkup="false"
       code='<div class="bd-callout my-0">
@@ -37,8 +35,8 @@
     />
     <CodeWrapper code='&lt;div class="callout"&gt;...&lt;/div&gt;' lang="html" />
     <p>
-      In your CSS, you’d have something like the following where the bulk of the styling is done via
-      <code>.callout</code>. Then, the unique styles between each variant is controlled via modifier class.
+      在你的 CSS 中，大致如下所示，大部分样式通过
+      <code>.callout</code> 完成。然后，每个变体之间的独特样式通过修饰类控制。
     </p>
     <CodeWrapper
       code="// Base class
@@ -51,25 +49,25 @@
 "
       lang="scss"
     />
-    <p>For the callouts, that unique styling is just a <code>border-left-color</code>. When you combine that base class with one of those modifier classes, you get your complete component family:</p>
+    <p>对于这些提示框，其独特样式只是一个 <code>border-left-color</code>。当把该基础类与其中一个修饰类组合时，你就得到了完整的组件族：</p>
     <Callout>
-      <p><strong>This is an info callout.</strong> Example text to show it in action.</p> </Callout
+      <p><strong>这是一个信息提示框。</strong>用于展示其效果的示例文本。</p> </Callout
     ><Callout type="warning">
-      <p><strong>This is a warning callout.</strong> Example text to show it in action.</p> </Callout
+      <p><strong>这是一个警告提示框。</strong>用于展示其效果的示例文本。</p> </Callout
     ><Callout type="danger">
-      <p><strong>This is a danger callout.</strong> Example text to show it in action.</p>
+      <p><strong>这是一个危险提示框。</strong>用于展示其效果的示例文本。</p>
     </Callout>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#base-classes">Base classes</a></li>
-      <li><a href="#modifiers">Modifiers</a></li>
-      <li><a href="#responsive">Responsive</a></li>
+      <li><a href="#base-classes">基础类</a></li>
+      <li><a href="#modifiers">修饰类</a></li>
+      <li><a href="#responsive">响应式</a></li>
       <li>
-        <a href="#creating-your-own">Creating your own</a>
+        <a href="#creating-your-own">创建你自己的组件</a>
       </li>
     </ul>
   </nav>

@@ -1,11 +1,11 @@
 <template>
   <article class="bd-content">
-    <h1>Link</h1>
-    <p>Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
+    <h1>链接</h1>
+    <p>链接工具类用于美化锚点，以调整其颜色、不透明度、下划线偏移、下划线颜色等。</p>
 
-    <h2 id="link-opacity">Link opacity<a class="anchor-link" href="#link-opacity" aria-label="Link to Link opacity"></a></h2>
+    <h2 id="link-opacity">链接不透明度<a class="anchor-link" href="#link-opacity" aria-label="链接不透明度链接"></a></h2>
     <p>
-      Change the alpha opacity of the link <code>rgba()</code> color value with utilities. Please be aware that changes to a color’s opacity can lead to links with <a href="getting-started/accessibility/#color-contrast"><em>insufficient</em> contrast</a>.
+      使用工具类更改链接 <code>rgba()</code> 颜色值的 alpha 不透明度。请注意，更改颜色的不透明度可能会导致链接出现<a href="getting-started/accessibility/#color-contrast"><em>对比度不足</em></a>的问题。
     </p>
     <Example
       code='<p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
@@ -14,7 +14,7 @@
 <p><a class="link-opacity-75" href="#">Link opacity 75</a></p>
 <p><a class="link-opacity-100" href="#">Link opacity 100</a></p>'
     />
-    <p>You can even change the opacity level on hover.</p>
+    <p>你甚至可以更改悬停时的不透明度级别。</p>
     <Example
       code='<p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a></p>
 <p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a></p>
@@ -22,20 +22,20 @@
 <p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a></p>
 <p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a></p>'
     />
-    <h2 id="link-underlines">Link underlines<a class="anchor-link" href="#link-underlines" aria-label="Link to Link underlines"></a></h2>
-    <h3 id="underline-color">Underline color<a class="anchor-link" href="#underline-color" aria-label="Link to Underline color"></a></h3>
-    <p>Change the underline’s color independent of the link text color.</p>
+    <h2 id="link-underlines">链接下划线<a class="anchor-link" href="#link-underlines" aria-label="链接下划线链接"></a></h2>
+    <h3 id="underline-color">下划线颜色<a class="anchor-link" href="#underline-color" aria-label="下划线颜色链接"></a></h3>
+    <p>独立于链接文本颜色更改下划线的颜色。</p>
     <Example :code="data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-underline-${themeColor.name}&quot;>${themeColor.name} underline</a></p>`).join('\n')" />
-    <h3 id="underline-offset">Underline offset<a class="anchor-link" href="#underline-offset" aria-label="Link to Underline offset"></a></h3>
-    <p>Change the underline’s distance from your text. Offset is set in <code>em</code> units to automatically scale with the element’s current <code>font-size</code>.</p>
+    <h3 id="underline-offset">下划线偏移<a class="anchor-link" href="#underline-offset" aria-label="下划线偏移链接"></a></h3>
+    <p>更改下划线与文本的距离。偏移量以 <code>em</code> 为单位设置，可随元素当前的 <code>font-size</code> 自动缩放。</p>
     <Example
       code='<p><a href="#">Default link</a></p>
 <p><a class="link-offset-1" href="#">Offset 1 link</a></p>
 <p><a class="link-offset-2" href="#">Offset 2 link</a></p>
 <p><a class="link-offset-3" href="#">Offset 3 link</a></p>'
     />
-    <h3 id="underline-opacity">Underline opacity<a class="anchor-link" href="#underline-opacity" aria-label="Link to Underline opacity"></a></h3>
-    <p>Change the underline’s opacity. Requires adding <code>.link-underline</code> to first set an <code>rgba()</code> color we use to then modify the alpha opacity.</p>
+    <h3 id="underline-opacity">下划线不透明度<a class="anchor-link" href="#underline-opacity" aria-label="下划线不透明度链接"></a></h3>
+    <p>更改下划线的不透明度。需要先添加 <code>.link-underline</code> 来设置 <code>rgba()</code> 颜色，我们随后再用它来修改 alpha 不透明度。</p>
     <Example
       code='<p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-10" href="#">Underline opacity 10</a></p>
@@ -44,15 +44,15 @@
 <p><a class="link-offset-2 link-underline link-underline-opacity-75" href="#">Underline opacity 75</a></p>
 <p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a></p>'
     />
-    <h3 id="hover-variants">Hover variants<a class="anchor-link" href="#hover-variants" aria-label="Link to Hover variants"></a></h3>
-    <p>Just like the <code>.link-opacity-*-hover</code> utilities, <code>.link-offset</code> and <code>.link-underline-opacity</code> utilities include <code>:hover</code> variants by default. Mix and match to create unique link styles.</p>
+    <h3 id="hover-variants">悬停变体<a class="anchor-link" href="#hover-variants" aria-label="悬停变体链接"></a></h3>
+    <p>正如 <code>.link-opacity-*-hover</code> 工具类一样，<code>.link-offset</code> 和 <code>.link-underline-opacity</code> 工具类默认也包含 <code>:hover</code> 变体。混合搭配即可创建独特的链接样式。</p>
     <Example
       code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
   Underline opacity 0
 </a>'
     />
-    <h2 id="colored-links">Colored links<a class="anchor-link" href="#colored-links" aria-label="Link to Colored links"></a></h2>
-    <p><a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.</p>
+    <h2 id="colored-links">彩色链接<a class="anchor-link" href="#colored-links" aria-label="彩色链接链接"></a></h2>
+    <p><a href="/helpers/colored-links/">彩色链接工具类</a>已经过更新，以与我们的链接工具类搭配使用。使用新的工具类来修改链接不透明度、下划线不透明度和下划线偏移。</p>
     <Example
       :code="
         [
@@ -61,38 +61,38 @@
         ].join('\n')
       "
     /><Callout name="warning-color-assistive-technologies" />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <p>
-      In addition to the following Sass functionality, consider reading about our included
-      <a href="/customize/css-variables">CSS custom properties</a> (aka CSS variables) for colors and more.
+      除了以下 Sass 功能之外，建议阅读有关我们内置的
+      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Link utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      链接工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#link-opacity">Link opacity</a></li>
+      <li><a href="#link-opacity">链接不透明度</a></li>
       <li>
-        <a href="#link-underlines">Link underlines</a>
+        <a href="#link-underlines">链接下划线</a>
         <ul>
-          <li><a href="#underline-color">Underline color</a></li>
-          <li><a href="#underline-offset">Underline offset</a></li>
-          <li><a href="#underline-opacity">Underline opacity</a></li>
-          <li><a href="#hover-variants">Hover variants</a></li>
+          <li><a href="#underline-color">下划线颜色</a></li>
+          <li><a href="#underline-offset">下划线偏移</a></li>
+          <li><a href="#underline-opacity">下划线不透明度</a></li>
+          <li><a href="#hover-variants">悬停变体</a></li>
         </ul>
       </li>
-      <li><a href="#colored-links">Colored links</a></li>
+      <li><a href="#colored-links">彩色链接</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

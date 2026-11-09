@@ -1,30 +1,30 @@
 <template>
   <article class="bd-content">
-    <h1>Popovers</h1>
-    <p>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+    <h1>弹出框</h1>
+    <p>如何向站点中的任意元素添加 Bootstrap 弹出框（类似 iOS 中的弹出框）的文档和示例。</p>
 
-    <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
-    <p>Things to know when using the popover plugin:</p>
+    <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
+    <p>使用弹出框插件时需要了解的事项：</p>
     <ul>
-      <li>Popovers rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before <code>bootstrap.js</code>, or use one <code>bootstrap.bundle.min.js</code> which contains Popper.</li>
-      <li>Popovers require the <a href="/components/popovers">popover plugin</a> as a dependency.</li>
-      <li>Popovers are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
-      <li>Zero-length <code>title</code> and <code>content</code> values will never show a popover.</li>
-      <li>Specify <code>container: &#39;body&#39;</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
-      <li>Triggering popovers on hidden elements will not work.</li>
-      <li>Popovers for <code>.disabled</code> or <code>disabled</code> elements must be triggered on a wrapper element.</li>
-      <li>When triggered from anchors that wrap across multiple lines, popovers will be centered between the anchors’ overall width. Use <code>.text-nowrap</code> on your <code>&lt;a&gt;</code>s to avoid this behavior.</li>
-      <li>Popovers must be hidden before their corresponding elements have been removed from the DOM.</li>
-      <li>Popovers can be triggered thanks to an element inside a shadow DOM.</li>
+      <li>弹出框依赖第三方库 <a href="https://popper.js.org/docs/v2/">Popper</a> 进行定位。你必须在 <code>bootstrap.js</code> 之前引入 <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或者使用包含 Popper 的 <code>bootstrap.bundle.min.js</code>。</li>
+      <li>弹出框需要 <a href="/components/popovers">弹出框插件</a>作为依赖。</li>
+      <li>出于性能原因，弹出框需要手动启用，因此<strong>你必须自行初始化它们</strong>。</li>
+      <li><code>title</code> 和 <code>content</code> 的值为零长度时，永远不会显示弹出框。</li>
+      <li>指定 <code>container: &#39;body&#39;</code> 以避免在更复杂的组件（例如我们的输入组、按钮组等）中出现渲染问题。</li>
+      <li>在隐藏的元素上触发弹出框不会生效。</li>
+      <li>为 <code>.disabled</code> 或 <code>disabled</code> 元素设置的弹出框必须在包裹元素上触发。</li>
+      <li>当从跨越多行的锚点链接触发时，弹出框将居中显示在锚点的整体宽度范围内。可以在 <code>&lt;a&gt;</code> 上使用 <code>.text-nowrap</code> 来避免此行为。</li>
+      <li>弹出框必须在对应元素从 DOM 中移除之前隐藏。</li>
+      <li>弹出框可以通过 shadow DOM 内部的元素触发。</li>
     </ul>
     <Callout name="info-sanitizer" />
     <Callout name="info-prefersreducedmotion" />
-    <p>Keep reading to see how popovers work with some examples.</p>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <h3 id="enable-popovers">Enable popovers<a class="anchor-link" href="#enable-popovers" aria-label="Link to Enable popovers"></a></h3>
+    <p>继续阅读，了解弹出框如何通过一些示例工作。</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <h3 id="enable-popovers">启用弹出框<a class="anchor-link" href="#enable-popovers" aria-label="启用弹出框链接"></a></h3>
     <p>
-      As mentioned above, you must initialize popovers before they can be used. One way to initialize all popovers on a page would be to select them by their
-      <code>data-bs-toggle</code> attribute, like so:
+      如上所述，你必须先初始化弹出框才能使用它们。在页面上初始化所有弹出框的一种方法是根据它们的
+      <code>data-bs-toggle</code> 属性来选择它们，如下所示：
     </p>
     <CodeWrapper
       code='const popoverTriggerList = document.querySelectorAll(&#39;[data-bs-toggle="popover"]&#39;)
@@ -32,17 +32,17 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 '
       lang="javascript"
     />
-    <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
+    <h3 id="live-demo">在线演示<a class="anchor-link" href="#live-demo" aria-label="在线演示链接"></a></h3>
     <p>
-      We use JavaScript similar to the snippet above to render the following live popover. Titles are set via
-      <code>data-bs-title</code> and body content is set via <code>data-bs-content</code>.
+      我们使用与上面代码片段类似的 JavaScript 来渲染以下实时弹出框。标题通过
+      <code>data-bs-title</code> 设置，主体内容通过 <code>data-bs-content</code> 设置。
     </p>
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <Example addStackblitzJs code='<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>' />
-    <h3 id="four-directions">Four directions<a class="anchor-link" href="#four-directions" aria-label="Link to Four directions"></a></h3>
+    <h3 id="four-directions">四个方向<a class="anchor-link" href="#four-directions" aria-label="四个方向链接"></a></h3>
     <p>
-      Four options are available: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL. Set
-      <code>data-bs-placement</code> to change the direction.
+      有四个选项可用：上、右、下和左。在 RTL 中使用 Bootstrap 时，方向会镜像反转。设置
+      <code>data-bs-placement</code> 可以改变方向。
     </p>
     <Example
       addStackblitzJs
@@ -59,10 +59,10 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
   Popover on left
 </button>'
     />
-    <h3 id="custom-container">Custom <code>container</code><a class="anchor-link" href="#custom-container" aria-label="Link to Custom container"></a></h3>
+    <h3 id="custom-container">自定义 <code>container</code><a class="anchor-link" href="#custom-container" aria-label="自定义 container 链接"></a></h3>
     <p>
-      When you have some styles on a parent element that interfere with a popover, you’ll want to specify a custom
-      <code>container</code> so that the popover’s HTML appears within that element instead. This is common in responsive tables, input groups, and the like.
+      当父元素上的一些样式会干扰弹出框时，你可能会想指定一个自定义的
+      <code>container</code>，使弹出框的 HTML 改为出现在该元素内部。这种情况常见于响应式表格、输入组以及类似组件。
     </p>
     <CodeWrapper
       code="const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
@@ -72,8 +72,8 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       lang="javascript"
     />
     <p>
-      Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/components/modal">modal dialog</a>, to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the
-      popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.
+      另一种需要显式设置自定义 <code>container</code> 的情况是将弹出框放在<a href="/components/modal">模态对话框</a>内，以确保弹出框本身被追加到模态框中。这对于包含交互元素的弹出框尤为重要——模态对话框会捕获焦点，因此除非
+      弹出框是模态框的子元素，否则用户将无法聚焦或激活这些交互元素。
     </p>
     <CodeWrapper
       code="const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
@@ -82,9 +82,9 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 "
       lang="javascript"
     />
-    <h3 id="custom-popovers">Custom popovers<a class="anchor-link" href="#custom-popovers" aria-label="Link to Custom popovers"></a></h3>
+    <h3 id="custom-popovers">自定义弹出框<a class="anchor-link" href="#custom-popovers" aria-label="自定义弹出框链接"></a></h3>
     <AddedIn version="5.2.0" />
-    <p>You can customize the appearance of popovers using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-popover&quot;</code> to scope our custom appearance and use it to override some of the local CSS variables.</p>
+    <p>你可以使用 <a href="#variables">CSS 变量</a>来自定义弹出框的外观。我们通过 <code>data-bs-custom-class=&quot;custom-popover&quot;</code> 设置一个自定义类，以限定自定义外观的作用范围，并用它来覆盖部分本地 CSS 变量。</p>
     <ScssDocs name="custom-popovers" file="site/src/scss/_component-examples.scss" />
     <Example
       addStackblitzJs
@@ -97,13 +97,13 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
   Custom popover
 </button>'
     />
-    <h3 id="dismiss-on-next-click">Dismiss on next click<a class="anchor-link" href="#dismiss-on-next-click" aria-label="Link to Dismiss on next click"></a></h3>
-    <p>Use the <code>focus</code> trigger to dismiss popovers on the user’s next click of an element other than the toggle element.</p>
+    <h3 id="dismiss-on-next-click">下次点击时关闭<a class="anchor-link" href="#dismiss-on-next-click" aria-label="下次点击时关闭链接"></a></h3>
+    <p>使用 <code>focus</code> 触发器，用户下次点击除切换元素之外的其他元素时即可关闭弹出框。</p>
     <Callout type="danger">
       <p>
-        <strong>Dismissing on next click requires specific HTML for proper cross-browser and cross-platform behavior.</strong>
-        You can only use <code>&lt;a&gt;</code> elements, not <code>&lt;button&gt;</code>s, and you must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code>tabindex</code></a
-        >.
+        <strong>下次点击时关闭需要特定的 HTML，才能确保跨浏览器和跨平台的正确行为。</strong>
+        你只能使用 <code>&lt;a&gt;</code> 元素，而不能使用 <code>&lt;button&gt;</code>，并且必须包含 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"><code>tabindex</code></a
+        >。
       </p>
     </Callout>
     <Example addStackblitzJs code='<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Dismissible popover</a>' />
@@ -114,29 +114,30 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
 "
       lang="javascript"
     />
-    <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
+    <h3 id="disabled-elements">禁用元素<a class="anchor-link" href="#disabled-elements" aria-label="禁用元素链接"></a></h3>
     <p>
-      Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot hover or click them to trigger a popover (or tooltip). As a workaround, you’ll want to trigger the popover from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using <code>tabindex=&quot;0&quot;</code>.
+      带有 <code>disabled</code> 属性的元素不可交互，这意味着用户无法通过聚焦、悬停或点击它们来触发弹出框（或工具提示）。作为变通方法，你可以从包裹的 <code>&lt;div&gt;</code> 或 <code>&lt;span&gt;</code> 触发弹出框，最好使用
+      <code>tabindex=&quot;0&quot;</code> 使其可被键盘聚焦。
     </p>
-    <p>For disabled popover triggers, you may also prefer <code>data-bs-trigger=&quot;hover focus&quot;</code> so that the popover appears as immediate visual feedback to your users as they may not expect to <em>click</em> on a disabled element.</p>
+    <p>对于禁用元素的弹出框触发器，你可能还需要设置 <code>data-bs-trigger=&quot;hover focus&quot;</code>，这样弹出框会作为即时视觉反馈呈现给用户，因为他们可能并不期望<em>点击</em>一个禁用元素。</p>
     <Example
       addStackblitzJs
       code='<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
   <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, popovers now use local CSS variables on
-      <code>.popover</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，弹出框现在在
+      <code>.popover</code> 上使用本地 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此仍然支持 Sass 自定义。
     </p>
     <ScssDocs name="popover-css-vars" file="scss/_popover.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="popover-variables" file="scss/_variables.scss" />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
-    <p>Enable popovers via JavaScript:</p>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
+    <p>通过 JavaScript 启用弹出框：</p>
     <CodeWrapper
       code="const exampleEl = articleEl.getElementById(&#39;example&#39;)
 const popover = new bootstrap.Popover(exampleEl, options)
@@ -145,42 +146,41 @@ const popover = new bootstrap.Popover(exampleEl, options)
     />
     <Callout type="warning">
       <p>
-        <strong>Keep popovers accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and
-        confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce popovers in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your popovers as this will make them impossible to trigger for keyboard users.
+        <strong>确保键盘和辅助技术用户能够访问弹出框</strong>，只将它们添加到传统上可被键盘聚焦且具有交互性的 HTML 元素（例如链接或表单控件）上。虽然其他 HTML 元素可以通过添加 <code>tabindex=&quot;0&quot;</code> 变为可聚焦，但这会给键盘用户在不具交互性的元素上制造烦人且
+        令人困惑的 Tab 停靠点，而且大多数辅助技术目前在此情况下不会播报弹出框。此外，不要仅依赖 <code>hover</code> 作为弹出框的触发器，因为这会导致键盘用户无法触发它们。
       </p>
-      <p>Avoid adding an excessive amount of content in popovers with the <code>html</code> option. Once popovers are displayed, their content is tied to the trigger element with the <code>aria-describedby</code> attribute, causing all of the popover’s content to be announced to assistive technology users as one long, uninterrupted stream.</p>
+      <p>避免在使用 <code>html</code> 选项的弹出框中添加过多内容。弹出框显示后，其内容通过 <code>aria-describedby</code> 属性与触发器元素关联，这会导致弹出框的所有内容作为一段冗长、不间断的内容一次性播报给辅助技术用户。</p>
       <p>
-        Popovers do not manage keyboard focus order, and their placement can be random in the DOM, so be careful when adding interactive elements (like forms or links), as it may lead to an illogical focus order or make the popover content itself completely unreachable for keyboard users. In cases where you must use these elements, consider using a
-        modal dialog instead.
+        弹出框不管理键盘焦点顺序，且它们在 DOM 中的位置可能是随机的，因此在添加交互元素（如表单或链接）时要格外小心，因为这可能导致不合逻辑的焦点顺序，或者使弹出框内容本身对键盘用户完全不可访问。如果必须使用这些元素，请考虑改用
+        模态对话框。
       </p>
     </Callout>
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <Callout type="warning">
-      <p>Note that for security reasons the <code>sanitize</code>, <code>sanitizeFn</code>, and <code>allowList</code> options cannot be supplied using data attributes.</p>
+      <p>请注意，出于安全原因，<code>sanitize</code>、<code>sanitizeFn</code> 和 <code>allowList</code> 选项不能通过数据属性提供。</p>
     </Callout>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>allowList</code></td>
             <td>object</td>
-            <td><a href="/getting-started/javascript#sanitizer">Default value</a></td>
+            <td><a href="/getting-started/javascript#sanitizer">默认值</a></td>
             <td>
-              An object containing allowed tags and attributes. Those not explicitly allowed will be removed by
-              <a href="/getting-started/javascript#sanitizer">the content sanitizer</a>.
+              一个包含允许的标签和属性的对象。未明确允许的标签和属性将被
+              <a href="/getting-started/javascript#sanitizer">内容清理器</a>移除。
               <Callout type="warning"
-                ><strong>Exercise caution when adding to this list.</strong> Refer to
-                <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
-                for more information.</Callout
+                ><strong>向此列表添加内容时要格外谨慎。</strong>更多信息请参阅
+                <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。</Callout
               >
             </td>
           </tr>
@@ -188,15 +188,15 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td><code>animation</code></td>
             <td>boolean</td>
             <td><code>true</code></td>
-            <td>Apply a CSS fade transition to the popover.</td>
+            <td>为弹出框应用 CSS 淡入过渡效果。</td>
           </tr>
           <tr>
             <td><code>boundary</code></td>
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
             <td>
-              Overflow constraint boundary of the popover (applies only to Popper’s preventOverflow modifier). By default, it’s <code>&#39;clippingParents&#39;</code> and can accept an HTMLElement reference (via JavaScript only). For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow docs</a>.
+              弹出框的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>&#39;clippingParents&#39;</code>，可以接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的
+              <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。
             </td>
           </tr>
           <tr>
@@ -204,23 +204,23 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>string, element, false</td>
             <td><code>false</code></td>
             <td>
-              Appends the popover to a specific element. Example: <code>container: &#39;body&#39;</code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element -&nbsp;which will prevent the popover from floating away from the triggering element during a window
-              resize.
+              将弹出框追加到特定元素。示例：<code>container: &#39;body&#39;</code>。此选项的特别之处在于，它允许你将弹出框放置在文档流中靠近触发元素的位置——这可以防止弹出框在窗口
+              调整大小时从触发元素处漂移。
             </td>
           </tr>
           <tr>
             <td><code>content</code></td>
             <td>string, element, function</td>
             <td><code>&#39;&#39;</code></td>
-            <td>The popover’s text content. If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</td>
+            <td>弹出框的文本内容。如果提供的是函数，则调用该函数时，其 <code>this</code> 引用将被设置为弹出框所附加到的元素。</td>
           </tr>
           <tr>
             <td><code>customClass</code></td>
             <td>string, function</td>
             <td><code>&#39;&#39;</code></td>
             <td>
-              Add classes to the popover when it is shown. Note that these classes will be added in addition to any classes specified in the template. To add multiple classes, separate them with spaces:
-              <code>&#39;class-1 class-2&#39;</code>. You can also pass a function that should return a single string containing additional class names.
+              在弹出框显示时为其添加类。请注意，这些类将附加到模板中指定的任何类之上。要添加多个类，请用空格分隔：
+              <code>&#39;class-1 class-2&#39;</code>。你也可以传入一个函数，该函数应返回包含额外类名的单个字符串。
             </td>
           </tr>
           <tr>
@@ -228,8 +228,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>number, object</td>
             <td><code>0</code></td>
             <td>
-              Delay showing and hiding the popover (ms)—doesn’t apply to manual trigger type. If a number is supplied, delay is applied to both hide/show. Object structure is:
-              <code>delay: { &quot;show&quot;: 500, &quot;hide&quot;: 100 }</code>.
+              延迟显示和隐藏弹出框的时间（毫秒）——不适用于 manual 触发类型。如果提供的是数字，则延迟会同时应用于隐藏和显示。对象结构为：
+              <code>delay: { &quot;show&quot;: 500, &quot;hide&quot;: 100 }</code>。
             </td>
           </tr>
           <tr>
@@ -237,8 +237,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>string, array</td>
             <td><code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code></td>
             <td>
-              Define fallback placements by providing a list of placements in array (in order of preference). For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements">behavior docs</a>.
+              通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的
+              <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。
             </td>
           </tr>
           <tr>
@@ -246,8 +246,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>boolean</td>
             <td><code>false</code></td>
             <td>
-              Allow HTML in the popover. If true, HTML tags in the popover’s <code>title</code> will be rendered in the popover. If false, <code>innerText</code> property will be used to insert content into the DOM. Prefer text when dealing with user-generated input to
-              <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">prevent XSS attacks</a>.
+              允许在弹出框中使用 HTML。如果为 true，弹出框 <code>title</code> 中的 HTML 标签将在弹出框中渲染。如果为 false，将使用 <code>innerText</code> 属性
+              将内容插入 DOM。处理用户生成的输入时，倾向于使用文本，以<a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">防止 XSS 攻击</a>。
             </td>
           </tr>
           <tr>
@@ -255,9 +255,9 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>number, string, function</td>
             <td><code>[0, 8]</code></td>
             <td>
-              Offset of the popover relative to its target. You can pass a string in data attributes with comma separated values like:
-              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two numbers:
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>, <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
+              弹出框相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
+              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a href="https://popper.js.org/docs/v2/modifiers/offset/#options">偏移量文档</a>。
             </td>
           </tr>
           <tr>
@@ -265,8 +265,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>string, function</td>
             <td><code>&#39;right&#39;</code></td>
             <td>
-              How to position the popover: auto, top, bottom, left, right. When <code>auto</code> is specified, it will dynamically reorient the popover. When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is
-              set to the popover instance.
+              如何定位弹出框：auto、top、bottom、left、right。当指定 <code>auto</code> 时，将动态重新调整弹出框的方向。当使用函数来确定位置时，调用该函数时会将弹出框 DOM 节点作为第一个参数，将触发元素 DOM 节点作为第二个参数。<code>this</code> 上下文
+              将被设置为弹出框实例。
             </td>
           </tr>
           <tr>
@@ -274,9 +274,9 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>null, object, function</td>
             <td><code>null</code></td>
             <td>
-              To change Bootstrap’s default Popper config, see
-              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
-              configuration object for Popper.
+              要更改 Bootstrap 的默认 Popper 配置，请参阅
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个
+              用于 Popper 的配置对象。
             </td>
           </tr>
           <tr>
@@ -284,11 +284,10 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>boolean</td>
             <td><code>true</code></td>
             <td>
-              Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized.
+              启用<a href="/getting-started/javascript#sanitizer">内容清理</a>。如果为 true，则会对 <code>template</code>、<code>content</code> 和 <code>title</code> 选项进行清理。
               <Callout type="warning"
-                ><strong>Exercise caution when disabling content sanitization.</strong> Refer to
-                <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
-                for more information. Vulnerabilities caused solely by disabling content sanitization are not considered within scope for Bootstrap’s security model.</Callout
+                ><strong>禁用内容清理时要格外谨慎。</strong>更多信息请参阅
+                <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。仅因禁用内容清理而导致的漏洞不属于 Bootstrap 安全模型的范围。</Callout
               >
             </td>
           </tr>
@@ -297,8 +296,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>null, function</td>
             <td><code>null</code></td>
             <td>
-              Provide an alternative
-              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.
+              提供一个替代的
+              <a href="/getting-started/javascript#sanitizer">内容清理</a>函数。如果你倾向于使用专门的库来执行清理，这会很有用。
             </td>
           </tr>
           <tr>
@@ -306,8 +305,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>string, false</td>
             <td><code>false</code></td>
             <td>
-              If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to also apply popovers to dynamically added DOM elements (<code>jQuery.on</code> support). See <a href="https://github.com/twbs/bootstrap/issues/4215">this issue</a> and
-              <a href="https://codepen.io/Johann-S/pen/djJYPb">an informative example</a>. <strong>Note</strong>: <code>title</code> attribute must not be used as a selector.
+              如果提供了选择器，弹出框对象将被委托到指定的目标上。在实践中，这被用于将弹出框同时应用于动态添加的 DOM 元素（<code>jQuery.on</code> 支持）。请参阅<a href="https://github.com/twbs/bootstrap/issues/4215">此 issue</a>和
+              <a href="https://codepen.io/Johann-S/pen/djJYPb">一个说明性的示例</a>。<strong>注意</strong>：<code>title</code> 属性不能用作选择器。
             </td>
           </tr>
           <tr>
@@ -317,33 +316,33 @@ const popover = new bootstrap.Popover(exampleEl, options)
               <code>&#39;&lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;popover-arrow&quot;&gt;&lt;/div&gt;&lt;h3 class=&quot;popover-header&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-body&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;</code>
             </td>
             <td>
-              Base HTML to use when creating the popover. The popover’s <code>title</code> will be injected into the <code>.popover-header</code>. The popover’s <code>content</code> will be injected into the <code>.popover-body</code>. <code>.popover-arrow</code> will become the popover’s arrow. The outermost wrapper element should have the
-              <code>.popover</code> class and <code>role=&quot;tooltip&quot;</code>.
+              创建弹出框时使用的基础 HTML。弹出框的 <code>title</code> 将被注入到 <code>.popover-header</code> 中。弹出框的 <code>content</code> 将被注入到 <code>.popover-body</code> 中。<code>.popover-arrow</code> 将成为弹出框的箭头。最外层的包裹元素应具有
+              <code>.popover</code> 类和 <code>role=&quot;tooltip&quot;</code>。
             </td>
           </tr>
           <tr>
             <td><code>title</code></td>
             <td>string, element, function</td>
             <td><code>&#39;&#39;</code></td>
-            <td>The popover title. If a function is given, it will be called with its <code>this</code> reference set to the element that the popover is attached to.</td>
+            <td>弹出框标题。如果提供的是函数，则调用该函数时，其 <code>this</code> 引用将被设置为弹出框所附加到的元素。</td>
           </tr>
           <tr>
             <td><code>trigger</code></td>
             <td>string</td>
             <td><code>&#39;click&#39;</code></td>
             <td>
-              How popover is triggered: click, hover, focus, manual. You may pass multiple triggers; separate them with a space. <code>&#39;manual&#39;</code> indicates that the popover will be triggered programmatically via the <code>.popover(&#39;show&#39;)</code>, <code>.popover(&#39;hide&#39;)</code> and
-              <code>.popover(&#39;toggle&#39;)</code> methods; this value cannot be combined with any other trigger. <code>&#39;hover&#39;</code> on its own will result in popovers that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present.
+              弹出框的触发方式：click、hover、focus、manual。你可以传入多个触发器；用空格分隔。<code>&#39;manual&#39;</code> 表示弹出框将通过 <code>.popover(&#39;show&#39;)</code>、<code>.popover(&#39;hide&#39;)</code> 和
+              <code>.popover(&#39;toggle&#39;)</code> 方法以编程方式触发；此值不能与任何其他触发器组合使用。单独使用 <code>&#39;hover&#39;</code> 会导致弹出框无法通过键盘触发，只有在存在其他方式为键盘用户传达相同信息时才应使用。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <Callout>
-      <h4 id="data-attributes-for-individual-popovers">Data attributes for individual popovers</h4>
-      <p>Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.</p>
+      <h4 id="data-attributes-for-individual-popovers">单个弹出框的数据属性</h4>
+      <p>单个弹出框的选项也可以通过使用数据属性来指定，如上所述。</p>
     </Callout>
-    <h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
+    <h4 id="using-function-with-popperconfig">在 <code>popperConfig</code> 中使用函数</h4>
     <CodeWrapper
       code="const popover = new bootstrap.Popover(element, {
   popperConfig(defaultBsPopperConfig) {
@@ -355,72 +354,72 @@ const popover = new bootstrap.Popover(exampleEl, options)
 "
       lang="javascript"
     />
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>disable</code></td>
-            <td>Removes the ability for an element’s popover to be shown. The popover will only be able to be shown if it is re-enabled.</td>
+            <td>移除元素弹出框的显示能力。只有在重新启用后，弹出框才能再次显示。</td>
           </tr>
           <tr>
             <td><code>dispose</code></td>
             <td>
-              Hides and destroys an element’s popover (Removes stored data on the DOM element). Popovers that use delegation (which are created using
-              <a href="#options">the <code>selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.
+              隐藏并销毁元素的弹出框（移除 DOM 元素上存储的数据）。使用委托的弹出框（通过
+              <a href="#options"><code>selector</code> 选项</a>创建）无法在派生的触发器元素上单独销毁。
             </td>
           </tr>
           <tr>
             <td><code>enable</code></td>
-            <td>Gives an element’s popover the ability to be shown. <strong>Popovers are enabled by default.</strong></td>
+            <td>赋予元素弹出框以显示的能力。<strong>弹出框默认处于启用状态。</strong></td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td><em>Static</em> method which allows you to get the popover instance associated with a DOM element.</td>
+            <td><em>静态</em>方法，允许你获取与 DOM 元素关联的弹出框实例。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td><em>Static</em> method which allows you to get the popover instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
+            <td><em>静态</em>方法，允许你获取与 DOM 元素关联的弹出框实例，如果尚未初始化，则创建一个新的实例。</td>
           </tr>
           <tr>
             <td><code>hide</code></td>
             <td>
-              Hides an element’s popover.
-              <strong>Returns to the caller before the popover has actually been hidden</strong> (i.e. before the <code>hidden.bs.popover</code> event occurs). This is considered a “manual” triggering of the popover.
+              隐藏元素的弹出框。
+              <strong>在弹出框实际被隐藏之前就返回给调用者</strong>（即在 <code>hidden.bs.popover</code> 事件发生之前）。这被认为是弹出框的“手动”触发。
             </td>
           </tr>
           <tr>
             <td><code>setContent</code></td>
-            <td>Gives a way to change the popover’s content after its initialization.</td>
+            <td>提供了一种在弹出框初始化后更改其内容的方法。</td>
           </tr>
           <tr>
             <td><code>show</code></td>
             <td>
-              Reveals an element’s popover.
-              <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code>shown.bs.popover</code> event occurs). This is considered a “manual” triggering of the popover. Popovers whose title and content are both zero-length are never displayed.
+              显示元素的弹出框。
+              <strong>在弹出框实际被显示之前就返回给调用者</strong>（即在 <code>shown.bs.popover</code> 事件发生之前）。这被认为是弹出框的“手动”触发。标题和内容均为零长度的弹出框永远不会显示。
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
             <td>
-              Toggles an element’s popover.
-              <strong>Returns to the caller before the popover has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.popover</code> or <code>hidden.bs.popover</code> event occurs). This is considered a “manual” triggering of the popover.
+              切换元素的弹出框。
+              <strong>在弹出框实际被显示或隐藏之前就返回给调用者</strong>（即在 <code>shown.bs.popover</code> 或 <code>hidden.bs.popover</code> 事件发生之前）。这被认为是弹出框的“手动”触发。
             </td>
           </tr>
           <tr>
             <td><code>toggleEnabled</code></td>
-            <td>Toggles the ability for an element’s popover to be shown or hidden.</td>
+            <td>切换元素弹出框的显示或隐藏能力。</td>
           </tr>
           <tr>
             <td><code>update</code></td>
-            <td>Updates the position of an element’s popover.</td>
+            <td>更新元素弹出框的位置。</td>
           </tr>
         </tbody>
       </table>
@@ -439,39 +438,39 @@ popover.setContent({
     />
     <Callout>
       <p>
-        The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the popover template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> |
+        <code>setContent</code> 方法接受一个 <code>object</code> 参数，其中每个属性键都是弹出框模板中有效的 <code>string</code> 选择器，每个相关的属性值可以是 <code>string</code> | <code>element</code> | <code>function</code> |
         <code>null</code>
       </p>
     </Callout>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event</th>
-            <th>Description</th>
+            <th>事件</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.popover</code></td>
-            <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+            <td>当 <code>hide</code> 实例方法被调用时立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.popover</code></td>
-            <td>This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+            <td>当弹出框完成从用户处隐藏后触发此事件（将等待 CSS 过渡完成）。</td>
           </tr>
           <tr>
             <td><code>inserted.bs.popover</code></td>
-            <td>This event is fired after the <code>show.bs.popover</code> event when the popover template has been added to the DOM.</td>
+            <td>当弹出框模板被添加到 DOM 后，在 <code>show.bs.popover</code> 事件之后触发此事件。</td>
           </tr>
           <tr>
             <td><code>show.bs.popover</code></td>
-            <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+            <td>当 <code>show</code> 实例方法被调用时立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>shown.bs.popover</code></td>
-            <td>This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete).</td>
+            <td>当弹出框对用户可见后触发此事件（将等待 CSS 过渡完成）。</td>
           </tr>
         </tbody>
       </table>
@@ -487,39 +486,41 @@ myPopoverTrigger.addEventListener(&#39;hidden.bs.popover&#39;, () =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#overview">Overview</a></li>
+      <li><a href="#overview">概览</a></li>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#enable-popovers">Enable popovers</a></li>
-          <li><a href="#live-demo">Live demo</a></li>
-          <li><a href="#four-directions">Four directions</a></li>
-          <li><a href="#custom-popovers">Custom popovers</a></li>
-          <li><a href="#dismiss-on-next-click">Dismiss on next click</a></li>
-          <li><a href="#disabled-elements">Disabled elements</a></li>
+          <li><a href="#enable-popovers">启用弹出框</a></li>
+          <li><a href="#live-demo">在线演示</a></li>
+          <li><a href="#four-directions">四个方向</a></li>
+          <li><a href="#custom-container">自定义 <code>container</code></a></li>
+          <li><a href="#custom-popovers">自定义弹出框</a></li>
+          <li><a href="#dismiss-on-next-click">下次点击时关闭</a></li>
+          <li><a href="#disabled-elements">禁用元素</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>
   </nav>
 </template>
+
 
 <script setup>
 import { usePage } from '@/components/use-page.js';

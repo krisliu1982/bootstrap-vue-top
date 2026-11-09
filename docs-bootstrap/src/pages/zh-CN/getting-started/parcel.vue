@@ -1,22 +1,22 @@
 <template>
   <article class="bd-content">
-    <h1>Bootstrap and Parcel</h1>
-    <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
+    <h1>Bootstrap 与 Parcel</h1>
+    <p>关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples repository</a>. You can also
-        <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">open the example in StackBlitz</a>
-        but not run it because Parcel isn’t currently supported there.
+        <strong>想直接跳到结尾？</strong>从 <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples 仓库</a>下载本指南的源代码和可运行的演示。你也可以
+        <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">在 StackBlitz 中打开示例</a>，
+        但无法在其中运行，因为 StackBlitz 目前尚不支持 Parcel。
       </p>
     </Callout>
-    <h2 id="what-is-parcel">What is Parcel?<a class="anchor-link" href="#what-is-parcel" aria-label="Link to What is Parcel?"></a></h2>
-    <p><a href="https://parceljs.org/">Parcel</a> is a web application bundler designed to simplify the development process with a zero-configuration setup out of the box. It offers features found in more advanced bundlers while focusing on ease of use, making it ideal for developers seeking a quick start.</p>
-    <h2 id="setup">Setup<a class="anchor-link" href="#setup" aria-label="Link to Setup"></a></h2>
-    <p>We’re building a Parcel project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
+    <h2 id="what-is-parcel">什么是 Parcel？<a class="anchor-link" href="#what-is-parcel" aria-label="什么是 Parcel？链接"></a></h2>
+    <p><a href="https://parceljs.org/">Parcel</a> 是一个 Web 应用打包工具，开箱即用的零配置即可简化开发流程。它提供了更高级打包工具中的特性，同时专注于易用性，非常适合希望快速上手的开发者。</p>
+    <h2 id="setup">搭建<a class="anchor-link" href="#setup" aria-label="搭建链接"></a></h2>
+    <p>我们将从零开始构建一个使用 Bootstrap 的 Parcel 项目，因此在真正开始之前还有一些前置条件和准备步骤。本指南要求你已安装 Node.js，并熟悉终端操作。</p>
     <ol>
       <li>
-        <p><strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid it asking us all the interactive questions.</p>
+        <p><strong>创建项目文件夹并初始化 npm。</strong>我们将创建 <code>my-project</code> 文件夹，并使用 <code>-y</code> 参数初始化 npm，以避免它询问各种交互式问题。</p>
         <CodeWrapper
           code="mkdir my-project &amp;&amp; cd my-project
 npm init -y
@@ -25,7 +25,7 @@ npm init -y
         />
       </li>
       <li>
-        <p><strong>Install Parcel.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. Parcel will automatically install language transformers (like Sass) as it detects them. We use <code>--save-dev</code> to signal that this dependency is only for development use and not for production.</p>
+        <p><strong>安装 Parcel。</strong>与我们的 Webpack 指南不同，这里只有一个构建工具依赖。Parcel 会在检测到语言转换器（如 Sass）时自动安装它们。我们使用 <code>--save-dev</code> 来表示该依赖仅用于开发阶段，不用于生产环境。</p>
         <CodeWrapper
           code="npm i --save-dev parcel
 "
@@ -33,7 +33,7 @@ npm init -y
         />
       </li>
       <li>
-        <p><strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don’t plan on using those components, you can omit Popper here.</p>
+        <p><strong>安装 Bootstrap。</strong>现在我们可以安装 Bootstrap 了。我们还会安装 Popper，因为下拉菜单、弹出框和工具提示都依赖它来定位。如果你不打算使用这些组件，可以在这里省略 Popper。</p>
         <CodeWrapper
           code="npm i --save bootstrap @popperjs/core
 "
@@ -41,16 +41,16 @@ npm init -y
         />
       </li>
     </ol>
-    <p>Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.</p>
-    <h2 id="project-structure">Project structure<a class="anchor-link" href="#project-structure" aria-label="Link to Project structure"></a></h2>
-    <p>We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.</p>
+    <p>现在所有必要的依赖都已安装完毕，我们可以开始创建项目文件并导入 Bootstrap 了。</p>
+    <h2 id="project-structure">项目结构<a class="anchor-link" href="#project-structure" aria-label="项目结构链接"></a></h2>
+    <p>我们已经创建了 <code>my-project</code> 文件夹并初始化了 npm。现在我们将创建 <code>src</code> 文件夹、样式表和 JavaScript 文件，以完善项目结构。请在 <code>my-project</code> 中运行以下命令，或按下图手动创建文件夹和文件结构。</p>
     <CodeWrapper
       code="mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss
 "
       lang="shell"
     />
-    <p>When you’re done, your complete project should look like this:</p>
+    <p>完成后，你的完整项目结构应如下所示：</p>
     <CodeWrapper
       code="my-project/
 ├── src/
@@ -64,13 +64,13 @@ touch src/index.html src/js/main.js src/scss/styles.scss
 "
       lang="text"
     />
-    <p>At this point, everything is in the right place, but Parcel needs an HTML page and npm script to start our server.</p>
-    <h2 id="configure-parcel">Configure Parcel<a class="anchor-link" href="#configure-parcel" aria-label="Link to Configure Parcel"></a></h2>
-    <p>With dependencies installed and our project folder ready for us to start coding, we can now configure Parcel and run our project locally. Parcel itself requires no configuration file by design, but we do need an npm script and an HTML file to start our server.</p>
+    <p>到这里，所有文件都已就位，但 Parcel 还需要一个 HTML 页面和 npm 脚本才能启动服务器。</p>
+    <h2 id="configure-parcel">配置 Parcel<a class="anchor-link" href="#configure-parcel" aria-label="配置 Parcel 链接"></a></h2>
+    <p>依赖已安装完毕，项目文件夹也已准备好开始编码，现在我们可以配置 Parcel 并在本地运行项目了。Parcel 本身按设计无需配置文件，但我们确实需要一个 npm 脚本和一个 HTML 文件来启动服务器。</p>
     <ol>
       <li>
         <p>
-          <strong>Fill in the <code>src/index.html</code> file.</strong> Parcel needs a page to render, so we use our <code>index.html</code> page to set up some basic HTML, including our CSS and JavaScript files.
+          <strong>填写 <code>src/index.html</code> 文件。</strong>Parcel 需要一个页面来渲染，所以我们使用 <code>index.html</code> 页面来搭建一些基本的 HTML，并包含我们的 CSS 和 JavaScript 文件。
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
@@ -92,16 +92,16 @@ touch src/index.html src/js/main.js src/scss/styles.scss
           lang="html"
         />
         <p>
-          We’re including a little bit of Bootstrap styling here with the
-          <code>div class=&quot;container&quot;</code> and <code>&lt;button&gt;</code> so that we see when Bootstrap’s CSS is loaded by Parcel.
+          我们在这里通过
+          <code>div class=&quot;container&quot;</code> 和 <code>&lt;button&gt;</code> 加入了一点 Bootstrap 样式，以便能看到 Parcel 何时加载了 Bootstrap 的 CSS。
         </p>
         <p>
-          Parcel will automatically detect we’re using Sass and install the
-          <a href="https://parceljs.org/languages/sass/">Sass Parcel plugin</a> to support it. However, if you wish, you can also manually run <code>npm i --save-dev @parcel/transformer-sass</code>.
+          Parcel 会自动检测到我们使用了 Sass，并安装
+          <a href="https://parceljs.org/languages/sass/">Sass Parcel 插件</a>以支持它。不过，如果你愿意，也可以手动运行 <code>npm i --save-dev @parcel/transformer-sass</code>。
         </p>
       </li>
       <li>
-        <p><strong>Add the Parcel npm scripts.</strong> Open the <code>package.json</code> and add the following <code>start</code> script to the <code>scripts</code> object. We&#39;ll use this script to start our Parcel development server and render the HTML file we created after it’s compiled into the <code>dist</code> directory.</p>
+        <p><strong>添加 Parcel 的 npm 脚本。</strong>打开 <code>package.json</code>，在 <code>scripts</code> 对象中添加以下 <code>start</code> 脚本。我们将使用该脚本启动 Parcel 开发服务器，并渲染编译到 <code>dist</code> 目录后我们创建的 HTML 文件。</p>
         <CodeWrapper
           code='{
    // ...
@@ -116,21 +116,21 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         />
       </li>
       <li>
-        <p><strong>And finally, we can start Parcel.</strong> From the <code>my-project</code> folder in your terminal, run that newly added npm script:</p>
+        <p><strong>最后，我们可以启动 Parcel 了。</strong>在终端中进入 <code>my-project</code> 文件夹，运行刚刚添加的 npm 脚本：</p>
         <CodeWrapper
           code="npm start
 "
           lang="shell"
         />
-        <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server.png" alt="Parcel dev server running" />
+        <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server.png" alt="Parcel 开发服务器正在运行" />
       </li>
     </ol>
-    <p>In the next and final section to this guide, we&#39;ll import all of Bootstrap’s CSS and JavaScript.</p>
-    <h2 id="import-bootstrap">Import Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="Link to Import Bootstrap"></a></h2>
-    <p>Importing Bootstrap into Parcel requires two imports, one into our <code>styles.scss</code> and one into our <code>main.js</code>.</p>
+    <p>在本指南接下来的最后一节中，我们将导入 Bootstrap 的全部 CSS 和 JavaScript。</p>
+    <h2 id="import-bootstrap">导入 Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="导入 Bootstrap 链接"></a></h2>
+    <p>将 Bootstrap 导入 Parcel 需要两处导入：一处导入 <code>styles.scss</code>，一处导入 <code>main.js</code>。</p>
     <ol>
       <li>
-        <p><strong>Import Bootstrap’s CSS.</strong> Add the following to <code>src/scss/styles.scss</code> to import all of Bootstrap’s source Sass.</p>
+        <p><strong>导入 Bootstrap 的 CSS。</strong>将以下内容添加到 <code>src/scss/styles.scss</code>，以导入 Bootstrap 的所有源 Sass。</p>
         <CodeWrapper
           code='// Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
@@ -138,9 +138,9 @@ touch src/index.html src/js/main.js src/scss/styles.scss
           lang="scss"
         />
         <p>
-          <em>You can also import our stylesheets individually if you want. <a href="/customize/sass#importing">Read our Sass import docs</a> for details.</em>
+          <em>如果你愿意，也可以单独导入各个样式表。详情请参阅<a href="/customize/sass#importing">我们的 Sass 导入文档</a>。</em>
         </p>
-        <p><strong>Optional:</strong> You may see Sass deprecation warnings with the latest versions of Dart Sass. These can silenced by adding the following configuration in a <code>.sassrc.js</code> file in the root folder with the following:</p>
+        <p><strong>可选：</strong>使用最新版本的 Dart Sass 时，你可能会看到 Sass 弃用警告。可以通过在根文件夹的 <code>.sassrc.js</code> 文件中添加以下配置来消除这些警告：</p>
         <CodeWrapper
           code="module.exports = {
   silenceDeprecations: [&#39;import&#39;, &#39;mixed-decls&#39;, &#39;color-functions&#39;, &#39;global-builtin&#39;]
@@ -150,14 +150,14 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         />
       </li>
       <li>
-        <p><strong>Import Bootstrap’s JS.</strong> Add the following to <code>src/js/main.js</code> to import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
+        <p><strong>导入 Bootstrap 的 JS。</strong>将以下内容添加到 <code>src/js/main.js</code>，以导入 Bootstrap 的所有 JS。Popper 会通过 Bootstrap 自动导入。</p>
         <CodeWrapper
           code="// Import all of Bootstrap’s JS
 import * as bootstrap from &#39;bootstrap&#39;
 "
           lang="javascript"
         />
-        <p>You can also import JavaScript plugins individually as needed to keep bundle sizes down:</p>
+        <p>你也可以按需单独导入 JavaScript 插件，以减小打包体积：</p>
         <CodeWrapper
           code="import Alert from &#39;bootstrap/js/dist/alert&#39;
 
@@ -167,16 +167,16 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
           lang="javascript"
         />
         <p>
-          <em><a href="/getting-started/javascript/">Read our JavaScript docs</a> for more information on how to use Bootstrap’s plugins.</em>
+          <em><a href="/getting-started/javascript/">阅读我们的 JavaScript 文档</a>，了解更多关于如何使用 Bootstrap 插件的信息。</em>
         </p>
       </li>
       <li>
-        <p><strong>And you’re done! 🎉</strong> With Bootstrap’s source Sass and JS fully loaded, your local development server should now look like this:</p>
-        <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel dev server running with Bootstrap" />
+        <p><strong>大功告成！🎉</strong>Bootstrap 的源 Sass 和 JS 已完全加载，你的本地开发服务器现在应该如下所示：</p>
+        <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel 开发服务器正在运行并加载了 Bootstrap" />
         <p>
-          Now you can start adding any Bootstrap components you want to use. Be sure to
-          <a href="https://github.com/twbs/examples/tree/main/parcel">check out the complete Parcel example project</a>
-          for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.
+          现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
+          <a href="https://github.com/twbs/examples/tree/main/parcel">查看完整的 Parcel 示例项目</a>，
+          了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
     </ol>
@@ -184,15 +184,15 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#what-is-parcel">What is Parcel?</a></li>
-      <li><a href="#setup">Setup</a></li>
-      <li><a href="#project-structure">Project structure</a></li>
-      <li><a href="#configure-parcel">Configure Parcel</a></li>
+      <li><a href="#what-is-parcel">什么是 Parcel？</a></li>
+      <li><a href="#setup">搭建</a></li>
+      <li><a href="#project-structure">项目结构</a></li>
+      <li><a href="#configure-parcel">配置 Parcel</a></li>
       <li>
-        <a href="#import-bootstrap">Import Bootstrap</a>
+        <a href="#import-bootstrap">导入 Bootstrap</a>
       </li>
     </ul>
   </nav>

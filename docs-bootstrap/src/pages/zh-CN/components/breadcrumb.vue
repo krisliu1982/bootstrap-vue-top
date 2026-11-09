@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Breadcrumb</h1>
-    <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+    <h1>面包屑导航</h1>
+    <p>在导航层级中指示当前页面的位置，并通过 CSS 自动添加分隔符。</p>
 
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
+    <p>使用带有链接列表项的有序或无序列表，即可创建一个基础样式的面包屑导航。你可以根据需要，使用我们的工具类添加额外的样式。</p>
     <Example
       code='<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -27,12 +27,11 @@
   </ol>
 </nav>'
     />
-    <h2 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h2>
+    <h2 id="dividers">分隔符<a class="anchor-link" href="#dividers" aria-label="分隔符链接"></a></h2>
     <p>
-      Dividers are automatically added in CSS through
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a
-      >. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you
-      get a global divider that you can override without recompiling CSS at any time.
+      分隔符通过
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a
+      > 在 CSS 中自动添加。你可以通过修改本地 CSS 自定义属性 <code>--bs-breadcrumb-divider</code> 来更改它们，或通过 <code>$breadcrumb-divider</code> Sass 变量（如有需要，还可使用对应的 RTL 版本 <code>$breadcrumb-divider-flipped</code>）。我们默认使用 Sass 变量，并将其设置为自定义属性的回退值。这样，你就能获得一个全局分隔符，随时可以覆盖它而无需重新编译 CSS。
     </p>
     <Example
       code='<nav style="--bs-breadcrumb-divider: &#39;>&#39;;" aria-label="breadcrumb">
@@ -43,15 +42,15 @@
 </nav>'
     />
     <p>
-      When modifying via Sass, the
-      <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using <code>&gt;</code> as the divider, you can use this:
+      通过 Sass 修改时，需要使用
+      <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> 函数为字符串生成引号。例如，使用 <code>&gt;</code> 作为分隔符时，可以这样写：
     </p>
     <CodeWrapper code='$breadcrumb-divider: quote("&gt;");' lang="scss" />
-    <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
+    <p>也可以使用<strong>内嵌的 SVG 图标</strong>。可通过我们的 CSS 自定义属性应用，或使用 Sass 变量。</p>
     <Callout>
       <p>
-        <strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our
-        <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.
+        <strong>内联 SVG 需要正确转义的字符。</strong> 诸如 <code>&lt;</code>、<code>&gt;</code> 和 <code>#</code> 等保留字符必须经过 URL 编码或转义。我们使用
+        <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass 函数</a>通过 <code>$breadcrumb-divider</code> 变量完成了这一处理。在自定义 CSS 变量时，你必须自行处理这些字符。更多信息请阅读 <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber 在 CodePen 上的说明</a>。
       </p> </Callout
     ><Example
       code='<nav style="--bs-breadcrumb-divider: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="%236c757d"/%3E%3C/svg%3E&#39;);" aria-label="breadcrumb">
@@ -66,7 +65,7 @@
 '
       lang="scss"
     />
-    <p>You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass variable to <code>$breadcrumb-divider: none;</code>.</p>
+    <p>你也可以移除分隔符设置 <code>--bs-breadcrumb-divider: &#39;&#39;;</code>（CSS 自定义属性中的空字符串也算作一个值），或将 Sass 变量设置为 <code>$breadcrumb-divider: none;</code>。</p>
     <Example
       code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -80,39 +79,39 @@
 "
       lang="scss"
     />
-    <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+    <h2 id="accessibility">可访问性<a class="anchor-link" href="#accessibility" aria-label="可访问性链接"></a></h2>
     <p>
-      Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as
-      <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.
+      由于面包屑导航提供导航功能，建议在 <code>&lt;nav&gt;</code> 元素中添加一个有意义的标签（如
+      <code>aria-label=&quot;breadcrumb&quot;</code>），以描述所提供的导航类型；同时为最后一项添加 <code>aria-current=&quot;page&quot;</code>，以表明它代表当前页面。
     </p>
     <p>
-      For more information, see the
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/">ARIA Authoring Practices Guide breadcrumb pattern</a>.
+      更多信息请参阅
+      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/">ARIA 创作实践指南中的面包屑导航模式</a>。
     </p>
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, breadcrumbs now use local CSS variables on
-      <code>.breadcrumb</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，面包屑导航现在在
+      <code>.breadcrumb</code> 上使用本地 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此仍然支持 Sass 自定义。
     </p>
     <ScssDocs name="breadcrumb-css-vars" file="scss/_breadcrumb.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="breadcrumb-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#example">Example</a></li>
-      <li><a href="#dividers">Dividers</a></li>
-      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#example">示例</a></li>
+      <li><a href="#dividers">分隔符</a></li>
+      <li><a href="#accessibility">可访问性</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

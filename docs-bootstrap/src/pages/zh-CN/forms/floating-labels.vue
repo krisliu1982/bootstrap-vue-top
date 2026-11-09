@@ -1,12 +1,12 @@
 <template>
   <article class="bd-content">
-    <h1>Floating labels</h1>
-    <p>Create beautifully simple form labels that float over your input fields.</p>
+    <h1>浮动标签</h1>
+    <p>创建简洁美观、浮动在输入框上方的表单标签。</p>
 
-    <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>Wrap a pair of <code>&lt;input class=&quot;form-control&quot;&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields.</p>
-    <p>A non-empty <code>placeholder</code> attribute is required on each <code>&lt;input&gt;</code> as our CSS-only floating label implementation relies on the <code>:placeholder-shown</code> pseudo-element to detect when the input is empty. The placeholder text itself is not visible; only the <code>&lt;label&gt;</code> is shown to users.</p>
-    <p>Also note that the <code>&lt;input&gt;</code> must come first so we can utilize a sibling selector (i.e., <code>~</code>).</p>
+    <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
+    <p>将一对 <code>&lt;input class=&quot;form-control&quot;&gt;</code> 和 <code>&lt;label&gt;</code> 元素包裹在 <code>.form-floating</code> 中，即可为 Bootstrap 的文本表单字段启用浮动标签。</p>
+    <p>每个 <code>&lt;input&gt;</code> 都需要一个非空的 <code>placeholder</code> 属性，因为我们纯 CSS 的浮动标签实现依赖 <code>:placeholder-shown</code> 伪元素来检测输入框是否为空。占位文本本身不可见，用户只能看到 <code>&lt;label&gt;</code>。</p>
+    <p>另外请注意，<code>&lt;input&gt;</code> 必须放在前面，这样我们才能使用兄弟选择器（即 <code>~</code>）。</p>
     <Example
       code='<div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -17,39 +17,38 @@
   <label for="floatingPassword">Password</label>
 </div>'
     />
-    <p>When there’s a <code>value</code> already defined, <code>&lt;label&gt;</code>s will automatically adjust to their floated position.</p>
+    <p>如果已定义了 <code>value</code>，<code>&lt;label&gt;</code> 会自动调整到浮动位置。</p>
     <Example
       code='<form class="form-floating">
   <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
   <label for="floatingInputValue">Input with value</label>
 </form>'
     />
-    <p>Form validation styles also work as expected.</p>
+    <p>表单校验样式也能正常生效。</p>
     <Example
       code='<form class="form-floating">
   <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
   <label for="floatingInputInvalid">Invalid input</label>
 </form>'
     />
-    <h2 id="textareas">Textareas<a class="anchor-link" href="#textareas" aria-label="Link to Textareas"></a></h2>
-    <p>By default, <code>&lt;textarea&gt;</code>s with <code>.form-control</code> will be the same height as <code>&lt;input&gt;</code>s.</p>
+    <h2 id="textareas">文本域<a class="anchor-link" href="#textareas" aria-label="文本域链接"></a></h2>
+    <p>默认情况下，带有 <code>.form-control</code> 的 <code>&lt;textarea&gt;</code> 与 <code>&lt;input&gt;</code> 高度相同。</p>
     <Example
       code='<div class="form-floating">
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
   <label for="floatingTextarea">Comments</label>
 </div>'
     />
-    <p>To set a custom height on your <code>&lt;textarea&gt;</code>, do not use the <code>rows</code> attribute. Instead, set an explicit <code>height</code> (either inline or via custom CSS).</p>
+    <p>要为 <code>&lt;textarea&gt;</code> 设置自定义高度，请不要使用 <code>rows</code> 属性，而应显式设置 <code>height</code>（内联样式或自定义 CSS 均可）。</p>
     <Example
       code='<div class="form-floating">
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
   <label for="floatingTextarea2">Comments</label>
 </div>'
     />
-    <h2 id="selects">Selects<a class="anchor-link" href="#selects" aria-label="Link to Selects"></a></h2>
+    <h2 id="selects">选择框<a class="anchor-link" href="#selects" aria-label="选择框链接"></a></h2>
     <p>
-      Other than <code>.form-control</code>, floating labels are only available on <code>.form-select</code>s. They work in the same way, but unlike <code>&lt;input&gt;</code>s, they’ll always show the <code>&lt;label&gt;</code> in its floated state.
-      <strong>Selects with <code>size</code> and <code>multiple</code> are not supported.</strong>
+      除 <code>.form-control</code> 外，浮动标签仅适用于 <code>.form-select</code>。它们的工作方式相同，但与 <code>&lt;input&gt;</code> 不同的是，<code>&lt;label&gt;</code> 将始终显示为浮动状态。<strong>不支持使用 <code>size</code> 和 <code>multiple</code> 的选择框。</strong>
     </p>
     <Example
       code='<div class="form-floating">
@@ -62,8 +61,8 @@
   <label for="floatingSelect">Works with selects</label>
 </div>'
     />
-    <h2 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h2>
-    <p>Add the <code>disabled</code> boolean attribute on an input, a textarea or a select to give it a grayed out appearance, remove pointer events, and prevent focusing.</p>
+    <h2 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h2>
+    <p>在输入框、文本域或选择框上添加 <code>disabled</code> 布尔属性，可使其呈现灰色外观、移除指针事件并阻止获得焦点。</p>
     <Example
       code='<div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
@@ -87,8 +86,8 @@
   <label for="floatingSelectDisabled">Works with selects</label>
 </div>'
     />
-    <h2 id="readonly-plaintext">Readonly plaintext<a class="anchor-link" href="#readonly-plaintext" aria-label="Link to Readonly plaintext"></a></h2>
-    <p>Floating labels also support <code>.form-control-plaintext</code>, which can be helpful for toggling from an editable <code>&lt;input&gt;</code> to a plaintext value without affecting the page layout.</p>
+    <h2 id="readonly-plaintext">只读纯文本<a class="anchor-link" href="#readonly-plaintext" aria-label="只读纯文本链接"></a></h2>
+    <p>浮动标签同样支持 <code>.form-control-plaintext</code>，这有助于在不影响页面布局的情况下，从可编辑的 <code>&lt;input&gt;</code> 切换为纯文本值。</p>
     <Example
       code='<div class="form-floating mb-3">
   <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
@@ -99,8 +98,8 @@
   <label for="floatingPlaintextInput">Input with value</label>
 </div>'
     />
-    <h2 id="input-groups">Input groups<a class="anchor-link" href="#input-groups" aria-label="Link to Input groups"></a></h2>
-    <p>Floating labels also support <code>.input-group</code>.</p>
+    <h2 id="input-groups">输入框组<a class="anchor-link" href="#input-groups" aria-label="输入框组链接"></a></h2>
+    <p>浮动标签同样支持 <code>.input-group</code>。</p>
     <Example
       code='<div class="input-group mb-3">
   <span class="input-group-text">@</span>
@@ -110,7 +109,7 @@
   </div>
 </div>'
     />
-    <p>When using <code>.input-group</code> and <code>.form-floating</code> along with form validation, the <code>-feedback</code> should be placed outside of the <code>.form-floating</code>, but inside of the <code>.input-group</code>. This means that the feedback will need to be shown using javascript.</p>
+    <p>在同时使用 <code>.input-group</code>、<code>.form-floating</code> 和表单校验时，<code>-feedback</code> 应放在 <code>.form-floating</code> 外部，但位于 <code>.input-group</code> 内部。这意味着反馈信息需要通过 JavaScript 显示。</p>
     <Example
       code='<div class="input-group has-validation">
   <span class="input-group-text">@</span>
@@ -123,8 +122,8 @@
   </div>
 </div>'
     />
-    <h2 id="layout">Layout<a class="anchor-link" href="#layout" aria-label="Link to Layout"></a></h2>
-    <p>When working with the Bootstrap grid system, be sure to place form elements within column classes.</p>
+    <h2 id="layout">布局<a class="anchor-link" href="#layout" aria-label="布局链接"></a></h2>
+    <p>在使用 Bootstrap 网格系统时，请务必将表单元素放在列类中。</p>
     <Example
       code='<div class="row g-2">
   <div class="col-md">
@@ -146,26 +145,26 @@
   </div>
 </div>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="form-floating-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#example">Example</a></li>
-      <li><a href="#textareas">Textareas</a></li>
-      <li><a href="#selects">Selects</a></li>
-      <li><a href="#disabled">Disabled</a></li>
-      <li><a href="#readonly-plaintext">Readonly plaintext</a></li>
-      <li><a href="#input-groups">Input groups</a></li>
-      <li><a href="#layout">Layout</a></li>
+      <li><a href="#example">示例</a></li>
+      <li><a href="#textareas">文本域</a></li>
+      <li><a href="#selects">选择框</a></li>
+      <li><a href="#disabled">禁用状态</a></li>
+      <li><a href="#readonly-plaintext">只读纯文本</a></li>
+      <li><a href="#input-groups">输入框组</a></li>
+      <li><a href="#layout">布局</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

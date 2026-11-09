@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Input group</h1>
-    <p>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+    <h1>输入框组</h1>
+    <p>通过在文本输入框、自定义选择框和自定义文件输入框的任意一侧添加文本、按钮或按钮组，轻松扩展表单控件。</p>
 
-    <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
-    <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
+    <h2 id="basic-example">基础示例<a class="anchor-link" href="#basic-example" aria-label="基础示例链接"></a></h2>
+    <p>在输入框的任意一侧放置一个附加组件或按钮，也可以在输入框的两侧各放置一个。请记住将 <code>&lt;label&gt;</code> 放在输入框组之外。</p>
     <Example
       code='<div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">@</span>
@@ -42,16 +42,16 @@
   <textarea class="form-control" aria-label="With textarea"></textarea>
 </div>'
     />
-    <h2 id="wrapping">Wrapping<a class="anchor-link" href="#wrapping" aria-label="Link to Wrapping"></a></h2>
-    <p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p>
+    <h2 id="wrapping">换行<a class="anchor-link" href="#wrapping" aria-label="换行链接"></a></h2>
+    <p>为了容纳输入框组内的自定义表单字段校验，输入框组默认通过 <code>flex-wrap: wrap</code> 换行。你可以使用 <code>.flex-nowrap</code> 禁用换行。</p>
     <Example
       code='<div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">@</span>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
 </div>'
     />
-    <h2 id="border-radius">Border radius<a class="anchor-link" href="#border-radius" aria-label="Link to Border radius"></a></h2>
-    <p>Due to limitations of browser support at the time, <code>border-radius</code> styles can only be applied to the first and last children within the <code>.input-group</code> class. Any non-visible element in one of those positions will cause the input group to render incorrectly. This will unfortunately not be fixed until v6 most likely.</p>
+    <h2 id="border-radius">圆角<a class="anchor-link" href="#border-radius" aria-label="圆角链接"></a></h2>
+    <p>由于当时浏览器支持的限制，<code>border-radius</code> 样式只能应用于 <code>.input-group</code> 类中的第一个和最后一个子元素。处于这些位置上的任何不可见元素都会导致输入框组渲染错误。遗憾的是，这很可能要到 v6 才能修复。</p>
     <Example
       code='<div class="input-group">
   <span class="input-group-text" id="visible-addon">@</span>
@@ -59,9 +59,9 @@
   <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
 </div>'
     />
-    <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
-    <p><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
+    <h2 id="sizing">尺寸<a class="anchor-link" href="#sizing" aria-label="尺寸链接"></a></h2>
+    <p>将相应的表单尺寸类添加到 <code>.input-group</code> 本身，其中的内容便会自动调整尺寸——无需在每个元素上重复表单控件的尺寸类。</p>
+    <p><strong>不支持对输入框组中的单个元素设置尺寸。</strong></p>
     <Example
       code='<div class="input-group input-group-sm mb-3">
   <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
@@ -78,10 +78,9 @@
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
 </div>'
     />
-    <h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
+    <h2 id="checkboxes-and-radios">复选框与单选按钮<a class="anchor-link" href="#checkboxes-and-radios" aria-label="复选框与单选按钮链接"></a></h2>
     <p>
-      Place any checkbox or radio option within an input group’s addon instead of text. We recommend adding
-      <code>.mt-0</code> to the <code>.form-check-input</code> when there’s no visible text next to the input.
+      可以将任何复选框或单选按钮选项放在输入框组的附加组件中，而不是放置文本。当输入框旁边没有可见文本时，我们建议为 <code>.form-check-input</code> 添加 <code>.mt-0</code>。
     </p>
     <Example
       code='<div class="input-group mb-3">
@@ -98,8 +97,8 @@
   <input type="text" class="form-control" aria-label="Text input with radio button">
 </div>'
     />
-    <h2 id="multiple-inputs">Multiple inputs<a class="anchor-link" href="#multiple-inputs" aria-label="Link to Multiple inputs"></a></h2>
-    <p>While multiple <code>&lt;input&gt;</code>s are supported visually, validation styles are only available for input groups with a single <code>&lt;input&gt;</code>.</p>
+    <h2 id="multiple-inputs">多个输入框<a class="anchor-link" href="#multiple-inputs" aria-label="多个输入框链接"></a></h2>
+    <p>虽然在视觉上支持多个 <code>&lt;input&gt;</code>，但校验样式仅适用于只包含一个 <code>&lt;input&gt;</code> 的输入框组。</p>
     <Example
       code='<div class="input-group">
   <span class="input-group-text">First and last name</span>
@@ -107,8 +106,8 @@
   <input type="text" aria-label="Last name" class="form-control">
 </div>'
     />
-    <h2 id="multiple-addons">Multiple addons<a class="anchor-link" href="#multiple-addons" aria-label="Link to Multiple addons"></a></h2>
-    <p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
+    <h2 id="multiple-addons">多个附加组件<a class="anchor-link" href="#multiple-addons" aria-label="多个附加组件链接"></a></h2>
+    <p>支持多个附加组件，并可与复选框和单选按钮输入版本混合使用。</p>
     <Example
       code='<div class="input-group mb-3">
   <span class="input-group-text">$</span>
@@ -122,7 +121,7 @@
   <span class="input-group-text">0.00</span>
 </div>'
     />
-    <h2 id="button-addons">Button addons<a class="anchor-link" href="#button-addons" aria-label="Link to Button addons"></a></h2>
+    <h2 id="button-addons">按钮附加组件<a class="anchor-link" href="#button-addons" aria-label="按钮附加组件链接"></a></h2>
     <Example
       code='<div class="input-group mb-3">
   <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
@@ -146,7 +145,7 @@
   <button class="btn btn-outline-secondary" type="button">Button</button>
 </div>'
     />
-    <h2 id="buttons-with-dropdowns">Buttons with dropdowns<a class="anchor-link" href="#buttons-with-dropdowns" aria-label="Link to Buttons with dropdowns"></a></h2>
+    <h2 id="buttons-with-dropdowns">带下拉菜单的按钮<a class="anchor-link" href="#buttons-with-dropdowns" aria-label="带下拉菜单的按钮链接"></a></h2>
     <Example
       code='<div class="input-group mb-3">
   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
@@ -192,7 +191,7 @@
   </ul>
 </div>'
     />
-    <h2 id="segmented-buttons">Segmented buttons<a class="anchor-link" href="#segmented-buttons" aria-label="Link to Segmented buttons"></a></h2>
+    <h2 id="segmented-buttons">分段按钮<a class="anchor-link" href="#segmented-buttons" aria-label="分段按钮链接"></a></h2>
     <Example
       code='<div class="input-group mb-3">
   <button type="button" class="btn btn-outline-secondary">Action</button>
@@ -224,9 +223,9 @@
   </ul>
 </div>'
     />
-    <h2 id="custom-forms">Custom forms<a class="anchor-link" href="#custom-forms" aria-label="Link to Custom forms"></a></h2>
-    <p>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</p>
-    <h3 id="custom-select">Custom select<a class="anchor-link" href="#custom-select" aria-label="Link to Custom select"></a></h3>
+    <h2 id="custom-forms">自定义表单<a class="anchor-link" href="#custom-forms" aria-label="自定义表单链接"></a></h2>
+    <p>输入框组支持自定义选择框和自定义文件输入框。不支持这些元素的浏览器默认版本。</p>
+    <h3 id="custom-select">自定义选择框<a class="anchor-link" href="#custom-select" aria-label="自定义选择框链接"></a></h3>
     <Example
       code='<div class="input-group mb-3">
   <label class="input-group-text" for="inputGroupSelect01">Options</label>
@@ -268,7 +267,7 @@
   <button class="btn btn-outline-secondary" type="button">Button</button>
 </div>'
     />
-    <h3 id="custom-file-input">Custom file input<a class="anchor-link" href="#custom-file-input" aria-label="Link to Custom file input"></a></h3>
+    <h3 id="custom-file-input">自定义文件输入框<a class="anchor-link" href="#custom-file-input" aria-label="自定义文件输入框链接"></a></h3>
     <Example
       code='<div class="input-group mb-3">
   <label class="input-group-text" for="inputGroupFile01">Upload</label>
@@ -290,36 +289,36 @@
   <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
 </div>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="input-group-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#basic-example">Basic example</a></li>
-      <li><a href="#wrapping">Wrapping</a></li>
-      <li><a href="#border-radius">Border radius</a></li>
-      <li><a href="#sizing">Sizing</a></li>
-      <li><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
-      <li><a href="#multiple-inputs">Multiple inputs</a></li>
-      <li><a href="#multiple-addons">Multiple addons</a></li>
-      <li><a href="#button-addons">Button addons</a></li>
-      <li><a href="#buttons-with-dropdowns">Buttons with dropdowns</a></li>
-      <li><a href="#segmented-buttons">Segmented buttons</a></li>
+      <li><a href="#basic-example">基础示例</a></li>
+      <li><a href="#wrapping">换行</a></li>
+      <li><a href="#border-radius">圆角</a></li>
+      <li><a href="#sizing">尺寸</a></li>
+      <li><a href="#checkboxes-and-radios">复选框与单选按钮</a></li>
+      <li><a href="#multiple-inputs">多个输入框</a></li>
+      <li><a href="#multiple-addons">多个附加组件</a></li>
+      <li><a href="#button-addons">按钮附加组件</a></li>
+      <li><a href="#buttons-with-dropdowns">带下拉菜单的按钮</a></li>
+      <li><a href="#segmented-buttons">分段按钮</a></li>
       <li>
-        <a href="#custom-forms">Custom forms</a>
+        <a href="#custom-forms">自定义表单</a>
         <ul>
-          <li><a href="#custom-select">Custom select</a></li>
-          <li><a href="#custom-file-input">Custom file input</a></li>
+          <li><a href="#custom-select">自定义选择框</a></li>
+          <li><a href="#custom-file-input">自定义文件输入框</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

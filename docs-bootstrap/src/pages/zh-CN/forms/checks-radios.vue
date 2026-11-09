@@ -1,19 +1,17 @@
 <template>
   <article class="bd-content">
-    <h1>Checks and radios</h1>
-    <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
+    <h1>复选框与单选按钮</h1>
+    <p>使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。</p>
 
-    <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
+    <h2 id="approach">实现方式<a class="anchor-link" href="#approach" aria-label="实现方式链接"></a></h2>
     <p>
-      Browser default checkboxes and radios are replaced with the help of <code>.form-check</code>, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are
-      for selecting one option from many.
+      借助 <code>.form-check</code> 替换浏览器默认的复选框和单选按钮，这是一系列同时适用于两种输入类型的类，可改进其 HTML 元素的布局和行为，带来更强的可自定义性和跨浏览器一致性。复选框用于在列表中选择一个或多个选项，而单选按钮用于从多个选项中仅选择一个。
     </p>
     <p>
-      Structurally, our <code>&lt;input&gt;</code>s and <code>&lt;label&gt;</code>s are sibling elements as opposed to an <code>&lt;input&gt;</code> within a <code>&lt;label&gt;</code>. This is slightly more verbose as you must specify <code>id</code> and <code>for</code> attributes to relate the <code>&lt;input&gt;</code> and
-      <code>&lt;label&gt;</code>. We use the sibling selector (<code>~</code>) for all our <code>&lt;input&gt;</code> states, like <code>:checked</code> or <code>:disabled</code>. When combined with the <code>.form-check-label</code> class, we can easily style the text for each item based on the <code>&lt;input&gt;</code>’s state.
+      在结构上，我们的 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code> 是兄弟元素，而不是将 <code>&lt;input&gt;</code> 放在 <code>&lt;label&gt;</code> 内部。这种方式略显冗长，因为你必须指定 <code>id</code> 和 <code>for</code> 属性来关联 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code>。我们对所有 <code>&lt;input&gt;</code> 状态（如 <code>:checked</code> 或 <code>:disabled</code>）都使用兄弟选择器（<code>~</code>）。结合 <code>.form-check-label</code> 类，我们可以根据 <code>&lt;input&gt;</code> 的状态轻松地为每一项的文本设置样式。
     </p>
-    <p>Our checks use custom Bootstrap icons to indicate checked or indeterminate states.</p>
-    <h2 id="checks">Checks<a class="anchor-link" href="#checks" aria-label="Link to Checks"></a></h2>
+    <p>我们的复选框使用自定义的 Bootstrap 图标来表示已选中或不确定状态。</p>
+    <h2 id="checks">复选框<a class="anchor-link" href="#checks" aria-label="复选框链接"></a></h2>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="checkDefault">
@@ -28,8 +26,8 @@
   </label>
 </div>'
     />
-    <h3 id="indeterminate">Indeterminate<a class="anchor-link" href="#indeterminate" aria-label="Link to Indeterminate"></a></h3>
-    <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+    <h3 id="indeterminate">不确定状态<a class="anchor-link" href="#indeterminate" aria-label="不确定状态链接"></a></h3>
+    <p>通过 JavaScript 手动设置时，复选框可以使用 <code>:indeterminate</code> 伪类（没有可用的 HTML 属性来指定它）。</p>
     <Example
       addStackblitzJs
       class="bd-example-indeterminate"
@@ -40,8 +38,8 @@
   </label>
 </div>'
     />
-    <h3 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h3>
-    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+    <h3 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h3>
+    <p>添加 <code>disabled</code> 属性后，关联的 <code>&lt;label&gt;</code> 会自动采用更浅的颜色，以帮助表明输入框的状态。</p>
     <Example
       addStackblitzJs
       class="bd-example-indeterminate"
@@ -64,7 +62,7 @@
   </label>
 </div>'
     />
-    <h2 id="radios">Radios<a class="anchor-link" href="#radios" aria-label="Link to Radios"></a></h2>
+    <h2 id="radios">单选按钮<a class="anchor-link" href="#radios" aria-label="单选按钮链接"></a></h2>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
@@ -79,8 +77,8 @@
   </label>
 </div>'
     />
-    <h3 id="disabled-1">Disabled<a class="anchor-link" href="#disabled-1" aria-label="Link to Disabled"></a></h3>
-    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+    <h3 id="disabled-1">禁用状态<a class="anchor-link" href="#disabled-1" aria-label="禁用状态链接"></a></h3>
+    <p>添加 <code>disabled</code> 属性后，关联的 <code>&lt;label&gt;</code> 会自动采用更浅的颜色，以帮助表明输入框的状态。</p>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="radio" name="radioDisabled" id="radioDisabled" disabled>
@@ -95,10 +93,9 @@
   </label>
 </div>'
     />
-    <h2 id="switches">Switches<a class="anchor-link" href="#switches" aria-label="Link to Switches"></a></h2>
+    <h2 id="switches">开关<a class="anchor-link" href="#switches" aria-label="开关链接"></a></h2>
     <p>
-      A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Consider using <code>role=&quot;switch&quot;</code> to more accurately convey the nature of the control to assistive technologies that support this role. In older assistive technologies, it will simply be announced as a regular
-      checkbox as a fallback. Switches also support the <code>disabled</code> attribute.
+      开关使用自定义复选框的标记结构，但通过 <code>.form-switch</code> 类渲染为切换开关。建议使用 <code>role=&quot;switch&quot;</code>，以便向支持该角色的辅助技术更准确地传达控件的性质。在较旧的辅助技术中，它将作为普通复选框读出，作为后备方案。开关同样支持 <code>disabled</code> 属性。
     </p>
     <Example
       code='<div class="form-check form-switch">
@@ -118,8 +115,8 @@
   <label class="form-check-label" for="switchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
 </div>'
     />
-    <h3 id="native-switches">Native switches<a class="anchor-link" href="#native-switches" aria-label="Link to Native switches"></a></h3>
-    <p>Progressively enhance your switches for mobile Safari (iOS 17.4+) by adding a <code>switch</code> attribute to your input to enable haptic feedback when toggling switches, just like native iOS switches. There are no style changes attached to using this attribute in Bootstrap as all our switches use custom styles.</p>
+    <h3 id="native-switches">原生开关<a class="anchor-link" href="#native-switches" aria-label="原生开关链接"></a></h3>
+    <p>为移动端 Safari（iOS 17.4+）渐进增强开关：在输入框上添加 <code>switch</code> 属性，即可在切换开关时启用触觉反馈，就像原生 iOS 开关一样。在 Bootstrap 中使用该属性不会带来样式变化，因为我们的所有开关都使用自定义样式。</p>
     <Example
       code='<div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
@@ -129,12 +126,10 @@
 </div>'
     />
     <p>
-      Be sure to read more about
-      <a href="https://webkit.org/blog/15054/an-html-switch-control/">the switch attribute on the WebKit blog</a>. Safari 17.4+ on macOS and iOS both have native-style switches in HTML while other browsers simply fall back to the standard checkbox appearance. Applying the attribute to a non-Bootstrap checkbox in more recent versions of Safari will
-      render a native switch.
+      请务必进一步了解 <a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。
     </p>
-    <h2 id="default-stacked">Default (stacked)<a class="anchor-link" href="#default-stacked" aria-label="Link to Default (stacked)"></a></h2>
-    <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code>.form-check</code>.</p>
+    <h2 id="default-stacked">默认（堆叠）<a class="anchor-link" href="#default-stacked" aria-label="默认（堆叠）链接"></a></h2>
+    <p>默认情况下，任意数量的直接相邻的复选框和单选按钮都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -168,8 +163,8 @@
   </label>
 </div>'
     />
-    <h2 id="inline">Inline<a class="anchor-link" href="#inline" aria-label="Link to Inline"></a></h2>
-    <p>Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
+    <h2 id="inline">行内排列<a class="anchor-link" href="#inline" aria-label="行内排列链接"></a></h2>
+    <p>为任意 <code>.form-check</code> 添加 <code>.form-check-inline</code>，即可将复选框或单选按钮分组在同一水平行中。</p>
     <Example
       code='<div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -197,8 +192,8 @@
   <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
 </div>'
     />
-    <h2 id="reverse">Reverse<a class="anchor-link" href="#reverse" aria-label="Link to Reverse"></a></h2>
-    <p>Put your checkboxes, radios, and switches on the opposite side with the <code>.form-check-reverse</code> modifier class.</p>
+    <h2 id="reverse">反向排列<a class="anchor-link" href="#reverse" aria-label="反向排列链接"></a></h2>
+    <p>使用 <code>.form-check-reverse</code> 修饰类，可将复选框、单选按钮和开关放在相反的一侧。</p>
     <Example
       code='<div class="form-check form-check-reverse">
   <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
@@ -218,8 +213,8 @@
   <label class="form-check-label" for="switchCheckReverse">Reverse switch checkbox input</label>
 </div>'
     />
-    <h2 id="without-labels">Without labels<a class="anchor-link" href="#without-labels" aria-label="Link to Without labels"></a></h2>
-    <p>Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for details.</p>
+    <h2 id="without-labels">不带标签<a class="anchor-link" href="#without-labels" aria-label="不带标签链接"></a></h2>
+    <p>对于没有标签文本的复选框和单选按钮，可省略外层的 <code>.form-check</code>。请记住仍需为辅助技术提供某种形式的可访问名称（例如使用 <code>aria-label</code>）。详情请参阅<a href="/forms/overview/#accessibility">表单概述的无障碍访问</a>章节。</p>
     <Example
       code='<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
@@ -229,9 +224,9 @@
   <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
 </div>'
     />
-    <h2 id="toggle-buttons">Toggle buttons<a class="anchor-link" href="#toggle-buttons" aria-label="Link to Toggle buttons"></a></h2>
-    <p>Create button-like checkboxes and radio buttons by using <code>.btn</code> styles rather than <code>.form-check-label</code> on the <code>&lt;label&gt;</code> elements. These toggle buttons can further be grouped in a <a href="/components/button-group">button group</a> if needed.</p>
-    <h3 id="checkbox-toggle-buttons">Checkbox toggle buttons<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="Link to Checkbox toggle buttons"></a></h3>
+    <h2 id="toggle-buttons">切换按钮<a class="anchor-link" href="#toggle-buttons" aria-label="切换按钮链接"></a></h2>
+    <p>在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式代替 <code>.form-check-label</code>，即可创建类似按钮的复选框和单选按钮。如有需要，这些切换按钮还可以分组到<a href="/components/button-group">按钮组</a>中。</p>
+    <h3 id="checkbox-toggle-buttons">复选框切换按钮<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="复选框切换按钮链接"></a></h3>
     <Example
       code='<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
 <label class="btn btn-primary" for="btn-check">Single toggle</label>
@@ -252,12 +247,10 @@
 <label class="btn" for="btn-check-6">Disabled</label>'
     /><Callout>
       <p>
-        Visually, these checkbox toggle buttons are identical to the
-        <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle
-        buttons will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.
+        从视觉上看，这些复选框切换按钮与<a href="/components/buttons#button-plugin">按钮插件切换按钮</a>完全相同。但是，辅助技术对它们的传达方式不同：复选框切换按钮会被屏幕阅读器读作“已选中”/“未选中”（因为尽管外观如此，它们本质上仍是复选框），而按钮插件切换按钮会被读作“按钮”/“按钮已按下”。在这两种方式之间如何选择，取决于你要创建的切换类型，以及该切换在作为复选框或实际按钮被读出时对用户是否有意义。
       </p>
     </Callout>
-    <h3 id="radio-toggle-buttons">Radio toggle buttons<a class="anchor-link" href="#radio-toggle-buttons" aria-label="Link to Radio toggle buttons"></a></h3>
+    <h3 id="radio-toggle-buttons">单选按钮切换按钮<a class="anchor-link" href="#radio-toggle-buttons" aria-label="单选按钮切换按钮链接"></a></h3>
     <Example
       code='<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
 <label class="btn btn-secondary" for="option1">Checked</label>
@@ -283,8 +276,8 @@
 <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
 <label class="btn" for="option8">Radio</label>'
     />
-    <h3 id="outlined-styles">Outlined styles<a class="anchor-link" href="#outlined-styles" aria-label="Link to Outlined styles"></a></h3>
-    <p>Different variants of <code>.btn</code>, such as the various outlined styles, are supported.</p>
+    <h3 id="outlined-styles">描边样式<a class="anchor-link" href="#outlined-styles" aria-label="描边样式链接"></a></h3>
+    <p>支持 <code>.btn</code> 的不同变体，例如各种描边样式。</p>
     <Example
       code='<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
 <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label><br>
@@ -298,54 +291,54 @@
 <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
 <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Variables for checks:</p>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>复选框的变量：</p>
     <ScssDocs name="form-check-variables" file="scss/_variables.scss" />
-    <p>Variables for switches:</p>
+    <p>开关的变量：</p>
     <ScssDocs name="form-switch-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#approach">Approach</a></li>
+      <li><a href="#approach">实现方式</a></li>
       <li>
-        <a href="#checks">Checks</a>
+        <a href="#checks">复选框</a>
         <ul>
-          <li><a href="#indeterminate">Indeterminate</a></li>
-          <li><a href="#disabled">Disabled</a></li>
+          <li><a href="#indeterminate">不确定状态</a></li>
+          <li><a href="#disabled">禁用状态</a></li>
         </ul>
       </li>
       <li>
-        <a href="#radios">Radios</a>
+        <a href="#radios">单选按钮</a>
         <ul>
-          <li><a href="#disabled-1">Disabled</a></li>
+          <li><a href="#disabled-1">禁用状态</a></li>
         </ul>
       </li>
       <li>
-        <a href="#switches">Switches</a>
+        <a href="#switches">开关</a>
         <ul>
-          <li><a href="#native-switches">Native switches</a></li>
+          <li><a href="#native-switches">原生开关</a></li>
         </ul>
       </li>
-      <li><a href="#default-stacked">Default (stacked)</a></li>
-      <li><a href="#inline">Inline</a></li>
-      <li><a href="#reverse">Reverse</a></li>
-      <li><a href="#without-labels">Without labels</a></li>
+      <li><a href="#default-stacked">默认（堆叠）</a></li>
+      <li><a href="#inline">行内排列</a></li>
+      <li><a href="#reverse">反向排列</a></li>
+      <li><a href="#without-labels">不带标签</a></li>
       <li>
-        <a href="#toggle-buttons">Toggle buttons</a>
+        <a href="#toggle-buttons">切换按钮</a>
         <ul>
-          <li><a href="#checkbox-toggle-buttons">Checkbox toggle buttons</a></li>
-          <li><a href="#radio-toggle-buttons">Radio toggle buttons</a></li>
-          <li><a href="#outlined-styles">Outlined styles</a></li>
+          <li><a href="#checkbox-toggle-buttons">复选框切换按钮</a></li>
+          <li><a href="#radio-toggle-buttons">单选按钮切换按钮</a></li>
+          <li><a href="#outlined-styles">描边样式</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
     </ul>

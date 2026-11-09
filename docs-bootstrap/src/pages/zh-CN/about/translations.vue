@@ -1,16 +1,16 @@
 <template>
   <article class="bd-content">
-    <h1>Translations</h1>
-    <p>Links to community-translated Bootstrap documentation sites.</p>
+    <h1>翻译</h1>
+    <p>链接到由社区翻译的 Bootstrap 文档站点。</p>
 
-    <p>Community members have translated Bootstrap’s documentation into various languages. None are officially supported and they may not always be up-to-date.</p>
+    <p>社区成员已将 Bootstrap 的文档翻译成多种语言。这些翻译均未获得官方支持，且可能并非始终是最新的。</p>
     <ul>
       <li v-for="translation in data.translations">
         <a :href="translation.url" :hreflang="translation.code" :lang="translation.code">{{ translation.description }} ({{ translation.name }})</a>
       </li>
     </ul>
-    <p><strong>We don’t help organize or host translations, we just link to them.</strong></p>
-    <p>Finished a new or better translation? Open a pull request to add it to our list.</p>
+    <p><strong>我们不负责组织或托管翻译，仅提供链接。</strong></p>
+    <p>完成了新的或更好的翻译？请提交 pull request 将其添加到我们的列表中。</p>
     <DocsPager />
   </article>
 </template>

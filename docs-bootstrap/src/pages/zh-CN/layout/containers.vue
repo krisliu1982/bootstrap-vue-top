@@ -1,23 +1,21 @@
 <template>
   <article class="bd-content">
-    <h1>Containers</h1>
-    <p>Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.</p>
+    <h1>容器</h1>
+    <p>容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。</p>
 
-    <h2 id="how-they-work">How they work<a class="anchor-link" href="#how-they-work" aria-label="Link to How they work"></a></h2>
+    <h2 id="how-they-work">工作原理<a class="anchor-link" href="#how-they-work" aria-label="工作原理链接"></a></h2>
     <p>
-      Containers are the most basic layout element in Bootstrap and are
-      <strong>required when using our default grid system</strong>. Containers are used to contain, pad, and (sometimes) center the content within them. While containers <em>can</em> be nested, most layouts do not require a nested container.
+      容器是 Bootstrap 中最基本的布局元素，在<strong>使用我们的默认网格系统时是必需的</strong>。容器用于包含、填充以及（有时）在内部居中对齐内容。虽然容器<em>可以</em>嵌套，但大多数布局并不需要嵌套容器。
     </p>
-    <p>Bootstrap comes with three different containers:</p>
+    <p>Bootstrap 提供三种不同的容器：</p>
     <ul>
-      <li><code>.container</code>, which sets a <code>max-width</code> at each responsive breakpoint</li>
-      <li><code>.container-{breakpoint}</code>, which is <code>width: 100%</code> until the specified breakpoint</li>
-      <li><code>.container-fluid</code>, which is <code>width: 100%</code> at all breakpoints</li>
+      <li><code>.container</code>，在每个响应式断点设置一个 <code>max-width</code></li>
+      <li><code>.container-{breakpoint}</code>，在达到指定断点之前为 <code>width: 100%</code></li>
+      <li><code>.container-fluid</code>，在所有断点下均为 <code>width: 100%</code></li>
     </ul>
-    <p>The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each breakpoint.</p>
+    <p>下表展示了各容器的 <code>max-width</code> 在每个断点下与原始 <code>.container</code> 和 <code>.container-fluid</code> 的对比。</p>
     <p>
-      See them in action and compare them in our
-      <a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">Grid example</a>.
+      在我们的<a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">网格示例</a>中查看它们的实际效果并进行比较。
     </p>
     <div class="table-responsive">
       <table class="table">
@@ -25,27 +23,27 @@
           <tr>
             <th></th>
             <th>
-              Extra small
+              超小
               <div class="fw-normal">&lt;576px</div>
             </th>
             <th>
-              Small
+              小
               <div class="fw-normal">&ge;576px</div>
             </th>
             <th>
-              Medium
+              中
               <div class="fw-normal">&ge;768px</div>
             </th>
             <th>
-              Large
+              大
               <div class="fw-normal">&ge;992px</div>
             </th>
             <th>
-              X-Large
+              超大
               <div class="fw-normal">&ge;1200px</div>
             </th>
             <th>
-              XX-Large
+              特大
               <div class="fw-normal">&ge;1400px</div>
             </th>
           </tr>
@@ -117,18 +115,18 @@
         </tbody>
       </table>
     </div>
-    <h2 id="default-container">Default container<a class="anchor-link" href="#default-container" aria-label="Link to Default container"></a></h2>
-    <p>Our default <code>.container</code> class is a responsive, fixed-width container, meaning its <code>max-width</code> changes at each breakpoint.</p>
+    <h2 id="default-container">默认容器<a class="anchor-link" href="#default-container" aria-label="默认容器链接"></a></h2>
+    <p>我们的默认 <code>.container</code> 类是一个响应式、固定宽度的容器，这意味着它的 <code>max-width</code> 会在每个断点发生变化。</p>
     <CodeWrapper
       code='&lt;div class="container"&gt;
   &lt;!-- Content here --&gt;
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="responsive-containers">Responsive containers<a class="anchor-link" href="#responsive-containers" aria-label="Link to Responsive containers"></a></h2>
+    <h2 id="responsive-containers">响应式容器<a class="anchor-link" href="#responsive-containers" aria-label="响应式容器链接"></a></h2>
     <p>
-      Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply <code>max-width</code>s for each of the higher breakpoints. For example, <code>.container-sm</code> is 100% wide to start until the <code>sm</code> breakpoint is reached, where it will scale up with
-      <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.
+      响应式容器允许你指定一个类，它在达到指定断点之前宽度为 100%，之后我们会为每个更高的断点应用 <code>max-width</code>。例如，<code>.container-sm</code> 一开始为 100% 宽，直到达到 <code>sm</code> 断点，此后它将随
+      <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 一起放大。
     </p>
     <CodeWrapper
       code='&lt;div class="container-sm"&gt;100% wide until small breakpoint&lt;/div&gt;
@@ -138,27 +136,26 @@
 &lt;div class="container-xxl"&gt;100% wide until extra extra large breakpoint&lt;/div&gt;'
       lang="html"
     />
-    <h2 id="fluid-containers">Fluid containers<a class="anchor-link" href="#fluid-containers" aria-label="Link to Fluid containers"></a></h2>
-    <p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
+    <h2 id="fluid-containers">流式容器<a class="anchor-link" href="#fluid-containers" aria-label="流式容器链接"></a></h2>
+    <p>使用 <code>.container-fluid</code> 实现全宽容器，横跨视口的整个宽度。</p>
     <CodeWrapper
       code='&lt;div class="container-fluid"&gt;
   ...
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>
-      As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by modifying the Sass map (found in
-      <code>_variables.scss</code>) that powers them:
+      如上所示，Bootstrap 生成了一系列预定义的容器类，以帮助你构建所需的布局。你可以通过修改支撑它们的 Sass map（位于
+      <code>_variables.scss</code> 中）来自定义这些预定义容器类：
     </p>
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" />
     <p>
-      For more information and examples on how to modify our Sass maps and variables, please refer to
-      <a href="/layout/grid#css">the Sass section of the Grid documentation</a>.
+      有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 Sass 部分</a>。
     </p>
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>In addition to customizing the Sass, you can also create your own containers with our Sass mixin.</p>
+    <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
+    <p>除了自定义 Sass 之外，你还可以使用我们的 Sass mixin 创建自己的容器。</p>
     <CodeWrapper
       code="// Source mixin
 @mixin make-container($padding-x: $container-padding-x) {
@@ -179,18 +176,18 @@
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-they-work">How they work</a></li>
-      <li><a href="#default-container">Default container</a></li>
-      <li><a href="#responsive-containers">Responsive containers</a></li>
-      <li><a href="#fluid-containers">Fluid containers</a></li>
+      <li><a href="#how-they-work">工作原理</a></li>
+      <li><a href="#default-container">默认容器</a></li>
+      <li><a href="#responsive-containers">响应式容器</a></li>
+      <li><a href="#fluid-containers">流式容器</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-mixins">Sass mixins</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-mixins">Sass mixin</a></li>
         </ul>
       </li>
     </ul>

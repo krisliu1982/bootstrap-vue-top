@@ -1,20 +1,19 @@
 <template>
   <article class="bd-content">
-    <h1>CSS variables</h1>
-    <p>Use Bootstrap’s CSS custom properties for fast and forward-looking design and development.</p>
+    <h1>CSS 变量</h1>
+    <p>使用 Bootstrap 的 CSS 自定义属性实现快速且具前瞻性的设计与开发。</p>
 
     <p>
-      Bootstrap includes many
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS custom properties (variables)</a>
-      in its compiled CSS for real-time customization without the need to recompile Sass. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser’s inspector, a code sandbox, or general prototyping.
+      Bootstrap 在其编译后的 CSS 中包含许多
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 自定义属性（变量）</a>，无需重新编译 Sass 即可实时自定义。当你在浏览器检查器、代码沙箱或一般原型设计中使用时，它们可以方便地访问常用值，例如主题色、断点和主要字体栈。
     </p>
     <p>
-      <strong>All our custom properties are prefixed with <code>bs-</code></strong> to avoid conflicts with third party CSS.
+      <strong>我们的所有自定义属性都以 <code>bs-</code> 为前缀</strong>，以避免与第三方 CSS 冲突。
     </p>
-    <h2 id="root-variables">Root variables<a class="anchor-link" href="#root-variables" aria-label="Link to Root variables"></a></h2>
-    <p>Here are the variables we include (note that the <code>:root</code> is required) that can be accessed anywhere Bootstrap’s CSS is loaded. They’re located in our <code>_root.scss</code> file and included in our compiled dist files.</p>
-    <h3 id="default">Default<a class="anchor-link" href="#default" aria-label="Link to Default"></a></h3>
-    <p>These CSS variables are available everywhere, regardless of color mode.</p>
+    <h2 id="root-variables">根变量<a class="anchor-link" href="#root-variables" aria-label="根变量"></a></h2>
+    <p>以下是我们包含的变量（请注意 <code>:root</code> 是必需的），可在加载了 Bootstrap CSS 的任何位置访问。它们位于 <code>_root.scss</code> 文件中，并包含在我们编译后的 dist 文件中。</p>
+    <h3 id="default">默认值<a class="anchor-link" href="#default" aria-label="默认值"></a></h3>
+    <p>无论使用哪种颜色模式，这些 CSS 变量在任何地方都可用。</p>
     <CodeWrapper
       code=':root,
 [data-bs-theme=light] {
@@ -138,8 +137,8 @@
 }'
       lang="css"
     />
-    <h3 id="dark-mode">Dark mode<a class="anchor-link" href="#dark-mode" aria-label="Link to Dark mode"></a></h3>
-    <p>These variables are scoped to our built-in dark mode.</p>
+    <h3 id="dark-mode">深色模式<a class="anchor-link" href="#dark-mode" aria-label="深色模式"></a></h3>
+    <p>这些变量的作用域限定在我们内置的深色模式中。</p>
     <CodeWrapper
       code="[data-bs-theme=dark] {
   color-scheme: dark;
@@ -198,22 +197,22 @@
 }"
       lang="css"
     />
-    <h2 id="component-variables">Component variables<a class="anchor-link" href="#component-variables" aria-label="Link to Component variables"></a></h2>
-    <p>Bootstrap 5 is increasingly making use of custom properties as local variables for various components. This way we reduce our compiled CSS, ensure styles aren’t inherited in places like nested tables, and allow some basic restyling and extending of Bootstrap components after Sass compilation.</p>
+    <h2 id="component-variables">组件变量<a class="anchor-link" href="#component-variables" aria-label="组件变量"></a></h2>
+    <p>Bootstrap 5 越来越多地将自定义属性用作各种组件的局部变量。通过这种方式，我们减少了编译后的 CSS，确保样式不会在嵌套表格等地方被继承，并允许在 Sass 编译后对 Bootstrap 组件进行一些基本的重新样式化和扩展。</p>
     <p>
-      Have a look at our table documentation for some
-      <a href="/content/tables#how-do-the-variants-and-accented-tables-work">insight into how we’re using CSS variables</a>. Our <a href="/components/navbar#css">navbars also use CSS variables</a> as of v5.2.0. We’re also using CSS variables across our grids—primarily for gutters the <a href="/layout/css-grid">new opt-in CSS grid</a>—with more
-      component usage coming in the future.
+      请查看我们的表格文档，了解我们如何使用 CSS 变量的
+      <a href="/content/tables#how-do-the-variants-and-accented-tables-work">一些见解</a>。自 v5.2.0 起，我们的<a href="/components/navbar#css">导航栏也使用 CSS 变量</a>。我们还在整个栅格系统中使用 CSS 变量——主要用于间距（gutters）以及<a href="/layout/css-grid">新的可选 CSS 栅格</a>——未来还会有更多
+      组件使用。
     </p>
-    <p>Whenever possible, we&#39;ll assign CSS variables at the base component level (e.g., <code>.navbar</code> for navbar and its sub-components). This reduces guessing on where and how to customize, and allows for easy modifications by our team in future updates.</p>
-    <h2 id="prefix">Prefix<a class="anchor-link" href="#prefix" aria-label="Link to Prefix"></a></h2>
+    <p>我们会尽可能在基础组件层级分配 CSS 变量（例如为导航栏及其子组件分配 <code>.navbar</code>）。这减少了在何处以及如何自定义的猜测，并使我们团队在未来的更新中能够轻松修改。</p>
+    <h2 id="prefix">前缀<a class="anchor-link" href="#prefix" aria-label="前缀"></a></h2>
     <p>
-      Most CSS variables use a prefix to avoid collisions with your own codebase. This prefix is in addition to the
-      <code>--</code> that’s required on every CSS variable.
+      大多数 CSS 变量都使用前缀，以避免与你自己的代码库冲突。该前缀是在每个 CSS 变量所必需的
+      <code>--</code> 之外额外添加的。
     </p>
-    <p>Customize the prefix via the <code>$prefix</code> Sass variable. By default, it’s set to <code>bs-</code> (note the trailing dash).</p>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <p>CSS variables offer similar flexibility to Sass’s variables, but without the need for compilation before being served to the browser. For example, here we’re resetting our page’s font and link styles with CSS variables.</p>
+    <p>通过 <code>$prefix</code> Sass 变量自定义前缀。默认情况下，它被设置为 <code>bs-</code>（注意末尾的短横线）。</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例"></a></h2>
+    <p>CSS 变量提供了与 Sass 变量类似的灵活性，但无需在发送到浏览器之前进行编译。例如，下面我们使用 CSS 变量重置页面的字体和链接样式。</p>
     <CodeWrapper
       code="body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
@@ -224,37 +223,37 @@ a {
 "
       lang="css"
     />
-    <h2 id="focus-variables">Focus variables<a class="anchor-link" href="#focus-variables" aria-label="Link to Focus variables"></a></h2>
+    <h2     id="focus-variables">聚焦变量<a class="anchor-link" href="#focus-variables" aria-label="聚焦变量"></a></h2>
     <AddedIn version="5.3.0" />
-    <p>Bootstrap provides custom <code>:focus</code> styles using a combination of Sass and CSS variables that can be optionally added to specific components and elements. We do not yet globally override all <code>:focus</code> styles.</p>
-    <p>In our Sass, we set default values that can be customized before compiling.</p>
+        <p>Bootstrap 使用 Sass 和 CSS 变量的组合提供自定义的 <code>:focus</code> 样式，可以选择性地添加到特定的组件和元素上。我们尚未全局覆盖所有的 <code>:focus</code> 样式。</p>
+        <p>在我们的 Sass 中，我们设置了可在编译前自定义的默认值。</p>
     <ScssDocs name="focus-ring-variables" file="scss/_variables.scss" />
-    <p>Those variables are then reassigned to <code>:root</code> level CSS variables that can be customized in real-time, including with options for <code>x</code> and <code>y</code> offsets (which default to their fallback value of <code>0</code>).</p>
+        <p>随后，这些变量会被重新赋值为 <code>:root</code> 级别的 CSS 变量，可以实时自定义，包括 <code>x</code> 和 <code>y</code> 偏移量的选项（默认使用其回退值 <code>0</code>）。</p>
     <ScssDocs name="root-focus-variables" file="scss/_root.scss" />
-    <h2 id="grid-breakpoints">Grid breakpoints<a class="anchor-link" href="#grid-breakpoints" aria-label="Link to Grid breakpoints"></a></h2>
+        <h2 id="grid-breakpoints">栅格断点<a class="anchor-link" href="#grid-breakpoints" aria-label="栅格断点"></a></h2>
     <p>
-      While we include our grid breakpoints as CSS variables (except for <code>xs</code>), be aware that <strong>CSS variables do not work in media queries</strong>. This is by design in the CSS spec for variables, but may change in coming years with support for <code>env()</code> variables. Check out
-      <a href="https://stackoverflow.com/a/47212942">this Stack Overflow answer</a> for some helpful links. In the meantime, you can use these variables in other CSS situations, as well as in your JavaScript.
+          虽然我们将栅格断点作为 CSS 变量包含在内（<code>xs</code> 除外），但请注意<strong>CSS 变量在媒体查询中不起作用</strong>。这是 CSS 规范对变量的设计使然，但未来几年可能会随着对 <code>env()</code> 变量的支持而改变。请查看
+          <a href="https://stackoverflow.com/a/47212942">这个 Stack Overflow 回答</a>获取一些有用的链接。在此期间，你可以在其他 CSS 场景以及 JavaScript 中使用这些变量。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+      <nav class="bd-toc" aria-label="本页目录">
+        <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#root-variables">Root variables</a>
+            <a href="#root-variables">根变量</a>
         <ul>
-          <li><a href="#default">Default</a></li>
-          <li><a href="#dark-mode">Dark mode</a></li>
+              <li><a href="#default">默认值</a></li>
+              <li><a href="#dark-mode">深色模式</a></li>
         </ul>
       </li>
-      <li><a href="#component-variables">Component variables</a></li>
-      <li><a href="#prefix">Prefix</a></li>
-      <li><a href="#examples">Examples</a></li>
-      <li><a href="#focus-variables">Focus variables</a></li>
+          <li><a href="#component-variables">组件变量</a></li>
+          <li><a href="#prefix">前缀</a></li>
+          <li><a href="#examples">示例</a></li>
+          <li><a href="#focus-variables">聚焦变量</a></li>
       <li>
-        <a href="#grid-breakpoints">Grid breakpoints</a>
+            <a href="#grid-breakpoints">栅格断点</a>
       </li>
     </ul>
   </nav>

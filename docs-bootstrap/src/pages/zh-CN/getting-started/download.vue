@@ -1,85 +1,77 @@
 <template>
   <article class="bd-content">
-    <h1>Download</h1>
-    <p>Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.</p>
+    <h1>下载</h1>
+    <p>下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。</p>
 
-    <h2 id="compiled-css-and-js">Compiled CSS and JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="Link to Compiled CSS and JS"></a></h2>
-    <p>Download ready-to-use compiled code for <strong>Bootstrap v5.3.8</strong> to easily drop into your project, which includes:</p>
+    <h2 id="compiled-css-and-js">编译后的 CSS 和 JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="编译后的 CSS 和 JS 链接"></a></h2>
+    <p>下载 <strong>Bootstrap v5.3.8</strong> 可直接使用的编译代码，轻松放入你的项目中，其中包含：</p>
     <ul>
       <li>
-        Compiled and minified CSS bundles (see
-        <a href="/getting-started/contents#css-files">CSS files comparison</a>)
+        编译并压缩的 CSS 包（参见<a href="/getting-started/contents#css-files">CSS 文件对比</a>）
       </li>
       <li>
-        Compiled and minified JavaScript plugins (see
-        <a href="/getting-started/contents#js-files">JS files comparison</a>)
+        编译并压缩的 JavaScript 插件（参见<a href="/getting-started/contents#js-files">JS 文件对比</a>）
       </li>
     </ul>
-    <p>This doesn’t include documentation, source files, or any optional JavaScript dependencies like Popper.</p>
+    <p>其中不包含文档、源文件或任何可选的 JavaScript 依赖（如 Popper）。</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-bd-primary">Download</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-bd-primary">下载</a>
     </p>
-    <h2 id="source-files">Source files<a class="anchor-link" href="#source-files" aria-label="Link to Source files"></a></h2>
-    <p>Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:</p>
+    <h2 id="source-files">源文件<a class="anchor-link" href="#source-files" aria-label="源文件链接"></a></h2>
+    <p>下载我们的 Sass、JavaScript 源代码和文档文件，即可使用自己的资源处理流程编译 Bootstrap。此选项需要一些额外的工具：</p>
     <ul>
-      <li><a href="/getting-started/contribute#sass">Sass compiler</a> for compiling Sass source files into CSS files</li>
-      <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> for CSS vendor prefixing</li>
+      <li><a href="/getting-started/contribute#sass">Sass 编译器</a>，用于将 Sass 源文件编译为 CSS 文件</li>
+      <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>，用于添加 CSS 厂商前缀</li>
     </ul>
     <p>
-      Should you require our full set of
-      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.
+      如果你需要我们完整的<a href="/getting-started/contribute#tooling-setup">构建工具</a>，它们已包含在内，用于开发 Bootstrap 及其文档，但很可能并不适合你自己的用途。
     </p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">Download source</a>
+      <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">下载源代码</a>
     </p>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <p>If you want to download and examine our <a href="https://getbootstrap.com/docs/5.3/examples">examples</a>, you can grab the already built examples:</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <p>如果你想下载并查看我们的<a href="https://getbootstrap.com/docs/5.3/examples">示例</a>，可以获取已构建好的示例：</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-bd-primary">Download Examples</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-bd-primary">下载示例</a>
     </p>
-    <h2 id="cdn-via-jsdelivr">CDN via jsDelivr<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="Link to CDN via jsDelivr"></a></h2>
-    <p>Skip the download with <a href="https://www.jsdelivr.com/">jsDelivr</a> to deliver cached version of Bootstrap’s compiled CSS and JS to your project.</p>
+    <h2 id="cdn-via-jsdelivr">通过 jsDelivr 使用 CDN<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="通过 jsDelivr 使用 CDN 链接"></a></h2>
+    <p>使用 <a href="https://www.jsdelivr.com/">jsDelivr</a> 免去下载步骤，为你的项目提供 Bootstrap 编译后 CSS 和 JS 的缓存版本。</p>
     <CodeWrapper
       code='&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;'
       lang="html"
     />
-    <p>If you’re using our compiled JavaScript and prefer to include Popper separately, add Popper before our JS, via a CDN preferably.</p>
+    <p>如果你使用我们编译后的 JavaScript 并且希望单独引入 Popper，请在我们的 JS 之前引入 Popper，最好通过 CDN 引入。</p>
     <CodeWrapper
       code='&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;'
       lang="html"
     />
-    <h3 id="alternative-cdns">Alternative CDNs<a class="anchor-link" href="#alternative-cdns" aria-label="Link to Alternative CDNs"></a></h3>
-    <p>We recommend <a href="https://www.jsdelivr.com/">jsDelivr</a> and use it ourselves in our documentation. However, in some cases—like in some specific countries or environments—you may need to use other CDN providers like <a href="https://cdnjs.com/">cdnjs</a> or <a href="https://unpkg.com/">unpkg</a>.</p>
+    <h3 id="alternative-cdns">其他 CDN<a class="anchor-link" href="#alternative-cdns" aria-label="其他 CDN 链接"></a></h3>
+    <p>我们推荐 <a href="https://www.jsdelivr.com/">jsDelivr</a>，并在自己的文档中使用它。但在某些情况下——例如在某些特定国家或环境中——你可能需要使用其他 CDN 提供商，如 <a href="https://cdnjs.com/">cdnjs</a> 或 <a href="https://unpkg.com/">unpkg</a>。</p>
     <p>
-      You’ll find the same files on these CDN providers, albeit with different URLs. With cdnjs, you can
-      <a href="https://cdnjs.com/libraries/bootstrap">use this direct Bootstrap package link</a> to copy and paste ready-to-use HTML snippets for each dist file from any version of Bootstrap.
+      在这些 CDN 提供商上你也能找到相同的文件，只是 URL 不同。使用 cdnjs 时，你可以通过<a href="https://cdnjs.com/libraries/bootstrap">这个 Bootstrap 软件包直链</a>，复制粘贴任意版本 Bootstrap 中各个 dist 文件的现成 HTML 片段。
     </p>
     <Callout type="warning">
       <p>
-        <strong>If the SRI hashes differ for a given file, you shouldn’t use the files from that CDN, because it means that the file was modified by someone else.</strong>
+        <strong>如果某个文件的 SRI 哈希值不同，就不应使用该 CDN 上的文件，因为这意味着该文件被其他人修改过。</strong>
       </p>
     </Callout>
     <p>
-      Note that you should compare same length hashes, e.g. <code>sha384</code> with <code>sha384</code>, otherwise it’s expected for them to be different. As such, you can use an online tool like <a href="https://www.srihash.org/">SRI Hash Generator</a> to make sure that the hashes are the same for a given file. Alternatively, assuming you have
-      OpenSSL installed, you can achieve the same from the CLI, for example:
+      请注意，应比较长度相同的哈希值，例如将 <code>sha384</code> 与 <code>sha384</code> 比较，否则它们不同是正常的。因此，你可以使用 <a href="https://www.srihash.org/">SRI 哈希生成器</a>等在线工具，确保同一文件的哈希值相同。或者，假设你已安装 OpenSSL，也可以从命令行完成同样的操作，例如：
     </p>
     <CodeWrapper
       code="openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
 "
       lang="shell"
     />
-    <h2 id="package-managers">Package managers<a class="anchor-link" href="#package-managers" aria-label="Link to Package managers"></a></h2>
+    <h2 id="package-managers">包管理器<a class="anchor-link" href="#package-managers" aria-label="包管理器链接"></a></h2>
     <p>
-      Pull in Bootstrap’s <strong>source files</strong> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will
-      <strong>require a <a href="/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong>
-      for a setup that matches our official compiled versions.
+      使用一些最流行的包管理器，将 Bootstrap 的<strong>源文件</strong>引入几乎任何项目。无论使用哪种包管理器，要使配置与我们的官方编译版本一致，Bootstrap 都<strong>需要 <a href="/getting-started/contribute#sass">Sass 编译器</a>和 <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong>。
     </p>
-    <h3 id="npm">npm<a class="anchor-link" href="#npm" aria-label="Link to npm"></a></h3>
+    <h3 id="npm">npm<a class="anchor-link" href="#npm" aria-label="npm 链接"></a></h3>
     <p>
-      Install Bootstrap in your Node.js powered apps with
-      <a href="https://www.npmjs.com/package/bootstrap">the npm package</a>:
+      使用<a href="https://www.npmjs.com/package/bootstrap">npm 包</a>在你的 Node.js 应用中安装 Bootstrap：
     </p>
     <CodeWrapper
       code="npm install bootstrap@5.3.8
@@ -87,19 +79,17 @@
       lang="shell"
     />
     <p>
-      <code>const bootstrap = require(&#39;bootstrap&#39;)</code> or <code>import bootstrap from &#39;bootstrap&#39;</code> will load all of Bootstrap’s plugins onto a <code>bootstrap</code> object. The <code>bootstrap</code> module itself exports all of our plugins. You can manually load Bootstrap’s plugins individually by loading the
-      <code>/js/dist/*.js</code> files under the package’s top-level directory.
+      <code>const bootstrap = require(&#39;bootstrap&#39;)</code> 或 <code>import bootstrap from &#39;bootstrap&#39;</code> 会将 Bootstrap 的所有插件加载到一个 <code>bootstrap</code> 对象上。<code>bootstrap</code> 模块本身导出了我们的所有插件。你也可以通过加载包顶层目录下的 <code>/js/dist/*.js</code> 文件，手动单独加载 Bootstrap 的插件。
     </p>
-    <p>Bootstrap’s <code>package.json</code> contains some additional metadata under the following keys:</p>
+    <p>Bootstrap 的 <code>package.json</code> 在以下键下包含一些额外的元数据：</p>
     <ul>
-      <li><code>sass</code> - path to Bootstrap’s main <a href="https://sass-lang.com/">Sass</a> source file</li>
-      <li><code>style</code> - path to Bootstrap’s non-minified CSS that’s been compiled using the default settings (no customization)</li>
+      <li><code>sass</code> - Bootstrap 主 <a href="https://sass-lang.com/">Sass</a> 源文件的路径</li>
+      <li><code>style</code> - 使用默认设置（无自定义）编译的 Bootstrap 未压缩 CSS 的路径</li>
     </ul>
     <Callout name="info-npm-starter" />
-    <h3 id="yarn">yarn<a class="anchor-link" href="#yarn" aria-label="Link to yarn"></a></h3>
+    <h3 id="yarn">yarn<a class="anchor-link" href="#yarn" aria-label="yarn 链接"></a></h3>
     <p>
-      Install Bootstrap in your Node.js powered apps with
-      <a href="https://yarnpkg.com/en/package/bootstrap">the yarn package</a>:
+      使用 <a href="https://yarnpkg.com/en/package/bootstrap">yarn 包</a>在你的 Node.js 应用中安装 Bootstrap：
     </p>
     <CodeWrapper
       code="yarn add bootstrap@5.3.8
@@ -108,7 +98,7 @@
     />
     <Callout type="warning">
       <p>
-        <strong>Yarn 2+ (aka Yarn Berry) doesn’t support the <code>node_modules</code> directory by default</strong>: using our <a href="https://github.com/twbs/examples/tree/main/sass-js">Sass &amp; JS example</a> needs some adjustments:
+        <strong>Yarn 2+（又名 Yarn Berry）默认不支持 <code>node_modules</code> 目录</strong>：使用我们的 <a href="https://github.com/twbs/examples/tree/main/sass-js">Sass &amp; JS 示例</a>需要做一些调整：
       </p>
       <CodeWrapper
         code="yarn config set nodeLinker node-modules # Use the node_modules linker
@@ -119,41 +109,37 @@ yarn start # Start the project
         lang="shell"
       />
     </Callout>
-    <h3 id="bun">Bun<a class="anchor-link" href="#bun" aria-label="Link to Bun"></a></h3>
-    <p>Install Bootstrap in your Bun or Node.js powered apps with <a href="https://bun.sh/">the Bun CLI</a>:</p>
+    <h3 id="bun">Bun<a class="anchor-link" href="#bun" aria-label="Bun 链接"></a></h3>
+    <p>使用 <a href="https://bun.sh/">Bun CLI</a> 在你的 Bun 或 Node.js 应用中安装 Bootstrap：</p>
     <CodeWrapper
       code="bun add bootstrap@5.3.8
 "
       lang="shell"
     />
-    <h3 id="rubygems">RubyGems<a class="anchor-link" href="#rubygems" aria-label="Link to RubyGems"></a></h3>
+    <h3 id="rubygems">RubyGems<a class="anchor-link" href="#rubygems" aria-label="RubyGems 链接"></a></h3>
     <p>
-      Install Bootstrap in your Ruby apps using <a href="https://bundler.io/">Bundler</a> (<strong>recommended</strong>) and <a href="https://rubygems.org/">RubyGems</a> by adding the following line to your <a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a
-      >:
+      使用 <a href="https://bundler.io/">Bundler</a>（<strong>推荐</strong>）和 <a href="https://rubygems.org/">RubyGems</a>，将下面这行添加到你的 <a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a> 中，即可在你的 Ruby 应用中安装 Bootstrap：
     </p>
     <CodeWrapper code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;" lang="text" />
-    <p>Alternatively, if you’re not using Bundler, you can install the gem by running this command:</p>
+    <p>或者，如果你没有使用 Bundler，可以运行以下命令安装该 gem：</p>
     <CodeWrapper
       code="gem install bootstrap -v 5.3.8
 "
       lang="shell"
     />
-    <p><a href="https://github.com/twbs/bootstrap-rubygem/blob/main/README.md">See the gem’s README</a> for further details.</p>
-    <h3 id="composer">Composer<a class="anchor-link" href="#composer" aria-label="Link to Composer"></a></h3>
+    <p>更多详情请参阅<a href="https://github.com/twbs/bootstrap-rubygem/blob/main/README.md">该 gem 的 README</a>。</p>
+    <h3 id="composer">Composer<a class="anchor-link" href="#composer" aria-label="Composer 链接"></a></h3>
     <p>
-      You can also install and manage Bootstrap’s Sass and JavaScript using
-      <a href="https://getcomposer.org/">Composer</a>:
+      你还可以使用 <a href="https://getcomposer.org/">Composer</a> 安装和管理 Bootstrap 的 Sass 和 JavaScript：
     </p>
     <CodeWrapper
       code="composer require twbs/bootstrap:5.3.8
 "
       lang="shell"
     />
-    <h3 id="nuget">NuGet<a class="anchor-link" href="#nuget" aria-label="Link to NuGet"></a></h3>
+    <h3 id="nuget">NuGet<a class="anchor-link" href="#nuget" aria-label="NuGet 链接"></a></h3>
     <p>
-      If you develop in .NET Framework, you can also install and manage Bootstrap’s
-      <a href="https://www.nuget.org/packages/bootstrap/">CSS</a> or <a href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> and JavaScript using <a href="https://www.nuget.org/">NuGet</a>. Newer projects should use <a href="https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/">libman</a> or another method as NuGet is
-      designed for compiled code, not frontend assets.
+      如果你使用 .NET Framework 开发，也可以使用 <a href="https://www.nuget.org/">NuGet</a> 安装和管理 Bootstrap 的 <a href="https://www.nuget.org/packages/bootstrap/">CSS</a> 或 <a href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> 以及 JavaScript。较新的项目应使用 <a href="https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/">libman</a> 或其他方式，因为 NuGet 是为编译代码而非前端资源设计的。
     </p>
     <CodeWrapper
       code="Install-Package bootstrap
@@ -165,33 +151,31 @@ yarn start # Start the project
 "
       lang="powershell"
     />
-    <h2 id="intellisense-extension">IntelliSense extension<a class="anchor-link" href="#intellisense-extension" aria-label="Link to IntelliSense extension"></a></h2>
+    <h2 id="intellisense-extension">IntelliSense 扩展<a class="anchor-link" href="#intellisense-extension" aria-label="IntelliSense 扩展链接"></a></h2>
     <img class="d-block mb-4 img-fluid rounded-3" src="https://getbootstrap.com/docs/5.3/assets/img/bootstrap-intellisense-autocomplete.png" width="573" height="332" alt="" />
     <p>
-      Install the community-maintained
-      <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense extension</a>
-      for Visual Studio Code to get IntelliSense auto-completion for Bootstrap classes.
+      安装社区维护的 Visual Studio Code <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense">IntelliSense 扩展</a>，即可获得 Bootstrap 类的 IntelliSense 自动补全。
     </p>
     <p>
-      <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">View in VS Code Marketplace</a>
+      <a href="https://marketplace.visualstudio.com/items?itemName=hossaini.bootstrap-intellisense" class="btn btn-bd-primary">在 VS Code 市场中查看</a>
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#compiled-css-and-js">Compiled CSS and JS</a></li>
-      <li><a href="#source-files">Source files</a></li>
-      <li><a href="#examples">Examples</a></li>
+      <li><a href="#compiled-css-and-js">编译后的 CSS 和 JS</a></li>
+      <li><a href="#source-files">源文件</a></li>
+      <li><a href="#examples">示例</a></li>
       <li>
-        <a href="#cdn-via-jsdelivr">CDN via jsDelivr</a>
+        <a href="#cdn-via-jsdelivr">通过 jsDelivr 使用 CDN</a>
         <ul>
-          <li><a href="#alternative-cdns">Alternative CDNs</a></li>
+          <li><a href="#alternative-cdns">其他 CDN</a></li>
         </ul>
       </li>
       <li>
-        <a href="#package-managers">Package managers</a>
+        <a href="#package-managers">包管理器</a>
         <ul>
           <li><a href="#npm">npm</a></li>
           <li><a href="#yarn">yarn</a></li>
@@ -202,7 +186,7 @@ yarn start # Start the project
         </ul>
       </li>
       <li>
-        <a href="#intellisense-extension">IntelliSense extension</a>
+        <a href="#intellisense-extension">IntelliSense 扩展</a>
       </li>
     </ul>
   </nav>

@@ -1,32 +1,32 @@
 <template>
   <article class="bd-content">
-    <h1>Navbar</h1>
-    <p>Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
+    <h1>导航栏</h1>
+    <p>Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。</p>
 
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Here’s what you need to know before getting started with the navbar:</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>以下是开始使用导航栏之前你需要了解的内容：</p>
     <ul>
-      <li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
-      <li>Navbars and their contents are fluid by default. Change the <a href="#containers">container</a> to limit their horizontal width in different ways.</li>
-      <li>Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
-      <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
-      <li>Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
-      <li>Indicate the current item by using <code>aria-current=&quot;page&quot;</code> for the current page or <code>aria-current=&quot;true&quot;</code> for the current item in a set.</li>
-      <li><strong>New in v5.2.0:</strong> Navbars can be themed with CSS variables that are scoped to the <code>.navbar</code> base class. <code>.navbar-light</code> has been deprecated and <code>.navbar-dark</code> has been rewritten to override CSS variables instead of adding additional styles.</li>
+      <li>导航栏需要一个包裹的 <code>.navbar</code>，并配合 <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> 以实现响应式折叠，以及<a href="#color-schemes">配色方案</a>类。</li>
+      <li>导航栏及其内容默认是流式的。更改<a href="#containers">容器</a>以不同方式限制其水平宽度。</li>
+      <li>使用我们的<a href="/utilities/spacing">间距</a>和<a href="/utilities/flex">弹性盒子</a>工具类来控制导航栏内的间距和对齐。</li>
+      <li>导航栏默认是响应式的，但你可以轻松修改它们来改变这一点。响应式行为依赖于我们的折叠（Collapse）JavaScript 插件。</li>
+      <li>使用 <code>&lt;nav&gt;</code> 元素来确保无障碍性；如果使用更通用的元素（如 <code>&lt;div&gt;</code>），请为每个导航栏添加 <code>role=&quot;navigation&quot;</code>，以便向辅助技术用户明确标识其为地标区域。</li>
+      <li>使用 <code>aria-current=&quot;page&quot;</code> 表示当前页面，或使用 <code>aria-current=&quot;true&quot;</code> 表示一组中的当前项，以此指示当前项。</li>
+      <li><strong>v5.2.0 新增：</strong>导航栏可以使用限定在 <code>.navbar</code> 基类上的 CSS 变量进行主题设置。<code>.navbar-light</code> 已弃用，<code>.navbar-dark</code> 已被重写为覆盖 CSS 变量，而不是添加额外样式。</li>
     </ul>
     <Callout name="info-prefersreducedmotion" />
-    <h2 id="supported-content">Supported content<a class="anchor-link" href="#supported-content" aria-label="Link to Supported content"></a></h2>
-    <p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
+    <h2 id="supported-content">支持的内容<a class="anchor-link" href="#supported-content" aria-label="支持的内容链接"></a></h2>
+    <p>导航栏内置支持若干子组件。根据需要从以下内容中选择：</p>
     <ul>
-      <li><code>.navbar-brand</code> for your company, product, or project name.</li>
-      <li><code>.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li>
-      <li><code>.navbar-toggler</code> for use with our collapse plugin and other <a href="#responsive-behaviors">navigation toggling</a> behaviors.</li>
-      <li>Flex and spacing utilities for any form controls and actions.</li>
-      <li><code>.navbar-text</code> for adding vertically centered strings of text.</li>
-      <li><code>.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li>
-      <li>Add an optional <code>.navbar-nav-scroll</code> to set a <code>max-height</code> and <a href="#scrolling">scroll expanded navbar content</a>.</li>
+      <li><code>.navbar-brand</code> 用于你的公司、产品或项目名称。</li>
+      <li><code>.navbar-nav</code> 用于全高且轻量的导航（包括对下拉菜单的支持）。</li>
+      <li><code>.navbar-toggler</code> 用于我们的折叠插件及其他<a href="#responsive-behaviors">导航切换</a>行为。</li>
+      <li>用于任何表单控件和操作的弹性盒子与间距工具类。</li>
+      <li><code>.navbar-text</code> 用于添加垂直居中的文本字符串。</li>
+      <li><code>.collapse.navbar-collapse</code> 用于按父级断点分组和隐藏导航栏内容。</li>
+      <li>可选地添加 <code>.navbar-nav-scroll</code> 以设置 <code>max-height</code> 并<a href="#scrolling">滚动展开的导航栏内容</a>。</li>
     </ul>
-    <p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
+    <p>下面是一个包含所有子组件的示例，位于一个浅色主题的响应式导航栏中，该导航栏会在 <code>lg</code>（大）断点处自动折叠。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -66,13 +66,13 @@
 </nav>'
     />
     <p>
-      This example uses
-      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
+      此示例使用了
+      <a href="/utilities/background">背景</a>（<code>bg-body-tertiary</code>）和<a href="/utilities/spacing">间距</a>（<code>me-auto</code>、<code>mb-2</code>、<code>mb-lg-0</code>、<code>me-2</code>）工具类。
     </p>
-    <h3 id="brand">Brand<a class="anchor-link" href="#brand" aria-label="Link to Brand"></a></h3>
-    <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p>
-    <h4 id="text">Text</h4>
-    <p>Add your text within an element with the <code>.navbar-brand</code> class.</p>
+    <h3 id="brand">品牌<a class="anchor-link" href="#brand" aria-label="品牌链接"></a></h3>
+    <p><code>.navbar-brand</code> 可应用于大多数元素，但锚点（anchor）效果最佳，因为有些元素可能需要工具类或自定义样式。</p>
+    <h4 id="text">文本</h4>
+    <p>在带有 <code>.navbar-brand</code> 类的元素中添加你的文本。</p>
     <Example
       code='<!-- As a link -->
 <nav class="navbar bg-body-tertiary">
@@ -88,8 +88,8 @@
   </div>
 </nav>'
     />
-    <h4 id="image">Image</h4>
-    <p>You can replace the text within the <code>.navbar-brand</code> with an <code>&lt;img&gt;</code>.</p>
+    <h4 id="image">图片</h4>
+    <p>你可以将 <code>.navbar-brand</code> 中的文本替换为 <code>&lt;img&gt;</code>。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container">
@@ -99,10 +99,10 @@
   </div>
 </nav>'
     />
-    <h4 id="image-and-text">Image and text</h4>
+    <h4 id="image-and-text">图片与文本</h4>
     <p>
-      You can also make use of some additional utilities to add an image and text at the same time. Note the addition of
-      <code>.d-inline-block</code> and <code>.align-text-top</code> on the <code>&lt;img&gt;</code>.
+      你还可以使用一些额外的工具类来同时添加图片和文本。注意在 <code>&lt;img&gt;</code> 上添加了
+      <code>.d-inline-block</code> 和 <code>.align-text-top</code>。
     </p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
@@ -114,10 +114,10 @@
   </div>
 </nav>'
     />
-    <h3 id="nav">Nav<a class="anchor-link" href="#nav" aria-label="Link to Nav"></a></h3>
-    <p>Navbar navigation links build on our <code>.nav</code> options with their own modifier class and require the use of <a href="#toggler">toggler classes</a> for proper responsive styling. <strong>Navigation in navbars will also grow to occupy as much horizontal space as possible</strong> to keep your navbar contents securely aligned.</p>
-    <p>Add the <code>.active</code> class on <code>.nav-link</code> to indicate the current page.</p>
-    <p>Please note that you should also add the <code>aria-current</code> attribute on the active <code>.nav-link</code>.</p>
+    <h3 id="nav">导航<a class="anchor-link" href="#nav" aria-label="导航链接"></a></h3>
+    <p>导航栏导航链接基于我们的 <code>.nav</code> 选项，具有自己的修饰类，并需要使用<a href="#toggler">切换器类</a>才能获得正确的响应式样式。<strong>导航栏中的导航还会增长以占据尽可能多的水平空间</strong>，以使你的导航栏内容保持紧密对齐。</p>
+    <p>在 <code>.nav-link</code> 上添加 <code>.active</code> 类以指示当前页面。</p>
+    <p>请注意，你还应在激活的 <code>.nav-link</code> 上添加 <code>aria-current</code> 属性。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -144,7 +144,7 @@
   </div>
 </nav>'
     />
-    <p>And because we use classes for our navs, you can avoid the list-based approach entirely if you like.</p>
+    <p>而且因为我们对导航使用了类，如果你愿意，完全可以避免基于列表的方式。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -164,8 +164,8 @@
 </nav>'
     />
     <p>
-      You can also use dropdowns in your navbar. Dropdown menus require a wrapping element for positioning, so be sure to use separate and nested elements for
-      <code>.nav-item</code> and <code>.nav-link</code> as shown below.
+      你也可以在导航栏中使用下拉菜单。下拉菜单需要一个包裹元素来定位，因此请务必像下面这样为
+      <code>.nav-item</code> 和 <code>.nav-link</code> 使用独立且嵌套的元素。
     </p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -200,8 +200,8 @@
   </div>
 </nav>'
     />
-    <h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
-    <p>Place various form controls and components within a navbar:</p>
+    <h3 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h3>
+    <p>在导航栏中放置各种表单控件和组件：</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -212,7 +212,7 @@
   </div>
 </nav>'
     />
-    <p>Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional <a href="/utilities/flex">flex utilities</a> as needed to adjust this behavior.</p>
+    <p><code>.navbar</code> 的直接子元素使用弹性布局，并默认使用 <code>justify-content: space-between</code>。可根据需要使用额外的<a href="/utilities/flex">弹性盒子工具类</a>来调整此行为。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -225,8 +225,8 @@
 </nav>'
     />
     <p>
-      Input groups work, too. If your navbar is an entire form, or mostly a form, you can use the
-      <code>&lt;form&gt;</code> element as the container and save some HTML.
+      输入组也可以使用。如果你的导航栏本身就是一个完整的表单，或主要是一个表单，你可以使用
+      <code>&lt;form&gt;</code> 元素作为容器，从而节省一些 HTML。
     </p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
@@ -238,7 +238,7 @@
   </form>
 </nav>'
     />
-    <p>Various buttons are supported as part of these navbar forms, too. This is also a great reminder that vertical alignment utilities can be used to align different sized elements.</p>
+    <p>这些导航栏表单中也支持各种按钮。这也很好地提醒了我们，可以使用垂直对齐工具类来对齐不同尺寸的元素。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <form class="container-fluid justify-content-start">
@@ -247,8 +247,8 @@
   </form>
 </nav>'
     />
-    <h3 id="text-1">Text<a class="anchor-link" href="#text-1" aria-label="Link to Text"></a></h3>
-    <p>Navbars may contain bits of text with the help of <code>.navbar-text</code>. This class adjusts vertical alignment and horizontal spacing for strings of text.</p>
+    <h3 id="text-1">文本<a class="anchor-link" href="#text-1" aria-label="文本链接"></a></h3>
+    <p>借助 <code>.navbar-text</code>，导航栏可以包含一些文本片段。该类会调整文本字符串的垂直对齐和水平间距。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -258,7 +258,7 @@
   </div>
 </nav>'
     />
-    <p>Mix and match with other components and utilities as needed.</p>
+    <p>根据需要与其他组件和工具类组合搭配。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -285,18 +285,18 @@
   </div>
 </nav>'
     />
-    <h2 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h2>
+    <h2 id="color-schemes">配色方案<a class="anchor-link" href="#color-schemes" aria-label="配色方案链接"></a></h2>
     <Callout type="warning">
       <p>
-        <strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode.
-        <a href="/customize/color-modes">Learn more about our color modes.</a>
+        <strong>v5.3.0 新增深色导航栏——</strong>我们已弃用 <code>.navbar-dark</code>，改用新的 <code>data-bs-theme=&quot;dark&quot;</code>。将 <code>data-bs-theme=&quot;dark&quot;</code> 添加到 <code>.navbar</code> 即可启用组件特定的颜色模式。
+        <a href="/customize/color-modes">了解有关颜色模式的更多信息。</a>
       </p>
       <hr />
-      <p><strong>New in v5.2.0 —</strong> Navbar theming is now powered by CSS variables and <code>.navbar-light</code> has been deprecated. CSS variables are applied to <code>.navbar</code>, defaulting to the “light” appearance, and can be overridden with <code>.navbar-dark</code>.</p>
+      <p><strong>v5.2.0 新增——</strong>导航栏主题现在由 CSS 变量驱动，且 <code>.navbar-light</code> 已弃用。CSS 变量应用于 <code>.navbar</code>，默认为“浅色”外观，并可通过 <code>.navbar-dark</code> 覆盖。</p>
     </Callout>
     <p>
-      Navbar themes are easier than ever thanks to Bootstrap’s combination of Sass and CSS variables. The default is our “light navbar” for use with light background colors, but you can also apply
-      <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> parent for dark background colors. Then, customize with <code>.bg-*</code> and additional utilities.
+      得益于 Bootstrap 对 Sass 和 CSS 变量的结合，导航栏主题比以往任何时候都更简单。默认是用于浅色背景的“浅色导航栏”，但你也可以将
+      <code>data-bs-theme=&quot;dark&quot;</code> 应用于 <code>.navbar</code> 父元素以配合深色背景。然后，使用 <code>.bg-*</code> 和其他工具类进行自定义。
     </p>
     <Example
       :showMarkup="false"
@@ -402,8 +402,8 @@
 &lt;/nav&gt;'
       lang="html"
     />
-    <h2 id="containers">Containers<a class="anchor-link" href="#containers" aria-label="Link to Containers"></a></h2>
-    <p>Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a container inside the <code>.navbar</code> to only center the contents of a <a href="#placement">fixed or static top navbar</a>.</p>
+    <h2 id="containers">容器<a class="anchor-link" href="#containers" aria-label="容器链接"></a></h2>
+    <p>虽然不是必需的，但你可以将导航栏包裹在 <code>.container</code> 中以在页面上居中——不过请注意仍然需要内部的容器。或者，你可以在 <code>.navbar</code> 内部添加容器，仅使<a href="#placement">固定或静态顶部导航栏</a>的内容居中。</p>
     <Example
       code='<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -413,7 +413,7 @@
   </nav>
 </div>'
     />
-    <p>Use any of the responsive containers to change how wide the content in your navbar is presented.</p>
+    <p>使用任意响应式容器来更改导航栏内容的呈现宽度。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-md">
@@ -421,9 +421,9 @@
   </div>
 </nav>'
     />
-    <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
-    <p>Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).</p>
-    <p>Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the <code>&lt;body&gt;</code>) to prevent overlap with other elements.</p>
+    <h2 id="placement">定位<a class="anchor-link" href="#placement" aria-label="定位链接"></a></h2>
+    <p>使用我们的<a href="/utilities/position">定位工具类</a>将导航栏放置在非静态位置。可从固定顶部、固定底部、粘性顶部（随页面滚动直到到达顶部，然后停留在那里）或粘性底部（随页面滚动直到到达底部，然后停留在那里）中选择。</p>
+    <p>固定导航栏使用 <code>position: fixed</code>，这意味着它们会脱离 DOM 的正常文档流，可能需要自定义 CSS（例如在 <code>&lt;body&gt;</code> 上设置 <code>padding-top</code>）以防止与其他元素重叠。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -455,13 +455,13 @@
   </div>
 </nav>'
     />
-    <h2 id="scrolling">Scrolling<a class="anchor-link" href="#scrolling" aria-label="Link to Scrolling"></a></h2>
+    <h2 id="scrolling">滚动<a class="anchor-link" href="#scrolling" aria-label="滚动链接"></a></h2>
     <p>
-      Add <code>.navbar-nav-scroll</code> to a <code>.navbar-nav</code> (or other navbar sub-component) to enable vertical scrolling within the toggleable contents of a collapsed navbar. By default, scrolling kicks in at <code>75vh</code> (or 75% of the viewport height), but you can override that with the local CSS custom property
-      <code>--bs-navbar-height</code> or custom styles. At larger viewports when the navbar is expanded, content will appear as it does in a default navbar.
+      为 <code>.navbar-nav</code>（或其他导航栏子组件）添加 <code>.navbar-nav-scroll</code>，以在折叠导航栏的可切换内容中启用垂直滚动。默认情况下，当高度达到 <code>75vh</code>（即视口高度的 75%）时开始滚动，但你可以通过本地 CSS 自定义属性
+      <code>--bs-navbar-height</code> 或自定义样式来覆盖它。在导航栏展开的较大视口中，内容将像在默认导航栏中一样显示。
     </p>
-    <p>Please note that this behavior comes with a potential drawback of <code>overflow</code>—when setting <code>overflow-y: auto</code> (required to scroll the content here), <code>overflow-x</code> is the equivalent of <code>auto</code>, which will crop some horizontal content.</p>
-    <p>Here’s an example navbar using <code>.navbar-nav-scroll</code> with <code>style=&quot;--bs-scroll-height: 100px;&quot;</code>, with some extra margin utilities for optimum spacing.</p>
+    <p>请注意，此行为会带来 <code>overflow</code> 的潜在缺点——当设置 <code>overflow-y: auto</code>（此处滚动内容所必需的）时，<code>overflow-x</code> 等同于 <code>auto</code>，会裁剪部分水平内容。</p>
+    <p>下面是一个使用 <code>.navbar-nav-scroll</code> 并设置 <code>style=&quot;--bs-scroll-height: 100px;&quot;</code> 的示例导航栏，还使用了一些额外外边距工具类以获得最佳间距。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -500,15 +500,15 @@
   </div>
 </nav>'
     />
-    <h2 id="responsive-behaviors">Responsive behaviors<a class="anchor-link" href="#responsive-behaviors" aria-label="Link to Responsive behaviors"></a></h2>
-    <p>Navbars can use <code>.navbar-toggler</code>, <code>.navbar-collapse</code>, and <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> classes to determine when their content collapses behind a button. In combination with other utilities, you can easily choose when to show or hide particular elements.</p>
-    <p>For navbars that never collapse, add the <code>.navbar-expand</code> class on the navbar. For navbars that always collapse, don’t add any <code>.navbar-expand</code> class.</p>
-    <h3 id="toggler">Toggler<a class="anchor-link" href="#toggler" aria-label="Link to Toggler"></a></h3>
+    <h2 id="responsive-behaviors">响应式行为<a class="anchor-link" href="#responsive-behaviors" aria-label="响应式行为链接"></a></h2>
+    <p>导航栏可以使用 <code>.navbar-toggler</code>、<code>.navbar-collapse</code> 和 <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> 类来决定其内容何时折叠到按钮之后。结合其他工具类，你可以轻松选择何时显示或隐藏特定元素。</p>
+    <p>对于永不折叠的导航栏，请在导航栏上添加 <code>.navbar-expand</code> 类。对于始终折叠的导航栏，请不要添加任何 <code>.navbar-expand</code> 类。</p>
+    <h3 id="toggler">切换器<a class="anchor-link" href="#toggler" aria-label="切换器链接"></a></h3>
     <p>
-      Navbar togglers are left-aligned by default, but should they follow a sibling element like a
-      <code>.navbar-brand</code>, they’ll automatically be aligned to the far right. Reversing your markup will reverse the placement of the toggler. Below are examples of different toggle styles.
+      导航栏切换器默认左对齐，但如果它们跟在诸如
+      <code>.navbar-brand</code> 的兄弟元素之后，则会自动靠右对齐。反转标记将反转切换器的位置。以下是不同切换样式的示例。
     </p>
-    <p>With no <code>.navbar-brand</code> shown at the smallest breakpoint:</p>
+    <p>在最小断点处不显示 <code>.navbar-brand</code>：</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -536,7 +536,7 @@
   </div>
 </nav>'
     />
-    <p>With a brand name shown on the left and toggler on the right:</p>
+    <p>左侧显示品牌名称，切换器位于右侧：</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -564,7 +564,7 @@
   </div>
 </nav>'
     />
-    <p>With a toggler on the left and brand name on the right:</p>
+    <p>切换器位于左侧，品牌名称位于右侧：</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -592,8 +592,8 @@
   </div>
 </nav>'
     />
-    <h3 id="external-content">External content<a class="anchor-link" href="#external-content" aria-label="Link to External content"></a></h3>
-    <p>Sometimes you want to use the collapse plugin to trigger a container element for content that structurally sits outside of the <code>.navbar</code> . Because our plugin works on the <code>id</code> and <code>data-bs-target</code> matching, that’s easily done!</p>
+    <h3 id="external-content">外部内容<a class="anchor-link" href="#external-content" aria-label="外部内容链接"></a></h3>
+    <p>有时你想使用折叠插件来触发一个在结构上位于 <code>.navbar</code> 之外的容器元素。由于我们的插件基于 <code>id</code> 和 <code>data-bs-target</code> 的匹配工作，这很容易做到！</p>
     <Example
       code='<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
   <div class="bg-dark p-4">
@@ -610,17 +610,15 @@
 </nav>'
     />
     <p>
-      When you do this, we recommend including additional JavaScript to move the focus programmatically to the container when it is opened. Otherwise, keyboard users and users of assistive technologies will likely have a hard time finding the newly revealed content - particularly if the container that was opened comes <em>before</em> the toggler in
-      the document’s structure. We also recommend making sure that the toggler has the <code>aria-controls</code> attribute, pointing to the <code>id</code> of the content container. In theory, this allows assistive technology users to jump directly from the toggler to the container it controls–but support for this is currently quite patchy.
+      这样做时，我们建议加入额外的 JavaScript，在容器打开时以编程方式将焦点移动到容器上。否则，键盘用户和辅助技术用户可能很难找到新显示的内容——特别是当打开的容器在文档结构中位于切换器<em>之前</em>时。我们还建议确保切换器具有 <code>aria-controls</code> 属性，指向内容容器的 <code>id</code>。理论上，这允许辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持还相当不完善。
     </p>
-    <h3 id="offcanvas">Offcanvas<a class="anchor-link" href="#offcanvas" aria-label="Link to Offcanvas"></a></h3>
+    <h3 id="offcanvas">画布外菜单<a class="anchor-link" href="#offcanvas" aria-label="画布外菜单链接"></a></h3>
     <p>
-      Transform your expanding and collapsing navbar into an offcanvas drawer with the
-      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and flexible navigation sidebar.
+      使用<a href="/components/offcanvas">画布外菜单组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了画布外菜单的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。
     </p>
     <p>
-      In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the
-      <code>.navbar-expand-*</code> class entirely.
+      在下面的示例中，要创建一个在所有断点下都始终折叠的画布外导航栏，请完全省略
+      <code>.navbar-expand-*</code> 类。
     </p>
     <Example
       code='<nav class="navbar bg-body-tertiary fixed-top">
@@ -665,7 +663,7 @@
   </div>
 </nav>'
     />
-    <p>To create an offcanvas navbar that expands into a normal navbar at a specific breakpoint like <code>lg</code>, use <code>.navbar-expand-lg</code>.</p>
+    <p>要创建一个在特定断点（如 <code>lg</code>）处展开为普通导航栏的画布外导航栏，请使用 <code>.navbar-expand-lg</code>。</p>
     <CodeWrapper
       code='&lt;nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"&gt;
   &lt;a class="navbar-brand" href="#"&gt;Offcanvas navbar&lt;/a&gt;
@@ -679,8 +677,8 @@
       lang="html"
     />
     <p>
-      When using offcanvas in a dark navbar, be aware that you may need to have a dark background on the offcanvas content to avoid the text becoming illegible. In the example below, we add <code>.navbar-dark</code> and <code>.bg-dark</code> to the <code>.navbar</code>, <code>.text-bg-dark</code> to the <code>.offcanvas</code>,
-      <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>, and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas.
+      在深色导航栏中使用画布外菜单时，请注意你可能需要为画布外菜单内容设置深色背景，以避免文本变得难以辨认。在下面的示例中，我们为 <code>.navbar</code> 添加 <code>.navbar-dark</code> 和 <code>.bg-dark</code>，为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，
+      为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>，为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以便在深色画布外菜单下获得正确的样式。
     </p>
     <Example
       code='<nav class="navbar navbar-dark bg-dark fixed-top">
@@ -725,60 +723,60 @@
   </div>
 </nav>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, navbars now use local CSS variables on
-      <code>.navbar</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，导航栏现在在
+      <code>.navbar</code> 上使用局部 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此依然支持 Sass 自定义。
     </p>
     <ScssDocs name="navbar-css-vars" file="scss/_navbar.scss" />
-    <p>Some additional CSS variables are also present on <code>.navbar-nav</code>:</p>
+    <p><code>.navbar-nav</code> 上还额外提供了一些 CSS 变量：</p>
     <ScssDocs name="navbar-nav-css-vars" file="scss/_navbar.scss" />
-    <p>Customization through CSS variables can be seen on the <code>.navbar-dark</code> class where we override specific values without adding duplicate CSS selectors.</p>
+    <p>通过 CSS 变量进行自定义的方式可以在 <code>.navbar-dark</code> 类中看到，其中我们在不添加重复 CSS 选择器的情况下覆盖了特定值。</p>
     <ScssDocs name="navbar-dark-css-vars" file="scss/_navbar.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Variables for all navbars:</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>所有导航栏的变量：</p>
     <ScssDocs name="navbar-variables" file="scss/_variables.scss" />
-    <p>Variables for the <a href="#color-schemes">dark navbar</a>:</p>
+    <p><a href="#color-schemes">深色导航栏</a>的变量：</p>
     <ScssDocs name="navbar-dark-variables" file="scss/_variables.scss" />
-    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p><a href="#responsive-behaviors">Responsive navbar expand/collapse classes</a> (e.g., <code>.navbar-expand-lg</code>) are combined with the <code>$breakpoints</code> map and generated through a loop in <code>scss/_navbar.scss</code>.</p>
+    <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
+    <p><a href="#responsive-behaviors">响应式导航栏展开/折叠类</a>（例如 <code>.navbar-expand-lg</code>）与 <code>$breakpoints</code> 映射结合，并通过 <code>scss/_navbar.scss</code> 中的一个循环生成。</p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#supported-content">Supported content</a>
+        <a href="#supported-content">支持的内容</a>
         <ul>
-          <li><a href="#brand">Brand</a></li>
-          <li><a href="#nav">Nav</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#text-1">Text</a></li>
+          <li><a href="#brand">品牌</a></li>
+          <li><a href="#nav">导航</a></li>
+          <li><a href="#forms">表单</a></li>
+          <li><a href="#text-1">文本</a></li>
         </ul>
       </li>
-      <li><a href="#color-schemes">Color schemes</a></li>
-      <li><a href="#containers">Containers</a></li>
-      <li><a href="#placement">Placement</a></li>
-      <li><a href="#scrolling">Scrolling</a></li>
+      <li><a href="#color-schemes">配色方案</a></li>
+      <li><a href="#containers">容器</a></li>
+      <li><a href="#placement">定位</a></li>
+      <li><a href="#scrolling">滚动</a></li>
       <li>
-        <a href="#responsive-behaviors">Responsive behaviors</a>
+        <a href="#responsive-behaviors">响应式行为</a>
         <ul>
-          <li><a href="#toggler">Toggler</a></li>
-          <li><a href="#external-content">External content</a></li>
-          <li><a href="#offcanvas">Offcanvas</a></li>
+          <li><a href="#toggler">切换器</a></li>
+          <li><a href="#external-content">外部内容</a></li>
+          <li><a href="#offcanvas">画布外菜单</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-loops">Sass 循环</a></li>
         </ul>
       </li>
     </ul>

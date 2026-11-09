@@ -1,12 +1,12 @@
 <template>
   <article class="bd-content">
-    <h1>Shadows</h1>
-    <p>Add or remove shadows to elements with box-shadow utilities.</p>
+    <h1>阴影</h1>
+    <p>使用 box-shadow 工具类为元素添加或移除阴影。</p>
 
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>
-      While shadows on components are disabled by default in Bootstrap and can be enabled via
-      <code>$enable-shadows</code>, you can also quickly add or remove a shadow with our <code>box-shadow</code> utility classes. Includes support for <code>.shadow-none</code> and three default sizes (which have associated variables to match).
+      虽然组件的阴影在 Bootstrap 中默认是禁用的，并且可以通过
+      <code>$enable-shadows</code> 启用，但你也可以使用我们的 <code>box-shadow</code> 工具类快速添加或移除阴影。其中包含对 <code>.shadow-none</code> 和三种默认尺寸的支持（它们都有对应的变量）。
     </p>
     <Example
       class="overflow-hidden"
@@ -15,27 +15,27 @@
 <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="box-shadow-variables" file="scss/_variables.scss" />
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Shadow utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      阴影工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-shadow" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#examples">Examples</a></li>
+      <li><a href="#examples">示例</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

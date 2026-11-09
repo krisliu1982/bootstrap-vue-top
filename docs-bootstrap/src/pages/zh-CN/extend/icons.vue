@@ -1,27 +1,26 @@
 <template>
   <article class="bd-content">
-    <h1>Icons</h1>
-    <p>Guidance and suggestions for using external icon libraries with Bootstrap.</p>
+    <h1>图标</h1>
+    <p>关于在 Bootstrap 中使用外部图标库的指导和建议。</p>
 
-    <p>While Bootstrap doesn’t include an icon set by default, we do have our own comprehensive icon library called Bootstrap Icons. Feel free to use them or any other icon set in your project. We’ve included details for Bootstrap Icons and other preferred icon sets below.</p>
-    <p>While most icon sets include multiple file formats, we prefer SVG implementations for their improved accessibility and vector support.</p>
-    <h2 id="bootstrap-icons">Bootstrap Icons<a class="anchor-link" href="#bootstrap-icons" aria-label="Link to Bootstrap Icons"></a></h2>
+    <p>虽然 Bootstrap 默认不包含图标集，但我们确实有自己的综合性图标库，名为 Bootstrap Icons。你可以随意在你的项目中使用它们或任何其他图标集。下面我们列出了 Bootstrap Icons 以及其他首选图标集的详细信息。</p>
+    <p>虽然大多数图标集包含多种文件格式，但我们更青睐 SVG 实现，因为它们具有更好的可访问性和矢量支持。</p>
+    <h2 id="bootstrap-icons">Bootstrap Icons<a class="anchor-link" href="#bootstrap-icons" aria-label="Bootstrap Icons 链接"></a></h2>
     <p>
-      Bootstrap Icons is a growing library of SVG icons that are designed by
-      <a href="https://github.com/mdo">@mdo</a> and maintained by <a href="https://github.com/orgs/twbs/people">the Bootstrap Team</a>. The beginnings of this icon set come from Bootstrap’s very own components—our forms, carousels, and more. Bootstrap has very few icon needs out of the box, so we didn’t need much. However, once we got going, we
-      couldn’t stop making more.
+      Bootstrap Icons 是一个不断丰富的 SVG 图标库，由
+      <a href="https://github.com/mdo">@mdo</a> 设计，并由 <a href="https://github.com/orgs/twbs/people">Bootstrap 团队</a>维护。这个图标集的起点来自 Bootstrap 自身的组件——我们的表单、轮播等。Bootstrap 开箱即用的图标需求很少，因此我们并不需要太多。然而，一旦开始，我们就停不下来地制作更多图标。
     </p>
-    <p>Oh, and did we mention they’re completely open source? Licensed under MIT, just like Bootstrap, our icon set is available to everyone.</p>
-    <p><a href="https://icons.getbootstrap.com/">Learn more about Bootstrap Icons</a>, including how to install them and recommended usage.</p>
-    <h2 id="alternatives">Alternatives<a class="anchor-link" href="#alternatives" aria-label="Link to Alternatives"></a></h2>
-    <p>We’ve tested and used these icon sets ourselves as preferred alternatives to Bootstrap Icons.</p>
+    <p>哦，我们有没有提到它们是完全开源的？就像 Bootstrap 一样，我们的图标集基于 MIT 许可，向所有人开放。</p>
+    <p><a href="https://icons.getbootstrap.com/">进一步了解 Bootstrap Icons</a>，包括如何安装它们以及推荐用法。</p>
+    <h2 id="alternatives">替代方案<a class="anchor-link" href="#alternatives" aria-label="替代方案链接"></a></h2>
+    <p>以下这些图标集我们亲自测试并使用过，是 Bootstrap Icons 的首选替代品。</p>
     <ul>
       <li v-for="icon in data['icons'].preferred">
         <a :href="icon.website">{{ icon.name }}</a>
       </li>
     </ul>
-    <h2 id="more-options">More options<a class="anchor-link" href="#more-options" aria-label="Link to More options"></a></h2>
-    <p>While we haven’t tried these out ourselves, they do look promising and provide multiple formats, including SVG.</p>
+    <h2 id="more-options">更多选项<a class="anchor-link" href="#more-options" aria-label="更多选项链接"></a></h2>
+    <p>虽然我们尚未亲自尝试这些，但它们看起来很有前景，并提供了多种格式，包括 SVG。</p>
     <ul>
       <li v-for="icon in data['icons'].more">
         <a :href="icon.website">{{ icon.name }}</a>
@@ -30,13 +29,13 @@
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li><a href="#bootstrap-icons">Bootstrap Icons</a></li>
-      <li><a href="#alternatives">Alternatives</a></li>
+      <li><a href="#alternatives">替代方案</a></li>
       <li>
-        <a href="#more-options">More options</a>
+        <a href="#more-options">更多选项</a>
       </li>
     </ul>
   </nav>

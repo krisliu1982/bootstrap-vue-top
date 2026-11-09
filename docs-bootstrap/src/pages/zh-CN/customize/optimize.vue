@@ -1,18 +1,18 @@
 <template>
   <article class="bd-content">
-    <h1>Optimize</h1>
-    <p>Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
+    <h1>优化</h1>
+    <p>让你的项目保持精简、响应式且易于维护，从而提供最佳体验并专注于更重要的工作。</p>
 
-    <h2 id="lean-sass-imports">Lean Sass imports<a class="anchor-link" href="#lean-sass-imports" aria-label="Link to Lean Sass imports"></a></h2>
-    <p>When using Sass in your asset pipeline, make sure you optimize Bootstrap by only <code>@import</code>ing the components you need. Your largest optimizations will likely come from the <code>Layout &amp; Components</code> section of our <code>bootstrap.scss</code>.</p>
+    <h2 id="lean-sass-imports">精简 Sass 导入<a class="anchor-link" href="#lean-sass-imports" aria-label="精简 Sass 导入"></a></h2>
+    <p>在资源处理流程中使用 Sass 时，请确保仅 <code>@import</code> 你需要的组件，以优化 Bootstrap。最大的优化空间通常来自 <code>bootstrap.scss</code> 中的 <code>Layout &amp; Components</code> 部分。</p>
     <ScssDocs name="import-stack" file="scss/bootstrap.scss" />
-    <p>If you’re not using a component, comment it out or delete it entirely. For example, if you’re not using the carousel, remove that import to save some file size in your compiled CSS. Keep in mind there are some dependencies across Sass imports that may make it more difficult to omit a file.</p>
-    <h2 id="lean-javascript">Lean JavaScript<a class="anchor-link" href="#lean-javascript" aria-label="Link to Lean JavaScript"></a></h2>
+    <p>如果你不使用某个组件，请将其注释掉或完全删除。例如，如果你不使用轮播，移除该导入可以节省编译后 CSS 的一些文件大小。请记住，Sass 导入之间存在一些依赖关系，这可能会使省略某个文件变得更困难。</p>
+    <h2 id="lean-javascript">精简 JavaScript<a class="anchor-link" href="#lean-javascript" aria-label="精简 JavaScript"></a></h2>
     <p>
-      Bootstrap’s JavaScript includes every component in our primary dist files (<code>bootstrap.js</code> and <code>bootstrap.min.js</code>), and even our primary dependency (Popper) with our bundle files (<code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code>). While you’re customizing via Sass, be sure to remove related
-      JavaScript.
+      Bootstrap 的 JavaScript 在主发行文件（<code>bootstrap.js</code> 和 <code>bootstrap.min.js</code>）中包含了所有组件，甚至在 bundle 文件（<code>bootstrap.bundle.js</code> 和 <code>bootstrap.bundle.min.js</code>）中也包含了我们的主要依赖（Popper）。当你通过 Sass 进行自定义时，请务必移除相关的
+      JavaScript。
     </p>
-    <p>For instance, assuming you’re using your own JavaScript bundler like Webpack, Parcel, or Vite, you’d only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:</p>
+    <p>例如，假设你使用自己的 JavaScript 打包工具（如 Webpack、Parcel 或 Vite），你只需导入计划使用的 JavaScript。在下面的示例中，我们展示了如何仅引入模态框的 JavaScript：</p>
     <CodeWrapper
       code="// Import just what we need
 
@@ -32,11 +32,11 @@ import &#39;bootstrap/js/dist/modal&#39;;
       lang="javascript"
     />
     <p>
-      This way, you’re not including any JavaScript you don’t intend to use for components like buttons, carousels, and tooltips. If you’re importing dropdowns, tooltips or popovers, be sure to list the Popper dependency in your
-      <code>package.json</code> file.
+      这样，你就不会为按钮、轮播和工具提示等组件引入任何你不打算使用的 JavaScript。如果你要导入下拉菜单、工具提示或弹出框，请务必在
+      <code>package.json</code> 文件中列出 Popper 依赖。
     </p>
     <Callout>
-      <p><strong>Heads up!</strong> Files in <code>bootstrap/js/dist</code> use the <strong>default export</strong>. To use them, do the following:</p>
+      <p><strong>注意！</strong><code>bootstrap/js/dist</code> 中的文件使用<strong>默认导出</strong>。要使用它们，请按以下方式操作：</p>
       <CodeWrapper
         code="import Modal from &#39;bootstrap/js/dist/modal&#39;
 const modal = new Modal(document.getElementById(&#39;myModal&#39;))
@@ -44,14 +44,13 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
         lang="javascript"
       />
     </Callout>
-    <h2 id="autoprefixer-browserslistrc">Autoprefixer .browserslistrc<a class="anchor-link" href="#autoprefixer-browserslistrc" aria-label="Link to Autoprefixer .browserslistrc"></a></h2>
+    <h2 id="autoprefixer-browserslistrc">Autoprefixer 与 .browserslistrc<a class="anchor-link" href="#autoprefixer-browserslistrc" aria-label="Autoprefixer 与 .browserslistrc"></a></h2>
     <p>
-      Bootstrap depends on Autoprefixer to automatically add browser prefixes to certain CSS properties. Prefixes are dictated by our <code>.browserslistrc</code> file, found in the root of the Bootstrap repo. Customizing this list of browsers and recompiling the Sass will automatically remove some CSS from your compiled CSS, if there are vendor
-      prefixes unique to that browser or version.
+      Bootstrap 依赖 Autoprefixer 为某些 CSS 属性自动添加浏览器前缀。前缀由 Bootstrap 仓库根目录下的 <code>.browserslistrc</code> 文件决定。如果存在特定浏览器或版本独有的厂商前缀，自定义此浏览器列表并重新编译 Sass 将自动从编译后的 CSS 中移除一些 CSS。
     </p>
-    <h2 id="unused-css">Unused CSS<a class="anchor-link" href="#unused-css" aria-label="Link to Unused CSS"></a></h2>
-    <p><em>Help wanted with this section, please consider opening a PR. Thanks!</em></p>
-    <p>While we don’t have a prebuilt example for using <a href="https://github.com/FullHuman/purgecss">PurgeCSS</a> with Bootstrap, there are some helpful articles and walkthroughs that the community has written. Here are some options:</p>
+    <h2 id="unused-css">未使用的 CSS<a class="anchor-link" href="#unused-css" aria-label="未使用的 CSS"></a></h2>
+    <p><em>本节需要帮助，请考虑提交 PR。谢谢！</em></p>
+    <p>虽然我们没有关于将 <a href="https://github.com/FullHuman/purgecss">PurgeCSS</a> 与 Bootstrap 结合使用的预置示例，但社区撰写了一些有用的文章和教程。以下是一些选项：</p>
     <ul>
       <li>
         <a href="https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772">https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772</a>
@@ -61,27 +60,26 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
       </li>
     </ul>
     <p>
-      Lastly, this
-      <a href="https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/">CSS Tricks article on unused CSS</a>
-      shows how to use PurgeCSS and other similar tools.
+      最后，这篇
+      <a href="https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/">关于未使用 CSS 的 CSS Tricks 文章</a>
+      介绍了如何使用 PurgeCSS 及其他类似工具。
     </p>
-    <h2 id="minify-and-gzip">Minify and gzip<a class="anchor-link" href="#minify-and-gzip" aria-label="Link to Minify and gzip"></a></h2>
+    <h2 id="minify-and-gzip">压缩与 gzip<a class="anchor-link" href="#minify-and-gzip" aria-label="压缩与 gzip"></a></h2>
     <p>
-      Whenever possible, be sure to compress all the code you serve to your visitors. If you’re using Bootstrap dist files, try to stick to the minified versions (indicated by the
-      <code>.min.css</code> and <code>.min.js</code> extensions). If you’re building Bootstrap from the source with your own build system, be sure to implement your own minifiers for HTML, CSS, and JS.
+      请尽可能压缩你提供给访问者的所有代码。如果你使用 Bootstrap 发行文件，请尽量使用压缩版本（由
+      <code>.min.css</code> 和 <code>.min.js</code> 扩展名标示）。如果你使用自己的构建系统从源码构建 Bootstrap，请务必为 HTML、CSS 和 JS 实现自己的压缩工具。
     </p>
-    <h2 id="non-blocking-files">Non-blocking files<a class="anchor-link" href="#non-blocking-files" aria-label="Link to Non-blocking files"></a></h2>
-    <p>While minifying and using compression might seem like enough, making your files non-blocking ones is also a big step in making your site well-optimized and fast enough.</p>
+    <h2 id="non-blocking-files">非阻塞文件<a class="anchor-link" href="#non-blocking-files" aria-label="非阻塞文件"></a></h2>
+    <p>虽然压缩和使用压缩传输似乎已经足够，但让文件变为非阻塞文件也是使站点高度优化且足够快的重要一步。</p>
     <p>
-      If you are using a <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> plugin in Google Chrome, you may have stumbled over FCP. <a href="https://web.dev/articles/fcp">The First Contentful Paint</a> metric measures the time from when the page starts loading to when any part of the page’s content is rendered on the
-      screen.
+      如果你在 Google Chrome 中使用 <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> 插件，你可能已经遇到过 FCP。<a href="https://web.dev/articles/fcp">首次内容绘制（First Contentful Paint）</a>指标衡量的是从页面开始加载到页面内容的任何部分渲染到屏幕上的时间。
     </p>
     <p>
-      You can improve FCP by deferring non-critical JavaScript or CSS. What does that mean? Simply, JavaScript or stylesheets that don’t need to be present on the first paint of your page should be marked with
-      <code>async</code> or <code>defer</code> attributes.
+      你可以通过延迟非关键的 JavaScript 或 CSS 来改善 FCP。那意味着什么？简单来说，不需要在你的页面首次绘制时出现的 JavaScript 或样式表，应使用
+      <code>async</code> 或 <code>defer</code> 属性标记。
     </p>
-    <p>This ensures that the less important resources are loaded later and not blocking the first paint. On the other hand, critical resources can be included as inline scripts or styles.</p>
-    <p>If you want to learn more about this, there are already a lot of great articles about it:</p>
+    <p>这可以确保不太重要的资源稍后加载，并且不会阻塞首次绘制。另一方面，关键资源可以作为内联脚本或样式引入。</p>
+    <p>如果你想了解更多相关信息，已经有许多很棒的文章介绍：</p>
     <ul>
       <li>
         <a href="https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/">https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/</a>
@@ -90,30 +88,30 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
         <a href="https://web.dev/articles/defer-non-critical-css">https://web.dev/articles/defer-non-critical-css</a>
       </li>
     </ul>
-    <h2 id="always-use-https">Always use HTTPS<a class="anchor-link" href="#always-use-https" aria-label="Link to Always use HTTPS"></a></h2>
+    <h2 id="always-use-https">始终使用 HTTPS<a class="anchor-link" href="#always-use-https" aria-label="始终使用 HTTPS"></a></h2>
     <p>
-      Your website should only be available over HTTPS connections in production. HTTPS improves the security, privacy, and availability of all sites, and
-      <a href="https://https.cio.gov/everything/">there is no such thing as non-sensitive web traffic</a>. The steps to configure your website to be served exclusively over HTTPS vary widely depending on your architecture and web hosting provider, and thus are beyond the scope of these docs.
+      在生产环境中，你的网站应只能通过 HTTPS 连接访问。HTTPS 可改善所有站点的安全性、隐私性和可用性，而且
+      <a href="https://https.cio.gov/everything/">不存在所谓的非敏感网络流量</a>。将网站配置为仅通过 HTTPS 提供服务的步骤因架构和 Web 托管提供商而异，因此超出了本文档的讨论范围。
     </p>
     <p>
-      Sites served over HTTPS should also access all stylesheets, scripts, and other assets over HTTPS connections. Otherwise, you’ll be sending users
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">mixed active content</a>, leading to potential vulnerabilities where a site can be compromised by altering a dependency. This can lead to security issues and in-browser warnings displayed to users. Whether you’re getting Bootstrap from a CDN or serving it yourself,
-      ensure that you only access it over HTTPS connections.
+      通过 HTTPS 提供服务的站点也应通过 HTTPS 连接访问所有样式表、脚本和其他资源。否则，你将向用户发送
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">混合活动内容</a>，可能导致站点通过更改依赖项而被攻破的潜在漏洞。这可能会引发安全问题，并向用户显示浏览器内警告。无论你是从 CDN 获取 Bootstrap 还是自行提供服务，
+      请确保仅通过 HTTPS 连接访问它。
     </p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#lean-sass-imports">Lean Sass imports</a></li>
-      <li><a href="#lean-javascript">Lean JavaScript</a></li>
-      <li><a href="#autoprefixer-browserslistrc">Autoprefixer .browserslistrc</a></li>
-      <li><a href="#unused-css">Unused CSS</a></li>
-      <li><a href="#minify-and-gzip">Minify and gzip</a></li>
-      <li><a href="#non-blocking-files">Non-blocking files</a></li>
+      <li><a href="#lean-sass-imports">精简 Sass 导入</a></li>
+      <li><a href="#lean-javascript">精简 JavaScript</a></li>
+      <li><a href="#autoprefixer-browserslistrc">Autoprefixer 与 .browserslistrc</a></li>
+      <li><a href="#unused-css">未使用的 CSS</a></li>
+      <li><a href="#minify-and-gzip">压缩与 gzip</a></li>
+      <li><a href="#non-blocking-files">非阻塞文件</a></li>
       <li>
-        <a href="#always-use-https">Always use HTTPS</a>
+        <a href="#always-use-https">始终使用 HTTPS</a>
       </li>
     </ul>
   </nav>

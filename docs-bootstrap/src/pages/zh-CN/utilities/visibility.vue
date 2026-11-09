@@ -1,13 +1,13 @@
 <template>
   <article class="bd-content">
-    <h1>Visibility</h1>
-    <p>Control the visibility of elements, without modifying their display, with visibility utilities.</p>
+    <h1>可见性</h1>
+    <p>使用可见性工具类在不修改元素显示方式的情况下控制元素的可见性。</p>
 
-    <p>Set the <code>visibility</code> of elements with our visibility utilities. These utility classes do not modify the <code>display</code> value at all and do not affect layout – <code>.invisible</code> elements still take up space in the page.</p>
+    <p>使用我们的可见性工具类设置元素的 <code>visibility</code>。这些工具类完全不修改 <code>display</code> 值，也不影响布局——<code>.invisible</code> 元素仍会在页面中占据空间。</p>
     <Callout type="warning">
-      <p>Elements with the <code>.invisible</code> class will be hidden <em>both</em> visually and for assistive technology/screen reader users.</p>
+      <p>带有 <code>.invisible</code> 类的元素将<em>同时</em>在视觉上和辅助技术/屏幕阅读器用户面前被隐藏。</p>
     </Callout>
-    <p>Apply <code>.visible</code> or <code>.invisible</code> as needed.</p>
+    <p>根据需要应用 <code>.visible</code> 或 <code>.invisible</code>。</p>
     <CodeWrapper
       code='&lt;div class="visible"&gt;...&lt;/div&gt;
 &lt;div class="invisible"&gt;...&lt;/div&gt;'
@@ -25,22 +25,22 @@
       lang="scss"
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Visibility utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      可见性工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-visibility" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

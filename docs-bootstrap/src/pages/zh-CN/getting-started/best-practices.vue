@@ -1,27 +1,27 @@
 <template>
   <article class="bd-content">
-    <h1>Best practices</h1>
-    <p>Learn about some of the best practices we’ve gathered from years of working on and using Bootstrap.</p>
+    <h1>最佳实践</h1>
+    <p>了解我们从多年来开发和使用的 Bootstrap 过程中总结出的一些最佳实践。</p>
 
-    <p>We’ve designed and developed Bootstrap to work in a number of environments. Here are some of the best practices we’ve gathered from years of working on and using it ourselves.</p>
+    <p>我们设计和开发 Bootstrap 时就考虑让它在多种环境中都能运行。以下是我们多年来亲自开发和使用的过程中总结出的一些最佳实践。</p>
     <Callout>
-      <p><strong>Heads up!</strong> This copy is a work in progress.</p>
+      <p><strong>注意！</strong>本文内容仍在完善中。</p>
     </Callout>
-    <h3 id="general-outline">General outline<a class="anchor-link" href="#general-outline" aria-label="Link to General outline"></a></h3>
+    <h3 id="general-outline">总体大纲<a class="anchor-link" href="#general-outline" aria-label="总体大纲链接"></a></h3>
     <ul>
-      <li>Working with CSS</li>
-      <li>Working with Sass files</li>
-      <li>Building new CSS components</li>
-      <li>Working with flexbox</li>
-      <li>Ask in <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a></li>
+      <li>使用 CSS</li>
+      <li>使用 Sass 文件</li>
+      <li>构建新的 CSS 组件</li>
+      <li>使用 flexbox</li>
+      <li>在<a href="https://github.com/twbs/bootstrap/discussions">我们的 GitHub Discussions</a>中提问</li>
     </ul>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#general-outline">General outline</a></li>
+      <li><a href="#general-outline">总体大纲</a></li>
     </ul>
   </nav>
 </template>

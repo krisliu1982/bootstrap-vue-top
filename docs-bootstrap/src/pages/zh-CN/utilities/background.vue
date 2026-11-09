@@ -1,16 +1,16 @@
 <template>
   <article class="bd-content">
-    <h1>Background</h1>
-    <p>Convey meaning through `background-color` and add decoration with gradients.</p>
+    <h1>背景</h1>
+    <p>通过 `background-color` 传达含义，并使用渐变添加装饰效果。</p>
 
     <Callout name="warning-color-assistive-technologies" />
-    <h2 id="background-color">Background color<a class="anchor-link" href="#background-color" aria-label="Link to Background color"></a></h2>
+    <h2 id="background-color">背景色<a class="anchor-link" href="#background-color" aria-label="背景色链接"></a></h2>
     <p>
-      Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities <strong>do not set <code>color</code></strong
-      >, so in some cases you’ll want to use <code>.text-*</code> <a href="/utilities/colors">color utilities</a>.
+      与上下文文本颜色类类似，将元素的背景设置为任意上下文类。背景工具类<strong>不会设置 <code>color</code></strong
+      >，因此在某些情况下你会希望使用 <code>.text-*</code> <a href="/utilities/colors">颜色工具类</a>。
     </p>
     <Callout>
-      <p>Background utilities like <code>.bg-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.bg-*-subtle</code> utility will. This will be resolved in v6.</p> </Callout
+      <p>由我们最初的 <code>$theme-colors</code> Sass 映射生成的 <code>.bg-*</code> 之类的背景工具类尚不能响应颜色模式，不过任何 <code>.bg-*-subtle</code> 工具类则可以。此问题将在 v6 中解决。</p> </Callout
     ><Example
       :code="
         [
@@ -27,16 +27,16 @@
         ].join('\n')
       "
     />
-    <h2 id="background-gradient">Background gradient<a class="anchor-link" href="#background-gradient" aria-label="Link to Background gradient"></a></h2>
-    <p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
-    <p>Do you need a gradient in your custom CSS? Just add <code>background-image: var(--bs-gradient);</code>.</p>
+    <h2 id="background-gradient">背景渐变<a class="anchor-link" href="#background-gradient" aria-label="背景渐变链接"></a></h2>
+    <p>通过添加 <code>.bg-gradient</code> 类，会将线性渐变作为背景图像添加到背景中。该渐变从半透明白色开始，向下逐渐淡出。</p>
+    <p>需要在自定义 CSS 中使用渐变吗？只需添加 <code>background-image: var(--bs-gradient);</code> 即可。</p>
     <div v-for="themeColor in data['theme-colors']" class="p-3 mb-2" :class="[`bg-${themeColor.name} bg-gradient`, themeColor.contrast_color ? 'text-' + themeColor.contrast_color : 'text-white']">.bg-{{ themeColor.name }}.bg-gradient</div>
     <div class="p-3 mb-2 bg-black bg-gradient text-white">.bg-black.bg-gradient</div>
-    <h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
+    <h2 id="opacity">不透明度<a class="anchor-link" href="#opacity" aria-label="不透明度链接"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>As of v5.1.0, <code>background-color</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.</p>
-    <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
-    <p>Consider our default <code>.bg-success</code> utility.</p>
+    <p>从 v5.1.0 起，<code>background-color</code> 工具类使用 Sass 配合 CSS 变量生成。这样无需编译即可实时更改颜色，并实现动态 alpha 透明度变化。</p>
+    <h3 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h3>
+    <p>以我们默认的 <code>.bg-success</code> 工具类为例。</p>
     <CodeWrapper
       code=".bg-success {
   --bs-bg-opacity: 1;
@@ -46,16 +46,15 @@
       lang="css"
     />
     <p>
-      We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable, <code>--bs-bg-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.bg-success</code> now, your
-      computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.bg-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
+      我们使用 <code>--bs-success</code> 的 RGB 版本（值为 <code>25, 135, 84</code>）CSS 变量，并附加第二个 CSS 变量 <code>--bs-bg-opacity</code> 用于 alpha 透明度（得益于局部 CSS 变量，其默认值为 <code>1</code>）。这意味着你现在每次使用 <code>.bg-success</code> 时，计算得到的 <code>color</code> 值都是 <code>rgba(25, 135, 84, 1)</code>。每个 <code>.bg-*</code> 类内部的局部 CSS 变量可避免继承问题，因此嵌套的工具类实例不会自动带有被修改的 alpha 透明度。
     </p>
-    <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
-    <p>To change that opacity, override <code>--bs-bg-opacity</code> via custom styles or inline styles.</p>
+    <h3 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h3>
+    <p>要更改该不透明度，可通过自定义样式或内联样式覆盖 <code>--bs-bg-opacity</code>。</p>
     <Example
       code='<div class="bg-success p-2 text-white">This is default success background</div>
 <div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>'
     />
-    <p>Or, choose from any of the <code>.bg-opacity</code> utilities:</p>
+    <p>或者，从任意 <code>.bg-opacity</code> 工具类中选择：</p>
     <Example
       code='<div class="bg-success p-2 text-white">This is default success background</div>
 <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
@@ -65,61 +64,61 @@
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>
-      In addition to the following Sass functionality, consider reading about our included
-      <a href="/customize/css-variables">CSS custom properties</a> (aka CSS variables) for colors and more.
+      除了以下 Sass 功能之外，建议阅读有关我们内置的
+      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Most <code>background-color</code> utilities are generated by our theme colors, reassigned from our generic color palette variables.</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>大多数 <code>background-color</code> 工具类由我们的主题颜色生成，这些主题颜色是从通用调色板变量重新分配的。</p>
     <ScssDocs name="color-variables" file="scss/_variables.scss" /><ScssDocs name="theme-color-variables" file="scss/_variables.scss" /><ScssDocs name="variable-gradient" file="scss/_variables.scss" />
-    <p>Grayscale colors are also available, but only a subset are used to generate any utilities.</p>
+    <p>灰度颜色也是可用的，但只有一部分会被用于生成工具类。</p>
     <ScssDocs name="gray-color-variables" file="scss/_variables.scss" />
-    <p>Variables for setting <code>background-color</code> in <code>.bg-*-subtle</code> utilities in light and dark mode:</p>
+    <p>用于在浅色和深色模式下设置 <code>.bg-*-subtle</code> 工具类中 <code>background-color</code> 的变量：</p>
     <ScssDocs name="theme-bg-subtle-variables" file="scss/_variables.scss" /><ScssDocs name="theme-bg-subtle-dark-variables" file="scss/_variables-dark.scss" />
-    <h3 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h3>
-    <p>Theme colors are then put into a Sass map so we can loop over them to generate our utilities, component modifiers, and more.</p>
+    <h3 id="sass-maps">Sass 映射<a class="anchor-link" href="#sass-maps" aria-label="Sass 映射链接"></a></h3>
+    <p>随后主题颜色会被放入 Sass 映射中，以便我们遍历它们来生成工具类、组件修饰符等。</p>
     <ScssDocs name="theme-colors-map" file="scss/_variables.scss" />
     <p>
-      Grayscale colors are also available as a Sass map.
-      <strong>This map is not used to generate any utilities.</strong>
+      灰度颜色也可以作为 Sass 映射使用。
+      <strong>该映射不用于生成任何工具类。</strong>
     </p>
     <ScssDocs name="gray-colors-map" file="scss/_variables.scss" />
-    <p>RGB colors are generated from a separate Sass map:</p>
+    <p>RGB 颜色由另一个独立的 Sass 映射生成：</p>
     <ScssDocs name="theme-colors-rgb" file="scss/_maps.scss" />
-    <p>Background color opacities build on that with their own map that’s consumed by the utilities API:</p>
+    <p>背景色不透明度在此基础上构建，使用它们自己的映射，并由工具类 API 使用：</p>
     <ScssDocs name="utilities-bg-colors" file="scss/_maps.scss" />
-    <p>Color mode background colors are also available as a Sass map:</p>
+    <p>颜色模式的背景色也可以作为 Sass 映射使用：</p>
     <ScssDocs name="theme-bg-subtle-map" file="scss/_maps.scss" /><ScssDocs name="theme-bg-subtle-dark-map" file="scss/_maps.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p><strong>No mixins are used to generate our background utilities</strong>, but we do have some additional mixins for other situations where you’d like to create your own gradients.</p>
+    <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin链接"></a></h3>
+    <p><strong>生成背景工具类不使用任何 mixin</strong>，但我们确实提供了一些额外的 mixin，用于你需要创建自定义渐变的其它场景。</p>
     <ScssDocs name="gradient-bg-mixin" file="scss/mixins/_gradients.scss" /><ScssDocs name="gradient-mixins" file="scss/mixins/_gradients.scss" />
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Background utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      背景工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-bg-color" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#background-color">Background color</a></li>
-      <li><a href="#background-gradient">Background gradient</a></li>
+      <li><a href="#background-color">背景色</a></li>
+      <li><a href="#background-gradient">背景渐变</a></li>
       <li>
-        <a href="#opacity">Opacity</a>
+        <a href="#opacity">不透明度</a>
         <ul>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#example">Example</a></li>
+          <li><a href="#how-it-works">工作原理</a></li>
+          <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-maps">Sass maps</a></li>
-          <li><a href="#sass-mixins">Sass mixins</a></li>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-maps">Sass 映射</a></li>
+          <li><a href="#sass-mixins">Sass mixin</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

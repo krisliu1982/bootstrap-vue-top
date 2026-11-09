@@ -1,24 +1,23 @@
 <template>
   <article class="bd-content">
-    <h1>Modal</h1>
-    <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+    <h1>模态框</h1>
+    <p>使用 Bootstrap 的 JavaScript 模态框插件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。</p>
 
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>在开始使用 Bootstrap 的模态框组件之前，请务必阅读以下内容，因为我们的菜单选项最近有所变化。</p>
     <ul>
-      <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <code>&lt;body&gt;</code> so that modal content scrolls instead.</li>
-      <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
-      <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
-      <li>Modals use <code>position: fixed</code>, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a <code>.modal</code> within another fixed element.</li>
+      <li>模态框由 HTML、CSS 和 JavaScript 构建。它们定位在文档中其他所有内容之上，并移除 <code>&lt;body&gt;</code> 的滚动，以便改为滚动模态框内容。</li>
+      <li>点击模态框的“背景遮罩”将自动关闭模态框。</li>
+      <li>Bootstrap 一次只支持一个模态框窗口。不支持嵌套模态框，因为我们认为其用户体验不佳。</li>
+      <li>模态框使用 <code>position: fixed</code>，其渲染有时会比较特殊。请尽可能将模态框 HTML 放在顶层位置，以避免其他元素的潜在干扰。在另一个 fixed 元素中嵌套 <code>.modal</code> 时，你很可能会遇到问题。</li>
       <li>
-        Once again, due to <code>position: fixed</code>, there are some caveats with using modals on mobile devices.
-        <a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">See our browser support docs</a>
-        for details.
+        同样，由于 <code>position: fixed</code>，在移动设备上使用模态框存在一些注意事项。
+        详情请<a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">参阅浏览器支持文档</a>。
       </li>
       <li>
-        Due to how HTML5 defines its semantics,
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus">the <code>autofocus</code> HTML attribute</a>
-        has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:
+        由于 HTML5 定义其语义的方式，
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
+        在 Bootstrap 模态框中不起作用。要达到相同的效果，请使用一些自定义 JavaScript：
       </li>
     </ul>
     <CodeWrapper
@@ -32,27 +31,27 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       lang="javascript"
     />
     <Callout name="info-prefersreducedmotion" />
-    <p>Keep reading for demos and usage guidelines.</p>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <h3 id="modal-components">Modal components<a class="anchor-link" href="#modal-components" aria-label="Link to Modal components"></a></h3>
+    <p>继续阅读以了解演示和用法指南。</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <h3 id="modal-components">模态框组件<a class="anchor-link" href="#modal-components" aria-label="模态框组件链接"></a></h3>
     <p>
-      Below is a <em>static</em> modal example (meaning its <code>position</code> and <code>display</code> have been overridden). Included are the modal header, modal body (required for <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit
-      dismiss action.
+      下面是一个<em>静态</em>模态框示例（即其 <code>position</code> 和 <code>display</code> 已被覆盖）。其中包含模态框头部、模态框主体（<code>padding</code> 所需）和模态框页脚（可选）。我们建议你尽可能为模态框头部添加关闭操作，或提供另一种明确的
+      关闭操作。
     </p>
     <div class="bd-example bg-body-tertiary border rounded-3 p-3 mb-3">
       <div class="modal position-static d-block" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title">模态框标题</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
             </div>
             <div class="modal-body">
-              <p>Modal body text goes here.</p>
+              <p>模态框正文文本放在这里。</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+              <button type="button" class="btn btn-primary">保存更改</button>
             </div>
           </div>
         </div>
@@ -80,25 +79,25 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     />
     <Callout>
       <p>
-        In the above static example, we use <code>&lt;h5&gt;</code>, to avoid issues with the heading hierarchy in the documentation page. Structurally, however, a modal dialog represents its own separate document/context, so the <code>.modal-title</code> should ideally be an <code>&lt;h1&gt;</code>. If necessary, you can use the
-        <a href="/utilities/text#font-size">font size utilities</a> to control the heading’s appearance. All the following live examples use this approach.
+        在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用
+        <a href="/utilities/text#font-size">字体大小工具类</a> 控制标题的外观。下面所有实时示例均采用此方法。
       </p>
     </Callout>
-    <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
-    <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+    <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
+    <p>点击下面的按钮来切换一个可用的模态框演示。它将从页面顶部滑下并淡入。</p>
     <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLiveLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalLiveLabel">模态框标题</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">
-            <p>Woo-hoo, you’re reading this text in a modal!</p>
+            <p>哇哈，你正在模态框中阅读这段文字！</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存更改</button>
           </div>
         </div>
       </div>
@@ -135,21 +134,21 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="static-backdrop">Static backdrop<a class="anchor-link" href="#static-backdrop" aria-label="Link to Static backdrop"></a></h3>
-    <p>When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below to try it.</p>
+    <h3 id="static-backdrop">静态背景<a class="anchor-link" href="#static-backdrop" aria-label="静态背景链接"></a></h3>
+    <p>当背景遮罩设置为 static 时，点击模态框外部不会关闭模态框。点击下面的按钮试试看。</p>
     <div class="modal fade" id="staticBackdropLive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLiveLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="staticBackdropLiveLabel">模态框标题</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">
-            <p>I will not close if you click outside of me. Don’t even try to press escape key.</p>
+            <p>即使你在外部点击，我也不会关闭。连按 Esc 键也别想试。</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">明白</button>
           </div>
         </div>
       </div>
@@ -186,24 +185,24 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="scrolling-long-content">Scrolling long content<a class="anchor-link" href="#scrolling-long-content" aria-label="Link to Scrolling long content"></a></h3>
-    <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.</p>
+    <h3 id="scrolling-long-content">滚动长内容<a class="anchor-link" href="#scrolling-long-content" aria-label="滚动长内容链接"></a></h3>
+    <p>当模态框内容对用户视口或设备来说过长时，它们会独立于页面本身滚动。试试下面的演示来了解我们的意思。</p>
     <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLongTitle">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalLongTitle">模态框标题</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body" style="min-height: 100vh">
             <p>
-              This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text in the modal, we use an inline style to set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will
-              move the modal as needed.
+              这是一些占位内容，用于展示模态框的滚动行为。我们没有在模态框中重复文本，而是使用内联样式设置最小高度，从而延长整个模态框的长度并演示溢出滚动。当内容变得比视口高度更长时，滚动将
+              按需移动模态框。
             </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存更改</button>
           </div>
         </div>
       </div>
@@ -215,24 +214,24 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     '
     />
     <p>
-      You can also create a scrollable modal that allows scrolling the modal body by adding
-      <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code>.
+      你还可以在 <code>.modal-dialog</code> 上添加
+      <code>.modal-dialog-scrollable</code>，创建允许滚动模态框主体的可滚动模态框。
     </p>
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalScrollableTitle">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalScrollableTitle">模态框标题</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">
-            <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <p>这是一些占位内容，用于展示模态框的滚动行为。我们使用重复的换行来演示内容如何超出最小内部高度，从而显示内部滚动。当内容变得比模态框预定义的最大高度更长时，内容将被裁剪并可在模态框内滚动。</p>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <p>This content should appear at the bottom after you scroll.</p>
+            <p>滚动后，此内容应出现在底部。</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存更改</button>
           </div>
         </div>
       </div>
@@ -250,8 +249,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="vertically-centered">Vertically centered<a class="anchor-link" href="#vertically-centered" aria-label="Link to Vertically centered"></a></h3>
-    <p>Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.</p>
+    <h3 id="vertically-centered">垂直居中<a class="anchor-link" href="#vertically-centered" aria-label="垂直居中链接"></a></h3>
+    <p>在 <code>.modal-dialog</code> 上添加 <code>.modal-dialog-centered</code>，使模态框垂直居中。</p>
     <Example
       :showMarkup="false"
       code='<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -307,8 +306,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
-    <p><a href="/components/tooltips">Tooltips</a> and <a href="/components/popovers">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.</p>
+    <h3 id="tooltips-and-popovers">工具提示与弹出框<a class="anchor-link" href="#tooltips-and-popovers" aria-label="工具提示与弹出框链接"></a></h3>
+    <p><a href="/components/tooltips">工具提示</a>和<a href="/components/popovers">弹出框</a>可以根据需要放置在模态框内。当模态框关闭时，其中的任何工具提示和弹出框也会自动消失。</p>
     <Example
       :showMarkup="false"
       code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
@@ -345,14 +344,14 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="using-the-grid">Using the grid<a class="anchor-link" href="#using-the-grid" aria-label="Link to Using the grid"></a></h3>
-    <p>Utilize the Bootstrap grid system within a modal by nesting <code>.container-fluid</code> within the <code>.modal-body</code>. Then, use the normal grid system classes as you would anywhere else.</p>
+    <h3 id="using-the-grid">使用栅格<a class="anchor-link" href="#using-the-grid" aria-label="使用栅格链接"></a></h3>
+    <p>在模态框中使用 Bootstrap 栅格系统：在 <code>.modal-body</code> 中嵌套 <code>.container-fluid</code>。然后，像在其他任何地方一样使用常规的栅格系统类。</p>
     <div class="modal fade" id="gridSystemModal" tabindex="-1" aria-labelledby="gridModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="gridModalLabel">Grids in modals</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="gridModalLabel">模态框中的栅格</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">
             <div class="container-fluid bd-example-row">
@@ -369,18 +368,18 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
               </div>
               <div class="row">
                 <div class="col-sm-9">
-                  Level 1: .col-sm-9
+                  第 1 层：.col-sm-9
                   <div class="row">
-                    <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
-                    <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+                    <div class="col-8 col-sm-6">第 2 层：.col-8 .col-sm-6</div>
+                    <div class="col-4 col-sm-6">第 2 层：.col-4 .col-sm-6</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存更改</button>
           </div>
         </div>
       </div>
@@ -422,16 +421,16 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="varying-modal-content">Varying modal content<a class="anchor-link" href="#varying-modal-content" aria-label="Link to Varying modal content"></a></h3>
+    <h3 id="varying-modal-content">变化模态框内容<a class="anchor-link" href="#varying-modal-content" aria-label="变化模态框内容链接"></a></h3>
     <p>
-      Have a bunch of buttons that all trigger the same modal with slightly different contents? Use
-      <code>event.relatedTarget</code> and
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> attributes</a>
-      to vary the contents of the modal depending on which button was clicked.
+      有一堆按钮都触发同一个模态框，但内容略有不同？使用
+      <code>event.relatedTarget</code> 和
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
+      根据点击的按钮来改变模态框的内容。
     </p>
     <p>
-      Below is a live demo followed by example HTML and JavaScript. For more information,
-      <a href="#events">read the modal events docs</a> for details on <code>relatedTarget</code>.
+      下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请
+      <a href="#events">阅读模态框事件文档</a>。
     </p>
     <Example
       addStackblitzJs
@@ -467,10 +466,10 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 </div>'
     />
     <JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" />
-    <h3 id="toggle-between-modals">Toggle between modals<a class="anchor-link" href="#toggle-between-modals" aria-label="Link to Toggle between modals"></a></h3>
+    <h3 id="toggle-between-modals">在模态框之间切换<a class="anchor-link" href="#toggle-between-modals" aria-label="在模态框之间切换链接"></a></h3>
     <p>
-      Toggle between multiple modals with some clever placement of the <code>data-bs-target</code> and <code>data-bs-toggle</code> attributes. For example, you could toggle a password reset modal from within an already open sign in modal. <strong>Please note multiple modals cannot be open at the same time</strong>—this method simply toggles between
-      two separate modals.
+      通过对 <code>data-bs-target</code> 和 <code>data-bs-toggle</code> 属性进行一些巧妙的放置，可在多个模态框之间切换。例如，你可以在已打开的登录模态框中切换出密码重置模态框。<strong>请注意，多个模态框不能同时打开</strong>——此方法只是在
+      两个独立的模态框之间切换。
     </p>
     <Example
       code='<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -507,65 +506,64 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 </div>
 <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>'
     />
-    <h3 id="change-animation">Change animation<a class="anchor-link" href="#change-animation" aria-label="Link to Change animation"></a></h3>
-    <p>The <code>$modal-fade-transform</code> variable determines the transform state of <code>.modal-dialog</code> before the modal fade-in animation, the <code>$modal-show-transform</code> variable determines the transform of <code>.modal-dialog</code> at the end of the modal fade-in animation.</p>
-    <p>If you want for example a zoom-in animation, you can set <code>$modal-fade-transform: scale(.8)</code>.</p>
-    <h3 id="remove-animation">Remove animation<a class="anchor-link" href="#remove-animation" aria-label="Link to Remove animation"></a></h3>
-    <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
+    <h3 id="change-animation">更改动画<a class="anchor-link" href="#change-animation" aria-label="更改动画链接"></a></h3>
+    <p><code>$modal-fade-transform</code> 变量决定模态框淡入动画之前 <code>.modal-dialog</code> 的变换状态，<code>$modal-show-transform</code> 变量决定模态框淡入动画结束时 <code>.modal-dialog</code> 的变换。</p>
+    <p>例如，如果你想要缩放（zoom-in）动画，可以设置 <code>$modal-fade-transform: scale(.8)</code>。</p>
+    <h3 id="remove-animation">移除动画<a class="anchor-link" href="#remove-animation" aria-label="移除动画链接"></a></h3>
+    <p>对于只是直接出现而非淡入的模态框，请从模态框标记中移除 <code>.fade</code> 类。</p>
     <CodeWrapper
       code='&lt;div class="modal" tabindex="-1" aria-labelledby="..." aria-hidden="true"&gt;
   ...
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="dynamic-heights">Dynamic heights<a class="anchor-link" href="#dynamic-heights" aria-label="Link to Dynamic heights"></a></h3>
-    <p>If the height of a modal changes while it is open, you should call <code>myModal.handleUpdate()</code> to readjust the modal’s position in case a scrollbar appears.</p>
-    <h3 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h3>
+    <h3 id="dynamic-heights">动态高度<a class="anchor-link" href="#dynamic-heights" aria-label="动态高度链接"></a></h3>
+    <p>如果模态框在打开状态时高度发生变化，你应该调用 <code>myModal.handleUpdate()</code> 重新调整模态框的位置，以防出现滚动条。</p>
+    <h3 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h3>
     <p>
-      Be sure to add <code>aria-labelledby=&quot;...&quot;</code>, referencing the modal title, to <code>.modal</code>. Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
+      请务必为 <code>.modal</code> 添加引用模态框标题的 <code>aria-labelledby=&quot;...&quot;</code>。此外，你还可以在 <code>.modal</code> 上使用 <code>aria-describedby</code> 为模态框对话框提供描述。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已通过 JavaScript 添加了它。
     </p>
-    <h3 id="embedding-youtube-videos">Embedding YouTube videos<a class="anchor-link" href="#embedding-youtube-videos" aria-label="Link to Embedding YouTube videos"></a></h3>
+    <h3 id="embedding-youtube-videos">嵌入 YouTube 视频<a class="anchor-link" href="#embedding-youtube-videos" aria-label="嵌入 YouTube 视频链接"></a></h3>
     <p>
-      Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more.
-      <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a>
-      for more information.
+      在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。
+      更多信息请<a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a>。
     </p>
-    <h2 id="optional-sizes">Optional sizes<a class="anchor-link" href="#optional-sizes" aria-label="Link to Optional sizes"></a></h2>
-    <p>Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.</p>
+    <h2 id="optional-sizes">可选尺寸<a class="anchor-link" href="#optional-sizes" aria-label="可选尺寸链接"></a></h2>
+    <p>模态框有三种可选尺寸，可通过修饰类放置在 <code>.modal-dialog</code> 上。这些尺寸会在特定断点下生效，以避免在较窄的视口中出现水平滚动条。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Size</th>
-            <th>Class</th>
-            <th>Modal max-width</th>
+            <th>尺寸</th>
+            <th>类</th>
+            <th>模态框最大宽度</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Small</td>
+            <td>小</td>
             <td><code>.modal-sm</code></td>
             <td><code>300px</code></td>
           </tr>
           <tr>
-            <td>Default</td>
-            <td><span class="text-body-secondary">None</span></td>
+            <td>默认</td>
+            <td><span class="text-body-secondary">无</span></td>
             <td><code>500px</code></td>
           </tr>
           <tr>
-            <td>Large</td>
+            <td>大</td>
             <td><code>.modal-lg</code></td>
             <td><code>800px</code></td>
           </tr>
           <tr>
-            <td>Extra large</td>
+            <td>超大</td>
             <td><code>.modal-xl</code></td>
             <td><code>1140px</code></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>Our default modal without modifier class constitutes the “medium” size modal.</p>
+    <p>未加修饰类的默认模态框构成“中等”尺寸模态框。</p>
     <Example
       :showMarkup="false"
       code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
@@ -582,8 +580,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalXlLabel">Extra large modal</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalXlLabel">超大模态框</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
         </div>
@@ -593,8 +591,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalLgLabel">Large modal</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalLgLabel">大模态框</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
         </div>
@@ -604,27 +602,27 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalSmLabel">Small modal</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalSmLabel">小模态框</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
         </div>
       </div>
     </div>
-    <h2 id="fullscreen-modal">Fullscreen Modal<a class="anchor-link" href="#fullscreen-modal" aria-label="Link to Fullscreen Modal"></a></h2>
-    <p>Another override is the option to pop up a modal that covers the user viewport, available via modifier classes that are placed on a <code>.modal-dialog</code>.</p>
+    <h2 id="fullscreen-modal">全屏模态框<a class="anchor-link" href="#fullscreen-modal" aria-label="全屏模态框链接"></a></h2>
+    <p>另一种覆盖方式是弹出一个覆盖用户视口的模态框，可通过放置在 <code>.modal-dialog</code> 上的修饰类来实现。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Class</th>
-            <th>Availability</th>
+            <th>类</th>
+            <th>可用性</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>.modal-fullscreen</code></td>
-            <td>Always</td>
+            <td>始终</td>
           </tr>
           <tr>
             <td><code>.modal-fullscreen-sm-down</code></td>
@@ -669,12 +667,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">Full screen modal</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">全屏模态框</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
@@ -683,12 +681,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenSmLabel">Full screen below sm</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenSmLabel">小于 sm 时全屏</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
@@ -697,12 +695,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen-md-down">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenMdLabel">Full screen below md</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenMdLabel">小于 md 时全屏</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
@@ -711,12 +709,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen-lg-down">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenLgLabel">Full screen below lg</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenLgLabel">小于 lg 时全屏</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
@@ -725,12 +723,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen-xl-down">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenXlLabel">Full screen below xl</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenXlLabel">小于 xl 时全屏</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
@@ -739,47 +737,47 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <div class="modal-dialog modal-fullscreen-xxl-down">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-4" id="exampleModalFullscreenXxlLabel">Full screen below xxl</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-4" id="exampleModalFullscreenXxlLabel">小于 xxl 时全屏</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body">...</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>
     </div>
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, modals now use local CSS variables on
-      <code>.modal</code> and <code>.modal-backdrop</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，模态框现在在
+      <code>.modal</code> 和 <code>.modal-backdrop</code> 上使用局部 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此依然支持 Sass 自定义。
     </p>
     <ScssDocs name="modal-css-vars" file="scss/_modal.scss" /><ScssDocs name="modal-backdrop-css-vars" file="scss/_modal.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="modal-variables" file="scss/_variables.scss" />
-    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p><a href="#fullscreen-modal">Responsive fullscreen modals</a> are generated via the <code>$breakpoints</code> map and a loop in <code>scss/_modal.scss</code>.</p>
+    <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
+    <p><a href="#fullscreen-modal">响应式全屏模态框</a>通过 <code>$breakpoints</code> 映射和 <code>scss/_modal.scss</code> 中的一个循环生成。</p>
     <ScssDocs name="modal-fullscreen-loop" file="scss/_modal.scss" />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <p>
-      The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also overrides default scrolling behavior and generates a
-      <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.
+      模态框插件通过数据属性或 JavaScript 按需切换你隐藏的内容。它还会覆盖默认的滚动行为，并生成
+      <code>.modal-backdrop</code>，以便在点击模态框外部时提供关闭已显示模态框的点击区域。
     </p>
-    <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
-    <h4 id="toggle">Toggle</h4>
-    <p>Activate a modal without writing JavaScript. Set <code>data-bs-toggle=&quot;modal&quot;</code> on a controller element, like a button, along with a <code>data-bs-target=&quot;#foo&quot;</code> or <code>href=&quot;#foo&quot;</code> to target a specific modal to toggle.</p>
+    <h3 id="via-data-attributes">通过数据属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过数据属性链接"></a></h3>
+    <h4 id="toggle">切换</h4>
+    <p>无需编写 JavaScript 即可激活模态框。在控制器元素（如按钮）上设置 <code>data-bs-toggle=&quot;modal&quot;</code>，并配合 <code>data-bs-target=&quot;#foo&quot;</code> 或 <code>href=&quot;#foo&quot;</code> 来指定要切换的特定模态框。</p>
     <CodeWrapper code='&lt;button type="button" data-bs-toggle="modal" data-bs-target="#myModal"&gt;Launch modal&lt;/button&gt;' lang="html" />
-    <h4 id="dismiss">Dismiss</h4>
+    <h4 id="dismiss">关闭</h4>
     <JsDismiss name="modal" /><Callout type="warning">
       <p>
-        While both ways to dismiss a modal are supported, keep in mind that dismissing from outside a modal does not match the
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide dialog (modal) pattern</a>. Do this at your own risk.
+        虽然两种关闭模态框的方式都受支持，但请注意，从模态框外部关闭并不符合
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
       </p>
     </Callout>
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <p>Create a modal with a single line of JavaScript:</p>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
+    <p>用一行 JavaScript 创建模态框：</p>
     <CodeWrapper
       code="const myModal = new bootstrap.Modal(document.getElementById(&#39;myModal&#39;), options)
 // or
@@ -787,16 +785,16 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
 "
       lang="javascript"
     />
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
@@ -804,27 +802,27 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
             <td><code>backdrop</code></td>
             <td>boolean, <code>’static&#39;</code></td>
             <td><code>true</code></td>
-            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn’t close the modal when clicked.</td>
+            <td>包含一个模态框背景遮罩元素。或者，指定 <code>static</code> 以使用点击时不会关闭模态框的背景遮罩。</td>
           </tr>
           <tr>
             <td><code>focus</code></td>
             <td>boolean</td>
             <td><code>true</code></td>
-            <td>Puts the focus on the modal when initialized.</td>
+            <td>初始化时将焦点放在模态框上。</td>
           </tr>
           <tr>
             <td><code>keyboard</code></td>
             <td>boolean</td>
             <td><code>true</code></td>
-            <td>Closes the modal when escape key is pressed.</td>
+            <td>按下 Esc 键时关闭模态框。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
-    <h4 id="passing-options">Passing options</h4>
-    <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+    <h4 id="passing-options">传递选项</h4>
+    <p>将你的内容作为模态框激活。接受可选的选项 <code>object</code>。</p>
     <CodeWrapper
       code="const myModal = new bootstrap.Modal(&#39;#myModal&#39;, {
   keyboard: false
@@ -836,87 +834,87 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s modal. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的模态框。 （移除存储在 DOM 元素上的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element.</td>
+            <td><em>静态</em>方法，用于获取与 DOM 元素关联的模态框实例。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td><em>Static</em> method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
+            <td><em>静态</em>方法，用于获取与 DOM 元素关联的模态框实例，如果尚未初始化则创建一个新实例。</td>
           </tr>
           <tr>
             <td><code>handleUpdate</code></td>
-            <td>Manually readjust the modal’s position if the height of a modal changes while it is open (i.e. in case a scrollbar appears).</td>
+            <td>如果模态框在打开状态时高度发生变化（即出现滚动条时），手动重新调整模态框的位置。</td>
           </tr>
           <tr>
             <td><code>hide</code></td>
             <td>
-              Manually hides a modal.
-              <strong>Returns to the caller before the modal has actually been hidden</strong> (i.e. before the <code>hidden.bs.modal</code> event occurs).
+              手动隐藏模态框。
+              <strong>在模态框实际隐藏之前就返回给调用者</strong>（即 <code>hidden.bs.modal</code> 事件发生之前）。
             </td>
           </tr>
           <tr>
             <td><code>show</code></td>
             <td>
-              Manually opens a modal.
-              <strong>Returns to the caller before the modal has actually been shown</strong> (i.e. before the <code>shown.bs.modal</code> event occurs). Also, you can pass a DOM element as an argument that can be received in the modal events (as the <code>relatedTarget</code> property). (i.e.
-              <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>.
+              手动打开模态框。
+              <strong>在模态框实际显示之前就返回给调用者</strong>（即 <code>shown.bs.modal</code> 事件发生之前）。此外，你可以传入一个 DOM 元素作为参数，该元素可在模态框事件中接收（作为 <code>relatedTarget</code> 属性）。（即
+              <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>）。
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
             <td>
-              Manually toggles a modal.
-              <strong>Returns to the caller before the modal has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.modal</code> or <code>hidden.bs.modal</code> event occurs).
+              手动切换模态框。
+              <strong>在模态框实际显示或隐藏之前就返回给调用者</strong>（即 <code>shown.bs.modal</code> 或 <code>hidden.bs.modal</code> 事件发生之前）。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
     <p>
-      Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the
-      <code>&lt;div class=&quot;modal&quot;&gt;</code>).
+      Bootstrap 的模态框类公开了几个事件，用于挂接模态框功能。所有模态框事件都在模态框本身触发（即在
+      <code>&lt;div class=&quot;modal&quot;&gt;</code> 上）。
     </p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event</th>
-            <th>Description</th>
+            <th>事件</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.modal</code></td>
-            <td>This event is fired immediately when the <code>hide</code> instance method has been called. Can be prevented by calling <code>event.preventDefault()</code>. See <a href="/getting-started/javascript#events">JavaScript events documentation</a> for more details on event prevention.</td>
+            <td>当调用 <code>hide</code> 实例方法时立即触发此事件。可通过调用 <code>event.preventDefault()</code> 阻止。关于阻止事件的更多细节，请参阅 <a href="/getting-started/javascript#events">JavaScript 事件文档</a>。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.modal</code></td>
-            <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+            <td>当模态框对用户隐藏完毕后（将等待 CSS 过渡完成）触发此事件。</td>
           </tr>
           <tr>
             <td><code>hidePrevented.bs.modal</code></td>
-            <td>This event is fired when the modal is shown, its backdrop is <code>static</code> and a click outside of the modal is performed. The event is also fired when the escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.</td>
+            <td>当模态框已显示、其背景遮罩为 <code>static</code> 且在模态框外部点击时触发此事件。当按下 Esc 键且 <code>keyboard</code> 选项设置为 <code>false</code> 时也会触发此事件。</td>
           </tr>
           <tr>
             <td><code>show.bs.modal</code></td>
-            <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
+            <td>当调用 <code>show</code> 实例方法时立即触发此事件。如果由点击引起，被点击的元素可通过事件的 <code>relatedTarget</code> 属性获取。</td>
           </tr>
           <tr>
             <td><code>shown.bs.modal</code></td>
             <td>
-              This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the
-              <code>relatedTarget</code> property of the event.
+              当模态框已对用户可见（将等待 CSS 过渡完成）时触发此事件。如果由点击引起，被点击的元素可通过事件的
+              <code>relatedTarget</code> 属性获取。
             </td>
           </tr>
         </tbody>
@@ -933,47 +931,47 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#modal-components">Modal components</a></li>
-          <li><a href="#live-demo">Live demo</a></li>
-          <li><a href="#static-backdrop">Static backdrop</a></li>
-          <li><a href="#scrolling-long-content">Scrolling long content</a></li>
-          <li><a href="#vertically-centered">Vertically centered</a></li>
-          <li><a href="#tooltips-and-popovers">Tooltips and popovers</a></li>
-          <li><a href="#using-the-grid">Using the grid</a></li>
-          <li><a href="#varying-modal-content">Varying modal content</a></li>
-          <li><a href="#toggle-between-modals">Toggle between modals</a></li>
-          <li><a href="#change-animation">Change animation</a></li>
-          <li><a href="#remove-animation">Remove animation</a></li>
-          <li><a href="#dynamic-heights">Dynamic heights</a></li>
-          <li><a href="#accessibility">Accessibility</a></li>
-          <li><a href="#embedding-youtube-videos">Embedding YouTube videos</a></li>
+          <li><a href="#modal-components">模态框组件</a></li>
+          <li><a href="#live-demo">实时演示</a></li>
+          <li><a href="#static-backdrop">静态背景</a></li>
+          <li><a href="#scrolling-long-content">滚动长内容</a></li>
+          <li><a href="#vertically-centered">垂直居中</a></li>
+          <li><a href="#tooltips-and-popovers">工具提示与弹出框</a></li>
+          <li><a href="#using-the-grid">使用栅格</a></li>
+          <li><a href="#varying-modal-content">变化模态框内容</a></li>
+          <li><a href="#toggle-between-modals">在模态框之间切换</a></li>
+          <li><a href="#change-animation">更改动画</a></li>
+          <li><a href="#remove-animation">移除动画</a></li>
+          <li><a href="#dynamic-heights">动态高度</a></li>
+          <li><a href="#accessibility">无障碍</a></li>
+          <li><a href="#embedding-youtube-videos">嵌入 YouTube 视频</a></li>
         </ul>
       </li>
-      <li><a href="#optional-sizes">Optional sizes</a></li>
-      <li><a href="#fullscreen-modal">Fullscreen Modal</a></li>
+      <li><a href="#optional-sizes">可选尺寸</a></li>
+      <li><a href="#fullscreen-modal">全屏模态框</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
-          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
+          <li><a href="#sass-loops">Sass 循环</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#via-data-attributes">Via data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#via-data-attributes">通过数据属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

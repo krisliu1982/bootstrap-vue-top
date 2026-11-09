@@ -1,22 +1,22 @@
 <template>
   <article class="bd-content">
-    <h1>Colored links</h1>
-    <p>Colored links with hover states</p>
+    <h1>彩色链接</h1>
+    <p>带有悬停状态的彩色链接</p>
 
-    <h2 id="link-colors">Link colors<a class="anchor-link" href="#link-colors" aria-label="Link to Link colors"></a></h2>
+    <h2 id="link-colors">链接颜色<a class="anchor-link" href="#link-colors" aria-label="链接颜色链接"></a></h2>
     <p>
-      You can use the <code>.link-*</code> classes to colorize links. Unlike the <a href="/utilities/colors"><code>.text-*</code> classes</a>, these classes have a <code>:hover</code> and <code>:focus</code> state. Some of the link styles use a relatively light foreground color, and should only be used on a dark background in order to have
-      sufficient contrast.
+      你可以使用 <code>.link-*</code> 类为链接着色。与 <a href="/utilities/colors"><code>.text-*</code> 类</a>不同，这些类具有 <code>:hover</code> 和 <code>:focus</code> 状态。部分链接样式使用相对较浅的前景色，因此只能用于深色背景，以保证
+      足够的对比度。
     </p>
     <Callout>
       <p>
-        <strong>Heads up!</strong> <code>.link-body-emphasis</code> is currently the only colored link that adapts to color modes. It’s treated as a special case until v6 arrives and we can more thoroughly rebuild our theme colors for color modes. Until then, it’s a unique, high-contrast link color with custom <code>:hover</code> and
-        <code>:focus</code> styles. However, it still responds to the new link utilities.
+        <strong>请注意！</strong><code>.link-body-emphasis</code> 是目前唯一能适应颜色模式的彩色链接。在 v6 发布、我们能够针对颜色模式更全面地重构主题颜色之前，它被视为一个特例。在此之前，它是一种独特的高对比度链接颜色，带有自定义的 <code>:hover</code> 和
+        <code>:focus</code> 样式。不过，它仍然会响应新的链接工具类。
       </p> </Callout
     ><Example :code="[...data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-${themeColor.name}&quot;>${themeColor.name} link</a></p>`), `<p><a href=&quot;#&quot; class=&quot;link-body-emphasis&quot;>Emphasis link</a></p>`].join('\n')" /><Callout name="warning-color-assistive-technologies" />
-    <h2 id="link-utilities">Link utilities<a class="anchor-link" href="#link-utilities" aria-label="Link to Link utilities"></a></h2>
+    <h2 id="link-utilities">链接工具类<a class="anchor-link" href="#link-utilities" aria-label="链接工具类链接"></a></h2>
     <AddedIn version="5.3.0" />
-    <p>Colored links can also be modified by our <a href="/utilities/link/">link utilities</a>.</p>
+    <p>彩色链接也可以通过我们的<a href="/utilities/link/">链接工具类</a>进行修改。</p>
     <Example
       :code="
         [
@@ -28,12 +28,12 @@
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#link-colors">Link colors</a></li>
+      <li><a href="#link-colors">链接颜色</a></li>
       <li>
-        <a href="#link-utilities">Link utilities</a>
+        <a href="#link-utilities">链接工具类</a>
       </li>
     </ul>
   </nav>

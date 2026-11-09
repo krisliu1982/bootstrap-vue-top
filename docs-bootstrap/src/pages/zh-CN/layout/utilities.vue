@@ -1,29 +1,29 @@
 <template>
   <article class="bd-content">
-    <h1>Utilities for layout</h1>
-    <p>For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.</p>
+    <h1>布局工具类</h1>
+    <p>为了实现更快捷的移动优先和响应式开发，Bootstrap 包含了数十个用于显示、隐藏、对齐和间隔内容的工具类。</p>
 
-    <h2 id="changing-display">Changing <code>display</code><a class="anchor-link" href="#changing-display" aria-label="Link to Changing display"></a></h2>
-    <p>Use our <a href="/utilities/display">display utilities</a> for responsively toggling common values of the <code>display</code> property. Mix it with our grid system, content, or components to show or hide them across specific viewports.</p>
-    <h2 id="flexbox-options">Flexbox options<a class="anchor-link" href="#flexbox-options" aria-label="Link to Flexbox options"></a></h2>
-    <p>Bootstrap is built with flexbox, but not every element’s <code>display</code> has been changed to <code>display: flex</code> as this would add many unnecessary overrides and unexpectedly change key browser behaviors. Most of <a href="/components/alerts">our components</a> are built with flexbox enabled.</p>
-    <p>Should you need to add <code>display: flex</code> to an element, do so with <code>.d-flex</code> or one of the responsive variants (e.g., <code>.d-sm-flex</code>). You’ll need this class or <code>display</code> value to allow the use of our extra <a href="/utilities/flex">flexbox utilities</a> for sizing, alignment, spacing, and more.</p>
-    <h2 id="margin-and-padding">Margin and padding<a class="anchor-link" href="#margin-and-padding" aria-label="Link to Margin and padding"></a></h2>
+    <h2 id="changing-display">更改 <code>display</code><a class="anchor-link" href="#changing-display" aria-label="更改 display 链接"></a></h2>
+    <p>使用我们的<a href="/utilities/display">显示工具类</a>以响应式的方式切换 <code>display</code> 属性的常见值。将其与我们的网格系统、内容或组件结合使用，即可在特定视口中显示或隐藏它们。</p>
+    <h2 id="flexbox-options">Flexbox 选项<a class="anchor-link" href="#flexbox-options" aria-label="Flexbox 选项链接"></a></h2>
+    <p>Bootstrap 基于 flexbox 构建，但并非所有元素的 <code>display</code> 都已改为 <code>display: flex</code>，因为那会添加许多不必要的覆盖，并意外改变关键的浏览器行为。我们的大多数<a href="/components/alerts">组件</a>都是在启用 flexbox 的情况下构建的。</p>
+    <p>如果你需要为元素添加 <code>display: flex</code>，请使用 <code>.d-flex</code> 或某个响应式变体（例如 <code>.d-sm-flex</code>）。你需要这个类或 <code>display</code> 值才能使用我们额外的<a href="/utilities/flex">flexbox 工具类</a>来进行尺寸调整、对齐、间隔等操作。</p>
+    <h2 id="margin-and-padding">外边距和内边距<a class="anchor-link" href="#margin-and-padding" aria-label="外边距和内边距链接"></a></h2>
     <p>
-      Use the <code>margin</code> and <code>padding</code> <a href="/utilities/spacing">spacing utilities</a> to control how elements and components are spaced and sized. Bootstrap includes a six-level scale for spacing utilities, based on a <code>1rem</code> value default <code>$spacer</code> variable. Choose values for all viewports (e.g.,
-      <code>.me-3</code> for <code>margin-right: 1rem</code> in LTR), or pick responsive variants to target specific viewports (e.g., <code>.me-md-3</code> for <code>margin-right: 1rem</code> —in LTR— starting at the <code>md</code> breakpoint).
+      使用 <code>margin</code> 和 <code>padding</code> <a href="/utilities/spacing">间隔工具类</a>来控制元素和组件的间隔与尺寸。Bootstrap 包含六级间隔工具类，基于默认值为 <code>1rem</code> 的 <code>$spacer</code> 变量。可以为所有视口选择值（例如，在 LTR 中
+      <code>.me-3</code> 对应 <code>margin-right: 1rem</code>），也可以选择响应式变体以针对特定视口（例如，从 <code>md</code> 断点开始，<code>.me-md-3</code> 对应 <code>margin-right: 1rem</code>——在 LTR 中）。
     </p>
-    <h2 id="toggle-visibility">Toggle <code>visibility</code><a class="anchor-link" href="#toggle-visibility" aria-label="Link to Toggle visibility"></a></h2>
-    <p>When toggling <code>display</code> isn’t needed, you can toggle the <code>visibility</code> of an element with our <a href="/utilities/visibility">visibility utilities</a>. Invisible elements will still affect the layout of the page, but are visually hidden from visitors.</p>
+    <h2 id="toggle-visibility">切换 <code>visibility</code><a class="anchor-link" href="#toggle-visibility" aria-label="切换 visibility 链接"></a></h2>
+    <p>当不需要切换 <code>display</code> 时，你可以使用我们的<a href="/utilities/visibility">可见性工具类</a>来切换元素的 <code>visibility</code>。不可见的元素仍然会影响页面布局，但在视觉上对访问者隐藏。</p>
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#flexbox-options">Flexbox options</a></li>
+      <li><a href="#flexbox-options">Flexbox 选项</a></li>
       <li>
-        <a href="#margin-and-padding">Margin and padding</a>
+        <a href="#margin-and-padding">外边距和内边距</a>
       </li>
     </ul>
   </nav>

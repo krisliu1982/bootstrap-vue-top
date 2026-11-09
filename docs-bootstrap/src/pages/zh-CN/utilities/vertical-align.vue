@@ -1,16 +1,16 @@
 <template>
   <article class="bd-content">
-    <h1>Vertical alignment</h1>
-    <p>Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
+    <h1>垂直对齐</h1>
+    <p>轻松更改内联、内联块、内联表格和表格单元格元素的垂直对齐方式。</p>
 
     <p>
-      Change the alignment of elements with the
+      使用
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align"><code>vertical-alignment</code></a>
-      utilities. Please note that vertical-align only affects inline, inline-block, inline-table, and table cell elements.
+      工具类更改元素的对齐方式。请注意，vertical-align 仅影响内联、内联块、内联表格和表格单元格元素。
     </p>
-    <p>Choose from <code>.align-baseline</code>, <code>.align-top</code>, <code>.align-middle</code>, <code>.align-bottom</code>, <code>.align-text-bottom</code>, and <code>.align-text-top</code> as needed.</p>
-    <p>To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/utilities/flex#align-items">flex box utilities</a>.</p>
-    <p>With inline elements:</p>
+    <p>根据需要从 <code>.align-baseline</code>、<code>.align-top</code>、<code>.align-middle</code>、<code>.align-bottom</code>、<code>.align-text-bottom</code> 和 <code>.align-text-top</code> 中选择。</p>
+    <p>要将非内联内容（如 <code>&lt;div&gt;</code> 等）垂直居中，请使用我们的<a href="/utilities/flex#align-items">弹性布局工具类</a>。</p>
+    <p>与内联元素配合使用：</p>
     <Example
       code='<span class="align-baseline">baseline</span>
 <span class="align-top">top</span>
@@ -19,7 +19,7 @@
 <span class="align-text-top">text-top</span>
 <span class="align-text-bottom">text-bottom</span>'
     />
-    <p>With table cells:</p>
+    <p>与表格单元格配合使用：</p>
     <Example
       code='<table style="height: 100px;">
   <tbody>
@@ -35,22 +35,22 @@
 </table>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Vertical align utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      垂直对齐工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-vertical-align" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

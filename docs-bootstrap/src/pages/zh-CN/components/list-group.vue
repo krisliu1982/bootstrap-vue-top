@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>List group</h1>
-    <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+    <h1>列表组</h1>
+    <p>列表组是一个灵活而强大的组件，用于显示一系列内容。你可以修改和扩展它们，以支持几乎任意类型的内容。</p>
 
-    <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
-    <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
+    <h2 id="basic-example">基本示例<a class="anchor-link" href="#basic-example" aria-label="基本示例链接"></a></h2>
+    <p>最基本的列表组是一个带有列表项和相应类的无序列表。可以使用后续介绍的选项，或根据需要配合你自己的 CSS 来扩展它。</p>
     <Example
       code='<ul class="list-group">
   <li class="list-group-item">An item</li>
@@ -14,8 +14,8 @@
   <li class="list-group-item">And a fifth one</li>
 </ul>'
     />
-    <h2 id="active-items">Active items<a class="anchor-link" href="#active-items" aria-label="Link to Active items"></a></h2>
-    <p>Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active selection.</p>
+    <h2 id="active-items">激活项<a class="anchor-link" href="#active-items" aria-label="激活项链接"></a></h2>
+    <p>为 <code>.list-group-item</code> 添加 <code>.active</code>，以表示当前激活的选中项。</p>
     <Example
       code='<ul class="list-group">
   <li class="list-group-item active" aria-current="true">An active item</li>
@@ -25,14 +25,14 @@
   <li class="list-group-item">And a fifth one</li>
 </ul>'
     />
-    <h2 id="links-and-buttons">Links and buttons<a class="anchor-link" href="#links-and-buttons" aria-label="Link to Links and buttons"></a></h2>
+    <h2 id="links-and-buttons">链接与按钮<a class="anchor-link" href="#links-and-buttons" aria-label="链接与按钮链接"></a></h2>
     <p>
-      Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding <code>.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s)
-      don’t provide a click or tap affordance.
+      使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 并通过添加 <code>.list-group-item-action</code> 来创建具有悬停、禁用和激活状态的<em>可交互</em>列表组项。我们将这些伪类分开，以确保由非交互式元素（如 <code>&lt;li&gt;</code> 或 <code>&lt;div&gt;</code>）构成的列表组
+      不会提供可点击或轻触的提示。
     </p>
-    <p>Make <code>.list-group-item-action</code> instances <em>appear</em> disabled by adding <code>.disabled</code>, and <code>aria-disabled=&quot;true&quot;</code> to inform assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.</p>
+    <p>通过添加 <code>.disabled</code> 和 <code>aria-disabled=&quot;true&quot;</code> 使 <code>.list-group-item-action</code> 实例<em>看起来</em>处于禁用状态，并告知辅助技术该元素已被禁用。你可能需要额外的 JavaScript 才能完全禁用链接和按钮。</p>
     <p>
-      Be sure to <strong>not use the standard <code>.btn</code> classes here</strong>.
+      请务必<strong>不要在此处使用标准的 <code>.btn</code> 类</strong>。
     </p>
     <Example
       code='<div class="list-group">
@@ -45,7 +45,7 @@
   <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
 </div>'
     />
-    <p>With <code>&lt;button&gt;</code>s, you can also make use of the <code>disabled</code> attribute instead of the <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don’t support the disabled attribute.</p>
+    <p>使用 <code>&lt;button&gt;</code> 时，你还可以使用 <code>disabled</code> 属性来代替 <code>.disabled</code> 类。遗憾的是，<code>&lt;a&gt;</code> 不支持 disabled 属性。</p>
     <Example
       code='<div class="list-group">
   <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
@@ -57,8 +57,8 @@
   <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
 </div>'
     />
-    <h2 id="flush">Flush<a class="anchor-link" href="#flush" aria-label="Link to Flush"></a></h2>
-    <p>Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+    <h2 id="flush">无边框<a class="anchor-link" href="#flush" aria-label="无边框链接"></a></h2>
+    <p>添加 <code>.list-group-flush</code> 可移除部分边框和圆角，使列表组项在父容器（例如卡片）中紧贴边缘显示。</p>
     <Example
       code='<ul class="list-group list-group-flush">
   <li class="list-group-item">An item</li>
@@ -68,9 +68,9 @@
   <li class="list-group-item">And a fifth one</li>
 </ul>'
     />
-    <h2 id="numbered">Numbered<a class="anchor-link" href="#numbered" aria-label="Link to Numbered"></a></h2>
-    <p>Add the <code>.list-group-numbered</code> modifier class (and optionally use an <code>&lt;ol&gt;</code> element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement inside list group items and to allow for better customization.</p>
-    <p>Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then styled and placed with a <code>::before</code> pseudo-element on the <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.</p>
+    <h2 id="numbered">带编号<a class="anchor-link" href="#numbered" aria-label="带编号链接"></a></h2>
+    <p>添加 <code>.list-group-numbered</code> 修饰类（并可选地使用 <code>&lt;ol&gt;</code> 元素），即可启用带编号的列表组项。编号通过 CSS 生成（而非 <code>&lt;ol&gt;</code> 的浏览器默认样式），以便在列表组项内更好地定位，并实现更好的自定义。</p>
+    <p>编号通过在 <code>&lt;ol&gt;</code> 上设置 <code>counter-reset</code> 生成，然后通过 <code>counter-increment</code> 和 <code>content</code> 在 <code>&lt;li&gt;</code> 上使用 <code>::before</code> 伪元素进行样式设置和定位。</p>
     <Example
       code='<ol class="list-group list-group-numbered">
   <li class="list-group-item">A list item</li>
@@ -78,7 +78,7 @@
   <li class="list-group-item">A list item</li>
 </ol>'
     />
-    <p>These work great with custom content as well.</p>
+    <p>它们与自定义内容配合也很出色。</p>
     <Example
       code='<ol class="list-group list-group-numbered">
   <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -104,12 +104,12 @@
   </li>
 </ol>'
     />
-    <h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
+    <h2 id="horizontal">水平排列<a class="anchor-link" href="#horizontal" aria-label="水平排列链接"></a></h2>
     <p>
-      Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting at that breakpoint’s <code>min-width</code>. Currently
-      <strong>horizontal list groups cannot be combined with flush list groups.</strong>
+      在所有断点下添加 <code>.list-group-horizontal</code> 可将列表组项的布局从垂直改为水平。或者，选择响应式变体 <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> 使列表组从该断点的 <code>min-width</code> 开始水平排列。目前
+      <strong>水平列表组不能与无边框列表组（flush）组合使用。</strong>
     </p>
-    <p><strong>ProTip:</strong> Want equal-width list group items when horizontal? Add <code>.flex-fill</code> to each list group item.</p>
+    <p><strong>专业提示：</strong>希望在水平排列时让列表组项等宽？为每个列表组项添加 <code>.flex-fill</code>。</p>
     <Example
       :code="
         data['breakpoints']
@@ -123,11 +123,11 @@
           .join('\n')
       "
     />
-    <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
+    <h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
     <Callout>
-      <p><strong>Heads up!</strong> As of v5.3.0, the <code>list-group-item-variant()</code> Sass mixin is deprecated. List group item variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
+      <p><strong>注意！</strong>自 v5.3.0 起，<code>list-group-item-variant()</code> Sass mixin 已弃用。列表组项变体现在通过<a href="#sass-loops">一个 Sass 循环</a>覆盖其 CSS 变量。</p>
     </Callout>
-    <p>Use contextual classes to style list items with a stateful background and color.</p>
+    <p>使用上下文类为列表项设置带有状态背景和颜色的样式。</p>
     <Example
       :code="
         [
@@ -139,9 +139,9 @@
         ].join('\n')
       "
     />
-    <h3 id="for-links-and-buttons">For links and buttons<a class="anchor-link" href="#for-links-and-buttons" aria-label="Link to For links and buttons"></a></h3>
+    <h3 id="for-links-and-buttons">用于链接和按钮<a class="anchor-link" href="#for-links-and-buttons" aria-label="用于链接和按钮链接"></a></h3>
     <p>
-      Contextual classes also work with <code>.list-group-item-action</code> for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.
+      上下文类也适用于 <code>&lt;a&gt;</code> 和 <code>&lt;button&gt;</code> 元素的 <code>.list-group-item-action</code>。请注意这里新增了前一个示例中没有的悬停样式。同样支持 <code>.active</code> 状态；应用它来表示上下文列表组项上的激活选中状态。
     </p>
     <Example
       :code="
@@ -154,10 +154,9 @@
         ].join('\n')
       "
     /><Callout name="warning-color-assistive-technologies" />
-    <h2 id="with-badges">With badges<a class="anchor-link" href="#with-badges" aria-label="Link to With badges"></a></h2>
+    <h2 id="with-badges">带徽章<a class="anchor-link" href="#with-badges" aria-label="带徽章链接"></a></h2>
     <p>
-      Add badges to any list group item to show unread counts, activity, and more with the help of some
-      <a href="/utilities/flex">utilities</a>.
+      借助一些<a href="/utilities/flex">工具类</a>为任何列表组项添加徽章，以显示未读数量、活动状态等。
     </p>
     <Example
       code='<ul class="list-group">
@@ -175,10 +174,9 @@
   </li>
 </ul>'
     />
-    <h2 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h2>
+    <h2 id="custom-content">自定义内容<a class="anchor-link" href="#custom-content" aria-label="自定义内容链接"></a></h2>
     <p>
-      Add nearly any HTML within, even for linked list groups like the one below, with the help of
-      <a href="/utilities/flex">flexbox utilities</a>.
+      借助<a href="/utilities/flex">弹性盒子工具类</a>，你几乎可以在其中添加任意 HTML，即使是像下面这样的链接列表组。
     </p>
     <Example
       code='<div class="list-group">
@@ -208,10 +206,10 @@
   </a>
 </div>'
     />
-    <h2 id="checkboxes-and-radios">Checkboxes and radios<a class="anchor-link" href="#checkboxes-and-radios" aria-label="Link to Checkboxes and radios"></a></h2>
+    <h2 id="checkboxes-and-radios">复选框与单选按钮<a class="anchor-link" href="#checkboxes-and-radios" aria-label="复选框与单选按钮链接"></a></h2>
     <p>
-      Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without
-      <code>&lt;label&gt;</code>s, but please remember to include an <code>aria-label</code> attribute and value for accessibility.
+      将 Bootstrap 的复选框和单选按钮放在列表组项中，并根据需要自定义。你可以在不搭配
+      <code>&lt;label&gt;</code> 的情况下使用它们，但请记得为无障碍添加 <code>aria-label</code> 属性及其值。
     </p>
     <Example
       code='<ul class="list-group">
@@ -244,7 +242,7 @@
   </li>
 </ul>'
     />
-    <p>You can use <code>.stretched-link</code> on <code>&lt;label&gt;</code>s to make the whole list group item clickable.</p>
+    <p>你可以在 <code>&lt;label&gt;</code> 上使用 <code>.stretched-link</code>，使整个列表组项都可点击。</p>
     <Example
       code='<ul class="list-group">
   <li class="list-group-item">
@@ -261,23 +259,23 @@
   </li>
 </ul>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, list groups now use local CSS variables on
-      <code>.list-group</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，列表组现在在
+      <code>.list-group</code> 上使用局部 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此依然支持 Sass 自定义。
     </p>
     <ScssDocs name="list-group-css-vars" file="scss/_list-group.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="list-group-variables" file="scss/_variables.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
+    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixins 链接"></a></h3>
     <DeprecatedIn version="5.3.0" /><ScssDocs name="list-group-mixin" file="scss/mixins/_list-group.scss" />
-    <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p>Loop that generates the modifier classes with an overriding of CSS variables.</p>
+    <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
+    <p>生成修饰类并覆盖 CSS 变量的循环。</p>
     <ScssDocs name="list-group-modifiers" file="scss/_list-group.scss" />
-    <h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
-    <p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our list group to create tabbable panes of local content.</p>
+    <h2 id="javascript-behavior">JavaScript 行为<a class="anchor-link" href="#javascript-behavior" aria-label="JavaScript 行为链接"></a></h2>
+    <p>使用标签页 JavaScript 插件——单独引入它，或通过编译后的 <code>bootstrap.js</code> 文件引入——来扩展我们的列表组，创建可切换的本地内容面板。</p>
     <div class="bd-example" role="tabpanel">
       <div class="row">
         <div class="col-4">
@@ -291,16 +289,16 @@
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <p>Some placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>一段与 “Home” 相关的占位段落。还有一些额外内容，仅用于填充这个标签页面板。在生产环境中，你显然会有更多真实内容，而且不仅仅是文本。它可以是任何东西，真的。文本、图片、表单。</p>
             </div>
             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <p>Some placeholder content in a paragraph relating to "Profile". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>一段与 “Profile” 相关的占位段落。还有一些额外内容，仅用于填充这个标签页面板。在生产环境中，你显然会有更多真实内容，而且不仅仅是文本。它可以是任何东西，真的。文本、图片、表单。</p>
             </div>
             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <p>Some placeholder content in a paragraph relating to "Messages". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>一段与 “Messages” 相关的占位段落。还有一些额外内容，仅用于填充这个标签页面板。在生产环境中，你显然会有更多真实内容，而且不仅仅是文本。它可以是任何东西，真的。文本、图片、表单。</p>
             </div>
             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <p>Some placeholder content in a paragraph relating to "Settings". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.</p>
+              <p>一段与 “Settings” 相关的占位段落。还有一些额外内容，仅用于填充这个标签页面板。在生产环境中，你显然会有更多真实内容，而且不仅仅是文本。它可以是任何东西，真的。文本、图片、表单。</p>
             </div>
           </div>
         </div>
@@ -327,10 +325,9 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="using-data-attributes">Using data attributes<a class="anchor-link" href="#using-data-attributes" aria-label="Link to Using data attributes"></a></h3>
+    <h3 id="using-data-attributes">使用数据属性<a class="anchor-link" href="#using-data-attributes" aria-label="使用数据属性链接"></a></h3>
     <p>
-      You can activate a list group navigation without writing any JavaScript by simply specifying
-      <code>data-bs-toggle=&quot;list&quot;</code> or on an element. Use these data attributes on <code>.list-group-item</code>.
+      你只需在元素上指定 <code>data-bs-toggle=&quot;list&quot;</code>，无需编写任何 JavaScript 即可激活列表组导航。在 <code>.list-group-item</code> 上使用这些数据属性。
     </p>
     <CodeWrapper
       code='&lt;div role="tabpanel"&gt;
@@ -352,8 +349,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <p>Enable tabbable list item via JavaScript (each list item needs to be activated individually):</p>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
+    <p>通过 JavaScript 启用可切换的列表项（每个列表项都需要单独激活）：</p>
     <CodeWrapper
       code="const triggerTabList = document.querySelectorAll(&#39;#myTab a&#39;)
 triggerTabList.forEach(triggerEl =&gt; {
@@ -367,7 +364,7 @@ triggerTabList.forEach(triggerEl =&gt; {
 "
       lang="javascript"
     />
-    <p>You can activate individual list item in several ways:</p>
+    <p>你可以通过多种方式激活单个列表项：</p>
     <CodeWrapper
       code='const triggerEl = document.querySelector(&#39;#myTab a[href="#profile"]&#39;)
 bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
@@ -377,8 +374,8 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
 '
       lang="javascript"
     />
-    <h3 id="fade-effect">Fade effect<a class="anchor-link" href="#fade-effect" aria-label="Link to Fade effect"></a></h3>
-    <p>To make tabs panel fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.</p>
+    <h3 id="fade-effect">淡入效果<a class="anchor-link" href="#fade-effect" aria-label="淡入效果链接"></a></h3>
+    <p>要使标签页面板淡入，请为每个 <code>.tab-pane</code> 添加 <code>.fade</code>。第一个标签页面板还必须带有 <code>.show</code>，以使初始内容可见。</p>
     <CodeWrapper
       code='&lt;div class="tab-content"&gt;
   &lt;div class="tab-pane fade show active" id="home" role="tabpanel"&gt;...&lt;/div&gt;
@@ -388,84 +385,84 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
-    <p>Activates your content as a tab element.</p>
-    <p>You can create a tab instance with the constructor, for example:</p>
+    <p>将你的内容作为标签页元素激活。</p>
+    <p>你可以使用构造函数创建标签页实例，例如：</p>
     <CodeWrapper code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)" lang="javascript" />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s tab.</td>
+            <td>销毁元素的标签页。</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td>Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: <code>bootstrap.Tab.getInstance(element)</code>.</td>
+            <td>静态方法，用于获取与 DOM 元素关联的标签页实例，可以这样使用：<code>bootstrap.Tab.getInstance(element)</code>。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
             <td>
-              Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
-              <code>bootstrap.Tab.getOrCreateInstance(element)</code>.
+              静态方法，返回与 DOM 元素关联的标签页实例，如果尚未初始化则创建一个新实例。可以这样使用：
+              <code>bootstrap.Tab.getOrCreateInstance(element)</code>。
             </td>
           </tr>
           <tr>
             <td><code>show</code></td>
             <td>
-              Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden.
-              <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).
+              选中给定的标签页并显示其关联的面板。之前选中的其他任何标签页都将变为未选中状态，其关联的面板将被隐藏。
+              <strong>在标签页面板实际显示之前就返回给调用者</strong>（即 <code>shown.bs.tab</code> 事件发生之前）。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>When showing a new tab, the events fire in the following order:</p>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
+    <p>显示新标签页时，事件按以下顺序触发：</p>
     <ol>
-      <li><code>hide.bs.tab</code> (on the current active tab)</li>
-      <li><code>show.bs.tab</code> (on the to-be-shown tab)</li>
-      <li><code>hidden.bs.tab</code> (on the previous active tab, the same one as for the <code>hide.bs.tab</code> event)</li>
-      <li><code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
+      <li><code>hide.bs.tab</code>（在当前激活的标签页上）</li>
+      <li><code>show.bs.tab</code>（在将要显示的标签页上）</li>
+      <li><code>hidden.bs.tab</code>（在之前激活的标签页上，与 <code>hide.bs.tab</code> 事件为同一个）</li>
+      <li><code>shown.bs.tab</code>（在新激活、刚刚显示的标签页上，与 <code>show.bs.tab</code> 事件为同一个）</li>
     </ol>
-    <p>If no tab was already active, then the <code>hide.bs.tab</code> and <code>hidden.bs.tab</code> events will not be fired.</p>
+    <p>如果此前没有已激活的标签页，则不会触发 <code>hide.bs.tab</code> 和 <code>hidden.bs.tab</code> 事件。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event type</th>
-            <th>Description</th>
+            <th>事件类型</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.tab</code></td>
             <td>
-              This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use
-              <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.
+              当即将显示新标签页（因此之前的激活标签页即将隐藏）时触发此事件。分别使用
+              <code>event.target</code> 和 <code>event.relatedTarget</code> 定位当前激活的标签页和即将激活的新标签页。
             </td>
           </tr>
           <tr>
             <td><code>hidden.bs.tab</code></td>
             <td>
-              This event fires after a new tab is shown (and thus the previous active tab is hidden). Use
-              <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.
+              此事件在新标签页显示后（因此之前的激活标签页被隐藏）触发。分别使用
+              <code>event.target</code> 和 <code>event.relatedTarget</code> 定位之前的激活标签页和新的激活标签页。
             </td>
           </tr>
           <tr>
             <td><code>show.bs.tab</code></td>
-            <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+            <td>此事件在标签页显示时触发，但在新标签页显示之前。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 定位激活的标签页和之前的激活标签页（如果存在）。</td>
           </tr>
           <tr>
             <td><code>shown.bs.tab</code></td>
-            <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+            <td>此事件在标签页显示之后触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 定位激活的标签页和之前的激活标签页（如果存在）。</td>
           </tr>
         </tbody>
       </table>
@@ -484,41 +481,41 @@ tabElms.forEach(tabElm =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#basic-example">Basic example</a></li>
-      <li><a href="#active-items">Active items</a></li>
-      <li><a href="#links-and-buttons">Links and buttons</a></li>
-      <li><a href="#flush">Flush</a></li>
-      <li><a href="#numbered">Numbered</a></li>
-      <li><a href="#horizontal">Horizontal</a></li>
+      <li><a href="#basic-example">基本示例</a></li>
+      <li><a href="#active-items">激活项</a></li>
+      <li><a href="#links-and-buttons">链接与按钮</a></li>
+      <li><a href="#flush">无边框</a></li>
+      <li><a href="#numbered">带编号</a></li>
+      <li><a href="#horizontal">水平排列</a></li>
       <li>
-        <a href="#variants">Variants</a>
+        <a href="#variants">变体</a>
         <ul>
-          <li><a href="#for-links-and-buttons">For links and buttons</a></li>
+          <li><a href="#for-links-and-buttons">用于链接和按钮</a></li>
         </ul>
       </li>
-      <li><a href="#with-badges">With badges</a></li>
-      <li><a href="#custom-content">Custom content</a></li>
-      <li><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
+      <li><a href="#with-badges">带徽章</a></li>
+      <li><a href="#custom-content">自定义内容</a></li>
+      <li><a href="#checkboxes-and-radios">复选框与单选按钮</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixins</a></li>
-          <li><a href="#sass-loops">Sass loops</a></li>
+          <li><a href="#sass-loops">Sass 循环</a></li>
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript behavior</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
-          <li><a href="#using-data-attributes">Using data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#fade-effect">Fade effect</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#using-data-attributes">使用数据属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#fade-effect">淡入效果</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Opacity</h1>
-    <p>Control the opacity of elements.</p>
+    <h1>不透明度</h1>
+    <p>控制元素的不透明度。</p>
 
-    <p>The <code>opacity</code> property sets the opacity level for an element. The opacity level describes the transparency level, where <code>1</code> is not transparent at all, <code>.5</code> is 50% visible, and <code>0</code> is completely transparent.</p>
-    <p>Set the <code>opacity</code> of an element using <code>.opacity-{value}</code> utilities.</p>
+    <p><code>opacity</code> 属性用于设置元素的不透明度级别。不透明度级别描述透明程度，其中 <code>1</code> 表示完全不透明，<code>.5</code> 表示 50% 可见，<code>0</code> 表示完全透明。</p>
+    <p>使用 <code>.opacity-{value}</code> 工具类设置元素的 <code>opacity</code>。</p>
     <div class="bd-example d-sm-flex">
       <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
       <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
@@ -21,22 +21,22 @@
       lang="html"
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Opacity utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      不透明度工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-opacity" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

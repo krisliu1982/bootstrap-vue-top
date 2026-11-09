@@ -1,10 +1,10 @@
 <template>
   <article class="bd-content">
-    <h1>Sizing</h1>
-    <p>Easily make an element as wide or as tall with our width and height utilities.</p>
+    <h1>尺寸</h1>
+    <p>使用我们的宽度和高度工具类，可以轻松设置元素的宽度或高度。</p>
 
-    <h2 id="relative-to-the-parent">Relative to the parent<a class="anchor-link" href="#relative-to-the-parent" aria-label="Link to Relative to the parent"></a></h2>
-    <p>Width and height utilities are generated from the utility API in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
+    <h2 id="relative-to-the-parent">相对于父元素<a class="anchor-link" href="#relative-to-the-parent" aria-label="相对于父元素链接"></a></h2>
+    <p>宽度和高度工具类由 <code>_utilities.scss</code> 中的工具类 API 生成。默认支持 <code>25%</code>、<code>50%</code>、<code>75%</code>、<code>100%</code> 和 <code>auto</code>。根据需要修改这些值，即可在此处生成不同的工具类。</p>
     <Example
       class="bd-example-flex"
       code='<div class="w-25 p-3">Width 25%</div>
@@ -22,7 +22,7 @@
   <div class="h-auto d-inline-block" style="width: 120px;">Height auto</div>
 </div>'
     />
-    <p>You can also use <code>max-width: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
+    <p>你也可以根据需要将 <code>max-width: 100%;</code> 和 <code>max-height: 100%;</code> 作为工具类使用。</p>
     <Example
       class="bd-example-flex"
       code='<div style="width: 50%; height: 100px;">
@@ -34,8 +34,8 @@
   <div class="mh-100" style="width: 100px; height: 200px;">Max-height 100%</div>
 </div>'
     />
-    <h2 id="relative-to-the-viewport">Relative to the viewport<a class="anchor-link" href="#relative-to-the-viewport" aria-label="Link to Relative to the viewport"></a></h2>
-    <p>You can also use utilities to set the width and height relative to the viewport.</p>
+    <h2 id="relative-to-the-viewport">相对于视口<a class="anchor-link" href="#relative-to-the-viewport" aria-label="相对于视口链接"></a></h2>
+    <p>你也可以使用工具类设置相对于视口的宽度和高度。</p>
     <CodeWrapper
       code='&lt;div class="min-vw-100"&gt;Min-width 100vw&lt;/div&gt;
 &lt;div class="min-vh-100"&gt;Min-height 100vh&lt;/div&gt;
@@ -44,24 +44,24 @@
       lang="html"
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
+    <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
-      Sizing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>.
-      <a href="/utilities/api#using-the-api">Learn how to use the utilities API.</a>
+      尺寸工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-sizing" file="scss/_utilities.scss" />
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#relative-to-the-parent">Relative to the parent</a></li>
-      <li><a href="#relative-to-the-viewport">Relative to the viewport</a></li>
+      <li><a href="#relative-to-the-parent">相对于父元素</a></li>
+      <li><a href="#relative-to-the-viewport">相对于视口</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#sass-utilities-api">Sass utilities API</a></li>
+          <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>
       </li>
     </ul>

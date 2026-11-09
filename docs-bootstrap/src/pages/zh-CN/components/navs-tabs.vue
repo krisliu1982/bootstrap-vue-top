@@ -1,14 +1,14 @@
 <template>
   <article class="bd-content">
-    <h1>Navs and tabs</h1>
-    <p>Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+    <h1>导航与标签页</h1>
+    <p>关于如何使用 Bootstrap 内置导航组件的文档与示例。</p>
 
-    <h2 id="base-nav">Base nav<a class="anchor-link" href="#base-nav" aria-label="Link to Base nav"></a></h2>
-    <p>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
-    <p>The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
+    <h2 id="base-nav">基础导航<a class="anchor-link" href="#base-nav" aria-label="基础导航链接"></a></h2>
+    <p>Bootstrap 中提供的导航共享通用标记和样式，从基础的 <code>.nav</code> 类到激活和禁用状态皆是如此。切换修饰类即可在每种样式之间切换。</p>
+    <p>基础的 <code>.nav</code> 组件使用弹性盒子构建，为构建所有类型的导航组件提供了坚实的基础。它包含一些样式覆盖（用于配合列表）、一些为增大点击区域而添加的链接内边距，以及基本的禁用样式。</p>
     <Callout>
-      <p>The base <code>.nav</code> component does not include any <code>.active</code> state. The following examples include the class, mainly to demonstrate that this particular class does not trigger any special styling.</p>
-      <p>To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for current page, or <code>true</code> for the current item in a set.</p>
+      <p>基础的 <code>.nav</code> 组件不包含任何 <code>.active</code> 状态。以下示例包含该类，主要是为了演示这个特定的类不会触发任何特殊样式。</p>
+      <p>要向辅助技术传达激活状态，请使用 <code>aria-current</code> 属性——对当前页面使用 <code>page</code> 值，或对一组中的当前项使用 <code>true</code>。</p>
     </Callout>
     <Example
       code='<ul class="nav">
@@ -27,8 +27,8 @@
 </ul>'
     />
     <p>
-      Classes are used throughout, so your markup can be super flexible. Use <code>&lt;ul&gt;</code>s like above, <code>&lt;ol&gt;</code> if the order of your items is important, or roll your own with a <code>&lt;nav&gt;</code> element. Because the <code>.nav</code> uses <code>display: flex</code>, the nav links behave the same as nav items would,
-      but without the extra markup.
+      整个过程中都使用类，因此你的标记可以非常灵活。像上面一样使用 <code>&lt;ul&gt;</code>，如果项目顺序很重要则使用 <code>&lt;ol&gt;</code>，或者使用 <code>&lt;nav&gt;</code> 元素自行构建。由于 <code>.nav</code> 使用 <code>display: flex</code>，导航链接的行为与导航项相同，
+      但无需额外的标记。
     </p>
     <Example
       code='<nav class="nav">
@@ -38,14 +38,13 @@
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
-    <h2 id="available-styles">Available styles<a class="anchor-link" href="#available-styles" aria-label="Link to Available styles"></a></h2>
-    <p>Change the style of <code>.nav</code>s component with modifiers and utilities. Mix and match as needed, or build your own.</p>
-    <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
+    <h2 id="available-styles">可用样式<a class="anchor-link" href="#available-styles" aria-label="可用样式链接"></a></h2>
+    <p>使用修饰类和工具类更改 <code>.nav</code> 组件的样式。根据需要组合搭配，或构建你自己的样式。</p>
+    <h3 id="horizontal-alignment">水平对齐<a class="anchor-link" href="#horizontal-alignment" aria-label="水平对齐链接"></a></h3>
     <p>
-      Change the horizontal alignment of your nav with
-      <a href="/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right-aligned.
+      使用<a href="/utilities/flex#justify-content">弹性盒子工具类</a>更改导航的水平对齐。默认情况下，导航是左对齐的，但你可以轻松地将其改为居中对齐或右对齐。
     </p>
-    <p>Centered with <code>.justify-content-center</code>:</p>
+    <p>使用 <code>.justify-content-center</code> 居中：</p>
     <Example
       code='<ul class="nav justify-content-center">
   <li class="nav-item">
@@ -62,7 +61,7 @@
   </li>
 </ul>'
     />
-    <p>Right-aligned with <code>.justify-content-end</code>:</p>
+    <p>使用 <code>.justify-content-end</code> 右对齐：</p>
     <Example
       code='<ul class="nav justify-content-end">
   <li class="nav-item">
@@ -79,8 +78,8 @@
   </li>
 </ul>'
     />
-    <h3 id="vertical">Vertical<a class="anchor-link" href="#vertical" aria-label="Link to Vertical"></a></h3>
-    <p>Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).</p>
+    <h3 id="vertical">垂直排列<a class="anchor-link" href="#vertical" aria-label="垂直排列链接"></a></h3>
+    <p>使用 <code>.flex-column</code> 工具类更改弹性项目的方向来堆叠导航。需要在某些视口下堆叠而在其他视口下不堆叠？使用响应式版本（例如 <code>.flex-sm-column</code>）。</p>
     <Example
       code='<ul class="nav flex-column">
   <li class="nav-item">
@@ -97,7 +96,7 @@
   </li>
 </ul>'
     />
-    <p>As always, vertical navigation is possible without <code>&lt;ul&gt;</code>s, too.</p>
+    <p>一如既往，垂直导航也可以不使用 <code>&lt;ul&gt;</code>。</p>
     <Example
       code='<nav class="nav flex-column">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -106,8 +105,8 @@
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
-    <h3 id="tabs">Tabs<a class="anchor-link" href="#tabs" aria-label="Link to Tabs"></a></h3>
-    <p>Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our <a href="#javascript-behavior">tab JavaScript plugin</a>.</p>
+    <h3 id="tabs">标签页<a class="anchor-link" href="#tabs" aria-label="标签页链接"></a></h3>
+    <p>在上面的基础导航基础上添加 <code>.nav-tabs</code> 类，即可生成标签页式的界面。使用我们的<a href="#javascript-behavior">标签页 JavaScript 插件</a>创建可切换的区域。</p>
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
@@ -124,8 +123,8 @@
   </li>
 </ul>'
     />
-    <h3 id="pills">Pills<a class="anchor-link" href="#pills" aria-label="Link to Pills"></a></h3>
-    <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+    <h3 id="pills">胶囊式标签<a class="anchor-link" href="#pills" aria-label="胶囊式标签链接"></a></h3>
+    <p>使用相同的 HTML，但改用 <code>.nav-pills</code>：</p>
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
@@ -142,8 +141,8 @@
   </li>
 </ul>'
     />
-    <h3 id="underline">Underline<a class="anchor-link" href="#underline" aria-label="Link to Underline"></a></h3>
-    <p>Take that same HTML, but use <code>.nav-underline</code> instead:</p>
+    <h3 id="underline">下划线<a class="anchor-link" href="#underline" aria-label="下划线链接"></a></h3>
+    <p>使用相同的 HTML，但改用 <code>.nav-underline</code>：</p>
     <Example
       code='<ul class="nav nav-underline">
   <li class="nav-item">
@@ -160,8 +159,8 @@
   </li>
 </ul>'
     />
-    <h3 id="fill-and-justify">Fill and justify<a class="anchor-link" href="#fill-and-justify" aria-label="Link to Fill and justify"></a></h3>
-    <p>Force your <code>.nav</code>’s contents to extend the full available width with one of two modifier classes. To proportionately fill all available space with your <code>.nav-item</code>s, use <code>.nav-fill</code>. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
+    <h3 id="fill-and-justify">填充与均分<a class="anchor-link" href="#fill-and-justify" aria-label="填充与均分链接"></a></h3>
+    <p>通过两个修饰类之一，让你的 <code>.nav</code> 内容占满可用宽度。若要按比例填满所有可用空间，请在你的 <code>.nav-item</code> 上使用 <code>.nav-fill</code>。请注意，所有水平空间都会被占用，但并非每个导航项宽度都相同。</p>
     <Example
       code='<ul class="nav nav-pills nav-fill">
   <li class="nav-item">
@@ -178,7 +177,7 @@
   </li>
 </ul>'
     />
-    <p>When using a <code>&lt;nav&gt;</code>-based navigation, you can safely omit <code>.nav-item</code> as only <code>.nav-link</code> is required for styling <code>&lt;a&gt;</code> elements.</p>
+    <p>使用基于 <code>&lt;nav&gt;</code> 的导航时，可以放心省略 <code>.nav-item</code>，因为为 <code>&lt;a&gt;</code> 元素添加样式只需 <code>.nav-link</code>。</p>
     <Example
       code='<nav class="nav nav-pills nav-fill">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -187,7 +186,7 @@
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
-    <p>For equal-width elements, use <code>.nav-justified</code>. All horizontal space will be occupied by nav links, but unlike the <code>.nav-fill</code> above, every nav item will be the same width.</p>
+    <p>若要使各元素宽度相等，请使用 <code>.nav-justified</code>。所有水平空间都会被导航链接占用，但与上面的 <code>.nav-fill</code> 不同，每个导航项的宽度都相同。</p>
     <Example
       code='<ul class="nav nav-pills nav-justified">
   <li class="nav-item">
@@ -204,7 +203,7 @@
   </li>
 </ul>'
     />
-    <p>Similar to the <code>.nav-fill</code> example using a <code>&lt;nav&gt;</code>-based navigation.</p>
+    <p>与使用基于 <code>&lt;nav&gt;</code> 导航的 <code>.nav-fill</code> 示例类似。</p>
     <Example
       code='<nav class="nav nav-pills nav-justified">
   <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -213,10 +212,10 @@
   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
-    <h2 id="working-with-flex-utilities">Working with flex utilities<a class="anchor-link" href="#working-with-flex-utilities" aria-label="Link to Working with flex utilities"></a></h2>
+    <h2 id="working-with-flex-utilities">配合 Flex 工具类使用<a class="anchor-link" href="#working-with-flex-utilities" aria-label="配合 Flex 工具类使用"></a></h2>
     <p>
-      If you need responsive nav variations, consider using a series of
-      <a href="/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
+      如果你需要响应式的导航变体，可以考虑使用一系列
+      <a href="/utilities/flex">flexbox 工具类</a>。虽然写法更冗长，但这些工具类能在各个响应式断点上提供更强的定制能力。在下面的示例中，我们的导航会在最小断点下堆叠显示，然后在小断点及以上时切换为水平布局并填满可用宽度。
     </p>
     <Example
       code='<nav class="nav nav-pills flex-column flex-sm-row">
@@ -226,22 +225,20 @@
   <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
-    <h2 id="regarding-accessibility">Regarding accessibility<a class="anchor-link" href="#regarding-accessibility" aria-label="Link to Regarding accessibility"></a></h2>
+    <h2 id="regarding-accessibility">关于无障碍访问<a class="anchor-link" href="#regarding-accessibility" aria-label="关于无障碍访问"></a></h2>
     <p>
-      If you’re using navs to provide a navigation bar, be sure to add a <code>role=&quot;navigation&quot;</code> to the most logical parent container of the <code>&lt;ul&gt;</code>, or wrap a <code>&lt;nav&gt;</code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;</code> itself, as this would prevent it from being
-      announced as an actual list by assistive technologies.
+      如果你使用导航来提供导航栏，请务必为 <code>&lt;ul&gt;</code> 最合理的父容器添加 <code>role=&quot;navigation&quot;</code>，或用 <code>&lt;nav&gt;</code> 元素包裹整个导航。不要将 role 添加到 <code>&lt;ul&gt;</code> 本身，因为这会使其无法被辅助技术识别为真正的列表。
     </p>
     <p>
-      Note that navigation bars, even if visually styled as tabs with the <code>.nav-tabs</code> class, should <strong>not</strong> be given <code>role=&quot;tablist&quot;</code>, <code>role=&quot;tab&quot;</code> or <code>role=&quot;tabpanel&quot;</code> attributes. These are only appropriate for dynamic tabbed interfaces, as described in the
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA Authoring Practices Guide tabs pattern</a>. See <a href="#javascript-behavior">JavaScript behavior</a> for dynamic tabbed interfaces in this section for an example. The <code>aria-current</code> attribute is not necessary on dynamic tabbed interfaces since our JavaScript
-      handles the selected state by adding <code>aria-selected=&quot;true&quot;</code> on the active tab.
+      请注意，导航栏即使在视觉上使用 <code>.nav-tabs</code> 类样式化为标签页，也<strong>不应</strong>添加 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code> 或 <code>role=&quot;tabpanel&quot;</code> 属性。这些属性仅适用于动态标签页界面，如
+      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述。本节中的动态标签页界面示例请参阅 <a href="#javascript-behavior">JavaScript 行为</a>。动态标签页界面不需要 <code>aria-current</code> 属性，因为我们的 JavaScript 会通过在活动标签页上添加 <code>aria-selected=&quot;true&quot;</code> 来处理选中状态。
     </p>
-    <h2 id="using-dropdowns">Using dropdowns<a class="anchor-link" href="#using-dropdowns" aria-label="Link to Using dropdowns"></a></h2>
+    <h2 id="using-dropdowns">使用下拉菜单<a class="anchor-link" href="#using-dropdowns" aria-label="使用下拉菜单"></a></h2>
     <p>
-      Add dropdown menus with a little extra HTML and the
-      <a href="/components/dropdowns#usage">dropdowns JavaScript plugin</a>.
+      添加少量额外 HTML 并配合
+      <a href="/components/dropdowns#usage">下拉菜单 JavaScript 插件</a>即可使用下拉菜单。
     </p>
-    <h3 id="tabs-with-dropdowns">Tabs with dropdowns<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="Link to Tabs with dropdowns"></a></h3>
+    <h3 id="tabs-with-dropdowns">带下拉菜单的标签页<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="带下拉菜单的标签页"></a></h3>
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
@@ -265,7 +262,7 @@
   </li>
 </ul>'
     />
-    <h3 id="pills-with-dropdowns">Pills with dropdowns<a class="anchor-link" href="#pills-with-dropdowns" aria-label="Link to Pills with dropdowns"></a></h3>
+    <h3 id="pills-with-dropdowns">带下拉菜单的胶囊导航<a class="anchor-link" href="#pills-with-dropdowns" aria-label="带下拉菜单的胶囊导航"></a></h3>
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
@@ -290,22 +287,22 @@
 </ul>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量"></a></h3>
     <AddedIn version="5.2.0" />
-    <p>As part of Bootstrap’s evolving CSS variables approach, navs now use local CSS variables on <code>.nav</code>, <code>.nav-tabs</code>, and <code>.nav-pills</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-    <p>On the <code>.nav</code> base class:</p>
+    <p>作为 Bootstrap 不断演进的 CSS 变量方案的一部分，导航现在在 <code>.nav</code>、<code>.nav-tabs</code> 和 <code>.nav-pills</code> 上使用局部 CSS 变量，以便更好地进行实时自定义。CSS 变量的值通过 Sass 设置，因此仍然支持 Sass 自定义。</p>
+    <p>在 <code>.nav</code> 基类上：</p>
     <ScssDocs name="nav-css-vars" file="scss/_nav.scss" />
-    <p>On the <code>.nav-tabs</code> modifier class:</p>
+    <p>在 <code>.nav-tabs</code> 修饰类上：</p>
     <ScssDocs name="nav-tabs-css-vars" file="scss/_nav.scss" />
-    <p>On the <code>.nav-pills</code> modifier class:</p>
+    <p>在 <code>.nav-pills</code> 修饰类上：</p>
     <ScssDocs name="nav-pills-css-vars" file="scss/_nav.scss" />
     <AddedIn version="5.3.0" />
-    <p>On the <code>.nav-underline</code> modifier class:</p>
+    <p>在 <code>.nav-underline</code> 修饰类上：</p>
     <ScssDocs name="nav-underline-css-vars" file="scss/_nav.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量"></a></h3>
     <ScssDocs name="nav-variables" file="scss/_variables.scss" />
-    <h2 id="javascript-behavior">JavaScript behavior<a class="anchor-link" href="#javascript-behavior" aria-label="Link to JavaScript behavior"></a></h2>
-    <p>Use the tab JavaScript plugin—include it individually or through the compiled <code>bootstrap.js</code> file—to extend our navigational tabs and pills to create tabbable panes of local content.</p>
+    <h2 id="javascript-behavior">JavaScript 行为<a class="anchor-link" href="#javascript-behavior" aria-label="JavaScript 行为"></a></h2>
+    <p>使用标签页 JavaScript 插件——可以单独引入，或通过编译后的 <code>bootstrap.js</code> 文件引入——来扩展我们的导航标签页和胶囊导航，以创建可切换的本地内容面板。</p>
     <Example
       :showMarkup="false"
       code='
@@ -363,8 +360,8 @@
       lang="html"
     />
     <p>
-      To help fit your needs, this works with <code>&lt;ul&gt;</code>-based markup, as shown above, or with any arbitrary “roll your own” markup. Note that if you’re using <code>&lt;nav&gt;</code>, you shouldn’t add <code>role=&quot;tablist&quot;</code> directly to it, as this would override the element’s native role as a navigation landmark.
-      Instead, switch to an alternative element (in the example below, a simple <code>&lt;div&gt;</code>) and wrap the <code>&lt;nav&gt;</code> around it.
+      为了满足你的需求，这既适用于上面展示的基于 <code>&lt;ul&gt;</code> 的标记，也适用于任意“自行定义”的标记。注意，如果你使用 <code>&lt;nav&gt;</code>，不应直接在其上添加 <code>role=&quot;tablist&quot;</code>，因为这会覆盖该元素作为导航地标（landmark）的原生角色。
+      而应改用其他元素（下面示例中使用简单的 <code>&lt;div&gt;</code>），并在其外层包裹 <code>&lt;nav&gt;</code>。
     </p>
     <Example
       :showMarkup="false"
@@ -410,7 +407,7 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <p>The tabs plugin also works with pills.</p>
+    <p>标签页插件同样适用于胶囊导航。</p>
     <Example
       :showMarkup="false"
       code='
@@ -468,8 +465,8 @@
       lang="html"
     />
     <p>
-      And with vertical pills. Ideally, for vertical tabs, you should also add
-      <code>aria-orientation=&quot;vertical&quot;</code> to the tab list container.
+      以及垂直胶囊导航。理想情况下，对于垂直标签页，还应在标签页列表容器上添加
+      <code>aria-orientation=&quot;vertical&quot;</code>。
     </p>
     <Example
       :showMarkup="false"
@@ -521,35 +518,33 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h3>
+    <h3 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问"></a></h3>
     <p>
-      Dynamic tabbed interfaces, as described in the
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA Authoring Practices Guide tabs pattern</a>, require <code>role=&quot;tablist&quot;</code>, <code>role=&quot;tab&quot;</code>, <code>role=&quot;tabpanel&quot;</code>, and additional <code>aria-</code> attributes in order to convey their structure, functionality, and current
-      state to users of assistive technologies (such as screen readers). As a best practice, we recommend using <code>&lt;button&gt;</code> elements for the tabs, as these are controls that trigger a dynamic change, rather than links that navigate to a new page or location.
+      如
+      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述，动态标签页界面需要 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code>、<code>role=&quot;tabpanel&quot;</code> 以及其他 <code>aria-</code> 属性，以便向辅助技术（如屏幕阅读器）用户传达其结构、功能和当前状态。作为最佳实践，我们建议对标签页使用 <code>&lt;button&gt;</code> 元素，因为它们是触发动态变化的控件，而不是跳转到新页面或位置的链接。
     </p>
     <p>
-      In line with the ARIA Authoring Practices pattern, only the currently active tab receives keyboard focus. When the JavaScript plugin is initialized, it will set
-      <code>tabindex=&quot;-1&quot;</code> on all inactive tab controls. Once the currently active tab has focus, the cursor keys activate the previous/next tab. The <kbd>Home</kbd> and <kbd>End</kbd> keys activate the first and last tabs, respectively. The plugin will change the
-      <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a>
-      accordingly. However, note that the JavaScript plugin does not distinguish between horizontal and vertical tab lists when it comes to cursor key interactions: regardless of the tab list’s orientation, both the up
-      <em>and</em> left cursor go to the previous tab, and down <em>and</em> right cursor go to the next tab.
+      依据 ARIA 创作实践模式，只有当前活动的标签页会获得键盘焦点。JavaScript 插件初始化时，会为所有非活动标签页控件设置
+      <code>tabindex=&quot;-1&quot;</code>。当当前活动标签页获得焦点后，方向键可激活上一个/下一个标签页。<kbd>Home</kbd> 和 <kbd>End</kbd> 键分别激活第一个和最后一个标签页。插件会相应地更改
+      <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a>。
+      但请注意，在方向键交互方面，JavaScript 插件并不区分水平与垂直的标签页列表：无论标签页列表的方向如何，向上
+      <em>和</em>向左方向键都会切换到上一个标签页，向下<em>和</em>向右方向键都会切换到下一个标签页。
     </p>
     <Callout type="warning">
       <p>
-        In general, to facilitate keyboard navigation, it’s recommended to make the tab panels themselves focusable as well, unless the first element containing meaningful content inside the tab panel is already focusable. The JavaScript plugin does not try to handle this aspect—where appropriate, you’ll need to explicitly make your tab panels
-        focusable by adding <code>tabindex=&quot;0&quot;</code> in your markup.
+        一般来说，为便于键盘导航，建议让标签页面板本身也可获得焦点，除非标签页面板内包含有意义内容的首个元素已经可以获得焦点。JavaScript 插件不会尝试处理这一方面——在适当的情况下，你需要在标记中为标签页面板添加 <code>tabindex=&quot;0&quot;</code> 以使其可获得焦点。
       </p>
     </Callout>
     <Callout type="danger">
       <p>
-        The tab JavaScript plugin <strong>does not</strong> support tabbed interfaces that contain dropdown menus, as these cause both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion.
-        From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
+        标签页 JavaScript 插件<strong>不</strong>支持包含下拉菜单的标签页界面，因为这会导致可用性和无障碍访问问题。从可用性角度看，当前显示的标签页的触发元素不能立即可见（因为它位于关闭的下拉菜单中），会造成困惑。
+        从无障碍访问角度看，目前没有合理的方式将这类构造映射到标准的 WAI ARIA 模式，这意味着无法轻易使辅助技术用户理解它。
       </p>
     </Callout>
-    <h3 id="using-data-attributes">Using data attributes<a class="anchor-link" href="#using-data-attributes" aria-label="Link to Using data attributes"></a></h3>
+    <h3 id="using-data-attributes">使用数据属性<a class="anchor-link" href="#using-data-attributes" aria-label="使用数据属性"></a></h3>
     <p>
-      You can activate a tab or pill navigation without writing any JavaScript by simply specifying
-      <code>data-bs-toggle=&quot;tab&quot;</code> or <code>data-bs-toggle=&quot;pill&quot;</code> on an element. Use these data attributes on <code>.nav-tabs</code> or <code>.nav-pills</code>.
+      只需在元素上指定
+      <code>data-bs-toggle=&quot;tab&quot;</code> 或 <code>data-bs-toggle=&quot;pill&quot;</code>，无需编写任何 JavaScript 即可激活标签页或胶囊导航。请在 <code>.nav-tabs</code> 或 <code>.nav-pills</code> 上使用这些数据属性。
     </p>
     <CodeWrapper
       code='&lt;!-- Nav tabs --&gt;
@@ -577,8 +572,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript"></a></h3>
+    <p>通过 JavaScript 启用可切换的标签页（每个标签页都需要单独激活）：</p>
     <CodeWrapper
       code="const triggerTabList = document.querySelectorAll(&#39;#myTab button&#39;)
 triggerTabList.forEach(triggerEl =&gt; {
@@ -592,7 +587,7 @@ triggerTabList.forEach(triggerEl =&gt; {
 "
       lang="javascript"
     />
-    <p>You can activate individual tabs in several ways:</p>
+    <p>你可以通过多种方式激活单个标签页：</p>
     <CodeWrapper
       code='const triggerEl = document.querySelector(&#39;#myTab button[data-bs-target="#profile"]&#39;)
 bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
@@ -602,8 +597,8 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
 '
       lang="javascript"
     />
-    <h3 id="fade-effect">Fade effect<a class="anchor-link" href="#fade-effect" aria-label="Link to Fade effect"></a></h3>
-    <p>To make tabs fade in, add <code>.fade</code> to each <code>.tab-pane</code>. The first tab pane must also have <code>.show</code> to make the initial content visible.</p>
+    <h3 id="fade-effect">淡入效果<a class="anchor-link" href="#fade-effect" aria-label="淡入效果"></a></h3>
+    <p>若要为标签页添加淡入效果，请为每个 <code>.tab-pane</code> 添加 <code>.fade</code>。第一个标签页面板还必须包含 <code>.show</code>，以使初始内容可见。</p>
     <CodeWrapper
       code='&lt;div class="tab-content"&gt;
   &lt;div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0"&gt;...&lt;/div&gt;
@@ -613,10 +608,10 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
-    <p>Activates your content as a tab element.</p>
-    <p>You can create a tab instance with the constructor, for example:</p>
+    <p>将你的内容激活为标签页元素。</p>
+    <p>你可以使用构造函数创建标签页实例，例如：</p>
     <CodeWrapper
       code="const bsTab = new bootstrap.Tab(&#39;#myTab&#39;)
 "
@@ -626,79 +621,79 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s tab.</td>
+            <td>销毁元素的标签页实例。</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td>Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: <code>bootstrap.Tab.getInstance(element)</code>.</td>
+            <td>静态方法，允许你获取与 DOM 元素关联的标签页实例，可以这样使用：<code>bootstrap.Tab.getInstance(element)</code>。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td>
-              Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
-              <code>bootstrap.Tab.getOrCreateInstance(element)</code>.
-            </td>
-          </tr>
-          <tr>
-            <td><code>show</code></td>
-            <td>
-              Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden.
-              <strong>Returns to the caller before the tab pane has actually been shown</strong> (i.e. before the <code>shown.bs.tab</code> event occurs).
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>When showing a new tab, the events fire in the following order:</p>
-    <ol>
-      <li><code>hide.bs.tab</code> (on the current active tab)</li>
-      <li><code>show.bs.tab</code> (on the to-be-shown tab)</li>
-      <li><code>hidden.bs.tab</code> (on the previous active tab, the same one as for the <code>hide.bs.tab</code> event)</li>
-      <li><code>shown.bs.tab</code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab</code> event)</li>
-    </ol>
-    <p>If no tab was already active, then the <code>hide.bs.tab</code> and <code>hidden.bs.tab</code> events will not be fired.</p>
-    <div class="table-responsive">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Event type</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>hide.bs.tab</code></td>
-            <td>
-              This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use
-              <code>event.target</code> and <code>event.relatedTarget</code> to target the current active tab and the new soon-to-be-active tab, respectively.
-            </td>
-          </tr>
-          <tr>
-            <td><code>hidden.bs.tab</code></td>
-            <td>
-              This event fires after a new tab is shown (and thus the previous active tab is hidden). Use
-              <code>event.target</code> and <code>event.relatedTarget</code> to target the previous active tab and the new active tab, respectively.
-            </td>
-          </tr>
-          <tr>
-            <td><code>show.bs.tab</code></td>
-            <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
-          </tr>
-          <tr>
-            <td><code>shown.bs.tab</code></td>
-            <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+              <td>
+                静态方法，返回与 DOM 元素关联的标签页实例，若未初始化则创建一个新实例。可以这样使用：
+                <code>bootstrap.Tab.getOrCreateInstance(element)</code>。
+              </td>
+            </tr>
+            <tr>
+              <td><code>show</code></td>
+              <td>
+                选中指定的标签页并显示其关联面板。之前选中的其他标签页将变为未选中状态，其关联面板将被隐藏。
+                <strong>在标签页面板实际显示之前</strong>（即 <code>shown.bs.tab</code> 事件发生之前）<strong>就会返回给调用方</strong>。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件"></a></h3>
+      <p>显示新标签页时，事件按以下顺序触发：</p>
+      <ol>
+        <li><code>hide.bs.tab</code>（在当前活动标签页上）</li>
+        <li><code>show.bs.tab</code>（在即将显示的标签页上）</li>
+        <li><code>hidden.bs.tab</code>（在之前活动的标签页上，与 <code>hide.bs.tab</code> 事件的对象相同）</li>
+        <li><code>shown.bs.tab</code>（在刚刚显示的新活动标签页上，与 <code>show.bs.tab</code> 事件的对象相同）</li>
+      </ol>
+      <p>如果此前没有活动标签页，则不会触发 <code>hide.bs.tab</code> 和 <code>hidden.bs.tab</code> 事件。</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>事件类型</th>
+              <th>描述</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>hide.bs.tab</code></td>
+              <td>
+                在即将显示新标签页（因而要隐藏之前的活动标签页）时触发。分别使用
+                <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位当前活动标签页和即将变为活动状态的标签页。
+              </td>
+            </tr>
+            <tr>
+              <td><code>hidden.bs.tab</code></td>
+              <td>
+                在显示新标签页（因而隐藏之前的活动标签页）之后触发。分别使用
+                <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位之前的活动标签页和新的活动标签页。
+              </td>
+            </tr>
+            <tr>
+              <td><code>show.bs.tab</code></td>
+              <td>在标签页显示时、新标签页显示之前触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
+            </tr>
+            <tr>
+              <td><code>shown.bs.tab</code></td>
+              <td>在标签页显示之后触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     <CodeWrapper
       code='const tabEl = document.querySelector(&#39;button[data-bs-toggle="tab"]&#39;)
 tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
@@ -711,46 +706,46 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#base-nav">Base nav</a></li>
+      <li><a href="#base-nav">基础导航</a></li>
       <li>
-        <a href="#available-styles">Available styles</a>
+        <a href="#available-styles">可用样式</a>
         <ul>
-          <li><a href="#horizontal-alignment">Horizontal alignment</a></li>
-          <li><a href="#vertical">Vertical</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#pills">Pills</a></li>
-          <li><a href="#underline">Underline</a></li>
-          <li><a href="#fill-and-justify">Fill and justify</a></li>
+          <li><a href="#horizontal-alignment">水平对齐</a></li>
+          <li><a href="#vertical">垂直方向</a></li>
+          <li><a href="#tabs">标签页</a></li>
+          <li><a href="#pills">胶囊导航</a></li>
+          <li><a href="#underline">下划线</a></li>
+          <li><a href="#fill-and-justify">填充与均分</a></li>
         </ul>
       </li>
-      <li><a href="#working-with-flex-utilities">Working with flex utilities</a></li>
-      <li><a href="#regarding-accessibility">Regarding accessibility</a></li>
+      <li><a href="#working-with-flex-utilities">配合 Flex 工具类使用</a></li>
+      <li><a href="#regarding-accessibility">关于无障碍访问</a></li>
       <li>
-        <a href="#using-dropdowns">Using dropdowns</a>
+        <a href="#using-dropdowns">使用下拉菜单</a>
         <ul>
-          <li><a href="#tabs-with-dropdowns">Tabs with dropdowns</a></li>
-          <li><a href="#pills-with-dropdowns">Pills with dropdowns</a></li>
+          <li><a href="#tabs-with-dropdowns">带下拉菜单的标签页</a></li>
+          <li><a href="#pills-with-dropdowns">带下拉菜单的胶囊导航</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript behavior</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
-          <li><a href="#accessibility">Accessibility</a></li>
-          <li><a href="#using-data-attributes">Using data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#fade-effect">Fade effect</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#accessibility">无障碍访问</a></li>
+          <li><a href="#using-data-attributes">使用数据属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#fade-effect">淡入效果</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

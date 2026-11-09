@@ -1,37 +1,36 @@
 <template>
   <article class="bd-content">
-    <h1>Dropdowns</h1>
-    <p>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
+    <h1>下拉菜单</h1>
+    <p>使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。</p>
 
-    <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
+    <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>
-      Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is
-      <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">an intentional design decision</a>.
+      下拉菜单是可切换的上下文浮层，用于显示链接列表等内容。它们通过与 Bootstrap 一同提供的下拉菜单 JavaScript 插件实现交互。它们通过点击而非悬停来切换；这是
+      <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a>。
     </p>
     <p>
-      Dropdowns are built on a third party library, <a href="https://popper.js.org/docs/v2/">Popper</a>, which provides dynamic positioning and viewport detection. Be sure to include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before Bootstrap’s JavaScript or use
-      <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.
+      下拉菜单构建于第三方库 <a href="https://popper.js.org/docs/v2/">Popper</a> 之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入 <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用
+      包含 Popper 的 <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
     </p>
-    <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+    <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
-      The
       <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a>
-      standard defines an actual
-      <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> widget</a>, but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups,
-      and sub-menus.
+      标准定义了一种真正的
+      <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组
+      和子菜单。
     </p>
     <p>
-      Bootstrap’s dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of
-      the <code>role</code> and <code>aria-</code> attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.
+      另一方面，Bootstrap 的下拉菜单被设计为通用组件，适用于各种场景和标记结构。例如，可以创建包含额外输入框和表单控件的下拉菜单，如搜索框或登录表单。因此，Bootstrap 不期望（也不会自动添加）真正的 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单所需的任何
+      <code>role</code> 和 <code>aria-</code> 属性。作者需要自行添加这些更具体的属性。
     </p>
-    <p>However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual <code>.dropdown-item</code> elements using the cursor keys and close the menu with the <kbd>Esc</kbd> key.</p>
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
+    <p>不过，Bootstrap 确实为大多数标准键盘菜单交互提供了内置支持，例如使用方向键在单个 <code>.dropdown-item</code> 元素间移动，以及按 <kbd>Esc</kbd> 键关闭菜单。</p>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>
-      Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Ideally, you should use a <code>&lt;button&gt;</code> element as the dropdown trigger, but the plugin will work with <code>&lt;a&gt;</code> elements as well. The examples
-      shown here use semantic <code>&lt;ul&gt;</code> elements where appropriate, but custom markup is supported.
+      将下拉菜单的切换按钮（你的按钮或链接）和下拉菜单包裹在 <code>.dropdown</code> 或声明了 <code>position: relative;</code> 的其他元素中。理想情况下，应使用 <code>&lt;button&gt;</code> 元素作为下拉菜单触发器，不过该插件也能配合 <code>&lt;a&gt;</code> 元素使用。此处
+      展示的示例在适当位置使用了语义化的 <code>&lt;ul&gt;</code> 元素，但也支持自定义标记。
     </p>
-    <h3 id="single-button">Single button<a class="anchor-link" href="#single-button" aria-label="Link to Single button"></a></h3>
-    <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with <code>&lt;button&gt;</code> elements:</p>
+    <h3 id="single-button">单按钮<a class="anchor-link" href="#single-button" aria-label="单按钮链接"></a></h3>
+    <p>任何单个 <code>.btn</code> 只需稍作标记修改即可变为下拉菜单切换按钮。以下是如何将它们与 <code>&lt;button&gt;</code> 元素配合使用：</p>
     <Example
       code='<div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,7 +43,7 @@
   </ul>
 </div>'
     />
-    <p>While <code>&lt;button&gt;</code> is the recommended control for a dropdown toggle, there might be situations where you have to use an <code>&lt;a&gt;</code> element. If you do, we recommend adding a <code>role=&quot;button&quot;</code> attribute to appropriately convey control’s purpose to assistive technologies such as screen readers.</p>
+    <p>虽然推荐使用 <code>&lt;button&gt;</code> 作为下拉菜单的切换控件，但有时可能不得不使用 <code>&lt;a&gt;</code> 元素。如果这样做，我们建议添加 <code>role=&quot;button&quot;</code> 属性，以便向屏幕阅读器等辅助技术正确传达该控件的用途。</p>
     <Example
       code='<div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +57,7 @@
   </ul>
 </div>'
     />
-    <p>The best part is you can do this with any button variant, too:</p>
+    <p>最棒的是，你也可以对任何按钮变体这样做：</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group">
@@ -138,9 +137,9 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="split-button">Split button<a class="anchor-link" href="#split-button" aria-label="Link to Split button"></a></h3>
-    <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</p>
-    <p>We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s added for regular button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.</p>
+    <h3 id="split-button">分割按钮<a class="anchor-link" href="#split-button" aria-label="分割按钮链接"></a></h3>
+    <p>类似地，创建分割按钮下拉菜单的标记与单按钮下拉菜单几乎完全相同，只是额外添加了 <code>.dropdown-toggle-split</code>，以便在下拉箭头周围留出合适的间距。</p>
+    <p>我们使用这个额外的类将箭头两侧的水平 <code>padding</code> 减少 25%，并移除普通按钮下拉菜单中添加的 <code>margin-left</code>。这些额外的改动使箭头在分割按钮中保持居中，并在主按钮旁提供更合适大小的点击区域。</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group">
@@ -239,8 +238,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
+    <h2 id="sizing">尺寸<a class="anchor-link" href="#sizing" aria-label="尺寸链接"></a></h2>
+    <p>按钮下拉菜单适用于各种尺寸的按钮，包括默认和分割下拉按钮。</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group">
@@ -342,9 +341,9 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="dark-dropdowns">Dark dropdowns<a class="anchor-link" href="#dark-dropdowns" aria-label="Link to Dark dropdowns"></a></h2>
+    <h2 id="dark-dropdowns">深色下拉菜单<a class="anchor-link" href="#dark-dropdowns" aria-label="深色下拉菜单链接"></a></h2>
     <DeprecatedIn version="5.3.0" />
-    <p>Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are required to the dropdown items.</p>
+    <p>在现有的 <code>.dropdown-menu</code> 上添加 <code>.dropdown-menu-dark</code>，即可启用更深的深色下拉菜单，以匹配深色导航栏或自定义样式。下拉菜单项无需任何更改。</p>
     <CalloutDeprecatedDarkVariants component="dropdown-menu" /><Example
       code='<div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -359,7 +358,7 @@
   </ul>
 </div>'
     />
-    <p>And putting it to use in a navbar:</p>
+    <p>并在导航栏中使用它：</p>
     <Example
       code='<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -384,12 +383,12 @@
   </div>
 </nav>'
     />
-    <h2 id="directions">Directions<a class="anchor-link" href="#directions" aria-label="Link to Directions"></a></h2>
+    <h2 id="directions">方向<a class="anchor-link" href="#directions" aria-label="方向链接"></a></h2>
     <Callout>
-      <p><strong>Directions are flipped in RTL mode.</strong> As such, <code>.dropstart</code> will appear on the right side.</p>
+      <p><strong>在 RTL 模式下方向会翻转。</strong>因此，<code>.dropstart</code> 将显示在右侧。</p>
     </Callout>
-    <h3 id="centered">Centered<a class="anchor-link" href="#centered" aria-label="Link to Centered"></a></h3>
-    <p>Make the dropdown menu centered below the toggle with <code>.dropdown-center</code> on the parent element.</p>
+    <h3 id="centered">居中<a class="anchor-link" href="#centered" aria-label="居中链接"></a></h3>
+    <p>在父元素上使用 <code>.dropdown-center</code>，使下拉菜单居中显示在切换按钮下方。</p>
     <Example
       code='<div class="dropdown-center">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -402,8 +401,8 @@
   </ul>
 </div>'
     />
-    <h3 id="dropup">Dropup<a class="anchor-link" href="#dropup" aria-label="Link to Dropup"></a></h3>
-    <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.</p>
+    <h3 id="dropup">上拉菜单<a class="anchor-link" href="#dropup" aria-label="上拉菜单链接"></a></h3>
+    <p>在父元素上添加 <code>.dropup</code>，即可在元素上方触发下拉菜单。</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group dropup">
@@ -457,8 +456,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="dropup-centered">Dropup centered<a class="anchor-link" href="#dropup-centered" aria-label="Link to Dropup centered"></a></h3>
-    <p>Make the dropup menu centered above the toggle with <code>.dropup-center</code> on the parent element.</p>
+    <h3 id="dropup-centered">上拉居中对齐<a class="anchor-link" href="#dropup-centered" aria-label="上拉居中对齐链接"></a></h3>
+    <p>在父元素上使用 <code>.dropup-center</code>，使上拉菜单居中显示在切换按钮上方。</p>
     <Example
       code='<div class="dropup-center dropup">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -471,8 +470,8 @@
   </ul>
 </div>'
     />
-    <h3 id="dropend">Dropend<a class="anchor-link" href="#dropend" aria-label="Link to Dropend"></a></h3>
-    <p>Trigger dropdown menus at the right of the elements by adding <code>.dropend</code> to the parent element.</p>
+    <h3 id="dropend">右侧下拉菜单<a class="anchor-link" href="#dropend" aria-label="右侧下拉菜单链接"></a></h3>
+    <p>在父元素上添加 <code>.dropend</code>，即可在元素右侧触发下拉菜单。</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group dropend">
@@ -526,8 +525,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="dropstart">Dropstart<a class="anchor-link" href="#dropstart" aria-label="Link to Dropstart"></a></h3>
-    <p>Trigger dropdown menus at the left of the elements by adding <code>.dropstart</code> to the parent element.</p>
+    <h3 id="dropstart">左侧下拉菜单<a class="anchor-link" href="#dropstart" aria-label="左侧下拉菜单链接"></a></h3>
+    <p>在父元素上添加 <code>.dropstart</code>，即可在元素左侧触发下拉菜单。</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group dropstart">
@@ -581,8 +580,8 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h2 id="menu-items">Menu items<a class="anchor-link" href="#menu-items" aria-label="Link to Menu items"></a></h2>
-    <p>You can use <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements as dropdown items.</p>
+    <h2 id="menu-items">菜单项<a class="anchor-link" href="#menu-items" aria-label="菜单项链接"></a></h2>
+    <p>你可以使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 元素作为下拉菜单项。</p>
     <Example
       code='<div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -595,7 +594,7 @@
   </ul>
 </div>'
     />
-    <p>You can also create non-interactive dropdown items with <code>.dropdown-item-text</code>. Feel free to style further with custom CSS or text utilities.</p>
+    <p>你还可以使用 <code>.dropdown-item-text</code> 创建非交互式下拉菜单项。可以随意使用自定义 CSS 或文本工具类进一步设置样式。</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><span class="dropdown-item-text">Dropdown item text</span></li>
@@ -604,8 +603,8 @@
   <li><a class="dropdown-item" href="#">Something else here</a></li>
 </ul>'
     />
-    <h3 id="active">Active<a class="anchor-link" href="#active" aria-label="Link to Active"></a></h3>
-    <p>Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for the current page, or <code>true</code> for the current item in a set.</p>
+    <h3 id="active">激活状态<a class="anchor-link" href="#active" aria-label="激活状态链接"></a></h3>
+    <p>为下拉菜单中的项添加 <code>.active</code>，<strong>将其样式设置为激活状态</strong>。要向辅助技术传达激活状态，请使用 <code>aria-current</code> 属性——对当前页面使用 <code>page</code> 值，或对一组中的当前项使用 <code>true</code>。</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -613,8 +612,8 @@
   <li><a class="dropdown-item" href="#">Another link</a></li>
 </ul>'
     />
-    <h3 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h3>
-    <p>Add <code>.disabled</code> to items in the dropdown to <strong>style them as disabled</strong>.</p>
+    <h3 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h3>
+    <p>为下拉菜单中的项添加 <code>.disabled</code>，<strong>将其样式设置为禁用状态</strong>。</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -622,14 +621,14 @@
   <li><a class="dropdown-item" href="#">Another link</a></li>
 </ul>'
     />
-    <h2 id="menu-alignment">Menu alignment<a class="anchor-link" href="#menu-alignment" aria-label="Link to Menu alignment"></a></h2>
+    <h2 id="menu-alignment">菜单对齐<a class="anchor-link" href="#menu-alignment" aria-label="菜单对齐链接"></a></h2>
     <p>
-      By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. You can change this with the directional
-      <code>.drop*</code> classes, but you can also control them with additional modifier classes.
+      默认情况下，下拉菜单会自动定位在父元素顶部向下 100%、并沿其左侧对齐的位置。你可以通过方向类
+      <code>.drop*</code> 来改变这一点，但也可以使用额外的修饰类来控制它们。
     </p>
-    <p>Add <code>.dropdown-menu-end</code> to a <code>.dropdown-menu</code> to right align the dropdown menu. Directions are mirrored when using Bootstrap in RTL, meaning <code>.dropdown-menu-end</code> will appear on the left side.</p>
+    <p>在 <code>.dropdown-menu</code> 上添加 <code>.dropdown-menu-end</code> 可使下拉菜单右对齐。在 RTL 模式下使用 Bootstrap 时方向会镜像，即 <code>.dropdown-menu-end</code> 将显示在左侧。</p>
     <Callout>
-      <p><strong>Heads up!</strong> Dropdowns are positioned thanks to Popper except when they are contained in a navbar.</p> </Callout
+      <p><strong>注意！</strong>除了位于导航栏中的下拉菜单外，下拉菜单均借助 Popper 进行定位。</p> </Callout
     ><Example
       code='<div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -642,12 +641,12 @@
   </ul>
 </div>'
     />
-    <h3 id="responsive-alignment">Responsive alignment<a class="anchor-link" href="#responsive-alignment" aria-label="Link to Responsive alignment"></a></h3>
+    <h3 id="responsive-alignment">响应式对齐<a class="anchor-link" href="#responsive-alignment" aria-label="响应式对齐链接"></a></h3>
     <p>
-      If you want to use responsive alignment, disable dynamic positioning by adding the
-      <code>data-bs-display=&quot;static&quot;</code> attribute and use the responsive variation classes.
+      如果你希望使用响应式对齐，请添加
+      <code>data-bs-display=&quot;static&quot;</code> 属性来禁用动态定位，并使用响应式变体类。
     </p>
-    <p>To align <strong>right</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end</code>.</p>
+    <p>要使下拉菜单在给定断点或更大断点处<strong>右</strong>对齐，请添加 <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end</code>。</p>
     <Example
       code='<div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -660,7 +659,7 @@
   </ul>
 </div>'
     />
-    <p>To align <strong>left</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu-end</code> and <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start</code>.</p>
+    <p>要使下拉菜单在给定断点或更大断点处<strong>左</strong>对齐，请添加 <code>.dropdown-menu-end</code> 和 <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start</code>。</p>
     <Example
       code='<div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -673,9 +672,9 @@
   </ul>
 </div>'
     />
-    <p>Note that you don’t need to add a <code>data-bs-display=&quot;static&quot;</code> attribute to dropdown buttons in navbars, since Popper isn’t used in navbars.</p>
-    <h3 id="alignment-options">Alignment options<a class="anchor-link" href="#alignment-options" aria-label="Link to Alignment options"></a></h3>
-    <p>Taking most of the options shown above, here’s a small kitchen sink demo of various dropdown alignment options in one place.</p>
+    <p>请注意，你无需为导航栏中的下拉按钮添加 <code>data-bs-display=&quot;static&quot;</code> 属性，因为导航栏中不使用 Popper。</p>
+    <h3 id="alignment-options">对齐选项<a class="anchor-link" href="#alignment-options" aria-label="对齐选项链接"></a></h3>
+    <p>采用上面展示的大部分选项，这里用一个小的综合示例集中演示各种下拉菜单对齐选项。</p>
     <Example
       code='<div class="btn-group">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -754,9 +753,9 @@
   </ul>
 </div>'
     />
-    <h2 id="menu-content">Menu content<a class="anchor-link" href="#menu-content" aria-label="Link to Menu content"></a></h2>
-    <h3 id="headers">Headers<a class="anchor-link" href="#headers" aria-label="Link to Headers"></a></h3>
-    <p>Add a header to label sections of actions in any dropdown menu.</p>
+    <h2 id="menu-content">菜单内容<a class="anchor-link" href="#menu-content" aria-label="菜单内容链接"></a></h2>
+    <h3 id="headers">标题<a class="anchor-link" href="#headers" aria-label="标题链接"></a></h3>
+    <p>在任何下拉菜单中添加标题，用于标记操作分区。</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><h6 class="dropdown-header">Dropdown header</h6></li>
@@ -764,8 +763,8 @@
   <li><a class="dropdown-item" href="#">Another action</a></li>
 </ul>'
     />
-    <h3 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h3>
-    <p>Separate groups of related menu items with a divider.</p>
+    <h3 id="dividers">分隔线<a class="anchor-link" href="#dividers" aria-label="分隔线链接"></a></h3>
+    <p>使用分隔线将相关的菜单项分组隔开。</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -775,10 +774,10 @@
   <li><a class="dropdown-item" href="#">Separated link</a></li>
 </ul>'
     />
-    <h3 id="text">Text<a class="anchor-link" href="#text" aria-label="Link to Text"></a></h3>
+    <h3 id="text">文本<a class="anchor-link" href="#text" aria-label="文本链接"></a></h3>
     <p>
-      Place any freeform text within a dropdown menu with text and use
-      <a href="/utilities/spacing">spacing utilities</a>. Note that you’ll likely need additional sizing styles to constrain the menu width.
+      在下拉菜单中放置任意自由形式的文本，并使用
+      <a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。
     </p>
     <Example
       code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
@@ -790,10 +789,10 @@
   </p>
 </div>'
     />
-    <h3 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h3>
+    <h3 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h3>
     <p>
-      Put a form within a dropdown menu, or make it into a dropdown menu, and use
-      <a href="/utilities/spacing">margin or padding utilities</a> to give it the negative space you require.
+      在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用
+      <a href="/utilities/spacing">外边距或内边距工具类</a> 给它留出所需的空白区域。
     </p>
     <Example
       code='<div class="dropdown-menu">
@@ -846,8 +845,8 @@
   </form>
 </div>'
     />
-    <h2 id="dropdown-options">Dropdown options<a class="anchor-link" href="#dropdown-options" aria-label="Link to Dropdown options"></a></h2>
-    <p>Use <code>data-bs-offset</code> or <code>data-bs-reference</code> to change the location of the dropdown.</p>
+    <h2 id="dropdown-options">下拉菜单选项<a class="anchor-link" href="#dropdown-options" aria-label="下拉菜单选项链接"></a></h2>
+    <p>使用 <code>data-bs-offset</code> 或 <code>data-bs-reference</code> 来改变下拉菜单的位置。</p>
     <Example
       code='<div class="d-flex">
   <div class="dropdown me-1">
@@ -875,10 +874,10 @@
   </div>
 </div>'
     />
-    <h3 id="auto-close-behavior">Auto close behavior<a class="anchor-link" href="#auto-close-behavior" aria-label="Link to Auto close behavior"></a></h3>
+    <h3 id="auto-close-behavior">自动关闭行为<a class="anchor-link" href="#auto-close-behavior" aria-label="自动关闭行为链接"></a></h3>
     <p>
-      By default, the dropdown menu is closed when clicking inside or outside the dropdown menu. You can use the
-      <code>autoClose</code> option to change this behavior of the dropdown.
+      默认情况下，在下拉菜单内部或外部点击时，下拉菜单都会关闭。你可以使用
+      <code>autoClose</code> 选项来更改下拉菜单的此行为。
     </p>
     <Example
       code='<div class="btn-group">
@@ -925,44 +924,44 @@
   </ul>
 </div>'
     />
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, dropdowns now use local CSS variables on
-      <code>.dropdown-menu</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，下拉菜单现在在
+      <code>.dropdown-menu</code> 上使用局部 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此依然支持 Sass 自定义。
     </p>
     <ScssDocs name="dropdown-css-vars" file="scss/_dropdown.scss" /><Callout>
-      <p>Dropdown items include at least one variable that is not set on <code>.dropdown</code>. This allows you to provide a new value while Bootstrap defaults to a fallback value.</p>
+      <p>下拉菜单项至少包含一个未在 <code>.dropdown</code> 上设置的变量。这允许你提供新值，而 Bootstrap 默认使用回退值。</p>
       <ul>
         <li><code>--bs-dropdown-item-border-radius</code></li>
       </ul>
     </Callout>
-    <p>Customization through CSS variables can be seen on the <code>.dropdown-menu-dark</code> class where we override specific values without adding duplicate CSS selectors.</p>
+    <p>通过 CSS 变量进行自定义的方式可以在 <code>.dropdown-menu-dark</code> 类中看到，其中我们在不添加重复 CSS 选择器的情况下覆盖了特定值。</p>
     <ScssDocs name="dropdown-dark-css-vars" file="scss/_dropdown.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>Variables for all dropdowns:</p>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
+    <p>所有下拉菜单的变量：</p>
     <ScssDocs name="dropdown-variables" file="scss/_variables.scss" />
-    <p>Variables for the <a href="#dark-dropdowns">dark dropdown</a>:</p>
+    <p><a href="#dark-dropdowns">深色下拉菜单</a>的变量：</p>
     <ScssDocs name="dropdown-dark-variables" file="scss/_variables.scss" />
-    <p>Variables for the CSS-based carets that indicate a dropdown’s interactivity:</p>
+    <p>用于 CSS 箭头（指示下拉菜单可交互状态）的变量：</p>
     <ScssDocs name="caret-variables" file="scss/_variables.scss" />
-    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>Mixins are used to generate the CSS-based carets and can be found in <code>scss/mixins/_caret.scss</code>.</p>
+    <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixins 链接"></a></h3>
+    <p>Mixins 用于生成基于 CSS 的箭头，可在 <code>scss/mixins/_caret.scss</code> 中找到。</p>
     <ScssDocs name="caret-mixins" file="scss/mixins/_caret.scss" />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <p>
-      Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the
-      <code>.show</code> class on the parent <code>.dropdown-menu</code>. The <code>data-bs-toggle=&quot;dropdown&quot;</code> attribute is relied on for closing dropdown menus at an application level, so it’s a good idea to always use it.
+      通过数据属性或 JavaScript，下拉菜单插件通过切换父级 <code>.dropdown-menu</code> 上的
+      <code>.show</code> 类来切换隐藏内容（下拉菜单）。在应用层面上，关闭下拉菜单依赖于 <code>data-bs-toggle=&quot;dropdown&quot;</code> 属性，因此最好始终使用它。
     </p>
     <Callout>
       <p>
-        On touch-enabled devices, opening a dropdown adds empty <code>mouseover</code> handlers to the immediate children of the <code>&lt;body&gt;</code> element. This admittedly ugly hack is necessary to work around a <a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">quirk in iOs’ event delegation</a>, which would
-        otherwise prevent a tap anywhere outside of the dropdown from triggering the code that closes the dropdown. Once the dropdown is closed, these additional empty <code>mouseover</code> handlers are removed.
+        在支持触摸的设备上，打开下拉菜单会向 <code>&lt;body&gt;</code> 元素的直接子元素添加空的 <code>mouseover</code> 处理程序。这个公认不太优雅的技巧是为了绕过 <a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">iOS 事件委托的一个怪癖</a>，否则在
+        下拉菜单外任意位置轻触将无法触发关闭下拉菜单的代码。一旦下拉菜单关闭，这些额外的空 <code>mouseover</code> 处理程序就会被移除。
       </p>
     </Callout>
-    <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
-    <p>Add <code>data-bs-toggle=&quot;dropdown&quot;</code> to a link or button to toggle a dropdown.</p>
+    <h3 id="via-data-attributes">通过数据属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过数据属性链接"></a></h3>
+    <p>在链接或按钮上添加 <code>data-bs-toggle=&quot;dropdown&quot;</code> 以切换下拉菜单。</p>
     <CodeWrapper
       code='&lt;div class="dropdown"&gt;
   &lt;button type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;
@@ -974,27 +973,27 @@
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
     <Callout type="warning">
-      <p>Dropdowns must have <code>data-bs-toggle=&quot;dropdown&quot;</code> on their trigger element, regardless of whether you call your dropdown via JavaScript or use the data-api.</p>
+      <p>无论你是通过 JavaScript 调用下拉菜单还是使用数据 API，下拉菜单的触发元素上都必须有 <code>data-bs-toggle=&quot;dropdown&quot;</code>。</p>
     </Callout>
-    <p>Call the dropdowns via JavaScript:</p>
+    <p>通过 JavaScript 调用下拉菜单：</p>
     <CodeWrapper
       code="const dropdownElementList = document.querySelectorAll(&#39;.dropdown-toggle&#39;)
 const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new bootstrap.Dropdown(dropdownToggleEl))
 "
       lang="javascript"
     />
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
@@ -1003,14 +1002,14 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>boolean, string</td>
             <td><code>true</code></td>
             <td>
-              Configure the auto close behavior of the dropdown:
+              配置下拉菜单的自动关闭行为：
               <ul class="my-2">
-                <li><code>true</code> - the dropdown will be closed by clicking outside or inside the dropdown menu.</li>
-                <li><code>false</code> - the dropdown will be closed by clicking the toggle button and manually calling <code>hide</code> or <code>toggle</code> method. (Also will not be closed by pressing <kbd>Esc</kbd> key)</li>
-                <li><code>&#39;inside&#39;</code> - the dropdown will be closed (only) by clicking inside the dropdown menu.</li>
-                <li><code>&#39;outside&#39;</code> - the dropdown will be closed (only) by clicking outside the dropdown menu.</li>
+                <li><code>true</code> - 在下拉菜单外部或内部点击时，下拉菜单将关闭。</li>
+                <li><code>false</code> - 通过点击切换按钮并手动调用 <code>hide</code> 或 <code>toggle</code> 方法时，下拉菜单将关闭。（按下 <kbd>Esc</kbd> 键也不会关闭）</li>
+                <li><code>&#39;inside&#39;</code> - （仅）在下拉菜单内部点击时，下拉菜单将关闭。</li>
+                <li><code>&#39;outside&#39;</code> - （仅）在下拉菜单外部点击时，下拉菜单将关闭。</li>
               </ul>
-              Note: the dropdown can always be closed with the <kbd>Esc</kbd> key.
+              注意：下拉菜单始终可以用 <kbd>Esc</kbd> 键关闭。
             </td>
           </tr>
           <tr>
@@ -1018,24 +1017,24 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
             <td>
-              Overflow constraint boundary of the dropdown menu (applies only to Popper’s preventOverflow modifier). By default it’s <code>clippingParents</code> and can accept an HTMLElement reference (via JavaScript only). For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow docs</a>.
+              下拉菜单的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>clippingParents</code>，可接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的
+              <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。
             </td>
           </tr>
           <tr>
             <td><code>display</code></td>
             <td>string</td>
             <td><code>&#39;dynamic&#39;</code></td>
-            <td>By default, we use Popper for dynamic positioning. Disable this with <code>static</code>.</td>
+            <td>默认情况下，我们使用 Popper 进行动态定位。使用 <code>static</code> 可禁用此功能。</td>
           </tr>
           <tr>
             <td><code>offset</code></td>
             <td>array, string, function</td>
             <td><code>[0, 2]</code></td>
             <td>
-              Offset of the dropdown relative to its target. You can pass a string in data attributes with comma separated values like:
-              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two numbers:
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>, <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
+              下拉菜单相对于其目标的偏移量。你可以在数据属性中传递以逗号分隔值的字符串，例如：
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
+              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的 <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset 文档</a>。
             </td>
           </tr>
           <tr>
@@ -1043,9 +1042,9 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>null, object, function</td>
             <td><code>null</code></td>
             <td>
-              To change Bootstrap’s default Popper config, see
-              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
-              configuration object for Popper.
+              要更改 Bootstrap 的默认 Popper 配置，请参阅
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个
+              Popper 配置对象。
             </td>
           </tr>
           <tr>
@@ -1053,14 +1052,14 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>string, element, object</td>
             <td><code>&#39;toggle&#39;</code></td>
             <td>
-              Reference element of the dropdown menu. Accepts the values of <code>&#39;toggle&#39;</code>, <code>&#39;parent&#39;</code>, an HTMLElement reference or an object providing <code>getBoundingClientRect</code>. For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/constructors/#createpopper">constructor docs</a> and <a href="https://popper.js.org/docs/v2/virtual-elements/">virtual element docs</a>.
+              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的
+              <a href="https://popper.js.org/docs/v2/constructors/#createpopper">构造函数文档</a>和<a href="https://popper.js.org/docs/v2/virtual-elements/">虚拟元素文档</a>。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h4 id="using-function-with-popperconfig">Using function with <code>popperConfig</code></h4>
+    <h4 id="using-function-with-popperconfig">配合 <code>popperConfig</code> 使用函数</h4>
     <CodeWrapper
       code="const dropdown = new bootstrap.Dropdown(element, {
   popperConfig(defaultBsPopperConfig) {
@@ -1072,82 +1071,82 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
 "
       lang="javascript"
     />
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s dropdown. (Removes stored data on the DOM element)</td>
+            <td>销毁元素的实例。 （移除存储在 DOM 元素上的数据）</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
             <td>
-              Static method which allows you to get the dropdown instance associated to a DOM element, you can use it like this:
-              <code>bootstrap.Dropdown.getInstance(element)</code>.
+              静态方法，用于获取与 DOM 元素关联的下拉菜单实例，可以这样使用：
+              <code>bootstrap.Dropdown.getInstance(element)</code>。
             </td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
             <td>
-              Static method which returns a dropdown instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:
-              <code>bootstrap.Dropdown.getOrCreateInstance(element)</code>.
+              静态方法，返回与 DOM 元素关联的下拉菜单实例，如果尚未初始化则创建一个新实例。可以这样使用：
+              <code>bootstrap.Dropdown.getOrCreateInstance(element)</code>。
             </td>
           </tr>
           <tr>
             <td><code>hide</code></td>
-            <td>Hides the dropdown menu of a given navbar or tabbed navigation.</td>
+            <td>隐藏给定导航栏或标签式导航的下拉菜单。</td>
           </tr>
           <tr>
             <td><code>show</code></td>
-            <td>Shows the dropdown menu of a given navbar or tabbed navigation.</td>
+            <td>显示给定导航栏或标签式导航的下拉菜单。</td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
-            <td>Toggles the dropdown menu of a given navbar or tabbed navigation.</td>
+            <td>切换给定导航栏或标签式导航的下拉菜单。</td>
           </tr>
           <tr>
             <td><code>update</code></td>
-            <td>Updates the position of an element’s dropdown.</td>
+            <td>更新元素的下拉菜单位置。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
     <p>
-      All dropdown events are fired at the toggling element and then bubbled up. So you can also add event listeners on the <code>.dropdown-menu</code>’s parent element. <code>hide.bs.dropdown</code> and <code>hidden.bs.dropdown</code> events have a <code>clickEvent</code> property (only when the original Event type is <code>click</code>) that
-      contains an Event Object for the click event.
+      所有下拉菜单事件都在切换元素上触发，然后向上冒泡。因此，你也可以在 <code>.dropdown-menu</code> 的父元素上添加事件监听器。<code>hide.bs.dropdown</code> 和 <code>hidden.bs.dropdown</code> 事件有一个 <code>clickEvent</code> 属性（仅当原始 Event 类型为 <code>click</code> 时），
+      其中包含点击事件的 Event 对象。
     </p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event type</th>
-            <th>Description</th>
+            <th>事件类型</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.dropdown</code></td>
-            <td>Fires immediately when the <code>hide</code> instance method has been called.</td>
+            <td>当调用 <code>hide</code> 实例方法时立即触发。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.dropdown</code></td>
-            <td>Fired when the dropdown has finished being hidden from the user and CSS transitions have completed.</td>
+            <td>当下拉菜单已从用户视野中隐藏完毕且 CSS 过渡完成后触发。</td>
           </tr>
           <tr>
             <td><code>show.bs.dropdown</code></td>
-            <td>Fires immediately when the <code>show</code> instance method is called.</td>
+            <td>当调用 <code>show</code> 实例方法时立即触发。</td>
           </tr>
           <tr>
             <td><code>shown.bs.dropdown</code></td>
-            <td>Fired when the dropdown has been made visible to the user and CSS transitions have completed.</td>
+            <td>当下拉菜单已对用户可见且 CSS 过渡完成后触发。</td>
           </tr>
         </tbody>
       </table>
@@ -1163,75 +1162,75 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#overview">概述</a></li>
+      <li><a href="#accessibility">无障碍</a></li>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#single-button">Single button</a></li>
-          <li><a href="#split-button">Split button</a></li>
+          <li><a href="#single-button">单按钮</a></li>
+          <li><a href="#split-button">分割按钮</a></li>
         </ul>
       </li>
-      <li><a href="#sizing">Sizing</a></li>
-      <li><a href="#dark-dropdowns">Dark dropdowns</a></li>
+      <li><a href="#sizing">尺寸</a></li>
+      <li><a href="#dark-dropdowns">深色下拉菜单</a></li>
       <li>
-        <a href="#directions">Directions</a>
+        <a href="#directions">方向</a>
         <ul>
-          <li><a href="#centered">Centered</a></li>
-          <li><a href="#dropup">Dropup</a></li>
-          <li><a href="#dropup-centered">Dropup centered</a></li>
-          <li><a href="#dropend">Dropend</a></li>
-          <li><a href="#dropstart">Dropstart</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#menu-items">Menu items</a>
-        <ul>
-          <li><a href="#active">Active</a></li>
-          <li><a href="#disabled">Disabled</a></li>
+          <li><a href="#centered">居中</a></li>
+          <li><a href="#dropup">上拉菜单</a></li>
+          <li><a href="#dropup-centered">上拉居中对齐</a></li>
+          <li><a href="#dropend">右侧下拉菜单</a></li>
+          <li><a href="#dropstart">左侧下拉菜单</a></li>
         </ul>
       </li>
       <li>
-        <a href="#menu-alignment">Menu alignment</a>
+        <a href="#menu-items">菜单项</a>
         <ul>
-          <li><a href="#responsive-alignment">Responsive alignment</a></li>
-          <li><a href="#alignment-options">Alignment options</a></li>
+          <li><a href="#active">激活状态</a></li>
+          <li><a href="#disabled">禁用状态</a></li>
         </ul>
       </li>
       <li>
-        <a href="#menu-content">Menu content</a>
+        <a href="#menu-alignment">菜单对齐</a>
         <ul>
-          <li><a href="#headers">Headers</a></li>
-          <li><a href="#dividers">Dividers</a></li>
-          <li><a href="#text">Text</a></li>
-          <li><a href="#forms">Forms</a></li>
+          <li><a href="#responsive-alignment">响应式对齐</a></li>
+          <li><a href="#alignment-options">对齐选项</a></li>
         </ul>
       </li>
       <li>
-        <a href="#dropdown-options">Dropdown options</a>
+        <a href="#menu-content">菜单内容</a>
         <ul>
-          <li><a href="#auto-close-behavior">Auto close behavior</a></li>
+          <li><a href="#headers">标题</a></li>
+          <li><a href="#dividers">分隔线</a></li>
+          <li><a href="#text">文本</a></li>
+          <li><a href="#forms">表单</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#dropdown-options">下拉菜单选项</a>
+        <ul>
+          <li><a href="#auto-close-behavior">自动关闭行为</a></li>
         </ul>
       </li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixins</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#via-data-attributes">Via data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#via-data-attributes">通过数据属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>

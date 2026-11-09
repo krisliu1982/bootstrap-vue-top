@@ -1,23 +1,22 @@
 <template>
   <article class="bd-content">
-    <h1>Offcanvas</h1>
-    <p>Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin.</p>
+    <h1>画布外菜单</h1>
+    <p>只需几个类和我们提供的 JavaScript 插件，即可在项目中构建用于导航、购物车等的隐藏侧边栏。</p>
 
-    <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, top, or bottom edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and <code>data</code> attributes are used to invoke our JavaScript.</p>
+    <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
+    <p>画布外菜单是一个侧边栏组件，可以通过 JavaScript 切换，从视口的左侧、右侧、顶部或底部边缘出现。按钮或锚点用作触发器并附加到你要切换的特定元素上，同时使用 <code>data</code> 属性来调用我们的 JavaScript。</p>
     <ul>
-      <li>Offcanvas shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they are separate plugins.</li>
-      <li>Similarly, some <a href="#sass-variables">source Sass</a> variables for offcanvas’s styles and dimensions are inherited from the modal’s variables.</li>
-      <li>When shown, offcanvas includes a default backdrop that can be clicked to hide the offcanvas.</li>
-      <li>Similar to modals, only one offcanvas can be shown at a time.</li>
+      <li>画布外菜单与模态框共享部分相同的 JavaScript 代码。从概念上讲，它们非常相似，但它们是独立的插件。</li>
+      <li>同样，画布外菜单样式和尺寸的一些<a href="#sass-variables">源 Sass</a> 变量继承自模态框的变量。</li>
+      <li>显示时，画布外菜单包含一个默认的背景遮罩，点击它可以隐藏画布外菜单。</li>
+      <li>与模态框类似，同一时间只能显示一个画布外菜单。</li>
     </ul>
-    <p><strong>Heads up!</strong> Given how CSS handles animations, you cannot use <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use the class as an independent wrapping element.</p>
+    <p><strong>请注意！</strong>鉴于 CSS 处理动画的方式，你不能在 <code>.offcanvas</code> 元素上使用 <code>margin</code> 或 <code>translate</code>。请将该类用作独立的包裹元素。</p>
     <Callout name="info-prefersreducedmotion" />
-    <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <h3 id="offcanvas-components">Offcanvas components<a class="anchor-link" href="#offcanvas-components" aria-label="Link to Offcanvas components"></a></h3>
+    <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
+    <h3 id="offcanvas-components">画布外菜单组件<a class="anchor-link" href="#offcanvas-components" aria-label="画布外菜单组件链接"></a></h3>
     <p>
-      Below is an offcanvas example that is shown by default (via <code>.show</code> on <code>.offcanvas</code>). Offcanvas includes support for a header with a close button and an optional body class for some initial <code>padding</code>. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit
-      dismiss action.
+      下面是一个默认显示（通过在 <code>.offcanvas</code> 上添加 <code>.show</code>）的画布外菜单示例。画布外菜单支持包含关闭按钮的头部，以及一个可选的 body 类来设置一些初始 <code>padding</code>。我们建议尽可能为画布外菜单包含带有关闭操作的头部，或提供一个明确的关闭操作。
     </p>
     <Example
       class="bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden"
@@ -31,19 +30,19 @@
   </div>
 </div>'
     />
-    <h3 id="live-demo">Live demo<a class="anchor-link" href="#live-demo" aria-label="Link to Live demo"></a></h3>
+    <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
     <p>
-      Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the
-      <code>.show</code> class on an element with the <code>.offcanvas</code> class.
+      使用下面的按钮通过 JavaScript 显示和隐藏画布外菜单元素，该 JavaScript 会切换带有 <code>.offcanvas</code> 类的元素上的
+      <code>.show</code> 类。
     </p>
     <ul>
-      <li><code>.offcanvas</code> hides content (default)</li>
-      <li><code>.offcanvas.show</code> shows content</li>
+      <li><code>.offcanvas</code> 隐藏内容（默认）</li>
+      <li><code>.offcanvas.show</code> 显示内容</li>
     </ul>
     <p>
-      You can use a link with the <code>href</code> attribute, or a button with the <code>data-bs-target</code>
-      attribute. In both cases, the
-      <code>data-bs-toggle=&quot;offcanvas&quot;</code> is required.
+      你可以使用带有 <code>href</code> 属性的链接，或带有 <code>data-bs-target</code>
+      属性的按钮。在两种情况下，都必须使用
+      <code>data-bs-toggle=&quot;offcanvas&quot;</code>。
     </p>
     <Example
       code='<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
@@ -75,8 +74,8 @@
   </div>
 </div>'
     />
-    <h3 id="body-scrolling">Body scrolling<a class="anchor-link" href="#body-scrolling" aria-label="Link to Body scrolling"></a></h3>
-    <p>Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use the <code>data-bs-scroll</code> attribute to enable <code>&lt;body&gt;</code> scrolling.</p>
+    <h3 id="body-scrolling">页面主体滚动<a class="anchor-link" href="#body-scrolling" aria-label="页面主体滚动链接"></a></h3>
+    <p>当画布外菜单及其背景遮罩可见时，<code>&lt;body&gt;</code> 元素的滚动会被禁用。使用 <code>data-bs-scroll</code> 属性来启用 <code>&lt;body&gt;</code> 滚动。</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 
@@ -90,8 +89,8 @@
   </div>
 </div>'
     />
-    <h3 id="body-scrolling-and-backdrop">Body scrolling and backdrop<a class="anchor-link" href="#body-scrolling-and-backdrop" aria-label="Link to Body scrolling and backdrop"></a></h3>
-    <p>You can also enable <code>&lt;body&gt;</code> scrolling with a visible backdrop.</p>
+    <h3 id="body-scrolling-and-backdrop">页面主体滚动与背景遮罩<a class="anchor-link" href="#body-scrolling-and-backdrop" aria-label="页面主体滚动与背景遮罩链接"></a></h3>
+    <p>你也可以在背景遮罩可见的情况下启用 <code>&lt;body&gt;</code> 滚动。</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
 
@@ -105,8 +104,8 @@
   </div>
 </div>'
     />
-    <h3 id="static-backdrop">Static backdrop<a class="anchor-link" href="#static-backdrop" aria-label="Link to Static backdrop"></a></h3>
-    <p>When backdrop is set to static, the offcanvas will not close when clicking outside of it.</p>
+    <h3 id="static-backdrop">静态背景遮罩<a class="anchor-link" href="#static-backdrop" aria-label="静态背景遮罩链接"></a></h3>
+    <p>当背景遮罩设置为静态时，点击画布外菜单外部不会关闭它。</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
   Toggle static offcanvas
@@ -124,15 +123,15 @@
   </div>
 </div>'
     />
-    <h2 id="dark-offcanvas">Dark offcanvas<a class="anchor-link" href="#dark-offcanvas" aria-label="Link to Dark offcanvas"></a></h2>
+    <h2 id="dark-offcanvas">深色画布外菜单<a class="anchor-link" href="#dark-offcanvas" aria-label="深色画布外菜单链接"></a></h2>
     <DeprecatedIn version="5.3.0" class="me-2" />
     <AddedIn version="5.2.0" />
     <p>
-      Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. Here we add <code>.text-bg-dark</code> to the <code>.offcanvas</code> and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas. If you have dropdowns within, consider also adding
-      <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>.
+      使用工具类更改画布外菜单的外观，使其更好地匹配深色导航栏等不同场景。这里我们为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，并为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以在深色画布外菜单中获得正确的样式。如果其中包含下拉菜单，请考虑同时为
+      <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>。
     </p>
     <Callout type="warning">
-      <p><strong>Heads up!</strong> Dark variants for components were deprecated in v5.3.0 with the introduction of color modes. Instead of manually adding classes mentioned above, set <code>data-bs-theme=&quot;dark&quot;</code> on the root element, a parent wrapper, or the component itself.</p>
+      <p><strong>请注意！</strong>随着颜色模式的引入，组件的深色变体在 v5.3.0 中已弃用。与其手动添加上面提到的类，不如在根元素、父级包裹元素或组件自身上设置 <code>data-bs-theme=&quot;dark&quot;</code>。</p>
     </Callout>
     <Example
       class="bd-example-offcanvas p-0 bg-body-secondary overflow-hidden"
@@ -146,11 +145,10 @@
   </div>
 </div>'
     />
-    <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
+    <h2 id="responsive">响应式<a class="anchor-link" href="#responsive" aria-label="响应式链接"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      Responsive offcanvas classes hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <code>.offcanvas-lg</code> hides content in an offcanvas below the <code>lg</code> breakpoint, but shows the content above the <code>lg</code> breakpoint. Responsive
-      offcanvas classes are available for each breakpoint.
+      响应式画布外菜单类会在指定的断点及以下隐藏视口之外的内容。在该断点之上，其中的内容将照常显示。例如，<code>.offcanvas-lg</code> 在 <code>lg</code> 断点以下以画布外菜单形式隐藏内容，但在 <code>lg</code> 断点以上显示内容。每个断点都有对应的响应式画布外菜单类。
     </p>
     <ul>
       <li><code>.offcanvas</code></li>
@@ -160,7 +158,7 @@
       <li><code>.offcanvas-xl</code></li>
       <li><code>.offcanvas-xxl</code></li>
     </ul>
-    <p>To make a responsive offcanvas, replace the <code>.offcanvas</code> base class with a responsive variant and ensure your close button has an explicit <code>data-bs-target</code>.</p>
+    <p>要创建响应式画布外菜单，请将 <code>.offcanvas</code> 基础类替换为响应式变体，并确保你的关闭按钮具有显式的 <code>data-bs-target</code>。</p>
     <Example
       code='<button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
 
@@ -176,15 +174,15 @@
   </div>
 </div>'
     />
-    <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
-    <p>There’s no default placement for offcanvas components, so you must add one of the modifier classes below.</p>
+    <h2 id="placement">位置<a class="anchor-link" href="#placement" aria-label="位置链接"></a></h2>
+    <p>画布外菜单组件没有默认位置，因此你必须添加下面其中一个修饰类。</p>
     <ul>
-      <li><code>.offcanvas-start</code> places offcanvas on the left of the viewport (shown above)</li>
-      <li><code>.offcanvas-end</code> places offcanvas on the right of the viewport</li>
-      <li><code>.offcanvas-top</code> places offcanvas on the top of the viewport</li>
-      <li><code>.offcanvas-bottom</code> places offcanvas on the bottom of the viewport</li>
+      <li><code>.offcanvas-start</code> 将画布外菜单放置在视口左侧（如上所示）</li>
+      <li><code>.offcanvas-end</code> 将画布外菜单放置在视口右侧</li>
+      <li><code>.offcanvas-top</code> 将画布外菜单放置在视口顶部</li>
+      <li><code>.offcanvas-bottom</code> 将画布外菜单放置在视口底部</li>
     </ul>
-    <p>Try the top, right, and bottom examples out below.</p>
+    <p>请在下面尝试顶部、右侧和底部示例。</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
 
@@ -224,92 +222,91 @@
   </div>
 </div>'
     />
-    <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
+    <h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>
     <p>
-      Since the offcanvas panel is conceptually a modal dialog, be sure to add
-      <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
+      由于画布外面板在概念上是一个模态对话框，请务必为 <code>.offcanvas</code> 添加
+      <code>aria-labelledby=&quot;...&quot;</code>——引用画布外菜单的标题。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已经通过 JavaScript 添加了它。
     </p>
-    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
+    <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
+    <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      As part of Bootstrap’s evolving CSS variables approach, offcanvas now uses local CSS variables on
-      <code>.offcanvas</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+      作为 Bootstrap 不断演进的 CSS 变量方案的一部分，画布外菜单现在在
+      <code>.offcanvas</code> 上使用本地 CSS 变量，以增强实时自定义能力。CSS 变量的值通过 Sass 设置，因此仍然支持 Sass 自定义。
     </p>
     <ScssDocs name="offcanvas-css-vars" file="scss/_offcanvas.scss" />
-    <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
+    <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="offcanvas-variables" file="scss/_variables.scss" />
-    <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
-    <p>The offcanvas plugin utilizes a few classes and attributes to handle the heavy lifting:</p>
+    <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
+    <p>画布外菜单插件利用一些类和属性来完成主要工作：</p>
     <ul>
-      <li><code>.offcanvas</code> hides the content</li>
-      <li><code>.offcanvas.show</code> shows the content</li>
-      <li><code>.offcanvas-start</code> hides the offcanvas on the left</li>
-      <li><code>.offcanvas-end</code> hides the offcanvas on the right</li>
-      <li><code>.offcanvas-top</code> hides the offcanvas on the top</li>
-      <li><code>.offcanvas-bottom</code> hides the offcanvas on the bottom</li>
+      <li><code>.offcanvas</code> 隐藏内容</li>
+      <li><code>.offcanvas.show</code> 显示内容</li>
+      <li><code>.offcanvas-start</code> 在左侧隐藏画布外菜单</li>
+      <li><code>.offcanvas-end</code> 在右侧隐藏画布外菜单</li>
+      <li><code>.offcanvas-top</code> 在顶部隐藏画布外菜单</li>
+      <li><code>.offcanvas-bottom</code> 在底部隐藏画布外菜单</li>
     </ul>
-    <p>Add a dismiss button with the <code>data-bs-dismiss=&quot;offcanvas&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</p>
-    <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
-    <h4 id="toggle">Toggle</h4>
+    <p>使用 <code>data-bs-dismiss=&quot;offcanvas&quot;</code> 属性添加一个关闭按钮，它会触发 JavaScript 功能。请务必配合使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上的行为正确。</p>
+    <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
+    <h4 id="toggle">切换</h4>
     <p>
-      Add <code>data-bs-toggle=&quot;offcanvas&quot;</code> and a <code>data-bs-target</code> or <code>href</code> to the element to automatically assign control of one offcanvas element. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the offcanvas to. Be sure to add the class <code>offcanvas</code> to the offcanvas
-      element. If you’d like it to default open, add the additional class <code>show</code>.
+      为元素添加 <code>data-bs-toggle=&quot;offcanvas&quot;</code> 以及 <code>data-bs-target</code> 或 <code>href</code>，即可自动为其分配对某个画布外菜单元素的控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定应用画布外菜单的目标。请务必为画布外菜单元素添加类 <code>offcanvas</code>。如果你希望它默认打开，请添加额外的类 <code>show</code>。
     </p>
-    <h4 id="dismiss">Dismiss</h4>
+    <h4 id="dismiss">关闭</h4>
     <JsDismiss name="offcanvas" />
     <Callout type="warning">
       <p>
-        While both ways to dismiss an offcanvas are supported, keep in mind that dismissing from outside an offcanvas does not match the
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide dialog (modal) pattern</a>. Do this at your own risk.
+        虽然两种关闭画布外菜单的方式都受支持，但请注意，从画布外菜单外部关闭并不符合
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
       </p>
     </Callout>
-    <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
-    <p>Enable manually with:</p>
+    <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
+    <p>手动启用：</p>
     <CodeWrapper
       code="const offcanvasElementList = document.querySelectorAll(&#39;.offcanvas&#39;)
 const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootstrap.Offcanvas(offcanvasEl))
 "
       lang="javascript"
     />
-    <h3 id="options">Options<a class="anchor-link" href="#options" aria-label="Link to Options"></a></h3>
+    <h3 id="options">选项<a class="anchor-link" href="#options" aria-label="选项链接"></a></h3>
     <JsDataAttributes />
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>backdrop</code></td>
-            <td>boolean or the string <code>static</code></td>
+            <td>布尔值或字符串 <code>static</code></td>
             <td><code>true</code></td>
-            <td>Apply a backdrop on body while offcanvas is open. Alternatively, specify <code>static</code> for a backdrop which doesn’t close the offcanvas when clicked.</td>
+            <td>画布外菜单打开时在 body 上应用背景遮罩。或者，指定 <code>static</code> 作为背景遮罩，此时点击不会关闭画布外菜单。</td>
           </tr>
           <tr>
             <td><code>keyboard</code></td>
-            <td>boolean</td>
+            <td>布尔值</td>
             <td><code>true</code></td>
-            <td>Closes the offcanvas when escape key is pressed.</td>
+            <td>按下 Escape 键时关闭画布外菜单。</td>
           </tr>
           <tr>
             <td><code>scroll</code></td>
-            <td>boolean</td>
+            <td>布尔值</td>
             <td><code>false</code></td>
-            <td>Allow body scrolling while offcanvas is open.</td>
+            <td>画布外菜单打开时允许页面主体滚动。</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
+    <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
     <Callout name="danger-async-methods" type="danger" />
-    <p>Activates your content as an offcanvas element. Accepts an optional options <code>object</code>.</p>
-    <p>You can create an offcanvas instance with the constructor, for example:</p>
+    <p>将你的内容激活为画布外菜单元素。接受一个可选的选项 <code>object</code>。</p>
+    <p>你可以通过构造函数创建画布外菜单实例，例如：</p>
     <CodeWrapper
       code="const bsOffcanvas = new bootstrap.Offcanvas(&#39;#myOffcanvas&#39;)
 "
@@ -319,78 +316,78 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootst
       <table class="table">
         <thead>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th>方法</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>dispose</code></td>
-            <td>Destroys an element’s offcanvas.</td>
+            <td>销毁元素的画布外菜单。</td>
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td><em>Static</em> method which allows you to get the offcanvas instance associated with a DOM element.</td>
+            <td><em>静态</em>方法，允许你获取与某个 DOM 元素关联的画布外菜单实例。</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-            <td><em>Static</em> method which allows you to get the offcanvas instance associated with a DOM element, or create a new one in case it wasn’t initialized.</td>
+            <td><em>静态</em>方法，允许你获取与某个 DOM 元素关联的画布外菜单实例，如果尚未初始化，则创建一个新实例。</td>
           </tr>
           <tr>
             <td><code>hide</code></td>
             <td>
-              Hides an offcanvas element.
-              <strong>Returns to the caller before the offcanvas element has actually been hidden</strong> (i.e. before the <code>hidden.bs.offcanvas</code> event occurs).
+              隐藏画布外菜单元素。
+              <strong>在画布外菜单元素实际隐藏之前就返回给调用方</strong>（即在 <code>hidden.bs.offcanvas</code> 事件发生之前）。
             </td>
           </tr>
           <tr>
             <td><code>show</code></td>
             <td>
-              Shows an offcanvas element.
-              <strong>Returns to the caller before the offcanvas element has actually been shown</strong> (i.e. before the <code>shown.bs.offcanvas</code> event occurs).
+              显示画布外菜单元素。
+              <strong>在画布外菜单元素实际显示之前就返回给调用方</strong>（即在 <code>shown.bs.offcanvas</code> 事件发生之前）。
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
             <td>
-              Toggles an offcanvas element to shown or hidden.
-              <strong>Returns to the caller before the offcanvas element has actually been shown or hidden</strong>
-              (i.e. before the <code>shown.bs.offcanvas</code> or <code>hidden.bs.offcanvas</code> event occurs).
+              将画布外菜单元素切换为显示或隐藏。
+              <strong>在画布外菜单元素实际显示或隐藏之前就返回给调用方</strong>
+              （即在 <code>shown.bs.offcanvas</code> 或 <code>hidden.bs.offcanvas</code> 事件发生之前）。
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
-    <p>Bootstrap’s offcanvas class exposes a few events for hooking into offcanvas functionality.</p>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
+    <p>Bootstrap 的画布外菜单类暴露了几个事件，可用于接入画布外菜单的功能。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
-            <th>Event type</th>
-            <th>Description</th>
+            <th>事件类型</th>
+            <th>描述</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><code>hide.bs.offcanvas</code></td>
-            <td>This event is fired immediately when the <code>hide</code> method has been called.</td>
+            <td>当调用 <code>hide</code> 方法时立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.offcanvas</code></td>
-            <td>This event is fired when an offcanvas element has been hidden from the user (will wait for CSS transitions to complete).</td>
+            <td>当画布外菜单元素已从用户视图中隐藏时触发此事件（会等待 CSS 过渡完成）。</td>
           </tr>
           <tr>
             <td><code>hidePrevented.bs.offcanvas</code></td>
-            <td>This event is fired when the offcanvas is shown, its backdrop is <code>static</code> and a click outside of the offcanvas is performed. The event is also fired when the escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.</td>
+            <td>当画布外菜单已显示、其背景遮罩为 <code>static</code>，且用户点击了画布外菜单外部时触发此事件。当按下 Escape 键且 <code>keyboard</code> 选项设置为 <code>false</code> 时也会触发此事件。</td>
           </tr>
           <tr>
             <td><code>show.bs.offcanvas</code></td>
-            <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+            <td>当调用 <code>show</code> 实例方法时立即触发此事件。</td>
           </tr>
           <tr>
             <td><code>shown.bs.offcanvas</code></td>
-            <td>This event is fired when an offcanvas element has been made visible to the user (will wait for CSS transitions to complete).</td>
+            <td>当画布外菜单元素已对用户可见时触发此事件（会等待 CSS 过渡完成）。</td>
           </tr>
         </tbody>
       </table>
@@ -406,39 +403,39 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
     <DocsPager />
   </article>
 
-  <nav class="bd-toc" aria-label="On this page">
-    <h6>On this page</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
-      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">Examples</a>
+        <a href="#examples">示例</a>
         <ul>
-          <li><a href="#offcanvas-components">Offcanvas components</a></li>
-          <li><a href="#live-demo">Live demo</a></li>
-          <li><a href="#body-scrolling">Body scrolling</a></li>
-          <li><a href="#body-scrolling-and-backdrop">Body scrolling and backdrop</a></li>
-          <li><a href="#static-backdrop">Static backdrop</a></li>
+          <li><a href="#offcanvas-components">画布外菜单组件</a></li>
+          <li><a href="#live-demo">实时演示</a></li>
+          <li><a href="#body-scrolling">页面主体滚动</a></li>
+          <li><a href="#body-scrolling-and-backdrop">页面主体滚动与背景遮罩</a></li>
+          <li><a href="#static-backdrop">静态背景遮罩</a></li>
         </ul>
       </li>
-      <li><a href="#dark-offcanvas">Dark offcanvas</a></li>
-      <li><a href="#responsive">Responsive</a></li>
-      <li><a href="#placement">Placement</a></li>
-      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#dark-offcanvas">深色画布外菜单</a></li>
+      <li><a href="#responsive">响应式</a></li>
+      <li><a href="#placement">位置</a></li>
+      <li><a href="#accessibility">无障碍访问</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>
-          <li><a href="#variables">Variables</a></li>
-          <li><a href="#sass-variables">Sass variables</a></li>
+          <li><a href="#variables">变量</a></li>
+          <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">Usage</a>
+        <a href="#usage">用法</a>
         <ul>
-          <li><a href="#via-data-attributes">Via data attributes</a></li>
-          <li><a href="#via-javascript">Via JavaScript</a></li>
-          <li><a href="#options">Options</a></li>
-          <li><a href="#methods">Methods</a></li>
-          <li><a href="#events">Events</a></li>
+          <li><a href="#via-data-attributes">通过 data 属性</a></li>
+          <li><a href="#via-javascript">通过 JavaScript</a></li>
+          <li><a href="#options">选项</a></li>
+          <li><a href="#methods">方法</a></li>
+          <li><a href="#events">事件</a></li>
         </ul>
       </li>
     </ul>
