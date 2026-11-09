@@ -199,9 +199,9 @@ const menuRef = ref(null);
 // 判断是否为小屏（使用和 offcanvas-lg 相同的断点）
 //let smallScreen = window.innerWidth < 992;
 
-function handleViewportChange() {
+/*function handleViewportChange() {
   smallScreen = window.innerWidth < 992;
-}
+}*/
 
 /*onMounted(() => {
   menuRef.value.addEventListener('click', function (e) {
