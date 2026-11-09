@@ -5,10 +5,6 @@
 
     <h2 id="compiled-bootstrap">编译后的 Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="编译后的 Bootstrap 链接"></a></h2>
     <p>下载后，解压压缩包，你会看到类似下面的目录结构：</p>
-    <p>
-      {/* 注意：此信息有意在 README 中重复一份。若在此处做了修改，请同步更新 README，但务必记得添加
-      <code>dist</code> 文件夹。 */}
-    </p>
     <CodeWrapper
       code="bootstrap/
 ├── css/
