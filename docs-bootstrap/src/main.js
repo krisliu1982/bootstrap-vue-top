@@ -37,12 +37,12 @@ flatPages.forEach((page) => {
   if (page.pageSlug) {
     routes.push({
       path: page.path,
-      component: () => import(`@/pages/${page.groupSlug}/${page.pageSlug}.vue`)
+      component: () => import(`@/pages/zh-CN/${page.groupSlug}/${page.pageSlug}.vue`)
     });
   } else {
     routes.push({
       path: page.path,
-      component: () => import(`@/pages/${page.groupSlug}.vue`)
+      component: () => import(`@/pages/zh-CN/${page.groupSlug}.vue`)
     });
   }
 });
@@ -106,8 +106,6 @@ export const createApp = ViteSSG(
         console.error('路由导航错误:', error);
       });
     }
-
-
 
     app.component('Example', Example);
     app.component('ExampleCustom', ExampleCustom);
