@@ -29,7 +29,7 @@
       code='<nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
+     <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
@@ -37,7 +37,7 @@
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
+     <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
@@ -52,7 +52,7 @@
     <li class="page-item"><a href="#" class="page-link">Previous</a></li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item active">
-      <a class="page-link" href="#" aria-current="page">2</a>
+     <a class="page-link" href="#" aria-current="page">2</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
@@ -75,15 +75,15 @@
       code='<nav aria-label="...">
   <ul class="pagination">
     <li class="page-item disabled">
-      <a class="page-link">Previous</a>
+     <a class="page-link">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item active">
-      <a class="page-link" href="#" aria-current="page">2</a>
+     <a class="page-link" href="#" aria-current="page">2</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+     <a class="page-link" href="#">Next</a>
     </li>
   </ul>
 </nav>'
@@ -101,7 +101,7 @@
       code='<nav aria-label="...">
   <ul class="pagination pagination-lg">
     <li class="page-item active" >
-      <a class="page-link" aria-current="page">1</a>
+     <a class="page-link" aria-current="page">1</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -112,7 +112,7 @@
       code='<nav aria-label="...">
   <ul class="pagination pagination-sm">
     <li class="page-item active">
-      <a class="page-link" aria-current="page">1</a>
+     <a class="page-link" aria-current="page">1</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -122,19 +122,19 @@
     <h2 id="alignment">对齐<a class="anchor-link" href="#alignment" aria-label="对齐链接"></a></h2>
     <p>
       使用
-      <a href="/utilities/flex">flexbox 工具类</a>更改分页组件的对齐方式。例如，使用 <code>.justify-content-center</code>：
+     <a href="/utilities/flex">flexbox 工具类</a>更改分页组件的对齐方式。例如，使用 <code>.justify-content-center</code>：
     </p>
     <Example
       code='<nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
-      <a class="page-link">Previous</a>
+     <a class="page-link">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+     <a class="page-link" href="#">Next</a>
     </li>
   </ul>
 </nav>'
@@ -144,13 +144,13 @@
       code='<nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     <li class="page-item disabled">
-      <a class="page-link">Previous</a>
+     <a class="page-link">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+     <a class="page-link" href="#">Next</a>
     </li>
   </ul>
 </nav>'
@@ -180,7 +180,7 @@
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#alignment">对齐</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

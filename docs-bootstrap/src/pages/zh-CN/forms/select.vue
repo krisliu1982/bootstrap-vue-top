@@ -71,7 +71,7 @@
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#disabled">禁用状态</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

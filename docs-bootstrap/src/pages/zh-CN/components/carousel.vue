@@ -262,13 +262,13 @@
     <h2 id="autoplaying-carousels">自动播放轮播<a class="anchor-link" href="#autoplaying-carousels" aria-label="自动播放轮播链接"></a></h2>
     <p>
       将 <code>ride</code> 选项设置为 <code>carousel</code>，即可让轮播在页面加载时自动播放。自动播放的轮播在鼠标悬停时会自动暂停。此行为可以通过 <code>pause</code> 选项进行控制。在支持
-      <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a> 的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
+     <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a>的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
     </p>
     <Callout>
       <p>出于无障碍访问方面的原因，我们建议避免使用自动播放的轮播。如果你的页面确实包含自动播放的轮播，我们建议额外提供一个按钮或控件，用于显式暂停/停止轮播。</p>
       <p>
         参见
-        <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a>。
+       <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a>。
       </p>
     </Callout>
     <ExampleCustom
@@ -770,7 +770,7 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#basic-examples">基本示例</a>
+       <a href="#basic-examples">基本示例</a>
         <ul>
           <li><a href="#indicators">指示器</a></li>
           <li><a href="#captions">字幕</a></li>
@@ -778,10 +778,10 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-        <a href="#autoplaying-carousels">自动播放轮播</a>
+       <a href="#autoplaying-carousels">自动播放轮播</a>
         <ul>
           <li>
-            <a href="#autoplaying-carousels-without-controls">不带控件的自动播放轮播</a>
+           <a href="#autoplaying-carousels-without-controls">不带控件的自动播放轮播</a>
           </li>
         </ul>
       </li>
@@ -789,13 +789,13 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       <li><a href="#dark-variant">深色变体</a></li>
       <li><a href="#custom-transition">自定义过渡</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

@@ -16,7 +16,7 @@
       </li>
       <li>
         由于 HTML5 定义其语义的方式，
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
+       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
         在 Bootstrap 模态框中不起作用。要达到相同的效果，请使用一些自定义 JavaScript：
       </li>
     </ul>
@@ -80,7 +80,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <Callout>
       <p>
         在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用
-        <a href="/utilities/text#font-size">字体大小工具类</a> 控制标题的外观。下面所有实时示例均采用此方法。
+       <a href="/utilities/text#font-size">字体大小工具类</a>控制标题的外观。下面所有实时示例均采用此方法。
       </p>
     </Callout>
     <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
@@ -322,7 +322,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
               <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers">button</button> triggers a popover on click.</p>
               <hr>
               <h2 class="fs-5">Tooltips in a modal</h2>
-              <p><a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
+              <p><a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a>and<a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a>have tooltips on hover.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -425,12 +425,12 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <p>
       有一堆按钮都触发同一个模态框，但内容略有不同？使用
       <code>event.relatedTarget</code> 和
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
+     <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
       根据点击的按钮来改变模态框的内容。
     </p>
     <p>
       下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请
-      <a href="#events">阅读模态框事件文档</a>。
+     <a href="#events">阅读模态框事件文档</a>。
     </p>
     <Example
       addStackblitzJs
@@ -773,7 +773,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <JsDismiss name="modal" /><Callout type="warning">
       <p>
         虽然两种关闭模态框的方式都受支持，但请注意，从模态框外部关闭并不符合
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
+       <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
@@ -896,7 +896,7 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
         <tbody>
           <tr>
             <td><code>hide.bs.modal</code></td>
-            <td>当调用 <code>hide</code> 实例方法时立即触发此事件。可通过调用 <code>event.preventDefault()</code> 阻止。关于阻止事件的更多细节，请参阅 <a href="/getting-started/javascript#events">JavaScript 事件文档</a>。</td>
+            <td>当调用 <code>hide</code> 实例方法时立即触发此事件。可通过调用 <code>event.preventDefault()</code> 阻止。关于阻止事件的更多细节，请参阅<a href="/getting-started/javascript#events">JavaScript 事件文档</a>。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.modal</code></td>
@@ -936,7 +936,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">示例</a>
+       <a href="#examples">示例</a>
         <ul>
           <li><a href="#modal-components">模态框组件</a></li>
           <li><a href="#live-demo">实时演示</a></li>
@@ -957,7 +957,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       <li><a href="#optional-sizes">可选尺寸</a></li>
       <li><a href="#fullscreen-modal">全屏模态框</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -965,7 +965,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过数据属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

@@ -48,7 +48,7 @@
     <h2 id="native-font-stack">原生字体栈<a class="anchor-link" href="#native-font-stack" aria-label="原生字体栈链接"></a></h2>
     <p>
       Bootstrap 使用“原生字体栈”或“系统字体栈”，以在每台设备和操作系统上获得最佳的文本渲染效果。这些系统字体是专门针对当今设备设计的，在屏幕上的渲染效果更好，并支持可变字体等特性。阅读更多关于
-      <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a>。
+     <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a>。
     </p>
     <CodeWrapper
       code='$font-family-sans-serif:
@@ -381,7 +381,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
 
       <address>
         <strong>Full Name</strong><br/>
-        <a href="mailto:first.last@example.com">first.last@example.com</a>
+       <a href="mailto:first.last@example.com">first.last@example.com</a>
       </address>'
     />
     <h3 id="blockquote">块引用<a class="anchor-link" href="#blockquote" aria-label="块引用链接"></a></h3>
@@ -422,8 +422,8 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> 属性<a class="anchor-link" href="#html5-hidden-attribute" aria-label="HTML5 [hidden] 属性链接"></a></h2>
     <p>
       HTML5 添加了
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a
-      >，默认样式为 <code>display: none</code>。借鉴 <a href="https://purecss.io/">PureCSS</a> 的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其 <code>display</code> 被意外覆盖。
+     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a
+      >，默认样式为 <code>display: none</code>。借鉴<a href="https://purecss.io/">PureCSS</a>的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其 <code>display</code> 被意外覆盖。
     </p>
     <CodeWrapper code='&lt;input type="text" hidden&gt;' lang="html" />
     <Callout>
@@ -454,13 +454,13 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       <li><a href="#sample-output">示例输出</a></li>
       <li><a href="#tables">表格</a></li>
       <li>
-        <a href="#forms">表单</a>
+       <a href="#forms">表单</a>
         <ul>
           <li><a href="#pointers-on-buttons">按钮上的指针光标</a></li>
         </ul>
       </li>
       <li>
-        <a href="#misc-elements">杂项元素</a>
+       <a href="#misc-elements">杂项元素</a>
         <ul>
           <li><a href="#address">地址</a></li>
           <li><a href="#blockquote">块引用</a></li>

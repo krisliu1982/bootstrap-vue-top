@@ -5,7 +5,7 @@
 
     <h2 id="what-is-rfs">什么是 RFS？<a class="anchor-link" href="#what-is-rfs" aria-label="什么是 RFS？链接"></a></h2>
     <p>
-      Bootstrap 的附属项目 <a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a> 是一个单位尺寸调整引擎，最初是为了调整字体大小而开发的（因此其缩写为 Responsive Font Sizes，即响应式字体大小）。如今，RFS 能够重新缩放大多数带单位值的 CSS 属性，例如 <code>margin</code>、<code>padding</code>、<code>border-radius</code>，甚至 <code>box-shadow</code>。
+      Bootstrap 的附属项目<a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a>是一个单位尺寸调整引擎，最初是为了调整字体大小而开发的（因此其缩写为 Responsive Font Sizes，即响应式字体大小）。如今，RFS 能够重新缩放大多数带单位值的 CSS 属性，例如 <code>margin</code>、<code>padding</code>、<code>border-radius</code>，甚至 <code>box-shadow</code>。
     </p>
     <p>该机制会根据浏览器视口的尺寸自动计算合适的值。它会被编译成混合使用 <code>rem</code> 和视口单位的 <code>calc()</code> 函数，从而实现响应式缩放行为。</p>
     <h2 id="using-rfs">使用 RFS<a class="anchor-link" href="#using-rfs" aria-label="使用 RFS 链接"></a></h2>
@@ -81,7 +81,7 @@
     />
     <h2 id="extended-documentation">扩展文档<a class="anchor-link" href="#extended-documentation" aria-label="扩展文档链接"></a></h2>
     <p>
-      RFS 是 Bootstrap 组织下的一个独立项目。关于 RFS 及其配置的更多信息，请参阅其 <a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub 仓库</a>。
+      RFS 是 Bootstrap 组织下的一个独立项目。关于 RFS 及其配置的更多信息，请参阅其<a href="https://github.com/twbs/rfs/tree/v10.0.0">GitHub 仓库</a>。
     </p>
     <DocsPager />
   </article>
@@ -91,14 +91,14 @@
     <ul>
       <li><a href="#what-is-rfs">什么是 RFS？</a></li>
       <li>
-        <a href="#using-rfs">使用 RFS</a>
+       <a href="#using-rfs">使用 RFS</a>
         <ul>
           <li><a href="#using-the-mixins">使用 mixin</a></li>
           <li><a href="#using-the-functions">使用函数</a></li>
         </ul>
       </li>
       <li>
-        <a href="#extended-documentation">扩展文档</a>
+       <a href="#extended-documentation">扩展文档</a>
       </li>
     </ul>
   </nav>

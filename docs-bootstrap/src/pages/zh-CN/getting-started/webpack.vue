@@ -5,13 +5,13 @@
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>想直接跳到结尾？</strong>从 <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples 仓库</a>下载本指南的源码和可运行演示。你也可以
-        <a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">在 StackBlitz 中打开该示例</a>
+        <strong>想直接跳到结尾？</strong>从<a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples 仓库</a>下载本指南的源码和可运行演示。你也可以
+       <a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">在 StackBlitz 中打开该示例</a>
         进行实时编辑。
       </p>
     </Callout>
     <h2 id="what-is-webpack">什么是 Webpack？<a class="anchor-link" href="#what-is-webpack" aria-label="什么是 Webpack？链接"></a></h2>
-    <p><a href="https://webpack.js.org/">Webpack</a> 是一个 JavaScript 模块打包工具，它处理模块及其依赖以生成静态资源。它简化了对包含多个文件和依赖的复杂 Web 应用的管理。</p>
+    <p><a href="https://webpack.js.org/">Webpack</a>是一个 JavaScript 模块打包工具，它处理模块及其依赖以生成静态资源。它简化了对包含多个文件和依赖的复杂 Web 应用的管理。</p>
     <h2 id="setup">准备工作<a class="anchor-link" href="#setup" aria-label="准备工作链接"></a></h2>
     <p>我们将从头开始构建一个使用 Bootstrap 的 Webpack 项目，因此在真正开始之前有一些前提条件和前期步骤。本指南要求你已安装 Node.js，并熟悉终端操作。</p>
     <ol>
@@ -293,7 +293,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/webpack-dev-server-bootstrap.png" alt="正在运行 Bootstrap 的 Webpack 开发服务器" />
         <p>
           现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
-          <a href="https://github.com/twbs/examples/tree/main/webpack">查看完整的 Webpack 示例项目</a>，
+         <a href="https://github.com/twbs/examples/tree/main/webpack">查看完整的 Webpack 示例项目</a>，
           了解如何引入额外的自定义 Sass，以及如何通过仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
@@ -301,7 +301,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     <h2 id="production-optimizations">生产环境优化<a class="anchor-link" href="#production-optimizations" aria-label="生产环境优化链接"></a></h2>
     <p>
       根据你的配置，你可能希望实施一些额外的安全性和速度优化，以便在生产环境中运行项目。请注意，这些优化并未应用于
-      <a href="https://github.com/twbs/examples/tree/main/webpack">Webpack 示例项目</a>，需由你自行实施。
+     <a href="https://github.com/twbs/examples/tree/main/webpack">Webpack 示例项目</a>，需由你自行实施。
     </p>
     <h3 id="extracting-css">提取 CSS<a class="anchor-link" href="#extracting-css" aria-label="提取 CSS 链接"></a></h3>
     <p>我们上面配置的 <code>style-loader</code> 会方便地将 CSS 输出到打包文件中，因此无需在 <code>dist/index.html</code> 中手动加载 CSS 文件。不过，这种方式可能无法与严格的内容安全策略（CSP）配合使用，而且由于打包体积较大，它可能会成为应用程序的瓶颈。</p>
@@ -405,7 +405,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       <li><a href="#configure-webpack">配置 Webpack</a></li>
       <li><a href="#import-bootstrap">导入 Bootstrap</a></li>
       <li>
-        <a href="#production-optimizations">生产环境优化</a>
+       <a href="#production-optimizations">生产环境优化</a>
         <ul>
           <li><a href="#extracting-css">提取 CSS</a></li>
           <li><a href="#extracting-svg-files">提取 SVG 文件</a></li>

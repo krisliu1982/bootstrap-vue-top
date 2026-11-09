@@ -5,8 +5,8 @@
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
-      当锚点的 <code>href</code> 所引用的 <code>id</code> 对应元素滚动进入视图时，滚动监听会切换锚点（<code>&lt;a&gt;</code>）元素上的 <code>.active</code> 类。滚动监听最适合与 Bootstrap 的 <a href="/components/navs-tabs">导航组件</a>或
-      <a href="/components/list-group">列表组</a>配合使用，但它也可用于当前页面中的任何锚点元素。它的工作方式如下。
+      当锚点的 <code>href</code> 所引用的 <code>id</code> 对应元素滚动进入视图时，滚动监听会切换锚点（<code>&lt;a&gt;</code>）元素上的 <code>.active</code> 类。滚动监听最适合与 Bootstrap 的<a href="/components/navs-tabs">导航组件</a>或
+     <a href="/components/list-group">列表组</a>配合使用，但它也可用于当前页面中的任何锚点元素。它的工作方式如下。
     </p>
     <ul>
       <li>
@@ -29,7 +29,7 @@
       <li>
         <p>
           不可见的目标元素将被忽略。请参阅下面的
-          <a href="#non-visible-elements">不可见元素</a>部分。
+         <a href="#non-visible-elements">不可见元素</a>部分。
         </p>
       </li>
     </ul>
@@ -39,16 +39,16 @@
     <Example
       :showMarkup="false"
       code='<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 rounded-2">
-    <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">First</a>
+       <a class="nav-link" href="#scrollspyHeading1">First</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+       <a class="nav-link" href="#scrollspyHeading2">Second</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
           <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
@@ -114,16 +114,16 @@
   <div class="col-4">
     <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
       <nav class="nav nav-pills flex-column">
-        <a class="nav-link" href="#item-1">Item 1</a>
+       <a class="nav-link" href="#item-1">Item 1</a>
         <nav class="nav nav-pills flex-column">
-          <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-          <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+         <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+         <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
         </nav>
-        <a class="nav-link" href="#item-2">Item 2</a>
-        <a class="nav-link" href="#item-3">Item 3</a>
+       <a class="nav-link" href="#item-2">Item 2</a>
+       <a class="nav-link" href="#item-3">Item 3</a>
         <nav class="nav nav-pills flex-column">
-          <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-          <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+         <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+         <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
         </nav>
       </nav>
     </nav>
@@ -232,10 +232,10 @@
       code='<div class="row">
   <div class="col-4">
     <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+     <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+     <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+     <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+     <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
     </div>
   </div>
   <div class="col-8">
@@ -285,11 +285,11 @@
       code='<div class="row">
   <div class="col-4">
     <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-      <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
-      <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
-      <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
-      <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
-      <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+     <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
+     <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
+     <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
+     <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+     <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
     </div>
   </div>
   <div class="col-8">
@@ -398,7 +398,7 @@
             <td><code>0px 0px -25%</code></td>
             <td>
               计算滚动位置时使用的 Intersection Observer
-              <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">rootMargin</a>
+             <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">rootMargin</a>
               有效单位。
             </td>
           </tr>
@@ -420,7 +420,7 @@
             <td><code>[0.1, 0.5, 1]</code></td>
             <td>
               计算滚动位置时使用的 <code>IntersectionObserver</code>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a>
+             <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a>
               有效输入。
             </td>
           </tr>
@@ -502,7 +502,7 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">示例</a>
+       <a href="#examples">示例</a>
         <ul>
           <li><a href="#navbar">导航栏</a></li>
           <li><a href="#nested-nav">嵌套导航</a></li>
@@ -512,7 +512,7 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
       </li>
       <li><a href="#non-visible-elements">不可见元素</a></li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

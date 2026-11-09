@@ -6,13 +6,13 @@
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>
       Bootstrap 的网格系统使用一系列容器、行和列来布局和对齐内容。它使用
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
       构建，完全响应式。下面是一个示例，以及关于网格系统如何组合而成的深入说明。
     </p>
     <Callout>
       <p>
         <strong>刚接触或不熟悉 flexbox？</strong>
-        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">阅读这篇 CSS Tricks flexbox 指南</a>
+       <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">阅读这篇 CSS Tricks flexbox 指南</a>
         了解背景、术语、准则和代码片段。
       </p> </Callout
     ><Example
@@ -60,7 +60,7 @@
       <li>
         <p>
           <strong>间距同样是响应式且可自定义的。</strong>
-          <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。
+         <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。
           还可以使用 <code>.g-0</code> 移除间距。
         </p>
       </li>
@@ -510,7 +510,7 @@ $container-max-widths: (
       <li><a href="#how-it-works">工作原理</a></li>
       <li><a href="#grid-options">网格选项</a></li>
       <li>
-        <a href="#auto-layout-columns">自动布局列</a>
+       <a href="#auto-layout-columns">自动布局列</a>
         <ul>
           <li><a href="#equal-width">等宽</a></li>
           <li><a href="#setting-one-column-width">设置单列宽度</a></li>
@@ -518,7 +518,7 @@ $container-max-widths: (
         </ul>
       </li>
       <li>
-        <a href="#responsive-classes">响应式类</a>
+       <a href="#responsive-classes">响应式类</a>
         <ul>
           <li><a href="#all-breakpoints">所有断点</a></li>
           <li><a href="#stacked-to-horizontal">从堆叠到水平</a></li>
@@ -528,7 +528,7 @@ $container-max-widths: (
       </li>
       <li><a href="#nesting">嵌套</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixin</a></li>
@@ -536,7 +536,7 @@ $container-max-widths: (
         </ul>
       </li>
       <li>
-        <a href="#customizing-the-grid">自定义网格</a>
+       <a href="#customizing-the-grid">自定义网格</a>
         <ul>
           <li><a href="#columns-and-gutters">列与间距</a></li>
           <li><a href="#grid-tiers">网格层级</a></li>

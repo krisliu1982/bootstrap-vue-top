@@ -5,7 +5,7 @@
 
     <h2 id="link-colors">链接颜色<a class="anchor-link" href="#link-colors" aria-label="链接颜色链接"></a></h2>
     <p>
-      你可以使用 <code>.link-*</code> 类为链接着色。与 <a href="/utilities/colors"><code>.text-*</code> 类</a>不同，这些类具有 <code>:hover</code> 和 <code>:focus</code> 状态。部分链接样式使用相对较浅的前景色，因此只能用于深色背景，以保证
+      你可以使用 <code>.link-*</code> 类为链接着色。与<a href="/utilities/colors"><code>.text-*</code> 类</a>不同，这些类具有 <code>:hover</code> 和 <code>:focus</code> 状态。部分链接样式使用相对较浅的前景色，因此只能用于深色背景，以保证
       足够的对比度。
     </p>
     <Callout>
@@ -33,7 +33,7 @@
     <ul>
       <li><a href="#link-colors">链接颜色</a></li>
       <li>
-        <a href="#link-utilities">链接工具类</a>
+       <a href="#link-utilities">链接工具类</a>
       </li>
     </ul>
   </nav>

@@ -21,12 +21,12 @@
       <code>z-index</code> 值，以确保在界面相互竞争的“层级”中获得可用的体验。
     </p>
     <p>
-      在 <a href="/layout/z-index"><code>z-index</code> 布局页面</a>中了解它们。
+      在<a href="/layout/z-index"><code>z-index</code> 布局页面</a>中了解它们。
     </p>
     <h2 id="component-approach">组件方案<a class="anchor-link" href="#component-approach" aria-label="组件方案链接"></a></h2>
     <p>在某些组件上，我们使用底层 <code>z-index</code> 值来管理相互重叠的重复元素（例如按钮组中的按钮或列表组中的项目）。</p>
     <p>
-      了解我们的 <a href="/extend/approach#z-index-scales"><code>z-index</code> 方案</a>。
+      了解我们的<a href="/extend/approach#z-index-scales"><code>z-index</code> 方案</a>。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <h3 id="sass-maps">Sass 映射<a class="anchor-link" href="#sass-maps" aria-label="Sass 映射链接"></a></h3>
@@ -35,7 +35,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       定位工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-zindex" file="scss/_utilities.scss" />
     <DocsPager />
@@ -48,7 +48,7 @@
       <li><a href="#overlays">覆盖层</a></li>
       <li><a href="#component-approach">组件方案</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-maps">Sass 映射</a></li>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>

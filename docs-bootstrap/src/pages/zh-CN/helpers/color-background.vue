@@ -6,7 +6,7 @@
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>
       颜色与背景工具类将
-      <a href="/utilities/colors"><code>.text-*</code> 工具类</a>和 <a href="/utilities/background"><code>.bg-*</code> 工具类</a>的能力整合到一个类中。通过我们的 Sass <code>color-contrast()</code> 函数，我们会为特定的 <code>background-color</code> 自动确定对比度合适的 <code>color</code>。
+     <a href="/utilities/colors"><code>.text-*</code> 工具类</a>和<a href="/utilities/background"><code>.bg-*</code> 工具类</a>的能力整合到一个类中。通过我们的 Sass <code>color-contrast()</code> 函数，我们会为特定的 <code>background-color</code> 自动确定对比度合适的 <code>color</code>。
     </p>
     <Callout type="warning">
       <p><strong>请注意！</strong>目前尚不支持 CSS 原生的 <code>color-contrast</code> 函数，因此我们通过 Sass 使用了自己的实现。这意味着通过 CSS 变量定制主题颜色可能会导致这些工具类出现颜色对比度问题。</p> </Callout
@@ -40,7 +40,7 @@
     <ul>
       <li><a href="#overview">概述</a></li>
       <li>
-        <a href="#with-components">与组件配合使用</a>
+       <a href="#with-components">与组件配合使用</a>
       </li>
     </ul>
   </nav>

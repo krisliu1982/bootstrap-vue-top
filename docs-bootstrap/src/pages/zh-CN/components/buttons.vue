@@ -119,7 +119,7 @@
     <Callout>
       <p>
         从视觉上看，这些切换按钮与
-        <a href="/forms/checks-radios#checkbox-toggle-buttons">复选框切换按钮</a>完全相同。不过，辅助技术对它们的播报方式不同：复选框切换按钮会被屏幕阅读器播报为“已选中”/“未选中”（因为尽管外观如此，它们本质上仍然是复选框），而这些切换按钮则会被播报为“按钮”/“按钮已按下”。在两种方案之间做选择，将取决于你要创建的切换类型，以及该切换在被播报为复选框或实际按钮时对用户是否有意义。
+       <a href="/forms/checks-radios#checkbox-toggle-buttons">复选框切换按钮</a>完全相同。不过，辅助技术对它们的播报方式不同：复选框切换按钮会被屏幕阅读器播报为“已选中”/“未选中”（因为尽管外观如此，它们本质上仍然是复选框），而这些切换按钮则会被播报为“按钮”/“按钮已按下”。在两种方案之间做选择，将取决于你要创建的切换类型，以及该切换在被播报为复选框或实际按钮时对用户是否有意义。
       </p>
     </Callout>
     <h3 id="toggle-states">切换状态<a class="anchor-link" href="#toggle-states" aria-label="切换状态链接"></a></h3>
@@ -137,14 +137,14 @@
 </p>'
     /><Example
       code='<p class="d-inline-flex gap-1">
-  <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
-  <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
-  <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+ <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
+ <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+ <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
 </p>
 <p class="d-inline-flex gap-1">
-  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
-  <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
-  <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+ <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+ <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+ <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
 </p>'
     />
     <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>
@@ -228,21 +228,21 @@
       <li><a href="#outline-buttons">轮廓按钮</a></li>
       <li><a href="#sizes">尺寸</a></li>
       <li>
-        <a href="#disabled-state">禁用状态</a>
+       <a href="#disabled-state">禁用状态</a>
         <ul>
           <li><a href="#link-functionality-caveat">链接功能注意事项</a></li>
         </ul>
       </li>
       <li><a href="#block-buttons">块级按钮</a></li>
       <li>
-        <a href="#button-plugin">按钮插件</a>
+       <a href="#button-plugin">按钮插件</a>
         <ul>
           <li><a href="#toggle-states">切换状态</a></li>
           <li><a href="#methods">方法</a></li>
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

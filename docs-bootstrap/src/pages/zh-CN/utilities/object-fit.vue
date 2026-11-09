@@ -6,7 +6,7 @@
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
       使用我们响应式的 <code>object-fit</code> 工具类更改
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> 属性</a>的值。该属性会以多种方式告知内容填充父容器，例如保持长宽比，或拉伸以尽可能占据更多空间。
+     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> 属性</a>的值。该属性会以多种方式告知内容填充父容器，例如保持长宽比，或拉伸以尽可能占据更多空间。
     </p>
     <p><code>object-fit</code> 取值的类使用 <code>.object-fit-{value}</code> 格式命名。可从以下取值中选择：</p>
     <ul>
@@ -60,7 +60,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       对象适配工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-object-fit" file="scss/_utilities.scss" />
     <DocsPager />
@@ -74,7 +74,7 @@
       <li><a href="#responsive">响应式</a></li>
       <li><a href="#video">视频</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>

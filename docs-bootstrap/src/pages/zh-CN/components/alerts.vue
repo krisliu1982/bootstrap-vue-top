@@ -39,7 +39,7 @@
         data['theme-colors']
           .map(
             (themeColor) => `<div class=&quot;alert alert-${themeColor.name}&quot; role=&quot;alert&quot;>
-  A simple ${themeColor.name} alert with <a href=&quot;#&quot; class=&quot;alert-link&quot;>an example link</a>. Give it a click if you like.
+  A simple ${themeColor.name} alert with<a href=&quot;#&quot; class=&quot;alert-link&quot;>an example link</a>. Give it a click if you like.
 </div>`
           )
           .join('\n')
@@ -57,7 +57,7 @@
 </div>'
     />
     <h3 id="icons">图标<a class="anchor-link" href="#icons" aria-label="图标链接"></a></h3>
-    <p>同样，你可以使用 <a href="/utilities/flex">flexbox 工具类</a>和 <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 创建带图标的警告框。根据你的图标和内容，可能需要添加更多工具类或自定义样式。</p>
+    <p>同样，你可以使用<a href="/utilities/flex">flexbox 工具类</a>和<a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>创建带图标的警告框。根据你的图标和内容，可能需要添加更多工具类或自定义样式。</p>
     <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
@@ -252,7 +252,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#examples">示例</a>
+       <a href="#examples">示例</a>
         <ul>
           <li><a href="#live-example">实时示例</a></li>
           <li><a href="#link-color">链接颜色</a></li>
@@ -262,7 +262,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -271,7 +271,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript 行为</a>
+       <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#initialize">初始化</a></li>
           <li><a href="#triggers">触发器</a></li>

@@ -178,7 +178,7 @@
     />
     <p>
       你也可以使用我们的
-      <a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。
+     <a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。
     </p>
     <Example
       class="bd-example-row"
@@ -275,7 +275,7 @@
     />
     <p>
       除了在响应式断点处清除列之外，你可能还需要重置偏移量。请在
-      <a href="https://getbootstrap.com/docs/5.3/examples/grid/">网格示例</a>中查看其实际效果。
+     <a href="https://getbootstrap.com/docs/5.3/examples/grid/">网格示例</a>中查看其实际效果。
     </p>
     <Example
       class="bd-example-row"
@@ -323,7 +323,7 @@
     />
     <p>
       这些类可以与工具类一起使用，以创建响应式浮动图片。如果文本较短，请确保将内容包裹在
-      <a href="/helpers/clearfix"><code>.clearfix</code></a> 包裹元素中，以清除浮动。
+     <a href="/helpers/clearfix"><code>.clearfix</code></a>包裹元素中，以清除浮动。
     </p>
     <ExampleCustom
       code='<div class="clearfix">
@@ -360,7 +360,7 @@
     <ul>
       <li><a href="#how-they-work">工作原理</a></li>
       <li>
-        <a href="#alignment">对齐</a>
+       <a href="#alignment">对齐</a>
         <ul>
           <li><a href="#vertical-alignment">垂直对齐</a></li>
           <li><a href="#horizontal-alignment">水平对齐</a></li>
@@ -369,14 +369,14 @@
         </ul>
       </li>
       <li>
-        <a href="#reordering">重新排序</a>
+       <a href="#reordering">重新排序</a>
         <ul>
           <li><a href="#order-classes">排序类</a></li>
           <li><a href="#offsetting-columns">偏移列</a></li>
         </ul>
       </li>
       <li>
-        <a href="#standalone-column-classes">独立列类</a>
+       <a href="#standalone-column-classes">独立列类</a>
       </li>
     </ul>
   </nav>

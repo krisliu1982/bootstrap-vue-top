@@ -525,7 +525,7 @@
     </p>
     <p>
       使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如
-      <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。
+     <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。
     </p>
     <p>
       我们的 <code>tint-color()</code> 和 <code>shade-color()</code> 函数使用 <code>mix()</code> 以及我们的 <code>$theme-color-interval</code> 变量，该变量为我们生成的每种混合颜色指定一个阶梯式的百分比值。完整源代码请参阅 <code>scss/_functions.scss</code> 和 <code>scss/_variables.scss</code> 文件。
@@ -554,7 +554,7 @@
     <p><a href="/utilities/colors">颜色</a>和<a href="/utilities/background">背景</a>工具类也可用于使用 <code>500</code> 颜色值设置 <code>color</code> 和 <code>background-color</code>。</p>
     <h2 id="generating-utilities">生成工具类<a class="anchor-link" href="#generating-utilities" aria-label="生成工具类"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>Bootstrap 并未为每个颜色变量都包含 <code>color</code> 和 <code>background-color</code> 工具类，但你可以使用我们的<a href="/utilities/api">工具类 API</a> 以及 v5.1.0 中新增的扩展 Sass 映射自行生成。</p>
+    <p>Bootstrap 并未为每个颜色变量都包含 <code>color</code> 和 <code>background-color</code> 工具类，但你可以使用我们的<a href="/utilities/api">工具类 API</a>以及 v5.1.0 中新增的扩展 Sass 映射自行生成。</p>
     <ol>
       <li>首先，确保你已经导入了我们的函数、变量、mixin 和工具类。</li>
       <li>使用我们的 <code>map-merge-multiple()</code> 函数，快速将多个 Sass 映射合并到一个新映射中。</li>
@@ -600,7 +600,7 @@ $utilities: map-merge(
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#colors">颜色</a>
+       <a href="#colors">颜色</a>
         <ul>
           <li><a href="#using-the-new-colors">使用新颜色</a></li>
           <li><a href="#theme-colors">主题色</a></li>
@@ -609,13 +609,13 @@ $utilities: map-merge(
         </ul>
       </li>
       <li>
-        <a href="#color-sass-maps">颜色 Sass 映射</a>
+       <a href="#color-sass-maps">颜色 Sass 映射</a>
         <ul>
           <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
-        <a href="#generating-utilities">生成工具类</a>
+       <a href="#generating-utilities">生成工具类</a>
       </li>
     </ul>
   </nav>

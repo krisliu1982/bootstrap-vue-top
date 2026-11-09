@@ -819,7 +819,7 @@
       <li><a href="#overview">概览</a></li>
       <li><a href="#variants">变体</a></li>
       <li>
-        <a href="#accented-tables">强调表格</a>
+       <a href="#accented-tables">强调表格</a>
         <ul>
           <li><a href="#striped-rows">条纹行</a></li>
           <li><a href="#striped-columns">条纹列</a></li>
@@ -829,7 +829,7 @@
       </li>
       <li><a href="#how-do-the-variants-and-accented-tables-work">变体和强调表格是如何工作的？</a></li>
       <li>
-        <a href="#table-borders">表格边框</a>
+       <a href="#table-borders">表格边框</a>
         <ul>
           <li><a href="#bordered-tables">带边框的表格</a></li>
           <li><a href="#tables-without-borders">无边框表格</a></li>
@@ -841,7 +841,7 @@
       <li><a href="#nesting">嵌套</a></li>
       <li><a href="#how-nesting-works">嵌套的工作原理</a></li>
       <li>
-        <a href="#anatomy">结构剖析</a>
+       <a href="#anatomy">结构剖析</a>
         <ul>
           <li><a href="#table-head">表头</a></li>
           <li><a href="#table-foot">表尾</a></li>
@@ -849,14 +849,14 @@
         </ul>
       </li>
       <li>
-        <a href="#responsive-tables">响应式表格</a>
+       <a href="#responsive-tables">响应式表格</a>
         <ul>
           <li><a href="#always-responsive">始终响应式</a></li>
           <li><a href="#breakpoint-specific">特定断点</a></li>
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-loops">Sass 循环</a></li>

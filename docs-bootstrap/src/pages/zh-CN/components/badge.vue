@@ -51,8 +51,8 @@
     <h2 id="background-colors">背景颜色<a class="anchor-link" href="#background-colors" aria-label="背景颜色链接"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的 <a href="/utilities/colors"><code>.text-{color}</code></a> 和
-      <a href="/utilities/background"><code>.bg-{color}</code></a> 工具类配对进行样式设置，如果你愿意，仍然可以这样使用。
+      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的<a href="/utilities/colors"><code>.text-{color}</code></a>和
+     <a href="/utilities/background"><code>.bg-{color}</code></a>工具类配对进行样式设置，如果你愿意，仍然可以这样使用。
     </p>
 
     <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout name="warning-color-assistive-technologies" />
@@ -79,7 +79,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#examples">示例</a>
+       <a href="#examples">示例</a>
         <ul>
           <li><a href="#headings">标题</a></li>
           <li><a href="#buttons">按钮</a></li>
@@ -89,7 +89,7 @@
       <li><a href="#background-colors">背景颜色</a></li>
       <li><a href="#pill-badges">药丸徽章</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

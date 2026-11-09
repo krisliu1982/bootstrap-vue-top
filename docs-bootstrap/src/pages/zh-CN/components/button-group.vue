@@ -20,13 +20,13 @@
     </Callout>
     <p>
       这些类也可以添加到链接组中，作为
-      <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
+     <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
     </p>
     <Example
       code='<div class="btn-group">
-  <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
-  <a href="#" class="btn btn-primary">Link</a>
-  <a href="#" class="btn btn-primary">Link</a>
+ <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+ <a href="#" class="btn btn-primary">Link</a>
+ <a href="#" class="btn btn-primary">Link</a>
 </div>'
     />
     <h2 id="mixed-styles">混合样式<a class="anchor-link" href="#mixed-styles" aria-label="混合样式链接"></a></h2>
@@ -237,7 +237,7 @@
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#nesting">嵌套</a></li>
       <li>
-        <a href="#vertical-variation">垂直排列变体</a>
+       <a href="#vertical-variation">垂直排列变体</a>
       </li>
     </ul>
   </nav>

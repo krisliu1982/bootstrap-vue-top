@@ -46,7 +46,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

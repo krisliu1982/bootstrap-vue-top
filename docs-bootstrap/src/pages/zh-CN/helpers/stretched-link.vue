@@ -15,7 +15,7 @@
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+   <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
   </div>
 </div>'
     >
@@ -24,7 +24,7 @@
         <div class="card-body">
           <h5 class="card-title">带有拉伸链接的卡片</h5>
           <p class="card-text">一些快速示例文本，用于在卡片标题的基础上扩充内容，构成卡片内容的主体。</p>
-          <a href="#" class="btn btn-primary stretched-link">前往某处</a>
+         <a href="#" class="btn btn-primary stretched-link">前往某处</a>
         </div>
       </div>
     </ExampleCustom>
@@ -36,7 +36,7 @@
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+   <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
   </div>
 </div>'
     >
@@ -45,14 +45,14 @@
         <div>
           <h5 class="mt-0">带有拉伸链接的自定义组件</h5>
           <p>这是自定义组件的一些占位内容。它旨在模拟真实世界内容的样子，我们在这里用它为组件增添一些内容和尺寸。</p>
-          <a href="#" class="stretched-link">前往某处</a>
+         <a href="#" class="stretched-link">前往某处</a>
         </div>
       </div>
     </ExampleCustom>
     <h2 id="identifying-the-containing-block">识别包含块<a class="anchor-link" href="#identifying-the-containing-block" aria-label="识别包含块链接"></a></h2>
     <p>
       如果拉伸链接似乎不起作用，
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block">包含块</a>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block">包含块</a>
       很可能是原因所在。以下 CSS 属性会使元素成为包含块：
     </p>
     <ul>
@@ -68,10 +68,10 @@
     <h5 class="card-title">Card with stretched links</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <p class="card-text">
-      <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
+     <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
     </p>
     <p class="card-text bg-body-tertiary" style="transform: rotate(0);">
-      This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
+      This<a href="#" class="text-warning stretched-link">stretched link</a>will only be spread over the <code>p</code>-tag, because a transform is applied to it.
     </p>
   </div>
 </div>'
@@ -82,7 +82,7 @@
           <h5 class="card-title">带有拉伸链接的卡片</h5>
           <p class="card-text">一些快速示例文本，用于在卡片标题的基础上扩充内容，构成卡片内容的主体。</p>
           <p class="card-text">
-            <a href="#" class="stretched-link text-danger" style="position: relative">此处的拉伸链接将无法生效，因为链接被添加了 <code>position: relative</code></a>
+           <a href="#" class="stretched-link text-danger" style="position: relative">此处的拉伸链接将无法生效，因为链接被添加了 <code>position: relative</code></a>
           </p>
           <p class="card-text bg-body-tertiary" style="transform: rotate(0)">这个<a href="#" class="text-warning stretched-link">拉伸链接</a>只会铺满 <code>p</code> 标签的范围，因为该标签被应用了 transform。</p>
         </div>
@@ -95,7 +95,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#identifying-the-containing-block">识别包含块</a>
+       <a href="#identifying-the-containing-block">识别包含块</a>
       </li>
     </ul>
   </nav>

@@ -2183,3 +2183,7 @@
       white-space: pre-wrap;
       word-break: break-all;
   }
+
+  .table th {
+    word-break: keep-all;
+  }

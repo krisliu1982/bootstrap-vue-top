@@ -7,7 +7,7 @@
     <Callout type="warning">
       <p>
         使用最新版本的 Dart Sass 编译 Sass 源文件时会显示 Sass 弃用警告。这不会阻止 Bootstrap 的编译或使用。我们正在
-        <a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a>，但在此期间可以忽略这些弃用通知。
+       <a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a>，但在此期间可以忽略这些弃用通知。
       </p>
     </Callout>
     <h2 id="file-structure">文件结构<a class="anchor-link" href="#file-structure" aria-label="文件结构"></a></h2>
@@ -93,7 +93,7 @@
     <h2 id="compiling">编译<a class="anchor-link" href="#compiling" aria-label="编译"></a></h2>
     <p>
       为了在浏览器中将自定义 Sass 代码作为 CSS 使用，你需要一个 Sass 编译器。Sass 以 CLI 包的形式提供，但你也可以使用其他构建工具（如
-      <a href="https://gulpjs.com/">Gulp</a> 或 <a href="https://webpack.js.org/">Webpack</a>）或 GUI 应用程序来编译它。某些 IDE 也内置了 Sass 编译器，或以可下载扩展的形式提供。
+     <a href="https://gulpjs.com/">Gulp</a>或<a href="https://webpack.js.org/">Webpack</a>）或 GUI 应用程序来编译它。某些 IDE 也内置了 Sass 编译器，或以可下载扩展的形式提供。
     </p>
     <p>我们喜欢使用 CLI 来编译 Sass，但你可以使用任何你偏好的方式。在命令行中运行以下命令：</p>
     <CodeWrapper
@@ -105,11 +105,11 @@ sass --watch ./scss/custom.scss ./css/custom.css
 "
       lang="shell"
     />
-    <p>请在 <a href="https://sass-lang.com/install/">sass-lang.com/install</a> 和<a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">使用 VS Code 编译</a>中了解更多选项。</p>
+    <p>请在<a href="https://sass-lang.com/install/">sass-lang.com/install</a>和<a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">使用 VS Code 编译</a>中了解更多选项。</p>
     <Callout>
       <p>
-        <strong>将 Bootstrap 与其他构建工具配合使用？</strong>可以考虑阅读我们关于使用 <a href="/getting-started/webpack">Webpack</a>、<a href="/getting-started/parcel">Parcel</a> 或 <a href="/getting-started/vite">Vite</a> 编译的指南。我们还在
-        <a href="https://github.com/twbs/examples">GitHub 上的示例仓库</a>中提供了可用于生产环境的演示。
+        <strong>将 Bootstrap 与其他构建工具配合使用？</strong>可以考虑阅读我们关于使用<a href="/getting-started/webpack">Webpack</a>、<a href="/getting-started/parcel">Parcel</a>或<a href="/getting-started/vite">Vite</a>编译的指南。我们还在
+       <a href="https://github.com/twbs/examples">GitHub 上的示例仓库</a>中提供了可用于生产环境的演示。
       </p>
     </Callout>
     <h2 id="including">引入<a class="anchor-link" href="#including" aria-label="引入"></a></h2>
@@ -257,11 +257,11 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     <h3 id="color-contrast">颜色对比度<a class="anchor-link" href="#color-contrast" aria-label="颜色对比度"></a></h3>
     <p>
       为了满足
-      <a href="https://www.w3.org/TR/WCAG/">Web 内容无障碍指南（WCAG）</a>的对比度要求，作者<strong>必须</strong>提供至少 <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">4.5:1 的文本颜色对比度</a>和至少
-      <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">3:1 的非文本颜色对比度</a>，极少数例外情况除外。
+     <a href="https://www.w3.org/TR/WCAG/">Web 内容无障碍指南（WCAG）</a>的对比度要求，作者<strong>必须</strong>提供至少<a href="https://www.w3.org/TR/WCAG/#contrast-minimum">4.5:1 的文本颜色对比度</a>和至少
+     <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">3:1 的非文本颜色对比度</a>，极少数例外情况除外。
     </p>
     <p>
-      为帮助解决这一问题，我们在 Bootstrap 中包含了 <code>color-contrast</code> 函数。它使用 <a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG 对比度算法</a>，在
+      为帮助解决这一问题，我们在 Bootstrap 中包含了 <code>color-contrast</code> 函数。它使用<a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG 对比度算法</a>，在
       <code>sRGB</code> 颜色空间中基于<a href="https://www.w3.org/TR/WCAG/#dfn-relative-luminance">相对亮度</a>计算对比度阈值，从而根据指定的基础颜色自动返回浅色（<code>#fff</code>）、深色（<code>#212529</code>）或黑色（<code>#000</code>）对比色。此函数对于生成多个类的 mixin 或循环特别有用。
     </p>
     <p>例如，从我们的 <code>$theme-colors</code> 映射生成色板：</p>
@@ -361,7 +361,7 @@ $border-width: 0;
       <li><a href="#including">引入</a></li>
       <li><a href="#variable-defaults">变量默认值</a></li>
       <li>
-        <a href="#maps-and-loops">映射与循环</a>
+       <a href="#maps-and-loops">映射与循环</a>
         <ul>
           <li><a href="#modify-map">修改映射</a></li>
           <li><a href="#add-to-map">添加到映射</a></li>
@@ -370,7 +370,7 @@ $border-width: 0;
       </li>
       <li><a href="#required-keys">必需的键</a></li>
       <li>
-        <a href="#functions">函数</a>
+       <a href="#functions">函数</a>
         <ul>
           <li><a href="#colors">颜色</a></li>
           <li><a href="#color-contrast">颜色对比度</a></li>
@@ -379,7 +379,7 @@ $border-width: 0;
         </ul>
       </li>
       <li>
-        <a href="#mixins">Mixin</a>
+       <a href="#mixins">Mixin</a>
         <ul>
           <li><a href="#color-schemes">配色方案</a></li>
         </ul>

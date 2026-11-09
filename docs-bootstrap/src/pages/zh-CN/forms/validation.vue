@@ -381,7 +381,7 @@
       <li><a href="#supported-elements">支持的元素</a></li>
       <li><a href="#tooltips">工具提示</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

@@ -39,7 +39,7 @@
     <Example :code="data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;d-inline-flex focus-ring focus-ring-${themeColor.name} py-1 px-2 text-decoration-none border rounded-2&quot;>${themeColor.name} focus</a></p>`).join('\n')" />
     <p>
       聚焦环工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-focus-ring" file="scss/_utilities.scss" />
     <DocsPager />
@@ -50,7 +50,7 @@
     <ul>
       <li><a href="#example">示例</a></li>
       <li>
-        <a href="#customize">自定义</a>
+       <a href="#customize">自定义</a>
         <ul>
           <li><a href="#css-variables">CSS 变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

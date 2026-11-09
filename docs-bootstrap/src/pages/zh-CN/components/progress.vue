@@ -6,13 +6,13 @@
     <Callout>
       <p>
         <strong>v5.3.0 中的新标记 ——</strong> 我们已弃用进度条先前使用的 HTML 结构，并用更易于访问的结构取而代之。先前的结构在 v6 之前仍可继续使用。
-        <a href="/migration#improved-markup-for-progress-bars">查看迁移指南中的变更内容。</a>
+       <a href="/migration#improved-markup-for-progress-bars">查看迁移指南中的变更内容。</a>
       </p>
     </Callout>
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
       进度条组件由两个 HTML 元素、一些用于设置宽度的 CSS 以及若干属性构建而成。我们不使用
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">HTML5 的 <code>&lt;progress&gt;</code> 元素</a>，从而确保你可以堆叠进度条、为其添加动画，并在其上方放置文本标签。
+     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">HTML5 的 <code>&lt;progress&gt;</code> 元素</a>，从而确保你可以堆叠进度条、为其添加动画，并在其上方放置文本标签。
     </p>
     <ul>
       <li>我们使用 <code>.progress</code> 作为包装器，以指示进度条的最大值。</li>
@@ -67,7 +67,7 @@
     <h3 id="long-labels">长标签<a class="anchor-link" href="#long-labels" aria-label="长标签链接"></a></h3>
     <p>
       请注意，默认情况下，<code>.progress-bar</code> 内的内容由 <code>overflow: hidden</code> 控制，因此不会溢出条形之外。如果你的进度条比其标签短，内容将被截断，可能变得难以阅读。要更改此行为，你可以使用
-      <a href="/utilities/overflow">overflow 工具类</a>中的 <code>.overflow-visible</code>。
+     <a href="/utilities/overflow">overflow 工具类</a>中的 <code>.overflow-visible</code>。
     </p>
     <Callout type="warning">
       <p>
@@ -95,7 +95,7 @@
     <Callout name="warning-color-assistive-technologies" />
     <p>
       如果你要为自定义背景颜色的进度条添加标签，请务必同时设置合适的
-      <a href="/utilities/colors#colors">文本颜色</a>，以使标签保持可读并具有足够的对比度。我们建议使用<a href="/helpers/color-background">颜色和背景</a>辅助类。
+     <a href="/utilities/colors#colors">文本颜色</a>，以使标签保持可读并具有足够的对比度。我们建议使用<a href="/helpers/color-background">颜色和背景</a>辅助类。
     </p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -173,14 +173,14 @@
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#bar-sizing">条形尺寸</a>
+       <a href="#bar-sizing">条形尺寸</a>
         <ul>
           <li><a href="#width">宽度</a></li>
           <li><a href="#height">高度</a></li>
         </ul>
       </li>
       <li>
-        <a href="#labels">标签</a>
+       <a href="#labels">标签</a>
         <ul>
           <li><a href="#long-labels">长标签</a></li>
         </ul>
@@ -190,7 +190,7 @@
       <li><a href="#striped">条纹</a></li>
       <li><a href="#animated-stripes">动画条纹</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

@@ -13,9 +13,9 @@
     <h2 id="pointer-events">指针事件<a class="anchor-link" href="#pointer-events" aria-label="指针事件链接"></a></h2>
     <p>Bootstrap 提供了 <code>.pe-none</code> 和 <code>.pe-auto</code> 类，用于阻止或添加元素交互。</p>
     <Example
-      code='<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
-<p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
-<p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>'
+      code='<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a>can not be clicked.</p>
+<p><a href="#" class="pe-auto">This link</a>can be clicked (this is default behavior).</p>
+<p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a>can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However,<a href="#" class="pe-auto">this link</a>has a <code>pe-auto</code> class and can be clicked.</p>'
     />
     <p>
       <code>.pe-none</code> 类（及其设置的 <code>pointer-events</code> CSS 属性）只会阻止与指针（鼠标、触控笔、触摸）的交互。带有 <code>.pe-none</code> 的链接和控件默认仍然可供键盘用户聚焦和操作。要确保即使对键盘用户也完全失效，你可能需要添加额外的属性，例如 <code>tabindex=&quot;-1&quot;</code>（阻止它们获得键盘焦点）和 <code>aria-disabled=&quot;true&quot;</code>（向辅助技术传达它们实际上已被禁用的信息），并且可能需要使用 JavaScript 来完全阻止其可操作性。
@@ -29,7 +29,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       交互工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-interaction" file="scss/_utilities.scss" />
     <DocsPager />
@@ -41,7 +41,7 @@
       <li><a href="#text-selection">文本选择</a></li>
       <li><a href="#pointer-events">指针事件</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>

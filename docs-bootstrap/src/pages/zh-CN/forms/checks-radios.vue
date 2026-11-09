@@ -126,7 +126,7 @@
 </div>'
     />
     <p>
-      请务必进一步了解 <a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。
+      请务必进一步了解<a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。
     </p>
     <h2 id="default-stacked">默认（堆叠）<a class="anchor-link" href="#default-stacked" aria-label="默认（堆叠）链接"></a></h2>
     <p>默认情况下，任意数量的直接相邻的复选框和单选按钮都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
@@ -305,20 +305,20 @@
     <ul>
       <li><a href="#approach">实现方式</a></li>
       <li>
-        <a href="#checks">复选框</a>
+       <a href="#checks">复选框</a>
         <ul>
           <li><a href="#indeterminate">不确定状态</a></li>
           <li><a href="#disabled">禁用状态</a></li>
         </ul>
       </li>
       <li>
-        <a href="#radios">单选按钮</a>
+       <a href="#radios">单选按钮</a>
         <ul>
           <li><a href="#disabled-1">禁用状态</a></li>
         </ul>
       </li>
       <li>
-        <a href="#switches">开关</a>
+       <a href="#switches">开关</a>
         <ul>
           <li><a href="#native-switches">原生开关</a></li>
         </ul>
@@ -328,7 +328,7 @@
       <li><a href="#reverse">反向排列</a></li>
       <li><a href="#without-labels">不带标签</a></li>
       <li>
-        <a href="#toggle-buttons">切换按钮</a>
+       <a href="#toggle-buttons">切换按钮</a>
         <ul>
           <li><a href="#checkbox-toggle-buttons">复选框切换按钮</a></li>
           <li><a href="#radio-toggle-buttons">单选按钮切换按钮</a></li>
@@ -336,7 +336,7 @@
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

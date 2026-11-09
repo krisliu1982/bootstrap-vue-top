@@ -7,7 +7,7 @@
     <h2 id="background-color">背景色<a class="anchor-link" href="#background-color" aria-label="背景色链接"></a></h2>
     <p>
       与上下文文本颜色类类似，将元素的背景设置为任意上下文类。背景工具类<strong>不会设置 <code>color</code></strong
-      >，因此在某些情况下你会希望使用 <code>.text-*</code> <a href="/utilities/colors">颜色工具类</a>。
+      >，因此在某些情况下你会希望使用 <code>.text-*</code><a href="/utilities/colors">颜色工具类</a>。
     </p>
     <Callout>
       <p>由我们最初的 <code>$theme-colors</code> Sass 映射生成的 <code>.bg-*</code> 之类的背景工具类尚不能响应颜色模式，不过任何 <code>.bg-*-subtle</code> 工具类则可以。此问题将在 v6 中解决。</p> </Callout
@@ -65,7 +65,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>
       除了以下 Sass 功能之外，建议阅读有关我们内置的
-      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
+     <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>大多数 <code>background-color</code> 工具类由我们的主题颜色生成，这些主题颜色是从通用调色板变量重新分配的。</p>
@@ -94,7 +94,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       背景工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-bg-color" file="scss/_utilities.scss" />
     <DocsPager />
@@ -106,14 +106,14 @@
       <li><a href="#background-color">背景色</a></li>
       <li><a href="#background-gradient">背景渐变</a></li>
       <li>
-        <a href="#opacity">不透明度</a>
+       <a href="#opacity">不透明度</a>
         <ul>
           <li><a href="#how-it-works">工作原理</a></li>
           <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-maps">Sass 映射</a></li>

@@ -22,7 +22,7 @@
     </p>
     <Example
       code='<p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+ <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
   </a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -38,7 +38,7 @@
     <h2 id="horizontal">水平方向<a class="anchor-link" href="#horizontal" aria-label="水平方向链接"></a></h2>
     <p>
       折叠插件支持水平折叠。添加 <code>.collapse-horizontal</code> 修饰类，以过渡 <code>width</code> 而不是 <code>height</code>，并在直接子元素上设置 <code>width</code>。你可以随意编写自己的自定义 Sass、使用内联样式，或使用我们的
-      <a href="/utilities/sizing">宽度工具类</a>。
+     <a href="/utilities/sizing">宽度工具类</a>。
     </p>
     <Callout>
       <p>
@@ -66,7 +66,7 @@
     </p>
     <Example
       code='<p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+ <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
 </p>
@@ -99,7 +99,7 @@
     </p>
     <p>
       请注意，Bootstrap 当前的实现并未涵盖
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">ARIA Authoring Practices Guide 折叠面板模式</a>
+     <a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/">ARIA Authoring Practices Guide 折叠面板模式</a>
       中描述的各种<em>可选</em>键盘交互，你需要使用自定义 JavaScript 自行实现这些交互。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
@@ -277,14 +277,14 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       <li><a href="#multiple-toggles-and-targets">多个切换器和目标</a></li>
       <li><a href="#accessibility">无障碍访问</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#classes">类</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

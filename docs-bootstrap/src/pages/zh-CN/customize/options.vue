@@ -32,7 +32,7 @@
             <td><code>true</code>（默认）或 <code>false</code></td>
             <td>
               在整个项目及其组件中启用内置的
-              <a href="/customize/color-modes#dark-mode">深色模式支持</a>。
+             <a href="/customize/color-modes#dark-mode">深色模式支持</a>。
             </td>
           </tr>
           <tr>
@@ -60,7 +60,7 @@
             <td><code>true</code> （默认） or <code>false</code></td>
             <td>
               启用
-              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>，它会根据用户的浏览器/操作系统偏好设置抑制某些动画/过渡效果。
+             <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>，它会根据用户的浏览器/操作系统偏好设置抑制某些动画/过渡效果。
             </td>
           </tr>
           <tr>
@@ -91,7 +91,7 @@
           <tr>
             <td><code>$enable-rfs</code></td>
             <td><code>true</code> （默认） or <code>false</code></td>
-            <td>全局启用 <a href="/getting-started/rfs">RFS</a>。</td>
+            <td>全局启用<a href="/getting-started/rfs">RFS</a>。</td>
           </tr>
           <tr>
             <td><code>$enable-validation-icons</code></td>
@@ -120,7 +120,7 @@
             <td><code>true</code> （默认） or <code>false</code></td>
             <td>
               全局应用 <code>scroll-behavior: smooth</code>，但通过
-              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>请求减少动态效果的用户除外
+             <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>请求减少动态效果的用户除外
             </td>
           </tr>
         </tbody>

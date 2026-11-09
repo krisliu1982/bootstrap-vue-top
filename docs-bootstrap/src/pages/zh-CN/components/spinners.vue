@@ -62,7 +62,7 @@
 </div>'
     />
     <h3 id="placement">放置<a class="anchor-link" href="#placement" aria-label="放置链接"></a></h3>
-    <p>使用 <a href="/utilities/flex">flexbox 工具类</a>、<a href="/utilities/float">浮动工具类</a>或<a href="/utilities/text">文本对齐</a>工具类，将加载动画精确放置到任何场景中你需要的位置。</p>
+    <p>使用<a href="/utilities/flex">flexbox 工具类</a>、<a href="/utilities/float">浮动工具类</a>或<a href="/utilities/text">文本对齐</a>工具类，将加载动画精确放置到任何场景中你需要的位置。</p>
     <h4 id="flex">Flex</h4>
     <Example
       code='<div class="d-flex justify-content-center">
@@ -157,14 +157,14 @@
     <ul>
       <li><a href="#about">关于</a></li>
       <li>
-        <a href="#border-spinner">边框加载动画</a>
+       <a href="#border-spinner">边框加载动画</a>
         <ul>
           <li><a href="#colors">颜色</a></li>
         </ul>
       </li>
       <li><a href="#growing-spinner">增长加载动画</a></li>
       <li>
-        <a href="#alignment">对齐</a>
+       <a href="#alignment">对齐</a>
         <ul>
           <li><a href="#margin">外边距</a></li>
           <li><a href="#placement">放置</a></li>
@@ -173,7 +173,7 @@
       <li><a href="#size">尺寸</a></li>
       <li><a href="#buttons">按钮</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

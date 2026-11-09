@@ -9,10 +9,10 @@
     </p>
     <p>
       长宽比在 Sass 映射中声明，并通过 CSS 变量包含在每个类中，这也支持
-      <a href="#custom-ratios">自定义长宽比</a>。
+     <a href="#custom-ratios">自定义长宽比</a>。
     </p>
     <Callout>
-      <p><strong>专业提示！</strong>你无需在 <code>&lt;iframe&gt;</code> 上添加 <code>frameborder=&quot;0&quot;</code>，因为我们在 <a href="/content/reboot">Reboot</a> 中已经为你覆盖了该设置。</p>
+      <p><strong>专业提示！</strong>你无需在 <code>&lt;iframe&gt;</code> 上添加 <code>frameborder=&quot;0&quot;</code>，因为我们在<a href="/content/reboot">Reboot</a>中已经为你覆盖了该设置。</p>
     </Callout>
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>将任意嵌入内容（如 <code>&lt;iframe&gt;</code>）包裹在带有 <code>.ratio</code> 和长宽比类的父元素中。得益于通配选择器 <code>.ratio &gt; *</code>，直接子元素会自动调整尺寸。</p>
@@ -76,7 +76,7 @@
       <li><a href="#aspect-ratios">长宽比</a></li>
       <li><a href="#custom-ratios">自定义比例</a></li>
       <li>
-        <a href="#sass-maps">Sass 映射</a>
+       <a href="#sass-maps">Sass 映射</a>
       </li>
     </ul>
   </nav>

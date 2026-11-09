@@ -5,7 +5,7 @@
 
     <p>
       堆叠组件为应用一系列弹性布局属性提供了捷径，可快速轻松地在 Bootstrap 中创建布局。该概念和实现的灵感归功于开源
-      <a href="https://almonk.github.io/pylon/">Pylon 项目</a>。
+     <a href="https://almonk.github.io/pylon/">Pylon 项目</a>。
     </p>
     <Callout type="warning">
       <p><strong>请注意！</strong>在 Safari 14.5 之前的版本中，不支持弹性布局的间隔（gap）工具类，因此请考虑验证目标浏览器的支持情况。网格布局应该没有问题。<a href="https://caniuse.com/flexbox-gap">了解更多</a>。</p>
@@ -78,7 +78,7 @@
       <li><a href="#horizontal">水平</a></li>
       <li><a href="#examples">示例</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
       </li>
     </ul>
   </nav>

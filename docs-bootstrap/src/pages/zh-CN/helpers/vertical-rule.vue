@@ -44,7 +44,7 @@
       <li><a href="#example">示例</a></li>
       <li><a href="#with-stacks">与堆叠配合使用</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

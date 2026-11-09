@@ -14,7 +14,7 @@
           <div class="card-body">
             <h5 class="card-title">卡片标题</h5>
             <p class="card-text">一些用于构建卡片标题的简短示例文本，并构成卡片内容的大部分。</p>
-            <a href="#" class="btn btn-primary">前往某处</a>
+           <a href="#" class="btn btn-primary">前往某处</a>
           </div>
         </div>
         <div class="card" aria-hidden="true">
@@ -30,7 +30,7 @@
               <span class="placeholder col-6"></span>
               <span class="placeholder col-8"></span>
             </p>
-            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+           <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -59,7 +59,7 @@
       <span class="placeholder col-6"></span>
       <span class="placeholder col-8"></span>
     </p>
-    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+   <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
   </div>
 </div>'
       lang="html"
@@ -129,7 +129,7 @@
       <li><a href="#about">关于</a></li>
       <li><a href="#example">示例</a></li>
       <li>
-        <a href="#how-it-works">工作原理</a>
+       <a href="#how-it-works">工作原理</a>
         <ul>
           <li><a href="#width">宽度</a></li>
           <li><a href="#color">颜色</a></li>
@@ -138,7 +138,7 @@
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

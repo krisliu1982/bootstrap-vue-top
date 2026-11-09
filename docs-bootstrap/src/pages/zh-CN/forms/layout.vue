@@ -316,7 +316,7 @@
       <li><a href="#form-grid">表单网格</a></li>
       <li><a href="#gutters">间距</a></li>
       <li>
-        <a href="#horizontal-form">水平表单</a>
+       <a href="#horizontal-form">水平表单</a>
         <ul>
           <li><a href="#horizontal-form-label-sizing">水平表单标签尺寸</a></li>
         </ul>
@@ -324,7 +324,7 @@
       <li><a href="#column-sizing">列尺寸</a></li>
       <li><a href="#auto-sizing">自动尺寸</a></li>
       <li>
-        <a href="#inline-forms">行内表单</a>
+       <a href="#inline-forms">行内表单</a>
       </li>
     </ul>
   </nav>

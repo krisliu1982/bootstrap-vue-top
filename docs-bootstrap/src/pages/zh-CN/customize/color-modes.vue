@@ -5,8 +5,8 @@
 
     <Callout>
       <p>
-        <strong>亲自试一试！</strong>从 <a href="https://github.com/twbs/examples/tree/main/color-modes">twbs/examples 仓库</a>下载将 Bootstrap 与 Stylelint 以及颜色模式配合使用的源代码和工作演示。你也可以
-        <a href="https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html">在 StackBlitz 中打开该示例</a>。
+        <strong>亲自试一试！</strong>从<a href="https://github.com/twbs/examples/tree/main/color-modes">twbs/examples 仓库</a>下载将 Bootstrap 与 Stylelint 以及颜色模式配合使用的源代码和工作演示。你也可以
+       <a href="https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html">在 StackBlitz 中打开该示例</a>。
       </p>
     </Callout>
     <h2 id="dark-mode">深色模式<a class="anchor-link" href="#dark-mode" aria-label="深色模式"></a></h2>
@@ -16,7 +16,7 @@
     </p>
     <p>
       或者，你也可以借助我们的颜色模式 mixin 切换到媒体查询的实现方式——详见
-      <a href="#building-with-sass">用法部分</a>。但请注意，这会让你无法像下面展示的那样按组件逐个更改主题。
+     <a href="#building-with-sass">用法部分</a>。但请注意，这会让你无法像下面展示的那样按组件逐个更改主题。
     </p>
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>例如，要更改下拉菜单的颜色模式，请将 <code>data-bs-theme=&quot;light&quot;</code> 或 <code>data-bs-theme=&quot;dark&quot;</code> 添加到父级 <code>.dropdown</code> 上。这样，无论全局颜色模式是什么，这些下拉菜单都会以指定的主题值显示。</p>
@@ -100,7 +100,7 @@
     />
     <p>
       Bootstrap 尚未内置颜色模式选择器，但如果你愿意，可以使用我们自己文档中的选择器。
-      <a href="#javascript">在 JavaScript 部分了解更多。</a>
+     <a href="#javascript">在 JavaScript 部分了解更多。</a>
     </p>
     <h3 id="building-with-sass">使用 Sass 构建<a class="anchor-link" href="#building-with-sass" aria-label="使用 Sass 构建"></a></h3>
     <p>我们新的深色模式选项可供所有 Bootstrap 用户使用，但它通过 data 属性而不是媒体查询来控制，且不会自动切换项目的颜色模式。你可以通过将 <code>$enable-dark-mode</code> 更改为 <code>false</code>，在 Sass 中完全禁用我们的深色模式。</p>
@@ -345,7 +345,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin"></a></h3>
     <p>
       深色模式以及你创建的任何自定义颜色模式的样式，都可以使用可自定义的 <code>color-mode()</code> mixin，将作用域适当地限定到
-      <code>data-bs-theme</code> 属性选择器或媒体查询。更多细节请参阅 <a href="#building-with-sass">Sass 用法部分</a>。
+      <code>data-bs-theme</code> 属性选择器或媒体查询。更多细节请参阅<a href="#building-with-sass">Sass 用法部分</a>。
     </p>
     <ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
     <DocsPager />
@@ -358,7 +358,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <li><a href="#example">示例</a></li>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#enable-dark-mode">启用深色模式</a></li>
           <li><a href="#building-with-sass">使用 Sass 构建</a></li>
@@ -368,7 +368,7 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
       <li><a href="#javascript">JavaScript</a></li>
       <li><a href="#adding-theme-colors">添加主题色</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

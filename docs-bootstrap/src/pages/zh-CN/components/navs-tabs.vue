@@ -13,16 +13,16 @@
     <Example
       code='<ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -32,10 +32,10 @@
     </p>
     <Example
       code='<nav class="nav">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+ <a class="nav-link active" aria-current="page" href="#">Active</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h2 id="available-styles">可用样式<a class="anchor-link" href="#available-styles" aria-label="可用样式链接"></a></h2>
@@ -48,16 +48,16 @@
     <Example
       code='<ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -65,16 +65,16 @@
     <Example
       code='<ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -83,26 +83,26 @@
     <Example
       code='<ul class="nav flex-column">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
     <p>一如既往，垂直导航也可以不使用 <code>&lt;ul&gt;</code>。</p>
     <Example
       code='<nav class="nav flex-column">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+ <a class="nav-link active" aria-current="page" href="#">Active</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h3 id="tabs">标签页<a class="anchor-link" href="#tabs" aria-label="标签页链接"></a></h3>
@@ -110,16 +110,16 @@
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -128,16 +128,16 @@
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -146,16 +146,16 @@
     <Example
       code='<ul class="nav nav-underline">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -164,65 +164,65 @@
     <Example
       code='<ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Much longer nav link</a>
+   <a class="nav-link" href="#">Much longer nav link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
     <p>使用基于 <code>&lt;nav&gt;</code> 的导航时，可以放心省略 <code>.nav-item</code>，因为为 <code>&lt;a&gt;</code> 元素添加样式只需 <code>.nav-link</code>。</p>
     <Example
       code='<nav class="nav nav-pills nav-fill">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">Much longer nav link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+ <a class="nav-link active" aria-current="page" href="#">Active</a>
+ <a class="nav-link" href="#">Much longer nav link</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <p>若要使各元素宽度相等，请使用 <code>.nav-justified</code>。所有水平空间都会被导航链接占用，但与上面的 <code>.nav-fill</code> 不同，每个导航项的宽度都相同。</p>
     <Example
       code='<ul class="nav nav-pills nav-justified">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Much longer nav link</a>
+   <a class="nav-link" href="#">Much longer nav link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
     <p>与使用基于 <code>&lt;nav&gt;</code> 导航的 <code>.nav-fill</code> 示例类似。</p>
     <Example
       code='<nav class="nav nav-pills nav-justified">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">Much longer nav link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+ <a class="nav-link active" aria-current="page" href="#">Active</a>
+ <a class="nav-link" href="#">Much longer nav link</a>
+ <a class="nav-link" href="#">Link</a>
+ <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h2 id="working-with-flex-utilities">配合 Flex 工具类使用<a class="anchor-link" href="#working-with-flex-utilities" aria-label="配合 Flex 工具类使用"></a></h2>
     <p>
       如果你需要响应式的导航变体，可以考虑使用一系列
-      <a href="/utilities/flex">flexbox 工具类</a>。虽然写法更冗长，但这些工具类能在各个响应式断点上提供更强的定制能力。在下面的示例中，我们的导航会在最小断点下堆叠显示，然后在小断点及以上时切换为水平布局并填满可用宽度。
+     <a href="/utilities/flex">flexbox 工具类</a>。虽然写法更冗长，但这些工具类能在各个响应式断点上提供更强的定制能力。在下面的示例中，我们的导航会在最小断点下堆叠显示，然后在小断点及以上时切换为水平布局并填满可用宽度。
     </p>
     <Example
       code='<nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-  <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+ <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+ <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+ <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+ <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h2 id="regarding-accessibility">关于无障碍访问<a class="anchor-link" href="#regarding-accessibility" aria-label="关于无障碍访问"></a></h2>
@@ -231,21 +231,21 @@
     </p>
     <p>
       请注意，导航栏即使在视觉上使用 <code>.nav-tabs</code> 类样式化为标签页，也<strong>不应</strong>添加 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code> 或 <code>role=&quot;tabpanel&quot;</code> 属性。这些属性仅适用于动态标签页界面，如
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述。本节中的动态标签页界面示例请参阅 <a href="#javascript-behavior">JavaScript 行为</a>。动态标签页界面不需要 <code>aria-current</code> 属性，因为我们的 JavaScript 会通过在活动标签页上添加 <code>aria-selected=&quot;true&quot;</code> 来处理选中状态。
+     <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述。本节中的动态标签页界面示例请参阅<a href="#javascript-behavior">JavaScript 行为</a>。动态标签页界面不需要 <code>aria-current</code> 属性，因为我们的 JavaScript 会通过在活动标签页上添加 <code>aria-selected=&quot;true&quot;</code> 来处理选中状态。
     </p>
     <h2 id="using-dropdowns">使用下拉菜单<a class="anchor-link" href="#using-dropdowns" aria-label="使用下拉菜单"></a></h2>
     <p>
       添加少量额外 HTML 并配合
-      <a href="/components/dropdowns#usage">下拉菜单 JavaScript 插件</a>即可使用下拉菜单。
+     <a href="/components/dropdowns#usage">下拉菜单 JavaScript 插件</a>即可使用下拉菜单。
     </p>
     <h3 id="tabs-with-dropdowns">带下拉菜单的标签页<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="带下拉菜单的标签页"></a></h3>
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -255,10 +255,10 @@
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -266,10 +266,10 @@
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+   <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -279,10 +279,10 @@
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+   <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -521,12 +521,12 @@
     <h3 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问"></a></h3>
     <p>
       如
-      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述，动态标签页界面需要 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code>、<code>role=&quot;tabpanel&quot;</code> 以及其他 <code>aria-</code> 属性，以便向辅助技术（如屏幕阅读器）用户传达其结构、功能和当前状态。作为最佳实践，我们建议对标签页使用 <code>&lt;button&gt;</code> 元素，因为它们是触发动态变化的控件，而不是跳转到新页面或位置的链接。
+     <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述，动态标签页界面需要 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code>、<code>role=&quot;tabpanel&quot;</code> 以及其他 <code>aria-</code> 属性，以便向辅助技术（如屏幕阅读器）用户传达其结构、功能和当前状态。作为最佳实践，我们建议对标签页使用 <code>&lt;button&gt;</code> 元素，因为它们是触发动态变化的控件，而不是跳转到新页面或位置的链接。
     </p>
     <p>
       依据 ARIA 创作实践模式，只有当前活动的标签页会获得键盘焦点。JavaScript 插件初始化时，会为所有非活动标签页控件设置
       <code>tabindex=&quot;-1&quot;</code>。当当前活动标签页获得焦点后，方向键可激活上一个/下一个标签页。<kbd>Home</kbd> 和 <kbd>End</kbd> 键分别激活第一个和最后一个标签页。插件会相应地更改
-      <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a>。
+     <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a>。
       但请注意，在方向键交互方面，JavaScript 插件并不区分水平与垂直的标签页列表：无论标签页列表的方向如何，向上
       <em>和</em>向左方向键都会切换到上一个标签页，向下<em>和</em>向右方向键都会切换到下一个标签页。
     </p>
@@ -711,7 +711,7 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     <ul>
       <li><a href="#base-nav">基础导航</a></li>
       <li>
-        <a href="#available-styles">可用样式</a>
+       <a href="#available-styles">可用样式</a>
         <ul>
           <li><a href="#horizontal-alignment">水平对齐</a></li>
           <li><a href="#vertical">垂直方向</a></li>
@@ -724,21 +724,21 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
       <li><a href="#working-with-flex-utilities">配合 Flex 工具类使用</a></li>
       <li><a href="#regarding-accessibility">关于无障碍访问</a></li>
       <li>
-        <a href="#using-dropdowns">使用下拉菜单</a>
+       <a href="#using-dropdowns">使用下拉菜单</a>
         <ul>
           <li><a href="#tabs-with-dropdowns">带下拉菜单的标签页</a></li>
           <li><a href="#pills-with-dropdowns">带下拉菜单的胶囊导航</a></li>
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript 行为</a>
+       <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#accessibility">无障碍访问</a></li>
           <li><a href="#using-data-attributes">使用数据属性</a></li>

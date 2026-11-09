@@ -75,7 +75,7 @@
     <h2 id="media-queries">媒体查询<a class="anchor-link" href="#media-queries" aria-label="媒体查询链接"></a></h2>
     <p>
       由于 Bootstrap 是以移动优先的方式开发的，我们使用了一些
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">媒体查询</a>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">媒体查询</a>
       来为我们的布局和界面创建合理的断点。这些断点主要基于最小视口宽度，允许我们在视口变化时放大元素。
     </p>
     <h3 id="min-width">最小宽度（Min-width）<a class="anchor-link" href="#min-width" aria-label="最小宽度链接"></a></h3>
@@ -210,7 +210,7 @@
       <li><a href="#core-concepts">核心概念</a></li>
       <li><a href="#available-breakpoints">可用断点</a></li>
       <li>
-        <a href="#media-queries">媒体查询</a>
+       <a href="#media-queries">媒体查询</a>
         <ul>
           <li><a href="#min-width">最小宽度（Min-width）</a></li>
           <li><a href="#max-width">最大宽度（Max-width）</a></li>

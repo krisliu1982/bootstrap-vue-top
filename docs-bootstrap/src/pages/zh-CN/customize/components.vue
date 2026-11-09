@@ -22,7 +22,7 @@
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
     <p>
       有关如何修改 Sass 映射和变量的更多信息和示例，请参阅
-      <a href="/layout/grid#css">栅格文档的 CSS 部分</a>。
+     <a href="/layout/grid#css">栅格文档的 CSS 部分</a>。
     </p>
     <h2 id="creating-your-own">创建你自己的组件<a class="anchor-link" href="#creating-your-own" aria-label="创建你自己的组件"></a></h2>
     <p>我们鼓励你在使用 Bootstrap 创建自己的组件时遵循这些指导原则。我们已在文档和示例中的自定义组件上扩展了这种方法。像我们的提示框（callout）这样的组件，其构建方式与我们提供的组件完全一样，都使用基础类和修饰类。</p>
@@ -67,7 +67,7 @@
       <li><a href="#modifiers">修饰类</a></li>
       <li><a href="#responsive">响应式</a></li>
       <li>
-        <a href="#creating-your-own">创建你自己的组件</a>
+       <a href="#creating-your-own">创建你自己的组件</a>
       </li>
     </ul>
   </nav>

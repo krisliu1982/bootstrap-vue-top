@@ -135,7 +135,7 @@
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
       请阅读
-      <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
+     <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
@@ -312,7 +312,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#example">示例</a>
+       <a href="#example">示例</a>
         <ul>
           <li><a href="#flush">贴边显示</a></li>
           <li><a href="#always-open">始终展开</a></li>
@@ -320,14 +320,14 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       </li>
       <li><a href="#accessibility">无障碍</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

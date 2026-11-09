@@ -11,7 +11,7 @@
     <p>卡片以尽可能少的标记和样式构建，但仍能提供大量控制和自定义能力。它们基于 flexbox 构建，提供简便的对齐方式，并能与其他 Bootstrap 组件良好配合。它们默认没有 <code>margin</code>，因此可根据需要使用<a href="/utilities/spacing">间距工具类</a>。</p>
     <p>
       下面是一个具有混合内容和固定宽度的基本卡片示例。卡片初始没有固定宽度，因此会自然填满其父元素的全部宽度。可以通过我们的各种
-      <a href="#sizing">尺寸选项</a>轻松自定义。
+     <a href="#sizing">尺寸选项</a>轻松自定义。
     </p>
     <ExampleCustom
       code='<div class="card" style="width: 18rem;">
@@ -19,7 +19,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
       ><div class="card" style="width: 18rem">
@@ -27,7 +27,7 @@
         <div class="card-body">
           <h5 class="card-title">卡片标题</h5>
           <p class="card-text">一些快速示例文本，用于在卡片标题基础上构建并构成卡片内容的主体。</p>
-          <a href="#" class="btn btn-primary">前往某处</a>
+         <a href="#" class="btn btn-primary">前往某处</a>
         </div>
       </div></ExampleCustom
     >
@@ -51,8 +51,8 @@
     <h5 class="card-title">Card title</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+   <a href="#" class="card-link">Card link</a>
+   <a href="#" class="card-link">Another link</a>
   </div>
 </div>'
     />
@@ -120,8 +120,8 @@
     <li class="list-group-item">A third item</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+   <a href="#" class="card-link">Card link</a>
+   <a href="#" class="card-link">Another link</a>
   </div>
 </div>'
       ><div class="card" style="width: 18rem">
@@ -136,8 +136,8 @@
           <li class="list-group-item">第三个项目</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">卡片链接</a>
-          <a href="#" class="card-link">另一个链接</a>
+         <a href="#" class="card-link">卡片链接</a>
+         <a href="#" class="card-link">另一个链接</a>
         </div>
       </div></ExampleCustom
     >
@@ -151,7 +151,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -162,7 +162,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     /><Example
@@ -189,7 +189,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
   <div class="card-footer text-body-secondary">
     2 days ago
@@ -207,7 +207,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+       <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -216,7 +216,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+       <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -229,7 +229,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Button</a>
+   <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
 
@@ -237,7 +237,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Button</a>
+   <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>'
     />
@@ -248,21 +248,21 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
     <h2 id="text-alignment">文本对齐<a class="anchor-link" href="#text-alignment" aria-label="文本对齐链接"></a></h2>
     <p>
       你可以使用我们的
-      <a href="/utilities/text#text-alignment">文本对齐类</a>快速更改任意卡片的文本对齐方式——无论是整体还是特定部分。
+     <a href="/utilities/text#text-alignment">文本对齐类</a>快速更改任意卡片的文本对齐方式——无论是整体还是特定部分。
     </p>
     <Example
       code='<div class="card mb-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -270,7 +270,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -278,34 +278,34 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
     <h2 id="navigation">导航<a class="anchor-link" href="#navigation" aria-label="导航链接"></a></h2>
     <p>
       使用 Bootstrap 的
-      <a href="/components/navs-tabs">导航组件</a>为卡片的页眉（或块）添加一些导航。
+     <a href="/components/navs-tabs">导航组件</a>为卡片的页眉（或块）添加一些导航。
     </p>
     <Example
       code='<div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="true" href="#">Active</a>
+       <a class="nav-link active" aria-current="true" href="#">Active</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+       <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+       <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </li>
     </ul>
   </div>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     /><Example
@@ -313,20 +313,20 @@
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+       <a class="nav-link active" href="#">Active</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+       <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+       <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </li>
     </ul>
   </div>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -430,8 +430,8 @@
     <h3 id="background-and-color">背景和颜色<a class="anchor-link" href="#background-and-color" aria-label="背景和颜色链接"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>设置具有对比前景 <code>color</code> 的 <code>background-color</code>。以前需要手动搭配所选的 <a href="/utilities/colors"><code>.text-{color}</code></a> 和
-      <a href="/utilities/background"><code>.bg-{color}</code></a> 工具类进行样式设置，如果你愿意，仍可继续使用。
+      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>设置具有对比前景 <code>color</code> 的 <code>background-color</code>。以前需要手动搭配所选的<a href="/utilities/colors"><code>.text-{color}</code></a>和
+     <a href="/utilities/background"><code>.bg-{color}</code></a>工具类进行样式设置，如果你愿意，仍可继续使用。
     </p>
     <Example
       :code="
@@ -612,7 +612,7 @@
     <h3 id="grid-cards">网格卡片<a class="anchor-link" href="#grid-cards" aria-label="网格卡片链接"></a></h3>
     <p>
       使用 Bootstrap 网格系统及其
-      <a href="/layout/grid#row-columns"><code>.row-cols</code> 类</a>来控制每行显示的网格列数（包裹卡片）。例如，这里的 <code>.row-cols-1</code> 将卡片排成一列，而 <code>.row-cols-md-2</code> 在中型断点及以上将四张卡片分成等宽的多行。
+     <a href="/layout/grid#row-columns"><code>.row-cols</code> 类</a>来控制每行显示的网格列数（包裹卡片）。例如，这里的 <code>.row-cols-1</code> 将卡片排成一列，而 <code>.row-cols-md-2</code> 在中型断点及以上将四张卡片分成等宽的多行。
     </p>
     <ExampleCustom
       code='<div class="row row-cols-1 row-cols-md-2 g-4">
@@ -953,7 +953,7 @@
       <li><a href="#about">关于</a></li>
       <li><a href="#example">示例</a></li>
       <li>
-        <a href="#content-types">内容类型</a>
+       <a href="#content-types">内容类型</a>
         <ul>
           <li><a href="#body">Body</a></li>
           <li><a href="#titles-text-and-links">标题、文本和链接</a></li>
@@ -964,7 +964,7 @@
         </ul>
       </li>
       <li>
-        <a href="#sizing">尺寸</a>
+       <a href="#sizing">尺寸</a>
         <ul>
           <li><a href="#using-grid-markup">使用网格标记</a></li>
           <li><a href="#using-utilities">使用工具类</a></li>
@@ -974,7 +974,7 @@
       <li><a href="#text-alignment">文本对齐</a></li>
       <li><a href="#navigation">导航</a></li>
       <li>
-        <a href="#images-1">图片</a>
+       <a href="#images-1">图片</a>
         <ul>
           <li><a href="#image-caps">图片封面</a></li>
           <li><a href="#image-overlays">图片叠加</a></li>
@@ -982,7 +982,7 @@
       </li>
       <li><a href="#horizontal">水平排列</a></li>
       <li>
-        <a href="#card-styles">卡片样式</a>
+       <a href="#card-styles">卡片样式</a>
         <ul>
           <li><a href="#background-and-color">背景和颜色</a></li>
           <li><a href="#border">边框</a></li>
@@ -990,7 +990,7 @@
         </ul>
       </li>
       <li>
-        <a href="#card-layout">卡片布局</a>
+       <a href="#card-layout">卡片布局</a>
         <ul>
           <li><a href="#card-groups">卡片组</a></li>
           <li><a href="#grid-cards">网格卡片</a></li>
@@ -998,7 +998,7 @@
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

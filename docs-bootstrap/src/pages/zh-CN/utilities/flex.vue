@@ -595,7 +595,7 @@
     <h2 id="media-object">媒体对象<a class="anchor-link" href="#media-object" aria-label="媒体对象链接"></a></h2>
     <p>
       想在 Bootstrap 4 中复刻
-      <a href="https://getbootstrap.com/docs/4.6/components/media-object/">媒体对象组件</a>吗？借助几个弹性布局工具类，你就能立即重现它，而且比以往更加灵活、更易于定制。
+     <a href="https://getbootstrap.com/docs/4.6/components/media-object/">媒体对象组件</a>吗？借助几个弹性布局工具类，你就能立即重现它，而且比以往更加灵活、更易于定制。
     </p>
     <ExampleCustom
       code='<div class="d-flex">
@@ -634,7 +634,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       弹性布局工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-flex" file="scss/_utilities.scss" />
     <DocsPager />
@@ -651,7 +651,7 @@
       <li><a href="#fill">填充</a></li>
       <li><a href="#grow-and-shrink">增长与收缩</a></li>
       <li>
-        <a href="#auto-margins">自动外边距</a>
+       <a href="#auto-margins">自动外边距</a>
         <ul>
           <li><a href="#with-align-items">配合 align-items 使用</a></li>
         </ul>
@@ -661,7 +661,7 @@
       <li><a href="#align-content">内容对齐</a></li>
       <li><a href="#media-object">媒体对象</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>

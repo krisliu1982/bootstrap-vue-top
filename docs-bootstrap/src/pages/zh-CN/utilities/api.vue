@@ -5,7 +5,7 @@
 
     <p>
       Bootstrap 的工具类由我们的工具类 API 生成，你可以通过 Sass 修改或扩展默认的工具类集合。我们的工具类 API 基于一系列 Sass 映射和函数，用于生成带有各种选项的类族。如果你不熟悉 Sass 映射，请先阅读
-      <a href="https://sass-lang.com/documentation/values/maps/">Sass 官方文档</a>以入门。
+     <a href="https://sass-lang.com/documentation/values/maps/">Sass 官方文档</a>以入门。
     </p>
     <p><code>$utilities</code> 映射包含我们的所有工具类，如果存在自定义的 <code>$utilities</code> 映射，它稍后会与之合并。工具类映射包含一个带键的工具类组列表，这些组接受以下选项：</p>
     <div class="table-responsive">
@@ -21,7 +21,7 @@
         <tbody>
           <tr>
             <td>
-              <a href="#property"><code>property</code></a>
+             <a href="#property"><code>property</code></a>
             </td>
             <td><strong>必需</strong></td>
             <td>–</td>
@@ -29,7 +29,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#values"><code>values</code></a>
+             <a href="#values"><code>values</code></a>
             </td>
             <td><strong>必需</strong></td>
             <td>–</td>
@@ -40,7 +40,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#class"><code>class</code></a>
+             <a href="#class"><code>class</code></a>
             </td>
             <td>可选</td>
             <td>null</td>
@@ -48,7 +48,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#css-variable-utilities"><code>css-var</code></a>
+             <a href="#css-variable-utilities"><code>css-var</code></a>
             </td>
             <td>可选</td>
             <td><code>false</code></td>
@@ -56,7 +56,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#css-variable-utilities"><code>css-variable-name</code></a>
+             <a href="#css-variable-utilities"><code>css-variable-name</code></a>
             </td>
             <td>可选</td>
             <td>null</td>
@@ -64,7 +64,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#local-css-variables"><code>local-vars</code></a>
+             <a href="#local-css-variables"><code>local-vars</code></a>
             </td>
             <td>可选</td>
             <td>null</td>
@@ -72,7 +72,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#states"><code>state</code></a>
+             <a href="#states"><code>state</code></a>
             </td>
             <td>可选</td>
             <td>null</td>
@@ -80,7 +80,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#responsive"><code>responsive</code></a>
+             <a href="#responsive"><code>responsive</code></a>
             </td>
             <td>可选</td>
             <td><code>false</code></td>
@@ -94,7 +94,7 @@
           </tr>
           <tr>
             <td>
-              <a href="#print"><code>print</code></a>
+             <a href="#print"><code>print</code></a>
             </td>
             <td>可选</td>
             <td><code>false</code></td>
@@ -161,7 +161,7 @@
     <p>使用 <code>values</code> 键来指定生成的类名和规则中应为指定的 <code>property</code> 使用哪些值。它可以是列表或映射（在工具类中或 Sass 变量中设置）。</p>
     <p>
       作为列表，就像
-      <a href="/utilities/text#text-decoration"><code>text-decoration</code> 工具类</a>那样：
+     <a href="/utilities/text#text-decoration"><code>text-decoration</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: none underline line-through
@@ -169,7 +169,7 @@
       lang="scss"
     />
     <p>
-      作为映射，就像 <a href="/utilities/opacity"><code>opacity</code> 工具类</a>那样：
+      作为映射，就像<a href="/utilities/opacity"><code>opacity</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: (
@@ -184,7 +184,7 @@
     />
     <p>
       作为设置列表或映射的 Sass 变量，就像我们的
-      <a href="/utilities/position"><code>position</code> 工具类</a>那样：
+     <a href="/utilities/position"><code>position</code> 工具类</a>那样：
     </p>
     <CodeWrapper
       code="values: $position-values
@@ -600,7 +600,7 @@ $utilities: map-merge(
     <h3 id="remove-utilities">移除工具类<a class="anchor-link" href="#remove-utilities" aria-label="移除工具类"></a></h3>
     <p>
       使用
-      <a href="https://sass-lang.com/documentation/modules/map/#remove"><code>map-remove()</code> Sass 函数</a>移除任意默认工具类。
+     <a href="https://sass-lang.com/documentation/modules/map/#remove"><code>map-remove()</code> Sass 函数</a>移除任意默认工具类。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -619,7 +619,7 @@ $utilities: map-remove($utilities, "width", "float");
     />
     <p>
       你也可以使用
-      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>，并将组的键设为 <code>null</code> 来移除该工具类。
+     <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>，并将组的键设为 <code>null</code> 来移除该工具类。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -643,7 +643,7 @@ $utilities: map-merge(
     <h3 id="add-remove-modify">添加、移除与修改<a class="anchor-link" href="#add-remove-modify" aria-label="添加、移除与修改"></a></h3>
     <p>
       你可以使用
-      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>一次性添加、移除和修改多个工具类。下面展示了如何将前面的示例合并为一个更大的映射。
+     <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass 函数</a>一次性添加、移除和修改多个工具类。下面展示了如何将前面的示例合并为一个更大的映射。
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -680,7 +680,7 @@ $utilities: map-merge(
     <h4 id="remove-utility-in-rtl">在 RTL 中移除工具类</h4>
     <p>
       某些边缘情况会使
-      <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL 样式编写变得困难</a>，例如阿拉伯语中的换行。因此，可以通过将 <code>rtl</code> 选项设为 <code>false</code>，将工具类从 RTL 输出中移除：
+     <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL 样式编写变得困难</a>，例如阿拉伯语中的换行。因此，可以通过将 <code>rtl</code> 选项设为 <code>false</code>，将工具类从 RTL 输出中移除：
     </p>
     <CodeWrapper
       code='$utilities: (
@@ -707,7 +707,7 @@ $utilities: map-merge(
     />
     <p>
       由于使用了
-      <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">RTLCSS 的 <code>remove</code> 控制指令</a>，这在 RTL 中不会输出任何内容。
+     <a href="https://rtlcss.com/learn/usage-guide/control-directives/#remove">RTLCSS 的 <code>remove</code> 控制指令</a>，这在 RTL 中不会输出任何内容。
     </p>
     <DocsPager />
   </article>
@@ -716,7 +716,7 @@ $utilities: map-merge(
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#api-explained">API 说明</a>
+       <a href="#api-explained">API 说明</a>
         <ul>
           <li><a href="#property">property 属性</a></li>
           <li><a href="#values">values 值</a></li>
@@ -730,7 +730,7 @@ $utilities: map-merge(
       </li>
       <li><a href="#importance">重要性</a></li>
       <li>
-        <a href="#using-the-api">使用 API</a>
+       <a href="#using-the-api">使用 API</a>
         <ul>
           <li><a href="#override-utilities">覆盖工具类</a></li>
           <li><a href="#add-utilities">添加工具类</a></li>

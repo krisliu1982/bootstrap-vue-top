@@ -174,7 +174,7 @@ $gutters: (
       <li><a href="#row-columns-gutters">行内列间距</a></li>
       <li><a href="#no-gutters">无间距</a></li>
       <li>
-        <a href="#change-the-gutters">修改间距</a>
+       <a href="#change-the-gutters">修改间距</a>
       </li>
     </ul>
   </nav>

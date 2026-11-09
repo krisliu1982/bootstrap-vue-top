@@ -6,7 +6,7 @@
     <p>入门页面提供了对项目及其功能的入门介绍，而本文档则侧重于说明我们在 Bootstrap 中做事的 <em>原因</em>。它阐释了我们基于 Web 构建的理念，以便他人能向我们学习、与我们共同贡献，并帮助我们改进。</p>
     <p>
       发现了不妥之处，或者有更好的做法？
-      <a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>——我们很乐意与你讨论。
+     <a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>——我们很乐意与你讨论。
     </p>
     <h2 id="summary">概述<a class="anchor-link" href="#summary" aria-label="概述链接"></a></h2>
     <p>我们会在后文深入探讨其中的每一项，但先从整体上说明指导我们实现方式的原则。</p>
@@ -56,7 +56,7 @@
     </p>
     <p>每个覆盖层组件都会略微提高其 <code>z-index</code> 值，从而符合通用 UI 原则，使用户聚焦或悬停的元素始终保持可见。例如，模态框会阻止文档操作（即除了模态框内的操作外，你无法进行任何其他操作），因此我们将它置于导航栏之上。</p>
     <p>
-      在我们的 <a href="/layout/z-index"><code>z-index</code> 布局页面</a>中了解更多相关内容。
+      在我们的<a href="/layout/z-index"><code>z-index</code> 布局页面</a>中了解更多相关内容。
     </p>
     <h2 id="html-and-css-over-js">HTML 和 CSS 优先于 JS<a class="anchor-link" href="#html-and-css-over-js" aria-label="HTML 和 CSS 优先于 JS链接"></a></h2>
     <p>只要有可能，我们更倾向于编写 HTML 和 CSS，而非 JavaScript。一般来说，HTML 和 CSS 更普及，更易于各种经验水平的人使用。在浏览器中，HTML 和 CSS 也比 JavaScript 更快，而且浏览器通常为你提供了大量功能。</p>
@@ -76,8 +76,8 @@
     <p>虽然并非总能做到，但我们力求在组件的 HTML 要求上避免过于教条。因此，我们在 CSS 选择器中专注于单个类，并尽量避免直接子元素选择器（<code>&gt;</code>）。这为你的实现提供了更大的灵活性，并有助于让我们的 CSS 保持简单、降低选择器特异性。</p>
     <h2 id="code-conventions">代码规范<a class="anchor-link" href="#code-conventions" aria-label="代码规范链接"></a></h2>
     <p><a href="https://codeguide.co/">Code Guide</a>（由 Bootstrap 联合创始人 @mdo 编写）记录了我们如何在 Bootstrap 中编写 HTML 和 CSS。它规定了通用格式、常识性默认值、属性和特性顺序等方面的准则。</p>
-    <p>我们使用 <a href="https://stylelint.io/">Stylelint</a> 在我们的 Sass/CSS 中强制执行这些标准及其他规范。<a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">我们的自定义 Stylelint 配置</a>是开源的，可供他人使用和扩展。</p>
-    <p>我们使用 <a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a> 来强制实施标准且语义化的 HTML，并检测常见错误。</p>
+    <p>我们使用<a href="https://stylelint.io/">Stylelint</a>在我们的 Sass/CSS 中强制执行这些标准及其他规范。<a href="https://github.com/twbs/stylelint-config-twbs-bootstrap">我们的自定义 Stylelint 配置</a>是开源的，可供他人使用和扩展。</p>
+    <p>我们使用<a href="https://www.npmjs.com/package/vnu-jar">vnu-jar</a>来强制实施标准且语义化的 HTML，并检测常见错误。</p>
     <DocsPager />
   </article>
 
@@ -88,7 +88,7 @@
       <li><a href="#responsive">响应式</a></li>
       <li><a href="#classes">类</a></li>
       <li>
-        <a href="#z-index-scales">z-index 层级</a>
+       <a href="#z-index-scales">z-index 层级</a>
         <ul>
           <li><a href="#component-elements">组件元素</a></li>
           <li><a href="#overlay-components">覆盖层组件</a></li>
@@ -98,7 +98,7 @@
       <li><a href="#utilities">工具类</a></li>
       <li><a href="#flexible-html">灵活的 HTML</a></li>
       <li>
-        <a href="#code-conventions">代码规范</a>
+       <a href="#code-conventions">代码规范</a>
       </li>
     </ul>
   </nav>

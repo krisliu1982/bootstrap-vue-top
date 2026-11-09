@@ -7,7 +7,7 @@
     <p>画布外菜单是一个侧边栏组件，可以通过 JavaScript 切换，从视口的左侧、右侧、顶部或底部边缘出现。按钮或锚点用作触发器并附加到你要切换的特定元素上，同时使用 <code>data</code> 属性来调用我们的 JavaScript。</p>
     <ul>
       <li>画布外菜单与模态框共享部分相同的 JavaScript 代码。从概念上讲，它们非常相似，但它们是独立的插件。</li>
-      <li>同样，画布外菜单样式和尺寸的一些<a href="#sass-variables">源 Sass</a> 变量继承自模态框的变量。</li>
+      <li>同样，画布外菜单样式和尺寸的一些<a href="#sass-variables">源 Sass</a>变量继承自模态框的变量。</li>
       <li>显示时，画布外菜单包含一个默认的背景遮罩，点击它可以隐藏画布外菜单。</li>
       <li>与模态框类似，同一时间只能显示一个画布外菜单。</li>
     </ul>
@@ -258,7 +258,7 @@
     <Callout type="warning">
       <p>
         虽然两种关闭画布外菜单的方式都受支持，但请注意，从画布外菜单外部关闭并不符合
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
+       <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
@@ -408,7 +408,7 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-        <a href="#examples">示例</a>
+       <a href="#examples">示例</a>
         <ul>
           <li><a href="#offcanvas-components">画布外菜单组件</a></li>
           <li><a href="#live-demo">实时演示</a></li>
@@ -422,14 +422,14 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       <li><a href="#placement">位置</a></li>
       <li><a href="#accessibility">无障碍访问</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-        <a href="#usage">用法</a>
+       <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

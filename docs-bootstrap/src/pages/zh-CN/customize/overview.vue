@@ -12,7 +12,7 @@
       </li>
       <li>
         使用 Bootstrap 的编译发行文件或
-        <a href="/getting-started/download#cdn-via-jsdelivr">jsDelivr</a>，以便你可以追加或覆盖 Bootstrap 的样式。
+       <a href="/getting-started/download#cdn-via-jsdelivr">jsDelivr</a>，以便你可以追加或覆盖 Bootstrap 的样式。
       </li>
     </ol>
     <p>
@@ -48,7 +48,7 @@
     <ul>
       <li><a href="#overview">概述</a></li>
       <li>
-        <a href="#csps-and-embedded-svgs">CSP 与内嵌 SVG</a>
+       <a href="#csps-and-embedded-svgs">CSP 与内嵌 SVG</a>
       </li>
     </ul>
   </nav>

@@ -40,7 +40,7 @@
     <Example code='<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>' /><Callout type="warning">
       <p>
         请注意，
-        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a>。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
+       <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a>。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
       </p>
     </Callout>
     <h2 id="text-transform">文本转换<a class="anchor-link" href="#text-transform" aria-label="文本转换"></a></h2>
@@ -92,7 +92,7 @@
     <p>使用 <code>.text-reset</code> 重置文本或链接的颜色，使其继承父元素的颜色。</p>
     <Example
       code='<p class="text-body-secondary">
-  Secondary body text with a <a href="#" class="text-reset">reset link</a>.
+  Secondary body text with a<a href="#" class="text-reset">reset link</a>.
 </p>'
     />
     <h2 id="text-decoration">文本装饰<a class="anchor-link" href="#text-decoration" aria-label="文本装饰"></a></h2>
@@ -112,7 +112,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API"></a></h3>
     <p>
       字体和文本工具类在 <code>scss/_utilities.scss</code> 中的工具类 API 中声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-text" file="scss/_utilities.scss" />
     <DocsPager />
@@ -132,7 +132,7 @@
       <li><a href="#reset-color">重置颜色</a></li>
       <li><a href="#text-decoration">文本装饰</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-maps">Sass 映射</a></li>

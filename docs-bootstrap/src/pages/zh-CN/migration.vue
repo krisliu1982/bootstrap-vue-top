@@ -16,7 +16,7 @@
     </ul>
     <h3 id="utilities">工具类<a class="anchor-link" href="#utilities" aria-label="工具类链接"></a></h3>
     <ul>
-      <li>新增 <code>.d-inline-grid</code> <a href="/utilities/display">显示工具类</a>。</li>
+      <li>新增 <code>.d-inline-grid</code><a href="/utilities/display">显示工具类</a>。</li>
     </ul>
     <h2 id="v530-alpha2">v5.3.0-alpha2<a class="anchor-link" href="#v530-alpha2" aria-label="v5.3.0-alpha2链接"></a></h2>
     <p>如果你是从 v5.3.0 此前的 alpha 版本迁移而来，请查阅下列变更。</p>
@@ -64,7 +64,7 @@
       <li>
         <p>
           为导航新增了 <code>.nav-underline</code> 变体，在激活的导航链接下方显示更简洁的底部边框。
-          <a href="/components/navs-tabs#underline">查看文档中的示例。</a>
+         <a href="/components/navs-tabs#underline">查看文档中的示例。</a>
         </p>
       </li>
       <li>
@@ -91,7 +91,7 @@
       <li>
         <p>
           新增链接工具类，用于控制链接颜色不透明度、下划线偏移、下划线颜色和下划线不透明度。
-          <a href="/utilities/link">探索新的链接工具类。</a>
+         <a href="/utilities/link">探索新的链接工具类。</a>
         </p>
       </li>
       <li>
@@ -120,14 +120,14 @@
       <li>
         <p>
           将 bootstrap-npm-starter 项目的各处实例替换为更新、更完整的
-          <a href="https://github.com/twbs/examples">twbs/examples 仓库</a>。
+         <a href="https://github.com/twbs/examples">twbs/examples 仓库</a>。
         </p>
       </li>
     </ul>
     <hr class="mb-4" />
     <p>
       如需完整的变更列表，
-      <a href="https://github.com/orgs/twbs/projects/13">请参阅 GitHub 上的 v5.3.0-alpha2 项目</a>。
+     <a href="https://github.com/orgs/twbs/projects/13">请参阅 GitHub 上的 v5.3.0-alpha2 项目</a>。
     </p>
     <h2 id="v530-alpha1">v5.3.0-alpha1<a class="anchor-link" href="#v530-alpha1" aria-label="v5.3.0-alpha1链接"></a></h2>
     <hr class="mb-4" />
@@ -220,26 +220,26 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">已弃用</span> <code>.dropdown-menu-dark</code> 类已弃用，并替换为在下拉菜单或任意父元素上使用 <code>data-bs-theme=&quot;dark&quot;</code>。
-        <a href="/components/dropdowns#dark-dropdowns">查看文档中的示例。</a>
+       <a href="/components/dropdowns#dark-dropdowns">查看文档中的示例。</a>
       </li>
     </ul>
     <h4 id="close-button">关闭按钮</h4>
     <ul>
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">已弃用</span> <code>.btn-close-white</code> 类已弃用，并替换为在关闭按钮或任意父元素上使用 <code>data-bs-theme=&quot;dark&quot;</code>。
-        <a href="/components/close-button#dark-variant">查看文档中的示例。</a>
+       <a href="/components/close-button#dark-variant">查看文档中的示例。</a>
       </li>
     </ul>
     <h4 id="navbar">导航栏</h4>
     <ul>
       <li>
         <span class="badge text-warning-emphasis bg-warning-subtle">已弃用</span> <code>.navbar-dark</code> 类已弃用，并替换为在导航栏或任意父元素上使用 <code>data-bs-theme=&quot;dark&quot;</code>。
-        <a href="/components/navbar#color-schemes">查看文档中的更新示例。</a>
+       <a href="/components/navbar#color-schemes">查看文档中的更新示例。</a>
       </li>
     </ul>
     <h3 id="progress-bars">进度条<a class="anchor-link" href="#progress-bars" aria-label="进度条链接"></a></h3>
     <p>
-      <a href="/components/progress">进度条</a>的标记在 v5.3.0 中已更新。由于 <code>role</code> 和各种 <code>aria-</code> 属性被放在内层的 <code>.progress-bar</code> 元素上，<strong>部分屏幕阅读器无法朗读值为零的进度条</strong>。现在，
+     <a href="/components/progress">进度条</a>的标记在 v5.3.0 中已更新。由于 <code>role</code> 和各种 <code>aria-</code> 属性被放在内层的 <code>.progress-bar</code> 元素上，<strong>部分屏幕阅读器无法朗读值为零的进度条</strong>。现在，
       <code>role=&quot;progressbar&quot;</code> 和相关 <code>aria-*</code> 属性被放在外层的 <code>.progress</code> 元素上，<code>.progress-bar</code> 仅用于进度条的视觉呈现和可选标签。
     </p>
     <p>虽然我们建议采用新的标记以提高与所有屏幕阅读器的兼容性，但请注意，旧版进度条结构仍会像之前一样正常工作。</p>
@@ -311,7 +311,7 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          为 <code>z-index</code> 新增了 <a href="/utilities/z-index"><code>.z-*</code> 工具类</a>。
+          为 <code>z-index</code> 新增了<a href="/utilities/z-index"><code>.z-*</code> 工具类</a>。
         </p>
       </li>
       <li>
@@ -320,14 +320,14 @@ index 8f8296def..449d70487 100644
     </ul>
     <p>
       如需完整的变更列表，
-      <a href="https://github.com/twbs/bootstrap/projects/">请参阅 GitHub 上的 v5.3.0 项目</a>。
+     <a href="https://github.com/twbs/bootstrap/projects/">请参阅 GitHub 上的 v5.3.0 项目</a>。
     </p>
     <h2 id="v520">v5.2.0<a class="anchor-link" href="#v520" aria-label="v5.2.0链接"></a></h2>
     <hr class="mb-4" />
     <h3 id="refreshed-design">焕新的设计<a class="anchor-link" href="#refreshed-design" aria-label="焕新的设计链接"></a></h3>
     <p>
       Bootstrap v5.2.0 对项目中部分组件和属性做了细微的设计更新，
-      <strong>其中最显著的是优化了按钮和表单控件上的 <code>border-radius</code> 值</strong>。我们的文档也焕然一新：新增了首页，采用更简洁的文档布局（侧边栏的各分区不再折叠），并提供了更醒目的 <a href="https://icons.getbootstrap.com">Bootstrap Icons</a> 示例。
+      <strong>其中最显著的是优化了按钮和表单控件上的 <code>border-radius</code> 值</strong>。我们的文档也焕然一新：新增了首页，采用更简洁的文档布局（侧边栏的各分区不再折叠），并提供了更醒目的<a href="https://icons.getbootstrap.com">Bootstrap Icons</a>示例。
     </p>
     <h3 id="more-css-variables">更多 CSS 变量<a class="anchor-link" href="#more-css-variables" aria-label="更多 CSS 变量链接"></a></h3>
     <p>
@@ -391,10 +391,10 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         扩展了
-        <a href="/utilities/text#font-weight-and-italics"><code>font-weight</code> 工具类</a>，新增用于半粗体字体的 <code>.fw-semibold</code>。
+       <a href="/utilities/text#font-weight-and-italics"><code>font-weight</code> 工具类</a>，新增用于半粗体字体的 <code>.fw-semibold</code>。
       </li>
       <li>
-        扩展了 <a href="/utilities/borders#sizes"><code>border-radius</code> 工具类</a>，新增 <code>.rounded-4</code> 和 <code>.rounded-5</code> 两种尺寸，提供更多选择。
+        扩展了<a href="/utilities/borders#sizes"><code>border-radius</code> 工具类</a>，新增 <code>.rounded-4</code> 和 <code>.rounded-5</code> 两种尺寸，提供更多选择。
       </li>
     </ul>
     <h3 id="additional-changes">其他变更<a class="anchor-link" href="#additional-changes" aria-label="其他变更链接"></a></h3>
@@ -413,7 +413,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>更粗的表格分隔线现在需主动启用。—</strong> 我们移除了表格分组之间更粗、也更难覆盖的边框，并将其移至一个可选类 <code>.table-group-divider</code>。
-          <a href="/content/tables#table-group-dividers">查看表格文档中的示例。</a>
+         <a href="/content/tables#table-group-dividers">查看表格文档中的示例。</a>
         </p>
       </li>
       <li>
@@ -441,7 +441,7 @@ index 8f8296def..449d70487 100644
     </ul>
     <p>
       如需完整的变更列表，
-      <a href="https://github.com/twbs/bootstrap/projects/32">请参阅 GitHub 上的 v5.2.0 项目</a>。
+     <a href="https://github.com/twbs/bootstrap/projects/32">请参阅 GitHub 上的 v5.2.0 项目</a>。
     </p>
     <h2 id="v510">v5.1.0<a class="anchor-link" href="#v510" aria-label="v5.1.0链接"></a></h2>
     <hr class="mb-4" />
@@ -476,7 +476,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>新增全局 <code>:root</code> CSS 变量。—</strong> 在 <code>:root</code> 层级新增了几个 CSS 变量，用于控制 <code>&lt;body&gt;</code> 的样式。未来还会有更多，包括贯穿我们的工具类和组件，但现在请先阅读
-          <a href="/customize/css-variables/">自定义章节中的 CSS 变量</a>。
+         <a href="/customize/css-variables/">自定义章节中的 CSS 变量</a>。
         </p>
       </li>
       <li>
@@ -488,7 +488,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>新增代码片段示例，用于展示如何自定义我们的组件。—</strong> 通过我们新的<a href="https://getbootstrap.com/docs/5.3/examples/#snippets">代码片段示例</a>获取即取即用的自定义组件和其他常见设计模式。包括
-          <a href="https://getbootstrap.com/docs/5.3/examples/footers/">页脚</a>、<a href="https://getbootstrap.com/docs/5.3/examples/dropdowns/">下拉菜单</a>、<a href="https://getbootstrap.com/docs/5.3/examples/list-groups/">列表组</a> 和 <a href="https://getbootstrap.com/docs/5.3/examples/modals/">模态框</a>。
+         <a href="https://getbootstrap.com/docs/5.3/examples/footers/">页脚</a>、<a href="https://getbootstrap.com/docs/5.3/examples/dropdowns/">下拉菜单</a>、<a href="https://getbootstrap.com/docs/5.3/examples/list-groups/">列表组</a>和<a href="https://getbootstrap.com/docs/5.3/examples/modals/">模态框</a>。
         </p>
       </li>
       <li>
@@ -497,7 +497,7 @@ index 8f8296def..449d70487 100644
     </ul>
     <p>
       想了解更多信息？
-      <a href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">阅读 v5.1.0 博客文章。</a>
+     <a href="https://blog.getbootstrap.com/2021/08/04/bootstrap-5-1-0/">阅读 v5.1.0 博客文章。</a>
     </p>
     <h2 id="v500">v5.0.0<a class="anchor-link" href="#v500" aria-label="v5.0.0链接"></a></h2>
     <hr class="mb-4" />
@@ -547,7 +547,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> 将 <code>color-yiq()</code> 函数及相关变量重命名为 <code>color-contrast()</code>，因为它已不再与 YIQ 色彩空间相关。
-          <a href="https://github.com/twbs/bootstrap/pull/30168/">参见 #30168。</a>
+         <a href="https://github.com/twbs/bootstrap/pull/30168/">参见 #30168。</a>
         </p>
         <ul>
           <li><code>$yiq-contrasted-threshold</code> 重命名为 <code>$min-contrast-ratio</code>。</li>
@@ -569,7 +569,7 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          <span class="badge text-bg-danger">破坏性变更</span> 将 <code>theme-color-level()</code> 函数重命名为 <code>color-level()</code>，现在可接受任意颜色，而不再仅限 <code>$theme-color</code> 中的颜色。<a href="https://github.com/twbs/bootstrap/pull/29083">参见 #29083</a> <strong>注意：</strong>
+          <span class="badge text-bg-danger">破坏性变更</span> 将 <code>theme-color-level()</code> 函数重命名为 <code>color-level()</code>，现在可接受任意颜色，而不再仅限 <code>$theme-color</code> 中的颜色。<a href="https://github.com/twbs/bootstrap/pull/29083">参见 #29083</a><strong>注意：</strong>
           <code>color-level()</code> 后来在 <code>v5.0.0-alpha3</code> 中被移除。
         </p>
       </li>
@@ -642,7 +642,7 @@ index 8f8296def..449d70487 100644
         <p><span class="badge text-bg-danger">破坏性变更</span> 移除了若干常常未被使用的 <code>.order-*</code> 类。现在开箱即用仅提供 <code>.order-0</code> 至 <code>.order-5</code>。</p>
       </li>
       <li>
-        <p><span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.media</code> 组件，因为它可以很容易地用工具类复现。<a href="https://github.com/twbs/bootstrap/pull/28265">参见 #28265</a> 以及<a href="/utilities/flex#media-object"> flex 工具类页面中的示例</a>。</p>
+        <p><span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.media</code> 组件，因为它可以很容易地用工具类复现。<a href="https://github.com/twbs/bootstrap/pull/28265">参见 #28265</a>以及<a href="/utilities/flex#media-object"> flex 工具类页面中的示例</a>。</p>
       </li>
       <li>
         <p><span class="badge text-bg-danger">破坏性变更</span> <code>bootstrap-grid.css</code> 现在仅对列应用 <code>box-sizing: border-box</code>，而不再重置全局 box-sizing。这样一来，我们的网格样式可以在更多地方使用而不受干扰。</p>
@@ -650,7 +650,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <code>$enable-grid-classes</code> 不再禁用容器类的生成。
-          <a href="https://github.com/twbs/bootstrap/pull/29146">参见 #29146。</a>
+         <a href="https://github.com/twbs/bootstrap/pull/29146">参见 #29146。</a>
         </p>
       </li>
       <li>
@@ -661,7 +661,7 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <p>
-          <strong><a href="/getting-started/rfs">RFS</a> 现在默认启用。</strong>使用 <code>font-size()</code> mixin 的标题会自动调整其 <code>font-size</code>，以随视口缩放。<em>此特性在 v4 中需要主动启用。</em>
+          <strong><a href="/getting-started/rfs">RFS</a>现在默认启用。</strong>使用 <code>font-size()</code> mixin 的标题会自动调整其 <code>font-size</code>，以随视口缩放。<em>此特性在 v4 中需要主动启用。</em>
         </p>
       </li>
       <li>
@@ -696,19 +696,19 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.pre-scrollable</code> 类。
-          <a href="https://github.com/twbs/bootstrap/pull/29135">参见 #29135</a>
+         <a href="https://github.com/twbs/bootstrap/pull/29135">参见 #29135</a>
         </p>
       </li>
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> <code>.text-*</code> 工具类不再为链接添加悬停和聚焦状态。可以改用 <code>.link-*</code> 辅助类。
-          <a href="https://github.com/twbs/bootstrap/pull/29267">参见 #29267</a>
+         <a href="https://github.com/twbs/bootstrap/pull/29267">参见 #29267</a>
         </p>
       </li>
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.text-justify</code> 类。
-          <a href="https://github.com/twbs/bootstrap/pull/29793">参见 #29793</a>
+         <a href="https://github.com/twbs/bootstrap/pull/29793">参见 #29793</a>
         </p>
       </li>
       <li>
@@ -723,7 +723,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           新增 <code>$enable-smooth-scroll</code>，它会全局应用 <code>scroll-behavior: smooth</code>——但对通过 <code>prefers-reduced-motion</code> 媒体查询请求减少动态效果的用户除外。
-          <a href="https://github.com/twbs/bootstrap/pull/31877">参见 #31877</a>
+         <a href="https://github.com/twbs/bootstrap/pull/31877">参见 #31877</a>
         </p>
       </li>
     </ul>
@@ -739,7 +739,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>新增浮动表单！</strong> 我们将浮动标签示例升级为完全支持的表单组件。
-          <a href="/forms/floating-labels">查看新的浮动标签页面。</a>
+         <a href="/forms/floating-labels">查看新的浮动标签页面。</a>
         </p>
       </li>
       <li>
@@ -763,7 +763,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           长期存在的
-          <a href="https://github.com/twbs/bootstrap/issues/25110">带校验反馈的输入组缺少圆角的问题</a>
+         <a href="https://github.com/twbs/bootstrap/issues/25110">带校验反馈的输入组缺少圆角的问题</a>
           终于得到修复：为带校验的输入组添加额外的 <code>.has-validation</code> 类即可。
         </p>
       </li>
@@ -845,7 +845,7 @@ index 8f8296def..449d70487 100644
         <p>
           <span class="badge text-bg-danger">破坏性变更</span>
           <strong>移除了 <code>.btn-block</code>，改用工具类。</strong> 无需在 <code>.btn</code> 上使用 <code>.btn-block</code>，而应使用 <code>.d-grid</code> 包裹按钮，并用 <code>.gap-*</code> 工具类按需设置间距。若要进一步控制，可改用响应式类。
-          <a href="/components/buttons#block-buttons">阅读文档中的一些示例。</a>
+         <a href="/components/buttons#block-buttons">阅读文档中的一些示例。</a>
         </p>
       </li>
       <li>
@@ -873,13 +873,13 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           新增
-          <a href="/components/carousel#dark-variant"><code>.carousel-dark</code> 变体</a>，用于深色文本、控件和指示器（非常适合较浅的背景）。
+         <a href="/components/carousel#dark-variant"><code>.carousel-dark</code> 变体</a>，用于深色文本、控件和指示器（非常适合较浅的背景）。
         </p>
       </li>
       <li>
         <p>
           将轮播控件的 chevron 图标替换为来自
-          <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 的新 SVG。
+         <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>的新 SVG。
         </p>
       </li>
     </ul>
@@ -917,8 +917,8 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> 移除了下拉菜单插件的 <code>flip</code> 选项，改用原生 Popper 配置。你现在可以通过为
-          <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements"><code>fallbackPlacements</code></a>
-          选项传入空数组来禁用翻转行为，该选项位于 <a href="https://popper.js.org/docs/v2/modifiers/flip/">flip</a> 修饰符中。
+         <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements"><code>fallbackPlacements</code></a>
+          选项传入空数组来禁用翻转行为，该选项位于<a href="https://popper.js.org/docs/v2/modifiers/flip/">flip</a>修饰符中。
         </p>
       </li>
       <li>
@@ -932,14 +932,14 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <span class="badge text-bg-danger">破坏性变更</span> 移除了巨型屏幕组件，因为它可以用工具类复现。
-        <a href="https://getbootstrap.com/docs/5.3/examples/jumbotron">查看我们新的巨型屏幕示例以了解演示。</a>
+       <a href="https://getbootstrap.com/docs/5.3/examples/jumbotron">查看我们新的巨型屏幕示例以了解演示。</a>
       </li>
     </ul>
     <h4 id="list-group-1">列表组</h4>
     <ul>
       <li>
         为列表组新增
-        <a href="/components/list-group#numbered"><code>.list-group-numbered</code> 修饰符</a>。
+       <a href="/components/list-group#numbered"><code>.list-group-numbered</code> 修饰符</a>。
       </li>
     </ul>
     <h4 id="navs-and-tabs">导航与标签页</h4>
@@ -1030,7 +1030,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           新增
-          <a href="/utilities/borders#border-width"><code>border-width</code> 工具类</a>。
+         <a href="/utilities/borders#border-width"><code>border-width</code> 工具类</a>。
         </p>
       </li>
       <li>
@@ -1142,20 +1142,20 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#v536">v5.3.6</a>
+       <a href="#v536">v5.3.6</a>
         <ul>
           <li><a href="#dependencies">依赖项</a></li>
         </ul>
       </li>
       <li>
-        <a href="#v530">v5.3.0</a>
+       <a href="#v530">v5.3.0</a>
         <ul>
           <li><a href="#helpers">辅助类</a></li>
           <li><a href="#utilities">工具类</a></li>
         </ul>
       </li>
       <li>
-        <a href="#v530-alpha2">v5.3.0-alpha2</a>
+       <a href="#v530-alpha2">v5.3.0-alpha2</a>
         <ul>
           <li><a href="#css-variables">CSS 变量</a></li>
           <li><a href="#color-modes">色彩模式</a></li>
@@ -1168,7 +1168,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
         </ul>
       </li>
       <li>
-        <a href="#v530-alpha1">v5.3.0-alpha1</a>
+       <a href="#v530-alpha1">v5.3.0-alpha1</a>
         <ul>
           <li><a href="#color-modes-1">色彩模式！</a></li>
           <li><a href="#css-variables-1">CSS 变量</a></li>
@@ -1179,7 +1179,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
         </ul>
       </li>
       <li>
-        <a href="#v520">v5.2.0</a>
+       <a href="#v520">v5.2.0</a>
         <ul>
           <li><a href="#refreshed-design">焕新的设计</a></li>
           <li><a href="#more-css-variables">更多 CSS 变量</a></li>
@@ -1189,7 +1189,7 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       </li>
       <li><a href="#v510">v5.1.0</a></li>
       <li>
-        <a href="#v500">v5.0.0</a>
+       <a href="#v500">v5.0.0</a>
         <ul>
           <li><a href="#dependencies-1">依赖项</a></li>
           <li><a href="#browser-support">浏览器支持</a></li>

@@ -36,13 +36,13 @@
     </p>
     <Example
       code='<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+ <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     The current link item
   </a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+ <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+ <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+ <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+ <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
 </div>'
     />
     <p>使用 <code>&lt;button&gt;</code> 时，你还可以使用 <code>disabled</code> 属性来代替 <code>.disabled</code> 类。遗憾的是，<code>&lt;a&gt;</code> 不支持 disabled 属性。</p>
@@ -147,9 +147,9 @@
       :code="
         [
           `<div class=&quot;list-group&quot;>
-  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
+ <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
     `,
-          ...data['theme-colors'].map((themeColor) => `  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</a>`),
+          ...data['theme-colors'].map((themeColor) => ` <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</a>`),
           `</div>`
         ].join('\n')
       "
@@ -180,7 +180,7 @@
     </p>
     <Example
       code='<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+ <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small>3 days ago</small>
@@ -188,7 +188,7 @@
     <p class="mb-1">Some placeholder content in a paragraph.</p>
     <small>And some small print.</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action">
+ <a href="#" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small class="text-body-secondary">3 days ago</small>
@@ -196,7 +196,7 @@
     <p class="mb-1">Some placeholder content in a paragraph.</p>
     <small class="text-body-secondary">And some muted small print.</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action">
+ <a href="#" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small class="text-body-secondary">3 days ago</small>
@@ -280,10 +280,10 @@
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+           <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+           <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+           <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+           <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
           </div>
         </div>
         <div class="col-8">
@@ -491,7 +491,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#numbered">带编号</a></li>
       <li><a href="#horizontal">水平排列</a></li>
       <li>
-        <a href="#variants">变体</a>
+       <a href="#variants">变体</a>
         <ul>
           <li><a href="#for-links-and-buttons">用于链接和按钮</a></li>
         </ul>
@@ -500,7 +500,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#custom-content">自定义内容</a></li>
       <li><a href="#checkboxes-and-radios">复选框与单选按钮</a></li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -509,7 +509,7 @@ tabElms.forEach(tabElm =&gt; {
         </ul>
       </li>
       <li>
-        <a href="#javascript-behavior">JavaScript 行为</a>
+       <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#using-data-attributes">使用数据属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

@@ -47,7 +47,7 @@
       <li><a href="#responsive-sticky-top">响应式粘性顶部</a></li>
       <li><a href="#sticky-bottom">粘性底部</a></li>
       <li>
-        <a href="#responsive-sticky-bottom">响应式粘性底部</a>
+       <a href="#responsive-sticky-bottom">响应式粘性底部</a>
       </li>
     </ul>
   </nav>

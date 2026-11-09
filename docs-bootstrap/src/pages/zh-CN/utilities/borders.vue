@@ -161,7 +161,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       边框工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" /> <DocsPager />
   </article>
@@ -170,7 +170,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-        <a href="#border">边框</a>
+       <a href="#border">边框</a>
         <ul>
           <li><a href="#additive">添加</a></li>
           <li><a href="#subtractive">移除</a></li>
@@ -178,7 +178,7 @@
       </li>
       <li><a href="#color">颜色</a></li>
       <li>
-        <a href="#opacity">不透明度</a>
+       <a href="#opacity">不透明度</a>
         <ul>
           <li><a href="#how-it-works">工作原理</a></li>
           <li><a href="#example">示例</a></li>
@@ -186,13 +186,13 @@
       </li>
       <li><a href="#width">宽度</a></li>
       <li>
-        <a href="#radius">圆角</a>
+       <a href="#radius">圆角</a>
         <ul>
           <li><a href="#sizes">尺寸</a></li>
         </ul>
       </li>
       <li>
-        <a href="#css">CSS</a>
+       <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

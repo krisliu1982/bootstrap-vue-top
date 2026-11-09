@@ -5,13 +5,13 @@
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>想直接跳到结尾？</strong>从 <a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples 仓库</a>下载本指南的源代码和可运行的演示。你也可以
-        <a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">在 StackBlitz 中打开示例</a>
+        <strong>想直接跳到结尾？</strong>从<a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples 仓库</a>下载本指南的源代码和可运行的演示。你也可以
+       <a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">在 StackBlitz 中打开示例</a>
         进行在线编辑。
       </p>
     </Callout>
     <h2 id="what-is-vite">什么是 Vite？<a class="anchor-link" href="#what-is-vite" aria-label="什么是 Vite？链接"></a></h2>
-    <p><a href="https://vite.dev/">Vite</a> 是一款现代前端构建工具，专为速度和简洁而设计。它提供了高效、流畅的开发体验，尤其适合现代 JavaScript 框架。</p>
+    <p><a href="https://vite.dev/">Vite</a>是一款现代前端构建工具，专为速度和简洁而设计。它提供了高效、流畅的开发体验，尤其适合现代 JavaScript 框架。</p>
     <h2 id="setup">搭建<a class="anchor-link" href="#setup" aria-label="搭建链接"></a></h2>
     <p>我们将从零开始构建一个使用 Bootstrap 的 Vite 项目，因此在真正开始之前还有一些前置条件和准备步骤。本指南要求你已安装 Node.js，并熟悉终端操作。</p>
     <ol>
@@ -197,7 +197,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite 开发服务器正在运行并加载了 Bootstrap" />
         <p>
           现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
-          <a href="https://github.com/twbs/examples/tree/main/vite">查看完整的 Vite 示例项目</a>，
+         <a href="https://github.com/twbs/examples/tree/main/vite">查看完整的 Vite 示例项目</a>，
           了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
@@ -214,7 +214,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
       <li><a href="#project-structure">项目结构</a></li>
       <li><a href="#configure-vite">配置 Vite</a></li>
       <li>
-        <a href="#import-bootstrap">导入 Bootstrap</a>
+       <a href="#import-bootstrap">导入 Bootstrap</a>
       </li>
     </ul>
   </nav>
