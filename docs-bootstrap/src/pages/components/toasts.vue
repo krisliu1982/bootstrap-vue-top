@@ -47,10 +47,7 @@
     </Callout>
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.</p>
-    <Example
-      code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
       <span title="image placeholder" class="text-primary me-2">✓</span>
@@ -62,7 +59,9 @@
       Hello, world! This is a toast message.
     </div>
   </div>
-</div>'
+</div>
+    <Example
+      code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>'
     />
 
     <p>We use the following JavaScript to trigger our live toast demo:</p>
