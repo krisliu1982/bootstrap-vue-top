@@ -4,10 +4,7 @@
     <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
 
     <h2 id="base-class">Base class<a class="anchor-link" href="#base-class" aria-label="Link to Base class"></a></h2>
-    <p>
-      Bootstrap has a base <code>.btn</code> class that sets up basic styles such as padding and content alignment. By default, <code>.btn</code> controls have a transparent border
-      and background color, and lack any explicit focus and hover styles.
-    </p>
+    <p>Bootstrap has a base <code>.btn</code> class that sets up basic styles such as padding and content alignment. By default, <code>.btn</code> controls have a transparent border and background color, and lack any explicit focus and hover styles.</p>
     <Example code='<button type="button" class="btn">Base class</button>' />
     <p>The <code>.btn</code> class is intended to be used in conjunction with our button variants, or to serve as a basis for your own custom styles.</p>
     <Callout type="warning">
@@ -16,28 +13,14 @@
     <h2 id="variants">Variants<a class="anchor-link" href="#variants" aria-label="Link to Variants"></a></h2>
     <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
 
-    <Example
-      :code="
-        [
-          ...data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-${themeColor.name}&quot;>${themeColor.name}</button>`),
-          `<button type=&quot;button&quot; class=&quot;btn btn-link&quot;>Link</button>`
-        ].join('\n')
-      "
-    />
+    <Example :code="[...data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-${themeColor.name}&quot;>${themeColor.name}</button>`), `<button type=&quot;button&quot; class=&quot;btn btn-link&quot;>Link</button>`].join('\n')" />
     <Callout name="warning-color-assistive-technologies" />
     <h2 id="disable-text-wrapping">Disable text wrapping<a class="anchor-link" href="#disable-text-wrapping" aria-label="Link to Disable text wrapping"></a></h2>
-    <p>
-      If you don’t want the button text to wrap, you can add the <code>.text-nowrap</code> class to the button. In Sass, you can set <code>$btn-white-space: nowrap</code> to
-      disable text wrapping for each button.
-    </p>
+    <p>If you don’t want the button text to wrap, you can add the <code>.text-nowrap</code> class to the button. In Sass, you can set <code>$btn-white-space: nowrap</code> to disable text wrapping for each button.</p>
     <h2 id="button-tags">Button tags<a class="anchor-link" href="#button-tags" aria-label="Link to Button tags"></a></h2>
+    <p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
     <p>
-      The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element. However, you can also use these classes on <code>&lt;a&gt;</code> or
-      <code>&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).
-    </p>
-    <p>
-      When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or
-      sections within the current page, these links should be given a <code>role=&quot;button&quot;</code> to appropriately convey their purpose to assistive technologies such as
+      When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code>role=&quot;button&quot;</code> to appropriately convey their purpose to assistive technologies such as
       screen readers.
     </p>
     <Example
@@ -52,11 +35,7 @@
       In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the
       <code>.btn-outline-*</code> ones to remove all background images and colors on any button.
     </p>
-    <Example
-      :code="
-        data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-outline-${themeColor.name}&quot;>${themeColor.name}</button>`).join('\n')
-      "
-    /><Callout>
+    <Example :code="data['theme-colors'].map((themeColor) => `<button type=&quot;button&quot; class=&quot;btn btn-outline-${themeColor.name}&quot;>${themeColor.name}</button>`).join('\n')" /><Callout>
       <p>Some of the button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.</p>
     </Callout>
     <h2 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h2>
@@ -76,10 +55,7 @@
 </button>'
     />
     <h2 id="disabled-state">Disabled state<a class="anchor-link" href="#disabled-state" aria-label="Link to Disabled state"></a></h2>
-    <p>
-      Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. Disabled buttons have
-      <code>pointer-events: none</code> applied to, preventing hover and active states from triggering.
-    </p>
+    <p>Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any <code>&lt;button&gt;</code> element. Disabled buttons have <code>pointer-events: none</code> applied to, preventing hover and active states from triggering.</p>
     <Example
       code='<button type="button" class="btn btn-primary" disabled>Primary button</button>
 <button type="button" class="btn btn-secondary" disabled>Button</button>
@@ -90,10 +66,7 @@
     <ul>
       <li><code>&lt;a&gt;</code>s don’t support the <code>disabled</code> attribute, so you must add the <code>.disabled</code> class to make it visually appear disabled.</li>
       <li>Some future-friendly styles are included to disable all <code>pointer-events</code> on anchor buttons.</li>
-      <li>
-        Disabled buttons using <code>&lt;a&gt;</code> should include the <code>aria-disabled=&quot;true&quot;</code> attribute to indicate the state of the element to assistive
-        technologies.
-      </li>
+      <li>Disabled buttons using <code>&lt;a&gt;</code> should include the <code>aria-disabled=&quot;true&quot;</code> attribute to indicate the state of the element to assistive technologies.</li>
       <li>Disabled buttons using <code>&lt;a&gt;</code> <em>should not</em> include the <code>href</code> attribute.</li>
     </ul>
     <Example
@@ -102,22 +75,16 @@
     />
     <h3 id="link-functionality-caveat">Link functionality caveat<a class="anchor-link" href="#link-functionality-caveat" aria-label="Link to Link functionality caveat"></a></h3>
     <p>
-      To cover cases where you have to keep the <code>href</code> attribute on a disabled link, the <code>.disabled</code> class uses <code>pointer-events: none</code> to try to
-      disable the link functionality of <code>&lt;a&gt;</code>s. Note that this CSS property is not yet standardized for HTML, but all modern browsers support it. In addition, even
-      in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies
-      will still be able to activate these links. So to be safe, in addition to <code>aria-disabled=&quot;true&quot;</code>, also include a
-      <code>tabindex=&quot;-1&quot;</code> attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality
-      altogether.
+      To cover cases where you have to keep the <code>href</code> attribute on a disabled link, the <code>.disabled</code> class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s. Note that this CSS property is not yet standardized for HTML, but all modern browsers support it. In addition,
+      even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, in addition to <code>aria-disabled=&quot;true&quot;</code>, also include a
+      <code>tabindex=&quot;-1&quot;</code> attribute on these links to prevent them from receiving keyboard focus, and use custom JavaScript to disable their functionality altogether.
     </p>
     <Example
       code='<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
 <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>'
     />
     <h2 id="block-buttons">Block buttons<a class="anchor-link" href="#block-buttons" aria-label="Link to Block buttons"></a></h2>
-    <p>
-      Create responsive stacks of full-width, “block buttons” like those in Bootstrap 4 with a mix of our display and gap utilities. By using utilities instead of button-specific
-      classes, we have much greater control over spacing, alignment, and responsive behaviors.
-    </p>
+    <p>Create responsive stacks of full-width, “block buttons” like those in Bootstrap 4 with a mix of our display and gap utilities. By using utilities instead of button-specific classes, we have much greater control over spacing, alignment, and responsive behaviors.</p>
     <Example
       code='<div class="d-grid gap-2">
   <button class="btn btn-primary" type="button">Button</button>
@@ -126,8 +93,7 @@
     />
     <p>
       Here we create a responsive variation, starting with vertically stacked buttons until the
-      <code>md</code> breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see
-      them change.
+      <code>md</code> breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the <code>gap-2</code> utility. Resize your browser to see them change.
     </p>
     <Example
       code='<div class="d-grid gap-2 d-md-block">
@@ -135,20 +101,14 @@
   <button class="btn btn-primary" type="button">Button</button>
 </div>'
     />
-    <p>
-      You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally
-      with <code>.mx-auto</code>, too.
-    </p>
+    <p>You can adjust the width of your block buttons with grid column width classes. For example, for a half-width “block button”, use <code>.col-6</code>. Center it horizontally with <code>.mx-auto</code>, too.</p>
     <Example
       code='<div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-primary" type="button">Button</button>
   <button class="btn btn-primary" type="button">Button</button>
 </div>'
     />
-    <p>
-      Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a
-      margin utility on the button to right-align the buttons when they’re no longer stacked.
-    </p>
+    <p>Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our previous responsive example and added some flex utilities and a margin utility on the button to right-align the buttons when they’re no longer stacked.</p>
     <Example
       code='<div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2" type="button">Button</button>
@@ -160,17 +120,12 @@
     <Callout>
       <p>
         Visually, these toggle buttons are identical to the
-        <a href="/forms/checks-radios#checkbox-toggle-buttons">checkbox toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles
-        will be announced by screen readers as “checked”/“not checked” (since, despite their appearance, they are fundamentally still checkboxes), whereas these toggle buttons will
-        be announced as “button”/“button pressed”. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will
-        make sense to users when announced as a checkbox or as an actual button.
+        <a href="/forms/checks-radios#checkbox-toggle-buttons">checkbox toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked”/“not checked” (since, despite their appearance, they are fundamentally still checkboxes), whereas these toggle buttons
+        will be announced as “button”/“button pressed”. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.
       </p>
     </Callout>
     <h3 id="toggle-states">Toggle states<a class="anchor-link" href="#toggle-states" aria-label="Link to Toggle states"></a></h3>
-    <p>
-      Add <code>data-bs-toggle=&quot;button&quot;</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the
-      <code>.active</code> class <strong>and</strong> <code>aria-pressed=&quot;true&quot;</code> to ensure that it is conveyed appropriately to assistive technologies.
-    </p>
+    <p>Add <code>data-bs-toggle=&quot;button&quot;</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class <strong>and</strong> <code>aria-pressed=&quot;true&quot;</code> to ensure that it is conveyed appropriately to assistive technologies.</p>
     <Example
       code='<p class="d-inline-flex gap-1">
   <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
@@ -212,9 +167,7 @@
           </tr>
           <tr>
             <td><code>getInstance</code></td>
-            <td>
-              Static method which allows you to get the button instance associated with a DOM element, you can use it like this: <code>bootstrap.Button.getInstance(element)</code>.
-            </td>
+            <td>Static method which allows you to get the button instance associated with a DOM element, you can use it like this: <code>bootstrap.Button.getInstance(element)</code>.</td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
@@ -247,18 +200,9 @@
       <code>.btn</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
     </p>
     <ScssDocs name="btn-css-vars" file="scss/_buttons.scss" />
-    <p>
-      Each <code>.btn-*</code> modifier class updates the appropriate CSS variables to minimize additional CSS rules with our <code>button-variant()</code>,
-      <code>button-outline-variant()</code>, and <code>button-size()</code> mixins.
-    </p>
-    <p>
-      Here’s an example of building a custom <code>.btn-*</code> modifier class as we do for the buttons unique to our docs by reassigning Bootstrap’s CSS variables with a mixture
-      of our own CSS and Sass variables.
-    </p>
-    <Example :showMarkup="false" code='<button type="button" class="btn btn-bd-primary">Custom button</button>' /><ScssDocs
-      name="btn-css-vars-example"
-      file="site/src/scss/_buttons.scss"
-    />
+    <p>Each <code>.btn-*</code> modifier class updates the appropriate CSS variables to minimize additional CSS rules with our <code>button-variant()</code>, <code>button-outline-variant()</code>, and <code>button-size()</code> mixins.</p>
+    <p>Here’s an example of building a custom <code>.btn-*</code> modifier class as we do for the buttons unique to our docs by reassigning Bootstrap’s CSS variables with a mixture of our own CSS and Sass variables.</p>
+    <Example :showMarkup="false" code='<button type="button" class="btn btn-bd-primary">Custom button</button>' /><ScssDocs name="btn-css-vars-example" file="site/src/scss/_buttons.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="btn-variables" file="scss/_variables.scss" />
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
@@ -266,10 +210,7 @@
       There are three mixins for buttons: button and button outline variant mixins (both based on
       <code>$theme-colors</code>), plus a button size mixin.
     </p>
-    <ScssDocs name="btn-variant-mixin" file="scss/mixins/_buttons.scss" /><ScssDocs name="btn-outline-variant-mixin" file="scss/mixins/_buttons.scss" /><ScssDocs
-      name="btn-size-mixin"
-      file="scss/mixins/_buttons.scss"
-    />
+    <ScssDocs name="btn-variant-mixin" file="scss/mixins/_buttons.scss" /><ScssDocs name="btn-outline-variant-mixin" file="scss/mixins/_buttons.scss" /><ScssDocs name="btn-size-mixin" file="scss/mixins/_buttons.scss" />
     <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
     <p>
       Button variants (for regular and outline buttons) use their respective mixins with our

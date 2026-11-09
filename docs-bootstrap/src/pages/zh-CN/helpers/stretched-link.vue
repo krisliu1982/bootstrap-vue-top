@@ -4,19 +4,11 @@
     <p>Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
 
     <p>
-      Add <code>.stretched-link</code> to a link to make its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block</a> clickable via a
-      <code>::after</code> pseudo element. In most cases, this means that an element with <code>position: relative;</code> that contains a link with the
-      <code>.stretched-link</code> class is clickable. Please note given
-      <a href="https://www.w3.org/TR/CSS21/visuren.html#propdef-position">how CSS <code>position</code> works</a>, <code>.stretched-link</code> cannot be mixed with most table
-      elements.
+      Add <code>.stretched-link</code> to a link to make its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block</a> clickable via a <code>::after</code> pseudo element. In most cases, this means that an element with <code>position: relative;</code> that contains a link with the
+      <code>.stretched-link</code> class is clickable. Please note given <a href="https://www.w3.org/TR/CSS21/visuren.html#propdef-position">how CSS <code>position</code> works</a>, <code>.stretched-link</code> cannot be mixed with most table elements.
     </p>
-    <p>
-      Cards have <code>position: relative</code> by default in Bootstrap, so in this case you can safely add the <code>.stretched-link</code> class to a link in the card without
-      any other HTML changes.
-    </p>
-    <p>
-      Multiple links and tap targets are not recommended with stretched links. However, some <code>position</code> and <code>z-index</code> styles can help should this be required.
-    </p>
+    <p>Cards have <code>position: relative</code> by default in Bootstrap, so in this case you can safely add the <code>.stretched-link</code> class to a link in the card without any other HTML changes.</p>
+    <p>Multiple links and tap targets are not recommended with stretched links. However, some <code>position</code> and <code>z-index</code> styles can help should this be required.</p>
     <ExampleCustom
       code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -36,10 +28,7 @@
         </div>
       </div>
     </ExampleCustom>
-    <p>
-      Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching
-      outside the parent element.
-    </p>
+    <p>Most custom components do not have <code>position: relative</code> by default, so we need to add the <code>.position-relative</code> here to prevent the link from stretching outside the parent element.</p>
     <Example code="" />
     <ExampleCustom
       code='<div class="card" style="width: 18rem;">
@@ -55,17 +44,12 @@
         <Placeholder width="144" height="144" class="flex-shrink-0 me-3" :text="false" title="Generic placeholder image22222" />
         <div>
           <h5 class="mt-0">Custom component with stretched link</h5>
-          <p>
-            This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the
-            component a bit of body and size.
-          </p>
+          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we’re using it here to give the component a bit of body and size.</p>
           <a href="#" class="stretched-link">Go somewhere</a>
         </div>
       </div>
     </ExampleCustom>
-    <h2 id="identifying-the-containing-block">
-      Identifying the containing block<a class="anchor-link" href="#identifying-the-containing-block" aria-label="Link to Identifying the containing block"></a>
-    </h2>
+    <h2 id="identifying-the-containing-block">Identifying the containing block<a class="anchor-link" href="#identifying-the-containing-block" aria-label="Link to Identifying the containing block"></a></h2>
     <p>
       If the stretched link doesn’t seem to work, the
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block">containing block</a>
@@ -98,13 +82,9 @@
           <h5 class="card-title">Card with stretched links</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
           <p class="card-text">
-            <a href="#" class="stretched-link text-danger" style="position: relative"
-              >Stretched link will not work here, because <code>position: relative</code> is added to the link</a
-            >
+            <a href="#" class="stretched-link text-danger" style="position: relative">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
           </p>
-          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">
-            This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
-          </p>
+          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.</p>
         </div>
       </div>
     </ExampleCustom>

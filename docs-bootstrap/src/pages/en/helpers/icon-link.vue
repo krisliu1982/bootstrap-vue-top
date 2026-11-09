@@ -4,23 +4,18 @@
     <p>Quickly create stylized hyperlinks with Bootstrap Icons or other icons.</p>
 
     <p>
-      The icon link helper component modifies our default link styles to enhance their appearance and quickly align any pairing of icon and text. Alignment is set via inline
-      flexbox styling and a default <code>gap</code> value. We stylize the underline with a custom offset and color. Icons are automatically sized to <code>1em</code> to best match
+      The icon link helper component modifies our default link styles to enhance their appearance and quickly align any pairing of icon and text. Alignment is set via inline flexbox styling and a default <code>gap</code> value. We stylize the underline with a custom offset and color. Icons are automatically sized to <code>1em</code> to best match
       their associated text’s <code>font-size</code>.
     </p>
     <p>Icon links assume <a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are being used, but you can use any icon or image you like.</p>
     <Callout>
       <p>
         When icons are purely decorative, they should be hidden from assistive technologies using
-        <code>aria-hidden=&quot;true&quot;</code>, as we’ve done in our examples. For icons that convey meaning, provide an appropriate text alternative by adding
-        <code>role=&quot;img&quot;</code> and an appropriate <code>aria-label=&quot;...&quot;</code> to the SVGs.
+        <code>aria-hidden=&quot;true&quot;</code>, as we’ve done in our examples. For icons that convey meaning, provide an appropriate text alternative by adding <code>role=&quot;img&quot;</code> and an appropriate <code>aria-label=&quot;...&quot;</code> to the SVGs.
       </p>
     </Callout>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>
-      Take a regular <code>&lt;a&gt;</code> element, add <code>.icon-link</code>, and insert an icon on either the left or right of your link text. The icon is automatically sized,
-      placed, and colored.
-    </p>
+    <p>Take a regular <code>&lt;a&gt;</code> element, add <code>.icon-link</code>, and insert an icon on either the left or right of your link text. The icon is automatically sized, placed, and colored.</p>
     <Example
       code='<a class="icon-link" href="#">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">

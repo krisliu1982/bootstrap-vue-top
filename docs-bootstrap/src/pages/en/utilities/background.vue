@@ -10,17 +10,12 @@
       >, so in some cases you’ll want to use <code>.text-*</code> <a href="/utilities/colors">color utilities</a>.
     </p>
     <Callout>
-      <p>
-        Background utilities like <code>.bg-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any
-        <code>.bg-*-subtle</code> utility will. This will be resolved in v6.
-      </p> </Callout
+      <p>Background utilities like <code>.bg-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.bg-*-subtle</code> utility will. This will be resolved in v6.</p> </Callout
     ><Example
       :code="
         [
           ...data['theme-colors'].map(
-            (
-              themeColor
-            ) => `<div class=&quot;p-3 mb-2 bg-${themeColor.name} ${themeColor.contrast_color ? `text-${themeColor.contrast_color}` : `text-white`}&quot;>.bg-${themeColor.name}</div>
+            (themeColor) => `<div class=&quot;p-3 mb-2 bg-${themeColor.name} ${themeColor.contrast_color ? `text-${themeColor.contrast_color}` : `text-white`}&quot;>.bg-${themeColor.name}</div>
 <div class=&quot;p-3 mb-2 bg-${themeColor.name}-subtle text-${themeColor.name}-emphasis&quot;>.bg-${themeColor.name}-subtle</div>`
           ),
           `<div class=&quot;p-3 mb-2 bg-body-secondary&quot;>.bg-body-secondary</div>
@@ -33,25 +28,13 @@
       "
     />
     <h2 id="background-gradient">Background gradient<a class="anchor-link" href="#background-gradient" aria-label="Link to Background gradient"></a></h2>
-    <p>
-      By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades
-      out to the bottom.
-    </p>
+    <p>By adding a <code>.bg-gradient</code> class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.</p>
     <p>Do you need a gradient in your custom CSS? Just add <code>background-image: var(--bs-gradient);</code>.</p>
-    <div
-      v-for="themeColor in data['theme-colors']"
-      class="p-3 mb-2"
-      :class="[`bg-${themeColor.name} bg-gradient`, themeColor.contrast_color ? 'text-' + themeColor.contrast_color : 'text-white']"
-    >
-      .bg-{{ themeColor.name }}.bg-gradient
-    </div>
+    <div v-for="themeColor in data['theme-colors']" class="p-3 mb-2" :class="[`bg-${themeColor.name} bg-gradient`, themeColor.contrast_color ? 'text-' + themeColor.contrast_color : 'text-white']">.bg-{{ themeColor.name }}.bg-gradient</div>
     <div class="p-3 mb-2 bg-black bg-gradient text-white">.bg-black.bg-gradient</div>
     <h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>
-      As of v5.1.0, <code>background-color</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic
-      alpha transparency changes.
-    </p>
+    <p>As of v5.1.0, <code>background-color</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.</p>
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.bg-success</code> utility.</p>
     <CodeWrapper
@@ -63,10 +46,8 @@
       lang="css"
     />
     <p>
-      We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable,
-      <code>--bs-bg-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use
-      <code>.bg-success</code> now, your computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.bg-*</code> class avoids
-      inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
+      We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable, <code>--bs-bg-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.bg-success</code> now, your
+      computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.bg-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
     </p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
     <p>To change that opacity, override <code>--bs-bg-opacity</code> via custom styles or inline styles.</p>
@@ -89,10 +70,7 @@
     </p>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>Most <code>background-color</code> utilities are generated by our theme colors, reassigned from our generic color palette variables.</p>
-    <ScssDocs name="color-variables" file="scss/_variables.scss" /><ScssDocs name="theme-color-variables" file="scss/_variables.scss" /><ScssDocs
-      name="variable-gradient"
-      file="scss/_variables.scss"
-    />
+    <ScssDocs name="color-variables" file="scss/_variables.scss" /><ScssDocs name="theme-color-variables" file="scss/_variables.scss" /><ScssDocs name="variable-gradient" file="scss/_variables.scss" />
     <p>Grayscale colors are also available, but only a subset are used to generate any utilities.</p>
     <ScssDocs name="gray-color-variables" file="scss/_variables.scss" />
     <p>Variables for setting <code>background-color</code> in <code>.bg-*-subtle</code> utilities in light and dark mode:</p>
@@ -112,10 +90,7 @@
     <p>Color mode background colors are also available as a Sass map:</p>
     <ScssDocs name="theme-bg-subtle-map" file="scss/_maps.scss" /><ScssDocs name="theme-bg-subtle-dark-map" file="scss/_maps.scss" />
     <h3 id="sass-mixins">Sass mixins<a class="anchor-link" href="#sass-mixins" aria-label="Link to Sass mixins"></a></h3>
-    <p>
-      <strong>No mixins are used to generate our background utilities</strong>, but we do have some additional mixins for other situations where you’d like to create your own
-      gradients.
-    </p>
+    <p><strong>No mixins are used to generate our background utilities</strong>, but we do have some additional mixins for other situations where you’d like to create your own gradients.</p>
     <ScssDocs name="gradient-bg-mixin" file="scss/mixins/_gradients.scss" /><ScssDocs name="gradient-mixins" file="scss/mixins/_gradients.scss" />
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>

@@ -6,8 +6,7 @@
     <h2 id="how-they-work">How they work<a class="anchor-link" href="#how-they-work" aria-label="Link to How they work"></a></h2>
     <p>
       Containers are the most basic layout element in Bootstrap and are
-      <strong>required when using our default grid system</strong>. Containers are used to contain, pad, and (sometimes) center the content within them. While containers
-      <em>can</em> be nested, most layouts do not require a nested container.
+      <strong>required when using our default grid system</strong>. Containers are used to contain, pad, and (sometimes) center the content within them. While containers <em>can</em> be nested, most layouts do not require a nested container.
     </p>
     <p>Bootstrap comes with three different containers:</p>
     <ul>
@@ -15,10 +14,7 @@
       <li><code>.container-{breakpoint}</code>, which is <code>width: 100%</code> until the specified breakpoint</li>
       <li><code>.container-fluid</code>, which is <code>width: 100%</code> at all breakpoints</li>
     </ul>
-    <p>
-      The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each
-      breakpoint.
-    </p>
+    <p>The table below illustrates how each container’s <code>max-width</code> compares to the original <code>.container</code> and <code>.container-fluid</code> across each breakpoint.</p>
     <p>
       See them in action and compare them in our
       <a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">Grid example</a>.
@@ -131,8 +127,7 @@
     />
     <h2 id="responsive-containers">Responsive containers<a class="anchor-link" href="#responsive-containers" aria-label="Link to Responsive containers"></a></h2>
     <p>
-      Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply <code>max-width</code>s for each of the
-      higher breakpoints. For example, <code>.container-sm</code> is 100% wide to start until the <code>sm</code> breakpoint is reached, where it will scale up with
+      Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply <code>max-width</code>s for each of the higher breakpoints. For example, <code>.container-sm</code> is 100% wide to start until the <code>sm</code> breakpoint is reached, where it will scale up with
       <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.
     </p>
     <CodeWrapper
@@ -154,8 +149,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <p>
-      As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by
-      modifying the Sass map (found in
+      As shown above, Bootstrap generates a series of predefined container classes to help you build the layouts you desire. You may customize these predefined container classes by modifying the Sass map (found in
       <code>_variables.scss</code>) that powers them:
     </p>
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" />

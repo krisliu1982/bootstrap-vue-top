@@ -4,10 +4,7 @@
     <p>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
-    <p>
-      Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input
-      group.
-    </p>
+    <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>
     <Example
       code='<div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">@</span>
@@ -46,10 +43,7 @@
 </div>'
     />
     <h2 id="wrapping">Wrapping<a class="anchor-link" href="#wrapping" aria-label="Link to Wrapping"></a></h2>
-    <p>
-      Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with
-      <code>.flex-nowrap</code>.
-    </p>
+    <p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code>.</p>
     <Example
       code='<div class="input-group flex-nowrap">
   <span class="input-group-text" id="addon-wrapping">@</span>
@@ -57,11 +51,7 @@
 </div>'
     />
     <h2 id="border-radius">Border radius<a class="anchor-link" href="#border-radius" aria-label="Link to Border radius"></a></h2>
-    <p>
-      Due to limitations of browser support at the time, <code>border-radius</code> styles can only be applied to the first and last children within the
-      <code>.input-group</code> class. Any non-visible element in one of those positions will cause the input group to render incorrectly. This will unfortunately not be fixed
-      until v6 most likely.
-    </p>
+    <p>Due to limitations of browser support at the time, <code>border-radius</code> styles can only be applied to the first and last children within the <code>.input-group</code> class. Any non-visible element in one of those positions will cause the input group to render incorrectly. This will unfortunately not be fixed until v6 most likely.</p>
     <Example
       code='<div class="input-group">
   <span class="input-group-text" id="visible-addon">@</span>
@@ -70,10 +60,7 @@
 </div>'
     />
     <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>
-      Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes
-      on each element.
-    </p>
+    <p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
     <p><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
     <Example
       code='<div class="input-group input-group-sm mb-3">

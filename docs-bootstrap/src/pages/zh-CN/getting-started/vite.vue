@@ -3,36 +3,20 @@
     <h1>Bootstrap and Vite</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Vite.</p>
 
-    <img
-      class="d-block mx-auto mb-4 img-fluid rounded-3"
-      srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite@2x.png 2x"
-      src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png"
-      width="100%"
-      alt=""
-    /><Callout>
+    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the
-        <a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples repository</a>. You can also
+        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples repository</a>. You can also
         <a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">open the example in StackBlitz</a>
         for live editing.
       </p>
     </Callout>
     <h2 id="what-is-vite">What is Vite?<a class="anchor-link" href="#what-is-vite" aria-label="Link to What is Vite?"></a></h2>
-    <p>
-      <a href="https://vite.dev/">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience,
-      especially for modern JavaScript frameworks.
-    </p>
+    <p><a href="https://vite.dev/">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.</p>
     <h2 id="setup">Setup<a class="anchor-link" href="#setup" aria-label="Link to Setup"></a></h2>
-    <p>
-      We’re building a Vite project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have
-      Node.js installed and some familiarity with the terminal.
-    </p>
+    <p>We’re building a Vite project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
     <ol>
       <li>
-        <p>
-          <strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid
-          it asking us all the interactive questions.
-        </p>
+        <p><strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid it asking us all the interactive questions.</p>
         <CodeWrapper
           code="mkdir my-project &amp;&amp; cd my-project
 npm init -y
@@ -41,17 +25,11 @@ npm init -y
         />
       </li>
       <li>
-        <p>
-          <strong>Install Vite.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. We use <code>--save-dev</code> to signal that this dependency
-          is only for development use and not for production.
-        </p>
+        <p><strong>Install Vite.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. We use <code>--save-dev</code> to signal that this dependency is only for development use and not for production.</p>
         <CodeWrapper code="npm i --save-dev vite" lang="shell" />
       </li>
       <li>
-        <p>
-          <strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their
-          positioning. If you don’t plan on using those components, you can omit Popper here.
-        </p>
+        <p><strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don’t plan on using those components, you can omit Popper here.</p>
         <CodeWrapper code="npm i --save bootstrap @popperjs/core" lang="shell" />
       </li>
       <li>
@@ -61,10 +39,7 @@ npm init -y
     </ol>
     <p>Now that we have all the necessary dependencies installed and set up, we can get to work creating the project files and importing Bootstrap.</p>
     <h2 id="project-structure">Project structure<a class="anchor-link" href="#project-structure" aria-label="Link to Project structure"></a></h2>
-    <p>
-      We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round
-      out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.
-    </p>
+    <p>We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.</p>
     <CodeWrapper
       code="mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js"
@@ -93,8 +68,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js"
     <ol>
       <li>
         <p>
-          <strong>Open <code>vite.config.js</code> in your editor.</strong> Since it’s blank, we&#39;ll need to add some boilerplate config to it so we can start our server. This
-          part of the config tells Vite where to look for our project’s JavaScript and how the development server should behave (pulling from the <code>src</code> folder with hot
+          <strong>Open <code>vite.config.js</code> in your editor.</strong> Since it’s blank, we&#39;ll need to add some boilerplate config to it so we can start our server. This part of the config tells Vite where to look for our project’s JavaScript and how the development server should behave (pulling from the <code>src</code> folder with hot
           reload).
         </p>
         <CodeWrapper
@@ -125,15 +99,13 @@ export default {
           lang="javascript"
         />
         <p>
-          <strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or
-          usage of Bootstrap. We’re <a href="https://github.com/twbs/bootstrap/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be
+          <strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or usage of Bootstrap. We’re <a href="https://github.com/twbs/bootstrap/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be
           ignored.
         </p>
       </li>
       <li>
         <p>
-          <strong>Next we fill in <code>src/index.html</code>.</strong> This is the HTML page Vite will load in the browser to utilize the bundled CSS and JS we&#39;ll add to it in
-          later steps.
+          <strong>Next we fill in <code>src/index.html</code>.</strong> This is the HTML page Vite will load in the browser to utilize the bundled CSS and JS we&#39;ll add to it in later steps.
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
@@ -159,10 +131,7 @@ export default {
         </p>
       </li>
       <li>
-        <p>
-          <strong>Now we need an npm script to run Vite.</strong> Open <code>package.json</code> and add the <code>start</code> script shown below (you should already have the test
-          script). We&#39;ll use this script to start our local Vite dev server.
-        </p>
+        <p><strong>Now we need an npm script to run Vite.</strong> Open <code>package.json</code> and add the <code>start</code> script shown below (you should already have the test script). We&#39;ll use this script to start our local Vite dev server.</p>
         <CodeWrapper
           code='{
   // ...
@@ -202,10 +171,7 @@ export default {
         </p>
       </li>
       <li>
-        <p>
-          <strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s
-          JS. Popper will be imported automatically through Bootstrap.
-        </p>
+        <p><strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
         <CodeWrapper
           code="// Import our custom CSS
 import &#39;../scss/styles.scss&#39;
@@ -233,8 +199,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite dev server running with Bootstrap" />
         <p>
           Now you can start adding any Bootstrap components you want to use. Be sure to
-          <a href="https://github.com/twbs/examples/tree/main/vite">check out the complete Vite example project</a> for how to include additional custom Sass and optimize your
-          build by importing only the parts of Bootstrap’s CSS and JS that you need.
+          <a href="https://github.com/twbs/examples/tree/main/vite">check out the complete Vite example project</a> for how to include additional custom Sass and optimize your build by importing only the parts of Bootstrap’s CSS and JS that you need.
         </p>
       </li>
     </ol>

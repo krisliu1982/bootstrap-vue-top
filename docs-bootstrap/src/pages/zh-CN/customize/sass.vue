@@ -11,10 +11,7 @@
       </p>
     </Callout>
     <h2 id="file-structure">File structure<a class="anchor-link" href="#file-structure" aria-label="Link to File structure"></a></h2>
-    <p>
-      Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming
-      you’re using a package manager like npm, you’ll have a file structure that looks like this:
-    </p>
+    <p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:</p>
     <CodeWrapper
       code="your-project/
 ├── scss/
@@ -27,10 +24,7 @@
 "
       lang="text"
     />
-    <p>
-      If you’ve downloaded our source files and aren’t using a package manager, you’ll want to manually create something similar to that structure, keeping Bootstrap’s source files
-      separate from your own.
-    </p>
+    <p>If you’ve downloaded our source files and aren’t using a package manager, you’ll want to manually create something similar to that structure, keeping Bootstrap’s source files separate from your own.</p>
     <CodeWrapper
       code="your-project/
 ├── scss/
@@ -43,10 +37,7 @@
       lang="text"
     />
     <h2 id="importing">Importing<a class="anchor-link" href="#importing" aria-label="Link to Importing"></a></h2>
-    <p>
-      In your <code>custom.scss</code>, you’ll import Bootstrap’s source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the
-      latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.
-    </p>
+    <p>In your <code>custom.scss</code>, you’ll import Bootstrap’s source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.</p>
     <CodeWrapper
       code='// Custom.scss
 // Option A: Include all of Bootstrap
@@ -98,14 +89,12 @@
     />
     <p>
       With that setup in place, you can begin to modify any of the Sass variables and maps in your
-      <code>custom.scss</code>. You can also start to add parts of Bootstrap under the <code>// Optional</code> section as needed. We suggest using the full import stack from our
-      <code>bootstrap.scss</code> file as your starting point.
+      <code>custom.scss</code>. You can also start to add parts of Bootstrap under the <code>// Optional</code> section as needed. We suggest using the full import stack from our <code>bootstrap.scss</code> file as your starting point.
     </p>
     <h2 id="compiling">Compiling<a class="anchor-link" href="#compiling" aria-label="Link to Compiling"></a></h2>
     <p>
       In order to use your custom Sass code as CSS in the browser, you need a Sass compiler. Sass ships as a CLI package, but you can also compile it with other build tools like
-      <a href="https://gulpjs.com/">Gulp</a> or <a href="https://webpack.js.org/">Webpack</a>, or with GUI applications. Some IDEs also have Sass compilers built in or as
-      downloadable extensions.
+      <a href="https://gulpjs.com/">Gulp</a> or <a href="https://webpack.js.org/">Webpack</a>, or with GUI applications. Some IDEs also have Sass compilers built in or as downloadable extensions.
     </p>
     <p>We like to use the CLI to compile our Sass, but you can use whichever method you prefer. From the command line, run the following:</p>
     <CodeWrapper
@@ -117,22 +106,15 @@ sass --watch ./scss/custom.scss ./css/custom.css
 "
       lang="shell"
     />
-    <p>
-      Learn more about your options at <a href="https://sass-lang.com/install/">sass-lang.com/install</a> and
-      <a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">compiling with VS Code</a>.
-    </p>
+    <p>Learn more about your options at <a href="https://sass-lang.com/install/">sass-lang.com/install</a> and <a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">compiling with VS Code</a>.</p>
     <Callout>
       <p>
-        <strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/getting-started/webpack">Webpack</a>,
-        <a href="/getting-started/parcel">Parcel</a>, or <a href="/getting-started/vite">Vite</a>. We also have production-ready demos in
+        <strong>Using Bootstrap with another build tool?</strong> Consider reading our guides for compiling with <a href="/getting-started/webpack">Webpack</a>, <a href="/getting-started/parcel">Parcel</a>, or <a href="/getting-started/vite">Vite</a>. We also have production-ready demos in
         <a href="https://github.com/twbs/examples">our examples repository on GitHub</a>.
       </p>
     </Callout>
     <h2 id="including">Including<a class="anchor-link" href="#including" aria-label="Link to Including"></a></h2>
-    <p>
-      Once your CSS is compiled, you can include it in your HTML files. Inside your <code>index.html</code> you’ll want to include your compiled CSS file. Be sure to update the
-      path to your compiled CSS file if you’ve changed it.
-    </p>
+    <p>Once your CSS is compiled, you can include it in your HTML files. Inside your <code>index.html</code> you’ll want to include your compiled CSS file. Be sure to update the path to your compiled CSS file if you’ve changed it.</p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
@@ -150,14 +132,10 @@ sass --watch ./scss/custom.scss ./css/custom.css
     />
     <h2 id="variable-defaults">Variable defaults<a class="anchor-link" href="#variable-defaults" aria-label="Link to Variable defaults"></a></h2>
     <p>
-      Every Sass variable in Bootstrap includes the <code>!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Bootstrap’s
-      source code. Copy and paste variables as needed, modify their values, and remove the <code>!default</code> flag. If a variable has already been assigned, then it won’t be
+      Every Sass variable in Bootstrap includes the <code>!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Bootstrap’s source code. Copy and paste variables as needed, modify their values, and remove the <code>!default</code> flag. If a variable has already been assigned, then it won’t be
       re-assigned by the default values in Bootstrap.
     </p>
-    <p>
-      You will find the complete list of Bootstrap’s variables in <code>scss/_variables.scss</code>. Some variables are set to <code>null</code>, these variables don’t output the
-      property unless they are overridden in your configuration.
-    </p>
+    <p>You will find the complete list of Bootstrap’s variables in <code>scss/_variables.scss</code>. Some variables are set to <code>null</code>, these variables don’t output the property unless they are overridden in your configuration.</p>
     <p>Variable overrides must come after our functions are imported, but before the rest of the imports.</p>
     <p>Here’s an example that changes the <code>background-color</code> and <code>color</code> for the <code>&lt;body&gt;</code> when importing and compiling Bootstrap via npm:</p>
     <CodeWrapper
@@ -185,19 +163,10 @@ $body-color: #111;
     <p>Repeat as necessary for any variable in Bootstrap, including the global options below.</p>
     <Callout name="info-npm-starter" />
     <h2 id="maps-and-loops">Maps and loops<a class="anchor-link" href="#maps-and-loops" aria-label="Link to Maps and loops"></a></h2>
-    <p>
-      Bootstrap includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and
-      more. Just like Sass variables, all Sass maps include the <code>!default</code> flag and can be overridden and extended.
-    </p>
-    <p>
-      Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making <em>removing</em> items
-      from a map slightly more difficult.
-    </p>
+    <p>Bootstrap includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the <code>!default</code> flag and can be overridden and extended.</p>
+    <p>Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making <em>removing</em> items from a map slightly more difficult.</p>
     <h3 id="modify-map">Modify map<a class="anchor-link" href="#modify-map" aria-label="Link to Modify map"></a></h3>
-    <p>
-      All variables in the <code>$theme-colors</code> map are defined as standalone variables. To modify an existing color in our <code>$theme-colors</code> map, add the following
-      to your custom Sass file:
-    </p>
+    <p>All variables in the <code>$theme-colors</code> map are defined as standalone variables. To modify an existing color in our <code>$theme-colors</code> map, add the following to your custom Sass file:</p>
     <CodeWrapper
       code="$primary: #0074d9;
 $danger: #ff4136;
@@ -214,10 +183,7 @@ $danger: #ff4136;
       lang="scss"
     />
     <h3 id="add-to-map">Add to map<a class="anchor-link" href="#add-to-map" aria-label="Link to Add to map"></a></h3>
-    <p>
-      Add new colors to <code>$theme-colors</code>, or any other map, by creating a new Sass map with your custom values and merging it with the original map. In this case,
-      we&#39;ll create a new <code>$custom-colors</code> map and merge it with <code>$theme-colors</code>.
-    </p>
+    <p>Add new colors to <code>$theme-colors</code>, or any other map, by creating a new Sass map with your custom values and merging it with the original map. In this case, we&#39;ll create a new <code>$custom-colors</code> map and merge it with <code>$theme-colors</code>.</p>
     <CodeWrapper
       code='// Create your own map
 $custom-colors: (
@@ -230,10 +196,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
       lang="scss"
     />
     <h3 id="remove-from-map">Remove from map<a class="anchor-link" href="#remove-from-map" aria-label="Link to Remove from map"></a></h3>
-    <p>
-      To remove colors from <code>$theme-colors</code>, or any other map, use <code>map-remove</code>. Be aware you must insert <code>$theme-colors</code> between our requirements
-      just after its definition in <code>variables</code> and before its usage in <code>maps</code>:
-    </p>
+    <p>To remove colors from <code>$theme-colors</code>, or any other map, use <code>map-remove</code>. Be aware you must insert <code>$theme-colors</code> between our requirements just after its definition in <code>variables</code> and before its usage in <code>maps</code>:</p>
     <CodeWrapper
       code='// Required
 @import "../node_modules/bootstrap/scss/functions";
@@ -254,13 +217,9 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
       lang="scss"
     />
     <h2 id="required-keys">Required keys<a class="anchor-link" href="#required-keys" aria-label="Link to Required keys"></a></h2>
+    <p>Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map’s key is being used.</p>
     <p>
-      Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors
-      where a specific Sass map’s key is being used.
-    </p>
-    <p>
-      For example, we use the <code>primary</code>, <code>success</code>, and <code>danger</code> keys from <code>$theme-colors</code> for links, buttons, and form states.
-      Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that
+      For example, we use the <code>primary</code>, <code>success</code>, and <code>danger</code> keys from <code>$theme-colors</code> for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that
       makes use of those values.
     </p>
     <h2 id="functions">Functions<a class="anchor-link" href="#functions" aria-label="Link to Functions"></a></h2>
@@ -275,8 +234,7 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
       lang="scss"
     />
     <p>
-      You can lighten or darken colors with Bootstrap’s <code>tint-color()</code> and <code>shade-color()</code> functions. These functions will mix colors with black or white,
-      unlike Sass’ native <code>lighten()</code> and <code>darken()</code> functions which will change the lightness by a fixed amount, which often doesn’t lead to the desired
+      You can lighten or darken colors with Bootstrap’s <code>tint-color()</code> and <code>shade-color()</code> functions. These functions will mix colors with black or white, unlike Sass’ native <code>lighten()</code> and <code>darken()</code> functions which will change the lightness by a fixed amount, which often doesn’t lead to the desired
       effect.
     </p>
     <p><code>shift-color()</code> combines these two functions by shading the color if the weight is positive and tinting the color if the weight is negative.</p>
@@ -301,16 +259,12 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     <h3 id="color-contrast">Color contrast<a class="anchor-link" href="#color-contrast" aria-label="Link to Color contrast"></a></h3>
     <p>
       In order to meet the
-      <a href="https://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines (WCAG)</a> contrast requirements, authors <strong>must</strong> provide a minimum
-      <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">text color contrast of 4.5:1</a> and a minimum
+      <a href="https://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines (WCAG)</a> contrast requirements, authors <strong>must</strong> provide a minimum <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">text color contrast of 4.5:1</a> and a minimum
       <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">non-text color contrast of 3:1</a>, with very few exceptions.
     </p>
     <p>
-      To help with this, we included the <code>color-contrast</code> function in Bootstrap. It uses the
-      <a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG contrast ratio algorithm</a> for calculating contrast thresholds based on
-      <a href="https://www.w3.org/TR/WCAG/#dfn-relative-luminance">relative luminance</a> in an <code>sRGB</code> color space to automatically return a light (<code>#fff</code>),
-      dark (<code>#212529</code>) or black (<code>#000</code>) contrast color based on the specified base color. This function is especially useful for mixins or loops where you’re
-      generating multiple classes.
+      To help with this, we included the <code>color-contrast</code> function in Bootstrap. It uses the <a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG contrast ratio algorithm</a> for calculating contrast thresholds based on <a href="https://www.w3.org/TR/WCAG/#dfn-relative-luminance">relative luminance</a> in an
+      <code>sRGB</code> color space to automatically return a light (<code>#fff</code>), dark (<code>#212529</code>) or black (<code>#000</code>) contrast color based on the specified base color. This function is especially useful for mixins or loops where you’re generating multiple classes.
     </p>
     <p>For example, to generate color swatches from our <code>$theme-colors</code> map:</p>
     <CodeWrapper
@@ -339,16 +293,10 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
       lang="scss"
     />
     <h3 id="escape-svg">Escape SVG<a class="anchor-link" href="#escape-svg" aria-label="Link to Escape SVG"></a></h3>
+    <p>We use the <code>escape-svg</code> function to escape the <code>&lt;</code>, <code>&gt;</code> and <code>#</code> characters for SVG background images. When using the <code>escape-svg</code> function, data URIs must be quoted.</p>
+    <h3 id="add-and-subtract-functions">Add and Subtract functions<a class="anchor-link" href="#add-and-subtract-functions" aria-label="Link to Add and Subtract functions"></a></h3>
     <p>
-      We use the <code>escape-svg</code> function to escape the <code>&lt;</code>, <code>&gt;</code> and <code>#</code> characters for SVG background images. When using the
-      <code>escape-svg</code> function, data URIs must be quoted.
-    </p>
-    <h3 id="add-and-subtract-functions">
-      Add and Subtract functions<a class="anchor-link" href="#add-and-subtract-functions" aria-label="Link to Add and Subtract functions"></a>
-    </h3>
-    <p>
-      We use the <code>add</code> and <code>subtract</code> functions to wrap the CSS <code>calc</code> function. The primary purpose of these functions is to avoid errors when a
-      “unitless” <code>0</code> value is passed into a <code>calc</code> expression. Expressions like <code>calc(10px - 0)</code> will return an error in all browsers, despite
+      We use the <code>add</code> and <code>subtract</code> functions to wrap the CSS <code>calc</code> function. The primary purpose of these functions is to avoid errors when a “unitless” <code>0</code> value is passed into a <code>calc</code> expression. Expressions like <code>calc(10px - 0)</code> will return an error in all browsers, despite
       being mathematically correct.
     </p>
     <p>Example where the calc is valid:</p>
@@ -388,10 +336,7 @@ $border-width: 0;
     <h2 id="mixins">Mixins<a class="anchor-link" href="#mixins" aria-label="Link to Mixins"></a></h2>
     <p>Our <code>scss/mixins/</code> directory has a ton of mixins that power parts of Bootstrap and can also be used across your own project.</p>
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
-    <p>
-      A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See
-      <a href="/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.
-    </p>
+    <p>A shorthand mixin for the <code>prefers-color-scheme</code> media query is available with support for <code>light</code> and <code>dark</code> color schemes. See <a href="/customize/color-modes">the color modes documentation</a> for information on our color mode mixin.</p>
     <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" />
     <CodeWrapper
       code=".custom-element {

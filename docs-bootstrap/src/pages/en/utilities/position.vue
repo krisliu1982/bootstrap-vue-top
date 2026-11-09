@@ -42,10 +42,7 @@
     />
     <h2 id="center-elements">Center elements<a class="anchor-link" href="#center-elements" aria-label="Link to Center elements"></a></h2>
     <p>In addition, you can also center the elements with the transform utility class <code>.translate-middle</code>.</p>
-    <p>
-      This class applies the transformations <code>translateX(-50%)</code> and <code>translateY(-50%)</code> to the element which, in combination with the edge positioning
-      utilities, allows you to absolute center an element.
-    </p>
+    <p>This class applies the transformations <code>translateX(-50%)</code> and <code>translateY(-50%)</code> to the element which, in combination with the edge positioning utilities, allows you to absolute center an element.</p>
     <Example
       class="bd-example-position-utils"
       code='<div class="position-relative">

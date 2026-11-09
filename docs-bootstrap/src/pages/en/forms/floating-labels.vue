@@ -4,15 +4,8 @@
     <p>Create beautifully simple form labels that float over your input fields.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>
-      Wrap a pair of <code>&lt;input class=&quot;form-control&quot;&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with
-      Bootstrap’s textual form fields.
-    </p>
-    <p>
-      A non-empty <code>placeholder</code> attribute is required on each <code>&lt;input&gt;</code> as our CSS-only floating label implementation relies on the
-      <code>:placeholder-shown</code> pseudo-element to detect when the input is empty. The placeholder text itself is not visible; only the <code>&lt;label&gt;</code> is shown to
-      users.
-    </p>
+    <p>Wrap a pair of <code>&lt;input class=&quot;form-control&quot;&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields.</p>
+    <p>A non-empty <code>placeholder</code> attribute is required on each <code>&lt;input&gt;</code> as our CSS-only floating label implementation relies on the <code>:placeholder-shown</code> pseudo-element to detect when the input is empty. The placeholder text itself is not visible; only the <code>&lt;label&gt;</code> is shown to users.</p>
     <p>Also note that the <code>&lt;input&gt;</code> must come first so we can utilize a sibling selector (i.e., <code>~</code>).</p>
     <Example
       code='<div class="form-floating mb-3">
@@ -46,10 +39,7 @@
   <label for="floatingTextarea">Comments</label>
 </div>'
     />
-    <p>
-      To set a custom height on your <code>&lt;textarea&gt;</code>, do not use the <code>rows</code> attribute. Instead, set an explicit <code>height</code> (either inline or via
-      custom CSS).
-    </p>
+    <p>To set a custom height on your <code>&lt;textarea&gt;</code>, do not use the <code>rows</code> attribute. Instead, set an explicit <code>height</code> (either inline or via custom CSS).</p>
     <Example
       code='<div class="form-floating">
   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -58,8 +48,8 @@
     />
     <h2 id="selects">Selects<a class="anchor-link" href="#selects" aria-label="Link to Selects"></a></h2>
     <p>
-      Other than <code>.form-control</code>, floating labels are only available on <code>.form-select</code>s. They work in the same way, but unlike <code>&lt;input&gt;</code>s,
-      they’ll always show the <code>&lt;label&gt;</code> in its floated state. <strong>Selects with <code>size</code> and <code>multiple</code> are not supported.</strong>
+      Other than <code>.form-control</code>, floating labels are only available on <code>.form-select</code>s. They work in the same way, but unlike <code>&lt;input&gt;</code>s, they’ll always show the <code>&lt;label&gt;</code> in its floated state.
+      <strong>Selects with <code>size</code> and <code>multiple</code> are not supported.</strong>
     </p>
     <Example
       code='<div class="form-floating">
@@ -98,10 +88,7 @@
 </div>'
     />
     <h2 id="readonly-plaintext">Readonly plaintext<a class="anchor-link" href="#readonly-plaintext" aria-label="Link to Readonly plaintext"></a></h2>
-    <p>
-      Floating labels also support <code>.form-control-plaintext</code>, which can be helpful for toggling from an editable <code>&lt;input&gt;</code> to a plaintext value without
-      affecting the page layout.
-    </p>
+    <p>Floating labels also support <code>.form-control-plaintext</code>, which can be helpful for toggling from an editable <code>&lt;input&gt;</code> to a plaintext value without affecting the page layout.</p>
     <Example
       code='<div class="form-floating mb-3">
   <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com">
@@ -123,10 +110,7 @@
   </div>
 </div>'
     />
-    <p>
-      When using <code>.input-group</code> and <code>.form-floating</code> along with form validation, the <code>-feedback</code> should be placed outside of the
-      <code>.form-floating</code>, but inside of the <code>.input-group</code>. This means that the feedback will need to be shown using javascript.
-    </p>
+    <p>When using <code>.input-group</code> and <code>.form-floating</code> along with form validation, the <code>-feedback</code> should be placed outside of the <code>.form-floating</code>, but inside of the <code>.input-group</code>. This means that the feedback will need to be shown using javascript.</p>
     <Example
       code='<div class="input-group has-validation">
   <span class="input-group-text">@</span>

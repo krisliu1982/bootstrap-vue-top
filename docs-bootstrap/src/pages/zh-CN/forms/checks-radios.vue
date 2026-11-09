@@ -5,15 +5,12 @@
 
     <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
     <p>
-      Browser default checkboxes and radios are replaced with the help of <code>.form-check</code>, a series of classes for both input types that improves the layout and behavior
-      of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are for
-      selecting one option from many.
+      Browser default checkboxes and radios are replaced with the help of <code>.form-check</code>, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are
+      for selecting one option from many.
     </p>
     <p>
-      Structurally, our <code>&lt;input&gt;</code>s and <code>&lt;label&gt;</code>s are sibling elements as opposed to an <code>&lt;input&gt;</code> within a
-      <code>&lt;label&gt;</code>. This is slightly more verbose as you must specify <code>id</code> and <code>for</code> attributes to relate the <code>&lt;input&gt;</code> and
-      <code>&lt;label&gt;</code>. We use the sibling selector (<code>~</code>) for all our <code>&lt;input&gt;</code> states, like <code>:checked</code> or <code>:disabled</code>.
-      When combined with the <code>.form-check-label</code> class, we can easily style the text for each item based on the <code>&lt;input&gt;</code>’s state.
+      Structurally, our <code>&lt;input&gt;</code>s and <code>&lt;label&gt;</code>s are sibling elements as opposed to an <code>&lt;input&gt;</code> within a <code>&lt;label&gt;</code>. This is slightly more verbose as you must specify <code>id</code> and <code>for</code> attributes to relate the <code>&lt;input&gt;</code> and
+      <code>&lt;label&gt;</code>. We use the sibling selector (<code>~</code>) for all our <code>&lt;input&gt;</code> states, like <code>:checked</code> or <code>:disabled</code>. When combined with the <code>.form-check-label</code> class, we can easily style the text for each item based on the <code>&lt;input&gt;</code>’s state.
     </p>
     <p>Our checks use custom Bootstrap icons to indicate checked or indeterminate states.</p>
     <h2 id="checks">Checks<a class="anchor-link" href="#checks" aria-label="Link to Checks"></a></h2>
@@ -44,10 +41,7 @@
 </div>'
     />
     <h3 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h3>
-    <p>
-      Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s
-      state.
-    </p>
+    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
     <Example
       addStackblitzJs
       class="bd-example-indeterminate"
@@ -86,10 +80,7 @@
 </div>'
     />
     <h3 id="disabled-1">Disabled<a class="anchor-link" href="#disabled-1" aria-label="Link to Disabled"></a></h3>
-    <p>
-      Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s
-      state.
-    </p>
+    <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="radio" name="radioDisabled" id="radioDisabled" disabled>
@@ -106,8 +97,7 @@
     />
     <h2 id="switches">Switches<a class="anchor-link" href="#switches" aria-label="Link to Switches"></a></h2>
     <p>
-      A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Consider using <code>role=&quot;switch&quot;</code> to
-      more accurately convey the nature of the control to assistive technologies that support this role. In older assistive technologies, it will simply be announced as a regular
+      A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Consider using <code>role=&quot;switch&quot;</code> to more accurately convey the nature of the control to assistive technologies that support this role. In older assistive technologies, it will simply be announced as a regular
       checkbox as a fallback. Switches also support the <code>disabled</code> attribute.
     </p>
     <Example
@@ -129,10 +119,7 @@
 </div>'
     />
     <h3 id="native-switches">Native switches<a class="anchor-link" href="#native-switches" aria-label="Link to Native switches"></a></h3>
-    <p>
-      Progressively enhance your switches for mobile Safari (iOS 17.4+) by adding a <code>switch</code> attribute to your input to enable haptic feedback when toggling switches,
-      just like native iOS switches. There are no style changes attached to using this attribute in Bootstrap as all our switches use custom styles.
-    </p>
+    <p>Progressively enhance your switches for mobile Safari (iOS 17.4+) by adding a <code>switch</code> attribute to your input to enable haptic feedback when toggling switches, just like native iOS switches. There are no style changes attached to using this attribute in Bootstrap as all our switches use custom styles.</p>
     <Example
       code='<div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
@@ -143,8 +130,7 @@
     />
     <p>
       Be sure to read more about
-      <a href="https://webkit.org/blog/15054/an-html-switch-control/">the switch attribute on the WebKit blog</a>. Safari 17.4+ on macOS and iOS both have native-style switches in
-      HTML while other browsers simply fall back to the standard checkbox appearance. Applying the attribute to a non-Bootstrap checkbox in more recent versions of Safari will
+      <a href="https://webkit.org/blog/15054/an-html-switch-control/">the switch attribute on the WebKit blog</a>. Safari 17.4+ on macOS and iOS both have native-style switches in HTML while other browsers simply fall back to the standard checkbox appearance. Applying the attribute to a non-Bootstrap checkbox in more recent versions of Safari will
       render a native switch.
     </p>
     <h2 id="default-stacked">Default (stacked)<a class="anchor-link" href="#default-stacked" aria-label="Link to Default (stacked)"></a></h2>
@@ -233,10 +219,7 @@
 </div>'
     />
     <h2 id="without-labels">Without labels<a class="anchor-link" href="#without-labels" aria-label="Link to Without labels"></a></h2>
-    <p>
-      Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive
-      technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for details.
-    </p>
+    <p>Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for details.</p>
     <Example
       code='<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
@@ -247,10 +230,7 @@
 </div>'
     />
     <h2 id="toggle-buttons">Toggle buttons<a class="anchor-link" href="#toggle-buttons" aria-label="Link to Toggle buttons"></a></h2>
-    <p>
-      Create button-like checkboxes and radio buttons by using <code>.btn</code> styles rather than <code>.form-check-label</code> on the <code>&lt;label&gt;</code> elements. These
-      toggle buttons can further be grouped in a <a href="/components/button-group">button group</a> if needed.
-    </p>
+    <p>Create button-like checkboxes and radio buttons by using <code>.btn</code> styles rather than <code>.form-check-label</code> on the <code>&lt;label&gt;</code> elements. These toggle buttons can further be grouped in a <a href="/components/button-group">button group</a> if needed.</p>
     <h3 id="checkbox-toggle-buttons">Checkbox toggle buttons<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="Link to Checkbox toggle buttons"></a></h3>
     <Example
       code='<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
@@ -273,10 +253,8 @@
     /><Callout>
       <p>
         Visually, these checkbox toggle buttons are identical to the
-        <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be
-        announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle buttons
-        will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle
-        will make sense to users when announced as a checkbox or as an actual button.
+        <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle
+        buttons will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.
       </p>
     </Callout>
     <h3 id="radio-toggle-buttons">Radio toggle buttons<a class="anchor-link" href="#radio-toggle-buttons" aria-label="Link to Radio toggle buttons"></a></h3>

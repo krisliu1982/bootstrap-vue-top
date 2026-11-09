@@ -4,29 +4,17 @@
     <p>Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
 
     <h2 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h2>
-    <p>
-      Every group of form fields should reside in a <code>&lt;form&gt;</code> element. Bootstrap provides no default styling for the <code>&lt;form&gt;</code> element, but there
-      are some powerful browser features that are provided by default.
-    </p>
+    <p>Every group of form fields should reside in a <code>&lt;form&gt;</code> element. Bootstrap provides no default styling for the <code>&lt;form&gt;</code> element, but there are some powerful browser features that are provided by default.</p>
     <ul>
       <li>
         New to browser forms? Consider reviewing
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">the MDN form docs</a> for an overview and complete list of available attributes.
       </li>
-      <li>
-        <code>&lt;button&gt;</code>s within a <code>&lt;form&gt;</code> default to <code>type=&quot;submit&quot;</code>, so strive to be specific and always include a
-        <code>type</code>.
-      </li>
+      <li><code>&lt;button&gt;</code>s within a <code>&lt;form&gt;</code> default to <code>type=&quot;submit&quot;</code>, so strive to be specific and always include a <code>type</code>.</li>
     </ul>
-    <p>
-      Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes
-      can be used to vary this layout on a per-form basis.
-    </p>
+    <p>Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.</p>
     <h2 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h2>
-    <p>
-      <a href="/utilities/spacing">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and
-      form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.
-    </p>
+    <p><a href="/utilities/spacing">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.</p>
     <p>Feel free to build your forms however you like, with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
     <Example
       code='<div class="mb-3">
@@ -55,8 +43,7 @@
     />
     <h2 id="gutters">Gutters<a class="anchor-link" href="#gutters" aria-label="Link to Gutters"></a></h2>
     <p>
-      By adding <a href="/layout/gutters">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction.
-      <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).
+      By adding <a href="/layout/gutters">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).
     </p>
     <Example
       code='<div class="row g-3">
@@ -117,13 +104,9 @@
     />
     <h2 id="horizontal-form">Horizontal form<a class="anchor-link" href="#horizontal-form" aria-label="Link to Horizontal form"></a></h2>
     <p>
-      Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and
-      controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.
+      Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.
     </p>
-    <p>
-      At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the <code>padding-top</code> on our stacked
-      radio inputs label to better align the text baseline.
-    </p>
+    <p>At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the <code>padding-top</code> on our stacked radio inputs label to better align the text baseline.</p>
     <Example
       code='<form>
   <div class="row mb-3">
@@ -174,13 +157,8 @@
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>'
     />
-    <h3 id="horizontal-form-label-sizing">
-      Horizontal form label sizing<a class="anchor-link" href="#horizontal-form-label-sizing" aria-label="Link to Horizontal form label sizing"></a>
-    </h3>
-    <p>
-      Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow the
-      size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.
-    </p>
+    <h3 id="horizontal-form-label-sizing">Horizontal form label sizing<a class="anchor-link" href="#horizontal-form-label-sizing" aria-label="Link to Horizontal form label sizing"></a></h3>
+    <p>Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
     <Example
       code='<div class="row mb-3">
   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
@@ -203,9 +181,8 @@
     />
     <h2 id="column-sizing">Column sizing<a class="anchor-link" href="#column-sizing" aria-label="Link to Column sizing"></a></h2>
     <p>
-      As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally
-      between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific column
-      classes like <code>.col-sm-7</code>.
+      As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific
+      column classes like <code>.col-sm-7</code>.
     </p>
     <Example
       code='<div class="row g-3">
@@ -221,10 +198,7 @@
 </div>'
     />
     <h2 id="auto-sizing">Auto-sizing<a class="anchor-link" href="#auto-sizing" aria-label="Link to Auto-sizing"></a></h2>
-    <p>
-      The example below uses a flexbox utility to vertically center the contents and changes <code>.col</code> to <code>.col-auto</code> so that your columns only take up as much
-      space as needed. Put another way, the column sizes itself based on the contents.
-    </p>
+    <p>The example below uses a flexbox utility to vertically center the contents and changes <code>.col</code> to <code>.col-auto</code> so that your columns only take up as much space as needed. Put another way, the column sizes itself based on the contents.</p>
     <Example
       code='<form class="row gy-2 gx-3 align-items-center">
   <div class="col-auto">
@@ -298,9 +272,8 @@
     />
     <h2 id="inline-forms">Inline forms<a class="anchor-link" href="#inline-forms" aria-label="Link to Inline forms"></a></h2>
     <p>
-      Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/layout/gutters">gutter modifier classes</a>, we&#39;ll have gutters in
-      horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns
-      the form elements to the middle, making the <code>.form-check</code> align properly.
+      Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/layout/gutters">gutter modifier classes</a>, we&#39;ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The
+      <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-check</code> align properly.
     </p>
     <Example
       code='<form class="row row-cols-lg-auto g-3 align-items-center">

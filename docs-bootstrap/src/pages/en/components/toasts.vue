@@ -3,10 +3,7 @@
     <h1>Toasts</h1>
     <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
 
-    <p>
-      Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems. They’re built with flexbox,
-      so they’re easy to align and position.
-    </p>
+    <p>Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems. They’re built with flexbox, so they’re easy to align and position.</p>
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Things to know when using the toast plugin:</p>
     <ul>
@@ -20,10 +17,7 @@
       To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use
       <code>display: flex</code>, allowing easy alignment of content thanks to our margin and flexbox utilities.
     </p>
-    <p>
-      Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a
-      dismiss button.
-    </p>
+    <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.</p>
     <Example
       code='<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
@@ -40,9 +34,8 @@
 
     <Callout type="warning">
       <p>
-        Previously, our scripts dynamically added the <code>.hide</code> class to completely hide a toast (with <code>display:none</code>, rather than just with
-        <code>opacity:0</code>). This is now not necessary anymore. However, for backwards compatibility, our script will continue to toggle the class (even though there is no
-        practical need for it) until the next major version.
+        Previously, our scripts dynamically added the <code>.hide</code> class to completely hide a toast (with <code>display:none</code>, rather than just with <code>opacity:0</code>). This is now not necessary anymore. However, for backwards compatibility, our script will continue to toggle the class (even though there is no practical need for
+        it) until the next major version.
       </p>
     </Callout>
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
@@ -111,8 +104,7 @@
     <h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
     <p>
       Customize your toasts by removing sub-components, tweaking them with
-      <a href="/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default <code>.toast-header</code>, adding a custom
-      hide icon from <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, and using some <a href="/utilities/flex">flexbox utilities</a> to adjust the layout.
+      <a href="/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default <code>.toast-header</code>, adding a custom hide icon from <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, and using some <a href="/utilities/flex">flexbox utilities</a> to adjust the layout.
     </p>
     <Example
       code='<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -139,8 +131,7 @@
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
       Building on the above example, you can create different toast color schemes with our
-      <a href="/utilities/colors">color</a> and <a href="/utilities/background">background</a> utilities. Here we’ve added <code>.text-bg-primary</code> to the <code>.toast</code>,
-      and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0</code>.
+      <a href="/utilities/colors">color</a> and <a href="/utilities/background">background</a> utilities. Here we’ve added <code>.text-bg-primary</code> to the <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0</code>.
     </p>
     <Example
       code='<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
@@ -154,8 +145,7 @@
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
-      Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put
-      the positioning styles right on the
+      Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the
       <code>.toast</code>.
     </p>
     <Example
@@ -251,22 +241,13 @@
     />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
-      Toasts are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your toasts
-      in an
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> region</a>. Changes to live regions (such as
-      injecting/updating a toast component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user. Additionally,
-      include <code>aria-atomic=&quot;true&quot;</code> to ensure that the entire toast is always announced as a single (atomic) unit, rather than just announcing what was changed
-      (which could lead to problems if you only update part of the toast’s content, or if displaying the same toast content at a later point in time). If the information needed is
+      Toasts are intended to be small interruptions to your visitors or users, so to help those with screen readers and similar assistive technologies, you should wrap your toasts in an
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> region</a>. Changes to live regions (such as injecting/updating a toast component) are automatically announced by screen readers without needing to move the user’s focus or otherwise interrupt the user. Additionally, include
+      <code>aria-atomic=&quot;true&quot;</code> to ensure that the entire toast is always announced as a single (atomic) unit, rather than just announcing what was changed (which could lead to problems if you only update part of the toast’s content, or if displaying the same toast content at a later point in time). If the information needed is
       important for the process, e.g. for a list of errors in a form, then use the <a href="/components/alerts">alert component</a> instead of toast.
     </p>
-    <p>
-      Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If you dynamically generate both at the same time and inject
-      them into the page, they will generally not be announced by assistive technologies.
-    </p>
-    <p>
-      You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use
-      <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> attributes.
-    </p>
+    <p>Note that the live region needs to be present in the markup <em>before</em> the toast is generated or updated. If you dynamically generate both at the same time and inject them into the page, they will generally not be announced by assistive technologies.</p>
+    <p>You also need to adapt the <code>role</code> and <code>aria-live</code> level depending on the content. If it’s an important message like an error, use <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code>, otherwise use <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> attributes.</p>
     <p>
       As the content you’re displaying changes, be sure to update the
       <a href="#options"><code>delay</code> timeout</a> so that users have enough time to read the toast.
@@ -292,10 +273,8 @@
 </div>'
     />
     <p>
-      While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts.
-      Even if you give the toast a long
-      <a href="#options"><code>delay</code> timeout</a>, keyboard and assistive technology users may find it difficult to reach the toast in time to take action (since toasts don’t
-      receive focus when they are displayed). If you absolutely must have further controls, we recommend using a toast with <code>autohide: false</code>.
+      While technically it’s possible to add focusable/actionable controls (such as additional buttons or links) in your toast, you should avoid doing this for autohiding toasts. Even if you give the toast a long
+      <a href="#options"><code>delay</code> timeout</a>, keyboard and assistive technology users may find it difficult to reach the toast in time to take action (since toasts don’t receive focus when they are displayed). If you absolutely must have further controls, we recommend using a toast with <code>autohide: false</code>.
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
@@ -370,25 +349,21 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>getInstance</code></td>
             <td>
               <em>Static</em> method which allows you to get the toast instance associated with a DOM element. <br />
-              For example: <code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns
-              a Bootstrap toast instance.
+              For example: <code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getInstance(myToastEl)</code> Returns a Bootstrap toast instance.
             </td>
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
             <td>
-              <em>Static</em> method which allows you to get the toast instance associated with a DOM element, or create a new one, in case it wasn’t initialized. <br /><code
-                >const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code
-              >
-              <code>const myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)</code> Returns a Bootstrap toast instance.
+              <em>Static</em> method which allows you to get the toast instance associated with a DOM element, or create a new one, in case it wasn’t initialized. <br /><code>const myToastEl = articleEl.getElementById(&#39;myToastEl&#39;)</code> <code>const myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)</code> Returns a Bootstrap toast
+              instance.
             </td>
           </tr>
           <tr>
             <td><code>hide</code></td>
             <td>
               Hides an element’s toast.
-              <strong>Returns to the caller before the toast has actually been hidden</strong> (i.e. before the <code>hidden.bs.toast</code> event occurs). You have to manually
-              call this method if you made <code>autohide</code> to <code>false</code>.
+              <strong>Returns to the caller before the toast has actually been hidden</strong> (i.e. before the <code>hidden.bs.toast</code> event occurs). You have to manually call this method if you made <code>autohide</code> to <code>false</code>.
             </td>
           </tr>
           <tr>
@@ -399,8 +374,7 @@ const toastList = [...toastElList].map(toastEl =&gt; new bootstrap.Toast(toastEl
             <td><code>show</code></td>
             <td>
               Reveals an element’s toast.
-              <strong>Returns to the caller before the toast has actually been shown</strong> (i.e. before the <code>shown.bs.toast</code> event occurs). You have to manually call
-              this method, instead your toast won’t show.
+              <strong>Returns to the caller before the toast has actually been shown</strong> (i.e. before the <code>shown.bs.toast</code> event occurs). You have to manually call this method, instead your toast won’t show.
             </td>
           </tr>
         </tbody>

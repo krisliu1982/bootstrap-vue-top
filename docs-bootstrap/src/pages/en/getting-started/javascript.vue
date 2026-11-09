@@ -4,19 +4,13 @@
     <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
 
     <h2 id="individual-or-compiled">Individual or compiled<a class="anchor-link" href="#individual-or-compiled" aria-label="Link to Individual or compiled"></a></h2>
-    <p>
-      Plugins can be included individually (using Bootstrap’s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified
-      <code>bootstrap.min.js</code> (don’t include both).
-    </p>
+    <p>Plugins can be included individually (using Bootstrap’s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don’t include both).</p>
     <p>If you use a bundler (Webpack, Parcel, Vite…), you can use <code>/js/dist/*.js</code> files which are UMD ready.</p>
-    <h2 id="usage-with-javascript-frameworks">
-      Usage with JavaScript frameworks<a class="anchor-link" href="#usage-with-javascript-frameworks" aria-label="Link to Usage with JavaScript frameworks"></a>
-    </h2>
+    <h2 id="usage-with-javascript-frameworks">Usage with JavaScript frameworks<a class="anchor-link" href="#usage-with-javascript-frameworks" aria-label="Link to Usage with JavaScript frameworks"></a></h2>
     <p>
       While the Bootstrap CSS can be used with any framework,
       <strong>the Bootstrap JavaScript is not fully compatible with JavaScript frameworks like React, Vue, and Angular</strong>
-      which assume full knowledge of the DOM. Both Bootstrap and the framework may attempt to mutate the same DOM element, resulting in bugs like dropdowns that are stuck in the
-      “open” position.
+      which assume full knowledge of the DOM. Both Bootstrap and the framework may attempt to mutate the same DOM element, resulting in bugs like dropdowns that are stuck in the “open” position.
     </p>
     <p>
       A better alternative for those using this type of frameworks is to use a framework-specific package
@@ -26,8 +20,7 @@
       <li>
         React: <a href="https://react-bootstrap.github.io/">React Bootstrap</a
         ><Callout>
-          <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap with React, Next.js, and React Bootstrap from the
-          <a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples repository</a>. You can also
+          <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap with React, Next.js, and React Bootstrap from the <a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples repository</a>. You can also
           <a href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx">open the example in StackBlitz</a>.</Callout
         >
       </li>
@@ -38,20 +31,14 @@
         <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap</a>
       </li>
     </ul>
-    <h2 id="using-bootstrap-as-a-module">
-      Using Bootstrap as a module<a class="anchor-link" href="#using-bootstrap-as-a-module" aria-label="Link to Using Bootstrap as a module"></a>
-    </h2>
+    <h2 id="using-bootstrap-as-a-module">Using Bootstrap as a module<a class="anchor-link" href="#using-bootstrap-as-a-module" aria-label="Link to Using Bootstrap as a module"></a></h2>
     <Callout>
       <p>
-        <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap as an ES module from the
-        <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples repository</a>. You can also
+        <strong>Try it yourself!</strong> Download the source code and working demo for using Bootstrap as an ES module from the <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples repository</a>. You can also
         <a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">open the example in StackBlitz</a>.
       </p>
     </Callout>
-    <p>
-      We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a
-      module in the browser, if your <a href="https://caniuse.com/es6-module">targeted browsers support it</a>.
-    </p>
+    <p>We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a module in the browser, if your <a href="https://caniuse.com/es6-module">targeted browsers support it</a>.</p>
     <CodeWrapper
       code='&lt;script type="module"&gt;
   import { Toast } from &#39;bootstrap.esm.min.js&#39;
@@ -63,8 +50,7 @@
     />
     <p>
       Compared to JS bundlers, using ESM in the browser requires you to use the full path and filename instead of the module name.
-      <a href="https://v8.dev/features/modules#specifiers">Read more about JS modules in the browser.</a> That’s why we use <code>&#39;bootstrap.esm.min.js&#39;</code> instead of
-      <code>&#39;bootstrap&#39;</code> above. However, this is further complicated by our Popper dependency, which imports Popper into our JavaScript like so:
+      <a href="https://v8.dev/features/modules#specifiers">Read more about JS modules in the browser.</a> That’s why we use <code>&#39;bootstrap.esm.min.js&#39;</code> instead of <code>&#39;bootstrap&#39;</code> above. However, this is further complicated by our Popper dependency, which imports Popper into our JavaScript like so:
     </p>
     <CodeWrapper
       code='import * as Popper from "@popperjs/core"
@@ -78,9 +64,8 @@
       lang="text"
     />
     <p>
-      To fix this, you can use an <code>importmap</code> to resolve the arbitrary module names to complete paths. If your
-      <a href="https://caniuse.com/?search=importmap">targeted browsers</a> do not support <code>importmap</code>, you’ll need to use the
-      <a href="https://github.com/guybedford/es-module-shims">es-module-shims</a> project. Here’s how it works for Bootstrap and Popper:
+      To fix this, you can use an <code>importmap</code> to resolve the arbitrary module names to complete paths. If your <a href="https://caniuse.com/?search=importmap">targeted browsers</a> do not support <code>importmap</code>, you’ll need to use the <a href="https://github.com/guybedford/es-module-shims">es-module-shims</a> project. Here’s how
+      it works for Bootstrap and Popper:
     </p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
@@ -123,11 +108,7 @@
     </p>
     <JsDataAttributes />
     <h2 id="selectors">Selectors<a class="anchor-link" href="#selectors" aria-label="Link to Selectors"></a></h2>
-    <p>
-      We use the native <code>querySelector</code> and <code>querySelectorAll</code> methods to query DOM elements for performance reasons, so you must use
-      <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>. If you use special selectors like <code>collapse:Example</code>, be sure to
-      escape them.
-    </p>
+    <p>We use the native <code>querySelector</code> and <code>querySelectorAll</code> methods to query DOM elements for performance reasons, so you must use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>. If you use special selectors like <code>collapse:Example</code>, be sure to escape them.</p>
     <h2 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h2>
     <p>
       Bootstrap provides custom events for most plugins’ unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex.
@@ -173,14 +154,8 @@ const modal1 = new bootstrap.Modal(myModalEl, configObject) // initialized with 
       lang="javascript"
     />
     <p>In case an instance wasn’t initialized, it may accept and use an optional configuration object as second argument.</p>
-    <h3 id="css-selectors-in-constructors">
-      CSS selectors in constructors<a class="anchor-link" href="#css-selectors-in-constructors" aria-label="Link to CSS selectors in constructors"></a>
-    </h3>
-    <p>
-      In addition to the <code>getInstance</code> and <code>getOrCreateInstance</code> methods, all plugin constructors can accept a DOM element or a valid
-      <a href="#selectors">CSS selector</a> as the first argument. Plugin elements are found with the <code>querySelector</code> method since our plugins only support a single
-      element.
-    </p>
+    <h3 id="css-selectors-in-constructors">CSS selectors in constructors<a class="anchor-link" href="#css-selectors-in-constructors" aria-label="Link to CSS selectors in constructors"></a></h3>
+    <p>In addition to the <code>getInstance</code> and <code>getOrCreateInstance</code> methods, all plugin constructors can accept a DOM element or a valid <a href="#selectors">CSS selector</a> as the first argument. Plugin elements are found with the <code>querySelector</code> method since our plugins only support a single element.</p>
     <CodeWrapper
       code='const modal = new bootstrap.Modal(&#39;#myModal&#39;)
 const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)
@@ -189,13 +164,8 @@ const alert = bootstrap.Alert.getOrCreateInstance(&#39;#myAlert&#39;)
 '
       lang="javascript"
     />
-    <h3 id="asynchronous-functions-and-transitions">
-      Asynchronous functions and transitions<a class="anchor-link" href="#asynchronous-functions-and-transitions" aria-label="Link to Asynchronous functions and transitions"></a>
-    </h3>
-    <p>
-      All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started, but <strong>before it ends</strong>. In order to
-      execute an action once the transition is complete, you can listen to the corresponding event.
-    </p>
+    <h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions<a class="anchor-link" href="#asynchronous-functions-and-transitions" aria-label="Link to Asynchronous functions and transitions"></a></h3>
+    <p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started, but <strong>before it ends</strong>. In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
     <CodeWrapper
       code="const myCollapseEl = document.querySelector(&#39;#myCollapse&#39;)
 
@@ -220,10 +190,7 @@ carousel.to(&#39;2&#39;) // !! Will be ignored, as the transition to the slide 1
       lang="javascript"
     />
     <h4 id="dispose-method"><code>dispose</code> method</h4>
-    <p>
-      While it may seem correct to use the <code>dispose</code> method immediately after <code>hide()</code>, it will lead to incorrect results. Here’s an example of the problem
-      use:
-    </p>
+    <p>While it may seem correct to use the <code>dispose</code> method immediately after <code>hide()</code>, it will lead to incorrect results. Here’s an example of the problem use:</p>
     <CodeWrapper
       code="const myModal = document.querySelector(&#39;#myModal&#39;)
 myModal.hide() // it is asynchronous
@@ -286,19 +253,13 @@ bootstrap.Modal.Default.keyboard = false
           </tr>
           <tr>
             <td><code>VERSION</code></td>
-            <td>
-              The version of each of Bootstrap’s plugins can be accessed via the <code>VERSION</code> property of the plugin’s constructor (Example:
-              <code>bootstrap.Tooltip.VERSION</code>)
-            </td>
+            <td>The version of each of Bootstrap’s plugins can be accessed via the <code>VERSION</code> property of the plugin’s constructor (Example: <code>bootstrap.Tooltip.VERSION</code>)</td>
           </tr>
         </tbody>
       </table>
     </div>
     <h2 id="sanitizer">Sanitizer<a class="anchor-link" href="#sanitizer" aria-label="Link to Sanitizer"></a></h2>
-    <p>
-      Our tooltip and popover components are able to render arbitrary HTML to the page if configured to do so. To prevent cross-site scripting (XSS) attacks, these components use
-      our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default.
-    </p>
+    <p>Our tooltip and popover components are able to render arbitrary HTML to the page if configured to do so. To prevent cross-site scripting (XSS) attacks, these components use our built-in content sanitizer to sanitize any options which accept HTML before they are rendered to the page. Content sanitization is enabled by default.</p>
     <p>The tags and attributes allowed by default are as follows. Any tags or attributes not explicitly allowed will be removed during sanitization:</p>
     <JsDocs name="allow-list" file="js/sanitizer.js" /><Callout type="warning">
       <p>
@@ -339,10 +300,7 @@ const tooltip = new bootstrap.Tooltip(yourTooltipEl, {
       lang="javascript"
     />
     <h2 id="optionally-using-jquery">Optionally using jQuery<a class="anchor-link" href="#optionally-using-jquery" aria-label="Link to Optionally using jQuery"></a></h2>
-    <p>
-      <strong>You don’t need jQuery in Bootstrap 5</strong>, but it’s still possible to use our components with jQuery. If Bootstrap detects <code>jQuery</code> in the
-      <code>window</code> object, it&#39;ll add all of our components in jQuery’s plugin system. This allows you to do the following:
-    </p>
+    <p><strong>You don’t need jQuery in Bootstrap 5</strong>, but it’s still possible to use our components with jQuery. If Bootstrap detects <code>jQuery</code> in the <code>window</code> object, it&#39;ll add all of our components in jQuery’s plugin system. This allows you to do the following:</p>
     <CodeWrapper
       code='// to enable tooltips with the default configuration
 $(&#39;[data-bs-toggle="tooltip"]&#39;).tooltip()
@@ -360,10 +318,7 @@ $(&#39;#myTooltip&#39;).tooltip(&#39;show&#39;)
     />
     <p>The same goes for our other components.</p>
     <h3 id="no-conflict">No conflict<a class="anchor-link" href="#no-conflict" aria-label="Link to No conflict"></a></h3>
-    <p>
-      Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may
-      call <code>.noConflict</code> on the plugin you wish to revert the value of.
-    </p>
+    <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
     <CodeWrapper
       code="const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
@@ -376,9 +331,8 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
     </p>
     <h3 id="jquery-events">jQuery events<a class="anchor-link" href="#jquery-events" aria-label="Link to jQuery events"></a></h3>
     <p>
-      Bootstrap will detect jQuery if <code>jQuery</code> is present in the <code>window</code> object and there is no <code>data-bs-no-jquery</code> attribute set on
-      <code>&lt;body&gt;</code>. If jQuery is found, Bootstrap will emit events thanks to jQuery’s event system. So if you want to listen to Bootstrap’s events, you’ll have to use
-      the jQuery methods (<code>.on</code>, <code>.one</code>) instead of <code>addEventListener</code>.
+      Bootstrap will detect jQuery if <code>jQuery</code> is present in the <code>window</code> object and there is no <code>data-bs-no-jquery</code> attribute set on <code>&lt;body&gt;</code>. If jQuery is found, Bootstrap will emit events thanks to jQuery’s event system. So if you want to listen to Bootstrap’s events, you’ll have to use the
+      jQuery methods (<code>.on</code>, <code>.one</code>) instead of <code>addEventListener</code>.
     </p>
     <CodeWrapper
       code="$(&#39;#myTab a&#39;).on(&#39;shown.bs.tab&#39;, () =&gt; {
@@ -390,8 +344,7 @@ $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap funct
     <h2 id="disabled-javascript">Disabled JavaScript<a class="anchor-link" href="#disabled-javascript" aria-label="Link to Disabled JavaScript"></a></h2>
     <p>
       Bootstrap’s plugins have no special fallback when JavaScript is disabled. If you care about the user experience in this case, use
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to
-      your users, and/or add your own custom fallbacks.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
     </p>
     <DocsPager />
   </article>

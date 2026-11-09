@@ -5,13 +5,9 @@
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>
-      Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You
-      will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.
+      Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.
     </p>
-    <p>
-      For accessibility purposes, each loader here includes <code>role=&quot;status&quot;</code> and a nested
-      <code>&lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;</code>.
-    </p>
+    <p>For accessibility purposes, each loader here includes <code>role=&quot;status&quot;</code> and a nested <code>&lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;</code>.</p>
     <Callout name="info-prefersreducedmotion" />
     <h2 id="border-spinner">Border spinner<a class="anchor-link" href="#border-spinner" aria-label="Link to Border spinner"></a></h2>
     <p>Use the border spinners for a lightweight loading indicator.</p>
@@ -21,10 +17,7 @@
 </div>'
     />
     <h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
-    <p>
-      The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with
-      <a href="/utilities/colors">text color utilities</a>. You can use any of our text color utilities on the standard spinner.
-    </p>
+    <p>The border spinner uses <code>currentColor</code> for its <code>border-color</code>, meaning you can customize the color with <a href="/utilities/colors">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
     <Example
       :code="
         data['theme-colors']
@@ -37,8 +30,7 @@
       "
     /><Callout>
       <p>
-        <strong>Why not use <code>border-color</code> utilities?</strong> Each border spinner specifies a <code>transparent</code> border for at least one side, so
-        <code>.border-{color}</code> utilities would override that.
+        <strong>Why not use <code>border-color</code> utilities?</strong> Each border spinner specifies a <code>transparent</code> border for at least one side, so <code>.border-{color}</code> utilities would override that.
       </p>
     </Callout>
     <h2 id="growing-spinner">Growing spinner<a class="anchor-link" href="#growing-spinner" aria-label="Link to Growing spinner"></a></h2>
@@ -48,10 +40,7 @@
   <span class="visually-hidden">Loading...</span>
 </div>'
     />
-    <p>
-      Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="/utilities/colors">text color utilities</a>. Here it
-      is in blue, along with the supported variants.
-    </p>
+    <p>Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="/utilities/colors">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
     <Example
       :code="
         data['theme-colors']
@@ -64,10 +53,7 @@
       "
     />
     <h2 id="alignment">Alignment<a class="anchor-link" href="#alignment" aria-label="Link to Alignment"></a></h2>
-    <p>
-      Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored,
-      and quickly aligned.
-    </p>
+    <p>Spinners in Bootstrap are built with <code>rem</code>s, <code>currentColor</code>, and <code>display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
     <h3 id="margin">Margin<a class="anchor-link" href="#margin" aria-label="Link to Margin"></a></h3>
     <p>Use <a href="/utilities/spacing">margin utilities</a> like <code>.m-5</code> for easy spacing.</p>
     <Example
@@ -76,10 +62,7 @@
 </div>'
     />
     <h3 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h3>
-    <p>
-      Use <a href="/utilities/flex">flexbox utilities</a>, <a href="/utilities/float">float utilities</a>, or <a href="/utilities/text">text alignment</a> utilities to place
-      spinners exactly where you need them in any situation.
-    </p>
+    <p>Use <a href="/utilities/flex">flexbox utilities</a>, <a href="/utilities/float">float utilities</a>, or <a href="/utilities/text">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
     <h4 id="flex">Flex</h4>
     <Example
       code='<div class="d-flex justify-content-center">
@@ -129,10 +112,7 @@
 </div>'
     />
     <h2 id="buttons">Buttons<a class="anchor-link" href="#buttons" aria-label="Link to Buttons"></a></h2>
-    <p>
-      Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as
-      needed.
-    </p>
+    <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
     <Example
       code='<button class="btn btn-primary" type="button" disabled>
   <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
@@ -157,17 +137,13 @@
     <AddedIn version="5.2.0" />
     <p>
       As part of Bootstrap’s evolving CSS variables approach, spinners now use local CSS variables on
-      <code>.spinner-border</code> and <code>.spinner-grow</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is
-      still supported, too.
+      <code>.spinner-border</code> and <code>.spinner-grow</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
     </p>
     <p>Border spinner variables:</p>
     <ScssDocs name="spinner-border-css-vars" file="scss/_spinners.scss" />
     <p>Growing spinner variables:</p>
     <ScssDocs name="spinner-grow-css-vars" file="scss/_spinners.scss" />
-    <p>
-      For both spinners, small spinner modifier classes are used to update the values of these CSS variables as needed. For example, the <code>.spinner-border-sm</code> class does
-      the following:
-    </p>
+    <p>For both spinners, small spinner modifier classes are used to update the values of these CSS variables as needed. For example, the <code>.spinner-border-sm</code> class does the following:</p>
     <ScssDocs name="spinner-border-sm-css-vars" file="scss/_spinners.scss" />
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
     <ScssDocs name="spinner-variables" file="scss/_variables.scss" />

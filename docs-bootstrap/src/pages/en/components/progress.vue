@@ -5,23 +5,18 @@
 
     <Callout>
       <p>
-        <strong>New markup in v5.3.0 —</strong> We’ve deprecated the previous HTML structure for progress bars and replaced it with a more accessible one. The previous structure
-        will continue to work until v6.
+        <strong>New markup in v5.3.0 —</strong> We’ve deprecated the previous HTML structure for progress bars and replaced it with a more accessible one. The previous structure will continue to work until v6.
         <a href="/migration#improved-markup-for-progress-bars">See what’s changed in our migration guide.</a>
       </p>
     </Callout>
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>
       Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. We don’t use
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code>&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars,
-      animate them, and place text labels over them.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">the HTML5 <code>&lt;progress&gt;</code> element</a>, ensuring you can stack progress bars, animate them, and place text labels over them.
     </p>
     <ul>
       <li>We use the <code>.progress</code> as a wrapper to indicate the max value of the progress bar.</li>
-      <li>
-        The <code>.progress</code> wrapper also requires a <code>role=&quot;progressbar&quot;</code> and <code>aria</code> attributes to make it accessible, including an accessible
-        name (using <code>aria-label</code>, <code>aria-labelledby</code>, or similar).
-      </li>
+      <li>The <code>.progress</code> wrapper also requires a <code>role=&quot;progressbar&quot;</code> and <code>aria</code> attributes to make it accessible, including an accessible name (using <code>aria-label</code>, <code>aria-labelledby</code>, or similar).</li>
       <li>We use the inner <code>.progress-bar</code> purely for the visual bar and label.</li>
       <li>The <code>.progress-bar</code> requires an inline style, utility class, or custom CSS to set its width.</li>
       <li>We provide a special <code>.progress-stacked</code> class to create multiple/stacked progress bars.</li>
@@ -46,20 +41,14 @@
     />
     <h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
-    <p>
-      Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the
-      <code>.progress-bar</code>.
-    </p>
+    <p>Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the <code>.progress-bar</code>.</p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar w-75"></div>
 </div>'
     />
     <h3 id="height">Height<a class="anchor-link" href="#height" aria-label="Link to Height"></a></h3>
-    <p>
-      You only set a <code>height</code> value on the <code>.progress</code> container, so if you change that value, the inner <code>.progress-bar</code> will automatically resize
-      accordingly.
-    </p>
+    <p>You only set a <code>height</code> value on the <code>.progress</code> container, so if you change that value, the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
   <div class="progress-bar" style="width: 25%"></div>
@@ -77,8 +66,7 @@
     />
     <h3 id="long-labels">Long labels<a class="anchor-link" href="#long-labels" aria-label="Link to Long labels"></a></h3>
     <p>
-      Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress
-      bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the
+      Note that by default, the content inside the <code>.progress-bar</code> is controlled with <code>overflow: hidden</code>, so it doesn’t bleed out of the bar. If your progress bar is shorter than its label, the content will be capped and may become unreadable. To change this behavior, you can use <code>.overflow-visible</code> from the
       <a href="/utilities/overflow">overflow utilities</a>.
     </p>
     <Callout type="warning">
@@ -107,8 +95,7 @@
     <Callout name="warning-color-assistive-technologies" />
     <p>
       If you’re adding labels to progress bars with a custom background color, make sure to also set an appropriate
-      <a href="/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the
-      <a href="/helpers/color-background">color and background</a> helper classes.
+      <a href="/utilities/colors#colors">text color</a>, so the labels remain readable and have sufficient contrast. We recommend using the <a href="/helpers/color-background">color and background</a> helper classes.
     </p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -125,10 +112,7 @@
 </div>'
     />
     <h2 id="multiple-bars">Multiple bars<a class="anchor-link" href="#multiple-bars" aria-label="Link to Multiple bars"></a></h2>
-    <p>
-      You can include multiple progress components inside a container with <code>.progress-stacked</code> to create a single stacked progress bar. Note that in this case, the
-      styling to set the visual width of the progress bar <em>must</em> be applied to the <code>.progress</code> elements, rather than the <code>.progress-bar</code>s.
-    </p>
+    <p>You can include multiple progress components inside a container with <code>.progress-stacked</code> to create a single stacked progress bar. Note that in this case, the styling to set the visual width of the progress bar <em>must</em> be applied to the <code>.progress</code> elements, rather than the <code>.progress-bar</code>s.</p>
     <Example
       code='<div class="progress-stacked">
   <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
@@ -162,9 +146,7 @@
 </div>'
     />
     <h2 id="animated-stripes">Animated stripes<a class="anchor-link" href="#animated-stripes" aria-label="Link to Animated stripes"></a></h2>
-    <p>
-      The striped gradient can also be animated. Add <code>.progress-bar-animated</code> to <code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.
-    </p>
+    <p>The striped gradient can also be animated. Add <code>.progress-bar-animated</code> to <code>.progress-bar</code> to animate the stripes right to left via CSS3 animations.</p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>

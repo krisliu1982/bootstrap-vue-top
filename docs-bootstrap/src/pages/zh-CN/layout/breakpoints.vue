@@ -6,28 +6,19 @@
     <h2 id="core-concepts">Core concepts<a class="anchor-link" href="#core-concepts" aria-label="Link to Core concepts"></a></h2>
     <ul>
       <li>
-        <p>
-          <strong>Breakpoints are the building blocks of responsive design.</strong> Use them to control when your layout can be adapted at a particular viewport or device size.
-        </p>
+        <p><strong>Breakpoints are the building blocks of responsive design.</strong> Use them to control when your layout can be adapted at a particular viewport or device size.</p>
+      </li>
+      <li>
+        <p><strong>Use media queries to architect your CSS by breakpoint.</strong> Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use <code>min-width</code> in our media queries.</p>
       </li>
       <li>
         <p>
-          <strong>Use media queries to architect your CSS by breakpoint.</strong> Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of
-          browser and operating system parameters. We most commonly use <code>min-width</code> in our media queries.
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Mobile first, responsive design is the goal.</strong> Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint,
-          and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.
+          <strong>Mobile first, responsive design is the goal.</strong> Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.
         </p>
       </li>
     </ul>
     <h2 id="available-breakpoints">Available breakpoints<a class="anchor-link" href="#available-breakpoints" aria-label="Link to Available breakpoints"></a></h2>
-    <p>
-      Bootstrap includes six default breakpoints, sometimes referred to as <em>grid tiers</em>, for building responsively. These breakpoints can be customized if you’re using our
-      source Sass files.
-    </p>
+    <p>Bootstrap includes six default breakpoints, sometimes referred to as <em>grid tiers</em>, for building responsively. These breakpoints can be customized if you’re using our source Sass files.</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -72,8 +63,7 @@
       </table>
     </div>
     <p>
-      Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and
-      viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.
+      Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Breakpoints are also representative of a subset of common device sizes and viewport dimensions—they don’t specifically target every use case or device. Instead, the ranges provide a strong and consistent foundation to build on for nearly any device.
     </p>
     <p>
       These breakpoints are customizable via Sass—you’ll find them in a Sass map in our
@@ -88,8 +78,7 @@
     <p>
       Since Bootstrap is developed to be mobile first, we use a handful of
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a>
-      to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport
-      changes.
+      to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.
     </p>
     <h3 id="min-width">Min-width<a class="anchor-link" href="#min-width" aria-label="Link to Min-width"></a></h3>
     <p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.</p>

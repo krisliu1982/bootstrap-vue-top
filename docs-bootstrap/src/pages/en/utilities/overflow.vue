@@ -6,18 +6,10 @@
     <h2 id="overflow">Overflow<a class="anchor-link" href="#overflow" aria-label="Link to Overflow"></a></h2>
     <p>Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>
     <div class="bd-example d-md-flex">
-      <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
-        This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
-      </div>
-      <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
-        This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
-      </div>
-      <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
-        This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.
-      </div>
-      <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">
-        This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.
-      </div>
+      <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.</div>
+      <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.</div>
+      <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.</div>
+      <div class="overflow-scroll p-3 bg-body-tertiary" style="max-width: 260px; max-height: 100px">This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.</div>
     </div>
     <CodeWrapper
       code='&lt;div class="overflow-auto"&gt;...&lt;/div&gt;
@@ -56,18 +48,10 @@
     <h3 id="overflow-y"><code>overflow-y</code><a class="anchor-link" href="#overflow-y" aria-label="Link to overflow-y"></a></h3>
     <p>Adjust the <code>overflow-y</code> property to affect the overflow of content vertically.</p>
     <div class="bd-example d-md-flex">
-      <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
-        <code>.overflow-y-auto</code> example on an element with set width and height dimensions.
-      </div>
-      <div class="overflow-y-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
-        <code>.overflow-y-hidden</code> example on an element with set width and height dimensions.
-      </div>
-      <div class="overflow-y-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
-        <code>.overflow-y-visible</code> example on an element with set width and height dimensions.
-      </div>
-      <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px">
-        <code>.overflow-y-scroll</code> example on an element with set width and height dimensions.
-      </div>
+      <div class="overflow-y-auto p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px"><code>.overflow-y-auto</code> example on an element with set width and height dimensions.</div>
+      <div class="overflow-y-hidden p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px"><code>.overflow-y-hidden</code> example on an element with set width and height dimensions.</div>
+      <div class="overflow-y-visible p-3 mb-3 mb-md-0 me-md-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px"><code>.overflow-y-visible</code> example on an element with set width and height dimensions.</div>
+      <div class="overflow-y-scroll p-3 bg-body-tertiary w-100" style="max-width: 200px; max-height: 100px"><code>.overflow-y-scroll</code> example on an element with set width and height dimensions.</div>
     </div>
     <CodeWrapper
       code='&lt;div class="overflow-y-auto"&gt;...&lt;/div&gt;

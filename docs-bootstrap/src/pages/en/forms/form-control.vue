@@ -27,8 +27,7 @@
     <Callout type="warning">
       <p>
         Form text should be explicitly associated with the form control it relates to using the
-        <code>aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen readers—will announce this form text when the user focuses or enters
-        the control.
+        <code>aria-describedby</code> attribute. This will ensure that assistive technologies—such as screen readers—will announce this form text when the user focuses or enters the control.
       </p>
     </Callout>
     <p>Form text below inputs can be styled with <code>.form-text</code>. If a block-level element will be used, a top margin is added for easy spacing from the inputs above.</p>
@@ -39,10 +38,7 @@
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </div>'
     />
-    <p>
-      Inline text can use any typical inline HTML element (be it a <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code>, or something else) with nothing more than the
-      <code>.form-text</code> class.
-    </p>
+    <p>Inline text can use any typical inline HTML element (be it a <code>&lt;span&gt;</code>, <code>&lt;small&gt;</code>, or something else) with nothing more than the <code>.form-text</code> class.</p>
     <Example
       code='<div class="row g-3 align-items-center">
   <div class="col-auto">
@@ -65,16 +61,10 @@
 <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>'
     />
     <h2 id="readonly">Readonly<a class="anchor-link" href="#readonly" aria-label="Link to Readonly"></a></h2>
-    <p>
-      Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. <code>readonly</code> inputs can still be focused and selected,
-      while <code>disabled</code> inputs cannot.
-    </p>
+    <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input’s value. <code>readonly</code> inputs can still be focused and selected, while <code>disabled</code> inputs cannot.</p>
     <Example code='<input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>' />
     <h2 id="readonly-plain-text">Readonly plain text<a class="anchor-link" href="#readonly-plain-text" aria-label="Link to Readonly plain text"></a></h2>
-    <p>
-      If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, replace <code>.form-control</code> with
-      <code>.form-control-plaintext</code> to remove the default form field styling and preserve the correct <code>margin</code> and <code>padding</code>.
-    </p>
+    <p>If you want to have <code>&lt;input readonly&gt;</code> elements in your form styled as plain text, replace <code>.form-control</code> with <code>.form-control-plaintext</code> to remove the default form field styling and preserve the correct <code>margin</code> and <code>padding</code>.</p>
     <Example
       code='<div class="mb-3 row">
   <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
@@ -127,18 +117,14 @@
 </div>'
     />
     <h2 id="color">Color<a class="anchor-link" href="#color" aria-label="Link to Color"></a></h2>
-    <p>
-      Set the <code>type=&quot;color&quot;</code> and add <code>.form-control-color</code> to the <code>&lt;input&gt;</code>. We use the modifier class to set fixed
-      <code>height</code>s and override some inconsistencies between browsers.
-    </p>
+    <p>Set the <code>type=&quot;color&quot;</code> and add <code>.form-control-color</code> to the <code>&lt;input&gt;</code>. We use the modifier class to set fixed <code>height</code>s and override some inconsistencies between browsers.</p>
     <Example
       code='<label for="exampleColorInput" class="form-label">Color picker</label>
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">'
     />
     <h2 id="datalists">Datalists<a class="anchor-link" href="#datalists" aria-label="Link to Datalists"></a></h2>
     <p>
-      Datalists allow you to create a group of <code>&lt;option&gt;</code>s that can be accessed (and autocompleted) from within an <code>&lt;input&gt;</code>. These are similar to
-      <code>&lt;select&gt;</code> elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for
+      Datalists allow you to create a group of <code>&lt;option&gt;</code>s that can be accessed (and autocompleted) from within an <code>&lt;input&gt;</code>. These are similar to <code>&lt;select&gt;</code> elements, but come with more menu styling limitations and differences. While most browsers and operating systems include some support for
       <code>&lt;datalist&gt;</code> elements, their styling is inconsistent at best.
     </p>
     <p>Learn more about <a href="https://caniuse.com/datalist">support for datalist elements</a>.</p>

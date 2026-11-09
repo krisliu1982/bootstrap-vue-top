@@ -5,23 +5,15 @@
 
     <h2 id="what-is-rfs">What is RFS?<a class="anchor-link" href="#what-is-rfs" aria-label="Link to What is RFS?"></a></h2>
     <p>
-      Bootstrap’s side project <a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a> is a unit resizing engine which was initially developed to resize font sizes (hence its
-      abbreviation for Responsive Font Sizes). Nowadays RFS is capable of rescaling most CSS properties with unit values like <code>margin</code>, <code>padding</code>,
+      Bootstrap’s side project <a href="https://github.com/twbs/rfs/tree/v10.0.0">RFS</a> is a unit resizing engine which was initially developed to resize font sizes (hence its abbreviation for Responsive Font Sizes). Nowadays RFS is capable of rescaling most CSS properties with unit values like <code>margin</code>, <code>padding</code>,
       <code>border-radius</code>, or even <code>box-shadow</code>.
     </p>
-    <p>
-      The mechanism automatically calculates the appropriate values based on the dimensions of the browser viewport. It will be compiled into <code>calc()</code> functions with a
-      mix of <code>rem</code> and viewport units to enable the responsive scaling behavior.
-    </p>
+    <p>The mechanism automatically calculates the appropriate values based on the dimensions of the browser viewport. It will be compiled into <code>calc()</code> functions with a mix of <code>rem</code> and viewport units to enable the responsive scaling behavior.</p>
     <h2 id="using-rfs">Using RFS<a class="anchor-link" href="#using-rfs" aria-label="Link to Using RFS"></a></h2>
-    <p>
-      The mixins are included in Bootstrap and are available once you include Bootstrap’s <code>scss</code>. RFS can also be
-      <a href="https://github.com/twbs/rfs/tree/v10.0.0#installation">installed standalone</a> if needed.
-    </p>
+    <p>The mixins are included in Bootstrap and are available once you include Bootstrap’s <code>scss</code>. RFS can also be <a href="https://github.com/twbs/rfs/tree/v10.0.0#installation">installed standalone</a> if needed.</p>
     <h3 id="using-the-mixins">Using the mixins<a class="anchor-link" href="#using-the-mixins" aria-label="Link to Using the mixins"></a></h3>
     <p>
-      The <code>rfs()</code> mixin has shorthands for <code>font-size</code>, <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>,
-      <code>margin-left</code>, <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>. See the
+      The <code>rfs()</code> mixin has shorthands for <code>font-size</code>, <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>, <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>. See the
       example below for source Sass and compiled CSS.
     </p>
     <CodeWrapper

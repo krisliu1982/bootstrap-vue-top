@@ -1,33 +1,18 @@
 <template>
   <article class="bd-content">
     <h1>Navbar</h1>
-    <p>
-      Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our
-      collapse plugin.
-    </p>
+    <p>Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Here’s what you need to know before getting started with the navbar:</p>
     <ul>
-      <li>
-        Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> for responsive collapsing and
-        <a href="#color-schemes">color scheme</a> classes.
-      </li>
+      <li>Navbars require a wrapping <code>.navbar</code> with <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
       <li>Navbars and their contents are fluid by default. Change the <a href="#containers">container</a> to limit their horizontal width in different ways.</li>
       <li>Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
       <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
-      <li>
-        Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a
-        <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
-      </li>
-      <li>
-        Indicate the current item by using <code>aria-current=&quot;page&quot;</code> for the current page or <code>aria-current=&quot;true&quot;</code> for the current item in a
-        set.
-      </li>
-      <li>
-        <strong>New in v5.2.0:</strong> Navbars can be themed with CSS variables that are scoped to the <code>.navbar</code> base class. <code>.navbar-light</code> has been
-        deprecated and <code>.navbar-dark</code> has been rewritten to override CSS variables instead of adding additional styles.
-      </li>
+      <li>Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+      <li>Indicate the current item by using <code>aria-current=&quot;page&quot;</code> for the current page or <code>aria-current=&quot;true&quot;</code> for the current item in a set.</li>
+      <li><strong>New in v5.2.0:</strong> Navbars can be themed with CSS variables that are scoped to the <code>.navbar</code> base class. <code>.navbar-light</code> has been deprecated and <code>.navbar-dark</code> has been rewritten to override CSS variables instead of adding additional styles.</li>
     </ul>
     <Callout name="info-prefersreducedmotion" />
     <h2 id="supported-content">Supported content<a class="anchor-link" href="#supported-content" aria-label="Link to Supported content"></a></h2>
@@ -82,8 +67,7 @@
     />
     <p>
       This example uses
-      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>,
-      <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
+      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
     </p>
     <h3 id="brand">Brand<a class="anchor-link" href="#brand" aria-label="Link to Brand"></a></h3>
     <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p>
@@ -131,10 +115,7 @@
 </nav>'
     />
     <h3 id="nav">Nav<a class="anchor-link" href="#nav" aria-label="Link to Nav"></a></h3>
-    <p>
-      Navbar navigation links build on our <code>.nav</code> options with their own modifier class and require the use of <a href="#toggler">toggler classes</a> for proper
-      responsive styling. <strong>Navigation in navbars will also grow to occupy as much horizontal space as possible</strong> to keep your navbar contents securely aligned.
-    </p>
+    <p>Navbar navigation links build on our <code>.nav</code> options with their own modifier class and require the use of <a href="#toggler">toggler classes</a> for proper responsive styling. <strong>Navigation in navbars will also grow to occupy as much horizontal space as possible</strong> to keep your navbar contents securely aligned.</p>
     <p>Add the <code>.active</code> class on <code>.nav-link</code> to indicate the current page.</p>
     <p>Please note that you should also add the <code>aria-current</code> attribute on the active <code>.nav-link</code>.</p>
     <Example
@@ -231,10 +212,7 @@
   </div>
 </nav>'
     />
-    <p>
-      Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional
-      <a href="/utilities/flex">flex utilities</a> as needed to adjust this behavior.
-    </p>
+    <p>Immediate child elements of <code>.navbar</code> use flex layout and will default to <code>justify-content: space-between</code>. Use additional <a href="/utilities/flex">flex utilities</a> as needed to adjust this behavior.</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -260,10 +238,7 @@
   </form>
 </nav>'
     />
-    <p>
-      Various buttons are supported as part of these navbar forms, too. This is also a great reminder that vertical alignment utilities can be used to align different sized
-      elements.
-    </p>
+    <p>Various buttons are supported as part of these navbar forms, too. This is also a great reminder that vertical alignment utilities can be used to align different sized elements.</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <form class="container-fluid justify-content-start">
@@ -313,19 +288,14 @@
     <h2 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h2>
     <Callout type="warning">
       <p>
-        <strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add
-        <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode.
+        <strong>New dark navbars in v5.3.0 —</strong> We’ve deprecated <code>.navbar-dark</code> in favor of the new <code>data-bs-theme=&quot;dark&quot;</code>. Add <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> to enable a component-specific color mode.
         <a href="/customize/color-modes">Learn more about our color modes.</a>
       </p>
       <hr />
-      <p>
-        <strong>New in v5.2.0 —</strong> Navbar theming is now powered by CSS variables and <code>.navbar-light</code> has been deprecated. CSS variables are applied to
-        <code>.navbar</code>, defaulting to the “light” appearance, and can be overridden with <code>.navbar-dark</code>.
-      </p>
+      <p><strong>New in v5.2.0 —</strong> Navbar theming is now powered by CSS variables and <code>.navbar-light</code> has been deprecated. CSS variables are applied to <code>.navbar</code>, defaulting to the “light” appearance, and can be overridden with <code>.navbar-dark</code>.</p>
     </Callout>
     <p>
-      Navbar themes are easier than ever thanks to Bootstrap’s combination of Sass and CSS variables. The default is our “light navbar” for use with light background colors, but
-      you can also apply
+      Navbar themes are easier than ever thanks to Bootstrap’s combination of Sass and CSS variables. The default is our “light navbar” for use with light background colors, but you can also apply
       <code>data-bs-theme=&quot;dark&quot;</code> to the <code>.navbar</code> parent for dark background colors. Then, customize with <code>.bg-*</code> and additional utilities.
     </p>
     <Example
@@ -433,10 +403,7 @@
       lang="html"
     />
     <h2 id="containers">Containers<a class="anchor-link" href="#containers" aria-label="Link to Containers"></a></h2>
-    <p>
-      Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a
-      container inside the <code>.navbar</code> to only center the contents of a <a href="#placement">fixed or static top navbar</a>.
-    </p>
+    <p>Although it’s not required, you can wrap a navbar in a <code>.container</code> to center it on a page–though note that an inner container is still required. Or you can add a container inside the <code>.navbar</code> to only center the contents of a <a href="#placement">fixed or static top navbar</a>.</p>
     <Example
       code='<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -455,14 +422,8 @@
 </nav>'
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
-    <p>
-      Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top
-      (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).
-    </p>
-    <p>
-      Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the
-      <code>&lt;body&gt;</code>) to prevent overlap with other elements.
-    </p>
+    <p>Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).</p>
+    <p>Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the <code>&lt;body&gt;</code>) to prevent overlap with other elements.</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -496,18 +457,11 @@
     />
     <h2 id="scrolling">Scrolling<a class="anchor-link" href="#scrolling" aria-label="Link to Scrolling"></a></h2>
     <p>
-      Add <code>.navbar-nav-scroll</code> to a <code>.navbar-nav</code> (or other navbar sub-component) to enable vertical scrolling within the toggleable contents of a collapsed
-      navbar. By default, scrolling kicks in at <code>75vh</code> (or 75% of the viewport height), but you can override that with the local CSS custom property
+      Add <code>.navbar-nav-scroll</code> to a <code>.navbar-nav</code> (or other navbar sub-component) to enable vertical scrolling within the toggleable contents of a collapsed navbar. By default, scrolling kicks in at <code>75vh</code> (or 75% of the viewport height), but you can override that with the local CSS custom property
       <code>--bs-navbar-height</code> or custom styles. At larger viewports when the navbar is expanded, content will appear as it does in a default navbar.
     </p>
-    <p>
-      Please note that this behavior comes with a potential drawback of <code>overflow</code>—when setting <code>overflow-y: auto</code> (required to scroll the content here),
-      <code>overflow-x</code> is the equivalent of <code>auto</code>, which will crop some horizontal content.
-    </p>
-    <p>
-      Here’s an example navbar using <code>.navbar-nav-scroll</code> with <code>style=&quot;--bs-scroll-height: 100px;&quot;</code>, with some extra margin utilities for optimum
-      spacing.
-    </p>
+    <p>Please note that this behavior comes with a potential drawback of <code>overflow</code>—when setting <code>overflow-y: auto</code> (required to scroll the content here), <code>overflow-x</code> is the equivalent of <code>auto</code>, which will crop some horizontal content.</p>
+    <p>Here’s an example navbar using <code>.navbar-nav-scroll</code> with <code>style=&quot;--bs-scroll-height: 100px;&quot;</code>, with some extra margin utilities for optimum spacing.</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -547,18 +501,12 @@
 </nav>'
     />
     <h2 id="responsive-behaviors">Responsive behaviors<a class="anchor-link" href="#responsive-behaviors" aria-label="Link to Responsive behaviors"></a></h2>
-    <p>
-      Navbars can use <code>.navbar-toggler</code>, <code>.navbar-collapse</code>, and <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> classes to determine when their content
-      collapses behind a button. In combination with other utilities, you can easily choose when to show or hide particular elements.
-    </p>
-    <p>
-      For navbars that never collapse, add the <code>.navbar-expand</code> class on the navbar. For navbars that always collapse, don’t add any <code>.navbar-expand</code> class.
-    </p>
+    <p>Navbars can use <code>.navbar-toggler</code>, <code>.navbar-collapse</code>, and <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> classes to determine when their content collapses behind a button. In combination with other utilities, you can easily choose when to show or hide particular elements.</p>
+    <p>For navbars that never collapse, add the <code>.navbar-expand</code> class on the navbar. For navbars that always collapse, don’t add any <code>.navbar-expand</code> class.</p>
     <h3 id="toggler">Toggler<a class="anchor-link" href="#toggler" aria-label="Link to Toggler"></a></h3>
     <p>
       Navbar togglers are left-aligned by default, but should they follow a sibling element like a
-      <code>.navbar-brand</code>, they’ll automatically be aligned to the far right. Reversing your markup will reverse the placement of the toggler. Below are examples of
-      different toggle styles.
+      <code>.navbar-brand</code>, they’ll automatically be aligned to the far right. Reversing your markup will reverse the placement of the toggler. Below are examples of different toggle styles.
     </p>
     <p>With no <code>.navbar-brand</code> shown at the smallest breakpoint:</p>
     <Example
@@ -645,10 +593,7 @@
 </nav>'
     />
     <h3 id="external-content">External content<a class="anchor-link" href="#external-content" aria-label="Link to External content"></a></h3>
-    <p>
-      Sometimes you want to use the collapse plugin to trigger a container element for content that structurally sits outside of the <code>.navbar</code> . Because our plugin works
-      on the <code>id</code> and <code>data-bs-target</code> matching, that’s easily done!
-    </p>
+    <p>Sometimes you want to use the collapse plugin to trigger a container element for content that structurally sits outside of the <code>.navbar</code> . Because our plugin works on the <code>id</code> and <code>data-bs-target</code> matching, that’s easily done!</p>
     <Example
       code='<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
   <div class="bg-dark p-4">
@@ -665,16 +610,13 @@
 </nav>'
     />
     <p>
-      When you do this, we recommend including additional JavaScript to move the focus programmatically to the container when it is opened. Otherwise, keyboard users and users of
-      assistive technologies will likely have a hard time finding the newly revealed content - particularly if the container that was opened comes <em>before</em> the toggler in
-      the document’s structure. We also recommend making sure that the toggler has the <code>aria-controls</code> attribute, pointing to the <code>id</code> of the content
-      container. In theory, this allows assistive technology users to jump directly from the toggler to the container it controls–but support for this is currently quite patchy.
+      When you do this, we recommend including additional JavaScript to move the focus programmatically to the container when it is opened. Otherwise, keyboard users and users of assistive technologies will likely have a hard time finding the newly revealed content - particularly if the container that was opened comes <em>before</em> the toggler in
+      the document’s structure. We also recommend making sure that the toggler has the <code>aria-controls</code> attribute, pointing to the <code>id</code> of the content container. In theory, this allows assistive technology users to jump directly from the toggler to the container it controls–but support for this is currently quite patchy.
     </p>
     <h3 id="offcanvas">Offcanvas<a class="anchor-link" href="#offcanvas" aria-label="Link to Offcanvas"></a></h3>
     <p>
       Transform your expanding and collapsing navbar into an offcanvas drawer with the
-      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and
-      flexible navigation sidebar.
+      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and flexible navigation sidebar.
     </p>
     <p>
       In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the
@@ -737,8 +679,7 @@
       lang="html"
     />
     <p>
-      When using offcanvas in a dark navbar, be aware that you may need to have a dark background on the offcanvas content to avoid the text becoming illegible. In the example
-      below, we add <code>.navbar-dark</code> and <code>.bg-dark</code> to the <code>.navbar</code>, <code>.text-bg-dark</code> to the <code>.offcanvas</code>,
+      When using offcanvas in a dark navbar, be aware that you may need to have a dark background on the offcanvas content to avoid the text becoming illegible. In the example below, we add <code>.navbar-dark</code> and <code>.bg-dark</code> to the <code>.navbar</code>, <code>.text-bg-dark</code> to the <code>.offcanvas</code>,
       <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>, and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas.
     </p>
     <Example
@@ -802,10 +743,7 @@
     <p>Variables for the <a href="#color-schemes">dark navbar</a>:</p>
     <ScssDocs name="navbar-dark-variables" file="scss/_variables.scss" />
     <h3 id="sass-loops">Sass loops<a class="anchor-link" href="#sass-loops" aria-label="Link to Sass loops"></a></h3>
-    <p>
-      <a href="#responsive-behaviors">Responsive navbar expand/collapse classes</a> (e.g., <code>.navbar-expand-lg</code>) are combined with the <code>$breakpoints</code> map and
-      generated through a loop in <code>scss/_navbar.scss</code>.
-    </p>
+    <p><a href="#responsive-behaviors">Responsive navbar expand/collapse classes</a> (e.g., <code>.navbar-expand-lg</code>) are combined with the <code>$breakpoints</code> map and generated through a loop in <code>scss/_navbar.scss</code>.</p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
     <DocsPager />
   </article>

@@ -5,8 +5,7 @@
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
-      Create custom <code>&lt;input type=&quot;range&quot;&gt;</code> controls with <code>.form-range</code>. The track (the background) and thumb (the value) are both styled to
-      appear the same across browsers. As only Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not
+      Create custom <code>&lt;input type=&quot;range&quot;&gt;</code> controls with <code>.form-range</code>. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not
       currently support it.
     </p>
     <Example
@@ -20,19 +19,13 @@
 <input type="range" class="form-range" id="disabledRange" disabled>'
     />
     <h2 id="min-and-max">Min and max<a class="anchor-link" href="#min-and-max" aria-label="Link to Min and max"></a></h2>
-    <p>
-      Range inputs have implicit values for <code>min</code> and <code>max</code>—<code>0</code> and <code>100</code>, respectively. You may specify new values for those using the
-      <code>min</code> and <code>max</code> attributes.
-    </p>
+    <p>Range inputs have implicit values for <code>min</code> and <code>max</code>—<code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
     <Example
       code='<label for="range2" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="5" id="range2">'
     />
     <h2 id="steps">Steps<a class="anchor-link" href="#steps" aria-label="Link to Steps"></a></h2>
-    <p>
-      By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using
-      <code>step=&quot;0.5&quot;</code>.
-    </p>
+    <p>By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step=&quot;0.5&quot;</code>.</p>
     <Example
       code='<label for="range3" class="form-label">Example range</label>
 <input type="range" class="form-range" min="0" max="5" step="0.5" id="range3">'

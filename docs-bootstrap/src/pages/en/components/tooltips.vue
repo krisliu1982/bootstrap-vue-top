@@ -6,11 +6,7 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Things to know when using the tooltip plugin:</p>
     <ul>
-      <li>
-        Tooltips rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include
-        <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before <code>bootstrap.js</code>, or use one
-        <code>bootstrap.bundle.min.js</code> which contains Popper.
-      </li>
+      <li>Tooltips rely on the third party library <a href="https://popper.js.org/docs/v2/">Popper</a> for positioning. You must include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before <code>bootstrap.js</code>, or use one <code>bootstrap.bundle.min.js</code> which contains Popper.</li>
       <li>Tooltips are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
       <li>Tooltips with zero-length titles are never displayed.</li>
       <li>Specify <code>container: &#39;body&#39;</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
@@ -48,10 +44,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <h3 id="custom-tooltips">Custom tooltips<a class="anchor-link" href="#custom-tooltips" aria-label="Link to Custom tooltips"></a></h3>
     <AddedIn version="5.2.0" />
-    <p>
-      You can customize the appearance of tooltips using <a href="#variables">CSS variables</a>. We set a custom class with
-      <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> to scope our custom appearance and use it to override a local CSS variable.
-    </p>
+    <p>You can customize the appearance of tooltips using <a href="#variables">CSS variables</a>. We set a custom class with <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> to scope our custom appearance and use it to override a local CSS variable.</p>
     <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" />
     <Example
       addStackblitzJs
@@ -110,8 +103,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     />
     <Callout type="warning">
       <p>
-        Tooltips automatically attempt to change positions when a parent container has <code>overflow: auto</code> or <code>overflow: scroll</code>, but still keeps the original
-        placement’s positioning. Set the <a href="https://popper.js.org/docs/v2/modifiers/flip/#boundary"><code>boundary</code> option</a> (for the flip modifier using the
+        Tooltips automatically attempt to change positions when a parent container has <code>overflow: auto</code> or <code>overflow: scroll</code>, but still keeps the original placement’s positioning. Set the <a href="https://popper.js.org/docs/v2/modifiers/flip/#boundary"><code>boundary</code> option</a> (for the flip modifier using the
         <code>popperConfig</code> option) to any HTMLElement to override the default value, <code>&#39;clippingParents&#39;</code>, such as <code>document.body</code>:
       </p>
       <CodeWrapper
@@ -123,16 +115,11 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
       />
     </Callout>
     <h3 id="markup">Markup<a class="anchor-link" href="#markup" aria-label="Link to Markup"></a></h3>
-    <p>
-      The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a
-      tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).
-    </p>
+    <p>The required markup for a tooltip is only a <code>data</code> attribute and <code>title</code> on the HTML element you wish to have a tooltip. The generated markup of a tooltip is rather simple, though it does require a position (by default, set to <code>top</code> by the plugin).</p>
     <Callout type="warning">
       <p>
-        <strong>Keep tooltips accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and
-        interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and
-        confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce tooltips in this situation. Additionally, do
-        not rely solely on <code>hover</code> as the trigger for your tooltips as this will make them impossible to trigger for keyboard users.
+        <strong>Keep tooltips accessible to keyboard and assistive technology users</strong> by only adding them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). While other HTML elements can be made focusable by adding <code>tabindex=&quot;0&quot;</code>, this can create annoying and
+        confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce tooltips in this situation. Additionally, do not rely solely on <code>hover</code> as the trigger for your tooltips as this will make them impossible to trigger for keyboard users.
       </p>
     </Callout>
     <CodeWrapper
@@ -150,8 +137,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     />
     <h3 id="disabled-elements">Disabled elements<a class="anchor-link" href="#disabled-elements" aria-label="Link to Disabled elements"></a></h3>
     <p>
-      Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround,
-      you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using
+      Elements with the <code>disabled</code> attribute aren’t interactive, meaning users cannot focus, hover, or click them to trigger a tooltip (or popover). As a workaround, you’ll want to trigger the tooltip from a wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, ideally made keyboard-focusable using
       <code>tabindex=&quot;0&quot;</code>.
     </p>
     <Example
@@ -201,8 +187,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
             <td>
-              Overflow constraint boundary of the tooltip (applies only to Popper’s preventOverflow modifier). By default, it’s <code>&#39;clippingParents&#39;</code> and can
-              accept an HTMLElement reference (via JavaScript only). For more information refer to Popper’s
+              Overflow constraint boundary of the tooltip (applies only to Popper’s preventOverflow modifier). By default, it’s <code>&#39;clippingParents&#39;</code> and can accept an HTMLElement reference (via JavaScript only). For more information refer to Popper’s
               <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow docs</a>.
             </td>
           </tr>
@@ -211,8 +196,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, element, false</td>
             <td><code>false</code></td>
             <td>
-              Appends the tooltip to a specific element. Example: <code>container: &#39;body&#39;</code>. This option is particularly useful in that it allows you to position the
-              tooltip in the flow of the document near the triggering element -&nbsp;which will prevent the tooltip from floating away from the triggering element during a window
+              Appends the tooltip to a specific element. Example: <code>container: &#39;body&#39;</code>. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element -&nbsp;which will prevent the tooltip from floating away from the triggering element during a window
               resize.
             </td>
           </tr>
@@ -221,8 +205,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, function</td>
             <td><code>&#39;&#39;</code></td>
             <td>
-              Add classes to the tooltip when it is shown. Note that these classes will be added in addition to any classes specified in the template. To add multiple classes,
-              separate them with spaces:
+              Add classes to the tooltip when it is shown. Note that these classes will be added in addition to any classes specified in the template. To add multiple classes, separate them with spaces:
               <code>&#39;class-1 class-2&#39;</code>. You can also pass a function that should return a single string containing additional class names.
             </td>
           </tr>
@@ -249,8 +232,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>boolean</td>
             <td><code>false</code></td>
             <td>
-              Allow HTML in the tooltip. If true, HTML tags in the tooltip’s <code>title</code> will be rendered in the tooltip. If false, <code>innerText</code> property will be
-              used to insert content into the DOM. Prefer text when dealing with user-generated input to
+              Allow HTML in the tooltip. If true, HTML tags in the tooltip’s <code>title</code> will be rendered in the tooltip. If false, <code>innerText</code> property will be used to insert content into the DOM. Prefer text when dealing with user-generated input to
               <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">prevent XSS attacks</a>.
             </td>
           </tr>
@@ -260,11 +242,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>[0, 6]</code></td>
             <td>
               Offset of the tooltip relative to its target. You can pass a string in data attributes with comma separated values like:
-              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the
-              reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two
-              numbers: <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>,
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
+              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two numbers:
+              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>, <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
             </td>
           </tr>
           <tr>
@@ -272,9 +251,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, function</td>
             <td><code>&#39;top&#39;</code></td>
             <td>
-              How to position the tooltip: auto, top, bottom, left, right. When <code>auto</code> is specified, it will dynamically reorient the tooltip. When a function is used to
-              determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context
-              is set to the tooltip instance.
+              How to position the tooltip: auto, top, bottom, left, right. When <code>auto</code> is specified, it will dynamically reorient the tooltip. When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is
+              set to the tooltip instance.
             </td>
           </tr>
           <tr>
@@ -283,8 +261,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               To change Bootstrap’s default Popper config, see
-              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with
-              an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
               configuration object for Popper.
             </td>
           </tr>
@@ -293,8 +270,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>boolean</td>
             <td><code>true</code></td>
             <td>
-              Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and
-              <code>title</code> options will be sanitized.
+              Enable <a href="/getting-started/javascript#sanitizer">content sanitization</a>. If true, the <code>template</code>, <code>content</code> and <code>title</code> options will be sanitized.
               <Callout type="warning"
                 ><strong>Exercise caution when disabling content sanitization.</strong> Refer to
                 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP’s Cross Site Scripting Prevention Cheat Sheet</a>
@@ -308,8 +284,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               Provide an alternative
-              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform
-              sanitization.
+              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform sanitization.
             </td>
           </tr>
           <tr>
@@ -317,8 +292,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, false</td>
             <td><code>false</code></td>
             <td>
-              If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to also apply tooltips to dynamically added DOM
-              elements (<code>jQuery.on</code> support). See <a href="https://github.com/twbs/bootstrap/issues/4215">this issue</a> and
+              If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to also apply tooltips to dynamically added DOM elements (<code>jQuery.on</code> support). See <a href="https://github.com/twbs/bootstrap/issues/4215">this issue</a> and
               <a href="https://codepen.io/Johann-S/pen/djJYPb">an informative example</a>. <strong>Note</strong>: <code>title</code> attribute must not be used as a selector.
             </td>
           </tr>
@@ -326,15 +300,9 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>template</code></td>
             <td>string</td>
             <td>
-              <code
-                >&#39;&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;&lt;div
-                class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;</code
-              >
+              <code>&#39;&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;</code>
             </td>
-            <td>
-              Base HTML to use when creating the tooltip. The tooltip’s <code>title</code> will be injected into the <code>.tooltip-inner</code>. <code>.tooltip-arrow</code> will
-              become the tooltip’s arrow. The outermost wrapper element should have the <code>.tooltip</code> class and <code>role=&quot;tooltip&quot;</code>.
-            </td>
+            <td>Base HTML to use when creating the tooltip. The tooltip’s <code>title</code> will be injected into the <code>.tooltip-inner</code>. <code>.tooltip-arrow</code> will become the tooltip’s arrow. The outermost wrapper element should have the <code>.tooltip</code> class and <code>role=&quot;tooltip&quot;</code>.</td>
           </tr>
           <tr>
             <td><code>title</code></td>
@@ -347,10 +315,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string</td>
             <td><code>&#39;hover focus&#39;</code></td>
             <td>
-              How tooltip is triggered: click, hover, focus, manual. You may pass multiple triggers; separate them with a space. <code>&#39;manual&#39;</code> indicates that the
-              tooltip will be triggered programmatically via the <code>.tooltip(&#39;show&#39;)</code>, <code>.tooltip(&#39;hide&#39;)</code> and
-              <code>.tooltip(&#39;toggle&#39;)</code> methods; this value cannot be combined with any other trigger. <code>&#39;hover&#39;</code> on its own will result in tooltips
-              that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present.
+              How tooltip is triggered: click, hover, focus, manual. You may pass multiple triggers; separate them with a space. <code>&#39;manual&#39;</code> indicates that the tooltip will be triggered programmatically via the <code>.tooltip(&#39;show&#39;)</code>, <code>.tooltip(&#39;hide&#39;)</code> and
+              <code>.tooltip(&#39;toggle&#39;)</code> methods; this value cannot be combined with any other trigger. <code>&#39;hover&#39;</code> on its own will result in tooltips that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present.
             </td>
           </tr>
         </tbody>
@@ -410,8 +376,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>hide</code></td>
             <td>
               Hides an element’s tooltip.
-              <strong>Returns to the caller before the tooltip has actually been hidden</strong> (i.e. before the <code>hidden.bs.tooltip</code> event occurs). This is considered a
-              “manual” triggering of the tooltip.
+              <strong>Returns to the caller before the tooltip has actually been hidden</strong> (i.e. before the <code>hidden.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip.
             </td>
           </tr>
           <tr>
@@ -422,16 +387,14 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>show</code></td>
             <td>
               Reveals an element’s tooltip.
-              <strong>Returns to the caller before the tooltip has actually been shown</strong> (i.e. before the <code>shown.bs.tooltip</code> event occurs). This is considered a
-              “manual” triggering of the tooltip. Tooltips with zero-length titles are never displayed.
+              <strong>Returns to the caller before the tooltip has actually been shown</strong> (i.e. before the <code>shown.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip. Tooltips with zero-length titles are never displayed.
             </td>
           </tr>
           <tr>
             <td><code>toggle</code></td>
             <td>
               Toggles an element’s tooltip.
-              <strong>Returns to the caller before the tooltip has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.tooltip</code> or
-              <code>hidden.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip.
+              <strong>Returns to the caller before the tooltip has actually been shown or hidden</strong> (i.e. before the <code>shown.bs.tooltip</code> or <code>hidden.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip.
             </td>
           </tr>
           <tr>
@@ -455,8 +418,7 @@ tooltip.setContent({ &#39;.tooltip-inner&#39;: &#39;another title&#39; })
     />
     <Callout>
       <p>
-        The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the tooltip template, and
-        each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> |
+        The <code>setContent</code> method accepts an <code>object</code> argument, where each property-key is a valid <code>string</code> selector within the tooltip template, and each related property-value can be <code>string</code> | <code>element</code> | <code>function</code> |
         <code>null</code>
       </p>
     </Callout>

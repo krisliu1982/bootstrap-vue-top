@@ -5,8 +5,7 @@
 
     <h2 id="link-opacity">Link opacity<a class="anchor-link" href="#link-opacity" aria-label="Link to Link opacity"></a></h2>
     <p>
-      Change the alpha opacity of the link <code>rgba()</code> color value with utilities. Please be aware that changes to a color’s opacity can lead to links with
-      <a href="getting-started/accessibility/#color-contrast"><em>insufficient</em> contrast</a>.
+      Change the alpha opacity of the link <code>rgba()</code> color value with utilities. Please be aware that changes to a color’s opacity can lead to links with <a href="getting-started/accessibility/#color-contrast"><em>insufficient</em> contrast</a>.
     </p>
     <Example
       code='<p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
@@ -26,11 +25,7 @@
     <h2 id="link-underlines">Link underlines<a class="anchor-link" href="#link-underlines" aria-label="Link to Link underlines"></a></h2>
     <h3 id="underline-color">Underline color<a class="anchor-link" href="#underline-color" aria-label="Link to Underline color"></a></h3>
     <p>Change the underline’s color independent of the link text color.</p>
-    <Example
-      :code="
-        data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-underline-${themeColor.name}&quot;>${themeColor.name} underline</a></p>`).join('\n')
-      "
-    />
+    <Example :code="data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-underline-${themeColor.name}&quot;>${themeColor.name} underline</a></p>`).join('\n')" />
     <h3 id="underline-offset">Underline offset<a class="anchor-link" href="#underline-offset" aria-label="Link to Underline offset"></a></h3>
     <p>Change the underline’s distance from your text. Offset is set in <code>em</code> units to automatically scale with the element’s current <code>font-size</code>.</p>
     <Example
@@ -50,27 +45,18 @@
 <p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a></p>'
     />
     <h3 id="hover-variants">Hover variants<a class="anchor-link" href="#hover-variants" aria-label="Link to Hover variants"></a></h3>
-    <p>
-      Just like the <code>.link-opacity-*-hover</code> utilities, <code>.link-offset</code> and <code>.link-underline-opacity</code> utilities include <code>:hover</code> variants
-      by default. Mix and match to create unique link styles.
-    </p>
+    <p>Just like the <code>.link-opacity-*-hover</code> utilities, <code>.link-offset</code> and <code>.link-underline-opacity</code> utilities include <code>:hover</code> variants by default. Mix and match to create unique link styles.</p>
     <Example
       code='<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
   Underline opacity 0
 </a>'
     />
     <h2 id="colored-links">Colored links<a class="anchor-link" href="#colored-links" aria-label="Link to Colored links"></a></h2>
-    <p>
-      <a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline
-      opacity, and underline offset.
-    </p>
+    <p><a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline opacity, and underline offset.</p>
     <Example
       :code="
         [
-          ...data['theme-colors'].map(
-            (themeColor) =>
-              `<p><a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a></p>`
-          ),
+          ...data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a></p>`),
           `<p><a href=&quot;#&quot; class=&quot;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&quot;>Emphasis link</a></p>`
         ].join('\n')
       "

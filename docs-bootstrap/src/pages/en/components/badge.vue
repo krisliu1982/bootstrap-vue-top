@@ -25,14 +25,10 @@
 </button>'
     />
     <p>
-      Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a
-      visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random
+      Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random
       additional words or numbers at the end of a sentence, link, or button.
     </p>
-    <p>
-      Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context
-      with a visually hidden piece of additional text.
-    </p>
+    <p>Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context with a visually hidden piece of additional text.</p>
     <h3 id="positioned">Positioned<a class="anchor-link" href="#positioned" aria-label="Link to Positioned"></a></h3>
     <p>Use utilities to modify a <code>.badge</code> and position it in the corner of a link or button.</p>
     <Example
@@ -56,14 +52,11 @@
     <h2 id="background-colors">Background colors<a class="anchor-link" href="#background-colors" aria-label="Link to Background colors"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>.
-      Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
+      Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
       <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
 
-    <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout
-      name="warning-color-assistive-technologies"
-    />
+    <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout name="warning-color-assistive-technologies" />
     <h2 id="pill-badges">Pill badges<a class="anchor-link" href="#pill-badges" aria-label="Link to Pill badges"></a></h2>
 
     <p>Use the <code>.rounded-pill</code> utility class to make badges more rounded with a larger <code>border-radius</code>.</p>

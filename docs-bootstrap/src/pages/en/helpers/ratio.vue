@@ -1,32 +1,22 @@
 <template>
   <article class="bd-content">
     <h1>Ratios</h1>
-    <p>
-      Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of
-      the parent.
-    </p>
+    <p>Use generated pseudo elements to make an element maintain the aspect ratio of your choosing. Perfect for responsively handling video or slideshow embeds based on the width of the parent.</p>
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>
-      Use the ratio helper to manage the aspect ratios of external content like <code>&lt;iframe&gt;</code>s, <code>&lt;embed&gt;</code>s, <code>&lt;video&gt;</code>s, and
-      <code>&lt;object&gt;</code>s. These helpers also can be used on any standard HTML child element (e.g., a <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code>). Styles are
-      applied from the parent <code>.ratio</code> class directly to the child.
+      Use the ratio helper to manage the aspect ratios of external content like <code>&lt;iframe&gt;</code>s, <code>&lt;embed&gt;</code>s, <code>&lt;video&gt;</code>s, and <code>&lt;object&gt;</code>s. These helpers also can be used on any standard HTML child element (e.g., a <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code>). Styles are applied
+      from the parent <code>.ratio</code> class directly to the child.
     </p>
     <p>
       Aspect ratios are declared in a Sass map and included in each class via CSS variable, which also allows
       <a href="#custom-ratios">custom aspect ratios</a>.
     </p>
     <Callout>
-      <p>
-        <strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in
-        <a href="/content/reboot">Reboot</a>.
-      </p>
+      <p><strong>Pro-Tip!</strong> You don’t need <code>frameborder=&quot;0&quot;</code> on your <code>&lt;iframe&gt;</code>s as we override that for you in <a href="/content/reboot">Reboot</a>.</p>
     </Callout>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>
-      Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically
-      sized thanks to our universal selector <code>.ratio &gt; *</code>.
-    </p>
+    <p>Wrap any embed, like an <code>&lt;iframe&gt;</code>, in a parent element with <code>.ratio</code> and an aspect ratio class. The immediate child element is automatically sized thanks to our universal selector <code>.ratio &gt; *</code>.</p>
     <Example
       code='<div class="ratio ratio-16x9">
   <iframe src="https://player.bilibili.com/player.html?bvid=BV15Kxu6nE9f" title="bilibili video" allowfullscreen></iframe>
@@ -50,10 +40,7 @@
 </div>'
     />
     <h2 id="custom-ratios">Custom ratios<a class="anchor-link" href="#custom-ratios" aria-label="Link to Custom ratios"></a></h2>
-    <p>
-      Each <code>.ratio-*</code> class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the
-      fly with some quick math on your part.
-    </p>
+    <p>Each <code>.ratio-*</code> class includes a CSS custom property (or CSS variable) in the selector. You can override this CSS variable to create custom aspect ratios on the fly with some quick math on your part.</p>
     <p>For example, to create a 2x1 aspect ratio, set <code>--bs-aspect-ratio: 50%</code> on the <code>.ratio</code>.</p>
     <Example
       class="bd-example-ratios"
@@ -77,10 +64,7 @@
 </div>'
     />
     <h2 id="sass-maps">Sass maps<a class="anchor-link" href="#sass-maps" aria-label="Link to Sass maps"></a></h2>
-    <p>
-      Within <code>_variables.scss</code>, you can change the aspect ratios you want to use. Here’s our default <code>$ratio-aspect-ratios</code> map. Modify the map as you like
-      and recompile your Sass to put them to use.
-    </p>
+    <p>Within <code>_variables.scss</code>, you can change the aspect ratios you want to use. Here’s our default <code>$ratio-aspect-ratios</code> map. Modify the map as you like and recompile your Sass to put them to use.</p>
     <ScssDocs name="aspect-ratios" file="scss/_variables.scss" />
     <DocsPager />
   </article>

@@ -4,15 +4,9 @@
     <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
-    <p>
-      Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g.,
-      <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts JavaScript plugin</a>.
-    </p>
+    <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts JavaScript plugin</a>.</p>
     <Callout>
-      <p>
-        <strong>Heads up!</strong> As of v5.3.0, the <code>alert-variant()</code> Sass mixin is deprecated. Alert variants now have their CSS variables overridden in
-        <a href="#sass-loops">a Sass loop</a>.
-      </p>
+      <p><strong>Heads up!</strong> As of v5.3.0, the <code>alert-variant()</code> Sass mixin is deprecated. Alert variants now have their CSS variables overridden in <a href="#sass-loops">a Sass loop</a>.</p>
     </Callout>
     <Example
       :code="
@@ -63,10 +57,7 @@
 </div>'
     />
     <h3 id="icons">Icons<a class="anchor-link" href="#icons" aria-label="Link to Icons"></a></h3>
-    <p>
-      Similarly, you can use <a href="/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons.
-      Depending on your icons and content, you may want to add more utilities or custom styles.
-    </p>
+    <p>Similarly, you can use <a href="/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.</p>
     <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
@@ -120,14 +111,8 @@
     <p>Using the alert JavaScript plugin, it’s possible to dismiss any alert inline. Here’s how:</p>
     <ul>
       <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
-      <li>
-        Add a <a href="/components/close-button">close button</a> and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions
-        the close button.
-      </li>
-      <li>
-        On the close button, add the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the
-        <code>&lt;button&gt;</code> element with it for proper behavior across all devices.
-      </li>
+      <li>Add a <a href="/components/close-button">close button</a> and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the close button.</li>
+      <li>On the close button, add the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</li>
       <li>To animate alerts when dismissing them, be sure to add the <code>.fade</code> and <code>.show</code> classes.</li>
     </ul>
     <p>You can see this in action with a live demo:</p>
@@ -138,10 +123,8 @@
 </div>'
     /><Callout type="warning">
       <p>
-        When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will
-        suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the
-        <code>closed.bs.alert</code> event and programmatically sets <code>focus()</code> to the most appropriate location in the page. If you’re planning to move focus to a
-        non-interactive element that normally does not receive focus, make sure to add <code>tabindex=&quot;-1&quot;</code> to the element.
+        When an alert is dismissed, the element is completely removed from the page structure. If a keyboard user dismisses the alert using the close button, their focus will suddenly be lost and, depending on the browser, reset to the start of the page/document. For this reason, we recommend including additional JavaScript that listens for the
+        <code>closed.bs.alert</code> event and programmatically sets <code>focus()</code> to the most appropriate location in the page. If you’re planning to move focus to a non-interactive element that normally does not receive focus, make sure to add <code>tabindex=&quot;-1&quot;</code> to the element.
       </p>
     </Callout>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
@@ -200,10 +183,7 @@ const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
         <tbody>
           <tr>
             <td><code>close</code></td>
-            <td>
-              Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.show</code> classes are present on the element, the alert will fade out before it is
-              removed.
-            </td>
+            <td>Closes an alert by removing it from the DOM. If the <code>.fade</code> and <code>.show</code> classes are present on the element, the alert will fade out before it is removed.</td>
           </tr>
           <tr>
             <td><code>dispose</code></td>
@@ -314,12 +294,7 @@ onMounted(() => {
   const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
   const appendAlert = (message, type) => {
     const wrapper = document.createElement('div');
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('');
+    wrapper.innerHTML = [`<div class="alert alert-${type} alert-dismissible" role="alert">`, `   <div>${message}</div>`, '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>', '</div>'].join('');
 
     alertPlaceholder.append(wrapper);
   };

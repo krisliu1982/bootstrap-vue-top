@@ -36,9 +36,8 @@
       </li>
       <li>
         <p>
-          <strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the
-          <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing
-          <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.
+          <strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing <code>&lt;/body&gt;</code>. Learn more about our
+          <a href="#cdn-links">CDN links</a>.
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
@@ -56,10 +55,7 @@
 &lt;/html&gt;'
           lang="html"
         />
-        <p>
-          You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some
-          kilobytes by not including Popper.
-        </p>
+        <p>You can also include <a href="https://popper.js.org/docs/v2/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
         <CodeWrapper
           code='&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;'
@@ -68,8 +64,7 @@
       </li>
       <li>
         <p>
-          <strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own
-          <a href="/layout/grid">layout</a>, adding dozens of <a href="/components/buttons">components</a>, and utilizing
+          <strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="/layout/grid">layout</a>, adding dozens of <a href="/components/buttons">components</a>, and utilizing
           <a href="https://getbootstrap.com/examples">our official examples</a>.
         </p>
       </li>
@@ -103,10 +98,7 @@
       <a href="/getting-started/contents">additional builds listed in the Contents page</a>.
     </p>
 
-    <p>
-      When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of
-      Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.
-    </p>
+    <p>When using CDN links, be sure to use the <code>integrity</code> attribute to verify the correct files and versions. These hashes are unique to each file and version of Bootstrap, so when you update to a new version, be sure the <code>integrity</code> attribute is also updated.</p>
 
     <p>We also include a <code>crossorigin="anonymous"</code> attribute to prevent <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> errors.</p>
 
@@ -131,9 +123,7 @@
 
     <h2 id="js-components">JS components<a class="anchor-link" href="#js-components" aria-label="Link to JS components"></a></h2>
 
-    <p>
-      Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.
-    </p>
+    <p>Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
 
     <ul>
       <li>Accordions for extending our Collapse plugin</li>
@@ -156,10 +146,7 @@
 
     <h2 id="important-globals">Important globals<a class="anchor-link" href="#important-globals" aria-label="Link to Important globals"></a></h2>
 
-    <p>
-      Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles.
-      Let’s dive in.
-    </p>
+    <p>Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles. Let’s dive in.</p>
 
     <h3 id="html5-doctype">HTML5 doctype<a class="anchor-link" href="#html5-doctype" aria-label="Link to HTML5 doctype"></a></h3>
 
@@ -175,10 +162,7 @@
 
     <h3 id="viewport-meta">Viewport meta<a class="anchor-link" href="#viewport-meta" aria-label="Link to Viewport meta"></a></h3>
 
-    <p>
-      Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries.
-      To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head&gt;</code>.
-    </p>
+    <p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head&gt;</code>.</p>
 
     <CodeWrapper code='&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;' lang="html" />
 
@@ -187,9 +171,8 @@
     <h3 id="box-sizing">Box-sizing<a class="anchor-link" href="#box-sizing" aria-label="Link to Box-sizing"></a></h3>
 
     <p>
-      For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from <code>content-box</code> to <code>border-box</code>. This ensures
-      <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom
-      Search Engine.
+      For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from <code>content-box</code> to <code>border-box</code>. This ensures <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom Search
+      Engine.
     </p>
 
     <p>On the rare occasion you need to override it, use something like the following:</p>
@@ -201,19 +184,13 @@
       lang="css"
     />
 
-    <p>
-      With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified
-      <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.
-    </p>
+    <p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>
 
     <p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.</p>
 
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
-    <p>
-      For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more
-      opinionated resets to common HTML elements.
-    </p>
+    <p>For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
 
     <h2 id="community">Community<a class="anchor-link" href="#community" aria-label="Link to Community"></a></h2>
 
@@ -222,20 +199,14 @@
     <ul>
       <li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.</li>
       <li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li>
-      <li>
-        Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or
-        <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.
-      </li>
+      <li>Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or <a href="https://www.reddit.com/r/bootstrap/">Bootstrap subreddit</a>.</li>
       <li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li>
       <li>
         Implementation help may be found at Stack Overflow (tagged
         <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a
         >).
       </li>
-      <li>
-        Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through
-        <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.
-      </li>
+      <li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li>
     </ul>
 
     <p>You can also follow <a href="https://x.com/getbootstrap">@getbootstrap on X</a> for the latest gossip and awesome music videos.</p>

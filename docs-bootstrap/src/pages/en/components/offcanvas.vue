@@ -4,26 +4,19 @@
     <p>Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>
-      Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, top, or bottom edge of the viewport. Buttons or anchors are used as
-      triggers that are attached to specific elements you toggle, and <code>data</code> attributes are used to invoke our JavaScript.
-    </p>
+    <p>Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, top, or bottom edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and <code>data</code> attributes are used to invoke our JavaScript.</p>
     <ul>
       <li>Offcanvas shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they are separate plugins.</li>
       <li>Similarly, some <a href="#sass-variables">source Sass</a> variables for offcanvas’s styles and dimensions are inherited from the modal’s variables.</li>
       <li>When shown, offcanvas includes a default backdrop that can be clicked to hide the offcanvas.</li>
       <li>Similar to modals, only one offcanvas can be shown at a time.</li>
     </ul>
-    <p>
-      <strong>Heads up!</strong> Given how CSS handles animations, you cannot use <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use
-      the class as an independent wrapping element.
-    </p>
+    <p><strong>Heads up!</strong> Given how CSS handles animations, you cannot use <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use the class as an independent wrapping element.</p>
     <Callout name="info-prefersreducedmotion" />
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <h3 id="offcanvas-components">Offcanvas components<a class="anchor-link" href="#offcanvas-components" aria-label="Link to Offcanvas components"></a></h3>
     <p>
-      Below is an offcanvas example that is shown by default (via <code>.show</code> on <code>.offcanvas</code>). Offcanvas includes support for a header with a close button and an
-      optional body class for some initial <code>padding</code>. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit
+      Below is an offcanvas example that is shown by default (via <code>.show</code> on <code>.offcanvas</code>). Offcanvas includes support for a header with a close button and an optional body class for some initial <code>padding</code>. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit
       dismiss action.
     </p>
     <Example
@@ -83,10 +76,7 @@
 </div>'
     />
     <h3 id="body-scrolling">Body scrolling<a class="anchor-link" href="#body-scrolling" aria-label="Link to Body scrolling"></a></h3>
-    <p>
-      Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use the <code>data-bs-scroll</code> attribute to enable
-      <code>&lt;body&gt;</code> scrolling.
-    </p>
+    <p>Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use the <code>data-bs-scroll</code> attribute to enable <code>&lt;body&gt;</code> scrolling.</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 
@@ -100,9 +90,7 @@
   </div>
 </div>'
     />
-    <h3 id="body-scrolling-and-backdrop">
-      Body scrolling and backdrop<a class="anchor-link" href="#body-scrolling-and-backdrop" aria-label="Link to Body scrolling and backdrop"></a>
-    </h3>
+    <h3 id="body-scrolling-and-backdrop">Body scrolling and backdrop<a class="anchor-link" href="#body-scrolling-and-backdrop" aria-label="Link to Body scrolling and backdrop"></a></h3>
     <p>You can also enable <code>&lt;body&gt;</code> scrolling with a visible backdrop.</p>
     <Example
       code='<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
@@ -140,15 +128,11 @@
     <DeprecatedIn version="5.3.0" class="me-2" />
     <AddedIn version="5.2.0" />
     <p>
-      Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. Here we add <code>.text-bg-dark</code> to the
-      <code>.offcanvas</code> and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas. If you have dropdowns within, consider also
-      adding <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>.
+      Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. Here we add <code>.text-bg-dark</code> to the <code>.offcanvas</code> and <code>.btn-close-white</code> to <code>.btn-close</code> for proper styling with a dark offcanvas. If you have dropdowns within, consider also adding
+      <code>.dropdown-menu-dark</code> to <code>.dropdown-menu</code>.
     </p>
     <Callout type="warning">
-      <p>
-        <strong>Heads up!</strong> Dark variants for components were deprecated in v5.3.0 with the introduction of color modes. Instead of manually adding classes mentioned above,
-        set <code>data-bs-theme=&quot;dark&quot;</code> on the root element, a parent wrapper, or the component itself.
-      </p>
+      <p><strong>Heads up!</strong> Dark variants for components were deprecated in v5.3.0 with the introduction of color modes. Instead of manually adding classes mentioned above, set <code>data-bs-theme=&quot;dark&quot;</code> on the root element, a parent wrapper, or the component itself.</p>
     </Callout>
     <Example
       class="bd-example-offcanvas p-0 bg-body-secondary overflow-hidden"
@@ -165,8 +149,7 @@
     <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      Responsive offcanvas classes hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For
-      example, <code>.offcanvas-lg</code> hides content in an offcanvas below the <code>lg</code> breakpoint, but shows the content above the <code>lg</code> breakpoint. Responsive
+      Responsive offcanvas classes hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <code>.offcanvas-lg</code> hides content in an offcanvas below the <code>lg</code> breakpoint, but shows the content above the <code>lg</code> breakpoint. Responsive
       offcanvas classes are available for each breakpoint.
     </p>
     <ul>
@@ -177,10 +160,7 @@
       <li><code>.offcanvas-xl</code></li>
       <li><code>.offcanvas-xxl</code></li>
     </ul>
-    <p>
-      To make a responsive offcanvas, replace the <code>.offcanvas</code> base class with a responsive variant and ensure your close button has an explicit
-      <code>data-bs-target</code>.
-    </p>
+    <p>To make a responsive offcanvas, replace the <code>.offcanvas</code> base class with a responsive variant and ensure your close button has an explicit <code>data-bs-target</code>.</p>
     <Example
       code='<button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
 
@@ -247,8 +227,7 @@
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
       Since the offcanvas panel is conceptually a modal dialog, be sure to add
-      <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note that you don’t need to add
-      <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
+      <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>
@@ -270,16 +249,12 @@
       <li><code>.offcanvas-top</code> hides the offcanvas on the top</li>
       <li><code>.offcanvas-bottom</code> hides the offcanvas on the bottom</li>
     </ul>
-    <p>
-      Add a dismiss button with the <code>data-bs-dismiss=&quot;offcanvas&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the
-      <code>&lt;button&gt;</code> element with it for proper behavior across all devices.
-    </p>
+    <p>Add a dismiss button with the <code>data-bs-dismiss=&quot;offcanvas&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code>&lt;button&gt;</code> element with it for proper behavior across all devices.</p>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <h4 id="toggle">Toggle</h4>
     <p>
-      Add <code>data-bs-toggle=&quot;offcanvas&quot;</code> and a <code>data-bs-target</code> or <code>href</code> to the element to automatically assign control of one offcanvas
-      element. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the offcanvas to. Be sure to add the class <code>offcanvas</code> to the offcanvas element.
-      If you’d like it to default open, add the additional class <code>show</code>.
+      Add <code>data-bs-toggle=&quot;offcanvas&quot;</code> and a <code>data-bs-target</code> or <code>href</code> to the element to automatically assign control of one offcanvas element. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the offcanvas to. Be sure to add the class <code>offcanvas</code> to the offcanvas
+      element. If you’d like it to default open, add the additional class <code>show</code>.
     </p>
     <h4 id="dismiss">Dismiss</h4>
     <JsDismiss name="offcanvas" />
@@ -407,10 +382,7 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl =&gt; new bootst
           </tr>
           <tr>
             <td><code>hidePrevented.bs.offcanvas</code></td>
-            <td>
-              This event is fired when the offcanvas is shown, its backdrop is <code>static</code> and a click outside of the offcanvas is performed. The event is also fired when
-              the escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.
-            </td>
+            <td>This event is fired when the offcanvas is shown, its backdrop is <code>static</code> and a click outside of the offcanvas is performed. The event is also fired when the escape key is pressed and the <code>keyboard</code> option is set to <code>false</code>.</td>
           </tr>
           <tr>
             <td><code>show.bs.offcanvas</code></td>

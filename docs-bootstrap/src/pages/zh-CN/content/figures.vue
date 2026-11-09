@@ -8,8 +8,7 @@
       <code>&lt;figure&gt;</code>.
     </p>
     <p>
-      Use the included <code>.figure</code>, <code>.figure-img</code> and <code>.figure-caption</code> classes to provide some baseline styles for the HTML5
-      <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements. Images in figures have no explicit size, so be sure to add the <code>.img-fluid</code> class to your
+      Use the included <code>.figure</code>, <code>.figure-img</code> and <code>.figure-caption</code> classes to provide some baseline styles for the HTML5 <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements. Images in figures have no explicit size, so be sure to add the <code>.img-fluid</code> class to your
       <code>&lt;img&gt;</code> to make it responsive.
     </p>
 

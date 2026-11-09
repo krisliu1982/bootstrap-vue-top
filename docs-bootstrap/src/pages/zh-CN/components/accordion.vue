@@ -157,9 +157,8 @@
     <p>These classes can be found in <code>_transitions.scss</code>.</p>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>
-      Just add <code>data-bs-toggle=&quot;collapse&quot;</code> and a <code>data-bs-target</code> to the element to automatically assign control of one or more collapsible
-      elements. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible
-      element. If you’d like it to default open, add the additional class <code>show</code>.
+      Just add <code>data-bs-toggle=&quot;collapse&quot;</code> and a <code>data-bs-target</code> to the element to automatically assign control of one or more collapsible elements. The <code>data-bs-target</code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If
+      you’d like it to default open, add the additional class <code>show</code>.
     </p>
     <p>
       To add accordion group management to a collapsible area, add the data attribute
@@ -191,8 +190,7 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
             <td>selector, DOM element</td>
             <td><code>null</code></td>
             <td>
-              If parent is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion
-              behavior - this is dependent on the
+              If parent is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the
               <code>card</code> class). The attribute has to be set on the target collapsible area.
             </td>
           </tr>

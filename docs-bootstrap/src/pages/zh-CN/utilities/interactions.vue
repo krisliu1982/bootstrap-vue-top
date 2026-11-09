@@ -18,11 +18,8 @@
 <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>'
     />
     <p>
-      The <code>.pe-none</code> class (and the <code>pointer-events</code> CSS property it sets) only prevents interactions with a pointer (mouse, stylus, touch). Links and
-      controls with <code>.pe-none</code> are, by default, still focusable and actionable for keyboard users. To ensure that they are completely neutralized even for keyboard
-      users, you may need to add further attributes such as <code>tabindex=&quot;-1&quot;</code> (to prevent them from receiving keyboard focus) and
-      <code>aria-disabled=&quot;true&quot;</code> (to convey the fact they are effectively disabled to assistive technologies), and possibly use JavaScript to completely prevent
-      them from being actionable.
+      The <code>.pe-none</code> class (and the <code>pointer-events</code> CSS property it sets) only prevents interactions with a pointer (mouse, stylus, touch). Links and controls with <code>.pe-none</code> are, by default, still focusable and actionable for keyboard users. To ensure that they are completely neutralized even for keyboard users,
+      you may need to add further attributes such as <code>tabindex=&quot;-1&quot;</code> (to prevent them from receiving keyboard focus) and <code>aria-disabled=&quot;true&quot;</code> (to convey the fact they are effectively disabled to assistive technologies), and possibly use JavaScript to completely prevent them from being actionable.
     </p>
     <p>If possible, the simpler solution is:</p>
     <ul>

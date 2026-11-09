@@ -4,10 +4,7 @@
     <p>Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
 
     <h2 id="text-alignment">Text alignment<a class="anchor-link" href="#text-alignment" aria-label="Link to Text alignment"></a></h2>
-    <p>
-      Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width
-      breakpoints as the grid system.
-    </p>
+    <p>Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
     <Example
       code='<p class="text-start">Start aligned text on all viewport sizes.</p>
 <p class="text-center">Center aligned text on all viewport sizes.</p>
@@ -20,14 +17,9 @@
 <p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>'
     />
     <Callout>
-      <p>
-        Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, it does make word-spacing more random and
-        therefore harder to read.
-      </p>
+      <p>Note that we don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, it does make word-spacing more random and therefore harder to read.</p>
     </Callout>
-    <h2 id="text-wrapping-and-overflow">
-      Text wrapping and overflow<a class="anchor-link" href="#text-wrapping-and-overflow" aria-label="Link to Text wrapping and overflow"></a>
-    </h2>
+    <h2 id="text-wrapping-and-overflow">Text wrapping and overflow<a class="anchor-link" href="#text-wrapping-and-overflow" aria-label="Link to Text wrapping and overflow"></a></h2>
     <p>Wrap text with a <code>.text-wrap</code> class.</p>
     <Example
       code='<div class="badge text-bg-primary text-wrap" style="width: 6rem;">
@@ -42,15 +34,13 @@
     />
     <h2 id="word-break">Word break<a class="anchor-link" href="#word-break" aria-label="Link to Word break"></a></h2>
     <p>
-      Prevent long strings of text from breaking your components’ layout by using <code>.text-break</code> to set <code>word-wrap: break-word</code> and
-      <code>word-break: break-word</code>. We use <code>word-wrap</code> instead of the more common <code>overflow-wrap</code> for wider browser support, and add the deprecated
+      Prevent long strings of text from breaking your components’ layout by using <code>.text-break</code> to set <code>word-wrap: break-word</code> and <code>word-break: break-word</code>. We use <code>word-wrap</code> instead of the more common <code>overflow-wrap</code> for wider browser support, and add the deprecated
       <code>word-break: break-word</code> to avoid issues with flex containers.
     </p>
     <Example code='<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>' /><Callout type="warning">
       <p>
         Note that
-        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">breaking words isn’t possible in Arabic</a>, which is the most used RTL language. Therefore
-        <code>.text-break</code> is removed from our RTL compiled CSS.
+        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">breaking words isn’t possible in Arabic</a>, which is the most used RTL language. Therefore <code>.text-break</code> is removed from our RTL compiled CSS.
       </p>
     </Callout>
     <h2 id="text-transform">Text transform<a class="anchor-link" href="#text-transform" aria-label="Link to Text transform"></a></h2>
@@ -63,8 +53,7 @@
     <p>Note how <code>.text-capitalize</code> only changes the first letter of each word, leaving the case of any other letters unaffected.</p>
     <h2 id="font-size">Font size<a class="anchor-link" href="#font-size" aria-label="Link to Font size"></a></h2>
     <p>
-      Quickly change the <code>font-size</code> of text. While our heading classes (e.g., <code>.h1</code>–<code>.h6</code>) apply <code>font-size</code>, <code>font-weight</code>,
-      and <code>line-height</code>, these utilities <em>only</em> apply <code>font-size</code>. Sizing for these utilities matches HTML’s heading elements, so as the number
+      Quickly change the <code>font-size</code> of text. While our heading classes (e.g., <code>.h1</code>–<code>.h6</code>) apply <code>font-size</code>, <code>font-weight</code>, and <code>line-height</code>, these utilities <em>only</em> apply <code>font-size</code>. Sizing for these utilities matches HTML’s heading elements, so as the number
       increases, their size decreases.
     </p>
     <Example
@@ -77,10 +66,7 @@
     />
     <p>Customize your available <code>font-size</code>s by modifying the <code>$font-sizes</code> Sass map.</p>
     <h2 id="font-weight-and-italics">Font weight and italics<a class="anchor-link" href="#font-weight-and-italics" aria-label="Link to Font weight and italics"></a></h2>
-    <p>
-      Quickly change the <code>font-weight</code> or <code>font-style</code> of text with these utilities. <code>font-style</code> utilities are abbreviated as
-      <code>.fst-*</code> and <code>font-weight</code> utilities are abbreviated as <code>.fw-*</code>.
-    </p>
+    <p>Quickly change the <code>font-weight</code> or <code>font-style</code> of text with these utilities. <code>font-style</code> utilities are abbreviated as <code>.fst-*</code> and <code>font-weight</code> utilities are abbreviated as <code>.fw-*</code>.</p>
     <Example
       code='<p class="fw-bold">Bold text.</p>
 <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>

@@ -8,10 +8,7 @@
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align"><code>vertical-alignment</code></a>
       utilities. Please note that vertical-align only affects inline, inline-block, inline-table, and table cell elements.
     </p>
-    <p>
-      Choose from <code>.align-baseline</code>, <code>.align-top</code>, <code>.align-middle</code>, <code>.align-bottom</code>, <code>.align-text-bottom</code>, and
-      <code>.align-text-top</code> as needed.
-    </p>
+    <p>Choose from <code>.align-baseline</code>, <code>.align-top</code>, <code>.align-middle</code>, <code>.align-bottom</code>, <code>.align-text-bottom</code>, and <code>.align-text-top</code> as needed.</p>
     <p>To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/utilities/flex#align-items">flex box utilities</a>.</p>
     <p>With inline elements:</p>
     <Example

@@ -3,36 +3,20 @@
     <h1>Bootstrap and Parcel</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
 
-    <img
-      class="d-block mx-auto mb-4 img-fluid rounded-3"
-      srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x"
-      src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png"
-      width="100%"
-      alt=""
-    /><Callout>
+    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the
-        <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples repository</a>. You can also
+        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples repository</a>. You can also
         <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">open the example in StackBlitz</a>
         but not run it because Parcel isn’t currently supported there.
       </p>
     </Callout>
     <h2 id="what-is-parcel">What is Parcel?<a class="anchor-link" href="#what-is-parcel" aria-label="Link to What is Parcel?"></a></h2>
-    <p>
-      <a href="https://parceljs.org/">Parcel</a> is a web application bundler designed to simplify the development process with a zero-configuration setup out of the box. It offers
-      features found in more advanced bundlers while focusing on ease of use, making it ideal for developers seeking a quick start.
-    </p>
+    <p><a href="https://parceljs.org/">Parcel</a> is a web application bundler designed to simplify the development process with a zero-configuration setup out of the box. It offers features found in more advanced bundlers while focusing on ease of use, making it ideal for developers seeking a quick start.</p>
     <h2 id="setup">Setup<a class="anchor-link" href="#setup" aria-label="Link to Setup"></a></h2>
-    <p>
-      We’re building a Parcel project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to
-      have Node.js installed and some familiarity with the terminal.
-    </p>
+    <p>We’re building a Parcel project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
     <ol>
       <li>
-        <p>
-          <strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid
-          it asking us all the interactive questions.
-        </p>
+        <p><strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid it asking us all the interactive questions.</p>
         <CodeWrapper
           code="mkdir my-project &amp;&amp; cd my-project
 npm init -y
@@ -41,10 +25,7 @@ npm init -y
         />
       </li>
       <li>
-        <p>
-          <strong>Install Parcel.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. Parcel will automatically install language transformers (like
-          Sass) as it detects them. We use <code>--save-dev</code> to signal that this dependency is only for development use and not for production.
-        </p>
+        <p><strong>Install Parcel.</strong> Unlike our Webpack guide, there’s only a single build tool dependency here. Parcel will automatically install language transformers (like Sass) as it detects them. We use <code>--save-dev</code> to signal that this dependency is only for development use and not for production.</p>
         <CodeWrapper
           code="npm i --save-dev parcel
 "
@@ -52,10 +33,7 @@ npm init -y
         />
       </li>
       <li>
-        <p>
-          <strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their
-          positioning. If you don’t plan on using those components, you can omit Popper here.
-        </p>
+        <p><strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don’t plan on using those components, you can omit Popper here.</p>
         <CodeWrapper
           code="npm i --save bootstrap @popperjs/core
 "
@@ -65,10 +43,7 @@ npm init -y
     </ol>
     <p>Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.</p>
     <h2 id="project-structure">Project structure<a class="anchor-link" href="#project-structure" aria-label="Link to Project structure"></a></h2>
-    <p>
-      We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round
-      out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.
-    </p>
+    <p>We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> folder, stylesheet, and JavaScript file to round out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.</p>
     <CodeWrapper
       code="mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss
@@ -91,15 +66,11 @@ touch src/index.html src/js/main.js src/scss/styles.scss
     />
     <p>At this point, everything is in the right place, but Parcel needs an HTML page and npm script to start our server.</p>
     <h2 id="configure-parcel">Configure Parcel<a class="anchor-link" href="#configure-parcel" aria-label="Link to Configure Parcel"></a></h2>
-    <p>
-      With dependencies installed and our project folder ready for us to start coding, we can now configure Parcel and run our project locally. Parcel itself requires no
-      configuration file by design, but we do need an npm script and an HTML file to start our server.
-    </p>
+    <p>With dependencies installed and our project folder ready for us to start coding, we can now configure Parcel and run our project locally. Parcel itself requires no configuration file by design, but we do need an npm script and an HTML file to start our server.</p>
     <ol>
       <li>
         <p>
-          <strong>Fill in the <code>src/index.html</code> file.</strong> Parcel needs a page to render, so we use our <code>index.html</code> page to set up some basic HTML,
-          including our CSS and JavaScript files.
+          <strong>Fill in the <code>src/index.html</code> file.</strong> Parcel needs a page to render, so we use our <code>index.html</code> page to set up some basic HTML, including our CSS and JavaScript files.
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
@@ -126,15 +97,11 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         </p>
         <p>
           Parcel will automatically detect we’re using Sass and install the
-          <a href="https://parceljs.org/languages/sass/">Sass Parcel plugin</a> to support it. However, if you wish, you can also manually run
-          <code>npm i --save-dev @parcel/transformer-sass</code>.
+          <a href="https://parceljs.org/languages/sass/">Sass Parcel plugin</a> to support it. However, if you wish, you can also manually run <code>npm i --save-dev @parcel/transformer-sass</code>.
         </p>
       </li>
       <li>
-        <p>
-          <strong>Add the Parcel npm scripts.</strong> Open the <code>package.json</code> and add the following <code>start</code> script to the <code>scripts</code> object.
-          We&#39;ll use this script to start our Parcel development server and render the HTML file we created after it’s compiled into the <code>dist</code> directory.
-        </p>
+        <p><strong>Add the Parcel npm scripts.</strong> Open the <code>package.json</code> and add the following <code>start</code> script to the <code>scripts</code> object. We&#39;ll use this script to start our Parcel development server and render the HTML file we created after it’s compiled into the <code>dist</code> directory.</p>
         <CodeWrapper
           code='{
    // ...
@@ -173,10 +140,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         <p>
           <em>You can also import our stylesheets individually if you want. <a href="/customize/sass#importing">Read our Sass import docs</a> for details.</em>
         </p>
-        <p>
-          <strong>Optional:</strong> You may see Sass deprecation warnings with the latest versions of Dart Sass. These can silenced by adding the following configuration in a
-          <code>.sassrc.js</code> file in the root folder with the following:
-        </p>
+        <p><strong>Optional:</strong> You may see Sass deprecation warnings with the latest versions of Dart Sass. These can silenced by adding the following configuration in a <code>.sassrc.js</code> file in the root folder with the following:</p>
         <CodeWrapper
           code="module.exports = {
   silenceDeprecations: [&#39;import&#39;, &#39;mixed-decls&#39;, &#39;color-functions&#39;, &#39;global-builtin&#39;]
@@ -186,10 +150,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         />
       </li>
       <li>
-        <p>
-          <strong>Import Bootstrap’s JS.</strong> Add the following to <code>src/js/main.js</code> to import all of Bootstrap’s JS. Popper will be imported automatically through
-          Bootstrap.
-        </p>
+        <p><strong>Import Bootstrap’s JS.</strong> Add the following to <code>src/js/main.js</code> to import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
         <CodeWrapper
           code="// Import all of Bootstrap’s JS
 import * as bootstrap from &#39;bootstrap&#39;

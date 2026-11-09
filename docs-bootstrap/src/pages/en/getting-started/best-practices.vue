@@ -3,10 +3,7 @@
     <h1>Best practices</h1>
     <p>Learn about some of the best practices we’ve gathered from years of working on and using Bootstrap.</p>
 
-    <p>
-      We’ve designed and developed Bootstrap to work in a number of environments. Here are some of the best practices we’ve gathered from years of working on and using it
-      ourselves.
-    </p>
+    <p>We’ve designed and developed Bootstrap to work in a number of environments. Here are some of the best practices we’ve gathered from years of working on and using it ourselves.</p>
     <Callout>
       <p><strong>Heads up!</strong> This copy is a work in progress.</p>
     </Callout>

@@ -1,15 +1,6 @@
 <template>
   <template v-if="props.markup === 'svg'">
-    <svg
-      :aria-hidden="placeholderAriaHidden"
-      :aria-label="placeholderLabel"
-      :height="props.height"
-      class="bd-placeholder-img"
-      :class="props.class"
-      :role="placeholderRole"
-      :width="props.width"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg :aria-hidden="placeholderAriaHidden" :aria-label="placeholderLabel" :height="props.height" class="bd-placeholder-img" :class="props.class" :role="placeholderRole" :width="props.width" xmlns="http://www.w3.org/2000/svg">
       <title v-if="props.title !== false">{{ props.title }}</title>
       <rect width="100%" height="100%" :fill="props.background"></rect>
       <text v-if="props.text !== false" x="50%" y="50%" fill="#dee2e6" dy=".3em">
@@ -35,10 +26,7 @@ const props = defineProps({
 });
 
 const placeholderAriaHidden = props.title === false && props.text === false ? 'true' : undefined;
-const placeholderLabel =
-  props.text !== false || props.title !== false
-    ? `${props.title !== false ? props.title : ''}${props.text !== false && props.title !== false ? ': ' : ''}${props.text !== false ? props.text : ''}`
-    : undefined;
+const placeholderLabel = props.text !== false || props.title !== false ? `${props.title !== false ? props.title : ''}${props.text !== false && props.title !== false ? ': ' : ''}${props.text !== false ? props.text : ''}` : undefined;
 
 const placeholderRole = props.text !== false || props.title !== false ? 'img' : undefined;
 

@@ -5,18 +5,13 @@
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>
-      A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors,
-      and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available
-      as modifier classes for cards.
+      A <strong>card</strong> is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is
+      available as modifier classes for cards.
     </p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
+    <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as needed.</p>
     <p>
-      Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment
-      and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as needed.
-    </p>
-    <p>
-      Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element.
-      This is easily customized with our various
+      Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element. This is easily customized with our various
       <a href="#sizing">sizing options</a>.
     </p>
     <ExampleCustom
@@ -49,14 +44,8 @@
 </div>'
     />
     <h3 id="titles-text-and-links">Titles, text, and links<a class="anchor-link" href="#titles-text-and-links" aria-label="Link to Titles, text, and links"></a></h3>
-    <p>
-      Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding
-      <code>.card-link</code> to an <code>&lt;a&gt;</code> tag.
-    </p>
-    <p>
-      Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*&gt;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are
-      placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.
-    </p>
+    <p>Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code>.card-link</code> to an <code>&lt;a&gt;</code> tag.</p>
+    <p>Subtitles are used by adding a <code>.card-subtitle</code> to a <code>&lt;h*&gt;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.</p>
     <Example
       code='<div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -69,10 +58,7 @@
 </div>'
     />
     <h3 id="images">Images<a class="anchor-link" href="#images" aria-label="Link to Images"></a></h3>
-    <p>
-      <code>.card-img-top</code> and <code>.card-img-bottom</code> respectively set the top and bottom corners rounded to match the card’s borders. With <code>.card-text</code>,
-      text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.
-    </p>
+    <p><code>.card-img-top</code> and <code>.card-img-bottom</code> respectively set the top and bottom corners rounded to match the card’s borders. With <code>.card-text</code>, text can be added to the card. Text within <code>.card-text</code> can also be styled with the standard HTML tags.</p>
     <ExampleCustom
       code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -121,10 +107,7 @@
 </div>'
     />
     <h3 id="kitchen-sink">Kitchen sink<a class="anchor-link" href="#kitchen-sink" aria-label="Link to Kitchen sink"></a></h3>
-    <p>
-      Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all
-      wrapped in a fixed-width card.
-    </p>
+    <p>Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.</p>
     <ExampleCustom
       code='<div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -215,10 +198,7 @@
 </div>'
     />
     <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>
-      Cards assume no specific <code>width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass
-      mixins, or utilities.
-    </p>
+    <p>Cards assume no specific <code>width</code> to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.</p>
     <h3 id="using-grid-markup">Using grid markup<a class="anchor-link" href="#using-grid-markup" aria-label="Link to Using grid markup"></a></h3>
     <p>Using the grid, wrap cards in columns and rows as needed.</p>
     <Example
@@ -352,10 +332,7 @@
 </div>'
     />
     <h2 id="images-1">Images<a class="anchor-link" href="#images-1" aria-label="Link to Images"></a></h2>
-    <p>
-      Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the
-      image in a card.
-    </p>
+    <p>Cards include a few options for working with images. Choose from appending “image caps” at either end of a card, overlaying images with card content, or simply embedding the image in a card.</p>
     <h3 id="image-caps">Image caps<a class="anchor-link" href="#image-caps" aria-label="Link to Image caps"></a></h3>
     <p>Similar to headers and footers, cards can include top and bottom “image caps”—images at the top or bottom of a card.</p>
     <ExampleCustom
@@ -417,8 +394,7 @@
     <h2 id="horizontal">Horizontal<a class="anchor-link" href="#horizontal" aria-label="Link to Horizontal"></a></h2>
     <p>
       Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way. In the example below, we remove the grid gutters with
-      <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your
-      card content.
+      <code>.g-0</code> and use <code>.col-md-*</code> classes to make the card horizontal at the <code>md</code> breakpoint. Further adjustments may be needed depending on your card content.
     </p>
     <ExampleCustom
       code='<div class="card mb-3" style="max-width: 540px;">
@@ -455,8 +431,7 @@
     <h3 id="background-and-color">Background and color<a class="anchor-link" href="#background-and-color" aria-label="Link to Background and color"></a></h3>
     <AddedIn version="5.2.0" />
     <p>
-      Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>.
-      Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
+      Set a <code>background-color</code> with contrasting foreground <code>color</code> with <a href="helpers/color-background">our <code>.text-bg-{color}</code> helpers</a>. Previously it was required to manually pair your choice of <a href="/utilities/colors"><code>.text-{color}</code></a> and
       <a href="/utilities/background"><code>.bg-{color}</code></a> utilities for styling, which you still may use if you prefer.
     </p>
     <Example
@@ -476,10 +451,7 @@
     />
     <Callout name="warning-color-assistive-technologies" />
     <h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
-    <p>
-      Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the
-      parent <code>.card</code> or a subset of the card’s contents as shown below.
-    </p>
+    <p>Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.</p>
     <Example
       :code="
         data['theme-colors']
@@ -516,10 +488,7 @@
       <strong>these layout options are not yet responsive</strong>.
     </p>
     <h3 id="card-groups">Card groups<a class="anchor-link" href="#card-groups" aria-label="Link to Card groups"></a></h3>
-    <p>
-      Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex;</code> to become
-      attached with uniform dimensions starting at the <code>sm</code> breakpoint.
-    </p>
+    <p>Use card groups to render cards as a single, attached element with equal width and height columns. Card groups start off stacked and use <code>display: flex;</code> to become attached with uniform dimensions starting at the <code>sm</code> breakpoint.</p>
     <ExampleCustom
       code='<div class="card-group">
   <div class="card">
@@ -568,10 +537,7 @@
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height
-              action.
-            </p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -636,10 +602,7 @@
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height
-              action.
-            </p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
             <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -650,8 +613,7 @@
     <h3 id="grid-cards">Grid cards<a class="anchor-link" href="#grid-cards" aria-label="Link to Grid cards"></a></h3>
     <p>
       Use the Bootstrap grid system and its
-      <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s
-      <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium
+      <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium
       breakpoint up.
     </p>
     <ExampleCustom
@@ -960,10 +922,7 @@
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal
-                height action.
-              </p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
             </div>
             <div class="card-footer">
               <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -974,10 +933,8 @@
     >
     <h3 id="masonry">Masonry<a class="anchor-link" href="#masonry" aria-label="Link to Masonry"></a></h3>
     <p>
-      In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots
-      of unpleasant <a href="https://github.com/twbs/bootstrap/pull/28922">side effects</a>. If you want to have this type of layout in <code>v5</code>, you can just make use of
-      Masonry plugin. <strong>Masonry is not included in Bootstrap</strong>, but we’ve made a <a href="https://getbootstrap.com/docs/5.3/examples/masonry">demo example</a> to help
-      you get started.
+      In <code>v4</code> we used a CSS-only technique to mimic the behavior of <a href="https://masonry.desandro.com/">Masonry</a>-like columns, but this technique came with lots of unpleasant <a href="https://github.com/twbs/bootstrap/pull/28922">side effects</a>. If you want to have this type of layout in <code>v5</code>, you can just make use of
+      Masonry plugin. <strong>Masonry is not included in Bootstrap</strong>, but we’ve made a <a href="https://getbootstrap.com/docs/5.3/examples/masonry">demo example</a> to help you get started.
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <h3 id="variables">Variables<a class="anchor-link" href="#variables" aria-label="Link to Variables"></a></h3>

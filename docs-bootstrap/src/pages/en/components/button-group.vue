@@ -14,8 +14,7 @@
     />
     <Callout>
       <p>
-        Button groups require an appropriate <code>role</code> attribute and explicit label to ensure assistive technologies like screen readers identify buttons as grouped and
-        announce them. Use <code>role=&quot;group&quot;</code> for button groups or <code>role=&quot;toolbar&quot;</code> for button toolbars. Then use <code>aria-label</code> or
+        Button groups require an appropriate <code>role</code> attribute and explicit label to ensure assistive technologies like screen readers identify buttons as grouped and announce them. Use <code>role=&quot;group&quot;</code> for button groups or <code>role=&quot;toolbar&quot;</code> for button toolbars. Then use <code>aria-label</code> or
         <code>aria-labelledby</code> to label them.
       </p>
     </Callout>
@@ -46,9 +45,7 @@
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>'
     />
-    <h2 id="checkbox-and-radio-button-groups">
-      Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a>
-    </h2>
+    <h2 id="checkbox-and-radio-button-groups">Checkbox and radio button groups<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="Link to Checkbox and radio button groups"></a></h2>
     <p>Combine button-like checkbox and radio <a href="/forms/checks-radios">toggle buttons</a> into a seamless looking button group.</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
@@ -123,10 +120,7 @@
 </div>'
     />
     <h2 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h2>
-    <p>
-      Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting
-      multiple groups.
-    </p>
+    <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including each one when nesting multiple groups.</p>
     <Example
       code='<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
   <button type="button" class="btn btn-outline-primary">Left</button>

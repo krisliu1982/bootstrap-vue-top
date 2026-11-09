@@ -5,45 +5,33 @@
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
-      Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re
-      toggled by clicking, not by hovering; this is
+      Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is
       <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">an intentional design decision</a>.
     </p>
     <p>
-      Dropdowns are built on a third party library, <a href="https://popper.js.org/docs/v2/">Popper</a>, which provides dynamic positioning and viewport detection. Be sure to
-      include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before Bootstrap’s JavaScript or use
-      <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic
-      positioning isn’t required.
+      Dropdowns are built on a third party library, <a href="https://popper.js.org/docs/v2/">Popper</a>, which provides dynamic positioning and viewport detection. Be sure to include <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> before Bootstrap’s JavaScript or use
+      <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code> which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.
     </p>
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
       The
       <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a>
       standard defines an actual
-      <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> widget</a>, but this is specific to application-like menus which trigger actions or
-      functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button
-      groups, and sub-menus.
+      <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> widget</a>, but this is specific to application-like menus which trigger actions or functions. <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus can only contain menu items, checkbox menu items, radio button menu items, radio button groups,
+      and sub-menus.
     </p>
     <p>
-      Bootstrap’s dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create
-      dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of
-      the <code>role</code> and <code>aria-</code> attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include
-      these more specific attributes themselves.
+      Bootstrap’s dropdowns, on the other hand, are designed to be generic and applicable to a variety of situations and markup structures. For instance, it is possible to create dropdowns that contain additional inputs and form controls, such as search fields or login forms. For this reason, Bootstrap does not expect (nor automatically add) any of
+      the <code>role</code> and <code>aria-</code> attributes required for true <abbr title="Accessible Rich Internet Applications">ARIA</abbr> menus. Authors will have to include these more specific attributes themselves.
     </p>
-    <p>
-      However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual <code>.dropdown-item</code> elements
-      using the cursor keys and close the menu with the <kbd>Esc</kbd> key.
-    </p>
+    <p>However, Bootstrap does add built-in support for most standard keyboard menu interactions, such as the ability to move through individual <code>.dropdown-item</code> elements using the cursor keys and close the menu with the <kbd>Esc</kbd> key.</p>
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>
-      Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>.
-      Ideally, you should use a <code>&lt;button&gt;</code> element as the dropdown trigger, but the plugin will work with <code>&lt;a&gt;</code> elements as well. The examples
+      Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Ideally, you should use a <code>&lt;button&gt;</code> element as the dropdown trigger, but the plugin will work with <code>&lt;a&gt;</code> elements as well. The examples
       shown here use semantic <code>&lt;ul&gt;</code> elements where appropriate, but custom markup is supported.
     </p>
     <h3 id="single-button">Single button<a class="anchor-link" href="#single-button" aria-label="Link to Single button"></a></h3>
-    <p>
-      Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with <code>&lt;button&gt;</code> elements:
-    </p>
+    <p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with <code>&lt;button&gt;</code> elements:</p>
     <Example
       code='<div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,10 +44,7 @@
   </ul>
 </div>'
     />
-    <p>
-      While <code>&lt;button&gt;</code> is the recommended control for a dropdown toggle, there might be situations where you have to use an <code>&lt;a&gt;</code> element. If you
-      do, we recommend adding a <code>role=&quot;button&quot;</code> attribute to appropriately convey control’s purpose to assistive technologies such as screen readers.
-    </p>
+    <p>While <code>&lt;button&gt;</code> is the recommended control for a dropdown toggle, there might be situations where you have to use an <code>&lt;a&gt;</code> element. If you do, we recommend adding a <code>role=&quot;button&quot;</code> attribute to appropriately convey control’s purpose to assistive technologies such as screen readers.</p>
     <Example
       code='<div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -154,14 +139,8 @@
       lang="html"
     />
     <h3 id="split-button">Split button<a class="anchor-link" href="#split-button" aria-label="Link to Split button"></a></h3>
-    <p>
-      Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper
-      spacing around the dropdown caret.
-    </p>
-    <p>
-      We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s added for regular
-      button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.
-    </p>
+    <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.</p>
+    <p>We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s added for regular button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.</p>
     <Example
       :showMarkup="false"
       code='<div class="btn-group">
@@ -365,10 +344,7 @@
     />
     <h2 id="dark-dropdowns">Dark dropdowns<a class="anchor-link" href="#dark-dropdowns" aria-label="Link to Dark dropdowns"></a></h2>
     <DeprecatedIn version="5.3.0" />
-    <p>
-      Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are
-      required to the dropdown items.
-    </p>
+    <p>Opt into darker dropdowns to match a dark navbar or custom style by adding <code>.dropdown-menu-dark</code> onto an existing <code>.dropdown-menu</code>. No changes are required to the dropdown items.</p>
     <CalloutDeprecatedDarkVariants component="dropdown-menu" /><Example
       code='<div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -629,10 +605,7 @@
 </ul>'
     />
     <h3 id="active">Active<a class="anchor-link" href="#active" aria-label="Link to Active"></a></h3>
-    <p>
-      Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active state to assistive technologies, use the
-      <code>aria-current</code> attribute — using the <code>page</code> value for the current page, or <code>true</code> for the current item in a set.
-    </p>
+    <p>Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>. To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the <code>page</code> value for the current page, or <code>true</code> for the current item in a set.</p>
     <Example
       code='<ul class="dropdown-menu">
   <li><a class="dropdown-item" href="#">Regular link</a></li>
@@ -654,10 +627,7 @@
       By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. You can change this with the directional
       <code>.drop*</code> classes, but you can also control them with additional modifier classes.
     </p>
-    <p>
-      Add <code>.dropdown-menu-end</code> to a <code>.dropdown-menu</code> to right align the dropdown menu. Directions are mirrored when using Bootstrap in RTL, meaning
-      <code>.dropdown-menu-end</code> will appear on the left side.
-    </p>
+    <p>Add <code>.dropdown-menu-end</code> to a <code>.dropdown-menu</code> to right align the dropdown menu. Directions are mirrored when using Bootstrap in RTL, meaning <code>.dropdown-menu-end</code> will appear on the left side.</p>
     <Callout>
       <p><strong>Heads up!</strong> Dropdowns are positioned thanks to Popper except when they are contained in a navbar.</p> </Callout
     ><Example
@@ -690,10 +660,7 @@
   </ul>
 </div>'
     />
-    <p>
-      To align <strong>left</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu-end</code> and
-      <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start</code>.
-    </p>
+    <p>To align <strong>left</strong> the dropdown menu with the given breakpoint or larger, add <code>.dropdown-menu-end</code> and <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start</code>.</p>
     <Example
       code='<div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -966,9 +933,7 @@
       <code>.dropdown-menu</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
     </p>
     <ScssDocs name="dropdown-css-vars" file="scss/_dropdown.scss" /><Callout>
-      <p>
-        Dropdown items include at least one variable that is not set on <code>.dropdown</code>. This allows you to provide a new value while Bootstrap defaults to a fallback value.
-      </p>
+      <p>Dropdown items include at least one variable that is not set on <code>.dropdown</code>. This allows you to provide a new value while Bootstrap defaults to a fallback value.</p>
       <ul>
         <li><code>--bs-dropdown-item-border-radius</code></li>
       </ul>
@@ -988,15 +953,12 @@
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <p>
       Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the
-      <code>.show</code> class on the parent <code>.dropdown-menu</code>. The <code>data-bs-toggle=&quot;dropdown&quot;</code> attribute is relied on for closing dropdown menus at
-      an application level, so it’s a good idea to always use it.
+      <code>.show</code> class on the parent <code>.dropdown-menu</code>. The <code>data-bs-toggle=&quot;dropdown&quot;</code> attribute is relied on for closing dropdown menus at an application level, so it’s a good idea to always use it.
     </p>
     <Callout>
       <p>
-        On touch-enabled devices, opening a dropdown adds empty <code>mouseover</code> handlers to the immediate children of the <code>&lt;body&gt;</code> element. This admittedly
-        ugly hack is necessary to work around a <a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">quirk in iOs’ event delegation</a>, which would
-        otherwise prevent a tap anywhere outside of the dropdown from triggering the code that closes the dropdown. Once the dropdown is closed, these additional empty
-        <code>mouseover</code> handlers are removed.
+        On touch-enabled devices, opening a dropdown adds empty <code>mouseover</code> handlers to the immediate children of the <code>&lt;body&gt;</code> element. This admittedly ugly hack is necessary to work around a <a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">quirk in iOs’ event delegation</a>, which would
+        otherwise prevent a tap anywhere outside of the dropdown from triggering the code that closes the dropdown. Once the dropdown is closed, these additional empty <code>mouseover</code> handlers are removed.
       </p>
     </Callout>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
@@ -1014,10 +976,7 @@
     />
     <h3 id="via-javascript">Via JavaScript<a class="anchor-link" href="#via-javascript" aria-label="Link to Via JavaScript"></a></h3>
     <Callout type="warning">
-      <p>
-        Dropdowns must have <code>data-bs-toggle=&quot;dropdown&quot;</code> on their trigger element, regardless of whether you call your dropdown via JavaScript or use the
-        data-api.
-      </p>
+      <p>Dropdowns must have <code>data-bs-toggle=&quot;dropdown&quot;</code> on their trigger element, regardless of whether you call your dropdown via JavaScript or use the data-api.</p>
     </Callout>
     <p>Call the dropdowns via JavaScript:</p>
     <CodeWrapper
@@ -1047,10 +1006,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
               Configure the auto close behavior of the dropdown:
               <ul class="my-2">
                 <li><code>true</code> - the dropdown will be closed by clicking outside or inside the dropdown menu.</li>
-                <li>
-                  <code>false</code> - the dropdown will be closed by clicking the toggle button and manually calling <code>hide</code> or <code>toggle</code> method. (Also will
-                  not be closed by pressing <kbd>Esc</kbd> key)
-                </li>
+                <li><code>false</code> - the dropdown will be closed by clicking the toggle button and manually calling <code>hide</code> or <code>toggle</code> method. (Also will not be closed by pressing <kbd>Esc</kbd> key)</li>
                 <li><code>&#39;inside&#39;</code> - the dropdown will be closed (only) by clicking inside the dropdown menu.</li>
                 <li><code>&#39;outside&#39;</code> - the dropdown will be closed (only) by clicking outside the dropdown menu.</li>
               </ul>
@@ -1062,8 +1018,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
             <td>
-              Overflow constraint boundary of the dropdown menu (applies only to Popper’s preventOverflow modifier). By default it’s <code>clippingParents</code> and can accept an
-              HTMLElement reference (via JavaScript only). For more information refer to Popper’s
+              Overflow constraint boundary of the dropdown menu (applies only to Popper’s preventOverflow modifier). By default it’s <code>clippingParents</code> and can accept an HTMLElement reference (via JavaScript only). For more information refer to Popper’s
               <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow docs</a>.
             </td>
           </tr>
@@ -1079,11 +1034,8 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>[0, 2]</code></td>
             <td>
               Offset of the dropdown relative to its target. You can pass a string in data attributes with comma separated values like:
-              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the
-              reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two
-              numbers: <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>,
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
+              <code>data-bs-offset=&quot;10,20&quot;</code>. When a function is used to determine the offset, it is called with an object containing the popper placement, the reference, and popper rects as its first argument. The triggering element DOM node is passed as the second argument. The function must return an array with two numbers:
+              <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>, <a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>. For more information refer to Popper’s <a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset docs</a>.
             </td>
           </tr>
           <tr>
@@ -1092,8 +1044,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>null</code></td>
             <td>
               To change Bootstrap’s default Popper config, see
-              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with
-              an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper’s configuration</a>. When a function is used to create the Popper configuration, it’s called with an object that contains the Bootstrap’s default Popper configuration. It helps you use and merge the default with your own configuration. The function must return a
               configuration object for Popper.
             </td>
           </tr>
@@ -1102,10 +1053,8 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>string, element, object</td>
             <td><code>&#39;toggle&#39;</code></td>
             <td>
-              Reference element of the dropdown menu. Accepts the values of <code>&#39;toggle&#39;</code>, <code>&#39;parent&#39;</code>, an HTMLElement reference or an object
-              providing <code>getBoundingClientRect</code>. For more information refer to Popper’s
-              <a href="https://popper.js.org/docs/v2/constructors/#createpopper">constructor docs</a> and
-              <a href="https://popper.js.org/docs/v2/virtual-elements/">virtual element docs</a>.
+              Reference element of the dropdown menu. Accepts the values of <code>&#39;toggle&#39;</code>, <code>&#39;parent&#39;</code>, an HTMLElement reference or an object providing <code>getBoundingClientRect</code>. For more information refer to Popper’s
+              <a href="https://popper.js.org/docs/v2/constructors/#createpopper">constructor docs</a> and <a href="https://popper.js.org/docs/v2/virtual-elements/">virtual element docs</a>.
             </td>
           </tr>
         </tbody>
@@ -1172,9 +1121,8 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
     </div>
     <h3 id="events">Events<a class="anchor-link" href="#events" aria-label="Link to Events"></a></h3>
     <p>
-      All dropdown events are fired at the toggling element and then bubbled up. So you can also add event listeners on the <code>.dropdown-menu</code>’s parent element.
-      <code>hide.bs.dropdown</code> and <code>hidden.bs.dropdown</code> events have a <code>clickEvent</code> property (only when the original Event type is <code>click</code>)
-      that contains an Event Object for the click event.
+      All dropdown events are fired at the toggling element and then bubbled up. So you can also add event listeners on the <code>.dropdown-menu</code>’s parent element. <code>hide.bs.dropdown</code> and <code>hidden.bs.dropdown</code> events have a <code>clickEvent</code> property (only when the original Event type is <code>click</code>) that
+      contains an Event Object for the click event.
     </p>
     <div class="table-responsive">
       <table class="table">

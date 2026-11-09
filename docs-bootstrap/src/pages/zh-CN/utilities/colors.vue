@@ -10,10 +10,7 @@
       <a href="/helpers/colored-links"><code>.link-*</code> helper classes</a> which have <code>:hover</code> and <code>:focus</code> states.
     </p>
     <Callout>
-      <p>
-        Color utilities like <code>.text-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any
-        <code>.text-*-emphasis</code> utility will. This will be resolved in v6.
-      </p> </Callout
+      <p>Color utilities like <code>.text-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.text-*-emphasis</code> utility will. This will be resolved in v6.</p> </Callout
     ><Example
       :code="
         [
@@ -33,22 +30,13 @@
         ].join('\n')
       "
     /><Callout type="warning">
-      <p>
-        <strong>Deprecation:</strong> With the addition of <code>.text-opacity-*</code> utilities and CSS variables for text utilities, <code>.text-black-50</code> and
-        <code>.text-white-50</code> are deprecated as of v5.1.0. They’ll be removed in v6.0.0.
-      </p> </Callout
+      <p><strong>Deprecation:</strong> With the addition of <code>.text-opacity-*</code> utilities and CSS variables for text utilities, <code>.text-black-50</code> and <code>.text-white-50</code> are deprecated as of v5.1.0. They’ll be removed in v6.0.0.</p> </Callout
     ><Callout type="warning">
-      <p>
-        <strong>Deprecation:</strong> With the addition of the expanded theme colors and variables, the <code>.text-muted</code> utility has been deprecated as of v5.3.0. Its
-        default value has also been reassigned to the new <code>--bs-secondary-color</code> CSS variable to better support color modes. It will be removed in v6.0.0.
-      </p>
+      <p><strong>Deprecation:</strong> With the addition of the expanded theme colors and variables, the <code>.text-muted</code> utility has been deprecated as of v5.3.0. Its default value has also been reassigned to the new <code>--bs-secondary-color</code> CSS variable to better support color modes. It will be removed in v6.0.0.</p>
     </Callout>
     <h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>
-      As of v5.1.0, text color utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency
-      changes.
-    </p>
+    <p>As of v5.1.0, text color utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.</p>
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.text-primary</code> utility.</p>
     <CodeWrapper
@@ -60,10 +48,8 @@
       lang="css"
     />
     <p>
-      We use an RGB version of our <code>--bs-primary</code> (with the value of <code>13, 110, 253</code>) CSS variable and attached a second CSS variable,
-      <code>--bs-text-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use
-      <code>.text-primary</code> now, your computed <code>color</code> value is <code>rgba(13, 110, 253, 1)</code>. The local CSS variable inside each <code>.text-*</code> class
-      avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
+      We use an RGB version of our <code>--bs-primary</code> (with the value of <code>13, 110, 253</code>) CSS variable and attached a second CSS variable, <code>--bs-text-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.text-primary</code> now, your
+      computed <code>color</code> value is <code>rgba(13, 110, 253, 1)</code>. The local CSS variable inside each <code>.text-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
     </p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
     <p>To change that opacity, override <code>--bs-text-opacity</code> via custom styles or inline styles.</p>

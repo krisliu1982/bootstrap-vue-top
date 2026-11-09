@@ -27,8 +27,7 @@
     </ul>
     <p>
       Should you require our full set of
-      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own
-      purposes.
+      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own purposes.
     </p>
     <p>
       <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">Download source</a>
@@ -52,14 +51,10 @@
       lang="html"
     />
     <h3 id="alternative-cdns">Alternative CDNs<a class="anchor-link" href="#alternative-cdns" aria-label="Link to Alternative CDNs"></a></h3>
-    <p>
-      We recommend <a href="https://www.jsdelivr.com/">jsDelivr</a> and use it ourselves in our documentation. However, in some cases—like in some specific countries or
-      environments—you may need to use other CDN providers like <a href="https://cdnjs.com/">cdnjs</a> or <a href="https://unpkg.com/">unpkg</a>.
-    </p>
+    <p>We recommend <a href="https://www.jsdelivr.com/">jsDelivr</a> and use it ourselves in our documentation. However, in some cases—like in some specific countries or environments—you may need to use other CDN providers like <a href="https://cdnjs.com/">cdnjs</a> or <a href="https://unpkg.com/">unpkg</a>.</p>
     <p>
       You’ll find the same files on these CDN providers, albeit with different URLs. With cdnjs, you can
-      <a href="https://cdnjs.com/libraries/bootstrap">use this direct Bootstrap package link</a> to copy and paste ready-to-use HTML snippets for each dist file from any version of
-      Bootstrap.
+      <a href="https://cdnjs.com/libraries/bootstrap">use this direct Bootstrap package link</a> to copy and paste ready-to-use HTML snippets for each dist file from any version of Bootstrap.
     </p>
     <Callout type="warning">
       <p>
@@ -67,8 +62,7 @@
       </p>
     </Callout>
     <p>
-      Note that you should compare same length hashes, e.g. <code>sha384</code> with <code>sha384</code>, otherwise it’s expected for them to be different. As such, you can use an
-      online tool like <a href="https://www.srihash.org/">SRI Hash Generator</a> to make sure that the hashes are the same for a given file. Alternatively, assuming you have
+      Note that you should compare same length hashes, e.g. <code>sha384</code> with <code>sha384</code>, otherwise it’s expected for them to be different. As such, you can use an online tool like <a href="https://www.srihash.org/">SRI Hash Generator</a> to make sure that the hashes are the same for a given file. Alternatively, assuming you have
       OpenSSL installed, you can achieve the same from the CLI, for example:
     </p>
     <CodeWrapper
@@ -93,8 +87,7 @@
       lang="shell"
     />
     <p>
-      <code>const bootstrap = require(&#39;bootstrap&#39;)</code> or <code>import bootstrap from &#39;bootstrap&#39;</code> will load all of Bootstrap’s plugins onto a
-      <code>bootstrap</code> object. The <code>bootstrap</code> module itself exports all of our plugins. You can manually load Bootstrap’s plugins individually by loading the
+      <code>const bootstrap = require(&#39;bootstrap&#39;)</code> or <code>import bootstrap from &#39;bootstrap&#39;</code> will load all of Bootstrap’s plugins onto a <code>bootstrap</code> object. The <code>bootstrap</code> module itself exports all of our plugins. You can manually load Bootstrap’s plugins individually by loading the
       <code>/js/dist/*.js</code> files under the package’s top-level directory.
     </p>
     <p>Bootstrap’s <code>package.json</code> contains some additional metadata under the following keys:</p>
@@ -115,8 +108,7 @@
     />
     <Callout type="warning">
       <p>
-        <strong>Yarn 2+ (aka Yarn Berry) doesn’t support the <code>node_modules</code> directory by default</strong>: using our
-        <a href="https://github.com/twbs/examples/tree/main/sass-js">Sass &amp; JS example</a> needs some adjustments:
+        <strong>Yarn 2+ (aka Yarn Berry) doesn’t support the <code>node_modules</code> directory by default</strong>: using our <a href="https://github.com/twbs/examples/tree/main/sass-js">Sass &amp; JS example</a> needs some adjustments:
       </p>
       <CodeWrapper
         code="yarn config set nodeLinker node-modules # Use the node_modules linker
@@ -136,8 +128,7 @@ yarn start # Start the project
     />
     <h3 id="rubygems">RubyGems<a class="anchor-link" href="#rubygems" aria-label="Link to RubyGems"></a></h3>
     <p>
-      Install Bootstrap in your Ruby apps using <a href="https://bundler.io/">Bundler</a> (<strong>recommended</strong>) and <a href="https://rubygems.org/">RubyGems</a> by adding
-      the following line to your <a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a
+      Install Bootstrap in your Ruby apps using <a href="https://bundler.io/">Bundler</a> (<strong>recommended</strong>) and <a href="https://rubygems.org/">RubyGems</a> by adding the following line to your <a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a
       >:
     </p>
     <CodeWrapper code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;" lang="text" />
@@ -161,9 +152,8 @@ yarn start # Start the project
     <h3 id="nuget">NuGet<a class="anchor-link" href="#nuget" aria-label="Link to NuGet"></a></h3>
     <p>
       If you develop in .NET Framework, you can also install and manage Bootstrap’s
-      <a href="https://www.nuget.org/packages/bootstrap/">CSS</a> or <a href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> and JavaScript using
-      <a href="https://www.nuget.org/">NuGet</a>. Newer projects should use <a href="https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/">libman</a> or another method
-      as NuGet is designed for compiled code, not frontend assets.
+      <a href="https://www.nuget.org/packages/bootstrap/">CSS</a> or <a href="https://www.nuget.org/packages/bootstrap.sass/">Sass</a> and JavaScript using <a href="https://www.nuget.org/">NuGet</a>. Newer projects should use <a href="https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/">libman</a> or another method as NuGet is
+      designed for compiled code, not frontend assets.
     </p>
     <CodeWrapper
       code="Install-Package bootstrap

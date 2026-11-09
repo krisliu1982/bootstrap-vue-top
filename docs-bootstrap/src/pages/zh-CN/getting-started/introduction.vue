@@ -1,13 +1,11 @@
 <template>
- <article class="bd-content">
+  <article class="bd-content">
     <h1>Bootstrap 入门</h1>
     <p>Bootstrap 是一个功能强大、特性丰富的前端工具包。只需几分钟，你就能构建从原型到生产环境的各种项目。</p>
 
     <h2 id="quick-start">快速开始<a class="anchor-link" href="#quick-start" aria-label="快速开始链接"></a></h2>
 
-    <p>
-      通过 CDN 引入 Bootstrap 可直接用于生产的 CSS 和 JavaScript 即可开始使用，无需任何构建步骤。你可以通过这个<a href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap CodePen 演示</a>查看实际效果。
-    </p>
+    <p>通过 CDN 引入 Bootstrap 可直接用于生产的 CSS 和 JavaScript 即可开始使用，无需任何构建步骤。你可以通过这个<a href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap CodePen 演示</a>查看实际效果。</p>
 
     <br />
 
@@ -32,9 +30,7 @@
         />
       </li>
       <li>
-        <p>
-          <strong>引入 Bootstrap 的 CSS 和 JS。</strong>将 CSS 的 <code>&lt;link&gt;</code> 标签放在 <code>&lt;head&gt;</code> 中，并将 JavaScript 打包文件（包含用于下拉菜单、弹出框和工具提示定位的 Popper）的 <code>&lt;script&gt;</code> 标签放在 <code>&lt;/body&gt;</code> 闭合标签之前。了解更多关于<a href="#cdn-links">CDN 链接</a>的信息。
-        </p>
+        <p><strong>引入 Bootstrap 的 CSS 和 JS。</strong>将 CSS 的 <code>&lt;link&gt;</code> 标签放在 <code>&lt;head&gt;</code> 中，并将 JavaScript 打包文件（包含用于下拉菜单、弹出框和工具提示定位的 Popper）的 <code>&lt;script&gt;</code> 标签放在 <code>&lt;/body&gt;</code> 闭合标签之前。了解更多关于<a href="#cdn-links">CDN 链接</a>的信息。</p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
@@ -59,12 +55,7 @@
         />
       </li>
       <li>
-        <p>
-          <strong>Hello, world!</strong> 在浏览器中打开该页面，即可看到应用了 Bootstrap 的页面。现在，你可以通过创建自己的<a href="/layout/grid">布局</a>、添加数十种<a
-            href="/components/buttons"
-            >组件</a
-          >以及使用<a href="https://getbootstrap.com/examples">我们的官方示例</a>来开始使用 Bootstrap 进行构建了。
-        </p>
+        <p><strong>Hello, world!</strong> 在浏览器中打开该页面，即可看到应用了 Bootstrap 的页面。现在，你可以通过创建自己的<a href="/layout/grid">布局</a>、添加数十种<a href="/components/buttons">组件</a>以及使用<a href="https://getbootstrap.com/examples">我们的官方示例</a>来开始使用 Bootstrap 进行构建了。</p>
       </li>
     </ol>
 
@@ -91,14 +82,9 @@
       </tbody>
     </table>
 
-    <p>
-      你也可以使用 CDN 获取任何<a href="/getting-started/contents">在「内容」页面中列出的其他构建版本</a>。
-    </p>
+    <p>你也可以使用 CDN 获取任何<a href="/getting-started/contents">在「内容」页面中列出的其他构建版本</a>。</p>
 
-    <p>
-      使用 CDN 链接时，请务必使用 <code>integrity</code> 属性来校验正确的文件和版本。这些哈希值对于 Bootstrap 的每个文件和版本都是唯一的，因此当你更新到新版本时，请务必同时更新
-      <code>integrity</code> 属性。
-    </p>
+    <p>使用 CDN 链接时，请务必使用 <code>integrity</code> 属性来校验正确的文件和版本。这些哈希值对于 Bootstrap 的每个文件和版本都是唯一的，因此当你更新到新版本时，请务必同时更新 <code>integrity</code> 属性。</p>
 
     <p>我们还包含了 <code>crossorigin="anonymous"</code> 属性，以防止<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>错误。</p>
 
@@ -107,9 +93,7 @@
     <ul>
       <li>进一步了解 Bootstrap 使用的<a href="#important-globals">一些重要的全局环境设置</a>。</li>
       <li>阅读我们的<a href="/getting-started/contents/">内容章节</a>了解 Bootstrap 包含的内容，以及下方<a href="#js-components">需要 JavaScript 的组件</a>列表。</li>
-      <li>
-        需要更强大的功能？可以考虑通过<a href="/getting-started/download#package-managers">包管理器引入源文件</a>来使用 Bootstrap 构建。
-      </li>
+      <li>需要更强大的功能？可以考虑通过<a href="/getting-started/download#package-managers">包管理器引入源文件</a>来使用 Bootstrap 构建。</li>
       <li>
         想要以 <code>&lt;script type="module"&gt;</code> 模块的方式使用 Bootstrap？请参阅我们的<a href="/getting-started/javascript#using-bootstrap-as-a-module">将 Bootstrap 用作模块</a>
         章节。
@@ -133,9 +117,7 @@
       <li>画布外菜单（Offcanvases），用于显示、定位和滚动行为</li>
       <li>滚动监听（Scrollspy），用于滚动行为和导航更新</li>
       <li>轻提示（Toasts），用于显示和关闭</li>
-      <li>
-        工具提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要<a href="https://popper.js.org/docs/v2/">Popper</a>）
-      </li>
+      <li>工具提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要<a href="https://popper.js.org/docs/v2/">Popper</a>）</li>
     </ul>
 
     <h2 id="important-globals">重要的全局设置<a class="anchor-link" href="#important-globals" aria-label="重要的全局设置"></a></h2>
@@ -156,10 +138,7 @@
 
     <h3 id="viewport-meta">视口 meta 标签<a class="anchor-link" href="#viewport-meta" aria-label="视口 meta 标签"></a></h3>
 
-    <p>
-      Bootstrap 采用<em>移动优先</em>的开发方式，即先针对移动设备优化代码，然后使用 CSS 媒体查询按需放大组件。 为确保所有设备都能正确渲染和触摸缩放，请将响应式视口 meta
-      标签添加到你的 <code>&lt;head&gt;</code> 中。
-    </p>
+    <p>Bootstrap 采用<em>移动优先</em>的开发方式，即先针对移动设备优化代码，然后使用 CSS 媒体查询按需放大组件。 为确保所有设备都能正确渲染和触摸缩放，请将响应式视口 meta 标签添加到你的 <code>&lt;head&gt;</code> 中。</p>
 
     <CodeWrapper code='&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;' lang="html" />
 
@@ -167,10 +146,7 @@
 
     <h3 id="box-sizing">盒模型（Box-sizing）<a class="anchor-link" href="#box-sizing" aria-label="盒模型（Box-sizing）"></a></h3>
 
-    <p>
-      为了让 CSS 中的尺寸计算更加直观，我们将全局的 <code>box-sizing</code> 值从 <code>content-box</code> 改为 <code>border-box</code>。这可以确保
-      <code>padding</code> 不会影响元素最终计算出的宽度，但可能会对某些第三方软件（如 Google Maps 和 Google 自定义搜索引擎）造成问题。
-    </p>
+    <p>为了让 CSS 中的尺寸计算更加直观，我们将全局的 <code>box-sizing</code> 值从 <code>content-box</code> 改为 <code>border-box</code>。这可以确保 <code>padding</code> 不会影响元素最终计算出的宽度，但可能会对某些第三方软件（如 Google Maps 和 Google 自定义搜索引擎）造成问题。</p>
 
     <p>在极少数需要覆盖它的情况下，可以使用类似下面的写法：</p>
 
@@ -181,10 +157,7 @@
       lang="css"
     />
 
-    <p>
-      使用上面的代码片段，嵌套元素——包括通过 <code>::before</code> 和 <code>::after</code> 生成的内容——都将继承该 <code>.selector-for-some-widget</code> 指定的
-      <code>box-sizing</code>。
-    </p>
+    <p>使用上面的代码片段，嵌套元素——包括通过 <code>::before</code> 和 <code>::after</code> 生成的内容——都将继承该 <code>.selector-for-some-widget</code> 指定的 <code>box-sizing</code>。</p>
 
     <p>在<a href="https://css-tricks.com/box-sizing/">CSS Tricks 了解有关盒模型和尺寸计算的更多内容</a>。</p>
 
@@ -205,10 +178,7 @@
         可以在 Stack Overflow 上寻求实现方面的帮助（标签为<a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a
         >）。
       </li>
-      <li>
-        开发者在通过<a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a>或类似的分发机制发布修改或扩展 Bootstrap 功能的包时，应使用关键词
-        <code>bootstrap</code>，以获得最大的可发现性。
-      </li>
+      <li>开发者在通过<a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a>或类似的分发机制发布修改或扩展 Bootstrap 功能的包时，应使用关键词 <code>bootstrap</code>，以获得最大的可发现性。</li>
     </ul>
 
     <p>你也可以关注<a href="https://x.com/getbootstrap">X 上的 @getbootstrap</a>，获取最新动态和精彩的音乐视频。</p>
@@ -223,7 +193,7 @@
       <li><a href="#next-steps">后续步骤</a></li>
       <li><a href="#js-components">JS 组件</a></li>
       <li>
-       <a href="#important-globals">重要的全局设置</a>
+        <a href="#important-globals">重要的全局设置</a>
         <ul>
           <li><a href="#html5-doctype">HTML5 文档类型</a></li>
           <li><a href="#viewport-meta">视口 meta 标签</a></li>

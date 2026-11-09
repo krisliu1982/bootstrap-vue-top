@@ -4,10 +4,7 @@
     <p>Easily make an element as wide or as tall with our width and height utilities.</p>
 
     <h2 id="relative-to-the-parent">Relative to the parent<a class="anchor-link" href="#relative-to-the-parent" aria-label="Link to Relative to the parent"></a></h2>
-    <p>
-      Width and height utilities are generated from the utility API in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>,
-      <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.
-    </p>
+    <p>Width and height utilities are generated from the utility API in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
     <Example
       class="bd-example-flex"
       code='<div class="w-25 p-3">Width 25%</div>

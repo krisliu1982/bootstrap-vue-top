@@ -4,14 +4,10 @@
     <p>The utility API is a Sass-based tool to generate utility classes.</p>
 
     <p>
-      Bootstrap utilities are generated with our utility API and can be used to modify or extend our default set of utility classes via Sass. Our utility API is based on a series
-      of Sass maps and functions for generating families of classes with various options. If you’re unfamiliar with Sass maps, read up on the
+      Bootstrap utilities are generated with our utility API and can be used to modify or extend our default set of utility classes via Sass. Our utility API is based on a series of Sass maps and functions for generating families of classes with various options. If you’re unfamiliar with Sass maps, read up on the
       <a href="https://sass-lang.com/documentation/values/maps/">official Sass docs</a> to get started.
     </p>
-    <p>
-      The <code>$utilities</code> map contains all our utilities and is later merged with your custom <code>$utilities</code> map, if present. The utility map contains a keyed list
-      of utility groups which accept the following options:
-    </p>
+    <p>The <code>$utilities</code> map contains all our utilities and is later merged with your custom <code>$utilities</code> map, if present. The utility map contains a keyed list of utility groups which accept the following options:</p>
     <div class="table-responsive">
       <table class="table table-utilities">
         <thead>
@@ -48,10 +44,7 @@
             </td>
             <td>Optional</td>
             <td>null</td>
-            <td>
-              Name of the generated class. If not provided and <code>property</code> is an array of strings, <code>class</code> will default to the first element of the
-              <code>property</code> array. If not provided and <code>property</code> is a string, the <code>values</code> keys are used for the <code>class</code> names.
-            </td>
+            <td>Name of the generated class. If not provided and <code>property</code> is an array of strings, <code>class</code> will default to the first element of the <code>property</code> array. If not provided and <code>property</code> is a string, the <code>values</code> keys are used for the <code>class</code> names.</td>
           </tr>
           <tr>
             <td>
@@ -117,9 +110,7 @@
       </table>
     </div>
     <h2 id="api-explained">API explained<a class="anchor-link" href="#api-explained" aria-label="Link to API explained"></a></h2>
-    <p>
-      All utility variables are added to the <code>$utilities</code> variable within our <code>_utilities.scss</code> stylesheet. Each group of utilities looks something like this:
-    </p>
+    <p>All utility variables are added to the <code>$utilities</code> variable within our <code>_utilities.scss</code> stylesheet. Each group of utilities looks something like this:</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -147,10 +138,7 @@
       lang="css"
     />
     <h3 id="property">Property<a class="anchor-link" href="#property" aria-label="Link to Property"></a></h3>
-    <p>
-      The required <code>property</code> key must be set for any utility, and it must contain a valid CSS property. This property is used in the generated utility’s ruleset. When
-      the <code>class</code> key is omitted, it also serves as the default class name. Consider the <code>text-decoration</code> utility:
-    </p>
+    <p>The required <code>property</code> key must be set for any utility, and it must contain a valid CSS property. This property is used in the generated utility’s ruleset. When the <code>class</code> key is omitted, it also serves as the default class name. Consider the <code>text-decoration</code> utility:</p>
     <CodeWrapper
       code='$utilities: (
   "text-decoration": (
@@ -170,10 +158,7 @@
       lang="css"
     />
     <h3 id="values">Values<a class="anchor-link" href="#values" aria-label="Link to Values"></a></h3>
-    <p>
-      Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map
-      (set in the utilities or in a Sass variable).
-    </p>
+    <p>Use the <code>values</code> key to specify which values for the specified <code>property</code> should be used in the generated class names and rules. Can be a list or map (set in the utilities or in a Sass variable).</p>
     <p>
       As a list, like with
       <a href="/utilities/text#text-decoration"><code>text-decoration</code> utilities</a>:
@@ -258,10 +243,7 @@
       lang="css"
     />
     <h3 id="css-variable-utilities">CSS variable utilities<a class="anchor-link" href="#css-variable-utilities" aria-label="Link to CSS variable utilities"></a></h3>
-    <p>
-      Set the <code>css-var</code> boolean option to <code>true</code> and the API will generate local CSS variables for the given selector instead of the usual
-      <code>property: value</code> rules. Add an optional <code>css-variable-name</code> to set a different CSS variable name than the class name.
-    </p>
+    <p>Set the <code>css-var</code> boolean option to <code>true</code> and the API will generate local CSS variables for the given selector instead of the usual <code>property: value</code> rules. Add an optional <code>css-variable-name</code> to set a different CSS variable name than the class name.</p>
     <p>Consider our <code>.text-opacity-*</code> utilities. If we add the <code>css-variable-name</code> option, we&#39;ll get a custom output.</p>
     <CodeWrapper
       code='$utilities: (
@@ -290,10 +272,7 @@
       lang="css"
     />
     <h3 id="local-css-variables">Local CSS variables<a class="anchor-link" href="#local-css-variables" aria-label="Link to Local CSS variables"></a></h3>
-    <p>
-      Use the <code>local-vars</code> option to specify a Sass map that will generate local CSS variables within the utility class’s ruleset. Please note that it may require
-      additional work to consume those local CSS variables in the generated CSS rules. For example, consider our <code>.bg-*</code> utilities:
-    </p>
+    <p>Use the <code>local-vars</code> option to specify a Sass map that will generate local CSS variables within the utility class’s ruleset. Please note that it may require additional work to consume those local CSS variables in the generated CSS rules. For example, consider our <code>.bg-*</code> utilities:</p>
     <CodeWrapper
       code='$utilities: (
   "background-color": (
@@ -324,8 +303,7 @@
     />
     <h3 id="states">States<a class="anchor-link" href="#states" aria-label="Link to States"></a></h3>
     <p>
-      Use the <code>state</code> option to generate pseudo-class variations. Example pseudo-classes are <code>:hover</code> and <code>:focus</code>. When a list of states are
-      provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add <code>state: hover</code> and you’ll get
+      Use the <code>state</code> option to generate pseudo-class variations. Example pseudo-classes are <code>:hover</code> and <code>:focus</code>. When a list of states are provided, classnames are created for that pseudo-class. For example, to change opacity on hover, add <code>state: hover</code> and you’ll get
       <code>.opacity-hover:hover</code> in your compiled CSS.
     </p>
     <p>Need multiple pseudo-classes? Use a space-separated list of states: <code>state: hover focus</code>.</p>
@@ -427,10 +405,7 @@
       lang="css"
     />
     <h3 id="print">Print<a class="anchor-link" href="#print" aria-label="Link to Print"></a></h3>
-    <p>
-      Enabling the <code>print</code> option will <strong>also</strong> generate utility classes for print, which are only applied within the
-      <code>@media print { ... }</code> media query.
-    </p>
+    <p>Enabling the <code>print</code> option will <strong>also</strong> generate utility classes for print, which are only applied within the <code>@media print { ... }</code> media query.</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (
@@ -467,10 +442,7 @@
       lang="css"
     />
     <h2 id="importance">Importance<a class="anchor-link" href="#importance" aria-label="Link to Importance"></a></h2>
-    <p>
-      All utilities generated by the API include <code>!important</code> to ensure they override components and modifier classes as intended. You can toggle this setting globally
-      with the <code>$enable-important-utilities</code> variable (defaults to <code>true</code>).
-    </p>
+    <p>All utilities generated by the API include <code>!important</code> to ensure they override components and modifier classes as intended. You can toggle this setting globally with the <code>$enable-important-utilities</code> variable (defaults to <code>true</code>).</p>
     <h2 id="using-the-api">Using the API<a class="anchor-link" href="#using-the-api" aria-label="Link to Using the API"></a></h2>
     <p>Now that you’re familiar with how the utilities API works, learn how to add your own custom classes and modify our default utilities.</p>
     <h3 id="override-utilities">Override utilities<a class="anchor-link" href="#override-utilities" aria-label="Link to Override utilities"></a></h3>
@@ -488,8 +460,7 @@
     />
     <h3 id="add-utilities">Add utilities<a class="anchor-link" href="#add-utilities" aria-label="Link to Add utilities"></a></h3>
     <p>
-      New utilities can be added to the default <code>$utilities</code> map with a <code>map-merge</code>. Make sure our required Sass files and <code>_utilities.scss</code> are
-      imported first, then use the <code>map-merge</code> to add your additional utilities. For example, here’s how to add a responsive <code>cursor</code> utility with three
+      New utilities can be added to the default <code>$utilities</code> map with a <code>map-merge</code>. Make sure our required Sass files and <code>_utilities.scss</code> are imported first, then use the <code>map-merge</code> to add your additional utilities. For example, here’s how to add a responsive <code>cursor</code> utility with three
       values.
     </p>
     <CodeWrapper
@@ -518,8 +489,7 @@ $utilities: map-merge(
     />
     <h3 id="modify-utilities">Modify utilities<a class="anchor-link" href="#modify-utilities" aria-label="Link to Modify utilities"></a></h3>
     <p>
-      Modify existing utilities in the default <code>$utilities</code> map with <code>map-get</code> and <code>map-merge</code> functions. In the example below, we’re adding an
-      additional value to the <code>width</code> utilities. Start with an initial <code>map-merge</code> and then specify which utility you want to modify. From there, fetch the
+      Modify existing utilities in the default <code>$utilities</code> map with <code>map-get</code> and <code>map-merge</code> functions. In the example below, we’re adding an additional value to the <code>width</code> utilities. Start with an initial <code>map-merge</code> and then specify which utility you want to modify. From there, fetch the
       nested <code>&quot;width&quot;</code> map with <code>map-get</code> to access and modify the utility’s options and values.
     </p>
     <CodeWrapper
@@ -550,10 +520,7 @@ $utilities: map-merge(
       lang="scss"
     />
     <h4 id="enable-responsive">Enable responsive</h4>
-    <p>
-      You can enable responsive classes for an existing set of utilities that are not currently responsive by default. For example, to make the <code>border</code> classes
-      responsive:
-    </p>
+    <p>You can enable responsive classes for an existing set of utilities that are not currently responsive by default. For example, to make the <code>border</code> classes responsive:</p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -609,10 +576,7 @@ $utilities: map-merge(
       lang="css"
     />
     <h4 id="rename-utilities">Rename utilities</h4>
-    <p>
-      Missing v4 utilities, or used to another naming convention? The utilities API can be used to override the resulting <code>class</code> of a given utility—for example, to
-      rename <code>.ms-*</code> utilities to oldish <code>.ml-*</code>:
-    </p>
+    <p>Missing v4 utilities, or used to another naming convention? The utilities API can be used to override the resulting <code>class</code> of a given utility—for example, to rename <code>.ms-*</code> utilities to oldish <code>.ml-*</code>:</p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -681,8 +645,7 @@ $utilities: map-merge(
     <h3 id="add-remove-modify">Add, remove, modify<a class="anchor-link" href="#add-remove-modify" aria-label="Link to Add, remove, modify"></a></h3>
     <p>
       You can add, remove, and modify many utilities all at once with the
-      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a>. Here’s how you can combine the previous examples into one larger
-      map.
+      <a href="https://sass-lang.com/documentation/modules/map/#merge"><code>map-merge()</code> Sass function</a>. Here’s how you can combine the previous examples into one larger map.
     </p>
     <CodeWrapper
       code='@import "bootstrap/scss/functions";
@@ -719,8 +682,7 @@ $utilities: map-merge(
     <h4 id="remove-utility-in-rtl">Remove utility in RTL</h4>
     <p>
       Some edge cases make
-      <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL styling difficult</a>, such as line breaks in Arabic. Thus utilities can be
-      dropped from RTL output by setting the <code>rtl</code> option to <code>false</code>:
+      <a href="https://rtlstyling.com/posts/rtl-styling#common-things-that-might-not-work-for-rtl">RTL styling difficult</a>, such as line breaks in Arabic. Thus utilities can be dropped from RTL output by setting the <code>rtl</code> option to <code>false</code>:
     </p>
     <CodeWrapper
       code='$utilities: (

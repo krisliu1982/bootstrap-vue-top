@@ -4,10 +4,7 @@
     <p>Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
-    <p>
-      There are multiple ways to customize Bootstrap. Your best path can depend on your project, the complexity of your build tools, the version of Bootstrap you’re using, browser
-      support, and more.
-    </p>
+    <p>There are multiple ways to customize Bootstrap. Your best path can depend on your project, the complexity of your build tools, the version of Bootstrap you’re using, browser support, and more.</p>
     <p>Our two preferred methods are:</p>
     <ol>
       <li>
@@ -25,18 +22,13 @@
     </p>
     <p>
       For those who want to use the distribution files, review the
-      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for the layout,
-      components, and behaviors you’d like to use.
+      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for the layout, components, and behaviors you’d like to use.
     </p>
-    <p>
-      As you familiarize yourself with Bootstrap, continue exploring this section for more details on how to utilize our global options, making use of and changing our color
-      system, how we build our components, how to use our growing list of CSS custom properties, and how to optimize your code when building with Bootstrap.
-    </p>
+    <p>As you familiarize yourself with Bootstrap, continue exploring this section for more details on how to utilize our global options, making use of and changing our color system, how we build our components, how to use our growing list of CSS custom properties, and how to optimize your code when building with Bootstrap.</p>
     <h2 id="csps-and-embedded-svgs">CSPs and embedded SVGs<a class="anchor-link" href="#csps-and-embedded-svgs" aria-label="Link to CSPs and embedded SVGs"></a></h2>
     <p>
       Several Bootstrap components include embedded SVGs in our CSS to style components consistently and easily across browsers and devices.
-      <strong>For organizations with more strict <abbr title="Content Security Policy">CSP</abbr> configurations</strong>, we’ve documented all instances of our embedded SVGs (all
-      of which are applied via <code>background-image</code>) so you can more thoroughly review your options.
+      <strong>For organizations with more strict <abbr title="Content Security Policy">CSP</abbr> configurations</strong>, we’ve documented all instances of our embedded SVGs (all of which are applied via <code>background-image</code>) so you can more thoroughly review your options.
     </p>
     <ul>
       <li><a href="/components/accordion">Accordion</a></li>
@@ -49,9 +41,8 @@
       <li><a href="/forms/select">Select menus</a></li>
     </ul>
     <p>
-      Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include
-      <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not possible in all
-      components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
+      Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not possible in all components), and
+      modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
     </p>
     <DocsPager />
   </article>

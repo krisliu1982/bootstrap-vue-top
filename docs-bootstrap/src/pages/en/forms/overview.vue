@@ -6,13 +6,9 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
       Bootstrap’s form controls expand on
-      <a href="/content/reboot#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across
-      browsers and devices.
+      <a href="/content/reboot#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
     </p>
-    <p>
-      Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., <code>email</code> for email address or <code>number</code> for numerical information) to take
-      advantage of newer input controls like email verification, number selection, and more.
-    </p>
+    <p>Be sure to use an appropriate <code>type</code> attribute on all inputs (e.g., <code>email</code> for email address or <code>number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
     <p>Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
     <Example
       code='<form>
@@ -36,14 +32,12 @@
     <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions and make it appear lighter.</p>
     <CodeWrapper code='&lt;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;' lang="html" />
     <p>
-      Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within. Browsers treat all native form controls
-      (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing
-      both keyboard and mouse interactions on them.
+      Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within. Browsers treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and
+      mouse interactions on them.
     </p>
     <p>
       However, if your form also includes custom button-like elements such as
-      <code>&lt;a class=&quot;btn btn-*&quot;&gt;...&lt;/a&gt;</code>, these will only be given a style of <code>pointer-events: none</code>, meaning they are still focusable and
-      operable using the keyboard. In this case, you must manually modify these controls by adding <code>tabindex=&quot;-1&quot;</code> to prevent them from receiving focus and
+      <code>&lt;a class=&quot;btn btn-*&quot;&gt;...&lt;/a&gt;</code>, these will only be given a style of <code>pointer-events: none</code>, meaning they are still focusable and operable using the keyboard. In this case, you must manually modify these controls by adding <code>tabindex=&quot;-1&quot;</code> to prevent them from receiving focus and
       <code>aria-disabled=&quot;disabled&quot;</code> to signal their state to assistive technologies.
     </p>
     <Example
@@ -74,39 +68,25 @@
     />
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
-      Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to users of assistive technologies. The simplest way to achieve this
-      is to use a <code>&lt;label&gt;</code> element, or—in the case of buttons—to include sufficiently descriptive text as part of the
+      Ensure that all form controls have an appropriate accessible name so that their purpose can be conveyed to users of assistive technologies. The simplest way to achieve this is to use a <code>&lt;label&gt;</code> element, or—in the case of buttons—to include sufficiently descriptive text as part of the
       <code>&lt;button&gt;...&lt;/button&gt;</code> content.
     </p>
-    <p>
-      For situations where it’s not possible to include a visible <code>&lt;label&gt;</code> or appropriate text content, there are alternative ways of still providing an
-      accessible name, such as:
-    </p>
+    <p>For situations where it’s not possible to include a visible <code>&lt;label&gt;</code> or appropriate text content, there are alternative ways of still providing an accessible name, such as:</p>
     <ul>
       <li><code>&lt;label&gt;</code> elements hidden using the <code>.visually-hidden</code> class</li>
       <li>Pointing to an existing element that can act as a label using <code>aria-labelledby</code></li>
       <li>Providing a <code>title</code> attribute</li>
       <li>Explicitly setting the accessible name on an element using <code>aria-label</code></li>
     </ul>
+    <p>If none of these are present, assistive technologies may resort to using the <code>placeholder</code> attribute as a fallback for the accessible name on <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> elements. The examples in this section provide a few suggested, case-specific approaches.</p>
     <p>
-      If none of these are present, assistive technologies may resort to using the <code>placeholder</code> attribute as a fallback for the accessible name on
-      <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> elements. The examples in this section provide a few suggested, case-specific approaches.
-    </p>
-    <p>
-      While using visually hidden content (<code>.visually-hidden</code>, <code>aria-label</code>, and even <code>placeholder</code> content, which disappears once a form field has
-      content) will benefit assistive technology users, a lack of visible label text may still be problematic for certain users. Some form of visible label is generally the best
-      approach, both for accessibility and usability.
+      While using visually hidden content (<code>.visually-hidden</code>, <code>aria-label</code>, and even <code>placeholder</code> content, which disappears once a form field has content) will benefit assistive technology users, a lack of visible label text may still be problematic for certain users. Some form of visible label is generally the
+      best approach, both for accessibility and usability.
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
-    <p>
-      Many form variables are set at a general level to be re-used and extended by individual form components. You’ll see these most often as <code>$input-btn-*</code> and
-      <code>$input-*</code> variables.
-    </p>
+    <p>Many form variables are set at a general level to be re-used and extended by individual form components. You’ll see these most often as <code>$input-btn-*</code> and <code>$input-*</code> variables.</p>
     <h3 id="sass-variables">Sass variables<a class="anchor-link" href="#sass-variables" aria-label="Link to Sass variables"></a></h3>
-    <p>
-      <code>$input-btn-*</code> variables are shared global variables between our <a href="/components/buttons">buttons</a> and our form components. You’ll find these frequently
-      reassigned as values to other component-specific variables.
-    </p>
+    <p><code>$input-btn-*</code> variables are shared global variables between our <a href="/components/buttons">buttons</a> and our form components. You’ll find these frequently reassigned as values to other component-specific variables.</p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>

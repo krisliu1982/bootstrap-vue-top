@@ -14,20 +14,14 @@
         For a more inclusive and accessible type scale, we use the browser’s default root
         <code>font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.
       </li>
-      <li>
-        Use the <code>$font-family-base</code>, <code>$font-size-base</code>, and <code>$line-height-base</code> attributes as our typographic base applied to the
-        <code>&lt;body&gt;</code>.
-      </li>
+      <li>Use the <code>$font-family-base</code>, <code>$font-size-base</code>, and <code>$line-height-base</code> attributes as our typographic base applied to the <code>&lt;body&gt;</code>.</li>
       <li>Set the global link color via <code>$link-color</code>.</li>
       <li>
         Use <code>$body-bg</code> to set a <code>background-color</code> on the <code>&lt;body&gt;</code> (<code>#fff</code>
         by default).
       </li>
     </ul>
-    <p>
-      These styles can be found within <code>_reboot.scss</code>, and the global variables are defined in <code>_variables.scss</code>. Make sure to set
-      <code>$font-size-base</code> in <code>rem</code>.
-    </p>
+    <p>These styles can be found within <code>_reboot.scss</code>, and the global variables are defined in <code>_variables.scss</code>. Make sure to set <code>$font-size-base</code> in <code>rem</code>.</p>
     <h2 id="headings">Headings<a class="anchor-link" href="#headings" aria-label="Link to Headings"></a></h2>
     <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
     <div class="table-responsive">
@@ -75,9 +69,7 @@
 &lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;"
       lang="html"
     />
-    <p>
-      <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
-    </p>
+    <p><code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
     <Example
       code='<p class="h1">h1. Bootstrap heading</p>
 <p class="h2">h2. Bootstrap heading</p>
@@ -117,9 +109,7 @@
 &lt;h1 class="display-6"&gt;Display 6&lt;/h1&gt;'
       lang="html"
     />
-    <p>
-      Display headings are configured via the <code>$display-font-sizes</code> Sass map and two variables, <code>$display-font-weight</code> and <code>$display-line-height</code>.
-    </p>
+    <p>Display headings are configured via the <code>$display-font-sizes</code> Sass map and two variables, <code>$display-font-weight</code> and <code>$display-line-height</code>.</p>
     <p>Display headings are customizable via two variables, <code>$display-font-family</code> and <code>$display-font-style</code>.</p>
     <ScssDocs name="display-headings" file="scss/_variables.scss" />
     <h2 id="lead">Lead<a class="anchor-link" href="#lead" aria-label="Link to Lead"></a></h2>
@@ -155,20 +145,14 @@
       <li><code>.text-decoration-underline</code> will apply the same styles as <code>&lt;u&gt;</code>.</li>
       <li><code>.text-decoration-line-through</code> will apply the same styles as <code>&lt;s&gt;</code>.</li>
     </ul>
-    <p>
-      While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without
-      conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.
-    </p>
+    <p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
     <h2 id="text-utilities">Text utilities<a class="anchor-link" href="#text-utilities" aria-label="Link to Text utilities"></a></h2>
     <p>
       Change text alignment, transform, style, weight, line-height, decoration and color with our
       <a href="/utilities/text">text utilities</a> and <a href="/utilities/colors">color utilities</a>.
     </p>
     <h2 id="abbreviations">Abbreviations<a class="anchor-link" href="#abbreviations" aria-label="Link to Abbreviations"></a></h2>
-    <p>
-      Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default
-      underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.
-    </p>
+    <p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
     <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
     <Example
       code='<p><abbr title="attribute">attr</abbr></p>
@@ -186,8 +170,7 @@
     />
     <h3 id="naming-a-source">Naming a source<a class="anchor-link" href="#naming-a-source" aria-label="Link to Naming a source"></a></h3>
     <p>
-      The HTML spec requires that blockquote attribution be placed outside the <code>&lt;blockquote&gt;</code>. When providing attribution, wrap your
-      <code>&lt;blockquote&gt;</code> in a <code>&lt;figure&gt;</code> and use a <code>&lt;figcaption&gt;</code> or a block level element (e.g., <code>&lt;p&gt;</code>) with the
+      The HTML spec requires that blockquote attribution be placed outside the <code>&lt;blockquote&gt;</code>. When providing attribution, wrap your <code>&lt;blockquote&gt;</code> in a <code>&lt;figure&gt;</code> and use a <code>&lt;figcaption&gt;</code> or a block level element (e.g., <code>&lt;p&gt;</code>) with the
       <code>.blockquote-footer</code> class. Be sure to wrap the name of the source work in <code>&lt;cite&gt;</code> as well.
     </p>
     <Example
@@ -223,10 +206,7 @@
     />
     <h2 id="lists">Lists<a class="anchor-link" href="#lists" aria-label="Link to Lists"></a></h2>
     <h3 id="unstyled">Unstyled<a class="anchor-link" href="#unstyled" aria-label="Link to Unstyled"></a></h3>
-    <p>
-      Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>,
-      meaning you will need to add the class for any nested lists as well.
-    </p>
+    <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
     <Example
       code='<ul class="list-unstyled">
   <li>This is a list.</li>
@@ -252,9 +232,7 @@
   <li class="list-inline-item">But they’re displayed inline.</li>
 </ul>'
     />
-    <h3 id="description-list-alignment">
-      Description list alignment<a class="anchor-link" href="#description-list-alignment" aria-label="Link to Description list alignment"></a>
-    </h3>
+    <h3 id="description-list-alignment">Description list alignment<a class="anchor-link" href="#description-list-alignment" aria-label="Link to Description list alignment"></a></h3>
     <p>
       Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a
       <code>.text-truncate</code> class to truncate the text with an ellipsis.

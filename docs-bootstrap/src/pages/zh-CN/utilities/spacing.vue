@@ -4,22 +4,13 @@
     <p>Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
 
     <h2 id="margin-and-padding">Margin and padding<a class="anchor-link" href="#margin-and-padding" aria-label="Link to Margin and padding"></a></h2>
-    <p>
-      Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual
-      properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.
-    </p>
+    <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.</p>
     <Callout>
       <p><strong>Using the CSS Grid layout module?</strong> Consider using <a href="#gap">the gap utility</a> instead.</p>
     </Callout>
     <h3 id="notation">Notation<a class="anchor-link" href="#notation" aria-label="Link to Notation"></a></h3>
-    <p>
-      Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied
-      from <code>min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
-    </p>
-    <p>
-      The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>,
-      <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.
-    </p>
+    <p>Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+    <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
     <p>Where <em>property</em> is one of:</p>
     <ul>
       <li><code>m</code> - for classes that set <code>margin</code></li>
@@ -29,12 +20,8 @@
     <ul>
       <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
       <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
-      <li>
-        <code>s</code> - (start) for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL
-      </li>
-      <li>
-        <code>e</code> - (end) for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL
-      </li>
+      <li><code>s</code> - (start) for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+      <li><code>e</code> - (end) for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
       <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
       <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
       <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
@@ -91,10 +78,7 @@
       lang="scss"
     />
     <h3 id="horizontal-centering">Horizontal centering<a class="anchor-link" href="#horizontal-centering" aria-label="Link to Horizontal centering"></a></h3>
-    <p>
-      Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has
-      <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.
-    </p>
+    <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
     <Example
       :showMarkup="false"
       code='<div class="mx-auto p-2" style="width: 200px; background-color: rgba(var(--bd-violet-rgb),.15); border: rgba(var(--bd-violet-rgb),.3) solid 1px;">
@@ -108,10 +92,7 @@
       lang="html"
     />
     <h2 id="negative-margin">Negative margin<a class="anchor-link" href="#negative-margin" aria-label="Link to Negative margin"></a></h2>
-    <p>
-      In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be
-      enabled in Sass by setting <code>$enable-negative-margins: true</code>.
-    </p>
+    <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting <code>$enable-negative-margins: true</code>.</p>
     <p>
       The syntax is nearly the same as the default, positive margin utilities, but with the addition of
       <code>n</code> before the requested size. Here’s an example class that’s the opposite of <code>.mt-1</code>:
@@ -125,8 +106,7 @@
     />
     <h2 id="gap">Gap<a class="anchor-link" href="#gap" aria-label="Link to Gap"></a></h2>
     <p>
-      When using <code>display: grid</code> or <code>display: flex</code>, you can make use of <code>gap</code> utilities on the parent element. This can save on having to add
-      margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the
+      When using <code>display: grid</code> or <code>display: flex</code>, you can make use of <code>gap</code> utilities on the parent element. This can save on having to add margin utilities to individual children of a grid or flex container. Gap utilities are responsive by default, and are generated via our utilities API, based on the
       <code>$spacers</code> Sass map.
     </p>
     <Example

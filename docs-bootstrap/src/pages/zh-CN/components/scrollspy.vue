@@ -5,8 +5,7 @@
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>
-      Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s
-      <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/components/navs-tabs">nav component</a> or
+      Scrollspy toggles the <code>.active</code> class on anchor (<code>&lt;a&gt;</code>) elements when the element with the <code>id</code> referenced by the anchor’s <code>href</code> is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap <a href="/components/navs-tabs">nav component</a> or
       <a href="/components/list-group">list group</a>, but it will also work with any anchor elements in the current page. Here’s how it works.
     </p>
     <ul>
@@ -18,16 +17,14 @@
       </li>
       <li>
         <p>
-          On the scrollable container, add <code>data-bs-spy=&quot;scroll&quot;</code> and <code>data-bs-target=&quot;#navId&quot;</code> where <code>navId</code> is the unique
-          <code>id</code> of the associated navigation. If there is no focusable element inside the element, be sure to also include a <code>tabindex=&quot;0&quot;</code> to ensure
+          On the scrollable container, add <code>data-bs-spy=&quot;scroll&quot;</code> and <code>data-bs-target=&quot;#navId&quot;</code> where <code>navId</code> is the unique <code>id</code> of the associated navigation. If there is no focusable element inside the element, be sure to also include a <code>tabindex=&quot;0&quot;</code> to ensure
           keyboard access.
         </p>
       </li>
       <li>
         <p>
-          As you scroll the “spied” container, an <code>.active</code> class is added and removed from anchor links within the associated navigation. Links must have resolvable
-          <code>id</code> targets, otherwise they’re ignored. For example, a <code>&lt;a href=&quot;#home&quot;&gt;home&lt;/a&gt;</code> must correspond to something in the DOM
-          like <code>&lt;div id=&quot;home&quot;&gt;&lt;/div&gt;</code>
+          As you scroll the “spied” container, an <code>.active</code> class is added and removed from anchor links within the associated navigation. Links must have resolvable <code>id</code> targets, otherwise they’re ignored. For example, a <code>&lt;a href=&quot;#home&quot;&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like
+          <code>&lt;div id=&quot;home&quot;&gt;&lt;/div&gt;</code>
         </p>
       </li>
       <li>
@@ -111,10 +108,7 @@
       lang="html"
     />
     <h3 id="nested-nav">Nested nav<a class="anchor-link" href="#nested-nav" aria-label="Link to Nested nav"></a></h3>
-    <p>
-      Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area
-      next to the navbar and watch the active class change.
-    </p>
+    <p>Scrollspy also works with nested <code>.nav</code>s. If a nested <code>.nav</code> is <code>.active</code>, its parents will also be <code>.active</code>. Scroll the area next to the navbar and watch the active class change.</p>
     <Example
       :showMarkup="false"
       code='<div class="row">
@@ -286,10 +280,7 @@
       lang="html"
     />
     <h3 id="simple-anchors">Simple anchors<a class="anchor-link" href="#simple-anchors" aria-label="Link to Simple anchors"></a></h3>
-    <p>
-      Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current articleEl. Scroll the area and watch
-      the <code>.active</code> class change.
-    </p>
+    <p>Scrollspy is not limited to nav components and list groups, so it will work on any <code>&lt;a&gt;</code> anchor elements in the current articleEl. Scroll the area and watch the <code>.active</code> class change.</p>
     <Example
       :showMarkup="false"
       code='<div class="row">
@@ -350,8 +341,7 @@
     <h2 id="non-visible-elements">Non-visible elements<a class="anchor-link" href="#non-visible-elements" aria-label="Link to Non-visible elements"></a></h2>
     <p>
       Target elements that aren’t visible will be ignored and their corresponding nav items won’t receive an
-      <code>.active</code> class. Scrollspy instances initialized in a non-visible wrapper will ignore all target elements. Use the <code>refresh</code> method to check for
-      observable elements once the wrapper becomes visible.
+      <code>.active</code> class. Scrollspy instances initialized in a non-visible wrapper will ignore all target elements. Use the <code>refresh</code> method to check for observable elements once the wrapper becomes visible.
     </p>
     <CodeWrapper
       code='document.querySelectorAll(&#39;#nav-tab&gt;[data-bs-toggle="tab"]&#39;).forEach(el =&gt; {
@@ -367,8 +357,7 @@
     <h2 id="usage">Usage<a class="anchor-link" href="#usage" aria-label="Link to Usage"></a></h2>
     <h3 id="via-data-attributes">Via data attributes<a class="anchor-link" href="#via-data-attributes" aria-label="Link to Via data attributes"></a></h3>
     <p>
-      To easily add scrollspy behavior to your topbar navigation, add <code>data-bs-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be
-      the <code>&lt;body&gt;</code>). Then add the <code>data-bs-target</code> attribute with the <code>id</code> or class name of the parent element of any Bootstrap
+      To easily add scrollspy behavior to your topbar navigation, add <code>data-bs-spy=&quot;scroll&quot;</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-bs-target</code> attribute with the <code>id</code> or class name of the parent element of any Bootstrap
       <code>.nav</code> component.
     </p>
     <CodeWrapper
@@ -441,10 +430,7 @@
     </div>
     <Callout type="warning">
       <p><strong>Deprecated Options</strong></p>
-      <p>
-        Up until v5.1.3 we were using <code>offset</code> &amp; <code>method</code> options, which are now deprecated and replaced by <code>rootMargin</code>. To keep backwards
-        compatibility, we will continue to parse a given <code>offset</code> to <code>rootMargin</code>, but this feature will be removed in <strong>v6</strong>.
-      </p>
+      <p>Up until v5.1.3 we were using <code>offset</code> &amp; <code>method</code> options, which are now deprecated and replaced by <code>rootMargin</code>. To keep backwards compatibility, we will continue to parse a given <code>offset</code> to <code>rootMargin</code>, but this feature will be removed in <strong>v6</strong>.</p>
     </Callout>
     <h3 id="methods">Methods<a class="anchor-link" href="#methods" aria-label="Link to Methods"></a></h3>
     <div class="table-responsive">

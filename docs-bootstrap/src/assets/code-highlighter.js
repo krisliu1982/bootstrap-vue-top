@@ -3,17 +3,7 @@ import { createJavaScriptRegexEngine } from 'shiki/engine/javascript';
 
 const highlighterPromise = createHighlighterCore({
   themes: [import('@shikijs/themes/light-plus'), import('@shikijs/themes/dark-plus')],
-  langs: [
-    import('@shikijs/langs/html'),
-    import('@shikijs/langs/javascript'),
-    import('@shikijs/langs/css'),
-    import('@shikijs/langs/scss'),
-    import('@shikijs/langs/sass'),
-    import('@shikijs/langs/json'),
-    import('@shikijs/langs/shell'),
-    import('@shikijs/langs/powershell'),
-    import('@shikijs/langs/diff')
-  ],
+  langs: [import('@shikijs/langs/html'), import('@shikijs/langs/javascript'), import('@shikijs/langs/css'), import('@shikijs/langs/scss'), import('@shikijs/langs/sass'), import('@shikijs/langs/json'), import('@shikijs/langs/shell'), import('@shikijs/langs/powershell'), import('@shikijs/langs/diff')],
   engine: createJavaScriptRegexEngine()
 });
 

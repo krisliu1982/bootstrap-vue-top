@@ -3,36 +3,20 @@
     <h1>Bootstrap and Webpack</h1>
     <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Webpack.</p>
 
-    <img
-      class="d-block mx-auto mb-4 img-fluid rounded-3"
-      srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x"
-      src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png"
-      width="100%"
-      alt=""
-    /><Callout>
+    <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the
-        <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples repository</a>. You can also
+        <strong>Want to skip to the end?</strong> Download the source code and working demo for this guide from the <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples repository</a>. You can also
         <a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">open the example in StackBlitz</a>
         for live editing.
       </p>
     </Callout>
     <h2 id="what-is-webpack">What is Webpack?<a class="anchor-link" href="#what-is-webpack" aria-label="Link to What is Webpack?"></a></h2>
-    <p>
-      <a href="https://webpack.js.org/">Webpack</a> is a JavaScript module bundler that processes modules and their dependencies to generate static assets. It simplifies managing
-      complex web applications with multiple files and dependencies.
-    </p>
+    <p><a href="https://webpack.js.org/">Webpack</a> is a JavaScript module bundler that processes modules and their dependencies to generate static assets. It simplifies managing complex web applications with multiple files and dependencies.</p>
     <h2 id="setup">Setup<a class="anchor-link" href="#setup" aria-label="Link to Setup"></a></h2>
-    <p>
-      We’re building a Webpack project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to
-      have Node.js installed and some familiarity with the terminal.
-    </p>
+    <p>We’re building a Webpack project with Bootstrap from scratch, so there are some prerequisites and upfront steps before we can really get started. This guide requires you to have Node.js installed and some familiarity with the terminal.</p>
     <ol>
       <li>
-        <p>
-          <strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid
-          it asking us all the interactive questions.
-        </p>
+        <p><strong>Create a project folder and set up npm.</strong> We&#39;ll create the <code>my-project</code> folder and initialize npm with the <code>-y</code> argument to avoid it asking us all the interactive questions.</p>
         <CodeWrapper
           code="mkdir my-project &amp;&amp; cd my-project
 npm init -y
@@ -42,10 +26,8 @@ npm init -y
       </li>
       <li>
         <p>
-          <strong>Install Webpack.</strong> Next we need to install our Webpack development dependencies: <code>webpack</code> for the core of Webpack, <code>webpack-cli</code> so
-          we can run Webpack commands from the terminal, and <code>webpack-dev-server</code> so we can run a local development server. Additionally, we&#39;ll install
-          <code>html-webpack-plugin</code> to be able to store our <code>index.html</code> in <code>src</code> directory instead of the default <code>dist</code> one. We use
-          <code>--save-dev</code> to signal that these dependencies are only for development use and not for production.
+          <strong>Install Webpack.</strong> Next we need to install our Webpack development dependencies: <code>webpack</code> for the core of Webpack, <code>webpack-cli</code> so we can run Webpack commands from the terminal, and <code>webpack-dev-server</code> so we can run a local development server. Additionally, we&#39;ll install
+          <code>html-webpack-plugin</code> to be able to store our <code>index.html</code> in <code>src</code> directory instead of the default <code>dist</code> one. We use <code>--save-dev</code> to signal that these dependencies are only for development use and not for production.
         </p>
         <CodeWrapper
           code="npm i --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin
@@ -54,10 +36,7 @@ npm init -y
         />
       </li>
       <li>
-        <p>
-          <strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their
-          positioning. If you don’t plan on using those components, you can omit Popper here.
-        </p>
+        <p><strong>Install Bootstrap.</strong> Now we can install Bootstrap. We&#39;ll also install Popper since our dropdowns, popovers, and tooltips depend on it for their positioning. If you don’t plan on using those components, you can omit Popper here.</p>
         <CodeWrapper
           code="npm i --save bootstrap @popperjs/core
 "
@@ -65,10 +44,7 @@ npm init -y
         />
       </li>
       <li>
-        <p>
-          <strong>Install additional dependencies.</strong> In addition to Webpack and Bootstrap, we need a few more dependencies to properly import and bundle Bootstrap’s CSS and
-          JS with Webpack. These include Sass, some loaders, and Autoprefixer.
-        </p>
+        <p><strong>Install additional dependencies.</strong> In addition to Webpack and Bootstrap, we need a few more dependencies to properly import and bundle Bootstrap’s CSS and JS with Webpack. These include Sass, some loaders, and Autoprefixer.</p>
         <CodeWrapper
           code="npm i --save-dev autoprefixer css-loader postcss-loader sass sass-loader style-loader
 "
@@ -78,10 +54,7 @@ npm init -y
     </ol>
     <p>Now that we have all the necessary dependencies installed, we can get to work creating the project files and importing Bootstrap.</p>
     <h2 id="project-structure">Project structure<a class="anchor-link" href="#project-structure" aria-label="Link to Project structure"></a></h2>
-    <p>
-      We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> and <code>dist</code> folders to round out the
-      project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.
-    </p>
+    <p>We’ve already created the <code>my-project</code> folder and initialized npm. Now we&#39;ll also create our <code>src</code> and <code>dist</code> folders to round out the project structure. Run the following from <code>my-project</code>, or manually create the folder and file structure shown below.</p>
     <CodeWrapper
       code="mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
@@ -112,8 +85,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
     <ol>
       <li>
         <p>
-          <strong>Open <code>webpack.config.js</code> in your editor.</strong> Since it’s blank, we&#39;ll need to add some boilerplate config to it so we can start our server.
-          This part of the config tells Webpack where to look for our project’s JavaScript, where to output the compiled code to (<code>dist</code>), and how the development server
+          <strong>Open <code>webpack.config.js</code> in your editor.</strong> Since it’s blank, we&#39;ll need to add some boilerplate config to it so we can start our server. This part of the config tells Webpack where to look for our project’s JavaScript, where to output the compiled code to (<code>dist</code>), and how the development server
           should behave (pulling from the <code>dist</code> folder with hot reload).
         </p>
         <CodeWrapper
@@ -144,8 +116,7 @@ module.exports = {
       </li>
       <li>
         <p>
-          <strong>Next we fill in our <code>src/index.html</code>.</strong> This is the HTML page Webpack will load in the browser to utilize the bundled CSS and JS we&#39;ll add
-          to it in later steps. Before we can do that, we have to give it something to render and include the <code>output</code> JS from the previous step.
+          <strong>Next we fill in our <code>src/index.html</code>.</strong> This is the HTML page Webpack will load in the browser to utilize the bundled CSS and JS we&#39;ll add to it in later steps. Before we can do that, we have to give it something to render and include the <code>output</code> JS from the previous step.
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
@@ -170,10 +141,7 @@ module.exports = {
         </p>
       </li>
       <li>
-        <p>
-          <strong>Now we need an npm script to run Webpack.</strong> Open <code>package.json</code> and add the <code>start</code> script shown below (you should already have the
-          test script). We&#39;ll use this script to start our local Webpack dev server. You can also add a <code>build</code> script shown below to build your project.
-        </p>
+        <p><strong>Now we need an npm script to run Webpack.</strong> Open <code>package.json</code> and add the <code>start</code> script shown below (you should already have the test script). We&#39;ll use this script to start our local Webpack dev server. You can also add a <code>build</code> script shown below to build your project.</p>
         <CodeWrapper
           code='{
   // ...
@@ -200,14 +168,11 @@ module.exports = {
     </ol>
     <p>In the next and final section to this guide, we&#39;ll set up the Webpack loaders and import all of Bootstrap’s CSS and JavaScript.</p>
     <h2 id="import-bootstrap">Import Bootstrap<a class="anchor-link" href="#import-bootstrap" aria-label="Link to Import Bootstrap"></a></h2>
-    <p>
-      Importing Bootstrap into Webpack requires the loaders we installed in the first section. We’ve installed them with npm, but now Webpack needs to be configured to use them.
-    </p>
+    <p>Importing Bootstrap into Webpack requires the loaders we installed in the first section. We’ve installed them with npm, but now Webpack needs to be configured to use them.</p>
     <ol>
       <li>
         <p>
-          <strong>Set up the loaders in <code>webpack.config.js</code>.</strong> Your configuration file is now complete and should match the snippet below. The only new part here
-          is the <code>module</code> section.
+          <strong>Set up the loaders in <code>webpack.config.js</code>.</strong> Your configuration file is now complete and should match the snippet below. The only new part here is the <code>module</code> section.
         </p>
         <CodeWrapper
           code="&#39;use strict&#39;
@@ -279,13 +244,11 @@ module.exports = {
           lang="javascript"
         />
         <p>
-          Here’s a recap of why we need all these loaders. <code>style-loader</code> injects the CSS into a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> of
-          the HTML page, <code>css-loader</code> helps with using <code>@import</code> and <code>url()</code>, <code>postcss-loader</code> is required for Autoprefixer, and
+          Here’s a recap of why we need all these loaders. <code>style-loader</code> injects the CSS into a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> of the HTML page, <code>css-loader</code> helps with using <code>@import</code> and <code>url()</code>, <code>postcss-loader</code> is required for Autoprefixer, and
           <code>sass-loader</code> allows us to use Sass.
         </p>
         <p>
-          <strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or
-          usage of Bootstrap. We’re <a href="https://github.com/twbs/bootstrap/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be
+          <strong>Note:</strong> Sass deprecation warnings are shown when compiling source Sass files with the latest versions of Dart Sass. This does not prevent compilation or usage of Bootstrap. We’re <a href="https://github.com/twbs/bootstrap/issues/40962">working on a long-term fix</a>, but in the meantime these deprecation notices can be
           ignored.
         </p>
       </li>
@@ -302,10 +265,7 @@ module.exports = {
         </p>
       </li>
       <li>
-        <p>
-          <strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s
-          JS. Popper will be imported automatically through Bootstrap.
-        </p>
+        <p><strong>Next we load the CSS and import Bootstrap’s JavaScript.</strong> Add the following to <code>src/js/main.js</code> to load the CSS and import all of Bootstrap’s JS. Popper will be imported automatically through Bootstrap.</p>
         <CodeWrapper
           code="// Import our custom CSS
 import &#39;../scss/styles.scss&#39;
@@ -340,15 +300,11 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     </ol>
     <h2 id="production-optimizations">Production optimizations<a class="anchor-link" href="#production-optimizations" aria-label="Link to Production optimizations"></a></h2>
     <p>
-      Depending on your setup, you may want to implement some additional security and speed optimizations useful for running the project in production. Note that these
-      optimizations are not applied on
+      Depending on your setup, you may want to implement some additional security and speed optimizations useful for running the project in production. Note that these optimizations are not applied on
       <a href="https://github.com/twbs/examples/tree/main/webpack">the Webpack example project</a> and are up to you to implement.
     </p>
     <h3 id="extracting-css">Extracting CSS<a class="anchor-link" href="#extracting-css" aria-label="Link to Extracting CSS"></a></h3>
-    <p>
-      The <code>style-loader</code> we configured above conveniently emits CSS into the bundle so that manually loading a CSS file in <code>dist/index.html</code> isn’t necessary.
-      This approach may not work with a strict Content Security Policy, however, and it may become a bottleneck in your application due to the large bundle size.
-    </p>
+    <p>The <code>style-loader</code> we configured above conveniently emits CSS into the bundle so that manually loading a CSS file in <code>dist/index.html</code> isn’t necessary. This approach may not work with a strict Content Security Policy, however, and it may become a bottleneck in your application due to the large bundle size.</p>
     <p>To separate the CSS so that we can load it directly from <code>dist/index.html</code>, use the <code>mini-css-extract-loader</code> Webpack plugin.</p>
     <p>First, install the plugin:</p>
     <CodeWrapper
@@ -392,9 +348,8 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
       lang="diff"
     />
     <p>
-      After running <code>npm run build</code> again, there will be a new file <code>dist/main.css</code>, which will contain all of the CSS imported by
-      <code>src/js/main.js</code>. If you view <code>dist/index.html</code> in your browser now, the style will be missing, as it is now in <code>dist/main.css</code>. You can
-      include the generated CSS in <code>dist/index.html</code> like this:
+      After running <code>npm run build</code> again, there will be a new file <code>dist/main.css</code>, which will contain all of the CSS imported by <code>src/js/main.js</code>. If you view <code>dist/index.html</code> in your browser now, the style will be missing, as it is now in <code>dist/main.css</code>. You can include the generated CSS
+      in <code>dist/index.html</code> like this:
     </p>
     <CodeWrapper
       code='--- a/dist/index.html
@@ -412,9 +367,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
     />
     <h3 id="extracting-svg-files">Extracting SVG files<a class="anchor-link" href="#extracting-svg-files" aria-label="Link to Extracting SVG files"></a></h3>
     <p>
-      Bootstrap’s CSS includes multiple references to SVG files via inline <code>data:</code> URIs. If you define a Content Security Policy for your project that blocks
-      <code>data:</code> URIs for images, then these SVG files will not load. You can get around this problem by extracting the inline SVG files using Webpack’s asset modules
-      feature.
+      Bootstrap’s CSS includes multiple references to SVG files via inline <code>data:</code> URIs. If you define a Content Security Policy for your project that blocks <code>data:</code> URIs for images, then these SVG files will not load. You can get around this problem by extracting the inline SVG files using Webpack’s asset modules feature.
     </p>
     <p>Configure Webpack to extract inline SVG files like this:</p>
     <CodeWrapper

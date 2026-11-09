@@ -4,15 +4,9 @@
     <p>Use loading placeholders (skeleton loaders) for your components or pages to indicate something may still be loading.</p>
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
-    <p>
-      Placeholders can be used to enhance the experience of your application. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will,
-      however, need some custom JavaScript to toggle their visibility. Their appearance, color, and sizing can be easily customized with our utility classes.
-    </p>
+    <p>Placeholders can be used to enhance the experience of your application. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, color, and sizing can be easily customized with our utility classes.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
-    <p>
-      In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the
-      two.
-    </p>
+    <p>In the example below, we take a typical card component and recreate it with placeholders applied to create a “loading card”. Size and proportions are the same between the two.</p>
     <div class="bd-code-snippet">
       <div class="bd-example border rounded-top bd-example-placeholder-cards d-flex justify-content-around">
         <div class="card">
@@ -72,14 +66,8 @@
     />
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
-    <p>
-      Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text
-      inside an element or be added as a modifier class to an existing component.
-    </p>
-    <p>
-      We apply additional styling to <code>.btn</code>s via <code>::before</code> to ensure the <code>height</code> is respected. You may extend this pattern for other situations
-      as needed, or add a <code>&amp;nbsp;</code> within the element to reflect the height when actual text is rendered in its place.
-    </p>
+    <p>Create placeholders with the <code>.placeholder</code> class and a grid column class (e.g., <code>.col-6</code>) to set the <code>width</code>. They can replace the text inside an element or be added as a modifier class to an existing component.</p>
+    <p>We apply additional styling to <code>.btn</code>s via <code>::before</code> to ensure the <code>height</code> is respected. You may extend this pattern for other situations as needed, or add a <code>&amp;nbsp;</code> within the element to reflect the height when actual text is rendered in its place.</p>
     <Example
       code='<p aria-hidden="true">
   <span class="placeholder col-6"></span>
@@ -89,8 +77,7 @@
     />
     <Callout>
       <p>
-        The use of <code>aria-hidden=&quot;true&quot;</code> only indicates that the element should be hidden to screen readers. The <em>loading</em> behavior of the placeholder
-        depends on how authors will actually use the placeholder styles, how they plan to update things, etc. Some JavaScript code may be needed to <em>swap</em> the state of the
+        The use of <code>aria-hidden=&quot;true&quot;</code> only indicates that the element should be hidden to screen readers. The <em>loading</em> behavior of the placeholder depends on how authors will actually use the placeholder styles, how they plan to update things, etc. Some JavaScript code may be needed to <em>swap</em> the state of the
         placeholder and inform AT users of the update.
       </p>
     </Callout>
@@ -113,10 +100,7 @@
       "
     />
     <h3 id="sizing">Sizing<a class="anchor-link" href="#sizing" aria-label="Link to Sizing"></a></h3>
-    <p>
-      The size of <code>.placeholder</code>s are based on the typographic style of the parent element. Customize them with sizing modifiers: <code>.placeholder-lg</code>,
-      <code>.placeholder-sm</code>, or <code>.placeholder-xs</code>.
-    </p>
+    <p>The size of <code>.placeholder</code>s are based on the typographic style of the parent element. Customize them with sizing modifiers: <code>.placeholder-lg</code>, <code>.placeholder-sm</code>, or <code>.placeholder-xs</code>.</p>
     <Example
       code='<span class="placeholder col-12 placeholder-lg"></span>
 <span class="placeholder col-12"></span>

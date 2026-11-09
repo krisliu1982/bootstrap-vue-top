@@ -4,10 +4,7 @@
     <p>Customize the native `&lt;select&gt;`s with custom CSS that changes the element’s initial appearance.</p>
 
     <h2 id="default">Default<a class="anchor-link" href="#default" aria-label="Link to Default"></a></h2>
-    <p>
-      Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the
-      <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.
-    </p>
+    <p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>’s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
     <Example
       code='<select class="form-select" aria-label="Default select example">
   <option selected>Open this select menu</option>

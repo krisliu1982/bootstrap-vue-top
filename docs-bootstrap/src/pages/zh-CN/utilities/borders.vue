@@ -27,10 +27,7 @@
     />
     <h2 id="color">Color<a class="anchor-link" href="#color" aria-label="Link to Color"></a></h2>
     <Callout>
-      <p>
-        Border utilities like <code>.border-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any
-        <code>.border-*-subtle</code> utility will. This will be resolved in v6.
-      </p>
+      <p>Border utilities like <code>.border-*</code> that generated from our original <code>$theme-colors</code> Sass map don’t yet respond to color modes, however, any <code>.border-*-subtle</code> utility will. This will be resolved in v6.</p>
     </Callout>
     <p>Change the border color using utilities built on our theme colors.</p>
     <Example
@@ -63,10 +60,7 @@
     />
     <h2 id="opacity">Opacity<a class="anchor-link" href="#opacity" aria-label="Link to Opacity"></a></h2>
     <AddedIn version="5.2.0" />
-    <p>
-      Bootstrap <code>border-{color}</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha
-      transparency changes.
-    </p>
+    <p>Bootstrap <code>border-{color}</code> utilities are generated with Sass using CSS variables. This allows for real-time color changes without compilation and dynamic alpha transparency changes.</p>
     <h3 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h3>
     <p>Consider our default <code>.border-success</code> utility.</p>
     <CodeWrapper
@@ -78,10 +72,8 @@
       lang="css"
     />
     <p>
-      We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable,
-      <code>--bs-border-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use
-      <code>.border-success</code> now, your computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.border-*</code> class
-      avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
+      We use an RGB version of our <code>--bs-success</code> (with the value of <code>25, 135, 84</code>) CSS variable and attached a second CSS variable, <code>--bs-border-opacity</code>, for the alpha transparency (with a default value <code>1</code> thanks to a local CSS variable). That means anytime you use <code>.border-success</code> now,
+      your computed <code>color</code> value is <code>rgba(25, 135, 84, 1)</code>. The local CSS variable inside each <code>.border-*</code> class avoids inheritance issues so nested instances of the utilities don’t automatically have a modified alpha transparency.
     </p>
     <h3 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h3>
     <p>To change that opacity, override <code>--bs-border-opacity</code> via custom styles or inline styles.</p>
@@ -122,10 +114,7 @@
       <Placeholder width="75" height="75" class="rounded-start" title="Example left rounded image"
     /></ExampleCustom>
     <h3 id="sizes">Sizes<a class="anchor-link" href="#sizes" aria-label="Link to Sizes"></a></h3>
-    <p>
-      Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>5</code> including <code>circle</code> and <code>pill</code>, and can
-      be configured by modifying the utilities API.
-    </p>
+    <p>Use the scaling classes for larger or smaller rounded corners. Sizes range from <code>0</code> to <code>5</code> including <code>circle</code> and <code>pill</code>, and can be configured by modifying the utilities API.</p>
     <ExampleCustom
       class="bd-example-rounded-utils"
       code='<img src="..." class="rounded-0" alt="...">

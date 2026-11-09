@@ -1,16 +1,12 @@
 <template>
   <article class="bd-content">
     <h1>Object fit</h1>
-    <p>
-      Use the object fit utilities to modify how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its
-      container.
-    </p>
+    <p>Use the object fit utilities to modify how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>
       Change the value of the
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> property</a> with our responsive <code>object-fit</code> utility classes. This
-      property tells the content to fill the parent container in a variety of ways, such as preserving the aspect ratio or stretching to take up as much space as possible.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> property</a> with our responsive <code>object-fit</code> utility classes. This property tells the content to fill the parent container in a variety of ways, such as preserving the aspect ratio or stretching to take up as much space as possible.
     </p>
     <p>Classes for the value of <code>object-fit</code> are named using the format <code>.object-fit-{value}</code>. Choose from the following values:</p>
     <ul>
@@ -36,10 +32,7 @@
       <Placeholder width="140" height="120" class="object-fit-none border rounded" text="Object fit none" markup="img"
     /></ExampleCustom>
     <h2 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h2>
-    <p>
-      Responsive variations also exist for each <code>object-fit</code> value using the format <code>.object-fit-{breakpoint}-{value}</code>, for the following breakpoint
-      abbreviations: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>. Classes can be combined for various effects as you need.
-    </p>
+    <p>Responsive variations also exist for each <code>object-fit</code> value using the format <code>.object-fit-{breakpoint}-{value}</code>, for the following breakpoint abbreviations: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>. Classes can be combined for various effects as you need.</p>
     <ExampleCustom
       class="d-flex overflow-auto"
       code='<img src="..." class="object-fit-sm-contain border rounded" alt="...">

@@ -4,16 +4,10 @@
     <p>Use these helpers for quickly configuring the position of an element.</p>
 
     <h2 id="fixed-top">Fixed top<a class="anchor-link" href="#fixed-top" aria-label="Link to Fixed top"></a></h2>
-    <p>
-      Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional
-      CSS.
-    </p>
+    <p>Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.</p>
     <CodeWrapper code='&lt;div class="fixed-top"&gt;...&lt;/div&gt;' lang="html" />
     <h2 id="fixed-bottom">Fixed bottom<a class="anchor-link" href="#fixed-bottom" aria-label="Link to Fixed bottom"></a></h2>
-    <p>
-      Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add
-      additional CSS.
-    </p>
+    <p>Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.</p>
     <CodeWrapper code='&lt;div class="fixed-bottom"&gt;...&lt;/div&gt;' lang="html" />
     <h2 id="sticky-top">Sticky top<a class="anchor-link" href="#sticky-top" aria-label="Link to Sticky top"></a></h2>
     <p>Position an element at the top of the viewport, from edge to edge, but only after you scroll past it.</p>

@@ -5,10 +5,7 @@
 
   <p>or on a button <strong>outside the {name}</strong> using the additional <code>data-bs-target</code> as demonstrated below:</p>
 
-  <CodeWrapper
-    :code="`<button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;${props.name}&quot; data-bs-target=&quot;#my-${props.name}&quot; aria-label=&quot;Close&quot;></button>`"
-    lang="html"
-  />
+  <CodeWrapper :code="`<button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;${props.name}&quot; data-bs-target=&quot;#my-${props.name}&quot; aria-label=&quot;Close&quot;></button>`" lang="html" />
 </template>
 
 <script setup>

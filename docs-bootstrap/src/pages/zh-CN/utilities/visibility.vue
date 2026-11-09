@@ -3,10 +3,7 @@
     <h1>Visibility</h1>
     <p>Control the visibility of elements, without modifying their display, with visibility utilities.</p>
 
-    <p>
-      Set the <code>visibility</code> of elements with our visibility utilities. These utility classes do not modify the <code>display</code> value at all and do not affect layout
-      – <code>.invisible</code> elements still take up space in the page.
-    </p>
+    <p>Set the <code>visibility</code> of elements with our visibility utilities. These utility classes do not modify the <code>display</code> value at all and do not affect layout – <code>.invisible</code> elements still take up space in the page.</p>
     <Callout type="warning">
       <p>Elements with the <code>.invisible</code> class will be hidden <em>both</em> visually and for assistive technology/screen reader users.</p>
     </Callout>

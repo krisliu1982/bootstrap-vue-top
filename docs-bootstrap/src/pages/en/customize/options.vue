@@ -62,8 +62,7 @@
             <td><code>true</code> (default) or <code>false</code></td>
             <td>
               Enables the
-              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain animations/transitions based on
-              the users’ browser/operating system preferences.
+              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> media query</a>, which suppresses certain animations/transitions based on the users’ browser/operating system preferences.
             </td>
           </tr>
           <tr>

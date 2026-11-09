@@ -30,10 +30,8 @@
     <h2 id="dividers">Dividers<a class="anchor-link" href="#dividers" aria-label="Link to Dividers"></a></h2>
     <p>
       Dividers are automatically added in CSS through
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a
-      >. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and
-      <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code>::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code>content</code></a
+      >. They can be changed by modifying a local CSS custom property <code>--bs-breadcrumb-divider</code>, or through the <code>$breadcrumb-divider</code> Sass variable — and <code>$breadcrumb-divider-flipped</code> for its RTL counterpart, if needed. We default to our Sass variable, which is set as a fallback to the custom property. This way, you
       get a global divider that you can override without recompiling CSS at any time.
     </p>
     <Example
@@ -46,17 +44,14 @@
     />
     <p>
       When modifying via Sass, the
-      <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using
-      <code>&gt;</code> as the divider, you can use this:
+      <a href="https://sass-lang.com/documentation/modules/string/#quote">quote</a> function is required to generate the quotes around a string. For example, using <code>&gt;</code> as the divider, you can use this:
     </p>
     <CodeWrapper code='$breadcrumb-divider: quote("&gt;");' lang="scss" />
     <p>It’s also possible to use an <strong>embedded SVG icon</strong>. Apply it via our CSS custom property, or use the Sass variable.</p>
     <Callout>
       <p>
-        <strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be
-        URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our
-        <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read
-        <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.
+        <strong>Inlined SVG requires properly escaped characters.</strong> Some reserved characters, such as <code>&lt;</code>, <code>&gt;</code> and <code>#</code>, must be URL-encoded or escaped. We do this with the <code>$breadcrumb-divider</code> variable using our
+        <a href="/customize/sass#escape-svg"><code>escape-svg()</code> Sass function</a>. When customizing the CSS variable, you must handle this yourself. Read <a href="https://codepen.io/kevinweber/pen/dXWoRw">Kevin Weber’s explanations on CodePen</a> for more info.
       </p> </Callout
     ><Example
       code='<nav style="--bs-breadcrumb-divider: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="%236c757d"/%3E%3C/svg%3E&#39;);" aria-label="breadcrumb">
@@ -71,10 +66,7 @@
 '
       lang="scss"
     />
-    <p>
-      You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass
-      variable to <code>$breadcrumb-divider: none;</code>.
-    </p>
+    <p>You can also remove the divider setting <code>--bs-breadcrumb-divider: &#39;&#39;;</code> (empty strings in CSS custom properties counts as a value), or setting the Sass variable to <code>$breadcrumb-divider: none;</code>.</p>
     <Example
       code='<nav style="--bs-breadcrumb-divider: &#39;&#39;;" aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -91,8 +83,7 @@
     <h2 id="accessibility">Accessibility<a class="anchor-link" href="#accessibility" aria-label="Link to Accessibility"></a></h2>
     <p>
       Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as
-      <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an
-      <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.
+      <code>aria-label=&quot;breadcrumb&quot;</code> to describe the type of navigation provided in the <code>&lt;nav&gt;</code> element, as well as applying an <code>aria-current=&quot;page&quot;</code> to the last item of the set to indicate that it represents the current page.
     </p>
     <p>
       For more information, see the

@@ -5,14 +5,12 @@
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
-      We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list
-      HTML elements so screen readers can announce the number of available links. Use a wrapping <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen
-      readers and other assistive technologies.
+      We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping
+      <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.
     </p>
     <p>
       In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive
-      <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results,
-      an appropriate label could be <code>aria-label=&quot;Search results pages&quot;</code>.
+      <code>aria-label</code> for the <code>&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label=&quot;Search results pages&quot;</code>.
     </p>
     <Example
       code='<nav aria-label="Page navigation example">
@@ -47,10 +45,7 @@
 </nav>'
     />
     <h2 id="active">Active<a class="anchor-link" href="#active" aria-label="Link to Active"></a></h2>
-    <p>
-      Add <code>.active</code> to indicate a <code>.page-item</code> is the one currently being viewed. If using an <code>&lt;a&gt;</code> on the current page,
-      <code>aria-current=&quot;page&quot;</code> should be added for assistive technologies.
-    </p>
+    <p>Add <code>.active</code> to indicate a <code>.page-item</code> is the one currently being viewed. If using an <code>&lt;a&gt;</code> on the current page, <code>aria-current=&quot;page&quot;</code> should be added for assistive technologies.</p>
     <Example
       code='<nav aria-label="...">
   <ul class="pagination">
@@ -73,8 +68,7 @@
     />
     <h2 id="disabled">Disabled<a class="anchor-link" href="#disabled" aria-label="Link to Disabled"></a></h2>
     <p>
-      Add <code>.disabled</code> to a <code>.page-item</code> to make it appear un-clickable. While <code>.disabled</code> uses <code>pointer-events: none</code> to disable the
-      link‘s interactivity, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add
+      Add <code>.disabled</code> to a <code>.page-item</code> to make it appear un-clickable. While <code>.disabled</code> uses <code>pointer-events: none</code> to disable the link‘s interactivity, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add
       <code>tabindex=&quot;-1&quot;</code> on disabled links and use custom JavaScript to fully disable their functionality.
     </p>
     <Example
@@ -94,10 +88,7 @@
   </ul>
 </nav>'
     />
-    <p>
-      And just like active page items, you can swap out the disabled <code>&lt;a&gt;</code> for a <code>&lt;span&gt;</code> to remove click functionality and prevent keyboard focus
-      while retaining intended styles.
-    </p>
+    <p>And just like active page items, you can swap out the disabled <code>&lt;a&gt;</code> for a <code>&lt;span&gt;</code> to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
     <CodeWrapper
       code='&lt;li class="page-item disabled"&gt;
   &lt;span class="page-link"&gt;Previous&lt;/span&gt;

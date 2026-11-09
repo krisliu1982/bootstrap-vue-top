@@ -6,8 +6,7 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
       These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code>float</code> property</a>. <code>!important</code> is included to avoid specificity issues. These
-      use the same viewport breakpoints as our grid system. Please be aware float utilities have no effect on flex items.
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code>float</code> property</a>. <code>!important</code> is included to avoid specificity issues. These use the same viewport breakpoints as our grid system. Please be aware float utilities have no effect on flex items.
     </p>
     <Example
       code='<div class="float-start">Float start on all viewport sizes</div><br>
