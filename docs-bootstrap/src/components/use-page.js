@@ -1,6 +1,13 @@
 import { onMounted, onBeforeUnmount } from 'vue';
+import { useHead } from '@unhead/vue'
 
 export function usePage() {
+
+  useHead({
+    htmlAttrs: {
+      lang: 'zh-CN'
+    }
+  })
   onMounted(() => {
     const articleEl = document.querySelector('article.bd-content');
     const tocEl = document.querySelector('nav.bd-toc');
