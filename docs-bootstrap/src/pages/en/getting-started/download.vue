@@ -27,8 +27,8 @@
     </ul>
     <p>
       Should you require our full set of
-      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable
-      for your own purposes.
+      <a href="/getting-started/contribute#tooling-setup">build tools</a>, they are included for developing Bootstrap and its docs, but they’re likely unsuitable for your own
+      purposes.
     </p>
     <p>
       <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">Download source</a>
@@ -79,9 +79,7 @@
     <h2 id="package-managers">Package managers<a class="anchor-link" href="#package-managers" aria-label="Link to Package managers"></a></h2>
     <p>
       Pull in Bootstrap’s <strong>source files</strong> into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will
-      <strong
-        >require a <a href="/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong
-      >
+      <strong>require a <a href="/getting-started/contribute#sass">Sass compiler</a> and <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></strong>
       for a setup that matches our official compiled versions.
     </p>
     <h3 id="npm">npm<a class="anchor-link" href="#npm" aria-label="Link to npm"></a></h3>

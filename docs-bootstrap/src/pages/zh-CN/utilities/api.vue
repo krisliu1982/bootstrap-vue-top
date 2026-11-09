@@ -358,10 +358,7 @@
       lang="css"
     />
     <h3 id="responsive">Responsive<a class="anchor-link" href="#responsive" aria-label="Link to Responsive"></a></h3>
-    <p>
-      Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across
-      <a href="/layout/breakpoints">all breakpoints</a>.
-    </p>
+    <p>Add the <code>responsive</code> boolean to generate responsive utilities (e.g., <code>.opacity-md-25</code>) across <a href="/layout/breakpoints">all breakpoints</a>.</p>
     <CodeWrapper
       code='$utilities: (
   "opacity": (

@@ -107,8 +107,7 @@
     />
     <h2 id="row-columns-gutters">Row columns gutters<a class="anchor-link" href="#row-columns-gutters" aria-label="Link to Row columns gutters"></a></h2>
     <p>
-      Gutter classes can also be added to <a href="/layout/grid#row-columns">row columns</a>. In the following example, we use responsive row columns and
-      responsive gutter classes.
+      Gutter classes can also be added to <a href="/layout/grid#row-columns">row columns</a>. In the following example, we use responsive row columns and responsive gutter classes.
     </p>
     <Example
       class="bd-example-cols"

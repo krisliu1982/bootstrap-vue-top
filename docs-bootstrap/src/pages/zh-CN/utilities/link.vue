@@ -61,8 +61,8 @@
     />
     <h2 id="colored-links">Colored links<a class="anchor-link" href="#colored-links" aria-label="Link to Colored links"></a></h2>
     <p>
-      <a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link
-      opacity, underline opacity, and underline offset.
+      <a href="/helpers/colored-links/">Colored link helpers</a> have been updated to pair with our link utilities. Use the new utilities to modify the link opacity, underline
+      opacity, and underline offset.
     </p>
     <Example
       :code="

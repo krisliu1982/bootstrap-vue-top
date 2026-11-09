@@ -12,8 +12,7 @@
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>
       Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment
-      and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as
-      needed.
+      and mix well with other Bootstrap components. They have no <code>margin</code> by default, so use <a href="/utilities/spacing">spacing utilities</a> as needed.
     </p>
     <p>
       Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element.
@@ -478,8 +477,8 @@
     <Callout name="warning-color-assistive-technologies" />
     <h3 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h3>
     <p>
-      Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put
-      <code>.text-{color}</code> classes on the parent <code>.card</code> or a subset of the card’s contents as shown below.
+      Use <a href="/utilities/borders">border utilities</a> to change just the <code>border-color</code> of a card. Note that you can put <code>.text-{color}</code> classes on the
+      parent <code>.card</code> or a subset of the card’s contents as shown below.
     </p>
     <Example
       :code="
@@ -651,9 +650,9 @@
     <h3 id="grid-cards">Grid cards<a class="anchor-link" href="#grid-cards" aria-label="Link to Grid cards"></a></h3>
     <p>
       Use the Bootstrap grid system and its
-      <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For
-      example, here’s <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from
-      the medium breakpoint up.
+      <a href="/layout/grid#row-columns"><code>.row-cols</code> classes</a> to control how many grid columns (wrapped around your cards) you show per row. For example, here’s
+      <code>.row-cols-1</code> laying out the cards on one column, and <code>.row-cols-md-2</code> splitting four cards to equal width across multiple rows, from the medium
+      breakpoint up.
     </p>
     <ExampleCustom
       code='<div class="row row-cols-1 row-cols-md-2 g-4">

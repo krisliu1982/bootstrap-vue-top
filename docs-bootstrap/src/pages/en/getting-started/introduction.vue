@@ -211,8 +211,8 @@
     <h3 id="reboot">Reboot<a class="anchor-link" href="#reboot" aria-label="Link to Reboot"></a></h3>
 
     <p>
-      For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing
-      slightly more opinionated resets to common HTML elements.
+      For improved cross-browser rendering, we use <a href="/content/reboot">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more
+      opinionated resets to common HTML elements.
     </p>
 
     <h2 id="community">Community<a class="anchor-link" href="#community" aria-label="Link to Community"></a></h2>

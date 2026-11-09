@@ -49,8 +49,8 @@
 </div>'
     />
     <p>
-      Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with
-      <a href="/utilities/colors">text color utilities</a>. Here it is in blue, along with the supported variants.
+      Once again, this spinner is built with <code>currentColor</code>, so you can easily change its appearance with <a href="/utilities/colors">text color utilities</a>. Here it
+      is in blue, along with the supported variants.
     </p>
     <Example
       :code="
@@ -77,8 +77,8 @@
     />
     <h3 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h3>
     <p>
-      Use <a href="/utilities/flex">flexbox utilities</a>, <a href="/utilities/float">float utilities</a>, or
-      <a href="/utilities/text">text alignment</a> utilities to place spinners exactly where you need them in any situation.
+      Use <a href="/utilities/flex">flexbox utilities</a>, <a href="/utilities/float">float utilities</a>, or <a href="/utilities/text">text alignment</a> utilities to place
+      spinners exactly where you need them in any situation.
     </p>
     <h4 id="flex">Flex</h4>
     <Example

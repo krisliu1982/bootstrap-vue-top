@@ -24,9 +24,8 @@
     </p>
     <h2 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h2>
     <p>
-      <a href="/utilities/spacing">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls,
-      optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for
-      consistency.
+      <a href="/utilities/spacing">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and
+      form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.
     </p>
     <p>Feel free to build your forms however you like, with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
     <Example
@@ -299,9 +298,9 @@
     />
     <h2 id="inline-forms">Inline forms<a class="anchor-link" href="#inline-forms" aria-label="Link to Inline forms"></a></h2>
     <p>
-      Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/layout/gutters">gutter modifier classes</a>,
-      we&#39;ll have gutters in horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The
-      <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-check</code> align properly.
+      Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts. By adding <a href="/layout/gutters">gutter modifier classes</a>, we&#39;ll have gutters in
+      horizontal and vertical directions. On narrow mobile viewports, the <code>.col-12</code> helps stack the form controls and more. The <code>.align-items-center</code> aligns
+      the form elements to the middle, making the <code>.form-check</code> align properly.
     </p>
     <Example
       code='<form class="row row-cols-lg-auto g-3 align-items-center">

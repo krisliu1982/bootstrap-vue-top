@@ -6,8 +6,8 @@
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>
       Color and background helpers combine the power of our
-      <a href="/utilities/colors"><code>.text-*</code> utilities</a> and <a href="/utilities/background"><code>.bg-*</code> utilities</a> in
-      one class. Using our Sass <code>color-contrast()</code> function, we automatically determine a contrasting <code>color</code> for a particular <code>background-color</code>.
+      <a href="/utilities/colors"><code>.text-*</code> utilities</a> and <a href="/utilities/background"><code>.bg-*</code> utilities</a> in one class. Using our Sass
+      <code>color-contrast()</code> function, we automatically determine a contrasting <code>color</code> for a particular <code>background-color</code>.
     </p>
     <Callout type="warning">
       <p>

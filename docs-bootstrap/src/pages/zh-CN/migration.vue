@@ -12,9 +12,7 @@
     <p>If you’re migrating from our previous alpha releases of v5.3.0, please review their changes in addition to this section.</p>
     <h3 id="helpers">Helpers<a class="anchor-link" href="#helpers" aria-label="Link to Helpers"></a></h3>
     <ul>
-      <li>
-        <a href="/helpers/colored-links">Colored links</a> once again have <code>!important</code> so they work better with our newly added link utilities.
-      </li>
+      <li><a href="/helpers/colored-links">Colored links</a> once again have <code>!important</code> so they work better with our newly added link utilities.</li>
     </ul>
     <h3 id="utilities">Utilities<a class="anchor-link" href="#utilities" aria-label="Link to Utilities"></a></h3>
     <ul>
@@ -101,8 +99,8 @@
       </li>
       <li>
         <p>
-          Added new <code>.link-body-emphasis</code> helper alongside our <a href="/helpers/colored-links">colored links</a>. This creates a colored link using
-          our color mode responsive emphasis color.
+          Added new <code>.link-body-emphasis</code> helper alongside our <a href="/helpers/colored-links">colored links</a>. This creates a colored link using our color mode
+          responsive emphasis color.
         </p>
       </li>
       <li>
@@ -310,8 +308,8 @@ index 8f8296def..449d70487 100644
       lang="html"
     />
     <p>
-      We’ve also introduced a new <code>.progress-stacked</code> class to more logically wrap
-      <a href="/components/progress#multiple-bars">multiple progress bars</a> into a single stacked progress bar.
+      We’ve also introduced a new <code>.progress-stacked</code> class to more logically wrap <a href="/components/progress#multiple-bars">multiple progress bars</a> into a single
+      stacked progress bar.
     </p>
     <CodeWrapper
       code='&lt;!-- Previous markup --&gt;
@@ -386,8 +384,8 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          <a href="/utilities/shadows">Box shadow utilities</a> (and Sass variables) have been updated for dark mode. They now use
-          <code>--bs-body-color-rgb</code> to generate the <code>rgba()</code> color values, allowing them to easily adapt to color modes based on the specified foreground color.
+          <a href="/utilities/shadows">Box shadow utilities</a> (and Sass variables) have been updated for dark mode. They now use <code>--bs-body-color-rgb</code> to generate the
+          <code>rgba()</code> color values, allowing them to easily adapt to color modes based on the specified foreground color.
         </p>
       </li>
     </ul>
@@ -474,8 +472,8 @@ index 8f8296def..449d70487 100644
         <a href="/utilities/text#font-weight-and-italics"><code>font-weight</code> utilities</a> to include <code>.fw-semibold</code> for semibold fonts.
       </li>
       <li>
-        Expanded <a href="/utilities/borders#sizes"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and
-        <code>.rounded-5</code>, for more options.
+        Expanded <a href="/utilities/borders#sizes"><code>border-radius</code> utilities</a> to include two new sizes, <code>.rounded-4</code> and <code>.rounded-5</code>, for more
+        options.
       </li>
     </ul>
     <h3 id="additional-changes">Additional changes<a class="anchor-link" href="#additional-changes" aria-label="Link to Additional changes"></a></h3>
@@ -543,8 +541,8 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          <strong>Updated navbars to support offcanvas. —</strong> Add <a href="/components/navbar#offcanvas">offcanvas drawers in any navbar</a> with the
-          responsive <code>.navbar-expand-*</code> classes and some offcanvas markup.
+          <strong>Updated navbars to support offcanvas. —</strong> Add <a href="/components/navbar#offcanvas">offcanvas drawers in any navbar</a> with the responsive
+          <code>.navbar-expand-*</code> classes and some offcanvas markup.
         </p>
       </li>
       <li>
@@ -563,8 +561,8 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <strong>Added new stack and vertical rule helpers. —</strong> Quickly apply multiple flexbox properties to quickly create custom layouts with
-          <a href="/helpers/stacks/">stacks</a>. Choose from horizontal (<code>.hstack</code>) and vertical (<code>.vstack</code>) stacks. Add vertical dividers
-          similar to <code>&lt;hr&gt;</code> elements with the <a href="/helpers/vertical-rule/">new <code>.vr</code> helpers</a>.
+          <a href="/helpers/stacks/">stacks</a>. Choose from horizontal (<code>.hstack</code>) and vertical (<code>.vstack</code>) stacks. Add vertical dividers similar to
+          <code>&lt;hr&gt;</code> elements with the <a href="/helpers/vertical-rule/">new <code>.vr</code> helpers</a>.
         </p>
       </li>
       <li>
@@ -630,9 +628,8 @@ index 8f8296def..449d70487 100644
       <li>Redesigned homepage, docs layout, and footer.</li>
       <li>Added <a href="/getting-started/parcel">new Parcel guide</a>.</li>
       <li>
-        Added <a href="/customize/overview/">new Customize section</a>, replacing
-        <a href="https://getbootstrap.com/docs/4.6/getting-started/theming/">v4’s Theming page</a>, with new details on Sass, global configuration options, color schemes, CSS
-        variables, and more.
+        Added <a href="/customize/overview/">new Customize section</a>, replacing <a href="https://getbootstrap.com/docs/4.6/getting-started/theming/">v4’s Theming page</a>, with
+        new details on Sass, global configuration options, color schemes, CSS variables, and more.
       </li>
       <li>Reorganized all form documentation into <a href="/forms/overview/">new Forms section</a>, breaking apart the content into more focused pages.</li>
       <li>Similarly, updated <a href="/layout/breakpoints">the Layout section</a>, to flesh out grid content more clearly.</li>
@@ -776,8 +773,8 @@ index 8f8296def..449d70487 100644
         </p>
         <ul>
           <li>
-            Added new <a href="/layout/gutters">gutter class</a> (<code>.g-*</code>, <code>.gx-*</code>, and <code>.gy-*</code>) to control horizontal/vertical
-            gutters, horizontal gutters, and vertical gutters.
+            Added new <a href="/layout/gutters">gutter class</a> (<code>.g-*</code>, <code>.gx-*</code>, and <code>.gy-*</code>) to control horizontal/vertical gutters, horizontal
+            gutters, and vertical gutters.
           </li>
           <li><span class="badge text-bg-danger">Breaking</span> Renamed <code>.no-gutters</code> to <code>.g-0</code> to match new gutter utilities.</li>
         </ul>
@@ -794,8 +791,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">Breaking</span> Dropped the <code>.media</code> component as it can be easily replicated with utilities.
-          <a href="https://github.com/twbs/bootstrap/pull/28265">See #28265</a> and the
-          <a href="/utilities/flex#media-object">flex utilities page for an example</a>.
+          <a href="https://github.com/twbs/bootstrap/pull/28265">See #28265</a> and the <a href="/utilities/flex#media-object">flex utilities page for an example</a>.
         </p>
       </li>
       <li>
@@ -818,8 +814,8 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>
         <p>
-          <strong><a href="/getting-started/rfs">RFS</a> is now enabled by default.</strong> Headings using the <code>font-size()</code> mixin will automatically
-          adjust their <code>font-size</code> to scale with the viewport. <em>This feature was previously opt-in with v4.</em>
+          <strong><a href="/getting-started/rfs">RFS</a> is now enabled by default.</strong> Headings using the <code>font-size()</code> mixin will automatically adjust their
+          <code>font-size</code> to scale with the viewport. <em>This feature was previously opt-in with v4.</em>
         </p>
       </li>
       <li>
@@ -1025,10 +1021,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">Breaking</span>
-          <strong
-            ><a href="/forms/checks-radios#toggle-buttons">Toggle buttons</a>, with checkboxes or radios, no longer require JavaScript and have new
-            markup.</strong
-          >
+          <strong><a href="/forms/checks-radios#toggle-buttons">Toggle buttons</a>, with checkboxes or radios, no longer require JavaScript and have new markup.</strong>
           We no longer require a wrapping element, add <code>.btn-check</code> to the <code>&lt;input&gt;</code>, and pair it with any <code>.btn</code> classes on the
           <code>&lt;label&gt;</code>. <a href="https://github.com/twbs/bootstrap/pull/30650">See #30650</a>.
           <em>The docs for this has moved from our Buttons page to the new Forms section.</em>
@@ -1066,8 +1059,7 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          <span class="badge text-bg-danger">Breaking</span> Replaced the <code>.card</code> based accordion with a
-          <a href="/components/accordion">new Accordion component</a>.
+          <span class="badge text-bg-danger">Breaking</span> Replaced the <code>.card</code> based accordion with a <a href="/components/accordion">new Accordion component</a>.
         </p>
       </li>
     </ul>
@@ -1076,8 +1068,7 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           Added new
-          <a href="/components/carousel#dark-variant"><code>.carousel-dark</code> variant</a> for dark text, controls, and indicators (great for lighter
-          backgrounds).
+          <a href="/components/carousel#dark-variant"><code>.carousel-dark</code> variant</a> for dark text, controls, and indicators (great for lighter backgrounds).
         </p>
       </li>
       <li>
@@ -1137,9 +1128,8 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          Dropdown menus can now be clickable with a new <code>autoClose</code> option to handle the
-          <a href="/components/dropdowns#auto-close-behavior">auto close behavior</a>. You can use this option to accept the click inside or outside the dropdown
-          menu to make it interactive.
+          Dropdown menus can now be clickable with a new <code>autoClose</code> option to handle the <a href="/components/dropdowns#auto-close-behavior">auto close behavior</a>.
+          You can use this option to accept the click inside or outside the dropdown menu to make it interactive.
         </p>
       </li>
       <li>
@@ -1255,8 +1245,8 @@ index 8f8296def..449d70487 100644
       </li>
       <li>
         <p>
-          Added new <a href="/utilities/position#arrange-elements">position utilities</a> for <code>top</code>, <code>right</code>, <code>bottom</code>, and
-          <code>left</code>. Values include <code>0</code>, <code>50%</code>, and <code>100%</code> for each property.
+          Added new <a href="/utilities/position#arrange-elements">position utilities</a> for <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.
+          Values include <code>0</code>, <code>50%</code>, and <code>100%</code> for each property.
         </p>
       </li>
       <li>

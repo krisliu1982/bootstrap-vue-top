@@ -14,8 +14,8 @@
       reflected in these loops.
     </p>
     <p>
-      Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to customize these loops and extend Bootstrap’s base-modifier
-      approach to your own code.
+      Check out <a href="/customize/sass#maps-and-loops">our Sass maps and loops docs</a> for how to customize these loops and extend Bootstrap’s base-modifier approach to your own
+      code.
     </p>
     <h2 id="modifiers">Modifiers<a class="anchor-link" href="#modifiers" aria-label="Link to Modifiers"></a></h2>
     <p>

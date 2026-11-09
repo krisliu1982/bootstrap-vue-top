@@ -81,8 +81,8 @@
     <p>Working with RTL, through our source Sass or compiled CSS, shouldn’t be much different from our default LTR though.</p>
     <h2 id="customize-from-source">Customize from source<a class="anchor-link" href="#customize-from-source" aria-label="Link to Customize from source"></a></h2>
     <p>
-      When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works
-      the same for RTL, even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.
+      When it comes to <a href="/customize/sass">customization</a>, the preferred way is to take advantage of variables, maps, and mixins. This approach works the same for RTL,
+      even if it’s post-processed from the compiled files, thanks to <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">how RTLCSS works</a>.
     </p>
     <h3 id="custom-rtl-values">Custom RTL values<a class="anchor-link" href="#custom-rtl-values" aria-label="Link to Custom RTL values"></a></h3>
     <p>
@@ -175,8 +175,7 @@ dt {
         <li>When switching <code>.ltr</code> and <code>.rtl</code>, make sure you add <code>dir</code> and <code>lang</code> attributes accordingly.</li>
         <li>
           Loading both files can be a real performance bottleneck: consider some
-          <a href="/customize/optimize">optimization</a>, and maybe try to
-          <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.
+          <a href="/customize/optimize">optimization</a>, and maybe try to <a href="https://www.filamentgroup.com/lab/load-css-simpler/">load one of those files asynchronously</a>.
         </li>
         <li>
           Nesting styles this way will prevent our <code>form-validation-state()</code> mixin from working as intended, thus require you tweak it a bit by yourself.

@@ -7,10 +7,7 @@
     </p>
 
     <Callout>
-      <p>
-        <strong>Heads up!</strong> Be sure to <a href="/layout/grid">read the Grid page</a> first before diving into how to modify and customize your grid
-        columns.
-      </p>
+      <p><strong>Heads up!</strong> Be sure to <a href="/layout/grid">read the Grid page</a> first before diving into how to modify and customize your grid columns.</p>
     </Callout>
     <h2 id="how-they-work">How they work<a class="anchor-link" href="#how-they-work" aria-label="Link to How they work"></a></h2>
     <ul>
@@ -22,16 +19,14 @@
       </li>
       <li>
         <p>
-          <strong>When building grid layouts, all content goes in columns.</strong> The hierarchy of Bootstrap’s grid goes from
-          <a href="/layout/containers">container</a> to row to column to your content. On rare occasions, you may combine content and column, but be aware there
-          can be unintended consequences.
+          <strong>When building grid layouts, all content goes in columns.</strong> The hierarchy of Bootstrap’s grid goes from <a href="/layout/containers">container</a> to row to
+          column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.
         </p>
       </li>
       <li>
         <p>
-          <strong>Bootstrap includes predefined classes for creating fast, responsive layouts.</strong> With
-          <a href="/layout/breakpoints">six breakpoints</a> and a dozen columns at each grid tier, we have dozens of classes already built for you to create your
-          desired layouts. This can be disabled via Sass if you wish.
+          <strong>Bootstrap includes predefined classes for creating fast, responsive layouts.</strong> With <a href="/layout/breakpoints">six breakpoints</a> and a dozen columns
+          at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.
         </p>
       </li>
     </ul>
@@ -258,8 +253,7 @@
     />
     <p>
       If you need more <code>.order-*</code> classes, you can add new ones by modifying our <code>$utilities</code> Sass map.
-      <a href="/customize/sass#maps-and-loops">Read our Sass maps and loops docs</a> or
-      <a href="/utilities/api#modify-utilities">our Modify utilities docs</a> for details.
+      <a href="/customize/sass#maps-and-loops">Read our Sass maps and loops docs</a> or <a href="/utilities/api#modify-utilities">our Modify utilities docs</a> for details.
     </p>
     <CodeWrapper
       code='$utilities: map-merge(
@@ -284,8 +278,8 @@
     />
     <h3 id="offsetting-columns">Offsetting columns<a class="anchor-link" href="#offsetting-columns" aria-label="Link to Offsetting columns"></a></h3>
     <p>
-      You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="/utilities/spacing">margin utilities</a>. Grid
-      classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.
+      You can offset grid columns in two ways: our responsive <code>.offset-</code> grid classes and our <a href="/utilities/spacing">margin utilities</a>. Grid classes are sized
+      to match columns while margins are more useful for quick layouts where the width of the offset is variable.
     </p>
     <h4 id="offset-classes">Offset classes</h4>
     <p>

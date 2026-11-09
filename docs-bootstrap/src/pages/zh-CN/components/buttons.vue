@@ -160,10 +160,10 @@
     <Callout>
       <p>
         Visually, these toggle buttons are identical to the
-        <a href="/forms/checks-radios#checkbox-toggle-buttons">checkbox toggle buttons</a>. However, they are conveyed differently by assistive technologies: the
-        checkbox toggles will be announced by screen readers as “checked”/“not checked” (since, despite their appearance, they are fundamentally still checkboxes), whereas these
-        toggle buttons will be announced as “button”/“button pressed”. The choice between these two approaches will depend on the type of toggle you are creating, and whether or
-        not the toggle will make sense to users when announced as a checkbox or as an actual button.
+        <a href="/forms/checks-radios#checkbox-toggle-buttons">checkbox toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles
+        will be announced by screen readers as “checked”/“not checked” (since, despite their appearance, they are fundamentally still checkboxes), whereas these toggle buttons will
+        be announced as “button”/“button pressed”. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle will
+        make sense to users when announced as a checkbox or as an actual button.
       </p>
     </Callout>
     <h3 id="toggle-states">Toggle states<a class="anchor-link" href="#toggle-states" aria-label="Link to Toggle states"></a></h3>

@@ -64,8 +64,8 @@
     />
     <h3 id="icons">Icons<a class="anchor-link" href="#icons" aria-label="Link to Icons"></a></h3>
     <p>
-      Similarly, you can use <a href="/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts
-      with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
+      Similarly, you can use <a href="/utilities/flex">flexbox utilities</a> and <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons.
+      Depending on your icons and content, you may want to add more utilities or custom styles.
     </p>
     <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
@@ -121,8 +121,8 @@
     <ul>
       <li>Be sure you’ve loaded the alert plugin, or the compiled Bootstrap JavaScript.</li>
       <li>
-        Add a <a href="/components/close-button">close button</a> and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the
-        alert and positions the close button.
+        Add a <a href="/components/close-button">close button</a> and the <code>.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions
+        the close button.
       </li>
       <li>
         On the close button, add the <code>data-bs-dismiss=&quot;alert&quot;</code> attribute, which triggers the JavaScript functionality. Be sure to use the

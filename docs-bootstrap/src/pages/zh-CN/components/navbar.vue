@@ -14,10 +14,7 @@
         <a href="#color-schemes">color scheme</a> classes.
       </li>
       <li>Navbars and their contents are fluid by default. Change the <a href="#containers">container</a> to limit their horizontal width in different ways.</li>
-      <li>
-        Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and
-        alignment within navbars.
-      </li>
+      <li>Use our <a href="/utilities/spacing">spacing</a> and <a href="/utilities/flex">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
       <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
       <li>
         Ensure accessibility by using a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a
@@ -85,8 +82,8 @@
     />
     <p>
       This example uses
-      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and
-      <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>, <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
+      <a href="/utilities/background">background</a> (<code>bg-body-tertiary</code>) and <a href="/utilities/spacing">spacing</a> (<code>me-auto</code>, <code>mb-2</code>,
+      <code>mb-lg-0</code>, <code>me-2</code>) utility classes.
     </p>
     <h3 id="brand">Brand<a class="anchor-link" href="#brand" aria-label="Link to Brand"></a></h3>
     <p>The <code>.navbar-brand</code> can be applied to most elements, but an anchor works best, as some elements might require utility classes or custom styles.</p>
@@ -459,9 +456,8 @@
     />
     <h2 id="placement">Placement<a class="anchor-link" href="#placement" aria-label="Link to Placement"></a></h2>
     <p>
-      Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom,
-      stickied to the top (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then
-      stays there).
+      Use our <a href="/utilities/position">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, stickied to the top
+      (scrolls with the page until it reaches the top, then stays there), or stickied to the bottom (scrolls with the page until it reaches the bottom, then stays there).
     </p>
     <p>
       Fixed navbars use <code>position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code>padding-top</code> on the
@@ -677,8 +673,8 @@
     <h3 id="offcanvas">Offcanvas<a class="anchor-link" href="#offcanvas" aria-label="Link to Offcanvas"></a></h3>
     <p>
       Transform your expanding and collapsing navbar into an offcanvas drawer with the
-      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to
-      create a dynamic and flexible navigation sidebar.
+      <a href="/components/offcanvas">offcanvas component</a>. We extend both the offcanvas default styles and use our <code>.navbar-expand-*</code> classes to create a dynamic and
+      flexible navigation sidebar.
     </p>
     <p>
       In the example below, to create an offcanvas navbar that is always collapsed across all breakpoints, omit the

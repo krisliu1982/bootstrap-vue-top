@@ -47,8 +47,8 @@
     <h2 id="bar-sizing">Bar sizing<a class="anchor-link" href="#bar-sizing" aria-label="Link to Bar sizing"></a></h2>
     <h3 id="width">Width<a class="anchor-link" href="#width" aria-label="Link to Width"></a></h3>
     <p>
-      Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly
-      configuring the width of the <code>.progress-bar</code>.
+      Bootstrap provides a handful of <a href="/utilities/sizing">utilities for setting width</a>. Depending on your needs, these may help with quickly configuring the width of the
+      <code>.progress-bar</code>.
     </p>
     <Example
       code='<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">

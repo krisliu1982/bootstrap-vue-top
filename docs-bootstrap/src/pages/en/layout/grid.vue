@@ -59,8 +59,8 @@
         <p>
           <strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This
           <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also
-          support modifier classes to <a href="#row-columns">uniformly apply column sizing</a> and <a href="/layout/gutters">gutter classes</a> to change the
-          spacing of your content.
+          support modifier classes to <a href="#row-columns">uniformly apply column sizing</a> and <a href="/layout/gutters">gutter classes</a> to change the spacing of your
+          content.
         </p>
       </li>
       <li>
@@ -74,8 +74,8 @@
         <p>
           <strong>Gutters are also responsive and customizable.</strong>
           <a href="/layout/gutters">Gutter classes are available</a> across all breakpoints, with all the same sizes as our
-          <a href="/utilities/spacing">margin and padding spacing</a>. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with
-          <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.
+          <a href="/utilities/spacing">margin and padding spacing</a>. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all
+          gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.
         </p>
       </li>
       <li>

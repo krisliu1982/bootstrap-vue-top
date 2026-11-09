@@ -48,21 +48,17 @@
     <h3 id="live-example">Live example<a class="anchor-link" href="#live-example" aria-label="Link to Live example"></a></h3>
     <p>Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.</p>
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <span title="image placeholder" class="text-primary me-2">✓</span>
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <span title="image placeholder" class="text-primary me-2">✓</span>
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Hello, world! This is a toast message.</div>
+      </div>
     </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
-</div>
-    <Example
-      code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>'
-    />
+    <Example code='<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>' />
 
     <p>We use the following JavaScript to trigger our live toast demo:</p>
     <JsDocs name="live-toast" file="site/src/assets/partials/snippets.js" />
@@ -115,9 +111,8 @@
     <h3 id="custom-content">Custom content<a class="anchor-link" href="#custom-content" aria-label="Link to Custom content"></a></h3>
     <p>
       Customize your toasts by removing sub-components, tweaking them with
-      <a href="/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default
-      <code>.toast-header</code>, adding a custom hide icon from <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, and using some
-      <a href="/utilities/flex">flexbox utilities</a> to adjust the layout.
+      <a href="/utilities/api">utilities</a>, or by adding your own markup. Here we’ve created a simpler toast by removing the default <code>.toast-header</code>, adding a custom
+      hide icon from <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, and using some <a href="/utilities/flex">flexbox utilities</a> to adjust the layout.
     </p>
     <Example
       code='<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -144,9 +139,8 @@
     <h3 id="color-schemes">Color schemes<a class="anchor-link" href="#color-schemes" aria-label="Link to Color schemes"></a></h3>
     <p>
       Building on the above example, you can create different toast color schemes with our
-      <a href="/utilities/colors">color</a> and <a href="/utilities/background">background</a> utilities. Here we’ve added
-      <code>.text-bg-primary</code> to the <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border
-      with <code>.border-0</code>.
+      <a href="/utilities/colors">color</a> and <a href="/utilities/background">background</a> utilities. Here we’ve added <code>.text-bg-primary</code> to the <code>.toast</code>,
+      and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0</code>.
     </p>
     <Example
       code='<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">

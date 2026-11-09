@@ -46,8 +46,7 @@
     <h3 id="sass-utilities-api">Sass utilities API<a class="anchor-link" href="#sass-utilities-api" aria-label="Link to Sass utilities API"></a></h3>
     <p>
       In addition to <code>.focus-ring</code>, we have several <code>.focus-ring-*</code> utilities to modify the helper class defaults. Modify the color with any of our
-      <a href="/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current
-      color mode support.
+      <a href="/customize/color#theme-colors">theme colors</a>. Note that the light and dark variants may not be visible on all background colors given current color mode support.
     </p>
     <Example
       :code="

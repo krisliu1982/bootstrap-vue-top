@@ -56,8 +56,7 @@
     <h3 id="horizontal-alignment">Horizontal alignment<a class="anchor-link" href="#horizontal-alignment" aria-label="Link to Horizontal alignment"></a></h3>
     <p>
       Change the horizontal alignment of your nav with
-      <a href="/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or
-      right-aligned.
+      <a href="/utilities/flex#justify-content">flexbox utilities</a>. By default, navs are left-aligned, but you can easily change them to center or right-aligned.
     </p>
     <p>Centered with <code>.justify-content-center</code>:</p>
     <Example
@@ -247,8 +246,8 @@
     </h2>
     <p>
       If you need responsive nav variations, consider using a series of
-      <a href="/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the
-      example below, our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
+      <a href="/utilities/flex">flexbox utilities</a>. While more verbose, these utilities offer greater customization across responsive breakpoints. In the example below, our nav
+      will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the available width starting from the small breakpoint.
     </p>
     <Example
       code='<nav class="nav nav-pills flex-column flex-sm-row">

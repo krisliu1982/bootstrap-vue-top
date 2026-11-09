@@ -582,8 +582,8 @@
       lang="scss"
     />
     <p>
-      <a href="/utilities/colors">Color</a> and <a href="/utilities/background">background</a> utility classes are also available for setting
-      <code>color</code> and <code>background-color</code> using the <code>500</code> color values.
+      <a href="/utilities/colors">Color</a> and <a href="/utilities/background">background</a> utility classes are also available for setting <code>color</code> and
+      <code>background-color</code> using the <code>500</code> color values.
     </p>
     <h2 id="generating-utilities">Generating utilities<a class="anchor-link" href="#generating-utilities" aria-label="Link to Generating utilities"></a></h2>
     <AddedIn version="5.1.0" />

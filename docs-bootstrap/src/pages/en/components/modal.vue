@@ -321,8 +321,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     />
     <h3 id="tooltips-and-popovers">Tooltips and popovers<a class="anchor-link" href="#tooltips-and-popovers" aria-label="Link to Tooltips and popovers"></a></h3>
     <p>
-      <a href="/components/tooltips">Tooltips</a> and <a href="/components/popovers">popovers</a> can be placed within modals as needed. When
-      modals are closed, any tooltips and popovers within are also automatically dismissed.
+      <a href="/components/tooltips">Tooltips</a> and <a href="/components/popovers">popovers</a> can be placed within modals as needed. When modals are closed, any tooltips and
+      popovers within are also automatically dismissed.
     </p>
     <Example
       :showMarkup="false"

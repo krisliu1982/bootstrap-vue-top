@@ -14,9 +14,9 @@
     </p>
     <h2 id="notation">Notation<a class="anchor-link" href="#notation" aria-label="Link to Notation"></a></h2>
     <p>
-      Display utility classes that apply to all <a href="/layout/breakpoints">breakpoints</a>, from <code>xs</code> to <code>xxl</code>, have no breakpoint
-      abbreviation in them. This is because those classes are applied from <code>min-width: 0;</code> and up, and thus are not bound by a media query. The remaining breakpoints,
-      however, do include a breakpoint abbreviation.
+      Display utility classes that apply to all <a href="/layout/breakpoints">breakpoints</a>, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them.
+      This is because those classes are applied from <code>min-width: 0;</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a
+      breakpoint abbreviation.
     </p>
     <p>As such, the classes are named using the format:</p>
     <ul>

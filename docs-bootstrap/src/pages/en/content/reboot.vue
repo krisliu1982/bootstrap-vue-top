@@ -24,9 +24,9 @@
     <p>
       With v5.1.1, we standardized our required <code>@import</code>s across all our CSS bundles (including <code>bootstrap.css</code>, <code>bootstrap-reboot.css</code>, and
       <code>bootstrap-grid.css</code>) to include <code>_root.scss</code>. This adds <code>:root</code> level CSS variables to all bundles, regardless of how many of them are used
-      in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="/customize/css-variables">CSS variables</a> added over time, in order to provide
-      more real-time customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way,
-      even if you don’t use CSS variables, you still have all the power of Sass. <strong>This is still in-progress and will take time to fully implement.</strong>
+      in that bundle. Ultimately Bootstrap 5 will continue to see more <a href="/customize/css-variables">CSS variables</a> added over time, in order to provide more real-time
+      customization without the need to always recompile Sass. Our approach is to take our source Sass variables and transform them into CSS variables. That way, even if you don’t
+      use CSS variables, you still have all the power of Sass. <strong>This is still in-progress and will take time to fully implement.</strong>
     </p>
     <p>For example, consider these <code>:root</code> CSS variables for common <code>&lt;body&gt;</code> styles:</p>
     <ScssDocs name="root-body-variables" file="scss/_root.scss" />

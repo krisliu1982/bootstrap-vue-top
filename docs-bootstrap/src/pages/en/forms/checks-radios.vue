@@ -235,8 +235,7 @@
     <h2 id="without-labels">Without labels<a class="anchor-link" href="#without-labels" aria-label="Link to Without labels"></a></h2>
     <p>
       Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive
-      technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for
-      details.
+      technologies (for instance, using <code>aria-label</code>). See the <a href="/forms/overview/#accessibility">forms overview accessibility</a> section for details.
     </p>
     <Example
       code='<div>
@@ -274,10 +273,10 @@
     /><Callout>
       <p>
         Visually, these checkbox toggle buttons are identical to the
-        <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the
-        checkbox toggles will be announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the
-        button plugin toggle buttons will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and
-        whether or not the toggle will make sense to users when announced as a checkbox or as an actual button.
+        <a href="/components/buttons#button-plugin">button plugin toggle buttons</a>. However, they are conveyed differently by assistive technologies: the checkbox toggles will be
+        announced by screen readers as “checked“/“not checked“ (since, despite their appearance, they are fundamentally still checkboxes), whereas the button plugin toggle buttons
+        will be announced as “button“/“button pressed“. The choice between these two approaches will depend on the type of toggle you are creating, and whether or not the toggle
+        will make sense to users when announced as a checkbox or as an actual button.
       </p>
     </Callout>
     <h3 id="radio-toggle-buttons">Radio toggle buttons<a class="anchor-link" href="#radio-toggle-buttons" aria-label="Link to Radio toggle buttons"></a></h3>

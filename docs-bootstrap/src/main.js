@@ -90,8 +90,7 @@ export const createApp = ViteSSG(
   ({ app, router }) => {
     if (import.meta.env.SSR) {
       // your server code will be removed in the client build
-    }
-    else {
+    } else {
       router.beforeEach((to, from) => {
         if (to.hash) return;
         NProgress.start();

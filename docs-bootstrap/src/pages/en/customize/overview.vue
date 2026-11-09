@@ -25,8 +25,8 @@
     </p>
     <p>
       For those who want to use the distribution files, review the
-      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for
-      the layout, components, and behaviors you’d like to use.
+      <a href="/getting-started/introduction">getting started page</a> for how to include those files and an example HTML page. From there, consult the docs for the layout,
+      components, and behaviors you’d like to use.
     </p>
     <p>
       As you familiarize yourself with Bootstrap, continue exploring this section for more details on how to utilize our global options, making use of and changing our color
@@ -50,8 +50,8 @@
     </ul>
     <p>
       Based on <a href="https://github.com/twbs/bootstrap/issues/25394">community conversation</a>, some options for addressing this in your own codebase include
-      <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not
-      possible in all components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
+      <a href="/getting-started/webpack#extracting-svg-files">replacing the URLs with locally hosted assets</a>, removing the images and using inline images (not possible in all
+      components), and modifying your CSP. Our recommendation is to carefully review your own security policies and decide on the best path forward, if necessary.
     </p>
     <DocsPager />
   </article>

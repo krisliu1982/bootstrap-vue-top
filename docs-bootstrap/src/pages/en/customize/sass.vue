@@ -265,10 +265,7 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     </p>
     <h2 id="functions">Functions<a class="anchor-link" href="#functions" aria-label="Link to Functions"></a></h2>
     <h3 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h3>
-    <p>
-      Next to the <a href="/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like
-      <code>$primary</code>.
-    </p>
+    <p>Next to the <a href="/customize/color#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like <code>$primary</code>.</p>
     <CodeWrapper
       code=".custom-element {
   color: $gray-100;

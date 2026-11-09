@@ -12,9 +12,7 @@
       Choose from <code>.align-baseline</code>, <code>.align-top</code>, <code>.align-middle</code>, <code>.align-bottom</code>, <code>.align-text-bottom</code>, and
       <code>.align-text-top</code> as needed.
     </p>
-    <p>
-      To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/utilities/flex#align-items">flex box utilities</a>.
-    </p>
+    <p>To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/utilities/flex#align-items">flex box utilities</a>.</p>
     <p>With inline elements:</p>
     <Example
       code='<span class="align-baseline">baseline</span>

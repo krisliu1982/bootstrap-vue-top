@@ -82,9 +82,9 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       lang="javascript"
     />
     <p>
-      Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/components/modal">modal dialog</a>, to
-      make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so
-      unless the popover is a child element of the modal, users won’t be able to focus or activate these interactive elements.
+      Another situation where you’ll want to set an explicit custom <code>container</code> are popovers inside a <a href="/components/modal">modal dialog</a>, to make sure that the
+      popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover
+      is a child element of the modal, users won’t be able to focus or activate these interactive elements.
     </p>
     <CodeWrapper
       code="const popover = new bootstrap.Popover(&#39;.example-popover&#39;, {
@@ -336,8 +336,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td><code>null</code></td>
             <td>
               Provide an alternative
-              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
-              perform sanitization.
+              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform
+              sanitization.
             </td>
           </tr>
           <tr>

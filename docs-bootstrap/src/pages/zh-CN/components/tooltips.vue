@@ -308,8 +308,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               Provide an alternative
-              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to
-              perform sanitization.
+              <a href="/getting-started/javascript#sanitizer">content sanitization</a> function. This can be useful if you prefer to use a dedicated library to perform
+              sanitization.
             </td>
           </tr>
           <tr>

@@ -293,8 +293,7 @@
     <h2 id="vertical-alignment">Vertical alignment<a class="anchor-link" href="#vertical-alignment" aria-label="Link to Vertical alignment"></a></h2>
     <p>
       Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from
-      <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="/utilities/vertical-align">vertical align</a> classes to re-align where
-      needed.
+      <code>&lt;table&gt;</code> and are aligned to the top by default. Use the <a href="/utilities/vertical-align">vertical align</a> classes to re-align where needed.
     </p>
     <Example
       :showMarkup="false"
