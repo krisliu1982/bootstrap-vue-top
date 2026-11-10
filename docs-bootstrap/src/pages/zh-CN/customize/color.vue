@@ -18,7 +18,7 @@
         <thead>
           <tr>
             <th style="width: 340px">描述</th>
-            <th style="width: 200px" class="ps-0">色板</th>
+            <th style="width: 200px">色板</th>
             <th>变量</th>
           </tr>
         </thead>
@@ -27,7 +27,7 @@
             <td rowspan="2">
               <p><strong>Body —</strong> 默认前景色（颜色）和背景色，包括组件。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-body-color)">&nbsp;</div>
             </td>
             <td>
@@ -46,7 +46,7 @@
             <td rowspan="2">
               <p><strong>Secondary —</strong> 使用 <code>color</code> 选项以获得较浅的文本。使用 <code>bg</code> 选项用于分隔线并指示禁用的组件状态。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-secondary-color)">&nbsp;</div>
             </td>
             <td>
@@ -65,7 +65,7 @@
             <td rowspan="2">
               <p><strong>Tertiary —</strong> 使用 <code>color</code> 选项以获得更浅的文本。使用 <code>bg</code> 选项为悬停状态、强调区域和 well 设置背景样式。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-tertiary-color)">&nbsp;</div>
             </td>
             <td>
@@ -84,7 +84,7 @@
             <td>
               <p><strong>Emphasis —</strong> 用于对比度更高的文本。不适用于背景。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-emphasis-color)">&nbsp;</div>
             </td>
             <td>
@@ -95,7 +95,7 @@
             <td>
               <p><strong>Border —</strong> 用于组件边框、分隔线和规则线。使用 <code>--bs-border-color-translucent</code> 通过 <code>rgba()</code> 值与背景混合。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-border-color)">&nbsp;</div>
             </td>
             <td>
@@ -106,7 +106,7 @@
             <td rowspan="4">
               <p><strong>Primary —</strong> 主主题色，用于超链接、聚焦样式以及组件和表单的活动状态。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-primary">&nbsp;</div>
             </td>
             <td>
@@ -141,7 +141,7 @@
             <td rowspan="4">
               <p><strong>Success —</strong> 用于积极或成功操作及信息的主题色。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-success">&nbsp;</div>
             </td>
             <td>
@@ -176,7 +176,7 @@
             <td rowspan="4">
               <p><strong>Danger —</strong> 用于错误和危险操作的主题色。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-danger">&nbsp;</div>
             </td>
             <td>
@@ -211,7 +211,7 @@
             <td rowspan="4">
               <p><strong>Warning —</strong> 用于非破坏性警告消息的主题色。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-warning">&nbsp;</div>
             </td>
             <td>
@@ -246,7 +246,7 @@
             <td rowspan="4">
               <p><strong>Info —</strong> 用于中性和信息性内容的主题色。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-info">&nbsp;</div>
             </td>
             <td>
@@ -281,7 +281,7 @@
             <td rowspan="4">
               <p><strong>Light —</strong> 对比度较低颜色的附加主题选项。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-light">&nbsp;</div>
             </td>
             <td>
@@ -316,7 +316,7 @@
             <td rowspan="4">
               <p><strong>Dark —</strong> 对比度较高颜色的附加主题选项。</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-dark">&nbsp;</div>
             </td>
             <td>
