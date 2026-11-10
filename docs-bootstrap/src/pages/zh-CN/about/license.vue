@@ -3,7 +3,7 @@
     <h1>许可证常见问题</h1>
     <p class="lead">关于 Bootstrap 开源许可证的常见问题。</p>
 
-    <p>Bootstrap 在 MIT 许可证下发布，版权归 {new Date().getFullYear()} 所有。简而言之，可以用以下条件来描述。</p>
+    <p>Bootstrap 基于 MIT 许可证发布，版权所有者为 2025 年。概括来说，可用以下条件说明。</p>
     <h2 id="it-requires-you-to">它要求你：<a class="anchor-link" href="#it-requires-you-to" aria-label="它要求你：链接"></a></h2>
     <ul>
       <li>当你在自己的作品中使用 Bootstrap 的 CSS 和 JavaScript 文件时，保留其中包含的许可证和版权声明</li>

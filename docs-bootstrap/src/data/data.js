@@ -108,7 +108,7 @@ const sidebar = [
       { title: 'Modal', slug: 'modal', 'zh-CN': '模态框' },
       { title: 'Navbar', slug: 'navbar', 'zh-CN': '导航栏' },
       { title: 'Navs & tabs', slug: 'navs-tabs', 'zh-CN': '导航与标签页' },
-      { title: 'Offcanvas', slug: 'offcanvas', 'zh-CN': '侧边栏' },
+      { title: 'Offcanvas', slug: 'offcanvas', 'zh-CN': '抽屉' },
       { title: 'Pagination', slug: 'pagination', 'zh-CN': '分页' },
       { title: 'Placeholders', slug: 'placeholders', 'zh-CN': '占位符' },
       { title: 'Popovers', slug: 'popovers', 'zh-CN': '弹出框' },
