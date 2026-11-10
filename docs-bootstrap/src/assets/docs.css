@@ -72,7 +72,7 @@
           display: grid;
           grid-template-areas: 'content toc';
           grid-template-columns: 4fr 1fr;
-          gap: 1rem;
+          gap: 2rem;
       }
 
       .bd-content {
@@ -120,7 +120,7 @@
       text-decoration: none;
       border-left: 2px solid transparent;
       font-size: 0.875rem;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
   }
 
   .bd-toc a:hover,
