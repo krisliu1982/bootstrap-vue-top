@@ -114,7 +114,7 @@
       <li>模态框（Modals），用于显示、定位和滚动行为</li>
       <li>导航栏（Navbar），用于扩展我们的 Collapse 和 Offcanvas 插件以实现响应式行为</li>
       <li>导航（Navs）配合 Tab 插件，用于切换内容面板</li>
-      <li>画布外菜单（Offcanvases），用于显示、定位和滚动行为</li>
+      <li>抽屉（Offcanvases），用于显示、定位和滚动行为</li>
       <li>滚动监听（Scrollspy），用于滚动行为和导航更新</li>
       <li>轻提示（Toasts），用于显示和关闭</li>
       <li>工具提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要<a href="https://popper.js.org/docs/v2/">Popper</a>）</li>

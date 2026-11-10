@@ -612,9 +612,9 @@
     <p>
       这样做时，我们建议加入额外的 JavaScript，在容器打开时以编程方式将焦点移动到容器上。否则，键盘用户和辅助技术用户可能很难找到新显示的内容——特别是当打开的容器在文档结构中位于切换器<em>之前</em>时。我们还建议确保切换器具有 <code>aria-controls</code> 属性，指向内容容器的 <code>id</code>。理论上，这允许辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持还相当不完善。
     </p>
-    <h3 id="offcanvas">画布外菜单<a class="anchor-link" href="#offcanvas" aria-label="画布外菜单链接"></a></h3>
+    <h3 id="offcanvas">抽屉<a class="anchor-link" href="#offcanvas" aria-label="抽屉链接"></a></h3>
     <p>
-      使用<a href="/components/offcanvas">画布外菜单组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了画布外菜单的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。
+      使用<a href="/components/offcanvas">抽屉组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了抽屉的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。
     </p>
     <p>
       在下面的示例中，要创建一个在所有断点下都始终折叠的画布外导航栏，请完全省略
@@ -677,8 +677,8 @@
       lang="html"
     />
     <p>
-      在深色导航栏中使用画布外菜单时，请注意你可能需要为画布外菜单内容设置深色背景，以避免文本变得难以辨认。在下面的示例中，我们为 <code>.navbar</code> 添加 <code>.navbar-dark</code> 和 <code>.bg-dark</code>，为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，
-      为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>，为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以便在深色画布外菜单下获得正确的样式。
+      在深色导航栏中使用抽屉时，请注意你可能需要为抽屉内容设置深色背景，以避免文本变得难以辨认。在下面的示例中，我们为 <code>.navbar</code> 添加 <code>.navbar-dark</code> 和 <code>.bg-dark</code>，为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，
+      为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>，为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以便在深色抽屉下获得正确的样式。
     </p>
     <Example
       code='<nav class="navbar navbar-dark bg-dark fixed-top">
@@ -768,7 +768,7 @@
         <ul>
           <li><a href="#toggler">切换器</a></li>
           <li><a href="#external-content">外部内容</a></li>
-          <li><a href="#offcanvas">画布外菜单</a></li>
+          <li><a href="#offcanvas">抽屉</a></li>
         </ul>
       </li>
       <li>
