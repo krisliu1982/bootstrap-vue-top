@@ -19,7 +19,7 @@
         <thead>
           <tr>
             <th style="width: 340px">Description</th>
-            <th style="width: 200px" class="ps-0">Swatch</th>
+            <th style="width: 200px">Swatch</th>
             <th>Variables</th>
           </tr>
         </thead>
@@ -28,7 +28,7 @@
             <td rowspan="2">
               <p><strong>Body —</strong> Default foreground (color) and background, including components.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-body-color)">&nbsp;</div>
             </td>
             <td>
@@ -47,7 +47,7 @@
             <td rowspan="2">
               <p><strong>Secondary —</strong> Use the <code>color</code> option for lighter text. Use the <code>bg</code> option for dividers and to indicate disabled component states.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-secondary-color)">&nbsp;</div>
             </td>
             <td>
@@ -66,7 +66,7 @@
             <td rowspan="2">
               <p><strong>Tertiary —</strong> Use the <code>color</code> option for even lighter text. Use the <code>bg</code> option to style backgrounds for hover states, accents, and wells.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-tertiary-color)">&nbsp;</div>
             </td>
             <td>
@@ -85,7 +85,7 @@
             <td>
               <p><strong>Emphasis —</strong> For higher contrast text. Not applicable for backgrounds.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-emphasis-color)">&nbsp;</div>
             </td>
             <td>
@@ -96,7 +96,7 @@
             <td>
               <p><strong>Border —</strong> For component borders, dividers, and rules. Use <code>--bs-border-color-translucent</code> to blend with backgrounds with an <code>rgba()</code> value.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2" style="background-color: var(--bs-border-color)">&nbsp;</div>
             </td>
             <td>
@@ -107,7 +107,7 @@
             <td rowspan="4">
               <p><strong>Primary —</strong> Main theme color, used for hyperlinks, focus styles, and component and form active states.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-primary">&nbsp;</div>
             </td>
             <td>
@@ -142,7 +142,7 @@
             <td rowspan="4">
               <p><strong>Success —</strong> Theme color used for positive or successful actions and information.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-success">&nbsp;</div>
             </td>
             <td>
@@ -177,7 +177,7 @@
             <td rowspan="4">
               <p><strong>Danger —</strong> Theme color used for errors and dangerous actions.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-danger">&nbsp;</div>
             </td>
             <td>
@@ -212,7 +212,7 @@
             <td rowspan="4">
               <p><strong>Warning —</strong> Theme color used for non-destructive warning messages.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-warning">&nbsp;</div>
             </td>
             <td>
@@ -247,7 +247,7 @@
             <td rowspan="4">
               <p><strong>Info —</strong> Theme color used for neutral and informative content.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-info">&nbsp;</div>
             </td>
             <td>
@@ -282,7 +282,7 @@
             <td rowspan="4">
               <p><strong>Light —</strong> Additional theme option for less contrasting colors.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-light">&nbsp;</div>
             </td>
             <td>
@@ -317,7 +317,7 @@
             <td rowspan="4">
               <p><strong>Dark —</strong> Additional theme option for higher contrasting colors.</p>
             </td>
-            <td class="ps-0">
+            <td>
               <div class="p-3 rounded-2 bg-dark">&nbsp;</div>
             </td>
             <td>
