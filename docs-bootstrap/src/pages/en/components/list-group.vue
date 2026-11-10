@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>List group</h1>
-    <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+    <p class="lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>

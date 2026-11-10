@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Browsers and devices</h1>
-    <p>Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.</p>
+    <p class="lead">Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.</p>
 
     <h2 id="supported-browsers">Supported browsers<a class="anchor-link" href="#supported-browsers" aria-label="Link to Supported browsers"></a></h2>
     <p>Bootstrap supports the <strong>latest, stable releases</strong> of all major browsers and platforms.</p>

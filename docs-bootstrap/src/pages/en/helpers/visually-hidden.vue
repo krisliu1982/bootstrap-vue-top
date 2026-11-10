@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Visually hidden</h1>
-    <p>Use these helpers to visually hide elements but keep them accessible to assistive technologies.</p>
+    <p class="lead">Use these helpers to visually hide elements but keep them accessible to assistive technologies.</p>
 
     <p>
       Visually hide an element while still allowing it to be exposed to assistive technologies (such as screen readers) with <code>.visually-hidden</code>. Use <code>.visually-hidden-focusable</code> to visually hide an element by default, but to display it when it’s focused (e.g. by a keyboard-only user).

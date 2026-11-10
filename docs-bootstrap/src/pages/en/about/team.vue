@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Team</h1>
-    <p>An overview of the founding team and core contributors to Bootstrap.</p>
+    <p class="lead">An overview of the founding team and core contributors to Bootstrap.</p>
 
     <p>Bootstrap is maintained by the founding team and a small group of invaluable core contributors, with the massive support and involvement of our community.</p>
     <div class="list-group mb-3">

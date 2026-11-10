@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Pagination</h1>
-    <p>Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+    <p class="lead">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

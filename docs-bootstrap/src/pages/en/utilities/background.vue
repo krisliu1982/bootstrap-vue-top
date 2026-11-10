@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Background</h1>
-    <p>Convey meaning through `background-color` and add decoration with gradients.</p>
+    <p class="lead">Convey meaning through `background-color` and add decoration with gradients.</p>
 
     <Callout name="warning-color-assistive-technologies" />
     <h2 id="background-color">Background color<a class="anchor-link" href="#background-color" aria-label="Link to Background color"></a></h2>

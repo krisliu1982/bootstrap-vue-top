@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Brand guidelines</h1>
-    <p>Documentation and examples for Bootstrap’s logo and brand usage guidelines.</p>
+    <p class="lead">Documentation and examples for Bootstrap’s logo and brand usage guidelines.</p>
 
     <p>Have a need for Bootstrap’s brand resources? Great! We have only a few guidelines we follow, and in turn ask you to follow as well.</p>
     <h2 id="logo">Logo<a class="anchor-link" href="#logo" aria-label="Link to Logo"></a></h2>

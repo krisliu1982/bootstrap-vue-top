@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Colored links</h1>
-    <p>Colored links with hover states</p>
+    <p class="lead">Colored links with hover states</p>
 
     <h2 id="link-colors">Link colors<a class="anchor-link" href="#link-colors" aria-label="Link to Link colors"></a></h2>
     <p>

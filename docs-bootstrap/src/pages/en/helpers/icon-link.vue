@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Icon link</h1>
-    <p>Quickly create stylized hyperlinks with Bootstrap Icons or other icons.</p>
+    <p class="lead">Quickly create stylized hyperlinks with Bootstrap Icons or other icons.</p>
 
     <p>
       The icon link helper component modifies our default link styles to enhance their appearance and quickly align any pairing of icon and text. Alignment is set via inline flexbox styling and a default <code>gap</code> value. We stylize the underline with a custom offset and color. Icons are automatically sized to <code>1em</code> to best match

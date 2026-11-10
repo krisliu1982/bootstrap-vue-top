@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>RFS</h1>
-    <p>Bootstrap’s resizing engine responsively scales common CSS properties to better utilize available space across viewports and devices.</p>
+    <p class="lead">Bootstrap’s resizing engine responsively scales common CSS properties to better utilize available space across viewports and devices.</p>
 
     <h2 id="what-is-rfs">What is RFS?<a class="anchor-link" href="#what-is-rfs" aria-label="Link to What is RFS?"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Stacks</h1>
-    <p>Shorthand helpers that build on top of our flexbox utilities to make component layout faster and easier than ever.</p>
+    <p class="lead">Shorthand helpers that build on top of our flexbox utilities to make component layout faster and easier than ever.</p>
 
     <p>
       Stacks offer a shortcut for applying a number of flexbox properties to quickly and easily create layouts in Bootstrap. All credit for the concept and implementation goes to the open source

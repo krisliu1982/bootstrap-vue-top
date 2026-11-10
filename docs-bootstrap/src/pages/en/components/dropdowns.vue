@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Dropdowns</h1>
-    <p>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
+    <p class="lead">Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

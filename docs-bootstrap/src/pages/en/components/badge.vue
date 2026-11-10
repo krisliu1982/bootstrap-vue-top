@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Badges</h1>
-    <p>Documentation and examples for badges, our small count and labeling component.</p>
+    <p class="lead">Documentation and examples for badges, our small count and labeling component.</p>
 
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>

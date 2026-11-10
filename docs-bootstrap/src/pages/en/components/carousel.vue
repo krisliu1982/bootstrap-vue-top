@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Carousel</h1>
-    <p>A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+    <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <ul>

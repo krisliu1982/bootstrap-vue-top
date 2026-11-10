@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Color</h1>
-    <p>Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
+    <p class="lead">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
 
     <h2 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h2>
     <AddedIn version="5.3.0" />

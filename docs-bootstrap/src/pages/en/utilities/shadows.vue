@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Shadows</h1>
-    <p>Add or remove shadows to elements with box-shadow utilities.</p>
+    <p class="lead">Add or remove shadows to elements with box-shadow utilities.</p>
 
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>

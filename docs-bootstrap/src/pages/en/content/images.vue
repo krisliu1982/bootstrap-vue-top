@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Images</h1>
-    <p>Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes.</p>
+    <p class="lead">Documentation and examples for opting images into responsive behavior (so they never become wider than their parent) and add lightweight styles to them—all via classes.</p>
 
     <h2 id="responsive-images">Responsive images<a class="anchor-link" href="#responsive-images" aria-label="Link to Responsive images"></a></h2>
     <p>Images in Bootstrap are made responsive with <code>.img-fluid</code>. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales with the parent width.</p>

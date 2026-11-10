@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Object fit</h1>
-    <p>Use the object fit utilities to modify how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container.</p>
+    <p class="lead">Use the object fit utilities to modify how the content of a replaced element, such as an <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Optimize</h1>
-    <p>Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
+    <p class="lead">Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
 
     <h2 id="lean-sass-imports">Lean Sass imports<a class="anchor-link" href="#lean-sass-imports" aria-label="Link to Lean Sass imports"></a></h2>
     <p>When using Sass in your asset pipeline, make sure you optimize Bootstrap by only <code>@import</code>ing the components you need. Your largest optimizations will likely come from the <code>Layout &amp; Components</code> section of our <code>bootstrap.scss</code>.</p>

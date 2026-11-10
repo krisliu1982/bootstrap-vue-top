@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Alerts</h1>
-    <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+    <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 
     <h2 id="examples">Examples<a class="anchor-link" href="#examples" aria-label="Link to Examples"></a></h2>
     <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts JavaScript plugin</a>.</p>

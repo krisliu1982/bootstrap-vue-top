@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Contribute</h1>
-    <p>Help develop Bootstrap with our documentation build scripts and tests.</p>
+    <p class="lead">Help develop Bootstrap with our documentation build scripts and tests.</p>
 
     <h2 id="tooling-setup">Tooling setup<a class="anchor-link" href="#tooling-setup" aria-label="Link to Tooling setup"></a></h2>
     <p>

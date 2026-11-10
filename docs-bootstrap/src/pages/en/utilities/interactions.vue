@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Interactions</h1>
-    <p>Utility classes that change how users interact with contents of a website.</p>
+    <p class="lead">Utility classes that change how users interact with contents of a website.</p>
 
     <h2 id="text-selection">Text selection<a class="anchor-link" href="#text-selection" aria-label="Link to Text selection"></a></h2>
     <p>Change the way in which the content is selected when the user interacts with it.</p>

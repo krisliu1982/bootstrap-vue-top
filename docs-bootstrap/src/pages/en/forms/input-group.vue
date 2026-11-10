@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Input group</h1>
-    <p>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
+    <p class="lead">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>&lt;label&gt;</code>s outside the input group.</p>

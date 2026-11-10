@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Download</h1>
-    <p>Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.</p>
+    <p class="lead">Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.</p>
 
     <h2 id="compiled-css-and-js">Compiled CSS and JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="Link to Compiled CSS and JS"></a></h2>
     <p>Download ready-to-use compiled code for <strong>Bootstrap v5.3.8</strong> to easily drop into your project, which includes:</p>

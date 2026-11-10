@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Columns</h1>
-    <p>Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.</p>
+    <p class="lead">Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.</p>
 
     <Callout>
       <p><strong>Heads up!</strong> Be sure to <a href="/layout/grid">read the Grid page</a> first before diving into how to modify and customize your grid columns.</p>

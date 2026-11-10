@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Position</h1>
-    <p>Use these shorthand utilities for quickly configuring the position of an element.</p>
+    <p class="lead">Use these shorthand utilities for quickly configuring the position of an element.</p>
 
     <h2 id="position-values">Position values<a class="anchor-link" href="#position-values" aria-label="Link to Position values"></a></h2>
     <p>Quick positioning classes are available, though they are not responsive.</p>

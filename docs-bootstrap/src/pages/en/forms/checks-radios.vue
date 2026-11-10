@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Checks and radios</h1>
-    <p>Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
+    <p class="lead">Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
 
     <h2 id="approach">Approach<a class="anchor-link" href="#approach" aria-label="Link to Approach"></a></h2>
     <p>

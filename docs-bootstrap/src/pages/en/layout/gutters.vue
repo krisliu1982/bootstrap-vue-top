@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Gutters</h1>
-    <p>Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid system.</p>
+    <p class="lead">Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid system.</p>
 
     <h2 id="how-they-work">How they work<a class="anchor-link" href="#how-they-work" aria-label="Link to How they work"></a></h2>
     <ul>

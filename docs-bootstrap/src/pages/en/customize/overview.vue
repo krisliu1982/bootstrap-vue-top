@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Customize</h1>
-    <p>Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.</p>
+    <p class="lead">Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>There are multiple ways to customize Bootstrap. Your best path can depend on your project, the complexity of your build tools, the version of Bootstrap you’re using, browser support, and more.</p>

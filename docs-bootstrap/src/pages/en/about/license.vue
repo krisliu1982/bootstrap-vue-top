@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>License FAQs</h1>
-    <p>Commonly asked questions about Bootstrap’s open source license.</p>
+    <p class="lead">Commonly asked questions about Bootstrap’s open source license.</p>
 
     <p>Bootstrap is released under the MIT license and is copyright {new Date().getFullYear()}. Boiled down to smaller chunks, it can be described with the following conditions.</p>
     <h2 id="it-requires-you-to">It requires you to:<a class="anchor-link" href="#it-requires-you-to" aria-label="Link to It requires you to:"></a></h2>

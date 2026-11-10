@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Opacity</h1>
-    <p>Control the opacity of elements.</p>
+    <p class="lead">Control the opacity of elements.</p>
 
     <p>The <code>opacity</code> property sets the opacity level for an element. The opacity level describes the transparency level, where <code>1</code> is not transparent at all, <code>.5</code> is 50% visible, and <code>0</code> is completely transparent.</p>
     <p>Set the <code>opacity</code> of an element using <code>.opacity-{value}</code> utilities.</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Close button</h1>
-    <p>A generic close button for dismissing content like modals and alerts.</p>
+    <p class="lead">A generic close button for dismissing content like modals and alerts.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Provide an option to dismiss or close a component with <code>.btn-close</code>. Default styling is limited, but highly customizable. Modify the Sass variables to replace the default <code>background-image</code>. <strong>Be sure to include text for screen readers</strong>, as we’ve done with <code>aria-label</code>.</p>

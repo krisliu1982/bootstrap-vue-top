@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Button group</h1>
-    <p>Group a series of buttons together on a single line or stack them in a vertical column.</p>
+    <p class="lead">Group a series of buttons together on a single line or stack them in a vertical column.</p>
 
     <h2 id="basic-example">Basic example<a class="anchor-link" href="#basic-example" aria-label="Link to Basic example"></a></h2>
     <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>

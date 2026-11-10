@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Text</h1>
-    <p>Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
+    <p class="lead">Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
 
     <h2 id="text-alignment">Text alignment<a class="anchor-link" href="#text-alignment" aria-label="Link to Text alignment"></a></h2>
     <p>Easily realign text to components with text alignment classes. For start, end, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>

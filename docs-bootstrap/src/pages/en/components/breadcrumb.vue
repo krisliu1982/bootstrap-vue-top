@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Breadcrumb</h1>
-    <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+    <p class="lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.</p>

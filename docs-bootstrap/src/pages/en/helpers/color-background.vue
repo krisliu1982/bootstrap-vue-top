@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Color and background</h1>
-    <p>Set a background color with contrasting foreground color.</p>
+    <p class="lead">Set a background color with contrasting foreground color.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

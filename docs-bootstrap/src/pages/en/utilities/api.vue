@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Utility API</h1>
-    <p>The utility API is a Sass-based tool to generate utility classes.</p>
+    <p class="lead">The utility API is a Sass-based tool to generate utility classes.</p>
 
     <p>
       Bootstrap utilities are generated with our utility API and can be used to modify or extend our default set of utility classes via Sass. Our utility API is based on a series of Sass maps and functions for generating families of classes with various options. If you’re unfamiliar with Sass maps, read up on the

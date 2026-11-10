@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Layout</h1>
-    <p>Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
+    <p class="lead">Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
 
     <h2 id="forms">Forms<a class="anchor-link" href="#forms" aria-label="Link to Forms"></a></h2>
     <p>Every group of form fields should reside in a <code>&lt;form&gt;</code> element. Bootstrap provides no default styling for the <code>&lt;form&gt;</code> element, but there are some powerful browser features that are provided by default.</p>

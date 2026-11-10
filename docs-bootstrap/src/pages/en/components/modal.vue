@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Modal</h1>
-    <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+    <p class="lead">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.</p>

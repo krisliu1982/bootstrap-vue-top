@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Z-index</h1>
-    <p>While not a part of Bootstrap’s grid system, z-indexes play an important part in how our components overlay and interact with one another.</p>
+    <p class="lead">While not a part of Bootstrap’s grid system, z-indexes play an important part in how our components overlay and interact with one another.</p>
 
     <p>Several Bootstrap components utilize <code>z-index</code>, the CSS property that helps control layout by providing a third axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to properly layer navigation, tooltips and popovers, modals, and more.</p>
     <p>

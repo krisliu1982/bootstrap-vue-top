@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Placeholders</h1>
-    <p>Use loading placeholders (skeleton loaders) for your components or pages to indicate something may still be loading.</p>
+    <p class="lead">Use loading placeholders (skeleton loaders) for your components or pages to indicate something may still be loading.</p>
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>Placeholders can be used to enhance the experience of your application. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, color, and sizing can be easily customized with our utility classes.</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Range</h1>
-    <p>Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
+    <p class="lead">Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

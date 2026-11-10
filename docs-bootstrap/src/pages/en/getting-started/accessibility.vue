@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Accessibility</h1>
-    <p>A brief overview of Bootstrap’s features and limitations for the creation of accessible content.</p>
+    <p class="lead">A brief overview of Bootstrap’s features and limitations for the creation of accessible content.</p>
 
     <p>Bootstrap provides an easy-to-use framework of ready-made styles, layout tools, and interactive components, allowing developers to create websites and applications that are visually appealing, functionally rich, and accessible out of the box.</p>
     <h2 id="overview-and-limitations">Overview and limitations<a class="anchor-link" href="#overview-and-limitations" aria-label="Link to Overview and limitations"></a></h2>

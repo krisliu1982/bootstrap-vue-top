@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>RTL</h1>
-    <p>Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
+    <p class="lead">Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
 
     <h2 id="get-familiar">Get familiar<a class="anchor-link" href="#get-familiar" aria-label="Link to Get familiar"></a></h2>
     <p>

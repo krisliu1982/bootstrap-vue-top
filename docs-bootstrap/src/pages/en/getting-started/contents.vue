@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Contents</h1>
-    <p>Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
+    <p class="lead">Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
 
     <h2 id="compiled-bootstrap">Compiled Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="Link to Compiled Bootstrap"></a></h2>
     <p>Once downloaded, unzip the compressed folder and you’ll see something like this:</p>

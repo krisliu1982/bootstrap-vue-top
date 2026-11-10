@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Get started with Bootstrap</h1>
-    <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
+    <p class="lead">Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
 
     <h2 id="quick-start">Quick start<a class="anchor-link" href="#quick-start" aria-label="Link to Quick start"></a></h2>
 

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Migrating to v5</h1>
-    <p>Track and review changes to the Bootstrap source files, documentation, and components to help you migrate from v4 to v5.</p>
+    <p class="lead">Track and review changes to the Bootstrap source files, documentation, and components to help you migrate from v4 to v5.</p>
 
     <h2 id="v536">v5.3.6<a class="anchor-link" href="#v536" aria-label="Link to v5.3.6"></a></h2>
     <h3 id="dependencies">Dependencies<a class="anchor-link" href="#dependencies" aria-label="Link to Dependencies"></a></h3>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>JavaScript</h1>
-    <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
+    <p class="lead">Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
 
     <h2 id="individual-or-compiled">Individual or compiled<a class="anchor-link" href="#individual-or-compiled" aria-label="Link to Individual or compiled"></a></h2>
     <p>Plugins can be included individually (using Bootstrap’s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don’t include both).</p>

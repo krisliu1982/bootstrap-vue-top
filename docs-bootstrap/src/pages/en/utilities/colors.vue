@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Colors</h1>
-    <p>Convey meaning through `color` with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
+    <p class="lead">Convey meaning through `color` with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
 
     <Callout name="warning-color-assistive-technologies" />
     <h2 id="colors">Colors<a class="anchor-link" href="#colors" aria-label="Link to Colors"></a></h2>

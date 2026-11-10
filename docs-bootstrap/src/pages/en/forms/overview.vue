@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Forms</h1>
-    <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+    <p class="lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

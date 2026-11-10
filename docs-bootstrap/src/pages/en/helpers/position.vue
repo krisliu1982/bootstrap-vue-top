@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Position</h1>
-    <p>Use these helpers for quickly configuring the position of an element.</p>
+    <p class="lead">Use these helpers for quickly configuring the position of an element.</p>
 
     <h2 id="fixed-top">Fixed top<a class="anchor-link" href="#fixed-top" aria-label="Link to Fixed top"></a></h2>
     <p>Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.</p>

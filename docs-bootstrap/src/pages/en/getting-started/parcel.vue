@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Bootstrap and Parcel</h1>
-    <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
+    <p class="lead">The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Parcel.</p>
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="100%" alt="" /><Callout>
       <p>

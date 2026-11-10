@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Stretched link</h1>
-    <p>Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
+    <p class="lead">Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
 
     <p>
       Add <code>.stretched-link</code> to a link to make its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">containing block</a> clickable via a <code>::after</code> pseudo element. In most cases, this means that an element with <code>position: relative;</code> that contains a link with the

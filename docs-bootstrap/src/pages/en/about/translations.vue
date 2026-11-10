@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Translations</h1>
-    <p>Links to community-translated Bootstrap documentation sites.</p>
+    <p class="lead">Links to community-translated Bootstrap documentation sites.</p>
 
     <p>Community members have translated Bootstrap’s documentation into various languages. None are officially supported and they may not always be up-to-date.</p>
     <ul>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Components</h1>
-    <p>Learn how and why we build nearly all our components responsively and with base and modifier classes.</p>
+    <p class="lead">Learn how and why we build nearly all our components responsively and with base and modifier classes.</p>
 
     <h2 id="base-classes">Base classes<a class="anchor-link" href="#base-classes" aria-label="Link to Base classes"></a></h2>
     <p>Bootstrap’s components are largely built with a base-modifier nomenclature. We group as many shared properties as possible into a base class, like <code>.btn</code>, and then group individual styles for each variant into modifier classes, like <code>.btn-primary</code> or <code>.btn-success</code>.</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Cards</h1>
-    <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+    <p class="lead">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>

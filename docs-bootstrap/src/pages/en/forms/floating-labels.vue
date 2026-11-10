@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Floating labels</h1>
-    <p>Create beautifully simple form labels that float over your input fields.</p>
+    <p class="lead">Create beautifully simple form labels that float over your input fields.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Wrap a pair of <code>&lt;input class=&quot;form-control&quot;&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields.</p>

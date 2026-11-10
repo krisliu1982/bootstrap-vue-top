@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Clearfix</h1>
-    <p>Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
+    <p class="lead">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
 
     <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> <strong>to the parent element</strong>. Can also be used as a mixin.</p>
     <p>Use in HTML:</p>

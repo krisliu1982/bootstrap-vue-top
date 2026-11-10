@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Borders</h1>
-    <p>Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+    <p class="lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
 
     <h2 id="border">Border<a class="anchor-link" href="#border" aria-label="Link to Border"></a></h2>
     <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>

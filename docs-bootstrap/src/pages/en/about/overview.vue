@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>About Bootstrap</h1>
-    <p>Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.</p>
+    <p class="lead">Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.</p>
 
     <h2 id="team">Team<a class="anchor-link" href="#team" aria-label="Link to Team"></a></h2>
     <p>Bootstrap is maintained by a <a href="https://github.com/orgs/twbs/people">small team of developers</a> on GitHub. We’re actively looking to grow this team and would love to hear from you if you’re excited about CSS at scale, writing and maintaining vanilla JavaScript plugins, and improving build tooling processes for frontend code.</p>

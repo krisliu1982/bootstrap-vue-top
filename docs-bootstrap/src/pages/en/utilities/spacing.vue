@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Spacing</h1>
-    <p>Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+    <p class="lead">Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
 
     <h2 id="margin-and-padding">Margin and padding<a class="anchor-link" href="#margin-and-padding" aria-label="Link to Margin and padding"></a></h2>
     <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.</p>

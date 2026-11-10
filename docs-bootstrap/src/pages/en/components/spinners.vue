@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Spinners</h1>
-    <p>Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.</p>
+    <p class="lead">Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.</p>
 
     <h2 id="about">About<a class="anchor-link" href="#about" aria-label="Link to About"></a></h2>
     <p>

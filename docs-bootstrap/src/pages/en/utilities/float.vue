@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Float</h1>
-    <p>Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
+    <p class="lead">Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Overflow</h1>
-    <p>Use these shorthand utilities for quickly configuring how content overflows an element.</p>
+    <p class="lead">Use these shorthand utilities for quickly configuring how content overflows an element.</p>
 
     <h2 id="overflow">Overflow<a class="anchor-link" href="#overflow" aria-label="Link to Overflow"></a></h2>
     <p>Adjust the <code>overflow</code> property on the fly with four default values and classes. These classes are not responsive by default.</p>

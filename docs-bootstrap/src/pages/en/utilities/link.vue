@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Link</h1>
-    <p>Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
+    <p class="lead">Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
 
     <h2 id="link-opacity">Link opacity<a class="anchor-link" href="#link-opacity" aria-label="Link to Link opacity"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Focus ring</h1>
-    <p>Utility classes that allows you to add and modify custom focus ring styles to elements and components.</p>
+    <p class="lead">Utility classes that allows you to add and modify custom focus ring styles to elements and components.</p>
 
     <p>The <code>.focus-ring</code> helper removes the default <code>outline</code> on <code>:focus</code>, replacing it with a <code>box-shadow</code> that can be more broadly customized. The new shadow is made up of a series of CSS variables, inherited from the <code>:root</code> level, that can be modified for any element or component.</p>
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Z-index</h1>
-    <p>Use our low-level `z-index` utilities to quickly change the stack level of an element or component.</p>
+    <p class="lead">Use our low-level `z-index` utilities to quickly change the stack level of an element or component.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Use <code>z-index</code> utilities to stack elements on top of one another. Requires a <code>position</code> value other than <code>static</code>, which can be set with custom styles or using our <a href="/utilities/position/">position utilities</a>.</p>

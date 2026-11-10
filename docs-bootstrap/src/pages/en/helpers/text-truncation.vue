@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Text truncation</h1>
-    <p>Truncate long strings of text with an ellipsis.</p>
+    <p class="lead">Truncate long strings of text with an ellipsis.</p>
 
     <p>
       For longer content, you can add a <code>.text-truncate</code> class to truncate the text with an ellipsis.

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Breakpoints</h1>
-    <p>Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.</p>
+    <p class="lead">Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.</p>
 
     <h2 id="core-concepts">Core concepts<a class="anchor-link" href="#core-concepts" aria-label="Link to Core concepts"></a></h2>
     <ul>

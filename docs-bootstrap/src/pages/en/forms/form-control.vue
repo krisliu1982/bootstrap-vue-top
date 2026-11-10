@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Form controls</h1>
-    <p>Give textual form controls like `&lt;input&gt;`s and `&lt;textarea&gt;`s an upgrade with custom styles, sizing, focus states, and more.</p>
+    <p class="lead">Give textual form controls like `&lt;input&gt;`s and `&lt;textarea&gt;`s an upgrade with custom styles, sizing, focus states, and more.</p>
 
     <h2 id="example">Example<a class="anchor-link" href="#example" aria-label="Link to Example"></a></h2>
     <p>Form controls are styled with a mix of Sass and CSS variables, allowing them to adapt to color modes and support any customization method.</p>

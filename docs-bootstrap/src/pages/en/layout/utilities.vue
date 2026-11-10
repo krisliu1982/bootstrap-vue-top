@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Utilities for layout</h1>
-    <p>For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.</p>
+    <p class="lead">For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.</p>
 
     <h2 id="changing-display">Changing <code>display</code><a class="anchor-link" href="#changing-display" aria-label="Link to Changing display"></a></h2>
     <p>Use our <a href="/utilities/display">display utilities</a> for responsively toggling common values of the <code>display</code> property. Mix it with our grid system, content, or components to show or hide them across specific viewports.</p>

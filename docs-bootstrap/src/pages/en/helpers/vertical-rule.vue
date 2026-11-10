@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Vertical rule</h1>
-    <p>Use the custom vertical rule helper to create vertical dividers like the `&lt;hr&gt;` element.</p>
+    <p class="lead">Use the custom vertical rule helper to create vertical dividers like the `&lt;hr&gt;` element.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>Vertical rules are inspired by the <code>&lt;hr&gt;</code> element, allowing you to create vertical dividers in common layouts. They’re styled just like <code>&lt;hr&gt;</code> elements:</p>

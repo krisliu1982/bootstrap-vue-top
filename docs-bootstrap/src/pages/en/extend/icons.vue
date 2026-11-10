@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Icons</h1>
-    <p>Guidance and suggestions for using external icon libraries with Bootstrap.</p>
+    <p class="lead">Guidance and suggestions for using external icon libraries with Bootstrap.</p>
 
     <p>While Bootstrap doesn’t include an icon set by default, we do have our own comprehensive icon library called Bootstrap Icons. Feel free to use them or any other icon set in your project. We’ve included details for Bootstrap Icons and other preferred icon sets below.</p>
     <p>While most icon sets include multiple file formats, we prefer SVG implementations for their improved accessibility and vector support.</p>

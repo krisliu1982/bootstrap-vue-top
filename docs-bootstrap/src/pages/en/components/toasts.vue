@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Toasts</h1>
-    <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
+    <p class="lead">Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
 
     <p>Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems. They’re built with flexbox, so they’re easy to align and position.</p>
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Collapse</h1>
-    <p>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
+    <p class="lead">Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
 
     <h2 id="how-it-works">How it works<a class="anchor-link" href="#how-it-works" aria-label="Link to How it works"></a></h2>
     <p>

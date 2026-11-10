@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Tooltips</h1>
-    <p>Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.</p>
+    <p class="lead">Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Things to know when using the tooltip plugin:</p>

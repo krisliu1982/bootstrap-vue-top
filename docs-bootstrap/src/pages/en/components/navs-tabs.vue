@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Navs and tabs</h1>
-    <p>Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+    <p class="lead">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
 
     <h2 id="base-nav">Base nav<a class="anchor-link" href="#base-nav" aria-label="Link to Base nav"></a></h2>
     <p>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>

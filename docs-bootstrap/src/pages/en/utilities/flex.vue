@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Flex</h1>
-    <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+    <p class="lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
 
     <h2 id="enable-flex-behaviors">Enable flex behaviors<a class="anchor-link" href="#enable-flex-behaviors" aria-label="Link to Enable flex behaviors"></a></h2>
     <p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>

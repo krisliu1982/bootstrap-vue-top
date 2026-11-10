@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Popovers</h1>
-    <p>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
+    <p class="lead">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
 
     <h2 id="overview">Overview<a class="anchor-link" href="#overview" aria-label="Link to Overview"></a></h2>
     <p>Things to know when using the popover plugin:</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Vertical alignment</h1>
-    <p>Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
+    <p class="lead">Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
 
     <p>
       Change the alignment of elements with the

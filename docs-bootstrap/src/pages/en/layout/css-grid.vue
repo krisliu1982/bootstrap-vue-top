@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>CSS Grid</h1>
-    <p>Learn how to enable, use, and customize our alternate layout system built on CSS Grid with examples and code snippets.</p>
+    <p class="lead">Learn how to enable, use, and customize our alternate layout system built on CSS Grid with examples and code snippets.</p>
 
     <p>Bootstrap’s default grid system represents the culmination of over a decade of CSS layout techniques, tried and tested by millions of people. But, it was also created without many of the modern CSS features and techniques we’re seeing in browsers like the new CSS Grid.</p>
     <Callout type="warning">
