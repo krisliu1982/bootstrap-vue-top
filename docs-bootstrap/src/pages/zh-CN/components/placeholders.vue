@@ -11,11 +11,11 @@
       <div class="bd-example border rounded-top bd-example-placeholder-cards d-flex justify-content-around">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" :text="false" background="#20c997" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">一些用于构建卡片标题的简短示例文本，并构成卡片内容的大部分。</p>
-           <a href="#" class="btn btn-primary">前往某处</a>
-          </div>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
         </div>
         <div class="card" aria-hidden="true">
           <Placeholder width="100%" height="180" class="card-img-top" :text="false" />
@@ -42,7 +42,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 

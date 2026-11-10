@@ -19,7 +19,7 @@
 </figure>'
       ><figure class="figure">
         <Placeholder width="400" height="300" class="figure-img img-fluid rounded" />
-        <figcaption class="figure-caption">上方图片的说明文字。</figcaption>
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
       </figure></ExampleCustom
     >
     <p>
@@ -33,7 +33,7 @@
 </figure>'
       ><figure class="figure">
         <Placeholder width="400" height="300" class="figure-img img-fluid rounded" />
-        <figcaption class="figure-caption text-end">上方图片的说明文字。</figcaption>
+        <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
       </figure></ExampleCustom
     >
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>

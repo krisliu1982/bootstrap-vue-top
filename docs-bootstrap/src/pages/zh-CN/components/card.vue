@@ -19,15 +19,15 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
       ><div class="card" style="width: 18rem">
         <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
-          <h5 class="card-title">卡片标题</h5>
-          <p class="card-text">一些快速示例文本，用于在卡片标题基础上构建并构成卡片内容的主体。</p>
-         <a href="#" class="btn btn-primary">前往某处</a>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div></ExampleCustom
     >
@@ -51,8 +51,8 @@
     <h5 class="card-title">Card title</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-   <a href="#" class="card-link">Card link</a>
-   <a href="#" class="card-link">Another link</a>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
   </div>
 </div>'
     />
@@ -68,7 +68,7 @@
       ><div class="card" style="width: 18rem">
         <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
-          <p class="card-text">一些快速示例文本，用于在卡片标题基础上构建并构成卡片内容的主体。</p>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         </div>
       </div></ExampleCustom
     >
@@ -127,18 +127,18 @@
       ><div class="card" style="width: 18rem">
         <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
-          <h5 class="card-title">卡片标题</h5>
-          <p class="card-text">一些快速示例文本，用于在卡片标题基础上构建并构成卡片内容的主体。</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">一个项目</li>
-          <li class="list-group-item">第二个项目</li>
-          <li class="list-group-item">第三个项目</li>
-        </ul>
-        <div class="card-body">
-         <a href="#" class="card-link">卡片链接</a>
-         <a href="#" class="card-link">另一个链接</a>
-        </div>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+   <a href="#" class="card-link">Card link</a>
+   <a href="#" class="card-link">Another link</a>
+  </div>
       </div></ExampleCustom
     >
     <h3 id="header-and-footer">页眉和页脚<a class="anchor-link" href="#header-and-footer" aria-label="页眉和页脚链接"></a></h3>
@@ -151,7 +151,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -162,7 +162,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     /><Example
@@ -189,7 +189,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
   <div class="card-footer text-body-secondary">
     2 days ago
@@ -207,7 +207,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -216,7 +216,7 @@
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -229,7 +229,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Button</a>
+    <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>
 
@@ -237,7 +237,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Button</a>
+    <a href="#" class="btn btn-primary">Button</a>
   </div>
 </div>'
     />
@@ -248,7 +248,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -262,7 +262,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -270,7 +270,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
@@ -278,7 +278,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -305,7 +305,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     /><Example
@@ -326,7 +326,7 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>'
     />
@@ -354,17 +354,17 @@
       ><div class="card mb-3">
         <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
         <div class="card-body">
-          <h5 class="card-title">卡片标题</h5>
-          <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-        </div>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
       </div>
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">卡片标题</h5>
-          <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-        </div>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
         <Placeholder width="100%" height="180" class="card-img-bottom" text="Image cap" /></div
     ></ExampleCustom>
     <h3 id="image-overlays">图片叠加<a class="anchor-link" href="#image-overlays" aria-label="图片叠加链接"></a></h3>
@@ -381,10 +381,10 @@
       ><div class="card text-bg-dark">
         <Placeholder width="100%" height="270" class="bd-placeholder-img-lg card-img" text="Card image" />
         <div class="card-img-overlay">
-          <h5 class="card-title">卡片标题</h5>
-          <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-          <p class="card-text"><small>3 分钟前更新</small></p>
-        </div>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
       </div></ExampleCustom
     >
     <Callout>
@@ -416,11 +416,11 @@
             <Placeholder width="100%" height="250" text="Image" class="img-fluid rounded-start" />
           </div>
           <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
           </div>
         </div>
       </div></ExampleCustom
@@ -518,27 +518,27 @@
       ><div class="card-group">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-          </div>
+<div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
         </div>
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这张卡片下方带有支持性文字，作为附加内容的自然引导。</p>
-            <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-          </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
         </div>
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。这张卡片的内容比第一张更长，以展示等高效果。</p>
-            <p class="card-text"><small class="text-body-secondary">3 分钟前更新</small></p>
-          </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
         </div>
       </div></ExampleCustom
     >
@@ -579,33 +579,33 @@
       ><div class="card-group">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">3 分钟前更新</small>
-          </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div>
         </div>
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这张卡片下方带有支持性文字，作为附加内容的自然引导。</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">3 分钟前更新</small>
-          </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div>
         </div>
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-          <div class="card-body">
-            <h5 class="card-title">卡片标题</h5>
-            <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。这张卡片的内容比第一张更长，以展示等高效果。</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">3 分钟前更新</small>
-          </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Last updated 3 mins ago</small>
+    </div>
         </div>
       </div></ExampleCustom
     >
@@ -657,37 +657,37 @@
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
       </div></ExampleCustom
@@ -736,37 +736,37 @@
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
       </div></ExampleCustom
@@ -815,37 +815,37 @@
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张简短的卡片。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="140" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较长的卡片，下方带有支持性文字，作为附加内容的自然引导。这段内容稍微长一些。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
           </div>
         </div>
       </div></ExampleCustom
@@ -894,36 +894,36 @@
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。 This content is a little bit longer.</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
             <div class="card-footer">
-              <small class="text-body-secondary">3 分钟前更新</small>
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这张卡片下方带有支持性文字，作为附加内容的自然引导。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
             <div class="card-footer">
-              <small class="text-body-secondary">3 分钟前更新</small>
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
             <Placeholder width="100%" height="180" class="card-img-top" text="Image cap" />
-            <div class="card-body">
-              <h5 class="card-title">卡片标题</h5>
-              <p class="card-text">这是一张较宽的卡片，下方带有支持性文字，作为附加内容的自然引导。这张卡片的内容比第一张更长，以展示等高效果。</p>
-            </div>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
             <div class="card-footer">
-              <small class="text-body-secondary">3 分钟前更新</small>
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
