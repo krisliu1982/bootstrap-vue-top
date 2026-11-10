@@ -1,3 +1,3 @@
 <template>
-  <p>The animation effect of this component is dependent on the <code>prefers-reduced-motion</code> media query. See the <a href="/docs/5.3/getting-started/accessibility/#reduced-motion">reduced motion section of our accessibility documentation</a>.</p>
+  <p>此组件的动画效果依赖于 <code>prefers-reduced-motion</code> 媒体查询。请参阅<a href="/getting-started/accessibility/#reduced-motion">我们的无障碍访问文档中的减少动态效果章节</a>。</p>
 </template>

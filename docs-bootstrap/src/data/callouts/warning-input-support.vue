@@ -1,3 +1,3 @@
 <template>
-  <p>Some date inputs types are <a href="https://caniuse.com/input-datetime">not fully supported</a> by the latest versions of Safari and Firefox.</p>
+  <p>某些日期输入类型在最新版本的 Safari 和 Firefox 中<a href="https://caniuse.com/input-datetime">并未得到完全支持</a>。</p>
 </template>

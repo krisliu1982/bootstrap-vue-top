@@ -1,3 +1,3 @@
 <template>
-  <p>Feel free to use either <code>title</code> or <code>data-bs-title</code> in your HTML. When <code>title</code> is used, Popper will replace it automatically with <code>data-bs-title</code> when the element is rendered.</p>
+  <p>你可以在 HTML 中随意使用 <code>title</code> 或 <code>data-bs-title</code>。当使用 <code>title</code> 时，Popper 会在元素渲染时自动将其替换为 <code>data-bs-title</code>。</p>
 </template>
