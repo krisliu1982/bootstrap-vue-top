@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>图片</h1>
-    <p>关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。</p>
+    <p class="lead">关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。</p>
 
     <h2 id="responsive-images">响应式图片<a class="anchor-link" href="#responsive-images" aria-label="响应式图片链接"></a></h2>
     <p>Bootstrap 中的图片通过 <code>.img-fluid</code> 实现响应式。这会为图片应用 <code>max-width: 100%;</code> 和 <code>height: auto;</code>，使其随父级宽度缩放。</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>最佳实践</h1>
-    <p>了解我们从多年来开发和使用的 Bootstrap 过程中总结出的一些最佳实践。</p>
+    <p class="lead">了解我们从多年来开发和使用的 Bootstrap 过程中总结出的一些最佳实践。</p>
 
     <p>我们设计和开发 Bootstrap 时就考虑让它在多种环境中都能运行。以下是我们多年来亲自开发和使用的过程中总结出的一些最佳实践。</p>
     <Callout>

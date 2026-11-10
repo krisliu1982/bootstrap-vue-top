@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>折叠</h1>
-    <p>使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。</p>
+    <p class="lead">使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>

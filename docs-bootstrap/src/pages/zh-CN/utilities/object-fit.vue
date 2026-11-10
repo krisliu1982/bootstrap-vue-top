@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>对象适配</h1>
-    <p>使用对象适配工具类来修改替换元素（如 <code>&lt;img&gt;</code> 或 <code>&lt;video&gt;</code>）的内容应如何调整尺寸以适应其容器。</p>
+    <p class="lead">使用对象适配工具类来修改替换元素（如 <code>&lt;img&gt;</code> 或 <code>&lt;video&gt;</code>）的内容应如何调整尺寸以适应其容器。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>

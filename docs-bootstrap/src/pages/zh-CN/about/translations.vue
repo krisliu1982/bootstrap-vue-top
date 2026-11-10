@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>翻译</h1>
-    <p>链接到由社区翻译的 Bootstrap 文档站点。</p>
+    <p class="lead">链接到由社区翻译的 Bootstrap 文档站点。</p>
 
     <p>社区成员已将 Bootstrap 的文档翻译成多种语言。这些翻译均未获得官方支持，且可能并非始终是最新的。</p>
     <ul>

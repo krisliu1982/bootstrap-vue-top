@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>范围滑块</h1>
-    <p>使用我们自定义的范围输入框，获得一致的跨浏览器样式和内置的自定义能力。</p>
+    <p class="lead">使用我们自定义的范围输入框，获得一致的跨浏览器样式和内置的自定义能力。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>

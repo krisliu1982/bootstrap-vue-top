@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>布局工具类</h1>
-    <p>为了实现更快捷的移动优先和响应式开发，Bootstrap 包含了数十个用于显示、隐藏、对齐和间隔内容的工具类。</p>
+    <p class="lead">为了实现更快捷的移动优先和响应式开发，Bootstrap 包含了数十个用于显示、隐藏、对齐和间隔内容的工具类。</p>
 
     <h2 id="changing-display">更改 <code>display</code><a class="anchor-link" href="#changing-display" aria-label="更改 display 链接"></a></h2>
     <p>使用我们的<a href="/utilities/display">显示工具类</a>以响应式的方式切换 <code>display</code> 属性的常见值。将其与我们的网格系统、内容或组件结合使用，即可在特定视口中显示或隐藏它们。</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>定位</h1>
-    <p>使用这些工具类可以快速配置元素的位置。</p>
+    <p class="lead">使用这些工具类可以快速配置元素的位置。</p>
 
     <h2 id="fixed-top">固定顶部<a class="anchor-link" href="#fixed-top" aria-label="固定顶部链接"></a></h2>
     <p>将元素定位在视口顶部，横跨整个宽度。请务必理解项目中固定定位的影响；你可能需要添加额外的 CSS。</p>

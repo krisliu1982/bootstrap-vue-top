@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>CSS 变量</h1>
-    <p>使用 Bootstrap 的 CSS 自定义属性实现快速且具前瞻性的设计与开发。</p>
+    <p class="lead">使用 Bootstrap 的 CSS 自定义属性实现快速且具前瞻性的设计与开发。</p>
 
     <p>
       Bootstrap 在其编译后的 CSS 中包含许多

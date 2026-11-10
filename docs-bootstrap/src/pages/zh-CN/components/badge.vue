@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>徽章</h1>
-    <p>徽章的文档和示例，这是我们用于计数和标记的小型组件。</p>
+    <p class="lead">徽章的文档和示例，这是我们用于计数和标记的小型组件。</p>
 
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>

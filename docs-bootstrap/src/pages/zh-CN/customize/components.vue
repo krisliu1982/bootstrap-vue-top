@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>组件</h1>
-    <p>了解我们为何以及如何以响应式方式、使用基础类和修饰类来构建几乎所有组件。</p>
+    <p class="lead">了解我们为何以及如何以响应式方式、使用基础类和修饰类来构建几乎所有组件。</p>
 
     <h2 id="base-classes">基础类<a class="anchor-link" href="#base-classes" aria-label="基础类"></a></h2>
     <p>Bootstrap 的组件在很大程度上采用基础-修饰（base-modifier）命名法构建。我们将尽可能多的共享属性归入一个基础类，例如 <code>.btn</code>，然后将每个变体的单独样式归入修饰类，例如 <code>.btn-primary</code> 或 <code>.btn-success</code>。</p>

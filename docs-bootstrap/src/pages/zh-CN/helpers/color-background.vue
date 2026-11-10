@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>颜色与背景</h1>
-    <p>设置带有对比前景色的背景色。</p>
+    <p class="lead">设置带有对比前景色的背景色。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>

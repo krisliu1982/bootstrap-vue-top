@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>排版</h1>
-    <p>关于 Bootstrap 排版的文档和示例，包括全局设置、标题、正文文本、列表等。</p>
+    <p class="lead">关于 Bootstrap 排版的文档和示例，包括全局设置、标题、正文文本、列表等。</p>
 
     <h2 id="global-settings">全局设置<a class="anchor-link" href="#global-settings" aria-label="全局设置链接"></a></h2>
     <p>

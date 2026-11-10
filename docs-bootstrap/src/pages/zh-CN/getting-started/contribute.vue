@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>参与贡献</h1>
-    <p>使用我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
+    <p class="lead">使用我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 
     <h2 id="tooling-setup">工具设置<a class="anchor-link" href="#tooling-setup" aria-label="工具设置链接"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>图片说明（Figures）</h1>
-    <p>在 Bootstrap 中使用 figure 组件展示相关图片和文字的文档与示例。</p>
+    <p class="lead">在 Bootstrap 中使用 figure 组件展示相关图片和文字的文档与示例。</p>
 
     <p>
       每当你需要展示某段内容时——比如带可选说明文字的图片，都可以考虑使用

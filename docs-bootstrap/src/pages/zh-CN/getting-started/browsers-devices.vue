@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>浏览器与设备</h1>
-    <p>了解 Bootstrap 支持的各种浏览器与设备（从新到旧），包括各自已知的怪异表现和缺陷。</p>
+    <p class="lead">了解 Bootstrap 支持的各种浏览器与设备（从新到旧），包括各自已知的怪异表现和缺陷。</p>
 
     <h2 id="supported-browsers">支持的浏览器<a class="anchor-link" href="#supported-browsers" aria-label="支持的浏览器链接"></a></h2>
     <p>Bootstrap 支持所有主流浏览器和平台的<strong>最新稳定版本</strong>。</p>

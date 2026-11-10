@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>视觉上隐藏</h1>
-    <p>使用这些工具类可以在视觉上隐藏元素，同时保持其对辅助技术的可访问性。</p>
+    <p class="lead">使用这些工具类可以在视觉上隐藏元素，同时保持其对辅助技术的可访问性。</p>
 
     <p>
       使用 <code>.visually-hidden</code> 可以在视觉上隐藏元素，同时仍然允许其暴露给辅助技术（如屏幕阅读器）。使用 <code>.visually-hidden-focusable</code> 可以默认在视觉上隐藏元素，但在其获得焦点时（例如由仅使用键盘的用户操作）显示它。

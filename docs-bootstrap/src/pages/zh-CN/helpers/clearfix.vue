@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>清除浮动</h1>
-    <p>通过添加清除浮动工具类，快速轻松地清除容器内的浮动内容。</p>
+    <p class="lead">通过添加清除浮动工具类，快速轻松地清除容器内的浮动内容。</p>
 
     <p>为<strong>父元素</strong>添加 <code>.clearfix</code> 即可轻松清除 <code>float</code> 浮动。它也可以作为 mixin 使用。</p>
     <p>在 HTML 中的用法：</p>

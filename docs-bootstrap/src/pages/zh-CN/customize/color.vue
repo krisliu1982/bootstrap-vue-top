@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>颜色</h1>
-    <p>Bootstrap 由一个完善的颜色系统支撑，为我们的样式和组件提供主题。这使任何项目都能进行更全面的自定义和扩展。</p>
+    <p class="lead">Bootstrap 由一个完善的颜色系统支撑，为我们的样式和组件提供主题。这使任何项目都能进行更全面的自定义和扩展。</p>
 
     <h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色"></a></h2>
     <AddedIn version="5.3.0" />

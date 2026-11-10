@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>轮播</h1>
-    <p>用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播一样。</p>
+    <p class="lead">用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播一样。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <ul>

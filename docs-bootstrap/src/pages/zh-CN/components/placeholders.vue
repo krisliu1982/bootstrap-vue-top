@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>占位符</h1>
-    <p>为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。</p>
+    <p class="lead">为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
     <p>占位符可用于提升应用程序的用户体验。它们仅由 HTML 和 CSS 构建，这意味着你不需要任何 JavaScript 就能创建它们。不过，你仍需要一些自定义 JavaScript 来切换它们的可见性。它们的外观、颜色和尺寸可以通过我们的工具类轻松自定义。</p>

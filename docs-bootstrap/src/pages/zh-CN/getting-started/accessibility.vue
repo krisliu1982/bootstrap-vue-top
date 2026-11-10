@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>无障碍访问</h1>
-    <p>简要概述 Bootstrap 在创建无障碍内容方面的特性和局限。</p>
+    <p class="lead">简要概述 Bootstrap 在创建无障碍内容方面的特性和局限。</p>
 
     <p>Bootstrap 提供了一套易于使用的框架，包含现成的样式、布局工具和交互组件，让开发者开箱即用地创建美观、功能丰富且无障碍的网站和应用程序。</p>
     <h2 id="overview-and-limitations">概述与局限<a class="anchor-link" href="#overview-and-limitations" aria-label="概述与局限链接"></a></h2>

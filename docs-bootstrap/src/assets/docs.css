@@ -725,11 +725,6 @@
       }
   }
 
-  .bd-content>h1+p{
-        font-size: 1.5rem;
-        font-weight: 300;
-  }
-
   .bd-content>h2:not(:first-child) {
       margin-top: 3rem
   }

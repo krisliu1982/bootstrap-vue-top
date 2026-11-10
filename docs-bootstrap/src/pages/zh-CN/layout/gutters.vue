@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>间距（Gutters）</h1>
-    <p>间距是列与列之间的内边距，用于在 Bootstrap 网格系统中以响应式的方式分隔和对齐内容。</p>
+    <p class="lead">间距是列与列之间的内边距，用于在 Bootstrap 网格系统中以响应式的方式分隔和对齐内容。</p>
 
     <h2 id="how-they-work">工作原理<a class="anchor-link" href="#how-they-work" aria-label="工作原理链接"></a></h2>
     <ul>

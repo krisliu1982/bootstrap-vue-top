@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>折叠面板</h1>
-    <p>结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。</p>
+    <p class="lead">结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>折叠面板内部使用<a href="/components/collapse">折叠</a>来使其可折叠。</p>

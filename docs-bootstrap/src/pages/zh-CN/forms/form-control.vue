@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>表单控件</h1>
-    <p>通过自定义样式、尺寸、聚焦状态等，升级 `&lt;input&gt;` 和 `&lt;textarea&gt;` 等文本表单控件。</p>
+    <p class="lead">通过自定义样式、尺寸、聚焦状态等，升级 `&lt;input&gt;` 和 `&lt;textarea&gt;` 等文本表单控件。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>表单控件使用 Sass 和 CSS 变量组合进行样式设置，使其能够适配颜色模式并支持任何自定义方式。</p>

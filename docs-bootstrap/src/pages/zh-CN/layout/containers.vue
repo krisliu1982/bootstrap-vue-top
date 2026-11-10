@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>容器</h1>
-    <p>容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。</p>
+    <p class="lead">容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。</p>
 
     <h2 id="how-they-work">工作原理<a class="anchor-link" href="#how-they-work" aria-label="工作原理链接"></a></h2>
     <p>

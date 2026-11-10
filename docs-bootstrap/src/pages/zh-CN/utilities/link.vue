@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>链接</h1>
-    <p>链接工具类用于美化锚点，以调整其颜色、不透明度、下划线偏移、下划线颜色等。</p>
+    <p class="lead">链接工具类用于美化锚点，以调整其颜色、不透明度、下划线偏移、下划线颜色等。</p>
 
     <h2 id="link-opacity">链接不透明度<a class="anchor-link" href="#link-opacity" aria-label="链接不透明度链接"></a></h2>
     <p>

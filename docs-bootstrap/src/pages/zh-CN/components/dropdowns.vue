@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>下拉菜单</h1>
-    <p>使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。</p>
+    <p class="lead">使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>

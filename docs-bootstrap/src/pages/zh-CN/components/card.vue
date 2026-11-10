@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>卡片</h1>
-    <p>Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，并带有多种变体和选项。</p>
+    <p class="lead">Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，并带有多种变体和选项。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
     <p>

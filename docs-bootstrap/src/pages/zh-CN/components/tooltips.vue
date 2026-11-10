@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>工具提示</h1>
-    <p>如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 工具提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。</p>
+    <p class="lead">如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 工具提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。</p>
 
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
     <p>使用工具提示插件时需要了解的事项：</p>

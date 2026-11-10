@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>关于 Bootstrap</h1>
-    <p>进一步了解维护 Bootstrap 的团队、项目的起源与原因，以及如何参与其中。</p>
+    <p class="lead">进一步了解维护 Bootstrap 的团队、项目的起源与原因，以及如何参与其中。</p>
 
     <h2 id="team">团队<a class="anchor-link" href="#team" aria-label="团队链接"></a></h2>
     <p>Bootstrap 由 GitHub 上一个<a href="https://github.com/orgs/twbs/people">小型开发者团队</a>维护。我们正在积极扩充这个团队，如果你对大规模 CSS、编写与维护原生 JavaScript 插件，以及改进前端代码的构建工具流程充满热情，我们非常期待你的加入。</p>

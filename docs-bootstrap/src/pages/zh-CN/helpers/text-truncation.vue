@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>文本截断</h1>
-    <p>使用省略号截断长字符串文本。</p>
+    <p class="lead">使用省略号截断长字符串文本。</p>
 
     <p>
       对于较长的内容，你可以添加 <code>.text-truncate</code> 类，用省略号截断文本。

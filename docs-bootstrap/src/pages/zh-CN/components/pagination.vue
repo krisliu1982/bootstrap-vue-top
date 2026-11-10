@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>分页</h1>
-    <p>用于展示分页、表示一系列相关内容分布在多个页面上的文档和示例。</p>
+    <p class="lead">用于展示分页、表示一系列相关内容分布在多个页面上的文档和示例。</p>
 
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
     <p>

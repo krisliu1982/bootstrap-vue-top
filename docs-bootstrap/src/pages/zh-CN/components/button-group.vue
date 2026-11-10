@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>按钮组</h1>
-    <p>将一系列按钮组合在同一行中，或将它们堆叠成一列。</p>
+    <p class="lead">将一系列按钮组合在同一行中，或将它们堆叠成一列。</p>
 
     <h2 id="basic-example">基本示例<a class="anchor-link" href="#basic-example" aria-label="基本示例链接"></a></h2>
     <p>将一系列带有 <code>.btn</code> 的按钮包裹在 <code>.btn-group</code> 中。</p>

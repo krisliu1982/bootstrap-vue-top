@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>迁移到 v5</h1>
-    <p>跟踪并查阅 Bootstrap 源文件、文档和组件的变更，以便帮助你从 v4 迁移到 v5。</p>
+    <p class="lead">跟踪并查阅 Bootstrap 源文件、文档和组件的变更，以便帮助你从 v4 迁移到 v5。</p>
 
     <h2 id="v536">v5.3.6<a class="anchor-link" href="#v536" aria-label="v5.3.6链接"></a></h2>
     <h3 id="dependencies">依赖项<a class="anchor-link" href="#dependencies" aria-label="依赖项链接"></a></h3>

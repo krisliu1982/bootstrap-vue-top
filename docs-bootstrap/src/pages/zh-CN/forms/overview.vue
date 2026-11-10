@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>表单</h1>
-    <p>表单控件样式、布局选项和自定义组件的示例与用法指南，帮助你创建各种各样的表单。</p>
+    <p class="lead">表单控件样式、布局选项和自定义组件的示例与用法指南，帮助你创建各种各样的表单。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>

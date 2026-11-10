@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>品牌指南</h1>
-    <p>Bootstrap 徽标与品牌使用指南的文档和示例。</p>
+    <p class="lead">Bootstrap 徽标与品牌使用指南的文档和示例。</p>
 
     <p>需要 Bootstrap 的品牌资源吗？太棒了！我们只遵循几条指南，也希望你同样遵守。</p>
     <h2 id="logo">徽标<a class="anchor-link" href="#logo" aria-label="徽标链接"></a></h2>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Bootstrap 与 Parcel</h1>
-    <p>关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
+    <p class="lead">关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="100%" alt="" /><Callout>
       <p>

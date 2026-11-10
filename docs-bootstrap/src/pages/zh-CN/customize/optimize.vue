@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>优化</h1>
-    <p>让你的项目保持精简、响应式且易于维护，从而提供最佳体验并专注于更重要的工作。</p>
+    <p class="lead">让你的项目保持精简、响应式且易于维护，从而提供最佳体验并专注于更重要的工作。</p>
 
     <h2 id="lean-sass-imports">精简 Sass 导入<a class="anchor-link" href="#lean-sass-imports" aria-label="精简 Sass 导入"></a></h2>
     <p>在资源处理流程中使用 Sass 时，请确保仅 <code>@import</code> 你需要的组件，以优化 Bootstrap。最大的优化空间通常来自 <code>bootstrap.scss</code> 中的 <code>Layout &amp; Components</code> 部分。</p>

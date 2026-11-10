@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>交互</h1>
-    <p>用于更改用户与网站内容交互方式的工具类。</p>
+    <p class="lead">用于更改用户与网站内容交互方式的工具类。</p>
 
     <h2 id="text-selection">文本选择<a class="anchor-link" href="#text-selection" aria-label="文本选择链接"></a></h2>
     <p>更改用户与内容交互时选择内容的方式。</p>

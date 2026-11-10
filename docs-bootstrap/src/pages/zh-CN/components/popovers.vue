@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>弹出框</h1>
-    <p>如何向站点中的任意元素添加 Bootstrap 弹出框（类似 iOS 中的弹出框）的文档和示例。</p>
+    <p class="lead">如何向站点中的任意元素添加 Bootstrap 弹出框（类似 iOS 中的弹出框）的文档和示例。</p>
 
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
     <p>使用弹出框插件时需要了解的事项：</p>

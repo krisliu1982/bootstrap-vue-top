@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>布局</h1>
-    <p>借助我们的表单布局选项，为表单赋予结构——从行内布局、水平布局到自定义网格实现，应有尽有。</p>
+    <p class="lead">借助我们的表单布局选项，为表单赋予结构——从行内布局、水平布局到自定义网格实现，应有尽有。</p>
 
     <h2 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h2>
     <p>每组表单字段都应放在 <code>&lt;form&gt;</code> 元素中。Bootstrap 不为 <code>&lt;form&gt;</code> 元素提供默认样式，但浏览器默认提供了一些强大的特性。</p>

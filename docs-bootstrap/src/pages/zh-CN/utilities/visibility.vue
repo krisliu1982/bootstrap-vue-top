@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>可见性</h1>
-    <p>使用可见性工具类在不修改元素显示方式的情况下控制元素的可见性。</p>
+    <p class="lead">使用可见性工具类在不修改元素显示方式的情况下控制元素的可见性。</p>
 
     <p>使用我们的可见性工具类设置元素的 <code>visibility</code>。这些工具类完全不修改 <code>display</code> 值，也不影响布局——<code>.invisible</code> 元素仍会在页面中占据空间。</p>
     <Callout type="warning">

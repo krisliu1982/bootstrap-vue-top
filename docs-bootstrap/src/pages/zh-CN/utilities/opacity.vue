@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>不透明度</h1>
-    <p>控制元素的不透明度。</p>
+    <p class="lead">控制元素的不透明度。</p>
 
     <p><code>opacity</code> 属性用于设置元素的不透明度级别。不透明度级别描述透明程度，其中 <code>1</code> 表示完全不透明，<code>.5</code> 表示 50% 可见，<code>0</code> 表示完全透明。</p>
     <p>使用 <code>.opacity-{value}</code> 工具类设置元素的 <code>opacity</code>。</p>

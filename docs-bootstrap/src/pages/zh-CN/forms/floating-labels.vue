@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>浮动标签</h1>
-    <p>创建简洁美观、浮动在输入框上方的表单标签。</p>
+    <p class="lead">创建简洁美观、浮动在输入框上方的表单标签。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>将一对 <code>&lt;input class=&quot;form-control&quot;&gt;</code> 和 <code>&lt;label&gt;</code> 元素包裹在 <code>.form-floating</code> 中，即可为 Bootstrap 的文本表单字段启用浮动标签。</p>

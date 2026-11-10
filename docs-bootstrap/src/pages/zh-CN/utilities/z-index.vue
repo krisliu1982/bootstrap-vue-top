@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Z-index</h1>
-    <p>使用我们的底层 `z-index` 工具类快速更改元素或组件的层叠层级。</p>
+    <p class="lead">使用我们的底层 `z-index` 工具类快速更改元素或组件的层叠层级。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>使用 <code>z-index</code> 工具类将元素相互堆叠。这要求 <code>position</code> 值不为 <code>static</code>，可以通过自定义样式或使用我们的<a href="/utilities/position/">定位工具类</a>来设置。</p>

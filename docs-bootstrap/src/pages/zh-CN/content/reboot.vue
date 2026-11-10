@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>重启动（Reboot）</h1>
-    <p>Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。</p>
+    <p class="lead">Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。</p>
 
     <h2 id="approach">实现思路<a class="anchor-link" href="#approach" aria-label="实现思路链接"></a></h2>
     <p>

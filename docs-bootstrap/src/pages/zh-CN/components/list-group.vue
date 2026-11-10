@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>列表组</h1>
-    <p>列表组是一个灵活而强大的组件，用于显示一系列内容。你可以修改和扩展它们，以支持几乎任意类型的内容。</p>
+    <p class="lead">列表组是一个灵活而强大的组件，用于显示一系列内容。你可以修改和扩展它们，以支持几乎任意类型的内容。</p>
 
     <h2 id="basic-example">基本示例<a class="anchor-link" href="#basic-example" aria-label="基本示例链接"></a></h2>
     <p>最基本的列表组是一个带有列表项和相应类的无序列表。可以使用后续介绍的选项，或根据需要配合你自己的 CSS 来扩展它。</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>复选框与单选按钮</h1>
-    <p>使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。</p>
+    <p class="lead">使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。</p>
 
     <h2 id="approach">实现方式<a class="anchor-link" href="#approach" aria-label="实现方式链接"></a></h2>
     <p>

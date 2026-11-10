@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Bootstrap 入门</h1>
-    <p>Bootstrap 是一个功能强大、特性丰富的前端工具包。只需几分钟，你就能构建从原型到生产环境的各种项目。</p>
+    <p class="lead">Bootstrap 是一个功能强大、特性丰富的前端工具包。只需几分钟，你就能构建从原型到生产环境的各种项目。</p>
 
     <h2 id="quick-start">快速开始<a class="anchor-link" href="#quick-start" aria-label="快速开始链接"></a></h2>
 

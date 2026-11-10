@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>面包屑导航</h1>
-    <p>在导航层级中指示当前页面的位置，并通过 CSS 自动添加分隔符。</p>
+    <p class="lead">在导航层级中指示当前页面的位置，并通过 CSS 自动添加分隔符。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>使用带有链接列表项的有序或无序列表，即可创建一个基础样式的面包屑导航。你可以根据需要，使用我们的工具类添加额外的样式。</p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>图标</h1>
-    <p>关于在 Bootstrap 中使用外部图标库的指导和建议。</p>
+    <p class="lead">关于在 Bootstrap 中使用外部图标库的指导和建议。</p>
 
     <p>虽然 Bootstrap 默认不包含图标集，但我们确实有自己的综合性图标库，名为 Bootstrap Icons。你可以随意在你的项目中使用它们或任何其他图标集。下面我们列出了 Bootstrap Icons 以及其他首选图标集的详细信息。</p>
     <p>虽然大多数图标集包含多种文件格式，但我们更青睐 SVG 实现，因为它们具有更好的可访问性和矢量支持。</p>

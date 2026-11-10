@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>警告框</h1>
-    <p>使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
+    <p class="lead">使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
 
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>警告框可容纳任意长度的文本，并可选带有关闭按钮。为了获得正确的样式，请使用八个<strong>必需的</strong>情境类之一（例如 <code>.alert-success</code>）。若需行内关闭，请使用<a href="#dismissing">警告框 JavaScript 插件</a>。</p>

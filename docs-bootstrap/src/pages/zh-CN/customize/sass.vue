@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Sass</h1>
-    <p>利用我们的 Sass 源文件，充分利用变量、映射、mixin 和函数，帮助你更快地构建并自定义项目。</p>
+    <p class="lead">利用我们的 Sass 源文件，充分利用变量、映射、mixin 和函数，帮助你更快地构建并自定义项目。</p>
 
     <p>利用我们的 Sass 源文件，充分利用变量、映射、mixin 等。</p>
     <Callout type="warning">

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>模态框</h1>
-    <p>使用 Bootstrap 的 JavaScript 模态框插件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。</p>
+    <p class="lead">使用 Bootstrap 的 JavaScript 模态框插件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>在开始使用 Bootstrap 的模态框组件之前，请务必阅读以下内容，因为我们的菜单选项最近有所变化。</p>

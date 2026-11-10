@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>画布外菜单</h1>
-    <p>只需几个类和我们提供的 JavaScript 插件，即可在项目中构建用于导航、购物车等的隐藏侧边栏。</p>
+    <p class="lead">只需几个类和我们提供的 JavaScript 插件，即可在项目中构建用于导航、购物车等的隐藏侧边栏。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>画布外菜单是一个侧边栏组件，可以通过 JavaScript 切换，从视口的左侧、右侧、顶部或底部边缘出现。按钮或锚点用作触发器并附加到你要切换的特定元素上，同时使用 <code>data</code> 属性来调用我们的 JavaScript。</p>

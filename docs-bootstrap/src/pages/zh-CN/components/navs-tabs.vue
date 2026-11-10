@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>导航与标签页</h1>
-    <p>关于如何使用 Bootstrap 内置导航组件的文档与示例。</p>
+    <p class="lead">关于如何使用 Bootstrap 内置导航组件的文档与示例。</p>
 
     <h2 id="base-nav">基础导航<a class="anchor-link" href="#base-nav" aria-label="基础导航链接"></a></h2>
     <p>Bootstrap 中提供的导航共享通用标记和样式，从基础的 <code>.nav</code> 类到激活和禁用状态皆是如此。切换修饰类即可在每种样式之间切换。</p>

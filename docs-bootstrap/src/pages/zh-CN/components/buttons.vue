@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>按钮</h1>
-    <p>使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，并支持多种尺寸、状态等。</p>
+    <p class="lead">使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，并支持多种尺寸、状态等。</p>
 
     <h2 id="base-class">基类<a class="anchor-link" href="#base-class" aria-label="基类链接"></a></h2>
     <p>Bootstrap 有一个基础类 <code>.btn</code>，用于设置内边距和内容对齐等基本样式。默认情况下，<code>.btn</code> 控件具有透明的边框和背景色，并且没有明确的焦点和悬停样式。</p>

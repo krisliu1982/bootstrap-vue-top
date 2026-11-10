@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>输入框组</h1>
-    <p>通过在文本输入框、自定义选择框和自定义文件输入框的任意一侧添加文本、按钮或按钮组，轻松扩展表单控件。</p>
+    <p class="lead">通过在文本输入框、自定义选择框和自定义文件输入框的任意一侧添加文本、按钮或按钮组，轻松扩展表单控件。</p>
 
     <h2 id="basic-example">基础示例<a class="anchor-link" href="#basic-example" aria-label="基础示例链接"></a></h2>
     <p>在输入框的任意一侧放置一个附加组件或按钮，也可以在输入框的两侧各放置一个。请记住将 <code>&lt;label&gt;</code> 放在输入框组之外。</p>

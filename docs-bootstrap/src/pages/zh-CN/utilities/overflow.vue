@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>溢出</h1>
-    <p>使用这些简写工具类可以快速配置内容如何溢出元素。</p>
+    <p class="lead">使用这些简写工具类可以快速配置内容如何溢出元素。</p>
 
     <h2 id="overflow">溢出<a class="anchor-link" href="#overflow" aria-label="溢出链接"></a></h2>
     <p>通过四个默认值和类，可即时调整 <code>overflow</code> 属性。这些类默认不是响应式的。</p>

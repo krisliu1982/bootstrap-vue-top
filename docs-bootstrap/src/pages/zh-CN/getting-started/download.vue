@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>下载</h1>
-    <p>下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。</p>
+    <p class="lead">下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。</p>
 
     <h2 id="compiled-css-and-js">编译后的 CSS 和 JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="编译后的 CSS 和 JS 链接"></a></h2>
     <p>下载 <strong>Bootstrap v5.3.8</strong> 可直接使用的编译代码，轻松放入你的项目中，其中包含：</p>

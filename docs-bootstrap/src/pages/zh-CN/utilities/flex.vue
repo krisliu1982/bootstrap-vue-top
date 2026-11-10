@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>弹性布局 (Flex)</h1>
-    <p>借助一整套响应式弹性布局工具类，快速管理网格列、导航、组件等的布局、对齐和尺寸。对于更复杂的实现，可能需要自定义 CSS。</p>
+    <p class="lead">借助一整套响应式弹性布局工具类，快速管理网格列、导航、组件等的布局、对齐和尺寸。对于更复杂的实现，可能需要自定义 CSS。</p>
 
     <h2 id="enable-flex-behaviors">启用弹性布局行为<a class="anchor-link" href="#enable-flex-behaviors" aria-label="启用弹性布局行为链接"></a></h2>
     <p>应用 <code>display</code> 工具类创建一个弹性布局容器，并将<strong>直接子元素</strong>转换为弹性项目。弹性容器和项目还可以通过额外的弹性属性进一步修改。</p>

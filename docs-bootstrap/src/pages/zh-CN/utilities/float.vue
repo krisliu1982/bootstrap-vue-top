@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>浮动</h1>
-    <p>使用我们的响应式浮动工具类，可在任意断点上切换任意元素的浮动状态。</p>
+    <p class="lead">使用我们的响应式浮动工具类，可在任意断点上切换任意元素的浮动状态。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>目录内容</h1>
-    <p>了解 Bootstrap 包含的内容，包括编译版本和源代码版本。</p>
+    <p class="lead">了解 Bootstrap 包含的内容，包括编译版本和源代码版本。</p>
 
     <h2 id="compiled-bootstrap">编译后的 Bootstrap<a class="anchor-link" href="#compiled-bootstrap" aria-label="编译后的 Bootstrap 链接"></a></h2>
     <p>下载后，解压压缩包，你会看到类似下面的目录结构：</p>

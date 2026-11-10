@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>背景</h1>
-    <p>通过 `background-color` 传达含义，并使用渐变添加装饰效果。</p>
+    <p class="lead">通过 `background-color` 传达含义，并使用渐变添加装饰效果。</p>
 
     <Callout name="warning-color-assistive-technologies" />
     <h2 id="background-color">背景色<a class="anchor-link" href="#background-color" aria-label="背景色链接"></a></h2>

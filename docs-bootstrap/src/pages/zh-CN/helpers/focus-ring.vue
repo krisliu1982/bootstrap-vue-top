@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>聚焦环</h1>
-    <p>用于向元素和组件添加及修改自定义聚焦环样式的工具类。</p>
+    <p class="lead">用于向元素和组件添加及修改自定义聚焦环样式的工具类。</p>
 
     <p><code>.focus-ring</code> 工具类会移除 <code>:focus</code> 状态下默认的 <code>outline</code>，并替换为可更广泛定制的 <code>box-shadow</code>。新的阴影由一系列继承自 <code>:root</code> 层级的 CSS 变量组成，可以为任意元素或组件进行修改。</p>
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>

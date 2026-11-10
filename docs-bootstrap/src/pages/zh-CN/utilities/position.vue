@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>定位</h1>
-    <p>使用这些简写工具类可以快速配置元素的位置。</p>
+    <p class="lead">使用这些简写工具类可以快速配置元素的位置。</p>
 
     <h2 id="position-values">定位值<a class="anchor-link" href="#position-values" aria-label="定位值链接"></a></h2>
     <p>提供了快速定位的类，不过它们不是响应式的。</p>

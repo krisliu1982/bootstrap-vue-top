@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>团队</h1>
-    <p>关于 Bootstrap 创始团队和核心贡献者的概述。</p>
+    <p class="lead">关于 Bootstrap 创始团队和核心贡献者的概述。</p>
 
     <p>Bootstrap 由创始团队和一小群不可或缺的核心贡献者维护，并得到了社区的巨力支持与参与。</p>
     <div class="list-group mb-3">

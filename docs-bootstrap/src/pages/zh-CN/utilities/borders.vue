@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>边框</h1>
-    <p>使用边框工具类可以快速设置元素的边框及圆角。非常适合图片、按钮或任何其他元素。</p>
+    <p class="lead">使用边框工具类可以快速设置元素的边框及圆角。非常适合图片、按钮或任何其他元素。</p>
 
     <h2 id="border">边框<a class="anchor-link" href="#border" aria-label="边框链接"></a></h2>
     <p>使用边框工具类添加或移除元素的边框。可选择全部边框，或逐条设置。</p>

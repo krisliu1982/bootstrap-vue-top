@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>文本</h1>
-    <p>用于控制对齐、换行、字重等的常用文本工具类的文档与示例。</p>
+    <p class="lead">用于控制对齐、换行、字重等的常用文本工具类的文档与示例。</p>
 
     <h2 id="text-alignment">文本对齐<a class="anchor-link" href="#text-alignment" aria-label="文本对齐"></a></h2>
     <p>使用文本对齐类可以轻松地重新对齐组件中的文本。对于起始、结束和居中对齐，还提供了使用与栅格系统相同视口宽度断点的响应式类。</p>

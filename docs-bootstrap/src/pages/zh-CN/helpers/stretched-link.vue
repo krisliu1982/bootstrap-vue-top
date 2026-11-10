@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>拉伸链接</h1>
-    <p>通过 CSS 将嵌套的链接“拉伸”，让任意 HTML 元素或 Bootstrap 组件都可被点击。</p>
+    <p class="lead">通过 CSS 将嵌套的链接“拉伸”，让任意 HTML 元素或 Bootstrap 组件都可被点击。</p>
 
     <p>
       为链接添加 <code>.stretched-link</code>，即可通过 <code>::after</code> 伪元素让其<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">包含块</a>可点击。在大多数情况下，这意味着一个带有 <code>position: relative;</code> 且包含带有

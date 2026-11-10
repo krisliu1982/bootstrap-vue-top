@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>彩色链接</h1>
-    <p>带有悬停状态的彩色链接</p>
+    <p class="lead">带有悬停状态的彩色链接</p>
 
     <h2 id="link-colors">链接颜色<a class="anchor-link" href="#link-colors" aria-label="链接颜色链接"></a></h2>
     <p>

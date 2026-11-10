@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>竖直分隔线</h1>
-    <p>使用自定义的竖直分隔线工具类创建类似 `&lt;hr&gt;` 元素的竖直分隔线。</p>
+    <p class="lead">使用自定义的竖直分隔线工具类创建类似 `&lt;hr&gt;` 元素的竖直分隔线。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>竖直分隔线的灵感来自 <code>&lt;hr&gt;</code> 元素，让你可以在常见布局中创建竖直分隔线。它们的样式与 <code>&lt;hr&gt;</code> 元素类似：</p>

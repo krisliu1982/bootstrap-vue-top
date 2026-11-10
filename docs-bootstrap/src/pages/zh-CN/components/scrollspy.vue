@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>滚动监听</h1>
-    <p>根据滚动位置自动更新 Bootstrap 导航或列表组组件，以指示视口中当前处于活动状态的链接。</p>
+    <p class="lead">根据滚动位置自动更新 Bootstrap 导航或列表组组件，以指示视口中当前处于活动状态的链接。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>

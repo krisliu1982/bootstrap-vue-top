@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>选项</h1>
-    <p>使用内置变量快速自定义 Bootstrap，轻松切换控制样式和行为的全局 CSS 偏好设置。</p>
+    <p class="lead">使用内置变量快速自定义 Bootstrap，轻松切换控制样式和行为的全局 CSS 偏好设置。</p>
 
     <p>
       使用我们内置的自定义变量文件自定义 Bootstrap，并通过新增的

@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>CSS Grid</h1>
-    <p>通过示例和代码片段，了解如何启用、使用和自定义我们基于 CSS Grid 构建的备用布局系统。</p>
+    <p class="lead">通过示例和代码片段，了解如何启用、使用和自定义我们基于 CSS Grid 构建的备用布局系统。</p>
 
     <p>Bootstrap 的默认网格系统代表了十多年 CSS 布局技术的结晶，经过了数百万人的反复验证。但它的创建过程并没有包含许多现代 CSS 特性和技术，比如我们在浏览器中看到的新的 CSS Grid。</p>
     <Callout type="warning">

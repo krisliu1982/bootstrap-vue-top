@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>颜色</h1>
-    <p>通过一些颜色工具类，用 `color` 传达含义。同时还支持为链接设置带有悬停状态的样式。</p>
+    <p class="lead">通过一些颜色工具类，用 `color` 传达含义。同时还支持为链接设置带有悬停状态的样式。</p>
 
     <Callout name="warning-color-assistive-technologies" />
     <h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色链接"></a></h2>

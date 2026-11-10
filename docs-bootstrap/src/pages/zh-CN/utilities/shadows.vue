@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>阴影</h1>
-    <p>使用 box-shadow 工具类为元素添加或移除阴影。</p>
+    <p class="lead">使用 box-shadow 工具类为元素添加或移除阴影。</p>
 
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>

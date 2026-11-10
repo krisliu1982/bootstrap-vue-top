@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>导航栏</h1>
-    <p>Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。</p>
+    <p class="lead">Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>以下是开始使用导航栏之前你需要了解的内容：</p>

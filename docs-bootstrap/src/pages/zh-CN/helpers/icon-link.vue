@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>图标链接</h1>
-    <p>使用 Bootstrap Icons 或其他图标快速创建风格化的超链接。</p>
+    <p class="lead">使用 Bootstrap Icons 或其他图标快速创建风格化的超链接。</p>
 
     <p>
       图标链接工具类组件修改了我们默认的链接样式，以提升其外观，并快速对齐任意图标与文本的组合。对齐方式通过内联弹性布局样式和默认的 <code>gap</code> 值设置。我们使用自定义的偏移量和颜色来设计下划线样式。图标会自动调整为 <code>1em</code>，以最好地匹配其关联文本的 <code>font-size</code>。

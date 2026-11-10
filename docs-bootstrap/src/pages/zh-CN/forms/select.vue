@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>选择框</h1>
-    <p>使用自定义 CSS 定制原生 `&lt;select&gt;`，改变元素的初始外观。</p>
+    <p class="lead">使用自定义 CSS 定制原生 `&lt;select&gt;`，改变元素的初始外观。</p>
 
     <h2 id="default">默认<a class="anchor-link" href="#default" aria-label="默认链接"></a></h2>
     <p>自定义 <code>&lt;select&gt;</code> 菜单只需一个自定义类 <code>.form-select</code> 即可触发自定义样式。由于浏览器限制，自定义样式仅限于 <code>&lt;select&gt;</code> 的初始外观，无法修改 <code>&lt;option&gt;</code>。</p>

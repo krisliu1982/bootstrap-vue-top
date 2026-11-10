@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>轻提示</h1>
-    <p>使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。</p>
+    <p class="lead">使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。</p>
 
     <p>轻提示是一种轻量级通知，旨在模仿移动端和桌面操作系统中流行的推送通知。它们基于 flexbox 构建，因此易于对齐和定位。</p>
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>

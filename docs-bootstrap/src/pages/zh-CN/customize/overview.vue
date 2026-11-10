@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>自定义</h1>
-    <p>了解如何使用 Sass、大量全局选项、扩展的颜色系统等来设置 Bootstrap 主题、自定义和扩展 Bootstrap。</p>
+    <p class="lead">了解如何使用 Sass、大量全局选项、扩展的颜色系统等来设置 Bootstrap 主题、自定义和扩展 Bootstrap。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述"></a></h2>
     <p>自定义 Bootstrap 有多种方式。最佳选择取决于你的项目、构建工具的复杂度、所使用的 Bootstrap 版本、浏览器支持等因素。</p>

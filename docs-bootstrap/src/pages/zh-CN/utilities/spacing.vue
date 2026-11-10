@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>间距</h1>
-    <p>Bootstrap 包含大量简写的响应式外边距、内边距和间隔（gap）工具类，用于修改元素的外观。</p>
+    <p class="lead">Bootstrap 包含大量简写的响应式外边距、内边距和间隔（gap）工具类，用于修改元素的外观。</p>
 
     <h2 id="margin-and-padding">外边距与内边距<a class="anchor-link" href="#margin-and-padding" aria-label="外边距与内边距链接"></a></h2>
     <p>使用简写类为元素或其部分边分配响应式友好的 <code>margin</code> 或 <code>padding</code> 值。支持单独属性、所有属性和垂直水平属性。这些类构建自一个默认的 Sass 映射，范围从 <code>.25rem</code> 到 <code>3rem</code>。</p>

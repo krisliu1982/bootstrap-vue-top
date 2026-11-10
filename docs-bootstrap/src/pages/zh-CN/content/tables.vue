@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>表格</h1>
-    <p>关于使用 Bootstrap 对表格进行选择性样式设置（鉴于它们在 JavaScript 插件中的广泛使用）的文档和示例。</p>
+    <p class="lead">关于使用 Bootstrap 对表格进行选择性样式设置（鉴于它们在 JavaScript 插件中的广泛使用）的文档和示例。</p>
 
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
     <p>

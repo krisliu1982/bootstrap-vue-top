@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>关闭按钮</h1>
-    <p>一个通用的关闭按钮，用于关闭模态框和警告框等内容。</p>
+    <p class="lead">一个通用的关闭按钮，用于关闭模态框和警告框等内容。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>使用 <code>.btn-close</code> 为组件提供关闭或隐藏选项。默认样式较为简单，但高度可自定义。修改 Sass 变量即可替换默认的 <code>background-image</code>。<strong>务必为屏幕阅读器提供文本</strong>，就像我们使用 <code>aria-label</code> 所做的那样。</p>

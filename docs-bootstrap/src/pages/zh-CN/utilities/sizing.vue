@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>尺寸</h1>
-    <p>使用我们的宽度和高度工具类，可以轻松设置元素的宽度或高度。</p>
+    <p class="lead">使用我们的宽度和高度工具类，可以轻松设置元素的宽度或高度。</p>
 
     <h2 id="relative-to-the-parent">相对于父元素<a class="anchor-link" href="#relative-to-the-parent" aria-label="相对于父元素链接"></a></h2>
     <p>宽度和高度工具类由 <code>_utilities.scss</code> 中的工具类 API 生成。默认支持 <code>25%</code>、<code>50%</code>、<code>75%</code>、<code>100%</code> 和 <code>auto</code>。根据需要修改这些值，即可在此处生成不同的工具类。</p>

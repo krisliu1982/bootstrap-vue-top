@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Z-index</h1>
-    <p>虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。</p>
+    <p class="lead">虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。</p>
 
     <p>多个 Bootstrap 组件都用到了 <code>z-index</code>，这个 CSS 属性通过提供第三条轴来排列内容，从而帮助控制布局。Bootstrap 使用了一套默认的 z-index 层级，旨在正确地对导航、工具提示和弹出框、模态框等进行分层。</p>
     <p>

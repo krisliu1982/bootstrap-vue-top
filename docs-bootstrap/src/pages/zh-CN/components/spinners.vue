@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>加载动画（Spinners）</h1>
-    <p>使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。</p>
+    <p class="lead">使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
     <p>

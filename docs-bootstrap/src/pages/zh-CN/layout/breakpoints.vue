@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>断点</h1>
-    <p>断点是可自定义的宽度，用于决定响应式布局在 Bootstrap 中跨设备或视口尺寸时的表现。</p>
+    <p class="lead">断点是可自定义的宽度，用于决定响应式布局在 Bootstrap 中跨设备或视口尺寸时的表现。</p>
 
     <h2 id="core-concepts">核心概念<a class="anchor-link" href="#core-concepts" aria-label="核心概念链接"></a></h2>
     <ul>

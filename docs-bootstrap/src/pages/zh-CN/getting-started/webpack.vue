@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>Bootstrap 与 Webpack</h1>
-    <p>本官方指南介绍如何使用 Webpack 在项目中引入和打包 Bootstrap 的 CSS 和 JavaScript。</p>
+    <p class="lead">本官方指南介绍如何使用 Webpack 在项目中引入和打包 Bootstrap 的 CSS 和 JavaScript。</p>
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png" width="100%" alt="" /><Callout>
       <p>

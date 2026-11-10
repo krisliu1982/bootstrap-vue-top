@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>JavaScript</h1>
-    <p>使用我们可选的 JavaScript 插件，让 Bootstrap 生动起来。了解每个插件、我们的数据 API 与编程式 API 选项等内容。</p>
+    <p class="lead">使用我们可选的 JavaScript 插件，让 Bootstrap 生动起来。了解每个插件、我们的数据 API 与编程式 API 选项等内容。</p>
 
     <h2 id="individual-or-compiled">单独引入或编译版本<a class="anchor-link" href="#individual-or-compiled" aria-label="单独引入或编译版本链接"></a></h2>
     <p>插件可以单独引入（使用 Bootstrap 各自的 <code>js/dist/*.js</code>），也可以通过 <code>bootstrap.js</code> 或压缩版 <code>bootstrap.min.js</code> 一次性全部引入（不要同时引入两者）。</p>

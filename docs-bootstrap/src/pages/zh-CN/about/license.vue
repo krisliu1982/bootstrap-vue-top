@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>许可证常见问题</h1>
-    <p>关于 Bootstrap 开源许可证的常见问题。</p>
+    <p class="lead">关于 Bootstrap 开源许可证的常见问题。</p>
 
     <p>Bootstrap 在 MIT 许可证下发布，版权归 {new Date().getFullYear()} 所有。简而言之，可以用以下条件来描述。</p>
     <h2 id="it-requires-you-to">它要求你：<a class="anchor-link" href="#it-requires-you-to" aria-label="它要求你：链接"></a></h2>

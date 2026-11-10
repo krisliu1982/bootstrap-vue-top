@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>工具类 API</h1>
-    <p>工具类 API 是一个基于 Sass 的工具，用于生成工具类。</p>
+    <p class="lead">工具类 API 是一个基于 Sass 的工具，用于生成工具类。</p>
 
     <p>
       Bootstrap 的工具类由我们的工具类 API 生成，你可以通过 Sass 修改或扩展默认的工具类集合。我们的工具类 API 基于一系列 Sass 映射和函数，用于生成带有各种选项的类族。如果你不熟悉 Sass 映射，请先阅读

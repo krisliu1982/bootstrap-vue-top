@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>比例</h1>
-    <p>使用生成的伪元素让元素保持你选择的长宽比。非常适合根据父元素宽度响应式地处理视频或幻灯片嵌入内容。</p>
+    <p class="lead">使用生成的伪元素让元素保持你选择的长宽比。非常适合根据父元素宽度响应式地处理视频或幻灯片嵌入内容。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
     <p>

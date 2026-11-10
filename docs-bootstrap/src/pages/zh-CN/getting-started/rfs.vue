@@ -1,7 +1,7 @@
 <template>
   <article class="bd-content">
     <h1>RFS</h1>
-    <p>Bootstrap 的尺寸调整引擎会响应式地缩放常用 CSS 属性，以便在各种视口和设备上更好地利用可用空间。</p>
+    <p class="lead">Bootstrap 的尺寸调整引擎会响应式地缩放常用 CSS 属性，以便在各种视口和设备上更好地利用可用空间。</p>
 
     <h2 id="what-is-rfs">什么是 RFS？<a class="anchor-link" href="#what-is-rfs" aria-label="什么是 RFS？链接"></a></h2>
     <p>
