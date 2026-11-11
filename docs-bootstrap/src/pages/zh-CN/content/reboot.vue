@@ -1,11 +1,11 @@
 <template>
   <article class="bd-content">
-    <h1>重启动（Reboot）</h1>
+    <h1>重置（Reboot）</h1>
     <p class="lead">Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。</p>
 
     <h2 id="approach">实现思路<a class="anchor-link" href="#approach" aria-label="实现思路链接"></a></h2>
     <p>
-      Reboot 构建在 Normalize 之上，仅使用元素选择器为许多 HTML 元素提供了略带主观倾向的样式。额外的样式仅通过类来实现。例如，我们重启动了一些
+      Reboot 构建在 Normalize 之上，仅使用元素选择器为许多 HTML 元素提供了略带主观倾向的样式。额外的样式仅通过类来实现。例如，我们重置了一些
       <code>&lt;table&gt;</code> 样式以获得更简单的基础，之后再提供 <code>.table</code>、<code>.table-bordered</code> 等类。
     </p>
     <p>以下是我们选择在 Reboot 中覆盖哪些内容的准则和理由：</p>
@@ -227,7 +227,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
 </table>"
     />
     <h2 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h2>
-    <p>各种表单元素都经过了重启动，以获得更简单的基础样式。以下是一些最显著的变化：</p>
+    <p>各种表单元素都经过了重置，以获得更简单的基础样式。以下是一些最显著的变化：</p>
     <ul>
       <li><code>&lt;fieldset&gt;</code> 没有边框、内边距或外边距，因此可以轻松用作单个输入框或输入框组的包裹元素。</li>
       <li><code>&lt;legend&gt;</code> 与 fieldset 一样，也经过重新设计，以某种标题的形式显示。</li>
