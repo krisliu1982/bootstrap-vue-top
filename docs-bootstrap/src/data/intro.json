@@ -124,7 +124,7 @@
     "description": "关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。"
   },
   "/content/reboot": {
-    "title": "重启动（Reboot）",
+    "title": "重置（Reboot）",
     "description": "Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。"
   },
   "/content/tables": {
@@ -176,8 +176,8 @@
     "description": "关于在 Bootstrap 中使用外部图标库的指导和建议。"
   },
   "/forms/checks-radios": {
-    "title": "复选框与单选按钮",
-    "description": "使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。"
+    "title": "复选框与单选框",
+    "description": "使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选框。"
   },
   "/forms/floating-labels": {
     "title": "浮动标签",
@@ -304,8 +304,8 @@
     "description": "使用省略号截断长字符串文本。"
   },
   "/helpers/vertical-rule": {
-    "title": "竖直分隔线",
-    "description": "使用自定义的竖直分隔线工具类创建类似 `&lt;hr&gt;` 元素的竖直分隔线。"
+    "title": "垂直分隔线",
+    "description": "使用自定义的垂直分隔线工具类创建类似 `&lt;hr&gt;` 元素的垂直分隔线。"
   },
   "/helpers/visually-hidden": {
     "title": "视觉上隐藏",
