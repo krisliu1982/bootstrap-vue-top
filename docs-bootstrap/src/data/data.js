@@ -65,7 +65,7 @@ const sidebar = [
       { title: 'Typography', slug: 'typography', 'zh-CN': '排版' },
       { title: 'Images', slug: 'images', 'zh-CN': '图片' },
       { title: 'Tables', slug: 'tables', 'zh-CN': '表格' },
-      { title: 'Figures', slug: 'figures', 'zh-CN': '图表' }
+      { title: 'Figures', slug: 'figures', 'zh-CN': '图片说明' }
     ]
   },
   {
@@ -93,7 +93,7 @@ const sidebar = [
     icon: 'menu-button-wide-fill',
     icon_color: 'cyan',
     pages: [
-      { title: 'Accordion', slug: 'accordion', 'zh-CN': '手风琴' },
+      { title: 'Accordion', slug: 'accordion', 'zh-CN': '折叠面板' },
       { title: 'Alerts', slug: 'alerts', 'zh-CN': '警告框' },
       { title: 'Badge', slug: 'badge', 'zh-CN': '徽章' },
       { title: 'Breadcrumb', slug: 'breadcrumb', 'zh-CN': '面包屑导航' },
@@ -156,7 +156,7 @@ const sidebar = [
       { title: 'Float', slug: 'float', 'zh-CN': '浮动' },
       { title: 'Interactions', slug: 'interactions', 'zh-CN': '交互' },
       { title: 'Link', slug: 'link', 'zh-CN': '链接' },
-      { title: 'Object fit', slug: 'object-fit', 'zh-CN': '对象适应' },
+      { title: 'Object fit', slug: 'object-fit', 'zh-CN': '对象适配' },
       { title: 'Opacity', slug: 'opacity', 'zh-CN': '不透明度' },
       { title: 'Overflow', slug: 'overflow', 'zh-CN': '溢出' },
       { title: 'Position', slug: 'position', 'zh-CN': '定位' },

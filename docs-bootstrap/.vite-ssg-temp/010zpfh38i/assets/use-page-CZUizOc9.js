@@ -1,0 +1,460 @@
+import { onBeforeUnmount, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import { useHead } from "@unhead/vue";
+// src/data/intro.json
+var intro_default = {
+	"/about/brand": {
+		"title": "品牌指南",
+		"description": "Bootstrap 徽标与品牌使用指南的文档和示例。"
+	},
+	"/about/license": {
+		"title": "许可证常见问题",
+		"description": "关于 Bootstrap 开源许可证的常见问题。"
+	},
+	"/about/overview": {
+		"title": "关于 Bootstrap",
+		"description": "进一步了解维护 Bootstrap 的团队、项目的起源与原因，以及如何参与其中。"
+	},
+	"/about/team": {
+		"title": "团队",
+		"description": "关于 Bootstrap 创始团队和核心贡献者的概述。"
+	},
+	"/about/translations": {
+		"title": "翻译",
+		"description": "链接到由社区翻译的 Bootstrap 文档站点。"
+	},
+	"/components/accordion": {
+		"title": "折叠面板",
+		"description": "结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。"
+	},
+	"/components/alerts": {
+		"title": "警告框",
+		"description": "使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。"
+	},
+	"/components/badge": {
+		"title": "徽章",
+		"description": "徽章的文档和示例，这是我们用于计数和标记的小型组件。"
+	},
+	"/components/breadcrumb": {
+		"title": "面包屑导航",
+		"description": "在导航层级中指示当前页面的位置，并通过 CSS 自动添加分隔符。"
+	},
+	"/components/button-group": {
+		"title": "按钮组",
+		"description": "将一系列按钮组合在同一行中，或将它们堆叠成一列。"
+	},
+	"/components/buttons": {
+		"title": "按钮",
+		"description": "使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，并支持多种尺寸、状态等。"
+	},
+	"/components/card": {
+		"title": "卡片",
+		"description": "Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，并带有多种变体和选项。"
+	},
+	"/components/carousel": {
+		"title": "轮播",
+		"description": "用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播一样。"
+	},
+	"/components/close-button": {
+		"title": "关闭按钮",
+		"description": "一个通用的关闭按钮，用于关闭模态框和警告框等内容。"
+	},
+	"/components/collapse": {
+		"title": "折叠",
+		"description": "使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。"
+	},
+	"/components/dropdowns": {
+		"title": "下拉菜单",
+		"description": "使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。"
+	},
+	"/components/list-group": {
+		"title": "列表组",
+		"description": "列表组是一个灵活而强大的组件，用于显示一系列内容。你可以修改和扩展它们，以支持几乎任意类型的内容。"
+	},
+	"/components/modal": {
+		"title": "模态框",
+		"description": "使用 Bootstrap 的 JavaScript 模态框插件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。"
+	},
+	"/components/navbar": {
+		"title": "导航栏",
+		"description": "Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。"
+	},
+	"/components/navs-tabs": {
+		"title": "导航与标签页",
+		"description": "关于如何使用 Bootstrap 内置导航组件的文档与示例。"
+	},
+	"/components/offcanvas": {
+		"title": "抽屉",
+		"description": "只需几个类和我们提供的 JavaScript 插件，即可在项目中构建用于导航、购物车等的隐藏侧边栏。"
+	},
+	"/components/pagination": {
+		"title": "分页",
+		"description": "用于展示分页、表示一系列相关内容分布在多个页面上的文档和示例。"
+	},
+	"/components/placeholders": {
+		"title": "占位符",
+		"description": "为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。"
+	},
+	"/components/popovers": {
+		"title": "弹出框",
+		"description": "如何向站点中的任意元素添加 Bootstrap 弹出框（类似 iOS 中的弹出框）的文档和示例。"
+	},
+	"/components/progress": {
+		"title": "进度条",
+		"description": "使用 Bootstrap 自定义进度条的文档和示例，包括对堆叠条形、动画背景和文本标签的支持。"
+	},
+	"/components/scrollspy": {
+		"title": "滚动监听",
+		"description": "根据滚动位置自动更新 Bootstrap 导航或列表组组件，以指示视口中当前处于活动状态的链接。"
+	},
+	"/components/spinners": {
+		"title": "加载动画（Spinners）",
+		"description": "使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。"
+	},
+	"/components/toasts": {
+		"title": "轻提示",
+		"description": "使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。"
+	},
+	"/components/tooltips": {
+		"title": "工具提示",
+		"description": "如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 工具提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。"
+	},
+	"/content/figures": {
+		"title": "图片说明（Figures）",
+		"description": "在 Bootstrap 中使用 figure 组件展示相关图片和文字的文档与示例。"
+	},
+	"/content/images": {
+		"title": "图片",
+		"description": "关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。"
+	},
+	"/content/reboot": {
+		"title": "重启动（Reboot）",
+		"description": "Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。"
+	},
+	"/content/tables": {
+		"title": "表格",
+		"description": "关于使用 Bootstrap 对表格进行选择性样式设置（鉴于它们在 JavaScript 插件中的广泛使用）的文档和示例。"
+	},
+	"/content/typography": {
+		"title": "排版",
+		"description": "关于 Bootstrap 排版的文档和示例，包括全局设置、标题、正文文本、列表等。"
+	},
+	"/customize/color-modes": {
+		"title": "颜色模式",
+		"description": "Bootstrap 从 v5.3.0 起支持颜色模式（或称主题）。你可以探索我们默认的浅色颜色模式和新的深色模式，或使用我们的样式作为模板来创建自己的颜色模式。"
+	},
+	"/customize/color": {
+		"title": "颜色",
+		"description": "Bootstrap 由一个完善的颜色系统支撑，为我们的样式和组件提供主题。这使任何项目都能进行更全面的自定义和扩展。"
+	},
+	"/customize/components": {
+		"title": "组件",
+		"description": "了解我们为何以及如何以响应式方式、使用基础类和修饰类来构建几乎所有组件。"
+	},
+	"/customize/css-variables": {
+		"title": "CSS 变量",
+		"description": "使用 Bootstrap 的 CSS 自定义属性实现快速且具前瞻性的设计与开发。"
+	},
+	"/customize/optimize": {
+		"title": "优化",
+		"description": "让你的项目保持精简、响应式且易于维护，从而提供最佳体验并专注于更重要的工作。"
+	},
+	"/customize/options": {
+		"title": "选项",
+		"description": "使用内置变量快速自定义 Bootstrap，轻松切换控制样式和行为的全局 CSS 偏好设置。"
+	},
+	"/customize/overview": {
+		"title": "自定义",
+		"description": "了解如何使用 Sass、大量全局选项、扩展的颜色系统等来设置 Bootstrap 主题、自定义和扩展 Bootstrap。"
+	},
+	"/customize/sass": {
+		"title": "Sass",
+		"description": "利用我们的 Sass 源文件，充分利用变量、映射、mixin 和函数，帮助你更快地构建并自定义项目。"
+	},
+	"/extend/approach": {
+		"title": "实现方式",
+		"description": "了解用于构建和维护 Bootstrap 的指导原则、策略和技术，以便你更轻松地自行自定义和扩展它。"
+	},
+	"/extend/icons": {
+		"title": "图标",
+		"description": "关于在 Bootstrap 中使用外部图标库的指导和建议。"
+	},
+	"/forms/checks-radios": {
+		"title": "复选框与单选按钮",
+		"description": "使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。"
+	},
+	"/forms/floating-labels": {
+		"title": "浮动标签",
+		"description": "创建简洁美观、浮动在输入框上方的表单标签。"
+	},
+	"/forms/form-control": {
+		"title": "表单控件",
+		"description": "通过自定义样式、尺寸、聚焦状态等，升级 `&lt;input&gt;` 和 `&lt;textarea&gt;` 等文本表单控件。"
+	},
+	"/forms/input-group": {
+		"title": "输入框组",
+		"description": "通过在文本输入框、自定义选择框和自定义文件输入框的任意一侧添加文本、按钮或按钮组，轻松扩展表单控件。"
+	},
+	"/forms/layout": {
+		"title": "布局",
+		"description": "借助我们的表单布局选项，为表单赋予结构——从行内布局、水平布局到自定义网格实现，应有尽有。"
+	},
+	"/forms/overview": {
+		"title": "表单",
+		"description": "表单控件样式、布局选项和自定义组件的示例与用法指南，帮助你创建各种各样的表单。"
+	},
+	"/forms/range": {
+		"title": "范围滑块",
+		"description": "使用我们自定义的范围输入框，获得一致的跨浏览器样式和内置的自定义能力。"
+	},
+	"/forms/select": {
+		"title": "选择框",
+		"description": "使用自定义 CSS 定制原生 `&lt;select&gt;`，改变元素的初始外观。"
+	},
+	"/forms/validation": {
+		"title": "校验",
+		"description": "通过浏览器默认行为，或自定义样式与 JavaScript，利用 HTML5 表单校验为你的用户提供有价值且可操作的反馈。"
+	},
+	"/getting-started/accessibility": {
+		"title": "无障碍访问",
+		"description": "简要概述 Bootstrap 在创建无障碍内容方面的特性和局限。"
+	},
+	"/getting-started/best-practices": {
+		"title": "最佳实践",
+		"description": "了解我们从多年来开发和使用的 Bootstrap 过程中总结出的一些最佳实践。"
+	},
+	"/getting-started/browsers-devices": {
+		"title": "浏览器与设备",
+		"description": "了解 Bootstrap 支持的各种浏览器与设备（从新到旧），包括各自已知的怪异表现和缺陷。"
+	},
+	"/getting-started/contents": {
+		"title": "目录内容",
+		"description": "了解 Bootstrap 包含的内容，包括编译版本和源代码版本。"
+	},
+	"/getting-started/contribute": {
+		"title": "参与贡献",
+		"description": "使用我们的文档构建脚本和测试来帮助开发 Bootstrap。"
+	},
+	"/getting-started/download": {
+		"title": "下载",
+		"description": "下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。"
+	},
+	"/getting-started/introduction": {
+		"title": "Bootstrap 入门",
+		"description": "Bootstrap 是一个功能强大、特性丰富的前端工具包。只需几分钟，你就能构建从原型到生产环境的各种项目。"
+	},
+	"/getting-started/javascript": {
+		"title": "JavaScript",
+		"description": "使用我们可选的 JavaScript 插件，让 Bootstrap 生动起来。了解每个插件、我们的数据 API 与编程式 API 选项等内容。"
+	},
+	"/getting-started/parcel": {
+		"title": "Bootstrap 与 Parcel",
+		"description": "关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。"
+	},
+	"/getting-started/rfs": {
+		"title": "RFS",
+		"description": "Bootstrap 的尺寸调整引擎会响应式地缩放常用 CSS 属性，以便在各种视口和设备上更好地利用可用空间。"
+	},
+	"/getting-started/rtl": {
+		"title": "从右到左（RTL）",
+		"description": "了解如何在 Bootstrap 的布局、组件和工具类中启用从右到左的文字支持。"
+	},
+	"/getting-started/vite": {
+		"title": "Bootstrap 与 Vite",
+		"description": "关于如何使用 Vite 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。"
+	},
+	"/getting-started/webpack": {
+		"title": "Bootstrap 与 Webpack",
+		"description": "本官方指南介绍如何使用 Webpack 在项目中引入和打包 Bootstrap 的 CSS 和 JavaScript。"
+	},
+	"/helpers/clearfix": {
+		"title": "清除浮动",
+		"description": "通过添加清除浮动工具类，快速轻松地清除容器内的浮动内容。"
+	},
+	"/helpers/color-background": {
+		"title": "颜色与背景",
+		"description": "设置带有对比前景色的背景色。"
+	},
+	"/helpers/colored-links": {
+		"title": "彩色链接",
+		"description": "带有悬停状态的彩色链接"
+	},
+	"/helpers/focus-ring": {
+		"title": "聚焦环",
+		"description": "用于向元素和组件添加及修改自定义聚焦环样式的工具类。"
+	},
+	"/helpers/icon-link": {
+		"title": "图标链接",
+		"description": "使用 Bootstrap Icons 或其他图标快速创建风格化的超链接。"
+	},
+	"/helpers/position": {
+		"title": "定位",
+		"description": "使用这些工具类可以快速配置元素的位置。"
+	},
+	"/helpers/ratio": {
+		"title": "比例",
+		"description": "使用生成的伪元素让元素保持你选择的长宽比。非常适合根据父元素宽度响应式地处理视频或幻灯片嵌入内容。"
+	},
+	"/helpers/stacks": {
+		"title": "堆叠 (Stacks)",
+		"description": "构建在弹性布局工具类基础上的简写工具类，让组件布局比以往更快、更简单。"
+	},
+	"/helpers/stretched-link": {
+		"title": "拉伸链接",
+		"description": "通过 CSS 将嵌套的链接“拉伸”，让任意 HTML 元素或 Bootstrap 组件都可被点击。"
+	},
+	"/helpers/text-truncation": {
+		"title": "文本截断",
+		"description": "使用省略号截断长字符串文本。"
+	},
+	"/helpers/vertical-rule": {
+		"title": "竖直分隔线",
+		"description": "使用自定义的竖直分隔线工具类创建类似 `&lt;hr&gt;` 元素的竖直分隔线。"
+	},
+	"/helpers/visually-hidden": {
+		"title": "视觉上隐藏",
+		"description": "使用这些工具类可以在视觉上隐藏元素，同时保持其对辅助技术的可访问性。"
+	},
+	"/layout/breakpoints": {
+		"title": "断点",
+		"description": "断点是可自定义的宽度，用于决定响应式布局在 Bootstrap 中跨设备或视口尺寸时的表现。"
+	},
+	"/layout/columns": {
+		"title": "列",
+		"description": "了解如何借助我们的 flexbox 网格系统，使用少量选项来修改列的对齐、排序和偏移。此外，了解如何使用列类来管理非网格元素的宽度。"
+	},
+	"/layout/containers": {
+		"title": "容器",
+		"description": "容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。"
+	},
+	"/layout/css-grid": {
+		"title": "CSS Grid",
+		"description": "通过示例和代码片段，了解如何启用、使用和自定义我们基于 CSS Grid 构建的备用布局系统。"
+	},
+	"/layout/grid": {
+		"title": "网格系统",
+		"description": "借助十二列系统、六个默认响应式层级、Sass 变量和 mixin 以及数十个预定义类，使用我们强大的移动优先 flexbox 网格来构建各种形状和大小的布局。"
+	},
+	"/layout/gutters": {
+		"title": "间距（Gutters）",
+		"description": "间距是列与列之间的内边距，用于在 Bootstrap 网格系统中以响应式的方式分隔和对齐内容。"
+	},
+	"/layout/utilities": {
+		"title": "布局工具类",
+		"description": "为了实现更快捷的移动优先和响应式开发，Bootstrap 包含了数十个用于显示、隐藏、对齐和间隔内容的工具类。"
+	},
+	"/layout/z-index": {
+		"title": "Z-index",
+		"description": "虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。"
+	},
+	"/migration": {
+		"title": "迁移到 v5",
+		"description": "跟踪并查阅 Bootstrap 源文件、文档和组件的变更，以便帮助你从 v4 迁移到 v5。"
+	},
+	"/utilities/api": {
+		"title": "工具类 API",
+		"description": "工具类 API 是一个基于 Sass 的工具，用于生成工具类。"
+	},
+	"/utilities/background": {
+		"title": "背景",
+		"description": "通过 `background-color` 传达含义，并使用渐变添加装饰效果。"
+	},
+	"/utilities/borders": {
+		"title": "边框",
+		"description": "使用边框工具类可以快速设置元素的边框及圆角。非常适合图片、按钮或任何其他元素。"
+	},
+	"/utilities/colors": {
+		"title": "颜色",
+		"description": "通过一些颜色工具类，用 `color` 传达含义。同时还支持为链接设置带有悬停状态的样式。"
+	},
+	"/utilities/display": {
+		"title": "显示属性",
+		"description": "使用我们的显示工具类，可以快速、响应式地切换组件及其他元素的显示值。支持一些较常见的取值，以及一些用于控制打印时显示的额外取值。"
+	},
+	"/utilities/flex": {
+		"title": "弹性布局 (Flex)",
+		"description": "借助一整套响应式弹性布局工具类，快速管理网格列、导航、组件等的布局、对齐和尺寸。对于更复杂的实现，可能需要自定义 CSS。"
+	},
+	"/utilities/float": {
+		"title": "浮动",
+		"description": "使用我们的响应式浮动工具类，可在任意断点上切换任意元素的浮动状态。"
+	},
+	"/utilities/interactions": {
+		"title": "交互",
+		"description": "用于更改用户与网站内容交互方式的工具类。"
+	},
+	"/utilities/link": {
+		"title": "链接",
+		"description": "链接工具类用于美化锚点，以调整其颜色、不透明度、下划线偏移、下划线颜色等。"
+	},
+	"/utilities/object-fit": {
+		"title": "对象适配",
+		"description": "使用对象适配工具类来修改替换元素（如 &lt;img&gt; 或 &lt;video&gt;）的内容应如何调整尺寸以适应其容器。"
+	},
+	"/utilities/opacity": {
+		"title": "不透明度",
+		"description": "控制元素的不透明度。"
+	},
+	"/utilities/overflow": {
+		"title": "溢出",
+		"description": "使用这些简写工具类可以快速配置内容如何溢出元素。"
+	},
+	"/utilities/position": {
+		"title": "定位",
+		"description": "使用这些简写工具类可以快速配置元素的位置。"
+	},
+	"/utilities/shadows": {
+		"title": "阴影",
+		"description": "使用 box-shadow 工具类为元素添加或移除阴影。"
+	},
+	"/utilities/sizing": {
+		"title": "尺寸",
+		"description": "使用我们的宽度和高度工具类，可以轻松设置元素的宽度或高度。"
+	},
+	"/utilities/spacing": {
+		"title": "间距",
+		"description": "Bootstrap 包含大量简写的响应式外边距、内边距和间隔（gap）工具类，用于修改元素的外观。"
+	},
+	"/utilities/text": {
+		"title": "文本",
+		"description": "用于控制对齐、换行、字重等的常用文本工具类的文档与示例。"
+	},
+	"/utilities/vertical-align": {
+		"title": "垂直对齐",
+		"description": "轻松更改内联、内联块、内联表格和表格单元格元素的垂直对齐方式。"
+	},
+	"/utilities/visibility": {
+		"title": "可见性",
+		"description": "使用可见性工具类在不修改元素显示方式的情况下控制元素的可见性。"
+	},
+	"/utilities/z-index": {
+		"title": "Z-index",
+		"description": "使用我们的底层 `z-index` 工具类快速更改元素或组件的层叠层级。"
+	}
+};
+// src/components/use-page.js
+function usePage() {
+	const route = useRoute();
+	useHead({
+		htmlAttrs: { lang: "zh-CN" },
+		title: intro_default[route.path].title + " | Bootstrap v5.3 中文文档",
+		meta: [{
+			name: "description",
+			content: intro_default[route.path].description
+		}]
+	});
+	onMounted(() => {
+		const articleEl = document.querySelector("article.bd-content");
+		const tocEl = document.querySelector("nav.bd-toc");
+		if (tocEl) import("bootstrap").then((bootstrap) => {
+			new bootstrap.ScrollSpy(articleEl, { target: tocEl });
+		});
+	});
+	onBeforeUnmount(() => {
+		const articleEl = document.querySelector("article.bd-content");
+		if (document.querySelector("nav.bd-toc")) import("bootstrap").then((bootstrap) => {
+			bootstrap.ScrollSpy.getInstance(articleEl).dispose();
+		});
+	});
+}
+export { usePage as t };

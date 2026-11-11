@@ -1,11 +1,11 @@
 <template>
   <article class="bd-content">
-    <h1>复选框与单选按钮</h1>
-    <p class="lead">使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选按钮。</p>
+    <h1>复选框与单选框</h1>
+    <p class="lead">使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选框。</p>
 
     <h2 id="approach">实现方式<a class="anchor-link" href="#approach" aria-label="实现方式链接"></a></h2>
     <p>
-      借助 <code>.form-check</code> 替换浏览器默认的复选框和单选按钮，这是一系列同时适用于两种输入类型的类，可改进其 HTML 元素的布局和行为，带来更强的可自定义性和跨浏览器一致性。复选框用于在列表中选择一个或多个选项，而单选按钮用于从多个选项中仅选择一个。
+      借助 <code>.form-check</code> 替换浏览器默认的复选框和单选框，这是一系列同时适用于两种输入类型的类，可改进其 HTML 元素的布局和行为，带来更强的可自定义性和跨浏览器一致性。复选框用于在列表中选择一个或多个选项，而单选框用于从多个选项中仅选择一个。
     </p>
     <p>
       在结构上，我们的 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code> 是兄弟元素，而不是将 <code>&lt;input&gt;</code> 放在 <code>&lt;label&gt;</code> 内部。这种方式略显冗长，因为你必须指定 <code>id</code> 和 <code>for</code> 属性来关联 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code>。我们对所有 <code>&lt;input&gt;</code> 状态（如 <code>:checked</code> 或 <code>:disabled</code>）都使用兄弟选择器（<code>~</code>）。结合 <code>.form-check-label</code> 类，我们可以根据 <code>&lt;input&gt;</code> 的状态轻松地为每一项的文本设置样式。
@@ -62,7 +62,7 @@
   </label>
 </div>'
     />
-    <h2 id="radios">单选按钮<a class="anchor-link" href="#radios" aria-label="单选按钮链接"></a></h2>
+    <h2 id="radios">单选框<a class="anchor-link" href="#radios" aria-label="单选框链接"></a></h2>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
@@ -129,7 +129,7 @@
       请务必进一步了解<a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。
     </p>
     <h2 id="default-stacked">默认（堆叠）<a class="anchor-link" href="#default-stacked" aria-label="默认（堆叠）链接"></a></h2>
-    <p>默认情况下，任意数量的直接相邻的复选框和单选按钮都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
+    <p>默认情况下，任意数量的直接相邻的复选框和单选框都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
     <Example
       code='<div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -164,7 +164,7 @@
 </div>'
     />
     <h2 id="inline">行内排列<a class="anchor-link" href="#inline" aria-label="行内排列链接"></a></h2>
-    <p>为任意 <code>.form-check</code> 添加 <code>.form-check-inline</code>，即可将复选框或单选按钮分组在同一水平行中。</p>
+    <p>为任意 <code>.form-check</code> 添加 <code>.form-check-inline</code>，即可将复选框或单选框分组在同一水平行中。</p>
     <Example
       code='<div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -193,7 +193,7 @@
 </div>'
     />
     <h2 id="reverse">反向排列<a class="anchor-link" href="#reverse" aria-label="反向排列链接"></a></h2>
-    <p>使用 <code>.form-check-reverse</code> 修饰类，可将复选框、单选按钮和开关放在相反的一侧。</p>
+    <p>使用 <code>.form-check-reverse</code> 修饰类，可将复选框、单选框和开关放在相反的一侧。</p>
     <Example
       code='<div class="form-check form-check-reverse">
   <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
@@ -214,7 +214,7 @@
 </div>'
     />
     <h2 id="without-labels">不带标签<a class="anchor-link" href="#without-labels" aria-label="不带标签链接"></a></h2>
-    <p>对于没有标签文本的复选框和单选按钮，可省略外层的 <code>.form-check</code>。请记住仍需为辅助技术提供某种形式的可访问名称（例如使用 <code>aria-label</code>）。详情请参阅<a href="/forms/overview/#accessibility">表单概述的无障碍访问</a>章节。</p>
+    <p>对于没有标签文本的复选框和单选框，可省略外层的 <code>.form-check</code>。请记住仍需为辅助技术提供某种形式的可访问名称（例如使用 <code>aria-label</code>）。详情请参阅<a href="/forms/overview/#accessibility">表单概述的无障碍访问</a>章节。</p>
     <Example
       code='<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
@@ -225,7 +225,7 @@
 </div>'
     />
     <h2 id="toggle-buttons">切换按钮<a class="anchor-link" href="#toggle-buttons" aria-label="切换按钮链接"></a></h2>
-    <p>在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式代替 <code>.form-check-label</code>，即可创建类似按钮的复选框和单选按钮。如有需要，这些切换按钮还可以分组到<a href="/components/button-group">按钮组</a>中。</p>
+    <p>在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式代替 <code>.form-check-label</code>，即可创建类似按钮的复选框和单选框。如有需要，这些切换按钮还可以分组到<a href="/components/button-group">按钮组</a>中。</p>
     <h3 id="checkbox-toggle-buttons">复选框切换按钮<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="复选框切换按钮链接"></a></h3>
     <Example
       code='<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
@@ -250,7 +250,7 @@
         从视觉上看，这些复选框切换按钮与<a href="/components/buttons#button-plugin">按钮插件切换按钮</a>完全相同。但是，辅助技术对它们的传达方式不同：复选框切换按钮会被屏幕阅读器读作“已选中”/“未选中”（因为尽管外观如此，它们本质上仍是复选框），而按钮插件切换按钮会被读作“按钮”/“按钮已按下”。在这两种方式之间如何选择，取决于你要创建的切换类型，以及该切换在作为复选框或实际按钮被读出时对用户是否有意义。
       </p>
     </Callout>
-    <h3 id="radio-toggle-buttons">单选按钮切换按钮<a class="anchor-link" href="#radio-toggle-buttons" aria-label="单选按钮切换按钮链接"></a></h3>
+    <h3 id="radio-toggle-buttons">单选框切换按钮<a class="anchor-link" href="#radio-toggle-buttons" aria-label="单选框切换按钮链接"></a></h3>
     <Example
       code='<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
 <label class="btn btn-secondary" for="option1">Checked</label>
@@ -312,7 +312,7 @@
         </ul>
       </li>
       <li>
-       <a href="#radios">单选按钮</a>
+       <a href="#radios">单选框</a>
         <ul>
           <li><a href="#disabled-1">禁用状态</a></li>
         </ul>
@@ -331,7 +331,7 @@
        <a href="#toggle-buttons">切换按钮</a>
         <ul>
           <li><a href="#checkbox-toggle-buttons">复选框切换按钮</a></li>
-          <li><a href="#radio-toggle-buttons">单选按钮切换按钮</a></li>
+          <li><a href="#radio-toggle-buttons">单选框切换按钮</a></li>
           <li><a href="#outlined-styles">描边样式</a></li>
         </ul>
       </li>

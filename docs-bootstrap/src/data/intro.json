@@ -343,7 +343,7 @@
     "title": "Z-index",
     "description": "虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。"
   },
-  "//migration": {
+  "/migration": {
     "title": "迁移到 v5",
     "description": "跟踪并查阅 Bootstrap 源文件、文档和组件的变更，以便帮助你从 v4 迁移到 v5。"
   },
