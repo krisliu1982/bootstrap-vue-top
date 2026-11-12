@@ -16,35 +16,35 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">类</th>
-            <th scope="col">标题</th>
-            <th scope="col">标题</th>
+            <th scope="col">Class</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">默认</th>
-            <td>单元格</td>
-            <td>单元格</td>
+            <th scope="row">default</th>
+            <td>Cell</td>
+            <td>Cell</td>
           </tr>
           <tr v-for="themeColor in data['theme-colors']" :class="`table-${themeColor.name}`">
             <th scope="row">{{ themeColor.name }}</th>
-            <td>单元格</td>
-            <td>单元格</td>
+            <td>Cell</td>
+            <td>Cell</td>
           </tr>
         </tbody>
       </table>
     </div>
     <CodeWrapper
       code='<!-- On tables -->
-<table class="table-primary">...</table>
-<table class="table-secondary">...</table>
-<table class="table-success">...</table>
-<table class="table-danger">...</table>
-<table class="table-warning">...</table>
-<table class="table-info">...</table>
-<table class="table-light">...</table>
-<table class="table-dark">...</table>
+<table class="table table-primary">...</table>
+<table class="table table-secondary">...</table>
+<table class="table table-success">...</table>
+<table class="table table-danger">...</table>
+<table class="table table-warning">...</table>
+<table class="table table-info">...</table>
+<table class="table table-light">...</table>
+<table class="table table-dark">...</table>
 
 <!-- On rows -->
 <tr class="table-primary">...</tr>

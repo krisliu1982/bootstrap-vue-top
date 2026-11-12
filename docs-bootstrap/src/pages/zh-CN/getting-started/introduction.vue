@@ -12,7 +12,7 @@
     <ol>
       <li>
         <p>
-          <strong>在项目根目录中新建一个 <code>index.html</code> 文件。</strong>同时加入 <code>&lt;meta name="viewport"&gt;</code> 标签，以确保移动设备上的<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">响应式行为</a>正常工作。
+          <strong>在项目根目录中新建一个 <code>index.html</code> 文件。</strong>同时加入 <code>&lt;meta name="viewport"&gt;</code> 标签，以确保移动设备上的<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport">响应式行为</a>正常工作。
         </p>
         <CodeWrapper
           code='&lt;!doctype html&gt;
