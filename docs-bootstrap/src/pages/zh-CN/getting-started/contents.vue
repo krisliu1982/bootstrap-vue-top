@@ -58,7 +58,7 @@
     />
     <p>
       这是 Bootstrap 最基本的形式：编译好的文件，可直接嵌入几乎任何 Web 项目中快速使用。我们提供了编译后的 CSS 和 JS（<code>bootstrap.*</code>），以及编译并压缩后的 CSS 和 JS（<code>bootstrap.min.*</code>）。<a href="https://web.dev/articles/source-maps">Source map</a>（<code>bootstrap.*.map</code>）可用于某些浏览器的开发者工具。打包的 JS
-      文件（<code>bootstrap.bundle.js</code> 和压缩版 <code>bootstrap.bundle.min.js</code>）包含<a href="https://popper.js.org/docs/v2/">Popper</a>。
+      文件（<code>bootstrap.bundle.js</code> 和压缩版 <code>bootstrap.bundle.min.js</code>）包含<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>。
     </p>
     <h3 id="css-files">CSS 文件<a class="anchor-link" href="#css-files" aria-label="CSS 文件链接"></a></h3>
     <p>Bootstrap 提供了多种选项，可用于引入我们的部分或全部编译后 CSS。</p>

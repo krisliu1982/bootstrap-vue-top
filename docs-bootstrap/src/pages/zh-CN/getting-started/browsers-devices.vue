@@ -105,8 +105,6 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
     </p>
     <h3 id="ios-text-fields-and-scrolling">iOS 文本字段与滚动<a class="anchor-link" href="#ios-text-fields-and-scrolling" aria-label="iOS 文本字段与滚动链接"></a></h3>
     <p>从 iOS 9.2 起，当模态框打开时，如果滚动手势的起始触摸点位于文本 <code>&lt;input&gt;</code> 或 <code>&lt;textarea&gt;</code> 的边界之内，那么滚动的将是模态框下方的 <code>&lt;body&gt;</code> 内容，而不是模态框本身。参见<a href="https://bugs.webkit.org/show_bug.cgi?id=153856">WebKit bug #153856</a>。</p>
-    <h3 id="navbar-dropdowns">导航栏下拉菜单<a class="anchor-link" href="#navbar-dropdowns" aria-label="导航栏下拉菜单链接"></a></h3>
-    <p>由于 z-index 层叠的复杂性，导航中的 <code>.dropdown-backdrop</code> 元素在 iOS 上不会被使用。因此，要关闭导航栏中的下拉菜单，必须直接点击下拉元素（或<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#Safari_Mobile">任何在 iOS 上会触发点击事件的其他元素</a>）。</p>
     <h2 id="browser-zooming">浏览器缩放<a class="anchor-link" href="#browser-zooming" aria-label="浏览器缩放链接"></a></h2>
     <p>页面缩放不可避免地会使某些组件出现渲染瑕疵，Bootstrap 和 Web 的其他部分均是如此。视具体问题而定，我们可能能够修复它（请先搜索，必要时再提交 issue）。不过，我们往往忽略这些问题，因为它们除了取巧的变通方案外，通常没有直接的解决办法。</p>
     <h2 id="validators">验证器<a class="anchor-link" href="#validators" aria-label="验证器链接"></a></h2>
@@ -132,7 +130,6 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
         <ul>
           <li><a href="#overflow-and-scrolling">溢出与滚动</a></li>
           <li><a href="#ios-text-fields-and-scrolling">iOS 文本字段与滚动</a></li>
-          <li><a href="#navbar-dropdowns">导航栏下拉菜单</a></li>
         </ul>
       </li>
       <li><a href="#browser-zooming">浏览器缩放</a></li>

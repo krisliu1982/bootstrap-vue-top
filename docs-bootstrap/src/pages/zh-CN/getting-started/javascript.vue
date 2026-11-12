@@ -93,7 +93,7 @@
     />
     <h2 id="dependencies">依赖<a class="anchor-link" href="#dependencies" aria-label="依赖链接"></a></h2>
     <p>部分插件和 CSS 组件依赖于其他插件。如果你单独引入插件，请务必在文档中查看这些依赖关系。</p>
-    <p>我们的下拉菜单、弹出框和工具提示还依赖于<a href="https://popper.js.org/docs/v2/">Popper</a>。</p>
+    <p>我们的下拉菜单、弹出框和工具提示还依赖于<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>。</p>
     <h2 id="data-attributes">数据属性<a class="anchor-link" href="#data-attributes" aria-label="数据属性链接"></a></h2>
     <p>
       几乎所有 Bootstrap 插件都可以仅通过 HTML 和 data 数据属性来启用和配置（这是我们认为使用 JavaScript 功能的首选方式）。请务必

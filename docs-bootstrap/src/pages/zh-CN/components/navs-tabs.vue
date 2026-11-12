@@ -5,7 +5,7 @@
 
     <h2 id="base-nav">基础导航<a class="anchor-link" href="#base-nav" aria-label="基础导航链接"></a></h2>
     <p>Bootstrap 中提供的导航共享通用标记和样式，从基础的 <code>.nav</code> 类到激活和禁用状态皆是如此。切换修饰类即可在每种样式之间切换。</p>
-    <p>基础的 <code>.nav</code> 组件使用弹性盒子构建，为构建所有类型的导航组件提供了坚实的基础。它包含一些样式覆盖（用于配合列表）、一些为增大点击区域而添加的链接内边距，以及基本的禁用样式。</p>
+    <p>基础的 <code>.nav</code> 组件基于 flexbox 构建，为构建各类导航组件提供了坚实的基础。它包含一些样式覆盖（用于处理列表）、一些为扩大点击区域而设置的内边距（padding），以及基本的禁用样式。</p>
     <Callout>
       <p>基础的 <code>.nav</code> 组件不包含任何 <code>.active</code> 状态。以下示例包含该类，主要是为了演示这个特定的类不会触发任何特殊样式。</p>
       <p>要向辅助技术传达激活状态，请使用 <code>aria-current</code> 属性——对当前页面使用 <code>page</code> 值，或对一组中的当前项使用 <code>true</code>。</p>

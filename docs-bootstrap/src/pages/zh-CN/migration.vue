@@ -896,8 +896,8 @@ index 8f8296def..449d70487 100644
       <li>
         <p>
           <span class="badge text-bg-danger">破坏性变更</span> 移除了下拉菜单插件的 <code>flip</code> 选项，改用原生 Popper 配置。你现在可以通过为
-          <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements"><code>fallbackPlacements</code></a>
-          选项传入空数组来禁用翻转行为，该选项位于<a href="https://popper.js.org/docs/v2/modifiers/flip/">flip</a>修饰符中。
+          <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#fallbackplacements"><code>fallbackPlacements</code></a>
+          选项传入空数组来禁用翻转行为，该选项位于<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/">flip</a>修饰符中。
         </p>
       </li>
       <li>
