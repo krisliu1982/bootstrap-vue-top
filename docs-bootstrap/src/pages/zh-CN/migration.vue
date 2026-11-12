@@ -492,7 +492,7 @@ index 8f8296def..449d70487 100644
     <ul>
       <li>移除了 jQuery。</li>
       <li>从 Popper v1.x 升级到 Popper v2.x。</li>
-      <li>由于 Libsass 已被弃用，我们将 Sass 编译器从 Libsass 替换为 Dart Sass。</li>
+      <li>由于 LibSass 已被弃用，我们将 Sass 编译器从 LibSass 替换为 Dart Sass。</li>
       <li>文档构建从 Jekyll 迁移到 Hugo</li>
     </ul>
     <h3 id="browser-support">浏览器支持<a class="anchor-link" href="#browser-support" aria-label="浏览器支持链接"></a></h3>
@@ -1031,7 +1031,7 @@ index 8f8296def..449d70487 100644
         <p>在显示工具类中新增 <code>.d-grid</code>，并为 CSS Grid 和 flexbox 布局新增 <code>gap</code> 工具类（<code>.gap</code>）。</p>
       </li>
       <li>
-        <p><span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.rounded-sm</code> 和 <code>rounded-lg</code>，并引入了新的刻度类 <code>.rounded-0</code> 至 <code>.rounded-3</code>。<a href="https://github.com/twbs/bootstrap/pull/31687">参见 #31687</a>。</p>
+        <p><span class="badge text-bg-danger">破坏性变更</span> 移除了 <code>.rounded-sm</code> 和 <code>.rounded-lg</code>，并引入了新的刻度类 <code>.rounded-0</code> 至 <code>.rounded-3</code>。<a href="https://github.com/twbs/bootstrap/pull/31687">参见 #31687</a>。</p>
       </li>
       <li>
         <p>新增 <code>line-height</code> 工具类：<code>.lh-1</code>、<code>.lh-sm</code>、<code>.lh-base</code> 和 <code>.lh-lg</code>。请<a href="/utilities/text#line-height">参见此处</a>。</p>
