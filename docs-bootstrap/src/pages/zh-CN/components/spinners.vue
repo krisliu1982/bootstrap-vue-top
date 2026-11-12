@@ -4,9 +4,7 @@
     <p class="lead">使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
-    <p>
-      Bootstrap“spinners”可用于在你的项目中显示加载状态。它们仅由 HTML 和 CSS 构建，这意味着你不需要任何 JavaScript 就能创建它们。不过，你仍需要一些自定义 JavaScript 来切换它们的可见性。它们的外观、对齐方式和尺寸可以通过我们出色的工具类轻松自定义。
-    </p>
+    <p>Bootstrap“spinners”可用于在你的项目中显示加载状态。它们仅由 HTML 和 CSS 构建，这意味着你不需要任何 JavaScript 就能创建它们。不过，你仍需要一些自定义 JavaScript 来切换它们的可见性。它们的外观、对齐方式和尺寸可以通过我们出色的工具类轻松自定义。</p>
     <p>出于可访问性考虑，此处的每个加载器都包含 <code>role=&quot;status&quot;</code> 以及一个嵌套的 <code>&lt;span class=&quot;visually-hidden&quot;&gt;Loading...&lt;/span&gt;</code>。</p>
     <Callout name="info-prefersreducedmotion" />
     <h2 id="border-spinner">边框加载动画<a class="anchor-link" href="#border-spinner" aria-label="边框加载动画链接"></a></h2>
@@ -157,14 +155,14 @@
     <ul>
       <li><a href="#about">关于</a></li>
       <li>
-       <a href="#border-spinner">边框加载动画</a>
+        <a href="#border-spinner">边框加载动画</a>
         <ul>
           <li><a href="#colors">颜色</a></li>
         </ul>
       </li>
       <li><a href="#growing-spinner">增长加载动画</a></li>
       <li>
-       <a href="#alignment">对齐</a>
+        <a href="#alignment">对齐</a>
         <ul>
           <li><a href="#margin">外边距</a></li>
           <li><a href="#placement">放置</a></li>
@@ -173,7 +171,7 @@
       <li><a href="#size">尺寸</a></li>
       <li><a href="#buttons">按钮</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

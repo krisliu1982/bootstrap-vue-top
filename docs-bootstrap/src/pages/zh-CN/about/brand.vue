@@ -38,7 +38,7 @@
     <ul>
       <li><a href="#logo">徽标</a></li>
       <li>
-       <a href="#name">名称</a>
+        <a href="#name">名称</a>
       </li>
     </ul>
   </nav>

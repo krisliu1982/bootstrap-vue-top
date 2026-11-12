@@ -1,10 +1,9 @@
 import { onMounted, onBeforeUnmount } from 'vue';
-import { useHead } from '@unhead/vue'
+import { useHead } from '@unhead/vue';
 import intro from '@/data/intro.json' with { type: 'json' };
 import { useRoute } from 'vue-router';
 
 export function usePage() {
-
   const route = useRoute();
 
   useHead({
@@ -15,10 +14,10 @@ export function usePage() {
     meta: [
       {
         name: 'description',
-        content: intro[route.path].description,
-      },
-    ],
-  })
+        content: intro[route.path].description
+      }
+    ]
+  });
   onMounted(() => {
     const articleEl = document.querySelector('article.bd-content');
     const tocEl = document.querySelector('nav.bd-toc');

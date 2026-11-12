@@ -7,9 +7,7 @@
       使用我们内置的自定义变量文件自定义 Bootstrap，并通过新增的
       <code>$enable-*</code> Sass 变量轻松切换全局 CSS 偏好设置。根据需要覆盖变量的值，并用 <code>npm run test</code> 重新编译。
     </p>
-    <p>
-      你可以在 Bootstrap 的 <code>scss/_variables.scss</code> 文件中找到并自定义这些关键全局选项的变量。
-    </p>
+    <p>你可以在 Bootstrap 的 <code>scss/_variables.scss</code> 文件中找到并自定义这些关键全局选项的变量。</p>
     <div class="table-responsive">
       <table class="table table-options">
         <thead>
@@ -23,16 +21,14 @@
           <tr>
             <td><code>$spacer</code></td>
             <td><code>1rem</code>（默认）或任何大于 0 的值</td>
-            <td>
-              指定用于以编程方式生成<a href="/utilities/spacing">间距工具类</a>的默认间距值。
-            </td>
+            <td>指定用于以编程方式生成<a href="/utilities/spacing">间距工具类</a>的默认间距值。</td>
           </tr>
           <tr>
             <td><code>$enable-dark-mode</code></td>
             <td><code>true</code>（默认）或 <code>false</code></td>
             <td>
               在整个项目及其组件中启用内置的
-             <a href="/customize/color-modes#dark-mode">深色模式支持</a>。
+              <a href="/customize/color-modes#dark-mode">深色模式支持</a>。
             </td>
           </tr>
           <tr>
@@ -60,7 +56,7 @@
             <td><code>true</code> （默认） or <code>false</code></td>
             <td>
               启用
-             <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>，它会根据用户的浏览器/操作系统偏好设置抑制某些动画/过渡效果。
+              <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>，它会根据用户的浏览器/操作系统偏好设置抑制某些动画/过渡效果。
             </td>
           </tr>
           <tr>
@@ -101,9 +97,7 @@
           <tr>
             <td><code>$enable-negative-margins</code></td>
             <td><code>true</code> 或 <code>false</code>（默认）</td>
-            <td>
-              启用<a href="/utilities/spacing#negative-margin">负外边距工具类</a>的生成。
-            </td>
+            <td>启用<a href="/utilities/spacing#negative-margin">负外边距工具类</a>的生成。</td>
           </tr>
           <tr>
             <td><code>$enable-deprecation-messages</code></td>
@@ -119,8 +113,7 @@
             <td><code>$enable-smooth-scroll</code></td>
             <td><code>true</code> （默认） or <code>false</code></td>
             <td>
-              全局应用 <code>scroll-behavior: smooth</code>，但通过
-             <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>请求减少动态效果的用户除外
+              全局应用 <code>scroll-behavior: smooth</code>，但通过 <a href="/getting-started/accessibility#reduced-motion"><code>prefers-reduced-motion</code> 媒体查询</a>请求减少动态效果的用户除外
             </td>
           </tr>
         </tbody>

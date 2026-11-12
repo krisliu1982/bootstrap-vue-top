@@ -10,8 +10,8 @@
     <p>如果你需要为元素添加 <code>display: flex</code>，请使用 <code>.d-flex</code> 或某个响应式变体（例如 <code>.d-sm-flex</code>）。你需要这个类或 <code>display</code> 值才能使用我们额外的<a href="/utilities/flex">flexbox 工具类</a>来进行尺寸调整、对齐、间隔等操作。</p>
     <h2 id="margin-and-padding">外边距和内边距<a class="anchor-link" href="#margin-and-padding" aria-label="外边距和内边距链接"></a></h2>
     <p>
-      使用 <code>margin</code> 和 <code>padding</code><a href="/utilities/spacing">间隔工具类</a>来控制元素和组件的间隔与尺寸。Bootstrap 包含六级间隔工具类，基于默认值为 <code>1rem</code> 的 <code>$spacer</code> 变量。可以为所有视口选择值（例如，在 LTR 中
-      <code>.me-3</code> 对应 <code>margin-right: 1rem</code>），也可以选择响应式变体以针对特定视口（例如，从 <code>md</code> 断点开始，<code>.me-md-3</code> 对应 <code>margin-right: 1rem</code>——在 LTR 中）。
+      使用 <code>margin</code> 和 <code>padding</code><a href="/utilities/spacing">间隔工具类</a>来控制元素和组件的间隔与尺寸。Bootstrap 包含六级间隔工具类，基于默认值为 <code>1rem</code> 的 <code>$spacer</code> 变量。可以为所有视口选择值（例如，在 LTR 中 <code>.me-3</code> 对应
+      <code>margin-right: 1rem</code>），也可以选择响应式变体以针对特定视口（例如，从 <code>md</code> 断点开始，<code>.me-md-3</code> 对应 <code>margin-right: 1rem</code>——在 LTR 中）。
     </p>
     <h2 id="toggle-visibility">切换 <code>visibility</code><a class="anchor-link" href="#toggle-visibility" aria-label="切换 visibility 链接"></a></h2>
     <p>当不需要切换 <code>display</code> 时，你可以使用我们的<a href="/utilities/visibility">可见性工具类</a>来切换元素的 <code>visibility</code>。不可见的元素仍然会影响页面布局，但在视觉上对访问者隐藏。</p>
@@ -23,7 +23,7 @@
     <ul>
       <li><a href="#flexbox-options">Flexbox 选项</a></li>
       <li>
-       <a href="#margin-and-padding">外边距和内边距</a>
+        <a href="#margin-and-padding">外边距和内边距</a>
       </li>
     </ul>
   </nav>

@@ -13,14 +13,11 @@
 </div>'
     />
     <Callout>
-      <p>
-        按钮组需要合适的 <code>role</code> 属性和明确的标签，以确保屏幕阅读器等辅助技术能够识别按钮已分组并进行播报。按钮组请使用 <code>role=&quot;group&quot;</code>，按钮工具栏请使用 <code>role=&quot;toolbar&quot;</code>。然后使用 <code>aria-label</code> 或
-        <code>aria-labelledby</code> 为它们添加标签。
-      </p>
+      <p>按钮组需要合适的 <code>role</code> 属性和明确的标签，以确保屏幕阅读器等辅助技术能够识别按钮已分组并进行播报。按钮组请使用 <code>role=&quot;group&quot;</code>，按钮工具栏请使用 <code>role=&quot;toolbar&quot;</code>。然后使用 <code>aria-label</code> 或 <code>aria-labelledby</code> 为它们添加标签。</p>
     </Callout>
     <p>
       这些类也可以添加到链接组中，作为
-     <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
+      <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
     </p>
     <Example
       code='<div class="btn-group">
@@ -237,7 +234,7 @@
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#nesting">嵌套</a></li>
       <li>
-       <a href="#vertical-variation">垂直排列变体</a>
+        <a href="#vertical-variation">垂直排列变体</a>
       </li>
     </ul>
   </nav>

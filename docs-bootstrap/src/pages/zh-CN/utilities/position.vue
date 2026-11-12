@@ -88,9 +88,7 @@
   Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
 </button>'
     />
-    <p>
-      你可以将这些类与现有组件结合使用以创建新组件。请记住，你可以通过向 <code>$position-values</code> 变量添加条目来扩展其功能。
-    </p>
+    <p>你可以将这些类与现有组件结合使用以创建新组件。请记住，你可以通过向 <code>$position-values</code> 变量添加条目来扩展其功能。</p>
     <Example
       class="bd-example-position-examples"
       code='<div class="position-relative m-4">
@@ -109,7 +107,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       定位工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-position" file="scss/_utilities.scss" />
     <DocsPager />
@@ -123,7 +121,7 @@
       <li><a href="#center-elements">居中元素</a></li>
       <li><a href="#examples">示例</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-maps">Sass 映射</a></li>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>

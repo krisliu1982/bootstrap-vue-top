@@ -6,8 +6,8 @@
     <h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色"></a></h2>
     <AddedIn version="5.3.0" />
     <p>
-      Bootstrap 的调色板在 v5.3.0 中继续扩展并变得更加精细。我们为 <code>secondary</code> 和 <code>tertiary</code> 文本及背景色新增了变量，并为我们的主题色新增了 <code>{color}-bg-subtle</code>、<code>{color}-border-subtle</code> 和 <code>{color}-text-emphasis</code>。这些新颜色可通过 Sass 和 CSS 变量使用（但不能通过我们的颜色映射或工具类使用），其明确目标是
-      让在浅色和深色等多种颜色模式之间进行自定义变得更容易。这些新变量全局设置在 <code>:root</code> 上，并针对我们新的深色颜色模式进行了适配，而原有的主题色保持不变。
+      Bootstrap 的调色板在 v5.3.0 中继续扩展并变得更加精细。我们为 <code>secondary</code> 和 <code>tertiary</code> 文本及背景色新增了变量，并为我们的主题色新增了 <code>{color}-bg-subtle</code>、<code>{color}-border-subtle</code> 和 <code>{color}-text-emphasis</code>。这些新颜色可通过 Sass 和 CSS
+      变量使用（但不能通过我们的颜色映射或工具类使用），其明确目标是 让在浅色和深色等多种颜色模式之间进行自定义变得更容易。这些新变量全局设置在 <code>:root</code> 上，并针对我们新的深色颜色模式进行了适配，而原有的主题色保持不变。
     </p>
     <p>以 <code>-rgb</code> 结尾的颜色提供 <code>red, green, blue</code> 值，供 <code>rgb()</code> 和 <code>rgba()</code> 颜色模式使用。例如 <code>rgba(var(--bs-secondary-bg-rgb), .5)</code>。</p>
     <Callout type="warning">
@@ -351,10 +351,7 @@
       </table>
     </div>
     <h3 id="using-the-new-colors">使用新颜色<a class="anchor-link" href="#using-the-new-colors" aria-label="使用新颜色"></a></h3>
-    <p>
-      这些新颜色可通过 CSS 变量和工具类（如 <code>--bs-primary-bg-subtle</code> 和 <code>.bg-primary-subtle</code>）访问，让你可以使用这些变量组合自己的 CSS 规则，或通过类快速应用样式。这些工具类构建于颜色对应的 CSS 变量之上，并且由于我们为深色模式自定义了
-      这些 CSS 变量，因此它们默认也会自适应颜色模式。
-    </p>
+    <p>这些新颜色可通过 CSS 变量和工具类（如 <code>--bs-primary-bg-subtle</code> 和 <code>.bg-primary-subtle</code>）访问，让你可以使用这些变量组合自己的 CSS 规则，或通过类快速应用样式。这些工具类构建于颜色对应的 CSS 变量之上，并且由于我们为深色模式自定义了 这些 CSS 变量，因此它们默认也会自适应颜色模式。</p>
     <Example
       code='<div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
   Example element with utilities
@@ -523,13 +520,8 @@
       Sass 无法以编程方式生成变量，因此我们手动为每个色调和色阶创建了变量。我们指定中间值（例如
       <code>$blue-500</code>），并使用自定义颜色函数通过 Sass 的 <code>mix()</code> 颜色函数来为颜色添加色调（变亮）或色阶（变暗）。
     </p>
-    <p>
-      使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如
-     <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。
-    </p>
-    <p>
-      我们的 <code>tint-color()</code> 和 <code>shade-color()</code> 函数使用 <code>mix()</code> 以及我们的 <code>$theme-color-interval</code> 变量，该变量为我们生成的每种混合颜色指定一个阶梯式的百分比值。完整源代码请参阅 <code>scss/_functions.scss</code> 和 <code>scss/_variables.scss</code> 文件。
-    </p>
+    <p>使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如 <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。</p>
+    <p>我们的 <code>tint-color()</code> 和 <code>shade-color()</code> 函数使用 <code>mix()</code> 以及我们的 <code>$theme-color-interval</code> 变量，该变量为我们生成的每种混合颜色指定一个阶梯式的百分比值。完整源代码请参阅 <code>scss/_functions.scss</code> 和 <code>scss/_variables.scss</code> 文件。</p>
     <h2 id="color-sass-maps">颜色 Sass 映射<a class="anchor-link" href="#color-sass-maps" aria-label="颜色 Sass 映射"></a></h2>
     <p>Bootstrap 的 Sass 源文件包含三个映射，帮助你快速轻松地遍历颜色列表及其十六进制值。</p>
     <ul>
@@ -600,7 +592,7 @@ $utilities: map-merge(
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#colors">颜色</a>
+        <a href="#colors">颜色</a>
         <ul>
           <li><a href="#using-the-new-colors">使用新颜色</a></li>
           <li><a href="#theme-colors">主题色</a></li>
@@ -609,13 +601,13 @@ $utilities: map-merge(
         </ul>
       </li>
       <li>
-       <a href="#color-sass-maps">颜色 Sass 映射</a>
+        <a href="#color-sass-maps">颜色 Sass 映射</a>
         <ul>
           <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
-       <a href="#generating-utilities">生成工具类</a>
+        <a href="#generating-utilities">生成工具类</a>
       </li>
     </ul>
   </nav>

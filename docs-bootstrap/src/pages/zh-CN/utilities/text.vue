@@ -33,14 +33,11 @@
 </div>'
     />
     <h2 id="word-break">断词<a class="anchor-link" href="#word-break" aria-label="断词"></a></h2>
-    <p>
-      使用 <code>.text-break</code> 设置 <code>word-wrap: break-word</code> 和 <code>word-break: break-word</code>，防止长字符串文本破坏组件的布局。为了获得更广泛的浏览器支持，我们使用 <code>word-wrap</code> 而不是更常见的 <code>overflow-wrap</code>，并添加了已废弃的
-      <code>word-break: break-word</code> 以避免 flex 容器出现问题。
-    </p>
+    <p>使用 <code>.text-break</code> 设置 <code>word-wrap: break-word</code> 和 <code>word-break: break-word</code>，防止长字符串文本破坏组件的布局。为了获得更广泛的浏览器支持，我们使用 <code>word-wrap</code> 而不是更常见的 <code>overflow-wrap</code>，并添加了已废弃的 <code>word-break: break-word</code> 以避免 flex 容器出现问题。</p>
     <Example code='<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>' /><Callout type="warning">
       <p>
         请注意，
-       <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a>。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
+        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a>。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
       </p>
     </Callout>
     <h2 id="text-transform">文本转换<a class="anchor-link" href="#text-transform" aria-label="文本转换"></a></h2>
@@ -52,9 +49,7 @@
     />
     <p>请注意，<code>.text-capitalize</code> 只会更改每个单词的首字母，其他字母的大小写保持不变。</p>
     <h2 id="font-size">字体大小<a class="anchor-link" href="#font-size" aria-label="字体大小"></a></h2>
-    <p>
-      快速更改文本的 <code>font-size</code>。我们的标题类（例如 <code>.h1</code>–<code>.h6</code>）会应用 <code>font-size</code>、<code>font-weight</code> 和 <code>line-height</code>，而这些工具类<em>仅</em>应用 <code>font-size</code>。这些工具类的尺寸与 HTML 的标题元素一致，因此数字越大，尺寸越小。
-    </p>
+    <p>快速更改文本的 <code>font-size</code>。我们的标题类（例如 <code>.h1</code>–<code>.h6</code>）会应用 <code>font-size</code>、<code>font-weight</code> 和 <code>line-height</code>，而这些工具类<em>仅</em>应用 <code>font-size</code>。这些工具类的尺寸与 HTML 的标题元素一致，因此数字越大，尺寸越小。</p>
     <Example
       code='<p class="fs-1">.fs-1 text</p>
 <p class="fs-2">.fs-2 text</p>
@@ -112,7 +107,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API"></a></h3>
     <p>
       字体和文本工具类在 <code>scss/_utilities.scss</code> 中的工具类 API 中声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-text" file="scss/_utilities.scss" />
     <DocsPager />
@@ -132,7 +127,7 @@
       <li><a href="#reset-color">重置颜色</a></li>
       <li><a href="#text-decoration">文本装饰</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-maps">Sass 映射</a></li>

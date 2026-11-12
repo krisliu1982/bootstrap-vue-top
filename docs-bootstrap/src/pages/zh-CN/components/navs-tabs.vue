@@ -26,10 +26,7 @@
   </li>
 </ul>'
     />
-    <p>
-      整个过程中都使用类，因此你的标记可以非常灵活。像上面一样使用 <code>&lt;ul&gt;</code>，如果项目顺序很重要则使用 <code>&lt;ol&gt;</code>，或者使用 <code>&lt;nav&gt;</code> 元素自行构建。由于 <code>.nav</code> 使用 <code>display: flex</code>，导航链接的行为与导航项相同，
-      但无需额外的标记。
-    </p>
+    <p>整个过程中都使用类，因此你的标记可以非常灵活。像上面一样使用 <code>&lt;ul&gt;</code>，如果项目顺序很重要则使用 <code>&lt;ol&gt;</code>，或者使用 <code>&lt;nav&gt;</code> 元素自行构建。由于 <code>.nav</code> 使用 <code>display: flex</code>，导航链接的行为与导航项相同， 但无需额外的标记。</p>
     <Example
       code='<nav class="nav">
  <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -41,9 +38,7 @@
     <h2 id="available-styles">可用样式<a class="anchor-link" href="#available-styles" aria-label="可用样式链接"></a></h2>
     <p>使用修饰类和工具类更改 <code>.nav</code> 组件的样式。根据需要组合搭配，或构建你自己的样式。</p>
     <h3 id="horizontal-alignment">水平对齐<a class="anchor-link" href="#horizontal-alignment" aria-label="水平对齐链接"></a></h3>
-    <p>
-      使用<a href="/utilities/flex#justify-content">弹性盒子工具类</a>更改导航的水平对齐。默认情况下，导航是左对齐的，但你可以轻松地将其改为居中对齐或右对齐。
-    </p>
+    <p>使用<a href="/utilities/flex#justify-content">弹性盒子工具类</a>更改导航的水平对齐。默认情况下，导航是左对齐的，但你可以轻松地将其改为居中对齐或右对齐。</p>
     <p>使用 <code>.justify-content-center</code> 居中：</p>
     <Example
       code='<ul class="nav justify-content-center">
@@ -215,7 +210,7 @@
     <h2 id="working-with-flex-utilities">配合 Flex 工具类使用<a class="anchor-link" href="#working-with-flex-utilities" aria-label="配合 Flex 工具类使用"></a></h2>
     <p>
       如果你需要响应式的导航变体，可以考虑使用一系列
-     <a href="/utilities/flex">flexbox 工具类</a>。虽然写法更冗长，但这些工具类能在各个响应式断点上提供更强的定制能力。在下面的示例中，我们的导航会在最小断点下堆叠显示，然后在小断点及以上时切换为水平布局并填满可用宽度。
+      <a href="/utilities/flex">flexbox 工具类</a>。虽然写法更冗长，但这些工具类能在各个响应式断点上提供更强的定制能力。在下面的示例中，我们的导航会在最小断点下堆叠显示，然后在小断点及以上时切换为水平布局并填满可用宽度。
     </p>
     <Example
       code='<nav class="nav nav-pills flex-column flex-sm-row">
@@ -226,17 +221,16 @@
 </nav>'
     />
     <h2 id="regarding-accessibility">关于无障碍访问<a class="anchor-link" href="#regarding-accessibility" aria-label="关于无障碍访问"></a></h2>
-    <p>
-      如果你使用导航来提供导航栏，请务必为 <code>&lt;ul&gt;</code> 最合理的父容器添加 <code>role=&quot;navigation&quot;</code>，或用 <code>&lt;nav&gt;</code> 元素包裹整个导航。不要将 role 添加到 <code>&lt;ul&gt;</code> 本身，因为这会使其无法被辅助技术识别为真正的列表。
-    </p>
+    <p>如果你使用导航来提供导航栏，请务必为 <code>&lt;ul&gt;</code> 最合理的父容器添加 <code>role=&quot;navigation&quot;</code>，或用 <code>&lt;nav&gt;</code> 元素包裹整个导航。不要将 role 添加到 <code>&lt;ul&gt;</code> 本身，因为这会使其无法被辅助技术识别为真正的列表。</p>
     <p>
       请注意，导航栏即使在视觉上使用 <code>.nav-tabs</code> 类样式化为标签页，也<strong>不应</strong>添加 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code> 或 <code>role=&quot;tabpanel&quot;</code> 属性。这些属性仅适用于动态标签页界面，如
-     <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述。本节中的动态标签页界面示例请参阅<a href="#javascript-behavior">JavaScript 行为</a>。动态标签页界面不需要 <code>aria-current</code> 属性，因为我们的 JavaScript 会通过在活动标签页上添加 <code>aria-selected=&quot;true&quot;</code> 来处理选中状态。
+      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述。本节中的动态标签页界面示例请参阅<a href="#javascript-behavior">JavaScript 行为</a>。动态标签页界面不需要 <code>aria-current</code> 属性，因为我们的 JavaScript 会通过在活动标签页上添加
+      <code>aria-selected=&quot;true&quot;</code> 来处理选中状态。
     </p>
     <h2 id="using-dropdowns">使用下拉菜单<a class="anchor-link" href="#using-dropdowns" aria-label="使用下拉菜单"></a></h2>
     <p>
       添加少量额外 HTML 并配合
-     <a href="/components/dropdowns#usage">下拉菜单 JavaScript 插件</a>即可使用下拉菜单。
+      <a href="/components/dropdowns#usage">下拉菜单 JavaScript 插件</a>即可使用下拉菜单。
     </p>
     <h3 id="tabs-with-dropdowns">带下拉菜单的标签页<a class="anchor-link" href="#tabs-with-dropdowns" aria-label="带下拉菜单的标签页"></a></h3>
     <Example
@@ -360,8 +354,8 @@
       lang="html"
     />
     <p>
-      为了满足你的需求，这既适用于上面展示的基于 <code>&lt;ul&gt;</code> 的标记，也适用于任意“自行定义”的标记。注意，如果你使用 <code>&lt;nav&gt;</code>，不应直接在其上添加 <code>role=&quot;tablist&quot;</code>，因为这会覆盖该元素作为导航地标（landmark）的原生角色。
-      而应改用其他元素（下面示例中使用简单的 <code>&lt;div&gt;</code>），并在其外层包裹 <code>&lt;nav&gt;</code>。
+      为了满足你的需求，这既适用于上面展示的基于 <code>&lt;ul&gt;</code> 的标记，也适用于任意“自行定义”的标记。注意，如果你使用 <code>&lt;nav&gt;</code>，不应直接在其上添加 <code>role=&quot;tablist&quot;</code>，因为这会覆盖该元素作为导航地标（landmark）的原生角色。 而应改用其他元素（下面示例中使用简单的 <code>&lt;div&gt;</code>），并在其外层包裹
+      <code>&lt;nav&gt;</code>。
     </p>
     <Example
       :showMarkup="false"
@@ -521,25 +515,19 @@
     <h3 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问"></a></h3>
     <p>
       如
-     <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述，动态标签页界面需要 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code>、<code>role=&quot;tabpanel&quot;</code> 以及其他 <code>aria-</code> 属性，以便向辅助技术（如屏幕阅读器）用户传达其结构、功能和当前状态。作为最佳实践，我们建议对标签页使用 <code>&lt;button&gt;</code> 元素，因为它们是触发动态变化的控件，而不是跳转到新页面或位置的链接。
+      <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/">ARIA 创作实践指南中的标签页模式</a>所述，动态标签页界面需要 <code>role=&quot;tablist&quot;</code>、<code>role=&quot;tab&quot;</code>、<code>role=&quot;tabpanel&quot;</code> 以及其他
+      <code>aria-</code> 属性，以便向辅助技术（如屏幕阅读器）用户传达其结构、功能和当前状态。作为最佳实践，我们建议对标签页使用 <code>&lt;button&gt;</code> 元素，因为它们是触发动态变化的控件，而不是跳转到新页面或位置的链接。
     </p>
     <p>
       依据 ARIA 创作实践模式，只有当前活动的标签页会获得键盘焦点。JavaScript 插件初始化时，会为所有非活动标签页控件设置
-      <code>tabindex=&quot;-1&quot;</code>。当当前活动标签页获得焦点后，方向键可激活上一个/下一个标签页。<kbd>Home</kbd> 和 <kbd>End</kbd> 键分别激活第一个和最后一个标签页。插件会相应地更改
-     <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a>。
-      但请注意，在方向键交互方面，JavaScript 插件并不区分水平与垂直的标签页列表：无论标签页列表的方向如何，向上
-      <em>和</em>向左方向键都会切换到上一个标签页，向下<em>和</em>向右方向键都会切换到下一个标签页。
+      <code>tabindex=&quot;-1&quot;</code>。当当前活动标签页获得焦点后，方向键可激活上一个/下一个标签页。<kbd>Home</kbd> 和 <kbd>End</kbd> 键分别激活第一个和最后一个标签页。插件会相应地更改 <a href="https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/">roving <code>tabindex</code></a
+      >。 但请注意，在方向键交互方面，JavaScript 插件并不区分水平与垂直的标签页列表：无论标签页列表的方向如何，向上 <em>和</em>向左方向键都会切换到上一个标签页，向下<em>和</em>向右方向键都会切换到下一个标签页。
     </p>
     <Callout type="warning">
-      <p>
-        一般来说，为便于键盘导航，建议让标签页面板本身也可获得焦点，除非标签页面板内包含有意义内容的首个元素已经可以获得焦点。JavaScript 插件不会尝试处理这一方面——在适当的情况下，你需要在标记中为标签页面板添加 <code>tabindex=&quot;0&quot;</code> 以使其可获得焦点。
-      </p>
+      <p>一般来说，为便于键盘导航，建议让标签页面板本身也可获得焦点，除非标签页面板内包含有意义内容的首个元素已经可以获得焦点。JavaScript 插件不会尝试处理这一方面——在适当的情况下，你需要在标记中为标签页面板添加 <code>tabindex=&quot;0&quot;</code> 以使其可获得焦点。</p>
     </Callout>
     <Callout type="danger">
-      <p>
-        标签页 JavaScript 插件<strong>不</strong>支持包含下拉菜单的标签页界面，因为这会导致可用性和无障碍访问问题。从可用性角度看，当前显示的标签页的触发元素不能立即可见（因为它位于关闭的下拉菜单中），会造成困惑。
-        从无障碍访问角度看，目前没有合理的方式将这类构造映射到标准的 WAI ARIA 模式，这意味着无法轻易使辅助技术用户理解它。
-      </p>
+      <p>标签页 JavaScript 插件<strong>不</strong>支持包含下拉菜单的标签页界面，因为这会导致可用性和无障碍访问问题。从可用性角度看，当前显示的标签页的触发元素不能立即可见（因为它位于关闭的下拉菜单中），会造成困惑。 从无障碍访问角度看，目前没有合理的方式将这类构造映射到标准的 WAI ARIA 模式，这意味着无法轻易使辅助技术用户理解它。</p>
     </Callout>
     <h3 id="using-data-attributes">使用数据属性<a class="anchor-link" href="#using-data-attributes" aria-label="使用数据属性"></a></h3>
     <p>
@@ -636,64 +624,64 @@ bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
           </tr>
           <tr>
             <td><code>getOrCreateInstance</code></td>
-              <td>
-                静态方法，返回与 DOM 元素关联的标签页实例，若未初始化则创建一个新实例。可以这样使用：
-                <code>bootstrap.Tab.getOrCreateInstance(element)</code>。
-              </td>
-            </tr>
-            <tr>
-              <td><code>show</code></td>
-              <td>
-                选中指定的标签页并显示其关联面板。之前选中的其他标签页将变为未选中状态，其关联面板将被隐藏。
-                <strong>在标签页面板实际显示之前</strong>（即 <code>shown.bs.tab</code> 事件发生之前）<strong>就会返回给调用方</strong>。
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件"></a></h3>
-      <p>显示新标签页时，事件按以下顺序触发：</p>
-      <ol>
-        <li><code>hide.bs.tab</code>（在当前活动标签页上）</li>
-        <li><code>show.bs.tab</code>（在即将显示的标签页上）</li>
-        <li><code>hidden.bs.tab</code>（在之前活动的标签页上，与 <code>hide.bs.tab</code> 事件的对象相同）</li>
-        <li><code>shown.bs.tab</code>（在刚刚显示的新活动标签页上，与 <code>show.bs.tab</code> 事件的对象相同）</li>
-      </ol>
-      <p>如果此前没有活动标签页，则不会触发 <code>hide.bs.tab</code> 和 <code>hidden.bs.tab</code> 事件。</p>
-      <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>事件类型</th>
-              <th>描述</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>hide.bs.tab</code></td>
-              <td>
-                在即将显示新标签页（因而要隐藏之前的活动标签页）时触发。分别使用
-                <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位当前活动标签页和即将变为活动状态的标签页。
-              </td>
-            </tr>
-            <tr>
-              <td><code>hidden.bs.tab</code></td>
-              <td>
-                在显示新标签页（因而隐藏之前的活动标签页）之后触发。分别使用
-                <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位之前的活动标签页和新的活动标签页。
-              </td>
-            </tr>
-            <tr>
-              <td><code>show.bs.tab</code></td>
-              <td>在标签页显示时、新标签页显示之前触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
-            </tr>
-            <tr>
-              <td><code>shown.bs.tab</code></td>
-              <td>在标签页显示之后触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            <td>
+              静态方法，返回与 DOM 元素关联的标签页实例，若未初始化则创建一个新实例。可以这样使用：
+              <code>bootstrap.Tab.getOrCreateInstance(element)</code>。
+            </td>
+          </tr>
+          <tr>
+            <td><code>show</code></td>
+            <td>
+              选中指定的标签页并显示其关联面板。之前选中的其他标签页将变为未选中状态，其关联面板将被隐藏。
+              <strong>在标签页面板实际显示之前</strong>（即 <code>shown.bs.tab</code> 事件发生之前）<strong>就会返回给调用方</strong>。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件"></a></h3>
+    <p>显示新标签页时，事件按以下顺序触发：</p>
+    <ol>
+      <li><code>hide.bs.tab</code>（在当前活动标签页上）</li>
+      <li><code>show.bs.tab</code>（在即将显示的标签页上）</li>
+      <li><code>hidden.bs.tab</code>（在之前活动的标签页上，与 <code>hide.bs.tab</code> 事件的对象相同）</li>
+      <li><code>shown.bs.tab</code>（在刚刚显示的新活动标签页上，与 <code>show.bs.tab</code> 事件的对象相同）</li>
+    </ol>
+    <p>如果此前没有活动标签页，则不会触发 <code>hide.bs.tab</code> 和 <code>hidden.bs.tab</code> 事件。</p>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>事件类型</th>
+            <th>描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>hide.bs.tab</code></td>
+            <td>
+              在即将显示新标签页（因而要隐藏之前的活动标签页）时触发。分别使用
+              <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位当前活动标签页和即将变为活动状态的标签页。
+            </td>
+          </tr>
+          <tr>
+            <td><code>hidden.bs.tab</code></td>
+            <td>
+              在显示新标签页（因而隐藏之前的活动标签页）之后触发。分别使用
+              <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位之前的活动标签页和新的活动标签页。
+            </td>
+          </tr>
+          <tr>
+            <td><code>show.bs.tab</code></td>
+            <td>在标签页显示时、新标签页显示之前触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
+          </tr>
+          <tr>
+            <td><code>shown.bs.tab</code></td>
+            <td>在标签页显示之后触发。分别使用 <code>event.target</code> 和 <code>event.relatedTarget</code> 来定位活动标签页和之前的活动标签页（如果存在）。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <CodeWrapper
       code='const tabEl = document.querySelector(&#39;button[data-bs-toggle="tab"]&#39;)
 tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
@@ -711,7 +699,7 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
     <ul>
       <li><a href="#base-nav">基础导航</a></li>
       <li>
-       <a href="#available-styles">可用样式</a>
+        <a href="#available-styles">可用样式</a>
         <ul>
           <li><a href="#horizontal-alignment">水平对齐</a></li>
           <li><a href="#vertical">垂直方向</a></li>
@@ -724,21 +712,21 @@ tabEl.addEventListener(&#39;shown.bs.tab&#39;, event =&gt; {
       <li><a href="#working-with-flex-utilities">配合 Flex 工具类使用</a></li>
       <li><a href="#regarding-accessibility">关于无障碍访问</a></li>
       <li>
-       <a href="#using-dropdowns">使用下拉菜单</a>
+        <a href="#using-dropdowns">使用下拉菜单</a>
         <ul>
           <li><a href="#tabs-with-dropdowns">带下拉菜单的标签页</a></li>
           <li><a href="#pills-with-dropdowns">带下拉菜单的胶囊导航</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-       <a href="#javascript-behavior">JavaScript 行为</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#accessibility">无障碍访问</a></li>
           <li><a href="#using-data-attributes">使用数据属性</a></li>

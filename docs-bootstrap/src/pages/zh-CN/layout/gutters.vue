@@ -20,10 +20,7 @@
       </li>
     </ul>
     <h2 id="horizontal-gutters">水平间距<a class="anchor-link" href="#horizontal-gutters" aria-label="水平间距链接"></a></h2>
-    <p>
-      可以使用 <code>.gx-*</code> 类来控制水平间距的宽度。如果使用了较大的间距，可能还需要使用匹配的内边距工具类来调整父级 <code>.container</code> 或 <code>.container-fluid</code>，以避免不必要的溢出。例如，在下面的示例中，我们使用
-      <code>.px-4</code> 增加了内边距：
-    </p>
+    <p>可以使用 <code>.gx-*</code> 类来控制水平间距的宽度。如果使用了较大的间距，可能还需要使用匹配的内边距工具类来调整父级 <code>.container</code> 或 <code>.container-fluid</code>，以避免不必要的溢出。例如，在下面的示例中，我们使用 <code>.px-4</code> 增加了内边距：</p>
     <Example
       class="bd-example-cols"
       code='<div class="container px-4 text-center">
@@ -52,10 +49,7 @@
 </div>'
     />
     <h2 id="vertical-gutters">垂直间距<a class="anchor-link" href="#vertical-gutters" aria-label="垂直间距链接"></a></h2>
-    <p>
-      当列换行到新的一行时，可以使用 <code>.gy-*</code> 类来控制行内的垂直间距宽度。与水平间距类似，垂直间距可能会导致页面底部的 <code>.row</code> 下方出现一些溢出。如果发生这种情况，请为 <code>.row</code> 添加一个带有
-      <code>.overflow-hidden</code> 类的包裹元素：
-    </p>
+    <p>当列换行到新的一行时，可以使用 <code>.gy-*</code> 类来控制行内的垂直间距宽度。与水平间距类似，垂直间距可能会导致页面底部的 <code>.row</code> 下方出现一些溢出。如果发生这种情况，请为 <code>.row</code> 添加一个带有 <code>.overflow-hidden</code> 类的包裹元素：</p>
     <Example
       class="bd-example-cols"
       code='<div class="container overflow-hidden text-center">
@@ -174,7 +168,7 @@ $gutters: (
       <li><a href="#row-columns-gutters">行内列间距</a></li>
       <li><a href="#no-gutters">无间距</a></li>
       <li>
-       <a href="#change-the-gutters">修改间距</a>
+        <a href="#change-the-gutters">修改间距</a>
       </li>
     </ul>
   </nav>

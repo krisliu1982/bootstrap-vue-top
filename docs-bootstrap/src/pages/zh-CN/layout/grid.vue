@@ -6,13 +6,13 @@
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>
       Bootstrap 的网格系统使用一系列容器、行和列来布局和对齐内容。它使用
-     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
       构建，完全响应式。下面是一个示例，以及关于网格系统如何组合而成的深入说明。
     </p>
     <Callout>
       <p>
         <strong>刚接触或不熟悉 flexbox？</strong>
-       <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">阅读这篇 CSS Tricks flexbox 指南</a>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">阅读这篇 CSS Tricks flexbox 指南</a>
         了解背景、术语、准则和代码片段。
       </p> </Callout
     ><Example
@@ -48,26 +48,19 @@
         <p><strong>容器会使内容居中并进行水平填充。</strong> 使用 <code>.container</code> 获得响应式像素宽度，使用 <code>.container-fluid</code> 在所有视口和设备上获得 <code>width: 100%</code>，或使用响应式容器（例如 <code>.container-md</code>）获得流式与像素宽度的组合。</p>
       </li>
       <li>
-        <p>
-          <strong>行是列的包裹元素。</strong> 每一列都有水平 <code>padding</code>（称为间距 gutter），用于控制它们之间的空间。然后通过负外边距在行上抵消此 <code>padding</code>，以确保列中的内容在左侧视觉上对齐。行还支持修饰类来<a href="#row-columns">统一应用列尺寸</a>，以及<a href="/layout/gutters">间距类</a>来更改内容的间隔。
-        </p>
+        <p><strong>行是列的包裹元素。</strong> 每一列都有水平 <code>padding</code>（称为间距 gutter），用于控制它们之间的空间。然后通过负外边距在行上抵消此 <code>padding</code>，以确保列中的内容在左侧视觉上对齐。行还支持修饰类来<a href="#row-columns">统一应用列尺寸</a>，以及<a href="/layout/gutters">间距类</a>来更改内容的间隔。</p>
       </li>
       <li>
-        <p>
-          <strong>列非常灵活。</strong> 每行有 12 个模板列可用，允许你创建跨越任意列数的元素的不同组合。列类指示要跨越的模板列数（例如，<code>col-4</code> 跨越四列）。<code>width</code> 以百分比设置，因此你始终拥有相同的相对尺寸。
-        </p>
+        <p><strong>列非常灵活。</strong> 每行有 12 个模板列可用，允许你创建跨越任意列数的元素的不同组合。列类指示要跨越的模板列数（例如，<code>col-4</code> 跨越四列）。<code>width</code> 以百分比设置，因此你始终拥有相同的相对尺寸。</p>
       </li>
       <li>
         <p>
           <strong>间距同样是响应式且可自定义的。</strong>
-         <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。
-          还可以使用 <code>.g-0</code> 移除间距。
+          <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。 还可以使用 <code>.g-0</code> 移除间距。
         </p>
       </li>
       <li>
-        <p>
-          <strong>Sass 变量、map 和 mixin 驱动着网格。</strong> 如果你不想使用 Bootstrap 中预定义的网格类，可以使用我们的<a href="#sass-variables">网格 Sass 源码</a>创建具有更语义化标记的自定义网格。我们还包含了一些 CSS 自定义属性，供你使用这些 Sass 变量，为你提供更大的灵活性。
-        </p>
+        <p><strong>Sass 变量、map 和 mixin 驱动着网格。</strong> 如果你不想使用 Bootstrap 中预定义的网格类，可以使用我们的<a href="#sass-variables">网格 Sass 源码</a>创建具有更语义化标记的自定义网格。我们还包含了一些 CSS 自定义属性，供你使用这些 Sass 变量，为你提供更大的灵活性。</p>
       </li>
     </ul>
     <p>请注意 flexbox 的局限性和<a href="https://github.com/philipwalton/flexbugs">相关缺陷</a>，例如<a href="https://github.com/philipwalton/flexbugs#flexbug-9">无法将某些 HTML 元素用作 flex 容器</a>。</p>
@@ -287,10 +280,7 @@
 </div>'
     />
     <h3 id="row-columns">行内列（Row columns）<a class="anchor-link" href="#row-columns" aria-label="行内列链接"></a></h3>
-    <p>
-      使用响应式 <code>.row-cols-*</code> 类，快速设置最能呈现你的内容和布局的列数。普通的 <code>.col-*</code> 类应用于单个列（例如 <code>.col-md-4</code>），而行内列类则作为快捷方式设置在父级 <code>.row</code> 上。使用
-      <code>.row-cols-auto</code> 可以让列采用其自然宽度。
-    </p>
+    <p>使用响应式 <code>.row-cols-*</code> 类，快速设置最能呈现你的内容和布局的列数。普通的 <code>.col-*</code> 类应用于单个列（例如 <code>.col-md-4</code>），而行内列类则作为快捷方式设置在父级 <code>.row</code> 上。使用 <code>.row-cols-auto</code> 可以让列采用其自然宽度。</p>
     <p>使用这些行内列类可以快速创建基本的网格布局，或控制你的卡片布局。</p>
     <Example
       class="bd-example-row"
@@ -468,9 +458,7 @@ $grid-row-columns:  6;
     <h2 id="customizing-the-grid">自定义网格<a class="anchor-link" href="#customizing-the-grid" aria-label="自定义网格链接"></a></h2>
     <p>使用我们内置的网格 Sass 变量和 map，你可以完全自定义预定义的网格类。更改层级数量、媒体查询尺寸和容器宽度——然后重新编译。</p>
     <h3 id="columns-and-gutters">列与间距<a class="anchor-link" href="#columns-and-gutters" aria-label="列与间距链接"></a></h3>
-    <p>
-      网格列数可以通过 Sass 变量修改。<code>$grid-columns</code> 用于生成每个单独列的宽度（以百分比表示），而 <code>$grid-gutter-width</code> 设置列间距的宽度。<code>$grid-row-columns</code> 用于设置 <code>.row-cols-*</code> 的最大列数，超过此限制的任何数字都将被忽略。
-    </p>
+    <p>网格列数可以通过 Sass 变量修改。<code>$grid-columns</code> 用于生成每个单独列的宽度（以百分比表示），而 <code>$grid-gutter-width</code> 设置列间距的宽度。<code>$grid-row-columns</code> 用于设置 <code>.row-cols-*</code> 的最大列数，超过此限制的任何数字都将被忽略。</p>
     <CodeWrapper
       code="$grid-columns: 12 !default;
 $grid-gutter-width: 1.5rem !default;
@@ -510,7 +498,7 @@ $container-max-widths: (
       <li><a href="#how-it-works">工作原理</a></li>
       <li><a href="#grid-options">网格选项</a></li>
       <li>
-       <a href="#auto-layout-columns">自动布局列</a>
+        <a href="#auto-layout-columns">自动布局列</a>
         <ul>
           <li><a href="#equal-width">等宽</a></li>
           <li><a href="#setting-one-column-width">设置单列宽度</a></li>
@@ -518,7 +506,7 @@ $container-max-widths: (
         </ul>
       </li>
       <li>
-       <a href="#responsive-classes">响应式类</a>
+        <a href="#responsive-classes">响应式类</a>
         <ul>
           <li><a href="#all-breakpoints">所有断点</a></li>
           <li><a href="#stacked-to-horizontal">从堆叠到水平</a></li>
@@ -528,7 +516,7 @@ $container-max-widths: (
       </li>
       <li><a href="#nesting">嵌套</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixin</a></li>
@@ -536,7 +524,7 @@ $container-max-widths: (
         </ul>
       </li>
       <li>
-       <a href="#customizing-the-grid">自定义网格</a>
+        <a href="#customizing-the-grid">自定义网格</a>
         <ul>
           <li><a href="#columns-and-gutters">列与间距</a></li>
           <li><a href="#grid-tiers">网格层级</a></li>

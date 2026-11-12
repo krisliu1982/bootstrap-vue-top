@@ -4,9 +4,7 @@
     <p class="lead">关于使用 Bootstrap 对表格进行选择性样式设置（鉴于它们在 JavaScript 插件中的广泛使用）的文档和示例。</p>
 
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
-    <p>
-      由于 <code>&lt;table&gt;</code> 元素在日历和日期选择器等第三方小部件中被广泛使用，Bootstrap 的表格是<strong>选择性启用</strong>的。为任意 <code>&lt;table&gt;</code> 添加基础类 <code>.table</code>，然后使用我们可选的修饰类或自定义样式进行扩展。Bootstrap 中的所有表格样式都不会被继承，这意味着任何嵌套表格都可以独立于父表格进行样式设置。
-    </p>
+    <p>由于 <code>&lt;table&gt;</code> 元素在日历和日期选择器等第三方小部件中被广泛使用，Bootstrap 的表格是<strong>选择性启用</strong>的。为任意 <code>&lt;table&gt;</code> 添加基础类 <code>.table</code>，然后使用我们可选的修饰类或自定义样式进行扩展。Bootstrap 中的所有表格样式都不会被继承，这意味着任何嵌套表格都可以独立于父表格进行样式设置。</p>
     <p>使用最基本的表格标记，以下是基于 <code>.table</code> 的表格在 Bootstrap 中的外观。</p>
     <TableBs class="table" :simplified="false" />
     <h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
@@ -210,8 +208,8 @@
         在表格单元格上添加内阴影，以叠加在任何指定的 <code>background-color</code> 之上。它使用自定义层叠来覆盖 <code>box-shadow</code>，无论 CSS 特异性如何。因为我们使用了巨大的扩散且没有模糊，所以颜色是单调的。由于 <code>--bs-table-accent-bg</code> 默认设置为 <code>transparent</code>，因此我们没有默认的盒阴影。
       </li>
       <li>
-        当添加 <code>.table-striped</code>、<code>.table-striped-columns</code>、<code>.table-hover</code> 或 <code>.table-active</code> 类时，<code>--bs-table-bg-type</code> 或 <code>--bs-table-bg-state</code>（默认设置为 <code>initial</code>）会被设置为半透明颜色（<code>--bs-table-striped-bg</code>、
-        <code>--bs-table-active-bg</code> 或 <code>--bs-table-hover-bg</code>），以便为背景着色并覆盖默认的 <code>--bs-table-accent-bg</code>。
+        当添加 <code>.table-striped</code>、<code>.table-striped-columns</code>、<code>.table-hover</code> 或 <code>.table-active</code> 类时，<code>--bs-table-bg-type</code> 或 <code>--bs-table-bg-state</code>（默认设置为 <code>initial</code>）会被设置为半透明颜色（<code>--bs-table-striped-bg</code>、 <code>--bs-table-active-bg</code> 或
+        <code>--bs-table-hover-bg</code>），以便为背景着色并覆盖默认的 <code>--bs-table-accent-bg</code>。
       </li>
       <li>对于每个表格变体，我们根据该颜色生成具有最高对比度的 <code>--bs-table-accent-bg</code> 颜色。例如，<code>.table-primary</code> 的强调色较深，而 <code>.table-dark</code> 的强调色较浅。</li>
       <li>文本和边框颜色以相同的方式生成，并且它们的颜色默认被继承。</li>
@@ -409,7 +407,8 @@
     />
     <h2 id="how-nesting-works">嵌套的工作原理<a class="anchor-link" href="#how-nesting-works" aria-label="嵌套的工作原理链接"></a></h2>
     <p>
-      为了防止<em>任何</em>样式泄漏到嵌套表格中，我们在 CSS 中使用了子组合器（<code>&gt;</code>）选择器。由于我们需要定位 <code>thead</code>、<code>tbody</code> 和 <code>tfoot</code> 中的所有 <code>td</code> 和 <code>th</code>，如果不使用它，我们的选择器会变得相当长。因此，我们使用了看起来颇为奇怪的 <code>.table &gt; :not(caption) &gt; * &gt; *</code> 选择器，来定位 <code>.table</code> 的所有 <code>td</code> 和 <code>th</code>，但不包括任何潜在的嵌套表格。
+      为了防止<em>任何</em>样式泄漏到嵌套表格中，我们在 CSS 中使用了子组合器（<code>&gt;</code>）选择器。由于我们需要定位 <code>thead</code>、<code>tbody</code> 和 <code>tfoot</code> 中的所有 <code>td</code> 和 <code>th</code>，如果不使用它，我们的选择器会变得相当长。因此，我们使用了看起来颇为奇怪的
+      <code>.table &gt; :not(caption) &gt; * &gt; *</code> 选择器，来定位 <code>.table</code> 的所有 <code>td</code> 和 <code>th</code>，但不包括任何潜在的嵌套表格。
     </p>
     <p>请注意，如果你将 <code>&lt;tr&gt;</code> 作为表格的直接子元素添加，这些 <code>&lt;tr&gt;</code> 默认会被包裹在 <code>&lt;tbody&gt;</code> 中，从而使我们的选择器按预期工作。</p>
     <h2 id="anatomy">结构剖析<a class="anchor-link" href="#anatomy" aria-label="结构剖析链接"></a></h2>
@@ -819,7 +818,7 @@
       <li><a href="#overview">概览</a></li>
       <li><a href="#variants">变体</a></li>
       <li>
-       <a href="#accented-tables">强调表格</a>
+        <a href="#accented-tables">强调表格</a>
         <ul>
           <li><a href="#striped-rows">条纹行</a></li>
           <li><a href="#striped-columns">条纹列</a></li>
@@ -829,7 +828,7 @@
       </li>
       <li><a href="#how-do-the-variants-and-accented-tables-work">变体和强调表格是如何工作的？</a></li>
       <li>
-       <a href="#table-borders">表格边框</a>
+        <a href="#table-borders">表格边框</a>
         <ul>
           <li><a href="#bordered-tables">带边框的表格</a></li>
           <li><a href="#tables-without-borders">无边框表格</a></li>
@@ -841,7 +840,7 @@
       <li><a href="#nesting">嵌套</a></li>
       <li><a href="#how-nesting-works">嵌套的工作原理</a></li>
       <li>
-       <a href="#anatomy">结构剖析</a>
+        <a href="#anatomy">结构剖析</a>
         <ul>
           <li><a href="#table-head">表头</a></li>
           <li><a href="#table-foot">表尾</a></li>
@@ -849,14 +848,14 @@
         </ul>
       </li>
       <li>
-       <a href="#responsive-tables">响应式表格</a>
+        <a href="#responsive-tables">响应式表格</a>
         <ul>
           <li><a href="#always-responsive">始终响应式</a></li>
           <li><a href="#breakpoint-specific">特定断点</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-loops">Sass 循环</a></li>

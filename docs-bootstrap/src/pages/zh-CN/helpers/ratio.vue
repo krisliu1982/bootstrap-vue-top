@@ -4,12 +4,10 @@
     <p class="lead">使用生成的伪元素让元素保持你选择的长宽比。非常适合根据父元素宽度响应式地处理视频或幻灯片嵌入内容。</p>
 
     <h2 id="about">关于<a class="anchor-link" href="#about" aria-label="关于链接"></a></h2>
-    <p>
-      使用比例工具类可以管理外部内容（如 <code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;video&gt;</code> 和 <code>&lt;object&gt;</code>）的长宽比。这些工具类也可用于任何标准 HTML 子元素（例如 <code>&lt;div&gt;</code> 或 <code>&lt;img&gt;</code>）。样式会从父级的 <code>.ratio</code> 类直接应用到子元素。
-    </p>
+    <p>使用比例工具类可以管理外部内容（如 <code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;video&gt;</code> 和 <code>&lt;object&gt;</code>）的长宽比。这些工具类也可用于任何标准 HTML 子元素（例如 <code>&lt;div&gt;</code> 或 <code>&lt;img&gt;</code>）。样式会从父级的 <code>.ratio</code> 类直接应用到子元素。</p>
     <p>
       长宽比在 Sass 映射中声明，并通过 CSS 变量包含在每个类中，这也支持
-     <a href="#custom-ratios">自定义长宽比</a>。
+      <a href="#custom-ratios">自定义长宽比</a>。
     </p>
     <Callout>
       <p><strong>专业提示！</strong>你无需在 <code>&lt;iframe&gt;</code> 上添加 <code>frameborder=&quot;0&quot;</code>，因为我们在<a href="/content/reboot">Reboot</a>中已经为你覆盖了该设置。</p>
@@ -76,7 +74,7 @@
       <li><a href="#aspect-ratios">长宽比</a></li>
       <li><a href="#custom-ratios">自定义比例</a></li>
       <li>
-       <a href="#sass-maps">Sass 映射</a>
+        <a href="#sass-maps">Sass 映射</a>
       </li>
     </ul>
   </nav>

@@ -4,9 +4,7 @@
     <p class="lead">使用我们自定义的范围输入框，获得一致的跨浏览器样式和内置的自定义能力。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
-    <p>
-      使用 <code>.form-range</code> 创建自定义的 <code>&lt;input type=&quot;range&quot;&gt;</code> 控件。轨道（背景）和滑块（数值）都经过样式处理，以便在各浏览器中外观一致。由于只有 Firefox 支持从滑块左侧或右侧“填充”轨道来直观表示进度，我们目前暂不支持该效果。
-    </p>
+    <p>使用 <code>.form-range</code> 创建自定义的 <code>&lt;input type=&quot;range&quot;&gt;</code> 控件。轨道（背景）和滑块（数值）都经过样式处理，以便在各浏览器中外观一致。由于只有 Firefox 支持从滑块左侧或右侧“填充”轨道来直观表示进度，我们目前暂不支持该效果。</p>
     <Example
       code='<label for="range1" class="form-label">Example range</label>
 <input type="range" class="form-range" id="range1">'
@@ -66,7 +64,7 @@
       <li><a href="#steps">步长</a></li>
       <li><a href="#output-value">输出值</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

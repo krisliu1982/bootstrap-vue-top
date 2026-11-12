@@ -9,7 +9,13 @@ import Components from 'unplugin-vue-components/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith('pagefind-')
+        }
+      }
+    }),
     Icons({
       compiler: 'vue3',
       scale: 1, // SVG缩放比例

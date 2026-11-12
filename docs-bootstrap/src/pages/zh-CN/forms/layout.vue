@@ -6,9 +6,7 @@
     <h2 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h2>
     <p>每组表单字段都应放在 <code>&lt;form&gt;</code> 元素中。Bootstrap 不为 <code>&lt;form&gt;</code> 元素提供默认样式，但浏览器默认提供了一些强大的特性。</p>
     <ul>
-      <li>
-        初次接触浏览器表单？建议查阅<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN 表单文档</a>，了解概述以及可用属性的完整列表。
-      </li>
+      <li>初次接触浏览器表单？建议查阅<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN 表单文档</a>，了解概述以及可用属性的完整列表。</li>
       <li><code>&lt;form&gt;</code> 内的 <code>&lt;button&gt;</code> 默认是 <code>type=&quot;submit&quot;</code>，因此请尽量明确并始终包含 <code>type</code>。</li>
     </ul>
     <p>由于 Bootstrap 对几乎所有表单控件都应用了 <code>display: block</code> 和 <code>width: 100%</code>，因此表单默认会垂直堆叠。可以使用其他类为每个表单改变这一布局。</p>
@@ -101,9 +99,7 @@
 </form>'
     />
     <h2 id="horizontal-form">水平表单<a class="anchor-link" href="#horizontal-form" aria-label="水平表单链接"></a></h2>
-    <p>
-      通过为表单组添加 <code>.row</code> 类，并使用 <code>.col-*-*</code> 类指定标签和控件的宽度，即可使用网格创建水平表单。请务必为 <code>&lt;label&gt;</code> 添加 <code>.col-form-label</code>，使其与关联的表单控件垂直居中对齐。
-    </p>
+    <p>通过为表单组添加 <code>.row</code> 类，并使用 <code>.col-*-*</code> 类指定标签和控件的宽度，即可使用网格创建水平表单。请务必为 <code>&lt;label&gt;</code> 添加 <code>.col-form-label</code>，使其与关联的表单控件垂直居中对齐。</p>
     <p>有时，你可能需要使用外边距或内边距工具类来实现完美的对齐。例如，我们移除了堆叠单选按钮标签上的 <code>padding-top</code>，以便更好地对齐文本基线。</p>
     <Example
       code='<form>
@@ -178,9 +174,7 @@
 </div>'
     />
     <h2 id="column-sizing">列尺寸<a class="anchor-link" href="#column-sizing" aria-label="列尺寸链接"></a></h2>
-    <p>
-      如前面的示例所示，我们的网格系统允许在 <code>.row</code> 中放置任意数量的 <code>.col</code>，它们会平均分配可用宽度。你也可以通过 <code>.col-sm-7</code> 等特定的列类，选择部分列占据更多或更少的空间，而其余的 <code>.col</code> 会平均分配剩余空间。
-    </p>
+    <p>如前面的示例所示，我们的网格系统允许在 <code>.row</code> 中放置任意数量的 <code>.col</code>，它们会平均分配可用宽度。你也可以通过 <code>.col-sm-7</code> 等特定的列类，选择部分列占据更多或更少的空间，而其余的 <code>.col</code> 会平均分配剩余空间。</p>
     <Example
       code='<div class="row g-3">
   <div class="col-sm-7">
@@ -268,9 +262,7 @@
 </form>'
     />
     <h2 id="inline-forms">行内表单<a class="anchor-link" href="#inline-forms" aria-label="行内表单链接"></a></h2>
-    <p>
-      使用 <code>.row-cols-*</code> 类创建响应式水平布局。通过添加<a href="/layout/gutters">间距修饰类</a>，我们可以在水平和垂直方向上设置间距。在较窄的移动端视口中，<code>.col-12</code> 有助于将表单控件等元素堆叠排列。<code>.align-items-center</code> 将表单元素居中对齐，使 <code>.form-check</code> 正确对齐。
-    </p>
+    <p>使用 <code>.row-cols-*</code> 类创建响应式水平布局。通过添加<a href="/layout/gutters">间距修饰类</a>，我们可以在水平和垂直方向上设置间距。在较窄的移动端视口中，<code>.col-12</code> 有助于将表单控件等元素堆叠排列。<code>.align-items-center</code> 将表单元素居中对齐，使 <code>.form-check</code> 正确对齐。</p>
     <Example
       code='<form class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">
@@ -316,7 +308,7 @@
       <li><a href="#form-grid">表单网格</a></li>
       <li><a href="#gutters">间距</a></li>
       <li>
-       <a href="#horizontal-form">水平表单</a>
+        <a href="#horizontal-form">水平表单</a>
         <ul>
           <li><a href="#horizontal-form-label-sizing">水平表单标签尺寸</a></li>
         </ul>
@@ -324,7 +316,7 @@
       <li><a href="#column-sizing">列尺寸</a></li>
       <li><a href="#auto-sizing">自动尺寸</a></li>
       <li>
-       <a href="#inline-forms">行内表单</a>
+        <a href="#inline-forms">行内表单</a>
       </li>
     </ul>
   </nav>

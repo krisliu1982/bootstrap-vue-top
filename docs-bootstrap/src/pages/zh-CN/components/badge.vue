@@ -24,9 +24,7 @@
   Notifications <span class="badge text-bg-secondary">4</span>
 </button>'
     />
-    <p>
-      请注意，根据使用方式的不同，徽章可能会让屏幕阅读器和类似辅助技术的用户感到困惑。虽然徽章的样式提供了关于其用途的视觉提示，但这些用户只会听到徽章的内容。根据具体情况，这些徽章可能看起来像是句子、链接或按钮末尾随机附加的单词或数字。
-    </p>
+    <p>请注意，根据使用方式的不同，徽章可能会让屏幕阅读器和类似辅助技术的用户感到困惑。虽然徽章的样式提供了关于其用途的视觉提示，但这些用户只会听到徽章的内容。根据具体情况，这些徽章可能看起来像是句子、链接或按钮末尾随机附加的单词或数字。</p>
     <p>除非上下文清晰明确（如“Notifications”示例中，“4”被理解为通知的数量），否则请考虑添加一段视觉上隐藏的附加文本，以提供更多上下文。</p>
     <h3 id="positioned">定位<a class="anchor-link" href="#positioned" aria-label="定位链接"></a></h3>
     <p>使用工具类修改 <code>.badge</code>，将其定位到链接或按钮的角上。</p>
@@ -51,8 +49,9 @@
     <h2 id="background-colors">背景颜色<a class="anchor-link" href="#background-colors" aria-label="背景颜色链接"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的<a href="/utilities/colors"><code>.text-{color}</code></a>和
-     <a href="/utilities/background"><code>.bg-{color}</code></a>工具类配对进行样式设置，如果你愿意，仍然可以这样使用。
+      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的<a href="/utilities/colors"><code>.text-{color}</code></a
+      >和 <a href="/utilities/background"><code>.bg-{color}</code></a
+      >工具类配对进行样式设置，如果你愿意，仍然可以这样使用。
     </p>
 
     <Example :code="data['theme-colors'].map((themeColor) => `<span class=&quot;badge text-bg-${themeColor.name}&quot;>${themeColor.name}</span>`).join('\n')" /><Callout name="warning-color-assistive-technologies" />
@@ -79,7 +78,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#headings">标题</a></li>
           <li><a href="#buttons">按钮</a></li>
@@ -89,7 +88,7 @@
       <li><a href="#background-colors">背景颜色</a></li>
       <li><a href="#pill-badges">药丸徽章</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

@@ -6,7 +6,7 @@
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-vite.png" width="100%" alt="" /><Callout>
       <p>
         <strong>想直接跳到结尾？</strong>从<a href="https://github.com/twbs/examples/tree/main/vite">twbs/examples 仓库</a>下载本指南的源代码和可运行的演示。你也可以
-       <a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">在 StackBlitz 中打开示例</a>
+        <a href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html">在 StackBlitz 中打开示例</a>
         进行在线编辑。
       </p>
     </Callout>
@@ -97,9 +97,7 @@ export default {
 }"
           lang="javascript"
         />
-        <p>
-          <strong>注意：</strong>使用最新版本的 Dart Sass 编译源 Sass 文件时会显示 Sass 弃用警告。这不会妨碍编译或使用 Bootstrap。我们正在<a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a>，但在此期间，可以忽略这些弃用提示。
-        </p>
+        <p><strong>注意：</strong>使用最新版本的 Dart Sass 编译源 Sass 文件时会显示 Sass 弃用警告。这不会妨碍编译或使用 Bootstrap。我们正在<a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a>，但在此期间，可以忽略这些弃用提示。</p>
       </li>
       <li>
         <p>
@@ -197,8 +195,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/vite-dev-server-bootstrap.png" alt="Vite 开发服务器正在运行并加载了 Bootstrap" />
         <p>
           现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
-         <a href="https://github.com/twbs/examples/tree/main/vite">查看完整的 Vite 示例项目</a>，
-          了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
+          <a href="https://github.com/twbs/examples/tree/main/vite">查看完整的 Vite 示例项目</a>， 了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
     </ol>
@@ -214,7 +211,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;;
       <li><a href="#project-structure">项目结构</a></li>
       <li><a href="#configure-vite">配置 Vite</a></li>
       <li>
-       <a href="#import-bootstrap">导入 Bootstrap</a>
+        <a href="#import-bootstrap">导入 Bootstrap</a>
       </li>
     </ul>
   </nav>

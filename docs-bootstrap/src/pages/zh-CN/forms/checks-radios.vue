@@ -4,11 +4,10 @@
     <p class="lead">使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选框。</p>
 
     <h2 id="approach">实现方式<a class="anchor-link" href="#approach" aria-label="实现方式链接"></a></h2>
+    <p>借助 <code>.form-check</code> 替换浏览器默认的复选框和单选框，这是一系列同时适用于两种输入类型的类，可改进其 HTML 元素的布局和行为，带来更强的可自定义性和跨浏览器一致性。复选框用于在列表中选择一个或多个选项，而单选框用于从多个选项中仅选择一个。</p>
     <p>
-      借助 <code>.form-check</code> 替换浏览器默认的复选框和单选框，这是一系列同时适用于两种输入类型的类，可改进其 HTML 元素的布局和行为，带来更强的可自定义性和跨浏览器一致性。复选框用于在列表中选择一个或多个选项，而单选框用于从多个选项中仅选择一个。
-    </p>
-    <p>
-      在结构上，我们的 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code> 是兄弟元素，而不是将 <code>&lt;input&gt;</code> 放在 <code>&lt;label&gt;</code> 内部。这种方式略显冗长，因为你必须指定 <code>id</code> 和 <code>for</code> 属性来关联 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code>。我们对所有 <code>&lt;input&gt;</code> 状态（如 <code>:checked</code> 或 <code>:disabled</code>）都使用兄弟选择器（<code>~</code>）。结合 <code>.form-check-label</code> 类，我们可以根据 <code>&lt;input&gt;</code> 的状态轻松地为每一项的文本设置样式。
+      在结构上，我们的 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code> 是兄弟元素，而不是将 <code>&lt;input&gt;</code> 放在 <code>&lt;label&gt;</code> 内部。这种方式略显冗长，因为你必须指定 <code>id</code> 和 <code>for</code> 属性来关联 <code>&lt;input&gt;</code> 和 <code>&lt;label&gt;</code>。我们对所有 <code>&lt;input&gt;</code> 状态（如
+      <code>:checked</code> 或 <code>:disabled</code>）都使用兄弟选择器（<code>~</code>）。结合 <code>.form-check-label</code> 类，我们可以根据 <code>&lt;input&gt;</code> 的状态轻松地为每一项的文本设置样式。
     </p>
     <p>我们的复选框使用自定义的 Bootstrap 图标来表示已选中或不确定状态。</p>
     <h2 id="checks">复选框<a class="anchor-link" href="#checks" aria-label="复选框链接"></a></h2>
@@ -94,9 +93,7 @@
 </div>'
     />
     <h2 id="switches">开关<a class="anchor-link" href="#switches" aria-label="开关链接"></a></h2>
-    <p>
-      开关使用自定义复选框的标记结构，但通过 <code>.form-switch</code> 类渲染为切换开关。建议使用 <code>role=&quot;switch&quot;</code>，以便向支持该角色的辅助技术更准确地传达控件的性质。在较旧的辅助技术中，它将作为普通复选框读出，作为后备方案。开关同样支持 <code>disabled</code> 属性。
-    </p>
+    <p>开关使用自定义复选框的标记结构，但通过 <code>.form-switch</code> 类渲染为切换开关。建议使用 <code>role=&quot;switch&quot;</code>，以便向支持该角色的辅助技术更准确地传达控件的性质。在较旧的辅助技术中，它将作为普通复选框读出，作为后备方案。开关同样支持 <code>disabled</code> 属性。</p>
     <Example
       code='<div class="form-check form-switch">
   <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
@@ -125,9 +122,7 @@
   </label>
 </div>'
     />
-    <p>
-      请务必进一步了解<a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。
-    </p>
+    <p>请务必进一步了解<a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。</p>
     <h2 id="default-stacked">默认（堆叠）<a class="anchor-link" href="#default-stacked" aria-label="默认（堆叠）链接"></a></h2>
     <p>默认情况下，任意数量的直接相邻的复选框和单选框都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
     <Example
@@ -247,7 +242,8 @@
 <label class="btn" for="btn-check-6">Disabled</label>'
     /><Callout>
       <p>
-        从视觉上看，这些复选框切换按钮与<a href="/components/buttons#button-plugin">按钮插件切换按钮</a>完全相同。但是，辅助技术对它们的传达方式不同：复选框切换按钮会被屏幕阅读器读作“已选中”/“未选中”（因为尽管外观如此，它们本质上仍是复选框），而按钮插件切换按钮会被读作“按钮”/“按钮已按下”。在这两种方式之间如何选择，取决于你要创建的切换类型，以及该切换在作为复选框或实际按钮被读出时对用户是否有意义。
+        从视觉上看，这些复选框切换按钮与<a href="/components/buttons#button-plugin">按钮插件切换按钮</a
+        >完全相同。但是，辅助技术对它们的传达方式不同：复选框切换按钮会被屏幕阅读器读作“已选中”/“未选中”（因为尽管外观如此，它们本质上仍是复选框），而按钮插件切换按钮会被读作“按钮”/“按钮已按下”。在这两种方式之间如何选择，取决于你要创建的切换类型，以及该切换在作为复选框或实际按钮被读出时对用户是否有意义。
       </p>
     </Callout>
     <h3 id="radio-toggle-buttons">单选框切换按钮<a class="anchor-link" href="#radio-toggle-buttons" aria-label="单选框切换按钮链接"></a></h3>
@@ -305,20 +301,20 @@
     <ul>
       <li><a href="#approach">实现方式</a></li>
       <li>
-       <a href="#checks">复选框</a>
+        <a href="#checks">复选框</a>
         <ul>
           <li><a href="#indeterminate">不确定状态</a></li>
           <li><a href="#disabled">禁用状态</a></li>
         </ul>
       </li>
       <li>
-       <a href="#radios">单选框</a>
+        <a href="#radios">单选框</a>
         <ul>
           <li><a href="#disabled-1">禁用状态</a></li>
         </ul>
       </li>
       <li>
-       <a href="#switches">开关</a>
+        <a href="#switches">开关</a>
         <ul>
           <li><a href="#native-switches">原生开关</a></li>
         </ul>
@@ -328,7 +324,7 @@
       <li><a href="#reverse">反向排列</a></li>
       <li><a href="#without-labels">不带标签</a></li>
       <li>
-       <a href="#toggle-buttons">切换按钮</a>
+        <a href="#toggle-buttons">切换按钮</a>
         <ul>
           <li><a href="#checkbox-toggle-buttons">复选框切换按钮</a></li>
           <li><a href="#radio-toggle-buttons">单选框切换按钮</a></li>
@@ -336,7 +332,7 @@
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

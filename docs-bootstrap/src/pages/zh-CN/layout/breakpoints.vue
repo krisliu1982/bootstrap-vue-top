@@ -12,9 +12,7 @@
         <p><strong>使用媒体查询按断点构建你的 CSS。</strong> 媒体查询是 CSS 的一项特性，允许你根据一组浏览器和操作系统参数有条件地应用样式。我们在媒体查询中最常使用 <code>min-width</code>。</p>
       </li>
       <li>
-        <p>
-          <strong>移动优先、响应式设计是目标。</strong> Bootstrap 的 CSS 旨在应用最少的样式，使布局在最小断点下正常运作，然后在此基础上叠加样式，以适应更大设备的设计。这可以优化你的 CSS、改善渲染时间，并为访问者提供出色的体验。
-        </p>
+        <p><strong>移动优先、响应式设计是目标。</strong> Bootstrap 的 CSS 旨在应用最少的样式，使布局在最小断点下正常运作，然后在此基础上叠加样式，以适应更大设备的设计。这可以优化你的 CSS、改善渲染时间，并为访问者提供出色的体验。</p>
       </li>
     </ul>
     <h2 id="available-breakpoints">可用断点<a class="anchor-link" href="#available-breakpoints" aria-label="可用断点链接"></a></h2>
@@ -62,20 +60,14 @@
         </tbody>
       </table>
     </div>
-    <p>
-      每个断点的选取都旨在舒适地容纳宽度为 12 的倍数的容器。断点也代表了常见设备尺寸和视口尺寸的一个子集——它们并不专门针对每一种用例或设备。相反，这些范围提供了一个强大且一致的基础，几乎可以在此基础上为任何设备构建布局。
-    </p>
-    <p>
-      这些断点可以通过 Sass 自定义——你可以在我们的 <code>_variables.scss</code> 样式表中的 Sass map 里找到它们。
-    </p>
+    <p>每个断点的选取都旨在舒适地容纳宽度为 12 的倍数的容器。断点也代表了常见设备尺寸和视口尺寸的一个子集——它们并不专门针对每一种用例或设备。相反，这些范围提供了一个强大且一致的基础，几乎可以在此基础上为任何设备构建布局。</p>
+    <p>这些断点可以通过 Sass 自定义——你可以在我们的 <code>_variables.scss</code> 样式表中的 Sass map 里找到它们。</p>
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
-    <p>
-      有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 CSS 部分</a>。
-    </p>
+    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 CSS 部分</a>。</p>
     <h2 id="media-queries">媒体查询<a class="anchor-link" href="#media-queries" aria-label="媒体查询链接"></a></h2>
     <p>
       由于 Bootstrap 是以移动优先的方式开发的，我们使用了一些
-     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">媒体查询</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">媒体查询</a>
       来为我们的布局和界面创建合理的断点。这些断点主要基于最小视口宽度，允许我们在视口变化时放大元素。
     </p>
     <h3 id="min-width">最小宽度（Min-width）<a class="anchor-link" href="#min-width" aria-label="最小宽度链接"></a></h3>
@@ -210,7 +202,7 @@
       <li><a href="#core-concepts">核心概念</a></li>
       <li><a href="#available-breakpoints">可用断点</a></li>
       <li>
-       <a href="#media-queries">媒体查询</a>
+        <a href="#media-queries">媒体查询</a>
         <ul>
           <li><a href="#min-width">最小宽度（Min-width）</a></li>
           <li><a href="#max-width">最大宽度（Max-width）</a></li>

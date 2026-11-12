@@ -56,7 +56,7 @@
       <li><a href="#aligning-images">对齐图片</a></li>
       <li><a href="#picture">Picture</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

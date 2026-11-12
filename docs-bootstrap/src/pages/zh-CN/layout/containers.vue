@@ -4,9 +4,7 @@
     <p class="lead">容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。</p>
 
     <h2 id="how-they-work">工作原理<a class="anchor-link" href="#how-they-work" aria-label="工作原理链接"></a></h2>
-    <p>
-      容器是 Bootstrap 中最基本的布局元素，在<strong>使用我们的默认网格系统时是必需的</strong>。容器用于包含、填充以及（有时）在内部居中对齐内容。虽然容器<em>可以</em>嵌套，但大多数布局并不需要嵌套容器。
-    </p>
+    <p>容器是 Bootstrap 中最基本的布局元素，在<strong>使用我们的默认网格系统时是必需的</strong>。容器用于包含、填充以及（有时）在内部居中对齐内容。虽然容器<em>可以</em>嵌套，但大多数布局并不需要嵌套容器。</p>
     <p>Bootstrap 提供三种不同的容器：</p>
     <ul>
       <li><code>.container</code>，在每个响应式断点设置一个 <code>max-width</code></li>
@@ -14,9 +12,7 @@
       <li><code>.container-fluid</code>，在所有断点下均为 <code>width: 100%</code></li>
     </ul>
     <p>下表展示了各容器的 <code>max-width</code> 在每个断点下与原始 <code>.container</code> 和 <code>.container-fluid</code> 的对比。</p>
-    <p>
-      在我们的<a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">网格示例</a>中查看它们的实际效果并进行比较。
-    </p>
+    <p>在我们的<a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">网格示例</a>中查看它们的实际效果并进行比较。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -124,10 +120,7 @@
       lang="html"
     />
     <h2 id="responsive-containers">响应式容器<a class="anchor-link" href="#responsive-containers" aria-label="响应式容器链接"></a></h2>
-    <p>
-      响应式容器允许你指定一个类，它在达到指定断点之前宽度为 100%，之后我们会为每个更高的断点应用 <code>max-width</code>。例如，<code>.container-sm</code> 一开始为 100% 宽，直到达到 <code>sm</code> 断点，此后它将随
-      <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 一起放大。
-    </p>
+    <p>响应式容器允许你指定一个类，它在达到指定断点之前宽度为 100%，之后我们会为每个更高的断点应用 <code>max-width</code>。例如，<code>.container-sm</code> 一开始为 100% 宽，直到达到 <code>sm</code> 断点，此后它将随 <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 一起放大。</p>
     <CodeWrapper
       code='&lt;div class="container-sm"&gt;100% wide until small breakpoint&lt;/div&gt;
 &lt;div class="container-md"&gt;100% wide until medium breakpoint&lt;/div&gt;
@@ -151,9 +144,7 @@
       <code>_variables.scss</code> 中）来自定义这些预定义容器类：
     </p>
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" />
-    <p>
-      有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 Sass 部分</a>。
-    </p>
+    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 Sass 部分</a>。</p>
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
     <p>除了自定义 Sass 之外，你还可以使用我们的 Sass mixin 创建自己的容器。</p>
     <CodeWrapper
@@ -184,7 +175,7 @@
       <li><a href="#responsive-containers">响应式容器</a></li>
       <li><a href="#fluid-containers">流式容器</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixin</a></li>

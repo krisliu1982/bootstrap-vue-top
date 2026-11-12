@@ -6,7 +6,7 @@
     <p>入门页面提供了对项目及其功能的入门介绍，而本文档则侧重于说明我们在 Bootstrap 中做事的 <em>原因</em>。它阐释了我们基于 Web 构建的理念，以便他人能向我们学习、与我们共同贡献，并帮助我们改进。</p>
     <p>
       发现了不妥之处，或者有更好的做法？
-     <a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>——我们很乐意与你讨论。
+      <a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>——我们很乐意与你讨论。
     </p>
     <h2 id="summary">概述<a class="anchor-link" href="#summary" aria-label="概述链接"></a></h2>
     <p>我们会在后文深入探讨其中的每一项，但先从整体上说明指导我们实现方式的原则。</p>
@@ -33,10 +33,7 @@
       除了我们的 Reboot（一个跨浏览器规范化样式表）之外，我们所有的样式都旨在使用类作为选择器。这意味着要避免使用类型选择器（例如
       <code>input[type=&quot;text&quot;]</code>）以及多余父级类（例如 <code>.parent .child</code>），因为它们会让样式过于具体，难以轻松覆盖。
     </p>
-    <p>
-      因此，组件应基于一个基础类构建，该类存放通用的、不应被覆盖的属性和值对。例如 <code>.btn</code> 和 <code>.btn-primary</code>。我们使用 <code>.btn</code> 来定义所有通用样式，如 <code>display</code>、<code>padding</code> 和 <code>border-width</code>。然后我们使用修饰类，如
-      <code>.btn-primary</code>，来添加颜色、背景色、边框色等。
-    </p>
+    <p>因此，组件应基于一个基础类构建，该类存放通用的、不应被覆盖的属性和值对。例如 <code>.btn</code> 和 <code>.btn-primary</code>。我们使用 <code>.btn</code> 来定义所有通用样式，如 <code>display</code>、<code>padding</code> 和 <code>border-width</code>。然后我们使用修饰类，如 <code>.btn-primary</code>，来添加颜色、背景色、边框色等。</p>
     <p>只有当需要在多个变体中更改多个属性或值时，才应使用修饰类。修饰类并不总是必需的，因此在创建它们时，请确保你确实减少了代码行数，并避免了不必要的覆盖。修饰类的良好示例是我们的主题颜色类和尺寸变体。</p>
     <h2 id="z-index-scales">z-index 层级<a class="anchor-link" href="#z-index-scales" aria-label="z-index 层级链接"></a></h2>
     <p>Bootstrap 中有两个 <code>z-index</code> 层级——组件内部元素和覆盖层组件。</p>
@@ -51,9 +48,7 @@
       <li>这种方式符合我们对最高用户优先级的预期。如果某个元素获得了焦点，它就处于视图中并引起用户的注意。活动元素优先级第二高，因为它们表示状态。悬停优先级第三高，因为它表示用户意图，但几乎<em>任何</em>元素都可以被悬停。</li>
     </ul>
     <h3 id="overlay-components">覆盖层组件<a class="anchor-link" href="#overlay-components" aria-label="覆盖层组件链接"></a></h3>
-    <p>
-      Bootstrap 包含若干个以某种方式充当覆盖层的组件。按 <code>z-index</code> 从高到低依次为下拉菜单、固定和粘性导航栏、模态框、工具提示和弹出框。这些组件拥有自己的 <code>z-index</code> 层级，从 <code>1000</code> 开始。这个起始数字是随意选定的，它充当我们的样式与你项目自定义样式之间的一个小缓冲区。
-    </p>
+    <p>Bootstrap 包含若干个以某种方式充当覆盖层的组件。按 <code>z-index</code> 从高到低依次为下拉菜单、固定和粘性导航栏、模态框、工具提示和弹出框。这些组件拥有自己的 <code>z-index</code> 层级，从 <code>1000</code> 开始。这个起始数字是随意选定的，它充当我们的样式与你项目自定义样式之间的一个小缓冲区。</p>
     <p>每个覆盖层组件都会略微提高其 <code>z-index</code> 值，从而符合通用 UI 原则，使用户聚焦或悬停的元素始终保持可见。例如，模态框会阻止文档操作（即除了模态框内的操作外，你无法进行任何其他操作），因此我们将它置于导航栏之上。</p>
     <p>
       在我们的<a href="/layout/z-index"><code>z-index</code> 布局页面</a>中了解更多相关内容。
@@ -88,7 +83,7 @@
       <li><a href="#responsive">响应式</a></li>
       <li><a href="#classes">类</a></li>
       <li>
-       <a href="#z-index-scales">z-index 层级</a>
+        <a href="#z-index-scales">z-index 层级</a>
         <ul>
           <li><a href="#component-elements">组件元素</a></li>
           <li><a href="#overlay-components">覆盖层组件</a></li>
@@ -98,7 +93,7 @@
       <li><a href="#utilities">工具类</a></li>
       <li><a href="#flexible-html">灵活的 HTML</a></li>
       <li>
-       <a href="#code-conventions">代码规范</a>
+        <a href="#code-conventions">代码规范</a>
       </li>
     </ul>
   </nav>

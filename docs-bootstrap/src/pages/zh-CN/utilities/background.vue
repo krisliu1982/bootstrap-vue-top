@@ -46,7 +46,8 @@
       lang="css"
     />
     <p>
-      我们使用 <code>--bs-success</code> 的 RGB 版本（值为 <code>25, 135, 84</code>）CSS 变量，并附加第二个 CSS 变量 <code>--bs-bg-opacity</code> 用于 alpha 透明度（得益于局部 CSS 变量，其默认值为 <code>1</code>）。这意味着你现在每次使用 <code>.bg-success</code> 时，计算得到的 <code>color</code> 值都是 <code>rgba(25, 135, 84, 1)</code>。每个 <code>.bg-*</code> 类内部的局部 CSS 变量可避免继承问题，因此嵌套的工具类实例不会自动带有被修改的 alpha 透明度。
+      我们使用 <code>--bs-success</code> 的 RGB 版本（值为 <code>25, 135, 84</code>）CSS 变量，并附加第二个 CSS 变量 <code>--bs-bg-opacity</code> 用于 alpha 透明度（得益于局部 CSS 变量，其默认值为 <code>1</code>）。这意味着你现在每次使用 <code>.bg-success</code> 时，计算得到的 <code>color</code> 值都是 <code>rgba(25, 135, 84, 1)</code>。每个
+      <code>.bg-*</code> 类内部的局部 CSS 变量可避免继承问题，因此嵌套的工具类实例不会自动带有被修改的 alpha 透明度。
     </p>
     <h3 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h3>
     <p>要更改该不透明度，可通过自定义样式或内联样式覆盖 <code>--bs-bg-opacity</code>。</p>
@@ -65,7 +66,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="Link to CSS"></a></h2>
     <p>
       除了以下 Sass 功能之外，建议阅读有关我们内置的
-     <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
+      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>大多数 <code>background-color</code> 工具类由我们的主题颜色生成，这些主题颜色是从通用调色板变量重新分配的。</p>
@@ -94,7 +95,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       背景工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-bg-color" file="scss/_utilities.scss" />
     <DocsPager />
@@ -106,14 +107,14 @@
       <li><a href="#background-color">背景色</a></li>
       <li><a href="#background-gradient">背景渐变</a></li>
       <li>
-       <a href="#opacity">不透明度</a>
+        <a href="#opacity">不透明度</a>
         <ul>
           <li><a href="#how-it-works">工作原理</a></li>
           <li><a href="#example">示例</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-maps">Sass 映射</a></li>

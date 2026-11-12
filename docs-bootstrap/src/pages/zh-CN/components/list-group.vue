@@ -26,10 +26,7 @@
 </ul>'
     />
     <h2 id="links-and-buttons">链接与按钮<a class="anchor-link" href="#links-and-buttons" aria-label="链接与按钮链接"></a></h2>
-    <p>
-      使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 并通过添加 <code>.list-group-item-action</code> 来创建具有悬停、禁用和激活状态的<em>可交互</em>列表组项。我们将这些伪类分开，以确保由非交互式元素（如 <code>&lt;li&gt;</code> 或 <code>&lt;div&gt;</code>）构成的列表组
-      不会提供可点击或轻触的提示。
-    </p>
+    <p>使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> 并通过添加 <code>.list-group-item-action</code> 来创建具有悬停、禁用和激活状态的<em>可交互</em>列表组项。我们将这些伪类分开，以确保由非交互式元素（如 <code>&lt;li&gt;</code> 或 <code>&lt;div&gt;</code>）构成的列表组 不会提供可点击或轻触的提示。</p>
     <p>通过添加 <code>.disabled</code> 和 <code>aria-disabled=&quot;true&quot;</code> 使 <code>.list-group-item-action</code> 实例<em>看起来</em>处于禁用状态，并告知辅助技术该元素已被禁用。你可能需要额外的 JavaScript 才能完全禁用链接和按钮。</p>
     <p>
       请务必<strong>不要在此处使用标准的 <code>.btn</code> 类</strong>。
@@ -140,9 +137,7 @@
       "
     />
     <h3 id="for-links-and-buttons">用于链接和按钮<a class="anchor-link" href="#for-links-and-buttons" aria-label="用于链接和按钮链接"></a></h3>
-    <p>
-      上下文类也适用于 <code>&lt;a&gt;</code> 和 <code>&lt;button&gt;</code> 元素的 <code>.list-group-item-action</code>。请注意这里新增了前一个示例中没有的悬停样式。同样支持 <code>.active</code> 状态；应用它来表示上下文列表组项上的激活选中状态。
-    </p>
+    <p>上下文类也适用于 <code>&lt;a&gt;</code> 和 <code>&lt;button&gt;</code> 元素的 <code>.list-group-item-action</code>。请注意这里新增了前一个示例中没有的悬停样式。同样支持 <code>.active</code> 状态；应用它来表示上下文列表组项上的激活选中状态。</p>
     <Example
       :code="
         [
@@ -155,9 +150,7 @@
       "
     /><Callout name="warning-color-assistive-technologies" />
     <h2 id="with-badges">带徽章<a class="anchor-link" href="#with-badges" aria-label="带徽章链接"></a></h2>
-    <p>
-      借助一些<a href="/utilities/flex">工具类</a>为任何列表组项添加徽章，以显示未读数量、活动状态等。
-    </p>
+    <p>借助一些<a href="/utilities/flex">工具类</a>为任何列表组项添加徽章，以显示未读数量、活动状态等。</p>
     <Example
       code='<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -175,9 +168,7 @@
 </ul>'
     />
     <h2 id="custom-content">自定义内容<a class="anchor-link" href="#custom-content" aria-label="自定义内容链接"></a></h2>
-    <p>
-      借助<a href="/utilities/flex">弹性盒子工具类</a>，你几乎可以在其中添加任意 HTML，即使是像下面这样的链接列表组。
-    </p>
+    <p>借助<a href="/utilities/flex">弹性盒子工具类</a>，你几乎可以在其中添加任意 HTML，即使是像下面这样的链接列表组。</p>
     <Example
       code='<div class="list-group">
  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
@@ -280,10 +271,10 @@
       <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
-           <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
-           <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
-           <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
-           <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="tab" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="tab" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
           </div>
         </div>
         <div class="col-8">
@@ -326,9 +317,7 @@
       lang="html"
     />
     <h3 id="using-data-attributes">使用数据属性<a class="anchor-link" href="#using-data-attributes" aria-label="使用数据属性链接"></a></h3>
-    <p>
-      你只需在元素上指定 <code>data-bs-toggle=&quot;list&quot;</code>，无需编写任何 JavaScript 即可激活列表组导航。在 <code>.list-group-item</code> 上使用这些数据属性。
-    </p>
+    <p>你只需在元素上指定 <code>data-bs-toggle=&quot;list&quot;</code>，无需编写任何 JavaScript 即可激活列表组导航。在 <code>.list-group-item</code> 上使用这些数据属性。</p>
     <CodeWrapper
       code='&lt;div role="tabpanel"&gt;
   &lt;!-- List group --&gt;
@@ -491,7 +480,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#numbered">带编号</a></li>
       <li><a href="#horizontal">水平排列</a></li>
       <li>
-       <a href="#variants">变体</a>
+        <a href="#variants">变体</a>
         <ul>
           <li><a href="#for-links-and-buttons">用于链接和按钮</a></li>
         </ul>
@@ -500,7 +489,7 @@ tabElms.forEach(tabElm =&gt; {
       <li><a href="#custom-content">自定义内容</a></li>
       <li><a href="#checkboxes-and-radios">复选框与单选按钮</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -509,7 +498,7 @@ tabElms.forEach(tabElm =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#javascript-behavior">JavaScript 行为</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#using-data-attributes">使用数据属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

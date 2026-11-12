@@ -24,7 +24,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       不透明度工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-opacity" file="scss/_utilities.scss" />
     <DocsPager />
@@ -34,7 +34,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>

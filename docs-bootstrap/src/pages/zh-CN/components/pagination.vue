@@ -8,10 +8,7 @@
       我们的分页使用一大块相互连接的链接，让链接难以被忽略且易于扩展，同时提供较大的点击区域。分页由 HTML 列表元素构建，因此屏幕阅读器可以播报可用链接的数量。使用包裹的
       <code>&lt;nav&gt;</code> 元素，将其标识为屏幕阅读器和其他辅助技术的导航区域。
     </p>
-    <p>
-      此外，由于页面中很可能存在多个此类导航区域，建议为 <code>&lt;nav&gt;</code> 提供描述性的
-      <code>aria-label</code> 以反映其用途。例如，如果分页组件用于在一组搜索结果之间导航，合适的标签可以是 <code>aria-label=&quot;Search results pages&quot;</code>。
-    </p>
+    <p>此外，由于页面中很可能存在多个此类导航区域，建议为 <code>&lt;nav&gt;</code> 提供描述性的 <code>aria-label</code> 以反映其用途。例如，如果分页组件用于在一组搜索结果之间导航，合适的标签可以是 <code>aria-label=&quot;Search results pages&quot;</code>。</p>
     <Example
       code='<nav aria-label="Page navigation example">
   <ul class="pagination">
@@ -67,10 +64,7 @@
       lang="html"
     />
     <h2 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h2>
-    <p>
-      为 <code>.page-item</code> 添加 <code>.disabled</code>，使其看起来不可点击。虽然 <code>.disabled</code> 使用 <code>pointer-events: none</code> 来禁用链接的交互性，但该 CSS 属性尚未标准化，并且没有考虑键盘导航。因此，你应始终在禁用的链接上添加
-      <code>tabindex=&quot;-1&quot;</code>，并使用自定义 JavaScript 完全禁用其功能。
-    </p>
+    <p>为 <code>.page-item</code> 添加 <code>.disabled</code>，使其看起来不可点击。虽然 <code>.disabled</code> 使用 <code>pointer-events: none</code> 来禁用链接的交互性，但该 CSS 属性尚未标准化，并且没有考虑键盘导航。因此，你应始终在禁用的链接上添加 <code>tabindex=&quot;-1&quot;</code>，并使用自定义 JavaScript 完全禁用其功能。</p>
     <Example
       code='<nav aria-label="...">
   <ul class="pagination">
@@ -122,7 +116,7 @@
     <h2 id="alignment">对齐<a class="anchor-link" href="#alignment" aria-label="对齐链接"></a></h2>
     <p>
       使用
-     <a href="/utilities/flex">flexbox 工具类</a>更改分页组件的对齐方式。例如，使用 <code>.justify-content-center</code>：
+      <a href="/utilities/flex">flexbox 工具类</a>更改分页组件的对齐方式。例如，使用 <code>.justify-content-center</code>：
     </p>
     <Example
       code='<nav aria-label="Page navigation example">
@@ -180,7 +174,7 @@
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#alignment">对齐</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

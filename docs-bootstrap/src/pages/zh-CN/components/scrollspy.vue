@@ -4,10 +4,7 @@
     <p class="lead">根据滚动位置自动更新 Bootstrap 导航或列表组组件，以指示视口中当前处于活动状态的链接。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
-    <p>
-      当锚点的 <code>href</code> 所引用的 <code>id</code> 对应元素滚动进入视图时，滚动监听会切换锚点（<code>&lt;a&gt;</code>）元素上的 <code>.active</code> 类。滚动监听最适合与 Bootstrap 的<a href="/components/navs-tabs">导航组件</a>或
-     <a href="/components/list-group">列表组</a>配合使用，但它也可用于当前页面中的任何锚点元素。它的工作方式如下。
-    </p>
+    <p>当锚点的 <code>href</code> 所引用的 <code>id</code> 对应元素滚动进入视图时，滚动监听会切换锚点（<code>&lt;a&gt;</code>）元素上的 <code>.active</code> 类。滚动监听最适合与 Bootstrap 的<a href="/components/navs-tabs">导航组件</a>或 <a href="/components/list-group">列表组</a>配合使用，但它也可用于当前页面中的任何锚点元素。它的工作方式如下。</p>
     <ul>
       <li>
         <p>
@@ -16,9 +13,7 @@
         </p>
       </li>
       <li>
-        <p>
-          在可滚动容器上添加 <code>data-bs-spy=&quot;scroll&quot;</code> 和 <code>data-bs-target=&quot;#navId&quot;</code>，其中 <code>navId</code> 是所关联导航的唯一 <code>id</code>。如果元素内部没有可聚焦元素，请务必同时包含 <code>tabindex=&quot;0&quot;</code> 以确保键盘可访问性。
-        </p>
+        <p>在可滚动容器上添加 <code>data-bs-spy=&quot;scroll&quot;</code> 和 <code>data-bs-target=&quot;#navId&quot;</code>，其中 <code>navId</code> 是所关联导航的唯一 <code>id</code>。如果元素内部没有可聚焦元素，请务必同时包含 <code>tabindex=&quot;0&quot;</code> 以确保键盘可访问性。</p>
       </li>
       <li>
         <p>
@@ -29,7 +24,7 @@
       <li>
         <p>
           不可见的目标元素将被忽略。请参阅下面的
-         <a href="#non-visible-elements">不可见元素</a>部分。
+          <a href="#non-visible-elements">不可见元素</a>部分。
         </p>
       </li>
     </ul>
@@ -355,10 +350,7 @@
     />
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
-    <p>
-      要为顶部导航栏轻松添加滚动监听行为，请为你想要监视的元素（通常最典型的是 <code>&lt;body&gt;</code>）添加 <code>data-bs-spy=&quot;scroll&quot;</code>。然后添加 <code>data-bs-target</code> 属性，其值为任意 Bootstrap
-      <code>.nav</code> 组件父元素的 <code>id</code> 或类名。
-    </p>
+    <p>要为顶部导航栏轻松添加滚动监听行为，请为你想要监视的元素（通常最典型的是 <code>&lt;body&gt;</code>）添加 <code>data-bs-spy=&quot;scroll&quot;</code>。然后添加 <code>data-bs-target</code> 属性，其值为任意 Bootstrap <code>.nav</code> 组件父元素的 <code>id</code> 或类名。</p>
     <CodeWrapper
       code='&lt;body data-bs-spy="scroll" data-bs-target="#navbar-example"&gt;
   ...
@@ -398,7 +390,7 @@
             <td><code>0px 0px -25%</code></td>
             <td>
               计算滚动位置时使用的 Intersection Observer
-             <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">rootMargin</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/rootMargin">rootMargin</a>
               有效单位。
             </td>
           </tr>
@@ -420,7 +412,7 @@
             <td><code>[0.1, 0.5, 1]</code></td>
             <td>
               计算滚动位置时使用的 <code>IntersectionObserver</code>
-             <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver#threshold">threshold</a>
               有效输入。
             </td>
           </tr>
@@ -502,7 +494,7 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#navbar">导航栏</a></li>
           <li><a href="#nested-nav">嵌套导航</a></li>
@@ -512,7 +504,7 @@ firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
       </li>
       <li><a href="#non-visible-elements">不可见元素</a></li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

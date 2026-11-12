@@ -4,9 +4,7 @@
     <p class="lead">了解如何在 Bootstrap 的布局、组件和工具类中启用从右到左的文字支持。</p>
 
     <h2 id="get-familiar">熟悉基础<a class="anchor-link" href="#get-familiar" aria-label="熟悉基础链接"></a></h2>
-    <p>
-      我们建议先阅读<a href="/getting-started/introduction">入门中的介绍页面</a>来熟悉 Bootstrap。阅读完毕之后，再继续阅读下面的内容，了解如何启用 RTL。
-    </p>
+    <p>我们建议先阅读<a href="/getting-started/introduction">入门中的介绍页面</a>来熟悉 Bootstrap。阅读完毕之后，再继续阅读下面的内容，了解如何启用 RTL。</p>
     <p>你可能还想了解一下<a href="https://rtlcss.com/">RTLCSS 项目</a>，因为它是我们实现 RTL 方案的基础。</p>
     <Callout type="warning">
       <p><strong>Bootstrap 的 RTL 特性仍处于实验阶段</strong>，并将根据用户反馈不断演进。发现问题或有改进建议？欢迎<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>，我们非常期待你的见解。</p>
@@ -62,9 +60,7 @@
         </p>
       </li>
       <li>
-        <p>
-          <strong>其次，我们重命名了少数方向性类，以采用逻辑属性的思路。</strong>得益于我们的 flex 工具类，你们中的大多数人已经接触过逻辑属性——它们用 <code>start</code> 和 <code>end</code> 取代了 <code>left</code> 和 <code>right</code> 等方向属性。这使得类名和值同时适用于 LTR 和 RTL，且无需任何额外开销。
-        </p>
+        <p><strong>其次，我们重命名了少数方向性类，以采用逻辑属性的思路。</strong>得益于我们的 flex 工具类，你们中的大多数人已经接触过逻辑属性——它们用 <code>start</code> 和 <code>end</code> 取代了 <code>left</code> 和 <code>right</code> 等方向属性。这使得类名和值同时适用于 LTR 和 RTL，且无需任何额外开销。</p>
       </li>
     </ol>
     <p>例如，将用于 <code>margin-left</code> 的 <code>.ml-3</code> 替换为 <code>.ms-3</code>。</p>
@@ -92,9 +88,7 @@ dt {
       lang="css"
     />
     <h3 id="alternative-font-stack">替代字体栈<a class="anchor-link" href="#alternative-font-stack" aria-label="替代字体栈链接"></a></h3>
-    <p>
-      如果你使用自定义字体，请注意并非所有字体都支持非拉丁字母。要从泛欧字体家族切换到阿拉伯语字体家族，你可能需要在字体栈中使用 <code>/*rtl:insert: {value}*/</code> 来修改字体家族的名称。
-    </p>
+    <p>如果你使用自定义字体，请注意并非所有字体都支持非拉丁字母。要从泛欧字体家族切换到阿拉伯语字体家族，你可能需要在字体栈中使用 <code>/*rtl:insert: {value}*/</code> 来修改字体家族的名称。</p>
     <p>例如，要将 LTR 下的 <code>Helvetica Neue</code> 字体切换为 RTL 下的 <code>Helvetica Neue Arabic</code>，你的 Sass 代码可以这样写：</p>
     <CodeWrapper
       code='$font-family-sans-serif:
@@ -120,9 +114,7 @@ dt {
       lang="scss"
     />
     <h3 id="ltr-and-rtl-at-the-same-time">同时使用 LTR 和 RTL<a class="anchor-link" href="#ltr-and-rtl-at-the-same-time" aria-label="同时使用 LTR 和 RTL 链接"></a></h3>
-    <p>
-      需要在同一页面上同时使用 LTR 和 RTL？借助<a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS 字符串映射</a>，这非常直接。用一个类包裹你的 <code>@import</code>，并为 RTLCSS 设置自定义的重命名规则：
-    </p>
+    <p>需要在同一页面上同时使用 LTR 和 RTL？借助<a href="https://rtlcss.com/learn/usage-guide/string-map/">RTLCSS 字符串映射</a>，这非常直接。用一个类包裹你的 <code>@import</code>，并为 RTLCSS 设置自定义的重命名规则：</p>
     <CodeWrapper
       code='/* rtl:begin:options: {
   "autoRename": true,
@@ -149,24 +141,22 @@ dt {
       <p>在采用 LTR 与 RTL 组合实现时，需要考虑的<strong>边界情况和已知局限</strong>：</p>
       <ol>
         <li>切换 <code>.ltr</code> 和 <code>.rtl</code> 时，请确保相应地添加 <code>dir</code> 和 <code>lang</code> 属性。</li>
-        <li>
-          同时加载两个文件可能成为真正的性能瓶颈：请考虑进行一些<a href="/customize/optimize">优化</a>，也许可以尝试<a href="https://www.filamentgroup.com/lab/load-css-simpler/">异步加载其中一个文件</a>。
-        </li>
+        <li>同时加载两个文件可能成为真正的性能瓶颈：请考虑进行一些<a href="/customize/optimize">优化</a>，也许可以尝试<a href="https://www.filamentgroup.com/lab/load-css-simpler/">异步加载其中一个文件</a>。</li>
         <li>以这种方式嵌套样式会导致我们的 <code>form-validation-state()</code> mixin 无法按预期工作，因此需要你自己稍作调整。<a href="https://github.com/twbs/bootstrap/issues/31223">参见 #31223</a>。</li>
       </ol>
     </Callout>
     <p>
-      想要自动化这一过程，并在同一份样式表中处理涉及两个方向的多种边界情况？那么可以考虑将<a href="https://github.com/elchininet/postcss-rtlcss">PostCSS RTLCSS</a>作为<a href="https://github.com/postcss/postcss">PostCSS</a>插件来处理源文件。PostCSS RTLCSS 在底层使用<a href="https://rtlcss.com">RTLCSS</a>管理方向翻转过程，但它会将翻转后的声明分离到使用不同前缀的 LTR 和 RTL 规则中，从而让你能在同一个样式表文件中同时拥有两个方向。这样一来，只需更改页面的 <code>dir</code>（如果相应配置了插件，甚至可以修改特定类），就可以在 LTR 和 RTL 方向之间切换。
+      想要自动化这一过程，并在同一份样式表中处理涉及两个方向的多种边界情况？那么可以考虑将<a href="https://github.com/elchininet/postcss-rtlcss">PostCSS RTLCSS</a>作为<a href="https://github.com/postcss/postcss">PostCSS</a>插件来处理源文件。PostCSS RTLCSS 在底层使用<a href="https://rtlcss.com">RTLCSS</a
+      >管理方向翻转过程，但它会将翻转后的声明分离到使用不同前缀的 LTR 和 RTL 规则中，从而让你能在同一个样式表文件中同时拥有两个方向。这样一来，只需更改页面的 <code>dir</code>（如果相应配置了插件，甚至可以修改特定类），就可以在 LTR 和 RTL 方向之间切换。
     </p>
     <Callout type="warning">
       <p>使用 PostCSS RTLCSS 构建 LTR 与 RTL 组合实现时，<strong>需要重点注意的事项</strong>：</p>
       <ol>
         <li>建议为 <code>html</code> 元素添加 <code>dir</code> 属性。这样，更改方向时整个页面都会受影响。同时，请确保相应地添加 <code>lang</code> 属性。</li>
+        <li>将两个方向打包到单个文件中会增加最终样式表的大小（平均增加 20%-30%）：请考虑进行一些<a href="/customize/optimize">优化</a>。</li>
         <li>
-          将两个方向打包到单个文件中会增加最终样式表的大小（平均增加 20%-30%）：请考虑进行一些<a href="/customize/optimize">优化</a>。
-        </li>
-        <li>
-          请注意，PostCSS RTLCSS 与 <code>/* rtl:remove */</code> 指令不兼容，因为它不会移除任何 CSS 规则。你应分别将 <code>/* rtl:remove */</code>、<code>/* rtl:begin:remove */</code> 和 <code>/* rtl:end:remove */</code> 指令替换为 <code>/* rtl:freeze */</code>、<code>/* rtl:begin:freeze */</code> 和 <code>/* rtl:end:freeze */</code> 指令。这些指令会为目标规则或声明加上当前方向的前缀，但不会创建 RTL 对应版本（效果与 RTLCSS 中的 <code>remove</code> 指令相同）。
+          请注意，PostCSS RTLCSS 与 <code>/* rtl:remove */</code> 指令不兼容，因为它不会移除任何 CSS 规则。你应分别将 <code>/* rtl:remove */</code>、<code>/* rtl:begin:remove */</code> 和 <code>/* rtl:end:remove */</code> 指令替换为 <code>/* rtl:freeze */</code>、<code>/* rtl:begin:freeze */</code> 和
+          <code>/* rtl:end:freeze */</code> 指令。这些指令会为目标规则或声明加上当前方向的前缀，但不会创建 RTL 对应版本（效果与 RTLCSS 中的 <code>remove</code> 指令相同）。
         </li>
       </ol>
     </Callout>
@@ -185,7 +175,7 @@ dt {
     <ul>
       <li><a href="#get-familiar">熟悉基础</a></li>
       <li>
-       <a href="#required-html">必需的 HTML</a>
+        <a href="#required-html">必需的 HTML</a>
         <ul>
           <li><a href="#starter-template">入门模板</a></li>
           <li><a href="#rtl-examples">RTL 示例</a></li>
@@ -193,7 +183,7 @@ dt {
       </li>
       <li><a href="#approach">实现方式</a></li>
       <li>
-       <a href="#customize-from-source">从源码自定义</a>
+        <a href="#customize-from-source">从源码自定义</a>
         <ul>
           <li><a href="#custom-rtl-values">自定义 RTL 值</a></li>
           <li><a href="#alternative-font-stack">替代字体栈</a></li>
@@ -202,7 +192,7 @@ dt {
       </li>
       <li><a href="#the-breadcrumb-case">面包屑的特殊情况</a></li>
       <li>
-       <a href="#additional-resources">其他资源</a>
+        <a href="#additional-resources">其他资源</a>
       </li>
     </ul>
   </nav>

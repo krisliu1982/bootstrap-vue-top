@@ -71,8 +71,8 @@
     >
     <p>轮播不会自动规范化幻灯片的尺寸。因此，你可能需要使用其他工具类或自定义样式来适当设置内容尺寸。虽然轮播支持上一页/下一页控件和指示器，但它们并不是必需的。你可以根据需要添加和自定义。</p>
     <p>
-      <strong>你必须为其中一张幻灯片添加 <code>.active</code> 类</strong>，否则轮播将不可见。另外，请确保为 <code>.carousel</code> 设置唯一的 <code>id</code>，以便使用可选控件，尤其是在单个页面上使用多个轮播时。控件和指示器元素必须具有与 <code>.carousel</code> 元素的 <code>id</code> 匹配的
-      <code>data-bs-target</code> 属性（链接则为 <code>href</code>）。
+      <strong>你必须为其中一张幻灯片添加 <code>.active</code> 类</strong>，否则轮播将不可见。另外，请确保为 <code>.carousel</code> 设置唯一的 <code>id</code>，以便使用可选控件，尤其是在单个页面上使用多个轮播时。控件和指示器元素必须具有与 <code>.carousel</code> 元素的 <code>id</code> 匹配的 <code>data-bs-target</code> 属性（链接则为
+      <code>href</code>）。
     </p>
     <h3 id="indicators">指示器<a class="anchor-link" href="#indicators" aria-label="指示器链接"></a></h3>
     <p>你可以为轮播添加指示器，与上一页/下一页控件并列。指示器允许用户直接跳转到特定的幻灯片。</p>
@@ -131,10 +131,7 @@
       </div></ExampleCustom
     >
     <h3 id="captions">字幕<a class="anchor-link" href="#captions" aria-label="字幕链接"></a></h3>
-    <p>
-      你可以在任意 <code>.carousel-item</code> 中使用 <code>.carousel-caption</code> 元素为幻灯片添加字幕。如下图所示，通过可选的<a href="/utilities/display">显示工具类</a>，可以轻松地在较小视口中隐藏它们。我们首先使用 <code>.d-none</code> 隐藏它们，然后在中等尺寸
-      设备上使用 <code>.d-md-block</code> 重新显示。
-    </p>
+    <p>你可以在任意 <code>.carousel-item</code> 中使用 <code>.carousel-caption</code> 元素为幻灯片添加字幕。如下图所示，通过可选的<a href="/utilities/display">显示工具类</a>，可以轻松地在较小视口中隐藏它们。我们首先使用 <code>.d-none</code> 隐藏它们，然后在中等尺寸 设备上使用 <code>.d-md-block</code> 重新显示。</p>
     <ExampleCustom
       code='<div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -262,13 +259,13 @@
     <h2 id="autoplaying-carousels">自动播放轮播<a class="anchor-link" href="#autoplaying-carousels" aria-label="自动播放轮播链接"></a></h2>
     <p>
       将 <code>ride</code> 选项设置为 <code>carousel</code>，即可让轮播在页面加载时自动播放。自动播放的轮播在鼠标悬停时会自动暂停。此行为可以通过 <code>pause</code> 选项进行控制。在支持
-     <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a>的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
+      <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a>的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
     </p>
     <Callout>
       <p>出于无障碍访问方面的原因，我们建议避免使用自动播放的轮播。如果你的页面确实包含自动播放的轮播，我们建议额外提供一个按钮或控件，用于显式暂停/停止轮播。</p>
       <p>
         参见
-       <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a>。
+        <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a>。
       </p>
     </Callout>
     <ExampleCustom
@@ -564,10 +561,7 @@
       </div></ExampleCustom
     >
     <h2 id="custom-transition">自定义过渡<a class="anchor-link" href="#custom-transition" aria-label="自定义过渡链接"></a></h2>
-    <p>
-      <code>.carousel-item</code> 的过渡时长可以在编译前通过 <code>$carousel-transition-duration</code> Sass 变量更改，或者在使用已编译的 CSS 时通过自定义样式更改。如果应用了多个过渡，请确保首先定义 transform 过渡（例如
-      <code>transition: transform 2s ease, opacity .5s ease-out</code>）。
-    </p>
+    <p><code>.carousel-item</code> 的过渡时长可以在编译前通过 <code>$carousel-transition-duration</code> Sass 变量更改，或者在使用已编译的 CSS 时通过自定义样式更改。如果应用了多个过渡，请确保首先定义 transform 过渡（例如 <code>transition: transform 2s ease, opacity .5s ease-out</code>）。</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>所有轮播的变量：</p>
@@ -576,10 +570,7 @@
     <ScssDocs name="carousel-dark-variables" file="scss/_variables.scss" />
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
-    <p>
-      使用 data 属性可以轻松控制轮播的位置。<code>data-bs-slide</code> 接受关键字 <code>prev</code> 或 <code>next</code>，这会相对于幻灯片的当前位置改变其位置。或者，使用 <code>data-bs-slide-to</code> 向轮播传递原始幻灯片索引
-      <code>data-bs-slide-to=&quot;2&quot;</code>，这会将幻灯片位置移动到从 <code>0</code> 开始的特定索引。
-    </p>
+    <p>使用 data 属性可以轻松控制轮播的位置。<code>data-bs-slide</code> 接受关键字 <code>prev</code> 或 <code>next</code>，这会相对于幻灯片的当前位置改变其位置。或者，使用 <code>data-bs-slide-to</code> 向轮播传递原始幻灯片索引 <code>data-bs-slide-to=&quot;2&quot;</code>，这会将幻灯片位置移动到从 <code>0</code> 开始的特定索引。</p>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
     <p>手动调用轮播：</p>
     <CodeWrapper
@@ -770,7 +761,7 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#basic-examples">基本示例</a>
+        <a href="#basic-examples">基本示例</a>
         <ul>
           <li><a href="#indicators">指示器</a></li>
           <li><a href="#captions">字幕</a></li>
@@ -778,10 +769,10 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#autoplaying-carousels">自动播放轮播</a>
+        <a href="#autoplaying-carousels">自动播放轮播</a>
         <ul>
           <li>
-           <a href="#autoplaying-carousels-without-controls">不带控件的自动播放轮播</a>
+            <a href="#autoplaying-carousels-without-controls">不带控件的自动播放轮播</a>
           </li>
         </ul>
       </li>
@@ -789,13 +780,13 @@ myCarousel.addEventListener(&#39;slide.bs.carousel&#39;, event =&gt; {
       <li><a href="#dark-variant">深色变体</a></li>
       <li><a href="#custom-transition">自定义过渡</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

@@ -79,9 +79,7 @@
 </div>'
     />
     <h2 id="checkboxes-and-radios">复选框与单选按钮<a class="anchor-link" href="#checkboxes-and-radios" aria-label="复选框与单选按钮链接"></a></h2>
-    <p>
-      可以将任何复选框或单选按钮选项放在输入框组的附加组件中，而不是放置文本。当输入框旁边没有可见文本时，我们建议为 <code>.form-check-input</code> 添加 <code>.mt-0</code>。
-    </p>
+    <p>可以将任何复选框或单选按钮选项放在输入框组的附加组件中，而不是放置文本。当输入框旁边没有可见文本时，我们建议为 <code>.form-check-input</code> 添加 <code>.mt-0</code>。</p>
     <Example
       code='<div class="input-group mb-3">
   <div class="input-group-text">
@@ -309,14 +307,14 @@
       <li><a href="#buttons-with-dropdowns">带下拉菜单的按钮</a></li>
       <li><a href="#segmented-buttons">分段按钮</a></li>
       <li>
-       <a href="#custom-forms">自定义表单</a>
+        <a href="#custom-forms">自定义表单</a>
         <ul>
           <li><a href="#custom-select">自定义选择框</a></li>
           <li><a href="#custom-file-input">自定义文件输入框</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

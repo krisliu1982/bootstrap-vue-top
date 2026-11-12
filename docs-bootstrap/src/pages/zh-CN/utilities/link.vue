@@ -5,7 +5,8 @@
 
     <h2 id="link-opacity">链接不透明度<a class="anchor-link" href="#link-opacity" aria-label="链接不透明度链接"></a></h2>
     <p>
-      使用工具类更改链接 <code>rgba()</code> 颜色值的 alpha 不透明度。请注意，更改颜色的不透明度可能会导致链接出现<a href="getting-started/accessibility/#color-contrast"><em>对比度不足</em></a>的问题。
+      使用工具类更改链接 <code>rgba()</code> 颜色值的 alpha 不透明度。请注意，更改颜色的不透明度可能会导致链接出现<a href="getting-started/accessibility/#color-contrast"><em>对比度不足</em></a
+      >的问题。
     </p>
     <Example
       code='<p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
@@ -64,12 +65,12 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <p>
       除了以下 Sass 功能之外，建议阅读有关我们内置的
-     <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
+      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       链接工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-links" file="scss/_utilities.scss" />
     <DocsPager />
@@ -80,7 +81,7 @@
     <ul>
       <li><a href="#link-opacity">链接不透明度</a></li>
       <li>
-       <a href="#link-underlines">链接下划线</a>
+        <a href="#link-underlines">链接下划线</a>
         <ul>
           <li><a href="#underline-color">下划线颜色</a></li>
           <li><a href="#underline-offset">下划线偏移</a></li>
@@ -90,7 +91,7 @@
       </li>
       <li><a href="#colored-links">彩色链接</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>
         </ul>

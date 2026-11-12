@@ -18,7 +18,10 @@
     <h2 id="css-variables">CSS 变量<a class="anchor-link" href="#css-variables" aria-label="CSS 变量链接"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      在 v5.1.1 中，我们统一了所有 CSS 包（包括 <code>bootstrap.css</code>、<code>bootstrap-reboot.css</code> 和 <code>bootstrap-grid.css</code>）中必需的 <code>@import</code>，使其包含 <code>_root.scss</code>。这会向所有包添加 <code>:root</code> 级别的 CSS 变量，无论该包中使用了其中多少个变量。最终，Bootstrap 5 将随着时间推移继续添加更多<a href="/customize/css-variables">CSS 变量</a>，以便在无需始终重新编译 Sass 的情况下提供更多实时自定义。我们的做法是将源 Sass 变量转换为 CSS 变量。这样，即使你不使用 CSS 变量，也仍然拥有 Sass 的全部能力。<strong>这仍在进行中，需要时间才能完全实现。</strong>
+      在 v5.1.1 中，我们统一了所有 CSS 包（包括 <code>bootstrap.css</code>、<code>bootstrap-reboot.css</code> 和 <code>bootstrap-grid.css</code>）中必需的 <code>@import</code>，使其包含 <code>_root.scss</code>。这会向所有包添加 <code>:root</code> 级别的 CSS 变量，无论该包中使用了其中多少个变量。最终，Bootstrap 5 将随着时间推移继续添加更多<a
+        href="/customize/css-variables"
+        >CSS 变量</a
+      >，以便在无需始终重新编译 Sass 的情况下提供更多实时自定义。我们的做法是将源 Sass 变量转换为 CSS 变量。这样，即使你不使用 CSS 变量，也仍然拥有 Sass 的全部能力。<strong>这仍在进行中，需要时间才能完全实现。</strong>
     </p>
     <p>例如，考虑以下用于常见 <code>&lt;body&gt;</code> 样式的 <code>:root</code> CSS 变量：</p>
     <ScssDocs name="root-body-variables" file="scss/_root.scss" />
@@ -37,9 +40,7 @@
       <li>
         全局为每个元素（包括 <code>*::before</code> 和 <code>*::after</code>）设置 <code>box-sizing</code> 为 <code>border-box</code>。这确保元素的声明宽度永远不会因内边距或边框而被超出。
         <ul>
-          <li>
-            未在 <code>&lt;html&gt;</code> 上声明基础 <code>font-size</code>，但假定为 <code>16px</code>（浏览器默认值）。在 <code>&lt;body&gt;</code> 上应用 <code>font-size: 1rem</code>，以便通过媒体查询轻松实现响应式字体缩放，同时尊重用户偏好并确保更高的可访问性。可以通过修改 <code>$font-size-root</code> 变量来覆盖此浏览器默认值。
-          </li>
+          <li>未在 <code>&lt;html&gt;</code> 上声明基础 <code>font-size</code>，但假定为 <code>16px</code>（浏览器默认值）。在 <code>&lt;body&gt;</code> 上应用 <code>font-size: 1rem</code>，以便通过媒体查询轻松实现响应式字体缩放，同时尊重用户偏好并确保更高的可访问性。可以通过修改 <code>$font-size-root</code> 变量来覆盖此浏览器默认值。</li>
         </ul>
       </li>
       <li><code>&lt;body&gt;</code> 还设置了全局的 <code>font-family</code>、<code>font-weight</code>、<code>line-height</code> 和 <code>color</code>。稍后一些表单元素会继承这些值，以防止字体不一致。</li>
@@ -48,7 +49,7 @@
     <h2 id="native-font-stack">原生字体栈<a class="anchor-link" href="#native-font-stack" aria-label="原生字体栈链接"></a></h2>
     <p>
       Bootstrap 使用“原生字体栈”或“系统字体栈”，以在每台设备和操作系统上获得最佳的文本渲染效果。这些系统字体是专门针对当今设备设计的，在屏幕上的渲染效果更好，并支持可变字体等特性。阅读更多关于
-     <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a>。
+      <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a>。
     </p>
     <CodeWrapper
       code='$font-family-sans-serif:
@@ -128,9 +129,7 @@ sans-serif,
     <p>占位链接——即没有 <code>href</code> 的链接——会通过更具体的选择器进行定位，其 <code>color</code> 和 <code>text-decoration</code> 会被重置为默认值。</p>
     <Example code="<a>This is a placeholder link</a>" />
     <h2 id="horizontal-rules">水平分隔线<a class="anchor-link" href="#horizontal-rules" aria-label="水平分隔线链接"></a></h2>
-    <p>
-      <code>&lt;hr&gt;</code> 元素已被简化。与浏览器默认行为类似，<code>&lt;hr&gt;</code> 通过 <code>border-top</code> 设置样式，具有默认的 <code>opacity: .25</code>，并通过 <code>color</code> 自动继承其 <code>border-color</code>，包括当 <code>color</code> 通过父级设置时。它们可以使用文本、边框和不透明度工具类进行修改。
-    </p>
+    <p><code>&lt;hr&gt;</code> 元素已被简化。与浏览器默认行为类似，<code>&lt;hr&gt;</code> 通过 <code>border-top</code> 设置样式，具有默认的 <code>opacity: .25</code>，并通过 <code>color</code> 自动继承其 <code>border-color</code>，包括当 <code>color</code> 通过父级设置时。它们可以使用文本、边框和不透明度工具类进行修改。</p>
     <Example
       code='<hr>
 
@@ -367,9 +366,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <Example code='<span role="button" tabindex="0">Non-button element button</span>' />
     <h2 id="misc-elements">杂项元素<a class="anchor-link" href="#misc-elements" aria-label="杂项元素链接"></a></h2>
     <h3 id="address">地址<a class="anchor-link" href="#address" aria-label="地址链接"></a></h3>
-    <p>
-      <code>&lt;address&gt;</code> 元素经过更新，将浏览器默认的 <code>font-style</code> 从 <code>italic</code> 重置为 <code>normal</code>。<code>line-height</code> 现在也是继承的，并添加了 <code>margin-bottom: 1rem</code>。<code>&lt;address&gt;</code> 用于展示最近祖先（或整个作品）的联系信息。通过在行尾添加 <code>&lt;br&gt;</code> 来保留格式。
-    </p>
+    <p><code>&lt;address&gt;</code> 元素经过更新，将浏览器默认的 <code>font-style</code> 从 <code>italic</code> 重置为 <code>normal</code>。<code>line-height</code> 现在也是继承的，并添加了 <code>margin-bottom: 1rem</code>。<code>&lt;address&gt;</code> 用于展示最近祖先（或整个作品）的联系信息。通过在行尾添加 <code>&lt;br&gt;</code> 来保留格式。</p>
     <Example
       :showMarkup="false"
       code='<address>
@@ -422,8 +419,8 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> 属性<a class="anchor-link" href="#html5-hidden-attribute" aria-label="HTML5 [hidden] 属性链接"></a></h2>
     <p>
       HTML5 添加了
-     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a
-      >，默认样式为 <code>display: none</code>。借鉴<a href="https://purecss.io/">PureCSS</a>的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其 <code>display</code> 被意外覆盖。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a>，默认样式为 <code>display: none</code>。借鉴<a href="https://purecss.io/">PureCSS</a>的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其
+      <code>display</code> 被意外覆盖。
     </p>
     <CodeWrapper code='&lt;input type="text" hidden&gt;' lang="html" />
     <Callout>
@@ -454,13 +451,13 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       <li><a href="#sample-output">示例输出</a></li>
       <li><a href="#tables">表格</a></li>
       <li>
-       <a href="#forms">表单</a>
+        <a href="#forms">表单</a>
         <ul>
           <li><a href="#pointers-on-buttons">按钮上的指针光标</a></li>
         </ul>
       </li>
       <li>
-       <a href="#misc-elements">杂项元素</a>
+        <a href="#misc-elements">杂项元素</a>
         <ul>
           <li><a href="#address">地址</a></li>
           <li><a href="#blockquote">块引用</a></li>

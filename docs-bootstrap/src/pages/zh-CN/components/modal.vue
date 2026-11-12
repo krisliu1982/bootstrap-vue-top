@@ -10,13 +10,10 @@
       <li>点击模态框的“背景遮罩”将自动关闭模态框。</li>
       <li>Bootstrap 一次只支持一个模态框窗口。不支持嵌套模态框，因为我们认为其用户体验不佳。</li>
       <li>模态框使用 <code>position: fixed</code>，其渲染有时会比较特殊。请尽可能将模态框 HTML 放在顶层位置，以避免其他元素的潜在干扰。在另一个 fixed 元素中嵌套 <code>.modal</code> 时，你很可能会遇到问题。</li>
-      <li>
-        同样，由于 <code>position: fixed</code>，在移动设备上使用模态框存在一些注意事项。
-        详情请<a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">参阅浏览器支持文档</a>。
-      </li>
+      <li>同样，由于 <code>position: fixed</code>，在移动设备上使用模态框存在一些注意事项。 详情请<a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">参阅浏览器支持文档</a>。</li>
       <li>
         由于 HTML5 定义其语义的方式，
-       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
         在 Bootstrap 模态框中不起作用。要达到相同的效果，请使用一些自定义 JavaScript：
       </li>
     </ul>
@@ -34,10 +31,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <p>继续阅读以了解演示和用法指南。</p>
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <h3 id="modal-components">模态框组件<a class="anchor-link" href="#modal-components" aria-label="模态框组件链接"></a></h3>
-    <p>
-      下面是一个<em>静态</em>模态框示例（即其 <code>position</code> 和 <code>display</code> 已被覆盖）。其中包含模态框头部、模态框主体（<code>padding</code> 所需）和模态框页脚（可选）。我们建议你尽可能为模态框头部添加关闭操作，或提供另一种明确的
-      关闭操作。
-    </p>
+    <p>下面是一个<em>静态</em>模态框示例（即其 <code>position</code> 和 <code>display</code> 已被覆盖）。其中包含模态框头部、模态框主体（<code>padding</code> 所需）和模态框页脚（可选）。我们建议你尽可能为模态框头部添加关闭操作，或提供另一种明确的 关闭操作。</p>
     <div class="bd-example bg-body-tertiary border rounded-3 p-3 mb-3">
       <div class="modal position-static d-block" tabindex="-1">
         <div class="modal-dialog">
@@ -78,10 +72,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       lang="html"
     />
     <Callout>
-      <p>
-        在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用
-       <a href="/utilities/text#font-size">字体大小工具类</a>控制标题的外观。下面所有实时示例均采用此方法。
-      </p>
+      <p>在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用 <a href="/utilities/text#font-size">字体大小工具类</a>控制标题的外观。下面所有实时示例均采用此方法。</p>
     </Callout>
     <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
     <p>点击下面的按钮来切换一个可用的模态框演示。它将从页面顶部滑下并淡入。</p>
@@ -195,10 +186,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body" style="min-height: 100vh">
-            <p>
-              这是一些占位内容，用于展示模态框的滚动行为。我们没有在模态框中重复文本，而是使用内联样式设置最小高度，从而延长整个模态框的长度并演示溢出滚动。当内容变得比视口高度更长时，滚动将
-              按需移动模态框。
-            </p>
+            <p>这是一些占位内容，用于展示模态框的滚动行为。我们没有在模态框中重复文本，而是使用内联样式设置最小高度，从而延长整个模态框的长度并演示溢出滚动。当内容变得比视口高度更长时，滚动将 按需移动模态框。</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
@@ -213,10 +201,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">Launch demo modal</button>
     '
     />
-    <p>
-      你还可以在 <code>.modal-dialog</code> 上添加
-      <code>.modal-dialog-scrollable</code>，创建允许滚动模态框主体的可滚动模态框。
-    </p>
+    <p>你还可以在 <code>.modal-dialog</code> 上添加 <code>.modal-dialog-scrollable</code>，创建允许滚动模态框主体的可滚动模态框。</p>
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
@@ -425,13 +410,10 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <p>
       有一堆按钮都触发同一个模态框，但内容略有不同？使用
       <code>event.relatedTarget</code> 和
-     <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
       根据点击的按钮来改变模态框的内容。
     </p>
-    <p>
-      下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请
-     <a href="#events">阅读模态框事件文档</a>。
-    </p>
+    <p>下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请 <a href="#events">阅读模态框事件文档</a>。</p>
     <Example
       addStackblitzJs
       code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
@@ -467,10 +449,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     />
     <JsDocs name="varying-modal-content" file="site/src/assets/partials/snippets.js" />
     <h3 id="toggle-between-modals">在模态框之间切换<a class="anchor-link" href="#toggle-between-modals" aria-label="在模态框之间切换链接"></a></h3>
-    <p>
-      通过对 <code>data-bs-target</code> 和 <code>data-bs-toggle</code> 属性进行一些巧妙的放置，可在多个模态框之间切换。例如，你可以在已打开的登录模态框中切换出密码重置模态框。<strong>请注意，多个模态框不能同时打开</strong>——此方法只是在
-      两个独立的模态框之间切换。
-    </p>
+    <p>通过对 <code>data-bs-target</code> 和 <code>data-bs-toggle</code> 属性进行一些巧妙的放置，可在多个模态框之间切换。例如，你可以在已打开的登录模态框中切换出密码重置模态框。<strong>请注意，多个模态框不能同时打开</strong>——此方法只是在 两个独立的模态框之间切换。</p>
     <Example
       code='<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
@@ -520,14 +499,9 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <h3 id="dynamic-heights">动态高度<a class="anchor-link" href="#dynamic-heights" aria-label="动态高度链接"></a></h3>
     <p>如果模态框在打开状态时高度发生变化，你应该调用 <code>myModal.handleUpdate()</code> 重新调整模态框的位置，以防出现滚动条。</p>
     <h3 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h3>
-    <p>
-      请务必为 <code>.modal</code> 添加引用模态框标题的 <code>aria-labelledby=&quot;...&quot;</code>。此外，你还可以在 <code>.modal</code> 上使用 <code>aria-describedby</code> 为模态框对话框提供描述。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已通过 JavaScript 添加了它。
-    </p>
+    <p>请务必为 <code>.modal</code> 添加引用模态框标题的 <code>aria-labelledby=&quot;...&quot;</code>。此外，你还可以在 <code>.modal</code> 上使用 <code>aria-describedby</code> 为模态框对话框提供描述。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已通过 JavaScript 添加了它。</p>
     <h3 id="embedding-youtube-videos">嵌入 YouTube 视频<a class="anchor-link" href="#embedding-youtube-videos" aria-label="嵌入 YouTube 视频链接"></a></h3>
-    <p>
-      在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。
-      更多信息请<a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a>。
-    </p>
+    <p>在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。 更多信息请<a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a>。</p>
     <h2 id="optional-sizes">可选尺寸<a class="anchor-link" href="#optional-sizes" aria-label="可选尺寸链接"></a></h2>
     <p>模态框有三种可选尺寸，可通过修饰类放置在 <code>.modal-dialog</code> 上。这些尺寸会在特定断点下生效，以避免在较窄的视口中出现水平滚动条。</p>
     <div class="table-responsive">
@@ -773,7 +747,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <JsDismiss name="modal" /><Callout type="warning">
       <p>
         虽然两种关闭模态框的方式都受支持，但请注意，从模态框外部关闭并不符合
-       <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
@@ -866,8 +840,7 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
             <td><code>show</code></td>
             <td>
               手动打开模态框。
-              <strong>在模态框实际显示之前就返回给调用者</strong>（即 <code>shown.bs.modal</code> 事件发生之前）。此外，你可以传入一个 DOM 元素作为参数，该元素可在模态框事件中接收（作为 <code>relatedTarget</code> 属性）。（即
-              <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>）。
+              <strong>在模态框实际显示之前就返回给调用者</strong>（即 <code>shown.bs.modal</code> 事件发生之前）。此外，你可以传入一个 DOM 元素作为参数，该元素可在模态框事件中接收（作为 <code>relatedTarget</code> 属性）。（即 <code>const modalToggle = document.getElementById(&#39;toggleMyModal&#39;); myModal.show(modalToggle)</code>）。
             </td>
           </tr>
           <tr>
@@ -936,7 +909,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#modal-components">模态框组件</a></li>
           <li><a href="#live-demo">实时演示</a></li>
@@ -957,7 +930,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
       <li><a href="#optional-sizes">可选尺寸</a></li>
       <li><a href="#fullscreen-modal">全屏模态框</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -965,7 +938,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过数据属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

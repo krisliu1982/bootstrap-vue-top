@@ -5,8 +5,8 @@
   </p>
 
   <p>
-    从 Bootstrap 5.2.0 起，所有组件都支持一个<strong>实验性的</strong>保留数据属性 <code>data-bs-config</code>，它可以用 JSON 字符串的形式存放简单的组件配置。当一个元素同时具有 <code>data-bs-config='{"delay":0, "title":123}'</code> 和 <code>data-bs-title="456"</code> 属性时，最终的
-    <code>title</code> 值将是 <code>456</code>，并且单独的数据属性会覆盖 <code>data-bs-config</code> 中给出的值。此外，现有的数据属性也能够存放 JSON 值，例如 <code>data-bs-delay='{"show":0,"hide":150}'</code>。
+    从 Bootstrap 5.2.0 起，所有组件都支持一个<strong>实验性的</strong>保留数据属性 <code>data-bs-config</code>，它可以用 JSON 字符串的形式存放简单的组件配置。当一个元素同时具有 <code>data-bs-config='{"delay":0, "title":123}'</code> 和 <code>data-bs-title="456"</code> 属性时，最终的 <code>title</code> 值将是
+    <code>456</code>，并且单独的数据属性会覆盖 <code>data-bs-config</code> 中给出的值。此外，现有的数据属性也能够存放 JSON 值，例如 <code>data-bs-delay='{"show":0,"hide":150}'</code>。
   </p>
 
   <p>最终的配置对象是 <code>data-bs-config</code>、<code>data-bs-</code> 和 <code>js object</code>（JavaScript 对象）合并后的结果，其中最后给出的键值对会覆盖其他来源中的同名键值。</p>

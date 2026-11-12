@@ -135,7 +135,7 @@
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
       请阅读
-     <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
+      <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
@@ -156,10 +156,7 @@
     </ul>
     <p>这些类可以在 <code>_transitions.scss</code> 中找到。</p>
     <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
-    <p>
-      只需在元素上添加 <code>data-bs-toggle=&quot;collapse&quot;</code> 和 <code>data-bs-target</code>，即可自动为一个或多个可折叠元素分配控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定要应用折叠的目标。请确保为可折叠元素添加 <code>collapse</code> 类。如果你希望它默认展开，请额外添加
-      <code>show</code> 类。
-    </p>
+    <p>只需在元素上添加 <code>data-bs-toggle=&quot;collapse&quot;</code> 和 <code>data-bs-target</code>，即可自动为一个或多个可折叠元素分配控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定要应用折叠的目标。请确保为可折叠元素添加 <code>collapse</code> 类。如果你希望它默认展开，请额外添加 <code>show</code> 类。</p>
     <p>
       要为可折叠区域添加折叠面板组管理，请添加数据属性
       <code>data-bs-parent=&quot;#selector&quot;</code>。
@@ -312,7 +309,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#example">示例</a>
+        <a href="#example">示例</a>
         <ul>
           <li><a href="#flush">贴边显示</a></li>
           <li><a href="#always-open">始终展开</a></li>
@@ -320,14 +317,14 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       </li>
       <li><a href="#accessibility">无障碍</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

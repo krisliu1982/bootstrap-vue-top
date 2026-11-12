@@ -100,7 +100,8 @@
     />
     <h2 id="starts">起始位置<a class="anchor-link" href="#starts" aria-label="起始位置链接"></a></h2>
     <p>
-      起始位置类（Start classes）旨在取代默认网格的偏移类，但它们并不完全相同。CSS Grid 通过样式创建网格模板，告诉浏览器“从此列开始”和“到此列结束”。这些属性分别是 <code>grid-column-start</code> 和 <code>grid-column-end</code>。起始位置类正是前者的简写。将它们与列类搭配使用，即可按需调整列的大小和对齐方式。起始位置类从 <code>1</code> 开始，因为对这些属性来说 <code>0</code> 是无效值。
+      起始位置类（Start classes）旨在取代默认网格的偏移类，但它们并不完全相同。CSS Grid 通过样式创建网格模板，告诉浏览器“从此列开始”和“到此列结束”。这些属性分别是 <code>grid-column-start</code> 和 <code>grid-column-end</code>。起始位置类正是前者的简写。将它们与列类搭配使用，即可按需调整列的大小和对齐方式。起始位置类从
+      <code>1</code> 开始，因为对这些属性来说 <code>0</code> 是无效值。
     </p>
     <Example
       class="bd-example-cssgrid"
@@ -201,9 +202,7 @@
         </tbody>
       </table>
     </div>
-    <p>
-      这些 CSS 变量没有默认值；它们会应用回退值，在提供局部实例之前一直<em>使用</em>这些回退值。例如，我们的 CSS Grid 行使用 <code>var(--bs-rows, 1)</code>，由于 <code>--bs-rows</code> 尚未在任何地方设置，因此该值会被忽略。一旦设置了它，<code>.grid</code> 实例就会使用该值，而不是回退值 <code>1</code>。
-    </p>
+    <p>这些 CSS 变量没有默认值；它们会应用回退值，在提供局部实例之前一直<em>使用</em>这些回退值。例如，我们的 CSS Grid 行使用 <code>var(--bs-rows, 1)</code>，由于 <code>--bs-rows</code> 尚未在任何地方设置，因此该值会被忽略。一旦设置了它，<code>.grid</code> 实例就会使用该值，而不是回退值 <code>1</code>。</p>
     <h3 id="no-grid-classes">无网格类<a class="anchor-link" href="#no-grid-classes" aria-label="无网格类链接"></a></h3>
     <p><code>.grid</code> 的直接子元素即为网格项，因此无需显式添加 <code>.g-col</code> 类即可设置其尺寸。</p>
     <Example
@@ -291,7 +290,7 @@
       <li><a href="#how-it-works">工作原理</a></li>
       <li><a href="#key-differences">主要区别</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#three-columns">三列</a></li>
           <li><a href="#responsive">响应式</a></li>
@@ -302,7 +301,7 @@
       <li><a href="#auto-columns">自动列</a></li>
       <li><a href="#nesting">嵌套</a></li>
       <li>
-       <a href="#customizing">自定义</a>
+        <a href="#customizing">自定义</a>
         <ul>
           <li><a href="#no-grid-classes">无网格类</a></li>
           <li><a href="#columns-and-gaps">列与间隙</a></li>
@@ -311,7 +310,7 @@
         </ul>
       </li>
       <li>
-       <a href="#sass">Sass</a>
+        <a href="#sass">Sass</a>
       </li>
     </ul>
   </nav>

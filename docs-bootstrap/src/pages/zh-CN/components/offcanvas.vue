@@ -15,9 +15,7 @@
     <Callout name="info-prefersreducedmotion" />
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <h3 id="offcanvas-components">抽屉组件<a class="anchor-link" href="#offcanvas-components" aria-label="抽屉组件链接"></a></h3>
-    <p>
-      下面是一个默认显示（通过在 <code>.offcanvas</code> 上添加 <code>.show</code>）的抽屉示例。抽屉支持包含关闭按钮的头部，以及一个可选的 body 类来设置一些初始 <code>padding</code>。我们建议尽可能为抽屉包含带有关闭操作的头部，或提供一个明确的关闭操作。
-    </p>
+    <p>下面是一个默认显示（通过在 <code>.offcanvas</code> 上添加 <code>.show</code>）的抽屉示例。抽屉支持包含关闭按钮的头部，以及一个可选的 body 类来设置一些初始 <code>padding</code>。我们建议尽可能为抽屉包含带有关闭操作的头部，或提供一个明确的关闭操作。</p>
     <Example
       class="bd-example-offcanvas p-0 bg-body-tertiary overflow-hidden"
       code='<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
@@ -31,10 +29,7 @@
 </div>'
     />
     <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
-    <p>
-      使用下面的按钮通过 JavaScript 显示和隐藏抽屉元素，该 JavaScript 会切换带有 <code>.offcanvas</code> 类的元素上的
-      <code>.show</code> 类。
-    </p>
+    <p>使用下面的按钮通过 JavaScript 显示和隐藏抽屉元素，该 JavaScript 会切换带有 <code>.offcanvas</code> 类的元素上的 <code>.show</code> 类。</p>
     <ul>
       <li><code>.offcanvas</code> 隐藏内容（默认）</li>
       <li><code>.offcanvas.show</code> 显示内容</li>
@@ -126,10 +121,7 @@
     <h2 id="dark-offcanvas">深色抽屉<a class="anchor-link" href="#dark-offcanvas" aria-label="深色抽屉链接"></a></h2>
     <DeprecatedIn version="5.3.0" class="me-2" />
     <AddedIn version="5.2.0" />
-    <p>
-      使用工具类更改抽屉的外观，使其更好地匹配深色导航栏等不同场景。这里我们为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，并为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以在深色抽屉中获得正确的样式。如果其中包含下拉菜单，请考虑同时为
-      <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>。
-    </p>
+    <p>使用工具类更改抽屉的外观，使其更好地匹配深色导航栏等不同场景。这里我们为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，并为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以在深色抽屉中获得正确的样式。如果其中包含下拉菜单，请考虑同时为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>。</p>
     <Callout type="warning">
       <p><strong>请注意！</strong>随着颜色模式的引入，组件的深色变体在 v5.3.0 中已弃用。与其手动添加上面提到的类，不如在根元素、父级包裹元素或组件自身上设置 <code>data-bs-theme=&quot;dark&quot;</code>。</p>
     </Callout>
@@ -147,9 +139,7 @@
     />
     <h2 id="responsive">响应式<a class="anchor-link" href="#responsive" aria-label="响应式链接"></a></h2>
     <AddedIn version="5.2.0" />
-    <p>
-      响应式抽屉类会在指定的断点及以下隐藏视口之外的内容。在该断点之上，其中的内容将照常显示。例如，<code>.offcanvas-lg</code> 在 <code>lg</code> 断点以下以抽屉形式隐藏内容，但在 <code>lg</code> 断点以上显示内容。每个断点都有对应的响应式抽屉类。
-    </p>
+    <p>响应式抽屉类会在指定的断点及以下隐藏视口之外的内容。在该断点之上，其中的内容将照常显示。例如，<code>.offcanvas-lg</code> 在 <code>lg</code> 断点以下以抽屉形式隐藏内容，但在 <code>lg</code> 断点以上显示内容。每个断点都有对应的响应式抽屉类。</p>
     <ul>
       <li><code>.offcanvas</code></li>
       <li><code>.offcanvas-sm</code></li>
@@ -223,10 +213,7 @@
 </div>'
     />
     <h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>
-    <p>
-      由于画布外面板在概念上是一个模态对话框，请务必为 <code>.offcanvas</code> 添加
-      <code>aria-labelledby=&quot;...&quot;</code>——引用抽屉的标题。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已经通过 JavaScript 添加了它。
-    </p>
+    <p>由于画布外面板在概念上是一个模态对话框，请务必为 <code>.offcanvas</code> 添加 <code>aria-labelledby=&quot;...&quot;</code>——引用抽屉的标题。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已经通过 JavaScript 添加了它。</p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
     <AddedIn version="5.2.0" />
@@ -250,15 +237,13 @@
     <p>使用 <code>data-bs-dismiss=&quot;offcanvas&quot;</code> 属性添加一个关闭按钮，它会触发 JavaScript 功能。请务必配合使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上的行为正确。</p>
     <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>
     <h4 id="toggle">切换</h4>
-    <p>
-      为元素添加 <code>data-bs-toggle=&quot;offcanvas&quot;</code> 以及 <code>data-bs-target</code> 或 <code>href</code>，即可自动为其分配对某个抽屉元素的控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定应用抽屉的目标。请务必为抽屉元素添加类 <code>offcanvas</code>。如果你希望它默认打开，请添加额外的类 <code>show</code>。
-    </p>
+    <p>为元素添加 <code>data-bs-toggle=&quot;offcanvas&quot;</code> 以及 <code>data-bs-target</code> 或 <code>href</code>，即可自动为其分配对某个抽屉元素的控制权。<code>data-bs-target</code> 属性接受一个 CSS 选择器，用于指定应用抽屉的目标。请务必为抽屉元素添加类 <code>offcanvas</code>。如果你希望它默认打开，请添加额外的类 <code>show</code>。</p>
     <h4 id="dismiss">关闭</h4>
     <JsDismiss name="offcanvas" />
     <Callout type="warning">
       <p>
         虽然两种关闭抽屉的方式都受支持，但请注意，从抽屉外部关闭并不符合
-       <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
@@ -408,7 +393,7 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#offcanvas-components">抽屉组件</a></li>
           <li><a href="#live-demo">实时演示</a></li>
@@ -422,14 +407,14 @@ myOffcanvas.addEventListener(&#39;hidden.bs.offcanvas&#39;, event =&gt; {
       <li><a href="#placement">位置</a></li>
       <li><a href="#accessibility">无障碍访问</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过 data 属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

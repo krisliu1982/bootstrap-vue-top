@@ -19,9 +19,7 @@
     <p>如果你不希望按钮文本换行，可以给按钮添加 <code>.text-nowrap</code> 类。在 Sass 中，你可以设置 <code>$btn-white-space: nowrap</code> 来为每个按钮禁用文本换行。</p>
     <h2 id="button-tags">按钮标签<a class="anchor-link" href="#button-tags" aria-label="按钮标签链接"></a></h2>
     <p><code>.btn</code> 类旨在与 <code>&lt;button&gt;</code> 元素配合使用。不过，你也可以在 <code>&lt;a&gt;</code> 或 <code>&lt;input&gt;</code> 元素上使用这些类（尽管某些浏览器可能会呈现略有不同的渲染效果）。</p>
-    <p>
-      当在 <code>&lt;a&gt;</code> 元素上使用按钮类，用于触发页面内功能（例如折叠内容）而非链接到新页面或当前页面内的某个部分时，应为这些链接添加 <code>role=&quot;button&quot;</code>，以便向屏幕阅读器等辅助技术正确传达其用途。
-    </p>
+    <p>当在 <code>&lt;a&gt;</code> 元素上使用按钮类，用于触发页面内功能（例如折叠内容）而非链接到新页面或当前页面内的某个部分时，应为这些链接添加 <code>role=&quot;button&quot;</code>，以便向屏幕阅读器等辅助技术正确传达其用途。</p>
     <Example
       code='<a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
@@ -74,9 +72,8 @@
     />
     <h3 id="link-functionality-caveat">链接功能注意事项<a class="anchor-link" href="#link-functionality-caveat" aria-label="链接功能注意事项链接"></a></h3>
     <p>
-      为应对必须在禁用链接上保留 <code>href</code> 属性的情况，<code>.disabled</code> 类使用 <code>pointer-events: none</code> 来尝试禁用 <code>&lt;a&gt;</code> 的链接功能。请注意，此 CSS 属性尚未针对 HTML 标准化，但所有现代浏览器都支持它。此外，
-      即使在支持 <code>pointer-events: none</code> 的浏览器中，键盘导航也不受影响，这意味着有视力的键盘用户和辅助技术用户仍然能够激活这些链接。因此，为了安全起见，除了 <code>aria-disabled=&quot;true&quot;</code> 之外，还应在这类链接上添加
-      <code>tabindex=&quot;-1&quot;</code> 属性，以防止它们获得键盘焦点，并使用自定义 JavaScript 完全禁用其功能。
+      为应对必须在禁用链接上保留 <code>href</code> 属性的情况，<code>.disabled</code> 类使用 <code>pointer-events: none</code> 来尝试禁用 <code>&lt;a&gt;</code> 的链接功能。请注意，此 CSS 属性尚未针对 HTML 标准化，但所有现代浏览器都支持它。此外， 即使在支持
+      <code>pointer-events: none</code> 的浏览器中，键盘导航也不受影响，这意味着有视力的键盘用户和辅助技术用户仍然能够激活这些链接。因此，为了安全起见，除了 <code>aria-disabled=&quot;true&quot;</code> 之外，还应在这类链接上添加 <code>tabindex=&quot;-1&quot;</code> 属性，以防止它们获得键盘焦点，并使用自定义 JavaScript 完全禁用其功能。
     </p>
     <Example
       code='<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
@@ -119,7 +116,8 @@
     <Callout>
       <p>
         从视觉上看，这些切换按钮与
-       <a href="/forms/checks-radios#checkbox-toggle-buttons">复选框切换按钮</a>完全相同。不过，辅助技术对它们的播报方式不同：复选框切换按钮会被屏幕阅读器播报为“已选中”/“未选中”（因为尽管外观如此，它们本质上仍然是复选框），而这些切换按钮则会被播报为“按钮”/“按钮已按下”。在两种方案之间做选择，将取决于你要创建的切换类型，以及该切换在被播报为复选框或实际按钮时对用户是否有意义。
+        <a href="/forms/checks-radios#checkbox-toggle-buttons">复选框切换按钮</a
+        >完全相同。不过，辅助技术对它们的播报方式不同：复选框切换按钮会被屏幕阅读器播报为“已选中”/“未选中”（因为尽管外观如此，它们本质上仍然是复选框），而这些切换按钮则会被播报为“按钮”/“按钮已按下”。在两种方案之间做选择，将取决于你要创建的切换类型，以及该切换在被播报为复选框或实际按钮时对用户是否有意义。
       </p>
     </Callout>
     <h3 id="toggle-states">切换状态<a class="anchor-link" href="#toggle-states" aria-label="切换状态链接"></a></h3>
@@ -228,21 +226,21 @@
       <li><a href="#outline-buttons">轮廓按钮</a></li>
       <li><a href="#sizes">尺寸</a></li>
       <li>
-       <a href="#disabled-state">禁用状态</a>
+        <a href="#disabled-state">禁用状态</a>
         <ul>
           <li><a href="#link-functionality-caveat">链接功能注意事项</a></li>
         </ul>
       </li>
       <li><a href="#block-buttons">块级按钮</a></li>
       <li>
-       <a href="#button-plugin">按钮插件</a>
+        <a href="#button-plugin">按钮插件</a>
         <ul>
           <li><a href="#toggle-states">切换状态</a></li>
           <li><a href="#methods">方法</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

@@ -11,11 +11,11 @@
       <div class="bd-example border rounded-top bd-example-placeholder-cards d-flex justify-content-around">
         <div class="card">
           <Placeholder width="100%" height="180" class="card-img-top" :text="false" background="#20c997" />
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
         <div class="card" aria-hidden="true">
           <Placeholder width="100%" height="180" class="card-img-top" :text="false" />
@@ -30,7 +30,7 @@
               <span class="placeholder col-6"></span>
               <span class="placeholder col-8"></span>
             </p>
-           <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
           </div>
         </div>
       </div>
@@ -76,9 +76,7 @@
 <a class="btn btn-primary disabled placeholder col-4" aria-disabled="true"></a>'
     />
     <Callout>
-      <p>
-        使用 <code>aria-hidden=&quot;true&quot;</code> 仅表示该元素应对屏幕阅读器隐藏。占位符的<em>加载</em>行为取决于作者实际如何使用占位符样式、计划如何更新内容等。可能需要一些 JavaScript 代码来<em>切换</em>占位符的状态，并将更新告知 AT 用户。
-      </p>
+      <p>使用 <code>aria-hidden=&quot;true&quot;</code> 仅表示该元素应对屏幕阅读器隐藏。占位符的<em>加载</em>行为取决于作者实际如何使用占位符样式、计划如何更新内容等。可能需要一些 JavaScript 代码来<em>切换</em>占位符的状态，并将更新告知 AT 用户。</p>
     </Callout>
     <h3 id="width">宽度<a class="anchor-link" href="#width" aria-label="宽度链接"></a></h3>
     <p>你可以通过网格列类、宽度工具类或内联样式更改 <code>width</code>。</p>
@@ -129,7 +127,7 @@
       <li><a href="#about">关于</a></li>
       <li><a href="#example">示例</a></li>
       <li>
-       <a href="#how-it-works">工作原理</a>
+        <a href="#how-it-works">工作原理</a>
         <ul>
           <li><a href="#width">宽度</a></li>
           <li><a href="#color">颜色</a></li>
@@ -138,7 +136,7 @@
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>

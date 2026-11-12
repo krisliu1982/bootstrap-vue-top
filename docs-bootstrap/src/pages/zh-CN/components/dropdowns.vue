@@ -6,28 +6,27 @@
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>
       下拉菜单是可切换的上下文浮层，用于显示链接列表等内容。它们通过与 Bootstrap 一同提供的下拉菜单 JavaScript 插件实现交互。它们通过点击而非悬停来切换；这是
-     <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a>。
+      <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a>。
     </p>
     <p>
-      下拉菜单构建于第三方库<a href="https://popper.js.org/docs/v2/">Popper</a>之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用
-      包含 Popper 的 <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
+      下拉菜单构建于第三方库<a href="https://popper.js.org/docs/v2/">Popper</a>之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用 包含 Popper 的 <code>bootstrap.bundle.min.js</code> /
+      <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
     </p>
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
-     <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a>
+      <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a>
       标准定义了一种真正的
-     <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组
-      和子菜单。
+      <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组 和子菜单。
     </p>
     <p>
-      另一方面，Bootstrap 的下拉菜单被设计为通用组件，适用于各种场景和标记结构。例如，可以创建包含额外输入框和表单控件的下拉菜单，如搜索框或登录表单。因此，Bootstrap 不期望（也不会自动添加）真正的 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单所需的任何
-      <code>role</code> 和 <code>aria-</code> 属性。作者需要自行添加这些更具体的属性。
+      另一方面，Bootstrap 的下拉菜单被设计为通用组件，适用于各种场景和标记结构。例如，可以创建包含额外输入框和表单控件的下拉菜单，如搜索框或登录表单。因此，Bootstrap 不期望（也不会自动添加）真正的 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单所需的任何 <code>role</code> 和
+      <code>aria-</code> 属性。作者需要自行添加这些更具体的属性。
     </p>
     <p>不过，Bootstrap 确实为大多数标准键盘菜单交互提供了内置支持，例如使用方向键在单个 <code>.dropdown-item</code> 元素间移动，以及按 <kbd>Esc</kbd> 键关闭菜单。</p>
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>
-      将下拉菜单的切换按钮（你的按钮或链接）和下拉菜单包裹在 <code>.dropdown</code> 或声明了 <code>position: relative;</code> 的其他元素中。理想情况下，应使用 <code>&lt;button&gt;</code> 元素作为下拉菜单触发器，不过该插件也能配合 <code>&lt;a&gt;</code> 元素使用。此处
-      展示的示例在适当位置使用了语义化的 <code>&lt;ul&gt;</code> 元素，但也支持自定义标记。
+      将下拉菜单的切换按钮（你的按钮或链接）和下拉菜单包裹在 <code>.dropdown</code> 或声明了 <code>position: relative;</code> 的其他元素中。理想情况下，应使用 <code>&lt;button&gt;</code> 元素作为下拉菜单触发器，不过该插件也能配合 <code>&lt;a&gt;</code> 元素使用。此处 展示的示例在适当位置使用了语义化的
+      <code>&lt;ul&gt;</code> 元素，但也支持自定义标记。
     </p>
     <h3 id="single-button">单按钮<a class="anchor-link" href="#single-button" aria-label="单按钮链接"></a></h3>
     <p>任何单个 <code>.btn</code> 只需稍作标记修改即可变为下拉菜单切换按钮。以下是如何将它们与 <code>&lt;button&gt;</code> 元素配合使用：</p>
@@ -777,7 +776,7 @@
     <h3 id="text">文本<a class="anchor-link" href="#text" aria-label="文本链接"></a></h3>
     <p>
       在下拉菜单中放置任意自由形式的文本，并使用
-     <a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。
+      <a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。
     </p>
     <Example
       code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
@@ -792,7 +791,7 @@
     <h3 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h3>
     <p>
       在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用
-     <a href="/utilities/spacing">外边距或内边距工具类</a>给它留出所需的空白区域。
+      <a href="/utilities/spacing">外边距或内边距工具类</a>给它留出所需的空白区域。
     </p>
     <Example
       code='<div class="dropdown-menu">
@@ -950,10 +949,7 @@
     <p>Mixins 用于生成基于 CSS 的箭头，可在 <code>scss/mixins/_caret.scss</code> 中找到。</p>
     <ScssDocs name="caret-mixins" file="scss/mixins/_caret.scss" />
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
-    <p>
-      通过数据属性或 JavaScript，下拉菜单插件通过切换父级 <code>.dropdown-menu</code> 上的
-      <code>.show</code> 类来切换隐藏内容（下拉菜单）。在应用层面上，关闭下拉菜单依赖于 <code>data-bs-toggle=&quot;dropdown&quot;</code> 属性，因此最好始终使用它。
-    </p>
+    <p>通过数据属性或 JavaScript，下拉菜单插件通过切换父级 <code>.dropdown-menu</code> 上的 <code>.show</code> 类来切换隐藏内容（下拉菜单）。在应用层面上，关闭下拉菜单依赖于 <code>data-bs-toggle=&quot;dropdown&quot;</code> 属性，因此最好始终使用它。</p>
     <Callout>
       <p>
         在支持触摸的设备上，打开下拉菜单会向 <code>&lt;body&gt;</code> 元素的直接子元素添加空的 <code>mouseover</code> 处理程序。这个公认不太优雅的技巧是为了绕过<a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">iOS 事件委托的一个怪癖</a>，否则在
@@ -1016,10 +1012,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>boundary</code></td>
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
-            <td>
-              下拉菜单的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>clippingParents</code>，可接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的
-             <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。
-            </td>
+            <td>下拉菜单的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>clippingParents</code>，可接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的 <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。</td>
           </tr>
           <tr>
             <td><code>display</code></td>
@@ -1033,8 +1026,10 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>[0, 2]</code></td>
             <td>
               下拉菜单相对于其目标的偏移量。你可以在数据属性中传递以逗号分隔值的字符串，例如：
-              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
-             <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset 文档</a>。
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组： <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a
+                href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1"
+                >distance</a
+              >。更多信息请参阅 Popper 的<a href="https://popper.js.org/docs/v2/modifiers/offset/#options">offset 文档</a>。
             </td>
           </tr>
           <tr>
@@ -1043,8 +1038,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>null</code></td>
             <td>
               要更改 Bootstrap 的默认 Popper 配置，请参阅
-             <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个
-              Popper 配置对象。
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个 Popper 配置对象。
             </td>
           </tr>
           <tr>
@@ -1052,8 +1046,8 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>string, element, object</td>
             <td><code>&#39;toggle&#39;</code></td>
             <td>
-              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的
-             <a href="https://popper.js.org/docs/v2/constructors/#createpopper">构造函数文档</a>和<a href="https://popper.js.org/docs/v2/virtual-elements/">虚拟元素文档</a>。
+              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的 <a href="https://popper.js.org/docs/v2/constructors/#createpopper">构造函数文档</a>和<a href="https://popper.js.org/docs/v2/virtual-elements/">虚拟元素文档</a
+              >。
             </td>
           </tr>
         </tbody>
@@ -1119,10 +1113,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
       </table>
     </div>
     <h3 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h3>
-    <p>
-      所有下拉菜单事件都在切换元素上触发，然后向上冒泡。因此，你也可以在 <code>.dropdown-menu</code> 的父元素上添加事件监听器。<code>hide.bs.dropdown</code> 和 <code>hidden.bs.dropdown</code> 事件有一个 <code>clickEvent</code> 属性（仅当原始 Event 类型为 <code>click</code> 时），
-      其中包含点击事件的 Event 对象。
-    </p>
+    <p>所有下拉菜单事件都在切换元素上触发，然后向上冒泡。因此，你也可以在 <code>.dropdown-menu</code> 的父元素上添加事件监听器。<code>hide.bs.dropdown</code> 和 <code>hidden.bs.dropdown</code> 事件有一个 <code>clickEvent</code> 属性（仅当原始 Event 类型为 <code>click</code> 时）， 其中包含点击事件的 Event 对象。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -1168,7 +1159,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       <li><a href="#overview">概述</a></li>
       <li><a href="#accessibility">无障碍</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#single-button">单按钮</a></li>
           <li><a href="#split-button">分割按钮</a></li>
@@ -1177,7 +1168,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
       <li><a href="#sizing">尺寸</a></li>
       <li><a href="#dark-dropdowns">深色下拉菜单</a></li>
       <li>
-       <a href="#directions">方向</a>
+        <a href="#directions">方向</a>
         <ul>
           <li><a href="#centered">居中</a></li>
           <li><a href="#dropup">上拉菜单</a></li>
@@ -1187,21 +1178,21 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#menu-items">菜单项</a>
+        <a href="#menu-items">菜单项</a>
         <ul>
           <li><a href="#active">激活状态</a></li>
           <li><a href="#disabled">禁用状态</a></li>
         </ul>
       </li>
       <li>
-       <a href="#menu-alignment">菜单对齐</a>
+        <a href="#menu-alignment">菜单对齐</a>
         <ul>
           <li><a href="#responsive-alignment">响应式对齐</a></li>
           <li><a href="#alignment-options">对齐选项</a></li>
         </ul>
       </li>
       <li>
-       <a href="#menu-content">菜单内容</a>
+        <a href="#menu-content">菜单内容</a>
         <ul>
           <li><a href="#headers">标题</a></li>
           <li><a href="#dividers">分隔线</a></li>
@@ -1210,13 +1201,13 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#dropdown-options">下拉菜单选项</a>
+        <a href="#dropdown-options">下拉菜单选项</a>
         <ul>
           <li><a href="#auto-close-behavior">自动关闭行为</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -1224,7 +1215,7 @@ myDropdown.addEventListener(&#39;show.bs.dropdown&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#via-data-attributes">通过数据属性</a></li>
           <li><a href="#via-javascript">通过 JavaScript</a></li>

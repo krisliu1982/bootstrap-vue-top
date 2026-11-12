@@ -72,7 +72,8 @@
       lang="css"
     />
     <p>
-      我们使用 <code>--bs-success</code> 的 RGB 版本（值为 <code>25, 135, 84</code>）CSS 变量，并附加第二个 CSS 变量 <code>--bs-border-opacity</code> 用于 alpha 透明度（得益于局部 CSS 变量，其默认值为 <code>1</code>）。这意味着你现在每次使用 <code>.border-success</code> 时，计算得到的 <code>color</code> 值都是 <code>rgba(25, 135, 84, 1)</code>。每个 <code>.border-*</code> 类内部的局部 CSS 变量可避免继承问题，因此嵌套的工具类实例不会自动带有被修改的 alpha 透明度。
+      我们使用 <code>--bs-success</code> 的 RGB 版本（值为 <code>25, 135, 84</code>）CSS 变量，并附加第二个 CSS 变量 <code>--bs-border-opacity</code> 用于 alpha 透明度（得益于局部 CSS 变量，其默认值为 <code>1</code>）。这意味着你现在每次使用 <code>.border-success</code> 时，计算得到的 <code>color</code> 值都是
+      <code>rgba(25, 135, 84, 1)</code>。每个 <code>.border-*</code> 类内部的局部 CSS 变量可避免继承问题，因此嵌套的工具类实例不会自动带有被修改的 alpha 透明度。
     </p>
     <h3 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h3>
     <p>要更改该不透明度，可通过自定义样式或内联样式覆盖 <code>--bs-border-opacity</code>。</p>
@@ -161,7 +162,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       边框工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-borders" file="scss/_utilities.scss" /><ScssDocs name="utils-border-radius" file="scss/_utilities.scss" /> <DocsPager />
   </article>
@@ -170,7 +171,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#border">边框</a>
+        <a href="#border">边框</a>
         <ul>
           <li><a href="#additive">添加</a></li>
           <li><a href="#subtractive">移除</a></li>
@@ -178,7 +179,7 @@
       </li>
       <li><a href="#color">颜色</a></li>
       <li>
-       <a href="#opacity">不透明度</a>
+        <a href="#opacity">不透明度</a>
         <ul>
           <li><a href="#how-it-works">工作原理</a></li>
           <li><a href="#example">示例</a></li>
@@ -186,13 +187,13 @@
       </li>
       <li><a href="#width">宽度</a></li>
       <li>
-       <a href="#radius">圆角</a>
+        <a href="#radius">圆角</a>
         <ul>
           <li><a href="#sizes">尺寸</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

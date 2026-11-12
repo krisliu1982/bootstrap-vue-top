@@ -67,7 +67,7 @@
     />
     <p>
       此示例使用了
-     <a href="/utilities/background">背景</a>（<code>bg-body-tertiary</code>）和<a href="/utilities/spacing">间距</a>（<code>me-auto</code>、<code>mb-2</code>、<code>mb-lg-0</code>、<code>me-2</code>）工具类。
+      <a href="/utilities/background">背景</a>（<code>bg-body-tertiary</code>）和<a href="/utilities/spacing">间距</a>（<code>me-auto</code>、<code>mb-2</code>、<code>mb-lg-0</code>、<code>me-2</code>）工具类。
     </p>
     <h3 id="brand">品牌<a class="anchor-link" href="#brand" aria-label="品牌链接"></a></h3>
     <p><code>.navbar-brand</code> 可应用于大多数元素，但锚点（anchor）效果最佳，因为有些元素可能需要工具类或自定义样式。</p>
@@ -100,10 +100,7 @@
 </nav>'
     />
     <h4 id="image-and-text">图片与文本</h4>
-    <p>
-      你还可以使用一些额外的工具类来同时添加图片和文本。注意在 <code>&lt;img&gt;</code> 上添加了
-      <code>.d-inline-block</code> 和 <code>.align-text-top</code>。
-    </p>
+    <p>你还可以使用一些额外的工具类来同时添加图片和文本。注意在 <code>&lt;img&gt;</code> 上添加了 <code>.d-inline-block</code> 和 <code>.align-text-top</code>。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
@@ -289,7 +286,7 @@
     <Callout type="warning">
       <p>
         <strong>v5.3.0 新增深色导航栏——</strong>我们已弃用 <code>.navbar-dark</code>，改用新的 <code>data-bs-theme=&quot;dark&quot;</code>。将 <code>data-bs-theme=&quot;dark&quot;</code> 添加到 <code>.navbar</code> 即可启用组件特定的颜色模式。
-       <a href="/customize/color-modes">了解有关颜色模式的更多信息。</a>
+        <a href="/customize/color-modes">了解有关颜色模式的更多信息。</a>
       </p>
       <hr />
       <p><strong>v5.2.0 新增——</strong>导航栏主题现在由 CSS 变量驱动，且 <code>.navbar-light</code> 已弃用。CSS 变量应用于 <code>.navbar</code>，默认为“浅色”外观，并可通过 <code>.navbar-dark</code> 覆盖。</p>
@@ -610,12 +607,11 @@
 </nav>'
     />
     <p>
-      这样做时，我们建议加入额外的 JavaScript，在容器打开时以编程方式将焦点移动到容器上。否则，键盘用户和辅助技术用户可能很难找到新显示的内容——特别是当打开的容器在文档结构中位于切换器<em>之前</em>时。我们还建议确保切换器具有 <code>aria-controls</code> 属性，指向内容容器的 <code>id</code>。理论上，这允许辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持还相当不完善。
+      这样做时，我们建议加入额外的 JavaScript，在容器打开时以编程方式将焦点移动到容器上。否则，键盘用户和辅助技术用户可能很难找到新显示的内容——特别是当打开的容器在文档结构中位于切换器<em>之前</em>时。我们还建议确保切换器具有 <code>aria-controls</code> 属性，指向内容容器的
+      <code>id</code>。理论上，这允许辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持还相当不完善。
     </p>
     <h3 id="offcanvas">抽屉<a class="anchor-link" href="#offcanvas" aria-label="抽屉链接"></a></h3>
-    <p>
-      使用<a href="/components/offcanvas">抽屉组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了抽屉的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。
-    </p>
+    <p>使用<a href="/components/offcanvas">抽屉组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了抽屉的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。</p>
     <p>
       在下面的示例中，要创建一个在所有断点下都始终折叠的画布外导航栏，请完全省略
       <code>.navbar-expand-*</code> 类。
@@ -677,8 +673,8 @@
       lang="html"
     />
     <p>
-      在深色导航栏中使用抽屉时，请注意你可能需要为抽屉内容设置深色背景，以避免文本变得难以辨认。在下面的示例中，我们为 <code>.navbar</code> 添加 <code>.navbar-dark</code> 和 <code>.bg-dark</code>，为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>，
-      为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>，为 <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以便在深色抽屉下获得正确的样式。
+      在深色导航栏中使用抽屉时，请注意你可能需要为抽屉内容设置深色背景，以避免文本变得难以辨认。在下面的示例中，我们为 <code>.navbar</code> 添加 <code>.navbar-dark</code> 和 <code>.bg-dark</code>，为 <code>.offcanvas</code> 添加 <code>.text-bg-dark</code>， 为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-dark</code>，为
+      <code>.btn-close</code> 添加 <code>.btn-close-white</code>，以便在深色抽屉下获得正确的样式。
     </p>
     <Example
       code='<nav class="navbar navbar-dark bg-dark fixed-top">
@@ -751,7 +747,7 @@
     <ul>
       <li><a href="#how-it-works">工作原理</a></li>
       <li>
-       <a href="#supported-content">支持的内容</a>
+        <a href="#supported-content">支持的内容</a>
         <ul>
           <li><a href="#brand">品牌</a></li>
           <li><a href="#nav">导航</a></li>
@@ -764,7 +760,7 @@
       <li><a href="#placement">定位</a></li>
       <li><a href="#scrolling">滚动</a></li>
       <li>
-       <a href="#responsive-behaviors">响应式行为</a>
+        <a href="#responsive-behaviors">响应式行为</a>
         <ul>
           <li><a href="#toggler">切换器</a></li>
           <li><a href="#external-content">外部内容</a></li>
@@ -772,7 +768,7 @@
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>

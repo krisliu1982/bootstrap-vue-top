@@ -193,7 +193,7 @@
       <li><a href="#next-steps">后续步骤</a></li>
       <li><a href="#js-components">JS 组件</a></li>
       <li>
-       <a href="#important-globals">重要的全局设置</a>
+        <a href="#important-globals">重要的全局设置</a>
         <ul>
           <li><a href="#html5-doctype">HTML5 文档类型</a></li>
           <li><a href="#viewport-meta">视口 meta 标签</a></li>

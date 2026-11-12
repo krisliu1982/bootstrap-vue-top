@@ -30,7 +30,7 @@
     </ul>
     <p>
       完整的 Bootstrap 许可证位于
-     <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/LICENSE">项目仓库中</a>，以获取更多信息。
+      <a href="https://github.com/twbs/bootstrap/blob/v5.3.8/LICENSE">项目仓库中</a>，以获取更多信息。
     </p>
     <DocsPager />
   </article>
@@ -42,7 +42,7 @@
       <li><a href="#it-permits-you-to">它允许你：</a></li>
       <li><a href="#it-forbids-you-to">它禁止你：</a></li>
       <li>
-       <a href="#it-does-not-require-you-to">它不要求你：</a>
+        <a href="#it-does-not-require-you-to">它不要求你：</a>
       </li>
     </ul>
   </nav>

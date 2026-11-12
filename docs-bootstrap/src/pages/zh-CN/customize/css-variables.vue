@@ -5,7 +5,7 @@
 
     <p>
       Bootstrap 在其编译后的 CSS 中包含许多
-     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 自定义属性（变量）</a>，无需重新编译 Sass 即可实时自定义。当你在浏览器检查器、代码沙箱或一般原型设计中使用时，它们可以方便地访问常用值，例如主题色、断点和主要字体栈。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 自定义属性（变量）</a>，无需重新编译 Sass 即可实时自定义。当你在浏览器检查器、代码沙箱或一般原型设计中使用时，它们可以方便地访问常用值，例如主题色、断点和主要字体栈。
     </p>
     <p>
       <strong>我们的所有自定义属性都以 <code>bs-</code> 为前缀</strong>，以避免与第三方 CSS 冲突。
@@ -201,8 +201,7 @@
     <p>Bootstrap 5 越来越多地将自定义属性用作各种组件的局部变量。通过这种方式，我们减少了编译后的 CSS，确保样式不会在嵌套表格等地方被继承，并允许在 Sass 编译后对 Bootstrap 组件进行一些基本的重新样式化和扩展。</p>
     <p>
       请查看我们的表格文档，了解我们如何使用 CSS 变量的
-     <a href="/content/tables#how-do-the-variants-and-accented-tables-work">一些见解</a>。自 v5.2.0 起，我们的<a href="/components/navbar#css">导航栏也使用 CSS 变量</a>。我们还在整个栅格系统中使用 CSS 变量——主要用于间距（gutters）以及<a href="/layout/css-grid">新的可选 CSS 栅格</a>——未来还会有更多
-      组件使用。
+      <a href="/content/tables#how-do-the-variants-and-accented-tables-work">一些见解</a>。自 v5.2.0 起，我们的<a href="/components/navbar#css">导航栏也使用 CSS 变量</a>。我们还在整个栅格系统中使用 CSS 变量——主要用于间距（gutters）以及<a href="/layout/css-grid">新的可选 CSS 栅格</a>——未来还会有更多 组件使用。
     </p>
     <p>我们会尽可能在基础组件层级分配 CSS 变量（例如为导航栏及其子组件分配 <code>.navbar</code>）。这减少了在何处以及如何自定义的猜测，并使我们团队在未来的更新中能够轻松修改。</p>
     <h2 id="prefix">前缀<a class="anchor-link" href="#prefix" aria-label="前缀"></a></h2>
@@ -223,37 +222,37 @@ a {
 "
       lang="css"
     />
-    <h2     id="focus-variables">聚焦变量<a class="anchor-link" href="#focus-variables" aria-label="聚焦变量"></a></h2>
+    <h2 id="focus-variables">聚焦变量<a class="anchor-link" href="#focus-variables" aria-label="聚焦变量"></a></h2>
     <AddedIn version="5.3.0" />
-        <p>Bootstrap 使用 Sass 和 CSS 变量的组合提供自定义的 <code>:focus</code> 样式，可以选择性地添加到特定的组件和元素上。我们尚未全局覆盖所有的 <code>:focus</code> 样式。</p>
-        <p>在我们的 Sass 中，我们设置了可在编译前自定义的默认值。</p>
+    <p>Bootstrap 使用 Sass 和 CSS 变量的组合提供自定义的 <code>:focus</code> 样式，可以选择性地添加到特定的组件和元素上。我们尚未全局覆盖所有的 <code>:focus</code> 样式。</p>
+    <p>在我们的 Sass 中，我们设置了可在编译前自定义的默认值。</p>
     <ScssDocs name="focus-ring-variables" file="scss/_variables.scss" />
-        <p>随后，这些变量会被重新赋值为 <code>:root</code> 级别的 CSS 变量，可以实时自定义，包括 <code>x</code> 和 <code>y</code> 偏移量的选项（默认使用其回退值 <code>0</code>）。</p>
+    <p>随后，这些变量会被重新赋值为 <code>:root</code> 级别的 CSS 变量，可以实时自定义，包括 <code>x</code> 和 <code>y</code> 偏移量的选项（默认使用其回退值 <code>0</code>）。</p>
     <ScssDocs name="root-focus-variables" file="scss/_root.scss" />
-        <h2 id="grid-breakpoints">栅格断点<a class="anchor-link" href="#grid-breakpoints" aria-label="栅格断点"></a></h2>
+    <h2 id="grid-breakpoints">栅格断点<a class="anchor-link" href="#grid-breakpoints" aria-label="栅格断点"></a></h2>
     <p>
-          虽然我们将栅格断点作为 CSS 变量包含在内（<code>xs</code> 除外），但请注意<strong>CSS 变量在媒体查询中不起作用</strong>。这是 CSS 规范对变量的设计使然，但未来几年可能会随着对 <code>env()</code> 变量的支持而改变。请查看
-         <a href="https://stackoverflow.com/a/47212942">这个 Stack Overflow 回答</a>获取一些有用的链接。在此期间，你可以在其他 CSS 场景以及 JavaScript 中使用这些变量。
+      虽然我们将栅格断点作为 CSS 变量包含在内（<code>xs</code> 除外），但请注意<strong>CSS 变量在媒体查询中不起作用</strong>。这是 CSS 规范对变量的设计使然，但未来几年可能会随着对 <code>env()</code> 变量的支持而改变。请查看 <a href="https://stackoverflow.com/a/47212942">这个 Stack Overflow 回答</a>获取一些有用的链接。在此期间，你可以在其他 CSS
+      场景以及 JavaScript 中使用这些变量。
     </p>
     <DocsPager />
   </article>
 
-      <nav class="bd-toc" aria-label="本页目录">
-        <h6>本页目录</h6>
+  <nav class="bd-toc" aria-label="本页目录">
+    <h6>本页目录</h6>
     <ul>
       <li>
-           <a href="#root-variables">根变量</a>
+        <a href="#root-variables">根变量</a>
         <ul>
-              <li><a href="#default">默认值</a></li>
-              <li><a href="#dark-mode">深色模式</a></li>
+          <li><a href="#default">默认值</a></li>
+          <li><a href="#dark-mode">深色模式</a></li>
         </ul>
       </li>
-          <li><a href="#component-variables">组件变量</a></li>
-          <li><a href="#prefix">前缀</a></li>
-          <li><a href="#examples">示例</a></li>
-          <li><a href="#focus-variables">聚焦变量</a></li>
+      <li><a href="#component-variables">组件变量</a></li>
+      <li><a href="#prefix">前缀</a></li>
+      <li><a href="#examples">示例</a></li>
+      <li><a href="#focus-variables">聚焦变量</a></li>
       <li>
-           <a href="#grid-breakpoints">栅格断点</a>
+        <a href="#grid-breakpoints">栅格断点</a>
       </li>
     </ul>
   </nav>

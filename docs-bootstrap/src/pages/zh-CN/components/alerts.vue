@@ -252,7 +252,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#live-example">实时示例</a></li>
           <li><a href="#link-color">链接颜色</a></li>
@@ -262,7 +262,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
@@ -271,7 +271,7 @@ myAlert.addEventListener(&#39;closed.bs.alert&#39;, event =&gt; {
         </ul>
       </li>
       <li>
-       <a href="#javascript-behavior">JavaScript 行为</a>
+        <a href="#javascript-behavior">JavaScript 行为</a>
         <ul>
           <li><a href="#initialize">初始化</a></li>
           <li><a href="#triggers">触发器</a></li>

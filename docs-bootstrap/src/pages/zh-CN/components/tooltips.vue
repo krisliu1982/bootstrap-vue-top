@@ -12,10 +12,7 @@
       <li>指定 <code>container: &#39;body&#39;</code> 以避免在更复杂的组件（例如我们的输入组、按钮组等）中出现渲染问题。</li>
       <li>在隐藏的元素上触发工具提示不会生效。</li>
       <li>为 <code>.disabled</code> 或 <code>disabled</code> 元素设置的工具提示必须在包裹元素上触发。</li>
-      <li>
-        当从跨越多行的超链接触发时，工具提示将居中显示。可以在 <code>&lt;a&gt;</code> 上使用
-        <code>white-space: nowrap;</code> 来避免此行为。
-      </li>
+      <li>当从跨越多行的超链接触发时，工具提示将居中显示。可以在 <code>&lt;a&gt;</code> 上使用 <code>white-space: nowrap;</code> 来避免此行为。</li>
       <li>工具提示必须在对应元素从 DOM 中移除之前隐藏。</li>
       <li>工具提示可以通过 shadow DOM 内部的元素触发。</li>
     </ul>
@@ -103,8 +100,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     />
     <Callout type="warning">
       <p>
-        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将<a href="https://popper.js.org/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a>（用于通过
-        <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意 HTMLElement，以覆盖默认值 <code>&#39;clippingParents&#39;</code>，例如 <code>document.body</code>：
+        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将<a href="https://popper.js.org/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a>（用于通过 <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意 HTMLElement，以覆盖默认值
+        <code>&#39;clippingParents&#39;</code>，例如 <code>document.body</code>：
       </p>
       <CodeWrapper
         code="const tooltip = new bootstrap.Tooltip(&#39;#example&#39;, {
@@ -118,8 +115,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     <p>工具提示所需的标记仅仅是你希望具有工具提示的 HTML 元素上的一个 <code>data</code> 属性和 <code>title</code>。工具提示生成的标记相当简单，不过它确实需要一个位置（默认情况下由插件设置为 <code>top</code>）。</p>
     <Callout type="warning">
       <p>
-        <strong>确保键盘和辅助技术用户能够访问工具提示</strong>，只将它们添加到传统上可被键盘聚焦且具有交互性的 HTML 元素（例如链接或表单控件）上。虽然其他 HTML 元素可以通过添加 <code>tabindex=&quot;0&quot;</code> 变为可聚焦，但这会给键盘用户在不具交互性的元素上制造烦人且
-        令人困惑的 Tab 停靠点，而且大多数辅助技术目前在此情况下不会播报工具提示。此外，不要仅依赖 <code>hover</code> 作为工具提示的触发器，因为这会导致键盘用户无法触发它们。
+        <strong>确保键盘和辅助技术用户能够访问工具提示</strong>，只将它们添加到传统上可被键盘聚焦且具有交互性的 HTML 元素（例如链接或表单控件）上。虽然其他 HTML 元素可以通过添加 <code>tabindex=&quot;0&quot;</code> 变为可聚焦，但这会给键盘用户在不具交互性的元素上制造烦人且 令人困惑的 Tab
+        停靠点，而且大多数辅助技术目前在此情况下不会播报工具提示。此外，不要仅依赖 <code>hover</code> 作为工具提示的触发器，因为这会导致键盘用户无法触发它们。
       </p>
     </Callout>
     <CodeWrapper
@@ -136,10 +133,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
       lang="html"
     />
     <h3 id="disabled-elements">禁用元素<a class="anchor-link" href="#disabled-elements" aria-label="禁用元素链接"></a></h3>
-    <p>
-      带有 <code>disabled</code> 属性的元素不可交互，这意味着用户无法通过聚焦、悬停或点击它们来触发工具提示（或弹出框）。作为变通方法，你可以从包裹的 <code>&lt;div&gt;</code> 或 <code>&lt;span&gt;</code> 触发工具提示，最好使用
-      <code>tabindex=&quot;0&quot;</code> 使其可被键盘聚焦。
-    </p>
+    <p>带有 <code>disabled</code> 属性的元素不可交互，这意味着用户无法通过聚焦、悬停或点击它们来触发工具提示（或弹出框）。作为变通方法，你可以从包裹的 <code>&lt;div&gt;</code> 或 <code>&lt;span&gt;</code> 触发工具提示，最好使用 <code>tabindex=&quot;0&quot;</code> 使其可被键盘聚焦。</p>
     <Example
       class="tooltip-demo"
       code='<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Disabled tooltip">
@@ -168,11 +162,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><a href="/getting-started/javascript#sanitizer">默认值</a></td>
             <td>
               一个包含允许的标签和属性的对象。未明确允许的标签和属性将被
-             <a href="/getting-started/javascript#sanitizer">内容清理器</a>移除。
-              <Callout type="warning"
-                ><strong>向此列表添加内容时要格外谨慎。</strong>更多信息请参阅
-               <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。
-              </Callout>
+              <a href="/getting-started/javascript#sanitizer">内容清理器</a>移除。
+              <Callout type="warning"><strong>向此列表添加内容时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。 </Callout>
             </td>
           </tr>
           <tr>
@@ -185,19 +176,13 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>boundary</code></td>
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
-            <td>
-              工具提示的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>&#39;clippingParents&#39;</code>，可以接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的
-             <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。
-            </td>
+            <td>工具提示的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>&#39;clippingParents&#39;</code>，可以接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的 <a href="https://popper.js.org/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。</td>
           </tr>
           <tr>
             <td><code>container</code></td>
             <td>string, element, false</td>
             <td><code>false</code></td>
-            <td>
-              将工具提示追加到特定元素。示例：<code>container: &#39;body&#39;</code>。此选项的特别之处在于，它允许你将工具提示放置在文档流中靠近触发元素的位置——这可以防止工具提示在窗口
-              调整大小时从触发元素处漂移。
-            </td>
+            <td>将工具提示追加到特定元素。示例：<code>container: &#39;body&#39;</code>。此选项的特别之处在于，它允许你将工具提示放置在文档流中靠近触发元素的位置——这可以防止工具提示在窗口 调整大小时从触发元素处漂移。</td>
           </tr>
           <tr>
             <td><code>customClass</code></td>
@@ -223,7 +208,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code></td>
             <td>
               通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的
-             <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。
+              <a href="https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。
             </td>
           </tr>
           <tr>
@@ -231,8 +216,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>boolean</td>
             <td><code>false</code></td>
             <td>
-              允许在工具提示中使用 HTML。如果为 true，工具提示 <code>title</code> 中的 HTML 标签将在工具提示中渲染。如果为 false，将使用 <code>innerText</code> 属性将内容插入 DOM。处理用户生成的输入时，倾向于使用文本，以
-             <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">防止 XSS 攻击</a>。
+              允许在工具提示中使用 HTML。如果为 true，工具提示 <code>title</code> 中的 HTML 标签将在工具提示中渲染。如果为 false，将使用 <code>innerText</code> 属性将内容插入 DOM。处理用户生成的输入时，倾向于使用文本，以 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">防止 XSS 攻击</a>。
             </td>
           </tr>
           <tr>
@@ -241,18 +225,17 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>[0, 6]</code></td>
             <td>
               工具提示相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：
-              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
-             <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a href="https://popper.js.org/docs/v2/modifiers/offset/#options">偏移量文档</a>。
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组： <a href="https://popper.js.org/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a
+                href="https://popper.js.org/docs/v2/modifiers/offset/#distance-1"
+                >distance</a
+              >。更多信息请参阅 Popper 的<a href="https://popper.js.org/docs/v2/modifiers/offset/#options">偏移量文档</a>。
             </td>
           </tr>
           <tr>
             <td><code>placement</code></td>
             <td>string, function</td>
             <td><code>&#39;top&#39;</code></td>
-            <td>
-              如何定位工具提示：auto、top、bottom、left、right。当指定 <code>auto</code> 时，将动态重新调整工具提示的方向。当使用函数来确定位置时，调用该函数时会将工具提示 DOM 节点作为第一个参数，将触发元素 DOM 节点作为第二个参数。<code>this</code> 上下文
-              将被设置为工具提示实例。
-            </td>
+            <td>如何定位工具提示：auto、top、bottom、left、right。当指定 <code>auto</code> 时，将动态重新调整工具提示的方向。当使用函数来确定位置时，调用该函数时会将工具提示 DOM 节点作为第一个参数，将触发元素 DOM 节点作为第二个参数。<code>this</code> 上下文 将被设置为工具提示实例。</td>
           </tr>
           <tr>
             <td><code>popperConfig</code></td>
@@ -260,8 +243,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               要更改 Bootstrap 的默认 Popper 配置，请参阅
-             <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个
-              用于 Popper 的配置对象。
+              <a href="https://popper.js.org/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper 的配置对象。
             </td>
           </tr>
           <tr>
@@ -270,10 +252,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>true</code></td>
             <td>
               启用<a href="/getting-started/javascript#sanitizer">内容清理</a>。如果为 true，则会对 <code>template</code>、<code>content</code> 和 <code>title</code> 选项进行清理。
-              <Callout type="warning"
-                ><strong>禁用内容清理时要格外谨慎。</strong>更多信息请参阅
-               <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。仅因禁用内容清理而导致的漏洞不属于 Bootstrap 安全模型的范围。
-              </Callout>
+              <Callout type="warning"><strong>禁用内容清理时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。仅因禁用内容清理而导致的漏洞不属于 Bootstrap 安全模型的范围。 </Callout>
             </td>
           </tr>
           <tr>
@@ -282,7 +261,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               提供一个替代的
-             <a href="/getting-started/javascript#sanitizer">内容清理</a>函数。如果你倾向于使用专门的库来执行清理，这会很有用。
+              <a href="/getting-started/javascript#sanitizer">内容清理</a>函数。如果你倾向于使用专门的库来执行清理，这会很有用。
             </td>
           </tr>
           <tr>
@@ -290,8 +269,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, false</td>
             <td><code>false</code></td>
             <td>
-              如果提供了选择器，工具提示对象将被委托到指定的目标上。在实践中，这被用于将工具提示同时应用于动态添加的 DOM 元素（<code>jQuery.on</code> 支持）。请参阅<a href="https://github.com/twbs/bootstrap/issues/4215">此 issue</a>和
-             <a href="https://codepen.io/Johann-S/pen/djJYPb">一个说明性的示例</a>。<strong>注意</strong>：<code>title</code> 属性不能用作选择器。
+              如果提供了选择器，工具提示对象将被委托到指定的目标上。在实践中，这被用于将工具提示同时应用于动态添加的 DOM 元素（<code>jQuery.on</code> 支持）。请参阅<a href="https://github.com/twbs/bootstrap/issues/4215">此 issue</a>和 <a href="https://codepen.io/Johann-S/pen/djJYPb">一个说明性的示例</a>。<strong>注意</strong>：<code>title</code>
+              属性不能用作选择器。
             </td>
           </tr>
           <tr>
@@ -313,8 +292,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string</td>
             <td><code>&#39;hover focus&#39;</code></td>
             <td>
-              工具提示的触发方式：click、hover、focus、manual。你可以传入多个触发器；用空格分隔。<code>&#39;manual&#39;</code> 表示工具提示将通过 <code>.tooltip(&#39;show&#39;)</code>、<code>.tooltip(&#39;hide&#39;)</code> 和
-              <code>.tooltip(&#39;toggle&#39;)</code> 方法以编程方式触发；此值不能与任何其他触发器组合使用。单独使用 <code>&#39;hover&#39;</code> 会导致工具提示无法通过键盘触发，只有在存在其他方式为键盘用户传达相同信息时才应使用。
+              工具提示的触发方式：click、hover、focus、manual。你可以传入多个触发器；用空格分隔。<code>&#39;manual&#39;</code> 表示工具提示将通过 <code>.tooltip(&#39;show&#39;)</code>、<code>.tooltip(&#39;hide&#39;)</code> 和 <code>.tooltip(&#39;toggle&#39;)</code> 方法以编程方式触发；此值不能与任何其他触发器组合使用。单独使用
+              <code>&#39;hover&#39;</code> 会导致工具提示无法通过键盘触发，只有在存在其他方式为键盘用户传达相同信息时才应使用。
             </td>
           </tr>
         </tbody>
@@ -355,7 +334,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>dispose</code></td>
             <td>
               隐藏并销毁元素的工具提示（移除 DOM 元素上存储的数据）。使用委托的工具提示（通过
-             <a href="#options"><code>selector</code> 选项</a>创建）无法在派生的触发器元素上单独销毁。
+              <a href="#options"><code>selector</code> 选项</a>创建）无法在派生的触发器元素上单独销毁。
             </td>
           </tr>
           <tr>
@@ -473,7 +452,7 @@ tooltip.hide()
     <ul>
       <li><a href="#overview">概览</a></li>
       <li>
-       <a href="#examples">示例</a>
+        <a href="#examples">示例</a>
         <ul>
           <li><a href="#enable-tooltips">启用工具提示</a></li>
           <li><a href="#tooltips-on-links">链接上的工具提示</a></li>
@@ -482,14 +461,14 @@ tooltip.hide()
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#variables">变量</a></li>
           <li><a href="#sass-variables">Sass 变量</a></li>
         </ul>
       </li>
       <li>
-       <a href="#usage">用法</a>
+        <a href="#usage">用法</a>
         <ul>
           <li><a href="#markup">标记</a></li>
           <li><a href="#disabled-elements">禁用元素</a></li>
@@ -501,7 +480,6 @@ tooltip.hide()
     </ul>
   </nav>
 </template>
-
 
 <script setup>
 import { usePage } from '@/components/use-page.js';

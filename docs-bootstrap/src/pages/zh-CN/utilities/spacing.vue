@@ -28,30 +28,12 @@
     </ul>
     <p>其中 <em>size</em> 为以下之一：</p>
     <ul>
-      <li>
-        <code>0</code> - 表示通过将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>0</code> 来消除它的类
-      </li>
-      <li>
-        <code>1</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>$spacer * .25</code> 的类
-      </li>
-      <li>
-        <code>2</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>$spacer * .5</code> 的类
-      </li>
-      <li>
-        <code>3</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>$spacer</code> 的类
-      </li>
-      <li>
-        <code>4</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>$spacer * 1.5</code> 的类
-      </li>
-      <li>
-        <code>5</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为
-        <code>$spacer * 3</code> 的类
-      </li>
+      <li><code>0</code> - 表示通过将 <code>margin</code> 或 <code>padding</code> 设置为 <code>0</code> 来消除它的类</li>
+      <li><code>1</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为 <code>$spacer * .25</code> 的类</li>
+      <li><code>2</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为 <code>$spacer * .5</code> 的类</li>
+      <li><code>3</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为 <code>$spacer</code> 的类</li>
+      <li><code>4</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为 <code>$spacer * 1.5</code> 的类</li>
+      <li><code>5</code> -（默认）表示将 <code>margin</code> 或 <code>padding</code> 设置为 <code>$spacer * 3</code> 的类</li>
       <li><code>auto</code> - 表示将 <code>margin</code> 设置为 auto 的类</li>
     </ul>
     <p>（你可以通过向 <code>$spacers</code> Sass 映射变量添加条目来添加更多尺寸。）</p>
@@ -105,10 +87,7 @@
       lang="scss"
     />
     <h2 id="gap">间隔<a class="anchor-link" href="#gap" aria-label="间隔链接"></a></h2>
-    <p>
-      使用 <code>display: grid</code> 或 <code>display: flex</code> 时，你可以在父元素上使用 <code>gap</code> 工具类。这样可以省去为网格或弹性容器的各个子元素添加外边距工具类的麻烦。间隔工具类默认是响应式的，并基于
-      <code>$spacers</code> Sass 映射通过我们的工具类 API 生成。
-    </p>
+    <p>使用 <code>display: grid</code> 或 <code>display: flex</code> 时，你可以在父元素上使用 <code>gap</code> 工具类。这样可以省去为网格或弹性容器的各个子元素添加外边距工具类的麻烦。间隔工具类默认是响应式的，并基于 <code>$spacers</code> Sass 映射通过我们的工具类 API 生成。</p>
     <Example
       class="bd-example-cssgrid"
       code='<div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-3">
@@ -118,10 +97,7 @@
   <div class="p-2">Grid item 4</div>
 </div>'
     />
-    <p>
-      支持包含 Bootstrap 所有网格断点的响应式选项，以及 <code>$spacers</code> 映射中从
-      <code>0</code>–<code>5</code> 的六种尺寸。没有 <code>.gap-auto</code> 工具类，因为它的效果与 <code>.gap-0</code> 相同。
-    </p>
+    <p>支持包含 Bootstrap 所有网格断点的响应式选项，以及 <code>$spacers</code> 映射中从 <code>0</code>–<code>5</code> 的六种尺寸。没有 <code>.gap-auto</code> 工具类，因为它的效果与 <code>.gap-0</code> 相同。</p>
     <h3 id="row-gap">row-gap<a class="anchor-link" href="#row-gap" aria-label="row-gap链接"></a></h3>
     <p><code>row-gap</code> 设置指定容器中子项目之间的垂直间距。</p>
     <Example
@@ -151,7 +127,7 @@
     <h3 id="sass-utilities-api">Sass 工具类 API<a class="anchor-link" href="#sass-utilities-api" aria-label="Sass 工具类 API链接"></a></h3>
     <p>
       间距工具类在我们 <code>scss/_utilities.scss</code> 中的工具类 API 里声明。
-     <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
+      <a href="/utilities/api#using-the-api">了解如何使用工具类 API。</a>
     </p>
     <ScssDocs name="utils-spacing" file="scss/_utilities.scss" />
     <DocsPager />
@@ -161,7 +137,7 @@
     <h6>本页目录</h6>
     <ul>
       <li>
-       <a href="#margin-and-padding">外边距与内边距</a>
+        <a href="#margin-and-padding">外边距与内边距</a>
         <ul>
           <li><a href="#notation">命名规则</a></li>
           <li><a href="#examples">示例</a></li>
@@ -170,14 +146,14 @@
       </li>
       <li><a href="#negative-margin">负外边距</a></li>
       <li>
-       <a href="#gap">间隔</a>
+        <a href="#gap">间隔</a>
         <ul>
           <li><a href="#row-gap">row-gap</a></li>
           <li><a href="#column-gap">column-gap</a></li>
         </ul>
       </li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-maps">Sass 映射</a></li>
           <li><a href="#sass-utilities-api">Sass 工具类 API</a></li>

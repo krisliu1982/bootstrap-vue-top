@@ -6,7 +6,7 @@
     <h2 id="global-settings">全局设置<a class="anchor-link" href="#global-settings" aria-label="全局设置链接"></a></h2>
     <p>
       Bootstrap 设置了基本的全局显示、排版和链接样式。当需要更多控制时，请查看
-     <a href="/utilities/text">文本工具类</a>。
+      <a href="/utilities/text">文本工具类</a>。
     </p>
     <ul>
       <li>使用<a href="/content/reboot#native-font-stack">原生字体栈</a>，为每个操作系统和设备选择最佳的 <code>font-family</code>。</li>
@@ -16,9 +16,7 @@
       </li>
       <li>使用 <code>$font-family-base</code>、<code>$font-size-base</code> 和 <code>$line-height-base</code> 属性作为应用于 <code>&lt;body&gt;</code> 的排版基础。</li>
       <li>通过 <code>$link-color</code> 设置全局链接颜色。</li>
-      <li>
-        使用 <code>$body-bg</code> 为 <code>&lt;body&gt;</code> 设置 <code>background-color</code>（默认为 <code>#fff</code>）。
-      </li>
+      <li>使用 <code>$body-bg</code> 为 <code>&lt;body&gt;</code> 设置 <code>background-color</code>（默认为 <code>#fff</code>）。</li>
     </ul>
     <p>这些样式可以在 <code>_reboot.scss</code> 中找到，全局变量定义在 <code>_variables.scss</code> 中。请确保以 <code>rem</code> 为单位设置 <code>$font-size-base</code>。</p>
     <h2 id="headings">标题<a class="anchor-link" href="#headings" aria-label="标题链接"></a></h2>
@@ -146,9 +144,7 @@
     </ul>
     <p>虽然上面没有展示，但请随意在 HTML5 中使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code>。<code>&lt;b&gt;</code> 用于突出显示单词或短语而不传达额外的重要性，而 <code>&lt;i&gt;</code> 主要用于语音、技术术语等。</p>
     <h2 id="text-utilities">文本工具类<a class="anchor-link" href="#text-utilities" aria-label="文本工具类链接"></a></h2>
-    <p>
-      使用我们的<a href="/utilities/text">文本工具类</a>和<a href="/utilities/colors">颜色工具类</a>来更改文本对齐、变换、样式、粗细、行高、装饰和颜色。
-    </p>
+    <p>使用我们的<a href="/utilities/text">文本工具类</a>和<a href="/utilities/colors">颜色工具类</a>来更改文本对齐、变换、样式、粗细、行高、装饰和颜色。</p>
     <h2 id="abbreviations">缩写<a class="anchor-link" href="#abbreviations" aria-label="缩写链接"></a></h2>
     <p>HTML 的 <code>&lt;abbr&gt;</code> 元素用于缩写和首字母缩略词的风格化实现，可在悬停时显示展开版本。缩写默认带有下划线，并获得帮助光标，以便在悬停时为辅助技术的用户提供额外的上下文。</p>
     <p>为缩写添加 <code>.initialism</code>，以获得稍小的字号。</p>
@@ -168,8 +164,7 @@
     />
     <h3 id="naming-a-source">标注来源<a class="anchor-link" href="#naming-a-source" aria-label="标注来源链接"></a></h3>
     <p>
-      HTML 规范要求将块引用的出处放在 <code>&lt;blockquote&gt;</code> 之外。在提供出处时，请将 <code>&lt;blockquote&gt;</code> 包裹在 <code>&lt;figure&gt;</code> 中，并使用带有
-      <code>.blockquote-footer</code> 类的 <code>&lt;figcaption&gt;</code> 或块级元素（例如 <code>&lt;p&gt;</code>）。还请务必用 <code>&lt;cite&gt;</code> 包裹来源作品的名称。
+      HTML 规范要求将块引用的出处放在 <code>&lt;blockquote&gt;</code> 之外。在提供出处时，请将 <code>&lt;blockquote&gt;</code> 包裹在 <code>&lt;figure&gt;</code> 中，并使用带有 <code>.blockquote-footer</code> 类的 <code>&lt;figcaption&gt;</code> 或块级元素（例如 <code>&lt;p&gt;</code>）。还请务必用 <code>&lt;cite&gt;</code> 包裹来源作品的名称。
     </p>
     <Example
       code='<figure>
@@ -264,7 +259,7 @@
     <h2 id="responsive-font-sizes">响应式字号<a class="anchor-link" href="#responsive-font-sizes" aria-label="响应式字号链接"></a></h2>
     <p>
       在 Bootstrap 5 中，我们默认启用了响应式字号，使文本可以在不同的设备和视口尺寸下更自然地缩放。请查看
-     <a href="/getting-started/rfs">RFS 页面</a>了解其工作原理。
+      <a href="/getting-started/rfs">RFS 页面</a>了解其工作原理。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
@@ -275,7 +270,7 @@
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
     <p>
       排版没有专用的 mixin，但 Bootstrap 确实使用了
-     <a href="/getting-started/rfs">响应式字号（RFS）</a>。
+      <a href="/getting-started/rfs">响应式字号（RFS）</a>。
     </p>
     <DocsPager />
   </article>
@@ -285,7 +280,7 @@
     <ul>
       <li><a href="#global-settings">全局设置</a></li>
       <li>
-       <a href="#headings">标题</a>
+        <a href="#headings">标题</a>
         <ul>
           <li><a href="#customizing-headings">自定义标题</a></li>
         </ul>
@@ -296,14 +291,14 @@
       <li><a href="#text-utilities">文本工具类</a></li>
       <li><a href="#abbreviations">缩写</a></li>
       <li>
-       <a href="#blockquotes">块引用</a>
+        <a href="#blockquotes">块引用</a>
         <ul>
           <li><a href="#naming-a-source">标注来源</a></li>
           <li><a href="#alignment">对齐</a></li>
         </ul>
       </li>
       <li>
-       <a href="#lists">列表</a>
+        <a href="#lists">列表</a>
         <ul>
           <li><a href="#unstyled">无样式</a></li>
           <li><a href="#inline">内联</a></li>
@@ -312,7 +307,7 @@
       </li>
       <li><a href="#responsive-font-sizes">响应式字号</a></li>
       <li>
-       <a href="#css">CSS</a>
+        <a href="#css">CSS</a>
         <ul>
           <li><a href="#sass-variables">Sass 变量</a></li>
           <li><a href="#sass-mixins">Sass mixin</a></li>
