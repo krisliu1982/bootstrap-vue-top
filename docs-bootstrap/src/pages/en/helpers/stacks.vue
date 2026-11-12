@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Stacks</h1>
     <p class="lead">Shorthand helpers that build on top of our flexbox utilities to make component layout faster and easier than ever.</p>
 

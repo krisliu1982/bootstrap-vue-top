@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>图标链接</h1>
     <p class="lead">使用 Bootstrap Icons 或其他图标快速创建风格化的超链接。</p>
 

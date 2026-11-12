@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>不透明度</h1>
     <p class="lead">控制元素的不透明度。</p>
 

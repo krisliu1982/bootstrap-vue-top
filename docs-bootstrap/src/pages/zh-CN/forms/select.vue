@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>选择框</h1>
     <p class="lead">使用自定义 CSS 定制原生 `&lt;select&gt;`，改变元素的初始外观。</p>
 

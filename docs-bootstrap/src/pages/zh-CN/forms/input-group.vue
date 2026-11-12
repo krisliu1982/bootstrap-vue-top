@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>输入框组</h1>
     <p class="lead">通过在文本输入框、自定义选择框和自定义文件输入框的任意一侧添加文本、按钮或按钮组，轻松扩展表单控件。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Translations</h1>
     <p class="lead">Links to community-translated Bootstrap documentation sites.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>显示属性</h1>
     <p class="lead">使用我们的显示工具类，可以快速、响应式地切换组件及其他元素的显示值。支持一些较常见的取值，以及一些用于控制打印时显示的额外取值。</p>
 

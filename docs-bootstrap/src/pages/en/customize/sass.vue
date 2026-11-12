@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Sass</h1>
     <p class="lead">Utilize our source Sass files to take advantage of variables, maps, mixins, and functions to help you build faster and customize your project.</p>
 

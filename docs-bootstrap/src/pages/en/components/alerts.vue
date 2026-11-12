@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Alerts</h1>
     <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
 

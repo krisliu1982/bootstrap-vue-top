@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>卡片</h1>
     <p class="lead">Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，并带有多种变体和选项。</p>
 

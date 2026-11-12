@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>对象适配</h1>
     <p class="lead">使用对象适配工具类来修改替换元素（如 <code>&lt;img&gt;</code> 或 <code>&lt;video&gt;</code>）的内容应如何调整尺寸以适应其容器。</p>
 

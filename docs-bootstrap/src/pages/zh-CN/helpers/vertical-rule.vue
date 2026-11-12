@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>垂直分隔线</h1>
     <p class="lead">使用自定义的垂直分隔线工具类创建类似 `&lt;hr&gt;` 元素的垂直分隔线。</p>
 

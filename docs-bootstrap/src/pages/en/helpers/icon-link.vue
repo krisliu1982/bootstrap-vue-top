@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Icon link</h1>
     <p class="lead">Quickly create stylized hyperlinks with Bootstrap Icons or other icons.</p>
 

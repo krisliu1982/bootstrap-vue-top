@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>网格系统</h1>
     <p class="lead">借助十二列系统、六个默认响应式层级、Sass 变量和 mixin 以及数十个预定义类，使用我们强大的移动优先 flexbox 网格来构建各种形状和大小的布局。</p>
 

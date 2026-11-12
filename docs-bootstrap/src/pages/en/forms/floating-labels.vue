@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Floating labels</h1>
     <p class="lead">Create beautifully simple form labels that float over your input fields.</p>
 

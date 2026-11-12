@@ -1,5 +1,5 @@
 <template>
-  <nav v-if="prev || next" class="d-flex justify-content-between mt-4" aria-label="文档翻页导航">
+  <nav v-if="prev || next" class="d-flex justify-content-between mt-4" aria-label="文档翻页导航" data-pagefind-ignore>
     <RouterLink v-if="prev" :to="prev.path" class="py-3 text-decoration-none">
         <bi-arrow-left /> {{ prev.title }}
     </RouterLink>

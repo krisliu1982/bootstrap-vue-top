@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Carousel</h1>
     <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
 

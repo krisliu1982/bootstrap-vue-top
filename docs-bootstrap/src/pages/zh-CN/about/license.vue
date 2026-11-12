@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>许可证常见问题</h1>
     <p class="lead">关于 Bootstrap 开源许可证的常见问题。</p>
 

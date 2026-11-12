@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Text</h1>
     <p class="lead">Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
 

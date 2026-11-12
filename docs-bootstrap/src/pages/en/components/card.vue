@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Cards</h1>
     <p class="lead">Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>重置（Reboot）</h1>
     <p class="lead">Reboot 是单个文件中对特定元素进行的一组 CSS 更改，用于启动 Bootstrap，提供优雅、一致且简单的基础来构建项目。</p>
 

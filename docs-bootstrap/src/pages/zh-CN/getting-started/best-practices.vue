@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>最佳实践</h1>
     <p class="lead">了解我们从多年来开发和使用的 Bootstrap 过程中总结出的一些最佳实践。</p>
 

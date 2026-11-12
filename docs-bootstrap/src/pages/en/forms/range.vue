@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Range</h1>
     <p class="lead">Use our custom range inputs for consistent cross-browser styling and built-in customization.</p>
 

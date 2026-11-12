@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>关于 Bootstrap</h1>
     <p class="lead">进一步了解维护 Bootstrap 的团队、项目的起源与原因，以及如何参与其中。</p>
 

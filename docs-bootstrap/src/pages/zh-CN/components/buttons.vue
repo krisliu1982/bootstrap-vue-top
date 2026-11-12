@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>按钮</h1>
     <p class="lead">使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，并支持多种尺寸、状态等。</p>
 

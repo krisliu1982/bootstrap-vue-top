@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>断点</h1>
     <p class="lead">断点是可自定义的宽度，用于决定响应式布局在 Bootstrap 中跨设备或视口尺寸时的表现。</p>
 

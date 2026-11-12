@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Bootstrap 与 Parcel</h1>
     <p class="lead">关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 

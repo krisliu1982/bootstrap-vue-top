@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>CSS variables</h1>
     <p class="lead">Use Bootstrap’s CSS custom properties for fast and forward-looking design and development.</p>
 

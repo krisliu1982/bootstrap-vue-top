@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>颜色</h1>
     <p class="lead">通过一些颜色工具类，用 `color` 传达含义。同时还支持为链接设置带有悬停状态的样式。</p>
 

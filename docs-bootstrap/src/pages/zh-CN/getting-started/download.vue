@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>下载</h1>
     <p class="lead">下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="bd-code-snippet">
+  <div class="bd-code-snippet" data-pagefind-ignore>
     <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border rounded-top">
       <small class="font-monospace text-secondary text-uppercase">{{ props.lang }}</small>
       <div class="ms-auto">

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>定位</h1>
     <p class="lead">使用这些工具类可以快速配置元素的位置。</p>
 

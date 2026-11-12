@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Containers</h1>
     <p class="lead">Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.</p>
 

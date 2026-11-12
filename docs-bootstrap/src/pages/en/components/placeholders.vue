@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Placeholders</h1>
     <p class="lead">Use loading placeholders (skeleton loaders) for your components or pages to indicate something may still be loading.</p>
 

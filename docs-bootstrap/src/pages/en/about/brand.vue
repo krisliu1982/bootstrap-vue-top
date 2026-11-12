@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Brand guidelines</h1>
     <p class="lead">Documentation and examples for Bootstrap’s logo and brand usage guidelines.</p>
 

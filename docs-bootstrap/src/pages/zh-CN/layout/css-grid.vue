@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>CSS Grid</h1>
     <p class="lead">通过示例和代码片段，了解如何启用、使用和自定义我们基于 CSS Grid 构建的备用布局系统。</p>
 

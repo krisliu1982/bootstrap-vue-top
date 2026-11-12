@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>优化</h1>
     <p class="lead">让你的项目保持精简、响应式且易于维护，从而提供最佳体验并专注于更重要的工作。</p>
 

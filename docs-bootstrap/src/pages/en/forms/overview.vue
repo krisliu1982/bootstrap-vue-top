@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Forms</h1>
     <p class="lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
 

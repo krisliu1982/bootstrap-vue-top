@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>浮动标签</h1>
     <p class="lead">创建简洁美观、浮动在输入框上方的表单标签。</p>
 

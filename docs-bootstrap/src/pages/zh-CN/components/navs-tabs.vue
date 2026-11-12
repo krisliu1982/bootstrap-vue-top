@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>导航与标签页</h1>
     <p class="lead">关于如何使用 Bootstrap 内置导航组件的文档与示例。</p>
 

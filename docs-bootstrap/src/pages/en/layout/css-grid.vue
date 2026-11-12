@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>CSS Grid</h1>
     <p class="lead">Learn how to enable, use, and customize our alternate layout system built on CSS Grid with examples and code snippets.</p>
 

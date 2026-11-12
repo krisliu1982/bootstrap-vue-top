@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>抽屉</h1>
     <p class="lead">只需几个类和我们提供的 JavaScript 插件，即可在项目中构建用于导航、购物车等的隐藏侧边栏。</p>
 

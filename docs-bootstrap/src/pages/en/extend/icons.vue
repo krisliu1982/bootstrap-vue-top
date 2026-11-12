@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Icons</h1>
     <p class="lead">Guidance and suggestions for using external icon libraries with Bootstrap.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Optimize</h1>
     <p class="lead">Keep your projects lean, responsive, and maintainable so you can deliver the best experience and focus on more important jobs.</p>
 

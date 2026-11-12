@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Link</h1>
     <p class="lead">Link utilities are used to stylize your anchors to adjust their color, opacity, underline offset, underline color, and more.</p>
 

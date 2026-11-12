@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>License FAQs</h1>
     <p class="lead">Commonly asked questions about Bootstrap’s open source license.</p>
 

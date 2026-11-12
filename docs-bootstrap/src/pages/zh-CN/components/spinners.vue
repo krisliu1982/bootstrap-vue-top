@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>加载动画（Spinners）</h1>
     <p class="lead">使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。</p>
 

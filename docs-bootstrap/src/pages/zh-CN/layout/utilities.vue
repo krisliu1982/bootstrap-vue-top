@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>布局工具类</h1>
     <p class="lead">为了实现更快捷的移动优先和响应式开发，Bootstrap 包含了数十个用于显示、隐藏、对齐和间隔内容的工具类。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>从右到左（RTL）</h1>
     <p class="lead">了解如何在 Bootstrap 的布局、组件和工具类中启用从右到左的文字支持。</p>
 

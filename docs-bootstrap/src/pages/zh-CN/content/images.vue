@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>图片</h1>
     <p class="lead">关于让图片采用响应式行为（使其永远不会宽于其父级）并为其添加轻量样式的文档和示例——全部通过类实现。</p>
 

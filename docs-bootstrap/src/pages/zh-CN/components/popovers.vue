@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>弹出框</h1>
     <p class="lead">如何向站点中的任意元素添加 Bootstrap 弹出框（类似 iOS 中的弹出框）的文档和示例。</p>
 

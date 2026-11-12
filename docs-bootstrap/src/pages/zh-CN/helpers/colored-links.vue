@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>彩色链接</h1>
     <p class="lead">带有悬停状态的彩色链接</p>
 

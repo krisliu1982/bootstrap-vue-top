@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>折叠面板</h1>
     <p class="lead">结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。</p>
 

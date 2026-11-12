@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>溢出</h1>
     <p class="lead">使用这些简写工具类可以快速配置内容如何溢出元素。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>表单控件</h1>
     <p class="lead">通过自定义样式、尺寸、聚焦状态等，升级 `&lt;input&gt;` 和 `&lt;textarea&gt;` 等文本表单控件。</p>
 

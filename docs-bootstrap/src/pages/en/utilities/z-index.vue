@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Z-index</h1>
     <p class="lead">Use our low-level `z-index` utilities to quickly change the stack level of an element or component.</p>
 

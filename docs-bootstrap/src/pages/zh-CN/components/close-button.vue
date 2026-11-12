@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>关闭按钮</h1>
     <p class="lead">一个通用的关闭按钮，用于关闭模态框和警告框等内容。</p>
 

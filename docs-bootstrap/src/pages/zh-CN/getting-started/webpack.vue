@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Bootstrap 与 Webpack</h1>
     <p class="lead">本官方指南介绍如何使用 Webpack 在项目中引入和打包 Bootstrap 的 CSS 和 JavaScript。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>布局</h1>
     <p class="lead">借助我们的表单布局选项，为表单赋予结构——从行内布局、水平布局到自定义网格实现，应有尽有。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>弹性布局 (Flex)</h1>
     <p class="lead">借助一整套响应式弹性布局工具类，快速管理网格列、导航、组件等的布局、对齐和尺寸。对于更复杂的实现，可能需要自定义 CSS。</p>
 

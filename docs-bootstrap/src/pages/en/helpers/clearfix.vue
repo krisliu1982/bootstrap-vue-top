@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Clearfix</h1>
     <p class="lead">Quickly and easily clear floated content within a container by adding a clearfix utility.</p>
 

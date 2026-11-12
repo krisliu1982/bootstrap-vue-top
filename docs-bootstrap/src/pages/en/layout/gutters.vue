@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Gutters</h1>
     <p class="lead">Gutters are the padding between your columns, used to responsively space and align content in the Bootstrap grid system.</p>
 

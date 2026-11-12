@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>CSS 变量</h1>
     <p class="lead">使用 Bootstrap 的 CSS 自定义属性实现快速且具前瞻性的设计与开发。</p>
 

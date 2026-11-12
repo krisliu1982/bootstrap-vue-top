@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>清除浮动</h1>
     <p class="lead">通过添加清除浮动工具类，快速轻松地清除容器内的浮动内容。</p>
 

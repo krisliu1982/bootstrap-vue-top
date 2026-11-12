@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Float</h1>
     <p class="lead">Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
 

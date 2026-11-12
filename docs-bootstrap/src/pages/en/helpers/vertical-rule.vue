@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Vertical rule</h1>
     <p class="lead">Use the custom vertical rule helper to create vertical dividers like the `&lt;hr&gt;` element.</p>
 

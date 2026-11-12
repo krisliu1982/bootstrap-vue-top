@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>间距（Gutters）</h1>
     <p class="lead">间距是列与列之间的内边距，用于在 Bootstrap 网格系统中以响应式的方式分隔和对齐内容。</p>
 

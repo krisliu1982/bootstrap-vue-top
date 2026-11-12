@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Collapse</h1>
     <p class="lead">Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>交互</h1>
     <p class="lead">用于更改用户与网站内容交互方式的工具类。</p>
 

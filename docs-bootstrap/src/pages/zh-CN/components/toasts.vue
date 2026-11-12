@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>轻提示</h1>
     <p class="lead">使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。</p>
 

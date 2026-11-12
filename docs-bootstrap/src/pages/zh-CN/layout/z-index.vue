@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Z-index</h1>
     <p class="lead">虽然 z-index 并不属于 Bootstrap 网格系统的一部分，但它在组件如何相互叠加和交互方面起着重要作用。</p>
 

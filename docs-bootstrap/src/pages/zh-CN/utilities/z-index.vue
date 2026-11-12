@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Z-index</h1>
     <p class="lead">使用我们的底层 `z-index` 工具类快速更改元素或组件的层叠层级。</p>
 

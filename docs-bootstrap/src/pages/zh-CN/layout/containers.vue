@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>容器</h1>
     <p class="lead">容器是 Bootstrap 的基本构建块，用于在给定设备或视口内包含、填充和对齐你的内容。</p>
 

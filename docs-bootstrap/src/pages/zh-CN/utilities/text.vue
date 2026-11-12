@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>文本</h1>
     <p class="lead">用于控制对齐、换行、字重等的常用文本工具类的文档与示例。</p>
 

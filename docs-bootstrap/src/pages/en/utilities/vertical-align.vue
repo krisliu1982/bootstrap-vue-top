@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Vertical alignment</h1>
     <p class="lead">Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
 

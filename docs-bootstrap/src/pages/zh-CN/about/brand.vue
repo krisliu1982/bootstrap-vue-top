@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>品牌指南</h1>
     <p class="lead">Bootstrap 徽标与品牌使用指南的文档和示例。</p>
 

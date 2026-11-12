@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Visibility</h1>
     <p class="lead">Control the visibility of elements, without modifying their display, with visibility utilities.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>目录内容</h1>
     <p class="lead">了解 Bootstrap 包含的内容，包括编译版本和源代码版本。</p>
 

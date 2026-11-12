@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>导航栏</h1>
     <p class="lead">Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。</p>
 

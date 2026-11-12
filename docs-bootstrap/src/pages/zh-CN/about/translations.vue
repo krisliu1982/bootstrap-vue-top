@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>翻译</h1>
     <p class="lead">链接到由社区翻译的 Bootstrap 文档站点。</p>
 

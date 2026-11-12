@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>徽章</h1>
     <p class="lead">徽章的文档和示例，这是我们用于计数和标记的小型组件。</p>
 

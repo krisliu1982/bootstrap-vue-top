@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>垂直对齐</h1>
     <p class="lead">轻松更改内联、内联块、内联表格和表格单元格元素的垂直对齐方式。</p>
 

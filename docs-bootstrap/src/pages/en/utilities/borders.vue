@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Borders</h1>
     <p class="lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
 

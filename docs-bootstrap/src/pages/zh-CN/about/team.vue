@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>团队</h1>
     <p class="lead">关于 Bootstrap 创始团队和核心贡献者的概述。</p>
 

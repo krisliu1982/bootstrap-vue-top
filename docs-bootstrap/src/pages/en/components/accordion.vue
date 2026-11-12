@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Accordion</h1>
     <p class="lead">Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.</p>
 

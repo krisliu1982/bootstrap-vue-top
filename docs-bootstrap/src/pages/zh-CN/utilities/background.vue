@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>背景</h1>
     <p class="lead">通过 `background-color` 传达含义，并使用渐变添加装饰效果。</p>
 

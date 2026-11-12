@@ -1,5 +1,5 @@
 <template>
-  <div class="bd-code-snippet">
+  <div class="bd-code-snippet" data-pagefind-ignore>
     <div class="bd-example border rounded-top" :class="{ 'rounded-bottom': !showMarkup, [props.class]: props.class !== null }" v-html="props.code"></div>
     <template v-if="props.showMarkup">
       <div class="d-flex align-items-center bg-body-tertiary px-3 py-2 border">

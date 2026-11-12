@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Visually hidden</h1>
     <p class="lead">Use these helpers to visually hide elements but keep them accessible to assistive technologies.</p>
 

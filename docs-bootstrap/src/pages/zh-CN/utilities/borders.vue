@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>边框</h1>
     <p class="lead">使用边框工具类可以快速设置元素的边框及圆角。非常适合图片、按钮或任何其他元素。</p>
 

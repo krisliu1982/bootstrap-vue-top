@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>比例</h1>
     <p class="lead">使用生成的伪元素让元素保持你选择的长宽比。非常适合根据父元素宽度响应式地处理视频或幻灯片嵌入内容。</p>
 

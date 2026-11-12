@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>迁移到 v5</h1>
     <p class="lead">跟踪并查阅 Bootstrap 源文件、文档和组件的变更，以便帮助你从 v4 迁移到 v5。</p>
 

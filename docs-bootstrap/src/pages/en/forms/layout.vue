@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Layout</h1>
     <p class="lead">Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>自定义</h1>
     <p class="lead">了解如何使用 Sass、大量全局选项、扩展的颜色系统等来设置 Bootstrap 主题、自定义和扩展 Bootstrap。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Select</h1>
     <p class="lead">Customize the native `&lt;select&gt;`s with custom CSS that changes the element’s initial appearance.</p>
 

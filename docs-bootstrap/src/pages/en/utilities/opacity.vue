@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Opacity</h1>
     <p class="lead">Control the opacity of elements.</p>
 

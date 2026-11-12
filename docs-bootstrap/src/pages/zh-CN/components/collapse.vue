@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>折叠</h1>
     <p class="lead">使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。</p>
 

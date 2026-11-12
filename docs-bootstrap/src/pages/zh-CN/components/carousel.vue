@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>轮播</h1>
     <p class="lead">用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播一样。</p>
 

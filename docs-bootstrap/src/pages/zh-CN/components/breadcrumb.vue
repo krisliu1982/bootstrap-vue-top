@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>面包屑导航</h1>
     <p class="lead">在导航层级中指示当前页面的位置，并通过 CSS 自动添加分隔符。</p>
 

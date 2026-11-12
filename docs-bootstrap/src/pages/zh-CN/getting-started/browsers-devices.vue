@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>浏览器与设备</h1>
     <p class="lead">了解 Bootstrap 支持的各种浏览器与设备（从新到旧），包括各自已知的怪异表现和缺陷。</p>
 

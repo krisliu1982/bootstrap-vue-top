@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Position</h1>
     <p class="lead">Use these shorthand utilities for quickly configuring the position of an element.</p>
 

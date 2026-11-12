@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Badges</h1>
     <p class="lead">Documentation and examples for badges, our small count and labeling component.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>下拉菜单</h1>
     <p class="lead">使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>RTL</h1>
     <p class="lead">Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
 

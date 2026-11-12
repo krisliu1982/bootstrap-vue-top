@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Text truncation</h1>
     <p class="lead">Truncate long strings of text with an ellipsis.</p>
 

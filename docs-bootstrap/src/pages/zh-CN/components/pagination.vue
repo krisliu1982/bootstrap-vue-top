@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>分页</h1>
     <p class="lead">用于展示分页、表示一系列相关内容分布在多个页面上的文档和示例。</p>
 

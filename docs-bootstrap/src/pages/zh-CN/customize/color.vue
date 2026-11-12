@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>颜色</h1>
     <p class="lead">Bootstrap 由一个完善的颜色系统支撑，为我们的样式和组件提供主题。这使任何项目都能进行更全面的自定义和扩展。</p>
 

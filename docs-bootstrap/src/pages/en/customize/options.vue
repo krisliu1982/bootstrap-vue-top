@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Options</h1>
     <p class="lead">Quickly customize Bootstrap with built-in variables to easily toggle global CSS preferences for controlling style and behavior.</p>
 

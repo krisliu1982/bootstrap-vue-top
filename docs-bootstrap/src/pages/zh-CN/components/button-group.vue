@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>按钮组</h1>
     <p class="lead">将一系列按钮组合在同一行中，或将它们堆叠成一列。</p>
 

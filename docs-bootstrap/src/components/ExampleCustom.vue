@@ -1,5 +1,5 @@
 <template>
-  <div class="bd-code-snippet">
+  <div class="bd-code-snippet" data-pagefind-ignore>
     <div class="bd-example border rounded-top" :class="props.class">
       <slot />
     </div>

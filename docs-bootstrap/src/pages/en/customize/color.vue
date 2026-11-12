@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Color</h1>
     <p class="lead">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
 

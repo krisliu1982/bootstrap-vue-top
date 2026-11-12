@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>JavaScript</h1>
     <p class="lead">使用我们可选的 JavaScript 插件，让 Bootstrap 生动起来。了解每个插件、我们的数据 API 与编程式 API 选项等内容。</p>
 

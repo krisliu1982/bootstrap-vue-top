@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>About Bootstrap</h1>
     <p class="lead">Learn more about the team maintaining Bootstrap, how and why the project started, and how to get involved.</p>
 

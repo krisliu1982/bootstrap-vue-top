@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Interactions</h1>
     <p class="lead">Utility classes that change how users interact with contents of a website.</p>
 

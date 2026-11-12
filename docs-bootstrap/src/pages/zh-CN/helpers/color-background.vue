@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>颜色与背景</h1>
     <p class="lead">设置带有对比前景色的背景色。</p>
 

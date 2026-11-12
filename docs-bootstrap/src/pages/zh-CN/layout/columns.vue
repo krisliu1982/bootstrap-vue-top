@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>列</h1>
     <p class="lead">了解如何借助我们的 flexbox 网格系统，使用少量选项来修改列的对齐、排序和偏移。此外，了解如何使用列类来管理非网格元素的宽度。</p>
 

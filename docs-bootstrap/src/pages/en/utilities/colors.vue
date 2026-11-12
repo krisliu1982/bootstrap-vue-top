@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Colors</h1>
     <p class="lead">Convey meaning through `color` with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Colored links</h1>
     <p class="lead">Colored links with hover states</p>
 

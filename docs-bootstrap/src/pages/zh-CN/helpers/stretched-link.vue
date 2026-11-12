@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>拉伸链接</h1>
     <p class="lead">通过 CSS 将嵌套的链接“拉伸”，让任意 HTML 元素或 Bootstrap 组件都可被点击。</p>
 

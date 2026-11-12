@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>工具类 API</h1>
     <p class="lead">工具类 API 是一个基于 Sass 的工具，用于生成工具类。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>复选框与单选框</h1>
     <p class="lead">使用我们完全重写的复选框组件，创建跨浏览器、跨设备且外观一致的复选框与单选框。</p>
 

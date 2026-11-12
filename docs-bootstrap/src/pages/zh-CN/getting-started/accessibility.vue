@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>无障碍访问</h1>
     <p class="lead">简要概述 Bootstrap 在创建无障碍内容方面的特性和局限。</p>
 

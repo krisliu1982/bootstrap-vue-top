@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>颜色模式</h1>
     <p class="lead">Bootstrap 从 v5.3.0 起支持颜色模式（或称主题）。你可以探索我们默认的浅色颜色模式和新的深色模式，或使用我们的样式作为模板来创建自己的颜色模式。</p>
 

@@ -1,12 +1,8 @@
 <template>
   <hr class="my-5" />
-
   <p>
     <em>
-      See something wrong or out of date here? Please
-      <a href="[[config:repo]]/issues/new/choose">open an issue on GitHub</a>. Need help troubleshooting?
-      <a href="[[config:repo]]/discussions">Search or start a discussion</a>
-      on GitHub.
+      发现这里有问题或内容过时？请在<a href="https://github.com/twbs/bootstrap/issues/new/choose">GitHub 上提交 issue</a>。需要帮助排查问题？在GitHub 上<a href="https://github.com/twbs/bootstrap/discussions">搜索或发起讨论</a>。
     </em>
   </p>
 </template>

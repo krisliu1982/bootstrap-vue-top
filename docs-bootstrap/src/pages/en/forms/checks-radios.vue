@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Checks and radios</h1>
     <p class="lead">Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
 

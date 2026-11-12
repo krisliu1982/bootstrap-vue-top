@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Dropdowns</h1>
     <p class="lead">Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
 

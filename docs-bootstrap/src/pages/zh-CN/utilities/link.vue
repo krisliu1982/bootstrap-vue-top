@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>链接</h1>
     <p class="lead">链接工具类用于美化锚点，以调整其颜色、不透明度、下划线偏移、下划线颜色等。</p>
 

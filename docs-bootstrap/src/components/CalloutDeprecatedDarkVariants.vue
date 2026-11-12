@@ -1,7 +1,7 @@
 <template>
   <div class="bd-callout bd-callout-warning">
     <p>
-      <strong>Heads up!</strong> Dark variants for components were deprecated in v5.3.0 with the introduction of color modes. Instead of adding <code>.{{ props.component }}-dark</code>, set <code>data-bs-theme="dark"</code> on the root element, a parent wrapper, or the component itself.
+      <strong>注意！</strong>随着颜色模式的引入，组件的深色变体已在 v5.3.0 中弃用。不要再添加 <code>.{{ props.component }}-dark</code>，而应在根元素、父级包装元素或组件自身上设置 <code>data-bs-theme="dark"</code>。
     </p>
   </div>
 </template>

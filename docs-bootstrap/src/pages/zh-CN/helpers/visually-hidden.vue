@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>视觉上隐藏</h1>
     <p class="lead">使用这些工具类可以在视觉上隐藏元素，同时保持其对辅助技术的可访问性。</p>
 

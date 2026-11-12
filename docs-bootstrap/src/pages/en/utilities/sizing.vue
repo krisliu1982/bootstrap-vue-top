@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Sizing</h1>
     <p class="lead">Easily make an element as wide or as tall with our width and height utilities.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>阴影</h1>
     <p class="lead">使用 box-shadow 工具类为元素添加或移除阴影。</p>
 

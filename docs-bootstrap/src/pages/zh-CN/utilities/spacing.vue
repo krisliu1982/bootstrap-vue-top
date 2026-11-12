@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>间距</h1>
     <p class="lead">Bootstrap 包含大量简写的响应式外边距、内边距和间隔（gap）工具类，用于修改元素的外观。</p>
 

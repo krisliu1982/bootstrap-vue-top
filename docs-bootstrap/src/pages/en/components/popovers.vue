@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Popovers</h1>
     <p class="lead">Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.</p>
 

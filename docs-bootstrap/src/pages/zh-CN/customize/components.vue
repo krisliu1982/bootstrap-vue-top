@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>组件</h1>
     <p class="lead">了解我们为何以及如何以响应式方式、使用基础类和修饰类来构建几乎所有组件。</p>
 

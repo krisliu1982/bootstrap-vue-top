@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Color and background</h1>
     <p class="lead">Set a background color with contrasting foreground color.</p>
 

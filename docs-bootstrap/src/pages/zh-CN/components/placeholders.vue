@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>占位符</h1>
     <p class="lead">为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。</p>
 

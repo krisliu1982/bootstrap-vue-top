@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Breadcrumb</h1>
     <p class="lead">Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
 

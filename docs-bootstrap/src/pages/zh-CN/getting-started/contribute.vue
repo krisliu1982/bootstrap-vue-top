@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>参与贡献</h1>
     <p class="lead">使用我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 

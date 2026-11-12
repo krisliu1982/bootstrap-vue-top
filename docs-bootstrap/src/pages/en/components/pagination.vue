@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Pagination</h1>
     <p class="lead">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
 

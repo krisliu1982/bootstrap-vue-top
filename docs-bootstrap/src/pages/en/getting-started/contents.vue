@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Contents</h1>
     <p class="lead">Discover what’s included in Bootstrap, including our compiled and source code flavors.</p>
 

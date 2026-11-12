@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>实现方式</h1>
     <p class="lead">了解用于构建和维护 Bootstrap 的指导原则、策略和技术，以便你更轻松地自行自定义和扩展它。</p>
 

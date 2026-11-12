@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>尺寸</h1>
     <p class="lead">使用我们的宽度和高度工具类，可以轻松设置元素的宽度或高度。</p>
 

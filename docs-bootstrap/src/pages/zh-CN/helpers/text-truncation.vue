@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>文本截断</h1>
     <p class="lead">使用省略号截断长字符串文本。</p>
 

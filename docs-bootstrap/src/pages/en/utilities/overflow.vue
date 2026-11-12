@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Overflow</h1>
     <p class="lead">Use these shorthand utilities for quickly configuring how content overflows an element.</p>
 

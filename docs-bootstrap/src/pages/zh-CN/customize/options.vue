@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>选项</h1>
     <p class="lead">使用内置变量快速自定义 Bootstrap，轻松切换控制样式和行为的全局 CSS 偏好设置。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Toasts</h1>
     <p class="lead">Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</p>
 

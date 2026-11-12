@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>聚焦环</h1>
     <p class="lead">用于向元素和组件添加及修改自定义聚焦环样式的工具类。</p>
 

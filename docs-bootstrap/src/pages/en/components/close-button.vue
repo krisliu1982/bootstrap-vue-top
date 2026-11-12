@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Close button</h1>
     <p class="lead">A generic close button for dismissing content like modals and alerts.</p>
 

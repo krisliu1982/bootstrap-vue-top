@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>浮动</h1>
     <p class="lead">使用我们的响应式浮动工具类，可在任意断点上切换任意元素的浮动状态。</p>
 

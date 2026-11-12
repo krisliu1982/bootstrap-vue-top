@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>校验</h1>
     <p class="lead">通过浏览器默认行为，或自定义样式与 JavaScript，利用 HTML5 表单校验为你的用户提供有价值且可操作的反馈。</p>
 

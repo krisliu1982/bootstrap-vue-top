@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>工具提示</h1>
     <p class="lead">如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 工具提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Navs and tabs</h1>
     <p class="lead">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
 

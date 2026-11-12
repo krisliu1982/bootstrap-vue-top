@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>表单</h1>
     <p class="lead">表单控件样式、布局选项和自定义组件的示例与用法指南，帮助你创建各种各样的表单。</p>
 

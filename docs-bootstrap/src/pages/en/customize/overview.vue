@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Customize</h1>
     <p class="lead">Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.</p>
 

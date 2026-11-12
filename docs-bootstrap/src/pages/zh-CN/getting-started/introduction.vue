@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Bootstrap 入门</h1>
     <p class="lead">Bootstrap 是一个功能强大、特性丰富的前端工具包。只需几分钟，你就能构建从原型到生产环境的各种项目。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>模态框</h1>
     <p class="lead">使用 Bootstrap 的 JavaScript 模态框插件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。</p>
 

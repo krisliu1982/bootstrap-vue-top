@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>图标</h1>
     <p class="lead">关于在 Bootstrap 中使用外部图标库的指导和建议。</p>
 

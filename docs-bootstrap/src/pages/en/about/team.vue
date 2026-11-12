@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Team</h1>
     <p class="lead">An overview of the founding team and core contributors to Bootstrap.</p>
 

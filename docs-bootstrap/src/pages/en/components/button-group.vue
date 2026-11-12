@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Button group</h1>
     <p class="lead">Group a series of buttons together on a single line or stack them in a vertical column.</p>
 

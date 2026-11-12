@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Accessibility</h1>
     <p class="lead">A brief overview of Bootstrap’s features and limitations for the creation of accessible content.</p>
 

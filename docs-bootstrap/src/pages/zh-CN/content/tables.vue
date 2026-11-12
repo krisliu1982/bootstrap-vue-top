@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>表格</h1>
     <p class="lead">关于使用 Bootstrap 对表格进行选择性样式设置（鉴于它们在 JavaScript 插件中的广泛使用）的文档和示例。</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>RFS</h1>
     <p class="lead">Bootstrap’s resizing engine responsively scales common CSS properties to better utilize available space across viewports and devices.</p>
 

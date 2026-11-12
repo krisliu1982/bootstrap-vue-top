@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>进度条</h1>
     <p class="lead">使用 Bootstrap 自定义进度条的文档和示例，包括对堆叠条形、动画背景和文本标签的支持。</p>
 

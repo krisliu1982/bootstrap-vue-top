@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>列表组</h1>
     <p class="lead">列表组是一个灵活而强大的组件，用于显示一系列内容。你可以修改和扩展它们，以支持几乎任意类型的内容。</p>
 

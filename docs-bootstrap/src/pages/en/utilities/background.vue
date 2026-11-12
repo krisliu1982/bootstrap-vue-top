@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Background</h1>
     <p class="lead">Convey meaning through `background-color` and add decoration with gradients.</p>
 

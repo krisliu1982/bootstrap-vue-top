@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Typography</h1>
     <p class="lead">Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.</p>
 

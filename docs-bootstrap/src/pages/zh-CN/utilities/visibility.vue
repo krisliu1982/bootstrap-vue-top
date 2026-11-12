@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>可见性</h1>
     <p class="lead">使用可见性工具类在不修改元素显示方式的情况下控制元素的可见性。</p>
 

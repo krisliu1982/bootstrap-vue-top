@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>图片说明（Figures）</h1>
     <p class="lead">在 Bootstrap 中使用 figure 组件展示相关图片和文字的文档与示例。</p>
 

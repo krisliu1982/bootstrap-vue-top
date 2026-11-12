@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Stretched link</h1>
     <p class="lead">Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.</p>
 

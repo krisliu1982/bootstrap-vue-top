@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>警告框</h1>
     <p class="lead">使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
 

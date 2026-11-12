@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>堆叠 (Stacks)</h1>
     <p class="lead">构建在弹性布局工具类基础上的简写工具类，让组件布局比以往更快、更简单。</p>
 

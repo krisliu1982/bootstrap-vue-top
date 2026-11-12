@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Shadows</h1>
     <p class="lead">Add or remove shadows to elements with box-shadow utilities.</p>
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="bd-content">
+  <article class="bd-content" data-pagefind-body>
     <h1>Components</h1>
     <p class="lead">Learn how and why we build nearly all our components responsively and with base and modifier classes.</p>
 
