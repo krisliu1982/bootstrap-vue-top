@@ -1,7 +1,7 @@
 <template>
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container-xxl">
-      <div class="d-flex align-items-center gap-2" style="height: 3rem">
+      <div class="d-flex align-items-center gap-3" style="height: 3rem">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi fs-3"
           style="color: var(--bs-indigo)" viewBox="0 0 16 16">
           <path
@@ -9,11 +9,11 @@
           <path
             d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
         </svg>
-        <small>{{ version }}</small>
+        <pagefind-modal-trigger></pagefind-modal-trigger>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <a class="link-body-emphasis text-decoration-none fw-bold" href="/">中文文档</a>
+              <a class="link-body-emphasis text-decoration-none fw-bold" href="/">中文文档(<small>{{ version }}</small>)</a>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/docs/5.3/examples/"
                 target="_blank" rel="noopener">示例</a>
               <a class="link-body-emphasis text-decoration-none" href="https://icons.getbootstrap.com/" target="_blank"
@@ -166,6 +166,8 @@
       </main>
     </div>
   </div>
+
+  <pagefind-modal></pagefind-modal>
 </template>
 
 <script setup>
@@ -240,9 +242,29 @@ onMounted(() => {
   dropdown.addEventListener('show.bs.dropdown', event => {
     document.getElementById('dropdown-menu-toc').appendChild(document.querySelector('nav.bd-toc>ul'))
   })
-    dropdown.addEventListener('hide.bs.dropdown', event => {
+  dropdown.addEventListener('hide.bs.dropdown', event => {
     document.querySelector('nav.bd-toc').appendChild(document.querySelector('#dropdown-menu-toc>ul'))
   })
 });
 
+import '@pagefind/component-ui/css';
+onMounted(async () => {
+  try {
+    await import('@pagefind/component-ui')
+
+    const results = document.querySelector('.pf-results');
+
+    results.addEventListener('click', (event) => {
+      const link = event.target.closest('a');
+      if (!link) return;
+
+      // 命中目标，阻止链接跳转这一默认行为
+      event.preventDefault();
+
+      location.href = link.getAttribute('href').replace(/\.html$/, '');
+    });
+  } catch (e) {
+    console.warn('Pagefind UI 未加载', e)
+  }
+})
 </script>
