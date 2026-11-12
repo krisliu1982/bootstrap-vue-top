@@ -24,7 +24,7 @@
         >
       </li>
       <li>Vue：<a href="https://bootstrap-vue.org/">BootstrapVue</a>（Bootstrap 4）</li>
-      <li>Vue 3：<a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a>（Bootstrap 5，目前处于 alpha 阶段）</li>
+      <li>Vue 3：<a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a>（Bootstrap 5）</li>
       <li>
         Angular：<a href="https://ng-bootstrap.github.io/">ng-bootstrap</a>或
         <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap</a>
@@ -108,8 +108,7 @@
       <code>show</code>）在事件开始时触发，其过去分词形式（例如 <code>shown</code>）在操作完成时触发。
     </p>
     <p>
-      所有不定式事件都提供
-      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a>
+      所有不定式（infinitive）事件都提供<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a>
       功能。这让我们能够在某个操作开始之前阻止其执行。从事件处理函数中返回 false 也会自动调用
       <code>preventDefault()</code>。
     </p>
@@ -185,10 +184,12 @@ carousel.to(&#39;2&#39;) // !! Will be ignored, as the transition to the slide 1
     <h4 id="dispose-method"><code>dispose</code> 方法</h4>
     <p>虽然在 <code>hide()</code> 之后立即调用 <code>dispose</code> 方法看起来是正确的，但这会导致错误的结果。下面是一个有问题的用法示例：</p>
     <CodeWrapper
-      code="const myModal = document.querySelector(&#39;#myModal&#39;)
+      code="const myModalEl = document.querySelector('#myModal')
+const myModal = bootstrap.Modal.getInstance(myModalEl)
+
 myModal.hide() // it is asynchronous
 
-myModal.addEventListener(&#39;shown.bs.hidden&#39;, event =&gt; {
+myModalEl.addEventListener('hidden.bs.modal', event => {
   myModal.dispose()
 })
 "
