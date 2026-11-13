@@ -250,18 +250,6 @@ import '@pagefind/component-ui/css';
 onMounted(async () => {
   try {
     await import('@pagefind/component-ui');
-
-    const results = document.querySelector('.pf-results');
-
-    results.addEventListener('click', (event) => {
-      const link = event.target.closest('a');
-      if (!link) return;
-
-      // 命中目标，阻止链接跳转这一默认行为
-      event.preventDefault();
-
-      location.href = link.getAttribute('href').replace(/\.html$/, '');
-    });
   } catch (e) {
     console.warn('Pagefind UI 未加载', e);
   }
