@@ -4,14 +4,14 @@
     <p class="lead">下载 Bootstrap 即可获取编译后的 CSS 和 JavaScript、源代码，或将其与你喜爱的包管理器（如 npm、RubyGems 等）一起使用。</p>
 
     <h2 id="compiled-css-and-js">编译后的 CSS 和 JS<a class="anchor-link" href="#compiled-css-and-js" aria-label="编译后的 CSS 和 JS 链接"></a></h2>
-    <p>下载 <strong>Bootstrap v5.3.8</strong> 可直接使用的编译代码，轻松放入你的项目中，其中包含：</p>
+    <p>下载 <strong>Bootstrap v5.3.9</strong> 可直接使用的编译代码，轻松放入你的项目中，其中包含：</p>
     <ul>
       <li>编译并压缩的 CSS 包（参见<a href="/getting-started/contents#css-files">CSS 文件对比</a>）</li>
       <li>编译并压缩的 JavaScript 插件（参见<a href="/getting-started/contents#js-files">JS 文件对比</a>）</li>
     </ul>
     <p>其中不包含文档、源文件或任何可选的 JavaScript 依赖（如 Popper）。</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-bd-primary">下载</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.9/bootstrap-5.3.9-dist.zip" class="btn btn-bd-primary">下载</a>
     </p>
     <h2 id="source-files">源文件<a class="anchor-link" href="#source-files" aria-label="源文件链接"></a></h2>
     <p>下载我们的 Sass、JavaScript 源代码和文档文件，即可使用自己的资源处理流程编译 Bootstrap。此选项需要一些额外的工具：</p>
@@ -21,24 +21,24 @@
     </ul>
     <p>如果你需要我们完整的<a href="/getting-started/contribute#tooling-setup">构建工具</a>，它们已包含在内，用于开发 Bootstrap 及其文档，但很可能并不适合你自己的用途。</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip" class="btn btn-bd-primary">下载源代码</a>
+      <a href="https://github.com/twbs/bootstrap/archive/v5.3.9.zip" class="btn btn-bd-primary">下载源代码</a>
     </p>
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
     <p>如果你想下载并查看我们的<a href="https://getbootstrap.com/docs/5.3/examples">示例</a>，可以获取已构建好的示例：</p>
     <p>
-      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-examples.zip" class="btn btn-bd-primary">下载示例</a>
+      <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.9/bootstrap-5.3.9-examples.zip" class="btn btn-bd-primary">下载示例</a>
     </p>
     <h2 id="cdn-via-jsdelivr">通过 jsDelivr 使用 CDN<a class="anchor-link" href="#cdn-via-jsdelivr" aria-label="通过 jsDelivr 使用 CDN 链接"></a></h2>
     <p>使用<a href="https://www.jsdelivr.com/">jsDelivr</a>免去下载步骤，为你的项目提供 Bootstrap 编译后 CSS 和 JS 的缓存版本。</p>
     <CodeWrapper
-      code='&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;'
+      code='<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>'
       lang="html"
     />
     <p>如果你使用我们编译后的 JavaScript 并且希望单独引入 Popper，请在我们的 JS 之前引入 Popper，最好通过 CDN 引入。</p>
     <CodeWrapper
-      code='&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;'
+      code='<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js" integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq" crossorigin="anonymous"></script>'
       lang="html"
     />
     <h3 id="alternative-cdns">其他 CDN<a class="anchor-link" href="#alternative-cdns" aria-label="其他 CDN 链接"></a></h3>
@@ -63,7 +63,7 @@
     <h3 id="npm">npm<a class="anchor-link" href="#npm" aria-label="npm 链接"></a></h3>
     <p>使用<a href="https://www.npmjs.com/package/bootstrap">npm 包</a>在你的 Node.js 应用中安装 Bootstrap：</p>
     <CodeWrapper
-      code="npm install bootstrap@5.3.8
+      code="npm install bootstrap@5.3.9
 "
       lang="shell"
     />
@@ -77,7 +77,7 @@
     <h3 id="yarn">yarn<a class="anchor-link" href="#yarn" aria-label="yarn 链接"></a></h3>
     <p>使用<a href="https://yarnpkg.com/en/package/bootstrap">yarn 包</a>在你的 Node.js 应用中安装 Bootstrap：</p>
     <CodeWrapper
-      code="yarn add bootstrap@5.3.8
+      code="yarn add bootstrap@5.3.9
 "
       lang="shell"
     />
@@ -97,7 +97,7 @@ yarn start # Start the project
     <h3 id="bun">Bun<a class="anchor-link" href="#bun" aria-label="Bun 链接"></a></h3>
     <p>使用<a href="https://bun.sh/">Bun CLI</a>在你的 Bun 或 Node.js 应用中安装 Bootstrap：</p>
     <CodeWrapper
-      code="bun add bootstrap@5.3.8
+      code="bun add bootstrap@5.3.9
 "
       lang="shell"
     />
@@ -106,10 +106,10 @@ yarn start # Start the project
       使用<a href="https://bundler.io/">Bundler</a>（<strong>推荐</strong>）和<a href="https://rubygems.org/">RubyGems</a>，将下面这行添加到你的<a href="https://bundler.io/guides/gemfile.html"><code>Gemfile</code></a
       >中，即可在你的 Ruby 应用中安装 Bootstrap：
     </p>
-    <CodeWrapper code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.8&#39;" lang="text" />
+    <CodeWrapper code="gem &#39;bootstrap&#39;, &#39;~&gt; 5.3.9&#39;" lang="text" />
     <p>或者，如果你没有使用 Bundler，可以运行以下命令安装该 gem：</p>
     <CodeWrapper
-      code="gem install bootstrap -v 5.3.8
+      code="gem install bootstrap -v 5.3.9
 "
       lang="shell"
     />
@@ -117,7 +117,7 @@ yarn start # Start the project
     <h3 id="composer">Composer<a class="anchor-link" href="#composer" aria-label="Composer 链接"></a></h3>
     <p>你还可以使用<a href="https://getcomposer.org/">Composer</a>安装和管理 Bootstrap 的 Sass 和 JavaScript：</p>
     <CodeWrapper
-      code="composer require twbs/bootstrap:5.3.8
+      code="composer require twbs/bootstrap:5.3.9
 "
       lang="shell"
     />

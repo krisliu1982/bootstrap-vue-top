@@ -174,9 +174,13 @@
   </div>
 </div>'
     />
+    <Callout>
+<p>如果该行使用了垂直间距（<code>.g-*</code> 或 <code>.gy-*</code>），那么换行元素也会从 <code>.row &gt; *</code> 获得间距外边距。这会增加额外的空间。请为换行元素添加 <code>.m-0</code> 和 <code>.p-0</code> 来移除它。</p>
+<CodeWrapper code='<div class="w-100 m-0 p-0"></div>
+' lang="html" />
+</Callout>
     <p>
-      你也可以使用我们的
-      <a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。
+      你也可以使用我们的<a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。
     </p>
     <Example
       class="bd-example-row"
@@ -289,7 +293,7 @@
       </div>'
     />
     <h4 id="margin-utilities">外边距工具类</h4>
-    <p>从 v4 开始转向 flexbox 后，你可以使用像 <code>.me-auto</code> 这样的外边距工具类来让相邻列相互远离。</p>
+    <p>随着 v4 转向 flexbox，你可以使用 <code>.me-auto</code> 之类的外边距工具类来强制同级列彼此远离，包括对<a href="/layout/grid#variable-width-content">可变宽度列</a>（例如 <code>.col-auto</code>）也是如此。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">

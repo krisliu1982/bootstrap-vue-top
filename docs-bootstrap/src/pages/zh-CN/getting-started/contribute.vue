@@ -4,16 +4,16 @@
     <p class="lead">使用我们的文档构建脚本和测试来帮助开发 Bootstrap。</p>
 
     <h2 id="tooling-setup">工具设置<a class="anchor-link" href="#tooling-setup" aria-label="工具设置链接"></a></h2>
-    <p>Bootstrap 使用<a href="https://docs.npmjs.com/misc/scripts/">npm 脚本</a>构建文档并编译源文件。我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a>中存放了用于编译代码、运行测试等任务的脚本。这些脚本并非供我们仓库和文档之外的场景使用。</p>
+    <p>Bootstrap 使用<a href="https://docs.npmjs.com/misc/scripts/">npm 脚本</a>构建文档并编译源文件。我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/package.json">package.json</a>中存放了用于编译代码、运行测试等任务的脚本。这些脚本并非供我们仓库和文档之外的场景使用。</p>
     <p>要使用我们的构建系统并在本地运行文档，你需要一份 Bootstrap 源文件和 Node。按以下步骤操作即可准备就绪：</p>
     <ol>
       <li><a href="https://nodejs.org/en/download/">下载并安装 Node.js</a>，我们使用它来管理依赖。</li>
-      <li><a href="https://github.com/twbs/bootstrap/archive/v5.3.8.zip">下载 Bootstrap 源代码</a>，或者 fork 并克隆<a href="https://github.com/twbs/bootstrap">Bootstrap 仓库</a>。</li>
-      <li>进入根目录 <code>/bootstrap</code> 并运行 <code>npm install</code>，以安装<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a>中列出的本地依赖。</li>
+      <li><a href="https://github.com/twbs/bootstrap/archive/v5.3.9.zip">下载 Bootstrap 源代码</a>，或者 fork 并克隆<a href="https://github.com/twbs/bootstrap">Bootstrap 仓库</a>。</li>
+      <li>进入根目录 <code>/bootstrap</code> 并运行 <code>npm install</code>，以安装<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/package.json">package.json</a>中列出的本地依赖。</li>
     </ol>
     <p>完成后，你就可以在命令行中运行所提供的各种命令了。</p>
     <h2 id="using-npm-scripts">使用 npm 脚本<a class="anchor-link" href="#using-npm-scripts" aria-label="使用 npm 脚本链接"></a></h2>
-    <p>我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/package.json">package.json</a>包含许多用于开发项目的任务。在终端中运行 <code>npm run</code> 可查看所有 npm 脚本。<strong>主要任务包括：</strong></p>
+    <p>我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/package.json">package.json</a>包含许多用于开发项目的任务。在终端中运行 <code>npm run</code> 可查看所有 npm 脚本。<strong>主要任务包括：</strong></p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -52,7 +52,7 @@
     <p>Dart Sass 使用 10 位的舍入精度，出于效率考虑不允许调整此值。我们在对生成的 CSS 进行后续处理（如压缩）时不会降低此精度，但如果你选择降低，我们建议至少保持 6 位精度，以避免浏览器舍入带来的问题。</p>
     <h2 id="autoprefixer">Autoprefixer<a class="anchor-link" href="#autoprefixer" aria-label="Autoprefixer 链接"></a></h2>
     <p>Bootstrap 使用<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>（已包含在我们的构建流程中）在构建时自动为某些 CSS 属性添加厂商前缀。这样既能节省时间和代码，让我们只需编写一次 CSS 的关键部分，又无需像 v3 中那样使用厂商 mixin。</p>
-    <p>我们通过 Autoprefixer 支持的浏览器列表维护在 GitHub 仓库中的单独文件里。详情请参阅<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.browserslistrc">.browserslistrc</a>。</p>
+    <p>我们通过 Autoprefixer 支持的浏览器列表维护在 GitHub 仓库中的单独文件里。详情请参阅<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/.browserslistrc">.browserslistrc</a>。</p>
     <h2 id="rtlcss">RTLCSS<a class="anchor-link" href="#rtlcss" aria-label="RTLCSS 链接"></a></h2>
     <p>
       Bootstrap 使用<a href="https://rtlcss.com/">RTLCSS</a>处理编译后的 CSS 并将其转换为 RTL——基本上就是用相反方向的属性替换水平方向相关的属性（例如 <code>padding-left</code>）。这让我们只需编写一次 CSS，并通过 RTLCSS 的<a href="https://rtlcss.com/learn/usage-guide/control-directives/">控制指令</a>和<a

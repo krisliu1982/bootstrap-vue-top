@@ -7,7 +7,47 @@
     <p>由于 <code>&lt;table&gt;</code> 元素在日历和日期选择器等第三方小部件中被广泛使用，Bootstrap 的表格是<strong>选择性启用</strong>的。为任意 <code>&lt;table&gt;</code> 添加基础类 <code>.table</code>，然后使用我们可选的修饰类或自定义样式进行扩展。Bootstrap 中的所有表格样式都不会被继承，这意味着任何嵌套表格都可以独立于父表格进行样式设置。</p>
     <p>使用最基本的表格标记，以下是基于 <code>.table</code> 的表格在 Bootstrap 中的外观。</p>
     <TableBs class="table" :simplified="false" />
-    <h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
+    <h3 id="tables-in-rounded-containers">圆角容器中的表格<a class="anchor-link" href="#tables-in-rounded-containers" aria-label="圆角容器中的表格"></a></h3>
+<p>表格单元格的背景默认是不透明的。当表格被放置在带有圆角的父元素内时，单元格背景可能会覆盖父元素的边框圆角。请为父元素添加<a href="/utilities/overflow"><code>.overflow-auto</code> 工具类</a>，使其圆角能够裁剪表格。这样一来，当表格宽度超过其容器时，表格还可以滚动。</p>
+    <Example code='<div class="border rounded-3 overflow-auto">
+  <table class="table table-striped mb-0">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>John</td>
+        <td>Doe</td>
+        <td>@social</td>
+      </tr>
+    </tbody>
+  </table>
+</div>' />
+<p>对于普通表格，你可以改用 <code>--bs-table-bg: transparent</code> 让父元素的背景透出来。而带有强调样式的表格（例如条纹表格或可悬停表格）仍然需要溢出工具类，因为它们的强调背景可能会覆盖圆角。</p>
+<CodeWrapper code='<div class="border rounded-3 bg-body">
+  <table class="table mb-0" style="--bs-table-bg: transparent;">
+    <!-- ... -->
+  </table>
+</div>' lang="html" />
+<h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
     <p>使用上下文类为表格、表格行或单个单元格着色。</p>
     <Callout>
       <p><strong>注意！</strong> 由于用于生成表格变体的 CSS 更为复杂，它们很可能要到 v6 才会有颜色模式自适应样式。</p>
@@ -815,7 +855,12 @@
   <nav class="bd-toc" aria-label="本页目录">
     <h6>本页目录</h6>
     <ul>
-      <li><a href="#overview">概览</a></li>
+      <li>
+        <a href="#overview">概览</a>
+        <ul>
+          <li><a href="#tables-in-rounded-containers">圆角容器中的表格</a></li>
+        </ul>
+      </li>
       <li><a href="#variants">变体</a></li>
       <li>
         <a href="#accented-tables">强调表格</a>

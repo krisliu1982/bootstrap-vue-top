@@ -503,7 +503,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <h3 id="embedding-youtube-videos">嵌入 YouTube 视频<a class="anchor-link" href="#embedding-youtube-videos" aria-label="嵌入 YouTube 视频链接"></a></h3>
     <p>在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。 更多信息请<a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a>。</p>
     <h2 id="optional-sizes">可选尺寸<a class="anchor-link" href="#optional-sizes" aria-label="可选尺寸链接"></a></h2>
-    <p>模态框有三种可选尺寸，可通过修饰类放置在 <code>.modal-dialog</code> 上。这些尺寸会在特定断点下生效，以避免在较窄的视口中出现水平滚动条。</p>
+    <p>模态框有四种可选尺寸，可通过修饰类放置在 <code>.modal-dialog</code> 上。这些尺寸会在特定断点下生效，以避免在较窄的视口中出现水平滚动条。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -534,22 +534,42 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
             <td><code>.modal-xl</code></td>
             <td><code>1140px</code></td>
           </tr>
+          <tr>
+            <td>超超大</td>
+            <td><code>.modal-xxl</code></td>
+            <td><code>1320px</code></td>
+          </tr>
         </tbody>
       </table>
     </div>
     <p>未加修饰类的默认模态框构成“中等”尺寸模态框。</p>
     <Example
       :showMarkup="false"
-      code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
+      code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXxl">Extra extra large modal</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>'
     />
     <CodeWrapper
-      code='&lt;div class="modal-dialog modal-xl"&gt;...&lt;/div&gt;
-&lt;div class="modal-dialog modal-lg"&gt;...&lt;/div&gt;
-&lt;div class="modal-dialog modal-sm"&gt;...&lt;/div&gt;'
+      code='<div class="modal-dialog modal-xxl">...</div>
+<div class="modal-dialog modal-xl">...</div>
+<div class="modal-dialog modal-lg">...</div>
+<div class="modal-dialog modal-sm">...</div>'
       lang="html"
     />
+    <div class="modal fade" id="exampleModalXxl" tabindex="-1" aria-labelledby="exampleModalXxlLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xxl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalXxlLabel">Extra extra large modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
     <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">

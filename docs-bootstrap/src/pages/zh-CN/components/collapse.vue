@@ -78,7 +78,32 @@
   </div>
 </div>'
     />
-    <h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>
+        <h2 id="nested-collapse">嵌套折叠<a class="anchor-link" href="#nested-collapse" aria-label="嵌套折叠"></a></h2>
+<p>折叠触发器可以放置在另一个 <code>.collapse</code> 元素内部。当你想要逐步显示额外内容时，这很有用。</p>
+    <Example code='<p class="d-inline-flex gap-1">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedParent" aria-expanded="false" aria-controls="collapseNestedParent">
+      Toggle parent
+    </button>
+  </p>
+  <div class="collapse" id="collapseNestedParent">
+    <div class="card card-body">
+      <p class="mb-2">
+        This is the parent collapse. It can contain links, buttons, and even other collapse triggers.
+      </p>
+      <p class="d-inline-flex gap-1 mb-0">
+        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedChild" aria-expanded="false" aria-controls="collapseNestedChild">
+          Toggle nested collapse
+        </button>
+      </p>
+      <div class="collapse mt-2" id="collapseNestedChild">
+        <div class="card card-body">
+          This is the nested collapse content.
+        </div>
+      </div>
+    </div>
+  </div>' />
+
+<h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>
     <p>
       请务必为控件元素添加 <code>aria-expanded</code>。该属性向屏幕阅读器和类似的辅助技术明确传达与该控件关联的折叠元素的当前状态。如果折叠元素默认处于关闭状态，则控件元素上的该属性应具有 <code>aria-expanded=&quot;false&quot;</code> 的值。如果你使用 <code>show</code> 类将折叠元素设置为默认打开，则应在控件上设置
       <code>aria-expanded=&quot;true&quot;</code>。插件将根据折叠元素是否已打开或关闭，自动切换控件上的此属性 （通过 JavaScript，或由于用户触发了另一个同样关联到相同折叠元素的控件元素）。如果控件元素的 HTML 元素不是按钮（例如 <code>&lt;a&gt;</code> 或 <code>&lt;div&gt;</code>），则应为该元素添加 <code>role=&quot;button&quot;</code> 属性。
@@ -135,8 +160,7 @@ const collapseList = [...collapseElementList].map(collapseEl =&gt; new bootstrap
             <td>选择器、DOM 元素</td>
             <td><code>null</code></td>
             <td>
-              如果提供了 parent，则当此折叠项显示时，指定父元素下的所有折叠元素都将关闭。（这类似于传统的折叠面板行为，取决于
-              <code>card</code> 类）。该属性必须设置在目标可折叠区域上。
+              如果提供了 parent，那么当此可折叠项显示时，指定 parent 下的所有可折叠元素都将被关闭。该属性必须设置在目标可折叠区域上。
             </td>
           </tr>
           <tr>
@@ -259,6 +283,7 @@ myCollapsible.addEventListener(&#39;hidden.bs.collapse&#39;, event =&gt; {
       <li><a href="#example">示例</a></li>
       <li><a href="#horizontal">水平方向</a></li>
       <li><a href="#multiple-toggles-and-targets">多个切换器和目标</a></li>
+            <li><a href="#nested-collapse">嵌套折叠</a></li>
       <li><a href="#accessibility">无障碍访问</a></li>
       <li>
         <a href="#css">CSS</a>

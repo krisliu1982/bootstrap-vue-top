@@ -16,7 +16,7 @@
       <li>在 <code>&lt;html&gt;</code> 元素上添加合适的 <code>lang</code> 属性，例如 <code>lang=&quot;ar&quot;</code>。</li>
     </ol>
     <p>接下来，你需要引入我们 CSS 的 RTL 版本。例如，下面是启用了 RTL 的编译并压缩后的 CSS 样式表：</p>
-    <CodeWrapper code='&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous"&gt;' lang="html" />
+    <CodeWrapper code='&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous"&gt;' lang="html" />
     <h3 id="starter-template">入门模板<a class="anchor-link" href="#starter-template" aria-label="入门模板链接"></a></h3>
     <p>你可以在下面这个修改过的 RTL 入门模板中看到上述要求的体现。</p>
     <CodeWrapper
@@ -28,7 +28,7 @@
     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 
     &lt;!-- Bootstrap CSS --&gt;
-    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous"&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous"&gt;
 
     &lt;title&gt;مرحبًا بالعالم!&lt;/title&gt;
   &lt;/head&gt;
@@ -38,12 +38,12 @@
     &lt;!-- Optional JavaScript; choose one of the two! --&gt;
 
     &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"&gt;&lt;/script&gt;
 
     &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
     &lt;!--
     &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;&lt;/script&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"&gt;&lt;/script&gt;
     --&gt;
   &lt;/body&gt;
 &lt;/html&gt;'

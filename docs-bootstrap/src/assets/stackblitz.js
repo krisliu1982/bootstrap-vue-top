@@ -16,8 +16,8 @@ import snippetsContent from './partials/snippets.js?raw';
 
 // These values will be replaced by Astro's Vite plugin
 const CONFIG = {
-  cssCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css',
-  jsBundleCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js',
+  cssCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css',
+  jsBundleCdn: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js',
   docsVersion: '5.3'
 };
 

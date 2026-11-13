@@ -18,7 +18,7 @@
     <p>在 Bootstrap 4 中，我们再次重写了项目，以应对两项关键的架构变化：迁移到 Sass 以及转向 CSS 的 flexbox。我们的初衷是推动采用更新的 CSS 属性、更少的依赖项，并让新技术在更多现代浏览器中普及，从而以微薄之力帮助 Web 开发社区向前迈进。</p>
     <p>我们最新的版本 Bootstrap 5 致力于在尽可能少引入重大破坏性更改的前提下改进 v4 的代码库。我们改进了现有功能和组件，移除了对旧版浏览器的支持，用原生 JavaScript 替代了 jQuery，并拥抱了 CSS 自定义属性等更具前瞻性的技术，将其作为我们工具链的一部分。</p>
     <h2 id="get-involved">参与其中<a class="anchor-link" href="#get-involved" aria-label="参与其中链接"></a></h2>
-    <p>通过<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>或提交 pull request 来参与 Bootstrap 的开发。阅读我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">贡献指南</a>，了解我们的开发方式。</p>
+    <p>通过<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>或提交 pull request 来参与 Bootstrap 的开发。阅读我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/.github/CONTRIBUTING.md">贡献指南</a>，了解我们的开发方式。</p>
     <DocsPager />
   </article>
 

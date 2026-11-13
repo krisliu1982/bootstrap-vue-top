@@ -12,7 +12,7 @@
         </span>
       </a>
     </div>
-    <p>通过<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>或提交 pull request 来参与 Bootstrap 的开发。阅读我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.8/.github/CONTRIBUTING.md">贡献指南</a>，了解我们的开发方式。</p>
+    <p>通过<a href="https://github.com/twbs/bootstrap/issues/new/choose">提交 issue</a>或提交 pull request 来参与 Bootstrap 的开发。阅读我们的<a href="https://github.com/twbs/bootstrap/blob/v5.3.9/.github/CONTRIBUTING.md">贡献指南</a>，了解我们的开发方式。</p>
     <DocsPager />
   </article>
 </template>

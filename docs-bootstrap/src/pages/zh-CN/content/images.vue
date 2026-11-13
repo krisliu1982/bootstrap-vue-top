@@ -34,6 +34,7 @@
     ></ExampleCustom>
     <h2 id="picture">Picture<a class="anchor-link" href="#picture" aria-label="Picture 链接"></a></h2>
     <p>如果你使用 <code>&lt;picture&gt;</code> 元素为特定的 <code>&lt;img&gt;</code> 指定多个 <code>&lt;source&gt;</code> 元素，请确保将 <code>.img-*</code> 类添加到 <code>&lt;img&gt;</code> 上，而不是 <code>&lt;picture&gt;</code> 标签上。</p>
+    <p>为 <code>&lt;img&gt;</code> 提供一个描述该图像的 <code>alt</code> 文本；如果它只是装饰性的，则提供一个空的 <code>alt=""</code>。下面示例中的 <code>alt="..."</code> 就是该文本的占位符。</p>
     <CodeWrapper
       code='&lt;picture&gt;
   &lt;source srcset="..." type="image/svg+xml"&gt;

@@ -209,7 +209,7 @@
 </div>'
     />
     <h2 id="without-labels">不带标签<a class="anchor-link" href="#without-labels" aria-label="不带标签链接"></a></h2>
-    <p>对于没有标签文本的复选框和单选框，可省略外层的 <code>.form-check</code>。请记住仍需为辅助技术提供某种形式的可访问名称（例如使用 <code>aria-label</code>）。详情请参阅<a href="/forms/overview/#accessibility">表单概述的无障碍访问</a>章节。</p>
+    <p>对于没有标签文本的复选框和单选框，省略包裹的 <code>.form-check</code>。请记住仍要为辅助技术提供可访问名称，例如使用 <code>aria-label</code>。该名称应说明控件的作用，例如 <code>aria-label="Select all rows"</code>，并替换下面示例中的 <code>...</code> 占位符。详情请参见<a href="/forms/overview/#accessibility">表单概览的无障碍</a>部分。</p>
     <Example
       code='<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">

@@ -192,7 +192,7 @@ const popover = new bootstrap.Popover(exampleEl, options)
           </tr>
           <tr>
             <td><code>content</code></td>
-            <td>string, element, function</td>
+            <td>null, string, element, function</td>
             <td><code>&#39;&#39;</code></td>
             <td>弹出框的文本内容。如果提供的是函数，则调用该函数时，其 <code>this</code> 引用将被设置为弹出框所附加到的元素。</td>
           </tr>
@@ -216,7 +216,7 @@ const popover = new bootstrap.Popover(exampleEl, options)
           </tr>
           <tr>
             <td><code>fallbackPlacements</code></td>
-            <td>string, array</td>
+            <td>array</td>
             <td><code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code></td>
             <td>
               通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的
@@ -231,7 +231,7 @@ const popover = new bootstrap.Popover(exampleEl, options)
           </tr>
           <tr>
             <td><code>offset</code></td>
-            <td>number, string, function</td>
+            <td>array, string, function</td>
             <td><code>[0, 8]</code></td>
             <td>
               弹出框相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：

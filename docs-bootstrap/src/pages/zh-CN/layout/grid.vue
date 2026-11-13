@@ -191,7 +191,7 @@
 </div>'
     />
     <h3 id="variable-width-content">可变宽度内容<a class="anchor-link" href="#variable-width-content" aria-label="可变宽度内容链接"></a></h3>
-    <p>使用 <code>col-{breakpoint}-auto</code> 类，根据内容的自然宽度来设置列的尺寸。</p>
+    <p>使用 <code>.col-auto</code> 和 <code>col-{breakpoint}-auto</code> 类，根据内容在各视口下或在特定断点处的自然宽度来确定列的尺寸。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -199,7 +199,7 @@
     <div class="col col-lg-2">
       1 of 3
     </div>
-    <div class="col-md-auto">
+    <div class="col-auto">
       Variable width content
     </div>
     <div class="col col-lg-2">
