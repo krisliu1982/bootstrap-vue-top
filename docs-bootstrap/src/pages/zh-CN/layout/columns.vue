@@ -175,13 +175,14 @@
 </div>'
     />
     <Callout>
-<p>如果该行使用了垂直间距（<code>.g-*</code> 或 <code>.gy-*</code>），那么换行元素也会从 <code>.row &gt; *</code> 获得间距外边距。这会增加额外的空间。请为换行元素添加 <code>.m-0</code> 和 <code>.p-0</code> 来移除它。</p>
-<CodeWrapper code='<div class="w-100 m-0 p-0"></div>
-' lang="html" />
-</Callout>
-    <p>
-      你也可以使用我们的<a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。
-    </p>
+      <p>如果该行使用了垂直间距（<code>.g-*</code> 或 <code>.gy-*</code>），那么换行元素也会从 <code>.row &gt; *</code> 获得间距外边距。这会增加额外的空间。请为换行元素添加 <code>.m-0</code> 和 <code>.p-0</code> 来移除它。</p>
+      <CodeWrapper
+        code='<div class="w-100 m-0 p-0"></div>
+'
+        lang="html"
+      />
+    </Callout>
+    <p>你也可以使用我们的<a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">

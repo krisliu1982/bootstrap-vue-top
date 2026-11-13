@@ -100,8 +100,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     />
     <Callout type="warning">
       <p>
-        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a>（用于通过 <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意 HTMLElement，以覆盖默认值
-        <code>&#39;clippingParents&#39;</code>，例如 <code>document.body</code>：
+        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a>（用于通过 <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意
+        HTMLElement，以覆盖默认值 <code>&#39;clippingParents&#39;</code>，例如 <code>document.body</code>：
       </p>
       <CodeWrapper
         code="const tooltip = new bootstrap.Tooltip(&#39;#example&#39;, {
@@ -206,9 +206,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>fallbackPlacements</code></td>
             <td>array</td>
             <td><code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code></td>
-            <td>
-              通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。
-            </td>
+            <td>通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。</td>
           </tr>
           <tr>
             <td><code>html</code></td>
@@ -224,10 +222,11 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>[0, 6]</code></td>
             <td>
               工具提示相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：
-              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组： <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a
-                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1"
-                >distance</a
-              >。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options">偏移量文档</a>。
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
+              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a
+                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options"
+                >偏移量文档</a
+              >。
             </td>
           </tr>
           <tr>
@@ -241,7 +240,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>null, object, function</td>
             <td><code>null</code></td>
             <td>
-              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper 的配置对象。
+              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper
+              的配置对象。
             </td>
           </tr>
           <tr>

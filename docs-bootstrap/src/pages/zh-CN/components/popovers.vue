@@ -235,10 +235,11 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td><code>[0, 8]</code></td>
             <td>
               弹出框相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：
-              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组： <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a
-                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1"
-                >distance</a
-              >。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options">偏移量文档</a>。
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
+              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a
+                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options"
+                >偏移量文档</a
+              >。
             </td>
           </tr>
           <tr>
@@ -252,7 +253,8 @@ const popover = new bootstrap.Popover(exampleEl, options)
             <td>null, object, function</td>
             <td><code>null</code></td>
             <td>
-              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper 的配置对象。
+              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper
+              的配置对象。
             </td>
           </tr>
           <tr>

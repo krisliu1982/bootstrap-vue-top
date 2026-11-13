@@ -558,18 +558,16 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       lang="html"
     />
     <div class="modal fade" id="exampleModalXxl" tabindex="-1" aria-labelledby="exampleModalXxlLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xxl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-4" id="exampleModalXxlLabel">Extra extra large modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-dialog modal-xxl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4" id="exampleModalXxlLabel">Extra extra large modal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">...</div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">

@@ -9,12 +9,13 @@
       <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a>。
     </p>
     <p>
-      下拉菜单构建于第三方库<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用 包含 Popper 的 <code>bootstrap.bundle.min.js</code> /
-      <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
+      下拉菜单构建于第三方库<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用 包含 Popper 的
+      <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
     </p>
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
-      <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a>标准定义了一种真正的<a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组 和子菜单。
+      <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a
+      >标准定义了一种真正的<a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组 和子菜单。
     </p>
     <p>
       另一方面，Bootstrap 的下拉菜单被设计为通用组件，适用于各种场景和标记结构。例如，可以创建包含额外输入框和表单控件的下拉菜单，如搜索框或登录表单。因此，Bootstrap 不期望（也不会自动添加）真正的 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单所需的任何 <code>role</code> 和
@@ -772,9 +773,7 @@
 </ul>'
     />
     <h3 id="text">文本<a class="anchor-link" href="#text" aria-label="文本链接"></a></h3>
-    <p>
-      在下拉菜单中放置任意自由形式的文本，并使用<a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。
-    </p>
+    <p>在下拉菜单中放置任意自由形式的文本，并使用<a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。</p>
     <Example
       code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
   <p>
@@ -786,9 +785,7 @@
 </div>'
     />
     <h3 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h3>
-    <p>
-      在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用<a href="/utilities/spacing">外边距或内边距工具类</a>给它留出所需的空白区域。
-    </p>
+    <p>在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用<a href="/utilities/spacing">外边距或内边距工具类</a>给它留出所需的空白区域。</p>
     <Example
       code='<div class="dropdown-menu">
   <form class="px-4 py-3">
@@ -1022,26 +1019,27 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>[0, 2]</code></td>
             <td>
               下拉菜单相对于其目标的偏移量。你可以在数据属性中传递以逗号分隔值的字符串，例如：
-              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组： <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a
-                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1"
-                >distance</a
-              >。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options">offset 文档</a>。
+              <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
+              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a
+                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options"
+                >offset 文档</a
+              >。
             </td>
           </tr>
           <tr>
             <td><code>popperConfig</code></td>
             <td>null, object, function</td>
             <td><code>null</code></td>
-            <td>
-              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个 Popper 配置对象。
-            </td>
+            <td>要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个 Popper 配置对象。</td>
           </tr>
           <tr>
             <td><code>reference</code></td>
             <td>string, element, object</td>
             <td><code>&#39;toggle&#39;</code></td>
             <td>
-              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#createpopper">构造函数文档</a>和<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/virtual-elements/">虚拟元素文档</a
+              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#createpopper">构造函数文档</a>和<a
+                href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/virtual-elements/"
+                >虚拟元素文档</a
               >。
             </td>
           </tr>

@@ -186,9 +186,7 @@ const accordionCollapseList = [...accordionCollapseElementList].map(accordionCol
             <td><code>parent</code></td>
             <td>选择器、DOM 元素</td>
             <td><code>null</code></td>
-            <td>
-              如果提供了 parent，那么当此可折叠项显示时，指定 parent 下的所有可折叠元素都将被关闭。该属性必须设置在目标可折叠区域上。
-            </td>
+            <td>如果提供了 parent，那么当此可折叠项显示时，指定 parent 下的所有可折叠元素都将被关闭。该属性必须设置在目标可折叠区域上。</td>
           </tr>
           <tr>
             <td><code>toggle</code></td>

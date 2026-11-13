@@ -8,8 +8,11 @@
     <p>使用最基本的表格标记，以下是基于 <code>.table</code> 的表格在 Bootstrap 中的外观。</p>
     <TableBs class="table" :simplified="false" />
     <h3 id="tables-in-rounded-containers">圆角容器中的表格<a class="anchor-link" href="#tables-in-rounded-containers" aria-label="圆角容器中的表格"></a></h3>
-<p>表格单元格的背景默认是不透明的。当表格被放置在带有圆角的父元素内时，单元格背景可能会覆盖父元素的边框圆角。请为父元素添加<a href="/utilities/overflow"><code>.overflow-auto</code> 工具类</a>，使其圆角能够裁剪表格。这样一来，当表格宽度超过其容器时，表格还可以滚动。</p>
-    <Example code='<div class="border rounded-3 overflow-auto">
+    <p>
+      表格单元格的背景默认是不透明的。当表格被放置在带有圆角的父元素内时，单元格背景可能会覆盖父元素的边框圆角。请为父元素添加<a href="/utilities/overflow"><code>.overflow-auto</code> 工具类</a>，使其圆角能够裁剪表格。这样一来，当表格宽度超过其容器时，表格还可以滚动。
+    </p>
+    <Example
+      code='<div class="border rounded-3 overflow-auto">
   <table class="table table-striped mb-0">
     <thead>
       <tr>
@@ -40,14 +43,18 @@
       </tr>
     </tbody>
   </table>
-</div>' />
-<p>对于普通表格，你可以改用 <code>--bs-table-bg: transparent</code> 让父元素的背景透出来。而带有强调样式的表格（例如条纹表格或可悬停表格）仍然需要溢出工具类，因为它们的强调背景可能会覆盖圆角。</p>
-<CodeWrapper code='<div class="border rounded-3 bg-body">
+</div>'
+    />
+    <p>对于普通表格，你可以改用 <code>--bs-table-bg: transparent</code> 让父元素的背景透出来。而带有强调样式的表格（例如条纹表格或可悬停表格）仍然需要溢出工具类，因为它们的强调背景可能会覆盖圆角。</p>
+    <CodeWrapper
+      code='<div class="border rounded-3 bg-body">
   <table class="table mb-0" style="--bs-table-bg: transparent;">
     <!-- ... -->
   </table>
-</div>' lang="html" />
-<h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
+</div>'
+      lang="html"
+    />
+    <h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
     <p>使用上下文类为表格、表格行或单个单元格着色。</p>
     <Callout>
       <p><strong>注意！</strong> 由于用于生成表格变体的 CSS 更为复杂，它们很可能要到 v6 才会有颜色模式自适应样式。</p>
