@@ -1,61 +1,60 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.0.12",
+  "version": "5.3.9",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
-  "description": "bootstrap-vue-top is a frontend framework based on Bootstrap & Vue.",
+  "description": "bootstrap-vue-top is a Vue extension for Bootstrap.",
   "files": [
     "dist",
     "src",
-    "website",
+    "docs",
     ".browserslistrc",
     "package.json",
     "postcss.config.js",
     "README.md",
-    "README.zh-CN.md",
     "LICENSE",
     "vite.config.js"
   ],
-  "main": "./dist/bootstrap-vue.umd.cjs",
-  "module": "./dist/bootstrap-vue.js",
+  "main": "./dist/bootstrap-vue-top.umd.cjs",
+  "module": "./dist/bootstrap-vue-top.js",
   "exports": {
     ".": {
-      "import": "./dist/bootstrap-vue.js",
-      "require": "./dist/bootstrap-vue.umd.cjs"
-    },
-    "./style.css": "./dist/bootstrap-vue.css"
+      "import": "./dist/bootstrap-vue-top.js",
+      "require": "./dist/bootstrap-vue-top.umd.cjs"
+    }
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
-    "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
-    "focus-trap": "^8.2.4",
-    "lodash-es": "^4.18.1"
+    "format": "prettier --write \"src/**/*.{js,vue,ts,json}\"",
+    "lint": "eslint --ext .js,.vue src"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@iconify-json/bi": "^1.2.7",
-    "@vitejs/plugin-vue": "^6.0.10",
+    "@popperjs/core": "^2.11.8",
+    "@vitejs/plugin-vue": "^6.0.11",
     "autoprefixer": "^10.6.2",
-    "prettier": "^3.9.10",
-    "sass": "^1.107.0",
+    "bootstrap": "^5.3.9",
+    "eslint": "^10.14.0",
+    "eslint-plugin-vue": "^10.12.1",
+    "prettier": "^3.10.1",
+    "sass": "^1.108.2",
     "unplugin-icons": "^22.5.0",
     "unplugin-vue-components": "^30.0.0",
-    "vite": "^8.3.5",
-    "vue": "^3.5.44"
+    "vite": "^8.3.8",
+    "vue": "^3.5.45"
   },
   "keywords": [
     "bootstrap",
     "vue",
     "ui",
     "ES6",
-    "javascript"
+    "js",
+    "ts"
   ],
   "author": "kris.liu",
   "license": "MIT"

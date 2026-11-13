@@ -39,11 +39,9 @@ export default defineConfig({
   build: {
     target: 'es2015',
     lib: {
-      entry: {
-        'bootstrap-vue': resolve(import.meta.dirname, 'src/index.js')
-      },
-      name: 'BootstrapVue',
-      fileName: 'bootstrap-vue',
+      entry: resolve(import.meta.dirname, 'src/index.js'),
+      name: 'BootstrapVueTop',
+      fileName: 'bootstrap-vue-top',
     },
     rolldownOptions: {
       external: ['vue'],
