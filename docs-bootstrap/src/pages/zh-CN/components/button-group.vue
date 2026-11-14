@@ -16,14 +16,13 @@
       <p>按钮组需要合适的 <code>role</code> 属性和明确的标签，以确保屏幕阅读器等辅助技术能够识别按钮已分组并进行播报。按钮组请使用 <code>role=&quot;group&quot;</code>，按钮工具栏请使用 <code>role=&quot;toolbar&quot;</code>。然后使用 <code>aria-label</code> 或 <code>aria-labelledby</code> 为它们添加标签。</p>
     </Callout>
     <p>
-      这些类也可以添加到链接组中，作为
-      <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a>的替代方案。
+      这些类也可以添加到链接组中，作为 <a href="/components/navs-tabs"><code>.nav</code> 导航组件</a> 的替代方案。
     </p>
     <Example
       code='<div class="btn-group">
- <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
- <a href="#" class="btn btn-primary">Link</a>
- <a href="#" class="btn btn-primary">Link</a>
+  <a href="#" class="btn btn-primary active" aria-current="page">Active link</a> 
+  <a href="#" class="btn btn-primary">Link</a> 
+  <a href="#" class="btn btn-primary">Link</a> 
 </div>'
     />
     <h2 id="mixed-styles">混合样式<a class="anchor-link" href="#mixed-styles" aria-label="混合样式链接"></a></h2>
@@ -43,7 +42,7 @@
 </div>'
     />
     <h2 id="checkbox-and-radio-button-groups">复选框和单选按钮组<a class="anchor-link" href="#checkbox-and-radio-button-groups" aria-label="复选框和单选按钮组链接"></a></h2>
-    <p>将按钮式的复选框和单选<a href="/forms/checks-radios">切换按钮</a>组合成外观无缝的按钮组。</p>
+    <p>将按钮式的复选框和单选 <a href="/forms/checks-radios">切换按钮</a> 组合成外观无缝的按钮组。</p>
     <Example
       code='<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
@@ -149,8 +148,8 @@
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
     </ul>
   </div>
 </div>'
@@ -175,8 +174,8 @@
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
     </ul>
   </div>
   <button type="button" class="btn btn-primary">Button</button>
@@ -186,8 +185,8 @@
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
     </ul>
   </div>
   <div class="btn-group dropend" role="group">
@@ -195,8 +194,8 @@
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
     </ul>
   </div>
   <div class="btn-group dropup" role="group">
@@ -204,8 +203,8 @@
       Dropdown
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a> </li>
     </ul>
   </div>
 </div>'

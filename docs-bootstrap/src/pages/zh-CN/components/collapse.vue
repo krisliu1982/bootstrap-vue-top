@@ -18,7 +18,7 @@
       code='<p class="d-inline-flex gap-1">
  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
-  </a>
+  </a> 
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
     Button with data-bs-target
   </button>
@@ -30,7 +30,7 @@
 </div>'
     />
     <h2 id="horizontal">水平方向<a class="anchor-link" href="#horizontal" aria-label="水平方向链接"></a></h2>
-    <p>折叠插件支持水平折叠。添加 <code>.collapse-horizontal</code> 修饰类，以过渡 <code>width</code> 而不是 <code>height</code>，并在直接子元素上设置 <code>width</code>。你可以随意编写自己的自定义 Sass、使用内联样式，或使用我们的 <a href="/utilities/sizing">宽度工具类</a>。</p>
+    <p>折叠插件支持水平折叠。添加 <code>.collapse-horizontal</code> 修饰类，以过渡 <code>width</code> 而不是 <code>height</code>，并在直接子元素上设置 <code>width</code>。你可以随意编写自己的自定义 Sass、使用内联样式，或使用我们的 <a href="/utilities/sizing">宽度工具类</a> 。</p>
     <Callout>
       <p>
         请注意，虽然下面的示例设置了 <code>min-height</code>，以避免在我们的文档中出现过多的重绘，但这并不是明确要求的。
@@ -57,7 +57,7 @@
     </p>
     <Example
       code='<p class="d-inline-flex gap-1">
- <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+ <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> 
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
 </p>
@@ -134,7 +134,7 @@
     <p>只需为元素添加 <code>data-bs-toggle=&quot;collapse&quot;</code> 和一个 <code>data-bs-target</code>，即可自动将一个或多个折叠元素的控制权分配给该元素。<code>data-bs-target</code> 属性接受一个 CSS 选择器，以应用折叠效果。请确保为折叠元素添加 <code>collapse</code> 类。如果你希望它默认打开， 请添加额外的 <code>show</code> 类。</p>
     <p>
       要为可折叠区域添加类似折叠面板的分组管理，请添加 data 属性
-      <code>data-bs-parent=&quot;#selector&quot;</code>。有关更多信息，请参阅<a href="/components/accordion">折叠面板页面</a>。
+      <code>data-bs-parent=&quot;#selector&quot;</code>。有关更多信息，请参阅 <a href="/components/accordion">折叠面板页面</a> 。
     </p>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
     <p>手动启用：</p>

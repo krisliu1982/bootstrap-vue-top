@@ -63,7 +63,7 @@
     <p>每个断点的选取都旨在舒适地容纳宽度为 12 的倍数的容器。断点也代表了常见设备尺寸和视口尺寸的一个子集——它们并不专门针对每一种用例或设备。相反，这些范围提供了一个强大且一致的基础，几乎可以在此基础上为任何设备构建布局。</p>
     <p>这些断点可以通过 Sass 自定义——你可以在我们的 <code>_variables.scss</code> 样式表中的 Sass map 里找到它们。</p>
     <ScssDocs name="grid-breakpoints" file="scss/_variables.scss" />
-    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 CSS 部分</a>。</p>
+    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅 <a href="/layout/grid#css">网格文档的 CSS 部分</a> 。</p>
     <h2 id="media-queries">媒体查询<a class="anchor-link" href="#media-queries" aria-label="媒体查询链接"></a></h2>
     <p>
       由于 Bootstrap 是以移动优先的方式开发的，我们使用了一些

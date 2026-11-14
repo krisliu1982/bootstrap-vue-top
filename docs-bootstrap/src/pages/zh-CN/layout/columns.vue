@@ -4,18 +4,18 @@
     <p class="lead">了解如何借助我们的 flexbox 网格系统，使用少量选项来修改列的对齐、排序和偏移。此外，了解如何使用列类来管理非网格元素的宽度。</p>
 
     <Callout>
-      <p><strong>注意！</strong> 在深入了解如何修改和自定义网格列之前，请务必先<a href="/layout/grid">阅读网格页面</a>。</p>
+      <p><strong>注意！</strong> 在深入了解如何修改和自定义网格列之前，请务必先 <a href="/layout/grid">阅读网格页面</a> 。</p>
     </Callout>
     <h2 id="how-they-work">工作原理<a class="anchor-link" href="#how-they-work" aria-label="工作原理链接"></a></h2>
     <ul>
       <li>
-        <p><strong>列构建在网格的 flexbox 架构之上。</strong> Flexbox 意味着我们可以选择修改单个列，以及<a href="/layout/grid#row-columns">在行级别修改列组</a>。你可以选择列如何增长、收缩或以其他方式变化。</p>
+        <p><strong>列构建在网格的 flexbox 架构之上。</strong> Flexbox 意味着我们可以选择修改单个列，以及 <a href="/layout/grid#row-columns">在行级别修改列组</a> 。你可以选择列如何增长、收缩或以其他方式变化。</p>
       </li>
       <li>
-        <p><strong>构建网格布局时，所有内容都放在列中。</strong> Bootstrap 网格的层级从<a href="/layout/containers">容器</a>到行、到列、再到你的内容。在极少数情况下，你可能会合并内容和列，但请注意这可能会产生意外的后果。</p>
+        <p><strong>构建网格布局时，所有内容都放在列中。</strong> Bootstrap 网格的层级从 <a href="/layout/containers">容器</a> 到行、到列、再到你的内容。在极少数情况下，你可能会合并内容和列，但请注意这可能会产生意外的后果。</p>
       </li>
       <li>
-        <p><strong>Bootstrap 包含预定义的类，用于创建快速的响应式布局。</strong> 借助<a href="/layout/breakpoints">六个断点</a>以及每个网格层级十二列，我们已经为你构建了数十个类，用于创建所需的布局。如果你愿意，可以通过 Sass 禁用它们。</p>
+        <p><strong>Bootstrap 包含预定义的类，用于创建快速的响应式布局。</strong> 借助 <a href="/layout/breakpoints">六个断点</a> 以及每个网格层级十二列，我们已经为你构建了数十个类，用于创建所需的布局。如果你愿意，可以通过 Sass 禁用它们。</p>
       </li>
     </ul>
     <h2 id="alignment">对齐<a class="anchor-link" href="#alignment" aria-label="对齐链接"></a></h2>
@@ -182,7 +182,7 @@
         lang="html"
       />
     </Callout>
-    <p>你也可以使用我们的<a href="/utilities/display">响应式显示工具类</a>在特定断点处应用这种换行。</p>
+    <p>你也可以使用我们的 <a href="/utilities/display">响应式显示工具类</a> 在特定断点处应用这种换行。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">
@@ -234,7 +234,7 @@
   </div>
 </div>'
     />
-    <p>如果你需要更多的 <code>.order-*</code> 类，可以通过修改我们的 <code>$utilities</code> Sass map 来添加新的类。详情请阅读<a href="/customize/sass#maps-and-loops">我们的 Sass map 与循环文档</a>或<a href="/utilities/api#modify-utilities">修改工具类文档</a>。</p>
+    <p>如果你需要更多的 <code>.order-*</code> 类，可以通过修改我们的 <code>$utilities</code> Sass map 来添加新的类。详情请阅读 <a href="/customize/sass#maps-and-loops">我们的 Sass map 与循环文档</a> 或 <a href="/utilities/api#modify-utilities">修改工具类文档</a> 。</p>
     <CodeWrapper
       code='$utilities: map-merge(
   $utilities,
@@ -257,7 +257,7 @@
       lang="scss"
     />
     <h3 id="offsetting-columns">偏移列<a class="anchor-link" href="#offsetting-columns" aria-label="偏移列链接"></a></h3>
-    <p>你可以通过两种方式偏移网格列：我们的响应式 <code>.offset-</code> 网格类和我们的<a href="/utilities/spacing">外边距工具类</a>。网格类的尺寸与列相匹配，而外边距则更适合宽度可变的快速布局。</p>
+    <p>你可以通过两种方式偏移网格列：我们的响应式 <code>.offset-</code> 网格类和我们的 <a href="/utilities/spacing">外边距工具类</a> 。网格类的尺寸与列相匹配，而外边距则更适合宽度可变的快速布局。</p>
     <h4 id="offset-classes">偏移类</h4>
     <p>使用 <code>.offset-md-*</code> 类将列向右移动。这些类会将列的左边距增加 <code>*</code> 列。例如，<code>.offset-md-4</code> 将 <code>.col-md-4</code> 向右移动四列。</p>
     <Example
@@ -278,7 +278,7 @@
     />
     <p>
       除了在响应式断点处清除列之外，你可能还需要重置偏移量。请在
-      <a href="https://getbootstrap.com/docs/5.3/examples/grid/">网格示例</a>中查看其实际效果。
+      <a href="https://getbootstrap.com/docs/5.3/examples/grid/">网格示例</a> 中查看其实际效果。
     </p>
     <Example
       class="bd-example-row"
@@ -294,7 +294,7 @@
       </div>'
     />
     <h4 id="margin-utilities">外边距工具类</h4>
-    <p>随着 v4 转向 flexbox，你可以使用 <code>.me-auto</code> 之类的外边距工具类来强制同级列彼此远离，包括对<a href="/layout/grid#variable-width-content">可变宽度列</a>（例如 <code>.col-auto</code>）也是如此。</p>
+    <p>随着 v4 转向 flexbox，你可以使用 <code>.me-auto</code> 之类的外边距工具类来强制同级列彼此远离，包括对 <a href="/layout/grid#variable-width-content">可变宽度列</a> （例如 <code>.col-auto</code>）也是如此。</p>
     <Example
       class="bd-example-row"
       code='<div class="container text-center">

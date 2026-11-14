@@ -7,7 +7,7 @@
     <Callout type="warning">
       <p>
         使用最新版本的 Dart Sass 编译 Sass 源文件时会显示 Sass 弃用警告。这不会阻止 Bootstrap 的编译或使用。我们正在
-        <a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a>，但在此期间可以忽略这些弃用通知。
+        <a href="https://github.com/twbs/bootstrap/issues/40962">着手长期修复</a> ，但在此期间可以忽略这些弃用通知。
       </p>
     </Callout>
     <h2 id="file-structure">文件结构<a class="anchor-link" href="#file-structure" aria-label="文件结构"></a></h2>
@@ -91,7 +91,7 @@
     <h2 id="compiling">编译<a class="anchor-link" href="#compiling" aria-label="编译"></a></h2>
     <p>
       为了在浏览器中将自定义 Sass 代码作为 CSS 使用，你需要一个 Sass 编译器。Sass 以 CLI 包的形式提供，但你也可以使用其他构建工具（如
-      <a href="https://gulpjs.com/">Gulp</a>或<a href="https://webpack.js.org/">Webpack</a>）或 GUI 应用程序来编译它。某些 IDE 也内置了 Sass 编译器，或以可下载扩展的形式提供。
+      <a href="https://gulpjs.com/">Gulp</a> 或 <a href="https://webpack.js.org/">Webpack</a> ）或 GUI 应用程序来编译它。某些 IDE 也内置了 Sass 编译器，或以可下载扩展的形式提供。
     </p>
     <p>我们喜欢使用 CLI 来编译 Sass，但你可以使用任何你偏好的方式。在命令行中运行以下命令：</p>
     <CodeWrapper
@@ -103,9 +103,9 @@ sass --watch ./scss/custom.scss ./css/custom.css
 "
       lang="shell"
     />
-    <p>请在<a href="https://sass-lang.com/install/">sass-lang.com/install</a>和<a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">使用 VS Code 编译</a>中了解更多选项。</p>
+    <p>请在 <a href="https://sass-lang.com/install/">sass-lang.com/install</a> 和 <a href="https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css">使用 VS Code 编译</a> 中了解更多选项。</p>
     <Callout>
-      <p><strong>将 Bootstrap 与其他构建工具配合使用？</strong>可以考虑阅读我们关于使用<a href="/getting-started/webpack">Webpack</a>、<a href="/getting-started/parcel">Parcel</a>或<a href="/getting-started/vite">Vite</a>编译的指南。我们还在 <a href="https://github.com/twbs/examples">GitHub 上的示例仓库</a>中提供了可用于生产环境的演示。</p>
+      <p><strong>将 Bootstrap 与其他构建工具配合使用？</strong>可以考虑阅读我们关于使用 <a href="/getting-started/webpack">Webpack</a> 、 <a href="/getting-started/parcel">Parcel</a> 或 <a href="/getting-started/vite">Vite</a> 编译的指南。我们还在 <a href="https://github.com/twbs/examples">GitHub 上的示例仓库</a> 中提供了可用于生产环境的演示。</p>
     </Callout>
     <h2 id="including">引入<a class="anchor-link" href="#including" aria-label="引入"></a></h2>
     <p>CSS 编译完成后，你可以将其引入到你的 HTML 文件中。在 <code>index.html</code> 中，你需要引入编译后的 CSS 文件。如果你更改了编译后 CSS 文件的路径，请务必更新它。</p>
@@ -212,7 +212,7 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     <p>例如，我们在链接、按钮和表单状态中使用了 <code>$theme-colors</code> 中的 <code>primary</code>、<code>success</code> 和 <code>danger</code> 键。替换这些键的值应该不会带来问题，但移除它们可能会导致 Sass 编译问题。在这些情况下，你需要修改使用这些值的 Sass 代码。</p>
     <h2 id="functions">函数<a class="anchor-link" href="#functions" aria-label="函数"></a></h2>
     <h3 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色"></a></h3>
-    <p>除了我们已有的<a href="/customize/color#color-sass-maps">Sass 映射</a>之外，主题色还可以作为独立变量使用，例如 <code>$primary</code>。</p>
+    <p>除了我们已有的 <a href="/customize/color#color-sass-maps">Sass 映射</a> 之外，主题色还可以作为独立变量使用，例如 <code>$primary</code>。</p>
     <CodeWrapper
       code=".custom-element {
   color: $gray-100;
@@ -244,11 +244,11 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
     <h3 id="color-contrast">颜色对比度<a class="anchor-link" href="#color-contrast" aria-label="颜色对比度"></a></h3>
     <p>
       为了满足
-      <a href="https://www.w3.org/TR/WCAG/">Web 内容无障碍指南（WCAG）</a>的对比度要求，作者<strong>必须</strong>提供至少<a href="https://www.w3.org/TR/WCAG/#contrast-minimum">4.5:1 的文本颜色对比度</a>和至少 <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">3:1 的非文本颜色对比度</a>，极少数例外情况除外。
+      <a href="https://www.w3.org/TR/WCAG/">Web 内容无障碍指南（WCAG）</a> 的对比度要求，作者<strong>必须</strong>提供至少 <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">4.5:1 的文本颜色对比度</a> 和至少 <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">3:1 的非文本颜色对比度</a> ，极少数例外情况除外。
     </p>
     <p>
-      为帮助解决这一问题，我们在 Bootstrap 中包含了 <code>color-contrast</code> 函数。它使用<a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG 对比度算法</a>，在 <code>sRGB</code> 颜色空间中基于<a href="https://www.w3.org/TR/WCAG/#dfn-relative-luminance">相对亮度</a
-      >计算对比度阈值，从而根据指定的基础颜色自动返回浅色（<code>#fff</code>）、深色（<code>#212529</code>）或黑色（<code>#000</code>）对比色。此函数对于生成多个类的 mixin 或循环特别有用。
+      为帮助解决这一问题，我们在 Bootstrap 中包含了 <code>color-contrast</code> 函数。它使用 <a href="https://www.w3.org/TR/WCAG/#dfn-contrast-ratio">WCAG 对比度算法</a> ，在 <code>sRGB</code> 颜色空间中基于
+      <a href="https://www.w3.org/TR/WCAG/#dfn-relative-luminance">相对亮度</a>计算对比度阈值，从而根据指定的基础颜色自动返回浅色（<code>#fff</code>）、深色（<code>#212529</code>）或黑色（<code>#000</code>）对比色。此函数对于生成多个类的 mixin 或循环特别有用。
     </p>
     <p>例如，从我们的 <code>$theme-colors</code> 映射生成色板：</p>
     <CodeWrapper
@@ -317,7 +317,7 @@ $border-width: 0;
     <h2 id="mixins">Mixin<a class="anchor-link" href="#mixins" aria-label="Mixin"></a></h2>
     <p>我们的 <code>scss/mixins/</code> 目录包含大量 mixin，它们为 Bootstrap 的各个部分提供支持，也可以在你的项目中使用。</p>
     <h3 id="color-schemes">配色方案<a class="anchor-link" href="#color-schemes" aria-label="配色方案"></a></h3>
-    <p>我们提供了 <code>prefers-color-scheme</code> 媒体查询的简写 mixin，支持 <code>light</code> 和 <code>dark</code> 配色方案。有关颜色模式 mixin 的信息，请参阅<a href="/customize/color-modes">颜色模式文档</a>。</p>
+    <p>我们提供了 <code>prefers-color-scheme</code> 媒体查询的简写 mixin，支持 <code>light</code> 和 <code>dark</code> 配色方案。有关颜色模式 mixin 的信息，请参阅 <a href="/customize/color-modes">颜色模式文档</a> 。</p>
     <ScssDocs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" />
     <CodeWrapper
       code=".custom-element {

@@ -4,7 +4,7 @@
     <p class="lead">Bootstrap 从 v5.3.0 起支持颜色模式（或称主题）。你可以探索我们默认的浅色颜色模式和新的深色模式，或使用我们的样式作为模板来创建自己的颜色模式。</p>
 
     <Callout>
-      <p><strong>亲自试一试！</strong>从<a href="https://github.com/twbs/examples/tree/main/color-modes">twbs/examples 仓库</a>下载将 Bootstrap 与 Stylelint 以及颜色模式配合使用的源代码和工作演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html">在 StackBlitz 中打开该示例</a>。</p>
+      <p><strong>亲自试一试！</strong>从 <a href="https://github.com/twbs/examples/tree/main/color-modes">twbs/examples 仓库</a> 下载将 Bootstrap 与 Stylelint 以及颜色模式配合使用的源代码和工作演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index.html">在 StackBlitz 中打开该示例</a> 。</p>
     </Callout>
     <h2 id="dark-mode">深色模式<a class="anchor-link" href="#dark-mode" aria-label="深色模式"></a></h2>
     <p>
@@ -12,7 +12,7 @@
     </p>
     <p>
       或者，你也可以借助我们的颜色模式 mixin 切换到媒体查询的实现方式——详见
-      <a href="#building-with-sass">用法部分</a>。但请注意，这会让你无法像下面展示的那样按组件逐个更改主题。
+      <a href="#building-with-sass">用法部分</a> 。但请注意，这会让你无法像下面展示的那样按组件逐个更改主题。
     </p>
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>例如，要更改下拉菜单的颜色模式，请将 <code>data-bs-theme=&quot;light&quot;</code> 或 <code>data-bs-theme=&quot;dark&quot;</code> 添加到父级 <code>.dropdown</code> 上。这样，无论全局颜色模式是什么，这些下拉菜单都会以指定的主题值显示。</p>
@@ -23,12 +23,12 @@
     Default dropdown
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item active" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Another action</a> </li>
+    <li><a class="dropdown-item" href="#">Something else here</a> </li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">Separated link</a> </li>
   </ul>
 </div>
 
@@ -37,12 +37,12 @@
     Dark dropdown
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item active" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Another action</a> </li>
+    <li><a class="dropdown-item" href="#">Something else here</a> </li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">Separated link</a> </li>
   </ul>
 </div>'
     />
@@ -71,7 +71,7 @@
     </ul>
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法"></a></h2>
     <h3 id="enable-dark-mode">启用深色模式<a class="anchor-link" href="#enable-dark-mode" aria-label="启用深色模式"></a></h3>
-    <p>将 <code>data-bs-theme=&quot;dark&quot;</code> 属性添加到 <code>&lt;html&gt;</code> 元素，即可在整个项目中启用内置的深色颜色模式。这会将深色颜色模式应用于所有组件和元素，但已应用特定 <code>data-bs-theme</code> 属性的元素除外。基于<a href="/getting-started/introduction#quick-start">快速开始模板</a>：</p>
+    <p>将 <code>data-bs-theme=&quot;dark&quot;</code> 属性添加到 <code>&lt;html&gt;</code> 元素，即可在整个项目中启用内置的深色颜色模式。这会将深色颜色模式应用于所有组件和元素，但已应用特定 <code>data-bs-theme</code> 属性的元素除外。基于 <a href="/getting-started/introduction#quick-start">快速开始模板</a> ：</p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
 &lt;html lang="en" data-bs-theme="dark"&gt;
@@ -157,12 +157,12 @@
           Dropdown button
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCustom">
-          <li><a class="dropdown-item active" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item active" href="#">Action</a> </li>
+          <li><a class="dropdown-item" href="#">Action</a> </li>
+          <li><a class="dropdown-item" href="#">Another action</a> </li>
+          <li><a class="dropdown-item" href="#">Something else here</a> </li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
+          <li><a class="dropdown-item" href="#">Separated link</a> </li>
         </ul>
       </div>
     </div>'
@@ -261,7 +261,7 @@
     />
     <h2 id="    adding-theme-colors">添加主题色<a class="anchor-link" href="#adding-theme-colors" aria-label="添加主题色"></a></h2>
     <p>
-      对于我们的某些组件（如<a href="/components/alerts">警告框</a>和<a href="/components/list-group">列表组</a>），仅在 <code>$theme-colors</code> 中添加新颜色是不够的。还必须为浅色主题在 <code>$theme-colors-text</code>、<code>$theme-colors-bg-subtle</code> 和 <code>$theme-colors-border-subtle</code> 中定义新颜色； 同时还要为深色主题在
+      对于我们的某些组件（如 <a href="/components/alerts">警告框</a> 和 <a href="/components/list-group">列表组</a> ），仅在 <code>$theme-colors</code> 中添加新颜色是不够的。还必须为浅色主题在 <code>$theme-colors-text</code>、<code>$theme-colors-bg-subtle</code> 和 <code>$theme-colors-border-subtle</code> 中定义新颜色； 同时还要为深色主题在
       <code>$theme-colors-text-dark</code>、<code>$theme-colors-bg-subtle-dark</code> 和 <code>$theme-colors-border-subtle-dark</code> 中定义。
     </p>
     <p>这是一个手动过程，因为 Sass 无法从现有变量或映射生成自己的 Sass 变量。在未来版本的 Bootstrap 中，我们将重新审视这一设置以减少重复。</p>
@@ -310,13 +310,13 @@ $theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $c
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量"></a></h3>
-    <p>数十个根级 CSS 变量被重复用作深色模式的覆盖。它们的作用域限定在颜色模式选择器上，该选择器默认为 <code>data-bs-theme</code>，但<a href="#building-with-sass">可以配置</a>为使用 <code>prefers-color-scheme</code> 媒体查询。请将这些变量作为生成你自己新 颜色模式的参考。</p>
+    <p>数十个根级 CSS 变量被重复用作深色模式的覆盖。它们的作用域限定在颜色模式选择器上，该选择器默认为 <code>data-bs-theme</code>，但 <a href="#building-with-sass">可以配置</a> 为使用 <code>prefers-color-scheme</code> 媒体查询。请将这些变量作为生成你自己新 颜色模式的参考。</p>
     <ScssDocs name="root-dark-mode-vars" file="scss/_root.scss" />
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量"></a></h3>
     <p>我们深色颜色模式的 CSS 变量部分由 <code>_variables-dark.scss</code> 中深色模式专用的 Sass 变量生成。这还包括一些用于更改组件中嵌入 SVG 颜色的自定义覆盖。</p>
     <ScssDocs name="sass-dark-mode-vars" file="scss/_variables-dark.scss" />
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin"></a></h3>
-    <p>深色模式以及你创建的任何自定义颜色模式的样式，都可以使用可自定义的 <code>color-mode()</code> mixin，将作用域适当地限定到 <code>data-bs-theme</code> 属性选择器或媒体查询。更多细节请参阅<a href="#building-with-sass">Sass 用法部分</a>。</p>
+    <p>深色模式以及你创建的任何自定义颜色模式的样式，都可以使用可自定义的 <code>color-mode()</code> mixin，将作用域适当地限定到 <code>data-bs-theme</code> 属性选择器或媒体查询。更多细节请参阅 <a href="#building-with-sass">Sass 用法部分</a> 。</p>
     <ScssDocs name="color-mode-mixin" file="scss/mixins/_color-mode.scss" />
     <DocsPager />
   </article>

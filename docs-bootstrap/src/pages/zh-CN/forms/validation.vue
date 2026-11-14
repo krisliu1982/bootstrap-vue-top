@@ -12,10 +12,10 @@
       <li>HTML 表单校验通过 CSS 的两个伪类 <code>:invalid</code> 和 <code>:valid</code> 应用，作用于 <code>&lt;input&gt;</code>、<code>&lt;select&gt;</code> 和 <code>&lt;textarea&gt;</code> 元素。</li>
       <li>Bootstrap 将 <code>:invalid</code> 和 <code>:valid</code> 样式的作用范围限定为父级 <code>.was-validated</code> 类，该类通常应用于 <code>&lt;form&gt;</code>。否则，任何没有值的必填字段都会在页面加载时显示为无效。这样，你可以自行选择何时激活这些样式（通常在尝试提交表单之后）。</li>
       <li>要重置表单的外观（例如在使用 Ajax 动态提交表单的情况下），可在提交后再次从 <code>&lt;form&gt;</code> 中移除 <code>.was-validated</code> 类。</li>
-      <li>作为后备方案，<a href="#server-side">服务端校验</a>可以使用 <code>.is-invalid</code> 和 <code>.is-valid</code> 类代替伪类，它们不需要父级 <code>.was-validated</code> 类。</li>
+      <li>作为后备方案， <a href="#server-side">服务端校验</a> 可以使用 <code>.is-invalid</code> 和 <code>.is-valid</code> 类代替伪类，它们不需要父级 <code>.was-validated</code> 类。</li>
       <li>由于 CSS 工作原理的限制，我们目前无法在没有任何自定义 JavaScript 帮助下，对 DOM 中位于表单控件之前的 <code>&lt;label&gt;</code> 应用样式。</li>
-      <li>所有现代浏览器都支持<a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">约束校验 API</a>，这是一系列用于校验表单控件的 JavaScript 方法。</li>
-      <li>反馈消息可以使用<a href="#browser-defaults">浏览器默认样式</a>（每个浏览器各不相同，且无法通过 CSS 设置样式），也可以使用我们借助额外 HTML 和 CSS 的自定义反馈样式。</li>
+      <li>所有现代浏览器都支持 <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api">约束校验 API</a> ，这是一系列用于校验表单控件的 JavaScript 方法。</li>
+      <li>反馈消息可以使用 <a href="#browser-defaults">浏览器默认样式</a> （每个浏览器各不相同，且无法通过 CSS 设置样式），也可以使用我们借助额外 HTML 和 CSS 的自定义反馈样式。</li>
       <li>你可以在 JavaScript 中使用 <code>setCustomValidity</code> 提供自定义的有效性消息。</li>
     </ul>
     <p>基于以上说明，请查看下面关于我们的自定义表单校验样式、可选的服务端类和浏览器默认样式的演示。</p>
@@ -164,7 +164,7 @@
     <h2 id="server-side">服务端<a class="anchor-link" href="#server-side" aria-label="服务端链接"></a></h2>
     <p>我们推荐使用客户端校验，但如果你需要服务端校验，可以使用 <code>.is-invalid</code> 和 <code>.is-valid</code> 来标记无效和有效的表单字段。请注意，这些类同样支持 <code>.invalid-feedback</code>。</p>
     <p>对于无效字段，请使用 <code>aria-describedby</code> 确保无效反馈/错误消息与相关表单字段关联（注意，该属性允许引用多个 <code>id</code>，以防该字段已指向其他表单文本）。</p>
-    <p>为了解决<a href="https://github.com/twbs/bootstrap/issues/25110">圆角问题</a>，输入框组需要额外添加 <code>.has-validation</code> 类。</p>
+    <p>为了解决 <a href="https://github.com/twbs/bootstrap/issues/25110">圆角问题</a> ，输入框组需要额外添加 <code>.has-validation</code> 类。</p>
     <Example
       code='<form class="row g-3">
   <div class="col-md-4">
@@ -350,7 +350,7 @@
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="form-feedback-variables" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors" file="scss/_variables.scss" /><ScssDocs name="form-validation-colors-dark" file="scss/_variables-dark.scss" />
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
-    <p>两个 mixin 通过我们的<a href="#sass-loops">循环</a>组合起来，用于生成表单校验反馈样式。</p>
+    <p>两个 mixin 通过我们的 <a href="#sass-loops">循环</a> 组合起来，用于生成表单校验反馈样式。</p>
     <ScssDocs name="form-validation-mixins" file="scss/mixins/_forms.scss" />
     <h3 id="sass-maps">Sass map<a class="anchor-link" href="#sass-maps" aria-label="Sass map 链接"></a></h3>
     <p>这是来自 <code>_variables.scss</code> 的校验 Sass map。覆盖或扩展它即可生成不同或额外的状态。</p>

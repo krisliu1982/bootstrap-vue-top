@@ -20,7 +20,7 @@
 </div>'
     />
     <h2 id="with-stacks">与堆叠配合使用<a class="anchor-link" href="#with-stacks" aria-label="与堆叠配合使用链接"></a></h2>
-    <p>它们也可以用在<a href="/helpers/stacks">堆叠</a>中：</p>
+    <p>它们也可以用在 <a href="/helpers/stacks">堆叠</a> 中：</p>
     <Example
       class="bd-example-flex"
       code='<div class="hstack gap-3">

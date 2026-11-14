@@ -9,8 +9,8 @@
     </p>
     <Example
       code='<h2 class="visually-hidden">Title for screen readers</h2>
-<a class="visually-hidden-focusable" href="#content">Skip to main content</a>
-<div class="visually-hidden-focusable">A container with a<a href="#">focusable element</a>.</div>'
+<a class="visually-hidden-focusable" href="#content">Skip to main content</a> 
+<div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a> .</div>'
     />
     <p><code>visually-hidden</code> 和 <code>visually-hidden-focusable</code> 也都可以作为 mixin 使用。</p>
     <CodeWrapper

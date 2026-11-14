@@ -49,7 +49,7 @@
     <h2 id="native-font-stack">原生字体栈<a class="anchor-link" href="#native-font-stack" aria-label="原生字体栈链接"></a></h2>
     <p>
       Bootstrap 使用“原生字体栈”或“系统字体栈”，以在每台设备和操作系统上获得最佳的文本渲染效果。这些系统字体是专门针对当今设备设计的，在屏幕上的渲染效果更好，并支持可变字体等特性。阅读更多关于
-      <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a>。
+      <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">原生字体栈的<em>Smashing Magazine</em> 文章</a> 。
     </p>
     <CodeWrapper
       code='$font-family-sans-serif:
@@ -123,11 +123,11 @@ sans-serif,
     <Example code="<p>This is an example paragraph.</p>" />
     <h2 id="links">链接<a class="anchor-link" href="#links" aria-label="链接链接"></a></h2>
     <p>链接会应用默认的 <code>color</code> 和下划线。虽然链接会在 <code>:hover</code> 时发生变化，但它们不会因是否被 <code>:visited</code> 访问过而改变。它们也不会获得特殊的 <code>:focus</code> 样式。</p>
-    <Example code='<a href="#">This is an example link</a>' />
+    <Example code=' <a href="#">This is an example link</a> ' />
     <p>从 v5.3.x 起，链接的 <code>color</code> 使用 <code>rgba()</code> 和新的 <code>-rgb</code> CSS 变量设置，从而可以轻松自定义链接颜色的不透明度。使用 <code>--bs-link-opacity</code> CSS 变量更改链接颜色的不透明度：</p>
-    <Example code='<a href="#" style="--bs-link-opacity: .5">This is an example link</a>' />
+    <Example code=' <a href="#" style="--bs-link-opacity: .5">This is an example link</a> ' />
     <p>占位链接——即没有 <code>href</code> 的链接——会通过更具体的选择器进行定位，其 <code>color</code> 和 <code>text-decoration</code> 会被重置为默认值。</p>
-    <Example code="<a>This is a placeholder link</a>" />
+    <Example code="<a>This is a placeholder link</a> " />
     <h2 id="horizontal-rules">水平分隔线<a class="anchor-link" href="#horizontal-rules" aria-label="水平分隔线链接"></a></h2>
     <p><code>&lt;hr&gt;</code> 元素已被简化。与浏览器默认行为类似，<code>&lt;hr&gt;</code> 通过 <code>border-top</code> 设置样式，具有默认的 <code>opacity: .25</code>，并通过 <code>color</code> 自动继承其 <code>border-color</code>，包括当 <code>color</code> 通过父级设置时。它们可以使用文本、边框和不透明度工具类进行修改。</p>
     <Example
@@ -188,7 +188,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <Example code="<samp>This text is meant to be treated as sample output from a computer program.</samp>" />
     <h2 id="tables">表格<a class="anchor-link" href="#tables" aria-label="表格链接"></a></h2>
     <p>
-      表格经过了轻微调整，以设置 <code>&lt;caption&gt;</code> 的样式、折叠边框，并确保 <code>text-align</code> 保持一致。边框、内边距等方面的其他更改由<a href="/content/tables"><code>.table</code> 类</a>提供。
+      表格经过了轻微调整，以设置 <code>&lt;caption&gt;</code> 的样式、折叠边框，并确保 <code>text-align</code> 保持一致。边框、内边距等方面的其他更改由 <a href="/content/tables"><code>.table</code> 类</a> 提供。
     </p>
     <Example
       code="<table>
@@ -378,7 +378,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
 
       <address>
         <strong>Full Name</strong><br/>
-       <a href="mailto:first.last@example.com">first.last@example.com</a>
+        <a href="mailto:first.last@example.com">first.last@example.com</a> 
       </address>'
     />
     <h3 id="blockquote">块引用<a class="anchor-link" href="#blockquote" aria-label="块引用链接"></a></h3>
@@ -419,7 +419,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
     <h2 id="html5-hidden-attribute">HTML5 <code>[hidden]</code> 属性<a class="anchor-link" href="#html5-hidden-attribute" aria-label="HTML5 [hidden] 属性链接"></a></h2>
     <p>
       HTML5 添加了
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a>，默认样式为 <code>display: none</code>。借鉴<a href="https://purecss.io/">PureCSS</a>的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden">一个名为 <code>[hidden]</code> 的新全局属性</a> ，默认样式为 <code>display: none</code>。借鉴 <a href="https://purecss.io/">PureCSS</a> 的思路，我们通过设置 <code>[hidden] { display: none !important; }</code> 来改进此默认行为，帮助防止其
       <code>display</code> 被意外覆盖。
     </p>
     <CodeWrapper code='&lt;input type="text" hidden&gt;' lang="html" />
@@ -427,7 +427,7 @@ To edit settings, press <kbd><kbd>Ctrl</kbd> + <kbd>,</kbd></kbd>"
       <p>由于 <code>[hidden]</code> 与 jQuery 的 <code>$(...).hide()</code> 和 <code>$(...).show()</code> 方法不兼容，我们不特别推荐使用 <code>[hidden]</code> 而非其他管理元素 <code>display</code> 的技术。</p>
     </Callout>
     <p>
-      如果只是想切换元素的可见性（即不修改其 <code>display</code>，元素仍会影响文档流），请改用<a href="/utilities/visibility"><code>.invisible</code> 类</a>。
+      如果只是想切换元素的可见性（即不修改其 <code>display</code>，元素仍会影响文档流），请改用 <a href="/utilities/visibility"><code>.invisible</code> 类</a> 。
     </p>
     <DocsPager />
   </article>

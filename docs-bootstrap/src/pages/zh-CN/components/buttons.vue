@@ -21,7 +21,7 @@
     <p><code>.btn</code> 类旨在与 <code>&lt;button&gt;</code> 元素配合使用。不过，你也可以在 <code>&lt;a&gt;</code> 或 <code>&lt;input&gt;</code> 元素上使用这些类（尽管某些浏览器可能会呈现略有不同的渲染效果）。</p>
     <p>当在 <code>&lt;a&gt;</code> 元素上使用按钮类，用于触发页面内功能（例如折叠内容）而非链接到新页面或当前页面内的某个部分时，应为这些链接添加 <code>role=&quot;button&quot;</code>，以便向屏幕阅读器等辅助技术正确传达其用途。</p>
     <Example
-      code='<a class="btn btn-primary" href="#" role="button">Link</a>
+      code='<a class="btn btn-primary" href="#" role="button">Link</a> 
 <button class="btn btn-primary" type="submit">Button</button>
 <input class="btn btn-primary" type="button" value="Input">
 <input class="btn btn-primary" type="submit" value="Submit">
@@ -67,8 +67,8 @@
       <li>使用 <code>&lt;a&gt;</code> 的禁用按钮<em>不应</em>包含 <code>href</code> 属性。</li>
     </ul>
     <Example
-      code='<a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a>
-<a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>'
+      code='<a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary link</a> 
+<a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a> '
     />
     <h3 id="link-functionality-caveat">链接功能注意事项<a class="anchor-link" href="#link-functionality-caveat" aria-label="链接功能注意事项链接"></a></h3>
     <p>
@@ -76,8 +76,8 @@
       <code>pointer-events: none</code> 的浏览器中，键盘导航也不受影响，这意味着有视力的键盘用户和辅助技术用户仍然能够激活这些链接。因此，为了安全起见，除了 <code>aria-disabled=&quot;true&quot;</code> 之外，还应在这类链接上添加 <code>tabindex=&quot;-1&quot;</code> 属性，以防止它们获得键盘焦点，并使用自定义 JavaScript 完全禁用其功能。
     </p>
     <Example
-      code='<a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
-<a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>'
+      code=' <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a> 
+ <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a> '
     />
     <h2 id="block-buttons">块级按钮<a class="anchor-link" href="#block-buttons" aria-label="块级按钮链接"></a></h2>
     <p>结合使用显示工具类和间距工具类，可以创建响应式的整宽“块级按钮”堆叠，类似 Bootstrap 4 中的效果。通过使用工具类而非按钮专用类，我们可以更好地控制间距、对齐方式和响应式行为。</p>
@@ -135,14 +135,14 @@
 </p>'
     /><Example
       code='<p class="d-inline-flex gap-1">
- <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a>
- <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
- <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+  <a href="#" class="btn" role="button" data-bs-toggle="button">Toggle link</a> 
+  <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a> 
+ <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a> 
 </p>
 <p class="d-inline-flex gap-1">
- <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
- <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
- <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a> 
+  <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a> 
+ <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a> 
 </p>'
     />
     <h3 id="methods">方法<a class="anchor-link" href="#methods" aria-label="方法链接"></a></h3>

@@ -586,7 +586,7 @@
     <h2 id="media-object">媒体对象<a class="anchor-link" href="#media-object" aria-label="媒体对象链接"></a></h2>
     <p>
       想在 Bootstrap 4 中复刻
-      <a href="https://getbootstrap.com/docs/4.6/components/media-object/">媒体对象组件</a>吗？借助几个弹性布局工具类，你就能立即重现它，而且比以往更加灵活、更易于定制。
+      <a href="https://getbootstrap.com/docs/4.6/components/media-object/">媒体对象组件</a> 吗？借助几个弹性布局工具类，你就能立即重现它，而且比以往更加灵活、更易于定制。
     </p>
     <ExampleCustom
       code='<div class="d-flex">

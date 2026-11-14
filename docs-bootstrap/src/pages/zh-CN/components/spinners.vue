@@ -15,7 +15,7 @@
 </div>'
     />
     <h3 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色链接"></a></h3>
-    <p>边框加载动画使用 <code>currentColor</code> 作为其 <code>border-color</code>，这意味着你可以使用<a href="/utilities/colors">文本颜色工具类</a>来自定义颜色。你可以在标准加载动画上使用我们的任何文本颜色工具类。</p>
+    <p>边框加载动画使用 <code>currentColor</code> 作为其 <code>border-color</code>，这意味着你可以使用 <a href="/utilities/colors">文本颜色工具类</a> 来自定义颜色。你可以在标准加载动画上使用我们的任何文本颜色工具类。</p>
     <Example
       :code="
         data['theme-colors']
@@ -38,7 +38,7 @@
   <span class="visually-hidden">Loading...</span>
 </div>'
     />
-    <p>同样地，这个加载动画使用 <code>currentColor</code> 构建，因此你可以通过<a href="/utilities/colors">文本颜色工具类</a>轻松更改其外观。下面是蓝色的示例，以及支持的各种变体。</p>
+    <p>同样地，这个加载动画使用 <code>currentColor</code> 构建，因此你可以通过 <a href="/utilities/colors">文本颜色工具类</a> 轻松更改其外观。下面是蓝色的示例，以及支持的各种变体。</p>
     <Example
       :code="
         data['theme-colors']
@@ -53,14 +53,14 @@
     <h2 id="alignment">对齐<a class="anchor-link" href="#alignment" aria-label="对齐链接"></a></h2>
     <p>Bootstrap 中的加载动画使用 <code>rem</code>、<code>currentColor</code> 和 <code>display: inline-flex</code> 构建。这意味着它们可以轻松调整大小、更改颜色并快速对齐。</p>
     <h3 id="margin">外边距<a class="anchor-link" href="#margin" aria-label="外边距链接"></a></h3>
-    <p>使用诸如 <code>.m-5</code> 的<a href="/utilities/spacing">外边距工具类</a>来轻松设置间距。</p>
+    <p>使用诸如 <code>.m-5</code> 的 <a href="/utilities/spacing">外边距工具类</a> 来轻松设置间距。</p>
     <Example
       code='<div class="spinner-border m-5" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>'
     />
     <h3 id="placement">放置<a class="anchor-link" href="#placement" aria-label="放置链接"></a></h3>
-    <p>使用<a href="/utilities/flex">flexbox 工具类</a>、<a href="/utilities/float">浮动工具类</a>或<a href="/utilities/text">文本对齐</a>工具类，将加载动画精确放置到任何场景中你需要的位置。</p>
+    <p>使用 <a href="/utilities/flex">flexbox 工具类</a> 、 <a href="/utilities/float">浮动工具类</a> 或 <a href="/utilities/text">文本对齐</a> 工具类，将加载动画精确放置到任何场景中你需要的位置。</p>
     <h4 id="flex">Flex</h4>
     <Example
       code='<div class="d-flex justify-content-center">

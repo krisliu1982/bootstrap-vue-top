@@ -19,7 +19,7 @@
         <figcaption class="figure-caption">A caption for the above image.</figcaption>
       </figure></ExampleCustom
     >
-    <p>使用我们的<a href="/utilities/text#text-alignment">文本工具类</a>，即可轻松对齐图片说明。</p>
+    <p>使用我们的 <a href="/utilities/text#text-alignment">文本工具类</a> ，即可轻松对齐图片说明。</p>
 
     <ExampleCustom
       code='<figure class="figure">

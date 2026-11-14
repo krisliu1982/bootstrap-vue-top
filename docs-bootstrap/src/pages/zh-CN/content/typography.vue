@@ -6,10 +6,10 @@
     <h2 id="global-settings">全局设置<a class="anchor-link" href="#global-settings" aria-label="全局设置链接"></a></h2>
     <p>
       Bootstrap 设置了基本的全局显示、排版和链接样式。当需要更多控制时，请查看
-      <a href="/utilities/text">文本工具类</a>。
+      <a href="/utilities/text">文本工具类</a> 。
     </p>
     <ul>
-      <li>使用<a href="/content/reboot#native-font-stack">原生字体栈</a>，为每个操作系统和设备选择最佳的 <code>font-family</code>。</li>
+      <li>使用 <a href="/content/reboot#native-font-stack">原生字体栈</a> ，为每个操作系统和设备选择最佳的 <code>font-family</code>。</li>
       <li>
         为了实现更具包容性和可访问性的字号缩放，我们使用浏览器的默认根
         <code>font-size</code>（通常为 16px），以便访问者可以根据需要自定义其浏览器默认值。
@@ -144,7 +144,7 @@
     </ul>
     <p>虽然上面没有展示，但请随意在 HTML5 中使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code>。<code>&lt;b&gt;</code> 用于突出显示单词或短语而不传达额外的重要性，而 <code>&lt;i&gt;</code> 主要用于语音、技术术语等。</p>
     <h2 id="text-utilities">文本工具类<a class="anchor-link" href="#text-utilities" aria-label="文本工具类链接"></a></h2>
-    <p>使用我们的<a href="/utilities/text">文本工具类</a>和<a href="/utilities/colors">颜色工具类</a>来更改文本对齐、变换、样式、粗细、行高、装饰和颜色。</p>
+    <p>使用我们的 <a href="/utilities/text">文本工具类</a> 和 <a href="/utilities/colors">颜色工具类</a> 来更改文本对齐、变换、样式、粗细、行高、装饰和颜色。</p>
     <h2 id="abbreviations">缩写<a class="anchor-link" href="#abbreviations" aria-label="缩写链接"></a></h2>
     <p>HTML 的 <code>&lt;abbr&gt;</code> 元素用于缩写和首字母缩略词的风格化实现，可在悬停时显示展开版本。缩写默认带有下划线，并获得帮助光标，以便在悬停时为辅助技术的用户提供额外的上下文。</p>
     <p>为缩写添加 <code>.initialism</code>，以获得稍小的字号。</p>
@@ -259,18 +259,18 @@
     <h2 id="responsive-font-sizes">响应式字号<a class="anchor-link" href="#responsive-font-sizes" aria-label="响应式字号链接"></a></h2>
     <p>
       在 Bootstrap 5 中，我们默认启用了响应式字号，使文本可以在不同的设备和视口尺寸下更自然地缩放。请查看
-      <a href="/getting-started/rfs">RFS 页面</a>了解其工作原理。
+      <a href="/getting-started/rfs">RFS 页面</a> 了解其工作原理。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>标题有一些专用于尺寸和间距的变量。</p>
     <ScssDocs name="headings-variables" file="scss/_variables.scss" />
-    <p>此处以及<a href="/content/reboot">重启动</a>中介绍的其他排版元素也有专用变量。</p>
+    <p>此处以及 <a href="/content/reboot">重启动</a> 中介绍的其他排版元素也有专用变量。</p>
     <ScssDocs name="type-variables" file="scss/_variables.scss" />
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
     <p>
       排版没有专用的 mixin，但 Bootstrap 确实使用了
-      <a href="/getting-started/rfs">响应式字号（RFS）</a>。
+      <a href="/getting-started/rfs">响应式字号（RFS）</a> 。
     </p>
     <DocsPager />
   </article>

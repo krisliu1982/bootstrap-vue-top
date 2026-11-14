@@ -9,7 +9,7 @@
     <TableBs class="table" :simplified="false" />
     <h3 id="tables-in-rounded-containers">圆角容器中的表格<a class="anchor-link" href="#tables-in-rounded-containers" aria-label="圆角容器中的表格"></a></h3>
     <p>
-      表格单元格的背景默认是不透明的。当表格被放置在带有圆角的父元素内时，单元格背景可能会覆盖父元素的边框圆角。请为父元素添加<a href="/utilities/overflow"><code>.overflow-auto</code> 工具类</a>，使其圆角能够裁剪表格。这样一来，当表格宽度超过其容器时，表格还可以滚动。
+      表格单元格的背景默认是不透明的。当表格被放置在带有圆角的父元素内时，单元格背景可能会覆盖父元素的边框圆角。请为父元素添加 <a href="/utilities/overflow"><code>.overflow-auto</code> 工具类</a> ，使其圆角能够裁剪表格。这样一来，当表格宽度超过其容器时，表格还可以滚动。
     </p>
     <Example
       code='<div class="border rounded-3 overflow-auto">
@@ -246,7 +246,7 @@
       lang="html"
     />
     <h2 id="how-do-the-variants-and-accented-tables-work">变体和强调表格是如何工作的？<a class="anchor-link" href="#how-do-the-variants-and-accented-tables-work" aria-label="变体和强调表格是如何工作的？链接"></a></h2>
-    <p>对于强调表格（<a href="#striped-rows">条纹行</a>、<a href="#striped-columns">条纹列</a>、<a href="#hoverable-rows">可悬停行</a>和<a href="#active-tables">活动表格</a>），我们使用了一些技巧，使这些效果适用于我们所有的<a href="#variants">表格变体</a>：</p>
+    <p>对于强调表格（ <a href="#striped-rows">条纹行</a> 、 <a href="#striped-columns">条纹列</a> 、 <a href="#hoverable-rows">可悬停行</a> 和 <a href="#active-tables">活动表格</a> ），我们使用了一些技巧，使这些效果适用于我们所有的 <a href="#variants">表格变体</a> ：</p>
     <ul>
       <li>我们首先使用 <code>--bs-table-bg</code> 自定义属性设置表格单元格的背景。随后所有表格变体都会将该自定义属性设置为给表格单元格着色。这样一来，即使使用半透明颜色作为表格背景，也不会出现问题。</li>
       <li>
@@ -267,7 +267,7 @@
     <h3 id="bordered-tables">带边框的表格<a class="anchor-link" href="#bordered-tables" aria-label="带边框的表格链接"></a></h3>
     <p>添加 <code>.table-bordered</code>，在表格及单元格的所有边上显示边框。</p>
     <TableBs class="table table-bordered" />
-    <p>可以添加<a href="/utilities/borders#border-color">边框颜色工具类</a>来更改颜色：</p>
+    <p>可以添加 <a href="/utilities/borders#border-color">边框颜色工具类</a> 来更改颜色：</p>
     <TableBs class="table table-bordered border-primary" />
     <h3 id="tables-without-borders">无边框表格<a class="anchor-link" href="#tables-without-borders" aria-label="无边框表格链接"></a></h3>
     <p>添加 <code>.table-borderless</code> 以显示无边框的表格。</p>
@@ -310,7 +310,7 @@
 </table>'
     />
     <h2 id="vertical-alignment">垂直对齐<a class="anchor-link" href="#vertical-alignment" aria-label="垂直对齐链接"></a></h2>
-    <p><code>&lt;thead&gt;</code> 的表格单元格始终垂直对齐到底部。<code>&lt;tbody&gt;</code> 中的表格单元格从 <code>&lt;table&gt;</code> 继承其对齐方式，默认对齐到顶部。使用<a href="/utilities/vertical-align">垂直对齐</a>类在需要的地方重新对齐。</p>
+    <p><code>&lt;thead&gt;</code> 的表格单元格始终垂直对齐到底部。<code>&lt;tbody&gt;</code> 中的表格单元格从 <code>&lt;table&gt;</code> 继承其对齐方式，默认对齐到顶部。使用 <a href="/utilities/vertical-align">垂直对齐</a> 类在需要的地方重新对齐。</p>
     <Example
       :showMarkup="false"
       code='<div class="table-responsive">

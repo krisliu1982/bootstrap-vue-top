@@ -6,12 +6,12 @@
     <h2 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h2>
     <p>每组表单字段都应放在 <code>&lt;form&gt;</code> 元素中。Bootstrap 不为 <code>&lt;form&gt;</code> 元素提供默认样式，但浏览器默认提供了一些强大的特性。</p>
     <ul>
-      <li>初次接触浏览器表单？建议查阅<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN 表单文档</a>，了解概述以及可用属性的完整列表。</li>
+      <li>初次接触浏览器表单？建议查阅 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN 表单文档</a> ，了解概述以及可用属性的完整列表。</li>
       <li><code>&lt;form&gt;</code> 内的 <code>&lt;button&gt;</code> 默认是 <code>type=&quot;submit&quot;</code>，因此请尽量明确并始终包含 <code>type</code>。</li>
     </ul>
     <p>由于 Bootstrap 对几乎所有表单控件都应用了 <code>display: block</code> 和 <code>width: 100%</code>，因此表单默认会垂直堆叠。可以使用其他类为每个表单改变这一布局。</p>
     <h2 id="utilities">工具类<a class="anchor-link" href="#utilities" aria-label="工具类链接"></a></h2>
-    <p><a href="/utilities/spacing">外边距工具类</a>是为表单添加结构的最简单方式，可将标签、控件、可选的表单文本以及表单校验消息进行基本的分组。我们建议坚持使用 <code>margin-bottom</code> 工具类，并在整个表单中统一使用同一方向，以保持一致性。</p>
+    <p><a href="/utilities/spacing">外边距工具类</a> 是为表单添加结构的最简单方式，可将标签、控件、可选的表单文本以及表单校验消息进行基本的分组。我们建议坚持使用 <code>margin-bottom</code> 工具类，并在整个表单中统一使用同一方向，以保持一致性。</p>
     <p>你可以随意使用 <code>&lt;fieldset&gt;</code>、<code>&lt;div&gt;</code> 或几乎任何其他元素来构建表单。</p>
     <Example
       code='<div class="mb-3">
@@ -39,7 +39,7 @@
     />
     <h2 id="gutters">间距<a class="anchor-link" href="#gutters" aria-label="间距链接"></a></h2>
     <p>
-      通过添加<a href="/layout/gutters">间距修饰类</a>，你可以控制行内方向和块级方向的间距宽度。<strong>同样需要启用 <code>$enable-grid-classes</code> Sass 变量</strong>（默认已启用）。
+      通过添加 <a href="/layout/gutters">间距修饰类</a> ，你可以控制行内方向和块级方向的间距宽度。<strong>同样需要启用 <code>$enable-grid-classes</code> Sass 变量</strong>（默认已启用）。
     </p>
     <Example
       code='<div class="row g-3">
@@ -262,7 +262,7 @@
 </form>'
     />
     <h2 id="inline-forms">行内表单<a class="anchor-link" href="#inline-forms" aria-label="行内表单链接"></a></h2>
-    <p>使用 <code>.row-cols-*</code> 类创建响应式水平布局。通过添加<a href="/layout/gutters">间距修饰类</a>，我们可以在水平和垂直方向上设置间距。在较窄的移动端视口中，<code>.col-12</code> 有助于将表单控件等元素堆叠排列。<code>.align-items-center</code> 将表单元素居中对齐，使 <code>.form-check</code> 正确对齐。</p>
+    <p>使用 <code>.row-cols-*</code> 类创建响应式水平布局。通过添加 <a href="/layout/gutters">间距修饰类</a> ，我们可以在水平和垂直方向上设置间距。在较窄的移动端视口中，<code>.col-12</code> 有助于将表单控件等元素堆叠排列。<code>.align-items-center</code> 将表单元素居中对齐，使 <code>.form-check</code> 正确对齐。</p>
     <Example
       code='<form class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">

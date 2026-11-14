@@ -5,13 +5,13 @@
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-webpack.png" width="100%" alt="" /><Callout>
       <p>
-        <strong>想直接跳到结尾？</strong>从<a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples 仓库</a>下载本指南的源码和可运行演示。你也可以
+        <strong>想直接跳到结尾？</strong>从 <a href="https://github.com/twbs/examples/tree/main/webpack">twbs/examples 仓库</a> 下载本指南的源码和可运行演示。你也可以
         <a href="https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index.html">在 StackBlitz 中打开该示例</a>
         进行实时编辑。
       </p>
     </Callout>
     <h2 id="what-is-webpack">什么是 Webpack？<a class="anchor-link" href="#what-is-webpack" aria-label="什么是 Webpack？链接"></a></h2>
-    <p><a href="https://webpack.js.org/">Webpack</a>是一个 JavaScript 模块打包工具，它处理模块及其依赖以生成静态资源。它简化了对包含多个文件和依赖的复杂 Web 应用的管理。</p>
+    <p><a href="https://webpack.js.org/">Webpack</a> 是一个 JavaScript 模块打包工具，它处理模块及其依赖以生成静态资源。它简化了对包含多个文件和依赖的复杂 Web 应用的管理。</p>
     <h2 id="setup">准备工作<a class="anchor-link" href="#setup" aria-label="准备工作链接"></a></h2>
     <p>我们将从头开始构建一个使用 Bootstrap 的 Webpack 项目，因此在真正开始之前有一些前提条件和前期步骤。本指南要求你已安装 Node.js，并熟悉终端操作。</p>
     <ol>
@@ -246,7 +246,7 @@ module.exports = {
           下面简要回顾一下为什么我们需要所有这些加载器。<code>style-loader</code> 将 CSS 注入到 HTML 页面 <code>&lt;head&gt;</code> 中的 <code>&lt;style&gt;</code> 元素里，<code>css-loader</code> 帮助处理 <code>@import</code> 和 <code>url()</code>，<code>postcss-loader</code> 是 Autoprefixer 所必需的，而 <code>sass-loader</code> 让我们可以使用
           Sass。
         </p>
-        <p><strong>注意：</strong>使用最新版本的 Dart Sass 编译源 Sass 文件时会显示 Sass 弃用警告。这不会阻止 Bootstrap 的编译或使用。我们正在<a href="https://github.com/twbs/bootstrap/issues/40962">着手进行长期修复</a>，但在此期间可以 忽略这些弃用提示。</p>
+        <p><strong>注意：</strong>使用最新版本的 Dart Sass 编译源 Sass 文件时会显示 Sass 弃用警告。这不会阻止 Bootstrap 的编译或使用。我们正在 <a href="https://github.com/twbs/bootstrap/issues/40962">着手进行长期修复</a> ，但在此期间可以 忽略这些弃用提示。</p>
       </li>
       <li>
         <p><strong>现在，让我们导入 Bootstrap 的 CSS。</strong>在 <code>src/scss/styles.scss</code> 中添加以下内容，以导入 Bootstrap 的所有源 Sass。</p>
@@ -257,7 +257,7 @@ module.exports = {
           lang="scss"
         />
         <p>
-          <em>如果你愿意，也可以单独导入我们的样式表。<a href="/customize/sass#importing">阅读我们的 Sass 导入文档</a>了解详情。</em>
+          <em>如果你愿意，也可以单独导入我们的样式表。 <a href="/customize/sass#importing">阅读我们的 Sass 导入文档</a> 了解详情。</em>
         </p>
       </li>
       <li>
@@ -281,7 +281,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
           lang="javascript"
         />
         <p>
-          <em><a href="/getting-started/javascript/">阅读我们的 JavaScript 文档</a>，了解有关如何使用 Bootstrap 插件的更多信息。</em>
+          <em> <a href="/getting-started/javascript/">阅读我们的 JavaScript 文档</a> ，了解有关如何使用 Bootstrap 插件的更多信息。</em>
         </p>
       </li>
       <li>
@@ -289,14 +289,14 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/webpack-dev-server-bootstrap.png" alt="正在运行 Bootstrap 的 Webpack 开发服务器" />
         <p>
           现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
-          <a href="https://github.com/twbs/examples/tree/main/webpack">查看完整的 Webpack 示例项目</a>， 了解如何引入额外的自定义 Sass，以及如何通过仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
+          <a href="https://github.com/twbs/examples/tree/main/webpack">查看完整的 Webpack 示例项目</a> ， 了解如何引入额外的自定义 Sass，以及如何通过仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
     </ol>
     <h2 id="production-optimizations">生产环境优化<a class="anchor-link" href="#production-optimizations" aria-label="生产环境优化链接"></a></h2>
     <p>
       根据你的配置，你可能希望实施一些额外的安全性和速度优化，以便在生产环境中运行项目。请注意，这些优化并未应用于
-      <a href="https://github.com/twbs/examples/tree/main/webpack">Webpack 示例项目</a>，需由你自行实施。
+      <a href="https://github.com/twbs/examples/tree/main/webpack">Webpack 示例项目</a> ，需由你自行实施。
     </p>
     <h3 id="extracting-css">提取 CSS<a class="anchor-link" href="#extracting-css" aria-label="提取 CSS 链接"></a></h3>
     <p>我们上面配置的 <code>style-loader</code> 会方便地将 CSS 输出到打包文件中，因此无需在 <code>dist/index.html</code> 中手动加载 CSS 文件。不过，这种方式可能无法与严格的内容安全策略（CSP）配合使用，而且由于打包体积较大，它可能会成为应用程序的瓶颈。</p>

@@ -121,7 +121,7 @@
     />
     <h2 id="datalists">数据列表<a class="anchor-link" href="#datalists" aria-label="数据列表链接"></a></h2>
     <p>数据列表允许你在 <code>&lt;input&gt;</code> 中访问（并自动补全）一组 <code>&lt;option&gt;</code>。它们与 <code>&lt;select&gt;</code> 元素类似，但菜单样式的限制和差异更多。虽然大多数浏览器和操作系统都对 <code>&lt;datalist&gt;</code> 元素提供了一定支持，但它们的样式充其量也只是不一致的。</p>
-    <p>进一步了解<a href="https://caniuse.com/datalist">数据列表元素的支持情况</a>。</p>
+    <p>进一步了解 <a href="https://caniuse.com/datalist">数据列表元素的支持情况</a> 。</p>
     <Example
       code='<label for="exampleDataList" class="form-label">Datalist example</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">

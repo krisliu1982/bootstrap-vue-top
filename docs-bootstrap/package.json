@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,vue,ts,json}\"",
     "lint": "eslint --ext .js,.vue src",
-    "findpage": "npx pagefind --site dist",
-    "deploy": "wrangler deploy"
+    "deploy": "vite-ssg build && npx pagefind --site dist && wrangler deploy"
   },
   "dependencies": {
     "@pagefind/component-ui": "^1.6.0",

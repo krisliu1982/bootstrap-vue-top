@@ -6,9 +6,9 @@
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>以下是开始使用导航栏之前你需要了解的内容：</p>
     <ul>
-      <li>导航栏需要一个包裹的 <code>.navbar</code>，并配合 <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> 以实现响应式折叠，以及<a href="#color-schemes">配色方案</a>类。</li>
-      <li>导航栏及其内容默认是流式的。更改<a href="#containers">容器</a>以不同方式限制其水平宽度。</li>
-      <li>使用我们的<a href="/utilities/spacing">间距</a>和<a href="/utilities/flex">弹性盒子</a>工具类来控制导航栏内的间距和对齐。</li>
+      <li>导航栏需要一个包裹的 <code>.navbar</code>，并配合 <code>.navbar-expand{-sm|-md|-lg|-xl|-xxl}</code> 以实现响应式折叠，以及 <a href="#color-schemes">配色方案</a> 类。</li>
+      <li>导航栏及其内容默认是流式的。更改 <a href="#containers">容器</a> 以不同方式限制其水平宽度。</li>
+      <li>使用我们的 <a href="/utilities/spacing">间距</a> 和 <a href="/utilities/flex">弹性盒子</a> 工具类来控制导航栏内的间距和对齐。</li>
       <li>导航栏默认是响应式的，但你可以轻松修改它们来改变这一点。响应式行为依赖于我们的折叠（Collapse）JavaScript 插件。</li>
       <li>使用 <code>&lt;nav&gt;</code> 元素来确保无障碍性；如果使用更通用的元素（如 <code>&lt;div&gt;</code>），请为每个导航栏添加 <code>role=&quot;navigation&quot;</code>，以便向辅助技术用户明确标识其为地标区域。</li>
       <li>使用 <code>aria-current=&quot;page&quot;</code> 表示当前页面，或使用 <code>aria-current=&quot;true&quot;</code> 表示一组中的当前项，以此指示当前项。</li>
@@ -20,41 +20,41 @@
     <ul>
       <li><code>.navbar-brand</code> 用于你的公司、产品或项目名称。</li>
       <li><code>.navbar-nav</code> 用于全高且轻量的导航（包括对下拉菜单的支持）。</li>
-      <li><code>.navbar-toggler</code> 用于我们的折叠插件及其他<a href="#responsive-behaviors">导航切换</a>行为。</li>
+      <li><code>.navbar-toggler</code> 用于我们的折叠插件及其他 <a href="#responsive-behaviors">导航切换</a> 行为。</li>
       <li>用于任何表单控件和操作的弹性盒子与间距工具类。</li>
       <li><code>.navbar-text</code> 用于添加垂直居中的文本字符串。</li>
       <li><code>.collapse.navbar-collapse</code> 用于按父级断点分组和隐藏导航栏内容。</li>
-      <li>可选地添加 <code>.navbar-nav-scroll</code> 以设置 <code>max-height</code> 并<a href="#scrolling">滚动展开的导航栏内容</a>。</li>
+      <li>可选地添加 <code>.navbar-nav-scroll</code> 以设置 <code>max-height</code> 并 <a href="#scrolling">滚动展开的导航栏内容</a> 。</li>
     </ul>
     <p>下面是一个包含所有子组件的示例，位于一个浅色主题的响应式导航栏中，该导航栏会在 <code>lg</code>（大）断点处自动折叠。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Link</a>
+         <a class="nav-link" href="#">Link</a> 
         </li>
         <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
-          </a>
+          </a> 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a> </li>
+            <li><a class="dropdown-item" href="#">Another action</a> </li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a> </li>
           </ul>
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -67,7 +67,7 @@
     />
     <p>
       此示例使用了
-      <a href="/utilities/background">背景</a>（<code>bg-body-tertiary</code>）和<a href="/utilities/spacing">间距</a>（<code>me-auto</code>、<code>mb-2</code>、<code>mb-lg-0</code>、<code>me-2</code>）工具类。
+      <a href="/utilities/background">背景</a> （<code>bg-body-tertiary</code>）和 <a href="/utilities/spacing">间距</a> （<code>me-auto</code>、<code>mb-2</code>、<code>mb-lg-0</code>、<code>me-2</code>）工具类。
     </p>
     <h3 id="brand">品牌<a class="anchor-link" href="#brand" aria-label="品牌链接"></a></h3>
     <p><code>.navbar-brand</code> 可应用于大多数元素，但锚点（anchor）效果最佳，因为有些元素可能需要工具类或自定义样式。</p>
@@ -77,7 +77,7 @@
       code='<!-- As a link -->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
   </div>
 </nav>
 
@@ -95,7 +95,7 @@
   <div class="container">
    <a class="navbar-brand" href="#">
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
-    </a>
+    </a> 
   </div>
 </nav>'
     />
@@ -107,34 +107,34 @@
    <a class="navbar-brand" href="#">
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
-    </a>
+    </a> 
   </div>
 </nav>'
     />
     <h3 id="nav">导航<a class="anchor-link" href="#nav" aria-label="导航链接"></a></h3>
-    <p>导航栏导航链接基于我们的 <code>.nav</code> 选项，具有自己的修饰类，并需要使用<a href="#toggler">切换器类</a>才能获得正确的响应式样式。<strong>导航栏中的导航还会增长以占据尽可能多的水平空间</strong>，以使你的导航栏内容保持紧密对齐。</p>
+    <p>导航栏导航链接基于我们的 <code>.nav</code> 选项，具有自己的修饰类，并需要使用 <a href="#toggler">切换器类</a> 才能获得正确的响应式样式。<strong>导航栏中的导航还会增长以占据尽可能多的水平空间</strong>，以使你的导航栏内容保持紧密对齐。</p>
     <p>在 <code>.nav-link</code> 上添加 <code>.active</code> 类以指示当前页面。</p>
     <p>请注意，你还应在激活的 <code>.nav-link</code> 上添加 <code>aria-current</code> 属性。</p>
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
         </li>
       </ul>
     </div>
@@ -145,16 +145,16 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-       <a class="nav-link active" aria-current="page" href="#">Home</a>
-       <a class="nav-link" href="#">Features</a>
-       <a class="nav-link" href="#">Pricing</a>
-       <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+       <a class="nav-link active" aria-current="page" href="#">Home</a> 
+       <a class="nav-link" href="#">Features</a> 
+       <a class="nav-link" href="#">Pricing</a> 
+       <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
       </div>
     </div>
   </div>
@@ -167,29 +167,29 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
         <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown link
-          </a>
+          </a> 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Action</a> </li>
+            <li><a class="dropdown-item" href="#">Another action</a> </li>
+            <li><a class="dropdown-item" href="#">Something else here</a> </li>
           </ul>
         </li>
       </ul>
@@ -209,11 +209,11 @@
   </div>
 </nav>'
     />
-    <p><code>.navbar</code> 的直接子元素使用弹性布局，并默认使用 <code>justify-content: space-between</code>。可根据需要使用额外的<a href="/utilities/flex">弹性盒子工具类</a>来调整此行为。</p>
+    <p><code>.navbar</code> 的直接子元素使用弹性布局，并默认使用 <code>justify-content: space-between</code>。可根据需要使用额外的 <a href="/utilities/flex">弹性盒子工具类</a> 来调整此行为。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand">Navbar</a>
+   <a class="navbar-brand">Navbar</a> 
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success" type="submit">Search</button>
@@ -259,20 +259,20 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar w/ text</a>
+   <a class="navbar-brand" href="#">Navbar w/ text</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
       </ul>
       <span class="navbar-text">
@@ -300,23 +300,23 @@
       code='
 <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">About</a>
+         <a class="nav-link" href="#">About</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -329,23 +329,23 @@
 
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">About</a>
+         <a class="nav-link" href="#">About</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -358,23 +358,23 @@
 
 <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Features</a>
+         <a class="nav-link" href="#">Features</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Pricing</a>
+         <a class="nav-link" href="#">Pricing</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">About</a>
+         <a class="nav-link" href="#">About</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -400,12 +400,12 @@
       lang="html"
     />
     <h2 id="containers">容器<a class="anchor-link" href="#containers" aria-label="容器链接"></a></h2>
-    <p>虽然不是必需的，但你可以将导航栏包裹在 <code>.container</code> 中以在页面上居中——不过请注意仍然需要内部的容器。或者，你可以在 <code>.navbar</code> 内部添加容器，仅使<a href="#placement">固定或静态顶部导航栏</a>的内容居中。</p>
+    <p>虽然不是必需的，但你可以将导航栏包裹在 <code>.container</code> 中以在页面上居中——不过请注意仍然需要内部的容器。或者，你可以在 <code>.navbar</code> 内部添加容器，仅使 <a href="#placement">固定或静态顶部导航栏</a> 的内容居中。</p>
     <Example
       code='<div class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-     <a class="navbar-brand" href="#">Navbar</a>
+     <a class="navbar-brand" href="#">Navbar</a> 
     </div>
   </nav>
 </div>'
@@ -414,41 +414,41 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-md">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
   </div>
 </nav>'
     />
     <h2 id="placement">定位<a class="anchor-link" href="#placement" aria-label="定位链接"></a></h2>
-    <p>使用我们的<a href="/utilities/position">定位工具类</a>将导航栏放置在非静态位置。可从固定顶部、固定底部、粘性顶部（随页面滚动直到到达顶部，然后停留在那里）或粘性底部（随页面滚动直到到达底部，然后停留在那里）中选择。</p>
+    <p>使用我们的 <a href="/utilities/position">定位工具类</a> 将导航栏放置在非静态位置。可从固定顶部、固定底部、粘性顶部（随页面滚动直到到达顶部，然后停留在那里）或粘性底部（随页面滚动直到到达底部，然后停留在那里）中选择。</p>
     <p>固定导航栏使用 <code>position: fixed</code>，这意味着它们会脱离 DOM 的正常文档流，可能需要自定义 CSS（例如在 <code>&lt;body&gt;</code> 上设置 <code>padding-top</code>）以防止与其他元素重叠。</p>
     <Example
       code='<nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Default</a>
+   <a class="navbar-brand" href="#">Default</a> 
   </div>
 </nav>'
     /><Example
       code='<nav class="navbar fixed-top bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Fixed top</a>
+   <a class="navbar-brand" href="#">Fixed top</a> 
   </div>
 </nav>'
     /><Example
       code='<nav class="navbar fixed-bottom bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Fixed bottom</a>
+   <a class="navbar-brand" href="#">Fixed bottom</a> 
   </div>
 </nav>'
     /><Example
       code='<nav class="navbar sticky-top bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Sticky top</a>
+   <a class="navbar-brand" href="#">Sticky top</a> 
   </div>
 </nav>'
     /><Example
       code='<nav class="navbar sticky-bottom bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Sticky bottom</a>
+   <a class="navbar-brand" href="#">Sticky bottom</a> 
   </div>
 </nav>'
     />
@@ -462,31 +462,31 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar scroll</a>
+   <a class="navbar-brand" href="#">Navbar scroll</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Link</a>
+         <a class="nav-link" href="#">Link</a> 
         </li>
         <li class="nav-item dropdown">
          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Link
-          </a>
+          </a> 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a> </li>
+            <li><a class="dropdown-item" href="#">Another action</a> </li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a> </li>
           </ul>
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Link</a>
+         <a class="nav-link disabled" aria-disabled="true">Link</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -513,16 +513,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-     <a class="navbar-brand" href="#">Hidden brand</a>
+     <a class="navbar-brand" href="#">Hidden brand</a> 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Link</a>
+         <a class="nav-link" href="#">Link</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -537,20 +537,20 @@
     <Example
       code='<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Link</a>
+         <a class="nav-link" href="#">Link</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -568,17 +568,17 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <a class="nav-link active" aria-current="page" href="#">Home</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="#">Link</a>
+         <a class="nav-link" href="#">Link</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -611,7 +611,7 @@
       <code>id</code>。理论上，这允许辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持还相当不完善。
     </p>
     <h3 id="offcanvas">抽屉<a class="anchor-link" href="#offcanvas" aria-label="抽屉链接"></a></h3>
-    <p>使用<a href="/components/offcanvas">抽屉组件</a>将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了抽屉的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。</p>
+    <p>使用 <a href="/components/offcanvas">抽屉组件</a> 将你展开和折叠的导航栏转换为画布外抽屉。我们既扩展了抽屉的默认样式，又使用 <code>.navbar-expand-*</code> 类来创建动态且灵活的导航侧边栏。</p>
     <p>
       在下面的示例中，要创建一个在所有断点下都始终折叠的画布外导航栏，请完全省略
       <code>.navbar-expand-*</code> 类。
@@ -619,7 +619,7 @@
     <Example
       code='<nav class="navbar bg-body-tertiary fixed-top">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Offcanvas navbar</a>
+   <a class="navbar-brand" href="#">Offcanvas navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -631,22 +631,22 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <a class="nav-link active" aria-current="page" href="#">Home</a> 
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
+           <a class="nav-link" href="#">Link</a> 
           </li>
           <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
-            </a>
+            </a> 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a> </li>
+              <li><a class="dropdown-item" href="#">Another action</a> </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a> </li>
             </ul>
           </li>
         </ul>
@@ -679,7 +679,7 @@
     <Example
       code='<nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+   <a class="navbar-brand" href="#">Offcanvas dark navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -691,22 +691,22 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <a class="nav-link active" aria-current="page" href="#">Home</a> 
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
+           <a class="nav-link" href="#">Link</a> 
           </li>
           <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
-            </a>
+            </a> 
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a> </li>
+              <li><a class="dropdown-item" href="#">Another action</a> </li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a> </li>
             </ul>
           </li>
         </ul>
@@ -734,10 +734,10 @@
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>所有导航栏的变量：</p>
     <ScssDocs name="navbar-variables" file="scss/_variables.scss" />
-    <p><a href="#color-schemes">深色导航栏</a>的变量：</p>
+    <p><a href="#color-schemes">深色导航栏</a> 的变量：</p>
     <ScssDocs name="navbar-dark-variables" file="scss/_variables.scss" />
     <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
-    <p><a href="#responsive-behaviors">响应式导航栏展开/折叠类</a>（例如 <code>.navbar-expand-lg</code>）与 <code>$breakpoints</code> 映射结合，并通过 <code>scss/_navbar.scss</code> 中的一个循环生成。</p>
+    <p><a href="#responsive-behaviors">响应式导航栏展开/折叠类</a> （例如 <code>.navbar-expand-lg</code>）与 <code>$breakpoints</code> 映射结合，并通过 <code>scss/_navbar.scss</code> 中的一个循环生成。</p>
     <ScssDocs name="navbar-expand-loop" file="scss/_navbar.scss" />
     <DocsPager />
   </article>

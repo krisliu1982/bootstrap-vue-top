@@ -4,10 +4,10 @@
     <p class="lead">关于如何使用 Parcel 在项目中引入并打包 Bootstrap 的 CSS 和 JavaScript 的官方指南。</p>
 
     <img class="d-block mx-auto mb-4 img-fluid rounded-3" srcset="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png, https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png 2x" src="https://getbootstrap.com/docs/5.3/assets/img/guides/bootstrap-parcel.png" width="100%" alt="" /><Callout>
-      <p><strong>想直接跳到结尾？</strong>从<a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples 仓库</a>下载本指南的源代码和可运行的演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">在 StackBlitz 中打开示例</a>， 但无法在其中运行，因为 StackBlitz 目前尚不支持 Parcel。</p>
+      <p><strong>想直接跳到结尾？</strong>从 <a href="https://github.com/twbs/examples/tree/main/parcel">twbs/examples 仓库</a> 下载本指南的源代码和可运行的演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index.html">在 StackBlitz 中打开示例</a> ， 但无法在其中运行，因为 StackBlitz 目前尚不支持 Parcel。</p>
     </Callout>
     <h2 id="what-is-parcel">什么是 Parcel？<a class="anchor-link" href="#what-is-parcel" aria-label="什么是 Parcel？链接"></a></h2>
-    <p><a href="https://parceljs.org/">Parcel</a>是一个 Web 应用打包工具，开箱即用的零配置即可简化开发流程。它提供了更高级打包工具中的特性，同时专注于易用性，非常适合希望快速上手的开发者。</p>
+    <p><a href="https://parceljs.org/">Parcel</a> 是一个 Web 应用打包工具，开箱即用的零配置即可简化开发流程。它提供了更高级打包工具中的特性，同时专注于易用性，非常适合希望快速上手的开发者。</p>
     <h2 id="setup">搭建<a class="anchor-link" href="#setup" aria-label="搭建链接"></a></h2>
     <p>我们将从零开始构建一个使用 Bootstrap 的 Parcel 项目，因此在真正开始之前还有一些前置条件和准备步骤。本指南要求你已安装 Node.js，并熟悉终端操作。</p>
     <ol>
@@ -93,7 +93,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss
         </p>
         <p>
           Parcel 会自动检测到我们使用了 Sass，并安装
-          <a href="https://parceljs.org/languages/sass/">Sass Parcel 插件</a>以支持它。不过，如果你愿意，也可以手动运行 <code>npm i --save-dev @parcel/transformer-sass</code>。
+          <a href="https://parceljs.org/languages/sass/">Sass Parcel 插件</a> 以支持它。不过，如果你愿意，也可以手动运行 <code>npm i --save-dev @parcel/transformer-sass</code>。
         </p>
       </li>
       <li>
@@ -134,7 +134,7 @@ touch src/index.html src/js/main.js src/scss/styles.scss
           lang="scss"
         />
         <p>
-          <em>如果你愿意，也可以单独导入各个样式表。详情请参阅<a href="/customize/sass#importing">我们的 Sass 导入文档</a>。</em>
+          <em>如果你愿意，也可以单独导入各个样式表。详情请参阅 <a href="/customize/sass#importing">我们的 Sass 导入文档</a> 。</em>
         </p>
         <p><strong>可选：</strong>使用最新版本的 Dart Sass 时，你可能会看到 Sass 弃用警告。可以通过在根文件夹的 <code>.sassrc.js</code> 文件中添加以下配置来消除这些警告：</p>
         <CodeWrapper
@@ -163,7 +163,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
           lang="javascript"
         />
         <p>
-          <em><a href="/getting-started/javascript/">阅读我们的 JavaScript 文档</a>，了解更多关于如何使用 Bootstrap 插件的信息。</em>
+          <em> <a href="/getting-started/javascript/">阅读我们的 JavaScript 文档</a> ，了解更多关于如何使用 Bootstrap 插件的信息。</em>
         </p>
       </li>
       <li>
@@ -171,7 +171,7 @@ import { Tooltip, Toast, Popover } from &#39;bootstrap&#39;
         <img class="img-fluid" src="https://getbootstrap.com/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" alt="Parcel 开发服务器正在运行并加载了 Bootstrap" />
         <p>
           现在你可以开始添加任何想要使用的 Bootstrap 组件了。请务必
-          <a href="https://github.com/twbs/examples/tree/main/parcel">查看完整的 Parcel 示例项目</a>， 了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
+          <a href="https://github.com/twbs/examples/tree/main/parcel">查看完整的 Parcel 示例项目</a> ， 了解如何引入额外的自定义 Sass，以及如何仅导入所需的 Bootstrap CSS 和 JS 部分来优化构建。
         </p>
       </li>
     </ol>

@@ -9,7 +9,7 @@
       工具类更改元素的对齐方式。请注意，vertical-align 仅影响内联、内联块、内联表格和表格单元格元素。
     </p>
     <p>根据需要从 <code>.align-baseline</code>、<code>.align-top</code>、<code>.align-middle</code>、<code>.align-bottom</code>、<code>.align-text-bottom</code> 和 <code>.align-text-top</code> 中选择。</p>
-    <p>要将非内联内容（如 <code>&lt;div&gt;</code> 等）垂直居中，请使用我们的<a href="/utilities/flex#align-items">弹性布局工具类</a>。</p>
+    <p>要将非内联内容（如 <code>&lt;div&gt;</code> 等）垂直居中，请使用我们的 <a href="/utilities/flex#align-items">弹性布局工具类</a> 。</p>
     <p>与内联元素配合使用：</p>
     <Example
       code='<span class="align-baseline">baseline</span>

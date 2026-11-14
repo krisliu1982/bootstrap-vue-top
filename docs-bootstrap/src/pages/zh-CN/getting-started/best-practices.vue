@@ -13,7 +13,7 @@
       <li>使用 Sass 文件</li>
       <li>构建新的 CSS 组件</li>
       <li>使用 flexbox</li>
-      <li>在<a href="https://github.com/twbs/bootstrap/discussions">我们的 GitHub Discussions</a>中提问</li>
+      <li>在 <a href="https://github.com/twbs/bootstrap/discussions">我们的 GitHub Discussions</a> 中提问</li>
     </ul>
     <DocsPager />
   </article>

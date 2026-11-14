@@ -6,14 +6,14 @@
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>
       这些工具类会根据当前视口尺寸使用
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code>float</code> 属性</a>将元素向左或向右浮动，或禁用浮动。其中包含了 <code>!important</code> 以避免优先级问题。它们与我们网格系统使用相同的视口断点。请注意，浮动工具类对弹性项目没有任何效果。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code>float</code> 属性</a> 将元素向左或向右浮动，或禁用浮动。其中包含了 <code>!important</code> 以避免优先级问题。它们与我们网格系统使用相同的视口断点。请注意，浮动工具类对弹性项目没有任何效果。
     </p>
     <Example
       code='<div class="float-start">Float start on all viewport sizes</div><br>
 <div class="float-end">Float end on all viewport sizes</div><br>
 <div class="float-none">Don’t float on all viewport sizes</div>'
     />
-    <p>在父元素上使用<a href="/helpers/clearfix">清除浮动工具类</a>来清除浮动。</p>
+    <p>在父元素上使用 <a href="/helpers/clearfix">清除浮动工具类</a> 来清除浮动。</p>
     <h2 id="responsive">响应式<a class="anchor-link" href="#responsive" aria-label="响应式链接"></a></h2>
     <p>每个 <code>float</code> 取值都提供了响应式变体。</p>
     <Example

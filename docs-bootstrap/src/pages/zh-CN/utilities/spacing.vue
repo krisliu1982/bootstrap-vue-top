@@ -6,7 +6,7 @@
     <h2 id="margin-and-padding">外边距与内边距<a class="anchor-link" href="#margin-and-padding" aria-label="外边距与内边距链接"></a></h2>
     <p>使用简写类为元素或其部分边分配响应式友好的 <code>margin</code> 或 <code>padding</code> 值。支持单独属性、所有属性和垂直水平属性。这些类构建自一个默认的 Sass 映射，范围从 <code>.25rem</code> 到 <code>3rem</code>。</p>
     <Callout>
-      <p><strong>正在使用 CSS 网格布局模块？</strong>请考虑改用<a href="#gap">间隔工具类</a>。</p>
+      <p><strong>正在使用 CSS 网格布局模块？</strong>请考虑改用 <a href="#gap">间隔工具类</a> 。</p>
     </Callout>
     <h3 id="notation">命名规则<a class="anchor-link" href="#notation" aria-label="命名规则链接"></a></h3>
     <p>适用于所有断点（从 <code>xs</code> 到 <code>xxl</code>）的间距工具类名称中不包含断点缩写。这是因为这些类是从 <code>min-width: 0</code> 开始向上生效的，因此不受媒体查询的约束。而其余的断点则确实包含断点缩写。</p>

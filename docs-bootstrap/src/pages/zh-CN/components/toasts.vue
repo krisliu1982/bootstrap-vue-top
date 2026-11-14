@@ -101,7 +101,7 @@
     <h3 id="custom-content">自定义内容<a class="anchor-link" href="#custom-content" aria-label="自定义内容链接"></a></h3>
     <p>
       你可以通过移除子组件、使用
-      <a href="/utilities/api">工具类</a>进行调整，或添加自己的标记来自定义轻提示。这里，我们通过移除默认的 <code>.toast-header</code>、添加来自<a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>的自定义隐藏图标，以及使用一些<a href="/utilities/flex">flexbox 工具类</a>调整布局，创建了一个更简洁的轻提示。
+      <a href="/utilities/api">工具类</a> 进行调整，或添加自己的标记来自定义轻提示。这里，我们通过移除默认的 <code>.toast-header</code>、添加来自 <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 的自定义隐藏图标，以及使用一些 <a href="/utilities/flex">flexbox 工具类</a> 调整布局，创建了一个更简洁的轻提示。
     </p>
     <Example
       code='<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
@@ -128,7 +128,7 @@
     <h3 id="color-schemes">配色方案<a class="anchor-link" href="#color-schemes" aria-label="配色方案链接"></a></h3>
     <p>
       在上面的示例基础上，你可以使用我们的
-      <a href="/utilities/colors">颜色</a>和<a href="/utilities/background">背景</a>工具类创建不同的轻提示配色方案。这里，我们为 <code>.toast</code> 添加了 <code>.text-bg-primary</code>，然后为关闭按钮添加了 <code>.btn-close-white</code>。为了获得清晰的边缘，我们使用 <code>.border-0</code> 移除了默认边框。
+      <a href="/utilities/colors">颜色</a> 和 <a href="/utilities/background">背景</a> 工具类创建不同的轻提示配色方案。这里，我们为 <code>.toast</code> 添加了 <code>.text-bg-primary</code>，然后为关闭按钮添加了 <code>.btn-close-white</code>。为了获得清晰的边缘，我们使用 <code>.border-0</code> 移除了默认边框。
     </p>
     <Example
       code='<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
@@ -239,14 +239,14 @@
     <h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>
     <p>
       轻提示旨在对你的访客或用户造成较小的打断，因此，为了帮助使用屏幕阅读器和类似辅助技术的用户，你应将轻提示包裹在一个
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> 区域</a>中。实时区域的变更（例如注入或更新轻提示组件）将由屏幕阅读器自动播报，无需移动用户的焦点或以其他方式打断用户。此外，请包含
-      <code>aria-atomic=&quot;true&quot;</code>，以确保整个轻提示始终作为一个单一的（原子）单元进行播报，而不是只播报发生变更的部分（如果你只更新轻提示的局部内容，或在稍后再次显示相同的轻提示内容，这可能会导致问题）。如果所需信息 对流程很重要，例如表单中的错误列表，那么请改用<a href="/components/alerts">警告框组件</a>，而不是轻提示。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> 区域</a> 中。实时区域的变更（例如注入或更新轻提示组件）将由屏幕阅读器自动播报，无需移动用户的焦点或以其他方式打断用户。此外，请包含
+      <code>aria-atomic=&quot;true&quot;</code>，以确保整个轻提示始终作为一个单一的（原子）单元进行播报，而不是只播报发生变更的部分（如果你只更新轻提示的局部内容，或在稍后再次显示相同的轻提示内容，这可能会导致问题）。如果所需信息 对流程很重要，例如表单中的错误列表，那么请改用 <a href="/components/alerts">警告框组件</a> ，而不是轻提示。
     </p>
     <p>请注意，实时区域必须在轻提示生成或更新<em>之前</em>就已存在于标记中。如果你同时动态生成两者并将它们注入页面，辅助技术通常不会播报它们。</p>
     <p>你还需要根据内容调整 <code>role</code> 和 <code>aria-live</code> 级别。如果是像错误这样重要的消息，使用 <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code> 属性，否则使用 <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> 属性。</p>
     <p>
       随着你展示的内容发生变化，请务必更新
-      <a href="#options"><code>delay</code> 超时时间</a>，以便用户有足够的时间阅读轻提示。
+      <a href="#options"><code>delay</code> 超时时间</a> ，以便用户有足够的时间阅读轻提示。
     </p>
     <CodeWrapper
       code='&lt;div class="toast" role="alert" aria-live="polite" aria-atomic="true" data-bs-delay="10000"&gt;
@@ -270,7 +270,7 @@
     />
     <p>
       虽然从技术上讲，你可以在轻提示中添加可聚焦或可操作的控件（例如额外的按钮或链接），但应避免在自动隐藏的轻提示中这样做。即便你为轻提示设置了较长的
-      <a href="#options"><code>delay</code> 超时时间</a>，键盘用户和辅助技术用户也可能难以在限定时间内抵达轻提示进行操作（因为轻提示显示时不会获得焦点）。如果你确实需要更多控件，我们建议使用带有 <code>autohide: false</code> 的轻提示。
+      <a href="#options"><code>delay</code> 超时时间</a> ，键盘用户和辅助技术用户也可能难以在限定时间内抵达轻提示进行操作（因为轻提示显示时不会获得焦点）。如果你确实需要更多控件，我们建议使用带有 <code>autohide: false</code> 的轻提示。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>

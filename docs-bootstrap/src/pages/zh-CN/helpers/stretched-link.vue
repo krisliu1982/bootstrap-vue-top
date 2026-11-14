@@ -4,7 +4,7 @@
     <p class="lead">通过 CSS 将嵌套的链接“拉伸”，让任意 HTML 元素或 Bootstrap 组件都可被点击。</p>
 
     <p>
-      为链接添加 <code>.stretched-link</code>，即可通过 <code>::after</code> 伪元素让其<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">包含块</a>可点击。在大多数情况下，这意味着一个带有 <code>position: relative;</code> 且包含带有 <code>.stretched-link</code> 类链接的元素是可点击的。请注意，鉴于<a
+      为链接添加 <code>.stretched-link</code>，即可通过 <code>::after</code> 伪元素让其 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block">包含块</a> 可点击。在大多数情况下，这意味着一个带有 <code>position: relative;</code> 且包含带有 <code>.stretched-link</code> 类链接的元素是可点击的。请注意，鉴于<a
         href="https://www.w3.org/TR/CSS21/visuren.html#propdef-position"
         >CSS <code>position</code> 的工作方式</a
       >，<code>.stretched-link</code> 不能与大多数表格元素混用。
@@ -17,7 +17,7 @@
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-   <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> 
   </div>
 </div>'
     >
@@ -38,7 +38,7 @@
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-   <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> 
   </div>
 </div>'
     >
@@ -70,10 +70,10 @@
     <h5 class="card-title">Card with stretched links</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <p class="card-text">
-     <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
+      <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a> 
     </p>
     <p class="card-text bg-body-tertiary" style="transform: rotate(0);">
-      This<a href="#" class="text-warning stretched-link">stretched link</a>will only be spread over the <code>p</code>-tag, because a transform is applied to it.
+      This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
     </p>
   </div>
 </div>'
@@ -86,7 +86,7 @@
           <p class="card-text">
             <a href="#" class="stretched-link text-danger" style="position: relative">此处的拉伸链接将无法生效，因为链接被添加了 <code>position: relative</code></a>
           </p>
-          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">这个<a href="#" class="text-warning stretched-link">拉伸链接</a>只会铺满 <code>p</code> 标签的范围，因为该标签被应用了 transform。</p>
+          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">这个 <a href="#" class="text-warning stretched-link">拉伸链接</a> 只会铺满 <code>p</code> 标签的范围，因为该标签被应用了 transform。</p>
         </div>
       </div>
     </ExampleCustom>

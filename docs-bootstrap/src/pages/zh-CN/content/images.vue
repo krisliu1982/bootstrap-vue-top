@@ -8,13 +8,13 @@
     <ExampleCustom code='<img src="..." class="img-fluid" alt="...">'><Placeholder width="100%" height="250" class="bd-placeholder-img-lg img-fluid" text="响应式图片" /> </ExampleCustom>
     <h2 id="image-thumbnails">图片缩略图<a class="anchor-link" href="#image-thumbnails" aria-label="图片缩略图链接"></a></h2>
 
-    <p>除了我们的<a href="/utilities/borders">圆角工具类</a>之外，你还可以使用 <code>.img-thumbnail</code> 为图片赋予带有 1px 圆角边框的外观。</p>
+    <p>除了我们的 <a href="/utilities/borders">圆角工具类</a> 之外，你还可以使用 <code>.img-thumbnail</code> 为图片赋予带有 1px 圆角边框的外观。</p>
 
     <ExampleCustom code='<img src="..." class="img-thumbnail" alt="...">'><Placeholder width="200" height="200" class="img-thumbnail" title="一张带有白色边框的通用方形占位图片，使其看起来像是用老式拍立得相机拍摄的照片" /> </ExampleCustom>
     <h2 id="aligning-images">对齐图片<a class="anchor-link" href="#aligning-images" aria-label="对齐图片链接"></a></h2>
 
     <p>
-      使用<a href="/utilities/float">浮动辅助类</a>或<a href="/utilities/text#text-alignment">文本对齐类</a>来对齐图片。<code>block</code> 级别的图片可以使用<a href="/utilities/spacing#horizontal-centering"><code>.mx-auto</code> 外边距工具类</a>来居中。
+      使用 <a href="/utilities/float">浮动辅助类</a> 或 <a href="/utilities/text#text-alignment">文本对齐类</a> 来对齐图片。<code>block</code> 级别的图片可以使用 <a href="/utilities/spacing#horizontal-centering"><code>.mx-auto</code> 外边距工具类</a> 来居中。
     </p>
 
     <ExampleCustom

@@ -5,10 +5,10 @@
 
     <p>
       堆叠组件为应用一系列弹性布局属性提供了捷径，可快速轻松地在 Bootstrap 中创建布局。该概念和实现的灵感归功于开源
-      <a href="https://almonk.github.io/pylon/">Pylon 项目</a>。
+      <a href="https://almonk.github.io/pylon/">Pylon 项目</a> 。
     </p>
     <Callout type="warning">
-      <p><strong>请注意！</strong>在 Safari 14.5 之前的版本中，不支持弹性布局的间隔（gap）工具类，因此请考虑验证目标浏览器的支持情况。网格布局应该没有问题。<a href="https://caniuse.com/flexbox-gap">了解更多</a>。</p>
+      <p><strong>请注意！</strong>在 Safari 14.5 之前的版本中，不支持弹性布局的间隔（gap）工具类，因此请考虑验证目标浏览器的支持情况。网格布局应该没有问题。 <a href="https://caniuse.com/flexbox-gap">了解更多</a> 。</p>
     </Callout>
     <h2 id="vertical">垂直<a class="anchor-link" href="#vertical" aria-label="垂直链接"></a></h2>
     <p>使用 <code>.vstack</code> 创建垂直布局。堆叠的项目默认占满宽度。使用 <code>.gap-*</code> 工具类在项目之间添加间距。</p>
@@ -39,7 +39,7 @@
   <div class="p-2">Third item</div>
 </div>'
     />
-    <p>以及配合<a href="/helpers/vertical-rule">竖直分隔线</a>使用：</p>
+    <p>以及配合 <a href="/helpers/vertical-rule">竖直分隔线</a> 使用：</p>
     <Example
       class="bd-example-flex"
       code='<div class="hstack gap-3">

@@ -36,7 +36,7 @@
         <p>Gap 取代了间距（gutters）。<code>gap</code> 属性取代了默认网格系统中的水平 <code>padding</code>，其作用更像 <code>margin</code>。</p>
       </li>
       <li>
-        <p>因此，与 <code>.row</code> 不同，<code>.grid</code> 没有负外边距，并且不能使用外边距工具类来更改网格间距。网格 gap 默认同时应用于水平和垂直方向。详情请参阅<a href="#customizing">自定义部分</a>。</p>
+        <p>因此，与 <code>.row</code> 不同，<code>.grid</code> 没有负外边距，并且不能使用外边距工具类来更改网格间距。网格 gap 默认同时应用于水平和垂直方向。详情请参阅 <a href="#customizing">自定义部分</a> 。</p>
       </li>
       <li>
         <p>
@@ -47,7 +47,7 @@
       <li>
         <p>
           嵌套的工作方式类似，但可能需要你在每个嵌套的
-          <code>.grid</code> 实例上重置列数。详情请参阅<a href="#nesting">嵌套部分</a>。
+          <code>.grid</code> 实例上重置列数。详情请参阅 <a href="#nesting">嵌套部分</a> 。
         </p>
       </li>
     </ul>
@@ -55,7 +55,7 @@
     <h3 id="three-columns">三列<a class="anchor-link" href="#three-columns" aria-label="三列链接"></a></h3>
     <p>
       使用
-      <code>.g-col-4</code> 类可以在所有视口和设备上创建三个等宽的列。添加<a href="#responsive">响应式类</a>以按视口尺寸更改布局。
+      <code>.g-col-4</code> 类可以在所有视口和设备上创建三个等宽的列。添加 <a href="#responsive">响应式类</a> 以按视口尺寸更改布局。
     </p>
     <Example
       class="bd-example-cssgrid"

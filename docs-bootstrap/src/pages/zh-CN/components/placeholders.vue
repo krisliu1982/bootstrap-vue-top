@@ -42,7 +42,7 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+     <a href="#" class="btn btn-primary">Go somewhere</a> 
   </div>
 </div>
 
@@ -59,7 +59,7 @@
       <span class="placeholder col-6"></span>
       <span class="placeholder col-8"></span>
     </p>
-   <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+   <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a> 
   </div>
 </div>'
       lang="html"
@@ -73,7 +73,7 @@
   <span class="placeholder col-6"></span>
 </p>
 
-<a class="btn btn-primary disabled placeholder col-4" aria-disabled="true"></a>'
+<a class="btn btn-primary disabled placeholder col-4" aria-disabled="true"></a> '
     />
     <Callout>
       <p>使用 <code>aria-hidden=&quot;true&quot;</code> 仅表示该元素应对屏幕阅读器隐藏。占位符的<em>加载</em>行为取决于作者实际如何使用占位符样式、计划如何更新内容等。可能需要一些 JavaScript 代码来<em>切换</em>占位符的状态，并将更新告知 AT 用户。</p>

@@ -6,7 +6,7 @@
     <h2 id="overview">概览<a class="anchor-link" href="#overview" aria-label="概览链接"></a></h2>
     <p>使用工具提示插件时需要了解的事项：</p>
     <ul>
-      <li>工具提示依赖第三方库<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>进行定位。你必须在 <code>bootstrap.js</code> 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或者使用包含 Popper 的 <code>bootstrap.bundle.min.js</code>。</li>
+      <li>工具提示依赖第三方库 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 进行定位。你必须在 <code>bootstrap.js</code> 之前引入 <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> ，或者使用包含 Popper 的 <code>bootstrap.bundle.min.js</code>。</li>
       <li>出于性能原因，工具提示需要手动启用，因此<strong>你必须自行初始化它们</strong>。</li>
       <li>标题为零长度的工具提示永远不会显示。</li>
       <li>指定 <code>container: &#39;body&#39;</code> 以避免在更复杂的组件（例如我们的输入组、按钮组等）中出现渲染问题。</li>
@@ -36,12 +36,12 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <Example
       addStackblitzJs
       class="tooltip-demo"
-      code='<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>'
+      code='<p class="muted">Placeholder text to demonstrate some  <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a>  with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of  <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a> . And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how  <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a>  can work in practice, once you use them on  <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a>  site or project.</p>'
     />
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <h3 id="custom-tooltips">自定义工具提示<a class="anchor-link" href="#custom-tooltips" aria-label="自定义工具提示链接"></a></h3>
     <AddedIn version="5.2.0" />
-    <p>你可以使用<a href="#variables">CSS 变量</a>来自定义工具提示的外观。我们通过 <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> 设置一个自定义类，以限定自定义外观的作用范围，并用它来覆盖一个本地 CSS 变量。</p>
+    <p>你可以使用 <a href="#variables">CSS 变量</a> 来自定义工具提示的外观。我们通过 <code>data-bs-custom-class=&quot;custom-tooltip&quot;</code> 设置一个自定义类，以限定自定义外观的作用范围，并用它来覆盖一个本地 CSS 变量。</p>
     <ScssDocs name="custom-tooltip" file="site/src/scss/_component-examples.scss" />
     <Example
       addStackblitzJs
@@ -78,7 +78,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <Example
       :showMarkup="false"
       class="tooltip-demo"
-      code='<a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip" aria-label="Hover or focus to see default tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" aria-hidden="true"><rect width="100%" height="100%" fill="#563d7c"></rect><circle cx="50" cy="50" r="30" fill="#007bff"></circle></svg></a>'
+      code=' <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip" aria-label="Hover or focus to see default tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" aria-hidden="true"><rect width="100%" height="100%" fill="#563d7c"></rect><circle cx="50" cy="50" r="30" fill="#007bff"></circle></svg></a> '
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
@@ -100,7 +100,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
     />
     <Callout type="warning">
       <p>
-        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a>（用于通过 <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意
+        当父容器具有 <code>overflow: auto</code> 或 <code>overflow: scroll</code> 时，工具提示会自动尝试更改位置，但仍会保留原始位置的定位。将 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#boundary"><code>boundary</code> 选项</a> （用于通过 <code>popperConfig</code> 选项配置的 flip 修饰符）设置为任意
         HTMLElement，以覆盖默认值 <code>&#39;clippingParents&#39;</code>，例如 <code>document.body</code>：
       </p>
       <CodeWrapper
@@ -162,8 +162,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><a href="/getting-started/javascript#sanitizer">默认值</a></td>
             <td>
               一个包含允许的标签和属性的对象。未明确允许的标签和属性将被
-              <a href="/getting-started/javascript#sanitizer">内容清理器</a>移除。
-              <Callout type="warning"><strong>向此列表添加内容时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。 </Callout>
+              <a href="/getting-started/javascript#sanitizer">内容清理器</a> 移除。
+              <Callout type="warning"><strong>向此列表添加内容时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a> 。 </Callout>
             </td>
           </tr>
           <tr>
@@ -176,7 +176,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>boundary</code></td>
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
-            <td>工具提示的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>&#39;clippingParents&#39;</code>，可以接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。</td>
+            <td>工具提示的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>&#39;clippingParents&#39;</code>，可以接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a> 。</td>
           </tr>
           <tr>
             <td><code>container</code></td>
@@ -206,14 +206,14 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>fallbackPlacements</code></td>
             <td>array</td>
             <td><code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code></td>
-            <td>通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a>。</td>
+            <td>通过在数组中提供一系列位置（按优先级顺序）来定义备选位置。更多信息请参阅 Popper 的 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/flip/#fallbackplacements">行为文档</a> 。</td>
           </tr>
           <tr>
             <td><code>html</code></td>
             <td>boolean</td>
             <td><code>false</code></td>
             <td>
-              允许在工具提示中使用 HTML。如果为 true，工具提示 <code>title</code> 中的 HTML 标签将在工具提示中渲染。如果为 false，将使用 <code>innerText</code> 属性将内容插入 DOM。处理用户生成的输入时，倾向于使用文本，以 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">防止 XSS 攻击</a>。
+              允许在工具提示中使用 HTML。如果为 true，工具提示 <code>title</code> 中的 HTML 标签将在工具提示中渲染。如果为 false，将使用 <code>innerText</code> 属性将内容插入 DOM。处理用户生成的输入时，倾向于使用文本，以 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">防止 XSS 攻击</a> 。
             </td>
           </tr>
           <tr>
@@ -223,7 +223,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>
               工具提示相对于其目标的偏移量。你可以在数据属性中传入以逗号分隔值的字符串，例如：
               <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，调用该函数时会将包含 popper 位置、引用元素和 popper 矩形信息的对象作为其第一个参数。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
-              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a
+              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a> 、 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a> 。更多信息请参阅 Popper 的<a
                 href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options"
                 >偏移量文档</a
               >。
@@ -240,7 +240,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>null, object, function</td>
             <td><code>null</code></td>
             <td>
-              要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper
+              要更改 Bootstrap 的默认 Popper 配置，请参阅 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a> 。当使用函数来创建 Popper 配置时，调用该函数时会将包含 Bootstrap 默认 Popper 配置的对象作为参数传入。这有助于你将默认配置与自己的配置结合使用并合并。该函数必须返回一个 用于 Popper
               的配置对象。
             </td>
           </tr>
@@ -249,8 +249,8 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>boolean</td>
             <td><code>true</code></td>
             <td>
-              启用<a href="/getting-started/javascript#sanitizer">内容清理</a>。如果为 true，则会对 <code>template</code>、<code>content</code> 和 <code>title</code> 选项进行清理。
-              <Callout type="warning"><strong>禁用内容清理时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a>。仅因禁用内容清理而导致的漏洞不属于 Bootstrap 安全模型的范围。 </Callout>
+              启用 <a href="/getting-started/javascript#sanitizer">内容清理</a> 。如果为 true，则会对 <code>template</code>、<code>content</code> 和 <code>title</code> 选项进行清理。
+              <Callout type="warning"><strong>禁用内容清理时要格外谨慎。</strong>更多信息请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本攻击防御速查表</a> 。仅因禁用内容清理而导致的漏洞不属于 Bootstrap 安全模型的范围。 </Callout>
             </td>
           </tr>
           <tr>
@@ -259,7 +259,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>null</code></td>
             <td>
               提供一个替代的
-              <a href="/getting-started/javascript#sanitizer">内容清理</a>函数。如果你倾向于使用专门的库来执行清理，这会很有用。
+              <a href="/getting-started/javascript#sanitizer">内容清理</a> 函数。如果你倾向于使用专门的库来执行清理，这会很有用。
             </td>
           </tr>
           <tr>
@@ -267,7 +267,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td>string, false</td>
             <td><code>false</code></td>
             <td>
-              如果提供了选择器，工具提示对象将被委托到指定的目标上。在实践中，这被用于将工具提示同时应用于动态添加的 DOM 元素（<code>jQuery.on</code> 支持）。请参阅<a href="https://github.com/twbs/bootstrap/issues/4215">此 issue</a>和 <a href="https://codepen.io/Johann-S/pen/djJYPb">一个说明性的示例</a>。<strong>注意</strong>：<code>title</code>
+              如果提供了选择器，工具提示对象将被委托到指定的目标上。在实践中，这被用于将工具提示同时应用于动态添加的 DOM 元素（<code>jQuery.on</code> 支持）。请参阅 <a href="https://github.com/twbs/bootstrap/issues/4215">此 issue</a> 和 <a href="https://codepen.io/Johann-S/pen/djJYPb">一个说明性的示例</a> 。<strong>注意</strong>：<code>title</code>
               属性不能用作选择器。
             </td>
           </tr>
@@ -332,7 +332,7 @@ const tooltip = new bootstrap.Tooltip(exampleEl, options)
             <td><code>dispose</code></td>
             <td>
               隐藏并销毁元素的工具提示（移除 DOM 元素上存储的数据）。使用委托的工具提示（通过
-              <a href="#options"><code>selector</code> 选项</a>创建）无法在派生的触发器元素上单独销毁。
+              <a href="#options"><code>selector</code> 选项</a> 创建）无法在派生的触发器元素上单独销毁。
             </td>
           </tr>
           <tr>

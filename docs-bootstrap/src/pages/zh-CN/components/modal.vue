@@ -10,7 +10,7 @@
       <li>点击模态框的“背景遮罩”将自动关闭模态框。</li>
       <li>Bootstrap 一次只支持一个模态框窗口。不支持嵌套模态框，因为我们认为其用户体验不佳。</li>
       <li>模态框使用 <code>position: fixed</code>，其渲染有时会比较特殊。请尽可能将模态框 HTML 放在顶层位置，以避免其他元素的潜在干扰。在另一个 fixed 元素中嵌套 <code>.modal</code> 时，你很可能会遇到问题。</li>
-      <li>同样，由于 <code>position: fixed</code>，在移动设备上使用模态框存在一些注意事项。 详情请<a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">参阅浏览器支持文档</a>。</li>
+      <li>同样，由于 <code>position: fixed</code>，在移动设备上使用模态框存在一些注意事项。 详情请 <a href="/getting-started/browsers-devices#modals-and-dropdowns-on-mobile">参阅浏览器支持文档</a> 。</li>
       <li>
         由于 HTML5 定义其语义的方式，
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus"><code>autofocus</code> HTML 属性</a>
@@ -72,7 +72,9 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       lang="html"
     />
     <Callout>
-      <p>在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用 <a href="/utilities/text#font-size">字体大小工具类</a>控制标题的外观。下面所有实时示例均采用此方法。</p>
+      <p>
+        在上面的静态示例中，我们使用 <code>&lt;h5&gt;</code>，以避免文档页面中标题层级的问题。不过，从结构上讲，模态框对话框代表其自身独立的文档/上下文，因此 <code>.modal-title</code> 理想情况下应为 <code>&lt;h1&gt;</code>。如有必要，你可以使用 <a href="/utilities/text#font-size">字体大小工具类</a> 控制标题的外观。下面所有实时示例均采用此方法。
+      </p>
     </Callout>
     <h3 id="live-demo">实时演示<a class="anchor-link" href="#live-demo" aria-label="实时演示链接"></a></h3>
     <p>点击下面的按钮来切换一个可用的模态框演示。它将从页面顶部滑下并淡入。</p>
@@ -292,7 +294,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       lang="html"
     />
     <h3 id="tooltips-and-popovers">工具提示与弹出框<a class="anchor-link" href="#tooltips-and-popovers" aria-label="工具提示与弹出框链接"></a></h3>
-    <p><a href="/components/tooltips">工具提示</a>和<a href="/components/popovers">弹出框</a>可以根据需要放置在模态框内。当模态框关闭时，其中的任何工具提示和弹出框也会自动消失。</p>
+    <p><a href="/components/tooltips">工具提示</a> 和 <a href="/components/popovers">弹出框</a> 可以根据需要放置在模态框内。当模态框关闭时，其中的任何工具提示和弹出框也会自动消失。</p>
     <Example
       :showMarkup="false"
       code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
@@ -307,7 +309,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
               <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers">button</button> triggers a popover on click.</p>
               <hr>
               <h2 class="fs-5">Tooltips in a modal</h2>
-              <p><a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a>and<a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a>have tooltips on hover.</p>
+              <p> <a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -413,7 +415,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
       <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">HTML <code>data-bs-*</code> 属性</a>
       根据点击的按钮来改变模态框的内容。
     </p>
-    <p>下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请 <a href="#events">阅读模态框事件文档</a>。</p>
+    <p>下面是一个实时演示，随后是示例 HTML 和 JavaScript。更多关于 <code>relatedTarget</code> 的信息，请 <a href="#events">阅读模态框事件文档</a> 。</p>
     <Example
       addStackblitzJs
       code='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
@@ -501,7 +503,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <h3 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h3>
     <p>请务必为 <code>.modal</code> 添加引用模态框标题的 <code>aria-labelledby=&quot;...&quot;</code>。此外，你还可以在 <code>.modal</code> 上使用 <code>aria-describedby</code> 为模态框对话框提供描述。请注意，你无需添加 <code>role=&quot;dialog&quot;</code>，因为我们已通过 JavaScript 添加了它。</p>
     <h3 id="embedding-youtube-videos">嵌入 YouTube 视频<a class="anchor-link" href="#embedding-youtube-videos" aria-label="嵌入 YouTube 视频链接"></a></h3>
-    <p>在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。 更多信息请<a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a>。</p>
+    <p>在模态框中嵌入 YouTube 视频需要 Bootstrap 之外的额外 JavaScript 才能自动停止播放等。 更多信息请 <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">参阅这篇有用的 Stack Overflow 帖子</a> 。</p>
     <h2 id="optional-sizes">可选尺寸<a class="anchor-link" href="#optional-sizes" aria-label="可选尺寸链接"></a></h2>
     <p>模态框有四种可选尺寸，可通过修饰类放置在 <code>.modal-dialog</code> 上。这些尺寸会在特定断点下生效，以避免在较窄的视口中出现水平滚动条。</p>
     <div class="table-responsive">
@@ -750,7 +752,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <ScssDocs name="modal-variables" file="scss/_variables.scss" />
     <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
-    <p><a href="#fullscreen-modal">响应式全屏模态框</a>通过 <code>$breakpoints</code> 映射和 <code>scss/_modal.scss</code> 中的一个循环生成。</p>
+    <p><a href="#fullscreen-modal">响应式全屏模态框</a> 通过 <code>$breakpoints</code> 映射和 <code>scss/_modal.scss</code> 中的一个循环生成。</p>
     <ScssDocs name="modal-fullscreen-loop" file="scss/_modal.scss" />
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <p>
@@ -765,7 +767,7 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
     <JsDismiss name="modal" /><Callout type="warning">
       <p>
         虽然两种关闭模态框的方式都受支持，但请注意，从模态框外部关闭并不符合
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a>。请自行承担风险。
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA 编写实践指南中的对话框（模态框）模式</a> 。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
@@ -887,7 +889,7 @@ const myModalAlternative = new bootstrap.Modal(&#39;#myModal&#39;, options)
         <tbody>
           <tr>
             <td><code>hide.bs.modal</code></td>
-            <td>当调用 <code>hide</code> 实例方法时立即触发此事件。可通过调用 <code>event.preventDefault()</code> 阻止。关于阻止事件的更多细节，请参阅<a href="/getting-started/javascript#events">JavaScript 事件文档</a>。</td>
+            <td>当调用 <code>hide</code> 实例方法时立即触发此事件。可通过调用 <code>event.preventDefault()</code> 阻止。关于阻止事件的更多细节，请参阅 <a href="/getting-started/javascript#events">JavaScript 事件文档</a> 。</td>
           </tr>
           <tr>
             <td><code>hidden.bs.modal</code></td>

@@ -6,16 +6,16 @@
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
     <p>
       下拉菜单是可切换的上下文浮层，用于显示链接列表等内容。它们通过与 Bootstrap 一同提供的下拉菜单 JavaScript 插件实现交互。它们通过点击而非悬停来切换；这是
-      <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a>。
+      <a href="https://markdotto.com/blog/bootstrap-explained-dropdowns/">有意为之的设计决策</a> 。
     </p>
     <p>
-      下拉菜单构建于第三方库<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入<a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a>，或使用 包含 Popper 的
+      下拉菜单构建于第三方库 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 之上，该库提供动态定位和视口检测。请确保在 Bootstrap 的 JavaScript 之前引入 <a href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">popper.min.js</a> ，或使用 包含 Popper 的
       <code>bootstrap.bundle.min.js</code> / <code>bootstrap.bundle.js</code>。不过，导航栏中的下拉菜单并不使用 Popper 定位，因为那里不需要动态定位。
     </p>
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
       <a href="https://www.w3.org/TR/wai-aria/"><abbr title="Web Accessibility Initiative">WAI</abbr> <abbr title="Accessible Rich Internet Applications">ARIA</abbr></a
-      >标准定义了一种真正的<a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a>，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组 和子菜单。
+      >标准定义了一种真正的 <a href="https://www.w3.org/TR/wai-aria/#menu"><code>role=&quot;menu&quot;</code> 部件</a> ，但它专门针对触发操作或功能的类应用菜单。<abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单只能包含菜单项、复选框菜单项、单选按钮菜单项、单选按钮组 和子菜单。
     </p>
     <p>
       另一方面，Bootstrap 的下拉菜单被设计为通用组件，适用于各种场景和标记结构。例如，可以创建包含额外输入框和表单控件的下拉菜单，如搜索框或登录表单。因此，Bootstrap 不期望（也不会自动添加）真正的 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 菜单所需的任何 <code>role</code> 和
@@ -35,9 +35,9 @@
     Dropdown button
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Another action</a> </li>
+    <li><a class="dropdown-item" href="#">Something else here</a> </li>
   </ul>
 </div>'
     />
@@ -46,12 +46,12 @@
       code='<div class="dropdown">
  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Dropdown link
-  </a>
+  </a> 
 
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Another action</a> </li>
+    <li><a class="dropdown-item" href="#">Something else here</a> </li>
   </ul>
 </div>'
     />
@@ -61,61 +61,61 @@
       code='<div class="btn-group">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Primary</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Secondary</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Success</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Info</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Warning</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Danger</button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -146,11 +146,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -159,11 +159,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -172,11 +172,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -185,11 +185,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -198,11 +198,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -211,11 +211,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -245,11 +245,11 @@
       Large button
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -258,11 +258,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -296,11 +296,11 @@
       Small button
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -309,11 +309,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -348,11 +348,11 @@
     Dropdown button
   </button>
   <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item active" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><a class="dropdown-item active" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Another action</a> </li>
+    <li><a class="dropdown-item" href="#">Something else here</a> </li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">Separated link</a> </li>
   </ul>
 </div>'
     />
@@ -360,7 +360,7 @@
     <Example
       code='<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Navbar</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -371,9 +371,9 @@
             Dropdown
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Action</a> </li>
+            <li><a class="dropdown-item" href="#">Another action</a> </li>
+            <li><a class="dropdown-item" href="#">Something else here</a> </li>
           </ul>
         </li>
       </ul>
@@ -393,9 +393,9 @@
     Centered dropdown
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action two</a></li>
-    <li><a class="dropdown-item" href="#">Action three</a></li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Action two</a> </li>
+    <li><a class="dropdown-item" href="#">Action three</a> </li>
   </ul>
 </div>'
     />
@@ -408,11 +408,11 @@
       Dropup
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group dropup">
@@ -421,11 +421,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -462,9 +462,9 @@
     Centered dropup
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Action two</a></li>
-    <li><a class="dropdown-item" href="#">Action three</a></li>
+    <li><a class="dropdown-item" href="#">Action</a> </li>
+    <li><a class="dropdown-item" href="#">Action two</a> </li>
+    <li><a class="dropdown-item" href="#">Action three</a> </li>
   </ul>
 </div>'
     />
@@ -477,11 +477,11 @@
       Dropend
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group dropend">
@@ -490,11 +490,11 @@
       <span class="visually-hidden">Toggle Dropend</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>'
     />
@@ -532,11 +532,11 @@
       Dropstart
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
   <div class="btn-group dropstart">
@@ -544,11 +544,11 @@
       <span class="visually-hidden">Toggle Dropstart</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
     <button type="button" class="btn btn-secondary">Split dropstart</button>
   </div>'
@@ -596,27 +596,27 @@
     <Example
       code='<ul class="dropdown-menu">
   <li><span class="dropdown-item-text">Dropdown item text</span></li>
-  <li><a class="dropdown-item" href="#">Action</a></li>
-  <li><a class="dropdown-item" href="#">Another action</a></li>
-  <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <li><a class="dropdown-item" href="#">Action</a> </li>
+  <li><a class="dropdown-item" href="#">Another action</a> </li>
+  <li><a class="dropdown-item" href="#">Something else here</a> </li>
 </ul>'
     />
     <h3 id="active">激活状态<a class="anchor-link" href="#active" aria-label="激活状态链接"></a></h3>
     <p>为下拉菜单中的项添加 <code>.active</code>，<strong>将其样式设置为激活状态</strong>。要向辅助技术传达激活状态，请使用 <code>aria-current</code> 属性——对当前页面使用 <code>page</code> 值，或对一组中的当前项使用 <code>true</code>。</p>
     <Example
       code='<ul class="dropdown-menu">
-  <li><a class="dropdown-item" href="#">Regular link</a></li>
-  <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
-  <li><a class="dropdown-item" href="#">Another link</a></li>
+  <li><a class="dropdown-item" href="#">Regular link</a> </li>
+  <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a> </li>
+  <li><a class="dropdown-item" href="#">Another link</a> </li>
 </ul>'
     />
     <h3 id="disabled">禁用状态<a class="anchor-link" href="#disabled" aria-label="禁用状态链接"></a></h3>
     <p>为下拉菜单中的项添加 <code>.disabled</code>，<strong>将其样式设置为禁用状态</strong>。</p>
     <Example
       code='<ul class="dropdown-menu">
-  <li><a class="dropdown-item" href="#">Regular link</a></li>
-  <li><a class="dropdown-item disabled" aria-disabled="true">Disabled link</a></li>
-  <li><a class="dropdown-item" href="#">Another link</a></li>
+  <li><a class="dropdown-item" href="#">Regular link</a> </li>
+  <li><a class="dropdown-item disabled" aria-disabled="true">Disabled link</a> </li>
+  <li><a class="dropdown-item" href="#">Another link</a> </li>
 </ul>'
     />
     <h2 id="menu-alignment">菜单对齐<a class="anchor-link" href="#menu-alignment" aria-label="菜单对齐链接"></a></h2>
@@ -679,9 +679,9 @@
     Dropdown
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -690,9 +690,9 @@
     Right-aligned menu
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -701,9 +701,9 @@
     Left-aligned, right-aligned lg
   </button>
   <ul class="dropdown-menu dropdown-menu-lg-end">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -712,9 +712,9 @@
     Right-aligned, left-aligned lg
   </button>
   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -723,9 +723,9 @@
     Dropstart
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -734,9 +734,9 @@
     Dropend
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -745,9 +745,9 @@
     Dropup
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>'
     />
@@ -757,23 +757,23 @@
     <Example
       code='<ul class="dropdown-menu">
   <li><h6 class="dropdown-header">Dropdown header</h6></li>
-  <li><a class="dropdown-item" href="#">Action</a></li>
-  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><a class="dropdown-item" href="#">Action</a> </li>
+  <li><a class="dropdown-item" href="#">Another action</a> </li>
 </ul>'
     />
     <h3 id="dividers">分隔线<a class="anchor-link" href="#dividers" aria-label="分隔线链接"></a></h3>
     <p>使用分隔线将相关的菜单项分组隔开。</p>
     <Example
       code='<ul class="dropdown-menu">
-  <li><a class="dropdown-item" href="#">Action</a></li>
-  <li><a class="dropdown-item" href="#">Another action</a></li>
-  <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <li><a class="dropdown-item" href="#">Action</a> </li>
+  <li><a class="dropdown-item" href="#">Another action</a> </li>
+  <li><a class="dropdown-item" href="#">Something else here</a> </li>
   <li><hr class="dropdown-divider"></li>
-  <li><a class="dropdown-item" href="#">Separated link</a></li>
+  <li><a class="dropdown-item" href="#">Separated link</a> </li>
 </ul>'
     />
     <h3 id="text">文本<a class="anchor-link" href="#text" aria-label="文本链接"></a></h3>
-    <p>在下拉菜单中放置任意自由形式的文本，并使用<a href="/utilities/spacing">间距工具类</a>。请注意，你可能需要额外的尺寸样式来限制菜单宽度。</p>
+    <p>在下拉菜单中放置任意自由形式的文本，并使用 <a href="/utilities/spacing">间距工具类</a> 。请注意，你可能需要额外的尺寸样式来限制菜单宽度。</p>
     <Example
       code='<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
   <p>
@@ -785,7 +785,7 @@
 </div>'
     />
     <h3 id="forms">表单<a class="anchor-link" href="#forms" aria-label="表单链接"></a></h3>
-    <p>在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用<a href="/utilities/spacing">外边距或内边距工具类</a>给它留出所需的空白区域。</p>
+    <p>在下拉菜单中放置表单，或直接将表单作为下拉菜单，并使用 <a href="/utilities/spacing">外边距或内边距工具类</a> 给它留出所需的空白区域。</p>
     <Example
       code='<div class="dropdown-menu">
   <form class="px-4 py-3">
@@ -808,8 +808,8 @@
     <button type="submit" class="btn btn-primary">Sign in</button>
   </form>
   <div class="dropdown-divider"></div>
- <a class="dropdown-item" href="#">New around here? Sign up</a>
- <a class="dropdown-item" href="#">Forgot password?</a>
+ <a class="dropdown-item" href="#">New around here? Sign up</a> 
+ <a class="dropdown-item" href="#">Forgot password?</a> 
 </div>'
     /><Example
       code='<div class="dropdown">
@@ -846,9 +846,9 @@
       Offset
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
     </ul>
   </div>
   <div class="btn-group">
@@ -857,11 +857,11 @@
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a> </li>
+      <li><a class="dropdown-item" href="#">Another action</a> </li>
+      <li><a class="dropdown-item" href="#">Something else here</a> </li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+      <li><a class="dropdown-item" href="#">Separated link</a> </li>
     </ul>
   </div>
 </div>'
@@ -877,9 +877,9 @@
     Default dropdown
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -888,9 +888,9 @@
     Clickable inside
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -899,9 +899,9 @@
     Clickable outside
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>
 
@@ -910,9 +910,9 @@
     Manual close
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
-    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
+    <li><a class="dropdown-item" href="#">Menu item</a> </li>
   </ul>
 </div>'
     />
@@ -934,7 +934,7 @@
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>所有下拉菜单的变量：</p>
     <ScssDocs name="dropdown-variables" file="scss/_variables.scss" />
-    <p><a href="#dark-dropdowns">深色下拉菜单</a>的变量：</p>
+    <p><a href="#dark-dropdowns">深色下拉菜单</a> 的变量：</p>
     <ScssDocs name="dropdown-dark-variables" file="scss/_variables.scss" />
     <p>用于 CSS 箭头（指示下拉菜单可交互状态）的变量：</p>
     <ScssDocs name="caret-variables" file="scss/_variables.scss" />
@@ -945,7 +945,7 @@
     <p>通过数据属性或 JavaScript，下拉菜单插件通过切换父级 <code>.dropdown-menu</code> 上的 <code>.show</code> 类来切换隐藏内容（下拉菜单）。在应用层面上，关闭下拉菜单依赖于 <code>data-bs-toggle=&quot;dropdown&quot;</code> 属性，因此最好始终使用它。</p>
     <Callout>
       <p>
-        在支持触摸的设备上，打开下拉菜单会向 <code>&lt;body&gt;</code> 元素的直接子元素添加空的 <code>mouseover</code> 处理程序。这个公认不太优雅的技巧是为了绕过<a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">iOS 事件委托的一个怪癖</a>，否则在
+        在支持触摸的设备上，打开下拉菜单会向 <code>&lt;body&gt;</code> 元素的直接子元素添加空的 <code>mouseover</code> 处理程序。这个公认不太优雅的技巧是为了绕过 <a href="https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html">iOS 事件委托的一个怪癖</a> ，否则在
         下拉菜单外任意位置轻触将无法触发关闭下拉菜单的代码。一旦下拉菜单关闭，这些额外的空 <code>mouseover</code> 处理程序就会被移除。
       </p>
     </Callout>
@@ -1005,7 +1005,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>boundary</code></td>
             <td>string, element</td>
             <td><code>&#39;clippingParents&#39;</code></td>
-            <td>下拉菜单的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>clippingParents</code>，可接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a>。</td>
+            <td>下拉菜单的溢出约束边界（仅适用于 Popper 的 preventOverflow 修饰符）。默认值为 <code>clippingParents</code>，可接受 HTMLElement 引用（仅限通过 JavaScript）。更多信息请参阅 Popper 的 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/utils/detect-overflow/#boundary">detectOverflow 文档</a> 。</td>
           </tr>
           <tr>
             <td><code>display</code></td>
@@ -1020,7 +1020,7 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td>
               下拉菜单相对于其目标的偏移量。你可以在数据属性中传递以逗号分隔值的字符串，例如：
               <code>data-bs-offset=&quot;10,20&quot;</code>。当使用函数来确定偏移量时，会以包含 popper 位置、reference 和 popper 矩形的对象作为第一个参数调用它。触发元素的 DOM 节点作为第二个参数传入。该函数必须返回一个包含两个数字的数组：
-              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a>、<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a>。更多信息请参阅 Popper 的<a
+              <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#skidding-1">skidding</a> 、 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#distance-1">distance</a> 。更多信息请参阅 Popper 的<a
                 href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/modifiers/offset/#options"
                 >offset 文档</a
               >。
@@ -1030,14 +1030,14 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl =&gt; new boo
             <td><code>popperConfig</code></td>
             <td>null, object, function</td>
             <td><code>null</code></td>
-            <td>要更改 Bootstrap 的默认 Popper 配置，请参阅<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a>。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个 Popper 配置对象。</td>
+            <td>要更改 Bootstrap 的默认 Popper 配置，请参阅 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#options">Popper 的配置</a> 。当使用函数来创建 Popper 配置时，会以包含 Bootstrap 默认 Popper 配置的对象调用它。这有助于你将默认配置与自己的配置一起使用和合并。该函数必须返回一个 Popper 配置对象。</td>
           </tr>
           <tr>
             <td><code>reference</code></td>
             <td>string, element, object</td>
             <td><code>&#39;toggle&#39;</code></td>
             <td>
-              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#createpopper">构造函数文档</a>和<a
+              下拉菜单的引用元素。接受 <code>&#39;toggle&#39;</code>、<code>&#39;parent&#39;</code>、HTMLElement 引用或提供 <code>getBoundingClientRect</code> 的对象。更多信息请参阅 Popper 的 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/constructors/#createpopper">构造函数文档</a> 和<a
                 href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/virtual-elements/"
                 >虚拟元素文档</a
               >。

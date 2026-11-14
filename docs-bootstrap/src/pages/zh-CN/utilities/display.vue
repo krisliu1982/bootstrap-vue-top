@@ -6,10 +6,10 @@
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
       使用我们响应式的显示工具类更改
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display</code> 属性</a>的值。我们有意只支持 <code>display</code> 所有可能取值中的一个子集。可以根据需要组合类来实现各种效果。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display</code> 属性</a> 的值。我们有意只支持 <code>display</code> 所有可能取值中的一个子集。可以根据需要组合类来实现各种效果。
     </p>
     <h2 id="notation">命名规则<a class="anchor-link" href="#notation" aria-label="命名规则链接"></a></h2>
-    <p>适用于所有<a href="/layout/breakpoints">断点</a>（从 <code>xs</code> 到 <code>xxl</code>）的显示工具类名称中不包含断点缩写。这是因为这些类是从 <code>min-width: 0;</code> 开始向上生效的，因此不受媒体查询的约束。而其余的断点则确实包含断点缩写。</p>
+    <p>适用于所有 <a href="/layout/breakpoints">断点</a> （从 <code>xs</code> 到 <code>xxl</code>）的显示工具类名称中不包含断点缩写。这是因为这些类是从 <code>min-width: 0;</code> 开始向上生效的，因此不受媒体查询的约束。而其余的断点则确实包含断点缩写。</p>
     <p>因此，这些类使用以下格式命名：</p>
     <ul>
       <li><code>.d-{value}</code>（对应 <code>xs</code>）</li>

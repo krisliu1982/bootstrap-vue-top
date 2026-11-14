@@ -33,13 +33,13 @@
     </p>
     <Example
       code='<div class="list-group">
- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     The current link item
-  </a>
- <a href="#" class="list-group-item list-group-item-action">A second link item</a>
- <a href="#" class="list-group-item list-group-item-action">A third link item</a>
- <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
- <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+  </a> 
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a> 
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a> 
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a> 
+  <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a> 
 </div>'
     />
     <p>使用 <code>&lt;button&gt;</code> 时，你还可以使用 <code>disabled</code> 属性来代替 <code>.disabled</code> 类。遗憾的是，<code>&lt;a&gt;</code> 不支持 disabled 属性。</p>
@@ -122,7 +122,7 @@
     />
     <h2 id="variants">变体<a class="anchor-link" href="#variants" aria-label="变体链接"></a></h2>
     <Callout>
-      <p><strong>注意！</strong>自 v5.3.0 起，<code>list-group-item-variant()</code> Sass mixin 已弃用。列表组项变体现在通过<a href="#sass-loops">一个 Sass 循环</a>覆盖其 CSS 变量。</p>
+      <p><strong>注意！</strong>自 v5.3.0 起，<code>list-group-item-variant()</code> Sass mixin 已弃用。列表组项变体现在通过 <a href="#sass-loops">一个 Sass 循环</a> 覆盖其 CSS 变量。</p>
     </Callout>
     <p>使用上下文类为列表项设置带有状态背景和颜色的样式。</p>
     <Example
@@ -142,15 +142,15 @@
       :code="
         [
           `<div class=&quot;list-group&quot;>
- <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a>
+  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;>A simple default list group item</a> 
     `,
-          ...data['theme-colors'].map((themeColor) => ` <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</a>`),
+          ...data['theme-colors'].map((themeColor) => `  <a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action list-group-item-${themeColor.name}&quot;>A simple ${themeColor.name} list group item</a> `),
           `</div>`
         ].join('\n')
       "
     /><Callout name="warning-color-assistive-technologies" />
     <h2 id="with-badges">带徽章<a class="anchor-link" href="#with-badges" aria-label="带徽章链接"></a></h2>
-    <p>借助一些<a href="/utilities/flex">工具类</a>为任何列表组项添加徽章，以显示未读数量、活动状态等。</p>
+    <p>借助一些 <a href="/utilities/flex">工具类</a> 为任何列表组项添加徽章，以显示未读数量、活动状态等。</p>
     <Example
       code='<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -168,33 +168,33 @@
 </ul>'
     />
     <h2 id="custom-content">自定义内容<a class="anchor-link" href="#custom-content" aria-label="自定义内容链接"></a></h2>
-    <p>借助<a href="/utilities/flex">弹性盒子工具类</a>，你几乎可以在其中添加任意 HTML，即使是像下面这样的链接列表组。</p>
+    <p>借助 <a href="/utilities/flex">弹性盒子工具类</a> ，你几乎可以在其中添加任意 HTML，即使是像下面这样的链接列表组。</p>
     <Example
       code='<div class="list-group">
- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small>3 days ago</small>
     </div>
     <p class="mb-1">Some placeholder content in a paragraph.</p>
     <small>And some small print.</small>
-  </a>
- <a href="#" class="list-group-item list-group-item-action">
+  </a> 
+  <a href="#" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small class="text-body-secondary">3 days ago</small>
     </div>
     <p class="mb-1">Some placeholder content in a paragraph.</p>
     <small class="text-body-secondary">And some muted small print.</small>
-  </a>
- <a href="#" class="list-group-item list-group-item-action">
+  </a> 
+  <a href="#" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">List group item heading</h5>
       <small class="text-body-secondary">3 days ago</small>
     </div>
     <p class="mb-1">Some placeholder content in a paragraph.</p>
     <small class="text-body-secondary">And some muted small print.</small>
-  </a>
+  </a> 
 </div>'
     />
     <h2 id="checkboxes-and-radios">复选框与单选按钮<a class="anchor-link" href="#checkboxes-and-radios" aria-label="复选框与单选按钮链接"></a></h2>

@@ -40,7 +40,7 @@
     <ul>
       <li>
         <p>
-          <strong>我们的网格支持<a href="/layout/breakpoints">六个响应式断点</a>。</strong>
+          <strong>我们的网格支持 <a href="/layout/breakpoints">六个响应式断点</a> 。</strong>
           断点基于 <code>min-width</code> 媒体查询，这意味着它们会影响该断点及其以上的所有断点（例如，<code>.col-sm-4</code> 适用于 <code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code>）。这意味着你可以按每个断点控制容器和列的尺寸与行为。
         </p>
       </li>
@@ -48,7 +48,7 @@
         <p><strong>容器会使内容居中并进行水平填充。</strong> 使用 <code>.container</code> 获得响应式像素宽度，使用 <code>.container-fluid</code> 在所有视口和设备上获得 <code>width: 100%</code>，或使用响应式容器（例如 <code>.container-md</code>）获得流式与像素宽度的组合。</p>
       </li>
       <li>
-        <p><strong>行是列的包裹元素。</strong> 每一列都有水平 <code>padding</code>（称为间距 gutter），用于控制它们之间的空间。然后通过负外边距在行上抵消此 <code>padding</code>，以确保列中的内容在左侧视觉上对齐。行还支持修饰类来<a href="#row-columns">统一应用列尺寸</a>，以及<a href="/layout/gutters">间距类</a>来更改内容的间隔。</p>
+        <p><strong>行是列的包裹元素。</strong> 每一列都有水平 <code>padding</code>（称为间距 gutter），用于控制它们之间的空间。然后通过负外边距在行上抵消此 <code>padding</code>，以确保列中的内容在左侧视觉上对齐。行还支持修饰类来 <a href="#row-columns">统一应用列尺寸</a> ，以及 <a href="/layout/gutters">间距类</a> 来更改内容的间隔。</p>
       </li>
       <li>
         <p><strong>列非常灵活。</strong> 每行有 12 个模板列可用，允许你创建跨越任意列数的元素的不同组合。列类指示要跨越的模板列数（例如，<code>col-4</code> 跨越四列）。<code>width</code> 以百分比设置，因此你始终拥有相同的相对尺寸。</p>
@@ -56,14 +56,14 @@
       <li>
         <p>
           <strong>间距同样是响应式且可自定义的。</strong>
-          <a href="/layout/gutters">间距类在所有断点上均可用</a>，其尺寸与我们的<a href="/utilities/spacing">外边距和内边距间隔</a>相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。 还可以使用 <code>.g-0</code> 移除间距。
+          <a href="/layout/gutters">间距类在所有断点上均可用</a> ，其尺寸与我们的 <a href="/utilities/spacing">外边距和内边距间隔</a> 相同。使用 <code>.gx-*</code> 类更改水平间距，使用 <code>.gy-*</code> 更改垂直间距，或使用 <code>.g-*</code> 类更改所有间距。 还可以使用 <code>.g-0</code> 移除间距。
         </p>
       </li>
       <li>
-        <p><strong>Sass 变量、map 和 mixin 驱动着网格。</strong> 如果你不想使用 Bootstrap 中预定义的网格类，可以使用我们的<a href="#sass-variables">网格 Sass 源码</a>创建具有更语义化标记的自定义网格。我们还包含了一些 CSS 自定义属性，供你使用这些 Sass 变量，为你提供更大的灵活性。</p>
+        <p><strong>Sass 变量、map 和 mixin 驱动着网格。</strong> 如果你不想使用 Bootstrap 中预定义的网格类，可以使用我们的 <a href="#sass-variables">网格 Sass 源码</a> 创建具有更语义化标记的自定义网格。我们还包含了一些 CSS 自定义属性，供你使用这些 Sass 变量，为你提供更大的灵活性。</p>
       </li>
     </ul>
-    <p>请注意 flexbox 的局限性和<a href="https://github.com/philipwalton/flexbugs">相关缺陷</a>，例如<a href="https://github.com/philipwalton/flexbugs#flexbug-9">无法将某些 HTML 元素用作 flex 容器</a>。</p>
+    <p>请注意 flexbox 的局限性和 <a href="https://github.com/philipwalton/flexbugs">相关缺陷</a> ，例如 <a href="https://github.com/philipwalton/flexbugs#flexbug-9">无法将某些 HTML 元素用作 flex 容器</a> 。</p>
     <h2 id="grid-options">网格选项<a class="anchor-link" href="#grid-options" aria-label="网格选项链接"></a></h2>
     <p>Bootstrap 的网格系统可以适应所有六个默认断点以及你自定义的任何断点。六个默认网格层级如下：</p>
     <ul>

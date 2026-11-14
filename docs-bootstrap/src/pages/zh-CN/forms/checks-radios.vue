@@ -122,7 +122,7 @@
   </label>
 </div>'
     />
-    <p>请务必进一步了解<a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a>。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。</p>
+    <p>请务必进一步了解 <a href="https://webkit.org/blog/15054/an-html-switch-control/">WebKit 博客上关于 switch 属性的文章</a> 。macOS 和 iOS 上的 Safari 17.4+ 在 HTML 中都支持原生样式的开关，而其他浏览器则回退到标准复选框外观。在较新版本的 Safari 中，将该属性应用于非 Bootstrap 的复选框也会渲染为原生开关。</p>
     <h2 id="default-stacked">默认（堆叠）<a class="anchor-link" href="#default-stacked" aria-label="默认（堆叠）链接"></a></h2>
     <p>默认情况下，任意数量的直接相邻的复选框和单选框都会借助 <code>.form-check</code> 垂直堆叠并保持适当的间距。</p>
     <Example
@@ -209,7 +209,7 @@
 </div>'
     />
     <h2 id="without-labels">不带标签<a class="anchor-link" href="#without-labels" aria-label="不带标签链接"></a></h2>
-    <p>对于没有标签文本的复选框和单选框，省略包裹的 <code>.form-check</code>。请记住仍要为辅助技术提供可访问名称，例如使用 <code>aria-label</code>。该名称应说明控件的作用，例如 <code>aria-label="Select all rows"</code>，并替换下面示例中的 <code>...</code> 占位符。详情请参见<a href="/forms/overview/#accessibility">表单概览的无障碍</a>部分。</p>
+    <p>对于没有标签文本的复选框和单选框，省略包裹的 <code>.form-check</code>。请记住仍要为辅助技术提供可访问名称，例如使用 <code>aria-label</code>。该名称应说明控件的作用，例如 <code>aria-label="Select all rows"</code>，并替换下面示例中的 <code>...</code> 占位符。详情请参见 <a href="/forms/overview/#accessibility">表单概览的无障碍</a> 部分。</p>
     <Example
       code='<div>
   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
@@ -220,7 +220,7 @@
 </div>'
     />
     <h2 id="toggle-buttons">切换按钮<a class="anchor-link" href="#toggle-buttons" aria-label="切换按钮链接"></a></h2>
-    <p>在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式代替 <code>.form-check-label</code>，即可创建类似按钮的复选框和单选框。如有需要，这些切换按钮还可以分组到<a href="/components/button-group">按钮组</a>中。</p>
+    <p>在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式代替 <code>.form-check-label</code>，即可创建类似按钮的复选框和单选框。如有需要，这些切换按钮还可以分组到 <a href="/components/button-group">按钮组</a> 中。</p>
     <h3 id="checkbox-toggle-buttons">复选框切换按钮<a class="anchor-link" href="#checkbox-toggle-buttons" aria-label="复选框切换按钮链接"></a></h3>
     <Example
       code='<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
@@ -242,7 +242,8 @@
 <label class="btn" for="btn-check-6">Disabled</label>'
     /><Callout>
       <p>
-        从视觉上看，这些复选框切换按钮与<a href="/components/buttons#button-plugin">按钮插件切换按钮</a
+        从视觉上看，这些复选框切换按钮与
+        <a href="/components/buttons#button-plugin">按钮插件切换按钮</a
         >完全相同。但是，辅助技术对它们的传达方式不同：复选框切换按钮会被屏幕阅读器读作“已选中”/“未选中”（因为尽管外观如此，它们本质上仍是复选框），而按钮插件切换按钮会被读作“按钮”/“按钮已按下”。在这两种方式之间如何选择，取决于你要创建的切换类型，以及该切换在作为复选框或实际按钮被读出时对用户是否有意义。
       </p>
     </Callout>

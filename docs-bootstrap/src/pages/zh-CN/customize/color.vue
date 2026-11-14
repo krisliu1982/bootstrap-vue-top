@@ -369,9 +369,9 @@
     </div>
     <p>所有这些颜色都作为 Sass 映射 <code>$theme-colors</code> 提供。</p>
     <ScssDocs name="theme-colors-map" file="scss/_variables.scss" />
-    <p>请查阅<a href="/customize/sass#maps-and-loops">我们的 Sass 映射和循环文档</a>，了解如何修改这些颜色。</p>
+    <p>请查阅 <a href="/customize/sass#maps-and-loops">我们的 Sass 映射和循环文档</a> ，了解如何修改这些颜色。</p>
     <h3 id="all-colors">所有颜色<a class="anchor-link" href="#all-colors" aria-label="所有颜色"></a></h3>
-    <p>所有 Bootstrap 颜色都以 Sass 变量和 Sass 映射的形式提供，位于 <code>scss/_variables.scss</code> 文件中。为避免文件体积增大，我们不会为这些变量中的每一个都创建文本或背景颜色类。相反，我们会为<a href="#theme-colors">主题调色板</a>选择这些颜色中的一个子集。</p>
+    <p>所有 Bootstrap 颜色都以 Sass 变量和 Sass 映射的形式提供，位于 <code>scss/_variables.scss</code> 文件中。为避免文件体积增大，我们不会为这些变量中的每一个都创建文本或背景颜色类。相反，我们会为 <a href="#theme-colors">主题调色板</a> 选择这些颜色中的一个子集。</p>
     <p>自定义颜色时，请务必监控对比度。如下所示，我们为主要颜色中的每一个都添加了三种对比度值——一种针对色板当前的颜色，一种针对白色背景，一种针对黑色背景。</p>
     <div class="row font-monospace">
       <div class="col-md-4 mb-3">
@@ -520,7 +520,7 @@
       Sass 无法以编程方式生成变量，因此我们手动为每个色调和色阶创建了变量。我们指定中间值（例如
       <code>$blue-500</code>），并使用自定义颜色函数通过 Sass 的 <code>mix()</code> 颜色函数来为颜色添加色调（变亮）或色阶（变暗）。
     </p>
-    <p>使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如 <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a>所示。</p>
+    <p>使用 <code>mix()</code> 与 <code>lighten()</code> 和 <code>darken()</code> 并不相同——前者将指定颜色与白色或黑色混合，而后者仅调整每种颜色的明度值。结果是一套更加完整的颜色，正如 <a href="https://codepen.io/emdeoh/pen/zYOQOPB">这个 CodePen 演示</a> 所示。</p>
     <p>我们的 <code>tint-color()</code> 和 <code>shade-color()</code> 函数使用 <code>mix()</code> 以及我们的 <code>$theme-color-interval</code> 变量，该变量为我们生成的每种混合颜色指定一个阶梯式的百分比值。完整源代码请参阅 <code>scss/_functions.scss</code> 和 <code>scss/_variables.scss</code> 文件。</p>
     <h2 id="color-sass-maps">颜色 Sass 映射<a class="anchor-link" href="#color-sass-maps" aria-label="颜色 Sass 映射"></a></h2>
     <p>Bootstrap 的 Sass 源文件包含三个映射，帮助你快速轻松地遍历颜色列表及其十六进制值。</p>
@@ -543,10 +543,10 @@
 "
       lang="scss"
     />
-    <p><a href="/utilities/colors">颜色</a>和<a href="/utilities/background">背景</a>工具类也可用于使用 <code>500</code> 颜色值设置 <code>color</code> 和 <code>background-color</code>。</p>
+    <p><a href="/utilities/colors">颜色</a> 和 <a href="/utilities/background">背景</a> 工具类也可用于使用 <code>500</code> 颜色值设置 <code>color</code> 和 <code>background-color</code>。</p>
     <h2 id="generating-utilities">生成工具类<a class="anchor-link" href="#generating-utilities" aria-label="生成工具类"></a></h2>
     <AddedIn version="5.1.0" />
-    <p>Bootstrap 并未为每个颜色变量都包含 <code>color</code> 和 <code>background-color</code> 工具类，但你可以使用我们的<a href="/utilities/api">工具类 API</a>以及 v5.1.0 中新增的扩展 Sass 映射自行生成。</p>
+    <p>Bootstrap 并未为每个颜色变量都包含 <code>color</code> 和 <code>background-color</code> 工具类，但你可以使用我们的 <a href="/utilities/api">工具类 API</a> 以及 v5.1.0 中新增的扩展 Sass 映射自行生成。</p>
     <ol>
       <li>首先，确保你已经导入了我们的函数、变量、mixin 和工具类。</li>
       <li>使用我们的 <code>map-merge-multiple()</code> 函数，快速将多个 Sass 映射合并到一个新映射中。</li>

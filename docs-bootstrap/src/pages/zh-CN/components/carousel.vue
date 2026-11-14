@@ -9,9 +9,9 @@
         <p>轮播是一个用于循环展示一系列内容的幻灯片组件，基于 CSS 3D 变换和少量 JavaScript 构建。它适用于一系列图像、文本或自定义标记，同时支持上一页/下一页控件和指示器。</p>
       </li>
       <li>
-        <p>出于性能考虑，<strong>轮播必须手动初始化</strong>，使用<a href="#methods">轮播构造函数方法</a>。如果不进行初始化，部分事件监听器（特别是触摸/滑动支持所需的事件）将不会被注册，直到用户显式激活某个控件或指示器。</p>
+        <p>出于性能考虑，<strong>轮播必须手动初始化</strong>，使用 <a href="#methods">轮播构造函数方法</a> 。如果不进行初始化，部分事件监听器（特别是触摸/滑动支持所需的事件）将不会被注册，直到用户显式激活某个控件或指示器。</p>
         <p>
-          唯一的例外是带有 <code>data-bs-ride=&quot;carousel&quot;</code> 属性的<a href="#autoplaying-carousels">自动播放轮播</a>，因为它们会在页面加载时自动初始化。如果你使用带有 data 属性的自动播放轮播，
+          唯一的例外是带有 <code>data-bs-ride=&quot;carousel&quot;</code> 属性的 <a href="#autoplaying-carousels">自动播放轮播</a> ，因为它们会在页面加载时自动初始化。如果你使用带有 data 属性的自动播放轮播，
           <strong>就不要再用构造函数方法显式初始化相同的轮播。</strong>
         </p>
       </li>
@@ -131,7 +131,7 @@
       </div></ExampleCustom
     >
     <h3 id="captions">字幕<a class="anchor-link" href="#captions" aria-label="字幕链接"></a></h3>
-    <p>你可以在任意 <code>.carousel-item</code> 中使用 <code>.carousel-caption</code> 元素为幻灯片添加字幕。如下图所示，通过可选的<a href="/utilities/display">显示工具类</a>，可以轻松地在较小视口中隐藏它们。我们首先使用 <code>.d-none</code> 隐藏它们，然后在中等尺寸 设备上使用 <code>.d-md-block</code> 重新显示。</p>
+    <p>你可以在任意 <code>.carousel-item</code> 中使用 <code>.carousel-caption</code> 元素为幻灯片添加字幕。如下图所示，通过可选的 <a href="/utilities/display">显示工具类</a> ，可以轻松地在较小视口中隐藏它们。我们首先使用 <code>.d-none</code> 隐藏它们，然后在中等尺寸 设备上使用 <code>.d-md-block</code> 重新显示。</p>
     <ExampleCustom
       code='<div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -259,13 +259,13 @@
     <h2 id="autoplaying-carousels">自动播放轮播<a class="anchor-link" href="#autoplaying-carousels" aria-label="自动播放轮播链接"></a></h2>
     <p>
       将 <code>ride</code> 选项设置为 <code>carousel</code>，即可让轮播在页面加载时自动播放。自动播放的轮播在鼠标悬停时会自动暂停。此行为可以通过 <code>pause</code> 选项进行控制。在支持
-      <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a>的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
+      <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a> 的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化时），轮播将停止循环。
     </p>
     <Callout>
       <p>出于无障碍访问方面的原因，我们建议避免使用自动播放的轮播。如果你的页面确实包含自动播放的轮播，我们建议额外提供一个按钮或控件，用于显式暂停/停止轮播。</p>
       <p>
         参见
-        <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a>。
+        <a href="https://www.w3.org/TR/WCAG/#pause-stop-hide">WCAG 2.2 成功准则 2.2.2 暂停、停止、隐藏</a> 。
       </p>
     </Callout>
     <ExampleCustom
@@ -566,7 +566,7 @@
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>所有轮播的变量：</p>
     <ScssDocs name="carousel-variables" file="scss/_variables.scss" />
-    <p><a href="#dark-variant">深色轮播</a>的变量：</p>
+    <p><a href="#dark-variant">深色轮播</a> 的变量：</p>
     <ScssDocs name="carousel-dark-variables" file="scss/_variables.scss" />
     <h2 id="usage">用法<a class="anchor-link" href="#usage" aria-label="用法链接"></a></h2>
     <h3 id="via-data-attributes">通过 data 属性<a class="anchor-link" href="#via-data-attributes" aria-label="通过 data 属性链接"></a></h3>

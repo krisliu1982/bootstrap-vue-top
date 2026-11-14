@@ -12,7 +12,7 @@
       </li>
       <li>
         <p>
-          <strong>间距的起始宽度为 <code>1.5rem</code>（<code>24px</code>）。</strong> 这使得我们的网格可以与<a href="/utilities/spacing">内边距和外边距间隔</a>刻度相匹配。
+          <strong>间距的起始宽度为 <code>1.5rem</code>（<code>24px</code>）。</strong> 这使得我们的网格可以与 <a href="/utilities/spacing">内边距和外边距间隔</a> 刻度相匹配。
         </p>
       </li>
       <li>
@@ -91,7 +91,7 @@
 </div>'
     />
     <h2 id="row-columns-gutters">行内列间距<a class="anchor-link" href="#row-columns-gutters" aria-label="行内列间距链接"></a></h2>
-    <p>间距类也可以添加到<a href="/layout/grid#row-columns">行内列（row columns）</a>上。在下面的示例中，我们使用了响应式行内列和响应式间距类。</p>
+    <p>间距类也可以添加到 <a href="/layout/grid#row-columns">行内列（row columns）</a> 上。在下面的示例中，我们使用了响应式行内列和响应式间距类。</p>
     <Example
       class="bd-example-cols"
       code='<div class="container text-center">

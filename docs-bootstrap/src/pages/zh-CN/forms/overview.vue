@@ -4,7 +4,7 @@
     <p class="lead">表单控件样式、布局选项和自定义组件的示例与用法指南，帮助你创建各种各样的表单。</p>
 
     <h2 id="overview">概述<a class="anchor-link" href="#overview" aria-label="概述链接"></a></h2>
-    <p>Bootstrap 的表单控件通过类扩展了<a href="/content/reboot#forms">我们在 Reboot 中的表单样式</a>。使用这些类即可启用其自定义显示效果，从而在不同浏览器和设备上获得更一致的渲染。</p>
+    <p>Bootstrap 的表单控件通过类扩展了 <a href="/content/reboot#forms">我们在 Reboot 中的表单样式</a> 。使用这些类即可启用其自定义显示效果，从而在不同浏览器和设备上获得更一致的渲染。</p>
     <p>请务必为所有输入框设置合适的 <code>type</code> 属性（例如，电子邮件地址使用 <code>email</code>，数值信息使用 <code>number</code>），以便利用电子邮件验证、数字选择等较新的输入控件功能。</p>
     <p>下面是一个快速示例，用于展示 Bootstrap 的表单样式。继续阅读可了解必需类、表单布局等文档。</p>
     <Example
@@ -73,7 +73,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <p>许多表单变量都在通用层级设置，以便被各个表单组件复用和扩展。你会经常看到 <code>$input-btn-*</code> 和 <code>$input-*</code> 这样的变量。</p>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
-    <p><code>$input-btn-*</code> 变量是<a href="/components/buttons">按钮</a>和表单组件之间共享的全局变量。你会发现它们经常被重新赋值给其他组件专用的变量。</p>
+    <p><code>$input-btn-*</code> 变量是 <a href="/components/buttons">按钮</a> 和表单组件之间共享的全局变量。你会发现它们经常被重新赋值给其他组件专用的变量。</p>
     <ScssDocs name="input-btn-variables" file="scss/_variables.scss" />
     <DocsPager />
   </article>

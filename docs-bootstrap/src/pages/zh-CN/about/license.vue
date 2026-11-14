@@ -30,7 +30,7 @@
     </ul>
     <p>
       完整的 Bootstrap 许可证位于
-      <a href="https://github.com/twbs/bootstrap/blob/v5.3.9/LICENSE">项目仓库中</a>，以获取更多信息。
+      <a href="https://github.com/twbs/bootstrap/blob/v5.3.9/LICENSE">项目仓库中</a> ，以获取更多信息。
     </p>
     <DocsPager />
   </article>

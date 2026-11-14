@@ -12,7 +12,7 @@
       <li><code>.container-fluid</code>，在所有断点下均为 <code>width: 100%</code></li>
     </ul>
     <p>下表展示了各容器的 <code>max-width</code> 在每个断点下与原始 <code>.container</code> 和 <code>.container-fluid</code> 的对比。</p>
-    <p>在我们的<a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">网格示例</a>中查看它们的实际效果并进行比较。</p>
+    <p>在我们的 <a href="https://getbootstrap.com/docs/5.3/examples/grid/#containers">网格示例</a> 中查看它们的实际效果并进行比较。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -144,7 +144,7 @@
       <code>_variables.scss</code> 中）来自定义这些预定义容器类：
     </p>
     <ScssDocs name="container-max-widths" file="scss/_variables.scss" />
-    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅<a href="/layout/grid#css">网格文档的 Sass 部分</a>。</p>
+    <p>有关如何修改我们的 Sass map 和变量的更多信息和示例，请参阅 <a href="/layout/grid#css">网格文档的 Sass 部分</a> 。</p>
     <h3 id="sass-mixins">Sass mixin<a class="anchor-link" href="#sass-mixins" aria-label="Sass mixin 链接"></a></h3>
     <p>除了自定义 Sass 之外，你还可以使用我们的 Sass mixin 创建自己的容器。</p>
     <CodeWrapper

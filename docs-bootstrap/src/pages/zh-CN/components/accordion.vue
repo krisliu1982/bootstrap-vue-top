@@ -4,7 +4,7 @@
     <p class="lead">结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。</p>
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
-    <p>折叠面板内部使用<a href="/components/collapse">折叠</a>来使其可折叠。</p>
+    <p>折叠面板内部使用 <a href="/components/collapse">折叠</a> 来使其可折叠。</p>
     <Callout name="info-prefersreducedmotion" />
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>点击下面的折叠面板来展开/折叠其内容。</p>
@@ -135,7 +135,7 @@
     <h2 id="accessibility">无障碍<a class="anchor-link" href="#accessibility" aria-label="无障碍链接"></a></h2>
     <p>
       请阅读
-      <a href="/components/collapse#accessibility">折叠无障碍章节</a>以了解更多信息。
+      <a href="/components/collapse#accessibility">折叠无障碍章节</a> 以了解更多信息。
     </p>
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>

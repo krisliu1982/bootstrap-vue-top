@@ -4,9 +4,9 @@
     <p class="lead">使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
 
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
-    <p>警告框可容纳任意长度的文本，并可选带有关闭按钮。为了获得正确的样式，请使用八个<strong>必需的</strong>情境类之一（例如 <code>.alert-success</code>）。若需行内关闭，请使用<a href="#dismissing">警告框 JavaScript 插件</a>。</p>
+    <p>警告框可容纳任意长度的文本，并可选带有关闭按钮。为了获得正确的样式，请使用八个<strong>必需的</strong>情境类之一（例如 <code>.alert-success</code>）。若需行内关闭，请使用 <a href="#dismissing">警告框 JavaScript 插件</a> 。</p>
     <Callout>
-      <p><strong>注意！</strong> 从 v5.3.0 开始，<code>alert-variant()</code> Sass mixin 已被弃用。现在警告框变体通过<a href="#sass-loops">Sass 循环</a>覆盖其 CSS 变量。</p>
+      <p><strong>注意！</strong> 从 v5.3.0 开始，<code>alert-variant()</code> Sass mixin 已被弃用。现在警告框变体通过 <a href="#sass-loops">Sass 循环</a> 覆盖其 CSS 变量。</p>
     </Callout>
     <Example
       :code="
@@ -39,7 +39,7 @@
         data['theme-colors']
           .map(
             (themeColor) => `<div class=&quot;alert alert-${themeColor.name}&quot; role=&quot;alert&quot;>
-  A simple ${themeColor.name} alert with<a href=&quot;#&quot; class=&quot;alert-link&quot;>an example link</a>. Give it a click if you like.
+  A simple ${themeColor.name} alert with <a href=&quot;#&quot; class=&quot;alert-link&quot;>an example link</a> . Give it a click if you like.
 </div>`
           )
           .join('\n')
@@ -57,7 +57,7 @@
 </div>'
     />
     <h3 id="icons">图标<a class="anchor-link" href="#icons" aria-label="图标链接"></a></h3>
-    <p>同样，你可以使用<a href="/utilities/flex">flexbox 工具类</a>和<a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>创建带图标的警告框。根据你的图标和内容，可能需要添加更多工具类或自定义样式。</p>
+    <p>同样，你可以使用 <a href="/utilities/flex">flexbox 工具类</a> 和 <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 创建带图标的警告框。根据你的图标和内容，可能需要添加更多工具类或自定义样式。</p>
     <Example
       code='<div class="alert alert-primary d-flex align-items-center" role="alert">
   <svg xmlns="http://www.w3.org/2000/svg" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
@@ -111,7 +111,7 @@
     <p>使用警告框 JavaScript 插件，可以在行内关闭任意警告框。方法如下：</p>
     <ul>
       <li>请确保已加载警告框插件，或已编译的 Bootstrap JavaScript。</li>
-      <li>添加一个<a href="/components/close-button">关闭按钮</a>和 <code>.alert-dismissible</code> 类，后者会在警告框右侧添加额外内边距并为关闭按钮定位。</li>
+      <li>添加一个 <a href="/components/close-button">关闭按钮</a> 和 <code>.alert-dismissible</code> 类，后者会在警告框右侧添加额外内边距并为关闭按钮定位。</li>
       <li>在关闭按钮上添加 <code>data-bs-dismiss=&quot;alert&quot;</code> 属性，以触发 JavaScript 功能。请务必搭配使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上行为正确。</li>
       <li>若要在关闭时对警告框进行动画处理，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
     </ul>
@@ -156,7 +156,7 @@ const alerts = [...alertList].map(element =&gt; new bootstrap.Alert(element))
         如果仅仅是为了关闭警告框，则无需通过 JS API 手动初始化该组件。通过使用
         <code>data-bs-dismiss=&quot;alert&quot;</code>，组件将自动初始化并正确关闭。
       </p>
-      <p>更多细节请参阅<a href="#triggers">触发器</a>章节。</p>
+      <p>更多细节请参阅 <a href="#triggers">触发器</a> 章节。</p>
     </Callout>
     <h3 id="triggers">触发器<a class="anchor-link" href="#triggers" aria-label="触发器链接"></a></h3>
     <JsDismiss name="alert" />

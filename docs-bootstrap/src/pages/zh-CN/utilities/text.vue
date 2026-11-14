@@ -37,7 +37,7 @@
     <Example code='<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>' /><Callout type="warning">
       <p>
         请注意，
-        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a>。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
+        <a href="https://rtlstyling.com/posts/rtl-styling#3.-line-break">阿拉伯语（最常用的 RTL 语言）中无法断词</a> 。因此 <code>.text-break</code> 已从我们编译的 RTL CSS 中移除。
       </p>
     </Callout>
     <h2 id="text-transform">文本转换<a class="anchor-link" href="#text-transform" aria-label="文本转换"></a></h2>
@@ -87,7 +87,7 @@
     <p>使用 <code>.text-reset</code> 重置文本或链接的颜色，使其继承父元素的颜色。</p>
     <Example
       code='<p class="text-body-secondary">
-  Secondary body text with a<a href="#" class="text-reset">reset link</a>.
+  Secondary body text with a <a href="#" class="text-reset">reset link</a> .
 </p>'
     />
     <h2 id="text-decoration">文本装饰<a class="anchor-link" href="#text-decoration" aria-label="文本装饰"></a></h2>
@@ -95,7 +95,7 @@
     <Example
       code='<p class="text-decoration-underline">This text has a line underneath it.</p>
 <p class="text-decoration-line-through">This text has a line going through it.</p>
-<a href="#" class="text-decoration-none">This link has its text decoration removed</a>'
+ <a href="#" class="text-decoration-none">This link has its text decoration removed</a> '
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS"></a></h2>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量"></a></h3>

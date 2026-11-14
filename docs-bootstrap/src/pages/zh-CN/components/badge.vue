@@ -49,7 +49,7 @@
     <h2 id="background-colors">背景颜色<a class="anchor-link" href="#background-colors" aria-label="背景颜色链接"></a></h2>
     <AddedIn version="5.2.0" />
     <p>
-      使用<a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a>来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的<a href="/utilities/colors"><code>.text-{color}</code></a
+      使用 <a href="helpers/color-background">我们的 <code>.text-bg-{color}</code> 辅助类</a> 来设置 <code>background-color</code> 及其对比强烈的前景色 <code>color</code>。以前，需要手动将所选的 <a href="/utilities/colors"><code>.text-{color}</code></a
       >和 <a href="/utilities/background"><code>.bg-{color}</code></a
       >工具类配对进行样式设置，如果你愿意，仍然可以这样使用。
     </p>

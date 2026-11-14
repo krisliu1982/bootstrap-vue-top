@@ -5,7 +5,7 @@
 
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>
-      使用我们响应式的 <code>object-fit</code> 工具类更改 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> 属性</a>的值。该属性会以多种方式告知内容填充父容器，例如保持长宽比，或拉伸以尽可能占据更多空间。
+      使用我们响应式的 <code>object-fit</code> 工具类更改 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"><code>object-fit</code> 属性</a> 的值。该属性会以多种方式告知内容填充父容器，例如保持长宽比，或拉伸以尽可能占据更多空间。
     </p>
     <p><code>object-fit</code> 取值的类使用 <code>.object-fit-{value}</code> 格式命名。可从以下取值中选择：</p>
     <ul>
@@ -16,7 +16,7 @@
       <li><code>none</code></li>
     </ul>
     <h2 id="examples">示例<a class="anchor-link" href="#examples" aria-label="示例链接"></a></h2>
-    <p>为<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">替换元素</a>添加 <code>object-fit-{value}</code> 类：</p>
+    <p>为 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element">替换元素</a> 添加 <code>object-fit-{value}</code> 类：</p>
     <ExampleCustom
       class="d-flex overflow-auto"
       code='<img src="..." class="object-fit-contain border rounded" alt="...">

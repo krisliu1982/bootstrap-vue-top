@@ -7,7 +7,7 @@
     <p>抽屉是一个侧边栏组件，可以通过 JavaScript 切换，从视口的左侧、右侧、顶部或底部边缘出现。按钮或锚点用作触发器并附加到你要切换的特定元素上，同时使用 <code>data</code> 属性来调用我们的 JavaScript。</p>
     <ul>
       <li>抽屉与模态框共享部分相同的 JavaScript 代码。从概念上讲，它们非常相似，但它们是独立的插件。</li>
-      <li>同样，抽屉样式和尺寸的一些<a href="#sass-variables">源 Sass</a>变量继承自模态框的变量。</li>
+      <li>同样，抽屉样式和尺寸的一些 <a href="#sass-variables">源 Sass</a> 变量继承自模态框的变量。</li>
       <li>显示时，抽屉包含一个默认的背景遮罩，点击它可以隐藏抽屉。</li>
       <li>与模态框类似，同一时间只能显示一个抽屉。</li>
     </ul>
@@ -42,7 +42,7 @@
     <Example
       code='<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   Link with href
-</a>
+</a> 
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
   Button with data-bs-target
 </button>
@@ -61,9 +61,9 @@
         Dropdown button
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><a class="dropdown-item" href="#">Action</a> </li>
+        <li><a class="dropdown-item" href="#">Another action</a> </li>
+        <li><a class="dropdown-item" href="#">Something else here</a> </li>
       </ul>
     </div>
   </div>
@@ -243,7 +243,7 @@
     <Callout type="warning">
       <p>
         虽然两种关闭抽屉的方式都受支持，但请注意，从抽屉外部关闭并不符合
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a>。请自行承担风险。
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/">ARIA Authoring Practices Guide 对话框（模态）模式</a> 。请自行承担风险。
       </p>
     </Callout>
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>

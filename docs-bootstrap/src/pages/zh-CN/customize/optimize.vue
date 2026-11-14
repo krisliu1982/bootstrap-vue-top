@@ -45,7 +45,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     <p>Bootstrap 依赖 Autoprefixer 为某些 CSS 属性自动添加浏览器前缀。前缀由 Bootstrap 仓库根目录下的 <code>.browserslistrc</code> 文件决定。如果存在特定浏览器或版本独有的厂商前缀，自定义此浏览器列表并重新编译 Sass 将自动从编译后的 CSS 中移除一些 CSS。</p>
     <h2 id="unused-css">未使用的 CSS<a class="anchor-link" href="#unused-css" aria-label="未使用的 CSS"></a></h2>
     <p><em>本节需要帮助，请考虑提交 PR。谢谢！</em></p>
-    <p>虽然我们没有关于将<a href="https://github.com/FullHuman/purgecss">PurgeCSS</a>与 Bootstrap 结合使用的预置示例，但社区撰写了一些有用的文章和教程。以下是一些选项：</p>
+    <p>虽然我们没有关于将 <a href="https://github.com/FullHuman/purgecss">PurgeCSS</a> 与 Bootstrap 结合使用的预置示例，但社区撰写了一些有用的文章和教程。以下是一些选项：</p>
     <ul>
       <li>
         <a href="https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772">https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772</a>
@@ -66,7 +66,7 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     </p>
     <h2 id="non-blocking-files">非阻塞文件<a class="anchor-link" href="#non-blocking-files" aria-label="非阻塞文件"></a></h2>
     <p>虽然压缩和使用压缩传输似乎已经足够，但让文件变为非阻塞文件也是使站点高度优化且足够快的重要一步。</p>
-    <p>如果你在 Google Chrome 中使用<a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>插件，你可能已经遇到过 FCP。<a href="https://web.dev/articles/fcp">首次内容绘制（First Contentful Paint）</a>指标衡量的是从页面开始加载到页面内容的任何部分渲染到屏幕上的时间。</p>
+    <p>如果你在 Google Chrome 中使用 <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> 插件，你可能已经遇到过 FCP。 <a href="https://web.dev/articles/fcp">首次内容绘制（First Contentful Paint）</a> 指标衡量的是从页面开始加载到页面内容的任何部分渲染到屏幕上的时间。</p>
     <p>
       你可以通过延迟非关键的 JavaScript 或 CSS 来改善 FCP。那意味着什么？简单来说，不需要在你的页面首次绘制时出现的 JavaScript 或样式表，应使用
       <code>async</code> 或 <code>defer</code> 属性标记。
@@ -84,11 +84,11 @@ const modal = new Modal(document.getElementById(&#39;myModal&#39;))
     <h2 id="always-use-https">始终使用 HTTPS<a class="anchor-link" href="#always-use-https" aria-label="始终使用 HTTPS"></a></h2>
     <p>
       在生产环境中，你的网站应只能通过 HTTPS 连接访问。HTTPS 可改善所有站点的安全性、隐私性和可用性，而且
-      <a href="https://https.cio.gov/everything/">不存在所谓的非敏感网络流量</a>。将网站配置为仅通过 HTTPS 提供服务的步骤因架构和 Web 托管提供商而异，因此超出了本文档的讨论范围。
+      <a href="https://https.cio.gov/everything/">不存在所谓的非敏感网络流量</a> 。将网站配置为仅通过 HTTPS 提供服务的步骤因架构和 Web 托管提供商而异，因此超出了本文档的讨论范围。
     </p>
     <p>
       通过 HTTPS 提供服务的站点也应通过 HTTPS 连接访问所有样式表、脚本和其他资源。否则，你将向用户发送
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">混合活动内容</a>，可能导致站点通过更改依赖项而被攻破的潜在漏洞。这可能会引发安全问题，并向用户显示浏览器内警告。无论你是从 CDN 获取 Bootstrap 还是自行提供服务， 请确保仅通过 HTTPS 连接访问它。
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">混合活动内容</a> ，可能导致站点通过更改依赖项而被攻破的潜在漏洞。这可能会引发安全问题，并向用户显示浏览器内警告。无论你是从 CDN 获取 Bootstrap 还是自行提供服务， 请确保仅通过 HTTPS 连接访问它。
     </p>
     <DocsPager />
   </article>

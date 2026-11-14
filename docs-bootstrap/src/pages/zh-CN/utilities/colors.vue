@@ -7,7 +7,7 @@
     <h2 id="colors">颜色<a class="anchor-link" href="#colors" aria-label="颜色链接"></a></h2>
     <p>
       使用颜色工具类为文本着色。如果你想为链接着色，可以使用
-      <a href="/helpers/colored-links"><code>.link-*</code> 工具类</a>，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
+      <a href="/helpers/colored-links"><code>.link-*</code> 工具类</a> ，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
     </p>
     <Callout>
       <p>由我们最初的 <code>$theme-colors</code> Sass 映射生成的 <code>.text-*</code> 之类的颜色工具类尚不能响应颜色模式，不过任何 <code>.text-*-emphasis</code> 工具类则可以。此问题将在 v6 中解决。</p> </Callout
@@ -72,7 +72,7 @@
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS链接"></a></h2>
     <p>
       除了以下 Sass 功能之外，建议阅读有关我们内置的
-      <a href="/customize/css-variables">CSS 自定义属性</a>（又称 CSS 变量）的内容，了解更多颜色等信息。
+      <a href="/customize/css-variables">CSS 自定义属性</a> （又称 CSS 变量）的内容，了解更多颜色等信息。
     </p>
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>大多数 <code>color</code> 工具类由我们的主题颜色生成，这些主题颜色是从通用调色板变量重新分配的。</p>

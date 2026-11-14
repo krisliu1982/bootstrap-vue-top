@@ -17,24 +17,24 @@
     </p>
     <ul>
       <li>
-        React:<a href="https://react-bootstrap.github.io/">React Bootstrap</a
+        React: <a href="https://react-bootstrap.github.io/">React Bootstrap</a
         ><Callout>
-          <strong>亲自试一试吧！</strong>从<a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples 仓库</a>下载在 React、Next.js 和 React Bootstrap 中使用 Bootstrap 的源码和可运行演示。你也可以
-          <a href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx">在 StackBlitz 中打开该示例</a>。</Callout
+          <strong>亲自试一试吧！</strong>从 <a href="https://github.com/twbs/examples/tree/main/react-nextjs">twbs/examples 仓库</a> 下载在 React、Next.js 和 React Bootstrap 中使用 Bootstrap 的源码和可运行演示。你也可以
+          <a href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx">在 StackBlitz 中打开该示例</a> 。</Callout
         >
       </li>
-      <li>Vue：<a href="https://bootstrap-vue.org/">BootstrapVue</a>（Bootstrap 4）</li>
-      <li>Vue 3：<a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a>（Bootstrap 5）</li>
+      <li>Vue： <a href="https://bootstrap-vue.org/">BootstrapVue</a> （Bootstrap 4）</li>
+      <li>Vue 3： <a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/">BootstrapVueNext</a> （Bootstrap 5）</li>
       <li>
-        Angular：<a href="https://ng-bootstrap.github.io/">ng-bootstrap</a>或
+        Angular： <a href="https://ng-bootstrap.github.io/">ng-bootstrap</a> 或
         <a href="https://valor-software.com/ngx-bootstrap">ngx-bootstrap</a>
       </li>
     </ul>
     <h2 id="using-bootstrap-as-a-module">将 Bootstrap 作为模块使用<a class="anchor-link" href="#using-bootstrap-as-a-module" aria-label="将 Bootstrap 作为模块使用链接"></a></h2>
     <Callout>
-      <p><strong>亲自试一试吧！</strong>从<a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples 仓库</a>下载将 Bootstrap 作为 ES 模块使用的源码和可运行演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">在 StackBlitz 中打开该示例</a>。</p>
+      <p><strong>亲自试一试吧！</strong>从 <a href="https://github.com/twbs/examples/tree/main/sass-js-esm">twbs/examples 仓库</a> 下载将 Bootstrap 作为 ES 模块使用的源码和可运行演示。你也可以 <a href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html">在 StackBlitz 中打开该示例</a> 。</p>
     </Callout>
-    <p>我们提供了一个以 <code>ESM</code> 形式构建的 Bootstrap 版本（<code>bootstrap.esm.js</code> 和 <code>bootstrap.esm.min.js</code>），如果你的<a href="https://caniuse.com/es6-module">目标浏览器支持</a>，就可以在浏览器中将 Bootstrap 作为模块使用。</p>
+    <p>我们提供了一个以 <code>ESM</code> 形式构建的 Bootstrap 版本（<code>bootstrap.esm.js</code> 和 <code>bootstrap.esm.min.js</code>），如果你的 <a href="https://caniuse.com/es6-module">目标浏览器支持</a> ，就可以在浏览器中将 Bootstrap 作为模块使用。</p>
     <CodeWrapper
       code='&lt;script type="module"&gt;
   import { Toast } from &#39;bootstrap.esm.min.js&#39;
@@ -46,7 +46,7 @@
     />
     <p>
       与 JS 打包工具相比，在浏览器中使用 ESM 需要你使用完整路径和文件名，而不是模块名。
-      <a href="https://v8.dev/features/modules#specifiers">进一步了解浏览器中的 JS 模块。</a>这就是为什么上面的代码中使用 <code>&#39;bootstrap.esm.min.js&#39;</code> 而不是 <code>&#39;bootstrap&#39;</code>。不过，我们的 Popper 依赖让这件事变得更加复杂，它像这样将 Popper 导入到我们的 JavaScript 中：
+      <a href="https://v8.dev/features/modules#specifiers">进一步了解浏览器中的 JS 模块。</a> 这就是为什么上面的代码中使用 <code>&#39;bootstrap.esm.min.js&#39;</code> 而不是 <code>&#39;bootstrap&#39;</code>。不过，我们的 Popper 依赖让这件事变得更加复杂，它像这样将 Popper 导入到我们的 JavaScript 中：
     </p>
     <CodeWrapper
       code='import * as Popper from "@popperjs/core"
@@ -59,7 +59,7 @@
 '
       lang="text"
     />
-    <p>要解决这个问题，你可以使用 <code>importmap</code> 将任意模块名解析为完整路径。如果你的<a href="https://caniuse.com/?search=importmap">目标浏览器</a>不支持 <code>importmap</code>，则需要使用<a href="https://github.com/guybedford/es-module-shims">es-module-shims</a>项目。下面是它对 Bootstrap 和 Popper 生效的方式：</p>
+    <p>要解决这个问题，你可以使用 <code>importmap</code> 将任意模块名解析为完整路径。如果你的 <a href="https://caniuse.com/?search=importmap">目标浏览器</a> 不支持 <code>importmap</code>，则需要使用 <a href="https://github.com/guybedford/es-module-shims">es-module-shims</a> 项目。下面是它对 Bootstrap 和 Popper 生效的方式：</p>
     <CodeWrapper
       code='&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
@@ -93,7 +93,7 @@
     />
     <h2 id="dependencies">依赖<a class="anchor-link" href="#dependencies" aria-label="依赖链接"></a></h2>
     <p>部分插件和 CSS 组件依赖于其他插件。如果你单独引入插件，请务必在文档中查看这些依赖关系。</p>
-    <p>我们的下拉菜单、弹出框和工具提示还依赖于<a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a>。</p>
+    <p>我们的下拉菜单、弹出框和工具提示还依赖于 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 。</p>
     <h2 id="data-attributes">数据属性<a class="anchor-link" href="#data-attributes" aria-label="数据属性链接"></a></h2>
     <p>
       几乎所有 Bootstrap 插件都可以仅通过 HTML 和 data 数据属性来启用和配置（这是我们认为使用 JavaScript 功能的首选方式）。请务必
@@ -101,14 +101,14 @@
     </p>
     <JsDataAttributes />
     <h2 id="selectors">选择器<a class="anchor-link" href="#selectors" aria-label="选择器链接"></a></h2>
-    <p>出于性能考虑，我们使用原生的 <code>querySelector</code> 和 <code>querySelectorAll</code> 方法来查询 DOM 元素，因此你必须使用<a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">有效的选择器</a>。如果你使用 <code>collapse:Example</code> 这类特殊选择器，请务必对其进行转义。</p>
+    <p>出于性能考虑，我们使用原生的 <code>querySelector</code> 和 <code>querySelectorAll</code> 方法来查询 DOM 元素，因此你必须使用 <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">有效的选择器</a> 。如果你使用 <code>collapse:Example</code> 这类特殊选择器，请务必对其进行转义。</p>
     <h2 id="events">事件<a class="anchor-link" href="#events" aria-label="事件链接"></a></h2>
     <p>
       Bootstrap 为大多数插件的独有操作提供了自定义事件。通常，这些事件以不定式和过去分词两种形式出现——其中不定式（例如
       <code>show</code>）在事件开始时触发，其过去分词形式（例如 <code>shown</code>）在操作完成时触发。
     </p>
     <p>
-      所有不定式（infinitive）事件都提供<a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a>
+      所有不定式（infinitive）事件都提供 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a>
       功能。这让我们能够在某个操作开始之前阻止其执行。从事件处理函数中返回 false 也会自动调用
       <code>preventDefault()</code>。
     </p>
@@ -147,7 +147,7 @@ const modal1 = new bootstrap.Modal(myModalEl, configObject) // initialized with 
     />
     <p>如果实例尚未初始化，它还可以接受并使用一个可选的配置对象作为第二个参数。</p>
     <h3 id="css-selectors-in-constructors">构造函数中的 CSS 选择器<a class="anchor-link" href="#css-selectors-in-constructors" aria-label="构造函数中的 CSS 选择器链接"></a></h3>
-    <p>除了 <code>getInstance</code> 和 <code>getOrCreateInstance</code> 方法之外，所有插件构造函数都接受 DOM 元素或有效的<a href="#selectors">CSS 选择器</a>作为第一个参数。由于我们的插件仅支持单个元素，因此插件元素通过 <code>querySelector</code> 方法查找。</p>
+    <p>除了 <code>getInstance</code> 和 <code>getOrCreateInstance</code> 方法之外，所有插件构造函数都接受 DOM 元素或有效的 <a href="#selectors">CSS 选择器</a> 作为第一个参数。由于我们的插件仅支持单个元素，因此插件元素通过 <code>querySelector</code> 方法查找。</p>
     <CodeWrapper
       code='const modal = new bootstrap.Modal(&#39;#myModal&#39;)
 const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)
@@ -256,7 +256,7 @@ bootstrap.Modal.Default.keyboard = false
     <p>如果进行了相应配置，我们的工具提示和弹出框组件可以在页面上渲染任意 HTML。为防止跨站脚本（XSS）攻击，这些组件会在将接受 HTML 的选项渲染到页面之前，使用内置的内容清理器对其进行清理。内容清理默认启用。</p>
     <p>默认允许的标签和属性如下。任何未显式允许的标签或属性都会在清理过程中被移除：</p>
     <JsDocs name="allow-list" file="js/sanitizer.js" /><Callout type="warning">
-      <p><strong>使用这些高级选项时请务必小心。</strong>有关更多信息，请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本防护速查表</a>。 仅因禁用或修改内容清理而引起的漏洞不在 Bootstrap 安全模型的考虑范围之内。</p>
+      <p><strong>使用这些高级选项时请务必小心。</strong>有关更多信息，请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本防护速查表</a> 。 仅因禁用或修改内容清理而引起的漏洞不在 Bootstrap 安全模型的考虑范围之内。</p>
     </Callout>
     <p>你可以向默认的 <code>allowList</code> 添加新值：</p>
     <CodeWrapper
@@ -277,7 +277,7 @@ myDefaultAllowList[&#39;*&#39;].push(myCustomRegex)
     />
     <p>
       你也可以用专门的库替换我们的清理器，例如
-      <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>：
+      <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a> ：
     </p>
     <CodeWrapper
       code="const yourTooltipEl = document.querySelector(&#39;#yourTooltip&#39;)
