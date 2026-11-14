@@ -29,7 +29,7 @@ const tableData = ref([
 ])
 
 // Bootstrap 组件
-import { bootstrap } from 'bootstrap-vue-top'
+import { bootstrap } from '@lib'
 const popoverRef = ref(null)
 onMounted(() => {
   // 实例化 Bootstrap 组件

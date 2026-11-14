@@ -20,7 +20,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@lib': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
   css: {
