@@ -16,8 +16,8 @@
     <Example
       :code="
         [
-          ...data['theme-colors'].map((themeColor) => `<p> <a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a> </p>`),
-          `<p> <a href=&quot;#&quot; class=&quot;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&quot;>Emphasis link</a> </p>`
+          ...data['theme-colors'].map((themeColor) => `<p><a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a></p>`),
+          `<p><a href=&quot;#&quot; class=&quot;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&quot;>Emphasis link</a></p>`
         ].join('\n')
       "
     />

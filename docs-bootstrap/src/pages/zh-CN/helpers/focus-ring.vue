@@ -10,26 +10,26 @@
       <kbd>Tab</kbd> 键。
     </p>
     <Example
-      code=' <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+      code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
   Custom focus ring
-</a> '
+</a>'
     />
     <h2 id="customize">自定义<a class="anchor-link" href="#customize" aria-label="自定义链接"></a></h2>
     <p>使用我们的 CSS 变量、Sass 变量、工具类或自定义样式来修改聚焦环的样式。</p>
     <h3 id="css-variables">CSS 变量<a class="anchor-link" href="#css-variables" aria-label="CSS 变量链接"></a></h3>
     <p>根据需要修改 <code>--bs-focus-ring-*</code> CSS 变量，以更改默认外观。</p>
     <Example
-      code=' <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
+      code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
   Green focus ring
-</a> '
+</a>'
     />
     <p><code>.focus-ring</code> 通过全局 CSS 变量设置样式，可以在任意父元素上覆盖，如上所示。这些变量由对应的 Sass 变量生成。</p>
     <ScssDocs name="root-focus-variables" file="scss/_root.scss" />
     <p>默认情况下不存在 <code>--bs-focus-ring-x</code>、<code>--bs-focus-ring-y</code> 或 <code>--bs-focus-ring-blur</code>，但我们提供了回退到初始值 <code>0</code> 的 CSS 变量。修改它们即可更改默认外观。</p>
     <Example
-      code=' <a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+      code='<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
   Blurry offset focus ring
-</a> '
+</a>'
     />
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>定制聚焦环的 Sass 变量，即可修改整个由 Bootstrap 驱动的项目中所有聚焦环样式的用法。</p>

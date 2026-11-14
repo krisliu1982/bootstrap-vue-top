@@ -13,26 +13,26 @@
     <Example
       code='<ul class="nav">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
     <p>整个过程中都使用类，因此你的标记可以非常灵活。像上面一样使用 <code>&lt;ul&gt;</code>，如果项目顺序很重要则使用 <code>&lt;ol&gt;</code>，或者使用 <code>&lt;nav&gt;</code> 元素自行构建。由于 <code>.nav</code> 使用 <code>display: flex</code>，导航链接的行为与导航项相同， 但无需额外的标记。</p>
     <Example
       code='<nav class="nav">
- <a class="nav-link active" aria-current="page" href="#">Active</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h2 id="available-styles">可用样式<a class="anchor-link" href="#available-styles" aria-label="可用样式链接"></a></h2>
@@ -43,16 +43,16 @@
     <Example
       code='<ul class="nav justify-content-center">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -60,16 +60,16 @@
     <Example
       code='<ul class="nav justify-content-end">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -78,26 +78,26 @@
     <Example
       code='<ul class="nav flex-column">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
     <p>一如既往，垂直导航也可以不使用 <code>&lt;ul&gt;</code>。</p>
     <Example
       code='<nav class="nav flex-column">
- <a class="nav-link active" aria-current="page" href="#">Active</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 </nav>'
     />
     <h3 id="tabs">标签页<a class="anchor-link" href="#tabs" aria-label="标签页链接"></a></h3>
@@ -105,16 +105,16 @@
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
   </li>
 </ul>'
     />
@@ -123,16 +123,16 @@
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />
@@ -141,16 +141,16 @@
     <Example
       code='<ul class="nav nav-underline">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />
@@ -159,52 +159,52 @@
     <Example
       code='<ul class="nav nav-pills nav-fill">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Much longer nav link</a> 
+    <a class="nav-link" href="#">Much longer nav link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />
     <p>使用基于 <code>&lt;nav&gt;</code> 的导航时，可以放心省略 <code>.nav-item</code>，因为为 <code>&lt;a&gt;</code> 元素添加样式只需 <code>.nav-link</code>。</p>
     <Example
       code='<nav class="nav nav-pills nav-fill">
- <a class="nav-link active" aria-current="page" href="#">Active</a> 
- <a class="nav-link" href="#">Much longer nav link</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+  <a class="nav-link active" aria-current="page" href="#">Active</a> 
+  <a class="nav-link" href="#">Much longer nav link</a> 
+  <a class="nav-link" href="#">Link</a> 
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
 </nav>'
     />
     <p>若要使各元素宽度相等，请使用 <code>.nav-justified</code>。所有水平空间都会被导航链接占用，但与上面的 <code>.nav-fill</code> 不同，每个导航项的宽度都相同。</p>
     <Example
       code='<ul class="nav nav-pills nav-justified">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Much longer nav link</a> 
+    <a class="nav-link" href="#">Much longer nav link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />
     <p>与使用基于 <code>&lt;nav&gt;</code> 导航的 <code>.nav-fill</code> 示例类似。</p>
     <Example
       code='<nav class="nav nav-pills nav-justified">
- <a class="nav-link active" aria-current="page" href="#">Active</a> 
- <a class="nav-link" href="#">Much longer nav link</a> 
- <a class="nav-link" href="#">Link</a> 
- <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+  <a class="nav-link active" aria-current="page" href="#">Active</a> 
+  <a class="nav-link" href="#">Much longer nav link</a> 
+  <a class="nav-link" href="#">Link</a> 
+  <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
 </nav>'
     />
     <h2 id="working-with-flex-utilities">配合 Flex 工具类使用<a class="anchor-link" href="#working-with-flex-utilities" aria-label="配合 Flex 工具类使用"></a></h2>
@@ -214,10 +214,10 @@
     </p>
     <Example
       code='<nav class="nav nav-pills flex-column flex-sm-row">
- <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a> 
- <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a> 
- <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a> 
- <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a> 
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a> 
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a> 
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a> 
+  <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a> 
 </nav>'
     />
     <h2 id="regarding-accessibility">关于无障碍访问<a class="anchor-link" href="#regarding-accessibility" aria-label="关于无障碍访问"></a></h2>
@@ -236,10 +236,10 @@
     <Example
       code='<ul class="nav nav-tabs">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item dropdown">
-   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a> 
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a> 
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a> </li>
       <li><a class="dropdown-item" href="#">Another action</a> </li>
@@ -249,10 +249,10 @@
     </ul>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />
@@ -260,10 +260,10 @@
     <Example
       code='<ul class="nav nav-pills">
   <li class="nav-item">
-   <a class="nav-link active" aria-current="page" href="#">Active</a> 
+    <a class="nav-link active" aria-current="page" href="#">Active</a> 
   </li>
   <li class="nav-item dropdown">
-   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a> 
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a> 
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a> </li>
       <li><a class="dropdown-item" href="#">Another action</a> </li>
@@ -273,10 +273,10 @@
     </ul>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="#">Link</a> 
+    <a class="nav-link" href="#">Link</a> 
   </li>
   <li class="nav-item">
-   <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a> 
   </li>
 </ul>'
     />

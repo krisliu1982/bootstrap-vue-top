@@ -19,7 +19,7 @@
     <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
   </svg>
   Icon link
-</a> '
+</a>'
     />
     <Example
       code='<a class="icon-link" href="#">
@@ -27,7 +27,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
     <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
-</a> '
+</a>'
     />
     <h2 id="style-on-hover">悬停样式<a class="anchor-link" href="#style-on-hover" aria-label="悬停样式链接"></a></h2>
     <p>添加 <code>.icon-link-hover</code> 可在悬停时将图标向右移动。</p>
@@ -37,7 +37,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
     <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
-</a> '
+</a>'
     />
     <h2 id="customize">自定义<a class="anchor-link" href="#customize" aria-label="自定义链接"></a></h2>
     <p>使用我们的链接 CSS 变量、Sass 变量、工具类或自定义样式来修改图标链接的样式。</p>
@@ -51,7 +51,7 @@
     <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
   </svg>
   Icon link
-</a> '
+</a>'
     />
     <p>通过覆盖 <code>--bs-link-*</code> CSS 变量来自定义颜色：</p>
     <Example
@@ -60,7 +60,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
     <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
-</a> '
+</a>'
     />
     <h3 id="sass-variables">Sass 变量<a class="anchor-link" href="#sass-variables" aria-label="Sass 变量链接"></a></h3>
     <p>定制图标链接的 Sass 变量，即可修改整个由 Bootstrap 驱动的项目中所有图标链接样式。</p>
@@ -73,7 +73,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
     <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
-</a> '
+</a>'
     />
     <DocsPager />
   </article>

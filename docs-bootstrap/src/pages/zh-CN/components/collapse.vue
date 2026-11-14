@@ -82,27 +82,27 @@
     <p>折叠触发器可以放置在另一个 <code>.collapse</code> 元素内部。当你想要逐步显示额外内容时，这很有用。</p>
     <Example
       code='<p class="d-inline-flex gap-1">
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedParent" aria-expanded="false" aria-controls="collapseNestedParent">
-      Toggle parent
-    </button>
-  </p>
-  <div class="collapse" id="collapseNestedParent">
-    <div class="card card-body">
-      <p class="mb-2">
-        This is the parent collapse. It can contain links, buttons, and even other collapse triggers.
-      </p>
-      <p class="d-inline-flex gap-1 mb-0">
-        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedChild" aria-expanded="false" aria-controls="collapseNestedChild">
-          Toggle nested collapse
-        </button>
-      </p>
-      <div class="collapse mt-2" id="collapseNestedChild">
-        <div class="card card-body">
-          This is the nested collapse content.
-        </div>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedParent" aria-expanded="false" aria-controls="collapseNestedParent">
+    Toggle parent
+  </button>
+</p>
+<div class="collapse" id="collapseNestedParent">
+  <div class="card card-body">
+    <p class="mb-2">
+      This is the parent collapse. It can contain links, buttons, and even other collapse triggers.
+    </p>
+    <p class="d-inline-flex gap-1 mb-0">
+      <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNestedChild" aria-expanded="false" aria-controls="collapseNestedChild">
+        Toggle nested collapse
+      </button>
+    </p>
+    <div class="collapse mt-2" id="collapseNestedChild">
+      <div class="card card-body">
+        This is the nested collapse content.
       </div>
     </div>
-  </div>'
+  </div>
+</div>'
     />
 
     <h2 id="accessibility">无障碍访问<a class="anchor-link" href="#accessibility" aria-label="无障碍访问链接"></a></h2>

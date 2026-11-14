@@ -7,8 +7,7 @@
     <p>Bootstrap 支持所有主流浏览器和平台的<strong>最新稳定版本</strong>。</p>
     <p>使用最新版 WebKit、Blink 或 Gecko 引擎的其他浏览器（无论是直接使用还是通过平台的 WebView API），并未获得明确支持。不过，在大多数情况下 Bootstrap 在这些浏览器中也应能正确显示和运行。更具体的支持信息见下文。</p>
     <p>
-      你可以在 <a href="https://github.com/twbs/bootstrap/blob/v5.3.9/.browserslistrc">我们的 <code>.browserslistrc 文件</code></a
-      >中找到我们支持的浏览器范围及其版本：
+      你可以在 <a href="https://github.com/twbs/bootstrap/blob/v5.3.9/.browserslistrc">我们的 <code>.browserslistrc 文件</code></a> 中找到我们支持的浏览器范围及其版本：
     </p>
     <CodeWrapper
       code="# https://github.com/browserslist/browserslist#readme
@@ -98,10 +97,8 @@ not kaios <= 2.5 # fix floating label issues in Firefox (see https://github.com/
     <h2 id="modals-and-dropdowns-on-mobile">移动设备上的模态框和下拉菜单<a class="anchor-link" href="#modals-and-dropdowns-on-mobile" aria-label="移动设备上的模态框和下拉菜单链接"></a></h2>
     <h3 id="overflow-and-scrolling">溢出与滚动<a class="anchor-link" href="#overflow-and-scrolling" aria-label="溢出与滚动链接"></a></h3>
     <p>
-      在 iOS 和 Android 中，对 <code>&lt;body&gt;</code> 元素上 <code>overflow: hidden;</code> 的支持相当有限。因此，当你在这些设备的浏览器中滚动到模态框的顶部或底部之外时，<code>&lt;body&gt;</code> 内容会开始滚动。参见 <a href="https://issues.chromium.org/issues/40301599">Chrome bug #175502</a> （已在 Chrome v40 中修复）和<a
-        href="https://bugs.webkit.org/show_bug.cgi?id=153852"
-        >WebKit bug #153852</a
-      >。
+      在 iOS 和 Android 中，对 <code>&lt;body&gt;</code> 元素上 <code>overflow: hidden;</code> 的支持相当有限。因此，当你在这些设备的浏览器中滚动到模态框的顶部或底部之外时，<code>&lt;body&gt;</code> 内容会开始滚动。参见 <a href="https://issues.chromium.org/issues/40301599">Chrome bug #175502</a> （已在 Chrome v40 中修复）和
+      <a href="https://bugs.webkit.org/show_bug.cgi?id=153852">WebKit bug #153852</a>。
     </p>
     <h3 id="ios-text-fields-and-scrolling">iOS 文本字段与滚动<a class="anchor-link" href="#ios-text-fields-and-scrolling" aria-label="iOS 文本字段与滚动链接"></a></h3>
     <p>从 iOS 9.2 起，当模态框打开时，如果滚动手势的起始触摸点位于文本 <code>&lt;input&gt;</code> 或 <code>&lt;textarea&gt;</code> 的边界之内，那么滚动的将是模态框下方的 <code>&lt;body&gt;</code> 内容，而不是模态框本身。参见 <a href="https://bugs.webkit.org/show_bug.cgi?id=153856">WebKit bug #153856</a> 。</p>

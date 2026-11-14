@@ -17,16 +17,16 @@
   <div class="card-body">
     <h5 class="card-title">Card with stretched link</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a> 
+    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
   </div>
 </div>'
     >
       <div class="card" style="width: 18rem">
         <Placeholder width="100%" height="180" class="card-img-top" :text="false" title="卡片图片占位" />
         <div class="card-body">
-          <h5 class="card-title">带有拉伸链接的卡片</h5>
-          <p class="card-text">一些快速示例文本，用于在卡片标题的基础上扩充内容，构成卡片内容的主体。</p>
-          <a href="#" class="btn btn-primary stretched-link">前往某处</a>
+          <h5 class="card-title">Card with stretched link</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
         </div>
       </div>
     </ExampleCustom>
@@ -45,9 +45,9 @@
       <div class="d-flex position-relative">
         <Placeholder width="144" height="144" class="flex-shrink-0 me-3" :text="false" title="通用占位图片22222" />
         <div>
-          <h5 class="mt-0">带有拉伸链接的自定义组件</h5>
-          <p>这是自定义组件的一些占位内容。它旨在模拟真实世界内容的样子，我们在这里用它为组件增添一些内容和尺寸。</p>
-          <a href="#" class="stretched-link">前往某处</a>
+          <h5 class="card-title">Card with stretched link</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
         </div>
       </div>
     </ExampleCustom>
@@ -70,7 +70,7 @@
     <h5 class="card-title">Card with stretched links</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <p class="card-text">
-      <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a> 
+      <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
     </p>
     <p class="card-text bg-body-tertiary" style="transform: rotate(0);">
       This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
@@ -81,12 +81,12 @@
       <div class="card" style="width: 18rem">
         <Placeholder width="100%" height="180" class="card-img-top" :text="false" title="卡片图片占位" />
         <div class="card-body">
-          <h5 class="card-title">带有拉伸链接的卡片</h5>
-          <p class="card-text">一些快速示例文本，用于在卡片标题的基础上扩充内容，构成卡片内容的主体。</p>
+          <h5 class="card-title">Card with stretched links</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
           <p class="card-text">
-            <a href="#" class="stretched-link text-danger" style="position: relative">此处的拉伸链接将无法生效，因为链接被添加了 <code>position: relative</code></a>
+            <a href="#" class="stretched-link text-danger" style="position: relative">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
           </p>
-          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">这个 <a href="#" class="text-warning stretched-link">拉伸链接</a> 只会铺满 <code>p</code> 标签的范围，因为该标签被应用了 transform。</p>
+          <p class="card-text bg-body-tertiary" style="transform: rotate(0)">This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.</p>
         </div>
       </div>
     </ExampleCustom>

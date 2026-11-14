@@ -7,7 +7,7 @@
     <h2 id="overview-and-limitations">概述与局限<a class="anchor-link" href="#overview-and-limitations" aria-label="概述与局限链接"></a></h2>
     <p>
       使用 Bootstrap 构建的任何项目，其整体的无障碍性在很大程度上取决于作者提供的标记结构、附加样式和脚本。但是，只要这些都实现得当，就完全可以使用 Bootstrap 创建满足 <a href="https://www.w3.org/TR/WCAG/"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2</a> （A/AA/AAA）、
-      <a href="https://www.section508.gov/">Section 508</a>及类似无障碍标准与要求的网站和应用程序。
+      <a href="https://www.section508.gov/">Section 508</a> 及类似无障碍标准与要求的网站和应用程序。
     </p>
     <h3 id="structural-markup">结构化标记<a class="anchor-link" href="#structural-markup" aria-label="结构化标记链接"></a></h3>
     <p>Bootstrap 的样式和布局可应用于多种多样的标记结构。本文档旨在为开发者提供最佳实践示例，以展示 Bootstrap 本身的用法并说明恰当的语义化标记，包括解决潜在无障碍问题的方式。</p>

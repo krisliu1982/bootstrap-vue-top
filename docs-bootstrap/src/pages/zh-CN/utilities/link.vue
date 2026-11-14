@@ -9,41 +9,41 @@
       >的问题。
     </p>
     <Example
-      code='<p><a class="link-opacity-10" href="#">Link opacity 10</a> </p>
-<p><a class="link-opacity-25" href="#">Link opacity 25</a> </p>
-<p><a class="link-opacity-50" href="#">Link opacity 50</a> </p>
-<p><a class="link-opacity-75" href="#">Link opacity 75</a> </p>
-<p><a class="link-opacity-100" href="#">Link opacity 100</a> </p>'
+      code='<p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
+<p><a class="link-opacity-25" href="#">Link opacity 25</a></p>
+<p><a class="link-opacity-50" href="#">Link opacity 50</a></p>
+<p><a class="link-opacity-75" href="#">Link opacity 75</a></p>
+<p><a class="link-opacity-100" href="#">Link opacity 100</a></p>'
     />
     <p>你甚至可以更改悬停时的不透明度级别。</p>
     <Example
-      code='<p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a> </p>
-<p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a> </p>
-<p><a class="link-opacity-50-hover" href="#">Link hover opacity 50</a> </p>
-<p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a> </p>
-<p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a> </p>'
+      code='<p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a></p>
+<p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a></p>
+<p><a class="link-opacity-50-hover" href="#">Link hover opacity 50</a></p>
+<p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a></p>
+<p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a></p>'
     />
     <h2 id="link-underlines">链接下划线<a class="anchor-link" href="#link-underlines" aria-label="链接下划线链接"></a></h2>
     <h3 id="underline-color">下划线颜色<a class="anchor-link" href="#underline-color" aria-label="下划线颜色链接"></a></h3>
     <p>独立于链接文本颜色更改下划线的颜色。</p>
-    <Example :code="data['theme-colors'].map((themeColor) => `<p> <a href=&quot;#&quot; class=&quot;link-underline-${themeColor.name}&quot;>${themeColor.name} underline</a> </p>`).join('\n')" />
+    <Example :code="data['theme-colors'].map((themeColor) => `<p> <a href=&quot;#&quot; class=&quot;link-underline-${themeColor.name}&quot;>${themeColor.name} underline</a></p>`).join('\n')" />
     <h3 id="underline-offset">下划线偏移<a class="anchor-link" href="#underline-offset" aria-label="下划线偏移链接"></a></h3>
     <p>更改下划线与文本的距离。偏移量以 <code>em</code> 为单位设置，可随元素当前的 <code>font-size</code> 自动缩放。</p>
     <Example
-      code='<p> <a href="#">Default link</a> </p>
-<p><a class="link-offset-1" href="#">Offset 1 link</a> </p>
-<p><a class="link-offset-2" href="#">Offset 2 link</a> </p>
-<p><a class="link-offset-3" href="#">Offset 3 link</a> </p>'
+      code='<p> <a href="#">Default link</a></p>
+<p><a class="link-offset-1" href="#">Offset 1 link</a></p>
+<p><a class="link-offset-2" href="#">Offset 2 link</a></p>
+<p><a class="link-offset-3" href="#">Offset 3 link</a></p>'
     />
     <h3 id="underline-opacity">下划线不透明度<a class="anchor-link" href="#underline-opacity" aria-label="下划线不透明度链接"></a></h3>
     <p>更改下划线的不透明度。需要先添加 <code>.link-underline</code> 来设置 <code>rgba()</code> 颜色，我们随后再用它来修改 alpha 不透明度。</p>
     <Example
-      code='<p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Underline opacity 0</a> </p>
-<p><a class="link-offset-2 link-underline link-underline-opacity-10" href="#">Underline opacity 10</a> </p>
-<p><a class="link-offset-2 link-underline link-underline-opacity-25" href="#">Underline opacity 25</a> </p>
-<p><a class="link-offset-2 link-underline link-underline-opacity-50" href="#">Underline opacity 50</a> </p>
-<p><a class="link-offset-2 link-underline link-underline-opacity-75" href="#">Underline opacity 75</a> </p>
-<p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a> </p>'
+      code='<p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Underline opacity 0</a></p>
+<p><a class="link-offset-2 link-underline link-underline-opacity-10" href="#">Underline opacity 10</a></p>
+<p><a class="link-offset-2 link-underline link-underline-opacity-25" href="#">Underline opacity 25</a></p>
+<p><a class="link-offset-2 link-underline link-underline-opacity-50" href="#">Underline opacity 50</a></p>
+<p><a class="link-offset-2 link-underline link-underline-opacity-75" href="#">Underline opacity 75</a></p>
+<p><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Underline opacity 100</a></p>'
     />
     <h3 id="hover-variants">悬停变体<a class="anchor-link" href="#hover-variants" aria-label="悬停变体链接"></a></h3>
     <p>正如 <code>.link-opacity-*-hover</code> 工具类一样，<code>.link-offset</code> 和 <code>.link-underline-opacity</code> 工具类默认也包含 <code>:hover</code> 变体。混合搭配即可创建独特的链接样式。</p>
@@ -57,8 +57,8 @@
     <Example
       :code="
         [
-          ...data['theme-colors'].map((themeColor) => `<p> <a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a> </p>`),
-          `<p> <a href=&quot;#&quot; class=&quot;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&quot;>Emphasis link</a> </p>`
+          ...data['theme-colors'].map((themeColor) => `<p> <a href=&quot;#&quot; class=&quot;link-${themeColor.name} link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover&quot;>${themeColor.name} link</a></p>`),
+          `<p> <a href=&quot;#&quot; class=&quot;link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover&quot;>Emphasis link</a></p>`
         ].join('\n')
       "
     /><Callout name="warning-color-assistive-technologies" />

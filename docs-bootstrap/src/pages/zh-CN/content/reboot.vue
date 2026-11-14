@@ -123,11 +123,11 @@ sans-serif,
     <Example code="<p>This is an example paragraph.</p>" />
     <h2 id="links">链接<a class="anchor-link" href="#links" aria-label="链接链接"></a></h2>
     <p>链接会应用默认的 <code>color</code> 和下划线。虽然链接会在 <code>:hover</code> 时发生变化，但它们不会因是否被 <code>:visited</code> 访问过而改变。它们也不会获得特殊的 <code>:focus</code> 样式。</p>
-    <Example code=' <a href="#">This is an example link</a> ' />
+    <Example code='<a href="#">This is an example link</a>' />
     <p>从 v5.3.x 起，链接的 <code>color</code> 使用 <code>rgba()</code> 和新的 <code>-rgb</code> CSS 变量设置，从而可以轻松自定义链接颜色的不透明度。使用 <code>--bs-link-opacity</code> CSS 变量更改链接颜色的不透明度：</p>
-    <Example code=' <a href="#" style="--bs-link-opacity: .5">This is an example link</a> ' />
+    <Example code='<a href="#" style="--bs-link-opacity: .5">This is an example link</a>' />
     <p>占位链接——即没有 <code>href</code> 的链接——会通过更具体的选择器进行定位，其 <code>color</code> 和 <code>text-decoration</code> 会被重置为默认值。</p>
-    <Example code="<a>This is a placeholder link</a> " />
+    <Example code="<a>This is a placeholder link</a>" />
     <h2 id="horizontal-rules">水平分隔线<a class="anchor-link" href="#horizontal-rules" aria-label="水平分隔线链接"></a></h2>
     <p><code>&lt;hr&gt;</code> 元素已被简化。与浏览器默认行为类似，<code>&lt;hr&gt;</code> 通过 <code>border-top</code> 设置样式，具有默认的 <code>opacity: .25</code>，并通过 <code>color</code> 自动继承其 <code>border-color</code>，包括当 <code>color</code> 通过父级设置时。它们可以使用文本、边框和不透明度工具类进行修改。</p>
     <Example

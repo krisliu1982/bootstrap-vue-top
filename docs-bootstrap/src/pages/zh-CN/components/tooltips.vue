@@ -36,7 +36,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <Example
       addStackblitzJs
       class="tooltip-demo"
-      code='<p class="muted">Placeholder text to demonstrate some  <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a>  with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of  <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a> . And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how  <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a>  can work in practice, once you use them on  <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a>  site or project.</p>'
+      code='<p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you’ve now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>'
     />
     <Callout name="warning-data-bs-title-vs-title" type="warning" />
     <h3 id="custom-tooltips">自定义工具提示<a class="anchor-link" href="#custom-tooltips" aria-label="自定义工具提示链接"></a></h3>
@@ -78,7 +78,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =&gt; new boots
     <Example
       :showMarkup="false"
       class="tooltip-demo"
-      code=' <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip" aria-label="Hover or focus to see default tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" aria-hidden="true"><rect width="100%" height="100%" fill="#563d7c"></rect><circle cx="50" cy="50" r="30" fill="#007bff"></circle></svg></a> '
+      code='<a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip" aria-label="Hover or focus to see default tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" aria-hidden="true"><rect width="100%" height="100%" fill="#563d7c"></rect><circle cx="50" cy="50" r="30" fill="#007bff"></circle></svg></a>'
     />
     <h2 id="css">CSS<a class="anchor-link" href="#css" aria-label="CSS 链接"></a></h2>
     <h3 id="variables">变量<a class="anchor-link" href="#variables" aria-label="变量链接"></a></h3>
