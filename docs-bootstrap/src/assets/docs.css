@@ -114,12 +114,12 @@
 
   .bd-toc a {
       display: block;
-      padding: 0.125rem 0.5rem;
+      padding: 2px 0.5rem;
       color: var(--bs-secondary-color);
       text-decoration: none;
       border-left: 2px solid transparent;
-      font-size: 0.875rem;
-      margin-bottom: 4px;
+      font-size: 13px;
+      margin-bottom: 2px;
   }
 
   .bd-toc a:hover,

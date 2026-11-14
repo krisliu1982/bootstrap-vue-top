@@ -22,7 +22,8 @@
     ".": {
       "import": "./dist/bootstrap-vue-top.js",
       "require": "./dist/bootstrap-vue-top.umd.cjs"
-    }
+    },
+     "./style.css": "./dist/bootstrap-vue.css"
   },
   "scripts": {
     "dev": "vite",
