@@ -104,10 +104,6 @@
     <div class="bd-layout">
       <aside class="offcanvas-lg offcanvas-start bd-sidebar" style="--bs-offcanvas-width: 75vw" tabindex="-1"
         id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
-        <!--<div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasSidebarLabel">文档菜单</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSidebar" aria-label="Close"></button>
-        </div>-->
         <div class="offcanvas-body">
           <nav id="menuSidebar">
             <div v-for="t in data.sidebar">
