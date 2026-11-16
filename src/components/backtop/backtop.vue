@@ -1,8 +1,8 @@
 <template>
   <Teleport to="body">
     <transition name="bv-fadeIn">
-      <a v-if="visible" href="#" role="button" class="backtop" :class="backtopClass" @click.prevent="handleClick">
-        <BiArrowUpCircleFill />
+      <a v-if="visible" href="#" role="button" class="backtop" @click.prevent="handleClick">
+        <BiArrowUpCircleFill :class="backtopClass"/>
       </a>
     </transition>
   </Teleport>

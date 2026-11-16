@@ -8,11 +8,12 @@
 
         <h2>颜色调整</h2>
 <p> 通过 <code>color</code> 属性设置颜色。提供八种颜色为：<code>primary | secondary | success | danger | warning | info | light | dark</code>，默认为 <code>primary</code>。 </p>
-<ColorAdjustment />
-
+<!-- <ColorAdjustment />
+ -->
         <h2>尺寸调整</h2>
 <p>通过 <code>size</code> 属性设置尺寸。提供三种尺寸为：<code>sm | md | lg</code>，默认为 <code>md</code>。</p>
-<SizeAdjustment />
+<!-- <SizeAdjustment /> -->
+ <div style="height: 100vh;"></div>
 </template>
 
 <script setup>
