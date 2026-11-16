@@ -1,6 +1,6 @@
 # bootstrap-vue-top
 
-基于 Bootstrap 5.3.8 & Vue 3.5.x 的前端组件库
+基于 Bootstrap 5.3.x & Vue 3.5.x 的前端组件库
 
 
 ## 主要特点
