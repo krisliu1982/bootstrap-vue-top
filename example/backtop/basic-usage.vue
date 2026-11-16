@@ -1,0 +1,4 @@
+
+<template>
+  <bv-backtop />
+</template>

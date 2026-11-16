@@ -17,6 +17,7 @@ import { ref } from 'vue'
 import AlertBox from './alert-box/index.vue'
 import AlertConfirm from './alert-confirm/index.vue'
 import AlertMessage from './alert-message/index.vue'
+import Backtop from './backtop/index.vue'
 
 const currentTab = ref(0)
 const tabs = [{
@@ -30,6 +31,10 @@ const tabs = [{
 {
   'name': 'AlertMessage',
   'component': AlertMessage
+},
+{
+  'name': 'Backtop',
+  'component': Backtop
 }
 ]
 </script>
