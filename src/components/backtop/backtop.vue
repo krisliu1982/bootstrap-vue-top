@@ -1,8 +1,8 @@
 <template>
   <Teleport to="body">
     <transition name="bv-fadeIn">
-      <a v-if="visible" href="#" role="button" class="backtop" @click.prevent="handleClick">
-        <BiArrowUpCircleFill :class="backtopClass"/>
+      <a v-if="visible" href="#" role="button" class="bv-backtop" @click.prevent="handleClick">
+        <BiArrowUpCircleFill :class="backtopClass" />
       </a>
     </transition>
   </Teleport>
@@ -31,7 +31,7 @@ const props = defineProps({
 });
 
 const backtopClass = computed(() => {
-  const classList = [`link-${props.color}`];
+  const classList = [`text-${props.color}`];
   if (props.size === 'md') {
     classList.push('display-4');
   } else if (props.size === 'sm') {
