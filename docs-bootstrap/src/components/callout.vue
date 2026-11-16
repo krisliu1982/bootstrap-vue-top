@@ -28,6 +28,7 @@
   </div>
 </template>
 
+
 <script setup>
 import InfoNpmStarter from '@/data/callouts/info-npm-starter.vue';
 import WarningInputSupport from '@/data/callouts/warning-input-support.vue';

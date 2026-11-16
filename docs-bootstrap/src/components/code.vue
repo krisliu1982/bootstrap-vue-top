@@ -2,6 +2,7 @@
   <div class="bd-code border border-top-0 rounded-bottom" v-html="html"></div>
 </template>
 
+
 <script setup>
 import { ref, onMounted } from 'vue';
 import { highlightCode } from '@/assets/code-highlighter.js';
