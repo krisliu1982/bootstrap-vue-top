@@ -1,6 +1,6 @@
 <template>
-  <Transition name="fadeInDown" @after-leave="$emit('destroy')">
-    <div v-show="visible" class="alert-message" @mouseenter="clearTimer" @mouseleave="startTimer" role="alert">
+  <Transition name="bv-fadeInDown" @after-leave="$emit('destroy')">
+    <div v-show="visible" class="bv-alert-message" @mouseenter="clearTimer" @mouseleave="startTimer" role="alert">
       <div class="d-flex align-items-center rounded px-3 py-2" :class="className">
         <div class="me-2">
           <BiCheckCircle v-if="type === 'success'" />

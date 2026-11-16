@@ -8,7 +8,7 @@
   "files": [
     "dist",
     "src",
-    "docs",
+    "example",
     ".browserslistrc",
     "package.json",
     "postcss.config.js",
@@ -23,7 +23,7 @@
       "import": "./dist/bootstrap-vue-top.js",
       "require": "./dist/bootstrap-vue-top.umd.cjs"
     },
-     "./style.css": "./dist/bootstrap-vue-top.css"
+    "./style.css": "./dist/bootstrap-vue-top.css"
   },
   "scripts": {
     "dev": "vite",
@@ -40,8 +40,10 @@
     "@vitejs/plugin-vue": "^6.0.11",
     "autoprefixer": "^10.6.2",
     "bootstrap": "^5.3.9",
+    "es-toolkit": "^1.53.2",
     "eslint": "^10.15.0",
     "eslint-plugin-vue": "^10.12.1",
+    "focus-trap": "^8.2.5",
     "prettier": "^3.10.1",
     "sass": "^1.108.2",
     "unplugin-icons": "^22.5.0",

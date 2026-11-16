@@ -37,7 +37,7 @@
 
 <script setup>
 import { computed, inject } from 'vue';
-import { get } from 'lodash-es';
+import { get } from 'es-toolkit/compat';
 import { cols_key, attrs_key, expand_keys } from './treetable-keys.js';
 
 const props = defineProps({

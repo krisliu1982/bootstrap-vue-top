@@ -3,7 +3,7 @@ import AlertBox from './alert-box.vue';
 
 let container = null;
 const alertBox = function (data) {
-  if (container) {
+  if (container !== null) {
     render(null, container);
     container = null;
   }
@@ -14,12 +14,14 @@ const alertBox = function (data) {
     message: data.message,
     onDestroy: () => {
       render(null, container);
+      container = null;
     }
   });
 
   render(vnode, container);
 
   document.body.appendChild(container.firstElementChild);
+
 };
 
 export default alertBox;

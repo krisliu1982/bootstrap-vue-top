@@ -1,5 +1,27 @@
 
-.alert-message {
+.bv-alert-box {
+  z-index: $zindex-alert;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%; 
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.bv-alert-confirm {
+  z-index: $zindex-alert;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%; 
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.bv-alert-message {
   z-index: $zindex-alert;
   position: fixed;
   width: fit-content;
@@ -8,26 +30,4 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-}
-
-.alert-box {
-  z-index: $zindex-alert;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%; 
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, .5);
-}
-
-.alert-confirm {
-  z-index: $zindex-alert;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%; 
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, .5);
 }

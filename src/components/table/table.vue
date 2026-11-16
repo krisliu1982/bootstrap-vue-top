@@ -101,7 +101,8 @@
 
 <script setup>
 import { useSlots, ref, provide, onMounted, watch, computed } from 'vue';
-import { get, orderBy } from 'lodash-es';
+import { get } from 'es-toolkit/compat';
+import { orderBy } from 'es-toolkit';
 import { cols_injection_key, tr_keyinfo_injection_key } from './table-keys.js';
 
 const emit = defineEmits(['sort-change', 'expand-change']);
