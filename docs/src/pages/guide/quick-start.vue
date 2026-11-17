@@ -13,6 +13,7 @@
     <h2 id="quick-start-setup">
       安装<a class="anchor-link" aria-label="Link to this section: 安装" href="#quick-start-setup"> </a>
     </h2>
+    <p class="text-bg-primary"><strong>注意！</strong>我们提供的构建文件里面已经包括 bootstrap 的 css 和 js，切勿再次引入。</p>
     <code-highlight type="bash" :code="setupCode" label="bash" />
 
     <h2 id="quick-start-import">
