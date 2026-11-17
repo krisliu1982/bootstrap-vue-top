@@ -5,6 +5,7 @@ let container = null;
 const alertBox = function (data) {
   if (container !== null) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
@@ -14,6 +15,7 @@ const alertBox = function (data) {
     message: data.message,
     onDestroy: () => {
       render(null, container);
+      container.remove();
       container = null;
     }
   });

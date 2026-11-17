@@ -1,6 +1,6 @@
 <template>
-  <Transition name="fadeIn" @after-leave="$emit('destroy')">
-    <div v-show="visible" ref="elementRef" class="image-preview" tabindex="-1" role="dialog" aria-modal="true">
+  <Transition name="bv-fadeIn" @after-leave="$emit('destroy')">
+    <div v-show="visible" ref="elementRef" class="bv-image-preview" tabindex="-1" role="dialog" aria-modal="true">
       <div class="d-flex w-100 h-100 justify-content-center align-items-center user-select-none">
         <img
           :src="data[index]"

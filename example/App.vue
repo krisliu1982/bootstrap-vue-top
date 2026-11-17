@@ -18,6 +18,8 @@ import AlertBox from './alert-box/index.vue'
 import AlertConfirm from './alert-confirm/index.vue'
 import AlertMessage from './alert-message/index.vue'
 import Backtop from './backtop/index.vue'
+import ImagePreview from './image-preview/index.vue'
+import Loading from './loading/index.vue'
 
 const currentTab = ref(0)
 const tabs = [{
@@ -35,6 +37,14 @@ const tabs = [{
 {
   'name': 'Backtop',
   'component': Backtop
+},
+{
+  'name': 'ImagePreview',
+  'component': ImagePreview
+},
+{
+  'name': 'Loading',
+  'component': Loading
 }
 ]
 </script>

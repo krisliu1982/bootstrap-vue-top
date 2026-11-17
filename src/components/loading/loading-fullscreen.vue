@@ -1,6 +1,6 @@
 <template>
-  <Transition name="fadeIn">
-    <div ref="elementRef" v-show="visible" class="loading-fullscreen text-center" tabindex="-1">
+  <Transition name="bv-fadeIn">
+    <div ref="elementRef" v-show="visible" class="bv-loading-fullscreen text-center" tabindex="-1">
       <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; margin-top: 25vh">
         <span class="visually-hidden">Loading...</span>
       </div>

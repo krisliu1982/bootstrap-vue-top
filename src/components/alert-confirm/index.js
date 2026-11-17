@@ -5,6 +5,7 @@ let container = null;
 const alertConfirm = function (data) {
   if (container) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
@@ -15,7 +16,8 @@ const alertConfirm = function (data) {
     callback: data.confirm,
     onDestroy: () => {
       render(null, container);
-      container = null;
+    container.remove();
+    container = null;
     }
   });
 

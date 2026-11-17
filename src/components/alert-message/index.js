@@ -5,6 +5,7 @@ let container = null;
 const alertMessage = function (data) {
   if (container !== null) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
@@ -16,7 +17,8 @@ const alertMessage = function (data) {
     duration: data.duration,
     onDestroy: () => {
       render(null, container);
-      container = null;
+    container.remove();
+    container = null;
     }
   });
 
