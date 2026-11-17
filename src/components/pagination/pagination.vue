@@ -3,7 +3,9 @@
     <div v-if="mode === 'full'" class="col-auto" :class="totalClass">共 {{ total }} 条</div>
     <ul v-if="pages > 1" class="col-auto pagination mb-0" :class="paginationClass">
       <li class="page-item" :class="{ disabled: currentPage === 1 }">
-        <span v-if="currentPage === 1" class="page-link"><BiChevronLeft /></span>
+        <span v-if="currentPage === 1" class="page-link">
+          <BiChevronLeft />
+        </span>
         <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage - 1)">
           <BiChevronLeft />
         </button>
@@ -22,7 +24,9 @@
         </li>
 
         <li v-if="showPrevMore" class="page-item disabled">
-          <span class="page-link"><BiThreeDots /></span>
+          <span class="page-link">
+            <BiThreeDots />
+          </span>
         </li>
 
         <li v-for="p in pagers" class="page-item" :class="{ active: currentPage === p }" :key="p">
@@ -33,7 +37,9 @@
         </li>
 
         <li v-if="showNextMore" class="page-item disabled">
-          <span class="page-link"><BiThreeDots /></span>
+          <span class="page-link">
+            <BiThreeDots />
+          </span>
         </li>
 
         <li class="page-item" :class="{ active: currentPage === pages }">
@@ -45,34 +51,25 @@
       </template>
 
       <li class="page-item" :class="{ disabled: currentPage === pages }">
-        <span v-if="currentPage === pages" class="page-link"><BiChevronRight /></span>
+        <span v-if="currentPage === pages" class="page-link">
+          <BiChevronRight />
+        </span>
         <button v-else type="button" class="page-link" @click="emit('currentChange', currentPage + 1)">
           <BiChevronRight />
         </button>
       </li>
     </ul>
 
-    <select
-      v-if="mode === 'full'"
-      class="form-select col-auto"
-      :class="pageSizeClass"
-      style="width: 8rem"
-      :value="pageSize"
-      @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))"
-    >
+    <select v-if="mode === 'full'" class="form-select col-auto" :class="pageSizeClass" style="width: 8rem"
+      :value="pageSize" @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))">
       <option v-for="item in [10, 20, 50, 100]" :value="item">{{ item }}条/页</option>
     </select>
 
     <div v-if="mode === 'full' && pages > 7" class="col-auto input-group" :class="pageGoClass" style="width: 8rem">
       <span class="input-group-text">Go</span>
-      <input
-        class="form-control"
-        type="number"
-        title="输入页码回车"
-        oninput="this.value = Math.min(999, Math.max(1, this.value))"
-        onblur="this.value = null"
-        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))"
-      />
+      <input class="form-control" type="number" title="输入页码回车"
+        oninput="this.value = Math.min(999, Math.max(1, this.value))" onblur="this.value = null"
+        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))" />
     </div>
   </nav>
 </template>
@@ -107,7 +104,7 @@ const props = defineProps({
   },
   pagerCount: {
     type: Number,
-    default: 5,
+    default: 7,
     validator(value) {
       return [5, 7, 9, 11, 13, 15, 17, 19, 21].includes(value);
     }
