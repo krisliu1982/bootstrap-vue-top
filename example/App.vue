@@ -1,6 +1,6 @@
 <template>
   <div class="container p-3">
-    <ul class="nav nav-underline mb-3">
+    <ul class="nav nav-tabs">
       <li class="nav-item" v-for="item, index in tabs">
         <a class="nav-link" :class="{ 'active': currentTab === index }"
           :aria-current="currentTab === index ? 'page' : null" href="#" @click.prevent="currentTab = index">
@@ -20,7 +20,7 @@ import AlertMessage from './alert-message/index.vue'
 import Backtop from './backtop/index.vue'
 import ImagePreview from './image-preview/index.vue'
 import Loading from './loading/index.vue'
-
+import Pagination from './/pagination/index.vue'
 const currentTab = ref(0)
 const tabs = [{
   'name': 'AlertBox',
@@ -45,6 +45,20 @@ const tabs = [{
 {
   'name': 'Loading',
   'component': Loading
+},
+{
+  'name': 'Pagination',
+  'component': Pagination
 }
 ]
 </script>
+
+<style>
+h1 {
+margin-top: 1.5rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+</style>
