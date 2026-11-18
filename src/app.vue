@@ -7,17 +7,18 @@
       </p>
 
       <div class="d-flex gap-3">
-        <a href="https://v1-docs.bootstrap-vue.top" class="btn btn-primary" target="_blank"
-          >阅读文档 <bi-arrow-right
-        /></a>
+        <a href="https://v1.bootstrap-vue.top" class="btn btn-primary">阅读文档（v1.1.6）<bi-arrow-right /></a>
       </div>
     </div>
 
     <nav class="mt-5">
-      <h4>以下是 Bootstrap 中文文档</h4>
+      <h4>以下是 Bootstrap 文档</h4>
       <ul>
         <li>
-          <a href="https://bs53-docs.bootstrap-vue.top" target="_blank">Bootstrap v5.3</a>
+          <a href="https://bs53.bootstrap-vue.top">Bootstrap v5.3 中文文档</a>
+        </li>
+        <li>
+          <a href="https://getbootstrap.com/docs/5.3">Bootstrap v5.3 官方文档</a>
         </li>
       </ul>
     </nav>
