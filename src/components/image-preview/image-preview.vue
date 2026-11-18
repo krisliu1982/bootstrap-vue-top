@@ -3,7 +3,7 @@
     <div v-show="visible" ref="elementRef" class="bv-image-preview" tabindex="-1" role="dialog" aria-modal="true">
       <div class="d-flex w-100 h-100 justify-content-center align-items-center user-select-none">
         <img
-          :src="data[index]"
+          :src="props.data[index]"
           class="mw-100 mh-100"
           @load="handleLoad(index)"
           @error="handleError"
@@ -34,15 +34,15 @@
           <bi-x-lg />
         </button>
       </div>
-      <template v-if="data.length > 1">
+      <template v-if="props.data.length > 1">
         <div class="position-absolute start-50 translate-middle-x" style="bottom: 5rem">
-          <span class="badge text-bg-light">{{ index + 1 }} / {{ data.length }}</span>
+          <span class="badge text-bg-light">{{ index + 1 }} / {{ props.data.length }}</span>
         </div>
       </template>
 
       <div class="position-absolute start-50 translate-middle-x" style="bottom: 2rem">
         <div class="btn-group" role="group" aria-label="First group">
-          <template v-if="data.length > 1">
+          <template v-if="props.data.length > 1">
             <button type="button" class="btn btn-secondary" @click="pre">
               <bi-chevron-left />
             </button>

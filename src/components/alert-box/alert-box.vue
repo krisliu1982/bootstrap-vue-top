@@ -7,7 +7,7 @@
           <div class="me-2">
             <BiExclamationCircle class="text-danger fs-5" />
           </div>
-          <div class="fw-bolder fs-5">{{ message }}</div>
+          <div class="fw-bolder fs-5">{{ props.message }}</div>
         </div>
         <hr />
         <div class="text-center">

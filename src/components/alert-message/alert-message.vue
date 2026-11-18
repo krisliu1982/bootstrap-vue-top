@@ -3,12 +3,12 @@
     <div v-show="visible" class="bv-alert-message" @mouseenter="clearTimer" @mouseleave="startTimer" role="alert">
       <div class="d-flex align-items-center rounded px-3 py-2" :class="className">
         <div class="me-2">
-          <BiCheckCircle v-if="type === 'success'" />
-          <BiXCircle v-else-if="type === 'danger'" />
-          <BiExclamationCircle v-else-if="type === 'warning'" />
+          <BiCheckCircle v-if="props.type === 'success'" />
+          <BiXCircle v-else-if="props.type === 'danger'" />
+          <BiExclamationCircle v-else-if="props.type === 'warning'" />
           <BiInfoCircle v-else />
         </div>
-        <div>{{ message }}</div>
+        <div>{{ props.message }}</div>
       </div>
     </div>
   </Transition>
