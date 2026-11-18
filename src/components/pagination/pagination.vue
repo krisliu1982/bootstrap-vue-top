@@ -63,7 +63,7 @@
       <option v-for="item in [10, 20, 50, 100]" :value="item">{{ item }}条/页</option>
     </select>
 
-    <div v-if="mode === 'full' && pages > 5" class="col-auto input-group" :class="pageGoClass" style="width: 8rem">
+    <div v-if="mode === 'full' && pages > pagerCount" class="col-auto input-group" :class="pageGoClass" style="width: 8rem">
       <span class="input-group-text">Go</span>
       <input
         class="form-control"
