@@ -44,10 +44,11 @@ export default defineConfig({
       fileName: 'bootstrap-vue-top',
     },
     rolldownOptions: {
-      external: ['vue'],
+      external: ['vue', 'bootstrap'],
       output: {
         globals: {
-          vue: 'Vue'
+          vue: 'Vue',
+          bootstrap: 'bootstrap'
         },
         exports: 'named'
       }
