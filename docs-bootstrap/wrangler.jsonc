@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "bs53-docs",
+  "name": "bs53",
   "compatibility_date": "2026-11-04",
   "assets": {
     "directory": "./dist",
