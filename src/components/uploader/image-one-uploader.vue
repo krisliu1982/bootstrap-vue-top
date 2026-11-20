@@ -1,11 +1,11 @@
 <template>
-  <div class="image-uploader-one">
-    <div v-if="imgUrl" class="position-relative" :style="{ width: width, height: height }">
+  <div class="bv-image-uploader-one">
+    <div v-if="props.imgUrl" class="position-relative" :style="{ width: props.width, height: props.height }">
       <a href="#" class="d-block w-100 h-100" @click.prevent="handlePreview"><img class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl" /></a>
       <div class="position-absolute top-0 end-0 z-1 p-2">
         <button
           type="button"
-          :disabled="disabled"
+          :disabled="props.disabled"
           class="btn btn-secondary"
           style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
           @click.stop="handleRemove"
@@ -14,7 +14,7 @@
         </button>
       </div>
     </div>
-    <button v-else type="button" :disabled="disabled" class="btn btn-image-uploader" :style="{ width: width, height: height }" @click="openImageDialog">
+    <button v-else type="button" :disabled="props.disabled" class="btn bv-btn-image-uploader" :style="{ width: props.width, height: props.height }" @click="openImageDialog">
       <bi-plus-lg class="fs-3" />
     </button>
     <input ref="fileRef" type="file" name="file" style="display: none" accept="image/*" @change="handleChange" />

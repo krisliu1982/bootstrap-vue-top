@@ -9,22 +9,22 @@
           <div v-else class="node-placeholder"></div>
           <div class="node-content">
             <template v-if="col.body === null">
-              {{ get(data, col.field) }}
+              {{ get(props.data, col.field) }}
             </template>
-            <component v-else :is="col.body" :item="data" />
+            <component v-else :is="col.body" :item="props.data" />
           </div>
         </div>
       </td>
       <td v-else>
         <template v-if="col.body === null">
-          {{ get(data, col.field) }}
+          {{ get(props.data, col.field) }}
         </template>
-        <component v-else :is="col.body" :item="data" />
+        <component v-else :is="col.body" :item="props.data" />
       </td>
     </template>
   </tr>
   <template v-if="isExpand && isFolder">
-    <TreetableNode v-for="data in data[attrs.children]" :data="data" :level="level + 1" :key="data[attrs.key]" />
+    <TreetableNode v-for="data1 in props.data[attrs.children]" :data="data1" :level="props.level + 1" :key="data1[attrs.key]" />
   </template>
 </template>
 

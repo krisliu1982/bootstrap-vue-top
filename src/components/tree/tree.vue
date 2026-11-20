@@ -1,6 +1,6 @@
 <template>
   <ul class="list-unstyled">
-    <TreeItem :data="data"></TreeItem>
+    <TreeItem :data="props.data"></TreeItem>
   </ul>
 </template>
 

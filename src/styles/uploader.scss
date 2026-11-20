@@ -1,20 +1,20 @@
 
 
-.image-uploader-one img:hover {
+.bv-image-uploader-one img:hover {
     opacity: .75;
 }
 
-.image-uploader-many {
+.bv-image-uploader-many {
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
 }
 
-.image-uploader-many img:hover {
+.bv-image-uploader-many img:hover {
     opacity: .75;
 }
 
-.btn-image-uploader {
+.bv-btn-image-uploader {
     --bs-btn-padding-x: 0;
     --bs-btn-padding-y: 0;
     --bs-btn-border-radius:var(--bs-border-radius);
@@ -24,6 +24,6 @@
     border-style: dashed;
 }
 
-.btn-image-uploader:hover {
+.bv-btn-image-uploader:hover {
     border-color:var(--bs-primary);
 }

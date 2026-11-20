@@ -7,21 +7,21 @@
       <div v-else class="node-placeholder"></div>
       <div class="node-content">
         <template v-if="mode === 'base'">
-          <a href="#" class="node-content_link focus-ring p-1" @click.prevent="handleNodeClick(data[attrs.key])">{{ data[attrs.label] }}</a>
+          <a href="#" class="node-content_link focus-ring p-1" @click.prevent="handleNodeClick(props.data[attrs.key])">{{ props.data[attrs.label] }}</a>
         </template>
         <template v-else-if="mode === 'checkbox'">
           <div class="p-1">
             <input class="form-check-input" type="checkbox" :value="data[attrs.key]" :id="boxId" v-model="checkboxSelectedKeys" />
             <label class="form-check-label px-2" :for="boxId">
-              {{ data[attrs.label] }}
+              {{ props.data[attrs.label] }}
             </label>
           </div>
         </template>
         <template v-else-if="mode === 'radio'">
           <div class="p-1">
-            <input class="form-check-input" type="radio" :value="data[attrs.key]" :id="boxId" v-model="radioSelectedKey" />
+            <input class="form-check-input" type="radio" :value="props.data[attrs.key]" :id="boxId" v-model="radioSelectedKey" />
             <label class="form-check-label px-2" :for="boxId">
-              {{ data[attrs.label] }}
+              {{ props.data[attrs.label] }}
             </label>
           </div>
         </template>
@@ -29,7 +29,7 @@
     </div>
     <template v-if="isFolder">
       <ul v-show="isExpand" class="list-unstyled">
-        <TreeNode v-for="data in data[attrs.children]" :data="data" :level="level + 1" :key="data[attrs.key]" />
+        <TreeNode v-for="data1 in data[attrs.children]" :data="data1" :level="props.level + 1" :key="data1[attrs.key]" />
       </ul>
     </template>
   </li>

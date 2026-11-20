@@ -1,4 +1,4 @@
-import Popover from 'bootstrap/js/dist/popover';
+import {Popover} from 'bootstrap';
 
 export default {
   mounted(el) {

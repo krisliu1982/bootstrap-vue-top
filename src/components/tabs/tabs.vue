@@ -1,8 +1,8 @@
 <template>
   <slot></slot>
   <template v-if="ready">
-    <template v-if="position === 'top'">
-      <nav class="nav" :class="tabsClass" :style="tabsStyle" role="tablist">
+    <template v-if="props.position === 'top'">
+      <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
         <button
           v-for="pane in panes"
           type="button"
@@ -29,7 +29,7 @@
           <component v-if="renders[index]" :is="pane.body" />
         </div>
       </div>
-      <nav class="nav" :class="tabsClass" :style="tabsStyle" role="tablist">
+      <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
         <button
           v-for="pane in panes"
           type="button"
@@ -45,9 +45,9 @@
         </button>
       </nav>
     </template>
-    <template v-else-if="position === 'start'">
+    <template v-else-if="props.position === 'start'">
       <div class="d-flex align-items-start">
-        <nav class="nav flex-column me-3" :class="tabsClass" :style="tabsStyle" role="tablist" aria-orientation="vertical">
+        <nav class="nav flex-column me-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist" aria-orientation="vertical">
           <button
             v-for="pane in panes"
             type="button"
@@ -69,14 +69,14 @@
         </div>
       </div>
     </template>
-    <template v-else-if="position === 'end'">
+    <template v-else-if="props.position === 'end'">
       <div class="d-flex align-items-start">
         <div class="tab-content">
           <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
             <component v-if="renders[index]" :is="pane.body" />
           </div>
         </div>
-        <nav class="nav flex-column ms-3" :class="tabsClass" :style="tabsStyle" role="tablist" aria-orientation="vertical">
+        <nav class="nav flex-column ms-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist" aria-orientation="vertical">
           <button
             v-for="pane in panes"
             type="button"
@@ -99,7 +99,7 @@
 <script setup>
 import { useSlots, ref, provide, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
-import Tab from 'bootstrap/js/dist/tab';
+import {Tab} from 'bootstrap';
 
 const emit = defineEmits(['tab-shown']);
 

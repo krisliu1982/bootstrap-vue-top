@@ -1,9 +1,7 @@
 <template>
-  <table class="table" :class="tableClass">
-    <caption v-if="caption">
-      {{
-        caption
-      }}
+  <table class="table" :class="props.tableClass">
+    <caption v-if="props.caption">
+      {{ props.caption }}
     </caption>
     <slot></slot>
     <template v-if="ready">
@@ -12,7 +10,7 @@
           <col :style="{ width: col.width }" />
         </template>
       </colgroup>
-      <thead :class="theadClass">
+      <thead :class="props.theadClass">
         <tr>
           <template v-for="col in cols">
             <th scope="col">
@@ -21,12 +19,12 @@
           </template>
         </tr>
       </thead>
-      <tbody :class="tbodyClass">
+      <tbody :class="props.tbodyClass">
         <TreetableNode :data="data"></TreetableNode>
       </tbody>
-      <tfoot :class="tfootClass" v-if="tfootData !== null">
+      <tfoot :class="props.tfootClass" v-if="props.tfootData !== null">
         <tr>
-          <td v-for="item in tfootData">{{ item }}</td>
+          <td v-for="item in props.tfootData">{{ item }}</td>
         </tr>
       </tfoot>
     </template>
