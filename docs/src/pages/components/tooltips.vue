@@ -13,7 +13,7 @@
     <h1>Tooltips 文字提示</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-tooltip</code> 指令激活文字提示。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/tooltips/" target="_blank">Bootstrap Tooltips</a>
+      <a href="https://bs53.bootstrap-vue.top/components/tooltips/" target="_blank">Bootstrap Tooltips</a>
     </p>
 
     <h2 id="tooltips-example">

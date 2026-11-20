@@ -18,7 +18,7 @@
     <h1>Navs and tabs 导航标签</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/" target="_blank">Bootstrap Navs and tabs</a
+      <a href="https://bs53.bootstrap-vue.top/components/navs-tabs/" target="_blank">Bootstrap Navs and tabs</a
       >，构建 <code>bv-tabs</code> 导航标签组件。
     </p>
 
@@ -64,7 +64,7 @@
     </h2>
     <p>
       使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex#justify-content" target="_blank">弹性盒工具栏</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex#justify-content" target="_blank">弹性盒工具栏</a>
       可以更改导航标签栏的水平对齐方式。默认情况下，导航标签栏是左对齐的，但您可以轻松将其更改为居中对齐或右对齐。居中对齐设置
       <code>tabs-class="justify-content-center"</code>。向右对齐设置 <code>tabs-class="justify-content-end"</code>。
     </p>

@@ -11,7 +11,7 @@
     <h1>Dropdowns 下拉菜单</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-dropdown</code> 指令激活下拉菜单。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank">Bootstrap Dropdowns</a>
+      <a href="https://bs53.bootstrap-vue.top/components/dropdowns/" target="_blank">Bootstrap Dropdowns</a>
     </p>
 
     <h2 id="dropdowns-example">

@@ -16,7 +16,7 @@
     <h1>Progress 进度条</h1>
     <p class="fs-4 fw-light">
       有关使用 Bootstrap 自定义进度条的文档和示例，该进度条支持堆叠条、动画背景以及文本标签功能。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/progress/" target="_blank">Bootstrap Placeholders</a>
+      <a href="https://bs53.bootstrap-vue.top/components/progress/" target="_blank">Bootstrap Placeholders</a>
     </p>
 
     <h2 id="progress-about">
@@ -110,7 +110,7 @@
     </h2>
     <p>
       Bootstrap 提供了一些用于设置宽度的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/sizing" target="_blank">utilities for setting width</a
+      <a href="https://bs53.bootstrap-vue.top/utilities/sizing" target="_blank">utilities for setting width</a
       >。根据您的需求，这些工具可能会有助于快速确定 <code>.progress-bar</code> 的宽度设置。
     </p>
     <p>
@@ -289,7 +289,7 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的提示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
       的可见文本），或者通过其他方式予以说明，比如使用带有

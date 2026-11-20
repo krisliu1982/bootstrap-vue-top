@@ -18,7 +18,7 @@
     <h1>Buttons 按钮</h1>
     <p class="fs-4 fw-light">
       使用 Bootstrap 的自定义按钮样式，为表单、对话框等中的操作提供支持，支持多种尺寸、状态等。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Bootstrap Buttons</a>
+      <a href="https://bs53.bootstrap-vue.top/components/buttons/" target="_blank">Bootstrap Buttons</a>
     </p>
 
     <h2 id="buttons-base">
@@ -68,7 +68,7 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的提示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
       的可见文本），或者通过其他方式予以说明，比如使用带有

@@ -23,7 +23,7 @@
     <p class="fs-4 fw-light">
       有关 Bootstrap 强大且响应式的导航栏的文档和示例。其中包括品牌标识、导航功能等内容的支持，还包括我们 Collapse
       折叠组件的支持。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Bootstrap Navbar</a>
+      <a href="https://bs53.bootstrap-vue.top/components/navbar/" target="_blank">Bootstrap Navbar</a>
     </p>
 
     <h2 id="navbar-example">
@@ -146,7 +146,7 @@
           <div class="container">
             <a class="navbar-brand" href="#">
               <img
-                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+                src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg"
                 alt="Bootstrap"
                 width="30"
                 height="24"
@@ -168,7 +168,7 @@
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img
-                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+                src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg"
                 alt="Logo"
                 width="30"
                 height="24"
@@ -282,7 +282,7 @@
       在导航栏中放置各种表单控件和组件。<code>.navbar</code>
       元素的直接子元素采用弹性布局，并默认会设置为
       <code>justify-content: space-between</code>。如有需要，可使用额外的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">弹性工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">弹性工具</a>
       来调整此行为。
     </p>
     <div class="docs-example">
@@ -504,7 +504,7 @@
     </h2>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/position" target="_blank">位置工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/position" target="_blank">位置工具</a>
       来将导航栏放置在非静态的位置上。
     </p>
     <p>
@@ -920,7 +920,7 @@ const brand2Code = `
 <nav class="navbar bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
+      <img src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg" 
         alt="Bootstrap" width="30" height="24">
     </a>
   </div>
@@ -930,7 +930,7 @@ const brand3Code = `
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
+      <img src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg" 
         alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
     </a>

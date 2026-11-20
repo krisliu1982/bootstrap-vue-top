@@ -12,7 +12,7 @@
     <p class="fs-4 fw-light">
       使用自定义CSS对原生
       <code>&lt;select&gt;</code> 元素进行定制，以改变其初始外观。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/select/" target="_blank">Bootstrap Form Select</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/select/" target="_blank">Bootstrap Form Select</a>
     </p>
 
     <h2 id="select-default">

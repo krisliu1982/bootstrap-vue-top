@@ -12,7 +12,7 @@
     <h1>Ratio 比例</h1>
     <p class="fs-4 fw-light">
       利用生成的伪元素，可以让你的元素保持您所选择的特定比例。非常适合根据父元素的宽度来灵活处理视频或幻灯片嵌入内容。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/ratio/" target="_blank">Bootstrap Ratio</a>
+      <a href="https://bs53.bootstrap-vue.top/helpers/ratio/" target="_blank">Bootstrap Ratio</a>
     </p>
 
     <h2 id="ratio-about">
@@ -30,7 +30,7 @@
     <p class="text-bg-info">
       <strong>温馨提示！</strong> 您无需在 <code>&lt;iframe&gt;</code> 元素中添加
       <code>frameborder="0"</code> 属性，因为我们会在
-      <a href="https://getbootstrap.com/docs/5.3/content/reboot" target="_blank">Reboot</a> 中为您进行相应的设置。
+      <a href="https://bs53.bootstrap-vue.top/content/reboot" target="_blank">Reboot</a> 中为您进行相应的设置。
     </p>
 
     <h2 id="ratio-example">

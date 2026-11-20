@@ -10,7 +10,7 @@
     <h1>Interactions 交互</h1>
     <p class="fs-4 fw-light">
       用于改变用户与网站内容交互方式的工具类。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/interactions/" target="_blank">Bootstrap Interactions</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/interactions/" target="_blank">Bootstrap Interactions</a>
     </p>
 
     <h2 id="interactions-selection">

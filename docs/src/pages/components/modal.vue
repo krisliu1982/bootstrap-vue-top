@@ -17,7 +17,7 @@
     <h1>Modal 模态框</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank">Bootstrap Modal</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/modal/" target="_blank">Bootstrap Modal</a>，构建
       <code>bv-modal</code> 模态框组件。<span class="text-bg-warning">不支持同时打开多个模态框。</span
       >如果您需要打开多个模态框，可以使用 <code>bv-modal-2</code> 模态框组件。
     </p>

@@ -27,7 +27,7 @@
     <h1>Tables 表格</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/tables/" target="_blank">Bootstrap tables</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/tables/" target="_blank">Bootstrap tables</a>，构建
       <code>bv-table</code> 数据表格组件。您也可以直接使用 Bootstrap tables和 Vue 完成复杂的需求。
     </p>
 
@@ -217,7 +217,7 @@
       <code-highlight type="vue" :code="borderedCode" label="vue" />
     </div>
     <p>
-      <a href="https://getbootstrap.com/docs/5.3/utilities/borders#border-color" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/utilities/borders#border-color" target="_blank"
         >Border color utilities</a
       >
       工具可用于更改颜色:
@@ -350,7 +350,7 @@
     </h2>
     <p>
       添加
-      <a href="https://getbootstrap.com/docs/5.3/helpers/text-truncation/" target="_blank"> .text-truncate</a>
+      <a href="https://bs53.bootstrap-vue.top/helpers/text-truncation/" target="_blank"> .text-truncate</a>
       样式类 。需要显示截断内容可以使用 <code>v-tooltip</code> 指令。
     </p>
     <div class="docs-example">
@@ -466,7 +466,7 @@
       中的表格单元格则从
       <code>&lt;table&gt;</code>
       继承其对齐方式，默认情况下垂直对齐到单元格顶部。如有需要，可使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/vertical-align" target="_blank">vertical-align</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/vertical-align" target="_blank">vertical-align</a>
       类来重新对齐。
     </p>
     <div class="docs-example">

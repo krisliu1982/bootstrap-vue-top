@@ -12,7 +12,7 @@
     <h1>Scrollspy 滚动监听</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-scrollspy</code> 指令激活滚动监听。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/scrollspy/" target="_blank">Bootstrap Scrollspy</a>
+      <a href="https://bs53.bootstrap-vue.top/components/scrollspy/" target="_blank">Bootstrap Scrollspy</a>
     </p>
 
     <h2 id="scrollspy-about">
@@ -21,9 +21,9 @@
     <p>
       当滚动到与锚点的 “href” 属性所引用的 “id” 相匹配的元素时，Scrollspy 会为锚点（<code>&lt;a&gt;</code>）元素添加
       <code>.active</code> 类。Scrollspy 最适合与 Bootstrap 的
-      <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs">nav component</a>
+      <a href="https://bs53.bootstrap-vue.top/components/navs-tabs">nav component</a>
       或
-      <a href="https://getbootstrap.com/docs/5.3/components/list-group">list group</a>
+      <a href="https://bs53.bootstrap-vue.top/components/list-group">list group</a>
       结合使用，但它也能与当前页面中的任何锚点元素一起使用。下面是它的工作原理：
     </p>
     <ul class="docs-content-list">

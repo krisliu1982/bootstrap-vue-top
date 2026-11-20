@@ -12,7 +12,7 @@
     <h1>Accordion 手风琴</h1>
     <p class="fs-4 fw-light">
       用于将复杂的内容区域分组和隐藏，可折叠或展开。基于
-      <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank">Bootstrap Accordion</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/accordion/" target="_blank">Bootstrap Accordion</a>，构建
       <code>bv-accordion</code> 组件。
     </p>
 

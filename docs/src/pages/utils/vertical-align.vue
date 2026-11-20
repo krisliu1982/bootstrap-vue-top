@@ -9,7 +9,7 @@
     <h1>Vertical align 垂直对齐</h1>
     <p class="fs-4 fw-light">
       可以轻松更改内联元素、内联块元素、内联表格元素以及表格单元格元素的垂直对齐方式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/vertical-align/" target="_blank">Bootstrap Vertical align</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/vertical-align/" target="_blank">Bootstrap Vertical align</a>
     </p>
 
     <h2 id="vertical-align-about">
@@ -30,7 +30,7 @@
     </p>
     <p>
       若要垂直居中非内联内容（例如 <code>&lt;div&gt;</code> 元素及其他类似元素），请使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex#align-items">flex box utilities</a>。
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex#align-items">flex box utilities</a>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">

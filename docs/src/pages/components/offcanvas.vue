@@ -13,7 +13,7 @@
     <h1>Offcanvas 侧边栏</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/offcanvas/" target="_blank">Bootstrap Offcanvas</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/offcanvas/" target="_blank">Bootstrap Offcanvas</a>，构建
       <code>bv-offcanvas</code> 侧边栏组件。
     </p>
 

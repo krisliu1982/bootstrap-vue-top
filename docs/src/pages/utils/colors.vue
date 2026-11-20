@@ -13,12 +13,12 @@
       通过
       <code>color</code>
       来传达信息，使用少量的文本颜色工具类即可实现。此外，还支持为带有悬停状态的链接进行样式设置。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors/" target="_blank">Bootstrap Colors</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors/" target="_blank">Bootstrap Colors</a>
     </p>
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
       的可见文本），或者通过其他方式予以说明，比如使用带有
@@ -30,7 +30,7 @@
     </h2>
     <p>
       使用文本颜色工具对文本进行着色。如果您想对链接进行着色，可以使用
-      <a href="https://getbootstrap.com/docs/5.3/helpers/colored-links" target="_blank"><code>.link-*</code></a>
+      <a href="https://bs53.bootstrap-vue.top/helpers/colored-links" target="_blank"><code>.link-*</code></a>
       辅助类 ，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
     </p>
     <p class="text-bg-info">

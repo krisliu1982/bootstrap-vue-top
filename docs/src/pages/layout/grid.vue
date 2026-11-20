@@ -10,7 +10,7 @@
     <p class="fs-4 fw-light">
       利用 Bootstrap 强大的移动优先弹性盒网格功能，借助十二列体系、六种默认响应式层级、Sass
       变量和混合器以及数十种预定义类，您可以轻松构建各种形状和大小的布局。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Bootstrap Grid</a>
+      <a href="https://bs53.bootstrap-vue.top/layout/grid/" target="_blank">Bootstrap Grid</a>
     </p>
 
     <h2 id="grid-about">
@@ -22,7 +22,7 @@
       <li>
         <p>
           <strong
-            >我们的栅格系统支持<a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank"
+            >我们的栅格系统支持<a href="https://bs53.bootstrap-vue.top/layout/breakpoints" target="_blank"
               >六个响应式断点</a
             >。</strong
           >断点基于 <code>min-width</code> 媒体查询，这意味着它们会影响当前断点及其以上的所有断点（例如，<code
@@ -44,10 +44,10 @@
           <strong>行是列的包装器。</strong>每列都有水平
           <code>padding</code>（称为沟槽），用于控制列之间的间距。然后，通过在行上使用负边距来抵消该
           <code>padding</code>，以确保列中的内容在左侧视觉对齐。行还支持修饰类，以便<a
-            href="https://getbootstrap.com/docs/5.3/layout/grid/#row-columns"
+            href="https://bs53.bootstrap-vue.top/layout/grid/#row-columns"
             target="_blank"
             >统一应用列宽</a
-          >和<a href="https://getbootstrap.com/docs/5.3/layout/gutters" target="_blank">沟槽类</a>来更改内容的间距。
+          >和<a href="https://bs53.bootstrap-vue.top/layout/gutters" target="_blank">沟槽类</a>来更改内容的间距。
         </p>
       </li>
       <li>
@@ -60,9 +60,9 @@
       <li>
         <p>
           <strong>沟槽同样具有响应式且可自定义。</strong
-          ><a href="https://getbootstrap.com/docs/5.3/layout/gutters" target="_blank">沟槽类</a
+          ><a href="https://bs53.bootstrap-vue.top/layout/gutters" target="_blank">沟槽类</a
           >在所有断点均可用，并且具有与我们的<a
-            href="https://getbootstrap.com/docs/5.3/utilities/spacing"
+            href="https://bs53.bootstrap-vue.top/utilities/spacing"
             target="_blank"
             >间距工具类</a
           >相同的所有尺寸。使用 <code>.gx-*</code> 类可更改水平沟槽，使用 <code>.gy-*</code> 可更改垂直沟槽，或使用
@@ -73,7 +73,7 @@
         <p>
           <strong>Sass 变量、映射和混合宏为栅格提供动力。</strong>如果您不想使用 Bootstrap
           中预定义的栅格类，您可以使用我们的<a
-            href="https://getbootstrap.com/docs/5.3/layout/grid/#sass-variables"
+            href="https://bs53.bootstrap-vue.top/layout/grid/#sass-variables"
             target="_blank"
             >栅格源 Sass</a
           >

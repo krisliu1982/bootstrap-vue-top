@@ -18,7 +18,7 @@
     <h1>Typography 文字排版</h1>
     <p class="fs-4 fw-light">
       Bootstrap 排版的相关文档和示例，包括全局设置、标题、正文、列表等。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/content/typography/" target="_blank">Bootstrap Typography</a>
+      <a href="https://bs53.bootstrap-vue.top/content/typography/" target="_blank">Bootstrap Typography</a>
     </p>
 
     <h2 id="ty-global">
@@ -26,12 +26,12 @@
     </h2>
     <p>
       Bootstrap 设置了基本的全局显示、排版和链接样式。当需要更多控制时，请查看
-      <a href="https://getbootstrap.com/docs/5.3/utilities/text" target="_blank">文本实用类</a>。
+      <a href="https://bs53.bootstrap-vue.top/utilities/text" target="_blank">文本实用类</a>。
     </p>
     <ul class="docs-content-list">
       <li>
         使用
-        <a href="https://getbootstrap.com/docs/5.3/content/reboot#native-font-stack" target="_blank">原生字体栈</a
+        <a href="https://bs53.bootstrap-vue.top/content/reboot#native-font-stack" target="_blank">原生字体栈</a
         >，为每个操作系统和设备选择最佳的 <code>font-family</code>。
       </li>
       <li>
@@ -208,9 +208,9 @@
     </h2>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/text" target="_blank">文本工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/text" target="_blank">文本工具</a>
       和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank">颜色工具</a
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank">颜色工具</a
       >，可以更改文本对齐方式、变换、样式、粗细、行高、装饰和颜色。
     </p>
 
@@ -374,7 +374,7 @@
     </h2>
     <p>
       在 Bootstrap 5 中，我们默认启用了响应式字体大小功能，使文本在不同设备和视口尺寸下能更自然地缩放。请访问
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/rfs" target="_blank">RFS页面</a>
+      <a href="https://bs53.bootstrap-vue.top/getting-started/rfs" target="_blank">RFS页面</a>
       了解具体实现方式。
     </p>
   </div>

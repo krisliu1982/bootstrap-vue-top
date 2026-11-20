@@ -18,7 +18,7 @@
     <h1>Checks and radios 复单选</h1>
     <p class="fs-4 fw-light">
       使用我们完全重写的 checks 组件，可以创建跨浏览器和跨设备一致性的复选框和单选按钮。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/checks-radios/" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/forms/checks-radios/" target="_blank"
         >Bootstrap Form Checks & radios</a
       >
     </p>
@@ -249,7 +249,7 @@
       对于没有标签文本的复选框和单选按钮，可以省略其包裹的
       <code>.form-check</code>。但请记住，仍需为辅助技术提供某种形式的可访问名称（例如，使用
       <code>aria-label</code>）。有关详细信息，请参阅
-      <a href="https://getbootstrap.com/docs/5.3/forms/overview/#accessibility" target="_blank">表单概述中的可访问性</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/overview/#accessibility" target="_blank">表单概述中的可访问性</a>
       部分。
     </p>
     <div class="docs-example">
@@ -284,7 +284,7 @@
       通过在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式而非
       <code>.form-check-label</code>
       样式，可以创建类似按钮的复选框按钮。如果需要，这些切换按钮还可以进一步分组到
-      <a href="https://getbootstrap.com/docs/5.3/components/button-group" target="_blank">按钮组</a>
+      <a href="https://bs53.bootstrap-vue.top/components/button-group" target="_blank">按钮组</a>
       中。
     </p>
     <div class="docs-example">
@@ -310,7 +310,7 @@
       在 <code>&lt;label&gt;</code> 元素上使用 <code>.btn</code> 样式而非
       <code>.form-check-label</code>
       样式，以创建类似按钮的单选按钮。如果需要，这些切换按钮还可以进一步分组到
-      <a href="https://getbootstrap.com/docs/5.3/components/button-group" target="_blank">按钮组</a>
+      <a href="https://bs53.bootstrap-vue.top/components/button-group" target="_blank">按钮组</a>
       中。
     </p>
     <div class="docs-example">

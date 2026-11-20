@@ -11,7 +11,7 @@
     <h1>Display 显示属性</h1>
     <p class="fs-4 fw-light">
       借助我们的显示工具，您可以快速、灵活地调整组件的显示值及其他内容。它支持一些常见的显示值，并且还提供了用于控制打印时显示效果的一些附加功能。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/display/" target="_blank">Bootstrap Display</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/display/" target="_blank">Bootstrap Display</a>
     </p>
     <p>
       通过使用我们的响应式显示类来更改
@@ -25,7 +25,7 @@
     </h2>
     <p>
       适用于所有
-      <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints" target="_blank">断点</a>（从 <code>xs</code> 到
+      <a href="https://bs53.bootstrap-vue.top/layout/breakpoints" target="_blank">断点</a>（从 <code>xs</code> 到
       <code>xxl</code>）的显示类中没有断点缩写。这是因为这些类是从
       <code>min-width: 0;</code>
       开始应用的，因此不受媒体查询的限制。然而，其余的断点确实包含断点缩写。

@@ -10,7 +10,7 @@
     <h1>Collapse 折叠</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-collapse</code> 指令激活折叠。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/collapse/" target="_blank">Bootstrap Collapse</a>
+      <a href="https://bs53.bootstrap-vue.top/components/collapse/" target="_blank">Bootstrap Collapse</a>
     </p>
 
     <h2 id="collapse-example">

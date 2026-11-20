@@ -19,7 +19,7 @@
     <h1>Card 卡片</h1>
     <p class="fs-4 fw-light">
       Bootstrap 的卡片提供了一个灵活且可扩展的内容容器，具有多种变体和选项。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank">Bootstrap Card</a>
+      <a href="https://bs53.bootstrap-vue.top/components/card/" target="_blank">Bootstrap Card</a>
     </p>
 
     <h2 id="card-about">简介<a class="anchor-link" aria-label="Link to this section: 简介" href="#card-about"> </a></h2>
@@ -37,7 +37,7 @@
       卡片构建时尽量减少标记和样式，但仍能提供大量的控制和自定义功能。它们基于 flexbox 构建，易于对齐，并能与其他
       Bootstrap 组件很好地混合使用。默认情况下，卡片没有
       <code>margin</code>，因此可根据需要使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing" target="_blank">间距工具</a>。
+      <a href="https://bs53.bootstrap-vue.top/utilities/spacing" target="_blank">间距工具</a>。
     </p>
     <p>
       以下是一个包含混合内容且宽度固定的基本卡片示例。卡片初始时没有固定宽度，因此它们会自然地填充其父元素的整个宽度。通过我们提供的各种
@@ -487,14 +487,14 @@
     <h3>Background and color</h3>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/helpers/color-background" target="_blank"
         >`.text-bg-{color}`辅助选择器</a
       >
       来设置与前景 <code>color</code> 形成对比的
       <code>background-color</code>。之前，为了进行样式设置，需要手动将您选择的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-{color}</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank"><code>.text-{color}</code></a>
       和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-{color}</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/background" target="_blank"><code>.bg-{color}</code></a>
       进行配对，如果您愿意，仍然可以使用这种方式。
     </p>
     <div class="docs-example">
@@ -577,7 +577,7 @@
     <h3>Border</h3>
     <p>
       使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/borders">边框工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/borders">边框工具</a>
       来仅更改卡片的 <code>border-color</code>。请注意，您可以将 <code>.text-{color}</code> 类添加到父级
       <code>.card</code> 或卡片内容的一个子集上，如下所示。
     </p>
@@ -778,7 +778,7 @@
     <h3>Grid cards</h3>
     <p>
       使用 Bootstrap 网格系统及其
-      <a href="https://getbootstrap.com/docs/5.3/layout/grid#row-columns" target="_blank"><code>.row-cols-*</code></a>
+      <a href="https://bs53.bootstrap-vue.top/layout/grid#row-columns" target="_blank"><code>.row-cols-*</code></a>
       来控制每行显示的网格列数（围绕卡片）。例如，这里的
       <code>.row-cols-1</code> 将卡片布局在一列上，而
       <code>.row-cols-md-2</code>
@@ -901,7 +901,7 @@
       <a href="https://github.com/twbs/bootstrap/pull/28922" target="_blank">副作用</a>。如果你希望在
       <code>v5</code>
       中使用这种布局，你可以直接使用Masonry插件。<strong>Masonry并未包含在Bootstrap中</strong>，但我们制作了一个
-      <a href="https://getbootstrap.com/docs/5.3/examples/masonry" target="_blank">演示示例</a>
+      <a href="https://bs53.bootstrap-vue.top/examples/masonry" target="_blank">演示示例</a>
       来帮助你入门。
     </p>
 

@@ -14,7 +14,7 @@
     <h1>Alerts 警示</h1>
     <p class="fs-4 fw-light">
       利用这少量但灵活多样的提示信息，为用户的常见操作提供相应的上下文反馈信息。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">Bootstrap Alerts</a>
+      <a href="https://bs53.bootstrap-vue.top/components/alerts/" target="_blank">Bootstrap Alerts</a>
     </p>
 
     <h2 id="alerts-example">
@@ -39,7 +39,7 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       使用颜色来传达意义仅仅是一种视觉上的提示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义可以从内容本身中清晰地体现出来（例如，带有足够颜色对比度的可见文本，链接为<a
-        href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast"
+        href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast"
         target="_blank"
         ><em>足够的颜色对比度</em></a
       >），或者通过其他方式予以说明，比如使用带有<code>. visually-hidden</code>类的隐藏文本。
@@ -115,7 +115,7 @@
     </h2>
     <p>
       同样，您可以使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">flexbox 工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">flexbox 工具</a>
       和
       <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>
       来创建带有图标的警示。根据您的图标和内容，您可能需要添加更多工具或自定义样式。
@@ -133,11 +133,11 @@
     <h2 id="alerts-dismissing">
       可关闭<a class="anchor-link" aria-label="Link to this section: 可关闭" href="#alerts-dismissing"> </a>
     </h2>
-    <p>使用 <code>v-alert</code> 指令，可以在行内关闭任何 alert。方法如下：</p>
+    <p>可以在行内关闭任何 alert。方法如下：</p>
     <ul class="docs-content-list">
       <li>
         添加一个
-        <a href="https://getbootstrap.com/docs/5.3/components/close-button" target="_blank">关闭按钮</a>
+        <a href="https://bs53.bootstrap-vue.top/components/close-button" target="_blank">关闭按钮</a>
         和
         <code>.alert-dismissible</code>
         类，该类会在警示的右侧添加额外的填充，并定位关闭按钮。

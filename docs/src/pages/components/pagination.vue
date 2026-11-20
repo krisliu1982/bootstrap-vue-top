@@ -16,7 +16,7 @@
     <h1>Pagination 分页</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/pagination/" target="_blank">Bootstrap Pagination</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/pagination/" target="_blank">Bootstrap Pagination</a>，构建
       <code>bv-pagination</code> 分页组件。
     </p>
 

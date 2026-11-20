@@ -2,7 +2,6 @@ import './styles/index.scss';
 
 import * as bootstrap from 'bootstrap';
 
-import vAlert from './components/alert/alert.js';
 import vDropdown from './components/dropdown/dropdown.js';
 import vTooltip from './components/tooltip/tooltip.js';
 import vPopover from './components/popover/popover.js';
@@ -31,7 +30,6 @@ import BvLoading from './components/loading/loading.vue';
 
 export default {
   install: (app, options) => {
-    app.directive('alert', vAlert);
     app.directive('dropdown', vDropdown);
     app.directive('tooltip', vTooltip);
     app.directive('popover', vPopover);

@@ -14,7 +14,7 @@
     <h1>Button group 按钮组</h1>
     <p class="fs-4 fw-light">
       将一系列按钮排列在一条直线上，或将其堆叠成垂直列。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/button-group/" target="_blank">Bootstrap Button group</a>
+      <a href="https://bs53.bootstrap-vue.top/components/button-group/" target="_blank">Bootstrap Button group</a>
     </p>
 
     <h2 id="button-group-example">
@@ -67,7 +67,7 @@
     </h2>
     <p>
       将类似按钮的复选框和单选框
-      <a href="https://getbootstrap.com/docs/5.3/forms/checks-radios" target="_blank">切换按钮</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/checks-radios" target="_blank">切换按钮</a>
       组合成一个外观无缝的按钮组。
     </p>
     <div class="docs-example">

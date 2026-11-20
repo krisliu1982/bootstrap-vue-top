@@ -12,7 +12,7 @@
     <h1>Carousel 轮播图</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/components/carousel/" target="_blank">Bootstrap Carousel</a>，构建
+      <a href="https://bs53.bootstrap-vue.top/components/carousel/" target="_blank">Bootstrap Carousel</a>，构建
       <code>bv-carousel</code> 组件。
     </p>
 

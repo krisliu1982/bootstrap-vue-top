@@ -11,7 +11,7 @@
     <h1>Forms 表单</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank">Bootstrap Forms</a
+      <a href="https://bs53.bootstrap-vue.top/forms/overview/" target="_blank">Bootstrap Forms</a
       >，提供表单控件样式、布局选项以及自定义组件的示例和使用指南，以便创建各种表单。
     </p>
     <div class="row g-3">
@@ -76,7 +76,7 @@
     </h2>
     <p>
       Bootstrap 的表单控件基于
-      <a href="https://getbootstrap.com/docs/5.3/content/reboot#forms" target="_blank">our Rebooted form styles</a>
+      <a href="https://bs53.bootstrap-vue.top/content/reboot#forms" target="_blank">our Rebooted form styles</a>
       并通过类进行扩展。使用这些类可以选择启用其自定义显示，以便在浏览器和设备之间实现更一致的呈现效果。
     </p>
     <p>

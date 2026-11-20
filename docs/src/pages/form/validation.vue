@@ -12,7 +12,7 @@
       引入
       <a href="https://github.com/jquense/yup" target="_blank">Yup</a>
       对数据进行验证。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/validation/" target="_blank">Bootstrap Form Validation</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/validation/" target="_blank">Bootstrap Form Validation</a>
     </p>
 
     <h2 id="validation-form">

@@ -12,7 +12,7 @@
     <h1>Breadcrumb 面包屑</h1>
     <p class="fs-4 fw-light">
       在导航层次结构中指示当前页面的位置，该结构通过CSS自动添加分隔符。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/breadcrumb/" target="_blank">Bootstrap Breadcrumb</a>
+      <a href="https://bs53.bootstrap-vue.top/components/breadcrumb/" target="_blank">Bootstrap Breadcrumb</a>
     </p>
 
     <h2 id="breadcrumb-example">
@@ -80,7 +80,7 @@
     <p class="text-bg-info">
       <strong>内联SVG需要正确转义字符。</strong>一些保留字符，如 <code>&lt;</code> 、<code>&gt;</code> 和
       <code>#</code>，必须进行URL编码或转义。我们使用
-      <a href="https://getbootstrap.com/docs/5.3/customize/sass#escape-svg" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/customize/sass#escape-svg" target="_blank"
         ><code>escape-svg() Sass function</code></a
       >
       对 <code>$breadcrumb-divider</code> 变量进行此操作。在自定义 CSS

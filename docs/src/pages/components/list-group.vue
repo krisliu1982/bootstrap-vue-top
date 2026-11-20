@@ -19,7 +19,7 @@
     <h1>List group 列表</h1>
     <p class="fs-4 fw-light">
       列表是一种灵活且强大的组件，用于展示一系列内容。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/list-group/" target="_blank">Bootstrap List group</a>
+      <a href="https://bs53.bootstrap-vue.top/components/list-group/" target="_blank">Bootstrap List group</a>
     </p>
 
     <h2 id="list-example">
@@ -302,7 +302,7 @@
     </h2>
     <p>
       在任何列表组项上添加徽章，即可借助一些
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">flex 工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">flex 工具</a>
       显示未读数量、活动情况等信息。
     </p>
     <div class="docs-example">
@@ -330,7 +330,7 @@
     </h2>
     <p>
       通过使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/flex" target="_blank">弹性盒工具栏</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">弹性盒工具栏</a>
       的帮助，您可以将几乎任何 HTML 内容添加进来，包括像下面这样的链接列表组。
     </p>
     <div class="docs-example">

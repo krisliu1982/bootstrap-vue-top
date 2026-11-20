@@ -13,12 +13,12 @@
       通过
       <code>background-color</code>
       来传达意义，并使用渐变来添加装饰效果。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background/" target="_blank">Bootstrap Background</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/background/" target="_blank">Bootstrap Background</a>
     </p>
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
       的可见文本），或者通过其他方式予以说明，比如使用带有
@@ -33,7 +33,7 @@
       <strong>不会设置 <code>color</code></strong>
       ，所以在某些情况下，您可能需要使用
       <code>.text-*</code>
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank">文本颜色工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank">文本颜色工具</a>
       。
     </p>
     <p class="text-bg-info">

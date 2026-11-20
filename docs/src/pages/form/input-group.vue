@@ -18,7 +18,7 @@
     <h1>Input group 输入组</h1>
     <p class="fs-4 fw-light">
       通过在文本输入框、自定义选择框和自定义文件输入框的两侧添加文本、按钮或按钮组，可以轻松扩展表单控件。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/input-group/" target="_blank">Bootstrap Form Input group</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/input-group/" target="_blank">Bootstrap Form Input group</a>
     </p>
 
     <h2 id="input-group-base">

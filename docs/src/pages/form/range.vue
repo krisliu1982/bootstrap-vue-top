@@ -13,7 +13,7 @@
     <h1>Range 滑块</h1>
     <p class="fs-4 fw-light">
       使用我们的自定义范围输入，以实现一致的跨浏览器样式和内置自定义功能。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/range/" target="_blank">Bootstrap Form Range</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/range/" target="_blank">Bootstrap Form Range</a>
     </p>
 
     <h2 id="range-overview">

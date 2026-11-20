@@ -10,7 +10,7 @@
     <h1>Color and background 文本颜色背景</h1>
     <p class="fs-4 fw-light">
       设置一个与前景色形成对比的背景色。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/helpers/color-background/" target="_blank"
         >Bootstrap Color and background</a
       >
     </p>
@@ -20,9 +20,9 @@
     </h2>
     <p>
       文本颜色背景辅助类将我们
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-*</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank"><code>.text-*</code></a>
       工具类和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-*</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/background" target="_blank"><code>.bg-*</code></a>
       工具类的功能整合到了一个类中。通过使用我们的 Sass
       <code>color-contrast()</code> 函数，我们能够自动为特定的 <code>背景颜色</code> 确定一个对比度良好的
       <code>颜色</code> 。
@@ -47,7 +47,7 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#color-contrast" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
         ><em>足够的</em> 颜色对比度</a
       >
       的可见文本），或者通过其他方式予以说明，比如使用带有
@@ -64,7 +64,7 @@
     </h2>
     <p>
       用它们来替代组合式的 <code>.text-*</code> 和 <code>.bg-*</code> 类，例如在
-      <a href="https://getbootstrap.com/docs/5.3/components/badge#background-colors">badges</a>
+      <a href="https://bs53.bootstrap-vue.top/components/badge#background-colors">badges</a>
       组件中的使用方式：
     </p>
     <div class="docs-example">

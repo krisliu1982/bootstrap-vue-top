@@ -12,7 +12,7 @@
     <h1>Badge 徽章</h1>
     <p class="fs-4 fw-light">
       徽章的文档和示例，我们的小计数和标签组件。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank">Bootstrap Badge</a>
+      <a href="https://bs53.bootstrap-vue.top/components/badge/" target="_blank">Bootstrap Badge</a>
     </p>
 
     <h2 id="badge-example">
@@ -86,13 +86,13 @@
     <h2 id="badge-bg">背景色<a class="anchor-link" aria-label="Link to this section: 背景色" href="#badge-bg"> </a></h2>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/helpers/color-background" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/helpers/color-background" target="_blank"
         >`.text-bg-{color}`辅助选择器</a
       >
       来设置与前景 <code>color</code> 形成对比的 <code>background-color</code>。以前，需要手动将你选择的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/colors" target="_blank"><code>.text-{color}</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank"><code>.text-{color}</code></a>
       和
-      <a href="https://getbootstrap.com/docs/5.3/utilities/background" target="_blank"><code>.bg-{color}</code></a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/background" target="_blank"><code>.bg-{color}</code></a>
       实用程序配对以进行样式设置，如果你愿意，仍然可以使用这种方式。
     </p>
     <div class="docs-example">

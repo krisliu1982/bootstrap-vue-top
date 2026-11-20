@@ -12,7 +12,7 @@
     <h1>Images 图片</h1>
     <p class="fs-4 fw-light">
       提供文档和示例，说明如何通过类为图像设置响应式行为（使其宽度永远不会超过其父元素），并为它们添加轻量级样式。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/content/images/" target="_blank">Bootstrap Images</a>
+      <a href="https://bs53.bootstrap-vue.top/content/images/" target="_blank">Bootstrap Images</a>
     </p>
 
     <h2 id="img-responsive">
@@ -46,7 +46,7 @@
     </h2>
     <p>
       除了我们的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/borders" target="_blank">border-radius 工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/borders" target="_blank">border-radius 工具</a>
       之外，您还可以使用
       <code>.img-thumbnail</code> 为图像赋予一个1px的圆形边框外观。
     </p>
@@ -77,11 +77,11 @@
     </h2>
     <p>
       使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/float" target="_blank">辅助浮动类</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/float" target="_blank">辅助浮动类</a>
       或
-      <a href="https://getbootstrap.com/docs/5.3/utilities/text#text-alignment" target="_blank">文本对齐类</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/text#text-alignment" target="_blank">文本对齐类</a>
       来对齐图像。<code>block</code> 级别的图像可以使用
-      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing#horizontal-centering" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/utilities/spacing#horizontal-centering" target="_blank"
         ><code>.mx-auto</code> 边距辅助类</a
       >
       来居中。

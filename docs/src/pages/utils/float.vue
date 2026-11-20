@@ -12,7 +12,7 @@
     <h1>Float 浮动</h1>
     <p class="fs-4 fw-light">
       使用我们的响应式浮动工具，可以对任何元素在任何分界点上进行浮动设置。解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/utilities/float/" target="_blank">Bootstrap Float</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/float/" target="_blank">Bootstrap Float</a>
     </p>
 
     <h2 id="float-overview">
@@ -76,7 +76,7 @@
     </h2>
     <p>
       在父元素上使用
-      <a href="https://getbootstrap.com/docs/5.3/helpers/clearfix/" target="_blank">clearfix 辅助类</a>来清除浮动内容。
+      <a href="https://bs53.bootstrap-vue.top/helpers/clearfix/" target="_blank">clearfix 辅助类</a>来清除浮动内容。
     </p>
     <p>以下示例展示了如何使用清除浮动技术。若没有清除浮动功能，包裹容器无法环绕按钮，这将导致布局出现错误。</p>
     <div class="docs-example">

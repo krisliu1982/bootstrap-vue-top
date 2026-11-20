@@ -18,7 +18,7 @@
     <p class="fs-4 fw-light">
       通过自定义样式、尺寸、聚焦状态等，对文本表单控件（如
       <code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code>）进行升级。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/form-control/" target="_blank">Bootstrap Form Form controls</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/form-control/" target="_blank">Bootstrap Form Form controls</a>
     </p>
 
     <h2 id="form-control-example">

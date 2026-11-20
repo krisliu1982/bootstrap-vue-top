@@ -12,7 +12,7 @@
     <h1>Stacks 堆叠</h1>
     <p class="fs-4 fw-light">
       基于我们的弹性盒布局工具开发的简写辅助功能，能够使组件布局的速度和效率达到前所未有的水平。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/helpers/stacks/" target="_blank">Bootstrap Stacks</a>
+      <a href="https://bs53.bootstrap-vue.top/helpers/stacks/" target="_blank">Bootstrap Stacks</a>
     </p>
     <p>
       “堆栈”为应用一系列 flexbox 属性提供了便捷的途径，从而能够快速、轻松地在 Bootstrap
@@ -71,7 +71,7 @@
       <code-highlight type="html" :code="horizontal2Code" label="html" />
     </div>
     <p>
-      并且使用了 <a href="https://getbootstrap.com/docs/5.3/helpers/vertical-rule" target="_blank">垂直分隔线</a> ：
+      并且使用了 <a href="https://bs53.bootstrap-vue.top/helpers/vertical-rule" target="_blank">垂直分隔线</a> ：
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">

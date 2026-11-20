@@ -14,7 +14,7 @@
     <h1>Floating labels 浮动标签</h1>
     <p class="fs-4 fw-light">
       创建美观简洁的表单标签，使其悬浮在输入框上方。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/floating-labels/" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/forms/floating-labels/" target="_blank"
         >Bootstrap Form Floating labels</a
       >
     </p>

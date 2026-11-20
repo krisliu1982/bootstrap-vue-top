@@ -18,7 +18,7 @@
     <h1>Layout 布局</h1>
     <p class="fs-4 fw-light">
       利用我们的表单布局选项，为您的表单赋予结构——从内联到水平再到自定义网格实现。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/forms/layout/" target="_blank">Bootstrap Form Layout</a>
+      <a href="https://bs53.bootstrap-vue.top/forms/layout/" target="_blank">Bootstrap Form Layout</a>
     </p>
 
     <h2 id="layout-forms">
@@ -49,7 +49,7 @@
       工具使用<a class="anchor-link" aria-label="Link to this section: 工具使用" href="#layout-utilities"> </a>
     </h2>
     <p>
-      <a href="https://getbootstrap.com/docs/5.3/utilities/spacing" target="_blank">边距工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/spacing" target="_blank">边距工具</a>
       是给表单添加结构的最简单方法。它们为标签、控件、可选表单文本和表单验证消息提供了基本的分组。我们建议仅使用
       <code>margin-bottom</code> 工具，并在整个表单中使用单一方向以保持一致性。
     </p>
@@ -145,7 +145,7 @@
     </h2>
     <p>
       通过添加
-      <a href="https://getbootstrap.com/docs/5.3/layout/gutters" target="_blank">边距修饰符类</a
+      <a href="https://bs53.bootstrap-vue.top/layout/gutters" target="_blank">边距修饰符类</a
       >，您可以控制行内和块方向上的边距宽度。<strong>同时还需要启用 <code>$enable-grid-classes</code> Sass 变量</strong
       >（默认已启用）。
     </p>

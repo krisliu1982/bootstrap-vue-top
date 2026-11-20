@@ -9,7 +9,7 @@
     <h1>Figures 图表区</h1>
     <p class="fs-4 fw-light">
       关于在 Bootstrap 中使用 figure 组件展示相关图像和文本的文档与示例。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/content/figures/" target="_blank">Bootstrap Figures</a>
+      <a href="https://bs53.bootstrap-vue.top/content/figures/" target="_blank">Bootstrap Figures</a>
     </p>
 
     <h2 id="figure-example">
@@ -49,7 +49,7 @@
     </div>
     <p>
       使用我们的
-      <a href="https://getbootstrap.com/docs/5.3/utilities/text#text-alignment" target="_blank">文本工具</a>
+      <a href="https://bs53.bootstrap-vue.top/utilities/text#text-alignment" target="_blank">文本工具</a>
       可以轻松对齐图表的标题。
     </p>
     <div class="docs-example">

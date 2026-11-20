@@ -11,7 +11,7 @@
     <h1>Spinners 加载指示器</h1>
     <p class="fs-4 fw-light">
       使用基于 HTML、CSS 构建且无需 JavaScript 的 Bootstrap 加载指示器来指示组件或页面的加载状态。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/components/spinners/" target="_blank">Bootstrap Spinners</a>
+      <a href="https://bs53.bootstrap-vue.top/components/spinners/" target="_blank">Bootstrap Spinners</a>
     </p>
 
     <h2 id="spinners-about">
@@ -31,7 +31,7 @@
     <p class="text-bg-info">
       此组件的动画效果取决于
       <code>prefers-reduced-motion</code> 媒体查询。请参阅我们的无障碍文档中
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/#reduced-motion" target="_blank"
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#reduced-motion" target="_blank"
         >无障碍部分</a
       >。
     </p>

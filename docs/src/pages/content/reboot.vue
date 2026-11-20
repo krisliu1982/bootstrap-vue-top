@@ -30,7 +30,7 @@
     <p class="fs-4 fw-light">
       Reboot 是一个包含单个文件中针对特定元素的 CSS 更改的集合，它为 Bootstrap
       提供了一个优雅、一致且简洁的基础，以便在此基础上进行构建。了解更多请阅读
-      <a href="https://getbootstrap.com/docs/5.3/content/reboot/" target="_blank">Bootstrap Reboot</a>
+      <a href="https://bs53.bootstrap-vue.top/content/reboot/" target="_blank">Bootstrap Reboot</a>
     </p>
 
     <h2 id="reboot-approach">
