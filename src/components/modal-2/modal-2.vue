@@ -1,11 +1,11 @@
 <template>
   <Teleport to="body">
     <Transition name="fadeIn">
-      <div v-show="visible" ref="modalRef" class="modal modal-2" tabindex="-1" role="dialog" aria-modal="true">
-        <div class="modal-dialog" :class="dialogClass">
+      <div v-show="visible" ref="modalRef" class="bv-modal-2" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog" :class="props.dialogClass">
           <div v-if="rendered" ref="contentRef" class="modal-content">
-            <div ref="headerRef" class="modal-header" :style="{ cursor: draggable ? 'move' : 'auto' }">
-              <h1 class="modal-title fs-5">{{ title }}</h1>
+            <div ref="headerRef" class="modal-header" :style="{ cursor: props.draggable ? 'move' : 'auto' }">
+              <h1 class="modal-title fs-5">{{ props.title }}</h1>
               <button type="button" class="btn-close" @click="visible = false" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -75,7 +75,7 @@ function open() {
     if (focusTrapInstance === null) {
       focusTrapInstance = createFocusTrap(modalRef.value, {
         initialFocus: false,
-        isolateSubtrees: true
+        fallbackFocus: modalRef.value
       });
     }
     focusTrapInstance.activate();

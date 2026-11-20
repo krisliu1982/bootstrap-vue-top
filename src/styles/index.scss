@@ -1,5 +1,4 @@
 
-
 // 自定义变量
 $zindex-backtop: 1100;
 $zindex-image-preview: 1110;
@@ -19,9 +18,10 @@ $zindex-alert: 1130;
 @import 'backtop.scss';
 @import 'image-preview.scss';
 @import 'loading.scss';
+@import 'modal-2.scss';
 /*
 @import 'uploader.scss';
-@import 'modal-2.scss';
+
 */
 
 .bv-fadeIn-enter-active,

@@ -15,6 +15,7 @@
 
 <script setup>
 import { ref } from 'vue';
+
 import Accordion from './accordion/index.vue';
 import AlertBox from './alert-box/index.vue';
 import AlertConfirm from './alert-confirm/index.vue';
@@ -24,8 +25,10 @@ import Carousel from './carousel/index.vue';
 import ImagePreview from './image-preview/index.vue';
 import Loading from './loading/index.vue';
 import Modal from './modal/index.vue';
+import Modal2 from './modal2/index.vue';
 import Pagination from './/pagination/index.vue';
 import Table from './table/index.vue';
+
 const currentTab = ref(0);
 const tabs = [
   {
@@ -63,6 +66,10 @@ const tabs = [
   {
     name: 'Modal',
     component: Modal
+  },
+  {
+    name: 'Modal2',
+    component: Modal2
   },
   {
     name: 'Pagination',

@@ -1,8 +1,34 @@
-.modal-2 {
+.bv-modal-2 {
+  --bs-modal-zindex: 1055;
+  --bs-modal-width: 500px;
+  --bs-modal-padding: 1rem;
+  --bs-modal-margin: 1.75rem;
+  --bs-modal-color: var(--bs-body-color);
+  --bs-modal-bg: var(--bs-body-bg);
+  --bs-modal-border-color: var(--bs-border-color-translucent);
+  --bs-modal-border-width: var(--bs-border-width);
+  --bs-modal-border-radius: var(--bs-border-radius-lg);
+  --bs-modal-box-shadow: var(--bs-box-shadow);
+  --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
+  --bs-modal-header-padding-x: 1rem;
+  --bs-modal-header-padding-y: 1rem;
+  --bs-modal-header-padding: 1rem 1rem;
+  --bs-modal-header-border-color: var(--bs-border-color);
+  --bs-modal-header-border-width: var(--bs-border-width);
+  --bs-modal-title-line-height: 1.5;
+  --bs-modal-footer-gap: 0.5rem;
+  --bs-modal-footer-bg: ;
+  --bs-modal-footer-border-color: var(--bs-border-color);
+  --bs-modal-footer-border-width: var(--bs-border-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-modal-zindex);
   display: block;
   width: 100vw;
-  height: 100%; 
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgba($modal-backdrop-bg, $modal-backdrop-opacity);
+  outline: 0;
+  background-color: rgba(0, 0, 0, .5);
 }
