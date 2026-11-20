@@ -63,7 +63,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
@@ -80,7 +80,7 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
                   <ul class="dropdown-menu">
@@ -201,7 +201,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
@@ -234,7 +234,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
               aria-expanded="false"
@@ -254,7 +254,7 @@
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown link
                   </a>
                   <ul class="dropdown-menu">
@@ -316,7 +316,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarText"
               aria-controls="navbarText"
               aria-expanded="false"
@@ -362,7 +362,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarColor01"
               aria-controls="navbarColor01"
               aria-expanded="false"
@@ -399,7 +399,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarColor02"
               aria-controls="navbarColor02"
               aria-expanded="false"
@@ -436,7 +436,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarColor03"
               aria-controls="navbarColor03"
               aria-expanded="false"
@@ -544,7 +544,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarScroll"
               aria-controls="navbarScroll"
               aria-expanded="false"
@@ -561,7 +561,7 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false"> Link </a>
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Link </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
@@ -622,7 +622,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo01"
               aria-controls="navbarTogglerDemo01"
               aria-expanded="false"
@@ -662,7 +662,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo02"
               aria-controls="navbarTogglerDemo02"
               aria-expanded="false"
@@ -700,7 +700,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo03"
               aria-controls="navbarTogglerDemo03"
               aria-expanded="false"
@@ -753,7 +753,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              v-collapse
+              data-bs-toggle="collapse"
               data-bs-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent"
               aria-expanded="false"
@@ -810,7 +810,7 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" v-dropdown aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
                   <ul class="dropdown-menu">
@@ -861,7 +861,7 @@ const exampleCode = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarSupportedContent"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -875,7 +875,7 @@ const exampleCode = `
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" 
-              v-dropdown aria-expanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu">
@@ -943,7 +943,7 @@ const nav1Code = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarNavAltMarkup"
+        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -965,7 +965,7 @@ const nav2Code = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarNavDropdown"
+        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -982,7 +982,7 @@ const nav2Code = `
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" 
-              v-dropdown aria-expanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown link
             </a>
             <ul class="dropdown-menu">
@@ -1014,7 +1014,7 @@ const textCode = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar w/ text</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarText" 
+        data-bs-toggle="collapse" data-bs-target="#navbarText" 
         aria-controls="navbarText" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1101,7 +1101,7 @@ const scrollCode = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar scroll</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarScroll" 
+        data-bs-toggle="collapse" data-bs-target="#navbarScroll" 
         aria-controls="navbarScroll" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1116,7 +1116,7 @@ const scrollCode = `
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" 
-              v-dropdown aria-expanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false">
               Link
             </a>
             <ul class="dropdown-menu">
@@ -1145,7 +1145,7 @@ const toggler1Code = `
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarTogglerDemo01" 
+        data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" 
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1178,7 +1178,7 @@ const toggler2Code = `
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarTogglerDemo02" 
+        data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" 
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1209,7 +1209,7 @@ const toggler3Code = `
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarTogglerDemo03" 
+        data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" 
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1247,7 +1247,7 @@ const externalCode = `
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" 
-        v-collapse data-bs-target="#navbarToggleExternalContent" 
+        data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" 
         aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="...">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1274,7 +1274,7 @@ const offcanvasCode = `
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" 
-              v-dropdown aria-expanded="false">
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu">

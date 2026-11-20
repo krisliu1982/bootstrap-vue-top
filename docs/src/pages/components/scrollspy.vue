@@ -81,7 +81,7 @@
           </ul>
         </nav>
         <div
-          v-scrollspy
+          data-bs-spy="scroll"
           data-bs-target="#navbar-example2"
           style="height: 200px; overflow-y: scroll"
           class="bg-body-tertiary p-3 rounded-2"

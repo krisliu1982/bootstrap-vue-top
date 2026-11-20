@@ -321,11 +321,11 @@
       >
       </a>
     </h2>
-    <p>在下拉菜单的触发元素上运用 <code>v-dropdown</code> 指令。</p>
+    <p>在下拉菜单的触发元素上运用 <code>data-bs-toggle="dropdown"</code> 属性。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="input-group mb-3">
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
             Dropdown
           </button>
           <ul class="dropdown-menu">
@@ -342,7 +342,7 @@
 
         <div class="input-group mb-3">
           <input type="text" class="form-control" aria-label="Text input with dropdown button" />
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
             Dropdown
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -357,7 +357,7 @@
         </div>
 
         <div class="input-group">
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
             Dropdown
           </button>
           <ul class="dropdown-menu">
@@ -370,7 +370,7 @@
             <li><a class="dropdown-item" href="#">Separated link</a></li>
           </ul>
           <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons" />
-          <button v-dropdown class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle" type="button" aria-expanded="false">
             Dropdown
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -397,7 +397,7 @@
           <button
             type="button"
             class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-            v-dropdown
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <span class="visually-hidden">Toggle Dropdown</span>
@@ -420,7 +420,7 @@
           <button
             type="button"
             class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-            v-dropdown
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             <span class="visually-hidden">Toggle Dropdown</span>
@@ -568,7 +568,7 @@ const buttonAddonsCode = `
 
 const dropdownCode = `
 <div class="input-group mb-3">
-  <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -581,7 +581,7 @@ const dropdownCode = `
 
 <div class="input-group mb-3">
   <input type="text" class="form-control" aria-label="Text input with dropdown button">
-  <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu dropdown-menu-end">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -592,7 +592,7 @@ const dropdownCode = `
 </div>
 
 <div class="input-group">
-  <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Action before</a></li>
     <li><a class="dropdown-item" href="#">Another action before</a></li>
@@ -601,7 +601,7 @@ const dropdownCode = `
     <li><a class="dropdown-item" href="#">Separated link</a></li>
   </ul>
   <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
-  <button class="btn btn-outline-secondary dropdown-toggle" type="button" v-dropdown aria-expanded="false">Dropdown</button>
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
   <ul class="dropdown-menu dropdown-menu-end">
     <li><a class="dropdown-item" href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -614,7 +614,7 @@ const dropdownCode = `
 const segmentedCode = `
 <div class="input-group mb-3">
   <button type="button" class="btn btn-outline-secondary">Action</button>
-  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" v-dropdown aria-expanded="false">
+  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
@@ -630,7 +630,7 @@ const segmentedCode = `
 <div class="input-group">
   <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
   <button type="button" class="btn btn-outline-secondary">Action</button>
-  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" v-dropdown aria-expanded="false">
+  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">

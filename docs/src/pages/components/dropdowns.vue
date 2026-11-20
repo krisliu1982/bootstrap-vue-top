@@ -10,7 +10,7 @@
   <div v-scrollspy.body data-bs-target="#docs-nav-dropdowns" class="docs-content">
     <h1>Dropdowns 下拉菜单</h1>
     <p class="fs-4 fw-light">
-      使用 <code>v-dropdown</code> 指令激活下拉菜单。了解更多请阅读
+      切换上下文浮层，以显示链接列表等内容。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/components/dropdowns/" target="_blank">Bootstrap Dropdowns</a>
     </p>
 
@@ -19,8 +19,7 @@
     </h2>
     <p>
       将下拉菜单的切换按钮（即您的按钮或链接）以及下拉菜单包裹在
-      <code>.dropdown</code> 元素内，或者使用声明了 <code>position: relative;</code> 的其他元素。设置
-      <code>v-dropdown</code> 指令在下拉触发元素上。理想情况下，您应该使用
+      <code>.dropdown</code> 元素内，或者使用声明了 <code>position: relative;</code> 的其他元素。理想情况下，您应该使用
       <code>&lt;button&gt;</code> 元素作为下拉菜单的触发器，但该组件也能与
       <code>&lt;a&gt;</code>
       元素配合使用。这里展示的示例在适当的地方使用了语义化的
@@ -30,7 +29,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="dropdown">
-          <button v-dropdown class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
             Dropdown button
           </button>
           <ul class="dropdown-menu">
@@ -60,7 +59,7 @@
         </div>
         <hr />
         <div class="dropdown">
-          <a v-dropdown class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" aria-expanded="false">
+          <a data-bs-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" aria-expanded="false">
             Dropdown link(大)
           </a>
           <ul class="dropdown-menu">
@@ -73,7 +72,7 @@
         </div>
         <hr />
         <div class="dropdown">
-          <button v-dropdown class="btn btn-primary btn-sm dropdown-toggle" type="button" aria-expanded="false">
+          <button data-bs-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle" type="button" aria-expanded="false">
             Dropdown button(小)
           </button>
           <ul class="dropdown-menu">
@@ -150,7 +149,7 @@
 const example1Code = `
 <template>
   <div class="dropdown">
-      <button v-dropdown class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+      <button data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
           Dropdown button
       </button>
       <ul class="dropdown-menu">
@@ -170,7 +169,7 @@ const example1Code = `
   </div>
   <hr />
   <div class="dropdown">
-      <a v-dropdown class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" aria-expanded="false">
+      <a data-bs-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle" href="#" role="button" aria-expanded="false">
           Dropdown link(大)
       </a>
       <ul class="dropdown-menu">
@@ -181,7 +180,7 @@ const example1Code = `
   </div>
   <hr />
   <div class="dropdown">
-      <button v-dropdown class="btn btn-primary btn-sm dropdown-toggle" type="button" aria-expanded="false">
+      <button data-bs-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle" type="button" aria-expanded="false">
           Dropdown button(小)
       </button>
       <ul class="dropdown-menu">
@@ -196,7 +195,7 @@ const example2Code = `
 <template>
   <div class="btn-group">
       <button type="button" class="btn btn-danger">Danger</button>
-      <button v-dropdown type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" aria-expanded="false">
+      <button data-bs-toggle="dropdown" type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
       </button>
       <ul class="dropdown-menu">

@@ -208,7 +208,7 @@
           <button type="button" class="btn btn-primary">2</button>
 
           <div class="btn-group" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
               Dropdown
             </button>
             <ul class="dropdown-menu">
@@ -238,7 +238,7 @@
 
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <div class="btn-group" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
               Dropdown
             </button>
             <ul class="dropdown-menu">
@@ -249,7 +249,7 @@
           <button type="button" class="btn btn-primary">Button</button>
           <button type="button" class="btn btn-primary">Button</button>
           <div class="btn-group dropstart" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
               Dropdown
             </button>
             <ul class="dropdown-menu">
@@ -258,7 +258,7 @@
             </ul>
           </div>
           <div class="btn-group dropend" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
               Dropdown
             </button>
             <ul class="dropdown-menu">
@@ -267,7 +267,7 @@
             </ul>
           </div>
           <div class="btn-group dropup" role="group">
-            <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
               Dropdown
             </button>
             <ul class="dropdown-menu">
@@ -425,7 +425,7 @@ const nestingCode = `
   <button type="button" class="btn btn-primary">2</button>
 
   <div class="btn-group" role="group">
-    <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+    <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu">
@@ -447,7 +447,7 @@ const verticalCode = `
 
 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
   <div class="btn-group" role="group">
-    <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+    <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu">
@@ -458,7 +458,7 @@ const verticalCode = `
   <button type="button" class="btn btn-primary">Button</button>
   <button type="button" class="btn btn-primary">Button</button>
   <div class="btn-group dropstart" role="group">
-    <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+    <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu">
@@ -467,7 +467,7 @@ const verticalCode = `
     </ul>
   </div>
   <div class="btn-group dropend" role="group">
-    <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+    <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu">
@@ -476,7 +476,7 @@ const verticalCode = `
     </ul>
   </div>
   <div class="btn-group dropup" role="group">
-    <button v-dropdown type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
+    <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
       Dropdown
     </button>
     <ul class="dropdown-menu">

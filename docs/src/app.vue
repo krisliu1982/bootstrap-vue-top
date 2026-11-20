@@ -18,7 +18,7 @@
               <div class="vr"></div>
               <div class="dropdown">
                 <a
-                  v-dropdown
+                  data-bs-toggle="dropdown"
                   class="link-body-emphasis text-decoration-none dropdown-toggle"
                   title="文字大小"
                   href="#"
@@ -78,7 +78,7 @@
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" class="link-body-emphasis text-decoration-none" @click="offcanvasRef.toggle()"><bi-list /> 菜单</a>
         <div class="dropdown docs-toc-menu">
-          <a v-dropdown href="#" class="link-body-emphasis text-decoration-none dropdown-toggle" aria-expanded="false"
+          <a data-bs-toggle="dropdown" href="#" class="link-body-emphasis text-decoration-none dropdown-toggle" aria-expanded="false"
             >本页内容</a
           >
           <nav class="dropdown-menu" style="max-height: 50vh; overflow-y: auto" id="docs-toc"></nav>
