@@ -14,12 +14,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const loading = ref(true);
 const tableData = [
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
   { code: 1002, name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
-]
+];
 </script>

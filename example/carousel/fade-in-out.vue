@@ -1,9 +1,5 @@
-
 <template>
-  <bv-carousel 
-    :items="slides" 
-    carousel-class="carousel-fade">
-  </bv-carousel>
+  <bv-carousel :items="slides" carousel-class="carousel-fade"> </bv-carousel>
 </template>
 
 <script setup>
@@ -19,7 +15,7 @@ const slides = [
   },
   {
     image: 'https://picsum.photos/id/112/800/400',
-    title: '风景图片3',
+    title: '风景图片3'
   }
 ];
 </script>

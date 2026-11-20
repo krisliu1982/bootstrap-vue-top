@@ -1,6 +1,5 @@
 <template>
-  <bv-table :data="tableData" :tfoot-data="['-', '-', 259]" table-class="table-light" thead-class="table-secondary"
-    :tbody-tr-class="tbodyTrClass" tfoot-class="table-primary">
+  <bv-table :data="tableData" :tfoot-data="['-', '-', 259]" table-class="table-light" thead-class="table-secondary" :tbody-tr-class="tbodyTrClass" tfoot-class="table-primary">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
     <bv-table-col header="Address" field="address" />
@@ -20,29 +19,29 @@ const tableData = [
   { code: 1009, name: 'Kris9', address: 'Honghu City, Hubei Province, China' },
   { code: 1010, name: 'Kris10', address: 'Honghu City, Hubei Province, China' },
   { code: 1011, name: 'Kris11', address: 'Honghu City, Hubei Province, China' }
-]
+];
 
 function tbodyTrClass(item) {
   if (item.code === 1001) {
-    return 'table-primary'
+    return 'table-primary';
   } else if (item.code === 1002) {
-    return 'table-secondary'
+    return 'table-secondary';
   } else if (item.code === 1003) {
-    return 'table-success'
+    return 'table-success';
   } else if (item.code === 1004) {
-    return 'table-danger'
+    return 'table-danger';
   } else if (item.code === 1005) {
-    return 'table-warning'
+    return 'table-warning';
   } else if (item.code === 1006) {
-    return 'table-info'
+    return 'table-info';
   } else if (item.code === 1007) {
-    return 'table-light'
+    return 'table-light';
   } else if (item.code === 1008) {
-    return 'table-dark'
+    return 'table-dark';
   } else if (item.code === 1009) {
-    return 'table-active'
+    return 'table-active';
   } else {
-    return null
+    return null;
   }
 }
 </script>

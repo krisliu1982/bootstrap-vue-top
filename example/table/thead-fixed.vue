@@ -1,4 +1,3 @@
-
 <template>
   <div class="overflow-y-auto" style="height: 200px">
     <bv-table :data="tableData10" thead-class="table-info position-sticky top-0">
@@ -21,5 +20,5 @@ const tableData10 = [
   { code: 1008, name: 'Kris8', address: 'Honghu City, Hubei Province, China' },
   { code: 1009, name: 'Kris9', address: 'Honghu City, Hubei Province, China' },
   { code: 1010, name: 'Kris10', address: 'Honghu City, Hubei Province, China' }
-]
+];
 </script>

@@ -1,6 +1,5 @@
 <template>
-  <bv-carousel :items="slides" ride="carousel" :interval="3000" :pause="false">
-  </bv-carousel>
+  <bv-carousel :items="slides" ride="carousel" :interval="3000" :pause="false"> </bv-carousel>
 </template>
 
 <script setup>
@@ -16,7 +15,7 @@ const slides = [
   },
   {
     image: 'https://picsum.photos/id/112/800/400',
-    title: '风景图片3',
+    title: '风景图片3'
   }
 ];
 </script>

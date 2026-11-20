@@ -1,11 +1,5 @@
-
 <template>
-  <bv-table 
-    :data="tableData" 
-    :tfoot-data="['-', '-', 239]"
-    thead-class="table-group-divider"
-    tbody-class="table-group-divider" 
-    tfoot-class="table-group-divider">
+  <bv-table :data="tableData" :tfoot-data="['-', '-', 239]" thead-class="table-group-divider" tbody-class="table-group-divider" tfoot-class="table-group-divider">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
     <bv-table-col header="Address" field="address" />
@@ -17,5 +11,5 @@ const tableData = [
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },
   { code: 1002, name: 'Kris2', address: 'Honghu City, Hubei Province, China' },
   { code: 1003, name: 'Kris3', address: 'Honghu City, Hubei Province, China' }
-]
+];
 </script>

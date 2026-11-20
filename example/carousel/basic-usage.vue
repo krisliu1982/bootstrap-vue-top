@@ -1,4 +1,3 @@
-
 <template>
   <bv-carousel :items="slides"></bv-carousel>
 </template>
@@ -16,7 +15,7 @@ const slides = [
   },
   {
     image: 'https://picsum.photos/id/112/800/400',
-    title: '风景图片3',
+    title: '风景图片3'
   }
 ];
 </script>
