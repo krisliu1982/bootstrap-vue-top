@@ -8,7 +8,9 @@
         </a>
       </li>
     </ul>
+    <div class="content">
     <component :is="tabs[currentTab].component"></component>
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ import Backtop from './backtop/index.vue'
 import ImagePreview from './image-preview/index.vue'
 import Loading from './loading/index.vue'
 import Pagination from './/pagination/index.vue'
+import Table from './table/index.vue'
 const currentTab = ref(0)
 const tabs = [{
   'name': 'AlertBox',
@@ -49,16 +52,20 @@ const tabs = [{
 {
   'name': 'Pagination',
   'component': Pagination
+},
+{
+  'name': 'Table',
+  'component': Table
 }
 ]
 </script>
 
 <style>
-h1 {
+.content > h1 {
 margin-top: 1.5rem;
 }
 
-h2 {
+.content > h2 {
   margin-top: 2.5rem;
 }
 </style>

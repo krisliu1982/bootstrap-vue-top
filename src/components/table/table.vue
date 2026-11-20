@@ -1,9 +1,7 @@
 <template>
-  <table class="table" :class="tableClass">
+  <table class="table" :class="props.tableClass">
     <caption v-if="caption">
-      {{
-        caption
-      }}
+      {{ props.caption }}
     </caption>
     <slot></slot>
     <template v-if="ready">
@@ -12,19 +10,15 @@
           <col :style="{ width: col.width }" />
         </template>
       </colgroup>
-      <thead :class="theadClass">
+      <thead :class="props.theadClass">
         <tr>
           <template v-for="col in cols">
             <th scope="col">
               <template v-if="col.type === null">
                 <template v-if="col.sortable === null">{{ col.header }}</template>
                 <template v-else>
-                  <a
-                    href="#"
-                    role="button"
-                    class="link-body-emphasis text-decoration-none text-nowrap"
-                    @click.prevent="_sortBy(col)"
-                  >
+                  <a href="#" role="button" class="link-body-emphasis text-decoration-none text-nowrap"
+                    @click.prevent="_sortBy(col)">
                     {{ col.header }}
                     <bi-arrow-down-up v-if="sortField !== col.field || sortOrder === null" />
                     <bi-sort-up-alt v-else-if="sortOrder === 'asc'" class="text-primary" />
@@ -43,7 +37,7 @@
           </template>
         </tr>
       </thead>
-      <tbody :class="tbodyClass">
+      <tbody :class="props.tbodyClass">
         <template v-for="(item, index) in items" :key="index">
           <tr :class="_tbodyTrClass(item)">
             <td v-for="col in cols">
@@ -52,32 +46,18 @@
               </template>
               <template v-else-if="col.type === 'index'">{{ index + 1 }}</template>
               <template v-else-if="col.type === 'checkbox'">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  :value="get(item, trKeyInfo.field)"
-                  v-model="checkboxSelectedKeys"
-                />
+                <input class="form-check-input" type="checkbox" :value="get(item, trKeyInfo.field)"
+                  v-model="checkboxSelectedKeys" />
               </template>
               <template v-else-if="col.type === 'radio'">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  :value="get(item, trKeyInfo.field)"
-                  v-model="radioSelectedKey"
-                />
+                <input class="form-check-input" type="radio" :value="get(item, trKeyInfo.field)"
+                  v-model="radioSelectedKey" />
               </template>
               <template v-else-if="col.type === 'expand'">
-                <a
-                  href="#"
-                  role="button"
-                  class="link-body-emphasis text-decoration-none"
-                  @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))"
-                >
-                  <BiChevronRight
-                    class="expand-icon"
-                    :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }"
-                  />
+                <a href="#" role="button" class="link-body-emphasis text-decoration-none"
+                  @click.prevent="_handleToggleExpandTr(get(item, trKeyInfo.field))">
+                  <BiChevronRight class="expand-icon"
+                    :class="{ 'rotate-90': expandKeys.includes(get(item, trKeyInfo.field)) }" />
                 </a>
               </template>
               <component v-else :is="col.body" :item="item" :index="index" />
@@ -90,9 +70,9 @@
           </tr>
         </template>
       </tbody>
-      <tfoot :class="tfootClass" v-if="tfootData !== null">
+      <tfoot :class="props.tfootClass" v-if="props.tfootData !== null">
         <tr>
-          <td v-for="item in tfootData">{{ item }}</td>
+          <td v-for="item in props.tfootData">{{ item }}</td>
         </tr>
       </tfoot>
     </template>
