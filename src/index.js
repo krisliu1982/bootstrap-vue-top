@@ -4,7 +4,6 @@ import vDropdown from './components/dropdown/dropdown.js';
 import vTooltip from './components/tooltip/tooltip.js';
 import vPopover from './components/popover/popover.js';
 import vScrollspy from './components/scrollspy/scrollspy.js';
-import vCollapse from './components/collapse/collapse.js';
 
 import BvTable from './components/table/table.vue';
 import BvTableCol from './components/table/table-col.vue';
@@ -32,7 +31,6 @@ export default {
     app.directive('tooltip', vTooltip);
     app.directive('popover', vPopover);
     app.directive('scrollspy', vScrollspy);
-    app.directive('collapse', vCollapse);
 
     app.component('BvTable', BvTable).component('BvTableCol', BvTableCol);
     app.component('BvPagination', BvPagination);
