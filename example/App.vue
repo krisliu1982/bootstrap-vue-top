@@ -21,6 +21,7 @@ import AlertBox from './alert-box/index.vue'
 import AlertConfirm from './alert-confirm/index.vue'
 import AlertMessage from './alert-message/index.vue'
 import Backtop from './backtop/index.vue'
+import Carousel from './carousel/index.vue'
 import ImagePreview from './image-preview/index.vue'
 import Loading from './loading/index.vue'
 import Pagination from './/pagination/index.vue'
@@ -44,6 +45,10 @@ const tabs = [{
 {
   'name': 'Backtop',
   'component': Backtop
+},
+{
+  'name': 'Carousel',
+  'component': Carousel
 },
 {
   'name': 'ImagePreview',
