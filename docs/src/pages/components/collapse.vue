@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-collapse" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-collapse" class="docs-content">
     <h1>Collapse 折叠</h1>
     <p class="fs-4 fw-light">
       使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。了解更多请阅读

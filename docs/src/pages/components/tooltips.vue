@@ -9,7 +9,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-tooltips" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-tooltips" class="docs-content">
     <h1>Tooltips 文字提示</h1>
     <p class="fs-4 fw-light">
       使用 <code>v-tooltip</code> 指令激活文字提示。了解更多请阅读

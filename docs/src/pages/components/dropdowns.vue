@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-dropdowns" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-dropdowns" class="docs-content">
     <h1>Dropdowns 下拉菜单</h1>
     <p class="fs-4 fw-light">
       切换上下文浮层，以显示链接列表等内容。了解更多请阅读

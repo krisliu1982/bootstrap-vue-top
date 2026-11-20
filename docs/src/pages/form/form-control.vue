@@ -13,7 +13,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-form-control" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-form-control" class="docs-content">
     <h1>Form controls 表单控件</h1>
     <p class="fs-4 fw-light">
       通过自定义样式、尺寸、聚焦状态等，对文本表单控件（如

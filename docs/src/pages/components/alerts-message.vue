@@ -7,7 +7,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-alerts-message" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-alerts-message" class="docs-content">
     <h1>Alerts Message 警示消息</h1>
     <p class="fs-4 fw-light">常用于主动操作后的反馈提示。与 Toast 的区别是后者更多用于的被动提示。</p>
 

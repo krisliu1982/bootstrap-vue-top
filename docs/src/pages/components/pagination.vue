@@ -12,7 +12,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-pagination" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-pagination" class="docs-content">
     <h1>Pagination 分页</h1>
     <p class="fs-4 fw-light">
       基于

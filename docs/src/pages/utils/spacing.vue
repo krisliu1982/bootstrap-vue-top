@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-spacing" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-spacing" class="docs-content">
     <h1>Spacing 间距</h1>
     <p class="fs-4 fw-light">
       Bootstrap 包含了众多简化的响应式边距、内边距和间距的实用类样式，用于调整元素的外观。了解更多请阅读

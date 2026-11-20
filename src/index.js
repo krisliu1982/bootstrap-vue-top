@@ -4,7 +4,7 @@ import * as bootstrap from 'bootstrap';
 
 import vTooltip from './components/tooltip/tooltip.js';
 import vPopover from './components/popover/popover.js';
-import vScrollspy from './components/scrollspy/scrollspy.js';
+//import vScrollspy from './components/scrollspy/scrollspy.js';
 
 import BvTable from './components/table/table.vue';
 import BvTableCol from './components/table/table-col.vue';
@@ -30,7 +30,7 @@ export default {
   install: (app, options) => {
     app.directive('tooltip', vTooltip);
     app.directive('popover', vPopover);
-    app.directive('scrollspy', vScrollspy);
+    //app.directive('scrollspy', vScrollspy);
 
     app.component('BvTable', BvTable).component('BvTableCol', BvTableCol);
     app.component('BvPagination', BvPagination);

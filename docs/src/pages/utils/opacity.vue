@@ -5,7 +5,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-opacity" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-opacity" class="docs-content">
     <h1>Opacity 透明度</h1>
     <p class="fs-4 fw-light">
       控制元素的透明度。了解更多请阅读

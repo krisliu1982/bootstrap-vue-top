@@ -6,7 +6,7 @@
     </nav>
   </div>
 
-  <div v-scrollspy.body data-bs-target="#docs-nav-quick-start" class="docs-content">
+  <div v-docsscrollspy data-docs-target="#docs-nav-quick-start" class="docs-content">
     <h1>Quick start 快速开始</h1>
     <p class="fs-4 fw-light">本节将介绍如何在项目中使用 bootstrap-vue-top。</p>
 
