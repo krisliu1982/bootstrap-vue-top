@@ -1,27 +1,17 @@
 <template>
-  <div :id="id" class="accordion" :class="accordionClass">
+  <div :id="id" class="accordion" :class="props.accordionClass">
     <slot></slot>
     <template v-if="ready">
       <div v-for="(item, index) in items" class="accordion-item" :key="item.keyId">
         <h2 class="accordion-header">
-          <button
-            type="button"
-            class="accordion-button"
-            :class="{ collapsed: initActiveIndex !== index }"
-            data-bs-toggle="collapse"
-            :data-bs-target="`#${item.keyId}`"
-            :aria-expanded="initActiveIndex === index"
-            :aria-controls="`#${item.keyId}`"
-          >
+          <button type="button" class="accordion-button" :class="{ collapsed: props.initActiveIndex !== index }"
+            data-bs-toggle="collapse" :data-bs-target="`#${item.keyId}`"
+            :aria-expanded="props.initActiveIndex === index" :aria-controls="`#${item.keyId}`">
             {{ item.header }}
           </button>
         </h2>
-        <div
-          :id="item.keyId"
-          class="accordion-collapse collapse"
-          :class="{ show: initActiveIndex === index }"
-          :data-bs-parent="always ? null : `#${id}`"
-        >
+        <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: props.initActiveIndex === index }"
+          :data-bs-parent="always ? null : `#${id}`">
           <div class="accordion-body">
             <component :is="item.body" />
           </div>
@@ -34,7 +24,6 @@
 <script setup>
 import { useSlots, ref, provide, onMounted, useId } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
-import Collapse from 'bootstrap/js/dist/collapse';
 
 const ready = ref(false);
 const id = useId();

@@ -16,6 +16,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import Accordion from './accordion/index.vue'
 import AlertBox from './alert-box/index.vue'
 import AlertConfirm from './alert-confirm/index.vue'
 import AlertMessage from './alert-message/index.vue'
@@ -26,6 +27,9 @@ import Pagination from './/pagination/index.vue'
 import Table from './table/index.vue'
 const currentTab = ref(0)
 const tabs = [{
+  'name': 'Accordion',
+  'component': Accordion
+},{
   'name': 'AlertBox',
   'component': AlertBox
 },
