@@ -24,6 +24,7 @@ import Backtop from './backtop/index.vue'
 import Carousel from './carousel/index.vue'
 import ImagePreview from './image-preview/index.vue'
 import Loading from './loading/index.vue'
+import Modal from './modal/index.vue'
 import Pagination from './/pagination/index.vue'
 import Table from './table/index.vue'
 const currentTab = ref(0)
@@ -57,6 +58,10 @@ const tabs = [{
 {
   'name': 'Loading',
   'component': Loading
+},
+{
+  'name': 'Modal',
+  'component': Modal
 },
 {
   'name': 'Pagination',

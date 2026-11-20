@@ -17,8 +17,8 @@ const alertMessage = function (data) {
     duration: data.duration,
     onDestroy: () => {
       render(null, container);
-    container.remove();
-    container = null;
+      container.remove();
+      container = null;
     }
   });
 

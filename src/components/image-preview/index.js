@@ -5,7 +5,7 @@ let container = null;
 const imagePreview = function (data, initIndex) {
   if (container) {
     render(null, container);
-      container.remove();
+    container.remove();
     container = null;
   }
 
@@ -16,8 +16,8 @@ const imagePreview = function (data, initIndex) {
     initIndex: initIndex,
     onDestroy: () => {
       render(null, container);
-          container.remove();
-    container = null;
+      container.remove();
+      container = null;
     }
   });
 

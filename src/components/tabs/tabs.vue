@@ -18,28 +18,14 @@
         </button>
       </nav>
       <div class="tab-content">
-        <div
-          v-for="(pane, index) in panes"
-          class="tab-pane fade"
-          :id="pane.keyId"
-          role="tabpanel"
-          :aria-labelledby="`${pane.keyId}-tab`"
-          tabindex="0"
-        >
+        <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
           <component v-if="renders[index]" :is="pane.body" />
         </div>
       </div>
     </template>
     <template v-else-if="position === 'bottom'">
       <div class="tab-content">
-        <div
-          v-for="(pane, index) in panes"
-          class="tab-pane fade"
-          :id="pane.keyId"
-          role="tabpanel"
-          :aria-labelledby="`${pane.keyId}-tab`"
-          tabindex="0"
-        >
+        <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
           <component v-if="renders[index]" :is="pane.body" />
         </div>
       </div>
@@ -61,13 +47,7 @@
     </template>
     <template v-else-if="position === 'start'">
       <div class="d-flex align-items-start">
-        <nav
-          class="nav flex-column me-3"
-          :class="tabsClass"
-          :style="tabsStyle"
-          role="tablist"
-          aria-orientation="vertical"
-        >
+        <nav class="nav flex-column me-3" :class="tabsClass" :style="tabsStyle" role="tablist" aria-orientation="vertical">
           <button
             v-for="pane in panes"
             type="button"
@@ -83,14 +63,7 @@
           </button>
         </nav>
         <div class="tab-content">
-          <div
-            v-for="(pane, index) in panes"
-            class="tab-pane fade"
-            :id="pane.keyId"
-            role="tabpanel"
-            :aria-labelledby="`${pane.keyId}-tab`"
-            tabindex="0"
-          >
+          <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
             <component v-if="renders[index]" :is="pane.body" />
           </div>
         </div>
@@ -99,24 +72,11 @@
     <template v-else-if="position === 'end'">
       <div class="d-flex align-items-start">
         <div class="tab-content">
-          <div
-            v-for="(pane, index) in panes"
-            class="tab-pane fade"
-            :id="pane.keyId"
-            role="tabpanel"
-            :aria-labelledby="`${pane.keyId}-tab`"
-            tabindex="0"
-          >
+          <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
             <component v-if="renders[index]" :is="pane.body" />
           </div>
         </div>
-        <nav
-          class="nav flex-column ms-3"
-          :class="tabsClass"
-          :style="tabsStyle"
-          role="tablist"
-          aria-orientation="vertical"
-        >
+        <nav class="nav flex-column ms-3" :class="tabsClass" :style="tabsStyle" role="tablist" aria-orientation="vertical">
           <button
             v-for="pane in panes"
             type="button"

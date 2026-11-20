@@ -16,8 +16,8 @@ const alertConfirm = function (data) {
     callback: data.confirm,
     onDestroy: () => {
       render(null, container);
-    container.remove();
-    container = null;
+      container.remove();
+      container = null;
     }
   });
 

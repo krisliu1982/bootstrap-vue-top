@@ -3,14 +3,7 @@
     <template v-for="(col, index) in cols">
       <td v-if="index === 0">
         <div class="node" :style="{ 'padding-left': level + 'rem' }">
-          <a
-            v-if="isFolder"
-            href="#"
-            role="button"
-            @click.prevent="toggle"
-            class="link-body-emphasis node-switcher"
-            :class="{ 'rotate-90': isExpand }"
-          >
+          <a v-if="isFolder" href="#" role="button" @click.prevent="toggle" class="link-body-emphasis node-switcher" :class="{ 'rotate-90': isExpand }">
             <BiCaretRight />
           </a>
           <div v-else class="node-placeholder"></div>

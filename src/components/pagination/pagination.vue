@@ -60,16 +60,27 @@
       </li>
     </ul>
 
-    <select v-if="props.mode === 'full'" class="form-select col-auto" :class="pageSizeClass" style="width: 8rem"
-      :value="props.pageSize" @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))">
+    <select
+      v-if="props.mode === 'full'"
+      class="form-select col-auto"
+      :class="pageSizeClass"
+      style="width: 8rem"
+      :value="props.pageSize"
+      @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))"
+    >
       <option v-for="item in [10, 20, 50, 100]" :value="item">{{ item }}条/页</option>
     </select>
 
     <div v-if="props.mode === 'full' && pages > props.pagerCount" class="col-auto input-group" :class="pageGoClass" style="width: 8rem">
       <span class="input-group-text">Go</span>
-      <input class="form-control" type="number" title="输入页码回车"
-        oninput="this.value = Math.min(999, Math.max(1, this.value))" onblur="this.value = null"
-        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))" />
+      <input
+        class="form-control"
+        type="number"
+        title="输入页码回车"
+        oninput="this.value = Math.min(999, Math.max(1, this.value))"
+        onblur="this.value = null"
+        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))"
+      />
     </div>
   </nav>
 </template>

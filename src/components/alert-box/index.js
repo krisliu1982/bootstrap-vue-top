@@ -23,7 +23,6 @@ const alertBox = function (data) {
   render(vnode, container);
 
   document.body.appendChild(container.firstElementChild);
-
 };
 
 export default alertBox;

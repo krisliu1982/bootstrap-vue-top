@@ -2,14 +2,7 @@
   <div :id="id" class="carousel slide" :class="props.carouselClass">
     <div v-if="props.indicator" class="carousel-indicators">
       <template v-for="(item, index) in props.items" :key="index">
-        <button
-          type="button"
-          :data-bs-target="`#${id}`"
-          :data-bs-slide-to="index"
-          :class="{ active: index === 0 }"
-          :aria-current="index === 0"
-          :aria-label="item.title"
-        ></button>
+        <button type="button" :data-bs-target="`#${id}`" :data-bs-slide-to="index" :class="{ active: index === 0 }" :aria-current="index === 0" :aria-label="item.title"></button>
       </template>
     </div>
     <div class="carousel-inner">
@@ -38,7 +31,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount } from 'vue';
-import {Carousel} from 'bootstrap';
+import { Carousel } from 'bootstrap';
 
 const id = useId();
 const props = defineProps({

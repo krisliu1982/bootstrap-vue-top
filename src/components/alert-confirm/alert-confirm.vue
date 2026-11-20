@@ -1,12 +1,6 @@
 <template>
   <Transition name="bv-fadeIn" @after-leave="$emit('destroy')">
-    <div
-      ref="elementRef"
-      v-show="visible"
-      class="bv-alert-confirm d-flex justify-content-center align-items-start"
-      tabindex="-1"
-      role="alert"
-    >
+    <div ref="elementRef" v-show="visible" class="bv-alert-confirm d-flex justify-content-center align-items-start" tabindex="-1" role="alert">
       <div class="shadow rounded bg-body p-3 col-10 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
         <div class="d-flex justify-content-center align-items-center">
           <div class="me-2"><BiExclamationCircle class="text-warning fs-5" /></div>

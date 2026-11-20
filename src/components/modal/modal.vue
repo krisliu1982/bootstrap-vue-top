@@ -1,9 +1,9 @@
 <template>
   <div :id="id" class="modal fade" tabindex="-1" :aria-labelledby="`${id}-label`" aria-hidden="true">
-    <div class="modal-dialog" :class="dialogClass">
+    <div class="modal-dialog" :class="props.dialogClass">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" :id="`${id}-label`">{{ title }}</h1>
+          <h1 class="modal-title fs-5" :id="`${id}-label`">{{ props.title }}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -19,7 +19,7 @@
 
 <script setup>
 import { useId, onMounted, onBeforeUnmount } from 'vue';
-import Modal from 'bootstrap/js/dist/modal';
+import { Modal } from 'bootstrap';
 
 const emit = defineEmits(['modal-shown']);
 

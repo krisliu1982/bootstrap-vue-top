@@ -8,13 +8,13 @@
     <p>在列中可以通过模板自定义的显示内容，通过 <code>slotProps</code> 可以获得行数据（<code>item</code>）和行序号（<code>index</code>）。</p>
     <BasicUsage />
 
-    <h2>颜色调整</h2>
+    <h2>可选颜色</h2>
     <p> 通过 <code>table-class、thead-class、tbody-tr-class、tfoot-class</code> 属性分别为表格、表头、表格行、表尾做颜色调整。</p>
     <p> 预设
         <code>.table-primary | .table-secondary | .table-success | .table-danger | .table-warning | .table-info | .table-light | .table-dark | .table-active</code>
         样式类供选择。
     </p>
-    <ColorAdjustment />
+    <OptionalColor />
 
     <h2>表尾数据</h2>
     <p>通过 <code>tfoot-data</code> 属性设置表尾数据，类型为数组、长度与列数量保持一致。</p>
@@ -105,7 +105,6 @@ import BorderedColor from './bordered-color.vue';
 import Bordered from './bordered.vue';
 import Borderless from './borderless.vue';
 import CheckboxRow from './checkbox-row.vue';
-import ColorAdjustment from './color-adjustment.vue';
 import ContentTruncate from './content-truncate.vue';
 import DataSort from './data-sort.vue';
 import ExpandRow from './expand-row.vue';
@@ -119,4 +118,5 @@ import TfootData from './tfoot-data.vue';
 import TheadFixed from './thead-fixed.vue';
 import VerticalAlign from './vertical-align.vue';
 import XAuto from './x-auto.vue';
+import OptionalColor from './optional-color.vue';
 </script>

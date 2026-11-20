@@ -22,12 +22,7 @@
         <button
           type="button"
           class="btn btn-secondary btn-lg"
-          style="
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-padding-y: 0.5rem;
-            --bs-btn-line-height: 1;
-            --bs-btn-border-radius: 50%;
-          "
+          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
           aria-label="Close"
           @click="visible = false"
         >

@@ -20,13 +20,7 @@
           type="button"
           :disabled="disabled"
           class="btn btn-secondary d-none d-lg-block"
-          style="
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-padding-y: 0.5rem;
-            --bs-btn-line-height: 1;
-            --bs-btn-border-radius: 50%;
-            cursor: move;
-          "
+          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%; cursor: move"
           @mousedown="handleStart"
           @mouseup="handleEnd"
         >
@@ -36,36 +30,17 @@
           type="button"
           :disabled="disabled"
           class="btn btn-secondary ms-auto"
-          style="
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-padding-y: 0.5rem;
-            --bs-btn-line-height: 1;
-            --bs-btn-border-radius: 50%;
-          "
+          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
           @click.stop="handleRemove(index)"
         >
           <bi-trash />
         </button>
       </div>
     </div>
-    <button
-      type="button"
-      :disabled="disabled"
-      class="btn btn-image-uploader"
-      :style="{ width: width, height: height }"
-      @click="openImageDialog"
-    >
+    <button type="button" :disabled="disabled" class="btn btn-image-uploader" :style="{ width: width, height: height }" @click="openImageDialog">
       <bi-plus-lg class="fs-3" />
     </button>
-    <input
-      ref="fileRef"
-      type="file"
-      multiple
-      name="file"
-      style="display: none"
-      accept="image/*"
-      @change="handleChange"
-    />
+    <input ref="fileRef" type="file" multiple name="file" style="display: none" accept="image/*" @change="handleChange" />
   </div>
   <slot v-if="$slots.tip" name="tip"></slot>
 </template>
