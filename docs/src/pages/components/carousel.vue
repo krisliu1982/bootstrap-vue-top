@@ -118,7 +118,7 @@ const slides = [
 
 const baseCode = `
 <template>
-  <bs-carousel :items="slides"></bs-carousel>
+  <bv-carousel :items="slides"></bv-carousel>
 </template>
 
 <script setup>

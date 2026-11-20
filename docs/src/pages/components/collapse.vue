@@ -9,7 +9,7 @@
   <div v-scrollspy.body data-bs-target="#docs-nav-collapse" class="docs-content">
     <h1>Collapse 折叠</h1>
     <p class="fs-4 fw-light">
-      使用 <code>v-collapse</code> 指令激活折叠。了解更多请阅读
+      使用少量类和我们的 JavaScript 插件，即可在整个项目中切换内容的可见性。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/components/collapse/" target="_blank">Bootstrap Collapse</a>
     </p>
 
@@ -25,14 +25,14 @@
     <p>
       通常，我们建议使用带有 <code>data-bs-target</code> 属性的
       <code>&lt;button&gt;</code>。虽然从语义的角度来看并不推荐，但您也可以使用带有 <code>href</code> 属性（以及
-      <code>role="button"</code>）的 <code>&lt;a&gt;</code> 链接。在这两种情况下，都需要设置 <code>v-collapse</code>。
+      <code>role="button"</code>）的 <code>&lt;a&gt;</code> 链接。在这两种情况下，都需要 <code>data-bs-toggle="collapse"</code>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <p class="d-inline-flex gap-1">
           <a
             class="btn btn-primary"
-            v-collapse
+            data-bs-toggle="collapse"
             href="#collapseExample"
             role="button"
             aria-expanded="false"
@@ -43,7 +43,7 @@
           <button
             class="btn btn-primary"
             type="button"
-            v-collapse
+            data-bs-toggle="collapse"
             data-bs-target="#collapseExample"
             aria-expanded="false"
             aria-controls="collapseExample"
@@ -73,7 +73,7 @@
           <button
             class="btn btn-primary"
             type="button"
-            v-collapse
+            data-bs-toggle="collapse"
             data-bs-target="#collapseWidthExample"
             aria-expanded="false"
             aria-controls="collapseWidthExample"
@@ -119,10 +119,10 @@
 const example1Code = `
 <template>
     <p class="d-inline-flex gap-1">
-        <a class="btn btn-primary" v-collapse href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             Link with href
         </a>
-        <button class="btn btn-primary" type="button" v-collapse data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Button with data-bs-target
         </button>
     </p>
@@ -139,7 +139,7 @@ const example1Code = `
 const example2Code = `
 <template>
     <p>
-        <button class="btn btn-primary" type="button" v-collapse data-bs-target="#collapseWidthExample"
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
             aria-expanded="false" aria-controls="collapseWidthExample">
             Toggle width collapse
         </button>

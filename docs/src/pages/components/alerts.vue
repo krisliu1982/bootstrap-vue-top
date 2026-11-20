@@ -144,14 +144,14 @@
       </li>
       <li>
         在关闭按钮上，添加
-        <code>data-bs-dismiss="alert"</code> 属性，该属性会触发 <code>v-alert</code> 指令关闭功能。请务必使用
+        <code>data-bs-dismiss="alert"</code> 属性，以触发 JavaScript 功能。请务必使用
         <code>&lt;button&gt;</code> 元素，以确保在所有设备上都能正常工作。
       </li>
       <li>要在关闭警示时为其设置动画效果，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
     </ul>
     <div class="docs-example">
       <div class="docs-example-data">
-        <div v-alert class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -240,7 +240,7 @@ const iconCode = `
 
 const dismissCode = `
 <template>
-  <div v-alert class="alert alert-warning alert-dismissible fade show" role="alert">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Holy guacamole!</strong> You should check in on some of those fields below.
       <button type="button" class="btn-close" 
         data-bs-dismiss="alert" aria-label="Close"></button>
