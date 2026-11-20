@@ -481,7 +481,7 @@ dataSpyList.forEach(dataSpyEl =&gt; {
       </table>
     </div>
     <CodeWrapper
-      code='const firstScrollSpyEl = articleEl.querySelector(&#39;[data-bs-spy="scroll"]&#39;)
+      code='const firstScrollSpyEl = document.querySelector(&#39;[data-bs-spy="scroll"]&#39;)
 firstScrollSpyEl.addEventListener(&#39;activate.bs.scrollspy&#39;, () =&gt; {
   // do something...
 })

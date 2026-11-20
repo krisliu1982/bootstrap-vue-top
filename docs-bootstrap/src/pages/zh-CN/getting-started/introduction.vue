@@ -161,7 +161,7 @@
 
     <p>在 <a href="https://css-tricks.com/box-sizing/">CSS Tricks 了解有关盒模型和尺寸计算的更多内容</a> 。</p>
 
-    <h3 id="reboot">重启动（Reboot）<a class="anchor-link" href="#reboot" aria-label="重启动（Reboot）"></a></h3>
+    <h3 id="reboot">重置（Reboot）<a class="anchor-link" href="#reboot" aria-label="重置（Reboot）"></a></h3>
 
     <p>为了改善跨浏览器渲染效果，我们使用 <a href="/content/reboot">Reboot</a> 来修正不同浏览器和设备之间的不一致，同时为常见 HTML 元素提供 稍微更具倾向性的重置样式。</p>
 
@@ -198,7 +198,7 @@
           <li><a href="#html5-doctype">HTML5 文档类型</a></li>
           <li><a href="#viewport-meta">视口 meta 标签</a></li>
           <li><a href="#box-sizing">盒模型（Box-sizing）</a></li>
-          <li><a href="#reboot">重启动（Reboot）</a></li>
+          <li><a href="#reboot">重置（Reboot）</a></li>
         </ul>
       </li>
       <li><a href="#community">社区</a></li>
