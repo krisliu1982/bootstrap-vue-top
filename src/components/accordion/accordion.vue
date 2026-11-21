@@ -11,7 +11,7 @@
             data-bs-toggle="collapse"
             :data-bs-target="`#${item.keyId}`"
             :aria-expanded="initActiveIndex === index"
-            :aria-controls="`#${item.keyId}`"
+            :aria-controls="`${item.keyId}`"
           >
             {{ item.header }}
           </button>
@@ -34,7 +34,6 @@
 <script setup>
 import { useSlots, ref, provide, onMounted, useId } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
-import { Collapse } from 'bootstrap';
 
 const ready = ref(false);
 const id = useId();
@@ -74,7 +73,7 @@ function _initItems() {
   }
 
   for (let i = 0; i < items.length; i++) {
-    if (itemVNodes[i].children !== null && itemVNodes[i].children.default !== 'undefined') {
+    if (itemVNodes[i].children !== null && itemVNodes[i].children.default !== undefined) {
       items[i].body = itemVNodes[i].children.default;
     } else {
       items[i].body = null;
