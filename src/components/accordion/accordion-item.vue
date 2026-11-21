@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onBeforeUnmount, useId, useSlots } from 'vue';
+import { inject, onBeforeUnmount, useId, useSlots } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
 
 const props = defineProps({

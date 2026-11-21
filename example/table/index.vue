@@ -89,7 +89,7 @@
     表格 Caption 的作用类似于表格的标题。它帮助使用屏幕阅读器的用户找到表格，了解表格的内容，并决定是否要阅读它。Caption 默认在表格底部，如果置于表格上部，添加 <code>.caption-top</code> 样式类到
     <code>table-class</code> 属性上。
   </p>
-  <DataSort />
+  <TableCaption />
 
   <h2>垂直对齐</h2>
   <p>
@@ -113,6 +113,7 @@ import RadioRow from './radio-row.vue';
 import SmallTable from './small-table.vue';
 import StripedColumns from './striped-columns.vue';
 import StripedRows from './striped-rows.vue';
+import TableCaption from './table-caption.vue';
 import TfootData from './tfoot-data.vue';
 import TheadFixed from './thead-fixed.vue';
 import VerticalAlign from './vertical-align.vue';
