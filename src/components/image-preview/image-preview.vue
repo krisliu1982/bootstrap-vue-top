@@ -1,31 +1,21 @@
 <template>
-  <Transition name="bv-fadeIn" @after-leave="$emit('destroy')">
+  <Transition name="bv-fadeIn" appear @after-leave="$emit('destroy')">
     <div v-show="visible" ref="elementRef" class="bv-image-preview" tabindex="-1" role="dialog" aria-modal="true">
       <div class="d-flex w-100 h-100 justify-content-center align-items-center user-select-none">
-        <img
-          :src="props.data[index]"
-          class="mw-100 mh-100"
-          @load="handleLoad(index)"
-          @error="handleError"
-          :style="{ transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})` }"
-          @mousedown="startDrag"
-          @touchstart="startDragTouch"
-          draggable="false"
-        />
+        <img :src="currentSrc" class="mw-100 mh-100" @load="handleLoad" @error="handleError" :style="{
+          transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})`,
+          opacity: isLoading ? 0 : 1,
+          transition: 'opacity 0.3s'
+        }" @mousedown="startDrag" @touchstart="startDragTouch" draggable="false" />
       </div>
-      <div v-if="isLoading" class="position-absolute top-50 translate-middle-y start-50 translate-middle-x">
-        <div class="spinner-grow" style="width: 3rem; height: 3rem" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+      <div v-show="isLoading" class="spinner-grow position-absolute top-50 start-50 translate-middle"
+        style="width: 3rem; height: 3rem" role="status">
+        <span class="visually-hidden">Loading...</span>
       </div>
       <div class="position-absolute" style="top: 2rem; right: 2rem">
-        <button
-          type="button"
-          class="btn btn-secondary btn-lg"
+        <button type="button" class="btn btn-secondary btn-lg"
           style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
-          aria-label="Close"
-          @click="visible = false"
-        >
+          aria-label="Close" @click="visible = false">
           <bi-x-lg />
         </button>
       </div>
@@ -61,16 +51,16 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref, shallowRef, nextTick } from 'vue';
+import { onMounted, onBeforeUnmount, ref, shallowRef, nextTick, computed } from 'vue';
 import { createFocusTrap } from 'focus-trap';
-
-const elementRef = shallowRef(null);
-let focusTrapInstance = null;
 
 const props = defineProps({
   data: {
     type: Array,
-    default: []
+    required: true,
+    validator(value) {
+      return Array.isArray(value) && value.length >= 1;
+    }
   },
   initIndex: {
     type: Number,
@@ -78,23 +68,41 @@ const props = defineProps({
   }
 });
 
-const visible = ref(false);
-const index = ref(props.initIndex);
+
+const elementRef = shallowRef(null);
+let focusTrapInstance = null;
+
+const visible = ref(true);
+const maxIndex = Math.max(props.data.length - 1, 0);
+const index = ref(Math.min(Math.max(props.initIndex, 0), maxIndex));
 
 const isLoading = ref(false); //图片加载中
 const cache = new Map(); //图片缓存
 
+const errorIndex = ref(null);
+const PLACEHOLDER = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23f5f5f5%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3E图片加载失败%3C/text%3E%3C/svg%3E';
+const currentSrc = computed(() => {
+  if (errorIndex.value === index.value) return PLACEHOLDER;
+  return props.data[index.value];
+});
+
+let savedOverflow = null;
+let savedPaddingRight = null;
 onMounted(() => {
+  savedOverflow = document.body.style.overflow;
+  savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${window.innerWidth - document.body.clientWidth}px`;
   }
-  visible.value = true;
 
   nextTick(() => {
     //焦点陷阱
     if (elementRef.value !== null) {
       focusTrapInstance = createFocusTrap(elementRef.value, {
-        initialFocus: false
+        initialFocus: false,
+        fallbackFocus: elementRef.value,
+        escapeDeactivates: false
       });
       focusTrapInstance.activate();
     }
@@ -107,9 +115,8 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style = null;
-  }
+  document.body.style.overflow = savedOverflow;
+  document.body.style.paddingRight = savedPaddingRight;
 
   //停止焦点陷阱
   if (focusTrapInstance !== null) {
@@ -120,13 +127,9 @@ onBeforeUnmount(() => {
   document.removeEventListener('keydown', handleKeyDown);
 });
 
-function confirm() {
-  visible.value = false;
-}
-
 function handleKeyDown(event) {
   if (event.key === 'Escape') {
-    confirm();
+    visible.value = false;
   }
 }
 
@@ -151,24 +154,21 @@ function next() {
 }
 
 function goto(_index) {
-  if (cache.has(_index)) {
-    isLoading.value = false;
-  } else {
-    isLoading.value = true;
-  }
 
   reset();
+
+  isLoading.value = !cache.has(_index);
+
 }
 
-const handleLoad = (_index) => {
+const handleLoad = () => {
   isLoading.value = false;
-  cache.set(_index, props.data[_index]);
+  cache.set(index.value, props.data[index.value]);
 };
 
-const handleError = (event) => {
+const handleError = () => {
   isLoading.value = false;
-  event.target.src =
-    'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23f5f5f5%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3E图片加载失败%3C/text%3E%3C/svg%3E';
+  errorIndex.value = index.value;
 };
 
 // 图片状态
@@ -225,7 +225,7 @@ const startDragTouch = (e) => {
   startOffsetX = offsetX.value;
   startOffsetY = offsetY.value;
 
-  document.addEventListener('touchmove', onDragTouch);
+  document.addEventListener('touchmove', onDragTouch, { passive: false });
   document.addEventListener('touchend', endDragTouch);
   document.addEventListener('touchcancel', endDragTouch);
 };

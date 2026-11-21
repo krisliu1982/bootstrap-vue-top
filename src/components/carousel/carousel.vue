@@ -6,9 +6,9 @@
       </template>
     </div>
     <div class="carousel-inner">
-      <template v-for="(item, index) in items" :key="index">
+      <template v-for="(item, index) in props.items" :key="index">
         <div class="carousel-item" :class="{ active: index === 0 }">
-          <img :src="item.image" class="d-block w-100" />
+          <img :src="item.image" class="d-block w-100" :alt="item.title ?? ''"/>
           <div class="carousel-caption">
             <h5>{{ item.title }}</h5>
             <p>{{ item.description }}</p>
@@ -33,7 +33,6 @@
 import { useId, onMounted, onBeforeUnmount } from 'vue';
 import { Carousel } from 'bootstrap';
 
-const id = useId();
 const props = defineProps({
   items: {
     type: Array,
@@ -77,9 +76,10 @@ const props = defineProps({
   }
 });
 
+const id = useId();
+
 let carousel = null;
 onMounted(() => {
-  if (carousel === null) {
     carousel = new Carousel(`#${id}`, {
       interval: props.interval,
       keyboard: props.keyboard,
@@ -88,7 +88,6 @@ onMounted(() => {
       touch: props.touch,
       wrap: props.wrap
     });
-  }
 });
 
 onBeforeUnmount(() => {

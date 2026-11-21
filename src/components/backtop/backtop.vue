@@ -1,17 +1,16 @@
 <template>
   <Teleport to="body">
-    <transition name="bv-fadeIn">
-      <a v-if="visible" href="#" role="button" class="bv-backtop" @click.prevent="handleClick">
+    <Transition name="bv-fadeIn">
+      <a v-if="visible" role="button" class="bv-backtop" @click="handleClick" aria-label="返回顶部">
         <BiArrowUpCircleFill :class="backtopClass" />
       </a>
-    </transition>
+    </Transition>
   </Teleport>
 </template>
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 
-const visible = ref(false);
 
 const props = defineProps({
   color: {
@@ -30,6 +29,8 @@ const props = defineProps({
   }
 });
 
+const visible = ref(false);
+
 const backtopClass = computed(() => {
   const classList = [`text-${props.color}`];
   if (props.size === 'md') {
@@ -44,15 +45,22 @@ const backtopClass = computed(() => {
 });
 
 onMounted(() => {
-  document.addEventListener('scroll', handleScroll);
+  handleScroll();
+  document.addEventListener('scroll', handleScroll, { passive: true });
 });
 
 onBeforeUnmount(() => {
   document.removeEventListener('scroll', handleScroll);
 });
 
+let ticking = false;
 function handleScroll() {
-  visible.value = document.documentElement.scrollTop >= 200;
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    visible.value = document.documentElement.scrollTop >= 200;
+    ticking = false;
+  });
 }
 
 function handleClick() {

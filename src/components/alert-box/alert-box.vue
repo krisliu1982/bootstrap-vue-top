@@ -21,9 +21,6 @@
 import { onMounted, onBeforeUnmount, ref, shallowRef, nextTick } from 'vue';
 import { createFocusTrap } from 'focus-trap';
 
-const elementRef = shallowRef(null);
-let focusTrapInstance = null;
-
 const props = defineProps({
   message: {
     type: String,
@@ -31,10 +28,13 @@ const props = defineProps({
   }
 });
 
+const elementRef = shallowRef(null);
+let focusTrapInstance = null;
+
 const visible = ref(true);
 
-let savedOverflow = '';
-let savedPaddingRight = '';
+let savedOverflow = null;
+let savedPaddingRight = null;
 onMounted(() => {
   savedOverflow = document.body.style.overflow;
   savedPaddingRight = document.body.style.paddingRight;

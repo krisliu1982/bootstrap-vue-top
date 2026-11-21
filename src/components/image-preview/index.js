@@ -10,6 +10,7 @@ const imagePreview = function (data, initIndex) {
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(ImagePreview, {
     data: data,
@@ -22,8 +23,6 @@ const imagePreview = function (data, initIndex) {
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default imagePreview;
