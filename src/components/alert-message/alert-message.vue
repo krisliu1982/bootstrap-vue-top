@@ -35,7 +35,7 @@ const props = defineProps({
   }
 });
 
-const visible = ref(false);
+const visible = ref(true);
 
 const className = computed(() => {
   return `text-bg-${props.type}`;
@@ -43,7 +43,6 @@ const className = computed(() => {
 
 onMounted(() => {
   startTimer();
-  visible.value = true;
 });
 
 function close() {

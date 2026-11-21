@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onBeforeUnmount, useId } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId, useSlots } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
 
 const props = defineProps({
@@ -11,14 +11,12 @@ const props = defineProps({
 });
 
 const items = inject(items_injection_key);
+
+const slots = useSlots();
 const keyId = useId();
-onMounted(() => {
-  const item = {
-    keyId: keyId,
-    header: props.header
-  };
-  items.push(item);
-});
+
+const body = slots.default ? () => slots.default() : null;
+items.push({ keyId, header: props.header, body });
 
 onBeforeUnmount(() => {
   const index = items.findIndex((item) => item.keyId === keyId);

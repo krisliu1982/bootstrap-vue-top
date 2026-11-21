@@ -1,37 +1,29 @@
 <template>
   <div :id="id" class="accordion" :class="props.accordionClass">
+    <!-- 必须保留：AccordionItem 实例化后才会把数据注册进 items -->
     <slot></slot>
-    <template v-if="ready">
-      <div v-for="(item, index) in items" class="accordion-item" :key="item.keyId">
-        <h2 class="accordion-header">
-          <button
-            type="button"
-            class="accordion-button"
-            :class="{ collapsed: props.initActiveIndex !== index }"
-            data-bs-toggle="collapse"
-            :data-bs-target="`#${item.keyId}`"
-            :aria-expanded="props.initActiveIndex === index"
-            :aria-controls="`#${item.keyId}`"
-          >
-            {{ item.header }}
-          </button>
-        </h2>
-        <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: props.initActiveIndex === index }" :data-bs-parent="always ? null : `#${id}`">
-          <div class="accordion-body">
-            <component :is="item.body" />
-          </div>
+    <div v-for="(item, index) in items" class="accordion-item" :key="item.keyId">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" :class="{ collapsed: props.initActiveIndex !== index }"
+          data-bs-toggle="collapse" :data-bs-target="`#${item.keyId}`" :aria-expanded="props.initActiveIndex === index"
+          :aria-controls="`${item.keyId}`">
+          {{ item.header }}
+        </button>
+      </h2>
+      <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: props.initActiveIndex === index }"
+        :data-bs-parent="props.always ? null : `#${id}`">
+        <div class="accordion-body">
+          <component :is="item.body" />
         </div>
       </div>
-    </template>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted, useId } from 'vue';
+import { provide, reactive, useId } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
 
-const ready = ref(false);
-const id = useId();
 const props = defineProps({
   accordionClass: {
     type: String,
@@ -47,32 +39,11 @@ const props = defineProps({
   }
 });
 
-const items = [];
+
+
+const id = useId();
+
+// 子项增删自动驱动 v-for 更新
+const items = reactive([]);
 provide(items_injection_key, items);
-
-onMounted(() => {
-  _initItems();
-
-  ready.value = true;
-});
-
-function _initItems() {
-  const slots = useSlots();
-  const vNodes = slots.default();
-
-  const itemVNodes = [];
-  for (const vNode of vNodes) {
-    if (vNode.type.__name === 'accordion-item') {
-      itemVNodes.push(vNode);
-    }
-  }
-
-  for (let i = 0; i < items.length; i++) {
-    if (itemVNodes[i].children !== null && itemVNodes[i].children.default !== 'undefined') {
-      items[i].body = itemVNodes[i].children.default;
-    } else {
-      items[i].body = null;
-    }
-  }
-}
 </script>

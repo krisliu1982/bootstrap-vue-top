@@ -10,6 +10,7 @@ const alertMessage = function (data) {
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(AlertMessage, {
     type: data.type,
@@ -23,8 +24,6 @@ const alertMessage = function (data) {
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default alertMessage;

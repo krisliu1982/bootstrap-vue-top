@@ -10,10 +10,11 @@ const alertConfirm = function (data) {
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(AlertConfirm, {
     message: data.message,
-    callback: data.confirm,
+    callback: typeof data.confirm === 'function' ? data.confirm : () => {},
     onDestroy: () => {
       render(null, container);
       container.remove();
@@ -22,8 +23,6 @@ const alertConfirm = function (data) {
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default alertConfirm;

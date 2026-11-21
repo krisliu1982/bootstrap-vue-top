@@ -31,19 +31,24 @@ const props = defineProps({
   }
 });
 
-const visible = ref(false);
+const visible = ref(true);
 
+let savedOverflow = '';
+let savedPaddingRight = '';
 onMounted(() => {
+  savedOverflow = document.body.style.overflow;
+  savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${window.innerWidth - document.body.clientWidth}px`;
   }
-  visible.value = true;
 
   nextTick(() => {
     //焦点陷阱
     if (elementRef.value !== null) {
       focusTrapInstance = createFocusTrap(elementRef.value, {
-        initialFocus: false
+        initialFocus: false,
+        fallbackFocus: elementRef.value
       });
       focusTrapInstance.activate();
     }
@@ -51,9 +56,8 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style = null;
-  }
+  document.body.style.overflow = savedOverflow;
+  document.body.style.paddingRight = savedPaddingRight;
 
   //停止焦点陷阱
   if (focusTrapInstance !== null) {
