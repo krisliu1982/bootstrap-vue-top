@@ -7,7 +7,7 @@
   <BasicUsage />
 
   <h2>淡入淡出</h2>
-  <p>添加 <code>carousel-fade</code> 样式类到 <code>carousel-class</code> 属性上。</p>
+  <p>添加 <code>.carousel-fade</code> 样式类到 <code>carousel-class</code> 属性上。</p>
   <FadeInOut />
 
   <h2>自动播放</h2>

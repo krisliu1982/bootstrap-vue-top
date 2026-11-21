@@ -30,6 +30,9 @@ import Offcanvas from './offcanvas/index.vue';
 import Pagination from './pagination/index.vue';
 import Popover from './popover/index.vue';
 import Table from './table/index.vue';
+import Tabs from './tabs/index.vue';
+import Toast from './toast/index.vue';
+import Tooltip from './tooltip/index.vue';
 
 const currentTab = ref(0);
 const tabs = [
@@ -88,6 +91,18 @@ const tabs = [
   {
     name: 'Table',
     component: Table
+  },
+  {
+    name: 'Tabs',
+    component: Tabs
+  },
+  {
+    name: 'Toast',
+    component: Toast
+  },
+  {
+    name: 'Tooltip',
+    component: Tooltip
   }
 ];
 </script>

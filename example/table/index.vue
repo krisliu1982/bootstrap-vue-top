@@ -70,7 +70,7 @@
   <ContentTruncate />
 
   <h2>表头固定</h2>
-  <p>表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>position-sticky top-0</code> 样式类到表格 <code>thead-class</code> 属性 。</p>
+  <p>表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>.position-sticky</code> 和 <code>.top-0</code> 样式类到表格 <code>thead-class</code> 属性 。</p>
   <TheadFixed />
 
   <h2>横向滚动</h2>
@@ -86,14 +86,14 @@
 
   <h2>表格标题</h2>
   <p>
-    表格 Caption 的作用类似于表格的标题。它帮助使用屏幕阅读器的用户找到表格，了解表格的内容，并决定是否要阅读它。Caption 默认在表格底部，如果置于表格上部，添加 <code>caption-top</code> 样式类到
+    表格 Caption 的作用类似于表格的标题。它帮助使用屏幕阅读器的用户找到表格，了解表格的内容，并决定是否要阅读它。Caption 默认在表格底部，如果置于表格上部，添加 <code>.caption-top</code> 样式类到
     <code>table-class</code> 属性上。
   </p>
   <DataSort />
 
   <h2>垂直对齐</h2>
   <p>
-    添加 <code>align-middle</code> 样式类到 <code>table-class</code> 属性上。 如有需要，可使用 <a href="https://bs53.bootstrap-vue.top/utilities/vertical-align">vertical-align</a> 工具类来重新对齐。
+    添加 <code>.align-middle</code> 样式类到 <code>table-class</code> 属性上。 如有需要，可使用 <a href="https://bs53.bootstrap-vue.top/utilities/vertical-align">vertical-align</a> 工具类来重新对齐。
   </p>
   <VerticalAlign />
 </template>

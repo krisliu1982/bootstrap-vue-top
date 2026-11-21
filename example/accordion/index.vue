@@ -13,7 +13,7 @@
   <BasicUsage />
 
   <h2>齐平样式</h2>
-  <p>添加 <code>accordion-flush</code> 样式类到 <code>accordion-class</code> 属性上。</p>
+  <p>添加 <code>.accordion-flush</code> 样式类到 <code>accordion-class</code> 属性上。</p>
   <FlushStyle />
 
   <h2>保持打开</h2>
