@@ -1,5 +1,5 @@
 <template>
-  <Transition name="bv-fadeIn" @after-leave="$emit('destroy')">
+  <Transition name="bv-fadeIn" appear @after-leave="$emit('destroy')">
     <div ref="elementRef" v-show="visible" class="bv-alert-confirm d-flex justify-content-center align-items-start"
       tabindex="-1" role="alertdialog" aria-modal="true" :aria-label="props.message">
       <div class="shadow rounded bg-body p-3 col-10 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">

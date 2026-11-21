@@ -21,24 +21,39 @@ $zindex-alert: 1130;
 @import 'uploader.scss';
 
 .bv-fadeIn-enter-active,
-.fadeIn-leave-active {
+.bv-fadeIn-leave-active {
   transition: opacity 0.3s ease;
 }
 
 .bv-fadeIn-enter-from,
-.fadeIn-leave-to {
+.bv-fadeIn-leave-to {
   opacity: 0;
+}
+
+/* 用户偏好减少动态：关掉过渡 */
+@media (prefers-reduced-motion: reduce) {
+  .bv-fadeIn-enter-active,
+  .bv-fadeIn-leave-active {
+    transition: none;
+  }
 }
 
 .bv-fadeInDown-enter-active,
 .bv-fadeInDown-leave-active {
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .bv-fadeInDown-enter-from,
 .bv-fadeInDown-leave-to {
   opacity: 0;
   transform: translateY(-60px);
+}
+
+/* 用户偏好减少动态：关掉过渡 */
+@media (prefers-reduced-motion: reduce) {
+
+  .bv-fadeInDown-enter-active,
+  .bv-fadeInDown-leave-active {
+    transition: none;
+  }
 }
