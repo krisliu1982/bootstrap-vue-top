@@ -26,7 +26,9 @@ import ImagePreview from './image-preview/index.vue';
 import Loading from './loading/index.vue';
 import Modal from './modal/index.vue';
 import Modal2 from './modal2/index.vue';
-import Pagination from './/pagination/index.vue';
+import Offcanvas from './offcanvas/index.vue';
+import Pagination from './pagination/index.vue';
+import Popover from './popover/index.vue';
 import Table from './table/index.vue';
 
 const currentTab = ref(0);
@@ -72,8 +74,16 @@ const tabs = [
     component: Modal2
   },
   {
+    name: 'Offcanvas',
+    component: Offcanvas
+  },
+  {
     name: 'Pagination',
     component: Pagination
+  },
+  {
+    name: 'Popover',
+    component: Popover
   },
   {
     name: 'Table',
