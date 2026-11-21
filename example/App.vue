@@ -33,6 +33,8 @@ import Table from './table/index.vue';
 import Tabs from './tabs/index.vue';
 import Toast from './toast/index.vue';
 import Tooltip from './tooltip/index.vue';
+import Tree from './tree/index.vue';
+import TreeTable from './tree-table/index.vue';
 
 const currentTab = ref(0);
 const tabs = [
@@ -103,6 +105,14 @@ const tabs = [
   {
     name: 'Tooltip',
     component: Tooltip
+  },
+  {
+    name: 'Tree',
+    component: Tree
+  },
+  {
+    name: 'TreeTable',
+    component: TreeTable
   }
 ];
 </script>
