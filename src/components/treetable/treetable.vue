@@ -104,7 +104,7 @@ function _initCols() {
   }
 
   for (let i = 0; i < cols.length; i++) {
-    if (colVNodes[i].children !== null && colVNodes[i].children.body !== 'undefined') {
+    if (colVNodes[i].children !== null && colVNodes[i].children.body !== undefined) {
       cols[i].body = colVNodes[i].children.body;
     } else {
       cols[i].body = null;

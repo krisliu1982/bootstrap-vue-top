@@ -222,7 +222,7 @@ function _initPanes() {
   }
 
   for (let i = 0; i < panes.length; i++) {
-    if (paneVNodes[i].children !== null && paneVNodes[i].children.default !== 'undefined') {
+    if (paneVNodes[i].children !== null && paneVNodes[i].children.default !== undefined) {
       panes[i].body = paneVNodes[i].children.default;
     } else {
       panes[i].body = null;
