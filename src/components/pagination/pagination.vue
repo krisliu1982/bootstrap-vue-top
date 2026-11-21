@@ -60,27 +60,17 @@
       </li>
     </ul>
 
-    <select
-      v-if="props.mode === 'full'"
-      class="form-select col-auto"
-      :class="pageSizeClass"
-      style="width: 8rem"
-      :value="props.pageSize"
-      @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))"
-    >
+    <select v-if="props.mode === 'full'" class="form-select col-auto" :class="pageSizeClass" style="width: 8rem"
+      :value="props.pageSize" @change="(event) => emit('sizeChange', parseInt(event.currentTarget.value))">
       <option v-for="item in [10, 20, 50, 100]" :value="item">{{ item }}条/页</option>
     </select>
 
-    <div v-if="props.mode === 'full' && pages > props.pagerCount" class="col-auto input-group" :class="pageGoClass" style="width: 8rem">
+    <div v-if="props.mode === 'full' && pages > props.pagerCount" class="col-auto input-group" :class="pageGoClass"
+      style="width: 8rem">
       <span class="input-group-text">Go</span>
-      <input
-        class="form-control"
-        type="number"
-        title="输入页码回车"
-        oninput="this.value = Math.min(999, Math.max(1, this.value))"
-        onblur="this.value = null"
-        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))"
-      />
+      <input class="form-control" type="number" title="输入页码回车"
+        oninput="this.value = Math.min(999, Math.max(1, this.value))" onblur="this.value = null"
+        @keyup.enter="(event) => emit('currentChange', parseInt(event.currentTarget.value))" />
     </div>
   </nav>
 </template>
@@ -170,15 +160,14 @@ const pages = computed(() => {
 const showPrevMore = ref(false);
 const showNextMore = ref(false);
 
-const pagerCount = props.pagerCount;
 const pagers = computed(() => {
-  const halfPagerCount = (pagerCount - 1) / 2;
+  const halfPagerCount = (props.pagerCount - 1) / 2;
   const currentPage = props.currentPage;
   const pageCount = pages.value;
   let prevMore = false;
   let nextMore = false;
-  if (pageCount > pagerCount) {
-    if (currentPage > pagerCount - halfPagerCount) {
+  if (pageCount > props.pagerCount) {
+    if (currentPage > props.pagerCount - halfPagerCount) {
       prevMore = true;
     }
     if (currentPage < pageCount - halfPagerCount) {
@@ -187,16 +176,16 @@ const pagers = computed(() => {
   }
   const array = [];
   if (prevMore && !nextMore) {
-    const startPage = pageCount - (pagerCount - 2);
+    const startPage = pageCount - (props.pagerCount - 2);
     for (let i = startPage; i < pageCount; i++) {
       array.push(i);
     }
   } else if (!prevMore && nextMore) {
-    for (let i = 2; i < pagerCount; i++) {
+    for (let i = 2; i < props.pagerCount; i++) {
       array.push(i);
     }
   } else if (prevMore && nextMore) {
-    const offset = Math.floor(pagerCount / 2) - 1;
+    const offset = Math.floor(props.pagerCount / 2) - 1;
     for (let i = currentPage - offset; i <= currentPage + offset; i++) {
       array.push(i);
     }
@@ -209,11 +198,11 @@ const pagers = computed(() => {
 });
 
 watchEffect(() => {
-  const halfPagerCount = (pagerCount - 1) / 2;
+  const halfPagerCount = (props.pagerCount - 1) / 2;
   showPrevMore.value = false;
   showNextMore.value = false;
-  if (pages.value > pagerCount) {
-    if (props.currentPage > pagerCount - halfPagerCount) {
+  if (pages.value > props.pagerCount) {
+    if (props.currentPage > props.pagerCount - halfPagerCount) {
       showPrevMore.value = true;
     }
     if (props.currentPage < pages.value - halfPagerCount) {

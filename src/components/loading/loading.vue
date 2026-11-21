@@ -12,9 +12,8 @@
 </template>
 
 <script setup>
-import { shallowRef, watch } from 'vue';
+import { shallowRef, watch, onBeforeUnmount } from 'vue';
 
-const elementRef = shallowRef(null);
 
 const props = defineProps({
   loading: {
@@ -22,6 +21,15 @@ const props = defineProps({
     default: false
   }
 });
+
+const elementRef = shallowRef(null);
+
+const tabHandler = (e) => {
+  if (e.key === 'Tab' && elementRef.value) {
+    e.preventDefault();
+    elementRef.value.focus();
+  }
+};
 
 watch(
   () => props.loading,
@@ -31,13 +39,11 @@ watch(
     } else {
       document.removeEventListener('keydown', tabHandler);
     }
-  }
+  },
+  { immediate: true }
 );
 
-const tabHandler = (e) => {
-  if (e.key === 'Tab') {
-    e.preventDefault();
-    elementRef.value.focus();
-  }
-};
+onBeforeUnmount(() => {
+  document.removeEventListener('keydown', tabHandler);
+});
 </script>

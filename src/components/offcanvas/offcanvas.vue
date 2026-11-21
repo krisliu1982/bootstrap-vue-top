@@ -1,5 +1,6 @@
 <template>
-  <div :class="props.offcanvasClass" :style="props.offcanvasStyle" tabindex="-1" :id="id" :aria-labelledby="`${id}Label`">
+  <div :class="props.offcanvasClass" :style="props.offcanvasStyle" tabindex="-1" :id="id" role="dialog" aria-modal="true"
+    :aria-labelledby="`${id}Label`">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" :id="`${id}Label`">{{ props.title }}</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" :data-bs-target="`#${id}`"
@@ -39,7 +40,6 @@ const props = defineProps({
 
 let offcanvas = null;
 onMounted(() => {
-  if (offcanvas === null) {
     const offcanvasEl = document.getElementById(id);
     offcanvas = new Offcanvas(offcanvasEl, {
       backdrop: props.backdrop
@@ -48,7 +48,6 @@ onMounted(() => {
     offcanvasEl.addEventListener('shown.bs.offcanvas', (event) => {
       emit('offcanvas-shown');
     });
-  }
 });
 
 onBeforeUnmount(() => {
