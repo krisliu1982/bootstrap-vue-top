@@ -75,7 +75,7 @@
 </template>
 
 <script setup>
-import { provide, reactive, onBeforeUnmount, onMounted } from 'vue';
+import { provide, reactive, onMounted } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
 import { Tab } from 'bootstrap';
 
@@ -105,27 +105,9 @@ const panes = reactive([]);
 provide(panes_injection_key, panes);
 
 onMounted(() => {
-
-  panes[props.activeIndex].lazy = false;
-
-  panes.forEach((pane) => {
-    const tabEl = document.getElementById(`${pane.keyId}-tab`);
-    if (tabEl) {
-      new Tab(tabEl)
-    }
-  });
-
+  const activePane = panes[props.activeIndex];
+  if (activePane) activePane.lazy = false;
 })
-
-onBeforeUnmount(() => {
-  panes.forEach((pane) => {
-    const tabEl = document.getElementById(`${pane.keyId}-tab`);
-    if (tabEl) {
-      const tabInstance = Tab.getInstance(tabEl);
-      if (tabInstance) tabInstance.dispose();
-    }
-  });
-});
 
 function handleTabClick(pane, index) {
   if (pane.disabled) return;

@@ -1,7 +1,8 @@
 <template></template>
 <script setup>
-import { inject, onBeforeUnmount, useId, useSlots } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId, useSlots } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
+import { Tab } from 'bootstrap';
 
 const props = defineProps({
   label: {
@@ -33,7 +34,19 @@ panes.push({
   body
 });
 
+onMounted(() => {
+  const tabEl = document.getElementById(`${keyId}-tab`);
+  if (tabEl) new Tab(tabEl);
+});
+
 onBeforeUnmount(() => {
+  
+  const tabEl = document.getElementById(`${keyId}-tab`);
+  if (tabEl) {
+    const tabInstance = Tab.getInstance(tabEl);
+    if (tabInstance) tabInstance.dispose();
+  }
+
   const index = panes.findIndex((item) => item.keyId === keyId);
   if (index !== -1) {
     panes.splice(index, 1);
