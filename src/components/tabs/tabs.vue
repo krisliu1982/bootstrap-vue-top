@@ -1,109 +1,84 @@
 <template>
   <slot></slot>
-  <template v-if="ready">
-    <template v-if="props.position === 'top'">
-      <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
-        <button
-          v-for="pane in panes"
-          type="button"
-          class="nav-link"
-          :id="`${pane.keyId}-tab`"
-          :data-bs-target="`#${pane.keyId}`"
-          role="tab"
-          :aria-controls="pane.keyId"
-          aria-selected="false"
-          :disabled="pane.disabled"
-        >
+  <template v-if="props.position === 'top'">
+    <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
+      <button v-for="pane, index in panes" type="button" class="nav-link"
+        :class="{ 'active': index === props.activeIndex }" :id="`${pane.keyId}-tab`" :data-bs-target="`#${pane.keyId}`"
+        role="tab" :aria-controls="pane.keyId" :aria-selected="index === props.activeIndex ? 'true' : 'false'"
+        :disabled="pane.disabled" @click="handleTabClick(pane, index)">
+        {{ pane.label }}
+      </button>
+    </nav>
+    <div class="tab-content">
+      <div v-for="pane, index in panes" class="tab-pane fade" :class="{ 'show active': index === props.activeIndex }"
+        :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
+        <component v-if="!pane.lazy" :is="pane.body" />
+      </div>
+    </div>
+  </template>
+  <template v-else-if="props.position === 'bottom'">
+    <div class="tab-content">
+      <div v-for="pane, index in panes" class="tab-pane fade" :class="{ 'show active': index === props.activeIndex }"
+        :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
+        <component v-if="!pane.lazy" :is="pane.body" />
+      </div>
+    </div>
+    <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
+      <button v-for="pane, index in panes" type="button" class="nav-link"
+        :class="{ 'active': index === props.activeIndex }" :id="`${pane.keyId}-tab`" :data-bs-target="`#${pane.keyId}`"
+        role="tab" :aria-controls="pane.keyId" :aria-selected="index === props.activeIndex ? 'true' : 'false'"
+        :disabled="pane.disabled" @click="handleTabClick(pane, index)">
+        {{ pane.label }}
+      </button>
+    </nav>
+  </template>
+  <template v-else-if="props.position === 'start'">
+    <div class="d-flex align-items-start">
+      <nav class="nav flex-column me-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist"
+        aria-orientation="vertical">
+        <button v-for="pane, index in panes" type="button" class="nav-link"
+          :class="{ 'active': index === props.activeIndex }" :id="`${pane.keyId}-tab`"
+          :data-bs-target="`#${pane.keyId}`" role="tab" :aria-controls="pane.keyId"
+          :aria-selected="index === props.activeIndex ? 'true' : 'false'" :disabled="pane.disabled"
+          @click="handleTabClick(pane, index)">
           {{ pane.label }}
         </button>
       </nav>
       <div class="tab-content">
-        <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
-          <component v-if="renders[index]" :is="pane.body" />
+        <div v-for="pane, index in panes" class="tab-pane fade" :class="{ 'show active': index === props.activeIndex }"
+          :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
+          <component v-if="!pane.lazy" :is="pane.body" />
         </div>
       </div>
-    </template>
-    <template v-else-if="position === 'bottom'">
+    </div>
+  </template>
+  <template v-else-if="props.position === 'end'">
+    <div class="d-flex align-items-start">
       <div class="tab-content">
-        <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
-          <component v-if="renders[index]" :is="pane.body" />
+        <div v-for="pane, index in panes" class="tab-pane fade" :class="{ 'show active': index === props.activeIndex }"
+          :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
+          <component v-if="!pane.lazy" :is="pane.body" />
         </div>
       </div>
-      <nav class="nav" :class="props.tabsClass" :style="props.tabsStyle" role="tablist">
-        <button
-          v-for="pane in panes"
-          type="button"
-          class="nav-link"
-          :id="`${pane.keyId}-tab`"
-          :data-bs-target="`#${pane.keyId}`"
-          role="tab"
-          :aria-controls="pane.keyId"
-          aria-selected="false"
-          :disabled="pane.disabled"
-        >
+      <nav class="nav flex-column ms-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist"
+        aria-orientation="vertical">
+        <button v-for="pane, index in panes" type="button" class="nav-link"
+          :class="{ 'active': index === props.activeIndex }" :id="`${pane.keyId}-tab`"
+          :data-bs-target="`#${pane.keyId}`" role="tab" :aria-controls="pane.keyId"
+          :aria-selected="index === props.activeIndex ? 'true' : 'false'" :disabled="pane.disabled"
+          @click="handleTabClick(pane, index)">
           {{ pane.label }}
         </button>
       </nav>
-    </template>
-    <template v-else-if="props.position === 'start'">
-      <div class="d-flex align-items-start">
-        <nav class="nav flex-column me-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist" aria-orientation="vertical">
-          <button
-            v-for="pane in panes"
-            type="button"
-            class="nav-link"
-            :id="`${pane.keyId}-tab`"
-            :data-bs-target="`#${pane.keyId}`"
-            role="tab"
-            :aria-controls="pane.keyId"
-            aria-selected="false"
-            :disabled="pane.disabled"
-          >
-            {{ pane.label }}
-          </button>
-        </nav>
-        <div class="tab-content">
-          <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
-            <component v-if="renders[index]" :is="pane.body" />
-          </div>
-        </div>
-      </div>
-    </template>
-    <template v-else-if="props.position === 'end'">
-      <div class="d-flex align-items-start">
-        <div class="tab-content">
-          <div v-for="(pane, index) in panes" class="tab-pane fade" :id="pane.keyId" role="tabpanel" :aria-labelledby="`${pane.keyId}-tab`" tabindex="0">
-            <component v-if="renders[index]" :is="pane.body" />
-          </div>
-        </div>
-        <nav class="nav flex-column ms-3" :class="props.tabsClass" :style="props.tabsStyle" role="tablist" aria-orientation="vertical">
-          <button
-            v-for="pane in panes"
-            type="button"
-            class="nav-link"
-            :id="`${pane.keyId}-tab`"
-            :data-bs-target="`#${pane.keyId}`"
-            role="tab"
-            :aria-controls="pane.keyId"
-            aria-selected="false"
-            :disabled="pane.disabled"
-          >
-            {{ pane.label }}
-          </button>
-        </nav>
-      </div>
-    </template>
+    </div>
   </template>
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { provide, reactive, onBeforeUnmount, onMounted } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
-import {Tab} from 'bootstrap';
+import { Tab } from 'bootstrap';
 
-const emit = defineEmits(['tab-shown']);
-
-const ready = ref(false);
 const props = defineProps({
   tabsClass: {
     type: String,
@@ -113,13 +88,9 @@ const props = defineProps({
     type: String,
     default: null
   },
-  initActiveIndex: {
+  activeIndex: {
     type: Number,
     default: 0
-  },
-  lazy: {
-    type: Boolean,
-    default: false
   },
   position: {
     type: String,
@@ -130,71 +101,38 @@ const props = defineProps({
   }
 });
 
-const panes = [];
-const renders = ref([]);
+const panes = reactive([]);
 provide(panes_injection_key, panes);
 
 onMounted(() => {
-  _initPanes();
 
-  ready.value = true;
+  panes[props.activeIndex].lazy = false;
 
-  nextTick(() => {
-    for (let i = 0; i < panes.length; i++) {
-      let triggerEl = document.getElementById(`${panes[i].keyId}-tab`);
-      const tabTrigger = new Tab(triggerEl);
-
-      triggerEl.addEventListener('click', (event) => {
-        event.preventDefault();
-        tabTrigger.show();
-      });
-
-      triggerEl.addEventListener('show.bs.tab', (event) => {
-        if (renders.value[i] === false) {
-          renders.value[i] = true;
-        }
-      });
-
-      triggerEl.addEventListener('shown.bs.tab', (event) => {
-        emit('tab-shown', i);
-      });
+  panes.forEach((pane) => {
+    const tabEl = document.getElementById(`${pane.keyId}-tab`);
+    if (tabEl) {
+      new Tab(tabEl)
     }
-
-    Tab.getInstance(`#${panes[props.initActiveIndex].keyId}-tab`).show();
   });
-});
+
+})
 
 onBeforeUnmount(() => {
-  panes.forEach((item) => {
-    Tab.getInstance(`#${item.keyId}-tab`).dispose();
+  panes.forEach((pane) => {
+    const tabEl = document.getElementById(`${pane.keyId}-tab`);
+    if (tabEl) {
+      const tabInstance = Tab.getInstance(tabEl);
+      if (tabInstance) tabInstance.dispose();
+    }
   });
 });
 
-function _initPanes() {
-  const slots = useSlots();
-  const vNodes = slots.default();
-
-  const paneVNodes = [];
-  for (const vNode of vNodes) {
-    if (vNode.type.__name === 'tab-pane') {
-      paneVNodes.push(vNode);
-    }
-  }
-
-  for (let i = 0; i < panes.length; i++) {
-    if (paneVNodes[i].children !== null && paneVNodes[i].children.default !== 'undefined') {
-      panes[i].body = paneVNodes[i].children.default;
-    } else {
-      panes[i].body = null;
-    }
-
-    if (i === props.initActiveIndex) {
-      renders.value.push(true);
-    } else if (props.lazy) {
-      renders.value.push(false);
-    } else {
-      renders.value.push(true);
-    }
+function handleTabClick(pane, index) {
+  if (pane.disabled) return;
+  pane.lazy = false;
+  const tabEl = document.getElementById(`${pane.keyId}-tab`);
+  if (tabEl) {
+    Tab.getInstance(tabEl).show();
   }
 }
 </script>

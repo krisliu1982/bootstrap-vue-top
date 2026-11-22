@@ -36,9 +36,6 @@ const props = defineProps({
 
 const cols = inject(cols_injection_key);
 
-const slots = useSlots();
-const key_id = useId();
-
 // 特殊列唯一性校验
 if (['checkbox', 'radio', 'expand'].includes(props.type)) {
   if (!props.field) {
@@ -49,10 +46,12 @@ if (['checkbox', 'radio', 'expand'].includes(props.type)) {
   }
 }
 
+const slots = useSlots();
+const keyId = useId();
 const body = slots.body ? slots.body : null;
 
 cols.push({
-  key_id: key_id,
+  keyId: keyId,
   header: props.header,
   field: props.field,
   type: props.type,
@@ -62,7 +61,9 @@ cols.push({
 });
 
 onBeforeUnmount(() => {
-  const index = cols.findIndex((item) => item.key_id === key_id);
-  cols.splice(index, 1);
+  const index = cols.findIndex((item) => item.keyId === keyId);
+    if (index !== -1) {
+    cols.splice(index, 1);
+  }
 });
 </script>

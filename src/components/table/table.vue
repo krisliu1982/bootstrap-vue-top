@@ -3,13 +3,13 @@
     <caption v-if="caption">{{ props.caption }}</caption>
     <slot></slot>
     <colgroup>
-      <template v-for="col in cols" :key="col.key_id">
+      <template v-for="col in cols" :key="col.keyId">
         <col :style="{ width: col.width }" />
       </template>
     </colgroup>
     <thead :class="props.theadClass">
       <tr>
-        <template v-for="col in cols" :key="col.key_id">
+        <template v-for="col in cols" :key="col.keyId">
           <th scope="col">
             <template v-if="col.type === null">
               <template v-if="col.sortable === null">{{ col.header }}</template>
@@ -37,7 +37,7 @@
     <tbody :class="props.tbodyClass">
       <template v-for="(item, index) in items" :key="index">
         <tr :class="_tbodyTrClass(item)">
-          <td v-for="col in cols" :key="col.key_id">
+          <td v-for="col in cols" :key="col.keyId">
             <template v-if="col.type === null && col.body === null">
               {{ get(item, col.field) }}
             </template>
@@ -157,19 +157,19 @@ const radioSelectedKey = ref(null);
 const expandKeys = ref([]);
 
 watch(checkboxSelectedKeys, (val) => {
-  const el = document.getElementById(`allcheckbox-${id}`);
+  const allcheckboxEl = document.getElementById(`allcheckbox-${id}`);
 
-  if (!el) return;
+  if (!allcheckboxEl) return;
 
   if (val.length === 0) {
-    el.checked = false;
-    el.indeterminate = false;
+    allcheckboxEl.checked = false;
+    allcheckboxEl.indeterminate = false;
   } else if (val.length < props.data.length) {
-    el.checked = false;
-    el.indeterminate = true;
+    allcheckboxEl.checked = false;
+    allcheckboxEl.indeterminate = true;
   } else {
-    el.checked = true;
-    el.indeterminate = false;
+    allcheckboxEl.checked = true;
+    allcheckboxEl.indeterminate = false;
   }
 });
 

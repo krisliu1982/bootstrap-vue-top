@@ -21,6 +21,6 @@
               visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
-          <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
+          <bv-tab-pane label="Disabled" disabled><p class="py-3">disabled</p></bv-tab-pane>
         </bv-tabs>
         </template>

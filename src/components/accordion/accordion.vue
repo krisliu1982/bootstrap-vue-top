@@ -4,13 +4,13 @@
     <slot></slot>
     <div v-for="(item, index) in items" class="accordion-item" :key="item.keyId">
       <h2 class="accordion-header">
-        <button type="button" class="accordion-button" :class="{ collapsed: props.initActiveIndex !== index }"
-          data-bs-toggle="collapse" :data-bs-target="`#${item.keyId}`" :aria-expanded="props.initActiveIndex === index"
+        <button type="button" class="accordion-button" :class="{ collapsed: props.activeIndex !== index }"
+          data-bs-toggle="collapse" :data-bs-target="`#${item.keyId}`" :aria-expanded="props.activeIndex === index"
           :aria-controls="`${item.keyId}`">
           {{ item.header }}
         </button>
       </h2>
-      <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: props.initActiveIndex === index }"
+      <div :id="item.keyId" class="accordion-collapse collapse" :class="{ show: props.activeIndex === index }"
         :data-bs-parent="props.always ? null : `#${id}`">
         <div class="accordion-body">
           <component :is="item.body" />
@@ -33,7 +33,7 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  initActiveIndex: {
+  activeIndex: {
     type: Number,
     default: null
   }

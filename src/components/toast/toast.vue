@@ -16,7 +16,7 @@
 
 <script setup>
 import { shallowRef, onMounted, onBeforeUnmount, computed } from 'vue';
-import {Toast} from 'bootstrap';
+import { Toast } from 'bootstrap';
 
 const emit = defineEmits(['destroy']);
 

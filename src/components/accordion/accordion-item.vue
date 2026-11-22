@@ -20,6 +20,8 @@ items.push({ keyId, header: props.header, body });
 
 onBeforeUnmount(() => {
   const index = items.findIndex((item) => item.keyId === keyId);
-  items.splice(index, 1);
+  if (index !== -1) {
+    items.splice(index, 1);
+  }
 });
 </script>

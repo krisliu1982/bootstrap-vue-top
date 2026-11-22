@@ -4,7 +4,7 @@
 
   <h2>基础用法</h2>
   <p>
-    组件默认激活第一个标签页，通过 <code>init-active-index</code> 属性来指定当前激活的标签页。
+    组件默认激活第一个标签页，通过 <code>active-index</code> 属性来指定当前激活的标签页。
   </p>
   <BasicUsage />
 
@@ -52,15 +52,10 @@
 
   <h2>延迟渲染</h2>
   <p>
-    设置 <code>lazy</code> 属性为 <code>true</code>，使初始化时未激活的标签项不进行渲染，激活后才渲染。
+    通过在标签项上设置 <code>lazy</code> 属性为 <code>true</code>，使初始化时未激活的标签项不进行渲染，激活后才渲染。
   </p>
   <LazyRender />
 
-    <h2>动态内容</h2>
-    <p>
-      监听 <code>tab-shown</code> 事件进行标签项可见后的相关操作，第一个事件参数为标签项的索引号。
-    </p>
-  <DynamicContent />
 </template>
 
 <script setup>
@@ -73,5 +68,4 @@ import FillStyle from './fill-style.vue';
 import JustifiedStyle from './justified-style.vue';
 import PositionChange from './position-change.vue';
 import LazyRender from './lazy-render.vue';
-import DynamicContent from './dynamic-content.vue';
 </script>
