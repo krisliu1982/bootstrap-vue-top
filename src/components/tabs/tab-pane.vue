@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onBeforeUnmount, useId, useSlots } from 'vue';
+import { inject, onMounted, onBeforeUnmount, useId, useSlots, nextTick } from 'vue';
 import { panes_injection_key } from './tabs-keys.js';
 import { Tab } from 'bootstrap';
 
@@ -24,7 +24,7 @@ const panes = inject(panes_injection_key);
 const slots = useSlots();
 const keyId = useId();
 
-const body = slots.default ? () => slots.default() : null;
+const body = slots.default ? slots.default : null;
 
 panes.push({
   keyId: keyId,
@@ -34,17 +34,17 @@ panes.push({
   body
 });
 
-onMounted(() => {
-  const tabEl = document.getElementById(`${keyId}-tab`);
-  if (tabEl) new Tab(tabEl);
+onMounted(async () => {
+  await nextTick();
+  const el = document.getElementById(`${keyId}-tab`);
+  if (el) new Tab(el);
 });
 
 onBeforeUnmount(() => {
-  
-  const tabEl = document.getElementById(`${keyId}-tab`);
-  if (tabEl) {
-    const tabInstance = Tab.getInstance(tabEl);
-    if (tabInstance) tabInstance.dispose();
+  const el = document.getElementById(`${keyId}-tab`);
+  if (el) {
+    const instance = Tab.getInstance(el);
+    if (instance) instance.dispose();
   }
 
   const index = panes.findIndex((item) => item.keyId === keyId);

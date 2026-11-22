@@ -60,7 +60,7 @@
         </tr>
         <tr v-if="expandField !== null && expandKeys.includes(get(item, expandField))">
           <td :colspan="cols.length">
-            <component :is="_getExpandBody()" :item="item" :index="index" />
+            <component :is="expandBody" :item="item" :index="index" />
           </td>
         </tr>
       </template>
@@ -146,6 +146,10 @@ const expandField = computed(() => {
   const col = cols.find((c) => c.type === 'expand');
   return col ? col.field : null;
 });
+const expandBody = computed(() => {
+  const col = cols.find((c) => c.type === 'expand');
+  return col ? col.body : null;
+});
 
 const id = useId();
 
@@ -222,15 +226,6 @@ function _sortBy(_col) {
   if (sortInfo.type === 'remote') {
     emit('sort-change', sortInfo.field, sortInfo.order);
   }
-}
-
-function _getExpandBody() {
-  for (let i = 0; i < cols.length; i++) {
-    if (cols[i].type === 'expand') {
-      return cols[i].body;
-    }
-  }
-  return null;
 }
 
 function _handleToggleExpandTr(_key) {
