@@ -166,7 +166,7 @@ index 8f8296def..449d70487 100644
         </p>
       </li>
       <li>
-        <p>为警告框、<code>.btn-close</code> 和 <code>.offcanvas</code> 添加了更多变量。</p>
+        <p>为警示框、<code>.btn-close</code> 和 <code>.offcanvas</code> 添加了更多变量。</p>
       </li>
       <li>
         <p><code>--bs-heading-color</code> 变量回归，并带来更新和对深色模式的支持。首先，在尝试输出 CSS 变量之前，我们现在会检查关联的 Sass 变量 <code>$headings-color</code> 是否为 <code>null</code> 值，因此默认情况下它不会出现在编译后的 CSS 中。其次，我们以 后备值 <code>inherit</code> 使用该 CSS 变量，既保留了原有行为，又允许进行覆盖。</p>
@@ -185,9 +185,9 @@ index 8f8296def..449d70487 100644
       </li>
     </ul>
     <h3 id="components-1">组件<a class="anchor-link" href="#components-1" aria-label="组件链接"></a></h3>
-    <h4 id="alert">警告框</h4>
+    <h4 id="alert">警示框</h4>
     <ul>
-      <li><p>警告框变体现在通过 CSS 变量设置样式。</p></li>
+      <li><p>警示框变体现在通过 CSS 变量设置样式。</p></li>
       <li>
         <p><span class="badge text-warning-emphasis bg-warning-subtle">已弃用</span> <code>alert-variant()</code> mixin 现已弃用。我们现在直接 <a href="/components/alerts#sass-loops">使用 Sass 循环</a> 来为每个变体修改组件的默认 CSS 变量。</p>
       </li>
@@ -740,19 +740,19 @@ index 8f8296def..449d70487 100644
     <hr class="my-5" />
     <h3 id="components-2">组件<a class="anchor-link" href="#components-2" aria-label="组件链接"></a></h3>
     <ul>
-      <li>统一了警告框、面包屑、卡片、下拉菜单、列表组、模态框、弹出框和工具提示的 <code>padding</code> 值，使其基于我们的 <code>$spacer</code> 变量。 <a href="https://github.com/twbs/bootstrap/pull/30564">参见 #30564</a> 。</li>
+      <li>统一了警示框、面包屑、卡片、下拉菜单、列表组、模态框、弹出框和工具提示的 <code>padding</code> 值，使其基于我们的 <code>$spacer</code> 变量。 <a href="https://github.com/twbs/bootstrap/pull/30564">参见 #30564</a> 。</li>
     </ul>
     <h4 id="accordion">折叠面板</h4>
     <ul>
       <li>新增 <a href="/components/accordion">折叠面板组件</a> 。</li>
     </ul>
-    <h4 id="alerts">警告框</h4>
+    <h4 id="alerts">警示框</h4>
     <ul>
       <li>
-        <p>警告框现在有 <a href="/components/alerts#icons">包含图标的示例</a> 。</p>
+        <p>警示框现在有 <a href="/components/alerts#icons">包含图标的示例</a> 。</p>
       </li>
       <li>
-        <p>移除了每个警告框中针对 <code>&lt;hr&gt;</code> 的自定义样式，因为它们已使用 <code>currentColor</code>。</p>
+        <p>移除了每个警示框中针对 <code>&lt;hr&gt;</code> 的自定义样式，因为它们已使用 <code>currentColor</code>。</p>
       </li>
     </ul>
     <h4 id="badges">徽章</h4>

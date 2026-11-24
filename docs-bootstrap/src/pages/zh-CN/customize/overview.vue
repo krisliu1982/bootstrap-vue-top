@@ -24,7 +24,7 @@
     <ul>
       <li><a href="/components/accordion">折叠面板</a></li>
       <li><a href="/components/carousel#with-controls">轮播控件</a></li>
-      <li><a href="/components/close-button">关闭按钮</a> （用于警告框和模态框）</li>
+      <li><a href="/components/close-button">关闭按钮</a> （用于警示框和模态框）</li>
       <li><a href="/forms/checks-radios">表单复选框和单选按钮</a></li>
       <li><a href="/forms/checks-radios#switches">表单开关</a></li>
       <li><a href="/forms/validation#server-side">表单验证图标</a></li>

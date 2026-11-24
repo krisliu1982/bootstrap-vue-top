@@ -261,7 +261,7 @@
     />
     <h2 id="    adding-theme-colors">添加主题色<a class="anchor-link" href="#adding-theme-colors" aria-label="添加主题色"></a></h2>
     <p>
-      对于我们的某些组件（如 <a href="/components/alerts">警告框</a> 和 <a href="/components/list-group">列表组</a> ），仅在 <code>$theme-colors</code> 中添加新颜色是不够的。还必须为浅色主题在 <code>$theme-colors-text</code>、<code>$theme-colors-bg-subtle</code> 和 <code>$theme-colors-border-subtle</code> 中定义新颜色； 同时还要为深色主题在
+      对于我们的某些组件（如 <a href="/components/alerts">警示框</a> 和 <a href="/components/list-group">列表组</a> ），仅在 <code>$theme-colors</code> 中添加新颜色是不够的。还必须为浅色主题在 <code>$theme-colors-text</code>、<code>$theme-colors-bg-subtle</code> 和 <code>$theme-colors-border-subtle</code> 中定义新颜色； 同时还要为深色主题在
       <code>$theme-colors-text-dark</code>、<code>$theme-colors-bg-subtle-dark</code> 和 <code>$theme-colors-border-subtle-dark</code> 中定义。
     </p>
     <p>这是一个手动过程，因为 Sass 无法从现有变量或映射生成自己的 Sass 变量。在未来版本的 Bootstrap 中，我们将重新审视这一设置以减少重复。</p>

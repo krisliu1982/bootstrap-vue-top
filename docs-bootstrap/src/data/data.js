@@ -94,7 +94,7 @@ const sidebar = [
     icon_color: 'cyan',
     pages: [
       { title: 'Accordion', slug: 'accordion', 'zh-CN': '折叠面板' },
-      { title: 'Alerts', slug: 'alerts', 'zh-CN': '警告框' },
+      { title: 'Alerts', slug: 'alerts', 'zh-CN': '警示框' },
       { title: 'Badge', slug: 'badge', 'zh-CN': '徽章' },
       { title: 'Breadcrumb', slug: 'breadcrumb', 'zh-CN': '面包屑导航' },
       { title: 'Buttons', slug: 'buttons', 'zh-CN': '按钮' },

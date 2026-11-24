@@ -240,7 +240,7 @@
     <p>
       轻提示旨在对你的访客或用户造成较小的打断，因此，为了帮助使用屏幕阅读器和类似辅助技术的用户，你应将轻提示包裹在一个
       <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"><code>aria-live</code> 区域</a> 中。实时区域的变更（例如注入或更新轻提示组件）将由屏幕阅读器自动播报，无需移动用户的焦点或以其他方式打断用户。此外，请包含
-      <code>aria-atomic=&quot;true&quot;</code>，以确保整个轻提示始终作为一个单一的（原子）单元进行播报，而不是只播报发生变更的部分（如果你只更新轻提示的局部内容，或在稍后再次显示相同的轻提示内容，这可能会导致问题）。如果所需信息 对流程很重要，例如表单中的错误列表，那么请改用 <a href="/components/alerts">警告框组件</a> ，而不是轻提示。
+      <code>aria-atomic=&quot;true&quot;</code>，以确保整个轻提示始终作为一个单一的（原子）单元进行播报，而不是只播报发生变更的部分（如果你只更新轻提示的局部内容，或在稍后再次显示相同的轻提示内容，这可能会导致问题）。如果所需信息 对流程很重要，例如表单中的错误列表，那么请改用 <a href="/components/alerts">警示框组件</a> ，而不是轻提示。
     </p>
     <p>请注意，实时区域必须在轻提示生成或更新<em>之前</em>就已存在于标记中。如果你同时动态生成两者并将它们注入页面，辅助技术通常不会播报它们。</p>
     <p>你还需要根据内容调整 <code>role</code> 和 <code>aria-live</code> 级别。如果是像错误这样重要的消息，使用 <code>role=&quot;alert&quot; aria-live=&quot;assertive&quot;</code> 属性，否则使用 <code>role=&quot;status&quot; aria-live=&quot;polite&quot;</code> 属性。</p>

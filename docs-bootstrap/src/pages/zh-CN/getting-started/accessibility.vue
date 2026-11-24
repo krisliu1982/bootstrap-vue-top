@@ -19,7 +19,7 @@
     <p>由于 Bootstrap 的组件刻意设计得较为通用，作者可能需要添加更多 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 角色和属性以及 JavaScript 行为，以更准确地传达其组件的具体性质和功能。这一点通常会在文档中注明。</p>
     <h3 id="color-contrast">颜色对比度<a class="anchor-link" href="#color-contrast" aria-label="颜色对比度链接"></a></h3>
     <p>
-      构成 Bootstrap 默认调色板的一些颜色组合（在整个框架中用于按钮变体、警告框变体、表单校验指示器等），可能导致颜色对比<em>不足</em>（低于建议的 <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">WCAG 2.2 文本颜色对比度 4.5:1</a> 和
+      构成 Bootstrap 默认调色板的一些颜色组合（在整个框架中用于按钮变体、警示框变体、表单校验指示器等），可能导致颜色对比<em>不足</em>（低于建议的 <a href="https://www.w3.org/TR/WCAG/#contrast-minimum">WCAG 2.2 文本颜色对比度 4.5:1</a> 和
       <a href="https://www.w3.org/TR/WCAG/#non-text-contrast">WCAG 2.2 非文本颜色对比度 3:1</a>），尤其是在浅色背景上使用时。我们鼓励作者测试自己的具体颜色用法，并在必要时手动修改/扩展这些默认颜色，以确保足够的颜色对比度。
     </p>
     <h3 id="visually-hidden-content">视觉隐藏内容<a class="anchor-link" href="#visually-hidden-content" aria-label="视觉隐藏内容链接"></a></h3>

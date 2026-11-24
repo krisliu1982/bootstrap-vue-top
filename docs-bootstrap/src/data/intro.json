@@ -24,7 +24,7 @@
     "description": "结合我们的折叠 JavaScript 插件，创建可垂直折叠的折叠面板。"
   },
   "/components/alerts": {
-    "title": "警告框",
+    "title": "警示框",
     "description": "使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。"
   },
   "/components/badge": {
@@ -53,7 +53,7 @@
   },
   "/components/close-button": {
     "title": "关闭按钮",
-    "description": "一个通用的关闭按钮，用于关闭模态框和警告框等内容。"
+    "description": "一个通用的关闭按钮，用于关闭模态框和警示框等内容。"
   },
   "/components/collapse": {
     "title": "折叠",

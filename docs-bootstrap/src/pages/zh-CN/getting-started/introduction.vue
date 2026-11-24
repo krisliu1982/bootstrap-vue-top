@@ -106,7 +106,7 @@
 
     <ul>
       <li>折叠面板（Accordions），用于扩展我们的 Collapse 插件</li>
-      <li>警告框（Alerts），用于关闭</li>
+      <li>警示框（Alerts），用于关闭</li>
       <li>按钮（Buttons），用于切换状态以及复选框/单选按钮功能</li>
       <li>轮播（Carousel），用于所有幻灯片行为、控件和指示器</li>
       <li>折叠（Collapse），用于切换内容的可见性</li>
