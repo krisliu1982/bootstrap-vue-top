@@ -1,11 +1,11 @@
 <template>
   <tr>
-    <template v-for="(col, index) in cols">
-      <td v-if="index === 0">
+    <template v-for="col in cols" :key="col.keyId">
+      <td v-if="col.tree">
         <div class="node" :style="{ 'padding-left': level + 'rem' }">
-          <a v-if="isFolder" href="#" role="button" @click.prevent="toggle" class="link-body-emphasis node-switcher" :class="{ 'rotate-90': isExpand }">
-            <BiCaretRight />
-          </a>
+          <button v-if="isFolder" type="button" @click="toggle" class="node-switcher">
+            <BiCaretRight class="node-switcher-icon" :class="{ 'rotate-90': isExpand }" />
+          </button>
           <div v-else class="node-placeholder"></div>
           <div class="node-content">
             <template v-if="col.body === null">
@@ -24,7 +24,8 @@
     </template>
   </tr>
   <template v-if="isExpand && isFolder">
-    <TreetableNode v-for="data1 in props.data[attrs.children]" :data="data1" :level="props.level + 1" :key="data1[attrs.key]" />
+    <TreetableNode v-for="data1 in props.data[attrs.children]" :data="data1" :level="props.level + 1"
+      :key="data1[attrs.key]" />
   </template>
 </template>
 
@@ -51,17 +52,17 @@ const expandKeys = inject(expand_keys);
 const key = props.data[attrs.key];
 
 const isExpand = computed(() => {
-  return expandKeys.value[key] === true;
+  return expandKeys[key] === true;
 });
 const isFolder = computed(() => {
   return props.data[attrs.children] && props.data[attrs.children].length;
 });
 
 function toggle() {
-  if (expandKeys.value[key]) {
-    expandKeys.value[key] = false;
+  if (expandKeys[key]) {
+    expandKeys[key] = false;
   } else {
-    expandKeys.value[key] = true;
+    expandKeys[key] = true;
   }
 }
 </script>
@@ -75,10 +76,16 @@ function toggle() {
 .node-switcher {
   flex-grow: 0;
   flex-shrink: 0;
-  transition: transform 0.3s;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
-.node-switcher.rotate-90 {
+.node-switcher-icon {
+  transition: transform 0.3s ease;
+}
+
+.node-switcher-icon.rotate-90 {
   transform: rotate(90deg);
 }
 

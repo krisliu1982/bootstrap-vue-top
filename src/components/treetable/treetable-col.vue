@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onBeforeUnmount, useId } from 'vue';
+import { inject, onBeforeUnmount, useId, useSlots } from 'vue';
 import { cols_key } from './treetable-keys.js';
 
 const props = defineProps({
@@ -15,23 +15,28 @@ const props = defineProps({
   width: {
     type: String,
     default: 'auto'
-  }
+  },
+    tree: { type: Boolean, default: false }
 });
 
 const cols = inject(cols_key);
+const slots = useSlots();
 const keyId = useId();
-onMounted(() => {
-  const col = {
-    keyId: keyId,
-    header: props.header,
-    field: props.field,
-    width: props.width
-  };
-  cols.push(col);
+const body = slots.body ? slots.body : null;
+
+cols.push({
+  keyId: keyId,
+  header: props.header,
+  field: props.field,
+  width: props.width,
+  tree: props.tree, 
+  body
 });
 
 onBeforeUnmount(() => {
   const index = cols.findIndex((item) => item.keyId === keyId);
-  cols.splice(index, 1);
+  if (index !== -1) {
+    cols.splice(index, 1);
+  }
 });
 </script>

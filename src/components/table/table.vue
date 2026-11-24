@@ -14,12 +14,12 @@
             <template v-if="col.type === null">
               <template v-if="col.sortable === null">{{ col.header }}</template>
               <template v-else>
-                <a role="button" class="link-body-emphasis text-decoration-none text-nowrap" @click="_sortBy(col)">
+                <button class="p-0 border-0 bg-transparent text-nowrap" style="font-weight: inherit;" @click="_sortBy(col)">
                   {{ col.header }}
                   <bi-arrow-down-up v-if="sortInfo.field !== col.field || sortInfo.order === null" />
                   <bi-sort-up-alt v-else-if="sortInfo.order === 'asc'" class="text-primary" />
                   <bi-sort-down v-else-if="sortInfo.order === 'desc'" class="text-primary" />
-                </a>
+                </button>
               </template>
             </template>
             <template v-else-if="col.type === 'index' || col.type === 'radio'">
@@ -49,11 +49,11 @@
               <input class="form-check-input" type="radio" :value="get(item, col.field)" v-model="radioSelectedKey" />
             </template>
             <template v-else-if="col.type === 'expand'">
-              <a href="#" role="button" class="link-body-emphasis text-decoration-none"
-                @click.prevent="_handleToggleExpandTr(get(item, col.field))">
+              <button type="button" class="p-0 border-0 bg-transparent"
+                @click="_handleToggleExpandTr(get(item, col.field))">
                 <BiChevronRight class="expand-icon"
                   :class="{ 'rotate-90': expandKeys.includes(get(item, col.field)) }" />
-              </a>
+              </button>
             </template>
             <component v-else :is="col.body" :item="item" :index="index" />
           </td>

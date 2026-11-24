@@ -4,35 +4,31 @@
       {{ props.caption }}
     </caption>
     <slot></slot>
-    <template v-if="ready">
       <colgroup>
-        <template v-for="col in cols">
+        <template v-for="col in cols" :key="col.keyId">
           <col :style="{ width: col.width }" />
         </template>
       </colgroup>
       <thead :class="props.theadClass">
         <tr>
-          <template v-for="col in cols">
-            <th scope="col">
-              {{ col.header }}
-            </th>
+          <template v-for="col in cols" :key="col.keyId">
+            <th scope="col">{{ col.header }}</th>
           </template>
         </tr>
       </thead>
       <tbody :class="props.tbodyClass">
         <TreetableNode :data="data"></TreetableNode>
       </tbody>
-      <tfoot :class="props.tfootClass" v-if="props.tfootData !== null">
+      <tfoot v-if="props.tfootData !== null" :class="props.tfootClass">
         <tr>
           <td v-for="item in props.tfootData">{{ item }}</td>
         </tr>
       </tfoot>
-    </template>
   </table>
 </template>
 
 <script setup>
-import { useSlots, ref, provide, onMounted } from 'vue';
+import { provide, reactive } from 'vue';
 import { cols_key, attrs_key, expand_keys } from './treetable-keys.js';
 import TreetableNode from './treetable-node.vue';
 
@@ -61,6 +57,10 @@ const props = defineProps({
     type: Array,
     default: null
   },
+  caption: {
+    type: String,
+    default: null
+  },
   attrKey: {
     type: String,
     required: true
@@ -68,45 +68,17 @@ const props = defineProps({
   attrChildren: {
     type: String,
     required: true
-  },
-  caption: {
-    type: String,
-    default: null
   }
 });
 
-const ready = ref(false);
 
-const cols = [];
+const cols = reactive([]);
 provide(cols_key, cols);
-provide(attrs_key, { key: props.attrKey, children: props.attrChildren });
-const expandKeys = ref({});
-expandKeys.value[props.data[props.attrKey]] = true;
+
+provide(attrs_key, reactive({ key: props.attrKey, children: props.attrChildren }));
+
+const expandKeys = reactive({});
+expandKeys[props.data[props.attrKey]] = true;
 provide(expand_keys, expandKeys);
 
-onMounted(() => {
-  _initCols();
-
-  ready.value = true;
-});
-
-function _initCols() {
-  const slots = useSlots();
-  const vNodes = slots.default();
-
-  const colVNodes = [];
-  for (const vNode of vNodes) {
-    if (vNode.type.__name === 'treetable-col') {
-      colVNodes.push(vNode);
-    }
-  }
-
-  for (let i = 0; i < cols.length; i++) {
-    if (colVNodes[i].children !== null && colVNodes[i].children.body !== 'undefined') {
-      cols[i].body = colVNodes[i].children.body;
-    } else {
-      cols[i].body = null;
-    }
-  }
-}
 </script>

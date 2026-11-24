@@ -1,7 +1,8 @@
 <template>
-  <slot></slot>
   <div :id="id" class="accordion" :class="props.accordionClass">
-    <div v-for="(item, index) in items" class="accordion-item" :key="item.keyId">
+    <slot></slot>
+    <template v-for="(item, index) in items" :key="item.keyId">
+    <div class="accordion-item">
       <h2 class="accordion-header">
         <button type="button" class="accordion-button" :class="{ 'collapsed': props.activeIndex !== index }"
           :data-bs-target="`#${item.keyId}`" :aria-expanded="props.activeIndex === index"
@@ -16,6 +17,7 @@
         </div>
       </div>
     </div>
+    </template>
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
   <ul class="list-unstyled">
-    <TreeItem :data="props.data"></TreeItem>
+    <TreeNode :data="props.data"></TreeNode>
   </ul>
 </template>
 
 <script setup>
 import { provide, ref, watch } from 'vue';
-import TreeItem from './tree-node.vue';
+import TreeNode from './tree-node.vue';
 import { attrs_key, mode_key, expand_level_key, radio_selected_Key, checkbox_selected_keys, node_click_key } from './tree-keys.js';
 
 const emit = defineEmits(['node-click', 'radio-change', 'checkbox-change']);
