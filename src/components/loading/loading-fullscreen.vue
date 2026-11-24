@@ -1,7 +1,7 @@
 <template>
   <Transition name="bv-fadeIn">
     <div ref="elementRef" v-show="visible" class="bv-loading-fullscreen text-center" tabindex="-1">
-      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; margin-top: 25vh;">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem; margin-top: 25vh">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
@@ -22,11 +22,11 @@ function show() {
   savedOverflow = document.body.style.overflow;
   savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  document.body.style.overflow = 'hidden';
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
   }
 
   visible.value = true;

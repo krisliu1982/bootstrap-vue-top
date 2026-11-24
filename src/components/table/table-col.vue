@@ -39,10 +39,10 @@ const cols = inject(cols_injection_key);
 // 特殊列唯一性校验
 if (['checkbox', 'radio', 'expand'].includes(props.type)) {
   if (!props.field) {
-    throw new Error(`[TableCol] type 为 ${props.type} 时必须提供 field`)
+    throw new Error(`[TableCol] type 为 ${props.type} 时必须提供 field`);
   }
   if (cols.some((c) => c.type === props.type)) {
-    throw new Error(`[TableCol] 只允许一个 type 为 ${props.type} 的列`)
+    throw new Error(`[TableCol] 只允许一个 type 为 ${props.type} 的列`);
   }
 }
 
@@ -62,7 +62,7 @@ cols.push({
 
 onBeforeUnmount(() => {
   const index = cols.findIndex((item) => item.keyId === keyId);
-    if (index !== -1) {
+  if (index !== -1) {
     cols.splice(index, 1);
   }
 });

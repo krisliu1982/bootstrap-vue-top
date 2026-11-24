@@ -2,13 +2,20 @@
   <div :id="id" class="carousel slide" :class="props.carouselClass">
     <div v-if="props.indicator" class="carousel-indicators">
       <template v-for="(item, index) in props.items" :key="index">
-        <button type="button" :data-bs-target="`#${id}`" :data-bs-slide-to="index" :class="{ active: index === 0 }" :aria-current="index === 0" :aria-label="item.title"></button>
+        <button
+          type="button"
+          :data-bs-target="`#${id}`"
+          :data-bs-slide-to="index"
+          :class="{ active: index === 0 }"
+          :aria-current="index === 0"
+          :aria-label="item.title"
+        ></button>
       </template>
     </div>
     <div class="carousel-inner">
       <template v-for="(item, index) in props.items" :key="index">
         <div class="carousel-item" :class="{ active: index === 0 }">
-          <img :src="item.image" class="d-block w-100" :alt="item.title ?? ''"/>
+          <img :src="item.image" class="d-block w-100" :alt="item.title ?? ''" />
           <div class="carousel-caption">
             <h5>{{ item.title }}</h5>
             <p>{{ item.description }}</p>
@@ -80,14 +87,14 @@ const id = useId();
 
 let carousel = null;
 onMounted(() => {
-    carousel = new Carousel(`#${id}`, {
-      interval: props.interval,
-      keyboard: props.keyboard,
-      pause: props.pause,
-      ride: props.ride,
-      touch: props.touch,
-      wrap: props.wrap
-    });
+  carousel = new Carousel(`#${id}`, {
+    interval: props.interval,
+    keyboard: props.keyboard,
+    pause: props.pause,
+    ride: props.ride,
+    touch: props.touch,
+    wrap: props.wrap
+  });
 });
 
 onBeforeUnmount(() => {

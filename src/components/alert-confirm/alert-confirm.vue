@@ -1,7 +1,14 @@
 <template>
   <Transition name="bv-fadeIn" appear @after-leave="$emit('destroy')">
-    <div ref="elementRef" v-show="visible" class="bv-alert-confirm d-flex justify-content-center align-items-start"
-      tabindex="-1" role="alertdialog" aria-modal="true" :aria-label="props.message">
+    <div
+      ref="elementRef"
+      v-show="visible"
+      class="bv-alert-confirm d-flex justify-content-center align-items-start"
+      tabindex="-1"
+      role="alertdialog"
+      aria-modal="true"
+      :aria-label="props.message"
+    >
       <div class="shadow rounded bg-body p-3 col-10 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
         <div class="d-flex justify-content-center align-items-center">
           <div class="me-2">
@@ -45,11 +52,11 @@ onMounted(() => {
   savedOverflow = document.body.style.overflow;
   savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  document.body.style.overflow = 'hidden';
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
   }
 
   nextTick(() => {
@@ -58,7 +65,6 @@ const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       focusTrapInstance = createFocusTrap(elementRef.value, {
         initialFocus: false,
         fallbackFocus: elementRef.value
-
       });
       focusTrapInstance.activate();
     }

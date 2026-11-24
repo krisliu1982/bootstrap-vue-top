@@ -1,29 +1,31 @@
 <template>
   <table class="table" :class="props.tableClass">
     <caption v-if="props.caption">
-      {{ props.caption }}
+      {{
+        props.caption
+      }}
     </caption>
     <slot></slot>
-      <colgroup>
+    <colgroup>
+      <template v-for="col in cols" :key="col.keyId">
+        <col :style="{ width: col.width }" />
+      </template>
+    </colgroup>
+    <thead :class="props.theadClass">
+      <tr>
         <template v-for="col in cols" :key="col.keyId">
-          <col :style="{ width: col.width }" />
+          <th scope="col">{{ col.header }}</th>
         </template>
-      </colgroup>
-      <thead :class="props.theadClass">
-        <tr>
-          <template v-for="col in cols" :key="col.keyId">
-            <th scope="col">{{ col.header }}</th>
-          </template>
-        </tr>
-      </thead>
-      <tbody :class="props.tbodyClass">
-        <TreetableNode :data="data"></TreetableNode>
-      </tbody>
-      <tfoot v-if="props.tfootData !== null" :class="props.tfootClass">
-        <tr>
-          <td v-for="item in props.tfootData">{{ item }}</td>
-        </tr>
-      </tfoot>
+      </tr>
+    </thead>
+    <tbody :class="props.tbodyClass">
+      <TreetableNode :data="data"></TreetableNode>
+    </tbody>
+    <tfoot v-if="props.tfootData !== null" :class="props.tfootClass">
+      <tr>
+        <td v-for="item in props.tfootData">{{ item }}</td>
+      </tr>
+    </tfoot>
   </table>
 </template>
 
@@ -71,7 +73,6 @@ const props = defineProps({
   }
 });
 
-
 const cols = reactive([]);
 provide(cols_key, cols);
 
@@ -80,5 +81,4 @@ provide(attrs_key, reactive({ key: props.attrKey, children: props.attrChildren }
 const expandKeys = reactive({});
 expandKeys[props.data[props.attrKey]] = true;
 provide(expand_keys, expandKeys);
-
 </script>

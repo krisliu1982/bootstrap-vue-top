@@ -14,7 +14,6 @@
 <script setup>
 import { shallowRef, watch, onBeforeUnmount } from 'vue';
 
-
 const props = defineProps({
   loading: {
     type: Boolean,

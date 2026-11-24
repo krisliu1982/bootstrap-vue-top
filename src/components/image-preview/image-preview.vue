@@ -2,20 +2,42 @@
   <Transition name="bv-fadeIn" appear @after-leave="$emit('destroy')">
     <div v-show="visible" ref="elementRef" class="bv-image-preview" tabindex="-1" role="dialog" aria-modal="true">
       <div class="d-flex w-100 h-100 justify-content-center align-items-center user-select-none">
-        <img :src="currentSrc" class="mw-100 mh-100" @load="handleLoad" @error="handleError" :style="{
-          transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})`,
-          opacity: isLoading ? 0 : 1,
-          transition: 'opacity 0.3s'
-        }" @mousedown="startDrag" @touchstart="startDragTouch" draggable="false" />
+        <img
+          :src="currentSrc"
+          class="mw-100 mh-100"
+          @load="handleLoad"
+          @error="handleError"
+          :style="{
+            transform: `translate(${offsetX}px, ${offsetY}px) scale(${scale})`,
+            opacity: isLoading ? 0 : 1,
+            transition: 'opacity 0.3s'
+          }"
+          @mousedown="startDrag"
+          @touchstart="startDragTouch"
+          draggable="false"
+        />
       </div>
-      <div v-show="isLoading" class="spinner-grow position-absolute top-50 start-50 translate-middle"
-        style="width: 3rem; height: 3rem" role="status">
+      <div
+        v-show="isLoading"
+        class="spinner-grow position-absolute top-50 start-50 translate-middle"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="position-absolute" style="top: 2rem; right: 2rem">
-        <button type="button" class="btn btn-secondary btn-lg"
-          style="--bs-btn-padding-x: 0.75rem; --bs-btn-padding-y: 0.75rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
-          aria-label="Close" @click="visible = false">
+        <button
+          type="button"
+          class="btn btn-secondary btn-lg"
+          style="
+            --bs-btn-padding-x: 0.75rem;
+            --bs-btn-padding-y: 0.75rem;
+            --bs-btn-line-height: 1;
+            --bs-btn-border-radius: 50%;
+          "
+          aria-label="Close"
+          @click="visible = false"
+        >
           <bi-x-lg />
         </button>
       </div>
@@ -68,7 +90,6 @@ const props = defineProps({
   }
 });
 
-
 const elementRef = shallowRef(null);
 let focusTrapInstance = null;
 
@@ -80,7 +101,8 @@ const isLoading = ref(false); //图片加载中
 const cache = new Map(); //图片缓存
 
 const errorIndex = ref(null);
-const PLACEHOLDER = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23f5f5f5%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3E图片加载失败%3C/text%3E%3C/svg%3E';
+const PLACEHOLDER =
+  'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23f5f5f5%22 width=%22200%22 height=%22200%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3E图片加载失败%3C/text%3E%3C/svg%3E';
 const currentSrc = computed(() => {
   if (errorIndex.value === index.value) return PLACEHOLDER;
   return props.data[index.value];
@@ -92,11 +114,11 @@ onMounted(() => {
   savedOverflow = document.body.style.overflow;
   savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  document.body.style.overflow = 'hidden';
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
   }
 
   nextTick(() => {
@@ -157,11 +179,9 @@ function next() {
 }
 
 function goto(_index) {
-
   reset();
 
   isLoading.value = !cache.has(_index);
-
 }
 
 const handleLoad = () => {

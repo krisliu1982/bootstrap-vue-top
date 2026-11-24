@@ -146,7 +146,7 @@
           <div class="container">
             <a class="navbar-brand" href="#">
               <img
-                src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg"
+                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
                 alt="Bootstrap"
                 width="30"
                 height="24"
@@ -168,7 +168,7 @@
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img
-                src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg"
+                src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
                 alt="Logo"
                 width="30"
                 height="24"
@@ -920,7 +920,7 @@ const brand2Code = `
 <nav class="navbar bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg" 
+      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
         alt="Bootstrap" width="30" height="24">
     </a>
   </div>
@@ -930,7 +930,7 @@ const brand3Code = `
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://bs53.bootstrap-vue.top/assets/brand/bootstrap-logo.svg" 
+      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
         alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
     </a>

@@ -1,6 +1,10 @@
 <template>
   <table class="table" :class="props.tableClass">
-    <caption v-if="caption">{{ props.caption }}</caption>
+    <caption v-if="caption">
+      {{
+        props.caption
+      }}
+    </caption>
     <slot></slot>
     <colgroup>
       <template v-for="col in cols" :key="col.keyId">
@@ -14,7 +18,11 @@
             <template v-if="col.type === null">
               <template v-if="col.sortable === null">{{ col.header }}</template>
               <template v-else>
-                <button class="p-0 border-0 bg-transparent text-nowrap" style="font-weight: inherit;" @click="_sortBy(col)">
+                <button
+                  class="p-0 border-0 bg-transparent text-nowrap"
+                  style="font-weight: inherit"
+                  @click="_sortBy(col)"
+                >
                   {{ col.header }}
                   <bi-arrow-down-up v-if="sortInfo.field !== col.field || sortInfo.order === null" />
                   <bi-sort-up-alt v-else-if="sortInfo.order === 'asc'" class="text-primary" />
@@ -26,8 +34,12 @@
               {{ col.header }}
             </template>
             <template v-else-if="col.type === 'checkbox'">
-              <input :id="`allcheckbox-${id}`" class="form-check-input" type="checkbox"
-                @change="_handleAllCheckboxChange" />
+              <input
+                :id="`allcheckbox-${id}`"
+                class="form-check-input"
+                type="checkbox"
+                @change="_handleAllCheckboxChange"
+              />
             </template>
             <template v-else-if="col.type === 'expand'"></template>
           </th>
@@ -43,16 +55,26 @@
             </template>
             <template v-else-if="col.type === 'index'">{{ index + 1 }}</template>
             <template v-else-if="col.type === 'checkbox'">
-              <input class="form-check-input" type="checkbox" :value="get(item, col.field)" v-model="checkboxSelectedKeys" />
+              <input
+                class="form-check-input"
+                type="checkbox"
+                :value="get(item, col.field)"
+                v-model="checkboxSelectedKeys"
+              />
             </template>
             <template v-else-if="col.type === 'radio'">
               <input class="form-check-input" type="radio" :value="get(item, col.field)" v-model="radioSelectedKey" />
             </template>
             <template v-else-if="col.type === 'expand'">
-              <button type="button" class="p-0 border-0 bg-transparent"
-                @click="_handleToggleExpandTr(get(item, col.field))">
-                <BiChevronRight class="expand-icon"
-                  :class="{ 'rotate-90': expandKeys.includes(get(item, col.field)) }" />
+              <button
+                type="button"
+                class="p-0 border-0 bg-transparent"
+                @click="_handleToggleExpandTr(get(item, col.field))"
+              >
+                <BiChevronRight
+                  class="expand-icon"
+                  :class="{ 'rotate-90': expandKeys.includes(get(item, col.field)) }"
+                />
               </button>
             </template>
             <component v-else :is="col.body" :item="item" :index="index" />
@@ -120,7 +142,7 @@ const sortInfo = reactive({
   type: null,
   field: null,
   order: null
-})
+});
 
 const items = computed(() => {
   if (sortInfo.type === null || sortInfo.type === 'remote' || sortInfo.order === null) {

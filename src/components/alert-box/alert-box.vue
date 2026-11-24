@@ -1,6 +1,12 @@
 <template>
   <Transition name="bv-fadeIn" appear @after-leave="$emit('destroy')">
-    <div v-show="visible" ref="elementRef" tabindex="-1" class="bv-alert-box d-flex justify-content-center align-items-start" role="alert">
+    <div
+      v-show="visible"
+      ref="elementRef"
+      tabindex="-1"
+      class="bv-alert-box d-flex justify-content-center align-items-start"
+      role="alert"
+    >
       <div class="shadow rounded bg-body p-3 col-10 col-sm-9 col-md-6 col-lg-4 col-xl-3" style="margin-top: 25vh">
         <div class="d-flex justify-content-center align-items-center">
           <div class="me-2">
@@ -39,11 +45,11 @@ onMounted(() => {
   savedOverflow = document.body.style.overflow;
   savedPaddingRight = document.body.style.paddingRight;
   if (document.body.scrollHeight > window.innerHeight) {
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  document.body.style.overflow = 'hidden';
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
   }
 
   nextTick(() => {

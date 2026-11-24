@@ -16,7 +16,7 @@ const props = defineProps({
     type: String,
     default: 'auto'
   },
-    tree: { type: Boolean, default: false }
+  tree: { type: Boolean, default: false }
 });
 
 const cols = inject(cols_key);
@@ -29,7 +29,7 @@ cols.push({
   header: props.header,
   field: props.field,
   width: props.width,
-  tree: props.tree, 
+  tree: props.tree,
   body
 });
 

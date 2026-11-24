@@ -26,11 +26,11 @@
     </h2>
     <p>
       <code>bv-tabs</code> 组件默认选中第一个标签页，你也可以通过
-      <code>init-active-index</code> 属性来指定当前选中的标签页。
+      <code>active-index</code> 属性来指定当前选中的标签页。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-tabs :init-active-index="0">
+        <bv-tabs :active-index="0">
           <bv-tab-pane label="Home">
             <p>
               Home-This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle
@@ -453,7 +453,7 @@ function handleShown(index) {
 
 const exampleCode = `
 <template>
-  <bv-tabs :init-active-index="0">
+  <bv-tabs :active-index="0">
     <bv-tab-pane label="Home">
         ...
     </bv-tab-pane>

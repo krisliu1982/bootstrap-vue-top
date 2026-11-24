@@ -11,7 +11,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 
-
 const props = defineProps({
   color: {
     type: String,

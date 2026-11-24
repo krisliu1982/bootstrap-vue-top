@@ -24,8 +24,12 @@
     </template>
   </tr>
   <template v-if="isExpand && isFolder">
-    <TreetableNode v-for="data1 in props.data[attrs.children]" :data="data1" :level="props.level + 1"
-      :key="data1[attrs.key]" />
+    <TreetableNode
+      v-for="data1 in props.data[attrs.children]"
+      :data="data1"
+      :level="props.level + 1"
+      :key="data1[attrs.key]"
+    />
   </template>
 </template>
 

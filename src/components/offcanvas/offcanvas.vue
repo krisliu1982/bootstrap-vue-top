@@ -1,10 +1,22 @@
 <template>
-  <div :class="props.offcanvasClass" :style="props.offcanvasStyle" tabindex="-1" :id="id" role="dialog" aria-modal="true"
-    :aria-labelledby="`${id}Label`">
+  <div
+    :class="props.offcanvasClass"
+    :style="props.offcanvasStyle"
+    tabindex="-1"
+    :id="id"
+    role="dialog"
+    aria-modal="true"
+    :aria-labelledby="`${id}Label`"
+  >
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" :id="`${id}Label`">{{ props.title }}</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" :data-bs-target="`#${id}`"
-        aria-label="Close"></button>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        :data-bs-target="`#${id}`"
+        aria-label="Close"
+      ></button>
     </div>
     <div class="offcanvas-body">
       <slot></slot>
@@ -40,14 +52,14 @@ const props = defineProps({
 
 let offcanvas = null;
 onMounted(() => {
-    const offcanvasEl = document.getElementById(id);
-    offcanvas = new Offcanvas(offcanvasEl, {
-      backdrop: props.backdrop
-    });
+  const offcanvasEl = document.getElementById(id);
+  offcanvas = new Offcanvas(offcanvasEl, {
+    backdrop: props.backdrop
+  });
 
-    offcanvasEl.addEventListener('shown.bs.offcanvas', (event) => {
-      emit('offcanvas-shown');
-    });
+  offcanvasEl.addEventListener('shown.bs.offcanvas', (event) => {
+    emit('offcanvas-shown');
+  });
 });
 
 onBeforeUnmount(() => {

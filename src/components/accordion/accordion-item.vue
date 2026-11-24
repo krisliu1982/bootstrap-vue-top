@@ -2,7 +2,7 @@
 <script setup>
 import { inject, onMounted, onBeforeUnmount, useId, useSlots, nextTick } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
-import { Collapse } from 'bootstrap'
+import { Collapse } from 'bootstrap';
 
 const props = defineProps({
   header: {
@@ -23,7 +23,7 @@ onMounted(async () => {
   await nextTick();
   const el = document.getElementById(keyId);
   if (el) new Collapse(el, { toggle: false });
-})
+});
 
 onBeforeUnmount(() => {
   const el = document.getElementById(keyId);

@@ -19,10 +19,10 @@
     <h2 id="accordion-base">
       基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#accordion-base"> </a>
     </h2>
-    <p>默认展开单个面板。通过 <code>init-active-index</code> 初始打开第几个面板。</p>
+    <p>默认展开单个面板。通过 <code>active-index</code> 初始打开第几个面板。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-accordion :init-active-index="0">
+        <bv-accordion :active-index="0">
           <bv-accordion-item header="Accordion Item #1">
             <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin
             adds the appropriate classes that we use to style each element. These classes control the overall
@@ -137,7 +137,7 @@
 <script setup>
 const baseCode = `
 <template>
-  <bv-accordion :init-active-index="0">
+  <bv-accordion :active-index="0">
     <bv-accordion-item header="Accordion Item #1">
         ...
     </bv-accordion-item>

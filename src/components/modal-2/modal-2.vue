@@ -70,11 +70,11 @@ function open() {
     savedOverflow = document.body.style.overflow;
     savedPaddingRight = document.body.style.paddingRight;
     if (document.body.scrollHeight > window.innerHeight) {
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  document.body.style.overflow = 'hidden';
-  if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = 'hidden';
+      if (scrollbarWidth > 0) {
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+      }
     }
   }
 

@@ -43,8 +43,12 @@ let previousFocus = null;
 let modalEl = null;
 let modal = null;
 
-function onShow() { previousFocus = document.activeElement; }
-function onShown() { emit('modal-shown'); }
+function onShow() {
+  previousFocus = document.activeElement;
+}
+function onShown() {
+  emit('modal-shown');
+}
 function onHide() {
   if (document.activeElement && modalEl.contains(document.activeElement)) {
     document.activeElement.blur();

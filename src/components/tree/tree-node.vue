@@ -9,11 +9,17 @@
         <template v-if="mode === 'base'">
           <button type="button" class="node-content_link focus-ring" @click="handleNodeClick(props.data[attrs.key])">
             {{ props.data[attrs.label] }}
-          </button> </template>
+          </button>
+        </template>
         <template v-else-if="mode === 'checkbox'">
           <div class="p-1">
-            <input class="form-check-input" type="checkbox" :value="data[attrs.key]" :id="boxId"
-              v-model="checkboxSelectedKeys" />
+            <input
+              class="form-check-input"
+              type="checkbox"
+              :value="data[attrs.key]"
+              :id="boxId"
+              v-model="checkboxSelectedKeys"
+            />
             <label class="form-check-label px-2" :for="boxId">
               {{ props.data[attrs.label] }}
             </label>
@@ -21,8 +27,13 @@
         </template>
         <template v-else-if="mode === 'radio'">
           <div class="p-1">
-            <input class="form-check-input" type="radio" :value="props.data[attrs.key]" :id="boxId"
-              v-model="radioSelectedKey" />
+            <input
+              class="form-check-input"
+              type="radio"
+              :value="props.data[attrs.key]"
+              :id="boxId"
+              v-model="radioSelectedKey"
+            />
             <label class="form-check-label px-2" :for="boxId">
               {{ props.data[attrs.label] }}
             </label>
@@ -32,8 +43,12 @@
     </div>
     <template v-if="isFolder">
       <ul v-show="isExpand" class="list-unstyled">
-        <TreeNode v-for="data1 in data[attrs.children]" :data="data1" :level="props.level + 1"
-          :key="data1[attrs.key]" />
+        <TreeNode
+          v-for="data1 in data[attrs.children]"
+          :data="data1"
+          :level="props.level + 1"
+          :key="data1[attrs.key]"
+        />
       </ul>
     </template>
   </li>
@@ -41,7 +56,14 @@
 
 <script setup>
 import { ref, computed, inject, useId } from 'vue';
-import { attrs_key, mode_key, expand_level_key, radio_selected_Key, checkbox_selected_keys, node_click_key } from './tree-keys.js';
+import {
+  attrs_key,
+  mode_key,
+  expand_level_key,
+  radio_selected_Key,
+  checkbox_selected_keys,
+  node_click_key
+} from './tree-keys.js';
 
 const props = defineProps({
   data: {

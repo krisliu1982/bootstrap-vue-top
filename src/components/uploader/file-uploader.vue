@@ -10,7 +10,14 @@
         <button type="button" class="p-0 border-0 bg-transparent" @click="handleRemove(index)"><bi-x-lg /></button>
       </li>
     </ul>
-    <input ref="fileRef" type="file" :multiple="props.multiple" name="file" style="display: none" @change="handleChange" />
+    <input
+      ref="fileRef"
+      type="file"
+      :multiple="props.multiple"
+      name="file"
+      style="display: none"
+      @change="handleChange"
+    />
   </div>
 </template>
 
