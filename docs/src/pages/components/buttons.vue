@@ -229,7 +229,7 @@
     </div>
 
     <h2 id="buttons-loading">加载按钮<a class="anchor-link" aria-label="Link to this section: 加载按钮" href="#buttons-loading"> </a></h2>
-    <p>在按钮内部使用加载指示器来表示某个操作正在处理中或正在进行中。您还可以将加载指示器元素中的文字替换掉，并根据需要使用按钮上的文字。</p>
+    <p>在按钮内部使用加载动画来表示某个操作正在处理中或正在进行中。您还可以将加载动画元素中的文字替换掉，并根据需要使用按钮上的文字。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">

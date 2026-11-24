@@ -10,16 +10,16 @@
   </div>
 
   <div v-docsscrollspy data-docs-target="#docs-nav-offcanvas" class="docs-content">
-    <h1>Offcanvas 侧边栏</h1>
+    <h1>Offcanvas 抽屉</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://bs53.bootstrap-vue.top/components/offcanvas/" target="_blank">Bootstrap Offcanvas</a>，构建 <code>bv-offcanvas</code> 侧边栏组件。
+      <a href="https://bs53.bootstrap-vue.top/components/offcanvas/" target="_blank">Bootstrap Offcanvas</a>，构建 <code>bv-offcanvas</code> 抽屉组件。
     </p>
 
     <h2 id="offcanvas-example">基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#offcanvas-example"> </a></h2>
     <p>
       单击下面的按钮，通过调用组件
-      <code>toggle</code> 方法来打开一个侧边栏。
+      <code>toggle</code> 方法来打开一个抽屉。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -48,7 +48,7 @@
     <p>
       当设置
       <code>backdrop="static"</code>
-      时，点击页面外部并不会导致侧边栏关闭。点击下面的按钮即可进行尝试。
+      时，点击页面外部并不会导致抽屉关闭。点击下面的按钮即可进行尝试。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -59,7 +59,7 @@
     </div>
 
     <h2 id="offcanvas-placement">位置和大小<a class="anchor-link" aria-label="Link to this section: 位置和大小" href="#offcanvas-placement"> </a></h2>
-    <p>可以通过 <code>offcanvas-class</code> 设置侧边栏的位置, 一共有四个方向的设置 <code>start|end|top|bottom</code>。可以通过 <code>offcanvas-style</code> 设置 CSS 变量来改变高度和宽度。</p>
+    <p>可以通过 <code>offcanvas-class</code> 设置抽屉的位置, 一共有四个方向的设置 <code>start|end|top|bottom</code>。可以通过 <code>offcanvas-style</code> 设置 CSS 变量来改变高度和宽度。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
@@ -67,9 +67,9 @@
           <button type="button" class="btn btn-primary" @click="offcanvasTopRef.toggle()">Toggle top offcanvas</button>
           <button type="button" class="btn btn-primary" @click="offcanvasBottomRef.toggle()">Toggle bottom offcanvas</button>
         </div>
-        <bv-offcanvas ref="offcanvasEndRef" title="右边侧边栏" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;"> ... </bv-offcanvas>
-        <bv-offcanvas ref="offcanvasTopRef" title="顶部侧边栏" offcanvas-class="offcanvas offcanvas-top" offcanvas-style="--bs-offcanvas-height:75vh;"> ... </bv-offcanvas>
-        <bv-offcanvas ref="offcanvasBottomRef" title="底部侧边栏" offcanvas-class="offcanvas offcanvas-bottom" offcanvas-style="--bs-offcanvas-height:75vh;"> ... </bv-offcanvas>
+        <bv-offcanvas ref="offcanvasEndRef" title="右边抽屉" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;"> ... </bv-offcanvas>
+        <bv-offcanvas ref="offcanvasTopRef" title="顶部抽屉" offcanvas-class="offcanvas offcanvas-top" offcanvas-style="--bs-offcanvas-height:75vh;"> ... </bv-offcanvas>
+        <bv-offcanvas ref="offcanvasBottomRef" title="底部抽屉" offcanvas-class="offcanvas offcanvas-bottom" offcanvas-style="--bs-offcanvas-height:75vh;"> ... </bv-offcanvas>
       </div>
       <code-highlight type="vue" :code="positionCode" label="vue" />
     </div>
@@ -78,7 +78,7 @@
     <p>
       监听
       <code>offcanvas-shown</code>
-      事件处理侧边栏可见后进行相关操作，例如异步获取数据。
+      事件处理抽屉可见后进行相关操作，例如异步获取数据。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -176,17 +176,17 @@ const positionCode = `
     </button>
   </div>
 
-  <bv-offcanvas ref="offcanvasEndRef" title="右边侧边栏"
+  <bv-offcanvas ref="offcanvasEndRef" title="右边抽屉"
   offcanvas-class="offcanvas offcanvas-end"
   offcanvas-style="--bs-offcanvas-width:75vw;">
     ...
   </bv-offcanvas>
-  <bv-offcanvas ref="offcanvasTopRef" title="顶部侧边栏" 
+  <bv-offcanvas ref="offcanvasTopRef" title="顶部抽屉" 
   offcanvas-class="offcanvas offcanvas-top"
   offcanvas-style="--bs-offcanvas-height:75vh;">
     ...
   </bv-offcanvas>
-  <bv-offcanvas ref="offcanvasBottomRef" title="底部侧边栏"
+  <bv-offcanvas ref="offcanvasBottomRef" title="底部抽屉"
   offcanvas-class="offcanvas offcanvas-bottom" 
   offcanvas-style="--bs-offcanvas-height:75vh;">
     ...

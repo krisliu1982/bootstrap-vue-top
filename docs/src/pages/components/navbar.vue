@@ -13,7 +13,7 @@
       <a href="#navbar-responsive">响应式行为</a>
       <a href="#navbar-toggler">切换器</a>
       <a href="#navbar-external">外部内容</a>
-      <a href="#navbar-offcanvas">侧边栏导航</a>
+      <a href="#navbar-offcanvas">抽屉导航</a>
       <a href="#navbar-css">CSS Variables</a>
     </nav>
   </div>
@@ -682,7 +682,7 @@
       。理论上，这能让辅助技术用户直接从切换器跳转到它所控制的容器——但目前对此的支持相当不完善。
     </p>
 
-    <h2 id="navbar-offcanvas">侧边栏导航<a class="anchor-link" aria-label="Link to this section: 侧边栏导航" href="#navbar-offcanvas"> </a></h2>
+    <h2 id="navbar-offcanvas">抽屉导航<a class="anchor-link" aria-label="Link to this section: 抽屉导航" href="#navbar-offcanvas"> </a></h2>
     <p>
       使用
       <a href="/docs/components/offcanvas">offcanvas 组件</a>
@@ -690,7 +690,7 @@
       <code>.navbar-expand-*</code> 类来创建一个动态且灵活的导航侧栏。
     </p>
     <p>
-      在下面的示例中，若要创建一个在所有视口大小下始终保持折叠状态的侧边栏导航栏，请完全省略
+      在下面的示例中，若要创建一个在所有视口大小下始终保持折叠状态的抽屉导航栏，请完全省略
       <code>.navbar-expand-*</code> 类。
     </p>
     <div class="docs-example">

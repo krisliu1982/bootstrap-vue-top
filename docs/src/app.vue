@@ -25,14 +25,14 @@
                   <li><button class="dropdown-item" type="button" @click="fontSize = 'lg'">大型布局</button></li>
                 </ul>
               </div>
-              <a href="#" class="link-body-emphasis text-decoration-none" title="主题切换" @click.prevent="handleThemeChange">
+              <a href="#" role="button" class="link-body-emphasis text-decoration-none" title="主题切换" @click.prevent="handleThemeChange">
                 <bi-sun v-if="theme === 'light'" />
                 <bi-moon v-else />
               </a>
             </div>
           </div>
           <div class="d-lg-none">
-            <a href="#" class="link-body-emphasis fs-5" @click.prevent="navbarRef.toggle()">
+            <a href="#" role="button" class="link-body-emphasis fs-5" @click.prevent="navbarRef.toggle()">
               <bi-three-dots />
             </a>
           </div>
@@ -46,7 +46,7 @@
       <RouterLink to="/docs" class="list-group-item list-group-item-action">文档 v5.3</RouterLink>
       <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
       <a class="list-group-item list-group-item-action" href="https://cn.vuejs.org/" target="_blank">Vue</a>
-      <a href="#" class="list-group-item list-group-item-action" @click.prevent="handleThemeChange">
+      <a href="#" role="button" class="list-group-item list-group-item-action" @click.prevent="handleThemeChange">
         <bi-sun v-if="theme === 'light'" />
         <bi-moon v-else />
       </a>
@@ -156,7 +156,7 @@
                 <RouterLink to="/components/accordion" class="docs-sidebar-link" exact-active-class="active"> Accordion 手风琴</RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/components/alerts" class="docs-sidebar-link" exact-active-class="active">Alerts 警示 </RouterLink>
+                <RouterLink to="/components/alerts" class="docs-sidebar-link" exact-active-class="active">Alerts 警示框 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/components/alerts-box" class="docs-sidebar-link" exact-active-class="active"> Alerts Box 警示弹窗</RouterLink>
@@ -201,7 +201,7 @@
                 <RouterLink to="/components/image-preview" class="docs-sidebar-link" exact-active-class="active">ImagePreview 图片预览</RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/components/list-group" class="docs-sidebar-link" exact-active-class="active">List group 列表</RouterLink>
+                <RouterLink to="/components/list-group" class="docs-sidebar-link" exact-active-class="active">List group 列表组</RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/components/loading" class="docs-sidebar-link" exact-active-class="active">Loading 加载 </RouterLink>
@@ -219,7 +219,7 @@
                 <RouterLink to="/components/navs-tabs" class="docs-sidebar-link" exact-active-class="active">Navs &amp; tabs 导航标签</RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/components/offcanvas" class="docs-sidebar-link" exact-active-class="active"> Offcanvas 侧边栏</RouterLink>
+                <RouterLink to="/components/offcanvas" class="docs-sidebar-link" exact-active-class="active"> Offcanvas 抽屉</RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/components/pagination" class="docs-sidebar-link" exact-active-class="active"> Pagination 分页</RouterLink>
@@ -237,13 +237,13 @@
                 <RouterLink to="/components/scrollspy" class="docs-sidebar-link" exact-active-class="active"> Scrollspy 滚动监听</RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/components/spinners" class="docs-sidebar-link" exact-active-class="active"> Spinners 加载指示器</RouterLink>
+                <RouterLink to="/components/spinners" class="docs-sidebar-link" exact-active-class="active"> Spinners 加载动画</RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/components/tables" class="docs-sidebar-link" exact-active-class="active">Tables 表格 </RouterLink>
               </li>
               <li class="py-1">
-                <RouterLink to="/components/toasts" class="docs-sidebar-link" exact-active-class="active">Toasts 轻提示 </RouterLink>
+                <RouterLink to="/components/toasts" class="docs-sidebar-link" exact-active-class="active">Toasts 消息提示 </RouterLink>
               </li>
               <li class="py-1">
                 <RouterLink to="/components/tooltips" class="docs-sidebar-link" exact-active-class="active"> Tooltips 文字提示</RouterLink>

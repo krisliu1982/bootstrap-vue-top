@@ -11,14 +11,14 @@
   </div>
 
   <div v-docsscrollspy data-docs-target="#docs-nav-alerts" class="docs-content">
-    <h1>Alerts 警示</h1>
+    <h1>Alerts 警示框</h1>
     <p class="fs-4 fw-light">
       利用这少量但灵活多样的提示信息，为用户的常见操作提供相应的上下文反馈信息。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/components/alerts/" target="_blank">Bootstrap Alerts</a>
     </p>
 
     <h2 id="alerts-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#alerts-example"> </a></h2>
-    <p>“警示”可用于任何长度的文本，以及一个可选的关闭按钮。为了确保样式正确，请使用八个<strong>必需</strong>的上下文类之一（例如，<code>.alert-success</code>）。</p>
+    <p>“警示框”可用于任何长度的文本，以及一个可选的关闭按钮。为了确保样式正确，请使用八个<strong>必需</strong>的上下文类之一（例如，<code>.alert-success</code>）。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
@@ -45,7 +45,7 @@
     <p>
       使用
       <code>.alert-link</code>
-      实用类，可以在任何警示中快速提供匹配颜色的链接。
+      实用类，可以在任何警示框中快速提供匹配颜色的链接。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -86,7 +86,7 @@
     </div>
 
     <h2 id="alerts-att">附加内容<a class="anchor-link" aria-label="Link to this section: 附加内容" href="#alerts-att"> </a></h2>
-    <p>警示还可以包含其他HTML元素，如标题、段落和分隔符。</p>
+    <p>警示框还可以包含其他HTML元素，如标题、段落和分隔符。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="alert alert-success" role="alert">
@@ -108,7 +108,7 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">flexbox 工具</a>
       和
       <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>
-      来创建带有图标的警示。根据您的图标和内容，您可能需要添加更多工具或自定义样式。
+      来创建带有图标的警示框。根据您的图标和内容，您可能需要添加更多工具或自定义样式。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -128,13 +128,13 @@
         <a href="https://bs53.bootstrap-vue.top/components/close-button" target="_blank">关闭按钮</a>
         和
         <code>.alert-dismissible</code>
-        类，该类会在警示的右侧添加额外的填充，并定位关闭按钮。
+        类，该类会在警示框的右侧添加额外的填充，并定位关闭按钮。
       </li>
       <li>
         在关闭按钮上，添加
         <code>data-bs-dismiss="alert"</code> 属性，以触发 JavaScript 功能。请务必使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上都能正常工作。
       </li>
-      <li>要在关闭警示时为其设置动画效果，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
+      <li>要在关闭警示框时为其设置动画效果，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
     </ul>
     <div class="docs-example">
       <div class="docs-example-data">

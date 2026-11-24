@@ -8,15 +8,15 @@
   </div>
 
   <div v-docsscrollspy data-docs-target="#docs-nav-spinners" class="docs-content">
-    <h1>Spinners 加载指示器</h1>
+    <h1>Spinners 加载动画</h1>
     <p class="fs-4 fw-light">
-      使用基于 HTML、CSS 构建且无需 JavaScript 的 Bootstrap 加载指示器来指示组件或页面的加载状态。了解更多请阅读
+      使用基于 HTML、CSS 构建且无需 JavaScript 的 Bootstrap 加载动画来指示组件或页面的加载状态。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/components/spinners/" target="_blank">Bootstrap Spinners</a>
     </p>
 
     <h2 id="spinners-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#spinners-about"> </a></h2>
     <p>
-      “加载指示器”可用于在您的项目中展示加载状态。它们完全由 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript 即可创建它们。不过，您需要一些自定义的 JavaScript
+      “加载动画”可用于在您的项目中展示加载状态。它们完全由 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript 即可创建它们。不过，您需要一些自定义的 JavaScript
       来控制其显示状态。通过我们出色的实用类，您可以轻松地自定义其外观、对齐方式和尺寸。
     </p>
     <p>

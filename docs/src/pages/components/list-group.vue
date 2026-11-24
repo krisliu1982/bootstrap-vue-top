@@ -16,7 +16,7 @@
   </div>
 
   <div v-docsscrollspy data-docs-target="#docs-nav-list-group" class="docs-content">
-    <h1>List group 列表</h1>
+    <h1>List group 列表组</h1>
     <p class="fs-4 fw-light">
       列表是一种灵活且强大的组件，用于展示一系列内容。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/components/list-group/" target="_blank">Bootstrap List group</a>
