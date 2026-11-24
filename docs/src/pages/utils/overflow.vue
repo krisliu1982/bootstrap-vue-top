@@ -12,36 +12,22 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/overflow/" target="_blank">Bootstrap Overflow</a>
     </p>
 
-    <h2 id="overflow-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#overflow-about"> </a>
-    </h2>
+    <h2 id="overflow-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#overflow-about"> </a></h2>
     <p>通过四个默认值和类来动态调整 <code>overflow</code> 属性。这些类默认情况下并不具备响应式效果。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
           <div class="overflow-auto p-3 border" style="width: 150px; height: 100px">
-            <p>
-              This is an example of using <code>.overflow-auto</code> on an element with set width and height
-              dimensions. By design, this content will vertically scroll.
-            </p>
+            <p>This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.</p>
           </div>
           <div class="overflow-hidden p-3 border" style="width: 150px; height: 100px">
-            <p>
-              This is an example of using <code>.overflow-hidden</code> on an element with set width and height
-              dimensions.
-            </p>
+            <p>This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.</p>
           </div>
           <div class="overflow-visible p-3 border" style="width: 150px; height: 100px">
-            <p>
-              This is an example of using <code>.overflow-visible</code> on an element with set width and height
-              dimensions.
-            </p>
+            <p>This is an example of using <code>.overflow-visible</code> on an element with set width and height dimensions.</p>
           </div>
           <div class="overflow-scroll p-3 border" style="width: 150px; height: 100px">
-            <p>
-              This is an example of using <code>.overflow-scroll</code> on an element with set width and height
-              dimensions.
-            </p>
+            <p>This is an example of using <code>.overflow-scroll</code> on an element with set width and height dimensions.</p>
           </div>
         </div>
       </div>

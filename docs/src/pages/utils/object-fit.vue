@@ -11,24 +11,17 @@
   <div v-docsscrollspy data-docs-target="#docs-nav-object-fit" class="docs-content">
     <h1>Object fit 对象拟合</h1>
     <p class="fs-4 fw-light">
-      使用“对象拟合”工具来调整被替换元素（如 <code>&lt;img&gt;</code> 或
-      <code>&lt;video&gt;</code> 等）的内容应如何根据其容器进行调整以实现适配。了解更多请阅读
+      使用“对象拟合”工具来调整被替换元素（如 <code>&lt;img&gt;</code> 或 <code>&lt;video&gt;</code> 等）的内容应如何根据其容器进行调整以实现适配。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/utilities/object-fit/" target="_blank">Bootstrap Object fit</a>
     </p>
 
-    <h2 id="object-fit-work">
-      工作方式<a class="anchor-link" aria-label="Link to this section: 工作方式" href="#object-fit-work"> </a>
-    </h2>
+    <h2 id="object-fit-work">工作方式<a class="anchor-link" aria-label="Link to this section: 工作方式" href="#object-fit-work"> </a></h2>
     <p>
       通过我们的响应式 <code>object-fit</code> 实用类来更改
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank"
-        ><code>object-fit</code> 属性</a
-      >
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank"><code>object-fit</code> 属性</a>
       的值。此属性能让内容以多种方式填充父容器，例如保持纵横比或拉伸以尽可能占据更多空间。
     </p>
-    <p>
-      对于 <code>object-fit</code> 的值，其对应的类名采用的格式为 <code>.object-fit-{value}</code> 。可供选择的值有：
-    </p>
+    <p>对于 <code>object-fit</code> 的值，其对应的类名采用的格式为 <code>.object-fit-{value}</code> 。可供选择的值有：</p>
     <ul class="docs-content-list">
       <li><code>contain</code></li>
       <li><code>cover</code></li>
@@ -37,9 +30,7 @@
       <li><code>none</code></li>
     </ul>
 
-    <h2 id="object-fit-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#object-fit-example"> </a>
-    </h2>
+    <h2 id="object-fit-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#object-fit-example"> </a></h2>
     <p>
       将 <code>object-fit-{值}</code> 类添加到
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank">replaced element</a>
@@ -88,13 +79,10 @@
       <code-highlight type="html" :code="exampleCode" label="html" />
     </div>
 
-    <h2 id="object-fit-responsive">
-      响应性<a class="anchor-link" aria-label="Link to this section: 响应性" href="#object-fit-responsive"> </a>
-    </h2>
+    <h2 id="object-fit-responsive">响应性<a class="anchor-link" aria-label="Link to this section: 响应性" href="#object-fit-responsive"> </a></h2>
     <p>
       对于每个“object-fit”值，还存在相应的响应式变体，其格式为
-      <code>.object-fit-{breakpoint}-{value}</code
-      >，对应的断点缩写有：<code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和
+      <code>.object-fit-{breakpoint}-{value}</code>，对应的断点缩写有：<code>sm</code>、<code>md</code>、<code>lg</code>、<code>xl</code> 和
       <code>xxl</code>。您可以根据需要将多个类组合使用以实现不同的效果。
     </p>
     <div class="docs-example">
@@ -140,13 +128,8 @@
       <code-highlight type="html" :code="responsiveCode" label="html" />
     </div>
 
-    <h2 id="object-fit-video">
-      视频<a class="anchor-link" aria-label="Link to this section: 视频" href="#object-fit-video"> </a>
-    </h2>
-    <p>
-      <code>.object-fit-{value}</code> 和响应式的 <code>.object-fit-{breakpoint}-{value}</code> 样式也适用于
-      <code>&lt;video&gt;</code> 元素。
-    </p>
+    <h2 id="object-fit-video">视频<a class="anchor-link" aria-label="Link to this section: 视频" href="#object-fit-video"> </a></h2>
+    <p><code>.object-fit-{value}</code> 和响应式的 <code>.object-fit-{breakpoint}-{value}</code> 样式也适用于 <code>&lt;video&gt;</code> 元素。</p>
     <code-highlight type="html" :code="videoCode" label="html" />
   </div>
 </template>

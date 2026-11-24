@@ -9,13 +9,8 @@
     <h1>Alerts Confirm 警示确认窗</h1>
     <p class="fs-4 fw-light">模拟浏览器原生 confirm 确认提示框而实现的弹窗组件, 用于重要信息确认。</p>
 
-    <h2 id="alerts-confirm-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#alerts-confirm-base"> </a>
-    </h2>
-    <p>
-      通过提供 <code>alertConfirm</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 你可以通过
-      <code>message</code> 属性来设置警示内容, <code>confirm</code> 属性设置确认回调函数。
-    </p>
+    <h2 id="alerts-confirm-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#alerts-confirm-base"> </a></h2>
+    <p>通过提供 <code>alertConfirm</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 你可以通过 <code>message</code> 属性来设置警示内容, <code>confirm</code> 属性设置确认回调函数。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">

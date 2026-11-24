@@ -13,9 +13,7 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/sizing/" target="_blank">Bootstrap Sizing</a>
     </p>
 
-    <h2 id="sizing-parent">
-      相对于父级<a class="anchor-link" aria-label="Link to this section: 相对于父级" href="#sizing-parent"> </a>
-    </h2>
+    <h2 id="sizing-parent">相对于父级<a class="anchor-link" aria-label="Link to this section: 相对于父级" href="#sizing-parent"> </a></h2>
     <p>默认情况下支持 25%、50%、75%、100% 以及 auto。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -53,9 +51,7 @@
       <code-highlight type="html" :code="parent3Code" label="html" />
     </div>
 
-    <h2 id="sizing-viewport">
-      相对于视口<a class="anchor-link" aria-label="Link to this section: 相对于视口" href="#sizing-viewport"> </a>
-    </h2>
+    <h2 id="sizing-viewport">相对于视口<a class="anchor-link" aria-label="Link to this section: 相对于视口" href="#sizing-viewport"> </a></h2>
     <p>您还可以使用工具来根据视口设定宽度和高度。</p>
     <code-highlight type="html" :code="viewportCode" label="html" />
   </div>

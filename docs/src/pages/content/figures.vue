@@ -12,16 +12,13 @@
       <a href="https://bs53.bootstrap-vue.top/content/figures/" target="_blank">Bootstrap Figures</a>
     </p>
 
-    <h2 id="figure-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#figure-example"> </a>
-    </h2>
+    <h2 id="figure-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#figure-example"> </a></h2>
     <p>
       每当你需要展示一段内容时——比如一张带有可选说明的图片，可以考虑使用
       <code>&lt;figure&gt;</code>。
     </p>
     <p>
-      使用附带的 <code>.figure</code>、<code>.figure-img</code> 和 <code>.figure-caption</code> 类为 HTML5 的
-      <code>&lt;figure&gt;</code> 和
+      使用附带的 <code>.figure</code>、<code>.figure-img</code> 和 <code>.figure-caption</code> 类为 HTML5 的 <code>&lt;figure&gt;</code> 和
       <code>&lt;figcaption&gt;</code>
       元素提供一些基本样式。图中的图像没有明确的大小，因此请务必在
       <code>&lt;img&gt;</code> 中添加 <code>.img-fluid</code> 类，以使其具有响应式特性。

@@ -13,9 +13,7 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/interactions/" target="_blank">Bootstrap Interactions</a>
     </p>
 
-    <h2 id="interactions-selection">
-      文本选择<a class="anchor-link" aria-label="Link to this section: 文本选择" href="#interactions-selection"> </a>
-    </h2>
+    <h2 id="interactions-selection">文本选择<a class="anchor-link" aria-label="Link to this section: 文本选择" href="#interactions-selection"> </a></h2>
     <p>改变用户与内容进行交互时所选择内容的方式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -26,29 +24,23 @@
       <code-highlight type="html" :code="selectionCode" label="html" />
     </div>
 
-    <h2 id="interactions-pointer">
-      指针事件<a class="anchor-link" aria-label="Link to this section: 指针事件" href="#interactions-pointer"> </a>
-    </h2>
+    <h2 id="interactions-pointer">指针事件<a class="anchor-link" aria-label="Link to this section: 指针事件" href="#interactions-pointer"> </a></h2>
     <p>Bootstrap 提供了 <code>.pe-none</code> 和 <code>.pe-auto</code> 这两个类，用于阻止或添加元素交互效果。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">此链接</a>无法被点击。</p>
         <p><a href="#" class="pe-auto">此链接</a>可以被点击（这是默认行为）。</p>
         <p class="pe-none">
-          <a href="#" tabindex="-1" aria-disabled="true">此链接</a>由于其父元素继承了
-          <code>pointer-events</code> 属性而无法被点击。然而，<a href="#" class="pe-auto">此链接</a>具有
+          <a href="#" tabindex="-1" aria-disabled="true">此链接</a>由于其父元素继承了 <code>pointer-events</code> 属性而无法被点击。然而，<a href="#" class="pe-auto">此链接</a>具有
           <code>pe-auto</code> 类，因此可以被点击。
         </p>
       </div>
       <code-highlight type="html" :code="pointerCode" label="html" />
       <p>
-        <code>.pe-none</code> 类（以及它所设置的 <code>pointer-events</code> CSS
-        属性）仅能阻止指针（鼠标、触控笔、触摸设备）的交互操作。带有
+        <code>.pe-none</code> 类（以及它所设置的 <code>pointer-events</code> CSS 属性）仅能阻止指针（鼠标、触控笔、触摸设备）的交互操作。带有
         <code>.pe-none</code>
         样式的链接和控件，默认情况下对于键盘用户来说仍然是可聚焦和可操作的。若要确保即使对于键盘用户而言它们也能完全处于中立状态，您可能需要添加其他属性，例如
-        <code>tabindex="-1"</code>（以防止它们获得键盘焦点）和
-        <code>aria-disabled="true"</code>（向辅助技术传达它们实际上已被禁用的事实），并且可能还需要使用 JavaScript
-        来完全阻止它们的可操作性。
+        <code>tabindex="-1"</code>（以防止它们获得键盘焦点）和 <code>aria-disabled="true"</code>（向辅助技术传达它们实际上已被禁用的事实），并且可能还需要使用 JavaScript 来完全阻止它们的可操作性。
       </p>
       <p>如果可能的话，较为简单的解决办法是：</p>
       <ul class="docs-content-list">

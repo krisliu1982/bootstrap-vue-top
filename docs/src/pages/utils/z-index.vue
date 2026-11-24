@@ -12,17 +12,13 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/z-index/" target="_blank">Bootstrap Z-index</a>
     </p>
 
-    <h2 id="z-index-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#z-index-about"> </a>
-    </h2>
+    <h2 id="z-index-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#z-index-about"> </a></h2>
     <p>
-      使用 <code>z-index</code> 元素属性可将多个元素叠放在一起。此功能需要元素的 <code>position</code> 属性不是
-      <code>static</code> ，该属性可以通过自定义样式设置，或者使用我们的
+      使用 <code>z-index</code> 元素属性可将多个元素叠放在一起。此功能需要元素的 <code>position</code> 属性不是 <code>static</code> ，该属性可以通过自定义样式设置，或者使用我们的
       <a href="https://bs53.bootstrap-vue.top/utilities/position/" target="_blank">position utilities</a> 来实现。
     </p>
     <p class="text-bg-info">
-      我们把这些称为“低级别” <code>z-index</code> 工具，因为它们的默认值为 <code>-1</code> 到
-      <code>3</code> ，我们用这些值来布局重叠的组件。而高级别的
+      我们把这些称为“低级别” <code>z-index</code> 工具，因为它们的默认值为 <code>-1</code> 到 <code>3</code> ，我们用这些值来布局重叠的组件。而高级别的
       <code>z-index</code> 值则用于诸如模态框和提示框之类的覆盖式组件。
     </p>
     <div class="docs-example">

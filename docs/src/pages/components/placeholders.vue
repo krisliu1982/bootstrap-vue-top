@@ -17,18 +17,13 @@
       <a href="https://bs53.bootstrap-vue.top/components/placeholders/" target="_blank">Bootstrap Placeholders</a>
     </p>
 
-    <h2 id="placeholders-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#placeholders-about"> </a>
-    </h2>
+    <h2 id="placeholders-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#placeholders-about"> </a></h2>
     <p>
-      占位符可用于提升您的应用程序的使用体验。它们仅通过 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript
-      即可创建它们。不过，您需要一些自定义的 JavaScript
+      占位符可用于提升您的应用程序的使用体验。它们仅通过 HTML 和 CSS 构建而成，这意味着您无需任何 JavaScript 即可创建它们。不过，您需要一些自定义的 JavaScript
       来控制其显示状态。其外观、颜色和尺寸都可以通过我们的实用类轻松进行自定义设置。
     </p>
 
-    <h2 id="placeholders-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#placeholders-example"> </a>
-    </h2>
+    <h2 id="placeholders-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#placeholders-example"> </a></h2>
     <p>
       使用 <code>.placeholder</code> 类和网格列类（例如 <code>.col-6</code>）创建占位符，以设置
       <code>width</code>
@@ -53,13 +48,10 @@
     <p class="text-bg-info">
       使用
       <code>aria-hidden="true"</code>
-      只表示该元素应隐藏给屏幕阅读器。占位符的“加载”行为取决于作者实际如何使用占位符样式、如何计划进行更新等。可能需要一些
-      JavaScript 代码来“切换”占位符的状态，并向辅助技术用户告知更新情况。
+      只表示该元素应隐藏给屏幕阅读器。占位符的“加载”行为取决于作者实际如何使用占位符样式、如何计划进行更新等。可能需要一些 JavaScript 代码来“切换”占位符的状态，并向辅助技术用户告知更新情况。
     </p>
 
-    <h2 id="placeholders-width">
-      宽度<a class="anchor-link" aria-label="Link to this section: 宽度" href="#placeholders-width"> </a>
-    </h2>
+    <h2 id="placeholders-width">宽度<a class="anchor-link" aria-label="Link to this section: 宽度" href="#placeholders-width"> </a></h2>
     <p>您可以通过网格列类、宽度工具或内联样式来更改 <code>width</code> 的值。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -70,13 +62,8 @@
       <code-highlight type="html" :code="widthCode" label="html" />
     </div>
 
-    <h2 id="placeholders-color">
-      颜色<a class="anchor-link" aria-label="Link to this section: 颜色" href="#placeholders-color"> </a>
-    </h2>
-    <p>
-      默认情况下，<code>placeholder</code> 使用的是
-      <code>currentColor</code>（当前颜色）。若要更改颜色或使用自定义类，可以对其进行设置。
-    </p>
+    <h2 id="placeholders-color">颜色<a class="anchor-link" aria-label="Link to this section: 颜色" href="#placeholders-color"> </a></h2>
+    <p>默认情况下，<code>placeholder</code> 使用的是 <code>currentColor</code>（当前颜色）。若要更改颜色或使用自定义类，可以对其进行设置。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <span class="placeholder col-12"></span>
@@ -93,15 +80,10 @@
       <code-highlight type="html" :code="colorCode" label="html" />
     </div>
 
-    <h2 id="placeholders-size">
-      尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#placeholders-size"> </a>
-    </h2>
+    <h2 id="placeholders-size">尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#placeholders-size"> </a></h2>
     <p>
       <code>.placeholder</code>
-      的大小取决于其父元素的排版样式。您可以使用尺寸修饰符对其进行自定义：<code>.placeholder-lg</code>、<code
-        >.placeholder-sm</code
-      >
-      或 <code>.placeholder-xs</code>。
+      的大小取决于其父元素的排版样式。您可以使用尺寸修饰符对其进行自定义：<code>.placeholder-lg</code>、<code>.placeholder-sm</code> 或 <code>.placeholder-xs</code>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -113,9 +95,7 @@
       <code-highlight type="html" :code="sizeCode" label="html" />
     </div>
 
-    <h2 id="placeholders-animation">
-      动画<a class="anchor-link" aria-label="Link to this section: 动画" href="#placeholders-animation"> </a>
-    </h2>
+    <h2 id="placeholders-animation">动画<a class="anchor-link" aria-label="Link to this section: 动画" href="#placeholders-animation"> </a></h2>
     <p>
       使用 <code>.placeholder-glow</code> 或
       <code>.placeholder-wave</code>

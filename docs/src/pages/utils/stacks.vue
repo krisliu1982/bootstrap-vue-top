@@ -15,22 +15,16 @@
       <a href="https://bs53.bootstrap-vue.top/helpers/stacks/" target="_blank">Bootstrap Stacks</a>
     </p>
     <p>
-      “堆栈”为应用一系列 flexbox 属性提供了便捷的途径，从而能够快速、轻松地在 Bootstrap
-      中创建布局。该概念及实现均归功于开源项目<a href="https://almonk.github.io/pylon/" target="_blank">Pylon 项目</a>。
+      “堆栈”为应用一系列 flexbox 属性提供了便捷的途径，从而能够快速、轻松地在 Bootstrap 中创建布局。该概念及实现均归功于开源项目<a href="https://almonk.github.io/pylon/" target="_blank">Pylon 项目</a
+      >。
     </p>
     <p class="text-bg-warning">
-      <strong>注意！</strong> 在 Safari 14.5 之前，使用 flexbox
-      实现间距功能的功能并不支持，因此请考虑确认您所使用的浏览器是否支持该功能。网格布局应该不会出现任何问题。
+      <strong>注意！</strong> 在 Safari 14.5 之前，使用 flexbox 实现间距功能的功能并不支持，因此请考虑确认您所使用的浏览器是否支持该功能。网格布局应该不会出现任何问题。
       <a href="https://caniuse.com/flexbox-gap" target="_blank">了解更多</a>。
     </p>
 
-    <h2 id="stacks-vertical">
-      垂直<a class="anchor-link" aria-label="Link to this section: 垂直" href="#stacks-vertical"> </a>
-    </h2>
-    <p>
-      使用 <code>.vstack</code> 可以创建垂直布局。默认情况下，堆叠的项目是全宽的。使用
-      <code>.gap-*</code> 通配符样式可以为项目之间添加间距。
-    </p>
+    <h2 id="stacks-vertical">垂直<a class="anchor-link" aria-label="Link to this section: 垂直" href="#stacks-vertical"> </a></h2>
+    <p>使用 <code>.vstack</code> 可以创建垂直布局。默认情况下，堆叠的项目是全宽的。使用 <code>.gap-*</code> 通配符样式可以为项目之间添加间距。</p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
         <div class="vstack gap-3">
@@ -42,13 +36,8 @@
       <code-highlight type="html" :code="verticalCode" label="html" />
     </div>
 
-    <h2 id="stacks-horizontal">
-      水平<a class="anchor-link" aria-label="Link to this section: 水平" href="#stacks-horizontal"> </a>
-    </h2>
-    <p>
-      对于水平布局，请使用 <code>.hstack</code> 。默认情况下，堆叠的项目会垂直居中，并且只会占用其所需的宽度。使用
-      <code>.gap-*</code> 通配符样式来为项目之间添加间距。
-    </p>
+    <h2 id="stacks-horizontal">水平<a class="anchor-link" aria-label="Link to this section: 水平" href="#stacks-horizontal"> </a></h2>
+    <p>对于水平布局，请使用 <code>.hstack</code> 。默认情况下，堆叠的项目会垂直居中，并且只会占用其所需的宽度。使用 <code>.gap-*</code> 通配符样式来为项目之间添加间距。</p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
         <div class="hstack gap-3 flex-wrap">
@@ -70,9 +59,7 @@
       </div>
       <code-highlight type="html" :code="horizontal2Code" label="html" />
     </div>
-    <p>
-      并且使用了 <a href="https://bs53.bootstrap-vue.top/helpers/vertical-rule" target="_blank">垂直分隔线</a> ：
-    </p>
+    <p>并且使用了 <a href="https://bs53.bootstrap-vue.top/helpers/vertical-rule" target="_blank">垂直分隔线</a> ：</p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
         <div class="hstack gap-3 flex-wrap">
@@ -85,9 +72,7 @@
       <code-highlight type="html" :code="horizontal3Code" label="html" />
     </div>
 
-    <h2 id="stacks-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#stacks-example"> </a>
-    </h2>
+    <h2 id="stacks-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#stacks-example"> </a></h2>
     <p>使用 <code>.vstack</code> 来堆叠按钮及其他元素：</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -102,12 +87,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <input
-            class="form-control me-auto"
-            type="text"
-            placeholder="Add your item here..."
-            aria-label="Add your item here..."
-          />
+          <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here..." />
           <button type="button" class="btn btn-secondary">Submit</button>
           <div class="vr"></div>
           <button type="button" class="btn btn-outline-danger">Reset</button>

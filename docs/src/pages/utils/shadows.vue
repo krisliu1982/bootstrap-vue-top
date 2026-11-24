@@ -12,13 +12,10 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/shadows/" target="_blank">Bootstrap Shadows</a>
     </p>
 
-    <h2 id="shadows-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#shadows-example"> </a>
-    </h2>
+    <h2 id="shadows-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#shadows-example"> </a></h2>
     <p>
       在 Bootstrap 中，默认情况下组件上的阴影是被禁用的，但可以通过
-      <code>$enable-shadows</code> 来启用。此外，您还可以使用我们的
-      <code>box-shadow</code> 实用类快速添加或移除阴影。该功能还支持
+      <code>$enable-shadows</code> 来启用。此外，您还可以使用我们的 <code>box-shadow</code> 实用类快速添加或移除阴影。该功能还支持
       <code>.shadow-none</code> 类以及三种默认尺寸（它们都有相应的变量与之匹配）。
     </p>
     <div class="docs-example">

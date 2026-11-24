@@ -18,14 +18,11 @@
   <div v-docsscrollspy data-docs-target="#docs-nav-flex" class="docs-content">
     <h1>Flex 弹性布局</h1>
     <p class="fs-4 fw-light">
-      借助一整套响应式弹性盒布局工具，您可以快速管理网格列、导航、组件等的布局、对齐和尺寸设置。对于更复杂的实现，可能需要使用自定义
-      CSS。了解更多请阅读
+      借助一整套响应式弹性盒布局工具，您可以快速管理网格列、导航、组件等的布局、对齐和尺寸设置。对于更复杂的实现，可能需要使用自定义 CSS。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/utilities/flex/" target="_blank">Bootstrap Flex</a>
     </p>
 
-    <h2 id="flex-enable">
-      启用弹性布局<a class="anchor-link" aria-label="Link to this section: 启用弹性布局" href="#flex-enable"> </a>
-    </h2>
+    <h2 id="flex-enable">启用弹性布局<a class="anchor-link" aria-label="Link to this section: 启用弹性布局" href="#flex-enable"> </a></h2>
     <p>
       应用 <code>display</code> 工具来创建一个弹性盒容器，并将
       <strong>直接子元素</strong>
@@ -59,9 +56,7 @@
       <li><code>.d-xxl-inline-flex</code></li>
     </ul>
 
-    <h2 id="flex-direction">
-      方向调整<a class="anchor-link" aria-label="Link to this section: 方向调整" href="#flex-direction"> </a>
-    </h2>
+    <h2 id="flex-direction">方向调整<a class="anchor-link" aria-label="Link to this section: 方向调整" href="#flex-direction"> </a></h2>
     <p>
       使用方向工具设置 flex 容器中 flex 元素的方向。在大多数情况下，您可以省略这里的水平类，因为浏览器默认值是
       <code>row</code>
@@ -69,8 +64,7 @@
     </p>
     <p>
       使用
-      <code>.flex-row</code> 可设置为水平方向（这是浏览器的默认设置），或者使用
-      <code>.flex-row-reverse</code> 从相反的一侧开始设置水平方向。
+      <code>.flex-row</code> 可设置为水平方向（这是浏览器的默认设置），或者使用 <code>.flex-row-reverse</code> 从相反的一侧开始设置水平方向。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -87,10 +81,7 @@
       </div>
       <code-highlight type="html" :code="direction1Code" label="html" />
     </div>
-    <p>
-      使用 <code>.flex-column</code> 可设置垂直方向，或者使用
-      <code>.flex-column-reverse</code> 从相反的一侧开始垂直方向的排列。
-    </p>
+    <p>使用 <code>.flex-column</code> 可设置垂直方向，或者使用 <code>.flex-column-reverse</code> 从相反的一侧开始垂直方向的排列。</p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
         <div class="d-flex flex-column mb-3">
@@ -134,16 +125,10 @@
       <li><code>.flex-xxl-column-reverse</code></li>
     </ul>
 
-    <h2 id="flex-justify">
-      内容布局<a class="anchor-link" aria-label="Link to this section: 内容布局" href="#flex-justify"> </a>
-    </h2>
+    <h2 id="flex-justify">内容布局<a class="anchor-link" aria-label="Link to this section: 内容布局" href="#flex-justify"> </a></h2>
     <p>
-      在 flexbox 容器中使用 <code>justify-content</code> 元素可改变 flex 元素在主轴（即 x 轴，若
-      <code>flex-direction: column</code> 则为 y 轴）上的排列方式。可供选择的值有
-      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code
-        >around</code
-      >
-      或 <code>evenly</code>。
+      在 flexbox 容器中使用 <code>justify-content</code> 元素可改变 flex 元素在主轴（即 x 轴，若 <code>flex-direction: column</code> 则为 y 轴）上的排列方式。可供选择的值有
+      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code>around</code> 或 <code>evenly</code>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -220,14 +205,10 @@
       <li><code>.justify-content-xxl-evenly</code></li>
     </ul>
 
-    <h2 id="flex-align">
-      对齐项目<a class="anchor-link" aria-label="Link to this section: 对齐项目" href="#flex-align"> </a>
-    </h2>
+    <h2 id="flex-align">对齐项目<a class="anchor-link" aria-label="Link to this section: 对齐项目" href="#flex-align"> </a></h2>
     <p>
-      在 flexbox 容器中使用 <code>align-items</code> 元素，可更改 flex 元素在交叉轴（即起始的 y 轴，若
-      <code>flex-direction： column</code> 则为 x 轴）上的排列方式。可供选择的值有
-      <code>start</code>、<code>end</code>、<code>center</code>、<code>baseline</code> 或
-      <code>stretch</code>（浏览器默认值）。
+      在 flexbox 容器中使用 <code>align-items</code> 元素，可更改 flex 元素在交叉轴（即起始的 y 轴，若 <code>flex-direction： column</code> 则为 x 轴）上的排列方式。可供选择的值有
+      <code>start</code>、<code>end</code>、<code>center</code>、<code>baseline</code> 或 <code>stretch</code>（浏览器默认值）。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -293,16 +274,12 @@
       <li><code>.align-items-xxl-stretch</code></li>
     </ul>
 
-    <h2 id="flex-align-self">
-      对齐自我<a class="anchor-link" aria-label="Link to this section: 对齐自我" href="#flex-align-self"> </a>
-    </h2>
+    <h2 id="flex-align-self">对齐自我<a class="anchor-link" aria-label="Link to this section: 对齐自我" href="#flex-align-self"> </a></h2>
     <p>
       在 flexbox 元素上使用
-      <code>align-self</code> 元素可单独改变其在交叉轴（即起始的 y 轴，对于
-      <code>flex-direction： column</code> 来说则是 x 轴）上的对齐方式。您可以从与
+      <code>align-self</code> 元素可单独改变其在交叉轴（即起始的 y 轴，对于 <code>flex-direction： column</code> 来说则是 x 轴）上的对齐方式。您可以从与
       <code>align-items</code>
-      相同的选项中进行选择：<code>start</code>、<code>end</code>、<code>center</code>、<code>baseline</code> 或
-      <code>stretch</code>（浏览器默认值）。
+      相同的选项中进行选择：<code>start</code>、<code>end</code>、<code>center</code>、<code>baseline</code> 或 <code>stretch</code>（浏览器默认值）。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -368,9 +345,7 @@
       <li><code>.align-self-xxl-stretch</code></li>
     </ul>
 
-    <h2 id="flex-fill">
-      占满空间<a class="anchor-link" aria-label="Link to this section: 占满空间" href="#flex-fill"> </a>
-    </h2>
+    <h2 id="flex-fill">占满空间<a class="anchor-link" aria-label="Link to this section: 占满空间" href="#flex-fill"> </a></h2>
     <p>
       在一系列相邻元素上使用
       <code>.flex-fill</code>
@@ -396,9 +371,7 @@
       <li><code>.flex-xxl-fill</code></li>
     </ul>
 
-    <h2 id="flex-grow-shrink">
-      增长与收缩<a class="anchor-link" aria-label="Link to this section: 增长与收缩" href="#flex-grow-shrink"> </a>
-    </h2>
+    <h2 id="flex-grow-shrink">增长与收缩<a class="anchor-link" aria-label="Link to this section: 增长与收缩" href="#flex-grow-shrink"> </a></h2>
     <p>
       使用
       <code>.flex-grow-*</code>
@@ -448,9 +421,7 @@
       <li><code>.flex-xxl-{grow|shrink}-1</code></li>
     </ul>
 
-    <h2 id="flex-auto-margin">
-      自动边距<a class="anchor-link" aria-label="Link to this section: 自动边距" href="#flex-auto-margin"> </a>
-    </h2>
+    <h2 id="flex-auto-margin">自动边距<a class="anchor-link" aria-label="Link to this section: 自动边距" href="#flex-auto-margin"> </a></h2>
     <p>
       当将弹性布局的对齐方式与自动边距相结合时，它能够实现一些非常出色的效果。下面展示了通过自动边距来控制弹性项的三个示例：默认情况（无自动边距）、将两个项目向右推（<code>.me-auto</code>）以及将两个项目向左推（<code>.ms-auto</code>）。
     </p>
@@ -498,13 +469,10 @@
       <code-highlight type="html" :code="auto2Code" label="html" />
     </div>
 
-    <h2 id="flex-wrap">
-      包裹项目<a class="anchor-link" aria-label="Link to this section: 包裹项目" href="#flex-wrap"> </a>
-    </h2>
+    <h2 id="flex-wrap">包裹项目<a class="anchor-link" aria-label="Link to this section: 包裹项目" href="#flex-wrap"> </a></h2>
     <p>
       更改 flex 容器中 flex 元素的排列方式。您可以选择完全不进行排列（这是浏览器的默认设置），使用
-      <code>.flex-nowrap</code>；选择进行排列（使用 <code>.flex-wrap</code>）；或者选择反向排列（使用
-      <code>.flex-wrap-reverse</code>）。
+      <code>.flex-nowrap</code>；选择进行排列（使用 <code>.flex-wrap</code>）；或者选择反向排列（使用 <code>.flex-wrap-reverse</code>）。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -582,14 +550,12 @@
       <li><code>.flex-xxl-wrap-reverse</code></li>
     </ul>
 
-    <h2 id="flex-order">
-      项目顺序<a class="anchor-link" aria-label="Link to this section: 项目顺序" href="#flex-order"> </a>
-    </h2>
+    <h2 id="flex-order">项目顺序<a class="anchor-link" aria-label="Link to this section: 项目顺序" href="#flex-order"> </a></h2>
     <p>
       通过使用少量的
       <code>order</code>
-      便捷工具，可以改变特定弹性项的视觉排列顺序。我们仅提供将某个项置于首位或末位的选项，以及一个用于恢复原始 DOM
-      排序的选项。由于 <code>order</code> 可接受 0 到 5 之间的任何整数值，因此您可以为所需的任何其他值添加自定义 CSS。
+      便捷工具，可以改变特定弹性项的视觉排列顺序。我们仅提供将某个项置于首位或末位的选项，以及一个用于恢复原始 DOM 排序的选项。由于 <code>order</code> 可接受 0 到 5
+      之间的任何整数值，因此您可以为所需的任何其他值添加自定义 CSS。
     </p>
     <div class="docs-example">
       <div class="docs-example-data docs-content-flex-util">
@@ -640,10 +606,7 @@
       <li><code>.order-xxl-4</code></li>
       <li><code>.order-xxl-5</code></li>
     </ul>
-    <p>
-      此外，还有响应式的 <code>.order-first</code> 和 <code>.order-last</code> 类，它们通过分别应用
-      <code>order: -1</code> 和 <code>order: 6</code> 来改变元素的 <code>顺序</code> 。
-    </p>
+    <p>此外，还有响应式的 <code>.order-first</code> 和 <code>.order-last</code> 类，它们通过分别应用 <code>order: -1</code> 和 <code>order: 6</code> 来改变元素的 <code>顺序</code> 。</p>
     <ul class="docs-content-list">
       <li><code>.order-first</code></li>
       <li><code>.order-last</code></li>
@@ -659,16 +622,11 @@
       <li><code>.order-xxl-last</code></li>
     </ul>
 
-    <h2 id="flex-align-content">
-      对齐内容<a class="anchor-link" aria-label="Link to this section: 对齐内容" href="#flex-align-content"> </a>
-    </h2>
+    <h2 id="flex-align-content">对齐内容<a class="anchor-link" aria-label="Link to this section: 对齐内容" href="#flex-align-content"> </a></h2>
     <p>
       在 flexbox 容器中使用 <code>align-content</code> 元素，可使 flex 元素在交叉轴上 <em>排列在一起</em> 。您可以从
-      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code
-        >around</code
-      >
-      或 <code>stretch</code> 中进行选择。为了演示这些元素，我们已设置了 <code>flex-wrap： wrap</code> 并增加了 flex
-      元素的数量。
+      <code>start</code>（浏览器默认值）、<code>end</code>、<code>center</code>、<code>between</code>、<code>around</code> 或 <code>stretch</code> 中进行选择。为了演示这些元素，我们已设置了
+      <code>flex-wrap： wrap</code> 并增加了 flex 元素的数量。
     </p>
     <p><strong>注意！</strong> 此属性对 flex 元素的单个行项没有影响。</p>
     <div class="docs-example">
@@ -843,30 +801,18 @@
       <li><code>.align-content-xxl-stretch</code></li>
     </ul>
 
-    <h2 id="flex-example">
-      使用案例<a class="anchor-link" aria-label="Link to this section: 使用案例" href="#flex-example"> </a>
-    </h2>
+    <h2 id="flex-example">使用案例<a class="anchor-link" aria-label="Link to this section: 使用案例" href="#flex-example"> </a></h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="d-flex">
           <div class="flex-shrink-0">
-            <svg
-              aria-label="Placeholder: Image"
-              class="docs-placeholder-img"
-              height="100"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg aria-label="Placeholder: Image" class="docs-placeholder-img" height="100" preserveAspectRatio="xMidYMid slice" role="img" width="100" xmlns="http://www.w3.org/2000/svg">
               <title>Placeholder</title>
               <rect width="100%" height="100%" fill="#e5e5e5"></rect>
               <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
             </svg>
           </div>
-          <div class="flex-grow-1 ms-3">
-            This is some content from a media component. You can replace this with any content and adjust it as needed.
-          </div>
+          <div class="flex-grow-1 ms-3">This is some content from a media component. You can replace this with any content and adjust it as needed.</div>
         </div>
       </div>
       <code-highlight type="html" :code="example1Code" label="html" />
@@ -875,23 +821,13 @@
       <div class="docs-example-data">
         <div class="d-flex align-items-center">
           <div class="flex-shrink-0">
-            <svg
-              aria-label="Placeholder: Image"
-              class="docs-placeholder-img"
-              height="100"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg aria-label="Placeholder: Image" class="docs-placeholder-img" height="100" preserveAspectRatio="xMidYMid slice" role="img" width="100" xmlns="http://www.w3.org/2000/svg">
               <title>Placeholder</title>
               <rect width="100%" height="100%" fill="#e5e5e5"></rect>
               <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
             </svg>
           </div>
-          <div class="flex-grow-1 ms-3">
-            This is some content from a media component. You can replace this with any content and adjust it as needed.
-          </div>
+          <div class="flex-grow-1 ms-3">This is some content from a media component. You can replace this with any content and adjust it as needed.</div>
         </div>
       </div>
       <code-highlight type="html" :code="example2Code" label="html" />

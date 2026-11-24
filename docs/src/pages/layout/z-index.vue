@@ -8,17 +8,13 @@
   <div v-docsscrollspy data-docs-target="#docs-nav-z-index" class="docs-content">
     <h1>Z-index</h1>
     <p class="fs-4 fw-light">
-      虽然不是 Bootstrap 网格系统的一部分，但 z-index
-      在决定我们的组件如何相互叠放和交互方面发挥着重要作用。了解更多请阅读
+      虽然不是 Bootstrap 网格系统的一部分，但 z-index 在决定我们的组件如何相互叠放和交互方面发挥着重要作用。了解更多请阅读
       <a href="https://bs53.bootstrap-vue.top/layout/z-index/" target="_blank">Bootstrap Z-index</a>
     </p>
 
-        <h2 id="z-index-about">
-      工作说明<a class="anchor-link" aria-label="Link to this section: 工作说明" href="#z-index-about"> </a>
-    </h2>
+    <h2 id="z-index-about">工作说明<a class="anchor-link" aria-label="Link to this section: 工作说明" href="#z-index-about"> </a></h2>
     <p>
-      Bootstrap 的多个组件都使用了 <code>z-index</code> 这个 CSS
-      属性，它通过提供第三轴来排列内容，从而帮助控制布局。我们在 Bootstrap 中采用了一套默认的 z-index
+      Bootstrap 的多个组件都使用了 <code>z-index</code> 这个 CSS 属性，它通过提供第三轴来排列内容，从而帮助控制布局。我们在 Bootstrap 中采用了一套默认的 z-index
       等级体系，专门设计用于正确分层导航栏、工具提示、弹出框、模态框等元素。
     </p>
     <p>

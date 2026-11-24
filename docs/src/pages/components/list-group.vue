@@ -22,12 +22,8 @@
       <a href="https://bs53.bootstrap-vue.top/components/list-group/" target="_blank">Bootstrap List group</a>
     </p>
 
-    <h2 id="list-example">
-      基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#list-example"> </a>
-    </h2>
-    <p>
-      最基础的列表组为包含列表项及相应类别的无序列表。可基于下述选项对其进行扩展，或根据需求通过自定义CSS实现功能拓展。
-    </p>
+    <h2 id="list-example">基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#list-example"> </a></h2>
+    <p>最基础的列表组为包含列表项及相应类别的无序列表。可基于下述选项对其进行扩展，或根据需求通过自定义CSS实现功能拓展。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <ul class="list-group">
@@ -41,9 +37,7 @@
       <code-highlight type="html" :code="example1Code" label="html" />
     </div>
 
-    <h2 id="list-active">
-      当前活动项<a class="anchor-link" aria-label="Link to this section: 当前活动项" href="#list-active"> </a>
-    </h2>
+    <h2 id="list-active">当前活动项<a class="anchor-link" aria-label="Link to this section: 当前活动项" href="#list-active"> </a></h2>
     <p>为 <code>.list-group-item</code> 添加 <code>.active</code> 类名，以表示当前处于活动状态的选择项。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -58,9 +52,7 @@
       <code-highlight type="html" :code="activeCode" label="html" />
     </div>
 
-    <h2 id="list-link">
-      链接和按钮<a class="anchor-link" aria-label="Link to this section: 链接和按钮" href="#list-link"> </a>
-    </h2>
+    <h2 id="list-link">链接和按钮<a class="anchor-link" aria-label="Link to this section: 链接和按钮" href="#list-link"> </a></h2>
     <p>
       使用 <code>&lt;a&gt;</code> 标签或 <code>&lt;button&gt;</code> 标签，并通过添加
       <code>.list-group-item-action</code>
@@ -79,29 +71,20 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-            The current link item
-          </a>
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> The current link item </a>
           <a href="#" class="list-group-item list-group-item-action">A second link item</a>
           <a href="#" class="list-group-item list-group-item-action">A third link item</a>
           <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-          <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true"
-            >A disabled link item</a
-          >
+          <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
         </div>
       </div>
       <code-highlight type="html" :code="link1Code" label="html" />
     </div>
-    <p>
-      对于 <code>&lt;button&gt;</code> 元素，您还可以使用 <code>disabled</code> 属性，而非
-      <code>.disabled</code> 类。遗憾的是，<code>&lt;a&gt;</code> 元素并不支持 <code>disabled</code> 属性。
-    </p>
+    <p>对于 <code>&lt;button&gt;</code> 元素，您还可以使用 <code>disabled</code> 属性，而非 <code>.disabled</code> 类。遗憾的是，<code>&lt;a&gt;</code> 元素并不支持 <code>disabled</code> 属性。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="list-group">
-          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-            The current button
-          </button>
+          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">The current button</button>
           <button type="button" class="list-group-item list-group-item-action">A second button item</button>
           <button type="button" class="list-group-item list-group-item-action">A third button item</button>
           <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
@@ -111,9 +94,7 @@
       <code-highlight type="html" :code="link2Code" label="html" />
     </div>
 
-    <h2 id="list-flush">
-      齐平列表<a class="anchor-link" aria-label="Link to this section: 齐平列表" href="#list-flush"> </a>
-    </h2>
+    <h2 id="list-flush">齐平列表<a class="anchor-link" aria-label="Link to this section: 齐平列表" href="#list-flush"> </a></h2>
     <p>
       添加
       <code>.list-group-flush</code>
@@ -132,17 +113,14 @@
       <code-highlight type="html" :code="flushCode" label="html" />
     </div>
 
-    <h2 id="list-number">
-      列表编号<a class="anchor-link" aria-label="Link to this section: 列表编号" href="#list-number"> </a>
-    </h2>
+    <h2 id="list-number">列表编号<a class="anchor-link" aria-label="Link to this section: 列表编号" href="#list-number"> </a></h2>
     <p>
       添加 <code>.list-group-numbered</code> 修饰类（也可选择使用
       <code>&lt;ol&gt;</code>
       元素），以启用编号列表组项。数字通过CSS生成（而非采用<code>&lt;ol&gt;</code>元素的默认浏览器样式），这样能够更好地在列表组项中进行定位，并便于进行自定义设置。
     </p>
     <p>
-      数字通过在 <code>&lt;ol&gt;</code> 元素上使用 <code>counter-reset</code> 生成，然后利用带有
-      <code>counter-increment</code> 和 <code>content</code> 属性的 <code>::before</code> 伪元素，在
+      数字通过在 <code>&lt;ol&gt;</code> 元素上使用 <code>counter-reset</code> 生成，然后利用带有 <code>counter-increment</code> 和 <code>content</code> 属性的 <code>::before</code> 伪元素，在
       <code>&lt;li&gt;</code> 元素上进行样式设置和定位。
     </p>
     <div class="docs-example">
@@ -185,15 +163,12 @@
       <code-highlight type="html" :code="number1Code" label="html" />
     </div>
 
-    <h2 id="list-horizontal">
-      水平列表<a class="anchor-link" aria-label="Link to this section: 水平列表" href="#list-horizontal"> </a>
-    </h2>
+    <h2 id="list-horizontal">水平列表<a class="anchor-link" aria-label="Link to this section: 水平列表" href="#list-horizontal"> </a></h2>
     <p>
       添加
       <code>.list-group-horizontal</code>
       可以将列表组项目的布局从垂直调整为水平，适用于所有视口大小。或者，选择响应式的变体
-      <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code>，在该视口大小的
-      <code>最小宽度</code> 开始时将列表组设置为水平排列。目前
+      <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code>，在该视口大小的 <code>最小宽度</code> 开始时将列表组设置为水平排列。目前
       <strong>水平列表组不能与齐平列表组结合使用。</strong>
     </p>
     <p>
@@ -237,9 +212,7 @@
       <code-highlight type="html" :code="horizontalCode" label="html" />
     </div>
 
-    <h2 id="list-variant">
-      列表变体<a class="anchor-link" aria-label="Link to this section: 列表变体" href="#list-variant"> </a>
-    </h2>
+    <h2 id="list-variant">列表变体<a class="anchor-link" aria-label="Link to this section: 列表变体" href="#list-variant"> </a></h2>
     <p>使用上下文类来为列表项设置带有状态背景和颜色的样式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -268,38 +241,20 @@
       <div class="docs-example-data">
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary"
-            >A simple primary list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"
-            >A simple secondary list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success"
-            >A simple success list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger"
-            >A simple danger list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning"
-            >A simple warning list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info"
-            >A simple info list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-light"
-            >A simple light list group item</a
-          >
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark"
-            >A simple dark list group item</a
-          >
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
         </div>
       </div>
       <code-highlight type="html" :code="variant1Code" label="html" />
     </div>
 
-    <h2 id="list-badge">
-      带着徽章<a class="anchor-link" aria-label="Link to this section: 带着徽章" href="#list-badge"> </a>
-    </h2>
+    <h2 id="list-badge">带着徽章<a class="anchor-link" aria-label="Link to this section: 带着徽章" href="#list-badge"> </a></h2>
     <p>
       在任何列表组项上添加徽章，即可借助一些
       <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">flex 工具</a>
@@ -325,9 +280,7 @@
       <code-highlight type="html" :code="badgeCode" label="html" />
     </div>
 
-    <h2 id="list-content">
-      定制内容<a class="anchor-link" aria-label="Link to this section: 定制内容" href="#list-content"> </a>
-    </h2>
+    <h2 id="list-content">定制内容<a class="anchor-link" aria-label="Link to this section: 定制内容" href="#list-content"> </a></h2>
     <p>
       通过使用
       <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">弹性盒工具栏</a>
@@ -365,10 +318,7 @@
       <code-highlight type="html" :code="contentCode" label="html" />
     </div>
 
-    <h2 id="list-check">
-      复选框和单选按钮<a class="anchor-link" aria-label="Link to this section: 复选框和单选按钮" href="#list-check">
-      </a>
-    </h2>
+    <h2 id="list-check">复选框和单选按钮<a class="anchor-link" aria-label="Link to this section: 复选框和单选按钮" href="#list-check"> </a></h2>
     <p>
       将 Bootstrap 的复选框和单选按钮放置在列表组项内，并根据需要进行自定义设置。您可以不使用
       <code>&lt;label&gt;</code> 标签来使用它们，但请务必为可访问性添加 <code>aria-label</code> 属性及其值。
@@ -411,9 +361,7 @@
       </div>
       <code-highlight type="html" :code="check2Code" label="html" />
     </div>
-    <p>
-      您可以在 <code>&lt;label&gt;</code> 元素上使用 <code>.stretched-link</code> 类，以使整个列表组项成为可点击的元素。
-    </p>
+    <p>您可以在 <code>&lt;label&gt;</code> 元素上使用 <code>.stretched-link</code> 类，以使整个列表组项成为可点击的元素。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <ul class="list-group">
@@ -434,13 +382,10 @@
       <code-highlight type="html" :code="check3Code" label="html" />
     </div>
 
-    <h2 id="list-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#list-css"> </a>
-    </h2>
+    <h2 id="list-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#list-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，列表组现在在
-      <code>.list-group</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
-      设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.list-group</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_list-group.scss" />
   </div>

@@ -17,9 +17,7 @@
       <a href="https://bs53.bootstrap-vue.top/components/button-group/" target="_blank">Bootstrap Button group</a>
     </p>
 
-    <h2 id="button-group-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#button-group-example"> </a>
-    </h2>
+    <h2 id="button-group-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#button-group-example"> </a></h2>
     <p>使用 <code>.btn</code> 将一系列按钮包裹在 <code>.btn-group</code> 中。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -53,18 +51,10 @@
       按钮组需要适当的
       <code>role</code>
       属性和明确的标签，以确保屏幕阅读器等辅助技术能够识别出按钮是分组的，并对其进行播报。对于按钮组，使用
-      <code>role="group"</code>；对于按钮工具栏，使用 <code>role="toolbar"</code>。然后使用 <code>aria-label</code> 或
-      <code>aria-labelledby</code> 来为它们添加标签。
+      <code>role="group"</code>；对于按钮工具栏，使用 <code>role="toolbar"</code>。然后使用 <code>aria-label</code> 或 <code>aria-labelledby</code> 来为它们添加标签。
     </p>
 
-    <h2 id="button-group-check">
-      复选框和单选按钮组<a
-        class="anchor-link"
-        aria-label="Link to this section: 复选框和单选按钮组"
-        href="#button-group-check"
-      >
-      </a>
-    </h2>
+    <h2 id="button-group-check">复选框和单选按钮组<a class="anchor-link" aria-label="Link to this section: 复选框和单选按钮组" href="#button-group-check"> </a></h2>
     <p>
       将类似按钮的复选框和单选框
       <a href="https://bs53.bootstrap-vue.top/forms/checks-radios" target="_blank">切换按钮</a>
@@ -97,9 +87,7 @@
       <code-highlight type="vue" :code="checkCode" label="vue" />
     </div>
 
-    <h2 id="button-group-toolbar">
-      按钮工具栏<a class="anchor-link" aria-label="Link to this section: 按钮工具栏" href="#button-group-toolbar"> </a>
-    </h2>
+    <h2 id="button-group-toolbar">按钮工具栏<a class="anchor-link" aria-label="Link to this section: 按钮工具栏" href="#button-group-toolbar"> </a></h2>
     <p>将多组按钮组合成按钮工具栏，以构建更复杂的组件。根据需要使用实用类来分隔组、按钮等。</p>
     <p>在你的工具栏中，可以随意将输入组与按钮组混合使用。与上面的示例类似，你可能需要一些工具来合理布局。</p>
     <div class="docs-example">
@@ -132,13 +120,7 @@
           </div>
           <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon">@</div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Input group example"
-              aria-label="Input group example"
-              aria-describedby="btnGroupAddon"
-            />
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
           </div>
         </div>
 
@@ -151,22 +133,14 @@
           </div>
           <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon2">@</div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Input group example"
-              aria-label="Input group example"
-              aria-describedby="btnGroupAddon2"
-            />
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2" />
           </div>
         </div>
       </div>
       <code-highlight type="html" :code="toolbarCode" label="html" />
     </div>
 
-    <h2 id="button-group-size">
-      尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#button-group-size"> </a>
-    </h2>
+    <h2 id="button-group-size">尺寸<a class="anchor-link" aria-label="Link to this section: 尺寸" href="#button-group-size"> </a></h2>
     <p>
       无需为组中的每个按钮都应用按钮大小类，只需在每个
       <code>.btn-group</code> 中添加 <code>.btn-group-*</code>，包括嵌套多个组时也要为每个组添加。
@@ -194,9 +168,7 @@
       <code-highlight type="html" :code="sizeCode" label="html" />
     </div>
 
-    <h2 id="button-group-nesting">
-      嵌套<a class="anchor-link" aria-label="Link to this section: 嵌套" href="#button-group-nesting"> </a>
-    </h2>
+    <h2 id="button-group-nesting">嵌套<a class="anchor-link" aria-label="Link to this section: 嵌套" href="#button-group-nesting"> </a></h2>
     <p>
       当您希望在一系列按钮中混合使用下拉菜单时，请将一个
       <code>.btn-group</code> 放置在另一个 <code>.btn-group</code> 中。
@@ -208,9 +180,7 @@
           <button type="button" class="btn btn-primary">2</button>
 
           <div class="btn-group" role="group">
-            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
-              Dropdown
-            </button>
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -221,9 +191,7 @@
       <code-highlight type="html" :code="nestingCode" label="html" />
     </div>
 
-    <h2 id="button-group-vertical">
-      竖向变化<a class="anchor-link" aria-label="Link to this section: 竖向变化" href="#button-group-vertical"> </a>
-    </h2>
+    <h2 id="button-group-vertical">竖向变化<a class="anchor-link" aria-label="Link to this section: 竖向变化" href="#button-group-vertical"> </a></h2>
     <p>使一组按钮垂直堆叠显示，而非水平排列。<strong>此处不支持拆分按钮下拉菜单。</strong></p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -238,9 +206,7 @@
 
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <div class="btn-group" role="group">
-            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
-              Dropdown
-            </button>
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -249,27 +215,21 @@
           <button type="button" class="btn btn-primary">Button</button>
           <button type="button" class="btn btn-primary">Button</button>
           <div class="btn-group dropstart" role="group">
-            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
-              Dropdown
-            </button>
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
             </ul>
           </div>
           <div class="btn-group dropend" role="group">
-            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
-              Dropdown
-            </button>
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
             </ul>
           </div>
           <div class="btn-group dropup" role="group">
-            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">
-              Dropdown
-            </button>
+            <button data-bs-toggle="dropdown" type="button" class="btn btn-primary dropdown-toggle" aria-expanded="false">Dropdown</button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>

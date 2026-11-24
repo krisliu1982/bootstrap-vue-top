@@ -16,9 +16,7 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/borders/" target="_blank">Bootstrap Borders</a>
     </p>
 
-    <h2 id="borders-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#borders-base"> </a>
-    </h2>
+    <h2 id="borders-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#borders-base"> </a></h2>
     <p>使用边框工具来添加或移除元素的边框。您可以选择全部边框，也可以逐个选择边框。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -46,13 +44,10 @@
       <code-highlight type="html" :code="base2Code" label="html" />
     </div>
 
-    <h2 id="borders-color">
-      颜色调整<a class="anchor-link" aria-label="Link to this section: 颜色调整" href="#borders-color"> </a>
-    </h2>
+    <h2 id="borders-color">颜色调整<a class="anchor-link" aria-label="Link to this section: 颜色调整" href="#borders-color"> </a></h2>
     <p class="text-bg-info">
-      像 <code>.border-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass
-      生成的边框相关样式，目前尚不能响应颜色模式，不过任何 <code>.border-*-subtle</code> 样式都会生效。这一问题将在版本
-      6 中得到解决。
+      像 <code>.border-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass 生成的边框相关样式，目前尚不能响应颜色模式，不过任何 <code>.border-*-subtle</code> 样式都会生效。这一问题将在版本 6
+      中得到解决。
     </p>
     <p>使用基于我们主题颜色所构建的工具来更改边框颜色。</p>
     <div class="docs-example">
@@ -85,26 +80,17 @@
       <div class="docs-example-data">
         <div class="mb-4">
           <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input
-            type="email"
-            class="form-control border-success"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
-          />
+          <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com" />
         </div>
 
         <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">Dangerous heading</div>
 
-        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
-          Changing border color and width
-        </div>
+        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">Changing border color and width</div>
       </div>
       <code-highlight type="html" :code="color2Code" label="html" />
     </div>
 
-    <h2 id="borders-opacity">
-      透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#borders-opacity"> </a>
-    </h2>
+    <h2 id="borders-opacity">透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#borders-opacity"> </a></h2>
     <p>
       若要更改该不透明度，请通过自定义样式或内联样式来覆盖
       <code>--bs-border-opacity</code> 属性。
@@ -131,9 +117,7 @@
       <code-highlight type="html" :code="opacity2Code" label="html" />
     </div>
 
-    <h2 id="borders-width">
-      宽度调整<a class="anchor-link" aria-label="Link to this section: 宽度调整" href="#borders-width"> </a>
-    </h2>
+    <h2 id="borders-width">宽度调整<a class="anchor-link" aria-label="Link to this section: 宽度调整" href="#borders-width"> </a></h2>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap docs-border-utils">
@@ -147,22 +131,12 @@
       <code-highlight type="html" :code="widthCode" label="html" />
     </div>
 
-    <h2 id="borders-radius">
-      圆角调整<a class="anchor-link" aria-label="Link to this section: 圆角调整" href="#borders-radius"> </a>
-    </h2>
+    <h2 id="borders-radius">圆角调整<a class="anchor-link" aria-label="Link to this section: 圆角调整" href="#borders-radius"> </a></h2>
     <p>为元素添加样式类，以便轻松地使其边角呈圆弧状。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap docs-border-utils">
-          <svg
-            aria-label="Example rounded image: 75x75"
-            class="docs-placeholder-img rounded"
-            height="75"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="75"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg aria-label="Example rounded image: 75x75" class="docs-placeholder-img rounded" height="75" preserveAspectRatio="xMidYMid slice" role="img" width="75" xmlns="http://www.w3.org/2000/svg">
             <title>Example rounded image</title>
             <rect width="100%" height="100%" fill="#868e96"></rect>
             <text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text>
@@ -223,10 +197,7 @@
       </div>
       <code-highlight type="html" :code="radius1Code" label="html" />
     </div>
-    <p>
-      使用缩放类来实现较大或较小的圆角效果。尺寸范围从 <code>0</code> 到 <code>5</code>（包括 <code>circle</code> 和
-      <code>pill</code>），并且可以通过修改工具 API 来进行配置。
-    </p>
+    <p>使用缩放类来实现较大或较小的圆角效果。尺寸范围从 <code>0</code> 到 <code>5</code>（包括 <code>circle</code> 和 <code>pill</code>），并且可以通过修改工具 API 来进行配置。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap docs-border-utils">

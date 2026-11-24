@@ -16,30 +16,19 @@
     <h1>Pagination 分页</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://bs53.bootstrap-vue.top/components/pagination/" target="_blank">Bootstrap Pagination</a>，构建
-      <code>bv-pagination</code> 分页组件。
+      <a href="https://bs53.bootstrap-vue.top/components/pagination/" target="_blank">Bootstrap Pagination</a>，构建 <code>bv-pagination</code> 分页组件。
     </p>
 
-    <h2 id="pagination-base">
-      基础模式<a class="anchor-link" aria-label="Link to this section: 基础模式" href="#pagination-base"> </a>
-    </h2>
+    <h2 id="pagination-base">基础模式<a class="anchor-link" aria-label="Link to this section: 基础模式" href="#pagination-base"> </a></h2>
     <p>设置 <code>mode="base"</code> 为基础模式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-pagination
-          mode="base"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" :total="ptotal" :current-page="pcurrent" :page-size="psize" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
       </div>
       <code-highlight type="vue" :code="baseCode" label="vue" />
     </div>
 
-    <h2 id="pagination-full">
-      全量模式<a class="anchor-link" aria-label="Link to this section: 全量模式" href="#pagination-full"> </a>
-    </h2>
+    <h2 id="pagination-full">全量模式<a class="anchor-link" aria-label="Link to this section: 全量模式" href="#pagination-full"> </a></h2>
     <p>设置 <code>mode="full"</code> 为全量模式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -55,117 +44,60 @@
       <code-highlight type="vue" :code="fullCode" label="vue" />
     </div>
 
-    <h2 id="pagination-simple">
-      简单模式<a class="anchor-link" aria-label="Link to this section: 简单模式" href="#pagination-simple"> </a>
-    </h2>
+    <h2 id="pagination-simple">简单模式<a class="anchor-link" aria-label="Link to this section: 简单模式" href="#pagination-simple"> </a></h2>
     <p>设置 <code>mode="simple"</code> 为简单模式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-pagination
-          mode="simple"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="simple" :total="ptotal" :current-page="pcurrent" :page-size="psize" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
       </div>
       <code-highlight type="vue" :code="simpleCode" label="vue" />
     </div>
 
-    <h2 id="pagination-alignment">
-      横向对齐<a class="anchor-link" aria-label="Link to this section: 横向对齐" href="#pagination-alignment"> </a>
-    </h2>
+    <h2 id="pagination-alignment">横向对齐<a class="anchor-link" aria-label="Link to this section: 横向对齐" href="#pagination-alignment"> </a></h2>
     <p>
       可以通过 <code>position</code> 改变横向对齐方向，<code>center</code> 为居中，<code>end</code>
       为居右。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-pagination
-          mode="base"
-          position="center"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" position="center" :total="ptotal" :current-page="pcurrent" :page-size="psize" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
         <br />
-        <bv-pagination
-          mode="base"
-          position="end"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" position="end" :total="ptotal" :current-page="pcurrent" :page-size="psize" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
       </div>
       <code-highlight type="vue" :code="alignmentCode" label="vue" />
     </div>
 
-    <h2 id="pagination-size">
-      调整大小<a class="anchor-link" aria-label="Link to this section: 调整大小" href="#pagination-size"> </a>
-    </h2>
+    <h2 id="pagination-size">调整大小<a class="anchor-link" aria-label="Link to this section: 调整大小" href="#pagination-size"> </a></h2>
     <p>
       可以通过 <code>size</code> 改变大小，<code>lg</code> 为大尺寸，<code>sm</code>
       为小尺寸。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-pagination
-          mode="base"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          size="lg"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" :total="ptotal" :current-page="pcurrent" :page-size="psize" size="lg" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
         <br />
-        <bv-pagination
-          mode="base"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          size="sm"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" :total="ptotal" :current-page="pcurrent" :page-size="psize" size="sm" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
       </div>
       <code-highlight type="vue" :code="sizeCode" label="vue" />
     </div>
 
-    <h2 id="pagination-count">
-      调整页码数<a class="anchor-link" aria-label="Link to this section: 调整页码数" href="#pagination-count"> </a>
-    </h2>
-    <p>
-      可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数，默认是 <code>5</code>。
-    </p>
+    <h2 id="pagination-count">调整页码数<a class="anchor-link" aria-label="Link to this section: 调整页码数" href="#pagination-count"> </a></h2>
+    <p>可以通过 <code>pager-count</code> 调整页码数，取值范围为 <code>5-21</code>，必须是奇数，默认是 <code>5</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-pagination
-          mode="base"
-          :total="ptotal"
-          :current-page="pcurrent"
-          :page-size="psize"
-          :pager-count="7"
-          size="sm"
-          @current-change="(_page) => (pcurrent = _page)"
-        ></bv-pagination>
+        <bv-pagination mode="base" :total="ptotal" :current-page="pcurrent" :page-size="psize" :pager-count="7" size="sm" @current-change="(_page) => (pcurrent = _page)"></bv-pagination>
       </div>
       <code-highlight type="vue" :code="countCode" label="vue" />
     </div>
 
-    <h2 id="pagination-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#pagination-css"> </a>
-    </h2>
+    <h2 id="pagination-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#pagination-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，模态框现在在
-      <code>.pagination</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
-      设置的，因此 Sass 自定义功能仍然可用。
+      <code>.pagination</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然可用。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_pagination.scss" />
 
-    <h2 id="pagination-api">
-      API<a class="anchor-link" aria-label="Link to this section: API" href="#pagination-api"> </a>
-    </h2>
+    <h2 id="pagination-api">API<a class="anchor-link" aria-label="Link to this section: API" href="#pagination-api"> </a></h2>
     <div class="table-responsive-lg">
       <table class="table text-nowrap">
         <caption class="caption-top">

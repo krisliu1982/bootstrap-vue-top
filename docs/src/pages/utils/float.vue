@@ -15,14 +15,10 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/float/" target="_blank">Bootstrap Float</a>
     </p>
 
-    <h2 id="float-overview">
-      概述<a class="anchor-link" aria-label="Link to this section: 概述" href="#float-overview"> </a>
-    </h2>
+    <h2 id="float-overview">概述<a class="anchor-link" aria-label="Link to this section: 概述" href="#float-overview"> </a></h2>
     <p>
       这些工具类会根据当前视口的大小将元素向左或向右浮动，或者禁用浮动功能，具体操作是通过使用
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank"
-        >CSS 中的 <code>float</code> 属性</a
-      >
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">CSS 中的 <code>float</code> 属性</a>
       来实现的。同时加入了 <code>!important</code>
       来避免特定性问题。这些类与我们的网格系统所使用的视口断点相同。请注意，浮动类对弹性项目没有影响。
     </p>
@@ -37,9 +33,7 @@
       <code-highlight type="html" :code="overviewCode" label="html" />
     </div>
 
-    <h2 id="float-wrap">
-      环绕图片<a class="anchor-link" aria-label="Link to this section: 环绕图片" href="#float-wrap"> </a>
-    </h2>
+    <h2 id="float-wrap">环绕图片<a class="anchor-link" aria-label="Link to this section: 环绕图片" href="#float-wrap"> </a></h2>
     <p class="text-bg-warning">Float 主要用于“文字环绕图片”场景。目前 Float 已经不再是布局的首选工具。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -57,23 +51,17 @@
             <rect width="100%" height="100%" fill="#e5e5e5"></rect>
             <text x="50%" y="50%" fill="#999" dy=".3em">Image</text>
           </svg>
-          This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is
-          a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very
-          long piece of text.This is a very long piece of text.This is a very long piece of text. This is a very long
-          piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of
-          text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of
-          text.This is a very long piece of text.This is a very long piece of text. This is a very long piece of
-          text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of
-          text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of
-          text.This is a very long piece of text.This is a very long piece of text.
+          This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long
+          piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text. This is a very long piece of text.This is a very long piece of text.This
+          is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece
+          of text.This is a very long piece of text. This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a
+          very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.This is a very long piece of text.
         </p>
       </div>
       <code-highlight type="html" :code="wrapCode" label="html" />
     </div>
 
-    <h2 id="float-clearfix">
-      清理浮动<a class="anchor-link" aria-label="Link to this section: 清理浮动" href="#float-clearfix"> </a>
-    </h2>
+    <h2 id="float-clearfix">清理浮动<a class="anchor-link" aria-label="Link to this section: 清理浮动" href="#float-clearfix"> </a></h2>
     <p>
       在父元素上使用
       <a href="https://bs53.bootstrap-vue.top/helpers/clearfix/" target="_blank">clearfix 辅助类</a>来清除浮动内容。
@@ -89,9 +77,7 @@
       <code-highlight type="html" :code="clearfixCode" label="html" />
     </div>
 
-    <h2 id="float-responsive">
-      响应性<a class="anchor-link" aria-label="Link to this section: 响应性" href="#float-responsive"> </a>
-    </h2>
+    <h2 id="float-responsive">响应性<a class="anchor-link" aria-label="Link to this section: 响应性" href="#float-responsive"> </a></h2>
     <p>对于每个 <code>float</code> 值，还存在相应的响应式形式。</p>
     <div class="docs-example">
       <div class="docs-example-data">

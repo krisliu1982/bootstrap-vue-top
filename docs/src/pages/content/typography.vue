@@ -21,9 +21,7 @@
       <a href="https://bs53.bootstrap-vue.top/content/typography/" target="_blank">Bootstrap Typography</a>
     </p>
 
-    <h2 id="ty-global">
-      全局设置<a class="anchor-link" aria-label="Link to this section: 全局设置" href="#ty-global"> </a>
-    </h2>
+    <h2 id="ty-global">全局设置<a class="anchor-link" aria-label="Link to this section: 全局设置" href="#ty-global"> </a></h2>
     <p>
       Bootstrap 设置了基本的全局显示、排版和链接样式。当需要更多控制时，请查看
       <a href="https://bs53.bootstrap-vue.top/utilities/text" target="_blank">文本实用类</a>。
@@ -31,27 +29,17 @@
     <ul class="docs-content-list">
       <li>
         使用
-        <a href="https://bs53.bootstrap-vue.top/content/reboot#native-font-stack" target="_blank">原生字体栈</a
-        >，为每个操作系统和设备选择最佳的 <code>font-family</code>。
+        <a href="https://bs53.bootstrap-vue.top/content/reboot#native-font-stack" target="_blank">原生字体栈</a>，为每个操作系统和设备选择最佳的 <code>font-family</code>。
       </li>
       <li>
         为了实现更具包容性和可访问性的字体大小，我们使用浏览器的默认根
         <code>font-size</code>（通常为16px），以便访问者可以根据需要自定义其浏览器默认设置。
       </li>
-      <li>
-        将 <code>$font-family-base</code>、<code>$font-size-base</code> 和
-        <code>$line-height-base</code> 属性作为我们的排版基础应用于 <code>&lt;body&gt;</code>。
-      </li>
+      <li>将 <code>$font-family-base</code>、<code>$font-size-base</code> 和 <code>$line-height-base</code> 属性作为我们的排版基础应用于 <code>&lt;body&gt;</code>。</li>
       <li>通过 <code>$link-color</code> 设置全局链接颜色。</li>
-      <li>
-        使用 <code>$body-bg</code> 来设置 <code>&lt;body&gt;</code> 的 <code>background-color</code>（默认为
-        <code>#fff</code>）。
-      </li>
+      <li>使用 <code>$body-bg</code> 来设置 <code>&lt;body&gt;</code> 的 <code>background-color</code>（默认为 <code>#fff</code>）。</li>
     </ul>
-    <p>
-      这些样式可以在 <code>_reboot.scss</code> 中找到，全局变量在 <code>_variables.scss</code> 中定义。请确保在
-      <code>rem</code> 中设置 <code>$font-size-base</code>。
-    </p>
+    <p>这些样式可以在 <code>_reboot.scss</code> 中找到，全局变量在 <code>_variables.scss</code> 中定义。请确保在 <code>rem</code> 中设置 <code>$font-size-base</code>。</p>
 
     <h2 id="ty-header">标题<a class="anchor-link" aria-label="Link to this section: 标题" href="#ty-header"> </a></h2>
     <p>所有 HTML 标题，从 <code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code>，均可使用。</p>
@@ -122,12 +110,8 @@
       <code-highlight type="html" :code="header2Code" label="html" />
     </div>
 
-    <h2 id="ty-display">
-      展示标题<a class="anchor-link" aria-label="Link to this section: 展示标题" href="#ty-display"> </a>
-    </h2>
-    <p>
-      传统标题元素的设计最适合放在页面内容的主要部分。当你需要一个标题来突出显示时，可以考虑使用<strong>展示标题</strong>——一种更大、略显突出的标题样式。
-    </p>
+    <h2 id="ty-display">展示标题<a class="anchor-link" aria-label="Link to this section: 展示标题" href="#ty-display"> </a></h2>
+    <p>传统标题元素的设计最适合放在页面内容的主要部分。当你需要一个标题来突出显示时，可以考虑使用<strong>展示标题</strong>——一种更大、略显突出的标题样式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <h1 class="display-1">Display 1</h1>
@@ -139,10 +123,7 @@
       </div>
       <code-highlight type="html" :code="displayCode" label="html" />
     </div>
-    <p>
-      显示标题是通过 <code>$display-font-sizes</code> Sass 映射以及两个变量 <code>$display-font-weight</code> 和
-      <code>$display-line-height</code> 来配置的。
-    </p>
+    <p>显示标题是通过 <code>$display-font-sizes</code> Sass 映射以及两个变量 <code>$display-font-weight</code> 和 <code>$display-line-height</code> 来配置的。</p>
     <p>显示标题可通过两个变量进行自定义，即 <code>$display-font-family</code> 和 <code>$display-font-style</code>。</p>
     <code-highlight type="scss" :code="displayScssCode" label="scss/_variables.scss" />
 
@@ -155,9 +136,7 @@
       <code-highlight type="html" :code="leadCode" label="html" />
     </div>
 
-    <h2 id="ty-inline">
-      内联文本元素<a class="anchor-link" aria-label="Link to this section: 内联文本元素" href="#ty-inline"> </a>
-    </h2>
+    <h2 id="ty-inline">内联文本元素<a class="anchor-link" aria-label="Link to this section: 内联文本元素" href="#ty-inline"> </a></h2>
     <p>常见内联 HTML5 元素的样式设计。</p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -203,15 +182,12 @@
       <code>&lt;i&gt;</code> 主要用于表示语音、技术术语等。
     </p>
 
-    <h2 id="ty-text-util">
-      文本工具<a class="anchor-link" aria-label="Link to this section: 文本工具" href="#ty-text-util"> </a>
-    </h2>
+    <h2 id="ty-text-util">文本工具<a class="anchor-link" aria-label="Link to this section: 文本工具" href="#ty-text-util"> </a></h2>
     <p>
       使用我们的
       <a href="https://bs53.bootstrap-vue.top/utilities/text" target="_blank">文本工具</a>
       和
-      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank">颜色工具</a
-      >，可以更改文本对齐方式、变换、样式、粗细、行高、装饰和颜色。
+      <a href="https://bs53.bootstrap-vue.top/utilities/colors" target="_blank">颜色工具</a>，可以更改文本对齐方式、变换、样式、粗细、行高、装饰和颜色。
     </p>
 
     <h2 id="ty-abbr">缩写<a class="anchor-link" aria-label="Link to this section: 缩写" href="#ty-abbr"> </a></h2>
@@ -231,9 +207,7 @@
       <code-highlight type="html" :code="abbrCode" label="html" />
     </div>
 
-    <h2 id="ty-blockquote">
-      引用<a class="anchor-link" aria-label="Link to this section: 引用" href="#ty-blockquote"> </a>
-    </h2>
+    <h2 id="ty-blockquote">引用<a class="anchor-link" aria-label="Link to this section: 引用" href="#ty-blockquote"> </a></h2>
     <p>
       在文档中引用其他来源的内容块时，请将任何 HTML 引用内容用
       <code>&lt;blockquote class="blockquote"&gt;</code> 包裹起来。
@@ -248,8 +222,7 @@
     </div>
     <p>
       HTML 规范要求将引用说明放在
-      <code>&lt;blockquote&gt;</code> 标签之外。在提供引用说明时，请将 <code>&lt;blockquote&gt;</code> 包裹在
-      <code>&lt;figure&gt;</code> 中，并使用带有 <code>.blockquote-footer</code> 类的
+      <code>&lt;blockquote&gt;</code> 标签之外。在提供引用说明时，请将 <code>&lt;blockquote&gt;</code> 包裹在 <code>&lt;figure&gt;</code> 中，并使用带有 <code>.blockquote-footer</code> 类的
       <code>&lt;figcaption&gt;</code>
       或块级元素（例如<code>&lt;p&gt;</code>）。同时，请确保将源作品的名称也包裹在
       <code>&lt;cite&gt;</code>中。
@@ -260,9 +233,7 @@
           <blockquote class="blockquote">
             <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
-          <figcaption class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
+          <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></figcaption>
         </figure>
       </div>
       <code-highlight type="html" :code="blockquote1Code" label="html" />
@@ -274,17 +245,13 @@
           <blockquote class="blockquote">
             <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
-          <figcaption class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
+          <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></figcaption>
         </figure>
         <figure class="text-end">
           <blockquote class="blockquote">
             <p>A well-known quote, contained in a blockquote element.</p>
           </blockquote>
-          <figcaption class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
+          <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></figcaption>
         </figure>
       </div>
       <code-highlight type="html" :code="blockquote2Code" label="html" />
@@ -318,10 +285,7 @@
       <code-highlight type="html" :code="lists1Code" label="html" />
     </div>
     <h3>内联列表</h3>
-    <p>
-      通过结合使用两个类，即 <code>.list-inline</code> 和
-      <code>.list-inline-item</code>，可以移除列表中的项目符号，并为其应用一些轻微的 <code>margin</code>。
-    </p>
+    <p>通过结合使用两个类，即 <code>.list-inline</code> 和 <code>.list-inline-item</code>，可以移除列表中的项目符号，并为其应用一些轻微的 <code>margin</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <ul class="list-inline">
@@ -359,9 +323,7 @@
           <dd class="col-sm-9">
             <dl class="row">
               <dt class="col-sm-4">Nested definition list</dt>
-              <dd class="col-sm-8">
-                I heard you like definition lists. Let me put a definition list inside your definition list.
-              </dd>
+              <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
             </dl>
           </dd>
         </dl>
@@ -369,9 +331,7 @@
       <code-highlight type="html" :code="lists3Code" label="html" />
     </div>
 
-    <h2 id="ty-font-size">
-      响应式字体大小<a class="anchor-link" aria-label="Link to this section: 响应式字体大小" href="#ty-font-size"> </a>
-    </h2>
+    <h2 id="ty-font-size">响应式字体大小<a class="anchor-link" aria-label="Link to this section: 响应式字体大小" href="#ty-font-size"> </a></h2>
     <p>
       在 Bootstrap 5 中，我们默认启用了响应式字体大小功能，使文本在不同设备和视口尺寸下能更自然地缩放。请访问
       <a href="https://bs53.bootstrap-vue.top/getting-started/rfs" target="_blank">RFS页面</a>

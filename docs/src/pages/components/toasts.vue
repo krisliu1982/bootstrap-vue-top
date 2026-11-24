@@ -16,15 +16,11 @@
       <a href="https://bs53.bootstrap-vue.top/components/toasts/" target="_blank">Bootstrap Toasts</a>
     </p>
 
-    <h2 id="toasts-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#toasts-base"> </a>
-    </h2>
+    <h2 id="toasts-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#toasts-base"> </a></h2>
     <p>
-      通过提供 <code>toast</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 在最简单的情况下，你可以通过设置
-      <code>title</code> 和 <code>message</code> 属性来设置通知的标题和HTML正文。
-      默认情况下，通知在5000毫秒后自动关闭，但你可以通过设置 <code>duration</code> 属性来自定义通知的展示时间。
-      如果你将它设置为 <code>0</code>，那么通知将不会自动关闭。 需要注意的是 <code>duration</code> 接收一个
-      <code>Number</code>，单位为毫秒。
+      通过提供 <code>toast</code> 方法并且它接受一个 <code>Object</code> 作为其参数。 在最简单的情况下，你可以通过设置 <code>title</code> 和 <code>message</code> 属性来设置通知的标题和HTML正文。
+      默认情况下，通知在5000毫秒后自动关闭，但你可以通过设置 <code>duration</code> 属性来自定义通知的展示时间。 如果你将它设置为 <code>0</code>，那么通知将不会自动关闭。 需要注意的是
+      <code>duration</code> 接收一个 <code>Number</code>，单位为毫秒。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -36,9 +32,7 @@
       <code-highlight type="vue" :code="baseCode" label="vue" />
     </div>
 
-    <h2 id="toasts-type">
-      类型调整<a class="anchor-link" aria-label="Link to this section: 类型调整" href="#toasts-type"> </a>
-    </h2>
+    <h2 id="toasts-type">类型调整<a class="anchor-link" aria-label="Link to this section: 类型调整" href="#toasts-type"> </a></h2>
     <p>
       我们提供了四种不同类型:
       <code>success | danger | warning | info</code>。可以设置 <code>type</code> 字段来修改，默认 <code>info</code>。
@@ -55,9 +49,7 @@
       <code-highlight type="vue" :code="typeCode" label="vue" />
     </div>
 
-    <h2 id="toasts-position">
-      弹出位置<a class="anchor-link" aria-label="Link to this section: 弹出位置" href="#toasts-position"> </a>
-    </h2>
+    <h2 id="toasts-position">弹出位置<a class="anchor-link" aria-label="Link to this section: 弹出位置" href="#toasts-position"> </a></h2>
     <p>
       使用 position 属性设置的弹出位置， 支持五个选项:
       <code>top-right | top-left | top-center | bottom-right | bottom-left</code>， 默认为 <code>top-right</code>。
@@ -75,13 +67,9 @@
       <code-highlight type="vue" :code="positionCode" label="vue" />
     </div>
 
-    <h2 id="toasts-html">
-      HTML正文<a class="anchor-link" aria-label="Link to this section: HTML正文" href="#toasts-html"> </a>
-    </h2>
+    <h2 id="toasts-html">HTML正文<a class="anchor-link" aria-label="Link to this section: HTML正文" href="#toasts-html"> </a></h2>
     <p><code>message</code> 字段可以为 HTML 内容。</p>
-    <p class="text-bg-danger">
-      在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 XSS 漏洞。永远不要使用用户提供的 HTML 内容。
-    </p>
+    <p class="text-bg-danger">在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 XSS 漏洞。永远不要使用用户提供的 HTML 内容。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <button type="button" class="btn btn-primary" @click="handleClickHtml">Html content</button>
@@ -89,13 +77,10 @@
       <code-highlight type="vue" :code="contentCode" label="vue" />
     </div>
 
-    <h2 id="toasts-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#toasts-css"> </a>
-    </h2>
+    <h2 id="toasts-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#toasts-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，下拉菜单现在在
-      <code>.toast</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
-      设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.toast</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_spinners.scss" />
   </div>

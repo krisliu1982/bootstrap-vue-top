@@ -10,12 +10,9 @@
     <h1>Loading 加载</h1>
     <p class="fs-4 fw-light">加载数据时显示动效。</p>
 
-    <h2 id="loading-fullscreen">
-      全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a>
-    </h2>
+    <h2 id="loading-fullscreen">全屏加载<a class="anchor-link" aria-label="Link to this section: 全屏加载" href="#loading-fullscreen"> </a></h2>
     <p>
-      通过提供 <code>LoadingFullscreen</code> 对象的 <code>getInstance</code> 方法获得单例。你可以通过
-      <code>show</code> 方法显示，<code>hide</code>
+      通过提供 <code>LoadingFullscreen</code> 对象的 <code>getInstance</code> 方法获得单例。你可以通过 <code>show</code> 方法显示，<code>hide</code>
       方法隐藏。
     </p>
     <p>
@@ -29,9 +26,7 @@
       <code-highlight type="vue" :code="fullscreenCode" label="vue" />
     </div>
 
-    <h2 id="loading-area">
-      区域加载<a class="anchor-link" aria-label="Link to this section: 区域加载" href="#loading-area"> </a>
-    </h2>
+    <h2 id="loading-area">区域加载<a class="anchor-link" aria-label="Link to this section: 区域加载" href="#loading-area"> </a></h2>
     <p>通过 <code>bv-loading</code> 组件实现区域加载。设置 <code>loading</code> 属性值控制是否加载。</p>
     <div class="docs-example">
       <div class="docs-example-data">

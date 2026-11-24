@@ -12,13 +12,8 @@
       <a href="https://bs53.bootstrap-vue.top/helpers/vertical-rule/" target="_blank">Bootstrap Vertical rule</a>
     </p>
 
-    <h2 id="vertical-rule-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#vertical-rule-about"> </a>
-    </h2>
-    <p>
-      垂直分隔线的设计灵感来源于 <code>&lt;hr&gt;</code> 元素，使您能够在常见的布局中创建垂直分隔线。它们的样式与
-      <code>&lt;hr&gt;</code> 元素完全一致：
-    </p>
+    <h2 id="vertical-rule-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#vertical-rule-about"> </a></h2>
+    <p>垂直分隔线的设计灵感来源于 <code>&lt;hr&gt;</code> 元素，使您能够在常见的布局中创建垂直分隔线。它们的样式与 <code>&lt;hr&gt;</code> 元素完全一致：</p>
     <ul class="docs-content-list">
       <li>它们的宽度为 1 px。</li>
       <li>它们的最小高度为 1 px。</li>

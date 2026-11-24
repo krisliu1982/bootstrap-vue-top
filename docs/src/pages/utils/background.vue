@@ -18,16 +18,12 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"><em>足够的</em> 颜色对比度</a>
       的可见文本），或者通过其他方式予以说明，比如使用带有
       <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
-    <h2 id="background-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#background-base"> </a>
-    </h2>
+    <h2 id="background-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#background-base"> </a></h2>
     <p>
       与上下文文本颜色类类似，可以将元素的背景设置为任何上下文类。背景工具
       <strong>不会设置 <code>color</code></strong>
@@ -37,9 +33,7 @@
       。
     </p>
     <p class="text-bg-info">
-      像 <code>.bg-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass
-      生成的背景相关工具目前尚不能响应颜色模式，不过任何 <code>.bg-*-subtle</code> 工具则可以。这一问题将在版本 6
-      中得到解决。
+      像 <code>.bg-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass 生成的背景相关工具目前尚不能响应颜色模式，不过任何 <code>.bg-*-subtle</code> 工具则可以。这一问题将在版本 6 中得到解决。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -69,9 +63,7 @@
       <code-highlight type="html" :code="baseCode" label="html" />
     </div>
 
-    <h2 id="background-gradient">
-      渐变背景<a class="anchor-link" aria-label="Link to this section: 渐变背景" href="#background-gradient"> </a>
-    </h2>
+    <h2 id="background-gradient">渐变背景<a class="anchor-link" aria-label="Link to this section: 渐变背景" href="#background-gradient"> </a></h2>
     <p>
       通过添加一个
       <code>.bg-gradient</code>
@@ -95,9 +87,7 @@
       </div>
     </div>
 
-    <h2 id="background-opacity">
-      透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#background-opacity"> </a>
-    </h2>
+    <h2 id="background-opacity">透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#background-opacity"> </a></h2>
     <p>
       若要更改该不透明度，请通过自定义样式或内联样式来覆盖
       <code>--bs-border-opacity</code> 属性。

@@ -10,15 +10,11 @@
     <h1>Quick start 快速开始</h1>
     <p class="fs-4 fw-light">本节将介绍如何在项目中使用 bootstrap-vue-top。</p>
 
-    <h2 id="quick-start-setup">
-      安装<a class="anchor-link" aria-label="Link to this section: 安装" href="#quick-start-setup"> </a>
-    </h2>
+    <h2 id="quick-start-setup">安装<a class="anchor-link" aria-label="Link to this section: 安装" href="#quick-start-setup"> </a></h2>
     <p class="text-bg-primary"><strong>注意！</strong>我们提供的构建文件里面已经包括 bootstrap 的 css 和 js，切勿再次引入。</p>
     <code-highlight type="bash" :code="setupCode" label="bash" />
 
-    <h2 id="quick-start-import">
-      引入<a class="anchor-link" aria-label="Link to this section: 引入" href="#quick-start-import"> </a>
-    </h2>
+    <h2 id="quick-start-import">引入<a class="anchor-link" aria-label="Link to this section: 引入" href="#quick-start-import"> </a></h2>
     <code-highlight type="js" :code="importCode" label="main.js" />
     <code-highlight type="vue" :code="import1Code" label="App.vue" />
 

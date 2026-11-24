@@ -12,23 +12,15 @@
       <a href="https://bs53.bootstrap-vue.top/layout/containers/" target="_blank">Bootstrap Containers</a>
     </p>
 
-    <h2 id="containers-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#containers-about"> </a>
-    </h2>
-    <p>
-      容器是 Bootstrap
-      中最基本的布局元素，当使用网格系统时，<strong>必须使用容器</strong>。容器用于容纳、填充以及（有时）使内容在其中居中对齐。虽然容器可以嵌套，但大多数布局并不需要嵌套的容器。
-    </p>
+    <h2 id="containers-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#containers-about"> </a></h2>
+    <p>容器是 Bootstrap 中最基本的布局元素，当使用网格系统时，<strong>必须使用容器</strong>。容器用于容纳、填充以及（有时）使内容在其中居中对齐。虽然容器可以嵌套，但大多数布局并不需要嵌套的容器。</p>
     <p>Bootstrap 提供了三种不同的容器：</p>
     <ul class="docs-content-list">
       <li><code>.container</code>，它会在每个响应式断点处设置一个 <code>max-width</code></li>
       <li><code>.container-{breakpoint}</code>，直到指定的断点之前为 <code>width: 100%</code></li>
       <li><code>.container-fluid</code>，在所有断点处其 <code>width: 100%</code></li>
     </ul>
-    <p>
-      下面的表格展示了每个容器的 <code>max-width</code> 与原始的 <code>.container</code> 和
-      <code>.container-fluid</code> 在每个断点下的对比情况。
-    </p>
+    <p>下面的表格展示了每个容器的 <code>max-width</code> 与原始的 <code>.container</code> 和 <code>.container-fluid</code> 在每个断点下的对比情况。</p>
     <div class="table-responsive">
       <table class="table">
         <thead>

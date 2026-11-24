@@ -15,13 +15,8 @@
       <a href="https://bs53.bootstrap-vue.top/content/images/" target="_blank">Bootstrap Images</a>
     </p>
 
-    <h2 id="img-responsive">
-      响应式图片<a class="anchor-link" aria-label="Link to this section: 响应式图片" href="#img-responsive"> </a>
-    </h2>
-    <p>
-      Bootstrap 中的图片通过 <code>.img-fluid</code> 实现自适应。这会对图片应用 <code>max-width: 100%;</code> 和
-      <code>height: auto;</code>，使其随父元素的宽度而缩放。
-    </p>
+    <h2 id="img-responsive">响应式图片<a class="anchor-link" aria-label="Link to this section: 响应式图片" href="#img-responsive"> </a></h2>
+    <p>Bootstrap 中的图片通过 <code>.img-fluid</code> 实现自适应。这会对图片应用 <code>max-width: 100%;</code> 和 <code>height: auto;</code>，使其随父元素的宽度而缩放。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <svg
@@ -41,9 +36,7 @@
       <code-highlight type="html" :code="responsiveCode" label="html" />
     </div>
 
-    <h2 id="img-thumbnail">
-      图片缩略图<a class="anchor-link" aria-label="Link to this section: 图片缩略图" href="#img-thumbnail"> </a>
-    </h2>
+    <h2 id="img-thumbnail">图片缩略图<a class="anchor-link" aria-label="Link to this section: 图片缩略图" href="#img-thumbnail"> </a></h2>
     <p>
       除了我们的
       <a href="https://bs53.bootstrap-vue.top/utilities/borders" target="_blank">border-radius 工具</a>
@@ -61,10 +54,7 @@
           width="200"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            A generic square placeholder image with a white border around it, making it resemble a photograph taken with
-            an old instant camera
-          </title>
+          <title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title>
           <rect width="100%" height="100%" fill="#868e96"></rect>
           <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
         </svg>
@@ -72,18 +62,14 @@
       <code-highlight type="html" :code="thumbnailCode" label="html" />
     </div>
 
-    <h2 id="img-align">
-      图像对齐<a class="anchor-link" aria-label="Link to this section: 图像对齐" href="#img-align"> </a>
-    </h2>
+    <h2 id="img-align">图像对齐<a class="anchor-link" aria-label="Link to this section: 图像对齐" href="#img-align"> </a></h2>
     <p>
       使用
       <a href="https://bs53.bootstrap-vue.top/utilities/float" target="_blank">辅助浮动类</a>
       或
       <a href="https://bs53.bootstrap-vue.top/utilities/text#text-alignment" target="_blank">文本对齐类</a>
       来对齐图像。<code>block</code> 级别的图像可以使用
-      <a href="https://bs53.bootstrap-vue.top/utilities/spacing#horizontal-centering" target="_blank"
-        ><code>.mx-auto</code> 边距辅助类</a
-      >
+      <a href="https://bs53.bootstrap-vue.top/utilities/spacing#horizontal-centering" target="_blank"><code>.mx-auto</code> 边距辅助类</a>
       来居中。
     </p>
     <div class="docs-example">
@@ -98,10 +84,7 @@
             width="200"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              A generic square placeholder image with a white border around it, making it resemble a photograph taken
-              with an old instant camera
-            </title>
+            <title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title>
             <rect width="100%" height="100%" fill="#868e96"></rect>
             <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
           </svg>
@@ -114,10 +97,7 @@
             width="200"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              A generic square placeholder image with a white border around it, making it resemble a photograph taken
-              with an old instant camera
-            </title>
+            <title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title>
             <rect width="100%" height="100%" fill="#868e96"></rect>
             <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
           </svg>
@@ -133,10 +113,7 @@
           width="200"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>
-            A generic square placeholder image with a white border around it, making it resemble a photograph taken with
-            an old instant camera
-          </title>
+          <title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title>
           <rect width="100%" height="100%" fill="#868e96"></rect>
           <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
         </svg>
@@ -152,10 +129,7 @@
             width="200"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              A generic square placeholder image with a white border around it, making it resemble a photograph taken
-              with an old instant camera
-            </title>
+            <title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title>
             <rect width="100%" height="100%" fill="#868e96"></rect>
             <text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text>
           </svg>
@@ -164,13 +138,10 @@
       <code-highlight type="html" :code="alignCode" label="html" />
     </div>
 
-    <h2 id="img-picture">
-      Picture<a class="anchor-link" aria-label="Link to this section: Picture" href="#img-picture"> </a>
-    </h2>
+    <h2 id="img-picture">Picture<a class="anchor-link" aria-label="Link to this section: Picture" href="#img-picture"> </a></h2>
     <p>
-      如果你正在使用 <code>&lt;picture&gt;</code> 元素为特定的 <code>&lt;img&gt;</code> 指定多个
-      <code>&lt;source&gt;</code> 元素，请确保将 <code>.img-*</code> 类添加到 <code>&lt;img&gt;</code> 标签上，而不是
-      <code>&lt;picture&gt;</code> 标签上。
+      如果你正在使用 <code>&lt;picture&gt;</code> 元素为特定的 <code>&lt;img&gt;</code> 指定多个 <code>&lt;source&gt;</code> 元素，请确保将 <code>.img-*</code> 类添加到
+      <code>&lt;img&gt;</code> 标签上，而不是 <code>&lt;picture&gt;</code> 标签上。
     </p>
     <code-highlight type="html" :code="pictureCode" label="html" />
   </div>

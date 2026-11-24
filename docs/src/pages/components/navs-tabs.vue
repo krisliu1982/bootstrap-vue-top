@@ -17,39 +17,30 @@
     <h1>Navs and tabs 导航标签</h1>
     <p class="fs-4 fw-light">
       基于
-      <a href="https://bs53.bootstrap-vue.top/components/navs-tabs/" target="_blank">Bootstrap Navs and tabs</a
-      >，构建 <code>bv-tabs</code> 导航标签组件。
+      <a href="https://bs53.bootstrap-vue.top/components/navs-tabs/" target="_blank">Bootstrap Navs and tabs</a>，构建 <code>bv-tabs</code> 导航标签组件。
     </p>
 
-    <h2 id="tabs-example">
-      基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#tabs-example"> </a>
-    </h2>
-    <p>
-      <code>bv-tabs</code> 组件默认选中第一个标签页，你也可以通过
-      <code>active-index</code> 属性来指定当前选中的标签页。
-    </p>
+    <h2 id="tabs-example">基础示例<a class="anchor-link" aria-label="Link to this section: 基础示例" href="#tabs-example"> </a></h2>
+    <p><code>bv-tabs</code> 组件默认选中第一个标签页，你也可以通过 <code>active-index</code> 属性来指定当前选中的标签页。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-tabs :active-index="0">
           <bv-tab-pane label="Home">
             <p>
-              Home-This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              Home-This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              Profile-This is some placeholder content the Profile tab’s associated content. Clicking another tab will
-              toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              Profile-This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
+              to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              Contact-This is some placeholder content the Contact tab’s associated content. Clicking another tab will
-              toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              Contact-This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes
+              to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>Disabled</bv-tab-pane>
@@ -58,9 +49,7 @@
       <code-highlight type="vue" :code="exampleCode" label="vue" />
     </div>
 
-    <h2 id="tabs-horizontal">
-      水平对齐<a class="anchor-link" aria-label="Link to this section: 水平对齐" href="#tabs-horizontal"> </a>
-    </h2>
+    <h2 id="tabs-horizontal">水平对齐<a class="anchor-link" aria-label="Link to this section: 水平对齐" href="#tabs-horizontal"> </a></h2>
     <p>
       使用
       <a href="https://bs53.bootstrap-vue.top/utilities/flex#justify-content" target="_blank">弹性盒工具栏</a>
@@ -72,23 +61,20 @@
         <bv-tabs tabs-class="justify-content-center">
           <bv-tab-pane label="Home">
             <p>
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -97,23 +83,20 @@
         <bv-tabs tabs-class="justify-content-end">
           <bv-tab-pane label="Home">
             <p>
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -122,32 +105,27 @@
       <code-highlight type="vue" :code="horizontalCode" label="vue" />
     </div>
 
-    <h2 id="tabs-tabs">
-      卡片样式<a class="anchor-link" aria-label="Link to this section: 卡片样式" href="#tabs-tabs"> </a>
-    </h2>
+    <h2 id="tabs-tabs">卡片样式<a class="anchor-link" aria-label="Link to this section: 卡片样式" href="#tabs-tabs"> </a></h2>
     <p>设置 <code>tabs-class="nav-tabs"</code> 会展现选项卡样式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-tabs tabs-class="nav-tabs">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -156,32 +134,27 @@
       <code-highlight type="vue" :code="tabsCode" label="vue" />
     </div>
 
-    <h2 id="tabs-pills">
-      胶囊样式<a class="anchor-link" aria-label="Link to this section: 胶囊样式" href="#tabs-pills"> </a>
-    </h2>
+    <h2 id="tabs-pills">胶囊样式<a class="anchor-link" aria-label="Link to this section: 胶囊样式" href="#tabs-pills"> </a></h2>
     <p>设置 <code>tabs-class="nav-pills"</code> 会展现胶囊样式。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-tabs tabs-class="nav-pills">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -190,37 +163,31 @@
       <code-highlight type="vue" :code="pillsCode" label="vue" />
     </div>
 
-    <h2 id="tabs-underline">
-      下划线样式<a class="anchor-link" aria-label="Link to this section: 下划线样式" href="#tabs-underline"> </a>
-    </h2>
+    <h2 id="tabs-underline">下划线样式<a class="anchor-link" aria-label="Link to this section: 下划线样式" href="#tabs-underline"> </a></h2>
     <p>
       设置
-      <code>tabs-class="nav-underline"</code> 会展现下划线样式。默认标签项间距为 <code>1rem</code>，可以通过设置 CSS
-      变量 <code>tabs-style="--bs-nav-underline-gap: 1.5rem;"</code> 来改变。其他 CSS 变量请阅读
-      <a href="#tabs-css">CSS Variables</a>。
+      <code>tabs-class="nav-underline"</code> 会展现下划线样式。默认标签项间距为 <code>1rem</code>，可以通过设置 CSS 变量 <code>tabs-style="--bs-nav-underline-gap: 1.5rem;"</code> 来改变。其他 CSS
+      变量请阅读 <a href="#tabs-css">CSS Variables</a>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-tabs tabs-class="nav-underline" tabs-style="--bs-nav-underline-gap: 1.5rem;">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -229,9 +196,7 @@
       <code-highlight type="vue" :code="underlineCode" label="vue" />
     </div>
 
-    <h2 id="tabs-fill">
-      填充并居中对齐<a class="anchor-link" aria-label="Link to this section: 填充并居中对齐" href="#tabs-fill"> </a>
-    </h2>
+    <h2 id="tabs-fill">填充并居中对齐<a class="anchor-link" aria-label="Link to this section: 填充并居中对齐" href="#tabs-fill"> </a></h2>
     <p>
       使用以下两种修饰类中的任意一种，导航标签栏的内容扩展至整个可用宽度。若要使标签项均匀地占据所有可用空间，请使用
       <code>.nav-fill</code>
@@ -242,23 +207,20 @@
         <bv-tabs tabs-class="nav-pills nav-fill">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Much longer nav link">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -277,23 +239,20 @@
         <bv-tabs tabs-class="nav-pills nav-justified">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Much longer nav link">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -302,34 +261,27 @@
       <code-highlight type="vue" :code="fill2Code" label="vue" />
     </div>
 
-    <h2 id="tabs-position">
-      标签栏位置<a class="anchor-link" aria-label="Link to this section: 标签栏位置" href="#tabs-position"> </a>
-    </h2>
-    <p>
-      可以通过 <code>position</code> 设置标签的位置。一共有四个方向的设置 <code>position="start|end|top|bottom"</code>。
-    </p>
+    <h2 id="tabs-position">标签栏位置<a class="anchor-link" aria-label="Link to this section: 标签栏位置" href="#tabs-position"> </a></h2>
+    <p>可以通过 <code>position</code> 设置标签的位置。一共有四个方向的设置 <code>position="start|end|top|bottom"</code>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-tabs tabs-class="nav-pills" position="bottom">
           <bv-tab-pane label="Home">
             <p>
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -338,23 +290,20 @@
         <bv-tabs tabs-class="nav-pills" position="start">
           <bv-tab-pane label="Home">
             <p>
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -363,23 +312,20 @@
         <bv-tabs tabs-class="nav-pills" position="end">
           <bv-tab-pane label="Home">
             <p>
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile">
             <p>
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact">
             <p>
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Disabled" disabled>disabled</bv-tab-pane>
@@ -388,9 +334,7 @@
       <code-highlight type="vue" :code="positionCode" label="vue" />
     </div>
 
-    <h2 id="tabs-lazy">
-      延迟渲染<a class="anchor-lazy" aria-label="Link to this section: 延迟渲染" href="#tabs-lazy"> </a>
-    </h2>
+    <h2 id="tabs-lazy">延迟渲染<a class="anchor-lazy" aria-label="Link to this section: 延迟渲染" href="#tabs-lazy"> </a></h2>
     <p>
       通过在标签项设置
       <code>:lazy="true"</code>
@@ -401,23 +345,20 @@
         <bv-tabs tabs-class="nav-tabs">
           <bv-tab-pane label="Home">
             <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control
+              the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Profile" :lazy="true">
             <p class="py-3">
-              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
           <bv-tab-pane label="Contact" :lazy="true">
             <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
+              control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
         </bv-tabs>
@@ -425,13 +366,10 @@
       <code-highlight type="vue" :code="lazyCode" label="vue" />
     </div>
 
-    <h2 id="tabs-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#tabs-css"> </a>
-    </h2>
+    <h2 id="tabs-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#tabs-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，导航标签栏现在在
-      <code>.nav</code> 和 <code>.nav-*</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS
-      变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.nav</code> 和 <code>.nav-*</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_nav.scss" />
   </div>
@@ -523,7 +461,6 @@ const lazyCode = `
     </bv-tab-pane>
   </bv-tabs>
 </template>`;
-
 
 const css1Code = `
 //.nav base class

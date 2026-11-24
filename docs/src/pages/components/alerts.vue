@@ -17,12 +17,8 @@
       <a href="https://bs53.bootstrap-vue.top/components/alerts/" target="_blank">Bootstrap Alerts</a>
     </p>
 
-    <h2 id="alerts-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#alerts-example"> </a>
-    </h2>
-    <p>
-      “警示”可用于任何长度的文本，以及一个可选的关闭按钮。为了确保样式正确，请使用八个<strong>必需</strong>的上下文类之一（例如，<code>.alert-success</code>）。
-    </p>
+    <h2 id="alerts-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#alerts-example"> </a></h2>
+    <p>“警示”可用于任何长度的文本，以及一个可选的关闭按钮。为了确保样式正确，请使用八个<strong>必需</strong>的上下文类之一（例如，<code>.alert-success</code>）。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
@@ -45,9 +41,7 @@
       >），或者通过其他方式予以说明，比如使用带有<code>. visually-hidden</code>类的隐藏文本。
     </p>
 
-    <h2 id="alerts-link">
-      链接颜色<a class="anchor-link" aria-label="Link to this section: 链接颜色" href="#alerts-link"> </a>
-    </h2>
+    <h2 id="alerts-link">链接颜色<a class="anchor-link" aria-label="Link to this section: 链接颜色" href="#alerts-link"> </a></h2>
     <p>
       使用
       <code>.alert-link</code>
@@ -91,17 +85,15 @@
       <code-highlight type="html" :code="linkCode" label="html" />
     </div>
 
-    <h2 id="alerts-att">
-      附加内容<a class="anchor-link" aria-label="Link to this section: 附加内容" href="#alerts-att"> </a>
-    </h2>
+    <h2 id="alerts-att">附加内容<a class="anchor-link" aria-label="Link to this section: 附加内容" href="#alerts-att"> </a></h2>
     <p>警示还可以包含其他HTML元素，如标题、段落和分隔符。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="alert alert-success" role="alert">
           <h4 class="alert-heading">Well done!</h4>
           <p>
-            Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
-            so that you can see how spacing within an alert works with this kind of content.
+            Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of
+            content.
           </p>
           <hr />
           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
@@ -110,9 +102,7 @@
       <code-highlight type="html" :code="attCode" label="html" />
     </div>
 
-    <h2 id="alerts-icon">
-      图标<a class="anchor-link" aria-label="Link to this section: 图标" href="#alerts-icon"> </a>
-    </h2>
+    <h2 id="alerts-icon">图标<a class="anchor-link" aria-label="Link to this section: 图标" href="#alerts-icon"> </a></h2>
     <p>
       同样，您可以使用
       <a href="https://bs53.bootstrap-vue.top/utilities/flex" target="_blank">flexbox 工具</a>
@@ -130,9 +120,7 @@
       <code-highlight type="html" :code="iconCode" label="html" />
     </div>
 
-    <h2 id="alerts-dismissing">
-      可关闭<a class="anchor-link" aria-label="Link to this section: 可关闭" href="#alerts-dismissing"> </a>
-    </h2>
+    <h2 id="alerts-dismissing">可关闭<a class="anchor-link" aria-label="Link to this section: 可关闭" href="#alerts-dismissing"> </a></h2>
     <p>可以在行内关闭任何 alert。方法如下：</p>
     <ul class="docs-content-list">
       <li>
@@ -144,8 +132,7 @@
       </li>
       <li>
         在关闭按钮上，添加
-        <code>data-bs-dismiss="alert"</code> 属性，以触发 JavaScript 功能。请务必使用
-        <code>&lt;button&gt;</code> 元素，以确保在所有设备上都能正常工作。
+        <code>data-bs-dismiss="alert"</code> 属性，以触发 JavaScript 功能。请务必使用 <code>&lt;button&gt;</code> 元素，以确保在所有设备上都能正常工作。
       </li>
       <li>要在关闭警示时为其设置动画效果，请务必添加 <code>.fade</code> 和 <code>.show</code> 类。</li>
     </ul>
@@ -159,13 +146,10 @@
       <code-highlight type="vue" :code="dismissCode" label="vue" />
     </div>
 
-    <h2 id="alerts-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#alerts-css"> </a>
-    </h2>
+    <h2 id="alerts-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#alerts-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，Alerts 现在在
-      <code>.alert</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
-      设置的，因此 Sass 自定义功能依然可用。
+      <code>.alert</code> 元素上使用了本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能依然可用。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_alert.scss" />
   </div>

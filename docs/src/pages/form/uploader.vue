@@ -11,13 +11,10 @@
     <h1>Uploader</h1>
     <p class="fs-4 fw-light">基于Input File元素，构建上传文件组件。</p>
 
-    <h2 id="uploader-file">
-      文件上传<a class="anchor-link" aria-label="Link to this section: 文件上传" href="#uploader-file"> </a>
-    </h2>
+    <h2 id="uploader-file">文件上传<a class="anchor-link" aria-label="Link to this section: 文件上传" href="#uploader-file"> </a></h2>
     <p>
-      用于文件上传。设置 <code>file-list</code> 为已上传文件信息,
-      <code>multiple</code> 为是否多文件上传，默认单文件上传。监听
-      <code>file-change</code> 事件处理验证，上传等逻辑。监听 <code>file-remove</code> 事件删除文件。
+      用于文件上传。设置 <code>file-list</code> 为已上传文件信息, <code>multiple</code> 为是否多文件上传，默认单文件上传。监听 <code>file-change</code> 事件处理验证，上传等逻辑。监听
+      <code>file-remove</code> 事件删除文件。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -33,9 +30,7 @@
       <code-highlight type="vue" :code="fileCode" label="vue" />
     </div>
 
-    <h2 id="uploader-image-one">
-      单图片上传<a class="anchor-link" aria-label="Link to this section: 单图片上传" href="#uploader-image-one"> </a>
-    </h2>
+    <h2 id="uploader-image-one">单图片上传<a class="anchor-link" aria-label="Link to this section: 单图片上传" href="#uploader-image-one"> </a></h2>
     <p>
       用于用户头像上传，封面上传等单图片场景。设置
       <code>width, height</code> 控制图片显示大小，<code>img-url</code>
@@ -46,14 +41,7 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <BvImageOneUploader
-          width="160px"
-          height="160px"
-          :img-url="imageUrl"
-          @file-change="handleImageOneChange"
-          @file-remove="handleImageOneRemove"
-          @file-preview="handleImageOnePreview"
-        >
+        <BvImageOneUploader width="160px" height="160px" :img-url="imageUrl" @file-change="handleImageOneChange" @file-remove="handleImageOneRemove" @file-preview="handleImageOnePreview">
           <template #tip>
             <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
           </template>
@@ -62,22 +50,10 @@
       <code-highlight type="vue" :code="imageOneCode" label="vue" />
     </div>
 
-    <h2 id="uploader-image-many">
-      多图片上传<a class="anchor-link" aria-label="Link to this section: 多图片上传" href="#uploader-image-many"> </a>
-    </h2>
-    <p>
-      用于多张图片批量上传。设置 <code>width, height</code> 控制图片显示大小，
-      <code>img-urls</code> 为图片地址数组，其中地址项必须唯一。
-    </p>
-    <p>
-      可以通过 <code>sortable</code> 启动图片排序功能。<span class="text-bg-warning"
-        >目前排序功能在<strong>触摸设备</strong>上不支持。</span
-      >
-    </p>
-    <p>
-      监听 <code>file-change</code> 事件处理图片验证，压缩和上传。监听 <code>file-remove</code> 事件删除图片。监听
-      <code>file-preview</code> 事件查看原图。
-    </p>
+    <h2 id="uploader-image-many">多图片上传<a class="anchor-link" aria-label="Link to this section: 多图片上传" href="#uploader-image-many"> </a></h2>
+    <p>用于多张图片批量上传。设置 <code>width, height</code> 控制图片显示大小， <code>img-urls</code> 为图片地址数组，其中地址项必须唯一。</p>
+    <p>可以通过 <code>sortable</code> 启动图片排序功能。<span class="text-bg-warning">目前排序功能在<strong>触摸设备</strong>上不支持。</span></p>
+    <p>监听 <code>file-change</code> 事件处理图片验证，压缩和上传。监听 <code>file-remove</code> 事件删除图片。监听 <code>file-preview</code> 事件查看原图。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <BvImageManyUploader
@@ -161,11 +137,7 @@ function handleImageManyRemove(index) {
 }
 
 function handleImageManyPreview(index) {
-  const imges = [
-    '/images/docs-slide1-800x800.jpg',
-    '/images/docs-slide2-800x800.jpg',
-    '/images/docs-slide3-800x800.jpg'
-  ];
+  const imges = ['/images/docs-slide1-800x800.jpg', '/images/docs-slide2-800x800.jpg', '/images/docs-slide3-800x800.jpg'];
   //imagePreview(imges, index);
   imagePreview(imges, 0);
 }

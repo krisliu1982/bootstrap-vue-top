@@ -12,18 +12,12 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/visibility/" target="_blank">Bootstrap Visibility</a>
     </p>
 
-    <h2 id="visibility-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#visibility-about"> </a>
-    </h2>
+    <h2 id="visibility-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#visibility-about"> </a></h2>
     <p>
-      使用我们的可见性工具来设置元素的可见性。这些工具类完全不会修改 <code>display</code> 值，也不会影响布局——<code
-        >.invisible</code
-      >
+      使用我们的可见性工具来设置元素的可见性。这些工具类完全不会修改 <code>display</code> 值，也不会影响布局——<code>.invisible</code>
       元素仍然会在页面中占据空间。
     </p>
-    <p class="text-bg-warning">
-      带有 <code>.invisible</code> 类的元素将会在视觉上以及对于辅助技术/屏幕阅读器用户而言被隐藏起来。
-    </p>
+    <p class="text-bg-warning">带有 <code>.invisible</code> 类的元素将会在视觉上以及对于辅助技术/屏幕阅读器用户而言被隐藏起来。</p>
     <p>根据需要使用 <code>.visible</code> 或 <code>.invisible</code> 。</p>
     <code-highlight type="html" :code="aboutCode" label="html" />
     <code-highlight type="css" :code="css1Code" label="css" />

@@ -12,9 +12,7 @@
       <a href="https://bs53.bootstrap-vue.top/utilities/vertical-align/" target="_blank">Bootstrap Vertical align</a>
     </p>
 
-    <h2 id="vertical-align-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#vertical-align-about"> </a>
-    </h2>
+    <h2 id="vertical-align-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#vertical-align-about"> </a></h2>
     <p>
       使用
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align" target="_blank">
@@ -23,15 +21,10 @@
       语法来调整元素的对齐方式。请注意，vertical-align 仅对内联、内联块、内联表格以及表格单元格元素有效。
     </p>
     <p>
-      根据需要从以下选项中进行选择：<code>.align-baseline</code>、<code>.align-top</code>、<code>.align-middle</code>、<code>.align-bottom</code>、<code
-        >.align-text-bottom</code
-      >
-      和 <code>.align-text-top</code> 。
+      根据需要从以下选项中进行选择：<code>.align-baseline</code>、<code>.align-top</code>、<code>.align-middle</code>、<code>.align-bottom</code>、<code>.align-text-bottom</code> 和
+      <code>.align-text-top</code> 。
     </p>
-    <p>
-      若要垂直居中非内联内容（例如 <code>&lt;div&gt;</code> 元素及其他类似元素），请使用我们的
-      <a href="https://bs53.bootstrap-vue.top/utilities/flex#align-items">flex box utilities</a>。
-    </p>
+    <p>若要垂直居中非内联内容（例如 <code>&lt;div&gt;</code> 元素及其他类似元素），请使用我们的 <a href="https://bs53.bootstrap-vue.top/utilities/flex#align-items">flex box utilities</a>。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <span class="align-baseline">baseline</span>

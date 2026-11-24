@@ -12,15 +12,12 @@
       <a href="https://bs53.bootstrap-vue.top/helpers/visually-hidden/" target="_blank">Bootstrap Visually hidden</a>
     </p>
 
-    <h2 id="visually-hidden-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#visually-hidden-about"> </a>
-    </h2>
+    <h2 id="visually-hidden-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#visually-hidden-about"> </a></h2>
     <p>
       通过使用 <code>.visually-hidden</code> 可以在视觉上隐藏一个元素，同时仍允许其被辅助技术（如屏幕阅读器）访问。使用
       <code>.visually-hidden-focusable</code>
       可以默认将元素视觉隐藏，但在元素获得焦点时（例如仅通过键盘操作的用户）会显示出来。
-      <code>.visually-hidden-focusable</code> 也可以应用于容器——借助
-      <code>:focus-within</code>，当容器的任何子元素获得焦点时，容器也会被显示出来。
+      <code>.visually-hidden-focusable</code> 也可以应用于容器——借助 <code>:focus-within</code>，当容器的任何子元素获得焦点时，容器也会被显示出来。
     </p>
 
     <div class="docs-example">

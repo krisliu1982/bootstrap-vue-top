@@ -18,25 +18,20 @@
     <p class="text-bg-info">
       <strong>无障碍使用提示：</strong>
       仅通过颜色来传达意义仅能提供一种视觉上的指示，这对于使用辅助技术（如屏幕阅读器）的用户来说是无法获取到的。请确保其含义能从内容本身中清晰展现（例如，具有
-      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"
-        ><em>足够的</em> 颜色对比度</a
-      >
+      <a href="https://bs53.bootstrap-vue.top/getting-started/accessibility/#color-contrast" target="_blank"><em>足够的</em> 颜色对比度</a>
       的可见文本），或者通过其他方式予以说明，比如使用带有
       <code>.visually-hidden</code> 类的隐藏文本。
     </p>
 
-    <h2 id="colors-base">
-      基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#colors-base"> </a>
-    </h2>
+    <h2 id="colors-base">基础用法<a class="anchor-link" aria-label="Link to this section: 基础用法" href="#colors-base"> </a></h2>
     <p>
       使用文本颜色工具对文本进行着色。如果您想对链接进行着色，可以使用
       <a href="https://bs53.bootstrap-vue.top/helpers/colored-links" target="_blank"><code>.link-*</code></a>
       辅助类 ，它们具有 <code>:hover</code> 和 <code>:focus</code> 状态。
     </p>
     <p class="text-bg-info">
-      像 <code>.text-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass
-      生成的颜色相关样式，目前还无法响应颜色模式，不过任何 <code>.text-*-emphasis</code> 样式都会生效。这一问题将在版本
-      6 中得到解决。
+      像 <code>.text-*</code> 这类由我们最初的 <code>$theme-colors</code> Sass 生成的颜色相关样式，目前还无法响应颜色模式，不过任何 <code>.text-*-emphasis</code> 样式都会生效。这一问题将在版本 6
+      中得到解决。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -68,9 +63,7 @@
       <code-highlight type="html" :code="baseCode" label="html" />
     </div>
 
-    <h2 id="colors-opacity">
-      透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#colors-opacity"> </a>
-    </h2>
+    <h2 id="colors-opacity">透明度调整<a class="anchor-link" aria-label="Link to this section: 透明度调整" href="#colors-opacity"> </a></h2>
     <p>
       若要更改该不透明度，请通过自定义样式或内联样式来覆盖
       <code>--bs-text-opacity</code> 属性。
@@ -96,9 +89,7 @@
       <code-highlight type="html" :code="opacity2Code" label="html" />
     </div>
 
-    <h2 id="colors-specificity">
-      特别点<a class="anchor-link" aria-label="Link to this section: 特别点" href="#colors-specificity"> </a>
-    </h2>
+    <h2 id="colors-specificity">特别点<a class="anchor-link" aria-label="Link to this section: 特别点" href="#colors-specificity"> </a></h2>
     <p>
       有时由于另一个选择器的特殊性，上下文类无法应用。在某些情况下，一个有效的解决办法是将元素的内容包裹在一个
       <code>&lt;div&gt;</code> 或者具有所需类名的更具语义性的元素中。

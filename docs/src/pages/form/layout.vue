@@ -21,9 +21,7 @@
       <a href="https://bs53.bootstrap-vue.top/forms/layout/" target="_blank">Bootstrap Form Layout</a>
     </p>
 
-    <h2 id="layout-forms">
-      表单<a class="anchor-link" aria-label="Link to this section: 表单" href="#layout-forms"> </a>
-    </h2>
+    <h2 id="layout-forms">表单<a class="anchor-link" aria-label="Link to this section: 表单" href="#layout-forms"> </a></h2>
     <p>
       每一组表单字段都应位于一个 <code>&lt;form&gt;</code> 元素中。Bootstrap 没有为
       <code>&lt;form&gt;</code>
@@ -35,19 +33,11 @@
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MDN表单文档</a>
         以获取概览 以及可用属性的完整列表。
       </li>
-      <li>
-        在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code> 默认具有 <code>type="submit"</code> 属性，所以
-        力求具体，并始终包含一个 <code>type</code>。
-      </li>
+      <li>在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code> 默认具有 <code>type="submit"</code> 属性，所以 力求具体，并始终包含一个 <code>type</code>。</li>
     </ul>
-    <p>
-      由于 Bootstrap 为几乎所有的表单控件都应用了 <code>display: block</code> 和 <code>width: 100%</code>，
-      表单默认会垂直堆叠。可以使用额外的类来根据每个表单的不同调整布局。
-    </p>
+    <p>由于 Bootstrap 为几乎所有的表单控件都应用了 <code>display: block</code> 和 <code>width: 100%</code>， 表单默认会垂直堆叠。可以使用额外的类来根据每个表单的不同调整布局。</p>
 
-    <h2 id="layout-utilities">
-      工具使用<a class="anchor-link" aria-label="Link to this section: 工具使用" href="#layout-utilities"> </a>
-    </h2>
+    <h2 id="layout-utilities">工具使用<a class="anchor-link" aria-label="Link to this section: 工具使用" href="#layout-utilities"> </a></h2>
     <p>
       <a href="https://bs53.bootstrap-vue.top/utilities/spacing" target="_blank">边距工具</a>
       是给表单添加结构的最简单方法。它们为标签、控件、可选表单文本和表单验证消息提供了基本的分组。我们建议仅使用
@@ -71,12 +61,9 @@
       <code-highlight type="html" :code="utilitiesCode" label="html" />
     </div>
 
-    <h2 id="layout-grid">
-      表单网格<a class="anchor-link" aria-label="Link to this section: 表单网格" href="#layout-grid"> </a>
-    </h2>
+    <h2 id="layout-grid">表单网格<a class="anchor-link" aria-label="Link to this section: 表单网格" href="#layout-grid"> </a></h2>
     <p>
-      您可以使用我们的网格类来构建更复杂的表单。对于需要多列布局、不同宽度以及更多对齐选项的表单，请使用这些网格类。<strong
-        >需要启用 <code>$enable-grid-classes</code> Sass 变量</strong
+      您可以使用我们的网格类来构建更复杂的表单。对于需要多列布局、不同宽度以及更多对齐选项的表单，请使用这些网格类。<strong>需要启用 <code>$enable-grid-classes</code> Sass 变量</strong
       >（默认已启用）。
     </p>
     <div class="docs-example">
@@ -93,9 +80,7 @@
       <code-highlight type="html" :code="gridCode" label="html" />
     </div>
 
-    <h2 id="layout-table">
-      表单表格<a class="anchor-link" aria-label="Link to this section: 表单表格" href="#layout-table"> </a>
-    </h2>
+    <h2 id="layout-table">表单表格<a class="anchor-link" aria-label="Link to this section: 表单表格" href="#layout-table"> </a></h2>
     <p>
       您可以使用 Bootstrap table 构建表单。可以使用
       <code>.table-*</code> 来设置表格样式。
@@ -140,13 +125,11 @@
       <code-highlight type="html" :code="tableCode" label="html" />
     </div>
 
-    <h2 id="layout-gutters">
-      Gutters<a class="anchor-link" aria-label="Link to this section: Gutters" href="#layout-gutters"> </a>
-    </h2>
+    <h2 id="layout-gutters">Gutters<a class="anchor-link" aria-label="Link to this section: Gutters" href="#layout-gutters"> </a></h2>
     <p>
       通过添加
-      <a href="https://bs53.bootstrap-vue.top/layout/gutters" target="_blank">边距修饰符类</a
-      >，您可以控制行内和块方向上的边距宽度。<strong>同时还需要启用 <code>$enable-grid-classes</code> Sass 变量</strong
+      <a href="https://bs53.bootstrap-vue.top/layout/gutters" target="_blank">边距修饰符类</a>，您可以控制行内和块方向上的边距宽度。<strong
+        >同时还需要启用 <code>$enable-grid-classes</code> Sass 变量</strong
       >（默认已启用）。
     </p>
     <div class="docs-example">
@@ -211,9 +194,7 @@
       <code-highlight type="html" :code="gutters1Code" label="html" />
     </div>
 
-    <h2 id="layout-horizontal">
-      水平形式<a class="anchor-link" aria-label="Link to this section: 水平形式" href="#layout-horizontal"> </a>
-    </h2>
+    <h2 id="layout-horizontal">水平形式<a class="anchor-link" aria-label="Link to this section: 水平形式" href="#layout-horizontal"> </a></h2>
     <p>
       通过为表单组添加 <code>.row</code> 类，并使用
       <code>.col-*-*</code>
@@ -243,14 +224,7 @@
             <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
             <div class="col-sm-10">
               <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="gridRadios"
-                  id="gridRadios1"
-                  value="option1"
-                  checked
-                />
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
                 <label class="form-check-label" for="gridRadios1"> First radio </label>
               </div>
               <div class="form-check">
@@ -258,14 +232,7 @@
                 <label class="form-check-label" for="gridRadios2"> Second radio </label>
               </div>
               <div class="form-check disabled">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="gridRadios"
-                  id="gridRadios3"
-                  value="option3"
-                  disabled
-                />
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled />
                 <label class="form-check-label" for="gridRadios3"> Third disabled radio </label>
               </div>
             </div>
@@ -288,12 +255,9 @@
       <code-highlight type="html" :code="horizontalCode" label="html" />
     </div>
 
-    <h2 id="layout-label">
-      标签尺寸<a class="anchor-link" aria-label="Link to this section: 标签尺寸" href="#layout-label"> </a>
-    </h2>
+    <h2 id="layout-label">标签尺寸<a class="anchor-link" aria-label="Link to this section: 标签尺寸" href="#layout-label"> </a></h2>
     <p>
-      请务必在 <code>&lt;label&gt;</code> 或 <code>&lt;legend&gt;</code> 中使用 <code>.col-form-label-sm</code> 或
-      <code>.col-form-label-lg</code>，以正确匹配 <code>.form-control-lg</code> 和
+      请务必在 <code>&lt;label&gt;</code> 或 <code>&lt;legend&gt;</code> 中使用 <code>.col-form-label-sm</code> 或 <code>.col-form-label-lg</code>，以正确匹配 <code>.form-control-lg</code> 和
       <code>.form-control-sm</code> 的大小。
     </p>
     <div class="docs-example">
@@ -301,12 +265,7 @@
         <div class="row mb-3">
           <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
           <div class="col-sm-10">
-            <input
-              type="email"
-              class="form-control form-control-sm"
-              id="colFormLabelSm"
-              placeholder="col-form-label-sm"
-            />
+            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm" />
           </div>
         </div>
         <div class="row mb-3">
@@ -318,26 +277,18 @@
         <div class="row">
           <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
           <div class="col-sm-10">
-            <input
-              type="email"
-              class="form-control form-control-lg"
-              id="colFormLabelLg"
-              placeholder="col-form-label-lg"
-            />
+            <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg" />
           </div>
         </div>
       </div>
       <code-highlight type="html" :code="labelCode" label="html" />
     </div>
 
-    <h2 id="layout-sizing">
-      列宽调整<a class="anchor-link" aria-label="Link to this section: 列宽调整" href="#layout-sizing"> </a>
-    </h2>
+    <h2 id="layout-sizing">列宽调整<a class="anchor-link" aria-label="Link to this section: 列宽调整" href="#layout-sizing"> </a></h2>
     <p>
       如前面的示例所示，我们的网格系统允许您在
-      <code>.row</code> 内放置任意数量的
-      <code>.col</code>。它们会平均分配可用宽度。您也可以选择部分列来占据更多或更少的空间，而剩余的
-      <code>.col</code> 则平均分配剩余的宽度，并使用特定的列类，如 <code>.col-sm-7</code>。
+      <code>.row</code> 内放置任意数量的 <code>.col</code>。它们会平均分配可用宽度。您也可以选择部分列来占据更多或更少的空间，而剩余的 <code>.col</code> 则平均分配剩余的宽度，并使用特定的列类，如
+      <code>.col-sm-7</code>。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
@@ -356,13 +307,8 @@
       <code-highlight type="html" :code="sizingCode" label="html" />
     </div>
 
-    <h2 id="layout-auto">
-      自动调整大小<a class="anchor-link" aria-label="Link to this section: 自动调整大小" href="#layout-auto"> </a>
-    </h2>
-    <p>
-      下面的示例使用 flexbox 工具来垂直居中内容，并将 <code>.col</code> 更改为
-      <code>.col-auto</code>，这样你的列只会占用所需的空间。换句话说，列的大小会根据内容自动调整。
-    </p>
+    <h2 id="layout-auto">自动调整大小<a class="anchor-link" aria-label="Link to this section: 自动调整大小" href="#layout-auto"> </a></h2>
+    <p>下面的示例使用 flexbox 工具来垂直居中内容，并将 <code>.col</code> 更改为 <code>.col-auto</code>，这样你的列只会占用所需的空间。换句话说，列的大小会根据内容自动调整。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <form class="row gy-2 gx-3 align-items-center">
@@ -437,16 +383,11 @@
       <code-highlight type="html" :code="auto1Code" label="html" />
     </div>
 
-    <h2 id="layout-inline">
-      内联表单<a class="anchor-link" aria-label="Link to this section: 内联表单" href="#layout-inline"> </a>
-    </h2>
+    <h2 id="layout-inline">内联表单<a class="anchor-link" aria-label="Link to this section: 内联表单" href="#layout-inline"> </a></h2>
     <p>
       使用 <code>.row-cols-*</code> 类来创建响应式的水平布局。通过添加
-      <a href="https://getbootstrap.com//docs/5.3/layout/gutters" target="_blank">边距修饰符类</a
-      >，我们可以在水平和垂直方向上设置边距。在窄幅的移动设备视口中，<code>.col-12</code> 有助于堆叠表单控件等。<code
-        >.align-items-center</code
-      >
-      将表单元素居中对齐，从而使 <code>.form-check</code> 正确对齐。
+      <a href="https://getbootstrap.com//docs/5.3/layout/gutters" target="_blank">边距修饰符类</a>，我们可以在水平和垂直方向上设置边距。在窄幅的移动设备视口中，<code>.col-12</code>
+      有助于堆叠表单控件等。<code>.align-items-center</code> 将表单元素居中对齐，从而使 <code>.form-check</code> 正确对齐。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">

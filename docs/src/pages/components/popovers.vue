@@ -17,13 +17,10 @@
       <a href="https://bs53.bootstrap-vue.top/components/popovers/" target="_blank">Bootstrap Popovers</a>
     </p>
 
-    <h2 id="popovers-about">
-      使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#popovers-about"> </a>
-    </h2>
+    <h2 id="popovers-about">使用说明<a class="anchor-link" aria-label="Link to this section: 使用说明" href="#popovers-about"> </a></h2>
     <p>
-      <strong>确保提示框易于通过键盘和辅助技术进行操作</strong>，仅将它们添加到传统上可被键盘聚焦且具有交互性的 HTML
-      元素中（例如链接或表单控件）。虽然可以通过添加 <code>tabindex="0"</code> 来使其他 HTML
-      元素具有可聚焦性，但这可能会在非交互性元素上为键盘用户创建令人烦恼和混乱的焦点位置，并且目前大多数辅助技术在这种情况下的也不会播报提示框。此外，不要仅仅依靠
+      <strong>确保提示框易于通过键盘和辅助技术进行操作</strong>，仅将它们添加到传统上可被键盘聚焦且具有交互性的 HTML 元素中（例如链接或表单控件）。虽然可以通过添加 <code>tabindex="0"</code> 来使其他
+      HTML 元素具有可聚焦性，但这可能会在非交互性元素上为键盘用户创建令人烦恼和混乱的焦点位置，并且目前大多数辅助技术在这种情况下的也不会播报提示框。此外，不要仅仅依靠
       <code>hover</code>
       作为触发提示框的条件，因为这会使键盘用户无法触发提示框。
     </p>
@@ -40,76 +37,37 @@
       <code>Modal</code> 模态框来替代。
     </p>
 
-    <h2 id="popovers-example">
-      示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#popovers-example"> </a>
-    </h2>
+    <h2 id="popovers-example">示例<a class="anchor-link" aria-label="Link to this section: 示例" href="#popovers-example"> </a></h2>
     <p>标题通过 <code>data-bs-title</code> 进行设置，而内容则通过 <code>data-bs-content</code> 进行设置。</p>
     <p class="text-bg-warning">
-      您可以在 HTML 中随意使用 <code>title</code> 或 <code>data-bs-title</code>。当使用
-      <code>title</code> 时，当元素被渲染时，Popper 会自动将其替换为 <code>data-bs-title</code> 。
+      您可以在 HTML 中随意使用 <code>title</code> 或 <code>data-bs-title</code>。当使用 <code>title</code> 时，当元素被渲染时，Popper 会自动将其替换为 <code>data-bs-title</code> 。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <button
-            type="button"
-            class="btn btn-primary"
-            v-popover
-            data-bs-title="Popover title"
-            data-bs-content="And here’s some amazing content. It’s very engaging. Right?"
-          >
-            Toggle popover
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary"
-            v-popover
-            data-bs-content="And here’s some amazing content. It’s very engaging. Right?"
-          >
-            Toggle popover (无标题)
-          </button>
+          <button type="button" class="btn btn-primary" v-popover data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Toggle popover</button>
+          <button type="button" class="btn btn-primary" v-popover data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Toggle popover (无标题)</button>
         </div>
       </div>
       <code-highlight type="vue" :code="exampleCode" label="vue" />
     </div>
 
-    <h2 id="popovers-trigger">
-      触发方式<a class="anchor-link" aria-label="Link to this section: 触发方式" href="#popovers-trigger"> </a>
-    </h2>
-    <p>
-      触发方式通过 <code>data-bs-trigger</code> 进行设置，可以选择: <code>click | hover | focus</code>。默认为
-      <code>click</code> 触发方式。
-    </p>
+    <h2 id="popovers-trigger">触发方式<a class="anchor-link" aria-label="Link to this section: 触发方式" href="#popovers-trigger"> </a></h2>
+    <p>触发方式通过 <code>data-bs-trigger</code> 进行设置，可以选择: <code>click | hover | focus</code>。默认为 <code>click</code> 触发方式。</p>
     <p class="text-bg-warning">
       <strong>下次点击后自动关闭(focus)需要特定的 HTML 代码，以实现跨浏览器和跨平台的正常功能。</strong>
       只能使用 <code>&lt;a&gt;</code> 元素，不能使用 <code>&lt;button&gt;</code> 元素，并且必须包含
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank"
-        ><code>tabindex</code></a
-      >
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank"><code>tabindex</code></a>
       属性。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <button
-            type="button"
-            class="btn btn-primary"
-            v-popover
-            data-bs-trigger="click"
-            data-bs-title="Popover title"
-            data-bs-content="And here’s some amazing content. It’s very engaging. Right?"
-          >
+          <button type="button" class="btn btn-primary" v-popover data-bs-trigger="click" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">
             Click trigger
           </button>
 
-          <button
-            type="button"
-            class="btn btn-primary"
-            v-popover
-            data-bs-trigger="hover"
-            data-bs-title="Popover title"
-            data-bs-content="And here’s some amazing content. It’s very engaging. Right?"
-          >
+          <button type="button" class="btn btn-primary" v-popover data-bs-trigger="hover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">
             Hover trigger
           </button>
 
@@ -128,9 +86,7 @@
       <code-highlight type="vue" :code="triggerCode" label="vue" />
     </div>
 
-    <h2 id="popovers-custom">
-      自定义样式<a class="anchor-link" aria-label="Link to this section: 自定义样式" href="#popovers-custom"> </a>
-    </h2>
+    <h2 id="popovers-custom">自定义样式<a class="anchor-link" aria-label="Link to this section: 自定义样式" href="#popovers-custom"> </a></h2>
     <p>
       您可以使用
       <a href="#popovers-css">CSS 变量</a> 来自定义样式的外观。我们通过
@@ -139,40 +95,20 @@
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <button
-          type="button"
-          class="btn btn-primary"
-          v-popover
-          data-bs-custom-class="custom-popover"
-          data-bs-title="Custom popover"
-          data-bs-content="This popover is themed via CSS variables."
-        >
+        <button type="button" class="btn btn-primary" v-popover data-bs-custom-class="custom-popover" data-bs-title="Custom popover" data-bs-content="This popover is themed via CSS variables.">
           Custom popover
         </button>
       </div>
       <code-highlight type="vue" :code="customCode" label="vue" />
     </div>
 
-    <h2 id="popovers-html">
-      HTML内容<a class="anchor-link" aria-label="Link to this section: HTML内容" href="#popovers-html"> </a>
-    </h2>
+    <h2 id="popovers-html">HTML内容<a class="anchor-link" aria-label="Link to this section: HTML内容" href="#popovers-html"> </a></h2>
     <p>可以通过设置 <code>data-bs-html</code> 为 <code>true</code>。插入 HTML 标签内容。</p>
-    <p class="text-bg-danger">
-      在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 XSS 漏洞。永远不要使用用户提供的 HTML 内容。
-    </p>
+    <p class="text-bg-danger">在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 XSS 漏洞。永远不要使用用户提供的 HTML 内容。</p>
     <div class="docs-example">
       <div class="docs-example-data">
         <div class="hstack gap-3 flex-wrap">
-          <button
-            type="button"
-            class="btn btn-primary"
-            v-popover
-            data-bs-html="true"
-            :data-bs-title="htmlTitle"
-            :data-bs-content="htmlContent"
-          >
-            Content html
-          </button>
+          <button type="button" class="btn btn-primary" v-popover data-bs-html="true" :data-bs-title="htmlTitle" :data-bs-content="htmlContent">Content html</button>
 
           <button
             v-if="timeoutContent !== null"
@@ -191,13 +127,10 @@
       <code-highlight type="vue" :code="htmlCode" label="vue" />
     </div>
 
-    <h2 id="popovers-css">
-      CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#popovers-css"> </a>
-    </h2>
+    <h2 id="popovers-css">CSS Variables<a class="anchor-link" aria-label="Link to this section: CSS Variables" href="#popovers-css"> </a></h2>
     <p>
       作为 Bootstrap 逐步改进的 CSS 变量方法的一部分，下拉菜单现在在
-      <code>.popover</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass
-      设置的，因此 Sass 自定义功能仍然得到支持。
+      <code>.popover</code> 元素上使用本地 CSS 变量，以实现更出色的实时自定义功能。这些 CSS 变量的值是通过 Sass 设置的，因此 Sass 自定义功能仍然得到支持。
     </p>
     <code-highlight type="scss" :code="css1Code" label="scss/_popover.scss" />
   </div>

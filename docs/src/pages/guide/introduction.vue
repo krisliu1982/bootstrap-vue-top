@@ -12,9 +12,7 @@
     <h1>Introduction 介绍</h1>
     <p class="fs-4 fw-light">这是一个融合了 Bootstrap 5.3.x 和 Vue 3.5.x 的现代化前端框架解决方案。</p>
 
-    <h2 id="introduction-features">
-      主要特点<a class="anchor-link" aria-label="Link to this section: 主要特点" href="#introduction-features"> </a>
-    </h2>
+    <h2 id="introduction-features">主要特点<a class="anchor-link" aria-label="Link to this section: 主要特点" href="#introduction-features"> </a></h2>
     <ul class="docs-content-list">
       <li>
         <p>所有 Bootstrap 官方文档中的样式类和JS组件在项目中直接使用，降低了团队的学习与迁移成本。</p>
@@ -27,9 +25,7 @@
       </li>
     </ul>
 
-    <h2 id="introduction-browser">
-      浏览器支持<a class="anchor-link" aria-label="Link to this section: 浏览器支持" href="#introduction-browser"> </a>
-    </h2>
+    <h2 id="introduction-browser">浏览器支持<a class="anchor-link" aria-label="Link to this section: 浏览器支持" href="#introduction-browser"> </a></h2>
     <p>支持的浏览器范围遵循现代Web开发实践，具体涵盖以下版本：</p>
     <ul class="docs-content-list">
       <li><p>支持Chrome >= 84、Firefox >= 63、Firefox ESR、iOS >= 14.5、Safari >= 14.1。</p></li>
@@ -38,14 +34,10 @@
       <li><p>不再支持Internet Explorer，也不支持KaiOS <= 2.5。</p></li>
     </ul>
 
-    <h2 id="introduction-issues">
-      意见反馈<a class="anchor-link" aria-label="Link to this section: 意见反馈" href="#introduction-issues"> </a>
-    </h2>
+    <h2 id="introduction-issues">意见反馈<a class="anchor-link" aria-label="Link to this section: 意见反馈" href="#introduction-issues"> </a></h2>
     <p>请将您的意见通过此邮箱发送给我们 <a href="mailto:394178500@qq.com">394178500@qq.com</a>。</p>
 
-    <h2 id="introduction-license">
-      开源协议<a class="anchor-link" aria-label="Link to this section: 开源协议" href="#introduction-license"> </a>
-    </h2>
+    <h2 id="introduction-license">开源协议<a class="anchor-link" aria-label="Link to this section: 开源协议" href="#introduction-license"> </a></h2>
     <p>本项目基于 <strong>MIT</strong> 协议，请自由地享受和参与开源。</p>
   </div>
 </template>

@@ -328,9 +328,7 @@ var routes = [
   {
     path: '/utils/z-index',
     component: () => import('@/pages/utils/z-index.vue')
-  }
-
-  ,
+  },
   {
     path: '/:pathMatch(.*)*',
     component: () => import('@/404.vue')
