@@ -1,12 +1,12 @@
 <template>
   <h1>Alert 警示框</h1>
-  <p class="lead">模拟浏览器原生 alert 消息提示框而实现的弹窗组件, 用于重要信息提示。</p>
+  <p class="lead">使用少量灵活可用的警告消息，为典型的用户操作提供情境反馈。</p>
 
-  <h2>基础用法</h2>
-  <p>使用 <code>alertBox</code> 方法，它接受一个 <code>Object</code> 作为其参数。通过 <code>message</code> 属性设置警示内容。</p>
-  <BasicUsage />
+  <h2>示例</h2>
+  <p>我们对警示框没有提供扩展，其官方 API 可直接使用。了解更多请阅读 <a href="https://bs53.bootstrap-vue.top/components/alerts" target="_blank">Bootstrap Alerts</a>。</p>
+  <Example />
 </template>
 
 <script setup>
-import BasicUsage from './basic-usage.vue';
+import Example from './example.vue';
 </script>

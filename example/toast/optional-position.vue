@@ -1,15 +1,15 @@
 <template>
-        <div class="hstack gap-3 flex-wrap">
-          <button type="button" class="btn btn-primary" @click="handleClickTopRight">TopRight</button>
-          <button type="button" class="btn btn-primary" @click="handleClickTopLeft">TopLeft</button>
-          <button type="button" class="btn btn-primary" @click="handleClickTopCenter">TopCenter</button>
-          <button type="button" class="btn btn-primary" @click="handleClickBottomRight">BottomRight</button>
-          <button type="button" class="btn btn-primary" @click="handleClickBottomLeft">BottomLeft</button>
-        </div>
+  <div class="hstack gap-3 flex-wrap">
+    <button type="button" class="btn btn-primary" @click="handleClickTopRight">TopRight</button>
+    <button type="button" class="btn btn-primary" @click="handleClickTopLeft">TopLeft</button>
+    <button type="button" class="btn btn-primary" @click="handleClickTopCenter">TopCenter</button>
+    <button type="button" class="btn btn-primary" @click="handleClickBottomRight">BottomRight</button>
+    <button type="button" class="btn btn-primary" @click="handleClickBottomLeft">BottomLeft</button>
+  </div>
 </template>
 
 <script setup>
-import { toast } from '@lib'
+import { toast } from '@lib';
 
 function handleClickTopRight() {
   toast({
@@ -50,5 +50,4 @@ function handleClickBottomLeft() {
     message: 'Hello, world! This is a toast message.'
   });
 }
-
 </script>

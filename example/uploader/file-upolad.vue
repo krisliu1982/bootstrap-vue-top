@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive } from 'vue';
 
 const fileList = reactive([]);
 function handleFileChange(fileEl) {
@@ -18,12 +18,12 @@ function handleFileChange(fileEl) {
   console.log(file.size, file.name, file.type);
   //这里处理验证，上传等逻辑
   fileList.push({
-    url: 'http://baidu.com',//文件地址
+    url: 'http://baidu.com', //文件地址
     name: file.name,
     size: file.size
-  })
+  });
 
-  fileEl.value = '';//可选
+  fileEl.value = ''; //可选
 }
 
 function handleFileRemove(index) {

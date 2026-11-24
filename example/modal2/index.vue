@@ -3,11 +3,10 @@
   <p class="lead">支持打开多个模态框和拖动。适合桌面端复杂操作的需要。</p>
 
   <h2>基础用法</h2>
-  <p>通过 <code>v-model</code> 属性来切换一个模态框。<code>true</code> 为打开，<code>false</code>
-      为关闭。</p>
+  <p>通过 <code>v-model</code> 属性来切换一个模态框。<code>true</code> 为打开，<code>false</code> 为关闭。</p>
   <BasicUsage />
 
-    <h2>打开多个</h2>
+  <h2>打开多个</h2>
   <p>打开多个模块框，屏蔽层会叠加。</p>
   <OpenMany />
 
@@ -120,17 +119,12 @@
   </table>
   <Fullscreen />
 
-    <h2>关闭时销毁</h2>
-  <p>
-    通过设置 <code>destory</code> 属性为 <code>true</code> 来实现。
-  </p>
+  <h2>关闭时销毁</h2>
+  <p>通过设置 <code>destory</code> 属性为 <code>true</code> 来实现。</p>
   <CloseDestroy />
 
-      <h2>可拖拽</h2>
-    <p>
-      通过设置 <code>draggable</code> 属性为 <code>true</code> 来实现，需按住头部进行拖动。如果 <code>:destory="true"</code>，
-      切换时位置会重置。
-    </p>
+  <h2>可拖拽</h2>
+  <p>通过设置 <code>draggable</code> 属性为 <code>true</code> 来实现，需按住头部进行拖动。如果 <code>:destory="true"</code>， 切换时位置会重置。</p>
   <Draggable />
 </template>
 

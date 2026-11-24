@@ -6,20 +6,20 @@
 </template>
 
 <script setup>
-import { toast } from '@lib'
+import { toast } from '@lib';
 
 function handleClick1() {
   toast({
     title: 'Closes automatically',
     message: 'Hello, world! This is a toast message.'
-  })
+  });
 }
 
 function handleClick2() {
   toast({
-    title: 'Won\'t close automatically',
+    title: "Won't close automatically",
     message: `<p class="fs-5">Hello, world! This is a toast message.</p>`,
     duration: 0
-  })
+  });
 }
 </script>

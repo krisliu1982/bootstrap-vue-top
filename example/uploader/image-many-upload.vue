@@ -1,6 +1,5 @@
 <template>
-  <BvImageManyUploader width="160px" height="160px" :img-urls="imageUrls" sortable @file-change="handleImageManyChange"
-    @file-remove="handleImageManyRemove" @file-preview="handleImageManyPreview">
+  <BvImageManyUploader width="160px" height="160px" :img-urls="imageUrls" sortable @file-change="handleImageManyChange" @file-remove="handleImageManyRemove" @file-preview="handleImageManyPreview">
     <template #tip>
       <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
     </template>
@@ -8,8 +7,8 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
-import { imagePreview } from '@lib'
+import { reactive } from 'vue';
+import { imagePreview } from '@lib';
 
 const imageUrls = reactive([]);
 function handleImageManyChange(fileEl) {
@@ -21,19 +20,16 @@ function handleImageManyChange(fileEl) {
     imageUrls.push(URL.createObjectURL(file));
   }
 
-  fileEl.value = '';//可选
+  fileEl.value = ''; //可选
 }
 
 function handleImageManyRemove(index) {
-    //这里处理后台删除等逻辑
+  //这里处理后台删除等逻辑
   imageUrls.splice(index, 1);
 }
 
 function handleImageManyPreview(index) {
-    //这里处理图片逻辑，例如下面预览方式
-  imagePreview([
-    'https://picsum.photos/id/112/800/800',
-    'https://picsum.photos/id/113/800/800',
-    'https://picsum.photos/id/114/800/800'], 0);
+  //这里处理图片逻辑，例如下面预览方式
+  imagePreview(['https://picsum.photos/id/112/800/800', 'https://picsum.photos/id/113/800/800', 'https://picsum.photos/id/114/800/800'], 0);
 }
 </script>

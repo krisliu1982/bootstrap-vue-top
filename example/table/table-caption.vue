@@ -2,13 +2,13 @@
   <bv-table :data="tableData" caption="List of users">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
-    <bv-table-col header="Address" field="address"/>
+    <bv-table-col header="Address" field="address" />
   </bv-table>
-  
+
   <bv-table :data="tableData" caption="List of users" table-class="caption-top">
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
-    <bv-table-col header="Address" field="address"/>
+    <bv-table-col header="Address" field="address" />
   </bv-table>
 </template>
 

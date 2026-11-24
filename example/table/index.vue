@@ -70,7 +70,10 @@
   <ContentTruncate />
 
   <h2>表头固定</h2>
-  <p>表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>.position-sticky</code> 和 <code>.top-0</code> 样式类到表格 <code>thead-class</code> 属性 。</p>
+  <p>
+    表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>.position-sticky</code> 和 <code>.top-0</code> 样式类到表格
+    <code>thead-class</code> 属性 。
+  </p>
   <TheadFixed />
 
   <h2>横向滚动</h2>

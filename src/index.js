@@ -3,46 +3,45 @@ import './styles/index.scss';
 import vTooltip from './components/tooltip/tooltip.js';
 import vPopover from './components/popover/popover.js';
 
-import BvTable from './components/table/table.vue';
-import BvTableCol from './components/table/table-col.vue';
-import BvPagination from './components/pagination/pagination.vue';
+import BvAccordion from './components/accordion/accordion.vue';
+import BvAccordionItem from './components/accordion/accordion-item.vue';
+import BvBacktop from './components/backtop/backtop.vue';
+import BvCarousel from './components/carousel/carousel.vue';
+import BvLoading from './components/loading/loading.vue';
 import BvModal from './components/modal/modal.vue';
 import BvModal2 from './components/modal-2/modal-2.vue';
+import BvOffcanvas from './components/offcanvas/offcanvas.vue';
+import BvPagination from './components/pagination/pagination.vue';
+import BvTable from './components/table/table.vue';
+import BvTableCol from './components/table/table-col.vue';
+import BvTabs from './components/tabs/tabs.vue';
+import BvTabPane from './components/tabs/tab-pane.vue';
 import BvTree from './components/tree/tree.vue';
 import BvTreetable from './components/treetable/treetable.vue';
 import BvTreetableCol from './components/treetable/treetable-col.vue';
-import BvTabs from './components/tabs/tabs.vue';
-import BvTabPane from './components/tabs/tab-pane.vue';
-import BvAccordion from './components/accordion/accordion.vue';
-import BvAccordionItem from './components/accordion/accordion-item.vue';
-import BvCarousel from './components/carousel/carousel.vue';
-import BvOffcanvas from './components/offcanvas/offcanvas.vue';
-import BvBacktop from './components/backtop/backtop.vue';
 import BvImageOneUploader from './components/uploader/image-one-uploader.vue';
 import BvImageManyUploader from './components/uploader/image-many-uploader.vue';
 import BvFileUploader from './components/uploader/file-uploader.vue';
-import BvLoading from './components/loading/loading.vue';
 
 export default {
   install: (app, options) => {
     app.directive('tooltip', vTooltip);
     app.directive('popover', vPopover);
-
-    app.component('BvTable', BvTable).component('BvTableCol', BvTableCol);
-    app.component('BvPagination', BvPagination);
+    app.component('BvAccordion', BvAccordion).component('BvAccordionItem', BvAccordionItem);
+    app.component('BvBacktop', BvBacktop);
+    app.component('BvCarousel', BvCarousel);
+    app.component('BvLoading', BvLoading);
     app.component('BvModal', BvModal);
     app.component('BvModal2', BvModal2);
+    app.component('BvOffcanvas', BvOffcanvas);
+    app.component('BvPagination', BvPagination);
+    app.component('BvTable', BvTable).component('BvTableCol', BvTableCol);
+    app.component('BvTabs', BvTabs).component('BvTabPane', BvTabPane);
     app.component('BvTree', BvTree);
     app.component('BvTreetable', BvTreetable).component('BvTreetableCol', BvTreetableCol);
-    app.component('BvTabs', BvTabs).component('BvTabPane', BvTabPane);
-    app.component('BvAccordion', BvAccordion).component('BvAccordionItem', BvAccordionItem);
-    app.component('BvCarousel', BvCarousel);
-    app.component('BvOffcanvas', BvOffcanvas);
-    app.component('BvBacktop', BvBacktop);
     app.component('BvImageOneUploader', BvImageOneUploader);
     app.component('BvImageManyUploader', BvImageManyUploader);
     app.component('BvFileUploader', BvFileUploader);
-    app.component('BvLoading', BvLoading);
   }
 };
 

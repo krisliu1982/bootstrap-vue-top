@@ -1,7 +1,7 @@
 <template>
   <h1>Accordion 折叠面板</h1>
   <p class="lead">可垂直折叠的折叠面板。</p>
-  
+
   <h2>基础用法</h2>
   <p>默认展开单个面板。通过 <code>active-index</code> 属性设置初始打开第几个面板。</p>
   <BasicUsage />

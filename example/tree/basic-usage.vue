@@ -1,13 +1,11 @@
 <template>
-  <div style="width: 200px;height:200px;overflow: auto;" class="border p-2">
-    <bv-tree :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0"
-      @node-click="handleClick">
-    </bv-tree>
+  <div style="width: 200px; height: 200px; overflow: auto" class="border p-2">
+    <bv-tree :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0" @node-click="handleClick"> </bv-tree>
   </div>
 </template>
 
 <script setup>
-import { alertMessage } from '@lib'
+import { alertMessage } from '@lib';
 
 const treeData = {
   id: 1,
@@ -22,22 +20,28 @@ const treeData = {
         {
           id: 5,
           name: 'Kris5',
-          children: [{ id: 6, name: 'Kris6' }, { id: 7, name: 'Kris7' }]
+          children: [
+            { id: 6, name: 'Kris6' },
+            { id: 7, name: 'Kris7' }
+          ]
         },
         { id: 8, name: 'Kris8' },
         { id: 9, name: 'Kris9' },
         {
           id: 10,
           name: 'Kris10',
-          children: [{ id: 11, name: 'Kris11' }, { id: 12, name: 'Kris12' }]
+          children: [
+            { id: 11, name: 'Kris11' },
+            { id: 12, name: 'Kris12' }
+          ]
         }
       ]
     }
   ]
-}
+};
 
 function handleClick(key) {
-  console.log(key) //树节点数据的唯一标识
-  alertMessage({ message: `树节点 ${key}` })
+  console.log(key); //树节点数据的唯一标识
+  alertMessage({ message: `树节点 ${key}` });
 }
 </script>

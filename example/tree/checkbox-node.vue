@@ -1,22 +1,17 @@
-
 <template>
-  <div style="width: 200px;height:200px;overflow: auto;" class="border p-2">
-    <bv-tree ref="treeCheckboxRef" :data="treeData" 
-      attr-key="id" attr-label="name" attr-children="children"
-      :expand-level="0" mode="checkbox"></bv-tree>
+  <div style="width: 200px; height: 200px; overflow: auto" class="border p-2">
+    <bv-tree ref="treeCheckboxRef" :data="treeData" attr-key="id" attr-label="name" attr-children="children" :expand-level="0" mode="checkbox"></bv-tree>
   </div>
-  <br/>
+  <br />
   <div class="hstack gap-3 flex-wrap">
-    <button type="button" class="btn btn-outline-primary"
-      @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
-    <button type="button" class="btn btn-outline-primary"
-      @click="handleSetCheckbox">setCheckboxSelectedKeys</button>
+    <button type="button" class="btn btn-outline-primary" @click="handleGetCheckbox">getCheckboxSelectedKeys</button>
+    <button type="button" class="btn btn-outline-primary" @click="handleSetCheckbox">setCheckboxSelectedKeys</button>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { alertMessage } from '@lib'
+import { ref } from 'vue';
+import { alertMessage } from '@lib';
 
 const treeData = {
   id: 1,
@@ -31,32 +26,38 @@ const treeData = {
         {
           id: 5,
           name: 'Kris5',
-          children: [{ id: 6, name: 'Kris6' }, { id: 7, name: 'Kris7' }]
+          children: [
+            { id: 6, name: 'Kris6' },
+            { id: 7, name: 'Kris7' }
+          ]
         },
         { id: 8, name: 'Kris8' },
         { id: 9, name: 'Kris9' },
         {
           id: 10,
           name: 'Kris10',
-          children: [{ id: 11, name: 'Kris11' }, { id: 12, name: 'Kris12' }]
+          children: [
+            { id: 11, name: 'Kris11' },
+            { id: 12, name: 'Kris12' }
+          ]
         }
       ]
     }
   ]
-}
+};
 
-const treeCheckboxRef = ref(null)
+const treeCheckboxRef = ref(null);
 
 function handleGetCheckbox() {
-  const keys = treeCheckboxRef.value.getCheckboxSelectedKeys()
+  const keys = treeCheckboxRef.value.getCheckboxSelectedKeys();
   if (keys.length === 0) {
-    alertMessage({ type: 'warning', message: '没有节点被选择' })
+    alertMessage({ type: 'warning', message: '没有节点被选择' });
   } else {
-    alertMessage({ message: `被选节点 ${keys.join(',')}` })
+    alertMessage({ message: `被选节点 ${keys.join(',')}` });
   }
 }
 
 function handleSetCheckbox() {
-  treeCheckboxRef.value.setCheckboxSelectedKeys([])
+  treeCheckboxRef.value.setCheckboxSelectedKeys([]);
 }
 </script>

@@ -17,11 +17,13 @@
 import { ref } from 'vue';
 
 import Accordion from './accordion/index.vue';
+import Alert from './alert/index.vue';
 import AlertBox from './alert-box/index.vue';
 import AlertConfirm from './alert-confirm/index.vue';
 import AlertMessage from './alert-message/index.vue';
 import Backtop from './backtop/index.vue';
 import Carousel from './carousel/index.vue';
+import Dropdown from './dropdown/index.vue';
 import ImagePreview from './image-preview/index.vue';
 import Loading from './loading/index.vue';
 import Modal from './modal/index.vue';
@@ -35,13 +37,17 @@ import Toast from './toast/index.vue';
 import Tooltip from './tooltip/index.vue';
 import Tree from './tree/index.vue';
 import TreeTable from './tree-table/index.vue';
-import Uploader from './uploader/index.vue'
+import Uploader from './uploader/index.vue';
 
 const currentTab = ref(0);
 const tabs = [
   {
     name: 'Accordion',
     component: Accordion
+  },
+  {
+    name: 'Alert',
+    component: Alert
   },
   {
     name: 'AlertBox',
@@ -62,6 +68,10 @@ const tabs = [
   {
     name: 'Carousel',
     component: Carousel
+  },
+  {
+    name: 'Dropdown',
+    component: Dropdown
   },
   {
     name: 'ImagePreview',
