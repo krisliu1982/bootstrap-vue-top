@@ -14,7 +14,7 @@
       </div>
       <div class="position-absolute" style="top: 2rem; right: 2rem">
         <button type="button" class="btn btn-secondary btn-lg"
-          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
+          style="--bs-btn-padding-x: 0.75rem; --bs-btn-padding-y: 0.75rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
           aria-label="Close" @click="visible = false">
           <bi-x-lg />
         </button>

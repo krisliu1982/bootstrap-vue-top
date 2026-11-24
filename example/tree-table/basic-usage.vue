@@ -1,6 +1,6 @@
 <template>
   <bv-treetable :data="treeData" attr-key="code" attr-children="children">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
     <bv-treetable-col header="Operation">
       <template #body="{ item }">

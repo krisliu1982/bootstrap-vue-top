@@ -11,9 +11,9 @@
       @dragend="dragend"
       @dragover="dragover"
     >
-      <a href="#" class="d-block w-100 h-100" draggable="false" @click.prevent="handlePreview(index)"
+      <button type="button" class="d-block w-100 h-100 p-0 border-0" draggable="false" @click="handlePreview(index)"
         ><img draggable="false" class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl"
-      /></a>
+      /></button>
       <div class="position-absolute top-0 start-0 end-0 z-1 d-flex p-2">
         <button
           v-if="props.sortable"
@@ -37,7 +37,7 @@
         </button>
       </div>
     </div>
-    <button type="button" :disabled="props.disabled" class="btn bv-btn-image-uploader" :style="{ width: props.width, height: props.height }" @click="openImageDialog">
+    <button type="button" :disabled="props.disabled" class="bv-btn-image-uploader" :style="{ width: props.width, height: props.height }" @click="openImageDialog">
       <bi-plus-lg class="fs-3" />
     </button>
     <input ref="fileRef" type="file" multiple name="file" style="display: none" accept="image/*" @change="handleChange" />

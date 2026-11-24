@@ -35,6 +35,7 @@ import Toast from './toast/index.vue';
 import Tooltip from './tooltip/index.vue';
 import Tree from './tree/index.vue';
 import TreeTable from './tree-table/index.vue';
+import Uploader from './uploader/index.vue'
 
 const currentTab = ref(0);
 const tabs = [
@@ -113,6 +114,10 @@ const tabs = [
   {
     name: 'TreeTable',
     component: TreeTable
+  },
+  {
+    name: 'Uploader',
+    component: Uploader
   }
 ];
 </script>

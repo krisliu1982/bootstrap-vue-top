@@ -7,7 +7,7 @@
         <span class="me-3">{{ index + 1 }}. {{ file.name }}</span>
         <small class="text-body-secondary me-3 d-none d-sm-block">[{{ formatFileSize(file.size) }}]</small>
         <a class="ms-auto me-3" :href="file.url" target="_blank"><bi-eye /></a>
-        <a href="#" @click.prevent="handleRemove(index)"><bi-x-lg /></a>
+        <button type="button" class="p-0 border-0 bg-transparent" @click="handleRemove(index)"><bi-x-lg /></button>
       </li>
     </ul>
     <input ref="fileRef" type="file" :multiple="props.multiple" name="file" style="display: none" @change="handleChange" />

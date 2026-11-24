@@ -15,13 +15,14 @@
 }
 
 .bv-btn-image-uploader {
-    --bs-btn-padding-x: 0;
-    --bs-btn-padding-y: 0;
-    --bs-btn-border-radius:var(--bs-border-radius);
-    --bs-btn-border-color:var(--bs-border-color);
-    --bs-btn-line-height:1;
+    padding:0;
+    border-width: var(--bs-border-width);
+    border-color:var(--bs-border-color);
+    border-style: dashed;
+    border-radius: var(--bs-border-radius);
     display: block;
     border-style: dashed;
+    background: transparent;
 }
 
 .bv-btn-image-uploader:hover {
