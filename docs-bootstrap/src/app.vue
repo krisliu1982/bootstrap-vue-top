@@ -37,16 +37,16 @@
                 <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize == 'lg'">大型布局</button></li>
               </ul>
             </div>
-            <a v-if="theme === 'light'" href="#" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
+            <a v-if="theme === 'light'" href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
               <bi-sun />
             </a>
-            <a v-else href="#" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
+            <a v-else href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
               <bi-moon />
             </a>
           </div>
         </div>
         <div class="d-lg-none">
-          <a href="#" class="link-body-emphasis fs-5" type="button" @click.prevent="offcanvasNav.toggle()">
+          <a href="#" role="button" class="link-body-emphasis fs-5" @click.prevent="offcanvasNav.toggle()">
             <bi-three-dots />
           </a>
         </div>

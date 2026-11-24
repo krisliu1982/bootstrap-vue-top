@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-vue-top-docs",
+  "version": "5.3.x",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && wrangler deploy",
+    "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.9",
+    "es-toolkit": "^1.53.2",
+    "nprogress": "^0.2.0",
+    "shiki": "^4.6.0",
+    "vue": "^3.5.46",
+    "vue-router": "^5.5.1"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "autoprefixer": "^10.7.0",
+    "prettier": "^3.10.1",
+    "sass": "^1.108.2",
+    "unplugin-icons": "^22.5.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vite": "^8.3.8",
+    "wrangler": "^4.168.0"
+  }
+}
