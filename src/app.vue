@@ -7,7 +7,7 @@
       </p>
 
       <div class="d-flex gap-3">
-        <a href="https://v1.bootstrap-vue.top" class="btn btn-primary">阅读文档（v1.1.6）<bi-arrow-right /></a>
+        <a href="https://v1.bootstrap-vue.top" class="btn btn-primary">阅读文档（v1.2.0）<bi-arrow-right /></a>
       </div>
     </div>
 
