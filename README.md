@@ -2,7 +2,7 @@
 
 基于 Bootstrap & Vue 的前端组件库
 
-***v1.x与bootstrap是捆绑在一起，v5.x开始由用户自行安装 bootstrap。***
+***v1.x 与 bootstrap 是捆绑在一起，v5.x 开始由用户自行安装 bootstrap。***
 
 ***当前版本 1.2.0, 捆绑 bootstrap 5.3.9。***
 
