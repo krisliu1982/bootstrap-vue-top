@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
         <img src="/favicon.svg" alt="bootstrap-vue-top" width="24" height="24" />
-        <small>v1.1</small>
+        <small>v1.2</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
