@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="d-lg-none">
-            <a href="#" class="link-body-emphasis fs-5" type="button" @click.prevent="navbarRef.toggle()">
+            <a href="#" class="link-body-emphasis fs-5" @click.prevent="navbarRef.toggle()">
               <bi-three-dots />
             </a>
           </div>
