@@ -2,15 +2,15 @@
   <div ref="elementRef">
     <slot name="trigger"></slot>
     <slot v-if="$slots.tip" name="tip"></slot>
-    <ul v-if="fileList.length > 0" class="list-unstyled mb-0">
-      <li v-for="(file, index) in fileList" class="d-flex align-items-center border-bottom py-2">
+    <ul v-if="props.fileList.length > 0" class="list-unstyled mb-0">
+      <li v-for="(file, index) in props.fileList" class="d-flex align-items-center border-bottom py-2">
         <span class="me-3">{{ index + 1 }}. {{ file.name }}</span>
         <small class="text-body-secondary me-3 d-none d-sm-block">[{{ formatFileSize(file.size) }}]</small>
         <a class="ms-auto me-3" :href="file.url" target="_blank"><bi-eye /></a>
-        <a href="#" @click.prevent="handleRemove(index)"><bi-x-lg /></a>
+        <button type="button" class="p-0 border-0 bg-transparent" @click="handleRemove(index)"><bi-x-lg /></button>
       </li>
     </ul>
-    <input ref="fileRef" type="file" :multiple="multiple" name="file" style="display: none" @change="handleChange" />
+    <input ref="fileRef" type="file" :multiple="props.multiple" name="file" style="display: none" @change="handleChange" />
   </div>
 </template>
 

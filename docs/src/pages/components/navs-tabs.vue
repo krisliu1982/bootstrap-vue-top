@@ -9,7 +9,6 @@
       <a href="#tabs-fill">填充并居中对齐</a>
       <a href="#tabs-position">标签栏位置</a>
       <a href="#tabs-lazy">延迟渲染</a>
-      <a href="#tabs-event">动态内容</a>
       <a href="#tabs-css">CSS Variables</a>
     </nav>
   </div>
@@ -393,13 +392,13 @@
       延迟渲染<a class="anchor-lazy" aria-label="Link to this section: 延迟渲染" href="#tabs-lazy"> </a>
     </h2>
     <p>
-      通过设置
+      通过在标签项设置
       <code>:lazy="true"</code>
       使初始化时未激活的标签项不进行渲染，激活后才渲染。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <bv-tabs tabs-class="nav-tabs" :lazy="true">
+        <bv-tabs tabs-class="nav-tabs">
           <bv-tab-pane label="Home">
             <p class="py-3">
               This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
@@ -407,14 +406,14 @@
               and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
-          <bv-tab-pane label="Profile">
+          <bv-tab-pane label="Profile" :lazy="true">
             <p class="py-3">
               This is some placeholder content the Profile tab’s associated content. Clicking another tab will toggle
               the visibility of this one for the next. The tab JavaScript swaps classes to control the content
               visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
             </p>
           </bv-tab-pane>
-          <bv-tab-pane label="Contact">
+          <bv-tab-pane label="Contact" :lazy="true">
             <p class="py-3">
               This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
               the visibility of this one for the next. The tab JavaScript swaps classes to control the content
@@ -424,44 +423,6 @@
         </bv-tabs>
       </div>
       <code-highlight type="vue" :code="lazyCode" label="vue" />
-    </div>
-
-    <h2 id="tabs-event">
-      动态内容<a class="anchor-lazy" aria-label="Link to this section: 动态内容" href="#tabs-event"> </a>
-    </h2>
-    <p>
-      监听 <code>tab-shown</code> 事件处理标签项可见后进行相关操作，传入 <code>index</code> 参数。例如异步获取数据。
-    </p>
-    <div class="docs-example">
-      <div class="docs-example-data">
-        <bv-tabs tabs-class="nav-tabs" @tab-shown="handleShown">
-          <bv-tab-pane label="Home">
-            <p class="py-3">
-              This is some placeholder content the Home tab’s associated content. Clicking another tab will toggle the
-              visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility
-              and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
-            </p>
-          </bv-tab-pane>
-          <bv-tab-pane label="Profile">
-            <div class="py-3">
-              <p v-if="data !== null">
-                {{ data.content }}
-              </p>
-              <div v-else class="spinner-border" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            </div>
-          </bv-tab-pane>
-          <bv-tab-pane label="Contact">
-            <p class="py-3">
-              This is some placeholder content the Contact tab’s associated content. Clicking another tab will toggle
-              the visibility of this one for the next. The tab JavaScript swaps classes to control the content
-              visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
-            </p>
-          </bv-tab-pane>
-        </bv-tabs>
-      </div>
-      <code-highlight type="vue" :code="eventCode" label="vue" />
     </div>
 
     <h2 id="tabs-css">
@@ -550,45 +511,19 @@ const positionCode = `
 
 const lazyCode = `
 <template>
-    <bv-tabs tabs-class="nav-tabs" :lazy="true">...</bv-tabs>
+  <bv-tabs tabs-class="nav-tabs" :lazy="true">
+    <bv-tab-pane label="Home">
+      ...
+    </bv-tab-pane>
+    <bv-tab-pane label="Profile" :lazy="true">
+      ...
+    </bv-tab-pane>
+    <bv-tab-pane label="Contact" :lazy="true">
+      ...
+    </bv-tab-pane>
+  </bv-tabs>
 </template>`;
 
-const eventCode = `
-<template>
-  <bv-tabs tabs-class="nav-tabs" @tab-shown="handleShown">
-      <bv-tab-pane label="Home">
-          ...
-      </bv-tab-pane>
-      <bv-tab-pane label="Profile">
-        <div class="py-3">
-          <div class="py-3">
-            <p v-if="data !== null">
-              {{ data.content }}
-            </p>
-            <div v-else class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </div>
-        </div>
-      </bv-tab-pane>
-      <bv-tab-pane label="Contact">
-          ...
-      </bv-tab-pane>
-  </bv-tabs>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-
-const data = ref(null)
-function handleShown(index) {
-  if (data.value === null && index === 1) {
-    setTimeout(() => {
-      data.value = {content:'Woo-hoo, you’re reading this text in a tab content!'}
-    }, 1000)
-  }
-}
-<\/script>`;
 
 const css1Code = `
 //.nav base class

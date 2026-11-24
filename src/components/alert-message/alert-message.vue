@@ -1,21 +1,21 @@
 <template>
-  <Transition name="fadeInDown" @after-leave="$emit('destroy')">
-    <div v-show="visible" class="alert-message" @mouseenter="clearTimer" @mouseleave="startTimer" role="alert">
+  <Transition name="bv-fadeInDown" appear @after-leave="$emit('destroy')">
+    <div v-show="visible" class="bv-alert-message" @mouseenter="clearTimer" @mouseleave="startTimer" role="status">
       <div class="d-flex align-items-center rounded px-3 py-2" :class="className">
         <div class="me-2">
-          <BiCheckCircle v-if="type === 'success'" />
-          <BiXCircle v-else-if="type === 'danger'" />
-          <BiExclamationCircle v-else-if="type === 'warning'" />
+          <BiCheckCircle v-if="props.type === 'success'" />
+          <BiXCircle v-else-if="props.type === 'danger'" />
+          <BiExclamationCircle v-else-if="props.type === 'warning'" />
           <BiInfoCircle v-else />
         </div>
-        <div>{{ message }}</div>
+        <div>{{ props.message }}</div>
       </div>
     </div>
   </Transition>
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from 'vue';
+import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
 
 const props = defineProps({
   type: {
@@ -35,7 +35,7 @@ const props = defineProps({
   }
 });
 
-const visible = ref(false);
+const visible = ref(true);
 
 const className = computed(() => {
   return `text-bg-${props.type}`;
@@ -43,7 +43,10 @@ const className = computed(() => {
 
 onMounted(() => {
   startTimer();
-  visible.value = true;
+});
+
+onBeforeUnmount(() => {
+  clearTimer();
 });
 
 function close() {

@@ -3,23 +3,25 @@ import AlertBox from './alert-box.vue';
 
 let container = null;
 const alertBox = function (data) {
-  if (container) {
+  if (container !== null) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(AlertBox, {
     message: data.message,
     onDestroy: () => {
       render(null, container);
+      container.remove();
+      container = null;
     }
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default alertBox;

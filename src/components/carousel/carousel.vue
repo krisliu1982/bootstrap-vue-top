@@ -1,21 +1,14 @@
 <template>
-  <div :id="id" class="carousel slide" :class="carouselClass">
-    <div v-if="indicator" class="carousel-indicators">
-      <template v-for="(item, index) in items" :key="index">
-        <button
-          type="button"
-          :data-bs-target="`#${id}`"
-          :data-bs-slide-to="index"
-          :class="{ active: index === 0 }"
-          :aria-current="index === 0"
-          :aria-label="item.title"
-        ></button>
+  <div :id="id" class="carousel slide" :class="props.carouselClass">
+    <div v-if="props.indicator" class="carousel-indicators">
+      <template v-for="(item, index) in props.items" :key="index">
+        <button type="button" :data-bs-target="`#${id}`" :data-bs-slide-to="index" :class="{ active: index === 0 }" :aria-current="index === 0" :aria-label="item.title"></button>
       </template>
     </div>
     <div class="carousel-inner">
-      <template v-for="(item, index) in items" :key="index">
+      <template v-for="(item, index) in props.items" :key="index">
         <div class="carousel-item" :class="{ active: index === 0 }">
-          <img :src="item.image" class="d-block w-100" />
+          <img :src="item.image" class="d-block w-100" :alt="item.title ?? ''"/>
           <div class="carousel-caption">
             <h5>{{ item.title }}</h5>
             <p>{{ item.description }}</p>
@@ -23,7 +16,7 @@
         </div>
       </template>
     </div>
-    <template v-if="control">
+    <template v-if="props.control">
       <button class="carousel-control-prev" type="button" :data-bs-target="`#${id}`" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -40,7 +33,6 @@
 import { useId, onMounted, onBeforeUnmount } from 'vue';
 import { Carousel } from 'bootstrap';
 
-const id = useId();
 const props = defineProps({
   items: {
     type: Array,
@@ -84,9 +76,10 @@ const props = defineProps({
   }
 });
 
+const id = useId();
+
 let carousel = null;
 onMounted(() => {
-  if (carousel === null) {
     carousel = new Carousel(`#${id}`, {
       interval: props.interval,
       keyboard: props.keyboard,
@@ -95,7 +88,6 @@ onMounted(() => {
       touch: props.touch,
       wrap: props.wrap
     });
-  }
 });
 
 onBeforeUnmount(() => {

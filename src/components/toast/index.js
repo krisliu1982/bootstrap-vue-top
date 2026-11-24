@@ -5,10 +5,12 @@ let container = null;
 const toast = function (data) {
   if (container) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(Toast, {
     type: data.type,
@@ -18,12 +20,12 @@ const toast = function (data) {
     position: data.position,
     onDestroy: () => {
       render(null, container);
+      container.remove();
+      container = null;
     }
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default toast;

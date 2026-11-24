@@ -1,6 +1,6 @@
 
 
-.loading-fullscreen {
+.bv-loading-fullscreen {
   z-index: $zindex-loading-fullscreen;
   position: fixed;
   top: 0;
@@ -8,5 +8,9 @@
   width: 100vw;
   height: 100%; 
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bv-loading-area {
   background-color: rgba(255, 255, 255, 0.5);
 }

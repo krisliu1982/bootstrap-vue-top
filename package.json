@@ -31,8 +31,8 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.9",
-    "focus-trap": "^8.2.5",
-    "lodash-es": "^4.18.1"
+    "es-toolkit": "^1.53.2",
+    "focus-trap": "^8.2.6"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",

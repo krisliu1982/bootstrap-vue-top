@@ -1,9 +1,9 @@
 <template>
-  <div class="image-uploader-many">
+  <div class="bv-image-uploader-many">
     <div
-      v-for="(imgUrl, index) in imgUrls"
+      v-for="(imgUrl, index) in props.imgUrls"
       class="position-relative"
-      :style="{ width: width, height: height }"
+      :style="{ width: props.width, height: props.height }"
       :key="imgUrl"
       draggable="false"
       @dragstart="dragstart(imgUrl, $event)"
@@ -11,22 +11,16 @@
       @dragend="dragend"
       @dragover="dragover"
     >
-      <a href="#" class="d-block w-100 h-100" draggable="false" @click.prevent="handlePreview(index)"
+      <button type="button" class="d-block w-100 h-100 p-0 border-0" draggable="false" @click="handlePreview(index)"
         ><img draggable="false" class="d-block border object-fit-cover rounded w-100 h-100" :src="imgUrl"
-      /></a>
+      /></button>
       <div class="position-absolute top-0 start-0 end-0 z-1 d-flex p-2">
         <button
-          v-if="sortable"
+          v-if="props.sortable"
           type="button"
-          :disabled="disabled"
+          :disabled="props.disabled"
           class="btn btn-secondary d-none d-lg-block"
-          style="
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-padding-y: 0.5rem;
-            --bs-btn-line-height: 1;
-            --bs-btn-border-radius: 50%;
-            cursor: move;
-          "
+          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%; cursor: move"
           @mousedown="handleStart"
           @mouseup="handleEnd"
         >
@@ -34,38 +28,19 @@
         </button>
         <button
           type="button"
-          :disabled="disabled"
+          :disabled="props.disabled"
           class="btn btn-secondary ms-auto"
-          style="
-            --bs-btn-padding-x: 0.5rem;
-            --bs-btn-padding-y: 0.5rem;
-            --bs-btn-line-height: 1;
-            --bs-btn-border-radius: 50%;
-          "
+          style="--bs-btn-padding-x: 0.5rem; --bs-btn-padding-y: 0.5rem; --bs-btn-line-height: 1; --bs-btn-border-radius: 50%"
           @click.stop="handleRemove(index)"
         >
           <bi-trash />
         </button>
       </div>
     </div>
-    <button
-      type="button"
-      :disabled="disabled"
-      class="btn btn-image-uploader"
-      :style="{ width: width, height: height }"
-      @click="openImageDialog"
-    >
+    <button type="button" :disabled="props.disabled" class="bv-btn-image-uploader" :style="{ width: props.width, height: props.height }" @click="openImageDialog">
       <bi-plus-lg class="fs-3" />
     </button>
-    <input
-      ref="fileRef"
-      type="file"
-      multiple
-      name="file"
-      style="display: none"
-      accept="image/*"
-      @change="handleChange"
-    />
+    <input ref="fileRef" type="file" multiple name="file" style="display: none" accept="image/*" @change="handleChange" />
   </div>
   <slot v-if="$slots.tip" name="tip"></slot>
 </template>

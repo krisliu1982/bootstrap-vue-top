@@ -31,12 +31,12 @@
     <p>
       设置 <code>data</code> 树形数据，<code>attr-key</code> 为节点数据唯一标识属性名，<code>attr-children</code>
       为子树属性名。在列中可以通过模板自定义的显示内容，通过
-      <code>slotProps</code> 可以获得 item 和 index。
+      <code>slotProps</code> 可以获得 item 和 index。在列上设置 <code>tree</code> 属性则该列为「树形列」。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
           <bv-treetable-col header="Operation">
             <template #body="{ item }">
@@ -90,7 +90,7 @@
           thead-class="table-secondary"
           tfoot-class="table-primary"
         >
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -110,7 +110,7 @@
           :tfoot-data="['-', 239]"
           tfoot-class="table-info"
         >
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -138,7 +138,7 @@
           tbody-class="table-group-divider"
           tfoot-class="table-group-divider"
         >
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -152,7 +152,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-striped">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -166,7 +166,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-striped-columns">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -180,7 +180,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-hover">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -194,7 +194,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-bordered">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -214,7 +214,7 @@
           attr-children="children"
           table-class="table-bordered border-primary"
         >
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -228,7 +228,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-borderless">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -245,7 +245,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="table-sm">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -263,7 +263,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address">
             <template #body="{ item }">
               <div v-tooltip :data-bs-title="item.address" class="text-truncate" style="width: 8rem">
@@ -288,7 +288,7 @@
       <div class="docs-example-data">
         <div class="table-responsive">
           <bv-treetable :data="treeData" attr-key="code" attr-children="children" style="width: 150%">
-            <bv-treetable-col header="Name" field="name" />
+            <bv-treetable-col header="Name" field="name" tree />
             <bv-treetable-col header="Address" field="address" />
           </bv-treetable>
         </div>
@@ -316,7 +316,7 @@
           caption="List of users"
           table-class="caption-top"
         >
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" />
         </bv-treetable>
       </div>
@@ -337,7 +337,7 @@
     <div class="docs-example">
       <div class="docs-example-data">
         <bv-treetable :data="treeData" attr-key="code" attr-children="children" table-class="align-top">
-          <bv-treetable-col header="Name" field="name" />
+          <bv-treetable-col header="Name" field="name" tree />
           <bv-treetable-col header="Address" field="address" width="280px" />
         </bv-treetable>
       </div>
@@ -392,7 +392,7 @@ const treeData = {
 const baseCode = `
 <template>
   <bv-treetable :data="treeData" attr-key="code" attr-children="children">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
     <bv-treetable-col header="Operation">
       <template #body="{ item }">
@@ -408,6 +408,8 @@ const baseCode = `
 </template>
 
 <script setup>
+import { alertMessage } from 'bootstrap-vue-top'
+
 const treeData = {
   code: '1001',
   name: 'Root',
@@ -436,7 +438,7 @@ const variantsCode = `
     table-class="table-light" 
     thead-class="table-secondary"
     tfoot-class="table-primary">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -451,7 +453,7 @@ const tfootCode = `
     :data="treeData" attr-key="code" attr-children="children"
     :tfoot-data="['-', 239]" 
     tfoot-class="table-info">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -468,7 +470,7 @@ const dividersCode = `
     thead-class="table-group-divider"
     tbody-class="table-group-divider" 
     tfoot-class="table-group-divider">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -483,7 +485,7 @@ const stripedCode = `
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-striped">
     <bv-treetable-col header="Code" field="code" />
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -497,7 +499,7 @@ const stripedColsCode = `
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-striped-columns">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -511,7 +513,7 @@ const hoverCode = `
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-hover">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -525,7 +527,7 @@ const borderedCode = `
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-bordered">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -540,7 +542,7 @@ const borderedColorCode = `
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-bordered border-primary">
     <bv-treetable-col header="Code" field="code" />
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -554,7 +556,7 @@ const borderlessCode = `
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children" 
     table-class="table-borderless">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -569,7 +571,7 @@ const smCode = `
     :data="treeData" attr-key="code" attr-children="children"
     table-class="table-sm">
     <bv-treetable-col header="Code" field="code" />
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" />
   </bv-treetable>
 </template>
@@ -582,7 +584,7 @@ const truncateCode = `
 <template>
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address">
       <template #body="{ item }">
         <div v-tooltip :data-bs-title="item.address" 
@@ -604,7 +606,7 @@ const xAutoCode = `
     <bv-treetable 
       :data="treeData" attr-key="code" attr-children="children" 
       style="width: 150%;">
-      <bv-treetable-col header="Name" field="name" />
+      <bv-treetable-col header="Name" field="name" tree />
       <bv-treetable-col header="Address" field="address" />
     </bv-treetable>
   </div>
@@ -619,7 +621,7 @@ const verticalAlignCode = `
   <bv-treetable 
     :data="treeData" attr-key="code" attr-children="children" 
     table-class="align-top">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" width="280px"/>
   </bv-treetable>
 </template>
@@ -634,7 +636,7 @@ const captionCode = `
     :data="treeData" attr-key="code" attr-children="children" 
     caption="List of users" 
     table-class="caption-top">
-    <bv-treetable-col header="Name" field="name" />
+    <bv-treetable-col header="Name" field="name" tree />
     <bv-treetable-col header="Address" field="address" width="280px"/>
   </bv-treetable>
 </template>

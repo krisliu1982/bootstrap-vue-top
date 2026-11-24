@@ -484,7 +484,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { orderBy } from 'lodash-es';
+import { orderBy } from 'es-toolkit';
 import { alertMessage } from 'bootstrap-vue-top';
 
 const tableData = ref([
@@ -1119,7 +1119,7 @@ const sortCode = `
 
 <script setup>
 import { ref } from 'vue'
-import { orderBy } from 'lodash-es'
+import { orderBy } from 'es-toolkit'
 
 const loading = ref(false);
 const sortData = [

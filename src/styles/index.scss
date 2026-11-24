@@ -4,10 +4,10 @@ $pagination-padding-y-lg: 0.5rem;
 $modal-footer-margin-between: 1rem;
 
 // 自定义变量
-$zindex-backtop: 990;
-$zindex-image-preview: 1082;
-$zindex-loading-fullscreen: 1083;
-$zindex-alert: 1085;
+$zindex-backtop: 1100;
+$zindex-image-preview: 1110;
+$zindex-loading-fullscreen: 1120;
+$zindex-alert: 1130;
 
 @import 'bootstrap/scss/mixins/banner';
 @include bsBanner('');
@@ -66,7 +66,9 @@ $zindex-alert: 1085;
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 
-.bi {
+
+
+.bv-bi {
   width: 1em;
   height: 1em;
   line-height: 1;
@@ -75,23 +77,40 @@ $zindex-alert: 1085;
   fill: currentColor;
 }
 
-.fadeIn-enter-active,
-.fadeIn-leave-active {
+.bv-fadeIn-enter-active,
+.bv-fadeIn-leave-active {
   transition: opacity 0.3s ease;
 }
-.fadeIn-enter-from,
-.fadeIn-leave-to {
+
+.bv-fadeIn-enter-from,
+.bv-fadeIn-leave-to {
   opacity: 0;
 }
 
-.fadeInDown-enter-active,
-.fadeInDown-leave-active {
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
+/* 用户偏好减少动态：关掉过渡 */
+@media (prefers-reduced-motion: reduce) {
+  .bv-fadeIn-enter-active,
+  .bv-fadeIn-leave-active {
+    transition: none;
+  }
 }
-.fadeInDown-enter-from,
-.fadeInDown-leave-to {
+
+.bv-fadeInDown-enter-active,
+.bv-fadeInDown-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.bv-fadeInDown-enter-from,
+.bv-fadeInDown-leave-to {
   opacity: 0;
   transform: translateY(-60px);
+}
+
+/* 用户偏好减少动态：关掉过渡 */
+@media (prefers-reduced-motion: reduce) {
+
+  .bv-fadeInDown-enter-active,
+  .bv-fadeInDown-leave-active {
+    transition: none;
+  }
 }

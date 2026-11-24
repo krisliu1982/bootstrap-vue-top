@@ -7,10 +7,10 @@ const LoadingFullscreen = (function () {
 
   function init() {
     const container = document.createElement('div');
-    const vnode = createVNode(LoadingConstructor, {});
+    document.body.appendChild(container);
 
+    const vnode = createVNode(LoadingConstructor, {});
     render(vnode, container);
-    document.body.appendChild(container.firstElementChild);
 
     return {
       show() {

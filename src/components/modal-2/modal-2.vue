@@ -1,11 +1,11 @@
 <template>
   <Teleport to="body">
-    <Transition name="fadeIn">
-      <div v-show="visible" ref="modalRef" class="modal modal-2" tabindex="-1" role="dialog" aria-modal="true">
-        <div class="modal-dialog" :class="dialogClass">
+    <Transition name="bv-fadeIn">
+      <div v-show="visible" ref="elementRef" class="bv-modal-2" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog" :class="props.dialogClass">
           <div v-if="rendered" ref="contentRef" class="modal-content">
-            <div ref="headerRef" class="modal-header" :style="{ cursor: draggable ? 'move' : 'auto' }">
-              <h1 class="modal-title fs-5">{{ title }}</h1>
+            <div ref="headerRef" class="modal-header" :style="{ cursor: props.draggable ? 'move' : 'auto' }">
+              <h2 class="modal-title fs-5">{{ props.title }}</h2>
               <button type="button" class="btn-close" @click="visible = false" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -26,14 +26,6 @@ import { ref, shallowRef, watch, nextTick, onBeforeUnmount, onMounted } from 'vu
 import { createFocusTrap } from 'focus-trap';
 import counter from './counter.js';
 
-const modalRef = shallowRef(null);
-const contentRef = shallowRef(null);
-const headerRef = shallowRef(null);
-
-const visible = defineModel({ type: Boolean, required: true });
-const rendered = ref(false);
-let index = 0;
-let focusTrapInstance = null;
 const props = defineProps({
   title: {
     type: String,
@@ -57,14 +49,32 @@ const props = defineProps({
   }
 });
 
+const elementRef = shallowRef(null);
+const contentRef = shallowRef(null);
+const headerRef = shallowRef(null);
+
+const visible = defineModel({ type: Boolean, required: true });
+const rendered = ref(false);
+let index = 0;
+let focusTrapInstance = null;
+
 watch(visible, (val) => {
   val ? open() : close();
 });
 
+let savedOverflow = null;
+let savedPaddingRight = null;
+
 function open() {
   if (counter.get() === 0) {
+    savedOverflow = document.body.style.overflow;
+    savedPaddingRight = document.body.style.paddingRight;
     if (document.body.scrollHeight > window.innerHeight) {
-      document.body.style.cssText = `overflow: hidden; padding-right: ${window.innerWidth - document.body.clientWidth}px;`;
+const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+  document.body.style.overflow = 'hidden';
+  if (scrollbarWidth > 0) {
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+  }
     }
   }
 
@@ -73,9 +83,9 @@ function open() {
   nextTick(() => {
     //焦点陷阱
     if (focusTrapInstance === null) {
-      focusTrapInstance = createFocusTrap(modalRef.value, {
+      focusTrapInstance = createFocusTrap(elementRef.value, {
         initialFocus: false,
-        isolateSubtrees: true
+        fallbackFocus: elementRef.value
       });
     }
     focusTrapInstance.activate();
@@ -95,9 +105,8 @@ function open() {
 function close() {
   counter.decrement();
   if (counter.get() === 0) {
-    if (document.body.scrollHeight > window.innerHeight) {
-      document.body.style = null;
-    }
+    document.body.style.overflow = savedOverflow;
+    document.body.style.paddingRight = savedPaddingRight;
   }
 
   if (props.destory) {
@@ -201,15 +210,15 @@ function resetPosition() {
 
 onMounted(() => {
   if (props.backdrop === true) {
-    modalRef.value.addEventListener('click', function (event) {
-      if (event.target === modalRef.value) {
+    elementRef.value.addEventListener('click', function (event) {
+      if (event.target === elementRef.value) {
         visible.value = false;
       }
     });
   } else if (props.backdrop === 'static') {
     let count = 0;
-    modalRef.value.addEventListener('click', function (event) {
-      if (event.target === modalRef.value) {
+    elementRef.value.addEventListener('click', function (event) {
+      if (event.target === elementRef.value) {
         if (count === 0) {
           count++;
           contentRef.value.style.transition = 'transform 0.3s ease-out';
@@ -238,9 +247,8 @@ onMounted(() => {
 onBeforeUnmount(() => {
   counter.reset();
 
-  if (document.body.scrollHeight > window.innerHeight) {
-    document.body.style = null;
-  }
+  document.body.style.overflow = savedOverflow;
+  document.body.style.paddingRight = savedPaddingRight;
 
   //停止焦点陷阱
   if (focusTrapInstance !== null) {

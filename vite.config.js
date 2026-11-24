@@ -12,7 +12,7 @@ export default defineConfig({
     Icons({
       compiler: 'vue3',
       scale: 1, // SVG缩放比例
-      defaultClass: 'bi' // 默认 class
+      defaultClass: 'bv-bi' // 默认 class
     }),
     Components({
       resolvers: [IconsResolver({ prefix: false, enabledCollections: ['bi'] })]

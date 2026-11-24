@@ -302,7 +302,7 @@
 <script setup>
 import { ref } from 'vue';
 import * as yup from 'yup';
-import { get } from 'lodash-es';
+import { get } from 'es-toolkit/compat';
 
 const data1Create = () => {
   let d = {
@@ -629,7 +629,7 @@ const formCode = `
 <script setup>
 import { ref } from "vue";
 import * as yup from 'yup';
-import { get } from 'lodash-es'
+import { get } from 'es-toolkit/compat';
 
 const data1Create = () => {
   let d = {
@@ -765,7 +765,7 @@ const fieldCode = `
 <script setup>
 import { ref } from "vue";
 import * as yup from 'yup';
-import { get } from 'lodash-es'
+import { get } from 'es-toolkit/compat';
 
 const data2 = ref({
   mobile: '',

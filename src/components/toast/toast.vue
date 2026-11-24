@@ -2,14 +2,14 @@
   <div class="toast-container position-fixed p-3" :class="containerClass">
     <div ref="toastRef" class="toast" role="alert" aria-live="polite" aria-atomic="true">
       <div class="toast-header">
-        <BiCheckCircleFill v-if="type === 'success'" class="fs-6 text-success" />
-        <BiXCircleFill v-else-if="type === 'danger'" class="fs-6 text-danger" />
-        <BiExclamationCircleFill v-else-if="type === 'warning'" class="fs-6 text-warning" />
-        <BiInfoCircleFill v-else class="fs-6 text-info" />
-        <strong class="ms-2 me-auto">{{ title }}</strong>
+        <BiCheckCircleFill v-if="props.type === 'success'" class="text-success fs-6" />
+        <BiXCircleFill v-else-if="props.type === 'danger'" class="text-danger fs-6" />
+        <BiExclamationCircleFill v-else-if="type === 'warning'" class="text-warning fs-6" />
+        <BiInfoCircleFill v-else class="text-info fs-6" />
+        <strong class="ms-2 me-auto">{{ props.title }}</strong>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-      <div class="toast-body" v-html="message"></div>
+      <div class="toast-body" v-html="props.message"></div>
     </div>
   </div>
 </template>

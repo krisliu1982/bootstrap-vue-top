@@ -5,10 +5,12 @@ let container = null;
 const alertMessage = function (data) {
   if (container !== null) {
     render(null, container);
+    container.remove();
     container = null;
   }
 
   container = document.createElement('div');
+  document.body.appendChild(container);
 
   const vnode = createVNode(AlertMessage, {
     type: data.type,
@@ -16,12 +18,12 @@ const alertMessage = function (data) {
     duration: data.duration,
     onDestroy: () => {
       render(null, container);
+      container.remove();
+      container = null;
     }
   });
 
   render(vnode, container);
-
-  document.body.appendChild(container.firstElementChild);
 };
 
 export default alertMessage;
