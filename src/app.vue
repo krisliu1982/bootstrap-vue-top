@@ -6,8 +6,10 @@
         对 Bootstrap 做 vue 扩展，只扩展不改变。依旧可以使用 Bootstrap 快速设计和定制响应式移动优先网站，同时也可以利用扩展来提高开发效率。
       </p>
 
-      <div class="d-flex gap-3">
-        <a href="https://v1.bootstrap-vue.top" class="btn btn-primary">阅读文档（v1.2.0）<bi-arrow-right /></a>
+      <div>
+        <p>v1.x 与 bootstrap 是捆绑在一起，v5.x 开始由用户自行安装 bootstrap。</p>
+        <p>当前版本 <span class="badge text-bg-secondary">1.2.0</span>, 捆绑 bootstrap 5.3.9。</p>
+        <p><a href="https://v1.bootstrap-vue.top" class="btn btn-primary">阅读文档 <bi-arrow-right /></a></p>
       </div>
     </div>
 
