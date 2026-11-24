@@ -2,12 +2,11 @@
   <nav class="sticky-lg-top bg-primary-subtle bg-gradient">
     <div class="container">
       <div class="d-flex align-items-center gap-2" style="height: 3rem">
-        <img src="/favicon.svg" alt="bootstrap-vue-top" width="24" height="24" />
+        <a href="/"><img src="/favicon.svg" alt="bootstrap-vue-top" width="24" height="24" /></a>
         <small>v1.2</small>
         <div class="ms-auto">
           <div class="d-none d-lg-block">
             <div class="d-flex align-items-center gap-3">
-              <a href="/" class="link-body-emphasis text-decoration-none">文档</a>
               <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
               <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
               <div class="vr"></div>
@@ -15,7 +14,7 @@
               <a class="link-body-emphasis text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
               <div class="vr"></div>
               <div class="dropdown">
-                <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="文字大小" href="#" role="button" aria-expanded="false">
+                <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="布局大小" href="#" role="button" aria-expanded="false">
                   <template v-if="fontSize === 'sm'">小型布局</template>
                   <template v-else-if="fontSize === 'md'">中型布局</template>
                   <template v-else-if="fontSize === 'lg'">大型布局</template>
