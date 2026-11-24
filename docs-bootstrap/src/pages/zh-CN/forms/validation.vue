@@ -4,7 +4,7 @@
     <p class="lead">通过浏览器默认行为，或自定义样式与 JavaScript，利用 HTML5 表单校验为你的用户提供有价值且可操作的反馈。</p>
 
     <Callout type="warning">
-      <p>我们知道，目前客户端自定义校验样式和工具提示尚不具备无障碍性，因为它们未暴露给辅助技术。在我们寻求解决方案的同时，建议你使用服务端方案或浏览器默认校验方式。</p>
+      <p>我们知道，目前客户端自定义校验样式和文字提示尚不具备无障碍性，因为它们未暴露给辅助技术。在我们寻求解决方案的同时，建议你使用服务端方案或浏览器默认校验方式。</p>
     </Callout>
     <h2 id="how-it-works">工作原理<a class="anchor-link" href="#how-it-works" aria-label="工作原理链接"></a></h2>
     <p>Bootstrap 的表单校验工作原理如下：</p>
@@ -21,7 +21,7 @@
     <p>基于以上说明，请查看下面关于我们的自定义表单校验样式、可选的服务端类和浏览器默认样式的演示。</p>
     <h2 id="custom-styles">自定义样式<a class="anchor-link" href="#custom-styles" aria-label="自定义样式链接"></a></h2>
     <p>
-      要使用 Bootstrap 自定义表单校验消息，你需要为 <code>&lt;form&gt;</code> 添加 <code>novalidate</code> 布尔属性。这会禁用浏览器默认的反馈工具提示，但仍可通过 JavaScript 访问表单校验 API。请尝试提交下面的表单，我们的 JavaScript 会拦截提交按钮并将反馈传达给你。尝试提交时，你会看到 <code>:invalid</code> 和
+      要使用 Bootstrap 自定义表单校验消息，你需要为 <code>&lt;form&gt;</code> 添加 <code>novalidate</code> 布尔属性。这会禁用浏览器默认的反馈文字提示，但仍可通过 JavaScript 访问表单校验 API。请尝试提交下面的表单，我们的 JavaScript 会拦截提交按钮并将反馈传达给你。尝试提交时，你会看到 <code>:invalid</code> 和
       <code>:valid</code> 样式应用到表单控件上。
     </p>
     <p>自定义反馈样式会应用自定义颜色、边框、聚焦样式和背景图标，以更好地传达反馈。<code>&lt;select&gt;</code> 的背景图标仅在使用 <code>.form-select</code> 时可用，使用 <code>.form-control</code> 时不可用。</p>
@@ -284,8 +284,8 @@
   </div>
 </form>'
     />
-    <h2 id="tooltips">工具提示<a class="anchor-link" href="#tooltips" aria-label="工具提示链接"></a></h2>
-    <p>如果表单布局允许，你可以将 <code>.{valid|invalid}-feedback</code> 类换成 <code>.{valid|invalid}-tooltip</code> 类，以样式化的工具提示显示校验反馈。请确保其父元素设置了 <code>position: relative</code>，以便定位工具提示。在下面的示例中，我们的列类已经具备此属性，但你的项目可能需要其他设置。</p>
+    <h2 id="tooltips">文字提示<a class="anchor-link" href="#tooltips" aria-label="文字提示链接"></a></h2>
+    <p>如果表单布局允许，你可以将 <code>.{valid|invalid}-feedback</code> 类换成 <code>.{valid|invalid}-tooltip</code> 类，以样式化的文字提示显示校验反馈。请确保其父元素设置了 <code>position: relative</code>，以便定位文字提示。在下面的示例中，我们的列类已经具备此属性，但你的项目可能需要其他设置。</p>
     <Example
       code='<form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4 position-relative">
@@ -355,14 +355,14 @@
     <h3 id="sass-maps">Sass map<a class="anchor-link" href="#sass-maps" aria-label="Sass map 链接"></a></h3>
     <p>这是来自 <code>_variables.scss</code> 的校验 Sass map。覆盖或扩展它即可生成不同或额外的状态。</p>
     <ScssDocs name="form-validation-states" file="scss/_variables.scss" />
-    <p><code>$form-validation-states</code> 的 map 可以包含三个可选参数，用于覆盖工具提示和聚焦样式。</p>
+    <p><code>$form-validation-states</code> 的 map 可以包含三个可选参数，用于覆盖文字提示和聚焦样式。</p>
     <h3 id="sass-loops">Sass 循环<a class="anchor-link" href="#sass-loops" aria-label="Sass 循环链接"></a></h3>
     <p>用于遍历 <code>$form-validation-states</code> map 的值来生成校验样式。对上述 Sass map 的任何修改都会通过此循环反映到你编译后的 CSS 中。</p>
     <ScssDocs name="form-validation-states-loop" file="scss/forms/_validation.scss" />
     <h3 id="customizing">自定义<a class="anchor-link" href="#customizing" aria-label="自定义链接"></a></h3>
     <p>
       可以通过 Sass 使用 <code>$form-validation-states</code> map 自定义校验状态。该 Sass map 位于我们的 <code>_variables.scss</code> 文件中，我们正是通过它生成默认的 <code>valid</code>/<code>invalid</code> 校验状态。其中包含一个嵌套
-      map，用于自定义每个状态的颜色、图标、工具提示颜色和聚焦阴影。虽然浏览器不支持其他状态，但使用自定义样式的人可以轻松添加更复杂的表单反馈。
+      map，用于自定义每个状态的颜色、图标、文字提示颜色和聚焦阴影。虽然浏览器不支持其他状态，但使用自定义样式的人可以轻松添加更复杂的表单反馈。
     </p>
     <DocsPager />
   </article>
@@ -375,7 +375,7 @@
       <li><a href="#browser-defaults">浏览器默认样式</a></li>
       <li><a href="#server-side">服务端</a></li>
       <li><a href="#supported-elements">支持的元素</a></li>
-      <li><a href="#tooltips">工具提示</a></li>
+      <li><a href="#tooltips">文字提示</a></li>
       <li>
         <a href="#css">CSS</a>
         <ul>

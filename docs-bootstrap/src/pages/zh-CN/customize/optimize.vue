@@ -29,7 +29,7 @@ import &#39;bootstrap/js/dist/modal&#39;;
       lang="javascript"
     />
     <p>
-      这样，你就不会为按钮、轮播和工具提示等组件引入任何你不打算使用的 JavaScript。如果你要导入下拉菜单、工具提示或弹出框，请务必在
+      这样，你就不会为按钮、轮播和文字提示等组件引入任何你不打算使用的 JavaScript。如果你要导入下拉菜单、文字提示或弹出框，请务必在
       <code>package.json</code> 文件中列出 Popper 依赖。
     </p>
     <Callout>

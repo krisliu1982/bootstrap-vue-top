@@ -6,7 +6,7 @@
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例链接"></a></h2>
     <p>使用 <code>z-index</code> 工具类将元素相互堆叠。这要求 <code>position</code> 值不为 <code>static</code>，可以通过自定义样式或使用我们的 <a href="/utilities/position/">定位工具类</a> 来设置。</p>
     <Callout>
-      <p>我们称这些为“底层” <code>z-index</code> 工具类，因为它们的默认值为 <code>-1</code> 到 <code>3</code>，我们将其用于重叠组件的布局。高层级 <code>z-index</code> 值则用于模态框和工具提示等覆盖类组件。</p> </Callout
+      <p>我们称这些为“底层” <code>z-index</code> 工具类，因为它们的默认值为 <code>-1</code> 到 <code>3</code>，我们将其用于重叠组件的布局。高层级 <code>z-index</code> 值则用于模态框和文字提示等覆盖类组件。</p> </Callout
     ><Example
       class="bd-example-zindex-levels position-relative"
       code='<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
@@ -17,7 +17,7 @@
     />
     <h2 id="overlays">覆盖层<a class="anchor-link" href="#overlays" aria-label="覆盖层链接"></a></h2>
     <p>
-      Bootstrap 的覆盖层组件——下拉菜单、模态框、抽屉（offcanvas）、弹出框、轻提示和工具提示——都拥有自己的
+      Bootstrap 的覆盖层组件——下拉菜单、模态框、抽屉（offcanvas）、弹出框、轻提示和文字提示——都拥有自己的
       <code>z-index</code> 值，以确保在界面相互竞争的“层级”中获得可用的体验。
     </p>
     <p>

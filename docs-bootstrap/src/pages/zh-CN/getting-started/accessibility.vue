@@ -13,7 +13,7 @@
     <p>Bootstrap 的样式和布局可应用于多种多样的标记结构。本文档旨在为开发者提供最佳实践示例，以展示 Bootstrap 本身的用法并说明恰当的语义化标记，包括解决潜在无障碍问题的方式。</p>
     <h3 id="interactive-components">交互组件<a class="anchor-link" href="#interactive-components" aria-label="交互组件链接"></a></h3>
     <p>
-      Bootstrap 的交互组件（例如模态对话框、下拉菜单和自定义工具提示）均为触屏、鼠标和键盘用户而设计。通过使用相关的 <a href="https://www.w3.org/WAI/standards-guidelines/aria/"><abbr title="Web Accessibility Initiative">WAI</abbr>-<abbr title="Accessible Rich Internet Applications">ARIA</abbr></a
+      Bootstrap 的交互组件（例如模态对话框、下拉菜单和自定义文字提示）均为触屏、鼠标和键盘用户而设计。通过使用相关的 <a href="https://www.w3.org/WAI/standards-guidelines/aria/"><abbr title="Web Accessibility Initiative">WAI</abbr>-<abbr title="Accessible Rich Internet Applications">ARIA</abbr></a
       >角色和属性，这些组件也应能被辅助技术（如屏幕阅读器）所理解并操作。
     </p>
     <p>由于 Bootstrap 的组件刻意设计得较为通用，作者可能需要添加更多 <abbr title="Accessible Rich Internet Applications">ARIA</abbr> 角色和属性以及 JavaScript 行为，以更准确地传达其组件的具体性质和功能。这一点通常会在文档中注明。</p>

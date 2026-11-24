@@ -93,11 +93,11 @@
     />
     <h2 id="dependencies">依赖<a class="anchor-link" href="#dependencies" aria-label="依赖链接"></a></h2>
     <p>部分插件和 CSS 组件依赖于其他插件。如果你单独引入插件，请务必在文档中查看这些依赖关系。</p>
-    <p>我们的下拉菜单、弹出框和工具提示还依赖于 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 。</p>
+    <p>我们的下拉菜单、弹出框和文字提示还依赖于 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 。</p>
     <h2 id="data-attributes">数据属性<a class="anchor-link" href="#data-attributes" aria-label="数据属性链接"></a></h2>
     <p>
       几乎所有 Bootstrap 插件都可以仅通过 HTML 和 data 数据属性来启用和配置（这是我们认为使用 JavaScript 功能的首选方式）。请务必
-      <strong>只在单个元素上使用一组数据属性</strong>（例如，你无法用同一个按钮同时触发工具提示和模态框。）
+      <strong>只在单个元素上使用一组数据属性</strong>（例如，你无法用同一个按钮同时触发文字提示和模态框。）
     </p>
     <JsDataAttributes />
     <h2 id="selectors">选择器<a class="anchor-link" href="#selectors" aria-label="选择器链接"></a></h2>
@@ -253,7 +253,7 @@ bootstrap.Modal.Default.keyboard = false
       </table>
     </div>
     <h2 id="sanitizer">清理器<a class="anchor-link" href="#sanitizer" aria-label="清理器链接"></a></h2>
-    <p>如果进行了相应配置，我们的工具提示和弹出框组件可以在页面上渲染任意 HTML。为防止跨站脚本（XSS）攻击，这些组件会在将接受 HTML 的选项渲染到页面之前，使用内置的内容清理器对其进行清理。内容清理默认启用。</p>
+    <p>如果进行了相应配置，我们的文字提示和弹出框组件可以在页面上渲染任意 HTML。为防止跨站脚本（XSS）攻击，这些组件会在将接受 HTML 的选项渲染到页面之前，使用内置的内容清理器对其进行清理。内容清理默认启用。</p>
     <p>默认允许的标签和属性如下。任何未显式允许的标签或属性都会在清理过程中被移除：</p>
     <JsDocs name="allow-list" file="js/sanitizer.js" /><Callout type="warning">
       <p><strong>使用这些高级选项时请务必小心。</strong>有关更多信息，请参阅 <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP 的跨站脚本防护速查表</a> 。 仅因禁用或修改内容清理而引起的漏洞不在 Bootstrap 安全模型的考虑范围之内。</p>

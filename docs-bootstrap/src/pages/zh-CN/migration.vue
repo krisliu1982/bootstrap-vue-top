@@ -380,7 +380,7 @@ index 8f8296def..449d70487 100644
         </p>
       </li>
       <li>
-        <p><strong>弹出框和工具提示现在使用 CSS 变量。</strong>一些 CSS 变量已从对应的 Sass 变量改为 CSS 变量，以减少变量数量。因此，本版本中有三个变量被弃用：<code>$popover-arrow-color</code>、<code>$popover-arrow-outer-color</code> 和 <code>$tooltip-arrow-color</code>。</p>
+        <p><strong>弹出框和文字提示现在使用 CSS 变量。</strong>一些 CSS 变量已从对应的 Sass 变量改为 CSS 变量，以减少变量数量。因此，本版本中有三个变量被弃用：<code>$popover-arrow-color</code>、<code>$popover-arrow-outer-color</code> 和 <code>$tooltip-arrow-color</code>。</p>
       </li>
       <li>
         <p>
@@ -445,7 +445,7 @@ index 8f8296def..449d70487 100644
         </p>
       </li>
       <li>
-        <p><strong>移除了弹出框和工具提示中未使用的定位样式</strong>，因为这些样式完全由 Popper 处理。在此过程中，<code>$tooltip-margin</code> 已被弃用并设为 <code>null</code>。</p>
+        <p><strong>移除了弹出框和文字提示中未使用的定位样式</strong>，因为这些样式完全由 Popper 处理。在此过程中，<code>$tooltip-margin</code> 已被弃用并设为 <code>null</code>。</p>
       </li>
     </ul>
     <p>
@@ -740,7 +740,7 @@ index 8f8296def..449d70487 100644
     <hr class="my-5" />
     <h3 id="components-2">组件<a class="anchor-link" href="#components-2" aria-label="组件链接"></a></h3>
     <ul>
-      <li>统一了警示框、面包屑、卡片、下拉菜单、列表组、模态框、弹出框和工具提示的 <code>padding</code> 值，使其基于我们的 <code>$spacer</code> 变量。 <a href="https://github.com/twbs/bootstrap/pull/30564">参见 #30564</a> 。</li>
+      <li>统一了警示框、面包屑、卡片、下拉菜单、列表组、模态框、弹出框和文字提示的 <code>padding</code> 值，使其基于我们的 <code>$spacer</code> 变量。 <a href="https://github.com/twbs/bootstrap/pull/30564">参见 #30564</a> 。</li>
     </ul>
     <h4 id="accordion">折叠面板</h4>
     <ul>
@@ -938,10 +938,10 @@ index 8f8296def..449d70487 100644
         <p>从轻提示中移除了 <code>overflow: hidden</code>，并改用基于 <code>calc()</code> 函数的适当 <code>border-radius</code>。</p>
       </li>
     </ul>
-    <h4 id="tooltips">工具提示</h4>
+    <h4 id="tooltips">文字提示</h4>
     <ul>
       <li>
-        <p><span class="badge text-bg-danger">破坏性变更</span> 在默认工具提示模板中将 <code>.arrow</code> 重命名为 <code>.tooltip-arrow</code>。</p>
+        <p><span class="badge text-bg-danger">破坏性变更</span> 在默认文字提示模板中将 <code>.arrow</code> 重命名为 <code>.tooltip-arrow</code>。</p>
       </li>
       <li>
         <p><span class="badge text-bg-danger">破坏性变更</span> <code>fallbackPlacements</code> 的默认值更改为 <code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code>，以便更好地放置 popper 元素。</p>
@@ -1065,11 +1065,11 @@ const dropdown = new bootstrap.Dropdown(&#39;[data-bs-toggle="dropdown"]&#39;)'
       <li>
         <p>
           <code>popperConfig</code> 可作为函数传入，该函数接受 Bootstrap 默认的 Popper 配置作为参数，从而让你按自己的方式合并这份默认配置。
-          <strong>适用于下拉菜单、弹出框和工具提示。</strong>
+          <strong>适用于下拉菜单、弹出框和文字提示。</strong>
         </p>
       </li>
       <li>
-        <p><code>fallbackPlacements</code> 的默认值已更改为 <code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code>，以便更好地放置 Popper 元素。<strong>适用于下拉菜单、弹出框和工具提示。</strong></p>
+        <p><code>fallbackPlacements</code> 的默认值已更改为 <code>[&#39;top&#39;, &#39;right&#39;, &#39;bottom&#39;, &#39;left&#39;]</code>，以便更好地放置 Popper 元素。<strong>适用于下拉菜单、弹出框和文字提示。</strong></p>
       </li>
       <li>
         <p>从公开静态方法中去除了下划线，例如 <code>_getInstance()</code> → <code>getInstance()</code>。</p>

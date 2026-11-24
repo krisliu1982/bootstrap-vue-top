@@ -112,8 +112,8 @@
     "description": "使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。"
   },
   "/components/tooltips": {
-    "title": "工具提示",
-    "description": "如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 工具提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。"
+    "title": "文字提示",
+    "description": "如何使用 CSS 和 JavaScript 添加自定义 Bootstrap 文字提示的文档和示例，其中使用 CSS3 实现动画，并使用 data-bs-* 属性实现本地标题存储。"
   },
   "/content/figures": {
     "title": "图片说明（Figures）",

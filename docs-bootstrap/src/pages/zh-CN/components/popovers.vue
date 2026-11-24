@@ -112,7 +112,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =&gt; new boots
       lang="javascript"
     />
     <h3 id="disabled-elements">禁用元素<a class="anchor-link" href="#disabled-elements" aria-label="禁用元素链接"></a></h3>
-    <p>带有 <code>disabled</code> 属性的元素不可交互，这意味着用户无法通过聚焦、悬停或点击它们来触发弹出框（或工具提示）。作为变通方法，你可以从包裹的 <code>&lt;div&gt;</code> 或 <code>&lt;span&gt;</code> 触发弹出框，最好使用 <code>tabindex=&quot;0&quot;</code> 使其可被键盘聚焦。</p>
+    <p>带有 <code>disabled</code> 属性的元素不可交互，这意味着用户无法通过聚焦、悬停或点击它们来触发弹出框（或文字提示）。作为变通方法，你可以从包裹的 <code>&lt;div&gt;</code> 或 <code>&lt;span&gt;</code> 触发弹出框，最好使用 <code>tabindex=&quot;0&quot;</code> 使其可被键盘聚焦。</p>
     <p>对于禁用元素的弹出框触发器，你可能还需要设置 <code>data-bs-trigger=&quot;hover focus&quot;</code>，这样弹出框会作为即时视觉反馈呈现给用户，因为他们可能并不期望<em>点击</em>一个禁用元素。</p>
     <Example
       addStackblitzJs

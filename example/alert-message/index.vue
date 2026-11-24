@@ -1,5 +1,5 @@
 <template>
-  <h1>Alert Message 警示消息</h1>
+  <h1>AlertMessage 警示消息</h1>
   <p class="lead">常用于主动操作后的反馈提示。通常在操作强度较大的场景中使用（如管理后台）。</p>
 
   <h2>基础用法</h2>

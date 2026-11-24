@@ -36,7 +36,7 @@ npm init -y
         />
       </li>
       <li>
-        <p><strong>安装 Bootstrap。</strong>现在可以安装 Bootstrap 了。我们还会安装 Popper，因为我们的下拉菜单、弹出框和工具提示依赖它来定位。如果你不打算使用这些组件，可以在此省略 Popper。</p>
+        <p><strong>安装 Bootstrap。</strong>现在可以安装 Bootstrap 了。我们还会安装 Popper，因为我们的下拉菜单、弹出框和文字提示依赖它来定位。如果你不打算使用这些组件，可以在此省略 Popper。</p>
         <CodeWrapper
           code="npm i --save bootstrap @popperjs/core
 "

@@ -30,7 +30,7 @@
         />
       </li>
       <li>
-        <p><strong>引入 Bootstrap 的 CSS 和 JS。</strong>将 CSS 的 <code>&lt;link&gt;</code> 标签放在 <code>&lt;head&gt;</code> 中，并将 JavaScript 打包文件（包含用于下拉菜单、弹出框和工具提示定位的 Popper）的 <code>&lt;script&gt;</code> 标签放在 <code>&lt;/body&gt;</code> 闭合标签之前。了解更多关于 <a href="#cdn-links">CDN 链接</a> 的信息。</p>
+        <p><strong>引入 Bootstrap 的 CSS 和 JS。</strong>将 CSS 的 <code>&lt;link&gt;</code> 标签放在 <code>&lt;head&gt;</code> 中，并将 JavaScript 打包文件（包含用于下拉菜单、弹出框和文字提示定位的 Popper）的 <code>&lt;script&gt;</code> 标签放在 <code>&lt;/body&gt;</code> 闭合标签之前。了解更多关于 <a href="#cdn-links">CDN 链接</a> 的信息。</p>
         <CodeWrapper
           code='<!doctype html>
 <html lang="en">
@@ -47,7 +47,7 @@
 </html>'
           lang="html"
         />
-        <p>你也可以分别引入 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 和我们的 JS。如果你不打算使用下拉菜单、弹出框或工具提示，可以不引入 Popper 以节省一些 千字节。</p>
+        <p>你也可以分别引入 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> 和我们的 JS。如果你不打算使用下拉菜单、弹出框或文字提示，可以不引入 Popper 以节省一些 千字节。</p>
         <CodeWrapper
           code='<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js" integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq" crossorigin="anonymous"></script>'
@@ -117,7 +117,7 @@
       <li>抽屉（Offcanvases），用于显示、定位和滚动行为</li>
       <li>滚动监听（Scrollspy），用于滚动行为和导航更新</li>
       <li>轻提示（Toasts），用于显示和关闭</li>
-      <li>工具提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> ）</li>
+      <li>文字提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> ）</li>
     </ul>
 
     <h2 id="important-globals">重要的全局设置<a class="anchor-link" href="#important-globals" aria-label="重要的全局设置"></a></h2>

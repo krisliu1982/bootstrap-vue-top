@@ -116,7 +116,7 @@ const sidebar = [
       { title: 'Scrollspy', slug: 'scrollspy', 'zh-CN': '滚动监听' },
       { title: 'Spinners', slug: 'spinners', 'zh-CN': '加载动画' },
       { title: 'Toasts', slug: 'toasts', 'zh-CN': '消息提示' },
-      { title: 'Tooltips', slug: 'tooltips', 'zh-CN': '工具提示' }
+      { title: 'Tooltips', slug: 'tooltips', 'zh-CN': '文字提示' }
     ]
   },
   {

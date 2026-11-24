@@ -293,8 +293,8 @@ myModal.addEventListener(&#39;shown.bs.modal&#39;, () =&gt; {
 &lt;/div&gt;'
       lang="html"
     />
-    <h3 id="tooltips-and-popovers">工具提示与弹出框<a class="anchor-link" href="#tooltips-and-popovers" aria-label="工具提示与弹出框链接"></a></h3>
-    <p><a href="/components/tooltips">工具提示</a> 和 <a href="/components/popovers">弹出框</a> 可以根据需要放置在模态框内。当模态框关闭时，其中的任何工具提示和弹出框也会自动消失。</p>
+    <h3 id="tooltips-and-popovers">文字提示与弹出框<a class="anchor-link" href="#tooltips-and-popovers" aria-label="文字提示与弹出框链接"></a></h3>
+    <p><a href="/components/tooltips">文字提示</a> 和 <a href="/components/popovers">弹出框</a> 可以根据需要放置在模态框内。当模态框关闭时，其中的任何文字提示和弹出框也会自动消失。</p>
     <Example
       :showMarkup="false"
       code='<div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel" aria-hidden="true">
@@ -936,7 +936,7 @@ myModalEl.addEventListener(&#39;hidden.bs.modal&#39;, event =&gt; {
           <li><a href="#static-backdrop">静态背景</a></li>
           <li><a href="#scrolling-long-content">滚动长内容</a></li>
           <li><a href="#vertically-centered">垂直居中</a></li>
-          <li><a href="#tooltips-and-popovers">工具提示与弹出框</a></li>
+          <li><a href="#tooltips-and-popovers">文字提示与弹出框</a></li>
           <li><a href="#using-the-grid">使用栅格</a></li>
           <li><a href="#varying-modal-content">变化模态框内容</a></li>
           <li><a href="#toggle-between-modals">在模态框之间切换</a></li>
