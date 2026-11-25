@@ -14,11 +14,11 @@
     <h2 id="uploader-file">文件上传<a class="anchor-link" aria-label="Link to this section: 文件上传" href="#uploader-file"> </a></h2>
     <p>
       用于文件上传。设置 <code>file-list</code> 为已上传文件信息, <code>multiple</code> 为是否多文件上传，默认单文件上传。监听 <code>file-change</code> 事件处理验证，上传等逻辑。监听
-      <code>file-remove</code> 事件删除文件。
+      <code>file-remove</code> 事件进行删除文件后的操作。监听 <code>file-preview</code> 事件预览文件后的操作。
     </p>
     <div class="docs-example">
       <div class="docs-example-data">
-        <BvFileUploader :file-list="fileList" multiple @file-change="handleFileChange" @file-remove="handleFileRemove">
+        <BvFileUploader :file-list="fileList" multiple @file-change="handleFileChange" @file-remove="handleFileRemove" @file-preview="handleFilePreview">
           <template #trigger>
             <button type="button" class="btn btn-primary">点击上传</button>
           </template>
@@ -101,6 +101,11 @@ function handleFileRemove(index) {
   fileList.value.splice(index, 1);
 }
 
+function handleFilePreview(index) {
+  console.log(index)
+}
+
+
 const imageUrl = ref(null);
 function handleImageOneChange(fileEl) {
   const file = fileEl.files[0];
@@ -148,7 +153,8 @@ const fileCode = `
     :file-list="fileList" 
     multiple
     @file-change="handleFileChange"
-    @file-remove="handleFileRemove">
+    @file-remove="handleFileRemove"
+    @file-preview="handleFilePreview">
         <template #trigger>
             <button type="button" class="btn btn-primary">点击上传</button>
         </template>
@@ -178,6 +184,10 @@ function handleFileChange(fileEl) {
 
 function handleFileRemove(index) {
     fileList.value.splice(index, 1);
+}
+
+function handleFilePreview(index) {
+  console.log(index)
 }
 <\/script>`;
 
