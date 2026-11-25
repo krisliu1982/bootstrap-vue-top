@@ -21,7 +21,7 @@ const sidebar = [
       { title: 'Backtop', slug: 'backtop', 'zh-CN': '回到顶部' },
       { title: 'Badge', slug: 'badge', 'zh-CN': '徽章' },
       { title: 'Breadcrumb', slug: 'breadcrumb', 'zh-CN': '面包屑导航' },
-      { title: 'Button', slug: 'buttons', 'zh-CN': '按钮' },
+      { title: 'Button', slug: 'button', 'zh-CN': '按钮' },
       { title: 'ButtonGroup', slug: 'button-group', 'zh-CN': '按钮组' },
       { title: 'Card', slug: 'card', 'zh-CN': '卡片' },
       { title: 'Carousel', slug: 'carousel', 'zh-CN': '轮播图' },
