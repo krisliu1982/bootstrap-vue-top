@@ -29,7 +29,7 @@ function handleImageManyRemove(index) {
 }
 
 function handleImageManyPreview(index) {
-  //这里处理图片逻辑，例如下面预览方式
+  //这里处理图片预览逻辑，例如下面预览方式
   imagePreview(['https://picsum.photos/id/112/800/800', 'https://picsum.photos/id/113/800/800', 'https://picsum.photos/id/114/800/800'], 0);
 }
 </script>

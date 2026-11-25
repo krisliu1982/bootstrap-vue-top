@@ -1,5 +1,5 @@
 <template>
-  <BvFileUploader :file-list="fileList" multiple @file-change="handleFileChange" @file-remove="handleFileRemove">
+  <BvFileUploader :file-list="fileList" multiple @file-change="handleFileChange" @file-remove="handleFileRemove" @file-preview="handleFilePreview">
     <template #trigger>
       <button type="button" class="btn btn-primary">点击上传</button>
     </template>
@@ -30,4 +30,10 @@ function handleFileRemove(index) {
   //这里处理后台删除等逻辑
   fileList.splice(index, 1);
 }
+
+function handleFilePreview(index) {
+  //这里处理文件预览逻辑
+  console.log(index)
+}
+
 </script>

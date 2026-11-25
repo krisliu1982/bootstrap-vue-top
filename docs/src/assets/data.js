@@ -46,7 +46,7 @@ const sidebar = [
       { title: 'Toast', slug: 'toast', 'zh-CN': '消息提示' },
       { title: 'Tooltip', slug: 'tooltip', 'zh-CN': '文字提示' },
       { title: 'Tree', slug: 'tree', 'zh-CN': '树' },
-      { title: 'TreeTable', slug: 'treeTable', 'zh-CN': '树形表格' },
+      { title: 'TreeTable', slug: 'tree-table', 'zh-CN': '树形表格' },
       { title: 'Uploader', slug: 'uploader', 'zh-CN': '上传器' }
     ]
   },
