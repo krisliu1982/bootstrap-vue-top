@@ -32,7 +32,7 @@
             </a>
           </div>
         </div>
-        <div class="d-lg-none">
+        <div class="d-lg-none ms-auto">
           <a href="#" role="button" class="link-body-emphasis fs-5" @click.prevent="offcanvasNavRef.toggle()">
             <bi-three-dots />
           </a>
@@ -40,6 +40,18 @@
       </div>
     </div>
   </nav>
+
+    <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
+    <div class="container-xxl">
+      <div class="d-flex justify-content-between align-items-center py-2">
+        <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebarRef.toggle()"><bi-list /> 菜单</a>
+        <div class="dropdown" id="dropdown-toc">
+          <a href="#" role="button" class="link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
+          <nav class="dropdown-menu" style="max-height: 75vh; overflow-y: auto" id="dropdown-menu-toc"></nav>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container-xxl">
     <div class="docs-layout">
@@ -61,25 +73,13 @@
     </div>
   </div>
 
-  <bv-offcanvas ref="offcanvasNavRef" title="bootstrap-vue-top" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
+  <bv-offcanvas ref="offcanvasNavRef" title="bootstrap-vue-top v5.3" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
     <div class="list-group list-group-flush" @click="offcanvasNavRef.toggle()">
-      <RouterLink to="/" class="list-group-item list-group-item-action">bootstrap-vue-top v5.3</RouterLink>
       <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
       <a class="list-group-item list-group-item-action" href="https://cn.vuejs.org/" target="_blank">Vue</a>
     </div>
   </bv-offcanvas>
 
-  <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
-    <div class="container-xxl">
-      <div class="d-flex justify-content-between align-items-center py-2">
-        <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebarRef.toggle()"><bi-list /></a>
-        <div class="dropdown" id="dropdown-toc">
-          <a href="#" role="button" class="link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
-          <nav class="dropdown-menu" style="max-height: 75vh; overflow-y: auto" id="dropdown-menu-toc"></nav>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup>
@@ -137,7 +137,7 @@ onMounted(() => {
   sidebarRef.value.addEventListener('click', function (e) {
     e.preventDefault();
     if (window.innerWidth < 992) {
-      offcanvasSidebarRef.toggle();
+      offcanvasSidebarRef.value.toggle();
     }
   });
 });

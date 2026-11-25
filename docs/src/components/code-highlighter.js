@@ -2,7 +2,8 @@ import { createHighlighterCore } from 'shiki/core';
 import { createJavaScriptRegexEngine } from 'shiki/engine/javascript';
 
 const highlighterPromise = createHighlighterCore({
-  themes: [import('@shikijs/themes/light-plus'), import('@shikijs/themes/dark-plus')],
+  themes: [import('@shikijs/themes/github-light'), 
+    import('@shikijs/themes/github-dark')],
   langs: [import('@shikijs/langs/html'), import('@shikijs/langs/javascript'), import('@shikijs/langs/powershell')],
   engine: createJavaScriptRegexEngine()
 });
@@ -13,8 +14,8 @@ export async function highlightCode(code, lang) {
     // 这里必须是一个对象
     lang: lang,
     themes: {
-      light: 'light-plus',
-      dark: 'dark-plus'
+      light: 'github-light',
+      dark: 'github-dark'
     },
     defaultColor: 'light-dark()'
   });
