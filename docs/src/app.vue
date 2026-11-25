@@ -6,37 +6,28 @@
         <small class="ms-2">v5.3</small>
         <div class="d-none d-lg-block ms-auto">
           <div class="d-flex align-items-center gap-3">
-            <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/"
-              target="_blank">Bootstrap</a>
+            <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
             <a class="link-body-emphasis text-decoration-none" href="https://cn.vuejs.org/" target="_blank">Vue</a>
             <div class="vr"></div>
-            <a class="link-body-emphasis text-decoration-none" href="https://gitee.com/asdfghjkl012345/bootstrap-vue"
-              target="_blank">Gitee</a>
-            <a class="link-body-emphasis text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top"
-              target="_blank">Github</a>
+            <a class="link-body-emphasis text-decoration-none" href="https://gitee.com/asdfghjkl012345/bootstrap-vue" target="_blank">Gitee</a>
+            <a class="link-body-emphasis text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
             <div class="vr"></div>
             <div class="dropdown">
-              <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="布局大小"
-                href="#" role="button" aria-expanded="false">
+              <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="布局大小" href="#" role="button" aria-expanded="false">
                 <template v-if="fontSize === 'sm'">小型布局</template>
                 <template v-else-if="fontSize === 'md'">中型布局</template>
                 <template v-else-if="fontSize === 'lg'">大型布局</template>
               </a>
               <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('sm')"
-                    :disabled="fontSize === 'sm'">小型布局</button></li>
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('md')"
-                    :disabled="fontSize === 'md'">中型布局</button></li>
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')"
-                    :disabled="fontSize === 'lg'">大型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('sm')" :disabled="fontSize === 'sm'">小型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('md')" :disabled="fontSize === 'md'">中型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize === 'lg'">大型布局</button></li>
               </ul>
             </div>
-            <a v-if="theme === 'light'" href="#" role="button" class="link-body-emphasis text-decoration-none"
-              title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
+            <a v-if="theme === 'light'" href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
               <bi-sun />
             </a>
-            <a v-else href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到明亮"
-              @click.prevent="handleThemeChange('light')">
+            <a v-else href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
               <bi-moon />
             </a>
           </div>
@@ -52,14 +43,13 @@
 
   <div class="container-xxl">
     <div class="docs-layout">
-      <bv-offcanvas ref="offcanvasSidebarRef" title="文档菜单" offcanvas-class="offcanvas-lg offcanvas-start docs-sidebar" offcanvas-style="--bs-offcanvas-width: 75vw" >
+      <bv-offcanvas ref="offcanvasSidebarRef" title="文档菜单" offcanvas-class="offcanvas-lg offcanvas-start docs-sidebar" offcanvas-style="--bs-offcanvas-width: 75vw">
         <ul ref="sidebarRef" class="list-unstyled">
           <li v-for="t in data.sidebar" class="mb-4">
             <h6 class="fw-bold">{{ t['zh-CN'] }}</h6>
             <ul class="list-unstyled">
               <li v-for="tt in t.pages" class="py-1">
-                <RouterLink :to="`/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">{{
-                  tt.title }} {{ tt['zh-CN'] }}</RouterLink>
+                <RouterLink :to="`/${t.slug}/${tt.slug}`" class="docs-sidebar-link" exact-active-class="active">{{ tt.title }} {{ tt['zh-CN'] }}</RouterLink>
               </li>
             </ul>
           </li>
@@ -71,8 +61,7 @@
     </div>
   </div>
 
-  <bv-offcanvas ref="offcanvasNavRef" title="bootstrap-vue-top" offcanvas-class="offcanvas offcanvas-end"
-    offcanvas-style="--bs-offcanvas-width:75vw;">
+  <bv-offcanvas ref="offcanvasNavRef" title="bootstrap-vue-top" offcanvas-class="offcanvas offcanvas-end" offcanvas-style="--bs-offcanvas-width:75vw;">
     <div class="list-group list-group-flush" @click="offcanvasNavRef.toggle()">
       <RouterLink to="/" class="list-group-item list-group-item-action">bootstrap-vue-top v5.3</RouterLink>
       <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
@@ -83,11 +72,9 @@
   <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
     <div class="container-xxl">
       <div class="d-flex justify-content-between align-items-center py-2">
-        <a href="#" role="button" class="link-body-emphasis text-decoration-none"
-          @click.prevent="offcanvasSidebarRef.toggle()"><bi-list /></a>
+        <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebarRef.toggle()"><bi-list /></a>
         <div class="dropdown" id="dropdown-toc">
-          <a href="#" role="button" class="link-body-emphasis text-decoration-none dropdown-toggle"
-            data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
+          <a href="#" role="button" class="link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
           <nav class="dropdown-menu" style="max-height: 75vh; overflow-y: auto" id="dropdown-menu-toc"></nav>
         </div>
       </div>
@@ -145,7 +132,7 @@ handleThemeChange(getTheme());
 
 const offcanvasNavRef = ref(null);
 const offcanvasSidebarRef = ref(null);
-const sidebarRef = ref(null)
+const sidebarRef = ref(null);
 onMounted(() => {
   sidebarRef.value.addEventListener('click', function (e) {
     e.preventDefault();

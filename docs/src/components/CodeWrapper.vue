@@ -1,15 +1,14 @@
 <template>
   <div class="position-relative">
-      <div class="position-absolute" style="top: 1rem;right: 1rem;">
-        <BiCheckLg v-if="isCopy" class="text-success" />
-        <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
-          <BiCopy />
-        </a>
-      </div>
+    <div class="position-absolute" style="top: 1rem; right: 1rem">
+      <BiCheckLg v-if="isCopy" class="text-success" />
+      <a v-else role="button" class="text-body" title="Copy" aria-label="Copy" @click="handleCopy">
+        <BiCopy />
+      </a>
+    </div>
     <Code :code="props.code" :lang="props.lang" />
   </div>
 </template>
-
 
 <script setup>
 import { ref } from 'vue';

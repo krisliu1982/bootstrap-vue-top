@@ -2,13 +2,8 @@ import { createHighlighterCore } from 'shiki/core';
 import { createJavaScriptRegexEngine } from 'shiki/engine/javascript';
 
 const highlighterPromise = createHighlighterCore({
-  themes: [
-    import('@shikijs/themes/light-plus'), 
-    import('@shikijs/themes/dark-plus')],
-  langs: [
-    import('@shikijs/langs/html'), 
-    import('@shikijs/langs/javascript'), 
-    import('@shikijs/langs/powershell')],
+  themes: [import('@shikijs/themes/light-plus'), import('@shikijs/themes/dark-plus')],
+  langs: [import('@shikijs/langs/html'), import('@shikijs/langs/javascript'), import('@shikijs/langs/powershell')],
   engine: createJavaScriptRegexEngine()
 });
 

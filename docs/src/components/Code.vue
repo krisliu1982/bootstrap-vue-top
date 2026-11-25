@@ -2,7 +2,6 @@
   <div class="docs-code" v-html="html"></div>
 </template>
 
-
 <script setup>
 import { ref, onMounted } from 'vue';
 import { highlightCode } from './code-highlighter.js';

@@ -9,7 +9,6 @@
       <BasicUsage />
     </div>
     <CodeWrapper :code="BasicUsageCode" />
-
   </article>
   <nav class="docs-toc" aria-label="本页目录">
     <ul>

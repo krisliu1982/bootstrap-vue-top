@@ -1,13 +1,13 @@
 <template>
   <div class="hstack gap-3 flex-wrap">
-<button type="button" class="btn btn-primary">primary</button>
-<button type="button" class="btn btn-secondary">secondary</button>
-<button type="button" class="btn btn-success">success</button>
-<button type="button" class="btn btn-danger">danger</button>
-<button type="button" class="btn btn-warning">warning</button>
-<button type="button" class="btn btn-info">info</button>
-<button type="button" class="btn btn-light">light</button>
-<button type="button" class="btn btn-dark">dark</button>
-<button type="button" class="btn btn-link">Link</button>
-</div>
+    <button type="button" class="btn btn-primary">primary</button>
+    <button type="button" class="btn btn-secondary">secondary</button>
+    <button type="button" class="btn btn-success">success</button>
+    <button type="button" class="btn btn-danger">danger</button>
+    <button type="button" class="btn btn-warning">warning</button>
+    <button type="button" class="btn btn-info">info</button>
+    <button type="button" class="btn btn-light">light</button>
+    <button type="button" class="btn btn-dark">dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
 </template>

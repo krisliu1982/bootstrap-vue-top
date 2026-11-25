@@ -49,7 +49,7 @@ const sidebar = [
       { title: 'TreeTable', slug: 'tree-table', 'zh-CN': '树形表格' },
       { title: 'Uploader', slug: 'uploader', 'zh-CN': '上传器' }
     ]
-  },
+  }
 ];
 
 // 按侧边栏顺序展开所有文档页，供路由与上下页导航共用

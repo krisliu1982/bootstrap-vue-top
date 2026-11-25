@@ -33,7 +33,6 @@ function handleFileRemove(index) {
 
 function handleFilePreview(index) {
   //这里处理文件预览逻辑
-  console.log(index)
+  console.log(index);
 }
-
 </script>

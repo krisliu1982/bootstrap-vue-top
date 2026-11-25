@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="btn btn-primary" @click="handleClick">Show Loading(Fullscreen)</button>
+  <button type="button" class="btn btn-primary" @click="handleClick">Show Loading (Fullscreen)</button>
 </template>
 
 <script setup>

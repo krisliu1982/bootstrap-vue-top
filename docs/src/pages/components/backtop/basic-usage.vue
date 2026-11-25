@@ -1,14 +1,16 @@
 <template>
   <bv-backtop :color="color" :size="size" />
-  
+
   <div>
     <h5>颜色设置</h5>
     <div v-for="item in colors" class="form-check form-check-inline">
       <input class="form-check-input" type="radio" :id="`backtop-color-${item}`" :value="item" v-model="color" />
-      <label class="form-check-label" :for="`backtop-color-${item}`"><span :class="`text-${item}`">{{ item }}</span></label>
+      <label class="form-check-label" :for="`backtop-color-${item}`"
+        ><span :class="`text-${item}`">{{ item }}</span></label
+      >
     </div>
   </div>
-<br/>
+  <br />
   <div>
     <h5>尺寸设置</h5>
     <div v-for="item in sizes" class="form-check form-check-inline">

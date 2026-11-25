@@ -14,10 +14,10 @@ const routes = [
 ];
 
 flatPages.forEach((page) => {
-    routes.push({
-      path: page.path,
-      component: () => import(`@/pages/${page.groupSlug}/${page.pageSlug}/index.vue`)
-    });
+  routes.push({
+    path: page.path,
+    component: () => import(`@/pages/${page.groupSlug}/${page.pageSlug}/index.vue`)
+  });
 });
 
 function remToPx(remValue) {
