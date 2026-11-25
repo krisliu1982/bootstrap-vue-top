@@ -8,7 +8,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { imagePreview } from '@lib';
+import { imagePreview } from 'bootstrap-vue-top';
 
 const imageUrl = ref(null);
 function handleImageOneChange(fileEl) {

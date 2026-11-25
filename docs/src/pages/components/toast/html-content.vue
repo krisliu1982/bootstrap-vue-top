@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { toast } from '@lib';
+import { toast } from 'bootstrap-vue-top';
 
 function handleClickHtml() {
   toast({

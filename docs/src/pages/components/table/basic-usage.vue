@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { alertMessage } from '@lib';
+import { alertMessage } from 'bootstrap-vue-top';
 
 const tableData = [
   { code: 1001, name: 'Kris1', address: 'Honghu City, Hubei Province, China' },

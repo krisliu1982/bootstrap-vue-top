@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { imagePreview } from '@lib';
+import { imagePreview } from 'bootstrap-vue-top';
 
 function handleImageManyPreview() {
   const imges = [

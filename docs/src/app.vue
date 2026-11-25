@@ -74,7 +74,7 @@
   <bv-offcanvas ref="offcanvasNavRef" title="bootstrap-vue-top" offcanvas-class="offcanvas offcanvas-end"
     offcanvas-style="--bs-offcanvas-width:75vw;">
     <div class="list-group list-group-flush" @click="offcanvasNavRef.toggle()">
-      <RouterLink to="/docs" class="list-group-item list-group-item-action">bootstrap-vue-top v5.3</RouterLink>
+      <RouterLink to="/" class="list-group-item list-group-item-action">bootstrap-vue-top v5.3</RouterLink>
       <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
       <a class="list-group-item list-group-item-action" href="https://cn.vuejs.org/" target="_blank">Vue</a>
     </div>

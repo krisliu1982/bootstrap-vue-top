@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { alertMessage } from '@lib';
+import { alertMessage } from 'bootstrap-vue-top';
 
 const treeData = {
   code: '1001',

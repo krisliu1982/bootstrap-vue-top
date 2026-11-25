@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { alertBox } from '@lib';
+import { alertBox } from 'bootstrap-vue-top';
 
 function handleClick() {
   alertBox({ message: 'This is a AlertBox  message.' });

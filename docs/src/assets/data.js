@@ -14,7 +14,7 @@ const sidebar = [
     'zh-CN': '组件',
     pages: [
       { title: 'Accordion', slug: 'accordion', 'zh-CN': '折叠面板' },
-      { title: 'Alert', slug: 'alerts', 'zh-CN': '警示框' },
+      { title: 'Alert', slug: 'alert', 'zh-CN': '警示框' },
       { title: 'AlertBox', slug: 'alert-box', 'zh-CN': '警示弹窗' },
       { title: 'AlertConfirm', slug: 'alert-confirm', 'zh-CN': '警示确认窗' },
       { title: 'AlertMessage', slug: 'alert-message', 'zh-CN': '警示消息' },

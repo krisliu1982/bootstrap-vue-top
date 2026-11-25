@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import { alertMessage } from '@lib';
+import { alertMessage } from 'bootstrap-vue-top';
 
 const messageTypes = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
 </script>

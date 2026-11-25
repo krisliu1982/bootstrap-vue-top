@@ -8,7 +8,7 @@
 
 <script setup>
 import { reactive } from 'vue';
-import { imagePreview } from '@lib';
+import { imagePreview } from 'bootstrap-vue-top';
 
 const imageUrls = reactive([]);
 function handleImageManyChange(fileEl) {

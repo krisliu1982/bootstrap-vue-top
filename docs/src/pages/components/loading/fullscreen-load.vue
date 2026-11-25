@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { LoadingFullscreen } from '@lib';
+import { LoadingFullscreen } from 'bootstrap-vue-top';
 
 function handleClick() {
   const instance = LoadingFullscreen.getInstance();

@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { alertConfirm, alertMessage } from '@lib';
+import { alertConfirm, alertMessage } from 'bootstrap-vue-top';
 
 function handleClick() {
   alertConfirm({
