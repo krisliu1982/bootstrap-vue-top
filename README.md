@@ -2,12 +2,15 @@
 
 基于 Bootstrap 5.3.x & Vue 3.5.x 的前端组件库
 
+*v1.x 与 bootstrap 是捆绑在一起，v5.x 开始由用户自行安装 bootstrap。*
+
+*当前版本 1.2.1, 捆绑 bootstrap 5.3.9。*
 
 ## 主要特点
 
-- 所有 Bootstrap 官方文档中的样式类和JS组件在项目中直接使用，降低了团队的学习与迁移成本。
-- 交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件。避免组件臃肿，组件过度封装和组件通信复杂。
-- 完全继承 Bootstrap 自定义功能，能设计出自己喜欢的主题。
+- 对 Bootstrap 做 vue 扩展，只扩展不改变。依旧可以使用 Bootstrap 快速设计和定制响应式移动优先网站，同时也可以利用扩展来提高开发效率。
+- 交互性比较强 HTML 组件和书写比较繁琐原生 HTML 元素才被声明为 Vue 组件。避免组件臃肿，组件过度封装和组件复杂通信。
+- 我们对 bootstrap 样式自定义系统没有做任何改变，如果你熟悉 sass，可以下载源码，设计出自己喜欢的主题。如果你不熟悉sass，可以通过 css 变量进行设计。 
 - 配套完整的中文文档网站 [https://bootstrap-vue.top](https://bootstrap-vue.top)
 
 

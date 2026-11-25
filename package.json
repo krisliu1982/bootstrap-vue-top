@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-vue-top",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://bootstrap-vue.top",
   "private": false,
   "type": "module",
@@ -27,6 +27,9 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.{js,vue,ts,json}\""
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
