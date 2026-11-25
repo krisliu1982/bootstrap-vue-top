@@ -63,6 +63,7 @@
 
     <p>作为参考，以下是我们主要的 CDN 链接。</p>
 
+    <div class="table-responsive">
     <table class="table">
       <thead>
         <tr>
@@ -81,6 +82,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <p>你也可以使用 CDN 获取任何 <a href="/getting-started/contents">在「内容」页面中列出的其他构建版本</a> 。</p>
 

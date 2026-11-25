@@ -55,12 +55,11 @@
 
   <div class="offcanvas offcanvas-end" tabindex="-1" style="--bs-offcanvas-width: 75vw" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasNavLabel">bootstrap-vue-top</h5>
+      <h5 class="offcanvas-title" id="offcanvasNavLabel">Bootstrap v5.3</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNav" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <div class="list-group list-group-flush" @click="offcanvasNav.toggle()">
-        <RouterLink to="/" class="list-group-item list-group-item-action">文档</RouterLink>
         <a class="list-group-item list-group-item-action" href="https://getbootstrap.com/">Bootstrap 官网</a>
         <a v-if="theme === 'light'" href="#" class="list-group-item list-group-item-action" @click.prevent="handleThemeChange('dark')">
           <bi-sun />
@@ -75,7 +74,7 @@
   <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
     <div class="container-xxl">
       <div class="d-flex justify-content-between align-items-center py-2">
-        <a href="#" class="link-body-emphasis text-decoration-none" @click="offcanvasSidebar.toggle()"><bi-list /> 菜单</a>
+        <a href="#" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebar.toggle()"><bi-list /> 菜单</a>
         <div class="dropdown" id="dropdown-toc">
           <a href="#" class="link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
           <nav class="dropdown-menu" style="max-height: 75vh; overflow-y: auto" id="dropdown-menu-toc"></nav>
