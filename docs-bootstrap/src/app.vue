@@ -31,9 +31,9 @@
                 <bi-fonts />
               </a>
               <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('sm')" :disabled="fontSize == 'sm'">小型布局</button></li>
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('md')" :disabled="fontSize == 'md'">中型布局</button></li>
-                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize == 'lg'">大型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('sm')" :disabled="fontSize === 'sm'">小型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('md')" :disabled="fontSize === 'md'">中型布局</button></li>
+                <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize === 'lg'">大型布局</button></li>
               </ul>
             </div>
             <a v-if="theme === 'light'" href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
@@ -74,7 +74,7 @@
   <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
     <div class="container-xxl">
       <div class="d-flex justify-content-between align-items-center py-2">
-        <a href="#" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebar.toggle()"><bi-list /> 菜单</a>
+        <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebar.toggle()"><bi-list /> 菜单</a>
         <div class="dropdown" id="dropdown-toc">
           <a href="#" class="link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">本页目录</a>
           <nav class="dropdown-menu" style="max-height: 75vh; overflow-y: auto" id="dropdown-menu-toc"></nav>

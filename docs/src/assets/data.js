@@ -6,7 +6,6 @@ const sidebar = [
     pages: [
       { title: 'Introduction', slug: 'introduction', 'zh-CN': '简介' },
       { title: 'Quick start', slug: 'quick-start', 'zh-CN': '快速开始' }
-
     ]
   },
   {
