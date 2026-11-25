@@ -6,17 +6,24 @@
       <li v-for="(file, index) in props.fileList" class="d-flex align-items-center border-bottom py-2">
         <span class="me-3">{{ index + 1 }}. {{ file.name }}</span>
         <small class="text-body-secondary me-3 d-none d-sm-block">[{{ formatFileSize(file.size) }}]</small>
-        <a class="ms-auto me-3" :href="file.url" target="_blank"><bi-eye /></a>
-        <button type="button" class="p-0 border-0 bg-transparent" @click="handleRemove(index)"><bi-x-lg /></button>
+        <button type="button" class="btn btn-link p-0 border-0 ms-auto me-3" @click="handlePreview(index)"><bi-eye /></button>
+        <button type="button" class="btn btn-link p-0 border-0" @click="handleRemove(index)"><bi-x-lg /></button>
       </li>
     </ul>
-    <input ref="fileRef" type="file" :multiple="props.multiple" name="file" style="display: none" @change="handleChange" />
+    <input
+      ref="fileRef"
+      type="file"
+      :multiple="props.multiple"
+      name="file"
+      style="display: none"
+      @change="handleChange"
+    />
   </div>
 </template>
 
 <script setup>
 import { shallowRef, onMounted } from 'vue';
-const emit = defineEmits(['file-change', 'file-remove']);
+const emit = defineEmits(['file-change', 'file-remove', 'file-preview']);
 
 const props = defineProps({
   fileList: {
@@ -44,6 +51,10 @@ function handleChange(event) {
 
 function handleRemove(index) {
   emit('file-remove', index);
+}
+
+function handlePreview(index) {
+  emit('file-preview', index);
 }
 
 /**

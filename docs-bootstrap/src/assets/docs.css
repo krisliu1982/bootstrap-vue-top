@@ -2180,6 +2180,7 @@ main [tabindex="0"] {
     word-break: break-all;
 }
 
-.table th {
-    word-break: keep-all;
+.table th,
+.table td {
+  word-break: keep-all;
 }
