@@ -4,7 +4,7 @@
       <div class="d-flex align-items-center" style="height: 3rem">
         <a href="/"><img src="/favicon.svg" alt="bootstrap-vue-top" width="24" height="24" /></a>
         <small class="ms-2">v5.3</small>
-        <div class="d-none d-lg-block">
+        <div class="d-none d-lg-block ms-auto">
           <div class="d-flex align-items-center gap-3">
             <a class="link-body-emphasis text-decoration-none" href="https://getbootstrap.com/"
               target="_blank">Bootstrap</a>
@@ -96,11 +96,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-import data from '@/data/data.js';
-
-handleFontSizeChange(getFontSize());
-handleThemeChange(getTheme());
+import { ref, onMounted } from 'vue';
+import data from '@/assets/data.js';
 
 function getFontSize() {
   const storedFontSize = localStorage.getItem('font-size');
@@ -139,10 +136,12 @@ function handleThemeChange(_theme) {
   theme.value = _theme;
 
   document.documentElement.setAttribute('data-bs-theme', _theme);
-  document.getElementById('pagefind').setAttribute('data-pf-theme', _theme);
 
   localStorage.setItem('theme', _theme);
 }
+
+handleFontSizeChange(getFontSize());
+handleThemeChange(getTheme());
 
 const offcanvasNavRef = ref(null);
 const offcanvasSidebarRef = ref(null);

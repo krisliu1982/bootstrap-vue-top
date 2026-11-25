@@ -4,7 +4,7 @@ import 'nprogress/nprogress.css';
 
 NProgress.configure({ showSpinner: false });
 
-import { flatPages } from '@/data/data.js';
+import { flatPages } from '@/assets/data.js';
 
 const routes = [
   {
