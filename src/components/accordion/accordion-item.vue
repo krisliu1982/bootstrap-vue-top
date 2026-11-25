@@ -1,6 +1,6 @@
 <template></template>
 <script setup>
-import { inject, onMounted, onBeforeUnmount, useId, useSlots, nextTick } from 'vue';
+import { inject, onBeforeUnmount, useId, useSlots } from 'vue';
 import { items_injection_key } from './accordion-keys.js';
 import { Collapse } from 'bootstrap'
 
@@ -18,12 +18,6 @@ const keyId = useId();
 
 const body = slots.default ? slots.default : null;
 items.push({ keyId, header: props.header, body });
-
-onMounted(async () => {
-  await nextTick();
-  const el = document.getElementById(keyId);
-  if (el) new Collapse(el, { toggle: false });
-})
 
 onBeforeUnmount(() => {
   const el = document.getElementById(keyId);

@@ -1,6 +1,8 @@
 <template>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
+<h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+<h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+<h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+<h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+<h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+<h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
 </template>

@@ -160,3 +160,17 @@ main [tabindex="0"] {
   vertical-align: -0.125em;
   fill: currentColor;
 }
+
+.docs-example {
+  border:1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  padding:1rem;
+  margin: 0 0 1rem 0;
+}
+
+.docs-code pre {
+  border:1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  padding:1rem;
+  margin: 0;
+}

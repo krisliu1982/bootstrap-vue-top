@@ -2172,12 +2172,8 @@ main [tabindex="0"] {
 }
 
 .bd-code>pre {
-    padding: 1rem;
-    margin-bottom: 0;
-    overflow-x: auto;
-    max-width: 100%;
-    white-space: pre-wrap;
-    word-break: break-all;
+  padding:1rem;
+  margin: 0;
 }
 
 .table th {
