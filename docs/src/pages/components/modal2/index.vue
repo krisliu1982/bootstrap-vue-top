@@ -1,43 +1,66 @@
 <template>
-  <h1>Modal2 模态框</h1>
+    <article class="docs-content">
+
+  <h1>Modal2 模态框2</h1>
   <p class="lead">支持打开多个模态框和拖动。适合桌面端复杂操作的需要。</p>
 
-  <h2>基础用法</h2>
+    <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
   <p>通过 <code>v-model</code> 属性来切换一个模态框。<code>true</code> 为打开，<code>false</code> 为关闭。</p>
-  <BasicUsage />
+    <div class="docs-example">
+      <BasicUsage />
+    </div>
+    <CodeWrapper :code="BasicUsageCode" />
 
-  <h2>打开多个</h2>
+      <h2 id="open-many">打开多个<a class="anchor-link" href="#open-many" aria-label="打开多个"></a></h2>
   <p>打开多个模块框，屏蔽层会叠加。</p>
-  <OpenMany />
+      <div class="docs-example">
+        <OpenMany />
+    </div>
+    <CodeWrapper :code="OpenManyCode" />
 
-  <h2>底部插槽</h2>
+    <h2 id="footer-slot">底部插槽<a class="anchor-link" href="#footer-slot" aria-label="底部插槽"></a></h2>
   <p>通过 <code>#footer</code> 插槽来扩展组件底部内容。</p>
-  <FooterSlot />
+    <div class="docs-example">
+      <FooterSlot />
+    </div>
+    <CodeWrapper :code="FooterSlotCode" />
 
-  <h2>静态背景</h2>
+    <h2 id="static-background">静态背景<a class="anchor-link" href="#static-background" aria-label="静态背景"></a></h2>
   <p>
     设置
     <code>backdrop</code> 属性为 <code>static</code> 时，点击模态框外部并不会导致模态框关闭。
   </p>
-  <StaticBackground />
+    <div class="docs-example">
+      <StaticBackground />
+    </div>
+    <CodeWrapper :code="StaticBackgroundCode" />
 
-  <h2>大量内容</h2>
+    <h2 id="long-content">大量内容<a class="anchor-link" href="#long-content" aria-label="大量内容"></a></h2>
   <p>当模态框的长度超出用户的视口或设备范围时，它们会独立于页面本身进行滚动。</p>
-  <LongContent />
+    <div class="docs-example">
+      <LongContent />
+    </div>
+    <CodeWrapper :code="LongContentCode" />
   <p>
     添加
     <code>.modal-dialog-scrollable</code> 样式类到 <code>dialog-class</code> 属性上，来实现对模态框主体内容的滚动操作。
   </p>
-  <LongContentScrollable />
+    <div class="docs-example">
+      <LongContentScrollable />
+    </div>
+    <CodeWrapper :code="LongContentScrollableCode" />
 
-  <h2>垂直居中</h2>
+    <h2 id="align-center">垂直居中<a class="anchor-link" href="#align-center" aria-label="垂直居中"></a></h2>
   <p>
     添加
     <code>.modal-dialog-centered</code> 样式类到 <code>dialog-class</code> ，即可使模态框在垂直方向上实现居中显示。
   </p>
-  <AlignCenter />
+    <div class="docs-example">
+      <AlignCenter />
+    </div>
+    <CodeWrapper :code="AlignCenterCode" />
 
-  <h2>可选尺寸</h2>
+    <h2 id="optional-size">可选尺寸<a class="anchor-link" href="#optional-size" aria-label="可选尺寸"></a></h2>
   <p>
     模态框有四种可选的尺寸，可通过修饰符类将其应用于
     <code>dialog-class</code>
@@ -79,9 +102,12 @@
       </tr>
     </tbody>
   </table>
-  <OptionalSize />
+    <div class="docs-example">
+      <OptionalSize />
+    </div>
+    <CodeWrapper :code="OptionalSizeCode" />
 
-  <h2>全屏模态框</h2>
+    <h2 id="fullscreen">全屏模态框<a class="anchor-link" href="#fullscreen" aria-label="全屏模态框"></a></h2>
   <p>通过在 <code>dialog-class</code> 属性上设置修饰类来实现。</p>
   <table class="table">
     <thead>
@@ -117,15 +143,41 @@
       </tr>
     </tbody>
   </table>
-  <Fullscreen />
+    <div class="docs-example">
+      <Fullscreen />
+    </div>
+    <CodeWrapper :code="FullscreenCode" />
 
-  <h2>关闭时销毁</h2>
+      <h2 id="fullscreen">关闭时销毁<a class="anchor-link" href="#fullscreen" aria-label="关闭时销毁"></a></h2>
   <p>通过设置 <code>destory</code> 属性为 <code>true</code> 来实现。</p>
-  <CloseDestroy />
+  <div class="docs-example">
+      <CloseDestroy />
+    </div>
+    <CodeWrapper :code="CloseDestroyCode" />
 
-  <h2>可拖拽</h2>
+        <h2 id="draggable">可拖拽<a class="anchor-link" href="#draggable" aria-label="可拖拽"></a></h2>
   <p>通过设置 <code>draggable</code> 属性为 <code>true</code> 来实现，需按住头部进行拖动。如果 <code>:destory="true"</code>， 切换时位置会重置。</p>
-  <Draggable />
+    <div class="docs-example">
+      <Draggable />
+    </div>
+    <CodeWrapper :code="DraggableCode" />
+  </article>
+
+    <nav class="docs-toc" aria-label="本页目录">
+    <ul>
+      <li><a href="#basic-usage">基础用法</a></li>
+            <li><a href="#open-many">打开多个</a></li>
+      <li><a href="#footer-slot">底部插槽</a></li>
+      <li><a href="#static-background">静态背景</a></li>
+      <li><a href="#long-content">大量内容</a></li>
+      <li><a href="#align-center">垂直居中</a></li>
+      <li><a href="#optional-size">可选尺寸</a></li>
+      <li><a href="#fullscreen">全屏模态框</a></li>
+            <li><a href="#close-destroy">关闭时销毁</a></li>
+                        <li><a href="#draggable">可拖拽</a></li>
+
+    </ul>
+  </nav>
 </template>
 
 <script setup>
@@ -140,4 +192,16 @@ import LongContent from './long-content.vue';
 import OpenMany from './open-many.vue';
 import OptionalSize from './optional-size.vue';
 import StaticBackground from './static-background.vue';
+
+import AlignCenterCode from './align-center.vue?raw';
+import BasicUsageCode from './basic-usage.vue?raw';
+import CloseDestroyCode from './close-destroy.vue?raw';
+import DraggableCode from './draggable.vue?raw';
+import FooterSlotCode from './footer-slot.vue?raw';
+import FullscreenCode from './fullscreen.vue?raw';
+import LongContentScrollableCode from './long-content-scrollable.vue?raw';
+import LongContentCode from './long-content.vue?raw';
+import OpenManyCode from './open-many.vue?raw';
+import OptionalSizeCode from './optional-size.vue?raw';
+import StaticBackgroundCode from './static-background.vue?raw';
 </script>
