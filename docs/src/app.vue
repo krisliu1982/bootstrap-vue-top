@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-    <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
+  <div class="sticky-top bg-body-tertiary border-bottom border-body d-lg-none">
     <div class="container-xxl">
       <div class="d-flex justify-content-between align-items-center py-2">
         <a href="#" role="button" class="link-body-emphasis text-decoration-none" @click.prevent="offcanvasSidebarRef.toggle()"><bi-list /> 菜单</a>
@@ -79,7 +79,6 @@
       <a class="list-group-item list-group-item-action" href="https://cn.vuejs.org/" target="_blank">Vue</a>
     </div>
   </bv-offcanvas>
-
 </template>
 
 <script setup>

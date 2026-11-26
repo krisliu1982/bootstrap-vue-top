@@ -367,7 +367,7 @@
     />
     <h3 id="via-javascript">通过 JavaScript<a class="anchor-link" href="#via-javascript" aria-label="通过 JavaScript 链接"></a></h3>
     <CodeWrapper
-      code="const scrollSpy = new bootstrap.ScrollSpy(articleEl.body, {
+      code="const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: &#39;#navbar-example&#39;
 })
 "

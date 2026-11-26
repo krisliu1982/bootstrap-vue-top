@@ -1,181 +1,179 @@
 <template>
-    <article class="docs-content">
-
-  <h1>Modal2 模态框2</h1>
-  <p class="lead">支持打开多个模态框和拖动。适合桌面端复杂操作的需要。</p>
+  <article class="docs-content">
+    <h1>Modal2 模态框2</h1>
+    <p class="lead">支持打开多个模态框和拖动。适合桌面端复杂操作的需要。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
-  <p>通过 <code>v-model</code> 属性来切换一个模态框。<code>true</code> 为打开，<code>false</code> 为关闭。</p>
+    <p>通过 <code>v-model</code> 属性来切换一个模态框。<code>true</code> 为打开，<code>false</code> 为关闭。</p>
     <div class="docs-example">
       <BasicUsage />
     </div>
     <CodeWrapper :code="BasicUsageCode" />
 
-      <h2 id="open-many">打开多个<a class="anchor-link" href="#open-many" aria-label="打开多个"></a></h2>
-  <p>打开多个模块框，屏蔽层会叠加。</p>
-      <div class="docs-example">
-        <OpenMany />
+    <h2 id="open-many">打开多个<a class="anchor-link" href="#open-many" aria-label="打开多个"></a></h2>
+    <p>打开多个模块框，屏蔽层会叠加。</p>
+    <div class="docs-example">
+      <OpenMany />
     </div>
     <CodeWrapper :code="OpenManyCode" />
 
     <h2 id="footer-slot">底部插槽<a class="anchor-link" href="#footer-slot" aria-label="底部插槽"></a></h2>
-  <p>通过 <code>#footer</code> 插槽来扩展组件底部内容。</p>
+    <p>通过 <code>#footer</code> 插槽来扩展组件底部内容。</p>
     <div class="docs-example">
       <FooterSlot />
     </div>
     <CodeWrapper :code="FooterSlotCode" />
 
     <h2 id="static-background">静态背景<a class="anchor-link" href="#static-background" aria-label="静态背景"></a></h2>
-  <p>
-    设置
-    <code>backdrop</code> 属性为 <code>static</code> 时，点击模态框外部并不会导致模态框关闭。
-  </p>
+    <p>
+      设置
+      <code>backdrop</code> 属性为 <code>static</code> 时，点击模态框外部并不会导致模态框关闭。
+    </p>
     <div class="docs-example">
       <StaticBackground />
     </div>
     <CodeWrapper :code="StaticBackgroundCode" />
 
     <h2 id="long-content">大量内容<a class="anchor-link" href="#long-content" aria-label="大量内容"></a></h2>
-  <p>当模态框的长度超出用户的视口或设备范围时，它们会独立于页面本身进行滚动。</p>
+    <p>当模态框的长度超出用户的视口或设备范围时，它们会独立于页面本身进行滚动。</p>
     <div class="docs-example">
       <LongContent />
     </div>
     <CodeWrapper :code="LongContentCode" />
-  <p>
-    添加
-    <code>.modal-dialog-scrollable</code> 样式类到 <code>dialog-class</code> 属性上，来实现对模态框主体内容的滚动操作。
-  </p>
+    <p>
+      添加
+      <code>.modal-dialog-scrollable</code> 样式类到 <code>dialog-class</code> 属性上，来实现对模态框主体内容的滚动操作。
+    </p>
     <div class="docs-example">
       <LongContentScrollable />
     </div>
     <CodeWrapper :code="LongContentScrollableCode" />
 
     <h2 id="align-center">垂直居中<a class="anchor-link" href="#align-center" aria-label="垂直居中"></a></h2>
-  <p>
-    添加
-    <code>.modal-dialog-centered</code> 样式类到 <code>dialog-class</code> ，即可使模态框在垂直方向上实现居中显示。
-  </p>
+    <p>
+      添加
+      <code>.modal-dialog-centered</code> 样式类到 <code>dialog-class</code> ，即可使模态框在垂直方向上实现居中显示。
+    </p>
     <div class="docs-example">
       <AlignCenter />
     </div>
     <CodeWrapper :code="AlignCenterCode" />
 
     <h2 id="optional-size">可选尺寸<a class="anchor-link" href="#optional-size" aria-label="可选尺寸"></a></h2>
-  <p>
-    模态框有四种可选的尺寸，可通过修饰符类将其应用于
-    <code>dialog-class</code>
-    属性中。这些尺寸会在特定的视口宽度断点处生效，以避免在较窄的视口中出现水平滚动条。
-  </p>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Size</th>
-        <th>Class</th>
-        <th>Modal max-width</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Small</td>
-        <td><code>.modal-sm</code></td>
-        <td><code>300px</code></td>
-      </tr>
-      <tr>
-        <td>Default</td>
-        <td><span class="text-body-secondary">None</span></td>
-        <td><code>500px</code></td>
-      </tr>
-      <tr>
-        <td>Large</td>
-        <td><code>.modal-lg</code></td>
-        <td><code>800px</code></td>
-      </tr>
-      <tr>
-        <td>Extra large</td>
-        <td><code>.modal-xl</code></td>
-        <td><code>1140px</code></td>
-      </tr>
-      <tr>
-        <td>Extra extra large</td>
-        <td><code>.modal-xxl</code></td>
-        <td><code>1320px</code></td>
-      </tr>
-    </tbody>
-  </table>
+    <p>
+      模态框有四种可选的尺寸，可通过修饰符类将其应用于
+      <code>dialog-class</code>
+      属性中。这些尺寸会在特定的视口宽度断点处生效，以避免在较窄的视口中出现水平滚动条。
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Size</th>
+          <th>Class</th>
+          <th>Modal max-width</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small</td>
+          <td><code>.modal-sm</code></td>
+          <td><code>300px</code></td>
+        </tr>
+        <tr>
+          <td>Default</td>
+          <td><span class="text-body-secondary">None</span></td>
+          <td><code>500px</code></td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td><code>.modal-lg</code></td>
+          <td><code>800px</code></td>
+        </tr>
+        <tr>
+          <td>Extra large</td>
+          <td><code>.modal-xl</code></td>
+          <td><code>1140px</code></td>
+        </tr>
+        <tr>
+          <td>Extra extra large</td>
+          <td><code>.modal-xxl</code></td>
+          <td><code>1320px</code></td>
+        </tr>
+      </tbody>
+    </table>
     <div class="docs-example">
       <OptionalSize />
     </div>
     <CodeWrapper :code="OptionalSizeCode" />
 
     <h2 id="fullscreen">全屏模态框<a class="anchor-link" href="#fullscreen" aria-label="全屏模态框"></a></h2>
-  <p>通过在 <code>dialog-class</code> 属性上设置修饰类来实现。</p>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Class</th>
-        <th>Availability</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>.modal-fullscreen</code></td>
-        <td>Always</td>
-      </tr>
-      <tr>
-        <td><code>.modal-fullscreen-sm-down</code></td>
-        <td><code>576px</code></td>
-      </tr>
-      <tr>
-        <td><code>.modal-fullscreen-md-down</code></td>
-        <td><code>768px</code></td>
-      </tr>
-      <tr>
-        <td><code>.modal-fullscreen-lg-down</code></td>
-        <td><code>992px</code></td>
-      </tr>
-      <tr>
-        <td><code>.modal-fullscreen-xl-down</code></td>
-        <td><code>1200px</code></td>
-      </tr>
-      <tr>
-        <td><code>.modal-fullscreen-xxl-down</code></td>
-        <td><code>1400px</code></td>
-      </tr>
-    </tbody>
-  </table>
+    <p>通过在 <code>dialog-class</code> 属性上设置修饰类来实现。</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>.modal-fullscreen</code></td>
+          <td>Always</td>
+        </tr>
+        <tr>
+          <td><code>.modal-fullscreen-sm-down</code></td>
+          <td><code>576px</code></td>
+        </tr>
+        <tr>
+          <td><code>.modal-fullscreen-md-down</code></td>
+          <td><code>768px</code></td>
+        </tr>
+        <tr>
+          <td><code>.modal-fullscreen-lg-down</code></td>
+          <td><code>992px</code></td>
+        </tr>
+        <tr>
+          <td><code>.modal-fullscreen-xl-down</code></td>
+          <td><code>1200px</code></td>
+        </tr>
+        <tr>
+          <td><code>.modal-fullscreen-xxl-down</code></td>
+          <td><code>1400px</code></td>
+        </tr>
+      </tbody>
+    </table>
     <div class="docs-example">
       <Fullscreen />
     </div>
     <CodeWrapper :code="FullscreenCode" />
 
-      <h2 id="fullscreen">关闭时销毁<a class="anchor-link" href="#fullscreen" aria-label="关闭时销毁"></a></h2>
-  <p>通过设置 <code>destory</code> 属性为 <code>true</code> 来实现。</p>
-  <div class="docs-example">
+    <h2 id="fullscreen">关闭时销毁<a class="anchor-link" href="#fullscreen" aria-label="关闭时销毁"></a></h2>
+    <p>通过设置 <code>destory</code> 属性为 <code>true</code> 来实现。</p>
+    <div class="docs-example">
       <CloseDestroy />
     </div>
     <CodeWrapper :code="CloseDestroyCode" />
 
-        <h2 id="draggable">可拖拽<a class="anchor-link" href="#draggable" aria-label="可拖拽"></a></h2>
-  <p>通过设置 <code>draggable</code> 属性为 <code>true</code> 来实现，需按住头部进行拖动。如果 <code>:destory="true"</code>， 切换时位置会重置。</p>
+    <h2 id="draggable">可拖拽<a class="anchor-link" href="#draggable" aria-label="可拖拽"></a></h2>
+    <p>通过设置 <code>draggable</code> 属性为 <code>true</code> 来实现，需按住头部进行拖动。如果 <code>:destory="true"</code>， 切换时位置会重置。</p>
     <div class="docs-example">
       <Draggable />
     </div>
     <CodeWrapper :code="DraggableCode" />
   </article>
 
-    <nav class="docs-toc" aria-label="本页目录">
+  <nav class="docs-toc" aria-label="本页目录">
     <ul>
       <li><a href="#basic-usage">基础用法</a></li>
-            <li><a href="#open-many">打开多个</a></li>
+      <li><a href="#open-many">打开多个</a></li>
       <li><a href="#footer-slot">底部插槽</a></li>
       <li><a href="#static-background">静态背景</a></li>
       <li><a href="#long-content">大量内容</a></li>
       <li><a href="#align-center">垂直居中</a></li>
       <li><a href="#optional-size">可选尺寸</a></li>
       <li><a href="#fullscreen">全屏模态框</a></li>
-            <li><a href="#close-destroy">关闭时销毁</a></li>
-                        <li><a href="#draggable">可拖拽</a></li>
-
+      <li><a href="#close-destroy">关闭时销毁</a></li>
+      <li><a href="#draggable">可拖拽</a></li>
     </ul>
   </nav>
 </template>

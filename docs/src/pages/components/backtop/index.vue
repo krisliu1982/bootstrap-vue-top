@@ -11,8 +11,6 @@
       <BasicUsage />
     </div>
     <CodeWrapper :code="BasicUsageCode" />
-
-    <div style="height: 500px"></div>
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">

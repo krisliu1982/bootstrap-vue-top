@@ -150,7 +150,6 @@
       <DynamicContent />
     </div>
     <CodeWrapper :code="DynamicContentCode" />
-
   </article>
 
   <nav class="docs-toc" aria-label="本页目录">
