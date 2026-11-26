@@ -1,7 +1,8 @@
 import './styles/index.scss';
 
-import vTooltip from './components/tooltip/tooltip.js';
 import vPopover from './components/popover/popover.js';
+import vScrollspy from './components/scrollspy/scrollspy.js';
+import vTooltip from './components/tooltip/tooltip.js';
 
 import BvAccordion from './components/accordion/accordion.vue';
 import BvAccordionItem from './components/accordion/accordion-item.vue';
@@ -25,8 +26,10 @@ import BvFileUploader from './components/uploader/file-uploader.vue';
 
 export default {
   install: (app, options) => {
+        app.directive('popover', vPopover);
+        app.directive('scrollspy', vScrollspy);
     app.directive('tooltip', vTooltip);
-    app.directive('popover', vPopover);
+
     app.component('BvAccordion', BvAccordion).component('BvAccordionItem', BvAccordionItem);
     app.component('BvBacktop', BvBacktop);
     app.component('BvCarousel', BvCarousel);

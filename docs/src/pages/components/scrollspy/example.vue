@@ -19,7 +19,7 @@
       </li>
     </ul>
   </nav>
-  <div
+  <div v-scrollspy
     data-bs-spy="scroll"
     data-bs-target="#navbar-example2"
     data-bs-root-margin="0px 0px -40%"
