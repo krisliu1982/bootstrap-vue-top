@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Modal 模态框</h1>
-    <p class="lead">使用 Vue 模态框组件为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。</p>
+    <p class="lead">为你的站点添加对话框，用于灯箱、用户通知或完全自定义的内容。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/modal" target="_blank">Bootstrap Modal</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>调用组件 <code>toggle</code> 方法来切换一个模态框。</p>

@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Tabs 标签页</h1>
-    <p class="lead">分隔内容上有关联但属于不同类别的数据集合。</p>
+    <p class="lead">分隔内容上有关联但属于不同类别的数据集合。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/navs-tabs" target="_blank">Bootstrap Tabs</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>组件默认激活第一个标签页，通过 <code>active-index</code> 属性来指定当前激活的标签页。</p>

@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Placeholder 占位符</h1>
-    <p class="lead">为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。</p>
+    <p class="lead">为你的组件或页面使用加载占位符（骨架屏加载器），以表示某些内容可能仍在加载中。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/placeholders" target="_blank">Bootstrap Placeholder</a>。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>

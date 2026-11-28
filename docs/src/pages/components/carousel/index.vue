@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Carousel 轮播图</h1>
-    <p class="lead">用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播图一样。</p>
+    <p class="lead">用于在元素（图像或文本幻灯片）之间循环切换的幻灯片组件，就像轮播图一样。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/carousel" target="_blank">Bootstrap Carousel</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>在组件中通过 <code>items</code> 属性设置轮播图数据。</p>

@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Table 表格</h1>
-    <p class="lead">用于展示表格数据。</p>
+    <p class="lead">用于展示表格数据。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/content/tables" target="_blank">Bootstrap Table</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>

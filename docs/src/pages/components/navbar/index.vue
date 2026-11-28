@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Navbar 导航栏</h1>
-    <p class="lead">Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。</p>
+    <p class="lead">Bootstrap 强大且响应式的导航头部——导航栏的文档与示例。包含对品牌、导航等内容的支持，也包括对我们折叠插件的支持。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/navbar" target="_blank">Bootstrap Navbar</a>。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>

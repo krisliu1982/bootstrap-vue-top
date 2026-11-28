@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Pagination 分页</h1>
-    <p class="lead">数据分页导航。</p>
+    <p class="lead">用于展示分页、表示一系列相关内容分布在多个页面上的文档和示例。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/pagination" target="_blank">Bootstrap Pagination</a>。</p>
 
     <h2 id="base-mode">基础模式<a class="anchor-link" href="#base-mode" aria-label="基础模式"></a></h2>
     <p>设置 <code>mode="base"</code>。</p>

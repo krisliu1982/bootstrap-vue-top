@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Accordion 折叠面板</h1>
-    <p class="lead">可垂直折叠的折叠面板。</p>
+    <p class="lead">可垂直折叠的折叠面板。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/accordion" target="_blank">Bootstrap Accordion</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>默认展开单个面板。通过 <code>active-index</code> 属性设置初始打开第几个面板。</p>

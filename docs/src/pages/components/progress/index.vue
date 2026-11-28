@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Progress 进度条</h1>
-    <p class="lead">使用 Bootstrap 自定义进度条的文档和示例，包括对堆叠条形、动画背景和文本标签的支持。</p>
+    <p class="lead">使用 Bootstrap 自定义进度条的文档和示例，包括对堆叠条形、动画背景和文本标签的支持。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/progress" target="_blank">Bootstrap Progress</a>。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>

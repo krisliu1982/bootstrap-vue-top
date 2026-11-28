@@ -1,12 +1,12 @@
 <template>
   <article class="docs-content">
     <h1>Dropdown 下拉菜单</h1>
-    <p class="lead">使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。</p>
+    <p class="lead">使用 Bootstrap 下拉菜单插件切换上下文浮层，以显示链接列表等内容。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/dropdowns" target="_blank">Bootstrap Dropdown</a>。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
     <p>
-      我们对下拉菜单没有提供扩展，其官方 API 可直接使用。了解更多请阅读
-      <a href="https://bs53.bootstrap-vue.top/components/dropdowns" target="_blank">Bootstrap Dropdown</a>。
+      我们对下拉菜单没有提供扩展，其官方 API 可直接使用。
     </p>
     <div class="docs-example">
       <Example />

@@ -1,7 +1,8 @@
 <template>
   <article class="docs-content">
     <h1>Offcanvas 抽屉</h1>
-    <p class="lead">在项目中构建用于导航、购物车等的隐藏抽屉。</p>
+    <p class="lead">在项目中构建用于导航、购物车等的隐藏抽屉。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/offcanvas" target="_blank">Bootstrap Offcanvas</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>调用组件 <code>toggle</code> 方法来打开一个抽屉。</p>

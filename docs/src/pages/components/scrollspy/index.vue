@@ -22,7 +22,7 @@
       </li>
       <li>
         <p>
-          在导航上添加 <code>v-scrollspy</code> 指令并设置指令值为滚动容器 <code>id</code>。如果可滚动容器内部没有可聚焦元素，请务必同时包含
+          在导航上添加 <code>v-scrollspy</code> 指令并设置指令值为滚动容器 <code>id</code>，如果不设置指令值则监听容器为 <code>&lt;body&gt;</code>。如果可滚动容器内部没有可聚焦元素，请务必同时包含
           <code>tabindex="0"</code> 以确保键盘可访问性。
         </p>
       </li>
