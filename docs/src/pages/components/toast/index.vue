@@ -1,13 +1,14 @@
 <template>
   <article class="docs-content">
     <h1>Toast 消息提示</h1>
-    <p class="lead">通过弹出提示的方式向您的访客发送通知，这是一种简洁且易于自定义的提醒信息。</p>
+    <p class="lead">通过弹出提示的方式向您的访客发送通知，这是一种简洁且易于自定义的提醒信息。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/toasts" target="_blank">Bootstrap Toasts</a>。</p>
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>
-      通过提供 <code>toast</code> 方法，它接受一个 <code>Object</code> 作为其参数。 通过 <code>title</code> 和 <code>message</code> 属性来设置通知的标题和正文。 默认情况下，通知在 5000
-      毫秒后自动关闭，但你可以通过 <code>duration</code> 属性来自定义通知的展示时间。 如果你将它设置为 <code>0</code>，那么通知将不会自动关闭。 需要注意的是 <code>duration</code> 属性接收一个
-      <code>Number</code>，单位为毫秒。
+      通过提供 <code>toast</code> 方法，它接受一个 <code>Object</code> 作为其参数。 通过 <code>title</code> 和 <code>message</code> 属性来设置通知的标题和正文。
+      默认情况下，通知在 5000 毫秒后自动关闭，但你可以通过 <code>duration</code> 属性来自定义通知的展示时间。 如果你将它设置为
+      <code>0</code>，那么通知将不会自动关闭。 需要注意的是 <code>duration</code> 属性接收一个 <code>Number</code>，单位为毫秒。
     </p>
     <div class="docs-example"><BasicUsage /></div>
     <CodeWrapper :code="BasicUsageCode" />
@@ -18,7 +19,10 @@
     <CodeWrapper :code="OptionalTypeCode" />
 
     <h2 id="optional-position">可选位置<a class="anchor-link" href="#optional-position" aria-label="可选位置"></a></h2>
-    <p>通过 <code>position</code> 属性来设置位置， 支持五个选项: <code>top-right | top-left | top-center | bottom-right | bottom-left</code>， 默认为 <code>top-right</code>。</p>
+    <p>
+      通过 <code>position</code> 属性来设置位置， 支持五个选项: <code>top-right | top-left | top-center | bottom-right | bottom-left</code>， 默认为
+      <code>top-right</code>。
+    </p>
     <div class="docs-example"><OptionalPosition /></div>
     <CodeWrapper :code="OptionalPositionCode" />
 

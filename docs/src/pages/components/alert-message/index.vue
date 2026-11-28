@@ -11,7 +11,10 @@
     <CodeWrapper :code="BasicUsageCode" />
 
     <h2 id="optional-style">可选样式<a class="anchor-link" href="#optional-style" aria-label="可选样式"></a></h2>
-    <p>通过 <code>type</code> 属性设置样式。提供八种样式为：<code>primary | secondary | success | danger | warning | info | light | dark</code>，默认为 <code>info</code>。</p>
+    <p>
+      通过 <code>type</code> 属性设置样式。提供八种样式为：<code>primary | secondary | success | danger | warning | info | light | dark</code>，默认为
+      <code>info</code>。
+    </p>
     <div class="docs-example"><OptionalStyle /></div>
     <CodeWrapper :code="OptionalStyleCode" />
 

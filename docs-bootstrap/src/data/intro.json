@@ -108,8 +108,8 @@
     "description": "使用 Bootstrap 加载动画指示组件或页面的加载状态，完全由 HTML 和 CSS 构建，无需 JavaScript。"
   },
   "/components/toasts": {
-    "title": "轻提示",
-    "description": "使用轻提示向访客推送通知，它是一种轻量且易于自定义的提示消息。"
+    "title": "消息提示",
+    "description": "使用消息提示向访客推送通知，它是一种轻量且易于自定义的提示消息。"
   },
   "/components/tooltips": {
     "title": "文字提示",

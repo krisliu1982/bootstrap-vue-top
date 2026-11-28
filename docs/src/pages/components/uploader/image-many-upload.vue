@@ -1,5 +1,13 @@
 <template>
-  <BvImageManyUploader width="160px" height="160px" :img-urls="imageUrls" sortable @file-change="handleImageManyChange" @file-remove="handleImageManyRemove" @file-preview="handleImageManyPreview">
+  <BvImageManyUploader
+    width="160px"
+    height="160px"
+    :img-urls="imageUrls"
+    sortable
+    @file-change="handleImageManyChange"
+    @file-remove="handleImageManyRemove"
+    @file-preview="handleImageManyPreview"
+  >
     <template #tip>
       <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
     </template>

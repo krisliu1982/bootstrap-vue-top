@@ -18,7 +18,8 @@
       设置 <code>ride</code> 属性为 <code>carousel</code>，使轮播图在页面加载时自动播放。通过
       <code>interval</code> 属性来控制自动播放延时时间。默认鼠标悬停在轮播图上时，自动播放的轮播图会自动暂停。如果设置 <code>pause</code> 属性为
       <code>false</code>，则鼠标悬停在轮播图上不会暂停它。在支持
-      <a href="https://www.w3.org/TR/page-visibility/">页面可见性API</a> 的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化），轮播图将停止循环播放。
+      <a href="https://www.w3.org/TR/page-visibility/">页面可见性API</a>
+      的浏览器中，当网页对用户不可见时（例如浏览器标签页处于非活动状态，或浏览器窗口被最小化），轮播图将停止循环播放。
     </p>
     <div class="docs-example"><AutoPlay /></div>
     <CodeWrapper :code="AutoPlayCode" />

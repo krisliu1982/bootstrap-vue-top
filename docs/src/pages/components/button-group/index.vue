@@ -4,7 +4,10 @@
     <p class="lead">将一系列按钮组合在同一行中，或将它们堆叠成一列。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
-    <p>我们对按钮组没有提供扩展，其官方 API 可直接使用。了解更多请阅读 <a href="https://bs53.bootstrap-vue.top/components/buttons" target="_blank">Bootstrap ButtonGroup</a>。</p>
+    <p>
+      我们对按钮组没有提供扩展，其官方 API 可直接使用。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/buttons" target="_blank">Bootstrap ButtonGroup</a>。
+    </p>
     <div class="docs-example">
       <Example />
     </div>

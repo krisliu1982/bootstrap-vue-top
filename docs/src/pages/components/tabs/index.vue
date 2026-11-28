@@ -9,7 +9,10 @@
     <CodeWrapper :code="BasicUsageCode" />
 
     <h2 id="horizontal">水平对齐<a class="anchor-link" href="#horizontal" aria-label="水平对齐"></a></h2>
-    <p>通过 <code>tabs-class</code> 属性设置水平对齐方式。<code>.justify-content-center</code> 样式类为居中对齐，<code>.justify-content-end</code> 样式类为右对齐。</p>
+    <p>
+      通过 <code>tabs-class</code> 属性设置水平对齐方式。<code>.justify-content-center</code> 样式类为居中对齐，<code>.justify-content-end</code>
+      样式类为右对齐。
+    </p>
     <div class="docs-example"><Horizontal /></div>
     <CodeWrapper :code="HorizontalCode" />
 
@@ -25,8 +28,8 @@
 
     <h2 id="underline-style">下划线样式<a class="anchor-link" href="#underline-style" aria-label="下划线样式"></a></h2>
     <p>
-      添加 <code>.nav-underline</code> 样式类到 <code>tabs-class</code> 属性上，会展现下划线样式。默认标签项间距为 <code>1rem</code>，添加 <code>--bs-nav-underline-gap</code> CSS 变量到
-      <code>tabs-style</code> 属性上来改变标签项间距。
+      添加 <code>.nav-underline</code> 样式类到 <code>tabs-class</code> 属性上，会展现下划线样式。默认标签项间距为 <code>1rem</code>，添加
+      <code>--bs-nav-underline-gap</code> CSS 变量到 <code>tabs-style</code> 属性上来改变标签项间距。
     </p>
     <div class="docs-example"><UnderlineStyle /></div>
     <CodeWrapper :code="UnderlineStyleCode" />

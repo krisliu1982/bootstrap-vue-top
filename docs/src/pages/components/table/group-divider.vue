@@ -1,5 +1,11 @@
 <template>
-  <bv-table :data="tableData" :tfoot-data="['-', '-', 239]" thead-class="table-group-divider" tbody-class="table-group-divider" tfoot-class="table-group-divider">
+  <bv-table
+    :data="tableData"
+    :tfoot-data="['-', '-', 239]"
+    thead-class="table-group-divider"
+    tbody-class="table-group-divider"
+    tfoot-class="table-group-divider"
+  >
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
     <bv-table-col header="Address" field="address" />

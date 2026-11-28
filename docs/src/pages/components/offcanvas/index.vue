@@ -22,7 +22,8 @@
 
     <h2 id="placement-size">位置和大小<a class="anchor-link" href="#placement-size" aria-label="位置和大小"></a></h2>
     <p>
-      通过 <code>offcanvas-class</code> 属性设置抽屉的位置, 预设四个方向的样式类 <code>.offcanvas-start | .offcanvas-end | .offcanvas-top | .offcanvas-bottom</code>。通过 <code>offcanvas-style</code>
+      通过 <code>offcanvas-class</code> 属性设置抽屉的位置, 预设四个方向的样式类
+      <code>.offcanvas-start | .offcanvas-end | .offcanvas-top | .offcanvas-bottom</code>。通过 <code>offcanvas-style</code>
       属性设置 CSS 变量来改变高度和宽度。
     </p>
     <div class="docs-example">

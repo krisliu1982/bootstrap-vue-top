@@ -1,5 +1,12 @@
 <template>
-  <bv-table :data="tableData" :tfoot-data="['-', '-', 259]" table-class="table-light" thead-class="table-secondary" :tbody-tr-class="tbodyTrClass" tfoot-class="table-primary">
+  <bv-table
+    :data="tableData"
+    :tfoot-data="['-', '-', 259]"
+    table-class="table-light"
+    thead-class="table-secondary"
+    :tbody-tr-class="tbodyTrClass"
+    tfoot-class="table-primary"
+  >
     <bv-table-col header="Code" field="code" />
     <bv-table-col header="Name" field="name" />
     <bv-table-col header="Address" field="address" />

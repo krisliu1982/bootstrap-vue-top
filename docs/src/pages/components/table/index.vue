@@ -5,8 +5,8 @@
 
     <h2 id="basic-usage">基础用法<a class="anchor-link" href="#basic-usage" aria-label="基础用法"></a></h2>
     <p>
-      在 <code>bv-table</code>组件中，通过 <code>data</code> 属性设置表格数据。在 <code>bv-table-col</code> 组件中，通过 <code>field</code> 属性设置对应对象中的字段名即可填入数据，通过
-      <code>header</code> 属性定义表格的列名，通过 <code>width</code> 属性定义列宽。
+      在 <code>bv-table</code>组件中，通过 <code>data</code> 属性设置表格数据。在 <code>bv-table-col</code> 组件中，通过
+      <code>field</code> 属性设置对应对象中的字段名即可填入数据，通过 <code>header</code> 属性定义表格的列名，通过 <code>width</code> 属性定义列宽。
     </p>
     <p>在列中可以通过模板自定义的显示内容，通过 <code>slotProps</code> 可以获得行数据（<code>item</code>）和行序号（<code>index</code>）。</p>
     <div class="docs-example"><BasicUsage /></div>
@@ -16,7 +16,9 @@
     <p>通过 <code>table-class、thead-class、tbody-tr-class、tfoot-class</code> 属性分别为表格、表头、表格行、表尾做颜色调整。</p>
     <p>
       预设
-      <code>.table-primary | .table-secondary | .table-success | .table-danger | .table-warning | .table-info | .table-light | .table-dark | .table-active</code>
+      <code
+        >.table-primary | .table-secondary | .table-success | .table-danger | .table-warning | .table-info | .table-light | .table-dark | .table-active</code
+      >
       样式类供选择。
     </p>
     <div class="docs-example"><OptionalColor /></div>
@@ -81,14 +83,17 @@
     <CodeWrapper :code="ExpandRowCode" />
 
     <h2 id="content-truncate">内容截断<a class="anchor-link" href="#content-truncate" aria-label="内容截断"></a></h2>
-    <p>添加 <a href="https://bs53.bootstrap-vue.top/helpers/text-truncation">.text-truncate</a> 样式类 。截断内容可以使用 <code>v-tooltip</code> 指令显示完整内容。</p>
+    <p>
+      添加 <a href="https://bs53.bootstrap-vue.top/helpers/text-truncation">.text-truncate</a> 样式类 。截断内容可以使用
+      <code>v-tooltip</code> 指令显示完整内容。
+    </p>
     <div class="docs-example"><ContentTruncate /></div>
     <CodeWrapper :code="ContentTruncateCode" />
 
     <h2 id="thead-fixed">表头固定<a class="anchor-link" href="#thead-fixed" aria-label="表头固定"></a></h2>
     <p>
-      表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>.position-sticky</code> 和 <code>.top-0</code> 样式类到表格
-      <code>thead-class</code> 属性 。
+      表格外包裹一个 <code>&lt;div class="overflow-y-auto"&gt;</code> 元素，为该 div 元素设置固定高度。同时添加 <code>.position-sticky</code> 和
+      <code>.top-0</code> 样式类到表格 <code>thead-class</code> 属性 。
     </p>
     <div class="docs-example"><TheadFixed /></div>
     <CodeWrapper :code="TheadFixedCode" />
@@ -100,16 +105,16 @@
 
     <h2 id="data-sort">数据排序<a class="anchor-link" href="#data-sort" aria-label="数据排序"></a></h2>
     <p>
-      在表格列中，设置 <code>sortable</code> 属性为 <code>local</code> 即可实现本地排序。如果需远程排序，设置 <code>sortable</code> 属性为 <code>remote</code>，同时在表格上监听
-      <code>sort-change</code> 事件，在事件回调函数中可以获取当前排序的字段名和排序顺序，从而向接口请求排序后的表格数据。
+      在表格列中，设置 <code>sortable</code> 属性为 <code>local</code> 即可实现本地排序。如果需远程排序，设置 <code>sortable</code> 属性为
+      <code>remote</code>，同时在表格上监听 <code>sort-change</code> 事件，在事件回调函数中可以获取当前排序的字段名和排序顺序，从而向接口请求排序后的表格数据。
     </p>
     <div class="docs-example"><DataSort /></div>
     <CodeWrapper :code="DataSortCode" />
 
     <h2 id="table-caption">表格标题<a class="anchor-link" href="#table-caption" aria-label="表格标题"></a></h2>
     <p>
-      表格 Caption 的作用类似于表格的标题。它帮助使用屏幕阅读器的用户找到表格，了解表格的内容，并决定是否要阅读它。Caption 默认在表格底部，如果置于表格上部，添加 <code>.caption-top</code> 样式类到
-      <code>table-class</code> 属性上。
+      表格 Caption 的作用类似于表格的标题。它帮助使用屏幕阅读器的用户找到表格，了解表格的内容，并决定是否要阅读它。Caption
+      默认在表格底部，如果置于表格上部，添加 <code>.caption-top</code> 样式类到 <code>table-class</code> 属性上。
     </p>
     <div class="docs-example"><TableCaption /></div>
     <CodeWrapper :code="TableCaptionCode" />

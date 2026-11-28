@@ -13,7 +13,14 @@
             <a class="link-body-emphasis text-decoration-none" href="https://github.com/krisliu1982/bootstrap-vue-top" target="_blank">Github</a>
             <div class="vr"></div>
             <div class="dropdown">
-              <a data-bs-toggle="dropdown" class="link-body-emphasis text-decoration-none dropdown-toggle" title="布局大小" href="#" role="button" aria-expanded="false">
+              <a
+                data-bs-toggle="dropdown"
+                class="link-body-emphasis text-decoration-none dropdown-toggle"
+                title="布局大小"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
                 <template v-if="fontSize === 'sm'">小型布局</template>
                 <template v-else-if="fontSize === 'md'">中型布局</template>
                 <template v-else-if="fontSize === 'lg'">大型布局</template>
@@ -24,7 +31,14 @@
                 <li><button class="dropdown-item" type="button" @click="handleFontSizeChange('lg')" :disabled="fontSize === 'lg'">大型布局</button></li>
               </ul>
             </div>
-            <a v-if="theme === 'light'" href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到暗黑" @click.prevent="handleThemeChange('dark')">
+            <a
+              v-if="theme === 'light'"
+              href="#"
+              role="button"
+              class="link-body-emphasis text-decoration-none"
+              title="切换到暗黑"
+              @click.prevent="handleThemeChange('dark')"
+            >
               <bi-sun />
             </a>
             <a v-else href="#" role="button" class="link-body-emphasis text-decoration-none" title="切换到明亮" @click.prevent="handleThemeChange('light')">
@@ -55,7 +69,12 @@
 
   <div class="container-xxl">
     <div class="docs-layout">
-      <bv-offcanvas ref="offcanvasSidebarRef" title="文档菜单" offcanvas-class="offcanvas-lg offcanvas-start docs-sidebar" offcanvas-style="--bs-offcanvas-width: 75vw">
+      <bv-offcanvas
+        ref="offcanvasSidebarRef"
+        title="文档菜单"
+        offcanvas-class="offcanvas-lg offcanvas-start docs-sidebar"
+        offcanvas-style="--bs-offcanvas-width: 75vw"
+      >
         <ul ref="sidebarRef" class="list-unstyled">
           <li v-for="t in data.sidebar" class="mb-4">
             <h6 class="fw-bold">{{ t['zh-CN'] }}</h6>

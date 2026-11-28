@@ -118,7 +118,7 @@
       <li>导航（Navs）配合 Tab 插件，用于切换内容面板</li>
       <li>抽屉（Offcanvases），用于显示、定位和滚动行为</li>
       <li>滚动监听（Scrollspy），用于滚动行为和导航更新</li>
-      <li>轻提示（Toasts），用于显示和关闭</li>
+      <li>消息提示（Toasts），用于显示和关闭</li>
       <li>文字提示（Tooltips）和弹出框（Popovers），用于显示和定位（同样需要 <a href="https://github.com/floating-ui/popper-docs/blob/main/docs/v2/index.md">Popper</a> ）</li>
     </ul>
 

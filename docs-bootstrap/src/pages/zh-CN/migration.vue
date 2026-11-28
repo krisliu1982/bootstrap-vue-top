@@ -928,14 +928,14 @@ index 8f8296def..449d70487 100644
       </li>
       <li><p>改进了加载指示器的垂直对齐。</p></li>
     </ul>
-    <h4 id="toasts">轻提示</h4>
+    <h4 id="toasts">消息提示</h4>
     <ul>
       <li>
-        <p>轻提示现在可以借助 <a href="/utilities/position">定位工具类</a> 在 <code>.toast-container</code> 中 <a href="/components/toasts#placement">定位</a> 。</p>
+        <p>消息提示现在可以借助 <a href="/utilities/position">定位工具类</a> 在 <code>.toast-container</code> 中 <a href="/components/toasts#placement">定位</a> 。</p>
       </li>
-      <li><p>将轻提示的默认持续时间改为 5 秒。</p></li>
+      <li><p>将消息提示的默认持续时间改为 5 秒。</p></li>
       <li>
-        <p>从轻提示中移除了 <code>overflow: hidden</code>，并改用基于 <code>calc()</code> 函数的适当 <code>border-radius</code>。</p>
+        <p>从消息提示中移除了 <code>overflow: hidden</code>，并改用基于 <code>calc()</code> 函数的适当 <code>border-radius</code>。</p>
       </li>
     </ul>
     <h4 id="tooltips">文字提示</h4>

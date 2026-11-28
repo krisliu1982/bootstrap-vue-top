@@ -21,10 +21,8 @@
 
     <h2 id="image-many-upload">多图片上传<a class="anchor-link" href="#image-many-upload" aria-label="多图片上传"></a></h2>
     <p>
-      用于多张图片批量上传。通过 <code>width、height</code> 属性设置图片显示大小。通过 <code>img-urls</code> 属性设置图片地址。 通过 <code>sortable</code> 属性启动排序功能，<span
-        class="text-bg-warning"
-        ><strong>触摸设备</strong>上排序功能目前不支持。</span
-      >
+      用于多张图片批量上传。通过 <code>width、height</code> 属性设置图片显示大小。通过 <code>img-urls</code> 属性设置图片地址。 通过
+      <code>sortable</code> 属性启动排序功能，<span class="text-bg-warning"><strong>触摸设备</strong>上排序功能目前不支持。</span>
     </p>
     <div class="docs-example"><ImageManyUpload /></div>
     <CodeWrapper :code="ImageManyUploadCode" />

@@ -17,7 +17,7 @@
     />
     <h2 id="overlays">覆盖层<a class="anchor-link" href="#overlays" aria-label="覆盖层链接"></a></h2>
     <p>
-      Bootstrap 的覆盖层组件——下拉菜单、模态框、抽屉（offcanvas）、弹出框、轻提示和文字提示——都拥有自己的
+      Bootstrap 的覆盖层组件——下拉菜单、模态框、抽屉（offcanvas）、弹出框、消息提示和文字提示——都拥有自己的
       <code>z-index</code> 值，以确保在界面相互竞争的“层级”中获得可用的体验。
     </p>
     <p>

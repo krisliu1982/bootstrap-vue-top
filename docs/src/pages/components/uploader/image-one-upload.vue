@@ -1,5 +1,12 @@
 <template>
-  <BvImageOneUploader width="160px" height="160px" :img-url="imageUrl" @file-change="handleImageOneChange" @file-remove="handleImageOneRemove" @file-preview="handleImageOnePreview">
+  <BvImageOneUploader
+    width="160px"
+    height="160px"
+    :img-url="imageUrl"
+    @file-change="handleImageOneChange"
+    @file-remove="handleImageOneRemove"
+    @file-preview="handleImageOnePreview"
+  >
     <template #tip>
       <div class="form-text">jpg/jpeg files with a size less than 2MB.</div>
     </template>

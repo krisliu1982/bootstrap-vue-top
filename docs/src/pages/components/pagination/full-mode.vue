@@ -1,5 +1,12 @@
 <template>
-  <bv-pagination mode="full" :total="ptotal" :current-page="pcurrent" :page-size="psize" @current-change="(_page) => (pcurrent = _page)" @size-change="(_size) => (psize = _size)" />
+  <bv-pagination
+    mode="full"
+    :total="ptotal"
+    :current-page="pcurrent"
+    :page-size="psize"
+    @current-change="(_page) => (pcurrent = _page)"
+    @size-change="(_size) => (psize = _size)"
+  />
 </template>
 
 <script setup>

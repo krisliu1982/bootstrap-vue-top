@@ -4,7 +4,10 @@
     <p class="lead">使用 Bootstrap 自定义进度条的文档和示例，包括对堆叠条形、动画背景和文本标签的支持。</p>
 
     <h2 id="example">示例<a class="anchor-link" href="#example" aria-label="示例"></a></h2>
-    <p>我们对进度条没有提供扩展，其官方 API 可直接使用。了解更多请阅读 <a href="https://bs53.bootstrap-vue.top/components/progress" target="_blank">Bootstrap Progress</a>。</p>
+    <p>
+      我们对进度条没有提供扩展，其官方 API 可直接使用。了解更多请阅读
+      <a href="https://bs53.bootstrap-vue.top/components/progress" target="_blank">Bootstrap Progress</a>。
+    </p>
     <div class="docs-example"><Example /></div>
     <CodeWrapper :code="ExampleCode" />
   </article>

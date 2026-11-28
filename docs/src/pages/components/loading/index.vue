@@ -4,7 +4,10 @@
     <p class="lead">加载数据时显示动效。</p>
 
     <h2 id="fullscreen-load">全屏加载<a class="anchor-link" href="#fullscreen-load" aria-label="全屏加载"></a></h2>
-    <p>使用 <code>LoadingFullscreen</code> 对象的 <code>getInstance</code> 方法获得单例。调用 <code>show</code> 方法显示加载动效，调用 <code>hide</code> 方法隐藏加载动效。</p>
+    <p>
+      使用 <code>LoadingFullscreen</code> 对象的 <code>getInstance</code> 方法获得单例。调用 <code>show</code> 方法显示加载动效，调用
+      <code>hide</code> 方法隐藏加载动效。
+    </p>
     <div class="docs-example"><FullscreenLoad /></div>
     <CodeWrapper :code="FullscreenLoadCode" />
 
